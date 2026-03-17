@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import Calculator from "@/components/Calculator";
 import JsonLd from "@/components/JsonLd";
@@ -65,7 +66,9 @@ export default function CalculatorPage() {
           for.
         </p>
       </div>
-      <Calculator allJobs={allJobs} />
+      <Suspense>
+        <Calculator allJobs={allJobs} />
+      </Suspense>
     </div>
   );
 }

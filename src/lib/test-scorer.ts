@@ -99,6 +99,25 @@ export function totalCorrect(
   return questions.filter((q) => answerMap.get(q.id) === q.correctIndex).length;
 }
 
+export function estimateStandardScores(
+  subtestResults: SubtestResult[]
+): SubtestScores {
+  const resultMap = new Map(subtestResults.map((r) => [r.subtest, r]));
+  const map = (pct: number): number => Math.round(20 + (pct / 100) * 42);
+
+  return {
+    GS: map(resultMap.get("GS")?.percentage ?? 0),
+    AR: map(resultMap.get("AR")?.percentage ?? 0),
+    WK: map(resultMap.get("WK")?.percentage ?? 0),
+    PC: map(resultMap.get("PC")?.percentage ?? 0),
+    MK: map(resultMap.get("MK")?.percentage ?? 0),
+    EI: map(resultMap.get("EI")?.percentage ?? 0),
+    AS: map(resultMap.get("AS")?.percentage ?? 0),
+    MC: map(resultMap.get("MC")?.percentage ?? 0),
+    AO: map(resultMap.get("AO")?.percentage ?? 0),
+  };
+}
+
 export function formatTime(seconds: number): string {
   const m = Math.floor(seconds / 60);
   const s = seconds % 60;

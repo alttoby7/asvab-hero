@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import type { SubtestScores, AsvabSubtest, MilitaryJob, Branch } from "@/types";
 import { ALL_SUBTESTS, BRANCH_NAMES } from "@/types";
 import {
@@ -41,6 +42,27 @@ const BRANCH_TAB_ORDER: Branch[] = [
 export default function Calculator({ allJobs }: CalculatorProps) {
   const [scores, setScores] = useState<SubtestScores>(DEFAULT_SCORES);
   const [compositeTab, setCompositeTab] = useState<Branch>("army");
+  const searchParams = useSearchParams();
+
+  // Load scores from URL params (e.g. from practice test results)
+  useEffect(() => {
+    const hasScoreParams = ALL_SUBTESTS.some((st) => searchParams.get(st));
+    if (!hasScoreParams) return;
+
+    const fromParams: Partial<SubtestScores> = {};
+    for (const st of ALL_SUBTESTS) {
+      const val = searchParams.get(st);
+      if (val) {
+        const num = parseInt(val, 10);
+        if (!isNaN(num) && num >= 20 && num <= 145) {
+          fromParams[st] = num;
+        }
+      }
+    }
+    if (Object.keys(fromParams).length > 0) {
+      setScores((prev) => ({ ...prev, ...fromParams }));
+    }
+  }, [searchParams]);
 
   const handleScoreChange = (subtest: AsvabSubtest, value: number) => {
     setScores((prev) => ({ ...prev, [subtest]: value }));

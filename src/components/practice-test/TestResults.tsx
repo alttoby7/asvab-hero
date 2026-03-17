@@ -3,10 +3,12 @@ import { SUBTEST_NAMES } from "@/types";
 import {
   scoreBySubtest,
   estimateAFQT,
+  estimateStandardScores,
   getStrengths,
   getWeaknesses,
   totalCorrect,
 } from "@/lib/test-scorer";
+import { ALL_SUBTESTS } from "@/types";
 import { getAFQTCategoryDescription } from "@/lib/score-calculator";
 import Link from "next/link";
 
@@ -111,6 +113,10 @@ export default function TestResults({
   const overallPct = Math.round((correct / questions.length) * 100);
   const strengths = getStrengths(subtestResults);
   const weaknesses = getWeaknesses(subtestResults);
+  const estimatedScores = estimateStandardScores(subtestResults);
+  const calcParams = ALL_SUBTESTS.map(
+    (st) => `${st}=${estimatedScores[st]}`
+  ).join("&");
 
   return (
     <div className="space-y-8" style={{ animation: "fadeIn 0.5s ease-out" }}>
@@ -220,7 +226,7 @@ export default function TestResults({
       {/* CTAs */}
       <section className="space-y-3">
         <Link
-          href="/calculator"
+          href={`/calculator?${calcParams}`}
           className="flex w-full items-center justify-center gap-2 rounded-xl bg-accent px-6 py-3.5 font-display text-base font-bold text-white no-underline transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)]"
         >
           See Which Jobs You Qualify For
