@@ -425,7 +425,7 @@ export default function CareerGoalSetter() {
                     <span className="font-mono text-xs font-bold text-accent">
                       {st}
                     </span>
-                    <span className="flex-1 truncate text-xs text-text-secondary">
+                    <span className="flex-1 text-[11px] leading-tight text-text-secondary">
                       {SUBTEST_NAMES[st]}
                     </span>
                     {isAFQT && (

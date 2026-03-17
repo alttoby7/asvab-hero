@@ -96,6 +96,11 @@ export default function StudyPlanGenerator() {
     URL.revokeObjectURL(url);
   };
 
+  const formatDate = (iso: string): string => {
+    const d = new Date(iso + "T00:00:00");
+    return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  };
+
   const getTodayStr = () => {
     const d = new Date();
     return d.toISOString().split("T")[0];
@@ -282,7 +287,7 @@ export default function StudyPlanGenerator() {
                         </span>
                       </div>
                       <span className="text-xs text-text-tertiary">
-                        {week.startDate}
+                        {formatDate(week.startDate)}
                       </span>
                     </div>
 

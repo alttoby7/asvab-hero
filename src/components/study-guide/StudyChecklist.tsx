@@ -39,6 +39,12 @@ export default function StudyChecklist() {
     return found ? found.total : 0;
   };
 
+  // Only top 4 subtests get the "Priority" badge
+  const topPrioritySubtests = useMemo(() => {
+    if (!state.selectedBranch || state.selectedJobs.length === 0) return new Set<AsvabSubtest>();
+    return new Set(priorities.slice(0, 4).map((p) => p.subtest));
+  }, [priorities, state.selectedBranch, state.selectedJobs]);
+
   // Sort subtests by priority (highest first) if goals are set
   const sortedSubtests = useMemo(() => {
     if (!state.selectedBranch || state.selectedJobs.length === 0) {
@@ -107,7 +113,7 @@ export default function StudyChecklist() {
           const { done, total, pct } = getSubtestCompletion(st);
           const meta = SUBTEST_METADATA.find((m) => m.subtest === st);
           const priority = getPriority(st);
-          const isHighPriority = priority > 0.6;
+          const isHighPriority = topPrioritySubtests.has(st);
 
           return (
             <div

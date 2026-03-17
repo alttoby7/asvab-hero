@@ -24,6 +24,12 @@ export default function SubtestExplorer() {
     });
   }, [state]);
 
+  // Only top 4 subtests get the "Priority" badge
+  const topPrioritySubtests = useMemo(() => {
+    if (!priorities) return new Set<AsvabSubtest>();
+    return new Set(priorities.slice(0, 4).map((p) => p.subtest));
+  }, [priorities]);
+
   const getPriority = (st: AsvabSubtest): number | null => {
     if (!priorities) return null;
     const found = priorities.find((p) => p.subtest === st);
@@ -47,7 +53,7 @@ export default function SubtestExplorer() {
       {SUBTEST_METADATA.map((meta) => {
         const isOpen = expanded === meta.subtest;
         const priority = getPriority(meta.subtest);
-        const isCritical = priority !== null && priority > 0.6;
+        const isCritical = topPrioritySubtests.has(meta.subtest);
         const compositeCount = getCompositeCount(meta.subtest);
 
         return (

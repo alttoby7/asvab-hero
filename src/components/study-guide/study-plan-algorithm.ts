@@ -302,14 +302,22 @@ export function generateStudyPlan(input: StudyPlanInput): WeekPlan[] {
     const mixedReviewHours = roundToHalf(totalHours * reviewPct);
     const availableForSubtests = totalHours - mixedReviewHours;
 
-    // Allocate by priority — cap any single subtest at 40%
+    // Allocate by priority — iteratively drop lowest until remaining get ≥ 0.5h
     const cap = totalHours * 0.4;
-    const totalPriority = priorities.reduce((s, p) => s + p.total, 0) || 1;
+    let eligible = priorities.filter((p) => p.total > 0.05);
 
-    const allocations: SubtestAllocation[] = priorities
-      .filter((p) => p.total > 0.05) // skip near-zero priority
+    // Iteratively remove lowest priority subtests until all remaining get ≥ 0.5h
+    while (eligible.length > 1) {
+      const eligibleTotal = eligible.reduce((s, p) => s + p.total, 0) || 1;
+      const lowestShare = (eligible[eligible.length - 1].total / eligibleTotal) * availableForSubtests;
+      if (lowestShare >= 0.5 || eligible.length <= 3) break;
+      eligible = eligible.slice(0, -1);
+    }
+
+    const eligibleTotal = eligible.reduce((s, p) => s + p.total, 0) || 1;
+    const allocations: SubtestAllocation[] = eligible
       .map((p) => {
-        const rawHours = (p.total / totalPriority) * availableForSubtests;
+        const rawHours = (p.total / eligibleTotal) * availableForSubtests;
         const capped = Math.min(rawHours, cap);
         const hours = roundToHalf(capped);
         return {
