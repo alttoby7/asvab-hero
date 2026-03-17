@@ -72,7 +72,7 @@ export default function SubtestExplorer() {
           >
             {/* Collapsed view */}
             <div className="flex items-start justify-between gap-2">
-              <div className="flex items-center gap-3">
+              <div className="flex min-w-0 items-center gap-3">
                 <div
                   className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-lg font-display text-lg font-bold transition-colors ${
                     isCritical
@@ -84,7 +84,7 @@ export default function SubtestExplorer() {
                 >
                   {meta.subtest}
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-sm font-semibold text-text-primary">
                     {meta.fullName}
                   </p>
