@@ -49,6 +49,12 @@ export default function Nav() {
               Scores Guide
             </Link>
             <Link
+              href="/asvab-study-guide"
+              className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline"
+            >
+              Study Guide
+            </Link>
+            <Link
               href="/pricing"
               className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline"
             >
@@ -110,6 +116,13 @@ export default function Nav() {
                 className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline"
               >
                 Scores Guide
+              </Link>
+              <Link
+                href="/asvab-study-guide"
+                onClick={() => setOpen(false)}
+                className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline"
+              >
+                Study Guide
               </Link>
               <Link
                 href="/pricing"

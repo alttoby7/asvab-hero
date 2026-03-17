@@ -51,6 +51,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/asvab-study-guide"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Study Guide
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/pricing"
                   className="text-sm text-text-tertiary hover:text-text-primary no-underline"
                 >
