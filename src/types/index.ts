@@ -110,3 +110,18 @@ export interface SubtestResult {
   total: number;
   percentage: number;
 }
+
+// Study Guide Types
+
+export type ScoreInputMode = "self-rate" | "practice-import" | "actual-scores";
+
+export interface StudyGuideState {
+  selectedBranch: Branch | null;
+  selectedJobs: MilitaryJob[];
+  scoreInputMode: ScoreInputMode;
+  scores: Partial<SubtestScores>;
+  selfRatings: Record<AsvabSubtest, number>;
+  testDate: string | null;
+  hoursPerWeek: number;
+  completedTopics: Record<string, boolean>;
+}
