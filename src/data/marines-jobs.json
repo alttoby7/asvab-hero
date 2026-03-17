@@ -1,0 +1,272 @@
+[
+  {
+    "id": "usmc-0231",
+    "code": "0231",
+    "title": "Intelligence Specialist",
+    "description": "Collects, analyzes, and disseminates intelligence information to support Marine Corps combat operations and planning.",
+    "category": "Intelligence",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 110 }]
+  },
+  {
+    "id": "usmc-0261",
+    "code": "0261",
+    "title": "Geographic Intelligence Specialist",
+    "description": "Analyzes terrain, weather, and geospatial data to produce intelligence products supporting Marine operations.",
+    "category": "Intelligence",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 110 }]
+  },
+  {
+    "id": "usmc-0311",
+    "code": "0311",
+    "title": "Rifleman",
+    "description": "Serves as the primary infantry Marine, executing close combat operations and direct fire engagements.",
+    "category": "Infantry",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 80 }]
+  },
+  {
+    "id": "usmc-0331",
+    "code": "0331",
+    "title": "Machine Gunner",
+    "description": "Employs crew-served machine guns to provide suppressive fire and support infantry maneuver elements.",
+    "category": "Infantry",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 80 }]
+  },
+  {
+    "id": "usmc-0341",
+    "code": "0341",
+    "title": "Mortarman",
+    "description": "Operates mortars to provide indirect fire support to infantry units during offensive and defensive operations.",
+    "category": "Infantry",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 80 }]
+  },
+  {
+    "id": "usmc-0352",
+    "code": "0352",
+    "title": "Anti-Tank Missileman",
+    "description": "Employs anti-tank missile systems to destroy enemy armored vehicles and fortified positions.",
+    "category": "Infantry",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 80 }]
+  },
+  {
+    "id": "usmc-0621",
+    "code": "0621",
+    "title": "Radio Operator",
+    "description": "Installs, operates, and maintains tactical radio communications systems to support command and control.",
+    "category": "Communications",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "EL", "minScore": 105 }]
+  },
+  {
+    "id": "usmc-0631",
+    "code": "0631",
+    "title": "Network Administrator",
+    "description": "Installs, configures, and maintains computer networks and data communications systems for Marine units.",
+    "category": "Communications",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "EL", "minScore": 115 }]
+  },
+  {
+    "id": "usmc-0811",
+    "code": "0811",
+    "title": "Cannoneer",
+    "description": "Operates and maintains artillery weapons systems to deliver indirect fire support to ground combat forces.",
+    "category": "Artillery",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 80 }]
+  },
+  {
+    "id": "usmc-0861",
+    "code": "0861",
+    "title": "Fire Support Marine",
+    "description": "Coordinates and directs fire support from artillery, naval gunfire, and close air support for ground units.",
+    "category": "Artillery",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 100 }]
+  },
+  {
+    "id": "usmc-1141",
+    "code": "1141",
+    "title": "Electrician",
+    "description": "Installs, maintains, and repairs electrical systems, wiring, and power distribution equipment on Marine installations.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "EL", "minScore": 105 }]
+  },
+  {
+    "id": "usmc-1142",
+    "code": "1142",
+    "title": "Refrigeration/AC Mechanic",
+    "description": "Installs, maintains, and repairs refrigeration, air conditioning, and heating systems for Marine Corps facilities.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 105 }]
+  },
+  {
+    "id": "usmc-1171",
+    "code": "1171",
+    "title": "Water Support Technician",
+    "description": "Operates and maintains water purification and distribution systems to provide potable water in field environments.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 95 }]
+  },
+  {
+    "id": "usmc-1345",
+    "code": "1345",
+    "title": "Engineer Equipment Operator",
+    "description": "Operates heavy construction equipment such as bulldozers, graders, and excavators for engineering projects.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 95 }]
+  },
+  {
+    "id": "usmc-1371",
+    "code": "1371",
+    "title": "Combat Engineer",
+    "description": "Performs construction, demolition, and obstacle emplacement and breaching in support of ground combat operations.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 95 }]
+  },
+  {
+    "id": "usmc-1721",
+    "code": "1721",
+    "title": "Cyber Operations Specialist",
+    "description": "Conducts offensive and defensive cyber operations to protect Marine networks and exploit adversary systems.",
+    "category": "Cyber",
+    "minAFQT": 50,
+    "requirements": [{ "composite": "EL", "minScore": 115 }, { "composite": "GT", "minScore": 110 }]
+  },
+  {
+    "id": "usmc-1833",
+    "code": "1833",
+    "title": "AAV Crewman",
+    "description": "Operates and performs crew-level maintenance on Assault Amphibious Vehicles during ship-to-shore operations.",
+    "category": "Armor",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 95 }]
+  },
+  {
+    "id": "usmc-2111",
+    "code": "2111",
+    "title": "Small Arms Repairer",
+    "description": "Inspects, services, and repairs all small arms and crew-served weapons in the Marine Corps inventory.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 105 }]
+  },
+  {
+    "id": "usmc-2311",
+    "code": "2311",
+    "title": "Ammunition Technician",
+    "description": "Receives, stores, issues, and maintains all classes of ammunition and explosives for Marine units.",
+    "category": "Logistics",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 95 }]
+  },
+  {
+    "id": "usmc-2621",
+    "code": "2621",
+    "title": "Special Communications Operator",
+    "description": "Operates and maintains specialized communications systems supporting sensitive intelligence operations.",
+    "category": "Intelligence",
+    "minAFQT": 50,
+    "requirements": [{ "composite": "GT", "minScore": 110 }, { "composite": "EL", "minScore": 115 }]
+  },
+  {
+    "id": "usmc-2631",
+    "code": "2631",
+    "title": "Electronic Intelligence Interceptor",
+    "description": "Collects and analyzes enemy electronic signals to produce actionable intelligence for Marine operations.",
+    "category": "Intelligence",
+    "minAFQT": 50,
+    "requirements": [{ "composite": "GT", "minScore": 110 }, { "composite": "EL", "minScore": 115 }]
+  },
+  {
+    "id": "usmc-2841",
+    "code": "2841",
+    "title": "Ground Radio Repairer",
+    "description": "Performs maintenance, troubleshooting, and repair on ground-based tactical radio communications equipment.",
+    "category": "Communications",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "EL", "minScore": 115 }]
+  },
+  {
+    "id": "usmc-3043",
+    "code": "3043",
+    "title": "Supply Administration",
+    "description": "Manages supply transactions, maintains property records, and coordinates logistics support for Marine units.",
+    "category": "Supply/Admin",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 100 }]
+  },
+  {
+    "id": "usmc-3051",
+    "code": "3051",
+    "title": "Warehouse Clerk",
+    "description": "Receives, stores, inventories, and issues equipment and supplies to support Marine Corps logistical operations.",
+    "category": "Supply/Admin",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 90 }]
+  },
+  {
+    "id": "usmc-3381",
+    "code": "3381",
+    "title": "Food Service Specialist",
+    "description": "Prepares and serves meals to Marines in garrison and field environments following nutritional standards.",
+    "category": "Supply/Admin",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 80 }]
+  },
+  {
+    "id": "usmc-3531",
+    "code": "3531",
+    "title": "Motor Vehicle Operator",
+    "description": "Operates wheeled military vehicles to transport personnel, equipment, and supplies in support of operations.",
+    "category": "Motor Transport",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 85 }]
+  },
+  {
+    "id": "usmc-5811",
+    "code": "5811",
+    "title": "Military Police",
+    "description": "Enforces laws and regulations, conducts investigations, and provides security on Marine Corps installations.",
+    "category": "Military Police",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 100 }]
+  },
+  {
+    "id": "usmc-5831",
+    "code": "5831",
+    "title": "Correctional Specialist",
+    "description": "Manages Marine Corps correctional facilities and supervises inmates to ensure safety and order.",
+    "category": "Military Police",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 100 }]
+  },
+  {
+    "id": "usmc-6042",
+    "code": "6042",
+    "title": "Aircraft Maintenance Admin",
+    "description": "Manages aviation maintenance databases and information systems to track aircraft readiness and parts.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 100 }]
+  },
+  {
+    "id": "usmc-7041",
+    "code": "7041",
+    "title": "Aviation Operations Specialist",
+    "description": "Plans and coordinates flight operations, scheduling, and airfield management for Marine aviation units.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GT", "minScore": 100 }]
+  }
+]

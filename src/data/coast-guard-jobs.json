@@ -1,0 +1,137 @@
+[
+  {
+    "id": "cg-bm",
+    "code": "BM",
+    "title": "Boatswain's Mate",
+    "description": "Supervises deck operations and small boat handling for search and rescue, law enforcement, and maritime safety missions.",
+    "category": "Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "VE+AR", "minScore": 100 }]
+  },
+  {
+    "id": "cg-mk",
+    "code": "MK",
+    "title": "Machinery Technician",
+    "description": "Operates and maintains diesel engines, electrical systems, and machinery aboard Coast Guard cutters and boats.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 210 }]
+  },
+  {
+    "id": "cg-et",
+    "code": "ET",
+    "title": "Electronics Technician",
+    "description": "Installs, maintains, and repairs advanced electronics including communications, radar, and navigation systems.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 222 }]
+  },
+  {
+    "id": "cg-it",
+    "code": "IT",
+    "title": "Information Systems Technician",
+    "description": "Manages Coast Guard computer networks, cybersecurity systems, and communications infrastructure.",
+    "category": "Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 222 }]
+  },
+  {
+    "id": "cg-os",
+    "code": "OS",
+    "title": "Operations Specialist",
+    "description": "Coordinates search and rescue, monitors vessel traffic, and operates radar and communication systems at command centers.",
+    "category": "Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "VE+MK+GS", "minScore": 155 }]
+  },
+  {
+    "id": "cg-yn",
+    "code": "YN",
+    "title": "Yeoman",
+    "description": "Manages administrative functions including correspondence, records management, and personnel documentation.",
+    "category": "Administrative",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "VE+MK", "minScore": 105 }]
+  },
+  {
+    "id": "cg-sk",
+    "code": "SK",
+    "title": "Storekeeper",
+    "description": "Manages supply chain logistics including procurement, inventory control, and financial record keeping.",
+    "category": "Administrative",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "VE+AR", "minScore": 105 }]
+  },
+  {
+    "id": "cg-hs",
+    "code": "HS",
+    "title": "Health Services Technician",
+    "description": "Provides emergency medical care, preventive medicine, and clinical health services at Coast Guard units.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "VE+MK+GS", "minScore": 165 }]
+  },
+  {
+    "id": "cg-me",
+    "code": "ME",
+    "title": "Maritime Enforcement Specialist",
+    "description": "Conducts maritime law enforcement, port security, and anti-terrorism operations to protect U.S. waters.",
+    "category": "Law Enforcement",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "VE+AR", "minScore": 100 }]
+  },
+  {
+    "id": "cg-mst",
+    "code": "MST",
+    "title": "Marine Science Technician",
+    "description": "Conducts environmental protection inspections, pollution response, and waterways management operations.",
+    "category": "Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "VE+MK+GS", "minScore": 160 }]
+  },
+  {
+    "id": "cg-aet",
+    "code": "AET",
+    "title": "Aviation Electronics Technician",
+    "description": "Maintains and repairs avionics, electrical systems, and electronic components on Coast Guard aircraft.",
+    "category": "Aviation",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 222 }]
+  },
+  {
+    "id": "cg-amt",
+    "code": "AMT",
+    "title": "Aviation Maintenance Technician",
+    "description": "Performs maintenance on aircraft airframes, engines, rotor systems, and mechanical components.",
+    "category": "Aviation",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 210 }]
+  },
+  {
+    "id": "cg-ast",
+    "code": "AST",
+    "title": "Aviation Survival Technician",
+    "description": "Serves as rescue swimmer performing open-water rescues from helicopters in extreme conditions.",
+    "category": "Aviation",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 198 }]
+  },
+  {
+    "id": "cg-is",
+    "code": "IS",
+    "title": "Intelligence Specialist",
+    "description": "Collects, analyzes, and disseminates intelligence to support Coast Guard law enforcement and homeland security missions.",
+    "category": "Intelligence",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "VE+MK+GS", "minScore": 200 }]
+  },
+  {
+    "id": "cg-dc",
+    "code": "DC",
+    "title": "Damage Controlman",
+    "description": "Performs firefighting, damage control, and hull repairs to maintain safety and integrity of Coast Guard vessels.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 195 }]
+  }
+]

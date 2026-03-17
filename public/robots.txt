@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asvabhero.com/sitemap.xml

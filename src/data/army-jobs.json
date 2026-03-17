@@ -1,0 +1,416 @@
+[
+  {
+    "id": "army-11b",
+    "code": "11B",
+    "title": "Infantryman",
+    "description": "Serves as the backbone of the Army's ground combat force, engaging and defeating enemy forces in close combat.",
+    "category": "Combat",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "CO", "minScore": 87 }]
+  },
+  {
+    "id": "army-11c",
+    "code": "11C",
+    "title": "Indirect Fire Infantryman",
+    "description": "Operates and maintains mortars, providing indirect fire support to infantry units on the battlefield.",
+    "category": "Combat",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "CO", "minScore": 87 }]
+  },
+  {
+    "id": "army-12b",
+    "code": "12B",
+    "title": "Combat Engineer",
+    "description": "Supports infantry and armor units by constructing bridges, clearing minefields, and demolishing obstacles.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "CO", "minScore": 87 }]
+  },
+  {
+    "id": "army-12n",
+    "code": "12N",
+    "title": "Horizontal Construction Engineer",
+    "description": "Operates heavy construction equipment to build and repair roads, airfields, and other horizontal structures.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GM", "minScore": 88 }]
+  },
+  {
+    "id": "army-12w",
+    "code": "12W",
+    "title": "Carpentry and Masonry Specialist",
+    "description": "Constructs and repairs wooden and masonry structures including buildings, bunkers, and fortifications.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "GM", "minScore": 88 }]
+  },
+  {
+    "id": "army-13b",
+    "code": "13B",
+    "title": "Cannon Crewmember",
+    "description": "Operates and maintains field artillery cannon systems to provide direct and indirect fire support.",
+    "category": "Combat",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "FA", "minScore": 93 }]
+  },
+  {
+    "id": "army-13f",
+    "code": "13F",
+    "title": "Fire Support Specialist",
+    "description": "Calls for and adjusts indirect fire and close air support, coordinating lethal fires on enemy targets.",
+    "category": "Combat",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "FA", "minScore": 96 }]
+  },
+  {
+    "id": "army-14e",
+    "code": "14E",
+    "title": "Patriot Fire Control Enhanced Operator/Maintainer",
+    "description": "Operates and maintains the Patriot missile system's fire control equipment for air and missile defense.",
+    "category": "Combat Support",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 104 }]
+  },
+  {
+    "id": "army-14t",
+    "code": "14T",
+    "title": "Patriot Launching Station Enhanced Operator/Maintainer",
+    "description": "Operates and maintains the Patriot missile launching station to protect against aircraft and ballistic missiles.",
+    "category": "Combat Support",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 99 }]
+  },
+  {
+    "id": "army-15t",
+    "code": "15T",
+    "title": "UH-60 Helicopter Repairer",
+    "description": "Performs maintenance and repairs on UH-60 Black Hawk helicopters to keep them mission-ready.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 104 }]
+  },
+  {
+    "id": "army-15u",
+    "code": "15U",
+    "title": "CH-47 Helicopter Repairer",
+    "description": "Performs maintenance and repairs on CH-47 Chinook helicopters to ensure operational readiness.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 104 }]
+  },
+  {
+    "id": "army-15w",
+    "code": "15W",
+    "title": "Unmanned Aircraft Systems Operator",
+    "description": "Operates and maintains unmanned aerial systems to gather intelligence and support ground operations.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "SC", "minScore": 102 }]
+  },
+  {
+    "id": "army-17c",
+    "code": "17C",
+    "title": "Cyber Operations Specialist",
+    "description": "Conducts offensive and defensive cyber operations to protect Army networks and exploit adversary systems.",
+    "category": "Cyber/IT",
+    "minAFQT": 50,
+    "requirements": [{ "composite": "ST", "minScore": 112 }]
+  },
+  {
+    "id": "army-19d",
+    "code": "19D",
+    "title": "Cavalry Scout",
+    "description": "Conducts reconnaissance and surveillance missions, gathering battlefield intelligence ahead of the main force.",
+    "category": "Combat",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "CO", "minScore": 87 }]
+  },
+  {
+    "id": "army-19k",
+    "code": "19K",
+    "title": "M1 Armor Crewman",
+    "description": "Operates and maintains the M1 Abrams main battle tank to engage and destroy enemy forces.",
+    "category": "Combat",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "CO", "minScore": 87 }]
+  },
+  {
+    "id": "army-25b",
+    "code": "25B",
+    "title": "Information Technology Specialist",
+    "description": "Installs, operates, and maintains Army information technology systems, networks, and computer hardware.",
+    "category": "Cyber/IT",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "ST", "minScore": 95 }]
+  },
+  {
+    "id": "army-25n",
+    "code": "25N",
+    "title": "Nodal Network Systems Operator-Maintainer",
+    "description": "Operates and maintains tactical nodal network systems that serve as the Army's communication backbone.",
+    "category": "Signal/Communications",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "ST", "minScore": 101 }]
+  },
+  {
+    "id": "army-25s",
+    "code": "25S",
+    "title": "Satellite Communication Systems Operator-Maintainer",
+    "description": "Operates and maintains satellite communication systems to provide long-range voice and data connectivity.",
+    "category": "Signal/Communications",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "EL", "minScore": 98 }, { "composite": "ST", "minScore": 112 }]
+  },
+  {
+    "id": "army-25u",
+    "code": "25U",
+    "title": "Signal Support Systems Specialist",
+    "description": "Provides signal support for command, control, and communications across all echelons of the Army.",
+    "category": "Signal/Communications",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "EL", "minScore": 93 }]
+  },
+  {
+    "id": "army-31b",
+    "code": "31B",
+    "title": "Military Police",
+    "description": "Enforces laws and regulations, performs law enforcement and security operations, and supports combat operations.",
+    "category": "Combat Support",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "ST", "minScore": 91 }]
+  },
+  {
+    "id": "army-31e",
+    "code": "31E",
+    "title": "Internment/Resettlement Specialist",
+    "description": "Oversees the care, custody, and control of enemy prisoners of war, civilian internees, and U.S. military prisoners.",
+    "category": "Combat Support",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "ST", "minScore": 95 }]
+  },
+  {
+    "id": "army-35f",
+    "code": "35F",
+    "title": "Intelligence Analyst",
+    "description": "Collects, analyzes, and produces intelligence products to support military operations and commanders' decisions.",
+    "category": "Intelligence",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "ST", "minScore": 101 }]
+  },
+  {
+    "id": "army-35g",
+    "code": "35G",
+    "title": "Geospatial Intelligence Imagery Analyst",
+    "description": "Analyzes imagery and geospatial information from satellites and aircraft to support intelligence operations.",
+    "category": "Intelligence",
+    "minAFQT": 50,
+    "requirements": [{ "composite": "ST", "minScore": 101 }]
+  },
+  {
+    "id": "army-35l",
+    "code": "35L",
+    "title": "Counterintelligence Agent",
+    "description": "Conducts investigations and operations to identify, assess, and counter foreign intelligence threats to the Army.",
+    "category": "Intelligence",
+    "minAFQT": 50,
+    "requirements": [{ "composite": "ST", "minScore": 101 }]
+  },
+  {
+    "id": "army-35m",
+    "code": "35M",
+    "title": "Human Intelligence Collector",
+    "description": "Conducts debriefings, interrogations, and elicitation operations to gather intelligence from human sources.",
+    "category": "Intelligence",
+    "minAFQT": 50,
+    "requirements": [{ "composite": "ST", "minScore": 101 }]
+  },
+  {
+    "id": "army-35n",
+    "code": "35N",
+    "title": "Signals Intelligence Analyst",
+    "description": "Intercepts, analyzes, and exploits enemy electronic signals to produce actionable intelligence.",
+    "category": "Intelligence",
+    "minAFQT": 50,
+    "requirements": [{ "composite": "ST", "minScore": 112 }]
+  },
+  {
+    "id": "army-35p",
+    "code": "35P",
+    "title": "Cryptologic Linguist",
+    "description": "Applies foreign language skills to intercept, translate, and analyze enemy communications for intelligence purposes.",
+    "category": "Intelligence",
+    "minAFQT": 50,
+    "requirements": [{ "composite": "ST", "minScore": 112 }]
+  },
+  {
+    "id": "army-36b",
+    "code": "36B",
+    "title": "Financial Management Technician",
+    "description": "Performs accounting, budgeting, and financial management operations to support Army units and installations.",
+    "category": "Legal/Finance",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "CL", "minScore": 101 }]
+  },
+  {
+    "id": "army-37f",
+    "code": "37F",
+    "title": "Psychological Operations Specialist",
+    "description": "Plans and conducts psychological operations to influence foreign audiences and support military objectives.",
+    "category": "Combat Support",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "ST", "minScore": 101 }]
+  },
+  {
+    "id": "army-42a",
+    "code": "42A",
+    "title": "Human Resources Specialist",
+    "description": "Maintains personnel records, processes awards and evaluations, and manages HR functions across Army units.",
+    "category": "Administrative",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "CL", "minScore": 90 }]
+  },
+  {
+    "id": "army-56m",
+    "code": "56M",
+    "title": "Religious Affairs Specialist",
+    "description": "Assists Army chaplains in providing religious support, counseling programs, and morale services to soldiers.",
+    "category": "Administrative",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "CL", "minScore": 90 }]
+  },
+  {
+    "id": "army-68c",
+    "code": "68C",
+    "title": "Practical Nursing Specialist",
+    "description": "Provides direct patient care under the supervision of physicians and nurses in clinical and field settings.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "ST", "minScore": 101 }]
+  },
+  {
+    "id": "army-68d",
+    "code": "68D",
+    "title": "Operating Room Specialist",
+    "description": "Assists surgeons and nurses during surgical procedures in military hospitals and field medical units.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "ST", "minScore": 101 }]
+  },
+  {
+    "id": "army-68k",
+    "code": "68K",
+    "title": "Medical Laboratory Specialist",
+    "description": "Performs clinical laboratory tests to support diagnosis and treatment of patients in military medical facilities.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "ST", "minScore": 106 }]
+  },
+  {
+    "id": "army-68p",
+    "code": "68P",
+    "title": "Radiology Specialist",
+    "description": "Operates X-ray and other imaging equipment to assist in diagnosing injuries and diseases for Army patients.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "ST", "minScore": 106 }]
+  },
+  {
+    "id": "army-68w",
+    "code": "68W",
+    "title": "Combat Medic Specialist",
+    "description": "Provides emergency medical treatment and primary care to soldiers in both field and clinical environments.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "ST", "minScore": 101 }]
+  },
+  {
+    "id": "army-74d",
+    "code": "74D",
+    "title": "Chemical, Biological, Radiological, and Nuclear Specialist",
+    "description": "Detects, identifies, and decontaminates chemical, biological, radiological, and nuclear hazards on the battlefield.",
+    "category": "Combat Support",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "ST", "minScore": 100 }]
+  },
+  {
+    "id": "army-88m",
+    "code": "88M",
+    "title": "Motor Transport Operator",
+    "description": "Operates wheeled vehicles to transport personnel, equipment, and supplies in support of military operations.",
+    "category": "Logistics/Supply",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "OF", "minScore": 85 }]
+  },
+  {
+    "id": "army-89b",
+    "code": "89B",
+    "title": "Ammunition Specialist",
+    "description": "Receives, stores, issues, and maintains conventional ammunition and missiles for Army operations.",
+    "category": "Logistics/Supply",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "OF", "minScore": 85 }]
+  },
+  {
+    "id": "army-91b",
+    "code": "91B",
+    "title": "Wheeled Vehicle Mechanic",
+    "description": "Maintains, repairs, and troubleshoots wheeled vehicles and associated mechanical systems across the Army fleet.",
+    "category": "Maintenance",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 87 }]
+  },
+  {
+    "id": "army-91d",
+    "code": "91D",
+    "title": "Power-Generation Equipment Repairer",
+    "description": "Maintains and repairs generators and power generation equipment used to support Army operations worldwide.",
+    "category": "Maintenance",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "EL", "minScore": 93 }]
+  },
+  {
+    "id": "army-91e",
+    "code": "91E",
+    "title": "Allied Trade Specialist",
+    "description": "Performs metalworking, welding, and machining to fabricate and repair equipment and structural components.",
+    "category": "Maintenance",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "MM", "minScore": 93 }]
+  },
+  {
+    "id": "army-92a",
+    "code": "92A",
+    "title": "Automated Logistical Specialist",
+    "description": "Manages supply operations using automated systems to receive, store, and issue equipment and supplies.",
+    "category": "Logistics/Supply",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "CL", "minScore": 90 }]
+  },
+  {
+    "id": "army-92g",
+    "code": "92G",
+    "title": "Culinary Specialist",
+    "description": "Prepares and serves food for Army personnel, managing food service operations in field and garrison environments.",
+    "category": "Logistics/Supply",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "OF", "minScore": 85 }]
+  },
+  {
+    "id": "army-92y",
+    "code": "92Y",
+    "title": "Unit Supply Specialist",
+    "description": "Manages the supply of equipment, ammunition, and repair parts for Army units using automated supply systems.",
+    "category": "Logistics/Supply",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "CL", "minScore": 90 }]
+  },
+  {
+    "id": "army-94e",
+    "code": "94E",
+    "title": "Radio and Communications Security Repairer",
+    "description": "Maintains and repairs communications security equipment and tactical radio systems used across Army units.",
+    "category": "Maintenance",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "EL", "minScore": 107 }]
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "id": "af-1a0x1",
+    "code": "1A0X1",
+    "title": "In-Flight Refueling",
+    "description": "Operates aerial refueling systems aboard tanker aircraft to transfer fuel to receiver aircraft during flight.",
+    "category": "Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 55 }]
+  },
+  {
+    "id": "af-1a1x1",
+    "code": "1A1X1",
+    "title": "Flight Engineer",
+    "description": "Monitors and manages aircraft systems during flight to ensure safe and efficient mission execution.",
+    "category": "Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 57 }, { "composite": "M", "minScore": 47 }]
+  },
+  {
+    "id": "af-1a2x1",
+    "code": "1A2X1",
+    "title": "Aircraft Loadmaster",
+    "description": "Plans and executes the loading, securing, and airdrop of cargo and passengers on military transport aircraft.",
+    "category": "Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 57 }]
+  },
+  {
+    "id": "af-1a8x1",
+    "code": "1A8X1",
+    "title": "Airborne Cryptologic Language Analyst",
+    "description": "Collects and analyzes foreign language communications from airborne platforms to support intelligence operations.",
+    "category": "Intelligence",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 72 }]
+  },
+  {
+    "id": "af-1c1x1",
+    "code": "1C1X1",
+    "title": "Air Traffic Control",
+    "description": "Directs aircraft in flight and on the ground to ensure safe and efficient movement through controlled airspace.",
+    "category": "Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 55 }]
+  },
+  {
+    "id": "af-1c3x1",
+    "code": "1C3X1",
+    "title": "Command Post",
+    "description": "Manages command and control communications and coordinates operational information for base commanders.",
+    "category": "Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 57 }]
+  },
+  {
+    "id": "af-1c6x1",
+    "code": "1C6X1",
+    "title": "Space Systems Operations",
+    "description": "Operates and maintains satellite command and control systems, missile warning, and space surveillance systems.",
+    "category": "Space",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "E", "minScore": 60 }]
+  },
+  {
+    "id": "af-1d7x1",
+    "code": "1D7X1",
+    "title": "Cyber Defense Operations",
+    "description": "Protects Air Force networks and information systems by monitoring, detecting, and responding to cyber threats.",
+    "category": "Cyber/IT",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 64 }, { "composite": "E", "minScore": 60 }]
+  },
+  {
+    "id": "af-1n0x1",
+    "code": "1N0X1",
+    "title": "All Source Intelligence Analyst",
+    "description": "Collects, processes, and analyzes intelligence from multiple sources to produce assessments for military operations.",
+    "category": "Intelligence",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 57 }]
+  },
+  {
+    "id": "af-1n1x1",
+    "code": "1N1X1",
+    "title": "Geospatial Intelligence Analyst",
+    "description": "Analyzes imagery and geospatial data to produce intelligence products supporting targeting and mission planning.",
+    "category": "Intelligence",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 57 }]
+  },
+  {
+    "id": "af-1n4x1",
+    "code": "1N4X1",
+    "title": "Fusion Analyst",
+    "description": "Integrates multi-source intelligence data to identify threats, networks, and targets for operational commanders.",
+    "category": "Intelligence",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 62 }]
+  },
+  {
+    "id": "af-1t0x1",
+    "code": "1T0X1",
+    "title": "Survival, Evasion, Resistance, and Escape",
+    "description": "Trains aircrew and other personnel in survival techniques, evasion tactics, and resistance to enemy captivity.",
+    "category": "Special Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 55 }]
+  },
+  {
+    "id": "af-1w0x1",
+    "code": "1W0X1",
+    "title": "Weather",
+    "description": "Observes, analyzes, and forecasts atmospheric and space weather conditions to support military operations.",
+    "category": "Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 66 }]
+  },
+  {
+    "id": "af-1z1x1",
+    "code": "1Z1X1",
+    "title": "Pararescue",
+    "description": "Conducts personnel recovery and combat search-and-rescue operations in hostile or denied territory.",
+    "category": "Special Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 44 }]
+  },
+  {
+    "id": "af-1z2x1",
+    "code": "1Z2X1",
+    "title": "Combat Control",
+    "description": "Deploys into hostile environments to establish assault zones, provide air traffic control, and call in airstrikes.",
+    "category": "Special Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 44 }]
+  },
+  {
+    "id": "af-1z3x1",
+    "code": "1Z3X1",
+    "title": "Tactical Air Control Party",
+    "description": "Embeds with ground combat units to coordinate close air support and manage air-to-ground communications.",
+    "category": "Special Operations",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 49 }]
+  },
+  {
+    "id": "af-2a3x3",
+    "code": "2A3X3",
+    "title": "Tactical Aircraft Maintenance",
+    "description": "Performs scheduled and unscheduled maintenance on fighter and attack aircraft systems and components.",
+    "category": "Maintenance",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "M", "minScore": 47 }, { "composite": "E", "minScore": 47 }]
+  },
+  {
+    "id": "af-2a5x1",
+    "code": "2A5X1",
+    "title": "Aerospace Maintenance",
+    "description": "Performs inspections, maintenance, and repairs on aircraft airframes, engines, and related support systems.",
+    "category": "Maintenance",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "M", "minScore": 47 }]
+  },
+  {
+    "id": "af-2a6x1",
+    "code": "2A6X1",
+    "title": "Aerospace Propulsion",
+    "description": "Tests, repairs, and overhauls aircraft turbine engines, engine components, and related propulsion systems.",
+    "category": "Maintenance",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "M", "minScore": 47 }]
+  },
+  {
+    "id": "af-2s0x1",
+    "code": "2S0X1",
+    "title": "Materiel Management",
+    "description": "Controls supply inventories, manages equipment accountability, and provides logistics support for Air Force units.",
+    "category": "Logistics",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "A", "minScore": 41 }]
+  },
+  {
+    "id": "af-2t1x1",
+    "code": "2T1X1",
+    "title": "Vehicle Operations",
+    "description": "Operates and dispatches military and government vehicles to transport personnel, equipment, and cargo.",
+    "category": "Logistics",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "A", "minScore": 41 }]
+  },
+  {
+    "id": "af-2t2x1",
+    "code": "2T2X1",
+    "title": "Air Transportation",
+    "description": "Plans and executes the loading, unloading, and movement of passengers and cargo on military airlift aircraft.",
+    "category": "Logistics",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "A", "minScore": 41 }]
+  },
+  {
+    "id": "af-3e0x1",
+    "code": "3E0X1",
+    "title": "Electrical Systems",
+    "description": "Installs, maintains, and repairs electrical power distribution systems on Air Force installations worldwide.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "E", "minScore": 47 }]
+  },
+  {
+    "id": "af-3e5x1",
+    "code": "3E5X1",
+    "title": "Engineering",
+    "description": "Manages construction projects, conducts facility surveys, and provides engineering support for base infrastructure.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "M", "minScore": 47 }]
+  },
+  {
+    "id": "af-3e7x1",
+    "code": "3E7X1",
+    "title": "Fire Protection",
+    "description": "Responds to aircraft and structural fires, conducts rescue operations, and enforces fire prevention standards.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 38 }]
+  },
+  {
+    "id": "af-3f0x1",
+    "code": "3F0X1",
+    "title": "Personnel",
+    "description": "Manages military personnel records, assignments, promotions, and human resources services for Air Force members.",
+    "category": "Administrative",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "A", "minScore": 41 }]
+  },
+  {
+    "id": "af-3f1x1",
+    "code": "3F1X1",
+    "title": "Services",
+    "description": "Manages lodging, fitness centers, food service, and morale programs supporting quality of life on Air Force bases.",
+    "category": "Administrative",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "A", "minScore": 41 }]
+  },
+  {
+    "id": "af-3p0x1",
+    "code": "3P0X1",
+    "title": "Security Forces",
+    "description": "Protects Air Force personnel, resources, and installations through law enforcement, security, and force protection.",
+    "category": "Security Forces",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 33 }]
+  },
+  {
+    "id": "af-4a0x1",
+    "code": "4A0X1",
+    "title": "Health Services Management",
+    "description": "Manages administrative operations of Air Force medical facilities including patient records and scheduling.",
+    "category": "Medical",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 44 }]
+  },
+  {
+    "id": "af-4n0x1",
+    "code": "4N0X1",
+    "title": "Aerospace Medical Service",
+    "description": "Provides emergency, preventive, and primary medical care to Air Force personnel as a medical technician.",
+    "category": "Medical",
+    "minAFQT": 36,
+    "requirements": [{ "composite": "G", "minScore": 44 }]
+  }
+]
