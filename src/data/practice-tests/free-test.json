@@ -243,6 +243,486 @@
       "options": ["6", "8", "12", "24"],
       "correctIndex": 2,
       "explanation": "Cubes with paint on exactly two faces sit along the edges (not corners) of the larger cube. A 3×3×3 cube has 12 edges, each contributing 1 such cube, giving 12 total."
+    },
+    {
+      "id": "gs-4",
+      "subtest": "GS",
+      "question": "Which type of rock is formed when molten magma cools and solidifies?",
+      "options": ["Sedimentary", "Metamorphic", "Igneous", "Organic"],
+      "correctIndex": 2,
+      "explanation": "Igneous rocks form from the cooling of molten rock (magma or lava). Sedimentary rocks form from compacted sediments, and metamorphic rocks form under heat and pressure."
+    },
+    {
+      "id": "gs-5",
+      "subtest": "GS",
+      "question": "Which of the following best describes the function of red blood cells?",
+      "options": ["Fight infection by producing antibodies", "Transport oxygen throughout the body", "Regulate blood clotting", "Produce hormones"],
+      "correctIndex": 1,
+      "explanation": "Red blood cells (erythrocytes) contain hemoglobin, which binds to oxygen in the lungs and delivers it to tissues throughout the body."
+    },
+    {
+      "id": "gs-6",
+      "subtest": "GS",
+      "question": "Newton's Third Law of Motion states that for every action there is:",
+      "options": ["An equal but delayed reaction", "A greater and opposite reaction", "An equal and opposite reaction", "A proportional and parallel reaction"],
+      "correctIndex": 2,
+      "explanation": "Newton's Third Law states that for every action force, there is an equal in magnitude and opposite in direction reaction force. This explains recoil, rocket propulsion, and walking."
+    },
+    {
+      "id": "ar-5",
+      "subtest": "AR",
+      "question": "A tank holds 500 gallons of water. It drains at a rate of 25 gallons per minute and fills at 10 gallons per minute simultaneously. Starting with a full tank, how many minutes will it take to empty?",
+      "options": ["20 minutes", "25 minutes", "33 minutes", "50 minutes"],
+      "correctIndex": 2,
+      "explanation": "Net drain rate = 25 − 10 = 15 gallons per minute. Time = 500 ÷ 15 ≈ 33.3, so approximately 33 minutes."
+    },
+    {
+      "id": "ar-6",
+      "subtest": "AR",
+      "question": "A platoon of 40 soldiers must carry 480 pounds of equipment equally. How many pounds does each soldier carry?",
+      "options": ["10 pounds", "12 pounds", "14 pounds", "16 pounds"],
+      "correctIndex": 1,
+      "explanation": "480 ÷ 40 = 12 pounds per soldier."
+    },
+    {
+      "id": "ar-7",
+      "subtest": "AR",
+      "question": "A shirt originally priced at $60 is on sale for 25% off. What is the sale price?",
+      "options": ["$15", "$40", "$45", "$50"],
+      "correctIndex": 2,
+      "explanation": "Discount = 25% × $60 = $15. Sale price = $60 − $15 = $45."
+    },
+    {
+      "id": "ar-8",
+      "subtest": "AR",
+      "question": "Two workers can paint a room in 6 hours working together. If one worker can complete the job alone in 10 hours, how long would the second worker take alone?",
+      "options": ["12 hours", "15 hours", "16 hours", "20 hours"],
+      "correctIndex": 1,
+      "explanation": "Combined rate = 1/6 room/hr. Worker 1 rate = 1/10. Worker 2 rate = 1/6 − 1/10 = 5/30 − 3/30 = 2/30 = 1/15. So Worker 2 takes 15 hours."
+    },
+    {
+      "id": "wk-5",
+      "subtest": "WK",
+      "question": "TENACIOUS most nearly means:",
+      "options": ["Fragile", "Persistent", "Timid", "Generous"],
+      "correctIndex": 1,
+      "explanation": "Tenacious means holding firmly to a purpose or position; persistent and determined. It implies stubbornness in a positive sense."
+    },
+    {
+      "id": "wk-6",
+      "subtest": "WK",
+      "question": "AMBIGUOUS most nearly means:",
+      "options": ["Certain", "Unclear", "Ambitious", "Honest"],
+      "correctIndex": 1,
+      "explanation": "Ambiguous means open to more than one interpretation; not having a clear meaning. It is distinct from ambitious, which relates to goals."
+    },
+    {
+      "id": "wk-7",
+      "subtest": "WK",
+      "question": "VALIDATE most nearly means:",
+      "options": ["Deny", "Confirm", "Improve", "Replace"],
+      "correctIndex": 1,
+      "explanation": "To validate means to confirm or check the accuracy or legitimacy of something. It is synonymous with verify or confirm."
+    },
+    {
+      "id": "wk-8",
+      "subtest": "WK",
+      "question": "AUSTERE most nearly means:",
+      "options": ["Luxurious", "Severe", "Colorful", "Warm"],
+      "correctIndex": 1,
+      "explanation": "Austere means severe or strict in manner or appearance; lacking comfort or ornament. It describes a plain, unadorned quality."
+    },
+    {
+      "id": "pc-4",
+      "subtest": "PC",
+      "question": "Read the following passage and answer the question.\n\n\"The bald eagle was removed from the Endangered Species List in 2007, a success story for wildlife conservation. Once nearly extinct due to hunting and pesticide use, the population rebounded after DDT was banned in 1972 and legal protections were enacted.\"\n\nWhat was the primary cause of the bald eagle's recovery?",
+      "options": ["Captive breeding programs introduced thousands of new birds.", "A ban on DDT and legal protections allowed the population to rebound.", "Bald eagles adapted to living in urban environments.", "Congress funded a national eagle relocation program."],
+      "correctIndex": 1,
+      "explanation": "The passage directly credits the banning of DDT and legal protections as the reasons for the population's recovery."
+    },
+    {
+      "id": "pc-5",
+      "subtest": "PC",
+      "question": "Read the following passage and answer the question.\n\n\"Hypothermia occurs when the body loses heat faster than it can produce it, causing core body temperature to fall below 95°F. Symptoms progress from shivering and confusion to loss of coordination and, eventually, unconsciousness. Immediate warming and medical attention are critical.\"\n\nAccording to the passage, which symptom appears first?",
+      "options": ["Unconsciousness", "Loss of coordination", "Shivering and confusion", "Cardiac arrest"],
+      "correctIndex": 2,
+      "explanation": "The passage states that symptoms 'progress from shivering and confusion,' meaning those are the earliest symptoms listed."
+    },
+    {
+      "id": "pc-6",
+      "subtest": "PC",
+      "question": "Read the following passage and answer the question.\n\n\"A convoy must maintain a 100-meter interval between vehicles at all times. Closing the gap increases the risk of collision if the lead vehicle stops suddenly. Drivers are responsible for maintaining their own interval regardless of road conditions.\"\n\nWho is responsible for maintaining the correct vehicle interval?",
+      "options": ["The convoy commander", "The lead vehicle driver", "Each individual driver", "The vehicle navigator"],
+      "correctIndex": 2,
+      "explanation": "The passage explicitly states that 'drivers are responsible for maintaining their own interval,' making each individual driver responsible."
+    },
+    {
+      "id": "mk-5",
+      "subtest": "MK",
+      "question": "What is the perimeter of a square with a side length of 11 inches?",
+      "options": ["22 inches", "33 inches", "44 inches", "121 inches"],
+      "correctIndex": 2,
+      "explanation": "Perimeter of a square = 4 × side = 4 × 11 = 44 inches."
+    },
+    {
+      "id": "mk-6",
+      "subtest": "MK",
+      "question": "Solve for y: 5y + 3 = 2y + 18",
+      "options": ["y = 3", "y = 5", "y = 7", "y = 9"],
+      "correctIndex": 1,
+      "explanation": "Subtract 2y from both sides: 3y + 3 = 18. Subtract 3: 3y = 15. Divide: y = 5."
+    },
+    {
+      "id": "mk-7",
+      "subtest": "MK",
+      "question": "A right triangle has legs measuring 6 cm and 8 cm. What is the length of the hypotenuse?",
+      "options": ["7 cm", "10 cm", "12 cm", "14 cm"],
+      "correctIndex": 1,
+      "explanation": "By the Pythagorean theorem: c² = 6² + 8² = 36 + 64 = 100. c = √100 = 10 cm."
+    },
+    {
+      "id": "mk-8",
+      "subtest": "MK",
+      "question": "What is 15% of 240?",
+      "options": ["30", "36", "40", "42"],
+      "correctIndex": 1,
+      "explanation": "15% × 240 = 0.15 × 240 = 36."
+    },
+    {
+      "id": "ei-4",
+      "subtest": "EI",
+      "question": "Which component in an electrical circuit allows current to flow in only one direction?",
+      "options": ["Resistor", "Capacitor", "Diode", "Transformer"],
+      "correctIndex": 2,
+      "explanation": "A diode is a semiconductor device that permits current to flow in one direction only. It is commonly used to convert AC to DC in rectifier circuits."
+    },
+    {
+      "id": "ei-5",
+      "subtest": "EI",
+      "question": "A 60-watt light bulb operates on a 120-volt circuit. What is the current drawn by the bulb?",
+      "options": ["0.25 amperes", "0.5 amperes", "2 amperes", "7,200 amperes"],
+      "correctIndex": 1,
+      "explanation": "Power (P) = Voltage (V) × Current (I). Solving for I: I = P ÷ V = 60 ÷ 120 = 0.5 amperes."
+    },
+    {
+      "id": "ei-6",
+      "subtest": "EI",
+      "question": "What is the purpose of a fuse in an electrical circuit?",
+      "options": ["Increase voltage to components", "Store electrical charge", "Protect the circuit by breaking if current exceeds a safe level", "Regulate alternating current frequency"],
+      "correctIndex": 2,
+      "explanation": "A fuse contains a thin metal element that melts and breaks the circuit if current exceeds its rated value, protecting wiring and components from damage."
+    },
+    {
+      "id": "as-4",
+      "subtest": "AS",
+      "question": "What does a vehicle's alternator do while the engine is running?",
+      "options": ["Starts the engine by cranking it", "Recharges the battery and powers electrical systems", "Controls fuel injection timing", "Regulates engine coolant temperature"],
+      "correctIndex": 1,
+      "explanation": "The alternator converts mechanical energy from the engine into electrical energy, recharging the battery and supplying power to the vehicle's electrical systems while the engine runs."
+    },
+    {
+      "id": "as-5",
+      "subtest": "AS",
+      "question": "Which type of screwdriver is designed to fit a screw head with an X-shaped slot?",
+      "options": ["Flathead screwdriver", "Torx screwdriver", "Phillips screwdriver", "Hex screwdriver"],
+      "correctIndex": 2,
+      "explanation": "A Phillips screwdriver has a cross-shaped tip designed to fit X-shaped (Phillips) screw head recesses, providing better torque than a flathead."
+    },
+    {
+      "id": "as-6",
+      "subtest": "AS",
+      "question": "When should a vehicle's engine oil be replaced most regularly, according to general maintenance practice?",
+      "options": ["Only when the oil pressure warning light activates", "At every fuel fill-up", "At intervals recommended by the manufacturer, typically based on mileage or time", "Once per year regardless of mileage"],
+      "correctIndex": 2,
+      "explanation": "Manufacturers specify oil change intervals (commonly every 3,000–7,500 miles or more with synthetic oil) based on engineering data. Following these intervals prevents engine wear."
+    },
+    {
+      "id": "mc-4",
+      "subtest": "MC",
+      "question": "A wheel and axle system has a wheel with a radius of 12 inches and an axle with a radius of 3 inches. What is the mechanical advantage of this system?",
+      "options": ["2", "3", "4", "6"],
+      "correctIndex": 2,
+      "explanation": "Mechanical advantage of a wheel and axle = wheel radius ÷ axle radius = 12 ÷ 3 = 4."
+    },
+    {
+      "id": "mc-5",
+      "subtest": "MC",
+      "question": "A fixed pulley changes the direction of force but does NOT change the amount of force required. Which statement about a fixed pulley is correct?",
+      "options": ["It reduces the force needed by half.", "It multiplies the force by the number of rope segments.", "It redirects the force without any mechanical advantage.", "It eliminates the effect of gravity on the load."],
+      "correctIndex": 2,
+      "explanation": "A single fixed pulley only redirects the pulling force; it does not reduce the effort required to lift the load. Mechanical advantage = 1."
+    },
+    {
+      "id": "mc-6",
+      "subtest": "MC",
+      "question": "Which of the following changes would increase the pressure exerted by a block resting on a table?",
+      "options": ["Tilting the block at a 45-degree angle", "Increasing the surface area in contact with the table", "Placing the block on a smaller face so less area contacts the table", "Moving the block to the center of the table"],
+      "correctIndex": 2,
+      "explanation": "Pressure = Force ÷ Area. Reducing the contact area while keeping the weight the same increases the pressure, since the same force is concentrated on a smaller surface."
+    },
+    {
+      "id": "ao-4",
+      "subtest": "AO",
+      "question": "A square piece of cardboard has a small square cut from each of its four corners. When the sides are folded up along the cut lines, what shape is formed?",
+      "options": ["A pyramid", "An open-top box", "A cylinder", "A cone"],
+      "correctIndex": 1,
+      "explanation": "Cutting squares from each corner and folding up the resulting flaps creates an open-top rectangular box — a standard net-folding construction."
+    },
+    {
+      "id": "ao-5",
+      "subtest": "AO",
+      "question": "A solid cylinder is sliced straight down through its center from top to bottom (a vertical cut through the axis). What shape is the cross-section?",
+      "options": ["Circle", "Ellipse", "Rectangle", "Triangle"],
+      "correctIndex": 2,
+      "explanation": "Cutting a cylinder along its axis (lengthwise through the center) produces a rectangular cross-section whose width equals the cylinder's diameter and height equals its length."
+    },
+    {
+      "id": "ao-6",
+      "subtest": "AO",
+      "question": "Three identical equilateral triangles are placed so that one vertex of each meets at a common center point and the triangles do not overlap. What is the total interior angle at the center point?",
+      "options": ["180 degrees", "240 degrees", "270 degrees", "360 degrees"],
+      "correctIndex": 3,
+      "explanation": "Each equilateral triangle has a 60-degree angle at its vertex. Three triangles meeting at a point contribute 3 × 60 = 180 degrees — but around a full meeting point the angles around the center sum to 360 degrees. With three 60-degree corners arranged to fill the space, the full rotation around the center is 360 degrees."
+    },
+    {
+      "id": "gs-7",
+      "subtest": "GS",
+      "question": "Photosynthesis in plants primarily uses which two resources to produce glucose?",
+      "options": ["Oxygen and nitrogen", "Carbon dioxide and water", "Glucose and oxygen", "Nitrogen and phosphorus"],
+      "correctIndex": 1,
+      "explanation": "Plants use carbon dioxide (CO₂) from the air and water (H₂O) from the soil, along with sunlight energy, to produce glucose through photosynthesis."
+    },
+    {
+      "id": "gs-8",
+      "subtest": "GS",
+      "question": "Which planet in our solar system is largest by diameter?",
+      "options": ["Saturn", "Neptune", "Jupiter", "Uranus"],
+      "correctIndex": 2,
+      "explanation": "Jupiter is the largest planet in the solar system, with a diameter of about 143,000 km — more than 11 times the diameter of Earth."
+    },
+    {
+      "id": "gs-9",
+      "subtest": "GS",
+      "question": "In an acid-base reaction, the pH of a neutral solution is:",
+      "options": ["0", "7", "10", "14"],
+      "correctIndex": 1,
+      "explanation": "The pH scale runs from 0 (most acidic) to 14 (most basic/alkaline). A pH of 7 represents a neutral solution, such as pure water."
+    },
+    {
+      "id": "ar-9",
+      "subtest": "AR",
+      "question": "If 5 pens cost $3.75, what is the cost of 8 pens at the same price?",
+      "options": ["$5.00", "$5.60", "$6.00", "$6.25"],
+      "correctIndex": 2,
+      "explanation": "Price per pen = $3.75 ÷ 5 = $0.75. Cost of 8 pens = 8 × $0.75 = $6.00."
+    },
+    {
+      "id": "ar-10",
+      "subtest": "AR",
+      "question": "A rectangular field is 120 yards long and 80 yards wide. What is its area in square yards?",
+      "options": ["4,800", "8,400", "9,600", "10,400"],
+      "correctIndex": 2,
+      "explanation": "Area = length × width = 120 × 80 = 9,600 square yards."
+    },
+    {
+      "id": "ar-11",
+      "subtest": "AR",
+      "question": "A train leaves a station at 9:00 AM traveling at 60 mph. A second train leaves the same station at 10:00 AM traveling in the same direction at 90 mph. At what time does the second train catch up to the first?",
+      "options": ["11:00 AM", "12:00 PM", "12:30 PM", "1:00 PM"],
+      "correctIndex": 1,
+      "explanation": "After 1 hour, Train 1 is 60 miles ahead. Closing rate = 90 − 60 = 30 mph. Time to close gap = 60 ÷ 30 = 2 hours after 10:00 AM = 12:00 PM."
+    },
+    {
+      "id": "ar-12",
+      "subtest": "AR",
+      "question": "A map has a scale of 1 inch = 50 miles. Two cities are 3.5 inches apart on the map. What is the actual distance between them?",
+      "options": ["150 miles", "175 miles", "200 miles", "225 miles"],
+      "correctIndex": 1,
+      "explanation": "Actual distance = 3.5 × 50 = 175 miles."
+    },
+    {
+      "id": "wk-9",
+      "subtest": "WK",
+      "question": "DILIGENT most nearly means:",
+      "options": ["Lazy", "Careful", "Hardworking", "Honest"],
+      "correctIndex": 2,
+      "explanation": "Diligent means showing steady, earnest effort in one's work or duties. It is closest in meaning to hardworking or industrious."
+    },
+    {
+      "id": "wk-10",
+      "subtest": "WK",
+      "question": "VOLATILE most nearly means:",
+      "options": ["Stable", "Unstable", "Heavy", "Silent"],
+      "correctIndex": 1,
+      "explanation": "Volatile describes something that is liable to change rapidly and unpredictably, especially for the worse. It suggests instability or explosiveness."
+    },
+    {
+      "id": "wk-11",
+      "subtest": "WK",
+      "question": "EXPEDITE most nearly means:",
+      "options": ["Delay", "Organize", "Accelerate", "Evaluate"],
+      "correctIndex": 2,
+      "explanation": "To expedite means to speed up the process of something; to cause it to happen more quickly. It is synonymous with accelerate or hasten."
+    },
+    {
+      "id": "wk-12",
+      "subtest": "WK",
+      "question": "METICULOUS most nearly means:",
+      "options": ["Careless", "Precise", "Modest", "Flexible"],
+      "correctIndex": 1,
+      "explanation": "Meticulous means showing great attention to detail; very careful and precise. It describes someone who is thorough and exact."
+    },
+    {
+      "id": "pc-7",
+      "subtest": "PC",
+      "question": "Read the following passage and answer the question.\n\n\"Antibiotics are effective against bacterial infections but have no effect on viral illnesses such as the common cold or influenza. Overuse of antibiotics has led to the emergence of drug-resistant bacteria, which pose a significant public health threat.\"\n\nWhat conclusion can be drawn from this passage?",
+      "options": ["Antibiotics should be prescribed for all infections to prevent complications.", "Viral and bacterial infections require the same treatment.", "Using antibiotics unnecessarily contributes to antibiotic resistance.", "The common cold can be cured with the right antibiotic."],
+      "correctIndex": 2,
+      "explanation": "The passage states that overuse of antibiotics leads to drug-resistant bacteria, implying that using them when unnecessary worsens the resistance problem."
+    },
+    {
+      "id": "pc-8",
+      "subtest": "PC",
+      "question": "Read the following passage and answer the question.\n\n\"Night vision devices amplify existing light, such as moonlight or starlight, to allow soldiers to see in low-light environments. Unlike infrared thermal devices, which detect heat signatures, night vision devices cannot function in complete darkness.\"\n\nWhat is one limitation of night vision devices mentioned in the passage?",
+      "options": ["They are too heavy for field use.", "They detect heat signatures rather than light.", "They cannot function in complete darkness.", "They can only be used by specially trained soldiers."],
+      "correctIndex": 2,
+      "explanation": "The passage explicitly states that night vision devices cannot function in complete darkness because they amplify existing light and require some ambient light to work."
+    },
+    {
+      "id": "pc-9",
+      "subtest": "PC",
+      "question": "Read the following passage and answer the question.\n\n\"The Army's supply chain relies on a system known as LOGCAP (Logistics Civil Augmentation Program), which contracts civilian companies to provide support services in combat zones. This allows military units to focus on combat operations rather than logistics management.\"\n\nWhat is the main purpose of LOGCAP according to the passage?",
+      "options": ["To replace all military logistics units with civilian workers", "To allow military units to concentrate on combat by outsourcing support services", "To reduce the overall size of the military budget", "To train civilian contractors in military combat tactics"],
+      "correctIndex": 1,
+      "explanation": "The passage states that LOGCAP contracts civilian companies for support services specifically so that military units can focus on combat operations."
+    },
+    {
+      "id": "mk-9",
+      "subtest": "MK",
+      "question": "Simplify: (3x²)(4x³)",
+      "options": ["7x⁵", "12x⁵", "12x⁶", "7x⁶"],
+      "correctIndex": 1,
+      "explanation": "Multiply coefficients: 3 × 4 = 12. Add exponents: x² × x³ = x⁵. Result: 12x⁵."
+    },
+    {
+      "id": "mk-10",
+      "subtest": "MK",
+      "question": "What is the circumference of a circle with a diameter of 10 inches? (Use π ≈ 3.14)",
+      "options": ["15.7 inches", "31.4 inches", "78.5 inches", "314 inches"],
+      "correctIndex": 1,
+      "explanation": "Circumference = π × diameter = 3.14 × 10 = 31.4 inches."
+    },
+    {
+      "id": "mk-11",
+      "subtest": "MK",
+      "question": "If the ratio of boys to girls in a class is 3:5 and there are 24 boys, how many girls are in the class?",
+      "options": ["32", "36", "40", "48"],
+      "correctIndex": 2,
+      "explanation": "Girls = (5/3) × 24 = 40."
+    },
+    {
+      "id": "mk-12",
+      "subtest": "MK",
+      "question": "Evaluate: |−18| + |5|",
+      "options": ["−13", "13", "23", "−23"],
+      "correctIndex": 2,
+      "explanation": "Absolute value removes the sign: |−18| = 18, |5| = 5. Sum = 18 + 5 = 23."
+    },
+    {
+      "id": "ei-7",
+      "subtest": "EI",
+      "question": "Two resistors of 6 ohms each are connected in parallel. What is the total resistance of the combination?",
+      "options": ["12 ohms", "6 ohms", "3 ohms", "1 ohm"],
+      "correctIndex": 2,
+      "explanation": "For two equal resistors (R) in parallel, total resistance = R ÷ 2 = 6 ÷ 2 = 3 ohms. Formula: 1/Rt = 1/6 + 1/6 = 2/6, so Rt = 3 ohms."
+    },
+    {
+      "id": "ei-8",
+      "subtest": "EI",
+      "question": "Which material is the BEST electrical conductor?",
+      "options": ["Rubber", "Glass", "Copper", "Wood"],
+      "correctIndex": 2,
+      "explanation": "Copper is one of the best electrical conductors available and is widely used in wiring. Rubber, glass, and wood are insulators that resist current flow."
+    },
+    {
+      "id": "ei-9",
+      "subtest": "EI",
+      "question": "A transformer has 100 turns on its primary coil and 400 turns on its secondary coil. If the primary voltage is 120 volts, what is the secondary voltage?",
+      "options": ["30 volts", "120 volts", "480 volts", "600 volts"],
+      "correctIndex": 2,
+      "explanation": "Transformer ratio: Vs/Vp = Ns/Np → Vs = 120 × (400/100) = 120 × 4 = 480 volts."
+    },
+    {
+      "id": "as-7",
+      "subtest": "AS",
+      "question": "What is the purpose of a vehicle's timing belt or timing chain?",
+      "options": ["Transfer power from the transmission to the wheels", "Synchronize the rotation of the crankshaft and camshaft", "Connect the steering column to the front wheels", "Regulate fuel pressure in the injection system"],
+      "correctIndex": 1,
+      "explanation": "The timing belt/chain synchronizes the crankshaft and camshaft so that engine valves open and close at the correct times during each piston stroke."
+    },
+    {
+      "id": "as-8",
+      "subtest": "AS",
+      "question": "Which hand tool would you use to measure the outside diameter of a cylindrical metal rod precisely?",
+      "options": ["Tape measure", "Inside caliper", "Outside micrometer", "Combination square"],
+      "correctIndex": 2,
+      "explanation": "An outside micrometer provides precise measurements of the outer dimensions of cylindrical objects, with accuracy to thousandths of an inch."
+    },
+    {
+      "id": "as-9",
+      "subtest": "AS",
+      "question": "When welding, the primary purpose of a ground clamp attached to the workpiece is to:",
+      "options": ["Prevent the metal from warping", "Complete the electrical circuit for the welding arc", "Cool the metal after welding", "Indicate the direction of welding travel"],
+      "correctIndex": 1,
+      "explanation": "The ground clamp completes the electrical circuit from the welder through the workpiece, allowing current to flow and create the arc needed for welding."
+    },
+    {
+      "id": "mc-7",
+      "subtest": "MC",
+      "question": "If a hydraulic jack applies 10 pounds of force over a piston with an area of 2 square inches, what is the pressure transmitted through the hydraulic fluid?",
+      "options": ["2 psi", "5 psi", "12 psi", "20 psi"],
+      "correctIndex": 1,
+      "explanation": "Pressure = Force ÷ Area = 10 ÷ 2 = 5 pounds per square inch (psi). This pressure is transmitted equally throughout the fluid."
+    },
+    {
+      "id": "mc-8",
+      "subtest": "MC",
+      "question": "A ball rolls off a horizontal table and follows a curved path to the ground. This curved path is an example of which type of motion?",
+      "options": ["Circular motion", "Simple harmonic motion", "Projectile motion", "Linear motion"],
+      "correctIndex": 2,
+      "explanation": "When an object has a horizontal velocity and is acted on by gravity, it follows a curved (parabolic) path called projectile motion — a combination of horizontal and vertical components."
+    },
+    {
+      "id": "mc-9",
+      "subtest": "MC",
+      "question": "In an inclined plane, increasing the length of the ramp while keeping the height constant will:",
+      "options": ["Increase the effort force needed to move the load", "Decrease the mechanical advantage", "Increase the mechanical advantage by reducing effort force", "Have no effect on mechanical advantage"],
+      "correctIndex": 2,
+      "explanation": "Mechanical advantage of an inclined plane = ramp length ÷ height. A longer ramp with the same height produces a larger mechanical advantage, reducing the effort force required."
+    },
+    {
+      "id": "ao-7",
+      "subtest": "AO",
+      "question": "A standard six-sided die is held so that the 1 faces up. Which number is on the face directly opposite the 1?",
+      "options": ["2", "4", "6", "5"],
+      "correctIndex": 2,
+      "explanation": "On a standard die, opposite faces always sum to 7. The face opposite the 1 is 6 (1 + 6 = 7)."
+    },
+    {
+      "id": "ao-8",
+      "subtest": "AO",
+      "question": "A flat net consisting of one large square surrounded by four smaller squares (one on each side) is folded. What three-dimensional shape does it form?",
+      "options": ["A pyramid", "A rectangular prism", "A cross", "A cube requires 6 equal squares, so this net forms an incomplete shape"],
+      "correctIndex": 1,
+      "explanation": "A net with one central square and four surrounding squares (of the same size) folds into an open-top box — a rectangular prism missing one face (the top)."
+    },
+    {
+      "id": "ao-9",
+      "subtest": "AO",
+      "question": "A 12-inch ruler is broken into two pieces. One piece is twice as long as the other. What are the lengths of the two pieces?",
+      "options": ["3 inches and 9 inches", "4 inches and 8 inches", "5 inches and 7 inches", "6 inches and 6 inches"],
+      "correctIndex": 1,
+      "explanation": "Let the shorter piece = x. Then 2x = longer piece. x + 2x = 12 → 3x = 12 → x = 4. The pieces are 4 inches and 8 inches."
     }
   ]
 }

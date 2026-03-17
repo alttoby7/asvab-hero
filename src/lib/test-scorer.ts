@@ -80,15 +80,52 @@ export function getWeaknesses(results: SubtestResult[]): SubtestResult[] {
   return [...results].sort((a, b) => a.percentage - b.percentage).slice(0, 3);
 }
 
-export function shuffleQuestions(
-  questions: PracticeQuestion[]
-): PracticeQuestion[] {
-  const shuffled = [...questions];
+function shuffle<T>(arr: T[]): T[] {
+  const shuffled = [...arr];
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
   return shuffled;
+}
+
+export function shuffleQuestions(
+  questions: PracticeQuestion[]
+): PracticeQuestion[] {
+  return shuffle(questions);
+}
+
+/**
+ * Select `count` questions from a larger pool, maintaining subtest distribution.
+ * Groups by subtest, takes proportional samples, then shuffles the result.
+ */
+export function selectQuestions(
+  pool: PracticeQuestion[],
+  count: number
+): PracticeQuestion[] {
+  if (pool.length <= count) return shuffle(pool);
+
+  // Group by subtest
+  const bySubtest = new Map<AsvabSubtest, PracticeQuestion[]>();
+  for (const q of pool) {
+    const list = bySubtest.get(q.subtest) || [];
+    list.push(q);
+    bySubtest.set(q.subtest, list);
+  }
+
+  // Distribution per subtest for 30 questions
+  const distribution: Record<AsvabSubtest, number> = {
+    GS: 3, AR: 4, WK: 4, PC: 3, MK: 4, EI: 3, AS: 3, MC: 3, AO: 3,
+  };
+
+  const selected: PracticeQuestion[] = [];
+  for (const [subtest, questions] of bySubtest) {
+    const needed = distribution[subtest] || Math.ceil((count / pool.length) * questions.length);
+    const shuffled = shuffle(questions);
+    selected.push(...shuffled.slice(0, needed));
+  }
+
+  return shuffle(selected);
 }
 
 export function totalCorrect(

@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import type { PracticeQuestion, UserAnswer, TestPhase } from "@/types";
-import { shuffleQuestions } from "@/lib/test-scorer";
+import { selectQuestions } from "@/lib/test-scorer";
 import QuestionCard from "./QuestionCard";
 import ProgressBar from "./ProgressBar";
 import Timer from "./Timer";
@@ -149,7 +149,7 @@ export default function PracticeTestEngine({
   );
 
   function startFresh() {
-    const shuffled = shuffleQuestions(questions);
+    const shuffled = selectQuestions(questions, 30);
     setShuffledQuestions(shuffled);
     setAnswers(
       shuffled.map((q) => ({ questionId: q.id, selectedIndex: null }))
