@@ -211,7 +211,7 @@
     "title": "Aviation Survival Technician",
     "description": "Serves as rescue swimmer and paramedic, performing helicopter hoist rescues and emergency medical care in the most demanding search and rescue conditions.",
     "category": "Aviation",
-    "minAFQT": 65,
+    "minAFQT": 40,
     "requirements": [
       {
         "composite": "VE+MC+AS",

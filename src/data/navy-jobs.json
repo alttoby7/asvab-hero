@@ -1,156 +1,48 @@
 [
   {
-    "id": "navy-hm",
-    "code": "HM",
-    "title": "Hospital Corpsman",
-    "description": "Provides medical care and emergency treatment to sailors and Marines in clinical and combat environments.",
-    "category": "Medical",
+    "id": "navy-ac",
+    "code": "AC",
+    "title": "Air Traffic Controller",
+    "description": "Directs aircraft movements in Navy airspace, providing guidance for takeoff, landing, and in-flight operations aboard carriers and at naval air stations.",
+    "category": "Aviation",
     "minAFQT": 35,
-    "requirements": [{ "composite": "VE+MK+GS", "minScore": 149 }]
+    "requirements": [{ "composite": "VE+AR+MK+MC", "minScore": 220 }]
   },
   {
-    "id": "navy-it",
-    "code": "IT",
-    "title": "Information Systems Technician",
-    "description": "Operates and maintains Navy computer networks, telecommunications systems, and cybersecurity infrastructure.",
-    "category": "IT/Communications",
+    "id": "navy-ad",
+    "code": "AD",
+    "title": "Aviation Machinist's Mate",
+    "description": "Maintains and repairs aircraft engines, propulsion systems, and related components on Navy aircraft.",
+    "category": "Aviation",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 210 }]
+  },
+  {
+    "id": "navy-ae",
+    "code": "AE",
+    "title": "Aviation Electrician's Mate",
+    "description": "Maintains and repairs electrical power systems, lighting, and associated equipment on Navy aircraft.",
+    "category": "Aviation",
     "minAFQT": 35,
     "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 222 }]
-  },
-  {
-    "id": "navy-ctr",
-    "code": "CTR",
-    "title": "Cryptologic Technician Collection",
-    "description": "Collects and processes signals intelligence to support Navy and national-level intelligence operations.",
-    "category": "Intelligence",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "VE+MK+GS", "minScore": 210 }]
-  },
-  {
-    "id": "navy-cti",
-    "code": "CTI",
-    "title": "Cryptologic Technician Interpretive",
-    "description": "Translates and analyzes foreign language communications to produce actionable intelligence for military operations.",
-    "category": "Intelligence",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "VE+MK+GS", "minScore": 215 }]
-  },
-  {
-    "id": "navy-ctn",
-    "code": "CTN",
-    "title": "Cryptologic Technician Networks",
-    "description": "Conducts offensive and defensive cyber operations and computer network exploitation for the Navy.",
-    "category": "Intelligence",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 235 }]
-  },
-  {
-    "id": "navy-et",
-    "code": "ET",
-    "title": "Electronics Technician",
-    "description": "Maintains and repairs sophisticated electronic systems including radar, navigation, and communication equipment.",
-    "category": "Engineering",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 222 }]
-  },
-  {
-    "id": "navy-em",
-    "code": "EM",
-    "title": "Electrician's Mate",
-    "description": "Operates and maintains shipboard electrical power generation and distribution systems.",
-    "category": "Engineering",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 210 }]
-  },
-  {
-    "id": "navy-mm",
-    "code": "MM",
-    "title": "Machinist's Mate",
-    "description": "Operates and maintains ship propulsion systems, auxiliary equipment, and outside machinery.",
-    "category": "Engineering",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 195 }]
-  },
-  {
-    "id": "navy-en",
-    "code": "EN",
-    "title": "Engineman",
-    "description": "Operates and maintains diesel engines, gas turbines, and propulsion equipment on Navy ships and craft.",
-    "category": "Engineering",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 195 }]
-  },
-  {
-    "id": "navy-bm",
-    "code": "BM",
-    "title": "Boatswain's Mate",
-    "description": "Supervises deck operations including ship handling, seamanship, and small boat operations.",
-    "category": "Operations",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "VE+AR", "minScore": 96 }]
-  },
-  {
-    "id": "navy-yn",
-    "code": "YN",
-    "title": "Yeoman",
-    "description": "Performs administrative and clerical duties including correspondence, reports, and personnel records management.",
-    "category": "Administrative",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "VE+MK", "minScore": 105 }]
-  },
-  {
-    "id": "navy-ps",
-    "code": "PS",
-    "title": "Personnel Specialist",
-    "description": "Manages personnel records, pay administration, and career counseling for Navy service members.",
-    "category": "Administrative",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "VE+MK", "minScore": 105 }]
-  },
-  {
-    "id": "navy-ls",
-    "code": "LS",
-    "title": "Logistics Specialist",
-    "description": "Manages supply chain operations including procurement, inventory control, and financial accounting.",
-    "category": "Supply/Logistics",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "VE+AR", "minScore": 105 }]
-  },
-  {
-    "id": "navy-ma",
-    "code": "MA",
-    "title": "Master-at-Arms",
-    "description": "Provides law enforcement, force protection, and physical security for Navy installations and personnel.",
-    "category": "Operations",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "VE+MK+GS", "minScore": 148 }]
-  },
-  {
-    "id": "navy-mc",
-    "code": "MC",
-    "title": "Mass Communication Specialist",
-    "description": "Produces visual media, journalism, and public affairs content to support Navy communication efforts.",
-    "category": "Administrative",
-    "minAFQT": 35,
-    "requirements": [{ "composite": "VE+AR", "minScore": 110 }]
   },
   {
     "id": "navy-ag",
     "code": "AG",
     "title": "Aerographer's Mate",
-    "description": "Collects and analyzes meteorological and oceanographic data to support fleet operations and aviation safety.",
+    "description": "Collects and analyzes meteorological and oceanographic data to support fleet operations, flight safety, and tactical planning.",
     "category": "Aviation",
     "minAFQT": 35,
     "requirements": [{ "composite": "VE+MK+GS", "minScore": 162 }]
   },
   {
-    "id": "navy-ao",
-    "code": "AO",
-    "title": "Aviation Ordnanceman",
-    "description": "Stores, assembles, and loads aviation weapons and ammunition on Navy aircraft.",
+    "id": "navy-airr",
+    "code": "AIRR",
+    "title": "Naval Aircrewman Rescue Swimmer",
+    "description": "Performs rescue swimmer and aircrewman duties aboard Navy helicopters, conducting search and rescue and combat search and rescue operations.",
     "category": "Aviation",
     "minAFQT": 35,
-    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 185 }]
+    "requirements": [{ "composite": "VE+AR+MK+MC", "minScore": 210 }]
   },
   {
     "id": "navy-am",
@@ -162,49 +54,175 @@
     "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 210 }]
   },
   {
+    "id": "navy-ame",
+    "code": "AME",
+    "title": "Aviation Structural Mechanic (Safety Equipment)",
+    "description": "Maintains aircraft safety and survival equipment including ejection seats, parachutes, and emergency oxygen systems.",
+    "category": "Aviation",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 210 }]
+  },
+  {
+    "id": "navy-ao",
+    "code": "AO",
+    "title": "Aviation Ordnanceman",
+    "description": "Stores, assembles, and loads aviation weapons, missiles, and ammunition on Navy aircraft.",
+    "category": "Aviation",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 185 }]
+  },
+  {
+    "id": "navy-as",
+    "code": "AS",
+    "title": "Aviation Support Equipment Technician",
+    "description": "Operates and maintains aviation ground support equipment used to service and test Navy aircraft systems.",
+    "category": "Aviation",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+MC", "minScore": 206 }]
+  },
+  {
+    "id": "navy-at",
+    "code": "AT",
+    "title": "Aviation Electronics Technician",
+    "description": "Maintains and repairs avionics, navigation, and electronic warfare systems on Navy aircraft.",
+    "category": "Aviation",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 222 }]
+  },
+  {
+    "id": "navy-awf",
+    "code": "AWF",
+    "title": "Naval Aircrewman Mechanical",
+    "description": "Serves as an aircrewman on Navy helicopters, operating mechanical systems and performing search, rescue, and antisubmarine warfare missions.",
+    "category": "Aviation",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+MC", "minScore": 210 }]
+  },
+  {
+    "id": "navy-awo",
+    "code": "AWO",
+    "title": "Naval Aircrewman Operator",
+    "description": "Operates sensors and tactical systems aboard Navy patrol aircraft and helicopters in antisubmarine and maritime patrol missions.",
+    "category": "Aviation",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+MC", "minScore": 210 }]
+  },
+  {
+    "id": "navy-awr",
+    "code": "AWR",
+    "title": "Naval Aircrewman Tactical Helicopter",
+    "description": "Operates weapons systems and sensors aboard Romeo (MH-60R) helicopters conducting antisubmarine and antiship warfare missions.",
+    "category": "Aviation",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+MC", "minScore": 210 }]
+  },
+  {
+    "id": "navy-aws",
+    "code": "AWS",
+    "title": "Naval Aircrewman Helicopter",
+    "description": "Serves as an aircrewman aboard Sierra (MH-60S) helicopters conducting combat search and rescue, vertical replenishment, and special operations support.",
+    "category": "Aviation",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+MC", "minScore": 210 }]
+  },
+  {
+    "id": "navy-awv",
+    "code": "AWV",
+    "title": "Naval Aircrewman Avionics",
+    "description": "Maintains avionics and electronic systems while serving as an aircrewman on Navy patrol and reconnaissance aircraft.",
+    "category": "Aviation",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+MC", "minScore": 210 }]
+  },
+  {
+    "id": "navy-az",
+    "code": "AZ",
+    "title": "Aviation Maintenance Administrationman",
+    "description": "Manages administrative records, maintenance documentation, and data systems supporting Navy aviation maintenance operations.",
+    "category": "Aviation",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR", "minScore": 102 }]
+  },
+  {
+    "id": "navy-pr",
+    "code": "PR",
+    "title": "Aircrew Survival Equipmentman",
+    "description": "Maintains aircrew life support equipment including parachutes, survival gear, flight clothing, and oxygen systems.",
+    "category": "Aviation",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 185 }]
+  },
+  {
     "id": "navy-abe",
     "code": "ABE",
-    "title": "Aviation Boatswain's Mate Equipment",
-    "description": "Operates and maintains aircraft launch and recovery equipment on carriers including catapults and arresting gear.",
+    "title": "Aviation Boatswain's Mate (Equipment)",
+    "description": "Operates and maintains aircraft launch and recovery equipment on carriers, including catapults, arresting gear, and visual landing aids.",
     "category": "Aviation",
     "minAFQT": 35,
     "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 184 }]
   },
   {
-    "id": "navy-os",
-    "code": "OS",
-    "title": "Operations Specialist",
-    "description": "Operates radar, navigation, and combat systems to track contacts and coordinate tactical operations.",
-    "category": "Operations",
+    "id": "navy-abf",
+    "code": "ABF",
+    "title": "Aviation Boatswain's Mate (Fuels)",
+    "description": "Handles and manages aviation fuel systems aboard carriers and naval air stations, ensuring safe fueling of aircraft.",
+    "category": "Aviation",
     "minAFQT": 35,
-    "requirements": [{ "composite": "VE+MK+GS", "minScore": 157 }]
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 184 }]
   },
   {
-    "id": "navy-qm",
-    "code": "QM",
-    "title": "Quartermaster",
-    "description": "Performs navigation duties including chart plotting, weather observation, and ship's position tracking.",
-    "category": "Operations",
+    "id": "navy-abh",
+    "code": "ABH",
+    "title": "Aviation Boatswain's Mate (Handling)",
+    "description": "Directs aircraft movement, parking, and spotting on carrier flight decks and in hangars.",
+    "category": "Aviation",
     "minAFQT": 35,
-    "requirements": [{ "composite": "VE+AR", "minScore": 108 }]
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 184 }]
   },
   {
-    "id": "navy-stg",
-    "code": "STG",
-    "title": "Sonar Technician Surface",
-    "description": "Operates and maintains sonar systems used to detect and track submarines and underwater objects.",
+    "id": "navy-bm",
+    "code": "BM",
+    "title": "Boatswain's Mate",
+    "description": "Supervises deck operations including ship handling, seamanship, small boat operations, and deck maintenance.",
     "category": "Operations",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 163 }]
+  },
+  {
+    "id": "navy-dc",
+    "code": "DC",
+    "title": "Damage Controlman",
+    "description": "Maintains damage control equipment and trains crews in firefighting, flooding response, and nuclear, biological, and chemical defense.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 193 }]
+  },
+  {
+    "id": "navy-em",
+    "code": "EM",
+    "title": "Electrician's Mate",
+    "description": "Operates and maintains shipboard electrical power generation and distribution systems.",
+    "category": "Engineering",
     "minAFQT": 35,
     "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 210 }]
   },
   {
-    "id": "navy-gm",
-    "code": "GM",
-    "title": "Gunner's Mate",
-    "description": "Maintains and operates shipboard weapons systems including guns, missile launchers, and small arms.",
-    "category": "Operations",
+    "id": "navy-en",
+    "code": "EN",
+    "title": "Engineman",
+    "description": "Operates and maintains diesel engines, gas turbines, and propulsion equipment on Navy ships and craft.",
+    "category": "Engineering",
     "minAFQT": 35,
-    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 205 }]
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 188 }]
+  },
+  {
+    "id": "navy-et",
+    "code": "ET",
+    "title": "Electronics Technician",
+    "description": "Maintains and repairs sophisticated electronic systems including radar, navigation, and communications equipment.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 222 }]
   },
   {
     "id": "navy-fc",
@@ -216,15 +234,486 @@
     "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 222 }]
   },
   {
+    "id": "navy-gm",
+    "code": "GM",
+    "title": "Gunner's Mate",
+    "description": "Maintains and operates shipboard weapons systems including guns, missile launchers, and small arms.",
+    "category": "Operations",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 205 }]
+  },
+  {
+    "id": "navy-gse",
+    "code": "GSE",
+    "title": "Gas Turbine Systems Technician (Electrical)",
+    "description": "Operates and maintains gas turbine propulsion plants and electrical systems on Navy surface ships.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 210 }]
+  },
+  {
+    "id": "navy-gsm",
+    "code": "GSM",
+    "title": "Gas Turbine Systems Technician (Mechanical)",
+    "description": "Operates and maintains the mechanical components of gas turbine propulsion and auxiliary systems.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 200 }]
+  },
+  {
+    "id": "navy-ht",
+    "code": "HT",
+    "title": "Hull Maintenance Technician",
+    "description": "Performs welding, pipefitting, and repair of ship hulls, plumbing, and structural components.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 193 }]
+  },
+  {
+    "id": "navy-ic",
+    "code": "IC",
+    "title": "Interior Communications Electrician",
+    "description": "Installs and maintains interior communications systems, gyroscopes, and navigation systems on Navy ships.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 213 }]
+  },
+  {
+    "id": "navy-mm",
+    "code": "MM",
+    "title": "Machinist's Mate",
+    "description": "Operates and maintains ship propulsion systems, auxiliary equipment, and outside machinery.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 180 }]
+  },
+  {
+    "id": "navy-mma",
+    "code": "MMA",
+    "title": "Machinist's Mate (Auxiliary/Submarine)",
+    "description": "Operates and maintains auxiliary machinery, atmosphere control equipment, and propulsion systems on submarines.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+EI", "minScore": 207 }]
+  },
+  {
+    "id": "navy-mr",
+    "code": "MR",
+    "title": "Machinery Repairman",
+    "description": "Fabricates and repairs precision metal parts for ship machinery using lathes, mills, and other machine tools.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+AS", "minScore": 205 }]
+  },
+  {
+    "id": "navy-os",
+    "code": "OS",
+    "title": "Operations Specialist",
+    "description": "Operates radar, navigation, and combat systems to track contacts and coordinate tactical operations aboard ships.",
+    "category": "Operations",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+MK+GS", "minScore": 157 }]
+  },
+  {
+    "id": "navy-qm",
+    "code": "QM",
+    "title": "Quartermaster",
+    "description": "Performs navigation duties including chart plotting, weather observation, and maintaining accurate records of the ship's position.",
+    "category": "Operations",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR", "minScore": 100 }]
+  },
+  {
+    "id": "navy-stg",
+    "code": "STG",
+    "title": "Sonar Technician (Surface)",
+    "description": "Operates and maintains sonar systems used to detect and track submarines and underwater objects from surface ships.",
+    "category": "Operations",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 222 }]
+  },
+  {
+    "id": "navy-mn",
+    "code": "MN",
+    "title": "Mineman",
+    "description": "Assembles, deploys, and maintains naval mines and mine countermeasure systems.",
+    "category": "Operations",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+MC", "minScore": 210 }]
+  },
+  {
+    "id": "navy-hm",
+    "code": "HM",
+    "title": "Hospital Corpsman",
+    "description": "Provides medical care and emergency treatment to sailors and Marines in clinical and combat environments.",
+    "category": "Medical",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+MK+GS", "minScore": 156 }]
+  },
+  {
+    "id": "navy-it",
+    "code": "IT",
+    "title": "Information Systems Technician",
+    "description": "Operates and maintains Navy computer networks, telecommunications systems, and cybersecurity infrastructure.",
+    "category": "IT/Communications",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 222 }]
+  },
+  {
+    "id": "navy-its",
+    "code": "ITS",
+    "title": "Information Systems Technician (Submarines)",
+    "description": "Operates and maintains computer networks, communications, and navigation systems aboard submarines.",
+    "category": "IT/Communications",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+2MK+GS", "minScore": 218 }]
+  },
+  {
+    "id": "navy-ctr",
+    "code": "CTR",
+    "title": "Cryptologic Technician (Collection)",
+    "description": "Collects and processes signals intelligence to support Navy and national-level intelligence operations.",
+    "category": "Intelligence",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR", "minScore": 109 }]
+  },
+  {
+    "id": "navy-cti",
+    "code": "CTI",
+    "title": "Cryptologic Technician (Interpretive)",
+    "description": "Translates and analyzes foreign language communications to produce actionable intelligence for military operations.",
+    "category": "Intelligence",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+MK+GS", "minScore": 162 }]
+  },
+  {
+    "id": "navy-ctm",
+    "code": "CTM",
+    "title": "Cryptologic Technician (Maintenance)",
+    "description": "Installs, operates, and maintains cryptologic systems and electronic intelligence collection equipment.",
+    "category": "Intelligence",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 223 }]
+  },
+  {
+    "id": "navy-ctn",
+    "code": "CTN",
+    "title": "Cryptologic Technician (Networks)",
+    "description": "Conducts offensive and defensive cyber operations and computer network exploitation for the Navy.",
+    "category": "Intelligence",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+2MK+GS", "minScore": 255 }]
+  },
+  {
+    "id": "navy-ctt",
+    "code": "CTT",
+    "title": "Cryptologic Technician (Technical)",
+    "description": "Operates and monitors electronic sensor systems for signals intelligence collection and technical exploitation.",
+    "category": "Intelligence",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+2MK+GS", "minScore": 212 }]
+  },
+  {
+    "id": "navy-cwt",
+    "code": "CWT",
+    "title": "Cyber Warfare Technician",
+    "description": "Conducts advanced cyber warfare operations including network exploitation, defense, and computer network attack missions.",
+    "category": "Intelligence",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+2MK+GS", "minScore": 255 }]
+  },
+  {
+    "id": "navy-is",
+    "code": "IS",
+    "title": "Intelligence Specialist",
+    "description": "Collects, analyzes, and disseminates intelligence information to support Navy operations and fleet commanders.",
+    "category": "Intelligence",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+GS", "minScore": 215 }]
+  },
+  {
+    "id": "navy-yn",
+    "code": "YN",
+    "title": "Yeoman",
+    "description": "Performs administrative and clerical duties including correspondence, reports, and personnel records management.",
+    "category": "Administrative",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+MK", "minScore": 99 }]
+  },
+  {
+    "id": "navy-ps",
+    "code": "PS",
+    "title": "Personnel Specialist",
+    "description": "Manages personnel records, pay administration, and career counseling for Navy service members.",
+    "category": "Administrative",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+MK", "minScore": 103 }]
+  },
+  {
+    "id": "navy-ls",
+    "code": "LS",
+    "title": "Logistics Specialist",
+    "description": "Manages supply chain operations including procurement, inventory control, and financial accounting.",
+    "category": "Supply/Logistics",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR", "minScore": 92 }]
+  },
+  {
+    "id": "navy-lss",
+    "code": "LSS",
+    "title": "Logistics Specialist (Submarines)",
+    "description": "Manages supply and storeroom operations, food service, and financial accounting aboard submarines.",
+    "category": "Supply/Logistics",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 200 }]
+  },
+  {
+    "id": "navy-cs",
+    "code": "CS",
+    "title": "Culinary Specialist",
+    "description": "Plans menus, prepares food, and manages food service operations aboard ships and at shore installations.",
+    "category": "Administrative",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR", "minScore": 76 }]
+  },
+  {
+    "id": "navy-css",
+    "code": "CSS",
+    "title": "Culinary Specialist (Submarines)",
+    "description": "Prepares meals and manages food service and commissary operations aboard submarines.",
+    "category": "Administrative",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 200 }]
+  },
+  {
+    "id": "navy-ma",
+    "code": "MA",
+    "title": "Master-at-Arms",
+    "description": "Provides law enforcement, force protection, and physical security for Navy installations and personnel.",
+    "category": "Operations",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR+MK+MC", "minScore": 192 }]
+  },
+  {
+    "id": "navy-mc",
+    "code": "MC",
+    "title": "Mass Communication Specialist",
+    "description": "Produces visual media, journalism, and public affairs content to support Navy communication efforts.",
+    "category": "Administrative",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR", "minScore": 115 }]
+  },
+  {
+    "id": "navy-ln",
+    "code": "LN",
+    "title": "Legalman",
+    "description": "Provides legal assistance and administrative support for military justice and legal proceedings in the Navy.",
+    "category": "Administrative",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+MK", "minScore": 105 }]
+  },
+  {
+    "id": "navy-rp",
+    "code": "RP",
+    "title": "Religious Program Specialist",
+    "description": "Assists Navy chaplains in providing religious ministries, counseling, and humanitarian services to sailors.",
+    "category": "Administrative",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+MK", "minScore": 105 }]
+  },
+  {
+    "id": "navy-nc",
+    "code": "NC",
+    "title": "Navy Counselor",
+    "description": "Provides career counseling, enlisted community management, and retention support for Navy personnel.",
+    "category": "Administrative",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+MK+GS", "minScore": 156 }]
+  },
+  {
+    "id": "navy-rs",
+    "code": "RS",
+    "title": "Retail Services Specialist",
+    "description": "Manages retail store operations aboard ships and at naval installations, including merchandise and financial transactions.",
+    "category": "Administrative",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR", "minScore": 83 }]
+  },
+  {
+    "id": "navy-mu",
+    "code": "MU",
+    "title": "Musician",
+    "description": "Performs music in Navy bands for ceremonies, concerts, funerals, and official functions.",
+    "category": "Administrative",
+    "minAFQT": 31,
+    "requirements": [{ "composite": "VE+AR", "minScore": 0 }]
+  },
+  {
     "id": "navy-so",
     "code": "SO",
     "title": "Special Warfare Operator (Navy SEAL)",
-    "description": "Conducts special operations including direct action, special reconnaissance, and unconventional warfare.",
+    "description": "Conducts special operations including direct action, special reconnaissance, counter-terrorism, and unconventional warfare.",
     "category": "Special Warfare",
     "minAFQT": 35,
     "requirements": [
       { "composite": "GS+MC+EI", "minScore": 165 },
-      { "composite": "VE+MK+MC+CS", "minScore": 220 }
+      { "composite": "VE+AR+MK+MC", "minScore": 220 }
     ]
+  },
+  {
+    "id": "navy-sb",
+    "code": "SB",
+    "title": "Special Warfare Boat Operator",
+    "description": "Operates high-performance combat rubber raiding craft and patrol boats in support of special operations missions.",
+    "category": "Special Warfare",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR", "minScore": 105 }]
+  },
+  {
+    "id": "navy-nd",
+    "code": "ND",
+    "title": "Navy Diver",
+    "description": "Performs underwater salvage, ship repair, and combat diving operations using scuba and hard-hat diving equipment.",
+    "category": "Special Warfare",
+    "minAFQT": 35,
+    "requirements": [
+      { "composite": "GS+MC+EI", "minScore": 157 },
+      { "composite": "AR+MK", "minScore": 100 }
+    ]
+  },
+  {
+    "id": "navy-eod",
+    "code": "EOD",
+    "title": "Explosive Ordnance Disposal",
+    "description": "Locates, identifies, renders safe, and disposes of explosive ordnance including improvised explosive devices and unexploded ordnance.",
+    "category": "Special Warfare",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "GS+MC+EI", "minScore": 169 }]
+  },
+  {
+    "id": "navy-uct",
+    "code": "UCT",
+    "title": "Underwater Construction Team",
+    "description": "Performs diving construction, repair, and inspection of piers, harbors, and underwater structures in support of fleet operations.",
+    "category": "Special Warfare",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "VE+AR", "minScore": 103 }]
+  },
+  {
+    "id": "navy-bu",
+    "code": "BU",
+    "title": "Builder",
+    "description": "Constructs and repairs buildings, utilities, and facilities at naval installations using carpentry, masonry, and construction skills.",
+    "category": "Construction",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MC+AS", "minScore": 145 }]
+  },
+  {
+    "id": "navy-ce",
+    "code": "CE",
+    "title": "Construction Electrician",
+    "description": "Installs and maintains electrical power, lighting, and communications systems at naval facilities and temporary bases.",
+    "category": "Construction",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 201 }]
+  },
+  {
+    "id": "navy-cm",
+    "code": "CM",
+    "title": "Construction Mechanic",
+    "description": "Maintains and repairs heavy construction equipment, vehicles, and power generation equipment for Seabee operations.",
+    "category": "Construction",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MC+AS", "minScore": 162 }]
+  },
+  {
+    "id": "navy-ea",
+    "code": "EA",
+    "title": "Engineering Aide",
+    "description": "Performs surveying, drafting, and soil testing to support construction planning and project management for Navy Seabees.",
+    "category": "Construction",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+2MK+GS", "minScore": 207 }]
+  },
+  {
+    "id": "navy-eo",
+    "code": "EO",
+    "title": "Equipment Operator",
+    "description": "Operates heavy construction equipment including bulldozers, cranes, and graders to build roads, airfields, and facilities.",
+    "category": "Construction",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MC+AS", "minScore": 145 }]
+  },
+  {
+    "id": "navy-sw",
+    "code": "SW",
+    "title": "Steelworker",
+    "description": "Fabricates and erects structural steel, rigging, and concrete formwork for Navy Seabee construction projects.",
+    "category": "Construction",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MC+AS", "minScore": 145 }]
+  },
+  {
+    "id": "navy-ut",
+    "code": "UT",
+    "title": "Utilitiesman",
+    "description": "Installs and maintains plumbing, heating, and refrigeration systems at naval shore facilities and forward-deployed bases.",
+    "category": "Construction",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 205 }]
+  },
+  {
+    "id": "navy-ft",
+    "code": "FT",
+    "title": "Fire Control Technician (Submarines)",
+    "description": "Operates and maintains weapons fire control systems and tactical data systems aboard submarines.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 218 }]
+  },
+  {
+    "id": "navy-mt",
+    "code": "MT",
+    "title": "Missile Technician (Submarines)",
+    "description": "Maintains and operates ballistic and cruise missile systems, including Trident missiles, aboard strategic submarines.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+MC+VE", "minScore": 218 }]
+  },
+  {
+    "id": "navy-sts",
+    "code": "STS",
+    "title": "Sonar Technician (Submarines)",
+    "description": "Operates and maintains sonar systems and fire control equipment on attack and ballistic missile submarines.",
+    "category": "Operations",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 218 }]
+  },
+  {
+    "id": "navy-secf",
+    "code": "SECF",
+    "title": "Submarine Electronics/Computer Field",
+    "description": "Operates and maintains submarine electronic, combat, and computer systems under the Submarine Electronics/Computer Field program.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 218 }]
+  },
+  {
+    "id": "navy-etv",
+    "code": "ETV",
+    "title": "Electronics Technician (Navigation)",
+    "description": "Operates and maintains navigation and electronic systems specifically aboard submarines and surface ships.",
+    "category": "Engineering",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 218 }]
+  },
+  {
+    "id": "navy-rw",
+    "code": "RW",
+    "title": "Robotics Warfare Specialist",
+    "description": "Operates and maintains unmanned systems including aerial drones, surface, and underwater vehicles for Navy warfare operations.",
+    "category": "Operations",
+    "minAFQT": 35,
+    "requirements": [{ "composite": "AR+MK+EI+GS", "minScore": 222 }]
   }
 ]

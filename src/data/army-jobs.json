@@ -1,416 +1,2390 @@
 [
   {
+    "id": "army-08h",
+    "code": "08H",
+    "title": "Army Equestrian",
+    "description": "Army Equestrian \u2013 U.S. Army MOS 08H.",
+    "category": "Equid Operations",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
     "id": "army-11b",
     "code": "11B",
     "title": "Infantryman",
-    "description": "Serves as the backbone of the Army's ground combat force, engaging and defeating enemy forces in close combat.",
-    "category": "Combat",
+    "description": "Infantryman \u2013 U.S. Army MOS 11B.",
+    "category": "Infantry",
     "minAFQT": 31,
-    "requirements": [{ "composite": "CO", "minScore": 87 }]
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 77
+      }
+    ]
   },
   {
     "id": "army-11c",
     "code": "11C",
     "title": "Indirect Fire Infantryman",
-    "description": "Operates and maintains mortars, providing indirect fire support to infantry units on the battlefield.",
-    "category": "Combat",
+    "description": "Indirect Fire Infantryman \u2013 U.S. Army MOS 11C.",
+    "category": "Infantry",
     "minAFQT": 31,
-    "requirements": [{ "composite": "CO", "minScore": 87 }]
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 77
+      }
+    ]
   },
   {
     "id": "army-12b",
     "code": "12B",
     "title": "Combat Engineer",
-    "description": "Supports infantry and armor units by constructing bridges, clearing minefields, and demolishing obstacles.",
+    "description": "Combat Engineer \u2013 U.S. Army MOS 12B.",
     "category": "Engineering",
     "minAFQT": 31,
-    "requirements": [{ "composite": "CO", "minScore": 87 }]
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 82
+      }
+    ]
+  },
+  {
+    "id": "army-12c",
+    "code": "12C",
+    "title": "Bridge Crewmember",
+    "description": "Bridge Crewmember \u2013 U.S. Army MOS 12C.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 82
+      }
+    ]
+  },
+  {
+    "id": "army-12d",
+    "code": "12D",
+    "title": "Diver",
+    "description": "Diver \u2013 U.S. Army MOS 12D.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 98
+      },
+      {
+        "composite": "GT",
+        "minScore": 107
+      },
+      {
+        "composite": "ST",
+        "minScore": 106
+      }
+    ]
+  },
+  {
+    "id": "army-12g",
+    "code": "12G",
+    "title": "Quarrying Specialist",
+    "description": "Quarrying Specialist \u2013 U.S. Army MOS 12G.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "id": "army-12h",
+    "code": "12H",
+    "title": "Construction Engineering Supervisor",
+    "description": "Construction Engineering Supervisor \u2013 U.S. Army MOS 12H.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "id": "army-12k",
+    "code": "12K",
+    "title": "Plumber",
+    "description": "Plumber \u2013 U.S. Army MOS 12K.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 88
+      }
+    ]
+  },
+  {
+    "id": "army-12m",
+    "code": "12M",
+    "title": "Firefighter",
+    "description": "Firefighter \u2013 U.S. Army MOS 12M.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 88
+      }
+    ]
   },
   {
     "id": "army-12n",
     "code": "12N",
     "title": "Horizontal Construction Engineer",
-    "description": "Operates heavy construction equipment to build and repair roads, airfields, and other horizontal structures.",
+    "description": "Horizontal Construction Engineer \u2013 U.S. Army MOS 12N.",
     "category": "Engineering",
     "minAFQT": 31,
-    "requirements": [{ "composite": "GM", "minScore": 88 }]
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 85
+      }
+    ]
+  },
+  {
+    "id": "army-12p",
+    "code": "12P",
+    "title": "Prime Power Production Specialist",
+    "description": "Prime Power Production Specialist \u2013 U.S. Army MOS 12P.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 107
+      },
+      {
+        "composite": "GT",
+        "minScore": 110
+      },
+      {
+        "composite": "ST",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "id": "army-12q",
+    "code": "12Q",
+    "title": "Power Line Distribution Specialist",
+    "description": "Power Line Distribution Specialist \u2013 U.S. Army MOS 12Q.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "id": "army-12r",
+    "code": "12R",
+    "title": "Interior Electrician",
+    "description": "Interior Electrician \u2013 U.S. Army MOS 12R.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "id": "army-12t",
+    "code": "12T",
+    "title": "Technical Engineer",
+    "description": "Technical Engineer \u2013 U.S. Army MOS 12T.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
   },
   {
     "id": "army-12w",
     "code": "12W",
     "title": "Carpentry and Masonry Specialist",
-    "description": "Constructs and repairs wooden and masonry structures including buildings, bunkers, and fortifications.",
+    "description": "Carpentry and Masonry Specialist \u2013 U.S. Army MOS 12W.",
     "category": "Engineering",
     "minAFQT": 31,
-    "requirements": [{ "composite": "GM", "minScore": 88 }]
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 88
+      }
+    ]
+  },
+  {
+    "id": "army-12y",
+    "code": "12Y",
+    "title": "Geospatial Engineer",
+    "description": "Geospatial Engineer \u2013 U.S. Army MOS 12Y.",
+    "category": "Engineering",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      },
+      {
+        "composite": "ST",
+        "minScore": 100
+      }
+    ]
   },
   {
     "id": "army-13b",
     "code": "13B",
     "title": "Cannon Crewmember",
-    "description": "Operates and maintains field artillery cannon systems to provide direct and indirect fire support.",
-    "category": "Combat",
+    "description": "Cannon Crewmember \u2013 U.S. Army MOS 13B.",
+    "category": "Field Artillery",
     "minAFQT": 31,
-    "requirements": [{ "composite": "FA", "minScore": 93 }]
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 87
+      }
+    ]
   },
   {
     "id": "army-13f",
     "code": "13F",
     "title": "Fire Support Specialist",
-    "description": "Calls for and adjusts indirect fire and close air support, coordinating lethal fires on enemy targets.",
-    "category": "Combat",
+    "description": "Fire Support Specialist \u2013 U.S. Army MOS 13F.",
+    "category": "Field Artillery",
     "minAFQT": 31,
-    "requirements": [{ "composite": "FA", "minScore": 96 }]
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 87
+      }
+    ]
+  },
+  {
+    "id": "army-13m",
+    "code": "13M",
+    "title": "Multiple Launch Rocket System Crewmember",
+    "description": "Multiple Launch Rocket System Crewmember \u2013 U.S. Army MOS 13M.",
+    "category": "Field Artillery",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 87
+      }
+    ]
+  },
+  {
+    "id": "army-13r",
+    "code": "13R",
+    "title": "Field Artillery Firefinder Radar Operator",
+    "description": "Field Artillery Firefinder Radar Operator \u2013 U.S. Army MOS 13R.",
+    "category": "Field Artillery",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 87
+      }
+    ]
+  },
+  {
+    "id": "army-13x",
+    "code": "13X",
+    "title": "Field Artillery Compu",
+    "description": "Field Artillery Compu \u2013 U.S. Army MOS 13X.",
+    "category": "Field Artillery",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "FA",
+        "minScore": 93
+      }
+    ]
   },
   {
     "id": "army-14e",
     "code": "14E",
     "title": "Patriot Fire Control Enhanced Operator/Maintainer",
-    "description": "Operates and maintains the Patriot missile system's fire control equipment for air and missile defense.",
-    "category": "Combat Support",
+    "description": "Patriot Fire Control Enhanced Operator/Maintainer \u2013 U.S. Army MOS 14E.",
+    "category": "Air Defense Artillery",
     "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 104 }]
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 92
+      }
+    ]
+  },
+  {
+    "id": "army-14g",
+    "code": "14G",
+    "title": "Air Defense Battle Management System Operator",
+    "description": "Air Defense Battle Management System Operator \u2013 U.S. Army MOS 14G.",
+    "category": "Air Defense Artillery",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      },
+      {
+        "composite": "MM",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "id": "army-14h",
+    "code": "14H",
+    "title": "Air Defense Enhanced Early Warning System Operator",
+    "description": "Air Defense Enhanced Early Warning System Operator \u2013 U.S. Army MOS 14H.",
+    "category": "Air Defense Artillery",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      },
+      {
+        "composite": "MM",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "id": "army-14p",
+    "code": "14P",
+    "title": "Air and Missile Defense Crewmember",
+    "description": "Air and Missile Defense Crewmember \u2013 U.S. Army MOS 14P.",
+    "category": "Air Defense Artillery",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "OF",
+        "minScore": 87
+      }
+    ]
   },
   {
     "id": "army-14t",
     "code": "14T",
     "title": "Patriot Launching Station Enhanced Operator/Maintainer",
-    "description": "Operates and maintains the Patriot missile launching station to protect against aircraft and ballistic missiles.",
-    "category": "Combat Support",
+    "description": "Patriot Launching Station Enhanced Operator/Maintainer \u2013 U.S. Army MOS 14T.",
+    "category": "Air Defense Artillery",
     "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 99 }]
+    "requirements": [
+      {
+        "composite": "OF",
+        "minScore": 87
+      }
+    ]
+  },
+  {
+    "id": "army-14x",
+    "code": "14X",
+    "title": "Space and Missile Defense Crewmember",
+    "description": "Space and Missile Defense Crewmember \u2013 U.S. Army MOS 14X.",
+    "category": "Air Defense Artillery",
+    "minAFQT": 31,
+    "requirements": []
+  },
+  {
+    "id": "army-15b",
+    "code": "15B",
+    "title": "Aircraft Powerplant Repairer",
+    "description": "Aircraft Powerplant Repairer \u2013 U.S. Army MOS 15B.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "id": "army-15c",
+    "code": "15C",
+    "title": "MQ-1 Operator",
+    "description": "MQ-1 Operator \u2013 U.S. Army MOS 15C.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "SC",
+        "minScore": 102
+      }
+    ]
+  },
+  {
+    "id": "army-15d",
+    "code": "15D",
+    "title": "Aircraft Powertrain Repairer",
+    "description": "Aircraft Powertrain Repairer \u2013 U.S. Army MOS 15D.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "id": "army-15e",
+    "code": "15E",
+    "title": "Unmanned Aircraft Systems Repairer",
+    "description": "Unmanned Aircraft Systems Repairer \u2013 U.S. Army MOS 15E.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      },
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "id": "army-15f",
+    "code": "15F",
+    "title": "Aircraft Electrician",
+    "description": "Aircraft Electrician \u2013 U.S. Army MOS 15F.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "id": "army-15g",
+    "code": "15G",
+    "title": "Aircraft Structural Repairer",
+    "description": "Aircraft Structural Repairer \u2013 U.S. Army MOS 15G.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "id": "army-15h",
+    "code": "15H",
+    "title": "Aircraft Pneudraulics Repairer",
+    "description": "Aircraft Pneudraulics Repairer \u2013 U.S. Army MOS 15H.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "id": "army-15m",
+    "code": "15M",
+    "title": "MQ-1 Repairer",
+    "description": "MQ-1 Repairer \u2013 U.S. Army MOS 15M.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      },
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "id": "army-15n",
+    "code": "15N",
+    "title": "Avionic Mechanic",
+    "description": "Avionic Mechanic \u2013 U.S. Army MOS 15N.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "id": "army-15p",
+    "code": "15P",
+    "title": "Aviation Operations Specialist",
+    "description": "Aviation Operations Specialist \u2013 U.S. Army MOS 15P.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "id": "army-15q",
+    "code": "15Q",
+    "title": "Air Traffic Control Operator",
+    "description": "Air Traffic Control Operator \u2013 U.S. Army MOS 15Q.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "id": "army-15r",
+    "code": "15R",
+    "title": "AH-64 Attack Helicopter Repairer",
+    "description": "AH-64 Attack Helicopter Repairer \u2013 U.S. Army MOS 15R.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
   },
   {
     "id": "army-15t",
     "code": "15T",
     "title": "UH-60 Helicopter Repairer",
-    "description": "Performs maintenance and repairs on UH-60 Black Hawk helicopters to keep them mission-ready.",
+    "description": "UH-60 Helicopter Repairer \u2013 U.S. Army MOS 15T.",
     "category": "Aviation",
     "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 104 }]
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
   },
   {
     "id": "army-15u",
     "code": "15U",
     "title": "CH-47 Helicopter Repairer",
-    "description": "Performs maintenance and repairs on CH-47 Chinook helicopters to ensure operational readiness.",
+    "description": "CH-47 Helicopter Repairer \u2013 U.S. Army MOS 15U.",
     "category": "Aviation",
     "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 104 }]
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
   },
   {
     "id": "army-15w",
     "code": "15W",
     "title": "Unmanned Aircraft Systems Operator",
-    "description": "Operates and maintains unmanned aerial systems to gather intelligence and support ground operations.",
+    "description": "Unmanned Aircraft Systems Operator \u2013 U.S. Army MOS 15W.",
     "category": "Aviation",
     "minAFQT": 31,
-    "requirements": [{ "composite": "SC", "minScore": 102 }]
+    "requirements": [
+      {
+        "composite": "SC",
+        "minScore": 102
+      }
+    ]
+  },
+  {
+    "id": "army-15x",
+    "code": "15X",
+    "title": "AH-64 Attack Helicopter Systems Repairer",
+    "description": "AH-64 Attack Helicopter Systems Repairer \u2013 U.S. Army MOS 15X.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      },
+      {
+        "composite": "MM",
+        "minScore": 99
+      },
+      {
+        "composite": "SC",
+        "minScore": 102
+      }
+    ]
+  },
+  {
+    "id": "army-15y",
+    "code": "15Y",
+    "title": "AH-64D Armament/Electrical/Avionics Systems Repairer",
+    "description": "AH-64D Armament/Electrical/Avionics Systems Repairer \u2013 U.S. Army MOS 15Y.",
+    "category": "Aviation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 98
+      },
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
   },
   {
     "id": "army-17c",
     "code": "17C",
     "title": "Cyber Operations Specialist",
-    "description": "Conducts offensive and defensive cyber operations to protect Army networks and exploit adversary systems.",
-    "category": "Cyber/IT",
-    "minAFQT": 50,
-    "requirements": [{ "composite": "ST", "minScore": 112 }]
+    "description": "Cyber Operations Specialist \u2013 U.S. Army MOS 17C.",
+    "category": "Cyber",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      },
+      {
+        "composite": "ST",
+        "minScore": 112
+      }
+    ]
+  },
+  {
+    "id": "army-17e",
+    "code": "17E",
+    "title": "Electronic Warfare Specialist",
+    "description": "Electronic Warfare Specialist \u2013 U.S. Army MOS 17E.",
+    "category": "Cyber",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      },
+      {
+        "composite": "SC",
+        "minScore": 105
+      },
+      {
+        "composite": "ST",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "army-18b",
+    "code": "18B",
+    "title": "Special Forces Weapons Sergeant",
+    "description": "Special Forces Weapons Sergeant \u2013 U.S. Army MOS 18B.",
+    "category": "Special Forces",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 98
+      },
+      {
+        "composite": "GT",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "id": "army-18c",
+    "code": "18C",
+    "title": "Special Forces Engineer Sergeant",
+    "description": "Special Forces Engineer Sergeant \u2013 U.S. Army MOS 18C.",
+    "category": "Special Forces",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 98
+      },
+      {
+        "composite": "GT",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "id": "army-18d",
+    "code": "18D",
+    "title": "Special Forces Medical Sergeant",
+    "description": "Special Forces Medical Sergeant \u2013 U.S. Army MOS 18D.",
+    "category": "Special Forces",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 98
+      },
+      {
+        "composite": "GT",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "id": "army-18e",
+    "code": "18E",
+    "title": "Special Forces Communications Sergeant",
+    "description": "Special Forces Communications Sergeant \u2013 U.S. Army MOS 18E.",
+    "category": "Special Forces",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 98
+      },
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "army-18x",
+    "code": "18X",
+    "title": "Special Forces Recrui",
+    "description": "Special Forces Recrui \u2013 U.S. Army MOS 18X.",
+    "category": "Special Forces",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 98
+      },
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "army-19c",
+    "code": "19C",
+    "title": "Bradley Crewmember",
+    "description": "Bradley Crewmember \u2013 U.S. Army MOS 19C.",
+    "category": "Armor",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 77
+      }
+    ]
   },
   {
     "id": "army-19d",
     "code": "19D",
     "title": "Cavalry Scout",
-    "description": "Conducts reconnaissance and surveillance missions, gathering battlefield intelligence ahead of the main force.",
-    "category": "Combat",
+    "description": "Cavalry Scout \u2013 U.S. Army MOS 19D.",
+    "category": "Armor",
     "minAFQT": 31,
-    "requirements": [{ "composite": "CO", "minScore": 87 }]
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 77
+      }
+    ]
   },
   {
     "id": "army-19k",
     "code": "19K",
     "title": "M1 Armor Crewman",
-    "description": "Operates and maintains the M1 Abrams main battle tank to engage and destroy enemy forces.",
-    "category": "Combat",
+    "description": "M1 Armor Crewman \u2013 U.S. Army MOS 19K.",
+    "category": "Armor",
     "minAFQT": 31,
-    "requirements": [{ "composite": "CO", "minScore": 87 }]
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 77
+      }
+    ]
   },
   {
     "id": "army-25b",
     "code": "25B",
     "title": "Information Technology Specialist",
-    "description": "Installs, operates, and maintains Army information technology systems, networks, and computer hardware.",
-    "category": "Cyber/IT",
+    "description": "Information Technology Specialist \u2013 U.S. Army MOS 25B.",
+    "category": "Signal & Communications",
     "minAFQT": 31,
-    "requirements": [{ "composite": "ST", "minScore": 95 }]
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 95
+      }
+    ]
   },
   {
-    "id": "army-25n",
-    "code": "25N",
-    "title": "Nodal Network Systems Operator-Maintainer",
-    "description": "Operates and maintains tactical nodal network systems that serve as the Army's communication backbone.",
-    "category": "Signal/Communications",
+    "id": "army-25d",
+    "code": "25D",
+    "title": "Cyber Network Defender",
+    "description": "Cyber Network Defender \u2013 U.S. Army MOS 25D.",
+    "category": "Signal & Communications",
     "minAFQT": 31,
-    "requirements": [{ "composite": "ST", "minScore": 101 }]
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      },
+      {
+        "composite": "ST",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "army-25e",
+    "code": "25E",
+    "title": "Electromagnetic Spectrum Manager",
+    "description": "Electromagnetic Spectrum Manager \u2013 U.S. Army MOS 25E.",
+    "category": "Signal & Communications",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      },
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "army-25h",
+    "code": "25H",
+    "title": "Network Communications Systems Specialist",
+    "description": "Network Communications Systems Specialist \u2013 U.S. Army MOS 25H.",
+    "category": "Signal & Communications",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 100
+      },
+      {
+        "composite": "ST",
+        "minScore": 102
+      }
+    ]
   },
   {
     "id": "army-25s",
     "code": "25S",
     "title": "Satellite Communication Systems Operator-Maintainer",
-    "description": "Operates and maintains satellite communication systems to provide long-range voice and data connectivity.",
-    "category": "Signal/Communications",
+    "description": "Satellite Communication Systems Operator-Maintainer \u2013 U.S. Army MOS 25S.",
+    "category": "Signal & Communications",
     "minAFQT": 31,
-    "requirements": [{ "composite": "EL", "minScore": 98 }, { "composite": "ST", "minScore": 112 }]
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 117
+      }
+    ]
   },
   {
     "id": "army-25u",
     "code": "25U",
     "title": "Signal Support Systems Specialist",
-    "description": "Provides signal support for command, control, and communications across all echelons of the Army.",
-    "category": "Signal/Communications",
+    "description": "Signal Support Systems Specialist \u2013 U.S. Army MOS 25U.",
+    "category": "Signal & Communications",
     "minAFQT": 31,
-    "requirements": [{ "composite": "EL", "minScore": 93 }]
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      },
+      {
+        "composite": "SC",
+        "minScore": 92
+      }
+    ]
+  },
+  {
+    "id": "army-27d",
+    "code": "27D",
+    "title": "Paralegal Specialist",
+    "description": "Paralegal Specialist \u2013 U.S. Army MOS 27D.",
+    "category": "Legal",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 105
+      }
+    ]
   },
   {
     "id": "army-31b",
     "code": "31B",
     "title": "Military Police",
-    "description": "Enforces laws and regulations, performs law enforcement and security operations, and supports combat operations.",
-    "category": "Combat Support",
+    "description": "Military Police \u2013 U.S. Army MOS 31B.",
+    "category": "Military Police",
     "minAFQT": 31,
-    "requirements": [{ "composite": "ST", "minScore": 91 }]
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "id": "army-31d",
+    "code": "31D",
+    "title": "Criminal Investigation Special Agent",
+    "description": "Criminal Investigation Special Agent \u2013 U.S. Army MOS 31D.",
+    "category": "Military Police",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      },
+      {
+        "composite": "ST",
+        "minScore": 107
+      }
+    ]
   },
   {
     "id": "army-31e",
     "code": "31E",
     "title": "Internment/Resettlement Specialist",
-    "description": "Oversees the care, custody, and control of enemy prisoners of war, civilian internees, and U.S. military prisoners.",
-    "category": "Combat Support",
+    "description": "Internment/Resettlement Specialist \u2013 U.S. Army MOS 31E.",
+    "category": "Military Police",
     "minAFQT": 31,
-    "requirements": [{ "composite": "ST", "minScore": 95 }]
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 94
+      }
+    ]
+  },
+  {
+    "id": "army-31k",
+    "code": "31K",
+    "title": "Military Working Dog Handler",
+    "description": "Military Working Dog Handler \u2013 U.S. Army MOS 31K.",
+    "category": "Military Police",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
   },
   {
     "id": "army-35f",
     "code": "35F",
     "title": "Intelligence Analyst",
-    "description": "Collects, analyzes, and produces intelligence products to support military operations and commanders' decisions.",
+    "description": "Intelligence Analyst \u2013 U.S. Army MOS 35F.",
     "category": "Intelligence",
     "minAFQT": 31,
-    "requirements": [{ "composite": "ST", "minScore": 101 }]
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
   },
   {
     "id": "army-35g",
     "code": "35G",
     "title": "Geospatial Intelligence Imagery Analyst",
-    "description": "Analyzes imagery and geospatial information from satellites and aircraft to support intelligence operations.",
+    "description": "Geospatial Intelligence Imagery Analyst \u2013 U.S. Army MOS 35G.",
     "category": "Intelligence",
-    "minAFQT": 50,
-    "requirements": [{ "composite": "ST", "minScore": 101 }]
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
   },
   {
     "id": "army-35l",
     "code": "35L",
     "title": "Counterintelligence Agent",
-    "description": "Conducts investigations and operations to identify, assess, and counter foreign intelligence threats to the Army.",
+    "description": "Counterintelligence Agent \u2013 U.S. Army MOS 35L.",
     "category": "Intelligence",
-    "minAFQT": 50,
-    "requirements": [{ "composite": "ST", "minScore": 101 }]
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
   },
   {
     "id": "army-35m",
     "code": "35M",
     "title": "Human Intelligence Collector",
-    "description": "Conducts debriefings, interrogations, and elicitation operations to gather intelligence from human sources.",
+    "description": "Human Intelligence Collector \u2013 U.S. Army MOS 35M.",
     "category": "Intelligence",
-    "minAFQT": 50,
-    "requirements": [{ "composite": "ST", "minScore": 101 }]
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
   },
   {
     "id": "army-35n",
     "code": "35N",
     "title": "Signals Intelligence Analyst",
-    "description": "Intercepts, analyzes, and exploits enemy electronic signals to produce actionable intelligence.",
+    "description": "Signals Intelligence Analyst \u2013 U.S. Army MOS 35N.",
     "category": "Intelligence",
-    "minAFQT": 50,
-    "requirements": [{ "composite": "ST", "minScore": 112 }]
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 112
+      }
+    ]
   },
   {
     "id": "army-35p",
     "code": "35P",
     "title": "Cryptologic Linguist",
-    "description": "Applies foreign language skills to intercept, translate, and analyze enemy communications for intelligence purposes.",
+    "description": "Cryptologic Linguist \u2013 U.S. Army MOS 35P.",
     "category": "Intelligence",
-    "minAFQT": 50,
-    "requirements": [{ "composite": "ST", "minScore": 112 }]
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "id": "army-35s",
+    "code": "35S",
+    "title": "Signals Intelligence Systems Technician",
+    "description": "Signals Intelligence Systems Technician \u2013 U.S. Army MOS 35S.",
+    "category": "Intelligence",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "id": "army-35t",
+    "code": "35T",
+    "title": "Military Intelligence Systems Maintainer/Integrator",
+    "description": "Military Intelligence Systems Maintainer/Integrator \u2013 U.S. Army MOS 35T.",
+    "category": "Intelligence",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 112
+      }
+    ]
+  },
+  {
+    "id": "army-35w",
+    "code": "35W",
+    "title": "Foreign Language Spec",
+    "description": "Foreign Language Spec \u2013 U.S. Army MOS 35W.",
+    "category": "Intelligence",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
   },
   {
     "id": "army-36b",
     "code": "36B",
     "title": "Financial Management Technician",
-    "description": "Performs accounting, budgeting, and financial management operations to support Army units and installations.",
-    "category": "Legal/Finance",
+    "description": "Financial Management Technician \u2013 U.S. Army MOS 36B.",
+    "category": "Finance",
     "minAFQT": 31,
-    "requirements": [{ "composite": "CL", "minScore": 101 }]
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 101
+      }
+    ]
   },
   {
     "id": "army-37f",
     "code": "37F",
     "title": "Psychological Operations Specialist",
-    "description": "Plans and conducts psychological operations to influence foreign audiences and support military objectives.",
-    "category": "Combat Support",
+    "description": "Psychological Operations Specialist \u2013 U.S. Army MOS 37F.",
+    "category": "Psychological Operations",
     "minAFQT": 31,
-    "requirements": [{ "composite": "ST", "minScore": 101 }]
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "army-38b",
+    "code": "38B",
+    "title": "Civil Affairs Specialist",
+    "description": "Civil Affairs Specialist \u2013 U.S. Army MOS 38B.",
+    "category": "Civil Affairs",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "id": "army-38r",
+    "code": "38R",
+    "title": "Civil Reconnaissance Specialist",
+    "description": "Civil Reconnaissance Specialist \u2013 U.S. Army MOS 38R.",
+    "category": "Civil Affairs",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "id": "army-38t",
+    "code": "38T",
+    "title": "Civil Affairs Candidate",
+    "description": "Civil Affairs Candidate \u2013 U.S. Army MOS 38T.",
+    "category": "Civil Affairs",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "id": "army-38w",
+    "code": "38W",
+    "title": "Civil Affairs Medical",
+    "description": "Civil Affairs Medical \u2013 U.S. Army MOS 38W.",
+    "category": "Civil Affairs",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      },
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "id": "army-40d",
+    "code": "40D",
+    "title": "Space Operations Specialist",
+    "description": "Space Operations Specialist \u2013 U.S. Army MOS 40D.",
+    "category": "Space Operations",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
   },
   {
     "id": "army-42a",
     "code": "42A",
     "title": "Human Resources Specialist",
-    "description": "Maintains personnel records, processes awards and evaluations, and manages HR functions across Army units.",
-    "category": "Administrative",
+    "description": "Human Resources Specialist \u2013 U.S. Army MOS 42A.",
+    "category": "Human Resources",
     "minAFQT": 31,
-    "requirements": [{ "composite": "CL", "minScore": 90 }]
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "army-42r",
+    "code": "42R",
+    "title": "Army Bandperson",
+    "description": "Army Bandperson \u2013 U.S. Army MOS 42R.",
+    "category": "Human Resources",
+    "minAFQT": 31,
+    "requirements": []
+  },
+  {
+    "id": "army-42s",
+    "code": "42S",
+    "title": "Special Band Member",
+    "description": "Special Band Member \u2013 U.S. Army MOS 42S.",
+    "category": "Human Resources",
+    "minAFQT": 31,
+    "requirements": []
+  },
+  {
+    "id": "army-42t",
+    "code": "42T",
+    "title": "Talent Acquisition Sp",
+    "description": "Talent Acquisition Sp \u2013 U.S. Army MOS 42T.",
+    "category": "Human Resources",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      },
+      {
+        "composite": "ST",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "army-46s",
+    "code": "46S",
+    "title": "Public Affairs Mass C",
+    "description": "Public Affairs Mass C \u2013 U.S. Army MOS 46S.",
+    "category": "Public Affairs",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "army-46t",
+    "code": "46T",
+    "title": "Visual Information Eq",
+    "description": "Visual Information Eq \u2013 U.S. Army MOS 46T.",
+    "category": "Public Affairs",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      },
+      {
+        "composite": "GT",
+        "minScore": 97
+      },
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "id": "army-46v",
+    "code": "46V",
+    "title": "Visual Information Sp",
+    "description": "Visual Information Sp \u2013 U.S. Army MOS 46V.",
+    "category": "Public Affairs",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      },
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "id": "army-46y",
+    "code": "46Y",
+    "title": "Visual Information Operations Specialist",
+    "description": "Visual Information Operations Specialist \u2013 U.S. Army MOS 46Y.",
+    "category": "Public Affairs",
+    "minAFQT": 31,
+    "requirements": []
+  },
+  {
+    "id": "army-51c",
+    "code": "51C",
+    "title": "Acquisition, Logistics and Technology Contracting NCO",
+    "description": "Acquisition, Logistics and Technology Contracting NCO \u2013 U.S. Army MOS 51C.",
+    "category": "Acquisition & Contracting",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
   },
   {
     "id": "army-56m",
     "code": "56M",
     "title": "Religious Affairs Specialist",
-    "description": "Assists Army chaplains in providing religious support, counseling programs, and morale services to soldiers.",
-    "category": "Administrative",
+    "description": "Religious Affairs Specialist \u2013 U.S. Army MOS 56M.",
+    "category": "Religious Support",
     "minAFQT": 31,
-    "requirements": [{ "composite": "CL", "minScore": 90 }]
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "army-68a",
+    "code": "68A",
+    "title": "Biomedical Equipment Specialist",
+    "description": "Biomedical Equipment Specialist \u2013 U.S. Army MOS 68A.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "id": "army-68b",
+    "code": "68B",
+    "title": "Orthopedic Specialist",
+    "description": "Orthopedic Specialist \u2013 U.S. Army MOS 68B.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
   },
   {
     "id": "army-68c",
     "code": "68C",
     "title": "Practical Nursing Specialist",
-    "description": "Provides direct patient care under the supervision of physicians and nurses in clinical and field settings.",
+    "description": "Practical Nursing Specialist \u2013 U.S. Army MOS 68C.",
     "category": "Medical",
     "minAFQT": 31,
-    "requirements": [{ "composite": "ST", "minScore": 101 }]
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
   },
   {
     "id": "army-68d",
     "code": "68D",
     "title": "Operating Room Specialist",
-    "description": "Assists surgeons and nurses during surgical procedures in military hospitals and field medical units.",
+    "description": "Operating Room Specialist \u2013 U.S. Army MOS 68D.",
     "category": "Medical",
     "minAFQT": 31,
-    "requirements": [{ "composite": "ST", "minScore": 101 }]
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "id": "army-68e",
+    "code": "68E",
+    "title": "Dental Specialist",
+    "description": "Dental Specialist \u2013 U.S. Army MOS 68E.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "id": "army-68f",
+    "code": "68F",
+    "title": "Physical Therapy Spec",
+    "description": "Physical Therapy Spec \u2013 U.S. Army MOS 68F.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "id": "army-68g",
+    "code": "68G",
+    "title": "Patient Administration Specialist",
+    "description": "Patient Administration Specialist \u2013 U.S. Army MOS 68G.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "army-68h",
+    "code": "68H",
+    "title": "Optical Laboratory Specialist",
+    "description": "Optical Laboratory Specialist \u2013 U.S. Army MOS 68H.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 98
+      }
+    ]
   },
   {
     "id": "army-68k",
     "code": "68K",
     "title": "Medical Laboratory Specialist",
-    "description": "Performs clinical laboratory tests to support diagnosis and treatment of patients in military medical facilities.",
+    "description": "Medical Laboratory Specialist \u2013 U.S. Army MOS 68K.",
     "category": "Medical",
     "minAFQT": 31,
-    "requirements": [{ "composite": "ST", "minScore": 106 }]
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 106
+      }
+    ]
+  },
+  {
+    "id": "army-68l",
+    "code": "68L",
+    "title": "Occupational Therapy Specialist",
+    "description": "Occupational Therapy Specialist \u2013 U.S. Army MOS 68L.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "id": "army-68m",
+    "code": "68M",
+    "title": "Nutrition Care Specialist",
+    "description": "Nutrition Care Specialist \u2013 U.S. Army MOS 68M.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "OF",
+        "minScore": 95
+      }
+    ]
   },
   {
     "id": "army-68p",
     "code": "68P",
     "title": "Radiology Specialist",
-    "description": "Operates X-ray and other imaging equipment to assist in diagnosing injuries and diseases for Army patients.",
+    "description": "Radiology Specialist \u2013 U.S. Army MOS 68P.",
     "category": "Medical",
     "minAFQT": 31,
-    "requirements": [{ "composite": "ST", "minScore": 106 }]
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "id": "army-68q",
+    "code": "68Q",
+    "title": "Pharmacy Specialist",
+    "description": "Pharmacy Specialist \u2013 U.S. Army MOS 68Q.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "army-68r",
+    "code": "68R",
+    "title": "Veterinary Food Inspection Specialist",
+    "description": "Veterinary Food Inspection Specialist \u2013 U.S. Army MOS 68R.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "army-68s",
+    "code": "68S",
+    "title": "Preventive Medicine Specialist",
+    "description": "Preventive Medicine Specialist \u2013 U.S. Army MOS 68S.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 98
+      }
+    ]
+  },
+  {
+    "id": "army-68t",
+    "code": "68T",
+    "title": "Animal Care Specialist",
+    "description": "Animal Care Specialist \u2013 U.S. Army MOS 68T.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "id": "army-68v",
+    "code": "68V",
+    "title": "Respiratory Specialist",
+    "description": "Respiratory Specialist \u2013 U.S. Army MOS 68V.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 102
+      }
+    ]
   },
   {
     "id": "army-68w",
     "code": "68W",
-    "title": "Combat Medic Specialist",
-    "description": "Provides emergency medical treatment and primary care to soldiers in both field and clinical environments.",
+    "title": "Health Care Specialist (Combat Medic)",
+    "description": "Health Care Specialist (Combat Medic) \u2013 U.S. Army MOS 68W.",
     "category": "Medical",
     "minAFQT": 31,
-    "requirements": [{ "composite": "ST", "minScore": 101 }]
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "id": "army-68x",
+    "code": "68X",
+    "title": "Behavioral Health Specialist",
+    "description": "Behavioral Health Specialist \u2013 U.S. Army MOS 68X.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "id": "army-68y",
+    "code": "68Y",
+    "title": "Eye Specialist",
+    "description": "Eye Specialist \u2013 U.S. Army MOS 68Y.",
+    "category": "Medical",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
   },
   {
     "id": "army-74d",
     "code": "74D",
-    "title": "Chemical, Biological, Radiological, and Nuclear Specialist",
-    "description": "Detects, identifies, and decontaminates chemical, biological, radiological, and nuclear hazards on the battlefield.",
-    "category": "Combat Support",
+    "title": "CBRN Specialist",
+    "description": "CBRN Specialist \u2013 U.S. Army MOS 74D.",
+    "category": "CBRN",
     "minAFQT": 31,
-    "requirements": [{ "composite": "ST", "minScore": 100 }]
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "army-79s",
+    "code": "79S",
+    "title": "Career Counselor",
+    "description": "Career Counselor \u2013 U.S. Army MOS 79S.",
+    "category": "Recruiting & Retention",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      },
+      {
+        "composite": "ST",
+        "minScore": 96
+      }
+    ]
+  },
+  {
+    "id": "army-79t",
+    "code": "79T",
+    "title": "Recruiting and Retention NCO",
+    "description": "Recruiting and Retention NCO \u2013 U.S. Army MOS 79T.",
+    "category": "Recruiting & Retention",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      },
+      {
+        "composite": "ST",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "army-79v",
+    "code": "79V",
+    "title": "Retention and Transition NCO",
+    "description": "Retention and Transition NCO \u2013 U.S. Army MOS 79V.",
+    "category": "Recruiting & Retention",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "army-88h",
+    "code": "88H",
+    "title": "Cargo Specialist",
+    "description": "Cargo Specialist \u2013 U.S. Army MOS 88H.",
+    "category": "Transportation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 88
+      }
+    ]
+  },
+  {
+    "id": "army-88k",
+    "code": "88K",
+    "title": "Watercraft Operator",
+    "description": "Watercraft Operator \u2013 U.S. Army MOS 88K.",
+    "category": "Transportation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
+  },
+  {
+    "id": "army-88l",
+    "code": "88L",
+    "title": "Watercraft Engineer",
+    "description": "Watercraft Engineer \u2013 U.S. Army MOS 88L.",
+    "category": "Transportation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
   },
   {
     "id": "army-88m",
     "code": "88M",
     "title": "Motor Transport Operator",
-    "description": "Operates wheeled vehicles to transport personnel, equipment, and supplies in support of military operations.",
-    "category": "Logistics/Supply",
+    "description": "Motor Transport Operator \u2013 U.S. Army MOS 88M.",
+    "category": "Transportation",
     "minAFQT": 31,
-    "requirements": [{ "composite": "OF", "minScore": 85 }]
+    "requirements": [
+      {
+        "composite": "OF",
+        "minScore": 85
+      }
+    ]
+  },
+  {
+    "id": "army-88n",
+    "code": "88N",
+    "title": "Transportation Management Coordinator",
+    "description": "Transportation Management Coordinator \u2013 U.S. Army MOS 88N.",
+    "category": "Transportation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "army-88u",
+    "code": "88U",
+    "title": "Railway Operations Crewmember",
+    "description": "Railway Operations Crewmember \u2013 U.S. Army MOS 88U.",
+    "category": "Transportation",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 92
+      }
+    ]
+  },
+  {
+    "id": "army-89a",
+    "code": "89A",
+    "title": "Ammunition Stock Control and Accounting Specialist",
+    "description": "Ammunition Stock Control and Accounting Specialist \u2013 U.S. Army MOS 89A.",
+    "category": "Ammunition",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
   },
   {
     "id": "army-89b",
     "code": "89B",
     "title": "Ammunition Specialist",
-    "description": "Receives, stores, issues, and maintains conventional ammunition and missiles for Army operations.",
-    "category": "Logistics/Supply",
+    "description": "Ammunition Specialist \u2013 U.S. Army MOS 89B.",
+    "category": "Ammunition",
     "minAFQT": 31,
-    "requirements": [{ "composite": "OF", "minScore": 85 }]
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 85
+      },
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "id": "army-89d",
+    "code": "89D",
+    "title": "Explosive Ordnance Disposal Specialist",
+    "description": "Explosive Ordnance Disposal Specialist \u2013 U.S. Army MOS 89D.",
+    "category": "Ammunition",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "army-91a",
+    "code": "91A",
+    "title": "M1 Abrams Tank System Maintainer",
+    "description": "M1 Abrams Tank System Maintainer \u2013 U.S. Army MOS 91A.",
+    "category": "Mechanical Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      },
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
   },
   {
     "id": "army-91b",
     "code": "91B",
     "title": "Wheeled Vehicle Mechanic",
-    "description": "Maintains, repairs, and troubleshoots wheeled vehicles and associated mechanical systems across the Army fleet.",
-    "category": "Maintenance",
+    "description": "Wheeled Vehicle Mechanic \u2013 U.S. Army MOS 91B.",
+    "category": "Mechanical Maintenance",
     "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 87 }]
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 85
+      },
+      {
+        "composite": "MM",
+        "minScore": 92
+      }
+    ]
+  },
+  {
+    "id": "army-91c",
+    "code": "91C",
+    "title": "Utilities Equipment Repairer",
+    "description": "Utilities Equipment Repairer \u2013 U.S. Army MOS 91C.",
+    "category": "Mechanical Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 93
+      },
+      {
+        "composite": "GT",
+        "minScore": 85
+      }
+    ]
   },
   {
     "id": "army-91d",
     "code": "91D",
-    "title": "Power-Generation Equipment Repairer",
-    "description": "Maintains and repairs generators and power generation equipment used to support Army operations worldwide.",
-    "category": "Maintenance",
+    "title": "Power Generation Equipment Repairer",
+    "description": "Power Generation Equipment Repairer \u2013 U.S. Army MOS 91D.",
+    "category": "Mechanical Maintenance",
     "minAFQT": 31,
-    "requirements": [{ "composite": "EL", "minScore": 93 }]
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 93
+      },
+      {
+        "composite": "GT",
+        "minScore": 85
+      }
+    ]
   },
   {
     "id": "army-91e",
     "code": "91E",
     "title": "Allied Trade Specialist",
-    "description": "Performs metalworking, welding, and machining to fabricate and repair equipment and structural components.",
-    "category": "Maintenance",
+    "description": "Allied Trade Specialist \u2013 U.S. Army MOS 91E.",
+    "category": "Mechanical Maintenance",
     "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 93 }]
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 98
+      },
+      {
+        "composite": "GT",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "army-91f",
+    "code": "91F",
+    "title": "Small Arms/Artillery Repairer",
+    "description": "Small Arms/Artillery Repairer \u2013 U.S. Army MOS 91F.",
+    "category": "Mechanical Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 93
+      },
+      {
+        "composite": "GT",
+        "minScore": 85
+      }
+    ]
+  },
+  {
+    "id": "army-91h",
+    "code": "91H",
+    "title": "Track Vehicle Repairer",
+    "description": "Track Vehicle Repairer \u2013 U.S. Army MOS 91H.",
+    "category": "Mechanical Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 85
+      },
+      {
+        "composite": "MM",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "army-91l",
+    "code": "91L",
+    "title": "Construction Equipment Repairer",
+    "description": "Construction Equipment Repairer \u2013 U.S. Army MOS 91L.",
+    "category": "Mechanical Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 85
+      },
+      {
+        "composite": "MM",
+        "minScore": 87
+      }
+    ]
+  },
+  {
+    "id": "army-91m",
+    "code": "91M",
+    "title": "Bradley Fighting Vehicle System Maintainer",
+    "description": "Bradley Fighting Vehicle System Maintainer \u2013 U.S. Army MOS 91M.",
+    "category": "Mechanical Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      },
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
+  },
+  {
+    "id": "army-91p",
+    "code": "91P",
+    "title": "Artillery Mechanic",
+    "description": "Artillery Mechanic \u2013 U.S. Army MOS 91P.",
+    "category": "Mechanical Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      },
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
+  },
+  {
+    "id": "army-91s",
+    "code": "91S",
+    "title": "Stryker Systems Maintainer",
+    "description": "Stryker Systems Maintainer \u2013 U.S. Army MOS 91S.",
+    "category": "Mechanical Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 85
+      },
+      {
+        "composite": "MM",
+        "minScore": 87
+      }
+    ]
   },
   {
     "id": "army-92a",
     "code": "92A",
     "title": "Automated Logistical Specialist",
-    "description": "Manages supply operations using automated systems to receive, store, and issue equipment and supplies.",
-    "category": "Logistics/Supply",
+    "description": "Automated Logistical Specialist \u2013 U.S. Army MOS 92A.",
+    "category": "Supply & Logistics",
     "minAFQT": 31,
-    "requirements": [{ "composite": "CL", "minScore": 90 }]
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "army-92f",
+    "code": "92F",
+    "title": "Petroleum Supply Specialist",
+    "description": "Petroleum Supply Specialist \u2013 U.S. Army MOS 92F.",
+    "category": "Supply & Logistics",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 86
+      },
+      {
+        "composite": "OF",
+        "minScore": 85
+      }
+    ]
   },
   {
     "id": "army-92g",
     "code": "92G",
     "title": "Culinary Specialist",
-    "description": "Prepares and serves food for Army personnel, managing food service operations in field and garrison environments.",
-    "category": "Logistics/Supply",
+    "description": "Culinary Specialist \u2013 U.S. Army MOS 92G.",
+    "category": "Supply & Logistics",
     "minAFQT": 31,
-    "requirements": [{ "composite": "OF", "minScore": 85 }]
+    "requirements": [
+      {
+        "composite": "OF",
+        "minScore": 85
+      }
+    ]
+  },
+  {
+    "id": "army-92l",
+    "code": "92L",
+    "title": "Petroleum Laboratory Specialist",
+    "description": "Petroleum Laboratory Specialist \u2013 U.S. Army MOS 92L.",
+    "category": "Supply & Logistics",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "id": "army-92m",
+    "code": "92M",
+    "title": "Mortuary Affairs Specialist",
+    "description": "Mortuary Affairs Specialist \u2013 U.S. Army MOS 92M.",
+    "category": "Supply & Logistics",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 84
+      }
+    ]
+  },
+  {
+    "id": "army-92r",
+    "code": "92R",
+    "title": "Parachute Rigger",
+    "description": "Parachute Rigger \u2013 U.S. Army MOS 92R.",
+    "category": "Supply & Logistics",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 77
+      },
+      {
+        "composite": "GM",
+        "minScore": 78
+      }
+    ]
+  },
+  {
+    "id": "army-92s",
+    "code": "92S",
+    "title": "Shower/Laundry and Clothing Repair Specialist",
+    "description": "Shower/Laundry and Clothing Repair Specialist \u2013 U.S. Army MOS 92S.",
+    "category": "Supply & Logistics",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 84
+      }
+    ]
+  },
+  {
+    "id": "army-92w",
+    "code": "92W",
+    "title": "Water Treatment Specialist",
+    "description": "Water Treatment Specialist \u2013 U.S. Army MOS 92W.",
+    "category": "Supply & Logistics",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 88
+      }
+    ]
   },
   {
     "id": "army-92y",
     "code": "92Y",
     "title": "Unit Supply Specialist",
-    "description": "Manages the supply of equipment, ammunition, and repair parts for Army units using automated supply systems.",
-    "category": "Logistics/Supply",
+    "description": "Unit Supply Specialist \u2013 U.S. Army MOS 92Y.",
+    "category": "Supply & Logistics",
     "minAFQT": 31,
-    "requirements": [{ "composite": "CL", "minScore": 90 }]
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "army-94a",
+    "code": "94A",
+    "title": "Land Combat Electronic Missile System Repairer",
+    "description": "Land Combat Electronic Missile System Repairer \u2013 U.S. Army MOS 94A.",
+    "category": "Electronic Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 102
+      },
+      {
+        "composite": "ST",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "army-94d",
+    "code": "94D",
+    "title": "Air Traffic Control Equipment Repairer",
+    "description": "Air Traffic Control Equipment Repairer \u2013 U.S. Army MOS 94D.",
+    "category": "Electronic Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 102
+      },
+      {
+        "composite": "ST",
+        "minScore": 90
+      }
+    ]
   },
   {
     "id": "army-94e",
     "code": "94E",
     "title": "Radio and Communications Security Repairer",
-    "description": "Maintains and repairs communications security equipment and tactical radio systems used across Army units.",
-    "category": "Maintenance",
+    "description": "Radio and Communications Security Repairer \u2013 U.S. Army MOS 94E.",
+    "category": "Electronic Maintenance",
     "minAFQT": 31,
-    "requirements": [{ "composite": "EL", "minScore": 107 }]
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 102
+      },
+      {
+        "composite": "ST",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "army-94f",
+    "code": "94F",
+    "title": "Computer/Detection Systems Repairer",
+    "description": "Computer/Detection Systems Repairer \u2013 U.S. Army MOS 94F.",
+    "category": "Electronic Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 102
+      },
+      {
+        "composite": "ST",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "army-94h",
+    "code": "94H",
+    "title": "Test, Measurement and Diagnostic Equipment Specialist",
+    "description": "Test, Measurement and Diagnostic Equipment Specialist \u2013 U.S. Army MOS 94H.",
+    "category": "Electronic Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 107
+      },
+      {
+        "composite": "ST",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "army-94m",
+    "code": "94M",
+    "title": "Radar Repairer",
+    "description": "Radar Repairer \u2013 U.S. Army MOS 94M.",
+    "category": "Electronic Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 107
+      },
+      {
+        "composite": "ST",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "army-94p",
+    "code": "94P",
+    "title": "Multiple Launch Rocket System Repairer",
+    "description": "Multiple Launch Rocket System Repairer \u2013 U.S. Army MOS 94P.",
+    "category": "Electronic Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      },
+      {
+        "composite": "ST",
+        "minScore": 85
+      }
+    ]
+  },
+  {
+    "id": "army-94r",
+    "code": "94R",
+    "title": "Avionic and Survivability Equipment Repairer",
+    "description": "Avionic and Survivability Equipment Repairer \u2013 U.S. Army MOS 94R.",
+    "category": "Electronic Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 98
+      }
+    ]
+  },
+  {
+    "id": "army-94s",
+    "code": "94S",
+    "title": "Patriot System Repairer",
+    "description": "Patriot System Repairer \u2013 U.S. Army MOS 94S.",
+    "category": "Electronic Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 107
+      },
+      {
+        "composite": "ST",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "army-94t",
+    "code": "94T",
+    "title": "Avenger System Repairer",
+    "description": "Avenger System Repairer \u2013 U.S. Army MOS 94T.",
+    "category": "Electronic Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 98
+      },
+      {
+        "composite": "ST",
+        "minScore": 85
+      }
+    ]
+  },
+  {
+    "id": "army-94y",
+    "code": "94Y",
+    "title": "IFTE Operator and Maintainer",
+    "description": "IFTE Operator and Maintainer \u2013 U.S. Army MOS 94Y.",
+    "category": "Electronic Maintenance",
+    "minAFQT": 31,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 107
+      },
+      {
+        "composite": "ST",
+        "minScore": 90
+      }
+    ]
   }
 ]
