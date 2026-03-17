@@ -97,16 +97,14 @@ export function calculateMarineComposites(scores: SubtestScores): CompositeScore
 }
 
 /**
- * Navy uses individual subtest scores and some composites.
- * Common Navy composites referenced for ratings:
- * AR+MK+EI+GS (for technical ratings)
- * VE+AR+MK+MC (for mechanical ratings)
- * VE+MK (for admin ratings)
- * We return raw subtests plus the common composites.
+ * Navy uses individual subtest scores and composites called "line scores."
+ * Each rating specifies one or more composite formulas with a minimum combined score.
+ * We compute all composites used across Navy ratings so the job-matcher can evaluate any requirement.
  */
 export function calculateNavyScores(scores: SubtestScores): CompositeScores {
   const ve = scores.WK + scores.PC;
   return {
+    // Individual subtests
     VE: ve,
     AR: scores.AR,
     MK: scores.MK,
@@ -115,10 +113,31 @@ export function calculateNavyScores(scores: SubtestScores): CompositeScores {
     AS: scores.AS,
     MC: scores.MC,
     AO: scores.AO,
-    "AR+MK+EI+GS": scores.AR + scores.MK + scores.EI + scores.GS,
-    "VE+AR+MK+MC": ve + scores.AR + scores.MK + scores.MC,
-    "VE+MK": ve + scores.MK,
+
+    // 2-subtest composites
     "VE+AR": ve + scores.AR,
+    "VE+MK": ve + scores.MK,
+    "VE+GS": ve + scores.GS,
+    "AR+MK": scores.AR + scores.MK,
+
+    // 3-subtest composites
+    "VE+MK+GS": ve + scores.MK + scores.GS,
+    "AR+MC+AS": scores.AR + scores.MC + scores.AS,
+    "GS+MC+EI": scores.GS + scores.MC + scores.EI,
+    "MK+EI+GS": scores.MK + scores.EI + scores.GS,
+    "VE+MC+AS": ve + scores.MC + scores.AS,
+    "AR+MC+AS+EI": scores.AR + scores.MC + scores.AS + scores.EI,
+
+    // 4-subtest composites
+    "AR+MK+EI+GS": scores.AR + scores.MK + scores.EI + scores.GS,
+    "AR+2MK+GS": scores.AR + 2 * scores.MK + scores.GS,
+    "VE+AR+MK+MC": ve + scores.AR + scores.MK + scores.MC,
+    "VE+AR+MK+AS": ve + scores.AR + scores.MK + scores.AS,
+    "VE+AR+MK+GS": ve + scores.AR + scores.MK + scores.GS,
+    "VE+AR+MK+AO": ve + scores.AR + scores.MK + scores.AO,
+    "VE+AR+MK+EI": ve + scores.AR + scores.MK + scores.EI,
+    "AR+MK+MC+VE": scores.AR + scores.MK + scores.MC + ve,
+    "AR+GS+MC+EI": scores.AR + scores.GS + scores.MC + scores.EI,
   };
 }
 

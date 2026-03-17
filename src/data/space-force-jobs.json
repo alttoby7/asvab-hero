@@ -3,93 +3,384 @@
     "id": "sf-1c6x1",
     "code": "1C6X1",
     "title": "Space Systems Operations",
-    "description": "Operates satellite command and control systems, space surveillance networks, and ground-based sensors supporting national defense.",
+    "description": "Operates satellite tracking, ballistic missile detection, and space launch support systems. Monitors low-orbit and deep-space satellites, identifies missile launches, and performs on-orbit satellite command operations for GPS and military communications satellites.",
     "category": "Space Operations",
     "minAFQT": 36,
     "requirements": [
-      { "composite": "G", "minScore": 64 },
-      { "composite": "E", "minScore": 60 }
+      {
+        "composite": "E",
+        "minScore": 70
+      }
     ]
-  },
-  {
-    "id": "sf-5s0x1",
-    "code": "5S0X1",
-    "title": "Space Systems Specialist",
-    "description": "Installs, maintains, and repairs space launch systems, satellite ground stations, and related infrastructure.",
-    "category": "Engineering",
-    "minAFQT": 36,
-    "requirements": [{ "composite": "E", "minScore": 60 }]
   },
   {
     "id": "sf-1n0x1",
     "code": "1N0X1",
     "title": "All Source Intelligence Analyst",
-    "description": "Analyzes multi-source intelligence data to produce assessments supporting space and cyber operations.",
+    "description": "Oversees intelligence-gathering initiatives and manages, develops, and evaluates intelligence information collected from multiple sources. Produces assessments to support commanders' mission decisions.",
     "category": "Intelligence",
     "minAFQT": 36,
-    "requirements": [{ "composite": "G", "minScore": 57 }]
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 57
+      }
+    ]
+  },
+  {
+    "id": "sf-1n1x1",
+    "code": "1N1X1",
+    "title": "Geospatial Intelligence Analyst",
+    "description": "Analyzes satellite and aerial imagery to identify unusual activity and potential threats. Uses mapping tools for target location and distance calculations, creates intelligence briefings, and supports targeting operations.",
+    "category": "Intelligence",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 66
+      }
+    ]
   },
   {
     "id": "sf-1n2x1",
     "code": "1N2X1",
     "title": "Signals Intelligence Analyst",
-    "description": "Collects and analyzes electronic signals to identify threats and support Space Force mission planning.",
+    "description": "Extracts and analyzes foreign communications through electromagnetic emissions. Operates intelligence equipment, manipulates signals data, and produces intelligence reports to help commanders respond to threats.",
     "category": "Intelligence",
     "minAFQT": 36,
-    "requirements": [{ "composite": "G", "minScore": 72 }]
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 72
+      }
+    ]
   },
   {
     "id": "sf-1n4x1",
     "code": "1N4X1",
     "title": "Fusion Analyst",
-    "description": "Integrates intelligence from multiple domains to produce comprehensive threat assessments for space operations.",
+    "description": "Performs all-source intelligence analysis by fusing data across multiple disciplines. Validates target development, manages target priorities, supports mission planning, and assesses potential threats across multiple domains.",
     "category": "Intelligence",
     "minAFQT": 36,
-    "requirements": [{ "composite": "G", "minScore": 62 }]
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 62
+      }
+    ]
+  },
+  {
+    "id": "sf-1b4x1",
+    "code": "1B4X1",
+    "title": "Cyber Warfare Operations",
+    "description": "Conducts offensive and defensive cyberspace operations. Plans, executes, and assesses cyberspace operations to achieve military objectives in and through the cyberspace domain.",
+    "category": "Cyber/IT",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 64
+      }
+    ]
   },
   {
     "id": "sf-1d7x1",
     "code": "1D7X1",
     "title": "Cyber Defense Operations",
-    "description": "Protects Space Force networks and systems by monitoring, detecting, and responding to cyber threats.",
+    "description": "Protects Space Force networks and information systems from cyber threats. Performs network security monitoring, incident response, vulnerability assessment, and defensive cyberspace operations.",
     "category": "Cyber/IT",
     "minAFQT": 36,
-    "requirements": [{ "composite": "G", "minScore": 64 }]
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 64
+      }
+    ]
   },
   {
     "id": "sf-1d7x2",
     "code": "1D7X2",
-    "title": "Cyber Operations",
-    "description": "Plans and executes offensive and defensive cyberspace operations supporting Space Force missions.",
+    "title": "Cyber Defense Operations (Radio Frequency/Satellite)",
+    "description": "Specializes in defending satellite communications and radio frequency systems. Monitors and secures RF and SATCOM infrastructure against cyber intrusions and electronic threats.",
     "category": "Cyber/IT",
     "minAFQT": 36,
-    "requirements": [{ "composite": "G", "minScore": 70 }]
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 64
+      }
+    ]
+  },
+  {
+    "id": "sf-3d0x2",
+    "code": "3D0X2",
+    "title": "Cyber Systems Operations",
+    "description": "Operates and maintains cyberspace systems and networks. Installs, configures, and troubleshoots network infrastructure, servers, and communication systems supporting Space Force operations.",
+    "category": "Cyber/IT",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 64
+      }
+    ]
   },
   {
     "id": "sf-3d1x2",
     "code": "3D1X2",
     "title": "Cyber Transport Systems",
-    "description": "Designs, installs, and maintains network infrastructure supporting Space Force communications and data systems.",
+    "description": "Installs, operates, and maintains ground-based radio frequency, satellite, and network transport systems. Manages switching, routing, and long-haul communications infrastructure.",
     "category": "Cyber/IT",
     "minAFQT": 36,
-    "requirements": [{ "composite": "E", "minScore": 55 }]
+    "requirements": [
+      {
+        "composite": "E",
+        "minScore": 70
+      }
+    ]
+  },
+  {
+    "id": "sf-3c0x2",
+    "code": "3C0X2",
+    "title": "Computer Systems Programming",
+    "description": "Designs, codes, tests, and maintains software applications and computer systems. Develops programs to support Space Force command and control and operational systems.",
+    "category": "Cyber/IT",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 64
+      }
+    ]
+  },
+  {
+    "id": "sf-3e0x1",
+    "code": "3E0X1",
+    "title": "Electrical Systems",
+    "description": "Installs, maintains, and repairs electrical power distribution systems, interior wiring, and associated equipment at Space Force installations.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "E",
+        "minScore": 35
+      },
+      {
+        "composite": "M",
+        "minScore": 35
+      }
+    ]
+  },
+  {
+    "id": "sf-3e0x2",
+    "code": "3E0X2",
+    "title": "Electrical Power Production",
+    "description": "Operates, maintains, and repairs electric power generation equipment including generators and uninterruptible power supplies supporting Space Force facilities and mission systems.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "M",
+        "minScore": 56
+      },
+      {
+        "composite": "E",
+        "minScore": 40
+      }
+    ]
+  },
+  {
+    "id": "sf-3e2x1",
+    "code": "3E2X1",
+    "title": "Pavement and Construction Equipment",
+    "description": "Operates heavy construction equipment and performs pavement maintenance, including runways and roads at Space Force installations.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "M",
+        "minScore": 40
+      }
+    ]
+  },
+  {
+    "id": "sf-3e3x1",
+    "code": "3E3X1",
+    "title": "Structural",
+    "description": "Constructs, maintains, and repairs buildings, structures, and facilities at Space Force installations. Performs carpentry, masonry, and structural metalwork.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "M",
+        "minScore": 47
+      }
+    ]
+  },
+  {
+    "id": "sf-3e4x1",
+    "code": "3E4X1",
+    "title": "Water and Fuel Systems Maintenance",
+    "description": "Installs, operates, and maintains water distribution, wastewater, and liquid fuels systems at Space Force installations.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "M",
+        "minScore": 47
+      },
+      {
+        "composite": "E",
+        "minScore": 28
+      }
+    ]
+  },
+  {
+    "id": "sf-3e5x1",
+    "code": "3E5X1",
+    "title": "Engineering",
+    "description": "Plans, designs, and manages construction and engineering projects. Surveys land, prepares design drawings, and supervises civil engineering work at Space Force installations.",
+    "category": "Engineering",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 49
+      }
+    ]
   },
   {
     "id": "sf-3f0x1",
     "code": "3F0X1",
     "title": "Personnel",
-    "description": "Manages military personnel programs including assignments, promotions, evaluations, and workforce management.",
+    "description": "Manages personnel programs including military assignments, promotions, separations, and human resources functions for Space Force Guardians.",
     "category": "Administrative",
     "minAFQT": 36,
-    "requirements": [{ "composite": "A", "minScore": 41 }]
+    "requirements": [
+      {
+        "composite": "A",
+        "minScore": 41
+      }
+    ]
   },
   {
     "id": "sf-3f1x1",
     "code": "3F1X1",
     "title": "Services",
-    "description": "Manages base support functions including fitness programs, food service, and readiness operations.",
+    "description": "Manages force support programs including lodging, food service, recreation, and mortuary affairs. Provides quality-of-life services to Space Force Guardians and families.",
     "category": "Administrative",
     "minAFQT": 36,
-    "requirements": [{ "composite": "A", "minScore": 40 }]
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 24
+      }
+    ]
+  },
+  {
+    "id": "sf-1s0x1",
+    "code": "1S0X1",
+    "title": "Safety",
+    "description": "Develops and implements safety programs to prevent accidents and occupational illnesses. Investigates mishaps, conducts safety inspections, and advises commanders on safety compliance at Space Force installations.",
+    "category": "Administrative",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 55
+      }
+    ]
+  },
+  {
+    "id": "sf-6c0x1",
+    "code": "6C0X1",
+    "title": "Contracting",
+    "description": "Manages the acquisition of supplies, services, and construction through federal contracting processes. Negotiates contracts, ensures regulatory compliance, and manages vendor relationships for Space Force programs.",
+    "category": "Administrative",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 72
+      }
+    ]
+  },
+  {
+    "id": "sf-6f0x1",
+    "code": "6F0X1",
+    "title": "Financial Management and Comptroller",
+    "description": "Manages Space Force budgets, financial operations, and accounting functions. Processes pay and allowances, maintains financial records, and provides fiscal guidance to commanders.",
+    "category": "Administrative",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 57
+      }
+    ]
+  },
+  {
+    "id": "sf-7s0x1",
+    "code": "7S0X1",
+    "title": "Special Investigations",
+    "description": "Conducts criminal investigations, counterintelligence operations, and fraud inquiries. This is not an entry-level position; Guardians must serve in another career field first before applying.",
+    "category": "Security",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 44
+      }
+    ]
+  },
+  {
+    "id": "sf-2s0x1",
+    "code": "2S0X1",
+    "title": "Materiel Management",
+    "description": "Manages supply chain operations including inventory control, equipment accountability, and logistics support. Ensures Space Force units have the equipment and supplies needed for mission success.",
+    "category": "Logistics",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "A",
+        "minScore": 41
+      },
+      {
+        "composite": "G",
+        "minScore": 44
+      }
+    ]
+  },
+  {
+    "id": "sf-2t2x1",
+    "code": "2T2X1",
+    "title": "Air Transportation",
+    "description": "Plans and coordinates the movement of personnel, cargo, and equipment by air. Manages aerial port operations and ensures proper loading, documentation, and delivery of Space Force assets.",
+    "category": "Logistics",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "M",
+        "minScore": 47
+      },
+      {
+        "composite": "A",
+        "minScore": 28
+      }
+    ]
+  },
+  {
+    "id": "sf-8r0x1",
+    "code": "8R0X1",
+    "title": "Recruiter",
+    "description": "Represents the Space Force by identifying and attracting qualified individuals for enlistment. Conducts outreach, interviews applicants, and guides candidates through the enlistment process.",
+    "category": "Administrative",
+    "minAFQT": 36,
+    "requirements": [
+      {
+        "composite": "G",
+        "minScore": 44
+      }
+    ]
   }
 ]

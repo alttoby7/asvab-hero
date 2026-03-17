@@ -1,272 +1,1832 @@
 [
   {
+    "id": "usmc-0211",
+    "code": "0211",
+    "title": "Counterintelligence/Human Intelligence Specialist",
+    "description": "Conducts counterintelligence operations and human intelligence collection to identify threats and support commanders.",
+    "category": "Intelligence",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
     "id": "usmc-0231",
     "code": "0231",
     "title": "Intelligence Specialist",
-    "description": "Collects, analyzes, and disseminates intelligence information to support Marine Corps combat operations and planning.",
+    "description": "Collects, analyzes, and disseminates all-source intelligence to support Marine Corps operations.",
     "category": "Intelligence",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 110 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-0241",
+    "code": "0241",
+    "title": "Imagery Analysis Specialist",
+    "description": "Analyzes imagery from various collection platforms to produce intelligence products.",
+    "category": "Intelligence",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
   },
   {
     "id": "usmc-0261",
     "code": "0261",
     "title": "Geographic Intelligence Specialist",
-    "description": "Analyzes terrain, weather, and geospatial data to produce intelligence products supporting Marine operations.",
+    "description": "Produces geospatial intelligence products and analysis to support maneuver and targeting.",
     "category": "Intelligence",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 110 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
   },
   {
     "id": "usmc-0311",
     "code": "0311",
     "title": "Rifleman",
-    "description": "Serves as the primary infantry Marine, executing close combat operations and direct fire engagements.",
+    "description": "Serves as the basic infantry fighting unit, locating, closing with, and destroying the enemy by fire and maneuver.",
     "category": "Infantry",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 80 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 80
+      }
+    ]
+  },
+  {
+    "id": "usmc-0313",
+    "code": "0313",
+    "title": "Light Armored Reconnaissance Marine",
+    "description": "Operates and maintains the Light Armored Vehicle (LAV-25) to conduct reconnaissance and security operations.",
+    "category": "Infantry",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "usmc-0317",
+    "code": "0317",
+    "title": "Scout Sniper",
+    "description": "Provides precision long-range fire and reconnaissance support for infantry units.",
+    "category": "Infantry",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "usmc-0321",
+    "code": "0321",
+    "title": "Reconnaissance Marine",
+    "description": "Conducts deep reconnaissance, surveillance, and direct action missions in support of the MAGTF commander.",
+    "category": "Reconnaissance",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
   },
   {
     "id": "usmc-0331",
     "code": "0331",
     "title": "Machine Gunner",
-    "description": "Employs crew-served machine guns to provide suppressive fire and support infantry maneuver elements.",
+    "description": "Employs machine guns and associated equipment in support of infantry operations.",
     "category": "Infantry",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 80 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 80
+      }
+    ]
   },
   {
     "id": "usmc-0341",
     "code": "0341",
     "title": "Mortarman",
-    "description": "Operates mortars to provide indirect fire support to infantry units during offensive and defensive operations.",
+    "description": "Operates 60mm, 81mm, and 120mm mortar systems to provide indirect fire support for infantry units.",
     "category": "Infantry",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 80 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 80
+      }
+    ]
+  },
+  {
+    "id": "usmc-0351",
+    "code": "0351",
+    "title": "Infantry Assault Marine",
+    "description": "Employs anti-armor weapons and breaching equipment to support infantry operations.",
+    "category": "Infantry",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
   },
   {
     "id": "usmc-0352",
     "code": "0352",
-    "title": "Anti-Tank Missileman",
-    "description": "Employs anti-tank missile systems to destroy enemy armored vehicles and fortified positions.",
+    "title": "Antitank Missile Gunner",
+    "description": "Operates the TOW missile system and other anti-armor weapons to destroy enemy armor and fortifications.",
     "category": "Infantry",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 80 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "usmc-0372",
+    "code": "0372",
+    "title": "Critical Skills Operator",
+    "description": "MARSOC special operations Marine who conducts direct action, special reconnaissance, and foreign internal defense missions.",
+    "category": "Reconnaissance",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-0411",
+    "code": "0411",
+    "title": "Maintenance Management Specialist",
+    "description": "Plans and manages unit-level maintenance programs, equipment readiness reporting, and maintenance records.",
+    "category": "Logistics",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "usmc-0431",
+    "code": "0431",
+    "title": "Logistics/Embarkation Specialist",
+    "description": "Plans and executes unit embarkation and logistics operations for ground and maritime movement.",
+    "category": "Logistics",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "usmc-0451",
+    "code": "0451",
+    "title": "Airborne and Air Delivery Specialist",
+    "description": "Plans and executes air delivery operations including parachute drops of personnel and equipment.",
+    "category": "Logistics",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "usmc-0481",
+    "code": "0481",
+    "title": "Landing Support Specialist",
+    "description": "Coordinates the flow of personnel, equipment, and supplies across beaches and landing zones during amphibious operations.",
+    "category": "Logistics",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 95
+      },
+      {
+        "composite": "MM",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "usmc-0511",
+    "code": "0511",
+    "title": "MAGTF Planning Specialist",
+    "description": "Assists in the planning and execution of Marine Air-Ground Task Force operations at the operational and strategic levels.",
+    "category": "Administrative",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-0612",
+    "code": "0612",
+    "title": "Tactical Switching Operator",
+    "description": "Operates and maintains tactical telephone switching equipment to support command communications.",
+    "category": "Communications",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      }
+    ]
   },
   {
     "id": "usmc-0621",
     "code": "0621",
-    "title": "Radio Operator",
-    "description": "Installs, operates, and maintains tactical radio communications systems to support command and control.",
+    "title": "Transmission Systems Operator",
+    "description": "Operates and maintains radio and multichannel transmission systems for tactical communications networks.",
     "category": "Communications",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "EL", "minScore": 105 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-0627",
+    "code": "0627",
+    "title": "Satellite Communications Operator",
+    "description": "Operates and maintains satellite communications terminals and systems supporting MAGTF operations.",
+    "category": "Communications",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      }
+    ]
   },
   {
     "id": "usmc-0631",
     "code": "0631",
     "title": "Network Administrator",
-    "description": "Installs, configures, and maintains computer networks and data communications systems for Marine units.",
+    "description": "Installs, configures, and maintains tactical data networks and information systems.",
     "category": "Communications",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "EL", "minScore": 115 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-0651",
+    "code": "0651",
+    "title": "Cyber Network Operator",
+    "description": "Plans, installs, and operates cyberspace networks and systems to support Marine Corps mission command.",
+    "category": "Cyber",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-0671",
+    "code": "0671",
+    "title": "Data Systems Administrator",
+    "description": "Manages and maintains data systems hardware, software, and networks supporting command operations.",
+    "category": "Communications",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      }
+    ]
   },
   {
     "id": "usmc-0811",
     "code": "0811",
-    "title": "Cannoneer",
-    "description": "Operates and maintains artillery weapons systems to deliver indirect fire support to ground combat forces.",
+    "title": "Field Artillery Cannoneer",
+    "description": "Operates and maintains towed and self-propelled cannon artillery systems to provide indirect fire support.",
     "category": "Artillery",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 80 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "usmc-0814",
+    "code": "0814",
+    "title": "HIMARS Crewmember",
+    "description": "Operates and maintains the High Mobility Artillery Rocket System (HIMARS) for long-range precision fires.",
+    "category": "Artillery",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "usmc-0842",
+    "code": "0842",
+    "title": "Field Artillery Radar Operator",
+    "description": "Operates the AN/TPQ-46 and similar counter-battery radars to locate enemy artillery and mortar positions.",
+    "category": "Artillery",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-0844",
+    "code": "0844",
+    "title": "Field Artillery Fire Control Marine",
+    "description": "Operates fire direction center equipment and software to compute and transmit firing data to artillery units.",
+    "category": "Artillery",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-0847",
+    "code": "0847",
+    "title": "Field Artillery Sensor Support Marine",
+    "description": "Operates meteorological and survey equipment to support artillery targeting accuracy.",
+    "category": "Artillery",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
   },
   {
     "id": "usmc-0861",
     "code": "0861",
     "title": "Fire Support Marine",
-    "description": "Coordinates and directs fire support from artillery, naval gunfire, and close air support for ground units.",
+    "description": "Requests, coordinates, and adjusts indirect fire and close air support for ground maneuver units.",
     "category": "Artillery",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 100 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
   },
   {
     "id": "usmc-1141",
     "code": "1141",
     "title": "Electrician",
-    "description": "Installs, maintains, and repairs electrical systems, wiring, and power distribution equipment on Marine installations.",
+    "description": "Installs, maintains, and repairs electrical systems, wiring, and power distribution equipment.",
     "category": "Engineering",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "EL", "minScore": 105 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 90
+      }
+    ]
   },
   {
     "id": "usmc-1142",
     "code": "1142",
-    "title": "Refrigeration/AC Mechanic",
-    "description": "Installs, maintains, and repairs refrigeration, air conditioning, and heating systems for Marine Corps facilities.",
+    "title": "Engineer Equipment Electrical Systems Technician",
+    "description": "Repairs and maintains electrical systems on engineer and construction equipment.",
     "category": "Engineering",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 105 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      },
+      {
+        "composite": "EL",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "usmc-1161",
+    "code": "1161",
+    "title": "Refrigeration and Air Conditioning Technician",
+    "description": "Installs and repairs refrigeration, air conditioning, and environmental control systems.",
+    "category": "Engineering",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
   },
   {
     "id": "usmc-1171",
     "code": "1171",
     "title": "Water Support Technician",
-    "description": "Operates and maintains water purification and distribution systems to provide potable water in field environments.",
+    "description": "Operates and maintains water purification and distribution equipment to provide potable water in field conditions.",
     "category": "Engineering",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 95 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "usmc-1316",
+    "code": "1316",
+    "title": "Metal Worker",
+    "description": "Performs welding, cutting, and fabrication of metal components to support engineering and maintenance operations.",
+    "category": "Engineering",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "usmc-1341",
+    "code": "1341",
+    "title": "Engineer Equipment Mechanic",
+    "description": "Maintains and repairs heavy engineer equipment including bulldozers, cranes, and combat earthmovers.",
+    "category": "Engineering",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 95
+      }
+    ]
   },
   {
     "id": "usmc-1345",
     "code": "1345",
     "title": "Engineer Equipment Operator",
-    "description": "Operates heavy construction equipment such as bulldozers, graders, and excavators for engineering projects.",
+    "description": "Operates heavy construction and combat engineer equipment to support mobility, countermobility, and survivability.",
     "category": "Engineering",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 95 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "usmc-1361",
+    "code": "1361",
+    "title": "Engineer Assistant",
+    "description": "Assists in drafting, surveying, and construction planning for engineer projects.",
+    "category": "Engineering",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
   },
   {
     "id": "usmc-1371",
     "code": "1371",
     "title": "Combat Engineer",
-    "description": "Performs construction, demolition, and obstacle emplacement and breaching in support of ground combat operations.",
+    "description": "Constructs and breaches obstacles, performs demolitions, and supports mobility operations in combat.",
     "category": "Engineering",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 95 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "usmc-1391",
+    "code": "1391",
+    "title": "Bulk Fuel Specialist",
+    "description": "Operates and maintains bulk fuel storage, transfer, and distribution systems to support MAGTF operations.",
+    "category": "Logistics",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 95
+      }
+    ]
   },
   {
     "id": "usmc-1721",
     "code": "1721",
-    "title": "Cyber Operations Specialist",
-    "description": "Conducts offensive and defensive cyber operations to protect Marine networks and exploit adversary systems.",
+    "title": "Cyberspace Warfare Operator",
+    "description": "Conducts defensive and offensive cyberspace operations to protect networks and exploit adversary systems.",
     "category": "Cyber",
-    "minAFQT": 50,
-    "requirements": [{ "composite": "EL", "minScore": 115 }, { "composite": "GT", "minScore": 110 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-1812",
+    "code": "1812",
+    "title": "Armor Marine",
+    "description": "Operates and maintains M1A1 Abrams main battle tanks in combined arms operations.",
+    "category": "Infantry",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      }
+    ]
   },
   {
     "id": "usmc-1833",
     "code": "1833",
-    "title": "AAV Crewman",
-    "description": "Operates and performs crew-level maintenance on Assault Amphibious Vehicles during ship-to-shore operations.",
-    "category": "Armor",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 95 }]
+    "title": "Assault Amphibious Vehicle Crewmember",
+    "description": "Operates the AAV-P7/A1 assault amphibious vehicle to transport Marines from ship to shore and inland.",
+    "category": "Infantry",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "usmc-1834",
+    "code": "1834",
+    "title": "Amphibious Combat Vehicle Crewmember",
+    "description": "Operates the Amphibious Combat Vehicle (ACV) to conduct ship-to-shore movement and land operations.",
+    "category": "Infantry",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      }
+    ]
   },
   {
     "id": "usmc-2111",
     "code": "2111",
-    "title": "Small Arms Repairer",
-    "description": "Inspects, services, and repairs all small arms and crew-served weapons in the Marine Corps inventory.",
+    "title": "Small Arms Repairer/Technician",
+    "description": "Inspects, maintains, and repairs rifles, pistols, machine guns, and other small arms.",
     "category": "Engineering",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 105 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "usmc-2131",
+    "code": "2131",
+    "title": "Towed Artillery Systems Technician",
+    "description": "Performs organizational and intermediate maintenance on towed artillery weapons systems.",
+    "category": "Artillery",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "usmc-2141",
+    "code": "2141",
+    "title": "Assault Amphibious Vehicle Repairer/Technician",
+    "description": "Performs maintenance and repair on AAV hull, turret, drive train, and weapons systems.",
+    "category": "Engineering",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-2146",
+    "code": "2146",
+    "title": "Main Battle Tank Repairer/Technician",
+    "description": "Performs organizational and intermediate maintenance on M1A1 main battle tanks.",
+    "category": "Engineering",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-2147",
+    "code": "2147",
+    "title": "Light Armored Vehicle Repairer/Technician",
+    "description": "Maintains and repairs the LAV-25 and associated variants at organizational and intermediate levels.",
+    "category": "Engineering",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-2161",
+    "code": "2161",
+    "title": "Machinist",
+    "description": "Operates machine tools to fabricate metal parts and components in support of maintenance operations.",
+    "category": "Engineering",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-2171",
+    "code": "2171",
+    "title": "Electro-Optical Ordnance Repairer",
+    "description": "Repairs and calibrates electro-optical fire control systems, laser rangefinders, and night vision devices.",
+    "category": "Engineering",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      },
+      {
+        "composite": "EL",
+        "minScore": 115
+      }
+    ]
   },
   {
     "id": "usmc-2311",
     "code": "2311",
     "title": "Ammunition Technician",
-    "description": "Receives, stores, issues, and maintains all classes of ammunition and explosives for Marine units.",
+    "description": "Receives, stores, issues, and disposes of conventional ammunition and explosive ordnance.",
     "category": "Logistics",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 95 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "usmc-2336",
+    "code": "2336",
+    "title": "Explosive Ordnance Disposal Technician",
+    "description": "Locates, identifies, renders safe, and disposes of unexploded ordnance, IEDs, and CBRN devices.",
+    "category": "Engineering",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
   },
   {
     "id": "usmc-2621",
     "code": "2621",
-    "title": "Special Communications Operator",
-    "description": "Operates and maintains specialized communications systems supporting sensitive intelligence operations.",
+    "title": "Special Communications Signals Collection Operator/Analyst",
+    "description": "Collects and analyzes signals intelligence from communications systems to support MAGTF operations.",
     "category": "Intelligence",
-    "minAFQT": 50,
-    "requirements": [{ "composite": "GT", "minScore": 110 }, { "composite": "EL", "minScore": 115 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
   },
   {
     "id": "usmc-2631",
     "code": "2631",
-    "title": "Electronic Intelligence Interceptor",
-    "description": "Collects and analyzes enemy electronic signals to produce actionable intelligence for Marine operations.",
+    "title": "Electronic Intelligence Analyst",
+    "description": "Collects and analyzes electronic intelligence from non-communications emitters to identify and track threats.",
     "category": "Intelligence",
-    "minAFQT": 50,
-    "requirements": [{ "composite": "GT", "minScore": 110 }, { "composite": "EL", "minScore": 115 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-2641",
+    "code": "2641",
+    "title": "Cryptologic Linguist Operator/Analyst",
+    "description": "Uses foreign language skills to collect, translate, and analyze signals intelligence supporting MAGTF commanders.",
+    "category": "Intelligence",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-2651",
+    "code": "2651",
+    "title": "Intelligence Surveillance Reconnaissance Systems Engineer",
+    "description": "Operates and maintains intelligence collection systems and architectures for ISR mission support.",
+    "category": "Intelligence",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      },
+      {
+        "composite": "EL",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-2671",
+    "code": "2671",
+    "title": "Middle East Cryptologic Linguist",
+    "description": "Applies Arabic or other Middle Eastern language skills to collect and analyze signals intelligence.",
+    "category": "Intelligence",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-2673",
+    "code": "2673",
+    "title": "Asia Pacific Cryptologic Linguist",
+    "description": "Applies Asian Pacific language skills to collect and analyze signals intelligence for MAGTF support.",
+    "category": "Intelligence",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-2674",
+    "code": "2674",
+    "title": "European Cryptologic Linguist",
+    "description": "Applies European language skills to collect and analyze signals intelligence supporting operations.",
+    "category": "Intelligence",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-2676",
+    "code": "2676",
+    "title": "Central Asian Cryptologic Linguist",
+    "description": "Applies Central Asian language skills to collect and analyze signals intelligence for MAGTF support.",
+    "category": "Intelligence",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-2831",
+    "code": "2831",
+    "title": "Digital Wideband Systems Maintainer",
+    "description": "Installs and repairs digital wideband multichannel radio and satellite communications systems.",
+    "category": "Communications",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 115
+      }
+    ]
   },
   {
     "id": "usmc-2841",
     "code": "2841",
-    "title": "Ground Radio Repairer",
-    "description": "Performs maintenance, troubleshooting, and repair on ground-based tactical radio communications equipment.",
+    "title": "Ground Electronics Transmission Systems Maintainer",
+    "description": "Maintains and repairs tactical radio and communications-electronics equipment at the organizational level.",
     "category": "Communications",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "EL", "minScore": 115 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 115
+      }
+    ]
+  },
+  {
+    "id": "usmc-2847",
+    "code": "2847",
+    "title": "Ground Electronics Telecommunications/IT Systems Maintainer",
+    "description": "Repairs telephone systems, personal computers, and tactical IT infrastructure.",
+    "category": "Communications",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 115
+      }
+    ]
+  },
+  {
+    "id": "usmc-2871",
+    "code": "2871",
+    "title": "Calibration Technician",
+    "description": "Tests, calibrates, and certifies precision measurement and test equipment used throughout the Marine Corps.",
+    "category": "Engineering",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 115
+      }
+    ]
+  },
+  {
+    "id": "usmc-2887",
+    "code": "2887",
+    "title": "Artillery Electronics Technician",
+    "description": "Maintains and repairs fire control electronics on howitzers and artillery rocket systems.",
+    "category": "Artillery",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 115
+      }
+    ]
   },
   {
     "id": "usmc-3043",
     "code": "3043",
-    "title": "Supply Administration",
-    "description": "Manages supply transactions, maintains property records, and coordinates logistics support for Marine units.",
-    "category": "Supply/Admin",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 100 }]
+    "title": "Supply Chain and Materiel Management Specialist",
+    "description": "Manages supply requisitions, inventory accountability, and logistics information systems.",
+    "category": "Logistics",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
   },
   {
-    "id": "usmc-3051",
-    "code": "3051",
-    "title": "Warehouse Clerk",
-    "description": "Receives, stores, inventories, and issues equipment and supplies to support Marine Corps logistical operations.",
-    "category": "Supply/Admin",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 90 }]
+    "id": "usmc-3112",
+    "code": "3112",
+    "title": "Distribution Management Specialist",
+    "description": "Plans and executes transportation and distribution operations for materiel and personnel.",
+    "category": "Logistics",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      }
+    ]
   },
   {
     "id": "usmc-3381",
     "code": "3381",
     "title": "Food Service Specialist",
-    "description": "Prepares and serves meals to Marines in garrison and field environments following nutritional standards.",
-    "category": "Supply/Admin",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 80 }]
+    "description": "Prepares, cooks, and serves food in garrison and field environments to support unit readiness.",
+    "category": "Logistics",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "usmc-3451",
+    "code": "3451",
+    "title": "Financial Management Resource Analyst",
+    "description": "Analyzes and manages financial resources, budget execution, and fiscal accounting for Marine Corps units.",
+    "category": "Finance",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-3521",
+    "code": "3521",
+    "title": "Automotive Maintenance Technician",
+    "description": "Maintains and repairs wheeled vehicles including HMMWVs, trucks, and light armored vehicles.",
+    "category": "Motor Transport",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 95
+      }
+    ]
   },
   {
     "id": "usmc-3531",
     "code": "3531",
     "title": "Motor Vehicle Operator",
-    "description": "Operates wheeled military vehicles to transport personnel, equipment, and supplies in support of operations.",
+    "description": "Operates military wheeled vehicles to transport personnel, equipment, and supplies.",
     "category": "Motor Transport",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "MM", "minScore": 85 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 85
+      }
+    ]
+  },
+  {
+    "id": "usmc-4531",
+    "code": "4531",
+    "title": "Combat Mass Communicator",
+    "description": "Plans and produces multimedia content including articles, photos, video, and social media to support public affairs.",
+    "category": "Administrative",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-4541",
+    "code": "4541",
+    "title": "Combat Photographer",
+    "description": "Documents Marine Corps operations and events through still photography for historical and public affairs use.",
+    "category": "Administrative",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-4571",
+    "code": "4571",
+    "title": "Combat Videographer",
+    "description": "Captures and edits video footage of Marine Corps operations and events for historical and public affairs purposes.",
+    "category": "Administrative",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-5711",
+    "code": "5711",
+    "title": "CBRN Defense Specialist",
+    "description": "Provides chemical, biological, radiological, and nuclear defense training and support to MAGTF units.",
+    "category": "Engineering",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
   },
   {
     "id": "usmc-5811",
     "code": "5811",
     "title": "Military Police",
-    "description": "Enforces laws and regulations, conducts investigations, and provides security on Marine Corps installations.",
+    "description": "Enforces laws and regulations, controls traffic, conducts law enforcement patrols, and maintains order.",
     "category": "Military Police",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 100 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "usmc-5821",
+    "code": "5821",
+    "title": "Criminal Investigator (CID) Agent",
+    "description": "Conducts felony criminal investigations involving Marine Corps personnel and assets.",
+    "category": "Military Police",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
   },
   {
     "id": "usmc-5831",
     "code": "5831",
     "title": "Correctional Specialist",
-    "description": "Manages Marine Corps correctional facilities and supervises inmates to ensure safety and order.",
+    "description": "Supervises military prisoners and manages brig facilities to maintain security and rehabilitation programs.",
     "category": "Military Police",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 100 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
   },
   {
-    "id": "usmc-6042",
-    "code": "6042",
-    "title": "Aircraft Maintenance Admin",
-    "description": "Manages aviation maintenance databases and information systems to track aircraft readiness and parts.",
+    "id": "usmc-5939",
+    "code": "5939",
+    "title": "Aviation Communication Systems Technician",
+    "description": "Maintains and repairs aviation communication, navigation, and radar systems at intermediate maintenance level.",
     "category": "Aviation",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 100 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 115
+      }
+    ]
+  },
+  {
+    "id": "usmc-5948",
+    "code": "5948",
+    "title": "Aviation Radar Technician",
+    "description": "Maintains and repairs airborne and ground radar systems supporting Marine Corps aviation.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 115
+      }
+    ]
+  },
+  {
+    "id": "usmc-5951",
+    "code": "5951",
+    "title": "Aviation Meteorological Equipment Technician",
+    "description": "Maintains weather observation and meteorological equipment supporting aviation operations.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-5952",
+    "code": "5952",
+    "title": "Air Traffic Control Navigational Aids Technician",
+    "description": "Maintains ILS, TACAN, VOR, and other navigation aids supporting air traffic control operations.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-5953",
+    "code": "5953",
+    "title": "Air Traffic Control Radar Technician",
+    "description": "Maintains approach control and airport surveillance radar systems at Marine Corps air installations.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-5954",
+    "code": "5954",
+    "title": "Air Traffic Control Communications Technician",
+    "description": "Maintains communications equipment and systems used by air traffic control facilities.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-5974",
+    "code": "5974",
+    "title": "Tactical Data Systems Technician",
+    "description": "Maintains and repairs tactical data link and command and control systems for aviation operations.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 115
+      }
+    ]
+  },
+  {
+    "id": "usmc-5979",
+    "code": "5979",
+    "title": "Tactical Air Operations/Air Defense Systems Technician",
+    "description": "Maintains tactical air operations center and air defense systems equipment supporting MAGTF aviation.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 115
+      }
+    ]
+  },
+  {
+    "id": "usmc-6046",
+    "code": "6046",
+    "title": "Aircraft Maintenance Data Specialist",
+    "description": "Manages aviation maintenance data systems and records for Marine Corps aircraft.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "usmc-6048",
+    "code": "6048",
+    "title": "Flight Equipment Technician",
+    "description": "Inspects, maintains, and repairs aircrew flight equipment including parachutes, survival gear, and helmets.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6062",
+    "code": "6062",
+    "title": "Aircraft Intermediate Level Hydraulic/Pneumatic Mechanic",
+    "description": "Repairs and overhauls hydraulic and pneumatic components for Marine Corps aircraft.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6073",
+    "code": "6073",
+    "title": "Support Equipment Electrician/Refrigeration and Engine Technician",
+    "description": "Maintains aircraft ground support equipment including generators, hydraulic test stands, and cooling units.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6074",
+    "code": "6074",
+    "title": "Cryogenics Equipment Operator",
+    "description": "Operates cryogenic liquid oxygen equipment to support aviation life support and propulsion systems.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6092",
+    "code": "6092",
+    "title": "Aircraft Intermediate Level Structures Mechanic",
+    "description": "Repairs aircraft structural components including sheet metal, composites, and transparent areas.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6112",
+    "code": "6112",
+    "title": "Helicopter Mechanic",
+    "description": "Performs organizational-level maintenance on helicopter airframes, systems, and components.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6113",
+    "code": "6113",
+    "title": "Helicopter Mechanic, CH-53",
+    "description": "Performs organizational maintenance on CH-53E/K Super Stallion heavy-lift helicopter systems.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6114",
+    "code": "6114",
+    "title": "Helicopter Mechanic, UH/AH-1",
+    "description": "Performs organizational maintenance on UH-1Y Venom and AH-1Z Viper helicopter airframes.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6116",
+    "code": "6116",
+    "title": "Tiltrotor Mechanic, MV-22",
+    "description": "Maintains MV-22 Osprey tiltrotor aircraft airframe, systems, and components.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6122",
+    "code": "6122",
+    "title": "Helicopter Power Plants Mechanic",
+    "description": "Maintains and repairs turbine engines and power plant systems on Marine Corps helicopters.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6132",
+    "code": "6132",
+    "title": "Helicopter/Tiltrotor Dynamic Components Mechanic",
+    "description": "Maintains rotor systems, transmissions, and drive systems on helicopters and tiltrotor aircraft.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6152",
+    "code": "6152",
+    "title": "Helicopter Airframe Mechanic",
+    "description": "Performs structural repairs and maintenance on helicopter airframes at organizational level.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6172",
+    "code": "6172",
+    "title": "Helicopter Crew Chief",
+    "description": "Serves as aircrewmember responsible for in-flight maintenance monitoring and cargo/troop operations.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6176",
+    "code": "6176",
+    "title": "Tiltrotor Crew Chief, MV-22",
+    "description": "Serves as aircrewmember on MV-22 Osprey responsible for aircraft systems monitoring and mission support.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6212",
+    "code": "6212",
+    "title": "Fixed-Wing Aircraft Mechanic, AV-8B",
+    "description": "Performs organizational maintenance on AV-8B Harrier II airframe, systems, and components.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6217",
+    "code": "6217",
+    "title": "Fixed-Wing Aircraft Mechanic, F/A-18",
+    "description": "Performs organizational maintenance on F/A-18 Hornet and Super Hornet aircraft systems.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6218",
+    "code": "6218",
+    "title": "Fixed-Wing Aircraft Mechanic, F-35B",
+    "description": "Performs organizational maintenance on F-35B Lightning II short takeoff/vertical landing aircraft.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6216",
+    "code": "6216",
+    "title": "Fixed-Wing Aircraft Mechanic, KC-130",
+    "description": "Performs organizational maintenance on KC-130J Hercules tanker/transport aircraft.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6222",
+    "code": "6222",
+    "title": "Fixed-Wing Aircraft Power Plants Mechanic",
+    "description": "Maintains and repairs jet and turboprop engines on Marine Corps fixed-wing aircraft.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6252",
+    "code": "6252",
+    "title": "Fixed-Wing Aircraft Airframe Mechanic",
+    "description": "Performs structural repair and maintenance on fixed-wing aircraft airframes at organizational level.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6276",
+    "code": "6276",
+    "title": "Fixed-Wing Aircraft Crew Chief, KC-130",
+    "description": "Serves as aircrewmember on KC-130J responsible for aircraft systems, cargo, and in-flight refueling operations.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      },
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-6282",
+    "code": "6282",
+    "title": "Fixed-Wing Aircraft Safety Equipment Mechanic",
+    "description": "Inspects and maintains ejection seats, escape systems, and aircrew safety equipment.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6313",
+    "code": "6313",
+    "title": "Aircraft Communications/Navigation/Radar Systems Technician",
+    "description": "Repairs and maintains avionics communication, navigation, and radar systems on Marine Corps aircraft.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6314",
+    "code": "6314",
+    "title": "Avionics/Maintenance Technician, Unmanned Aircraft Systems",
+    "description": "Maintains avionics and airframe systems on Marine Corps unmanned aircraft systems.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6322",
+    "code": "6322",
+    "title": "Aircraft Communications/Navigation/Electrical Systems Technician",
+    "description": "Maintains communications, navigation, and electrical avionics systems on Marine Corps aircraft.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6386",
+    "code": "6386",
+    "title": "Aircraft Electronic Countermeasures Systems Technician",
+    "description": "Maintains electronic warfare and countermeasures systems on EA-6B Prowler and successor aircraft.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6423",
+    "code": "6423",
+    "title": "Aviation Electronic Microminiature/Instrument and Cable Repair Technician",
+    "description": "Repairs microminiature circuit cards, instruments, and cables for Marine Corps aviation systems.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6432",
+    "code": "6432",
+    "title": "Aircraft Electrical/Instrument/Flight Control Systems Technician",
+    "description": "Maintains electrical, instrument, and flight control systems on Marine Corps aircraft at intermediate level.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6492",
+    "code": "6492",
+    "title": "Aviation Precision Measurement Equipment/Calibration and Repair Technician",
+    "description": "Tests and calibrates precision measurement equipment used in aviation maintenance operations.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-6531",
+    "code": "6531",
+    "title": "Aircraft Ordnance Technician",
+    "description": "Loads, maintains, and inspects aircraft weapons and ordnance systems on Marine Corps aircraft.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6541",
+    "code": "6541",
+    "title": "Aviation Ordnance Systems Technician",
+    "description": "Performs intermediate-level maintenance on aviation weapons, ordnance delivery, and release systems.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-6694",
+    "code": "6694",
+    "title": "Aviation Logistics Information Management and Support Specialist",
+    "description": "Manages aviation logistics information systems, parts data, and supply support for Marine Corps aviation.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      },
+      {
+        "composite": "EL",
+        "minScore": 115
+      }
+    ]
+  },
+  {
+    "id": "usmc-6842",
+    "code": "6842",
+    "title": "METOC Analyst Forecaster",
+    "description": "Collects meteorological and oceanographic data and produces weather forecasts supporting aviation and ground operations.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-7011",
+    "code": "7011",
+    "title": "Expeditionary Airfield Systems Technician",
+    "description": "Installs and operates expeditionary airfield equipment including AM-2 matting, lighting, and MOGAS systems.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 95
+      }
+    ]
   },
   {
     "id": "usmc-7041",
     "code": "7041",
     "title": "Aviation Operations Specialist",
-    "description": "Plans and coordinates flight operations, scheduling, and airfield management for Marine aviation units.",
+    "description": "Manages flight scheduling, aviation records, and operations support for Marine Corps aviation units.",
     "category": "Aviation",
-    "minAFQT": 31,
-    "requirements": [{ "composite": "GT", "minScore": 100 }]
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "usmc-7051",
+    "code": "7051",
+    "title": "Aircraft Rescue and Firefighting Specialist",
+    "description": "Responds to aircraft crashes and fires to rescue aircrew and suppress fires at Marine Corps air installations.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "id": "usmc-7212",
+    "code": "7212",
+    "title": "Low Altitude Air Defense Gunner",
+    "description": "Operates Stinger missile and other MANPADS systems to protect ground forces from low-altitude air threats.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "id": "usmc-7236",
+    "code": "7236",
+    "title": "Tactical Air Defense Controller",
+    "description": "Controls and coordinates air defense operations including identification and engagement of airborne threats.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "id": "usmc-7242",
+    "code": "7242",
+    "title": "Air Support Operations Operator",
+    "description": "Coordinates close air support and other aviation assets in direct support of ground combat operations.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "id": "usmc-7257",
+    "code": "7257",
+    "title": "Air Traffic Controller",
+    "description": "Provides air traffic control services including approach, departure, and tower control at Marine Corps airfields.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "id": "usmc-7314",
+    "code": "7314",
+    "title": "Unmanned Aerial Vehicle Operator",
+    "description": "Operates UAV systems including RQ-7 Shadow and MQ-9 to conduct reconnaissance and surveillance missions.",
+    "category": "Aviation",
+    "minAFQT": 32,
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
   }
 ]
