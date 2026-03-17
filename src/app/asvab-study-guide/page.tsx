@@ -109,7 +109,7 @@ export default function ASVABStudyGuidePage() {
                 name: "What happens if I score low on the ASVAB?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "If your AFQT score is below your target branch's minimum (31-36 depending on branch), you can't enlist with that branch. But you can retake the ASVAB after 1 month (first retest), then after another month, then after 6 months for subsequent retakes. A focused study plan between retakes can dramatically improve your scores.",
+                  text: "If your AFQT score is below your target branch's minimum (31–40 depending on branch), you can't enlist with that branch. But you can retake the ASVAB after 1 month (first retest), then after another month, then after 6 months for subsequent retakes. A focused study plan between retakes can dramatically improve your scores.",
                 },
               },
             ],
@@ -585,7 +585,7 @@ export default function ASVABStudyGuidePage() {
                   { branch: "Navy", min: 35 },
                   { branch: "Air Force", min: 36 },
                   { branch: "Space Force", min: 36 },
-                  { branch: "Coast Guard", min: 36 },
+                  { branch: "Coast Guard", min: 40 },
                 ].map((row) => (
                   <tr
                     key={row.branch}
