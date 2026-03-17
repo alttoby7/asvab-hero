@@ -61,6 +61,12 @@ export default function Nav() {
               AF Ranks
             </Link>
             <Link
+              href="/army-ranks"
+              className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline"
+            >
+              Army Ranks
+            </Link>
+            <Link
               href="/pricing"
               className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline"
             >
@@ -136,6 +142,13 @@ export default function Nav() {
                 className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline"
               >
                 AF Ranks
+              </Link>
+              <Link
+                href="/army-ranks"
+                onClick={() => setOpen(false)}
+                className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline"
+              >
+                Army Ranks
               </Link>
               <Link
                 href="/pricing"

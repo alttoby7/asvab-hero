@@ -75,6 +75,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/army-ranks"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Army Ranks
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/blog"
                   className="text-sm text-text-tertiary hover:text-text-primary no-underline"
                 >

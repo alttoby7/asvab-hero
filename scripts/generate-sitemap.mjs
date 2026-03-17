@@ -13,6 +13,7 @@ const pages = [
   { path: "/asvab-scores-explained", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-study-guide", priority: "0.8", changefreq: "monthly" },
   { path: "/air-force-ranks", priority: "0.9", changefreq: "monthly" },
+  { path: "/army-ranks", priority: "0.9", changefreq: "monthly" },
   { path: "/pricing", priority: "0.7", changefreq: "monthly" },
   { path: "/about", priority: "0.5", changefreq: "monthly" },
   { path: "/contact", priority: "0.4", changefreq: "monthly" },
