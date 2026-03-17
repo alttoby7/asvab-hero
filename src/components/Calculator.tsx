@@ -112,7 +112,9 @@ export default function Calculator({ allJobs }: CalculatorProps) {
         </div>
         <p className="mb-4 text-sm text-text-secondary">
           Enter your 9 ASVAB subtest standard scores (20–145). Results update
-          instantly.
+          instantly.{" "}
+          <span className="text-accent">Highlighted</span> subtests contribute
+          to your AFQT score.
         </p>
         <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {ALL_SUBTESTS.map((subtest) => (
@@ -121,6 +123,7 @@ export default function Calculator({ allJobs }: CalculatorProps) {
               subtest={subtest}
               value={scores[subtest]}
               onChange={handleScoreChange}
+              highlight={["AR", "WK", "PC", "MK"].includes(subtest)}
             />
           ))}
         </div>

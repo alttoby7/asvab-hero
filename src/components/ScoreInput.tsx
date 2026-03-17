@@ -7,15 +7,23 @@ interface ScoreInputProps {
   subtest: AsvabSubtest;
   value: number;
   onChange: (subtest: AsvabSubtest, value: number) => void;
+  highlight?: boolean;
 }
 
 export default function ScoreInput({
   subtest,
   value,
   onChange,
+  highlight,
 }: ScoreInputProps) {
   return (
-    <div className="flex items-center gap-3 rounded-lg bg-navy-light p-3">
+    <div
+      className={`flex items-center gap-3 rounded-lg p-3 ${
+        highlight
+          ? "bg-accent-dim border border-accent/30"
+          : "bg-navy-light"
+      }`}
+    >
       <div className="min-w-0 flex-1">
         <label
           htmlFor={`score-${subtest}`}
