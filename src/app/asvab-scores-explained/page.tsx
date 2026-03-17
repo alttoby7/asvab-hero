@@ -58,7 +58,7 @@ export default function ASVABScoresExplainedPage() {
               name: "Can you fail the ASVAB?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "There's no pass/fail. But scoring below your target branch's minimum AFQT (as low as 31 for Army/Navy, up to 36 for Air Force/Space Force) means you can't enlist with that branch. Scoring below 10 (Category V) disqualifies you from all branches.",
+                text: "There's no pass/fail. But scoring below your target branch's minimum AFQT (31 Army, 32 Marines, 35 Navy, 36 Air Force/Space Force, 40 Coast Guard) means you can't enlist with that branch. Scoring below 10 (Category V) disqualifies you from all branches.",
               },
             },
             {
@@ -193,7 +193,7 @@ export default function ASVABScoresExplainedPage() {
           Category IIIB still gets you through the door, but your options narrow. Category IV is restricted by federal law (10 U.S.C. 520) to no more than 4% of each branch&apos;s annual enlistments. Category V is a permanent disqualifier with no waiver process.
         </p>
         <p className="text-text-secondary">
-          <strong>GED holders face higher thresholds.</strong> Most branches require a minimum AFQT of 50 instead of 31-36. The Air Force and Space Force require 65. Earning 15+ college credits can reclassify you at the diploma tier.
+          <strong>GED holders face higher thresholds.</strong> Most branches require a minimum AFQT of 50 instead of 31–40. The Air Force and Space Force require 65. Earning 15+ college credits can reclassify you at the diploma tier.
         </p>
 
         <AFQTCategoryLadder />
@@ -311,10 +311,10 @@ export default function ASVABScoresExplainedPage() {
             </thead>
             <tbody className="text-text-secondary">
               <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-semibold text-text-primary">Army</td><td className="py-2 pr-4 font-mono">31</td><td className="py-2 font-mono">50</td></tr>
-              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-semibold text-text-primary">Navy</td><td className="py-2 pr-4 font-mono">31</td><td className="py-2 font-mono">50</td></tr>
+              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-semibold text-text-primary">Navy</td><td className="py-2 pr-4 font-mono">35</td><td className="py-2 font-mono">50</td></tr>
               <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-semibold text-text-primary">Marines</td><td className="py-2 pr-4 font-mono">32</td><td className="py-2 font-mono">50</td></tr>
               <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-semibold text-text-primary">Air Force</td><td className="py-2 pr-4 font-mono">36</td><td className="py-2 font-mono">65</td></tr>
-              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-semibold text-text-primary">Coast Guard</td><td className="py-2 pr-4 font-mono">36</td><td className="py-2 font-mono">50</td></tr>
+              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-semibold text-text-primary">Coast Guard</td><td className="py-2 pr-4 font-mono">40</td><td className="py-2 font-mono">50</td></tr>
               <tr><td className="py-2 pr-4 font-semibold text-text-primary">Space Force</td><td className="py-2 pr-4 font-mono">36</td><td className="py-2 font-mono">65</td></tr>
             </tbody>
           </table>
@@ -435,7 +435,7 @@ export default function ASVABScoresExplainedPage() {
             },
             {
               q: "Can you fail the ASVAB?",
-              a: "There's no pass/fail. But scoring below your target branch's minimum AFQT (as low as 31 for Army/Navy, up to 36 for Air Force/Space Force) means you can't enlist. Scoring below 10 (Category V) disqualifies you from all branches.",
+              a: "There's no pass/fail. But scoring below your target branch's minimum AFQT (31 Army, 32 Marines, 35 Navy, 36 Air Force/Space Force, 40 Coast Guard) means you can't enlist. Scoring below 10 (Category V) disqualifies you from all branches.",
             },
             {
               q: "What ASVAB score do I need for a specific job?",
