@@ -2,19 +2,51 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import JsonLd from "@/components/JsonLd";
+
+const siteTitle =
+  "ASVAB Hero — Free ASVAB Score Calculator & Military Job Finder";
+const siteDescription =
+  "Enter your ASVAB scores and instantly see every military job you qualify for across all 6 branches. Free calculator with 500+ jobs.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://asvabhero.com"),
   title: {
-    default: "ASVAB Hero — Free ASVAB Score Calculator & Military Job Finder",
+    default: siteTitle,
     template: "%s | ASVAB Hero",
   },
-  description:
-    "Enter your ASVAB scores and instantly see every military job you qualify for across all 6 branches. Free calculator with 500+ jobs.",
+  description: siteDescription,
+  keywords: [
+    "ASVAB calculator",
+    "ASVAB score calculator",
+    "AFQT score",
+    "military job finder",
+    "ASVAB practice test",
+    "ASVAB line scores",
+    "ASVAB composite scores",
+    "military entrance exam",
+    "ASVAB study guide",
+    "armed forces qualification test",
+  ],
+  alternates: {
+    canonical: "https://asvabhero.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    url: "https://asvabhero.com",
     siteName: "ASVAB Hero",
     type: "website",
     locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
   },
 };
 
@@ -38,6 +70,16 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body">
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "ASVAB Hero",
+            url: "https://asvabhero.com",
+            description:
+              "Free ASVAB score calculator and military job finder",
+          }}
+        />
         <Nav />
         <main className="relative z-1">{children}</main>
         <Footer />

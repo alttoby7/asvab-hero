@@ -35,6 +35,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/practice-test"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Practice Test
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/pricing"
                   className="text-sm text-text-tertiary hover:text-text-primary no-underline"
                 >

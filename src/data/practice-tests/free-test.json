@@ -1,0 +1,248 @@
+{
+  "id": "free-sample",
+  "name": "ASVAB Sample Practice Test",
+  "description": "30-question practice test covering all 9 ASVAB subtests",
+  "timeLimitMinutes": 36,
+  "questions": [
+    {
+      "id": "gs-1",
+      "subtest": "GS",
+      "question": "Which organ is primarily responsible for filtering waste products from the blood and producing urine?",
+      "options": ["Liver", "Kidney", "Pancreas", "Spleen"],
+      "correctIndex": 1,
+      "explanation": "The kidneys filter blood to remove waste products and excess water, which are excreted as urine. The liver processes nutrients and detoxifies chemicals but does not produce urine."
+    },
+    {
+      "id": "gs-2",
+      "subtest": "GS",
+      "question": "Water (H₂O) is best classified as which of the following?",
+      "options": ["An element", "A compound", "A mixture", "An isotope"],
+      "correctIndex": 1,
+      "explanation": "Water is a compound because it consists of two different elements — hydrogen and oxygen — chemically bonded in a fixed ratio. An element contains only one type of atom."
+    },
+    {
+      "id": "gs-3",
+      "subtest": "GS",
+      "question": "Which layer of Earth's atmosphere contains the ozone layer that absorbs most of the sun's ultraviolet radiation?",
+      "options": ["Troposphere", "Mesosphere", "Stratosphere", "Thermosphere"],
+      "correctIndex": 2,
+      "explanation": "The stratosphere, roughly 10–50 km above Earth's surface, contains the ozone layer. The troposphere is the lowest layer where most weather occurs."
+    },
+    {
+      "id": "ar-1",
+      "subtest": "AR",
+      "question": "A car travels at 55 miles per hour. How many miles will it travel in 3 hours and 30 minutes?",
+      "options": ["165 miles", "182.5 miles", "192.5 miles", "198 miles"],
+      "correctIndex": 2,
+      "explanation": "3 hours 30 minutes = 3.5 hours. Distance = 55 × 3.5 = 192.5 miles."
+    },
+    {
+      "id": "ar-2",
+      "subtest": "AR",
+      "question": "A store marks up an item by 40% from its wholesale cost of $35. What is the retail selling price?",
+      "options": ["$14.00", "$45.50", "$49.00", "$52.50"],
+      "correctIndex": 2,
+      "explanation": "Markup = 40% × $35 = $14. Retail price = $35 + $14 = $49.00."
+    },
+    {
+      "id": "ar-3",
+      "subtest": "AR",
+      "question": "A recipe calls for flour and sugar in a ratio of 5:2. If you use 20 cups of flour, how many cups of sugar are needed?",
+      "options": ["4 cups", "6 cups", "8 cups", "10 cups"],
+      "correctIndex": 2,
+      "explanation": "With a 5:2 ratio, sugar = (2/5) × 20 = 8 cups."
+    },
+    {
+      "id": "ar-4",
+      "subtest": "AR",
+      "question": "A soldier earns $2,400 per month and saves 15% of that amount. After 6 months, how much has the soldier saved?",
+      "options": ["$1,440", "$2,160", "$2,400", "$3,600"],
+      "correctIndex": 1,
+      "explanation": "Monthly savings = 15% × $2,400 = $360. Over 6 months: $360 × 6 = $2,160."
+    },
+    {
+      "id": "wk-1",
+      "subtest": "WK",
+      "question": "ARID most nearly means:",
+      "options": ["Damp", "Stormy", "Dry", "Fertile"],
+      "correctIndex": 2,
+      "explanation": "Arid means extremely dry, with little or no rain. It is commonly used to describe deserts or climates with very low precipitation."
+    },
+    {
+      "id": "wk-2",
+      "subtest": "WK",
+      "question": "PRUDENT most nearly means:",
+      "options": ["Reckless", "Cautious", "Generous", "Stubborn"],
+      "correctIndex": 1,
+      "explanation": "Prudent means acting with care and good judgment to avoid risk. It is the opposite of reckless."
+    },
+    {
+      "id": "wk-3",
+      "subtest": "WK",
+      "question": "CONCISE most nearly means:",
+      "options": ["Wordy", "Unclear", "Brief", "Detailed"],
+      "correctIndex": 2,
+      "explanation": "Concise means expressing information clearly in few words. It contrasts with wordy or verbose communication."
+    },
+    {
+      "id": "wk-4",
+      "subtest": "WK",
+      "question": "OMINOUS most nearly means:",
+      "options": ["Cheerful", "Threatening", "Ordinary", "Surprising"],
+      "correctIndex": 1,
+      "explanation": "Ominous means giving the impression that something bad or unpleasant is going to happen; it is synonymous with threatening or foreboding."
+    },
+    {
+      "id": "pc-1",
+      "subtest": "PC",
+      "question": "Read the following passage and answer the question.\n\n\"Solar panels convert sunlight directly into electricity using photovoltaic cells. Unlike fossil fuels, solar energy produces no emissions during operation, making it one of the cleanest energy sources available.\"\n\nWhat is the main idea of this passage?",
+      "options": ["Fossil fuels are harmful to the environment.", "Solar panels require no maintenance.", "Solar energy is a clean electricity source that uses photovoltaic cells.", "Photovoltaic cells are expensive to manufacture."],
+      "correctIndex": 2,
+      "explanation": "The passage introduces how solar panels work and emphasizes that solar energy is clean and emission-free — that combination is the central point."
+    },
+    {
+      "id": "pc-2",
+      "subtest": "PC",
+      "question": "Read the following passage and answer the question.\n\n\"The base commander issued new physical fitness standards requiring all personnel to complete a 2-mile run in under 18 minutes. Soldiers who fail to meet the standard will be enrolled in a remedial training program.\"\n\nWhat can be inferred about soldiers who complete the run in exactly 18 minutes?",
+      "options": ["They will receive an award.", "They will be enrolled in remedial training.", "They have exceeded the standard.", "They will be exempt from future tests."],
+      "correctIndex": 1,
+      "explanation": "The standard requires completing the run in under 18 minutes. Exactly 18 minutes does not meet the 'under 18' requirement, so those soldiers would be enrolled in remedial training."
+    },
+    {
+      "id": "pc-3",
+      "subtest": "PC",
+      "question": "Read the following passage and answer the question.\n\n\"Dehydration impairs both physical and cognitive performance. Even a 2% loss of body water can reduce a person's ability to concentrate and make decisions. Military personnel operating in hot climates must monitor fluid intake closely.\"\n\nAccording to the passage, what effect does mild dehydration have?",
+      "options": ["It causes permanent cognitive damage.", "It has no effect below 5% fluid loss.", "It reduces the ability to concentrate and make decisions.", "It only affects physical performance, not mental performance."],
+      "correctIndex": 2,
+      "explanation": "The passage explicitly states that a 2% loss of body water can reduce concentration and decision-making ability, affecting both physical and cognitive performance."
+    },
+    {
+      "id": "mk-1",
+      "subtest": "MK",
+      "question": "A rectangular room measures 14 feet long and 9 feet wide. What is the area of the room?",
+      "options": ["46 square feet", "92 square feet", "126 square feet", "132 square feet"],
+      "correctIndex": 2,
+      "explanation": "Area of a rectangle = length × width = 14 × 9 = 126 square feet."
+    },
+    {
+      "id": "mk-2",
+      "subtest": "MK",
+      "question": "Solve for x: 3x − 7 = 14",
+      "options": ["x = 3", "x = 5", "x = 7", "x = 9"],
+      "correctIndex": 2,
+      "explanation": "Add 7 to both sides: 3x = 21. Divide by 3: x = 7."
+    },
+    {
+      "id": "mk-3",
+      "subtest": "MK",
+      "question": "What is the value of 2⁵?",
+      "options": ["10", "16", "25", "32"],
+      "correctIndex": 3,
+      "explanation": "2⁵ = 2 × 2 × 2 × 2 × 2 = 32."
+    },
+    {
+      "id": "mk-4",
+      "subtest": "MK",
+      "question": "What is ³⁄₄ divided by ³⁄₈?",
+      "options": ["½", "1", "2", "9⁄32"],
+      "correctIndex": 2,
+      "explanation": "Dividing by a fraction means multiplying by its reciprocal: ³⁄₄ × ⁸⁄₃ = 24⁄12 = 2."
+    },
+    {
+      "id": "ei-1",
+      "subtest": "EI",
+      "question": "A circuit has a voltage of 12 volts and a resistance of 4 ohms. According to Ohm's Law, what is the current flowing through the circuit?",
+      "options": ["0.33 amperes", "3 amperes", "8 amperes", "48 amperes"],
+      "correctIndex": 1,
+      "explanation": "Ohm's Law: I = V ÷ R = 12 ÷ 4 = 3 amperes."
+    },
+    {
+      "id": "ei-2",
+      "subtest": "EI",
+      "question": "In a series circuit with three light bulbs, one bulb burns out. What happens to the other two bulbs?",
+      "options": ["They burn brighter.", "They continue operating normally.", "They also go out.", "They flicker but stay on."],
+      "correctIndex": 2,
+      "explanation": "In a series circuit, all components share a single path for current. If one bulb fails (opens the circuit), current cannot flow and all other bulbs go out."
+    },
+    {
+      "id": "ei-3",
+      "subtest": "EI",
+      "question": "What unit is used to measure electrical resistance?",
+      "options": ["Volt", "Ampere", "Watt", "Ohm"],
+      "correctIndex": 3,
+      "explanation": "Resistance is measured in ohms (Ω). Volts measure voltage, amperes measure current, and watts measure power."
+    },
+    {
+      "id": "as-1",
+      "subtest": "AS",
+      "question": "Which tool is best suited for tightening a bolt that is in a recessed or hard-to-reach location?",
+      "options": ["Open-end wrench", "Socket wrench with extension", "Adjustable pliers", "Torque screwdriver"],
+      "correctIndex": 1,
+      "explanation": "A socket wrench with an extension bar allows a technician to reach fasteners in deep or confined spaces where an open-end wrench cannot fit."
+    },
+    {
+      "id": "as-2",
+      "subtest": "AS",
+      "question": "What is the primary function of a vehicle's radiator?",
+      "options": ["Filter engine oil", "Regulate fuel mixture", "Dissipate heat from the engine coolant", "Reduce exhaust emissions"],
+      "correctIndex": 2,
+      "explanation": "The radiator removes heat from the engine coolant by passing it through thin fins where air flow carries the heat away, preventing engine overheating."
+    },
+    {
+      "id": "as-3",
+      "subtest": "AS",
+      "question": "Before operating a power saw in a shop, you should FIRST:",
+      "options": ["Test the blade on scrap wood", "Put on appropriate eye protection", "Plug in the saw and let it warm up", "Check the sharpness of the blade by touch"],
+      "correctIndex": 1,
+      "explanation": "Personal protective equipment — especially eye protection — must be donned before any shop operation begins. Blade fragments and sawdust present immediate eye hazards."
+    },
+    {
+      "id": "mc-1",
+      "subtest": "MC",
+      "question": "A 10-pound weight is placed 6 feet from the fulcrum of a lever. To balance it, how far from the fulcrum must a 15-pound weight be placed on the opposite side?",
+      "options": ["2 feet", "4 feet", "6 feet", "9 feet"],
+      "correctIndex": 1,
+      "explanation": "Lever balance: W₁ × D₁ = W₂ × D₂ → 10 × 6 = 15 × D₂ → D₂ = 60 ÷ 15 = 4 feet."
+    },
+    {
+      "id": "mc-2",
+      "subtest": "MC",
+      "question": "If a small gear with 10 teeth meshes with a large gear with 40 teeth, and the small gear rotates at 200 RPM, how fast does the large gear rotate?",
+      "options": ["25 RPM", "50 RPM", "100 RPM", "800 RPM"],
+      "correctIndex": 1,
+      "explanation": "Gear ratio = 10/40 = 1/4. Large gear RPM = 200 × (10/40) = 200 × 0.25 = 50 RPM."
+    },
+    {
+      "id": "mc-3",
+      "subtest": "MC",
+      "question": "A 200-pound crate is resting on a flat surface. If you push it horizontally with a force of 50 pounds and it does not move, what is the force of friction acting on the crate?",
+      "options": ["0 pounds", "50 pounds", "150 pounds", "200 pounds"],
+      "correctIndex": 1,
+      "explanation": "Since the crate is stationary (not accelerating), the net force is zero. Static friction exactly opposes the applied force, so friction = 50 pounds."
+    },
+    {
+      "id": "ao-1",
+      "subtest": "AO",
+      "question": "A flat piece of material is cut into four identical right triangles, each with legs of equal length. If all four triangles are arranged so their right-angle corners meet at a center point, what shape do they form?",
+      "options": ["A circle", "A rectangle", "A square", "A hexagon"],
+      "correctIndex": 2,
+      "explanation": "Four identical isosceles right triangles placed with their right angles at a common center and hypotenuses facing outward form a perfect square."
+    },
+    {
+      "id": "ao-2",
+      "subtest": "AO",
+      "question": "A rectangular piece of paper is folded in half along its longest axis, then folded in half again along the same axis. When unfolded, how many equal sections does the paper have?",
+      "options": ["2", "3", "4", "6"],
+      "correctIndex": 2,
+      "explanation": "Each fold doubles the number of sections. One fold → 2 sections; two folds → 4 equal sections."
+    },
+    {
+      "id": "ao-3",
+      "subtest": "AO",
+      "question": "A cube is painted red on all six faces and then cut into 27 equal smaller cubes (a 3×3×3 grid). How many of the small cubes have paint on exactly two faces?",
+      "options": ["6", "8", "12", "24"],
+      "correctIndex": 2,
+      "explanation": "Cubes with paint on exactly two faces sit along the edges (not corners) of the larger cube. A 3×3×3 cube has 12 edges, each contributing 1 such cube, giving 12 total."
+    }
+  ]
+}

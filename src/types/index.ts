@@ -77,3 +77,36 @@ export const BRANCH_NAMES: Record<Branch, string> = {
   coast_guard: "Coast Guard",
   space_force: "Space Force",
 };
+
+// Practice Test Types
+
+export interface PracticeQuestion {
+  id: string;
+  subtest: AsvabSubtest;
+  question: string;
+  options: [string, string, string, string];
+  correctIndex: number;
+  explanation: string;
+}
+
+export interface PracticeTest {
+  id: string;
+  name: string;
+  description: string;
+  questions: PracticeQuestion[];
+  timeLimitMinutes: number;
+}
+
+export type TestPhase = "intro" | "testing" | "review" | "results";
+
+export interface UserAnswer {
+  questionId: string;
+  selectedIndex: number | null;
+}
+
+export interface SubtestResult {
+  subtest: AsvabSubtest;
+  correct: number;
+  total: number;
+  percentage: number;
+}

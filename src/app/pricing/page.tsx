@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Pricing",
   description:
     "ASVAB Hero pricing — free calculator for everyone, Pro subscription for unlimited practice tests and study tools.",
+  alternates: {
+    canonical: "https://asvabhero.com/pricing",
+  },
 };
 
 export default function PricingPage() {
