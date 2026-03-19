@@ -163,45 +163,45 @@ export default function ASVABWordKnowledgeTipsPage() {
           which jobs you qualify for.
         </p>
 
-        <div className="overflow-x-auto">
-          <table>
-            <thead className="bg-navy-lighter/50">
-              <tr>
-                <th>Composite</th>
-                <th>Formula</th>
-                <th>Why It Matters</th>
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Composite</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Formula</th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">Why It Matters</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Army GT</td>
-                <td>VE + AR</td>
-                <td>110+ required for cyber, intel, medical jobs</td>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">Army GT</td>
+                <td className="py-2 pr-4 font-mono">VE + AR</td>
+                <td className="py-2">110+ required for cyber, intel, medical jobs</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">Air Force General</td>
+                <td className="py-2 pr-4 font-mono">VE + AR</td>
+                <td className="py-2">Feeds most AFSC assignments</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">Marine Corps GT</td>
+                <td className="py-2 pr-4 font-mono">VE + AR</td>
+                <td className="py-2">Gateway to technical MOS</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">Army CL</td>
+                <td className="py-2 pr-4 font-mono">VE + AR + MK</td>
+                <td className="py-2">Clerical and admin roles</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">Army ST</td>
+                <td className="py-2 pr-4 font-mono">VE + GS + MK</td>
+                <td className="py-2">Science and technical fields</td>
               </tr>
               <tr>
-                <td>Air Force General</td>
-                <td>VE + AR</td>
-                <td>Feeds most AFSC assignments</td>
-              </tr>
-              <tr>
-                <td>Marine Corps GT</td>
-                <td>VE + AR</td>
-                <td>Gateway to technical MOS</td>
-              </tr>
-              <tr>
-                <td>Army CL</td>
-                <td>VE + AR + MK</td>
-                <td>Clerical and admin roles</td>
-              </tr>
-              <tr>
-                <td>Army ST</td>
-                <td>VE + GS + MK</td>
-                <td>Science and technical fields</td>
-              </tr>
-              <tr>
-                <td>Army FA</td>
-                <td>VE + AR + MK + MC</td>
-                <td>Field artillery positions</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">Army FA</td>
+                <td className="py-2 pr-4 font-mono">VE + AR + MK + MC</td>
+                <td className="py-2">Field artillery positions</td>
               </tr>
             </tbody>
           </table>
@@ -230,45 +230,45 @@ export default function ASVABWordKnowledgeTipsPage() {
           skills. Treating them the same wastes your prep time.
         </p>
 
-        <div className="overflow-x-auto">
-          <table>
-            <thead className="bg-navy-lighter/50">
-              <tr>
-                <th></th>
-                <th>Word Knowledge (WK)</th>
-                <th>Paragraph Comprehension (PC)</th>
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary"></th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Word Knowledge (WK)</th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">Paragraph Comprehension (PC)</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>CAT Questions</td>
-                <td>16</td>
-                <td>11</td>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">CAT Questions</td>
+                <td className="py-2 pr-4">16</td>
+                <td className="py-2">11</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">CAT Time</td>
+                <td className="py-2 pr-4">8 min (~30 sec/q)</td>
+                <td className="py-2">22 min (~2 min/q)</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">Paper Questions</td>
+                <td className="py-2 pr-4">35</td>
+                <td className="py-2">15</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">Paper Time</td>
+                <td className="py-2 pr-4">11 min (~19 sec/q)</td>
+                <td className="py-2">13 min (~52 sec/q)</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">Format</td>
+                <td className="py-2 pr-4">Single word + 4 answer choices</td>
+                <td className="py-2">Short passage + question</td>
               </tr>
               <tr>
-                <td>CAT Time</td>
-                <td>8 min (~30 sec/q)</td>
-                <td>22 min (~2 min/q)</td>
-              </tr>
-              <tr>
-                <td>Paper Questions</td>
-                <td>35</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>Paper Time</td>
-                <td>11 min (~19 sec/q)</td>
-                <td>13 min (~52 sec/q)</td>
-              </tr>
-              <tr>
-                <td>Format</td>
-                <td>Single word + 4 answer choices</td>
-                <td>Short passage + question</td>
-              </tr>
-              <tr>
-                <td>Skill Tested</td>
-                <td>Vocabulary breadth</td>
-                <td>Reading comprehension</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">Skill Tested</td>
+                <td className="py-2 pr-4">Vocabulary breadth</td>
+                <td className="py-2">Reading comprehension</td>
               </tr>
             </tbody>
           </table>
@@ -317,149 +317,149 @@ export default function ASVABWordKnowledgeTipsPage() {
           breakdown instead of a blind guess.
         </p>
 
-        <div className="overflow-x-auto">
-          <table>
-            <thead className="bg-navy-lighter/50">
-              <tr>
-                <th>Root</th>
-                <th>Meaning</th>
-                <th>Example Words</th>
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Root</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Meaning</th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">Example Words</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>dict</td>
-                <td>say, speak</td>
-                <td>dictate, predict, verdict</td>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">dict</td>
+                <td className="py-2 pr-4">say, speak</td>
+                <td className="py-2">dictate, predict, verdict</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">port</td>
+                <td className="py-2 pr-4">carry</td>
+                <td className="py-2">transport, portable, export</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">scrib/script</td>
+                <td className="py-2 pr-4">write</td>
+                <td className="py-2">describe, manuscript, inscription</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">bene</td>
+                <td className="py-2 pr-4">good, well</td>
+                <td className="py-2">benefit, benevolent, benefactor</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">mal</td>
+                <td className="py-2 pr-4">bad</td>
+                <td className="py-2">malfunction, malicious, malcontent</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">tract</td>
+                <td className="py-2 pr-4">pull, drag</td>
+                <td className="py-2">extract, retract, traction</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">voc/vok</td>
+                <td className="py-2 pr-4">call, voice</td>
+                <td className="py-2">vocal, invoke, revoke</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">mit/miss</td>
+                <td className="py-2 pr-4">send</td>
+                <td className="py-2">transmit, missile, dismiss</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">man/manu</td>
+                <td className="py-2 pr-4">hand</td>
+                <td className="py-2">manual, manufacture, manipulate</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">cap/cept</td>
+                <td className="py-2 pr-4">take, seize</td>
+                <td className="py-2">capture, accept, intercept</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">duc/duct</td>
+                <td className="py-2 pr-4">lead</td>
+                <td className="py-2">conduct, deduce, induct</td>
               </tr>
               <tr>
-                <td>port</td>
-                <td>carry</td>
-                <td>transport, portable, export</td>
-              </tr>
-              <tr>
-                <td>scrib/script</td>
-                <td>write</td>
-                <td>describe, manuscript, inscription</td>
-              </tr>
-              <tr>
-                <td>bene</td>
-                <td>good, well</td>
-                <td>benefit, benevolent, benefactor</td>
-              </tr>
-              <tr>
-                <td>mal</td>
-                <td>bad</td>
-                <td>malfunction, malicious, malcontent</td>
-              </tr>
-              <tr>
-                <td>tract</td>
-                <td>pull, drag</td>
-                <td>extract, retract, traction</td>
-              </tr>
-              <tr>
-                <td>voc/vok</td>
-                <td>call, voice</td>
-                <td>vocal, invoke, revoke</td>
-              </tr>
-              <tr>
-                <td>mit/miss</td>
-                <td>send</td>
-                <td>transmit, missile, dismiss</td>
-              </tr>
-              <tr>
-                <td>man/manu</td>
-                <td>hand</td>
-                <td>manual, manufacture, manipulate</td>
-              </tr>
-              <tr>
-                <td>cap/cept</td>
-                <td>take, seize</td>
-                <td>capture, accept, intercept</td>
-              </tr>
-              <tr>
-                <td>duc/duct</td>
-                <td>lead</td>
-                <td>conduct, deduce, induct</td>
-              </tr>
-              <tr>
-                <td>fac/fic</td>
-                <td>make, do</td>
-                <td>factory, efficient, artificial</td>
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">fac/fic</td>
+                <td className="py-2 pr-4">make, do</td>
+                <td className="py-2">factory, efficient, artificial</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div className="overflow-x-auto">
-          <table>
-            <thead className="bg-navy-lighter/50">
-              <tr>
-                <th>Root</th>
-                <th>Meaning</th>
-                <th>Example Words</th>
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Root</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Meaning</th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">Example Words</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>cogn</td>
-                <td>know</td>
-                <td>recognize, cognition, incognito</td>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">cogn</td>
+                <td className="py-2 pr-4">know</td>
+                <td className="py-2">recognize, cognition, incognito</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">path</td>
+                <td className="py-2 pr-4">feeling</td>
+                <td className="py-2">sympathy, apathy, empathetic</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">aud</td>
+                <td className="py-2 pr-4">hear</td>
+                <td className="py-2">audible, audience, auditorium</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">vis/vid</td>
+                <td className="py-2 pr-4">see</td>
+                <td className="py-2">visible, evidence, visual</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">spec</td>
+                <td className="py-2 pr-4">look</td>
+                <td className="py-2">inspect, spectacle, perspective</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">ped</td>
+                <td className="py-2 pr-4">foot</td>
+                <td className="py-2">pedestrian, pedal, expedition</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">terr</td>
+                <td className="py-2 pr-4">earth</td>
+                <td className="py-2">terrain, territory, terrestrial</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">aqua</td>
+                <td className="py-2 pr-4">water</td>
+                <td className="py-2">aquatic, aquarium, aqueduct</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">bio</td>
+                <td className="py-2 pr-4">life</td>
+                <td className="py-2">biology, biography, antibiotic</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">graph/gram</td>
+                <td className="py-2 pr-4">write, record</td>
+                <td className="py-2">paragraph, telegram, graphic</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">temp</td>
+                <td className="py-2 pr-4">time</td>
+                <td className="py-2">temporary, contemporary, tempo</td>
               </tr>
               <tr>
-                <td>path</td>
-                <td>feeling</td>
-                <td>sympathy, apathy, empathetic</td>
-              </tr>
-              <tr>
-                <td>aud</td>
-                <td>hear</td>
-                <td>audible, audience, auditorium</td>
-              </tr>
-              <tr>
-                <td>vis/vid</td>
-                <td>see</td>
-                <td>visible, evidence, visual</td>
-              </tr>
-              <tr>
-                <td>spec</td>
-                <td>look</td>
-                <td>inspect, spectacle, perspective</td>
-              </tr>
-              <tr>
-                <td>ped</td>
-                <td>foot</td>
-                <td>pedestrian, pedal, expedition</td>
-              </tr>
-              <tr>
-                <td>terr</td>
-                <td>earth</td>
-                <td>terrain, territory, terrestrial</td>
-              </tr>
-              <tr>
-                <td>aqua</td>
-                <td>water</td>
-                <td>aquatic, aquarium, aqueduct</td>
-              </tr>
-              <tr>
-                <td>bio</td>
-                <td>life</td>
-                <td>biology, biography, antibiotic</td>
-              </tr>
-              <tr>
-                <td>graph/gram</td>
-                <td>write, record</td>
-                <td>paragraph, telegram, graphic</td>
-              </tr>
-              <tr>
-                <td>temp</td>
-                <td>time</td>
-                <td>temporary, contemporary, tempo</td>
-              </tr>
-              <tr>
-                <td>struct</td>
-                <td>build</td>
-                <td>construct, structure, destruct</td>
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">struct</td>
+                <td className="py-2 pr-4">build</td>
+                <td className="py-2">construct, structure, destruct</td>
               </tr>
             </tbody>
           </table>
@@ -492,55 +492,55 @@ export default function ASVABWordKnowledgeTipsPage() {
           eliminate wrong answers.
         </p>
 
-        <div className="overflow-x-auto">
-          <table>
-            <thead className="bg-navy-lighter/50">
-              <tr>
-                <th>Prefix</th>
-                <th>Meaning</th>
-                <th>Example</th>
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Prefix</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Meaning</th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">Example</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>un-, in-, im-, ir-, il-</td>
-                <td>not</td>
-                <td>unable, incomplete, impossible</td>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">un-, in-, im-, ir-, il-</td>
+                <td className="py-2 pr-4">not</td>
+                <td className="py-2">unable, incomplete, impossible</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">pre-</td>
+                <td className="py-2 pr-4">before</td>
+                <td className="py-2">predict, prevent, premature</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">re-</td>
+                <td className="py-2 pr-4">again</td>
+                <td className="py-2">rebuild, revisit, reconsider</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">mis-</td>
+                <td className="py-2 pr-4">wrong, bad</td>
+                <td className="py-2">mislead, misunderstand, misjudge</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">dis-</td>
+                <td className="py-2 pr-4">opposite, apart</td>
+                <td className="py-2">disagree, disconnect, displace</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">sub-</td>
+                <td className="py-2 pr-4">under, below</td>
+                <td className="py-2">submarine, substandard, subtitle</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">trans-</td>
+                <td className="py-2 pr-4">across</td>
+                <td className="py-2">transfer, translate, transform</td>
               </tr>
               <tr>
-                <td>pre-</td>
-                <td>before</td>
-                <td>predict, prevent, premature</td>
-              </tr>
-              <tr>
-                <td>re-</td>
-                <td>again</td>
-                <td>rebuild, revisit, reconsider</td>
-              </tr>
-              <tr>
-                <td>mis-</td>
-                <td>wrong, bad</td>
-                <td>mislead, misunderstand, misjudge</td>
-              </tr>
-              <tr>
-                <td>dis-</td>
-                <td>opposite, apart</td>
-                <td>disagree, disconnect, displace</td>
-              </tr>
-              <tr>
-                <td>sub-</td>
-                <td>under, below</td>
-                <td>submarine, substandard, subtitle</td>
-              </tr>
-              <tr>
-                <td>trans-</td>
-                <td>across</td>
-                <td>transfer, translate, transform</td>
-              </tr>
-              <tr>
-                <td>anti-</td>
-                <td>against</td>
-                <td>antibody, antisocial, antidote</td>
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">anti-</td>
+                <td className="py-2 pr-4">against</td>
+                <td className="py-2">antibody, antisocial, antidote</td>
               </tr>
             </tbody>
           </table>
@@ -716,53 +716,53 @@ export default function ASVABWordKnowledgeTipsPage() {
           them turns guesswork into a system.
         </p>
 
-        <div className="overflow-x-auto">
-          <table>
-            <thead className="bg-navy-lighter/50">
-              <tr>
-                <th>Clue Type</th>
-                <th>How It Works</th>
-                <th>Signal Words</th>
-                <th>Example</th>
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Clue Type</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">How It Works</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Signal Words</th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">Example</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>Definition</td>
-                <td>Passage directly defines the word</td>
-                <td>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">Definition</td>
+                <td className="py-2 pr-4">Passage directly defines the word</td>
+                <td className="py-2 pr-4">
                   &ldquo;which means,&rdquo; &ldquo;is defined as,&rdquo;
                   &ldquo;refers to&rdquo;
                 </td>
-                <td>
+                <td className="py-2">
                   &ldquo;Osmosis, which is the movement of water...&rdquo;
                 </td>
               </tr>
-              <tr>
-                <td>Example</td>
-                <td>Passage gives examples that reveal meaning</td>
-                <td>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">Example</td>
+                <td className="py-2 pr-4">Passage gives examples that reveal meaning</td>
+                <td className="py-2 pr-4">
                   &ldquo;such as,&rdquo; &ldquo;for example,&rdquo;
                   &ldquo;including&rdquo;
                 </td>
-                <td>
+                <td className="py-2">
                   &ldquo;Nocturnal animals, such as owls and bats...&rdquo;
                 </td>
               </tr>
-              <tr>
-                <td>Substitution</td>
-                <td>Replace the word with each answer choice</td>
-                <td>(none, you test each option)</td>
-                <td>Plug each choice in and see which fits</td>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">Substitution</td>
+                <td className="py-2 pr-4">Replace the word with each answer choice</td>
+                <td className="py-2 pr-4">(none, you test each option)</td>
+                <td className="py-2">Plug each choice in and see which fits</td>
               </tr>
               <tr>
-                <td>Logic</td>
-                <td>Surrounding sentences reveal meaning through contrast</td>
-                <td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">Logic</td>
+                <td className="py-2 pr-4">Surrounding sentences reveal meaning through contrast</td>
+                <td className="py-2 pr-4">
                   &ldquo;but,&rdquo; &ldquo;however,&rdquo;
                   &ldquo;although,&rdquo; &ldquo;unlike&rdquo;
                 </td>
-                <td>
+                <td className="py-2">
                   &ldquo;Unlike the gregarious mayor, the treasurer was
                   shy...&rdquo;
                 </td>
@@ -1009,60 +1009,60 @@ export default function ASVABWordKnowledgeTipsPage() {
           and 50% of participants moved up at least one AFQT category.
         </p>
 
-        <div className="overflow-x-auto">
-          <table>
-            <thead className="bg-navy-lighter/50">
-              <tr>
-                <th>Week</th>
-                <th>WK Focus (20 min)</th>
-                <th>PC Focus (15 min)</th>
-                <th>Daily Total</th>
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Week</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">WK Focus (20 min)</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">PC Focus (15 min)</th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">Daily Total</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">1</td>
+                <td className="py-2 pr-4">
                   Learn 12 Latin roots (Table 1 from Tip 3) + prefix/suffix
                   drill
                 </td>
-                <td>
+                <td className="py-2 pr-4">
                   Read 1 news article, practice &ldquo;question first&rdquo;
                   method
                 </td>
-                <td>35 min</td>
+                <td className="py-2 font-mono">35 min</td>
               </tr>
-              <tr>
-                <td>2</td>
-                <td>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">2</td>
+                <td className="py-2 pr-4">
                   Learn 12 Greek roots (Table 2) + begin flashcard deck
                 </td>
-                <td>
+                <td className="py-2 pr-4">
                   Read 1 article + answer 3 PC practice questions
                 </td>
-                <td>35 min</td>
+                <td className="py-2 font-mono">35 min</td>
               </tr>
-              <tr>
-                <td>3</td>
-                <td>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">3</td>
+                <td className="py-2 pr-4">
                   Flashcard review (spaced repetition) + practice test WK
                   sections
                 </td>
-                <td>
+                <td className="py-2 pr-4">
                   Timed PC practice (2 min per question) + context clue drill
                 </td>
-                <td>40 min</td>
+                <td className="py-2 font-mono">40 min</td>
               </tr>
               <tr>
-                <td>4</td>
-                <td>
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">4</td>
+                <td className="py-2 pr-4">
                   Full timed WK practice (16 questions, 8 min) + review missed
                   words
                 </td>
-                <td>
+                <td className="py-2 pr-4">
                   Full timed PC practice (11 questions, 22 min) + error review
                 </td>
-                <td>45 min</td>
+                <td className="py-2 font-mono">45 min</td>
               </tr>
             </tbody>
           </table>
@@ -1101,8 +1101,8 @@ export default function ASVABWordKnowledgeTipsPage() {
           FAQ
         </h2>
 
-        <div className="mt-4 divide-y divide-navy-border/40">
-          <div className="py-6">
+        <div className="mt-4 space-y-6">
+          <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               How many questions are on the ASVAB Word Knowledge section?
             </h3>
@@ -1114,7 +1114,7 @@ export default function ASVABWordKnowledgeTipsPage() {
             </p>
           </div>
 
-          <div className="py-6">
+          <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               What is a good ASVAB Word Knowledge score?
             </h3>
@@ -1128,7 +1128,7 @@ export default function ASVABWordKnowledgeTipsPage() {
             </p>
           </div>
 
-          <div className="py-6">
+          <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               Is ASVAB Word Knowledge hard?
             </h3>
@@ -1140,7 +1140,7 @@ export default function ASVABWordKnowledgeTipsPage() {
             </p>
           </div>
 
-          <div className="py-6">
+          <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               How do I study for ASVAB Word Knowledge?
             </h3>
@@ -1152,7 +1152,7 @@ export default function ASVABWordKnowledgeTipsPage() {
             </p>
           </div>
 
-          <div className="py-6">
+          <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               What is Verbal Expression (VE) on the ASVAB?
             </h3>
@@ -1165,7 +1165,7 @@ export default function ASVABWordKnowledgeTipsPage() {
             </p>
           </div>
 
-          <div className="py-6">
+          <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               Can I retake just the Word Knowledge section?
             </h3>
