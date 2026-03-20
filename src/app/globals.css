@@ -11,6 +11,10 @@
   --color-accent-glow: rgba(249, 115, 22, 0.3);
   --color-success: #22c55e;
   --color-success-dim: rgba(34, 197, 94, 0.15);
+  --color-danger: #ef4444;
+  --color-danger-dim: rgba(239, 68, 68, 0.12);
+  --color-almost: #eab308;
+  --color-almost-dim: rgba(234, 179, 8, 0.12);
   --color-text-primary: #f1f5f9;
   --color-text-secondary: #94a3b8;
   --color-text-tertiary: #64748b;
@@ -46,6 +50,46 @@
   }
 }
 
+@layer components {
+  /* Article prose wrapper — used on all long-form content pages */
+  .prose-asvab {
+    color: var(--color-text-secondary);
+    line-height: 1.75;
+  }
+
+  .prose-asvab h1,
+  .prose-asvab h2,
+  .prose-asvab h3 {
+    color: var(--color-text-primary);
+    font-family: var(--font-display);
+  }
+
+  .prose-asvab a:not(.no-underline) {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.15s;
+  }
+
+  .prose-asvab a:not(.no-underline):hover {
+    color: var(--color-accent-hover);
+  }
+
+  .prose-asvab p + p {
+    margin-top: 1rem;
+  }
+
+  .prose-asvab table td,
+  .prose-asvab table th {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .prose-asvab tbody tr:hover {
+    background-color: rgba(26, 41, 66, 0.5);
+  }
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
@@ -59,4 +103,52 @@
 @keyframes pulse-glow {
   0%, 100% { box-shadow: 0 0 0 0 var(--color-accent-glow); }
   50% { box-shadow: 0 0 20px 4px var(--color-accent-glow); }
+}
+
+/* Score slider — custom range input for ASVAB score inputs */
+.score-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to right,
+    var(--color-accent) var(--slider-pct, 37%),
+    var(--color-navy-border) var(--slider-pct, 37%)
+  );
+  outline: none;
+  cursor: pointer;
+}
+
+.score-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 2px solid var(--color-navy);
+  cursor: grab;
+  transition: transform 0.1s;
+}
+
+.score-slider::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.2);
+}
+
+.score-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 2px solid var(--color-navy);
+  border: none;
+  cursor: grab;
+}
+
+.score-slider:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
