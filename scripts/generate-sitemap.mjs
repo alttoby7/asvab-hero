@@ -21,6 +21,7 @@ const pages = [
   { path: "/asvab-paragraph-comprehension-tips", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-math-tips", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-word-knowledge-tips", priority: "0.8", changefreq: "monthly" },
+  { path: "/what-is-the-asvab", priority: "0.8", changefreq: "monthly" },
   { path: "/pricing", priority: "0.7", changefreq: "monthly" },
   { path: "/about", priority: "0.5", changefreq: "monthly" },
   { path: "/contact", priority: "0.4", changefreq: "monthly" },
