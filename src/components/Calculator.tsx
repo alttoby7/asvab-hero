@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import type { SubtestScores, AsvabSubtest, MilitaryJob, Branch } from "@/types";
+import type { SubtestScores, AsvabSubtest, MilitaryJob, Branch, CompositeScores } from "@/types";
 import { ALL_SUBTESTS, BRANCH_NAMES } from "@/types";
 import {
   calculateAFQT,
@@ -10,9 +10,10 @@ import {
   getAFQTCategoryDescription,
   calculateAllComposites,
 } from "@/lib/score-calculator";
-import { getQualifyingJobsByBranch } from "@/lib/job-matcher";
+import { buildJobMatchSnapshot } from "@/lib/job-matcher";
 import ScoreInput from "./ScoreInput";
 import JobResults from "./JobResults";
+import NonQualifyingResults from "./NonQualifyingResults";
 
 interface CalculatorProps {
   allJobs: MilitaryJob[];
@@ -20,10 +21,10 @@ interface CalculatorProps {
 
 const DEFAULT_SCORES: SubtestScores = {
   GS: 50,
-  AR: 50,
-  WK: 50,
-  PC: 50,
-  MK: 50,
+  AR: 35, // AFQT subtest: 35 on 20-62 scale ≈ 59th percentile starting state
+  WK: 35, // AFQT subtest
+  PC: 35, // AFQT subtest
+  MK: 35, // AFQT subtest
   EI: 50,
   AS: 50,
   MC: 50,
@@ -77,15 +78,17 @@ export default function Calculator({ allJobs }: CalculatorProps) {
 
   const allComposites = useMemo(() => calculateAllComposites(scores), [scores]);
 
-  const jobsByBranch = useMemo(
-    () => getQualifyingJobsByBranch(scores, allJobs),
-    [scores, allJobs]
-  );
+  const compositesByBranch = useMemo(() => {
+    const map: Record<Branch, CompositeScores> = {} as Record<Branch, CompositeScores>;
+    for (const bc of allComposites) {
+      map[bc.branch] = bc.composites;
+    }
+    return map;
+  }, [allComposites]);
 
-  const totalQualifying = useMemo(
-    () =>
-      Object.values(jobsByBranch).reduce((sum, jobs) => sum + jobs.length, 0),
-    [jobsByBranch]
+  const snapshot = useMemo(
+    () => buildJobMatchSnapshot(allJobs, compositesByBranch, afqt),
+    [allJobs, compositesByBranch, afqt]
   );
 
   const activeComposites = useMemo(
@@ -204,7 +207,20 @@ export default function Calculator({ allJobs }: CalculatorProps) {
 
       {/* Qualifying Jobs */}
       <section className="rounded-xl border border-navy-border bg-navy-light p-6">
-        <JobResults jobsByBranch={jobsByBranch} totalJobs={totalQualifying} />
+        <JobResults
+          jobsByBranch={snapshot.qualifyingByBranch}
+          totalJobs={snapshot.totalQualifying}
+          afqt={afqt}
+        />
+      </section>
+
+      {/* Non-Qualifying Jobs */}
+      <section className="rounded-xl border border-navy-border bg-navy-light p-6">
+        <NonQualifyingResults
+          jobsByBranch={snapshot.nonQualifyingByBranch}
+          totalJobs={snapshot.totalNonQualifying}
+          afqt={afqt}
+        />
       </section>
     </div>
   );
