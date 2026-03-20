@@ -1,10 +1,29 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+
+const RANKS_LINKS = [
+  { href: "/air-force-ranks", label: "Air Force Ranks" },
+  { href: "/army-ranks", label: "Army Ranks" },
+  { href: "/navy-ranks", label: "Navy Ranks" },
+];
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [ranksOpen, setRanksOpen] = useState(false);
+  const ranksRef = useRef<HTMLDivElement>(null);
+
+  // Close ranks dropdown on outside click
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (ranksRef.current && !ranksRef.current.contains(e.target as Node)) {
+        setRanksOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
 
   return (
     <nav
@@ -29,7 +48,7 @@ export default function Nav() {
           </Link>
 
           {/* Desktop links */}
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="hidden items-center gap-6 md:flex">
             <Link
               href="/calculator"
               className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline"
@@ -54,29 +73,50 @@ export default function Nav() {
             >
               Study Guide
             </Link>
-            <Link
-              href="/air-force-ranks"
-              className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline"
-            >
-              AF Ranks
-            </Link>
-            <Link
-              href="/army-ranks"
-              className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline"
-            >
-              Army Ranks
-            </Link>
+
+            {/* Ranks dropdown */}
+            <div className="relative" ref={ranksRef}>
+              <button
+                onClick={() => setRanksOpen((v) => !v)}
+                aria-expanded={ranksOpen}
+                aria-haspopup="true"
+                className="flex items-center gap-1 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary"
+              >
+                Ranks
+                <svg
+                  className={`h-3.5 w-3.5 transition-transform duration-150 ${ranksOpen ? "rotate-180" : ""}`}
+                  fill="none"
+                  viewBox="0 0 12 12"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M2 4l4 4 4-4" />
+                </svg>
+              </button>
+              {ranksOpen && (
+                <div
+                  className="absolute left-0 top-full mt-2 w-44 rounded-xl border border-navy-border bg-navy-light py-1 shadow-lg"
+                  style={{ animation: "fadeDown 0.1s ease-out" }}
+                >
+                  {RANKS_LINKS.map(({ href, label }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      onClick={() => setRanksOpen(false)}
+                      className="block px-4 py-2 text-sm text-text-secondary transition-colors hover:bg-navy-lighter hover:text-text-primary no-underline"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <Link
               href="/pricing"
               className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline"
             >
               Pricing
-            </Link>
-            <Link
-              href="/about"
-              className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline"
-            >
-              About
             </Link>
             <Link
               href="/calculator"
@@ -136,20 +176,22 @@ export default function Nav() {
               >
                 Study Guide
               </Link>
-              <Link
-                href="/air-force-ranks"
-                onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline"
-              >
-                AF Ranks
-              </Link>
-              <Link
-                href="/army-ranks"
-                onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline"
-              >
-                Army Ranks
-              </Link>
+              {/* Ranks group in mobile */}
+              <div className="px-3">
+                <p className="mb-1 text-xs font-bold uppercase tracking-wider text-text-tertiary">Ranks</p>
+                <div className="flex flex-col gap-1 pl-2 border-l border-navy-border">
+                  {RANKS_LINKS.map(({ href, label }) => (
+                    <Link
+                      key={href}
+                      href={href}
+                      onClick={() => setOpen(false)}
+                      className="py-1.5 text-sm font-medium text-text-secondary hover:text-text-primary no-underline"
+                    >
+                      {label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
               <Link
                 href="/pricing"
                 onClick={() => setOpen(false)}

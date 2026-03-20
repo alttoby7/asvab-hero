@@ -83,6 +83,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/navy-ranks"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Navy Ranks
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/blog"
                   className="text-sm text-text-tertiary hover:text-text-primary no-underline"
                 >

@@ -1,0 +1,1566 @@
+[
+  {
+    "code": "00Z",
+    "title": "Nominative Command Sergeant Major/Sergeant Major (CSM/SGM)",
+    "requirements": []
+  },
+  {
+    "code": "09L",
+    "title": "Interpreter/Translator",
+    "requirements": []
+  },
+  {
+    "code": "11B",
+    "title": "Infantryman",
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 87
+      }
+    ]
+  },
+  {
+    "code": "11C",
+    "title": "Indirect Fire Infantryman (Indrct Fire Infmn)",
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 87
+      }
+    ]
+  },
+  {
+    "code": "11Z",
+    "title": "Infantry Senior Sergeant (Inf Sr SGT) CMF 11",
+    "requirements": []
+  },
+  {
+    "code": "12B",
+    "title": "Combat Engineer",
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 87
+      }
+    ]
+  },
+  {
+    "code": "12C",
+    "title": "Bridge Crewmember",
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 87
+      }
+    ]
+  },
+  {
+    "code": "12D",
+    "title": "Diver",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "code": "12G",
+    "title": "Quarrying Specialist (National Guard Only)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "12H",
+    "title": "Construction Engineering Supervisor (Const Engr Supv)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "12K",
+    "title": "Plumber",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 88
+      }
+    ]
+  },
+  {
+    "code": "12M",
+    "title": "Firefighter",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 88
+      }
+    ]
+  },
+  {
+    "code": "12N",
+    "title": "Horizontal Construction Engineer (Horiz Const Engineer)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "code": "12P",
+    "title": "Prime Power Production Specialist (PPPS)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "code": "12Q",
+    "title": "Powerline Distribution Specialist (Reserve Components) (Powerline",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "12R",
+    "title": "Interior Electrician",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "12T",
+    "title": "Technical Engineer (Tech Engr)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "12V",
+    "title": "Concrete and Asphalt Equipment Operator (Conc & Asphalt Eq Op)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 88
+      }
+    ]
+  },
+  {
+    "code": "12W",
+    "title": "Carpentry and Masonry Specialist (Carpentry & Masonry Sp)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 88
+      }
+    ]
+  },
+  {
+    "code": "12X",
+    "title": "General Engineering Supervisor (Gen Engr Supv)",
+    "requirements": []
+  },
+  {
+    "code": "12Y",
+    "title": "Geospatial Engineer",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      },
+      {
+        "composite": "ST",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "code": "12Z",
+    "title": "Combat Engineering Senior Sergeant (Combat Engr Sr SGT)",
+    "requirements": []
+  },
+  {
+    "code": "13B",
+    "title": "Cannon Crewmember",
+    "requirements": [
+      {
+        "composite": "FA",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "13F",
+    "title": "Joint Fire Support Specialist CMF 13",
+    "requirements": [
+      {
+        "composite": "FA",
+        "minScore": 96
+      }
+    ]
+  },
+  {
+    "code": "13J",
+    "title": "Fire Control Specialist",
+    "requirements": [
+      {
+        "composite": "FA",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "13M",
+    "title": "Multiple Launch Rocket System (MLRS)/High Mobility Artillery Rocket",
+    "requirements": [
+      {
+        "composite": "OF",
+        "minScore": 95
+      },
+      {
+        "composite": "SC",
+        "minScore": 98
+      }
+    ]
+  },
+  {
+    "code": "13R",
+    "title": "Field Artillery (FA) Weapons Locating Radar (WLR) Specialist (FA WLR",
+    "requirements": [
+      {
+        "composite": "SC",
+        "minScore": 98
+      }
+    ]
+  },
+  {
+    "code": "13Z",
+    "title": "Field Artillery Senior Sergeant (FA Sr Sgt)",
+    "requirements": []
+  },
+  {
+    "code": "14E",
+    "title": "Patriot Fire Control Enhanced Operator/Maintainer (PATRIOT Fire Ctrl",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "code": "14G",
+    "title": "Air Defense (AD) Battle Management System Operator CMF 14",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 98
+      },
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
+  },
+  {
+    "code": "14H",
+    "title": "Air Defense (AD) Enhanced Early Warning System Operator CMF 14",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 98
+      },
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
+  },
+  {
+    "code": "14P",
+    "title": "Air and Missile Defense (AMD) Crewmember",
+    "requirements": [
+      {
+        "composite": "OF",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "code": "14S",
+    "title": "Avenger Crewmember (USAR/NG only)",
+    "requirements": [
+      {
+        "composite": "OF",
+        "minScore": 85
+      }
+    ]
+  },
+  {
+    "code": "14T",
+    "title": "Patriot Launching Station Enhanced Operator/Maintainer (Patriot LS Enh",
+    "requirements": [
+      {
+        "composite": "OF",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "code": "14Z",
+    "title": "Air Defense Artillery Senior Sergeant (ADA Senior SGT)",
+    "requirements": []
+  },
+  {
+    "code": "15B",
+    "title": "Aircraft Powerplant Repairer (Acft Powerplant Rep)",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "code": "15C",
+    "title": "MQ-1 Operator",
+    "requirements": [
+      {
+        "composite": "SC",
+        "minScore": 102
+      }
+    ]
+  },
+  {
+    "code": "15D",
+    "title": "Aircraft Powertrain Repairer (Acft Powertrain Rep)",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      },
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "code": "15F",
+    "title": "Aircraft Electrician (Acft Elec)",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "code": "15G",
+    "title": "Aircraft Structural Repairer (Acft Structural Rep)",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "code": "15H",
+    "title": "Aircraft Pneudraulics Repairer (Acft Pneudraulics Rep)",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "code": "15J",
+    "title": "OH-58D Armament/Electrical/Avionics Systems Repairer (Acft",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "15K",
+    "title": "Aircraft Components Repair Supervisor (Acft Comp Repair Supv)",
+    "requirements": []
+  },
+  {
+    "code": "15L",
+    "title": "Armament/Electrical/Avionics Repair Supervisor (Arm/Elect/Avionics Rep",
+    "requirements": []
+  },
+  {
+    "code": "15M",
+    "title": "MQ-1 Repairer CMF 15 (Effective 202010)",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "15N",
+    "title": "Avionic Mechanic",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "15P",
+    "title": "Aviation Operations Specialist (Aviation Ops Sp)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "code": "15Q",
+    "title": "Air Traffic Control (ATC) Operator",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "15R",
+    "title": "AH-64 Attack Helicopter Repairer (AH-64 Attack Hel Rep)",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
+  },
+  {
+    "code": "15S",
+    "title": "OH-58D Helicopter Repairer (OH-58D Hel Rep)",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
+  },
+  {
+    "code": "15T",
+    "title": "UH-60 Helicopter Repairer (UH-60 Hel Rep)",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "code": "15U",
+    "title": "CH-47 Helicopter Repairer (CH-47 Hel Rep)",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 104
+      }
+    ]
+  },
+  {
+    "code": "15W",
+    "title": "RQ-7 Operator",
+    "requirements": [
+      {
+        "composite": "SC",
+        "minScore": 102
+      }
+    ]
+  },
+  {
+    "code": "15Y",
+    "title": "AH-64 Armament/Electrical/Avionics Systems Repairer (AH-64",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 98
+      }
+    ]
+  },
+  {
+    "code": "15Z",
+    "title": "Aviation Senior Sergeant (Avn Sr SGT)",
+    "requirements": []
+  },
+  {
+    "code": "17C",
+    "title": "Cyber Operations Specialist",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      },
+      {
+        "composite": "ST",
+        "minScore": 112
+      }
+    ]
+  },
+  {
+    "code": "17E",
+    "title": "Electronic Warfare Specialist",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      },
+      {
+        "composite": "SC",
+        "minScore": 105
+      },
+      {
+        "composite": "ST",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "code": "17Z",
+    "title": "Cyberspace and Electromagnetic Activities (CEMA) Senior Sergeant (CEMA Sr",
+    "requirements": []
+  },
+  {
+    "code": "18B",
+    "title": "Special Forces Weapons Sergeant (SF Wpns SGT)",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "code": "18C",
+    "title": "Special Forces Engineer Sergeant (SF Engr SGT)",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "code": "18E",
+    "title": "Special Forces Communications Sergeant (SF Comm",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "code": "18F",
+    "title": "Special Forces Intelligence Sergeant (SF Intel SGT)",
+    "requirements": []
+  },
+  {
+    "code": "19K",
+    "title": "M1 Armor Crewman",
+    "requirements": [
+      {
+        "composite": "CO",
+        "minScore": 87
+      }
+    ]
+  },
+  {
+    "code": "19Z",
+    "title": "Armor Senior Sergeant",
+    "requirements": []
+  },
+  {
+    "code": "25B",
+    "title": "Information Technology Specialist (Info Tech Sp)",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 100
+      },
+      {
+        "composite": "ST",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "code": "25D",
+    "title": "Cyber Network Defender",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 105
+      },
+      {
+        "composite": "GT",
+        "minScore": 105
+      },
+      {
+        "composite": "ST",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "code": "25L",
+    "title": "Cable Systems Installer-Maintainer (Cable Sys Inst-Mnt)",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 89
+      }
+    ]
+  },
+  {
+    "code": "25M",
+    "title": "Multimedia Illustrator",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "25Q",
+    "title": "Multichannel Transmission Systems Operator-Maintainer (Mchan Xmsn",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 117
+      }
+    ]
+  },
+  {
+    "code": "25T",
+    "title": "Satellite/Microwave Systems Chief (Sat/Mw Sys Ch)",
+    "requirements": []
+  },
+  {
+    "code": "25U",
+    "title": "Signal Support Systems Specialist (Sig Spt Sys Spc) CMF 25",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "25V",
+    "title": "Combat Documentation/Production Specialist (Cbt Doc/Produc Sp)",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "25W",
+    "title": "Telecommunications Operations Chief (Telecom Opns Chief)",
+    "requirements": []
+  },
+  {
+    "code": "25X",
+    "title": "Chief Signal NCO",
+    "requirements": []
+  },
+  {
+    "code": "25Z",
+    "title": "Visual Information Operations Chief (VI Op Chief)",
+    "requirements": []
+  },
+  {
+    "code": "27D",
+    "title": "Paralegal Specialist",
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "code": "31B",
+    "title": "Military Police",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "code": "31D",
+    "title": "CID Special Agent",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      },
+      {
+        "composite": "ST",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "code": "31E",
+    "title": "Corrections and Detention Specialist",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "code": "31K",
+    "title": "Working Dog Handler",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "code": "31Z",
+    "title": "Senior Military Police Sergeant",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "code": "35F",
+    "title": "Intelligence Analyst (Intel Analyst)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "35G",
+    "title": "Geospatial Intelligence Imagery Analyst",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "35L",
+    "title": "Counterintelligence (CI) Agent",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "35M",
+    "title": "Human Intelligence Collector (HUMINT Collector)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "35N",
+    "title": "Signals Intelligence Analyst (SIGINT Analyst) CMF 35 (Effective 202010)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 112
+      }
+    ]
+  },
+  {
+    "code": "35P",
+    "title": "Signals Intelligence (SIGINT) Voice Interceptor",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "code": "35Q",
+    "title": "Cryptologic Cyberspace Intelligence Collector - Analyst CMF 35",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 112
+      }
+    ]
+  },
+  {
+    "code": "35S",
+    "title": "Signals Acquisition/Exploitation Analyst",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "35V",
+    "title": "Chief Signals Intelligence (SIGINT) Sergeant",
+    "requirements": []
+  },
+  {
+    "code": "35X",
+    "title": "Chief Intelligence Sergeant",
+    "requirements": []
+  },
+  {
+    "code": "35Y",
+    "title": "Chief Counterintelligence/Human Intelligence (CH CI/HUMINT) Sergeant",
+    "requirements": []
+  },
+  {
+    "code": "35Z",
+    "title": "Intelligence Senior Sergeant",
+    "requirements": []
+  },
+  {
+    "code": "36B",
+    "title": "Financial Management Technician",
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 101
+      },
+      {
+        "composite": "GT",
+        "minScore": 107
+      },
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "38B",
+    "title": "Civil Affairs Specialist Active Army (AA) and United States Army Reserve",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 107
+      },
+      {
+        "composite": "ST",
+        "minScore": 96
+      }
+    ]
+  },
+  {
+    "code": "42A",
+    "title": "Human Resources Specialist (HR SPC)",
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "code": "42R",
+    "title": "Musician",
+    "requirements": []
+  },
+  {
+    "code": "42S",
+    "title": "Special Band Musician",
+    "requirements": []
+  },
+  {
+    "code": "46S",
+    "title": "Public Affairs Mass Communication Specialist",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "code": "51C",
+    "title": "Contracting Noncommissioned Officer (NCO)",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 110
+      }
+    ]
+  },
+  {
+    "code": "56M",
+    "title": "Religious Affairs Specialist",
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "code": "68A",
+    "title": "Biomedical Equipment Specialist (Biomed Eq Sp)",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "code": "68B",
+    "title": "Orthopedic Specialist CMF 68",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "68C",
+    "title": "Practical Nursing Specialist CMF 68",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "68D",
+    "title": "Operating Room Specialist",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "code": "68E",
+    "title": "Dental Specialist (Dental Sp) CMF 68",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "code": "68F",
+    "title": "Physical Therapy Specialist CMF 68",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "68G",
+    "title": "Patient Administration Specialist (Patient Admin Sp)",
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "code": "68H",
+    "title": "Optical Laboratory Specialist (Optical Lab Sp)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 98
+      }
+    ]
+  },
+  {
+    "code": "68J",
+    "title": "Medical Logistics Specialist (Medical Log Sp)",
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "code": "68K",
+    "title": "Medical Laboratory Specialist (Medical Lab Sp)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 106
+      }
+    ]
+  },
+  {
+    "code": "68L",
+    "title": "Occupational Therapy Specialist CMF 68",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "68M",
+    "title": "Nutrition Care Specialist (Nutr Care Sp)",
+    "requirements": [
+      {
+        "composite": "OF",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "code": "68N",
+    "title": "Cardiovascular Specialist CMF 68 (Rescind 202110)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "68P",
+    "title": "Radiology Specialist (Radiology Sp)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 106
+      }
+    ]
+  },
+  {
+    "code": "68Q",
+    "title": "Pharmacy Specialist",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "code": "68R",
+    "title": "Veterinary Food Inspection Specialist (Vet Food Insp Sp)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "code": "68S",
+    "title": "Preventive Medicine Specialist (Pvnt Med Sp)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "68T",
+    "title": "Animal Care Specialist (Animal Care Sp)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "code": "68V",
+    "title": "Respiratory Specialist (Respiratory Sp)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 102
+      }
+    ]
+  },
+  {
+    "code": "68X",
+    "title": "Behavioral Health Specialist (Mental Health Sp)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "68Y",
+    "title": "Eye Specialist CMF 68",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 101
+      }
+    ]
+  },
+  {
+    "code": "68Z",
+    "title": "Chief Medical NCO (Ch Med NCO) CMF 68",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "code": "79S",
+    "title": "Career Counselor (Active Component)",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "code": "79T",
+    "title": "Recruiting and Retention NCO (Army National Guard of the United States/",
+    "requirements": []
+  },
+  {
+    "code": "79V",
+    "title": "Army Reserve Career Counselor (Army Reserve)",
+    "requirements": [
+      {
+        "composite": "GT",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "code": "88H",
+    "title": "Cargo Specialist",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 88
+      }
+    ]
+  },
+  {
+    "code": "88K",
+    "title": "Watercraft Operator",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
+  },
+  {
+    "code": "88L",
+    "title": "Watercraft Engineer",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
+  },
+  {
+    "code": "88M",
+    "title": "Motor Transport Operator",
+    "requirements": [
+      {
+        "composite": "OF",
+        "minScore": 85
+      }
+    ]
+  },
+  {
+    "code": "88N",
+    "title": "Transportation Management Coordinator (Trans Mgt Coord)",
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 95
+      }
+    ]
+  },
+  {
+    "code": "88U",
+    "title": "Railway Specialist (USAR only)",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 92
+      }
+    ]
+  },
+  {
+    "code": "88Z",
+    "title": "Transportation Senior Sergeant (Transportation Sr SGT)",
+    "requirements": []
+  },
+  {
+    "code": "89A",
+    "title": "Ammunition Stock Control and Accounting Specialist (Ammo Stk Con/Acctg",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "code": "89B",
+    "title": "Ammunition Specialist (Ammo Sp)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "code": "89D",
+    "title": "Explosive Ordnance Disposal (EOD) Specialist (EOD Sp)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 105
+      }
+    ]
+  },
+  {
+    "code": "91A",
+    "title": "M1 Abrams Tank System Maintainer (M1 Abrams Tank Sys Maint)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 98
+      },
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
+  },
+  {
+    "code": "91D",
+    "title": "Tactical Power Generation Specialist (TAC Pwr Gen Spec)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 100
+      }
+    ]
+  },
+  {
+    "code": "91E",
+    "title": "Allied Trades Specialist",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 98
+      }
+    ]
+  },
+  {
+    "code": "91F",
+    "title": "Small Arms/Towed Artillery Repairer (Small Arms/Towed Arty Rep)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "91H",
+    "title": "Tracked Vehicle Repairer (Tracked Veh Rep)",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 92
+      }
+    ]
+  },
+  {
+    "code": "91J",
+    "title": "Quartermaster and Chemical Equipment Repairer (QM & Chem Equip",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 92
+      }
+    ]
+  },
+  {
+    "code": "91L",
+    "title": "Construction Equipment Repairer (Const Equip Rep)",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 92
+      }
+    ]
+  },
+  {
+    "code": "91M",
+    "title": "Bradley Fighting Vehicle System Maintainer (BFVS Maint)",
+    "requirements": [
+      {
+        "composite": "MM",
+        "minScore": 99
+      }
+    ]
+  },
+  {
+    "code": "91X",
+    "title": "Maintenance Supervisor (Maint Supv)",
+    "requirements": []
+  },
+  {
+    "code": "91Z",
+    "title": "Senior Maintenance Supervisor (SR Maint Supervisor)",
+    "requirements": []
+  },
+  {
+    "code": "92A",
+    "title": "Automated Logistical Specialist (Auto Log Spec) CMF 92",
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "code": "92F",
+    "title": "Petroleum Supply Specialist (Petro Sup SPC)",
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 86
+      }
+    ]
+  },
+  {
+    "code": "92G",
+    "title": "Culinary Specialist CMF 92",
+    "requirements": [
+      {
+        "composite": "OF",
+        "minScore": 85
+      }
+    ]
+  },
+  {
+    "code": "92L",
+    "title": "Petroleum Laboratory Specialist (Petro Lab SPC)",
+    "requirements": [
+      {
+        "composite": "ST",
+        "minScore": 91
+      }
+    ]
+  },
+  {
+    "code": "92M",
+    "title": "Mortuary Affairs Specialist (Mort Affairs SPC)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 88
+      }
+    ]
+  },
+  {
+    "code": "92R",
+    "title": "Parachute Rigger",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "code": "92S",
+    "title": "Shower and Laundry Specialist (S&L SPC)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 84
+      }
+    ]
+  },
+  {
+    "code": "92W",
+    "title": "Water Treatment Specialist (Water Trmt SPC)",
+    "requirements": [
+      {
+        "composite": "GM",
+        "minScore": 88
+      }
+    ]
+  },
+  {
+    "code": "92Y",
+    "title": "Unit Supply Specialist (Unit Supply SPEC)",
+    "requirements": [
+      {
+        "composite": "CL",
+        "minScore": 90
+      }
+    ]
+  },
+  {
+    "code": "92Z",
+    "title": "Senior Noncommissioned Logistician",
+    "requirements": []
+  },
+  {
+    "code": "94A",
+    "title": "Land Combat Electronic Missile System Repairer",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 102
+      }
+    ]
+  },
+  {
+    "code": "94E",
+    "title": "Radio Equipment Repairer",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 102
+      }
+    ]
+  },
+  {
+    "code": "94F",
+    "title": "Computer/Detection Systems Repairer (Comp/Det Sys Rep)",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 102
+      }
+    ]
+  },
+  {
+    "code": "94P",
+    "title": "Multiple Launch Rocket System (MLRS) Repairer (MLRS Rep)",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 93
+      }
+    ]
+  },
+  {
+    "code": "94S",
+    "title": "Patriot System Repairer (Patriot Sys Rep)",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "code": "94T",
+    "title": "Short Range Air Defense System Repairer",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 98
+      }
+    ]
+  },
+  {
+    "code": "94W",
+    "title": "Electronic Maintenance Supervisor (Elect Maint Supv)",
+    "requirements": []
+  },
+  {
+    "code": "94Y",
+    "title": "Automatic Test Systems Operator/Maintainer",
+    "requirements": [
+      {
+        "composite": "EL",
+        "minScore": 107
+      }
+    ]
+  },
+  {
+    "code": "94Z",
+    "title": "Senior Electronic Maintenance Supervisor (Sr Elect Maint Supv)",
+    "requirements": []
+  }
+]

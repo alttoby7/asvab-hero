@@ -26,7 +26,7 @@ const ENLISTED_PATHS: Record<Branch, RankNode[]> = {
     { grade: "E-3", title: "Airman First Class", abbr: "A1C", timeToAchieve: "~16 months TIS", description: "Adjusted to military life. Competent in assigned duties.", monthlyPay: "$2,161" },
     { grade: "E-4", title: "Senior Airman", abbr: "SrA", timeToAchieve: "~28 months TIS", description: "Proficient in specialty. Beginning to take on basic instruction roles.", monthlyPay: "$2,393" },
     { grade: "E-5", title: "Staff Sergeant", abbr: "SSgt", timeToAchieve: "3–5 years (competitive)", description: "First NCO grade. Responsible for a small team and mentoring junior airmen.", monthlyPay: "$2,610" },
-    { grade: "E-6", title: "Technical Sergeant", abbr: "TSgt", timeToAchieve: "5–8 years (competitive)", description: "Commands flight units. Deep technical expertise required.", monthlyPay: "$2,853" },
+    { grade: "E-6", title: "Technical Sergeant", abbr: "TSgt", timeToAchieve: "5–8 years (competitive)", description: "Commands flight units. Deep technical expertise required.", monthlyPay: "$2,926" },
     { grade: "E-7", title: "Master Sergeant", abbr: "MSgt", timeToAchieve: "10+ years (highly competitive)", description: "Flight chief or section chief. Most hold undergraduate degrees.", monthlyPay: "$3,294" },
   ],
   army: [
@@ -35,7 +35,7 @@ const ENLISTED_PATHS: Record<Branch, RankNode[]> = {
     { grade: "E-3", title: "Private First Class", abbr: "PFC", timeToAchieve: "~12 months TIS", description: "MOS-qualified. Beginning to develop job skills in unit.", monthlyPay: "$2,161" },
     { grade: "E-4", title: "Specialist", abbr: "SPC", timeToAchieve: "~24 months TIS", description: "Competent in primary MOS. May mentor junior soldiers.", monthlyPay: "$2,393" },
     { grade: "E-5", title: "Sergeant", abbr: "SGT", timeToAchieve: "3–4 years (competitive)", description: "First NCO grade. Team leader responsible for 3–5 soldiers.", monthlyPay: "$2,610" },
-    { grade: "E-6", title: "Staff Sergeant", abbr: "SSG", timeToAchieve: "5–7 years (competitive)", description: "Squad leader or staff NCO position. Direct supervision of soldiers.", monthlyPay: "$2,853" },
+    { grade: "E-6", title: "Staff Sergeant", abbr: "SSG", timeToAchieve: "5–7 years (competitive)", description: "Squad leader or staff NCO position. Direct supervision of soldiers.", monthlyPay: "$2,926" },
     { grade: "E-7", title: "Sergeant First Class", abbr: "SFC", timeToAchieve: "10+ years (highly competitive)", description: "Platoon sergeant. Senior tactical advisor to platoon leader.", monthlyPay: "$3,294" },
   ],
   navy: [
@@ -44,7 +44,7 @@ const ENLISTED_PATHS: Record<Branch, RankNode[]> = {
     { grade: "E-3", title: "Seaman", abbr: "SN", timeToAchieve: "~12 months TIS", description: "A-School complete. Working in your rating aboard ship or at shore command.", monthlyPay: "$2,161" },
     { grade: "E-4", title: "Petty Officer 3rd Class", abbr: "PO3", timeToAchieve: "~24 months TIS", description: "First petty officer grade. Leading small teams, supervising work center tasks.", monthlyPay: "$2,393" },
     { grade: "E-5", title: "Petty Officer 2nd Class", abbr: "PO2", timeToAchieve: "3–5 years (exam-based)", description: "Leading larger work center sections. Advancing in rating expertise.", monthlyPay: "$2,610" },
-    { grade: "E-6", title: "Petty Officer 1st Class", abbr: "PO1", timeToAchieve: "6–10 years (competitive)", description: "Senior petty officer. Division leading petty officer role common.", monthlyPay: "$2,853" },
+    { grade: "E-6", title: "Petty Officer 1st Class", abbr: "PO1", timeToAchieve: "6–10 years (competitive)", description: "Senior petty officer. Division leading petty officer role common.", monthlyPay: "$2,926" },
     { grade: "E-7", title: "Chief Petty Officer", abbr: "CPO", timeToAchieve: "10–15 years (highly selective)", description: "Chief's Mess. Fundamental shift — the CPO selection is among the most rigorous in any branch.", monthlyPay: "$3,294" },
   ],
   marines: [
@@ -53,7 +53,7 @@ const ENLISTED_PATHS: Record<Branch, RankNode[]> = {
     { grade: "E-3", title: "Lance Corporal", abbr: "LCpl", timeToAchieve: "~14 months TIS", description: "MOS-qualified. Working in unit, beginning to take on basic duties.", monthlyPay: "$2,161" },
     { grade: "E-4", title: "Corporal", abbr: "Cpl", timeToAchieve: "~26 months TIS", description: "First NCO grade in the Marine Corps. Fire team leader.", monthlyPay: "$2,393" },
     { grade: "E-5", title: "Sergeant", abbr: "Sgt", timeToAchieve: "3–5 years (competitive)", description: "Squad leader. Core of the Marine Corps' NCO corps.", monthlyPay: "$2,610" },
-    { grade: "E-6", title: "Staff Sergeant", abbr: "SSgt", timeToAchieve: "6–9 years (competitive)", description: "Staff NCO. Platoon sergeant in infantry or senior specialist in technical fields.", monthlyPay: "$2,853" },
+    { grade: "E-6", title: "Staff Sergeant", abbr: "SSgt", timeToAchieve: "6–9 years (competitive)", description: "Staff NCO. Platoon sergeant in infantry or senior specialist in technical fields.", monthlyPay: "$2,926" },
     { grade: "E-7", title: "Gunnery Sergeant", abbr: "GySgt", timeToAchieve: "10–14 years (highly competitive)", description: "One of the most respected ranks in the Corps. Technical authority and unit backbone.", monthlyPay: "$3,294" },
   ],
   coast_guard: [
@@ -62,7 +62,7 @@ const ENLISTED_PATHS: Record<Branch, RankNode[]> = {
     { grade: "E-3", title: "Seaman", abbr: "SN", timeToAchieve: "~12 months TIS", description: "Working in your rating. Learning unit-specific operations.", monthlyPay: "$2,161" },
     { grade: "E-4", title: "Petty Officer 3rd Class", abbr: "PO3", timeToAchieve: "~2 years (exam-based)", description: "First petty officer grade. Taking on supervisory and rate-specific duties.", monthlyPay: "$2,393" },
     { grade: "E-5", title: "Petty Officer 2nd Class", abbr: "PO2", timeToAchieve: "3–5 years (exam-based)", description: "Expanded supervisory role. Leading work center sections.", monthlyPay: "$2,610" },
-    { grade: "E-6", title: "Petty Officer 1st Class", abbr: "PO1", timeToAchieve: "6–10 years (competitive)", description: "Senior petty officer. Department leading petty officer common.", monthlyPay: "$2,853" },
+    { grade: "E-6", title: "Petty Officer 1st Class", abbr: "PO1", timeToAchieve: "6–10 years (competitive)", description: "Senior petty officer. Department leading petty officer common.", monthlyPay: "$2,926" },
     { grade: "E-7", title: "Chief Petty Officer", abbr: "CPO", timeToAchieve: "12+ years (highly selective)", description: "Chief's Mess. Senior enlisted leadership, advisory to officers.", monthlyPay: "$3,294" },
   ],
   space_force: [
@@ -71,7 +71,7 @@ const ENLISTED_PATHS: Record<Branch, RankNode[]> = {
     { grade: "E-3", title: "Specialist 3", abbr: "Spc3", timeToAchieve: "~14 months TIS", description: "Completing specialty technical training. Assigned to first Space Force unit.", monthlyPay: "$2,161" },
     { grade: "E-4", title: "Specialist 4", abbr: "Spc4", timeToAchieve: "~26 months TIS", description: "MOS-qualified Guardian. Gaining proficiency in space operations or support role.", monthlyPay: "$2,393" },
     { grade: "E-5", title: "Sergeant", abbr: "Sgt", timeToAchieve: "3–5 years (competitive)", description: "First NCO grade. Team leader, beginning supervisory responsibilities.", monthlyPay: "$2,610" },
-    { grade: "E-6", title: "Technical Sergeant", abbr: "TSgt", timeToAchieve: "5–8 years (competitive)", description: "Senior NCO. Deep specialty expertise, leading technical teams.", monthlyPay: "$2,853" },
+    { grade: "E-6", title: "Technical Sergeant", abbr: "TSgt", timeToAchieve: "5–8 years (competitive)", description: "Senior NCO. Deep specialty expertise, leading technical teams.", monthlyPay: "$2,926" },
     { grade: "E-7", title: "Master Sergeant", abbr: "MSgt", timeToAchieve: "10+ years (highly competitive)", description: "Senior leader in Space Force units. Advisor to officers on technical and personnel matters.", monthlyPay: "$3,294" },
   ],
 };
@@ -146,15 +146,17 @@ export default function PromotionPathPlanner() {
           <p className="mt-0.5 text-xs text-text-tertiary">Typical promotion timeline. Click any rank to see details.</p>
         </div>
         <div className="flex items-center gap-2">
-          <div className="flex rounded-lg border border-navy-border bg-navy overflow-hidden text-xs font-semibold">
+          <div className="flex rounded-lg border border-navy-border bg-navy overflow-hidden text-xs font-semibold" role="group" aria-label="Track selector">
             <button
               onClick={() => { setTrack("enlisted"); setActiveNode(0); }}
+              aria-pressed={track === "enlisted"}
               className={`px-3 py-1.5 transition-colors ${track === "enlisted" ? "bg-accent text-white" : "text-text-secondary hover:text-text-primary"}`}
             >
               Enlisted
             </button>
             <button
               onClick={() => { setTrack("officer"); setActiveNode(0); }}
+              aria-pressed={track === "officer"}
               className={`px-3 py-1.5 transition-colors ${track === "officer" ? "bg-accent text-white" : "text-text-secondary hover:text-text-primary"}`}
             >
               Officers
@@ -165,11 +167,13 @@ export default function PromotionPathPlanner() {
 
       <div className="p-5 space-y-5">
         {/* Branch selector */}
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2" role="group" aria-label="Select branch">
           {BRANCHES.map((b) => (
             <button
               key={b}
               onClick={() => { setBranch(b); setActiveNode(0); }}
+              aria-pressed={branch === b}
+              aria-label={`${BRANCH_LABELS[b]}${branch === b ? ", selected" : ""}`}
               className={`rounded-lg border px-3 py-1.5 text-xs font-semibold transition-colors ${
                 branch === b
                   ? "border-accent bg-accent/20 text-accent"
@@ -189,7 +193,9 @@ export default function PromotionPathPlanner() {
                 {/* Node */}
                 <button
                   onClick={() => setActiveNode(i)}
-                  className="group flex flex-col items-center gap-1.5"
+                  aria-label={`${n.grade} ${n.title}${i === activeNode ? ", selected" : ""}`}
+                  aria-pressed={i === activeNode}
+                  className="group flex min-h-[44px] min-w-[44px] flex-col items-center justify-center gap-1.5"
                 >
                   <div className={`flex h-10 w-10 items-center justify-center rounded-full border-2 font-mono text-xs font-bold transition-all duration-200 ${
                     i === activeNode

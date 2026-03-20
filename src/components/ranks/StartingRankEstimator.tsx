@@ -11,9 +11,9 @@ const BRANCH_LABELS: Record<Branch, string> = {
   marines: "Marines", coast_guard: "Coast Guard", space_force: "Space Force",
 };
 
-// Monthly base pay 2025 (approximate, <2 years TIS)
+// Monthly base pay 2026 (<2 years TIS)
 const BASE_PAY: Record<string, { monthly: string; annual: string }> = {
-  "E-1": { monthly: "$1,833", annual: "$22,000" },
+  "E-1": { monthly: "$1,833", annual: "$21,996" },
   "E-2": { monthly: "$2,055", annual: "$24,660" },
   "E-3": { monthly: "$2,161", annual: "$25,932" },
   "E-4": { monthly: "$2,393", annual: "$28,716" },
@@ -111,6 +111,8 @@ function estimateStartingRank(
   return { grade: gradeStr, reasons };
 }
 
+const BRANCHES: Branch[] = ["army", "navy", "air_force", "marines", "coast_guard", "space_force"];
+
 export default function StartingRankEstimator() {
   const [branch, setBranch] = useState<Branch>("army");
   const [education, setEducation] = useState<EducationLevel>("hs_diploma");
@@ -128,8 +130,6 @@ export default function StartingRankEstimator() {
   const rankName = RANK_NAMES[result.grade]?.[branch] ?? "Unknown";
   const pay = BASE_PAY[result.grade];
 
-  const BRANCHES: Branch[] = ["army", "navy", "air_force", "marines", "coast_guard", "space_force"];
-
   return (
     <div className="rounded-xl border border-navy-border bg-navy-light overflow-hidden">
       <div className="border-b border-navy-border px-5 py-4">
@@ -141,11 +141,13 @@ export default function StartingRankEstimator() {
         {/* Branch selector */}
         <div>
           <p className="mb-2 text-xs font-bold uppercase tracking-wider text-text-tertiary">Branch</p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2" role="group" aria-label="Select branch">
             {BRANCHES.map((b) => (
               <button
                 key={b}
                 onClick={() => setBranch(b)}
+                aria-pressed={branch === b}
+                aria-label={`${BRANCH_LABELS[b]}${branch === b ? ", selected" : ""}`}
                 className={`rounded-lg border px-3 py-1.5 text-xs font-semibold transition-colors ${
                   branch === b
                     ? "border-accent bg-accent/20 text-accent"
@@ -192,6 +194,10 @@ export default function StartingRankEstimator() {
                 type="range" min={0} max={120} step={1}
                 value={credits}
                 onChange={(e) => setCredits(Number(e.target.value))}
+                aria-label="College credits completed"
+                aria-valuemin={0}
+                aria-valuemax={120}
+                aria-valuenow={credits}
                 className="w-full accent-orange-500 cursor-pointer"
               />
               <div className="mt-1 flex justify-between text-[10px] text-text-tertiary">

@@ -111,6 +111,21 @@ export default function AirForceRanksPage() {
           Air Force Ranks: Every Grade from Airman Basic to General
         </h1>
 
+        {/* Stats row */}
+        <div className="mt-6 flex flex-wrap gap-2">
+          {[
+            { label: "Total Ranks", value: "20" },
+            { label: "Warrant Officers", value: "None" },
+            { label: "Min AFQT", value: "36" },
+            { label: "Active Duty", value: "330K" },
+          ].map((stat) => (
+            <div key={stat.label} className="flex items-center gap-2 rounded-full border border-navy-border bg-navy-lighter px-4 py-1.5 text-sm">
+              <span className="font-mono font-bold text-accent">{stat.value}</span>
+              <span className="text-text-tertiary">{stat.label}</span>
+            </div>
+          ))}
+        </div>
+
         <p className="mt-4 text-text-secondary">
           The Air Force is the only branch of the U.S. military with no warrant officers. That single gap reshapes the entire <strong>air force ranks</strong> structure, pushing technical expertise into the enlisted tiers rather than a separate officer track. Every other branch has a middle layer between NCOs and commissioned officers. The Air Force doesn&apos;t.
         </p>
@@ -121,7 +136,10 @@ export default function AirForceRanksPage() {
           Whether you&apos;re studying for the ASVAB, weighing enlisted vs. officer paths, or comparing the Air Force to other branches, this is the reference that replaces the five tabs you have open right now.
         </p>
 
-        <RankEquivalencyExplorer />
+        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Compare pay grades across all 6 branches →</p>
+          <RankEquivalencyExplorer />
+        </div>
 
         {/* ─── ENLISTED RANKS ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -129,12 +147,30 @@ export default function AirForceRanksPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Nine enlisted grades split into three tiers: Airmen (E-1 through E-4), NCOs (E-5 through E-6), and Senior NCOs (E-7 through E-9). Each tier has a different job.
+          Nine enlisted grades split into three tiers — each with a distinct purpose and a different relationship to leadership.
         </p>
+
+        <div className="mt-4 mb-6 grid gap-3 sm:grid-cols-3">
+          <div className="rounded-xl border border-navy-border bg-navy-lighter/40 px-4 py-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-text-tertiary">Junior Enlisted</span>
+            <p className="mt-0.5 font-mono text-sm font-bold text-text-primary">E-1 – E-4</p>
+            <p className="mt-1 text-xs text-text-secondary">Learn the job. Execute tasks. Build technical competence.</p>
+          </div>
+          <div className="rounded-xl border border-accent/30 bg-accent-dim/30 px-4 py-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-accent/70">NCO</span>
+            <p className="mt-0.5 font-mono text-sm font-bold text-text-primary">E-5 – E-6</p>
+            <p className="mt-1 text-xs text-text-secondary">Supervise teams. Write performance reports. Own outcomes.</p>
+          </div>
+          <div className="rounded-xl border border-accent/50 bg-accent-dim/50 px-4 py-3">
+            <span className="text-xs font-bold uppercase tracking-wider text-accent">★ SNCO</span>
+            <p className="mt-0.5 font-mono text-sm font-bold text-text-primary">E-7 – E-9</p>
+            <p className="mt-1 text-xs text-text-secondary">Advise commanders. Shape policy. Represent the enlisted force.</p>
+          </div>
+        </div>
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Pay Grade</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Rank Name</th>
@@ -194,7 +230,10 @@ export default function AirForceRanksPage() {
           The pay jump from E-7 to E-8 ($3,932 to $5,657) is the largest single increase in the enlisted structure, reflecting both the responsibility and the extreme selectivity of making Senior Master Sergeant.
         </p>
 
-        <StartingRankEstimator />
+        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Estimate your starting rank based on your background →</p>
+          <StartingRankEstimator />
+        </div>
 
         {/* ─── STARTING RANK ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -210,7 +249,7 @@ export default function AirForceRanksPage() {
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Credit Source</th>
                 <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Entry Rank</th>
@@ -259,7 +298,7 @@ export default function AirForceRanksPage() {
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Rank</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">TIS Req.</th>
@@ -328,6 +367,11 @@ export default function AirForceRanksPage() {
           The position was created in 1967. The first holder was CMSgt Paul Airey, a World War II and Korean War veteran who spent time as a prisoner of war. Since then, each CMSAF has served roughly 3-4 years, shaping enlisted policy during their tenure. The role has no fixed term, but tradition and turnover aligned with Chief of Staff changes have established that cycle.
         </p>
 
+        <aside className="my-6 rounded-xl border-l-4 border-accent bg-navy-lighter px-5 py-4">
+          <p className="text-sm font-semibold text-text-primary">Current CMSAF: David R. Wolfe (21st)</p>
+          <p className="mt-1 text-sm text-text-secondary">Sworn in December 8, 2025. Exactly one person holds this position at any time — same E-9 pay grade, unmatched authority in the enlisted force.</p>
+        </aside>
+
         {/* ─── OFFICER RANKS ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           Air Force Officer Ranks: O-1 through O-10
@@ -339,7 +383,7 @@ export default function AirForceRanksPage() {
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Pay Grade</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Rank Name</th>
@@ -397,7 +441,10 @@ export default function AirForceRanksPage() {
           One critical distinction: officers do NOT take the ASVAB. They take the Air Force Officer Qualifying Test (AFOQT). If someone tells you they need a certain ASVAB score to become an Air Force officer, they&apos;re confused about how commissioning works.
         </p>
 
-        <PromotionPathPlanner />
+        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Map your promotion timeline from enlistment to retirement →</p>
+          <PromotionPathPlanner />
+        </div>
 
         {/* ─── ENLISTED VS OFFICER ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -410,7 +457,7 @@ export default function AirForceRanksPage() {
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Factor</th>
                 <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Enlisted</th>
@@ -491,6 +538,11 @@ export default function AirForceRanksPage() {
           In April 2024, the Secretary of the Air Force announced a study into potentially reintroducing warrant officers to fill critical technical gaps, particularly in cyber and IT. As of 2026, no warrant officer grade exists in the active force, and the study has not produced a formal recommendation.
         </p>
 
+        <aside className="my-6 rounded-xl border-l-4 border-accent bg-navy-lighter px-5 py-4">
+          <p className="text-sm font-semibold text-text-primary">Air Force Warrant Officers: A Brief History</p>
+          <p className="mt-1 text-sm text-text-secondary">Program abolished 1959 when E-8/E-9 grades were created. Last active-duty warrant officer (CWO4 James H. Long) retired 1980. As of 2026, no warrant officer grade exists in the Air Force.</p>
+        </aside>
+
         {/* ─── ASVAB SCORES ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           ASVAB Scores and Air Force Jobs: What the Connection Actually Is
@@ -524,7 +576,7 @@ export default function AirForceRanksPage() {
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">AFSC</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Job Title</th>
@@ -580,7 +632,7 @@ export default function AirForceRanksPage() {
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Pay Grade</th>
                 <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Rank</th>
@@ -641,10 +693,10 @@ export default function AirForceRanksPage() {
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Pay Grade</th>
-                <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Air Force</th>
+                <th className="pb-2 pr-3 text-left font-semibold text-accent/80">Air Force</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Army</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Navy</th>
                 <th className="pb-2 text-left font-semibold text-text-secondary">Marines</th>
@@ -660,7 +712,7 @@ export default function AirForceRanksPage() {
               ].map(([grade, af, army, navy, marines]) => (
                 <tr key={grade} className="border-b border-navy-border/50">
                   <td className="py-2 pr-3 font-mono font-bold text-accent">{grade}</td>
-                  <td className="py-2 pr-3 font-semibold text-text-primary">{af}</td>
+                  <td className="py-2 pr-3 font-semibold text-text-primary bg-accent-dim/20">{af}</td>
                   <td className="py-2 pr-3">{army}</td>
                   <td className="py-2 pr-3">{navy}</td>
                   <td className="py-2">{marines}</td>
@@ -680,7 +732,17 @@ export default function AirForceRanksPage() {
           Base pay is identical across branches at the same pay grade and years of service. An Air Force E-7 with 10 years makes exactly what a Marine E-7 with 10 years makes. The differences show up in special duty pay, bonuses, and allowances tied to specific assignments.
         </p>
 
-        <BranchJobUnlockExplorer />
+        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — See which jobs your ASVAB score unlocks across every branch →</p>
+          <BranchJobUnlockExplorer />
+        </div>
+
+        {/* ─── CROSS-LINKS ─── */}
+        <div className="mt-6 flex flex-wrap items-center gap-2 rounded-xl border border-navy-border bg-navy-light px-4 py-3">
+          <span className="text-xs font-bold uppercase tracking-wider text-text-tertiary">Also explore:</span>
+          <Link href="/army-ranks" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Army Ranks</Link>
+          <Link href="/navy-ranks" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Navy Ranks</Link>
+        </div>
 
         {/* ─── PAY ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -705,7 +767,7 @@ export default function AirForceRanksPage() {
           Air Force Ranks FAQ
         </h2>
 
-        <div className="mt-4 space-y-6">
+        <div className="mt-4 divide-y divide-navy-border/40">
           {[
             {
               q: "What rank do you start at in the Air Force?",
@@ -735,8 +797,8 @@ export default function AirForceRanksPage() {
               q: "Can you become an Air Force officer after enlisting?",
               a: "Yes. Three main programs: ASCP (Airman Scholarship and Commissioning Program) provides a full ROTC scholarship. SOAR (Scholarships for Outstanding Airmen to ROTC) offers up to $18,000/year. POC-ERP covers those within two years of completing a degree. All result in a commission as Second Lieutenant (O-1). All require separating from active duty. The process from application to commissioning typically takes 2-4 years. These programs are competitive, with ASCP accepting fewer than 100 airmen per year.",
             },
-          ].map((faq) => (
-            <div key={faq.q}>
+          ].map((faq, i) => (
+            <div key={faq.q} className={i === 0 ? "pb-6" : "py-6"}>
               <h3 className="font-display text-base font-bold text-text-primary">
                 {faq.q}
               </h3>

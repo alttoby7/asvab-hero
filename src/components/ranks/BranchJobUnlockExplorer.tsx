@@ -91,11 +91,13 @@ export default function BranchJobUnlockExplorer() {
         {/* Branch selector */}
         <div>
           <p className="mb-2 text-xs font-bold uppercase tracking-wider text-text-tertiary">Branch</p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2" role="group" aria-label="Select branch">
             {BRANCHES.map((b) => (
               <button
                 key={b}
                 onClick={() => setBranch(b)}
+                aria-pressed={branch === b}
+                aria-label={`${BRANCH_LABELS[b]}${branch === b ? ", selected" : ""}`}
                 className={`rounded-lg border px-3 py-1.5 text-xs font-semibold transition-colors ${
                   branch === b
                     ? "border-accent bg-accent/20 text-accent"
@@ -121,6 +123,10 @@ export default function BranchJobUnlockExplorer() {
             type="range" min={1} max={99} step={1}
             value={afqt}
             onChange={(e) => setAfqt(Number(e.target.value))}
+            aria-label="AFQT score"
+            aria-valuemin={1}
+            aria-valuemax={99}
+            aria-valuenow={afqt}
             className="w-full cursor-pointer accent-orange-500"
           />
           <div className="mt-1 flex justify-between text-[10px] text-text-tertiary">

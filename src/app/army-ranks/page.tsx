@@ -86,6 +86,22 @@ export default function ArmyRanksPage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           Army Ranks: The Complete Guide to Every Grade from E-1 to General
         </h1>
+
+        {/* Stats row */}
+        <div className="mt-6 flex flex-wrap gap-2">
+          {[
+            { label: "Total Ranks", value: "29" },
+            { label: "Warrant Officers", value: "~25K" },
+            { label: "Min AFQT", value: "31" },
+            { label: "Active Duty", value: "485K" },
+          ].map((stat) => (
+            <div key={stat.label} className="flex items-center gap-2 rounded-full border border-navy-border bg-navy-lighter px-4 py-1.5 text-sm">
+              <span className="font-mono font-bold text-accent">{stat.value}</span>
+              <span className="text-text-tertiary">{stat.label}</span>
+            </div>
+          ))}
+        </div>
+
         <p className="mt-4 text-text-secondary">
           The Army is the only branch where NCO status can begin at E-4, and it maintains the largest warrant officer corps in the US military at roughly 25,000. The Air Force has essentially none. If you are researching <strong>army ranks</strong> before talking to a recruiter, those two facts alone tell you the Army&apos;s structure is different from what you have seen in movies or video games.
         </p>
@@ -96,7 +112,10 @@ export default function ArmyRanksPage() {
           This guide covers every rank, what it pays in 2026, how promotions actually work, and how your ASVAB scores connect to the career track you land in. If you are 17 to 24 and still deciding whether to enlist, this is where you figure out where you could start and where the ceiling is.
         </p>
 
-        <RankEquivalencyExplorer />
+        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Compare pay grades across all 6 branches →</p>
+          <RankEquivalencyExplorer />
+        </div>
 
         {/* ─── THREE TRACKS ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -113,7 +132,7 @@ export default function ArmyRanksPage() {
         </p>
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Track</th>
                 <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Entry Path</th>
@@ -166,7 +185,7 @@ export default function ArmyRanksPage() {
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Pay Grade</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Rank</th>
@@ -229,10 +248,15 @@ export default function ArmyRanksPage() {
           Only one person holds this rank at any time. The current SMA is Michael R. Weimer, the 17th Sergeant Major of the Army, who assumed duties in August 2023. He enlisted in 1993, earned his Green Beret in 1996, and spent roughly 20 years in Special Mission Units. His awards include 6 Bronze Stars and 2 Purple Hearts. Pay: approximately $9,080/month.
         </p>
 
+        <aside className="my-6 rounded-xl border-l-4 border-accent bg-navy-lighter px-5 py-4">
+          <p className="text-sm font-semibold text-text-primary">Current SMA: Michael R. Weimer (17th)</p>
+          <p className="mt-1 text-sm text-text-secondary">Assumed duties August 2023. Exactly one person holds this position at any time — the senior enlisted adviser to the Army Chief of Staff, representing all enlisted soldiers.</p>
+        </aside>
+
         <h3 className="mt-6 font-display text-base font-bold text-text-primary">The PME Ladder (Required, Not Optional)</h3>
         <div className="my-3 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Rank</th>
                 <th className="pb-2 text-left font-semibold text-text-secondary">Required PME</th>
@@ -258,7 +282,10 @@ export default function ArmyRanksPage() {
           The NCO path is best for soldiers who want hands-on leadership with progressively larger units. If you prefer deep technical specialization without the leadership track, the warrant officer section is next.
         </p>
 
-        <StartingRankEstimator />
+        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Estimate your starting rank based on your background →</p>
+          <StartingRankEstimator />
+        </div>
 
         {/* ─── WARRANT OFFICERS ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -281,7 +308,7 @@ export default function ArmyRanksPage() {
         </p>
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Grade</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Title</th>
@@ -358,7 +385,7 @@ export default function ArmyRanksPage() {
         </p>
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Tier</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Grades</th>
@@ -383,7 +410,10 @@ export default function ArmyRanksPage() {
           </table>
         </div>
 
-        <PromotionPathPlanner />
+        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Map your promotion timeline from enlistment to retirement →</p>
+          <PromotionPathPlanner />
+        </div>
 
         {/* ─── PROMOTIONS ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -442,7 +472,7 @@ export default function ArmyRanksPage() {
         <h3 className="mt-4 font-display text-base font-bold text-text-primary">Enlisted Base Pay</h3>
         <div className="my-3 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Pay Grade</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Rank</th>
@@ -475,7 +505,7 @@ export default function ArmyRanksPage() {
         <h3 className="mt-4 font-display text-base font-bold text-text-primary">Warrant Officer Base Pay (Selected)</h3>
         <div className="my-3 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Pay Grade</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Rank</th>
@@ -501,7 +531,7 @@ export default function ArmyRanksPage() {
         <h3 className="mt-4 font-display text-base font-bold text-text-primary">Officer Base Pay (Selected)</h3>
         <div className="my-3 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Pay Grade</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Rank</th>
@@ -550,10 +580,10 @@ export default function ArmyRanksPage() {
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Pay Grade</th>
-                <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Army</th>
+                <th className="pb-2 pr-3 text-left font-semibold text-accent/80">Army</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Air Force / SF</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Navy / CG</th>
                 <th className="pb-2 text-left font-semibold text-text-secondary">Marines</th>
@@ -568,7 +598,7 @@ export default function ArmyRanksPage() {
               ].map(([grade, army, af, navy, marines]) => (
                 <tr key={grade} className="border-b border-navy-border/50">
                   <td className="py-2 pr-3 font-mono font-bold text-accent">{grade}</td>
-                  <td className="py-2 pr-3 font-semibold text-text-primary">{army}</td>
+                  <td className="py-2 pr-3 font-semibold text-text-primary bg-accent-dim/20">{army}</td>
                   <td className="py-2 pr-3">{af}</td>
                   <td className="py-2 pr-3">{navy}</td>
                   <td className="py-2">{marines}</td>
@@ -581,7 +611,17 @@ export default function ArmyRanksPage() {
           The Army is the best fit if you want the widest job selection, warrant officer eligibility (especially aviation), or the lowest ASVAB threshold. Consider the Air Force if structured technical training with stronger civilian certification alignment matters more to you.
         </p>
 
-        <BranchJobUnlockExplorer />
+        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — See which jobs your ASVAB score unlocks across every branch →</p>
+          <BranchJobUnlockExplorer />
+        </div>
+
+        {/* ─── CROSS-LINKS ─── */}
+        <div className="mt-6 flex flex-wrap items-center gap-2 rounded-xl border border-navy-border bg-navy-light px-4 py-3">
+          <span className="text-xs font-bold uppercase tracking-wider text-text-tertiary">Also explore:</span>
+          <Link href="/air-force-ranks" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Air Force Ranks</Link>
+          <Link href="/navy-ranks" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Navy Ranks</Link>
+        </div>
 
         {/* ─── ASVAB ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -609,7 +649,7 @@ export default function ArmyRanksPage() {
         <h3 className="mt-6 font-display text-base font-bold text-text-primary">MOS Examples and Required Scores</h3>
         <div className="my-3 overflow-x-auto">
           <table className="w-full text-sm">
-            <thead>
+            <thead className="bg-navy-lighter/50">
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">MOS</th>
                 <th className="pb-2 pr-3 text-left font-semibold text-text-secondary">Job Title</th>
@@ -651,7 +691,7 @@ export default function ArmyRanksPage() {
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           Frequently Asked Questions About Army Ranks
         </h2>
-        <div className="mt-4 space-y-6">
+        <div className="mt-4 divide-y divide-navy-border/40">
           {[
             { q: "What rank do you start at in the Army?", a: "Most enlistees start at E-1 Private. If you have 3+ years of JROTC or 24+ college semester credits, you can enter at E-3 Private First Class. A four-year college degree qualifies you for E-4 Specialist. These advanced entry ranks mean higher pay from your first day. Confirm your qualifying rank with a recruiter before signing any contract." },
             { q: "What is the difference between a Specialist and a Corporal?", a: "Both are E-4 and earn identical pay at $2,415/month. The difference is authority. A Corporal is a noncommissioned officer with formal leadership responsibility over a fire team. A Specialist is a technical worker without NCO status. This is an Army-only distinction. Commanders laterally appoint Specialists to Corporal when a team leader position needs to be filled." },
@@ -661,8 +701,8 @@ export default function ArmyRanksPage() {
             { q: "What are Army warrant officers and how are they different from regular officers?", a: "Warrant officers hold grades W-1 through W-5. They are technical specialists who outrank all enlisted soldiers but are outranked by all commissioned officers. The Army maintains roughly 25,000 warrant officers. Major specialties include aviation (helicopter pilots make up the largest group), intelligence, and cyber operations. Unlike commissioned officers who rotate broadly, warrant officers build deep expertise in one field." },
             { q: "How does Army rank compare to the Air Force?", a: "Army NCO status begins at E-4 Corporal. Air Force NCO status starts at E-5. The Air Force abolished warrant officers in 1959 (very limited reintroduction in 2022). The Army minimum AFQT is 31 versus the Air Force minimum of 36. Pay at the same grade is identical across all branches." },
             { q: "How do promotions work for senior Army NCOs?", a: "E-7 through E-9 promotions are decided by centralized boards at Army Human Resources Command. A board panel evaluates your complete record: NCOER ratings, military awards, ACFT scores, professional military education completion, and leadership positions held. Board results take 4-6 months after the panel concludes. There is no point system at this level." },
-          ].map((faq) => (
-            <div key={faq.q}>
+          ].map((faq, i) => (
+            <div key={faq.q} className={i === 0 ? "pb-6" : "py-6"}>
               <h3 className="font-display text-base font-bold text-text-primary">{faq.q}</h3>
               <p className="mt-1 text-sm text-text-secondary">{faq.a}</p>
             </div>

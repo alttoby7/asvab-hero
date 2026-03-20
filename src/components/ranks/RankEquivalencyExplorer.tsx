@@ -192,15 +192,17 @@ export default function RankEquivalencyExplorer() {
           <h3 className="font-display text-base font-bold text-text-primary">Rank Equivalency Explorer</h3>
           <p className="mt-0.5 text-xs text-text-tertiary">Same pay grade, different names. Click any grade to compare across branches.</p>
         </div>
-        <div className="flex shrink-0 rounded-lg border border-navy-border bg-navy overflow-hidden text-xs font-semibold">
+        <div className="flex shrink-0 rounded-lg border border-navy-border bg-navy overflow-hidden text-xs font-semibold" role="group" aria-label="Track selector">
           <button
             onClick={() => { setTrack("enlisted"); setSelected("E-4"); }}
+            aria-pressed={track === "enlisted"}
             className={`px-3 py-1.5 transition-colors ${track === "enlisted" ? "bg-accent text-white" : "text-text-secondary hover:text-text-primary"}`}
           >
             Enlisted
           </button>
           <button
             onClick={() => { setTrack("officers"); setSelected("O-1"); }}
+            aria-pressed={track === "officers"}
             className={`px-3 py-1.5 transition-colors ${track === "officers" ? "bg-accent text-white" : "text-text-secondary hover:text-text-primary"}`}
           >
             Officers
@@ -211,11 +213,14 @@ export default function RankEquivalencyExplorer() {
       <div className="flex flex-col sm:flex-row">
         {/* Grade list */}
         <div className="shrink-0 border-b border-navy-border sm:border-b-0 sm:border-r sm:w-24">
-          <div className="flex flex-row sm:flex-col overflow-x-auto sm:overflow-x-visible">
+          <div className="flex flex-row sm:flex-col overflow-x-auto sm:overflow-x-visible" role="listbox" aria-label="Pay grade">
             {grades.map((g) => (
               <button
                 key={g}
                 onClick={() => setSelected(g)}
+                aria-label={`Select pay grade ${g}`}
+                aria-selected={selected === g}
+                role="option"
                 className={`flex-shrink-0 px-4 py-2.5 sm:w-full text-left text-sm font-mono font-bold transition-colors ${
                   selected === g
                     ? "bg-accent/20 text-accent border-b-2 sm:border-b-0 sm:border-l-2 border-accent"
