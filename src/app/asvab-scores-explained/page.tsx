@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import DvidsHeroImage from "@/components/DvidsHeroImage";
 import AFQTFormulaExplorer from "@/components/scores-explained/AFQTFormulaExplorer";
 import AFQTCategoryLadder from "@/components/scores-explained/AFQTCategoryLadder";
 import BranchCompositeHeatmap from "@/components/scores-explained/BranchCompositeHeatmap";
@@ -94,6 +95,16 @@ export default function ASVABScoresExplainedPage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           ASVAB Scores Explained: What Your Numbers Actually Mean
         </h1>
+
+        <DvidsHeroImage
+          src="/images/asvab-scores-explained/hero.jpg"
+          alt="The largest administration of the ASVAB test ever given in the Pacific, with students seated at rows of computers"
+          credit="Yasuo Osakabe"
+          branch="Air Force"
+          dvidsUrl="https://www.dvidshub.net/image/6928241/largest-administration-asvab-test-ever-given-pacific"
+          width={1200}
+          height={700}
+        />
 
         <p className="mt-4 text-text-secondary">
           You took the ASVAB. You got your scores back. Now you&apos;re staring at a page full of numbers, abbreviations, and categories that nobody bothered to explain. Your recruiter says your score is &ldquo;good&rdquo; or tells you to retake it, but you still don&apos;t know what any of it means.
@@ -474,6 +485,11 @@ export default function ASVABScoresExplainedPage() {
             </div>
           ))}
         </div>
+
+        <p className="mt-8 text-xs italic text-text-tertiary">
+          The appearance of U.S. Department of Defense (DoD) visual information
+          does not imply or constitute DoD endorsement.
+        </p>
 
         {/* CTA */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">

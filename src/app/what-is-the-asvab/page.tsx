@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import DvidsHeroImage from "@/components/DvidsHeroImage";
 
 export const metadata: Metadata = {
   title: "What Is the ASVAB Test? The Complete Guide | ASVAB Hero",
@@ -105,6 +106,16 @@ export default function WhatIsTheASVABPage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           What Is the ASVAB Test?
         </h1>
+
+        <DvidsHeroImage
+          src="/images/what-is-the-asvab/hero.jpg"
+          alt="Military recruits meet with an ITA counselor to review ASVAB scores and career options"
+          credit="U.S. Military Entrance Processing Command"
+          branch="Joint"
+          dvidsUrl="https://www.dvidshub.net/image/8989921/meet-ita-winning-balance-part-time-career"
+          width={1200}
+          height={800}
+        />
 
         <p className="mt-4 text-text-secondary">
           Your recruiter said &ldquo;you need to take the ASVAB&rdquo; and you
@@ -1179,6 +1190,11 @@ export default function WhatIsTheASVABPage() {
             </p>
           </div>
         </div>
+
+        <p className="mt-8 text-xs italic text-text-tertiary">
+          The appearance of U.S. Department of Defense (DoD) visual information does
+          not imply or constitute DoD endorsement.
+        </p>
 
         {/* ── CTA ── */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">

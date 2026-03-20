@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import DvidsHeroImage from "@/components/DvidsHeroImage";
 
 export const metadata: Metadata = {
   title: "11 ASVAB Word Knowledge Tips to Boost Your Score | ASVAB Hero",
@@ -93,6 +94,16 @@ export default function ASVABWordKnowledgeTipsPage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           11 ASVAB Word Knowledge Tips to Boost Your Verbal Score
         </h1>
+
+        <DvidsHeroImage
+          src="/images/asvab-word-knowledge-tips/hero.jpg"
+          alt="Melia Okamoto, Yokota High School student, poses for a photo after taking the modernized ASVAB CEP at Yokota Air Base"
+          credit="SSgt Spencer Tobler"
+          branch="Air Force"
+          dvidsUrl="https://www.dvidshub.net/image/8127571/yokota-high-school-administers-modernized-asvab-cep"
+          width={1200}
+          height={857}
+        />
 
         <p className="mt-4 text-text-secondary">
           A 5-point gain on your Verbal Expression score adds 10 points to your
@@ -1177,6 +1188,11 @@ export default function ASVABWordKnowledgeTipsPage() {
             </p>
           </div>
         </div>
+
+        <p className="mt-8 text-xs italic text-text-tertiary">
+          The appearance of U.S. Department of Defense (DoD) visual information does
+          not imply or constitute DoD endorsement.
+        </p>
 
         {/* CTA */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">

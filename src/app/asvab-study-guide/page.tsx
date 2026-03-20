@@ -6,6 +6,7 @@ import CareerGoalSetter from "@/components/study-guide/CareerGoalSetter";
 import SubtestExplorer from "@/components/study-guide/SubtestExplorer";
 import StudyPlanGenerator from "@/components/study-guide/StudyPlanGenerator";
 import StudyChecklist from "@/components/study-guide/StudyChecklist";
+import DvidsHeroImage from "@/components/DvidsHeroImage";
 
 export const metadata: Metadata = {
   title: "ASVAB Study Guide 2026: Free Personalized Study Planner",
@@ -124,6 +125,17 @@ export default function ASVABStudyGuidePage() {
           <h1 className="mb-4 font-display text-3xl font-extrabold leading-tight text-text-primary sm:text-4xl">
             ASVAB Study Guide: Build Your Personalized Plan
           </h1>
+
+          <DvidsHeroImage
+            src="/images/asvab-study-guide/hero.jpg"
+            alt="Connecticut Army National Guard recruits work with a counselor during an ASVAB improvement class"
+            credit="SGT Matthew Lucibello"
+            branch="Army"
+            dvidsUrl="https://www.dvidshub.net/image/6775870/ct-arng-asvab-improvement-class"
+            width={1200}
+            height={800}
+          />
+
           <p className="text-lg leading-relaxed text-text-secondary">
             Stop guessing what to study. This guide helps you set career goals,
             identify your weak spots, and generate a personalized week-by-week
@@ -658,6 +670,11 @@ export default function ASVABStudyGuidePage() {
             ))}
           </div>
         </section>
+
+        <p className="mt-8 text-xs italic text-text-tertiary">
+          The appearance of U.S. Department of Defense (DoD) visual information does
+          not imply or constitute DoD endorsement.
+        </p>
 
         {/* CTA */}
         <section className="rounded-2xl border border-accent/30 bg-accent-dim p-6 text-center sm:p-8">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import DvidsHeroImage from "@/components/DvidsHeroImage";
 
 export const metadata: Metadata = {
   title: "ASVAB Paragraph Comprehension Tips: 9 Strategies | ASVAB Hero",
@@ -97,6 +98,16 @@ export default function ASVABParagraphComprehensionTipsPage() {
           ASVAB Paragraph Comprehension Tips: 9 Strategies That Actually Move
           Your Score
         </h1>
+
+        <DvidsHeroImage
+          src="/images/asvab-paragraph-comprehension-tips/hero.jpg"
+          alt="Connecticut Army National Guard soldiers studying together in an ASVAB improvement class"
+          credit="SGT Matthew Lucibello"
+          branch="Army"
+          dvidsUrl="https://www.dvidshub.net/image/6775860/connecticut-army-national-guard-soldiers-participate-asvab-improvement-class"
+          width={1200}
+          height={800}
+        />
 
         <p className="mt-4 text-text-secondary">
           Most ASVAB prep advice for Paragraph Comprehension boils down to
@@ -1068,6 +1079,11 @@ export default function ASVABParagraphComprehensionTipsPage() {
             </p>
           </div>
         </div>
+
+        <p className="mt-8 text-xs italic text-text-tertiary">
+          The appearance of U.S. Department of Defense (DoD) visual information
+          does not imply or constitute DoD endorsement.
+        </p>
 
         {/* CTA */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">

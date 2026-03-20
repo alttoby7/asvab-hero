@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import DvidsHeroImage from "@/components/DvidsHeroImage";
 
 export const metadata: Metadata = {
   title: "10 ASVAB Math Tips That Actually Raise Your Score",
@@ -80,6 +81,16 @@ export default function ASVABMathTipsPage() {
 
       <article className="prose-asvab">
         <h1>10 ASVAB Math Tips That Actually Raise Your Score</h1>
+
+        <DvidsHeroImage
+          src="/images/asvab-math-tips/hero.jpg"
+          alt="A student takes the ASVAB test at a military processing station"
+          credit="Mary Del Rosario"
+          branch="Army"
+          dvidsUrl="https://www.dvidshub.net/image/7559848/asvab-testing"
+          width={1200}
+          height={800}
+        />
 
         <p>Your AFQT score decides whether you enlist or go home. Here&apos;s the formula:</p>
 
@@ -824,6 +835,11 @@ export default function ASVABMathTipsPage() {
             </div>
           ))}
         </div>
+
+        <p className="mt-8 text-xs italic text-text-tertiary">
+          The appearance of U.S. Department of Defense (DoD) visual information does
+          not imply or constitute DoD endorsement.
+        </p>
 
         {/* CTA */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">
