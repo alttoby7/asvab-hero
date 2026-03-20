@@ -114,7 +114,7 @@ export default function Calculator({ allJobs }: CalculatorProps) {
           </button>
         </div>
         <p className="mb-4 text-sm text-text-secondary">
-          Enter your 9 ASVAB subtest standard scores (20–145). Results update
+          Enter your 9 ASVAB subtest standard scores (20–99). Results update
           instantly.{" "}
           <span className="text-accent">Highlighted</span> subtests contribute
           to your AFQT score.

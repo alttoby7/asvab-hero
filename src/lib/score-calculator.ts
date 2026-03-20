@@ -9,10 +9,10 @@ import type { SubtestScores, CompositeScores, BranchComposites, Branch } from "@
  *
  * Formula: VE = WK + PC (Verbal Expression); raw = 2×VE + AR + MK
  *
- * AFQT subtests are calibrated on a 20–62 standard score scale. The app UI accepts 20–145
- * (needed for composite/line score calculations), so values above 62 are clamped to 62 before
- * the AFQT raw score is computed. Users entering real score report values (20–62 range) get
- * accurate percentiles. Values above 62 extrapolate beyond the norming data and are clamped.
+ * AFQT subtests are calibrated on a 20–62 standard score scale. The app UI accepts 20–99
+ * (the real subtest range), so values above 62 are clamped to 62 before the AFQT raw score
+ * is computed. Users entering real score report values get accurate percentiles.
+ * Values above 62 are genuinely high scores that map to 99th percentile.
  */
 
 // PAY97 Table 2.5: [minRaw, maxRaw, percentile]

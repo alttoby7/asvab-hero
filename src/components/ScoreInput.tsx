@@ -5,7 +5,7 @@ import type { AsvabSubtest } from "@/types";
 import { SUBTEST_NAMES } from "@/types";
 
 const MIN = 20;
-const MAX = 145;
+const MAX = 99;
 
 interface ScoreInputProps {
   subtest: AsvabSubtest;
