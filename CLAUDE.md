@@ -4,7 +4,11 @@
 - Next.js 15 static export (`output: "export"`)
 - Tailwind v4 with custom CSS variables in `src/app/globals.css`
 - TypeScript, no test suite
-- Deploy: `git push origin main && npx vercel --prod`
+- Deploy: Cloudflare Pages (auto-deploys on push to `main`)
+- Domain: asvabhero.com (Cloudflare DNS → Cloudflare Pages)
+- Build output: `out/` (static export)
+- Cache: `public/_headers` controls caching for static assets
+- Future: When Phase 2 adds server features (Supabase auth, Stripe), migrate to Cloudflare Workers + OpenNext
 
 ## AFQT Scoring Model
 
