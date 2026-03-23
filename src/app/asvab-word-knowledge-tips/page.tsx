@@ -1,244 +1,586 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
-import DvidsHeroImage from "@/components/DvidsHeroImage";
 
 export const metadata: Metadata = {
-  title: "11 ASVAB Word Knowledge Tips to Boost Your Score | ASVAB Hero",
+  title: "9 ASVAB Word Knowledge Tips That Actually Work | ASVAB Hero",
   description:
-    "Discover 11 ASVAB Word Knowledge tips covering root words, Paragraph Comprehension strategy, and a 4-week verbal study plan to raise your AFQT score.",
+    "Learn 9 proven ASVAB word knowledge tips: VE double-count mechanics, root-word decoding, synonym clusters, trap answer patterns, and CAT pacing strategy.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-word-knowledge-tips",
   },
 };
 
-const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "11 ASVAB Word Knowledge Tips to Boost Your Verbal Score",
-  description:
-    "Discover 11 ASVAB Word Knowledge tips covering root words, Paragraph Comprehension strategy, and a 4-week verbal study plan to raise your AFQT score.",
-  url: "https://asvabhero.com/asvab-word-knowledge-tips",
-  author: {
-    "@type": "Organization",
-    name: "ASVAB Hero",
-    url: "https://asvabhero.com",
-  },
-  publisher: { "@type": "Organization", name: "ASVAB Hero" },
-  datePublished: "2026-03-19",
-  dateModified: "2026-03-19",
-};
-
-const faqJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How many questions are on the ASVAB Word Knowledge section?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "16 questions in 8 minutes on the CAT-ASVAB (computer version). 35 questions in 11 minutes on the paper version. Both average about 30 seconds per question. The CAT version is the standard at MEPS testing locations.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What is a good ASVAB Word Knowledge score?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "WK standard scores are part of your VE composite, which ranges from 20 to 62. A VE score of 50 or higher puts you above average. Higher VE directly raises your AFQT because it counts double in the formula (AFQT = 2VE + AR + MK).",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is ASVAB Word Knowledge hard?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "The vocabulary is below SAT level. These are common English words from news articles and books, not obscure academic terms. The challenge is speed (30 seconds per question) and precision (knowing exact definitions, not vague impressions).",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do I study for ASVAB Word Knowledge?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Combine three methods: (1) learn the 24 root words to decode unfamiliar vocabulary, (2) read news articles daily to build natural word exposure, (3) use spaced repetition flashcards for words you miss on practice tests.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What is Verbal Expression (VE) on the ASVAB?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "VE combines your Word Knowledge and Paragraph Comprehension scores into a single scaled score ranging from 20 to 62. It carries 2x weight in the AFQT formula: AFQT = 2VE + AR + MK. Improving VE is twice as efficient for raising your AFQT as improving AR or MK by the same amount.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I retake just the Word Knowledge section?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. You must retake the entire ASVAB. Retake rules: wait 1 month after your first attempt, 1 month after your second, then 6 months between each subsequent attempt. Your most recent scores replace all previous ones, including scores that were higher.",
-      },
-    },
-  ],
-};
-
 export default function ASVABWordKnowledgeTipsPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
-      <JsonLd data={articleJsonLd} />
-      <JsonLd data={faqJsonLd} />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline:
+            "ASVAB Word Knowledge Tips: 9 Strategies That Actually Move Your Score",
+          description:
+            "Learn 9 proven ASVAB word knowledge tips: VE double-count mechanics, root-word decoding, synonym clusters, trap answer patterns, and CAT pacing strategy.",
+          url: "https://asvabhero.com/asvab-word-knowledge-tips",
+          author: {
+            "@type": "Organization",
+            name: "ASVAB Hero",
+            url: "https://asvabhero.com",
+          },
+          publisher: {
+            "@type": "Organization",
+            name: "ASVAB Hero",
+          },
+          datePublished: "2026-03-23",
+          dateModified: "2026-03-23",
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "How many questions are on the ASVAB Word Knowledge section?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The CAT-ASVAB has 16 questions in 8 minutes, about 30 seconds per question. The paper-and-pencil version has 35 questions in 11 minutes, roughly 19 seconds each. Most recruits take the CAT version at MEPS. The CAT is adaptive (difficulty adjusts based on your answers); the paper version uses fixed difficulty.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How does Word Knowledge affect my AFQT score?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "WK combines with Paragraph Comprehension to form VE (Verbal Expression). VE is doubled in the AFQT formula: AFQT = 2(VE) + AR + MK. A 5-point VE improvement creates a 10-point AFQT jump. No other subtest has this multiplier, making WK the highest-leverage subtest for AFQT improvement.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What are the two question types on the Word Knowledge subtest?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The first type is definition-only: a single word presented alone, and you choose its synonym from 4 options. The second type is emphasized word in context: a word underlined in a sentence, and you select its meaning using surrounding clues. Slightly more than half of WK questions use the definition-only format.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Should I guess if I don't know the answer on WK?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "On paper ASVAB, always guess. There is no penalty for wrong answers, so blank equals 0% while guessing gives you a 25% chance. On CAT-ASVAB, guess when you must but use elimination strategies first. Avoid clustering wrong guesses at the end of the section, as the adaptive algorithm may interpret this negatively.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is it better to study word roots or memorize vocabulary lists?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Start with roots. Latin and Greek roots account for over 60% of English words, so 30 high-frequency roots unlock decoding ability for hundreds of ASVAB-level words. Use vocabulary lists to fill gaps for high-frequency words that do not yield to root analysis. Both strategies together produce the strongest results.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "How long does it take to improve my Word Knowledge score?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Plan for 4-8 weeks of consistent daily study, spending 30-60 minutes per day targeting 200-300 words. Learn 10 new words per day through spaced repetition flashcards and take one timed practice test per week.",
+              },
+            },
+          ],
+        }}
+      />
 
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          11 ASVAB Word Knowledge Tips to Boost Your Verbal Score
+          ASVAB Word Knowledge Tips: 9 Strategies That Actually Move Your Score
         </h1>
 
-        <DvidsHeroImage
-          src="/images/asvab-word-knowledge-tips/hero.jpg"
-          alt="Melia Okamoto, Yokota High School student, poses for a photo after taking the modernized ASVAB CEP at Yokota Air Base"
-          credit="SSgt Spencer Tobler"
-          branch="Air Force"
-          dvidsUrl="https://www.dvidshub.net/image/8127571/yokota-high-school-administers-modernized-asvab-cep"
-          width={1200}
-          height={857}
-        />
-
         <p className="mt-4 text-text-secondary">
-          A 5-point gain on your Verbal Expression score adds 10 points to your
-          AFQT. The same 5-point gain on Arithmetic Reasoning? Only 5. VE counts
-          double in the AFQT formula, which makes{" "}
-          <strong>ASVAB Word Knowledge tips</strong> the fastest route to a
-          higher qualifying score.
+          Most ASVAB prep treats Word Knowledge as a memorization grind. That
+          misses the scoring math that makes WK the single highest-leverage
+          subtest on the entire exam.
         </p>
-
         <p className="text-text-secondary">
-          VE is built from two subtests: Word Knowledge (WK) and Paragraph
-          Comprehension (PC). Most ASVAB advice treats WK as &ldquo;just
-          vocabulary&rdquo; and ignores PC entirely. That&apos;s leaving points
-          on the table.
-        </p>
-
-        <p className="text-text-secondary">
-          These 11 tips cover both subtests. WK strategies for vocabulary
-          questions, PC strategies for reading passages, and the study habits
-          that tie them together. Each tip includes a specific technique you can
-          apply in your next study session.
+          WK feeds into VE (Verbal Expression), and VE is the only AFQT
+          component that gets doubled.{" "}
+          <strong>ASVAB word knowledge tips</strong> that ignore this formula
+          leave points on the table. A 5-point VE improvement creates a 10-point
+          AFQT jump. No other subtest offers that return. The subtest has two
+          formats: definition-only (choose a synonym for an isolated word) and
+          word-in-context (identify the meaning of an underlined word in a
+          sentence). The 9 strategies below cover both formats, from root-word
+          decoding to CAT-adaptive pacing to trap answer elimination. Plug your
+          current scores into the{" "}
+          <Link
+            href="/calculator"
+            className="text-accent hover:text-accent-hover"
+          >
+            free ASVAB score calculator
+          </Link>{" "}
+          to see where you stand.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Key Point</p>
+          <p className="text-sm font-semibold text-text-primary">Key Point:</p>
           <p className="mt-1 text-sm text-text-secondary">
-            AFQT = 2VE + AR + MK. VE = WK + PC. Every verbal point you gain
-            counts twice. This is the fastest path to raising your AFQT.
+            AFQT = 2(VE) + AR + MK. VE is the ONLY component multiplied by 2.
+            Improving WK directly inflates VE, which double-inflates your AFQT.
           </p>
         </aside>
 
-        <p className="text-text-secondary">
-          Already have scores? Plug them into the{" "}
-          <Link href="/calculator">free ASVAB score calculator</Link> to see
-          your current VE and AFQT.
-        </p>
-
-        {/* TIP 1 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          1. Understand Why VE Is the Highest-Leverage Score on the ASVAB
+          1. Understand Why WK Has 2x AFQT Leverage
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Most people study all four AFQT subtests equally. That&apos;s a
-          mistake. The AFQT formula gives VE twice the weight of every other
-          score.
+          Most test-takers split study time equally across subtests. The AFQT
+          formula punishes that approach.
+        </p>
+        <p className="text-text-secondary">
+          The scoring chain works like this. Your WK and PC raw scores combine
+          into a VE (Verbal Expression) scaled score via a lookup table. VE
+          ranges from 20 (0&ndash;3 correct across both subtests) to 62 (all 50
+          correct). That VE score then gets doubled in the AFQT formula. AR and
+          MK count once each. They are not doubled.
         </p>
 
-        <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          AFQT = 2(VE) + AR + MK, where VE = WK + PC
+        <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-sm font-bold text-accent">
+          <p>WK + PC = VE (Verbal Expression)</p>
+          <p>AFQT = 2(VE) + AR + MK</p>
+          <p>VE is the ONLY doubled component.</p>
+          <p>5-point VE improvement = 10-point AFQT jump.</p>
         </div>
 
         <p className="text-text-secondary">
-          VE (Verbal Expression) combines your Word Knowledge and Paragraph
-          Comprehension raw scores into a single scaled score ranging from 20 to
-          62. Because VE is multiplied by 2 in the AFQT calculation, every point
-          of VE improvement has double the AFQT impact of an AR or MK point.
+          The cascade goes beyond AFQT. VE appears in 13+ branch composite
+          scores: Army GT, CL, SC, OF, ST; Navy GT, NUC, OPS, HM; Air Force A,
+          G; Marine Corps CL, GT, ST. Improving your WK score raises your GT,
+          CL, SC, and other line scores simultaneously. A single subtest
+          improvement moves your qualification status for dozens of military jobs
+          across every branch.
         </p>
 
-        <p className="text-text-secondary">
-          Concrete comparison: if your VE goes from 45 to 50, your AFQT
-          calculation gains 10 raw points. If your AR goes from 45 to 50, you
-          gain only 5. Same effort, double the payoff on the verbal side.
-        </p>
+        <div className="my-4 space-y-2">
+          <div className="rounded-lg bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-accent">
+              VE multiplier in AFQT
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">
+              2x (AR and MK are 1x each)
+            </p>
+          </div>
+          <div className="rounded-lg bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-accent">
+              Branch composites using VE
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">
+              13+ across all branches
+            </p>
+          </div>
+          <div className="rounded-lg bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-accent">
+              Study time recommendation
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">
+              50% of total ASVAB prep on vocabulary
+            </p>
+          </div>
+        </div>
 
         <p className="text-text-secondary">
-          VE also feeds into branch-specific composite scores that determine
-          which jobs you qualify for.
+          If you only have 4 weeks to prepare, spend half your study time on
+          vocabulary. In a 60-minute session, that means 30 minutes on
+          WK-targeted vocabulary work. The math justifies the allocation: no
+          other subtest delivers this return. Of the 20,000 most common English
+          words, approximately 10,000 derive from Latin and 2,000 from Greek, so
+          vocabulary study follows learnable patterns rather than brute
+          memorization. For a deeper look at how AFQT, VE, and composites
+          connect, check out{" "}
+          <Link
+            href="/asvab-scores-explained"
+            className="text-accent hover:text-accent-hover"
+          >
+            ASVAB scores explained
+          </Link>{" "}
+          or the{" "}
+          <Link
+            href="/afqt-score"
+            className="text-accent hover:text-accent-hover"
+          >
+            AFQT score
+          </Link>{" "}
+          breakdown.
+        </p>
+
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          2. Decode Unknown Words with Prefix, Root, and Suffix Analysis
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          You will see words on the ASVAB you have never studied. Root-word
+          decoding turns an unknown word into a solvable puzzle instead of a
+          guess.
+        </p>
+        <p className="text-text-secondary">
+          The method has three steps. First, identify the prefix if one exists.
+          Prefixes signal negation, direction, or degree. Second, find the root,
+          which carries the core meaning. Third, combine prefix and root to build
+          a working definition, then match it to the closest answer choice.
+        </p>
+        <p className="text-text-secondary">
+          Apply this process to three ASVAB-level examples.
+        </p>
+        <p className="text-text-secondary">
+          &ldquo;Introspect&rdquo;: the prefix &ldquo;intro&rdquo; means
+          &ldquo;within&rdquo; and the root &ldquo;spect&rdquo; means &ldquo;to
+          look.&rdquo; Combined meaning: to look within. That gets you to the
+          correct answer.
+        </p>
+        <p className="text-text-secondary">
+          &ldquo;Incoherent&rdquo;: the prefix &ldquo;in-&rdquo; means
+          &ldquo;not&rdquo; and &ldquo;coherent&rdquo; means logical. So
+          &ldquo;incoherent&rdquo; means not logical. The correct answer is
+          &ldquo;disjointed,&rdquo; and you can eliminate &ldquo;lucid&rdquo;
+          (opposite), &ldquo;resistant&rdquo; (unrelated), and
+          &ldquo;sleepy&rdquo; (tangential).
+        </p>
+        <p className="text-text-secondary">
+          &ldquo;Beneficent&rdquo;: you might not know this word, but you
+          recognize &ldquo;benefi-&rdquo; from &ldquo;benefit.&rdquo; That
+          connection to helpfulness eliminates &ldquo;troubled,&rdquo;
+          &ldquo;unhappy,&rdquo; and &ldquo;beautiful,&rdquo; leaving
+          &ldquo;kind&rdquo; as the correct answer.
         </p>
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Composite</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Formula</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">Why It Matters</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Root
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Meaning
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Example Words
+                </th>
               </tr>
             </thead>
             <tbody className="text-text-secondary">
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Army GT</td>
-                <td className="py-2 pr-4 font-mono">VE + AR</td>
-                <td className="py-2">110+ required for cyber, intel, medical jobs</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  port
+                </td>
+                <td className="py-2 pr-4">carry</td>
+                <td className="py-2">import, export, transport, portable</td>
               </tr>
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Air Force General</td>
-                <td className="py-2 pr-4 font-mono">VE + AR</td>
-                <td className="py-2">Feeds most AFSC assignments</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  spect
+                </td>
+                <td className="py-2 pr-4">look/see</td>
+                <td className="py-2">inspect, spectator, introspect</td>
               </tr>
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Marine Corps GT</td>
-                <td className="py-2 pr-4 font-mono">VE + AR</td>
-                <td className="py-2">Gateway to technical MOS</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  rupt
+                </td>
+                <td className="py-2 pr-4">break</td>
+                <td className="py-2">rupture, interrupt, disrupt, erupt</td>
               </tr>
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Army CL</td>
-                <td className="py-2 pr-4 font-mono">VE + AR + MK</td>
-                <td className="py-2">Clerical and admin roles</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  mal
+                </td>
+                <td className="py-2 pr-4">bad/evil</td>
+                <td className="py-2">malevolent, malicious, malfunction</td>
               </tr>
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Army ST</td>
-                <td className="py-2 pr-4 font-mono">VE + GS + MK</td>
-                <td className="py-2">Science and technical fields</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  bene
+                </td>
+                <td className="py-2 pr-4">good</td>
+                <td className="py-2">benefit, benevolent, beneficent</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  dict
+                </td>
+                <td className="py-2 pr-4">speak</td>
+                <td className="py-2">dictate, predict, contradict</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  struct
+                </td>
+                <td className="py-2 pr-4">build</td>
+                <td className="py-2">construct, instruct, obstruct</td>
               </tr>
               <tr>
-                <td className="py-2 pr-4 font-semibold text-text-primary">Army FA</td>
-                <td className="py-2 pr-4 font-mono">VE + AR + MK + MC</td>
-                <td className="py-2">Field artillery positions</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  tract
+                </td>
+                <td className="py-2 pr-4">pull/drag</td>
+                <td className="py-2">extract, retract, distract</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <p className="text-text-secondary">
-          VE appears in 6 Army composites, 2 Air Force composites, and the
-          Marine GT score, making it the single most reused score across all
-          branches. Raising your VE doesn&apos;t just boost your AFQT. It opens
-          doors to more military career fields.
+          Latin and Greek roots account for over 60% of English words. In
+          science and technical vocabulary, that figure rises above 90%. About
+          80% of entries in any English dictionary are borrowed, mainly from
+          Latin. Learning 30 high-frequency roots unlocks decoding ability for
+          hundreds of ASVAB-level words.
         </p>
+
+        <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
+          <p className="text-sm font-semibold text-emerald-400">Tip:</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            You don&apos;t need the precise definition. Recognizing
+            &ldquo;benefi-&rdquo; from &ldquo;benefit&rdquo; is enough to
+            eliminate 3 of 4 answer choices. Partial recognition wins.
+          </p>
+        </aside>
 
         <p className="text-text-secondary">
-          For a full breakdown of how these scores connect, see{" "}
-          <Link href="/asvab-scores-explained">ASVAB scores explained</Link>.
+          Practice with the table above. Cover the right two columns and quiz
+          yourself on each root&apos;s meaning. Then try generating example
+          words from memory.
         </p>
 
-        {/* TIP 2 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          2. Know Exactly What WK and PC Test (They&apos;re Different)
+          3. Study Words in Synonym Clusters, Not Isolation
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          People study &ldquo;verbal&rdquo; as one thing. WK and PC are two
-          separate tests with different formats, different timing, and different
-          skills. Treating them the same wastes your prep time.
+          Studying &ldquo;vague&rdquo; in isolation prepares you for one
+          question. Studying its synonym cluster prepares you for five.
+        </p>
+        <p className="text-text-secondary">
+          A synonym cluster is a group of words that share the same core
+          meaning. On the ASVAB, any word in the cluster could appear as the
+          target word or as the correct answer choice. Knowing the cluster gives
+          you multiple attack angles on test day.
+        </p>
+        <p className="text-text-secondary">
+          Build clusters in three steps. Start with a target word you missed on
+          a practice test. Use a thesaurus to find 3&ndash;5 synonyms at ASVAB
+          difficulty level. Study the group as a unit because all the words map
+          to one meaning.
+        </p>
+
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Core Meaning
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Cluster Words
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  unclear
+                </td>
+                <td className="py-2">
+                  vague, ambiguous, dubious, obscure, imprecise
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  hostile
+                </td>
+                <td className="py-2">
+                  belligerent, bellicose, antagonistic, combative
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  kind/generous
+                </td>
+                <td className="py-2">
+                  benevolent, charitable, altruistic, magnanimous
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  brief/short
+                </td>
+                <td className="py-2">concise, succinct, terse, pithy</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  hinder/block
+                </td>
+                <td className="py-2">impede, obstruct, inhibit, hamper</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-text-secondary">
+          Learning &ldquo;vague&rdquo; with its cluster means you can answer
+          correctly whether &ldquo;vague,&rdquo; &ldquo;dubious,&rdquo; or
+          &ldquo;ambiguous&rdquo; appears as the target. If the test asks for a
+          synonym of &ldquo;imprecise,&rdquo; you already know the answer maps
+          to &ldquo;unclear&rdquo; because you studied the entire cluster. One
+          study session covers five potential test questions.
+        </p>
+
+        <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
+          <p className="text-sm font-semibold text-emerald-400">Tip:</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Flashcard hack: put the core meaning on the front, all cluster words
+            on the back. Quiz yourself by naming 3+ synonyms for each meaning.
+          </p>
+        </aside>
+
+        <p className="text-text-secondary">
+          This approach is especially powerful combined with root decoding from
+          Tip 2. The &ldquo;mal&rdquo; cluster (malevolent, malicious, malign,
+          malice) shares both a root and a synonym family. Two{" "}
+          <strong>ASVAB word knowledge tips</strong> working together. Build
+          antonym clusters too: pairing &ldquo;hostile&rdquo; words with
+          &ldquo;kind/generous&rdquo; words reinforces both groups and prepares
+          you for the Opposite trap (Tip 4).
+        </p>
+
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          4. Recognize the 4 Wrong-Answer Traps on WK Questions
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          The ASVAB test writers do not write random wrong answers. They engineer
+          each incorrect choice to trap a specific mistake. Learn the four
+          patterns and you can eliminate on sight.
+        </p>
+
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Trap Type
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  How It Works
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Example
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Synonym Pair
+                </td>
+                <td className="py-2 pr-4">
+                  Two choices mean the same thing. Eliminate both (only one
+                  answer can be correct).
+                </td>
+                <td className="py-2">
+                  &ldquo;inhabit&rdquo;: vacate/depart/leave are all synonyms.
+                  Eliminate all three. &ldquo;reside&rdquo; is correct.
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Opposite
+                </td>
+                <td className="py-2 pr-4">
+                  One choice is the antonym of the target word.
+                </td>
+                <td className="py-2">
+                  If two choices have opposite meanings, one is likely correct.
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Sounds-Like
+                </td>
+                <td className="py-2 pr-4">
+                  A choice sounds similar but differs in meaning.
+                </td>
+                <td className="py-2">
+                  &ldquo;bate&rdquo; (to lessen) vs. &ldquo;bait&rdquo; (to
+                  lure)
+                </td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Partial Meaning
+                </td>
+                <td className="py-2 pr-4">
+                  Captures only one sense of a multi-meaning word.
+                </td>
+                <td className="py-2">
+                  Selecting a common definition when context demands an uncommon
+                  one.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-text-secondary">
+          <strong>Worked example using the Synonym Pair trap.</strong> The word
+          is &ldquo;inform.&rdquo; Your choices are: ignore, ask, question,
+          tell. &ldquo;Ask&rdquo; and &ldquo;question&rdquo; are synonyms of
+          each other, so eliminate both. &ldquo;Ignore&rdquo; is the opposite of
+          inform, so eliminate that too. Remaining answer: &ldquo;tell.&rdquo;
+          You solved it without needing to know the definition.
+        </p>
+        <p className="text-text-secondary">
+          <strong>Worked example combining Opposite + Root analysis.</strong>{" "}
+          The word is &ldquo;deform.&rdquo; Choices A and B are synonyms (both
+          mean to fix or heal), so eliminate both. Apply root analysis:
+          &ldquo;de-&rdquo; means &ldquo;away from&rdquo; and
+          &ldquo;form&rdquo; means &ldquo;shape.&rdquo; Deform means to twist
+          away from shape. The answer is &ldquo;contort.&rdquo;
+        </p>
+
+        <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
+          <p className="text-sm font-semibold text-text-primary">Key Point:</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            The synonym pair rule is the most powerful elimination tool. If two
+            choices mean the same thing, neither can be correct. This often
+            eliminates 2 of 4 options instantly.
+          </p>
+        </aside>
+
+        <p className="text-text-secondary">
+          After every practice question, name which trap you avoided or fell
+          into. Track your results across 50+ questions to identify which trap
+          catches you most often. Building pattern recognition on practice
+          questions means you spot traps automatically on test day.
+        </p>
+
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          5. Pace the CAT-ASVAB with the First Five Rule
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          The CAT-ASVAB is adaptive. The first five questions determine your
+          scoring ceiling for the entire section. Rush them and you cap your
+          score before you even hit question six.
+        </p>
+        <p className="text-text-secondary">
+          The algorithm starts you at assumed average difficulty. A correct
+          answer triggers a harder next question worth more points. A wrong
+          answer triggers an easier next question worth fewer points. The first 5
+          questions bracket your ability level. Once the algorithm locks you into
+          a tier, later questions fine-tune within that range.
         </p>
 
         <div className="my-4 overflow-x-auto">
@@ -246,536 +588,196 @@ export default function ASVABWordKnowledgeTipsPage() {
             <thead>
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-4 text-left font-semibold text-text-secondary"></th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Word Knowledge (WK)</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">Paragraph Comprehension (PC)</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  CAT-ASVAB
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Paper-and-Pencil
+                </th>
               </tr>
             </thead>
             <tbody className="text-text-secondary">
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">CAT Questions</td>
-                <td className="py-2 pr-4">16</td>
-                <td className="py-2">11</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Questions
+                </td>
+                <td className="py-2 pr-4 font-mono">16</td>
+                <td className="py-2 font-mono">35</td>
               </tr>
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">CAT Time</td>
-                <td className="py-2 pr-4">8 min (~30 sec/q)</td>
-                <td className="py-2">22 min (~2 min/q)</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Time
+                </td>
+                <td className="py-2 pr-4 font-mono">8 minutes</td>
+                <td className="py-2 font-mono">11 minutes</td>
               </tr>
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Paper Questions</td>
-                <td className="py-2 pr-4">35</td>
-                <td className="py-2">15</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Per question
+                </td>
+                <td className="py-2 pr-4 font-mono">~30 sec</td>
+                <td className="py-2 font-mono">~19 sec</td>
               </tr>
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Paper Time</td>
-                <td className="py-2 pr-4">11 min (~19 sec/q)</td>
-                <td className="py-2">13 min (~52 sec/q)</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Can skip?
+                </td>
+                <td className="py-2 pr-4">No</td>
+                <td className="py-2">Yes</td>
               </tr>
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Format</td>
-                <td className="py-2 pr-4">Single word + 4 answer choices</td>
-                <td className="py-2">Short passage + question</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Adaptive?
+                </td>
+                <td className="py-2 pr-4">Yes</td>
+                <td className="py-2">No</td>
               </tr>
               <tr>
-                <td className="py-2 pr-4 font-semibold text-text-primary">Skill Tested</td>
-                <td className="py-2 pr-4">Vocabulary breadth</td>
-                <td className="py-2">Reading comprehension</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Wrong-answer penalty?
+                </td>
+                <td className="py-2 pr-4">Clustered errors penalized</td>
+                <td className="py-2">None</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <p className="text-text-secondary">
-          WK has two question types. The first and most common is &ldquo;X most
-          nearly means ___,&rdquo; a pure synonym question. The second is
-          &ldquo;X as used in the sentence most nearly means ___,&rdquo; which
-          tests definition-in-context.
+          Front-load your time on the CAT. The first five questions deserve
+          extra investment because they set the difficulty tier for the rest of
+          the section.
         </p>
 
-        <p className="text-text-secondary">
-          PC covers a wider range. Question types include main idea,
-          author&apos;s purpose, supporting detail, inference,
-          vocabulary-in-context, tone/mood, and cause/effect. Each one requires a
-          slightly different reading approach.
-        </p>
-
-        <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-emerald-400">Tip</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            WK is a speed test. 30 seconds per question means you know the word
-            or you don&apos;t. PC gives you 2 minutes per question, which means
-            strategy matters more than raw knowledge.
-          </p>
-        </aside>
-
-        <p className="text-text-secondary">
-          WK words are below SAT level. These are words like
-          &ldquo;benevolent,&rdquo; &ldquo;arduous,&rdquo; or
-          &ldquo;mitigate.&rdquo; You don&apos;t need a graduate-level
-          vocabulary. You need solid command of everyday English words that
-          educated adults use in writing.
-        </p>
-
-        {/* TIP 3 */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          3. Learn These 24 Root Words to Decode Words You&apos;ve Never Seen
-        </h2>
-
-        <p className="mt-4 text-text-secondary">
-          You won&apos;t memorize every word on the ASVAB. But you can learn 24
-          Latin and Greek roots that unlock hundreds of words. When a WK question
-          throws a word you&apos;ve never seen, roots let you make an educated
-          breakdown instead of a blind guess.
-        </p>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Root</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Meaning</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">Example Words</th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">dict</td>
-                <td className="py-2 pr-4">say, speak</td>
-                <td className="py-2">dictate, predict, verdict</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">port</td>
-                <td className="py-2 pr-4">carry</td>
-                <td className="py-2">transport, portable, export</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">scrib/script</td>
-                <td className="py-2 pr-4">write</td>
-                <td className="py-2">describe, manuscript, inscription</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">bene</td>
-                <td className="py-2 pr-4">good, well</td>
-                <td className="py-2">benefit, benevolent, benefactor</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">mal</td>
-                <td className="py-2 pr-4">bad</td>
-                <td className="py-2">malfunction, malicious, malcontent</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">tract</td>
-                <td className="py-2 pr-4">pull, drag</td>
-                <td className="py-2">extract, retract, traction</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">voc/vok</td>
-                <td className="py-2 pr-4">call, voice</td>
-                <td className="py-2">vocal, invoke, revoke</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">mit/miss</td>
-                <td className="py-2 pr-4">send</td>
-                <td className="py-2">transmit, missile, dismiss</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">man/manu</td>
-                <td className="py-2 pr-4">hand</td>
-                <td className="py-2">manual, manufacture, manipulate</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">cap/cept</td>
-                <td className="py-2 pr-4">take, seize</td>
-                <td className="py-2">capture, accept, intercept</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">duc/duct</td>
-                <td className="py-2 pr-4">lead</td>
-                <td className="py-2">conduct, deduce, induct</td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">fac/fic</td>
-                <td className="py-2 pr-4">make, do</td>
-                <td className="py-2">factory, efficient, artificial</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Root</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Meaning</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">Example Words</th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">cogn</td>
-                <td className="py-2 pr-4">know</td>
-                <td className="py-2">recognize, cognition, incognito</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">path</td>
-                <td className="py-2 pr-4">feeling</td>
-                <td className="py-2">sympathy, apathy, empathetic</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">aud</td>
-                <td className="py-2 pr-4">hear</td>
-                <td className="py-2">audible, audience, auditorium</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">vis/vid</td>
-                <td className="py-2 pr-4">see</td>
-                <td className="py-2">visible, evidence, visual</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">spec</td>
-                <td className="py-2 pr-4">look</td>
-                <td className="py-2">inspect, spectacle, perspective</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">ped</td>
-                <td className="py-2 pr-4">foot</td>
-                <td className="py-2">pedestrian, pedal, expedition</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">terr</td>
-                <td className="py-2 pr-4">earth</td>
-                <td className="py-2">terrain, territory, terrestrial</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">aqua</td>
-                <td className="py-2 pr-4">water</td>
-                <td className="py-2">aquatic, aquarium, aqueduct</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">bio</td>
-                <td className="py-2 pr-4">life</td>
-                <td className="py-2">biology, biography, antibiotic</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">graph/gram</td>
-                <td className="py-2 pr-4">write, record</td>
-                <td className="py-2">paragraph, telegram, graphic</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">temp</td>
-                <td className="py-2 pr-4">time</td>
-                <td className="py-2">temporary, contemporary, tempo</td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">struct</td>
-                <td className="py-2 pr-4">build</td>
-                <td className="py-2">construct, structure, destruct</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-emerald-400">Tip</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            Combine roots with common prefixes: un- (not), pre- (before), re-
-            (again), mis- (wrong), sub- (under), trans- (across).
-            &ldquo;Transport&rdquo; = trans (across) + port (carry) = carry
-            across.
-          </p>
-        </aside>
-
-        <p className="text-text-secondary">
-          Study method: learn 4 roots per day. In 6 days you cover all 24. Drill
-          with flashcards until you recall each root&apos;s meaning in under 3
-          seconds.
-        </p>
-
-        {/* TIP 4 */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          4. Use Prefix and Suffix Clues When You&apos;re Stuck
-        </h2>
-
-        <p className="mt-4 text-text-secondary">
-          When you can&apos;t identify the root, check the prefix and suffix.
-          The beginning and ending of a word often reveal enough meaning to
-          eliminate wrong answers.
-        </p>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Prefix</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Meaning</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">Example</th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">un-, in-, im-, ir-, il-</td>
-                <td className="py-2 pr-4">not</td>
-                <td className="py-2">unable, incomplete, impossible</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">pre-</td>
-                <td className="py-2 pr-4">before</td>
-                <td className="py-2">predict, prevent, premature</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">re-</td>
-                <td className="py-2 pr-4">again</td>
-                <td className="py-2">rebuild, revisit, reconsider</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">mis-</td>
-                <td className="py-2 pr-4">wrong, bad</td>
-                <td className="py-2">mislead, misunderstand, misjudge</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">dis-</td>
-                <td className="py-2 pr-4">opposite, apart</td>
-                <td className="py-2">disagree, disconnect, displace</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">sub-</td>
-                <td className="py-2 pr-4">under, below</td>
-                <td className="py-2">submarine, substandard, subtitle</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">trans-</td>
-                <td className="py-2 pr-4">across</td>
-                <td className="py-2">transfer, translate, transform</td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">anti-</td>
-                <td className="py-2 pr-4">against</td>
-                <td className="py-2">antibody, antisocial, antidote</td>
-              </tr>
-            </tbody>
-          </table>
+        <div className="my-4 space-y-2">
+          <div className="rounded-lg bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-accent">
+              First 5 questions
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">
+              Up to 45 sec each (3:45 total)
+            </p>
+          </div>
+          <div className="rounded-lg bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-accent">
+              Remaining 11 questions
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">
+              ~23 sec each (4:15 total)
+            </p>
+          </div>
+          <div className="rounded-lg bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-accent">Total</p>
+            <p className="mt-1 text-sm text-text-secondary">8 minutes</p>
+          </div>
         </div>
 
         <p className="text-text-secondary">
-          Key suffixes reveal part of speech, which helps you match the answer
-          format.
+          Two critical CAT rules. You cannot go back. Every answer is final.
+          Pressing the red HELP key pauses your timer, so help time does not
+          count against your subtest limit.
         </p>
-
         <p className="text-text-secondary">
-          Noun suffixes: -tion/-sion (action), -ment (result), -ness (quality),
-          -er/-or (person who). Adjective suffixes: -ous/-ious (full of),
-          -able/-ible (capable of), -ful (having), -less (without). Verb
-          suffixes: -ify (to make), -ize (to cause), -ate (to act).
-        </p>
-
-        <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-emerald-400">Tip</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            On WK questions, run a 3-step check: (1) Does it start with a
-            negative prefix? That eliminates positive choices. (2) What root do I
-            see? (3) Does the suffix tell me if it&apos;s a noun, verb, or
-            adjective?
-          </p>
-        </aside>
-
-        <p className="text-text-secondary">
-          Worked example: &ldquo;Benevolent.&rdquo; Bene (good) + vol
-          (will/wish) + -ent (adjective suffix) = having good will = kind,
-          generous. Even if you&apos;ve never seen the word, the pieces give you
-          the answer.
-        </p>
-
-        {/* TIP 5 */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          5. Slow Down on the First 5 CAT-ASVAB Word Knowledge Questions
-        </h2>
-
-        <p className="mt-4 text-text-secondary">
-          The first few WK questions carry the highest scoring weight on the
-          CAT-ASVAB. The adaptive algorithm is still calibrating your ability
-          level, so early mistakes cost more than late ones.
-        </p>
-
-        <div className="my-4 rounded-lg bg-navy p-4">
-          <ul className="space-y-1 text-sm text-text-secondary">
-            <li>
-              <strong>Starting point:</strong> Test begins at medium difficulty
-            </li>
-            <li>
-              <strong>Right answer:</strong> Next word is harder
-            </li>
-            <li>
-              <strong>Wrong answer:</strong> Next word is easier
-            </li>
-            <li>
-              <strong>First 5 questions:</strong> Carry the highest scoring
-              weight and set your difficulty bracket
-            </li>
-            <li>
-              <strong>No going back:</strong> You cannot skip or return to
-              previous answers
-            </li>
-            <li>
-              <strong>Late questions:</strong> Fine-tune your score but
-              can&apos;t fully recover from early mistakes
-            </li>
-          </ul>
-        </div>
-
-        <p className="text-text-secondary">
-          Sixteen questions in 8 minutes works out to 30 seconds each. That
-          feels fast, so people rush through the opening questions to
-          &ldquo;bank&rdquo; time. This is backwards.
-        </p>
-
-        <p className="text-text-secondary">
-          On questions 1 through 5, use the full 30 seconds. Read every answer
-          choice. Distinguish between similar words like &ldquo;amiable&rdquo;
-          (friendly) and &ldquo;amenable&rdquo; (willing to agree). A wrong
-          answer on question 2 hurts far more than a wrong answer on question
-          14.
+          <strong>Paper-and-pencil strategy.</strong> With 19 seconds per
+          question, speed is everything. Pass 1: answer every word you know
+          instantly. Pass 2: return to unknowns and apply root decoding (Tip 2)
+          and elimination (Tip 4).
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-amber-400">Warning</p>
+          <p className="text-sm font-semibold text-amber-400">Warning:</p>
           <p className="mt-1 text-sm text-text-secondary">
-            There&apos;s no passage to re-read, no calculation to check. Read
-            all four choices before clicking. That takes 10 seconds. Do not skip
-            it on early questions.
+            Never leave a question blank on paper ASVAB. There is no penalty for
+            wrong answers. Blank = 0% chance. Guess = 25% chance.
           </p>
         </aside>
 
         <p className="text-text-secondary">
-          Time budget: spend 35 to 40 seconds on questions 1 through 5 (roughly
-          3 minutes total). That leaves 5 minutes for the remaining 11
-          questions, about 27 seconds each. The math works. If you finish early
-          on later questions, that confirms you allocated correctly.
+          Ask your recruiter which format you will take. MEPS uses the CAT. MET
+          sites sometimes use paper-and-pencil. Practice the pacing strategy
+          that matches your test format.
         </p>
 
-        {/* TIP 6 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          6. Read the Question Before the Passage on PC
+          6. Use Context Clues on In-Sentence Questions
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          PC gives you about 2 minutes per question. The order you read in
-          determines whether you use that time well or waste it scanning the
-          same passage twice.
+          Roughly half of WK questions give you a sentence with an underlined
+          word. That sentence is a gift. It contains clues the standalone format
+          does not provide.
         </p>
-
-        <div className="my-4 rounded-lg bg-navy p-4">
-          <ul className="space-y-1 text-sm text-text-secondary">
-            <li>
-              <strong>Step 1:</strong> Read the question first (5-10 seconds)
-            </li>
-            <li>
-              <strong>Step 2:</strong> Now you know what you&apos;re looking for
-            </li>
-            <li>
-              <strong>Step 3:</strong> Read the passage with that question in
-              mind
-            </li>
-            <li>
-              <strong>Step 4:</strong> Answer directly from the text, not from
-              your own knowledge
-            </li>
-          </ul>
-        </div>
-
         <p className="text-text-secondary">
-          Reading the question first turns passive reading into active scanning.
-          Instead of absorbing the entire passage and then trying to remember
-          what matters, you know exactly what detail, idea, or inference the
-          question targets before you start reading.
-        </p>
-
-        <p className="text-text-secondary">
-          Recognize the question type before you read. Main idea questions mean
-          you&apos;re looking for the central point. Supporting detail questions
-          mean you&apos;re looking for a specific fact. Inference questions mean
-          you need one logical step beyond what&apos;s stated. Author&apos;s
-          purpose questions focus on why the passage was written.
-        </p>
-
-        <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-emerald-400">Tip</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            For &ldquo;according to the passage&rdquo; questions, the answer is
-            stated directly in the text. For inference questions, the answer is
-            one logical step beyond what&apos;s stated. Know which type
-            you&apos;re dealing with before you read.
-          </p>
-        </aside>
-
-        <p className="text-text-secondary">
-          Common mistake: using prior knowledge instead of the passage. If the
-          passage says &ldquo;the process takes 3 days,&rdquo; the correct
-          answer is 3, even if you happen to know it actually takes 5. PC tests
-          reading comprehension, not subject expertise.
-        </p>
-
-        {/* TIP 7 */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          7. Master the Four Context Clue Types for PC Vocabulary Questions
-        </h2>
-
-        <p className="mt-4 text-text-secondary">
-          When PC asks what a word means &ldquo;as used in the passage,&rdquo;
-          the answer is sitting in the surrounding text. You just need to know
-          where to look. There are four types of context clues, and recognizing
-          them turns guesswork into a system.
+          The WK subtest has two question types. The first is definition-only: a
+          word presented alone, and you choose its synonym. Slightly more than
+          half of WK questions use this format. The second is an emphasized word
+          in context: a word underlined in a sentence, and you select its meaning
+          using surrounding clues. The strategy below applies to the second type.
         </p>
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Clue Type</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">How It Works</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Signal Words</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">Example</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Clue Type
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Signal Words
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Example
+                </th>
               </tr>
             </thead>
             <tbody className="text-text-secondary">
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Definition</td>
-                <td className="py-2 pr-4">Passage directly defines the word</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Direct definition
+                </td>
                 <td className="py-2 pr-4">
-                  &ldquo;which means,&rdquo; &ldquo;is defined as,&rdquo;
-                  &ldquo;refers to&rdquo;
+                  &ldquo;is,&rdquo; &ldquo;means,&rdquo; comma-separated
                 </td>
                 <td className="py-2">
-                  &ldquo;Osmosis, which is the movement of water...&rdquo;
+                  &ldquo;The desert is arid and dry.&rdquo; &ldquo;dry&rdquo;
+                  defines &ldquo;arid.&rdquo;
                 </td>
               </tr>
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Example</td>
-                <td className="py-2 pr-4">Passage gives examples that reveal meaning</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Contrast/antonym
+                </td>
+                <td className="py-2 pr-4">
+                  &ldquo;but,&rdquo; &ldquo;however,&rdquo;
+                  &ldquo;unlike,&rdquo; &ldquo;not like&rdquo;
+                </td>
+                <td className="py-2">
+                  &ldquo;Jonah was not like his neurotic brother; he was much
+                  more placid.&rdquo; neurotic = opposite of placid.
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Example
+                </td>
                 <td className="py-2 pr-4">
                   &ldquo;such as,&rdquo; &ldquo;for example,&rdquo;
                   &ldquo;including&rdquo;
                 </td>
                 <td className="py-2">
-                  &ldquo;Nocturnal animals, such as owls and bats...&rdquo;
+                  &ldquo;Noxious gases, such as carbon monoxide...&rdquo;
                 </td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Substitution</td>
-                <td className="py-2 pr-4">Replace the word with each answer choice</td>
-                <td className="py-2 pr-4">(none, you test each option)</td>
-                <td className="py-2">Plug each choice in and see which fits</td>
               </tr>
               <tr>
-                <td className="py-2 pr-4 font-semibold text-text-primary">Logic</td>
-                <td className="py-2 pr-4">Surrounding sentences reveal meaning through contrast</td>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Hyperbole/tone
+                </td>
                 <td className="py-2 pr-4">
-                  &ldquo;but,&rdquo; &ldquo;however,&rdquo;
-                  &ldquo;although,&rdquo; &ldquo;unlike&rdquo;
+                  Exaggerated language signaling magnitude
                 </td>
                 <td className="py-2">
-                  &ldquo;Unlike the gregarious mayor, the treasurer was
-                  shy...&rdquo;
+                  &ldquo;The prodigious amount of food was enough to feed a
+                  whole country.&rdquo; prodigious = enormous.
                 </td>
               </tr>
             </tbody>
@@ -783,431 +785,406 @@ export default function ASVABWordKnowledgeTipsPage() {
         </div>
 
         <p className="text-text-secondary">
-          Substitution is the most universally useful. It works on every
-          vocabulary-in-context question regardless of what clues the passage
-          provides. Plug each answer choice into the sentence where the word
-          appears. The one that preserves the sentence&apos;s meaning is
-          correct.
+          Use this four-step strategy for in-sentence questions.
         </p>
 
+        <ol className="my-4 list-decimal space-y-2 pl-6 text-text-secondary">
+          <li>Read the sentence and mentally blank the underlined word.</li>
+          <li>Fill in your own word that fits the blank.</li>
+          <li>Match your word to the closest answer choice.</li>
+          <li>
+            Substitute back into the sentence to verify it makes sense.
+          </li>
+        </ol>
+
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-emerald-400">Tip</p>
+          <p className="text-sm font-semibold text-emerald-400">Tip:</p>
           <p className="mt-1 text-sm text-text-secondary">
-            Logic clues with contrast words (&ldquo;but,&rdquo;
-            &ldquo;however,&rdquo; &ldquo;although&rdquo;) are the easiest to
-            spot. If the passage says &ldquo;Although the task was arduous, the
-            reward was generous,&rdquo; the contrast tells you
-            &ldquo;arduous&rdquo; means something negative or difficult.
+            Contrast clues are the most reliable. Words like
+            &ldquo;although,&rdquo; &ldquo;despite,&rdquo;
+            &ldquo;however,&rdquo; and &ldquo;while&rdquo; signal that the
+            unknown word means the opposite of something already stated. Spot the
+            contrast word, find the opposite.
           </p>
         </aside>
 
         <p className="text-text-secondary">
-          Build this skill outside of test prep. When reading anything, pause on
-          unfamiliar words and identify which context clue type the surrounding
-          text provides. This trains the exact skill PC tests.
+          On standalone questions where no context exists, fall back to root
+          decoding (Tip 2) and trap elimination (Tip 4). The two strategies
+          complement each other and cover both{" "}
+          <strong>ASVAB word knowledge</strong> question formats.
         </p>
 
-        {/* TIP 8 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          8. Eliminate Wrong Answers Before You Pick on WK
+          7. Use Spaced Repetition Flashcards, Not Cram Sessions
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Even when you don&apos;t know a word&apos;s exact meaning, you can
-          often eliminate 2 or 3 wrong answers and turn a blind guess into a
-          coin flip or better.
+          Reviewing 200 flashcards once is less effective than reviewing 15
+          cards every day for two weeks. The difference is spaced repetition.
+        </p>
+        <p className="text-text-secondary">
+          The algorithm surfaces words you are about to forget, right before the
+          memory fades. Each successful recall extends the interval before the
+          card appears again. Anki&apos;s default algorithm doubles the interval
+          after each correct recall: a card you get right at 1 day reappears at
+          2 days, then 4, then 8. Words you struggle with show up more
+          frequently. Words you know well fade into longer intervals.
         </p>
 
-        <div className="my-4 rounded-lg bg-navy p-4">
-          <ul className="space-y-1 text-sm text-text-secondary">
-            <li>
-              <strong>Eliminate opposites:</strong> Vague sense the word is
-              positive? Cross out negative choices.
-            </li>
-            <li>
-              <strong>Eliminate unrelated words:</strong> One or two choices are
-              often completely unrelated to the word&apos;s domain.
-            </li>
-            <li>
-              <strong>Watch for look-alike traps:</strong>{" "}
-              &ldquo;Ingenious&rdquo; (clever) vs. &ldquo;ingenuous&rdquo;
-              (innocent/naive) are designed to trip you up.
-            </li>
-            <li>
-              <strong>Use root knowledge:</strong> Apply what you learned in Tip
-              3 to confirm or eliminate choices.
-            </li>
-          </ul>
+        <div className="my-4 space-y-2">
+          <div className="rounded-lg bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-accent">
+              New words per day
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">10</p>
+          </div>
+          <div className="rounded-lg bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-accent">
+              Review cards per day
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">
+              15&ndash;20 (mix of new + due reviews)
+            </p>
+          </div>
+          <div className="rounded-lg bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-accent">
+              Session length
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">
+              10&ndash;15 minutes
+            </p>
+          </div>
+          <div className="rounded-lg bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-accent">
+              Weekly target
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">
+              70 new words + ongoing review
+            </p>
+          </div>
         </div>
 
         <p className="text-text-secondary">
-          The process takes 10 seconds. Scan all four choices. Cross out what
-          clearly doesn&apos;t fit. Then compare the remaining options more
-          carefully.
+          Design your flashcards for the WK subtest specifically. Put the target
+          word on the front. On the back, include the definition, 2&ndash;3
+          synonyms, and one example sentence. For root-decodable words, add the
+          prefix and root breakdown on the back so you reinforce both strategies
+          at once.
         </p>
-
         <p className="text-text-secondary">
-          Worked example: &ldquo;Credulous&rdquo; most nearly means (A)
-          skeptical, (B) gullible, (C) angry, (D) creative. You recognize
-          &ldquo;cred&rdquo; (believe, as in &ldquo;credible&rdquo;). The
-          suffix &ldquo;-ulous&rdquo; means &ldquo;tending to.&rdquo; So
-          &ldquo;credulous&rdquo; means tending to believe. Cross out (C) angry
-          and (D) creative, both unrelated. Between (A) skeptical and (B)
-          gullible, &ldquo;tending to believe&rdquo; matches gullible. Answer:
-          B.
-        </p>
-
-        <p className="text-text-secondary">
-          Another heuristic: if the word feels negative, eliminate positive
-          choices. If it feels positive, eliminate negative ones. Even a vague
-          sense of tone narrows the field.
-        </p>
-
-        <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-amber-400">Warning</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            The most common WK trap is the &ldquo;sounds right&rdquo; answer, a
-            choice that sounds related but means something different.
-            &ldquo;Fortuitous&rdquo; sounds like &ldquo;fortunate&rdquo; but
-            means accidental, not lucky. Always read all four choices.
-          </p>
-        </aside>
-
-        <p className="text-text-secondary">
-          Guessing rule: eliminate at least 2 choices, then pick from the
-          remaining options if time is short. A 50/50 guess beats an unanswered
-          question on the CAT-ASVAB. The test penalizes unanswered questions
-          more heavily than wrong answers because the adaptive algorithm
-          interprets no response as inability to answer at any difficulty level.
-        </p>
-
-        {/* TIP 9 */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          9. Build Vocabulary Through Reading, Not Just Flashcards
-        </h2>
-
-        <p className="mt-4 text-text-secondary">
-          Flashcards drill words you&apos;ve already encountered. Reading is how
-          you encounter new words in the first place. Reading also builds the
-          comprehension speed you need for PC, which flashcards cannot do.
-        </p>
-
-        <p className="text-text-secondary">
-          WK tests definition knowledge, so flashcards help there. PC tests
-          comprehension in context, where flashcards fall short. You need both
-          methods working together: reading to discover words in natural context,
-          flashcards to lock in definitions.
-        </p>
-
-        <div className="my-4 rounded-lg bg-navy p-4">
-          <ul className="space-y-1 text-sm text-text-secondary">
-            <li>
-              <strong>News articles:</strong> AP News, Reuters, BBC. Written at
-              exactly the vocabulary level the ASVAB tests.
-            </li>
-            <li>
-              <strong>Nonfiction books:</strong> Military history, science,
-              biography.
-            </li>
-            <li>
-              <strong>Time commitment:</strong> 20-30 minutes daily.
-            </li>
-            <li>
-              <strong>Active reading method:</strong> Hit an unfamiliar word, use
-              root/prefix/suffix analysis, look it up, add to your flashcard
-              deck.
-            </li>
-          </ul>
-        </div>
-
-        <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-emerald-400">Tip</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            ASVAB WK vocabulary is below SAT level. These are words like
-            &ldquo;pragmatic,&rdquo; &ldquo;concur,&rdquo;
-            &ldquo;mitigate,&rdquo; &ldquo;facilitate.&rdquo; Regular reading
-            of news articles closes this gap naturally.
-          </p>
-        </aside>
-
-        <p className="text-text-secondary">
-          Active reading in practice: you read a Reuters article and hit the
-          word &ldquo;ameliorate.&rdquo; Break it down: &ldquo;a-&rdquo; (to) +
-          &ldquo;melior&rdquo; (better). Guess it means &ldquo;to make
-          better.&rdquo; Look it up, confirm, add it to your flashcard deck.
-          That single encounter teaches the word more durably than seeing it on a
-          random vocab list.
-        </p>
-
-        <p className="text-text-secondary">
-          Research from ERIC studies shows distributed practice beats massed
-          practice on vocabulary retention. Reading 20 minutes daily for 4 weeks
-          outperforms a 10-hour weekend cram session on follow-up retention
-          tests. The brain consolidates vocabulary during sleep, so daily
-          exposure triggers more consolidation cycles than binge sessions.
-        </p>
-
-        <p className="text-text-secondary">
-          Every 20 minutes of reading simultaneously builds WK vocabulary and PC
-          reading speed.
-        </p>
-
-        {/* TIP 10 */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          10. Use Spaced Repetition Flashcards the Right Way
-        </h2>
-
-        <p className="mt-4 text-text-secondary">
-          Flashcards work, but only with spaced repetition, reviewing at
-          increasing intervals based on how well you know each word. Random
-          flipping through a deck is the least efficient vocabulary study method.
-        </p>
-
-        <div className="my-4 rounded-lg bg-navy p-4">
-          <ul className="space-y-1 text-sm text-text-secondary">
-            <li>
-              <strong>Pile 1 (Don&apos;t Know):</strong> Review every day
-            </li>
-            <li>
-              <strong>Pile 2 (Kinda Know):</strong> Review every 3 days
-            </li>
-            <li>
-              <strong>Pile 3 (Know It):</strong> Review once a week
-            </li>
-            <li>
-              <strong>Right answer:</strong> Move the card up one pile
-            </li>
-            <li>
-              <strong>Wrong answer:</strong> Back to Pile 1 (Don&apos;t Know)
-            </li>
-          </ul>
-        </div>
-
-        <p className="text-text-secondary">
-          What words to study matters as much as how you study them. Start with
-          the 24 roots from Tip 3. Add words you miss on practice tests. Add
-          unfamiliar words from daily reading (Tip 9). Don&apos;t start with a
-          random &ldquo;500 ASVAB Words&rdquo; list. Generic lists waste time on
-          words you already know and skip words in your specific gap areas.
+          Tools that work: Anki (free, best spaced repetition algorithm), Quizlet
+          (free, community ASVAB sets available), or a simple two-column notebook
+          with the word on the left and synonyms on the right. Cover one side to
+          quiz yourself.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-emerald-400">Tip</p>
+          <p className="text-sm font-semibold text-emerald-400">Tip:</p>
           <p className="mt-1 text-sm text-text-secondary">
-            Free apps like Anki automate spaced repetition for you. A physical
-            3-pile system works just as well. What matters is the method, not the
-            medium.
+            Do your flashcard session during dead time: bus rides, lunch breaks,
+            waiting rooms. Consistency matters more than duration. 10 minutes
+            daily for 6 weeks beats 3 hours on a single weekend.
           </p>
         </aside>
 
         <p className="text-text-secondary">
-          Target 10 to 15 new words per week. Over 4 weeks, that&apos;s 40 to
-          60 new words. Combined with root word knowledge from Tip 3, that
-          covers the WK vocabulary range. Don&apos;t try to learn 50 words in a
-          day. Your brain retains 10 words reviewed across 5 days better than 50
-          words crammed in one sitting.
+          Combine flashcards with synonym clusters from Tip 3. Put the core
+          meaning on front, all cluster words on back. This multiplies the value
+          of every card and builds stronger{" "}
+          <strong>ASVAB word knowledge</strong> retention.
         </p>
 
-        {/* TIP 11 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          11. Follow a 4-Week Verbal Study Plan With Real Benchmarks
+          8. Read Above Your Level to Build Passive Vocabulary
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          The Army Academic Skills Development Program documented an average
-          17-point AFQT improvement in just 3 weeks of structured study. One
-          participant went from a 38 to a 72 AFQT, a 34-point gain. Between 43%
-          and 50% of participants moved up at least one AFQT category.
+          &ldquo;Read more&rdquo; is the most common ASVAB vocabulary advice and
+          the least actionable. Active reading with a specific protocol builds
+          WK-relevant vocabulary. Passive page-turning does not.
+        </p>
+        <p className="text-text-secondary">
+          The real enemy is the recognition gap. Many WK words are words you
+          have heard but cannot define: &ldquo;acute,&rdquo;
+          &ldquo;debonair,&rdquo; &ldquo;slander.&rdquo; You recognize them in
+          conversation but cannot match them to a synonym under time pressure.
+          Active reading closes this gap.
+        </p>
+        <p className="text-text-secondary">
+          The protocol has four steps.
+        </p>
+
+        <ol className="my-4 list-decimal space-y-2 pl-6 text-text-secondary">
+          <li>
+            Choose material slightly above your current level. AP News, Reuters,
+            NPR, and Wikipedia entries work well because they use short
+            1&ndash;2 paragraph sections that mirror the ASVAB passage format.
+            Military.com articles build vocabulary and domain knowledge
+            simultaneously.
+          </li>
+          <li>
+            When you hit an unfamiliar word, try to decode it from context clues
+            (Tip 6) or root analysis (Tip 2) before looking it up.
+          </li>
+          <li>
+            After each paragraph, pause and state the main idea in one sentence.
+          </li>
+          <li>Add unfamiliar words to your flashcard deck (Tip 7).</li>
+        </ol>
+
+        <p className="text-text-secondary">
+          Daily target: 15&ndash;20 minutes of active reading. That is one or
+          two news articles.
+        </p>
+
+        <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
+          <p className="text-sm font-semibold text-emerald-400">Tip:</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            You don&apos;t need to learn 10,000 new words. You need to convert
+            the 200&ndash;300 words you already half-know into words you can
+            define under pressure. That is the recognition gap, and closing it
+            is the fastest path to a higher WK score.
+          </p>
+        </aside>
+
+        <p className="text-text-secondary">
+          Reading builds vocabulary passively. Flashcards (Tip 7) and root study
+          (Tip 2) build it actively. Use both for the strongest ASVAB word
+          knowledge stack. For a complete study timeline, check out the{" "}
+          <Link
+            href="/asvab-study-guide"
+            className="text-accent hover:text-accent-hover"
+          >
+            ASVAB study guide
+          </Link>
+          .
+        </p>
+
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          9. Know Which Jobs Your WK Score Unlocks
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          WK does not just affect a number. It determines which military jobs you
+          can access. Every branch uses VE in composites that gate their most
+          competitive career fields.
         </p>
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Week</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">WK Focus (20 min)</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">PC Focus (15 min)</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">Daily Total</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Branch
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Composite
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Formula
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Example Jobs
+                </th>
               </tr>
             </thead>
             <tbody className="text-text-secondary">
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">1</td>
-                <td className="py-2 pr-4">
-                  Learn 12 Latin roots (Table 1 from Tip 3) + prefix/suffix
-                  drill
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Army
                 </td>
-                <td className="py-2 pr-4">
-                  Read 1 news article, practice &ldquo;question first&rdquo;
-                  method
+                <td className="py-2 pr-4 font-mono">GT</td>
+                <td className="py-2 pr-4 font-mono">VE + AR</td>
+                <td className="py-2">
+                  Combat Medic (68W), HUMINT (35M), Cyber (17C)
                 </td>
-                <td className="py-2 font-mono">35 min</td>
               </tr>
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">2</td>
-                <td className="py-2 pr-4">
-                  Learn 12 Greek roots (Table 2) + begin flashcard deck
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Marines
                 </td>
-                <td className="py-2 pr-4">
-                  Read 1 article + answer 3 PC practice questions
+                <td className="py-2 pr-4 font-mono">GT</td>
+                <td className="py-2 pr-4 font-mono">VE + AR</td>
+                <td className="py-2">
+                  Intel (02xx), Cyber (17xx), Linguist (2641)
                 </td>
-                <td className="py-2 font-mono">35 min</td>
               </tr>
               <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">3</td>
-                <td className="py-2 pr-4">
-                  Flashcard review (spaced repetition) + practice test WK
-                  sections
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Air Force
                 </td>
-                <td className="py-2 pr-4">
-                  Timed PC practice (2 min per question) + context clue drill
+                <td className="py-2 pr-4 font-mono">G</td>
+                <td className="py-2 pr-4 font-mono">VE + AR</td>
+                <td className="py-2">Cyber (1D7X1), Intel (1N0X1)</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Navy
                 </td>
-                <td className="py-2 font-mono">40 min</td>
+                <td className="py-2 pr-4 font-mono">GT</td>
+                <td className="py-2 pr-4 font-mono">VE + AR</td>
+                <td className="py-2">CTI (Linguist), IS (Intel Specialist)</td>
               </tr>
               <tr>
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">4</td>
-                <td className="py-2 pr-4">
-                  Full timed WK practice (16 questions, 8 min) + review missed
-                  words
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Coast Guard
                 </td>
-                <td className="py-2 pr-4">
-                  Full timed PC practice (11 questions, 22 min) + error review
-                </td>
-                <td className="py-2 font-mono">45 min</td>
+                <td className="py-2 pr-4 font-mono">GT</td>
+                <td className="py-2 pr-4 font-mono">WK + AR + PC</td>
+                <td className="py-2">OS, IS, IT rates</td>
               </tr>
             </tbody>
           </table>
         </div>
 
+        <p className="text-text-secondary">
+          Key thresholds to know. Army Rangers and Special Forces require GT 107
+          as an initial screen. Army Cyber Operations (17C) requires GT 110 and
+          ST 112. The Green to Gold officer program and Army Nuclear specialties
+          also require GT 110. Navy Cyber Warfare requires VE+AR+MK+MC of 239 or
+          higher. The minimum AFQT for any enlistment is 31, though Navy, Marine
+          Corps, and Air Force require 36 or above for GED holders.
+        </p>
+
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Key Point</p>
+          <p className="text-sm font-semibold text-text-primary">Key Point:</p>
           <p className="mt-1 text-sm text-text-secondary">
-            35-45 minutes a day. Verbal improvement doesn&apos;t require
-            marathon sessions, just consistent daily contact. Spaced repetition
-            research confirms short daily sessions beat weekend cramming on
-            long-term retention.
+            VE appears in 13+ branch composite scores. A strong WK score does
+            not just get you in. It gets you the job you actually want.
           </p>
         </aside>
 
         <p className="text-text-secondary">
-          Score expectations: 4 weeks of structured study typically yields 5 to
-          10 VE points, translating to 10 to 20 AFQT points because of the 2x
-          multiplier. Gains are largest when your baseline VE is below 40.
+          Before studying, look up the composite score requirements for your
+          target MOS, AFSC, or rating. Set a concrete WK goal based on the GT or
+          VE composite you need, not a vague &ldquo;do well.&rdquo; If your
+          target is Army 17C Cyber, for example, you need GT 110, which means
+          maximizing both VE and AR.
         </p>
-
         <p className="text-text-secondary">
-          Start with a <Link href="/practice-test">practice test</Link> to set
-          your baseline. Then check your scores with the{" "}
-          <Link href="/calculator">ASVAB score calculator</Link> to see exactly
-          where you stand.
+          Plug your current scores into the{" "}
+          <Link
+            href="/calculator"
+            className="text-accent hover:text-accent-hover"
+          >
+            free ASVAB score calculator
+          </Link>{" "}
+          to see which jobs you qualify for right now. For full composite
+          breakdowns by branch, see the{" "}
+          <Link
+            href="/asvab-gt-score"
+            className="text-accent hover:text-accent-hover"
+          >
+            ASVAB GT score
+          </Link>{" "}
+          guide or the{" "}
+          <Link
+            href="/asvab-score-chart"
+            className="text-accent hover:text-accent-hover"
+          >
+            ASVAB score chart
+          </Link>
+          .
         </p>
 
-        <p className="text-text-secondary">
-          For the complete plan covering all 9 subtests, see{" "}
-          <Link href="/asvab-study-guide">how to study for the ASVAB</Link>.
-        </p>
-
-        {/* FAQ */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           FAQ
         </h2>
-
         <div className="mt-4 space-y-6">
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               How many questions are on the ASVAB Word Knowledge section?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              16 questions in 8 minutes on the CAT-ASVAB (computer version). 35
-              questions in 11 minutes on the paper version. Both average about 30
-              seconds per question. The CAT version is the standard at MEPS
-              testing locations.
+              The CAT-ASVAB has 16 questions in 8 minutes, about 30 seconds per
+              question. The paper-and-pencil version has 35 questions in 11
+              minutes, roughly 19 seconds each. Most recruits take the CAT
+              version at MEPS. The CAT is adaptive (difficulty adjusts based on
+              your answers); the paper version uses fixed difficulty.
             </p>
           </div>
-
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
-              What is a good ASVAB Word Knowledge score?
+              How does Word Knowledge affect my AFQT score?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              WK standard scores are part of your VE composite, which ranges
-              from 20 to 62. A VE score of 50 or higher puts you above average.
-              Higher VE directly raises your AFQT because it counts double in
-              the formula (AFQT = 2VE + AR + MK). Use the{" "}
-              <Link href="/calculator">ASVAB score calculator</Link> to see how
-              your VE affects your AFQT.
+              WK combines with Paragraph Comprehension to form VE (Verbal
+              Expression). VE is doubled in the AFQT formula: AFQT = 2(VE) + AR
+              + MK. A 5-point VE improvement creates a 10-point AFQT jump. No
+              other subtest has this multiplier, making WK the highest-leverage
+              subtest for AFQT improvement.
             </p>
           </div>
-
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
-              Is ASVAB Word Knowledge hard?
+              What are the two question types on the Word Knowledge subtest?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              The vocabulary is below SAT level. These are common English words
-              from news articles and books, not obscure academic terms. The
-              challenge is speed (30 seconds per question) and precision (knowing
-              exact definitions, not vague impressions).
+              The first type is definition-only: a single word presented alone,
+              and you choose its synonym from 4 options. The second type is
+              emphasized word in context: a word underlined in a sentence, and
+              you select its meaning using surrounding clues. Slightly more than
+              half of WK questions use the definition-only format.
             </p>
           </div>
-
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
-              How do I study for ASVAB Word Knowledge?
+              Should I guess if I don&apos;t know the answer on WK?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              Combine three methods: (1) learn the 24 root words in Tip 3 to
-              decode unfamiliar vocabulary, (2) read news articles daily to build
-              natural word exposure, (3) use spaced repetition flashcards for
-              words you miss on practice tests.
+              On paper ASVAB, always guess. There is no penalty for wrong
+              answers, so blank equals 0% while guessing gives you a 25% chance.
+              On CAT-ASVAB, guess when you must but use elimination strategies
+              first. Avoid clustering wrong guesses at the end of the section, as
+              the adaptive algorithm may interpret this negatively.
             </p>
           </div>
-
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
-              What is Verbal Expression (VE) on the ASVAB?
+              Is it better to study word roots or memorize vocabulary lists?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              VE combines your Word Knowledge and Paragraph Comprehension scores
-              into a single scaled score ranging from 20 to 62. It carries 2x
-              weight in the AFQT formula: AFQT = 2VE + AR + MK. Improving VE is
-              twice as efficient for raising your AFQT as improving AR or MK by
-              the same amount.
+              Start with roots. Latin and Greek roots account for over 60% of
+              English words, so 30 high-frequency roots unlock decoding ability
+              for hundreds of ASVAB-level words. Use vocabulary lists to fill
+              gaps for high-frequency words that do not yield to root analysis.
+              Both strategies together produce the strongest results.
             </p>
           </div>
-
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
-              Can I retake just the Word Knowledge section?
+              How long does it take to improve my Word Knowledge score?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              No. You must retake the entire ASVAB. Retake rules: wait 1 month
-              after your first attempt, 1 month after your second, then 6 months
-              between each subsequent attempt. Your most recent scores replace
-              all previous ones, including scores that were higher.
+              Plan for 4&ndash;8 weeks of consistent daily study, spending
+              30&ndash;60 minutes per day targeting 200&ndash;300 words. Learn 10
+              new words per day through spaced repetition flashcards and take one
+              timed practice test per week. Try a{" "}
+              <Link
+                href="/practice-test"
+                className="text-accent hover:text-accent-hover"
+              >
+                free practice test
+              </Link>{" "}
+              to benchmark where you stand today.
             </p>
           </div>
         </div>
 
-        <p className="mt-8 text-xs italic text-text-tertiary">
-          The appearance of U.S. Department of Defense (DoD) visual information does
-          not imply or constitute DoD endorsement.
-        </p>
-
-        {/* CTA */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">
           <h3 className="font-display text-xl font-bold text-text-primary">
-            Test Your Verbal Skills
+            See What Your Scores Unlock
           </h3>
           <p className="mt-2 text-sm text-text-secondary">
-            Take a free practice test to see where your WK and PC scores stand
-            before you start studying.
+            Enter your 9 subtest scores and instantly see your AFQT, composite
+            scores, and every job you qualify for.
           </p>
           <Link
-            href="/practice-test"
+            href="/calculator"
             className="mt-4 inline-block rounded-xl bg-accent px-6 py-3 font-display text-base font-bold text-white transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)] no-underline"
           >
-            Take a Free Practice Test
+            Try the Free Calculator
           </Link>
         </div>
       </article>
