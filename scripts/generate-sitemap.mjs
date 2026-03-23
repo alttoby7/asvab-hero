@@ -38,6 +38,7 @@ const pages = [
   { path: "/asvab-score-ranges", priority: "0.8", changefreq: "monthly" },
   { path: "/navy-asvab-score", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-general-science-tips", priority: "0.8", changefreq: "monthly" },
+  { path: "/asvab-score-for-marines", priority: "0.8", changefreq: "monthly" },
   { path: "/pricing", priority: "0.7", changefreq: "monthly" },
   { path: "/about", priority: "0.5", changefreq: "monthly" },
   { path: "/contact", priority: "0.4", changefreq: "monthly" },
