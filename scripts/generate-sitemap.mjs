@@ -36,6 +36,7 @@ const pages = [
   { path: "/how-many-questions-on-the-asvab", priority: "0.8", changefreq: "monthly" },
   { path: "/marine-corps-ranks", priority: "0.9", changefreq: "monthly" },
   { path: "/asvab-score-ranges", priority: "0.8", changefreq: "monthly" },
+  { path: "/afqt-score", priority: "0.8", changefreq: "monthly" },
   { path: "/navy-asvab-score", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-general-science-tips", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-score-for-marines", priority: "0.8", changefreq: "monthly" },
