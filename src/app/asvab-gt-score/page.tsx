@@ -22,7 +22,7 @@ export default function ASVABGTScorePage() {
           headline:
             "ASVAB GT Score: The Complete Guide to the Military's Most Important Line Score",
           description:
-            "Learn how your ASVAB GT score is calculated, what jobs it unlocks, and how to raise it. GT formulas by branch, 110+ job lists, and improvement strategies.",
+            "Learn what the ASVAB GT score is, how it's calculated (VE + AR), what each score range unlocks, and how to raise it. Branch formulas, job tables, and special program requirements.",
           url: "https://asvabhero.com/asvab-gt-score",
           author: {
             "@type": "Organization",
@@ -33,8 +33,8 @@ export default function ASVABGTScorePage() {
             "@type": "Organization",
             name: "ASVAB Hero",
           },
-          datePublished: "2026-03-23",
-          dateModified: "2026-03-23",
+          datePublished: "2026-03-22",
+          dateModified: "2026-03-22",
         }}
       />
 
@@ -56,7 +56,7 @@ export default function ASVABGTScorePage() {
               name: "Is the GT score the same as the AFQT?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "No. AFQT is a percentile (1-99) for enlistment eligibility. GT is a composite standard score for job eligibility. Different formulas: AFQT = AR + MK + 2(VE), GT = VE + AR.",
+                text: "No. AFQT is a percentile (1-99) for enlistment eligibility. GT is a composite standard score for job eligibility. Different formulas: AFQT = AR + MK + 2(VE), GT = VE + AR. See ASVAB scores explained for the full breakdown.",
               },
             },
             {
@@ -72,7 +72,7 @@ export default function ASVABGTScorePage() {
               name: "Does the Air Force use GT scores?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Not exactly. The Air Force uses General (G), the same VE + AR formula expressed as a percentile (0-99). An Air Force G of 72 means 72nd percentile, roughly equivalent to Army GT 115-120.",
+                text: "Not exactly. The Air Force uses \"General (G),\" the same VE + AR formula expressed as a percentile (0-99). An Air Force G of 72 means 72nd percentile, roughly equivalent to Army GT 115-120. See the Air Force AFSC list for specific requirements.",
               },
             },
             {
@@ -80,7 +80,7 @@ export default function ASVABGTScorePage() {
               name: "Can I retake the ASVAB just to raise my GT?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Yes, but your most recent score replaces the previous, even if lower. Wait periods: 1 month, 1 month, then 6 months between subsequent attempts. Active duty soldiers use the AFCT.",
+                text: "Yes, but your most recent score replaces the previous, even if lower. Wait periods: 1 month, 1 month, then 6 months between subsequent attempts. Active duty soldiers use the AFCT. See our retake guide.",
               },
             },
             {
@@ -96,7 +96,7 @@ export default function ASVABGTScorePage() {
               name: "How fast can I raise my GT score?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Four to six weeks of focused study on WK, PC, and AR is realistic for a 10-20 point gain. Operation Connect the Dots achieved 82% success in just 2 weeks.",
+                text: "Four to six weeks of focused study on WK, PC, and AR is realistic for a 10-20 point gain. Operation Connect the Dots achieved 82% success in just 2 weeks. Take a free practice test to benchmark where you stand.",
               },
             },
             {
@@ -186,14 +186,13 @@ export default function ASVABGTScorePage() {
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">
-            GT is NOT your AFQT score.
-          </p>
+          <p className="text-sm font-semibold text-amber-400">Warning</p>
           <p className="mt-1 text-sm text-text-secondary">
-            Your AFQT is a percentile (1-99) that determines enlistment
-            eligibility. Your GT is a composite standard score that determines
-            job eligibility. You can have a high AFQT and a low GT, or a low
-            AFQT and a high GT. They use different formulas.
+            <strong>GT is NOT your AFQT score.</strong> Your AFQT is a percentile
+            (1-99) that determines enlistment eligibility. Your GT is a composite
+            standard score that determines job eligibility. You can have a high
+            AFQT and a low GT, or a low AFQT and a high GT. They use different
+            formulas.
           </p>
         </aside>
 
@@ -208,7 +207,7 @@ export default function ASVABGTScorePage() {
           contracts, and every officer program. Recruit A does not.
         </p>
 
-        {/* AFQT vs GT Comparison Table */}
+        {/* TABLE: AFQT vs GT Comparison */}
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -250,8 +249,8 @@ export default function ASVABGTScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Subtests used
                 </td>
-                <td className="py-2 pr-4">4 (AR, MK, WK, PC)</td>
-                <td className="py-2">3 (WK, PC, AR)</td>
+                <td className="py-2 pr-4 font-mono">4 (AR, MK, WK, PC)</td>
+                <td className="py-2 font-mono">3 (WK, PC, AR)</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
@@ -299,13 +298,14 @@ export default function ASVABGTScorePage() {
 
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
           GT = VE + AR
-          <p className="mt-2 text-sm font-normal text-text-secondary">
-            Where VE (Verbal Expression) is a scaled standard score derived from
-            WK (Word Knowledge) and PC (Paragraph Comprehension).
-          </p>
-          <p className="mt-1 text-sm font-normal text-text-secondary">
-            Full chain: WK + PC &rarr; VE (scaled) &rarr; VE + AR = GT
-          </p>
+          <br />
+          <br />
+          Where VE (Verbal Expression) is a scaled standard score derived from:
+          <br />
+          WK (Word Knowledge) + PC (Paragraph Comprehension)
+          <br />
+          <br />
+          So the full chain is: WK + PC &#8594; VE (scaled) &#8594; VE + AR = GT
         </div>
 
         <p className="text-text-secondary">
@@ -322,20 +322,20 @@ export default function ASVABGTScorePage() {
         <p className="text-text-secondary">
           <strong>Worked examples:</strong>
         </p>
-        <ul className="list-disc pl-6 text-text-secondary">
+        <ul className="my-4 list-disc space-y-2 pl-6 text-text-secondary">
           <li>
-            VE = 58, AR = 52 &rarr; GT = 110. Just above the critical
+            VE = 58, AR = 52 &#8594; GT = 110. Just above the critical
             officer/SF threshold.
           </li>
-          <li>VE = 50, AR = 50 &rarr; GT = 100. Dead average.</li>
+          <li>VE = 50, AR = 50 &#8594; GT = 100. Dead average.</li>
           <li>
-            VE = 48, AR = 50 &rarr; GT = 98. Twelve points short of officer
+            VE = 48, AR = 50 &#8594; GT = 98. Twelve points short of officer
             programs.
           </li>
         </ul>
 
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Tip</p>
+          <p className="text-sm font-semibold text-emerald-400">Tip</p>
           <p className="mt-1 text-sm text-text-secondary">
             VE combines two subtests (WK and PC), so improvements in vocabulary
             and reading comprehension each contribute separately to your GT. This
@@ -345,7 +345,7 @@ export default function ASVABGTScorePage() {
           </p>
         </aside>
 
-        {/* The 3 GT Subtests Table */}
+        {/* TABLE: The 3 GT Subtests */}
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -374,7 +374,7 @@ export default function ASVABGTScorePage() {
                 </td>
                 <td className="py-2 pr-4">Vocabulary and word definitions</td>
                 <td className="py-2 pr-4 font-mono">16</td>
-                <td className="py-2 pr-4">8 min</td>
+                <td className="py-2 pr-4 font-mono">8 min</td>
                 <td className="py-2">Feeds into VE</td>
               </tr>
               <tr className="border-b border-navy-border/50">
@@ -383,7 +383,7 @@ export default function ASVABGTScorePage() {
                 </td>
                 <td className="py-2 pr-4">Reading comprehension</td>
                 <td className="py-2 pr-4 font-mono">10</td>
-                <td className="py-2 pr-4">22 min</td>
+                <td className="py-2 pr-4 font-mono">22 min</td>
                 <td className="py-2">Feeds into VE</td>
               </tr>
               <tr>
@@ -392,7 +392,7 @@ export default function ASVABGTScorePage() {
                 </td>
                 <td className="py-2 pr-4">Math word problems</td>
                 <td className="py-2 pr-4 font-mono">16</td>
-                <td className="py-2 pr-4">55 min</td>
+                <td className="py-2 pr-4 font-mono">55 min</td>
                 <td className="py-2">Adds directly to GT</td>
               </tr>
             </tbody>
@@ -434,7 +434,7 @@ export default function ASVABGTScorePage() {
           GT, and the numbers are not directly comparable.
         </p>
 
-        {/* GT Score by Branch Table */}
+        {/* TABLE: GT Score by Branch */}
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -464,7 +464,7 @@ export default function ASVABGTScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Army
                 </td>
-                <td className="py-2 pr-4">GT</td>
+                <td className="py-2 pr-4 font-mono">GT</td>
                 <td className="py-2 pr-4 font-mono">VE + AR</td>
                 <td className="py-2 pr-4">Standard score</td>
                 <td className="py-2 pr-4 font-mono">~40-147</td>
@@ -474,7 +474,7 @@ export default function ASVABGTScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Marines
                 </td>
-                <td className="py-2 pr-4">GT</td>
+                <td className="py-2 pr-4 font-mono">GT</td>
                 <td className="py-2 pr-4 font-mono">VE + AR</td>
                 <td className="py-2 pr-4">Standard score</td>
                 <td className="py-2 pr-4 font-mono">~40-151</td>
@@ -490,15 +490,13 @@ export default function ASVABGTScorePage() {
                 </td>
                 <td className="py-2 pr-4">Varies by rating</td>
                 <td className="py-2 pr-4">Varies</td>
-                <td className="py-2">
-                  No single &ldquo;GT&rdquo; label
-                </td>
+                <td className="py-2">No single &ldquo;GT&rdquo; label</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Air Force
                 </td>
-                <td className="py-2 pr-4">General (G)</td>
+                <td className="py-2 pr-4 font-mono">General (G)</td>
                 <td className="py-2 pr-4 font-mono">VE + AR</td>
                 <td className="py-2 pr-4">Percentile</td>
                 <td className="py-2 pr-4 font-mono">0-99</td>
@@ -508,7 +506,7 @@ export default function ASVABGTScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Space Force
                 </td>
-                <td className="py-2 pr-4">General (G)</td>
+                <td className="py-2 pr-4 font-mono">General (G)</td>
                 <td className="py-2 pr-4 font-mono">VE + AR</td>
                 <td className="py-2 pr-4">Percentile</td>
                 <td className="py-2 pr-4 font-mono">0-99</td>
@@ -519,9 +517,7 @@ export default function ASVABGTScorePage() {
                   Coast Guard
                 </td>
                 <td className="py-2 pr-4">(none)</td>
-                <td className="py-2 pr-4 font-mono">
-                  Multi-subtest composites
-                </td>
+                <td className="py-2 pr-4">Multi-subtest composites</td>
                 <td className="py-2 pr-4">Varies</td>
                 <td className="py-2 pr-4">Varies</td>
                 <td className="py-2">Navy-style formulas</td>
@@ -549,10 +545,11 @@ export default function ASVABGTScorePage() {
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">
-            Air Force G scores and Army GT scores are NOT comparable.
-          </p>
+          <p className="text-sm font-semibold text-amber-400">Warning</p>
           <p className="mt-1 text-sm text-text-secondary">
+            <strong>
+              Air Force G scores and Army GT scores are NOT comparable.
+            </strong>{" "}
             An Air Force G of 72 means 72nd percentile, roughly equivalent to an
             Army GT of 115-120. An Army GT of 72 is well below average. If
             someone from a different branch quotes their &ldquo;GT,&rdquo;
@@ -636,7 +633,7 @@ export default function ASVABGTScorePage() {
           </div>
         </div>
 
-        {/* GT Score Ranges Table */}
+        {/* TABLE: GT Score Ranges */}
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -742,8 +739,8 @@ export default function ASVABGTScorePage() {
         <p className="text-text-secondary">
           An ASVAB GT score of 110 is the single most important threshold in
           military careers. It separates &ldquo;standard enlisted&rdquo; from
-          &ldquo;officer-eligible, SF-eligible, and cyber-eligible.&rdquo; If you
-          are within 10-15 points, the improvement strategies later in this
+          &ldquo;officer-eligible, SF-eligible, and cyber-eligible.&rdquo; If
+          you are within 10-15 points, the improvement strategies later in this
           article can close that gap.
         </p>
         <p className="text-text-secondary">
@@ -822,7 +819,7 @@ export default function ASVABGTScorePage() {
                 </td>
                 <td className="py-2 pr-4 font-mono">17C</td>
                 <td className="py-2 pr-4">Cyber Operations Specialist</td>
-                <td className="py-2">ST:112</td>
+                <td className="py-2 font-mono">ST:112</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
@@ -830,7 +827,7 @@ export default function ASVABGTScorePage() {
                 </td>
                 <td className="py-2 pr-4 font-mono">18X</td>
                 <td className="py-2 pr-4">Special Forces Recruit</td>
-                <td className="py-2">CO:100</td>
+                <td className="py-2 font-mono">CO:100</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
@@ -846,7 +843,7 @@ export default function ASVABGTScorePage() {
                 </td>
                 <td className="py-2 pr-4 font-mono">12P</td>
                 <td className="py-2 pr-4">Prime Power Production</td>
-                <td className="py-2">EL:107, ST:107</td>
+                <td className="py-2 font-mono">EL:107, ST:107</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
@@ -949,7 +946,7 @@ export default function ASVABGTScorePage() {
                 </td>
                 <td className="py-2 pr-4 font-mono">68W</td>
                 <td className="py-2 pr-4">Combat Medic</td>
-                <td className="py-2">ST:101</td>
+                <td className="py-2 font-mono">ST:101</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
@@ -997,7 +994,7 @@ export default function ASVABGTScorePage() {
                 </td>
                 <td className="py-2 pr-4 font-mono">68B/C/F/L/N/U</td>
                 <td className="py-2 pr-4">Medical specialties</td>
-                <td className="py-2">Most also require ST:101</td>
+                <td className="py-2 font-mono">Most also require ST:101</td>
               </tr>
             </tbody>
           </table>
@@ -1108,7 +1105,7 @@ export default function ASVABGTScorePage() {
                 </td>
                 <td className="py-2 pr-4 font-mono">42A</td>
                 <td className="py-2 pr-4">Human Resource Specialist</td>
-                <td className="py-2">CL:90</td>
+                <td className="py-2 font-mono">CL:90</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
@@ -1116,7 +1113,7 @@ export default function ASVABGTScorePage() {
                 </td>
                 <td className="py-2 pr-4 font-mono">12Y</td>
                 <td className="py-2 pr-4">Geospatial Engineer</td>
-                <td className="py-2">ST:100</td>
+                <td className="py-2 font-mono">ST:100</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
@@ -1247,7 +1244,7 @@ export default function ASVABGTScorePage() {
         </div>
 
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Tip</p>
+          <p className="text-sm font-semibold text-emerald-400">Tip</p>
           <p className="mt-1 text-sm text-text-secondary">
             GT 110 is the dividing line. It is required for every
             officer-producing program, all special forces contracts, and the
@@ -1295,7 +1292,7 @@ export default function ASVABGTScorePage() {
           programs. Green to Gold is specifically non-waiverable.
         </p>
 
-        {/* Special Program GT Requirements Table */}
+        {/* TABLE: Special Program GT Requirements */}
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -1344,7 +1341,7 @@ export default function ASVABGTScorePage() {
                   18X (SF civilian contract)
                 </td>
                 <td className="py-2 pr-4 font-mono">110</td>
-                <td className="py-2 pr-4">CO:100</td>
+                <td className="py-2 pr-4 font-mono">CO:100</td>
                 <td className="py-2">No</td>
               </tr>
               <tr className="border-b border-navy-border/50">
@@ -1394,11 +1391,12 @@ export default function ASVABGTScorePage() {
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">
-            The GT 110 requirement for Green to Gold is specifically
-            non-waiverable per AR 135-100.
-          </p>
+          <p className="text-sm font-semibold text-text-primary">Key Point</p>
           <p className="mt-1 text-sm text-text-secondary">
+            <strong>
+              The GT 110 requirement for Green to Gold is specifically
+              non-waiverable per AR 135-100.
+            </strong>{" "}
             There is no exception process regardless of GPA, leadership record,
             or other qualifications. If your GT is 109, you are ineligible.
             Period.
@@ -1520,7 +1518,8 @@ export default function ASVABGTScorePage() {
           Active duty soldiers do not retake the civilian ASVAB. Instead, you go
           through the AFCT (Armed Forces Classification Test) process:
         </p>
-        <ol className="list-decimal pl-6 text-text-secondary">
+
+        <ol className="my-4 list-decimal space-y-2 pl-6 text-text-secondary">
           <li>
             Request GT improvement counseling through your chain of command.
           </li>
@@ -1541,6 +1540,7 @@ export default function ASVABGTScorePage() {
           </li>
           <li>Take the AFCT.</li>
         </ol>
+
         <p className="text-text-secondary">
           Soldiers effectively have 3 AFCT attempts in their career (excluding
           the initial enlistment test). Do not schedule the AFCT until your
@@ -1548,18 +1548,19 @@ export default function ASVABGTScorePage() {
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">
-            Your most recent ASVAB/AFCT score replaces your previous score, not
-            the highest.
-          </p>
+          <p className="text-sm font-semibold text-amber-400">Warning</p>
           <p className="mt-1 text-sm text-text-secondary">
+            <strong>
+              Your most recent ASVAB/AFCT score replaces your previous score, not
+              the highest.
+            </strong>{" "}
             If you score lower on a retake, the lower score counts. Never retest
             without thorough preparation and a diagnostic showing clear
             improvement.
           </p>
         </aside>
 
-        {/* Improvement Path Comparison Table */}
+        {/* TABLE: Improvement Path Comparison */}
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -1637,23 +1638,22 @@ export default function ASVABGTScorePage() {
           Frequently Asked Questions
         </h2>
 
-        <div className="mt-6 space-y-6">
+        <div className="mt-4 space-y-6">
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               What is the highest possible GT score?
             </h3>
-            <p className="mt-2 text-text-secondary">
+            <p className="mt-1 text-sm text-text-secondary">
               No official ceiling. The practical maximum is approximately 145-147
               for Army and 151 for Marines. Scores above 130 place you in
               roughly the top 7%.
             </p>
           </div>
-
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               Is the GT score the same as the AFQT?
             </h3>
-            <p className="mt-2 text-text-secondary">
+            <p className="mt-1 text-sm text-text-secondary">
               No. AFQT is a percentile (1-99) for enlistment eligibility. GT is
               a composite standard score for job eligibility. Different formulas:
               AFQT = AR + MK + 2(VE), GT = VE + AR. See{" "}
@@ -1666,26 +1666,24 @@ export default function ASVABGTScorePage() {
               for the full breakdown.
             </p>
           </div>
-
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               What 3 subtests make up the GT score?
             </h3>
-            <p className="mt-2 text-text-secondary">
+            <p className="mt-1 text-sm text-text-secondary">
               Word Knowledge (WK), Paragraph Comprehension (PC), and Arithmetic
               Reasoning (AR). WK and PC combine into VE, then GT = VE + AR. The
               other 7 subtests do not affect GT.
             </p>
           </div>
-
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               Does the Air Force use GT scores?
             </h3>
-            <p className="mt-2 text-text-secondary">
+            <p className="mt-1 text-sm text-text-secondary">
               Not exactly. The Air Force uses &ldquo;General (G),&rdquo; the
-              same VE + AR formula expressed as a percentile (0-99). An Air
-              Force G of 72 means 72nd percentile, roughly equivalent to Army GT
+              same VE + AR formula expressed as a percentile (0-99). An Air Force
+              G of 72 means 72nd percentile, roughly equivalent to Army GT
               115-120. See the{" "}
               <Link
                 href="/air-force-afsc-list"
@@ -1696,12 +1694,11 @@ export default function ASVABGTScorePage() {
               for specific requirements.
             </p>
           </div>
-
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               Can I retake the ASVAB just to raise my GT?
             </h3>
-            <p className="mt-2 text-text-secondary">
+            <p className="mt-1 text-sm text-text-secondary">
               Yes, but your most recent score replaces the previous, even if
               lower. Wait periods: 1 month, 1 month, then 6 months between
               subsequent attempts. Active duty soldiers use the AFCT. See our{" "}
@@ -1714,23 +1711,21 @@ export default function ASVABGTScorePage() {
               .
             </p>
           </div>
-
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               What GT score do I need for Special Forces?
             </h3>
-            <p className="mt-2 text-text-secondary">
+            <p className="mt-1 text-sm text-text-secondary">
               Civilian 18X contract: GT 110 plus CO (Combat) score of 100.
               Active duty soldiers pursuing SF through the SFAS pipeline only
               need GT 100.
             </p>
           </div>
-
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               How fast can I raise my GT score?
             </h3>
-            <p className="mt-2 text-text-secondary">
+            <p className="mt-1 text-sm text-text-secondary">
               Four to six weeks of focused study on WK, PC, and AR is realistic
               for a 10-20 point gain. Operation Connect the Dots achieved 82%
               success in just 2 weeks. Take a{" "}
@@ -1743,12 +1738,11 @@ export default function ASVABGTScorePage() {
               to benchmark where you stand.
             </p>
           </div>
-
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               Do Marine Corps and Army GT scores use the same formula?
             </h3>
-            <p className="mt-2 text-text-secondary">
+            <p className="mt-1 text-sm text-text-secondary">
               Yes. Both use GT = VE + AR. Some sources incorrectly claim Marines
               add MC (Mechanical Comprehension). That is wrong. Formulas are
               identical, though MOS thresholds differ.
@@ -1757,10 +1751,9 @@ export default function ASVABGTScorePage() {
         </div>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">
-            Ready to check your GT score?
-          </p>
+          <p className="text-sm font-semibold text-text-primary">Note</p>
           <p className="mt-1 text-sm text-text-secondary">
+            Ready to check your GT score?{" "}
             <Link
               href="/calculator"
               className="text-accent hover:text-accent-hover"
