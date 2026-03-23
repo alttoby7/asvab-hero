@@ -36,6 +36,7 @@ const pages = [
   { path: "/marine-corps-ranks", priority: "0.9", changefreq: "monthly" },
   { path: "/asvab-score-ranges", priority: "0.8", changefreq: "monthly" },
   { path: "/navy-asvab-score", priority: "0.8", changefreq: "monthly" },
+  { path: "/asvab-gt-score", priority: "0.8", changefreq: "monthly" },
   { path: "/pricing", priority: "0.7", changefreq: "monthly" },
   { path: "/about", priority: "0.5", changefreq: "monthly" },
   { path: "/contact", priority: "0.4", changefreq: "monthly" },
