@@ -14,10 +14,9 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline:
-    "10 ASVAB General Science Tips to Boost Your Composite Scores and Unlock Better Jobs",
+  headline: "10 ASVAB General Science Tips to Boost Your Composite Scores and Unlock Better Jobs",
   description:
-    "Proven ASVAB general science tips covering body systems, earth science, physics, and chemistry. Mnemonics, pacing strategy, and a 4-week study plan for the GS subtest.",
+    "Master the ASVAB General Science subtest with these 10 tips covering body systems, earth science, physics, chemistry, mnemonics, and a 4-week study plan.",
   url: "https://asvabhero.com/asvab-general-science-tips",
   author: {
     "@type": "Organization",
@@ -41,7 +40,7 @@ const faqJsonLd = {
       name: "Does General Science count toward your AFQT score?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. The AFQT uses only Arithmetic Reasoning (AR), Math Knowledge (MK), Word Knowledge (WK), and Paragraph Comprehension (PC). General Science does not affect your AFQT percentile, which determines basic enlistment eligibility. GS only affects composite line scores, which determine which military jobs you can hold.",
+        text: "No. The AFQT uses only Arithmetic Reasoning (AR), Math Knowledge (MK), Word Knowledge (WK), and Paragraph Comprehension (PC). General Science does not affect your AFQT percentile, which determines basic enlistment eligibility. GS only affects composite line scores, which determine which military jobs you can hold. For a full breakdown of how AFQT scoring works, see our ASVAB scores explained guide.",
       },
     },
     {
@@ -57,7 +56,7 @@ const faqJsonLd = {
       name: "What subjects does ASVAB General Science cover?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "GS tests three broad domains. Life science covers human body systems, cell biology, genetics, and ecology. Earth and space science covers geology, atmosphere layers, weather, and astronomy. Physical science covers physics (Newton's laws, energy, simple machines) and chemistry (atoms, pH, states of matter, the periodic table).",
+        text: "GS tests three broad domains. Life science covers human body systems, cell biology, genetics, and ecology. Earth and space science covers geology, atmosphere layers, weather, and astronomy. Physical science covers physics (Newton's laws, energy, simple machines) and chemistry (atoms, pH, states of matter, the periodic table). See Tips 2 through 8 above for the specific facts tested in each domain.",
       },
     },
     {
@@ -65,7 +64,7 @@ const faqJsonLd = {
       name: "What is a good General Science score on the ASVAB?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "GS is reported as a standard score with a mean of 50. Scores above 60 are competitive for most technical composites. For high-demand jobs like Army 68W Combat Medic (ST 101+) or Air Force avionics careers (E 70+), aim for a GS score of 65 or higher.",
+        text: "GS is reported as a standard score with a mean of 50. Scores above 60 are competitive for most technical composites. For high-demand jobs like Army 68W Combat Medic (ST 101+) or Air Force avionics careers (E 70+), aim for a GS score of 65 or higher. Use our ASVAB score calculator to see how your GS score affects your composite totals.",
       },
     },
     {
@@ -73,7 +72,7 @@ const faqJsonLd = {
       name: "How should I study for ASVAB General Science?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Focus on the highest-frequency topics first: human body systems (especially circulatory), Earth's layers and rock types, Newton's three laws, and the pH scale. Use mnemonics for memorization and active recall (self-quizzing) instead of re-reading notes. A 4-week plan rotating through one domain per week is the most effective approach.",
+        text: "Focus on the highest-frequency topics first: human body systems (especially circulatory), Earth's layers and rock types, Newton's three laws, and the pH scale. Use mnemonics for memorization (see Tip 9) and active recall (self-quizzing) instead of re-reading notes. A 4-week plan rotating through one domain per week is the most effective approach.",
       },
     },
     {
@@ -109,16 +108,17 @@ export default function ASVABGeneralScienceTipsPage() {
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">GS Subtest Format</p>
-          <p className="mt-1 text-sm text-text-secondary">CAT-ASVAB (computer): 16 questions, 8 minutes (30 seconds per question)</p>
-          <p className="mt-1 text-sm text-text-secondary">P&amp;P-ASVAB (paper): 25 questions, 11 minutes (~26 seconds per question)</p>
-          <p className="mt-1 text-sm text-text-secondary">GS is NOT part of the AFQT formula (AFQT = AR + MK + 2VE)</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            CAT-ASVAB (computer): 16 questions, 8 minutes (30 seconds per question)<br />
+            P&amp;P-ASVAB (paper): 25 questions, 11 minutes (~26 seconds per question)<br />
+            GS is NOT part of the AFQT formula (AFQT = AR + MK + 2VE)
+          </p>
         </aside>
 
-        {/* --- Tip 1 --- */}
+        {/* Tip 1 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           1. Know Why GS Matters for Your Military Career
         </h2>
-
         <p className="mt-4 text-text-secondary">
           Your AFQT gets you into the military. Your composite line scores get you the job. GS is baked into the formulas that gate the most competitive MOSs, AFSCs, and ratings across all four branches.
         </p>
@@ -194,7 +194,11 @@ export default function ASVABGeneralScienceTipsPage() {
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Key Point</p>
           <p className="mt-1 text-sm text-text-secondary">
-            GS appears in Army EL, GM, and ST. Air Force E and M. Navy EL, HM, and BEE. Marines EL and MM. That is 12+ composites across 4 branches. Check which composites your target <Link href="/army-mos-list" className="text-accent hover:text-accent-hover">MOS</Link> or <Link href="/air-force-afsc-list" className="text-accent hover:text-accent-hover">AFSC</Link> requires before deciding to skip GS prep.
+            GS appears in Army EL, GM, and ST. Air Force E and M. Navy EL, HM, and BEE. Marines EL and MM. That is 12+ composites across 4 branches. Check which composites your target{" "}
+            <Link href="/army-mos-list" className="text-accent hover:text-accent-hover">MOS</Link>{" "}
+            or{" "}
+            <Link href="/air-force-afsc-list" className="text-accent hover:text-accent-hover">AFSC</Link>{" "}
+            requires before deciding to skip GS prep.
           </p>
         </aside>
 
@@ -202,54 +206,64 @@ export default function ASVABGeneralScienceTipsPage() {
           The tips below are ordered by test frequency. Start with the domains that show up most, and work your way through the list in order.
         </p>
 
-        {/* --- Tip 2 --- */}
+        {/* Tip 2 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           2. Master the Five Body Systems That Appear Most Often
         </h2>
-
         <p className="mt-4 text-text-secondary">
           The circulatory system alone accounts for roughly 12% of GS questions. Add four more systems and you have covered the bulk of life science on the test. You do not need to memorize all 11 body systems. These five dominate.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Circulatory System</p>
-          <p className="mt-1 text-sm text-text-secondary">Heart has 4 chambers (2 atria, 2 ventricles). Blood flow: body &gt; right atrium &gt; right ventricle &gt; lungs &gt; left atrium &gt; left ventricle &gt; body. Arteries carry blood away from the heart. Veins carry blood toward it. Red blood cells use hemoglobin to carry oxygen. White blood cells fight infection. Platelets clot wounds.</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Heart has 4 chambers (2 atria, 2 ventricles). Blood flow: body &gt; right atrium &gt; right ventricle &gt; lungs &gt; left atrium &gt; left ventricle &gt; body. Arteries carry blood away from the heart. Veins carry blood toward it. Red blood cells use hemoglobin to carry oxygen. White blood cells fight infection. Platelets clot wounds.
+          </p>
         </aside>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Respiratory System</p>
-          <p className="mt-1 text-sm text-text-secondary">Gas exchange happens in the alveoli (tiny air sacs in the lungs). The diaphragm contracts to pull air in. Air path: trachea &gt; bronchi &gt; bronchioles &gt; alveoli. Oxygen enters the blood, carbon dioxide exits. The lungs do not push air out. The diaphragm relaxes, and the air exits passively.</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Gas exchange happens in the alveoli (tiny air sacs in the lungs). The diaphragm contracts to pull air in. Air path: trachea &gt; bronchi &gt; bronchioles &gt; alveoli. Oxygen enters the blood, carbon dioxide exits. The lungs do not push air out. The diaphragm relaxes, and the air exits passively.
+          </p>
         </aside>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Digestive System</p>
-          <p className="mt-1 text-sm text-text-secondary">Pathway: mouth &gt; esophagus &gt; stomach &gt; small intestine &gt; large intestine. The small intestine is where nutrient absorption happens through tiny finger-like projections called villi. The large intestine absorbs water. Stomach acid (pH ~1.5) breaks down food chemically. The liver produces bile, which helps digest fats.</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Pathway: mouth &gt; esophagus &gt; stomach &gt; small intestine &gt; large intestine. The small intestine is where nutrient absorption happens through tiny finger-like projections called villi. The large intestine absorbs water. Stomach acid (pH ~1.5) breaks down food chemically. The liver produces bile, which helps digest fats.
+          </p>
         </aside>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Nervous System</p>
-          <p className="mt-1 text-sm text-text-secondary">CNS = brain + spinal cord. PNS = everything else (peripheral nerves). Neurons transmit signals: dendrite &gt; cell body &gt; axon. Reflex arcs bypass the brain for faster response. The autonomic nervous system controls involuntary functions like heart rate and digestion.</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            CNS = brain + spinal cord. PNS = everything else (peripheral nerves). Neurons transmit signals: dendrite &gt; cell body &gt; axon. Reflex arcs bypass the brain for faster response. The autonomic nervous system controls involuntary functions like heart rate and digestion.
+          </p>
         </aside>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Skeletal System</p>
-          <p className="mt-1 text-sm text-text-secondary">206 bones in an adult human. Axial skeleton = skull, spine, ribs. Appendicular skeleton = arms, legs, shoulders, hips. Joint types: ball-and-socket (shoulder), hinge (elbow), pivot (neck). Bone marrow produces red and white blood cells.</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            206 bones in an adult human. Axial skeleton = skull, spine, ribs. Appendicular skeleton = arms, legs, shoulders, hips. Joint types: ball-and-socket (shoulder), hinge (elbow), pivot (neck). Bone marrow produces red and white blood cells.
+          </p>
         </aside>
 
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Tip</p>
-          <p className="mt-1 text-sm text-text-secondary">Test-day shortcut: if a question mentions &ldquo;transport&rdquo; or &ldquo;delivery,&rdquo; think circulatory. &ldquo;Gas exchange&rdquo; means respiratory. &ldquo;Absorption&rdquo; means digestive (small intestine specifically).</p>
+          <p className="text-sm font-semibold text-emerald-400">Tip</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Test-day shortcut: if a question mentions &ldquo;transport&rdquo; or &ldquo;delivery,&rdquo; think circulatory. &ldquo;Gas exchange&rdquo; means respiratory. &ldquo;Absorption&rdquo; means digestive (small intestine specifically).
+          </p>
         </aside>
 
         <p className="text-text-secondary">
           Draw each system from memory once. If you can sketch the heart&apos;s four chambers and label the blood flow, you own the most-tested topic on the GS subtest. Then try labeling the air pathway from trachea to alveoli. Two quick sketches cover the two highest-frequency systems.
         </p>
 
-        {/* --- Tip 3 --- */}
+        {/* Tip 3 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           3. Learn Cell Biology Basics in 15 Minutes
         </h2>
-
         <p className="mt-4 text-text-secondary">
           You do not need a biology degree. Fifteen minutes with the right facts covers every cell question the ASVAB throws at you. Cell biology questions are predictable: organelle functions, mitosis vs. meiosis, and DNA basics.
         </p>
@@ -302,18 +316,19 @@ export default function ASVABGeneralScienceTipsPage() {
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Key Point</p>
-          <p className="mt-1 text-sm text-text-secondary">The most common cell question on the ASVAB: &ldquo;What organelle produces energy for the cell?&rdquo; Answer: mitochondria. Lock that in.</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            The most common cell question on the ASVAB: &ldquo;What organelle produces energy for the cell?&rdquo; Answer: mitochondria. Lock that in.
+          </p>
         </aside>
 
         <p className="text-text-secondary">
           Can you name three differences between plant and animal cells? If yes, you have passed the cell biology portion of your review. If not, re-read the plant vs. animal paragraph above until you can list them without looking.
         </p>
 
-        {/* --- Tip 4 --- */}
+        {/* Tip 4 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           4. Understand Earth&apos;s Layers, Rocks, and Plate Tectonics
         </h2>
-
         <p className="mt-4 text-text-secondary">
           Earth science questions follow a pattern: they ask about layers, rocks, or plates. Master those three clusters and you have handled this entire domain. Earth science is the second-highest tested area on GS after life science.
         </p>
@@ -348,19 +363,20 @@ export default function ASVABGeneralScienceTipsPage() {
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Tip</p>
-          <p className="mt-1 text-sm text-text-secondary">If a question mentions &ldquo;fossils,&rdquo; the answer almost always involves sedimentary rock. Fossils only form in sedimentary layers.</p>
+          <p className="text-sm font-semibold text-emerald-400">Tip</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            If a question mentions &ldquo;fossils,&rdquo; the answer almost always involves sedimentary rock. Fossils only form in sedimentary layers.
+          </p>
         </aside>
 
         <p className="text-text-secondary">
           Think of Earth&apos;s layers like a nesting doll. Crust wraps mantle, mantle wraps outer core, outer core wraps inner core. Temperature and pressure increase as you go deeper.
         </p>
 
-        {/* --- Tip 5 --- */}
+        {/* Tip 5 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           5. Memorize Atmosphere Layers and the Water Cycle
         </h2>
-
         <p className="mt-4 text-text-secondary">
           This is your easiest win on the GS subtest. Atmosphere and water cycle questions are pure recall. No math, no problem-solving. Memorize the facts and collect free points.
         </p>
@@ -399,19 +415,20 @@ export default function ASVABGeneralScienceTipsPage() {
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Tip</p>
-          <p className="mt-1 text-sm text-text-secondary">Mnemonic for atmosphere layers, bottom to top: &ldquo;The Silly Monkeys Took Everything&rdquo; (Troposphere, Stratosphere, Mesosphere, Thermosphere, Exosphere).</p>
+          <p className="text-sm font-semibold text-emerald-400">Tip</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Mnemonic for atmosphere layers, bottom to top: &ldquo;The Silly Monkeys Took Everything&rdquo; (Troposphere, Stratosphere, Mesosphere, Thermosphere, Exosphere).
+          </p>
         </aside>
 
         <p className="text-text-secondary">
           Five layers, four cycle stages, two percentages, three cloud types. That is 14 facts total. You can memorize them on one index card tonight.
         </p>
 
-        {/* --- Tip 6 --- */}
+        {/* Tip 6 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           6. Study the Solar System and Basic Astronomy
         </h2>
-
         <p className="mt-4 text-text-secondary">
           The ASVAB is not testing you on black holes or dark matter. It is asking whether you know the eight planets in order and a handful of facts about each. This is another domain where memorization pays off fast.
         </p>
@@ -481,42 +498,55 @@ export default function ASVABGeneralScienceTipsPage() {
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Tip</p>
-          <p className="mt-1 text-sm text-text-secondary">Planet order mnemonic: &ldquo;My Very Educated Mother Just Served Us Nachos&rdquo; (Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune).</p>
+          <p className="text-sm font-semibold text-emerald-400">Tip</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Planet order mnemonic: &ldquo;My Very Educated Mother Just Served Us Nachos&rdquo; (Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune).
+          </p>
         </aside>
 
         <p className="text-text-secondary">
           Name the planets in order, then name the four rocky ones. If you can do both in under 10 seconds, move on to the next tip.
         </p>
 
-        {/* --- Tip 7 --- */}
+        {/* Tip 7 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           7. Nail the Physics Fundamentals
         </h2>
-
         <p className="mt-4 text-text-secondary">
           GS physics questions do not require you to solve equations. They test whether you understand the concepts behind motion, energy, and forces. If you can explain Newton&apos;s three laws in plain English, you can handle every physics question on this subtest.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Newton&apos;s First Law (Inertia)</p>
-          <p className="mt-1 text-sm text-text-secondary">An object at rest stays at rest. An object in motion stays in motion. Nothing changes unless an outside force acts on it. Example: a passenger jerks forward when a car brakes because the body keeps moving.</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            An object at rest stays at rest. An object in motion stays in motion. Nothing changes unless an outside force acts on it. Example: a passenger jerks forward when a car brakes because the body keeps moving.
+          </p>
         </aside>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Newton&apos;s Second Law (F = ma)</p>
-          <p className="mt-1 text-sm text-text-secondary">Force equals mass times acceleration. More mass requires more force to achieve the same acceleration. Double the mass, double the force needed.</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Force equals mass times acceleration. More mass requires more force to achieve the same acceleration. Double the mass, double the force needed.
+          </p>
         </aside>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Newton&apos;s Third Law (Action-Reaction)</p>
-          <p className="mt-1 text-sm text-text-secondary">Every action has an equal and opposite reaction. A rocket pushes gas downward, and the gas pushes the rocket upward. A swimmer pushes water backward, and the water pushes the swimmer forward.</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Every action has an equal and opposite reaction. A rocket pushes gas downward, and the gas pushes the rocket upward. A swimmer pushes water backward, and the water pushes the swimmer forward.
+          </p>
         </aside>
 
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          F = m x a<br />
-          <span className="text-sm font-normal text-text-secondary">Force (in Newtons) = mass (in kg) x acceleration (in m/s&sup2;)</span><br />
-          <span className="text-sm font-normal text-text-secondary">You will not calculate this on the GS subtest. But you need to understand the relationship: increasing mass or acceleration increases force.</span>
+          F = m x a
+          <br />
+          <span className="text-sm font-normal text-text-secondary">
+            Force (in Newtons) = mass (in kg) x acceleration (in m/s2)
+          </span>
+          <br />
+          <span className="text-sm font-normal text-text-secondary">
+            You will not calculate this on the GS subtest. But you need to understand the relationship: increasing mass or acceleration increases force.
+          </span>
         </div>
 
         <p className="text-text-secondary">
@@ -529,11 +559,10 @@ export default function ASVABGeneralScienceTipsPage() {
           A book sitting on a table: what law keeps it still? First law (inertia). What force pair exists? The book pushes down on the table, and the table pushes up on the book (third law).
         </p>
 
-        {/* --- Tip 8 --- */}
+        {/* Tip 8 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           8. Cover Chemistry Essentials: pH, Elements, and Reactions
         </h2>
-
         <p className="mt-4 text-text-secondary">
           Chemistry on the ASVAB is a mile wide and an inch deep. You do not need to balance equations or memorize the periodic table. You need to know what pH means, how atoms work, and what happens when matter changes state.
         </p>
@@ -592,18 +621,19 @@ export default function ASVABGeneralScienceTipsPage() {
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Key Point</p>
-          <p className="mt-1 text-sm text-text-secondary">OIL RIG for redox reactions: Oxidation Is Loss (of electrons), Reduction Is Gain (of electrons). This mnemonic covers the most common chemistry reaction question on the GS subtest.</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            OIL RIG for redox reactions: Oxidation Is Loss (of electrons), Reduction Is Gain (of electrons). This mnemonic covers the most common chemistry reaction question on the GS subtest.
+          </p>
         </aside>
 
         <p className="text-text-secondary">
           If you remember that pH 7 is neutral, acids fall below, and bases rise above, you have handled the most common chemistry question on GS.
         </p>
 
-        {/* --- Tip 9 --- */}
+        {/* Tip 9 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           9. Use Mnemonics to Lock In Key Science Facts
         </h2>
-
         <p className="mt-4 text-text-secondary">
           You have covered six science domains across these ASVAB general science tips. Now lock them in with memory tools that stick. Screenshot this section. It is your pre-test study reference.
         </p>
@@ -663,15 +693,16 @@ export default function ASVABGeneralScienceTipsPage() {
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Tip</p>
-          <p className="mt-1 text-sm text-text-secondary">Close your eyes and recite all four major mnemonics from this section (planets, taxonomy, atmosphere, redox). If you can hit 3 of 4, you are ready for these domains on test day.</p>
+          <p className="text-sm font-semibold text-emerald-400">Tip</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Close your eyes and recite all four major mnemonics from this section (planets, taxonomy, atmosphere, redox). If you can hit 3 of 4, you are ready for these domains on test day.
+          </p>
         </aside>
 
-        {/* --- Tip 10 --- */}
+        {/* Tip 10 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           10. Pace the GS Subtest and Build a 4-Week Study Plan
         </h2>
-
         <p className="mt-4 text-text-secondary">
           You know what to study. Now build the plan that gets it done in 4 weeks, and the pacing strategy that keeps you from running out of time on test day.
         </p>
@@ -702,84 +733,88 @@ export default function ASVABGeneralScienceTipsPage() {
         </div>
 
         <p className="text-text-secondary">
-          <strong>Study Method.</strong> Active recall beats re-reading. Quiz yourself. Draw diagrams from memory. Explain concepts out loud. Take a diagnostic <Link href="/practice-test" className="text-accent hover:text-accent-hover">practice test</Link> before you start studying so you know which domains need the most attention. Then revisit our <Link href="/asvab-study-guide" className="text-accent hover:text-accent-hover">ASVAB study guide</Link> to build a plan that targets your weak spots. During Week 4, simulate test conditions: set an 8-minute timer, answer 16 questions, and score yourself immediately.
+          <strong>Study Method.</strong> Active recall beats re-reading. Quiz yourself. Draw diagrams from memory. Explain concepts out loud. Take a diagnostic{" "}
+          <Link href="/practice-test" className="text-accent hover:text-accent-hover">practice test</Link>{" "}
+          before you start studying so you know which domains need the most attention. Then revisit our{" "}
+          <Link href="/asvab-study-guide" className="text-accent hover:text-accent-hover">ASVAB study guide</Link>{" "}
+          to build a plan that targets your weak spots. During Week 4, simulate test conditions: set an 8-minute timer, answer 16 questions, and score yourself immediately.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Warning</p>
-          <p className="mt-1 text-sm text-text-secondary">Do not cram all six domains in one night. Rotating through one domain per session builds stronger long-term memory. Your brain consolidates information during sleep, so spreading study across days is more effective than marathon sessions.</p>
+          <p className="text-sm font-semibold text-amber-400">Warning</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Do not cram all six domains in one night. Rotating through one domain per session builds stronger long-term memory. Your brain consolidates information during sleep, so spreading study across days is more effective than marathon sessions.
+          </p>
         </aside>
 
         <p className="text-text-secondary">
-          Ready to see which jobs your scores unlock? Plug your subtest scores into our <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB score calculator</Link> and find out which MOSs, AFSCs, and ratings you qualify for right now.
+          Ready to see which jobs your scores unlock? Plug your subtest scores into our{" "}
+          <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB score calculator</Link>{" "}
+          and find out which MOSs, AFSCs, and ratings you qualify for right now.
         </p>
 
-        {/* --- FAQ --- */}
+        {/* FAQ */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           Frequently Asked Questions
         </h2>
-
-        <div className="mt-6 space-y-6">
+        <div className="mt-4 space-y-6">
           <div>
-            <h3 className="font-display text-base font-bold text-text-primary">
-              Does General Science count toward your AFQT score?
-            </h3>
-            <p className="mt-2 text-text-secondary">
-              No. The AFQT uses only Arithmetic Reasoning (AR), Math Knowledge (MK), Word Knowledge (WK), and Paragraph Comprehension (PC). General Science does not affect your AFQT percentile, which determines basic enlistment eligibility. GS only affects composite line scores, which determine which military jobs you can hold. For a full breakdown of how AFQT scoring works, see our <Link href="/asvab-scores-explained" className="text-accent hover:text-accent-hover">ASVAB scores explained</Link> guide.
+            <h3 className="font-display text-base font-bold text-text-primary">Does General Science count toward your AFQT score?</h3>
+            <p className="mt-1 text-sm text-text-secondary">
+              No. The AFQT uses only Arithmetic Reasoning (AR), Math Knowledge (MK), Word Knowledge (WK), and Paragraph Comprehension (PC). General Science does not affect your AFQT percentile, which determines basic enlistment eligibility. GS only affects composite line scores, which determine which military jobs you can hold. For a full breakdown of how AFQT scoring works, see our{" "}
+              <Link href="/asvab-scores-explained" className="text-accent hover:text-accent-hover">ASVAB scores explained</Link>{" "}
+              guide.
             </p>
           </div>
-
           <div>
-            <h3 className="font-display text-base font-bold text-text-primary">
-              How many questions are on the ASVAB General Science section?
-            </h3>
-            <p className="mt-2 text-text-secondary">
-              The CAT-ASVAB (computer version) has 16 GS questions with an 8-minute time limit. The paper-and-pencil version has 25 questions with 11 minutes. Both average roughly 30 seconds per question. For a complete subtest breakdown, check <Link href="/how-many-questions-on-the-asvab" className="text-accent hover:text-accent-hover">how many questions are on the ASVAB</Link>.
+            <h3 className="font-display text-base font-bold text-text-primary">How many questions are on the ASVAB General Science section?</h3>
+            <p className="mt-1 text-sm text-text-secondary">
+              The CAT-ASVAB (computer version) has 16 GS questions with an 8-minute time limit. The paper-and-pencil version has 25 questions with 11 minutes. Both average roughly 30 seconds per question. For a complete subtest breakdown, check{" "}
+              <Link href="/how-many-questions-on-the-asvab" className="text-accent hover:text-accent-hover">how many questions are on the ASVAB</Link>.
             </p>
           </div>
-
           <div>
-            <h3 className="font-display text-base font-bold text-text-primary">
-              What subjects does ASVAB General Science cover?
-            </h3>
-            <p className="mt-2 text-text-secondary">
+            <h3 className="font-display text-base font-bold text-text-primary">What subjects does ASVAB General Science cover?</h3>
+            <p className="mt-1 text-sm text-text-secondary">
               GS tests three broad domains. Life science covers human body systems, cell biology, genetics, and ecology. Earth and space science covers geology, atmosphere layers, weather, and astronomy. Physical science covers physics (Newton&apos;s laws, energy, simple machines) and chemistry (atoms, pH, states of matter, the periodic table). See Tips 2 through 8 above for the specific facts tested in each domain.
             </p>
           </div>
-
           <div>
-            <h3 className="font-display text-base font-bold text-text-primary">
-              What is a good General Science score on the ASVAB?
-            </h3>
-            <p className="mt-2 text-text-secondary">
-              GS is reported as a standard score with a mean of 50. Scores above 60 are competitive for most technical composites. For high-demand jobs like Army 68W Combat Medic (ST 101+) or Air Force avionics careers (E 70+), aim for a GS score of 65 or higher. Use our <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB score calculator</Link> to see how your GS score affects your composite totals.
+            <h3 className="font-display text-base font-bold text-text-primary">What is a good General Science score on the ASVAB?</h3>
+            <p className="mt-1 text-sm text-text-secondary">
+              GS is reported as a standard score with a mean of 50. Scores above 60 are competitive for most technical composites. For high-demand jobs like Army 68W Combat Medic (ST 101+) or Air Force avionics careers (E 70+), aim for a GS score of 65 or higher. Use our{" "}
+              <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB score calculator</Link>{" "}
+              to see how your GS score affects your composite totals.
             </p>
           </div>
-
           <div>
-            <h3 className="font-display text-base font-bold text-text-primary">
-              How should I study for ASVAB General Science?
-            </h3>
-            <p className="mt-2 text-text-secondary">
-              Focus on the highest-frequency topics first: human body systems (especially circulatory), Earth&apos;s layers and rock types, Newton&apos;s three laws, and the pH scale. Use mnemonics for memorization (see Tip 9) and active recall (self-quizzing) instead of re-reading notes. A 4-week plan rotating through one domain per week is the most effective approach. Our <Link href="/how-to-study-for-the-asvab" className="text-accent hover:text-accent-hover">how to study for the ASVAB</Link> guide covers the full strategy.
+            <h3 className="font-display text-base font-bold text-text-primary">How should I study for ASVAB General Science?</h3>
+            <p className="mt-1 text-sm text-text-secondary">
+              Focus on the highest-frequency topics first: human body systems (especially circulatory), Earth&apos;s layers and rock types, Newton&apos;s three laws, and the pH scale. Use mnemonics for memorization (see Tip 9) and active recall (self-quizzing) instead of re-reading notes. A 4-week plan rotating through one domain per week is the most effective approach. Our{" "}
+              <Link href="/how-to-study-for-the-asvab" className="text-accent hover:text-accent-hover">how to study for the ASVAB</Link>{" "}
+              guide covers the full strategy.
             </p>
           </div>
-
           <div>
-            <h3 className="font-display text-base font-bold text-text-primary">
-              Can you skip questions on the GS section?
-            </h3>
-            <p className="mt-2 text-text-secondary">
+            <h3 className="font-display text-base font-bold text-text-primary">Can you skip questions on the GS section?</h3>
+            <p className="mt-1 text-sm text-text-secondary">
               On the CAT-ASVAB (computer version), no. You must answer each question before the next one appears, and you cannot go back. On the paper-and-pencil version, yes. You can skip and return within the time limit. Never leave a question blank. The ASVAB does not penalize wrong answers, so guessing after eliminating options gives you better odds than skipping.
             </p>
           </div>
         </div>
 
-        {/* --- CTA --- */}
+        {/* CTA */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">
           <h3 className="font-display text-xl font-bold text-text-primary">See What Your Scores Unlock</h3>
-          <p className="mt-2 text-sm text-text-secondary">Enter your 9 subtest scores and instantly see your AFQT, composite scores, and every job you qualify for.</p>
-          <Link href="/calculator" className="mt-4 inline-block rounded-xl bg-accent px-6 py-3 font-display text-base font-bold text-white transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)] no-underline">Try the Free Calculator</Link>
+          <p className="mt-2 text-sm text-text-secondary">
+            Enter your 9 subtest scores and instantly see your AFQT, composite scores, and every job you qualify for.
+          </p>
+          <Link
+            href="/calculator"
+            className="mt-4 inline-block rounded-xl bg-accent px-6 py-3 font-display text-base font-bold text-white transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)] no-underline"
+          >
+            Try the Free Calculator
+          </Link>
         </div>
       </article>
     </div>
