@@ -4,6 +4,7 @@ import Link from "next/link";
 import Calculator from "@/components/Calculator";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
+import BranchCalculatorView from "@/components/BranchCalculatorView";
 import type { MilitaryJob } from "@/types";
 
 import armyJobs from "@/data/army-jobs.json";
@@ -24,6 +25,7 @@ const allArmyJobs: MilitaryJob[] = armyJobs.map(
 export default function ArmyCalculatorPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
+      <BranchCalculatorView branch="army" />
       <JsonLd
         data={{
           "@context": "https://schema.org",

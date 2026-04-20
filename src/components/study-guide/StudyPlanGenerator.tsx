@@ -5,6 +5,7 @@ import type { AsvabSubtest } from "@/types";
 import { SUBTEST_NAMES } from "@/types";
 import { useStudyGuide } from "./StudyGuideProvider";
 import EmailCapture from "../EmailCapture";
+import { trackEvent } from "@/lib/analytics";
 import {
   generateStudyPlan,
   planToText,
@@ -80,6 +81,11 @@ export default function StudyPlanGenerator() {
     const result = generateStudyPlan(planInput);
     setPlan(result);
     setExpandedWeek(0);
+    trackEvent("study_plan_generated", {
+      weeks: result.length,
+      hours_per_week: state.hoursPerWeek,
+      branch: state.selectedBranch || "unspecified",
+    });
     try {
       localStorage.setItem("asvab-study-plan", JSON.stringify(result));
     } catch {}

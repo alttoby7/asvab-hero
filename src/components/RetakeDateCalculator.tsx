@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Branch } from "@/types";
 import { BRANCH_NAMES } from "@/types";
 import {
@@ -8,6 +8,7 @@ import {
   formatRetakeDate,
   type RetakeNumber,
 } from "@/lib/retake-eligibility";
+import { trackEvent } from "@/lib/analytics";
 
 const BRANCH_OPTIONS: Branch[] = [
   "army",
@@ -49,6 +50,18 @@ export default function RetakeDateCalculator() {
   }, [lastTestDate, retakeNumber, previousAfqt, targetAfqt, branch, inDep]);
 
   const isEligibleNow = result && result.daysFromToday <= 0;
+
+  // Debounced track — fire after inputs settle.
+  useEffect(() => {
+    if (!result) return;
+    const handle = window.setTimeout(() => {
+      trackEvent("retake_calc_submit", {
+        branch: branch || "unspecified",
+        days_until_eligible: Math.max(0, result.daysFromToday),
+      });
+    }, 800);
+    return () => window.clearTimeout(handle);
+  }, [result, branch]);
 
   return (
     <div className="space-y-6">

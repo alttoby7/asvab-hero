@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import type { SubtestScores, AsvabSubtest, MilitaryJob, Branch, CompositeScores } from "@/types";
 import { ALL_SUBTESTS, BRANCH_NAMES } from "@/types";
@@ -11,6 +11,7 @@ import {
   calculateAllComposites,
 } from "@/lib/score-calculator";
 import { buildJobMatchSnapshot } from "@/lib/job-matcher";
+import { trackEvent } from "@/lib/analytics";
 import ScoreInput from "./ScoreInput";
 import JobResults from "./JobResults";
 import NonQualifyingResults from "./NonQualifyingResults";
@@ -106,6 +107,32 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
   );
 
   const handleReset = () => setScores(DEFAULT_SCORES);
+
+  // Fire `calculator_view_result` once per mount when results are first available.
+  const viewedResultRef = useRef(false);
+  useEffect(() => {
+    if (viewedResultRef.current) return;
+    if (snapshot.totalQualifying === 0 && afqt === 0) return;
+    viewedResultRef.current = true;
+    trackEvent("calculator_view_result", {
+      afqt,
+      branch: branchFilter ?? "all",
+      qualifying_jobs_count: snapshot.totalQualifying,
+    });
+  }, [snapshot.totalQualifying, afqt, branchFilter]);
+
+  // Debounced `calculator_submit` — fire ~800ms after the user stops adjusting scores.
+  // Avoids one event per keystroke while still capturing "finalized" AFQT/job counts.
+  useEffect(() => {
+    const handle = window.setTimeout(() => {
+      trackEvent("calculator_submit", {
+        afqt,
+        branch: branchFilter ?? "all",
+        qualifying_jobs_count: snapshot.totalQualifying,
+      });
+    }, 800);
+    return () => window.clearTimeout(handle);
+  }, [afqt, snapshot.totalQualifying, branchFilter]);
 
   return (
     <div className="space-y-8">
@@ -233,7 +260,7 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
       </section>
 
       {/* Score Gap Engine — minimum-effort path to closest jobs */}
-      <ScoreGapEngine snapshot={snapshot} />
+      <ScoreGapEngine snapshot={snapshot} afqt={afqt} />
 
       {/* Share actions */}
       <ShareActions

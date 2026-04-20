@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 interface EmailCaptureProps {
   headline?: string;
@@ -44,6 +45,7 @@ export default function EmailCapture({
       });
       if (!res.ok) throw new Error("Signup failed");
       setStatus("success");
+      trackEvent("signup_submit", { source: tag, success: true });
       await replayPendingSignups();
     } catch {
       try {
@@ -59,6 +61,7 @@ export default function EmailCapture({
         /* ignore */
       }
       setStatus("error");
+      trackEvent("signup_submit", { source: tag, success: false });
       setError("Couldn't reach the server. We saved your email and will try again.");
     }
   };

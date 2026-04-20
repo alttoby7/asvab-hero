@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
+import OutboundTracker from "@/components/OutboundTracker";
 
 const siteTitle =
   "ASVAB Hero — Free ASVAB Score Calculator & Military Job Finder";
@@ -84,6 +85,7 @@ export default function RootLayout({
         <Nav />
         <main className="relative z-1">{children}</main>
         <Footer />
+        <OutboundTracker />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-96BXQ7YRJ8" strategy="afterInteractive" />
         <Script id="ga4-init" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];

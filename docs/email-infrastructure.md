@@ -184,9 +184,8 @@ curl -X POST http://localhost:8788/api/signup \
 
 ## What's still pending
 
-- [ ] **Set the 4 CF Pages env vars** (manual, dashboard). Can't automate without an API token with Pages write scope.
-- [ ] **Commit + push** the Function + EmailCapture changes.
-- [ ] **Welcome tx template** — Listmonk API POST to `/api/templates` with `type: tx`. First attempt silently failed; retry with `type: "tx"` and proper JSON escaping. Then wire the Function to call `/api/tx` after `/api/subscribers` succeeds.
+- [x] **Welcome tx template** — Listmonk template ID **5** ("ASVAB Hero — Welcome + Study Plan"). Fires from `functions/api/signup.ts` after subscribe succeeds. The `{{ UnsubscribeURL }}` helper is NOT available in `tx` templates — use `https://list.asvabhero.com/subscription/<list_uuid>/{{ .Subscriber.UUID }}` instead.
+- [ ] **Add `LISTMONK_WELCOME_TEMPLATE_ID=5`** to CF Pages production env vars. Without it, the welcome email is silently skipped (subscribe still succeeds).
 - [ ] **30-day study plan PDF** lead magnet — generate client-side via `window.print()` on `/calculator` results, or attach a pre-built PDF to the welcome email.
 - [ ] **Drip sequence content** drafted at `docs/email-drafts/sequence.md` — needs scheduling via Listmonk campaigns (scheduling pattern TBD: cron job on droplet querying `subscribed_at` windows, OR a scheduled CF Worker).
 

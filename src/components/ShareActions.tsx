@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import type { SubtestScores } from "@/types";
 import { ALL_SUBTESTS } from "@/types";
+import { trackEvent } from "@/lib/analytics";
 
 interface ShareActionsProps {
   scores: SubtestScores;
@@ -48,6 +49,7 @@ export default function ShareActions({
 
   const handleCopy = useCallback(async () => {
     if (!url) return;
+    trackEvent("share_result", { method: "copy_link" });
     try {
       await navigator.clipboard.writeText(url);
       setCopied(true);
@@ -66,7 +68,16 @@ export default function ShareActions({
   }, [url]);
 
   const handlePrint = useCallback(() => {
+    trackEvent("share_result", { method: "print" });
     window.print();
+  }, []);
+
+  const handleSmsClick = useCallback(() => {
+    trackEvent("share_result", { method: "text" });
+  }, []);
+
+  const handleEmailClick = useCallback(() => {
+    trackEvent("share_result", { method: "email" });
   }, []);
 
   const smsHref = url
@@ -100,12 +111,14 @@ export default function ShareActions({
         </button>
         <a
           href={smsHref}
+          onClick={handleSmsClick}
           className="rounded-md border border-navy-border bg-navy px-3 py-2 text-sm font-medium text-text-primary transition-colors hover:bg-navy-lighter"
         >
           Text to recruiter
         </a>
         <a
           href={emailHref}
+          onClick={handleEmailClick}
           className="rounded-md border border-navy-border bg-navy px-3 py-2 text-sm font-medium text-text-primary transition-colors hover:bg-navy-lighter"
         >
           Email

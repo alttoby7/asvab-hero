@@ -1,14 +1,16 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useEffect, useRef } from "react";
 import type { Branch } from "@/types";
 import { BRANCH_NAMES } from "@/types";
 import type { JobEligibilityResult, JobMatchSnapshot } from "@/lib/job-matcher";
 import { buildScoreGapReport } from "@/lib/score-gap";
 import type { SubtestSuggestion } from "@/lib/score-gap";
+import { trackEvent } from "@/lib/analytics";
 
 interface ScoreGapEngineProps {
   snapshot: JobMatchSnapshot;
+  afqt?: number;
 }
 
 const BRANCH_ORDER: Branch[] = [
@@ -120,7 +122,7 @@ function GapCard({ candidate }: { candidate: GapCandidate }) {
   );
 }
 
-export default function ScoreGapEngine({ snapshot }: ScoreGapEngineProps) {
+export default function ScoreGapEngine({ snapshot, afqt }: ScoreGapEngineProps) {
   const candidates = useMemo(() => {
     const top = pickTopCloseMisses(snapshot, 6);
     return top
@@ -131,6 +133,26 @@ export default function ScoreGapEngine({ snapshot }: ScoreGapEngineProps) {
       .filter((x) => x.report !== null)
       .slice(0, 3);
   }, [snapshot]);
+
+  // Fire once per mount when the engine actually renders a result for the user.
+  const firedRef = useRef(false);
+  useEffect(() => {
+    if (firedRef.current) return;
+    if (candidates.length === 0) return;
+    const top = candidates[0];
+    if (!top) return;
+    firedRef.current = true;
+    const gap =
+      top.report && top.report.suggestions[0]
+        ? top.report.suggestions[0].pointsNeeded
+        : 0;
+    trackEvent("score_gap_engine_run", {
+      current_afqt: afqt ?? 0,
+      target_job: top.candidate.result.job.code,
+      gap_points: gap,
+    });
+  }, [candidates, afqt]);
+
   if (candidates.length === 0) return null;
 
   return (

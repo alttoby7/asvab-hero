@@ -3,6 +3,7 @@ interface Env {
   LISTMONK_API_USER: string;
   LISTMONK_API_TOKEN: string;
   LISTMONK_LIST_ID: string;
+  LISTMONK_WELCOME_TEMPLATE_ID?: string;
   RATE_LIMIT_KV?: KVNamespace;
 }
 
@@ -131,6 +132,32 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       const detail = await upstream.text().catch(() => "");
       console.error("listmonk upstream", upstream.status, detail.slice(0, 500));
       return json({ error: "upstream_error", status: upstream.status }, 502, cors);
+    }
+
+    const welcomeTemplateId = parseInt(
+      (env.LISTMONK_WELCOME_TEMPLATE_ID || "").trim(),
+      10
+    );
+    if (Number.isFinite(welcomeTemplateId)) {
+      try {
+        const tx = await fetch(`${LISTMONK_URL}/api/tx`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Basic ${auth}`,
+          },
+          body: JSON.stringify({
+            subscriber_email: email,
+            template_id: welcomeTemplateId,
+          }),
+        });
+        if (!tx.ok) {
+          const detail = await tx.text().catch(() => "");
+          console.error("listmonk tx", tx.status, detail.slice(0, 500));
+        }
+      } catch (err) {
+        console.error("listmonk tx threw", err);
+      }
     }
 
     return json({ success: true }, 200, cors);
