@@ -49,15 +49,20 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   const cors = corsHeaders(request.headers.get("Origin"));
 
   try {
-    if (!env.LISTMONK_URL || !env.LISTMONK_API_USER || !env.LISTMONK_API_TOKEN || !env.LISTMONK_LIST_ID) {
+    const LISTMONK_URL = (env.LISTMONK_URL || "").trim().replace(/\/+$/, "");
+    const LISTMONK_API_USER = (env.LISTMONK_API_USER || "").trim();
+    const LISTMONK_API_TOKEN = (env.LISTMONK_API_TOKEN || "").trim();
+    const LISTMONK_LIST_ID = (env.LISTMONK_LIST_ID || "").trim();
+
+    if (!LISTMONK_URL || !LISTMONK_API_USER || !LISTMONK_API_TOKEN || !LISTMONK_LIST_ID) {
       return json(
         {
           error: "misconfigured",
           missing: {
-            LISTMONK_URL: !env.LISTMONK_URL,
-            LISTMONK_API_USER: !env.LISTMONK_API_USER,
-            LISTMONK_API_TOKEN: !env.LISTMONK_API_TOKEN,
-            LISTMONK_LIST_ID: !env.LISTMONK_LIST_ID,
+            LISTMONK_URL: !LISTMONK_URL,
+            LISTMONK_API_USER: !LISTMONK_API_USER,
+            LISTMONK_API_TOKEN: !LISTMONK_API_TOKEN,
+            LISTMONK_LIST_ID: !LISTMONK_LIST_ID,
           },
         },
         500,
@@ -89,7 +94,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       });
     }
 
-    const listId = parseInt(env.LISTMONK_LIST_ID, 10);
+    const listId = parseInt(LISTMONK_LIST_ID, 10);
     if (!Number.isFinite(listId)) {
       return json({ error: "bad_list_id" }, 500, cors);
     }
@@ -101,8 +106,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       attribs.scores = body.scores;
     }
 
-    const auth = btoa(`${env.LISTMONK_API_USER}:${env.LISTMONK_API_TOKEN}`);
-    const upstream = await fetch(`${env.LISTMONK_URL}/api/subscribers`, {
+    const auth = btoa(`${LISTMONK_API_USER}:${LISTMONK_API_TOKEN}`);
+    const upstream = await fetch(`${LISTMONK_URL}/api/subscribers`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
