@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
+import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
-  title: "ASVAB Score Chart: Categories & Branch Minimums | ASVAB Hero",
+  title: "ASVAB Score Chart: AFQT Categories I–V + Branch Minimums (2026)",
   description:
-    "Decode your ASVAB score chart: AFQT categories (I-V), all 6 branch minimums for diploma and GED, composite formulas, and what each score unlocks.",
+    "AFQT Category I = 93–99. II = 65–92. IIIA = 50–64. IIIB = 31–49. IV = 10–30. Branch minimums: Army 31, Marines 32, Navy 35, Air Force/Space Force 36, Coast Guard 40. GED floors are higher.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-score-chart",
   },
@@ -33,7 +34,7 @@ export default function ASVABScoreChartPage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-03-18",
-          dateModified: "2026-03-18",
+          dateModified: "2026-04-19",
         }}
       />
 
@@ -113,8 +114,27 @@ export default function ASVABScoreChartPage() {
       <article className="prose-asvab">
         {/* ─── INTRO ─── */}
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          ASVAB Score Chart: What Every Score Means for Your Military Career
+          ASVAB Score Chart: AFQT Categories I–V + Branch Minimums (2026)
         </h1>
+
+        <VerifiedBlock
+          verifiedDate="April 2026"
+          sources={[
+            { label: "officialasvab.com", url: "https://www.officialasvab.com/applicants/scores/" },
+          ]}
+        >
+          <p>
+            <strong>AFQT categories:</strong> Cat I = 93–99 (top 7%). II =
+            65–92. IIIA = 50–64. IIIB = 31–49. IV = 10–30. V = 1–9
+            (disqualified).{" "}
+            <strong>2026 branch minimum AFQT (diploma):</strong> Army 31,
+            Marines 32, Navy 35, Air Force/Space Force 36, Coast Guard 40.
+            GED applicants face higher floors (typically 50) plus per-branch
+            quota caps. Line scores (Army 10 composites, Air Force MAGE,
+            Navy rating combos, Marines GT/EL/MM/CL/ST) determine which
+            specific jobs you qualify for within each branch.
+          </p>
+        </VerifiedBlock>
 
         <DvidsHeroImage
           src="/images/asvab-score-chart/hero.jpg"

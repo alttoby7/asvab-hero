@@ -3,9 +3,9 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Retake the ASVAB: 8-Step Guide (2026) | ASVAB Hero",
+  title: "Can You Retake the ASVAB? 1/1/6 Rule, DEP Limits, C-Test (2026)",
   description:
-    "Learn how to retake the ASVAB with our 8-step guide covering waiting periods, branch rules, the C-Test, and a 30-day study plan. Current for 2026.",
+    "Yes — you can retake the ASVAB. Wait 1 month for your first retest, 1 month for your second, then 6 months after that. Branch DEP rules, the Confirmation Test, and how to improve fast.",
   alternates: {
     canonical: "https://asvabhero.com/how-to-retake-the-asvab",
   },
@@ -19,9 +19,9 @@ export default function HowToRetakeTheASVABPage() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline:
-            "How to Retake the ASVAB: Your Complete 8-Step Guide (2026)",
+            "Can You Retake the ASVAB? 1/1/6 Rule, DEP Limits, C-Test (2026)",
           description:
-            "Learn how to retake the ASVAB with our 8-step guide covering waiting periods, branch rules, the C-Test, and a 30-day study plan. Current for 2026.",
+            "Yes — you can retake the ASVAB. Wait 1 month for your first retest, 1 month for your second, then 6 months after that. Branch DEP rules, the Confirmation Test, and how to improve fast.",
           url: "https://asvabhero.com/how-to-retake-the-asvab",
           author: {
             "@type": "Organization",
@@ -33,7 +33,7 @@ export default function HowToRetakeTheASVABPage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-03-22",
-          dateModified: "2026-03-22",
+          dateModified: "2026-04-19",
         }}
       />
 
@@ -76,10 +76,10 @@ export default function HowToRetakeTheASVABPage() {
             },
             {
               "@type": "Question",
-              name: "Do high school ASVAB scores count for enlistment waiting periods?",
+              name: "Do high school student ASVAB scores count for retest waiting periods?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "No. The student ASVAB taken through the ASVAB Career Exploration Program is a separate test. It does not count as an official enlistment ASVAB and does not trigger any waiting period.",
+                text: "Yes. Per the official ASVAB retest policy, the 1/1/6 wait rule is the same whether the initial test was a student ASVAB (taken through the Career Exploration Program in high school) or an enlistment ASVAB. If you took the student ASVAB on January 15, your first retest opens on February 15. The student ASVAB is also usable as an official enlistment score for up to 2 years.",
               },
             },
             {
@@ -96,25 +96,49 @@ export default function HowToRetakeTheASVABPage() {
 
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          How to Retake the ASVAB: Your Complete 8-Step Guide (2026)
+          Can You Retake the ASVAB? 1/1/6 Rule, DEP Limits, C-Test (2026)
         </h1>
 
-        <p className="mt-4 text-text-secondary">
+        <aside className="mt-6 rounded-lg border-l-4 border-accent bg-navy-lighter/60 p-5">
+          <p className="text-sm font-semibold text-accent">The short answer</p>
+          <p className="mt-2 text-text-primary">
+            <strong>Yes, you can retake the ASVAB — there is no lifetime limit.</strong>{" "}
+            The military uses the <strong>1/1/6 rule</strong>: wait 1 calendar
+            month for your 1st retest, 1 month for your 2nd, then 6 months for
+            every retest after that. The waiting period is the same whether
+            your first test was a student ASVAB or enlistment ASVAB. A{" "}
+            <strong>Confirmation Test (C-Test)</strong> is required if your
+            AFQT jumps 20+ points within 6 months. DEP restrictions vary by
+            branch (Air Force and Space Force block retests in DEP; Army is
+            most flexible).
+          </p>
+          <p className="mt-3 text-sm text-text-tertiary">
+            Source:{" "}
+            <a
+              href="https://www.officialasvab.com/recruiters/asvab-retest-policy/"
+              className="underline hover:text-accent"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              officialasvab.com retest policy
+            </a>
+            {" · "}Last verified: April 2026
+          </p>
+        </aside>
+
+        <p className="mt-6 text-text-secondary">
           You got your ASVAB score back. It&apos;s not what you needed. Maybe
           you fell short of your branch&apos;s minimum, or your line scores
-          locked you out of the job you actually want.
+          locked you out of the job you actually want. The good news: you can
+          retake it. Thousands of people do every year.
         </p>
         <p className="text-text-secondary">
-          You can retake it. Thousands of people do every year. But{" "}
-          <strong>how to retake the ASVAB</strong> isn&apos;t as simple as
+          But <strong>how to retake the ASVAB</strong> isn&apos;t as simple as
           signing up again. There are mandatory waiting periods,
           branch-specific restrictions, and a confirmation test that catches
           people off guard. Mess up the timing and you&apos;ll wait six months
-          instead of one.
-        </p>
-        <p className="text-text-secondary">
-          This guide covers all 8 steps, from eligibility to what happens if
-          your score still falls short. Every rule is current for 2026.
+          instead of one. This guide walks you through all 8 steps, every rule
+          current for 2026.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
@@ -198,11 +222,20 @@ export default function HowToRetakeTheASVABPage() {
         </div>
 
         <p className="text-text-secondary">
-          One common point of confusion: the student ASVAB you took in high
-          school does not count as an official enlistment test. It&apos;s a
-          different version administered by the school, not MEPS. You can walk
-          into the enlistment ASVAB without any waiting period, regardless of
-          when you took the student version.
+          One important clarification: <strong>the student ASVAB you took in
+          high school DOES count for retest waiting periods.</strong> Per the
+          official ASVAB retest policy, the 1/1/6 rule applies the same way
+          whether your first test was a student ASVAB (administered at school
+          through the Career Exploration Program) or an enlistment ASVAB
+          (administered at MEPS or a MET site). If you took the student ASVAB
+          on January 15, your first enlistment-ASVAB retest opens February 15
+          — not sooner.
+        </p>
+        <p className="text-text-secondary">
+          Student ASVAB scores are also valid for enlistment for 2 years from
+          the test date, so if you&apos;re happy with your student ASVAB score
+          you don&apos;t necessarily need to retake it. Your recruiter can
+          pull your student scores and use them directly.
         </p>
         <p className="text-text-secondary">
           Your ASVAB scores expire 2 years from the test date. If you&apos;re
@@ -212,12 +245,15 @@ export default function HowToRetakeTheASVABPage() {
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Note</p>
+          <p className="text-sm font-semibold text-text-primary">
+            Student ASVAB counts — verify before you test
+          </p>
           <p className="mt-1 text-sm text-text-secondary">
-            The high school student ASVAB (given through the ASVAB Career
-            Exploration Program) is not the same as the enlistment ASVAB. It
-            does not trigger any waiting period and cannot be used for
-            enlistment.
+            The high school student ASVAB (Career Exploration Program) uses
+            the same retest policy as the enlistment ASVAB. It also produces
+            a valid enlistment score for 2 years. Your recruiter can look up
+            your student ASVAB scores and confirm your exact retest
+            eligibility date before you schedule.
           </p>
         </aside>
 
@@ -1041,12 +1077,14 @@ export default function HowToRetakeTheASVABPage() {
           </div>
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
-              Do high school ASVAB scores count for enlistment waiting periods?
+              Do high school student ASVAB scores count for retest waiting periods?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              No. The student ASVAB taken through the ASVAB Career Exploration
-              Program is a separate test. It does not count as an official
-              enlistment ASVAB and does not trigger any waiting period.
+              Yes. Per the official ASVAB retest policy, the 1/1/6 wait rule
+              applies the same way whether your first test was a student
+              ASVAB (taken through the Career Exploration Program in high
+              school) or an enlistment ASVAB. Student ASVAB scores are also
+              usable as an official enlistment score for 2 years.
             </p>
           </div>
           <div>

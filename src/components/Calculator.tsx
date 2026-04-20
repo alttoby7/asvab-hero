@@ -14,17 +14,21 @@ import { buildJobMatchSnapshot } from "@/lib/job-matcher";
 import ScoreInput from "./ScoreInput";
 import JobResults from "./JobResults";
 import NonQualifyingResults from "./NonQualifyingResults";
+import ScoreGapEngine from "./ScoreGapEngine";
+import ShareActions from "./ShareActions";
+import ResultCard from "./ResultCard";
 
 interface CalculatorProps {
   allJobs: MilitaryJob[];
+  branchFilter?: Branch;
 }
 
 const DEFAULT_SCORES: SubtestScores = {
   GS: 50,
-  AR: 35, // AFQT subtest: 35 on 20-62 scale ≈ 59th percentile starting state
-  WK: 35, // AFQT subtest
-  PC: 35, // AFQT subtest
-  MK: 35, // AFQT subtest
+  AR: 50,
+  WK: 50,
+  PC: 50,
+  MK: 50,
   EI: 50,
   AS: 50,
   MC: 50,
@@ -40,10 +44,15 @@ const BRANCH_TAB_ORDER: Branch[] = [
   "space_force",
 ];
 
-export default function Calculator({ allJobs }: CalculatorProps) {
+export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
   const [scores, setScores] = useState<SubtestScores>(DEFAULT_SCORES);
-  const [compositeTab, setCompositeTab] = useState<Branch>("army");
+  const [compositeTab, setCompositeTab] = useState<Branch>(branchFilter ?? "army");
   const searchParams = useSearchParams();
+
+  const filteredJobs = useMemo(
+    () => (branchFilter ? allJobs.filter((j) => j.branch === branchFilter) : allJobs),
+    [allJobs, branchFilter]
+  );
 
   // Load scores from URL params (e.g. from practice test results)
   useEffect(() => {
@@ -87,8 +96,8 @@ export default function Calculator({ allJobs }: CalculatorProps) {
   }, [allComposites]);
 
   const snapshot = useMemo(
-    () => buildJobMatchSnapshot(allJobs, compositesByBranch, afqt),
-    [allJobs, compositesByBranch, afqt]
+    () => buildJobMatchSnapshot(filteredJobs, compositesByBranch, afqt),
+    [filteredJobs, compositesByBranch, afqt]
   );
 
   const activeComposites = useMemo(
@@ -100,6 +109,13 @@ export default function Calculator({ allJobs }: CalculatorProps) {
 
   return (
     <div className="space-y-8">
+      <ResultCard
+        scores={scores}
+        afqt={afqt}
+        afqtCategory={afqtCategory}
+        qualifyingCount={snapshot.totalQualifying}
+      />
+
       {/* Score Inputs */}
       <section>
         <div className="mb-4 flex items-center justify-between">
@@ -166,22 +182,24 @@ export default function Calculator({ allJobs }: CalculatorProps) {
           Composite / Line Scores
         </h2>
 
-        {/* Branch tabs */}
-        <div className="mb-4 flex flex-wrap gap-2">
-          {BRANCH_TAB_ORDER.map((branch) => (
-            <button
-              key={branch}
-              onClick={() => setCompositeTab(branch)}
-              className={`rounded-md px-3 py-1.5 text-xs font-medium transition-colors ${
-                compositeTab === branch
-                  ? "bg-accent text-white"
-                  : "bg-navy text-text-secondary hover:text-text-primary"
-              }`}
-            >
-              {BRANCH_NAMES[branch]}
-            </button>
-          ))}
-        </div>
+        {/* Branch tabs — hidden when branch is locked */}
+        {!branchFilter && (
+          <div className="mb-4 flex flex-wrap gap-2">
+            {BRANCH_TAB_ORDER.map((branch) => (
+              <button
+                key={branch}
+                onClick={() => setCompositeTab(branch)}
+                className={`rounded-md px-3 py-1.5 text-xs font-medium transition-colors ${
+                  compositeTab === branch
+                    ? "bg-accent text-white"
+                    : "bg-navy text-text-secondary hover:text-text-primary"
+                }`}
+              >
+                {BRANCH_NAMES[branch]}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Composite grid */}
         {activeComposites && (
@@ -213,6 +231,16 @@ export default function Calculator({ allJobs }: CalculatorProps) {
           afqt={afqt}
         />
       </section>
+
+      {/* Score Gap Engine — minimum-effort path to closest jobs */}
+      <ScoreGapEngine snapshot={snapshot} />
+
+      {/* Share actions */}
+      <ShareActions
+        scores={scores}
+        afqt={afqt}
+        qualifyingCount={snapshot.totalQualifying}
+      />
 
       {/* Non-Qualifying Jobs */}
       <section className="rounded-xl border border-navy-border bg-navy-light p-6">

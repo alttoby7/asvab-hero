@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import type { AsvabSubtest } from "@/types";
 import { SUBTEST_NAMES } from "@/types";
 import { useStudyGuide } from "./StudyGuideProvider";
+import EmailCapture from "../EmailCapture";
 import {
   generateStudyPlan,
   planToText,
@@ -185,6 +186,12 @@ export default function StudyPlanGenerator() {
       {/* Plan Output */}
       {plan && plan.length > 0 && (
         <div className="space-y-4" style={{ animation: "fadeIn 0.3s ease-out" }}>
+          <EmailCapture
+            headline="Email me this study plan"
+            subhead="Get this plan plus a 5-email crash course covering AFQT strategy, line scores, and retest tactics."
+            cta="Email my plan"
+            tag="asvab-study-plan"
+          />
           {/* Summary Bar */}
           <div className="flex flex-wrap items-center gap-3 rounded-xl border border-navy-border bg-navy-light px-4 py-3">
             <div className="flex items-center gap-2">

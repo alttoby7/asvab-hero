@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
-  title: "ASVAB Scoring and Results Explained | ASVAB Hero",
+  title: "How ASVAB Scoring Works: AFQT Formula, VE Double-Count, Results Timeline",
   description:
-    "Understand ASVAB scoring and results: AFQT formula with VE double-count, line scores by branch, 2026 minimums, and what to do after testing.",
+    "AFQT = 2×(WK+PC) + AR + MK → percentile. Word Knowledge counts twice. CAT scores: same day. Paper: 30 days. Every number on your report explained, plus 2026 branch minimums.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-scoring-and-results",
   },
@@ -29,7 +30,7 @@ const articleJsonLd = {
     name: "ASVAB Hero",
   },
   datePublished: "2026-03-19",
-  dateModified: "2026-03-19",
+  dateModified: "2026-04-19",
 };
 
 const faqJsonLd = {
@@ -118,9 +119,28 @@ export default function ASVABScoringAndResultsPage() {
       <JsonLd data={faqJsonLd} />
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          ASVAB Scoring and Results: What Every Number on Your Score Report
-          Means
+          How ASVAB Scoring Works: AFQT Formula, VE Double-Count, Results Timeline
         </h1>
+
+        <VerifiedBlock
+          verifiedDate="April 2026"
+          sources={[
+            { label: "officialasvab.com", url: "https://www.officialasvab.com/applicants/scores/" },
+          ]}
+        >
+          <p>
+            <strong>AFQT formula:</strong> 2×(WK + PC) + AR + MK → converted
+            to a 1–99 percentile. Word Knowledge and Paragraph Comprehension
+            count <strong>twice</strong> because they feed the Verbal
+            Expression (VE) component. Scores come back <strong>same day</strong>{" "}
+            for the computerized (CAT-ASVAB) version, about <strong>30 days</strong>{" "}
+            for paper (P&amp;P-ASVAB). Your score report shows the AFQT
+            percentile plus all 9 standard subtest scores (20–80) and branch
+            composite / line scores. Only the 4 AFQT subtests (AR, WK, PC,
+            MK) determine enlistment eligibility; all 9 feed the composites
+            that determine which jobs you qualify for.
+          </p>
+        </VerifiedBlock>
 
         <p className="mt-4 text-text-secondary">
           You get your score report back and it&apos;s a wall of numbers,

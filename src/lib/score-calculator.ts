@@ -9,10 +9,10 @@ import type { SubtestScores, CompositeScores, BranchComposites, Branch } from "@
  *
  * Formula: VE = WK + PC (Verbal Expression); raw = 2×VE + AR + MK
  *
- * AFQT subtests are calibrated on a 20–62 standard score scale. The app UI accepts 20–99
- * (the real subtest range), so values above 62 are clamped to 62 before the AFQT raw score
- * is computed. Users entering real score report values get accurate percentiles.
- * Values above 62 are genuinely high scores that map to 99th percentile.
+ * Standard scores from ASVAB score reports run 20–99. The PAY97 table was normed on equated
+ * scores (effective range ~20–62). We linearly remap standard → equated before lookup so that
+ * a score of 50 (the military-applicant mean) yields a realistic percentile (~66th) rather than
+ * appearing at 99th percentile.
  */
 
 // PAY97 Table 2.5: [minRaw, maxRaw, percentile]
@@ -53,10 +53,15 @@ function afqtPercentileFromRaw(raw: number): number {
 }
 
 export function calculateAFQT(scores: SubtestScores): number {
-  // Clamp AFQT subtests to the 20-62 standard score range used in PAY97 norming.
-  const clamp = (v: number) => Math.min(62, Math.max(20, v));
-  const ve = clamp(scores.WK) + clamp(scores.PC);
-  const raw = 2 * ve + clamp(scores.AR) + clamp(scores.MK);
+  // Remap standard scores (20-99) to PAY97 equated scale (20-62) linearly.
+  // This ensures a score of 50 (military-applicant mean) yields ~66th percentile
+  // rather than collapsing near the 99th percentile ceiling.
+  const toEquated = (v: number) => {
+    const s = Math.min(99, Math.max(20, v));
+    return Math.round(20 + (s - 20) * 42 / 79);
+  };
+  const ve = toEquated(scores.WK) + toEquated(scores.PC);
+  const raw = 2 * ve + toEquated(scores.AR) + toEquated(scores.MK);
   return afqtPercentileFromRaw(raw);
 }
 

@@ -52,8 +52,8 @@ export function estimateAFQT(subtestResults: SubtestResult[]): {
   const resultMap = new Map(subtestResults.map((r) => [r.subtest, r]));
 
   const mapToStandardScore = (pct: number): number => {
-    // Map 0-100% → 20-62 standard score range
-    return Math.round(20 + (pct / 100) * 42);
+    // Map 0-100% → 20-99 standard score range
+    return Math.round(20 + (pct / 100) * 79);
   };
 
   const scores: SubtestScores = {
@@ -140,7 +140,7 @@ export function estimateStandardScores(
   subtestResults: SubtestResult[]
 ): SubtestScores {
   const resultMap = new Map(subtestResults.map((r) => [r.subtest, r]));
-  const map = (pct: number): number => Math.round(20 + (pct / 100) * 42);
+  const map = (pct: number): number => Math.round(20 + (pct / 100) * 79);
 
   return {
     GS: map(resultMap.get("GS")?.percentage ?? 0),

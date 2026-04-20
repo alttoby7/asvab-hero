@@ -45,6 +45,10 @@ const pages = [
   { path: "/about", priority: "0.5", changefreq: "monthly" },
   { path: "/contact", priority: "0.4", changefreq: "monthly" },
   { path: "/blog", priority: "0.6", changefreq: "weekly" },
+  { path: "/army-asvab-calculator", priority: "0.9", changefreq: "monthly" },
+  { path: "/navy-asvab-score-calculator", priority: "0.9", changefreq: "monthly" },
+  { path: "/air-force-asvab-calculator", priority: "0.9", changefreq: "monthly" },
+  { path: "/asvab-retake-calculator", priority: "0.9", changefreq: "monthly" },
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>

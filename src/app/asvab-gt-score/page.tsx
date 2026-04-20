@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
-  title:
-    "ASVAB GT Score: Complete Guide to Jobs, Formulas & Scores | ASVAB Hero",
+  title: "What GT Score Do You Need? Army Jobs at 100, 107, 110+ (2026)",
   description:
-    "Learn what the ASVAB GT score is, how it's calculated (VE + AR), what each score range unlocks, and how to raise it. Branch formulas, job tables, and special program requirements.",
+    "GT = VE + AR. Army needs 100 for most tech jobs, 107 for Rangers, 110 for Cyber / OCS / Green to Gold. Raise WK by 1 point → GT jumps 2. Full tables, branch differences, and how to close the gap.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-gt-score",
   },
@@ -34,7 +34,7 @@ export default function ASVABGTScorePage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-03-22",
-          dateModified: "2026-03-22",
+          dateModified: "2026-04-19",
         }}
       />
 
@@ -113,9 +113,27 @@ export default function ASVABGTScorePage() {
 
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          ASVAB GT Score: The Complete Guide to the Military&apos;s Most
-          Important Line Score
+          What GT Score Do You Need? Army Jobs at 100, 107, 110+ (2026)
         </h1>
+
+        <VerifiedBlock
+          verifiedDate="April 2026"
+          sources={[
+            { label: "goarmy.com", url: "https://www.goarmy.com/careers-and-jobs/about-army-jobs/asvab" },
+            { label: "officialasvab.com", url: "https://www.officialasvab.com/applicants/scores/" },
+          ]}
+        >
+          <p>
+            The <strong>GT (General Technical)</strong> score is the single
+            most important Army line score. Formula:{" "}
+            <strong>GT = VE + AR</strong>, where VE = 2×WK + PC. Common
+            cutoffs: <strong>GT 100</strong> opens most Army tech/intel MOS
+            (25B, 35F). <strong>GT 107</strong> is the Ranger threshold.{" "}
+            <strong>GT 110</strong> unlocks Cyber (17C), OCS, Green to Gold,
+            and 18X Special Forces. Because WK is doubled, raising your
+            Word Knowledge by 1 standard score point raises GT by 2.
+          </p>
+        </VerifiedBlock>
 
         <p className="mt-4 text-text-secondary">
           Your AFQT gets you through the door. Your{" "}

@@ -6,11 +6,12 @@ import AFQTFormulaExplorer from "@/components/scores-explained/AFQTFormulaExplor
 import AFQTCategoryLadder from "@/components/scores-explained/AFQTCategoryLadder";
 import BranchCompositeHeatmap from "@/components/scores-explained/BranchCompositeHeatmap";
 import ScoreImpactSimulator from "@/components/scores-explained/ScoreImpactSimulator";
+import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
-  title: "ASVAB Scores Explained: AFQT, Composites & Branch Minimums",
+  title: "AFQT vs Line Scores: How to Read Your ASVAB Score Sheet (2026)",
   description:
-    "Learn how ASVAB scores work: the AFQT formula, composite line scores by branch, 2026 minimums, and which subtests matter most. Free interactive tools included.",
+    "Your AFQT gates enlistment. Your line scores gate jobs. Here's exactly what each number on your score sheet means, the 2026 branch minimums, and how to read it fast.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-scores-explained",
   },
@@ -37,7 +38,7 @@ export default function ASVABScoresExplainedPage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-03-17",
-          dateModified: "2026-03-17",
+          dateModified: "2026-04-19",
         }}
       />
 
@@ -93,8 +94,26 @@ export default function ASVABScoresExplainedPage() {
       <article className="prose-asvab">
         {/* ─── INTRO ─── */}
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          ASVAB Scores Explained: What Your Numbers Actually Mean
+          AFQT vs Line Scores: How to Read Your ASVAB Score Sheet (2026)
         </h1>
+
+        <VerifiedBlock
+          verifiedDate="April 2026"
+          sources={[
+            { label: "officialasvab.com", url: "https://www.officialasvab.com/applicants/scores/" },
+          ]}
+        >
+          <p>
+            Your ASVAB score sheet has two kinds of numbers. The{" "}
+            <strong>AFQT</strong> (a 1–99 percentile built from AR + MK + 2×VE)
+            decides whether you can enlist at all — branch minimums run 31–40.
+            The <strong>line scores / composites</strong> (Army GT, Air Force
+            MAGE, Navy rating combos, Marines GT/EL/MM/CL/ST) decide which
+            jobs you qualify for. AFQT ≠ jobs. Line scores = jobs. Scroll
+            down for the exact formulas, branch-by-branch minimums, and which
+            subtests matter most for what you want.
+          </p>
+        </VerifiedBlock>
 
         <DvidsHeroImage
           src="/images/asvab-scores-explained/hero.jpg"
