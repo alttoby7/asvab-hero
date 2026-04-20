@@ -10,7 +10,8 @@ interface EmailCaptureProps {
   variant?: "inline" | "card";
 }
 
-const ENDPOINT = process.env.NEXT_PUBLIC_ASVAB_SIGNUP_ENDPOINT || "";
+const ENDPOINT =
+  process.env.NEXT_PUBLIC_ASVAB_SIGNUP_ENDPOINT || "/api/signup";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -35,9 +36,16 @@ export default function EmailCapture({
     setStatus("submitting");
     setError(null);
 
-    if (!ENDPOINT) {
-      // Graceful fallback while Bento endpoint is being wired: stash locally
-      // so we don't drop signups on the floor.
+    try {
+      const res = await fetch(ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, tag, source: tag }),
+      });
+      if (!res.ok) throw new Error("Signup failed");
+      setStatus("success");
+      await replayPendingSignups();
+    } catch {
       try {
         const stash = JSON.parse(
           localStorage.getItem("asvabhero.pending_signups") || "[]"
@@ -50,23 +58,43 @@ export default function EmailCapture({
       } catch {
         /* ignore */
       }
-      setStatus("success");
-      return;
-    }
-
-    try {
-      const res = await fetch(ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, tag }),
-      });
-      if (!res.ok) throw new Error("Signup failed");
-      setStatus("success");
-    } catch {
       setStatus("error");
-      setError("Something went wrong. Try again in a minute.");
+      setError("Couldn't reach the server. We saved your email and will try again.");
     }
   };
+
+  async function replayPendingSignups() {
+    let stash: { email: string; tag?: string; at: string }[] = [];
+    try {
+      stash = JSON.parse(
+        localStorage.getItem("asvabhero.pending_signups") || "[]"
+      );
+    } catch {
+      return;
+    }
+    if (!stash.length) return;
+    const remaining: typeof stash = [];
+    for (const entry of stash) {
+      try {
+        const res = await fetch(ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            email: entry.email,
+            tag: entry.tag,
+            source: entry.tag,
+          }),
+        });
+        if (!res.ok) remaining.push(entry);
+      } catch {
+        remaining.push(entry);
+      }
+    }
+    localStorage.setItem(
+      "asvabhero.pending_signups",
+      JSON.stringify(remaining)
+    );
+  }
 
   if (status === "success") {
     return (
