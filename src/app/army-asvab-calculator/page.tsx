@@ -61,9 +61,16 @@ export default function ArmyCalculatorPage() {
           The Army uses <strong>10 line scores</strong> (called composite
           scores) derived from your 9 ASVAB subtests: GT, CL, CO, EL, FA, GM,
           MM, OF, SC, ST. Your <strong>AFQT</strong> determines whether you
-          can enlist (Army minimum: 31 diploma, 50 GED). Your line scores
-          determine <strong>which MOS you qualify for</strong>. The calculator
-          below checks all 10.
+          can enlist (Army minimum: 31 diploma, 50 GED, see the{" "}
+          <Link
+            href="/army-afqt-calculator"
+            className="text-accent hover:text-accent-hover"
+          >
+            Army AFQT calculator
+          </Link>{" "}
+          for the percentile-only breakdown). Your line scores determine{" "}
+          <strong>which MOS you qualify for</strong>. The calculator below
+          checks all 10.
         </p>
       </VerifiedBlock>
 

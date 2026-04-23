@@ -43,6 +43,30 @@ Dark navy `#0a1628`, orange accent `#f97316`. All custom tokens in `@theme` bloc
 ## Article Pages
 Content articles use `prose-asvab` CSS class. DVIDS hero images use `DvidsHeroImage` component with DoD endorsement disclaimer. See `scripts/dvids-image.py` to download images with attribution.
 
+## Traffic Growth Phase 2 (2026-04-23) — AFQT calculator split
+Plan: GSC showed AFQT queries (100+ combined impressions) were ranking pos 10-16 **on the homepage**. Dedicated page targets jump to page 1.
+
+**Shipped:**
+- `/afqt-calculator` — new standalone page. Reuses `calculateAFQT` from `src/lib/score-calculator.ts` (PAY97 Table 2.5 lookup) so numbers match the full calculator exactly
+- `AfqtCalculator.tsx` — 4-subtest (AR, WK, PC, MK) client component. Shows percentile + DoD category + branch-by-branch eligibility matrix with per-branch gap readout ("3 points short" vs "Qualifies"). GA4 events tagged with `branch: "afqt_only"` for segmentation
+- JSON-LD: `WebApplication` + `FAQPage` (6 Q&As) schemas
+- Homepage hero CTA changed from "View Pro Features" → "AFQT Calculator" (highest-authority internal link on the site)
+- `/afqt-score` intro now links to `/afqt-calculator` alongside existing `/calculator` link
+- Sitemap entry added (priority 0.9, monthly)
+- Title: "AFQT Calculator 2026: Instant Percentile + Category from 4 Subtests"
+- Canonical: `https://asvabhero.com/afqt-calculator` (no trailing slash, matches site convention)
+- Commit: `0562cce`
+
+**Deferred:** EmailCapture not added to new page until Listmonk wire-up lands (keeps SEO landing clean).
+
+**Follow-up (2026-04-23, same day):** Added 4 branch-specific AFQT pages, one per branch-group:
+- `/army-afqt-calculator` — 31 / 50 + FSPC (21-30) path
+- `/navy-afqt-calculator` — 35 diploma, 50 + 15 credits GED + DEP Enrichment (28-30), Coast Guard 40
+- `/air-force-afqt-calculator` — 36 / 65, Space Force shares standards
+- `/marines-afqt-calculator` — 32 diploma, 50 GED (biggest diploma/GED gap), no prep program
+
+Each reuses the same `AfqtCalculator` component (branch eligibility matrix highlights every branch, not filtered). Per-page branch framing, minimum table, below-floor options, branch-specific FAQ (4 Q&As), JSON-LD `WebApplication`+`FAQPage`. Sitemap updated (priority 0.9). Cross-links added from `/afqt-calculator` and from each branch ASVAB line-score page. Fixed stale Air Force AFQT number on `/air-force-asvab-calculator` (was 31, should be 36).
+
 ## Traffic Growth Phase 1 (2026-04-19)
 Plan: `~/.claude/plans/lets-grow-traffic-first-frolicking-cat.md`
 

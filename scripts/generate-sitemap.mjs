@@ -50,6 +50,10 @@ const pages = [
   { path: "/air-force-asvab-calculator", priority: "0.9", changefreq: "monthly" },
   { path: "/asvab-retake-calculator", priority: "0.9", changefreq: "monthly" },
   { path: "/afqt-calculator", priority: "0.9", changefreq: "monthly" },
+  { path: "/army-afqt-calculator", priority: "0.9", changefreq: "monthly" },
+  { path: "/navy-afqt-calculator", priority: "0.9", changefreq: "monthly" },
+  { path: "/air-force-afqt-calculator", priority: "0.9", changefreq: "monthly" },
+  { path: "/marines-afqt-calculator", priority: "0.9", changefreq: "monthly" },
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>

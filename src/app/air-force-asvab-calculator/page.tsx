@@ -61,8 +61,15 @@ export default function AirForceCalculatorPage() {
           The Air Force uses the <strong>MAGE composite scores</strong>:
           Mechanical (M), Administrative (A), General (G), and Electronics
           (E). Every AFSC requires a minimum on one or more of these. Air
-          Force minimum AFQT is <strong>31</strong> with a diploma (50 with
-          GED), but almost every AFSC has higher MAGE floors — so AFQT alone
+          Force minimum AFQT is <strong>36</strong> with a diploma (65 with
+          GED, see the{" "}
+          <Link
+            href="/air-force-afqt-calculator"
+            className="text-accent hover:text-accent-hover"
+          >
+            Air Force AFQT calculator
+          </Link>
+          ), but almost every AFSC has higher MAGE floors, so AFQT alone
           doesn&apos;t tell you which jobs you can actually get.
         </p>
       </VerifiedBlock>

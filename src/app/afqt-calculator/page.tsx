@@ -355,6 +355,37 @@ export default function AfqtCalculatorPage() {
             </Link>
             .
           </li>
+          <li>
+            Targeting one branch? See the{" "}
+            <Link
+              href="/army-afqt-calculator"
+              className="text-accent underline hover:text-accent-hover"
+            >
+              Army
+            </Link>
+            ,{" "}
+            <Link
+              href="/navy-afqt-calculator"
+              className="text-accent underline hover:text-accent-hover"
+            >
+              Navy
+            </Link>
+            ,{" "}
+            <Link
+              href="/air-force-afqt-calculator"
+              className="text-accent underline hover:text-accent-hover"
+            >
+              Air Force
+            </Link>
+            , and{" "}
+            <Link
+              href="/marines-afqt-calculator"
+              className="text-accent underline hover:text-accent-hover"
+            >
+              Marines
+            </Link>{" "}
+            AFQT pages for branch-specific minimums and below-floor paths.
+          </li>
         </ul>
       </section>
     </div>

@@ -62,8 +62,15 @@ export default function NavyCalculatorPage() {
           is baked into your rank title. Qualifying for a rating depends on
           raw subtest combinations (AR+VE+MK+MC for Nuclear Field, AR+WK+PC+MC
           for Air Traffic Control, etc.). The minimum <strong>AFQT</strong>{" "}
-          for active-duty enlistment is 35 (diploma) or 50 (GED); Navy Reserve
-          tiers and FSPC-A have their own floors.
+          for active-duty enlistment is 35 (diploma) or 50 plus 15 college
+          credits (GED). See the{" "}
+          <Link
+            href="/navy-afqt-calculator"
+            className="text-accent hover:text-accent-hover"
+          >
+            Navy AFQT calculator
+          </Link>{" "}
+          for the enlistment-floor breakdown and DEP Enrichment path.
         </p>
       </VerifiedBlock>
 
