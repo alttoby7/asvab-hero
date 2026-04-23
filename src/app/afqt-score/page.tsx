@@ -113,8 +113,15 @@ export default function AFQTScorePage() {
         <p className="text-text-secondary">
           This guide breaks down the AFQT formula, branch minimums for 2026,
           categories, how composites differ, and how to raise your score fast.
-          If you want to see where you stand right now, run your numbers through
-          our{" "}
+          If you just want your percentile right now, use our{" "}
+          <Link
+            href="/afqt-calculator"
+            className="text-accent hover:text-accent-hover"
+          >
+            AFQT calculator
+          </Link>{" "}
+          (4 subtests, instant percentile). For full job qualification, run all
+          9 subtests through the{" "}
           <Link
             href="/calculator"
             className="text-accent hover:text-accent-hover"

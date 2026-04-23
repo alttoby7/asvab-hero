@@ -37,10 +37,10 @@ export default function HomePage() {
                 </svg>
               </Link>
               <Link
-                href="/pricing"
+                href="/afqt-calculator"
                 className="inline-flex items-center rounded-xl border border-navy-border px-8 py-3.5 text-base font-semibold text-text-secondary transition-colors hover:border-accent hover:text-text-primary no-underline"
               >
-                View Pro Features
+                AFQT Calculator
               </Link>
             </div>
           </div>
