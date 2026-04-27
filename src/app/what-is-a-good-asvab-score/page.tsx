@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 
@@ -139,6 +140,15 @@ export default function WhatIsAGoodASVABScorePage() {
           <Link href="/calculator">ASVAB Score Calculator</Link> to see exactly which jobs you
           qualify for across all six branches.
         </p>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Define 'good' for your goal — get a tailored 30-day plan"
+            subhead="Free 6-page PDF plus a 5-email crash course on AFQT, line scores, and the bonus thresholds that matter for your branch."
+            cta="Email me the plan"
+            tag="good-asvab-score"
+          />
+        </section>
 
         {/* Section 2 */}
         <h2>How ASVAB Scoring Actually Works: AFQT vs. Composite Scores</h2>

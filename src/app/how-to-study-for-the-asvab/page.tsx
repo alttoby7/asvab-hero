@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 
@@ -154,6 +155,15 @@ export default function HowToStudyForTheASVABPage() {
           after a low score. The steps are the same. The timeline compresses or
           expands based on what you have.
         </p>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Want this plan in PDF form? We'll send it."
+            subhead="Free 6-page 30-day study plan plus a 5-email crash course on AFQT and line scores. Sent in the next few minutes."
+            cta="Email me the plan"
+            tag="how-to-study"
+          />
+        </section>
 
         {/* Step 1 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">

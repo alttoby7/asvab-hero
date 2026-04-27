@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
@@ -129,6 +130,15 @@ export default function ASVABElectronicsInformationTipsPage() {
             AFSC, and rating options across all six branches.
           </p>
         </aside>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Going for a technical MOS? Get a study plan that targets EI"
+            subhead="Free 30-day plan plus a 5-email crash course covering AFQT, line scores, and the EL/E/SC composites that gate technical jobs."
+            cta="Email me the plan"
+            tag="ei-tips"
+          />
+        </section>
 
         {/* Tip 1 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">

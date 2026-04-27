@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 
@@ -177,6 +178,15 @@ export default function ASVABGTScorePage() {
           </Link>{" "}
           to see your GT now, or read on for the full breakdown.
         </p>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Trying to clear GT 110 for OCS, SF, or Cyber?"
+            subhead="Free 30-day plan focused on WK, PC, and AR — the only 3 subtests that move your GT. PDF plus a 5-email crash course."
+            cta="Email me the GT plan"
+            tag="gt-score"
+          />
+        </section>
 
         {/* What the GT Score Actually Is */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -1799,6 +1809,16 @@ export default function ASVABGTScorePage() {
             Try the Free Calculator
           </Link>
         </div>
+
+        <section className="mt-8 not-prose">
+          <EmailCapture
+            headline="Close the GT gap in 4-6 weeks"
+            subhead="Most people leave GT points on the table in AR. Our free plan walks you through the highest-leverage drills, 30 minutes a day."
+            cta="Email me the plan"
+            tag="gt-score-end"
+            variant="inline"
+          />
+        </section>
       </article>
     </div>
   );

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 import AFQTFormulaExplorer from "@/components/scores-explained/AFQTFormulaExplorer";
@@ -124,6 +125,15 @@ export default function ASVABScoresExplainedPage() {
           width={1200}
           height={700}
         />
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Want a study plan that targets the highest-leverage subtests?"
+            subhead="Free 6-page PDF plus a 5-email crash course on AFQT, line scores, and which subtests matter for your branch."
+            cta="Email me the plan"
+            tag="scores-explained"
+          />
+        </section>
 
         <p className="mt-4 text-text-secondary">
           You took the ASVAB. You got your scores back. Now you&apos;re staring at a page full of numbers, abbreviations, and categories that nobody bothered to explain. Your recruiter says your score is &ldquo;good&rdquo; or tells you to retake it, but you still don&apos;t know what any of it means.
@@ -525,6 +535,16 @@ export default function ASVABScoresExplainedPage() {
             Try the Free Calculator
           </Link>
         </div>
+
+        <section className="mt-8 not-prose">
+          <EmailCapture
+            headline="Get the 30-day plan that turns this score sheet into a job offer"
+            subhead="Free PDF plus a 5-email crash course on AFQT, VE leverage, and line scores. Sent in the next few minutes."
+            cta="Email me the plan"
+            tag="scores-explained-end"
+            variant="inline"
+          />
+        </section>
       </article>
     </div>
   );

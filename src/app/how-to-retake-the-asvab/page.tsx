@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
@@ -125,6 +126,15 @@ export default function HowToRetakeTheASVABPage() {
             {" · "}Last verified: April 2026
           </p>
         </aside>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Get a 30-day plan tailored to your retest window"
+            subhead="The 1-month wait is your biggest advantage if you use it right. We'll send you a free PDF plan and a 5-email retake crash course."
+            cta="Email me the retake plan"
+            tag="how-to-retake"
+          />
+        </section>
 
         <p className="mt-6 text-text-secondary">
           You got your ASVAB score back. It&apos;s not what you needed. Maybe
@@ -1116,6 +1126,16 @@ export default function HowToRetakeTheASVABPage() {
             Try the Free Calculator
           </Link>
         </div>
+
+        <section className="mt-8 not-prose">
+          <EmailCapture
+            headline="Don't wing the retake — get the 30-day plan"
+            subhead="A free PDF plan plus a 5-email crash course covering AFQT, line scores, and how to avoid the C-Test reset."
+            cta="Email me the plan"
+            tag="how-to-retake-end"
+            variant="inline"
+          />
+        </section>
       </article>
     </div>
   );
