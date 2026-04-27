@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import AfqtCalculator from "@/components/AfqtCalculator";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 
@@ -116,6 +117,15 @@ export default function MarinesAfqtCalculatorPage() {
         >
           <AfqtCalculator />
         </Suspense>
+      </section>
+
+      <section className="mt-8">
+        <EmailCapture
+          headline="Get the 30-day Marines ASVAB study plan"
+          subhead="Free 6-page PDF tuned for the Marines 32 diploma (or 50 GED) floor, plus a 5-email crash course on AFQT and line scores."
+          cta="Email me the plan"
+          tag="afqt-calculator-marines"
+        />
       </section>
 
       {/* Marines specifics */}

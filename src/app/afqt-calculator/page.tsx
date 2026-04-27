@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import AfqtCalculator from "@/components/AfqtCalculator";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 
@@ -131,6 +132,15 @@ export default function AfqtCalculatorPage() {
         >
           <AfqtCalculator />
         </Suspense>
+      </section>
+
+      <section className="mt-8">
+        <EmailCapture
+          headline="Get your 30-day AFQT study plan"
+          subhead="Free 6-page PDF plan plus a 5-email crash course on AFQT and line scores. Sent in the next 5 minutes."
+          cta="Email me the plan"
+          tag="afqt-calculator"
+        />
       </section>
 
       {/* Formula section */}
