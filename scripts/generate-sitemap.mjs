@@ -54,6 +54,7 @@ const pages = [
   { path: "/navy-afqt-calculator", priority: "0.9", changefreq: "monthly" },
   { path: "/air-force-afqt-calculator", priority: "0.9", changefreq: "monthly" },
   { path: "/marines-afqt-calculator", priority: "0.9", changefreq: "monthly" },
+  { path: "/asvab-score-converter", priority: "0.9", changefreq: "monthly" },
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
