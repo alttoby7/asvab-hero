@@ -41,6 +41,7 @@ const pages = [
   { path: "/navy-asvab-score", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-general-science-tips", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-score-for-marines", priority: "0.8", changefreq: "monthly" },
+  { path: "/asvab-retake-policy", priority: "0.8", changefreq: "monthly" },
   { path: "/gt-score-calculator", priority: "0.8", changefreq: "monthly" },
   { path: "/pricing", priority: "0.7", changefreq: "monthly" },
   { path: "/about", priority: "0.5", changefreq: "monthly" },
