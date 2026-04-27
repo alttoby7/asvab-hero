@@ -41,7 +41,7 @@ const faqJsonLd = {
       name: "What is the formula for the ASVAB GT score?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The Army GT formula is GT = VE + AR, where VE = WK + PC. The Marine Corps GT formula is different: GT = WK + PC + AR + MC, per MCO 1230.5C, with a maximum of 151. Watch the branch when you read GT formulas online. Older Marine sources sometimes list VE + AR only, which is incorrect under the current order.",
+        text: "Army GT = VE + AR, where VE = WK + PC. Marine GT uses the same formula: WK + PC + AR. Some guides add Mechanical Comprehension to the Marine GT formula, but MC feeds the Marine MM composite, not GT. Any calculator returning a USMC GT above 130 is including MC incorrectly.",
       },
     },
     {
@@ -198,7 +198,7 @@ export default function ASVABCompositeScoreCalculatorPage() {
 
         <p className="text-text-secondary">
           The Army has 10 line scores: GT, CL, CO, EL, FA, GM, MM, OF, SC,
-          ST. The Marines use a similar GT system but with different math. The
+          ST. The Marines use the same GT formula as the Army (VE + AR). The
           Navy uses around 80 rating-specific formulas based on raw subtest
           sums. The Air Force and Space Force use four MAGE composites:
           Mechanical, Administrative, General, Electronic.
@@ -373,27 +373,28 @@ export default function ASVABCompositeScoreCalculatorPage() {
         </p>
 
         <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
-          Marines (per MCO 1230.5C)
+          Marines
         </h3>
 
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          Marine GT = WK + PC + AR + MC
+          Marine GT = WK + PC + AR
         </div>
 
         <p className="mt-4 text-text-secondary">
-          Some older study guides list Marine GT as VE + AR. Per the current
-          Marine Corps Order MCO 1230.5C, MC is included. If you see
-          conflicting numbers, confirm directly with your recruiter.
+          Marine GT uses the same formula as Army GT: VE + AR, where VE = WK
+          + PC. Some older study guides add Mechanical Comprehension to the
+          formula. MC feeds the Marine MM (Mechanical Maintenance) composite,
+          not GT. Any calculator returning USMC GT above 130 is including MC
+          and producing wrong numbers.
         </p>
 
         <p className="text-text-secondary">
-          Jordan&apos;s Marine GT = 58 + 56 + 60 + 58 = 232 raw, converting
-          to a standard score around <strong>115</strong>. The Marine GT cap
-          is 151.
+          Jordan&apos;s Marine GT = 58 + 56 + 60 = 174 raw, converting to a
+          standard score around <strong>107</strong>.
         </p>
 
         <p className="text-text-secondary">
-          Recon Marine 0321 needs GT 105. Jordan qualifies with 10 points to
+          Recon Marine 0321 needs GT 105. Jordan qualifies with 2 points to
           spare.
         </p>
 
@@ -522,10 +523,10 @@ export default function ASVABCompositeScoreCalculatorPage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Marines
                 </td>
-                <td className="py-2 pr-4 font-mono">GT ~115</td>
+                <td className="py-2 pr-4 font-mono">GT ~107</td>
                 <td className="py-2 pr-4">Pass</td>
                 <td className="py-2 pr-4">0321 Recon</td>
-                <td className="py-2">Yes</td>
+                <td className="py-2">Yes (barely)</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
@@ -1025,7 +1026,7 @@ export default function ASVABCompositeScoreCalculatorPage() {
                   MC
                 </td>
                 <td className="py-2 pr-4">GM, MM, ST</td>
-                <td className="py-2 pr-4">Yes</td>
+                <td className="py-2 pr-4">No</td>
                 <td className="py-2 pr-4">M</td>
                 <td className="py-2 pr-4">NUC, SEAL</td>
                 <td className="py-2 font-semibold">Medium</td>
@@ -1205,11 +1206,11 @@ export default function ASVABCompositeScoreCalculatorPage() {
               What is the formula for the ASVAB GT score?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              The Army GT formula is GT = VE + AR, where VE = WK + PC. The
-              Marine Corps GT formula is different: GT = WK + PC + AR + MC, per
-              MCO 1230.5C, with a maximum of 151. Watch the branch when you
-              read GT formulas online. Older Marine sources sometimes list VE +
-              AR only, which is incorrect under the current order.
+              Army GT = VE + AR, where VE = WK + PC. Marine GT uses the same
+              formula: WK + PC + AR. Some guides add Mechanical Comprehension
+              to the Marine GT formula, but MC feeds the Marine MM (Mechanical
+              Maintenance) composite, not GT. Any calculator returning a USMC
+              GT above 130 is including MC incorrectly.
             </p>
           </div>
           <div>
