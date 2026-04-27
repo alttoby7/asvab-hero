@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "9 ASVAB Mechanical Comprehension Tips That Work | ASVAB Hero",
+  title: "ASVAB Mechanical Comprehension: 9 Tips for Levers, Gears, and Pulleys (2026)",
   description:
     "Master ASVAB Mechanical Comprehension with 9 proven tips: lever classes, gear ratios, pulley counting, Pascal&apos;s Law, and diagram strategies.",
   alternates: {
@@ -129,6 +130,15 @@ export default function ASVABMechanicalComprehensionTipsPage() {
             MC matters.
           </p>
         </aside>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Going for infantry, FA, or aircraft maintenance? Get the MC-aware plan"
+            subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the MC-heavy composites that gate hands-on jobs."
+            cta="Email me the plan"
+            tag="mc-tips"
+          />
+        </section>
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           1. Know Which Composites MC Feeds Before You Study

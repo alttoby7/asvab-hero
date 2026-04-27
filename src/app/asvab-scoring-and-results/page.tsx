@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 
@@ -176,6 +177,15 @@ export default function ASVABScoringAndResultsPage() {
             controls a different gate.
           </p>
         </aside>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Get a 30-day plan that exploits the VE double-count"
+            subhead="WK and PC count twice in the AFQT. Free PDF plan plus a 5-email crash course showing you the highest-leverage drills."
+            cta="Email me the plan"
+            tag="scoring-and-results"
+          />
+        </section>
 
         {/* Section 2 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">

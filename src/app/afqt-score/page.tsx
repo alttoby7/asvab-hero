@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
@@ -140,6 +141,15 @@ export default function AFQTScorePage() {
             got 60% right.
           </p>
         </aside>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Want a 30-day plan that exploits the VE double-count?"
+            subhead="Verbal counts twice in the AFQT. Our free PDF plan plus 5-email crash course shows you exactly where to put your study hours."
+            cta="Email me the plan"
+            tag="afqt-score"
+          />
+        </section>
 
         {/* Section: How AFQT Is Calculated */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -1045,6 +1055,16 @@ export default function AFQTScorePage() {
             Try the Free Calculator
           </Link>
         </div>
+
+        <section className="mt-8 not-prose">
+          <EmailCapture
+            headline="Raise your AFQT in 30 days — free plan"
+            subhead="A 6-page PDF plan plus a 5-email crash course covering AFQT, line scores, and branch minimums. No spam."
+            cta="Email me the plan"
+            tag="afqt-score-end"
+            variant="inline"
+          />
+        </section>
       </article>
     </div>
   );

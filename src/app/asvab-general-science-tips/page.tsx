@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "10 ASVAB General Science Tips to Boost Your Scores | ASVAB Hero",
+  title: "ASVAB General Science: 10 Tips to Unlock Combat Medic and Tech Jobs (2026)",
   description:
     "Master the ASVAB General Science subtest with these 10 tips covering body systems, earth science, physics, chemistry, mnemonics, and a 4-week study plan.",
   alternates: {
@@ -114,6 +115,15 @@ export default function ASVABGeneralScienceTipsPage() {
             GS is NOT part of the AFQT formula (AFQT = AR + MK + 2VE)
           </p>
         </aside>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Targeting Combat Medic, avionics, or nuke? Get the GS-aware plan"
+            subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the GS-heavy composites that gate the best jobs."
+            cta="Email me the plan"
+            tag="gs-tips"
+          />
+        </section>
 
         {/* Tip 1 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">

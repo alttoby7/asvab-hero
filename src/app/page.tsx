@@ -1,4 +1,5 @@
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 
 export default function HomePage() {
   return (
@@ -44,6 +45,18 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Email Capture (above-the-fold leverage) */}
+      <section className="border-t border-navy-border">
+        <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+          <EmailCapture
+            headline="Get the 30-day ASVAB study plan, free"
+            subhead="6-page PDF plan plus a 5-email crash course on AFQT and line scores. No spam. Takes 10 seconds to sign up."
+            cta="Email me the plan"
+            tag="homepage-hero"
+          />
         </div>
       </section>
 
@@ -126,6 +139,19 @@ export default function HomePage() {
               </svg>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Email Capture (mid-page, after practice test CTA) */}
+      <section className="border-t border-navy-border bg-navy-light/30">
+        <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6">
+          <EmailCapture
+            headline="Want a study plan, not just a practice test?"
+            subhead="We'll send you a 30-day plan tuned to your branch, your AFQT target, and your line score goals. Free."
+            cta="Send me the 30-day plan"
+            tag="homepage-mid"
+            variant="inline"
+          />
         </div>
       </section>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 import VerifiedBlock from "@/components/VerifiedBlock";
@@ -160,6 +161,15 @@ export default function ASVABScoreChartPage() {
           </Link>{" "}
           is the fastest way to plug in your subtest scores and see qualifying jobs across all six branches.
         </p>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Climbing categories — IIIB to IIIA, IIIA to II?"
+            subhead="Free 30-day plan plus a 5-email crash course on the highest-leverage AFQT moves to bump your category and unlock more jobs and bonuses."
+            cta="Email me the plan"
+            tag="score-chart"
+          />
+        </section>
 
         {/* ─── AFQT CATEGORIES ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">

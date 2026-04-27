@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 
@@ -143,6 +144,15 @@ export default function WhatIsTheASVABPage() {
           One score gets you through the door. The other scores decide what
           you&apos;ll actually do once you&apos;re inside.
         </p>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="New to the ASVAB? Get the 30-day starter plan"
+            subhead="Free 6-page PDF plus a 5-email crash course covering the AFQT, line scores, and how to study for the subtests that matter for your branch."
+            cta="Email me the plan"
+            tag="what-is-asvab"
+          />
+        </section>
 
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
           <p className="text-sm font-semibold text-emerald-400">Tip</p>
