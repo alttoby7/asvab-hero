@@ -185,9 +185,25 @@ curl -X POST http://localhost:8788/api/signup \
 ## What's still pending
 
 - [x] **Welcome tx template** — Listmonk template ID **5** ("ASVAB Hero — Welcome + Study Plan"). Fires from `functions/api/signup.ts` after subscribe succeeds. The `{{ UnsubscribeURL }}` helper is NOT available in `tx` templates — use `https://list.asvabhero.com/subscription/<list_uuid>/{{ .Subscriber.UUID }}` instead.
-- [ ] **Add `LISTMONK_WELCOME_TEMPLATE_ID=5`** to CF Pages production env vars. Without it, the welcome email is silently skipped (subscribe still succeeds).
-- [ ] **30-day study plan PDF** lead magnet — generate client-side via `window.print()` on `/calculator` results, or attach a pre-built PDF to the welcome email.
-- [ ] **Drip sequence content** drafted at `docs/email-drafts/sequence.md` — needs scheduling via Listmonk campaigns (scheduling pattern TBD: cron job on droplet querying `subscribed_at` windows, OR a scheduled CF Worker).
+- [x] **`LISTMONK_WELCOME_TEMPLATE_ID=5` in CF Pages production env** — verified set 2026-04-26.
+- [x] **30-day study plan PDF** lead magnet — `public/study-plan.pdf` (6 pages). Source: `scripts/study-plan.html`. Regenerate with `bash scripts/build-study-plan.sh` (uses headless Chrome). Welcome email links directly to `https://asvabhero.com/study-plan.pdf`.
+- [x] **Drip sequence (emails 2/5/10/14)** — Listmonk templates 7, 8, 9, 10 created. Cron sender at `/root/scripts/asvab_drip.py` on droplet `64.23.194.109` (env file `asvab_drip.env`). Runs daily at `14:30 UTC` (06:30 PT, 09:30 ET — chosen so the same day's drip sends on a US-friendly mid-morning). Tracks sent days via `attribs.drip_sent` for idempotency. Logs to `/var/log/asvab_drip.log`.
+
+### Drip sender — operations
+
+```bash
+# Manual run (test/catchup)
+do-ssh 'cd /root/scripts && set -a && . ./asvab_drip.env && set +a && python3 ./asvab_drip.py'
+
+# Tail today's run
+do-ssh 'tail -f /var/log/asvab_drip.log'
+
+# Inspect a subscriber's drip state
+curl -s -A curl/8.0 -u "$ASVAB_LISTMONK_API_USER:$ASVAB_LISTMONK_API_TOKEN" \
+  "https://list.asvabhero.com/api/subscribers?list_id=3&query=subscribers.email='you@example.com'"
+```
+
+To edit the drip schedule: change `DRIP_SCHEDULE` in `asvab_drip.py` (day → template_id), redeploy with `do-ssh 'cat > /root/scripts/asvab_drip.py' < local.py`. To edit drip copy: edit the template via Listmonk admin UI, no redeploy needed.
 
 ## Useful one-liners
 
