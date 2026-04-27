@@ -4,7 +4,7 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "10 ASVAB General Science Tips to Boost Your Scores | ASVAB Hero",
+  title: "ASVAB General Science: 10 Tips to Unlock Combat Medic and Tech Jobs (2026)",
   description:
     "Master the ASVAB General Science subtest with these 10 tips covering body systems, earth science, physics, chemistry, mnemonics, and a 4-week study plan.",
   alternates: {

@@ -4,7 +4,7 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "ASVAB Electronics Information Tips: 10 Strategies | ASVAB Hero",
+  title: "ASVAB Electronics Information: 10 Tips to Beat 30 Seconds/Question (2026)",
   description:
     "Master the ASVAB EI subtest with 10 proven tips: Ohm&apos;s Law triangles, series vs. parallel circuits, component functions, and pacing for 30 sec/question.",
   alternates: {

@@ -4,7 +4,7 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "9 ASVAB Mechanical Comprehension Tips That Work | ASVAB Hero",
+  title: "ASVAB Mechanical Comprehension: 9 Tips for Levers, Gears, and Pulleys (2026)",
   description:
     "Master ASVAB Mechanical Comprehension with 9 proven tips: lever classes, gear ratios, pulley counting, Pascal&apos;s Law, and diagram strategies.",
   alternates: {
