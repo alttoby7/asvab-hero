@@ -1,6 +1,32 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import Calculator from "@/components/Calculator";
+import type { MilitaryJob } from "@/types";
+
+import armyJobs from "@/data/army-jobs.json";
+import airForceJobs from "@/data/air-force-jobs.json";
+import marinesJobs from "@/data/marines-jobs.json";
+import navyJobs from "@/data/navy-jobs.json";
+import coastGuardJobs from "@/data/coast-guard-jobs.json";
+import spaceForceJobs from "@/data/space-force-jobs.json";
+
+function addBranch(
+  jobs: Record<string, unknown>[],
+  branch: MilitaryJob["branch"]
+): MilitaryJob[] {
+  return jobs.map((j) => ({ ...j, branch }) as MilitaryJob);
+}
+
+const allJobs: MilitaryJob[] = [
+  ...addBranch(armyJobs, "army"),
+  ...addBranch(airForceJobs, "air_force"),
+  ...addBranch(marinesJobs, "marines"),
+  ...addBranch(navyJobs, "navy"),
+  ...addBranch(coastGuardJobs, "coast_guard"),
+  ...addBranch(spaceForceJobs, "space_force"),
+];
 
 export const metadata: Metadata = {
   title: "ASVAB Line Score Calculator: All 6 Branches Explained | ASVAB Hero",
@@ -102,10 +128,10 @@ export default function ASVABLineScoreCalculatorPage() {
         </p>
 
         <p className="text-text-secondary">
-          Use our <strong>ASVAB line score calculator</strong> to{" "}
-          <Link href="/calculator">plug in your subtest standard scores</Link>{" "}
-          and see every composite at once: Army GT, Marine CL, Air Force MAGE,
-          Navy NUC, Coast Guard ratings, Space Force percentiles.
+          Use the <strong>ASVAB line score calculator</strong> below to enter
+          your subtest standard scores and see every composite at once: Army GT,
+          Marine CL, Air Force MAGE, Navy NUC, Coast Guard ratings, Space Force
+          percentiles.
         </p>
 
         <p className="text-text-secondary">
@@ -123,6 +149,12 @@ export default function ASVABLineScoreCalculatorPage() {
             job you qualify for. Read both numbers, not just one.
           </p>
         </aside>
+
+        <div className="my-6 overflow-hidden rounded-2xl ring-1 ring-navy-border">
+          <Suspense>
+            <Calculator allJobs={allJobs} />
+          </Suspense>
+        </div>
 
         {/* AFQT vs Line Scores */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -280,8 +312,7 @@ export default function ASVABLineScoreCalculatorPage() {
           <p className="mt-1 text-sm text-text-secondary">
             VE is the most common mistake on home-built calculators. Use the VE
             value printed on your score report rather than reconstructing it
-            from WK and PC. Our{" "}
-            <Link href="/calculator">calculator</Link> accepts the printed VE
+            from WK and PC. The calculator above accepts the printed VE
             directly.
           </p>
         </aside>
@@ -415,8 +446,7 @@ export default function ASVABLineScoreCalculatorPage() {
         </aside>
 
         <p className="text-text-secondary">
-          Plug VE and AR into the{" "}
-          <Link href="/calculator">calculator</Link> to see your GT alongside
+          Scroll to the calculator above to see your GT alongside
           all 10 Army composites.
         </p>
 
@@ -893,8 +923,8 @@ export default function ASVABLineScoreCalculatorPage() {
             GS + VE + MK + MC. Navy NUC path 1 = VE + AR + MK + MC.
           </li>
           <li>
-            <strong>Calculate the gap.</strong> Plug scores into the{" "}
-            <Link href="/calculator">calculator</Link>. Study subtests with the
+            <strong>Calculate the gap.</strong> Enter scores in the calculator
+            above. Study subtests with the
             biggest gap first.
           </li>
         </ol>
@@ -1039,26 +1069,27 @@ export default function ASVABLineScoreCalculatorPage() {
           <p className="text-sm font-semibold text-emerald-400">Tip</p>
           <p className="mt-1 text-sm text-text-secondary">
             Verify line score thresholds with your recruiter before signing.
-            Branches update minimums regularly. Run scenarios in the{" "}
-            <Link href="/calculator">calculator</Link> before MEPS so you walk
-            in knowing which jobs your numbers unlock.
+            Branches update minimums regularly. Run scenarios in the calculator
+            above before MEPS so you walk in knowing which jobs your numbers
+            unlock.
           </p>
         </aside>
 
         {/* CTA */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">
           <h3 className="font-display text-xl font-bold text-text-primary">
-            See What Your Scores Unlock
+            Find Your Weak Subtests Before MEPS
           </h3>
           <p className="mt-2 text-sm text-text-secondary">
-            Enter your 9 subtest scores and instantly see your AFQT, composite
-            scores, and every job you qualify for.
+            Take a free 30-question practice test, see which subtests are
+            holding back your line scores, and get a study plan that targets
+            exactly what you need.
           </p>
           <Link
-            href="/calculator"
+            href="/practice-test"
             className="mt-4 inline-block rounded-xl bg-accent px-6 py-3 font-display text-base font-bold text-white transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)] no-underline"
           >
-            Try the Free Calculator
+            Take the Free Practice Test
           </Link>
         </div>
 
