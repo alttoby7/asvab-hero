@@ -8,7 +8,20 @@
 - Domain: asvabhero.com (Cloudflare DNS → Cloudflare Pages)
 - Build output: `out/` (static export)
 - Cache: `public/_headers` controls caching for static assets
-- Future: When Phase 2 adds server features (Supabase auth, Stripe), migrate to Cloudflare Workers + OpenNext
+- **Supabase backend (LIVE 2026-04-27, commit `3e775a2`):** Postgres + Auth + Edge Functions. Project ref `abypyprvgvofzrtifgzi`. Schema in `supabase/migrations/0001_init.sql`. Env: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (set in CF Pages production + local `.env.local`). Service-role key + access token in central `.env` as `ASVABHERO_SUPABASE_SECRET_KEY` / `ASVABHERO_SUPABASE_ACCESS_TOKEN`.
+- App surfaces (auth/practice/study) are client-rendered React talking to Supabase JS. Marketing pages stay static. No SSR — static export still applies.
+
+## Adaptive Practice Platform v1 (2026-04-27)
+- **Auth:** `/login`, `/signup`, `/account`, `/reset-password`. Email + password. Email confirmation enforced.
+- **Practice variants live:** `diagnostic` (30q), `subtest_drill` (25q). Inactive in DB (gated for v2/v3): `afqt_sprint`, `weakness_loop`, `retake_readiness`, `full_sim`.
+- **Question bank:** 769 active items in `practice_questions` table, 39/39 topics covered, all 5 difficulty levels per topic. Source files (8): `src/data/practice-tests/{free-test.json, expansion-batch-{1..7}.json}`.
+- **Bank build:** `node scripts/build-questions-seed.mjs` → `supabase/seed-questions.sql` → `supabase db query --linked --file supabase/seed-questions.sql` (needs `SUPABASE_ACCESS_TOKEN` exported). New batch files MUST be added to the `all = [...]` array in the build script.
+- **Study guide:** `/study/[subtest]/[topicSlug]` with markdown content in `content/study-guides/`. 3 sample topic pages (AR ratio-proportion, MK fractions-decimals, WK synonyms). MiniDrill component pulls 5 questions per topic from Supabase.
+- **Edge Functions deployed:** `migrate-local-profile` (anon→registered), `delete-account` (cascade-delete), `export-account-data` (JSON download). Located in `supabase/functions/` — excluded from Next.js tsconfig because they import via Deno-style URLs.
+- **Audit doc:** `docs/question-bank-audit.md` (3 audits — initial, batch-2 re-audit, full-corpus post-tripling).
+- **Plan:** `~/.claude/plans/adaptive-churning-shell.md` — full design (schema, variants, adaptive logic, v1→v3 phasing).
+- **Memory:** `~/.claude/projects/-home-trisha-google-drive-0-AI/memory/asvab-platform-v1.md`
+- **Pending v2/v3:** flashcard SM-2 UI (schema is in DB, no UI yet), daily 10-q challenge Edge Function + Listmonk reminder, AFQT Sprint + Weakness Loop variants, Full ASVAB Sim + Retake Readiness (gated on bank growth ≥1000 items).
 
 ## AFQT Scoring Model
 
