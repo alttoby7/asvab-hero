@@ -1,20 +1,44 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import type { PracticeQuestion, UserAnswer, TestPhase } from "@/types";
-import { selectQuestions } from "@/lib/test-scorer";
+import type {
+  PracticeQuestion,
+  UserAnswer,
+  TestPhase,
+  TestVariant,
+  AsvabSubtest,
+  TopicStats,
+  AttemptPayload,
+} from "@/types";
+import {
+  loadVariant,
+  loadQuestionPool,
+  sampleForVariant,
+} from "@/lib/practice/sampler";
+import {
+  saveAttempt,
+  loadProfile,
+  generateClientAttemptId,
+} from "@/lib/practice/profile-sync";
+import {
+  scoreBySubtest,
+  scoreByTopic,
+  estimateAFQT,
+  totalCorrect,
+} from "@/lib/test-scorer";
+import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import QuestionCard from "./QuestionCard";
 import ProgressBar from "./ProgressBar";
 import Timer from "./Timer";
 import ReviewMode from "./ReviewMode";
 import TestResults from "./TestResults";
-import Link from "next/link";
 
 interface PracticeTestEngineProps {
-  questions: PracticeQuestion[];
-  timeLimitMinutes: number;
-  testName: string;
-  testDescription: string;
+  variant?: string;
+  subtest?: AsvabSubtest;
+  /** Optional override; otherwise pulled from loaded variant. */
+  testName?: string;
+  testDescription?: string;
 }
 
 const STORAGE_KEY = "asvab-hero-practice-test";
@@ -25,50 +49,109 @@ interface SavedState {
   phase: TestPhase;
   startTime: number;
   questionOrder: string[];
+  variantCode: string;
+  subtest: AsvabSubtest | null;
+  clientAttemptId: string;
 }
 
+type LoadState = "idle" | "loading" | "ready" | "error";
+
 export default function PracticeTestEngine({
-  questions,
-  timeLimitMinutes,
+  variant: variantCode = "diagnostic",
+  subtest,
   testName,
   testDescription,
 }: PracticeTestEngineProps) {
   const [phase, setPhase] = useState<TestPhase>("intro");
+  const [loadState, setLoadState] = useState<LoadState>("idle");
+  const [variant, setVariant] = useState<TestVariant | null>(null);
+  const [pool, setPool] = useState<PracticeQuestion[]>([]);
   const [shuffledQuestions, setShuffledQuestions] = useState<PracticeQuestion[]>(
     []
   );
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<UserAnswer[]>([]);
-  const [timeRemaining, setTimeRemaining] = useState(timeLimitMinutes * 60);
+  const [timeRemaining, setTimeRemaining] = useState(0);
   const [hasSavedState, setHasSavedState] = useState(false);
+  const [userId, setUserId] = useState<string | null>(null);
+  const [savedProfile, setSavedProfile] = useState<TopicStats[] | null>(null);
+  const [didSaveAttempt, setDidSaveAttempt] = useState(false);
   const startTimeRef = useRef<number>(0);
+  const clientAttemptIdRef = useRef<string>("");
 
-  // Check for saved state on mount
+  const timeLimitSeconds = variant?.rules.time_seconds ?? 36 * 60;
+  const timeLimitMinutes = Math.round(timeLimitSeconds / 60);
+
+  // Display copy: prefer prop, then variant.name, then sensible default.
+  const displayName = testName ?? variant?.name ?? "Practice Test";
+  const displayDescription =
+    testDescription ??
+    (variantCode === "subtest_drill" && subtest
+      ? `Focused 25-question drill on the ${subtest} subtest.`
+      : "Timed practice with detailed per-question feedback.");
+
+  // ── Load variant + pool + auth state on mount or when props change. ────
+  useEffect(() => {
+    let cancelled = false;
+    setLoadState("loading");
+    (async () => {
+      try {
+        const [v, p] = await Promise.all([
+          loadVariant(variantCode),
+          loadQuestionPool(
+            variantCode === "subtest_drill" && subtest ? { subtest } : undefined
+          ),
+        ]);
+        if (cancelled) return;
+        setVariant(v);
+        setPool(p);
+        setTimeRemaining(v.rules.time_seconds);
+        setLoadState("ready");
+      } catch {
+        if (!cancelled) setLoadState("error");
+      }
+
+      // Auth check (best-effort).
+      try {
+        const sb = getSupabaseBrowserClient();
+        const { data } = await sb.auth.getUser();
+        if (!cancelled) setUserId(data.user?.id ?? null);
+      } catch {
+        if (!cancelled) setUserId(null);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [variantCode, subtest]);
+
+  // ── Detect any saved in-flight session on mount. ───────────────────────
   useEffect(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
       if (saved) {
         const state: SavedState = JSON.parse(saved);
         if (
-          state.phase === "testing" ||
-          state.phase === "review"
+          (state.phase === "testing" || state.phase === "review") &&
+          state.variantCode === variantCode &&
+          (state.subtest ?? undefined) === subtest
         ) {
           setHasSavedState(true);
         }
       }
     } catch {
-      // Ignore parse errors
+      /* ignore */
     }
-  }, []);
+  }, [variantCode, subtest]);
 
-  // Timer
+  // ── Timer ─────────────────────────────────────────────────────────────
   useEffect(() => {
     if (phase !== "testing" && phase !== "review") return;
+    if (!variant) return;
 
     const interval = setInterval(() => {
       const elapsed = Math.floor((Date.now() - startTimeRef.current) / 1000);
-      const remaining = timeLimitMinutes * 60 - elapsed;
-
+      const remaining = variant.rules.time_seconds - elapsed;
       if (remaining <= 0) {
         setTimeRemaining(0);
         setPhase("results");
@@ -78,88 +161,95 @@ export default function PracticeTestEngine({
         setTimeRemaining(remaining);
       }
     }, 1000);
-
     return () => clearInterval(interval);
-  }, [phase, timeLimitMinutes]);
+  }, [phase, variant]);
 
-  // Save state on changes
+  // ── Persist in-flight state. ─────────────────────────────────────────
   useEffect(() => {
     if (phase !== "testing" && phase !== "review") return;
     if (shuffledQuestions.length === 0) return;
-
     const state: SavedState = {
       answers,
       currentIndex,
       phase,
       startTime: startTimeRef.current,
       questionOrder: shuffledQuestions.map((q) => q.id),
+      variantCode,
+      subtest: subtest ?? null,
+      clientAttemptId: clientAttemptIdRef.current,
     };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  }, [answers, currentIndex, phase, shuffledQuestions]);
+  }, [
+    answers,
+    currentIndex,
+    phase,
+    shuffledQuestions,
+    variantCode,
+    subtest,
+  ]);
 
-  const startTest = useCallback(
-    (resume = false) => {
-      if (resume) {
-        try {
-          const saved: SavedState = JSON.parse(
-            localStorage.getItem(STORAGE_KEY)!
-          );
-          // Reconstruct question order, validating all IDs still exist
-          const questionMap = new Map(questions.map((q) => [q.id, q]));
-          const ordered = saved.questionOrder
-            .map((id) => questionMap.get(id))
-            .filter(Boolean) as PracticeQuestion[];
-
-          // If questions changed (IDs removed/added), discard saved state
-          if (ordered.length !== saved.questionOrder.length) {
-            startFresh();
-            return;
-          }
-
-          // Clamp currentIndex to valid range
-          const clampedIndex = Math.min(
-            Math.max(0, saved.currentIndex),
-            ordered.length - 1
-          );
-
-          // Validate answers array matches question count
-          const validAnswers =
-            saved.answers.length === ordered.length
-              ? saved.answers
-              : ordered.map((q) => ({
-                  questionId: q.id,
-                  selectedIndex:
-                    saved.answers.find((a) => a.questionId === q.id)
-                      ?.selectedIndex ?? null,
-                }));
-
-          setShuffledQuestions(ordered);
-          setAnswers(validAnswers);
-          setCurrentIndex(clampedIndex);
-          startTimeRef.current = saved.startTime;
-          setPhase(saved.phase);
-        } catch {
-          startFresh();
-        }
-      } else {
-        startFresh();
-      }
-    },
-    [questions]
-  );
-
-  function startFresh() {
-    const shuffled = selectQuestions(questions, 30);
-    setShuffledQuestions(shuffled);
+  const startFresh = useCallback(() => {
+    if (!variant || pool.length === 0) return;
+    const sampled = sampleForVariant(variant, pool, { subtest });
+    setShuffledQuestions(sampled);
     setAnswers(
-      shuffled.map((q) => ({ questionId: q.id, selectedIndex: null }))
+      sampled.map((q) => ({ questionId: q.id, selectedIndex: null }))
     );
     setCurrentIndex(0);
     startTimeRef.current = Date.now();
-    setTimeRemaining(timeLimitMinutes * 60);
+    clientAttemptIdRef.current = generateClientAttemptId();
+    setTimeRemaining(variant.rules.time_seconds);
+    setDidSaveAttempt(false);
     setPhase("testing");
     localStorage.removeItem(STORAGE_KEY);
-  }
+  }, [variant, pool, subtest]);
+
+  const startTest = useCallback(
+    (resume = false) => {
+      if (!variant || pool.length === 0) return;
+      if (!resume) {
+        startFresh();
+        return;
+      }
+      try {
+        const saved: SavedState = JSON.parse(
+          localStorage.getItem(STORAGE_KEY)!
+        );
+        const map = new Map(pool.map((q) => [q.id, q]));
+        const ordered = saved.questionOrder
+          .map((id) => map.get(id))
+          .filter(Boolean) as PracticeQuestion[];
+        if (ordered.length !== saved.questionOrder.length) {
+          startFresh();
+          return;
+        }
+        const clamped = Math.min(
+          Math.max(0, saved.currentIndex),
+          ordered.length - 1
+        );
+        const validAnswers =
+          saved.answers.length === ordered.length
+            ? saved.answers
+            : ordered.map((q) => ({
+                questionId: q.id,
+                selectedIndex:
+                  saved.answers.find((a) => a.questionId === q.id)
+                    ?.selectedIndex ?? null,
+              }));
+        setShuffledQuestions(ordered);
+        setAnswers(validAnswers);
+        setCurrentIndex(clamped);
+        startTimeRef.current = saved.startTime;
+        clientAttemptIdRef.current =
+          saved.clientAttemptId || generateClientAttemptId();
+        setPhase(saved.phase);
+        setDidSaveAttempt(false);
+      } catch {
+        startFresh();
+      }
+    },
+    [variant, pool, startFresh]
+  );
 
   const handleSelect = (optionIndex: number) => {
     setAnswers((prev) =>
@@ -178,15 +268,96 @@ export default function PracticeTestEngine({
       setPhase("review");
     }
   };
-
   const goPrev = () => {
     if (currentIndex > 0) setCurrentIndex((i) => i - 1);
   };
-
   const jumpTo = (index: number) => {
     setCurrentIndex(index);
     if (phase === "review") setPhase("testing");
   };
+
+  // ── On submit: build AttemptPayload + persist. ─────────────────────────
+  useEffect(() => {
+    if (phase !== "results" || didSaveAttempt) return;
+    if (!variant || shuffledQuestions.length === 0) return;
+    setDidSaveAttempt(true);
+
+    (async () => {
+      const subtestResults = scoreBySubtest(shuffledQuestions, answers);
+      const topicResults = scoreByTopic(shuffledQuestions, answers);
+      const correct = totalCorrect(shuffledQuestions, answers);
+      const afqt = estimateAFQT(subtestResults).score;
+
+      const resultsBySubtest: Record<
+        string,
+        { seen: number; correct: number }
+      > = {};
+      for (const r of subtestResults) {
+        if (r.total > 0) {
+          resultsBySubtest[r.subtest] = { seen: r.total, correct: r.correct };
+        }
+      }
+      const resultsByTopic: Record<
+        string,
+        { seen: number; correct: number }
+      > = {};
+      for (const r of topicResults) {
+        resultsByTopic[r.topic_id] = { seen: r.seen, correct: r.correct };
+      }
+
+      const answerMap = new Map(
+        answers.map((a) => [a.questionId, a.selectedIndex])
+      );
+      const questionResults = shuffledQuestions.map((q) => {
+        const sel = answerMap.get(q.id) ?? null;
+        return {
+          question_id: q.id,
+          selected: sel,
+          correct: q.correctIndex,
+          topic_id: q.topicId ?? `${q.subtest.toLowerCase()}.unknown`,
+          is_correct: sel === q.correctIndex,
+        };
+      });
+
+      const startedAt = new Date(startTimeRef.current).toISOString();
+      const completedAt = new Date().toISOString();
+      const durationSeconds = Math.max(
+        0,
+        Math.round((Date.now() - startTimeRef.current) / 1000)
+      );
+
+      const payload: AttemptPayload = {
+        client_attempt_id:
+          clientAttemptIdRef.current || generateClientAttemptId(),
+        variant_code: variant.code,
+        source: "practice",
+        subtest: subtest ?? null,
+        topic_id: null,
+        started_at: startedAt,
+        completed_at: completedAt,
+        duration_seconds: durationSeconds,
+        question_count: shuffledQuestions.length,
+        correct_count: correct,
+        afqt_estimate: afqt,
+        results_by_subtest: resultsBySubtest,
+        results_by_topic: resultsByTopic,
+        question_results: questionResults,
+      };
+
+      try {
+        const result = await saveAttempt(payload, userId);
+        setSavedProfile(result.profile);
+      } catch {
+        // Even on failure we still want a profile to drive the recommender.
+        try {
+          const fallback = await loadProfile(userId);
+          setSavedProfile(fallback);
+        } catch {
+          setSavedProfile([]);
+        }
+      }
+    })();
+  }, [phase, didSaveAttempt, variant, shuffledQuestions, answers, subtest, userId]);
 
   const handleSubmit = () => {
     setPhase("results");
@@ -196,8 +367,26 @@ export default function PracticeTestEngine({
   const handleRetake = () => {
     setPhase("intro");
     setHasSavedState(false);
+    setSavedProfile(null);
+    setDidSaveAttempt(false);
     localStorage.removeItem(STORAGE_KEY);
   };
+
+  // ─── LOADING ───
+  if (loadState === "loading" || loadState === "idle") {
+    return (
+      <div className="rounded-2xl border border-navy-border bg-navy-light p-8 text-center text-sm text-text-tertiary">
+        Loading test…
+      </div>
+    );
+  }
+  if (loadState === "error" || !variant) {
+    return (
+      <div className="rounded-2xl border border-red-400/30 bg-red-400/5 p-6 text-sm text-red-300">
+        Could not load this test variant. Please refresh the page.
+      </div>
+    );
+  }
 
   // ─── INTRO ───
   if (phase === "intro") {
@@ -220,15 +409,15 @@ export default function PracticeTestEngine({
           </div>
 
           <h2 className="mb-2 font-display text-2xl font-bold text-text-primary">
-            {testName}
+            {displayName}
           </h2>
-          <p className="mb-6 text-text-secondary">{testDescription}</p>
+          <p className="mb-6 text-text-secondary">{displayDescription}</p>
 
           {/* Test details */}
           <div className="mb-8 grid grid-cols-3 gap-3">
             <div className="rounded-xl bg-navy px-3 py-3">
               <p className="font-mono text-xl font-bold text-text-primary">
-                {questions.length}
+                {variant.rules.length}
               </p>
               <p className="text-xs text-text-tertiary">Questions</p>
             </div>
@@ -239,8 +428,14 @@ export default function PracticeTestEngine({
               <p className="text-xs text-text-tertiary">Minutes</p>
             </div>
             <div className="rounded-xl bg-navy px-3 py-3">
-              <p className="font-mono text-xl font-bold text-text-primary">9</p>
-              <p className="text-xs text-text-tertiary">Subtests</p>
+              <p className="font-mono text-xl font-bold text-text-primary">
+                {variantCode === "subtest_drill" && subtest ? 1 : 9}
+              </p>
+              <p className="text-xs text-text-tertiary">
+                {variantCode === "subtest_drill" && subtest
+                  ? "Subtest"
+                  : "Subtests"}
+              </p>
             </div>
           </div>
 
@@ -278,6 +473,8 @@ export default function PracticeTestEngine({
         questions={shuffledQuestions}
         answers={answers}
         onRetake={handleRetake}
+        userId={userId}
+        savedProfile={savedProfile}
       />
     );
   }
@@ -310,12 +507,10 @@ export default function PracticeTestEngine({
   const currentAnswer = answers.find(
     (a) => a.questionId === currentQuestion?.id
   );
-
   if (!currentQuestion) return null;
 
   return (
     <div className="space-y-6">
-      {/* Top bar: timer + progress */}
       <div className="flex items-center justify-between gap-4">
         <Timer timeRemaining={timeRemaining} />
         <button
@@ -333,7 +528,6 @@ export default function PracticeTestEngine({
         onJumpTo={(i) => setCurrentIndex(i)}
       />
 
-      {/* Question */}
       <div className="rounded-2xl border border-navy-border bg-navy-light p-5 sm:p-6">
         <QuestionCard
           question={currentQuestion}
