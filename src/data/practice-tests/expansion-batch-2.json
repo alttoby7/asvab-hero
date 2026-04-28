@@ -105,21 +105,6 @@
     "explanation": "Euros = 240 × 0.85 = 204. The trap answer 282 comes from dividing 240 ÷ 0.85, which is converting in the wrong direction."
   },
   {
-    "external_key": "AR-RP-3",
-    "subtest": "AR",
-    "topic_id": "ar.ratio-proportion",
-    "difficulty": 3,
-    "stem": "On a map, 1 inch represents 50 miles. Two cities are 3.5 inches apart on the map. What is the actual distance between them?",
-    "choices": [
-      "150 miles",
-      "165 miles",
-      "175 miles",
-      "200 miles"
-    ],
-    "correct_index": 2,
-    "explanation": "Distance = 3.5 × 50 = 175 miles."
-  },
-  {
     "external_key": "AR-RP-4",
     "subtest": "AR",
     "topic_id": "ar.ratio-proportion",
@@ -594,10 +579,10 @@
       "1/3",
       "2/3",
       "6/5",
-      "30/45"
+      "5/3"
     ],
     "correct_index": 1,
-    "explanation": "Multiply across: (3 × 10) / (5 × 9) = 30/45. Simplify by dividing by 15: 2/3."
+    "explanation": "Multiply numerators and denominators: (3 × 10) / (5 × 9) = 30/45 = 2/3 in lowest terms. The trap ‘5/3’ is what students get when they invert the wrong fraction and multiply — flipping 10/9 to 9/10 then computing (3/5) × (9/10)? No: the inversion error is treating multiplication like division, giving 3/5 ÷ 10/9 = (3/5) × (9/10) = 27/50, or more simply, students who flip both fractions get (5/3) × (9/10) and then lose track. The key takeaway: multiply straight across, then simplify."
   },
   {
     "external_key": "MK-FR-5",
@@ -750,21 +735,6 @@
     "explanation": "Radius = diameter ÷ 2 = 5 cm. Area = πr² = 3.14 × 25 = 78.5 cm². Using the diameter as the radius gives 3.14 × 100 = 314 — a classic trap."
   },
   {
-    "external_key": "MK-GE-5",
-    "subtest": "MK",
-    "topic_id": "mk.geometry",
-    "difficulty": 5,
-    "stem": "A right triangle has legs of 6 cm and 8 cm. What is the length of the hypotenuse?",
-    "choices": [
-      "7 cm",
-      "10 cm",
-      "12 cm",
-      "14 cm"
-    ],
-    "correct_index": 1,
-    "explanation": "c² = 6² + 8² = 36 + 64 = 100. c = 10 cm. This is the classic 3-4-5 Pythagorean triple scaled by 2."
-  },
-  {
     "external_key": "MK-NP-1",
     "subtest": "MK",
     "topic_id": "mk.number-properties",
@@ -825,21 +795,6 @@
     "explanation": "The least common multiple (LCM) of 6 and 10 is found using prime factors: 6 = 2 × 3, 10 = 2 × 5. LCM = 2 × 3 × 5 = 30. The trap is multiplying 6 × 10 = 60."
   },
   {
-    "external_key": "WK-SN-1",
-    "subtest": "WK",
-    "topic_id": "wk.synonyms",
-    "difficulty": 2,
-    "stem": "DILIGENT most nearly means:",
-    "choices": [
-      "Lazy",
-      "Careless",
-      "Hardworking",
-      "Impatient"
-    ],
-    "correct_index": 2,
-    "explanation": "Diligent means showing steady, earnest effort. It is the opposite of lazy or careless."
-  },
-  {
     "external_key": "WK-SN-2",
     "subtest": "WK",
     "topic_id": "wk.synonyms",
@@ -853,36 +808,6 @@
     ],
     "correct_index": 1,
     "explanation": "Tranquil means free from disturbance; calm and peaceful."
-  },
-  {
-    "external_key": "WK-SN-3",
-    "subtest": "WK",
-    "topic_id": "wk.synonyms",
-    "difficulty": 3,
-    "stem": "TENACIOUS most nearly means:",
-    "choices": [
-      "Fragile",
-      "Persistent",
-      "Reckless",
-      "Timid"
-    ],
-    "correct_index": 1,
-    "explanation": "Tenacious means holding firm; determined and not giving up easily. It is often confused with its antonym, timid."
-  },
-  {
-    "external_key": "WK-SN-4",
-    "subtest": "WK",
-    "topic_id": "wk.synonyms",
-    "difficulty": 3,
-    "stem": "AMBIGUOUS most nearly means:",
-    "choices": [
-      "Clear",
-      "Certain",
-      "Unclear",
-      "Ambitious"
-    ],
-    "correct_index": 2,
-    "explanation": "Ambiguous means open to more than one interpretation; unclear. Do not confuse with ambitious (driven), which sounds similar."
   },
   {
     "external_key": "WK-SN-5",
@@ -990,21 +915,6 @@
     "explanation": "Rotating 90° forward around the front bottom edge lifts the front face up to become the new top. The red original top now faces toward you (the new front)."
   },
   {
-    "external_key": "AO-3D-2",
-    "subtest": "AO",
-    "topic_id": "ao.3d-visualization",
-    "difficulty": 4,
-    "stem": "A cube has its six faces labeled so that opposite faces sum to 7 (standard die layout). Face 1 is on top and face 2 faces you. Which face is on the bottom?",
-    "choices": [
-      "3",
-      "4",
-      "5",
-      "6"
-    ],
-    "correct_index": 3,
-    "explanation": "On a standard die, opposite faces sum to 7. Face 1 is on top, so the bottom face = 7 − 1 = 6."
-  },
-  {
     "external_key": "AO-3D-3",
     "subtest": "AO",
     "topic_id": "ao.3d-visualization",
@@ -1065,21 +975,6 @@
     "explanation": "Five squares form a base plus four walls but no top. You need 6 squares to close a cube. This net creates an open-top box."
   },
   {
-    "external_key": "AO-PF-2",
-    "subtest": "AO",
-    "topic_id": "ao.paper-folding-nets",
-    "difficulty": 4,
-    "stem": "A cube net has 4 squares in a vertical column (positions 1–4, top to bottom) with 2 extra squares extending to the right from position 2 and position 3. When folded, which face is directly opposite the face at position 1 (top of column)?",
-    "choices": [
-      "Position 4 (bottom of column)",
-      "Extra square at position 2",
-      "Extra square at position 3",
-      "Position 2"
-    ],
-    "correct_index": 0,
-    "explanation": "In a 4-square column net, folding brings position 1 to the top and position 4 to the bottom. The two squares at positions 2 and 3 (and the side extensions) form the four side faces. Position 1 and position 4 end up as opposite (top/bottom) faces."
-  },
-  {
     "external_key": "AO-PF-3",
     "subtest": "AO",
     "topic_id": "ao.paper-folding-nets",
@@ -1106,8 +1001,8 @@
       "Face F",
       "Face D"
     ],
-    "correct_index": 2,
-    "explanation": "Fold: A becomes the base. C folds to become the front face. F, attached below C, continues to fold up and becomes the top — directly opposite B. So F is opposite B, and A is opposite neither B nor F (A is the base, opposite to the back). Tracing the fold: B (top) — A (base/bottom) — C (front) — F (top again after passing through), so B folds to be the back and F folds to be the top. B and F are opposite faces."
+    "correct_index": 1,
+    "explanation": "With face A as the base of the cube, B folds up to be the back wall and C folds up to be the front wall — making B and C opposite faces. D and E become the left and right sides (also opposite). F, attached to C’s far edge, folds over to become the top — making F opposite A. Therefore the face opposite B is C."
   },
   {
     "external_key": "AO-PF-5",
@@ -1138,21 +1033,6 @@
     ],
     "correct_index": 2,
     "explanation": "Total = 9 + 4 + 1 = 14 cubes."
-  },
-  {
-    "external_key": "AO-SC-2",
-    "subtest": "AO",
-    "topic_id": "ao.spatial-counting",
-    "difficulty": 4,
-    "stem": "A 3×3×3 cube is built from unit cubes, and the entire outer surface is painted. How many unit cubes have paint on exactly 2 faces?",
-    "choices": [
-      "8",
-      "12",
-      "24",
-      "36"
-    ],
-    "correct_index": 1,
-    "explanation": "Cubes with exactly 2 painted faces sit along the 12 edges, excluding the 8 corner cubes. Each edge of a 3×3×3 cube has 1 such cube (3 minus the 2 corners = 1 per edge). Total = 12 × 1 = 12."
   },
   {
     "external_key": "AO-SC-3",

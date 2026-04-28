@@ -5,7 +5,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 3,
     "stem": "In the sentence 'The senator's VERBOSE reply frustrated reporters who needed a simple yes or no,' the word VERBOSE most nearly means:",
-    "choices": ["enthusiastic", "evasive", "using more words than necessary", "difficult to hear"],
+    "choices": [
+      "enthusiastic",
+      "evasive",
+      "using more words than necessary",
+      "difficult to hear"
+    ],
     "correct_index": 2,
     "explanation": "Verbose means using an unnecessarily large number of words. The clue 'needed a simple yes or no' signals that the reply was overly wordy, not merely evasive or hard to hear."
   },
@@ -15,7 +20,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 3,
     "stem": "In the sentence 'After three sleepless days on patrol, the soldiers were so TORPID they could barely lift their rifles,' the word TORPID most nearly means:",
-    "choices": ["alert", "sluggish", "angry", "well-trained"],
+    "choices": [
+      "alert",
+      "sluggish",
+      "angry",
+      "well-trained"
+    ],
     "correct_index": 1,
     "explanation": "Torpid means sluggish or mentally/physically inactive. The context clue 'sleepless days' and 'could barely lift their rifles' points directly to extreme sluggishness, not anger or alertness."
   },
@@ -25,7 +35,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 3,
     "stem": "In the sentence 'The mechanic's METICULOUS inspection found three hairline cracks that a quick look would have missed,' the word METICULOUS most nearly means:",
-    "choices": ["rushed", "extremely careful", "expensive", "routine"],
+    "choices": [
+      "rushed",
+      "extremely careful",
+      "expensive",
+      "routine"
+    ],
     "correct_index": 1,
     "explanation": "Meticulous means paying very careful attention to detail. The clue that the inspection found defects 'a quick look would have missed' confirms thoroughness, not speed or routine procedure."
   },
@@ -35,7 +50,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 4,
     "stem": "In the sentence 'The commander's TACITURN nature meant that junior soldiers rarely received direct feedback, leaving them to interpret his single nods as either praise or disapproval,' the word TACITURN most nearly means:",
-    "choices": ["stern and demanding", "reluctant to speak", "unpredictable in mood", "fair but strict"],
+    "choices": [
+      "stern and demanding",
+      "reluctant to speak",
+      "unpredictable in mood",
+      "fair but strict"
+    ],
     "correct_index": 1,
     "explanation": "Taciturn means habitually saying very little. The sentence's clue is that soldiers got no verbal feedback at all, only nods — indicating a person who rarely speaks, not one who is merely stern or moody."
   },
@@ -45,7 +65,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 3,
     "stem": "In the sentence 'The hiking trail was so ARDUOUS that even the most experienced climbers needed rest breaks every half mile,' the word ARDUOUS most nearly means:",
-    "choices": ["scenic", "demanding", "well-marked", "narrow"],
+    "choices": [
+      "scenic",
+      "demanding",
+      "well-marked",
+      "narrow"
+    ],
     "correct_index": 1,
     "explanation": "Arduous means requiring great effort and endurance. 'Even the most experienced climbers needed rest breaks' signals extreme difficulty, not just narrowness or poor signage."
   },
@@ -55,7 +80,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 4,
     "stem": "In the sentence 'Her SARDONIC smile told the interviewer she found the question absurd, though she answered politely,' the word SARDONIC most nearly means:",
-    "choices": ["warm and welcoming", "mocking or grimly humorous", "nervous and tense", "bright and enthusiastic"],
+    "choices": [
+      "warm and welcoming",
+      "mocking or grimly humorous",
+      "nervous and tense",
+      "bright and enthusiastic"
+    ],
     "correct_index": 1,
     "explanation": "Sardonic means grimly mocking or cynically humorous. The clue 'found the question absurd' while still being outwardly polite is characteristic of sardonic expression. Warm or enthusiastic contradicts the implied disdain."
   },
@@ -65,7 +95,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 3,
     "stem": "In the sentence 'Because the new regulation was so AMBIGUOUS, different base commanders interpreted it in completely different ways,' the word AMBIGUOUS most nearly means:",
-    "choices": ["strict", "open to more than one interpretation", "widely publicized", "recently updated"],
+    "choices": [
+      "strict",
+      "open to more than one interpretation",
+      "widely publicized",
+      "recently updated"
+    ],
     "correct_index": 1,
     "explanation": "Ambiguous means open to multiple interpretations. The evidence is that commanders read it differently — something strict or widely publicized would produce uniform results, not varied ones."
   },
@@ -75,7 +110,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 3,
     "stem": "In the sentence 'Despite losing power for three days, the team remained RESILIENT and rebuilt the network faster than expected,' the word RESILIENT most nearly means:",
-    "choices": ["resourceful", "quick to recover from setbacks", "highly trained", "well-funded"],
+    "choices": [
+      "resourceful",
+      "quick to recover from setbacks",
+      "highly trained",
+      "well-funded"
+    ],
     "correct_index": 1,
     "explanation": "Resilient means able to recover quickly from difficulties. 'Despite losing power' sets up the adversity, and 'rebuilt faster than expected' confirms swift recovery — the core meaning of resilience."
   },
@@ -85,7 +125,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 4,
     "stem": "In the sentence 'The general's IMPERIOUS tone left no doubt that his orders were not suggestions — they were commands,' the word IMPERIOUS most nearly means:",
-    "choices": ["calm and measured", "domineering and commanding", "persuasive and logical", "vague and uncertain"],
+    "choices": [
+      "calm and measured",
+      "domineering and commanding",
+      "persuasive and logical",
+      "vague and uncertain"
+    ],
     "correct_index": 1,
     "explanation": "Imperious means arrogantly domineering. The contrast between 'not suggestions' and 'commands' reinforces a tone that expects immediate obedience. Persuasive implies reasoning and choice, which contradicts the passage's meaning."
   },
@@ -95,7 +140,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 3,
     "stem": "In the sentence 'The scientist's HYPOTHESIS, though TENUOUS at first, grew stronger as more experimental data came in,' the word TENUOUS most nearly means:",
-    "choices": ["widely accepted", "poorly worded", "weak or lacking support", "based on observation"],
+    "choices": [
+      "widely accepted",
+      "poorly worded",
+      "weak or lacking support",
+      "based on observation"
+    ],
     "correct_index": 2,
     "explanation": "Tenuous means thin or weak, often used to describe an argument or idea with little supporting evidence. The phrase 'grew stronger as more data came in' confirms it started from a position of minimal support."
   },
@@ -105,7 +155,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 4,
     "stem": "In the sentence 'The judge's IMPARTIAL ruling satisfied both sides because neither could claim favoritism,' the word IMPARTIAL most nearly means:",
-    "choices": ["biased toward the defendant", "based on strict law", "treating all sides equally without favoritism", "delivered quickly"],
+    "choices": [
+      "biased toward the defendant",
+      "based on strict law",
+      "treating all sides equally without favoritism",
+      "delivered quickly"
+    ],
     "correct_index": 2,
     "explanation": "Impartial means not favoring one side over another. 'Neither could claim favoritism' is the direct context clue. 'Based on strict law' is tempting but describes method rather than the fairness quality the word captures."
   },
@@ -115,7 +170,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 5,
     "stem": "In the sentence 'His PERFUNCTORY review of the safety checklist — glancing at it for seconds before signing — nearly cost the crew their lives,' the word PERFUNCTORY most nearly means:",
-    "choices": ["thorough and systematic", "done as a formality without real care", "delayed and overdue", "conducted by a supervisor"],
+    "choices": [
+      "thorough and systematic",
+      "done as a formality without real care",
+      "delayed and overdue",
+      "conducted by a supervisor"
+    ],
     "correct_index": 1,
     "explanation": "Perfunctory means carried out with minimal effort and as a routine duty, not with genuine care. 'Glancing at it for seconds before signing' is the exact clue; the near-catastrophe underscores how inadequate it was."
   },
@@ -125,7 +185,12 @@
     "topic_id": "wk.prefixes-suffixes",
     "difficulty": 3,
     "stem": "The word ANTECEDENT contains the prefix ANTE-. Based on that prefix, ANTECEDENT most nearly means:",
-    "choices": ["something that comes after", "something that came before", "something that contradicts", "something that repeats"],
+    "choices": [
+      "something that comes after",
+      "something that came before",
+      "something that contradicts",
+      "something that repeats"
+    ],
     "correct_index": 1,
     "explanation": "ANTE- means before or preceding (compare: antebellum, anteroom). An antecedent is a thing or event that came before another. ANTI- (against) is the common confusion, but the spelling here is ANTE-."
   },
@@ -135,7 +200,12 @@
     "topic_id": "wk.prefixes-suffixes",
     "difficulty": 3,
     "stem": "The word BENEVOLENT contains the root VOL (wish, will) and the prefix BENE-. BENEVOLENT most nearly means:",
-    "choices": ["well-wishing or kind", "all-powerful", "voluntary", "truthful"],
+    "choices": [
+      "well-wishing or kind",
+      "all-powerful",
+      "voluntary",
+      "truthful"
+    ],
     "correct_index": 0,
     "explanation": "BENE- means well or good (benefit, benefactor). Combined with -VOL- (wish), benevolent means well-wishing or kindly disposed. Voluntary shares the same root but a different prefix."
   },
@@ -145,7 +215,12 @@
     "topic_id": "wk.prefixes-suffixes",
     "difficulty": 3,
     "stem": "The suffix -LOGY means the study of. CHRONOLOGY is therefore best defined as:",
-    "choices": ["the science of timekeeping devices", "the arrangement of events in time order", "a record of weather patterns", "the study of ancient languages"],
+    "choices": [
+      "the science of timekeeping devices",
+      "the arrangement of events in time order",
+      "a record of weather patterns",
+      "the study of ancient languages"
+    ],
     "correct_index": 1,
     "explanation": "CHRONO- means time; -LOGY means study or systematic knowledge. Chronology is the arrangement and study of events in time sequence. A chronograph measures time but -GRAPH means write or record, not study."
   },
@@ -155,7 +230,12 @@
     "topic_id": "wk.prefixes-suffixes",
     "difficulty": 4,
     "stem": "The word CIRCUMSPECT contains the prefix CIRCUM- (around) and the root SPECT (look). CIRCUMSPECT most nearly means:",
-    "choices": ["easily distracted", "wary and considering all possibilities", "surrounded by obstacles", "quick to decide"],
+    "choices": [
+      "easily distracted",
+      "wary and considering all possibilities",
+      "surrounded by obstacles",
+      "quick to decide"
+    ],
     "correct_index": 1,
     "explanation": "Circumspect literally means 'looking around' — considering all circumstances before acting, hence wary and careful. Quick to decide is the opposite. 'Surrounded by obstacles' misreads CIRCUM- as a physical description."
   },
@@ -165,7 +245,12 @@
     "topic_id": "wk.prefixes-suffixes",
     "difficulty": 3,
     "stem": "The prefix TRANS- means across or through. A TRANSOCEANIC voyage is therefore a voyage:",
-    "choices": ["below the ocean surface", "along the coastline", "across an ocean", "within a single ocean region"],
+    "choices": [
+      "below the ocean surface",
+      "along the coastline",
+      "across an ocean",
+      "within a single ocean region"
+    ],
     "correct_index": 2,
     "explanation": "TRANS- means across or through, as in transport, transfer, transatlantic. Transoceanic means crossing an ocean from one side to the other."
   },
@@ -175,7 +260,12 @@
     "topic_id": "wk.prefixes-suffixes",
     "difficulty": 4,
     "stem": "The word EQUIVOCAL contains the prefix EQUI- (equal) and the root VOC (voice/call). EQUIVOCAL most nearly means:",
-    "choices": ["equally loud", "open to two interpretations", "fair and balanced", "clearly stated"],
+    "choices": [
+      "equally loud",
+      "open to two interpretations",
+      "fair and balanced",
+      "clearly stated"
+    ],
     "correct_index": 1,
     "explanation": "Equivocal literally means 'equal voices' — a statement that calls equally in two directions, making it deliberately ambiguous or unclear. Clearly stated is the antonym. Fair and balanced is a trap that uses EQUI- in isolation."
   },
@@ -185,7 +275,12 @@
     "topic_id": "wk.prefixes-suffixes",
     "difficulty": 4,
     "stem": "The suffix -OLOGY means the study of, while -OLOGIST means one who studies. A SEISMOLOGIST studies:",
-    "choices": ["the structure of the atmosphere", "earthquake activity", "ocean currents", "ancient fossils"],
+    "choices": [
+      "the structure of the atmosphere",
+      "earthquake activity",
+      "ocean currents",
+      "ancient fossils"
+    ],
     "correct_index": 1,
     "explanation": "SEISMO- derives from the Greek seismos, meaning earthquake or shaking. A seismologist studies earthquakes and seismic waves. Fossils (paleontology) and ocean currents (oceanography) involve different prefixes."
   },
@@ -195,7 +290,12 @@
     "topic_id": "wk.prefixes-suffixes",
     "difficulty": 5,
     "stem": "The word MAGNANIMOUS contains the roots MAGN- (great) and ANIM- (spirit/soul). MAGNANIMOUS most nearly means:",
-    "choices": ["physically large and imposing", "generous in forgiving insults or injuries", "highly educated", "emotionally volatile"],
+    "choices": [
+      "physically large and imposing",
+      "generous in forgiving insults or injuries",
+      "highly educated",
+      "emotionally volatile"
+    ],
     "correct_index": 1,
     "explanation": "Magnanimous means 'great-spirited' — generous, noble, and especially forgiving toward rivals or those who have wronged you. Physically large (magnitude) uses the same root but the ANIM- component shifts meaning toward character, not size."
   },
@@ -205,7 +305,12 @@
     "topic_id": "wk.root-words",
     "difficulty": 3,
     "stem": "The word AUDIBLE shares its root with AUDITORIUM and AUDIENCE. The root AUD- means:",
-    "choices": ["to speak", "to hear", "to see", "to gather"],
+    "choices": [
+      "to speak",
+      "to hear",
+      "to see",
+      "to gather"
+    ],
     "correct_index": 1,
     "explanation": "AUD- comes from the Latin audire, to hear. Audible means capable of being heard; an auditorium is a place for hearing performances; an audience is a group of listeners."
   },
@@ -215,7 +320,12 @@
     "topic_id": "wk.root-words",
     "difficulty": 3,
     "stem": "The root CHRON appears in CHRONIC, CHRONOMETER, and ANACHRONISM. CHRON means:",
-    "choices": ["color", "time", "order", "distance"],
+    "choices": [
+      "color",
+      "time",
+      "order",
+      "distance"
+    ],
     "correct_index": 1,
     "explanation": "CHRON comes from the Greek chronos, meaning time. A chronometer measures time precisely; an anachronism is something placed in the wrong time period; chronic means persisting over a long time."
   },
@@ -225,7 +335,12 @@
     "topic_id": "wk.root-words",
     "difficulty": 3,
     "stem": "The root TERRA appears in TERRITORY, TERRAIN, and MEDITERRANEAN. TERRA most nearly means:",
-    "choices": ["water", "sky", "earth or land", "boundary"],
+    "choices": [
+      "water",
+      "sky",
+      "earth or land",
+      "boundary"
+    ],
     "correct_index": 2,
     "explanation": "TERRA comes from Latin meaning earth or land. Mediterranean literally means 'middle of the earth (land)'; terrain refers to the features of a stretch of land; territory is a defined area of land."
   },
@@ -235,7 +350,12 @@
     "topic_id": "wk.root-words",
     "difficulty": 4,
     "stem": "The root SCRIB/SCRIPT appears in PRESCRIBE, DESCRIBE, INSCRIPTION, and MANUSCRIPT. This root most nearly means:",
-    "choices": ["to speak", "to write", "to order", "to carve"],
+    "choices": [
+      "to speak",
+      "to write",
+      "to order",
+      "to carve"
+    ],
     "correct_index": 1,
     "explanation": "SCRIB/SCRIPT comes from the Latin scribere, to write. Manuscript means handwritten; inscription is writing carved into a surface; prescribe originally meant to write before (instructions). 'To carve' is a trap because inscriptions are carved, but the root itself means write."
   },
@@ -245,7 +365,12 @@
     "topic_id": "wk.root-words",
     "difficulty": 4,
     "stem": "The root RUPT appears in INTERRUPT, DISRUPT, ERUPT, and RUPTURE. RUPT most nearly means:",
-    "choices": ["to flow", "to break or burst", "to begin", "to connect"],
+    "choices": [
+      "to flow",
+      "to break or burst",
+      "to begin",
+      "to connect"
+    ],
     "correct_index": 1,
     "explanation": "RUPT comes from the Latin rumpere, to break. Interrupt means to break into; disrupt means to break apart; erupt means to burst out; rupture is a break or tear. 'To flow' is a trap because eruptions involve flow, but the root captures the breaking action."
   },
@@ -255,7 +380,12 @@
     "topic_id": "wk.root-words",
     "difficulty": 5,
     "stem": "The root LOQUI/LOCUT appears in ELOQUENT, COLLOQUIAL, LOQUACIOUS, and SOLILOQUY. This root most nearly means:",
-    "choices": ["to listen", "to write formally", "to speak", "to persuade"],
+    "choices": [
+      "to listen",
+      "to write formally",
+      "to speak",
+      "to persuade"
+    ],
     "correct_index": 2,
     "explanation": "LOQUI/LOCUT comes from the Latin loqui, to speak. Eloquent means speaking with fluency and force; loquacious means very talkative; colloquial refers to everyday spoken language; a soliloquy is speaking alone. 'To persuade' is tempting for eloquent, but persuasion is an effect, not the root's meaning."
   },
@@ -265,7 +395,12 @@
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 3,
     "stem": "Read the passage below and answer the question.\n\n\"Every year, thousands of young people sign contracts they do not fully understand, binding themselves to financial obligations that can follow them for a decade. Financial literacy is not a luxury — it is a survival skill. Schools that skip personal finance education are not saving curriculum space; they are failing their students.\"\n\nThe author's primary purpose is to:",
-    "choices": ["explain how financial contracts work", "argue that financial education should be required in schools", "describe the difficulties young people face after graduation", "compare different methods of teaching personal finance"],
+    "choices": [
+      "explain how financial contracts work",
+      "argue that financial education should be required in schools",
+      "describe the difficulties young people face after graduation",
+      "compare different methods of teaching personal finance"
+    ],
     "correct_index": 1,
     "explanation": "The passage makes a direct argument: schools that skip financial literacy are 'failing their students.' The word 'failing' signals advocacy, not neutral description. The author is not explaining contract mechanics or comparing teaching methods."
   },
@@ -275,7 +410,12 @@
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 3,
     "stem": "Read the passage below and answer the question.\n\n\"The old lighthouse stood at the edge of the cliff, its white paint peeling, its lamp long dark. Fishermen who once depended on its beam now navigated by GPS coordinates that glowed on small screens below the wheelhouse. Progress, it seemed, had made the lighthouse beautiful again — no longer a tool, just a memory.\"\n\nThe author's tone toward the lighthouse can best be described as:",
-    "choices": ["angry at the march of technology", "nostalgic and somewhat wistful", "proud of modern navigation advances", "indifferent to the lighthouse's fate"],
+    "choices": [
+      "angry at the march of technology",
+      "nostalgic and somewhat wistful",
+      "proud of modern navigation advances",
+      "indifferent to the lighthouse's fate"
+    ],
     "correct_index": 1,
     "explanation": "'Beautiful again — no longer a tool, just a memory' expresses a wistful, nostalgic view of something that has outlived its usefulness. The author is not angry — progress is accepted — but there is a gentle sense of loss, not pride or indifference."
   },
@@ -285,7 +425,12 @@
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 4,
     "stem": "Read the passage below and answer the question.\n\n\"The study followed 400 adults over 20 years and found that those who slept fewer than six hours per night had a 35 percent higher incidence of cardiovascular events than those who slept seven to eight hours. Researchers controlled for diet, exercise, and body mass index. The correlation was consistent across age groups and geographic regions.\"\n\nThe author's tone is best described as:",
-    "choices": ["alarmed and warning readers to change habits", "objective and informative", "persuasive, urging policy reform", "skeptical of the study's methodology"],
+    "choices": [
+      "alarmed and warning readers to change habits",
+      "objective and informative",
+      "persuasive, urging policy reform",
+      "skeptical of the study's methodology"
+    ],
     "correct_index": 1,
     "explanation": "The passage reports data and controlled variables without emotional language or calls to action. 'Controlled for diet, exercise, and BMI' signals scientific rigor, not alarm or advocacy. Skeptical would involve questioning the methods, which the author does not do."
   },
@@ -295,7 +440,12 @@
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 3,
     "stem": "Read the passage below and answer the question.\n\n\"If you have ever watched a skilled carpenter fit two pieces of wood together without a visible gap, you have witnessed craftsmanship at its best. It is not magic — it is patience, the right tools, and a refusal to accept 'good enough.' Anyone who calls woodworking a dying art has never stood in a shop full of sawdust and purpose.\"\n\nThe author's attitude toward woodworking is best described as:",
-    "choices": ["defensive and insecure about the craft's future", "enthusiastic and admiring", "neutral and informational", "critical of beginners who rush their work"],
+    "choices": [
+      "defensive and insecure about the craft's future",
+      "enthusiastic and admiring",
+      "neutral and informational",
+      "critical of beginners who rush their work"
+    ],
     "correct_index": 1,
     "explanation": "'Craftsmanship at its best,' 'patience,' and 'sawdust and purpose' all express genuine admiration. The author does mention critics but counters them confidently rather than defensively, and offers no criticism of beginners specifically."
   },
@@ -305,7 +455,12 @@
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 4,
     "stem": "Read the passage below and answer the question.\n\n\"The proposal to expand the highway through the wetland was approved in 72 hours — a process that typically takes months of environmental review. Local conservation groups were not notified until after the vote. Three federal agencies later noted that proper procedure had not been followed, yet construction began on schedule.\"\n\nThe author's implied attitude toward the approval process is:",
-    "choices": ["supportive of faster infrastructure decisions", "critical of the rushed and irregular process", "neutral, simply reporting a timeline", "uncertain about whether the wetland matters"],
+    "choices": [
+      "supportive of faster infrastructure decisions",
+      "critical of the rushed and irregular process",
+      "neutral, simply reporting a timeline",
+      "uncertain about whether the wetland matters"
+    ],
     "correct_index": 1,
     "explanation": "The author selects details that expose procedural shortcuts: a 72-hour decision on a months-long process, no public notification, federal agencies noting violations. This pattern of detail selection signals criticism even without explicit judgment words."
   },
@@ -315,7 +470,12 @@
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 4,
     "stem": "Read the passage below and answer the question.\n\n\"Wolves were reintroduced to Yellowstone in 1995. Within a decade, the elk population shifted its grazing patterns away from riverbanks, allowing willows and aspens to regrow. Beavers returned; their dams slowed erosion; streambeds narrowed and deepened. A single predator had changed the rivers.\"\n\nThe author's primary purpose is to:",
-    "choices": ["argue that wolf populations should be expanded throughout the country", "illustrate how the reintroduction of one species can reshape an entire ecosystem", "criticize the original removal of wolves from Yellowstone", "describe the daily behavior of wolves in the wild"],
+    "choices": [
+      "argue that wolf populations should be expanded throughout the country",
+      "illustrate how the reintroduction of one species can reshape an entire ecosystem",
+      "criticize the original removal of wolves from Yellowstone",
+      "describe the daily behavior of wolves in the wild"
+    ],
     "correct_index": 1,
     "explanation": "The passage traces a chain of ecological effects from one decision, building to 'a single predator had changed the rivers.' This is an illustrative, cause-and-effect purpose. The author does not call for expanded wolf populations or criticize past decisions."
   },
@@ -325,7 +485,12 @@
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 5,
     "stem": "Read the passage below and answer the question.\n\n\"Efficiency, we are often told, is the highest virtue of a modern organization. But efficiency is a tool, not a goal. A surgeon who operates faster does not thereby become a better surgeon; a teacher who covers content faster is not necessarily teaching. When organizations optimize processes without asking what those processes are for, they risk becoming very good at doing the wrong thing.\"\n\nThe author's attitude toward efficiency is best described as:",
-    "choices": ["strongly opposed to using efficiency in any professional context", "cautiously skeptical — useful in the right place, but easily misapplied", "fully supportive if efficiency is paired with speed", "indifferent; the author is presenting both sides without a position"],
+    "choices": [
+      "strongly opposed to using efficiency in any professional context",
+      "cautiously skeptical — useful in the right place, but easily misapplied",
+      "fully supportive if efficiency is paired with speed",
+      "indifferent; the author is presenting both sides without a position"
+    ],
     "correct_index": 1,
     "explanation": "The author calls efficiency 'a tool, not a goal' and uses examples to show how misapplied efficiency backfires — but never argues against efficiency itself. This is cautious skepticism, not wholesale opposition. The author clearly has a position, ruling out indifference."
   },
@@ -335,7 +500,12 @@
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 5,
     "stem": "Read the passage below and answer the question.\n\n\"The recruits arrived in October — cocky, loud, certain they were ready for anything. By December, most had stopped talking about what they thought training would be like. They had learned something that cannot be taught in a classroom: that confidence earned is different from confidence assumed.\"\n\nThe author's tone toward the recruits at the end of the passage is best described as:",
-    "choices": ["contemptuous of their early arrogance", "approving of the growth they experienced", "pessimistic about their long-term prospects", "amused by their naivety throughout"],
+    "choices": [
+      "contemptuous of their early arrogance",
+      "approving of the growth they experienced",
+      "pessimistic about their long-term prospects",
+      "amused by their naivety throughout"
+    ],
     "correct_index": 1,
     "explanation": "'Confidence earned is different from confidence assumed' is the author's conclusion — framing the change as meaningful growth, not humiliation. Contemptuous would suggest the author mocks them; the passage instead presents the transformation with respect."
   },
@@ -345,7 +515,12 @@
     "topic_id": "as.maintenance-repair",
     "difficulty": 3,
     "stem": "Engine oil should be changed at regular intervals primarily to:",
-    "choices": ["increase fuel octane rating", "remove contaminants and restore lubricating properties", "cool the transmission fluid", "maintain proper tire pressure"],
+    "choices": [
+      "increase fuel octane rating",
+      "remove contaminants and restore lubricating properties",
+      "cool the transmission fluid",
+      "maintain proper tire pressure"
+    ],
     "correct_index": 1,
     "explanation": "Over time, engine oil accumulates metal particles, carbon deposits, and acids that degrade its lubricating ability. Regular changes remove these contaminants and restore proper protection. Oil does not affect fuel octane or tire pressure."
   },
@@ -355,7 +530,12 @@
     "topic_id": "as.maintenance-repair",
     "difficulty": 3,
     "stem": "A vehicle's brake pedal sinks slowly to the floor when held with steady pressure. This most likely indicates:",
-    "choices": ["worn brake pads", "a failing master cylinder or brake fluid leak", "air in the fuel line", "a loose wheel bearing"],
+    "choices": [
+      "worn brake pads",
+      "a failing master cylinder or brake fluid leak",
+      "air in the fuel line",
+      "a loose wheel bearing"
+    ],
     "correct_index": 1,
     "explanation": "A pedal that sinks under steady pressure (called brake fade or pedal drop) is a classic sign of a failing master cylinder or a leak allowing fluid to bypass the seals. Worn pads change stopping distance but do not cause the pedal to drop under held pressure."
   },
@@ -365,7 +545,12 @@
     "topic_id": "as.maintenance-repair",
     "difficulty": 3,
     "stem": "Tire rotation is recommended every 5,000–7,000 miles primarily because:",
-    "choices": ["it resets the tire pressure monitoring system", "front and rear tires wear at different rates due to different loads and steering forces", "it prevents the tires from developing flat spots when parked", "rotating tires improves fuel octane combustion"],
+    "choices": [
+      "it resets the tire pressure monitoring system",
+      "front and rear tires wear at different rates due to different loads and steering forces",
+      "it prevents the tires from developing flat spots when parked",
+      "rotating tires improves fuel octane combustion"
+    ],
     "correct_index": 1,
     "explanation": "Front tires handle steering forces and often support more weight from the engine, causing them to wear faster — especially on front-wheel-drive vehicles. Rotation equalizes wear across all four tires, extending overall tire life."
   },
@@ -375,7 +560,12 @@
     "topic_id": "as.maintenance-repair",
     "difficulty": 4,
     "stem": "When checking tire pressure, a technician should check it when the tires are:",
-    "choices": ["hot, immediately after a long drive, for the most accurate reading", "cold, before driving or after sitting for at least three hours", "warm, after a short drive of about five miles", "at any temperature, because modern gauges automatically adjust"],
+    "choices": [
+      "hot, immediately after a long drive, for the most accurate reading",
+      "cold, before driving or after sitting for at least three hours",
+      "warm, after a short drive of about five miles",
+      "at any temperature, because modern gauges automatically adjust"
+    ],
     "correct_index": 1,
     "explanation": "Tire pressure is specified for cold tires because driving heats air inside the tire, raising pressure by 4–8 psi. Checking hot tires gives a falsely high reading; the industry standard is to check cold tires. Modern gauges measure pressure but do not compensate for temperature."
   },
@@ -385,7 +575,12 @@
     "topic_id": "as.maintenance-repair",
     "difficulty": 3,
     "stem": "A vehicle pulls consistently to the right when driving on a straight, level road. The most likely cause is:",
-    "choices": ["a clogged fuel filter", "uneven tire pressure or a wheel alignment problem", "a worn timing belt", "low windshield washer fluid"],
+    "choices": [
+      "a clogged fuel filter",
+      "uneven tire pressure or a wheel alignment problem",
+      "a worn timing belt",
+      "low windshield washer fluid"
+    ],
     "correct_index": 1,
     "explanation": "Pulling to one side is the classic symptom of uneven tire pressure or wheel misalignment. A low right-side tire or toe misalignment causes the vehicle to drift toward the low-pressure or angled side. Fuel and timing issues cause performance problems, not directional pull."
   },
@@ -395,7 +590,12 @@
     "topic_id": "as.maintenance-repair",
     "difficulty": 4,
     "stem": "A grinding noise that occurs only when the brakes are applied most likely indicates:",
-    "choices": ["a failing alternator", "brake pads worn down to the metal backing plate", "loose lug nuts on the wheel", "low power steering fluid"],
+    "choices": [
+      "a failing alternator",
+      "brake pads worn down to the metal backing plate",
+      "loose lug nuts on the wheel",
+      "low power steering fluid"
+    ],
     "correct_index": 1,
     "explanation": "When brake pad friction material wears away completely, the metal backing plate contacts the rotor directly, producing a grinding noise under braking. Alternator failure and low power steering fluid cause distinct, unrelated symptoms."
   },
@@ -405,7 +605,12 @@
     "topic_id": "as.maintenance-repair",
     "difficulty": 4,
     "stem": "The purpose of a vehicle's PCV (Positive Crankcase Ventilation) valve is to:",
-    "choices": ["regulate fuel injection timing", "route blow-by gases from the crankcase back into the intake manifold for combustion", "control coolant flow to the heater core", "measure exhaust oxygen content for the fuel management system"],
+    "choices": [
+      "regulate fuel injection timing",
+      "route blow-by gases from the crankcase back into the intake manifold for combustion",
+      "control coolant flow to the heater core",
+      "measure exhaust oxygen content for the fuel management system"
+    ],
     "correct_index": 1,
     "explanation": "The PCV valve draws unburned gases (blow-by) that slip past piston rings back into the intake manifold where they are reburned. A stuck-closed PCV valve can build crankcase pressure and force oil past seals. The oxygen sensor (not PCV) measures exhaust oxygen."
   },
@@ -415,7 +620,12 @@
     "topic_id": "as.maintenance-repair",
     "difficulty": 5,
     "stem": "An engine runs rough at idle but smoothly at higher RPM. Disconnecting one spark plug wire at a time, you find that one cylinder makes no change to idle quality when its wire is removed. This means:",
-    "choices": ["that cylinder is firing too often at idle", "that cylinder is not contributing to engine power — it is misfiring or dead", "the ignition coil for that cylinder is delivering extra voltage", "all cylinders are sharing load equally"],
+    "choices": [
+      "that cylinder is firing too often at idle",
+      "that cylinder is not contributing to engine power — it is misfiring or dead",
+      "the ignition coil for that cylinder is delivering extra voltage",
+      "all cylinders are sharing load equally"
+    ],
     "correct_index": 1,
     "explanation": "Removing a plug wire from a healthy cylinder will cause idle to noticeably worsen. If removing a wire causes no change, that cylinder was already not contributing — it was misfiring. This test isolates the dead cylinder."
   },
@@ -425,7 +635,12 @@
     "topic_id": "mc.inclined-plane-hydraulics",
     "difficulty": 3,
     "stem": "A 300-pound crate is slid up a frictionless ramp that is 15 feet long and rises 5 feet vertically. How many pounds of force are required to push it up the ramp?",
-    "choices": ["60 pounds", "100 pounds", "150 pounds", "300 pounds"],
+    "choices": [
+      "60 pounds",
+      "100 pounds",
+      "150 pounds",
+      "300 pounds"
+    ],
     "correct_index": 1,
     "explanation": "Mechanical advantage of an inclined plane = length / height = 15 / 5 = 3. Required force = load / MA = 300 / 3 = 100 pounds. Using the full 300 pounds ignores the ramp's advantage; 60 pounds would require MA of 5."
   },
@@ -435,7 +650,12 @@
     "topic_id": "mc.inclined-plane-hydraulics",
     "difficulty": 3,
     "stem": "In a hydraulic system, a small piston with an area of 2 square inches is pushed down with 50 pounds of force. What force does the large piston with an area of 10 square inches exert?",
-    "choices": ["10 pounds", "100 pounds", "250 pounds", "500 pounds"],
+    "choices": [
+      "10 pounds",
+      "100 pounds",
+      "250 pounds",
+      "500 pounds"
+    ],
     "correct_index": 2,
     "explanation": "Pascal's principle: F₂/A₂ = F₁/A₁, so F₂ = F₁ × (A₂/A₁) = 50 × (10/2) = 50 × 5 = 250 pounds. The hydraulic system multiplies force in proportion to the area ratio."
   },
@@ -445,7 +665,12 @@
     "topic_id": "mc.inclined-plane-hydraulics",
     "difficulty": 4,
     "stem": "A block-and-tackle pulley system uses 4 rope segments supporting the load. If you pull the free end with 75 pounds of force, how heavy a load can you lift (ignoring friction)?",
-    "choices": ["75 pounds", "150 pounds", "225 pounds", "300 pounds"],
+    "choices": [
+      "75 pounds",
+      "150 pounds",
+      "225 pounds",
+      "300 pounds"
+    ],
     "correct_index": 3,
     "explanation": "With 4 supporting rope segments, the mechanical advantage is 4. Lift capacity = effort × MA = 75 × 4 = 300 pounds. Each supporting strand shares the load equally, so more strands mean more force multiplication."
   },
@@ -455,7 +680,12 @@
     "topic_id": "mc.inclined-plane-hydraulics",
     "difficulty": 4,
     "stem": "A hydraulic lift has an input piston area of 4 square inches and an output piston area of 20 square inches. If you need to lift 1,000 pounds, how much input force is required?",
-    "choices": ["50 pounds", "200 pounds", "400 pounds", "5,000 pounds"],
+    "choices": [
+      "50 pounds",
+      "200 pounds",
+      "400 pounds",
+      "5,000 pounds"
+    ],
     "correct_index": 1,
     "explanation": "Hydraulic MA = output area / input area = 20 / 4 = 5. Input force = load / MA = 1,000 / 5 = 200 pounds. Selecting 50 pounds corresponds to an MA of 20 (confusing areas with MA directly)."
   },
@@ -465,7 +695,12 @@
     "topic_id": "mc.inclined-plane-hydraulics",
     "difficulty": 4,
     "stem": "A wedge is driven under one edge of a 500-pound boulder. The wedge is 8 inches long and 2 inches thick at its widest point. What is the mechanical advantage of this wedge?",
-    "choices": ["2", "4", "6", "250"],
+    "choices": [
+      "2",
+      "4",
+      "6",
+      "250"
+    ],
     "correct_index": 1,
     "explanation": "Mechanical advantage of a wedge = length / thickness = 8 / 2 = 4. A longer, thinner wedge provides greater advantage; the 500-pound load is the object being moved, not a factor in calculating MA."
   },
@@ -475,7 +710,12 @@
     "topic_id": "mc.inclined-plane-hydraulics",
     "difficulty": 5,
     "stem": "A 400-pound object must be raised 6 feet. You can use either a single fixed pulley, a ramp 18 feet long, or a hydraulic jack with a 5:1 area ratio. Ignoring friction, which requires the least input force?",
-    "choices": ["single fixed pulley", "the 18-foot ramp", "the hydraulic jack", "all three require identical force"],
+    "choices": [
+      "single fixed pulley",
+      "the 18-foot ramp",
+      "the hydraulic jack",
+      "all three require identical force"
+    ],
     "correct_index": 2,
     "explanation": "Single fixed pulley: MA = 1, force = 400 lbs. Ramp: MA = 18/6 = 3, force = 400/3 ≈ 133 lbs. Hydraulic jack: MA = 5, force = 400/5 = 80 lbs. The hydraulic jack requires the least force at 80 lbs."
   },
@@ -485,7 +725,12 @@
     "topic_id": "mc.motion-projectile",
     "difficulty": 3,
     "stem": "A 5-kg ball moving at 6 m/s collides with a stationary 5-kg ball and comes to a complete stop. What is the velocity of the second ball after the collision?",
-    "choices": ["0 m/s", "3 m/s", "6 m/s", "12 m/s"],
+    "choices": [
+      "0 m/s",
+      "3 m/s",
+      "6 m/s",
+      "12 m/s"
+    ],
     "correct_index": 2,
     "explanation": "Conservation of momentum: total momentum before = total momentum after. (5 × 6) + (5 × 0) = 30 kg·m/s. After: first ball stops, so second ball carries all momentum: 5 × v = 30, v = 6 m/s."
   },
@@ -495,7 +740,12 @@
     "topic_id": "mc.motion-projectile",
     "difficulty": 3,
     "stem": "An object is dropped from a height and falls freely under gravity (9.8 m/s²). After 3 seconds, its velocity is approximately:",
-    "choices": ["9.8 m/s", "19.6 m/s", "29.4 m/s", "44.1 m/s"],
+    "choices": [
+      "9.8 m/s",
+      "19.6 m/s",
+      "29.4 m/s",
+      "44.1 m/s"
+    ],
     "correct_index": 2,
     "explanation": "Velocity under free fall = g × t = 9.8 × 3 = 29.4 m/s. Each second adds 9.8 m/s of downward velocity; after 3 seconds the object is moving at 29.4 m/s."
   },
@@ -505,7 +755,12 @@
     "topic_id": "mc.motion-projectile",
     "difficulty": 4,
     "stem": "A net force of 20 N is applied to a 4-kg object. What is the object's acceleration?",
-    "choices": ["0.2 m/s²", "5 m/s²", "16 m/s²", "80 m/s²"],
+    "choices": [
+      "0.2 m/s²",
+      "5 m/s²",
+      "16 m/s²",
+      "80 m/s²"
+    ],
     "correct_index": 1,
     "explanation": "Newton's Second Law: a = F/m = 20/4 = 5 m/s². Dividing mass by force (4/20 = 0.2) inverts the formula, a common error. Multiplying gives 80, which misapplies the relationship."
   },
@@ -515,7 +770,12 @@
     "topic_id": "mc.motion-projectile",
     "difficulty": 4,
     "stem": "A ball is launched horizontally from a cliff at 20 m/s. Ignoring air resistance, what happens to the ball's horizontal speed as it falls?",
-    "choices": ["it increases because gravity accelerates it forward", "it decreases because gravity slows horizontal motion", "it stays constant because horizontal and vertical motions are independent", "it reaches zero at peak height"],
+    "choices": [
+      "it increases because gravity accelerates it forward",
+      "it decreases because gravity slows horizontal motion",
+      "it stays constant because horizontal and vertical motions are independent",
+      "it reaches zero at peak height"
+    ],
     "correct_index": 2,
     "explanation": "In projectile motion, horizontal and vertical components are independent. Gravity acts only vertically, so the horizontal speed remains 20 m/s throughout the flight. There is no peak height for a horizontally launched projectile — it only falls."
   },
@@ -525,7 +785,12 @@
     "topic_id": "mc.motion-projectile",
     "difficulty": 4,
     "stem": "Two identical hockey pucks rest on frictionless ice. Puck A is pushed with twice the force of Puck B for the same amount of time. Compared to Puck B, Puck A will have:",
-    "choices": ["the same final velocity", "twice the final velocity", "four times the final velocity", "half the final velocity"],
+    "choices": [
+      "the same final velocity",
+      "twice the final velocity",
+      "four times the final velocity",
+      "half the final velocity"
+    ],
     "correct_index": 1,
     "explanation": "Impulse = F × t = change in momentum. Same time, twice the force → twice the impulse → twice the change in momentum. Since masses are equal, twice the momentum means twice the velocity."
   },
@@ -535,7 +800,12 @@
     "topic_id": "mc.motion-projectile",
     "difficulty": 5,
     "stem": "A 10-kg object traveling at 4 m/s east collides and sticks to a 6-kg object traveling at 4 m/s west. What is the velocity of the combined mass after the collision?",
-    "choices": ["4 m/s east", "1 m/s east", "0 m/s (they stop)", "2.5 m/s west"],
+    "choices": [
+      "4 m/s east",
+      "1 m/s east",
+      "0 m/s (they stop)",
+      "2.5 m/s west"
+    ],
     "correct_index": 1,
     "explanation": "Momentum is a vector. Taking east as positive: p = (10 × 4) + (6 × −4) = 40 − 24 = 16 kg·m/s east. Combined mass = 16 kg. v = 16/16 = 1 m/s east. They don't stop because the heavier object's eastward momentum exceeds the lighter one's westward momentum."
   },
@@ -545,7 +815,12 @@
     "topic_id": "gs.physics-mechanics",
     "difficulty": 3,
     "stem": "A book rests on a table without moving. According to Newton's First Law, the book remains at rest because:",
-    "choices": ["gravity is not acting on it", "the table exerts an upward normal force that balances gravity", "the book has no mass", "friction from the table pushes the book upward"],
+    "choices": [
+      "gravity is not acting on it",
+      "the table exerts an upward normal force that balances gravity",
+      "the book has no mass",
+      "friction from the table pushes the book upward"
+    ],
     "correct_index": 1,
     "explanation": "Newton's First Law states that an object at rest stays at rest when net force is zero. The table's normal force (upward) exactly balances gravity (downward), producing zero net force. Friction acts horizontally and does not support the book's weight."
   },
@@ -555,7 +830,12 @@
     "topic_id": "gs.physics-mechanics",
     "difficulty": 3,
     "stem": "Which simple machine is a screw most closely related to?",
-    "choices": ["lever", "wheel and axle", "inclined plane", "pulley"],
+    "choices": [
+      "lever",
+      "wheel and axle",
+      "inclined plane",
+      "pulley"
+    ],
     "correct_index": 2,
     "explanation": "A screw is essentially an inclined plane wrapped around a cylinder. The threads create a continuous spiral ramp, converting rotational force into linear motion. This is the same mechanical principle as a ramp, just in a circular form."
   },
@@ -565,7 +845,12 @@
     "topic_id": "gs.physics-mechanics",
     "difficulty": 4,
     "stem": "A person lifts a 60-Newton box 2 meters off the ground. How much work is done?",
-    "choices": ["30 joules", "62 joules", "120 joules", "240 joules"],
+    "choices": [
+      "30 joules",
+      "62 joules",
+      "120 joules",
+      "240 joules"
+    ],
     "correct_index": 2,
     "explanation": "Work = Force × Distance = 60 N × 2 m = 120 joules. Work is measured in joules (newton-meters). Dividing instead of multiplying gives 30 — a common sign-flip error. Adding (60 + 2 = 62) confuses the formula."
   },
@@ -575,7 +860,12 @@
     "topic_id": "gs.physics-mechanics",
     "difficulty": 4,
     "stem": "A compressed spring stores energy as:",
-    "choices": ["kinetic energy", "thermal energy", "potential energy", "chemical energy"],
+    "choices": [
+      "kinetic energy",
+      "thermal energy",
+      "potential energy",
+      "chemical energy"
+    ],
     "correct_index": 2,
     "explanation": "A compressed or stretched spring stores elastic potential energy — energy stored due to the object's position or deformation. When released, potential energy converts to kinetic energy. Thermal energy would imply the spring heated up."
   },
@@ -585,7 +875,12 @@
     "topic_id": "gs.physics-mechanics",
     "difficulty": 4,
     "stem": "Two balls of different mass are dropped from the same height at the same time in a vacuum. Which hits the ground first?",
-    "choices": ["the heavier ball, because gravity pulls it harder", "the lighter ball, because it has less air resistance", "they hit at the same time", "it depends on the shape of each ball"],
+    "choices": [
+      "the heavier ball, because gravity pulls it harder",
+      "the lighter ball, because it has less air resistance",
+      "they hit at the same time",
+      "it depends on the shape of each ball"
+    ],
     "correct_index": 2,
     "explanation": "In a vacuum there is no air resistance. Gravity accelerates all objects equally regardless of mass (9.8 m/s²). This is what Galileo demonstrated — the common misconception is that heavier objects fall faster because gravity 'pulls harder,' but acceleration is mass-independent."
   },
@@ -595,19 +890,14 @@
     "topic_id": "gs.physics-mechanics",
     "difficulty": 5,
     "stem": "A 500-W electric motor lifts a 200-N load vertically. How high can it lift the load in 4 seconds (ignoring friction)?",
-    "choices": ["2.5 meters", "5 meters", "10 meters", "40 meters"],
+    "choices": [
+      "2.5 meters",
+      "5 meters",
+      "10 meters",
+      "40 meters"
+    ],
     "correct_index": 2,
     "explanation": "Power = Work / Time, so Work = Power × Time = 500 × 4 = 2,000 joules. Work = Force × Distance, so Distance = Work / Force = 2,000 / 200 = 10 meters. Using 4 seconds as the distance (40 m) is a unit confusion error."
-  },
-  {
-    "external_key": "EI-CON-1",
-    "subtest": "EI",
-    "topic_id": "ei.conductors-insulators",
-    "difficulty": 3,
-    "stem": "Which of the following materials is the best electrical conductor?",
-    "choices": ["rubber", "copper", "glass", "dry wood"],
-    "correct_index": 1,
-    "explanation": "Copper is an excellent conductor because its outer electrons are loosely held and free to move, allowing current to flow easily. Rubber, glass, and dry wood are insulators — their electrons are tightly bound and resist current flow."
   },
   {
     "external_key": "EI-CON-2",
@@ -615,7 +905,12 @@
     "topic_id": "ei.conductors-insulators",
     "difficulty": 3,
     "stem": "A semiconductor differs from a conductor because a semiconductor:",
-    "choices": ["conducts electricity under all conditions", "never allows current to flow", "conducts electricity only under certain conditions (such as added heat or doping)", "has the same resistance as an insulator"],
+    "choices": [
+      "conducts electricity under all conditions",
+      "never allows current to flow",
+      "conducts electricity only under certain conditions (such as added heat or doping)",
+      "has the same resistance as an insulator"
+    ],
     "correct_index": 2,
     "explanation": "Semiconductors (like silicon and germanium) have electrical properties between conductors and insulators. Their conductivity can be controlled by temperature, light, or adding impurities (doping), which is why they are the basis of transistors and computer chips."
   },
@@ -625,7 +920,12 @@
     "topic_id": "ei.conductors-insulators",
     "difficulty": 4,
     "stem": "Which of the following best explains why aluminum wire requires a larger gauge than copper wire to carry the same current safely?",
-    "choices": ["aluminum is magnetic, which resists current flow", "aluminum has higher resistivity than copper, so a larger cross-section is needed to reduce resistance", "aluminum melts at a lower temperature and must be thicker for safety", "aluminum has lower resistivity, making it harder for electrons to move"],
+    "choices": [
+      "aluminum is magnetic, which resists current flow",
+      "aluminum has higher resistivity than copper, so a larger cross-section is needed to reduce resistance",
+      "aluminum melts at a lower temperature and must be thicker for safety",
+      "aluminum has lower resistivity, making it harder for electrons to move"
+    ],
     "correct_index": 1,
     "explanation": "Aluminum has about 1.6 times the resistivity of copper. To achieve the same resistance (and carry the same current without excessive heat), aluminum wire must have a larger cross-sectional area. This is why aluminum wiring uses larger gauges."
   },
@@ -635,7 +935,12 @@
     "topic_id": "ei.conductors-insulators",
     "difficulty": 4,
     "stem": "Wet wood does not normally conduct electricity well, but wet wood with dissolved salts conducts much better. This demonstrates that:",
-    "choices": ["wood becomes a semiconductor when cut", "dissolved ions in water create charge carriers that enable conduction", "heat from the salt lowers electrical resistance", "salt acts as an insulator that traps electrons"],
+    "choices": [
+      "wood becomes a semiconductor when cut",
+      "dissolved ions in water create charge carriers that enable conduction",
+      "heat from the salt lowers electrical resistance",
+      "salt acts as an insulator that traps electrons"
+    ],
     "correct_index": 1,
     "explanation": "Pure water is a poor conductor, but dissolved salts (ionic compounds) break into positive and negative ions that can carry charge through the liquid. This is why saltwater and moist soil are better conductors than pure water alone."
   },
@@ -645,7 +950,12 @@
     "topic_id": "ei.conductors-insulators",
     "difficulty": 5,
     "stem": "A technician handles a live wire while standing on a dry rubber mat. Why does the rubber mat protect the technician?",
-    "choices": ["rubber absorbs excess electrical current and releases it as heat", "rubber is an insulator that blocks the flow of current from the technician to ground", "rubber becomes positively charged and repels electrons", "rubber stores electrical charge, reducing voltage at the technician's feet"],
+    "choices": [
+      "rubber absorbs excess electrical current and releases it as heat",
+      "rubber is an insulator that blocks the flow of current from the technician to ground",
+      "rubber becomes positively charged and repels electrons",
+      "rubber stores electrical charge, reducing voltage at the technician's feet"
+    ],
     "correct_index": 1,
     "explanation": "Electrical current flows along a complete circuit — from source, through a conductor, and back to ground. Rubber is an insulator; standing on it breaks the path to ground, preventing current from flowing through the technician's body. This is why insulated footwear is required in electrical work."
   },
@@ -655,7 +965,12 @@
     "topic_id": "ei.ohms-law-power",
     "difficulty": 3,
     "stem": "A light bulb operates on 120 volts and draws 2 amperes. What is the power consumption of the bulb?",
-    "choices": ["60 watts", "122 watts", "240 watts", "480 watts"],
+    "choices": [
+      "60 watts",
+      "122 watts",
+      "240 watts",
+      "480 watts"
+    ],
     "correct_index": 2,
     "explanation": "Power = Voltage × Current = P = IV = 120 × 2 = 240 watts. Dividing (120/2 = 60) is the most common error — students confuse the power formula with Ohm's Law for resistance."
   },
@@ -665,7 +980,12 @@
     "topic_id": "ei.ohms-law-power",
     "difficulty": 3,
     "stem": "Three resistors of 4 ohms, 6 ohms, and 2 ohms are connected in series. What is the total resistance of the circuit?",
-    "choices": ["1 ohm", "6 ohms", "12 ohms", "48 ohms"],
+    "choices": [
+      "1 ohm",
+      "6 ohms",
+      "12 ohms",
+      "48 ohms"
+    ],
     "correct_index": 2,
     "explanation": "In a series circuit, total resistance = R₁ + R₂ + R₃ = 4 + 6 + 2 = 12 ohms. The parallel formula (1/R) is often mistakenly applied here; in series, resistances simply add together."
   },
@@ -675,7 +995,12 @@
     "topic_id": "ei.ohms-law-power",
     "difficulty": 4,
     "stem": "A 12-volt battery powers a circuit with two resistors in series: 3 ohms and 1 ohm. What is the power dissipated by the 3-ohm resistor?",
-    "choices": ["9 watts", "12 watts", "27 watts", "36 watts"],
+    "choices": [
+      "9 watts",
+      "12 watts",
+      "27 watts",
+      "36 watts"
+    ],
     "correct_index": 2,
     "explanation": "Total resistance = 3 + 1 = 4 ohms. Current = V/R = 12/4 = 3 amperes. Power in the 3-ohm resistor: P = I²R = 3² × 3 = 9 × 3 = 27 watts. Using total voltage instead of calculating current first gives 48 W — a two-step problem requiring correct sequencing."
   },
@@ -685,7 +1010,12 @@
     "topic_id": "ei.ohms-law-power",
     "difficulty": 4,
     "stem": "Two resistors are connected in parallel: one is 6 ohms and one is 3 ohms. What is the combined resistance?",
-    "choices": ["9 ohms", "4.5 ohms", "2 ohms", "1 ohm"],
+    "choices": [
+      "9 ohms",
+      "4.5 ohms",
+      "2 ohms",
+      "1 ohm"
+    ],
     "correct_index": 2,
     "explanation": "Parallel resistance formula: 1/R_total = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2. So R_total = 2 ohms. A common error is adding resistances as in series (6 + 3 = 9). In parallel, total resistance is always less than the smallest individual resistor."
   },
@@ -695,7 +1025,12 @@
     "topic_id": "ei.ohms-law-power",
     "difficulty": 5,
     "stem": "A 9-volt battery powers a parallel circuit. Branch 1 has a 9-ohm resistor; Branch 2 has an 18-ohm resistor. What is the total current drawn from the battery?",
-    "choices": ["0.5 amperes", "1 ampere", "1.5 amperes", "3 amperes"],
+    "choices": [
+      "0.5 amperes",
+      "1 ampere",
+      "1.5 amperes",
+      "3 amperes"
+    ],
     "correct_index": 2,
     "explanation": "In parallel circuits, voltage across each branch equals source voltage. Branch 1 current: I₁ = 9/9 = 1 A. Branch 2 current: I₂ = 9/18 = 0.5 A. Total current = I₁ + I₂ = 1.5 A. Students who use combined parallel resistance alone often get the right answer but skip confirming via branch currents — here either method works."
   },
@@ -705,7 +1040,12 @@
     "topic_id": "ar.word-problems",
     "difficulty": 4,
     "stem": "A supply truck can carry 4,800 pounds. It is loaded with boxes weighing 60 pounds each and crates weighing 120 pounds each. If there are 20 crates, how many boxes can also be loaded without exceeding the limit?",
-    "choices": ["20 boxes", "40 boxes", "48 boxes", "56 boxes"],
+    "choices": [
+      "20 boxes",
+      "40 boxes",
+      "48 boxes",
+      "56 boxes"
+    ],
     "correct_index": 1,
     "explanation": "Crates use: 20 × 120 = 2,400 lbs. Remaining capacity: 4,800 − 2,400 = 2,400 lbs. Number of boxes: 2,400 / 60 = 40 boxes. Dividing remaining capacity by 120 (crate weight) gives 20 — the error of using the wrong unit weight."
   },
@@ -715,7 +1055,12 @@
     "topic_id": "ar.word-problems",
     "difficulty": 4,
     "stem": "A fuel tank is 3/4 full and holds 24 gallons at that level. How many total gallons does the tank hold when completely full?",
-    "choices": ["18 gallons", "30 gallons", "32 gallons", "36 gallons"],
+    "choices": [
+      "18 gallons",
+      "30 gallons",
+      "32 gallons",
+      "36 gallons"
+    ],
     "correct_index": 2,
     "explanation": "If 3/4 of the tank = 24 gallons, then 1/4 = 8 gallons, and the full tank = 4 × 8 = 32 gallons. Multiplying 24 × (3/4) = 18 gallons is the reverse error — treating the fraction as a multiplier instead of recognizing it represents the current fill level."
   },
@@ -725,9 +1070,14 @@
     "topic_id": "ar.percent",
     "difficulty": 4,
     "stem": "A piece of equipment originally cost $800. After a 15% discount it was purchased, then later sold for 10% more than the purchase price. What was the final selling price?",
-    "choices": ["$748.00", "$756.00", "$770.00", "$792.00"],
+    "choices": [
+      "$748.00",
+      "$756.00",
+      "$770.00",
+      "$792.00"
+    ],
     "correct_index": 0,
-    "explanation": "Purchase price after 15% discount: $800 × 0.85 = $680. Selling price at 10% above purchase: $680 × 1.10 = $748.00. A common error is applying both percentages to the original $800 (giving $800 × 0.85 × 1.10 is correct but students often use $800 × 0.95 = $760 by netting the two percents, which is wrong because 15% down and 10% up are applied sequentially to different bases."
+    "explanation": "Apply percentages sequentially: $800 × (1 − 0.15) = $680, then $680 × (1 + 0.10) = $748. Common error: netting the percentages to −5% gives $760, which is wrong because each percent applies to a different base."
   },
   {
     "external_key": "AR-RAT-1",
@@ -735,7 +1085,12 @@
     "topic_id": "ar.ratio-proportion",
     "difficulty": 4,
     "stem": "A military convoy travels 120 miles in 2.5 hours. At the same rate, how far will it travel in 4 hours?",
-    "choices": ["160 miles", "192 miles", "200 miles", "240 miles"],
+    "choices": [
+      "160 miles",
+      "192 miles",
+      "200 miles",
+      "240 miles"
+    ],
     "correct_index": 1,
     "explanation": "Speed = 120 / 2.5 = 48 mph. Distance in 4 hours = 48 × 4 = 192 miles. Multiplying 120 × 4 = 480 ignores the rate calculation; 200 miles results from rounding 48 to 50 mph."
   },
@@ -745,7 +1100,12 @@
     "topic_id": "ar.arithmetic-fundamentals",
     "difficulty": 5,
     "stem": "A storage room has 3 shelves. Each shelf holds twice as many items as the shelf below it. The bottom shelf holds 15 items. How many items are in the storage room in total?",
-    "choices": ["45 items", "90 items", "105 items", "120 items"],
+    "choices": [
+      "45 items",
+      "90 items",
+      "105 items",
+      "120 items"
+    ],
     "correct_index": 2,
     "explanation": "Bottom shelf: 15. Middle shelf: 15 × 2 = 30. Top shelf: 30 × 2 = 60. Total = 15 + 30 + 60 = 105 items. Adding 15 three times (45) misses the doubling; multiplying all by 2 once (30 × 3 = 90) misapplies the doubling pattern."
   },
@@ -755,7 +1115,12 @@
     "topic_id": "mk.algebra-linear",
     "difficulty": 4,
     "stem": "If 5(x − 3) = 2x + 6, what is the value of x?",
-    "choices": ["x = 3", "x = 5", "x = 7", "x = 9"],
+    "choices": [
+      "x = 3",
+      "x = 5",
+      "x = 7",
+      "x = 9"
+    ],
     "correct_index": 2,
     "explanation": "Distribute: 5x − 15 = 2x + 6. Subtract 2x: 3x − 15 = 6. Add 15: 3x = 21. x = 7. A common error is failing to distribute the 5 to −3, giving 5x − 3 = 2x + 6 and solving to x = 3."
   },
@@ -765,19 +1130,14 @@
     "topic_id": "mk.geometry",
     "difficulty": 4,
     "stem": "A cylindrical water tank has a radius of 3 feet and a height of 10 feet. What is its volume? (Use π ≈ 3.14)",
-    "choices": ["94.2 cubic feet", "188.4 cubic feet", "282.6 cubic feet", "942 cubic feet"],
+    "choices": [
+      "94.2 cubic feet",
+      "188.4 cubic feet",
+      "282.6 cubic feet",
+      "942 cubic feet"
+    ],
     "correct_index": 2,
     "explanation": "Volume of a cylinder = π × r² × h = 3.14 × 9 × 10 = 282.6 cubic feet. Using diameter (6) instead of radius (3) gives 3.14 × 36 × 10 = 1,130.4 — squaring the diameter is the most common error. Using r = 3 without squaring gives 3.14 × 3 × 10 = 94.2."
-  },
-  {
-    "external_key": "MK-EXP-1",
-    "subtest": "MK",
-    "topic_id": "mk.exponents-polynomials",
-    "difficulty": 4,
-    "stem": "Simplify: (3x²)(4x³)",
-    "choices": ["7x⁵", "12x⁵", "12x⁶", "7x⁶"],
-    "correct_index": 1,
-    "explanation": "Multiply coefficients: 3 × 4 = 12. Add exponents (same base): x² × x³ = x⁵. Result: 12x⁵. Adding coefficients instead of multiplying gives 7x⁵; multiplying exponents instead of adding gives 12x⁶."
   },
   {
     "external_key": "MK-FRC-1",
@@ -785,7 +1145,12 @@
     "topic_id": "mk.fractions-decimals",
     "difficulty": 5,
     "stem": "A fuel mixture is 2/5 diesel and the rest is gasoline. If the tank holds 60 liters, how many more liters of gasoline than diesel does it contain?",
-    "choices": ["12 liters more gasoline", "24 liters more gasoline", "12 liters more diesel", "36 liters more gasoline"],
+    "choices": [
+      "12 liters more gasoline",
+      "24 liters more gasoline",
+      "12 liters more diesel",
+      "36 liters more gasoline"
+    ],
     "correct_index": 0,
     "explanation": "Diesel = (2/5) × 60 = 24 liters. Gasoline = 60 − 24 = 36 liters. Difference = 36 − 24 = 12 liters more gasoline. Choosing 24 liters confuses the diesel volume with the difference; choosing 36 liters is the gasoline volume, not the difference between the two."
   },
@@ -795,7 +1160,12 @@
     "topic_id": "wk.context-clues",
     "difficulty": 5,
     "stem": "In the sentence 'The politician's OBSEQUIOUS deference to every donor in the room struck journalists as calculated rather than genuine,' the word OBSEQUIOUS most nearly means:",
-    "choices": ["bold and outspoken", "excessively eager to please or serve", "professionally courteous", "openly hostile"],
+    "choices": [
+      "bold and outspoken",
+      "excessively eager to please or serve",
+      "professionally courteous",
+      "openly hostile"
+    ],
     "correct_index": 1,
     "explanation": "Obsequious means servilely compliant or fawning — behaving in an excessively eager-to-please way. The clue that it 'struck journalists as calculated' confirms it goes beyond normal professional courtesy, ruling out choice C. Bold or hostile are direct opposites."
   },
@@ -805,7 +1175,12 @@
     "topic_id": "wk.synonyms",
     "difficulty": 4,
     "stem": "EPHEMERAL most nearly means:",
-    "choices": ["ancient", "lasting only a short time", "extraordinarily rare", "deeply emotional"],
+    "choices": [
+      "ancient",
+      "lasting only a short time",
+      "extraordinarily rare",
+      "deeply emotional"
+    ],
     "correct_index": 1,
     "explanation": "Ephemeral means lasting for a very short time (from Greek ephemeros, 'for a day'). Ancient is essentially its opposite. Rare and emotional are unrelated to its core meaning of brevity."
   },
@@ -815,7 +1190,12 @@
     "topic_id": "wk.synonyms",
     "difficulty": 5,
     "stem": "VERACIOUS most nearly means:",
-    "choices": ["extremely hungry", "truthful", "speedy", "aggressive"],
+    "choices": [
+      "extremely hungry",
+      "truthful",
+      "speedy",
+      "aggressive"
+    ],
     "correct_index": 1,
     "explanation": "Veracious means habitually speaking the truth. It is commonly confused with voracious (extremely hungry), which sounds similar. The VER- root relates to truth (verify, veracity), while VOR- relates to eating (devour)."
   },
@@ -824,8 +1204,13 @@
     "subtest": "PC",
     "topic_id": "pc.inference",
     "difficulty": 4,
-    "stem": "Read the passage below and answer the question.\n\n\"The lab's results were submitted three times before the review board accepted them. Each submission included additional documentation requested by the board, yet the board raised new objections with each round. When the research was finally published, it overturned a theory the board's chair had authored fifteen years earlier.\"\n\nWhat can most reasonably be inferred from this passage?",
-    "choices": ["The research contained significant methodological flaws that required correction.", "The board's repeated objections may have been influenced by a conflict of interest.", "Government agencies routinely require three rounds of submission for new research.", "The board chair ultimately supported the research once it was explained clearly."],
+    "stem": "Read the passage below and answer the question.\n\n\"The lab's results were submitted three times before the review board accepted them. Each submission included additional documentation requested by the board, yet the board raised new objections with each round. When the research was finally published, it overturned a theory the board's chair had authored fifteen years earlier. The chair did not recuse himself from the review.\"\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "The research contained significant methodological flaws that required correction.",
+      "The board's repeated objections may have been influenced by a conflict of interest.",
+      "Government agencies routinely require three rounds of submission for new research.",
+      "The board chair ultimately supported the research once it was explained clearly."
+    ],
     "correct_index": 1,
     "explanation": "The detail that the board kept finding new objections — and that the final research contradicted the chair's own published theory — strongly implies a conflict of interest. Choice A is contradicted by the research's eventual publication. Choices C and D are not supported by any passage detail."
   },
@@ -835,19 +1220,14 @@
     "topic_id": "pc.main-idea",
     "difficulty": 4,
     "stem": "Read the passage below and answer the question.\n\n\"Maps are not neutral documents. Every map involves choices: what to include, what to omit, which areas to enlarge, and which projection to use. The Mercator projection, still common in classrooms, inflates the size of land near the poles — making Greenland appear as large as Africa, when Africa is actually fourteen times larger. A map teaches not just geography but a way of seeing the world.\"\n\nWhat is the main idea of this passage?",
-    "choices": ["The Mercator projection is the most accurate map projection available.", "Maps reflect decisions and assumptions that shape how people perceive the world.", "Africa is fourteen times larger than Greenland.", "Classroom maps should be replaced with digital navigation tools."],
+    "choices": [
+      "The Mercator projection is the most accurate map projection available.",
+      "Maps reflect decisions and assumptions that shape how people perceive the world.",
+      "Africa is fourteen times larger than Greenland.",
+      "Classroom maps should be replaced with digital navigation tools."
+    ],
     "correct_index": 1,
     "explanation": "The passage opens and closes with the argument that maps embed choices and teach a 'way of seeing.' The Greenland/Africa fact is supporting evidence, not the main point. Choice D is never mentioned; Choice A contradicts the passage's argument."
-  },
-  {
-    "external_key": "AR-WRD-HARD-1",
-    "subtest": "AR",
-    "topic_id": "ar.word-problems",
-    "difficulty": 5,
-    "stem": "Two workers, A and B, can complete a job together in 6 hours. Worker A alone can complete the same job in 10 hours. How many hours would it take Worker B working alone?",
-    "choices": ["4 hours", "15 hours", "16 hours", "18 hours"],
-    "correct_index": 1,
-    "explanation": "Combined rate: 1/6 jobs per hour. Worker A's rate: 1/10. Worker B's rate: 1/6 − 1/10 = 5/30 − 3/30 = 2/30 = 1/15. So Worker B takes 15 hours alone. Subtracting times directly (10 − 6 = 4) is the classic error — rates, not times, are additive."
   },
   {
     "external_key": "MK-ALG-HARD-1",
@@ -855,7 +1235,12 @@
     "topic_id": "mk.algebra-linear",
     "difficulty": 5,
     "stem": "Depot A charges a $40 setup fee plus $12 per unit ordered. Depot B charges no setup fee but $16 per unit. At exactly how many units do the two depots cost the same?",
-    "choices": ["5 units", "8 units", "10 units", "12 units"],
+    "choices": [
+      "5 units",
+      "8 units",
+      "10 units",
+      "12 units"
+    ],
     "correct_index": 2,
     "explanation": "Set costs equal: 40 + 12n = 16n. Subtract 12n from both sides: 40 = 4n. Divide: n = 10 units. At 10 units: Depot A = 40 + 120 = $160; Depot B = 16 × 10 = $160. Confirm equal. A common error is setting up the equation as 40 + 16n = 12n, which gives a negative n because the student reverses which depot has the base fee."
   },
@@ -865,7 +1250,12 @@
     "topic_id": "mk.geometry",
     "difficulty": 4,
     "stem": "A right triangle has legs of 9 and 12. What is the length of the hypotenuse?",
-    "choices": ["13", "15", "17", "21"],
+    "choices": [
+      "13",
+      "15",
+      "17",
+      "21"
+    ],
     "correct_index": 1,
     "explanation": "Pythagorean theorem: c² = 9² + 12² = 81 + 144 = 225. c = √225 = 15. This is a classic 3-4-5 triple scaled by 3 (9-12-15). Adding the legs (9 + 12 = 21) or averaging them are common wrong approaches."
   },
@@ -875,7 +1265,12 @@
     "topic_id": "ar.percent",
     "difficulty": 5,
     "stem": "A soldier scores 72 on a first test and 88 on a second test. What is the percent increase from the first score to the second score, rounded to the nearest whole percent?",
-    "choices": ["16%", "18%", "22%", "25%"],
+    "choices": [
+      "16%",
+      "18%",
+      "22%",
+      "25%"
+    ],
     "correct_index": 2,
     "explanation": "Percent increase = (new − old) / old × 100 = (88 − 72) / 72 × 100 = 16/72 × 100 ≈ 22.2%, rounded to 22%. Dividing by the new score (16/88 ≈ 18%) is the most common error — percent change always uses the original value as the base."
   },
@@ -884,10 +1279,15 @@
     "subtest": "WK",
     "topic_id": "wk.context-clues",
     "difficulty": 2,
-    "stem": "In the sentence 'After the rainstorm, the roads were TREACHEROUS and several drivers lost control,' the word TREACHEROUS most nearly means:",
-    "choices": ["crowded", "dangerous", "slippery", "flooded"],
-    "correct_index": 1,
-    "explanation": "Treacherous means presenting hidden or unpredictable dangers. While slippery and flooded describe road conditions that could cause the described problem, treacherous is the broader meaning of the word — dangerous or unreliable in a deceptive way."
+    "stem": "In the sentence 'The trail looked safe but proved TREACHEROUS, with hidden drop-offs and unstable footing,' the word TREACHEROUS most nearly means:",
+    "choices": [
+      "deceptively dangerous",
+      "exhausting",
+      "remote",
+      "unfamiliar"
+    ],
+    "correct_index": 0,
+    "explanation": "Treacherous means deceptively dangerous — something that appears safe but conceals serious hazards. The new stem reinforces this with 'hidden drop-offs and unstable footing.' Exhausting, remote, and unfamiliar describe possible trail qualities but do not capture the deceptive, unpredictable danger that treacherous conveys."
   },
   {
     "external_key": "WK-PFX-D2-1",
@@ -895,7 +1295,12 @@
     "topic_id": "wk.prefixes-suffixes",
     "difficulty": 2,
     "stem": "The prefix MIS- means wrongly or badly. MISJUDGE therefore means:",
-    "choices": ["to judge again", "to judge fairly", "to judge wrongly", "to refuse to judge"],
+    "choices": [
+      "to judge again",
+      "to judge fairly",
+      "to judge wrongly",
+      "to refuse to judge"
+    ],
     "correct_index": 2,
     "explanation": "MIS- attaches to a verb and means wrongly or badly — as in mislead (lead wrongly), misfire (fire at wrong time), misuse. Misjudge means to form an incorrect judgment."
   },
@@ -905,7 +1310,12 @@
     "topic_id": "as.maintenance-repair",
     "difficulty": 2,
     "stem": "Why is it important to check the coolant level in a vehicle's radiator regularly?",
-    "choices": ["Low coolant improves fuel economy", "Low coolant can cause the engine to overheat", "Coolant affects the transmission shift points", "Coolant level determines oil viscosity"],
+    "choices": [
+      "Low coolant improves fuel economy",
+      "Low coolant can cause the engine to overheat",
+      "Coolant affects the transmission shift points",
+      "Coolant level determines oil viscosity"
+    ],
     "correct_index": 1,
     "explanation": "Engine coolant carries heat away from the engine block to the radiator. If the level drops too low, there is insufficient fluid to absorb engine heat, and the engine can overheat — causing serious damage such as a warped head gasket."
   },
@@ -915,7 +1325,12 @@
     "topic_id": "gs.physics-mechanics",
     "difficulty": 2,
     "stem": "Which of the following is an example of potential energy?",
-    "choices": ["a spinning fan blade", "a rock sitting on a high cliff", "a car moving at 60 mph", "sound traveling through air"],
+    "choices": [
+      "a spinning fan blade",
+      "a rock sitting on a high cliff",
+      "a car moving at 60 mph",
+      "sound traveling through air"
+    ],
     "correct_index": 1,
     "explanation": "Potential energy is stored energy due to an object's position or condition. A rock on a cliff has gravitational potential energy because of its height. The other options describe energy in motion (kinetic) or wave energy."
   },
@@ -925,7 +1340,12 @@
     "topic_id": "mc.motion-projectile",
     "difficulty": 2,
     "stem": "Newton's First Law states that an object in motion stays in motion unless acted on by an outside force. Which of the following best demonstrates this law?",
-    "choices": ["a ball speeding up as it rolls downhill", "a hockey puck sliding across frictionless ice at constant speed", "a rocket accelerating after launch", "a pendulum slowing down due to air resistance"],
+    "choices": [
+      "a ball speeding up as it rolls downhill",
+      "a hockey puck sliding across frictionless ice at constant speed",
+      "a rocket accelerating after launch",
+      "a pendulum slowing down due to air resistance"
+    ],
     "correct_index": 1,
     "explanation": "Newton's First Law describes inertia: no net force means no change in motion. A puck on frictionless ice has no friction or other horizontal force acting on it, so it maintains constant speed — the purest illustration of the law. The pendulum example actually shows the law being violated by air resistance."
   },
@@ -935,19 +1355,14 @@
     "topic_id": "ei.ohms-law-power",
     "difficulty": 2,
     "stem": "A circuit has a resistance of 8 ohms and a current of 3 amperes flowing through it. What is the voltage across the circuit?",
-    "choices": ["2.7 volts", "11 volts", "24 volts", "64 volts"],
+    "choices": [
+      "2.7 volts",
+      "11 volts",
+      "24 volts",
+      "64 volts"
+    ],
     "correct_index": 2,
     "explanation": "Ohm's Law: V = I × R = 3 × 8 = 24 volts. Dividing instead of multiplying (8 / 3 ≈ 2.7) is the most common error. Adding (3 + 8 = 11) confuses the formula entirely."
-  },
-  {
-    "external_key": "AR-RAT-D2-1",
-    "subtest": "AR",
-    "topic_id": "ar.ratio-proportion",
-    "difficulty": 2,
-    "stem": "A map uses a scale of 1 inch = 50 miles. Two cities are 3.5 inches apart on the map. How many miles apart are the cities in reality?",
-    "choices": ["53.5 miles", "150 miles", "175 miles", "200 miles"],
-    "correct_index": 2,
-    "explanation": "Distance = map distance × scale factor = 3.5 × 50 = 175 miles. Adding 50 + 3.5 = 53.5 confuses multiplication with addition; 150 miles results from using 3 inches instead of 3.5."
   },
   {
     "external_key": "MK-GEO-D2-1",
@@ -955,7 +1370,12 @@
     "topic_id": "mk.geometry",
     "difficulty": 2,
     "stem": "What is the perimeter of a rectangle that is 8 feet long and 5 feet wide?",
-    "choices": ["13 feet", "26 feet", "40 feet", "80 feet"],
+    "choices": [
+      "13 feet",
+      "26 feet",
+      "40 feet",
+      "80 feet"
+    ],
     "correct_index": 1,
     "explanation": "Perimeter = 2 × (length + width) = 2 × (8 + 5) = 2 × 13 = 26 feet. A common error is adding all four sides without doubling (8 + 5 = 13) or multiplying length by width to get area (40 square feet) instead of perimeter."
   }
