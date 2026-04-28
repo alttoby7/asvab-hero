@@ -55,6 +55,7 @@ export interface MilitaryJob {
   title: string;
   description: string;
   requirements: ScoreRequirement[];
+  anyOf?: ScoreRequirement[]; // OR logic: qualifies if any single entry passes
   minAFQT?: number;
   category: string;
 }

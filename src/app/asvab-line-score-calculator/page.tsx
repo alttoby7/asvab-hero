@@ -83,7 +83,7 @@ const faqJsonLd = {
       name: "What is the Air Force MAGE system and how is it different from Army line scores?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "MAGE stands for Mechanical, Administrative, General, Electronics: M = GS + MC + 2(AS), A = NO + CS + VE, G = AR + VE, E = GS + AR + MK + EI. MAGE composites are scaled to percentiles (0 to 99), not raw sums. A G of 72 means you outperformed 72 percent of the reference population. Space Force uses the same system with some higher minimums.",
+        text: "MAGE stands for Mechanical, Administrative, General, Electronics: M = GS + MC + 2(AS), A = WK + PC + MK, G = AR + VE, E = GS + AR + MK + EI. MAGE composites are scaled to percentiles (0 to 99), not raw sums. A G of 72 means you outperformed 72 percent of the reference population. Space Force uses the same system with some higher minimums.",
       },
     },
     {
@@ -287,9 +287,8 @@ export default function ASVABLineScoreCalculatorPage() {
 
         <p className="text-text-secondary">
           Two legacy subtests, Numerical Operations (NO) and Coding Speed (CS),
-          still appear in some Navy and Air Force formulas. They are not on the
-          modern CAT-ASVAB; branches reconcile them at MEPS using equivalent
-          subtests.
+          appeared in older Air Force formulas but were removed from the ASVAB in
+          2002. All current branch formulas use the nine subtests listed above.
         </p>
 
         <p className="text-text-secondary">
@@ -581,7 +580,7 @@ export default function ASVABLineScoreCalculatorPage() {
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
           M (Mechanical) = GS + MC + 2(AS)
           <br />
-          A (Administrative) = NO + CS + VE
+          A (Administrative) = WK + PC + MK
           <br />
           G (General) = AR + VE
           <br />
@@ -1032,7 +1031,7 @@ export default function ASVABLineScoreCalculatorPage() {
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
               MAGE stands for Mechanical, Administrative, General, Electronics:
-              M = GS + MC + 2(AS), A = NO + CS + VE, G = AR + VE, E = GS + AR
+              M = GS + MC + 2(AS), A = WK + PC + MK, G = AR + VE, E = GS + AR
               + MK + EI. MAGE composites are scaled to percentiles (0 to 99),
               not raw sums. A G of 72 means you outperformed 72 percent of the
               reference population. Space Force uses the same system with some

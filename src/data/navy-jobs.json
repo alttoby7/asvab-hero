@@ -555,7 +555,8 @@
     "description": "Conducts special operations including direct action, special reconnaissance, counter-terrorism, and unconventional warfare.",
     "category": "Special Warfare",
     "minAFQT": 35,
-    "requirements": [
+    "requirements": [],
+    "anyOf": [
       { "composite": "GS+MC+EI", "minScore": 165 },
       { "composite": "VE+AR+MK+MC", "minScore": 220 }
     ]

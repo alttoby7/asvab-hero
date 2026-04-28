@@ -118,7 +118,7 @@ export function calculateArmyLineScores(scores: SubtestScores): CompositeScores 
  */
 export function calculateAirForceComposites(scores: SubtestScores): CompositeScores {
   return {
-    M: scores.MC + scores.AS + scores.GS,    // Mechanical
+    M: scores.MC + 2 * scores.AS + scores.GS, // Mechanical
     A: scores.WK + scores.PC + scores.MK,     // Administrative
     G: scores.AR + scores.WK + scores.PC,     // General
     E: scores.GS + scores.AR + scores.MK + scores.EI, // Electronics
