@@ -238,9 +238,26 @@ export interface Database {
           synced_from_local?: boolean;
           created_at?: string;
         };
-        Update: Partial<
-          Database["public"]["Tables"]["attempts"]["Insert"]
-        >;
+        Update: {
+          id?: string;
+          user_id?: string;
+          client_attempt_id?: string | null;
+          variant_code?: string;
+          source?: string;
+          subtest?: string | null;
+          topic_id?: string | null;
+          started_at?: string;
+          completed_at?: string;
+          duration_seconds?: number;
+          question_count?: number;
+          correct_count?: number;
+          afqt_estimate?: number | null;
+          results_by_subtest?: Json;
+          results_by_topic?: Json;
+          question_results?: Json;
+          synced_from_local?: boolean;
+          created_at?: string;
+        };
       };
       topic_stats: {
         Row: {
@@ -267,9 +284,18 @@ export interface Database {
           last_seen_at?: string | null;
           updated_at?: string;
         };
-        Update: Partial<
-          Database["public"]["Tables"]["topic_stats"]["Insert"]
-        >;
+        Update: {
+          user_id?: string;
+          topic_id?: string;
+          seen?: number;
+          correct?: number;
+          posterior?: number;
+          confidence?: number;
+          priority?: number;
+          status?: string;
+          last_seen_at?: string | null;
+          updated_at?: string;
+        };
       };
       flashcard_reviews: {
         Row: {
@@ -296,9 +322,18 @@ export interface Database {
           created_at?: string;
           updated_at?: string;
         };
-        Update: Partial<
-          Database["public"]["Tables"]["flashcard_reviews"]["Insert"]
-        >;
+        Update: {
+          user_id?: string;
+          card_id?: string;
+          ease_factor?: number;
+          interval_days?: number;
+          repetitions?: number;
+          due_at?: string;
+          last_reviewed_at?: string | null;
+          last_quality?: number | null;
+          created_at?: string;
+          updated_at?: string;
+        };
       };
       daily_challenges: {
         Row: {
