@@ -88,6 +88,10 @@ export interface PracticeQuestion {
   options: [string, string, string, string];
   correctIndex: number;
   explanation: string;
+  /** Optional — set when sampled from Supabase, used by topic-level scoring. */
+  topicId?: string;
+  /** Optional — difficulty 1–5 from the DB. */
+  difficulty?: number;
 }
 
 export interface PracticeTest {
@@ -110,6 +114,92 @@ export interface SubtestResult {
   correct: number;
   total: number;
   percentage: number;
+}
+
+// ── Topic + Variant + Stats ────────────────────────────────────────
+
+export interface Topic {
+  id: string;                  // e.g. "ar.ratio-proportion"
+  subtest: AsvabSubtest;
+  slug: string;
+  title: string;
+  sort_order: number;
+  active: boolean;
+  study_guide_href?: string;   // local-only convenience field from seed JSON
+  recommended_drill?: string;  // local-only convenience field from seed JSON
+}
+
+export interface TestVariant {
+  code: string;                // diagnostic | subtest_drill | ...
+  name: string;
+  rules: TestVariantRules;
+  active: boolean;
+}
+
+export interface TestVariantRules {
+  length: number;
+  time_seconds: number;
+  /** Either a fixed mix-by-subtest object, or a string sentinel like "one_subtest". */
+  mix: Partial<Record<AsvabSubtest, number>> | string;
+  afqt_eligible?: boolean;
+  subtest_locked?: AsvabSubtest | null;
+  note?: string;
+}
+
+export interface TopicResult {
+  topic_id: string;
+  subtest: AsvabSubtest;
+  seen: number;
+  correct: number;
+  percentage: number;
+}
+
+export interface TopicStats {
+  user_id?: string;            // omitted for anonymous local store
+  topic_id: string;
+  seen: number;
+  correct: number;
+  posterior: number;           // (correct + 1) / (seen + 2)
+  confidence: number;          // min(seen / 8, 1)
+  priority: number;            // (1 - posterior) * confidence
+  status: "unmeasured" | "weak" | "developing" | "strong";
+  last_seen_at: string | null;
+  updated_at: string;
+}
+
+export interface Attempt {
+  id: string;
+  user_id?: string;
+  client_attempt_id: string;
+  variant_code: string;
+  source: "practice" | "daily_challenge" | "mini_drill";
+  subtest: AsvabSubtest | null;
+  topic_id: string | null;
+  started_at: string;
+  completed_at: string;
+  duration_seconds: number;
+  question_count: number;
+  correct_count: number;
+  afqt_estimate: number | null;
+  results_by_subtest: Record<string, { seen: number; correct: number }>;
+  results_by_topic: Record<string, { seen: number; correct: number }>;
+  question_results: Array<{
+    question_id: string;
+    selected: number | null;
+    correct: number;
+    topic_id: string;
+    is_correct: boolean;
+  }>;
+}
+
+/** Insert payload — client builds this; server fills user_id / id / created_at. */
+export type AttemptPayload = Omit<Attempt, "id" | "user_id">;
+
+export interface NextStepRecommendation {
+  headline: string;
+  body: string;
+  ctaLabel: string;
+  ctaHref: string;
 }
 
 // Study Guide Types
