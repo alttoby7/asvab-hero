@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
+import { useEntitlement } from "@/hooks/useEntitlement";
 
 interface DbQuestion {
   id: string;
@@ -44,13 +46,21 @@ function writeLocalAttempt(topicId: string, score: number, total: number) {
 }
 
 export default function MiniDrill({ topicId }: MiniDrillProps) {
+  const { entitlement, loading: entitlementLoading } = useEntitlement();
   const [questions, setQuestions] = useState<DbQuestion[] | null>(null);
   const [loading, setLoading] = useState(true);
   const [answers, setAnswers] = useState<AnswerState>({});
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
+  // Only fetch questions for Pro users.
+  const shouldFetch = !entitlementLoading && entitlement.isPro;
+
   useEffect(() => {
+    if (!shouldFetch) {
+      setLoading(false);
+      return;
+    }
     const supabase = getSupabaseBrowserClient();
     supabase
       .from("practice_questions")
@@ -67,7 +77,7 @@ export default function MiniDrill({ topicId }: MiniDrillProps) {
         }
         setLoading(false);
       });
-  }, [topicId]);
+  }, [topicId, shouldFetch]);
 
   const handleSelect = (qIndex: number, optionIndex: number) => {
     if (submitted) return;
@@ -151,6 +161,40 @@ export default function MiniDrill({ topicId }: MiniDrillProps) {
     setSubmitted(true);
     setSubmitting(false);
   };
+
+
+  // Paywall: free/anon users see a lock card instead of the drill.
+  if (!entitlementLoading && !entitlement.isPro) {
+    return (
+      <div className="rounded-xl border border-navy-border bg-navy-light p-6 text-center">
+        <div className="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-accent-dim">
+          <svg
+            className="h-5 w-5 text-accent"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1.5}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M16.5 10.5V6.75A4.5 4.5 0 007.5 6.75v3.75m-.75 0h10.5a.75.75 0 01.75.75v7.5a.75.75 0 01-.75.75H7.125a.75.75 0 01-.75-.75v-7.5a.75.75 0 01.75-.75z"
+            />
+          </svg>
+        </div>
+        <p className="mb-1 font-semibold text-text-primary">This drill is part of Pro</p>
+        <p className="mb-4 text-sm text-text-secondary">
+          Upgrade to unlock topic drills, subtest drills, and unlimited practice.
+        </p>
+        <Link
+          href="/upgrade?from=mini_drill"
+          className="inline-block rounded-xl bg-accent px-5 py-2.5 text-sm font-bold text-white no-underline transition-all hover:bg-accent-hover hover:shadow-[0_0_20px_var(--color-accent-glow)]"
+        >
+          Upgrade to Pro
+        </Link>
+      </div>
+    );
+  }
 
   if (loading) {
     return (

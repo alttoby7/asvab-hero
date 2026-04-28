@@ -20,6 +20,7 @@ import {
   loadProfile,
   generateClientAttemptId,
 } from "@/lib/practice/profile-sync";
+import { markAnonDiagnosticUsed } from "@/lib/practice/gate";
 import {
   scoreBySubtest,
   scoreByTopic,
@@ -354,6 +355,24 @@ export default function PracticeTestEngine({
           setSavedProfile(fallback);
         } catch {
           setSavedProfile([]);
+        }
+      }
+
+      // Mark diagnostic used after submit so the gate fires on next attempt.
+      if (variantCode === "diagnostic") {
+        if (userId) {
+          try {
+            const sb = getSupabaseBrowserClient();
+            await sb
+              .from("profiles")
+              .update({ free_diagnostic_used_at: new Date().toISOString() })
+              .eq("user_id", userId)
+              .is("free_diagnostic_used_at", null); // idempotent: only writes when null
+          } catch {
+            /* non-blocking */
+          }
+        } else {
+          markAnonDiagnosticUsed();
         }
       }
     })();
