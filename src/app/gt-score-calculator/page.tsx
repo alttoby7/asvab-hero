@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import GTScoreCalculator from "@/components/GTScoreCalculator";
 
 export const metadata: Metadata = {
   title: "GT Score Calculator: Calculate Your ASVAB GT Score | ASVAB Hero",
@@ -97,9 +99,16 @@ export default function GTScoreCalculatorPage() {
           Use the interactive calculator below to get your GT score in seconds.
         </p>
 
-        {/* TODO: Insert <GTScoreCalculator /> here */}
         <div className="my-6 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          {/* GTScoreCalculator component placeholder */}
+          <Suspense
+            fallback={
+              <div className="p-6 text-text-secondary">
+                Loading calculator...
+              </div>
+            }
+          >
+            <GTScoreCalculator />
+          </Suspense>
         </div>
 
         <p className="text-text-secondary">
