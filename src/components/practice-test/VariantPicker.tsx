@@ -87,7 +87,7 @@ export default function VariantPicker() {
               estimated AFQT, and your top-3 weak topics.
               {diagnosticLocked && !loading && (
                 <span className="mt-1 block text-yellow-400/80">
-                  You've used your free diagnostic. Upgrade to run more.
+                  You&apos;ve used your free diagnostic. Upgrade to run more.
                 </span>
               )}
             </p>
