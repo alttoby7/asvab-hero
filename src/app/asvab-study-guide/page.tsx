@@ -6,6 +6,7 @@ import CareerGoalSetter from "@/components/study-guide/CareerGoalSetter";
 import SubtestExplorer from "@/components/study-guide/SubtestExplorer";
 import StudyPlanGenerator from "@/components/study-guide/StudyPlanGenerator";
 import StudyChecklist from "@/components/study-guide/StudyChecklist";
+import TopicsIndex from "@/components/study-guide/TopicsIndex";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 
 export const metadata: Metadata = {
@@ -675,6 +676,9 @@ export default function ASVABStudyGuidePage() {
           The appearance of U.S. Department of Defense (DoD) visual information does
           not imply or constitute DoD endorsement.
         </p>
+
+        {/* Topic Study Pages */}
+        <TopicsIndex />
 
         {/* CTA */}
         <section className="rounded-2xl border border-accent/30 bg-accent-dim p-6 text-center sm:p-8">
