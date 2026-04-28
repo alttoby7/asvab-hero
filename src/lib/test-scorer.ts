@@ -4,9 +4,45 @@ import type {
   SubtestResult,
   AsvabSubtest,
   SubtestScores,
+  TopicResult,
 } from "@/types";
 import { ALL_SUBTESTS } from "@/types";
 import { calculateAFQT, getAFQTCategory } from "./score-calculator";
+
+/**
+ * Per-topic scoring. Mirrors `scoreBySubtest` but groups by `topic_id`,
+ * which is read from the question's `topicId` field if present (set by the
+ * sampler when fetching from Supabase). Falls back to subtest as topic_id
+ * for legacy local questions that haven't been tagged.
+ */
+export function scoreByTopic(
+  questions: PracticeQuestion[],
+  answers: UserAnswer[]
+): TopicResult[] {
+  const answerMap = new Map(answers.map((a) => [a.questionId, a.selectedIndex]));
+  const grouped = new Map<
+    string,
+    { topic_id: string; subtest: AsvabSubtest; seen: number; correct: number }
+  >();
+
+  for (const q of questions) {
+    const topicId = q.topicId ?? q.subtest; // graceful fallback for untagged
+    const entry =
+      grouped.get(topicId) ??
+      { topic_id: topicId, subtest: q.subtest, seen: 0, correct: 0 };
+    entry.seen += 1;
+    if (answerMap.get(q.id) === q.correctIndex) entry.correct += 1;
+    grouped.set(topicId, entry);
+  }
+
+  return Array.from(grouped.values()).map((g) => ({
+    topic_id: g.topic_id,
+    subtest: g.subtest,
+    seen: g.seen,
+    correct: g.correct,
+    percentage: g.seen > 0 ? Math.round((g.correct / g.seen) * 100) : 0,
+  }));
+}
 
 export function scoreBySubtest(
   questions: PracticeQuestion[],
