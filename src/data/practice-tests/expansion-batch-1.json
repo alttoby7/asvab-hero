@@ -30,21 +30,6 @@
     "explanation": "Torpid means sluggish or mentally/physically inactive. The context clue 'sleepless days' and 'could barely lift their rifles' points directly to extreme sluggishness, not anger or alertness."
   },
   {
-    "external_key": "WK-CTX-3",
-    "subtest": "WK",
-    "topic_id": "wk.context-clues",
-    "difficulty": 3,
-    "stem": "In the sentence 'The mechanic's METICULOUS inspection found three hairline cracks that a quick look would have missed,' the word METICULOUS most nearly means:",
-    "choices": [
-      "rushed",
-      "extremely careful",
-      "expensive",
-      "routine"
-    ],
-    "correct_index": 1,
-    "explanation": "Meticulous means paying very careful attention to detail. The clue that the inspection found defects 'a quick look would have missed' confirms thoroughness, not speed or routine procedure."
-  },
-  {
     "external_key": "WK-CTX-4",
     "subtest": "WK",
     "topic_id": "wk.context-clues",
@@ -88,21 +73,6 @@
     ],
     "correct_index": 1,
     "explanation": "Sardonic means grimly mocking or cynically humorous. The clue 'found the question absurd' while still being outwardly polite is characteristic of sardonic expression. Warm or enthusiastic contradicts the implied disdain."
-  },
-  {
-    "external_key": "WK-CTX-7",
-    "subtest": "WK",
-    "topic_id": "wk.context-clues",
-    "difficulty": 3,
-    "stem": "In the sentence 'Because the new regulation was so AMBIGUOUS, different base commanders interpreted it in completely different ways,' the word AMBIGUOUS most nearly means:",
-    "choices": [
-      "strict",
-      "open to more than one interpretation",
-      "widely publicized",
-      "recently updated"
-    ],
-    "correct_index": 1,
-    "explanation": "Ambiguous means open to multiple interpretations. The evidence is that commanders read it differently — something strict or widely publicized would produce uniform results, not varied ones."
   },
   {
     "external_key": "WK-CTX-8",

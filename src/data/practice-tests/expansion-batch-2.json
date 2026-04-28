@@ -840,51 +840,6 @@
     "explanation": "Inscrutable means impossible to understand or interpret; mysterious. The root 'scrutin-' means to examine — inscrutable means it cannot be read through."
   },
   {
-    "external_key": "WK-SN-7",
-    "subtest": "WK",
-    "topic_id": "wk.synonyms",
-    "difficulty": 4,
-    "stem": "OBSEQUIOUS most nearly means:",
-    "choices": [
-      "Stubborn",
-      "Fawning",
-      "Rebellious",
-      "Indifferent"
-    ],
-    "correct_index": 1,
-    "explanation": "Obsequious means excessively eager to serve or please; sycophantic. Recruits often confuse it with obstinate (stubborn) because of the similar opening sounds."
-  },
-  {
-    "external_key": "WK-SN-8",
-    "subtest": "WK",
-    "topic_id": "wk.synonyms",
-    "difficulty": 4,
-    "stem": "MAGNANIMOUS most nearly means:",
-    "choices": [
-      "Generous",
-      "Arrogant",
-      "Petty",
-      "Powerful"
-    ],
-    "correct_index": 0,
-    "explanation": "Magnanimous means nobly generous or forgiving, especially toward an enemy. From Latin magna (great) + animus (spirit). Do not confuse with magnificent."
-  },
-  {
-    "external_key": "WK-SN-9",
-    "subtest": "WK",
-    "topic_id": "wk.synonyms",
-    "difficulty": 5,
-    "stem": "PERFUNCTORY most nearly means:",
-    "choices": [
-      "Thorough",
-      "Cursory",
-      "Enthusiastic",
-      "Secretive"
-    ],
-    "correct_index": 1,
-    "explanation": "Perfunctory means done with minimum effort, as a routine duty; going through the motions. Recruits often guess 'secretive' because of the per- prefix."
-  },
-  {
     "external_key": "WK-SN-10",
     "subtest": "WK",
     "topic_id": "wk.synonyms",

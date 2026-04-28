@@ -1,0 +1,1457 @@
+[
+  {
+    "external_key": "AO-PA-B7-1",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 1,
+    "stem": "Three pieces are given: Piece A is a large right triangle with a right angle at the bottom-left corner. Piece B is a small right triangle with the right angle at the top-right corner. Piece C is a rectangle. When pieces A, B, and C are assembled together, which figure results?",
+    "choices": [
+      "A large rectangle whose width equals the base of piece A",
+      "A square with side length equal to the height of piece A",
+      "A large right triangle with no interior gaps",
+      "An L-shaped piece with a notch on one side"
+    ],
+    "correct_index": 0,
+    "explanation": "Piece B's hypotenuse mirrors piece A's hypotenuse; placing B against A fills the triangular gap along that edge. The rectangle C bridges the remaining strip, completing a large rectangle."
+  },
+  {
+    "external_key": "AO-PA-B7-2",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 1,
+    "stem": "Two pieces are shown: Piece A is a medium square with a dot in its center. Piece B is an identical medium square with no markings. When placed side by side along their right and left edges respectively, what shape results?",
+    "choices": [
+      "A large square",
+      "A tall thin rectangle",
+      "A wide rectangle with the dot on the left half",
+      "A wide rectangle with the dot on the right half"
+    ],
+    "correct_index": 2,
+    "explanation": "The two squares placed side by side form a wide rectangle (2:1 ratio). Piece A (with the dot) is on the left, so the dot appears in the left half of the assembled figure."
+  },
+  {
+    "external_key": "AO-PA-B7-3",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 1,
+    "stem": "Four small right triangles, each identical and each with a right angle at the bottom-left, are shown. When all four are assembled by rotating pairs to face each other and joining along their hypotenuses, what shape do they form?",
+    "choices": [
+      "A large right triangle",
+      "A rectangle",
+      "A parallelogram",
+      "An irregular pentagon"
+    ],
+    "correct_index": 1,
+    "explanation": "Pairing two triangles along each hypotenuse creates two rectangles; those two rectangles can then be placed side by side to form one larger rectangle. All four identical right triangles together always tile a rectangle."
+  },
+  {
+    "external_key": "AO-PA-B7-4",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 2,
+    "stem": "Three pieces are given: Piece A is a large equilateral triangle marked with an arrow pointing up. Piece B is an identical equilateral triangle with no marking. Piece C is a small equilateral triangle. Pieces A and B are joined along one edge with B flipped (pointing down). Where should piece C be placed to complete a larger equilateral triangle?",
+    "choices": [
+      "Along the left edge of piece A",
+      "In the gap at the upper-right where the two piece edges don't meet",
+      "In the corner gap at the bottom where the combined A-B shape has an open notch",
+      "On top of piece A to extend it upward"
+    ],
+    "correct_index": 2,
+    "explanation": "Two equilateral triangles joined base-to-base (one pointing up, one pointing down) form a rhombus. A small equilateral triangle fills the bottom-corner notch to complete a larger equilateral triangle."
+  },
+  {
+    "external_key": "AO-PA-B7-5",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 2,
+    "stem": "Four pieces are shown: Piece A is a large square. Piece B is a right triangle whose legs are each half the side length of piece A. Piece C is an identical triangle to B. Piece D is an identical triangle to B. When B, C, and D are assembled and attached to piece A, which shape results?",
+    "choices": [
+      "A larger square",
+      "A regular hexagon",
+      "A square with one corner cut off",
+      "A pentagon with one right angle"
+    ],
+    "correct_index": 3,
+    "explanation": "Each triangle fills one corner of the large square when pressed against it. Three triangles cover three corners; the fourth corner remains. The result is a pentagon with the uncovered corner forming the one remaining right angle."
+  },
+  {
+    "external_key": "AO-PA-B7-6",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 2,
+    "stem": "Two pieces are given: Piece A is an L-shaped piece (a 3×2 rectangle with a 1×1 square removed from one corner). Piece B is a small 1×1 square. When piece B is placed in the missing corner of piece A, what shape results?",
+    "choices": [
+      "A 3×2 rectangle",
+      "A 2×3 rectangle (same thing, different orientation)",
+      "A T-shape",
+      "A 4×1 strip"
+    ],
+    "correct_index": 0,
+    "explanation": "Piece A is a 3×2 rectangle minus a 1×1 corner square. Filling the missing corner with piece B restores the complete 3×2 rectangle."
+  },
+  {
+    "external_key": "AO-PA-B7-7",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 2,
+    "stem": "Three pieces are given: Piece A is a medium isosceles right triangle with the right angle at top. Piece B is an identical triangle. Piece C is a small square whose side equals the leg length of pieces A and B. When A and B are placed with their hypotenuses together, then C is attached to one open side, which figure results?",
+    "choices": [
+      "A larger isosceles right triangle",
+      "A square",
+      "A rectangle that is twice as wide as it is tall",
+      "A rectangle with a triangular bump on one end"
+    ],
+    "correct_index": 2,
+    "explanation": "Two identical isosceles right triangles joined at their hypotenuses form a square. Attaching the small square C (side = leg length) to one open side of that square extends it into a rectangle that is twice as wide as it is tall. The resulting shape is a rectangle with a 2:1 width-to-height ratio."
+  },
+  {
+    "external_key": "AO-PA-B7-8",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 3,
+    "stem": "Five pieces are labeled A–E. Piece A is a large square. Pieces B and C are identical right triangles each with legs equal to half the side of A. Piece D is a small square with side equal to one-quarter the side of A. Piece E is a thin rectangle. When all five pieces are assembled without gaps or overlaps, which overall shape results?",
+    "choices": [
+      "A large right triangle",
+      "A large square larger than piece A",
+      "A large rectangle that is twice as long as it is wide",
+      "A T-shape"
+    ],
+    "correct_index": 1,
+    "explanation": "Piece A forms the core. Triangles B and C fill two corners, piece D fills a quarter-corner gap, and rectangle E fills the remaining strip. Combined, they tile a large square whose side is 1.5 times piece A's side."
+  },
+  {
+    "external_key": "AO-PA-B7-9",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 3,
+    "stem": "Piece A is a large right triangle with the right angle at the lower-left, the vertical leg on the left, and the horizontal leg on the bottom. Piece B is a smaller right triangle that is congruent to the upper-left half of piece A when it is cut along its median. Piece C is the remaining lower-right portion of that median cut. When B and C are reassembled, which shape do they form?",
+    "choices": [
+      "A square",
+      "A shape identical to piece A",
+      "A rectangle",
+      "A parallelogram"
+    ],
+    "correct_index": 1,
+    "explanation": "Pieces B and C are simply the two halves of piece A cut along its median to the hypotenuse. Reassembling B and C recreates piece A identically."
+  },
+  {
+    "external_key": "AO-PA-B7-10",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 3,
+    "stem": "Four pieces: Piece A is a large square with a diagonal line drawn from the top-left to the bottom-right corner. Pieces B, C, D are right triangles of equal size. When B, C, and D are placed against piece A so that each triangle's hypotenuse aligns with an outer edge of A, which overall assembled figure results?",
+    "choices": [
+      "A regular octagon",
+      "A larger square rotated 45°",
+      "A plus sign (cross shape)",
+      "A star shape"
+    ],
+    "correct_index": 1,
+    "explanation": "Adding right triangles to three sides of a square by aligning their hypotenuses to the square's edges extends each side outward. Three such triangles together with the square form a larger square rotated 45° relative to the original."
+  },
+  {
+    "external_key": "AO-PA-B7-11",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 3,
+    "stem": "Three pieces: Piece A is a large rectangle (3 units wide, 2 units tall). Piece B is a right triangle with legs 2 units and 1 unit. Piece C is a right triangle identical to B. B and C are mirror images of each other. When B is placed against the right side of A (hypotenuse facing A's right edge), and C is placed against the left side (mirrored), which shape results?",
+    "choices": [
+      "A regular hexagon",
+      "A parallelogram",
+      "A hexagon with two right angles",
+      "A parallelogram with clipped corners"
+    ],
+    "correct_index": 1,
+    "explanation": "Placing opposite-facing right triangles on each short end of a rectangle extends both ends diagonally in the same slant direction, converting the rectangle into a parallelogram."
+  },
+  {
+    "external_key": "AO-PA-B7-12",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 4,
+    "stem": "Six pieces labeled A–F. Piece A is a medium square. Piece B is a medium square of identical size. Piece C is a right triangle with legs equal to the side of A. Piece D is an identical triangle to C. Piece E is a small rectangle 1×2 units. Piece F is a 1×1 square. All pieces assembled without gaps or overlap: which overall shape is formed?",
+    "choices": [
+      "A square whose side equals twice the side of piece A",
+      "A rectangle twice as long as it is wide",
+      "An irregular pentagon",
+      "A large right triangle"
+    ],
+    "correct_index": 0,
+    "explanation": "Pieces A and B form a 1×2 rectangle. Triangles C and D complete a square at each end (each triangle fills a corner gap). Piece E and piece F fill the remaining central strip. Total area = side² × 4, forming a square with side = 2× piece A."
+  },
+  {
+    "external_key": "AO-PA-B7-13",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 4,
+    "stem": "Piece A is a large isosceles trapezoid with a long base of 4 units, a short top of 2 units, and height 2 units. Piece B is a right triangle with legs 2 units each. Piece C is an identical right triangle to B. When B is placed against trapezoid A's left slanted edge and C is placed against the right slanted edge, what overall shape is formed?",
+    "choices": [
+      "A large rectangle 4 units wide and 2 units tall",
+      "A large square 4 units on each side",
+      "A regular hexagon",
+      "A parallelogram"
+    ],
+    "correct_index": 0,
+    "explanation": "Each right triangle fills the gap between the trapezoid's slanted leg and a vertical line. With both gaps filled, the combined shape is a rectangle 4 units wide (matching the long base) and 2 units tall."
+  },
+  {
+    "external_key": "AO-PA-B7-14",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 4,
+    "stem": "Piece A is a large square. A smaller square piece B (half the side of A) is cut from the center-right of A, leaving an L-shape. Piece C is that same smaller square. Piece D is a right triangle with legs equal to half the side of A. When pieces A (L-shape), C, and D are assembled in a flat arrangement without overlap, what results?",
+    "choices": [
+      "A shape identical to the original large square A",
+      "A right triangle larger than piece D",
+      "A rectangle that is 1.5 times as long as it is wide",
+      "A pentagon"
+    ],
+    "correct_index": 2,
+    "explanation": "Re-assembling the L-shape with square C restores the original square. Adding triangle D along one edge extends it into a 1.5:1 rectangle (area of square + area of triangle produces this ratio)."
+  },
+  {
+    "external_key": "AO-PA-B7-15",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 3,
+    "stem": "Pieces A, B, C, D are four congruent parallelograms, each with a horizontal top edge and slanted sides leaning to the right. When the four pieces are arranged in a 2×2 grid with alternating orientations (every other piece flipped upside down), what overall shape is formed?",
+    "choices": [
+      "A large parallelogram",
+      "A large rectangle",
+      "A rhombus",
+      "An irregular hexagon"
+    ],
+    "correct_index": 1,
+    "explanation": "Alternating orientation (normal and flipped) of parallelograms in a grid causes the slanted edges to cancel out, producing straight left and right edges. The combined shape is a rectangle."
+  },
+  {
+    "external_key": "AO-PA-B7-16",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 5,
+    "stem": "Seven pieces: Piece A is a regular hexagon with a dot at its center. Pieces B through G are six equilateral triangles, each with one side equal to the side length of hexagon A. When all six triangles (B–G) are placed against each outer edge of hexagon A, what shape results?",
+    "choices": [
+      "A larger regular hexagon",
+      "A 12-pointed star",
+      "A regular 12-sided polygon (dodecagon)",
+      "A six-pointed Star of David shape"
+    ],
+    "correct_index": 0,
+    "explanation": "Placing an equilateral triangle against each of the six edges of a regular hexagon fills in six triangular gaps. The outer vertices of those triangles form the six vertices of a larger regular hexagon, exactly doubling the side length."
+  },
+  {
+    "external_key": "AO-PA-B7-17",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 5,
+    "stem": "Four pieces: Piece A is a large right triangle (legs 3 and 4 units). Piece B is a right triangle with legs 3 and 4 units (identical to A). Piece C is a 3×4 rectangle. Piece D is a right triangle with legs 3 and 4. When A and B are joined at their hypotenuses and C is placed along the 3-unit side, then D fills the remaining gap, what shape is formed?",
+    "choices": [
+      "A square with side 5 units",
+      "A rectangle 4 units wide and 6 units tall",
+      "A rectangle 3 units wide and 8 units tall",
+      "A 3×4 rectangle"
+    ],
+    "correct_index": 1,
+    "explanation": "A and B joined at hypotenuses form a 3×4 rectangle. Adding C (another 3×4 rectangle) doubles it to a 4×6 or 3×8 strip — with C on the 4-unit side the result is 4 units wide and 6 units tall. Triangle D fills the diagonal gap producing a clean 4×6 rectangle."
+  },
+  {
+    "external_key": "AO-PA-B7-18",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 5,
+    "stem": "Pieces A–D are four identical right trapezoids, each with a long parallel side of 4 units, a short parallel side of 2 units, and height 2 units. The slanted leg rises from the right end of the long base. When the four trapezoids are arranged so that each slanted leg fits flush against the next piece's slanted leg (alternating flip), what overall shape results?",
+    "choices": [
+      "A large square",
+      "A large regular octagon",
+      "A large rectangle 8 units wide and 4 units tall",
+      "A large parallelogram"
+    ],
+    "correct_index": 2,
+    "explanation": "Each pair of mirrored trapezoids (normal + flipped) forms a rectangle 6 units wide and 2 units tall. Two such pairs stacked vertically give a rectangle 6×4 — but joining all four end-to-end yields 8 units wide × 2 units tall when laid flat. Accounting for all edges correctly: four trapezoids in alternating-flip row produce an 8×2 rectangle; two rows give 8×4."
+  },
+  {
+    "external_key": "AO-PA-B7-19",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 4,
+    "stem": "Three pieces: Piece A is a medium square (side = 2 units) with a diagonal arrow pointing from the bottom-left to the top-right corner. Piece B is a right triangle with legs 2 and 2 units (the lower-left half of a same-sized square). Piece C is a right triangle with legs 2 and 2 units (the upper-right half). When A, B, and C are assembled flat without overlap, what shape results?",
+    "choices": [
+      "A 2×4 rectangle",
+      "A large right triangle with legs 4 units each",
+      "A large square with side 2√2",
+      "A 2×2 square with two triangular ears on the sides"
+    ],
+    "correct_index": 1,
+    "explanation": "Piece A (2×2 square) combined with triangle B (lower-left 2×2 half) and triangle C (upper-right 2×2 half) totals 2 complete 2×2 squares in area. Arranged in an L: the square and two triangles tile a large right triangle with both legs measuring 4 units."
+  },
+  {
+    "external_key": "AO-PA-B7-20",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 5,
+    "stem": "Five pieces are shown. Piece A is a large equilateral triangle (side 4 units). Pieces B, C, D are small equilateral triangles (side 2 units). Piece E is a rhombus made from two small equilateral triangles joined at one edge. When A, B, C, D, and E are assembled, which shape results?",
+    "choices": [
+      "A regular hexagon with side 2 units",
+      "A larger equilateral triangle with side 6 units",
+      "A trapezoid",
+      "A regular hexagon with side 4 units"
+    ],
+    "correct_index": 1,
+    "explanation": "The large triangle (area 4 small-triangle units²) plus three small triangles plus rhombus E (2 small-triangle units²) equals 9 small equilateral triangle areas — exactly a side-6 equilateral triangle. They tile it without gaps."
+  },
+  {
+    "external_key": "AO-3D-B7-1",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A rectangular prism (box) is sitting with its longest dimension running left to right. If you rotate it 90° by tipping it backward (the top face tilts away from you, rotating around the back-bottom edge), which face is now on top?",
+    "choices": [
+      "The original top face",
+      "The original bottom face",
+      "The original back face",
+      "The original front face"
+    ],
+    "correct_index": 3,
+    "explanation": "Tipping backward around the back-bottom edge causes the front face to swing up and become the new top. The original top rotates away to become the new front (facing away)."
+  },
+  {
+    "external_key": "AO-3D-B7-2",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A cube has colored stickers: top = orange, bottom = purple, front = red, back = blue, left = green, right = white. The cube is picked up and turned upside-down (rotated 180° around a horizontal front-to-back axis). What color is now on top?",
+    "choices": [
+      "Orange",
+      "Purple",
+      "Red",
+      "Blue"
+    ],
+    "correct_index": 1,
+    "explanation": "A 180° flip around the front-to-back axis swaps top and bottom, and swaps left and right, but leaves front and back unchanged. The original bottom (purple) is now on top."
+  },
+  {
+    "external_key": "AO-3D-B7-3",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "You are looking directly at the front face of a rectangular prism. It is then rotated 90° to the left around its vertical axis (the left side swings toward you). Which face is now facing you?",
+    "choices": [
+      "The original front face",
+      "The original right face",
+      "The original back face",
+      "The original left face"
+    ],
+    "correct_index": 1,
+    "explanation": "Rotating left around the vertical axis brings the right face around to the front. The original front moves to become the new left side."
+  },
+  {
+    "external_key": "AO-3D-B7-4",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A cube: top = silver, bottom = gold, front = red, back = blue, left = green, right = yellow. Rotate the cube 90° to the right around the vertical axis (the right face swings to the front). Then rotate 90° forward — tilting the new top toward you, pivoting around the new front-bottom edge. What color is now on top after both rotations?",
+    "choices": [
+      "Yellow",
+      "Silver",
+      "Red",
+      "Blue"
+    ],
+    "correct_index": 0,
+    "explanation": "After rotation 1 (90° right around vertical axis): the right face (yellow) moves to front, the front (red) moves to left, the left (green) moves to back, the back (blue) moves to right; top stays silver. After rotation 2 (90° forward, pivoting around the front-bottom edge): the new front face (yellow) swings up to become the new top. Final top = yellow (index 0)."
+  },
+  {
+    "external_key": "AO-3D-B7-5",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A rectangular prism is 2 units wide, 3 units tall, and 4 units deep. You view it from directly in front. If you then view it from directly above (bird's-eye view), what shape do you see?",
+    "choices": [
+      "A 2×3 rectangle",
+      "A 2×4 rectangle",
+      "A 3×4 rectangle",
+      "A 4×4 square"
+    ],
+    "correct_index": 1,
+    "explanation": "The top view shows width × depth = 2×4. The front view (2×3) and side view (4×3) each involve height. Only the top view gives 2×4."
+  },
+  {
+    "external_key": "AO-3D-B7-6",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 3,
+    "stem": "A cube has colored faces: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. Rotate 90° to the left around its vertical axis, then rotate 90° backward (top tilts away from you, pivoting around the back-bottom edge). What color is now facing you (front) after both rotations?",
+    "choices": [
+      "Blue",
+      "White",
+      "Black",
+      "Yellow"
+    ],
+    "correct_index": 1,
+    "explanation": "Rotation 1 (90° left, vertical): left (blue) → back, back (green) → right, right (yellow) → front, front (red) → left. Top = white, bottom = black. Rotation 2 (90° backward, around back-bottom edge): new top = original back = green; new front = original top = white; new bottom = original front = yellow; new back = original bottom = black. Front face = white."
+  },
+  {
+    "external_key": "AO-3D-B7-7",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 3,
+    "stem": "A solid triangular prism rests with one rectangular face flat on a table. You view it from the front and see a rectangle. What shape do you see when you view it from the left end?",
+    "choices": [
+      "A rectangle",
+      "A triangle",
+      "A square",
+      "A trapezoid"
+    ],
+    "correct_index": 1,
+    "explanation": "A triangular prism has triangular cross-sections on its two ends. Viewing it from the left end reveals the triangular face."
+  },
+  {
+    "external_key": "AO-3D-B7-8",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 4,
+    "stem": "A cube is placed with face 1 on top. It is then rotated 90° forward twice in a row (each time the top tilts toward you, pivoting around the front-bottom edge). After both rotations, which original face is now on top?",
+    "choices": [
+      "The original top face (face 1)",
+      "The original front face",
+      "The original bottom face (face opposite face 1)",
+      "The original back face"
+    ],
+    "correct_index": 2,
+    "explanation": "Each 90° forward rotation advances the cycle: top → front → bottom → back → top. After 1 rotation: original front is on top. After 2 rotations: original bottom is on top."
+  },
+  {
+    "external_key": "AO-3D-B7-9",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 4,
+    "stem": "A cube has faces numbered 1 (top), 2 (bottom), 3 (front), 4 (back), 5 (left), 6 (right). It is rotated 90° to the right (around vertical axis), then 90° to the right again, then 90° forward (around front-bottom edge). What number is on top?",
+    "choices": [
+      "1",
+      "3",
+      "4",
+      "2"
+    ],
+    "correct_index": 1,
+    "explanation": "Starting state: top=1, bottom=2, front=3, back=4, left=5, right=6. Right rotation 1 (vertical axis): right→front, old front→left, old left→back, old back→right; top and bottom unchanged. After rot1: front=6, left=3, back=5, right=4; top=1, bottom=2. Right rotation 2: front=4, left=6, back=3, right=5; top=1, bottom=2. Forward rotation 3 (top toward you, front-bottom pivot): top→front, front→bottom, bottom→back, back→top. New top = old back = 3. Answer = 3, choice b, index 1."
+  },
+  {
+    "external_key": "AO-3D-B7-10",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 4,
+    "stem": "A rectangular prism has dimensions 1×2×4 (height × width × depth). If you slice it with a horizontal plane halfway up its height, what shape is the cross-section?",
+    "choices": [
+      "A 1×2 rectangle",
+      "A 2×4 rectangle",
+      "A 1×4 rectangle",
+      "A square"
+    ],
+    "correct_index": 1,
+    "explanation": "A horizontal cut through a rectangular prism reveals a rectangle whose dimensions are width × depth = 2×4, regardless of where vertically the cut is made."
+  },
+  {
+    "external_key": "AO-3D-B7-11",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 3,
+    "stem": "A cube: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. Rotate 90° to the right (vertical axis). What color is now on the left side?",
+    "choices": [
+      "Blue",
+      "Red",
+      "Green",
+      "Yellow"
+    ],
+    "correct_index": 1,
+    "explanation": "Right rotation (vertical axis): right→front, front→left, left→back, back→right. Original front (red) moves to the left position. Answer: Red."
+  },
+  {
+    "external_key": "AO-3D-B7-12",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 5,
+    "stem": "A regular tetrahedron (4 identical equilateral-triangle faces) rests on one face. You rotate it 120° around the vertical axis passing through the top vertex. How many faces look identical in position to where they started?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "correct_index": 1,
+    "explanation": "The top vertex stays fixed during a vertical-axis rotation. The face on the bottom (the base) stays in the same horizontal plane. 120° is exactly one-third of a full rotation, which is a symmetry of the triangular base — the base face maps to itself. The three side faces cycle among themselves. So exactly 1 face (the bottom) is in the same position."
+  },
+  {
+    "external_key": "AO-3D-B7-13",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 5,
+    "stem": "A cube is sliced by a plane that passes through the midpoints of four parallel edges — specifically the four edges running left-to-right on the front and back faces (two on the front face, two on the back). What is the shape of the cross-section?",
+    "choices": [
+      "A square",
+      "A rectangle that is not a square",
+      "A rhombus",
+      "A trapezoid"
+    ],
+    "correct_index": 0,
+    "explanation": "Cutting through the midpoints of four parallel edges of a cube with a plane parallel to two faces produces a square cross-section, since all four edge midpoints are equidistant and form a square in the plane of the cut."
+  },
+  {
+    "external_key": "AO-3D-B7-14",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 5,
+    "stem": "A solid cylinder is cut by a plane that passes through the cylinder at an angle of 45° to the cylinder's base (the plane intersects both the top and bottom circles). What shape is the cross-section?",
+    "choices": [
+      "A circle",
+      "A rectangle",
+      "An ellipse",
+      "A parabola"
+    ],
+    "correct_index": 2,
+    "explanation": "Any plane that cuts a circular cylinder at an angle other than perpendicular (but not parallel to the axis) produces an elliptical cross-section. A perpendicular cut gives a circle; a cut parallel to the axis gives a rectangle."
+  },
+  {
+    "external_key": "AO-3D-B7-15",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 4,
+    "stem": "A cube: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. Rotate the cube 90° backward (top tilts away, pivoting around the back-bottom edge), then 90° to the left (around vertical axis). What color is on the bottom after both rotations?",
+    "choices": [
+      "Red",
+      "White",
+      "Green",
+      "Black"
+    ],
+    "correct_index": 0,
+    "explanation": "Rotation 1 (90° backward): new top=green(old back), new front=white(old top), new bottom=red(old front), new back=black(old bottom); left/right unchanged (blue/yellow). Rotation 2 (90° left, vertical): top and bottom unchanged. Bottom stays red."
+  },
+  {
+    "external_key": "AO-3D-B7-16",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 3,
+    "stem": "A cube: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. Rotate 90° forward (top toward you, front-bottom pivot). What color is now on the back face?",
+    "choices": [
+      "White",
+      "Green",
+      "Red",
+      "Black"
+    ],
+    "correct_index": 0,
+    "explanation": "90° forward (front-bottom pivot): top→front, front→bottom, bottom→back, back→top. Original top (white) moves to the back position."
+  },
+  {
+    "external_key": "AO-PF-B7-2",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A net consists of six squares arranged as follows: a row of four squares (labeled 1–4, left to right), square 5 attached to the top edge of square 2, and square 6 attached to the bottom edge of square 3. When this net is folded, what 3D object is formed?",
+    "choices": [
+      "An open-top box",
+      "A cube",
+      "A rectangular prism that is not a cube",
+      "A triangular prism"
+    ],
+    "correct_index": 1,
+    "explanation": "Verify fold: Square 2 is the base. Square 1 folds up to become the left face. Square 3 folds up to become the right face. Square 4 folds up to become the far face (opposite square 1 would be... let me trace: 1-2-3-4 is the spine. Fold 1 up→left wall. Fold 3 up→right wall. Fold 4 up→back wall. Square 5 (top of 2) folds up→front wall. Square 6 (bottom of 3): when square 3 is already the right wall, square 6 is on its lower edge which becomes the top. So: base=2, walls=1(left),3(right→folds to right wall), 4(back), 5(front), 6(top). All six squares, all same size → cube."
+  },
+  {
+    "external_key": "AO-PF-B7-3",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A flat net has the shape of a cross: one square in the center, one square above, one below, one to the left, one to the right, and one more square attached to the right edge of the rightmost square (6 squares total, forming a plus sign with an extra square on one arm). When folded, which face is opposite the center square?",
+    "choices": [
+      "The extra square on the extended arm",
+      "The square directly above the center",
+      "The square directly below the center",
+      "The square to the left of the center"
+    ],
+    "correct_index": 0,
+    "explanation": "Label: center=C, top=T, bottom=B, left=L, right=R, extra=E (right of R). Fold: C is the base. T, B, L, R fold up to become four side walls. E, which is two squares away from center in the right direction, folds over to become the top (opposite C). T and B are adjacent to C, so they fold to be front/back walls — not opposite C."
+  },
+  {
+    "external_key": "AO-PF-B7-4",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A net consists of a column of four squares numbered 1–4 (top to bottom). Square 5 is attached to the right edge of square 1, and square 6 is attached to the right edge of square 4. When folded into a cube, which square is opposite square 2?",
+    "choices": [
+      "Square 4",
+      "Square 5",
+      "Square 6",
+      "Square 3"
+    ],
+    "correct_index": 0,
+    "explanation": "Assign square 2 as the base. Square 1 (above 2) folds to become the back wall. Square 3 (below 2) folds to become the front wall. Square 4 (below 3): when 3 is the front wall, 4 folds over it to become the top. Square 5 (right of square 1): when 1 is the back wall, 5 folds along with it to become the right wall. Square 6 (right of square 4): when 4 is the top, 6 folds down to become the left wall. Opposite the base (square 2) is the top = square 4. Answer: square 4, choice a, index 0."
+  },
+  {
+    "external_key": "AO-PF-B7-5",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A net for a cube is laid out as follows: a row of three squares (A, B, C) from left to right. Square D is above square B. Square E is below square B. Square F is to the right of square C. When folded, which square is opposite square A?",
+    "choices": [
+      "Square C",
+      "Square F",
+      "Square D",
+      "Square E"
+    ],
+    "correct_index": 0,
+    "explanation": "Assign B as the base. A (left of B) folds up to become the left wall. C (right of B) folds up to become the right wall. F (right of C): when C is the right wall, F continues to become the top. D (above B) folds to become the front wall. E (below B) folds to become the back wall. Face assignments: bottom=B, top=F, left=A, right=C, front=D, back=E. Opposite A (left) = C (right) = choice a, index 0."
+  },
+  {
+    "external_key": "AO-PF-B7-6",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 3,
+    "stem": "A net consists of a column of four squares (1 at top, 2, 3, 4 at bottom). Square 5 is attached to the left edge of square 2. Square 6 is attached to the right edge of square 3. When folded into a cube, which two squares are opposite each other?",
+    "choices": [
+      "Square 1 and square 4",
+      "Square 2 and square 4",
+      "Square 5 and square 6",
+      "Square 1 and square 3"
+    ],
+    "correct_index": 2,
+    "explanation": "Fold step by step with square 2 as base. Square 1 (above 2) folds up → back wall. Square 3 (below 2) folds up → front wall. Square 4 (below 3) continues: it folds over the front wall to become the top (opposite base=2). Square 5 (left of 2): folds up → left wall. Square 6 (right of 3): when square 3 becomes the front wall, square 6 (on its right edge) folds to become the right wall. Opposites: bottom(2) ↔ top(4); back(1) ↔ front(3); left(5) ↔ right(6). Therefore squares 5 and 6 are opposite."
+  },
+  {
+    "external_key": "AO-PF-B7-7",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 3,
+    "stem": "A net consists of a row of four squares (W, X, Y, Z from left to right). Square V is attached to the top edge of square X, and square U is attached to the bottom edge of square Y. When folded into a cube, which square is opposite square Z?",
+    "choices": [
+      "Square W",
+      "Square V",
+      "Square U",
+      "Square X"
+    ],
+    "correct_index": 3,
+    "explanation": "Assign X as the base. W (left of X) folds up to become the left wall. Y (right of X) folds up to become the right wall. Z (right of Y): when Y is the right wall, Z folds over to become the top. V (above X) folds to become the front wall. U (below Y): when Y is the right wall, U is on Y's bottom edge, folding to become the back wall. Face assignments: bottom=X, top=Z, left=W, right=Y, front=V, back=U. Opposite Z (top) = X (bottom) = choice d, index 3."
+  },
+  {
+    "external_key": "AO-PF-B7-8",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 3,
+    "stem": "A T-shaped net of 6 squares: a row of three squares (P, Q, R) forms the top of the T. Square S is below Q. Square T is below S. Square U is below T. When folded into a cube, which square is opposite square P?",
+    "choices": [
+      "Square R",
+      "Square T",
+      "Square U",
+      "Square S"
+    ],
+    "correct_index": 0,
+    "explanation": "Assign Q as the base. P (left of Q) folds up to become the left wall. R (right of Q) folds up to become the right wall. S (below Q) folds up to become the front wall. T (below S): when S is the front wall, T folds over it to become the top. U (below T): when T is the top, U folds to become the back wall. Face assignments: bottom=Q, top=T, left=P, right=R, front=S, back=U. Opposite P (left) = R (right) = choice a, index 0."
+  },
+  {
+    "external_key": "AO-PF-B7-9",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 4,
+    "stem": "A net of 6 squares arranged as: Row 1 has squares A and B (A left, B right). Row 2 has squares C and D (C below A, D below B). Row 3 has squares E and F (E below C, F below D). When folded into a rectangular prism (all squares are the same size, so it is a cube), which square is opposite square B?",
+    "choices": [
+      "Square A",
+      "Square C",
+      "Square E",
+      "Square F"
+    ],
+    "correct_index": 2,
+    "explanation": "This 2×3 grid net folds as follows: let D be the base. C (left of D) folds up → left wall. B (above D, in row 1) folds up → back wall. A (above C, in row 1) is attached to C; it folds to become the top. E (below C, in row 3) folds up → front wall. F (below D, in row 3) folds up → right wall. Faces: bottom=D, top=A, left=C, right=F, back=B, front=E. Opposite B (back) = E (front) = choice c (index 2)."
+  },
+  {
+    "external_key": "AO-PF-B7-10",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 4,
+    "stem": "A net consists of: a central square M, square N attached to M's top edge, square O attached to N's top edge, square P attached to M's right edge, square Q attached to M's bottom edge, and square R attached to Q's bottom edge. When folded into a cube, which square is opposite square O?",
+    "choices": [
+      "Square Q",
+      "Square M",
+      "Square R",
+      "Square N"
+    ],
+    "correct_index": 2,
+    "explanation": "Assign M as the base. N (above M) folds to become the back wall. O (above N): when N is the back wall, O folds over it to become the top. P (right of M) folds to become the right wall. Q (below M) folds to become the front wall. R (below Q): when Q is the front wall, R folds over it to become the bottom — but since M is the base, R becomes the additional face; the six faces are M(bottom), O(top), N(back), Q(front), P(right), R(left). Opposite O (top) = M (bottom)? No: each square is a distinct face. The face chain from O downward: O→N→M→Q→R. O and R are two squares apart through the spine, making them opposites. Opposite O = R = choice c, index 2."
+  },
+  {
+    "external_key": "AO-PF-B7-11",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 4,
+    "stem": "A cross-shaped net of 5 squares: square 1 in center, squares 2–5 attached to each of its four sides (top, bottom, left, right). A sixth square (6) is attached to the top edge of square 2 (which is above square 1). When folded, which square is opposite square 1 (the center)?",
+    "choices": [
+      "Square 2",
+      "Square 6",
+      "Square 3",
+      "Square 4"
+    ],
+    "correct_index": 1,
+    "explanation": "Let square 1 = base. Square 3 (bottom of 1) → front wall. Square 4 (right of 1) → right wall. Square 5 (left of 1) → left wall. Square 2 (top of 1) → back wall. Square 6 (top of 2): when 2 is the back wall, 6 is on 2's top edge — it folds over to become the top (opposite base 1). Opposite square 1 = square 6."
+  },
+  {
+    "external_key": "AO-PF-B7-12",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 4,
+    "stem": "A net of 6 squares: square A is the base of a column. Above A are squares B, C (in order from bottom to top). Square D is attached to the right edge of A. Square E is attached to the right edge of B. Square F is attached to the left edge of C. When this net is folded into a cube, which square is opposite square F?",
+    "choices": [
+      "Square D",
+      "Square A",
+      "Square E",
+      "Square B"
+    ],
+    "correct_index": 2,
+    "explanation": "Assign B as the base. A (below B) folds up to become the front wall. C (above B) folds up to become the back wall. E (right of B) folds to become the right wall. D (right of A): when A is the front wall, D is on A's right edge and folds to become the bottom. F (left of C): when C is the back wall, F is on C's left edge and folds to become the left wall. Face assignments: top=B, front=A, back=C, right=E, bottom=D, left=F. Opposite F (left) = E (right) = choice c, index 2."
+  },
+  {
+    "external_key": "AO-PF-B7-13",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 3,
+    "stem": "A square sheet is folded once by bringing the left edge to meet the right edge (a vertical fold, creating a rectangle half the original width). A hole is then punched through all layers at the center of the folded rectangle. When the sheet is unfolded, how many holes are there, and where?",
+    "choices": [
+      "One hole in the exact center of the original sheet",
+      "Two holes symmetrically placed left and right of center, each at the vertical midpoint",
+      "Four holes at the four quadrant centers",
+      "Two holes — one in the center of each half — stacked vertically"
+    ],
+    "correct_index": 1,
+    "explanation": "Folding left-to-right (vertical fold) doubles the layers side by side. Punching the center of the folded rectangle punches through both layers simultaneously. When unfolded, those two punch points are mirror images left and right of the center crease, both at the same vertical height (midpoint)."
+  },
+  {
+    "external_key": "AO-PF-B7-17",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 5,
+    "stem": "A cube net is arranged as follows: a zigzag row of four squares — square 1, then square 2 to the right of 1, then square 3 above 2, then square 4 to the right of 3. Square 5 is below square 2. Square 6 is to the right of square 4. When folded into a cube, which square is opposite square 1?",
+    "choices": [
+      "Square 3",
+      "Square 4",
+      "Square 6",
+      "Square 5"
+    ],
+    "correct_index": 1,
+    "explanation": "Assign square 2 as the base. Square 1 (left of 2) folds up to become the left wall. Square 5 (below 2) folds up to become the front wall. Square 3 (above 2) folds up to become the back wall. Square 4 (right of 3): when 3 is the back wall, square 4 is on 3's right edge and folds to become the right wall. Square 6 (right of 4): when 4 is the right wall, square 6 folds to become the top. Face assignments: bottom=2, top=6, left=1, right=4, front=5, back=3. Opposite left (1) = right (4) = choice b, index 1."
+  },
+  {
+    "external_key": "AO-SC-B7-1",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A staircase of cubes is built against a wall: the first column from the left is 1 cube tall, the second is 2 cubes tall, and the third is 3 cubes tall. Each column is 1 cube wide and 1 cube deep. How many total cubes are in the staircase?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "correct_index": 1,
+    "explanation": "Total = 1 + 2 + 3 = 6 cubes. The staircase pattern always sums to n(n+1)/2 for n steps, which equals 3(4)/2 = 6."
+  },
+  {
+    "external_key": "AO-SC-B7-2",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A rectangular arrangement of cubes is 4 cubes long, 2 cubes wide, and 1 cube tall (a single flat layer). How many cubes are in the arrangement?",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "10"
+    ],
+    "correct_index": 2,
+    "explanation": "Total = 4 × 2 × 1 = 8 cubes."
+  },
+  {
+    "external_key": "AO-SC-B7-3",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A 2×2×2 cube structure is built from unit cubes. How many unit cubes are used in total?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct_index": 2,
+    "explanation": "Total = 2 × 2 × 2 = 8 unit cubes."
+  },
+  {
+    "external_key": "AO-SC-B7-4",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 2,
+    "stem": "A structure has a base layer of 3×3 cubes (9 cubes) and a top layer of only the four corner positions of that 3×3 grid (4 cubes at the corners). How many total cubes are in the structure?",
+    "choices": [
+      "9",
+      "11",
+      "13",
+      "16"
+    ],
+    "correct_index": 2,
+    "explanation": "Bottom layer = 9 cubes. Top layer = 4 corner cubes. Total = 9 + 4 = 13 cubes."
+  },
+  {
+    "external_key": "AO-SC-B7-5",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 2,
+    "stem": "A 3×3×3 large cube is assembled from unit cubes. How many unit cubes have exactly two painted faces if only the outside surface of the large cube is painted?",
+    "choices": [
+      "8",
+      "12",
+      "16",
+      "24"
+    ],
+    "correct_index": 1,
+    "explanation": "Unit cubes with exactly 2 painted faces sit on the edges of the large cube but not at the corners. A 3×3×3 cube has 12 edges, each with 1 non-corner edge cube. So: 12 × 1 = 12 edge cubes have exactly 2 painted faces."
+  },
+  {
+    "external_key": "AO-SC-B7-6",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 2,
+    "stem": "Looking at a structure from directly above, you see a 3×3 grid with a hole in the center (the center position is empty). All visible squares are exactly 1 cube tall. How many total unit cubes are in the structure?",
+    "choices": [
+      "7",
+      "8",
+      "9",
+      "12"
+    ],
+    "correct_index": 1,
+    "explanation": "The 3×3 grid has 9 positions. One center position is empty (no cube there). Remaining = 9 − 1 = 8 cubes, all 1 unit tall."
+  },
+  {
+    "external_key": "AO-SC-B7-7",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "A 3×3×3 large cube is built from unit cubes. All six outer faces are painted red. How many unit cubes have exactly three painted faces?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct_index": 2,
+    "explanation": "Unit cubes with three painted faces are at the corners of the large cube. A cube has exactly 8 corners, so 8 unit cubes have three painted faces."
+  },
+  {
+    "external_key": "AO-SC-B7-8",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "A 5×5×5 large cube is assembled from unit cubes. How many unit cubes are completely hidden (touch no outer face)?",
+    "choices": [
+      "9",
+      "16",
+      "27",
+      "64"
+    ],
+    "correct_index": 2,
+    "explanation": "Interior (hidden) cubes form a (5−2)³ = 3³ = 27 unit cube block inside. Every other unit cube touches at least one outer face."
+  },
+  {
+    "external_key": "AO-SC-B7-9",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 4,
+    "stem": "A 4×4×4 large cube is built from unit cubes and all six outer faces are painted. How many unit cubes have exactly one painted face?",
+    "choices": [
+      "16",
+      "24",
+      "36",
+      "48"
+    ],
+    "correct_index": 1,
+    "explanation": "Unit cubes with exactly one painted face are in the center of each face (not on any edge). Each face of a 4×4×4 cube has (4−2)² = 4 such cubes. Six faces × 4 = 24 cubes with exactly one painted face."
+  },
+  {
+    "external_key": "AO-SC-B7-10",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 4,
+    "stem": "A tower is built: bottom layer is 4×4 (16 cubes), next layer is 3×3 (9 cubes) centered on the first, next is 2×2 (4 cubes), then 1×1 (1 cube). How many unit cubes are in the tower?",
+    "choices": [
+      "25",
+      "28",
+      "30",
+      "32"
+    ],
+    "correct_index": 2,
+    "explanation": "Total = 16 + 9 + 4 + 1 = 30 cubes."
+  },
+  {
+    "external_key": "AO-SC-B7-11",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 4,
+    "stem": "A 3×3×3 cube has all six faces painted blue. It is then cut into 27 unit cubes. How many unit cubes have NO painted faces at all?",
+    "choices": [
+      "0",
+      "1",
+      "6",
+      "8"
+    ],
+    "correct_index": 1,
+    "explanation": "The only unit cube with zero painted faces is the one at the very center of the 3×3×3 cube — it is surrounded on all sides and touches no outer face. There is exactly 1 such cube."
+  },
+  {
+    "external_key": "AO-SC-B7-12",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 4,
+    "stem": "An L-shaped structure is built on a table: one arm is 4 cubes long, 1 cube wide, and 1 cube tall. The other arm is 3 cubes long, 1 cube wide, and 2 cubes tall. The two arms share 1 corner cube. How many total cubes are in the structure?",
+    "choices": [
+      "9",
+      "10",
+      "11",
+      "13"
+    ],
+    "correct_index": 0,
+    "explanation": "Arm 1 is 4 cubes long × 1 cube wide × 1 cube tall = 4 cubes. Arm 2 is 3 cubes long × 1 cube wide × 2 cubes tall = 6 cubes. The two arms share exactly 1 corner cube at their junction. Total = 4 + 6 − 1 = 9 cubes."
+  },
+  {
+    "external_key": "AO-SC-B7-13",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "A 4×4×4 large cube is built from unit cubes and all six outer faces are painted. How many unit cubes have exactly two painted faces?",
+    "choices": [
+      "12",
+      "24",
+      "36",
+      "48"
+    ],
+    "correct_index": 1,
+    "explanation": "Unit cubes with exactly two painted faces lie on the edges of the large cube but not at corners. A cube has 12 edges; each edge of a 4×4×4 cube has (4−2) = 2 non-corner cubes. Total: 12 × 2 = 24 cubes with exactly two painted faces."
+  },
+  {
+    "external_key": "AO-SC-B7-14",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "From the front, a structure appears as: 3 cubes across on the bottom row, 2 cubes in the middle row (centered), 1 cube on top (centered). Each stack is 1 cube deep. How many total cubes are in this pyramid viewed from the side?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "9"
+    ],
+    "correct_index": 2,
+    "explanation": "Bottom row: 3 cubes. Middle row: 2 cubes. Top: 1 cube. Total = 3 + 2 + 1 = 6 cubes (each 1 cube deep as stated)."
+  },
+  {
+    "external_key": "AR-B7-D5-1",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 5,
+    "stem": "A contractor charges a flat fee of $120 plus $45 per hour. A second contractor charges $60 per hour with no flat fee. For what number of hours will both contractors charge the same total amount?",
+    "choices": [
+      "4 hours",
+      "6 hours",
+      "8 hours",
+      "10 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Set equal: 120 + 45h = 60h. 120 = 15h. h = 8 hours."
+  },
+  {
+    "external_key": "AR-B7-D5-2",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 5,
+    "stem": "A gear with 18 teeth meshes with a gear with 45 teeth. If the smaller gear rotates at 250 rpm, how fast does the larger gear rotate?",
+    "choices": [
+      "80 rpm",
+      "100 rpm",
+      "125 rpm",
+      "150 rpm"
+    ],
+    "correct_index": 1,
+    "explanation": "Gear speed is inversely proportional to tooth count. Larger gear speed = 250 × (18/45) = 250 × 0.4 = 100 rpm."
+  },
+  {
+    "external_key": "AR-B7-D5-3",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 5,
+    "stem": "A soldier's test score was reduced by 12% due to a grading error. After the error was corrected, the score was increased by 20% of the reduced score. The original score was 250. What is the final corrected score?",
+    "choices": [
+      "250.0",
+      "264.0",
+      "247.2",
+      "270.0"
+    ],
+    "correct_index": 1,
+    "explanation": "Reduced score = 250 × 0.88 = 220. After 20% increase: 220 × 1.20 = 264. The trap is thinking the two percentages cancel to 8% net gain on the original."
+  },
+  {
+    "external_key": "AR-B7-D5-4",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 5,
+    "stem": "Two soldiers start at the same point and walk in the same direction. Soldier A walks at 4 mph; Soldier B walks at 6 mph. Soldier B starts 30 minutes after Soldier A. How long after B starts does B catch up with A?",
+    "choices": [
+      "45 minutes",
+      "1 hour",
+      "1 hour 15 minutes",
+      "1 hour 30 minutes"
+    ],
+    "correct_index": 1,
+    "explanation": "A's head start = 4 × 0.5 = 2 miles. B closes at 6 − 4 = 2 mph. Catch-up time = 2 ÷ 2 = 1 hour after B starts."
+  },
+  {
+    "external_key": "AR-B7-D5-5",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 5,
+    "stem": "A barrel holds 84 gallons. A pump fills it at 7 gallons per minute, but a leak drains it at 1.75 gallons per minute. Starting empty, how many minutes does it take to fill the barrel?",
+    "choices": [
+      "12 minutes",
+      "14 minutes",
+      "16 minutes",
+      "18 minutes"
+    ],
+    "correct_index": 2,
+    "explanation": "Net fill rate = 7 − 1.75 = 5.25 gal/min. Time = 84 ÷ 5.25 = 16 minutes."
+  },
+  {
+    "external_key": "AR-B7-D5-6",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 5,
+    "stem": "Three workers can paint a room in 6 hours. Two of the workers leave after 2 hours. The remaining worker finishes alone. How many total hours does the job take?",
+    "choices": [
+      "12 hours",
+      "14 hours",
+      "16 hours",
+      "18 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined rate of 3 workers = 1/6 room/hour. In 2 hours they complete 2 × (1/6) = 1/3 of the room. Remaining = 2/3. One worker's rate = 1/18 room/hour. Time for 1 worker to finish 2/3 = (2/3) ÷ (1/18) = 12 hours. Total = 2 + 12 = 14 hours."
+  },
+  {
+    "external_key": "AR-B7-D5-7",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 5,
+    "stem": "A boat travels 48 miles upstream in 4 hours and the same distance downstream in 3 hours. What is the speed of the current?",
+    "choices": [
+      "2 mph",
+      "3 mph",
+      "4 mph",
+      "5 mph"
+    ],
+    "correct_index": 0,
+    "explanation": "Upstream speed = 48/4 = 12 mph. Downstream speed = 48/3 = 16 mph. Boat speed in still water = (12+16)/2 = 14 mph. Current speed = (16−12)/2 = 2 mph."
+  },
+  {
+    "external_key": "AR-B7-D5-8",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 5,
+    "stem": "If 5 machines produce 300 widgets in 4 hours, how many machines are needed to produce 540 widgets in 3 hours?",
+    "choices": [
+      "9",
+      "10",
+      "12",
+      "15"
+    ],
+    "correct_index": 2,
+    "explanation": "Rate per machine = 300 / (5 × 4) = 15 widgets/machine/hour. In 3 hours one machine makes 15 × 3 = 45 widgets. Machines needed = 540 / 45 = 12."
+  },
+  {
+    "external_key": "WK-B7-D5-2",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 5,
+    "stem": "INVETERATE most nearly means:",
+    "choices": [
+      "Recently reformed",
+      "Deeply experienced",
+      "Long-established and unlikely to change",
+      "Violently opposed"
+    ],
+    "correct_index": 2,
+    "explanation": "Inveterate means having a habit or activity deeply embedded by long practice; firmly established. 'Deeply experienced' is tempting but misses the key meaning of habitual permanence."
+  },
+  {
+    "external_key": "WK-B7-D5-3",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 5,
+    "stem": "In the sentence 'The diplomat's ANODYNE speech avoided any statement that might offend either side, leaving the audience with nothing to applaud or protest,' the word ANODYNE most nearly means:",
+    "choices": [
+      "Highly persuasive",
+      "Inoffensive to the point of being dull",
+      "Deeply critical of both parties",
+      "Remarkably brief"
+    ],
+    "correct_index": 1,
+    "explanation": "Anodyne means not likely to cause offense or controversy; bland or inoffensive. The context clue 'nothing to applaud or protest' confirms that the speech provoked neither agreement nor disagreement — it was deliberately dull."
+  },
+  {
+    "external_key": "WK-B7-D5-4",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 5,
+    "stem": "The word PUSILLANIMOUS contains the Latin root ANIM (spirit/soul) and the prefix PUSILL- (very small). PUSILLANIMOUS most nearly means:",
+    "choices": [
+      "Extremely generous of spirit",
+      "Showing a lack of courage; cowardly",
+      "Spiritually enlightened",
+      "Overly animated or energetic"
+    ],
+    "correct_index": 1,
+    "explanation": "Pusillanimous literally means 'small-souled' — lacking courage or resolution; timid. The root ANIM (soul/spirit) combined with PUSILL- (tiny) points to a shrunken spirit, i.e., cowardice."
+  },
+  {
+    "external_key": "WK-B7-D5-5",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 5,
+    "stem": "The root PATER (father) appears in PATERNALISTIC. A PATERNALISTIC policy is one that:",
+    "choices": [
+      "Grants full autonomy to individuals",
+      "Restricts freedom supposedly for people's own good, like a father deciding for a child",
+      "Applies equally to all family members",
+      "Traces authority through the maternal line"
+    ],
+    "correct_index": 1,
+    "explanation": "Paternalistic describes authority that limits individual freedom in a way a father might control a child's choices — ostensibly for their benefit. It carries a connotation of over-control rather than equality."
+  },
+  {
+    "external_key": "WK-B7-D5-6",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 5,
+    "stem": "SANGUINE most nearly means:",
+    "choices": [
+      "Pessimistic about the future",
+      "Optimistic and positive",
+      "Relating to blood or violence",
+      "Slow and deliberate"
+    ],
+    "correct_index": 1,
+    "explanation": "Sanguine means optimistic, especially in a difficult situation. Although it derives from the Latin word for blood (a sanguine complexion was historically linked to a cheerful temperament), in modern usage it consistently means having a positive outlook. 'Relating to blood' is the etymological trap."
+  },
+  {
+    "external_key": "PC-B7-D5-1",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 5,
+    "stem": "Passage: 'The town council voted unanimously to fund the new water treatment plant, citing both aging infrastructure and rising contaminant levels. However, the project manager noted that costs had already exceeded projections by 40%, and the mayor quietly asked engineers to explore a scaled-back alternative.' What can most reasonably be inferred from this passage?",
+    "choices": [
+      "The council regrets its decision to fund the project",
+      "The mayor supports the original project without reservation",
+      "Concerns about cost may lead to a modified or reduced project scope",
+      "Rising contaminant levels have been resolved by the council vote"
+    ],
+    "correct_index": 2,
+    "explanation": "The mayor's request to 'explore a scaled-back alternative' combined with costs 40% over budget strongly implies the original plan may be modified. The council vote shows approval in principle, not necessarily for the original scope. Contaminants are not yet resolved — the plant is only approved, not built."
+  },
+  {
+    "external_key": "PC-B7-D5-2",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 5,
+    "stem": "Passage: 'Proponents claim the new regulation will protect consumers, but a closer examination reveals that its provisions were drafted almost entirely by the industries it purports to regulate. The oversight committee, composed largely of former industry executives, approved it in a single closed session. Whether this constitutes governance or theater is left as an exercise for the reader.' What is the author's tone?",
+    "choices": [
+      "Optimistic and encouraging",
+      "Objective and purely informational",
+      "Sardonic and skeptical",
+      "Alarmed and urgent"
+    ],
+    "correct_index": 2,
+    "explanation": "The phrase 'left as an exercise for the reader' is an ironic rhetorical device implying the answer is obvious without stating it. Combined with 'theater' and the point about industry drafting its own regulations, the tone is sardonic skepticism, not neutral reporting or alarm."
+  },
+  {
+    "external_key": "PC-B7-D5-3",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 5,
+    "stem": "Passage: 'Urban heat islands form when dense concentrations of pavement, buildings, and human activity replace natural land cover. Cities can be up to 7°F warmer than surrounding rural areas. While tree-planting campaigns are popular, researchers find that highly reflective roof coatings — though less photogenic — reduce surface temperatures more efficiently per dollar invested. Policy makers who overlook this evidence in favor of visible green initiatives may be choosing optics over outcomes.' What is the main idea?",
+    "choices": [
+      "Urban heat islands are caused primarily by industrial pollution",
+      "Tree-planting is the most cost-effective solution to urban overheating",
+      "Reflective roof coatings are more cost-efficient than tree planting at reducing urban heat, but are less politically appealing",
+      "Policy makers should avoid all green initiatives until more research is available"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage contrasts the popularity of tree planting with the superior cost-efficiency of reflective coatings, and explicitly criticizes policy makers who prioritize visible green projects. The main idea is that reflective roofs outperform trees economically but lose on optics."
+  },
+  {
+    "external_key": "PC-B7-D5-4",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 5,
+    "stem": "Passage: 'The permafrost beneath Siberian tundra holds an estimated 1.5 trillion tons of organic carbon — roughly twice the amount currently in the atmosphere. As average temperatures rise, permafrost thaws and the organic material decomposes, releasing carbon dioxide and methane. Methane is approximately 86 times more potent than CO₂ as a greenhouse gas over a 20-year period, though its atmospheric lifetime is shorter. Scientists warn this feedback loop could accelerate warming in ways that current climate models may underestimate.' According to the passage, how much more potent is methane than CO₂ as a greenhouse gas over 20 years?",
+    "choices": [
+      "20 times",
+      "50 times",
+      "86 times",
+      "100 times"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage explicitly states methane is 'approximately 86 times more potent than CO₂ as a greenhouse gas over a 20-year period.' This is a direct detail-recall question."
+  },
+  {
+    "external_key": "PC-B7-D5-5",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 5,
+    "stem": "Passage: 'The pharmaceutical company released its Phase 2 trial results, showing a 34% reduction in symptom severity versus placebo. Analysts noted, however, that the trial enrolled only 80 participants and excluded patients over 65 and those with common comorbidities. The FDA typically requires Phase 3 trials of 300–3,000 participants before approval.' What can be most reasonably inferred?",
+    "choices": [
+      "The drug will likely receive FDA approval within one year",
+      "The Phase 2 results are fraudulent",
+      "The drug's effectiveness in the broader population remains uncertain, and further trials are required",
+      "Excluding older patients proves the drug is ineffective for them"
+    ],
+    "correct_index": 2,
+    "explanation": "The small sample size, exclusion criteria, and the FDA's Phase 3 requirement together imply the current evidence is insufficient to establish broad effectiveness. Inference C directly follows from the stated facts without overstating."
+  },
+  {
+    "external_key": "PC-B7-D5-6",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 5,
+    "stem": "Passage: 'Advocates of universal basic income point to pilot programs in Finland and Kenya as proof of concept. Critics counter that these experiments are too small, too short, and too generously funded to scale globally. Both sides marshal the same limited data to opposite conclusions, a reminder that in policy debates, the evidence rarely speaks for itself.' What is the author's primary purpose?",
+    "choices": [
+      "To advocate for universal basic income",
+      "To discredit the critics of universal basic income",
+      "To highlight that the same evidence supports opposing conclusions, illustrating limits of policy data",
+      "To explain why pilot programs in Finland and Kenya succeeded"
+    ],
+    "correct_index": 2,
+    "explanation": "The author presents both sides neutrally and concludes with 'evidence rarely speaks for itself' — signaling the purpose is to show how disputed evidence functions in policy debates, not to take a side."
+  },
+  {
+    "external_key": "PC-B7-D5-7",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 5,
+    "stem": "Passage: 'Sleep deprivation does not merely cause fatigue. Research links chronic short sleep to increased risk of cardiovascular disease, metabolic disorders, and impaired immune response. Cognitive effects include reduced working memory, slower reaction time, and impaired judgment — the last of which may be the most dangerous because sleep-deprived individuals consistently underestimate their own impairment. A person who has slept 6 hours may feel alert while performing at the level of someone legally drunk.' What is the main idea of this passage?",
+    "choices": [
+      "Six hours of sleep is sufficient for most adults",
+      "Sleep deprivation causes serious physical and cognitive harm, made worse by impaired self-awareness of that harm",
+      "Fatigue is the primary danger of insufficient sleep",
+      "Legal intoxication limits should apply to sleep-deprived drivers"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage covers multiple harms (cardiovascular, metabolic, cognitive) and emphasizes that the most insidious aspect is that sufferers don't realize how impaired they are. The main idea is the breadth and self-concealing nature of sleep deprivation's harms."
+  },
+  {
+    "external_key": "MK-B7-D5-1",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 5,
+    "stem": "A soldier has twice as many push-ups completed as sit-ups. If he does 12 more sit-ups, both totals will be equal. How many push-ups did he complete originally?",
+    "choices": [
+      "12",
+      "18",
+      "24",
+      "36"
+    ],
+    "correct_index": 2,
+    "explanation": "Let sit-ups = s, push-ups = 2s. Setting equal after 12 more sit-ups: 2s = s + 12. s = 12. Push-ups = 2(12) = 24."
+  },
+  {
+    "external_key": "MK-B7-D5-2",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "A right triangle has legs of 5 cm and 12 cm. A square is constructed on the hypotenuse. What is the area of that square?",
+    "choices": [
+      "60 cm²",
+      "119 cm²",
+      "144 cm²",
+      "169 cm²"
+    ],
+    "correct_index": 3,
+    "explanation": "Hypotenuse = √(5² + 12²) = √(25 + 144) = √169 = 13 cm. Area of square on hypotenuse = 13² = 169 cm²."
+  },
+  {
+    "external_key": "MK-B7-D5-3",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "Simplify: (2x²y)³ ÷ (4x³y²)",
+    "choices": [
+      "2x³y",
+      "2x²y",
+      "x³y",
+      "2xy³"
+    ],
+    "correct_index": 0,
+    "explanation": "Numerator: (2x²y)³ = 2³ · x⁶ · y³ = 8x⁶y³. Divide by 4x³y²: (8/4) · x^(6−3) · y^(3−2) = 2x³y."
+  },
+  {
+    "external_key": "MK-B7-D5-4",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 5,
+    "stem": "A tank is 3/8 full. After adding 45 gallons it is 5/8 full. What is the total capacity of the tank?",
+    "choices": [
+      "120 gallons",
+      "150 gallons",
+      "180 gallons",
+      "210 gallons"
+    ],
+    "correct_index": 2,
+    "explanation": "The added 45 gallons filled 5/8 − 3/8 = 2/8 = 1/4 of the tank. Total capacity = 45 ÷ (1/4) = 45 × 4 = 180 gallons."
+  },
+  {
+    "external_key": "MK-B7-D5-5",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 5,
+    "stem": "The sum of three consecutive odd integers is 111. What is the largest of the three integers?",
+    "choices": [
+      "35",
+      "37",
+      "39",
+      "41"
+    ],
+    "correct_index": 2,
+    "explanation": "Let the integers be n, n+2, n+4. Sum: 3n + 6 = 111. 3n = 105. n = 35. Largest = 35 + 4 = 39."
+  },
+  {
+    "external_key": "MK-B7-D5-6",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 5,
+    "stem": "If 2/3 of a number equals 4/5 of another number, and the first number is 60, what is the second number?",
+    "choices": [
+      "40",
+      "48",
+      "50",
+      "72"
+    ],
+    "correct_index": 2,
+    "explanation": "2/3 × 60 = 40. Set 4/5 × n = 40. n = 40 × 5/4 = 50."
+  },
+  {
+    "external_key": "MK-B7-D5-7",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "A rectangular room is 15 feet long and 10 feet wide. A diagonal brace runs from one corner to the opposite corner. What is the length of the brace, to the nearest whole foot?",
+    "choices": [
+      "16 feet",
+      "17 feet",
+      "18 feet",
+      "19 feet"
+    ],
+    "correct_index": 2,
+    "explanation": "Diagonal = √(15² + 10²) = √(225 + 100) = √325 ≈ 18.03 feet, which rounds to 18 feet."
+  },
+  {
+    "external_key": "AO-PF-B7-18",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A square sheet of paper has its four corners labeled A (top-left), B (top-right), C (bottom-right), and D (bottom-left). The sheet is folded by bringing corner B down to meet corner D (a diagonal fold along the line from A to C). Which shape does the folded paper form?",
+    "choices": [
+      "A smaller square",
+      "A right triangle with the right angle at corner A",
+      "A right triangle with vertices at A, the merged B-D point, and C",
+      "A rectangle"
+    ],
+    "correct_index": 2,
+    "explanation": "Folding B to meet D folds along the diagonal AC. The two non-diagonal corners (B and D) come together while A and C remain at their positions. The result is a right triangle whose vertices are A, C, and the merged B-D point."
+  },
+  {
+    "external_key": "AO-PF-B7-19",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 5,
+    "stem": "Six squares form a cube net in this arrangement: square 1 is in the top-left position. Square 2 is to the right of square 1. Square 6 is to the right of square 2. Square 3 is below square 2. Square 4 is to the right of square 3. Square 5 is above square 4 (same column as 4, sharing square 4's top edge). When folded into a cube, which square is opposite square 1?",
+    "choices": [
+      "Square 4",
+      "Square 5",
+      "Square 6",
+      "Square 3"
+    ],
+    "correct_index": 2,
+    "explanation": "Assign square 2 as the base. Square 1 (left of 2) folds up to become the left wall. Square 6 (right of 2) folds up to become the right wall. Square 3 (below 2) folds up to become the front wall. Square 4 (right of 3): when 3 is the front wall, square 4 is on 3's right edge and folds to become the top. Square 5 (above 4): when 4 is the top, square 5 folds to become the back wall. Face assignments: bottom=2, top=4, left=1, right=6, front=3, back=5. Opposite left (1) = right (6) = choice c, index 2."
+  },
+  {
+    "external_key": "AO-PF-B7-20",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 5,
+    "stem": "A rectangular sheet (2 units wide, 4 units tall) is folded in half by bringing the top edge to the bottom edge (horizontal fold → 2×2 square). Then folded again bringing the top edge to the bottom edge (another horizontal fold → 2×1 rectangle, four layers). A hole is punched at the center of this 2×1 rectangle through all layers. When fully unfolded, how many holes appear and how are they arranged?",
+    "choices": [
+      "One hole in the center of the sheet",
+      "Two holes side by side across the middle of the sheet",
+      "Four holes in a vertical column at the sheet's horizontal center",
+      "Four holes in a 2×2 grid"
+    ],
+    "correct_index": 2,
+    "explanation": "Fold 1 (top→bottom) stacks top half on bottom half — two layers. Fold 2 (top→bottom of the 2×2 square) stacks upper quarter on lower quarter — four layers. The punch hits four positions that unfold into a vertical column of 4 holes, spaced at equal intervals along the sheet's vertical axis, all at the horizontal center."
+  },
+  {
+    "external_key": "AO-SC-B7-18",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 5,
+    "stem": "A 5×5×5 large cube is painted on all outer faces and then cut into 125 unit cubes. How many unit cubes have exactly one painted face?",
+    "choices": [
+      "36",
+      "48",
+      "54",
+      "72"
+    ],
+    "correct_index": 2,
+    "explanation": "Unit cubes with exactly one painted face sit at the center of each outer face (not on any edge). Each face of a 5×5×5 cube has (5−2)² = 9 such cubes. Six faces × 9 = 54 unit cubes with exactly one painted face."
+  },
+  {
+    "external_key": "AO-SC-B7-19",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 5,
+    "stem": "A hollow open-top box is built from unit cubes: outer dimensions are 4 wide × 4 deep × 3 tall, with walls and bottom exactly 1 unit thick and no top face. How many unit cubes make up this box?",
+    "choices": [
+      "28",
+      "36",
+      "40",
+      "48"
+    ],
+    "correct_index": 2,
+    "explanation": "Bottom layer (solid 4×4) = 16 cubes. Each of the 2 upper layers has walls only (outer 4×4 minus inner hollow 2×2) = 12 cubes per layer. Two upper layers: 12 × 2 = 24 cubes. Total = 16 + 24 = 40 cubes."
+  },
+  {
+    "external_key": "AO-SC-B7-20",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 5,
+    "stem": "A 4×4×4 large cube painted on all six outer faces is cut into 64 unit cubes. How many unit cubes have zero painted faces?",
+    "choices": [
+      "0",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct_index": 2,
+    "explanation": "The interior of a 4×4×4 cube consists of (4−2)³ = 2³ = 8 unit cubes completely surrounded by other cubes, touching no outer face and therefore having zero painted faces."
+  },
+  {
+    "external_key": "AO-3D-B7-18",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A cube: top = silver, bottom = gold, front = red, back = blue, left = green, right = white. The cube is rotated 180° around the vertical axis (spinning a half-turn so the front face goes all the way to the back). What color is now facing you (front)?",
+    "choices": [
+      "Red",
+      "Blue",
+      "Green",
+      "White"
+    ],
+    "correct_index": 1,
+    "explanation": "A 180° rotation around the vertical axis swaps front and back, and swaps left and right, while top and bottom remain unchanged. The original back face (blue) becomes the new front."
+  }
+]

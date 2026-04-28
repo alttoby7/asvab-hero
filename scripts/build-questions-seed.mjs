@@ -7,6 +7,11 @@ const freeRaw = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-te
 const free = freeRaw.questions;
 const b1 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-1.json'), 'utf8'));
 const b2 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-2.json'), 'utf8'));
+const b3 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-3.json'), 'utf8'));
+const b4 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-4.json'), 'utf8'));
+const b5 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-5.json'), 'utf8'));
+const b6 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-6.json'), 'utf8'));
+const b7 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-7.json'), 'utf8'));
 const tags = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/question-tags.seed.json'), 'utf8'));
 const tagMap = new Map(tags.map(t => [t.external_key.toUpperCase(), t]));
 
@@ -47,6 +52,11 @@ const all = [
   ...normalize(free, 'free-test'),
   ...normalize(b1, 'batch-1'),
   ...normalize(b2, 'batch-2'),
+  ...normalize(b3, 'batch-3'),
+  ...normalize(b4, 'batch-4'),
+  ...normalize(b5, 'batch-5'),
+  ...normalize(b6, 'batch-6'),
+  ...normalize(b7, 'batch-7'),
 ];
 
 const seen = new Set();

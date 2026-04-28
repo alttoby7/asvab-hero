@@ -1,0 +1,1922 @@
+[
+  {
+    "external_key": "AR-AF-B3-1",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A classroom has 6 rows of desks with 5 desks in each row. How many desks are in the classroom?",
+    "choices": [
+      "11",
+      "25",
+      "30",
+      "36"
+    ],
+    "correct_index": 2,
+    "explanation": "Total desks = 6 × 5 = 30. Adding 6 + 5 = 11 instead of multiplying is the most common error."
+  },
+  {
+    "external_key": "AR-AF-B3-2",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A warehouse receives 3 shipments of 144 items each. Workers then remove 85 items for immediate distribution. How many items remain in the warehouse?",
+    "choices": [
+      "347",
+      "357",
+      "372",
+      "432"
+    ],
+    "correct_index": 0,
+    "explanation": "Total received = 3 × 144 = 432. Remaining = 432 − 85 = 347. The trap answer 432 ignores the removal step."
+  },
+  {
+    "external_key": "AR-AF-B3-3",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A painter earns $18 per hour and works 7 hours on Monday, 5 hours on Tuesday, and 6 hours on Wednesday. What are her total earnings for the three days?",
+    "choices": [
+      "$216",
+      "$252",
+      "$288",
+      "$324"
+    ],
+    "correct_index": 3,
+    "explanation": "Total hours = 7 + 5 + 6 = 18 hours. Earnings = 18 × $18 = $324. The trap is computing 18 hours but multiplying by the wrong wage (e.g., $16/hr = $288)."
+  },
+  {
+    "external_key": "AR-AF-B3-4",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A fuel tank holds 320 gallons when full. A convoy uses 3/8 of the fuel. How many gallons remain?",
+    "choices": [
+      "120 gallons",
+      "160 gallons",
+      "200 gallons",
+      "240 gallons"
+    ],
+    "correct_index": 2,
+    "explanation": "Fuel used = (3/8) × 320 = 120 gallons. Remaining = 320 − 120 = 200 gallons. The trap is choosing 120 (the amount used, not the amount remaining)."
+  },
+  {
+    "external_key": "AR-AF-B3-5",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A soldier earns $2,640 per month. She contributes 5% to a savings plan and pays $420 in rent. What is her take-home pay after both deductions?",
+    "choices": [
+      "$2,088",
+      "$2,100",
+      "$2,112",
+      "$2,220"
+    ],
+    "correct_index": 0,
+    "explanation": "Savings contribution = 5% × $2,640 = $132. Take-home = $2,640 − $132 − $420 = $2,088. The trap is forgetting the 5% contribution and subtracting only rent: $2,640 − $420 = $2,220."
+  },
+  {
+    "external_key": "AR-AF-B3-6",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A store sells notebooks for $2.50 each and pens for $0.75 each. A student buys 8 notebooks and 10 pens. What is the total cost?",
+    "choices": [
+      "$25.00",
+      "$26.50",
+      "$27.50",
+      "$28.00"
+    ],
+    "correct_index": 2,
+    "explanation": "Notebooks: 8 × $2.50 = $20.00. Pens: 10 × $0.75 = $7.50. Total = $20.00 + $7.50 = $27.50."
+  },
+  {
+    "external_key": "AR-AF-B3-7",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A bus seats 48 passengers. On three consecutive trips, it carries 35, 41, and 48 passengers. What is the total number of empty seats across all three trips?",
+    "choices": [
+      "18",
+      "20",
+      "22",
+      "24"
+    ],
+    "correct_index": 1,
+    "explanation": "Empty seats: trip 1 = 48 − 35 = 13; trip 2 = 48 − 41 = 7; trip 3 = 48 − 48 = 0. Total empty = 13 + 7 + 0 = 20."
+  },
+  {
+    "external_key": "AR-AF-B3-8",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 5,
+    "stem": "A supply depot has 2,400 ration packs. Each platoon of 30 soldiers needs 4 packs per soldier per day. If 4 platoons draw supplies for 2 days, how many ration packs remain?",
+    "choices": [
+      "480",
+      "960",
+      "1,440",
+      "1,920"
+    ],
+    "correct_index": 2,
+    "explanation": "Packs drawn per platoon per day = 30 × 4 = 120. Total drawn = 4 platoons × 120 × 2 days = 960 packs. Remaining = 2,400 − 960 = 1,440. The trap is computing per-day total only (960) and selecting that as the answer without subtracting from stock."
+  },
+  {
+    "external_key": "AR-AF-B3-9",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 5,
+    "stem": "A mess hall serves breakfast daily. Each soldier eats 4 eggs at breakfast. For a unit of 120 soldiers over 5 days, how many total eggs are used at breakfast?",
+    "choices": [
+      "480",
+      "1,200",
+      "2,000",
+      "2,400"
+    ],
+    "correct_index": 3,
+    "explanation": "Eggs = 4 per soldier × 120 soldiers × 5 days = 2,400 eggs. The trap is computing 4 × 120 = 480 and forgetting to multiply by the 5-day period."
+  },
+  {
+    "external_key": "AR-AF-B3-10",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 5,
+    "stem": "A warehouse stores canned goods on pallets. Each pallet holds 48 cases; each case holds 24 cans. Three pallets arrive fully loaded. Then 864 cans are removed. How many cans remain?",
+    "choices": [
+      "2,592",
+      "2,736",
+      "2,880",
+      "3,024"
+    ],
+    "correct_index": 0,
+    "explanation": "Total cans = 3 × 48 × 24 = 3,456. After removal: 3,456 − 864 = 2,592. The trap is computing 3 × 48 = 144 and subtracting 864 as if it were cases rather than individual cans."
+  },
+  {
+    "external_key": "AR-AF-B3-11",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A canteen sells water bottles for $1.25 each. A soldier buys 16 bottles and pays with a $20 bill and a $5 bill. How much change does he receive?",
+    "choices": [
+      "$1.00",
+      "$3.00",
+      "$5.00",
+      "$7.00"
+    ],
+    "correct_index": 2,
+    "explanation": "Cost = 16 × $1.25 = $20.00. Total paid = $20 + $5 = $25. Change = $25 − $20 = $5.00."
+  },
+  {
+    "external_key": "AR-AF-B3-12",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A recruit runs 3 miles on Monday, 4 miles on Wednesday, and 5 miles on Friday. How many miles does she run in total?",
+    "choices": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct_index": 2,
+    "explanation": "Total = 3 + 4 + 5 = 12 miles."
+  },
+  {
+    "external_key": "AR-AF-B3-13",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A school trip costs $15 per student. There are 32 students registered, but 4 drop out. How much is collected from the students who actually attend?",
+    "choices": [
+      "$360",
+      "$390",
+      "$420",
+      "$480"
+    ],
+    "correct_index": 2,
+    "explanation": "Students attending = 32 − 4 = 28. Revenue = 28 × $15 = $420. The trap is computing 32 × $15 = $480 before accounting for the dropouts."
+  },
+  {
+    "external_key": "AR-AF-B3-14",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A truck can carry 1,200 pounds. It is loaded with 10 boxes at 80 pounds each and 5 boxes at 48 pounds each. How many pounds of remaining capacity does the truck have?",
+    "choices": [
+      "160 pounds",
+      "180 pounds",
+      "200 pounds",
+      "240 pounds"
+    ],
+    "correct_index": 0,
+    "explanation": "Heavy boxes: 10 × 80 = 800 lb. Light boxes: 5 × 48 = 240 lb. Total loaded = 1,040 lb. Remaining = 1,200 − 1,040 = 160 lb. The trap is adding only 10 boxes: 10 × 80 = 800; 1,200 − 800 = 400, ignoring the lighter boxes."
+  },
+  {
+    "external_key": "AR-RP-B3-1",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A map uses a scale of 1 inch = 20 miles. Two towns are 4 inches apart on the map. What is the actual distance between them?",
+    "choices": [
+      "5 miles",
+      "24 miles",
+      "80 miles",
+      "100 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "Actual distance = 4 × 20 = 80 miles. The trap is dividing 20 ÷ 4 = 5, which inverts the scale."
+  },
+  {
+    "external_key": "AR-RP-B3-2",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "Concrete is mixed using cement, sand, and gravel in a ratio of 1:2:3. To produce 360 pounds of concrete, how many pounds of sand are needed?",
+    "choices": [
+      "60",
+      "90",
+      "120",
+      "180"
+    ],
+    "correct_index": 2,
+    "explanation": "Total parts = 1 + 2 + 3 = 6. Sand portion = 2/6 of 360 = 120 pounds. The trap is using 2/3 of 360 = 240, which treats the ratio as sand:other rather than sand:total."
+  },
+  {
+    "external_key": "AR-RP-B3-3",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A car uses 3 gallons of fuel for every 75 miles driven. At the same rate, how many gallons are needed for a 325-mile trip?",
+    "choices": [
+      "9",
+      "11",
+      "13",
+      "15"
+    ],
+    "correct_index": 2,
+    "explanation": "Rate = 75 ÷ 3 = 25 miles per gallon. Gallons needed = 325 ÷ 25 = 13 gallons."
+  },
+  {
+    "external_key": "AR-RP-B3-4",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "A trail mix uses nuts and dried fruit in a ratio of 5:3 by weight. A hiker makes 4 pounds of trail mix. How many ounces of dried fruit does she need? (1 pound = 16 ounces)",
+    "choices": [
+      "24 oz",
+      "30 oz",
+      "32 oz",
+      "40 oz"
+    ],
+    "correct_index": 0,
+    "explanation": "Total parts = 8. Dried fruit = (3/8) × 4 lb = 1.5 lb = 1.5 × 16 = 24 oz. The trap is using 3/5 of 4 lb = 2.4 lb = 38.4 oz, which treats the ratio as fruit:nuts rather than fruit:total."
+  },
+  {
+    "external_key": "AR-RP-B3-5",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "A machine produces 420 parts in 7 hours. At the same rate, how many parts does it produce in 10 hours?",
+    "choices": [
+      "540",
+      "560",
+      "580",
+      "600"
+    ],
+    "correct_index": 3,
+    "explanation": "Rate = 420 ÷ 7 = 60 parts/hour. Output in 10 hours = 60 × 10 = 600 parts."
+  },
+  {
+    "external_key": "AR-RP-B3-6",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "A scale model of a ship is built at a ratio of 1:250. The model is 48 centimeters long. What is the actual length of the ship in meters?",
+    "choices": [
+      "90 m",
+      "100 m",
+      "120 m",
+      "150 m"
+    ],
+    "correct_index": 2,
+    "explanation": "Actual length in cm = 48 × 250 = 12,000 cm. Convert to meters: 12,000 ÷ 100 = 120 m. The trap is reporting the answer in centimeters (12,000) or forgetting the conversion factor."
+  },
+  {
+    "external_key": "AR-RP-B3-7",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A recipe for 12 cookies requires 2 cups of flour. How many cups of flour are needed for 42 cookies?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_index": 2,
+    "explanation": "Proportion: 2/12 = x/42. Cross-multiply: 12x = 84. x = 7 cups. Alternatively, scale factor = 42/12 = 3.5; flour = 2 × 3.5 = 7 cups."
+  },
+  {
+    "external_key": "AR-RP-B3-8",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "Two workers share a project payment in proportion to the hours each works. Worker A works 18 hours and Worker B works 12 hours. The total payment is $750. How much does Worker A receive?",
+    "choices": [
+      "$300",
+      "$375",
+      "$420",
+      "$450"
+    ],
+    "correct_index": 3,
+    "explanation": "Total hours = 18 + 12 = 30. Worker A's share = (18/30) × $750 = 0.60 × $750 = $450. The trap is selecting Worker B's share (12/30 × $750 = $300) or splitting equally ($375)."
+  },
+  {
+    "external_key": "AR-RP-B3-9",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 5,
+    "stem": "Eight workers can load a truck in 3 hours. Two workers leave after the first hour. How many additional hours will the remaining 6 workers need to finish the job?",
+    "choices": [
+      "2 hours",
+      "2 hours 20 minutes",
+      "2 hours 40 minutes",
+      "3 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Total work = 8 × 3 = 24 worker-hours. After hour 1, work completed = 8 worker-hours. Remaining = 16 worker-hours. With 6 workers: 16 ÷ 6 = 2⅔ hours = 2 hours 40 minutes."
+  },
+  {
+    "external_key": "AR-RP-B3-10",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A paint color is mixed using blue and white paint in a ratio of 2:5 (blue:white). A painter needs 28 ounces of the mixture total. How many ounces of blue paint are needed?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correct_index": 2,
+    "explanation": "Total parts = 2 + 5 = 7. Blue portion = (2/7) × 28 = 8 ounces. The trap is computing (2/5) × 28 ≈ 11.2, treating the ratio as blue:white rather than blue:total."
+  },
+  {
+    "external_key": "AR-RP-B3-11",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 5,
+    "stem": "Two pipes together fill a tank in 4 hours. Pipe A alone fills the tank in 6 hours. How long does Pipe B take to fill the tank alone?",
+    "choices": [
+      "8 hours",
+      "10 hours",
+      "12 hours",
+      "14 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Combined rate = 1/4. Pipe A rate = 1/6. Pipe B rate = 1/4 − 1/6 = 3/12 − 2/12 = 1/12. Pipe B alone takes 12 hours. The trap is subtracting times directly: 4 − 6 = −2, which is meaningless."
+  },
+  {
+    "external_key": "AR-RP-B3-12",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 5,
+    "stem": "In a survey, the ratio of respondents who prefer Brand A : Brand B : Brand C is 4:3:2. A total of 270 people were surveyed. How many more people prefer Brand A than Brand C?",
+    "choices": [
+      "30",
+      "45",
+      "60",
+      "90"
+    ],
+    "correct_index": 2,
+    "explanation": "Total parts = 9. Each part = 270 ÷ 9 = 30. Brand A = 4 × 30 = 120. Brand C = 2 × 30 = 60. Difference = 60. The trap is computing the difference in parts (4 − 2 = 2) and answering 2, or selecting 30 (one part)."
+  },
+  {
+    "external_key": "AR-RP-B3-13",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "On a blueprint, 1/4 inch represents 6 feet. A room on the blueprint is 3.5 inches wide. What is the actual width of the room in feet?",
+    "choices": [
+      "72 feet",
+      "78 feet",
+      "84 feet",
+      "96 feet"
+    ],
+    "correct_index": 2,
+    "explanation": "Scale: 1/4 inch = 6 feet, so 1 inch = 24 feet. Actual width = 3.5 × 24 = 84 feet. The trap is multiplying 3.5 × 6 = 21, failing to account for the fact that each inch contains four quarter-inches."
+  },
+  {
+    "external_key": "AR-RP-B3-14",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 5,
+    "stem": "A caterer makes punch using juice and sparkling water in a ratio of 3:7 (juice:water). She needs 50 liters total. How many liters of juice are needed?",
+    "choices": [
+      "12 liters",
+      "15 liters",
+      "18 liters",
+      "21 liters"
+    ],
+    "correct_index": 1,
+    "explanation": "Total parts = 3 + 7 = 10. Juice = (3/10) × 50 = 15 liters. The trap is using 3/7 of 50 ≈ 21.4 liters, treating the ratio as juice:water rather than juice:total."
+  },
+  {
+    "external_key": "AR-PC-B3-1",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A test has 40 questions. A student answers 30 correctly. What percent did the student answer correctly?",
+    "choices": [
+      "65%",
+      "70%",
+      "75%",
+      "80%"
+    ],
+    "correct_index": 2,
+    "explanation": "Percent correct = (30 ÷ 40) × 100 = 75%."
+  },
+  {
+    "external_key": "AR-PC-B3-2",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "What is 30% of 150?",
+    "choices": [
+      "35",
+      "40",
+      "45",
+      "50"
+    ],
+    "correct_index": 2,
+    "explanation": "30% × 150 = 0.30 × 150 = 45."
+  },
+  {
+    "external_key": "AR-PC-B3-3",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A phone originally priced at $360 is discounted by 15%. What is the sale price?",
+    "choices": [
+      "$288",
+      "$300",
+      "$306",
+      "$312"
+    ],
+    "correct_index": 2,
+    "explanation": "Discount = 15% × $360 = $54. Sale price = $360 − $54 = $306. The trap is computing a 16.7% discount or rounding $360 × 0.85 incorrectly to $300."
+  },
+  {
+    "external_key": "AR-PC-B3-4",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A soldier's weight dropped from 200 pounds to 185 pounds during training. What is the percent decrease?",
+    "choices": [
+      "6.5%",
+      "7.0%",
+      "7.5%",
+      "8.1%"
+    ],
+    "correct_index": 2,
+    "explanation": "Decrease = 15 lb. Percent decrease = (15 ÷ 200) × 100 = 7.5%. The trap is dividing by the new weight: 15 ÷ 185 ≈ 8.1%."
+  },
+  {
+    "external_key": "AR-PC-B3-5",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A charity collected $3,200 last year. This year it collected $4,000. By what percent did collections increase?",
+    "choices": [
+      "20%",
+      "25%",
+      "28%",
+      "33%"
+    ],
+    "correct_index": 1,
+    "explanation": "Increase = $800. Percent increase = ($800 ÷ $3,200) × 100 = 25%. The trap is dividing by the new amount: $800 ÷ $4,000 = 20%."
+  },
+  {
+    "external_key": "AR-PC-B3-6",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "In a class of 60 students, 45% received a grade of A or B. How many students received an A or B?",
+    "choices": [
+      "24",
+      "27",
+      "30",
+      "33"
+    ],
+    "correct_index": 1,
+    "explanation": "45% × 60 = 0.45 × 60 = 27 students. The trap is rounding 45% to 50% and computing 30."
+  },
+  {
+    "external_key": "AR-PC-B3-7",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 4,
+    "stem": "A bank account has a balance of $2,500. It earns 4% simple annual interest. What is the balance after 2.5 years?",
+    "choices": [
+      "$2,600",
+      "$2,750",
+      "$2,800",
+      "$2,850"
+    ],
+    "correct_index": 1,
+    "explanation": "Interest = $2,500 × 0.04 × 2.5 = $250. Balance = $2,500 + $250 = $2,750. The trap is computing only 1 year of interest ($100) and arriving at $2,600."
+  },
+  {
+    "external_key": "AR-PC-B3-8",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 4,
+    "stem": "A restaurant bill comes to $48. A 20% tip and an 8% tax are both applied to the original $48 bill. What is the total amount paid?",
+    "choices": [
+      "$56.64",
+      "$60.48",
+      "$61.44",
+      "$62.08"
+    ],
+    "correct_index": 2,
+    "explanation": "Tip = 20% × $48 = $9.60. Tax = 8% × $48 = $3.84. Total = $48 + $9.60 + $3.84 = $61.44. The trap is applying tax to the post-tip amount ($57.60 × 0.08 = $4.61), which gives a different total."
+  },
+  {
+    "external_key": "AR-PC-B3-9",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 4,
+    "stem": "A mutual fund gained 20% in Year 1, then lost 20% in Year 2 from the Year 1 ending value. Starting with $1,000, what is the value after Year 2?",
+    "choices": [
+      "$960",
+      "$970",
+      "$980",
+      "$1,000"
+    ],
+    "correct_index": 0,
+    "explanation": "After Year 1: $1,000 × 1.20 = $1,200. After Year 2: $1,200 × 0.80 = $960. The trap is assuming +20% and −20% cancel out, returning $1,000; they do not because the 20% loss applies to the higher Year 1 balance."
+  },
+  {
+    "external_key": "AR-PC-B3-10",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 5,
+    "stem": "A laptop is marked up 40% from its wholesale cost, then placed on sale for 25% off the marked-up price. The sale price is $252. What was the original wholesale cost?",
+    "choices": [
+      "$210",
+      "$240",
+      "$250",
+      "$270"
+    ],
+    "correct_index": 1,
+    "explanation": "Let wholesale cost = W. Marked-up price = 1.40W. Sale price = 1.40W × 0.75 = 1.05W = $252. W = $252 ÷ 1.05 = $240. The trap is netting the percentages: +40% − 25% = +15%, giving W = $252 ÷ 1.15 ≈ $219."
+  },
+  {
+    "external_key": "AR-PC-B3-11",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 5,
+    "stem": "A store reduces a price by 30%, then reduces it again by 20% from the already-reduced price. What single percent reduction would produce the same final price?",
+    "choices": [
+      "44%",
+      "46%",
+      "48%",
+      "50%"
+    ],
+    "correct_index": 0,
+    "explanation": "Combined multiplier = 0.70 × 0.80 = 0.56. Total reduction = 1 − 0.56 = 0.44 = 44%. The trap is adding 30% + 20% = 50%, which ignores that the second reduction applies to an already-reduced base."
+  },
+  {
+    "external_key": "AR-PC-B3-12",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 5,
+    "stem": "A clothing store applies a 35% markup to all wholesale costs, then offers 20% off the marked-up price at clearance. A jacket's clearance price is $86.40. What was the wholesale cost?",
+    "choices": [
+      "$72",
+      "$80",
+      "$88",
+      "$96"
+    ],
+    "correct_index": 1,
+    "explanation": "Let W = wholesale. Marked-up = 1.35W. Clearance = 1.35W × 0.80 = 1.08W = $86.40. W = $86.40 ÷ 1.08 = $80. The trap is netting percents (35% − 20% = 15%) and dividing: $86.40 ÷ 1.15 ≈ $75."
+  },
+  {
+    "external_key": "AR-PC-B3-13",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 5,
+    "stem": "A company's revenue grew by 25% in Q1 and by 16% in Q2 relative to the Q1 ending revenue. If starting revenue was $80,000, what was the revenue at the end of Q2?",
+    "choices": [
+      "$103,200",
+      "$107,200",
+      "$112,800",
+      "$116,000"
+    ],
+    "correct_index": 3,
+    "explanation": "After Q1: $80,000 × 1.25 = $100,000. After Q2: $100,000 × 1.16 = $116,000. The trap is adding the growth rates: 25% + 16% = 41%, giving $80,000 × 1.41 = $112,800."
+  },
+  {
+    "external_key": "AR-PC-B3-14",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 4,
+    "stem": "A worker earns $160 per week. She receives a 25% raise. That same week she also earns a bonus equal to 12% of her new weekly wage. What is her total pay for that week?",
+    "choices": [
+      "$200",
+      "$212",
+      "$224",
+      "$236"
+    ],
+    "correct_index": 2,
+    "explanation": "New weekly wage = $160 × 1.25 = $200. Bonus = 12% × $200 = $24. Total = $200 + $24 = $224. The trap is computing 12% of the original wage ($160 × 0.12 = $19.20) and adding to $200, giving $219.20."
+  },
+  {
+    "external_key": "AR-RD-B3-1",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A car travels at 50 mph. How far does it travel in 3 hours?",
+    "choices": [
+      "100 miles",
+      "140 miles",
+      "150 miles",
+      "160 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "Distance = speed × time = 50 × 3 = 150 miles."
+  },
+  {
+    "external_key": "AR-RD-B3-2",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A cyclist rides at 15 mph. How far does she travel in 2 hours and 20 minutes?",
+    "choices": [
+      "30 miles",
+      "33 miles",
+      "35 miles",
+      "37 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "2 hours 20 minutes = 7/3 hours. Distance = 15 × 7/3 = 35 miles."
+  },
+  {
+    "external_key": "AR-RD-B3-3",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A train travels 360 miles in 4 hours. At the same speed, how long will it take the train to travel 495 miles?",
+    "choices": [
+      "4.5 hours",
+      "5 hours",
+      "5.5 hours",
+      "6 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Speed = 360 ÷ 4 = 90 mph. Time = 495 ÷ 90 = 5.5 hours."
+  },
+  {
+    "external_key": "AR-RD-B3-4",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A plane flies 1,200 miles in 2.5 hours. What is the plane's average speed?",
+    "choices": [
+      "400 mph",
+      "440 mph",
+      "460 mph",
+      "480 mph"
+    ],
+    "correct_index": 3,
+    "explanation": "Speed = 1,200 ÷ 2.5 = 480 mph."
+  },
+  {
+    "external_key": "AR-RD-B3-5",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 4,
+    "stem": "Two runners start at the same point and run in opposite directions. Runner A runs at 7 mph and Runner B at 9 mph. After how many hours are they 64 miles apart?",
+    "choices": [
+      "3 hours",
+      "4 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined separation rate = 7 + 9 = 16 mph. Time = 64 ÷ 16 = 4 hours. The trap is using only one runner's speed (64 ÷ 7 ≈ 9 or 64 ÷ 9 ≈ 7)."
+  },
+  {
+    "external_key": "AR-RD-B3-6",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 4,
+    "stem": "A supply convoy travels 120 miles to a base, makes a 45-minute stop, then returns over the same route. The convoy travels at 40 mph in both directions. What is the total elapsed time including the stop?",
+    "choices": [
+      "5 hours 45 minutes",
+      "6 hours 15 minutes",
+      "6 hours 45 minutes",
+      "7 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "One-way driving time = 120 ÷ 40 = 3 hours. Round trip = 6 hours. Stop = 45 min = 0.75 hr. Total = 6.75 hours = 6 hours 45 minutes."
+  },
+  {
+    "external_key": "AR-RD-B3-7",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 4,
+    "stem": "Worker A can fill a storage bin in 6 hours; Worker B can fill the same bin in 4 hours. How long will it take them working together?",
+    "choices": [
+      "2 hours",
+      "2 hours 24 minutes",
+      "2 hours 48 minutes",
+      "3 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined rate = 1/6 + 1/4 = 5/12 bins/hour. Time = 12/5 = 2.4 hours = 2 hours 24 minutes. The trap is averaging the times: (6 + 4) ÷ 2 = 5 hours."
+  },
+  {
+    "external_key": "AR-RD-B3-8",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 5,
+    "stem": "A drain empties a 900-gallon pool at 30 gallons per minute. A hose adds water at 12 gallons per minute. Both run simultaneously starting with the pool full. How many minutes until the pool is empty?",
+    "choices": [
+      "30 minutes",
+      "40 minutes",
+      "45 minutes",
+      "50 minutes"
+    ],
+    "correct_index": 3,
+    "explanation": "Net drain rate = 30 − 12 = 18 gal/min. Time to empty = 900 ÷ 18 = 50 minutes. The trap is using only the drain rate: 900 ÷ 30 = 30 minutes."
+  },
+  {
+    "external_key": "AR-RD-B3-9",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 4,
+    "stem": "A soldier jogs to a checkpoint at 6 mph and walks back the same route at 4 mph. The total round trip takes 2.5 hours. How far away is the checkpoint?",
+    "choices": [
+      "4 miles",
+      "5 miles",
+      "6 miles",
+      "8 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "Let distance = d. Time equation: d/6 + d/4 = 2.5. LCD = 12: 2d/12 + 3d/12 = 5d/12 = 2.5. d = 2.5 × 12/5 = 6 miles. The trap is dividing 2.5 by the average speed (5 mph) to get 5 miles."
+  },
+  {
+    "external_key": "AR-RD-B3-10",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 5,
+    "stem": "A and B start from the same town at the same time. A heads north at 50 mph; B heads east at 120 mph. After how many hours is the straight-line distance between them exactly 130 miles?",
+    "choices": [
+      "1 hour",
+      "1.5 hours",
+      "2 hours",
+      "2.5 hours"
+    ],
+    "correct_index": 0,
+    "explanation": "After t hours, A is 50t miles north and B is 120t miles east. Distance = √((50t)² + (120t)²) = t√(2,500 + 14,400) = 130t = 130, so t = 1 hour. This uses the 5-12-13 triple (50 = 5×10, 120 = 12×10, 130 = 13×10)."
+  },
+  {
+    "external_key": "AR-RD-B3-11",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 5,
+    "stem": "Three painters working together: Painter 1's rate is 1/6 of a fence per hour; Painter 2's rate is 1/8 per hour; Painter 3's rate is 1/12 per hour. How long does it take all three to paint the entire fence?",
+    "choices": [
+      "2 hours 10 minutes",
+      "2 hours 40 minutes",
+      "3 hours",
+      "3 hours 20 minutes"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined rate = 1/6 + 1/8 + 1/12 = 4/24 + 3/24 + 2/24 = 9/24 = 3/8 fence/hr. Time = 8/3 hours = 2⅔ hours = 2 hours 40 minutes."
+  },
+  {
+    "external_key": "AR-RD-B3-12",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 4,
+    "stem": "Car A leaves City X at 8:00 AM toward City Y at 60 mph. Car B leaves City Y at 9:00 AM toward City X at 90 mph. The cities are 210 miles apart. At what time do the cars meet?",
+    "choices": [
+      "9:30 AM",
+      "10:00 AM",
+      "10:30 AM",
+      "11:00 AM"
+    ],
+    "correct_index": 1,
+    "explanation": "By 9:00 AM, Car A has gone 60 miles; gap remaining = 210 − 60 = 150 miles. After 9 AM, combined closing speed = 60 + 90 = 150 mph. Time to close = 150 ÷ 150 = 1 hour. Cars meet at 10:00 AM."
+  },
+  {
+    "external_key": "AR-RD-B3-13",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A cargo ship travels 540 nautical miles at 18 knots, then returns the same distance at 12 knots. What is the total travel time for the round trip?",
+    "choices": [
+      "65 hours",
+      "70 hours",
+      "72 hours",
+      "75 hours"
+    ],
+    "correct_index": 3,
+    "explanation": "Outbound time = 540 ÷ 18 = 30 hours. Return time = 540 ÷ 12 = 45 hours. Total = 30 + 45 = 75 hours."
+  },
+  {
+    "external_key": "AR-RD-B3-14",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 5,
+    "stem": "A boat's engine speed is 14 mph in still water. Traveling downstream with a 4 mph current, it covers 108 miles. How long does the trip take?",
+    "choices": [
+      "5 hours",
+      "6 hours",
+      "6.5 hours",
+      "7 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Effective downstream speed = 14 + 4 = 18 mph. Time = 108 ÷ 18 = 6 hours. The trap is using the engine speed alone: 108 ÷ 14 ≈ 7.7 hours."
+  },
+  {
+    "external_key": "AR-WP-B3-1",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A box of 48 granola bars is divided equally among 6 hikers. Each hiker then gives 2 bars to a seventh hiker who arrived late. How many bars does the seventh hiker receive?",
+    "choices": [
+      "8",
+      "10",
+      "12",
+      "14"
+    ],
+    "correct_index": 2,
+    "explanation": "Each of the 6 hikers starts with 48 ÷ 6 = 8 bars. The seventh hiker gets 2 bars from each of the 6: 2 × 6 = 12 bars."
+  },
+  {
+    "external_key": "AR-WP-B3-2",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "A gardener plants tomatoes in 5 rows with 12 plants each and peppers in 4 rows with 9 plants each. How many plants are there in total?",
+    "choices": [
+      "84",
+      "88",
+      "92",
+      "96"
+    ],
+    "correct_index": 3,
+    "explanation": "Tomatoes = 5 × 12 = 60. Peppers = 4 × 9 = 36. Total = 60 + 36 = 96."
+  },
+  {
+    "external_key": "AR-WP-B3-3",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "A jogger burns 8 calories per minute while running and 3 calories per minute while walking. She runs for 25 minutes and walks for 20 minutes. How many total calories does she burn?",
+    "choices": [
+      "240",
+      "260",
+      "280",
+      "300"
+    ],
+    "correct_index": 1,
+    "explanation": "Calories running = 8 × 25 = 200. Calories walking = 3 × 20 = 60. Total = 260."
+  },
+  {
+    "external_key": "AR-WP-B3-4",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A merchant buys 60 items at $4 each and sells all of them at $7 each. What is his total profit?",
+    "choices": [
+      "$120",
+      "$150",
+      "$180",
+      "$210"
+    ],
+    "correct_index": 2,
+    "explanation": "Revenue = 60 × $7 = $420. Cost = 60 × $4 = $240. Profit = $420 − $240 = $180."
+  },
+  {
+    "external_key": "AR-WP-B3-5",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 5,
+    "stem": "Three siblings split an inheritance. The eldest receives twice as much as the middle sibling, and the middle sibling receives three times as much as the youngest. If the youngest receives $4,200, what is the total inheritance?",
+    "choices": [
+      "$29,400",
+      "$33,600",
+      "$37,800",
+      "$42,000"
+    ],
+    "correct_index": 3,
+    "explanation": "Youngest = $4,200. Middle = 3 × $4,200 = $12,600. Eldest = 2 × $12,600 = $25,200. Total = $4,200 + $12,600 + $25,200 = $42,000. The trap is computing eldest as 2 × youngest ($8,400) instead of 2 × middle."
+  },
+  {
+    "external_key": "AR-WP-B3-6",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "A water tank is 3/4 full. After adding 240 gallons, the tank is 9/10 full. What is the total capacity of the tank in gallons?",
+    "choices": [
+      "1,200",
+      "1,500",
+      "1,600",
+      "2,000"
+    ],
+    "correct_index": 2,
+    "explanation": "The added 240 gallons raised the level by 9/10 − 3/4 = 18/20 − 15/20 = 3/20 of capacity. So (3/20) × C = 240. C = 240 × 20/3 = 1,600 gallons."
+  },
+  {
+    "external_key": "AR-WP-B3-7",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "A plumber charges $65 for the first hour and $45 for each additional hour, plus a flat $20 materials fee. If a job takes 4 hours total, what is the total bill?",
+    "choices": [
+      "$200",
+      "$220",
+      "$240",
+      "$280"
+    ],
+    "correct_index": 1,
+    "explanation": "First hour = $65. Additional 3 hours = 3 × $45 = $135. Materials = $20. Total = $65 + $135 + $20 = $220."
+  },
+  {
+    "external_key": "AR-WP-B3-8",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 5,
+    "stem": "A factory produces two products. Product X requires 3 labor-hours and $12 in materials per unit; Product Y requires 5 labor-hours and $8 in materials per unit. Labor costs $8 per hour. In one week, 20 units of X and 10 units of Y are produced. What is the total production cost?",
+    "choices": [
+      "$1,100",
+      "$1,200",
+      "$1,300",
+      "$1,400"
+    ],
+    "correct_index": 1,
+    "explanation": "X cost per unit: 3 × $8 + $12 = $36. Y cost per unit: 5 × $8 + $8 = $48. Total = 20 × $36 + 10 × $48 = $720 + $480 = $1,200. The trap is multiplying all units by only the labor rate and forgetting materials: (20×3 + 10×5) × $8 = 110 × $8 = $880."
+  },
+  {
+    "external_key": "AR-WP-B3-10",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "A bookshelf has 8 shelves, each holding 6 books. Currently, 3/4 of the shelves are completely full and the remaining shelves are empty. How many more books can the shelf unit hold?",
+    "choices": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct_index": 3,
+    "explanation": "Full shelves = 3/4 × 8 = 6 shelves. Empty shelves = 2. Each empty shelf holds 6 books. Remaining capacity = 2 × 6 = 12 books."
+  },
+  {
+    "external_key": "AR-WP-B3-11",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 5,
+    "stem": "A catering company charges $11 per adult and $7 per child. At an event, the number of adults is 3 times the number of children. The total bill is $1,200. How many children attended?",
+    "choices": [
+      "20",
+      "25",
+      "30",
+      "40"
+    ],
+    "correct_index": 2,
+    "explanation": "Let c = number of children; adults = 3c. Bill: 11(3c) + 7c = 33c + 7c = 40c = $1,200. c = 30 children. Verify: 90 adults × $11 = $990; 30 children × $7 = $210; $990 + $210 = $1,200 ✓."
+  },
+  {
+    "external_key": "AR-WP-B3-12",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "A bus leaves a depot every 20 minutes. A train leaves the same depot every 30 minutes. Both departed together at 6:00 AM. At what time will they next depart together?",
+    "choices": [
+      "6:40 AM",
+      "6:50 AM",
+      "7:00 AM",
+      "7:10 AM"
+    ],
+    "correct_index": 2,
+    "explanation": "LCM(20, 30) = 60 minutes. They next depart together 60 minutes after 6:00 AM = 7:00 AM. The trap is adding 20 + 30 = 50 minutes, giving 6:50 AM."
+  },
+  {
+    "external_key": "AR-WP-B3-13",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "A soldier's monthly budget is $2,400. He spends 1/3 on housing, 1/4 on food, and 1/6 on transportation. How much remains for other expenses?",
+    "choices": [
+      "$500",
+      "$600",
+      "$700",
+      "$800"
+    ],
+    "correct_index": 1,
+    "explanation": "Housing = 1/3 × $2,400 = $800. Food = 1/4 × $2,400 = $600. Transportation = 1/6 × $2,400 = $400. Total spent = $1,800. Remaining = $2,400 − $1,800 = $600."
+  },
+  {
+    "external_key": "AR-WP-B3-14",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A fundraiser sells two types of tickets: regular at $8 and VIP at $20. They sell 150 regular tickets and 50 VIP tickets. What is the total revenue?",
+    "choices": [
+      "$1,800",
+      "$2,000",
+      "$2,200",
+      "$2,400"
+    ],
+    "correct_index": 2,
+    "explanation": "Regular revenue = 150 × $8 = $1,200. VIP revenue = 50 × $20 = $1,000. Total = $1,200 + $1,000 = $2,200."
+  },
+  {
+    "external_key": "MK-AL-B3-1",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "Solve for x: x + 14 = 30",
+    "choices": [
+      "x = 12",
+      "x = 14",
+      "x = 16",
+      "x = 18"
+    ],
+    "correct_index": 2,
+    "explanation": "x = 30 − 14 = 16."
+  },
+  {
+    "external_key": "MK-AL-B3-2",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "Solve for x: 6x − 11 = 31",
+    "choices": [
+      "x = 5",
+      "x = 6",
+      "x = 7",
+      "x = 8"
+    ],
+    "correct_index": 2,
+    "explanation": "6x = 31 + 11 = 42. x = 42 ÷ 6 = 7."
+  },
+  {
+    "external_key": "MK-AL-B3-3",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If y = 3x − 4 and x = 5, what is y?",
+    "choices": [
+      "7",
+      "9",
+      "11",
+      "13"
+    ],
+    "correct_index": 2,
+    "explanation": "y = 3(5) − 4 = 15 − 4 = 11."
+  },
+  {
+    "external_key": "MK-AL-B3-4",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If 3(2x − 4) = 24, what is x?",
+    "choices": [
+      "x = 4",
+      "x = 5",
+      "x = 6",
+      "x = 7"
+    ],
+    "correct_index": 2,
+    "explanation": "Divide both sides by 3: 2x − 4 = 8. Add 4: 2x = 12. x = 6. The trap is skipping the division step and solving 2x − 4 = 24, giving x = 14."
+  },
+  {
+    "external_key": "MK-AL-B3-5",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "Solve for y: 4y + 9 = 2y − 5",
+    "choices": [
+      "y = −7",
+      "y = −5",
+      "y = 2",
+      "y = 7"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 2y from both sides: 2y + 9 = −5. Subtract 9: 2y = −14. y = −7. The trap is adding the constants rather than subtracting: 2y = −5 + 9 = 4, giving y = 2."
+  },
+  {
+    "external_key": "MK-AL-B3-6",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "Which value of x satisfies both inequalities: 2x > 6 AND x + 3 < 10?",
+    "choices": [
+      "x = 2",
+      "x = 3",
+      "x = 4",
+      "x = 8"
+    ],
+    "correct_index": 2,
+    "explanation": "From 2x > 6: x > 3. From x + 3 < 10: x < 7. So 3 < x < 7. Among the choices, only x = 4 satisfies both. x = 3 fails the strict inequality x > 3; x = 8 fails x < 7."
+  },
+  {
+    "external_key": "MK-AL-B3-7",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "A number is 5 more than twice another number. Their sum is 29. What is the larger number?",
+    "choices": [
+      "17",
+      "19",
+      "21",
+      "23"
+    ],
+    "correct_index": 2,
+    "explanation": "Let the smaller number = n. Larger = 2n + 5. Sum: n + 2n + 5 = 29 → 3n = 24 → n = 8. Larger = 2(8) + 5 = 21."
+  },
+  {
+    "external_key": "MK-AL-B3-8",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "Solve for x: (x/3) + 5 = 11",
+    "choices": [
+      "x = 12",
+      "x = 15",
+      "x = 18",
+      "x = 21"
+    ],
+    "correct_index": 2,
+    "explanation": "x/3 = 11 − 5 = 6. x = 6 × 3 = 18. The trap is choosing x = 6 (stopping before multiplying by 3)."
+  },
+  {
+    "external_key": "MK-AL-B3-9",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 5,
+    "stem": "If 2(3x − 1) = 5x + 4, what is x?",
+    "choices": [
+      "x = 4",
+      "x = 5",
+      "x = 6",
+      "x = 7"
+    ],
+    "correct_index": 2,
+    "explanation": "Expand: 6x − 2 = 5x + 4. Subtract 5x: x − 2 = 4. x = 6. The trap is distributing 2 only to 3x (ignoring −1): 6x − 1 = 5x + 4, giving x = 5."
+  },
+  {
+    "external_key": "MK-AL-B3-10",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "The sum of three consecutive odd integers is 57. What is the largest of the three integers?",
+    "choices": [
+      "17",
+      "19",
+      "21",
+      "23"
+    ],
+    "correct_index": 2,
+    "explanation": "Let the integers be n, n+2, n+4. Sum: 3n + 6 = 57 → 3n = 51 → n = 17. Largest = n + 4 = 21."
+  },
+  {
+    "external_key": "MK-AL-B3-11",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 5,
+    "stem": "Solve the system: 3x − y = 11 and x + y = 9. What is x + y?",
+    "choices": [
+      "5",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_index": 3,
+    "explanation": "Add the two equations: 4x = 20, so x = 5. From x + y = 9: y = 4. x + y = 9. Verify: 3(5) − 4 = 11 ✓; 5 + 4 = 9 ✓."
+  },
+  {
+    "external_key": "MK-AL-B3-12",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 5,
+    "stem": "A company rents vans at $40/day plus $0.25 per mile. An employee uses a van for 3 days and is charged $195 total. How many miles did she drive?",
+    "choices": [
+      "220 miles",
+      "260 miles",
+      "300 miles",
+      "340 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "Base cost = 3 × $40 = $120. Mileage charge = $195 − $120 = $75. Miles = $75 ÷ $0.25 = 300 miles. The trap is dividing the total by the per-mile rate without subtracting the daily fee: $195 ÷ $0.25 = 780."
+  },
+  {
+    "external_key": "MK-FR-B3-1",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "What is 1/2 + 1/4 + 1/8?",
+    "choices": [
+      "6/8",
+      "7/8",
+      "3/4",
+      "5/8"
+    ],
+    "correct_index": 1,
+    "explanation": "Convert to eighths: 4/8 + 2/8 + 1/8 = 7/8."
+  },
+  {
+    "external_key": "MK-FR-B3-2",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "What is 5/6 − 3/8?",
+    "choices": [
+      "11/24",
+      "7/24",
+      "2/3",
+      "1/2"
+    ],
+    "correct_index": 0,
+    "explanation": "LCD = 24. 5/6 = 20/24; 3/8 = 9/24. 20/24 − 9/24 = 11/24. The trap is subtracting numerators and denominators directly: (5−3)/(6−8) = 2/(−2), which is wrong."
+  },
+  {
+    "external_key": "MK-FR-B3-3",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "What is 1 3/4 × 2 2/3?",
+    "choices": [
+      "3 1/2",
+      "4 2/3",
+      "4 5/12",
+      "3 11/12"
+    ],
+    "correct_index": 1,
+    "explanation": "Convert to improper fractions: 7/4 × 8/3 = 56/12 = 14/3 = 4 2/3. The trap is multiplying whole numbers and fractional parts separately: (1×2) + (3/4×2/3) = 2 + 1/2 = 2 1/2."
+  },
+  {
+    "external_key": "MK-FR-B3-4",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Divide: (7/8) ÷ (7/4)",
+    "choices": [
+      "1/2",
+      "2",
+      "49/32",
+      "1/4"
+    ],
+    "correct_index": 0,
+    "explanation": "Dividing by a fraction means multiplying by its reciprocal: (7/8) × (4/7) = 28/56 = 1/2. The trap is multiplying straight across to get 49/32."
+  },
+  {
+    "external_key": "MK-FR-B3-5",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 4,
+    "stem": "A recipe calls for 2 2/3 cups of oats and 1 3/4 cups of flour. What is the combined total of these two ingredients?",
+    "choices": [
+      "4 1/12 cups",
+      "4 5/12 cups",
+      "4 7/12 cups",
+      "5 cups"
+    ],
+    "correct_index": 1,
+    "explanation": "2 2/3 = 2 8/12; 1 3/4 = 1 9/12. Sum = 3 17/12 = 4 5/12 cups."
+  },
+  {
+    "external_key": "MK-FR-B3-6",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 4,
+    "stem": "Convert 3/16 to a decimal.",
+    "choices": [
+      "0.1875",
+      "0.1975",
+      "0.3125",
+      "0.1667"
+    ],
+    "correct_index": 0,
+    "explanation": "3 ÷ 16 = 0.1875. A common trap is misreading 16 as 6 and computing 3 ÷ 6 = 0.5."
+  },
+  {
+    "external_key": "MK-FR-B3-7",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 4,
+    "stem": "Which of the following represents the greatest value?",
+    "choices": [
+      "0.6̄  (= 0.6666…)",
+      "5/7",
+      "7/11",
+      "0.63"
+    ],
+    "correct_index": 1,
+    "explanation": "As decimals: 0.666…; 5/7 ≈ 0.7143; 7/11 ≈ 0.6364; 0.63. Largest is 5/7 ≈ 0.7143. The trap is selecting 0.666… because it visually resembles a large value."
+  },
+  {
+    "external_key": "MK-FR-B3-8",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 5,
+    "stem": "A plank 7 1/2 feet long is cut into pieces each 5/8 foot long. How many complete pieces can be cut?",
+    "choices": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct_index": 2,
+    "explanation": "7 1/2 = 15/2 feet. Pieces = (15/2) ÷ (5/8) = (15/2) × (8/5) = 120/10 = 12 complete pieces."
+  },
+  {
+    "external_key": "MK-FR-B3-9",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 4,
+    "stem": "A runner completed 3/5 of a 15-mile race before stopping. After resting, she runs 2/3 of the remaining distance. How many miles does she still have left to run?",
+    "choices": [
+      "1 mile",
+      "2 miles",
+      "3 miles",
+      "4 miles"
+    ],
+    "correct_index": 1,
+    "explanation": "Completed first = 3/5 × 15 = 9 miles. Remaining = 6 miles. Second run = 2/3 × 6 = 4 miles. Still remaining = 6 − 4 = 2 miles."
+  },
+  {
+    "external_key": "MK-FR-B3-10",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 5,
+    "stem": "If 2/3 of a number equals 1/2 of another number, and the first number is 24, what is the second number?",
+    "choices": [
+      "16",
+      "28",
+      "32",
+      "36"
+    ],
+    "correct_index": 2,
+    "explanation": "2/3 × 24 = 16. So 1/2 × N = 16, which gives N = 32. The trap is stopping at 16 (the equal value) rather than solving for N."
+  },
+  {
+    "external_key": "MK-FR-B3-11",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 4,
+    "stem": "Which of the following is equal to 0.41̄6̄ (= 0.41666…)?",
+    "choices": [
+      "5/12",
+      "5/11",
+      "4/9",
+      "3/7"
+    ],
+    "correct_index": 0,
+    "explanation": "5/12 = 0.41666… (the 6 repeats). 5/11 = 0.4545…; 4/9 = 0.444…; 3/7 = 0.4285…. Only 5/12 matches the given decimal."
+  },
+  {
+    "external_key": "MK-FR-B3-12",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 5,
+    "stem": "A worker earns $22.50 per hour and works 37.5 hours in one week. Her employer withholds 28% of gross pay for taxes and deductions. What is her net pay for the week?",
+    "choices": [
+      "$607.50",
+      "$618.00",
+      "$632.25",
+      "$843.75"
+    ],
+    "correct_index": 0,
+    "explanation": "Gross pay = $22.50 × 37.5 = $843.75. Withholding = 28% × $843.75 = $236.25. Net pay = $843.75 − $236.25 = $607.50. The trap is selecting $843.75 (gross) or computing withholding on $22.50 alone."
+  },
+  {
+    "external_key": "MK-EP-B3-1",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "What is 3² + 2³?",
+    "choices": [
+      "10",
+      "13",
+      "17",
+      "19"
+    ],
+    "correct_index": 2,
+    "explanation": "3² = 9; 2³ = 8. Sum = 17. The trap is computing 3² as 3 × 2 = 6, giving 6 + 8 = 14."
+  },
+  {
+    "external_key": "MK-EP-B3-2",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify: 5⁴ ÷ 5²",
+    "choices": [
+      "5¹",
+      "5²",
+      "5⁶",
+      "25²"
+    ],
+    "correct_index": 1,
+    "explanation": "Dividing same-base powers: subtract exponents. 5⁴ ÷ 5² = 5^(4−2) = 5² = 25. The trap is multiplying the exponents (power of a power rule misapplied): 5^(4×2) = 5⁸."
+  },
+  {
+    "external_key": "MK-EP-B3-3",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "What is the value of 2⁰ + 3¹ + 4²?",
+    "choices": [
+      "16",
+      "18",
+      "20",
+      "22"
+    ],
+    "correct_index": 2,
+    "explanation": "2⁰ = 1; 3¹ = 3; 4² = 16. Sum = 20. The trap is treating 2⁰ = 0, giving 0 + 3 + 16 = 19."
+  },
+  {
+    "external_key": "MK-EP-B3-4",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "What is 10⁻²?",
+    "choices": [
+      "−100",
+      "−20",
+      "0.001",
+      "0.01"
+    ],
+    "correct_index": 3,
+    "explanation": "A negative exponent means take the reciprocal: 10⁻² = 1/10² = 1/100 = 0.01. The trap is writing the negative exponent as a negative number: −100."
+  },
+  {
+    "external_key": "MK-EP-B3-5",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Expand and simplify: (2x − 3)²",
+    "choices": [
+      "4x² − 9",
+      "4x² − 12x + 9",
+      "4x² + 12x + 9",
+      "4x² − 6x + 9"
+    ],
+    "correct_index": 1,
+    "explanation": "(2x − 3)² = (2x)² − 2(2x)(3) + 3² = 4x² − 12x + 9. The most common trap is squaring each term individually: (2x)² + (−3)² = 4x² + 9, forgetting the middle term."
+  },
+  {
+    "external_key": "MK-EP-B3-6",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Simplify: (3a²b)(4ab³)",
+    "choices": [
+      "7a²b³",
+      "12a²b³",
+      "12a³b⁴",
+      "7a³b⁴"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply coefficients: 3 × 4 = 12. Add a-exponents: 2 + 1 = 3. Add b-exponents: 1 + 3 = 4. Result: 12a³b⁴. The trap is adding coefficients instead of multiplying: 3 + 4 = 7."
+  },
+  {
+    "external_key": "MK-EP-B3-7",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Add the polynomials: (3x² − 2x + 5) + (x² + 4x − 3)",
+    "choices": [
+      "4x² + 2x + 2",
+      "4x² + 2x − 2",
+      "4x² − 2x + 2",
+      "3x² + 2x + 2"
+    ],
+    "correct_index": 0,
+    "explanation": "Combine like terms: (3x²+x²) + (−2x+4x) + (5−3) = 4x² + 2x + 2."
+  },
+  {
+    "external_key": "MK-EP-B3-8",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Factor completely: 2x² − 8",
+    "choices": [
+      "2(x − 2)(x − 2)",
+      "2(x + 2)(x − 2)",
+      "(2x + 4)(x − 2)",
+      "(x + 2)(2x − 4)"
+    ],
+    "correct_index": 1,
+    "explanation": "Factor out 2: 2(x² − 4). Then apply difference of squares: 2(x + 2)(x − 2). The trap choices (2x+4)(x−2) and (x+2)(2x−4) are equivalent but not fully factored."
+  },
+  {
+    "external_key": "MK-EP-B3-9",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "Simplify: (x³y²)² ÷ (x²y)",
+    "choices": [
+      "x²y",
+      "x⁴y³",
+      "x⁴y²",
+      "x²y³"
+    ],
+    "correct_index": 1,
+    "explanation": "Numerator: (x³y²)² = x⁶y⁴. Divide: x^(6−2) × y^(4−1) = x⁴y³."
+  },
+  {
+    "external_key": "MK-EP-B3-10",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "Expand: (x + 3)(x² − 3x + 9)",
+    "choices": [
+      "x³ − 27",
+      "x³ + 27",
+      "x³ − 9x + 27",
+      "x³ + 9x² − 27"
+    ],
+    "correct_index": 1,
+    "explanation": "This is the sum-of-cubes pattern: (a + b)(a² − ab + b²) = a³ + b³, with a = x, b = 3. Result = x³ + 27. Verify by expansion: x³ − 3x² + 9x + 3x² − 9x + 27 = x³ + 27."
+  },
+  {
+    "external_key": "MK-EP-B3-11",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Subtract and simplify: (5x² + 3x − 2) − (2x² − x + 4)",
+    "choices": [
+      "3x² + 4x − 6",
+      "3x² + 4x + 2",
+      "3x² + 2x − 6",
+      "7x² + 2x − 6"
+    ],
+    "correct_index": 0,
+    "explanation": "Distribute the negative sign: 5x² + 3x − 2 − 2x² + x − 4 = 3x² + 4x − 6. The trap is forgetting to distribute the negative to all terms: treating −(−x) as −x instead of +x."
+  },
+  {
+    "external_key": "MK-EP-B3-12",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "If x² − 5x + 6 = 0, what are the solutions?",
+    "choices": [
+      "x = 1 and x = 6",
+      "x = 2 and x = 3",
+      "x = −2 and x = −3",
+      "x = −1 and x = 6"
+    ],
+    "correct_index": 1,
+    "explanation": "Factor: (x − 2)(x − 3) = 0. Solutions: x = 2 and x = 3. Verify: 4 − 10 + 6 = 0 ✓; 9 − 15 + 6 = 0 ✓. The trap is choosing negative values (x = −2 and −3) by confusing factoring sign rules."
+  },
+  {
+    "external_key": "MK-GE-B3-1",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "What is the area of a triangle with base 10 cm and height 6 cm?",
+    "choices": [
+      "30 cm²",
+      "40 cm²",
+      "60 cm²",
+      "120 cm²"
+    ],
+    "correct_index": 0,
+    "explanation": "Area = (1/2) × base × height = (1/2) × 10 × 6 = 30 cm². The trap is omitting the 1/2 factor, giving 60 cm²."
+  },
+  {
+    "external_key": "MK-GE-B3-3",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A square has a side length of 13 cm. What is its perimeter?",
+    "choices": [
+      "36 cm",
+      "48 cm",
+      "52 cm",
+      "64 cm"
+    ],
+    "correct_index": 2,
+    "explanation": "Perimeter = 4 × 13 = 52 cm. The trap is computing the area: 13² = 169."
+  },
+  {
+    "external_key": "MK-GE-B3-4",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "A circular park has a circumference of 62.8 meters. What is its area in square meters? (Use π ≈ 3.14)",
+    "choices": [
+      "157 m²",
+      "200 m²",
+      "314 m²",
+      "628 m²"
+    ],
+    "correct_index": 2,
+    "explanation": "C = 2πr = 62.8 → r = 62.8 ÷ 6.28 = 10 m. Area = πr² = 3.14 × 100 = 314 m². The trap is using the circumference directly as the area (628/2 = 314 coincidentally matches but using r = C/π = 20 instead of r = C/(2π) = 10 gives 4× the correct area)."
+  },
+  {
+    "external_key": "MK-GE-B3-5",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "A rectangular swimming pool is 25 m long, 12 m wide, and 2 m deep. What is the volume of water needed to fill it completely?",
+    "choices": [
+      "300 m³",
+      "450 m³",
+      "600 m³",
+      "750 m³"
+    ],
+    "correct_index": 2,
+    "explanation": "Volume = 25 × 12 × 2 = 600 m³. The trap is computing the surface area and selecting a number based on that calculation."
+  },
+  {
+    "external_key": "MK-GE-B3-6",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "A trapezoid has parallel sides of 10 cm and 14 cm, and a height of 8 cm. What is its area?",
+    "choices": [
+      "88 cm²",
+      "92 cm²",
+      "96 cm²",
+      "100 cm²"
+    ],
+    "correct_index": 2,
+    "explanation": "Area = (1/2)(b₁ + b₂)(h) = (1/2)(10 + 14)(8) = (1/2)(24)(8) = 96 cm². The trap is omitting the 1/2: (10 + 14) × 8 = 192."
+  },
+  {
+    "external_key": "MK-GE-B3-7",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "A right triangle has a hypotenuse of 17 cm and one leg of 8 cm. What is the area of the triangle?",
+    "choices": [
+      "45 cm²",
+      "60 cm²",
+      "68 cm²",
+      "75 cm²"
+    ],
+    "correct_index": 1,
+    "explanation": "Missing leg = √(17² − 8²) = √(289 − 64) = √225 = 15 cm. Area = (1/2) × 8 × 15 = 60 cm². This uses the 8-15-17 Pythagorean triple."
+  },
+  {
+    "external_key": "MK-GE-B3-8",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "Two similar triangles have corresponding sides in a ratio of 3:5. The area of the smaller triangle is 27 cm². What is the area of the larger triangle?",
+    "choices": [
+      "45 cm²",
+      "60 cm²",
+      "75 cm²",
+      "135 cm²"
+    ],
+    "correct_index": 2,
+    "explanation": "Areas scale as the square of the linear ratio. Scale factor² = (5/3)² = 25/9. Larger area = 27 × 25/9 = 75 cm². The trap is applying the linear ratio: 27 × (5/3) = 45 cm²."
+  },
+  {
+    "external_key": "MK-GE-B3-9",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "A cone has a radius of 6 cm and a slant height of 10 cm. What is the total surface area of the cone? (Use π ≈ 3.14)",
+    "choices": [
+      "263.76 cm²",
+      "301.44 cm²",
+      "376.8 cm²",
+      "414.48 cm²"
+    ],
+    "correct_index": 1,
+    "explanation": "Lateral area = πrl = 3.14 × 6 × 10 = 188.4 cm². Base area = πr² = 3.14 × 36 = 113.04 cm². Total = 188.4 + 113.04 = 301.44 cm². The trap is computing only the lateral area (188.4) or using the slant height as the height in a volume formula."
+  },
+  {
+    "external_key": "MK-GE-B3-10",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "A rectangular garden 20 m long and 15 m wide is surrounded by a 2 m wide path. What is the area of the path alone?",
+    "choices": [
+      "148 m²",
+      "152 m²",
+      "156 m²",
+      "164 m²"
+    ],
+    "correct_index": 2,
+    "explanation": "Outer rectangle: (20 + 4) × (15 + 4) = 24 × 19 = 456 m². Garden area = 20 × 15 = 300 m². Path area = 456 − 300 = 156 m². The trap is adding 2 (not 4) to each dimension, giving 22 × 17 = 374; 374 − 300 = 74."
+  },
+  {
+    "external_key": "MK-GE-B3-11",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "A sphere has a radius of 6 cm. What is its volume to the nearest whole number? (Use π ≈ 3.14)",
+    "choices": [
+      "452 cm³",
+      "678 cm³",
+      "754 cm³",
+      "904 cm³"
+    ],
+    "correct_index": 3,
+    "explanation": "Volume = (4/3)πr³ = (4/3) × 3.14 × 216 = 4.186… × 216 ≈ 904 cm³. The trap is using the surface area formula 4πr² = 4 × 3.14 × 36 ≈ 452 cm² instead."
+  },
+  {
+    "external_key": "MK-GE-B3-12",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A rectangular room is 14 feet long and 10 feet wide. What is its area?",
+    "choices": [
+      "120 sq ft",
+      "130 sq ft",
+      "140 sq ft",
+      "150 sq ft"
+    ],
+    "correct_index": 2,
+    "explanation": "Area = 14 × 10 = 140 sq ft. The trap is computing the perimeter: 2(14 + 10) = 48 ft."
+  },
+  {
+    "external_key": "MK-NP-B3-1",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "Which of the following is NOT a factor of 60?",
+    "choices": [
+      "8",
+      "12",
+      "15",
+      "20"
+    ],
+    "correct_index": 0,
+    "explanation": "60 ÷ 8 = 7.5 — not a whole number, so 8 is not a factor. 60 ÷ 12 = 5; 60 ÷ 15 = 4; 60 ÷ 20 = 3 — all are factors."
+  },
+  {
+    "external_key": "MK-NP-B3-2",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "What is the LCM (least common multiple) of 8 and 12?",
+    "choices": [
+      "16",
+      "20",
+      "24",
+      "32"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiples of 8: 8, 16, 24…; multiples of 12: 12, 24… LCM = 24. The trap is multiplying 8 × 12 = 96, or confusing LCM with GCF (GCF = 4)."
+  },
+  {
+    "external_key": "MK-NP-B3-3",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "What is the GCF (greatest common factor) of 54 and 72?",
+    "choices": [
+      "6",
+      "9",
+      "12",
+      "18"
+    ],
+    "correct_index": 3,
+    "explanation": "54 = 2 × 3³; 72 = 2³ × 3². GCF = 2¹ × 3² = 18. The trap is selecting 9 (taking only 3²) or 6 (taking 2 × 3)."
+  },
+  {
+    "external_key": "MK-NP-B3-4",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "Which of the following numbers is divisible by both 3 and 4?",
+    "choices": [
+      "34",
+      "42",
+      "48",
+      "50"
+    ],
+    "correct_index": 2,
+    "explanation": "48 ÷ 3 = 16 ✓; 48 ÷ 4 = 12 ✓. The others fail: 34 ÷ 4 = 8.5; 42 ÷ 4 = 10.5; 50 ÷ 3 ≈ 16.67."
+  },
+  {
+    "external_key": "MK-NP-B3-5",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "What is the absolute value expression |−14| − |6 − 19|?",
+    "choices": [
+      "−1",
+      "0",
+      "1",
+      "27"
+    ],
+    "correct_index": 2,
+    "explanation": "|−14| = 14. |6 − 19| = |−13| = 13. 14 − 13 = 1. The trap is adding instead of subtracting: 14 + 13 = 27."
+  },
+  {
+    "external_key": "MK-NP-B3-6",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "How many prime numbers are between 20 and 40?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_index": 1,
+    "explanation": "Primes between 20 and 40: 23, 29, 31, 37. That is 4 primes. Students often include 21 (= 3×7), 27 (= 3×9), or 39 (= 3×13) by failing divisibility checks."
+  },
+  {
+    "external_key": "MK-NP-B3-7",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "A number N is divisible by 4, by 9, and by 5. What is the smallest positive value of N?",
+    "choices": [
+      "60",
+      "90",
+      "120",
+      "180"
+    ],
+    "correct_index": 3,
+    "explanation": "LCM(4, 9, 5): 4 = 2², 9 = 3², 5 = 5. LCM = 2² × 3² × 5 = 180. The trap is choosing 60 (LCM of 4 and 5 only) or 90 (LCM of 9 and 5 only, which is not divisible by 4)."
+  },
+  {
+    "external_key": "MK-NP-B3-8",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "When a positive integer n is divided by 7, the remainder is 4. What is the remainder when 3n is divided by 7?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "correct_index": 3,
+    "explanation": "n = 7k + 4 for some integer k. Then 3n = 21k + 12 = 7(3k + 1) + 5. The remainder is 5. The shortcut: (3 × 4) mod 7 = 12 mod 7 = 5."
+  },
+  {
+    "external_key": "MK-NP-B3-9",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 5,
+    "stem": "The product of two integers is −36 and their sum is −5. What are the two integers?",
+    "choices": [
+      "4 and −9",
+      "−4 and 9",
+      "3 and −12",
+      "6 and −6"
+    ],
+    "correct_index": 0,
+    "explanation": "4 × (−9) = −36 ✓; 4 + (−9) = −5 ✓. The trap answer −4 and 9 has the same product but sum = +5, not −5."
+  },
+  {
+    "external_key": "MK-NP-B3-10",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "If n is an even integer, which of the following expressions must also be even?",
+    "choices": [
+      "n² + 1",
+      "n² − n + 1",
+      "n² + n",
+      "n³ + 1"
+    ],
+    "correct_index": 2,
+    "explanation": "n even → n = 2k. n² + n = n(n + 1) = 2k(2k+1), which is always even. Check others: n² + 1 = even + 1 = odd; n² − n + 1 = even − even + 1 = odd; n³ + 1 = even + 1 = odd."
+  },
+  {
+    "external_key": "MK-NP-B3-11",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 5,
+    "stem": "A set of 5 integers has a mean of 8 and a range of 10. The smallest integer is 3. Which of the following could be the set?",
+    "choices": [
+      "{3, 6, 8, 11, 13}",
+      "{3, 7, 8, 9, 13}",
+      "{3, 8, 9, 10, 13}",
+      "{3, 5, 8, 10, 13}"
+    ],
+    "correct_index": 1,
+    "explanation": "Range = max − min = 10; min = 3, so max = 13. Mean = 8 with 5 integers → sum = 40. Check B: 3+7+8+9+13 = 40 ✓, range = 10 ✓. A: 3+6+8+11+13 = 41 ✗. C: 3+8+9+10+13 = 43 ✗. D: 3+5+8+10+13 = 39 ✗."
+  },
+  {
+    "external_key": "MK-NP-B3-12",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "Which statement is true about (−3)⁴?",
+    "choices": [
+      "It equals −81",
+      "It equals 81",
+      "It equals −12",
+      "It is undefined"
+    ],
+    "correct_index": 1,
+    "explanation": "(−3)⁴ = (−3)(−3)(−3)(−3) = 9 × 9 = 81. An even exponent applied to any real number produces a non-negative result. The trap is confusing (−3)⁴ with −(3⁴) = −81."
+  }
+]

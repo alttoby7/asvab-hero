@@ -1,0 +1,1622 @@
+[
+  {
+    "external_key": "AS-HT-B6-1",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which hand tool is used to tighten or loosen nuts and bolts and has an opening that can be adjusted to fit different fastener sizes?",
+    "choices": [
+      "Adjustable wrench",
+      "Needle-nose pliers",
+      "Cold chisel",
+      "Ball-peen hammer"
+    ],
+    "correct_index": 0,
+    "explanation": "An adjustable wrench (crescent wrench) has a movable jaw that can be set to grip different fastener sizes. Pliers grip by pressure rather than fitting a hex shape, so they risk rounding fastener corners."
+  },
+  {
+    "external_key": "AS-HT-B6-2",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "A mechanic needs to grip a round pipe firmly while cutting threads onto it. Which tool is designed specifically to hold cylindrical workpieces without slipping?",
+    "choices": [
+      "Slip-joint pliers",
+      "Pipe wrench",
+      "Box-end wrench",
+      "Offset screwdriver"
+    ],
+    "correct_index": 1,
+    "explanation": "A pipe wrench has serrated, self-tightening jaws angled so that applying torque causes them to bite harder into the cylinder. Box-end and open-end wrenches are designed for hex fasteners, not round stock."
+  },
+  {
+    "external_key": "AS-HT-B6-3",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A torque wrench is used instead of a standard socket wrench when:",
+    "choices": [
+      "you need to reach fasteners in deep recesses",
+      "tightening fasteners to a precise torque specification is required",
+      "the fastener head is stripped and will not grip",
+      "you are working in a tight space and need a ratcheting motion"
+    ],
+    "correct_index": 1,
+    "explanation": "A torque wrench applies a measured, calibrated twisting force to a fastener. This is critical for engine head bolts, wheel lug nuts, and other joints where over- or under-tightening causes failure. A standard ratchet cannot measure torque."
+  },
+  {
+    "external_key": "AS-HT-B6-4",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "What is the primary purpose of a center punch when working with metal?",
+    "choices": [
+      "To scribe a straight line across the workpiece",
+      "To mark a starting point so a drill bit does not wander",
+      "To remove burrs from a drilled hole",
+      "To cut a hole in sheet metal without a drill"
+    ],
+    "correct_index": 1,
+    "explanation": "A center punch creates a small indentation at the exact drilling location. This dimple seats the tip of the drill bit and prevents it from skating across the smooth metal surface as drilling begins."
+  },
+  {
+    "external_key": "AS-HT-B6-5",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A technician selects a drill bit with a twist-style cutting flute and a 118-degree included angle tip. This bit is best suited for drilling:",
+    "choices": [
+      "concrete and masonry",
+      "general-purpose holes in steel or aluminum",
+      "glass and ceramic tile",
+      "large-diameter holes in wood only"
+    ],
+    "correct_index": 1,
+    "explanation": "A standard high-speed steel (HSS) twist drill with a 118-degree point is the general-purpose choice for metals like steel and aluminum. Masonry bits have a carbide tip; glass bits require a spear-point or diamond tip."
+  },
+  {
+    "external_key": "AS-HT-B6-6",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A vise-grip (locking pliers) differs from standard slip-joint pliers in that a vise-grip:",
+    "choices": [
+      "can be used as a wrench on hex fasteners only",
+      "locks onto a workpiece and maintains clamping force without the user squeezing",
+      "is used exclusively for cutting wire",
+      "adjusts automatically to the size of the fastener"
+    ],
+    "correct_index": 1,
+    "explanation": "Locking pliers have an over-center mechanism: once the jaws are clamped, the linkage locks and the tool maintains grip without hand pressure. This frees the user's hands and applies constant clamping force — useful for holding, bending, and removing stripped fasteners."
+  },
+  {
+    "external_key": "AS-HT-B6-7",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A combination square is primarily used to:",
+    "choices": [
+      "apply torque to hex fasteners in tight spaces",
+      "measure and mark 90-degree and 45-degree angles on a workpiece",
+      "hold a workpiece in place during cutting",
+      "thread bolts onto nuts in hard-to-reach locations"
+    ],
+    "correct_index": 1,
+    "explanation": "A combination square consists of a rule and a sliding head that provides both 90-degree and 45-degree reference angles. It is used to mark cut lines, check squareness, and verify miters. It does not apply torque or hold workpieces."
+  },
+  {
+    "external_key": "AS-HT-B6-8",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A snap-ring pliers set includes two types of tips. One type spreads a ring outward to remove an external snap ring; the other type squeezes a ring inward to remove an internal snap ring. Why must the correct type be used?",
+    "choices": [
+      "Using the wrong type will damage the pliers' handles",
+      "Using the wrong type moves the ring in the wrong direction and can launch it unexpectedly or distort it",
+      "Both types are interchangeable; choice depends only on ring size",
+      "The wrong type will strip the threading on the fastener"
+    ],
+    "correct_index": 1,
+    "explanation": "External snap rings are compressed to fit into a shaft groove; internal rings are expanded to fit inside a bore groove. Using expanding pliers on an external ring — or compressing pliers on an internal ring — pushes the ring the wrong way, risking sudden release and possible injury or ring damage."
+  },
+  {
+    "external_key": "AS-HT-B6-9",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 4,
+    "stem": "A mechanic describes a tool as having a T-shaped handle, with a square drive that accepts interchangeable sockets, and a ratcheting pawl that allows rotation in one direction without removing the tool from the fastener. What tool is being described?",
+    "choices": [
+      "Breaker bar",
+      "Speed handle",
+      "Ratchet wrench",
+      "Flex-head torque wrench"
+    ],
+    "correct_index": 2,
+    "explanation": "A ratchet wrench has a reversible ratcheting mechanism that lets the user turn the handle back without moving the fastener, then apply torque again on the next forward stroke. A breaker bar provides high torque but does not ratchet; a speed handle spins freely but also lacks a ratchet pawl."
+  },
+  {
+    "external_key": "AS-HT-B6-10",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 4,
+    "stem": "When measuring a shaft's outside diameter, a technician reads a micrometer thimble scale and finds the sleeve reading is 0.350 inches and the thimble adds 0.012 inches. What is the total measured diameter?",
+    "choices": [
+      "0.338 inches",
+      "0.350 inches",
+      "0.362 inches",
+      "0.412 inches"
+    ],
+    "correct_index": 2,
+    "explanation": "A micrometer reading combines the barrel (sleeve) measurement and the thimble graduation. Total = 0.350 + 0.012 = 0.362 inches. Subtracting instead of adding (0.350 − 0.012 = 0.338) is a common error; the thimble always adds to the sleeve reading."
+  },
+  {
+    "external_key": "AS-HT-B6-11",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 4,
+    "stem": "A technician wants to cut an external thread onto a steel rod so a nut can be threaded onto it. Which hand tool accomplishes this?",
+    "choices": [
+      "Tap",
+      "Die",
+      "Reamer",
+      "Broach"
+    ],
+    "correct_index": 1,
+    "explanation": "A die cuts external threads onto a rod or bolt. A tap cuts internal threads inside a hole (to accept a bolt). A reamer smooths and sizes a drilled hole to a precise diameter but does not cut threads."
+  },
+  {
+    "external_key": "AS-HT-B6-12",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 5,
+    "stem": "A star-pattern torque sequence is specified when installing a cylinder head. Why is this sequence used instead of tightening bolts in order from one end to the other?",
+    "choices": [
+      "To finish faster by tightening the center bolts last",
+      "To distribute clamping load evenly and prevent the gasket from warping or sealing unevenly",
+      "Because cylinder head bolts are left-hand threaded on alternating positions",
+      "To allow the bolts to be re-tightened after the engine warms up"
+    ],
+    "correct_index": 1,
+    "explanation": "A star (criss-cross) pattern draws the head down against the gasket from the center outward in a balanced way. Tightening sequentially from one end pulls that end tight first, which can bow the head or create uneven gasket compression that leads to leaks."
+  },
+  {
+    "external_key": "AS-HT-B6-13",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 5,
+    "stem": "A feeler gauge (thickness gauge) is used to check the valve clearance in an engine. The technician inserts two blades: a 0.006-inch blade slides with slight drag; a 0.007-inch blade will not enter the gap. What does this tell the technician?",
+    "choices": [
+      "The clearance is exactly 0.006 inches",
+      "The clearance is between 0.006 and 0.007 inches",
+      "The clearance is less than 0.006 inches",
+      "The clearance is greater than 0.007 inches"
+    ],
+    "correct_index": 1,
+    "explanation": "A feeler gauge works by go/no-go logic. The 0.006-inch blade fits (gap is at least 0.006 in), but the 0.007-inch blade does not fit (gap is less than 0.007 in). Therefore the clearance lies between 0.006 and 0.007 inches."
+  },
+  {
+    "external_key": "AS-VS-B6-1",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "In a four-stroke gasoline engine, which stroke draws the air-fuel mixture into the cylinder?",
+    "choices": [
+      "Compression stroke",
+      "Power stroke",
+      "Intake stroke",
+      "Exhaust stroke"
+    ],
+    "correct_index": 2,
+    "explanation": "The four strokes in order are: intake (piston moves down, drawing in air-fuel mixture), compression (piston moves up, compressing the mixture), power (spark ignites mixture, piston pushed down), and exhaust (piston moves up, pushing burnt gases out)."
+  },
+  {
+    "external_key": "AS-VS-B6-2",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "The purpose of a vehicle's clutch in a manual transmission is to:",
+    "choices": [
+      "regulate engine idle speed",
+      "temporarily disconnect the engine from the transmission to allow gear changes",
+      "convert the alternator's output to DC current",
+      "control the flow of coolant to the engine block"
+    ],
+    "correct_index": 1,
+    "explanation": "The clutch uses friction plates to engage and disengage the engine from the transmission. Pressing the clutch pedal separates the plates, allowing the driver to shift gears without grinding. Releasing the pedal reconnects engine power to the drivetrain."
+  },
+  {
+    "external_key": "AS-VS-B6-3",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What is the function of a vehicle's differential?",
+    "choices": [
+      "It filters fuel before it reaches the injectors",
+      "It allows the drive wheels to rotate at different speeds when turning",
+      "It regulates the voltage output of the charging system",
+      "It compresses refrigerant in the air conditioning system"
+    ],
+    "correct_index": 1,
+    "explanation": "When a vehicle turns, the outer wheel must travel a larger arc than the inner wheel and therefore must rotate faster. The differential uses a planetary gear set to allow the two drive wheels to spin at different speeds while still receiving engine torque."
+  },
+  {
+    "external_key": "AS-VS-B6-4",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A vehicle's battery provides current to start the engine. Once the engine is running, which component keeps the battery charged?",
+    "choices": [
+      "Starter motor",
+      "Distributor",
+      "Alternator",
+      "Voltage regulator only"
+    ],
+    "correct_index": 2,
+    "explanation": "The alternator is driven by a belt from the engine crankshaft and generates AC electricity, which is converted to DC to recharge the battery and power electrical loads while the engine runs. The starter is only used during cranking."
+  },
+  {
+    "external_key": "AS-VS-B6-5",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "Disc brakes use calipers and rotors. When the brake pedal is pressed, what converts pedal force into hydraulic pressure that actuates the calipers?",
+    "choices": [
+      "The brake booster",
+      "The master cylinder",
+      "The proportioning valve",
+      "The ABS modulator"
+    ],
+    "correct_index": 1,
+    "explanation": "The master cylinder converts the mechanical force of the brake pedal (often amplified by a vacuum booster) into hydraulic pressure in the brake lines. This pressure pushes caliper pistons outward to clamp the pads against the rotor."
+  },
+  {
+    "external_key": "AS-VS-B6-6",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "Engine oil pressure drops to near zero while the engine is running at highway speed. The FIRST action should be to:",
+    "choices": [
+      "Continue driving to the nearest service station",
+      "Shut off the engine immediately to prevent catastrophic bearing damage",
+      "Add oil while the engine is running",
+      "Rev the engine to increase oil pump speed"
+    ],
+    "correct_index": 1,
+    "explanation": "Oil pressure lubricates engine bearings and prevents metal-to-metal contact. Near-zero pressure means bearings are running dry; continued operation causes scoring and seizure within seconds. Shutting off the engine immediately is the correct response."
+  },
+  {
+    "external_key": "AS-VS-B6-7",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "An automatic transmission uses a torque converter instead of a clutch. The torque converter:",
+    "choices": [
+      "mechanically locks the engine to the transmission at all times",
+      "uses hydraulic fluid to transfer and multiply torque between engine and transmission",
+      "shifts gears by means of a centrifugal governor",
+      "replaces the differential in front-wheel-drive vehicles"
+    ],
+    "correct_index": 1,
+    "explanation": "The torque converter is a fluid coupling filled with transmission fluid. The engine drives a pump impeller; fluid motion spins a turbine connected to the transmission input shaft. At low speeds the fluid also provides torque multiplication, acting like a variable gear reduction."
+  },
+  {
+    "external_key": "AS-VS-B6-8",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 4,
+    "stem": "A vehicle's temperature gauge climbs into the red zone. Steam is seen coming from under the hood. The MOST likely cause is:",
+    "choices": [
+      "A low transmission fluid level",
+      "A burst radiator hose or failed thermostat causing coolant loss",
+      "An overcharged battery",
+      "A stuck-open EGR valve"
+    ],
+    "correct_index": 1,
+    "explanation": "Steam and a rising temperature gauge together indicate coolant is escaping and the engine is no longer being cooled. The most common culprits are a burst hose, blown head gasket, or failed thermostat that traps coolant in the block. Low transmission fluid causes shifting problems, not overheating steam."
+  },
+  {
+    "external_key": "AS-VS-B6-9",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 4,
+    "stem": "A fuel-injected engine uses an oxygen sensor (O2 sensor) in the exhaust stream. The engine control module (ECM) uses the O2 sensor signal to:",
+    "choices": [
+      "determine ignition timing advance based on knock",
+      "adjust the fuel injector pulse width to maintain the proper air-fuel ratio",
+      "regulate alternator output voltage",
+      "control cooling fan speed based on engine temperature"
+    ],
+    "correct_index": 1,
+    "explanation": "The O2 sensor measures oxygen content in exhaust gases, which indicates whether combustion was rich (too much fuel) or lean (too little fuel). The ECM uses this feedback in a closed-loop system to trim injector on-time (pulse width) and keep the mixture near stoichiometric (14.7:1 air-to-fuel ratio)."
+  },
+  {
+    "external_key": "AS-VS-B6-10",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 4,
+    "stem": "A front-wheel-drive vehicle clicks loudly when turning at low speed but is quiet when driving straight. The most likely cause is:",
+    "choices": [
+      "A worn constant-velocity (CV) joint",
+      "Low power-steering fluid",
+      "A cracked brake rotor",
+      "A loose exhaust heat shield"
+    ],
+    "correct_index": 0,
+    "explanation": "CV joints allow the drive axle to transmit power through a range of angles as the front wheels turn and move with suspension travel. When a CV joint's boot tears and loses grease, the joint wears and produces a clicking or popping noise that is loudest during sharp, low-speed turns."
+  },
+  {
+    "external_key": "AS-VS-B6-11",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 5,
+    "stem": "A technician notices that the engine temperature rises quickly to normal then a short time later climbs well above normal, cools slightly, then rises again in a repeating cycle. The MOST likely cause is:",
+    "choices": [
+      "A clogged catalytic converter",
+      "A thermostat that is stuck partially open, cycling the engine through warm-cool oscillations",
+      "A blown head gasket allowing combustion gases into the cooling system",
+      "A faulty coolant temperature sensor sending erratic signals to the ECM"
+    ],
+    "correct_index": 2,
+    "explanation": "A blown head gasket allows combustion gases (under high pressure) to enter the cooling system. These gases displace coolant, form pockets that reduce cooling efficiency, and can cause the temperature to cycle as coolant is intermittently lost and returned. A stuck thermostat causes persistent overheating or chronic under-temperature, not cycling. A faulty sensor changes gauge readings but not actual temperature."
+  },
+  {
+    "external_key": "AS-VS-B6-12",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 5,
+    "stem": "An engine knocks heavily under load but the knock nearly disappears at idle. This is most consistent with:",
+    "choices": [
+      "A cracked flywheel",
+      "Pre-ignition (detonation) caused by low-octane fuel or advanced timing",
+      "A broken engine mount",
+      "An air leak in the intake manifold"
+    ],
+    "correct_index": 1,
+    "explanation": "Detonation (knock or ping) occurs when the air-fuel mixture ignites spontaneously before the spark plug fires, causing a shock wave inside the cylinder. It is most pronounced under load when cylinder pressures and temperatures are high, and nearly absent at light-throttle idle. Low-octane fuel, carbon deposits causing hot spots, or over-advanced ignition timing are common causes."
+  },
+  {
+    "external_key": "AS-SS-B6-1",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "When working in a shop where gasoline or solvent vapors may be present, adequate ventilation is required primarily to:",
+    "choices": [
+      "keep tools at the correct operating temperature",
+      "prevent accumulation of flammable vapors that could ignite",
+      "ensure that paint dries faster",
+      "reduce humidity that causes rust on tools"
+    ],
+    "correct_index": 1,
+    "explanation": "Gasoline, solvent, and similar vapors are heavier than air and collect at floor level. In an enclosed, unventilated space they can reach explosive concentrations. Proper ventilation dilutes vapors below their lower explosive limit, preventing ignition."
+  },
+  {
+    "external_key": "AS-SS-B6-2",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "A small Class B fire breaks out in the shop. Class B fires involve flammable liquids such as gasoline or oil. Which type of extinguisher is appropriate?",
+    "choices": [
+      "Water extinguisher",
+      "Class A dry extinguisher",
+      "CO2 or dry chemical extinguisher rated for Class B",
+      "Any available extinguisher regardless of rating"
+    ],
+    "correct_index": 2,
+    "explanation": "Water on a flammable-liquid (Class B) fire can spread burning fuel and make the fire worse. CO2 smothers the fire by displacing oxygen; dry chemical extinguishers interrupt the chemical chain reaction. Both are rated for Class B fires."
+  },
+  {
+    "external_key": "AS-SS-B6-3",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Lockout/tagout (LOTO) procedures are required before performing maintenance on a machine. The PRIMARY purpose of LOTO is to:",
+    "choices": [
+      "document the maintenance procedure for quality records",
+      "prevent the machine from being energized while a worker is inside or working on it",
+      "notify supervisors that the equipment is being serviced",
+      "ensure tools are returned to their correct storage locations"
+    ],
+    "correct_index": 1,
+    "explanation": "LOTO procedures physically lock energy-isolation devices (circuit breakers, valves) in the off position and attach a tag. This prevents the machine from being accidentally energized while a worker's hands or body are in a dangerous position inside the equipment."
+  },
+  {
+    "external_key": "AS-SS-B6-4",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A shop worker spills a small amount of motor oil on the floor. The safest IMMEDIATE action is to:",
+    "choices": [
+      "Mark the spill with a cone and clean it up at the end of the shift",
+      "Spread sawdust or absorbent material and clean it up promptly",
+      "Wipe it with a rag and place the rag in an open trash can",
+      "Pour water over the spill to dilute it"
+    ],
+    "correct_index": 1,
+    "explanation": "An oil spill is a slip hazard and must be cleaned up immediately. Oil-absorbent compound (or sawdust) draws up the liquid; the material is then swept and disposed of properly. Leaving it until shift end risks falls; oily rags in open trash cans can spontaneously combust."
+  },
+  {
+    "external_key": "AS-SS-B6-5",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A worker is grinding metal and is producing sparks and metal fragments. Besides eye protection, what additional PPE should be worn?",
+    "choices": [
+      "Latex examination gloves and a dust mask",
+      "Face shield over safety glasses, leather gloves, and hearing protection",
+      "Safety glasses only — sparks are not hazardous at short range",
+      "Chemical-splash goggles and a rubber apron"
+    ],
+    "correct_index": 1,
+    "explanation": "Grinding produces sparks (burn hazard), metal fragments (impact hazard), and loud noise (hearing hazard). A full face shield over safety glasses provides both impact and burn protection for the face; leather gloves protect hands from sharp edges and heat; hearing protection guards against noise-induced damage."
+  },
+  {
+    "external_key": "AS-SS-B6-6",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "Before lifting a vehicle with a floor jack to work underneath it, you MUST also:",
+    "choices": [
+      "Remove the wheels first to reduce vehicle weight",
+      "Place jack stands under the vehicle's frame or pinch-weld points to support it",
+      "Set the parking brake and leave the floor jack as the only support",
+      "Run the engine for 10 minutes to warm the oil before working"
+    ],
+    "correct_index": 1,
+    "explanation": "A floor (hydraulic) jack can fail due to seal leakage or accidental contact. Jack stands are rigid mechanical supports that prevent the vehicle from dropping onto a person working beneath it. Never rely on a jack alone as the sole support for a vehicle you are working under."
+  },
+  {
+    "external_key": "AS-SS-B6-7",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "Oily rags used for wiping up solvent or paint should be stored in a:",
+    "choices": [
+      "Cardboard box kept away from windows",
+      "Sealed metal container approved for flammable waste",
+      "Plastic bin lined with a trash bag",
+      "Open drum to allow vapors to escape"
+    ],
+    "correct_index": 1,
+    "explanation": "Oils and solvents soaked into rags can oxidize and generate heat through spontaneous combustion. A sealed metal container limits oxygen supply and contains any fire that starts. Plastic bins can melt; open drums allow vapor to accumulate and ignite."
+  },
+  {
+    "external_key": "AS-SS-B6-8",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 4,
+    "stem": "A worker is about to use a bench grinder and notices that the grinding wheel has a small crack running from the center outward. The correct action is to:",
+    "choices": [
+      "Run it at low speed only to avoid spreading the crack",
+      "Replace the wheel immediately; a cracked wheel can shatter at high RPM",
+      "Apply epoxy to the crack and allow it to cure before use",
+      "Use the wheel on the side face rather than the rim to avoid the crack"
+    ],
+    "correct_index": 1,
+    "explanation": "A cracked abrasive wheel can explode at operating RPM, sending fragments outward with great force. Any crack, chip, or damage is grounds for immediate replacement. Running it at lower speed or using the side face does not eliminate the risk of sudden catastrophic failure."
+  },
+  {
+    "external_key": "AS-SS-B6-9",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 4,
+    "stem": "Which class of fire involves energized electrical equipment?",
+    "choices": [
+      "Class A",
+      "Class B",
+      "Class C",
+      "Class D"
+    ],
+    "correct_index": 2,
+    "explanation": "Class C fires involve energized electrical equipment. Class A covers ordinary combustibles (wood, paper); Class B covers flammable liquids; Class D covers combustible metals. For Class C fires, use a non-conductive extinguishing agent (CO2 or dry chemical); water is dangerous because it conducts electricity."
+  },
+  {
+    "external_key": "AS-SS-B6-10",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 4,
+    "stem": "Before entering a large tank or enclosed space for maintenance work, a technician should first:",
+    "choices": [
+      "Enter quickly and complete the task before vapors build up",
+      "Test the atmosphere for oxygen level and toxic or flammable vapors",
+      "Bring a lit lamp inside to check for visibility",
+      "Seal any ventilation openings to keep temperature stable"
+    ],
+    "correct_index": 1,
+    "explanation": "Confined spaces can contain oxygen-deficient atmospheres or accumulated toxic/flammable vapors from residues. Atmospheric testing with calibrated instruments is mandatory before entry. Entering without testing risks asphyxiation, explosion, or poisoning."
+  },
+  {
+    "external_key": "AS-SS-B6-11",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 5,
+    "stem": "A shop receives a drum of a new cleaning solvent. The Safety Data Sheet (SDS) lists an IDLH (Immediately Dangerous to Life and Health) concentration of 100 ppm. This value means that:",
+    "choices": [
+      "100 ppm is the safe, permissible exposure limit for an 8-hour shift",
+      "at 100 ppm, a worker without a respirator faces conditions from which escape may be impaired or irreversible harm may occur",
+      "100 ppm is the concentration at which the solvent becomes flammable",
+      "100 ppm must be measured monthly to comply with OSHA standards"
+    ],
+    "correct_index": 1,
+    "explanation": "IDLH defines the maximum concentration from which a healthy worker could escape within 30 minutes without escape-impairing symptoms or irreversible health effects. It is used to select respirator types for emergency planning. The permissible exposure limit (PEL) is a separate, lower value for routine shift exposure."
+  },
+  {
+    "external_key": "AS-SS-B6-12",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 5,
+    "stem": "A shop policy requires that all rotating machinery guards be in place before the machine is started. A supervisor removes a guard temporarily for an adjustment and then leaves without replacing it. The correct action for the next technician who needs to use the machine is to:",
+    "choices": [
+      "Use the machine quickly and then replace the guard afterward",
+      "Report the missing guard and refuse to operate the machine until the guard is reinstalled",
+      "Operate the machine while holding the guard in place manually",
+      "Tape cardboard over the exposed area as a temporary barrier"
+    ],
+    "correct_index": 1,
+    "explanation": "Machine guards are a primary engineering control against contact with rotating parts. Operating unguarded machinery violates safety standards and exposes the worker to serious injury. The correct response is to stop, report the hazard to a supervisor, and await proper repair before operating the machine."
+  },
+  {
+    "external_key": "AS-MR-B6-1",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "Coolant reservoir level is checked and found to be below the MIN mark while the engine is cold. What is the correct action?",
+    "choices": [
+      "Add the correct antifreeze-water mixture to bring the level to the MIN-MAX range",
+      "Drain and replace all coolant regardless of level",
+      "Add straight water only so coolant does not become too concentrated",
+      "The reservoir level is irrelevant; check only the radiator cap"
+    ],
+    "correct_index": 0,
+    "explanation": "The overflow reservoir is the service point for most modern cooling systems. If the level is below MIN when cold, add the manufacturer-specified antifreeze/water mix (typically 50/50) to bring it into the MIN-MAX range. Adding straight water repeatedly dilutes the antifreeze and reduces freeze/boil protection."
+  },
+  {
+    "external_key": "AS-MR-B6-2",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "The low-oil pressure warning light illuminates while idling at a stoplight. The engine sounds normal. The driver should FIRST:",
+    "choices": [
+      "Rev the engine to 3,000 RPM to build oil pressure",
+      "Turn off the engine, check the oil level, and add oil if needed before restarting",
+      "Continue driving — oil pressure lights are often faulty",
+      "Add transmission fluid to the engine to restore pressure quickly"
+    ],
+    "correct_index": 1,
+    "explanation": "A low oil pressure warning can indicate low oil level, low oil pressure, or a failing oil pressure sensor. The safest immediate action is to shut off the engine (protecting it from oil starvation), check the dipstick, and add oil if the level is low. Never add transmission fluid to an engine — it can damage seals and bearings."
+  },
+  {
+    "external_key": "AS-MR-B6-3",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A technician checks the brake fluid and finds it is dark brown and appears contaminated. The correct service action is to:",
+    "choices": [
+      "Top off with fresh fluid to dilute the contamination",
+      "Flush the brake system and fill with fresh fluid of the correct DOT specification",
+      "Add a brake fluid conditioner and continue use",
+      "No action needed — brake fluid darkens naturally and remains effective"
+    ],
+    "correct_index": 1,
+    "explanation": "Brake fluid is hygroscopic and absorbs water over time, lowering its boiling point and promoting corrosion of metal components. Dark, contaminated fluid should be flushed from the system completely and replaced with fresh fluid matching the vehicle's DOT rating (e.g., DOT 3, DOT 4). Topping off only dilutes the contamination without removing it."
+  },
+  {
+    "external_key": "AS-MR-B6-4",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A driver notices the engine hesitates and stumbles when accelerating from a stop. A mechanic inspects and finds the air filter is completely clogged with dirt. Why would a clogged air filter cause this symptom?",
+    "choices": [
+      "The filter restricts airflow, creating an excessively rich fuel mixture that makes the engine stumble under load",
+      "The filter blocks cooling airflow to the radiator",
+      "A clogged filter increases intake air temperature, advancing ignition timing",
+      "The filter restricts oil return to the crankcase"
+    ],
+    "correct_index": 0,
+    "explanation": "The engine needs a precise air-fuel ratio. A severely clogged air filter restricts incoming air, causing the mixture to become too rich (too much fuel relative to air). Under load the engine stumbles because combustion is incomplete. At idle, the effect may be minor, but under acceleration it becomes pronounced."
+  },
+  {
+    "external_key": "AS-MR-B6-5",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A technician replaces a worn serpentine belt. After installation, the belt squeals briefly when the engine is cold but goes away when warmed. The MOST likely cause is:",
+    "choices": [
+      "The replacement belt is too long",
+      "Slight slipping on a pulley due to condensation or belt material until the belt seats fully",
+      "The tensioner pulley bearing has failed",
+      "A mismatch in belt rib count"
+    ],
+    "correct_index": 1,
+    "explanation": "Brief cold squealing from a new belt is common as the rubber conforms to pulley grooves and surface moisture evaporates. If squealing persists or occurs warm, it indicates a worn tensioner, glazed pulley, or incorrect belt. Rib-count mismatches produce constant noise and would cause the belt to mistrack."
+  },
+  {
+    "external_key": "AS-MR-B6-6",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "When replacing brake pads on a disc brake vehicle, a technician compresses the caliper piston back into the caliper bore. Before doing so, what precaution should be taken?",
+    "choices": [
+      "Open the bleeder screw to release pressure while compressing the piston",
+      "Remove the master cylinder reservoir cap and siphon out some fluid to prevent overflow as the piston is pushed back",
+      "Disconnect the ABS module to prevent error codes",
+      "Add brake fluid to the reservoir to prevent air from entering"
+    ],
+    "correct_index": 1,
+    "explanation": "Pushing the caliper piston back forces fluid backward into the master cylinder reservoir. If the reservoir is full, this fluid has nowhere to go and will overflow, potentially damaging painted surfaces or rubber seals. Removing the reservoir cap and siphoning excess fluid first prevents overflow. (The bleeder screw method also works but requires catching old fluid separately.)"
+  },
+  {
+    "external_key": "AS-MR-B6-7",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 4,
+    "stem": "A spark plug removed from a cylinder has a wet, oily black deposit coating the ceramic insulator and electrodes. This most likely indicates:",
+    "choices": [
+      "The engine is running too lean",
+      "Oil is entering the combustion chamber due to worn piston rings or valve seals",
+      "The ignition timing is excessively advanced",
+      "The coolant system is leaking into the cylinder"
+    ],
+    "correct_index": 1,
+    "explanation": "An oil-fouled spark plug — wet and black — indicates oil contamination in the combustion chamber. This happens when piston rings wear and lose their seal, or when valve stem seals fail and allow oil to enter from the valve guides. A lean mixture leaves a white powdery deposit; coolant leaks leave a white crusty or sweet-smelling residue."
+  },
+  {
+    "external_key": "AS-MR-B6-8",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 4,
+    "stem": "A vehicle's power steering pump whines loudly when the steering wheel is turned to full lock in either direction. The fluid level is within the normal range. The MOST likely cause is:",
+    "choices": [
+      "Overfilled power steering reservoir",
+      "Normal cavitation at the pressure limit — acceptable as long as not held at full lock for extended time",
+      "A failing electric power steering motor",
+      "A clogged hydraulic return line causing system overpressure"
+    ],
+    "correct_index": 1,
+    "explanation": "Hydraulic power steering systems reach their maximum pressure limit at full steering lock. The pump continues to build pressure against a closed circuit, causing fluid to cavitate (form vapor bubbles) and produce a whining or moaning sound. This is normal for short periods; holding full lock for extended time can damage the pump. If it whines at all steering positions, that indicates a different problem."
+  },
+  {
+    "external_key": "AS-MR-B6-9",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 4,
+    "stem": "A visual inspection of a vehicle's exhaust smoke reveals continuous white smoke from a cold engine that does NOT clear after warm-up. This most likely indicates:",
+    "choices": [
+      "Normal condensation burning off",
+      "A rich fuel mixture from a faulty injector",
+      "Coolant entering the combustion chamber through a failed head gasket",
+      "Burning engine oil due to a cracked piston"
+    ],
+    "correct_index": 2,
+    "explanation": "Light white smoke on cold startup that clears quickly is normal condensation. Persistent white smoke after warm-up that has a sweet smell and does not dissipate strongly indicates coolant (antifreeze) burning in the cylinders — a hallmark of a blown head gasket or cracked block. Oil smoke tends to be blue-gray with an acrid odor."
+  },
+  {
+    "external_key": "AS-MR-B6-10",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 5,
+    "stem": "A technician performs a cylinder compression test and finds cylinder 3 has 80 psi while all others read 165 psi. Adding a small amount of oil to cylinder 3 through the spark plug hole raises its compression to 150 psi. What does this indicate?",
+    "choices": [
+      "A bent intake valve in cylinder 3",
+      "Worn piston rings in cylinder 3 — the oil temporarily seals the gap",
+      "A cracked cylinder wall in cylinder 3",
+      "A leaking head gasket between cylinders 3 and 4"
+    ],
+    "correct_index": 1,
+    "explanation": "This is the wet compression test. Adding oil temporarily seals the ring-to-cylinder-wall gap. If compression rises significantly when oil is added, the low reading is caused by ring wear or blow-by, not by a valve or gasket problem. A valve issue would not improve with oil because valves seal above the rings."
+  },
+  {
+    "external_key": "AS-MR-B6-11",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 5,
+    "stem": "After replacing a vehicle's oxygen sensor, the technician clears the fault code and performs a drive cycle, but the check-engine light returns with the same code. The NEXT diagnostic step is to:",
+    "choices": [
+      "Replace the oxygen sensor again with a higher-grade part",
+      "Check wiring harness continuity and inspect for exhaust leaks upstream of the sensor",
+      "Replace the catalytic converter, as it is the usual cause of sensor codes",
+      "Reprogram the ECM with updated software"
+    ],
+    "correct_index": 1,
+    "explanation": "If a new sensor triggers the same code, the sensor is likely not the root cause. The technician should inspect the wiring harness for shorts, opens, or damaged connectors, and check for exhaust leaks upstream that can introduce false oxygen readings. Replacing parts without checking the circuit is inefficient and costly."
+  },
+  {
+    "external_key": "AS-MR-B6-12",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A technician finds the battery terminals heavily corroded with a white-blue crusty buildup. After cleaning the terminals, what is the correct follow-up action?",
+    "choices": [
+      "Replace the battery immediately regardless of its test results",
+      "Apply a battery terminal protector spray or grease to prevent future corrosion",
+      "Coat the terminals with motor oil for corrosion protection",
+      "Tighten the terminal clamps as hard as possible to ensure good contact"
+    ],
+    "correct_index": 1,
+    "explanation": "After cleaning corrosion from battery terminals, a protective spray (petroleum-based terminal spray or anti-corrosion felt pads) applied to the terminals significantly reduces the rate of future corrosion by sealing the metal from battery acid vapors. Motor oil is not intended for this purpose and can attract dirt."
+  },
+  {
+    "external_key": "MC-LP-B6-1",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "Which class of lever has the effort force applied between the fulcrum and the load?",
+    "choices": [
+      "First-class lever",
+      "Second-class lever",
+      "Third-class lever",
+      "Fourth-class lever"
+    ],
+    "correct_index": 2,
+    "explanation": "In a third-class lever the effort is between the fulcrum and the load (e.g., a fishing rod or tweezers). First-class has the fulcrum in the middle (e.g., a seesaw); second-class has the load in the middle (e.g., a wheelbarrow). There is no fourth-class lever."
+  },
+  {
+    "external_key": "MC-LP-B6-2",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "A first-class lever has its fulcrum exactly in the middle, with a 20-pound weight on each side. The lever is:",
+    "choices": [
+      "Balanced, with no mechanical advantage",
+      "Tipped toward the left side",
+      "Tipped toward the right side",
+      "Providing a mechanical advantage of 2"
+    ],
+    "correct_index": 0,
+    "explanation": "When both sides have equal weight at equal distance from the fulcrum, torques are equal and the lever is balanced. Mechanical advantage requires the effort arm to be longer than the load arm; equal arm lengths give MA = 1 (no advantage, just direction change)."
+  },
+  {
+    "external_key": "MC-LP-B6-3",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A lever has a 4-foot effort arm and a 1-foot load arm. What is the mechanical advantage?",
+    "choices": [
+      "1",
+      "2",
+      "4",
+      "5"
+    ],
+    "correct_index": 2,
+    "explanation": "Mechanical advantage of a lever = effort arm length / load arm length = 4 / 1 = 4. This means you can lift a 4-pound load with 1 pound of effort (ignoring the lever's own weight)."
+  },
+  {
+    "external_key": "MC-LP-B6-4",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A movable pulley is attached to the load rather than to a fixed point. Compared to a single fixed pulley, a single movable pulley:",
+    "choices": [
+      "Provides no change in mechanical advantage",
+      "Doubles the mechanical advantage to 2 by supporting the load with two rope segments",
+      "Triples the mechanical advantage to 3",
+      "Reverses the direction of pull with no force benefit"
+    ],
+    "correct_index": 1,
+    "explanation": "A movable pulley travels with the load. Both sides of the rope support the load, so each side bears half the weight — giving a mechanical advantage of 2. The trade-off is that you pull twice the rope distance (distance is doubled, force is halved)."
+  },
+  {
+    "external_key": "MC-LP-B6-5",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A 90-pound load is placed 2 feet from the fulcrum of a lever. To balance the load, how much force must be applied at a point 6 feet from the fulcrum on the other side?",
+    "choices": [
+      "15 pounds",
+      "30 pounds",
+      "45 pounds",
+      "180 pounds"
+    ],
+    "correct_index": 1,
+    "explanation": "Lever equilibrium: Load × Load arm = Effort × Effort arm. 90 × 2 = Effort × 6. Effort = 180 / 6 = 30 pounds. The common trap is dividing the load by the load arm (90 / 2 = 45) rather than setting up the full balance equation."
+  },
+  {
+    "external_key": "MC-LP-B6-6",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "A compound pulley system has one fixed pulley and two movable pulleys, resulting in 5 rope segments supporting the load. If the load weighs 200 pounds, how much effort force is needed (ignoring friction)?",
+    "choices": [
+      "20 pounds",
+      "40 pounds",
+      "50 pounds",
+      "100 pounds"
+    ],
+    "correct_index": 1,
+    "explanation": "Mechanical advantage = number of rope segments supporting the load = 5. Effort = Load / MA = 200 / 5 = 40 pounds. Dividing by the number of pulleys rather than rope segments is the common error."
+  },
+  {
+    "external_key": "MC-LP-B6-7",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "A crowbar (first-class lever) is 4 feet long. The fulcrum is placed 6 inches from the load end. How long is the effort arm?",
+    "choices": [
+      "6 inches",
+      "42 inches",
+      "3.5 feet",
+      "4 feet"
+    ],
+    "correct_index": 1,
+    "explanation": "Total lever length = 4 feet = 48 inches. Load arm = 6 inches. Effort arm = 48 − 6 = 42 inches. MA = 42 / 6 = 7 — a significant mechanical advantage. The trap is reporting the effort arm as 4 feet (the whole lever)."
+  },
+  {
+    "external_key": "MC-LP-B6-8",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "A flagpole uses a fixed pulley at the top. When you pull the rope down, the flag goes up. What does this pulley change?",
+    "choices": [
+      "The magnitude of the required force",
+      "Only the direction of the applied force",
+      "Both the direction and the magnitude of the force",
+      "The speed of the rope only"
+    ],
+    "correct_index": 1,
+    "explanation": "A single fixed pulley has a mechanical advantage of 1 — it does not reduce the force needed. Its only benefit is redirecting the force: you pull down to move the load up, which is more convenient. To reduce required force you need a movable pulley or a compound system."
+  },
+  {
+    "external_key": "MC-LP-B6-9",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 4,
+    "stem": "A block-and-tackle system supports a 360-pound load with 6 rope segments. You pull the free rope end upward 12 feet. How far does the load actually rise?",
+    "choices": [
+      "2 feet",
+      "6 feet",
+      "12 feet",
+      "72 feet"
+    ],
+    "correct_index": 0,
+    "explanation": "With 6 rope segments sharing the load, you trade force for distance: MA = 6. Load distance = rope distance / MA = 12 / 6 = 2 feet. You exert 360 / 6 = 60 pounds of effort but must pull 6 feet of rope for each foot the load moves."
+  },
+  {
+    "external_key": "MC-LP-B6-10",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 4,
+    "stem": "A wheelbarrow is a second-class lever. The wheel axle acts as the fulcrum; the load sits in the center; the handles are gripped at the far end. If the load weighs 150 pounds and sits 1.5 feet from the axle, and the handles are 4.5 feet from the axle, how much upward force at the handles is needed to lift the load?",
+    "choices": [
+      "50 pounds",
+      "75 pounds",
+      "100 pounds",
+      "225 pounds"
+    ],
+    "correct_index": 0,
+    "explanation": "Effort × Effort arm = Load × Load arm. Effort × 4.5 = 150 × 1.5 = 225. Effort = 225 / 4.5 = 50 pounds. The wheelbarrow's long effort arm (handles) gives MA = 4.5 / 1.5 = 3, so you need only 1/3 of the load's weight."
+  },
+  {
+    "external_key": "MC-LP-B6-11",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 4,
+    "stem": "Two pulleys are connected by a belt. The driving pulley has a diameter of 8 inches and turns at 300 RPM. The driven pulley has a diameter of 4 inches. At what RPM does the driven pulley spin?",
+    "choices": [
+      "150 RPM",
+      "300 RPM",
+      "600 RPM",
+      "1200 RPM"
+    ],
+    "correct_index": 2,
+    "explanation": "Belt-connected pulleys: speed ratio is inversely proportional to diameter ratio. Driven RPM = Driver RPM × (Driver diameter / Driven diameter) = 300 × (8 / 4) = 300 × 2 = 600 RPM. A smaller driven pulley spins faster; a larger one spins slower."
+  },
+  {
+    "external_key": "MC-LP-B6-12",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 5,
+    "stem": "A mechanic uses a breaker bar that is 24 inches long to loosen a bolt. She can apply 60 pounds of force. The bolt requires 180 pound-inches of torque to loosen. Can she loosen it, and if not, what minimum bar length is needed?",
+    "choices": [
+      "Yes, 24 inches is sufficient",
+      "No; she needs at least 3 inches",
+      "No; she needs at least 30 inches",
+      "No; she needs at least 36 inches"
+    ],
+    "correct_index": 0,
+    "explanation": "Torque = Force × Arm length = 60 × 24 = 1,440 pound-inches. The bolt requires only 180 pound-inches, so 24 inches is more than sufficient. The trap is misreading the question; 60 × 24 = 1,440, which greatly exceeds 180."
+  },
+  {
+    "external_key": "MC-LP-B6-13",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 5,
+    "stem": "A lever system is set up with the fulcrum 1 foot from the load end and 5 feet from the effort end (total 6 feet). A 200-pound load is placed at the load end. How much effort is needed, and what is the direction of effort relative to the load for a first-class lever?",
+    "choices": [
+      "40 pounds applied upward — same direction as the load pushes",
+      "40 pounds applied downward — opposite direction to the load",
+      "200 pounds applied downward",
+      "40 pounds applied horizontally"
+    ],
+    "correct_index": 1,
+    "explanation": "Effort = Load × Load arm / Effort arm = 200 × 1 / 5 = 40 pounds. In a first-class lever the fulcrum is between effort and load, so effort and load forces act in opposite directions — pressing down at the effort end lifts the load end up. The effort is applied downward (opposite to the upward force the load exerts on its end)."
+  },
+  {
+    "external_key": "MC-GW-B6-1",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "Two meshing spur gears always rotate in:",
+    "choices": [
+      "the same direction",
+      "opposite directions",
+      "alternating directions depending on speed",
+      "the same direction only when they are the same size"
+    ],
+    "correct_index": 1,
+    "explanation": "When two external spur gears mesh, their teeth push against each other, causing each gear to rotate in the direction opposite to the other. If you need both gears to rotate the same direction, you must add an idler gear between them."
+  },
+  {
+    "external_key": "MC-GW-B6-2",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "A driving gear has 8 teeth and the driven gear has 24 teeth. The gear ratio (driven:driver) is:",
+    "choices": [
+      "1:3",
+      "3:1",
+      "8:1",
+      "1:8"
+    ],
+    "correct_index": 1,
+    "explanation": "Gear ratio (driven to driver) = teeth on driven / teeth on driver = 24 / 8 = 3:1. This means the driven gear completes one revolution for every three revolutions of the driving gear — a 3:1 gear reduction."
+  },
+  {
+    "external_key": "MC-GW-B6-3",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "Gear A has 12 teeth and turns at 600 RPM. It meshes with Gear B, which has 36 teeth. How fast does Gear B rotate?",
+    "choices": [
+      "100 RPM",
+      "200 RPM",
+      "300 RPM",
+      "1,800 RPM"
+    ],
+    "correct_index": 1,
+    "explanation": "Speed is inversely proportional to teeth count: RPM_B = RPM_A × (Teeth_A / Teeth_B) = 600 × (12 / 36) = 600 × (1/3) = 200 RPM. The larger gear turns slower; this is a 3:1 reduction in speed (and a 3:1 increase in torque)."
+  },
+  {
+    "external_key": "MC-GW-B6-4",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "In a gear train, decreasing rotational speed by using a larger driven gear also has what effect on torque?",
+    "choices": [
+      "Torque decreases proportionally",
+      "Torque increases proportionally",
+      "Torque is unaffected by the gear ratio",
+      "Torque doubles regardless of the ratio"
+    ],
+    "correct_index": 1,
+    "explanation": "Gears trade speed for torque (assuming no friction losses). When the driven gear is larger, it turns slower but the torque multiplies by the same ratio. If speed is halved, torque is doubled. This is why low gears in a vehicle provide more pulling force."
+  },
+  {
+    "external_key": "MC-GW-B6-5",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "Three gears are in a row: Gear 1 (driver, 10 teeth) meshes with Gear 2 (20 teeth, idler), which meshes with Gear 3 (10 teeth). In which direction does Gear 3 turn relative to Gear 1?",
+    "choices": [
+      "Opposite direction — the idler reverses the direction once",
+      "Same direction — each mesh reverses direction, and two reversals return to original",
+      "Gear 3 does not rotate when an idler is present",
+      "Gear 3 rotates 90 degrees out of phase with Gear 1"
+    ],
+    "correct_index": 1,
+    "explanation": "Each time two external gears mesh, the direction reverses. Gear 1→Gear 2 is one reversal; Gear 2→Gear 3 is a second reversal. Two reversals return Gear 3 to the same direction as Gear 1. The idler (Gear 2) also changes the speed ratio to 1:1 in this case (10:20:10)."
+  },
+  {
+    "external_key": "MC-GW-B6-6",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "A wheel and axle system has a wheel radius of 15 cm and an axle radius of 3 cm. A 60-Newton load is hung from the axle. What force must be applied at the rim of the wheel to hold the load in equilibrium?",
+    "choices": [
+      "4 N",
+      "12 N",
+      "60 N",
+      "300 N"
+    ],
+    "correct_index": 1,
+    "explanation": "MA of a wheel and axle = wheel radius / axle radius = 15 / 3 = 5. Effort = Load / MA = 60 / 5 = 12 N. A common trap is dividing 60 by 15 (the wheel radius alone) to get 4 N, confusing radius with MA."
+  },
+  {
+    "external_key": "MC-GW-B6-7",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "A gear reduction system uses a 5-tooth pinion driving a 40-tooth ring gear. The input shaft turns at 2,000 RPM. What is the output RPM, and how does the output torque compare to the input?",
+    "choices": [
+      "250 RPM output; torque is multiplied by 8",
+      "250 RPM output; torque is the same",
+      "16,000 RPM output; torque is divided by 8",
+      "400 RPM output; torque is multiplied by 5"
+    ],
+    "correct_index": 0,
+    "explanation": "Output RPM = 2,000 × (5/40) = 250 RPM. Gear ratio = 40/5 = 8:1 reduction. With a factor of 8 reduction in speed, torque is multiplied by 8 (before friction losses). This is the fundamental speed-torque trade-off in gear reductions."
+  },
+  {
+    "external_key": "MC-GW-B6-8",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 4,
+    "stem": "A bicycle chainring has 48 teeth and the rear sprocket has 16 teeth. For each complete revolution of the pedals, how many times does the rear wheel turn?",
+    "choices": [
+      "1 time",
+      "2 times",
+      "3 times",
+      "4 times"
+    ],
+    "correct_index": 2,
+    "explanation": "The chain transmits motion: rear wheel revolutions per pedal revolution = chainring teeth / sprocket teeth = 48 / 16 = 3. Each pedal stroke turns the rear wheel 3 times — a speed advantage that requires more pedaling force."
+  },
+  {
+    "external_key": "MC-GW-B6-9",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 4,
+    "stem": "In a planetary gear set, the sun gear has 20 teeth, each of three planet gears has 10 teeth, and the ring gear has 40 teeth. If the ring gear is held fixed and power is applied to the sun gear, which output produces the highest torque?",
+    "choices": [
+      "The planet carrier (output through the arm holding the planets)",
+      "The ring gear (despite being held)",
+      "The sun gear itself",
+      "All outputs produce identical torque"
+    ],
+    "correct_index": 0,
+    "explanation": "When the ring gear is fixed and the sun drives the system, the planet gears walk around the fixed ring, carrying the planet carrier (arm) as output. The speed reduction is significant (overall ratio = 1 + Ring/Sun = 1 + 40/20 = 3:1), giving 3× torque multiplication at the carrier — the highest available output torque configuration for this setup."
+  },
+  {
+    "external_key": "MC-GW-B6-10",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 4,
+    "stem": "A worm gear pair has a worm with 1 thread (start) and a worm wheel with 50 teeth. If the worm shaft turns at 1,500 RPM, at what speed does the worm wheel turn?",
+    "choices": [
+      "1 RPM",
+      "30 RPM",
+      "50 RPM",
+      "75,000 RPM"
+    ],
+    "correct_index": 1,
+    "explanation": "For a single-start worm, each full turn of the worm advances the worm wheel by 1 tooth. The wheel has 50 teeth, so the gear ratio is 50:1. Output RPM = 1,500 / 50 = 30 RPM. A multi-start worm (e.g., 2 threads) would give 1,500 / 25 = 60 RPM."
+  },
+  {
+    "external_key": "MC-GW-B6-11",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 5,
+    "stem": "A 4-speed manual transmission has gear ratios of 3.5:1, 2.2:1, 1.4:1, and 1:1 for first through fourth gear. In first gear with the engine producing 200 Newton-meters of torque, approximately how much torque is available at the transmission output shaft (ignoring drivetrain losses)?",
+    "choices": [
+      "57 Nm",
+      "200 Nm",
+      "440 Nm",
+      "700 Nm"
+    ],
+    "correct_index": 3,
+    "explanation": "Output torque = Engine torque × Gear ratio = 200 × 3.5 = 700 Nm. Gear reduction multiplies torque — this is why first gear provides the greatest pulling force for starting from rest. In fourth gear (1:1), output torque equals engine torque (200 Nm)."
+  },
+  {
+    "external_key": "MC-GW-B6-12",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 5,
+    "stem": "Two meshing gears have a center-to-center distance of 18 cm. Gear A has a pitch radius of 6 cm. What is the gear ratio if Gear A is the driver?",
+    "choices": [
+      "1:1",
+      "1:2",
+      "2:1",
+      "3:1"
+    ],
+    "correct_index": 1,
+    "explanation": "Center-to-center distance = radius_A + radius_B. 18 = 6 + radius_B, so radius_B = 12 cm. Since pitch radius is proportional to tooth count, gear ratio (driven:driver) = radius_B / radius_A = 12 / 6 = 2:1. The driven gear is twice as large, so it turns at half the speed of the driver."
+  },
+  {
+    "external_key": "MC-GW-B6-13",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "A rack and pinion gear system converts which type of motion to which?",
+    "choices": [
+      "Rotary motion to linear motion",
+      "Linear motion to circular oscillation",
+      "Vertical motion to horizontal rotary motion",
+      "Torque to electrical energy"
+    ],
+    "correct_index": 0,
+    "explanation": "A rack is a straight gear (linear); a pinion is a circular gear. As the pinion rotates, its teeth engage the rack and push it linearly. This converts rotary (circular) motion into linear (straight-line) motion — the basis of rack-and-pinion steering systems."
+  },
+  {
+    "external_key": "MC-FF-B6-1",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "A 50-pound box sits on a rough surface. A horizontal force of 20 pounds is applied but the box does not move. Which statement correctly describes the friction force acting on the box?",
+    "choices": [
+      "Friction is 50 pounds, opposing the weight of the box",
+      "Friction is 20 pounds, exactly opposing the applied force",
+      "Friction is zero because the box is not moving",
+      "Friction is 70 pounds, combining weight and applied force"
+    ],
+    "correct_index": 1,
+    "explanation": "Static friction adjusts to exactly cancel the applied horizontal force when the object is not moving. The box is in equilibrium, so the horizontal forces must balance: static friction = 20 pounds directed opposite to the applied force."
+  },
+  {
+    "external_key": "MC-FF-B6-2",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Compared to static friction, kinetic (sliding) friction for the same object on the same surface is generally:",
+    "choices": [
+      "Greater",
+      "Equal",
+      "Less",
+      "Dependent only on velocity"
+    ],
+    "correct_index": 2,
+    "explanation": "Kinetic friction — the friction acting on a sliding object — is typically less than the maximum static friction required to start the object moving. This is why it takes more force to start sliding a heavy box than to keep it sliding once moving."
+  },
+  {
+    "external_key": "MC-FF-B6-3",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A 100-pound block rests on a horizontal surface with a coefficient of static friction of 0.4. What minimum horizontal force is needed to start the block moving?",
+    "choices": [
+      "20 pounds",
+      "40 pounds",
+      "60 pounds",
+      "100 pounds"
+    ],
+    "correct_index": 1,
+    "explanation": "Maximum static friction = coefficient of static friction × normal force = 0.4 × 100 = 40 pounds. This is the minimum force needed to overcome static friction and start motion. On a horizontal surface, the normal force equals the object's weight."
+  },
+  {
+    "external_key": "MC-FF-B6-4",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A 200-pound box is being dragged across a floor. The coefficient of kinetic friction is 0.25. What is the friction force resisting the motion?",
+    "choices": [
+      "25 pounds",
+      "50 pounds",
+      "80 pounds",
+      "200 pounds"
+    ],
+    "correct_index": 1,
+    "explanation": "Kinetic friction = coefficient of kinetic friction × normal force = 0.25 × 200 = 50 pounds. To maintain constant speed, the applied force must equal this friction force. Multiplying 0.25 × 200 = 50; dividing 200 by 0.25 = 800 is a common arithmetic reversal."
+  },
+  {
+    "external_key": "MC-FF-B6-5",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "A 60-pound block is placed on a ramp inclined at 30 degrees. The normal force on the block from the ramp surface equals the component of the block's weight perpendicular to the ramp surface. If the ramp is smooth (frictionless), the normal force is approximately:",
+    "choices": [
+      "30 pounds",
+      "52 pounds",
+      "60 pounds",
+      "120 pounds"
+    ],
+    "correct_index": 1,
+    "explanation": "Normal force = W × cos(θ) = 60 × cos(30°) = 60 × 0.866 ≈ 52 pounds. The component pulling the block down the ramp = W × sin(30°) = 60 × 0.5 = 30 pounds. The normal force is NOT equal to the full weight on a ramp — it is reduced by the cosine of the angle."
+  },
+  {
+    "external_key": "MC-FF-B6-6",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "A person pushes down at an angle on a lawnmower handle. The downward component of the pushing force increases the normal force on the mower's wheels. What effect does this have on friction?",
+    "choices": [
+      "Friction decreases because the mower moves forward",
+      "Friction increases because friction depends on normal force",
+      "Friction is unchanged because only horizontal force causes motion",
+      "Friction is eliminated by the forward-directed component"
+    ],
+    "correct_index": 1,
+    "explanation": "Friction force = coefficient × normal force. When a downward force component is added to the weight, the total normal force increases, which proportionally increases the friction force. This is why pushing down on a handle makes it harder to slide the mower across rough grass."
+  },
+  {
+    "external_key": "MC-FF-B6-7",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "A 120-pound crate is on a frictionless surface. Two horizontal forces act on it: 50 pounds to the right and 30 pounds to the left. What is the net force and the resulting acceleration? (Use weight ÷ 32 ft/s² to find mass in slugs.)",
+    "choices": [
+      "Net 20 pounds right; acceleration ≈ 5.3 ft/s²",
+      "Net 80 pounds right; acceleration ≈ 21 ft/s²",
+      "Net 20 pounds right; acceleration ≈ 2.5 ft/s²",
+      "Net 50 pounds right; no acceleration because friction balances it"
+    ],
+    "correct_index": 0,
+    "explanation": "Net force = 50 − 30 = 20 pounds to the right. Mass = weight / g = 120 / 32 = 3.75 slugs. Acceleration = F / m = 20 / 3.75 ≈ 5.3 ft/s². (Note: In SI, 120 lb ≈ 534 N, but using US customary: a = F(lb) / m(slugs). The surface is frictionless, so there is no friction balance issue.)"
+  },
+  {
+    "external_key": "MC-FF-B6-8",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 4,
+    "stem": "A 500-Newton engine rests on a steel workbench. The coefficient of static friction between the engine and bench is 0.3. A horizontal force of 160 N is applied. Does the engine move, and if not, what is the friction force?",
+    "choices": [
+      "Yes, it moves because 160 N exceeds friction",
+      "No; static friction = 150 N, and 160 N exceeds it, so it moves",
+      "No; maximum static friction = 150 N — since 160 N > 150 N, it just barely moves",
+      "No; friction = 160 N opposing the applied force, since the engine is stationary"
+    ],
+    "correct_index": 2,
+    "explanation": "Maximum static friction = 0.3 × 500 = 150 N. The applied force is 160 N, which exceeds the maximum static friction. Therefore the engine just begins to move. (If static friction could exactly equal 160 N, it would hold, but 150 N is the ceiling.) The answer correctly identifies that movement occurs."
+  },
+  {
+    "external_key": "MC-FF-B6-9",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 4,
+    "stem": "A block slides down a ramp at a constant speed. At constant speed, which of the following must be true?",
+    "choices": [
+      "There is no friction force on the block",
+      "The component of gravity along the ramp exactly equals the kinetic friction force",
+      "The normal force equals the gravitational force",
+      "The coefficient of kinetic friction is zero"
+    ],
+    "correct_index": 1,
+    "explanation": "Constant speed means zero acceleration, so net force = 0. Along the ramp direction, gravity's component (W sin θ) pulls the block down the ramp while kinetic friction (μk × W cos θ) acts up the ramp. At constant speed these forces are exactly equal and opposite."
+  },
+  {
+    "external_key": "MC-FF-B6-10",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 4,
+    "stem": "A 40-kg box sits on a horizontal floor. Coefficient of static friction = 0.5, kinetic friction = 0.35. A horizontal force of 180 N is applied. What is the friction force and does the box move? (g = 10 m/s²)",
+    "choices": [
+      "Friction = 200 N, box does not move",
+      "Friction = 180 N, box does not move",
+      "Maximum static friction = 200 N; 180 N < 200 N so box stays; friction = 180 N",
+      "Box moves; kinetic friction = 140 N"
+    ],
+    "correct_index": 2,
+    "explanation": "Normal force = mg = 40 × 10 = 400 N. Maximum static friction = 0.5 × 400 = 200 N. Applied force = 180 N < 200 N, so the box does NOT move. When stationary, static friction equals the applied force: 180 N. Kinetic friction (140 N) is only relevant if the box were sliding."
+  },
+  {
+    "external_key": "MC-FF-B6-11",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 5,
+    "stem": "A crate is being pushed across a rough floor at constant velocity with a horizontal force of 80 N. If the floor surface is then treated to reduce the coefficient of kinetic friction by half, and the same 80-N force is maintained, what happens to the crate?",
+    "choices": [
+      "It continues at the same constant velocity",
+      "It decelerates and stops",
+      "It accelerates because the applied force now exceeds the reduced friction",
+      "It reverses direction"
+    ],
+    "correct_index": 2,
+    "explanation": "Originally, 80 N of applied force equaled 80 N of kinetic friction (constant velocity). Halving the coefficient halves the friction force to 40 N. Now the net force = 80 − 40 = 40 N in the direction of motion, so the crate accelerates. Newton's Second Law: a = F_net / m > 0."
+  },
+  {
+    "external_key": "MC-FF-B6-12",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 5,
+    "stem": "A 10-kg block rests on a 25-degree incline. The coefficient of static friction is 0.5. Will the block slide? (Use g = 10 m/s², sin 25° ≈ 0.42, cos 25° ≈ 0.91)",
+    "choices": [
+      "Yes, because gravity down the ramp exceeds maximum static friction",
+      "No, because maximum static friction exceeds gravity's ramp component",
+      "It will slide at exactly constant velocity",
+      "Insufficient information without knowing the block's surface material"
+    ],
+    "correct_index": 1,
+    "explanation": "Gravity along ramp = mg sin 25° = 10 × 10 × 0.42 = 42 N. Normal force = mg cos 25° = 10 × 10 × 0.91 = 91 N. Maximum static friction = 0.5 × 91 = 45.5 N. Since 45.5 N > 42 N, static friction can fully oppose the sliding tendency. The block does not slide."
+  },
+  {
+    "external_key": "MC-IPH-B6-1",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "A screw is a simple machine based on which other simple machine?",
+    "choices": [
+      "Lever",
+      "Wheel and axle",
+      "Inclined plane wrapped in a helix",
+      "Pulley"
+    ],
+    "correct_index": 2,
+    "explanation": "A screw is essentially an inclined plane (ramp) wrapped in a spiral around a cylinder. Rotating the screw converts the rotational force (torque) into a linear force along the screw's axis, just as a ramp converts a horizontal push into a vertical lift."
+  },
+  {
+    "external_key": "MC-IPH-B6-2",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "Pascal's principle states that pressure applied to an enclosed fluid is:",
+    "choices": [
+      "absorbed by the fluid and converted to heat",
+      "transmitted equally in all directions throughout the fluid",
+      "reduced in proportion to the depth of the fluid",
+      "only transmitted upward in the fluid"
+    ],
+    "correct_index": 1,
+    "explanation": "Pascal's principle states that a change in pressure applied to an enclosed fluid is transmitted undiminished to every part of the fluid and to the walls of the container. This is the operating principle behind all hydraulic systems."
+  },
+  {
+    "external_key": "MC-IPH-B6-3",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "A frictionless ramp is 12 feet long and rises 3 feet vertically. What is its mechanical advantage?",
+    "choices": [
+      "3",
+      "4",
+      "9",
+      "36"
+    ],
+    "correct_index": 1,
+    "explanation": "Mechanical advantage of an inclined plane = length of slope / vertical height = 12 / 3 = 4. A longer ramp (relative to height) requires less force but the load must travel a greater distance. MA = 4 means you need 1/4 of the load's weight as effort force."
+  },
+  {
+    "external_key": "MC-IPH-B6-4",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "A hydraulic system input piston has an area of 5 in² and the output piston has an area of 25 in². If the input force is 100 pounds, what force does the output piston exert?",
+    "choices": [
+      "20 pounds",
+      "100 pounds",
+      "500 pounds",
+      "2,500 pounds"
+    ],
+    "correct_index": 2,
+    "explanation": "Hydraulic force multiplication: F_out = F_in × (A_out / A_in) = 100 × (25 / 5) = 100 × 5 = 500 pounds. The output force is multiplied by the ratio of the piston areas — the fundamental advantage of hydraulics."
+  },
+  {
+    "external_key": "MC-IPH-B6-5",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "A ramp 20 feet long rises 5 feet. A 240-pound load is pushed up the ramp. What effort force is required (frictionless)?",
+    "choices": [
+      "12 pounds",
+      "40 pounds",
+      "48 pounds",
+      "60 pounds"
+    ],
+    "correct_index": 3,
+    "explanation": "MA = ramp length / height = 20 / 5 = 4. Effort = Load / MA = 240 / 4 = 60 pounds. A trap answer of 48 pounds corresponds to 240 / 5 (dividing by height instead of MA)."
+  },
+  {
+    "external_key": "MC-IPH-B6-6",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "A hydraulic brake system has an input piston area of 1 in² and the brake caliper piston area is 3 in². A driver applies 30 pounds of force at the brake pedal, which the booster amplifies by a factor of 4 before reaching the master cylinder. How much clamping force does the caliper exert?",
+    "choices": [
+      "30 pounds",
+      "90 pounds",
+      "120 pounds",
+      "360 pounds"
+    ],
+    "correct_index": 3,
+    "explanation": "Pedal force after booster = 30 × 4 = 120 pounds to the master cylinder piston. Hydraulic area ratio = 3/1 = 3. Caliper force = 120 × 3 = 360 pounds. Two stages of force multiplication (mechanical booster + hydraulic area ratio) are applied in sequence."
+  },
+  {
+    "external_key": "MC-IPH-B6-7",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "A wedge has a length of 10 inches and a thickness (wide end) of 2 inches. You drive it under a 600-pound rock. How much driving force is needed to generate the lifting force (assuming MA fully transfers)?",
+    "choices": [
+      "60 pounds",
+      "120 pounds",
+      "300 pounds",
+      "600 pounds"
+    ],
+    "correct_index": 1,
+    "explanation": "Wedge MA = length / thickness = 10 / 2 = 5. Effort needed = Load / MA = 600 / 5 = 120 pounds. The wedge allows a relatively small driving force to create a much larger splitting or lifting force perpendicular to the wedge's direction of travel."
+  },
+  {
+    "external_key": "MC-IPH-B6-8",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 4,
+    "stem": "In a hydraulic system, the input piston moves down 10 inches with an area of 2 in². The output piston has an area of 8 in². How far does the output piston move upward?",
+    "choices": [
+      "1.25 inches",
+      "2.5 inches",
+      "5 inches",
+      "40 inches"
+    ],
+    "correct_index": 1,
+    "explanation": "Fluid volume is conserved: Volume in = Volume out. Input volume = 2 in² × 10 in = 20 in³. Output: 20 in³ = 8 in² × d. d = 20 / 8 = 2.5 inches. The output piston moves a shorter distance but with proportionally more force — the same trade-off as any mechanical advantage system."
+  },
+  {
+    "external_key": "MC-IPH-B6-9",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 4,
+    "stem": "A loading ramp is 18 feet long and rises 6 feet. An 800-pound engine is pushed up the ramp with a steady force. How much work is done on the engine as it is raised the full 6 feet vertically? (Work = Force × Distance traveled; use the vertical height.)",
+    "choices": [
+      "800 foot-pounds",
+      "2,400 foot-pounds",
+      "4,800 foot-pounds",
+      "14,400 foot-pounds"
+    ],
+    "correct_index": 2,
+    "explanation": "Work done against gravity = weight × vertical height = 800 × 6 = 4,800 foot-pounds. The ramp's MA (18/6 = 3) reduces the effort force to 800/3 ≈ 267 pounds, but you push over 18 feet of ramp: 267 × 18 = 4,800 ft-lb — the same result, confirming conservation of energy. Work done on the load always equals weight × height, regardless of the path."
+  },
+  {
+    "external_key": "MC-IPH-B6-10",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 4,
+    "stem": "A hydraulic press has an input cylinder of area 3 cm² and an output cylinder of area 75 cm². A technician pushes the input piston down 50 cm. What is the output force if the input force is 60 N?",
+    "choices": [
+      "60 N",
+      "300 N",
+      "1,500 N",
+      "3,750 N"
+    ],
+    "correct_index": 2,
+    "explanation": "Area ratio = 75 / 3 = 25. Output force = 60 × 25 = 1,500 N. The output piston moves 50 × (3/75) = 2 cm — short distance but large force. Output piston travel is inversely proportional to the area ratio, confirming energy conservation."
+  },
+  {
+    "external_key": "MC-IPH-B6-11",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 5,
+    "stem": "An engine hoist uses a compound system: a 3:1 lever feeds into a 4-rope pulley block-and-tackle. An engine weighs 600 pounds. What is the minimum effort force required at the lever input to lift the engine?",
+    "choices": [
+      "50 pounds",
+      "200 pounds",
+      "400 pounds",
+      "600 pounds"
+    ],
+    "correct_index": 0,
+    "explanation": "Total MA = lever MA × pulley MA = 3 × 4 = 12. Minimum effort = Load / Total MA = 600 / 12 = 50 pounds. When multiple simple machines are combined in series, their mechanical advantages multiply."
+  },
+  {
+    "external_key": "MC-IPH-B6-12",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 5,
+    "stem": "A hydraulic system output piston has an area of 50 in². The system pressure is 200 psi. What force does the output piston exert?",
+    "choices": [
+      "4 pounds",
+      "250 pounds",
+      "10,000 pounds",
+      "1,000,000 pounds"
+    ],
+    "correct_index": 2,
+    "explanation": "Force = Pressure × Area = 200 psi × 50 in² = 10,000 pounds. This is the fundamental hydraulic force formula. The trap answer 250 pounds comes from adding (200 + 50) rather than multiplying, and 4 pounds comes from dividing (200 / 50)."
+  },
+  {
+    "external_key": "MC-MP-B6-1",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "Newton's Second Law of Motion states that force equals mass times acceleration (F = ma). If a 2-kg object has an acceleration of 10 m/s², what is the net force on it?",
+    "choices": [
+      "5 N",
+      "12 N",
+      "20 N",
+      "0.2 N"
+    ],
+    "correct_index": 2,
+    "explanation": "F = m × a = 2 kg × 10 m/s² = 20 N. Dividing m by a (2/10 = 0.2) inverts the formula. Adding them (2 + 10 = 12) misunderstands the relationship. Newton's Second Law: force is proportional to both mass and acceleration."
+  },
+  {
+    "external_key": "MC-MP-B6-2",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "A ball is thrown horizontally from a building ledge. At the instant it leaves the thrower's hand, which direction does gravity act on it?",
+    "choices": [
+      "Horizontally, in the direction of throw",
+      "Upward, opposing the throw",
+      "Vertically downward, regardless of horizontal motion",
+      "At a 45-degree angle combining horizontal and vertical"
+    ],
+    "correct_index": 2,
+    "explanation": "Gravity always acts vertically downward, independent of horizontal motion. This is the key principle of projectile motion: horizontal and vertical motions are independent. The moment the ball leaves the hand, gravity begins pulling it straight down at 9.8 m/s²."
+  },
+  {
+    "external_key": "MC-MP-B6-3",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "What is the momentum of a 4-kg object moving at 15 m/s?",
+    "choices": [
+      "3.75 kg·m/s",
+      "11 kg·m/s",
+      "60 kg·m/s",
+      "225 kg·m/s"
+    ],
+    "correct_index": 2,
+    "explanation": "Momentum p = mass × velocity = 4 kg × 15 m/s = 60 kg·m/s. Dividing instead of multiplying (4/15 ≈ 0.27 or 15/4 = 3.75) inverts the formula. Momentum is a vector quantity with units of kg·m/s."
+  },
+  {
+    "external_key": "MC-MP-B6-4",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 5,
+    "stem": "In a perfectly inelastic collision, two objects stick together after impact. What is conserved in this type of collision?",
+    "choices": [
+      "Kinetic energy only",
+      "Momentum only",
+      "Both kinetic energy and momentum",
+      "Neither momentum nor kinetic energy"
+    ],
+    "correct_index": 1,
+    "explanation": "In any collision (elastic or inelastic), total momentum is conserved. In a perfectly inelastic collision, kinetic energy is NOT conserved — some is converted to heat, sound, and deformation. Elastic collisions conserve both momentum and kinetic energy."
+  },
+  {
+    "external_key": "MC-MP-B6-5",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "A rocket in space fires its engines and accelerates. Newton's Third Law explains this by stating that:",
+    "choices": [
+      "Objects in space have no inertia and respond to any force",
+      "The exhaust gases are pushed backward, and the rocket is pushed forward by an equal and opposite reaction force",
+      "The rocket's mass decreases as fuel is burned, increasing speed automatically",
+      "Gravity pulls the rocket forward in the direction of acceleration"
+    ],
+    "correct_index": 1,
+    "explanation": "Newton's Third Law: for every action force there is an equal and opposite reaction force. The rocket engine pushes exhaust gases out the back (action); the gases push the rocket forward with an equal force (reaction). This works in a vacuum where there is no air to push against."
+  },
+  {
+    "external_key": "MC-MP-B6-6",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "A 3-kg object moving east at 8 m/s collides with a 3-kg object at rest. They stick together. What is the velocity of the combined mass immediately after the collision?",
+    "choices": [
+      "8 m/s east",
+      "4 m/s east",
+      "0 m/s",
+      "2 m/s east"
+    ],
+    "correct_index": 1,
+    "explanation": "Conservation of momentum: p_before = (3 × 8) + (3 × 0) = 24 kg·m/s. Combined mass = 6 kg. v_after = 24 / 6 = 4 m/s east. The combined mass is twice the original, so velocity is halved. This is a perfectly inelastic collision — kinetic energy is not conserved but momentum is."
+  },
+  {
+    "external_key": "MC-MP-B6-7",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "A ball is thrown upward and reaches its highest point. At that exact moment, what is the ball's velocity and what is its acceleration?",
+    "choices": [
+      "Velocity = 0 m/s; acceleration = 0 m/s² (weightless at peak)",
+      "Velocity = 0 m/s; acceleration = 9.8 m/s² downward",
+      "Velocity = peak speed; acceleration = 9.8 m/s² upward",
+      "Velocity = 0 m/s; acceleration is upward until it reverses"
+    ],
+    "correct_index": 1,
+    "explanation": "At the highest point, vertical velocity is momentarily zero (the ball is neither moving up nor down). However, gravity still acts downward at 9.8 m/s² continuously — acceleration due to gravity never stops, regardless of the object's velocity. This is a common misconception: zero velocity does not mean zero acceleration."
+  },
+  {
+    "external_key": "MC-MP-B6-8",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "Two balls are dropped simultaneously from the same height: Ball A has a mass of 1 kg, Ball B has a mass of 5 kg. Ignoring air resistance, which hits the ground first?",
+    "choices": [
+      "Ball A, because it is lighter and falls more easily",
+      "Ball B, because gravity exerts more force on it",
+      "They hit at the same time",
+      "It depends on the shape of the balls"
+    ],
+    "correct_index": 2,
+    "explanation": "Galileo's principle: in the absence of air resistance, all objects fall with the same gravitational acceleration (g ≈ 9.8 m/s²) regardless of mass. Although gravity exerts more force on Ball B, Ball B also has more inertia (F = ma → a = F/m, and F and m both scale with mass, so a = g for all). Both hit simultaneously."
+  },
+  {
+    "external_key": "MC-MP-B6-9",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 4,
+    "stem": "A stationary 8-kg bowling ball is struck by a 0.5-kg cue ball moving at 20 m/s. After the collision, the cue ball bounces straight back at 10 m/s. Using conservation of momentum, what is the approximate velocity of the bowling ball after the collision?",
+    "choices": [
+      "0.94 m/s in the original direction of the cue ball",
+      "1.875 m/s in the original direction",
+      "20 m/s in the original direction",
+      "10 m/s backward"
+    ],
+    "correct_index": 1,
+    "explanation": "Taking the cue ball's initial direction as positive: p_before = 0.5 × 20 + 8 × 0 = 10 kg·m/s. p_after = 0.5 × (−10) + 8 × v_bowling. 10 = −5 + 8v → 8v = 15 → v = 1.875 m/s in the original forward direction. The cue ball reverses direction (negative), transferring most of its momentum to the heavier ball."
+  }
+]

@@ -223,3 +223,250 @@ Items in batch-2 with stems essentially the same as items in `free-test.json` or
 ## Bottom line
 
 Batch-2 is shippable after fixing the two AO blockers and removing or rewriting the four exact-stem duplicates (`AR-RP-3`, `MK-GE-5`, `AO-SC-2`, `AO-3D-2`) and three head-word duplicates (`WK-SN-1/3/4`). That brings the file from 80 to ~73 unique, correct items — a solid contribution. The rewrite from the 7-item draft delivered on the originally stated AR/MK/WK/AO depth focus, except that `ao.pattern-assembly` remains the one untouched topic in the entire corpus.
+
+
+# Full-Corpus Audit (post-tripling) — 2026-04-27
+
+## Summary
+
+- **Files audited:** 8 (free-test + expansion batches 1–7)
+- **Total items reviewed:** 783 (free-test 90, b1 92, b2 72, b3 130, b4 96, b5 96, b6 108, b7 100)
+- **BLOCKERS:** 4 (2 hard wrong-answer items in batch 7 + 2 leaked authoring scratch-work that ships internal "Correction: correct_index = X" text in explanations)
+- **MAJORS:** ~38 (cross-file duplicates, head-word reuse, ambiguous distractor sets, AI-tell explanations leaking edit history, several batch-7 explanations that show the writer working out the answer in front of the student)
+- **MINORS:** ~30 sampled (stem-pattern over-use, repetitive "trap is…" cadence, military-themed framing fatigue)
+- **Per-file grades:** free-test B+ · b1 A- · b2 B (per prior audit) · b3 A- · b4 A · b5 A · b6 A · b7 **C+** (the AO authoring is the weak link)
+- **Overall recommendation:** **Fix-blockers-then-ship.** Three subtests (GS, EI, AS) and most of MK/AR are at production quality. AO and a thin slice of WK have the only material problems.
+
+## Coverage matrix
+
+39 topics × 5 difficulty bands. `d1`–`d5` columns; `*` marks any cell with <2 items.
+
+| topic_id | d1 | d2 | d3 | d4 | d5 | total |
+|---|---:|---:|---:|---:|---:|---:|
+| gs.life-science | 2 | 6 | 3 | 3 | 2 | 16 |
+| gs.physical-science | 2 | 5 | 3 | 3 | 2 | 15 |
+| gs.earth-space-science | 3 | 4 | 3 | 3 | 2 | 15 |
+| gs.physics-mechanics | 2 | 4 | 5 | 5 | 2 | 18 |
+| ar.arithmetic-fundamentals | *1 | 3 | 7 | 7 | 5 | 23 |
+| ar.ratio-proportion | *0 | 3 | 8 | 8 | 7 | 26 |
+| ar.percent | *0 | 4 | 9 | 7 | 6 | 26 |
+| ar.rate-distance-time | *0 | *1 | 9 | 7 | 7 | 24 |
+| ar.word-problems | *0 | *0 | 7 | 13 | 6 | 26 |
+| wk.synonyms | 5 | 13 | 4 | 7 | 8 | 37 |
+| wk.context-clues | 2 | 3 | 10 | 7 | 6 | 28 |
+| wk.prefixes-suffixes | 2 | 3 | 7 | 6 | 4 | 22 |
+| wk.root-words | 2 | 2 | 6 | 5 | 4 | 19 |
+| pc.main-idea | 2 | 4 | 3 | 4 | 4 | 17 |
+| pc.detail-recall | 3 | 5 | 3 | 3 | 3 | 17 |
+| pc.inference | 2 | 4 | 4 | 4 | 4 | 18 |
+| pc.author-tone-purpose | 2 | 2 | 6 | 5 | 6 | 21 |
+| mk.geometry | *1 | 5 | 6 | 8 | 5 | 25 |
+| mk.algebra-linear | *1 | 2 | 6 | 8 | 7 | 24 |
+| mk.fractions-decimals | *1 | 3 | 6 | 7 | 5 | 22 |
+| mk.exponents-polynomials | *1 | *1 | 6 | 8 | 4 | 20 |
+| mk.number-properties | *1 | *1 | 5 | 8 | 3 | 18 |
+| ei.ohms-law-power | 2 | 5 | 5 | 5 | 3 | 20 |
+| ei.circuit-types | 2 | 3 | 4 | 3 | 2 | 14 |
+| ei.components-devices | 3 | 4 | 4 | 3 | 2 | 16 |
+| ei.conductors-insulators | 3 | 2 | 4 | 5 | 3 | 17 |
+| as.hand-tools | 3 | 4 | 4 | 3 | 2 | 16 |
+| as.vehicle-systems | 2 | 4 | 4 | 3 | 2 | 15 |
+| as.shop-safety | 3 | 2 | 4 | 3 | 2 | 14 |
+| as.maintenance-repair | 2 | 4 | 7 | 6 | 3 | 22 |
+| mc.levers-pulleys | 2 | 5 | 3 | 3 | 2 | 15 |
+| mc.gears-wheels | 2 | 4 | 4 | 3 | 2 | 15 |
+| mc.forces-friction | 2 | 5 | 3 | 3 | 2 | 15 |
+| mc.inclined-plane-hydraulics | 2 | 2 | 6 | 6 | 3 | 19 |
+| mc.motion-projectile | 2 | 4 | 5 | 4 | 2 | 17 |
+| ao.3d-visualization | 4 | 4 | 7 | 5 | 4 | 24 |
+| ao.paper-folding-nets | 4 | 4 | 6 | 5 | 4 | 23 |
+| ao.spatial-counting | 3 | 4 | 7 | 6 | 4 | 24 |
+| ao.pattern-assembly | 3 | 4 | 5 | 4 | 4 | 20 |
+| **Subtest totals** | | | | | | **GS 64 · AR 125 · WK 106 · PC 73 · MK 109 · EI 67 · AS 67 · MC 81 · AO 91** |
+
+**Coverage gaps (cells with <2 items):**
+
+- `ar.arithmetic-fundamentals` d1=1, `ar.ratio-proportion` d1=0, `ar.percent` d1=0, `ar.rate-distance-time` d1=0/d2=1, `ar.word-problems` d1=0/d2=0 — the entire AR low-difficulty floor is empty. Six cells.
+- `mk.geometry` d1=1, `mk.algebra-linear` d1=1, `mk.fractions-decimals` d1=1, `mk.exponents-polynomials` d1=1/d2=1, `mk.number-properties` d1=1/d2=1 — MK low-difficulty floor is sparse. Seven cells.
+
+**No topic has <10 total items.** The smallest topics are `ei.circuit-types` and `as.shop-safety` at 14, both within tolerance. AO went from 0 in `ao.pattern-assembly` (prior audit) to 20 — gap is closed.
+
+The d1/d2 holes in AR and MK are the single largest structural defect in the coverage matrix. Anyone calibrating onboarding (AFQT-prep funnels for low-confidence test takers) needs ~3–5 easy items per AR/MK topic. Recommend a small (≈25-item) "AR/MK easy floor" patch batch.
+
+## Blockers (🔴)
+
+| File | external_key | Issue | Fix |
+|---|---|---|---|
+| expansion-batch-7.json | **AO-PA-B7-7** | The explanation reasons through and concludes "Correct answer is the rectangle that is twice as wide as it is tall" (choice index 2) but `correct_index` is set to **1** ("A square"). The explanation also openly contradicts itself mid-paragraph ("The answer is square… Correct answer is the rectangle…"). Two equal isosceles right triangles joined at hypotenuse give a square *only* if the hypotenuses are the longer sides — and adding C extends to a rectangle. Either the answer or the stem is wrong. | Rewrite stem to be unambiguous; lock `correct_index` to whichever interpretation the rewrite supports. Most likely fix: change `correct_index` to 2 and clean up explanation. |
+| expansion-batch-7.json | **AO-3D-B7-4** | Explanation walks through two rotations and concludes "top = yellow… correct_index = 0 (Yellow)" — but JSON has `correct_index: 2` ("Red"). The yellow trace appears correct (right rotation moves right→front, then forward rotation moves front→top → yellow on top). Answer is wrong. | Set `correct_index: 0`. |
+| expansion-batch-7.json | **AO-PA-B7-7 (also)** + ~10 other AO items in batch-7 | Multiple AO items contain leaked authoring scratch-work in their `explanation` strings — phrases like `"Correction: correct_index = X"`, `"Correction needed."`, `"Wait — checking choices…"`, `"Re-check:"`, `"Reassign:"`. These are mid-thought editor traces that were never cleaned up before commit. Even when the final `correct_index` is right, shipping this text to a paying customer is a credibility kill. Affected items: AO-PA-B7-7, AO-3D-B7-4, AO-3D-B7-9, AO-PF-B7-4, AO-PF-B7-5, AO-PF-B7-7, AO-PF-B7-8, AO-PF-B7-10, AO-PF-B7-12, AO-PF-B7-17, AO-PF-B7-19, AO-SC-B7-12 (12 items). | Strip every "correct_index = X", "Correction:", "Wait", "Reassign", "Re-check" from the explanation field and write a clean 2–3-sentence rationale. Treat as a single batch fix. |
+| expansion-batch-7.json | **AO-PF-B7-1** | Stem describes a 4-square net (1+2+3 column with 4 attached to side of 2) and asks what 3D object is formed. Explanation says "open rectangular channel" (3-sided open prism), and `correct_index: 2` is "open-ended rectangular channel". The geometry is actually wrong: 1 base + 3 walls (folding two squares from one column up + one from the side) does *not* form a four-walled channel — it forms an L-shape or a partial box. Four squares cannot form a closed three-sided channel. | Either rewrite stem with 5 squares, or change to "an open-top box without one wall" with answer index that fits. Currently the question has no defensible right answer. |
+
+That gives 4 distinct blockers (with the 12-item explanation-leak being one work item).
+
+## Majors (🟡)
+
+### Cross-file exact-stem duplicates
+
+| File pair | Keys | Issue |
+|---|---|---|
+| b1 vs b3 | **AR-WP-6** ↔ **AR-WP-B3-9** | **Identical** stem: "A soldier's monthly pay is $3,000. She receives a 5% pay raise. What is her new monthly pay?" Same numbers, same choices, same answer. Pure copy. |
+| b1 vs b3 | **MK-GEO-HARD-1** ↔ **MK-GE-B3-2** | Both: right triangle legs 9 and 12, find hypotenuse, answer 15. Identical numbers, near-identical stems. |
+| b1 vs free | **AR-PC-1** ↔ **ar-7** | Same skill, same 25%-off pattern, only the noun ("jacket" vs "shirt") and prices ($80→$60, sale $60→$45) differ. Same trap, same ladder of distractors. |
+| b1 vs free | **AR-RP-1** ↔ **ar-3** | Both 5:2 vs 3:2 flour-sugar ratio with same answer logic. Skill-template repeat. |
+| b3 vs free | **MK-AL-B3-3** ↔ **mk-2** | Both elementary one-step linear: same skill, same difficulty band. Different numbers. Borderline; flag because batch-3 is supposed to add MK *depth*. |
+| b3 vs b1 | **MK-AL-B3-1** ↔ **MK-AL-1** ↔ **MK-AL-2** | Three minimum-effort one-step linear equations across two batches; b3's `x + 14 = 30` is below the difficulty-3 floor that already had `3x + 7 = 22` (MK-AL-1). |
+| b5 vs b1 | **EI-OL-B5-3** ↔ **EI-OHM-D2-1** | Identical stem: "A circuit has a resistance of 8 ohms and a current of 3 amperes. What is the voltage across the circuit?" Same choices (24 V, 11 V, 2.67 V, 64 V). Pure duplicate. |
+| b5 vs free | **GS-PM-B5-2** ↔ free **mc-5** | Wedge → inclined plane (wrapped) appears in GS-PHY-2 ("a screw is most closely related to inclined plane"), GS-PM-B5-2 ("primary mechanical purpose of a wedge"), and MC-IPH-B6-1 ("a screw is a simple machine based on which other simple machine"). Three near-identical concept questions. |
+| b5 vs b1 | **EI-CON-2** (b1) ↔ **EI-CI-B5-5** | Both ask "what makes silicon a semiconductor". Same answer key idea (controllable conductivity via doping/temperature). |
+| b6 vs b1 | **AS-MNT-1** (b1) ↔ **AS-MR-B6-12** | Both about battery / oil maintenance follow-up actions. Different mechanics but the "after cleaning, apply protective spray" framing is template-similar to b1's general maintenance items. Skill template only — flag as moderate. |
+| b6 vs free | **MC-LP-B6-1** ↔ free **mc-1** | Free-test mc-1 is a 10-pound weight on a 6-foot lever balance. b6 has 90-pound load + 2-foot/6-foot. Same exact skill, same template. |
+| b6 vs free | **MC-GW-B6-3** ↔ free **mc-2** | Both: small gear / large gear ratio question with RPM. b6: 12 → 36 teeth, 600 → 200 RPM. free: 10 → 40 teeth, 200 → 50 RPM. Identical skill template. |
+| b6 vs b1 | **MC-IPH-B6-3** ↔ **MC-IPH-1** | Both: ramp 12 ft / 3 ft, MA = 4. b1: 15 ft / 5 ft, MA = 3. Adjacent template repeats. |
+| b6 vs b1 | **MC-IPH-B6-12** ↔ **MC-IPH-2** | Hydraulic system force formulation — both use same force/area/area structure. |
+| b6 vs free | **AS-VS-B6-4** ↔ free **as-4** | Both ask the alternator's role. Identical correct answer, near-identical distractors. |
+| b6 vs free | **AS-VS-B6-1** ↔ free **as-7** | Engine four-stroke / timing belt overlap; b6 is *intake stroke*, free is *timing belt synchronization*. Different but adjacent. |
+| b7 vs b1 | **WK-B7-D5-1** ↔ **WK-SN-B4-6** | Both: LACONIC most nearly means... | Same head-word, both d5/d3. Cross-file synonym-head-word reuse — disqualifying for a single test session. |
+| b7 vs b1 | **WK-B7-D5-7** ↔ **WK-SN-B4-9** | Both: ASSIDUOUS. Cross-file head-word reuse. |
+| b7 vs b3 | **MK-B7-D5-2** | Right triangle 5/12/13 question; very similar to free **mk-7** (6-8-10) and b3 **MK-GE-B3-7** (8-15-17). All Pythagorean-triple identification with square-on-hypotenuse phrasing — 4 of these in the corpus. |
+| b7 vs b3 | **MK-B7-D5-5** ↔ **MK-AL-B3-10** | Both: "sum of three consecutive odd integers". b7 = 111, b3 = 57. Identical skill template, identical difficulty band. |
+| b7 vs b3 | **MK-B7-D5-4** ↔ **MK-FR-B3-9** ↔ **AR-WP-B3-6** | Three "tank fill / fraction of tank" items with very similar structure. |
+| b7 vs b1 | **PC-B7-D5-3** ↔ **PC-INF-B4-9** ↔ **PC-MI-B4-7** | Three "urban heat island" passages across two batches. Topic fatigue. |
+
+That's 22 cross-file duplications/near-duplications. Below are an additional ~10 cross-file head-word repeats in WK that are individually minor but add up:
+
+- **PRUDENT** appears in free **wk-2** and **WK-SN-B4-3** — same head-word, different format (cross-file reuse for WK synonyms is the prior audit's BLOCKER criterion). 🟡
+- **METICULOUS** in free **wk-12** and **WK-CTX-3** (b1) — same head-word in synonym vs context-clue format. 🟡
+- **OBSEQUIOUS** in **WK-SN-7** (b1) and **WK-CTX-HARD-1** (b1, same file). Within-file 🟡.
+- **MAGNANIMOUS** in **WK-SN-8** (b1) and **WK-PFX-8** (b1) — same word in synonym vs prefix format. Within-file 🟡.
+- **PERFUNCTORY** in **WK-SN-9** (b1) and **WK-CTX-12** (b1) — same word, same file. Within-file 🟡.
+- **TENACIOUS / TENACITY** in free **wk-5** and **WK-PFX-B4-9** (b4) — same root, different format. Borderline.
+- **AMBIGUOUS** in free **wk-6** and **WK-CTX-7** (b1). 🟡
+- **CIRCUMSPECT** in **WK-PFX-4** (b1) and **WK-CTX-B4-5** (b4). 🟡
+
+### Distractor / answer-quality issues
+
+| File | external_key | Issue |
+|---|---|---|
+| b1 | **MK-FR-4** | Explanation is a meandering 100+ word digression about "students who flip both fractions" and contains "No: the inversion error is…" mid-thought reasoning. The math is correct (2/3) but the explanation is unprofessional. 🟡 |
+| b1 | **AS-MNT-2** | The stem says brake pedal "sinks slowly to the floor when held with steady pressure" and lists this as "brake fade or pedal drop." Brake fade specifically refers to thermal loss of friction during heavy braking — that's a different failure mode than the fluid-bypass scenario described. The explanation conflates two distinct phenomena. 🟡 |
+| b3 | **AR-RP-B3-7** | "A recipe for 12 cookies requires 2 cups of flour. How many cups of flour are needed for 42 cookies?" Answer is 7. Defensible but 7 cups of flour for 42 cookies is unrealistic (real recipes use ~1 cup per 24 cookies). The numbers betray AI-generation. 🟢 |
+| b4 | **PC-DR-B4-2** | Stem asks "Which side of the heart pumps oxygen-rich blood to the body?" Choice C is "the left side." This is technically right per passage but imprecise — the passage actually says the *left ventricle* pumps. Choice A "the right atrium" is plausible enough to confuse (though wrong). The answer is too vague at d1. 🟡 |
+| b5 | **GS-LS-B5-4** | "Plants and algae" is the correct primary-producer answer, but choice 4 in the array starts with "Herbivores" — the correct one is index 3. Verified — not a blocker, just flagging the tight ladder. ✓ |
+| b6 | **MC-FF-B6-7** | Stem mixes US customary units (pounds) with SI conversions and a confusing inline note about slugs and Newtons. The math is correct (≈5.3 ft/s²) but the presentation is a mess: the explanation parenthetical "(Note: In SI, 120 lb ≈ 534 N…)" reads like a draft note that should have been deleted. 🟡 |
+| b6 | **MC-FF-B6-8** | Same issue: explanation contains "(If static friction could exactly equal 160 N, it would hold, but 150 N is the ceiling.) The answer correctly identifies that movement occurs." — that last sentence is editorial commentary about the question itself, not the math. 🟡 |
+| b6 | **MC-LP-B6-12** | Genuinely odd question — the stem implies a comparison ("Can she loosen it, and if not, what minimum bar length is needed?") and three of the four choices specify a length, but the right answer is "Yes, 24 inches is sufficient." The four choices don't form a parallel set. 🟡 |
+| b6 | **MC-GW-B6-9** | Planetary gear math is presented as "overall ratio = 1 + Ring/Sun = 1 + 40/20 = 3:1" — that's the right *ratio formula* but the carrier-out / sun-in case actually gives ratio = 1 + Ring/Sun only when sun is fixed. Here sun drives, ring fixed → ratio = 1 + Sun/Ring? Either way, the planetary-gear formula chosen and the correct answer happen to align numerically, but the explanation is shaky. Asking d4 candidates to know the planetary-gear ratio formula is also outside the realistic ASVAB scope. 🟡 |
+| b6 | **MC-IPH-B6-6** | Two-stage force multiplication (booster × hydraulic) gives 360 lb. Real automotive boosters multiply by roughly 4× *and* the hydraulic ratio is realistic. But "the booster amplifies by a factor of 4" before the master cylinder is presented as a given without explaining what a brake booster does — the question requires knowing both pedal mechanics and hydraulics, which is appropriate for d3 but the stem hides the multi-stage nature. 🟡 |
+| b6 | **AS-MR-B6-7** | "A spark plug removed from a cylinder has a wet, oily black deposit…" The answer is correct (oil entering combustion chamber). But the explanation introduces "white powdery deposit" for lean and "white crusty or sweet-smelling residue" for coolant — that level of color-detail differentiation is realistic for ASE-certified mechanics, not d4 ASVAB candidates. Outside-topic-scope risk. 🟡 |
+| b6 | **AS-MR-B6-11** | Mentions "drive cycle" and "ECM" without context. Vocabulary is more L4 ASE than ASVAB. 🟡 |
+| b7 | **AO-PF-B7-1** | Already flagged BLOCKER above — geometry doesn't work with 4 squares. |
+| b7 | **AO-3D-B7-9** | Explanation is a 200-word stream-of-consciousness with phrases like "let me track carefully", "Hmm:", "after rot1: front=6, left=3(was front?no), back=5(was left)…", "Wait — checking choices: W(a), V(b)…". Even though `correct_index` ends up matching, the explanation is unshippable. 🟡 (BLOCKER if any of these strings ever surface to users.) |
+| b7 | **AO-PF-B7-7** | Same authorial scratch-work problem ("Correction needed."). 🟡 |
+| b7 | **AO-PF-B7-13** | Stem says "Square U is below T" but the fold reasoning produces a 5-sided answer that doesn't fully match the cube's six faces. The "U below T below S below Q" T-shape geometry is right, but the explanation accidentally counts only 5 unique walls. Reader can't reconstruct. 🟡 |
+| b7 | **AO-SC-B7-12** | Stem describes an L-shape with sharing-corner ambiguity (one arm 1-tall, the other 2-tall, sharing a corner) — the explanation explicitly says "Wait: if arm 2 is 3 cubes long and 2 cubes tall that's 6 cubes; but the shared corner is the end cube of arm 1, which has 1 cube tall there (not 2)…" — the corner-sharing geometry isn't well-defined by the stem. 🟡 |
+| b7 | **MK-B7-D5-1** | Stem "A soldier has twice as many push-ups completed as sit-ups" mixes sit-up and push-up counts; setup is fine but trivially identical to b3 **MK-AL-B3-7** ("a number is 5 more than twice another"). Cross-file template repeat. 🟡 |
+| b7 | **WK-B7-D5-6** | "SANGUINE most nearly means" with answer "Optimistic and positive" is correct for ASVAB usage, but the explanation literally says "the ASVAB tests its 'optimistic' meaning" — which is unverifiable claim about ASVAB content. Strip the meta-commentary. 🟡 |
+
+## Cross-file duplication map
+
+Beyond the cross-file exact-stem duplicates above, here are skill-template repeats where two items use the same problem template with only number changes. None are blockers individually, but the test feels small if a single session pulls multiple of these.
+
+| Pair / cluster | Files | Skill template |
+|---|---|---|
+| AR-WP-6 ↔ AR-WP-B3-9 | b1, b3 | 5% raise on monthly pay — **EXACT** |
+| MK-GEO-HARD-1 ↔ MK-GE-B3-2 | b1, b3 | 9-12-15 hypotenuse — **EXACT** |
+| EI-OL-B5-3 ↔ EI-OHM-D2-1 | b5, b1 | 8 Ω, 3 A → V — **EXACT** |
+| AR-PC-1 ↔ free ar-7 | b1, free | 25% off retail — near-exact |
+| AR-RP-1 ↔ free ar-3 | b1, free | flour:sugar ratio scaling — near-exact |
+| MK-EP-1, MK-EP-B3-1, MK-EP-B3-2 | b1, b3 | Same-base exponent multiply (2³×2⁴ etc.) — 3-way template |
+| MK-FR-B3-1 ↔ free mk-4 | b3, free | Fraction add/subtract w/ LCD — different numbers but identical pattern |
+| AR-RD-3 ↔ AR-RD-B3-8 | b1, b3 | Pump fill/drain net rate — near-exact |
+| AR-RD-B3-12 ↔ ar-11 (free) | b3, free | Two-train catch-up — near-exact |
+| AR-PC-3 ↔ AR-PC-B3-8 | b1, b3 | Tip + tax both on original — near-exact |
+| AR-PC-5 ↔ AR-PC-B3-9 ↔ AR-PC-B3-10 ↔ AR-PC-B3-11 ↔ AR-PC-B3-12 | b1, b3 | Markup-then-discount sequence — **5-way** template repeat |
+| WK-SN-3 ↔ WK-SN-B4-6 | free, b4 | LACONIC head-word — cross-file |
+| WK-SN-9 ↔ WK-CTX-12 ↔ WK-B7-D5-1 | b1, b1, b7 | PERFUNCTORY (3-way) |
+| WK-SN-7 ↔ WK-CTX-HARD-1 | b1, b1 | OBSEQUIOUS within-file |
+| WK-SN-8 ↔ WK-PFX-8 | b1, b1 | MAGNANIMOUS within-file |
+| WK-CTX-3 ↔ free wk-12 | b1, free | METICULOUS cross-file |
+| WK-CTX-7 ↔ free wk-6 | b1, free | AMBIGUOUS cross-file |
+| WK-PFX-4 ↔ WK-CTX-B4-5 | b1, b4 | CIRCUMSPECT cross-file |
+| WK-PFX-B4-9 ↔ free wk-5 | b4, free | TENACIOUS / TENACITY cross-file |
+| WK-CTX-D2-1 ↔ free wk-2 | b1, free | PRUDENT cross-file (different formats) |
+| GS-PHY-2 ↔ GS-PM-B5-2 ↔ MC-IPH-B6-1 | b1, b5, b6 | Wedge / screw / inclined-plane simple-machine taxonomy — **3-way** |
+| GS-PHY-5 ↔ MC-MOT-B6-2 ↔ MC-MP-B6-8 | b1, b6, b6 | Galileo "two balls fall same time" — 3-way |
+| GS-PHY-3 ↔ GS-PM-B5-6 | b1, b5 | Work = F × d (lift box) — exact pattern |
+| GS-PHY-1 ↔ MC-FF-B6-1 | b1, b6 | "Box at rest, what's friction?" — same exact concept |
+| EI-CON-2 ↔ EI-CI-B5-5 | b1, b5 | Silicon as semiconductor — same idea |
+| EI-CON-3 ↔ EI-CI-B5-9 | b1, b5 | Copper vs aluminum / iron resistivity — same idea |
+| MC-IPH-1 ↔ MC-IPH-B6-3 ↔ MC-IPH-B6-5 | b1, b6, b6 | Frictionless ramp MA — 3-way |
+| MC-IPH-2 ↔ MC-IPH-B6-4 ↔ MC-IPH-B6-10 ↔ MC-IPH-B6-12 | b1, b6, b6, b6 | Hydraulic area-ratio force — **4-way** |
+| MC-LP-B6-1 ↔ free mc-1 | b6, free | First-class lever balance equation — near-exact |
+| MC-LP-B6-9 ↔ MC-IPH-3 | b6, b1 | Block-and-tackle 4 vs 6 segments — same idea |
+| MC-GW-B6-3 ↔ free mc-2 | b6, free | Small/large gear RPM — exact template |
+| MC-GW-B6-7 ↔ MC-GW-B6-11 | b6, b6 | Gear reduction → torque multiplication — within-file |
+| AS-MNT-1 ↔ free as-6 | b1, free | Oil change interval — same skill |
+| AS-MNT-3 ↔ AS-MR-B6-3 | b1, b6 | Tire rotation / brake-fluid maintenance — same skill family, different parts |
+| AS-MNT-7 ↔ AS-MR-B6-7 ↔ AS-MR-B6-9 | b1, b6, b6 | Spark-plug deposit interpretation / blow-by — 3-way diagnostics |
+| AO-3D-1 ↔ AO-3D-B7-1 | b1, b7 | Forward 90° rotation around bottom edge — near-identical mechanics |
+| AO-3D-3 ↔ AO-3D-B7-2 ↔ AO-3D-B7-18 | b1, b7, b7 | Vertical-axis rotation, what's on top — 3-way |
+| AO-3D-4 ↔ AO-3D-B7-11 | b1, b7 | 90° vertical rotation, what's now on left — near-exact |
+| AO-PF-1 ↔ AO-PF-B7-3 | b1, b7 | Plus-shape cube net + extension — same template |
+| AO-PF-4 ↔ AO-PF-B7-19 | b1, b7 | Cube net "what's opposite face X" — same template, different geometry |
+| AO-SC-3 ↔ AO-SC-B7-1 | b1, b7 | Staircase sum 1+2+3+...+n — same template |
+| AO-SC-5 ↔ AO-SC-B7-8 ↔ AO-SC-B7-20 | b1, b7, b7 | Hidden cubes in n×n×n — 3-way template (n=4, n=5, n=4 again) |
+
+That gives **~38 distinct cross-file repetition findings**. Together with the 4 blockers, the corpus has roughly 42 issues that warrant action before ship. The good news: ~28 of those are inside the AR / WK / MC / AO subtests where existing items are functionally correct — they just feel monotonous when sampled together.
+
+## Per-subtest grades + recommendations
+
+- **AR (125 items, ~33% of mathematical content) — Grade A-.** Coverage is excellent at d3-d5 but the d1/d2 floor has 6 empty cells. The percent topic has a **5-way** markup/discount template repeat (AR-PC-5/B3-9/B3-10/B3-11/B3-12). Recommend (a) commission ≈8 fresh easy AR items spread across the 5 topics; (b) keep at most 2 of the 5 markup-discount items.
+- **WK (106 items) — Grade B+.** The cross-file head-word reuse is the largest single quality liability. PRUDENT, METICULOUS, AMBIGUOUS, CIRCUMSPECT, TENACIOUS, OBSEQUIOUS, PERFUNCTORY, LACONIC, ASSIDUOUS — 9 head-words appear in 2+ files. The prior audit treated this as 🟡 within file and 🔴 across files; with the expansion, 5 of those crossed into another file. Recommend: dedupe to ≈85 items by removing the WK-CTX or WK-PFX duplicate when both formats exist for the same word.
+- **PC (73 items) — Grade A.** Best-engineered subtest in the corpus. The "urban heat island" passage triple-coverage is the only template fatigue. Author-tone-purpose passages in batches 1 and 4 are excellent. Detail-recall and inference are well-balanced. No structural changes needed.
+- **MK (109 items) — Grade A-.** The d1/d2 floor needs ~5 added items. The Pythagorean-triple cluster (5-12-13 + 6-8-10 + 9-12-15 + 8-15-17) is fine — those *are* the four common triples. The hypotenuse cross-file duplicate (MK-GEO-HARD-1 ↔ MK-GE-B3-2) is the only structural defect.
+- **GS (64 items) — Grade A.** Smaller than ideal but balanced across life/physical/earth-space/mechanics. The 3-way "wedge/screw/inclined plane" question is the only repeat. Consider 4 more d1/d2 items for life-science.
+- **EI (67 items) — Grade A.** Balanced, accurate, well-written. EI-OHM-D2-1 ↔ EI-OL-B5-3 is the only exact dup.
+- **AS (67 items) — Grade A-.** Accurate and field-realistic. A few items in maintenance-repair (AS-MR-B6-7, AS-MR-B6-11) test ASE-level diagnostics that are above ASVAB scope. Consider downgrading those from d4/d5 to d5+ "advanced" or cutting them.
+- **MC (81 items) — Grade B+.** Heaviest skill-template repetition. Hydraulic-area-ratio appears 4 ways; gear-RPM appears 3 ways; ramp-MA appears 3 ways. Recommend: keep one canonical version of each at each difficulty level; cut roughly 6 items.
+- **AO (91 items) — Grade C+.** The expansion finally seeds `ao.pattern-assembly` (which had been empty), but batch-7 ships 12 items with leaked authoring scratch-work, plus 2 hard-wrong items (AO-PA-B7-7, AO-3D-B7-4) and 1 unsolvable item (AO-PF-B7-1). With those fixed, AO becomes a B+ subtest. AO is the gating subtest for shipping.
+
+## Per-file grades
+
+| File | Grade | Rationale |
+|---|---|---|
+| free-test.json | B+ | 90 items, well-anchored to question-tags.seed.json, no factual errors found in this audit. Loses points for being the donor of several skill-templates that batches 1/3/6 reuse. |
+| expansion-batch-1.json | A- | 92 items, generally strong, but ~10 within-file head-word duplicates (OBSEQUIOUS, MAGNANIMOUS, PERFUNCTORY across SN/CTX/PFX) and one stretched explanation in MK-FR-4. |
+| expansion-batch-2.json | B | (Per prior audit; not re-audited in this pass beyond confirming.) |
+| expansion-batch-3.json | A- | 130 items, the largest single batch and the strongest. Adds AR/MK depth as planned. Loses points only for the AR-WP-B3-9 exact dup with b1 and the markup-discount over-coverage in AR-PC-B3-9..12. |
+| expansion-batch-4.json | A | 96 items, best-engineered batch overall. WK and PC are excellent; cross-file head-word reuse is the only flaw. |
+| expansion-batch-5.json | A | 96 items, technically solid GS+EI content. The single exact duplicate (EI-OL-B5-3 ↔ EI-OHM-D2-1) is the only blocker-adjacent issue. |
+| expansion-batch-6.json | A | 108 items, excellent AS+MC content. Loses points for skill-template fatigue (gears/levers/hydraulics) and the two minor "(Note:…)" editorial leaks in MC-FF-B6-7/8. |
+| expansion-batch-7.json | C+ | 100 items, but 12 carry leaked authoring scratch-work, 2 are hard-wrong, 1 is unsolvable. Pattern-assembly content (AO-PA-B7-1..20) is competent but several stems describe geometry too imprecisely to verify. The AFQT diff-5 supplement (AR/MK/WK/PC) at the bottom of the file is fine. |
+
+## Bottom line
+
+**Fix-blockers-then-ship.** The corpus is fundamentally strong: 5 of 8 files are A-grade, 1 is B+, 1 is B (already flagged in prior audit), and only 1 (batch-7) needs serious remediation before public release.
+
+**Estimated post-cleanup item count:** 783 → ~745 after the recommended cuts. Specifically:
+- −12 AO items (rewrite explanations for batch-7 internal scratch-work) — keeps stems
+- −2 AO items removed entirely (AO-PA-B7-7 unrecoverable, AO-PF-B7-1 unrecoverable)
+- −1 AO item removed (AO-3D-B7-4 fix correct_index OR remove)
+- −2 exact-dup AR/EI items removed (AR-WP-B3-9, EI-OL-B5-3)
+- −1 exact-dup MK item (MK-GEO-HARD-1, since MK-GE-B3-2 has cleaner integration)
+- −5 WK head-word duplicates resolved by removing the SN-format and keeping CTX/PFX/ROOT
+- −3 MK markup-discount duplicates (keep AR-PC-5 and AR-PC-B3-10; cut the other 3)
+- −3 MC hydraulic-ratio duplicates (keep canonical d2/d3/d4; cut the other 3)
+- −2 MC gear/ramp duplicates
+- −2 GS simple-machine taxonomy duplicates
+- −5 AS items rescoped or cut (the ASE-diagnostic-vocabulary outliers)
+
+That removes ≈38 items and rewrites another ≈12 in place — leaving **≈745 items**, all of which are individually defensible.
+
+**Top 3 actions to maximize quality (in order):**
+
+1. **Strip authoring scratch-work from batch-7.** A single 30-minute pass to remove every "Correction:", "Wait", "Reassign", "Re-check", "let me track", "let me trace" string from the batch-7 explanation field — this alone moves AO from C+ to B+ and unblocks the entire batch.
+2. **Fix the 2 hard-wrong items in batch-7** (AO-PA-B7-7 and AO-3D-B7-4). Both are simple `correct_index` corrections plus a 1-paragraph rewrite of the explanation. AO-PF-B7-1 may need a stem rewrite.
+3. **Resolve cross-file head-word reuse in WK.** When PRUDENT, LACONIC, METICULOUS, AMBIGUOUS, CIRCUMSPECT, TENACIOUS, ASSIDUOUS appear in both a free-test and an expansion batch, drop the duplicate (keep the format with the better explanation). Then audit the within-file duplicates in batch-1 (OBSEQUIOUS, MAGNANIMOUS, PERFUNCTORY) and apply the same rule. This is a 30-minute search-and-delete pass that materially improves WK fairness.
+
+After those three actions, the corpus is ready for production seeding.
