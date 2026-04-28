@@ -1,0 +1,1202 @@
+[
+  {
+    "external_key": "AR-AF-1",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A crate holds 24 bottles. A store receives 15 crates. After selling 120 bottles, how many bottles remain?",
+    "choices": [
+      "120",
+      "180",
+      "240",
+      "300"
+    ],
+    "correct_index": 2,
+    "explanation": "Total = 24 × 15 = 360 bottles. 360 − 120 = 240 remain. The trap is computing 24 × 12 = 288 by misreading the crate count."
+  },
+  {
+    "external_key": "AR-AF-2",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A soldier buys 4 notebooks at $3 each and 6 pens at $1.25 each. What is the total cost?",
+    "choices": [
+      "$16.50",
+      "$17.50",
+      "$18.75",
+      "$19.50"
+    ],
+    "correct_index": 3,
+    "explanation": "Notebooks: 4 × $3 = $12. Pens: 6 × $1.25 = $7.50. Total = $12 + $7.50 = $19.50."
+  },
+  {
+    "external_key": "AR-AF-3",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A truck can carry 850 pounds. A soldier loads 10 boxes at 75 pounds each. How many pounds of capacity remain?",
+    "choices": [
+      "75",
+      "100",
+      "125",
+      "150"
+    ],
+    "correct_index": 1,
+    "explanation": "10 boxes × 75 lb = 750 lb loaded. Remaining capacity = 850 − 750 = 100 lb."
+  },
+  {
+    "external_key": "AR-AF-4",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A barracks has 6 rooms, each holding 4 soldiers. If 14 soldiers are currently assigned, how many empty beds remain?",
+    "choices": [
+      "6",
+      "8",
+      "10",
+      "14"
+    ],
+    "correct_index": 2,
+    "explanation": "Total beds = 6 × 4 = 24. Empty = 24 − 14 = 10."
+  },
+  {
+    "external_key": "AR-AF-5",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A soldier earns $2,880 per month. After paying $720 in rent and $340 in other bills, she saves the rest. How much does she save over 4 months?",
+    "choices": [
+      "$1,820",
+      "$6,400",
+      "$7,280",
+      "$11,520"
+    ],
+    "correct_index": 2,
+    "explanation": "Monthly savings = $2,880 − $720 − $340 = $1,820. Over 4 months: $1,820 × 4 = $7,280."
+  },
+  {
+    "external_key": "AR-RP-1",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A recipe uses 3 cups of flour for every 2 cups of sugar. How many cups of sugar are needed if you use 12 cups of flour?",
+    "choices": [
+      "6",
+      "8",
+      "9",
+      "18"
+    ],
+    "correct_index": 1,
+    "explanation": "Flour:Sugar = 3:2. Sugar = (2/3) × 12 = 8 cups. The trap is flipping the ratio and using 3/2 × 12 = 18."
+  },
+  {
+    "external_key": "AR-RP-2",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "The exchange rate is 1 U.S. dollar = 0.85 euros. A soldier converts $240 to euros. How many euros does she receive?",
+    "choices": [
+      "180",
+      "196",
+      "204",
+      "282"
+    ],
+    "correct_index": 2,
+    "explanation": "Euros = 240 × 0.85 = 204. The trap answer 282 comes from dividing 240 ÷ 0.85, which is converting in the wrong direction."
+  },
+  {
+    "external_key": "AR-RP-3",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "On a map, 1 inch represents 50 miles. Two cities are 3.5 inches apart on the map. What is the actual distance between them?",
+    "choices": [
+      "150 miles",
+      "165 miles",
+      "175 miles",
+      "200 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "Distance = 3.5 × 50 = 175 miles."
+  },
+  {
+    "external_key": "AR-RP-4",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 5,
+    "stem": "A squad of 12 soldiers can build a wall in 8 hours. How long will it take a squad of 16 soldiers to build the same wall at the same work rate?",
+    "choices": [
+      "4 hours",
+      "5 hours",
+      "6 hours",
+      "7 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Total work = 12 × 8 = 96 soldier-hours. With 16 soldiers: 96 ÷ 16 = 6 hours. This is inverse proportion — more workers means less time."
+  },
+  {
+    "external_key": "AR-RP-5",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "A kitchen uses oil and vinegar in a 5:3 ratio to make dressing. A cook needs 64 ounces of dressing total. How many ounces of vinegar are needed?",
+    "choices": [
+      "16",
+      "20",
+      "24",
+      "40"
+    ],
+    "correct_index": 2,
+    "explanation": "Vinegar = (3/8) × 64 = 24 ounces. The trap is using 3/5 of 64 = 38.4, or thinking vinegar is the larger portion."
+  },
+  {
+    "external_key": "AR-RP-6",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A kitchen uses salt and pepper in a ratio of 4:1 by weight. If a cook uses 20 grams of salt, how many grams of pepper are needed?",
+    "choices": [
+      "4",
+      "5",
+      "8",
+      "16"
+    ],
+    "correct_index": 1,
+    "explanation": "Pepper = (1/4) × 20 = 5 grams."
+  },
+  {
+    "external_key": "AR-RP-7",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "A supply truck carries canned goods and dry goods in a 3:5 ratio by weight. The total shipment weighs 640 pounds. How many pounds of canned goods are delivered?",
+    "choices": [
+      "160",
+      "200",
+      "240",
+      "400"
+    ],
+    "correct_index": 2,
+    "explanation": "Total parts = 3 + 5 = 8. Each part = 640 ÷ 8 = 80 lb. Canned goods = 3 × 80 = 240 lb. The trap is using 3/5 of 640 = 384."
+  },
+  {
+    "external_key": "AR-PC-1",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A jacket originally costs $80. It is on sale for 25% off. What is the sale price?",
+    "choices": [
+      "$20",
+      "$55",
+      "$60",
+      "$65"
+    ],
+    "correct_index": 2,
+    "explanation": "Discount = 25% × $80 = $20. Sale price = $80 − $20 = $60."
+  },
+  {
+    "external_key": "AR-PC-2",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A soldier's physical fitness score increased from 60 to 75. What is the percent increase?",
+    "choices": [
+      "15%",
+      "20%",
+      "25%",
+      "30%"
+    ],
+    "correct_index": 2,
+    "explanation": "Percent increase = (75 − 60) / 60 × 100 = 15/60 × 100 = 25%. The trap is dividing by the new value 75 to get 20%."
+  },
+  {
+    "external_key": "AR-PC-3",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 4,
+    "stem": "A meal costs $36. A 15% tip and a separate 10% service fee are both applied to the original $36 bill. What is the total amount paid?",
+    "choices": [
+      "$40.68",
+      "$43.20",
+      "$45.00",
+      "$45.36"
+    ],
+    "correct_index": 2,
+    "explanation": "Tip = 15% × $36 = $5.40. Service fee = 10% × $36 = $3.60. Total = $36 + $5.40 + $3.60 = $45.00. The trap is compounding the service fee onto the tipped price."
+  },
+  {
+    "external_key": "AR-PC-4",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A soldier invests $1,000 at 6% simple annual interest. How much interest is earned after 3 years?",
+    "choices": [
+      "$60",
+      "$180",
+      "$191",
+      "$600"
+    ],
+    "correct_index": 1,
+    "explanation": "Simple interest = Principal × Rate × Time = $1,000 × 0.06 × 3 = $180. The trap is computing only 1 year's interest ($60) or applying compound interest."
+  },
+  {
+    "external_key": "AR-PC-5",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 4,
+    "stem": "A store marks up a $50 item by 20%, then offers a 10% discount on the marked-up price. What is the final selling price?",
+    "choices": [
+      "$50.00",
+      "$54.00",
+      "$55.00",
+      "$58.00"
+    ],
+    "correct_index": 1,
+    "explanation": "Marked-up price = $50 × 1.20 = $60. After 10% discount: $60 × 0.90 = $54. The trap is thinking +20% then −10% nets +10%, giving $55."
+  },
+  {
+    "external_key": "AR-PC-6",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A town's population grew from 4,000 to 4,600 in one year. What was the percent increase?",
+    "choices": [
+      "12.5%",
+      "13%",
+      "15%",
+      "16%"
+    ],
+    "correct_index": 2,
+    "explanation": "Percent increase = (600 ÷ 4,000) × 100 = 15%."
+  },
+  {
+    "external_key": "AR-RD-1",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A soldier runs at 6 miles per hour. How far does she run in 45 minutes?",
+    "choices": [
+      "3.5 miles",
+      "4 miles",
+      "4.5 miles",
+      "5 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "45 minutes = 0.75 hours. Distance = 6 × 0.75 = 4.5 miles."
+  },
+  {
+    "external_key": "AR-RD-2",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 4,
+    "stem": "Two convoys leave the same base traveling in opposite directions. One travels at 45 mph and the other at 55 mph. How far apart are they after 2 hours?",
+    "choices": [
+      "90 miles",
+      "110 miles",
+      "180 miles",
+      "200 miles"
+    ],
+    "correct_index": 3,
+    "explanation": "Combined separation rate = 45 + 55 = 100 mph. Distance apart = 100 × 2 = 200 miles. The trap is using only one convoy's speed."
+  },
+  {
+    "external_key": "AR-RD-3",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 4,
+    "stem": "Pump A fills a tank at 40 gallons per minute. Pump B drains it at 15 gallons per minute. Starting empty, how many minutes until a 1,000-gallon tank is full with both pumps running?",
+    "choices": [
+      "25 minutes",
+      "33 minutes",
+      "40 minutes",
+      "67 minutes"
+    ],
+    "correct_index": 2,
+    "explanation": "Net fill rate = 40 − 15 = 25 gal/min. Time = 1,000 ÷ 25 = 40 minutes."
+  },
+  {
+    "external_key": "AR-RD-4",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A vehicle travels 180 miles in 3 hours. At the same speed, how long will it take to travel 270 miles?",
+    "choices": [
+      "3.5 hours",
+      "4 hours",
+      "4.5 hours",
+      "5 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Speed = 180 ÷ 3 = 60 mph. Time for 270 miles = 270 ÷ 60 = 4.5 hours."
+  },
+  {
+    "external_key": "AR-RD-5",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 5,
+    "stem": "Soldier A can complete a course in 4 hours alone. Soldier B can complete the same course in 6 hours alone. Working together, how long do they take?",
+    "choices": [
+      "2 hours",
+      "2 hours 24 minutes",
+      "3 hours",
+      "3 hours 20 minutes"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined rate = 1/4 + 1/6 = 3/12 + 2/12 = 5/12 per hour. Time = 12/5 = 2.4 hours = 2 hours 24 minutes."
+  },
+  {
+    "external_key": "AR-RD-6",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A helicopter flies 420 miles at 140 mph. How long does the flight take?",
+    "choices": [
+      "2 hours",
+      "2.5 hours",
+      "3 hours",
+      "3.5 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Time = Distance ÷ Speed = 420 ÷ 140 = 3 hours."
+  },
+  {
+    "external_key": "AR-WP-1",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "A soldier spends 1/3 of his monthly pay on rent and 1/4 on food, and saves the rest. His monthly pay is $2,400. How much does he save each month?",
+    "choices": [
+      "$400",
+      "$600",
+      "$800",
+      "$1,000"
+    ],
+    "correct_index": 3,
+    "explanation": "Rent = 1/3 × $2,400 = $800. Food = 1/4 × $2,400 = $600. Savings = $2,400 − $800 − $600 = $1,000."
+  },
+  {
+    "external_key": "AR-WP-2",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 5,
+    "stem": "Three soldiers share a $420 supply order. One soldier pays twice as much as each of the other two. How much does the soldier paying more contribute?",
+    "choices": [
+      "$105",
+      "$140",
+      "$168",
+      "$210"
+    ],
+    "correct_index": 3,
+    "explanation": "Let each of the two pay x. The third pays 2x. Equation: x + x + 2x = 4x = $420, so x = $105. The larger share = 2x = $210."
+  },
+  {
+    "external_key": "AR-WP-3",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A base has 480 personnel. If 35% are on leave, how many are currently on base?",
+    "choices": [
+      "148",
+      "168",
+      "288",
+      "312"
+    ],
+    "correct_index": 3,
+    "explanation": "On leave = 35% × 480 = 168. On base = 480 − 168 = 312. The trap is selecting 168 (those on leave) rather than those remaining."
+  },
+  {
+    "external_key": "AR-WP-4",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "A mess hall serves breakfast for 2 hours at 80 soldiers per hour and lunch for 3 hours at 120 soldiers per hour. What is the total number of soldiers served?",
+    "choices": [
+      "400",
+      "500",
+      "520",
+      "600"
+    ],
+    "correct_index": 2,
+    "explanation": "Breakfast = 80 × 2 = 160. Lunch = 120 × 3 = 360. Total = 160 + 360 = 520."
+  },
+  {
+    "external_key": "AR-WP-5",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "A soldier drives 3 legs of a trip: 60 miles at 30 mph, then 120 miles at 60 mph, then 90 miles at 45 mph. What is the total driving time?",
+    "choices": [
+      "5 hours",
+      "5.5 hours",
+      "6 hours",
+      "6.5 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Leg 1: 60 ÷ 30 = 2 hrs. Leg 2: 120 ÷ 60 = 2 hrs. Leg 3: 90 ÷ 45 = 2 hrs. Total = 6 hours."
+  },
+  {
+    "external_key": "AR-WP-6",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A soldier's monthly pay is $3,000. She receives a 5% pay raise. What is her new monthly pay?",
+    "choices": [
+      "$3,050",
+      "$3,100",
+      "$3,150",
+      "$3,200"
+    ],
+    "correct_index": 2,
+    "explanation": "Raise = 5% × $3,000 = $150. New pay = $3,000 + $150 = $3,150."
+  },
+  {
+    "external_key": "MK-AL-1",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "Solve for x: 3x + 7 = 22",
+    "choices": [
+      "x = 3",
+      "x = 5",
+      "x = 7",
+      "x = 9"
+    ],
+    "correct_index": 1,
+    "explanation": "3x = 22 − 7 = 15. x = 15 ÷ 3 = 5."
+  },
+  {
+    "external_key": "MK-AL-2",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "Solve for x: 4x − 9 = 23",
+    "choices": [
+      "x = 3.5",
+      "x = 7",
+      "x = 8",
+      "x = 32"
+    ],
+    "correct_index": 2,
+    "explanation": "4x = 23 + 9 = 32. x = 32 ÷ 4 = 8."
+  },
+  {
+    "external_key": "MK-AL-3",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 5,
+    "stem": "Solve the system: 2x + y = 11 and x − y = 1. What is the value of x?",
+    "choices": [
+      "x = 2",
+      "x = 3",
+      "x = 4",
+      "x = 5"
+    ],
+    "correct_index": 2,
+    "explanation": "Add both equations: (2x + y) + (x − y) = 11 + 1 → 3x = 12 → x = 4. Then y = x − 1 = 3. Verify: 2(4) + 3 = 11 ✓."
+  },
+  {
+    "external_key": "MK-AL-4",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "Which value of x satisfies the inequality 5x − 4 > 16?",
+    "choices": [
+      "x = 3",
+      "x = 4",
+      "x = 4.5",
+      "x = 5"
+    ],
+    "correct_index": 3,
+    "explanation": "5x > 16 + 4 = 20, so x > 4. Among the choices, only x = 5 satisfies x > 4."
+  },
+  {
+    "external_key": "MK-AL-5",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If 2(x + 3) = 18, what is x?",
+    "choices": [
+      "x = 6",
+      "x = 7",
+      "x = 9",
+      "x = 12"
+    ],
+    "correct_index": 0,
+    "explanation": "Distribute: 2x + 6 = 18. 2x = 12. x = 6."
+  },
+  {
+    "external_key": "MK-AL-6",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "A soldier earns $d per day. After 5 days he has earned $650. He spends $200. Which expression correctly gives his remaining money?",
+    "choices": [
+      "5d − 200",
+      "d/5 − 200",
+      "650 − 5d",
+      "5(d − 200)"
+    ],
+    "correct_index": 0,
+    "explanation": "Total earned after 5 days = 5d. Since 5d = $650, he then spends $200, leaving 5d − 200 = 650 − 200 = $450. The expression 5d − 200 models earning then spending."
+  },
+  {
+    "external_key": "MK-FR-1",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "What is 3/4 + 2/3?",
+    "choices": [
+      "5/7",
+      "5/12",
+      "1 5/12",
+      "1 7/12"
+    ],
+    "correct_index": 2,
+    "explanation": "Common denominator is 12. 3/4 = 9/12; 2/3 = 8/12. Sum = 17/12 = 1 5/12. The trap is adding numerators and denominators directly to get 5/7."
+  },
+  {
+    "external_key": "MK-FR-2",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Which fraction is largest: 5/8, 2/3, 3/5, or 7/12?",
+    "choices": [
+      "5/8",
+      "2/3",
+      "3/5",
+      "7/12"
+    ],
+    "correct_index": 1,
+    "explanation": "Convert to a common denominator of 120: 5/8 = 75/120, 2/3 = 80/120, 3/5 = 72/120, 7/12 = 70/120. Largest is 2/3."
+  },
+  {
+    "external_key": "MK-FR-3",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 4,
+    "stem": "A soldier runs 2.75 miles on Monday and 1 3/4 miles on Tuesday. What is the combined distance?",
+    "choices": [
+      "4.00 miles",
+      "4.25 miles",
+      "4.50 miles",
+      "4.75 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "1 3/4 = 1.75 miles. Total = 2.75 + 1.75 = 4.50 miles."
+  },
+  {
+    "external_key": "MK-FR-4",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "What is (3/5) × (10/9)?",
+    "choices": [
+      "1/3",
+      "2/3",
+      "6/5",
+      "30/45"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiply across: (3 × 10) / (5 × 9) = 30/45. Simplify by dividing by 15: 2/3."
+  },
+  {
+    "external_key": "MK-FR-5",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 4,
+    "stem": "Express 0.625 as a fraction in lowest terms.",
+    "choices": [
+      "5/8",
+      "6/10",
+      "25/40",
+      "3/5"
+    ],
+    "correct_index": 0,
+    "explanation": "0.625 = 625/1000. Divide by GCF 125: 5/8. Options 6/10 and 25/40 are equivalent but not fully reduced; 3/5 = 0.60 ≠ 0.625."
+  },
+  {
+    "external_key": "MK-EP-1",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify: 2³ × 2⁴",
+    "choices": [
+      "2⁶",
+      "2⁷",
+      "4⁷",
+      "8⁷"
+    ],
+    "correct_index": 1,
+    "explanation": "When multiplying powers with the same base, add the exponents: 2³ × 2⁴ = 2^(3+4) = 2⁷ = 128."
+  },
+  {
+    "external_key": "MK-EP-2",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "What is (3²)³?",
+    "choices": [
+      "3⁵",
+      "3⁶",
+      "9³",
+      "27²"
+    ],
+    "correct_index": 1,
+    "explanation": "Power of a power rule: multiply the exponents. (3²)³ = 3^(2×3) = 3⁶ = 729. The trap is adding instead of multiplying to get 3⁵."
+  },
+  {
+    "external_key": "MK-EP-3",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Expand and simplify: (x + 4)(x − 3)",
+    "choices": [
+      "x² − 12",
+      "x² + x − 12",
+      "x² − x − 12",
+      "x² + 7x − 12"
+    ],
+    "correct_index": 1,
+    "explanation": "FOIL: x·x + x·(−3) + 4·x + 4·(−3) = x² − 3x + 4x − 12 = x² + x − 12."
+  },
+  {
+    "external_key": "MK-EP-4",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Factor: x² − 9",
+    "choices": [
+      "(x − 3)²",
+      "(x + 3)(x − 3)",
+      "(x − 9)(x + 1)",
+      "(x + 9)(x − 1)"
+    ],
+    "correct_index": 1,
+    "explanation": "This is a difference of squares: x² − 9 = x² − 3² = (x + 3)(x − 3). The trap (x − 3)² expands to x² − 6x + 9, not x² − 9."
+  },
+  {
+    "external_key": "MK-EP-5",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Simplify: (4x³y²) ÷ (2xy)",
+    "choices": [
+      "2x²y",
+      "2x³y",
+      "4x²y",
+      "2x²y²"
+    ],
+    "correct_index": 0,
+    "explanation": "Coefficients: 4 ÷ 2 = 2. x-terms: x³ ÷ x = x². y-terms: y² ÷ y = y. Result: 2x²y."
+  },
+  {
+    "external_key": "MK-GE-1",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A rectangular field is 80 meters long and 35 meters wide. What is its perimeter?",
+    "choices": [
+      "115 m",
+      "230 m",
+      "270 m",
+      "2,800 m"
+    ],
+    "correct_index": 1,
+    "explanation": "Perimeter = 2(l + w) = 2(80 + 35) = 2(115) = 230 m. The trap is computing l + w once (115 m) without multiplying by 2."
+  },
+  {
+    "external_key": "MK-GE-2",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A triangle has a base of 14 cm and a height of 9 cm. What is its area?",
+    "choices": [
+      "46 cm²",
+      "63 cm²",
+      "126 cm²",
+      "252 cm²"
+    ],
+    "correct_index": 1,
+    "explanation": "Area = (1/2) × base × height = (1/2) × 14 × 9 = 63 cm². The trap is omitting the 1/2 factor, giving 126 cm²."
+  },
+  {
+    "external_key": "MK-GE-3",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "A cylinder has a radius of 5 cm and a height of 10 cm. What is its volume? (Use π ≈ 3.14)",
+    "choices": [
+      "157 cm³",
+      "314 cm³",
+      "785 cm³",
+      "1,570 cm³"
+    ],
+    "correct_index": 2,
+    "explanation": "V = πr²h = 3.14 × 5² × 10 = 3.14 × 25 × 10 = 785 cm³. Using the diameter (10) as the radius gives 3.14 × 100 × 10 = 3,140 — a common error."
+  },
+  {
+    "external_key": "MK-GE-4",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A circle has a diameter of 10 cm. What is its area? (Use π ≈ 3.14)",
+    "choices": [
+      "31.4 cm²",
+      "62.8 cm²",
+      "78.5 cm²",
+      "314 cm²"
+    ],
+    "correct_index": 2,
+    "explanation": "Radius = diameter ÷ 2 = 5 cm. Area = πr² = 3.14 × 25 = 78.5 cm². Using the diameter as the radius gives 3.14 × 100 = 314 — a classic trap."
+  },
+  {
+    "external_key": "MK-GE-5",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "A right triangle has legs of 6 cm and 8 cm. What is the length of the hypotenuse?",
+    "choices": [
+      "7 cm",
+      "10 cm",
+      "12 cm",
+      "14 cm"
+    ],
+    "correct_index": 1,
+    "explanation": "c² = 6² + 8² = 36 + 64 = 100. c = 10 cm. This is the classic 3-4-5 Pythagorean triple scaled by 2."
+  },
+  {
+    "external_key": "MK-NP-1",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "Which of the following is a prime number?",
+    "choices": [
+      "51",
+      "57",
+      "61",
+      "91"
+    ],
+    "correct_index": 2,
+    "explanation": "51 = 3 × 17; 57 = 3 × 19; 91 = 7 × 13. Only 61 has no factors besides 1 and itself, so it is prime."
+  },
+  {
+    "external_key": "MK-NP-2",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "What is the greatest common factor (GCF) of 36 and 48?",
+    "choices": [
+      "6",
+      "9",
+      "12",
+      "18"
+    ],
+    "correct_index": 2,
+    "explanation": "Factors of 36 include 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 48 include 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The largest common factor is 12."
+  },
+  {
+    "external_key": "MK-NP-3",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "The product of two consecutive even integers is 48. What is the smaller integer?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correct_index": 1,
+    "explanation": "Let the integers be n and n + 2. n(n + 2) = 48. Try n = 6: 6 × 8 = 48. ✓ The smaller integer is 6."
+  },
+  {
+    "external_key": "MK-NP-4",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "A number N is divisible by both 6 and 10. What is the smallest positive value N can be?",
+    "choices": [
+      "16",
+      "30",
+      "60",
+      "120"
+    ],
+    "correct_index": 1,
+    "explanation": "The least common multiple (LCM) of 6 and 10 is found using prime factors: 6 = 2 × 3, 10 = 2 × 5. LCM = 2 × 3 × 5 = 30. The trap is multiplying 6 × 10 = 60."
+  },
+  {
+    "external_key": "WK-SN-1",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "DILIGENT most nearly means:",
+    "choices": [
+      "Lazy",
+      "Careless",
+      "Hardworking",
+      "Impatient"
+    ],
+    "correct_index": 2,
+    "explanation": "Diligent means showing steady, earnest effort. It is the opposite of lazy or careless."
+  },
+  {
+    "external_key": "WK-SN-2",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "TRANQUIL most nearly means:",
+    "choices": [
+      "Noisy",
+      "Peaceful",
+      "Rushed",
+      "Dangerous"
+    ],
+    "correct_index": 1,
+    "explanation": "Tranquil means free from disturbance; calm and peaceful."
+  },
+  {
+    "external_key": "WK-SN-3",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "TENACIOUS most nearly means:",
+    "choices": [
+      "Fragile",
+      "Persistent",
+      "Reckless",
+      "Timid"
+    ],
+    "correct_index": 1,
+    "explanation": "Tenacious means holding firm; determined and not giving up easily. It is often confused with its antonym, timid."
+  },
+  {
+    "external_key": "WK-SN-4",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "AMBIGUOUS most nearly means:",
+    "choices": [
+      "Clear",
+      "Certain",
+      "Unclear",
+      "Ambitious"
+    ],
+    "correct_index": 2,
+    "explanation": "Ambiguous means open to more than one interpretation; unclear. Do not confuse with ambitious (driven), which sounds similar."
+  },
+  {
+    "external_key": "WK-SN-5",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "LETHARGIC most nearly means:",
+    "choices": [
+      "Energetic",
+      "Sluggish",
+      "Aggressive",
+      "Focused"
+    ],
+    "correct_index": 1,
+    "explanation": "Lethargic means lacking energy or enthusiasm; sluggish. Energetic is its antonym."
+  },
+  {
+    "external_key": "WK-SN-6",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 4,
+    "stem": "INSCRUTABLE most nearly means:",
+    "choices": [
+      "Mysterious",
+      "Obvious",
+      "Unreliable",
+      "Talkative"
+    ],
+    "correct_index": 0,
+    "explanation": "Inscrutable means impossible to understand or interpret; mysterious. The root 'scrutin-' means to examine — inscrutable means it cannot be read through."
+  },
+  {
+    "external_key": "WK-SN-7",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 4,
+    "stem": "OBSEQUIOUS most nearly means:",
+    "choices": [
+      "Stubborn",
+      "Fawning",
+      "Rebellious",
+      "Indifferent"
+    ],
+    "correct_index": 1,
+    "explanation": "Obsequious means excessively eager to serve or please; sycophantic. Recruits often confuse it with obstinate (stubborn) because of the similar opening sounds."
+  },
+  {
+    "external_key": "WK-SN-8",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 4,
+    "stem": "MAGNANIMOUS most nearly means:",
+    "choices": [
+      "Generous",
+      "Arrogant",
+      "Petty",
+      "Powerful"
+    ],
+    "correct_index": 0,
+    "explanation": "Magnanimous means nobly generous or forgiving, especially toward an enemy. From Latin magna (great) + animus (spirit). Do not confuse with magnificent."
+  },
+  {
+    "external_key": "WK-SN-9",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 5,
+    "stem": "PERFUNCTORY most nearly means:",
+    "choices": [
+      "Thorough",
+      "Cursory",
+      "Enthusiastic",
+      "Secretive"
+    ],
+    "correct_index": 1,
+    "explanation": "Perfunctory means done with minimum effort, as a routine duty; going through the motions. Recruits often guess 'secretive' because of the per- prefix."
+  },
+  {
+    "external_key": "WK-SN-10",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 5,
+    "stem": "RECALCITRANT most nearly means:",
+    "choices": [
+      "Obedient",
+      "Defiant",
+      "Cautious",
+      "Calculating"
+    ],
+    "correct_index": 1,
+    "explanation": "Recalcitrant means stubbornly resistant to authority or control. 'Calculating' is a common wrong answer due to visual similarity. From Latin calcitrare, to kick."
+  },
+  {
+    "external_key": "AO-3D-1",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 3,
+    "stem": "A solid cube rests flat on a table. The top face is painted red. The cube is rotated 90° forward — tilting toward you, pivoting around its front bottom edge. After this rotation, which face is now on top?",
+    "choices": [
+      "The original top face (red)",
+      "The original front face",
+      "The original back face",
+      "The original bottom face"
+    ],
+    "correct_index": 1,
+    "explanation": "Rotating 90° forward around the front bottom edge lifts the front face up to become the new top. The red original top now faces toward you (the new front)."
+  },
+  {
+    "external_key": "AO-3D-2",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 4,
+    "stem": "A cube has its six faces labeled so that opposite faces sum to 7 (standard die layout). Face 1 is on top and face 2 faces you. Which face is on the bottom?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_index": 3,
+    "explanation": "On a standard die, opposite faces sum to 7. Face 1 is on top, so the bottom face = 7 − 1 = 6."
+  },
+  {
+    "external_key": "AO-3D-3",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 4,
+    "stem": "A cube's faces are colored: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. The cube is rotated 90° to the right (around the vertical axis — the right side swings to the front). What color is now on top?",
+    "choices": [
+      "White",
+      "Black",
+      "Yellow",
+      "Blue"
+    ],
+    "correct_index": 0,
+    "explanation": "Rotating around the vertical axis does not change the top or bottom faces — only the four side faces rotate. The top remains white."
+  },
+  {
+    "external_key": "AO-3D-4",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 3,
+    "stem": "Using the same colored cube (top = white, front = red, right = yellow, bottom = black, back = green, left = blue): after rotating 90° to the right around the vertical axis, what color is now facing you (front)?",
+    "choices": [
+      "Red",
+      "Green",
+      "Yellow",
+      "Blue"
+    ],
+    "correct_index": 2,
+    "explanation": "Rotating the cube 90° to the right (vertical axis) brings the right face (yellow) to the front. Red rotates to the left, green to the right, and blue to the back."
+  },
+  {
+    "external_key": "AO-3D-5",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 5,
+    "stem": "A cube is sliced by a flat plane that passes through exactly three vertices of the cube, one vertex on each of three different faces that share no common edge. What shape is the cross-section?",
+    "choices": [
+      "Square",
+      "Rectangle",
+      "Equilateral triangle",
+      "Right triangle"
+    ],
+    "correct_index": 2,
+    "explanation": "A plane through three mutually non-adjacent vertices of a cube cuts through three face diagonals of equal length, forming an equilateral triangle cross-section."
+  },
+  {
+    "external_key": "AO-PF-1",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 3,
+    "stem": "A flat net consists of 1 center square with 4 squares attached, one to each side (forming a plus/cross shape — 5 squares total). When folded, what 3D shape does it create?",
+    "choices": [
+      "A cube",
+      "A square pyramid",
+      "An open-top box (box without a lid)",
+      "A triangular prism"
+    ],
+    "correct_index": 2,
+    "explanation": "Five squares form a base plus four walls but no top. You need 6 squares to close a cube. This net creates an open-top box."
+  },
+  {
+    "external_key": "AO-PF-2",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 4,
+    "stem": "A cube net has 4 squares in a vertical column (positions 1–4, top to bottom) with 2 extra squares extending to the right from position 2 and position 3. When folded, which face is directly opposite the face at position 1 (top of column)?",
+    "choices": [
+      "Position 4 (bottom of column)",
+      "Extra square at position 2",
+      "Extra square at position 3",
+      "Position 2"
+    ],
+    "correct_index": 0,
+    "explanation": "In a 4-square column net, folding brings position 1 to the top and position 4 to the bottom. The two squares at positions 2 and 3 (and the side extensions) form the four side faces. Position 1 and position 4 end up as opposite (top/bottom) faces."
+  },
+  {
+    "external_key": "AO-PF-3",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 3,
+    "stem": "A flat net consists of a square in the center with 4 equilateral triangles attached to each of the square's edges. When folded, what shape does it form?",
+    "choices": [
+      "A cube",
+      "A rectangular prism",
+      "A square pyramid",
+      "A triangular prism"
+    ],
+    "correct_index": 2,
+    "explanation": "The four triangles fold upward and their free vertices meet at a single point above the square base, forming a square pyramid."
+  },
+  {
+    "external_key": "AO-PF-4",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 4,
+    "stem": "A cube net: face A is in the center; face B is directly above A; face C is directly below A; face D is to the left of A; face E is to the right of A; face F is directly below C. When folded into a cube, which face is directly opposite face B?",
+    "choices": [
+      "Face A",
+      "Face C",
+      "Face F",
+      "Face D"
+    ],
+    "correct_index": 2,
+    "explanation": "Fold: A becomes the base. C folds to become the front face. F, attached below C, continues to fold up and becomes the top — directly opposite B. So F is opposite B, and A is opposite neither B nor F (A is the base, opposite to the back). Tracing the fold: B (top) — A (base/bottom) — C (front) — F (top again after passing through), so B folds to be the back and F folds to be the top. B and F are opposite faces."
+  },
+  {
+    "external_key": "AO-PF-5",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 5,
+    "stem": "A square sheet of paper is folded in half by bringing the bottom edge up to meet the top edge (a horizontal fold). The resulting rectangle is then folded in half by bringing the right edge over to meet the left edge (a vertical fold). The paper is then fully unfolded. How many rectangular sections does the paper have?",
+    "choices": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct_index": 1,
+    "explanation": "The first fold creates 2 sections; the second fold divides each of those in half. When unfolded, the paper has 2 × 2 = 4 rectangular sections separated by the two crease lines."
+  },
+  {
+    "external_key": "AO-SC-1",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "A structure is built by stacking cubes. The bottom layer is a 3×3 grid (9 cubes). The second layer is a 2×2 grid centered on the first (4 cubes). The third layer has 1 cube centered on the second. How many cubes are in the structure?",
+    "choices": [
+      "9",
+      "12",
+      "14",
+      "16"
+    ],
+    "correct_index": 2,
+    "explanation": "Total = 9 + 4 + 1 = 14 cubes."
+  },
+  {
+    "external_key": "AO-SC-2",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 4,
+    "stem": "A 3×3×3 cube is built from unit cubes, and the entire outer surface is painted. How many unit cubes have paint on exactly 2 faces?",
+    "choices": [
+      "8",
+      "12",
+      "24",
+      "36"
+    ],
+    "correct_index": 1,
+    "explanation": "Cubes with exactly 2 painted faces sit along the 12 edges, excluding the 8 corner cubes. Each edge of a 3×3×3 cube has 1 such cube (3 minus the 2 corners = 1 per edge). Total = 12 × 1 = 12."
+  },
+  {
+    "external_key": "AO-SC-3",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "You see a staircase of cubes: 3 cubes on the bottom row, 2 cubes on the middle row, and 1 cube on the top. All rows are aligned to the left edge. How many cubes are in the structure?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "correct_index": 1,
+    "explanation": "Total = 3 + 2 + 1 = 6 cubes."
+  },
+  {
+    "external_key": "AO-SC-4",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 4,
+    "stem": "A 2×3 single-layer base (6 cubes) sits on a table. A second layer of 2×2 cubes is stacked on top starting from one corner. How many cubes are in the complete structure?",
+    "choices": [
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "correct_index": 2,
+    "explanation": "Bottom layer: 2 × 3 = 6. Second layer: 2 × 2 = 4. Total = 6 + 4 = 10 cubes."
+  },
+  {
+    "external_key": "AO-SC-5",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 5,
+    "stem": "A 4×4×4 large cube is built from unit cubes. How many unit cubes are completely hidden inside (touching no outer face)?",
+    "choices": [
+      "0",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct_index": 2,
+    "explanation": "The hidden interior is a (4−2)×(4−2)×(4−2) = 2×2×2 = 8 unit cube block. Every other unit cube touches at least one outer face."
+  }
+]
