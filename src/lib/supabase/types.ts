@@ -344,37 +344,61 @@ export type Database = {
       }
       profiles: {
         Row: {
+          billing_status: string
           created_at: string
           daily_email_opt_in: boolean
           display_name: string | null
           email: string
+          free_diagnostic_used_at: string | null
           last_challenge_completed_on: string | null
           marketing_opt_in: boolean
+          pro_tier: string | null
+          pro_until: string | null
+          pro_updated_at: string | null
           streak_count: number
+          stripe_customer_id: string | null
+          stripe_price_id: string | null
+          stripe_subscription_id: string | null
           timezone: string
           updated_at: string
           user_id: string
         }
         Insert: {
+          billing_status?: string
           created_at?: string
           daily_email_opt_in?: boolean
           display_name?: string | null
           email: string
+          free_diagnostic_used_at?: string | null
           last_challenge_completed_on?: string | null
           marketing_opt_in?: boolean
+          pro_tier?: string | null
+          pro_until?: string | null
+          pro_updated_at?: string | null
           streak_count?: number
+          stripe_customer_id?: string | null
+          stripe_price_id?: string | null
+          stripe_subscription_id?: string | null
           timezone?: string
           updated_at?: string
           user_id: string
         }
         Update: {
+          billing_status?: string
           created_at?: string
           daily_email_opt_in?: boolean
           display_name?: string | null
           email?: string
+          free_diagnostic_used_at?: string | null
           last_challenge_completed_on?: string | null
           marketing_opt_in?: boolean
+          pro_tier?: string | null
+          pro_until?: string | null
+          pro_updated_at?: string | null
           streak_count?: number
+          stripe_customer_id?: string | null
+          stripe_price_id?: string | null
+          stripe_subscription_id?: string | null
           timezone?: string
           updated_at?: string
           user_id?: string
@@ -539,6 +563,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      has_active_pro: { Args: { p_user_id?: string }; Returns: boolean }
       recompute_topic_stats: {
         Args: { p_topic_ids: string[]; p_user_id: string }
         Returns: undefined
