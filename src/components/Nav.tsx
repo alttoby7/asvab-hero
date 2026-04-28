@@ -63,14 +63,12 @@ export default function Nav() {
             <span className="font-display text-xl font-bold text-text-primary">Hero</span>
           </Link>
 
-          {/* Desktop links */}
           <div className="hidden items-center gap-6 md:flex">
             <Link href="/calculator" className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline">Calculator</Link>
             <Link href="/practice-test" className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline">Practice Test</Link>
             <Link href="/asvab-scores-explained" className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline">Scores Guide</Link>
             <Link href="/asvab-study-guide" className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline">Study Guide</Link>
 
-            {/* Ranks dropdown */}
             <div className="relative" ref={ranksRef}>
               <button
                 onClick={() => setRanksOpen((v) => !v)}
@@ -123,7 +121,11 @@ export default function Nav() {
               </div>
             )}
 
-            <Link href="/calculator" className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline">Try Calculator</Link>
+            {showUpgradeLink ? (
+              <Link href="/upgrade?from=nav" className="rounded-lg border border-accent px-4 py-2 text-sm font-semibold text-accent transition-colors hover:bg-accent hover:text-white no-underline">Upgrade</Link>
+            ) : (
+              <Link href="/calculator" className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline">Try Calculator</Link>
+            )}
           </div>
 
           {/* Mobile hamburger */}
@@ -134,7 +136,6 @@ export default function Nav() {
           </button>
         </div>
 
-        {/* Mobile menu */}
         {open && (
           <div className="border-t border-navy-border pb-4 pt-2 md:hidden">
             <div className="flex flex-col gap-3">
