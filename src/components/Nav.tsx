@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
+import { useSession } from "@/hooks/useSession";
+import { getSupabaseBrowserClient } from "@/lib/supabase/client";
+import { useRouter } from "next/navigation";
 
 const RANKS_LINKS = [
   { href: "/air-force-ranks", label: "Air Force Ranks" },
@@ -10,9 +13,17 @@ const RANKS_LINKS = [
 ];
 
 export default function Nav() {
+  const router = useRouter();
+  const { session, loading: sessionLoading } = useSession();
   const [open, setOpen] = useState(false);
   const [ranksOpen, setRanksOpen] = useState(false);
   const ranksRef = useRef<HTMLDivElement>(null);
+
+  async function handleSignOut() {
+    const supabase = getSupabaseBrowserClient();
+    await supabase.auth.signOut();
+    router.push("/");
+  }
 
   // Close ranks dropdown on outside click
   useEffect(() => {
@@ -118,6 +129,33 @@ export default function Nav() {
             >
               Pricing
             </Link>
+
+            {/* Auth: Log in / Account */}
+            {!sessionLoading && !session && (
+              <Link
+                href="/login"
+                className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline"
+              >
+                Log in
+              </Link>
+            )}
+            {!sessionLoading && session && (
+              <div className="flex items-center gap-3">
+                <Link
+                  href="/account"
+                  className="text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline"
+                >
+                  Account
+                </Link>
+                <button
+                  onClick={handleSignOut}
+                  className="text-xs text-text-tertiary hover:text-text-secondary transition-colors"
+                >
+                  Sign out
+                </button>
+              </div>
+            )}
+
             <Link
               href="/calculator"
               className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline"
@@ -206,6 +244,33 @@ export default function Nav() {
               >
                 About
               </Link>
+              {/* Auth: mobile */}
+              {!sessionLoading && !session && (
+                <Link
+                  href="/login"
+                  onClick={() => setOpen(false)}
+                  className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline"
+                >
+                  Log in
+                </Link>
+              )}
+              {!sessionLoading && session && (
+                <>
+                  <Link
+                    href="/account"
+                    onClick={() => setOpen(false)}
+                    className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline"
+                  >
+                    Account
+                  </Link>
+                  <button
+                    onClick={() => { setOpen(false); handleSignOut(); }}
+                    className="rounded-md px-3 py-2 text-left text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary"
+                  >
+                    Sign out
+                  </button>
+                </>
+              )}
               <Link
                 href="/calculator"
                 onClick={() => setOpen(false)}
