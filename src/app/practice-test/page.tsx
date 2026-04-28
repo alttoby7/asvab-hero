@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
-import PracticeTestEngine from "@/components/practice-test/PracticeTestEngine";
 import JsonLd from "@/components/JsonLd";
-import type { PracticeQuestion } from "@/types";
-
-import testData from "@/data/practice-tests/free-test.json";
+import PracticeTestClient from "@/components/practice-test/PracticeTestClient";
 
 export const metadata: Metadata = {
   title: "Free ASVAB Practice Test — 30 Questions, All 9 Subtests",
@@ -40,21 +37,14 @@ export default function PracticeTestPage() {
           Free ASVAB Practice Test
         </h1>
         <p className="mt-3 text-text-secondary">
-          Test your readiness with 30 timed questions covering all 9 ASVAB
-          subtests: General Science, Arithmetic Reasoning, Word Knowledge,
-          Paragraph Comprehension, Mathematics Knowledge, Electronics
-          Information, Auto &amp; Shop Information, Mechanical Comprehension, and
-          Assembling Objects. Get your estimated AFQT score and a detailed
-          breakdown of your strengths and weaknesses.
+          Test your readiness with timed questions covering all 9 ASVAB
+          subtests. Get an estimated AFQT score, a per-topic breakdown, and a
+          recommended next step. Pick a Diagnostic for a balanced 30-question
+          run, or drill a single subtest where you need the most work.
         </p>
       </div>
 
-      <PracticeTestEngine
-        questions={testData.questions as PracticeQuestion[]}
-        timeLimitMinutes={testData.timeLimitMinutes}
-        testName={testData.name}
-        testDescription={testData.description}
-      />
+      <PracticeTestClient />
     </div>
   );
 }
