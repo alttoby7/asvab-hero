@@ -22,6 +22,7 @@ import TopicBreakdown from "./TopicBreakdown";
 import NextStepCard from "./NextStepCard";
 import QuestionReviewList from "./QuestionReviewList";
 import Link from "next/link";
+import { useEntitlement } from "@/hooks/useEntitlement";
 
 interface TestResultsProps {
   questions: PracticeQuestion[];
@@ -115,6 +116,10 @@ export default function TestResults({
   userId,
   savedProfile,
 }: TestResultsProps) {
+  // Phase E: entitlement for upgrade nudge
+  const { entitlement } = useEntitlement();
+  const showProUpsell = !!userId && !entitlement.isPro;
+
   const subtestResults = scoreBySubtest(questions, answers);
   const topicResults = scoreByTopic(questions, answers);
   const afqtEstimate = estimateAFQT(subtestResults);
@@ -242,6 +247,26 @@ export default function TestResults({
           </Link>
         )}
       </section>
+
+      {/* ── Phase E: Pro upsell card for free authed users ────────────────── */}
+      {showProUpsell && (
+        <section className="rounded-2xl border-t-2 border-accent bg-navy-light p-6">
+          <h3 className="font-display text-lg font-bold text-text-primary">
+            Want to fix these weak spots?
+          </h3>
+          <p className="mt-2 text-sm text-text-secondary">
+            Pro unlocks subtest drills on every topic, unlimited tests, score
+            tracking, and flashcards (coming). $9.99/mo or $49.99/yr.
+          </p>
+          <Link
+            href="/upgrade?from=results"
+            className="mt-4 inline-flex items-center gap-1.5 font-semibold text-accent no-underline transition-colors hover:text-accent-hover"
+          >
+            See plans &rarr;
+          </Link>
+        </section>
+      )}
+      {/* ── End Phase E ───────────────────────────────────────────────────── */}
 
       {/* Per-question review (collapsed by default) */}
       <QuestionReviewList questions={questions} answers={answers} />

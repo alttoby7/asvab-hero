@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import Nav from "@/components/Nav";
+import UpgradeBanner from "@/components/UpgradeBanner";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import OutboundTracker from "@/components/OutboundTracker";
@@ -83,6 +84,7 @@ export default function RootLayout({
           }}
         />
         <Nav />
+        <UpgradeBanner />
         <main className="relative z-1">{children}</main>
         <Footer />
         <OutboundTracker />

@@ -227,6 +227,19 @@ export async function saveAttempt(
         if (rpcErr) throw rpcErr;
       }
 
+      // Stamp free_diagnostic_used_at for authed users on their first diagnostic.
+      if (attempt.variant_code === "diagnostic") {
+        try {
+          await sb
+            .from("profiles")
+            .update({ free_diagnostic_used_at: attempt.completed_at })
+            .eq("user_id", userId)
+            .is("free_diagnostic_used_at", null); // idempotent: only writes when null
+        } catch {
+          /* non-blocking */
+        }
+      }
+
       const profile = await loadProfile(userId);
       return {
         ok: true,
