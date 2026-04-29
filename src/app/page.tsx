@@ -4,201 +4,256 @@ import EmailCapture from "@/components/EmailCapture";
 export default function HomePage() {
   return (
     <div>
-      {/* Hero */}
+      {/* ────────────────────────────────────────────────────────────────────
+         HERO — recruit's actual goal, not a feature pitch.
+         One primary CTA (diagnostic, the conversion engine), one secondary.
+         Numerical proof inline: "769 questions · 39 topics · 9 subtests."
+      ──────────────────────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent" />
-        <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:py-36">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="font-display text-4xl font-extrabold leading-tight text-text-primary sm:text-5xl lg:text-6xl">
-              Find Every Military Job{" "}
-              <span className="text-accent">You Qualify For</span>
-            </h1>
-            <p className="mx-auto mt-6 max-w-xl text-lg text-text-secondary">
-              Enter your ASVAB scores and instantly see qualifying jobs across
-              all 6 branches. Free, fast, and always up to date.
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(249,115,22,0.10),_transparent_60%)]" />
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
+        <div className="relative mx-auto max-w-5xl px-4 pt-20 pb-16 sm:px-6 sm:pt-28 sm:pb-20 lg:pt-36 lg:pb-24">
+          <div className="text-center">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-text-tertiary">
+              <span className="text-accent">●</span> Free ASVAB prep platform
             </p>
-            <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
+              Score high enough for the
+              <br className="hidden sm:block" />{" "}
+              <span className="relative inline-block">
+                <span className="relative z-10 text-accent">military job</span>
+                <span className="absolute inset-x-0 bottom-1 -z-0 h-2 bg-accent/15" />
+              </span>{" "}
+              you actually want.
+            </h1>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary">
+              Take a 30-question diagnostic, see your AFQT estimate and weak topics,
+              then drill the gaps. 769 practice questions across all 9 subtests.
+            </p>
+            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
-                href="/calculator"
-                className="inline-flex items-center rounded-xl bg-accent px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-accent/20 transition-all hover:bg-accent-hover hover:shadow-accent/30 no-underline"
+                href="/practice-test"
+                className="inline-flex w-full items-center justify-center rounded-xl bg-accent px-7 py-4 text-base font-semibold text-white shadow-[0_8px_30px_-4px_rgba(249,115,22,0.4)] transition-all hover:bg-accent-hover hover:shadow-[0_12px_40px_-4px_rgba(249,115,22,0.6)] no-underline sm:w-auto"
               >
-                Try the Calculator
-                <svg
-                  className="ml-2 h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M13 7l5 5m0 0l-5 5m5-5H6"
-                  />
+                Take the free diagnostic
+                <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </Link>
               <Link
-                href="/afqt-calculator"
-                className="inline-flex items-center rounded-xl border border-navy-border px-8 py-3.5 text-base font-semibold text-text-secondary transition-colors hover:border-accent hover:text-text-primary no-underline"
+                href="/calculator"
+                className="inline-flex w-full items-center justify-center rounded-xl border border-navy-border bg-navy-light/60 px-7 py-4 text-base font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-text-primary no-underline sm:w-auto"
               >
-                AFQT Calculator
+                Score calculator
               </Link>
             </div>
+            <p className="mt-6 font-mono text-xs uppercase tracking-wider text-text-tertiary">
+              30 questions · 36 minutes · no signup required
+            </p>
           </div>
         </div>
       </section>
 
-      {/* Email Capture (above-the-fold leverage) */}
-      <section className="border-t border-navy-border">
-        <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
-          <EmailCapture
-            headline="Get the 30-day ASVAB study plan, free"
-            subhead="6-page PDF plan plus a 5-email crash course on AFQT and line scores. No spam. Takes 10 seconds to sign up."
-            cta="Email me the plan"
-            tag="homepage-hero"
-          />
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section className="border-t border-navy-border bg-navy-light/50">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <h2 className="text-center font-display text-2xl font-bold text-text-primary sm:text-3xl">
-            How It Works
-          </h2>
-          <div className="mt-12 grid gap-8 sm:grid-cols-3">
+      {/* ────────────────────────────────────────────────────────────────────
+         THREE PILLARS — Calculator · Practice · Study Guide.
+         Each card carries a hard number (500+, 769, 39) so the homepage tells
+         the proof story before any conversion ask.
+      ──────────────────────────────────────────────────────────────────── */}
+      <section className="border-y border-navy-border bg-navy-light/30">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+          <div className="grid gap-px overflow-hidden rounded-2xl border border-navy-border bg-navy-border sm:grid-cols-3">
             {[
               {
-                step: "1",
-                title: "Enter Your Scores",
-                desc: "Input your 9 ASVAB subtest standard scores. Don't have them yet? Use our defaults to explore.",
+                stat: "500+",
+                label: "military jobs",
+                title: "Score Calculator",
+                desc: "Plug in your subtest scores. See every job you qualify for across all 6 branches plus your AFQT percentile.",
+                href: "/calculator",
+                cta: "Open calculator",
               },
               {
-                step: "2",
-                title: "See Your Results",
-                desc: "Instantly view your AFQT percentile, branch-specific composite scores, and qualifying jobs.",
+                stat: "769",
+                label: "practice questions",
+                title: "Practice Tests",
+                desc: "Diagnostic plus subtest drills. Per-question explanations on every item. Track weak topics over time.",
+                href: "/practice-test",
+                cta: "Take a test",
               },
               {
-                step: "3",
-                title: "Plan Your Career",
-                desc: "Filter by branch, search by job title, and discover which scores to improve for your dream role.",
+                stat: "39",
+                label: "topic study pages",
+                title: "Study Guide",
+                desc: "Worked examples, formula references, and pitfalls for every topic on the test. Free to read.",
+                href: "/asvab-study-guide",
+                cta: "Browse topics",
               },
-            ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-accent-dim">
-                  <span className="font-mono text-xl font-bold text-accent">
-                    {item.step}
-                  </span>
+            ].map((pillar) => (
+              <div
+                key={pillar.title}
+                className="group relative flex flex-col bg-navy p-8 transition-colors hover:bg-navy-light"
+              >
+                <div className="flex items-baseline gap-3">
+                  <span className="font-mono text-3xl font-bold text-accent">{pillar.stat}</span>
+                  <span className="text-xs uppercase tracking-wider text-text-tertiary">{pillar.label}</span>
                 </div>
-                <h3 className="mt-4 font-display text-lg font-bold text-text-primary">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm text-text-secondary">{item.desc}</p>
+                <h3 className="mt-5 font-display text-xl font-bold text-text-primary">{pillar.title}</h3>
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-text-secondary">{pillar.desc}</p>
+                <Link
+                  href={pillar.href}
+                  className="mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-accent no-underline transition-colors hover:text-accent-hover"
+                >
+                  {pillar.cta}
+                  <svg className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Practice Test CTA */}
-      <section className="border-t border-navy-border">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <div className="flex flex-col items-center gap-6 rounded-2xl border border-navy-border bg-navy-light p-8 text-center sm:p-12">
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-accent-dim">
-              <svg
-                className="h-7 w-7 text-accent"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={1.5}
-              >
-                <path d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15a2.25 2.25 0 012.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
-              </svg>
-            </div>
-            <h2 className="font-display text-2xl font-bold text-text-primary sm:text-3xl">
-              Free ASVAB Practice Test
-            </h2>
-            <p className="max-w-lg text-text-secondary">
-              Take our free 30-question practice test covering all 9 subtests.
-              Get your estimated AFQT score and see where you need to improve —
-              no sign-up required.
+      {/* ────────────────────────────────────────────────────────────────────
+         BANK PROOF BLOCK — editorial number row.
+         Replaces the generic "6 / 500+ / 100% Free" stats card grid.
+      ──────────────────────────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
+          <div className="text-center">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-text-tertiary">
+              <span className="text-accent">●</span> What's in the bank
             </p>
-            <Link
-              href="/practice-test"
-              className="inline-flex items-center rounded-xl bg-accent px-8 py-3.5 text-base font-semibold text-white shadow-lg shadow-accent/20 transition-all hover:bg-accent-hover hover:shadow-accent/30 no-underline"
-            >
-              Take Free Practice Test
-              <svg
-                className="ml-2 h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
+            <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">
+              The numbers behind the prep.
+            </h2>
           </div>
+          <div className="mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-navy-border bg-navy-border sm:grid-cols-4">
+            {[
+              { value: "769", label: "Tagged questions" },
+              { value: "39", label: "Topic categories" },
+              { value: "9", label: "ASVAB subtests" },
+              { value: "1–5", label: "Difficulty levels" },
+            ].map((s) => (
+              <div key={s.label} className="bg-navy px-6 py-10 text-center">
+                <div className="font-mono text-4xl font-extrabold tracking-tight text-text-primary sm:text-5xl">
+                  {s.value}
+                </div>
+                <div className="mt-3 text-xs uppercase tracking-widest text-text-tertiary">{s.label}</div>
+              </div>
+            ))}
+          </div>
+          <p className="mx-auto mt-8 max-w-2xl text-center text-sm text-text-secondary">
+            Every topic has items at every difficulty. Every question has a written
+            explanation. PAY97 norming table for AFQT — same calibration the DoD uses.
+          </p>
         </div>
       </section>
 
-      {/* Email Capture (mid-page, after practice test CTA) */}
-      <section className="border-t border-navy-border bg-navy-light/30">
+      {/* ────────────────────────────────────────────────────────────────────
+         ONE EMAIL CAPTURE — replaces the prior two homepage forms.
+         Shifted to ribbon-style (slim, full-width vibe) so the homepage isn't
+         visually dominated by a card.
+      ──────────────────────────────────────────────────────────────────── */}
+      <section className="border-y border-navy-border bg-navy-light/40">
         <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6">
           <EmailCapture
-            headline="Want a study plan, not just a practice test?"
-            subhead="We'll send you a 30-day plan tuned to your branch, your AFQT target, and your line score goals. Free."
-            cta="Send me the 30-day plan"
+            headline="Get the 30-day ASVAB study plan, free"
+            subhead="6-page PDF plus a 5-email crash course on AFQT and line scores. No spam."
+            cta="Email me the plan"
             tag="homepage-mid"
             variant="inline"
           />
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="border-t border-navy-border">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <div className="grid gap-8 sm:grid-cols-3">
-            {[
-              { value: "6", label: "Military Branches" },
-              { value: "500+", label: "Military Jobs" },
-              { value: "100%", label: "Free to Use" },
-            ].map((stat) => (
-              <div
-                key={stat.label}
-                className="rounded-xl border border-navy-border bg-navy-light p-8 text-center"
-              >
-                <div className="font-mono text-4xl font-bold text-accent">
-                  {stat.value}
-                </div>
-                <div className="mt-2 text-sm text-text-secondary">
-                  {stat.label}
-                </div>
+      {/* ────────────────────────────────────────────────────────────────────
+         PRO SECTION — accurate copy, real CTA.
+         Replaces the stale "Coming Soon" block. Two-column on desktop:
+         feature list on the left, plan card on the right.
+      ──────────────────────────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden border-t border-navy-border">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(249,115,22,0.08),_transparent_60%)]" />
+        <div className="relative mx-auto max-w-6xl px-4 py-24 sm:px-6">
+          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.2em] text-text-tertiary">
+                <span className="text-accent">●</span> ASVAB Hero Pro
+              </p>
+              <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-text-primary sm:text-4xl">
+                Free shows you the gap.
+                <br />
+                <span className="text-accent">Pro closes it.</span>
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-text-secondary">
+                Diagnostic is free for everyone. When you're ready for serious prep,
+                Pro removes the cap so you can drill weak topics until they stop
+                being weaknesses.
+              </p>
+              <ul className="mt-8 space-y-3">
+                {[
+                  "Unlimited diagnostics + subtest drills",
+                  "Score history and progress tracking",
+                  "Weak-topic recommendations after every test",
+                  "Spaced-repetition flashcards (coming soon)",
+                ].map((f) => (
+                  <li key={f} className="flex items-start gap-3 text-sm text-text-secondary">
+                    <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-2xl border border-accent/30 bg-navy-light p-8 sm:p-10">
+              <div className="flex items-baseline gap-2">
+                <span className="font-mono text-5xl font-extrabold text-text-primary">$9.99</span>
+                <span className="text-sm text-text-tertiary">/ month</span>
               </div>
-            ))}
+              <p className="mt-1 text-sm text-text-tertiary">
+                or <span className="font-semibold text-accent">$49.99 / year</span> &mdash; save 58%
+              </p>
+              <Link
+                href="/upgrade?from=home"
+                className="mt-7 flex items-center justify-center rounded-xl bg-accent px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline"
+              >
+                Upgrade to Pro
+              </Link>
+              <Link
+                href="/pricing"
+                className="mt-3 flex items-center justify-center rounded-xl border border-navy-border px-6 py-3 text-sm font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-text-primary no-underline"
+              >
+                Compare plans
+              </Link>
+              <p className="mt-5 text-center text-xs text-text-tertiary">
+                7-day money-back guarantee. Cancel anytime.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Pro Teaser */}
-      <section className="border-t border-navy-border bg-navy-light/50">
-        <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
-          <div className="rounded-2xl border border-accent/20 bg-gradient-to-br from-accent/10 to-transparent p-8 sm:p-12 text-center">
-            <h2 className="font-display text-2xl font-bold text-text-primary sm:text-3xl">
-              Coming Soon: ASVAB Hero Pro
-            </h2>
-            <p className="mx-auto mt-4 max-w-lg text-text-secondary">
-              Unlimited practice tests, score tracking, smart study plans, and a
-              &ldquo;what-if&rdquo; calculator to see which jobs unlock when you
-              improve your scores.
-            </p>
-            <Link
-              href="/pricing"
-              className="mt-6 inline-flex items-center rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline"
-            >
-              See Pricing
-            </Link>
-          </div>
+      {/* ────────────────────────────────────────────────────────────────────
+         FINAL CTA — single sharp ask.
+         Closing line that converts undecided readers without another form.
+      ──────────────────────────────────────────────────────────────────── */}
+      <section className="border-t border-navy-border">
+        <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6">
+          <h2 className="font-display text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">
+            Find out where you stand.
+          </h2>
+          <p className="mt-4 text-base text-text-secondary">
+            30 questions. 36 minutes. No signup. Real AFQT estimate at the end.
+          </p>
+          <Link
+            href="/practice-test"
+            className="mt-8 inline-flex items-center rounded-xl bg-accent px-8 py-4 text-base font-semibold text-white shadow-[0_8px_30px_-4px_rgba(249,115,22,0.4)] transition-all hover:bg-accent-hover hover:shadow-[0_12px_40px_-4px_rgba(249,115,22,0.6)] no-underline"
+          >
+            Start the free diagnostic
+            <svg className="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </Link>
         </div>
       </section>
     </div>
