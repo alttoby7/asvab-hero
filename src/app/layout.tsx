@@ -45,11 +45,20 @@ export const metadata: Metadata = {
     siteName: "ASVAB Hero",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "ASVAB Hero — Free practice tests + score calculators",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: siteTitle,
     description: siteDescription,
+    images: ["/og-image.png"],
   },
 };
 

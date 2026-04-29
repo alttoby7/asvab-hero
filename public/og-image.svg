@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#111d32"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.05"/>
+      <stop offset="60%" stop-color="#f97316" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0.95"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .wm   { font-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif; font-weight: 800; letter-spacing: -3px; }
+      .sub  { font-family: "Inter", system-ui, sans-serif; font-weight: 500; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Faint horizontal score-grid lines -->
+  <g stroke="#243350" stroke-width="1" opacity="0.45">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="190" x2="1200" y2="190"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+    <line x1="0" y1="370" x2="1200" y2="370"/>
+    <line x1="0" y1="460" x2="1200" y2="460"/>
+    <line x1="0" y1="550" x2="1200" y2="550"/>
+  </g>
+
+  <!-- Right-side score band -->
+  <g transform="translate(990, 80)">
+    <rect x="46" y="0" width="14" height="470" fill="#1a2942" rx="3"/>
+    <rect x="46" y="0" width="14" height="470" fill="url(#band)" rx="3"/>
+    <g stroke="#f97316" stroke-width="2" opacity="0.85">
+      <line x1="28" y1="55"  x2="42" y2="55"/>
+      <line x1="28" y1="155" x2="42" y2="155"/>
+      <line x1="28" y1="255" x2="42" y2="255"/>
+      <line x1="28" y1="355" x2="42" y2="355"/>
+      <line x1="28" y1="455" x2="42" y2="455"/>
+    </g>
+    <!-- glowing current-score marker -->
+    <circle cx="53" cy="170" r="40" fill="url(#glow)"/>
+    <circle cx="53" cy="170" r="14" fill="#f97316" opacity="0.3"/>
+    <circle cx="53" cy="170" r="9" fill="#f97316"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="80" y="290" class="wm" font-size="172" fill="#f97316">ASVAB</text>
+  <text x="80" y="450" class="wm" font-size="172" fill="#f1f5f9">Hero</text>
+
+  <!-- Accent dot + Subtitle -->
+  <circle cx="92" cy="525" r="6" fill="#f97316"/>
+  <text x="112" y="533" class="sub" font-size="34" fill="#94a3b8">
+    Free practice tests + score calculators
+  </text>
+</svg>

@@ -16,12 +16,32 @@
 - **Practice variants live:** `diagnostic` (30q), `subtest_drill` (25q). Inactive in DB (gated for v2/v3): `afqt_sprint`, `weakness_loop`, `retake_readiness`, `full_sim`.
 - **Question bank:** 769 active items in `practice_questions` table, 39/39 topics covered, all 5 difficulty levels per topic. Source files (8): `src/data/practice-tests/{free-test.json, expansion-batch-{1..7}.json}`.
 - **Bank build:** `node scripts/build-questions-seed.mjs` → `supabase/seed-questions.sql` → `supabase db query --linked --file supabase/seed-questions.sql` (needs `SUPABASE_ACCESS_TOKEN` exported). New batch files MUST be added to the `all = [...]` array in the build script.
-- **Study guide:** `/study/[subtest]/[topicSlug]` with markdown content in `content/study-guides/`. 3 sample topic pages (AR ratio-proportion, MK fractions-decimals, WK synonyms). MiniDrill component pulls 5 questions per topic from Supabase.
+- **Study guide:** `/study/[subtest]/[topicSlug]` with markdown content in `content/study-guides/`. 39/39 topic pages live (see Study Guide Coverage below). MiniDrill component pulls 5 questions per topic from Supabase.
 - **Edge Functions deployed:** `migrate-local-profile` (anon→registered), `delete-account` (cascade-delete), `export-account-data` (JSON download). Located in `supabase/functions/` — excluded from Next.js tsconfig because they import via Deno-style URLs.
 - **Audit doc:** `docs/question-bank-audit.md` (3 audits — initial, batch-2 re-audit, full-corpus post-tripling).
 - **Plan:** `~/.claude/plans/adaptive-churning-shell.md` — full design (schema, variants, adaptive logic, v1→v3 phasing).
 - **Memory:** `~/.claude/projects/-home-trisha-google-drive-0-AI/memory/asvab-platform-v1.md`
-- **Pending v2/v3:** flashcard SM-2 UI (schema is in DB, no UI yet), daily 10-q challenge Edge Function + Listmonk reminder, AFQT Sprint + Weakness Loop variants, Full ASVAB Sim + Retake Readiness (gated on bank growth ≥1000 items).
+- **Pending v2/v3:** flashcard SM-2 UI (schema is in DB, no UI yet), daily 10-q challenge Edge Function + Listmonk reminder, AFQT Sprint + Weakness Loop variants, Full ASVAB Sim + Retake Readiness (gated on bank growth ≥1000 items). Stripe live-mode flip required before real revenue. ~30 study guide pages body length >400 words (audit flagged, not blocking).
+
+## Monetization Layer (2026-04-27 → 2026-04-28)
+- **Stripe test mode end-to-end.** Schema `0002_billing.sql` adds billing columns + `has_active_pro()` SQL fn. Product `prod_UQ8lIeJ18IMwZm`. Plans: $9.99/mo or $49.99/yr.
+- **3 Stripe Edge Functions deployed:** `stripe-checkout`, `stripe-portal`, `stripe-webhook`. Webhook secret: `ASVABHERO_STRIPE_WEBHOOK_SECRET` in central `.env`.
+- **Hard paywall:** free users hit wall after first diagnostic; Pro unlocks unlimited diagnostics + history.
+- **Account dashboard redesign:** `/account` is now a SaaS dashboard (greeting, stats, recent attempts, weak topics, plan card). Settings → `/account/settings`. New: `/account/billing` (Customer Portal link), `/account/history` (Pro-only).
+- **Conversion nudges:** sticky `<UpgradeBanner />` in layout.tsx for free authed users; Pro upsell card on TestResults; Upgrade button in Nav for free authed users only.
+- **Day-7 Listmonk drip:** template at `docs/listmonk-template-pro-upgrade-day7.html`, deploy steps at `docs/listmonk-deploy-day7.md`. NOT yet deployed.
+
+## Study Guide Coverage (2026-04-28)
+All 39/39 topic pages are live. 36 missing pages authored in one session (5 parallel agents) across all 9 subtests. Each file at `content/study-guides/{subtest}/{topic-slug}.md` — frontmatter + 250-400 word body + worked examples + pitfalls section.
+
+## Homepage Redesign (2026-04-28)
+Hero refocused on platform pitch (769q/39 topics/9 subtests proof points). Three-pillar grid: Calculator / Practice / Study Guide. Replaced stale "Coming Soon" Pro teaser with real Pro section + Upgrade CTA. Reduced to single mid-page email capture (was two).
+
+## Affiliate / Funnel Pages (2026-04-28)
+Commits `6e028ec` / `f3d9c57`. Strategy: Amazon Associates (books only) + Pro conversion — no links to competing online subscriptions (Mometrix Academy, Kaplan online, Princeton Review online, Peterson's online).
+- `/best-asvab-study-book` — Amazon Associates roundup, 9 books, tag `fidohikes-20`, FTC-disclosed
+- `/best-asvab-online-prep` — comparison page, Pro listed #1, no affiliate links to competing online courses
+- `/free-asvab-practice-tests` — informational funnel page driving signups to OUR diagnostic + email list
 
 ## AFQT Scoring Model
 
@@ -146,3 +166,13 @@ Pending:
 **MAGE normalization — known unresolved issue:** Air Force MAGE job thresholds in `air-force-jobs.json` use a 1–99 percentile scale (per official USAF), but `calculateAirForceComposites()` returns raw subtest sums (60–186 range for 3-subtest composites). Result: nearly all users show as qualifying for all AF AFSCs because raw sums (e.g., G=105) exceed percentile thresholds (e.g., G≥55). Fixing this requires either (a) adding a MAGE normalization lookup table (like PAY97 for AFQT) to convert raw sums → 1–99, or (b) recalibrating all AF job thresholds to raw sum equivalents. Deferred.
 
 **Open P2 gaps:** `/marines-asvab-calculator`, `/coast-guard-asvab-calculator`, `/space-force-asvab-calculator` — each follows the `/army-asvab-calculator` pattern with `branchFilter` prop.
+
+## Marketing Strategy (2026-04-28)
+
+Full memo: `docs/marketing-strategy-2026-04-28.md`. Quick state:
+
+- **Skill updated:** `asvab-post-writer` now models two products — SEO articles AND subtest topic study guides (markdown into `content/study-guides/{subtest}/{topic}.md`, no page.tsx). Frontmatter shape, body structure, and Pro-funnel role spec'd in the skill.
+- **Study guides reframed:** defensive product completeness for the Pro funnel, not a growth channel. GSC has zero striking-distance signal for topic content. Don't invest growth budget on the remaining 17 non-AFQT pages.
+- **Decision lean: Failed-ASVAB Recovery Funnel.** Acute pain segment (30-day retake clock, demonstrated buying intent). Open architecture choice: standalone $49 30-day track vs. Pro variant with retake guarantee. Pre-reqs: flip Stripe to live mode, baseline score guarantee, decide offer architecture.
+- **Score Insurance considered + rejected** (adverse selection, verification, regulatory exposure). Standard money-back guarantee with engagement gates is the de-risked replacement.
+- **Top non-funnel moves to sequence after:** recruiter B2B dashboard, "Score Your AI" stunt, TikTok score-transformation reels, Reddit/Discord plan execution.

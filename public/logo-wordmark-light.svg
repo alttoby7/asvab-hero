@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" width="320" height="72" role="img" aria-label="ASVAB Hero">
+  <defs>
+    <style>
+      .wm { font-family: "Plus Jakarta Sans", "Inter", system-ui, sans-serif; font-weight: 800; font-size: 56px; letter-spacing: -2px; }
+    </style>
+  </defs>
+  <text x="0" y="56" class="wm" fill="#f97316">ASVAB</text>
+  <text x="180" y="56" class="wm" fill="#0a1628">Hero</text>
+</svg>
