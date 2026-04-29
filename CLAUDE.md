@@ -39,9 +39,11 @@ Hero refocused on platform pitch (769q/39 topics/9 subtests proof points). Three
 
 ## Affiliate / Funnel Pages (2026-04-28)
 Commits `6e028ec` / `f3d9c57`. Strategy: Amazon Associates (books only) + Pro conversion — no links to competing online subscriptions (Mometrix Academy, Kaplan online, Princeton Review online, Peterson's online).
-- `/best-asvab-study-book` — Amazon Associates roundup, 9 books, tag `fidohikes-20`, FTC-disclosed
+- `/best-asvab-study-book` — Amazon Associates roundup, 9 books, FTC-disclosed
 - `/best-asvab-online-prep` — comparison page, Pro listed #1, no affiliate links to competing online courses
 - `/free-asvab-practice-tests` — informational funnel page driving signups to OUR diagnostic + email list
+- `/best-asvab-practice-test-book` (2026-04-29, commit `d3b4672`) — list article, 8 books ranked by practice volume, master comparison table (gap competitors miss), 6-Q FAQ. Built via /asvab-post-writer 6-stage pipeline; workspace: `~/google-drive/0-AI/asvab-hero/articles/best-asvab-practice-test-book-2026-04-28/`.
+- **Amazon tag** is now `asvabhero-20` (dedicated tracking ID, swapped from `fidohikes-20` on 2026-04-28). Read from `NEXT_PUBLIC_AMAZON_TAG` env with that fallback.
 
 ## AFQT Scoring Model
 
