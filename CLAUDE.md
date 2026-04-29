@@ -155,17 +155,14 @@ Pending:
 
 **Published:** Can I Check My ASVAB Score Online? at `/can-i-check-my-asvab-score-online` — 1,968-word how-to, 7 steps (identify path → CEP portal → MEPS/MET → active duty branch portals → score type disambiguation → score recovery → DEP/PiCAT edge cases). 3 tables, 8 callouts, 2 stats-rows, 6-question FAQ. Key differentiators: direct YES/NO answer by path (competitors hedge), Air Force/Space Force JST exclusion (JST doesn't pull AFPC records, use vMPF), 2-year deletion from DoD database (not just "expiration"), PiCAT scores completely invisible to test-taker until Vtest. Commit: `0b65433`. Article draft: `asvab-hero/articles/can-i-check-my-asvab-score-online-2026-04-27/`.
 
-## Calculator Audit Fixes (2026-04-27) — Commits `df162a1`, `1aa7cd3`
+## Calculator Audit Fixes (2026-04-27)
 
-**Bug fixes shipped:**
-- **Air Force M formula** (`src/lib/score-calculator.ts`): Was `MC + AS + GS`; fixed to `MC + 2×AS + GS`. Official USAF spec doubles AS in the Mechanical composite.
-- **Navy SEAL OR-paths** (`src/data/navy-jobs.json` + `src/lib/job-matcher.ts` + `src/types/index.ts`): SEAL was encoded as AND (user must meet BOTH `GS+MC+EI ≥ 165` AND `VE+AR+MK+MC ≥ 220`). Official: EITHER path qualifies. Added `anyOf?: ScoreRequirement[]` to `MilitaryJob` type + OR-logic in `evaluateJobEligibility`. When all `anyOf` paths fail, the closest path's deficit surfaces in gap analysis.
-- **Air Force A legacy formula** (`src/app/asvab-line-score-calculator/page.tsx`): Three places showed `A = NO + CS + VE` (Numerical Operations + Coding Speed — discontinued 2002). Corrected to `A = WK + PC + MK` in JSON-LD, formula block, and FAQ prose. Removed false claim that NO/CS "still appear in some formulas."
-- **Dead data removed**: `src/data/army-mos-asvab-requirements.json` — 1,566-line file not imported anywhere; deleted.
-
-**MAGE normalization — known unresolved issue:** Air Force MAGE job thresholds in `air-force-jobs.json` use a 1–99 percentile scale (per official USAF), but `calculateAirForceComposites()` returns raw subtest sums (60–186 range for 3-subtest composites). Result: nearly all users show as qualifying for all AF AFSCs because raw sums (e.g., G=105) exceed percentile thresholds (e.g., G≥55). Fixing this requires either (a) adding a MAGE normalization lookup table (like PAY97 for AFQT) to convert raw sums → 1–99, or (b) recalibrating all AF job thresholds to raw sum equivalents. Deferred.
-
-**Open P2 gaps:** `/marines-asvab-calculator`, `/coast-guard-asvab-calculator`, `/space-force-asvab-calculator` — each follows the `/army-asvab-calculator` pattern with `branchFilter` prop.
+- `score-calculator.ts`: AF M = `MC + 2×AS + GS` (was missing 2×)
+- `job-matcher.ts` + `types/index.ts`: `anyOf?` OR-logic on `MilitaryJob`; Navy SEAL uses it (`GS+MC+EI≥165` OR `VE+AR+MK+MC≥220`)
+- `asvab-line-score-calculator/page.tsx`: AF A formula was `NO+CS+VE` (discontinued 2002) → corrected to `WK+PC+MK`
+- Deleted dead `src/data/army-mos-asvab-requirements.json`
+- **MAGE open bug:** AF job thresholds are 1–99 percentile but `calculateAirForceComposites()` returns raw sums → AF job matching is unreliable. Needs normalization table (like PAY97). Deferred.
+- **Missing pages:** `/marines-asvab-calculator`, `/coast-guard-asvab-calculator`, `/space-force-asvab-calculator` — follow `/army-asvab-calculator` pattern
 
 ## Marketing Strategy (2026-04-28)
 
