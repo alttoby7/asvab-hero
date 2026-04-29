@@ -5,6 +5,8 @@ export const CORS_HEADERS: Record<string, string> = {
   "Access-Control-Max-Age": "86400",
 };
 
+export const corsHeaders = CORS_HEADERS;
+
 // Allowed origins for strict checks (informational; * above covers preflight)
 export const ALLOWED_ORIGINS = [
   "https://asvabhero.com",
