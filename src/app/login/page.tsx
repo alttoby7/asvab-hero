@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -27,6 +28,7 @@ export default function LoginPage() {
       setError(authError.message);
       setLoading(false);
     } else {
+      trackEvent(FunnelEvents.LoginComplete);
       router.push("/account");
     }
   }

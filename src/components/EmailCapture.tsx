@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { trackEvent } from "@/lib/analytics";
+import { useEffect, useState } from "react";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
 
 interface EmailCaptureProps {
   headline?: string;
@@ -26,6 +26,10 @@ export default function EmailCapture({
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    trackEvent(FunnelEvents.EmailCaptureShown, { source: tag });
+  }, [tag]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

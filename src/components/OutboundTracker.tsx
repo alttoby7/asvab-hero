@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { trackEvent } from "@/lib/analytics";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
 
 /**
  * Delegates a single document-level click listener to capture outbound
@@ -40,9 +40,23 @@ export default function OutboundTracker() {
       try {
         const url = new URL(href);
         if (host && url.hostname === host) return; // internal absolute link
+
+        const a = anchor as HTMLElement;
+        const network = a.dataset.affiliate;
+        if (network) {
+          trackEvent(FunnelEvents.AffiliateClick, {
+            network,
+            asin: a.dataset.asin ?? "",
+            book_id: a.dataset.bookId ?? "",
+            source: a.dataset.source ?? findLocation(a),
+            url: href,
+          });
+          return; // don't double-fire as outbound_click
+        }
+
         trackEvent("outbound_click", {
           url: href,
-          location: findLocation(anchor as HTMLElement),
+          location: findLocation(a),
         });
       } catch {
         // malformed URL — skip

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
 };
 
-const TAG = "asvabhero-20";
+const TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "asvabhero-20";
 
 const books = [
   {
@@ -338,6 +338,10 @@ export default function BestASVABStudyBookPage() {
                 href={`https://www.amazon.com/dp/${book.asin}?tag=${TAG}`}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
+                data-affiliate="amazon"
+                data-asin={book.asin}
+                data-book-id={book.id}
+                data-source="study_book_page_top3"
                 className="shrink-0 rounded-lg bg-accent px-4 py-2 font-display text-sm font-bold text-white transition-colors hover:bg-accent-hover no-underline"
               >
                 Buy on Amazon
@@ -499,6 +503,10 @@ export default function BestASVABStudyBookPage() {
             href={`https://www.amazon.com/dp/${book.asin}?tag=${TAG}`}
             target="_blank"
             rel="noopener noreferrer sponsored"
+            data-affiliate="amazon"
+            data-asin={book.asin}
+            data-book-id={book.id}
+            data-source="study_book_page_full"
             className="inline-flex items-center gap-2 rounded-xl bg-accent px-5 py-2.5 font-display text-sm font-bold text-white transition-colors hover:bg-accent-hover no-underline"
           >
             Check current price on Amazon →
@@ -543,6 +551,10 @@ export default function BestASVABStudyBookPage() {
                   href={`https://www.amazon.com/dp/${m.asin}?tag=${TAG}`}
                   target="_blank"
                   rel="noopener noreferrer sponsored"
+                  data-affiliate="amazon"
+                  data-asin={m.asin}
+                  data-book-id={m.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 40)}
+                  data-source="study_book_page_honorable"
                   className="mt-2 inline-block text-xs font-semibold text-accent hover:text-accent-hover no-underline"
                 >
                   View on Amazon →

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
 import Link from "next/link";
 
 const MONTHLY_PRICE_ID = "price_1TRIUPDjRScowBLlHUFX2nzc";
@@ -61,6 +62,11 @@ export default function PricingPlans({
 
     setCheckoutLoading(true);
     setCheckoutError(null);
+
+    trackEvent(FunnelEvents.CheckoutStart, {
+      tier: billing,
+      from: source ?? "unknown",
+    });
 
     try {
       const returnPath = "/account/billing";

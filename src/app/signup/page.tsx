@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
 
 export default function SignupPage() {
   const [email, setEmail] = useState("");
@@ -39,6 +40,7 @@ export default function SignupPage() {
       setError(authError.message);
       setLoading(false);
     } else {
+      trackEvent(FunnelEvents.SignupComplete, { source: "signup_page" });
       setDone(true);
     }
   }

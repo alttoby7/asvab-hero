@@ -6,6 +6,7 @@ import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
 
 type Attempt = {
   id: string;
@@ -103,6 +104,21 @@ export default function AccountDashboardPage() {
   }, [session, sessionLoading, router]);
 
   useEffect(() => { setHasInProgress(getInProgressTest()); }, []);
+
+  // pro_active — fire once per user when /account loads with isPro=true.
+  useEffect(() => {
+    if (entitlementLoading || !session || !entitlement.isPro) return;
+    const dedupeKey = `asvabhero.pro_active_fired.${session.user.id}`;
+    try {
+      if (localStorage.getItem(dedupeKey)) return;
+      localStorage.setItem(dedupeKey, "1");
+    } catch {
+      return; // skip firing if we can't dedupe
+    }
+    trackEvent(FunnelEvents.ProActive, {
+      tier: entitlement.proTier ?? "unknown",
+    });
+  }, [entitlementLoading, session, entitlement.isPro, entitlement.proTier]);
 
   useEffect(() => {
     if (!session) return;

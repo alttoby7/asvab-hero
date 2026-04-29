@@ -6,6 +6,7 @@ import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -30,12 +31,29 @@ function BillingInner() {
   const [portalError, setPortalError] = useState<string | null>(null);
 
   const statusParam = searchParams.get("status");
+  const sessionId = searchParams.get("session_id");
 
   useEffect(() => {
     if (!sessionLoading && !session) {
       router.replace("/login");
     }
   }, [session, sessionLoading, router]);
+
+  // checkout_success — fire once when redirected back with status=success.
+  useEffect(() => {
+    if (statusParam !== "success") return;
+    const dedupeKey = `asvabhero.checkout_success_fired.${sessionId ?? "unknown"}`;
+    try {
+      if (localStorage.getItem(dedupeKey)) return;
+      localStorage.setItem(dedupeKey, "1");
+    } catch {
+      // localStorage unavailable — fire anyway, GA4 will dedupe by event_id if set.
+    }
+    trackEvent(FunnelEvents.CheckoutSuccess, {
+      tier: entitlement.proTier ?? "unknown",
+      ...(sessionId ? { session_id: sessionId } : {}),
+    });
+  }, [statusParam, sessionId, entitlement.proTier]);
 
   async function handleManageSubscription() {
     setPortalLoading(true);

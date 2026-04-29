@@ -1,11 +1,13 @@
 "use client";
 
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import PricingPlans from "@/components/PricingPlans";
+import BrandHero from "@/components/BrandHero";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
 
 type FromParam =
   | "variant_picker"
@@ -26,6 +28,10 @@ function UpgradeContent() {
   const from = searchParams.get("from") as FromParam;
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
+
+  useEffect(() => {
+    trackEvent(FunnelEvents.UpgradePageView, { from: from ?? "direct" });
+  }, [from]);
 
   const isLoading = sessionLoading || entitlementLoading;
   const headline = (from && HEADLINES[from]) || "Upgrade to Pro";
@@ -51,6 +57,18 @@ function UpgradeContent() {
             Start with one free diagnostic. Upgrade for unlimited practice.
           </p>
         )}
+      </div>
+
+      {/* Hero image — the satisfaction moment after the practice grind pays off */}
+      <div className="mb-12 mx-auto max-w-3xl">
+        <BrandHero
+          src="/images/generated/asvab-upgrade-hero.png"
+          alt="A focused candidate breaking through ASVAB practice — calculator in hand, notebook of worked-out problems, mid-morning daylight."
+          width={1536}
+          height={1024}
+          priority
+          className="overflow-hidden rounded-2xl border border-navy-border shadow-2xl shadow-black/40"
+        />
       </div>
 
       {/* Already Pro — manage link */}

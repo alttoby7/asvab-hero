@@ -6,6 +6,7 @@ import UpgradeBanner from "@/components/UpgradeBanner";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import OutboundTracker from "@/components/OutboundTracker";
+import { AnalyticsUserBinder } from "@/components/AnalyticsUserBinder";
 
 const siteTitle =
   "ASVAB Hero — Free ASVAB Score Calculator & Military Job Finder";
@@ -97,6 +98,7 @@ export default function RootLayout({
         <main className="relative z-1">{children}</main>
         <Footer />
         <OutboundTracker />
+        <AnalyticsUserBinder />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-96BXQ7YRJ8" strategy="afterInteractive" />
         <Script id="ga4-init" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];

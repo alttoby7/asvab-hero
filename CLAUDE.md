@@ -8,7 +8,7 @@
 - Domain: asvabhero.com (Cloudflare DNS → Cloudflare Pages)
 - Build output: `out/` (static export)
 - Cache: `public/_headers` controls caching for static assets
-- **Supabase backend (LIVE 2026-04-27, commit `3e775a2`):** Postgres + Auth + Edge Functions. Project ref `abypyprvgvofzrtifgzi`. Schema in `supabase/migrations/0001_init.sql`. Env: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (set in CF Pages production + local `.env.local`). Service-role key + access token in central `.env` as `ASVABHERO_SUPABASE_SECRET_KEY` / `ASVABHERO_SUPABASE_ACCESS_TOKEN`.
+- **Supabase backend (LIVE 2026-04-27, commit `3e775a2`):** Postgres + Auth + Edge Functions. Project ref `abypyprvgvofzrtifgzi`. Schema in `supabase/migrations/0001_init.sql`. Env: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `NEXT_PUBLIC_AMAZON_TAG` (default `asvabhero-20`) — all set in CF Pages production + local `.env.local`. Service-role key + access token in central `.env` as `ASVABHERO_SUPABASE_SECRET_KEY` / `ASVABHERO_SUPABASE_ACCESS_TOKEN`.
 - App surfaces (auth/practice/study) are client-rendered React talking to Supabase JS. Marketing pages stay static. No SSR — static export still applies.
 
 ## Adaptive Practice Platform v1 (2026-04-27)

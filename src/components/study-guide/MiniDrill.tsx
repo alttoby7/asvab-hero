@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useEntitlement } from "@/hooks/useEntitlement";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
 
 interface DbQuestion {
   id: string;
@@ -52,9 +53,34 @@ export default function MiniDrill({ topicId }: MiniDrillProps) {
   const [answers, setAnswers] = useState<AnswerState>({});
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const startedRef = useRef(false);
+  const paywallFiredRef = useRef(false);
 
   // Only fetch questions for Pro users.
   const shouldFetch = !entitlementLoading && entitlement.isPro;
+
+  // paywall_shown — fires once when free user first sees the lock card.
+  useEffect(() => {
+    if (entitlementLoading || entitlement.isPro || paywallFiredRef.current) return;
+    paywallFiredRef.current = true;
+    trackEvent(FunnelEvents.PaywallShown, {
+      reason: "pro_only_mini_drill",
+      from: "mini_drill",
+      topic_id: topicId,
+    });
+  }, [entitlementLoading, entitlement.isPro, topicId]);
+
+  // topic_drill_start — fires once when questions are loaded for a Pro user.
+  useEffect(() => {
+    if (!questions || questions.length < 3 || startedRef.current) return;
+    startedRef.current = true;
+    const subtest = questions[0]?.subtest;
+    trackEvent(FunnelEvents.TopicDrillStart, {
+      topic_id: topicId,
+      ...(subtest ? { subtest } : {}),
+      source: "mini_drill",
+    });
+  }, [questions, topicId]);
 
   useEffect(() => {
     if (!shouldFetch) {
@@ -157,6 +183,14 @@ export default function MiniDrill({ topicId }: MiniDrillProps) {
     } else {
       writeLocalAttempt(topicId, correctCount, questions.length);
     }
+
+    trackEvent(FunnelEvents.TopicDrillComplete, {
+      topic_id: topicId,
+      ...(questions[0]?.subtest ? { subtest: questions[0].subtest } : {}),
+      source: "mini_drill",
+      correct_count: correctCount,
+      question_count: questions.length,
+    });
 
     setSubmitted(true);
     setSubmitting(false);

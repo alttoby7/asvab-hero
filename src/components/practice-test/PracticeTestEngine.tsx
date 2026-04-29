@@ -28,6 +28,7 @@ import {
   totalCorrect,
 } from "@/lib/test-scorer";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
 import QuestionCard from "./QuestionCard";
 import ProgressBar from "./ProgressBar";
 import Timer from "./Timer";
@@ -357,6 +358,19 @@ export default function PracticeTestEngine({
           setSavedProfile([]);
         }
       }
+
+      // Funnel event: diagnostic_complete or topic_drill_complete
+      const completionEvent =
+        variantCode === "diagnostic"
+          ? FunnelEvents.DiagnosticComplete
+          : FunnelEvents.TopicDrillComplete;
+      trackEvent(completionEvent, {
+        variant: variantCode,
+        score: correct,
+        question_count: shuffledQuestions.length,
+        afqt_estimate: afqt,
+        ...(subtest ? { subtest } : {}),
+      });
 
       // Mark diagnostic used after submit so the gate fires on next attempt.
       if (variantCode === "diagnostic") {

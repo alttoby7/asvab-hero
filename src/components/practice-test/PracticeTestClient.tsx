@@ -1,6 +1,6 @@
 "use client";
 
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import PracticeTestEngine from "./PracticeTestEngine";
 import VariantPicker from "./VariantPicker";
@@ -8,6 +8,7 @@ import TestBlockedScreen from "./TestBlockedScreen";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { useSession } from "@/hooks/useSession";
 import { canStartVariant, checkAnonDiagnosticUsed } from "@/lib/practice/gate";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
 import type { AsvabSubtest } from "@/types";
 import { ALL_SUBTESTS } from "@/types";
 
@@ -49,7 +50,7 @@ function PracticeTestInner() {
 
   if (!decision.allowed) {
     return (
-      <TestBlockedScreen
+      <TestBlockedScreenWithEvent
         reason={decision.reason}
         variant={variant}
         subtest={subtest}
@@ -57,6 +58,48 @@ function PracticeTestInner() {
     );
   }
 
+  return <PracticeTestEngineWithEvent variant={variant} subtest={subtest} />;
+}
+
+function TestBlockedScreenWithEvent({
+  reason,
+  variant,
+  subtest,
+}: {
+  reason: string;
+  variant: string;
+  subtest?: AsvabSubtest;
+}) {
+  useEffect(() => {
+    trackEvent(FunnelEvents.PaywallShown, {
+      reason,
+      from: "practice_test",
+      variant,
+      ...(subtest ? { subtest } : {}),
+    });
+  }, [reason, variant, subtest]);
+  return (
+    <TestBlockedScreen reason={reason} variant={variant} subtest={subtest} />
+  );
+}
+
+function PracticeTestEngineWithEvent({
+  variant,
+  subtest,
+}: {
+  variant: string;
+  subtest?: AsvabSubtest;
+}) {
+  useEffect(() => {
+    const eventName =
+      variant === "diagnostic"
+        ? FunnelEvents.DiagnosticStart
+        : FunnelEvents.TopicDrillStart;
+    trackEvent(eventName, {
+      variant,
+      ...(subtest ? { subtest } : {}),
+    });
+  }, [variant, subtest]);
   return <PracticeTestEngine variant={variant} subtest={subtest} />;
 }
 
