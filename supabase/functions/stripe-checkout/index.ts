@@ -14,67 +14,75 @@ const json = (status: number, data: unknown) =>
 
 const SITE_URL = Deno.env.get("ASVABHERO_SITE_URL") ?? "https://asvabhero.com";
 
+const addCors = (res: Response): Response => {
+  for (const [k, v] of Object.entries(corsHeaders)) res.headers.set(k, v);
+  return res;
+};
+
 Deno.serve(async (req) => {
   const cors = handleCors(req);
   if (cors) return cors;
   if (req.method !== "POST") return json(405, { error: "method_not_allowed" });
 
-  const auth = await requireUser(req);
-  if (!auth.ok) return json(401, { error: auth.error });
-  const { userId, supabaseAdmin } = auth;
-
-  let body: { tier?: string; returnPath?: string };
   try {
-    body = await req.json();
-  } catch {
-    return json(400, { error: "invalid_json" });
-  }
+    const { userId, supabaseAdmin } = await requireUser(req);
 
-  const tier = body.tier;
-  const priceId =
-    tier === "monthly"
-      ? Deno.env.get("ASVABHERO_STRIPE_PRICE_MONTHLY")
-      : tier === "annual"
-        ? Deno.env.get("ASVABHERO_STRIPE_PRICE_ANNUAL")
-        : null;
-  if (!priceId) return json(400, { error: "invalid_tier" });
+    let body: { tier?: string; returnPath?: string };
+    try {
+      body = await req.json();
+    } catch {
+      return json(400, { error: "invalid_json" });
+    }
 
-  // Fetch profile for existing customer + email
-  const { data: profile } = await supabaseAdmin
-    .from("profiles")
-    .select("email,stripe_customer_id,billing_status")
-    .eq("user_id", userId)
-    .single();
-  if (!profile) return json(404, { error: "profile_not_found" });
-  if (profile.billing_status === "active" || profile.billing_status === "lifetime") {
-    return json(409, { error: "already_pro" });
-  }
+    const tier = body.tier;
+    const priceId =
+      tier === "monthly"
+        ? Deno.env.get("ASVABHERO_STRIPE_PRICE_MONTHLY")
+        : tier === "annual"
+          ? Deno.env.get("ASVABHERO_STRIPE_PRICE_ANNUAL")
+          : null;
+    if (!priceId) return json(400, { error: "invalid_tier" });
 
-  let customerId = profile.stripe_customer_id;
-  if (!customerId) {
-    const customer = await stripeRequest<{ id: string }>("POST", "/customers", {
-      email: profile.email,
-      metadata: { user_id: userId },
-    });
-    customerId = customer.id;
-    await supabaseAdmin
+    const { data: profile } = await supabaseAdmin
       .from("profiles")
-      .update({ stripe_customer_id: customerId })
-      .eq("user_id", userId);
+      .select("email,stripe_customer_id,billing_status")
+      .eq("user_id", userId)
+      .single();
+    if (!profile) return json(404, { error: "profile_not_found" });
+    if (profile.billing_status === "active" || profile.billing_status === "lifetime") {
+      return json(409, { error: "already_pro" });
+    }
+
+    let customerId = profile.stripe_customer_id;
+    if (!customerId) {
+      const customer = await stripeRequest<{ id: string }>("POST", "/customers", {
+        email: profile.email,
+        metadata: { user_id: userId },
+      });
+      customerId = customer.id;
+      await supabaseAdmin
+        .from("profiles")
+        .update({ stripe_customer_id: customerId })
+        .eq("user_id", userId);
+    }
+
+    const returnPath = body.returnPath ?? "/account/billing";
+    const session = await stripeRequest<{ id: string; url: string }>("POST", "/checkout/sessions", {
+      mode: "subscription",
+      customer: customerId,
+      "line_items[0][price]": priceId,
+      "line_items[0][quantity]": 1,
+      success_url: `${SITE_URL}${returnPath}?status=success&session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: `${SITE_URL}/upgrade?status=cancelled`,
+      allow_promotion_codes: "true",
+      "subscription_data[metadata][user_id]": userId,
+      "metadata[user_id]": userId,
+    });
+
+    return json(200, { url: session.url });
+  } catch (err) {
+    if (err instanceof Response) return addCors(err);
+    console.error("stripe-checkout error:", err);
+    return json(500, { error: err instanceof Error ? err.message : "internal_error" });
   }
-
-  const returnPath = body.returnPath ?? "/account/billing";
-  const session = await stripeRequest<{ id: string; url: string }>("POST", "/checkout/sessions", {
-    mode: "subscription",
-    customer: customerId,
-    "line_items[0][price]": priceId,
-    "line_items[0][quantity]": 1,
-    success_url: `${SITE_URL}${returnPath}?status=success&session_id={CHECKOUT_SESSION_ID}`,
-    cancel_url: `${SITE_URL}/upgrade?status=cancelled`,
-    allow_promotion_codes: "true",
-    "subscription_data[metadata][user_id]": userId,
-    "metadata[user_id]": userId,
-  });
-
-  return json(200, { url: session.url });
 });

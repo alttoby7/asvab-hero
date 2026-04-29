@@ -62,6 +62,9 @@ const pages = [
   { path: "/marines-afqt-calculator", priority: "0.9", changefreq: "monthly" },
   { path: "/asvab-score-converter", priority: "0.9", changefreq: "monthly" },
   { path: "/can-i-check-my-asvab-score-online", priority: "0.8", changefreq: "monthly" },
+  { path: "/best-asvab-study-book", priority: "0.8", changefreq: "monthly" },
+  { path: "/best-asvab-online-prep", priority: "0.85", changefreq: "monthly" },
+  { path: "/free-asvab-practice-tests", priority: "0.9", changefreq: "monthly" },
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>

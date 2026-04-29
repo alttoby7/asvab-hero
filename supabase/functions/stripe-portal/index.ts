@@ -14,31 +14,40 @@ const json = (status: number, data: unknown) =>
 
 const SITE_URL = Deno.env.get("ASVABHERO_SITE_URL") ?? "https://asvabhero.com";
 
+const addCors = (res: Response): Response => {
+  for (const [k, v] of Object.entries(corsHeaders)) res.headers.set(k, v);
+  return res;
+};
+
 Deno.serve(async (req) => {
   const cors = handleCors(req);
   if (cors) return cors;
   if (req.method !== "POST") return json(405, { error: "method_not_allowed" });
 
-  const auth = await requireUser(req);
-  if (!auth.ok) return json(401, { error: auth.error });
-  const { userId, supabaseAdmin } = auth;
+  try {
+    const { userId, supabaseAdmin } = await requireUser(req);
 
-  const { data: profile } = await supabaseAdmin
-    .from("profiles")
-    .select("stripe_customer_id")
-    .eq("user_id", userId)
-    .single();
-  if (!profile?.stripe_customer_id) {
-    return json(404, { error: "no_stripe_customer" });
+    const { data: profile } = await supabaseAdmin
+      .from("profiles")
+      .select("stripe_customer_id")
+      .eq("user_id", userId)
+      .single();
+    if (!profile?.stripe_customer_id) {
+      return json(404, { error: "no_stripe_customer" });
+    }
+
+    const body = await req.json().catch(() => ({}));
+    const returnPath = body.returnPath ?? "/account/billing";
+
+    const session = await stripeRequest<{ url: string }>("POST", "/billing_portal/sessions", {
+      customer: profile.stripe_customer_id,
+      return_url: `${SITE_URL}${returnPath}`,
+    });
+
+    return json(200, { url: session.url });
+  } catch (err) {
+    if (err instanceof Response) return addCors(err);
+    console.error("stripe-portal error:", err);
+    return json(500, { error: err instanceof Error ? err.message : "internal_error" });
   }
-
-  const body = await req.json().catch(() => ({}));
-  const returnPath = body.returnPath ?? "/account/billing";
-
-  const session = await stripeRequest<{ url: string }>("POST", "/billing_portal/sessions", {
-    customer: profile.stripe_customer_id,
-    return_url: `${SITE_URL}${returnPath}`,
-  });
-
-  return json(200, { url: session.url });
 });
