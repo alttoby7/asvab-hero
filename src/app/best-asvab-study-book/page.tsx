@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
 };
 
-const TAG = "ASVABHERO_AMAZON_TAG_PLACEHOLDER";
+const TAG = "fidohikes-20";
 
 const books = [
   {
