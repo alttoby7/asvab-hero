@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Can I Check My ASVAB Score Online? | ASVAB Hero",
+  title: "Can I Check My ASVAB Score Online? 3 Ways to Find It (2026)",
   description:
     "Yes, if you took the high school CEP test. Learn which portal fits your path and how to get your ASVAB score online fast.",
   alternates: {
@@ -19,7 +19,7 @@ export default function CanICheckMyASVABScoreOnlinePage() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline:
-            "Can I Check My ASVAB Score Online? Here's the Honest Answer",
+            "Can I Check My ASVAB Score Online? 3 Ways to Find It (2026)",
           description:
             "Yes, if you took the high school CEP test. Learn which portal fits your path and how to get your ASVAB score online fast.",
           url: "https://asvabhero.com/can-i-check-my-asvab-score-online",

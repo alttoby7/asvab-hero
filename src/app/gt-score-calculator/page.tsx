@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import GTScoreCalculator from "@/components/GTScoreCalculator";
 
 export const metadata: Metadata = {
-  title: "GT Score Calculator: Calculate Your ASVAB GT Score | ASVAB Hero",
+  title: "Free GT Score Calculator — Enter Subtests, See Your Score (2026)",
   description:
     "Calculate your ASVAB GT score instantly. Learn the Army, Marine Corps, and Air Force GT formulas, score requirements, and how to raise your GT.",
   alternates: {

@@ -4,9 +4,9 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Can You Retake the ASVAB? 1/1/6 Rule, DEP Limits, C-Test (2026)",
+  title: "How to Retake the ASVAB in 2026: Wait Times & Rules by Branch",
   description:
-    "Yes — you can retake the ASVAB. Wait 1 month for your first retest, 1 month for your second, then 6 months after that. Branch DEP rules, the Confirmation Test, and how to improve fast.",
+    "You can retake the ASVAB after a 1-month wait. Second retest: 1 more month. Third+: 6 months. Branch-specific DEP restrictions, Confirmation Test triggers, and study strategies to score higher.",
   alternates: {
     canonical: "https://asvabhero.com/how-to-retake-the-asvab",
   },
@@ -20,9 +20,9 @@ export default function HowToRetakeTheASVABPage() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline:
-            "Can You Retake the ASVAB? 1/1/6 Rule, DEP Limits, C-Test (2026)",
+            "How to Retake the ASVAB in 2026: Wait Times & Rules by Branch",
           description:
-            "Yes — you can retake the ASVAB. Wait 1 month for your first retest, 1 month for your second, then 6 months after that. Branch DEP rules, the Confirmation Test, and how to improve fast.",
+            "You can retake the ASVAB after a 1-month wait. Second retest: 1 more month. Third+: 6 months. Branch-specific DEP restrictions, Confirmation Test triggers, and study strategies to score higher.",
           url: "https://asvabhero.com/how-to-retake-the-asvab",
           author: {
             "@type": "Organization",

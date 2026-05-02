@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "ASVAB Composite Score Calculator | ASVAB Hero",
+  title: "ASVAB Composite Score Calculator: All 6 Branches (2026)",
   description:
     "Calculate ASVAB composite scores for all 6 branches. See which MOS, rate, and AFSC you qualify for with worked examples and the free calculator.",
   alternates: {
