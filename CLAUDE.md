@@ -202,6 +202,7 @@ Five-phase funnel-fix sprint after audit found **only 4 Listmonk subscribers in 
   - `public/ar-formula-card.pdf` (147 KB, 3 pages) — PEMDAS, fraction-decimal-percent table, distance/rate/time, work-rate, mixture, percent change, ratios, 8 word-problem patterns, unit conversions, test-day shortcuts. Source: `scripts/ar-formula-card.html`. Mounted on `/asvab-arithmetic-reasoning-tips` via tag `ar-tips`.
   - `public/wk-100-words.pdf` (228 KB, 4 pages) — 100 high-frequency vocab + 10 word roots + 5-question quiz. Source: `scripts/wk-100-words.html`. Mounted on `/asvab-word-knowledge-tips` via tag `wk-tips`.
   - `public/gt-booster-guide.pdf` (147 KB, 6 pages) — formula, MOS cutoffs by tier (100/107/110/117+), 4 levers, 14-day push schedule (week-grid), retake math, one-page cheat sheet. Source: `scripts/gt-booster-guide.html`. Mounted on `/gt-score-calculator` via tag `gt-calculator`.
+  - `public/pc-trap-patterns.pdf` (154 KB, 5 pages) — 60-second triage card, 5 wrong-answer trap patterns w/ kill moves, 3 worked passages with every wrong choice trap-labeled, 4-passage drill, answer key + test-day cue card. Source: `scripts/pc-trap-patterns.html`. Mounted on `/asvab-paragraph-comprehension-tips` (mid + end) via tag `pc-tips`. Listmonk tx template id `16` (`tx-pc-magnet`), CF Pages env var `LISTMONK_TEMPLATE_PC_TIPS=16`.
 
 **Verification status:** Shipped 2026-05-08, commit `51adb5e`. Edge functions (stripe-checkout, stripe-webhook) deployed. 4 Listmonk templates created (ids 12/13/14/15). CF Pages env vars + Supabase secrets set. Live + verified.
 

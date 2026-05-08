@@ -9,6 +9,7 @@ interface Env {
   LISTMONK_TEMPLATE_AR_TIPS?: string;
   LISTMONK_TEMPLATE_WK_TIPS?: string;
   LISTMONK_TEMPLATE_GT_BOOSTER?: string;
+  LISTMONK_TEMPLATE_PC_TIPS?: string;
   RATE_LIMIT_KV?: KVNamespace;
 }
 
@@ -21,6 +22,7 @@ const TAG_TEMPLATE_ENV_MAP: Record<string, keyof Env> = {
   "ar-tips": "LISTMONK_TEMPLATE_AR_TIPS",
   "wk-tips": "LISTMONK_TEMPLATE_WK_TIPS",
   "gt-calculator": "LISTMONK_TEMPLATE_GT_BOOSTER",
+  "pc-tips": "LISTMONK_TEMPLATE_PC_TIPS",
 };
 
 function resolveWelcomeTemplateId(env: Env, tag: string | undefined): number | null {

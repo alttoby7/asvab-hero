@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>PC Trap-Pattern Pack — ASVAB Hero</title>
+<style>
+  @page { size: letter; margin: 0.55in 0.65in; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Inter", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #0f172a;
+    font-size: 9.5pt;
+    line-height: 1.35;
+  }
+  h1 { font-size: 28pt; line-height: 1.05; margin: 0 0 8pt; color: #0a1628; }
+  h2 { font-size: 14pt; margin: 0 0 5pt; color: #0a1628; border-bottom: 2px solid #f97316; padding-bottom: 2pt; }
+  h3 { font-size: 10pt; margin: 5pt 0 2pt; color: #f97316; text-transform: uppercase; letter-spacing: 0.5pt; }
+  p { margin: 0 0 4pt; }
+  strong { color: #0a1628; }
+  ul, ol { margin: 0 0 4pt 0; padding-left: 14pt; }
+  li { margin-bottom: 1pt; }
+  .page { page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+
+  /* COVER */
+  .cover {
+    background: #0a1628;
+    color: #f1f5f9;
+    padding: 0.6in 0.7in;
+    margin: -0.55in -0.65in;
+    height: 11in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cover h1 { color: #f1f5f9; font-size: 40pt; }
+  .cover .accent { color: #f97316; }
+  .cover .lead { font-size: 13pt; color: #cbd5e1; max-width: 5in; line-height: 1.4; margin-top: 12pt; }
+  .cover .footer { color: #94a3b8; font-size: 10pt; }
+  .cover .badge {
+    display: inline-block;
+    background: #f97316;
+    color: white;
+    padding: 4pt 12pt;
+    border-radius: 4pt;
+    font-size: 10pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+  }
+  .cover .toc { list-style: none; padding: 0; margin: 22pt 0 0; color: #cbd5e1; font-size: 11pt; }
+  .cover .toc li { padding: 5pt 0; border-bottom: 1px solid #1e293b; }
+  .cover .toc strong { color: #f97316; margin-right: 10pt; }
+
+  /* TRAP FLASHCARD GRID */
+  .trap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7pt; margin-top: 4pt; }
+  .trap-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #f97316;
+    padding: 6pt 9pt;
+    border-radius: 3pt;
+    font-size: 9pt;
+  }
+  .trap-card .name { font-weight: 700; color: #0a1628; font-size: 10.5pt; margin-bottom: 2pt; }
+  .trap-card .def { color: #475569; font-size: 9pt; margin-bottom: 3pt; font-style: italic; }
+  .trap-card .ex { font-size: 8.5pt; line-height: 1.35; color: #1e293b; }
+  .trap-card .ex .label { color: #c2410c; font-weight: 600; }
+  .trap-card .ex .right { color: #047857; font-weight: 600; }
+  .trap-card.full { grid-column: 1 / span 2; }
+
+  /* PASSAGE BLOCKS */
+  .passage {
+    border: 1px solid #cbd5e1;
+    border-radius: 4pt;
+    padding: 6pt 8pt;
+    background: #ffffff;
+    font-size: 8.5pt;
+    line-height: 1.35;
+    margin-bottom: 4pt;
+  }
+  .passage p { margin: 0 0 3pt; }
+  .passage .ptitle { font-weight: 700; color: #0a1628; font-size: 9pt; margin-bottom: 3pt; }
+  .passage .ptitle .qtype { color: #f97316; font-weight: 600; font-size: 8pt; text-transform: uppercase; letter-spacing: 0.5pt; margin-left: 6pt; }
+  .question { font-weight: 600; color: #0a1628; margin: 3pt 0 2pt; font-size: 9pt; }
+  .choices { list-style: none; padding-left: 0; margin: 0 0 2pt; font-size: 9pt; }
+  .choices li { padding: 2pt 6pt; margin: 1pt 0; border-radius: 3pt; }
+  .choices li .opt { font-weight: 700; color: #0a1628; margin-right: 4pt; }
+  .choices li.correct { background: #dcfce7; border-left: 3px solid #16a34a; }
+  .choices li.correct .opt { color: #15803d; }
+  .choices li.correct .check { color: #16a34a; font-weight: 700; margin-left: 4pt; }
+  .choices li.wrong { background: #fff7ed; border-left: 3px solid #f97316; color: #1e293b; }
+  .choices li.wrong .traplabel {
+    display: inline-block;
+    background: #f97316;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 1pt 6pt;
+    border-radius: 3pt;
+    margin-left: 6pt;
+    text-transform: uppercase;
+    letter-spacing: 0.3pt;
+    vertical-align: middle;
+  }
+  .choices li.wrong .why { display: block; font-size: 8pt; color: #475569; margin-top: 1pt; padding-left: 0; font-style: italic; line-height: 1.3; }
+  .choices.drill li { background: #f8fafc; border: 1px solid #e2e8f0; padding: 1.5pt 6pt; }
+  .drill-passage .passage { padding: 5pt 8pt; margin-bottom: 3pt; }
+  .drill-passage .passage p { font-size: 8.2pt; line-height: 1.32; }
+  .drill-passage .question { margin: 2pt 0 1pt; font-size: 8.5pt; }
+  .drill-passage .choices.drill li { font-size: 8.5pt; }
+
+  /* ANSWER KEY */
+  .key-row {
+    display: grid;
+    grid-template-columns: 20pt 1fr;
+    gap: 6pt;
+    padding: 4pt 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 9pt;
+  }
+  .key-row .num { font-weight: 700; color: #f97316; font-size: 10.5pt; }
+  .key-row .ans { color: #0a1628; }
+  .key-row .ans .correct { color: #047857; font-weight: 700; }
+  .key-row .ans .traps { color: #475569; font-size: 9pt; margin-top: 2pt; }
+  .key-row .ans .traps .label { color: #c2410c; font-weight: 600; }
+
+  /* CUE CARD */
+  .cue-card {
+    background: #0a1628;
+    color: #f1f5f9;
+    padding: 12pt 16pt;
+    border-radius: 5pt;
+    margin-top: 10pt;
+  }
+  .cue-card h3 { color: #f97316; margin-top: 0; }
+  .cue-card ol { padding-left: 20pt; margin: 4pt 0 0; font-size: 11pt; line-height: 1.55; }
+  .cue-card ol li { color: #f1f5f9; margin-bottom: 4pt; }
+  .cue-card ol li strong { color: #fdba74; }
+
+  .footer-meta { font-size: 8.5pt; color: #64748b; margin-top: 10pt; padding-top: 6pt; border-top: 1px solid #e2e8f0; }
+  .footer-meta a { color: #f97316; text-decoration: none; }
+
+  .triage {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid #1e293b;
+    border-radius: 6pt;
+    padding: 14pt 16pt;
+    margin-top: 18pt;
+  }
+  .triage h3 { color: #fdba74; font-size: 11pt; margin: 0 0 8pt; letter-spacing: 0.6pt; }
+  .triage ol { padding-left: 18pt; margin: 0; font-size: 11pt; line-height: 1.5; color: #e2e8f0; }
+  .triage ol li { margin-bottom: 4pt; }
+  .triage ol li strong { color: #f97316; }
+</style>
+</head>
+<body>
+
+<!-- ============== PAGE 1: COVER ============== -->
+<div class="cover page">
+  <div>
+    <span class="badge">ASVAB Hero &middot; Paragraph Comprehension Quick-Use Pack</span>
+    <h1 style="margin-top: 22pt;">PC Trap-Pattern<br><span class="accent">Pack</span></h1>
+    <p class="lead">Pick the right answer fast. Kill the trap choices first. Cite the line every time.</p>
+    <div class="triage">
+      <h3>The 60-second triage card</h3>
+      <ol>
+        <li><strong>Read the question first</strong> so you know what to hunt for.</li>
+        <li><strong>Mark key words</strong> in the stem: NOT, EXCEPT, BEST, MAIN.</li>
+        <li><strong>Skim the passage</strong> for the proof sentence, not for plot.</li>
+        <li><strong>Predict the answer</strong> in your own words before reading choices.</li>
+        <li><strong>Eliminate trap choices</strong> using the 5 patterns on page 2.</li>
+        <li><strong>Verify with a line</strong>. If you cannot point at it, it is not the answer.</li>
+      </ol>
+    </div>
+    <ul class="toc">
+      <li><strong>02</strong>The 5 trap patterns, weaponized</li>
+      <li><strong>03</strong>Three worked passages with every wrong choice labeled</li>
+      <li><strong>04</strong>Four-passage drill set (you solve)</li>
+      <li><strong>05</strong>Answer key + test-day cue card</li>
+    </ul>
+  </div>
+  <div class="footer">
+    asvabhero.com &middot; Free for personal use. Not affiliated with the U.S. Department of Defense.
+  </div>
+</div>
+
+<!-- ============== PAGE 2: 5 TRAP FLASHCARDS ============== -->
+<div class="page">
+  <h2>The 5 wrong-answer traps</h2>
+  <p>Every wrong choice on PC fits one of these patterns. Spot the pattern, kill the choice, save the time.</p>
+
+  <div class="trap-grid">
+
+    <div class="trap-card">
+      <div class="name">1. True-but-not-asked</div>
+      <div class="def">Real fact from the passage, but does not answer this question.</div>
+      <div class="ex">
+        <strong>Fact:</strong> The museum opens at 9 a.m. and offers free tours.<br>
+        <strong>Q:</strong> Why do visitors line up early?<br>
+        <span class="label">Trap:</span> It opens at 9 a.m.<br>
+        <span class="right">Right:</span> They want seats for the first tour.
+      </div>
+    </div>
+
+    <div class="trap-card">
+      <div class="name">2. Plausible synonym swap</div>
+      <div class="def">Near-match word, but the meaning shifted just enough to be wrong.</div>
+      <div class="ex">
+        <strong>Fact:</strong> The road was narrow, so trucks moved slowly.<br>
+        <strong>Q:</strong> What does &ldquo;narrow&rdquo; mean here?<br>
+        <span class="label">Trap:</span> empty<br>
+        <span class="right">Right:</span> not wide
+      </div>
+    </div>
+
+    <div class="trap-card">
+      <div class="name">3. Overclaim</div>
+      <div class="def">Turns a limited fact into a sweeping rule using always, never, all, none.</div>
+      <div class="ex">
+        <strong>Fact:</strong> Some seedlings grew faster in shade.<br>
+        <strong>Q:</strong> What does the sentence suggest?<br>
+        <span class="label">Trap:</span> Shade is always best for every plant.<br>
+        <span class="right">Right:</span> Shade helped some seedlings grow faster.
+      </div>
+    </div>
+
+    <div class="trap-card">
+      <div class="name">4. Detail outside passage</div>
+      <div class="def">Adds information the passage never provides, even if it sounds reasonable.</div>
+      <div class="ex">
+        <strong>Fact:</strong> The chef chilled the dough before baking.<br>
+        <strong>Q:</strong> Why was the dough chilled?<br>
+        <span class="label">Trap:</span> Because butter melts at a specific temperature.<br>
+        <span class="right">Right:</span> The passage does not say.
+      </div>
+    </div>
+
+    <div class="trap-card full">
+      <div class="name">5. Half right</div>
+      <div class="def">One piece is true, the other piece is wrong. Looks correct on a quick skim.</div>
+      <div class="ex">
+        <strong>Fact:</strong> The bus was late because traffic blocked the main street.<br>
+        <strong>Q:</strong> Why was the bus late?<br>
+        <span class="label">Trap:</span> Traffic blocked the street after the driver took a shortcut.<br>
+        <span class="right">Right:</span> Traffic blocked the main street.
+      </div>
+    </div>
+
+  </div>
+
+  <h3 style="margin-top: 14pt;">Question type to most likely trap</h3>
+  <table style="width: 100%; border-collapse: collapse; font-size: 9.5pt;">
+    <tr style="background: #f1f5f9;">
+      <th style="text-align:left; padding: 4pt 6pt; color: #0a1628; font-size: 8.5pt; text-transform: uppercase; letter-spacing: 0.4pt;">Question type</th>
+      <th style="text-align:left; padding: 4pt 6pt; color: #0a1628; font-size: 8.5pt; text-transform: uppercase; letter-spacing: 0.4pt;">Trap to expect</th>
+      <th style="text-align:left; padding: 4pt 6pt; color: #0a1628; font-size: 8.5pt; text-transform: uppercase; letter-spacing: 0.4pt;">Kill move</th>
+    </tr>
+    <tr><td style="padding: 4pt 6pt; border-bottom: 1px solid #e2e8f0;"><strong>Detail</strong></td><td style="padding: 4pt 6pt; border-bottom: 1px solid #e2e8f0;">True-but-not-asked, Half right</td><td style="padding: 4pt 6pt; border-bottom: 1px solid #e2e8f0;">Match the question stem word-for-word.</td></tr>
+    <tr><td style="padding: 4pt 6pt; border-bottom: 1px solid #e2e8f0;"><strong>Main idea</strong></td><td style="padding: 4pt 6pt; border-bottom: 1px solid #e2e8f0;">Overclaim, Half right</td><td style="padding: 4pt 6pt; border-bottom: 1px solid #e2e8f0;">Cross out absolutes. Pick the choice that fits the whole passage.</td></tr>
+    <tr><td style="padding: 4pt 6pt; border-bottom: 1px solid #e2e8f0;"><strong>Vocab-in-context</strong></td><td style="padding: 4pt 6pt; border-bottom: 1px solid #e2e8f0;">Plausible synonym swap</td><td style="padding: 4pt 6pt; border-bottom: 1px solid #e2e8f0;">Re-read the sentence with the choice plugged in.</td></tr>
+    <tr><td style="padding: 4pt 6pt; border-bottom: 1px solid #e2e8f0;"><strong>Inference</strong></td><td style="padding: 4pt 6pt; border-bottom: 1px solid #e2e8f0;">Detail outside passage, Overclaim</td><td style="padding: 4pt 6pt; border-bottom: 1px solid #e2e8f0;">Demand passage support, not common-sense support.</td></tr>
+    <tr><td style="padding: 4pt 6pt;"><strong>EXCEPT / NOT</strong></td><td style="padding: 4pt 6pt;">True-but-not-asked</td><td style="padding: 4pt 6pt;">Three choices match the passage. Pick the one that does not.</td></tr>
+  </table>
+</div>
+
+<!-- ============== PAGE 3: 3 WORKED PASSAGES ============== -->
+<div class="page">
+  <h2>Worked passages: see the elimination on paper</h2>
+  <p>Three passages, every wrong choice labeled with its trap pattern. Read like an answer key, not an article.</p>
+
+  <div class="passage">
+    <div class="ptitle">Passage 1: Public Libraries and Local Support<span class="qtype">Detail</span></div>
+    <p>In the late nineteenth and early twentieth centuries, many towns began opening public libraries. Before that shift, books were often expensive and hard for ordinary workers to borrow. Reformers argued that free access to reading could help people strengthen job skills, learn about government, and enjoy literature at home. Some wealthy donors paid for library buildings, but local communities still had to hire staff, buy books, and maintain the property. Because of that shared investment, libraries became more than quiet storage rooms. They developed into civic spaces where children studied after school, adults read newspapers, and neighbors gathered for lectures or reading groups.</p>
+    <div class="question">According to the passage, what did local communities still need to do after a donor paid for a library building?</div>
+    <ul class="choices">
+      <li class="wrong"><span class="opt">A.</span>Host lectures and reading groups for neighbors<span class="traplabel">True-but-not-asked</span><span class="why">Lectures are mentioned, but the question asks what communities had to do, not what happened inside.</span></li>
+      <li class="correct"><span class="opt">B.</span>Hire staff, buy books, and maintain the property<span class="check">&#10003;</span></li>
+      <li class="wrong"><span class="opt">C.</span>Follow a national rule that forced every town to open one<span class="traplabel">Overclaim</span><span class="why">No national rule is mentioned. The choice invents a sweeping requirement.</span></li>
+      <li class="wrong"><span class="opt">D.</span>Construct the building with donated labor<span class="traplabel">Half right</span><span class="why">Buildings are discussed, but the passage says donors paid for them, not that labor was donated.</span></li>
+    </ul>
+  </div>
+
+  <div class="passage">
+    <div class="ptitle">Passage 2: What Public Hearings Do<span class="qtype">Main idea</span></div>
+    <p>Before a city council approves a major zoning change or a new public project, it often holds a public hearing. At the hearing, residents can ask questions, express concerns, or support the proposal in a formal setting. Officials may also hear practical information that does not appear in written reports, such as traffic patterns near a school or noise near a neighborhood park. A hearing does not mean every speaker gets the preferred outcome, and it does not replace the final vote by elected leaders. Instead, it gives decision makers a clearer view of how a plan may affect daily life in the community.</p>
+    <div class="question">What is the main idea of the passage?</div>
+    <ul class="choices">
+      <li class="wrong"><span class="opt">A.</span>Public hearings guarantee that residents control the final vote.<span class="traplabel">Overclaim</span><span class="why">The passage says residents may speak, not that they control the vote.</span></li>
+      <li class="wrong"><span class="opt">B.</span>Public hearings are mostly formal ceremonies held after projects are approved.<span class="traplabel">Half right</span><span class="why">Hearings are formal, but the passage says they happen before approval, not after.</span></li>
+      <li class="correct"><span class="opt">C.</span>Public hearings give officials local input before final decisions are made.<span class="check">&#10003;</span></li>
+      <li class="wrong"><span class="opt">D.</span>Public hearings exist mainly to train residents for elected office.<span class="traplabel">Detail outside passage</span><span class="why">Training residents for office is never mentioned in the passage.</span></li>
+    </ul>
+  </div>
+
+  <div class="passage">
+    <div class="ptitle">Passage 3: Why Deserts Cool Quickly<span class="qtype">Vocabulary-in-context</span></div>
+    <p>Deserts are known for intense daytime heat, but many deserts become surprisingly cool after sunset. One reason is that dry air holds less water vapor than humid air. Water vapor can help trap heat near the ground, so when little of it is present, warmth escapes more easily into the atmosphere at night. In addition, deserts often have few clouds, which means less insulation overhead after the sun goes down. Sand and rock may heat quickly during the day, yet they do not retain that warmth for long once the source of heat is gone. As a result, daily temperature changes in deserts can be dramatic.</p>
+    <div class="question">In the passage, the word &ldquo;retain&rdquo; most nearly means</div>
+    <ul class="choices">
+      <li class="wrong"><span class="opt">A.</span>hide<span class="traplabel">Detail outside passage</span><span class="why">The passage explains heat storage, not concealment.</span></li>
+      <li class="wrong"><span class="opt">B.</span>measure<span class="traplabel">Plausible synonym swap</span><span class="why">&ldquo;Measure&rdquo; sounds scientific, but here the word means to hold onto something.</span></li>
+      <li class="wrong"><span class="opt">C.</span>release<span class="traplabel">Half right</span><span class="why">The passage does describe heat escaping later, but &ldquo;retain&rdquo; means the opposite of release.</span></li>
+      <li class="correct"><span class="opt">D.</span>keep<span class="check">&#10003;</span></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============== PAGE 4: 4-PASSAGE DRILL ============== -->
+<div class="page drill-passage">
+  <h2>Drill set: you solve, no answers on this page</h2>
+  <p style="font-size: 9pt;">Mark the trap label next to each wrong choice you eliminate. Underline the line that proves your pick. Answer key on page 5.</p>
+
+  <div class="passage">
+    <div class="ptitle">Passage 4: Organizing Shared Tools<span class="qtype">Inference</span></div>
+    <p>At a neighborhood print shop, employees share paper cutters, rulers, and specialty hole punches throughout the day. For months, staff members set these tools down at whatever table was nearby when a rush order arrived. The habit seemed harmless, but it created delays when the next worker had to search several stations before finishing a job. The manager responded by labeling storage spots and adding a simple sign-out board for the most frequently borrowed tools. Within two weeks, fewer orders were late, and employees spent less time interrupting one another to ask where an item had gone. The new system did not add equipment, but it made the existing equipment easier to find.</p>
+    <div class="question">Which of the following can reasonably be inferred about the shop before the new system was introduced?</div>
+    <ul class="choices drill">
+      <li><span class="opt">A.</span>The shop needed to buy many more tools.</li>
+      <li><span class="opt">B.</span>Workers often lost time looking for shared tools.</li>
+      <li><span class="opt">C.</span>Every employee ignored written directions on purpose.</li>
+      <li><span class="opt">D.</span>The manager had recently reduced the number of orders.</li>
+    </ul>
+  </div>
+
+  <div class="passage">
+    <div class="ptitle">Passage 5: Life on a River Delta<span class="qtype">EXCEPT / NOT</span></div>
+    <p>River deltas form where a river slows and drops much of the sand, silt, and clay it has carried downstream. Over time, these materials build low, flat land crossed by branching channels of water. Many deltas become valuable places for farming because the deposited soil is often fertile. They can also support fishing, transportation, and dense plant growth. At the same time, deltas are changeable landscapes. A channel may shift course, floodwater may spread widely, and coastlines may slowly move as sediment builds or washes away. People who live in deltas often benefit from abundant natural resources, but they also must adapt to a landscape that does not stay fixed.</p>
+    <div class="question">According to the passage, river deltas often have all of the following EXCEPT</div>
+    <ul class="choices drill">
+      <li><span class="opt">A.</span>fertile soil</li>
+      <li><span class="opt">B.</span>branching water channels</li>
+      <li><span class="opt">C.</span>tall cliffs of exposed rock</li>
+      <li><span class="opt">D.</span>convenient conditions for transport</li>
+    </ul>
+  </div>
+
+  <div class="passage">
+    <div class="ptitle">Passage 6: How Skin Repairs a Cut<span class="qtype">Detail</span></div>
+    <p>When skin is cut, the body begins repairs almost immediately. First, blood vessels narrow for a short time, which helps reduce bleeding. Platelets then gather at the injury and form a clot, creating a temporary seal over the opening. As the clot dries, it becomes a scab that protects the area from dirt and germs. Beneath that cover, new skin cells multiply and move across the damaged surface. Small blood vessels also regrow, bringing oxygen and nutrients that support healing. Minor cuts usually mend on their own, although deeper wounds may require medical care because the body has more tissue to rebuild.</p>
+    <div class="question">According to the passage, what forms first to create a temporary seal over a cut?</div>
+    <ul class="choices drill">
+      <li><span class="opt">A.</span>A dry scab that appears before any clot</li>
+      <li><span class="opt">B.</span>A bandage-like layer of new skin cells</li>
+      <li><span class="opt">C.</span>A clot made by gathered platelets</li>
+      <li><span class="opt">D.</span>A new layer of muscle tissue</li>
+    </ul>
+  </div>
+
+  <div class="passage">
+    <div class="ptitle">Passage 7: Sequence Words in Instructions<span class="qtype">Main idea</span></div>
+    <p>Clear instructions depend on more than correct facts. They also depend on order. Writers often use sequence words such as first, next, then, and finally to guide readers through a process one step at a time. These cues are especially useful when a task includes several actions that must occur in the proper order, such as assembling furniture or following a recipe. Without sequence words, even accurate directions can feel crowded or confusing because readers may not know which action belongs where. Strong instruction writing does not need fancy language. It needs structure that helps a reader move from one step to the next without guessing.</p>
+    <div class="question">What is the main idea of the passage?</div>
+    <ul class="choices drill">
+      <li><span class="opt">A.</span>Long instructions are always better than short ones.</li>
+      <li><span class="opt">B.</span>Sequence words are used only in school writing.</li>
+      <li><span class="opt">C.</span>Instruction writing succeeds mainly when it sounds formal.</li>
+      <li><span class="opt">D.</span>Good instructions rely on sequence words to make the order of steps clear.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============== PAGE 5: ANSWER KEY + CUE CARD ============== -->
+<div class="page">
+  <h2>Answer key with trap diagnosis</h2>
+  <p>The trap pattern that caught you is your study plan. If the same trap repeats, drill that one until you spot it cold.</p>
+
+  <div class="key-row">
+    <div class="num">4</div>
+    <div class="ans">
+      <span class="correct">B. Workers often lost time looking for shared tools.</span>
+      <div class="traps">
+        <span class="label">A. Half right.</span> Tools were part of the problem, but the issue was organization, not a shortage.<br>
+        <span class="label">C. Overclaim.</span> The passage describes a messy habit, not deliberate refusal by every employee.<br>
+        <span class="label">D. Detail outside passage.</span> No reduction in orders is mentioned anywhere.
+      </div>
+    </div>
+  </div>
+
+  <div class="key-row">
+    <div class="num">5</div>
+    <div class="ans">
+      <span class="correct">C. tall cliffs of exposed rock.</span>
+      <div class="traps">
+        <span class="label">A. True-but-not-asked.</span> Fertile soil is in the passage, so it cannot be the EXCEPT answer.<br>
+        <span class="label">B. True-but-not-asked.</span> Branching channels are directly described in the passage.<br>
+        <span class="label">D. True-but-not-asked.</span> Transportation is listed as a benefit of deltas.
+      </div>
+    </div>
+  </div>
+
+  <div class="key-row">
+    <div class="num">6</div>
+    <div class="ans">
+      <span class="correct">C. A clot made by gathered platelets.</span>
+      <div class="traps">
+        <span class="label">A. Half right.</span> A scab does form, but only after the clot dries.<br>
+        <span class="label">B. Half right.</span> New skin cells appear later in healing, not as the first temporary seal.<br>
+        <span class="label">D. Detail outside passage.</span> Muscle tissue is not part of the process described.
+      </div>
+    </div>
+  </div>
+
+  <div class="key-row">
+    <div class="num">7</div>
+    <div class="ans">
+      <span class="correct">D. Good instructions rely on sequence words to make the order of steps clear.</span>
+      <div class="traps">
+        <span class="label">A. Overclaim.</span> The passage discusses clarity and order, not a rule that longer is always better.<br>
+        <span class="label">B. Detail outside passage.</span> The passage gives general uses for sequence words, not only school writing.<br>
+        <span class="label">C. Plausible synonym swap.</span> Formal language sounds organized, but the passage says structure, not formality, creates clarity.
+      </div>
+    </div>
+  </div>
+
+  <div class="cue-card">
+    <h3>Test-day cue card</h3>
+    <ol>
+      <li><strong>Read the question first.</strong></li>
+      <li><strong>Mark key words</strong> in the stem, especially NOT, EXCEPT, and BEST.</li>
+      <li><strong>Read the passage</strong> for purpose, tone, and proof.</li>
+      <li><strong>Predict the answer</strong> in your own words before checking the choices.</li>
+      <li><strong>Eliminate trap choices</strong> that overclaim or go outside the passage.</li>
+      <li><strong>Verify with one line</strong> from the passage before you submit.</li>
+    </ol>
+  </div>
+
+  <p class="footer-meta">
+    asvabhero.com &middot; Free for personal use. Not affiliated with the U.S. Department of Defense.<br>
+    More tools: <a href="https://asvabhero.com/calculator">asvabhero.com/calculator</a> &middot; <a href="https://asvabhero.com/asvab-paragraph-comprehension-tips">PC tips article</a> &middot; <a href="https://asvabhero.com/study-plan.pdf">30-day study plan</a>
+  </p>
+</div>
+
+</body>
+</html>

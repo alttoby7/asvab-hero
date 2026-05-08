@@ -388,9 +388,9 @@ export default function ASVABParagraphComprehensionTipsPage() {
 
         <section className="my-8 not-prose">
           <EmailCapture
-            headline="Read like a recruit — paragraph-comprehension drills + 30-day plan"
-            subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
-            cta="Email me the plan"
+            headline="Free PC Trap-Pattern Pack: triage card + drill set"
+            subhead="One-page triage card, the 5 wrong-answer traps with kill moves, three worked passages, and a four-passage drill with answer key. Print it, drill it, take it to the test."
+            cta="Email me the PC pack"
             tag="pc-tips"
           />
         </section>
@@ -1098,9 +1098,9 @@ export default function ASVABParagraphComprehensionTipsPage() {
         <section className="mt-10 not-prose">
           <EmailCapture
             variant="inline"
-            headline="Read like a recruit — paragraph-comprehension drills + 30-day plan"
-            subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
-            cta="Email me the plan"
+            headline="Free PC Trap-Pattern Pack: triage card + drill set"
+            subhead="One-page triage card, the 5 wrong-answer traps with kill moves, three worked passages, and a four-passage drill with answer key. Print it, drill it, take it to the test."
+            cta="Email me the PC pack"
             tag="pc-tips"
           />
         </section>

@@ -259,3 +259,30 @@ Hotfix to existing transactional templates 7, 8, 9, 10. Original bodies were aut
 ```html
 <!DOCTYPE html><html><body style="font-family:-apple-system,Segoe UI,Arial,sans-serif;max-width:600px;margin:0 auto;color:#1a1a1a;line-height:1.5;padding:24px 16px"><p>{{ .Subscriber.FirstName | default "Hey" }},</p><p>Two weeks in. If you have been drilling, you are probably ready to retake.</p><p><strong>The rules (every branch):</strong></p><ul><li>Retake 1: 1 month after first test</li><li>Retake 2: 1 month after retake 1</li><li>Retake 3 and beyond: 6 months</li></ul><p>One warning: if your score jumps 20+ points in 6 months, DoD requires a Confirmation Test (C-Test). Two outcomes:</p><ul><li>You match or beat your new score: it stands.</li><li>You score lower: they roll back to the lower one.</li></ul><p>This is the trap. Some test-takers cram, retake, score 30 points higher, then cannot replicate it on the C-Test. They lose both.</p><p>The fix: aim for a gain you can actually hold. +10 to +15 is safer than chasing +25.</p><p>ASVAB Hero Pro is built for exactly this 30-day score-push window. The adaptive engine targets your weakest topics, paces you toward a sustainable +10 to +15 gain, and gives you 7 days free to test whether it is working before you commit.</p><p style="text-align:center;margin:24px 0"><a href="https://asvabhero.com/pricing" style="display:inline-block;background:#f97316;color:#fff;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px">Start your 30-day score push</a></p><p>If you want to check your retake date first, use the <a href="https://asvabhero.com/asvab-retake-calculator" style="color:#f97316">retake calculator</a>.</p><p>If you are ready, schedule with your recruiter this week. The slot availability gets worse every month closer to summer.</p><p>Good luck out there.</p><p>&mdash; ASVAB Hero</p><p style="font-size:12px;color:#888;margin-top:32px;border-top:1px solid #eee;padding-top:16px"><a href="https://list.asvabhero.com/subscription/6cfd6a05-8ac2-498b-86ca-9bb381e1d006/{{ .Subscriber.UUID }}" style="color:#888">Unsubscribe</a> &middot; asvabhero.com</p></body></html>
 ```
+
+---
+
+## Listmonk #5 — `tx-pc-magnet`
+
+**Name:** `tx-pc-magnet`
+**Subject:** `Your PC trap-pattern pack is here`
+**Template ID (live):** 16
+**Tag mapping:** `pc-tips` → `LISTMONK_TEMPLATE_PC_TIPS=16` (set in CF Pages production env vars)
+
+```html
+<p>Hi there,</p>
+
+<p>Here is the Paragraph Comprehension Trap-Pattern Pack you signed up for. PC and Word Knowledge get doubled inside your AFQT through the VE composite, so a 5-point lift on PC is worth 10 AFQT points.</p>
+
+<p><a href="https://asvabhero.com/pc-trap-patterns.pdf" style="background:#f97316;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;display:inline-block;font-weight:600;">Download the PC Trap-Pattern Pack</a></p>
+
+<p>Inside: a 60-second triage card for the test-room moment, the 5 wrong-answer trap patterns with the kill move for each, three worked passages with every wrong choice labeled by trap type, a four-passage drill set, and a one-page test-day cue card.</p>
+
+<p>The drill page is the highest-leverage part. Solve the four passages, check the answer key, and watch which trap pattern catches you most. That trap is your study plan.</p>
+
+<p>If you want the full 30-day plan, it is at <a href="https://asvabhero.com/study-plan.pdf">asvabhero.com/study-plan.pdf</a>.</p>
+
+<p>Reply with your branch and target test date. I read every reply.</p>
+
+<p>Trish<br>ASVAB Hero</p>
+```
