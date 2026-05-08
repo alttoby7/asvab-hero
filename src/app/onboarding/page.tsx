@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useSession } from "@/hooks/useSession";
 import { OnboardingForm } from "@/components/onboarding/OnboardingForm";
 
-export default function OnboardingPage() {
+function OnboardingPageInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { session, loading: sessionLoading } = useSession();
@@ -43,5 +43,19 @@ export default function OnboardingPage() {
       </div>
       <OnboardingForm />
     </div>
+  );
+}
+
+export default function OnboardingPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="text-text-secondary text-sm">Loading…</div>
+        </div>
+      }
+    >
+      <OnboardingPageInner />
+    </Suspense>
   );
 }
