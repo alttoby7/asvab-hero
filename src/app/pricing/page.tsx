@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PricingPlans from "@/components/PricingPlans";
+import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -39,6 +40,16 @@ export default function PricingPage() {
         <p className="mt-3 text-text-secondary">
           Start with one free diagnostic. Upgrade for unlimited practice.
         </p>
+      </div>
+
+      <div className="mb-10">
+        <EmailCapture
+          variant="inline"
+          headline="Not ready to upgrade? Get the free 30-day plan first"
+          subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
+          cta="Email me the plan"
+          tag="pricing-exit"
+        />
       </div>
 
       <PricingPlans defaultBilling="annual" source="pricing_page" />

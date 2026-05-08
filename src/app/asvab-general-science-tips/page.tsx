@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import BrandHero from "@/components/BrandHero";
 
 export const metadata: Metadata = {
   title: "ASVAB General Science: 10 Tips to Unlock Combat Medic and Tech Jobs (2026)",
@@ -96,6 +97,14 @@ export default function ASVABGeneralScienceTipsPage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           10 ASVAB General Science Tips to Boost Your Composite Scores and Unlock Better Jobs
         </h1>
+
+        <BrandHero
+          src="/images/asvab-general-science-tips/hero.jpg"
+          alt="A future recruit working through ASVAB general science with a globe, periodic table, pendulum demonstration, and skeleton model on his desk."
+          width={1536}
+          height={1024}
+          className="my-6 overflow-hidden rounded-lg border border-navy-border"
+        />
 
         <p className="mt-4 text-text-secondary">
           General Science doesn&apos;t count toward your AFQT. So why study it?

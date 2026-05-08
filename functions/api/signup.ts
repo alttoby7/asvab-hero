@@ -4,7 +4,36 @@ interface Env {
   LISTMONK_API_TOKEN: string;
   LISTMONK_LIST_ID: string;
   LISTMONK_WELCOME_TEMPLATE_ID?: string;
+  // Per-tag overrides (optional). If unset, falls back to LISTMONK_WELCOME_TEMPLATE_ID.
+  // Add the corresponding env vars in Cloudflare Pages settings as you ship subtest magnets.
+  LISTMONK_TEMPLATE_AR_TIPS?: string;
+  LISTMONK_TEMPLATE_WK_TIPS?: string;
+  LISTMONK_TEMPLATE_GT_BOOSTER?: string;
   RATE_LIMIT_KV?: KVNamespace;
+}
+
+/**
+ * Server-side mapping from signup `tag` to Listmonk transactional template
+ * env var name. Add entries here as subtest-specific magnets ship. Client
+ * cannot specify template_id directly — must go through this map.
+ */
+const TAG_TEMPLATE_ENV_MAP: Record<string, keyof Env> = {
+  "ar-tips": "LISTMONK_TEMPLATE_AR_TIPS",
+  "wk-tips": "LISTMONK_TEMPLATE_WK_TIPS",
+  "gt-calculator": "LISTMONK_TEMPLATE_GT_BOOSTER",
+};
+
+function resolveWelcomeTemplateId(env: Env, tag: string | undefined): number | null {
+  if (tag && TAG_TEMPLATE_ENV_MAP[tag]) {
+    const overrideKey = TAG_TEMPLATE_ENV_MAP[tag];
+    const overrideVal = env[overrideKey];
+    if (typeof overrideVal === "string" && overrideVal.trim()) {
+      const id = parseInt(overrideVal.trim(), 10);
+      if (Number.isFinite(id)) return id;
+    }
+  }
+  const fallback = parseInt((env.LISTMONK_WELCOME_TEMPLATE_ID || "").trim(), 10);
+  return Number.isFinite(fallback) ? fallback : null;
 }
 
 interface SubscribeBody {
@@ -134,11 +163,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       return json({ error: "upstream_error", status: upstream.status }, 502, cors);
     }
 
-    const welcomeTemplateId = parseInt(
-      (env.LISTMONK_WELCOME_TEMPLATE_ID || "").trim(),
-      10
-    );
-    if (Number.isFinite(welcomeTemplateId)) {
+    const welcomeTemplateId = resolveWelcomeTemplateId(env, body.tag);
+    if (welcomeTemplateId !== null) {
       try {
         const tx = await fetch(`${LISTMONK_URL}/api/tx`, {
           method: "POST",

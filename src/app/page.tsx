@@ -1,5 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
+import BrandHero from "@/components/BrandHero";
+
+export const metadata: Metadata = {
+  title: "ASVAB Calculator 2026: AFQT, GT & Line Scores (All Branches)",
+  description:
+    "Free ASVAB calculator for Army, Navy, Air Force, Marines, Coast Guard & Space Force. Get your AFQT percentile, GT score, and line scores instantly — see every job you qualify for.",
+  alternates: {
+    canonical: "https://asvabhero.com",
+  },
+};
 
 export default function HomePage() {
   return (
@@ -18,17 +29,18 @@ export default function HomePage() {
               <span className="text-accent">●</span> Free ASVAB prep platform
             </p>
             <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-text-primary sm:text-5xl lg:text-6xl">
-              Score high enough for the
-              <br className="hidden sm:block" />{" "}
+              ASVAB calculator for{" "}
               <span className="relative inline-block">
-                <span className="relative z-10 text-accent">military job</span>
+                <span className="relative z-10 text-accent">every branch</span>
                 <span className="absolute inset-x-0 bottom-1 -z-0 h-2 bg-accent/15" />
-              </span>{" "}
-              you actually want.
+              </span>
+              <br className="hidden sm:block" />{" "}
+              AFQT, GT &amp; line scores.
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary">
-              Take a 30-question diagnostic, see your AFQT estimate and weak topics,
-              then drill the gaps. 769 practice questions across all 9 subtests.
+              Army, Navy, Air Force, Marines, Coast Guard, Space Force — plug in
+              your subtest scores and see every job you qualify for. Or take the
+              30-question diagnostic to estimate your AFQT first.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Link
@@ -50,6 +62,16 @@ export default function HomePage() {
             <p className="mt-6 font-mono text-xs uppercase tracking-wider text-text-tertiary">
               30 questions · 36 minutes · no signup required
             </p>
+          </div>
+          <div className="mx-auto mt-16 max-w-4xl">
+            <BrandHero
+              src="/images/generated/asvab-home-hero.png"
+              alt="A future US military recruit studying for the ASVAB at her kitchen table — practice book open, calculator and pencil in hand, focused on the work."
+              width={1536}
+              height={1024}
+              priority
+              className="overflow-hidden rounded-2xl border border-navy-border shadow-2xl shadow-black/40"
+            />
           </div>
         </div>
       </section>

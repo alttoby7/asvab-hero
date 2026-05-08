@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import BrandHero from "@/components/BrandHero";
 
 export const metadata: Metadata = {
   title: "About",
@@ -13,6 +14,13 @@ export default function AboutPage() {
       <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
         About ASVAB Hero
       </h1>
+      <BrandHero
+        src="/images/generated/asvab-about-hero.png"
+        alt="A future military recruit studying in a small library — the click-moment when a hard concept becomes clear."
+        width={1536}
+        height={1024}
+        className="mt-8 overflow-hidden rounded-2xl border border-navy-border shadow-2xl shadow-black/40"
+      />
       <div className="mt-8 space-y-6 text-text-secondary leading-relaxed">
         <p>
           ASVAB Hero was built to solve a simple problem: understanding your

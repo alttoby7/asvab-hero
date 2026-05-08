@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "9 ASVAB Word Knowledge Tips That Actually Work | ASVAB Hero",
@@ -454,6 +455,15 @@ export default function ASVABWordKnowledgeTipsPage() {
           &ldquo;kind/generous&rdquo; words reinforces both groups and prepares
           you for the Opposite trap (Tip 4).
         </p>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="100 ASVAB Word Knowledge power words — the high-frequency list"
+            subhead="Real vocab from the ASVAB pool with one-line definitions and memory hooks. The military-flavored words, the sneaky synonyms, and the roots that decode the rest."
+            cta="Email me the word list"
+            tag="wk-tips"
+          />
+        </section>
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           4. Recognize the 4 Wrong-Answer Traps on WK Questions
@@ -1171,6 +1181,16 @@ export default function ASVABWordKnowledgeTipsPage() {
             </p>
           </div>
         </div>
+
+        <section className="mt-10 not-prose">
+          <EmailCapture
+            variant="inline"
+            headline="100 ASVAB Word Knowledge power words — the high-frequency list"
+            subhead="Real vocab from the ASVAB pool with one-line definitions and memory hooks. The military-flavored words, the sneaky synonyms, and the roots that decode the rest."
+            cta="Email me the word list"
+            tag="wk-tips"
+          />
+        </section>
 
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">
           <h3 className="font-display text-xl font-bold text-text-primary">

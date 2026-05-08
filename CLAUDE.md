@@ -166,7 +166,44 @@ Pending:
 - **MAGE open bug:** AF job thresholds are 1–99 percentile but `calculateAirForceComposites()` returns raw sums → AF job matching is unreliable. Needs normalization table (like PAY97). Deferred.
 - **Missing pages:** `/marines-asvab-calculator`, `/coast-guard-asvab-calculator`, `/space-force-asvab-calculator` — follow `/army-asvab-calculator` pattern
 
-## Marketing Strategy (2026-04-28)
+## Conversion Boost (2026-05-08)
+
+Five-phase funnel-fix sprint after audit found **only 4 Listmonk subscribers in 28 days** despite 543 sessions. Plan: `~/.claude/plans/create-subagents-to-plan-zesty-umbrella.md`. Pickup doc: `CONTINUITY-conversion-boost.md`.
+
+**Code shipped (not yet pushed/deployed):**
+
+- **Phase A — Email funnel leak fixes**
+  - `src/components/EmailCapture.tsx` — IntersectionObserver (50% threshold, fires once); kills the `/calculator` ghost-impression bug (115 mount-fires → 0 conversions). New `withScoreSignal` prop fires `email_capture_visible_with_score` event.
+  - `src/lib/analytics.ts` — added `EmailCaptureVisibleWithScore` to `FunnelEvents`.
+  - `src/components/Calculator.tsx` — second EmailCapture below `<ResultCard>` rendered only when `afqt > 0`, with score-interpolated headline (`Your AFQT is {afqt} — get the 30-day plan to push it to {afqt+10}`), tag `calculator-result`.
+  - `src/app/signup/page.tsx` — fire-and-forget `POST /api/signup` after `auth.signUp` success with tag `supabase-signup`. Closes the leak where Pro signups never reached Listmonk.
+  - `functions/api/signup.ts` — server-side `TAG_TEMPLATE_ENV_MAP` resolves welcome template from `body.tag` → env var (`LISTMONK_TEMPLATE_AR_TIPS`, `LISTMONK_TEMPLATE_WK_TIPS`, `LISTMONK_TEMPLATE_GT_BOOSTER`). Falls back to `LISTMONK_WELCOME_TEMPLATE_ID`. Client cannot inject template_id.
+
+- **Phase B1 — Bulk EmailCapture mount on 13 pages** (each with unique tag for segmentation):
+  - Calculators: `practice-test`, `gt-score-calculator`, `asvab-line-score-calculator`, `asvab-composite-score-calculator`, `asvab-retake-calculator`, `army-asvab-calculator`, `navy-asvab-score-calculator`, `air-force-asvab-calculator`
+  - Exit-ramp inline mounts above pricing UI: `pricing` (tag `pricing-exit`), `upgrade` (tag `upgrade-exit`)
+  - Subtest tip pages with mid + end double mount: `asvab-arithmetic-reasoning-tips` (tag `ar-tips`), `asvab-word-knowledge-tips` (tag `wk-tips`), `asvab-paragraph-comprehension-tips` (tag `pc-tips`)
+
+- **Phase B2 — GSC striking-distance title rewrites**
+  - `src/app/page.tsx` (homepage) — title now `ASVAB Calculator 2026: AFQT, GT & Line Scores (All Branches)` to capture branch-qualified queries that ranked top-10 with 0% CTR.
+  - `src/app/how-to-retake-the-asvab/page.tsx` — title leads with `ASVAB Retake Policy 2026` (was getting 0 clicks across 883 impressions at pos 7.4).
+  - `src/app/asvab-gt-score/page.tsx` — title surfaces `VE+AR Formula, Army Cutoffs & How to Raise It` (was 0.30% CTR at pos 9.7).
+
+- **Phase C — Card-required 7-day Stripe trial (code-only, NOT deployed)**
+  - `supabase/functions/stripe-checkout/index.ts` — adds `subscription_data[trial_period_days]: 7` and `payment_method_collection: always` ONLY when `tier === "monthly"` AND `!profile.stripe_subscription_id`. Annual tier always direct-charges. Returning canceled customers don't get a second trial.
+  - `supabase/functions/stripe-webhook/index.ts` — `checkout.session.completed` now syncs trial-starters to Listmonk with tag `trial-start`. New `customer.subscription.trial_will_end` branch sends Listmonk transactional via `LISTMONK_TEMPLATE_TRIAL_ENDING` env var (Stripe fires this 3 days before trial ends).
+  - `src/components/PricingPlans.tsx` — monthly CTA now `Start 7-day free trial — then $9.99/mo` with fine-print line. Annual unchanged.
+  - `docs/email-infrastructure.md` — Trial setup section appended documenting webhook events + new Supabase function secrets.
+  - **Tracey's existing subscription is protected**: existing 409 block on active/lifetime users prevents her from hitting checkout; even if she did, `isFirstTimeSubscriber` is false because her `stripe_subscription_id` is set.
+
+- **Phase D — Three subtest lead magnets** (PDFs in `public/`, all built via `scripts/build-*.sh` with headless Chrome, all self-contained):
+  - `public/ar-formula-card.pdf` (147 KB, 3 pages) — PEMDAS, fraction-decimal-percent table, distance/rate/time, work-rate, mixture, percent change, ratios, 8 word-problem patterns, unit conversions, test-day shortcuts. Source: `scripts/ar-formula-card.html`. Mounted on `/asvab-arithmetic-reasoning-tips` via tag `ar-tips`.
+  - `public/wk-100-words.pdf` (228 KB, 4 pages) — 100 high-frequency vocab + 10 word roots + 5-question quiz. Source: `scripts/wk-100-words.html`. Mounted on `/asvab-word-knowledge-tips` via tag `wk-tips`.
+  - `public/gt-booster-guide.pdf` (147 KB, 6 pages) — formula, MOS cutoffs by tier (100/107/110/117+), 4 levers, 14-day push schedule (week-grid), retake math, one-page cheat sheet. Source: `scripts/gt-booster-guide.html`. Mounted on `/gt-score-calculator` via tag `gt-calculator`.
+
+**Verification status:** All `npx tsc --noEmit` checks exit 0. Frontend changes ready to push. Edge function changes ready to deploy. PDFs built and committed (CF Pages serves from `public/`).
+
+
 
 Full memo: `docs/marketing-strategy-2026-04-28.md`. Quick state:
 

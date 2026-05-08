@@ -45,10 +45,17 @@ Deno.serve(async (req) => {
 
     const { data: profile } = await supabaseAdmin
       .from("profiles")
-      .select("email,stripe_customer_id,billing_status")
+      .select("email,stripe_customer_id,stripe_subscription_id,billing_status")
       .eq("user_id", userId)
       .single();
     if (!profile) return json(404, { error: "profile_not_found" });
+    // Trial rules:
+    //   - Active/lifetime users are blocked from checkout entirely (already Pro).
+    //   - First-time monthly subscribers get a 7-day card-required trial via
+    //     `subscription_data[trial_period_days]=7` below.
+    //   - Returning users (any prior `stripe_subscription_id`, including canceled)
+    //     get charged immediately at checkout — one trial per user, period.
+    //   - Annual tier never gets a trial; direct charge.
     if (profile.billing_status === "active" || profile.billing_status === "lifetime") {
       return json(409, { error: "already_pro" });
     }
@@ -67,7 +74,9 @@ Deno.serve(async (req) => {
     }
 
     const returnPath = body.returnPath ?? "/account/billing";
-    const session = await stripeRequest<{ id: string; url: string }>("POST", "/checkout/sessions", {
+
+    // Build checkout params; conditionally add trial only for first-time MONTHLY subs.
+    const checkoutParams: Record<string, unknown> = {
       mode: "subscription",
       customer: customerId,
       "line_items[0][price]": priceId,
@@ -77,7 +86,20 @@ Deno.serve(async (req) => {
       allow_promotion_codes: "true",
       "subscription_data[metadata][user_id]": userId,
       "metadata[user_id]": userId,
-    });
+    };
+
+    const isFirstTimeSubscriber = !profile.stripe_subscription_id;
+    if (tier === "monthly" && isFirstTimeSubscriber) {
+      checkoutParams["subscription_data[trial_period_days]"] = "7";
+      // Required so card is captured up front even with a trial.
+      checkoutParams["payment_method_collection"] = "always";
+    }
+
+    const session = await stripeRequest<{ id: string; url: string }>(
+      "POST",
+      "/checkout/sessions",
+      checkoutParams,
+    );
 
     return json(200, { url: session.url });
   } catch (err) {

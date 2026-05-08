@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import PricingPlans from "@/components/PricingPlans";
 import BrandHero from "@/components/BrandHero";
+import EmailCapture from "@/components/EmailCapture";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
@@ -85,6 +86,16 @@ function UpgradeContent() {
           </Link>
         </div>
       )}
+
+      <div className="mb-10">
+        <EmailCapture
+          variant="inline"
+          headline="Not ready to upgrade? Get the free 30-day plan first"
+          subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
+          cta="Email me the plan"
+          tag="upgrade-exit"
+        />
+      </div>
 
       {/* Plan grid */}
       <PricingPlans defaultBilling="annual" source={from ?? "upgrade_page"} />

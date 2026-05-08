@@ -5,6 +5,7 @@ import Calculator from "@/components/Calculator";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 import BranchCalculatorView from "@/components/BranchCalculatorView";
+import EmailCapture from "@/components/EmailCapture";
 import type { MilitaryJob } from "@/types";
 
 import navyJobs from "@/data/navy-jobs.json";
@@ -156,6 +157,15 @@ export default function NavyCalculatorPage() {
             </div>
           ))}
         </div>
+      </section>
+
+      <section className="mt-10">
+        <EmailCapture
+          headline="Land the Navy rating you want — free 30-day study plan"
+          subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
+          cta="Email me the plan"
+          tag="navy-calculator"
+        />
       </section>
 
       <section className="mt-8 rounded-xl border border-accent/30 bg-navy-light p-6 text-center">

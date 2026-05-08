@@ -5,9 +5,9 @@ import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
-  title: "What GT Score Do You Need? Army Jobs at 100, 107, 110+ (2026)",
+  title: "ASVAB GT Score 2026: VE+AR Formula, Army Cutoffs & How to Raise It",
   description:
-    "GT = VE + AR. Army needs 100 for most tech jobs, 107 for Rangers, 110 for Cyber / OCS / Green to Gold. Raise WK by 1 point → GT jumps 2. Full tables, branch differences, and how to close the gap.",
+    "GT = VE + AR. Army needs 100 for most tech jobs, 107 for Rangers, 110 for Cyber, OCS, Green to Gold and SF 18X. Full job table, how it's calculated, and how to raise WK to push GT up fast.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-gt-score",
   },

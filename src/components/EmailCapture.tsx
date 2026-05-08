@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
 
 interface EmailCaptureProps {
@@ -9,6 +9,8 @@ interface EmailCaptureProps {
   cta?: string;
   tag?: string;
   variant?: "inline" | "card";
+  /** When true, also fires email_capture_visible_with_score on first viewport entry. */
+  withScoreSignal?: boolean;
 }
 
 const ENDPOINT =
@@ -22,14 +24,52 @@ export default function EmailCapture({
   cta = "Send it to me",
   tag = "asvab-study-plan",
   variant = "card",
+  withScoreSignal = false,
 }: EmailCaptureProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
+  const containerRef = useRef<HTMLElement | null>(null);
+  const firedShownRef = useRef(false);
 
+  // Fire `email_capture_shown` only when the form actually enters the viewport
+  // (50% threshold, once per mount). Avoids ghost impressions from off-screen
+  // mounts — see /calculator's 115 mount-fires with 0 conversions.
   useEffect(() => {
-    trackEvent(FunnelEvents.EmailCaptureShown, { source: tag });
-  }, [tag]);
+    const node = containerRef.current;
+    if (!node) return;
+    if (typeof IntersectionObserver === "undefined") {
+      // Fallback for ancient browsers / SSR-only render: fire on mount.
+      if (!firedShownRef.current) {
+        firedShownRef.current = true;
+        trackEvent(FunnelEvents.EmailCaptureShown, { source: tag });
+        if (withScoreSignal) {
+          trackEvent(FunnelEvents.EmailCaptureVisibleWithScore, { source: tag });
+        }
+      }
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting && !firedShownRef.current) {
+            firedShownRef.current = true;
+            trackEvent(FunnelEvents.EmailCaptureShown, { source: tag });
+            if (withScoreSignal) {
+              trackEvent(FunnelEvents.EmailCaptureVisibleWithScore, {
+                source: tag,
+              });
+            }
+            observer.disconnect();
+            break;
+          }
+        }
+      },
+      { threshold: 0.5 }
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [tag, withScoreSignal]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -118,7 +158,7 @@ export default function EmailCapture({
       : "rounded-lg border border-navy-border bg-navy-light p-4";
 
   return (
-    <section className={container}>
+    <section ref={containerRef} className={container}>
       <h3 className="font-display text-lg font-bold text-text-primary">
         {headline}
       </h3>

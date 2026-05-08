@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "ASVAB Composite Score Calculator: All 6 Branches (2026)",
@@ -1289,6 +1290,15 @@ export default function ASVABCompositeScoreCalculatorPage() {
             </p>
           </div>
         </div>
+
+        <section className="mt-10 not-prose">
+          <EmailCapture
+            headline="Unlock more jobs — get the 30-day plan that lifts every composite"
+            subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
+            cta="Email me the plan"
+            tag="composite-calculator"
+          />
+        </section>
 
         {/* CTA */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">

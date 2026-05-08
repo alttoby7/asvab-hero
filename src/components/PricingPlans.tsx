@@ -251,10 +251,18 @@ export default function PricingPlans({
                   </svg>
                   Loading checkout...
                 </span>
+              ) : billing === "monthly" ? (
+                "Start 7-day free trial — then $9.99/mo"
               ) : (
                 "Upgrade to Pro"
               )}
             </button>
+          )}
+
+          {!entitlement.isPro && billing === "monthly" && (
+            <p className="mt-2 text-xs text-text-tertiary">
+              Card required. Charged $9.99/mo after trial unless cancelled. Cancel anytime in Account Settings.
+            </p>
           )}
 
           {checkoutError && (

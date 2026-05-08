@@ -4,9 +4,9 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Retake the ASVAB in 2026: Wait Times & Rules by Branch",
+  title: "ASVAB Retake Policy 2026: Wait Times, Score Rules & Branch Limits",
   description:
-    "You can retake the ASVAB after a 1-month wait. Second retest: 1 more month. Third+: 6 months. Branch-specific DEP restrictions, Confirmation Test triggers, and study strategies to score higher.",
+    "ASVAB retake policy for 2026: 1/1/6 wait rule, the 20-point Confirmation Test trap, and branch DEP limits (Army flexible, Air Force locks you out). Most-recent-score rule explained.",
   alternates: {
     canonical: "https://asvabhero.com/how-to-retake-the-asvab",
   },

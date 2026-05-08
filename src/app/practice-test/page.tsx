@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import PracticeTestClient from "@/components/practice-test/PracticeTestClient";
+import BrandHero from "@/components/BrandHero";
+import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "Free ASVAB Practice Test — 30 Questions, All 9 Subtests",
@@ -42,9 +44,26 @@ export default function PracticeTestPage() {
           recommended next step. Pick a Diagnostic for a balanced 30-question
           run, or drill a single subtest where you need the most work.
         </p>
+        <BrandHero
+          src="/images/generated/asvab-practice-test-hero.png"
+          alt="Close-up of a hand filling in a Scantron-style ASVAB answer sheet with a #2 pencil, timer ticking beside it."
+          width={1536}
+          height={1024}
+          priority
+          className="mt-8 overflow-hidden rounded-2xl border border-navy-border shadow-2xl shadow-black/40"
+        />
       </div>
 
       <PracticeTestClient />
+
+      <section className="mt-10">
+        <EmailCapture
+          headline="Want a study plan that targets your weakest subtests?"
+          subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
+          cta="Email me the plan"
+          tag="practice-test"
+        />
+      </section>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
+import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "ASVAB Paragraph Comprehension Tips: 9 Strategies | ASVAB Hero",
@@ -384,6 +385,15 @@ export default function ASVABParagraphComprehensionTipsPage() {
           Never use outside knowledge. You might know facts about the topic that
           go beyond what the passage says. Only passage-supported answers count.
         </p>
+
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Read like a recruit — paragraph-comprehension drills + 30-day plan"
+            subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
+            cta="Email me the plan"
+            tag="pc-tips"
+          />
+        </section>
 
         {/* Step 4 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -1084,6 +1094,16 @@ export default function ASVABParagraphComprehensionTipsPage() {
           The appearance of U.S. Department of Defense (DoD) visual information
           does not imply or constitute DoD endorsement.
         </p>
+
+        <section className="mt-10 not-prose">
+          <EmailCapture
+            variant="inline"
+            headline="Read like a recruit — paragraph-comprehension drills + 30-day plan"
+            subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
+            cta="Email me the plan"
+            tag="pc-tips"
+          />
+        </section>
 
         {/* CTA */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">

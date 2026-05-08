@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import Calculator from "@/components/Calculator";
+import EmailCapture from "@/components/EmailCapture";
 import type { MilitaryJob } from "@/types";
 
 import armyJobs from "@/data/army-jobs.json";
@@ -1073,6 +1074,15 @@ export default function ASVABLineScoreCalculatorPage() {
             unlock.
           </p>
         </aside>
+
+        <section className="mt-10 not-prose">
+          <EmailCapture
+            headline="Hit your target line score — free 30-day study plan"
+            subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
+            cta="Email me the plan"
+            tag="line-score-calculator"
+          />
+        </section>
 
         {/* CTA */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">

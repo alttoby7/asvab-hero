@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import BrandHero from "@/components/BrandHero";
 
 export const metadata: Metadata = {
   title: "ASVAB Mechanical Comprehension: 9 Tips for Levers, Gears, and Pulleys (2026)",
@@ -99,6 +100,14 @@ export default function ASVABMechanicalComprehensionTipsPage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           9 ASVAB Mechanical Comprehension Tips That Actually Work
         </h1>
+
+        <BrandHero
+          src="/images/asvab-mechanical-comprehension-tips/hero.jpg"
+          alt="A future recruit working through ASVAB mechanical comprehension with a pulley demonstration, brass gears, lever-and-fulcrum model, and free-body diagrams in her notebook."
+          width={1536}
+          height={1024}
+          className="my-6 overflow-hidden rounded-lg border border-navy-border"
+        />
 
         <p className="mt-4 text-text-secondary">
           Most people skip <strong>ASVAB Mechanical Comprehension</strong> prep

@@ -225,3 +225,31 @@ curl -H "Authorization: Bearer $ASVAB_RESEND_API_KEY" https://api.resend.com/dom
 - `list.asvabhero.com` is proxied through Cloudflare (DDoS + bot protection free). Admin UI has no built-in brute-force protection beyond Listmonk's session cookie.
 - The Resend API key in `.env` is a "send-only" restricted key (confirmed via Resend API — returns `restricted_api_key`). Can send but cannot manage domains/keys. Fine for SMTP + transactional sends.
 - Consider adding Cloudflare Access (free tier, 50 users) in front of `/admin` for extra auth layer.
+
+## Trial setup
+
+Card-required 7-day Stripe trial on the monthly tier (annual tier = direct charge, no trial). One trial per user — returning customers (any prior `stripe_subscription_id`) skip the trial flag and are charged immediately. Implementation:
+
+- `supabase/functions/stripe-checkout/index.ts` — conditionally adds `subscription_data[trial_period_days]=7` and `payment_method_collection=always` when `tier === "monthly" && !profile.stripe_subscription_id`.
+- `supabase/functions/stripe-webhook/index.ts` — on `checkout.session.completed`, fire-and-forget POST to Listmonk with `attribs.source = "trial-start"`. On `customer.subscription.trial_will_end` (T-3 days), sends a Listmonk transactional reminder.
+- `src/lib/practice/gate.ts` — already maps `billing_status='trialing'` (via webhook) → `active`, so Pro gating works during trial without edits.
+
+### Stripe webhook events to enable in dashboard
+
+- `checkout.session.completed`
+- `customer.subscription.updated`
+- `customer.subscription.deleted`
+- `invoice.paid`
+- `customer.subscription.trial_will_end` (NEW — required for the T-3 reminder)
+
+### New Supabase function secrets
+
+Set on the `stripe-webhook` function via `supabase secrets set`:
+
+- `LISTMONK_URL` — e.g. `https://list.asvabhero.com`
+- `LISTMONK_API_USER` — Listmonk API user (e.g. `claude-automation`)
+- `LISTMONK_API_TOKEN` — token for that API user
+- `LISTMONK_LIST_ID` — Listmonk list ID for trial starters (currently `3`)
+- `LISTMONK_TEMPLATE_TRIAL_ENDING` — Listmonk transactional template ID for the T-3 reminder (create the template first, then set this to its numeric ID)
+
+If `LISTMONK_TEMPLATE_TRIAL_ENDING` is unset, the `trial_will_end` branch logs and skips — webhook still returns 200.

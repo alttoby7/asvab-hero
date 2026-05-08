@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import BrandHero from "@/components/BrandHero";
 
 export const metadata: Metadata = {
   title: "ASVAB Electronics Information: 10 Tips to Beat 30 Seconds/Question (2026)",
@@ -98,6 +99,14 @@ export default function ASVABElectronicsInformationTipsPage() {
           ASVAB Electronics Information Tips: 10 Strategies to Score Higher on
           the EI Subtest
         </h1>
+
+        <BrandHero
+          src="/images/asvab-electronics-information-tips/hero.jpg"
+          alt="A future recruit at a home workbench with multimeter, breadboard, soldering iron, and circuit textbook — practicing electronics fundamentals for the ASVAB EI subtest."
+          width={1536}
+          height={1024}
+          className="my-6 overflow-hidden rounded-lg border border-navy-border"
+        />
 
         <p className="mt-4 text-text-secondary">
           Most ASVAB prep focuses on raising your AFQT.{" "}

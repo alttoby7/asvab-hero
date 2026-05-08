@@ -3,6 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 import RetakeDateCalculator from "@/components/RetakeDateCalculator";
+import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "ASVAB Retake Calculator: When Can You Retest? (2026)",
@@ -132,6 +133,15 @@ export default function AsvabRetakeCalculatorPage() {
           The calculator above flags this automatically if you fill in
           previous and target AFQT.
         </p>
+      </section>
+
+      <section className="mt-10">
+        <EmailCapture
+          headline="Make your retake count — get the 30-day study plan"
+          subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
+          cta="Email me the plan"
+          tag="retake-calculator"
+        />
       </section>
 
       <section className="mt-8 rounded-xl border border-navy-border bg-navy-light p-6">

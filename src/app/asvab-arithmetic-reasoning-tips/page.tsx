@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "9 ASVAB Arithmetic Reasoning Tips to Raise Your Score | ASVAB Hero",
@@ -464,6 +465,15 @@ export default function ASVABArithmeticReasoningTipsPage() {
           Practice these shortcuts with scratch paper until they are automatic. Speed on easy arithmetic buys you time for harder questions.
         </p>
 
+        <section className="my-8 not-prose">
+          <EmailCapture
+            headline="Get the 1-page AR formula card — every formula you need on test day"
+            subhead="Order of operations, fraction-decimal-percent table, distance/rate/time, work-rate, mixture, percent change, ratios — plus the word-problem patterns ASVAB writers love."
+            cta="Email me the formula card"
+            tag="ar-tips"
+          />
+        </section>
+
         {/* Step 5 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           Step 5: Master Rate, Proportion, and Unit Conversion Problems
@@ -869,6 +879,16 @@ export default function ASVABArithmeticReasoningTipsPage() {
             </p>
           </div>
         </div>
+
+        <section className="mt-10 not-prose">
+          <EmailCapture
+            variant="inline"
+            headline="Get the 1-page AR formula card — every formula you need on test day"
+            subhead="Order of operations, fraction-decimal-percent table, distance/rate/time, work-rate, mixture, percent change, ratios — plus the word-problem patterns ASVAB writers love."
+            cta="Email me the formula card"
+            tag="ar-tips"
+          />
+        </section>
 
         {/* CTA */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">

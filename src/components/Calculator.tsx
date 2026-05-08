@@ -18,6 +18,7 @@ import NonQualifyingResults from "./NonQualifyingResults";
 import ScoreGapEngine from "./ScoreGapEngine";
 import ShareActions from "./ShareActions";
 import ResultCard from "./ResultCard";
+import EmailCapture from "./EmailCapture";
 
 interface CalculatorProps {
   allJobs: MilitaryJob[];
@@ -142,6 +143,17 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
         afqtCategory={afqtCategory}
         qualifyingCount={snapshot.totalQualifying}
       />
+
+      {afqt > 0 && (
+        <EmailCapture
+          headline={`Your AFQT is ${afqt} — get the 30-day plan to push it to ${Math.min(afqt + 10, 99)}`}
+          subhead="Free 6-page PDF + 5-email crash course on AFQT and line scores. Tailored to where you are now."
+          cta="Email me the plan"
+          tag="calculator-result"
+          variant="card"
+          withScoreSignal
+        />
+      )}
 
       {/* Score Inputs */}
       <section>

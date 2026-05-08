@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import GTScoreCalculator from "@/components/GTScoreCalculator";
+import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "Free GT Score Calculator — Enter Subtests, See Your Score (2026)",
@@ -752,6 +753,15 @@ export default function GTScoreCalculatorPage() {
             </div>
           ))}
         </div>
+
+        <section className="mt-10 not-prose">
+          <EmailCapture
+            headline="Get the GT Score Booster guide — push your GT 10+ points in 14 days"
+            subhead="The formula, the cutoffs that unlock real MOS, the 14-day schedule that actually works, and the retake math that tells you when a second test is worth it."
+            cta="Email me the GT booster"
+            tag="gt-calculator"
+          />
+        </section>
 
         {/* ── CTA Box ── */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">

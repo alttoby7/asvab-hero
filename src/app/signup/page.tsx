@@ -41,6 +41,18 @@ export default function SignupPage() {
       setLoading(false);
     } else {
       trackEvent(FunnelEvents.SignupComplete, { source: "signup_page" });
+      // Fire-and-forget: subscribe to Listmonk so account signups land in the
+      // drip. Listmonk returns 409 on duplicate (handled server-side), so this
+      // is safe to retry. Never block auth flow on Listmonk failure.
+      void fetch("/api/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email,
+          tag: "supabase-signup",
+          source: "supabase-signup",
+        }),
+      }).catch(() => {});
       setDone(true);
     }
   }
