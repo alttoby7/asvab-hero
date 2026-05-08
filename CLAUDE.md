@@ -215,6 +215,7 @@ Activation-first improvements after shipping the trial. Plan: `~/.claude/plans/a
 - **Email drafts** — `docs/email-templates-drafts.md`. 4 Listmonk transactional (`tx-ar-formula-card` 12, `tx-wk-100-words` 13, `tx-gt-booster` 14, `tx-trial-ending` 15) + 4 Resend inline (`welcome-paid`, `welcome-trial`, `trial-day2-activation`, `trial-milestone-50q`).
 - **Stripe webhook events enabled:** `checkout.session.completed`, `customer.subscription.{created,updated,deleted,trial_will_end}`, `invoice.paid`.
 - **Signup attribution fix (2026-05-08):** EmailCapture tag now propagates to `signup_complete` via `localStorage["asvabhero.last_capture_source"]` (14-day TTL, cleared on read), replacing hardcoded `signup_page` source.
+- **Drip cron filter (2026-05-08, hotfix):** added `attribs.source` exclusion of `trial-start` + `paid` users to `/root/scripts/asvab_drip.py` to prevent double-emailing trial subscribers and off-message free-tier sends to paid users. `--dry-run` flag added. Repo snapshot at `scripts/asvab_drip_LIVE_SNAPSHOT.py`.
 
 **Out of scope (deferred):** daily challenge MVP, score projection messaging, push/SMS, trial extension UI, T+1 trial-end retention email.
 
