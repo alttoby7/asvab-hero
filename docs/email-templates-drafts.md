@@ -165,3 +165,51 @@ Six template bodies for the conversion-boost + automated-welcome ship.
 
 <p>Trish<br>ASVAB Hero</p>
 ```
+
+---
+
+## Resend (inline, in cron drip) #3 — `trial-day2-activation`
+
+Sent by `/root/scripts/asvab_drip_trial.py` (hourly cron) ~24-36h after trial start. Skipped if the user already has any `attempts` row.
+
+**Subject:** `One thing to do today`
+**From:** `Trish at ASVAB Hero <info@asvabhero.com>`
+**Reply-To:** `trish@dach.family`
+
+```html
+<p>Hi {firstName},</p>
+
+<p>Yesterday you started your 7-day ASVAB Hero Pro trial. The single highest-leverage thing for Pro to actually work for you is to take a diagnostic. 30 questions, about 18 minutes, and the platform builds your weak-topic drill list from your results.</p>
+
+<p><a href="https://asvabhero.com/practice-test?variant=diagnostic" style="background:#f97316;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;display:inline-block;font-weight:600;">Take your diagnostic</a></p>
+
+<p>Once you have a diagnostic in, the rest of the platform shapes itself around your weakest subtests automatically.</p>
+
+<p>Trish<br>ASVAB Hero</p>
+```
+
+---
+
+## Resend (inline, in cron drip) #4 — `trial-milestone-50q`
+
+Sent by `/root/scripts/asvab_drip_trial.py` once when the user crosses 50 total questions answered across `attempts`, while their trial is still active.
+
+**Subject:** `You answered 50 questions on ASVAB Hero`
+**From:** `Trish at ASVAB Hero <info@asvabhero.com>`
+**Reply-To:** `trish@dach.family`
+
+```html
+<p>Hi {firstName},</p>
+
+<p>You've answered {totalQuestions} questions and your overall accuracy is {accuracy}%. Your strongest subtest so far is {topSubtest}.</p>
+
+<p>{daysLeft} days left on your trial. Two things that move the needle next:</p>
+<ul>
+  <li>Run a 25-question drill on your weakest subtest</li>
+  <li>Re-take a full diagnostic on day 6 to see your AFQT move</li>
+</ul>
+
+<p><a href="https://asvabhero.com/practice-test" style="background:#f97316;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;display:inline-block;font-weight:600;">Continue practicing</a></p>
+
+<p>Trish<br>ASVAB Hero</p>
+```

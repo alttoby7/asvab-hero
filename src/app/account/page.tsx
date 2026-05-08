@@ -128,7 +128,12 @@ export default function AccountDashboardPage() {
     async function load() {
       if (!session) return;
       setDataLoading(true);
-      const { data: profile } = await sb.from("profiles").select("display_name,free_diagnostic_used_at,pro_tier,pro_until,email").eq("user_id", session.user.id).single();
+      const { data: profile } = await sb.from("profiles").select("display_name,free_diagnostic_used_at,pro_tier,pro_until,email,onboarding_completed_at").eq("user_id", session.user.id).single();
+      // Onboarding guard — Pro users who haven't completed onboarding go through it first.
+      if (entitlement.isPro && profile && profile.onboarding_completed_at == null) {
+        router.replace("/onboarding");
+        return;
+      }
       const { data: attemptsRaw } = await sb.from("attempts").select("id,variant_code,subtest,completed_at,question_count,correct_count,afqt_estimate").eq("user_id", session.user.id).order("completed_at", { ascending: false }).limit(5);
       const { data: statsRaw } = await sb.from("topic_stats").select("topic_id,seen,correct,priority").eq("user_id", session.user.id).gt("priority", 0).gte("seen", 3).order("priority", { ascending: false }).limit(3);
       let weakTopics: WeakTopic[] = statsRaw ?? [];

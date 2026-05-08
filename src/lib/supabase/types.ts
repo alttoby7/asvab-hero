@@ -345,6 +345,7 @@ export type Database = {
       profiles: {
         Row: {
           billing_status: string
+          branch: string | null
           created_at: string
           daily_email_opt_in: boolean
           display_name: string | null
@@ -352,14 +353,20 @@ export type Database = {
           free_diagnostic_used_at: string | null
           last_challenge_completed_on: string | null
           marketing_opt_in: boolean
+          milestone_50q_email_sent_at: string | null
+          onboarding_completed_at: string | null
           pro_tier: string | null
           pro_until: string | null
           pro_updated_at: string | null
+          self_reported_weakest_subtest: string | null
           streak_count: number
           stripe_customer_id: string | null
           stripe_price_id: string | null
           stripe_subscription_id: string | null
+          target_test_date: string | null
+          target_test_date_bucket: string | null
           timezone: string
+          trial_day2_email_sent_at: string | null
           trial_ends_at: string | null
           updated_at: string
           user_id: string
@@ -369,6 +376,7 @@ export type Database = {
         }
         Insert: {
           billing_status?: string
+          branch?: string | null
           created_at?: string
           daily_email_opt_in?: boolean
           display_name?: string | null
@@ -376,14 +384,20 @@ export type Database = {
           free_diagnostic_used_at?: string | null
           last_challenge_completed_on?: string | null
           marketing_opt_in?: boolean
+          milestone_50q_email_sent_at?: string | null
+          onboarding_completed_at?: string | null
           pro_tier?: string | null
           pro_until?: string | null
           pro_updated_at?: string | null
+          self_reported_weakest_subtest?: string | null
           streak_count?: number
           stripe_customer_id?: string | null
           stripe_price_id?: string | null
           stripe_subscription_id?: string | null
+          target_test_date?: string | null
+          target_test_date_bucket?: string | null
           timezone?: string
+          trial_day2_email_sent_at?: string | null
           trial_ends_at?: string | null
           updated_at?: string
           user_id: string
@@ -393,6 +407,7 @@ export type Database = {
         }
         Update: {
           billing_status?: string
+          branch?: string | null
           created_at?: string
           daily_email_opt_in?: boolean
           display_name?: string | null
@@ -400,14 +415,20 @@ export type Database = {
           free_diagnostic_used_at?: string | null
           last_challenge_completed_on?: string | null
           marketing_opt_in?: boolean
+          milestone_50q_email_sent_at?: string | null
+          onboarding_completed_at?: string | null
           pro_tier?: string | null
           pro_until?: string | null
           pro_updated_at?: string | null
+          self_reported_weakest_subtest?: string | null
           streak_count?: number
           stripe_customer_id?: string | null
           stripe_price_id?: string | null
           stripe_subscription_id?: string | null
+          target_test_date?: string | null
+          target_test_date_bucket?: string | null
           timezone?: string
+          trial_day2_email_sent_at?: string | null
           trial_ends_at?: string | null
           updated_at?: string
           user_id?: string
@@ -712,4 +733,3 @@ export const Constants = {
     Enums: {},
   },
 } as const
-

@@ -81,7 +81,7 @@ Deno.serve(async (req) => {
       customer: customerId,
       "line_items[0][price]": priceId,
       "line_items[0][quantity]": 1,
-      success_url: `${SITE_URL}${returnPath}?status=success&session_id={CHECKOUT_SESSION_ID}`,
+      success_url: `${SITE_URL}/onboarding?welcome=1`,
       cancel_url: `${SITE_URL}/upgrade?status=cancelled`,
       allow_promotion_codes: "true",
       "subscription_data[metadata][user_id]": userId,
