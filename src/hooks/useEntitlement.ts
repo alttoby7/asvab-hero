@@ -11,6 +11,9 @@ export type Entitlement = {
   proUntil: string | null;
   freeDiagnosticUsedAt: string | null;
   stripeCustomerId: string | null;
+  trialEndsAt: string | null;
+  isTrial: boolean;
+  trialDaysRemaining: number | null;
 };
 
 const FREE: Entitlement = {
@@ -20,6 +23,9 @@ const FREE: Entitlement = {
   proUntil: null,
   freeDiagnosticUsedAt: null,
   stripeCustomerId: null,
+  trialEndsAt: null,
+  isTrial: false,
+  trialDaysRemaining: null,
 };
 
 export function useEntitlement(): { entitlement: Entitlement; loading: boolean; refresh: () => void } {
@@ -40,7 +46,7 @@ export function useEntitlement(): { entitlement: Entitlement; loading: boolean; 
     supabase
       .from("profiles")
       .select(
-        "billing_status,pro_tier,pro_until,free_diagnostic_used_at,stripe_customer_id"
+        "billing_status,pro_tier,pro_until,free_diagnostic_used_at,stripe_customer_id,trial_ends_at"
       )
       .eq("user_id", session.user.id)
       .single()
@@ -54,6 +60,13 @@ export function useEntitlement(): { entitlement: Entitlement; loading: boolean; 
           const isPro =
             billingStatus === "lifetime" ||
             (billingStatus === "active" && (!proUntil || new Date(proUntil) > new Date()));
+          const trialEndsAt = (data.trial_ends_at as string | null) ?? null;
+          const trialEndsAtDate = trialEndsAt ? new Date(trialEndsAt) : null;
+          const now = new Date();
+          const isTrial = !!(trialEndsAtDate && trialEndsAtDate > now);
+          const trialDaysRemaining = isTrial && trialEndsAtDate
+            ? Math.max(0, Math.ceil((trialEndsAtDate.getTime() - now.getTime()) / 86400000))
+            : null;
           setEntitlement({
             isPro,
             billingStatus,
@@ -61,6 +74,9 @@ export function useEntitlement(): { entitlement: Entitlement; loading: boolean; 
             proUntil,
             freeDiagnosticUsedAt: (data.free_diagnostic_used_at as string | null) ?? null,
             stripeCustomerId: (data.stripe_customer_id as string | null) ?? null,
+            trialEndsAt,
+            isTrial,
+            trialDaysRemaining,
           });
         }
         setLoading(false);

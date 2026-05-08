@@ -317,6 +317,17 @@ Deno.serve(async (req) => {
           resolvedUserId = meta.user_id ?? userId ?? (customerId ? await findUserIdForCustomer(customerId) : null);
           subscriptionStatus = (sub as unknown as { status?: string }).status ?? null;
           if (resolvedUserId) await updateProfileFromSubscription(resolvedUserId, sub);
+
+          // Stamp trial_ends_at when this checkout starts a trial (powers TrialBanner countdown).
+          if (resolvedUserId && subscriptionStatus === "trialing") {
+            const trialEnd = (sub as unknown as { trial_end?: number }).trial_end;
+            if (trialEnd) {
+              await supabaseAdmin
+                .from("profiles")
+                .update({ trial_ends_at: new Date(trialEnd * 1000).toISOString() })
+                .eq("user_id", resolvedUserId);
+            }
+          }
         }
 
         // Subscribe trial starters to Listmonk segment so they enter the drip.

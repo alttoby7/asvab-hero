@@ -7,6 +7,7 @@ import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
+import { TrialBanner } from "@/components/account/TrialBanner";
 
 type Attempt = {
   id: string;
@@ -172,6 +173,16 @@ export default function AccountDashboardPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6 space-y-6">
+      {entitlement.isTrial && entitlement.trialDaysRemaining != null && (
+        <TrialBanner
+          daysRemaining={entitlement.trialDaysRemaining}
+          hasInProgress={hasInProgress}
+          hasAttempts={hasAttempts}
+          weakestTopicTitle={weakest?.title ?? null}
+          weakestSubtest={weakest?.subtest ?? null}
+        />
+      )}
+
       {/* Module 1: Hero */}
       <div className="rounded-2xl border border-navy-border bg-navy-light p-6 sm:p-8">
         <h1 className="font-display text-2xl font-bold text-text-primary sm:text-3xl">Welcome back, {greeting}</h1>

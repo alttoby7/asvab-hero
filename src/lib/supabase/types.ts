@@ -360,8 +360,12 @@ export type Database = {
           stripe_price_id: string | null
           stripe_subscription_id: string | null
           timezone: string
+          trial_ends_at: string | null
           updated_at: string
           user_id: string
+          welcome_email_resend_id: string | null
+          welcome_email_sent_at: string | null
+          welcome_email_status: string | null
         }
         Insert: {
           billing_status?: string
@@ -380,8 +384,12 @@ export type Database = {
           stripe_price_id?: string | null
           stripe_subscription_id?: string | null
           timezone?: string
+          trial_ends_at?: string | null
           updated_at?: string
           user_id: string
+          welcome_email_resend_id?: string | null
+          welcome_email_sent_at?: string | null
+          welcome_email_status?: string | null
         }
         Update: {
           billing_status?: string
@@ -400,8 +408,12 @@ export type Database = {
           stripe_price_id?: string | null
           stripe_subscription_id?: string | null
           timezone?: string
+          trial_ends_at?: string | null
           updated_at?: string
           user_id?: string
+          welcome_email_resend_id?: string | null
+          welcome_email_sent_at?: string | null
+          welcome_email_status?: string | null
         }
         Relationships: []
       }
@@ -700,3 +712,4 @@ export const Constants = {
     Enums: {},
   },
 } as const
+
