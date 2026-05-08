@@ -90,6 +90,18 @@ export default function EmailCapture({
       if (!res.ok) throw new Error("Signup failed");
       setStatus("success");
       trackEvent("signup_submit", { source: tag, success: true });
+      // Persist capture source so a later /signup signup_complete event can
+      // attribute back to the originating mount (e.g. `calculator-result`).
+      // 14-day TTL; cleared on signup_complete read. Cross-tab leak is
+      // intentional — capture in tab 1 → signup in tab 2 should attribute.
+      try {
+        localStorage.setItem(
+          "asvabhero.last_capture_source",
+          JSON.stringify({ source: tag, capturedAt: Date.now() })
+        );
+      } catch {
+        /* ignore quota / private mode */
+      }
       await replayPendingSignups();
     } catch {
       try {

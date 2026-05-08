@@ -201,9 +201,22 @@ Five-phase funnel-fix sprint after audit found **only 4 Listmonk subscribers in 
   - `public/wk-100-words.pdf` (228 KB, 4 pages) — 100 high-frequency vocab + 10 word roots + 5-question quiz. Source: `scripts/wk-100-words.html`. Mounted on `/asvab-word-knowledge-tips` via tag `wk-tips`.
   - `public/gt-booster-guide.pdf` (147 KB, 6 pages) — formula, MOS cutoffs by tier (100/107/110/117+), 4 levers, 14-day push schedule (week-grid), retake math, one-page cheat sheet. Source: `scripts/gt-booster-guide.html`. Mounted on `/gt-score-calculator` via tag `gt-calculator`.
 
-**Verification status:** All `npx tsc --noEmit` checks exit 0. Frontend changes ready to push. Edge function changes ready to deploy. PDFs built and committed (CF Pages serves from `public/`).
+**Verification status:** Shipped 2026-05-08, commit `51adb5e`. Edge functions (stripe-checkout, stripe-webhook) deployed. 4 Listmonk templates created (ids 12/13/14/15). CF Pages env vars + Supabase secrets set. Live + verified.
 
+## Trial Member UX (2026-05-08)
 
+Activation-first improvements after shipping the trial. Plan: `~/.claude/plans/asvab-hero-trial-experience.md`. Three phases, all live.
+
+- **Migrations 0003–0006** — `welcome_email_sent_at` + `welcome_email_resend_id` + `welcome_email_status` (0003); `trial_ends_at` (0004); `branch` + `target_test_date` + `target_test_date_bucket` + `self_reported_weakest_subtest` + `onboarding_completed_at` (0005); `trial_day2_email_sent_at` + `milestone_50q_email_sent_at` (0006).
+- **Automated Pro welcome (Resend)** — `supabase/functions/stripe-webhook/index.ts` `sendWelcomeEmail()` fires on `checkout.session.completed` only. Two HTML bodies inline (`renderWelcomePaid`, `renderWelcomeTrial`); template chosen via `sub.status === "trialing"`. Idempotent via `welcome_email_sent_at`. First-name extracted from `customer_details.name` and backfilled into `display_name` only when NULL.
+- **Trial banner** — `src/components/account/TrialBanner.tsx` mounts on `/account` when `entitlement.isTrial`. Shows days remaining + single next-action CTA from `src/lib/account/next-action.ts` (resume in-progress → diagnostic → drill weakest topic → re-baseline). `useEntitlement` returns `isTrial` + `trialDaysRemaining`.
+- **Onboarding flow** — `/onboarding` (`src/app/onboarding/page.tsx`, wrapped in Suspense for static export) + `OnboardingForm` (3 questions: branch / test-date bucket OR specific date toggle / weakest subtest). Submit redirects to `/practice-test?variant=diagnostic&welcome=1`. "Skip for now" stamps completion with NULL data. `/account` redirects Pro+NULL-onboarding users here. Stripe `success_url` → `/onboarding?welcome=1`.
+- **Trial drip cron** — `scripts/asvab_drip_trial.py` (stdlib Python) on droplet at `/root/scripts/asvab_drip_trial.py`. Hourly cron at `:17`. Job 1: day-2 activation nudge (skipped if any `attempts` row). Job 2: 50-question milestone (event-triggered, fires once). Both via Resend, idempotent via timestamp guards. Env appended to `/root/scripts/asvab_drip.env`.
+- **Email drafts** — `docs/email-templates-drafts.md`. 4 Listmonk transactional (`tx-ar-formula-card` 12, `tx-wk-100-words` 13, `tx-gt-booster` 14, `tx-trial-ending` 15) + 4 Resend inline (`welcome-paid`, `welcome-trial`, `trial-day2-activation`, `trial-milestone-50q`).
+- **Stripe webhook events enabled:** `checkout.session.completed`, `customer.subscription.{created,updated,deleted,trial_will_end}`, `invoice.paid`.
+- **Signup attribution fix (2026-05-08):** EmailCapture tag now propagates to `signup_complete` via `localStorage["asvabhero.last_capture_source"]` (14-day TTL, cleared on read), replacing hardcoded `signup_page` source.
+
+**Out of scope (deferred):** daily challenge MVP, score projection messaging, push/SMS, trial extension UI, T+1 trial-end retention email.
 
 Full memo: `docs/marketing-strategy-2026-04-28.md`. Quick state:
 

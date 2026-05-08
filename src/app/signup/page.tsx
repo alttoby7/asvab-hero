@@ -40,7 +40,28 @@ export default function SignupPage() {
       setError(authError.message);
       setLoading(false);
     } else {
-      trackEvent(FunnelEvents.SignupComplete, { source: "signup_page" });
+      // Resolve attribution from the most recent EmailCapture submit (if any).
+      // 14-day TTL — older captures are treated as direct /signup traffic.
+      let resolvedSource = "signup_page";
+      try {
+        const raw = localStorage.getItem("asvabhero.last_capture_source");
+        if (raw) {
+          const parsed = JSON.parse(raw) as {
+            source?: string;
+            capturedAt?: number;
+          };
+          const ageMs = Date.now() - (parsed.capturedAt ?? 0);
+          const TTL_MS = 14 * 24 * 60 * 60 * 1000;
+          if (parsed.source && ageMs >= 0 && ageMs <= TTL_MS) {
+            resolvedSource = parsed.source;
+          }
+          // Clear regardless — stale or used, the touch is consumed.
+          localStorage.removeItem("asvabhero.last_capture_source");
+        }
+      } catch {
+        /* ignore — fall back to signup_page */
+      }
+      trackEvent(FunnelEvents.SignupComplete, { source: resolvedSource });
       // Fire-and-forget: subscribe to Listmonk so account signups land in the
       // drip. Listmonk returns 409 on duplicate (handled server-side), so this
       // is safe to retry. Never block auth flow on Listmonk failure.
