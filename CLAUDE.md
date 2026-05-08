@@ -170,6 +170,8 @@ Pending:
 
 Five-phase funnel-fix sprint after audit found **only 4 Listmonk subscribers in 28 days** despite 543 sessions. Plan: `~/.claude/plans/create-subagents-to-plan-zesty-umbrella.md`. Pickup doc: `CONTINUITY-conversion-boost.md`.
 
+**Drip rewrites (2026-05-08, hotfix):** T7-T10 PATCHed via Listmonk API to add Pro pitch + remove Quizlet mention; bodies archived in `docs/email-templates-drafts.md`.
+
 **Code shipped (not yet pushed/deployed):**
 
 - **Phase A — Email funnel leak fixes**
