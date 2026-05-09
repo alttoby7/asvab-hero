@@ -35,6 +35,7 @@ type DashboardData = {
   freeDiagnosticUsedAt: string | null;
   proTier: string | null;
   proUntil: string | null;
+  signupSource: string | null;
   attempts: Attempt[];
   weakTopics: WeakTopic[];
 };
@@ -107,8 +108,10 @@ export default function AccountDashboardPage() {
   useEffect(() => { setHasInProgress(getInProgressTest()); }, []);
 
   // pro_active — fire once per user when /account loads with isPro=true.
+  // Wait for `data` so we can attach the durable signup_source from the
+  // profile (survives localStorage clears and long free→Pro lag).
   useEffect(() => {
-    if (entitlementLoading || !session || !entitlement.isPro) return;
+    if (entitlementLoading || !session || !entitlement.isPro || !data) return;
     const dedupeKey = `asvabhero.pro_active_fired.${session.user.id}`;
     try {
       if (localStorage.getItem(dedupeKey)) return;
@@ -118,8 +121,9 @@ export default function AccountDashboardPage() {
     }
     trackEvent(FunnelEvents.ProActive, {
       tier: entitlement.proTier ?? "unknown",
+      signup_source: data.signupSource ?? "unknown",
     });
-  }, [entitlementLoading, session, entitlement.isPro, entitlement.proTier]);
+  }, [entitlementLoading, session, entitlement.isPro, entitlement.proTier, data]);
 
   useEffect(() => {
     if (!session) return;
@@ -128,7 +132,7 @@ export default function AccountDashboardPage() {
     async function load() {
       if (!session) return;
       setDataLoading(true);
-      const { data: profile } = await sb.from("profiles").select("display_name,free_diagnostic_used_at,pro_tier,pro_until,email,onboarding_completed_at").eq("user_id", session.user.id).single();
+      const { data: profile } = await sb.from("profiles").select("display_name,free_diagnostic_used_at,pro_tier,pro_until,email,onboarding_completed_at,signup_source").eq("user_id", session.user.id).single();
       // Onboarding guard — Pro users who haven't completed onboarding go through it first.
       if (entitlement.isPro && profile && profile.onboarding_completed_at == null) {
         router.replace("/onboarding");
@@ -152,6 +156,7 @@ export default function AccountDashboardPage() {
         freeDiagnosticUsedAt: profile?.free_diagnostic_used_at ?? null,
         proTier: profile?.pro_tier ?? null,
         proUntil: profile?.pro_until ?? null,
+        signupSource: profile?.signup_source ?? null,
         attempts: attemptsRaw ?? [],
         weakTopics,
       });

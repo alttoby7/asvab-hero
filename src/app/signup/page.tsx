@@ -28,11 +28,40 @@ export default function SignupPage() {
 
     setLoading(true);
     const supabase = getSupabaseBrowserClient();
+
+    // Resolve attribution from the most recent EmailCapture submit (if any).
+    // 14-day TTL — older captures are treated as direct /signup traffic.
+    // We resolve BEFORE signUp so we can pass signup_source as user metadata;
+    // the on_auth_user_created trigger reads raw_user_meta_data->>'signup_source'
+    // and writes it atomically into profiles.signup_source. This avoids the
+    // RLS problem of a client UPDATE before the email-confirmation session
+    // exists (auth.uid() would be null and the update would be rejected).
+    let resolvedSource = "signup_page";
+    try {
+      const raw = localStorage.getItem("asvabhero.last_capture_source");
+      if (raw) {
+        const parsed = JSON.parse(raw) as {
+          source?: string;
+          capturedAt?: number;
+        };
+        const ageMs = Date.now() - (parsed.capturedAt ?? 0);
+        const TTL_MS = 14 * 24 * 60 * 60 * 1000;
+        if (parsed.source && ageMs >= 0 && ageMs <= TTL_MS) {
+          resolvedSource = parsed.source;
+        }
+        // Clear regardless — stale or used, the touch is consumed.
+        localStorage.removeItem("asvabhero.last_capture_source");
+      }
+    } catch {
+      /* ignore — fall back to signup_page */
+    }
+
     const { error: authError } = await supabase.auth.signUp({
       email,
       password,
       options: {
         emailRedirectTo: `${window.location.origin}/account`,
+        data: { signup_source: resolvedSource },
       },
     });
 
@@ -40,27 +69,6 @@ export default function SignupPage() {
       setError(authError.message);
       setLoading(false);
     } else {
-      // Resolve attribution from the most recent EmailCapture submit (if any).
-      // 14-day TTL — older captures are treated as direct /signup traffic.
-      let resolvedSource = "signup_page";
-      try {
-        const raw = localStorage.getItem("asvabhero.last_capture_source");
-        if (raw) {
-          const parsed = JSON.parse(raw) as {
-            source?: string;
-            capturedAt?: number;
-          };
-          const ageMs = Date.now() - (parsed.capturedAt ?? 0);
-          const TTL_MS = 14 * 24 * 60 * 60 * 1000;
-          if (parsed.source && ageMs >= 0 && ageMs <= TTL_MS) {
-            resolvedSource = parsed.source;
-          }
-          // Clear regardless — stale or used, the touch is consumed.
-          localStorage.removeItem("asvabhero.last_capture_source");
-        }
-      } catch {
-        /* ignore — fall back to signup_page */
-      }
       trackEvent(FunnelEvents.SignupComplete, { source: resolvedSource });
       // Fire-and-forget: subscribe to Listmonk so account signups land in the
       // drip. Listmonk returns 409 on duplicate (handled server-side), so this

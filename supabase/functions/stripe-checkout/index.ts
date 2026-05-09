@@ -45,7 +45,7 @@ Deno.serve(async (req) => {
 
     const { data: profile } = await supabaseAdmin
       .from("profiles")
-      .select("email,stripe_customer_id,stripe_subscription_id,billing_status")
+      .select("email,stripe_customer_id,stripe_subscription_id,billing_status,signup_source")
       .eq("user_id", userId)
       .single();
     if (!profile) return json(404, { error: "profile_not_found" });
@@ -87,6 +87,15 @@ Deno.serve(async (req) => {
       "subscription_data[metadata][user_id]": userId,
       "metadata[user_id]": userId,
     };
+
+    // Durable attribution: propagate signup_source onto BOTH the checkout
+    // session metadata (one-shot) and the subscription metadata (durable
+    // across renewals). stripe-webhook reads subscription.metadata, so this
+    // is the channel that survives long-tail conversions.
+    if (profile.signup_source) {
+      checkoutParams["metadata[signup_source]"] = profile.signup_source;
+      checkoutParams["subscription_data[metadata][signup_source]"] = profile.signup_source;
+    }
 
     const isFirstTimeSubscriber = !profile.stripe_subscription_id;
     if (tier === "monthly" && isFirstTimeSubscriber) {

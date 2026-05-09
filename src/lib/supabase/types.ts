@@ -359,6 +359,7 @@ export type Database = {
           pro_until: string | null
           pro_updated_at: string | null
           self_reported_weakest_subtest: string | null
+          signup_source: string | null
           streak_count: number
           stripe_customer_id: string | null
           stripe_price_id: string | null
@@ -390,6 +391,7 @@ export type Database = {
           pro_until?: string | null
           pro_updated_at?: string | null
           self_reported_weakest_subtest?: string | null
+          signup_source?: string | null
           streak_count?: number
           stripe_customer_id?: string | null
           stripe_price_id?: string | null
@@ -421,6 +423,7 @@ export type Database = {
           pro_until?: string | null
           pro_updated_at?: string | null
           self_reported_weakest_subtest?: string | null
+          signup_source?: string | null
           streak_count?: number
           stripe_customer_id?: string | null
           stripe_price_id?: string | null
