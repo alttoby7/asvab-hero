@@ -286,3 +286,38 @@ Hotfix to existing transactional templates 7, 8, 9, 10. Original bodies were aut
 
 <p>Trish<br>ASVAB Hero</p>
 ```
+
+---
+
+## Resend (inline, in webhook code) #5 — `trial-converted`
+
+**Trigger:** `invoice.paid` with `billing_reason = subscription_cycle` AND user's `trial_ends_at` was set (i.e. they came off a trial).
+**File:** `supabase/functions/stripe-webhook/index.ts` — `renderWelcomeTrialConverted()` + `sendTrialConvertedEmail()`.
+**Idempotency:** `profiles.trial_converted_email_sent_at` (timestamp guard) + `trial_converted_email_status` + `trial_converted_email_resend_id` + `trial_converted_email_invoice_id` (audit). Partial index `profiles_trial_converted_email_pending_idx` for retry-script lookup.
+**From:** `Trish at ASVAB Hero <info@asvabhero.com>` · **Reply-to:** `trish@dach.family`
+**Why this trigger:** `invoice.paid` is the only event that fires on actual successful payment, so it survives Stripe retry behavior — if day 8 declines and day 10 retry succeeds, we send once on day 10. `customer.subscription.updated` would miss the retry case because the transition is `past_due → active`, not `trialing → active`.
+
+**Subject:** `Your ASVAB Hero Pro access is officially locked in`
+
+```html
+<p>Hi {{firstName}},</p>
+
+<p>You made it through the trial, your payment went through, and your ASVAB Hero Pro access is officially locked in.</p>
+
+<p>That means you can keep building without losing momentum:</p>
+<ul>
+  <li>Unlimited adaptive practice tests across all 9 subtests</li>
+  <li>Full score history and weak-topic drills</li>
+  <li>39 study guides covering every ASVAB topic</li>
+</ul>
+
+<p>Most people get the best results when they keep the same rhythm that got them through the trial. Show up, take the next test, review what you missed, and let the platform keep tightening up your weak spots.</p>
+
+<p>If you want one simple next step, go here and start your next practice set: <a href="https://asvabhero.com/practice">asvabhero.com/practice</a></p>
+
+<p>I am glad you are here. You are not just trying ASVAB Hero anymore. You are in it now.</p>
+
+<p>Trish<br>ASVAB Hero</p>
+```
+
+**Future personalization fields** (suggested by codex, not yet wired): `attemptsCount`, `accuracyPct`, `weakestSubtestName`, `bestScoreGain`, `lastPracticeDate`. Pull from `practice_attempts` aggregate during `sendTrialConvertedEmail` and pass through to renderer; renderer must handle null gracefully.

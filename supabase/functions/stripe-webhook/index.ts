@@ -93,6 +93,27 @@ const renderWelcomePaid = (firstName: string): string => `\
 <p>Trish<br>ASVAB Hero</p>
 `;
 
+const renderWelcomeTrialConverted = (firstName: string): string => `\
+<p>Hi ${firstName},</p>
+
+<p>You made it through the trial, your payment went through, and your ASVAB Hero Pro access is officially locked in.</p>
+
+<p>That means you can keep building without losing momentum:</p>
+<ul>
+  <li>Unlimited adaptive practice tests across all 9 subtests</li>
+  <li>Full score history and weak-topic drills</li>
+  <li>39 study guides covering every ASVAB topic</li>
+</ul>
+
+<p>Most people get the best results when they keep the same rhythm that got them through the trial. Show up, take the next test, review what you missed, and let the platform keep tightening up your weak spots.</p>
+
+<p>If you want one simple next step, go here and start your next practice set: <a href="https://asvabhero.com/practice">asvabhero.com/practice</a></p>
+
+<p>I am glad you are here. You are not just trying ASVAB Hero anymore. You are in it now.</p>
+
+<p>Trish<br>ASVAB Hero</p>
+`;
+
 const renderWelcomeTrial = (firstName: string): string => `\
 <p>Hi ${firstName},</p>
 
@@ -262,6 +283,150 @@ const sendWelcomeEmail = async (args: {
   }
 };
 
+// Send the T+1 trial-converted welcome email via Resend.
+// Fires from invoice.paid handler when billing_reason = subscription_cycle AND
+// the user had a trial_ends_at set (i.e. they came off a trial). Idempotent
+// via profiles.trial_converted_email_sent_at. Never throws; never fails the
+// webhook. Survives Stripe payment retries because invoice.paid only fires on
+// actual successful payment — if day 8 declines and day 10 retry succeeds,
+// invoice.paid fires once on day 10 and we send once.
+const sendTrialConvertedEmail = async (args: {
+  userId: string;
+  customerEmail: string | undefined;
+  invoiceId: string | null;
+  eventType: string;
+}): Promise<void> => {
+  const { userId, customerEmail, invoiceId, eventType } = args;
+  if (!customerEmail) {
+    console.log("trial-converted: missing customerEmail, skipping", { userId });
+    return;
+  }
+
+  const resendKey = Deno.env.get("ASVAB_RESEND_API_KEY");
+  if (!resendKey) {
+    console.log("trial-converted: ASVAB_RESEND_API_KEY not set, skipping");
+    return;
+  }
+
+  // Re-fetch profile for idempotency + display_name + email fallback.
+  const { data: profile, error: profileErr } = await supabaseAdmin
+    .from("profiles")
+    .select("trial_converted_email_sent_at, display_name, email")
+    .eq("user_id", userId)
+    .maybeSingle();
+
+  if (profileErr) {
+    console.error("trial-converted: profile read failed", { userId, error: profileErr.message });
+    return;
+  }
+  if (!profile) {
+    console.log("trial-converted: profile not found, skipping", { userId });
+    return;
+  }
+  if (profile.trial_converted_email_sent_at) {
+    console.log("trial-converted: already sent, skipping", {
+      userId,
+      sent_at: profile.trial_converted_email_sent_at,
+    });
+    return;
+  }
+
+  const recipientEmail = customerEmail || profile.email;
+  if (!recipientEmail) {
+    console.log("trial-converted: no recipient email, skipping", { userId });
+    return;
+  }
+
+  const greetingName = profile.display_name ?? "there";
+  const subject = "Your ASVAB Hero Pro access is officially locked in";
+  const html = renderWelcomeTrialConverted(greetingName);
+
+  let resendId: string | null = null;
+  let status: string;
+  let updateTimestamp = false;
+
+  try {
+    const resp = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${resendKey}`,
+      },
+      body: JSON.stringify({
+        from: "Trish at ASVAB Hero <info@asvabhero.com>",
+        to: [recipientEmail],
+        reply_to: "trish@dach.family",
+        subject,
+        html,
+      }),
+    });
+
+    if (resp.ok) {
+      const body = (await resp.json().catch(() => ({}))) as { id?: string };
+      resendId = body.id ?? null;
+      status = "sent";
+      updateTimestamp = true;
+      console.log(
+        "trial-converted: sent",
+        JSON.stringify({
+          event_type: eventType,
+          user_id: userId,
+          email: recipientEmail,
+          template: "trial-converted",
+          invoice_id: invoiceId,
+          resend_status: resp.status,
+          resend_id: resendId,
+        }),
+      );
+    } else {
+      const errBody = await resp.text().catch(() => "");
+      status = `error_${resp.status}`;
+      console.error(
+        "trial-converted: resend non-2xx",
+        JSON.stringify({
+          event_type: eventType,
+          user_id: userId,
+          email: recipientEmail,
+          template: "trial-converted",
+          invoice_id: invoiceId,
+          resend_status: resp.status,
+          resend_body: errBody.slice(0, 500),
+        }),
+      );
+    }
+  } catch (err) {
+    status = "error_throw";
+    console.error(
+      "trial-converted: resend threw",
+      JSON.stringify({
+        event_type: eventType,
+        user_id: userId,
+        email: recipientEmail,
+        template: "trial-converted",
+        invoice_id: invoiceId,
+        error: String(err),
+      }),
+    );
+  }
+
+  // On success: stamp timestamp + resend_id + invoice_id + status. On failure:
+  // only set status, leave timestamp NULL so the partial index keeps this row
+  // visible for a future retry script.
+  const updatePayload: Record<string, unknown> = { trial_converted_email_status: status };
+  if (updateTimestamp) {
+    updatePayload.trial_converted_email_sent_at = new Date().toISOString();
+    updatePayload.trial_converted_email_resend_id = resendId;
+    updatePayload.trial_converted_email_invoice_id = invoiceId;
+  }
+  const { error: updateErr } = await supabaseAdmin
+    .from("profiles")
+    .update(updatePayload)
+    .eq("user_id", userId);
+  if (updateErr) {
+    console.error("trial-converted: status update failed", { userId, error: updateErr.message, status });
+  }
+};
+
 Deno.serve(async (req) => {
   if (req.method !== "POST") return new Response("method_not_allowed", { status: 405 });
   const sig = req.headers.get("stripe-signature");
@@ -282,6 +447,9 @@ Deno.serve(async (req) => {
   }
 
   const obj = event.data.object as Record<string, unknown>;
+
+  // Track success/failure to mirror to dashboard at the end (fire-and-forget).
+  let mirrorSucceeded = true;
 
   try {
     switch (event.type) {
@@ -439,6 +607,12 @@ Deno.serve(async (req) => {
       }
       case "invoice.paid": {
         const subscriptionId = obj.subscription as string | undefined;
+        const billingReason = obj.billing_reason as string | undefined;
+        const invoiceId = (obj.id as string | undefined) ?? null;
+        const invoiceCustomerEmail =
+          (obj.customer_email as string | undefined) ??
+          ((obj.customer_details as { email?: string } | undefined)?.email) ??
+          undefined;
         if (subscriptionId) {
           const sub = await stripeRequest<Parameters<typeof updateProfileFromSubscription>[1]>(
             "GET",
@@ -449,6 +623,25 @@ Deno.serve(async (req) => {
           const customerId = (sub as { customer?: string }).customer ?? null;
           const userId = meta.user_id ?? (customerId ? await findUserIdForCustomer(customerId) : null);
           if (userId) await updateProfileFromSubscription(userId, sub);
+
+          // Trial-converted welcome email — only when this is a recurring cycle
+          // invoice AND the user came off a trial (trial_ends_at was set).
+          // Idempotent via profiles.trial_converted_email_sent_at.
+          if (userId && billingReason === "subscription_cycle") {
+            const { data: trialProfile } = await supabaseAdmin
+              .from("profiles")
+              .select("trial_ends_at, email")
+              .eq("user_id", userId)
+              .maybeSingle();
+            if (trialProfile?.trial_ends_at) {
+              await sendTrialConvertedEmail({
+                userId,
+                customerEmail: invoiceCustomerEmail ?? trialProfile.email ?? undefined,
+                invoiceId,
+                eventType: event.type,
+              });
+            }
+          }
         }
         break;
       }
@@ -458,8 +651,38 @@ Deno.serve(async (req) => {
     }
   } catch (err) {
     console.error("webhook handler error", event.type, err);
+    mirrorSucceeded = false;
+    // Mirror the failure too so the dashboard sees it.
+    void mirrorToDashboard(event, false).catch(() => {});
     return new Response("handler_error", { status: 500 });
   }
 
+  // Fire-and-forget mirror to the dashboard for InfraHealth widget.
+  void mirrorToDashboard(event, mirrorSucceeded).catch(() => {});
   return new Response("ok", { status: 200 });
 });
+
+async function mirrorToDashboard(
+  event: { type: string; data: { object: Record<string, unknown> }; id?: string; livemode?: boolean; created?: number },
+  succeeded: boolean,
+): Promise<void> {
+  const secret = Deno.env.get("STRIPE_MIRROR_SECRET");
+  if (!secret) return;
+  try {
+    await fetch("https://winning.basecampdigital.pro/api/webhooks/stripe-mirror", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        authorization: `Bearer ${secret}`,
+      },
+      body: JSON.stringify({
+        event_id: event.id ?? "unknown",
+        event_type: event.type,
+        succeeded,
+        payload: { livemode: event.livemode ?? null, created: event.created ?? null },
+      }),
+    });
+  } catch (err) {
+    console.error("stripe-mirror dashboard fire-and-forget failed", err);
+  }
+}
