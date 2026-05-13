@@ -98,7 +98,7 @@ export default function AfctPracticeTestPage() {
         </div>
 
         <BrandHero
-          src="/images/generated/afct-practice-test-hero.png"
+          src="/images/generated/afct-practice-test-hero.png?v=2"
           alt="Active-duty service member studying for the AFCT at a military Education Center desk."
           width={1536}
           height={1024}
