@@ -1,5 +1,8 @@
 import { handleCors, CORS_HEADERS } from "../_shared/cors.ts";
 import { requireUser } from "../_shared/auth.ts";
+import { initSentry, captureException } from "../_shared/sentry.ts";
+
+initSentry({ surface: "delete-account" });
 
 Deno.serve(async (req: Request) => {
   // Handle CORS preflight
@@ -15,6 +18,9 @@ Deno.serve(async (req: Request) => {
 
     if (error) {
       console.error("deleteUser error:", error);
+      await captureException(error, {
+        tags: { provider: "supabase-auth", user_id: userId },
+      });
       return new Response(
         JSON.stringify({ error: "Failed to delete account", details: error.message }),
         { status: 500, headers: { "Content-Type": "application/json", ...CORS_HEADERS } }
@@ -29,6 +35,7 @@ Deno.serve(async (req: Request) => {
     if (err instanceof Response) return addCorsHeaders(err);
 
     console.error("Unexpected error:", err);
+    await captureException(err);
     return new Response(
       JSON.stringify({ error: "Internal server error" }),
       { status: 500, headers: { "Content-Type": "application/json", ...CORS_HEADERS } }

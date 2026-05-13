@@ -1,3 +1,5 @@
+import { sentry } from "./_sentry";
+
 interface Env {
   LISTMONK_URL: string;
   LISTMONK_API_USER: string;
@@ -11,6 +13,9 @@ interface Env {
   LISTMONK_TEMPLATE_GT_BOOSTER?: string;
   LISTMONK_TEMPLATE_PC_TIPS?: string;
   RATE_LIMIT_KV?: KVNamespace;
+  ASVABHERO_SENTRY_DSN_EDGE?: string;
+  ASVABHERO_ENV?: string;
+  ASVABHERO_RELEASE?: string;
 }
 
 /**
@@ -77,8 +82,9 @@ export const onRequestOptions: PagesFunction<Env> = ({ request }) => {
   });
 };
 
-export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
+export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUntil }) => {
   const cors = corsHeaders(request.headers.get("Origin"));
+  const sntry = sentry(env, "signup");
 
   try {
     const LISTMONK_URL = (env.LISTMONK_URL || "").trim().replace(/\/+$/, "");
@@ -162,6 +168,14 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     if (!upstream.ok) {
       const detail = await upstream.text().catch(() => "");
       console.error("listmonk upstream", upstream.status, detail.slice(0, 500));
+      waitUntil(
+        sntry.captureMessage(`listmonk subscriber-create non-2xx (${upstream.status})`, {
+          level: "warning",
+          fingerprint: ["vendor-non-2xx", "listmonk", "signup-subscriber-create"],
+          tags: { provider: "listmonk", listmonk_status: upstream.status, tag: body.tag ?? "none" },
+          extra: { detail: detail.slice(0, 500), email_domain: email.split("@")[1] },
+        }),
+      );
       return json({ error: "upstream_error", status: upstream.status }, 502, cors);
     }
 
@@ -182,15 +196,34 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
         if (!tx.ok) {
           const detail = await tx.text().catch(() => "");
           console.error("listmonk tx", tx.status, detail.slice(0, 500));
+          // Welcome-tx is fire-and-forget by design — we still 200 to the
+          // client so signup UX is non-blocking. But the failure is real and
+          // needs to surface in Sentry, grouped per-template so a Listmonk
+          // outage looks like one issue, not N.
+          waitUntil(
+            sntry.captureMessage(`listmonk welcome-tx non-2xx (${tx.status})`, {
+              level: "warning",
+              fingerprint: ["vendor-non-2xx", "listmonk", "signup-welcome-tx", body.tag ?? "default"],
+              tags: { provider: "listmonk", template: body.tag ?? "default", listmonk_status: tx.status },
+              extra: { detail: detail.slice(0, 500), template_id: welcomeTemplateId },
+            }),
+          );
         }
       } catch (err) {
         console.error("listmonk tx threw", err);
+        waitUntil(
+          sntry.captureException(err, {
+            tags: { provider: "listmonk", template: body.tag ?? "default" },
+            fingerprint: ["vendor-throw", "listmonk", "signup-welcome-tx"],
+          }),
+        );
       }
     }
 
     return json({ success: true }, 200, cors);
   } catch (err) {
     console.error("signup handler crashed", err);
+    await sntry.captureException(err, { tags: { provider: "listmonk" } });
     return json(
       { error: "internal_error", message: err instanceof Error ? err.message : String(err) },
       500,

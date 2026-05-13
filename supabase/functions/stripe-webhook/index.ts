@@ -6,6 +6,12 @@
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 import { verifyStripeSignature, stripeRequest } from "../_shared/stripe.ts";
+import { SUBTEST_CODES, SUBTEST_NAMES, isSubtestCode, type SubtestCode } from "../_shared/subtests.ts";
+import { initSentry, captureException, captureMessage } from "../_shared/sentry.ts";
+
+initSentry({ surface: "stripe-webhook" });
+
+const STALE_PROCESSING_MS = 5 * 60 * 1000;
 
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL") ?? Deno.env.get("ASVABHERO_SUPABASE_URL")!;
 const SERVICE_KEY =
@@ -74,6 +80,93 @@ const extractFirstName = (rawName: string | null | undefined): string | null => 
   return candidate;
 };
 
+type TrialConvertedPersonalization = {
+  attemptsCount: number;
+  accuracyPct: number;
+  weakestSubtestName: string | null;
+};
+
+// Pull lifetime practice activity for the T+1 email. Returns null when the user
+// has no scoreable attempts, the JSON is unusable, or any DB error fires —
+// callers fall back to the generic body. Never throws.
+const getTrialConvertedPersonalization = async (
+  userId: string,
+): Promise<TrialConvertedPersonalization | null> => {
+  try {
+    const { data, error } = await supabaseAdmin
+      .from("attempts")
+      .select("correct_count, question_count, results_by_subtest")
+      .eq("user_id", userId);
+
+    if (error) {
+      console.error("trial-converted personalization: query failed", {
+        userId,
+        error: error.message,
+      });
+      return null;
+    }
+
+    const rows = data ?? [];
+    if (rows.length === 0) return null;
+
+    let totalCorrect = 0;
+    let totalQuestions = 0;
+    const subtestTotals = new Map<SubtestCode, { correct: number; seen: number }>();
+
+    for (const row of rows) {
+      const rc = Number(row.correct_count ?? 0);
+      const rq = Number(row.question_count ?? 0);
+      if (Number.isFinite(rc) && rc >= 0) totalCorrect += rc;
+      if (Number.isFinite(rq) && rq >= 0) totalQuestions += rq;
+
+      const rbs = row.results_by_subtest;
+      if (!rbs || typeof rbs !== "object" || Array.isArray(rbs)) continue;
+      for (const [code, value] of Object.entries(rbs as Record<string, unknown>)) {
+        if (!isSubtestCode(code)) continue;
+        if (!value || typeof value !== "object") continue;
+        const v = value as Record<string, unknown>;
+        const correct = Number(v.correct ?? 0);
+        const seen = Number(v.seen ?? 0);
+        if (!Number.isFinite(correct) || !Number.isFinite(seen)) continue;
+        if (correct < 0 || seen < 0) continue;
+        const prev = subtestTotals.get(code) ?? { correct: 0, seen: 0 };
+        subtestTotals.set(code, {
+          correct: prev.correct + correct,
+          seen: prev.seen + seen,
+        });
+      }
+    }
+
+    if (totalQuestions === 0) return null;
+
+    const accuracyPct = Math.round((totalCorrect / totalQuestions) * 100);
+
+    // Weakest: lowest correct/seen with seen >= 5. Tie-break by canonical
+    // SUBTEST_CODES order so the same user always gets the same answer.
+    let weakest: { code: SubtestCode; rate: number } | null = null;
+    for (const code of SUBTEST_CODES) {
+      const tot = subtestTotals.get(code);
+      if (!tot || tot.seen < 5) continue;
+      const rate = tot.correct / tot.seen;
+      if (weakest === null || rate < weakest.rate) {
+        weakest = { code, rate };
+      }
+    }
+
+    return {
+      attemptsCount: rows.length,
+      accuracyPct,
+      weakestSubtestName: weakest ? SUBTEST_NAMES[weakest.code] : null,
+    };
+  } catch (err) {
+    console.error("trial-converted personalization: threw", {
+      userId,
+      error: String(err),
+    });
+    return null;
+  }
+};
+
 const renderWelcomePaid = (firstName: string): string => `\
 <p>Hi ${firstName},</p>
 
@@ -93,11 +186,24 @@ const renderWelcomePaid = (firstName: string): string => `\
 <p>Trish<br>ASVAB Hero</p>
 `;
 
-const renderWelcomeTrialConverted = (firstName: string): string => `\
+const renderTrialConvertedStatsLine = (p: TrialConvertedPersonalization): string => {
+  const attemptsWord = p.attemptsCount === 1 ? "practice attempt" : "practice attempts";
+  if (p.weakestSubtestName) {
+    return `<p>For what it is worth, you have logged ${p.attemptsCount} ${attemptsWord} at ${p.accuracyPct}% accuracy so far, and your weakest area is ${p.weakestSubtestName}. That is exactly the kind of signal Pro is built to chew on.</p>`;
+  }
+  return `<p>For what it is worth, you have logged ${p.attemptsCount} ${attemptsWord} at ${p.accuracyPct}% accuracy so far. That is exactly the kind of signal Pro is built to chew on.</p>`;
+};
+
+const renderWelcomeTrialConverted = (
+  firstName: string,
+  personalization: TrialConvertedPersonalization | null,
+): string => {
+  const statsLine = personalization ? `\n${renderTrialConvertedStatsLine(personalization)}\n` : "";
+  return `\
 <p>Hi ${firstName},</p>
 
 <p>You made it through the trial, your payment went through, and your ASVAB Hero Pro access is officially locked in.</p>
-
+${statsLine}
 <p>That means you can keep building without losing momentum:</p>
 <ul>
   <li>Unlimited adaptive practice tests across all 9 subtests</li>
@@ -113,6 +219,7 @@ const renderWelcomeTrialConverted = (firstName: string): string => `\
 
 <p>Trish<br>ASVAB Hero</p>
 `;
+};
 
 const renderWelcomeTrial = (firstName: string): string => `\
 <p>Hi ${firstName},</p>
@@ -252,6 +359,12 @@ const sendWelcomeEmail = async (args: {
           resend_body: errBody.slice(0, 500),
         }),
       );
+      await captureMessage(`resend welcome non-2xx (${resp.status})`, {
+        level: "warning",
+        fingerprint: ["vendor-non-2xx", "resend", templateLabel],
+        tags: { provider: "resend", template: templateLabel, resend_status: resp.status, event_type: eventType, user_id: userId },
+        extra: { detail: errBody.slice(0, 500) },
+      });
     }
   } catch (err) {
     status = "error_throw";
@@ -265,6 +378,10 @@ const sendWelcomeEmail = async (args: {
         error: String(err),
       }),
     );
+    await captureException(err, {
+      tags: { provider: "resend", template: templateLabel, event_type: eventType, user_id: userId },
+      fingerprint: ["vendor-throw", "resend", templateLabel],
+    });
   }
 
   // On success: set timestamp + resend_id + status. On failure: only set status, leave timestamp NULL
@@ -308,38 +425,45 @@ const sendTrialConvertedEmail = async (args: {
     return;
   }
 
-  // Re-fetch profile for idempotency + display_name + email fallback.
-  const { data: profile, error: profileErr } = await supabaseAdmin
+  // Atomic claim: flip status to 'sending' iff no prior successful send is
+  // recorded AND no concurrent delivery is in flight. Returns the row only when
+  // this invocation owns the send — survives Stripe webhook retries delivering
+  // the same invoice.paid event in parallel.
+  const { data: claimed, error: claimErr } = await supabaseAdmin
     .from("profiles")
-    .select("trial_converted_email_sent_at, display_name, email")
+    .update({
+      trial_converted_email_status: "sending",
+      trial_converted_email_invoice_id: invoiceId,
+    })
     .eq("user_id", userId)
+    .is("trial_converted_email_sent_at", null)
+    .or("trial_converted_email_status.is.null,trial_converted_email_status.neq.sending")
+    .select("display_name, email")
     .maybeSingle();
 
-  if (profileErr) {
-    console.error("trial-converted: profile read failed", { userId, error: profileErr.message });
+  if (claimErr) {
+    console.error("trial-converted: claim failed", { userId, error: claimErr.message });
     return;
   }
-  if (!profile) {
-    console.log("trial-converted: profile not found, skipping", { userId });
-    return;
-  }
-  if (profile.trial_converted_email_sent_at) {
-    console.log("trial-converted: already sent, skipping", {
-      userId,
-      sent_at: profile.trial_converted_email_sent_at,
-    });
+  if (!claimed) {
+    console.log("trial-converted: not claimed (already sent or in flight), skipping", { userId });
     return;
   }
 
-  const recipientEmail = customerEmail || profile.email;
+  const recipientEmail = customerEmail || claimed.email;
   if (!recipientEmail) {
-    console.log("trial-converted: no recipient email, skipping", { userId });
+    console.log("trial-converted: no recipient email after claim, releasing", { userId });
+    await supabaseAdmin
+      .from("profiles")
+      .update({ trial_converted_email_status: "error_no_recipient" })
+      .eq("user_id", userId);
     return;
   }
 
-  const greetingName = profile.display_name ?? "there";
+  const greetingName = claimed.display_name ?? "there";
+  const personalization = await getTrialConvertedPersonalization(userId);
   const subject = "Your ASVAB Hero Pro access is officially locked in";
-  const html = renderWelcomeTrialConverted(greetingName);
+  const html = renderWelcomeTrialConverted(greetingName, personalization);
 
   let resendId: string | null = null;
   let status: string;
@@ -393,6 +517,12 @@ const sendTrialConvertedEmail = async (args: {
           resend_body: errBody.slice(0, 500),
         }),
       );
+      await captureMessage(`resend trial-converted non-2xx (${resp.status})`, {
+        level: "warning",
+        fingerprint: ["vendor-non-2xx", "resend", "trial-converted"],
+        tags: { provider: "resend", template: "trial-converted", resend_status: resp.status, event_type: eventType, user_id: userId },
+        extra: { detail: errBody.slice(0, 500), invoice_id: invoiceId },
+      });
     }
   } catch (err) {
     status = "error_throw";
@@ -407,6 +537,10 @@ const sendTrialConvertedEmail = async (args: {
         error: String(err),
       }),
     );
+    await captureException(err, {
+      tags: { provider: "resend", template: "trial-converted", event_type: eventType, user_id: userId },
+      fingerprint: ["vendor-throw", "resend", "trial-converted"],
+    });
   }
 
   // On success: stamp timestamp + resend_id + invoice_id + status. On failure:
@@ -427,6 +561,91 @@ const sendTrialConvertedEmail = async (args: {
   }
 };
 
+// Idempotency wrapper: claim or skip the event row in stripe_webhook_events.
+// Returns { proceed: true, eventRowId } if the handler should process this event,
+// or { proceed: false } if we should return 200 immediately (replay or concurrent run).
+type ClaimResult = { proceed: true; eventRowId: string } | { proceed: false; reason: string };
+
+const claimEvent = async (event: {
+  id: string;
+  type: string;
+  livemode?: boolean;
+  api_version?: string;
+  created: number;
+}): Promise<ClaimResult> => {
+  const { data: existing } = await supabaseAdmin
+    .from("stripe_webhook_events")
+    .select("id, status, attempt_count, updated_at")
+    .eq("stripe_event_id", event.id)
+    .maybeSingle();
+
+  if (existing?.status === "processed") {
+    return { proceed: false, reason: "already_processed" };
+  }
+
+  if (existing?.status === "processing") {
+    const updatedAt = new Date(existing.updated_at).getTime();
+    if (Date.now() - updatedAt < STALE_PROCESSING_MS) {
+      return { proceed: false, reason: "concurrent_processing" };
+    }
+    // Stale — try to reclaim. Status guard makes this race-safe: only one
+    // worker's UPDATE will return a row; losers see no rows and bow out.
+    const { data: reclaimed } = await supabaseAdmin
+      .from("stripe_webhook_events")
+      .update({
+        attempt_count: existing.attempt_count + 1,
+        updated_at: new Date().toISOString(),
+      })
+      .eq("id", existing.id)
+      .eq("status", "processing")
+      .lt("updated_at", new Date(Date.now() - STALE_PROCESSING_MS).toISOString())
+      .select("id")
+      .maybeSingle();
+    if (!reclaimed) return { proceed: false, reason: "lost_reclaim_race" };
+    return { proceed: true, eventRowId: reclaimed.id };
+  }
+
+  if (existing?.status === "failed") {
+    // Stripe is retrying a known-failed event. Re-enter processing, race-guarded
+    // on status='failed' so two retries can't both proceed.
+    const { data: reentered } = await supabaseAdmin
+      .from("stripe_webhook_events")
+      .update({
+        status: "processing",
+        attempt_count: existing.attempt_count + 1,
+        last_error: null,
+        updated_at: new Date().toISOString(),
+      })
+      .eq("id", existing.id)
+      .eq("status", "failed")
+      .select("id")
+      .maybeSingle();
+    if (!reentered) return { proceed: false, reason: "lost_failed_reentry_race" };
+    return { proceed: true, eventRowId: reentered.id };
+  }
+
+  // No row — INSERT. On unique-violation race, the loser returns 200 and lets
+  // the winner own the event.
+  const { data: inserted, error: insertErr } = await supabaseAdmin
+    .from("stripe_webhook_events")
+    .insert({
+      stripe_event_id: event.id,
+      event_type: event.type,
+      livemode: !!event.livemode,
+      api_version: event.api_version ?? null,
+      stripe_created: new Date(event.created * 1000).toISOString(),
+      payload: event,
+      status: "processing",
+      attempt_count: 1,
+    })
+    .select("id")
+    .single();
+  if (insertErr) {
+    return { proceed: false, reason: `insert_conflict_or_error:${insertErr.code ?? "?"}` };
+  }
+  return { proceed: true, eventRowId: inserted.id };
+};
+
 Deno.serve(async (req) => {
   if (req.method !== "POST") return new Response("method_not_allowed", { status: 405 });
   const sig = req.headers.get("stripe-signature");
@@ -436,14 +655,51 @@ Deno.serve(async (req) => {
   const verify = await verifyStripeSignature(rawBody, sig, WEBHOOK_SECRET);
   if (!verify.ok) {
     console.error("verify failed", verify.reason);
+    await captureMessage(`stripe signature verify failed: ${verify.reason}`, {
+      level: "error",
+      tags: { provider: "stripe", verify_reason: verify.reason },
+      fingerprint: ["stripe-signature-fail"],
+    });
     return new Response(`bad_signature: ${verify.reason}`, { status: 400 });
   }
 
-  let event: { type: string; data: { object: Record<string, unknown> } };
+  let event: {
+    id?: string;
+    type: string;
+    livemode?: boolean;
+    api_version?: string;
+    created?: number;
+    data: { object: Record<string, unknown> };
+  };
   try {
     event = JSON.parse(rawBody);
   } catch {
     return new Response("bad_json", { status: 400 });
+  }
+
+  // Idempotency: claim or skip via stripe_webhook_events.
+  let eventRowId: string | null = null;
+  if (event.id && event.created !== undefined) {
+    const claim = await claimEvent({
+      id: event.id,
+      type: event.type,
+      livemode: event.livemode,
+      api_version: event.api_version,
+      created: event.created,
+    });
+    if (!claim.proceed) {
+      console.log("stripe-webhook: skipping", { event_id: event.id, type: event.type, reason: claim.reason });
+      return new Response("ok", { status: 200 });
+    }
+    eventRowId = claim.eventRowId;
+  } else {
+    // Stripe events always have id + created; treat absence as a malformed event
+    // worth flagging but not crashing on.
+    await captureMessage("stripe event missing id or created", {
+      level: "warning",
+      tags: { event_type: event.type },
+      fingerprint: ["stripe-malformed-event"],
+    });
   }
 
   const obj = event.data.object as Record<string, unknown>;
@@ -506,7 +762,7 @@ Deno.serve(async (req) => {
         if (listmonkUrl && listmonkUser && listmonkToken && listmonkListId && customerEmail) {
           try {
             const auth = btoa(`${listmonkUser}:${listmonkToken}`);
-            await fetch(`${listmonkUrl}/api/subscribers`, {
+            const lmResp = await fetch(`${listmonkUrl}/api/subscribers`, {
               method: "POST",
               headers: { "Content-Type": "application/json", Authorization: `Basic ${auth}` },
               body: JSON.stringify({
@@ -517,8 +773,23 @@ Deno.serve(async (req) => {
                 attribs: { source: "trial-start" },
               }),
             });
+            // 409 = already subscribed (expected). Anything else non-2xx is real.
+            if (!lmResp.ok && lmResp.status !== 409) {
+              const detail = await lmResp.text().catch(() => "");
+              console.error("listmonk trial-start non-2xx", lmResp.status, detail.slice(0, 500));
+              await captureMessage(`listmonk trial-start non-2xx (${lmResp.status})`, {
+                level: "warning",
+                fingerprint: ["vendor-non-2xx", "listmonk", "trial-start-sync"],
+                tags: { provider: "listmonk", listmonk_status: lmResp.status, event_type: event.type },
+                extra: { detail: detail.slice(0, 500) },
+              });
+            }
           } catch (err) {
-            console.error("listmonk trial-start sync failed", err);
+            console.error("listmonk trial-start sync threw", err);
+            await captureException(err, {
+              tags: { provider: "listmonk", event_type: event.type },
+              fingerprint: ["vendor-throw", "listmonk", "trial-start-sync"],
+            });
           }
         }
 
@@ -535,6 +806,8 @@ Deno.serve(async (req) => {
       case "customer.subscription.trial_will_end": {
         // Stripe fires this 3 days before trial end. Send a Listmonk transactional
         // reminder so the user knows the auto-charge is coming.
+        // Idempotent via profiles.trial_ending_email_sent_at — protects against
+        // Stripe replays AND re-runs after stale-processing reclaim.
         const customerId = (obj.customer as string) ?? null;
         const listmonkUrl = Deno.env.get("LISTMONK_URL");
         const listmonkUser = Deno.env.get("LISTMONK_API_USER");
@@ -548,20 +821,30 @@ Deno.serve(async (req) => {
           console.log("trial_will_end: listmonk env vars not set, skipping");
           break;
         }
-        // Resolve the user's email from profile (looked up by stripe_customer_id).
+        // Resolve user_id + email from profile (looked up by stripe_customer_id).
         let recipientEmail: string | null = null;
+        let recipientUserId: string | null = null;
+        let alreadySent = false;
         if (customerId) {
           const { data } = await supabaseAdmin
             .from("profiles")
-            .select("email")
+            .select("user_id, email, trial_ending_email_sent_at")
             .eq("stripe_customer_id", customerId)
             .maybeSingle();
           recipientEmail = data?.email ?? null;
+          recipientUserId = data?.user_id ?? null;
+          alreadySent = !!data?.trial_ending_email_sent_at;
         }
-        if (!recipientEmail) {
-          console.log("trial_will_end: could not resolve email for customer", customerId);
+        if (!recipientEmail || !recipientUserId) {
+          console.log("trial_will_end: could not resolve email/user for customer", customerId);
           break;
         }
+        if (alreadySent) {
+          console.log("trial_will_end: already sent, skipping", { userId: recipientUserId });
+          break;
+        }
+        let txStatus: string;
+        let txOk = false;
         try {
           const auth = btoa(`${listmonkUser}:${listmonkToken}`);
           const tx = await fetch(`${listmonkUrl}/api/tx`, {
@@ -572,13 +855,41 @@ Deno.serve(async (req) => {
               template_id: parseInt(trialTemplateId, 10),
             }),
           });
-          if (!tx.ok) {
+          if (tx.ok) {
+            txStatus = "sent";
+            txOk = true;
+          } else {
             const detail = await tx.text().catch(() => "");
             console.error("trial_will_end listmonk tx", tx.status, detail.slice(0, 500));
+            txStatus = `error_${tx.status}`;
+            await captureMessage(`listmonk trial-ending non-2xx (${tx.status})`, {
+              level: "warning",
+              fingerprint: ["vendor-non-2xx", "listmonk", "trial-ending"],
+              tags: { provider: "listmonk", listmonk_status: tx.status, event_type: event.type },
+              extra: { detail: detail.slice(0, 500), user_id: recipientUserId },
+            });
           }
         } catch (err) {
           console.error("trial_will_end listmonk tx threw", err);
+          txStatus = "error_throw";
+          await captureException(err, {
+            tags: { provider: "listmonk", event_type: event.type, user_id: recipientUserId },
+            fingerprint: ["vendor-throw", "listmonk", "trial-ending"],
+          });
         }
+        // Persist status either way; only stamp sent_at on success so a future
+        // retry script can find this row via the profiles_trial_ending_email_pending_idx.
+        const updatePayload: Record<string, unknown> = {
+          trial_ending_email_status: txStatus,
+          trial_ending_email_stripe_event_id: (event as unknown as { id?: string }).id ?? null,
+        };
+        if (txOk) {
+          updatePayload.trial_ending_email_sent_at = new Date().toISOString();
+        }
+        await supabaseAdmin
+          .from("profiles")
+          .update(updatePayload)
+          .eq("user_id", recipientUserId);
         break;
       }
       case "customer.subscription.updated":
@@ -652,9 +963,40 @@ Deno.serve(async (req) => {
   } catch (err) {
     console.error("webhook handler error", event.type, err);
     mirrorSucceeded = false;
+    // Persist failure to stripe_webhook_events so the next Stripe retry
+    // re-enters via the failed → processing path.
+    if (eventRowId) {
+      await supabaseAdmin
+        .from("stripe_webhook_events")
+        .update({
+          status: "failed",
+          last_error: String(err).slice(0, 1000),
+          updated_at: new Date().toISOString(),
+        })
+        .eq("id", eventRowId);
+    }
+    await captureException(err, {
+      tags: {
+        provider: "stripe",
+        event_type: event.type,
+        stripe_event_id: event.id ?? null,
+      },
+    });
     // Mirror the failure too so the dashboard sees it.
     void mirrorToDashboard(event, false).catch(() => {});
     return new Response("handler_error", { status: 500 });
+  }
+
+  // Mark processed in the receipt table so future replays return 200 fast.
+  if (eventRowId) {
+    await supabaseAdmin
+      .from("stripe_webhook_events")
+      .update({
+        status: "processed",
+        processed_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      })
+      .eq("id", eventRowId);
   }
 
   // Fire-and-forget mirror to the dashboard for InfraHealth widget.

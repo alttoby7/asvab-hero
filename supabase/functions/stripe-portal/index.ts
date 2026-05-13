@@ -5,6 +5,9 @@
 import { handleCors, corsHeaders } from "../_shared/cors.ts";
 import { requireUser } from "../_shared/auth.ts";
 import { stripeRequest } from "../_shared/stripe.ts";
+import { initSentry, captureException } from "../_shared/sentry.ts";
+
+initSentry({ surface: "stripe-portal" });
 
 const json = (status: number, data: unknown) =>
   new Response(JSON.stringify(data), {
@@ -48,6 +51,7 @@ Deno.serve(async (req) => {
   } catch (err) {
     if (err instanceof Response) return addCors(err);
     console.error("stripe-portal error:", err);
+    await captureException(err, { tags: { provider: "stripe" } });
     return json(500, { error: err instanceof Error ? err.message : "internal_error" });
   }
 });
