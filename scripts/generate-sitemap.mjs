@@ -67,6 +67,8 @@ const pages = [
   { path: "/best-asvab-online-prep", priority: "0.85", changefreq: "monthly" },
   { path: "/free-asvab-practice-tests", priority: "0.9", changefreq: "monthly" },
   { path: "/afct", priority: "0.8", changefreq: "monthly" },
+  { path: "/afct-practice-test", priority: "0.9", changefreq: "monthly" },
+  { path: "/bsep", priority: "0.8", changefreq: "monthly" },
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
