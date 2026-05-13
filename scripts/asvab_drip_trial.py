@@ -43,6 +43,23 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
+# Sentry helper lives next to this script on the droplet (/root/scripts/).
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from sentry_helper import (
+        init_sentry,
+        run_with_checkin,
+        sentry_capture_exception,
+        sentry_capture_message,
+        MONITOR_CONFIG_HOURLY,
+    )
+except ImportError:
+    def init_sentry(env, surface): return False  # type: ignore
+    def run_with_checkin(slug, monitor_config, fn): return fn()  # type: ignore
+    def sentry_capture_exception(err, **tags): pass  # type: ignore
+    def sentry_capture_message(msg, **kw): pass  # type: ignore
+    MONITOR_CONFIG_HOURLY = {}  # type: ignore
+
 DEFAULT_ENV_PATH = "/root/.env"
 RESEND_URL = "https://api.resend.com/emails"
 FROM_ADDR = "Trish at ASVAB Hero <info@asvabhero.com>"
@@ -201,6 +218,16 @@ def resend_send(api_key: str, to_email: str, subject: str, html: str) -> tuple[b
         except json.JSONDecodeError:
             return True, None, status
     err(f"[trial_drip] resend_error status={status} body={resp_body[:300]!r}")
+    sentry_capture_message(
+        f"resend trial-drip non-2xx ({status})",
+        level="warning",
+        fingerprint=["vendor-non-2xx", "resend", "drip-trial"],
+        provider="resend",
+        job="drip-trial",
+        resend_status=status,
+        to_email=to_email,
+        subject=subject,
+    )
     return False, None, status
 
 
@@ -502,6 +529,7 @@ def main() -> int:
     args = parser.parse_args()
 
     env = load_env(args.env)
+    init_sentry(env, surface="drip-trial")
     base_url = require_env(env, "ASVABHERO_SUPABASE_URL")
     service_key = require_env(env, "ASVABHERO_SUPABASE_SECRET_KEY")
     resend_key = require_env(env, "ASVAB_RESEND_API_KEY")
@@ -529,16 +557,23 @@ def main() -> int:
             job_day2(base_url, service_key, resend_key, args.dry_run, args.limit)
         except Exception as e:
             err(f"[trial_drip] job=day2 fatal_error error={e!r}")
+            sentry_capture_exception(e, job="day2")
 
     if args.job in ("all", "milestone"):
         try:
             job_milestone(base_url, service_key, resend_key, args.dry_run, args.limit)
         except Exception as e:
             err(f"[trial_drip] job=milestone fatal_error error={e!r}")
+            sentry_capture_exception(e, job="milestone")
 
     log("[trial_drip] done")
     return 0
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    rc = run_with_checkin(
+        slug="asvab-drip-trial",
+        monitor_config=MONITOR_CONFIG_HOURLY,
+        fn=main,
+    )
+    sys.exit(rc if isinstance(rc, int) else 0)

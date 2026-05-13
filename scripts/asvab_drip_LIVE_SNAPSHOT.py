@@ -27,10 +27,30 @@ import urllib.request
 import urllib.error
 import datetime as dt
 
+# Sentry helper lives next to this script on the droplet (/root/scripts/).
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+try:
+    from sentry_helper import (
+        init_sentry,
+        run_with_checkin,
+        sentry_capture_exception,
+        sentry_capture_message,
+        MONITOR_CONFIG_DAILY_2AM_UTC,
+    )
+except ImportError:
+    # Helper missing — soft-fail to keep the cron running even if deploy lagged.
+    def init_sentry(env, surface): return False  # type: ignore
+    def run_with_checkin(slug, monitor_config, fn): return fn()  # type: ignore
+    def sentry_capture_exception(err, **tags): pass  # type: ignore
+    def sentry_capture_message(msg, **kw): pass  # type: ignore
+    MONITOR_CONFIG_DAILY_2AM_UTC = {}  # type: ignore
+
 URL = os.environ["LISTMONK_URL"].rstrip("/")
 USER = os.environ["LISTMONK_API_USER"]
 TOKEN = os.environ["LISTMONK_API_TOKEN"]
 LIST_ID = int(os.environ["LISTMONK_LIST_ID"])
+
+init_sentry(os.environ, surface="drip-listmonk")
 
 DRIP_SCHEDULE = {
     2: 7,    # Day 2: WK mistakes
@@ -104,6 +124,17 @@ def send_drip(sub, day, template_id, sent_so_far):
     r = api("POST", "/api/tx", payload)
     if "error" in r:
         print(f"  FAIL day {day} -> {email}: {r}", file=sys.stderr)
+        sentry_capture_message(
+            f"listmonk drip non-2xx (day {day})",
+            level="warning",
+            fingerprint=["vendor-non-2xx", "listmonk", "drip-listmonk", f"day-{day}"],
+            provider="listmonk",
+            job="drip-listmonk",
+            day=day,
+            template_id=template_id,
+            email=email,
+            listmonk_status=r.get("status"),
+        )
         return False
 
     new_sent = sorted(set(sent_so_far) | {day})
@@ -154,4 +185,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    run_with_checkin(
+        slug="asvab-drip-listmonk",
+        monitor_config=MONITOR_CONFIG_DAILY_2AM_UTC,
+        fn=main,
+    )
