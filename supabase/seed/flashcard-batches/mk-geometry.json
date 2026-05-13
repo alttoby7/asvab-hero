@@ -1,0 +1,218 @@
+{
+  "deck": {
+    "slug": "mk.geometry",
+    "topic_id": "mk.geometry",
+    "title": "Math Knowledge — Geometry",
+    "description": "Area, volume, angle, and triangle facts you'll need for the ASVAB MK subtest.",
+    "active": true
+  },
+  "cards": [
+    {
+      "external_key": "MKGE-001",
+      "topic_id": "mk.geometry",
+      "difficulty": 1,
+      "front": "Area of a rectangle?",
+      "back": "A = length × width",
+      "explanation": "A square is the special case where length = width, so A = s².",
+      "sort_order": 1
+    },
+    {
+      "external_key": "MKGE-002",
+      "topic_id": "mk.geometry",
+      "difficulty": 1,
+      "front": "Sum of interior angles in any triangle?",
+      "back": "180°",
+      "explanation": "True for every triangle — if you know two angles, subtract their sum from 180° to find the third.",
+      "sort_order": 2
+    },
+    {
+      "external_key": "MKGE-003",
+      "topic_id": "mk.geometry",
+      "difficulty": 1,
+      "front": "What does π (pi) approximately equal?",
+      "back": "π ≈ 3.14",
+      "explanation": "π is the ratio of a circle's circumference to its diameter — same for every circle.",
+      "sort_order": 3
+    },
+    {
+      "external_key": "MKGE-021",
+      "topic_id": "mk.geometry",
+      "difficulty": 1,
+      "front": "Perimeter of a square with side s?",
+      "back": "P = 4s",
+      "explanation": "All four sides are equal, so add s four times — distinct from area (s²) and from the rectangle perimeter formula.",
+      "sort_order": 4
+    },
+    {
+      "external_key": "MKGE-004",
+      "topic_id": "mk.geometry",
+      "difficulty": 2,
+      "front": "Area of a square with side s?",
+      "back": "A = s²",
+      "explanation": "Just length × width where both sides equal s — don't confuse with perimeter (4s).",
+      "sort_order": 5
+    },
+    {
+      "external_key": "MKGE-005",
+      "topic_id": "mk.geometry",
+      "difficulty": 2,
+      "front": "Perimeter of a rectangle?",
+      "back": "P = 2 × (length + width)",
+      "explanation": "Equivalent to 2L + 2W — add all four sides; opposite sides are equal.",
+      "sort_order": 6
+    },
+    {
+      "external_key": "MKGE-006",
+      "topic_id": "mk.geometry",
+      "difficulty": 2,
+      "front": "Area of a circle with radius r?",
+      "back": "A = πr²",
+      "explanation": "Square the radius first, then multiply by π — common mistake is to use diameter instead of radius.",
+      "sort_order": 7
+    },
+    {
+      "external_key": "MKGE-007",
+      "topic_id": "mk.geometry",
+      "difficulty": 2,
+      "front": "Two angles are complementary if their sum is...?",
+      "back": "90°",
+      "explanation": "Complementary = Corner (90°); the alphabetical pairing with supplementary helps you remember the order.",
+      "sort_order": 8
+    },
+    {
+      "external_key": "MKGE-022",
+      "topic_id": "mk.geometry",
+      "difficulty": 2,
+      "front": "Two angles are supplementary if their sum is...?",
+      "back": "180°",
+      "explanation": "Supplementary = Straight line (180°) — two angles on a straight line are always supplementary.",
+      "sort_order": 9
+    },
+    {
+      "external_key": "MKGE-008",
+      "topic_id": "mk.geometry",
+      "difficulty": 2,
+      "front": "Diameter of a circle in terms of radius?",
+      "back": "d = 2r",
+      "explanation": "The diameter passes through the center and equals twice the radius.",
+      "sort_order": 10
+    },
+    {
+      "external_key": "MKGE-009",
+      "topic_id": "mk.geometry",
+      "difficulty": 2,
+      "front": "Volume of a cube with side s?",
+      "back": "V = s³",
+      "explanation": "Length × width × height where all three are s — units are cubic (e.g., cm³).",
+      "sort_order": 11
+    },
+    {
+      "external_key": "MKGE-023",
+      "topic_id": "mk.geometry",
+      "difficulty": 2,
+      "front": "Volume of a rectangular prism (box)?",
+      "back": "V = length × width × height",
+      "explanation": "Generalizes the cube formula — when l = w = h = s, this collapses to V = s³.",
+      "sort_order": 12
+    },
+    {
+      "external_key": "MKGE-010",
+      "topic_id": "mk.geometry",
+      "difficulty": 3,
+      "front": "Area of a triangle?",
+      "back": "A = ½ × b × h",
+      "explanation": "The ½ comes from the fact that a triangle is half a parallelogram with the same base and height.",
+      "sort_order": 13
+    },
+    {
+      "external_key": "MKGE-011",
+      "topic_id": "mk.geometry",
+      "difficulty": 3,
+      "front": "Pythagorean theorem?",
+      "back": "a² + b² = c²",
+      "explanation": "Only works for right triangles; c is always the hypotenuse (longest side, opposite the right angle).",
+      "sort_order": 14
+    },
+    {
+      "external_key": "MKGE-012",
+      "topic_id": "mk.geometry",
+      "difficulty": 3,
+      "front": "Circumference of a circle?",
+      "back": "C = 2πr or πd",
+      "explanation": "Both forms are equal because diameter = 2r — pick whichever matches the given measurement.",
+      "sort_order": 15
+    },
+    {
+      "external_key": "MKGE-013",
+      "topic_id": "mk.geometry",
+      "difficulty": 3,
+      "front": "Area of a parallelogram?",
+      "back": "A = b × h",
+      "explanation": "Use the perpendicular height, NOT the slanted side — same formula as a rectangle since you can rearrange it into one.",
+      "sort_order": 16
+    },
+    {
+      "external_key": "MKGE-014",
+      "topic_id": "mk.geometry",
+      "difficulty": 3,
+      "front": "Area of a trapezoid?",
+      "back": "A = ½ × (b₁ + b₂) × h",
+      "explanation": "Average the two parallel bases, then multiply by the perpendicular height between them.",
+      "sort_order": 17
+    },
+    {
+      "external_key": "MKGE-015",
+      "topic_id": "mk.geometry",
+      "difficulty": 3,
+      "front": "Volume of a cylinder?",
+      "back": "V = πr²h",
+      "explanation": "It's the area of the circular base (πr²) times the height — same pattern as any prism: base area × height.",
+      "sort_order": 18
+    },
+    {
+      "external_key": "MKGE-016",
+      "topic_id": "mk.geometry",
+      "difficulty": 4,
+      "front": "Common Pythagorean triples to memorize?",
+      "back": "3-4-5 and 5-12-13 (and their multiples like 6-8-10)",
+      "explanation": "Spotting these saves time — if two sides match a known triple, the third is automatic, no calculation needed.",
+      "sort_order": 19
+    },
+    {
+      "external_key": "MKGE-017",
+      "topic_id": "mk.geometry",
+      "difficulty": 4,
+      "front": "What's true about vertical angles (formed by two intersecting lines)?",
+      "back": "Vertical angles are equal",
+      "explanation": "The two pairs of opposite (across-the-X) angles formed by intersecting lines always have equal measures.",
+      "sort_order": 20
+    },
+    {
+      "external_key": "MKGE-018",
+      "topic_id": "mk.geometry",
+      "difficulty": 4,
+      "front": "Side ratio of a 30-60-90 triangle (opposite 30°, 60°, 90°)?",
+      "back": "1 : √3 : 2",
+      "explanation": "Shortest side is opposite 30°; hypotenuse (opposite 90°) is twice the shortest — middle side equals shortest × √3.",
+      "sort_order": 21
+    },
+    {
+      "external_key": "MKGE-019",
+      "topic_id": "mk.geometry",
+      "difficulty": 4,
+      "front": "Volume of a sphere with radius r?",
+      "back": "V = (4/3)πr³",
+      "explanation": "Cube the radius, then multiply by 4π/3 — don't confuse with surface area (4πr²).",
+      "sort_order": 22
+    },
+    {
+      "external_key": "MKGE-020",
+      "topic_id": "mk.geometry",
+      "difficulty": 5,
+      "front": "Side ratio of a 45-45-90 (isosceles right) triangle?",
+      "back": "1 : 1 : √2",
+      "explanation": "Both legs are equal; the hypotenuse is a leg times √2 — comes straight from a² + a² = c², so c = a√2.",
+      "sort_order": 23
+    }
+  ]
+}

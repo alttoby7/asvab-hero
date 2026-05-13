@@ -1,0 +1,146 @@
+{
+  "deck": {
+    "slug": "ei.ohms-law-power",
+    "topic_id": "ei.ohms-law-power",
+    "title": "Electronics — Ohm's Law & Power",
+    "description": "V = IR, P = IV, and the unit conversions you'll see on the ASVAB EI subtest.",
+    "active": true
+  },
+  "cards": [
+    {
+      "external_key": "EIOH-001",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 1,
+      "front": "Identify the unit: what does a volt (V) measure?",
+      "back": "Voltage — electrical potential difference (V)",
+      "explanation": "The volt is the SI unit of electric potential and electromotive force; symbol V.",
+      "sort_order": 1
+    },
+    {
+      "external_key": "EIOH-002",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 1,
+      "front": "What does the symbol Ω represent?",
+      "back": "The ohm — the unit of electrical resistance",
+      "explanation": "Ω (capital Greek omega) is the SI symbol for ohms; 1 Ω = 1 V/A.",
+      "sort_order": 2
+    },
+    {
+      "external_key": "EIOH-003",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 2,
+      "front": "Ohm's law: voltage equals what?",
+      "back": "V = I × R (current times resistance)",
+      "explanation": "V in volts, I in amps, R in ohms. Rearranged: I = V/R and R = V/I.",
+      "sort_order": 3
+    },
+    {
+      "external_key": "EIOH-004",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 2,
+      "front": "Write the formula for electrical power in terms of current and voltage.",
+      "back": "P = I × V (watts = amps × volts)",
+      "explanation": "Power equals current multiplied by voltage; the unit is the watt (W).",
+      "sort_order": 4
+    },
+    {
+      "external_key": "EIOH-005",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 2,
+      "front": "What does an ammeter measure, and in what unit?",
+      "back": "Current, measured in amperes (amps, A)",
+      "explanation": "Current is the rate of charge flow; 1 amp = 1 coulomb per second.",
+      "sort_order": 5
+    },
+    {
+      "external_key": "EIOH-006",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 2,
+      "front": "Convert: 250 mA equals how many amps?",
+      "back": "0.25 A",
+      "explanation": "Milli- means one-thousandth, so 1 mA = 0.001 A; 250 × 0.001 = 0.25 A.",
+      "sort_order": 6
+    },
+    {
+      "external_key": "EIOH-007",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 3,
+      "front": "Calculate: 12 V is applied across a 4 Ω resistor. What is the current?",
+      "back": "3 A",
+      "explanation": "I = V/R = 12 / 4 = 3 A.",
+      "sort_order": 7
+    },
+    {
+      "external_key": "EIOH-008",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 3,
+      "front": "A 60 W bulb runs on 120 V. How much current does it draw?",
+      "back": "0.5 A",
+      "explanation": "I = P/V = 60 / 120 = 0.5 A.",
+      "sort_order": 8
+    },
+    {
+      "external_key": "EIOH-009",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 3,
+      "front": "Convert: 2.2 kΩ equals how many ohms?",
+      "back": "2,200 Ω",
+      "explanation": "Kilo- means one thousand, so 1 kΩ = 1,000 Ω; 2.2 × 1,000 = 2,200 Ω.",
+      "sort_order": 9
+    },
+    {
+      "external_key": "EIOH-010",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 3,
+      "front": "Write the power formula that uses current and resistance only.",
+      "back": "P = I² × R",
+      "explanation": "Substitute V = IR into P = IV to get P = I²R; useful when V is unknown.",
+      "sort_order": 10
+    },
+    {
+      "external_key": "EIOH-011",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 3,
+      "front": "Two 10 Ω resistors are wired in series. What is the total resistance?",
+      "back": "20 Ω",
+      "explanation": "In series, resistances add: R_total = R1 + R2 = 10 + 10 = 20 Ω.",
+      "sort_order": 11
+    },
+    {
+      "external_key": "EIOH-012",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 4,
+      "front": "Calculate the power dissipated by a 5 Ω resistor carrying 2 A.",
+      "back": "20 W",
+      "explanation": "P = I²R = (2)² × 5 = 4 × 5 = 20 W.",
+      "sort_order": 12
+    },
+    {
+      "external_key": "EIOH-013",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 4,
+      "front": "A 240 V source connects to a 60 Ω heater. How many watts does it dissipate?",
+      "back": "960 W",
+      "explanation": "P = V²/R = (240)² / 60 = 57,600 / 60 = 960 W.",
+      "sort_order": 13
+    },
+    {
+      "external_key": "EIOH-014",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 4,
+      "front": "A 9 V battery pushes 30 mA through a resistor. What is the resistor's value?",
+      "back": "300 Ω",
+      "explanation": "Convert 30 mA = 0.03 A, then R = V/I = 9 / 0.03 = 300 Ω.",
+      "sort_order": 14
+    },
+    {
+      "external_key": "EIOH-015",
+      "topic_id": "ei.ohms-law-power",
+      "difficulty": 5,
+      "front": "Two 10 Ω resistors are wired in parallel across 20 V. What is the total current from the source?",
+      "back": "4 A",
+      "explanation": "Parallel: 1/R_t = 1/10 + 1/10 = 2/10, so R_t = 5 Ω; I = V/R = 20/5 = 4 A.",
+      "sort_order": 15
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "deck": {
+    "slug": "wk.prefixes-suffixes",
+    "topic_id": "wk.prefixes-suffixes",
+    "title": "Word Knowledge — Prefixes & Suffixes",
+    "description": "Common ASVAB prefixes and suffixes. Decode unfamiliar words by their parts.",
+    "active": true
+  },
+  "cards": [
+    {
+      "external_key": "WKPS-001",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 1,
+      "front": "UN-",
+      "back": "not, opposite of (prefix)",
+      "explanation": "Examples: unhappy (not happy), undo (reverse an action), unable (not able).",
+      "sort_order": 1
+    },
+    {
+      "external_key": "WKPS-002",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 1,
+      "front": "RE-",
+      "back": "again, back (prefix)",
+      "explanation": "Examples: redo (do again), return (go back), rebuild (build again).",
+      "sort_order": 2
+    },
+    {
+      "external_key": "WKPS-003",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 1,
+      "front": "-LESS",
+      "back": "without (suffix)",
+      "explanation": "Examples: hopeless (without hope), fearless (without fear), endless (without end).",
+      "sort_order": 3
+    },
+    {
+      "external_key": "WKPS-004",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 2,
+      "front": "PRE-",
+      "back": "before (prefix)",
+      "explanation": "Examples: preview (view before), prepare (ready before), predict (say before).",
+      "sort_order": 4
+    },
+    {
+      "external_key": "WKPS-005",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 2,
+      "front": "POST-",
+      "back": "after (prefix)",
+      "explanation": "Examples: postwar (after war), postpone (put after), postscript (added after writing).",
+      "sort_order": 5
+    },
+    {
+      "external_key": "WKPS-006",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 2,
+      "front": "MIS-",
+      "back": "wrongly, badly (prefix)",
+      "explanation": "Examples: misspell (spell wrongly), misjudge (judge wrongly), misplace (put in wrong place).",
+      "sort_order": 6
+    },
+    {
+      "external_key": "WKPS-007",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 2,
+      "front": "-ABLE/-IBLE",
+      "back": "capable of, able to be (suffix)",
+      "explanation": "Examples: readable (able to be read), edible (able to be eaten), flexible (able to bend).",
+      "sort_order": 7
+    },
+    {
+      "external_key": "WKPS-008",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 2,
+      "front": "-NESS",
+      "back": "state or quality of (suffix)",
+      "explanation": "Examples: kindness (state of being kind), darkness (state of being dark), happiness (state of being happy).",
+      "sort_order": 8
+    },
+    {
+      "external_key": "WKPS-009",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 2,
+      "front": "-MENT",
+      "back": "act, process, or result of (suffix)",
+      "explanation": "Examples: agreement (act of agreeing), movement (act of moving), achievement (result of achieving).",
+      "sort_order": 9
+    },
+    {
+      "external_key": "WKPS-010",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 3,
+      "front": "ANTE-",
+      "back": "before (prefix)",
+      "explanation": "Examples: antebellum (before war), antecedent (something that comes before), anterior (front-positioned).",
+      "sort_order": 10
+    },
+    {
+      "external_key": "WKPS-011",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 3,
+      "front": "ANTI-",
+      "back": "against, opposed to (prefix)",
+      "explanation": "Examples: antiwar (against war), antibiotic (against bacteria), antifreeze (prevents freezing).",
+      "sort_order": 11
+    },
+    {
+      "external_key": "WKPS-012",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 3,
+      "front": "CIRCUM-",
+      "back": "around (prefix)",
+      "explanation": "Examples: circumnavigate (sail around), circumference (distance around a circle), circumvent (go around).",
+      "sort_order": 12
+    },
+    {
+      "external_key": "WKPS-013",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 3,
+      "front": "INTER-",
+      "back": "between, among (prefix)",
+      "explanation": "Examples: international (between nations), intervene (come between), intersect (cross between).",
+      "sort_order": 13
+    },
+    {
+      "external_key": "WKPS-014",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 3,
+      "front": "-ITY",
+      "back": "state, quality, or condition of (suffix)",
+      "explanation": "Examples: clarity (quality of being clear), purity (state of being pure), activity (state of being active).",
+      "sort_order": 14
+    },
+    {
+      "external_key": "WKPS-015",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 3,
+      "front": "-OUS",
+      "back": "full of, having the quality of (suffix)",
+      "explanation": "Examples: dangerous (full of danger), joyous (full of joy), nervous (full of nerves).",
+      "sort_order": 15
+    },
+    {
+      "external_key": "WKPS-016",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 4,
+      "front": "CONTRA-",
+      "back": "against, opposite (prefix)",
+      "explanation": "Examples: contradict (speak against), contraband (goods against the law), contrary (opposite in nature).",
+      "sort_order": 16
+    },
+    {
+      "external_key": "WKPS-017",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 4,
+      "front": "INTRA-",
+      "back": "within, inside (prefix)",
+      "explanation": "Examples: intramural (within walls/within a school), intravenous (within a vein), intrastate (within a state).",
+      "sort_order": 17
+    },
+    {
+      "external_key": "WKPS-018",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 4,
+      "front": "OMNI-",
+      "back": "all, every (prefix)",
+      "explanation": "Examples: omnipotent (all-powerful), omnivore (eats all kinds of food), omnipresent (present everywhere).",
+      "sort_order": 18
+    },
+    {
+      "external_key": "WKPS-019",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 4,
+      "front": "-TUDE",
+      "back": "state or quality of (suffix)",
+      "explanation": "Examples: solitude (state of being alone), gratitude (quality of being thankful), magnitude (quality of greatness).",
+      "sort_order": 19
+    },
+    {
+      "external_key": "WKPS-020",
+      "topic_id": "wk.prefixes-suffixes",
+      "difficulty": 5,
+      "front": "-WISE",
+      "back": "in the manner or direction of (suffix)",
+      "explanation": "Examples: clockwise (in the direction of a clock), lengthwise (in the direction of length), otherwise (in another manner).",
+      "sort_order": 20
+    }
+  ]
+}

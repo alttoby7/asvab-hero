@@ -8,6 +8,7 @@ import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
 import { TrialBanner } from "@/components/account/TrialBanner";
+import FlashcardsDashboardWidget from "@/components/flashcards/DashboardWidget";
 
 type Attempt = {
   id: string;
@@ -334,16 +335,8 @@ export default function AccountDashboardPage() {
         )}
       </div>
 
-      {/* Module 6: Flashcards coming soon */}
-      <div className="rounded-2xl border border-navy-border bg-navy-light p-6 sm:p-8 opacity-70">
-        <div className="flex items-center justify-between flex-wrap gap-2">
-          <div>
-            <h2 className="font-display text-lg font-semibold text-text-primary">Flashcards</h2>
-            <p className="mt-1 text-sm text-text-secondary">Included with Pro when released. Coming soon.</p>
-          </div>
-          <span className="rounded-full border border-navy-border px-3 py-1 text-xs text-text-tertiary">Coming soon</span>
-        </div>
-      </div>
+      {/* Module 6: Flashcards */}
+      <FlashcardsDashboardWidget />
 
       {/* Module 7: Quick links */}
       <div className="flex flex-wrap items-center gap-4 px-1 pb-4">

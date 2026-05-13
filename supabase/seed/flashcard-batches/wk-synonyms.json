@@ -1,0 +1,236 @@
+{
+  "deck": {
+    "slug": "wk.synonyms",
+    "topic_id": "wk.synonyms",
+    "title": "Word Knowledge — Synonyms",
+    "description": "High-yield ASVAB vocabulary. Each card shows a word; recall its closest synonym.",
+    "active": true
+  },
+  "cards": [
+    {
+      "external_key": "WKSY-001",
+      "topic_id": "wk.synonyms",
+      "difficulty": 1,
+      "front": "HOSTILE",
+      "back": "unfriendly or aggressive",
+      "explanation": "Common ASVAB synonym pairing: hostile ≈ antagonistic, belligerent, adversarial.",
+      "sort_order": 1
+    },
+    {
+      "external_key": "WKSY-002",
+      "topic_id": "wk.synonyms",
+      "difficulty": 1,
+      "front": "EAGER",
+      "back": "enthusiastic or keen",
+      "explanation": "Common ASVAB synonym pairing: eager ≈ enthusiastic, zealous, avid.",
+      "sort_order": 2
+    },
+    {
+      "external_key": "WKSY-003",
+      "topic_id": "wk.synonyms",
+      "difficulty": 1,
+      "front": "BRIEF",
+      "back": "short or concise",
+      "explanation": "Common ASVAB synonym pairing: brief ≈ concise, short, succinct.",
+      "sort_order": 3
+    },
+    {
+      "external_key": "WKSY-004",
+      "topic_id": "wk.synonyms",
+      "difficulty": 1,
+      "front": "WEARY",
+      "back": "tired or exhausted",
+      "explanation": "Common ASVAB synonym pairing: weary ≈ fatigued, exhausted, drained.",
+      "sort_order": 4
+    },
+    {
+      "external_key": "WKSY-005",
+      "topic_id": "wk.synonyms",
+      "difficulty": 2,
+      "front": "ABATE",
+      "back": "to lessen or reduce",
+      "explanation": "Common ASVAB synonym pairing: abate ≈ diminish, decrease, subside.",
+      "sort_order": 5
+    },
+    {
+      "external_key": "WKSY-006",
+      "topic_id": "wk.synonyms",
+      "difficulty": 2,
+      "front": "BENIGN",
+      "back": "kind or harmless",
+      "explanation": "Common ASVAB synonym pairing: benign ≈ harmless, mild, gentle.",
+      "sort_order": 6
+    },
+    {
+      "external_key": "WKSY-007",
+      "topic_id": "wk.synonyms",
+      "difficulty": 2,
+      "front": "CANDID",
+      "back": "honest or frank",
+      "explanation": "Common ASVAB synonym pairing: candid ≈ frank, straightforward, blunt.",
+      "sort_order": 7
+    },
+    {
+      "external_key": "WKSY-008",
+      "topic_id": "wk.synonyms",
+      "difficulty": 2,
+      "front": "DEFER",
+      "back": "to postpone or delay",
+      "explanation": "Common ASVAB synonym pairing: defer ≈ postpone, delay, suspend.",
+      "sort_order": 8
+    },
+    {
+      "external_key": "WKSY-009",
+      "topic_id": "wk.synonyms",
+      "difficulty": 2,
+      "front": "EMINENT",
+      "back": "famous or distinguished",
+      "explanation": "Common ASVAB synonym pairing: eminent ≈ distinguished, prominent, renowned.",
+      "sort_order": 9
+    },
+    {
+      "external_key": "WKSY-010",
+      "topic_id": "wk.synonyms",
+      "difficulty": 2,
+      "front": "DETER",
+      "back": "to discourage or prevent",
+      "explanation": "Common ASVAB synonym pairing: deter ≈ discourage, dissuade, hinder.",
+      "sort_order": 10
+    },
+    {
+      "external_key": "WKSY-011",
+      "topic_id": "wk.synonyms",
+      "difficulty": 2,
+      "front": "VIVID",
+      "back": "bright or striking",
+      "explanation": "Common ASVAB synonym pairing: vivid ≈ bright, intense, vibrant.",
+      "sort_order": 11
+    },
+    {
+      "external_key": "WKSY-012",
+      "topic_id": "wk.synonyms",
+      "difficulty": 2,
+      "front": "RESOLVE",
+      "back": "to settle or decide firmly",
+      "explanation": "Common ASVAB synonym pairing: resolve ≈ determine, settle, conclude.",
+      "sort_order": 12
+    },
+    {
+      "external_key": "WKSY-013",
+      "topic_id": "wk.synonyms",
+      "difficulty": 3,
+      "front": "FRUGAL",
+      "back": "thrifty or economical",
+      "explanation": "Common ASVAB synonym pairing: frugal ≈ thrifty, economical, sparing.",
+      "sort_order": 13
+    },
+    {
+      "external_key": "WKSY-014",
+      "topic_id": "wk.synonyms",
+      "difficulty": 3,
+      "front": "DISCERN",
+      "back": "to perceive or distinguish",
+      "explanation": "Common ASVAB synonym pairing: discern ≈ perceive, detect, distinguish.",
+      "sort_order": 14
+    },
+    {
+      "external_key": "WKSY-015",
+      "topic_id": "wk.synonyms",
+      "difficulty": 3,
+      "front": "INNATE",
+      "back": "inborn or natural",
+      "explanation": "Common ASVAB synonym pairing: innate ≈ inborn, inherent, intrinsic.",
+      "sort_order": 15
+    },
+    {
+      "external_key": "WKSY-016",
+      "topic_id": "wk.synonyms",
+      "difficulty": 3,
+      "front": "LUCID",
+      "back": "clear or easily understood",
+      "explanation": "Common ASVAB synonym pairing: lucid ≈ clear, coherent, intelligible.",
+      "sort_order": 16
+    },
+    {
+      "external_key": "WKSY-017",
+      "topic_id": "wk.synonyms",
+      "difficulty": 3,
+      "front": "PRUDENT",
+      "back": "cautious and wise",
+      "explanation": "Common ASVAB synonym pairing: prudent ≈ cautious, sensible, judicious.",
+      "sort_order": 17
+    },
+    {
+      "external_key": "WKSY-018",
+      "topic_id": "wk.synonyms",
+      "difficulty": 3,
+      "front": "TACITURN",
+      "back": "quiet or reserved in speech",
+      "explanation": "Common ASVAB synonym pairing: taciturn ≈ reserved, reticent, uncommunicative.",
+      "sort_order": 18
+    },
+    {
+      "external_key": "WKSY-019",
+      "topic_id": "wk.synonyms",
+      "difficulty": 3,
+      "front": "MITIGATE",
+      "back": "to make less severe",
+      "explanation": "Common ASVAB synonym pairing: mitigate ≈ alleviate, ease, lessen.",
+      "sort_order": 19
+    },
+    {
+      "external_key": "WKSY-020",
+      "topic_id": "wk.synonyms",
+      "difficulty": 3,
+      "front": "AMBIGUOUS",
+      "back": "unclear or open to interpretation",
+      "explanation": "Common ASVAB synonym pairing: ambiguous ≈ vague, unclear, equivocal.",
+      "sort_order": 20
+    },
+    {
+      "external_key": "WKSY-021",
+      "topic_id": "wk.synonyms",
+      "difficulty": 4,
+      "front": "OBSTINATE",
+      "back": "stubborn and unyielding",
+      "explanation": "Common ASVAB synonym pairing: obstinate ≈ stubborn, headstrong, intractable.",
+      "sort_order": 21
+    },
+    {
+      "external_key": "WKSY-022",
+      "topic_id": "wk.synonyms",
+      "difficulty": 4,
+      "front": "NEFARIOUS",
+      "back": "wicked or evil",
+      "explanation": "Common ASVAB synonym pairing: nefarious ≈ wicked, villainous, iniquitous.",
+      "sort_order": 22
+    },
+    {
+      "external_key": "WKSY-023",
+      "topic_id": "wk.synonyms",
+      "difficulty": 4,
+      "front": "SAGACIOUS",
+      "back": "wise and shrewd",
+      "explanation": "Common ASVAB synonym pairing: sagacious ≈ wise, shrewd, astute.",
+      "sort_order": 23
+    },
+    {
+      "external_key": "WKSY-024",
+      "topic_id": "wk.synonyms",
+      "difficulty": 4,
+      "front": "RECONDITE",
+      "back": "obscure or hard to understand",
+      "explanation": "Common ASVAB synonym pairing: recondite ≈ obscure, abstruse, esoteric.",
+      "sort_order": 24
+    },
+    {
+      "external_key": "WKSY-025",
+      "topic_id": "wk.synonyms",
+      "difficulty": 5,
+      "front": "PERSPICACIOUS",
+      "back": "having keen insight",
+      "explanation": "Common ASVAB synonym pairing: perspicacious ≈ perceptive, discerning, insightful.",
+      "sort_order": 25
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "deck": {
+    "slug": "as.hand-tools",
+    "topic_id": "as.hand-tools",
+    "title": "Auto & Shop — Hand Tools",
+    "description": "Identify the tool by what it's used for. The ASVAB AS subtest leans on tool recognition.",
+    "active": true
+  },
+  "cards": [
+    {
+      "external_key": "ASHT-001",
+      "topic_id": "as.hand-tools",
+      "difficulty": 1,
+      "front": "Used to drive nails into wood and pry them back out",
+      "back": "Claw hammer",
+      "explanation": "The curved claw on the back is for pulling nails; a framing hammer looks similar but has a straighter, longer claw for rough construction.",
+      "sort_order": 1
+    },
+    {
+      "external_key": "ASHT-002",
+      "topic_id": "as.hand-tools",
+      "difficulty": 1,
+      "front": "Used to drive screws with a single straight-slot head",
+      "back": "Flathead (slotted) screwdriver",
+      "explanation": "Also called a flat-blade or standard screwdriver; distinct from Phillips, Torx, or hex drivers because the tip is a flat blade.",
+      "sort_order": 2
+    },
+    {
+      "external_key": "ASHT-003",
+      "topic_id": "as.hand-tools",
+      "difficulty": 1,
+      "front": "Used to measure length by pulling out a flexible metal blade",
+      "back": "Tape measure",
+      "explanation": "The hooked end is intentionally loose so it reads accurately whether you push it against a surface or hook it over an edge.",
+      "sort_order": 3
+    },
+    {
+      "external_key": "ASHT-004",
+      "topic_id": "as.hand-tools",
+      "difficulty": 2,
+      "front": "Used to drive screws with a cross-shaped recess in the head",
+      "back": "Phillips screwdriver",
+      "explanation": "Designed to cam out under high torque to prevent overtightening; not interchangeable with Pozidriv or square-drive bits.",
+      "sort_order": 4
+    },
+    {
+      "external_key": "ASHT-005",
+      "topic_id": "as.hand-tools",
+      "difficulty": 2,
+      "front": "Used with interchangeable cylindrical heads to turn nuts and bolts quickly",
+      "back": "Socket wrench (ratchet)",
+      "explanation": "The ratcheting mechanism lets you turn a fastener without removing and repositioning the tool between strokes.",
+      "sort_order": 5
+    },
+    {
+      "external_key": "ASHT-006",
+      "topic_id": "as.hand-tools",
+      "difficulty": 2,
+      "front": "Used to grip and bend wire or reach into tight spaces with thin tapered jaws",
+      "back": "Needle-nose pliers",
+      "explanation": "Ideal for electrical work and small parts; differs from lineman's pliers, which have flat gripping jaws and a side cutter.",
+      "sort_order": 6
+    },
+    {
+      "external_key": "ASHT-007",
+      "topic_id": "as.hand-tools",
+      "difficulty": 2,
+      "front": "Used to determine whether a surface is perfectly horizontal or vertical",
+      "back": "Level (spirit level)",
+      "explanation": "A bubble centered between the lines on the vial indicates true level or plumb depending on the vial's orientation.",
+      "sort_order": 7
+    },
+    {
+      "external_key": "ASHT-008",
+      "topic_id": "as.hand-tools",
+      "difficulty": 2,
+      "front": "Used to cut metal pipe, rod, or bar stock with a thin replaceable blade in a frame",
+      "back": "Hacksaw",
+      "explanation": "The blade is tensioned in a C-shaped frame and is installed with the teeth pointing forward so it cuts on the push stroke.",
+      "sort_order": 8
+    },
+    {
+      "external_key": "ASHT-009",
+      "topic_id": "as.hand-tools",
+      "difficulty": 2,
+      "front": "Used to mark and check 90-degree corners when laying out wood",
+      "back": "Combination square",
+      "explanation": "The sliding head also checks 45-degree miters and includes a small bubble level and a scribe, unlike a fixed try square.",
+      "sort_order": 9
+    },
+    {
+      "external_key": "ASHT-010",
+      "topic_id": "as.hand-tools",
+      "difficulty": 3,
+      "front": "Used to drive recessed fasteners with a six-sided star-shaped tip",
+      "back": "Hex (Allen) wrench / key",
+      "explanation": "Often called an Allen wrench or hex key; the L-shape lets you switch between fast turning and high torque by flipping it.",
+      "sort_order": 10
+    },
+    {
+      "external_key": "ASHT-011",
+      "topic_id": "as.hand-tools",
+      "difficulty": 3,
+      "front": "Used to grip large nuts or pipes by sliding the lower jaw along an angled track",
+      "back": "Channel-lock (water pump) pliers",
+      "explanation": "The tongue-and-groove channels let you set a wide jaw opening that won't slip closed under load, unlike basic slip-joint pliers.",
+      "sort_order": 11
+    },
+    {
+      "external_key": "ASHT-012",
+      "topic_id": "as.hand-tools",
+      "difficulty": 3,
+      "front": "Used to shape metal by striking with a rounded face on one end and a hemispherical face on the other",
+      "back": "Ball-peen hammer",
+      "explanation": "The rounded peen is used for peening rivets and shaping metal; a claw hammer's softer steel would deform if struck on metal stock.",
+      "sort_order": 12
+    },
+    {
+      "external_key": "ASHT-013",
+      "topic_id": "as.hand-tools",
+      "difficulty": 3,
+      "front": "Used to measure inside, outside, and depth dimensions to about a thousandth of an inch",
+      "back": "Calipers (vernier or digital)",
+      "explanation": "More versatile than a micrometer because of the four measuring surfaces, but typically less precise than a micrometer at the same range.",
+      "sort_order": 13
+    },
+    {
+      "external_key": "ASHT-014",
+      "topic_id": "as.hand-tools",
+      "difficulty": 3,
+      "front": "Used to tighten a fastener to a precise, specified amount of rotational force",
+      "back": "Torque wrench",
+      "explanation": "A click-type wrench releases or signals when the set torque is reached; critical for lug nuts, head bolts, and other engineered joints.",
+      "sort_order": 14
+    },
+    {
+      "external_key": "ASHT-015",
+      "topic_id": "as.hand-tools",
+      "difficulty": 3,
+      "front": "Used to grip irregular objects by clamping with adjustable, locking jaws",
+      "back": "Locking pliers (Vise-Grip)",
+      "explanation": "An over-center toggle holds the jaws shut hands-free, unlike standard pliers that rely on continuous hand pressure.",
+      "sort_order": 15
+    },
+    {
+      "external_key": "ASHT-016",
+      "topic_id": "as.hand-tools",
+      "difficulty": 4,
+      "front": "Used to grip and turn round pipe by digging serrated jaws into the pipe wall",
+      "back": "Pipe wrench (Stillson wrench)",
+      "explanation": "The angled, toothed jaws bite harder as you pull, leaving marks; a smooth-jawed adjustable wrench would slip on round pipe.",
+      "sort_order": 16
+    },
+    {
+      "external_key": "ASHT-017",
+      "topic_id": "as.hand-tools",
+      "difficulty": 4,
+      "front": "Used to deliver heavy blows without bouncing back or marring the workpiece",
+      "back": "Dead-blow hammer",
+      "explanation": "The hollow head is filled with shot or sand that absorbs the rebound; a rubber mallet is similar but lighter and bouncier.",
+      "sort_order": 17
+    },
+    {
+      "external_key": "ASHT-018",
+      "topic_id": "as.hand-tools",
+      "difficulty": 4,
+      "front": "Used to measure outside dimensions to a thousandth of an inch using a calibrated thimble and spindle",
+      "back": "Micrometer",
+      "explanation": "Reads to 0.001\" on a standard mechanical micrometer (vernier scale extends to 0.0001\"); limited to about a one-inch range per tool, so machinists own a set.",
+      "sort_order": 18
+    },
+    {
+      "external_key": "ASHT-019",
+      "topic_id": "as.hand-tools",
+      "difficulty": 4,
+      "front": "Used to drive a stuck pin out of a hole after a starter punch has loosened it",
+      "back": "Drift punch (pin punch)",
+      "explanation": "Has a long straight shank of constant diameter so it can pass deep into the hole; a center punch has a tapered tip for marking, not driving.",
+      "sort_order": 19
+    },
+    {
+      "external_key": "ASHT-020",
+      "topic_id": "as.hand-tools",
+      "difficulty": 5,
+      "front": "Used to cut wood along the grain with chisel-like teeth that act like tiny gouges",
+      "back": "Rip saw",
+      "explanation": "Rip-saw teeth are filed straight across to chisel out fibers along the grain; a crosscut saw has knife-like beveled teeth that sever fibers across the grain.",
+      "sort_order": 20
+    }
+  ]
+}

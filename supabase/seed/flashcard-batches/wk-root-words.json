@@ -1,0 +1,191 @@
+{
+  "deck": {
+    "slug": "wk.root-words",
+    "topic_id": "wk.root-words",
+    "title": "Word Knowledge — Root Words",
+    "description": "Latin and Greek roots that unlock dozens of ASVAB vocabulary words.",
+    "active": true
+  },
+  "cards": [
+    {
+      "external_key": "WKRT-001",
+      "topic_id": "wk.root-words",
+      "difficulty": 1,
+      "front": "BIO",
+      "back": "life",
+      "explanation": "Examples: biology (study of life), biography (written account of a life), antibiotic (against living microbes).",
+      "sort_order": 1
+    },
+    {
+      "external_key": "WKRT-002",
+      "topic_id": "wk.root-words",
+      "difficulty": 1,
+      "front": "GEO",
+      "back": "earth or land",
+      "explanation": "Examples: geology (study of the earth), geography (description of the earth), geothermal (heat from the earth).",
+      "sort_order": 2
+    },
+    {
+      "external_key": "WKRT-003",
+      "topic_id": "wk.root-words",
+      "difficulty": 1,
+      "front": "PHON",
+      "back": "sound",
+      "explanation": "Examples: telephone (distant sound), symphony (sounds together), cacophony (harsh sound).",
+      "sort_order": 3
+    },
+    {
+      "external_key": "WKRT-004",
+      "topic_id": "wk.root-words",
+      "difficulty": 2,
+      "front": "BENE",
+      "back": "good or well",
+      "explanation": "Examples: benevolent (well-wishing), beneficial (producing good), benefactor (one who does good).",
+      "sort_order": 4
+    },
+    {
+      "external_key": "WKRT-005",
+      "topic_id": "wk.root-words",
+      "difficulty": 2,
+      "front": "MAL",
+      "back": "bad or evil",
+      "explanation": "Examples: malevolent (wishing harm), malign (to speak evil of), malady (a bad condition or illness).",
+      "sort_order": 5
+    },
+    {
+      "external_key": "WKRT-006",
+      "topic_id": "wk.root-words",
+      "difficulty": 2,
+      "front": "AUD",
+      "back": "to hear",
+      "explanation": "Examples: audible (able to be heard), auditorium (place for hearing), audition (a hearing or trial).",
+      "sort_order": 6
+    },
+    {
+      "external_key": "WKRT-007",
+      "topic_id": "wk.root-words",
+      "difficulty": 2,
+      "front": "DICT",
+      "back": "to say or speak",
+      "explanation": "Examples: dictate (to speak orders), verdict (a spoken truth), edict (an official statement).",
+      "sort_order": 7
+    },
+    {
+      "external_key": "WKRT-008",
+      "topic_id": "wk.root-words",
+      "difficulty": 2,
+      "front": "PORT",
+      "back": "to carry",
+      "explanation": "Examples: portable (able to be carried), transport (carry across), deport (to carry away or expel).",
+      "sort_order": 8
+    },
+    {
+      "external_key": "WKRT-009",
+      "topic_id": "wk.root-words",
+      "difficulty": 2,
+      "front": "SPECT",
+      "back": "to look or see",
+      "explanation": "Examples: inspect (look into), spectator (one who watches), circumspect (looking around, cautious).",
+      "sort_order": 9
+    },
+    {
+      "external_key": "WKRT-010",
+      "topic_id": "wk.root-words",
+      "difficulty": 3,
+      "front": "VID/VIS",
+      "back": "to see",
+      "explanation": "Examples: visible (able to be seen), evident (clearly seen), envision (to see in the mind).",
+      "sort_order": 10
+    },
+    {
+      "external_key": "WKRT-011",
+      "topic_id": "wk.root-words",
+      "difficulty": 3,
+      "front": "SCRIB/SCRIPT",
+      "back": "to write",
+      "explanation": "Examples: inscribe (to write into), manuscript (handwritten document), prescribe (to write an order for).",
+      "sort_order": 11
+    },
+    {
+      "external_key": "WKRT-012",
+      "topic_id": "wk.root-words",
+      "difficulty": 3,
+      "front": "CRED",
+      "back": "to believe or trust",
+      "explanation": "Examples: credible (believable), incredulous (unbelieving), credentials (proof that earns trust).",
+      "sort_order": 12
+    },
+    {
+      "external_key": "WKRT-013",
+      "topic_id": "wk.root-words",
+      "difficulty": 3,
+      "front": "JECT",
+      "back": "to throw",
+      "explanation": "Examples: eject (throw out), interject (throw between), trajectory (path of something thrown).",
+      "sort_order": 13
+    },
+    {
+      "external_key": "WKRT-014",
+      "topic_id": "wk.root-words",
+      "difficulty": 3,
+      "front": "MIT/MISS",
+      "back": "to send",
+      "explanation": "Examples: transmit (send across), emissary (one sent on a mission), remit (to send back).",
+      "sort_order": 14
+    },
+    {
+      "external_key": "WKRT-015",
+      "topic_id": "wk.root-words",
+      "difficulty": 3,
+      "front": "CHRON",
+      "back": "time",
+      "explanation": "Examples: chronological (arranged by time), anachronism (out of its time), synchronize (occur at the same time).",
+      "sort_order": 15
+    },
+    {
+      "external_key": "WKRT-016",
+      "topic_id": "wk.root-words",
+      "difficulty": 4,
+      "front": "FRACT/FRAG",
+      "back": "to break",
+      "explanation": "Examples: fracture (a break), refract (to break light's path), infraction (a breaking of rules).",
+      "sort_order": 16
+    },
+    {
+      "external_key": "WKRT-017",
+      "topic_id": "wk.root-words",
+      "difficulty": 4,
+      "front": "MORPH",
+      "back": "shape or form",
+      "explanation": "Examples: metamorphosis (change of form), amorphous (without shape), anthropomorphic (having human form).",
+      "sort_order": 17
+    },
+    {
+      "external_key": "WKRT-018",
+      "topic_id": "wk.root-words",
+      "difficulty": 4,
+      "front": "ANTHRO",
+      "back": "human or mankind",
+      "explanation": "Examples: anthropology (study of humans), misanthrope (one who hates people), philanthropy (love of mankind).",
+      "sort_order": 18
+    },
+    {
+      "external_key": "WKRT-019",
+      "topic_id": "wk.root-words",
+      "difficulty": 4,
+      "front": "FID",
+      "back": "faith or trust",
+      "explanation": "Examples: fidelity (faithfulness), confidant (trusted friend), perfidy (breaking of faith, treachery).",
+      "sort_order": 19
+    },
+    {
+      "external_key": "WKRT-020",
+      "topic_id": "wk.root-words",
+      "difficulty": 5,
+      "front": "GNOS",
+      "back": "to know",
+      "explanation": "Examples: prognosis (foreknowledge of an outcome), agnostic (one without knowledge of the divine), diagnostic (distinguishing through knowledge).",
+      "sort_order": 20
+    }
+  ]
+}

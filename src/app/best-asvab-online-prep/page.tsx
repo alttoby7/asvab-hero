@@ -217,11 +217,11 @@ export default function BestASVABOnlinePrepPage() {
         </div>
 
         <h3 className="mb-2 font-display text-lg font-bold text-text-primary">
-          Coming soon
+          Spaced-repetition flashcards
         </h3>
         <div className="mb-4 rounded-xl border border-navy-border bg-navy-light p-4">
           <p className="text-sm text-text-secondary leading-relaxed">
-            <strong className="text-text-primary">Flashcards</strong> are on the roadmap but not yet live. If spaced-repetition flashcard drilling is critical to your study plan, factor that in.
+            Six <strong className="text-text-primary">flashcard decks</strong> covering Word Knowledge synonyms, root words, prefixes/suffixes, MK geometry, EI Ohm&apos;s law, and AS hand tools. The synonyms deck is free; Pro unlocks the rest. Cards you miss come back sooner using a simplified SM-2 algorithm.
           </p>
         </div>
 

@@ -216,7 +216,7 @@ export default function HomePage() {
                   "Unlimited diagnostics + subtest drills",
                   "Score history and progress tracking",
                   "Weak-topic recommendations after every test",
-                  "Spaced-repetition flashcards (coming soon)",
+                  "Spaced-repetition flashcards (6 decks live)",
                 ].map((f) => (
                   <li key={f} className="flex items-start gap-3 text-sm text-text-secondary">
                     <svg className="mt-0.5 h-4 w-4 flex-shrink-0 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
