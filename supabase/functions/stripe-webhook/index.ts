@@ -17,6 +17,10 @@ const SUPABASE_URL = Deno.env.get("SUPABASE_URL") ?? Deno.env.get("ASVABHERO_SUP
 const SERVICE_KEY =
   Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? Deno.env.get("ASVABHERO_SUPABASE_SECRET_KEY")!;
 const WEBHOOK_SECRET = Deno.env.get("ASVABHERO_STRIPE_WEBHOOK_SECRET")!;
+// Optional test-mode webhook secret. When set, signatures matching either secret
+// are accepted — lets `stripe trigger` events reach the live deployment for
+// smoke testing without disrupting real Stripe deliveries.
+const WEBHOOK_SECRET_TEST = Deno.env.get("ASVABHERO_STRIPE_WEBHOOK_SECRET_TEST");
 const PRICE_MONTHLY = Deno.env.get("ASVABHERO_STRIPE_PRICE_MONTHLY") ?? "";
 const PRICE_ANNUAL = Deno.env.get("ASVABHERO_STRIPE_PRICE_ANNUAL") ?? "";
 
@@ -29,6 +33,32 @@ const tierFromPrice = (priceId: string | undefined | null): "monthly" | "annual"
   if (priceId === PRICE_MONTHLY) return "monthly";
   if (priceId === PRICE_ANNUAL) return "annual";
   return null;
+};
+
+// Refuse to clobber newer state on a profile with a stale event. Returns true
+// when the incoming event references a different subscription than the one
+// currently on the profile AND the profile was last touched after this event
+// fired. Replayed events from a cancelled or superseded sub will hit this path
+// and skip cleanly; first writes (NULL sub_id) and same-sub updates always
+// proceed.
+const subscriptionEventIsStale = async (
+  userId: string,
+  incomingSubId: string,
+  eventCreatedSec: number | null | undefined,
+): Promise<boolean> => {
+  if (!eventCreatedSec || !Number.isFinite(eventCreatedSec)) return false;
+  const { data, error } = await supabaseAdmin
+    .from("profiles")
+    .select("stripe_subscription_id, pro_updated_at")
+    .eq("user_id", userId)
+    .maybeSingle();
+  if (error || !data) return false;
+  if (!data.stripe_subscription_id) return false;
+  if (data.stripe_subscription_id === incomingSubId) return false;
+  if (!data.pro_updated_at) return false;
+  const profileUpdatedMs = new Date(data.pro_updated_at).getTime();
+  const eventCreatedMs = eventCreatedSec * 1000;
+  return profileUpdatedMs > eventCreatedMs;
 };
 
 const updateProfileFromSubscription = async (
@@ -45,7 +75,17 @@ const updateProfileFromSubscription = async (
     items?: { data?: { price?: { id: string }; current_period_end?: number | null }[] };
     customer?: string;
   },
+  eventCreatedSec?: number | null,
 ) => {
+  if (await subscriptionEventIsStale(userId, sub.id, eventCreatedSec)) {
+    console.log("sub event is stale (different sub_id, profile is newer); skipping", {
+      userId,
+      eventSubId: sub.id,
+      eventCreatedSec,
+    });
+    return;
+  }
+
   const priceId = sub.items?.data?.[0]?.price?.id ?? null;
   const tier = tierFromPrice(priceId);
   let billingStatus: string;
@@ -666,7 +706,15 @@ Deno.serve(async (req) => {
   if (!sig) return new Response("missing_signature", { status: 400 });
   const rawBody = await req.text();
 
-  const verify = await verifyStripeSignature(rawBody, sig, WEBHOOK_SECRET);
+  let verify = await verifyStripeSignature(rawBody, sig, WEBHOOK_SECRET);
+  if (!verify.ok && WEBHOOK_SECRET_TEST) {
+    // Live secret rejected — try test secret. Pre-tolerance reasons (missing
+    // header parts, expired timestamp) won't be salvaged by a second secret,
+    // so only retry on "signature mismatch".
+    if (verify.reason === "signature mismatch") {
+      verify = await verifyStripeSignature(rawBody, sig, WEBHOOK_SECRET_TEST);
+    }
+  }
   if (!verify.ok) {
     console.error("verify failed", verify.reason);
     await captureMessage(`stripe signature verify failed: ${verify.reason}`, {
@@ -733,6 +781,21 @@ Deno.serve(async (req) => {
           customerDetails?.email ??
           undefined;
         const customerName = customerDetails?.name ?? null;
+        // Staleness check up front: a replay of an older checkout for a
+        // since-superseded sub must not clobber a newer subscription_id on the
+        // profile. If stale, skip ALL profile writes for this event.
+        const eventIsStaleForCheckout =
+          userId && subscriptionId
+            ? await subscriptionEventIsStale(userId, subscriptionId, event.created)
+            : false;
+        if (eventIsStaleForCheckout) {
+          console.log("checkout.session.completed is stale; skipping all profile writes", {
+            userId,
+            eventSubId: subscriptionId,
+            eventCreated: event.created,
+          });
+          break;
+        }
         if (userId && customerId) {
           await supabaseAdmin
             .from("profiles")
@@ -754,7 +817,7 @@ Deno.serve(async (req) => {
           const meta = ((sub as unknown as { metadata?: Record<string, string> }).metadata) ?? {};
           resolvedUserId = meta.user_id ?? userId ?? (customerId ? await findUserIdForCustomer(customerId) : null);
           subscriptionStatus = (sub as unknown as { status?: string }).status ?? null;
-          if (resolvedUserId) await updateProfileFromSubscription(resolvedUserId, sub);
+          if (resolvedUserId) await updateProfileFromSubscription(resolvedUserId, sub, event.created);
 
           // Stamp trial_ends_at when this checkout starts a trial (powers TrialBanner countdown).
           if (resolvedUserId && subscriptionStatus === "trialing") {
@@ -912,21 +975,38 @@ Deno.serve(async (req) => {
         const meta = ((obj as { metadata?: Record<string, string> }).metadata) ?? {};
         const customerId = (obj.customer as string) ?? null;
         const userId = meta.user_id ?? (customerId ? await findUserIdForCustomer(customerId) : null);
-        if (userId) await updateProfileFromSubscription(userId, sub);
+        if (userId) await updateProfileFromSubscription(userId, sub, event.created);
         break;
       }
       case "customer.subscription.deleted": {
+        const deletedSubId = (obj.id as string | undefined) ?? null;
         const customerId = (obj.customer as string) ?? null;
         const userId = customerId ? await findUserIdForCustomer(customerId) : null;
-        if (userId) {
-          // Keep pro_until as-is — wall flips automatically once date passes
-          await supabaseAdmin
+        if (userId && deletedSubId) {
+          // Only cancel if this delete event matches the profile's current sub.
+          // Replayed delete events for a previously-cancelled duplicate sub
+          // must not flip an active user back to 'canceled'.
+          const { data: prof } = await supabaseAdmin
             .from("profiles")
-            .update({
-              billing_status: "canceled",
-              pro_updated_at: new Date().toISOString(),
-            })
-            .eq("user_id", userId);
+            .select("stripe_subscription_id")
+            .eq("user_id", userId)
+            .maybeSingle();
+          if (prof?.stripe_subscription_id && prof.stripe_subscription_id === deletedSubId) {
+            // Keep pro_until as-is — wall flips automatically once date passes
+            await supabaseAdmin
+              .from("profiles")
+              .update({
+                billing_status: "canceled",
+                pro_updated_at: new Date().toISOString(),
+              })
+              .eq("user_id", userId);
+          } else {
+            console.log("sub.deleted for non-current sub_id; skipping cancel", {
+              userId,
+              deletedSubId,
+              currentSubId: prof?.stripe_subscription_id ?? null,
+            });
+          }
         }
         break;
       }
@@ -947,7 +1027,7 @@ Deno.serve(async (req) => {
           const meta = ((sub as unknown as { metadata?: Record<string, string> }).metadata) ?? {};
           const customerId = (sub as { customer?: string }).customer ?? null;
           const userId = meta.user_id ?? (customerId ? await findUserIdForCustomer(customerId) : null);
-          if (userId) await updateProfileFromSubscription(userId, sub);
+          if (userId) await updateProfileFromSubscription(userId, sub, event.created);
 
           // Trial-converted welcome email — only when this is a recurring cycle
           // invoice AND the user came off a trial (trial_ends_at was set).
