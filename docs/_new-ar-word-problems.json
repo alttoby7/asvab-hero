@@ -1,0 +1,178 @@
+[
+  {
+    "external_key": "AR-WP-NEW-1",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A paperback book costs $12. How much do 5 of these books cost?",
+    "choices": ["$17", "$55", "$60", "$65"],
+    "correct_index": 2,
+    "explanation": "Multiply the unit price by the quantity: 12 x 5 = 60, so 5 books cost $60. Choice A adds 12 and 5 instead of multiplying, a slip that happens when small numbers nudge the brain toward addition. Choice B subtracts 5 from 60 by miscounting one book and reporting a four-book total. Choice D adds an extra $5, a common slip from rounding 12 up to 13 before multiplying. The structure is a single-step unit-cost problem, and the only operation needed is one multiplication.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-2",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A teacher splits 24 students into 4 equal groups. How many students are in each group?",
+    "choices": ["5", "6", "8", "20"],
+    "correct_index": 1,
+    "explanation": "Divide the total by the number of groups: 24 / 4 = 6 students per group. Choice A comes from dividing 24 by 5 by accident, then rounding to a nearby whole number. Choice C results from dividing 24 by 3, a common error when a student confuses the number of groups with the number of dividers needed between groups. Choice D comes from subtracting 4 from 24 instead of dividing, a misread of the cue phrase 'split into.' One operation, equal-share division, is all this question asks for, and the keyword 'equal groups' is the signal to divide.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-3",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A train travels at a constant 60 miles per hour. How far does it travel in 3 hours?",
+    "choices": ["20 miles", "63 miles", "120 miles", "180 miles"],
+    "correct_index": 3,
+    "explanation": "Distance equals rate times time: 60 x 3 = 180 miles. Choice A inverts the formula and divides 60 by 3 instead of multiplying, which would give a speed-per-hour fraction rather than a distance. Choice B adds 60 and 3 instead of multiplying, a classic operator swap when the rate and time numbers look small. Choice C uses 2 hours instead of 3, an off-by-one read on the time value. Distance-rate-time is one of the most common word-problem setups, and at this difficulty only a single product is required to reach the answer.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-4",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A bakery starts the day with 48 muffins. By noon, 19 muffins have been sold. How many muffins remain?",
+    "choices": ["29", "31", "39", "67"],
+    "correct_index": 0,
+    "explanation": "Subtract the amount sold from the starting count: 48 - 19 = 29 muffins remain. Choice B comes from subtracting 17 instead of 19, a digit misread on the ones place. Choice C results from subtracting only the 9 in 19 and ignoring the tens digit, leaving 39 muffins. Choice D adds the two numbers instead of subtracting, which is the operator-flip trap when the word 'sold' is glossed over and the stem is read as a combine-totals problem. A single subtraction handles the whole problem, and careful alignment of place values prevents the digit-slip distractors.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-5",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A shirt is marked $25, and a store offers 20% off. What is the sale price?",
+    "choices": ["$5", "$20", "$24.50", "$30"],
+    "correct_index": 1,
+    "explanation": "Find 20% of $25 (which is $5), then subtract from the original: 25 - 5 = $20. Choice A reports only the discount amount and forgets to subtract from the price, a stopping-too-early mistake. Choice C treats 20% as 2%, taking $0.50 off instead of $5, a decimal-place slip. Choice D adds the discount to the price rather than subtracting it, the operator-flip error when the cue word 'off' is missed. Percent-off problems are two-step: compute the discount amount, then apply it in the correct direction to reach the sale price.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-6",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "Marcus earns $14 per hour. He works 6 hours on Monday and 4 hours on Tuesday. How much does he earn in total for both days?",
+    "choices": ["$56", "$84", "$140", "$1,400"],
+    "correct_index": 2,
+    "explanation": "Add the hours first, then multiply by the rate: 6 + 4 = 10 hours, and 10 x 14 = $140. Choice A multiplies only Tuesday's 4 hours by 14, dropping Monday entirely. Choice B multiplies only Monday's 6 hours by 14, dropping Tuesday entirely. Choice D misplaces the decimal, sliding a zero so the hourly rate is treated as $140 instead of $14, a place-value slip. Two-day pay problems need both days summed before the wage rate is applied, and the order of operations matters when the same wage covers both shifts.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-7",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "Three pizzas are each cut into 8 slices. If 4 friends share all the slices equally, how many slices does each friend get?",
+    "choices": ["3", "6", "8", "12"],
+    "correct_index": 1,
+    "explanation": "Find the total slices first: 3 x 8 = 24, then divide among 4 people: 24 / 4 = 6 slices each. Choice A divides 12 by 4, using only one pizza. Choice C reports the slices per pizza, skipping the share step. Choice D divides 24 by 2 instead of 4, halving the friends. The two operations have to happen in order, multiply then divide, and missing either step lands on a wrong choice.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-8",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A car travels 240 miles using 8 gallons of gas. What is the car's mileage in miles per gallon?",
+    "choices": ["30 mpg", "32 mpg", "248 mpg", "1,920 mpg"],
+    "correct_index": 0,
+    "explanation": "Miles per gallon equals miles divided by gallons: 240 / 8 = 30 mpg. Choice B comes from dividing 256 by 8, a digit slip that reads the miles value wrong. Choice C adds 240 and 8 instead of dividing, an operator-swap error that ignores the per-unit cue in the question. Choice D multiplies 240 by 8, which would give total miles if you drove 8 full tanks, not a rate per gallon. The phrase 'per gallon' signals division, with miles as the numerator and gallons as the denominator, and getting the order right matters since flipping it produces gallons per mile.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-9",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A bag contains 60 marbles. One-fourth are red, one-third are blue, and the rest are green. How many marbles are green?",
+    "choices": ["15", "20", "25", "35"],
+    "correct_index": 2,
+    "explanation": "Red: 60 x 1/4 = 15. Blue: 60 x 1/3 = 20. Green: 60 - 15 - 20 = 25. Choice A reports the red count only. Choice B reports the blue count only. Choice D adds the red and blue counts instead of subtracting them from 60, taking the wrong complement. Fraction-of-total problems often hide the answer in the last step, so the leftover quantity, not either named fraction, is what the stem asks for.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-10",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "Jordan saved $150. He spent 40% of his savings on a bike, then spent 25% of the remaining money on a helmet. How much money does Jordan have left?",
+    "choices": ["$30.00", "$52.50", "$67.50", "$90.00"],
+    "correct_index": 2,
+    "explanation": "Bike cost: 150 x 0.40 = $60, leaving 150 - 60 = $90. Helmet: 90 x 0.25 = $22.50, leaving 90 - 22.50 = $67.50. Choice A treats the 25% as applied to the original $150, giving $37.50 in helmet costs and a wrong remainder. Choice B subtracts $97.50 by adding the two percentages (65%) and taking that off $150 directly. Choice D stops after the bike purchase and forgets the helmet. The key move is using the post-bike balance as the new base for the 25%.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-11",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A pancake recipe uses 2 cups of flour to serve 4 people. How many cups of flour are needed to serve 10 people using the same recipe?",
+    "choices": ["2.5 cups", "4 cups", "5 cups", "8 cups"],
+    "correct_index": 2,
+    "explanation": "Set up a proportion: 2 cups / 4 people = x / 10 people, so x = (2 x 10) / 4 = 5 cups. Choice A reverses the ratio and divides 10 by 4. Choice B doubles the recipe to serve 8 people instead of 10, an undershoot. Choice D multiplies 2 by 4 instead of by 10/4, applying the wrong scaling factor. Proportion problems require keeping the same quantity (flour or people) in the same position on both sides of the equation.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-12",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A student's five test scores are 78, 85, 92, 89, and 76. What is the average of these scores?",
+    "choices": ["82", "84", "85", "88"],
+    "correct_index": 1,
+    "explanation": "Sum the scores: 78 + 85 + 92 + 89 + 76 = 420. Divide by 5: 420 / 5 = 84. Choice A undercounts the sum by 10 (likely reading 78 as 68). Choice C reports the median (the middle score when sorted: 76, 78, 85, 89, 92) instead of the mean. Choice D divides 440 by 5, an addition error in the sum. Averages have two stages, and a single arithmetic slip in the sum is the most common way to miss this kind of item.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-13",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A worker assembles 12 widgets in 45 minutes. Working at the same rate, how many widgets can the worker assemble in 3 hours?",
+    "choices": ["32", "36", "48", "60"],
+    "correct_index": 2,
+    "explanation": "Convert 3 hours to 180 minutes, then scale: 180 / 45 = 4, and 4 x 12 = 48 widgets. Choice A multiplies 12 by 3 hours without converting units, treating hours and 45-minute blocks as equal. Choice B uses 135 minutes (2.25 hours) instead of 180. Choice D multiplies 12 by 5, assuming five 45-minute blocks fit in 3 hours rather than four. The unit conversion from hours to minutes (or to 45-minute blocks) is the trip-up step.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-14",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "Two trains leave the same station at the same time, traveling in opposite directions. One train moves at 55 mph and the other at 65 mph. After how many hours are the trains 360 miles apart?",
+    "choices": ["2 hours", "3 hours", "3.5 hours", "6 hours"],
+    "correct_index": 1,
+    "explanation": "When objects move in opposite directions, their separation rate is the sum of their speeds: 55 + 65 = 120 mph. Time = distance / rate = 360 / 120 = 3 hours. Choice A uses the difference of the speeds (65 - 55 = 10) and divides 360 by 120 wrong. Choice C averages the two speeds to get 60 mph instead of summing, then divides 360 / 60 = 6 (mislabeled). Choice D actually uses 60 mph as the combined rate. The combined-rate setup is the load-bearing step.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-15",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "An inlet pipe can fill a tank in 6 hours. A drain pipe can empty the full tank in 9 hours. If both pipes are open and the tank starts empty, how long will it take to fill the tank?",
+    "choices": ["3 hours", "7.5 hours", "15 hours", "18 hours"],
+    "correct_index": 3,
+    "explanation": "Add the rates with the drain as negative: 1/6 - 1/9 = 3/18 - 2/18 = 1/18 tank per hour. Time to fill one tank = 18 hours. Choice A subtracts 6 from 9 and reports the difference. Choice B averages 6 and 9 to get 7.5, ignoring that the pipes work against each other. Choice C adds the two times (6 + 9) instead of combining rates. Work-rate problems require rates, not times, to be combined, with the sign matching whether each pipe fills or drains.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-16",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 5,
+    "stem": "$1,000 is deposited in an account earning 5% interest compounded annually. How much interest is earned after 2 years?",
+    "choices": ["$100.00", "$102.50", "$105.00", "$110.25"],
+    "correct_index": 1,
+    "explanation": "Compound balance after 2 years: 1000 x (1.05)^2 = 1000 x 1.1025 = $1,102.50. Interest earned is 1102.50 - 1000 = $102.50. Choice A applies simple interest (1000 x 0.05 x 2), missing the compounding bump. Choice C reports only the first year's interest (1000 x 0.05). Choice D reports the multiplier 1.1025 scaled to $110.25, mistakenly using a $1,000 principal at 10.25% per year for one year, or forgetting to subtract the original principal from a slightly mis-scaled balance. Compound interest answers are always slightly above the simple-interest figure for the same period.",
+    "status": "draft"
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "external_key": "WK-PFX-NEW-1",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The prefix RE- means again or back. Based on this, REPLAY most nearly means:",
+    "choices": [
+      "to play before",
+      "to play once and stop",
+      "to play again",
+      "to refuse to play"
+    ],
+    "correct_index": 2,
+    "explanation": "REPLAY decomposes into RE- (again, back) plus PLAY. The prefix RE- appears in REWIND, REVISIT, and REBUILD, all signaling repetition or return. Choice A inverts the meaning by swapping RE- for PRE- (before). Choice B drops the prefix entirely and defines only the root. Choice D confuses RE- with the negating prefix REF- in REFUSE, which carries a different Latin origin (re- plus fundere, to pour back). The correct reading combines repetition with the action of playing.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-2",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The prefix NON- means not or absence of. Based on this, NONFICTION most nearly means:",
+    "choices": [
+      "writing that is made up",
+      "writing that is not made up",
+      "writing that is poorly done",
+      "writing that is unfinished"
+    ],
+    "correct_index": 1,
+    "explanation": "NONFICTION breaks into NON- (not) plus FICTION (invented narrative). The prefix NON- works the same way in NONSTOP, NONPROFIT, NONVERBAL, and NONSENSE, each simply negating the root that follows. Choice A defines fiction itself and ignores the prefix entirely, the most common error when the test taker rushes past the leading morpheme. Choice C confuses NON- with the Latin MAL- (bad) seen in MALPRACTICE and MALFUNCTION, which carries a moral judgment NON- does not. Choice D confuses NON- with the suffix -LESS or with the prefix UN- as in UNFINISHED. NONFICTION names writing grounded in fact rather than invention.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-3",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The prefix DIS- means not, opposite of, or away. Based on this, DISLOYAL most nearly means:",
+    "choices": [
+      "extremely loyal",
+      "loyal at times",
+      "not loyal",
+      "loyal to a leader"
+    ],
+    "correct_index": 2,
+    "explanation": "DISLOYAL splits into DIS- (not, opposite of) plus LOYAL. The same prefix appears in DISAGREE, DISHONEST, and DISCONNECT, each reversing the root. Choice A inverts the meaning by treating DIS- as an intensifier, a common error since spoken stress can sound emphatic. Choice B softens the negation into a partial state the prefix does not allow. Choice D ignores the prefix and defines only the root. DISLOYAL describes someone who fails to keep faith with a person, cause, or country.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-4",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The prefix TRANS- means across or beyond. The word TRANSPORT therefore is best defined as:",
+    "choices": [
+      "to carry across or from one place to another",
+      "to store in a harbor",
+      "to repair a damaged vehicle",
+      "to load goods onto a ship"
+    ],
+    "correct_index": 0,
+    "explanation": "TRANSPORT combines TRANS- (across) with the Latin root PORT (to carry), the same root in PORTER, IMPORT, and EXPORT. The prefix appears in TRANSMIT, TRANSFER, and TRANSCONTINENTAL with consistent meaning. Choice B mistakes PORT the prefix-bearing root for PORT meaning harbor, a homograph trap. Choice C invents a meaning unsupported by either morpheme. Choice D names a specific shipping action but ignores the across or beyond element supplied by TRANS-. TRANSPORT denotes movement of people or goods across distance.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-5",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The suffix -LESS means without. Based on this, FEARLESS most nearly means:",
+    "choices": [
+      "easily frightened",
+      "feeling moderate fear",
+      "causing fear in others",
+      "without fear"
+    ],
+    "correct_index": 3,
+    "explanation": "FEARLESS attaches the suffix -LESS (without) to the root FEAR. The same suffix produces HOPELESS, ENDLESS, and HARMLESS, each signaling absence of the root quality. Choice A reverses the meaning, the kind of error that arises when a reader confuses -LESS with -FUL. Choice B softens the absolute negation the suffix demands. Choice C confuses -LESS with the agentive suffix -SOME as in FEARSOME, which means causing fear. FEARLESS describes a person or action free from fear.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-6",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The suffix -FUL means full of or characterized by. The word PLAYFUL therefore most nearly means:",
+    "choices": [
+      "full of or showing a desire to play",
+      "without any sense of play",
+      "tired from playing too much",
+      "skilled at a particular game"
+    ],
+    "correct_index": 0,
+    "explanation": "PLAYFUL joins the root PLAY with the suffix -FUL (full of). The same suffix produces JOYFUL, CAREFUL, and HOPEFUL, each meaning full of the root quality. Choice B reverses the meaning by treating -FUL as if it were -LESS. Choice C drifts toward modern colloquial English where playful is sometimes loosely linked to exhaustion, but morphology does not support that reading. Choice D narrows the word to athletic skill, ignoring the broad sense of disposition the suffix supplies. PLAYFUL describes a mood or behavior marked by lighthearted fun.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-7",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The prefix INTER- means between or among. Based on this, INTERSTATE most nearly means:",
+    "choices": [
+      "inside a single state",
+      "between two or more states",
+      "owned by the state government",
+      "below the state level"
+    ],
+    "correct_index": 1,
+    "explanation": "INTERSTATE pairs INTER- (between, among) with STATE. The same prefix carries through INTERNATIONAL, INTERACT, INTERSECT, and INTERVIEW, each describing something that occurs between or among multiple parties. Choice A confuses INTER- with INTRA- (within), a high-frequency trap since the two prefixes differ by a single letter but reverse the meaning, as in INTRASTATE commerce that stays within one state. Choice C ignores the prefix entirely and assigns government ownership unsupported by the morphology. Choice D confuses INTER- with SUB- (below) or with the suffix -ARY indicating subordinate rank. An INTERSTATE highway runs between states, which is why the federal system carries that label.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-8",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The prefix MAL- means bad or wrongful. The word MALCONTENT therefore is best defined as:",
+    "choices": [
+      "a person who is satisfied",
+      "a person who avoids conflict",
+      "a person who is dissatisfied or rebellious",
+      "a person who lacks ambition"
+    ],
+    "correct_index": 2,
+    "explanation": "MALCONTENT joins MAL- (bad, wrongful) with CONTENT (satisfied). The same prefix drives MALFUNCTION, MALPRACTICE, MALEVOLENT, and MALICE, each signaling a corrupt or harmful version of the root. Choice A defines CONTENT alone and ignores the prefix entirely, the most common slip when a reader recognizes only the familiar second morpheme. Choice B confuses MAL- with the prefix DIS- (apart, away) or with the idea of withdrawal, but MAL- carries no sense of avoidance. Choice D drifts into a vague personality description unsupported by either morpheme. A MALCONTENT is a person whose dissatisfaction often expresses itself as grumbling or open rebellion against authority.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-9",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The suffix -ISM means a doctrine, belief, or practice. Based on this, BAPTISM most nearly means:",
+    "choices": [
+      "the person who performs a religious rite",
+      "the practice or rite of baptizing",
+      "a building used for religious services",
+      "the study of religious texts"
+    ],
+    "correct_index": 1,
+    "explanation": "BAPTISM combines the Greek root BAPT (to dip, immerse) with the suffix -ISM (practice, doctrine). The same suffix produces CAPITALISM, JOURNALISM, and CRITICISM, each naming a practice or system. Choice A confuses -ISM with the agentive suffix -IST, which names the person who practices (BAPTIST). Choice C confuses -ISM with -ARY or -ERY (BAPTISTRY, the building). Choice D confuses -ISM with -OLOGY (study of). BAPTISM names the rite itself rather than its practitioner, location, or academic study.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-10",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word AMBIDEXTROUS contains the prefix AMBI- (both) and the root DEXTR- (right hand, skill). AMBIDEXTROUS most nearly means:",
+    "choices": [
+      "unable to use either hand well",
+      "able to use both hands with equal skill",
+      "preferring the left hand",
+      "lacking coordination"
+    ],
+    "correct_index": 1,
+    "explanation": "AMBIDEXTROUS decomposes into AMBI- (both) plus DEXTR- (right hand, skill) plus the adjective suffix -OUS. The same prefix appears in AMBIGUOUS (both ways) and AMBIVALENT (both feelings). Choice A inverts the meaning by stripping the positive sense of DEXTR-. Choice C confuses DEXTR- with SINISTR- (left hand), the Latin opposite preserved in SINISTER. Choice D ignores both morphemes and describes a generic lack of physical skill. AMBIDEXTROUS describes a person who handles tools, writing, or tasks equally well with either hand.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-11",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 4,
+    "stem": "The word MISANTHROPE contains the Greek prefix MIS- (hatred of) and the root ANTHROP- (humankind). MISANTHROPE most nearly means:",
+    "choices": [
+      "a person who studies human cultures",
+      "a person who hates or distrusts humankind",
+      "a person who acts wrongly toward others",
+      "a person who lives among other people"
+    ],
+    "correct_index": 1,
+    "explanation": "MISANTHROPE comes from Greek MIS- (hatred) plus ANTHROP- (man, humankind), the same root in ANTHROPOLOGY and PHILANTHROPY. The trap is that Greek MIS- (hatred, as in MISOGYNY) is spelled identically to the Latin MIS- (wrongly, as in MISJUDGE), but the two prefixes are unrelated. Choice A confuses MISANTHROPE with ANTHROPOLOGIST, swapping the prefix for the suffix -OLOGIST. Choice C applies the Latin MIS- (wrongly) instead of the Greek one. Choice D ignores the hostility carried by MIS- entirely. A MISANTHROPE actively dislikes the human race.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-12",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 4,
+    "stem": "The word BIBLIOPHILE contains the root BIBLIO- (book) and the suffix -PHILE (lover of). BIBLIOPHILE most nearly means:",
+    "choices": [
+      "one who writes books",
+      "one who fears books",
+      "one who loves and collects books",
+      "one who sells books"
+    ],
+    "correct_index": 2,
+    "explanation": "BIBLIOPHILE pairs BIBLIO- (book) with -PHILE (lover of), the same suffix in AUDIOPHILE and FRANCOPHILE. The trap is the closely spelled -PHOBE (fear of), which reverses the meaning, as in CLAUSTROPHOBE. Choice A confuses -PHILE with the agentive ending in AUTHOR. Choice B applies -PHOBE instead of -PHILE, a high-value distractor because the suffixes look almost identical to a quick reader. Choice D narrows the word to commercial activity not supported by either morpheme. A BIBLIOPHILE is a devoted reader and collector of books.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-13",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 5,
+    "stem": "The suffix -EFY (a variant of -IFY) means to make or cause to become. The word LIQUEFY therefore is best defined as:",
+    "choices": [
+      "to make solid",
+      "to make liquid",
+      "to remove liquid from",
+      "to study the properties of liquid"
+    ],
+    "correct_index": 1,
+    "explanation": "LIQUEFY joins LIQU- (the root in LIQUID) with -EFY (to make), a rare variant of -IFY preserved in only a handful of words such as PUTREFY and STUPEFY. Most English verbs use -IFY (CLARIFY, MAGNIFY), so spellers often miswrite LIQUIFY, but the dictionary form keeps the older -EFY. Choice A inverts the meaning by treating -EFY as if it carried negation. Choice C confuses -EFY (to make) with the prefix DE- (to remove). Choice D confuses -EFY with -OLOGY (study of). LIQUEFY names the process of melting or dissolving a solid into liquid form.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-14",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 5,
+    "stem": "The word EPIDERMIS contains the Greek prefix EPI- (upon, over) and the root DERM- (skin). EPIDERMIS most nearly means:",
+    "choices": [
+      "the deepest layer of skin",
+      "the outer layer of skin",
+      "the layer beneath the skin",
+      "a disease affecting the skin"
+    ],
+    "correct_index": 1,
+    "explanation": "EPIDERMIS combines EPI- (upon, over) with DERM- (skin), the same root in DERMATOLOGY. The trap is the prefix APO- (away from), which looks and sounds similar to EPI- but reverses the spatial sense, as in APOSTASY. Choice A confuses EPI- with HYPO- (under), the prefix found in HYPODERMIC (under the skin). Choice C also applies HYPO- or SUB- instead of EPI-. Choice D confuses the prefix with the suffix -ITIS (inflammation) or -OSIS (condition). EPIDERMIS names the outermost protective layer of skin covering the body.",
+    "status": "draft"
+  }
+]

@@ -1,0 +1,1707 @@
+[
+  {
+    "external_key": "AR-3",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(12w)"
+    ],
+    "stem": "A recipe calls for flour and sugar in a ratio of 5:2. If you use 20 cups of flour, how many cups of sugar are needed?",
+    "choices": [
+      "4 cups",
+      "6 cups",
+      "8 cups",
+      "10 cups"
+    ],
+    "correct_index": 2,
+    "current_explanation": "With a 5:2 ratio, sugar = (2/5) \u00d7 20 = 8 cups."
+  },
+  {
+    "external_key": "AR-5",
+    "file": "free",
+    "difficulty": 3,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(23w)",
+      "no-trap-named"
+    ],
+    "stem": "A tank holds 500 gallons of water. It drains at a rate of 25 gallons per minute and fills at 10 gallons per minute simultaneously. Starting with a full tank, how many minutes will it take to empty?",
+    "choices": [
+      "20 minutes",
+      "25 minutes",
+      "33 minutes",
+      "50 minutes"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Net drain rate = 25 \u2212 10 = 15 gallons per minute. Time = 500 \u00f7 15 \u2248 33.3, so approximately 33 minutes."
+  },
+  {
+    "external_key": "AR-6",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(8w)"
+    ],
+    "stem": "A platoon of 40 soldiers must carry 480 pounds of equipment equally. How many pounds does each soldier carry?",
+    "choices": [
+      "10 pounds",
+      "12 pounds",
+      "14 pounds",
+      "16 pounds"
+    ],
+    "correct_index": 1,
+    "current_explanation": "480 \u00f7 40 = 12 pounds per soldier."
+  },
+  {
+    "external_key": "AR-8",
+    "file": "free",
+    "difficulty": 4,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "Two workers can paint a room in 6 hours working together. If one worker can complete the job alone in 10 hours, how long would the second worker take alone?",
+    "choices": [
+      "12 hours",
+      "15 hours",
+      "16 hours",
+      "20 hours"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Combined rate = 1/6 room/hr. Worker 1 rate = 1/10. Worker 2 rate = 1/6 \u2212 1/10 = 5/30 \u2212 3/30 = 2/30 = 1/15. So Worker 2 takes 15 hours."
+  },
+  {
+    "external_key": "AR-10",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(13w)"
+    ],
+    "stem": "A rectangular field is 120 yards long and 80 yards wide. What is its area in square yards?",
+    "choices": [
+      "4,800",
+      "8,400",
+      "9,600",
+      "10,400"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Area = length \u00d7 width = 120 \u00d7 80 = 9,600 square yards."
+  },
+  {
+    "external_key": "AR-11",
+    "file": "free",
+    "difficulty": 3,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A train leaves a station at 9:00 AM traveling at 60 mph. A second train leaves the same station at 10:00 AM traveling in the same direction at 90 mph. At what time does the second train catch up to the first?",
+    "choices": [
+      "11:00 AM",
+      "12:00 PM",
+      "12:30 PM",
+      "1:00 PM"
+    ],
+    "correct_index": 1,
+    "current_explanation": "After 1 hour, Train 1 is 60 miles ahead. Closing rate = 90 \u2212 60 = 30 mph. Time to close gap = 60 \u00f7 30 = 2 hours after 10:00 AM = 12:00 PM."
+  },
+  {
+    "external_key": "AR-12",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(9w)"
+    ],
+    "stem": "A map has a scale of 1 inch = 50 miles. Two cities are 3.5 inches apart on the map. What is the actual distance between them?",
+    "choices": [
+      "150 miles",
+      "175 miles",
+      "200 miles",
+      "225 miles"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Actual distance = 3.5 \u00d7 50 = 175 miles."
+  },
+  {
+    "external_key": "AR-RAT-1",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A military convoy travels 120 miles in 2.5 hours. At the same rate, how far will it travel in 4 hours?",
+    "choices": [
+      "160 miles",
+      "192 miles",
+      "200 miles",
+      "240 miles"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Speed = 120 / 2.5 = 48 mph. Distance in 4 hours = 48 \u00d7 4 = 192 miles. Multiplying 120 \u00d7 4 = 480 ignores the rate calculation; 200 miles results from rounding 48 to 50 mph."
+  },
+  {
+    "external_key": "AR-ALG-1",
+    "file": "b1",
+    "difficulty": 5,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A storage room has 3 shelves. Each shelf holds twice as many items as the shelf below it. The bottom shelf holds 15 items. How many items are in the storage room in total?",
+    "choices": [
+      "45 items",
+      "90 items",
+      "105 items",
+      "120 items"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Bottom shelf: 15. Middle shelf: 15 \u00d7 2 = 30. Top shelf: 30 \u00d7 2 = 60. Total = 15 + 30 + 60 = 105 items. Adding 15 three times (45) misses the doubling; multiplying all by 2 once (30 \u00d7 3 = 90) misapplies the doubling pattern."
+  },
+  {
+    "external_key": "AR-AF-1",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(28w)"
+    ],
+    "stem": "A crate holds 24 bottles. A store receives 15 crates. After selling 120 bottles, how many bottles remain?",
+    "choices": [
+      "120",
+      "180",
+      "240",
+      "300"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total = 24 \u00d7 15 = 360 bottles. 360 \u2212 120 = 240 remain. The trap is computing 24 \u00d7 12 = 288 by misreading the crate count."
+  },
+  {
+    "external_key": "AR-AF-2",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "A soldier buys 4 notebooks at $3 each and 6 pens at $1.25 each. What is the total cost?",
+    "choices": [
+      "$16.50",
+      "$17.50",
+      "$18.75",
+      "$19.50"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Notebooks: 4 \u00d7 $3 = $12. Pens: 6 \u00d7 $1.25 = $7.50. Total = $12 + $7.50 = $19.50."
+  },
+  {
+    "external_key": "AR-AF-3",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(18w)",
+      "no-trap-named"
+    ],
+    "stem": "A truck can carry 850 pounds. A soldier loads 10 boxes at 75 pounds each. How many pounds of capacity remain?",
+    "choices": [
+      "75",
+      "100",
+      "125",
+      "150"
+    ],
+    "correct_index": 1,
+    "current_explanation": "10 boxes \u00d7 75 lb = 750 lb loaded. Remaining capacity = 850 \u2212 750 = 100 lb."
+  },
+  {
+    "external_key": "AR-AF-4",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(15w)",
+      "no-trap-named"
+    ],
+    "stem": "A barracks has 6 rooms, each holding 4 soldiers. If 14 soldiers are currently assigned, how many empty beds remain?",
+    "choices": [
+      "6",
+      "8",
+      "10",
+      "14"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total beds = 6 \u00d7 4 = 24. Empty = 24 \u2212 14 = 10."
+  },
+  {
+    "external_key": "AR-AF-5",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(18w)",
+      "no-trap-named"
+    ],
+    "stem": "A soldier earns $2,880 per month. After paying $720 in rent and $340 in other bills, she saves the rest. How much does she save over 4 months?",
+    "choices": [
+      "$1,820",
+      "$6,400",
+      "$7,280",
+      "$11,520"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Monthly savings = $2,880 \u2212 $720 \u2212 $340 = $1,820. Over 4 months: $1,820 \u00d7 4 = $7,280."
+  },
+  {
+    "external_key": "AR-RP-1",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(24w)"
+    ],
+    "stem": "A recipe uses 3 cups of flour for every 2 cups of sugar. How many cups of sugar are needed if you use 12 cups of flour?",
+    "choices": [
+      "6",
+      "8",
+      "9",
+      "18"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Flour:Sugar = 3:2. Sugar = (2/3) \u00d7 12 = 8 cups. The trap is flipping the ratio and using 3/2 \u00d7 12 = 18."
+  },
+  {
+    "external_key": "AR-RP-2",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(24w)"
+    ],
+    "stem": "The exchange rate is 1 U.S. dollar = 0.85 euros. A soldier converts $240 to euros. How many euros does she receive?",
+    "choices": [
+      "180",
+      "196",
+      "204",
+      "282"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Euros = 240 \u00d7 0.85 = 204. The trap answer 282 comes from dividing 240 \u00f7 0.85, which is converting in the wrong direction."
+  },
+  {
+    "external_key": "AR-RP-4",
+    "file": "b2",
+    "difficulty": 5,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(28w)",
+      "no-trap-named"
+    ],
+    "stem": "A squad of 12 soldiers can build a wall in 8 hours. How long will it take a squad of 16 soldiers to build the same wall at the same work rate?",
+    "choices": [
+      "4 hours",
+      "5 hours",
+      "6 hours",
+      "7 hours"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total work = 12 \u00d7 8 = 96 soldier-hours. With 16 soldiers: 96 \u00f7 16 = 6 hours. This is inverse proportion \u2014 more workers means less time."
+  },
+  {
+    "external_key": "AR-RP-5",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(24w)"
+    ],
+    "stem": "A kitchen uses oil and vinegar in a 5:3 ratio to make dressing. A cook needs 64 ounces of dressing total. How many ounces of vinegar are needed?",
+    "choices": [
+      "16",
+      "20",
+      "24",
+      "40"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Vinegar = (3/8) \u00d7 64 = 24 ounces. The trap is using 3/5 of 64 = 38.4, or thinking vinegar is the larger portion."
+  },
+  {
+    "external_key": "AR-RP-6",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(8w)",
+      "no-trap-named"
+    ],
+    "stem": "A kitchen uses salt and pepper in a ratio of 4:1 by weight. If a cook uses 20 grams of salt, how many grams of pepper are needed?",
+    "choices": [
+      "4",
+      "5",
+      "8",
+      "16"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Pepper = (1/4) \u00d7 20 = 5 grams."
+  },
+  {
+    "external_key": "AR-PC-1",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(15w)",
+      "no-trap-named"
+    ],
+    "stem": "A jacket originally costs $80. It is on sale for 25% off. What is the sale price?",
+    "choices": [
+      "$20",
+      "$55",
+      "$60",
+      "$65"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Discount = 25% \u00d7 $80 = $20. Sale price = $80 \u2212 $20 = $60."
+  },
+  {
+    "external_key": "AR-PC-2",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(28w)"
+    ],
+    "stem": "A soldier's physical fitness score increased from 60 to 75. What is the percent increase?",
+    "choices": [
+      "15%",
+      "20%",
+      "25%",
+      "30%"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Percent increase = (75 \u2212 60) / 60 \u00d7 100 = 15/60 \u00d7 100 = 25%. The trap is dividing by the new value 75 to get 20%."
+  },
+  {
+    "external_key": "AR-PC-4",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(29w)"
+    ],
+    "stem": "A soldier invests $1,000 at 6% simple annual interest. How much interest is earned after 3 years?",
+    "choices": [
+      "$60",
+      "$180",
+      "$191",
+      "$600"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Simple interest = Principal \u00d7 Rate \u00d7 Time = $1,000 \u00d7 0.06 \u00d7 3 = $180. The trap is computing only 1 year's interest ($60) or applying compound interest."
+  },
+  {
+    "external_key": "AR-PC-5",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(27w)"
+    ],
+    "stem": "A store marks up a $50 item by 20%, then offers a 10% discount on the marked-up price. What is the final selling price?",
+    "choices": [
+      "$50.00",
+      "$54.00",
+      "$55.00",
+      "$58.00"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Marked-up price = $50 \u00d7 1.20 = $60. After 10% discount: $60 \u00d7 0.90 = $54. The trap is thinking +20% then \u221210% nets +10%, giving $55."
+  },
+  {
+    "external_key": "AR-PC-6",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(10w)",
+      "no-trap-named"
+    ],
+    "stem": "A town's population grew from 4,000 to 4,600 in one year. What was the percent increase?",
+    "choices": [
+      "12.5%",
+      "13%",
+      "15%",
+      "16%"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Percent increase = (600 \u00f7 4,000) \u00d7 100 = 15%."
+  },
+  {
+    "external_key": "AR-RD-1",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(13w)",
+      "no-trap-named"
+    ],
+    "stem": "A soldier runs at 6 miles per hour. How far does she run in 45 minutes?",
+    "choices": [
+      "3.5 miles",
+      "4 miles",
+      "4.5 miles",
+      "5 miles"
+    ],
+    "correct_index": 2,
+    "current_explanation": "45 minutes = 0.75 hours. Distance = 6 \u00d7 0.75 = 4.5 miles."
+  },
+  {
+    "external_key": "AR-RD-2",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(27w)"
+    ],
+    "stem": "Two convoys leave the same base traveling in opposite directions. One travels at 45 mph and the other at 55 mph. How far apart are they after 2 hours?",
+    "choices": [
+      "90 miles",
+      "110 miles",
+      "180 miles",
+      "200 miles"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Combined separation rate = 45 + 55 = 100 mph. Distance apart = 100 \u00d7 2 = 200 miles. The trap is using only one convoy's speed."
+  },
+  {
+    "external_key": "AR-RD-3",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(18w)",
+      "no-trap-named"
+    ],
+    "stem": "Pump A fills a tank at 40 gallons per minute. Pump B drains it at 15 gallons per minute. Starting empty, how many minutes until a 1,000-gallon tank is full with both pumps running?",
+    "choices": [
+      "25 minutes",
+      "33 minutes",
+      "40 minutes",
+      "67 minutes"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Net fill rate = 40 \u2212 15 = 25 gal/min. Time = 1,000 \u00f7 25 = 40 minutes."
+  },
+  {
+    "external_key": "AR-RD-4",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "A vehicle travels 180 miles in 3 hours. At the same speed, how long will it take to travel 270 miles?",
+    "choices": [
+      "3.5 hours",
+      "4 hours",
+      "4.5 hours",
+      "5 hours"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Speed = 180 \u00f7 3 = 60 mph. Time for 270 miles = 270 \u00f7 60 = 4.5 hours."
+  },
+  {
+    "external_key": "AR-RD-5",
+    "file": "b2",
+    "difficulty": 5,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(25w)",
+      "no-trap-named"
+    ],
+    "stem": "Soldier A can complete a course in 4 hours alone. Soldier B can complete the same course in 6 hours alone. Working together, how long do they take?",
+    "choices": [
+      "2 hours",
+      "2 hours 24 minutes",
+      "3 hours",
+      "3 hours 20 minutes"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Combined rate = 1/4 + 1/6 = 3/12 + 2/12 = 5/12 per hour. Time = 12/5 = 2.4 hours = 2 hours 24 minutes."
+  },
+  {
+    "external_key": "AR-RD-6",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(12w)",
+      "no-trap-named"
+    ],
+    "stem": "A helicopter flies 420 miles at 140 mph. How long does the flight take?",
+    "choices": [
+      "2 hours",
+      "2.5 hours",
+      "3 hours",
+      "3.5 hours"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Time = Distance \u00f7 Speed = 420 \u00f7 140 = 3 hours."
+  },
+  {
+    "external_key": "AR-WP-1",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(23w)",
+      "no-trap-named"
+    ],
+    "stem": "A soldier spends 1/3 of his monthly pay on rent and 1/4 on food, and saves the rest. His monthly pay is $2,400. How much does he save each month?",
+    "choices": [
+      "$400",
+      "$600",
+      "$800",
+      "$1,000"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Rent = 1/3 \u00d7 $2,400 = $800. Food = 1/4 \u00d7 $2,400 = $600. Savings = $2,400 \u2212 $800 \u2212 $600 = $1,000."
+  },
+  {
+    "external_key": "AR-WP-2",
+    "file": "b2",
+    "difficulty": 5,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(32w)",
+      "no-trap-named"
+    ],
+    "stem": "Three soldiers share a $420 supply order. One soldier pays twice as much as each of the other two. How much does the soldier paying more contribute?",
+    "choices": [
+      "$105",
+      "$140",
+      "$168",
+      "$210"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Let each of the two pay x. The third pays 2x. Equation: x + x + 2x = 4x = $420, so x = $105. The larger share = 2x = $210."
+  },
+  {
+    "external_key": "AR-WP-3",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(28w)"
+    ],
+    "stem": "A base has 480 personnel. If 35% are on leave, how many are currently on base?",
+    "choices": [
+      "148",
+      "168",
+      "288",
+      "312"
+    ],
+    "correct_index": 3,
+    "current_explanation": "On leave = 35% \u00d7 480 = 168. On base = 480 \u2212 168 = 312. The trap is selecting 168 (those on leave) rather than those remaining."
+  },
+  {
+    "external_key": "AR-WP-4",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(21w)",
+      "no-trap-named"
+    ],
+    "stem": "A mess hall serves breakfast for 2 hours at 80 soldiers per hour and lunch for 3 hours at 120 soldiers per hour. What is the total number of soldiers served?",
+    "choices": [
+      "400",
+      "500",
+      "520",
+      "600"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Breakfast = 80 \u00d7 2 = 160. Lunch = 120 \u00d7 3 = 360. Total = 160 + 360 = 520."
+  },
+  {
+    "external_key": "AR-WP-5",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(28w)",
+      "no-trap-named"
+    ],
+    "stem": "A soldier drives 3 legs of a trip: 60 miles at 30 mph, then 120 miles at 60 mph, then 90 miles at 45 mph. What is the total driving time?",
+    "choices": [
+      "5 hours",
+      "5.5 hours",
+      "6 hours",
+      "6.5 hours"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Leg 1: 60 \u00f7 30 = 2 hrs. Leg 2: 120 \u00f7 60 = 2 hrs. Leg 3: 90 \u00f7 45 = 2 hrs. Total = 6 hours."
+  },
+  {
+    "external_key": "AR-WP-6",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(15w)",
+      "no-trap-named"
+    ],
+    "stem": "A soldier's monthly pay is $3,000. She receives a 5% pay raise. What is her new monthly pay?",
+    "choices": [
+      "$3,050",
+      "$3,100",
+      "$3,150",
+      "$3,200"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Raise = 5% \u00d7 $3,000 = $150. New pay = $3,000 + $150 = $3,150."
+  },
+  {
+    "external_key": "AR-AF-B3-2",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(23w)"
+    ],
+    "stem": "A warehouse receives 3 shipments of 144 items each. Workers then remove 85 items for immediate distribution. How many items remain in the warehouse?",
+    "choices": [
+      "347",
+      "357",
+      "372",
+      "432"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Total received = 3 \u00d7 144 = 432. Remaining = 432 \u2212 85 = 347. The trap answer 432 ignores the removal step."
+  },
+  {
+    "external_key": "AR-AF-B3-3",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "A painter earns $18 per hour and works 7 hours on Monday, 5 hours on Tuesday, and 6 hours on Wednesday. What are her total earnings for the three days?",
+    "choices": [
+      "$216",
+      "$252",
+      "$288",
+      "$324"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Total hours = 7 + 5 + 6 = 18 hours. Earnings = 18 \u00d7 $18 = $324. The trap is computing 18 hours but multiplying by the wrong wage (e.g., $16/hr = $288)."
+  },
+  {
+    "external_key": "AR-AF-B3-4",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(29w)"
+    ],
+    "stem": "A fuel tank holds 320 gallons when full. A convoy uses 3/8 of the fuel. How many gallons remain?",
+    "choices": [
+      "120 gallons",
+      "160 gallons",
+      "200 gallons",
+      "240 gallons"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Fuel used = (3/8) \u00d7 320 = 120 gallons. Remaining = 320 \u2212 120 = 200 gallons. The trap is choosing 120 (the amount used, not the amount remaining)."
+  },
+  {
+    "external_key": "AR-AF-B3-5",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(33w)"
+    ],
+    "stem": "A soldier earns $2,640 per month. She contributes 5% to a savings plan and pays $420 in rent. What is her take-home pay after both deductions?",
+    "choices": [
+      "$2,088",
+      "$2,100",
+      "$2,112",
+      "$2,220"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Savings contribution = 5% \u00d7 $2,640 = $132. Take-home = $2,640 \u2212 $132 \u2212 $420 = $2,088. The trap is forgetting the 5% contribution and subtracting only rent: $2,640 \u2212 $420 = $2,220."
+  },
+  {
+    "external_key": "AR-AF-B3-6",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "A store sells notebooks for $2.50 each and pens for $0.75 each. A student buys 8 notebooks and 10 pens. What is the total cost?",
+    "choices": [
+      "$25.00",
+      "$26.50",
+      "$27.50",
+      "$28.00"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Notebooks: 8 \u00d7 $2.50 = $20.00. Pens: 10 \u00d7 $0.75 = $7.50. Total = $20.00 + $7.50 = $27.50."
+  },
+  {
+    "external_key": "AR-AF-B3-7",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A bus seats 48 passengers. On three consecutive trips, it carries 35, 41, and 48 passengers. What is the total number of empty seats across all three trips?",
+    "choices": [
+      "18",
+      "20",
+      "22",
+      "24"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Empty seats: trip 1 = 48 \u2212 35 = 13; trip 2 = 48 \u2212 41 = 7; trip 3 = 48 \u2212 48 = 0. Total empty = 13 + 7 + 0 = 20."
+  },
+  {
+    "external_key": "AR-AF-B3-9",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(31w)"
+    ],
+    "stem": "A mess hall serves breakfast daily. Each soldier eats 4 eggs at breakfast. For a unit of 120 soldiers over 5 days, how many total eggs are used at breakfast?",
+    "choices": [
+      "480",
+      "1,200",
+      "2,000",
+      "2,400"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Eggs = 4 per soldier \u00d7 120 soldiers \u00d7 5 days = 2,400 eggs. The trap is computing 4 \u00d7 120 = 480 and forgetting to multiply by the 5-day period."
+  },
+  {
+    "external_key": "AR-AF-B3-11",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "A canteen sells water bottles for $1.25 each. A soldier buys 16 bottles and pays with a $20 bill and a $5 bill. How much change does he receive?",
+    "choices": [
+      "$1.00",
+      "$3.00",
+      "$5.00",
+      "$7.00"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Cost = 16 \u00d7 $1.25 = $20.00. Total paid = $20 + $5 = $25. Change = $25 \u2212 $20 = $5.00."
+  },
+  {
+    "external_key": "AR-AF-B3-12",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(10w)",
+      "no-trap-named"
+    ],
+    "stem": "A recruit runs 3 miles on Monday, 4 miles on Wednesday, and 5 miles on Friday. How many miles does she run in total?",
+    "choices": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total = 3 + 4 + 5 = 12 miles."
+  },
+  {
+    "external_key": "AR-RP-B3-1",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(22w)"
+    ],
+    "stem": "A map uses a scale of 1 inch = 20 miles. Two towns are 4 inches apart on the map. What is the actual distance between them?",
+    "choices": [
+      "5 miles",
+      "24 miles",
+      "80 miles",
+      "100 miles"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Actual distance = 4 \u00d7 20 = 80 miles. The trap is dividing 20 \u00f7 4 = 5, which inverts the scale."
+  },
+  {
+    "external_key": "AR-RP-B3-3",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "A car uses 3 gallons of fuel for every 75 miles driven. At the same rate, how many gallons are needed for a 325-mile trip?",
+    "choices": [
+      "9",
+      "11",
+      "13",
+      "15"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Rate = 75 \u00f7 3 = 25 miles per gallon. Gallons needed = 325 \u00f7 25 = 13 gallons."
+  },
+  {
+    "external_key": "AR-RP-B3-5",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "A machine produces 420 parts in 7 hours. At the same rate, how many parts does it produce in 10 hours?",
+    "choices": [
+      "540",
+      "560",
+      "580",
+      "600"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Rate = 420 \u00f7 7 = 60 parts/hour. Output in 10 hours = 60 \u00d7 10 = 600 parts."
+  },
+  {
+    "external_key": "AR-RP-B3-6",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "A scale model of a ship is built at a ratio of 1:250. The model is 48 centimeters long. What is the actual length of the ship in meters?",
+    "choices": [
+      "90 m",
+      "100 m",
+      "120 m",
+      "150 m"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Actual length in cm = 48 \u00d7 250 = 12,000 cm. Convert to meters: 12,000 \u00f7 100 = 120 m. The trap is reporting the answer in centimeters (12,000) or forgetting the conversion factor."
+  },
+  {
+    "external_key": "AR-RP-B3-7",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(27w)",
+      "no-trap-named"
+    ],
+    "stem": "A recipe for 12 cookies requires 2 cups of flour. How many cups of flour are needed for 42 cookies?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Proportion: 2/12 = x/42. Cross-multiply: 12x = 84. x = 7 cups. Alternatively, scale factor = 42/12 = 3.5; flour = 2 \u00d7 3.5 = 7 cups."
+  },
+  {
+    "external_key": "AR-RP-B3-9",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Eight workers can load a truck in 3 hours. Two workers leave after the first hour. How many additional hours will the remaining 6 workers need to finish the job?",
+    "choices": [
+      "2 hours",
+      "2 hours 20 minutes",
+      "2 hours 40 minutes",
+      "3 hours"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total work = 8 \u00d7 3 = 24 worker-hours. After hour 1, work completed = 8 worker-hours. Remaining = 16 worker-hours. With 6 workers: 16 \u00f7 6 = 2\u2154 hours = 2 hours 40 minutes."
+  },
+  {
+    "external_key": "AR-RP-B3-10",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "A paint color is mixed using blue and white paint in a ratio of 2:5 (blue:white). A painter needs 28 ounces of the mixture total. How many ounces of blue paint are needed?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total parts = 2 + 5 = 7. Blue portion = (2/7) \u00d7 28 = 8 ounces. The trap is computing (2/5) \u00d7 28 \u2248 11.2, treating the ratio as blue:white rather than blue:total."
+  },
+  {
+    "external_key": "AR-RP-B3-14",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "A caterer makes punch using juice and sparkling water in a ratio of 3:7 (juice:water). She needs 50 liters total. How many liters of juice are needed?",
+    "choices": [
+      "12 liters",
+      "15 liters",
+      "18 liters",
+      "21 liters"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Total parts = 3 + 7 = 10. Juice = (3/10) \u00d7 50 = 15 liters. The trap is using 3/7 of 50 \u2248 21.4 liters, treating the ratio as juice:water rather than juice:total."
+  },
+  {
+    "external_key": "AR-PC-B3-1",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(10w)",
+      "no-trap-named"
+    ],
+    "stem": "A test has 40 questions. A student answers 30 correctly. What percent did the student answer correctly?",
+    "choices": [
+      "65%",
+      "70%",
+      "75%",
+      "80%"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Percent correct = (30 \u00f7 40) \u00d7 100 = 75%."
+  },
+  {
+    "external_key": "AR-PC-B3-2",
+    "file": "b3",
+    "difficulty": 2,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(9w)"
+    ],
+    "stem": "What is 30% of 150?",
+    "choices": [
+      "35",
+      "40",
+      "45",
+      "50"
+    ],
+    "correct_index": 2,
+    "current_explanation": "30% \u00d7 150 = 0.30 \u00d7 150 = 45."
+  },
+  {
+    "external_key": "AR-PC-B3-3",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(30w)"
+    ],
+    "stem": "A phone originally priced at $360 is discounted by 15%. What is the sale price?",
+    "choices": [
+      "$288",
+      "$300",
+      "$306",
+      "$312"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Discount = 15% \u00d7 $360 = $54. Sale price = $360 \u2212 $54 = $306. The trap is computing a 16.7% discount or rounding $360 \u00d7 0.85 incorrectly to $300."
+  },
+  {
+    "external_key": "AR-PC-B3-4",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(27w)"
+    ],
+    "stem": "A soldier's weight dropped from 200 pounds to 185 pounds during training. What is the percent decrease?",
+    "choices": [
+      "6.5%",
+      "7.0%",
+      "7.5%",
+      "8.1%"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Decrease = 15 lb. Percent decrease = (15 \u00f7 200) \u00d7 100 = 7.5%. The trap is dividing by the new weight: 15 \u00f7 185 \u2248 8.1%."
+  },
+  {
+    "external_key": "AR-PC-B3-5",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(26w)"
+    ],
+    "stem": "A charity collected $3,200 last year. This year it collected $4,000. By what percent did collections increase?",
+    "choices": [
+      "20%",
+      "25%",
+      "28%",
+      "33%"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Increase = $800. Percent increase = ($800 \u00f7 $3,200) \u00d7 100 = 25%. The trap is dividing by the new amount: $800 \u00f7 $4,000 = 20%."
+  },
+  {
+    "external_key": "AR-PC-B3-6",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(20w)"
+    ],
+    "stem": "In a class of 60 students, 45% received a grade of A or B. How many students received an A or B?",
+    "choices": [
+      "24",
+      "27",
+      "30",
+      "33"
+    ],
+    "correct_index": 1,
+    "current_explanation": "45% \u00d7 60 = 0.45 \u00d7 60 = 27 students. The trap is rounding 45% to 50% and computing 30."
+  },
+  {
+    "external_key": "AR-PC-B3-7",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(30w)"
+    ],
+    "stem": "A bank account has a balance of $2,500. It earns 4% simple annual interest. What is the balance after 2.5 years?",
+    "choices": [
+      "$2,600",
+      "$2,750",
+      "$2,800",
+      "$2,850"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Interest = $2,500 \u00d7 0.04 \u00d7 2.5 = $250. Balance = $2,500 + $250 = $2,750. The trap is computing only 1 year of interest ($100) and arriving at $2,600."
+  },
+  {
+    "external_key": "AR-PC-B3-13",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(32w)"
+    ],
+    "stem": "A company's revenue grew by 25% in Q1 and by 16% in Q2 relative to the Q1 ending revenue. If starting revenue was $80,000, what was the revenue at the end of Q2?",
+    "choices": [
+      "$103,200",
+      "$107,200",
+      "$112,800",
+      "$116,000"
+    ],
+    "correct_index": 3,
+    "current_explanation": "After Q1: $80,000 \u00d7 1.25 = $100,000. After Q2: $100,000 \u00d7 1.16 = $116,000. The trap is adding the growth rates: 25% + 16% = 41%, giving $80,000 \u00d7 1.41 = $112,800."
+  },
+  {
+    "external_key": "AR-RD-B3-1",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(12w)",
+      "no-trap-named"
+    ],
+    "stem": "A car travels at 50 mph. How far does it travel in 3 hours?",
+    "choices": [
+      "100 miles",
+      "140 miles",
+      "150 miles",
+      "160 miles"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Distance = speed \u00d7 time = 50 \u00d7 3 = 150 miles."
+  },
+  {
+    "external_key": "AR-RD-B3-2",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(15w)",
+      "no-trap-named"
+    ],
+    "stem": "A cyclist rides at 15 mph. How far does she travel in 2 hours and 20 minutes?",
+    "choices": [
+      "30 miles",
+      "33 miles",
+      "35 miles",
+      "37 miles"
+    ],
+    "correct_index": 2,
+    "current_explanation": "2 hours 20 minutes = 7/3 hours. Distance = 15 \u00d7 7/3 = 35 miles."
+  },
+  {
+    "external_key": "AR-RD-B3-3",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(16w)",
+      "no-trap-named"
+    ],
+    "stem": "A train travels 360 miles in 4 hours. At the same speed, how long will it take the train to travel 495 miles?",
+    "choices": [
+      "4.5 hours",
+      "5 hours",
+      "5.5 hours",
+      "6 hours"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Speed = 360 \u00f7 4 = 90 mph. Time = 495 \u00f7 90 = 5.5 hours."
+  },
+  {
+    "external_key": "AR-RD-B3-4",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(8w)",
+      "no-trap-named"
+    ],
+    "stem": "A plane flies 1,200 miles in 2.5 hours. What is the plane's average speed?",
+    "choices": [
+      "400 mph",
+      "440 mph",
+      "460 mph",
+      "480 mph"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Speed = 1,200 \u00f7 2.5 = 480 mph."
+  },
+  {
+    "external_key": "AR-RD-B3-6",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "A supply convoy travels 120 miles to a base, makes a 45-minute stop, then returns over the same route. The convoy travels at 40 mph in both directions. What is the total elapsed time including the stop?",
+    "choices": [
+      "5 hours 45 minutes",
+      "6 hours 15 minutes",
+      "6 hours 45 minutes",
+      "7 hours"
+    ],
+    "correct_index": 2,
+    "current_explanation": "One-way driving time = 120 \u00f7 40 = 3 hours. Round trip = 6 hours. Stop = 45 min = 0.75 hr. Total = 6.75 hours = 6 hours 45 minutes."
+  },
+  {
+    "external_key": "AR-RD-B3-7",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "Worker A can fill a storage bin in 6 hours; Worker B can fill the same bin in 4 hours. How long will it take them working together?",
+    "choices": [
+      "2 hours",
+      "2 hours 24 minutes",
+      "2 hours 48 minutes",
+      "3 hours"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Combined rate = 1/6 + 1/4 = 5/12 bins/hour. Time = 12/5 = 2.4 hours = 2 hours 24 minutes. The trap is averaging the times: (6 + 4) \u00f7 2 = 5 hours."
+  },
+  {
+    "external_key": "AR-RD-B3-8",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "A drain empties a 900-gallon pool at 30 gallons per minute. A hose adds water at 12 gallons per minute. Both run simultaneously starting with the pool full. How many minutes until the pool is empty?",
+    "choices": [
+      "30 minutes",
+      "40 minutes",
+      "45 minutes",
+      "50 minutes"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Net drain rate = 30 \u2212 12 = 18 gal/min. Time to empty = 900 \u00f7 18 = 50 minutes. The trap is using only the drain rate: 900 \u00f7 30 = 30 minutes."
+  },
+  {
+    "external_key": "AR-RD-B3-10",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A and B start from the same town at the same time. A heads north at 50 mph; B heads east at 120 mph. After how many hours is the straight-line distance between them exactly 130 miles?",
+    "choices": [
+      "1 hour",
+      "1.5 hours",
+      "2 hours",
+      "2.5 hours"
+    ],
+    "correct_index": 0,
+    "current_explanation": "After t hours, A is 50t miles north and B is 120t miles east. Distance = \u221a((50t)\u00b2 + (120t)\u00b2) = t\u221a(2,500 + 14,400) = 130t = 130, so t = 1 hour. This uses the 5-12-13 triple (50 = 5\u00d710, 120 = 12\u00d710, 130 = 13\u00d710)."
+  },
+  {
+    "external_key": "AR-RD-B3-11",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "Three painters working together: Painter 1's rate is 1/6 of a fence per hour; Painter 2's rate is 1/8 per hour; Painter 3's rate is 1/12 per hour. How long does it take all three to paint the entire fence?",
+    "choices": [
+      "2 hours 10 minutes",
+      "2 hours 40 minutes",
+      "3 hours",
+      "3 hours 20 minutes"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Combined rate = 1/6 + 1/8 + 1/12 = 4/24 + 3/24 + 2/24 = 9/24 = 3/8 fence/hr. Time = 8/3 hours = 2\u2154 hours = 2 hours 40 minutes."
+  },
+  {
+    "external_key": "AR-RD-B3-12",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Car A leaves City X at 8:00 AM toward City Y at 60 mph. Car B leaves City Y at 9:00 AM toward City X at 90 mph. The cities are 210 miles apart. At what time do the cars meet?",
+    "choices": [
+      "9:30 AM",
+      "10:00 AM",
+      "10:30 AM",
+      "11:00 AM"
+    ],
+    "correct_index": 1,
+    "current_explanation": "By 9:00 AM, Car A has gone 60 miles; gap remaining = 210 \u2212 60 = 150 miles. After 9 AM, combined closing speed = 60 + 90 = 150 mph. Time to close = 150 \u00f7 150 = 1 hour. Cars meet at 10:00 AM."
+  },
+  {
+    "external_key": "AR-RD-B3-13",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "A cargo ship travels 540 nautical miles at 18 knots, then returns the same distance at 12 knots. What is the total travel time for the round trip?",
+    "choices": [
+      "65 hours",
+      "70 hours",
+      "72 hours",
+      "75 hours"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Outbound time = 540 \u00f7 18 = 30 hours. Return time = 540 \u00f7 12 = 45 hours. Total = 30 + 45 = 75 hours."
+  },
+  {
+    "external_key": "AR-RD-B3-14",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(32w)"
+    ],
+    "stem": "A boat's engine speed is 14 mph in still water. Traveling downstream with a 4 mph current, it covers 108 miles. How long does the trip take?",
+    "choices": [
+      "5 hours",
+      "6 hours",
+      "6.5 hours",
+      "7 hours"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Effective downstream speed = 14 + 4 = 18 mph. Time = 108 \u00f7 18 = 6 hours. The trap is using the engine speed alone: 108 \u00f7 14 \u2248 7.7 hours."
+  },
+  {
+    "external_key": "AR-WP-B3-1",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(30w)",
+      "no-trap-named"
+    ],
+    "stem": "A box of 48 granola bars is divided equally among 6 hikers. Each hiker then gives 2 bars to a seventh hiker who arrived late. How many bars does the seventh hiker receive?",
+    "choices": [
+      "8",
+      "10",
+      "12",
+      "14"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Each of the 6 hikers starts with 48 \u00f7 6 = 8 bars. The seventh hiker gets 2 bars from each of the 6: 2 \u00d7 6 = 12 bars."
+  },
+  {
+    "external_key": "AR-WP-B3-2",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(21w)",
+      "no-trap-named"
+    ],
+    "stem": "A gardener plants tomatoes in 5 rows with 12 plants each and peppers in 4 rows with 9 plants each. How many plants are there in total?",
+    "choices": [
+      "84",
+      "88",
+      "92",
+      "96"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Tomatoes = 5 \u00d7 12 = 60. Peppers = 4 \u00d7 9 = 36. Total = 60 + 36 = 96."
+  },
+  {
+    "external_key": "AR-WP-B3-3",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "A jogger burns 8 calories per minute while running and 3 calories per minute while walking. She runs for 25 minutes and walks for 20 minutes. How many total calories does she burn?",
+    "choices": [
+      "240",
+      "260",
+      "280",
+      "300"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Calories running = 8 \u00d7 25 = 200. Calories walking = 3 \u00d7 20 = 60. Total = 260."
+  },
+  {
+    "external_key": "AR-WP-B3-4",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(21w)",
+      "no-trap-named"
+    ],
+    "stem": "A merchant buys 60 items at $4 each and sells all of them at $7 each. What is his total profit?",
+    "choices": [
+      "$120",
+      "$150",
+      "$180",
+      "$210"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Revenue = 60 \u00d7 $7 = $420. Cost = 60 \u00d7 $4 = $240. Profit = $420 \u2212 $240 = $180."
+  },
+  {
+    "external_key": "AR-WP-B3-6",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(33w)",
+      "no-trap-named"
+    ],
+    "stem": "A water tank is 3/4 full. After adding 240 gallons, the tank is 9/10 full. What is the total capacity of the tank in gallons?",
+    "choices": [
+      "1,200",
+      "1,500",
+      "1,600",
+      "2,000"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The added 240 gallons raised the level by 9/10 \u2212 3/4 = 18/20 \u2212 15/20 = 3/20 of capacity. So (3/20) \u00d7 C = 240. C = 240 \u00d7 20/3 = 1,600 gallons."
+  },
+  {
+    "external_key": "AR-WP-B3-7",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(25w)",
+      "no-trap-named"
+    ],
+    "stem": "A plumber charges $65 for the first hour and $45 for each additional hour, plus a flat $20 materials fee. If a job takes 4 hours total, what is the total bill?",
+    "choices": [
+      "$200",
+      "$220",
+      "$240",
+      "$280"
+    ],
+    "correct_index": 1,
+    "current_explanation": "First hour = $65. Additional 3 hours = 3 \u00d7 $45 = $135. Materials = $20. Total = $65 + $135 + $20 = $220."
+  },
+  {
+    "external_key": "AR-WP-B3-10",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(28w)",
+      "no-trap-named"
+    ],
+    "stem": "A bookshelf has 8 shelves, each holding 6 books. Currently, 3/4 of the shelves are completely full and the remaining shelves are empty. How many more books can the shelf unit hold?",
+    "choices": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Full shelves = 3/4 \u00d7 8 = 6 shelves. Empty shelves = 2. Each empty shelf holds 6 books. Remaining capacity = 2 \u00d7 6 = 12 books."
+  },
+  {
+    "external_key": "AR-WP-B3-11",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A catering company charges $11 per adult and $7 per child. At an event, the number of adults is 3 times the number of children. The total bill is $1,200. How many children attended?",
+    "choices": [
+      "20",
+      "25",
+      "30",
+      "40"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Let c = number of children; adults = 3c. Bill: 11(3c) + 7c = 33c + 7c = 40c = $1,200. c = 30 children. Verify: 90 adults \u00d7 $11 = $990; 30 children \u00d7 $7 = $210; $990 + $210 = $1,200 \u2713."
+  },
+  {
+    "external_key": "AR-WP-B3-12",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(30w)"
+    ],
+    "stem": "A bus leaves a depot every 20 minutes. A train leaves the same depot every 30 minutes. Both departed together at 6:00 AM. At what time will they next depart together?",
+    "choices": [
+      "6:40 AM",
+      "6:50 AM",
+      "7:00 AM",
+      "7:10 AM"
+    ],
+    "correct_index": 2,
+    "current_explanation": "LCM(20, 30) = 60 minutes. They next depart together 60 minutes after 6:00 AM = 7:00 AM. The trap is adding 20 + 30 = 50 minutes, giving 6:50 AM."
+  },
+  {
+    "external_key": "AR-WP-B3-13",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(32w)",
+      "no-trap-named"
+    ],
+    "stem": "A soldier's monthly budget is $2,400. He spends 1/3 on housing, 1/4 on food, and 1/6 on transportation. How much remains for other expenses?",
+    "choices": [
+      "$500",
+      "$600",
+      "$700",
+      "$800"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Housing = 1/3 \u00d7 $2,400 = $800. Food = 1/4 \u00d7 $2,400 = $600. Transportation = 1/6 \u00d7 $2,400 = $400. Total spent = $1,800. Remaining = $2,400 \u2212 $1,800 = $600."
+  },
+  {
+    "external_key": "AR-WP-B3-14",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(23w)",
+      "no-trap-named"
+    ],
+    "stem": "A fundraiser sells two types of tickets: regular at $8 and VIP at $20. They sell 150 regular tickets and 50 VIP tickets. What is the total revenue?",
+    "choices": [
+      "$1,800",
+      "$2,000",
+      "$2,200",
+      "$2,400"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Regular revenue = 150 \u00d7 $8 = $1,200. VIP revenue = 50 \u00d7 $20 = $1,000. Total = $1,200 + $1,000 = $2,200."
+  },
+  {
+    "external_key": "AR-B7-D5-1",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "thin(14w)",
+      "no-trap-named"
+    ],
+    "stem": "A contractor charges a flat fee of $120 plus $45 per hour. A second contractor charges $60 per hour with no flat fee. For what number of hours will both contractors charge the same total amount?",
+    "choices": [
+      "4 hours",
+      "6 hours",
+      "8 hours",
+      "10 hours"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Set equal: 120 + 45h = 60h. 120 = 15h. h = 8 hours."
+  },
+  {
+    "external_key": "AR-B7-D5-2",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "A gear with 18 teeth meshes with a gear with 45 teeth. If the smaller gear rotates at 250 rpm, how fast does the larger gear rotate?",
+    "choices": [
+      "80 rpm",
+      "100 rpm",
+      "125 rpm",
+      "150 rpm"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Gear speed is inversely proportional to tooth count. Larger gear speed = 250 \u00d7 (18/45) = 250 \u00d7 0.4 = 100 rpm."
+  },
+  {
+    "external_key": "AR-B7-D5-3",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ar.percent",
+    "flags": [
+      "thin(31w)"
+    ],
+    "stem": "A soldier's test score was reduced by 12% due to a grading error. After the error was corrected, the score was increased by 20% of the reduced score. The original score was 250. What is the final corrected score?",
+    "choices": [
+      "250.0",
+      "264.0",
+      "247.2",
+      "270.0"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Reduced score = 250 \u00d7 0.88 = 220. After 20% increase: 220 \u00d7 1.20 = 264. The trap is thinking the two percentages cancel to 8% net gain on the original."
+  },
+  {
+    "external_key": "AR-B7-D5-4",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "Two soldiers start at the same point and walk in the same direction. Soldier A walks at 4 mph; Soldier B walks at 6 mph. Soldier B starts 30 minutes after Soldier A. How long after B starts does B catch up with A?",
+    "choices": [
+      "45 minutes",
+      "1 hour",
+      "1 hour 15 minutes",
+      "1 hour 30 minutes"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A's head start = 4 \u00d7 0.5 = 2 miles. B closes at 6 \u2212 4 = 2 mph. Catch-up time = 2 \u00f7 2 = 1 hour after B starts."
+  },
+  {
+    "external_key": "AR-B7-D5-5",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ar.arithmetic-fundamentals",
+    "flags": [
+      "thin(18w)",
+      "no-trap-named"
+    ],
+    "stem": "A barrel holds 84 gallons. A pump fills it at 7 gallons per minute, but a leak drains it at 1.75 gallons per minute. Starting empty, how many minutes does it take to fill the barrel?",
+    "choices": [
+      "12 minutes",
+      "14 minutes",
+      "16 minutes",
+      "18 minutes"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Net fill rate = 7 \u2212 1.75 = 5.25 gal/min. Time = 84 \u00f7 5.25 = 16 minutes."
+  },
+  {
+    "external_key": "AR-B7-D5-6",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ar.word-problems",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Three workers can paint a room in 6 hours. Two of the workers leave after 2 hours. The remaining worker finishes alone. How many total hours does the job take?",
+    "choices": [
+      "12 hours",
+      "14 hours",
+      "16 hours",
+      "18 hours"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Combined rate of 3 workers = 1/6 room/hour. In 2 hours they complete 2 \u00d7 (1/6) = 1/3 of the room. Remaining = 2/3. One worker's rate = 1/18 room/hour. Time for 1 worker to finish 2/3 = (2/3) \u00f7 (1/18) = 12 hours. Total = 2 + 12 = 14 hours."
+  },
+  {
+    "external_key": "AR-B7-D5-7",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ar.rate-distance-time",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "A boat travels 48 miles upstream in 4 hours and the same distance downstream in 3 hours. What is the speed of the current?",
+    "choices": [
+      "2 mph",
+      "3 mph",
+      "4 mph",
+      "5 mph"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Upstream speed = 48/4 = 12 mph. Downstream speed = 48/3 = 16 mph. Boat speed in still water = (12+16)/2 = 14 mph. Current speed = (16\u221212)/2 = 2 mph."
+  },
+  {
+    "external_key": "AR-B7-D5-8",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ar.ratio-proportion",
+    "flags": [
+      "thin(32w)",
+      "no-trap-named"
+    ],
+    "stem": "If 5 machines produce 300 widgets in 4 hours, how many machines are needed to produce 540 widgets in 3 hours?",
+    "choices": [
+      "9",
+      "10",
+      "12",
+      "15"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Rate per machine = 300 / (5 \u00d7 4) = 15 widgets/machine/hour. In 3 hours one machine makes 15 \u00d7 3 = 45 widgets. Machines needed = 540 / 45 = 12."
+  }
+]

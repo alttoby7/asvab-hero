@@ -1,0 +1,226 @@
+[
+  {
+    "external_key": "PC-ATP-NEW-1",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"Recycling at home is one of the easiest ways to help the environment. Sorting paper, plastic, and glass takes only a few minutes each week, but it keeps tons of waste out of landfills. Most cities now provide curbside bins at no extra cost, so the equipment is already there. The habit costs nothing and the payoff for local landfills is real. Every household should make recycling part of its weekly routine.\"\n\nThe author's primary purpose in writing this passage is to:",
+    "choices": [
+      "explain how recycling facilities sort materials",
+      "encourage readers to recycle at home",
+      "compare landfills in different cities",
+      "describe the history of curbside recycling"
+    ],
+    "correct_index": 1,
+    "explanation": "The closing sentence states the goal directly: \"Every household should make recycling part of its weekly routine.\" That imperative, paired with \"easiest ways to help\" and \"only a few minutes,\" marks the piece as persuasion. Choice B names that purpose. Choice A picks a technical angle the passage never enters, since sorting is mentioned only as effort the reader spends. Choice C invents a city-to-city comparison that does not appear. Choice D adds historical framing the passage does not provide. Only B fits the directive tone.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-2",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"The new community park is a wonderful addition to our neighborhood. The walking trails are beautiful, the playground equipment is top quality, and the open lawns give families a perfect place to gather on weekends. The benches along the main path are already filled most evenings, and the new splash pad has been a favorite with children all summer. Residents should be proud of what their tax dollars built.\"\n\nThe author's tone is best described as:",
+    "choices": [
+      "skeptical",
+      "enthusiastic",
+      "indifferent",
+      "regretful"
+    ],
+    "correct_index": 1,
+    "explanation": "Every adjective in the passage is praise: \"wonderful,\" \"beautiful,\" \"top quality,\" \"perfect,\" \"proud.\" That stacked positive language signals enthusiasm rather than measured approval. Choice B names that tone. Choice A reverses the polarity, treating celebration as doubt. Choice C ignores the value-loaded vocabulary, which is the opposite of indifferent. Choice D imports regret the passage never expresses, since the author closes with pride rather than loss. Only B fits the consistently warm and celebratory language.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-3",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"Reminder: All employees must complete the annual safety training by the end of the month. The training takes about thirty minutes and can be accessed through the company portal using your standard login credentials. Once complete, your manager will be notified automatically and no paperwork needs to be submitted. Failure to complete the training on time may delay payroll processing for the following pay period.\"\n\nThe author's primary purpose in this memo is to:",
+    "choices": [
+      "praise employees for completing training quickly",
+      "inform employees of a deadline and how to meet it",
+      "argue that safety training should be made shorter",
+      "warn that the company is being investigated"
+    ],
+    "correct_index": 1,
+    "explanation": "The memo opens with \"Reminder\" and then lists the deadline, the time required, and how to access the training. That structure is straight notification. Choice B captures the informative purpose. Choice A invents praise the memo never offers, since employees are being prompted rather than thanked. Choice C reverses the position, since the author treats the thirty-minute length as a small ask, not a problem. Choice D escalates the routine consequence \"may delay payroll\" into an investigation the memo does not mention.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-4",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"I bought this blender expecting another disappointment. The last three I tried in this price range either burned out within weeks or struggled with anything thicker than a smoothie. Instead, this one crushed ice on the first try, cleaned up in under a minute, and has run every morning for six months without complaint. The motor still sounds the way it did out of the box. For under fifty dollars, I would call that a small miracle.\"\n\nThe author's attitude toward the blender is best described as:",
+    "choices": [
+      "pleasantly surprised",
+      "wildly obsessive",
+      "mildly disappointed",
+      "coolly analytical"
+    ],
+    "correct_index": 0,
+    "explanation": "The author primes the reader for letdown with \"expecting another disappointment,\" then flips with \"Instead, it crushed ice on the first try\" and \"a small miracle.\" That contrast signals surprise paired with approval. Choice A names that exact attitude. Choice B overshoots into obsession, when the praise is measured rather than fanatical. Choice C contradicts the passage by holding onto disappointment the author explicitly drops. Choice D undersells the warmth in \"small miracle,\" treating an excited review as a neutral analysis.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-5",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"The proposal claims the new policy will save the city millions, but the numbers come from an internal estimate, not an independent audit. The same office that drafted the proposal also produced the financial projections that support it. Supporters keep citing the savings figure as if it were settled fact, and last week a council member quoted it on the radio without noting its source. Until outside reviewers verify the math, residents deserve to ask harder questions.\"\n\nThe author's tone is best described as:",
+    "choices": [
+      "openly hostile",
+      "skeptical",
+      "fully convinced",
+      "uninterested"
+    ],
+    "correct_index": 1,
+    "explanation": "The author flags the source of the numbers as \"an internal estimate, not an independent audit\" and calls for \"outside reviewers\" before treating the figure as fact. That is doubt grounded in process, not attack. Choice B names that skeptical tone. Choice A overshoots into hostility, since the author proposes verification rather than condemnation. Choice C reverses the position by treating the savings claim as accepted, which the passage refuses to do. Choice D ignores the active push for harder questions, which is the opposite of disengaged.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-6",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"To: All staff. The fourth-floor copier will be out of service Thursday afternoon for scheduled maintenance. Please route urgent print jobs to the second-floor machine, which has the same drivers installed and accepts the same employee codes. Bulk print jobs over two hundred pages should be moved to Wednesday afternoon if possible. Service should be restored by 5 p.m., and a follow-up email will confirm the copier is available again. Thank you for your patience.\"\n\nThe author's primary purpose in writing this memo is to:",
+    "choices": [
+      "apologize for repeated equipment failures",
+      "notify staff of a brief outage and offer a workaround",
+      "warn that the copier may be permanently removed",
+      "request feedback on copier performance"
+    ],
+    "correct_index": 1,
+    "explanation": "The memo states the outage window, offers the second-floor machine as an alternative, and gives a restoration time. Choice B captures that notify-and-redirect purpose. Choice A reads \"thank you for your patience\" as apology for repeated problems, but the passage describes one scheduled maintenance event, not a pattern of failures. Choice C invents a permanent removal the memo never raises. Choice D imports a feedback request that does not appear; nothing in the memo asks staff to evaluate the copier.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-7",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"Walking the same streets where my grandmother sold flowers seventy years ago, I notice that the shopfronts have all changed. The bakery on the corner is now a phone store, and the small market where she bought her ribbon closed before I was born. Yet the morning light hitting the brick still looks the way it did in her old photographs, and the cracked sidewalk near the church has not been repoured. Cities do not stay the same, yet small details survive longer than we expect.\"\n\nThe author's tone is best described as:",
+    "choices": [
+      "nostalgic",
+      "bitter",
+      "scientific",
+      "alarmed"
+    ],
+    "correct_index": 0,
+    "explanation": "The author anchors the present in the past with \"my grandmother sold flowers seventy years ago,\" \"her old photographs,\" and \"small details survive.\" That looking-back warmth is nostalgia rather than complaint. Choice A names that tone. Choice B imports bitterness the passage never voices, since the author notes loss without resentment. Choice C ignores the personal, memory-laden vocabulary, which is the opposite of detached observation. Choice D escalates a gentle reflection into alarm, when the closing sentence is consoling rather than urgent.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-8",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"Early results from the trial suggest the new treatment may reduce recovery time by about two days. The sample was small, follow-up was short, and outcomes varied across age groups. Patients over sixty saw the largest effect, while younger participants showed almost none. The researchers themselves stop short of recommending broader use, and the published paper calls for a multi-site replication before any guidelines are updated. The findings are promising enough to justify a larger study, though not yet to change clinical practice.\"\n\nThe author's tone is best described as:",
+    "choices": [
+      "cautiously optimistic",
+      "enthusiastic",
+      "dismissive",
+      "alarmed"
+    ],
+    "correct_index": 0,
+    "explanation": "The author balances hope with limits: \"promising enough to justify a larger study\" sits next to \"sample was small\" and \"not yet to change clinical practice.\" That paired structure is the signature of cautious optimism. Choice A names it. Choice B overshoots into enthusiasm, ignoring the qualifiers the author keeps inserting. Choice C reverses the position by treating the results as worth dismissing, when the passage explicitly calls them promising. Choice D imports alarm that nothing in the passage supports, since the framing is measured rather than worried.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-9",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"The mayor's plan to add bike lanes downtown is a reasonable start, even if it falls short of what the traffic studies recommended. The original review called for protected lanes on twelve streets; the approved plan funds only seven. Half a fix is still better than none, and the lanes that are being built happen to cover the most dangerous intersections, including the two with the highest crash counts in last year's report. Residents who wanted more should treat this as a foundation, not a finish line.\"\n\nThe author would most likely agree with which statement?",
+    "choices": [
+      "The plan is a disappointing failure that should be rejected.",
+      "The plan is an acceptable first step that needs to be expanded.",
+      "The plan is exactly the right size and does not need additional work.",
+      "The plan is irrelevant because traffic patterns will not change."
+    ],
+    "correct_index": 1,
+    "explanation": "The author calls the plan \"a reasonable start\" and tells residents to treat it as \"a foundation, not a finish line,\" which combines approval of the current step with a demand for more. Choice B captures both halves. Choice A reads the criticism as outright rejection, ignoring \"reasonable start\" and \"better than none.\" Choice C drops the call for expansion the author explicitly makes. Choice D invents fatalism about traffic that the passage never expresses, since the lanes are credited with covering the most dangerous intersections.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-10",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"Coastal communities have always rebuilt after storms. Generations of families have torn out drywall, replaced shingles, and put their lives back together more times than they care to count. What is new is the speed with which the same neighborhoods are being asked to rebuild again, sometimes twice in a single decade. Insurance maps are being redrawn quietly, premiums in flagged zones have doubled in five years, and the cost of staying is no longer just measured in lumber and shingles.\"\n\nThe author's primary purpose in writing this passage is to:",
+    "choices": [
+      "celebrate the resilience of coastal towns",
+      "raise concern about rising costs and risks of coastal rebuilding",
+      "explain how insurance maps are technically constructed",
+      "argue that coastal communities should be abandoned immediately"
+    ],
+    "correct_index": 1,
+    "explanation": "The author pivots on \"What is new is the speed\" and notes that \"the cost of staying is no longer just measured in lumber and shingles,\" which signals worry about a shifting situation. Choice B captures that concern. Choice A picks up the opening line about rebuilding but misses the warning that follows. Choice C invents a technical explanation the passage does not provide, since insurance maps are mentioned only as evidence. Choice D overshoots into a call for abandonment the author never makes, since the passage raises stakes without prescribing exit.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-11",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The latest software update promises faster load times, sharper graphics, and a redesigned interface that the company describes as a complete rethink of the workflow. Reviewers have been quick to call it a leap forward, and early demo videos have circulated widely. The benchmarks the company released cover load times and rendering speed, both of which are genuinely improved. Whether the new interface actually helps users finish tasks any faster is a separate question, and one the company has not chosen to answer with data.\"\n\nThe author's attitude toward the update is best described as:",
+    "choices": [
+      "openly cynical",
+      "skeptical",
+      "appreciative",
+      "indifferent"
+    ],
+    "correct_index": 1,
+    "explanation": "The author reports the marketing claims, notes the reviewer praise, then isolates a missing piece: \"a separate question, and one the company has not chosen to answer with data.\" That targeted doubt is skepticism. Choice B names it. Choice A overshoots into cynicism, which would imply the author assumes bad faith rather than asking for evidence. Choice C reverses the position by treating the author as approving, when the closing sentence withholds approval. Choice D ignores the pointed final clause, which is the opposite of disengaged.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-12",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The old library building is not beautiful in any conventional sense. Its bricks are dark, its windows are narrow, and the front steps slope at an angle no architect would defend today. But generations have walked those steps to find books they could not afford anywhere else, and that history sits in the walls more firmly than any renovation could.\"\n\nThe author's attitude toward the library is best described as:",
+    "choices": [
+      "admiring",
+      "appreciative",
+      "sentimental and uncritical",
+      "professionally detached"
+    ],
+    "correct_index": 1,
+    "explanation": "The author acknowledges the building's flaws plainly: \"not beautiful,\" \"dark,\" \"narrow,\" \"slope at an angle no architect would defend.\" The warmth arrives only in the closing pivot to what the building has meant for readers. That balance is appreciation, valuing the function and history without praising the form. Choice B fits. Choice A overshoots into admiration, which would treat the building itself as worthy of praise. Choice C drops the author's frank critique of the architecture. Choice D ignores the personal closing line about generations of readers.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-13",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 5,
+    "stem": "Read the passage below and answer the question.\n\n\"The committee's report concludes that the program has, on the whole, met its stated objectives. A closer reading of the appendix shows that two of those objectives were revised downward halfway through the review period. The remaining metrics are real, and the gains they describe are real, even if the bar they cleared is lower than the one originally set.\"\n\nThe author would most likely agree with which statement?",
+    "choices": [
+      "The program is a clear success and the report should be accepted as written.",
+      "The program produced genuine gains, but the report's headline claim overstates the result.",
+      "The program failed on every measure and the committee is hiding the truth.",
+      "The program's metrics are unimportant and should be ignored entirely."
+    ],
+    "correct_index": 1,
+    "explanation": "The author validates part of the report by calling \"the gains they describe\" real, then flags that \"two of those objectives were revised downward\" and the \"bar they cleared is lower than the one originally set.\" That is partial credit plus a caveat about the headline. Choice B captures both. Choice A drops the caveat the author insists on. Choice C escalates a calibration concern into total failure and concealment, which the passage does not support. Choice D dismisses the metrics the author explicitly affirms as real.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-14",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 5,
+    "stem": "Read the passage below and answer the question.\n\n\"Critics of the new arts grant point out, fairly, that the selection process favored applicants from a small number of established institutions. The committee has acknowledged the imbalance and promised changes for next cycle. None of that erases the fact that the funded projects, judged on their own merits, are among the strongest the program has produced in a decade.\"\n\nThe author's position is best described as:",
+    "choices": [
+      "fully defending the grant process against any criticism",
+      "rejecting the funded projects because of the flawed process",
+      "acknowledging the process flaw while still affirming the quality of the results",
+      "refusing to take any position on the outcome"
+    ],
+    "correct_index": 2,
+    "explanation": "The author concedes the critique with \"point out, fairly\" and notes the committee's promised changes, then pivots with \"None of that erases the fact\" to defend the projects on quality. That two-part move is precisely a process concession plus a results endorsement. Choice C names it. Choice A drops the concession the author openly makes. Choice B drops the endorsement the author insists on with \"strongest the program has produced in a decade.\" Choice D ignores the clear final position, since the author commits to a verdict rather than hedging.",
+    "status": "draft"
+  }
+]

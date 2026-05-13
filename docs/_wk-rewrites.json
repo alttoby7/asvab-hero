@@ -1,0 +1,482 @@
+[
+  {
+    "external_key": "WK-1",
+    "new_explanation": "Arid means extremely dry, with little or no rainfall, as in 'the arid desert of southern Arizona received only four inches of rain last year.' Damp is the direct antonym, naming wetness rather than dryness. Stormy is a sound-association trap, drawing on the weather frame but referring to active turbulent weather, not the absence of moisture. Fertile is a secondary antonym, since arid land is typically infertile, but fertility is about productivity, not water content directly. Only Dry captures the core meaning of arid.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-2",
+    "new_explanation": "Prudent means showing careful thought and good judgment about future consequences, as in 'it was prudent to refuel before crossing the desert.' Reckless is the direct antonym, naming heedless risk-taking. Generous overlaps with prudence as a positive trait but describes giving freely, a separate virtue. Stubborn is a register trap: a prudent person holds firm on careful reasoning, but stubbornness refuses to budge regardless of reasoning. Cautious is the dominant synonym, sharing both the forward-looking concern and the avoidance of risk.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-3",
+    "new_explanation": "Concise means expressing information in a small number of well-chosen words, as in 'her concise summary fit on one index card.' Wordy is the direct antonym, naming excess language. Unclear is a register trap, since concise writing is often very clear, not muddled. Detailed is a partial-overlap trap: a concise message can include essentials, but detailed implies thoroughness and length, the opposite of concise compression. Brief is the dominant synonym, sharing the core idea of short and to the point.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-4",
+    "new_explanation": "Ominous means giving the impression that something bad is about to happen, as in 'the ominous clouds rolling in promised a violent storm.' Cheerful is the direct antonym, naming brightness rather than dread. Ordinary is a register trap, since ominous signals warn of the unusual and dangerous, not the routine. Surprising is a partial-overlap trap: an ominous event may startle, but the defining quality is foreboding menace, not novelty. Threatening is the dominant synonym, sharing the sense of impending harm.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-5",
+    "new_explanation": "Tenacious means holding firmly to a purpose, position, or grip, as in 'the tenacious investigator refused to drop the cold case.' Fragile is the direct antonym, describing weak hold rather than firm grip. Timid is a character antonym, since tenacity requires boldness to keep pushing. Generous is unrelated to grip or persistence; it names willingness to share. Persistent is the dominant synonym, sharing the core idea of refusing to let go of a goal or effort over time.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-6",
+    "new_explanation": "Ambiguous means having more than one possible meaning, as in 'his ambiguous answer could be read as yes or no.' Certain is the direct antonym, naming single clear meaning. Ambitious is a sound-alike trap that shares the first four letters but comes from a different root (ambi-/ambit, going around for goals), not from ambi-/ambig (driving both ways). Honest overlaps with clarity as a virtue but refers to truthfulness, not whether the statement has one interpretation. Unclear is the dominant synonym.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-7",
+    "new_explanation": "To validate means to establish or check that something is accurate, sound, or legitimate, as in 'the supervisor validated the inspection report before signing.' Deny is the direct antonym, naming rejection rather than verification. Improve is a partial-overlap trap, since validation can lead to improvements, but the act itself is confirming current accuracy, not upgrading quality. Replace is a register trap, suggesting swapping out rather than approving. Confirm is the dominant synonym, sharing the meaning of certifying that something holds up.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-8",
+    "new_explanation": "Austere means stern, plain, and lacking comfort or ornament, as in 'the austere monastery had bare walls and cold floors.' Luxurious is the direct antonym, naming richness and indulgence. Colorful is a partial antonym focused on visual decoration; austere settings are typically muted. Warm is a register trap, since austere implies emotional coldness and physical sparseness alike. Severe is the dominant synonym, sharing the connotation of unforgiving strictness in style, tone, or living conditions.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-9",
+    "new_explanation": "Diligent means showing steady, careful effort in work or duty, as in 'the diligent technician double-checked every wire before powering on.' Lazy is the direct antonym, naming the absence of effort. Careful is a partial-overlap trap: diligent people are typically careful, but careful describes attentiveness in the moment while diligent emphasizes sustained labor over time. Honest names truthfulness, a different virtue. Hardworking is the dominant synonym, capturing both the effort and the persistence at the heart of diligence.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-10",
+    "new_explanation": "Volatile means liable to change rapidly and unpredictably, especially for the worse, as in 'the volatile chemical reacted the moment air hit it.' Stable is the direct antonym, naming consistency and predictability. Heavy is a chemistry-register trap, since volatile substances actually tend to be light and quick to evaporate, the opposite of heavy. Silent is unrelated; volatility is about change, not sound. Unstable is the dominant synonym, capturing both the unpredictability and the tendency toward sudden shifts.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-11",
+    "new_explanation": "To expedite means to speed up a process or make it happen sooner, as in 'the dispatcher expedited the parts shipment so the crew could finish by Friday.' Delay is the direct antonym, naming slowdown rather than acceleration. Organize is a partial-overlap trap: organizing can help speed things up, but the act of arranging is not the act of hastening. Evaluate is a register trap, naming assessment rather than acceleration. Accelerate is the dominant synonym, sharing the core meaning of moving faster.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-12",
+    "new_explanation": "Meticulous means showing extreme attention to detail, as in 'her meticulous packing list accounted for every screw and zip tie.' Careless is the direct antonym, naming inattention. Modest describes humility about oneself, a different trait entirely. Flexible is a register trap, since meticulous people often follow exacting standards that resist bending. Precise is the dominant synonym, sharing the core meaning of exactness and careful accuracy, though meticulous adds the connotation of painstaking thoroughness across many details.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-1",
+    "new_explanation": "The phrase 'needed a simple yes or no' pins the meaning: the reply failed because it used too many words for the simple answer required. Verbose specifically labels speech that uses more words than necessary. 'Evasive' is plausible vocabulary-wise (a long answer can dodge), but the sentence frames frustration around length, not deception. 'Enthusiastic' fits a long reply only if the speaker were excited, which the senator setting does not suggest. 'Difficult to hear' addresses volume, which the sentence never raises.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-2",
+    "new_explanation": "Three sleepless days and barely being able to lift their rifles pin the meaning to extreme physical and mental drain. Torpid specifically labels that drained, slowed state. 'Alert' is the direct opposite of what the clues describe. 'Angry' is plausible vocabulary-wise (tired soldiers may snap), but the sentence describes weakness, not temper. 'Well-trained' fits the soldier frame but contradicts the clue: trained soldiers struggling to move signals exhaustion, not capability. Only Sluggish matches the evidence.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-5",
+    "new_explanation": "Experienced climbers needing rest breaks every half mile pins the meaning to extreme physical difficulty. Arduous specifically labels work or paths that demand great effort. 'Scenic' is plausible for a hiking trail in general but the sentence focuses on hardship, not beauty. 'Well-marked' addresses signage and visibility, which the sentence never mentions. 'Narrow' could explain difficulty for some hikers but would not stop experienced climbers in particular. Only Demanding matches the evidence of effort overcoming even seasoned hikers.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-6",
+    "new_explanation": "Finding the question absurd while staying outwardly polite pins the meaning: the smile mocked the question without saying so openly. Sardonic specifically labels grimly humorous mockery. 'Warm and welcoming' contradicts the disdain implied by finding the question absurd. 'Nervous and tense' is plausible for an interview frame but the clue is contempt, not anxiety. 'Bright and enthusiastic' clashes with the silent judgment behind the smile. Only Mocking or grimly humorous fits the combination of polite surface and dismissive interior.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-8",
+    "new_explanation": "Losing power for three days then rebuilding faster than expected pins the meaning to swift recovery from setbacks. Resilient specifically labels that rebound capacity. 'Resourceful' is the trickiest distractor (resourceful teams can recover too), but resourcefulness is about creative problem-solving with available means, not about bouncing back from damage. 'Highly trained' explains how they rebuilt, not the quality of bouncing back itself. 'Well-funded' is unsupported by the sentence. Only Quick to recover from setbacks names the rebound itself.",
+    "needs_review": true,
+    "notes": "Resourceful and quick-to-recover are both defensible reads of the sentence. Resourceful teams that improvise during a 3-day outage to rebuild fast is a real reading; consider tightening the stem to remove the resourcefulness implication or accepting both."
+  },
+  {
+    "external_key": "WK-CTX-9",
+    "new_explanation": "Orders that 'were not suggestions, they were commands' pins the meaning to a tone that expects unquestioning obedience. Imperious specifically labels that domineering authority. 'Calm and measured' contradicts the forceful contrast in the sentence. 'Persuasive and logical' implies the listener is being convinced through reasoning, but the sentence emphasizes that no choice is offered. 'Vague and uncertain' is the opposite of the clarity the sentence describes. Only Domineering and commanding matches the no-choice frame the general's tone establishes.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-10",
+    "new_explanation": "The phrase 'grew stronger as more experimental data came in' pins the meaning: the hypothesis began with little support. Tenuous specifically labels arguments or threads that are thin and weakly supported. 'Widely accepted' is the opposite of what the sentence describes. 'Poorly worded' addresses phrasing rather than evidence, which the sentence never criticizes. 'Based on observation' is plausible for any hypothesis but does not capture the weakness that the data later remedied. Only Weak or lacking support matches the trajectory from thin to strong.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-11",
+    "new_explanation": "The phrase 'neither could claim favoritism' pins the meaning: the ruling did not lean toward either side. Impartial specifically labels that even-handed fairness. 'Biased toward the defendant' is the opposite. 'Based on strict law' is the trickiest distractor since strict law often is impartial, but strictness names rigor, not balance, and the sentence rewards balance specifically. 'Delivered quickly' addresses speed, which the sentence never raises. Only Treating all sides equally without favoritism matches the both-sides-satisfied clue.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-12",
+    "new_explanation": "Glancing at the checklist for seconds before signing, with near-catastrophic results, pins the meaning to a review done as bare formality. Perfunctory specifically labels actions done mechanically without genuine effort. 'Thorough and systematic' is the direct opposite. 'Delayed and overdue' addresses timing, but the sentence faults quality, not lateness. 'Conducted by a supervisor' addresses who, not how, and the sentence never identifies the reviewer's rank. Only Done as a formality without real care matches the seconds-of-glancing evidence.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-1",
+    "new_explanation": "ANTECEDENT breaks down as ANTE- (before) plus CED- (go, from cedere) plus -ENT (noun-forming suffix), literally 'that which goes before.' An antecedent is the prior thing that a later thing refers back to. 'Something that comes after' confuses ANTE- (before) with POST- (after). 'Something that contradicts' confuses ANTE- with ANTI- (against), the single most common error since the two prefixes differ by only one letter. 'Something that repeats' would require RE- (again), a different prefix entirely.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-2",
+    "new_explanation": "BENEVOLENT breaks down as BENE- (well, good) plus VOL- (wish, will) plus -ENT (adjective-forming suffix), literally 'well-wishing.' 'All-powerful' would require OMNI- (all) plus POT- (power), as in omnipotent, a different morphology. 'Voluntary' shares the VOL- root but lacks BENE-, so it names willingness without the good-wishing component. 'Truthful' would require VER- (true, as in veracity), a different root that learners sometimes confuse with VOL-. Only Well-wishing or kind tracks both BENE- and VOL- correctly.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-3",
+    "new_explanation": "CHRONOLOGY breaks down as CHRONO- (time) plus -LOGY (study or systematic ordering of). A chronology arranges events in time sequence. 'The science of timekeeping devices' confuses -LOGY (study) with horology, which is the actual word for clock science. 'A record of weather patterns' would require METEORO- (atmosphere), as in meteorology, not CHRONO-. 'The study of ancient languages' would require PHILO- or LINGUO-, not CHRONO-. Only Arrangement of events in time order tracks both CHRONO- and -LOGY correctly.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-4",
+    "new_explanation": "CIRCUMSPECT breaks down as CIRCUM- (around) plus SPECT (look, from spectare), literally 'looking around' before acting. The morphology points to careful surveying of all sides before deciding. 'Easily distracted' misreads looking around as scattered attention, when the word actually means deliberate scanning. 'Surrounded by obstacles' treats CIRCUM- as a physical description of the subject rather than an action they perform. 'Quick to decide' is the opposite of what the morphology suggests. Only Wary and considering all possibilities tracks both pieces.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-5",
+    "new_explanation": "TRANSOCEANIC breaks down as TRANS- (across, through) plus OCEAN plus -IC (adjective-forming), literally 'across the ocean.' Compare transcontinental, transatlantic, transport (carry across). 'Below the ocean surface' would require SUB- (under), as in submarine, a different prefix. 'Along the coastline' would require something like PARA- or PERI- (alongside, around), not TRANS-. 'Within a single ocean region' would require INTRA- (within), the prefix that contrasts most directly with TRANS-. Only Across an ocean matches TRANS-.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-7",
+    "new_explanation": "SEISMOLOGIST breaks down as SEISMO- (shaking, earthquake, from Greek seismos) plus -OLOGIST (one who studies). 'Structure of the atmosphere' would require METEORO-, the prefix for meteorology, not SEISMO-. 'Ocean currents' would require OCEANO-, as in oceanography, plus the -GRAPHY suffix for description rather than -OLOGY. 'Ancient fossils' would require PALEO- (ancient) plus ONTO- (being), as in paleontology, a completely different morpheme. Only Earthquake activity matches SEISMO- specifically.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-8",
+    "new_explanation": "MAGNANIMOUS breaks down as MAGN- (great) plus ANIM- (spirit, soul) plus -OUS (adjective-forming), literally 'great-spirited.' The ANIM- piece shifts the meaning from physical greatness toward greatness of character, especially generosity toward rivals. 'Physically large and imposing' reads only the MAGN- piece (as in magnitude) and ignores ANIM-. 'Highly educated' would require ERUD- or SAPI- roots, not MAGN-/ANIM-. 'Emotionally volatile' confuses ANIM- with animated agitation rather than soul or character. Only Generous in forgiving insults or injuries tracks both pieces.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-ROOT-1",
+    "new_explanation": "AUD- comes from Latin audire, meaning to hear. Cognates include audible (able to be heard), auditorium (a place built for hearing), audience (a group of listeners), audition (a hearing trial), and audio (sound recording). 'To speak' would use DICT- (dictate, predict) or LOQU- (eloquent, loquacious), different roots entirely. 'To see' would use VIS- (vision, visible) or SPEC- (spectator), commonly confused since both involve perception. 'To gather' would use GREG- (congregate) or AGGREG-, not AUD-.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-ROOT-2",
+    "new_explanation": "CHRON comes from Greek chronos, meaning time. Cognates include chronic (continuing over a long time), chronometer (a precise time-measuring device), anachronism (something placed in the wrong time period), chronicle (a time-ordered record), and synchronize (occur at the same time). 'Color' would use CHROM- (chromatic, chromosome), a similar-sounding root that test-takers confuse with CHRON- because both start with CHR-. 'Order' would use ORDIN- (ordinal, ordinary). 'Distance' would use METR- or MILE-, not CHRON-.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-ROOT-3",
+    "new_explanation": "TERRA comes from Latin meaning earth or land. Cognates include terrain (the lay of the land), territory (a defined area of land), Mediterranean (middle of the land), terrestrial (relating to earth), and terrace (a flat platform of land). 'Water' would use AQUA- (aquatic, aqueduct) or HYDRO- (hydrate, hydraulic), different roots. 'Sky' would use AERO- or CEL- (celestial), not TERRA-. 'Boundary' would use FIN- (finite, define) or LIMIT-, also separate roots. Only Earth or land matches TERRA across all the cognates.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-HARD-1",
+    "new_explanation": "The phrase 'struck journalists as calculated rather than genuine' pins the meaning: the deference went beyond what real courtesy looks like. Obsequious specifically labels fawning servility, often used negatively. 'Bold and outspoken' is the direct opposite of deference. 'Openly hostile' also contradicts the sentence. 'Professionally courteous' is the trickiest distractor since deference can be courteous, but the sentence explicitly distinguishes the politician's behavior from genuine courtesy by calling it calculated. Only Excessively eager to please or serve matches the negative excess the clue establishes.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SYN-HARD-1",
+    "new_explanation": "Ephemeral means lasting only a brief moment, from Greek ephemeros 'lasting a day,' as in 'the ephemeral mayfly lives less than 24 hours.' Ancient is the direct antonym, naming long duration rather than brevity. Extraordinarily rare is a partial-overlap trap: ephemeral things are often hard to catch, but rarity is about scarcity, not duration. Deeply emotional is a register trap, drawing on the poetic feel of the word rather than its meaning. Only Lasting only a short time captures the core of brief duration.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SYN-HARD-2",
+    "new_explanation": "Veracious means habitually truthful, as in 'a veracious witness whose testimony has never been contradicted.' The VER- root means truth (verify, verdict, veracity). Extremely hungry is the classic sound-alike trap with voracious, which uses VOR- (to devour, as in carnivore, devour). Speedy is unrelated; truthfulness has no speed component. Aggressive is a register trap drawing on the harsh sound, but veracious is a neutral quality of honesty, not force. Only Truthful matches VER-, while voracious lives one letter away.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-D2-1",
+    "new_explanation": "MISJUDGE breaks down as MIS- (wrongly, badly) plus JUDGE. Compare mislead (lead wrongly), misfire (fire wrongly), misuse (use wrongly), misread (read wrongly). 'To judge again' would require RE- (again), as in rejudge or reconsider, a different prefix. 'To judge fairly' is the opposite of the morpheme MIS-, which always signals error. 'To refuse to judge' would require a negating or rejecting prefix like UN-, NON-, or DIS-, not MIS-, which means the judgment happened but came out wrong. Only To judge wrongly tracks MIS-.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-2",
+    "new_explanation": "Tranquil means free from agitation and disturbance, as in 'the tranquil pond mirrored the trees without a ripple.' Noisy is the direct antonym, naming auditory chaos. Rushed is a register antonym, pointing to hurried motion rather than calm stillness. Dangerous is a register trap that draws on the absence of threat in tranquil settings, but danger is about risk while tranquil is about absence of disturbance. Peaceful is the dominant synonym, sharing the core sense of stillness and freedom from agitation.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-5",
+    "new_explanation": "Lethargic means lacking energy and slow to act, as in 'after the long flight he felt lethargic and could barely climb the stairs.' Energetic is the direct antonym, naming vigor rather than torpor. Aggressive is a register antonym, naming active hostility, which requires energy lethargic lacks. Focused is a register trap, since a focused person can be calm but is engaged, not depleted. Sluggish is the dominant synonym, sharing the slowed-down, low-energy quality at the heart of lethargic.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-6",
+    "new_explanation": "Inscrutable means impossible to interpret or read, as in 'his inscrutable expression gave away nothing during negotiations.' The root SCRUT- means examine (scrutinize, scrutiny); the IN- here negates it. Obvious is the direct antonym, naming easy readability. Unreliable is a register trap, since an inscrutable person may be trustworthy or not; readability has no necessary tie to dependability. Talkative is unrelated; inscrutable concerns interpretability of expression or motive, not volume of speech. Only Mysterious captures the unreadable quality.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-10",
+    "new_explanation": "Recalcitrant means stubbornly resistant to authority or control, as in 'the recalcitrant prisoner refused every order.' From Latin calcitrare, to kick back. Obedient is the direct antonym. Cautious overlaps with hesitation but cautious people slow down to think, while recalcitrant people actively resist. Calculating is a visual-similarity trap, drawing on the shared CAL- letters, but calculating means scheming and shrewd, an unrelated trait. A test-taker picking Calculating has matched letters rather than meaning. Only Defiant captures the active resistance.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-B4-1",
+    "new_explanation": "Brave means ready to face danger or pain without showing fear, as in 'the brave firefighter ran into the burning house.' Cowardly is the direct antonym, naming fear and avoidance. Careless is a register trap, since brave people may take risks, but bravery involves accepting fear deliberately while carelessness ignores risk through inattention. Clever names quick intelligence, a separate trait that does not require courage. Courageous is the dominant synonym, sharing the willingness to face fear directly in the service of action.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-B4-2",
+    "new_explanation": "Rapid means happening or moving quickly, as in 'the rapid current carried the raft downstream in minutes.' Slow is the direct antonym. Loud names volume, an unrelated sensory dimension. Heavy is a register trap drawing on the force of fast-moving objects, but weight has no necessary connection to speed. Fast is the dominant synonym, sharing both the motion and the brief-time-frame senses of rapid. The two words are interchangeable in most contexts, which makes Fast the clearest match.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-B4-4",
+    "new_explanation": "Gregarious means fond of the company of others, as in 'the gregarious sergeant spent every weekend hosting cookouts for the platoon.' The root GREG- means flock or herd (congregate, segregate). Shy is the direct antonym, naming social withdrawal. Aggressive is a register trap: gregarious people seek company but not conflict; aggression is about hostility, not affection for groups. Hardworking is unrelated to sociability and names a different dimension of personality. Only Talkative and sociable captures the core meaning of group-loving.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-B4-5",
+    "new_explanation": "Indolent means habitually avoiding work, as in 'the indolent clerk left every task for the next shift.' Energetic is the direct antonym. Rude is the spelling-confusion trap: indolent looks one letter off from insolent (disrespectful), but the two words differ by an N and have unrelated meanings. Independent is a register trap, since independent people choose to act on their own while indolent people simply do not act. Lazy is the dominant synonym, sharing the persistent avoidance of effort.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-B4-6",
+    "new_explanation": "Laconic means using very few words, as in 'his laconic 'roger that' was the only acknowledgment we got.' The word comes from Laconia (Sparta), whose soldiers were famous for terse replies. Wordy is the direct antonym. Humorous is a register trap: laconic speech can be dryly funny but humor is not part of the definition. Secretive is a partial-overlap trap, since terse people may seem to withhold, but laconic speech is short rather than evasive. Brief in speech is the dominant synonym.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-B4-7",
+    "new_explanation": "Mitigate means to make something less severe or painful, as in 'sandbags mitigated the flood damage but did not stop it.' Worsen is the direct antonym. Conceal names hiding, a different action that does not change severity. Eliminate is the closest distractor and the most important false friend: eliminate means to remove entirely, while mitigate means only to reduce. A test-taker picking Eliminate has overshot the strength of the word. Only Lessen or reduce captures the partial-reduction sense that defines mitigate.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-B4-8",
+    "new_explanation": "Ostracize means to deliberately exclude someone from a group, as in 'the team ostracized the recruit who broke ranks.' The word comes from ancient Athens, where citizens voted to banish individuals by writing names on shards (ostraka). Welcome is the direct antonym. Punish physically is a register trap, since ostracism is a social punishment, not a corporal one. Deceive is unrelated; exclusion is open, not hidden. Only Exclude from a group captures the deliberate social removal at the heart of the word.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-B4-9",
+    "new_explanation": "Assiduous means showing careful, persistent effort over time, as in 'her assiduous note-taking filled three notebooks by midterm.' Careless is the direct antonym, naming inattention. Sociable describes a personality trait around people, not a work habit. Bold names willingness to take risks, which is unrelated to careful persistence. Showing careful and persistent effort is the dominant definition, and combines both the precision and the staying power that distinguish assiduous from related words like diligent (effortful) or meticulous (precise without the staying-power emphasis).",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-B4-10",
+    "new_explanation": "Prosaic means commonplace and lacking imagination, as in 'his prosaic explanation drained the magic from the story.' The word comes from prose (ordinary writing) as opposed to poetry. Poetic is essentially the antonym, naming the elevated and imaginative quality prosaic lacks. Precise is a register trap, since prosaic writing can be precise but lacks creative spark; precision is about accuracy, not imagination. Aggressive is unrelated to creativity or style. Only Dull and unimaginative captures the commonplace, uninspired quality at the heart of prosaic.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-B4-11",
+    "new_explanation": "Venerate means to regard with deep respect, often because of age, wisdom, or sacred status, as in 'the cadets venerated the retired general.' From Latin venerari, to worship. Criticize is the direct antonym. Imitate is a partial-overlap trap, since respected figures are often imitated, but admiration and copying are separate acts. Investigate is a register trap, drawing on the careful attention venerate requires, but investigating implies skeptical inquiry, the opposite of reverence. Only Regard with deep respect captures the reverent quality of venerate.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-B4-12",
+    "new_explanation": "Ersatz means used as an inferior substitute, as in 'the ersatz coffee made from chicory was the only option during the shortage.' From German Ersatz (replacement), applied to wartime stand-ins. Authentic is the direct antonym, naming the genuine article. Elaborate is a register trap, drawing on the sound of the word, but ersatz things are usually plain and basic, not ornate. Traditional names long-standing customs, a separate concept that does not imply inferiority or substitution. Only An inferior substitute carries both the replacement and the lower-quality senses.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-SN-B4-13",
+    "new_explanation": "Fatuous means smugly foolish, as in 'his fatuous comment that war is easy made the veterans walk out.' From Latin fatuus, silly. Insightful is the direct antonym, naming intelligent perception. Cautious is a register trap, since fatuous people are often unwisely bold, but caution is about risk-avoidance, not intelligence. Withdrawn describes social manner, not the foolish-self-satisfaction core of fatuous. The spelling-confusion trap with fatigued (tired) catches some test-takers, but the words share only the first two letters and come from different Latin roots. Only Complacently stupid fits.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-B4-1",
+    "new_explanation": "Winning a spelling bee pins the meaning to strong positive emotion. Elated specifically labels intense joy. 'Frightened' is the direct opposite of a celebratory reaction. 'Surprised' is plausible vocabulary-wise, since unexpected wins do surprise, but the sentence frames the moment as celebratory rather than astonished. 'Tired' could follow a long competition but does not match the focus on learning she won. Only Very happy matches the celebratory frame the spelling-bee win establishes.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-B4-2",
+    "new_explanation": "Moving into the shade specifically to cool down pins the meaning to extreme heat. Scorching specifically labels burning hot conditions. 'Mild' is the direct opposite of the response the sentence describes. 'Cloudy' addresses sky cover, not temperature, and the move to shade would not make sense under clouds. 'Distant' is a register trap, since the sun is literally distant, but the sentence rates how the sun felt that day, not its astronomical position. Only Extremely hot matches the cool-down evidence.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-B4-4",
+    "new_explanation": "Three missed deadlines forcing the commander to find a new vendor pins the meaning to chronic lateness. Dilatory specifically labels persistent delay. 'Expensive' addresses cost, which the sentence never raises. 'Dishonest' is plausible vocabulary-wise for a fired contractor, but the sentence faults schedule failures, not deception. 'Inexperienced' could explain missed deadlines but names the cause rather than the behavior itself, and the sentence describes how the contractor acted. Only Slow to act or chronically late matches the missed-deadline evidence directly.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-B4-6",
+    "new_explanation": "Earning extra duty each week by ignoring regulations he disagreed with pins the meaning to deliberate, open rule-breaking. Flouted specifically labels open contempt for rules. 'Followed carefully' is the direct opposite. 'Misunderstood' is plausible vocabulary-wise, but the consequence of extra duty repeating weekly signals intent, not error. 'Reported' would describe turning others in, not breaking rules himself. The classic spelling-confusion trap is flout versus flaunt (to display showily), but the meanings are unrelated despite the similar sound. Only Openly disregarded matches.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-B4-7",
+    "new_explanation": "The phrase 'cut through the confusion and identified the problem within minutes' pins the meaning to sharp and effective analysis. Trenchant specifically labels vigorous, incisive thinking that cuts to the point. 'Lengthy and detailed' is the opposite of the speed and decisiveness the sentence praises. 'Calm and measured' addresses tone but trenchant carries force, not just composure. 'Unexpected' is a register trap that draws on dramatic flair, but trenchant names the cutting quality itself, not surprise. Only Incisive and vigorous matches the cut-through-confusion image.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-B4-8",
+    "new_explanation": "Stockpiling supplies before the storm, then being vindicated by a two-week outage, pins the meaning to deliberate foresight. Sagacious specifically labels keen practical wisdom. 'Lucky and fortunate' is the trickiest distractor since outcomes matched expectations, but the sentence emphasizes the decision was made beforehand, which signals planning rather than chance. 'Reckless and impulsive' is the opposite of careful preparation. 'Conservative and reluctant' describes hesitation, while the decision was decisive action. Only Having keen practical wisdom captures the prescient judgment shown.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-B4-9",
+    "new_explanation": "Producing records to disprove accusations pins the meaning to firm, evidence-backed denial. Repudiated specifically labels formal, decisive rejection. 'Quietly accepted' is the direct opposite of producing counter-evidence. 'Investigated' is the trickiest distractor since gathering records can look like investigation, but the sentence describes presenting findings against the claims, not opening an inquiry. 'Summarized' addresses condensing information rather than rejecting accusations. Only Firmly rejected matches the disprove-with-evidence behavior the sentence describes.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-B4-10",
+    "new_explanation": "Owning a popular restaurant yet driving an old car and rarely buying new clothes pins the meaning to deliberate thrift despite means. Frugally specifically labels careful, sparing spending. 'Lavishly' is the direct opposite. 'With great caution' is plausible (cautious spenders save), but caution focuses on risk avoidance while frugality focuses on minimizing expense regardless of risk. 'In an isolated way' addresses social life, which the sentence never raises. Only In a thrifty manner captures the chosen modesty of consumption despite a popular business.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-CTX-B4-11",
+    "new_explanation": "The contrast 'three words where others would have written three pages' pins the meaning to extreme brevity. Laconic specifically labels speech or writing of very few words. 'Cryptically coded' is the trickiest distractor since a three-word cable sounds mysterious, but the sentence specifies the cable conveyed the outcome 'without ambiguity,' ruling out obscurity. 'Overly detailed' is the direct opposite. 'Formally worded' addresses tone rather than length, and the sentence rewards length specifically. Only Using very few words matches the numerical contrast.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-B4-1",
+    "new_explanation": "UNHAPPY breaks down as UN- (not) plus HAPPY. The UN- prefix simply negates the base word, as in unfair (not fair), unclear (not clear), unkind (not kind). 'Very happy' would require an intensifier like SUPER- or HYPER-, not UN-. 'Somewhat happy' would require a diminisher like SEMI- or SUB-, not UN-, which is absolute negation. 'Formerly happy' would require EX- (former, as in ex-soldier) or PRE- (before). Only Not happy tracks the simple negating function of UN-.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-B4-2",
+    "new_explanation": "CAREFUL breaks down as CARE plus -FUL (full of, characterized by). The -FUL suffix adds the meaning 'having a lot of,' as in hopeful (full of hope), peaceful (full of peace), beautiful (full of beauty). 'Without care' would require -LESS, the opposite suffix (careless). 'Able to be cared for' would require -ABLE, which signals capability rather than abundance. 'Beyond care' has no standard prefix or suffix for that meaning in English. Only Full of care and attention tracks the standard -FUL function.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-B4-3",
+    "new_explanation": "PRECAUTION breaks down as PRE- (before) plus CAUTION (carefulness), literally caution taken in advance. Compare preview (see before), predict (say before), prevent (come before to stop). 'An action taken after the fact' would require POST- (after), the direct opposite prefix. 'A warning given loudly' addresses volume and audience, which PRE- does not encode. 'A rule set by authorities' addresses source, not timing, and would not require PRE-. Only An action taken in advance to prevent harm tracks PRE- correctly with CAUTION.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-B4-4",
+    "new_explanation": "RECKLESS breaks down as RECK (old English for care or heed) plus -LESS (without). Compare careless (without care), helpless (without help), fearless (without fear). 'Very careful' is the direct opposite of the meaning -LESS produces. 'Full of energy' confuses -LESS with -FUL, the opposite suffix; reckless people may be energetic but the word itself names the absence of caution, not the presence of energy. 'Beyond control' addresses degree rather than absence, and -LESS specifically encodes absence. Only Without caution tracks the morphology.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-B4-5",
+    "new_explanation": "MISCONSTRUE breaks down as MIS- (wrongly) plus CONSTRUE (to interpret). Compare misjudge (judge wrongly), misread (read wrongly), misunderstand (understand wrongly). 'To build incorrectly' confuses CONSTRUE with CONSTRUCT, which shares letters but comes from a different root (struere, to build) and means physical assembly. 'To communicate clearly' is the opposite of what MIS- produces. 'To confuse deliberately' would require an intent prefix; MIS- only signals the interpretation came out wrong, not that someone intended deception. Only To interpret wrongly tracks both pieces.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-B4-6",
+    "new_explanation": "INTERLUDE breaks down as INTER- (between) plus LUDE (from Latin ludere, to play), literally a small play or pause between two larger events. Compare international (between nations), intermission (pause between acts), interstate (between states). 'A final performance' would require POST- (after) or FIN- (end), not INTER-. 'An opening ceremony' would require PRE- (before) or INTRO- (into the start), not INTER-. 'A conflict between parties' uses INTER- correctly but does not match LUDE (play); a conflict would be INTERVENE or INTERPLAY in a hostile sense. Only A period between two events fits.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-B4-7",
+    "new_explanation": "DEPLOYMENT breaks down as DEPLOY (verb) plus -MENT (suffix forming a noun of action or result). Compare manage to management, develop to development, achieve to achievement. 'The ability to deploy' would require -ABLE or -ITY (deployability), not -MENT. 'One who deploys' would require -ER or -OR (deployer), the agent suffix. 'Worthy of being deployed' would require -ABLE (deployable, worthy of deployment), the capability suffix. Only The act or result of deploying tracks the -MENT noun-forming function.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-PFX-B4-8",
+    "new_explanation": "COUNTERINTUITIVE breaks down as COUNTER- (against, opposite) plus INTUITIVE (based on instinct). Compare counterclockwise (opposite of clockwise), counteract (act against), counterargument (argument against). 'Supporting common sense' is the direct opposite. 'Requiring careful thought' is a register trap, since counterintuitive ideas often demand careful thought to accept, but the word names the conflict with instinct, not the cognitive effort. 'Relating to military counter-operations' reads COUNTER- as the military noun rather than the prefix, a category error. Only Going against what one would naturally expect fits.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-ROOT-B4-1",
+    "new_explanation": "VIS comes from Latin videre, to see. Cognates include visible (able to be seen), vision (the sense or act of sight), visual (relating to sight), visit (originally, to go see), and television (seeing at a distance). 'To move' would use MOV- or MOT- (motion, mobile), different roots. 'To speak' would use DICT- (dictate) or LOQU- (eloquent), commonly confused with VIS- only by general association. 'To know' would use SCI- (science) or COGN- (cognition, recognize). Only To see fits all the listed cognates.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-ROOT-B4-3",
+    "new_explanation": "CRED comes from Latin credere, to believe. Cognates include credible (believable), credit (trust extended), incredulous (unwilling to believe), creed (a statement of beliefs), and credentials (proof that warrants trust). 'To judge' would use JUDIC- (judicial, prejudice), an adjacent legal root that test-takers sometimes mix with CRED- because both touch courtroom contexts. 'To know' would use SCI- or COGN-, separate roots. 'To value' would use VAL- (value, valor), also separate. Only To believe matches all the cognates.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-ROOT-B4-4",
+    "new_explanation": "DICT comes from Latin dicere, to say. Cognates include dictate (say aloud for recording), predict (say before), contradict (say against), edict (an official saying), and dictionary (a book of word sayings). 'To write' would use SCRIB or SCRIPT (scribble, manuscript, prescription), an easy confusion since saying and writing pair so often in school. 'To lead' would use DUC (conduct, induce), a different root. 'To order by force' would use IMPER- (imperative, emperor); a dictator orders but the DICT root names the saying, not the force. Only To say or speak fits.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-ROOT-B4-5",
+    "new_explanation": "BENE comes from Latin meaning good or well. Cognates include benefit (a good outcome), benefactor (one who does good), benevolent (well-wishing), benediction (a blessing or good saying), and benign (kind or harmless). 'Great' would use MAGN- (magnificent, magnify), commonly confused since 'great' and 'good' overlap in casual praise. 'Many' would use MULTI- (multiple, multitude), a separate root. 'Before' would use PRE- or ANTE-, also separate. Only Good or well matches BENE- across the listed cognates.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-ROOT-B4-6",
+    "new_explanation": "GREG comes from Latin grex/gregis, meaning flock or herd. Cognates include gregarious (fond of the flock, sociable), congregate (gather as a flock), segregate (separate from the flock), and egregious (originally, standing out from the flock, now negative). 'To speak' would use DICT- or LOQU-, separate roots. 'A leader' would use DUC- (duke, conduct) or PRINC- (prince), since a leader heads the flock but is not the flock itself. 'A law' would use LEG- (legal, legislation). Only A flock or group matches GREG across cognates.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-ROOT-B4-8",
+    "new_explanation": "TRACT comes from Latin trahere, to pull or drag. Cognates include extract (pull out), retract (pull back), contract (pull together, draw closer), traction (the grip that allows pulling), and tractor (a pulling machine). 'To push' would use PULS- or PEL- (propel, expel), the literal opposite root. 'To hold' would use TEN- (tenacious, retain) or HABE- (habit, inhibit). 'To cut' would use CIS- or SECT- (incision, dissect). Only To pull or draw fits the cognate set, with push as the most tempting wrong answer because it shares the directional-force frame.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-ROOT-B4-10",
+    "new_explanation": "VOC comes from Latin vocare, to call. Cognates include invoke (call upon), vocalize (give voice to), irrevocable (unable to be called back), advocate (one who calls in support), provoke (call forth a reaction), and vocation (a calling). 'To see' would use VIS- (vision, visible), a separate root that learners sometimes confuse with VOC- because both involve sensory output. 'To feel' would use SENT or SENS (sentiment, sensory). 'To rule' would use REG or RECT (regal, direct). Only To call or voice fits the cognates.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-ROOT-B4-12",
+    "new_explanation": "PLAC comes from Latin placare, to please or appease. Cognates include placate (calm someone down), complacent (self-satisfied, pleased with oneself to excess), implacable (impossible to appease), placid (calm), and placebo (literally 'I shall please'). 'To place or position' is the most tempting wrong answer because of the visual similarity, but it comes from a different Latin root (ponere/positum), so PLACE and PLACATE only look related. 'To promise' would use PROMIS- or SPONS-. 'To fill' would use PLE- (replete, plenary). Only To please or calm fits.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-B7-D5-2",
+    "new_explanation": "Inveterate means firmly established by long habit, as in 'an inveterate smoker who has lit up daily for forty years.' From Latin inveteratus, made old. Recently reformed is the direct antonym, naming change from a long habit. Deeply experienced is the most dangerous false friend: experienced people have done something for a long time, but inveterate emphasizes that the habit is ingrained and unlikely to change, while experienced is neutral about flexibility. Violently opposed is a register trap drawing on the harsh sound, but inveterate is about permanence, not hostility. Only Long-established and unlikely to change fits.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-B7-D5-3",
+    "new_explanation": "A speech that left 'nothing to applaud or protest' pins the meaning to deliberate avoidance of any reaction. Anodyne specifically labels content drained of anything that could offend or excite. 'Highly persuasive' is the opposite of evoking no response. 'Deeply critical of both parties' would have produced protest, ruling it out. 'Remarkably brief' addresses length, which the sentence never raises. Only Inoffensive to the point of being dull matches the deliberate blandness the clue describes, including the negative connotation of dullness.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-B7-D5-4",
+    "new_explanation": "PUSILLANIMOUS breaks down as PUSILL- (very small, from Latin pusillus) plus ANIM- (spirit, soul) plus -OUS (adjective-forming), literally 'small-souled.' A small spirit shrinks from danger, so the word means cowardly. 'Extremely generous of spirit' is the direct opposite (that would be magnanimous, great-souled). 'Spiritually enlightened' reads ANIM- correctly but misses PUSILL-, treating 'small' as humility rather than deficiency. 'Overly animated or energetic' confuses ANIM- (soul) with animated (lively), a common error since animation and animal share the same root in surface meaning only. Only Showing a lack of courage fits.",
+    "needs_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "WK-B7-D5-5",
+    "new_explanation": "The root PATER comes from Latin meaning father. Cognates include paternal (fatherly), patriarch (a father-ruler), patron (a protector who acts like a father), paternity (fatherhood), and expatriate (one who has left the fatherland). A paternalistic policy treats adults like children under a father's authority, restricting choices supposedly for their good. 'Grants full autonomy' is the opposite. 'Applies equally to all family members' confuses PATER with FAMIL- (family), which is broader. 'Traces authority through the maternal line' would require MATER- (mother), the opposite root. Only Restricts freedom supposedly for people's own good fits PATER plus the over-control connotation.",
+    "needs_review": false,
+    "notes": ""
+  }
+]

@@ -1,0 +1,1106 @@
+[
+  {
+    "external_key": "MC-P4-FF-1",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "A 10 kg crate accelerates at 2 m/s² across a smooth floor. What net force acts on it?",
+    "choices": [
+      "20 N",
+      "12 N",
+      "5 N",
+      "50 N"
+    ],
+    "correct_index": 0,
+    "explanation": "Newton's second law: F = ma. Plug numbers: F = (10 kg)(2 m/s²) = 20 N. The smooth floor means friction is zero, so the applied force equals the net force. A common error is to add weight (mg = 98 N) into the calculation, but weight acts vertically and is canceled by the normal force, not by the horizontal applied force. Another error is multiplying mass by g instead of by the given acceleration, which would give 98 N. Always match the acceleration in F = ma to the direction of the force you are solving for.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-2",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Mass and weight differ because:",
+    "choices": [
+      "Mass changes with location, weight does not",
+      "Weight is a force, mass is a quantity of matter",
+      "They are identical in SI units",
+      "Weight is measured in kilograms"
+    ],
+    "correct_index": 1,
+    "explanation": "Mass is the amount of matter in an object and is invariant with location. Weight is the gravitational force on that mass, W = mg, and changes when g changes (Moon vs Earth). Mass is measured in kilograms; weight in newtons. A frequent confusion is calling a bathroom scale reading 'mass' when it actually reports weight (or weight divided by Earth's g). Choice A reverses the relationship. Choice C is wrong because newtons and kilograms are not interchangeable. Choice D mislabels the unit of weight.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-3",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A 5 kg block sits on a horizontal surface with coefficient of kinetic friction 0.30. What kinetic friction force acts when the block slides? (Use g = 10 m/s²)",
+    "choices": [
+      "15 N",
+      "5 N",
+      "1.5 N",
+      "50 N"
+    ],
+    "correct_index": 0,
+    "explanation": "Kinetic friction is f = μₖN. On a horizontal surface with no vertical applied force, the normal force equals weight: N = mg = (5)(10) = 50 N. Plug in: f = (0.30)(50) = 15 N. A common trap is forgetting to compute N from weight and instead using mass directly (0.30 × 5 = 1.5 N). Another trap is reporting the normal force (50 N) as the friction. Always remember friction force equals the coefficient times the normal force, not times mass.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-4",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "Static friction coefficient μs is usually:",
+    "choices": [
+      "Equal to μₖ",
+      "Greater than μₖ",
+      "Less than μₖ",
+      "Always zero"
+    ],
+    "correct_index": 1,
+    "explanation": "For nearly all real surfaces, static friction is harder to overcome than kinetic friction, so μs > μₖ. This is why a stuck object suddenly lurches forward once it breaks free: the resisting force drops from μsN to μₖN. ASVAB items often test this ordering directly. A frequent trap is assuming the two coefficients are equal because both are properties of the same surface pair. Choice C reverses the inequality. Choice D ignores that friction exists between contacting solids whenever a normal force is present.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-5",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A 20 N force pushes a 4 kg box across a frictionless floor. What is its acceleration?",
+    "choices": [
+      "5 m/s²",
+      "4 m/s²",
+      "0.2 m/s²",
+      "80 m/s²"
+    ],
+    "correct_index": 0,
+    "explanation": "Apply Newton's second law: a = F/m = 20/4 = 5 m/s². The frictionless condition means no opposing horizontal force, so the applied 20 N is the net force. A common error is dividing mass by force (4/20 = 0.2), which inverts the relationship and gives one of the listed traps. Another error multiplies (80) instead of dividing, again breaking the F = ma form. Weight (mg) does not enter horizontal acceleration on a flat surface because the normal force cancels gravity vertically, leaving only the applied 20 N to accelerate the box.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-6",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "An object in equilibrium has:",
+    "choices": [
+      "Zero velocity only",
+      "Constant velocity, including zero",
+      "Maximum acceleration",
+      "No forces acting on it"
+    ],
+    "correct_index": 1,
+    "explanation": "Equilibrium means net force is zero, so acceleration is zero. By Newton's first law, an object with zero net force moves at constant velocity, which includes the special case of being at rest. Choice A is too narrow because a sliding hockey puck on frictionless ice is also in equilibrium. Choice C contradicts F = ma. Choice D is wrong because individual forces can still act as long as they cancel: a book on a table has gravity down and normal force up, both nonzero, summing to zero.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-7",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "A 6 kg box on a horizontal floor has μₖ = 0.25. A horizontal force of 30 N is applied. What is the box's acceleration? (g = 10 m/s²)",
+    "choices": [
+      "0.5 m/s²",
+      "7.5 m/s²",
+      "5 m/s²",
+      "2.5 m/s²"
+    ],
+    "correct_index": 3,
+    "explanation": "Compute normal force: N = mg = (6)(10) = 60 N. Kinetic friction opposes motion: f = μₖN = (0.25)(60) = 15 N. Net horizontal force: F_net = 30 − 15 = 15 N. Apply F = ma: a = 15/6 = 2.5 m/s². The trap of ignoring friction yields 30/6 = 5 m/s². The trap of using mass instead of weight for the normal force yields f = 1.5 N and a too-large acceleration. Always subtract friction from applied force before dividing by mass.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-8",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "Two forces act on a 4 kg object: 10 N east and 6 N west. What is its acceleration?",
+    "choices": [
+      "1 m/s² east",
+      "1 m/s² west",
+      "4 m/s² east",
+      "4 m/s² west"
+    ],
+    "correct_index": 0,
+    "explanation": "Find the net force by subtracting opposing forces: F_net = 10 − 6 = 4 N east. Apply Newton's second law: a = F_net/m = 4/4 = 1 m/s² east. Direction follows the larger force. A trap is adding magnitudes (10 + 6 = 16 N) and getting 4 m/s², which assumes the forces act together rather than opposing. Another trap is forgetting direction and choosing west. On 1D problems, treat east as positive and west as negative, then the sign of F_net tells you the direction of a.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-9",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "A skydiver reaches terminal velocity when:",
+    "choices": [
+      "Gravity stops acting on her",
+      "Air resistance equals her weight",
+      "She has no acceleration up the entire fall",
+      "Her mass becomes zero"
+    ],
+    "correct_index": 1,
+    "explanation": "Terminal velocity occurs when the upward drag from air resistance balances the downward gravitational force, giving zero net force and zero acceleration. Her speed then stays constant. Choice A misstates physics; gravity always acts on mass near Earth. Choice C is wrong because she accelerates at g initially and only stops accelerating once drag builds up to match weight. Choice D is nonsense. The principle is force balance, not the elimination of any single force.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-10",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "A 50 N weight hangs from a single vertical rope. The tension in the rope is:",
+    "choices": [
+      "0 N",
+      "25 N",
+      "50 N",
+      "100 N"
+    ],
+    "correct_index": 2,
+    "explanation": "The hanging weight is in equilibrium because it is not accelerating. Newton's second law gives net force zero, so tension must equal weight: T = W = 50 N. A trap is halving (25 N), which would only apply if two ropes shared the load symmetrically. Another trap is doubling (100 N), confusing tension with the action-reaction pair. In a single supporting rope under static load, the tension throughout the rope equals the weight it supports, ignoring rope mass.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-11",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "If a 1,000 kg car must accelerate at 3 m/s², what net force must the engine provide (ignoring friction)?",
+    "choices": [
+      "3,000 N",
+      "1,003 N",
+      "333 N",
+      "9,800 N"
+    ],
+    "correct_index": 0,
+    "explanation": "Apply Newton's second law: F = ma = (1,000)(3) = 3,000 N. With friction ignored, the engine's drive force equals the net force needed to produce the stated acceleration. Choice A inverts the formula (333 N comes from dividing mass by acceleration). Choice B simply sums mass and acceleration, which is dimensionally meaningless. Choice D uses g (about 9.8) instead of the given 3 m/s², confusing weight with the needed accelerating force. On flat ground, weight does not enter horizontal acceleration because the road's normal force cancels gravity completely.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-12",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 4,
+    "stem": "A 10 kg crate sits on a floor with μs = 0.40 and μₖ = 0.30. A 35 N horizontal force is applied. Does it move, and if so, what is its acceleration? (g = 10 m/s²)",
+    "choices": [
+      "Stays at rest",
+      "Moves at 0.5 m/s²",
+      "Moves at 3.5 m/s²",
+      "Moves at 35 m/s²"
+    ],
+    "correct_index": 0,
+    "explanation": "First test whether the applied force exceeds the maximum static friction. Normal force N = mg = (10)(10) = 100 N. Maximum static friction f_s,max = μsN = (0.40)(100) = 40 N. Since the 35 N applied force is less than 40 N, the crate does not break free; static friction simply matches the 35 N and the crate stays at rest. A common error is to use kinetic friction (30 N) and conclude the crate accelerates at (35 − 30)/10 = 0.5 m/s². Kinetic friction only applies once motion begins.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-13",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 4,
+    "stem": "A free-body diagram of a book at rest on a table shows:",
+    "choices": [
+      "Gravity down only",
+      "Normal force up only",
+      "Gravity down, normal force up, and friction force horizontal",
+      "Gravity down and normal force up, equal in magnitude"
+    ],
+    "correct_index": 3,
+    "explanation": "At rest with no applied horizontal force, only two forces act vertically: gravity W = mg pointing down and the normal force N pointing up. Because the book is in equilibrium, the two must be equal and opposite. Choice A omits the normal force, which would predict the book falls through the table. Choice B omits gravity. Choice D adds friction, but friction only appears when there is an applied force or tendency to slide; with no horizontal push, the static friction force is zero and should not be drawn.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-14",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 4,
+    "stem": "A 2 kg object has weight 19.6 N on Earth. What net horizontal force gives it an acceleration of 4 m/s² on a frictionless surface?",
+    "choices": [
+      "2 N",
+      "4 N",
+      "8 N",
+      "78.4 N"
+    ],
+    "correct_index": 2,
+    "explanation": "Use F = ma with mass, not weight. Mass is 2 kg directly, so F = (2)(4) = 8 N. The 19.6 N number is a distractor; weight only matters when computing normal force or vertical motion. A frequent trap is dividing weight by g first (19.6/9.8 = 2 kg) just to re-derive what was already given. Another trap is multiplying weight by acceleration (19.6 × 4 = 78.4), conflating force units. Always plug mass in kilograms into F = ma.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-FF-15",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 5,
+    "stem": "A 5 kg block is pulled across a floor by a 40 N force angled 30° above horizontal. The kinetic friction coefficient is 0.20. What is the block's acceleration? (Use g = 10 m/s², sin 30° = 0.5, cos 30° ≈ 0.87)",
+    "choices": [
+      "1.6 m/s²",
+      "5.7 m/s²",
+      "7.0 m/s²",
+      "8.0 m/s²"
+    ],
+    "correct_index": 1,
+    "explanation": "Resolve the pulling force. Horizontal component: F_x = 40 cos 30° ≈ 34.8 N. Vertical component (up): F_y = 40 sin 30° = 20 N. The normal force is reduced by the upward pull: N = mg − F_y = 50 − 20 = 30 N. Kinetic friction: f = (0.20)(30) = 6 N. Net horizontal: F_net = 34.8 − 6 = 28.8 N. Acceleration: a = 28.8/5 ≈ 5.7 m/s². The classic trap is using N = mg without subtracting the vertical pull, which gives f = 10 N and a too-low acceleration. Always recompute N when the applied force has a vertical component.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-1",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "A driver gear has 10 teeth and the driven gear has 30 teeth. What is the gear ratio?",
+    "choices": [
+      "1:3",
+      "3:1",
+      "1:30",
+      "30:1"
+    ],
+    "correct_index": 1,
+    "explanation": "Gear ratio is conventionally driven:driver, which is 30:10 = 3:1. This means the driven gear turns once for every three turns of the driver, reducing speed by a factor of three and multiplying torque by the same factor of three. A trap is inverting to 1:3, which would describe speed multiplication (overdrive) rather than reduction. Another trap is using raw tooth counts (1:30 or 30:1 without simplifying). Always simplify the ratio, then confirm which gear is the input (driver) and which is the output (driven) before naming the direction of the ratio.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-2",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "When two meshed gears turn, they rotate:",
+    "choices": [
+      "In the same direction",
+      "In opposite directions",
+      "Both clockwise always",
+      "Independently of each other"
+    ],
+    "correct_index": 1,
+    "explanation": "External-mesh gears rotate in opposite directions because their teeth push each other tangentially. If you trace the contact point, the surfaces move in the same direction at that point, which forces opposite rotation overall. To restore matching direction, engineers insert an idler gear between them. Choice A would only be true for internal gears (one gear inside a ring gear) or with an idler. Choice C ignores that direction depends on the input. Choice D contradicts the very purpose of meshing.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-3",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "A driver gear with 20 teeth spins at 100 rpm. The driven gear has 50 teeth. What is the driven gear's speed?",
+    "choices": [
+      "40 rpm",
+      "20 rpm",
+      "100 rpm",
+      "250 rpm"
+    ],
+    "correct_index": 0,
+    "explanation": "Conservation of teeth-engagement requires N_driver × ω_driver = N_driven × ω_driven, where N is tooth count and ω is angular speed. Solve for the output: ω_driven = (20 × 100)/50 = 40 rpm. The larger driven gear turns slower in direct proportion to its tooth count. A trap is dividing the wrong way (100/2 = 50, or 50/20 × 100 = 250 rpm), which would give the speed if the driver were the larger gear instead of the smaller one. Always pair the larger tooth count with the slower speed, never the other way around.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-4",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "Speed reduction in a gear train results in:",
+    "choices": [
+      "Less torque",
+      "Zero torque",
+      "Same torque",
+      "More torque"
+    ],
+    "correct_index": 3,
+    "explanation": "Power is approximately conserved across an ideal gear pair (ignoring friction): P = Tω. If angular speed ω drops in a reduction, the torque T must rise to keep the product constant. So a speed reduction multiplies torque proportionally; halving the speed doubles the torque, and so on. This is exactly why low gears in a vehicle help climb steep hills: low wheel speed translates into high wheel torque. A trap is assuming torque tracks with speed; the relationship is inverse. Another trap is choosing 'same torque,' which would require gears to manufacture free power out of nothing.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-5",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "An idler gear placed between a driver and a driven gear changes:",
+    "choices": [
+      "The overall gear ratio",
+      "The direction of the driven gear",
+      "The torque output by a factor of two",
+      "Nothing at all"
+    ],
+    "correct_index": 1,
+    "explanation": "An idler gear's tooth count cancels in the overall ratio: ω_driven/ω_driver depends only on the driver and final driven tooth counts. What an idler does change is rotation direction. Without it, driver and driven turn opposite. With one idler in between, they turn the same direction. Choice A is wrong because the ratio is unchanged. Choice C invents a torque factor. Choice D ignores the direction reversal, which is the actual purpose of using an idler.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-6",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "A belt connects a 6 cm radius pulley to a 18 cm radius pulley. The small pulley spins at 300 rpm. What is the speed of the large pulley?",
+    "choices": [
+      "100 rpm",
+      "50 rpm",
+      "300 rpm",
+      "900 rpm"
+    ],
+    "correct_index": 0,
+    "explanation": "For belt-pulley systems, the linear belt speed is constant along the belt: r₁ω₁ = r₂ω₂. Solve for the large pulley's speed: ω₂ = (6 × 300)/18 = 100 rpm. The larger pulley turns slower in direct proportion to the radius ratio, exactly like meshing gears with proportional tooth counts. A trap is multiplying instead of dividing (300 × 3 = 900 rpm), which would apply if the smaller pulley were driven by the large one. Another trap (50 rpm) divides by 6 directly instead of by the 3× radius ratio. Always pair the larger radius with the slower speed.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-7",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "A driver gear has 15 teeth and 5 N·m of torque. The driven gear has 45 teeth. Assuming no losses, what torque appears at the driven gear?",
+    "choices": [
+      "15 N·m",
+      "5 N·m",
+      "1.67 N·m",
+      "45 N·m"
+    ],
+    "correct_index": 0,
+    "explanation": "Torque scales with the gear ratio when power is conserved: T_driven = T_driver × (N_driven/N_driver) = 5 × (45/15) = 15 N·m. A larger driven gear means slower speed and proportionally higher torque, the trade central to all reduction gear systems. A trap is inverting the ratio (5 × 15/45 = 1.67 N·m), which would apply to angular speed, not torque. Another trap is treating tooth count as torque directly (45). Memorize the inverse-pairing: torque rises with the same factor that speed falls, so a 3:1 reduction gives 3× torque and 1/3 speed.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-8",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "A bicycle chain links a 48-tooth front sprocket to a 16-tooth rear sprocket. For each pedal turn, how many times does the rear wheel rotate?",
+    "choices": [
+      "1/3",
+      "1",
+      "3",
+      "48"
+    ],
+    "correct_index": 2,
+    "explanation": "Chain links must pass each tooth exactly once, so N_front × turns_front = N_rear × turns_rear. Solve: turns_rear = 48/16 = 3 rotations of the rear wheel per pedal turn. A small rear cog with a large front gives a high-speed, low-torque setup, typical for fast cycling on flats. A trap is dividing inversely (1/3), which would describe a climbing setup. Another trap is reporting the tooth count directly (48). Always check which sprocket is driven by the chain to set up the ratio correctly.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-9",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "Bevel gears are typically used to:",
+    "choices": [
+      "Increase torque only",
+      "Transmit motion between perpendicular shafts",
+      "Reduce friction in axles",
+      "Eliminate the need for a driver"
+    ],
+    "correct_index": 1,
+    "explanation": "Bevel gears have cone-shaped teeth so their axes meet at an angle, most often 90°. They redirect rotational motion around corners, such as in a hand drill or a differential. Choice A is wrong because torque multiplication depends on tooth ratio, not gear shape. Choice C confuses bearings with gears. Choice D ignores that all gear trains need a driver. The shape of the gear teeth (spur, helical, bevel, worm) defines the geometry of the shafts, not the ratio.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-10",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "A compound gear train has two stages: first stage 2:1 reduction, second stage 3:1 reduction. What is the overall ratio?",
+    "choices": [
+      "2:1",
+      "3:1",
+      "5:1",
+      "6:1"
+    ],
+    "correct_index": 3,
+    "explanation": "Compound ratios multiply, not add. Overall ratio = 2 × 3 = 6:1, meaning the final output rotates once for every six input turns and carries six times the torque of the input. A frequent trap is adding (2 + 3 = 5), which only works for things like resistors in series, not gear stages. Another trap is keeping only the larger stage (3:1) and ignoring the first reduction altogether. Stack reductions multiplicatively; the same rule applies in reverse for overdrive ratios, where each overdrive stage divides the overall reduction factor.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-11",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "Gear teeth count is proportional to:",
+    "choices": [
+      "Gear thickness",
+      "Gear material density",
+      "Gear circumference",
+      "Gear color"
+    ],
+    "correct_index": 2,
+    "explanation": "Tooth count scales with circumference because each tooth occupies a fixed arc length on the gear's pitch circle. Two meshing gears must share the same tooth pitch (module), so a larger circumference (larger radius) fits more teeth. That is why tooth-count ratios match radius ratios for the same gear family. Choice A is wrong because thickness affects load capacity, not tooth count. Choice B affects strength, not geometry. Choice D is a distractor with no physical relevance.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-12",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 4,
+    "stem": "A motor delivers 60 N·m at 600 rpm to a gear with 12 teeth. It drives a 60-tooth gear. What torque and speed appear at the output?",
+    "choices": [
+      "12 N·m at 120 rpm",
+      "12 N·m at 3,000 rpm",
+      "300 N·m at 120 rpm",
+      "300 N·m at 3,000 rpm"
+    ],
+    "correct_index": 2,
+    "explanation": "Tooth ratio is 60:12 = 5:1 reduction. Speed at output: 600/5 = 120 rpm. Torque at output: 60 × 5 = 300 N·m. The big driven gear spins five times slower and carries five times the torque. A common trap is inverting both, giving 12 N·m at 3,000 rpm (a 5:1 overdrive). Another trap is changing only one of the two quantities. Track speed and torque together, with one going up by the same factor the other goes down.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-13",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 4,
+    "stem": "In a planetary gear set with a fixed ring gear, if the sun gear is the input and the planet carrier is the output, the system provides:",
+    "choices": [
+      "Speed increase, torque decrease",
+      "Speed decrease, torque increase",
+      "Equal speed and torque",
+      "Reverse rotation only"
+    ],
+    "correct_index": 1,
+    "explanation": "With the ring fixed, sun as input, and carrier as output, planetary gear sets give a speed reduction and a torque multiplication. The carrier rotates slower than the sun because the planets must walk around the inside of the fixed ring. The exact ratio is 1 + (N_ring/N_sun). Choice A reverses the effect. Choice C ignores that planetary stages are designed to change ratios. Choice D conflates this with a different configuration (fixed carrier, ring output) that does reverse direction.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-14",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 4,
+    "stem": "A driver gear has 20 teeth and meshes with a 60-tooth gear. The 60-tooth gear is on the same shaft as a 25-tooth gear that meshes with a 75-tooth output gear. Overall ratio?",
+    "choices": [
+      "3:1",
+      "4:1",
+      "9:1",
+      "15:1"
+    ],
+    "correct_index": 2,
+    "explanation": "First stage: 60/20 = 3:1 reduction. Second stage: 75/25 = 3:1 reduction. Compound ratios multiply: 3 × 3 = 9:1. The output shaft turns once for every nine turns of the input and carries nine times the torque. A trap is adding (3 + 3 = 6) or keeping only one stage (3:1). Another trap is multiplying all four numbers raw (60 × 75)/(20 × 25) = 4,500/500 = 9, which happens to give the right answer but only because the math is equivalent. Stick to per-stage ratios for clarity.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-GW-15",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 5,
+    "stem": "A worm gear drive consists of a worm with one thread and a worm wheel with 40 teeth. The worm turns at 800 rpm with 0.5 N·m of torque. Ignoring losses, what is the output torque and speed?",
+    "choices": [
+      "0.0125 N·m at 32,000 rpm",
+      "40 N·m at 20 rpm",
+      "20 N·m at 32,000 rpm",
+      "20 N·m at 20 rpm"
+    ],
+    "correct_index": 3,
+    "explanation": "Worm gear ratio equals teeth on wheel divided by threads on worm: 40/1 = 40:1. Output speed: 800/40 = 20 rpm. Output torque (lossless): 0.5 × 40 = 20 N·m. Worm drives are famous for huge reductions in one stage. A trap is treating the worm as a normal gear with 1 'tooth' but forgetting that each worm rotation advances the wheel by one tooth. Choice A inverts to overdrive. Choice C mixes the right torque with the wrong speed. Choice D forgets the input torque factor.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-IPH-1",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "An inclined plane is 10 m long and rises to a height of 2 m. What is its mechanical advantage?",
+    "choices": [
+      "0.2",
+      "2",
+      "5",
+      "10"
+    ],
+    "correct_index": 2,
+    "explanation": "Ideal mechanical advantage of an inclined plane is MA = length / height = 10 / 2 = 5. This means the force needed to push a load up the ramp is one-fifth of its weight, ignoring friction. The trade-off is distance: you must push that smaller force across five times the vertical lift, so total work stays the same. Choice A inverts to height/length, which would understate the advantage. Choice B reports the height alone. Choice D reports the length alone. Always divide the long side by the rise to compute ramp MA, never the other way around.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-IPH-2",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "In a hydraulic press, the small piston has area 2 cm² and the large piston has area 20 cm². The mechanical advantage is:",
+    "choices": [
+      "10",
+      "2",
+      "0.1",
+      "40"
+    ],
+    "correct_index": 0,
+    "explanation": "Hydraulic MA equals the ratio of output piston area to input piston area: MA = A_large/A_small = 20/2 = 10. A force on the small piston is multiplied by 10 at the large piston. The price is distance: the small piston must move 10 times farther than the large piston rises. Choice A inverts the ratio. Choice B is just the small area. Choice D multiplies the two areas. Always put the output area on top.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-IPH-3",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "What force is needed to push a 200 N crate up a frictionless 30° incline? (sin 30° = 0.5)",
+    "choices": [
+      "50 N",
+      "200 N",
+      "173 N",
+      "100 N"
+    ],
+    "correct_index": 3,
+    "explanation": "On a frictionless incline, the force parallel to the slope needed to push a weight up at constant velocity equals W sin θ. Plug in: F = 200 × 0.5 = 100 N. A trap is using cos 30° (about 0.87) and getting 173 N; cosine gives the component perpendicular to the ramp, used for the normal force. Another trap is choosing the full weight (200 N), which would only apply for a vertical lift (θ = 90°). Match sin θ with the slope direction.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-IPH-4",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "A hydraulic system has piston areas 5 cm² (input) and 25 cm² (output). A 20 N force on the input piston produces what force on the output piston?",
+    "choices": [
+      "4 N",
+      "20 N",
+      "100 N",
+      "500 N"
+    ],
+    "correct_index": 2,
+    "explanation": "Apply Pascal's principle: pressure transmits equally through the fluid, so F₁/A₁ = F₂/A₂. Solve for F₂: F₂ = F₁ × (A₂/A₁) = 20 × (25/5) = 100 N. The 5:1 area ratio gives a 5:1 force multiplication, and that is the entire point of a hydraulic press. A trap is dividing the wrong way (20/5 = 4 N) or skipping the calculation entirely (20 N). Another trap is multiplying area numbers together (500). Pressure stays constant throughout the fluid; force scales with the cross-sectional area of each piston, in proportion to that area ratio.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-IPH-5",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "In a hydraulic press, if the input piston moves 30 cm, the output piston (area 6 times larger) moves:",
+    "choices": [
+      "5 cm",
+      "30 cm",
+      "36 cm",
+      "180 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "Volume conservation: A₁d₁ = A₂d₂, so d₂ = d₁ × (A₁/A₂) = 30 × (1/6) = 5 cm. The output piston moves only one-sixth as far because its area is six times bigger. This is the inverse of the force ratio: bigger force means smaller displacement. A trap is multiplying (30 × 6 = 180 cm), which would violate fluid volume conservation. Another trap is reporting no change (30 cm). Force ratio and distance ratio always invert each other.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-IPH-6",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "A ramp is 6 m long and rises 1.5 m. How much force is needed to push a 600 N load up the frictionless ramp?",
+    "choices": [
+      "150 N",
+      "100 N",
+      "300 N",
+      "600 N"
+    ],
+    "correct_index": 0,
+    "explanation": "Use Ideal MA = length/height = 6/1.5 = 4. Force needed = Load/MA = 600/4 = 150 N. Equivalently, F = W sin θ where sin θ = h/L = 1.5/6 = 0.25, giving 600 × 0.25 = 150 N. Both routes match, which is a useful self-check. A trap is multiplying (600 × 4 = 2,400, not listed) or dividing the load by length directly (600/6 = 100). Always divide the load by MA, never by length alone, and remember that on a frictionless ramp the parallel push equals weight times the sine of the slope angle.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-IPH-7",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "A hydraulic lift raises a 4,000 N car using a 100 N input force. What is the area ratio of output piston to input piston?",
+    "choices": [
+      "1:40",
+      "4:1",
+      "40:1",
+      "400:1"
+    ],
+    "correct_index": 2,
+    "explanation": "Force ratio equals area ratio in a hydraulic system, by Pascal's law: A_out/A_in = F_out/F_in = 4,000/100 = 40. So the area ratio is 40:1, output to input. The big piston is 40 times the cross-sectional area of the input piston, which is how it multiplies the small input force into a large lifting force. A trap is inverting (1:40), which actually describes the displacement ratio, not the area ratio. Another trap is using 4:1 by ignoring a factor of ten. Always set the area ratio in the same order as the force ratio you computed.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-IPH-8",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "Pushing a load up a long, shallow ramp instead of a short, steep ramp:",
+    "choices": [
+      "Requires more force but less distance",
+      "Requires less force but more distance",
+      "Requires more force and more distance",
+      "Requires less force and less distance"
+    ],
+    "correct_index": 1,
+    "explanation": "A longer ramp at the same height increases mechanical advantage (MA = L/h), reducing the force needed. The trade-off is distance: you push the smaller force over a longer path, so the work done (force × distance) stays the same as a direct vertical lift. Choices A and D contradict the conservation of work. Choice C is impossible because ramps cannot make both worse at once. The inclined plane trades force for distance, never gives both for free.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-IPH-9",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 4,
+    "stem": "A 1,000 N load sits on a ramp 8 m long rising 2 m. The coefficient of kinetic friction is 0.15. What force pushed parallel to the ramp moves the load up at constant velocity? (sin θ = 0.25, cos θ ≈ 0.97)",
+    "choices": [
+      "100 N",
+      "250 N",
+      "500 N",
+      "395.5 N"
+    ],
+    "correct_index": 3,
+    "explanation": "Two forces oppose motion up the ramp: gravity along the slope and friction. Gravity component: W sin θ = 1,000 × 0.25 = 250 N. Normal force: N = W cos θ = 1,000 × 0.97 = 970 N. Friction: f = μN = 0.15 × 970 ≈ 145.5 N. Total push needed: 250 + 145.5 = 395.5 N. A frictionless answer (250 N) is the most common trap. Another trap is using full weight in the normal force (1,000 × 0.15 = 150 N friction), which ignores that on an incline the normal force is reduced by cos θ.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-IPH-10",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 4,
+    "stem": "A hydraulic jack has a small piston of area 3 cm² and a large piston of area 60 cm². To lift a load that requires 1,200 N at the large piston, and to raise it 2 cm, how far must the small piston move and what input force is needed?",
+    "choices": [
+      "0.1 cm and 60 N",
+      "40 cm and 60 N",
+      "40 cm and 600 N",
+      "60 cm and 24,000 N"
+    ],
+    "correct_index": 1,
+    "explanation": "Area ratio is 60/3 = 20. Force ratio: input force = output/20 = 1,200/20 = 60 N. Distance ratio (inverse): input distance = output × 20 = 2 × 20 = 40 cm. So the small piston moves 40 cm with 60 N to lift the load 2 cm at 1,200 N. A common trap is matching the wrong distance and force pair, such as 0.1 cm and 60 N (which would violate volume conservation) or pairing the right force with no displacement scaling. Always pair the small force with the large displacement.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-IPH-11",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 5,
+    "stem": "A 50 N force pushes a 250 N crate up a ramp 5 m long with a height of 1 m. What is the ramp's actual mechanical advantage, and is friction acting?",
+    "choices": [
+      "MA = 5, frictionless",
+      "MA = 5, friction is present",
+      "MA = 2, frictionless",
+      "MA = 2, friction reduces effective ramp gain"
+    ],
+    "correct_index": 0,
+    "explanation": "Actual MA = Load/Effort = 250/50 = 5. Ideal MA (length/height) = 5/1 = 5. Since actual MA equals ideal MA, no friction is acting; the ramp performs at theoretical maximum. A trap is computing only the ideal MA and assuming friction is present whenever a ramp problem mentions resistance. Another trap is reporting MA = 2, which would arise if you confused ratios or used wrong dimensions. When actual MA matches geometric MA, the system is effectively frictionless or the problem assumes ideal behavior.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-1",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "A seesaw is an example of which class of lever?",
+    "choices": [
+      "First class",
+      "Second class",
+      "Third class",
+      "Fourth class"
+    ],
+    "correct_index": 0,
+    "explanation": "First-class levers have the fulcrum between effort and load, like a seesaw, crowbar, or scissors. Second-class levers (e.g., wheelbarrow) put the load between fulcrum and effort. Third-class levers (e.g., tweezers, forearm) put the effort between fulcrum and load. There is no fourth class. The position of the fulcrum determines the class, not the direction of effort or the magnitude. A first-class lever can have MA greater than, equal to, or less than 1, depending on arm lengths.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-2",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "A single fixed pulley provides:",
+    "choices": [
+      "MA of 2",
+      "MA of 1, but changes direction of force",
+      "MA of 0.5",
+      "MA of 4"
+    ],
+    "correct_index": 1,
+    "explanation": "A single fixed pulley merely redirects the rope; effort equals load. So MA = 1, but pulling down can lift a load up, which is often easier than lifting directly. A common trap is assuming any pulley multiplies force. Only movable pulleys (where the load travels with the pulley) provide mechanical advantage. Block-and-tackle systems combine multiple pulleys to get MA = 2, 3, 4, or more, counted by the number of rope segments supporting the load.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-3",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A lever has an effort arm of 2 m and a load arm of 0.5 m. What is the mechanical advantage?",
+    "choices": [
+      "0.25",
+      "1.5",
+      "2.5",
+      "4"
+    ],
+    "correct_index": 3,
+    "explanation": "Mechanical advantage of a lever is MA = effort arm / load arm = 2 / 0.5 = 4. Push down with 1 unit of force, lift 4 units of load. A trap is inverting (0.25), which would describe a lever set up for speed rather than force (third-class style). Another trap is subtracting arms or treating them as additive (1.5, 2.5). Always divide effort arm by load arm; force-multiplying levers have MA > 1.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-4",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A block-and-tackle uses 4 rope segments supporting the load. What is its mechanical advantage?",
+    "choices": [
+      "4",
+      "2",
+      "1",
+      "8"
+    ],
+    "correct_index": 0,
+    "explanation": "For an ideal block-and-tackle, MA equals the number of rope segments supporting the movable block. Four segments mean MA = 4. A 400 N load lifts with only 100 N of pull, but you must pull 4 times the rope length. A trap is counting all rope segments (including the one you pull) instead of only supporting segments. Another trap is doubling the answer (8). Always count the segments touching the movable pulley assembly, not the static one.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-5",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A wheelbarrow is a:",
+    "choices": [
+      "First-class lever",
+      "Pulley system",
+      "Third-class lever",
+      "Second-class lever"
+    ],
+    "correct_index": 3,
+    "explanation": "A wheelbarrow places the load (cargo) between the fulcrum (wheel axle) and the effort (handles you lift). This is the definition of a second-class lever. Second-class levers always have MA > 1 because the effort arm (handle to wheel) is longer than the load arm (wheel to cargo center). A first-class setup would put the fulcrum in the middle. A third-class setup would put the effort in the middle, giving MA < 1 (speed-favoring). The wheelbarrow's design is optimized for hauling heavy loads with reduced effort.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-6",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A 600 N load is lifted by a lever with MA = 3. What effort is needed?",
+    "choices": [
+      "100 N",
+      "1,800 N",
+      "300 N",
+      "200 N"
+    ],
+    "correct_index": 3,
+    "explanation": "Effort = Load / MA = 600 / 3 = 200 N. Mechanical advantage divides the load to give the required input force, never the other way around. A trap is multiplying (600 × 3 = 1,800), which would compute the load if you knew the effort and the MA. Another trap is using random subtraction or partial division (300). Always remember the rule: MA tells you how many times your effort is amplified, so the effort itself is the load divided by MA. The trade-off is distance, but distance is not asked in this item.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-7",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "A crowbar 1.2 m long is used to pry a nail. The fulcrum is 0.2 m from the nail. What is the mechanical advantage?",
+    "choices": [
+      "0.2",
+      "0.5",
+      "5",
+      "6"
+    ],
+    "correct_index": 2,
+    "explanation": "Effort arm = total length − load arm = 1.2 − 0.2 = 1.0 m. Load arm = 0.2 m. MA = effort arm / load arm = 1.0 / 0.2 = 5. The crowbar multiplies pulling force by 5. A trap is using the full length (1.2/0.2 = 6) for the effort arm, forgetting to subtract the load arm portion. Another trap is inverting to 0.2. Always identify load arm (fulcrum to load) and effort arm (fulcrum to where you push) separately before dividing.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-8",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "A third-class lever has effort arm 10 cm and load arm 40 cm. What is its MA, and what is its advantage?",
+    "choices": [
+      "MA = 0.25, speed and range of motion",
+      "MA = 0.25, force multiplication",
+      "MA = 4, speed and range of motion",
+      "MA = 4, force multiplication"
+    ],
+    "correct_index": 0,
+    "explanation": "MA = effort arm / load arm = 10/40 = 0.25. Third-class levers always have effort arm shorter than load arm, giving MA < 1. The trade-off is favorable in the other direction: a small motion of the effort produces a large motion of the load with greater speed. Human forearms work this way; the biceps inserts close to the elbow but the hand moves far and fast. A trap is reporting MA = 4 by inverting. Another trap is calling third-class force-multiplying.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-9",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "A movable pulley supports a 200 N load. What force pulls the rope (ideal case)?",
+    "choices": [
+      "100 N",
+      "50 N",
+      "200 N",
+      "400 N"
+    ],
+    "correct_index": 0,
+    "explanation": "A single movable pulley has two rope segments supporting the load, giving MA = 2. Effort = Load / MA = 200 / 2 = 100 N. The load rises only half as fast as you pull because the rope is shared between both supporting segments, doubling the pull distance. A trap is treating it like a fixed pulley (MA = 1) and reporting 200 N. Another trap is doubling (400 N), which would confuse direction-change with force amplification. Movable pulleys are the actual workhorses of mechanical advantage; fixed pulleys only change the direction of the applied force.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-10",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "A nutcracker is an example of which lever class?",
+    "choices": [
+      "First class",
+      "Not a lever",
+      "Third class",
+      "Second class"
+    ],
+    "correct_index": 3,
+    "explanation": "A nutcracker has the hinge (fulcrum) at one end, the nut (load) in the middle, and your squeezing hand (effort) at the other end. Load between fulcrum and effort is a second-class lever, with MA > 1. The same logic applies to wheelbarrows, bottle openers, and doors (where the hinge is the fulcrum and the handle is the effort). A first-class setup would put the fulcrum in the middle (scissors are first-class because the rivet is between blades and handles). A third-class setup puts effort in the middle.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-11",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "To lift a load 1 m with a block-and-tackle of MA = 5, how much rope must be pulled?",
+    "choices": [
+      "0.2 m",
+      "1 m",
+      "5 m",
+      "25 m"
+    ],
+    "correct_index": 2,
+    "explanation": "Conservation of work: F_effort × d_effort = F_load × d_load. The distance ratio inverts the force ratio. So d_effort = MA × d_load = 5 × 1 = 5 m. You trade pulling 5 times more rope for a 5× reduction in force. A trap is dividing (1/5 = 0.2), which would describe the opposite (low MA, short pull). Another trap is equal distance (1 m), which only holds for MA = 1 systems like a fixed pulley. Always invert the MA to find pull distance.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-12",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 4,
+    "stem": "A first-class lever balances a 300 N load on its 0.5 m load arm with a 150 N effort. What is the effort arm length?",
+    "choices": [
+      "1 m",
+      "0.25 m",
+      "1.5 m",
+      "2 m"
+    ],
+    "correct_index": 0,
+    "explanation": "Torque balance on a lever in equilibrium: F_load × d_load = F_effort × d_effort. Solve for the unknown arm: d_effort = (300 × 0.5)/150 = 1 m. The effort arm must be twice the load arm because the effort force is half the load force. A trap is setting d_effort = 0.25 m by inverting the ratio. Another trap is doubling the load arm directly (1.5 m total) or treating the total lever length as the answer. Always set the two torques equal first, then solve for the unknown arm before reporting the number.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-13",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 4,
+    "stem": "A block-and-tackle pulley system has 6 supporting rope segments. To lift a 1,200 N load, what effort is needed, and how much rope must be pulled to lift it 0.5 m? (Ideal)",
+    "choices": [
+      "200 N, 3 m",
+      "200 N, 0.5 m",
+      "600 N, 3 m",
+      "1,200 N, 0.5 m"
+    ],
+    "correct_index": 0,
+    "explanation": "MA = 6 (six supporting segments). Effort = Load/MA = 1,200/6 = 200 N. Distance pulled = MA × lift = 6 × 0.5 = 3 m. The work in equals work out: 200 × 3 = 600 J at input, 1,200 × 0.5 = 600 J at load. A trap is matching the right force with the wrong distance (200 N and 0.5 m), violating energy conservation. Another trap is reporting the load force unchanged. MA scales force down and distance up by the same factor.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-14",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 4,
+    "stem": "A 2 m crowbar is used as a first-class lever. The fulcrum is 0.4 m from the load. A 50 N effort is applied. What load can it lift?",
+    "choices": [
+      "20 N",
+      "100 N",
+      "250 N",
+      "200 N"
+    ],
+    "correct_index": 3,
+    "explanation": "Effort arm = 2 − 0.4 = 1.6 m. Load arm = 0.4 m. MA = 1.6/0.4 = 4. Load = effort × MA = 50 × 4 = 200 N. The crowbar's geometry multiplies effort by 4. A trap is using full length (2 m) as the effort arm, giving MA = 5 and load = 250 N. Another trap is dividing (50/4 = 12.5, rounded to 20). Subtracting the load arm from the total to get the effort arm is the key step. Then multiply effort by MA to find the maximum load lifted.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-LP-15",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 5,
+    "stem": "A compound machine combines a 3:1 lever and a block-and-tackle with 4 supporting ropes. What is the overall MA, and what effort lifts a 240 N load?",
+    "choices": [
+      "MA = 7, 34.3 N",
+      "MA = 7, 240 N",
+      "MA = 12, 240 N",
+      "MA = 12, 20 N"
+    ],
+    "correct_index": 3,
+    "explanation": "Compound MA multiplies stage by stage: overall MA = 3 × 4 = 12. Effort = Load / MA = 240 / 12 = 20 N. The lever first reduces the load by a factor of 3, then the pulley reduces the remaining force again by a factor of 4. A trap is adding (3 + 4 = 7), which incorrectly treats compound stages as additive instead of multiplicative. Another trap is forgetting to divide and just reporting the load (240 N) as the effort. Compound machines always compound their advantages; the rule for stacking MAs is multiplication, never addition.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-1",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "A ball is dropped from rest. Ignoring air resistance, what is its speed after 2 seconds? (g = 10 m/s²)",
+    "choices": [
+      "5 m/s",
+      "10 m/s",
+      "40 m/s",
+      "20 m/s"
+    ],
+    "correct_index": 3,
+    "explanation": "Free-fall kinematics: v = gt = (10)(2) = 20 m/s. The ball accelerates at a constant 10 m/s² because gravity is constant near Earth's surface and air resistance is ignored. A trap is using v = (1/2)gt and getting 10 m/s, which is actually the formula for the average speed during constant acceleration from rest, not the final speed. Another trap is using v = gt² (40 m/s), which is dimensionally wrong. Speed grows linearly with time under constant acceleration; distance fallen grows quadratically with time, which is a separate equation.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-2",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "A car drives 120 miles in 3 hours. What is its average speed?",
+    "choices": [
+      "3 mph",
+      "40 mph",
+      "60 mph",
+      "360 mph"
+    ],
+    "correct_index": 1,
+    "explanation": "Average speed = total distance / total time = 120 / 3 = 40 mph. The formula assumes the total distance covered divided by the total elapsed time, not the speed at any single moment along the route. A trap is multiplying (120 × 3 = 360) or subtracting in some way to force a different number. Another trap is reporting 60 mph by guessing a 'typical' highway speed without doing the arithmetic. Always divide the total distance by the total time and keep units consistent (miles with hours, meters with seconds) so the resulting speed has the expected units.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-3",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "An object is launched horizontally at 30 m/s from a cliff. After 2 seconds, what is its horizontal velocity? (Ignore air resistance)",
+    "choices": [
+      "0 m/s",
+      "15 m/s",
+      "30 m/s",
+      "60 m/s"
+    ],
+    "correct_index": 2,
+    "explanation": "Horizontal velocity in projectile motion stays constant because no horizontal force acts (air resistance ignored). So v_x = 30 m/s throughout the flight. Only the vertical velocity changes, growing at g = 10 m/s² each second. A trap is mixing the two components or applying gravity to horizontal motion (15 m/s or 60 m/s). Another trap is reporting zero by confusing horizontal with vertical at peak. Horizontal and vertical motion are completely independent in 2D projectiles.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-4",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "A ball thrown straight up returns to its starting point. At the peak of its flight, its velocity is:",
+    "choices": [
+      "Equal to its launch velocity",
+      "Zero, but its acceleration is still g downward",
+      "Zero, and its acceleration is zero",
+      "Maximum upward"
+    ],
+    "correct_index": 1,
+    "explanation": "At the highest point of a vertical throw, the ball's velocity is momentarily zero because it stops rising before falling. However, gravity still acts, so acceleration is g downward throughout the flight, including at the peak. Choice A confuses the symmetric speed (same magnitude as launch when it returns) with the peak velocity. Choice C is wrong because acceleration never vanishes during free fall. Velocity zero does not imply acceleration zero, a common confusion in kinematics.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-5",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "How far does a freely falling object drop in 3 seconds, starting from rest? (g = 10 m/s²)",
+    "choices": [
+      "45 m",
+      "30 m",
+      "15 m",
+      "90 m"
+    ],
+    "correct_index": 0,
+    "explanation": "Distance fallen from rest: d = (1/2)gt² = (1/2)(10)(9) = 45 m. The squared time means distance grows fast: 5 m in 1 s, 20 m in 2 s, 45 m in 3 s, 80 m in 4 s. A trap is using d = gt = 30 m (linear instead of quadratic). Another trap is doubling (90 m), forgetting the factor of 1/2. Always include the (1/2) and square the time when starting from rest under constant acceleration.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-6",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "A projectile is launched horizontally at 15 m/s from a 20 m cliff. How long until it hits the ground? (g = 10 m/s²)",
+    "choices": [
+      "1.33 s",
+      "2 s",
+      "4 s",
+      "1.5 s"
+    ],
+    "correct_index": 1,
+    "explanation": "Time of flight depends only on the vertical drop, not horizontal speed. From d = (1/2)gt², solve t = √(2d/g) = √(2 × 20 / 10) = √4 = 2 s. The horizontal launch speed of 15 m/s is a distractor; only vertical motion sets time. A trap is dividing distance by horizontal speed (20/15 ≈ 1.33 s). Another trap is using t = d/g (20/10 = 2... numerically the same here by coincidence, but the reasoning is wrong). Always isolate the vertical equation for time of flight.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-7",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "A ball thrown straight up reaches a height of 20 m. How long is it in the air total? (g = 10 m/s²)",
+    "choices": [
+      "1 s",
+      "2 s",
+      "8 s",
+      "4 s"
+    ],
+    "correct_index": 3,
+    "explanation": "Use d = (1/2)gt² for the descent from peak: 20 = (1/2)(10)t², so t² = 4, t = 2 s falling. By symmetry, time up equals time down for a vertical throw with no air resistance, so total flight = 2 + 2 = 4 s. A trap is reporting just one leg (2 s). Another trap is squaring the time again (8 s). The total time aloft is twice the time to reach the peak.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-8",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "Two objects fall freely from the same height, one with mass 2 kg and the other 10 kg. Ignoring air resistance, they:",
+    "choices": [
+      "The 10 kg arrives first",
+      "The 2 kg arrives first",
+      "Both arrive at the same time",
+      "Neither falls because mass cancels gravity"
+    ],
+    "correct_index": 2,
+    "explanation": "Free-fall acceleration is g for all masses, because the gravitational force (mg) and inertial mass (m) both scale identically: a = F/m = mg/m = g. So both objects fall at the same rate and arrive at the same time. This was Galileo's famous demonstration. Choices A and B incorrectly tie speed to mass. Choice D contradicts F = ma. The mass-independence of free fall is a classic ASVAB topic, and air resistance is the only thing that breaks it in everyday experience.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-9",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "A car accelerates uniformly from 10 m/s to 30 m/s in 4 seconds. What is its acceleration?",
+    "choices": [
+      "5 m/s²",
+      "2.5 m/s²",
+      "7.5 m/s²",
+      "10 m/s²"
+    ],
+    "correct_index": 0,
+    "explanation": "Acceleration = (v_final − v_initial) / time = (30 − 10) / 4 = 5 m/s². The velocity changes by 20 m/s over a span of 4 seconds, giving an increase of 5 m/s every second of the motion. A trap is using only the final velocity (30 / 4 = 7.5) and ignoring the initial velocity entirely. Another trap is splitting the velocity in half without subtracting first (2.5 m/s²). For uniformly accelerated motion, always subtract initial velocity from final velocity before dividing by the time interval; the formula is a difference, not a ratio of finals.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-10",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 4,
+    "stem": "A projectile is launched at 50 m/s at 30° above the horizontal. What is its horizontal range? (Use g = 10 m/s², sin 60° ≈ 0.87)",
+    "choices": [
+      "125 m",
+      "175 m",
+      "217.5 m",
+      "250 m"
+    ],
+    "correct_index": 2,
+    "explanation": "Range formula on level ground: R = (v² sin 2θ)/g. Plug numbers: R = (50² × sin 60°)/10 = (2,500 × 0.87)/10 = 2,175/10 = 217.5 m. Note that sin 2θ = sin 60°, not sin 30°. A trap is using sin 30° = 0.5, giving 125 m. Another trap is dropping the squared velocity and getting 250 m. The 2θ in the range formula is the most-missed detail; the maximum range comes at θ = 45° where sin 2θ = 1.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-11",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 4,
+    "stem": "A train moves east at 30 m/s. A passenger walks toward the back of the train at 2 m/s relative to the train. What is the passenger's velocity relative to the ground?",
+    "choices": [
+      "28 m/s east",
+      "30 m/s east",
+      "32 m/s east",
+      "2 m/s west"
+    ],
+    "correct_index": 0,
+    "explanation": "Add velocities as vectors along a single line. The train moves +30 m/s east. The passenger moves −2 m/s relative to the train (toward the back means opposite to train motion). Ground velocity = 30 + (−2) = 28 m/s east. A trap is choosing 32 m/s east, which would only happen if the passenger walked toward the front of the train. Another trap (2 m/s west) ignores the train's velocity entirely and treats the passenger's walking speed as ground speed. Always sign the components consistently using a single reference direction before adding them together.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-12",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 4,
+    "stem": "A ball is thrown straight up at 25 m/s. How high does it rise? (g = 10 m/s²)",
+    "choices": [
+      "12.5 m",
+      "25 m",
+      "31.25 m",
+      "62.5 m"
+    ],
+    "correct_index": 2,
+    "explanation": "Use v_f² = v_i² − 2gh at the peak where v_f = 0: 0 = 25² − 2(10)h. Solve: h = 625/20 = 31.25 m. Alternatively, time to peak = v/g = 2.5 s, then h = (1/2)(g)(t²) = (1/2)(10)(6.25) = 31.25 m. A trap is using h = v²/g (no factor of 2) and getting 62.5 m. Another trap is computing only half (12.5 m). Always include the factor of 2 in the denominator when using the kinematic equation for height.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MC-P4-MP-13",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 5,
+    "stem": "A rifle fires a bullet horizontally at 400 m/s from 1.8 m above level ground. How far does the bullet travel horizontally before hitting the ground? (Ignore air resistance, g = 10 m/s²)",
+    "choices": [
+      "120 m",
+      "240 m",
+      "320 m",
+      "400 m"
+    ],
+    "correct_index": 1,
+    "explanation": "Time of flight is set by vertical free fall: 1.8 = (1/2)(10)t², so t² = 0.36, t = 0.6 s. Horizontal distance = v_x × t = 400 × 0.6 = 240 m. The horizontal speed stays constant; only the vertical drop sets time. A trap is using t = 1 s (giving 400 m) by sloppy estimation. Another trap is dividing height by g without the factor of 2 (1.8/10 = 0.18 s, giving 72 m, not listed). The classic projectile error is treating the bullet's high speed as evidence it falls slower; it does not.",
+    "status": "draft"
+  }
+]

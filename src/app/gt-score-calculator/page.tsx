@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     q: "What subtest scores do I need to calculate my GT score?",
-    a: "For Army, Coast Guard, and Air Force (G score): Word Knowledge (WK), Paragraph Comprehension (PC), and Arithmetic Reasoning (AR). For the Marine Corps, also add Mechanical Comprehension (MC). All are standard ASVAB subtests listed as standard scores on your score report. You cannot calculate GT from your AFQT percentile alone.",
+    a: "Word Knowledge (WK), Paragraph Comprehension (PC), and Arithmetic Reasoning (AR). The formula is GT = VE + AR, where VE (Verbal Expression) combines your WK and PC scores. This applies to Army, Marine Corps, Coast Guard, and Air Force (which calls it the G score). All are standard ASVAB subtests listed on your score report. You cannot calculate GT from your AFQT percentile alone.",
   },
   {
     q: "What is a good GT score for Army jobs?",
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "Is the GT score formula the same for all branches?",
-    a: "No. Army, Coast Guard, and Air Force all use VE + AR, though the Air Force calls it the G score. Marine Corps adds Mechanical Comprehension: VE + AR + MC. The Navy doesn&apos;t use a GT composite at all. Calculate your GT using the formula for your specific branch.",
+    a: "The formula is the same for most branches. Army, Marine Corps, Coast Guard, and Air Force all use VE + AR (WK + PC + AR), though the Air Force calls it the G score. The Navy doesn&apos;t use a GT composite at all — each rating has its own subtest combination.",
   },
   {
     q: "What GT score do I need for Army Special Forces?",
@@ -317,11 +317,10 @@ export default function GTScoreCalculatorPage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Marine Corps
                 </td>
-                <td className="py-2 pr-4 font-mono">VE + AR + MC</td>
+                <td className="py-2 pr-4 font-mono">VE + AR</td>
                 <td className="py-2 pr-4 font-mono">GT</td>
                 <td className="py-2">
-                  Adds Mechanical Comprehension; same thresholds, higher raw
-                  number
+                  Same formula as Army; same thresholds
                 </td>
               </tr>
               <tr className="border-b border-navy-border/50">
@@ -358,22 +357,20 @@ export default function GTScoreCalculatorPage() {
         </div>
 
         <p className="text-text-secondary">
-          For Army, Coast Guard, and Air Force candidates, the formula is the
-          same three subtests. The Air Force calls the resulting score the
-          &ldquo;G&rdquo; (General Aptitude) score rather than GT, but your
-          recruiter is running the same calculation.
+          The GT formula is the same across Army, Marine Corps, Coast Guard, and
+          Air Force: VE + AR. The Air Force calls it the &ldquo;G&rdquo;
+          (General Aptitude) score rather than GT, but your recruiter is running
+          the same calculation. The Navy does not use a GT composite at all.
         </p>
 
-        <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Note</p>
+        <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
+          <p className="text-sm font-semibold text-amber-400">Common Myth</p>
           <p className="mt-1 text-sm text-text-secondary">
-            Marine Corps candidates need to include their MC (Mechanical
-            Comprehension) subtest score in the formula. Because MC is added to
-            the total, a Marine GT raw composite will be numerically higher than
-            an Army candidate&apos;s at identical WK, PC, and AR performance.
-            The qualifying thresholds are calibrated to account for this. If
-            you&apos;re cross-referencing Army GT requirements while planning
-            for the Marines, you need the USMC-specific line score minimums.
+            Some sources claim Marine GT adds Mechanical Comprehension (VE + AR + MC).
+            This is incorrect. The Marine Corps uses GT = VE + AR, the same formula
+            as the Army. The confusion likely stems from the Marines&apos; MM
+            (Mechanical Maintenance) composite, which does include MC. If you see
+            conflicting information, trust the formula on your official score report.
           </p>
         </aside>
 
@@ -528,7 +525,7 @@ export default function GTScoreCalculatorPage() {
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-accent">Marine GT</p>
             <p className="mt-1 text-sm text-text-secondary">
-              Needs WK, PC, AR, and MC from your score report
+              Needs WK, PC, and AR from your score report (same formula as Army)
             </p>
           </div>
           <div className="rounded-lg bg-navy px-4 py-3">

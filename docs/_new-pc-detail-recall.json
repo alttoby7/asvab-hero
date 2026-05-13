@@ -1,0 +1,200 @@
+[
+  {
+    "external_key": "PC-DR-NEW-1",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "The Hoover Dam was completed in 1936 after five years of continuous construction. Located on the border between Nevada and Arizona, it stands 726 feet tall. The dam created Lake Mead, which is the largest reservoir in the United States by volume. During its construction, more than 21,000 workers were employed, and 96 of them died on the job. The dam generates approximately four billion kilowatt-hours of electricity each year, serving customers in three states. Originally called the Boulder Dam, it was renamed in 1947 to honor President Herbert Hoover, who had championed the project while serving as Secretary of Commerce.\n\nAccording to the passage, in what year was the Hoover Dam completed?",
+    "choices": ["1931", "1936", "1947", "1921"],
+    "correct_index": 1,
+    "explanation": "The first sentence states, \"The Hoover Dam was completed in 1936 after five years of continuous construction.\" Choice 1931 reflects when construction began (five years before 1936) but is not the completion year, an off-by-one trap on the five-year span. Choice 1947 is when the dam was renamed to honor Hoover, not when it was completed; it is a correct-but-wrong-question trap pulled from the closing sentence. Choice 1921 has no support in the passage; it is a plausible-looking distant date with no anchor in the text. Only 1936 directly matches the topic sentence and the completion question.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-2",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Honeybees communicate the location of food sources through a behavior called the waggle dance. A returning forager performs the dance on the vertical surface of the honeycomb, using a figure-eight pattern. The angle of the straight portion of the dance relative to vertical indicates the direction of the food source relative to the sun. The duration of the waggle phase signals the distance to the source. Karl von Frisch first decoded this behavior in the 1940s, work that earned him a Nobel Prize in 1973. Researchers have since confirmed that bees adjust the dance to account for the sun's movement across the sky.\n\nAccording to the passage, what is the name of the behavior bees use to communicate food location?",
+    "choices": ["The figure-eight signal", "The waggle dance", "The forager pattern", "The honeycomb dance"],
+    "correct_index": 1,
+    "explanation": "The opening sentence reads, \"Honeybees communicate the location of food sources through a behavior called the waggle dance.\" Choice \"figure-eight signal\" describes the dance's shape but is not its name. Choice \"forager pattern\" combines two real words from the passage (forager, pattern) into a label the passage never uses. Choice \"honeycomb dance\" trades on the location of the dance (the honeycomb) but is not what the behavior is called. Only \"waggle dance\" appears as the explicit name.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-3",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Solar panels convert sunlight directly into electricity using photovoltaic cells made primarily of silicon. The cells contain two layers of silicon that have been treated with different chemicals to give one layer a positive charge and the other a negative charge. When photons from sunlight strike the cells, they knock electrons loose, creating a flow of current. A single residential solar panel typically produces between 250 and 400 watts of power under ideal conditions. Most home installations use 20 to 30 panels arranged on a roof. The first practical silicon solar cell was developed at Bell Labs in 1954.\n\nAccording to the passage, what material are photovoltaic cells primarily made of?",
+    "choices": ["Copper", "Silicon", "Aluminum", "Carbon"],
+    "correct_index": 1,
+    "explanation": "The opening sentence states cells are \"made primarily of silicon.\" Copper is a common electrical material but the passage never mentions it; it is a plausible-sounding contradiction that readers might guess for anything electrical. Aluminum is similarly never named; it is a swap with another common conductor used in real-world wiring. Carbon is mentioned nowhere; it is included as a plausible chemistry-sounding distractor because of its broad role in materials science. Only silicon appears in the topic sentence as the primary material making up photovoltaic cells, so it is the single supported answer.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-4",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "The Pony Express was a mail delivery service that operated from April 1860 to October 1861. It used a relay of riders on horseback to carry letters between St. Joseph, Missouri, and Sacramento, California. The route covered approximately 1,900 miles and was usually completed in about 10 days. Riders changed horses every 10 to 15 miles at stations along the route, and they changed riders every 75 to 100 miles. The service ended just two days after the transcontinental telegraph line was completed, making the slower mail relay obsolete. Despite its short life, the Pony Express became a lasting symbol of the American West.\n\nAccording to the passage, when did the Pony Express begin operating?",
+    "choices": ["October 1860", "April 1861", "April 1860", "October 1861"],
+    "correct_index": 2,
+    "explanation": "The opening sentence states the service \"operated from April 1860 to October 1861,\" identifying April 1860 as the start date. Choice October 1860 is a swap of the end-of-service month into the start year, a deliberately mixed pair. Choice April 1861 is a swap of the start month into the end year, the mirror image of the previous trap. Choice October 1861 is the date the service ended, not when it began, a correct-but-wrong-question trap. Only April 1860 matches the start date given explicitly in the topic sentence of the passage.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-5",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Coffee plants thrive in a narrow band of climates near the equator known as the bean belt. Brazil leads the world in coffee production, growing roughly one-third of the global supply. The two commercially important species are arabica and robusta. Arabica beans, prized for their smoother flavor, account for about 60 percent of world production but require cooler temperatures and higher elevations. Robusta plants tolerate heat and lower altitudes, and they contain nearly twice the caffeine of arabica. Most premium specialty coffees are arabica. Vietnam is the largest producer of robusta, while Colombia specializes almost entirely in arabica.\n\nAccording to the passage, which country is the largest producer of robusta coffee?",
+    "choices": ["Brazil", "Colombia", "Vietnam", "Ethiopia"],
+    "correct_index": 2,
+    "explanation": "Near the end the passage states, \"Vietnam is the largest producer of robusta.\" Brazil leads in overall coffee production at roughly one-third of global supply, not specifically robusta, so it is a correct-but-wrong-question trap that confuses overall leadership with category leadership. Colombia specializes almost entirely in arabica, the opposite species, making it a plausible swap of roles between the two named producers. Ethiopia is never mentioned and is included as a coffee-knowledge distractor since it is widely associated with coffee origins. Only Vietnam is explicitly tied to robusta leadership in the passage.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-6",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "The human skeleton contains 206 bones in adulthood, but newborns are born with about 270. The difference is explained by the fusion of bones during growth, especially in the skull and spine. The longest bone in the body is the femur, located in the thigh, while the smallest is the stapes, found in the middle ear and measuring only about three millimeters. Bones serve several functions, including supporting the body, protecting organs, producing blood cells inside the marrow, and storing minerals such as calcium. Roughly half of all bones in the adult skeleton are located in the hands and feet.\n\nAccording to the passage, what is the smallest bone in the human body?",
+    "choices": ["The femur", "The stapes", "A bone in the spine", "A bone in the hand"],
+    "correct_index": 1,
+    "explanation": "The middle of the passage states, \"the smallest is the stapes, found in the middle ear.\" The femur is named as the longest bone, not the smallest, making it a swap-of-roles trap. \"A bone in the spine\" plays on the fusion detail mentioned earlier but the passage never names any spine bone as smallest. \"A bone in the hand\" exploits the closing detail that half of all bones are in hands and feet, an over-generalization. Only the stapes is identified as smallest.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-7",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Workplace ergonomics is the science of designing tasks and tools to fit the worker rather than forcing the worker to adapt. A properly configured office workstation places the top of the monitor at eye level, with the screen about an arm's length away. Chairs should support the lower back, and feet should rest flat on the floor or on a footrest. The keyboard should be positioned so that the elbows form roughly a 90-degree angle. Studies by the Occupational Safety and Health Administration show that ergonomic improvements can reduce repetitive strain injuries by up to 60 percent. Frequent short breaks further reduce fatigue.\n\nAccording to the passage, where should the top of a computer monitor be positioned?",
+    "choices": ["At chin level", "At eye level", "Slightly above eye level", "An arm's length below eye level"],
+    "correct_index": 1,
+    "explanation": "The passage states, \"the top of the monitor at eye level, with the screen about an arm's length away.\" \"Chin level\" is a plausible-sounding contradiction not in the text. \"Slightly above eye level\" is the kind of detail readers may guess but the passage gives exactly \"at eye level,\" not above it. \"An arm's length below eye level\" mashes together two true details (an arm's length away, eye level) into a false position. Only \"at eye level\" matches the passage.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-8",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Hurricanes are tropical storms that form over warm ocean waters near the equator. To be classified as a hurricane, a storm must produce sustained winds of at least 74 miles per hour. Storms are ranked on the Saffir-Simpson scale, which assigns a category from 1 through 5 based on wind speed. A Category 1 hurricane has winds between 74 and 95 miles per hour, while a Category 5 has sustained winds above 157 miles per hour. The Atlantic hurricane season officially runs from June 1 through November 30, with peak activity typically occurring in mid-September. Hurricanes are called typhoons in the western Pacific.\n\nAccording to the passage, what is the minimum sustained wind speed for a storm to be classified as a hurricane?",
+    "choices": ["95 miles per hour", "157 miles per hour", "74 miles per hour", "60 miles per hour"],
+    "correct_index": 2,
+    "explanation": "The passage states a storm \"must produce sustained winds of at least 74 miles per hour\" to be classified as a hurricane. 95 mph is the upper bound of Category 1 on the Saffir-Simpson scale, a correct-but-wrong-question trap pulled from the middle of the passage. 157 mph is the threshold for Category 5, the most severe rating, and represents the opposite extreme of the scale rather than the minimum. 60 mph is a plausible-sounding wind speed for tropical storms but the passage never gives that figure. Only 74 mph matches the stated minimum hurricane classification threshold.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-9",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "The Apollo program landed twelve astronauts on the Moon between 1969 and 1972 across six successful missions. Apollo 11, in July 1969, made the first landing, with Neil Armstrong and Buzz Aldrin walking on the surface while Michael Collins remained in orbit. The final mission, Apollo 17, in December 1972, included geologist Harrison Schmitt, the only trained scientist to walk on the Moon. Apollo 13, in April 1970, was intended to land but suffered an oxygen tank explosion and looped around the Moon without landing. The Apollo astronauts collectively returned 842 pounds of lunar samples to Earth.\n\nAccording to the passage, who was the only trained scientist to walk on the Moon?",
+    "choices": ["Neil Armstrong", "Buzz Aldrin", "Michael Collins", "Harrison Schmitt"],
+    "correct_index": 3,
+    "explanation": "The passage states, \"Apollo 17, in December 1972, included geologist Harrison Schmitt, the only trained scientist to walk on the Moon.\" Armstrong and Aldrin are named as the first to walk on the Moon during Apollo 11, but neither is described as a trained scientist. Collins is named as the Apollo 11 astronaut who remained in orbit and never walked on the surface at all. Among four named astronauts, only Schmitt is explicitly identified as the trained scientist.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-10",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Vaccines work by training the immune system to recognize specific pathogens without causing the disease itself. Live attenuated vaccines, such as the one for measles, use a weakened form of the virus. Inactivated vaccines, like the standard flu shot, use a killed version of the pathogen. Subunit vaccines, such as the one for hepatitis B, contain only specific pieces of the pathogen rather than the whole microbe. mRNA vaccines, used against COVID-19, give cells instructions to produce a harmless piece of the virus to trigger an immune response. Each approach has trade-offs in storage requirements, manufacturing speed, and how long protection lasts.\n\nAccording to the passage, which type of vaccine is the standard flu shot?",
+    "choices": ["Live attenuated", "Inactivated", "Subunit", "mRNA"],
+    "correct_index": 1,
+    "explanation": "The passage states, \"Inactivated vaccines, like the standard flu shot, use a killed version of the pathogen.\" Live attenuated is the category given for the measles vaccine, a correct-but-wrong-question trap among the four types listed. Subunit is the category for hepatitis B, not the flu shot. mRNA is the technology used against COVID-19. Each wrong choice is a real vaccine category from the passage but is tied there to a different disease, not to the flu shot.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-11",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Plate tectonics describes how Earth's outer shell is divided into roughly a dozen large pieces called plates that move slowly over the planet's mantle. The plates interact in three main ways. At convergent boundaries, plates collide, sometimes pushing one plate beneath the other in a process called subduction. The Andes Mountains formed this way. At divergent boundaries, plates pull apart, allowing magma to rise and create new crust, as in the Mid-Atlantic Ridge. At transform boundaries, plates slide past each other horizontally, generating frequent earthquakes; California's San Andreas Fault is the best-known example. Average plate movement is about two to four inches per year.\n\nAccording to the passage, the Andes Mountains formed at what type of plate boundary?",
+    "choices": ["Divergent", "Transform", "Convergent", "Subduction"],
+    "correct_index": 2,
+    "explanation": "The passage states, \"At convergent boundaries, plates collide... The Andes Mountains formed this way.\" Divergent boundaries are tied to the Mid-Atlantic Ridge, not the Andes. Transform boundaries are tied to the San Andreas Fault and frequent earthquakes, not mountain building. \"Subduction\" is mentioned in the passage as a process that can occur at convergent boundaries, but it is not itself a type of boundary; it is an over-generalization of a sub-detail. Only convergent matches the boundary type for the Andes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-12",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "OSHA reporting rules require employers to record any work-related injury that meets specific criteria. A case must be logged if it results in death, days away from work, restricted work activity, transfer to another job, loss of consciousness, or a significant injury diagnosed by a licensed health-care professional. Minor cuts treated with a bandage and standard first aid do not have to be recorded. Employers must also report serious incidents directly to OSHA within set time limits: any fatality within 8 hours and any inpatient hospitalization, amputation, or loss of an eye within 24 hours. Records must be retained for five years.\n\nAccording to the passage, within how many hours must an employer report a work-related fatality to OSHA?",
+    "choices": ["24 hours", "8 hours", "5 hours", "48 hours"],
+    "correct_index": 1,
+    "explanation": "The passage states, \"any fatality within 8 hours and any inpatient hospitalization, amputation, or loss of an eye within 24 hours.\" 24 hours is the deadline for hospitalizations, amputations, and eye loss, a correct-but-wrong-question trap that swaps the two reporting windows. 5 hours echoes the \"five years\" retention period reshaped from years into hours; no such 5-hour rule exists in the passage. 48 hours is a plausible-sounding compliance window often associated with regulatory deadlines but is never mentioned in this text. Only 8 hours matches the fatality-reporting deadline stated explicitly.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-13",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 4,
+    "stem": "The Great Barrier Reef, located off the northeastern coast of Australia, is the largest coral reef system in the world. It stretches more than 1,400 miles and is composed of nearly 3,000 individual reefs and 900 islands. The reef supports over 1,500 species of fish, 400 species of coral, and 4,000 types of mollusks. It is visible from space and was declared a UNESCO World Heritage Site in 1981. Climate change, agricultural runoff, and crown-of-thorns starfish are the main threats to its survival. Mass coral bleaching events occurred in 2016, 2017, 2020, and 2022.\n\nWhich of the following is NOT mentioned in the passage as a threat to the Great Barrier Reef?",
+    "choices": ["Climate change", "Agricultural runoff", "Crown-of-thorns starfish", "Commercial fishing"],
+    "correct_index": 3,
+    "explanation": "The passage lists \"Climate change, agricultural runoff, and crown-of-thorns starfish\" as the main threats to the reef. Climate change is explicitly named as a main threat, so it does appear. Agricultural runoff is explicitly named in the same sentence and likewise appears. Crown-of-thorns starfish is explicitly named alongside the other two, also appearing in the text. Commercial fishing sounds like a plausible reef threat that readers may guess from outside knowledge, but it never appears in this passage, making it the only option not mentioned and therefore the correct answer to a NOT-mentioned question.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-14",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 4,
+    "stem": "A standard home electrical panel in the United States distributes 240-volt service through a series of circuit breakers. Most lighting and outlet circuits operate on 15-amp or 20-amp breakers at 120 volts. Larger appliances draw 240 volts: electric dryers typically use 30-amp breakers, electric ranges use 40-amp or 50-amp breakers, and central air-conditioning condensers use 30-amp or 40-amp breakers. Each breaker is designed to trip when current exceeds its rating, preventing wires from overheating. Modern code also requires ground-fault circuit interrupters in bathrooms, kitchens, garages, and outdoor outlets, and arc-fault interrupters in bedrooms.\n\nWhich of the following appliances is NOT mentioned in the passage?",
+    "choices": ["Electric dryer", "Electric range", "Central air-conditioning condenser", "Electric water heater"],
+    "correct_index": 3,
+    "explanation": "The passage names three specific appliances drawing 240 volts: \"electric dryers typically use 30-amp breakers, electric ranges use 40-amp or 50-amp breakers, and central air-conditioning condensers use 30-amp or 40-amp breakers.\" Electric dryer is mentioned by name with its breaker rating. Electric range is mentioned with its breaker rating. Central air-conditioning condenser is mentioned with its breaker rating. Electric water heaters are a real 240-volt appliance and sound plausible to a reader bringing outside knowledge, but they never appear in this passage, making them the only choice not mentioned in the text.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-15",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 4,
+    "stem": "A balanced diet recommended by the U.S. Dietary Guidelines includes five food groups: fruits, vegetables, grains, protein foods, and dairy. Fruits and vegetables should fill roughly half of each plate. At least half of grain servings should be whole grains rather than refined grains. Protein foods include lean meats, poultry, eggs, seafood, beans, peas, nuts, and soy products. Dairy options include milk, yogurt, cheese, and fortified soy beverages. The guidelines also recommend limiting added sugars to less than 10 percent of daily calories, saturated fats to less than 10 percent of daily calories, and sodium to less than 2,300 milligrams per day.\n\nWhich of the following is NOT listed in the passage as one of the five food groups?",
+    "choices": ["Vegetables", "Grains", "Fats", "Dairy"],
+    "correct_index": 2,
+    "explanation": "The passage names \"fruits, vegetables, grains, protein foods, and dairy\" as the five food groups in the U.S. Dietary Guidelines. Vegetables is explicitly named in that list. Grains is explicitly named in that list. Dairy is explicitly named in that list. Fats are discussed only as something to limit, with saturated fats specifically capped at less than 10 percent of daily calories, and they are never listed as a food group. Fats is therefore the only option not in the five-group list, making it the correct answer to the NOT-listed question.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-16",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 5,
+    "stem": "A small business tracks its monthly utility bills to budget for the year. In January, electricity costs were $420 and natural gas was $310. By July, electricity had risen to $680 due to air-conditioning demand, while natural gas had fallen to $90. Water charges remained steady at about $75 per month throughout the year. Internet and phone service together cost $185 per month on a flat plan. The owner noticed that combined utility expenses in July exceeded combined utility expenses in January, even though heating costs had dropped substantially during the warmer months.\n\nBased on the passage, by approximately how much did the company's combined utility bill increase from January to July?",
+    "choices": ["$30", "$220", "$260", "$170"],
+    "correct_index": 0,
+    "explanation": "January totals: $420 + $310 + $75 + $185 = $990. July totals: $680 + $90 + $75 + $185 = $1,030. The increase is $1,030 minus $990, which equals $40, closest to $30 among the choices. $260 reflects only the electricity rise ($680 minus $420). $220 over-counts by mixing electricity and gas changes in one direction. $170 conflates partial swings. Only $30 approximates the true net change once gas savings offset most of the electricity increase.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-17",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 5,
+    "stem": "A regional hospital reports its emergency department traffic each quarter. In the first quarter, the department treated 4,200 patients, with an average wait time of 38 minutes. In the second quarter, patient volume rose to 5,100 and average wait time stretched to 52 minutes. The third quarter saw 5,400 patients with a wait time of 49 minutes after two additional triage nurses were hired in late June. In the fourth quarter, holiday-related cases pushed volume to 5,800, but wait times held at 50 minutes thanks to the staffing change. Administrators consider any quarter with average wait under 45 minutes a success.\n\nBased on the passage, how many quarters met the administrators' success criterion?",
+    "choices": ["Zero", "One", "Two", "Three"],
+    "correct_index": 1,
+    "explanation": "Success requires average wait under 45 minutes. Q1 wait is 38 minutes, which meets the criterion. Q2 is 52 minutes, which fails. Q3 is 49 minutes, which still fails despite improvement after the triage hires. Q4 is 50 minutes, which also fails. Only one quarter meets the standard. \"Zero\" overlooks Q1, the lowest wait time in the year. \"Two\" likely arises from mistakenly treating Q3's near-45 figure as passing the threshold. \"Three\" assumes most quarters succeeded, the opposite of what the recorded numbers actually show.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-18",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 5,
+    "stem": "A community library tracks book checkouts by category. Fiction accounts for about 45 percent of all checkouts, biography for 15 percent, science and technology for 12 percent, children's books for 20 percent, and reference for the remainder. In the most recent year, the library logged 60,000 total checkouts. Staff have noticed that biography circulation has roughly doubled since a popular streaming documentary series launched two years ago. The library plans to expand its biography collection if the category exceeds 10,000 annual checkouts in the coming year.\n\nBased on the passage, approximately how many biography checkouts did the library record in the most recent year?",
+    "choices": ["6,000", "9,000", "12,000", "10,000"],
+    "correct_index": 1,
+    "explanation": "Biography is stated as 15 percent of 60,000 total checkouts. Computing 15 percent of 60,000 gives 9,000 biography checkouts in the most recent year. 6,000 corresponds to 10 percent and would match the lower-end share but contradicts the stated 15 percent figure for biography. 12,000 corresponds to 20 percent, which is the figure given for children's books, a correct-but-wrong-question swap between two categories. 10,000 is the trigger number for collection expansion in the coming year, not the current biography total. Only 9,000 is consistent with the stated 15 percent share.",
+    "status": "draft"
+  }
+]

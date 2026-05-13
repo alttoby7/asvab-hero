@@ -1,0 +1,57 @@
+[
+  {
+    "external_key": "WK-SN-NEW-1",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "CANDID most nearly means:",
+    "choices": ["frank", "cautious", "candied", "polite"],
+    "correct_index": 0,
+    "explanation": "Candid means honest and straightforward in expression, as in a candid review that holds nothing back. Frank carries the same sense of open, unguarded speech. Cautious is the antonym trap: a cautious speaker filters and hedges, the opposite of candid. Candied is a sound-alike that means coated in sugar and has no relation to honesty. Polite is a register-confusion distractor; candid speakers may be polite or blunt, but politeness describes manners rather than openness.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-SN-NEW-2",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "INNOCUOUS most nearly means:",
+    "choices": ["harmless", "innocent", "ignorant", "harmful"],
+    "correct_index": 0,
+    "explanation": "Innocuous means producing no injury or offense, as in an innocuous comment that no one took badly. Harmless is a direct match. Innocent is a sound-alike and partial-overlap trap; it refers to lack of guilt or moral fault, not lack of harmful effect. Ignorant is another sound-alike pulled by the prefix in, but it means lacking knowledge. Harmful is the antonym, naming the exact quality innocuous denies.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-SN-NEW-3",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "IMMINENT most nearly means:",
+    "choices": ["impending", "eminent", "immense", "distant"],
+    "correct_index": 0,
+    "explanation": "Imminent means about to occur, as in an imminent storm that forces the crew indoors within minutes. Impending shares the meaning of a near, unavoidable arrival. Eminent is the classic sound-alike trap; it means distinguished or prominent in reputation and has nothing to do with timing. Immense is another sound-alike that describes great size, not closeness in time. Distant is the antonym, placing the event far from the present.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-SN-NEW-4",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "AMICABLE most nearly means:",
+    "choices": ["friendly", "talkative", "hostile", "amicus"],
+    "correct_index": 0,
+    "explanation": "Amicable means marked by goodwill, as in an amicable settlement that leaves both parties on decent terms. Friendly captures that cooperative warmth. Talkative is a register-confusion distractor; an amicable person may speak little, since the word describes disposition rather than volume of speech. Hostile is the antonym, naming the antagonism amicable resolves. Amicus is a Latin sound-alike root meaning friend, but as a standalone English word it does not mean friendly the way amicable does.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-SN-NEW-5",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "DESPONDENT most nearly means:",
+    "choices": ["dejected", "responsive", "dependent", "elated"],
+    "correct_index": 0,
+    "explanation": "Despondent means cast down in spirits to the point of losing hope, as in a despondent candidate who stops returning calls after the rejection. Dejected matches that low, defeated mood. Responsive is a sound-alike pulled from the spond root meaning to answer or pledge, but it describes reactivity, not sorrow. Dependent is another sound-alike that means relying on others, with no emotional content. Elated is the antonym, naming the high spirits despondency lacks.",
+    "status": "draft"
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "external_key": "AS-1",
+    "new_explanation": "A socket wrench accepts extensions and universal joints, letting you reach a bolt buried inside a recess where a straight-handled tool cannot sit square on the head. An open-end wrench needs side clearance to slide onto the flats and room to swing, which a recessed bolt does not give you. Adjustable pliers grip by squeezing the head and will round off the corners under any real torque. A torque screwdriver is for screw heads with a driver bit and is meant for measuring torque on small fasteners, not for reaching into deep cavities."
+  },
+  {
+    "external_key": "AS-2",
+    "new_explanation": "The radiator is a heat exchanger. Hot coolant pumped from the engine flows through narrow tubes and fins, and air moving across those fins carries the heat away before the coolant returns to the block. Filtering oil is the oil filter's job in the lubrication system, which is a separate circuit from the cooling system. Fuel mixture is metered by the injectors or carburetor, not by the cooling components. Exhaust emissions are cleaned by the catalytic converter downstream of the engine, again a different system entirely."
+  },
+  {
+    "external_key": "AS-3",
+    "new_explanation": "Eye protection goes on before anything else because flying chips, sawdust, and a thrown blade tooth can reach your face the instant the saw spins up. Testing the blade on scrap and checking for a sharp blade are reasonable steps later in the sequence, but they expose your eyes to hazards if you do them with no PPE on. Letting a corded saw \"warm up\" plugged in is not a real practice and leaves a live tool unattended. The rule is gear up first, then handle the tool."
+  },
+  {
+    "external_key": "AS-4",
+    "new_explanation": "While the engine runs, a belt off the crankshaft spins the alternator, which generates electricity to recharge the battery and run the lights, ignition, fans, and accessories. Cranking the engine is the starter motor's job, and it only operates for the few seconds it takes to fire the engine. Fuel injection timing is controlled by the engine control module reading crank and cam sensors. Coolant temperature is regulated by the thermostat and the cooling fan, not by anything in the charging system."
+  },
+  {
+    "external_key": "AS-5",
+    "new_explanation": "A Phillips screwdriver has a cross-shaped tip that seats into the X-pattern recess on a Phillips screw head, giving four points of drive contact and resisting slip better than a flat blade. A flathead (slotted) screwdriver fits a single straight slot and will cam right out of a Phillips head. A Torx driver has a six-pointed star tip for Torx screws found on automotive trim and electronics. A hex driver, sometimes called an Allen key, fits the six-sided socket of a hex-head screw. Each tip belongs to its own screw family."
+  },
+  {
+    "external_key": "AS-6",
+    "new_explanation": "Manufacturers publish oil change intervals based on engineering tests of the oil, filter, and engine, and they express the interval as miles or months, whichever comes first. Waiting for the oil pressure warning light means the engine is already starving for lubrication and damage is happening. Changing oil at every fuel fill-up is wasteful and unnecessary. A flat once-a-year rule ignores how much the car was actually driven, so a high-mileage driver would run far past the safe interval. Following the owner's manual schedule is the practical standard."
+  },
+  {
+    "external_key": "AS-7",
+    "new_explanation": "The timing belt or chain ties the crankshaft to the camshaft so the valves open and close in step with piston position, which is what makes the four-stroke cycle work. Transferring transmission output to the wheels is the driveshaft and axles, not anything inside the engine. Connecting the steering wheel to the front wheels is the steering linkage. Fuel pressure is controlled by the fuel pump and pressure regulator in the fuel system. All three wrong answers swap timing components for parts in completely separate vehicle systems."
+  },
+  {
+    "external_key": "AS-8",
+    "new_explanation": "An outside micrometer is built specifically to measure outside diameters, with a calibrated thimble that reads to a thousandth of an inch as the spindle closes on the workpiece. A tape measure resolves to about a sixteenth of an inch, which is nowhere near precision work on a metal rod. An inside caliper measures the inside of a bore or hole, the opposite kind of measurement. A combination square is a layout tool for checking right angles and marking lines, not a diameter gauge. Match the tool family to whether you are measuring outside, inside, or laying out."
+  },
+  {
+    "external_key": "AS-9",
+    "new_explanation": "Welding works by passing electrical current through an arc between the electrode and the workpiece, melting metal so it fuses. The ground clamp closes that circuit by giving the current a path back to the welder. Without it, no arc strikes. Warping comes from heat input and joint design, not from the clamp. Cooling happens by conduction into the parent metal and ambient air after the arc stops. Travel direction is something the welder controls by hand. The clamp is purely an electrical connection."
+  },
+  {
+    "external_key": "AS-MNT-1",
+    "new_explanation": "Engine oil picks up combustion soot, metal wear particles, and acidic byproducts as it circulates, and its additive package wears out over time. Draining and refilling at the recommended interval removes that contamination and restores fresh detergents and viscosity improvers so bearings and rings stay protected. Fuel octane is a property of the gasoline itself, set at the refinery, and no oil change can change it. Cooling transmission fluid is the job of the transmission cooler or radiator side tank. Tire pressure is set by air volume in the tire, completely unrelated to engine oil."
+  },
+  {
+    "external_key": "AS-MNT-3",
+    "new_explanation": "On most cars, especially front-wheel-drive, the front tires carry more weight from the engine and transaxle and also handle every steering input, so they wear noticeably faster than the rears. Moving tires to new positions on a schedule evens out that wear and stretches the useful life of the full set. The TPMS reset is a separate maintenance step done with a scan tool or by drive cycle, not by rotating. Flat-spotting comes from prolonged parking with hot tires, not from rotation patterns. Octane combustion has nothing to do with tires."
+  },
+  {
+    "external_key": "AS-MNT-6",
+    "new_explanation": "Brake pads have friction material bonded to a steel backing plate. When the friction material wears down past its service limit, the bare steel rubs against the cast-iron rotor and produces a coarse grinding noise every time you brake. An alternator failure shows up as a dead battery or warning light, not as a sound tied to the brake pedal. Loose lug nuts make a clunk or vibration that is present whether or not you are braking. Low power steering fluid causes whining when you turn the wheel, again unrelated to the brakes. The brake-only timing is the key clue."
+  },
+  {
+    "external_key": "AS-MNT-D2-1",
+    "new_explanation": "Coolant is the working fluid that absorbs heat at the cylinder head and block and carries it out to the radiator. If the level falls too low, less fluid is available to soak up the heat, temperatures climb, and you can warp a head, blow a head gasket, or crack the block. Low coolant does not improve fuel economy, and an overheating engine usually hurts economy by running rich. Transmission shift points come from the transmission control module, not the cooling system. Oil viscosity is determined by the oil grade itself."
+  },
+  {
+    "external_key": "AS-HT-B6-1",
+    "new_explanation": "An adjustable wrench, often called a crescent wrench, has a thumbwheel that slides one jaw in and out so a single tool fits a range of hex nuts and bolts. Needle-nose pliers are for gripping small wires and parts in tight spots and will round the corners of any fastener you try to drive with them. A cold chisel is a striking tool for cutting metal, not for fasteners. A ball-peen hammer is used to shape metal and strike punches. Only the adjustable wrench is designed to set its opening to a fastener size."
+  },
+  {
+    "external_key": "AS-HT-B6-2",
+    "new_explanation": "A pipe wrench has hardened, toothed jaws set at an angle so that pulling on the handle drives the teeth deeper into the round pipe, locking the grip tighter the harder you pull. Slip-joint pliers can hold a pipe but the jaws will rotate around the work under any real torque. A box-end wrench is shaped to wrap a six- or twelve-point hex fastener and will not grip a smooth cylinder at all. An offset screwdriver is for turning screws in cramped spots. Only the pipe wrench is built for round stock."
+  },
+  {
+    "external_key": "AS-HT-B6-3",
+    "new_explanation": "A torque wrench has a calibrated mechanism that signals or limits at a preset value, letting you tighten a fastener to the exact specification a manufacturer calls out for head bolts, lug nuts, or connecting rods. Reaching deep recesses is what a socket extension solves, not a torque wrench. A stripped fastener head needs an extractor or vise grips, not torque measurement. Tight-space ratcheting is offered by any ratchet handle, including non-torque ones. The defining feature is the calibrated measurement, not the reach or the ratcheting."
+  },
+  {
+    "external_key": "AS-HT-B6-4",
+    "new_explanation": "A center punch is struck with a hammer to dimple the metal at the spot where a hole will be drilled, and that dimple cups the drill point so the bit starts where you intended instead of wandering across the surface. Scribing a straight line is the job of a scriber or a square. Removing burrs from a drilled hole is what a deburring tool or countersink does. Cutting a hole in sheet metal without a drill calls for a hole punch or knockout, not a center punch. Center punches mark, they do not cut or scribe."
+  },
+  {
+    "external_key": "AS-HT-B6-5",
+    "new_explanation": "A standard high-speed steel twist bit with a 118-degree tip is the everyday bit for drilling steel, aluminum, and brass, and it is what comes in a typical mechanic's index. Concrete and masonry require a carbide-tipped masonry bit driven by a hammer drill, because HSS cannot cut stone. Glass and ceramic tile need a spear-point or diamond bit and very slow speed to avoid cracking. Wood-only large-diameter holes are the territory of spade bits, Forstner bits, or hole saws. The 118-degree point geometry is the giveaway for general metal work."
+  },
+  {
+    "external_key": "AS-HT-B6-6",
+    "new_explanation": "Locking pliers, often called Vise-Grips, use an over-center toggle linkage that snaps the jaws shut and holds them there without any hand pressure, freeing both of your hands and applying steady clamping force. Slip-joint pliers and channel locks need a constant squeeze to hold anything. The pliers are not limited to hex fasteners and can grip almost any shape. Wire cutting is a feature of dedicated cutters or a small notch on some pliers, not the defining feature here. They do not auto-adjust to fastener size; the user sets the jaw with a thumbscrew."
+  },
+  {
+    "external_key": "AS-HT-B6-12",
+    "new_explanation": "A star or criss-cross pattern pulls the cylinder head down against the gasket from the center outward in stepped increments, so clamping load builds evenly across every bolt and the gasket compresses uniformly. Tightening end-to-end pulls one side down first, which can warp the head or pinch the gasket and leak. Finishing faster is not the point of the sequence. Head bolts are not left-hand threaded on alternating positions. Retorquing after warm-up is required on some older engines but is a separate step, not the reason for the pattern itself."
+  },
+  {
+    "external_key": "AS-VS-B6-1",
+    "new_explanation": "On the intake stroke, the piston travels down the cylinder while the intake valve is open, and the resulting vacuum pulls the air-fuel charge into the combustion chamber. The compression stroke comes next, with both valves closed and the piston moving up to squeeze that charge. The power stroke is when the spark fires and the burning mixture drives the piston back down. The exhaust stroke is the piston moving up with the exhaust valve open to push spent gases out. The order is intake, compression, power, exhaust."
+  },
+  {
+    "external_key": "AS-VS-B6-2",
+    "new_explanation": "Pressing the clutch pedal pulls the pressure plate away from the friction disc, breaking the link between the engine flywheel and the transmission input shaft so you can move the gear lever without grinding gears against engine speed. Engine idle speed is held by the idle air control or throttle body, not by the clutch. Alternator output is rectified by diodes inside the alternator itself, never by the drivetrain. Coolant flow is gated by the thermostat. Each wrong answer points at a different system unrelated to torque interruption."
+  },
+  {
+    "external_key": "AS-VS-B6-3",
+    "new_explanation": "When a car rounds a corner, the outer drive wheel travels a longer arc than the inner wheel and has to spin faster, and the differential's bevel gears let the two axles turn at different rates while still splitting engine torque between them. Filtering fuel is the fuel filter's job. Regulating charging voltage is done by the voltage regulator inside the alternator. Compressing refrigerant is the air-conditioning compressor's role. The differential lives in the drive axle, not in the fuel, charging, or HVAC systems."
+  },
+  {
+    "external_key": "AS-VS-B6-4",
+    "new_explanation": "Once the engine is running, the alternator is belt-driven off the crankshaft and produces the current that recharges the battery and runs every electrical load on the car. The starter motor only spins while the key is in the start position to crank the engine over; after that it disengages. The distributor, on engines that have one, routes spark to plugs and does not generate current. The voltage regulator alone controls how much output the alternator makes, but it does not produce current by itself. The alternator is the generator in this system."
+  },
+  {
+    "external_key": "AS-VS-B6-5",
+    "new_explanation": "The master cylinder is a hydraulic pump tied directly to the brake pedal pushrod. When you press the pedal, a piston inside pushes brake fluid through the steel lines, and that pressure pushes the caliper pistons out against the pads. The brake booster only multiplies the foot force you put into the pedal using engine vacuum; it does not generate hydraulic pressure on its own. The proportioning valve balances front-to-rear pressure, downstream of the master cylinder. The ABS modulator pulses the brakes during a skid but does not create the base pressure."
+  },
+  {
+    "external_key": "AS-VS-B6-6",
+    "new_explanation": "Engine oil pressure is what keeps a film of oil between the crankshaft and the bearing surfaces. If pressure drops to near zero, the bearings run dry and metal-on-metal contact spins or seizes them in seconds. Shutting the engine off immediately is the only way to save the engine. Driving on to the next station finishes the damage. Adding oil to a running engine is dangerous near hot moving parts and may not even solve the problem if the issue is the pump or a leak. Revving makes the wear faster, not slower."
+  },
+  {
+    "external_key": "AS-VS-B6-7",
+    "new_explanation": "A torque converter is a sealed fluid coupling. Engine torque spins a pump impeller that throws transmission fluid against a turbine connected to the transmission input shaft, and a stator in the middle redirects fluid flow to multiply torque at low speeds. It does not lock the engine to the transmission solidly except when an internal lockup clutch engages at cruise. Centrifugal governors selected shift points on old automatics but do not transfer torque. The differential is a separate gearset farther down the drivetrain. The torque converter replaces the clutch with fluid, not gears."
+  },
+  {
+    "external_key": "AS-VS-B6-9",
+    "new_explanation": "The oxygen sensor reads how much unburned oxygen is left in the exhaust, which tells the ECM whether the mixture entering the cylinders was rich or lean. The ECM then trims injector pulse width up or down on the next cycle to hold the air-fuel ratio near 14.7 to 1 for catalyst efficiency. Knock-based timing advance comes from the knock sensor, not the O2 sensor. Alternator voltage is governed by the voltage regulator. Cooling fan speed is driven by coolant temperature sensor input. Each wrong answer pairs a different sensor with its own control loop."
+  },
+  {
+    "external_key": "AS-VS-B6-10",
+    "new_explanation": "A constant-velocity joint lets a front drive axle send power through the steering angle as the wheel turns and the suspension moves. When the rubber boot tears, grease escapes, dirt gets in, and the joint's internal balls and races wear, producing a sharp clicking that is loudest on tight, slow turns and quiet when going straight. Low power steering fluid causes a whining or moaning during steering effort, not a click. A cracked brake rotor produces a pulse or grind under braking, not on turns. A loose heat shield rattles with engine RPM, regardless of steering input."
+  },
+  {
+    "external_key": "AS-VS-B6-12",
+    "new_explanation": "Detonation, also called spark knock or ping, happens when cylinder pressure and heat are high enough that part of the air-fuel charge ignites on its own before the spark plug fires, slamming a shock wave into the piston. Heavy load is exactly when pressure and temperature peak, which is why the knock fades at idle. Common causes are gasoline with octane below what the engine needs, carbon deposits glowing hot in the chamber, or timing advanced too far. A cracked flywheel makes a noise tied to RPM, not load. A broken motor mount thumps on shifts. An intake leak shows up as a lean miss and rough idle, the opposite load pattern."
+  },
+  {
+    "external_key": "AS-SS-B6-1",
+    "new_explanation": "Gasoline and most solvent vapors are denser than air, so they pool at floor level in a closed shop and can build up to a concentration that ignites from a spark, a pilot light, or a piece of running equipment. Moving air through the space keeps the concentration below the lower explosive limit. Tool operating temperature is not driven by shop ventilation. Paint drying is a side benefit on some jobs but not the safety reason for the rule. Rust prevention is about humidity control, which is a different problem with a different solution. Ventilation is fundamentally about explosion and fire prevention."
+  },
+  {
+    "external_key": "AS-SS-B6-2",
+    "new_explanation": "Class B fires involve flammable liquids like gasoline, oil, and solvents, and the right answer is a CO2 or dry chemical extinguisher rated for Class B. CO2 smothers the fire by displacing oxygen, and dry chemical interrupts the chemical chain reaction. Water spreads burning liquid because the fuel floats on top of the water and rides the splash. A Class A only extinguisher, designed for wood and paper, will not safely handle a fuel fire. Grabbing any extinguisher regardless of rating risks making the situation worse. Match the extinguisher class to the fuel class."
+  },
+  {
+    "external_key": "AS-SS-B6-3",
+    "new_explanation": "Lockout/tagout puts a physical lock on the energy isolation point, a breaker, valve, or disconnect, so the equipment cannot be powered up while a worker has hands or body inside it. The lock and tag stay there until the worker who applied them removes them. Documenting maintenance is a paperwork goal, not a safety control. Notifying supervisors is communication, not energy isolation. Returning tools to storage is housekeeping. Only physical lockout actually prevents the startup that injures or kills the technician."
+  },
+  {
+    "external_key": "AS-SS-B6-4",
+    "new_explanation": "An oil puddle is a slip hazard the instant it hits the floor, so the safest move is to spread oil-absorbent material or sawdust, sweep it up, and dispose of it properly right away. Marking the spill with a cone and waiting until end of shift leaves a fall hazard live for hours. Wiping with a rag and tossing it in an open trash can risks spontaneous combustion as the oil oxidizes inside a pile of paper trash. Pouring water spreads the oil and does not remove it, and the floor stays slick. Immediate absorbent cleanup is the standard."
+  },
+  {
+    "external_key": "AS-SS-B6-5",
+    "new_explanation": "Grinding throws hot sparks, sharp metal fragments, and abrasive grit, and the wheel screams loud enough to damage hearing on a long job, so the worker needs a face shield over safety glasses for the face, leather gloves for hot edges, and hearing protection for the noise. Latex exam gloves and a paper dust mask offer no impact, heat, or noise protection. Safety glasses alone leave the rest of the face exposed to flying debris and slag. Chemical-splash goggles and a rubber apron are dressed for solvent or acid work, not for incandescent sparks that would burn through rubber."
+  },
+  {
+    "external_key": "AS-SS-B6-6",
+    "new_explanation": "A hydraulic floor jack lifts the vehicle, but a seal can leak or a valve can release, and the jack can drop. Jack stands are rigid steel supports that mechanically hold the load while you work, so you place them under the frame rails or pinch welds before crawling under. Removing the wheels does not address the falling-vehicle hazard. The parking brake on its own, with the jack as sole support, ignores the failure mode that kills people. Warming up the oil is unrelated to whether the car is safely supported. Always pair the jack with stands before going underneath."
+  },
+  {
+    "external_key": "AS-SS-B6-7",
+    "new_explanation": "Oils and many solvents react slowly with oxygen and give off heat, and rags piled together insulate that heat until they reach the ignition point on their own, a process called spontaneous combustion. A sealed metal can starves any fire of oxygen and contains the heat away from the rest of the shop. Cardboard burns through in minutes once a fire starts inside it. Plastic bins soften and melt and do not contain a fire at all. An open drum lets vapors escape into the air and feeds any spark that finds them. Metal, sealed, and approved is the standard."
+  },
+  {
+    "external_key": "AS-SS-B6-9",
+    "new_explanation": "Class C fires involve energized electrical equipment such as panels, motors, or wiring, and the rule is to use a non-conductive extinguisher like CO2 or dry chemical so you do not get shocked through the stream. Class A is ordinary combustibles like wood, paper, and cloth. Class B is flammable liquids such as gasoline, oil, and solvents. Class D is combustible metals like magnesium and sodium. Memorizing the letter-to-fuel mapping is the only way to choose the right extinguisher quickly under stress."
+  },
+  {
+    "external_key": "AS-SS-B6-10",
+    "new_explanation": "A tank or other confined space can hold an oxygen-deficient atmosphere, leftover toxic vapors, or flammable residues, and you cannot see or smell most of those hazards. A calibrated four-gas meter has to test oxygen, combustibles, and toxic gases before anyone goes in. Entering quickly to beat the buildup ignores that the hazardous atmosphere may already be there. A lit lamp inside an unknown atmosphere is an ignition source. Sealing ventilation makes the atmosphere worse, not safer. Test, ventilate, and only then enter, with a permit."
+  },
+  {
+    "external_key": "AS-SS-B6-11",
+    "new_explanation": "IDLH is the concentration at which a worker who loses respiratory protection has roughly thirty minutes to get out before symptoms keep them from escaping or before irreversible health damage sets in. It is an emergency-planning value used to pick respirator type for entry or rescue work. The permissible exposure limit, PEL, is the much lower routine-exposure ceiling for an eight-hour shift, so the safe-shift answer is wrong. IDLH says nothing directly about flammability, which is set by the lower explosive limit. The monthly-monitoring rule is invented; OSHA monitoring frequency depends on the specific substance."
+  },
+  {
+    "external_key": "AS-SS-B6-12",
+    "new_explanation": "Machine guards keep hands and clothing out of rotating gears, belts, and pinch points, and they are a primary engineering control required before the machine runs. The right move is to stop, report the missing guard, and refuse to operate until it is replaced. Running it briefly without the guard exposes the worker for exactly the time the hazard is loose. Holding the guard by hand puts the holding hand inside the danger zone. Cardboard taped over the opening is not a guard, will not stop a rotating part, and can be pulled in. The line is clear: no guard, no operation."
+  },
+  {
+    "external_key": "AS-MR-B6-1",
+    "new_explanation": "On a modern engine the overflow reservoir is where you check and add coolant when the engine is cold, and the right top-up is the manufacturer-specified antifreeze and water mix, typically a 50/50 blend, to keep both freeze and boil protection intact. Draining and replacing all the coolant is a full service, not a level correction. Adding straight water dilutes the antifreeze and weakens corrosion inhibitors. The radiator cap is not a service point for level on systems built around a reservoir, and opening a hot cap is a burn risk anyway. Add the correct mix, to the correct mark, when cold."
+  },
+  {
+    "external_key": "AS-MR-B6-2",
+    "new_explanation": "A low oil pressure warning at idle can mean the level is genuinely low, the pump or bearings are failing, or the sensor itself is bad, and you cannot tell which one without stopping. Shutting the engine off protects the bearings from oil starvation, then a dipstick check shows whether oil is needed before restart. Revving the engine pushes more oil only at the cost of more wear if pressure really is gone. Driving on because the light might be faulty is exactly the gamble that destroys engines. Transmission fluid is not engine oil and will damage seals and clutches that do not belong in an engine."
+  },
+  {
+    "external_key": "AS-MR-B6-3",
+    "new_explanation": "Brake fluid is hygroscopic, meaning it pulls moisture out of the air over time, and that water lowers the boiling point and corrodes calipers, lines, and the master cylinder from the inside. Dark brown fluid is contaminated and needs to be flushed completely from each wheel and refilled with fresh fluid matching the vehicle's DOT specification. Topping off only mixes new fluid with bad and leaves the contamination in place. Brake fluid conditioners are not a recognized service for this and cannot undo moisture absorption. The claim that dark fluid is normal and effective is simply wrong; brake fluid should be light amber."
+  },
+  {
+    "external_key": "AS-MR-B6-7",
+    "new_explanation": "A wet, oily, black coating on the plug means liquid oil is reaching the combustion chamber, either past worn piston rings from below or past failed valve stem seals from above, and it is being burned along with the fuel. A lean mixture, with too little fuel, leaves a chalky white or very light gray deposit because there is no extra fuel to leave soot. Excessively advanced ignition timing produces detonation symptoms and may erode the electrode, not coat it with oil. A coolant leak into the cylinder bakes onto the plug as a hard white crust, sometimes with a sweet smell, not a wet black film."
+  }
+]

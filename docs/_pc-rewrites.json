@@ -1,0 +1,665 @@
+[
+  {
+    "external_key": "PC-1",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "pc.main-idea",
+    "stem": "Read the following passage and answer the question.\n\n\"Solar panels convert sunlight directly into electricity using photovoltaic cells. Unlike fossil fuels, solar energy produces no emissions during operation, making it one of the cleanest energy sources available.\"\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Fossil fuels are harmful to the environment.",
+      "Solar panels require no maintenance.",
+      "Solar energy is a clean electricity source that uses photovoltaic cells.",
+      "Photovoltaic cells are expensive to manufacture."
+    ],
+    "correct_index": 2,
+    "new_explanation": "Both sentences work together to make one point. The first defines how solar panels operate (\"convert sunlight directly into electricity using photovoltaic cells\"), and the second adds the clean-energy claim (\"no emissions during operation, making it one of the cleanest energy sources available\"). Choice C captures both halves. Choice A treats the brief mention of fossil fuels as the topic when fossil fuels appear only as a comparison point. Choice B invents maintenance, which the passage never discusses. Choice D introduces cost, which is also absent. Both wrong-direction choices add information the text does not provide.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-2",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "pc.inference",
+    "stem": "Read the following passage and answer the question.\n\n\"The base commander issued new physical fitness standards requiring all personnel to complete a 2-mile run in under 18 minutes. Soldiers who fail to meet the standard will be enrolled in a remedial training program.\"\n\nWhat can be inferred about soldiers who complete the run in exactly 18 minutes?",
+    "choices": [
+      "They will receive an award.",
+      "They will be enrolled in remedial training.",
+      "They have exceeded the standard.",
+      "They will be exempt from future tests."
+    ],
+    "correct_index": 1,
+    "new_explanation": "The standard is \"under 18 minutes,\" and \"soldiers who fail to meet the standard will be enrolled in a remedial training program.\" Exactly 18:00 is not under 18:00, so the runner fails the standard and lands in remedial training. Choice A invents an award the passage never mentions. Choice C reverses the math by treating a tie as exceeding the standard. Choice D goes beyond what the passage supports, since nothing in the text discusses exemptions from future tests. Only B follows from the passage's wording without adding information.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-3",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the following passage and answer the question.\n\n\"Dehydration impairs both physical and cognitive performance. Even a 2% loss of body water can reduce a person's ability to concentrate and make decisions. Military personnel operating in hot climates must monitor fluid intake closely.\"\n\nAccording to the passage, what effect does mild dehydration have?",
+    "choices": [
+      "It causes permanent cognitive damage.",
+      "It has no effect below 5% fluid loss.",
+      "It reduces the ability to concentrate and make decisions.",
+      "It only affects physical performance, not mental performance."
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage states directly that \"even a 2% loss of body water can reduce a person's ability to concentrate and make decisions.\" Choice C reproduces that wording almost verbatim. Choice A overreaches by adding \"permanent,\" a claim the passage never makes. Choice B contradicts the passage outright, since 2% is below 5% and the text confirms an effect at that level. Choice D contradicts the opening line, which says dehydration impairs both physical and cognitive performance. The keyed answer is the only one the text actually supports.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-4",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "pc.inference",
+    "stem": "Read the following passage and answer the question.\n\n\"The bald eagle was removed from the Endangered Species List in 2007, a success story for wildlife conservation. Once nearly extinct due to hunting and pesticide use, the population rebounded after DDT was banned in 1972 and legal protections were enacted.\"\n\nWhat was the primary cause of the bald eagle's recovery?",
+    "choices": [
+      "Captive breeding programs introduced thousands of new birds.",
+      "A ban on DDT and legal protections allowed the population to rebound.",
+      "Bald eagles adapted to living in urban environments.",
+      "Congress funded a national eagle relocation program."
+    ],
+    "correct_index": 1,
+    "new_explanation": "The passage attributes recovery to two specific causes: \"the population rebounded after DDT was banned in 1972 and legal protections were enacted.\" Choice B names both. Choice A invents captive breeding, which is never mentioned. Choice C invents urban adaptation, also absent. Choice D invents a relocation program. Each wrong choice introduces a plausible-sounding conservation mechanism that the passage simply does not discuss, while B reflects the exact causal pair the text provides.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-5",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the following passage and answer the question.\n\n\"Hypothermia occurs when the body loses heat faster than it can produce it, causing core body temperature to fall below 95\u00b0F. Symptoms progress from shivering and confusion to loss of coordination and, eventually, unconsciousness. Immediate warming and medical attention are critical.\"\n\nAccording to the passage, which symptom appears first?",
+    "choices": [
+      "Unconsciousness",
+      "Loss of coordination",
+      "Shivering and confusion",
+      "Cardiac arrest"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage lays out a sequence: \"Symptoms progress from shivering and confusion to loss of coordination and, eventually, unconsciousness.\" Shivering and confusion sit at the start of that progression. Choice A names the final stage. Choice B names the middle stage. The wrong choices paraphrase real passage details but answer the wrong question, picking later stages instead of the first. Choice D invents cardiac arrest, which the text never lists. Only C matches the symptom the passage places at the beginning of the progression.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-6",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the following passage and answer the question.\n\n\"A convoy must maintain a 100-meter interval between vehicles at all times. Closing the gap increases the risk of collision if the lead vehicle stops suddenly. Drivers are responsible for maintaining their own interval regardless of road conditions.\"\n\nWho is responsible for maintaining the correct vehicle interval?",
+    "choices": [
+      "The convoy commander",
+      "The lead vehicle driver",
+      "Each individual driver",
+      "The vehicle navigator"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage states plainly that \"drivers are responsible for maintaining their own interval regardless of road conditions.\" That phrasing places the duty on every driver individually. Choice A picks a military role the passage never assigns. Choice B uses a real passage element (the lead vehicle) but treats it as the responsible party when the text says following drivers maintain the gap. Choice D invents a navigator, who is not mentioned at all. C is the only choice that reflects the assignment of responsibility the passage actually makes.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-7",
+    "file": "free",
+    "difficulty": 3,
+    "topic_id": "pc.inference",
+    "stem": "Read the following passage and answer the question.\n\n\"Antibiotics are effective against bacterial infections but have no effect on viral illnesses such as the common cold or influenza. Overuse of antibiotics has led to the emergence of drug-resistant bacteria, which pose a significant public health threat.\"\n\nWhat conclusion can be drawn from this passage?",
+    "choices": [
+      "Antibiotics should be prescribed for all infections to prevent complications.",
+      "Viral and bacterial infections require the same treatment.",
+      "Using antibiotics unnecessarily contributes to antibiotic resistance.",
+      "The common cold can be cured with the right antibiotic."
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage states that \"overuse of antibiotics has led to the emergence of drug-resistant bacteria.\" Choice C restates that link in plain terms: unnecessary use feeds resistance. Choice A contradicts the passage, since the text warns about overuse. Choice B contradicts the first sentence, which says antibiotics have no effect on viral illnesses. Choice D also contradicts that line, because the cold is named as a viral illness antibiotics cannot treat. Only C draws a conclusion the passage actually supports.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-8",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the following passage and answer the question.\n\n\"Night vision devices amplify existing light, such as moonlight or starlight, to allow soldiers to see in low-light environments. Unlike infrared thermal devices, which detect heat signatures, night vision devices cannot function in complete darkness.\"\n\nWhat is one limitation of night vision devices mentioned in the passage?",
+    "choices": [
+      "They are too heavy for field use.",
+      "They detect heat signatures rather than light.",
+      "They cannot function in complete darkness.",
+      "They can only be used by specially trained soldiers."
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage states the limitation directly: \"night vision devices cannot function in complete darkness.\" That follows logically from the explanation that the devices \"amplify existing light.\" Choice A invents a weight problem the text never raises. Choice B paraphrases a passage detail but flips it, since heat detection is what thermal devices do, not night vision. Choice D adds a training requirement the passage does not discuss. C is the only choice that names a limitation the text actually states.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-9",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "pc.main-idea",
+    "stem": "Read the following passage and answer the question.\n\n\"The Army's supply chain relies on a system known as LOGCAP (Logistics Civil Augmentation Program), which contracts civilian companies to provide support services in combat zones. This allows military units to focus on combat operations rather than logistics management.\"\n\nWhat is the main purpose of LOGCAP according to the passage?",
+    "choices": [
+      "To replace all military logistics units with civilian workers",
+      "To allow military units to concentrate on combat by outsourcing support services",
+      "To reduce the overall size of the military budget",
+      "To train civilian contractors in military combat tactics"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The second sentence states the purpose explicitly: LOGCAP \"allows military units to focus on combat operations rather than logistics management.\" Choice B paraphrases that line directly. Choice A overstates by adding \"all,\" since the passage never claims total replacement. Choice C invents a budget motive the text does not discuss. Choice D reverses the relationship by suggesting civilians learn combat tactics, when the passage describes civilians taking on support work so soldiers can fight. B is the only choice that matches the stated purpose.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-ATP-1",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "pc.author-tone-purpose",
+    "stem": "Read the passage below and answer the question.\n\n\"Every year, thousands of young people sign contracts they do not fully understand, binding themselves to financial obligations that can follow them for a decade. Financial literacy is not a luxury \u2014 it is a survival skill. Schools that skip personal finance education are not saving curriculum space; they are failing their students.\"\n\nThe author's primary purpose is to:",
+    "choices": [
+      "explain how financial contracts work",
+      "argue that financial education should be required in schools",
+      "describe the difficulties young people face after graduation",
+      "compare different methods of teaching personal finance"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The passage builds toward a verdict: \"Schools that skip personal finance education are not saving curriculum space; they are failing their students.\" The word \"failing\" plus \"survival skill\" signals advocacy, not neutral explanation. Choice B captures that argumentative purpose. Choice A picks the contracts example and treats it as the subject, when contracts are only the opening illustration. Choice C names a related topic but misses the persuasive thrust, since the author is not describing graduate hardship in general. Choice D invents a comparison of teaching methods that never appears.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-ATP-4",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "pc.author-tone-purpose",
+    "stem": "Read the passage below and answer the question.\n\n\"If you have ever watched a skilled carpenter fit two pieces of wood together without a visible gap, you have witnessed craftsmanship at its best. It is not magic \u2014 it is patience, the right tools, and a refusal to accept 'good enough.' Anyone who calls woodworking a dying art has never stood in a shop full of sawdust and purpose.\"\n\nThe author's attitude toward woodworking is best described as:",
+    "choices": [
+      "defensive and insecure about the craft's future",
+      "enthusiastic and admiring",
+      "neutral and informational",
+      "critical of beginners who rush their work"
+    ],
+    "correct_index": 1,
+    "new_explanation": "Phrases like \"craftsmanship at its best,\" \"patience, the right tools,\" and \"a shop full of sawdust and purpose\" register as praise. Choice B names that admiring tone. Choice A picks a near-but-distinct attitude, since the author confidently dismisses critics rather than sounding insecure about the craft's future. Choice C ignores the value-loaded language entirely. Choice D misreads \"refusal to accept good enough\" as criticism of beginners, but that phrase praises the carpenter's standards rather than scolding learners. Only B fits the celebratory tone the passage actually carries.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-ATP-5",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "pc.author-tone-purpose",
+    "stem": "Read the passage below and answer the question.\n\n\"The proposal to expand the highway through the wetland was approved in 72 hours \u2014 a process that typically takes months of environmental review. Local conservation groups were not notified until after the vote. Three federal agencies later noted that proper procedure had not been followed, yet construction began on schedule.\"\n\nThe author's implied attitude toward the approval process is:",
+    "choices": [
+      "supportive of faster infrastructure decisions",
+      "critical of the rushed and irregular process",
+      "neutral, simply reporting a timeline",
+      "uncertain about whether the wetland matters"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The author selects details that all point in one direction: \"approved in 72 hours\" against \"months of environmental review,\" conservation groups \"not notified until after the vote,\" and \"three federal agencies later noted that proper procedure had not been followed, yet construction began on schedule.\" That pattern of contrast amounts to implied criticism. Choice A reverses the attitude. Choice C ignores the loaded selection of details, treating implied judgment as plain reporting. Choice D invents uncertainty about the wetland, when the author's focus is procedural shortcuts rather than ecological worth.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-MI-B4-1",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "pc.main-idea",
+    "stem": "Read the passage below and answer the question.\n\n\"Drinking enough water each day is important for good health. Water helps regulate body temperature, carries nutrients to cells, and removes waste from the body. Most adults should drink at least eight glasses of water per day.\"\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Adults should drink exactly eight glasses of water each day.",
+      "Water is essential for good health and serves several vital functions in the body.",
+      "Water removes waste products from the body.",
+      "Most people do not drink enough water."
+    ],
+    "correct_index": 1,
+    "new_explanation": "The opening sentence states the umbrella claim: \"Drinking enough water each day is important for good health.\" The next sentence backs it up with three functions, and the third sentence adds a guideline. Choice B captures both the importance claim and the multiple functions. Choice A misreads \"at least eight glasses\" as \"exactly eight\" and treats one guideline as the whole point. Choice C picks one supporting detail (waste removal) and elevates it to the main idea. Choice D invents a claim about people falling short, which the passage never makes.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-MI-B4-2",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "pc.main-idea",
+    "stem": "Read the passage below and answer the question.\n\n\"Dogs are often called 'man's best friend.' They have lived alongside humans for thousands of years, serving as companions, guards, and working animals. Today, dogs are still used to assist the blind, support law enforcement, and provide emotional comfort.\"\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Dogs have been human companions and helpers for thousands of years and remain useful today.",
+      "Dogs can be trained to assist the blind.",
+      "The history of dogs began thousands of years ago.",
+      "Dogs are the most popular pets in the world."
+    ],
+    "correct_index": 0,
+    "new_explanation": "The passage covers both the long history (\"lived alongside humans for thousands of years\") and modern uses (\"Today, dogs are still used to assist the blind, support law enforcement, and provide emotional comfort\"). Choice A blends both halves into one statement. Choice B picks a single modern example and treats it as the whole point. Choice C captures only the historical half and misses the present-day evidence. Choice D introduces a popularity ranking the passage never makes. Only A reflects the full scope of partnership across past and present.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-MI-B4-4",
+    "file": "b4",
+    "difficulty": 2,
+    "topic_id": "pc.main-idea",
+    "stem": "Read the passage below and answer the question.\n\n\"Fort Bragg, renamed Fort Liberty in 2023, is one of the largest military installations in the world. It is home to the 82nd Airborne Division and several special operations units. The base covers more than 160,000 acres and supports over 50,000 soldiers and their families.\"\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Fort Liberty is where the 82nd Airborne Division is stationed.",
+      "Fort Bragg was renamed Fort Liberty in 2023.",
+      "Fort Liberty is a large and significant military installation.",
+      "All military bases in the United States are being renamed."
+    ],
+    "correct_index": 2,
+    "new_explanation": "The first sentence states the umbrella claim: Fort Liberty is \"one of the largest military installations in the world.\" The remaining sentences support that with the resident units, 160,000 acres, and 50,000 soldiers. Choice C captures the size-and-significance frame. Choice A picks the 82nd Airborne detail and treats it as the main idea. Choice B picks the renaming aside, which is presented in passing. Choice D overreaches by generalizing from one base to every military installation in the country, a claim the passage does not make.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-MI-B4-6",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "pc.main-idea",
+    "stem": "Read the passage below and answer the question.\n\n\"Coral reefs cover less than one percent of the ocean floor yet support roughly 25 percent of all marine species. Rising ocean temperatures cause corals to expel the algae that give them color and nutrients \u2014 a process called bleaching. Without intervention, scientists estimate that most of the world's reefs could disappear by 2050.\"\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Bleaching is the only threat facing coral reefs.",
+      "Coral reefs are critically important ecosystems under threat from warming oceans.",
+      "Scientists cannot predict the future of coral reefs.",
+      "Coral reefs cover 25 percent of the ocean floor."
+    ],
+    "correct_index": 1,
+    "new_explanation": "The passage pairs an importance claim (\"support roughly 25 percent of all marine species\") with a threat claim (\"rising ocean temperatures cause corals to expel the algae\" and reefs \"could disappear by 2050\"). Choice B captures both halves. Choice A overstates by saying bleaching is the \"only\" threat; the passage never claims that. Choice C contradicts the passage, which gives a 2050 prediction. Choice D scrambles the statistics, since 25% refers to marine species supported, not to the share of ocean floor reefs cover.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-MI-B4-7",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "pc.main-idea",
+    "stem": "Read the passage below and answer the question.\n\n\"Urban heat islands form when cities replace natural land with asphalt, concrete, and buildings that absorb and trap heat. Summer temperatures in urban centers can be 10\u00b0F higher than in surrounding rural areas. This excess heat increases energy demand for cooling, worsens air quality, and disproportionately harms elderly residents and people without air conditioning.\"\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Cities should replace concrete with more trees.",
+      "Elderly people are most at risk from high temperatures.",
+      "Urban heat islands raise city temperatures and create several cascading problems.",
+      "Air quality is worse in cities than in rural areas for many reasons."
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage defines the phenomenon, gives the temperature gap (\"can be 10\u00b0F higher\"), and lists three downstream harms: energy demand, air quality, and vulnerable populations. Choice C captures the cause-and-cascade structure. Choice A prescribes a solution (more trees) the passage never recommends. Choice B picks one detail (elderly harm) and treats it as the main point. Choice D broadens beyond the passage by attributing air quality differences to \"many reasons,\" when the text discusses only urban heat island effects.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-DR-B4-1",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the passage below and answer the question.\n\n\"The Army Combat Fitness Test (ACFT) replaced the older Army Physical Fitness Test in 2020. The ACFT includes six events: the three-repetition maximum deadlift, the standing power throw, the hand-release push-up, the sprint-drag-carry, the leg tuck, and the two-mile run.\"\n\nHow many events does the ACFT include?",
+    "choices": [
+      "four",
+      "five",
+      "six",
+      "seven"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage states the count directly: \"The ACFT includes six events,\" followed by a list of all six. Choice C matches the stated number. Choices A and B undercount, picking numbers the passage does not support and that you cannot reach by reading the list. Choice D overcounts by one, the classic trap of miscounting the listed events or assuming the year 2020 is somehow part of the count. The safest move is to trust the explicit count and then verify by counting the listed events, which yields six.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-DR-B4-2",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the passage below and answer the question.\n\n\"The human heart has four chambers: the right atrium, the right ventricle, the left atrium, and the left ventricle. The right side receives oxygen-poor blood from the body and sends it to the lungs; the left side receives oxygen-rich blood from the lungs and pumps it out to the body.\"\n\nWhich side of the heart pumps oxygen-rich blood to the body?",
+    "choices": [
+      "the right atrium",
+      "the right ventricle",
+      "the left side",
+      "both sides equally"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage assigns each side a specific role: \"the left side receives oxygen-rich blood from the lungs and pumps it out to the body.\" Choice C matches that line. Choice A picks a real chamber name but the wrong side, since the right atrium handles oxygen-poor blood on the way to the lungs. Choice B does the same with the right ventricle. Choice D contradicts the passage's clear division of labor between the two sides. Only C names the side the passage actually identifies as pumping oxygen-rich blood out to the body.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-DR-B4-3",
+    "file": "b4",
+    "difficulty": 2,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the passage below and answer the question.\n\n\"The Uniform Code of Military Justice (UCMJ) is the foundation of military law in the United States. Enacted by Congress in 1950, it applies to all members of the armed forces at all times \u2014 on duty or off, in the United States or abroad. Violations are addressed through the military justice system, not the civilian court system.\"\n\nWhen does the UCMJ apply to service members?",
+    "choices": [
+      "Only while on active duty in the United States",
+      "Only when serving overseas",
+      "At all times, whether on or off duty and regardless of location",
+      "Only when in uniform"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage states the scope without qualification: the UCMJ \"applies to all members of the armed forces at all times \u2014 on duty or off, in the United States or abroad.\" Choice C reproduces that breadth. Choice A narrows to active duty in the U.S., which the passage explicitly contradicts. Choice B does the same in reverse, restricting application to overseas service. Choice D invents a uniform requirement that the text never sets. Each wrong choice adds a condition the passage rules out by saying the code applies at all times and in all locations.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-DR-B4-4",
+    "file": "b4",
+    "difficulty": 2,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the passage below and answer the question.\n\n\"Landmines are designed to be triggered by pressure, a trip wire, or a remote signal. Clearing a minefield requires trained engineers using metal detectors, ground-penetrating radar, or specially trained dogs. A typical clearing team can safely clear between 20 and 50 square meters per person per day under field conditions.\"\n\nAccording to the passage, which of the following is NOT mentioned as a method of clearing minefields?",
+    "choices": [
+      "metal detectors",
+      "controlled burning",
+      "ground-penetrating radar",
+      "specially trained dogs"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The passage lists three clearing methods: \"metal detectors, ground-penetrating radar, or specially trained dogs.\" Choices A, C, and D all appear in that sentence, so they cannot be the NOT-mentioned method. Choice B, controlled burning, never appears in the passage at all and is the correct answer to a negative question. The trap on items like this is reading too fast and selecting one of the actual methods because it sounds familiar. The 20\u201350 square meter figure describes clearing rate, not a method.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-DR-B4-5",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the passage below and answer the question.\n\n\"The Geneva Conventions, first adopted in 1864 and significantly expanded in 1949, establish international legal standards for the humane treatment of wounded soldiers, prisoners of war, and civilians in armed conflict. They do not prohibit war; they regulate how war is conducted. The conventions are binding on all nations that have ratified them, which includes most countries in the world.\"\n\nAccording to the passage, what is the primary purpose of the Geneva Conventions?",
+    "choices": [
+      "To prohibit nations from going to war",
+      "To establish standards for humane treatment during armed conflict",
+      "To create an international court for war crimes",
+      "To define which weapons are illegal in combat"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The passage states the purpose directly: the conventions \"establish international legal standards for the humane treatment of wounded soldiers, prisoners of war, and civilians in armed conflict.\" Choice B paraphrases that line. Choice A is contradicted explicitly by \"They do not prohibit war.\" Choice C invents an international court, a related but distinct international-law concept the passage never raises. Choice D invents weapons restrictions, another adjacent topic that does not appear. Only B reflects the stated purpose: regulating conduct in war, not preventing war or enforcing weapons rules.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-DR-B4-6",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the passage below and answer the question.\n\n\"Permafrost is ground that remains frozen for at least two consecutive years. It underlies about 15 percent of the world's exposed land surface, concentrated in Alaska, Canada, Russia, and Greenland. As global temperatures rise, permafrost thaws and releases carbon dioxide and methane \u2014 greenhouse gases that had been trapped for thousands of years. Scientists estimate that Arctic permafrost alone stores twice as much carbon as is currently in the atmosphere.\"\n\nAccording to the passage, what happens when permafrost thaws?",
+    "choices": [
+      "It releases oxygen into the atmosphere",
+      "It lowers global temperatures by exposing cooler ground",
+      "It releases carbon dioxide and methane that had been stored for thousands of years",
+      "It creates new lakes that absorb greenhouse gases"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage states that thawing permafrost \"releases carbon dioxide and methane \u2014 greenhouse gases that had been trapped for thousands of years.\" Choice C reproduces that detail. Choice A swaps oxygen for the actual gases named. Choice B reverses the climate effect, since the passage describes warming amplification, not cooling. Choice D invents lakes that absorb greenhouse gases, a plausible-sounding but unsupported claim. Each wrong choice keeps the topic of permafrost but flips one piece of the actual mechanism the passage describes.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-DR-B4-7",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the passage below and answer the question.\n\n\"The M4 carbine is a lighter, shorter variant of the M16 rifle and has been the standard infantry weapon of the U.S. Army since 1997. It fires 5.56 mm NATO rounds and has a maximum effective range of approximately 500 meters against a point target. Its collapsible stock allows soldiers to adjust the weapon for comfort and to operate it more easily in confined spaces.\"\n\nAccording to the passage, what is one advantage of the M4's collapsible stock?",
+    "choices": [
+      "It increases the rifle's effective range beyond 500 meters",
+      "It allows soldiers to adjust fit and operate the weapon in confined spaces",
+      "It reduces the weight of the weapon below the M16",
+      "It enables the weapon to fire different caliber rounds"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The passage credits the collapsible stock specifically with two things: it \"allows soldiers to adjust the weapon for comfort and to operate it more easily in confined spaces.\" Choice B reproduces both. Choice A invents a range boost the passage does not attribute to the stock. Choice C cites a real passage detail (lighter than the M16) but assigns it to the wrong feature, since lightness is a property of the carbine overall, not the stock. Choice D invents caliber flexibility never mentioned. Only B matches the advantage tied to the stock.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-DR-B4-8",
+    "file": "b4",
+    "difficulty": 4,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the passage below and answer the question.\n\n\"Vitamin D is unusual among vitamins in that the human body can synthesize it from sunlight. When ultraviolet B radiation strikes the skin, it converts a cholesterol compound into a precursor that the liver and kidneys then transform into the active form of vitamin D. Deficiency is common in northern latitudes during winter, among people who spend little time outdoors, and among individuals with darker skin, whose higher melanin levels reduce UV absorption.\"\n\nAccording to the passage, which group is at elevated risk for vitamin D deficiency?",
+    "choices": [
+      "People who eat large amounts of cholesterol",
+      "People who spend little time outdoors",
+      "People who live at high altitudes",
+      "People who take regular vitamin supplements"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The passage names three risk groups: people in northern latitudes in winter, \"people who spend little time outdoors,\" and people with darker skin. Choice B matches the second group verbatim. Choice A pulls on the word \"cholesterol\" from the passage but flips it into a dietary claim the text does not make. Choice C names a real geographic factor that sounds related to latitude but is never mentioned. Choice D reverses the relationship, since supplements would generally reduce risk rather than raise it. Only B appears in the passage's stated risk list.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-DR-B4-11",
+    "file": "b4",
+    "difficulty": 5,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the passage below and answer the question.\n\n\"The NATO phonetic alphabet assigns a standardized spoken word to each letter of the alphabet to prevent miscommunication over radio \u2014 where letters like B, D, E, and P sound similar. The system, adopted internationally in 1956, uses words such as Alpha (A), Bravo (B), Charlie (C), and Delta (D). These words were chosen based on their distinctiveness across multiple languages and accents, not merely their convenience in English.\"\n\nAccording to the passage, why were the NATO phonetic alphabet words specifically chosen?",
+    "choices": [
+      "Because they were easiest for English-speaking soldiers to remember",
+      "Because they are the shortest words possible for each letter",
+      "Because they are distinctive across multiple languages and accents",
+      "Because they replaced a longer, more complicated system used in World War II"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage states the selection criterion directly: the words \"were chosen based on their distinctiveness across multiple languages and accents, not merely their convenience in English.\" Choice C matches that line. Choice A is contradicted by the same sentence, which explicitly says the choice was not merely about English convenience. Choice B invents a brevity standard the passage never mentions. Choice D invents a WWII predecessor, a plausible historical detail that does not appear in the text. Only C reflects the stated reason for selection.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-DR-B4-12",
+    "file": "b4",
+    "difficulty": 5,
+    "topic_id": "pc.detail-recall",
+    "stem": "Read the passage below and answer the question.\n\n\"Autonomous vehicles use a combination of lidar, radar, cameras, and ultrasonic sensors to map their environment in real time. Lidar creates a three-dimensional point cloud by emitting laser pulses and measuring their return time; radar works in darkness and adverse weather where lidar degrades; cameras interpret visual detail and read signs. No single sensor alone provides sufficient data \u2014 redundancy across sensor types is what makes autonomous navigation reliable.\"\n\nAccording to the passage, what advantage does radar offer over lidar?",
+    "choices": [
+      "Radar creates a more detailed three-dimensional map of the surroundings",
+      "Radar is more accurate at reading road signs than cameras",
+      "Radar functions in darkness and poor weather where lidar performance degrades",
+      "Radar is less expensive than lidar and therefore used as the primary sensor"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage states the radar-versus-lidar advantage directly: \"radar works in darkness and adverse weather where lidar degrades.\" Choice C reproduces that line. Choice A swaps roles, since three-dimensional point clouds are attributed to lidar, not radar. Choice B swaps roles again, since sign reading is the cameras' job. Choice D invents a cost comparison and a \"primary sensor\" claim the passage contradicts by emphasizing redundancy. Each wrong choice paraphrases a real passage detail but reassigns it to the wrong sensor, which is the dominant trap in multi-component recall questions.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-INF-B4-1",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "pc.inference",
+    "stem": "Read the passage below and answer the question.\n\n\"Maria studied every night for two weeks before her ASVAB test. She reviewed all the practice questions and completed three full mock exams.\"\n\nWhat can be reasonably inferred about Maria?",
+    "choices": [
+      "Maria found the ASVAB easy and did not need to study.",
+      "Maria took the test seriously and prepared thoroughly.",
+      "Maria failed the ASVAB despite her studying.",
+      "Maria had already taken the ASVAB once before."
+    ],
+    "correct_index": 1,
+    "new_explanation": "Two weeks of nightly study, a full pass through the practice questions, and three mock exams form a pattern that fits one description: serious, thorough preparation. Choice B captures that. Choice A contradicts the passage, since Maria clearly did study. Choice C overreaches by inventing a failed outcome the text never mentions. Choice D overreaches in the other direction by inventing a prior attempt, also unsupported. The safest inference stays close to what the actions themselves demonstrate, which is effort and seriousness, not outcomes or backstory.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-INF-B4-2",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "pc.inference",
+    "stem": "Read the passage below and answer the question.\n\n\"The mess hall ran out of food before the last two platoons could eat. They were told to wait while a new batch was prepared.\"\n\nWhat can be reasonably inferred from this passage?",
+    "choices": [
+      "The kitchen staff made a planning error or underestimated the number of soldiers to feed.",
+      "The last two platoons arrived too late because they were on punishment detail.",
+      "The mess hall was being closed permanently.",
+      "Food shortages are common at this installation."
+    ],
+    "correct_index": 0,
+    "new_explanation": "If a mess hall \"ran out of food before the last two platoons could eat,\" the most reasonable inference is that the kitchen prepared less food than the headcount required, which is a planning miss. Choice A captures that. Choice B invents a punishment-detail backstory the passage never gives. Choice C overreaches with a permanent closure claim from a single bad meal. Choice D overreaches by treating one incident as a pattern. Each wrong choice goes well beyond the single event described, while A stays tied to what the shortage itself implies.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-INF-B4-4",
+    "file": "b4",
+    "difficulty": 2,
+    "topic_id": "pc.inference",
+    "stem": "Read the passage below and answer the question.\n\n\"The new regulation limits each soldier to two personal electronic devices during deployment. Soldiers found with additional devices will have the excess items confiscated.\"\n\nWhat can be inferred about a soldier who brings a personal laptop, a tablet, and two cell phones on deployment?",
+    "choices": [
+      "The soldier will be permitted to keep all four devices since they serve different purposes.",
+      "The soldier has more than the allowed number of devices and risks having some confiscated.",
+      "The soldier must have received special authorization for the extra devices.",
+      "Cell phones are not counted as electronic devices under the regulation."
+    ],
+    "correct_index": 1,
+    "new_explanation": "The regulation caps personal electronic devices at two, and \"soldiers found with additional devices will have the excess items confiscated.\" Four devices is two over the cap, so the soldier is in violation and faces confiscation. Choice B says exactly that. Choice A invents a function-based exception the passage does not allow. Choice C invents a special authorization the passage never mentions. Choice D invents an exemption that exempts cell phones, again unsupported. Each wrong choice creates a loophole the regulation does not provide; B follows the rule on its face.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-INF-B4-7",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "pc.inference",
+    "stem": "Read the passage below and answer the question.\n\n\"An experienced trail guide once said that a group moving through wilderness is only as fast as its slowest member. He always positioned himself at the rear of the column, not the front.\"\n\nWhat can be inferred about why the guide positioned himself at the rear?",
+    "choices": [
+      "He wanted to avoid leading the group in case he made a navigation error.",
+      "Positioning at the rear let him monitor the slowest members and ensure no one fell behind.",
+      "He preferred the view from the back of the column.",
+      "Walking at the rear is the safest position in dangerous terrain."
+    ],
+    "correct_index": 1,
+    "new_explanation": "The guide's saying is the key: a group \"is only as fast as its slowest member.\" If the slowest person sets the pace, the guide gains the most leverage by watching that person directly, which means staying at the back. Choice B draws that link. Choice A invents a fear of leading that contradicts the experienced-guide framing. Choice C reduces a deliberate tactical choice to personal preference. Choice D overreaches by adding terrain danger and a safety theory the passage never raises. Only B connects the stated belief to the observed behavior.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-ATP-B4-1",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "pc.author-tone-purpose",
+    "stem": "Read the passage below and answer the question.\n\n\"Eating breakfast every morning gives your body the energy it needs to start the day. Students who eat breakfast tend to perform better in class and stay focused longer than those who skip it. Make it a habit to eat something in the morning, even if it is small.\"\n\nThe author's purpose in writing this passage is to:",
+    "choices": [
+      "describe the history of breakfast as a cultural practice",
+      "encourage readers to eat breakfast regularly",
+      "compare different types of breakfast foods",
+      "report the results of a scientific study"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The closing imperative says it plainly: \"Make it a habit to eat something in the morning, even if it is small.\" Combined with the benefits framing, the passage is a soft pitch, not neutral exposition. Choice B captures that persuasive purpose. Choice A invents a cultural-history angle that never appears. Choice C invents a comparison among breakfast foods the passage does not make. Choice D treats the unsourced student claim as a formal study report, which the passage does not present as research findings. Only B fits the directive tone.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-ATP-B4-2",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "pc.author-tone-purpose",
+    "stem": "Read the passage below and answer the question.\n\n\"The base library is open Monday through Friday from 0800 to 2000 and on Saturdays from 0900 to 1700. It is closed on Sundays and federal holidays. Soldiers must present their military ID to check out materials.\"\n\nThe author's primary purpose in writing this passage is to:",
+    "choices": [
+      "argue that libraries are important resources for soldiers",
+      "persuade soldiers to use the library more often",
+      "provide factual information about library hours and access requirements",
+      "compare the base library to civilian public libraries"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Every sentence delivers a fact: hours of operation, closure days, and the ID requirement. No language praises the library, urges use, or weighs alternatives. Choice C captures that neutral, informational purpose. Choice A invents an argumentative stance the passage never takes. Choice B invents persuasion that the matter-of-fact language does not carry. Choice D invents a comparison to civilian libraries that never appears. The passage reads like a posted notice, and only C describes that purpose accurately.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-ATP-B4-4",
+    "file": "b4",
+    "difficulty": 2,
+    "topic_id": "pc.author-tone-purpose",
+    "stem": "Read the passage below and answer the question.\n\n\"The city council has approved, for the third time in five years, a measure to study whether a downtown parking garage is needed. Meanwhile, the parking shortage continues, three businesses have closed citing customer difficulty parking, and the mayor has announced another task force. Progress, apparently, is on schedule.\"\n\nThe author's tone is best described as:",
+    "choices": [
+      "supportive of the council's methodical approach",
+      "sarcastically critical of the lack of action",
+      "neutral and informational",
+      "alarmed by the economic impact on local businesses"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The closer gives it away: \"Progress, apparently, is on schedule.\" That line, placed after three studies, three closures, and yet another task force, is mock-praise. Choice B names that sarcasm. Choice A reverses the attitude. Choice C ignores the loaded \"apparently\" and the deliberate juxtaposition of inaction with mock progress. Choice D names a near-but-distinct attitude, since the author's focus is the council's pattern of avoidance rather than alarm over business impact specifically. The business closures function as evidence for the critique, not as the emotional center.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-ATP-B4-6",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "pc.author-tone-purpose",
+    "stem": "Read the passage below and answer the question.\n\n\"A growing body of research suggests that multitasking \u2014 far from being a productivity technique \u2014 reduces performance on all tasks attempted simultaneously. The brain does not truly parallel-process complex activities; it rapidly switches attention between them, with a switching cost paid each time. Those who believe they are efficient multitaskers are often, according to the data, among the worst performers on divided-attention tests.\"\n\nThe author's primary purpose is to:",
+    "choices": [
+      "celebrate the ability of skilled professionals to multitask effectively",
+      "describe the history of research on human attention",
+      "challenge the belief that multitasking is an effective productivity strategy",
+      "compare multitasking across different professions"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage opens by saying multitasking is \"far from being a productivity technique\" and closes with the ironic finding that self-described efficient multitaskers \"are often, according to the data, among the worst performers.\" Both moves push against a common belief. Choice C captures that. Choice A reverses the stance. Choice B invents a history-of-research framing the passage does not adopt. Choice D invents cross-profession comparison that never appears. Only C reflects the corrective, myth-busting purpose the passage actually pursues.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-B7-D5-4",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "pc.detail-recall",
+    "stem": "Passage: 'The permafrost beneath Siberian tundra holds an estimated 1.5 trillion tons of organic carbon \u2014 roughly twice the amount currently in the atmosphere. As average temperatures rise, permafrost thaws and the organic material decomposes, releasing carbon dioxide and methane. Methane is approximately 86 times more potent than CO\u2082 as a greenhouse gas over a 20-year period, though its atmospheric lifetime is shorter. Scientists warn this feedback loop could accelerate warming in ways that current climate models may underestimate.' According to the passage, how much more potent is methane than CO\u2082 as a greenhouse gas over 20 years?",
+    "choices": [
+      "20 times",
+      "50 times",
+      "86 times",
+      "100 times"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage gives the figure directly: methane is \"approximately 86 times more potent than CO\u2082 as a greenhouse gas over a 20-year period.\" Choice C matches that number. Choice A picks up the \"20-year period\" detail and recycles the 20 as the potency multiplier, which is the classic number-swap trap on detail-recall items. Choice B is a plausible-looking distractor that does not appear anywhere in the passage. Choice D rounds 86 up to a familiar round number that the text does not state. Only C reflects the figure the passage actually provides.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-B7-D5-5",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "pc.inference",
+    "stem": "Passage: 'The pharmaceutical company released its Phase 2 trial results, showing a 34% reduction in symptom severity versus placebo. Analysts noted, however, that the trial enrolled only 80 participants and excluded patients over 65 and those with common comorbidities. The FDA typically requires Phase 3 trials of 300\u20133,000 participants before approval.' What can be most reasonably inferred?",
+    "choices": [
+      "The drug will likely receive FDA approval within one year",
+      "The Phase 2 results are fraudulent",
+      "The drug's effectiveness in the broader population remains uncertain, and further trials are required",
+      "Excluding older patients proves the drug is ineffective for them"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The passage stacks three constraints: a small 80-person trial, exclusion of older and comorbid patients, and an FDA standard of \"Phase 3 trials of 300\u20133,000 participants before approval.\" Together those facts point to uncertainty about the broader population and a clear next step. Choice C captures both. Choice A overreaches with a specific approval timeline the passage does not support. Choice B overreaches by leaping from limitations to fraud. Choice D overreaches in the opposite direction, treating exclusion (a study design choice) as proof of ineffectiveness. Only C stays within the evidence.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-B7-D5-6",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "pc.author-tone-purpose",
+    "stem": "Passage: 'Advocates of universal basic income point to pilot programs in Finland and Kenya as proof of concept. Critics counter that these experiments are too small, too short, and too generously funded to scale globally. Both sides marshal the same limited data to opposite conclusions, a reminder that in policy debates, the evidence rarely speaks for itself.' What is the author's primary purpose?",
+    "choices": [
+      "To advocate for universal basic income",
+      "To discredit the critics of universal basic income",
+      "To highlight that the same evidence supports opposing conclusions, illustrating limits of policy data",
+      "To explain why pilot programs in Finland and Kenya succeeded"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The author lays out both sides, then states the takeaway: \"in policy debates, the evidence rarely speaks for itself.\" That meta-point about contested evidence is the actual purpose. Choice C captures it. Choice A misreads the balanced framing as advocacy for one position. Choice B does the same in reverse. Choice D assumes the pilot programs succeeded, when the passage frames their value as contested rather than settled. The author is not picking a side or evaluating outcomes; the author is commenting on how the same data fuels opposite arguments.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "PC-B7-D5-7",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "pc.main-idea",
+    "stem": "Passage: 'Sleep deprivation does not merely cause fatigue. Research links chronic short sleep to increased risk of cardiovascular disease, metabolic disorders, and impaired immune response. Cognitive effects include reduced working memory, slower reaction time, and impaired judgment \u2014 the last of which may be the most dangerous because sleep-deprived individuals consistently underestimate their own impairment. A person who has slept 6 hours may feel alert while performing at the level of someone legally drunk.' What is the main idea of this passage?",
+    "choices": [
+      "Six hours of sleep is sufficient for most adults",
+      "Sleep deprivation causes serious physical and cognitive harm, made worse by impaired self-awareness of that harm",
+      "Fatigue is the primary danger of insufficient sleep",
+      "Legal intoxication limits should apply to sleep-deprived drivers"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The passage opens by saying sleep deprivation \"does not merely cause fatigue,\" then catalogs physical harms (cardiovascular, metabolic, immune), cognitive harms (memory, reaction time, judgment), and the self-concealing twist that sufferers underestimate their own impairment. Choice B blends all three pieces. Choice A contradicts the passage, which frames six hours as dangerously impaired. Choice C names the harm the author explicitly rejects as the main point. Choice D invents a policy prescription about legal intoxication limits that the passage never proposes. Only B captures the full structure of harms plus hidden impairment.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  }
+]

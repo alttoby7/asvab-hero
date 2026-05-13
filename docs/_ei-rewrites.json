@@ -1,0 +1,416 @@
+[
+  {
+    "external_key": "EI-1",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ei.ohms-law-power",
+    "correct_index": 1,
+    "new_explanation": "Ohm's Law solves for current as I = V / R. Plug in: I = 12 V / 4 \u03a9 = 3 A. The answer is 3 amperes. Choice A (0.33 A) inverts the formula and computes R / V = 4 / 12. Choice C (8 A) subtracts instead of dividing (12 minus 4). Choice D (48 A) multiplies V by R, which is the calculation for a totally different relationship and ignores that current is voltage divided by resistance, not the product.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-2",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ei.circuit-types",
+    "correct_index": 2,
+    "new_explanation": "A series circuit has one continuous loop, so current must pass through every bulb. When one filament opens, the loop breaks and current stops everywhere. All remaining bulbs go dark. Choice A (brighter) confuses series with parallel, where losing one branch can shift current. Choice B (normal operation) describes parallel wiring, where each bulb sits on its own independent path. Choice D (flicker but stay on) imagines a partial connection, but an open filament is a hard break, not an intermittent contact.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-3",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "ei.components-devices",
+    "correct_index": 3,
+    "new_explanation": "Resistance is measured in ohms, symbol \u03a9. The four core electrical units pair one-to-one: volts measure voltage (electrical pressure), amperes measure current (flow rate of charge), watts measure power (energy per second), and ohms measure resistance (opposition to flow). Choice A (volt) confuses resistance with the driving voltage from Ohm's Law. Choice B (ampere) confuses it with the current that resistance opposes. Choice C (watt) measures power dissipated in a resistor, not the resistance itself.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-4",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ei.components-devices",
+    "correct_index": 2,
+    "new_explanation": "A diode is a semiconductor with a p-n junction that conducts when forward-biased and blocks current when reverse-biased, giving it one-way behavior. Rectifier bridges use this to turn AC into DC. Choice A (resistor) opposes current in both directions equally and is not polarity-sensitive. Choice B (capacitor) stores charge on plates and passes AC while blocking steady DC, but it has no preferred direction. Choice D (transformer) steps AC voltage up or down through induction and does not rectify direction at all.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-5",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ei.ohms-law-power",
+    "correct_index": 1,
+    "new_explanation": "Use P = I \u00d7 V and solve for current: I = P / V = 60 W / 120 V = 0.5 A. The bulb draws 0.5 amperes. Choice A (0.25 A) divides by 240 or applies the formula twice. Choice C (2 A) inverts the division and computes V / P = 120 / 60. Choice D (7,200 A) multiplies power by voltage (60 \u00d7 120), which has no physical meaning here because the power formula calls for division when current is unknown, not multiplication.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-6",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ei.components-devices",
+    "correct_index": 2,
+    "new_explanation": "A fuse contains a thin metal strip rated for a specific current. When current exceeds that rating, the strip melts and opens the circuit, cutting power before wires overheat or components burn. Choice A (increase voltage) describes a transformer or boost converter, not a protective device. Choice B (store charge) describes a capacitor, which holds energy on plates. Choice D (regulate AC frequency) describes oscillator or inverter circuitry. A fuse only opens; it does not modify voltage, store energy, or shape waveforms.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-7",
+    "file": "free",
+    "difficulty": 3,
+    "topic_id": "ei.circuit-types",
+    "correct_index": 2,
+    "new_explanation": "Parallel resistance uses 1/Rt = 1/R1 + 1/R2 = 1/6 + 1/6 = 2/6, so Rt = 3 \u03a9. Shortcut for equal parallel resistors: divide one by the count, 6 / 2 = 3 \u03a9. Choice A (12 \u03a9) adds them as if in series. Choice B (6 \u03a9) leaves resistance unchanged, missing that parallel paths reduce total resistance. Choice D (1 \u03a9) misapplies the formula by computing 1/(1/6 + 1/6) incorrectly or treating the reciprocal sum as the answer instead of inverting it.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-8",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "ei.conductors-insulators",
+    "correct_index": 2,
+    "new_explanation": "Copper has a sea of loosely bound free electrons, giving it very low resistivity (about 1.7 \u00d7 10\u207b\u2078 \u03a9\u00b7m), which is why nearly all household wiring uses it. Choice A (rubber) is the classic insulator used for wire jackets, with resistivity many orders of magnitude higher. Choice B (glass) is an insulator used on power-line standoffs. Choice D (wood) is an insulator when dry. Mistaking any insulator for a conductor reverses the basic distinction between materials that pass current freely and materials that block it.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-9",
+    "file": "free",
+    "difficulty": 3,
+    "topic_id": "ei.components-devices",
+    "correct_index": 2,
+    "new_explanation": "Transformer turns ratio: Vs / Vp = Ns / Np. Plug in: Vs = 120 V \u00d7 (400 / 100) = 120 \u00d7 4 = 480 V. More secondary turns means a step-up transformer. Choice A (30 V) inverts the ratio (100/400) and steps down instead of up. Choice B (120 V) ignores the ratio entirely. Choice D (600 V) multiplies primary voltage by 5 instead of 4, possibly by adding turns wrong or using (Np + Ns)/Np. The ratio is secondary over primary, not their sum.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CON-2",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "ei.conductors-insulators",
+    "correct_index": 2,
+    "new_explanation": "Semiconductors like silicon and germanium sit between conductors and insulators. Pure silicon barely conducts at room temperature, but doping it with phosphorus (n-type) or boron (p-type), heating it, or shining light on it can flip it into a conductive state. Choice A (conducts always) describes a conductor like copper. Choice B (never conducts) describes a true insulator like glass. Choice D (same resistance as insulator) ignores the controllable middle ground that makes transistors and integrated circuits possible in the first place.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CON-3",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "ei.conductors-insulators",
+    "correct_index": 1,
+    "new_explanation": "Resistance follows R = \u03c1L/A. Aluminum's resistivity (about 2.8 \u00d7 10\u207b\u2078 \u03a9\u00b7m) is roughly 1.6 times copper's (1.7 \u00d7 10\u207b\u2078 \u03a9\u00b7m). To match copper's resistance at the same length, aluminum needs a proportionally larger cross-sectional area, meaning a larger gauge. Choice A (magnetic) is wrong; aluminum is non-magnetic. Choice C (melting point) confuses ampacity ratings with the underlying resistivity argument. Choice D inverts the truth by claiming aluminum has lower resistivity, when it actually has higher resistivity than copper.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CON-5",
+    "file": "b1",
+    "difficulty": 5,
+    "topic_id": "ei.conductors-insulators",
+    "correct_index": 1,
+    "new_explanation": "Current needs a complete path from source to ground. Rubber has extremely high resistivity, so a dry rubber mat breaks the path between the technician's body and ground, and no meaningful current flows through the technician. Choice A confuses rubber with a resistor that absorbs and dissipates energy as heat. Choice C invents a charge-repulsion mechanism rubber does not have at normal scales. Choice D describes a capacitor storing charge, which is not how an insulating mat protects against shock; it simply blocks the return path.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-OL-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "ei.ohms-law-power",
+    "correct_index": 2,
+    "new_explanation": "Ohm's Law: I = V / R = 10 V / 5 \u03a9 = 2 A. Current is 2 amperes. Choice A (0.5 A) inverts the formula and divides R by V (5 / 10). Choice B (1 A) subtracts instead of dividing (10 minus 5, halved by some misstep) or applies a guessed ratio. Choice D (50 A) multiplies V by R, treating Ohm's Law as if voltage times resistance produces current. The formula is strictly division: voltage over resistance equals current.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-OL-B5-2",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "ei.ohms-law-power",
+    "correct_index": 3,
+    "new_explanation": "Power formula: P = I \u00d7 V = 3 A \u00d7 12 V = 36 W. The device consumes 36 watts. Choice A (4 W) divides V by I (12 / 3), confusing the power formula with Ohm's Law for resistance. Choice B (9 W) squares current (3\u00b2) and ignores voltage. Choice C (15 W) adds the two values (12 + 3) instead of multiplying. Power in a DC circuit is always the product of voltage and current, never the sum or quotient of those quantities.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-OL-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "ei.ohms-law-power",
+    "correct_index": 3,
+    "new_explanation": "Use P = I\u00b2R. Square the current first: 5\u00b2 = 25. Then multiply by resistance: 25 \u00d7 4 = 100 W. The resistor dissipates 100 watts. Choice A (20 W) computes I \u00d7 R (5 \u00d7 4) and forgets to square. Choice B (40 W) doubles I \u00d7 R or applies 2 \u00d7 I \u00d7 R, which is not a power formula. Choice C (80 W) doubles the I \u00d7 R result. Squaring current is essential because power grows with the square of current, not linearly.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-OL-B5-5",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.ohms-law-power",
+    "correct_index": 2,
+    "new_explanation": "Series resistors add directly: Rt = 10 + 10 + 10 + 10 = 40 \u03a9. Total resistance is 40 ohms. Choice A (2.5 \u03a9) misapplies the parallel formula, computing 10 / 4 instead of 10 \u00d7 4. Choice B (10 \u03a9) leaves resistance unchanged, ignoring that each added resistor stacks more opposition in the single current path. Choice D (1,000 \u03a9) multiplies the resistors (10 \u00d7 10 \u00d7 10) instead of summing them. In series, the values stack additively because current crosses each in sequence.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-OL-B5-6",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.ohms-law-power",
+    "correct_index": 2,
+    "new_explanation": "Rearrange P = V\u00b2 / R to R = V\u00b2 / P. Square voltage: 200\u00b2 = 40,000. Divide by power: 40,000 / 100 = 400 \u03a9. Resistance is 400 ohms. Choice A (2 \u03a9) divides V by P (200 / 100) and skips squaring entirely. Choice C (50 \u03a9) divides P by an arbitrary factor or computes V / (2P). Choice D (20,000 \u03a9) divides V\u00b2 by 2 instead of P, or otherwise mishandles the divisor. The V\u00b2 term is non-negotiable when the formula uses V\u00b2 / R.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-OL-B5-7",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.ohms-law-power",
+    "correct_index": 2,
+    "new_explanation": "Add series resistances: Rt = 2 + 3 + 5 = 10 \u03a9. Apply Ohm's Law: I = V / Rt = 20 V / 10 \u03a9 = 2 A. Current is 2 amperes. Choice A (0.5 A) divides Rt by V (10 / 20) and inverts the formula. Choice B (1 A) uses only part of the resistance or divides by 20 instead of 10. Choice D (4 A) uses only the 5-ohm resistor (20 / 5), forgetting that current sees the full series stack, not one component.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-OL-B5-8",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.ohms-law-power",
+    "correct_index": 3,
+    "new_explanation": "Each parallel branch sees the full 24 V. Branch current = 24 / 12 = 2 A. With three identical branches, total current = 3 \u00d7 2 = 6 A. Cross-check: parallel resistance = 12 / 3 = 4 \u03a9; total I = 24 / 4 = 6 A. Choice A (0.67 A) divides voltage by series total (24 / 36) as if the resistors were in series. Choice B (2 A) reports only one branch. Choice C (4 A) reports only two branches or uses parallel resistance as branch current.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-OL-B5-10",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "ei.ohms-law-power",
+    "correct_index": 2,
+    "new_explanation": "Total resistance = 6 + 4 = 10 \u03a9. Circuit current = 30 V / 10 \u03a9 = 3 A. Voltage across R1 = I \u00d7 R1 = 3 \u00d7 6 = 18 V. By the voltage divider rule, R1 takes 6/10 = 60% of source voltage, and 60% of 30 V is 18 V. Choice A (6 V) reports the resistance value as if it were a voltage. Choice B (12 V) gives the drop across R2 instead. Choice D (24 V) inverts the ratio and assigns R1 80% of the source.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-OL-B5-11",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "ei.ohms-law-power",
+    "correct_index": 2,
+    "new_explanation": "Use P = V\u00b2 / R, so V\u00b2 = P \u00d7 R = 200 \u00d7 50 = 10,000, and V = \u221a10,000 = 100 V. Cross-check with two-step path: I = \u221a(P/R) = \u221a4 = 2 A, then V = IR = 2 \u00d7 50 = 100 V. Choice A (10 V) takes \u221a(P) and ignores R, or divides incorrectly. Choice B (50 V) reports the resistance value. Choice D (4 V) divides P by 50 to get 4 and stops, skipping the square root step that the V\u00b2 relationship requires.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-OL-B5-12",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.ohms-law-power",
+    "correct_index": 2,
+    "new_explanation": "Ohm's Law: I = V / R. With V constant and R doubled, new current = V / (2R), which is half the original. Current is cut in half. Choice A (doubles) assumes a direct relationship, but current is inversely proportional to resistance, not directly. Choice B (stays the same) ignores the formula entirely. Choice D (squares the resistance) confuses Ohm's Law with the I\u00b2R power expression. Only one variable changed here, and the inverse relationship between I and R settles the result.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CT-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "ei.circuit-types",
+    "correct_index": 1,
+    "new_explanation": "In a parallel circuit, every branch connects directly to the same two source nodes, so each branch sees the full source voltage. That is the defining property. Choice A (less than source) describes a series component, where voltage divides across each resistor. Choice C (greater than source) violates energy conservation; no passive component creates voltage. Choice D (divided equally among branches) confuses parallel voltage behavior with current behavior, where current does split among branches according to each branch's resistance, but voltage stays equal across all branches.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CT-B5-2",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "ei.circuit-types",
+    "correct_index": 1,
+    "new_explanation": "A series circuit has one path for current, so the same current passes through every component. Voltage divides across them based on resistance, but current does not. Choice A (different per component) confuses current with voltage; voltage varies in series, current does not. Choice C (zero with one high resistor) is wrong because high resistance reduces current but does not stop it unless the component is fully open. Choice D (splits among components) describes parallel behavior, where multiple paths share the total current.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CT-B5-3",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "ei.circuit-types",
+    "correct_index": 2,
+    "new_explanation": "Each bulb in a parallel circuit has its own independent loop from source to source. When one bulb opens, only that branch breaks; the other branches still see the full source voltage and full branch current. The remaining bulbs glow normally. Choice A (all go out) describes series behavior. Choice B (dim slightly) gets the direction wrong; if anything, total resistance rises and total current falls, but per-branch voltage and current do not change. Choice D (burn brighter) confuses branches with a series voltage redistribution that does not happen here.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CT-B5-5",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.circuit-types",
+    "correct_index": 1,
+    "new_explanation": "Adding parallel resistors means 1/Rt = 1/R1 + 1/R2 + 1/R3 + ..., and each new term increases the right side, which lowers Rt. With source voltage fixed, I = V / Rt rises. Choice A reverses the direction; parallel branches do not raise resistance, they lower it. Choice C ignores Ohm's Law; total current must respond when total resistance shifts. Choice D confuses load behavior with source behavior; an ideal source holds voltage constant, and even a real source's voltage drop would be a secondary effect, not the primary outcome.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CT-B5-6",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.circuit-types",
+    "correct_index": 1,
+    "new_explanation": "Series resistances add: Rt = R1 + R2 + R3 + ... So a new series resistor raises total resistance. By Ohm's Law I = V / Rt, with V constant, higher Rt means lower current through the entire loop. Choice A reverses the direction; series additions cannot lower resistance. Choice C invokes a self-adjusting voltage that the source does not perform. Choice D claims only downstream components feel the change, but a series loop carries one current value everywhere; every component upstream or downstream sees the same reduced current.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CT-B5-7",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.circuit-types",
+    "correct_index": 2,
+    "new_explanation": "Kirchhoff's Current Law operates at junctions where current splits or merges. Pure series circuits have no junctions; the same current flows through every component, so KCL is trivially true and offers no analytical leverage. Parallel and combination circuits are where KCL earns its keep, balancing inflow against outflow at each node. Choice A picks the one topology where KCL is unnecessary. Choice B (open circuits) carries no current at all. Choice D (DC battery only) invents a restriction; KCL holds for AC and DC alike.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CT-B5-9",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.circuit-types",
+    "correct_index": 1,
+    "new_explanation": "A switch in the main line sits before the current splits into parallel branches. Opening it breaks the only path connecting all branches to the source, so every branch loses power at once. This is exactly how a main breaker cuts a whole panel. Choice A (only first branch) describes a switch placed inside one branch, not the main line. Choice C (alternating on/off) describes oscillator behavior, not a static switch. Choice D (highest-resistance branch first) invents a sequencing rule that does not exist in DC circuit analysis.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CT-B5-10",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.circuit-types",
+    "correct_index": 2,
+    "new_explanation": "First combine the parallel pair: 4 \u03a9 || 4 \u03a9 = 4 / 2 = 2 \u03a9. Then add the series 2 \u03a9: Rt = 2 + 2 = 4 \u03a9. Total circuit resistance is 4 ohms. Choice A (10 \u03a9) adds all three values as if everything were in series. Choice B (6 \u03a9) leaves the 4-ohm pair uncombined or sums 2 + 4 once. Choice D (2 \u03a9) reports only the parallel combination and forgets the series 2-ohm resistor. Combination circuits demand reducing parallel sections first, then summing what remains.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CT-B5-11",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "ei.circuit-types",
+    "correct_index": 2,
+    "new_explanation": "Series total: Rt = 8 + 4 + 4 = 16 \u03a9. Current = 48 / 16 = 3 A. Voltage across R1 = 3 \u00d7 8 = 24 V. Percentage = 24 / 48 = 50%. Voltage-divider shortcut: R1 is 8/16 = 50% of total resistance, so it takes 50% of source voltage. Choice A (25%) treats R1 as one of four equal parts. Choice B (33%) divides by component count (3) instead of resistance share. Choice D (75%) inverts the ratio, giving R1 the share that belongs to R2 and R3 combined.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CD-B5-2",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "ei.components-devices",
+    "correct_index": 1,
+    "new_explanation": "Resistors oppose current flow, with opposition measured in ohms. Ohm's Law (I = V / R) shows directly how a resistor sets the current for a given voltage, which is how engineers limit current to protect LEDs, transistors, and other sensitive parts. Choice A (store charge) describes a capacitor, which holds energy in an electric field. Choice C (AC to DC) describes a rectifier built from diodes. Choice D (step voltage) describes a transformer, which uses electromagnetic induction to change AC voltage levels.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CD-B5-3",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "ei.components-devices",
+    "correct_index": 1,
+    "new_explanation": "An inductor is a coil of wire. Current through the coil creates a magnetic field, and energy is stored in that field. When current changes, the collapsing or rising field induces a back-EMF that opposes the change. Choice A (chemical cell) describes a battery, where energy is locked in chemical bonds. Choice C (electric field between plates) describes a capacitor, the inductor's complement, which stores energy in an electric field across a dielectric. Choice D (mechanical flywheel) stores kinetic energy and is not an electrical component at all.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CD-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "ei.components-devices",
+    "correct_index": 2,
+    "new_explanation": "A transformer uses electromagnetic induction between primary and secondary coils to step AC voltage up or down according to the turns ratio. Power grids step voltage up to hundreds of thousands of volts for low-loss transmission, then step it back down for delivery. Choice A (rectifier) converts AC to DC and does not change AC voltage levels. Choice B (transistor) amplifies or switches signals, mostly in DC and small-signal contexts. Choice D (capacitor) filters and stores charge but cannot transform voltage levels in a sustained AC distribution system.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CD-B5-6",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.components-devices",
+    "correct_index": 2,
+    "new_explanation": "In a bipolar junction transistor, a small base current controls a much larger collector-to-emitter current. Zero base current leaves the transistor off (open switch); enough base current saturates it on (closed switch). That gain is what makes amplifiers and digital logic possible. Choice A describes an open circuit or insulator, not a switching device. Choice B describes a capacitor's storage behavior, not a transistor's gain. Choice D describes a diode's one-way conduction. Transistors do more than diode action; they amplify.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CD-B5-8",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.components-devices",
+    "correct_index": 2,
+    "new_explanation": "An ideal transformer conserves power: Vp \u00d7 Ip = Vs \u00d7 Is. The turns ratio Np / Ns = 200 / 50 = 4, so this is a step-down transformer for voltage and a step-up for current. Is = Ip \u00d7 (Np / Ns) = 1 \u00d7 4 = 4 A. Choice A (0.25 A) inverts the ratio (50 / 200), which gives the secondary voltage scale, not the current. Choice B (1 A) assumes current is unchanged, ignoring the inverse relationship. Choice D (10 A) uses an invented multiplier rather than the actual turns ratio.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CD-B5-9",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.components-devices",
+    "correct_index": 2,
+    "new_explanation": "A Zener diode is engineered to break down at a precise reverse voltage and then hold that voltage steady across itself, even as current through it varies. That clamp action makes it ideal as a voltage reference or regulator. Choice A (block all current) describes a non-conducting open. Choice B (amplify voltage) describes a transistor or op-amp, not a passive diode. Choice D (AC-to-DC bridge) describes standard rectifier diodes; Zener diodes are used specifically for regulation, not for steering AC into DC pulses.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CD-B5-10",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.components-devices",
+    "correct_index": 1,
+    "new_explanation": "Self-inductance is the property by which a coil's own changing current induces a voltage in itself, and that induced voltage opposes the change (Lenz's Law applied to Faraday's Law). It is measured in henries. Choice A (capacitance) opposes voltage changes by storing charge, not by generating back-EMF. Choice C (dielectric effect) describes how an insulator between capacitor plates increases capacitance, unrelated to current opposition. Choice D (Zener breakdown) describes a diode entering reverse conduction at a fixed voltage, not an inductor's reaction to changing current.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CI-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "ei.conductors-insulators",
+    "correct_index": 3,
+    "new_explanation": "Ceramic has extremely high resistivity and is the standard insulator on overhead power-line standoffs and inside spark plugs. Choice A (aluminum) is a common conductor used in transmission lines and wiring. Choice B (graphite) is a form of carbon that conducts well enough to be used in motor brushes and electrodes. Choice C (silver) has the highest electrical conductivity of any metal at room temperature. Three of the four options conduct readily, which is the giveaway that the lone insulator is the answer.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CI-B5-3",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "ei.conductors-insulators",
+    "correct_index": 1,
+    "new_explanation": "Gold does not oxidize in air, so gold-plated contacts keep a low, stable contact resistance for years. That matters more than raw conductivity in connector design, where surface chemistry dominates over time. Choice A (highest conductivity) is wrong; silver and copper both conduct better than gold. Choice C (weight) has no electrical relevance; mechanical force comes from spring contacts, not metal mass. Choice D (stores charge) confuses connector metal with a capacitor; conductors do not store charge in any useful sense in a connector.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CI-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "ei.conductors-insulators",
+    "correct_index": 2,
+    "new_explanation": "In most metals, higher temperature means more vigorous atomic vibration, which causes more electron-lattice collisions. More collisions mean more resistance. That positive temperature coefficient is what lets PTC thermistors and incandescent filaments self-limit. Choice A (decreases) gets the direction wrong; faster electrons do not overcome the increased scattering. Choice B (unchanged) ignores temperature dependence that is well measured for copper, aluminum, and tungsten. Choice D (superconductivity) only occurs in specific materials cooled well below room temperature, not from ordinary heating.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CI-B5-5",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.conductors-insulators",
+    "correct_index": 1,
+    "new_explanation": "Silicon's conductivity is tunable. Doping with phosphorus adds free electrons (n-type), doping with boron adds holes (p-type), heating excites carriers across the band gap, and light injects photogenerated carriers. That control is the entire basis for transistors, diodes, solar cells, and integrated circuits. Choice A (equals copper) overstates pure silicon's conductivity by many orders of magnitude. Choice C (fixed threshold) describes a Zener-like behavior, not the broad tunability of silicon. Choice D (direction-dependent) describes a diode junction, not bulk silicon material.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CI-B5-8",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.conductors-insulators",
+    "correct_index": 2,
+    "new_explanation": "Resistance follows R = \u03c1L / A. With L and \u03c1 constant and A_A = 2 \u00d7 A_B, R_A = \u03c1L / (2 \u00d7 A_B) = R_B / 2. Doubling cross-sectional area halves the resistance, because a thicker wire offers more parallel paths for electrons. Choice A (double) gets the direction backward; more area lowers resistance, not raises it. Choice B (same) ignores that area appears in the resistance formula at all. Choice D (four times) treats area as if it appeared squared in R = \u03c1L/A, which it does not.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CI-B5-10",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "ei.conductors-insulators",
+    "correct_index": 2,
+    "new_explanation": "R = \u03c1L / A is linear in length. Doubling L from 10 m to 20 m while holding A and material constant doubles the resistance: 2 \u00d7 0.2 = 0.4 \u03a9. Choice A (0.1 \u03a9) halves resistance, which would happen if length were halved instead of doubled. Choice B (0.2 \u03a9) leaves resistance unchanged, ignoring the length dependence entirely. Choice D (0.8 \u03a9) quadruples resistance, treating length as if it appeared squared in the formula, when in fact only the cross-section can change resistance non-linearly through area.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CI-B5-11",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "ei.conductors-insulators",
+    "correct_index": 2,
+    "new_explanation": "Silicon has 4 valence electrons. Phosphorus has 5, so each phosphorus atom contributes one extra electron not needed for covalent bonding. That free electron becomes a mobile negative charge carrier, producing n-type silicon. Choice A (boron, 3 valence) creates p-type silicon by introducing holes. Choice B (aluminum, 3 valence) also creates p-type material. Choice D (carbon, 4 valence) matches silicon's valence count exactly, so it contributes neither extra electrons nor holes and would not produce useful doping for n-type or p-type behavior.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "EI-CI-B5-12",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.conductors-insulators",
+    "correct_index": 1,
+    "new_explanation": "Liquid conduction depends on free charge carriers. Distilled water has almost no dissolved ions, so it has very few mobile charges and conducts poorly. Seawater holds dissolved NaCl, MgCl\u2082, and other salts that dissociate into Na\u207a, Cl\u207b, and Mg\u00b2\u207a ions, which carry charge freely. Choice A (more hydrogen) is wrong; both waters share the same H\u2082O molecules. Choice C blames water's polarity, but polarity alone does not block conduction. Choice D invokes pressure, which has a negligible effect on conductivity compared with ion concentration.",
+    "needs_correct_index_review": false
+  }
+]

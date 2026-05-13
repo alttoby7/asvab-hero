@@ -1,0 +1,786 @@
+[
+  {
+    "external_key": "GS-1",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.life-science",
+    "stem": "Which organ is primarily responsible for filtering waste products from the blood and producing urine?",
+    "choices": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The kidneys filter nitrogen-rich waste and excess water from the blood and excrete them as urine. Each kidney contains roughly a million nephrons that do this filtering work. The liver also processes blood, but its job is detoxifying chemicals, breaking down old red cells, and metabolizing nutrients into bile and proteins, not making urine. The pancreas produces digestive enzymes and the hormone insulin. The spleen filters old red blood cells and stores immune cells but does not produce urine. Urine production is the kidney's defining function.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-2",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.physical-science",
+    "stem": "Water (H\u2082O) is best classified as which of the following?",
+    "choices": [
+      "An element",
+      "A compound",
+      "A mixture",
+      "An isotope"
+    ],
+    "correct_index": 1,
+    "new_explanation": "A compound is two or more different elements chemically bonded in a fixed ratio, which is exactly what H\u2082O is: hydrogen and oxygen locked at 2 to 1 by covalent bonds. An element contains only one kind of atom, so water cannot qualify because it holds two. A mixture is a physical blend whose components keep their own identities and can be separated by physical means, like salt water or air, but the H and O in water cannot be separated that way. An isotope describes versions of one element with different neutron counts, not a multi-element substance.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-3",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.earth-space-science",
+    "stem": "Which layer of Earth's atmosphere contains the ozone layer that absorbs most of the sun's ultraviolet radiation?",
+    "choices": [
+      "Troposphere",
+      "Mesosphere",
+      "Stratosphere",
+      "Thermosphere"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The stratosphere sits roughly 10 to 50 kilometers above the surface, and within it the ozone layer absorbs most incoming UV radiation. The troposphere is the bottom layer where weather happens and airliners cruise; it lacks the ozone concentration. The mesosphere is above the stratosphere and is where meteors burn up. The thermosphere is higher still and hosts auroras and the International Space Station, but it does not hold ozone. Pairing ozone with the wrong neighboring layer (mesosphere or troposphere) is the typical slip.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-4",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.earth-space-science",
+    "stem": "Which type of rock is formed when molten magma cools and solidifies?",
+    "choices": [
+      "Sedimentary",
+      "Metamorphic",
+      "Igneous",
+      "Organic"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Igneous rock forms when magma (underground) or lava (surface) cools and crystallizes. Granite is the classic slow-cooled intrusive example; basalt is the fast-cooled extrusive one. Sedimentary rock forms from pressed and cemented sediments like sandstone or limestone and never involves melting. Metamorphic rock starts as another rock that is reshaped by heat and pressure without fully melting, producing slate or marble. Organic is not one of the three official rock-cycle categories, which makes it a distractor designed to look plausible next to the real three.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-5",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.life-science",
+    "stem": "Which of the following best describes the function of red blood cells?",
+    "choices": [
+      "Fight infection by producing antibodies",
+      "Transport oxygen throughout the body",
+      "Regulate blood clotting",
+      "Produce hormones"
+    ],
+    "correct_index": 1,
+    "new_explanation": "Red blood cells carry hemoglobin, an iron-rich protein that grabs oxygen in the lungs and releases it to tissues, then carries some carbon dioxide back. Producing antibodies is the job of white blood cells, specifically B lymphocytes. Clotting is handled by platelets along with clotting factors in plasma. Hormones come from endocrine glands like the thyroid, adrenal, and pituitary, not from blood cells. Confusing red cells with white cells or platelets is the standard trap because all three live in blood and look similar at first glance.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-6",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "Newton's Third Law of Motion states that for every action there is:",
+    "choices": [
+      "An equal but delayed reaction",
+      "A greater and opposite reaction",
+      "An equal and opposite reaction",
+      "A proportional and parallel reaction"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Newton's Third Law says forces come in pairs that are equal in magnitude and opposite in direction, acting on two different bodies. Push on a wall and the wall pushes back on you with the same force. A rocket pushes exhaust gas down and the gas pushes the rocket up by the same amount. The forces act at the same instant, never delayed, which rules out the first choice. They are equal, never greater, which kills the second. Parallel and proportional confuses Third Law with the F=ma scaling of the Second Law.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-7",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.life-science",
+    "stem": "Photosynthesis in plants primarily uses which two resources to produce glucose?",
+    "choices": [
+      "Oxygen and nitrogen",
+      "Carbon dioxide and water",
+      "Glucose and oxygen",
+      "Nitrogen and phosphorus"
+    ],
+    "correct_index": 1,
+    "new_explanation": "Photosynthesis takes carbon dioxide pulled in through leaf stomata and water drawn up from the roots, then uses solar energy captured by chlorophyll to build glucose and release oxygen. Glucose and oxygen are the products, not the inputs, so picking them reverses the equation. Nitrogen and phosphorus matter for plant growth, but they are soil nutrients used in proteins and DNA, not the raw materials for sugar. The simple equation worth memorizing: 6CO\u2082 + 6H\u2082O + light \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-8",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "gs.earth-space-science",
+    "stem": "Which planet in our solar system is largest by diameter?",
+    "choices": [
+      "Saturn",
+      "Neptune",
+      "Jupiter",
+      "Uranus"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Jupiter is the largest planet at roughly 143,000 km in diameter, more than 11 Earths wide and over 300 Earths in mass. Saturn comes in second and is often confused for the biggest because of its prominent rings, which make it look visually huge in photos, but Saturn is actually smaller and far less dense than Jupiter. Uranus and Neptune are the ice giants and are much smaller, each only about four times Earth's diameter. The mental shortcut: Jupiter is the king of the gas giants by size and mass.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-9",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.physical-science",
+    "stem": "In an acid-base reaction, the pH of a neutral solution is:",
+    "choices": [
+      "0",
+      "7",
+      "10",
+      "14"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The pH scale runs from 0 to 14, and 7 sits dead center as the neutral point where hydrogen-ion and hydroxide-ion concentrations are equal. Pure water is the standard example. A pH of 0 marks the strongest common acids like concentrated hydrochloric acid. A pH of 14 marks the strongest bases like concentrated sodium hydroxide. A pH of 10 is mildly basic (think milk of magnesia), not neutral. Each whole-number step represents a tenfold change in hydrogen-ion concentration, so the scale is logarithmic, not linear.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PHY-2",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "Which simple machine is a screw most closely related to?",
+    "choices": [
+      "lever",
+      "wheel and axle",
+      "inclined plane",
+      "pulley"
+    ],
+    "correct_index": 2,
+    "new_explanation": "A screw is an inclined plane wrapped around a cylinder. The threads form a spiral ramp that lets a small rotational force advance the screw a small distance with each turn, trading turns for depth, exactly like walking up a long shallow ramp instead of a short steep one. A lever pivots about a fulcrum and uses arm length to multiply force. A wheel and axle multiplies force through different radii. A pulley redirects force through a rope. None of those involve a ramp wound into a cylinder the way a screw does.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PHY-4",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "A compressed spring stores energy as:",
+    "choices": [
+      "kinetic energy",
+      "thermal energy",
+      "potential energy",
+      "chemical energy"
+    ],
+    "correct_index": 2,
+    "new_explanation": "A compressed or stretched spring holds elastic potential energy, stored in the deformed structure and ready to do work when released. Kinetic energy is energy of motion, which the spring only has while the coils are actively moving, not while held still in compression. Thermal energy would mean the spring heated up, which is not the dominant effect of squeezing it. Chemical energy lives in molecular bonds, like in gasoline or a battery, and is unrelated to mechanical deformation. Position and shape, not motion or heat, are what store the energy here.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PHY-6",
+    "file": "b1",
+    "difficulty": 5,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "A 500-W electric motor lifts a 200-N load vertically. How high can it lift the load in 4 seconds (ignoring friction)?",
+    "choices": [
+      "2.5 meters",
+      "5 meters",
+      "10 meters",
+      "40 meters"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Power equals work divided by time, so total work is 500 W times 4 s, or 2,000 joules. Work also equals force times distance, so distance equals 2,000 J divided by 200 N, which is 10 meters. The 40-meter answer multiplies power by time directly without dividing by force, a unit-confusion error. The 2.5-meter answer divides force by power, inverting the relationship. The 5-meter answer divides time by force. Keeping the units paired (J = N\u00b7m, W = J/s) prevents the wrong combination.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PHY-D2-1",
+    "file": "b1",
+    "difficulty": 2,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "Which of the following is an example of potential energy?",
+    "choices": [
+      "a spinning fan blade",
+      "a rock sitting on a high cliff",
+      "a car moving at 60 mph",
+      "sound traveling through air"
+    ],
+    "correct_index": 1,
+    "new_explanation": "Potential energy is stored energy from position or configuration. A rock on a cliff has gravitational potential energy: pull mass times g times height, and the rock can convert all of it to kinetic energy if it falls. A spinning fan blade is in motion, so its energy is kinetic. A car moving at 60 mph is also kinetic, and a fast-moving car carries a lot of it because KE scales with velocity squared. Sound traveling through air is a wave carrying kinetic energy through molecular vibration, not stored stationary energy.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-LS-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.life-science",
+    "stem": "Which organelle is known as the powerhouse of the cell because it produces most of the cell's energy?",
+    "choices": [
+      "Nucleus",
+      "Ribosome",
+      "Mitochondria",
+      "Vacuole"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Mitochondria run cellular respiration, converting glucose and oxygen into ATP, the energy currency cells spend on every active process. Muscle cells and neurons pack in extra mitochondria because they burn through ATP fast. The nucleus stores DNA and directs gene expression, but it does not generate energy. Ribosomes are the protein-assembly stations that read mRNA and link amino acids. Vacuoles store water, food, or waste, especially in plant cells. Confusing the nucleus with mitochondria is the most common slip since both are major organelles students hear about first.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-LS-B5-2",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.life-science",
+    "stem": "Which gas do plants release as a byproduct of photosynthesis?",
+    "choices": [
+      "Carbon dioxide",
+      "Nitrogen",
+      "Oxygen",
+      "Hydrogen"
+    ],
+    "correct_index": 2,
+    "new_explanation": "During photosynthesis the plant splits water molecules to harvest electrons, and the leftover oxygen is released through stomata. That is why forests and ocean phytoplankton drive Earth's oxygen supply. Carbon dioxide is the opposite: plants pull it in as a raw material and lock its carbon into glucose, so they consume it rather than release it. Nitrogen is the dominant gas in the atmosphere but plants cannot use it directly from the air, so it is not part of photosynthesis. Hydrogen ends up bound inside glucose, not released as gas.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-LS-B5-3",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.life-science",
+    "stem": "The primary role of the cell membrane is to:",
+    "choices": [
+      "Produce proteins for the cell",
+      "Control what enters and exits the cell",
+      "Store genetic information",
+      "Convert sunlight into energy"
+    ],
+    "correct_index": 1,
+    "new_explanation": "The cell membrane is a phospholipid bilayer studded with proteins that acts as a selective gate, letting some substances pass freely (small nonpolar molecules), pumping others in or out actively (ions, glucose), and blocking the rest. Protein production happens at ribosomes attached to rough ER or floating in cytoplasm, not at the membrane. Genetic information lives in the nucleus in eukaryotes or in the nucleoid region in bacteria. Converting sunlight to energy is the chloroplast's job, found only in plants and algae. The membrane is gatekeeper, not factory.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-LS-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.life-science",
+    "stem": "In an ecosystem, which organisms are the primary producers?",
+    "choices": [
+      "Herbivores",
+      "Carnivores",
+      "Decomposers",
+      "Plants and algae"
+    ],
+    "correct_index": 3,
+    "new_explanation": "Primary producers capture energy from sunlight (or chemicals at deep-sea vents) and turn it into stored chemical energy, building the base of every food web. Plants, algae, and photosynthetic bacteria do this. Herbivores like deer or grasshoppers are primary consumers because they eat producers. Carnivores eat other animals and sit higher in the chain. Decomposers like fungi and bacteria recycle dead matter into nutrients, which is essential but not the same as producing energy from sunlight. The distinction is whether the organism makes food or eats food.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-LS-B5-5",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.life-science",
+    "stem": "Which blood component is primarily responsible for fighting bacterial infections?",
+    "choices": [
+      "Red blood cells",
+      "Platelets",
+      "White blood cells",
+      "Plasma"
+    ],
+    "correct_index": 2,
+    "new_explanation": "White blood cells, also called leukocytes, are the immune system's frontline. Neutrophils swallow bacteria, lymphocytes produce antibodies and kill infected cells, and macrophages clean up debris. Red blood cells carry oxygen and have no role in fighting infection. Platelets are cell fragments that plug wounds and start clotting cascades. Plasma is the straw-colored liquid that carries everything else, including antibodies the white cells produce, but plasma itself is the transport medium rather than the attacker. White cell count rises during infection, which is why doctors order a CBC to check it.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-LS-B5-7",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.life-science",
+    "stem": "A food chain reads: grass \u2192 grasshopper \u2192 frog \u2192 hawk. If the frog population is removed, what is the most likely short-term result?",
+    "choices": [
+      "Hawks will increase in number",
+      "Grasshoppers will increase in number",
+      "Grass will decrease",
+      "Hawks will switch to eating grasshoppers directly and maintain balance"
+    ],
+    "correct_index": 1,
+    "new_explanation": "Remove the predator and the prey explodes. With frogs gone, grasshoppers face no consistent predator at their trophic level, so their numbers surge in the short term. Hawks lose a major food source and would decline, not increase. Grass would also decline as more grasshoppers eat it, but that secondary effect lags behind the grasshopper boom itself, making the grasshopper increase the more immediate result. Hawks switching directly to grasshoppers ignores that food chains are not infinitely flexible and that adapting prey preferences takes time and may not maintain population balance.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-LS-B5-9",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.life-science",
+    "stem": "Which organ system is responsible for removing gaseous waste (carbon dioxide) from the body?",
+    "choices": [
+      "Digestive system",
+      "Urinary system",
+      "Respiratory system",
+      "Circulatory system"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The respiratory system handles gas exchange in the alveoli of the lungs, where oxygen diffuses into the blood and carbon dioxide diffuses out and gets exhaled. The circulatory system transports CO\u2082 from tissues to the lungs but does not actually remove it from the body, which is a common slip because blood is involved in both transport and removal. The urinary system removes liquid nitrogen waste as urine. The digestive system removes undigested solid waste as feces. Match the waste type to the system: gas to lungs, liquid to kidneys, solid to intestines.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-LS-B5-12",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.life-science",
+    "stem": "Which process do decomposers like fungi and bacteria perform that is essential to the nutrient cycle?",
+    "choices": [
+      "Photosynthesis \u2014 converting CO\u2082 to glucose",
+      "Nitrogen fixation \u2014 converting N\u2082 gas to ammonia",
+      "Decomposition \u2014 breaking organic matter into inorganic nutrients",
+      "Transpiration \u2014 releasing water vapor from leaves"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Decomposition is the breakdown of dead organisms and waste into simpler inorganic molecules like CO\u2082, ammonia, and mineral ions that return to soil, water, and air. Without it, carbon and nitrogen would stay locked in corpses and dead leaves and ecosystems would starve. Photosynthesis is what plants and algae do, not fungi. Nitrogen fixation is a narrow process performed by specific bacteria (Rhizobium, cyanobacteria) on N\u2082 gas, not the general decomposer role. Transpiration is water loss from plant leaves, completely separate from nutrient cycling driven by decomposers.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PS-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.physical-science",
+    "stem": "Which state of matter has a definite volume but no definite shape?",
+    "choices": [
+      "Solid",
+      "Liquid",
+      "Gas",
+      "Plasma"
+    ],
+    "correct_index": 1,
+    "new_explanation": "Liquids hold a fixed volume because their molecules stay close together, but they flow to take the shape of whatever container holds them. Pour a liter of water into a tall cylinder or a flat tray, and it remains a liter while changing outline. Solids lock in both shape and volume because their molecules are fixed in place. Gases expand to fill the entire container, so they lack both a fixed shape and a fixed volume. Plasma is ionized gas found in stars and neon signs; like ordinary gas, it conforms to no fixed shape or volume.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PS-B5-2",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.physical-science",
+    "stem": "Which of the following is a chemical change?",
+    "choices": [
+      "Ice melting into water",
+      "Cutting a piece of paper",
+      "Iron rusting",
+      "Sugar dissolving in water"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Rusting is iron combining with oxygen to form a new compound, iron oxide, with different color, hardness, and chemical properties. New substance means chemical change. Ice melting is a physical change because the H\u2082O molecules are identical before and after, just rearranged from rigid crystal to flowing liquid. Cutting paper changes shape, not composition. Sugar dissolving spreads sucrose molecules through water but does not transform them; evaporate the water and the sugar returns unchanged. The test is whether a brand-new substance with new chemistry has appeared.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PS-B5-3",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.physical-science",
+    "stem": "On the periodic table, elements in the same column (group) share similar properties primarily because they have the same:",
+    "choices": [
+      "Atomic mass",
+      "Number of protons",
+      "Number of neutrons",
+      "Number of valence electrons"
+    ],
+    "correct_index": 3,
+    "new_explanation": "Valence electrons are the outermost shell electrons that participate in chemical bonding, and elements in the same group share the same valence count. That is why all Group 1 alkali metals react violently with water and all Group 18 noble gases barely react at all. Atomic mass increases steadily down a group, so it cannot be the cause. Proton count defines the element itself and is unique to each element, never shared. Neutron count varies among isotopes even within a single element and has no bearing on chemical behavior, only on stability and mass.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PS-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.physical-science",
+    "stem": "What happens to the pressure of a gas inside a sealed container when the temperature increases, assuming volume stays constant?",
+    "choices": [
+      "Pressure decreases",
+      "Pressure stays the same",
+      "Pressure increases",
+      "The gas liquefies"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Heating a gas speeds up its molecules. They hit the container walls harder and more often, which is exactly what pressure measures. With volume fixed, pressure rises in direct proportion to absolute temperature; double the Kelvin temperature and pressure doubles. This is Gay-Lussac's Law. A sealed aerosol can in a hot car can rupture for this reason. The gas does not liquefy from heating; liquefaction usually requires cooling or compressing. Pressure cannot stay the same because faster molecules cannot avoid more forceful collisions when the walls do not move.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PS-B5-5",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.physical-science",
+    "stem": "In a chemical reaction, the substances that are present before the reaction begins are called:",
+    "choices": [
+      "Products",
+      "Reactants",
+      "Catalysts",
+      "Compounds"
+    ],
+    "correct_index": 1,
+    "new_explanation": "Reactants are the starting materials that get consumed and rearranged during a reaction, written on the left side of the arrow. Products are what comes out on the right side, so swapping the two reverses the equation. Catalysts speed up reactions by lowering activation energy but are not consumed and are not counted among reactants or products; they often appear above the arrow. Compound describes a category of substance, not a reaction role; both reactants and products can be compounds or elements. The arrow direction is the visual cue: left equals reactant, right equals product.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PS-B5-6",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.physical-science",
+    "stem": "A substance has a pH of 2. Which statement best describes this substance?",
+    "choices": [
+      "It is strongly basic and will feel slippery",
+      "It is weakly acidic and slightly corrosive",
+      "It is strongly acidic with high hydrogen ion concentration",
+      "It is neutral and safe to drink in any quantity"
+    ],
+    "correct_index": 2,
+    "new_explanation": "A pH of 2 is strongly acidic, only one step away from battery acid at pH 1 and well below the neutral mark at 7. Because pH is logarithmic, pH 2 has 100,000 times more hydrogen ions than neutral water. Calling it weakly acidic underestimates the danger; lemon juice sits around pH 2 and is still capable of dissolving tooth enamel. Strongly basic substances feel slippery and have high pH above 12, not low pH. Neutral substances sit at 7, not 2, and nothing at pH 2 is universally safe to drink in unlimited amounts.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PS-B5-7",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.physical-science",
+    "stem": "When a substance undergoes sublimation, it transitions directly from:",
+    "choices": [
+      "Liquid to gas",
+      "Solid to liquid",
+      "Solid to gas",
+      "Gas to liquid"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Sublimation skips the liquid phase, going straight from solid to gas. Dry ice (solid CO\u2082) is the textbook example because at room pressure it cannot exist as a liquid, so it simply turns into CO\u2082 gas. Solid air fresheners and mothballs also sublime slowly. Liquid to gas is evaporation or boiling, not sublimation. Solid to liquid is plain melting. Gas to liquid is condensation, the reverse of evaporation. The reverse of sublimation, gas straight to solid, is called deposition, which is how frost forms on a cold windshield without dew first.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PS-B5-8",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.physical-science",
+    "stem": "Which type of chemical bond results from the transfer of electrons from one atom to another?",
+    "choices": [
+      "Covalent bond",
+      "Hydrogen bond",
+      "Ionic bond",
+      "Metallic bond"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Ionic bonds form when one atom hands off electrons to another, creating a positively charged cation and a negatively charged anion. The opposite charges attract and lock the ions in place, as in sodium chloride where sodium gives up an electron to chlorine. Covalent bonds work differently, with atoms sharing electron pairs rather than transferring them, common in water and methane. Hydrogen bonds are weak attractions between polar molecules, like the ones holding water's strands together, not full bonds. Metallic bonds let electrons flow freely through a lattice of metal atoms, giving conductivity.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PS-B5-10",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.physical-science",
+    "stem": "In a neutralization reaction, an acid and a base react to form:",
+    "choices": [
+      "Another acid with different strength",
+      "Salt and water",
+      "Carbon dioxide and oxygen",
+      "A metal oxide"
+    ],
+    "correct_index": 1,
+    "new_explanation": "An acid donates H\u207a ions, a base donates OH\u207b ions, and when they meet the ions combine to form H\u2082O while the leftover spectator ions pair up as a salt. Hydrochloric acid plus sodium hydroxide gives sodium chloride and water: HCl + NaOH \u2192 NaCl + H\u2082O. The pH moves toward 7. Producing another acid would mean the reaction never neutralized anything. Carbon dioxide and oxygen come out of combustion or photosynthesis, not acid-base neutralization. Metal oxides form when metals burn or corrode with oxygen and have nothing to do with mixing an acid and a base.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PS-B5-11",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.physical-science",
+    "stem": "Which of the following correctly identifies the number of moles in 44 grams of CO\u2082? (C = 12 g/mol, O = 16 g/mol)",
+    "choices": [
+      "0.5 moles",
+      "1 mole",
+      "2 moles",
+      "44 moles"
+    ],
+    "correct_index": 1,
+    "new_explanation": "Molar mass of CO\u2082 is 12 (one carbon) plus 2 times 16 (two oxygens), which equals 44 g/mol. Moles equals mass divided by molar mass, so 44 grams divided by 44 g/mol gives exactly 1 mole. The 2-mole answer comes from doubling because there are two oxygens, but the formula already accounts for that in the molar mass. The 0.5-mole answer halves correctly only if the substance were O\u2082 or someone forgot the carbon. The 44-mole answer mistakes grams for moles entirely and ignores the conversion.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PS-B5-12",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "gs.physical-science",
+    "stem": "In the balanced equation 2H\u2082 + O\u2082 \u2192 2H\u2082O, how many moles of water are produced from 3 moles of H\u2082 and excess O\u2082?",
+    "choices": [
+      "1.5 moles",
+      "2 moles",
+      "3 moles",
+      "6 moles"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Read the coefficients: 2 moles of H\u2082 produce 2 moles of H\u2082O, a 1 to 1 ratio. So 3 moles of hydrogen produce 3 moles of water when oxygen is plentiful. Dividing 3 by 2 to get 1.5 misreads the ratio by treating the 2 in front of H\u2082 as a divisor rather than recognizing it pairs evenly with the 2 in front of H\u2082O. Doubling to 6 mistakenly multiplies by 2. Answering 2 moles ignores that the limiting reactant is H\u2082 and that excess O\u2082 means hydrogen sets the cap.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-ES-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.earth-space-science",
+    "stem": "The layer of Earth that we live on, which makes up the surface and outer crust, is called the:",
+    "choices": [
+      "Mantle",
+      "Core",
+      "Lithosphere",
+      "Asthenosphere"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The lithosphere is the rigid outer shell of Earth, including the crust and the cool uppermost portion of the mantle, and it is the layer broken into tectonic plates that carry continents and oceans. The mantle as a whole sits below the lithosphere and is much hotter and more deformable. The core is the metallic center, an outer liquid layer and an inner solid layer of mostly iron and nickel. The asthenosphere is the partly molten zone right beneath the lithosphere where plates ride and convection occurs. We live on top of the lithosphere.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-ES-B5-3",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.earth-space-science",
+    "stem": "Metamorphic rock is formed when existing rock is subjected to:",
+    "choices": [
+      "Rapid cooling of magma at the surface",
+      "The compaction of layers of sediment over time",
+      "High heat and pressure deep within Earth",
+      "Erosion by wind and water"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Metamorphic rock starts as another rock (igneous, sedimentary, or even older metamorphic) and gets reshaped by intense heat and pressure deep underground without fully melting. Limestone becomes marble, shale becomes slate, sandstone becomes quartzite. Rapid cooling of magma at the surface produces extrusive igneous rocks like basalt, not metamorphic. Compaction of sediment layers makes sedimentary rocks like shale and sandstone. Erosion by wind and water is the breakdown step that creates sediment in the first place; it does not form rock by itself. The key word is transformed, not melted, not crushed, not weathered.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-ES-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.earth-space-science",
+    "stem": "The water cycle step in which water vapor cools and changes into liquid water droplets to form clouds is called:",
+    "choices": [
+      "Evaporation",
+      "Condensation",
+      "Precipitation",
+      "Transpiration"
+    ],
+    "correct_index": 1,
+    "new_explanation": "Condensation is the phase change from gas back to liquid. As warm moist air rises and cools, vapor molecules slow down enough to stick together as tiny droplets around dust or salt particles, forming clouds and fog. Evaporation is the opposite direction, liquid turning to vapor when surface water absorbs heat. Precipitation comes after condensation, when droplets grow heavy enough to fall as rain, snow, or hail. Transpiration is plant-driven evaporation through leaf stomata; it adds moisture to the air but is not the cloud-forming step. Cooling vapor equals condensation.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-ES-B5-5",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.earth-space-science",
+    "stem": "Which atmospheric layer, positioned just above the stratosphere, is where meteors typically burn up upon entering Earth's atmosphere?",
+    "choices": [
+      "Troposphere",
+      "Stratosphere",
+      "Mesosphere",
+      "Thermosphere"
+    ],
+    "correct_index": 2,
+    "new_explanation": "The mesosphere extends from roughly 50 to 80 km up, sitting directly above the stratosphere. The air there is thin but dense enough that friction with incoming meteoroids generates the heat that produces shooting stars. The troposphere is the bottom weather layer and is too low to see most meteor burns. The stratosphere holds the ozone layer but is below where meteors flame. The thermosphere is the next layer up, where the ISS orbits and auroras glow, and although it is hot, the air is too thin to ignite meteors efficiently.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-ES-B5-6",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.earth-space-science",
+    "stem": "According to the rock cycle, which process can convert igneous rock into sedimentary rock?",
+    "choices": [
+      "Melting followed by rapid cooling",
+      "Heat and pressure deep underground",
+      "Weathering, erosion, and compaction of the rock fragments",
+      "Volcanic uplift pushing the rock to the surface"
+    ],
+    "correct_index": 2,
+    "new_explanation": "An igneous rock at the surface is exposed to weather. Rain, wind, ice, and biological activity break it into fragments, which rivers and gravity carry to lower ground. Layers pile up, get buried, and compact and cement into sedimentary rock through lithification. Melting and rapid cooling would just produce another igneous rock, not sedimentary. Heat and pressure deep underground transform existing rocks into metamorphic rocks like slate or marble. Volcanic uplift moves rock around but does not by itself change what type of rock it is. The route to sedimentary always passes through sediment.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-ES-B5-7",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.earth-space-science",
+    "stem": "At which location would a hurricane most likely begin to weaken significantly?",
+    "choices": [
+      "Over warm tropical ocean water",
+      "When moving toward the equator",
+      "After making landfall or moving over cooler water",
+      "When it absorbs a nearby low-pressure system"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Hurricanes are heat engines fed by evaporation from ocean water warmer than about 26\u00b0C. Cut off that energy source and the storm dies. Moving over land removes the moisture supply and adds frictional drag, so storms decay quickly inland. Moving over cooler water has the same effect of starving the convection. Warm tropical ocean water is what fuels hurricanes, so it strengthens rather than weakens them. Hurricanes do not move toward the equator (they curve poleward due to Coriolis steering). Absorbing a low-pressure system can actually feed energy in, not drain it.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-ES-B5-8",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.earth-space-science",
+    "stem": "Which type of plate boundary is associated with the formation of most of Earth's major mountain ranges?",
+    "choices": [
+      "Divergent boundary, where plates move apart",
+      "Transform boundary, where plates slide past each other",
+      "Convergent boundary, where plates collide and compress",
+      "Subduction boundary, where oceanic plates sink under oceanic plates"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Major mountain ranges form where plates collide. The Himalayas rose from India ramming Eurasia, and the Alps rose from Africa pushing into Europe. Collision compresses and folds the crust upward over millions of years. Divergent boundaries pull apart and form rift valleys and mid-ocean ridges, not tall continental mountain belts. Transform boundaries grind past each other and produce earthquakes along faults like the San Andreas, not big ranges. Oceanic-on-oceanic subduction creates island arcs like Japan, which are mountainous but not the world's major continental ranges. The biggest mountains come from continental crash.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-ES-B5-9",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.earth-space-science",
+    "stem": "As altitude increases in the troposphere, air temperature generally:",
+    "choices": [
+      "Increases at a steady rate",
+      "Remains constant",
+      "Decreases",
+      "Increases then decreases"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Within the troposphere, temperature drops about 6.5\u00b0C for every 1,000 meters of climb, known as the environmental lapse rate. That is why mountaintops carry snow while valleys stay green and why airliner cabins need heating at cruise altitude. The pattern flips in the stratosphere right above, where ozone absorbs UV and warms the air with altitude. A constant temperature would describe the isothermal tropopause boundary, not the bulk troposphere. Increase then decrease describes the overall atmospheric profile across all layers, not the troposphere alone. Inside the troposphere the direction is simple: up means cooler.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-ES-B5-11",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "gs.earth-space-science",
+    "stem": "Which phenomenon best explains why oceanic crust is generally younger than continental crust?",
+    "choices": [
+      "Oceanic crust forms faster due to more volcanic activity on land",
+      "Continental crust is recycled through subduction more rapidly",
+      "Oceanic crust is continuously created at mid-ocean ridges and destroyed at subduction zones",
+      "Tidal forces from the Moon preferentially age continental crust"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Oceanic crust is born at mid-ocean ridges where magma rises and solidifies, spreads outward like a conveyor belt, and is eventually pulled back into the mantle at deep-sea trenches. The full cycle takes about 200 million years, which is young in geological terms. Continental crust is less dense, so it floats and resists being subducted, accumulating ages up to 4 billion years. Saying continents recycle faster reverses the truth. Oceanic crust does not form on land. The Moon's tides influence the oceans and slow Earth's rotation but do not selectively age continental rock.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PM-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "Which type of energy does a moving car possess?",
+    "choices": [
+      "Chemical energy",
+      "Potential energy",
+      "Kinetic energy",
+      "Nuclear energy"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Kinetic energy is the energy of motion, calculated as one-half mass times velocity squared. Any object moving has it: a rolling car, a thrown football, flowing river water. Chemical energy is stored in molecular bonds, like the gasoline in the tank before combustion, but once the engine burns it the energy converts and the car's motion now carries kinetic energy. Potential energy is positional, like the same car parked at the top of a hill before it rolls. Nuclear energy comes from atomic nuclei in reactors or stars and has nothing to do with a normal car in motion.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PM-B5-2",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "A wedge is a type of simple machine. The primary mechanical purpose of a wedge is to:",
+    "choices": [
+      "Change the direction of a force along a rope",
+      "Multiply rotational force through gears",
+      "Convert a downward force into an outward splitting force",
+      "Store energy that can be released later"
+    ],
+    "correct_index": 2,
+    "new_explanation": "A wedge is essentially a moving inclined plane that takes a single push along its blunt end and redirects that force outward along its sloped faces, prying or splitting material apart. Axes, chisels, knives, and splitting mauls all work this way. Changing direction along a rope describes a pulley. Multiplying rotational force through gears describes a wheel-and-axle system or gear train, not a wedge. Storing energy describes a spring or capacitor, not a wedge, which simply redirects force during contact. The signature move of a wedge is conversion of one push into two outward separations.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PM-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "Newton's Second Law states that force equals mass times acceleration (F = ma). If the net force on an object doubles while its mass stays the same, its acceleration will:",
+    "choices": [
+      "Stay the same",
+      "Double",
+      "Quadruple",
+      "Decrease by half"
+    ],
+    "correct_index": 1,
+    "new_explanation": "Rearrange F = ma to a = F/m. With mass held constant, acceleration scales directly with net force, so doubling force doubles acceleration. Quadrupling would only happen if force quadrupled or if mass were also halved. Decreasing by half would require mass to double (a is inversely proportional to mass at fixed F), but mass is fixed here. Staying the same is only true if force is unchanged. The mental shortcut: in F = ma, if one side doubles and one variable is held, the remaining variable must move in lockstep to keep the equation balanced.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PM-B5-5",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "A first-class lever has the fulcrum between the effort and the load. Which of the following is an example of a first-class lever?",
+    "choices": [
+      "A wheelbarrow",
+      "A pair of scissors",
+      "A baseball bat",
+      "A bottle opener"
+    ],
+    "correct_index": 1,
+    "new_explanation": "Scissors place the pivot pin between your hand on the handles (effort) and the material being cut at the blades (load), which is the defining setup of a first-class lever. Seesaws and crowbars work the same way. A wheelbarrow is a second-class lever because the load (cargo) sits between the fulcrum (wheel) and the effort (hands lifting handles). A baseball bat is a third-class lever because the effort (hand near the knob) sits between the fulcrum (other hand or shoulder) and the load (the ball at the barrel). A bottle opener is also second-class.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PM-B5-6",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "If a 10-kg object is lifted 5 meters, how much gravitational potential energy does it gain? (Use g = 10 m/s\u00b2)",
+    "choices": [
+      "15 joules",
+      "50 joules",
+      "500 joules",
+      "5,000 joules"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Gravitational potential energy equals mass times g times height: 10 kg times 10 m/s\u00b2 times 5 m equals 500 joules. The 50-joule answer drops the g factor and just multiplies mass by height, a common slip when students think of weight as a single number. The 15-joule answer adds the values instead of multiplying. The 5,000-joule answer adds an extra factor of 10, perhaps by using g = 100 by mistake. Keep the formula PE = mgh in mind and plug in carefully; each piece must be there and in the right units.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PM-B5-7",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "Friction always acts in what direction relative to an object's motion?",
+    "choices": [
+      "Perpendicular to motion",
+      "In the same direction as motion",
+      "Opposite to the direction of motion",
+      "Downward due to gravity"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Friction is a resistive force that always points opposite to the direction of motion (or the tendency to move). Slide a box right and friction pushes left; brakes work because friction between pads and rotor opposes the wheel's spin. Acting in the same direction as motion would describe a propelling force, not friction, which would mean friction speeds objects up instead of slowing them. Perpendicular to motion describes the normal force, the support force from a surface. Downward describes gravity, which is unrelated to friction's direction. Friction always pushes back against whatever motion is happening.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PM-B5-8",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "A 4-kg block slides down a frictionless ramp and reaches the bottom with a speed of 6 m/s. What is its kinetic energy at the bottom?",
+    "choices": [
+      "24 joules",
+      "48 joules",
+      "72 joules",
+      "144 joules"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Kinetic energy equals one-half mass times velocity squared: 0.5 times 4 kg times 6\u00b2 equals 0.5 times 4 times 36, which equals 72 joules. The 144-joule answer forgets the one-half factor and just multiplies 4 times 36. The 48-joule answer uses 6 instead of 6\u00b2, dropping the velocity-squared term entirely. The 24-joule answer halves 48, compounding two errors. The KE formula has three pieces (\u00bd, mass, velocity squared); skip any one and the answer drifts to a distractor. Always square the velocity before multiplying by mass and half.",
+    "needs_correct_index_review": false
+  },
+  {
+    "external_key": "GS-PM-B5-9",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.physics-mechanics",
+    "stem": "What is the mechanical advantage of a lever when the effort arm is 3 meters and the load arm is 1 meter?",
+    "choices": [
+      "0.33",
+      "1",
+      "3",
+      "4"
+    ],
+    "correct_index": 2,
+    "new_explanation": "Mechanical advantage of a lever equals the effort arm length divided by the load arm length: 3 divided by 1 equals 3. This means a force applied at the effort end can lift a load three times heavier. The 0.33 answer inverts the ratio (load divided by effort) and would describe a lever working against you, useful only for speed or distance multiplication. The MA of 1 implies the arms are equal, like a balance scale, which they are not here. The MA of 4 would require the effort arm to be 4 times the load arm, not 3. Always: effort length over load length.",
+    "needs_correct_index_review": false
+  }
+]

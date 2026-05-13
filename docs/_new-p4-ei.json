@@ -1,0 +1,866 @@
+[
+  {
+    "external_key": "EI-P4-CT-1",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "In a series circuit, the current is:",
+    "choices": [
+      "Different at each component",
+      "Zero at the load",
+      "The same at every point",
+      "Doubled across each resistor"
+    ],
+    "correct_index": 2,
+    "explanation": "A series circuit has one path for current flow. Charge cannot accumulate, so the same current passes through every element in the loop. Voltage divides across components proportional to resistance, but current stays constant. Confusing this rule with the parallel rule is the most common error. In parallel circuits, voltage is constant across branches and current divides. Memorize the pairing: series shares current, parallel shares voltage. Picking 'different at each component' usually means you swapped the two rules.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-2",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Two 10 Ω resistors are connected in series. The total resistance is:",
+    "choices": [
+      "5 Ω",
+      "10 Ω",
+      "15 Ω",
+      "20 Ω"
+    ],
+    "correct_index": 3,
+    "explanation": "Resistors in series add directly: R_total = R1 + R2 = 10 + 10 = 20 Ω. The parallel rule (1/R = 1/R1 + 1/R2) would give 5 Ω, which is choice A and the most common trap. Always confirm the topology before applying a formula. Series means one path, so resistance accumulates. Parallel means multiple paths, so total resistance drops below the smallest branch. For identical resistors in parallel, divide by the count: 10/2 = 5 Ω.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-3",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Two 10 Ω resistors are connected in parallel. The total resistance is:",
+    "choices": [
+      "5 Ω",
+      "10 Ω",
+      "15 Ω",
+      "20 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "For two parallel resistors: R = (R1 × R2) / (R1 + R2) = (10 × 10) / (10 + 10) = 100/20 = 5 Ω. Shortcut for N identical parallel resistors: R/N = 10/2 = 5 Ω. The trap is applying the series formula and getting 20 Ω. Parallel resistance is always less than the smallest branch resistor, because adding paths gives current more places to flow. Never forget to invert the reciprocal sum at the end if using 1/R = 1/R1 + 1/R2.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-4",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "The standard frequency of AC line power in the United States is:",
+    "choices": [
+      "60 Hz",
+      "50 Hz",
+      "120 Hz",
+      "240 Hz"
+    ],
+    "correct_index": 0,
+    "explanation": "US line power alternates at 60 Hz, meaning the voltage completes 60 full cycles per second. Europe and most of Asia use 50 Hz. The 120 V figure refers to RMS voltage, not frequency, which is a common confusion on tests. DC has zero frequency by definition since it does not alternate. Frequency in hertz equals cycles per second. Memorize the pairing: US uses 120 V at 60 Hz; Europe uses 230 V at 50 Hz.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-5",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "A short circuit is best described as a path with:",
+    "choices": [
+      "Infinite resistance",
+      "Standard load resistance",
+      "Reversed polarity",
+      "Near-zero resistance"
+    ],
+    "correct_index": 3,
+    "explanation": "A short circuit bypasses the intended load through a path of near-zero resistance. By Ohm's Law, I = V/R, so as R approaches zero, current surges toward dangerous levels, which is why fuses or breakers must open. An open circuit, by contrast, has infinite resistance and zero current. Reversed polarity is a wiring error, not a short. Standard load resistance is the normal operating condition. Shorts cause overheating, melted insulation, and fires when protective devices fail.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-6",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "An open circuit has:",
+    "choices": [
+      "Zero current and zero voltage across the break",
+      "Maximum current and zero voltage",
+      "Zero current and full source voltage across the break",
+      "Maximum current and full voltage"
+    ],
+    "correct_index": 2,
+    "explanation": "An open circuit has a break that prevents current flow, so I = 0. However, the source voltage still appears across the gap because no current flows to drop voltage across other components. By Kirchhoff's voltage law, voltages around the loop must sum to zero, and with no IR drops elsewhere, the full source voltage appears at the open. This is why a multimeter reads battery voltage across a blown fuse. Confusing open with short reverses both quantities.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-7",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "Three resistors of 6 Ω, 3 Ω, and 2 Ω are connected in parallel. The total resistance is:",
+    "choices": [
+      "0.5 Ω",
+      "2 Ω",
+      "11 Ω",
+      "1 Ω"
+    ],
+    "correct_index": 3,
+    "explanation": "Use 1/R = 1/R1 + 1/R2 + 1/R3 = 1/6 + 1/3 + 1/2. Convert to sixths: 1/6 + 2/6 + 3/6 = 6/6 = 1. So 1/R = 1, meaning R = 1 Ω. The trap answer 11 Ω is the series sum (6+3+2), which applies the wrong topology. Total parallel resistance must be less than the smallest branch, here 2 Ω, so any answer ≥ 2 Ω is automatically wrong. Forgetting to invert 1/R back to R is the other common error.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-8",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Two capacitors of 4 μF and 4 μF are connected in parallel. The total capacitance is:",
+    "choices": [
+      "1 μF",
+      "2 μF",
+      "4 μF",
+      "8 μF"
+    ],
+    "correct_index": 3,
+    "explanation": "Capacitors in parallel add directly: C_total = C1 + C2 = 4 + 4 = 8 μF. Parallel plates effectively combine surface area, increasing capacitance. The rule is opposite that for resistors: capacitors add in parallel but use reciprocals in series. Series capacitance for two equal values gives C/2 = 2 μF, the trap answer. Always verify topology and remember capacitor rules are inverted relative to resistor rules. Confusing the two costs an easy point.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-9",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "Two capacitors of 6 μF and 3 μF are connected in series. The total capacitance is:",
+    "choices": [
+      "1.5 μF",
+      "3 μF",
+      "9 μF",
+      "2 μF"
+    ],
+    "correct_index": 3,
+    "explanation": "For two capacitors in series: C = (C1 × C2) / (C1 + C2) = (6 × 3) / (6 + 3) = 18/9 = 2 μF. The series formula for capacitors mirrors the parallel formula for resistors. The 9 μF distractor is the parallel sum and is the wrong-topology trap. Series capacitance is always less than the smallest individual capacitor, so 2 μF is consistent with C < 3 μF. Reciprocal sum form: 1/C = 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2, giving C = 2 μF. Confirm by checking the answer is less than 3 μF before locking it in.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-10",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "In a parallel circuit, the voltage across each branch is:",
+    "choices": [
+      "The same as the source voltage",
+      "Divided by the number of branches",
+      "Multiplied by the branch count",
+      "Zero except at the source"
+    ],
+    "correct_index": 0,
+    "explanation": "Parallel branches share the same two nodes, so they all see the identical source voltage. Current divides among the branches inversely proportional to branch resistance (smaller R draws more I), but voltage is constant. This pairs with the series rule, where current is constant and voltage divides. Mixing the two rules is the classic ASVAB trap. Memorize: parallel shares voltage, series shares current. Independent of how many branches exist, each branch sees the full source voltage.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-11",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "Kirchhoff's current law states that at any junction:",
+    "choices": [
+      "Voltage in equals voltage out",
+      "Power is conserved",
+      "Current in equals current out",
+      "Resistance sums to zero"
+    ],
+    "correct_index": 2,
+    "explanation": "Kirchhoff's current law (KCL) follows from conservation of charge: charge cannot accumulate at a node, so the sum of currents entering a junction equals the sum leaving. Kirchhoff's voltage law (KVL) is the voltage-loop rule and states that voltages around any closed loop sum to zero. Confusing KCL with KVL is the most common error on the ASVAB. Power conservation is true in any circuit but is a separate energy principle, not one of the two named laws. KCL applies to nodes (junctions); KVL applies to loops (closed paths). Together they are sufficient to solve any linear DC circuit by hand.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-12",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 4,
+    "stem": "A 12 V battery drives a 4 Ω resistor in series with a parallel combination of two 6 Ω resistors. The total current from the battery is:",
+    "choices": [
+      "1 A",
+      "1.5 A",
+      "1.71 A",
+      "3 A"
+    ],
+    "correct_index": 2,
+    "explanation": "First reduce the parallel pair: (6 × 6)/(6 + 6) = 36/12 = 3 Ω. Add the series 4 Ω: R_total = 4 + 3 = 7 Ω. Apply Ohm's Law: I = V/R = 12/7 ≈ 1.71 A. The trap 1 A comes from treating all three resistors as series (4 + 6 + 6 = 16 Ω, giving 0.75 A which is not listed, so misreading the topology often pushes test-takers to 1 A or 1.5 A). Always reduce parallel sections first, then add series sections.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-13",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Direct current (DC) is characterized by:",
+    "choices": [
+      "Periodic reversal of polarity",
+      "Frequency of 60 Hz",
+      "Constant polarity over time",
+      "Sinusoidal waveform"
+    ],
+    "correct_index": 2,
+    "explanation": "DC flows in one direction with constant polarity. A battery is the canonical DC source, producing a steady voltage like 1.5 V or 9 V. AC, by contrast, periodically reverses polarity and is described by frequency in hertz. Distractors about 60 Hz and sinusoidal waveforms apply to AC, not DC. Associating any periodic waveform with DC is the most common trap; ideal DC is flat over time. Pulsed DC exists but does not reverse direction, only varies in magnitude. Remember: DC stays positive (or stays negative), while AC swings between positive and negative each cycle.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-14",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 4,
+    "stem": "Three resistors of 2 Ω, 3 Ω, and 6 Ω are in parallel. The total resistance is:",
+    "choices": [
+      "1 Ω",
+      "2 Ω",
+      "3.6 Ω",
+      "11 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "Use 1/R = 1/2 + 1/3 + 1/6. Convert to sixths: 3/6 + 2/6 + 1/6 = 6/6 = 1. So R = 1 Ω. The series sum 11 Ω is a wrong-topology trap. Parallel total must be less than the smallest branch (2 Ω), so any answer ≥ 2 Ω is impossible. Forgetting to invert 1/R back to R yields 1 reciprocal-ohms which is not a real unit; always finish by taking the reciprocal of the sum.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-15",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 4,
+    "stem": "Two capacitors in series have values 12 μF and 4 μF. The total series capacitance is:",
+    "choices": [
+      "3 μF",
+      "4 μF",
+      "8 μF",
+      "16 μF"
+    ],
+    "correct_index": 0,
+    "explanation": "Series capacitance: C = (C1 × C2)/(C1 + C2) = (12 × 4)/(12 + 4) = 48/16 = 3 μF. The result must be smaller than the smallest individual capacitor, here 4 μF, so 3 μF is consistent. Choice D, 16 μF, is the parallel sum and represents the wrong-topology trap. Capacitor rules are inverted from resistor rules: capacitors add in parallel, use reciprocal sum in series. Memorize the inversion before test day. Reciprocal form: 1/C = 1/12 + 1/4 = 1/12 + 3/12 = 4/12 = 1/3, so C = 3 μF, which confirms the product-over-sum result.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CT-16",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 5,
+    "stem": "A 24 V source feeds a series circuit of 2 Ω and 4 Ω in series with a parallel pair of 6 Ω and 12 Ω. Total current from the source is:",
+    "choices": [
+      "1.5 A",
+      "2.4 A",
+      "3 A",
+      "4 A"
+    ],
+    "correct_index": 1,
+    "explanation": "Reduce the parallel pair: (6 × 12)/(6 + 12) = 72/18 = 4 Ω. Add the two series resistors: R_total = 2 + 4 + 4 = 10 Ω. Apply Ohm's Law: I = V/R = 24/10 = 2.4 A. Common errors include summing all four as series (2+4+6+12 = 24, giving 1 A which is not listed) or computing the parallel pair as 9 Ω. Always reduce parallel sections to a single equivalent before summing with series elements.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-1",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A resistor's primary function is to:",
+    "choices": [
+      "Store electric charge",
+      "Store magnetic energy",
+      "Allow current in one direction only",
+      "Oppose current flow"
+    ],
+    "correct_index": 3,
+    "explanation": "A resistor opposes current flow and dissipates electrical energy as heat. By Ohm's Law, V = IR, so for a given voltage, increasing R reduces I. Capacitors store charge in an electric field. Inductors store energy in a magnetic field. Diodes allow current in one direction only. Each passive component has a distinct role, and confusing them is the most common error. Resistors are the simplest passive component and the basis for voltage dividers, current limiters, and pull-up or pull-down logic.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-2",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A capacitor stores energy in:",
+    "choices": [
+      "An electric field",
+      "A magnetic field",
+      "Chemical bonds",
+      "A semiconductor junction"
+    ],
+    "correct_index": 0,
+    "explanation": "A capacitor consists of two conductive plates separated by a dielectric. Applied voltage produces an electric field between the plates that stores energy. The charge stored is Q = CV. Inductors store energy in magnetic fields. Batteries store energy in chemical bonds. Semiconductor junctions are characteristic of diodes and transistors. The capacitance value C depends on plate area, dielectric thickness, and dielectric constant. Capacitors block DC in steady state but pass AC, which is the opposite of inductor behavior.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-3",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "An inductor stores energy in:",
+    "choices": [
+      "A magnetic field",
+      "An electric field",
+      "Plate capacitance",
+      "A potential well"
+    ],
+    "correct_index": 0,
+    "explanation": "An inductor is typically a coil of wire that stores energy in the magnetic field produced when current flows through it. The energy stored is W = (1/2)LI². Capacitors, by contrast, store energy in an electric field between charged plates. Inductors oppose changes in current (Lenz's law) while capacitors oppose changes in voltage. In AC circuits, inductors offer reactance proportional to frequency, while capacitors offer reactance inversely proportional to frequency. Confusing the two storage mechanisms is the standard test trap.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-4",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A diode conducts current when it is:",
+    "choices": [
+      "Reverse biased",
+      "Open circuited",
+      "Forward biased",
+      "Cooled below freezing"
+    ],
+    "correct_index": 2,
+    "explanation": "A diode acts like a one-way valve. Forward bias (positive voltage on the anode relative to the cathode) overcomes the junction barrier and allows current to flow. Reverse bias blocks current except for a tiny leakage. A silicon diode typically needs about 0.7 V of forward bias to fully conduct. Confusing forward and reverse bias is the most common error. Diodes are used in rectifiers to convert AC to DC, in protection circuits, and as voltage references when reverse biased into the Zener region.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-5",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A transformer with 200 primary turns and 50 secondary turns has a primary voltage of 120 V. The secondary voltage is:",
+    "choices": [
+      "15 V",
+      "30 V",
+      "480 V",
+      "600 V"
+    ],
+    "correct_index": 1,
+    "explanation": "The turns ratio gives the voltage ratio: Vp/Vs = Np/Ns, so Vs = Vp × (Ns/Np) = 120 × (50/200) = 120 × 0.25 = 30 V. With fewer secondary turns than primary, this is a step-down transformer. The trap is inverting the ratio and getting 480 V, which would be a step-up. Verify the direction: fewer turns on the secondary means lower secondary voltage. Ideal transformers also conserve power, so a step-down in voltage produces a step-up in current by the same factor.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-6",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "An SPST switch has:",
+    "choices": [
+      "One pole and one throw",
+      "One pole and two throws",
+      "Two poles and one throw",
+      "Two poles and two throws"
+    ],
+    "correct_index": 0,
+    "explanation": "SPST stands for Single Pole Single Throw. Poles are the number of separate circuits the switch controls. Throws are the number of positions each pole can connect to. An SPST switch is the simplest on-off switch with one circuit and one position. SPDT adds a second throw, allowing the pole to select between two outputs. DPDT controls two circuits with two throws each, commonly used for polarity reversal. Memorize the abbreviations: P is poles, T is throws.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-7",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "The key difference between a fuse and a circuit breaker is:",
+    "choices": [
+      "Fuses respond faster than breakers",
+      "Breakers are slower and one-time use",
+      "Fuses handle higher currents",
+      "Fuses must be replaced; breakers can be reset"
+    ],
+    "correct_index": 3,
+    "explanation": "A fuse contains a metal element that melts and opens the circuit during overcurrent. Once blown, the fuse must be replaced. A circuit breaker uses a thermal or magnetic mechanism to trip but can be manually reset after the fault is cleared. Both protect against overcurrent, but reusability is the practical distinction. Fuses are often faster acting and used where speed matters (electronics protection). Breakers dominate residential and commercial distribution due to convenience. Each device has a current rating that must match the protected circuit.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-8",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "An LED is a:",
+    "choices": [
+      "Resistor that lights up",
+      "Linear electric divider",
+      "Logic enable device",
+      "Light-emitting diode"
+    ],
+    "correct_index": 3,
+    "explanation": "LED stands for Light Emitting Diode. It is a semiconductor diode that emits light when forward biased. Like any diode, an LED only conducts in one direction and has a forward voltage drop, typically 1.8 to 3.3 V depending on color. A current-limiting resistor is required in series to prevent destruction, since the LED has very low dynamic resistance. Reverse biasing an LED does not produce light and can damage it if the reverse voltage exceeds its rating.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-9",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A transformer with twice as many secondary turns as primary turns is a:",
+    "choices": [
+      "Step-down transformer",
+      "Step-up transformer",
+      "Isolation transformer only",
+      "Variable autotransformer"
+    ],
+    "correct_index": 1,
+    "explanation": "When the secondary has more turns than the primary (Ns > Np), the transformer steps voltage up. The ratio Vs/Vp = Ns/Np, so doubling turns doubles voltage. Conservation of power for an ideal transformer means current steps down by the same factor: if voltage doubles, current halves. Step-down works the opposite way: fewer secondary turns, lower secondary voltage, higher secondary current. Isolation transformers have a 1:1 turns ratio. Variable autotransformers (Variac) use a single tapped winding rather than separated primary and secondary.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-10",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A potentiometer is a:",
+    "choices": [
+      "Fixed resistor with three leads",
+      "Variable resistor used as an adjustable voltage divider",
+      "Capacitor with tunable plates",
+      "Diode array"
+    ],
+    "correct_index": 1,
+    "explanation": "A potentiometer is a three-terminal variable resistor used to create an adjustable voltage divider. The two outer terminals connect across the resistive element, and the wiper terminal taps a fraction of that voltage. A rheostat uses the same physical device but with only two terminals connected (one end plus the wiper), acting as a variable resistor in series with a load. Volume knobs in audio equipment are classic potentiometer applications. Fixed resistors have two leads; the third lead is what makes a pot variable.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-11",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A relay is an electrical component that uses:",
+    "choices": [
+      "A semiconductor junction to switch current",
+      "Heat to break a circuit",
+      "Light to trigger a circuit",
+      "An electromagnet to mechanically open or close contacts"
+    ],
+    "correct_index": 3,
+    "explanation": "A relay is an electromagnetically actuated switch. A small control current energizes a coil whose magnetic field pulls an armature, mechanically opening or closing one or more sets of contacts. This allows a low-power signal to control a high-power load with full galvanic isolation. Solid-state relays use semiconductors instead of mechanical contacts but serve the same function. Thermal switches respond to heat, and photodetectors respond to light. Standard electromechanical relays are still common in automotive and industrial control because of robustness and isolation.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-12",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "An NPN bipolar junction transistor (BJT) turns on when:",
+    "choices": [
+      "Base is more positive than emitter by about 0.7 V",
+      "Base is more negative than emitter",
+      "Collector is grounded",
+      "Emitter and collector are shorted"
+    ],
+    "correct_index": 0,
+    "explanation": "An NPN BJT conducts current from collector to emitter when the base-emitter junction is forward biased, meaning the base is roughly 0.7 V more positive than the emitter (for silicon). A small base current controls a much larger collector current, with the ratio set by the transistor's current gain (β or hFE). A PNP transistor is the mirror image, turning on when the base is more negative than the emitter. Confusing NPN and PNP polarities is the most common transistor error.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-13",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 4,
+    "stem": "A 1.5 V cell is a single unit. A 9 V battery is best described as:",
+    "choices": [
+      "A single oversized cell",
+      "Six 1.5 V cells in series",
+      "Three 3 V cells in parallel",
+      "A capacitor pack"
+    ],
+    "correct_index": 1,
+    "explanation": "Standard alkaline cells produce 1.5 V each. A 9 V battery internally contains six 1.5 V cells stacked in series, since series voltage adds: 6 × 1.5 = 9 V. Parallel connection would keep voltage at 1.5 V but multiply available current. A 'battery' is by definition multiple cells; a true single unit is a cell. Confusing cell with battery is a common terminology error. Lithium-based 9 V variants use different chemistry but follow the same series-stacking principle to reach 9 V.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CD-14",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 5,
+    "stem": "An ideal transformer has a primary of 100 V at 2 A. With a 4:1 step-down turns ratio, the secondary current is:",
+    "choices": [
+      "0.5 A",
+      "2 A",
+      "4 A",
+      "8 A"
+    ],
+    "correct_index": 3,
+    "explanation": "An ideal transformer conserves power: Pp = Ps, so Vp × Ip = Vs × Is. With a 4:1 step-down, Vs = Vp/4 = 100/4 = 25 V. Solve for Is: Is = (Vp × Ip)/Vs = (100 × 2)/25 = 200/25 = 8 A. Equivalently, current scales inversely with the turns ratio: Ip × Np = Is × Ns, so Is = Ip × (Np/Ns) = 2 × 4 = 8 A. The trap is inverting the ratio and getting 0.5 A. Voltage steps down means current steps up by the same factor.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-1",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Which of the following is the best conductor of electricity?",
+    "choices": [
+      "Copper",
+      "Aluminum",
+      "Iron",
+      "Rubber"
+    ],
+    "correct_index": 0,
+    "explanation": "Of common engineering materials, copper has the highest conductivity per dollar, which is why electrical wiring standardizes on it. Silver is technically higher but too expensive for bulk wiring. Aluminum is roughly 60% as conductive as copper but lighter, so it dominates power transmission lines. Iron is a poor conductor by comparison and is used for structural and magnetic purposes. Rubber is an insulator. Memorize this rough order for ASVAB: silver > copper > gold > aluminum > iron > water > rubber > glass.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-2",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Which of the following is the best insulator?",
+    "choices": [
+      "Iron",
+      "Copper",
+      "Aluminum",
+      "Glass"
+    ],
+    "correct_index": 3,
+    "explanation": "Glass, rubber, plastic, ceramic, and dry wood are good electrical insulators because their electrons are tightly bound and cannot flow freely. Iron, copper, and aluminum are all metals with free electrons and are conductors. Glass is so resistive that it is used in high-voltage power line insulators where surface contamination must be the dominant leakage path. Pure water is a moderate insulator, but dissolved minerals make tap water mildly conductive, which is why electricity and water are dangerous together.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-3",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "A semiconductor's conductivity falls between that of:",
+    "choices": [
+      "Two different metals",
+      "A conductor and an insulator",
+      "Two different insulators",
+      "Vacuum and a metal"
+    ],
+    "correct_index": 1,
+    "explanation": "Semiconductors have conductivity intermediate between conductors (metals) and insulators (like glass). Silicon and germanium are the most common examples used in modern electronics. Pure (intrinsic) semiconductors have moderate resistivity, but doping with trace impurities like phosphorus or boron dramatically changes their behavior. The intermediate, controllable conductivity is what makes semiconductors the basis of every diode, transistor, and integrated circuit. Conductivity in semiconductors also increases with temperature, the opposite of most metals where higher temperature increases resistance. This temperature behavior helps distinguish semiconductor materials from ordinary conductors on test questions.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-4",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "Silicon doped with phosphorus produces:",
+    "choices": [
+      "N-type semiconductor",
+      "P-type semiconductor",
+      "Pure intrinsic silicon",
+      "An insulator"
+    ],
+    "correct_index": 0,
+    "explanation": "Phosphorus has five valence electrons; silicon has four. Doping silicon with phosphorus contributes extra electrons that are free to carry current, producing an N-type (negative carrier) semiconductor. Doping with boron (three valence electrons) creates electron 'holes' and yields a P-type semiconductor. Joining N-type and P-type regions creates a PN junction, the fundamental structure inside every diode and transistor. The mnemonic: Phosphorus = electrons = Negative carriers = N-type. Boron = holes = Positive carriers = P-type.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-5",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "Silicon doped with boron produces:",
+    "choices": [
+      "N-type semiconductor",
+      "Pure intrinsic silicon",
+      "P-type semiconductor",
+      "A conductor like copper"
+    ],
+    "correct_index": 2,
+    "explanation": "Boron has three valence electrons, one fewer than silicon. Doping introduces 'holes' (missing electrons) that behave as positive charge carriers. This produces a P-type semiconductor. Phosphorus, by contrast, has five valence electrons and produces N-type (electron-rich) material. Combining P and N regions forms the PN junction used in diodes and transistors. Confusing the dopant types is the standard trap. Memorize the mnemonic: Boron = holes = Positive = P-type; Phosphorus = electrons = Negative = N-type.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-6",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "In American Wire Gauge (AWG), a lower number indicates a wire that is:",
+    "choices": [
+      "Thinner with higher resistance",
+      "Thicker with lower resistance",
+      "Made of aluminum, not copper",
+      "Insulated, not bare"
+    ],
+    "correct_index": 1,
+    "explanation": "AWG numbering is inverse: lower numbers mean thicker wires. A 10 AWG wire is much thicker than a 20 AWG wire and has lower resistance per foot. Thicker wires carry more current safely because resistive heating is proportional to I²R. Standard residential 15 A circuits use 14 AWG; 20 A circuits use 12 AWG; high-current applications like ranges may use 6 AWG or larger. The gauge system does not indicate material or insulation, just cross-sectional area. Confusing the inverse relationship is the typical trap.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-7",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A copper wire 100 ft long has resistance R. A 200 ft copper wire of the same gauge has resistance:",
+    "choices": [
+      "0.5R",
+      "R",
+      "2R",
+      "4R"
+    ],
+    "correct_index": 2,
+    "explanation": "Wire resistance is directly proportional to length: R = ρL/A. Doubling the length doubles the resistance, so a 200 ft wire of identical gauge has 2R. The trap 4R would apply if resistance scaled with length squared, which it does not. Halving the cross-sectional area would also double R, but the problem specifies same gauge. To reduce voltage drop on long runs, electricians use a thicker (lower gauge) wire to compensate. Memorize: R proportional to L, R inversely proportional to A.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-8",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 4,
+    "stem": "A copper wire of length L and cross-sectional area A has resistance R. A second copper wire has length 2L and area 2A. Its resistance is:",
+    "choices": [
+      "0.5R",
+      "R",
+      "2R",
+      "4R"
+    ],
+    "correct_index": 1,
+    "explanation": "Wire resistance follows R = ρL/A. Doubling length alone would double R. Doubling area alone would halve R. Doing both simultaneously: R' = ρ(2L)/(2A) = ρL/A = R. The two effects cancel exactly. The trap 4R comes from multiplying both factors without inverting the area term. Always remember: length increases resistance proportionally, while area decreases it proportionally. The proportionality is linear in both directions. Resistivity ρ depends only on material and temperature, not on geometry. This problem rewards careful algebra over rote memorization of formulas.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-9",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "For most metals, electrical resistance increases as:",
+    "choices": [
+      "Temperature decreases",
+      "Temperature increases",
+      "Length decreases",
+      "Wire gets thicker"
+    ],
+    "correct_index": 1,
+    "explanation": "Most metals have a positive temperature coefficient of resistance: heating the metal makes its lattice vibrate more, scattering conduction electrons and raising resistance. A tungsten light bulb has roughly 10 times higher resistance at operating temperature than when cold, which is why inrush current spikes briefly when switched on. Semiconductors are the major exception: they typically conduct better when warmed because more charge carriers are thermally generated. Confusing metal versus semiconductor temperature behavior is a common error.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-10",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Which material is the best conductor among these everyday substances?",
+    "choices": [
+      "Dry wood",
+      "Pure water",
+      "Salt water",
+      "Glass"
+    ],
+    "correct_index": 2,
+    "explanation": "Pure water is actually a poor conductor because it lacks free ions. Salt water, by contrast, is a good conductor because dissolved sodium and chloride ions carry charge freely. This is why electrical accidents in seawater are far more dangerous than in distilled water and why marine electrical safety is strict. Dry wood and glass are excellent insulators. The lesson on the ASVAB: do not assume water in general is a conductor; ionic content matters. Pure deionized water is closer to an insulator than a conductor.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-11",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 4,
+    "stem": "Resistivity (ρ) and conductivity (σ) are related by:",
+    "choices": [
+      "ρ = σ",
+      "ρ = σ²",
+      "ρ = 1/σ",
+      "ρ = σ + 1"
+    ],
+    "correct_index": 2,
+    "explanation": "Resistivity and conductivity are reciprocals: ρ = 1/σ. A material with high conductivity (like copper) has low resistivity. A material with low conductivity (like glass) has very high resistivity. Resistivity is measured in ohm-meters (Ω·m), conductivity in siemens per meter (S/m). The two describe the same physical property from opposite angles. Wire resistance R = ρL/A; equivalently R = L/(σA). On the ASVAB, expect to identify the reciprocal relationship rather than recall specific numerical values.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-12",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "Compared to copper, aluminum wire of the same gauge has:",
+    "choices": [
+      "Lower resistance",
+      "Equal resistance",
+      "Higher resistance",
+      "Zero resistance"
+    ],
+    "correct_index": 2,
+    "explanation": "Aluminum has higher resistivity than copper, so a same-gauge aluminum wire has higher resistance than a copper wire of identical length and cross-section. Aluminum is roughly 60% as conductive as copper, meaning aluminum needs about 1.6 times more cross-section to match copper's resistance. Aluminum is still used in power transmission and some service entrance applications because it is much lighter and cheaper. Confusing the two metals' relative conductivity is the common trap; copper remains the standard for premium and high-current applications.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-CI-13",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 5,
+    "stem": "A copper wire has length 50 m, cross-sectional area 1 mm², and resistivity 1.7 × 10⁻⁸ Ω·m. Its resistance is approximately:",
+    "choices": [
+      "0.85 Ω",
+      "1.7 Ω",
+      "8.5 Ω",
+      "17 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "Use R = ρL/A. Convert area to SI: 1 mm² = 1 × 10⁻⁶ m². Compute: R = (1.7 × 10⁻⁸ × 50) / (1 × 10⁻⁶) = (8.5 × 10⁻⁷) / (1 × 10⁻⁶) = 0.85 Ω. The most common trap is forgetting to convert mm² to m², which throws the answer off by a factor of 10⁶. Always confirm units are consistent before plugging in. SI requires meters for length and m² for area. Aluminum at the same dimensions would give roughly 1.4 Ω.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-OL-1",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "Ohm's Law states that:",
+    "choices": [
+      "V = I × R",
+      "V = I + R",
+      "V = I / R",
+      "V = I × R²"
+    ],
+    "correct_index": 0,
+    "explanation": "Ohm's Law: V = I × R, where V is voltage in volts, I is current in amperes, and R is resistance in ohms. Rearrangements include I = V/R and R = V/I. The common error is reversing the multiplication or dividing in the wrong direction, which yields wrong units. Always memorize the V-I-R triangle: cover the quantity you want and the remaining two show the operation. Squaring R would mix Ohm's Law with the power formula P = I²R, a separate equation entirely.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-OL-2",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "A 12 V source drives a 4 Ω resistor. The current is:",
+    "choices": [
+      "0.33 A",
+      "3 A",
+      "4 A",
+      "48 A"
+    ],
+    "correct_index": 1,
+    "explanation": "Apply Ohm's Law: I = V/R = 12/4 = 3 A. The trap 48 A comes from multiplying V × R instead of dividing, a common rearrangement error. Always confirm the form: I = V/R, not V × R. Choice A, 0.33 A, would result from inverting V and R (R/V = 4/12). Drawing the V-I-R triangle prevents this. Whenever you compute current and the answer seems unreasonably high or low, verify you divided in the right direction.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-OL-3",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "Electrical power is calculated using:",
+    "choices": [
+      "P = V/I",
+      "P = V + I",
+      "P = V/R²",
+      "P = V × I"
+    ],
+    "correct_index": 3,
+    "explanation": "Power in watts equals voltage times current: P = V × I. Substituting Ohm's Law gives two more useful forms: P = I²R and P = V²/R. All three forms are equivalent and used depending on which quantities are known. Confusing P = V × I with P = V/I is the standard trap. Watts measure the rate of energy transfer (joules per second). A 100 W bulb at 120 V draws about 0.83 A. Memorize all three forms before test day.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-OL-4",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 10 Ω resistor carries 2 A of current. The power dissipated is:",
+    "choices": [
+      "5 W",
+      "20 W",
+      "40 W",
+      "100 W"
+    ],
+    "correct_index": 2,
+    "explanation": "Use P = I²R = (2)² × 10 = 4 × 10 = 40 W. The classic trap is forgetting to square the current and computing P = I × R = 20 W (which is choice B and equals voltage, not power). Voltage across the resistor is V = IR = 2 × 10 = 20 V, which would also give P = V × I = 20 × 2 = 40 W, confirming the answer. All three power forms (P = VI, P = I²R, P = V²/R) must agree for the same circuit.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-OL-5",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A device rated 120 V draws 5 A. Its resistance is:",
+    "choices": [
+      "24 Ω",
+      "60 Ω",
+      "115 Ω",
+      "600 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "Apply Ohm's Law rearranged: R = V/I = 120/5 = 24 Ω. The trap 600 Ω comes from multiplying V × I instead of dividing, which actually gives power (600 W), not resistance. Verify by reversing: V = IR = 5 × 24 = 120 V, which matches. The device also dissipates P = V × I = 120 × 5 = 600 W, illustrating why dimensional units matter. Always check that your computed unit (Ω here) makes sense in the problem context.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-OL-6",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "Two 10 Ω resistors in series across a 20 V source. The voltage across each resistor is:",
+    "choices": [
+      "5 V",
+      "10 V",
+      "20 V",
+      "40 V"
+    ],
+    "correct_index": 1,
+    "explanation": "In series, total resistance is 20 Ω and current is I = V/R = 20/20 = 1 A. Voltage across each resistor: V = IR = 1 × 10 = 10 V. Equivalently, equal series resistors split the source voltage equally, so each sees 20/2 = 10 V. Confirmation: the two 10 V drops sum to 20 V, satisfying Kirchhoff's voltage law. The trap 20 V would mean the full source voltage is across one resistor, which only happens if the other has zero resistance.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-OL-7",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 4,
+    "stem": "A 1500 W heater runs for 4 hours. The energy consumed is:",
+    "choices": [
+      "0.375 kWh",
+      "6 kWh",
+      "60 kWh",
+      "6000 kWh"
+    ],
+    "correct_index": 1,
+    "explanation": "Energy in kilowatt-hours equals power in kilowatts times time in hours: E = P × t = 1.5 kW × 4 h = 6 kWh. Watch the unit conversion: 1500 W must become 1.5 kW before multiplying by hours. The trap 6000 kWh comes from forgetting to convert watts to kilowatts (1500 × 4 = 6000 but in W·h, equal to 6 kWh). Utility bills are quoted in kWh, so this conversion is essential. At $0.15 per kWh, the heater costs $0.90 to run.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-OL-8",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 4,
+    "stem": "A 12 V source feeds parallel resistors of 4 Ω and 6 Ω. Current through the 4 Ω resistor is:",
+    "choices": [
+      "1.2 A",
+      "2 A",
+      "3 A",
+      "5 A"
+    ],
+    "correct_index": 2,
+    "explanation": "In parallel, each branch sees the full source voltage. Current through the 4 Ω: I = V/R = 12/4 = 3 A. Current through the 6 Ω: I = 12/6 = 2 A. Total current from source: 3 + 2 = 5 A. The trap 1.2 A comes from computing total parallel resistance ((4×6)/(4+6) = 2.4 Ω, giving 5 A total) and incorrectly dividing among branches. In parallel, treat each branch independently using the source voltage, not the total current.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-OL-9",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A resistor has 60 V across it and dissipates 180 W. Its resistance is:",
+    "choices": [
+      "3 Ω",
+      "20 Ω",
+      "60 Ω",
+      "180 Ω"
+    ],
+    "correct_index": 1,
+    "explanation": "Use P = V²/R, solve for R: R = V²/P = 3600/180 = 20 Ω. Cross-check with current: I = P/V = 180/60 = 3 A, then R = V/I = 60/3 = 20 Ω. Both forms agree. The trap 3 Ω comes from confusing P/V (which gives current 3 A, not resistance). Always confirm units match: resistance must come out in ohms. Knowing three of the four quantities (V, I, R, P) lets you compute the other using any of the linked formulas.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-OL-10",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 5,
+    "stem": "A voltage divider has 6 Ω and 3 Ω in series across 18 V. The voltage across the 3 Ω resistor is:",
+    "choices": [
+      "3 V",
+      "6 V",
+      "9 V",
+      "12 V"
+    ],
+    "correct_index": 1,
+    "explanation": "Total resistance is 6 + 3 = 9 Ω. Current is I = V/R = 18/9 = 2 A. Voltage across the 3 Ω: V = IR = 2 × 3 = 6 V. Equivalently, voltage divider rule: V_3 = V_source × (R_3 / R_total) = 18 × (3/9) = 6 V. Check: V across 6 Ω is 2 × 6 = 12 V, and 6 + 12 = 18 V, satisfying Kirchhoff's voltage law. Voltage divides proportional to resistance in a series circuit, so the larger resistor takes the larger share.",
+    "status": "draft"
+  },
+  {
+    "external_key": "EI-P4-OL-11",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 5,
+    "stem": "An ideal transformer has primary power of 240 W. The secondary power is:",
+    "choices": [
+      "0 W",
+      "60 W",
+      "240 W",
+      "960 W"
+    ],
+    "correct_index": 2,
+    "explanation": "An ideal transformer is lossless: Pp = Ps. Therefore secondary power equals primary power, 240 W, regardless of the turns ratio. Voltage and current scale inversely between primary and secondary, but their product (power) is conserved. Real transformers have small losses from winding resistance and core hysteresis, typically 95 to 99% efficiency. The trap is assuming a step-up or step-down also changes power, which is false for an ideal model. Always remember power conservation when analyzing ideal transformer problems.",
+    "status": "draft"
+  }
+]

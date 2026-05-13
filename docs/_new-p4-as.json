@@ -1,0 +1,850 @@
+[
+  {
+    "external_key": "AS-P4-HT-1",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which screwdriver tip has a six-pointed star pattern?",
+    "choices": [
+      "Torx",
+      "Slotted",
+      "Phillips",
+      "Robertson"
+    ],
+    "correct_index": 0,
+    "explanation": "Torx drivers have a six-pointed star tip that seats into matching star recesses found on automotive trim, brake calipers, and electronics. The geometry resists cam-out under high torque, which is why carmakers favor it. Phillips has a four-leaf cross pattern that cams out on purpose to limit torque. Slotted, also called flathead, uses a single straight blade and slips easily under load. Robertson is a square recess used mostly in Canadian woodworking. Each tip belongs to its own fastener family, and forcing the wrong tip strips the recess.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-2",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "Which wrench fully surrounds a hex fastener on all six sides?",
+    "choices": [
+      "Open-end wrench",
+      "Box-end wrench",
+      "Pipe wrench",
+      "Strap wrench"
+    ],
+    "correct_index": 1,
+    "explanation": "A box-end wrench wraps the fastener completely with a six- or twelve-point ring, spreading load across every flat so it resists rounding even at high torque. An open-end wrench grips only two flats and tends to spread under load, which rounds the corners on tight bolts. A pipe wrench is built for round stock and its teeth will chew up a hex head. A strap wrench uses a rubber or fabric strap for slippery cylinders like oil filters and has no grip on flats at all.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-3",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A mechanic needs to grip a small wire deep inside an engine bay. Which tool fits best?",
+    "choices": [
+      "Channel-lock pliers",
+      "Lineman's pliers",
+      "Needle-nose pliers",
+      "Tongue-and-groove pliers"
+    ],
+    "correct_index": 2,
+    "explanation": "Needle-nose pliers have long, tapered jaws that reach into tight cavities and pinch small wires, terminals, or cotter pins where wider tools cannot fit. Channel-lock and tongue-and-groove pliers are the same tool under different names, sized for large nuts and pipes and far too bulky for fine work. Lineman's pliers have stout square jaws for cutting and twisting heavy electrical conductors at chest height, not for delicate reach-in work. The defining feature here is the long narrow nose, not the cutting edge or the adjustable joint.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-4",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "Which hammer has one flat striking face and one rounded face used to shape metal?",
+    "choices": [
+      "Claw hammer",
+      "Dead-blow hammer",
+      "Sledgehammer",
+      "Ball-peen hammer"
+    ],
+    "correct_index": 3,
+    "explanation": "A ball-peen hammer has a flat face for general striking and a rounded ball face used to peen rivets, shape sheet metal, and round over the edges of pins. It is the standard hammer in a metalworking shop. A claw hammer is for driving and pulling nails in wood, with a split claw on the back end instead of a ball. A sledgehammer is a heavy two-handed striker for demolition. A dead-blow hammer has a shot-filled head that minimizes rebound, used for seating parts without marking them.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-5",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "Which saw is designed specifically for cutting metal?",
+    "choices": [
+      "Hacksaw",
+      "Coping saw",
+      "Crosscut saw",
+      "Rip saw"
+    ],
+    "correct_index": 0,
+    "explanation": "A hacksaw uses a thin, fine-toothed blade tensioned in a C-shaped frame and is the go-to handsaw for cutting steel rod, conduit, and bolts. The blade can be swapped for different tooth counts based on material thickness. A coping saw has a similar frame but a much thinner blade meant for curved cuts in wood molding. A crosscut saw has aggressive teeth set for cutting across wood grain. A rip saw is for cutting with the grain in lumber. Trying to cut metal with any wood saw destroys the teeth in a few strokes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-6",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 4,
+    "stem": "Which measuring tool reads down to one-thousandth of an inch on a thimble scale?",
+    "choices": [
+      "Tape measure",
+      "Outside micrometer",
+      "Combination square",
+      "Folding rule"
+    ],
+    "correct_index": 1,
+    "explanation": "An outside micrometer has a precision-threaded spindle and a graduated thimble that resolves to 0.001 inch, used to measure shaft diameters, brake rotor thickness, and bearing journals. A tape measure resolves to about 1/16 inch and is meant for rough layout work, nowhere near precision metal measurement. A combination square is a layout tool that checks 45 and 90 degree angles and marks lines, but it does not read fine dimensions. A folding rule reads in 1/16 inch increments and is used in carpentry. The thimble and spindle are the signature of micrometer-class precision.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-7",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A flat file with single-cut teeth is best used for what task?",
+    "choices": [
+      "Shearing sheet steel",
+      "Boring round holes",
+      "Finishing flat metal surfaces",
+      "Driving roll pins"
+    ],
+    "correct_index": 2,
+    "explanation": "A single-cut flat file has rows of parallel teeth that smooth and finish flat metal surfaces, removing burrs after cutting or filing weld bead flush. Boring round holes is the job of a drill bit or hole saw, not any file. Shearing sheet steel takes tin snips or aviation snips, which cut by closing two blades on the metal. Driving roll pins calls for a roll pin punch, a hammer-struck tool sized to match the pin diameter. Each wrong answer points to a different tool family entirely.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-8",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "Which punch is used to drive a stuck pin partway out before finishing with a smaller punch?",
+    "choices": [
+      "Center punch",
+      "Prick punch",
+      "Pin punch",
+      "Drift punch"
+    ],
+    "correct_index": 3,
+    "explanation": "A drift punch has a long, gently tapered shaft used to start a stubborn pin moving in its bore without damaging the pin or the surrounding metal. Once the pin breaks loose, you switch to a straight-walled pin punch sized just under the pin diameter to drive it the rest of the way through. A center punch is for marking drill start points and has a sharp 90 degree tip. A prick punch is a finer marker used in layout work. The taper versus straight shaft is the key distinction in the punch family.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-9",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "Which chisel is hardened to cut cold metal?",
+    "choices": [
+      "Cold chisel",
+      "Wood chisel",
+      "Mortise chisel",
+      "Paring chisel"
+    ],
+    "correct_index": 0,
+    "explanation": "A cold chisel has a thick, blunt cutting edge made from hardened tool steel so it can cut steel, cast iron, and rivets at room temperature when struck with a ball-peen hammer. Wood chisels have thin, sharp bevels ground for slicing wood fibers, and the edge will chip immediately on metal. Mortise chisels are heavy-duty wood chisels for chopping square sockets in joinery. Paring chisels are thin wood chisels for fine fitting. All three wood chisels share a delicate cutting geometry that fails on hard materials. The cold chisel name itself signals the use case.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-10",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "A spirit level uses what feature to show whether a surface is flat?",
+    "choices": [
+      "A weighted plumb bob",
+      "A bubble in a curved tube of liquid",
+      "A magnetic compass needle",
+      "A laser dot"
+    ],
+    "correct_index": 1,
+    "explanation": "A spirit level contains a sealed glass vial filled mostly with alcohol or oil, with a small air bubble that floats to the highest point. When the level sits on a truly flat surface, the bubble centers between two marked lines on the vial. A plumb bob is a weighted string used to find vertical, not horizontal flatness. A magnetic compass points to magnetic north and tells you nothing about a surface plane. A laser level uses a beam to project a flat reference line across long distances but is a different tool from a spirit level.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-11",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A hand plane is used primarily to do what?",
+    "choices": [
+      "Cut curved profiles in trim",
+      "Bore deep holes in hardwood",
+      "Shave thin layers off a wood surface",
+      "Drive finishing nails flush"
+    ],
+    "correct_index": 2,
+    "explanation": "A hand plane holds a steel blade at a fixed angle in a wood or metal body and shaves thin curls of wood off the surface as you push it, used to flatten boards or trim a door edge to fit. Boring deep holes is the job of an auger bit in a brace or a long drill bit. Cutting curved profiles in trim is what a router or molding plane does. Driving finishing nails flush calls for a hammer and a nail set, which sinks the head below the surface. The shaving action is the defining feature of a plane.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-12",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 4,
+    "stem": "Which tool measures the inside diameter of a bore with the highest precision?",
+    "choices": [
+      "Combination square",
+      "Tape measure",
+      "Outside caliper",
+      "Telescoping gauge with a micrometer"
+    ],
+    "correct_index": 3,
+    "explanation": "A telescoping gauge is spring-loaded so its T-shaped ends expand to touch the bore walls, then locks. You remove it and measure across the locked ends with an outside micrometer, giving a reading to 0.001 inch. A tape measure resolves to about 1/16 inch and cannot reach evenly across a curved interior. An outside caliper measures the outside of a part, the wrong geometry for a bore. A combination square is a layout tool for angles and edges and reads nothing inside a hole. The two-step gauge plus micrometer process is standard machine-shop practice.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-13",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A claw hammer's claw is used for what task?",
+    "choices": [
+      "Pulling nails",
+      "Bending sheet metal",
+      "Splitting kindling",
+      "Setting roofing tacks"
+    ],
+    "correct_index": 0,
+    "explanation": "The split claw on the back of a carpenter's hammer is shaped to slip under a nail head and pry the nail out of the wood, using the hammer head as a fulcrum. Bending sheet metal is done with a brake or with seamer pliers, not a hammer claw. Splitting kindling calls for a hatchet or splitting maul with a wedge profile. Setting roofing tacks is done with the flat striking face of any hammer, not the claw side. The claw is a single-purpose nail puller, not a general prying or cutting tool.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-HT-14",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 5,
+    "stem": "A half-round file is most useful for what shape of work?",
+    "choices": [
+      "Flattening a square bar",
+      "Finishing a curved inside edge",
+      "Cutting external threads",
+      "Polishing a flat sheet"
+    ],
+    "correct_index": 1,
+    "explanation": "A half-round file has one flat face and one curved face, and the curved side fits inside concave radii to smooth and shape curved inner edges like the lip of a port or the inside of an arch cut in sheet metal. Flattening a square bar calls for a fully flat file. Cutting external threads is the job of a die in a die stock, an entirely different operation from filing. Polishing a flat sheet uses abrasive paper backed by a flat block. The half-round profile is selected for its ability to fit a curve the flat file cannot reach.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-MR-1",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "A wet, oily black spark plug usually indicates what condition?",
+    "choices": [
+      "Oil burning past worn rings or valve seals",
+      "A lean fuel mixture",
+      "Coolant leaking into the cylinder",
+      "Normal healthy combustion"
+    ],
+    "correct_index": 0,
+    "explanation": "Wet black oil deposits on a spark plug tip mean engine oil is reaching the combustion chamber, usually past worn piston rings, worn valve guide seals, or a failing PCV system. The cylinder fires on a mix of fuel and oil, leaving an oily residue. A lean mixture leaves a chalky white deposit because there is too much air and the plug runs hot and clean. Coolant intrusion leaves a crusty white film with a sweet smell. A healthy plug is light tan or grayish brown and dry. The wet plus black combination points specifically to oil consumption.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-MR-2",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "When is a tire rotation typically recommended on a passenger car?",
+    "choices": [
+      "Only when tread depth reaches the wear bars",
+      "Every 5,000 to 7,500 miles",
+      "Each time the tires are remounted",
+      "Annually regardless of mileage"
+    ],
+    "correct_index": 1,
+    "explanation": "Tire manufacturers and most carmakers call for rotation every 5,000 to 7,500 miles to even out wear between the front and rear positions, since the front tires usually wear faster from steering and weight on the drive axle. Waiting for the wear bars means uneven wear has already shortened the set's life. Remounting happens only when a tire is replaced or repaired, far less frequently than rotation. A fixed annual rule ignores how much the car was actually driven, so a high-mileage driver would skip several rotations. Mileage is the practical trigger.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-MR-3",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A brake pad is at the end of its life when the friction material wears down to what?",
+    "choices": [
+      "Three-quarters of its original thickness",
+      "Half its original thickness",
+      "About 1/16 inch or less, exposing the wear indicator",
+      "The pad backing plate is fully exposed and grinding"
+    ],
+    "correct_index": 2,
+    "explanation": "Brake pads have a metal wear indicator tab that contacts the rotor when the friction material thins to roughly 1/16 inch, producing a high-pitched squeal as a warning that replacement is due soon. Replacing at half thickness is wasteful and earlier than needed. Three-quarters of original thickness is barely broken in. Waiting until the steel backing plate is grinding directly on the rotor damages the rotor and can cause brake failure, well past the safe limit. The 1/16 inch indicator is the trigger for service before damage starts.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-MR-4",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 4,
+    "stem": "A chalky white deposit on a spark plug usually points to what problem?",
+    "choices": [
+      "A rich fuel mixture",
+      "Worn distributor cap",
+      "Oil contamination",
+      "A lean fuel mixture or overheating"
+    ],
+    "correct_index": 3,
+    "explanation": "A chalky or powdery white deposit on the plug nose means the combustion temperature is too high, usually from a lean air-fuel mixture, a vacuum leak, or cooling issues. The plug runs hot enough to burn away normal soot and leave only ash. A rich mixture produces dry black sooty deposits because excess fuel leaves carbon behind. Oil contamination leaves a wet, shiny black film. A worn distributor cap causes misfires and rough running but not the chalky deposit pattern. Color and texture of plug deposits are a direct read on combustion health.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-MR-5",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "Why does engine coolant need to be flushed and replaced periodically?",
+    "choices": [
+      "The corrosion inhibitors wear out over time",
+      "It loses its color and looks dirty",
+      "Water evaporates from the mixture",
+      "It picks up gasoline residue"
+    ],
+    "correct_index": 0,
+    "explanation": "Coolant contains corrosion inhibitors and pH buffers that protect aluminum heads, iron blocks, and rubber hoses from chemical attack. These additives deplete over time, leaving the coolant acidic and conductive, which corrodes the cooling system from the inside even though the fluid looks fine. Visible color change is not the failure mode, since some coolants stay tinted long past their service life. Water does not evaporate from a sealed pressurized system. Gasoline never reaches the coolant in a healthy engine. The chemistry depletion drives the service interval.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-MR-6",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "Which test best checks the health of a 12-volt automotive battery?",
+    "choices": [
+      "Measuring open-circuit voltage with a voltmeter",
+      "A load test under starter-level current draw",
+      "Smelling the vent cap for sulfur",
+      "Shaking the battery to check fluid sound"
+    ],
+    "correct_index": 1,
+    "explanation": "A load tester pulls heavy current from the battery, similar to what the starter draws, and measures how well the voltage holds up under that load. A weak battery may show a normal resting voltage but collapse under load, which is the failure mode that strands drivers. Open-circuit voltage alone can mask a battery that cannot deliver cranking current. A sulfur smell only appears on a battery that is already badly damaged or overcharging. Shaking is not a real diagnostic and is unsafe with sealed batteries. Load testing is the field-standard check.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-MR-7",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "After replacing a brake caliper, why must you bleed the brake lines?",
+    "choices": [
+      "To recharge the master cylinder battery",
+      "To warm the brake fluid for proper operation",
+      "To remove air that compresses and creates a spongy pedal",
+      "To prime the ABS pump"
+    ],
+    "correct_index": 2,
+    "explanation": "Opening a brake line lets air into the hydraulic system, and air compresses under pressure while brake fluid does not. Trapped air produces a soft, spongy pedal and reduces braking force. Bleeding pushes fluid through the line until clean fluid flows from the bleeder screw, carrying the air out with it. Brake fluid does not need to be warmed before use. There is no battery in a master cylinder. ABS pumps may need a scan-tool bleed procedure on some vehicles, but the main reason for bleeding is air removal, not priming the ABS.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-MR-8",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "What is the most common reason to change engine oil at a manufacturer-specified interval?",
+    "choices": [
+      "The oil viscosity becomes lower than required only at startup",
+      "The oil evaporates and the engine runs dry",
+      "The oil changes color and looks unattractive",
+      "The oil collects soot, metal particles, and acids over time"
+    ],
+    "correct_index": 3,
+    "explanation": "As oil circulates, it traps combustion soot, microscopic metal wear particles, and acidic byproducts, and its additive package gradually wears out. Replacing the oil and filter on schedule removes that contamination and restores fresh detergents and corrosion inhibitors. Engine oil does not evaporate meaningfully in a sealed lubrication system. Color is a poor indicator since diesel oil turns black almost immediately and gasoline-engine oil darkens within hundreds of miles without losing function. Viscosity does shift with use, but the soot and additive depletion drive the published interval, not startup viscosity alone.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-1",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Which fire extinguisher class is rated for flammable liquids like gasoline and oil?",
+    "choices": [
+      "Class B",
+      "Class A",
+      "Class C",
+      "Class D"
+    ],
+    "correct_index": 0,
+    "explanation": "Class B extinguishers are rated for flammable liquids such as gasoline, oil, grease, and solvents, common fuels in any auto shop. The agent smothers the fire and cuts off oxygen. Class A is for ordinary combustibles like wood, paper, and cloth and uses water or foam, which would spread a burning liquid. Class C is for energized electrical equipment and uses a nonconductive agent. Class D is for combustible metals like magnesium and lithium and uses dry powder. Using the wrong class can make the fire worse, which is why class markings appear on every extinguisher label.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-2",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Which fire extinguisher class is intended for cooking oil fires in a commercial kitchen?",
+    "choices": [
+      "Class A",
+      "Class K",
+      "Class C",
+      "Class B"
+    ],
+    "correct_index": 1,
+    "explanation": "Class K extinguishers are designed for cooking oils and animal fats found in commercial deep fryers. The agent saponifies the hot oil, forming a soapy crust that smothers the fire and cools the surface to prevent reignition. Class A is for ordinary combustibles and uses water, which violently splashes burning oil. Class B handles industrial flammable liquids like gasoline, but its agents are not optimized for the high temperatures of fryer fires. Class C is for live electrical equipment. Cooking oil is technically flammable liquid, but its fire behavior is severe enough that a dedicated class was created.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-3",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What does PPE stand for in a shop safety context?",
+    "choices": [
+      "Primary Plant Engineering",
+      "Power Pneumatic Equipment",
+      "Personal Protective Equipment",
+      "Professional Practice Endorsement"
+    ],
+    "correct_index": 2,
+    "explanation": "Personal Protective Equipment, or PPE, is the gear worn to shield the worker from hazards: safety glasses, hearing protection, gloves, steel-toe boots, respirators, and welding helmets. OSHA standards require employers to assess hazards and provide appropriate PPE. Power Pneumatic Equipment is not a recognized term and confuses tools with safety gear. Primary Plant Engineering is unrelated to personal safety and sounds like a job title. Professional Practice Endorsement is invented language. The acronym is universal across construction, automotive, and industrial shops.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-4",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Oily rags should be stored in what kind of container?",
+    "choices": [
+      "A wooden crate near the heater",
+      "An open cardboard box",
+      "A plastic bag in a corner",
+      "A sealed metal can with a self-closing lid"
+    ],
+    "correct_index": 3,
+    "explanation": "Oily rags can spontaneously combust as oxidation generates heat inside a pile faster than the heat can escape. A sealed metal can with a self-closing lid limits oxygen and contains any ignition, which is why fire codes require it. An open cardboard box gives the rags plenty of oxygen and adds a combustible container around them, the worst case. A plastic bag can melt and traps heat without controlling oxygen flow. A wooden crate near a heater combines fuel, an ignition source, and unrestricted oxygen. The sealed metal can is the only correct option.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-5",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "Why must jack stands be used after lifting a vehicle with a hydraulic jack?",
+    "choices": [
+      "The jack alone can lose pressure and drop the vehicle",
+      "Jack stands hold the jack in place",
+      "Jack stands speed up the lift",
+      "The jack runs out of fluid quickly"
+    ],
+    "correct_index": 0,
+    "explanation": "A hydraulic jack relies on a seal that can fail or slowly bleed pressure, and a single seal leak can drop several thousand pounds onto whatever is underneath. Jack stands provide a positive mechanical support that does not depend on hydraulic pressure, so the vehicle stays up even if the jack fails. Jack stands do not hold the jack itself, they hold the vehicle. They do not affect lift speed since the jack still does the lifting. Hydraulic jacks do not noticeably consume fluid in normal use. The rule is simple: never get under a vehicle supported only by a jack.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-6",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 4,
+    "stem": "Lockout-tagout (LOTO) is performed to control what kind of hazard?",
+    "choices": [
+      "Heat stress in hot environments",
+      "Unexpected release of stored energy",
+      "Chemical splash to the eyes",
+      "Hearing loss from loud machinery"
+    ],
+    "correct_index": 1,
+    "explanation": "Lockout-tagout isolates an energy source, electrical, hydraulic, pneumatic, or mechanical, and locks the disconnect or valve in the off position with a personal padlock and tag. The goal is to prevent unexpected startup or release of stored energy while a worker services the equipment. Heat stress is controlled by hydration, breaks, and engineering controls, not LOTO. Chemical splash is addressed by face shields, splash goggles, and emergency eye-wash stations. Hearing loss is controlled by earplugs, muffs, and engineering noise reduction. LOTO targets energy isolation specifically.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-7",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "What document gives chemical hazard information for products used in a shop?",
+    "choices": [
+      "Service Manual",
+      "Bill of Lading",
+      "Safety Data Sheet (SDS)",
+      "Maintenance Log"
+    ],
+    "correct_index": 2,
+    "explanation": "A Safety Data Sheet, formerly called MSDS, is a standardized document supplied by the manufacturer that lists a product's hazards, handling precautions, first aid measures, firefighting guidance, and disposal rules. OSHA requires SDS access for every hazardous chemical on site. A bill of lading is a shipping document that tracks goods in transit and contains no hazard data. A service manual covers repair procedures for a specific vehicle or piece of equipment. A maintenance log tracks what work has been done. The SDS is the single source for chemical safety information.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-8",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "On a bench grinder, the tongue rest should be set how far from the wheel?",
+    "choices": [
+      "Distance does not matter",
+      "About 1 inch",
+      "Flush against the wheel touching it",
+      "No more than 1/8 inch"
+    ],
+    "correct_index": 3,
+    "explanation": "The tongue guard, also called the spark deflector, is set within 1/8 inch of the wheel face to prevent the workpiece from being pulled between the rest and the wheel, which can shatter the wheel and throw fragments. The tool rest below the wheel uses the same 1/8 inch rule. A 1 inch gap is far too large and creates a pinch hazard. Touching the wheel grinds the guard and damages both parts. Distance very much matters; OSHA and ANSI standards specify the 1/8 inch maximum precisely because larger gaps cause severe injuries.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-9",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "What is the correct angle for setting an extension ladder against a wall?",
+    "choices": [
+      "The 4-to-1 rule, 1 foot out for every 4 feet of height",
+      "A 1-to-1 angle, equal out and up",
+      "As steep as possible, nearly vertical",
+      "It does not matter as long as the feet are level"
+    ],
+    "correct_index": 0,
+    "explanation": "The 4-to-1 rule places the ladder feet 1 foot out from the wall for every 4 feet of vertical height up to the support point, giving roughly a 75 degree angle. This balances the load between the feet and the wall and resists both sliding out and tipping back. A 1-to-1 angle is way too shallow and will skid out under load. Near-vertical placement tips the ladder backward as soon as you climb. Foot leveling matters too, but the angle is what determines stability. The 4-to-1 ratio is the OSHA-standard setup rule.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-10",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Which PPE item protects against flying chips and dust when grinding metal?",
+    "choices": [
+      "Cotton work gloves",
+      "Safety glasses with side shields or a face shield",
+      "Steel-toe boots",
+      "A canvas apron"
+    ],
+    "correct_index": 1,
+    "explanation": "Safety glasses with side shields, or a full face shield, stop flying chips, sparks, and grit from reaching the eyes during grinding. ANSI Z87.1-rated eye protection is required for grinder work. Cotton work gloves protect the hands but do nothing for the eyes, and loose gloves can be caught by a spinning wheel. Steel-toe boots guard against dropped objects, again unrelated to airborne particles. A canvas apron protects clothing and skin from sparks, useful but not a substitute for eye protection. Eyes are the most vulnerable target during grinding, so they get the first protection.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-11",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "Compressed air should never be used to do what?",
+    "choices": [
+      "Operate impact wrenches",
+      "Inflate tires to the recommended pressure",
+      "Blow dust off skin or clothing",
+      "Clean machined parts in a parts washer"
+    ],
+    "correct_index": 2,
+    "explanation": "Compressed air at typical shop pressures can force air into the bloodstream through a cut or into the eye, causing serious injury, and clothes blown clean send particles into the air for everyone to breathe. OSHA limits nozzle pressure for cleaning use to 30 psi precisely because of this hazard. Inflating tires is a normal use as long as the pressure is monitored. Driving impact wrenches and other pneumatic tools is exactly what shop air is built for. Using air to dry parts in a vented parts washer is standard practice. The hazard is specifically air directed at a person.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-12",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 4,
+    "stem": "What does IDLH stand for in respiratory protection terminology?",
+    "choices": [
+      "Inert Decomposition of Liquid Hydrocarbons",
+      "Industrial Dust Limit per Hour",
+      "Internal Detection of Liquid Hazards",
+      "Immediately Dangerous to Life or Health"
+    ],
+    "correct_index": 3,
+    "explanation": "IDLH means Immediately Dangerous to Life or Health, a concentration or condition that can cause death, irreversible health damage, or escape impairment within 30 minutes. NIOSH publishes IDLH levels for individual chemicals, and entering an IDLH atmosphere requires supplied-air respirators and a backup rescue plan. Industrial Dust Limit per Hour is not a real term. Internal Detection of Liquid Hazards sounds like a sensor product and is invented. Inert Decomposition of Liquid Hydrocarbons mixes real chemistry terms into a meaningless phrase. The acronym is core OSHA and NIOSH language.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-13",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Why is ventilation required when running an engine indoors?",
+    "choices": [
+      "To exhaust carbon monoxide and other combustion gases",
+      "To keep the engine from overheating",
+      "To prevent the fuel from boiling",
+      "To dry off coolant spills"
+    ],
+    "correct_index": 0,
+    "explanation": "Engine exhaust contains carbon monoxide, an odorless, colorless gas that binds to hemoglobin and prevents oxygen transport. Even brief exposure at high concentrations causes unconsciousness and death. Shop bays use exhaust hose systems or open doors and fans to remove combustion gases. Engine cooling is handled by the coolant and radiator regardless of room ventilation. Fuel boiling happens inside the fuel system, not because of room air. Drying coolant spills is what shop rags and absorbent are for. Carbon monoxide is the controlling hazard that drives the ventilation requirement.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-14",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A confined space is hazardous primarily because of what risk?",
+    "choices": [
+      "Lack of cell phone reception",
+      "Oxygen deficiency or buildup of toxic gases",
+      "Cramped working position causing back strain",
+      "Poor lighting making tools hard to see"
+    ],
+    "correct_index": 1,
+    "explanation": "A confined space has limited entry and exit and is not designed for continuous occupancy. The primary hazard is atmospheric: oxygen can be displaced by inert gases, consumed by oxidation, or replaced by toxic vapors from welding, fuels, or cleaning chemicals. Workers can lose consciousness in minutes without warning. Cell signal, posture, and lighting are real annoyances but do not trigger fatalities. OSHA's permit-required confined space standard exists because the atmospheric hazard is invisible and fast-acting, requiring monitoring before and during entry plus a standby attendant outside.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-15",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Which fire extinguisher class is intended for energized electrical equipment?",
+    "choices": [
+      "Class A",
+      "Class B",
+      "Class C",
+      "Class K"
+    ],
+    "correct_index": 2,
+    "explanation": "Class C extinguishers use nonconductive agents like CO2 or dry chemical so they can be discharged on energized electrical fires without shocking the user through the stream. The label specifically certifies the agent as nonconductive. Class A uses water, a conductor, and is dangerous on live wiring. Class B is rated for flammable liquids but its agent and stream are not guaranteed nonconductive. Class K is for cooking oils only. Once power is cut, an electrical fire becomes Class A or B depending on what is burning. Until then, Class C is the only safe choice.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-SS-16",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 5,
+    "stem": "When climbing a ladder, what does the three-point contact rule require?",
+    "choices": [
+      "Three feet of ladder extending above the landing",
+      "Three feet of standoff from the wall",
+      "Three workers present per ladder",
+      "Two hands and one foot, or two feet and one hand, on the ladder at all times"
+    ],
+    "correct_index": 3,
+    "explanation": "Three-point contact means three of your four limbs touch the ladder while climbing, either two hands and one foot or two feet and one hand, so a slip on any single point still leaves you anchored. The rule prevents falls when a rung is wet, when the climber loses balance, or when carrying objects. Three feet of standoff is roughly the 4-to-1 angle for a 12-foot ladder but is not the three-point rule. Three workers is a buddy system idea, not a contact rule. Three feet of ladder above the landing is a separate OSHA rule for roof access, also not three-point contact.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-1",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "In the four-stroke cycle, which stroke immediately follows compression?",
+    "choices": [
+      "Power",
+      "Compression",
+      "Intake",
+      "Exhaust"
+    ],
+    "correct_index": 0,
+    "explanation": "The four strokes run intake, compression, power, and exhaust in that order. After the piston rises and squeezes the air-fuel mixture during compression, the spark plug fires at the top of the stroke, the mixture burns, and expanding gases drive the piston back down on the power stroke. Intake comes before compression, not after. A second compression in a row would not produce power. The exhaust stroke comes after power, when the piston rises again with the exhaust valve open to clear spent gases. Memorizing the sequence in order is the easiest way to handle these questions.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-2",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What does the alternator do while the engine is running?",
+    "choices": [
+      "Cranks the engine during starting",
+      "Generates electrical current to recharge the battery and run electrical loads",
+      "Cools the engine block",
+      "Pressurizes the fuel rail"
+    ],
+    "correct_index": 1,
+    "explanation": "A belt off the crankshaft spins the alternator, which generates AC current internally and rectifies it to DC to recharge the battery and feed every electrical load including ignition, lights, fans, and accessories. Cranking is the starter motor's job for the few seconds the key is in start position. Cooling the block is the water pump and radiator's role. Pressurizing the fuel rail is done by the electric fuel pump in the tank or by a mechanical pump on older engines. Each wrong answer points to a different system in the vehicle that the alternator has nothing to do with.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-3",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "On a disc brake, the caliper houses what component that presses the pads against the rotor?",
+    "choices": [
+      "A drum spring",
+      "A wheel cylinder",
+      "A piston",
+      "A torque converter"
+    ],
+    "correct_index": 2,
+    "explanation": "Inside the caliper, one or more pistons sit in sealed bores. When you press the brake pedal, brake fluid pressure pushes the pistons out, squeezing the pads against the spinning rotor to slow the wheel. A wheel cylinder is the drum-brake equivalent that pushes shoes outward against a drum, not used on disc brakes. A drum spring returns drum-brake shoes to the rest position. A torque converter is a transmission component that couples the engine to an automatic transmission and has no brake function. The piston is the actuator inside every modern caliper.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-4",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "The thermostat in a cooling system controls what?",
+    "choices": [
+      "How much oil the engine uses",
+      "The fan speed at idle",
+      "The pressure of the radiator cap",
+      "When coolant flows to the radiator based on engine temperature"
+    ],
+    "correct_index": 3,
+    "explanation": "The thermostat is a temperature-sensitive valve that stays closed when the engine is cold, letting coolant circulate only within the block to warm up quickly. Once coolant reaches the rated opening temperature, the thermostat opens and routes flow through the radiator to dump heat. Fan speed is controlled by the cooling fan switch or the engine control module. Radiator cap pressure is set by a spring inside the cap itself. Oil consumption is a function of ring and seal condition, unrelated to cooling. The thermostat's job is temperature regulation by flow control.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-5",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "A MacPherson strut combines which two components into one unit?",
+    "choices": [
+      "Shock absorber and coil spring",
+      "Tie rod and ball joint",
+      "Brake caliper and rotor",
+      "Steering rack and pinion"
+    ],
+    "correct_index": 0,
+    "explanation": "A MacPherson strut is a damper, like a shock absorber, with a coil spring mounted concentrically around it, and the whole assembly also serves as the upper steering pivot. Combining functions cuts parts count and is why most front-wheel-drive cars use it. A tie rod and ball joint are separate steering linkage parts that connect the rack to the steering knuckle. A brake caliper and rotor are brake hardware mounted to the knuckle, not part of the suspension strut. A steering rack and pinion is the steering gear itself, mounted to the chassis. Only the spring-over-shock combination defines a strut.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-6",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 4,
+    "stem": "What is the function of the oxygen sensor in the exhaust system?",
+    "choices": [
+      "Removes oxygen from the exhaust to reduce emissions",
+      "Measures oxygen in the exhaust so the computer can adjust the fuel mixture",
+      "Cools the exhaust before it reaches the muffler",
+      "Generates voltage to charge the battery"
+    ],
+    "correct_index": 1,
+    "explanation": "The oxygen sensor sits in the exhaust stream and produces a voltage signal that varies with oxygen content. The engine control module reads that signal and trims fuel injection up or down to keep the mixture in the optimal range for the catalytic converter. The sensor measures, it does not remove oxygen. Cooling the exhaust is the job of the exhaust pipes themselves losing heat to the air. Charging the battery is the alternator's role. The O2 sensor is purely a feedback device and is one of the most important inputs for fuel control on a modern engine.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-7",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "The catalytic converter is in which vehicle system?",
+    "choices": [
+      "Fuel system",
+      "Cooling system",
+      "Exhaust system",
+      "Electrical system"
+    ],
+    "correct_index": 2,
+    "explanation": "The catalytic converter is welded or bolted into the exhaust pipe between the engine and the muffler, and it uses precious-metal coatings to convert unburned hydrocarbons, carbon monoxide, and oxides of nitrogen into water, CO2, and nitrogen. The fuel system handles delivery from the tank to the injectors and ends before combustion. The cooling system circulates coolant through the block and radiator. The electrical system covers the battery, alternator, starter, and wiring. Only the exhaust system is downstream of combustion where the converter belongs.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-8",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "A CV joint allows what kind of motion at the drive axle?",
+    "choices": [
+      "Locking the wheel to the transmission",
+      "Up and down motion only",
+      "Forward and reverse only",
+      "Rotation while the axle changes angle with suspension and steering movement"
+    ],
+    "correct_index": 3,
+    "explanation": "A constant velocity joint lets a drive axle transmit rotation smoothly while the angle between the inboard and outboard sides changes constantly because of suspension travel and steering input. Without a CV joint, the axle would bind or vibrate. Up and down motion alone is what shock absorbers manage, and they do not transmit drive torque. Forward and reverse direction is set by the transmission, not the axle. Locking the wheel to the transmission is what a clutch or torque converter does. The CV joint's defining feature is transmitting torque through a variable angle.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-9",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 4,
+    "stem": "What is the main difference between a timing belt and a timing chain?",
+    "choices": [
+      "A belt is a rubber band that needs scheduled replacement; a chain is metal and usually lasts the engine's life",
+      "A belt is for the alternator; a chain is for the camshaft",
+      "A belt runs the water pump; a chain runs the oil pump",
+      "A belt is for diesel engines; a chain is for gasoline engines"
+    ],
+    "correct_index": 0,
+    "explanation": "A timing belt is a reinforced rubber band with teeth, and manufacturers publish a replacement interval, typically 60,000 to 100,000 miles, because the rubber ages and the teeth eventually fail. A timing chain is a steel roller chain similar to a heavy bicycle chain, runs in engine oil, and usually lasts the engine's useful life. The alternator belt is a separate serpentine or V-belt outside the engine. Belts and chains both can drive water and oil pumps depending on engine design. Both types appear on gasoline and diesel engines. The rubber-versus-metal life difference is the practical point.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-10",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "The fuel injector does what in a modern engine?",
+    "choices": [
+      "Compresses air for the turbocharger",
+      "Sprays a metered amount of fuel into the intake or cylinder",
+      "Cools the combustion chamber",
+      "Filters fuel before it reaches the rail"
+    ],
+    "correct_index": 1,
+    "explanation": "A fuel injector is an electrically actuated valve that opens for a controlled millisecond pulse to spray a precise amount of pressurized fuel into the intake port or directly into the cylinder. The computer varies pulse width based on engine demand. Compressing air is the turbocharger's job, driven by exhaust gas. Cooling the combustion chamber is done indirectly by coolant in the head and by fuel evaporation, but it is not the injector's purpose. Filtering fuel is the fuel filter's role upstream of the rail. The injector's defining function is metered fuel delivery.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-11",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "What does a CVT transmission use instead of fixed gears?",
+    "choices": [
+      "An electric motor with no transmission at all",
+      "Twelve forward gears and a reverse",
+      "A belt or chain running between two variable-diameter pulleys",
+      "A single fixed ratio with a clutch"
+    ],
+    "correct_index": 2,
+    "explanation": "A continuously variable transmission uses a metal belt or chain running between two pulleys whose effective diameters change continuously. This lets the engine sit at its most efficient RPM while the ratio sweeps smoothly across the operating range, with no discrete shift points. Twelve forward gears describes some heavy-duty truck transmissions, not a CVT. A pure electric motor with no transmission is an EV drivetrain, a different vehicle architecture. A single fixed ratio with a clutch describes a go-kart or simple motorcycle, not a CVT. The variable-pulley system is the defining feature.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-12",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "The ignition coil's job is to do what?",
+    "choices": [
+      "Filter the air going into the engine",
+      "Store fuel for the injectors",
+      "Cool the cylinder head",
+      "Step low battery voltage up to the high voltage that fires a spark plug"
+    ],
+    "correct_index": 3,
+    "explanation": "An ignition coil is a small transformer that takes 12 volts from the battery and steps it up to roughly 20,000 to 40,000 volts, enough to jump the gap at the spark plug and ignite the air-fuel mixture. Storing fuel is the fuel tank and rail. Cooling the head is handled by coolant passages and the radiator. Filtering intake air is the air filter's job in the intake tract. The coil is a strictly electrical component that converts low voltage to high voltage, and every gasoline engine needs one or more of them to fire the plugs.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-13",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 5,
+    "stem": "ABS brakes prevent what during hard braking?",
+    "choices": [
+      "Brake pad wear",
+      "Brake fluid from overheating",
+      "Wheel lockup that causes skidding and loss of steering control",
+      "Engine stall when braking hard"
+    ],
+    "correct_index": 2,
+    "explanation": "Anti-lock brake systems use wheel-speed sensors to detect when a wheel is about to stop turning faster than the vehicle is decelerating. The ABS modulator then pulses the brake pressure at that wheel many times per second, letting the wheel keep rolling so the driver can steer while braking hard. Brake fluid heat is managed by fluid selection and venting, not by ABS. Pad wear is unaffected by ABS. Engine stall on hard braking is prevented by the throttle and idle control system, not the brakes. The whole purpose of ABS is keeping the wheels rolling for steering authority.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-14",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "On the power stroke of a four-stroke engine, what is happening inside the cylinder?",
+    "choices": [
+      "The exhaust valve opens and spent gases leave",
+      "The piston rises with both valves closed",
+      "The intake valve opens and the piston falls",
+      "The burning mixture expands and pushes the piston down"
+    ],
+    "correct_index": 3,
+    "explanation": "On the power stroke, the spark has already fired at the top of compression and the burning air-fuel mixture is expanding rapidly, driving the piston down the cylinder and producing the only stroke that generates useful work. The piston rising with both valves closed describes compression. The intake valve opening with the piston falling is the intake stroke. The exhaust valve opening with the piston rising is the exhaust stroke. The power stroke is the only one with both valves closed and the piston traveling down. That combination is the giveaway.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AS-P4-VS-15",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 4,
+    "stem": "What is the function of the differential in a rear-wheel-drive vehicle?",
+    "choices": [
+      "Generates electricity for the headlights",
+      "Mixes air and fuel before combustion",
+      "Filters oil before it reaches the bearings",
+      "Splits engine torque between the two drive wheels while allowing them to spin at different speeds"
+    ],
+    "correct_index": 3,
+    "explanation": "When a vehicle rounds a corner, the outer drive wheel travels a longer arc than the inner wheel and has to spin faster. The differential's bevel gears split engine torque between the two axles while letting them rotate at different speeds, preventing tire scrub and driveline binding. Mixing air and fuel happens in the intake manifold and combustion chamber. Filtering oil is the oil filter's job in the lubrication system. Generating electricity for headlights is the alternator's role. The differential lives in the rear axle housing on a RWD vehicle and serves only the drivetrain.",
+    "status": "draft"
+  }
+]

@@ -1,0 +1,826 @@
+[
+  {
+    "external_key": "AS-1",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "as.hand-tools",
+    "flags": [
+      "thin(24w)",
+      "no-trap-named"
+    ],
+    "stem": "Which tool is best suited for tightening a bolt that is in a recessed or hard-to-reach location?",
+    "choices": [
+      "Open-end wrench",
+      "Socket wrench with extension",
+      "Adjustable pliers",
+      "Torque screwdriver"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A socket wrench with an extension bar allows a technician to reach fasteners in deep or confined spaces where an open-end wrench cannot fit."
+  },
+  {
+    "external_key": "AS-2",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "thin(24w)",
+      "no-trap-named"
+    ],
+    "stem": "What is the primary function of a vehicle's radiator?",
+    "choices": [
+      "Filter engine oil",
+      "Regulate fuel mixture",
+      "Dissipate heat from the engine coolant",
+      "Reduce exhaust emissions"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The radiator removes heat from the engine coolant by passing it through thin fins where air flow carries the heat away, preventing engine overheating."
+  },
+  {
+    "external_key": "AS-3",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "thin(24w)",
+      "no-trap-named"
+    ],
+    "stem": "Before operating a power saw in a shop, you should FIRST:",
+    "choices": [
+      "Test the blade on scrap wood",
+      "Put on appropriate eye protection",
+      "Plug in the saw and let it warm up",
+      "Check the sharpness of the blade by touch"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Personal protective equipment \u2014 especially eye protection \u2014 must be donned before any shop operation begins. Blade fragments and sawdust present immediate eye hazards."
+  },
+  {
+    "external_key": "AS-4",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "What does a vehicle's alternator do while the engine is running?",
+    "choices": [
+      "Starts the engine by cranking it",
+      "Recharges the battery and powers electrical systems",
+      "Controls fuel injection timing",
+      "Regulates engine coolant temperature"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The alternator converts mechanical energy from the engine into electrical energy, recharging the battery and supplying power to the vehicle's electrical systems while the engine runs."
+  },
+  {
+    "external_key": "AS-5",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "as.hand-tools",
+    "flags": [
+      "thin(21w)",
+      "no-trap-named"
+    ],
+    "stem": "Which type of screwdriver is designed to fit a screw head with an X-shaped slot?",
+    "choices": [
+      "Flathead screwdriver",
+      "Torx screwdriver",
+      "Phillips screwdriver",
+      "Hex screwdriver"
+    ],
+    "correct_index": 2,
+    "current_explanation": "A Phillips screwdriver has a cross-shaped tip designed to fit X-shaped (Phillips) screw head recesses, providing better torque than a flathead."
+  },
+  {
+    "external_key": "AS-6",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "as.maintenance-repair",
+    "flags": [
+      "thin(24w)",
+      "no-trap-named"
+    ],
+    "stem": "When should a vehicle's engine oil be replaced most regularly, according to general maintenance practice?",
+    "choices": [
+      "Only when the oil pressure warning light activates",
+      "At every fuel fill-up",
+      "At intervals recommended by the manufacturer, typically based on mileage or time",
+      "Once per year regardless of mileage"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Manufacturers specify oil change intervals (commonly every 3,000\u20137,500 miles or more with synthetic oil) based on engineering data. Following these intervals prevents engine wear."
+  },
+  {
+    "external_key": "AS-7",
+    "file": "free",
+    "difficulty": 3,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "thin(23w)",
+      "no-trap-named"
+    ],
+    "stem": "What is the purpose of a vehicle's timing belt or timing chain?",
+    "choices": [
+      "Transfer power from the transmission to the wheels",
+      "Synchronize the rotation of the crankshaft and camshaft",
+      "Connect the steering column to the front wheels",
+      "Regulate fuel pressure in the injection system"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The timing belt/chain synchronizes the crankshaft and camshaft so that engine valves open and close at the correct times during each piston stroke."
+  },
+  {
+    "external_key": "AS-8",
+    "file": "free",
+    "difficulty": 3,
+    "topic_id": "as.hand-tools",
+    "flags": [
+      "thin(20w)",
+      "no-trap-named"
+    ],
+    "stem": "Which hand tool would you use to measure the outside diameter of a cylindrical metal rod precisely?",
+    "choices": [
+      "Tape measure",
+      "Inside caliper",
+      "Outside micrometer",
+      "Combination square"
+    ],
+    "correct_index": 2,
+    "current_explanation": "An outside micrometer provides precise measurements of the outer dimensions of cylindrical objects, with accuracy to thousandths of an inch."
+  },
+  {
+    "external_key": "AS-9",
+    "file": "free",
+    "difficulty": 3,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "thin(24w)",
+      "no-trap-named"
+    ],
+    "stem": "When welding, the primary purpose of a ground clamp attached to the workpiece is to:",
+    "choices": [
+      "Prevent the metal from warping",
+      "Complete the electrical circuit for the welding arc",
+      "Cool the metal after welding",
+      "Indicate the direction of welding travel"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The ground clamp completes the electrical circuit from the welder through the workpiece, allowing current to flow and create the arc needed for welding."
+  },
+  {
+    "external_key": "AS-MNT-1",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "as.maintenance-repair",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "Engine oil should be changed at regular intervals primarily to:",
+    "choices": [
+      "increase fuel octane rating",
+      "remove contaminants and restore lubricating properties",
+      "cool the transmission fluid",
+      "maintain proper tire pressure"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Over time, engine oil accumulates metal particles, carbon deposits, and acids that degrade its lubricating ability. Regular changes remove these contaminants and restore proper protection. Oil does not affect fuel octane or tire pressure."
+  },
+  {
+    "external_key": "AS-MNT-3",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "as.maintenance-repair",
+    "flags": [
+      "thin(34w)",
+      "no-trap-named"
+    ],
+    "stem": "Tire rotation is recommended every 5,000\u20137,000 miles primarily because:",
+    "choices": [
+      "it resets the tire pressure monitoring system",
+      "front and rear tires wear at different rates due to different loads and steering forces",
+      "it prevents the tires from developing flat spots when parked",
+      "rotating tires improves fuel octane combustion"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Front tires handle steering forces and often support more weight from the engine, causing them to wear faster \u2014 especially on front-wheel-drive vehicles. Rotation equalizes wear across all four tires, extending overall tire life."
+  },
+  {
+    "external_key": "AS-MNT-6",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "as.maintenance-repair",
+    "flags": [
+      "thin(33w)",
+      "no-trap-named"
+    ],
+    "stem": "A grinding noise that occurs only when the brakes are applied most likely indicates:",
+    "choices": [
+      "a failing alternator",
+      "brake pads worn down to the metal backing plate",
+      "loose lug nuts on the wheel",
+      "low power steering fluid"
+    ],
+    "correct_index": 1,
+    "current_explanation": "When brake pad friction material wears away completely, the metal backing plate contacts the rotor directly, producing a grinding noise under braking. Alternator failure and low power steering fluid cause distinct, unrelated symptoms."
+  },
+  {
+    "external_key": "AS-MNT-D2-1",
+    "file": "b1",
+    "difficulty": 2,
+    "topic_id": "as.maintenance-repair",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Why is it important to check the coolant level in a vehicle's radiator regularly?",
+    "choices": [
+      "Low coolant improves fuel economy",
+      "Low coolant can cause the engine to overheat",
+      "Coolant affects the transmission shift points",
+      "Coolant level determines oil viscosity"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Engine coolant carries heat away from the engine block to the radiator. If the level drops too low, there is insufficient fluid to absorb engine heat, and the engine can overheat \u2014 causing serious damage such as a warped head gasket."
+  },
+  {
+    "external_key": "AS-HT-B6-1",
+    "file": "b6",
+    "difficulty": 1,
+    "topic_id": "as.hand-tools",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "Which hand tool is used to tighten or loosen nuts and bolts and has an opening that can be adjusted to fit different fastener sizes?",
+    "choices": [
+      "Adjustable wrench",
+      "Needle-nose pliers",
+      "Cold chisel",
+      "Ball-peen hammer"
+    ],
+    "correct_index": 0,
+    "current_explanation": "An adjustable wrench (crescent wrench) has a movable jaw that can be set to grip different fastener sizes. Pliers grip by pressure rather than fitting a hex shape, so they risk rounding fastener corners."
+  },
+  {
+    "external_key": "AS-HT-B6-2",
+    "file": "b6",
+    "difficulty": 1,
+    "topic_id": "as.hand-tools",
+    "flags": [
+      "thin(32w)"
+    ],
+    "stem": "A mechanic needs to grip a round pipe firmly while cutting threads onto it. Which tool is designed specifically to hold cylindrical workpieces without slipping?",
+    "choices": [
+      "Slip-joint pliers",
+      "Pipe wrench",
+      "Box-end wrench",
+      "Offset screwdriver"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A pipe wrench has serrated, self-tightening jaws angled so that applying torque causes them to bite harder into the cylinder. Box-end and open-end wrenches are designed for hex fasteners, not round stock."
+  },
+  {
+    "external_key": "AS-HT-B6-3",
+    "file": "b6",
+    "difficulty": 2,
+    "topic_id": "as.hand-tools",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A torque wrench is used instead of a standard socket wrench when:",
+    "choices": [
+      "you need to reach fasteners in deep recesses",
+      "tightening fasteners to a precise torque specification is required",
+      "the fastener head is stripped and will not grip",
+      "you are working in a tight space and need a ratcheting motion"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A torque wrench applies a measured, calibrated twisting force to a fastener. This is critical for engine head bolts, wheel lug nuts, and other joints where over- or under-tightening causes failure. A standard ratchet cannot measure torque."
+  },
+  {
+    "external_key": "AS-HT-B6-4",
+    "file": "b6",
+    "difficulty": 2,
+    "topic_id": "as.hand-tools",
+    "flags": [
+      "thin(34w)",
+      "no-trap-named"
+    ],
+    "stem": "What is the primary purpose of a center punch when working with metal?",
+    "choices": [
+      "To scribe a straight line across the workpiece",
+      "To mark a starting point so a drill bit does not wander",
+      "To remove burrs from a drilled hole",
+      "To cut a hole in sheet metal without a drill"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A center punch creates a small indentation at the exact drilling location. This dimple seats the tip of the drill bit and prevents it from skating across the smooth metal surface as drilling begins."
+  },
+  {
+    "external_key": "AS-HT-B6-5",
+    "file": "b6",
+    "difficulty": 2,
+    "topic_id": "as.hand-tools",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A technician selects a drill bit with a twist-style cutting flute and a 118-degree included angle tip. This bit is best suited for drilling:",
+    "choices": [
+      "concrete and masonry",
+      "general-purpose holes in steel or aluminum",
+      "glass and ceramic tile",
+      "large-diameter holes in wood only"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A standard high-speed steel (HSS) twist drill with a 118-degree point is the general-purpose choice for metals like steel and aluminum. Masonry bits have a carbide tip; glass bits require a spear-point or diamond tip."
+  },
+  {
+    "external_key": "AS-HT-B6-6",
+    "file": "b6",
+    "difficulty": 3,
+    "topic_id": "as.hand-tools",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A vise-grip (locking pliers) differs from standard slip-joint pliers in that a vise-grip:",
+    "choices": [
+      "can be used as a wrench on hex fasteners only",
+      "locks onto a workpiece and maintains clamping force without the user squeezing",
+      "is used exclusively for cutting wire",
+      "adjusts automatically to the size of the fastener"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Locking pliers have an over-center mechanism: once the jaws are clamped, the linkage locks and the tool maintains grip without hand pressure. This frees the user's hands and applies constant clamping force \u2014 useful for holding, bending, and removing stripped fasteners."
+  },
+  {
+    "external_key": "AS-HT-B6-12",
+    "file": "b6",
+    "difficulty": 5,
+    "topic_id": "as.hand-tools",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A star-pattern torque sequence is specified when installing a cylinder head. Why is this sequence used instead of tightening bolts in order from one end to the other?",
+    "choices": [
+      "To finish faster by tightening the center bolts last",
+      "To distribute clamping load evenly and prevent the gasket from warping or sealing unevenly",
+      "Because cylinder head bolts are left-hand threaded on alternating positions",
+      "To allow the bolts to be re-tightened after the engine warms up"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A star (criss-cross) pattern draws the head down against the gasket from the center outward in a balanced way. Tightening sequentially from one end pulls that end tight first, which can bow the head or create uneven gasket compression that leads to leaks."
+  },
+  {
+    "external_key": "AS-VS-B6-1",
+    "file": "b6",
+    "difficulty": 1,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "In a four-stroke gasoline engine, which stroke draws the air-fuel mixture into the cylinder?",
+    "choices": [
+      "Compression stroke",
+      "Power stroke",
+      "Intake stroke",
+      "Exhaust stroke"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The four strokes in order are: intake (piston moves down, drawing in air-fuel mixture), compression (piston moves up, compressing the mixture), power (spark ignites mixture, piston pushed down), and exhaust (piston moves up, pushing burnt gases out)."
+  },
+  {
+    "external_key": "AS-VS-B6-2",
+    "file": "b6",
+    "difficulty": 1,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "The purpose of a vehicle's clutch in a manual transmission is to:",
+    "choices": [
+      "regulate engine idle speed",
+      "temporarily disconnect the engine from the transmission to allow gear changes",
+      "convert the alternator's output to DC current",
+      "control the flow of coolant to the engine block"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The clutch uses friction plates to engage and disengage the engine from the transmission. Pressing the clutch pedal separates the plates, allowing the driver to shift gears without grinding. Releasing the pedal reconnects engine power to the drivetrain."
+  },
+  {
+    "external_key": "AS-VS-B6-3",
+    "file": "b6",
+    "difficulty": 2,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "What is the function of a vehicle's differential?",
+    "choices": [
+      "It filters fuel before it reaches the injectors",
+      "It allows the drive wheels to rotate at different speeds when turning",
+      "It regulates the voltage output of the charging system",
+      "It compresses refrigerant in the air conditioning system"
+    ],
+    "correct_index": 1,
+    "current_explanation": "When a vehicle turns, the outer wheel must travel a larger arc than the inner wheel and therefore must rotate faster. The differential uses a planetary gear set to allow the two drive wheels to spin at different speeds while still receiving engine torque."
+  },
+  {
+    "external_key": "AS-VS-B6-4",
+    "file": "b6",
+    "difficulty": 2,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A vehicle's battery provides current to start the engine. Once the engine is running, which component keeps the battery charged?",
+    "choices": [
+      "Starter motor",
+      "Distributor",
+      "Alternator",
+      "Voltage regulator only"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The alternator is driven by a belt from the engine crankshaft and generates AC electricity, which is converted to DC to recharge the battery and power electrical loads while the engine runs. The starter is only used during cranking."
+  },
+  {
+    "external_key": "AS-VS-B6-5",
+    "file": "b6",
+    "difficulty": 3,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Disc brakes use calipers and rotors. When the brake pedal is pressed, what converts pedal force into hydraulic pressure that actuates the calipers?",
+    "choices": [
+      "The brake booster",
+      "The master cylinder",
+      "The proportioning valve",
+      "The ABS modulator"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The master cylinder converts the mechanical force of the brake pedal (often amplified by a vacuum booster) into hydraulic pressure in the brake lines. This pressure pushes caliper pistons outward to clamp the pads against the rotor."
+  },
+  {
+    "external_key": "AS-VS-B6-6",
+    "file": "b6",
+    "difficulty": 3,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "thin(33w)",
+      "no-trap-named"
+    ],
+    "stem": "Engine oil pressure drops to near zero while the engine is running at highway speed. The FIRST action should be to:",
+    "choices": [
+      "Continue driving to the nearest service station",
+      "Shut off the engine immediately to prevent catastrophic bearing damage",
+      "Add oil while the engine is running",
+      "Rev the engine to increase oil pump speed"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Oil pressure lubricates engine bearings and prevents metal-to-metal contact. Near-zero pressure means bearings are running dry; continued operation causes scoring and seizure within seconds. Shutting off the engine immediately is the correct response."
+  },
+  {
+    "external_key": "AS-VS-B6-7",
+    "file": "b6",
+    "difficulty": 3,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "An automatic transmission uses a torque converter instead of a clutch. The torque converter:",
+    "choices": [
+      "mechanically locks the engine to the transmission at all times",
+      "uses hydraulic fluid to transfer and multiply torque between engine and transmission",
+      "shifts gears by means of a centrifugal governor",
+      "replaces the differential in front-wheel-drive vehicles"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The torque converter is a fluid coupling filled with transmission fluid. The engine drives a pump impeller; fluid motion spins a turbine connected to the transmission input shaft. At low speeds the fluid also provides torque multiplication, acting like a variable gear reduction."
+  },
+  {
+    "external_key": "AS-VS-B6-9",
+    "file": "b6",
+    "difficulty": 4,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A fuel-injected engine uses an oxygen sensor (O2 sensor) in the exhaust stream. The engine control module (ECM) uses the O2 sensor signal to:",
+    "choices": [
+      "determine ignition timing advance based on knock",
+      "adjust the fuel injector pulse width to maintain the proper air-fuel ratio",
+      "regulate alternator output voltage",
+      "control cooling fan speed based on engine temperature"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The O2 sensor measures oxygen content in exhaust gases, which indicates whether combustion was rich (too much fuel) or lean (too little fuel). The ECM uses this feedback in a closed-loop system to trim injector on-time (pulse width) and keep the mixture near stoichiometric (14.7:1 air-to-fuel ratio)."
+  },
+  {
+    "external_key": "AS-VS-B6-10",
+    "file": "b6",
+    "difficulty": 4,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A front-wheel-drive vehicle clicks loudly when turning at low speed but is quiet when driving straight. The most likely cause is:",
+    "choices": [
+      "A worn constant-velocity (CV) joint",
+      "Low power-steering fluid",
+      "A cracked brake rotor",
+      "A loose exhaust heat shield"
+    ],
+    "correct_index": 0,
+    "current_explanation": "CV joints allow the drive axle to transmit power through a range of angles as the front wheels turn and move with suspension travel. When a CV joint's boot tears and loses grease, the joint wears and produces a clicking or popping noise that is loudest during sharp, low-speed turns."
+  },
+  {
+    "external_key": "AS-VS-B6-12",
+    "file": "b6",
+    "difficulty": 5,
+    "topic_id": "as.vehicle-systems",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "An engine knocks heavily under load but the knock nearly disappears at idle. This is most consistent with:",
+    "choices": [
+      "A cracked flywheel",
+      "Pre-ignition (detonation) caused by low-octane fuel or advanced timing",
+      "A broken engine mount",
+      "An air leak in the intake manifold"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Detonation (knock or ping) occurs when the air-fuel mixture ignites spontaneously before the spark plug fires, causing a shock wave inside the cylinder. It is most pronounced under load when cylinder pressures and temperatures are high, and nearly absent at light-throttle idle. Low-octane fuel, carbon deposits causing hot spots, or over-advanced ignition timing are common causes."
+  },
+  {
+    "external_key": "AS-SS-B6-1",
+    "file": "b6",
+    "difficulty": 1,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "When working in a shop where gasoline or solvent vapors may be present, adequate ventilation is required primarily to:",
+    "choices": [
+      "keep tools at the correct operating temperature",
+      "prevent accumulation of flammable vapors that could ignite",
+      "ensure that paint dries faster",
+      "reduce humidity that causes rust on tools"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Gasoline, solvent, and similar vapors are heavier than air and collect at floor level. In an enclosed, unventilated space they can reach explosive concentrations. Proper ventilation dilutes vapors below their lower explosive limit, preventing ignition."
+  },
+  {
+    "external_key": "AS-SS-B6-2",
+    "file": "b6",
+    "difficulty": 1,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A small Class B fire breaks out in the shop. Class B fires involve flammable liquids such as gasoline or oil. Which type of extinguisher is appropriate?",
+    "choices": [
+      "Water extinguisher",
+      "Class A dry extinguisher",
+      "CO2 or dry chemical extinguisher rated for Class B",
+      "Any available extinguisher regardless of rating"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Water on a flammable-liquid (Class B) fire can spread burning fuel and make the fire worse. CO2 smothers the fire by displacing oxygen; dry chemical extinguishers interrupt the chemical chain reaction. Both are rated for Class B fires."
+  },
+  {
+    "external_key": "AS-SS-B6-3",
+    "file": "b6",
+    "difficulty": 2,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Lockout/tagout (LOTO) procedures are required before performing maintenance on a machine. The PRIMARY purpose of LOTO is to:",
+    "choices": [
+      "document the maintenance procedure for quality records",
+      "prevent the machine from being energized while a worker is inside or working on it",
+      "notify supervisors that the equipment is being serviced",
+      "ensure tools are returned to their correct storage locations"
+    ],
+    "correct_index": 1,
+    "current_explanation": "LOTO procedures physically lock energy-isolation devices (circuit breakers, valves) in the off position and attach a tag. This prevents the machine from being accidentally energized while a worker's hands or body are in a dangerous position inside the equipment."
+  },
+  {
+    "external_key": "AS-SS-B6-4",
+    "file": "b6",
+    "difficulty": 2,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A shop worker spills a small amount of motor oil on the floor. The safest IMMEDIATE action is to:",
+    "choices": [
+      "Mark the spill with a cone and clean it up at the end of the shift",
+      "Spread sawdust or absorbent material and clean it up promptly",
+      "Wipe it with a rag and place the rag in an open trash can",
+      "Pour water over the spill to dilute it"
+    ],
+    "correct_index": 1,
+    "current_explanation": "An oil spill is a slip hazard and must be cleaned up immediately. Oil-absorbent compound (or sawdust) draws up the liquid; the material is then swept and disposed of properly. Leaving it until shift end risks falls; oily rags in open trash cans can spontaneously combust."
+  },
+  {
+    "external_key": "AS-SS-B6-5",
+    "file": "b6",
+    "difficulty": 3,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A worker is grinding metal and is producing sparks and metal fragments. Besides eye protection, what additional PPE should be worn?",
+    "choices": [
+      "Latex examination gloves and a dust mask",
+      "Face shield over safety glasses, leather gloves, and hearing protection",
+      "Safety glasses only \u2014 sparks are not hazardous at short range",
+      "Chemical-splash goggles and a rubber apron"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Grinding produces sparks (burn hazard), metal fragments (impact hazard), and loud noise (hearing hazard). A full face shield over safety glasses provides both impact and burn protection for the face; leather gloves protect hands from sharp edges and heat; hearing protection guards against noise-induced damage."
+  },
+  {
+    "external_key": "AS-SS-B6-6",
+    "file": "b6",
+    "difficulty": 3,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Before lifting a vehicle with a floor jack to work underneath it, you MUST also:",
+    "choices": [
+      "Remove the wheels first to reduce vehicle weight",
+      "Place jack stands under the vehicle's frame or pinch-weld points to support it",
+      "Set the parking brake and leave the floor jack as the only support",
+      "Run the engine for 10 minutes to warm the oil before working"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A floor (hydraulic) jack can fail due to seal leakage or accidental contact. Jack stands are rigid mechanical supports that prevent the vehicle from dropping onto a person working beneath it. Never rely on a jack alone as the sole support for a vehicle you are working under."
+  },
+  {
+    "external_key": "AS-SS-B6-7",
+    "file": "b6",
+    "difficulty": 3,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Oily rags used for wiping up solvent or paint should be stored in a:",
+    "choices": [
+      "Cardboard box kept away from windows",
+      "Sealed metal container approved for flammable waste",
+      "Plastic bin lined with a trash bag",
+      "Open drum to allow vapors to escape"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Oils and solvents soaked into rags can oxidize and generate heat through spontaneous combustion. A sealed metal container limits oxygen supply and contains any fire that starts. Plastic bins can melt; open drums allow vapor to accumulate and ignite."
+  },
+  {
+    "external_key": "AS-SS-B6-9",
+    "file": "b6",
+    "difficulty": 4,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Which class of fire involves energized electrical equipment?",
+    "choices": [
+      "Class A",
+      "Class B",
+      "Class C",
+      "Class D"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Class C fires involve energized electrical equipment. Class A covers ordinary combustibles (wood, paper); Class B covers flammable liquids; Class D covers combustible metals. For Class C fires, use a non-conductive extinguishing agent (CO2 or dry chemical); water is dangerous because it conducts electricity."
+  },
+  {
+    "external_key": "AS-SS-B6-10",
+    "file": "b6",
+    "difficulty": 4,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "thin(29w)",
+      "no-trap-named"
+    ],
+    "stem": "Before entering a large tank or enclosed space for maintenance work, a technician should first:",
+    "choices": [
+      "Enter quickly and complete the task before vapors build up",
+      "Test the atmosphere for oxygen level and toxic or flammable vapors",
+      "Bring a lit lamp inside to check for visibility",
+      "Seal any ventilation openings to keep temperature stable"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Confined spaces can contain oxygen-deficient atmospheres or accumulated toxic/flammable vapors from residues. Atmospheric testing with calibrated instruments is mandatory before entry. Entering without testing risks asphyxiation, explosion, or poisoning."
+  },
+  {
+    "external_key": "AS-SS-B6-11",
+    "file": "b6",
+    "difficulty": 5,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A shop receives a drum of a new cleaning solvent. The Safety Data Sheet (SDS) lists an IDLH (Immediately Dangerous to Life and Health) concentration of 100 ppm. This value means that:",
+    "choices": [
+      "100 ppm is the safe, permissible exposure limit for an 8-hour shift",
+      "at 100 ppm, a worker without a respirator faces conditions from which escape may be impaired or irreversible harm may occur",
+      "100 ppm is the concentration at which the solvent becomes flammable",
+      "100 ppm must be measured monthly to comply with OSHA standards"
+    ],
+    "correct_index": 1,
+    "current_explanation": "IDLH defines the maximum concentration from which a healthy worker could escape within 30 minutes without escape-impairing symptoms or irreversible health effects. It is used to select respirator types for emergency planning. The permissible exposure limit (PEL) is a separate, lower value for routine shift exposure."
+  },
+  {
+    "external_key": "AS-SS-B6-12",
+    "file": "b6",
+    "difficulty": 5,
+    "topic_id": "as.shop-safety",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A shop policy requires that all rotating machinery guards be in place before the machine is started. A supervisor removes a guard temporarily for an adjustment and then leaves without replacing it. The correct action for the next technician who needs to use the machine is to:",
+    "choices": [
+      "Use the machine quickly and then replace the guard afterward",
+      "Report the missing guard and refuse to operate the machine until the guard is reinstalled",
+      "Operate the machine while holding the guard in place manually",
+      "Tape cardboard over the exposed area as a temporary barrier"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Machine guards are a primary engineering control against contact with rotating parts. Operating unguarded machinery violates safety standards and exposes the worker to serious injury. The correct response is to stop, report the hazard to a supervisor, and await proper repair before operating the machine."
+  },
+  {
+    "external_key": "AS-MR-B6-1",
+    "file": "b6",
+    "difficulty": 1,
+    "topic_id": "as.maintenance-repair",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Coolant reservoir level is checked and found to be below the MIN mark while the engine is cold. What is the correct action?",
+    "choices": [
+      "Add the correct antifreeze-water mixture to bring the level to the MIN-MAX range",
+      "Drain and replace all coolant regardless of level",
+      "Add straight water only so coolant does not become too concentrated",
+      "The reservoir level is irrelevant; check only the radiator cap"
+    ],
+    "correct_index": 0,
+    "current_explanation": "The overflow reservoir is the service point for most modern cooling systems. If the level is below MIN when cold, add the manufacturer-specified antifreeze/water mix (typically 50/50) to bring it into the MIN-MAX range. Adding straight water repeatedly dilutes the antifreeze and reduces freeze/boil protection."
+  },
+  {
+    "external_key": "AS-MR-B6-2",
+    "file": "b6",
+    "difficulty": 1,
+    "topic_id": "as.maintenance-repair",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "The low-oil pressure warning light illuminates while idling at a stoplight. The engine sounds normal. The driver should FIRST:",
+    "choices": [
+      "Rev the engine to 3,000 RPM to build oil pressure",
+      "Turn off the engine, check the oil level, and add oil if needed before restarting",
+      "Continue driving \u2014 oil pressure lights are often faulty",
+      "Add transmission fluid to the engine to restore pressure quickly"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A low oil pressure warning can indicate low oil level, low oil pressure, or a failing oil pressure sensor. The safest immediate action is to shut off the engine (protecting it from oil starvation), check the dipstick, and add oil if the level is low. Never add transmission fluid to an engine \u2014 it can damage seals and bearings."
+  },
+  {
+    "external_key": "AS-MR-B6-3",
+    "file": "b6",
+    "difficulty": 2,
+    "topic_id": "as.maintenance-repair",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A technician checks the brake fluid and finds it is dark brown and appears contaminated. The correct service action is to:",
+    "choices": [
+      "Top off with fresh fluid to dilute the contamination",
+      "Flush the brake system and fill with fresh fluid of the correct DOT specification",
+      "Add a brake fluid conditioner and continue use",
+      "No action needed \u2014 brake fluid darkens naturally and remains effective"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Brake fluid is hygroscopic and absorbs water over time, lowering its boiling point and promoting corrosion of metal components. Dark, contaminated fluid should be flushed from the system completely and replaced with fresh fluid matching the vehicle's DOT rating (e.g., DOT 3, DOT 4). Topping off only dilutes the contamination without removing it."
+  },
+  {
+    "external_key": "AS-MR-B6-7",
+    "file": "b6",
+    "difficulty": 4,
+    "topic_id": "as.maintenance-repair",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A spark plug removed from a cylinder has a wet, oily black deposit coating the ceramic insulator and electrodes. This most likely indicates:",
+    "choices": [
+      "The engine is running too lean",
+      "Oil is entering the combustion chamber due to worn piston rings or valve seals",
+      "The ignition timing is excessively advanced",
+      "The coolant system is leaking into the cylinder"
+    ],
+    "correct_index": 1,
+    "current_explanation": "An oil-fouled spark plug \u2014 wet and black \u2014 indicates oil contamination in the combustion chamber. This happens when piston rings wear and lose their seal, or when valve stem seals fail and allow oil to enter from the valve guides. A lean mixture leaves a white powdery deposit; coolant leaks leave a white crusty or sweet-smelling residue."
+  }
+]

@@ -1,0 +1,1253 @@
+[
+  {
+    "external_key": "AO-1",
+    "file": "free",
+    "difficulty": 3,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "A flat piece of material is cut into four identical right triangles, each with legs of equal length. If all four triangles are arranged so their right-angle corners meet at a center point, what shape do they form?",
+    "choices": [
+      "A circle",
+      "A rectangle",
+      "A square",
+      "A hexagon"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Four identical isosceles right triangles placed with their right angles at a common center and hypotenuses facing outward form a perfect square."
+  },
+  {
+    "external_key": "AO-2",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "ao.paper-folding-nets",
+    "flags": [
+      "thin(18w)",
+      "no-trap-named"
+    ],
+    "stem": "A rectangular piece of paper is folded in half along its longest axis, then folded in half again along the same axis. When unfolded, how many equal sections does the paper have?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Each fold doubles the number of sections. One fold \u2192 2 sections; two folds \u2192 4 equal sections."
+  },
+  {
+    "external_key": "AO-3",
+    "file": "free",
+    "difficulty": 4,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(31w)"
+    ],
+    "stem": "A cube is painted red on all six faces and then cut into 27 equal smaller cubes (a 3\u00d73\u00d73 grid). How many of the small cubes have paint on exactly two faces?",
+    "choices": [
+      "6",
+      "8",
+      "12",
+      "24"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Cubes with paint on exactly two faces sit along the edges (not corners) of the larger cube. A 3\u00d73\u00d73 cube has 12 edges, each contributing 1 such cube, giving 12 total."
+  },
+  {
+    "external_key": "AO-4",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ao.paper-folding-nets",
+    "flags": [
+      "thin(21w)",
+      "no-trap-named"
+    ],
+    "stem": "A square piece of cardboard has a small square cut from each of its four corners. When the sides are folded up along the cut lines, what shape is formed?",
+    "choices": [
+      "A pyramid",
+      "An open-top box",
+      "A cylinder",
+      "A cone"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Cutting squares from each corner and folding up the resulting flaps creates an open-top rectangular box \u2014 a standard net-folding construction."
+  },
+  {
+    "external_key": "AO-5",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(25w)",
+      "no-trap-named"
+    ],
+    "stem": "A solid cylinder is sliced straight down through its center from top to bottom (a vertical cut through the axis). What shape is the cross-section?",
+    "choices": [
+      "Circle",
+      "Ellipse",
+      "Rectangle",
+      "Triangle"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Cutting a cylinder along its axis (lengthwise through the center) produces a rectangular cross-section whose width equals the cylinder's diameter and height equals its length."
+  },
+  {
+    "external_key": "AO-6",
+    "file": "free",
+    "difficulty": 3,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Three identical equilateral triangles are placed so that one vertex of each meets at a common center point and the triangles do not overlap. What is the total interior angle at the center point?",
+    "choices": [
+      "180 degrees",
+      "240 degrees",
+      "270 degrees",
+      "360 degrees"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Three equilateral triangles meeting at a vertex contribute their three 60\u00b0 interior corners. Total angle contribution = 3 \u00d7 60\u00b0 = 180\u00b0. The \u2018angles around a point sum to 360\u00b0\u2019 rule applies only when shapes tile the entire space around the point \u2014 here they don\u2019t, since 180\u00b0 leaves 180\u00b0 of the surrounding plane uncovered."
+  },
+  {
+    "external_key": "AO-7",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "A standard six-sided die is held so that the 1 faces up. Which number is on the face directly opposite the 1?",
+    "choices": [
+      "2",
+      "4",
+      "6",
+      "5"
+    ],
+    "correct_index": 2,
+    "current_explanation": "On a standard die, opposite faces always sum to 7. The face opposite the 1 is 6 (1 + 6 = 7)."
+  },
+  {
+    "external_key": "AO-9",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(32w)",
+      "no-trap-named"
+    ],
+    "stem": "A 12-inch ruler is broken into two pieces. One piece is twice as long as the other. What are the lengths of the two pieces?",
+    "choices": [
+      "3 inches and 9 inches",
+      "4 inches and 8 inches",
+      "5 inches and 7 inches",
+      "6 inches and 6 inches"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Let the shorter piece = x. Then 2x = longer piece. x + 2x = 12 \u2192 3x = 12 \u2192 x = 4. The pieces are 4 inches and 8 inches."
+  },
+  {
+    "external_key": "AO-3D-1",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(29w)",
+      "no-trap-named"
+    ],
+    "stem": "A solid cube rests flat on a table. The top face is painted red. The cube is rotated 90\u00b0 forward \u2014 tilting toward you, pivoting around its front bottom edge. After this rotation, which face is now on top?",
+    "choices": [
+      "The original top face (red)",
+      "The original front face",
+      "The original back face",
+      "The original bottom face"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Rotating 90\u00b0 forward around the front bottom edge lifts the front face up to become the new top. The red original top now faces toward you (the new front)."
+  },
+  {
+    "external_key": "AO-3D-3",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(24w)"
+    ],
+    "stem": "A cube's faces are colored: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. The cube is rotated 90\u00b0 to the right (around the vertical axis \u2014 the right side swings to the front). What color is now on top?",
+    "choices": [
+      "White",
+      "Black",
+      "Yellow",
+      "Blue"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Rotating around the vertical axis does not change the top or bottom faces \u2014 only the four side faces rotate. The top remains white."
+  },
+  {
+    "external_key": "AO-3D-4",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "Using the same colored cube (top = white, front = red, right = yellow, bottom = black, back = green, left = blue): after rotating 90\u00b0 to the right around the vertical axis, what color is now facing you (front)?",
+    "choices": [
+      "Red",
+      "Green",
+      "Yellow",
+      "Blue"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Rotating the cube 90\u00b0 to the right (vertical axis) brings the right face (yellow) to the front. Red rotates to the left, green to the right, and blue to the back."
+  },
+  {
+    "external_key": "AO-3D-5",
+    "file": "b2",
+    "difficulty": 5,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(23w)",
+      "no-trap-named"
+    ],
+    "stem": "A cube is sliced by a flat plane that passes through exactly three vertices of the cube, one vertex on each of three different faces that share no common edge. What shape is the cross-section?",
+    "choices": [
+      "Square",
+      "Rectangle",
+      "Equilateral triangle",
+      "Right triangle"
+    ],
+    "correct_index": 2,
+    "current_explanation": "A plane through three mutually non-adjacent vertices of a cube cuts through three face diagonals of equal length, forming an equilateral triangle cross-section."
+  },
+  {
+    "external_key": "AO-PF-1",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ao.paper-folding-nets",
+    "flags": [
+      "thin(25w)"
+    ],
+    "stem": "A flat net consists of 1 center square with 4 squares attached, one to each side (forming a plus/cross shape \u2014 5 squares total). When folded, what 3D shape does it create?",
+    "choices": [
+      "A cube",
+      "A square pyramid",
+      "An open-top box (box without a lid)",
+      "A triangular prism"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Five squares form a base plus four walls but no top. You need 6 squares to close a cube. This net creates an open-top box."
+  },
+  {
+    "external_key": "AO-PF-3",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ao.paper-folding-nets",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "A flat net consists of a square in the center with 4 equilateral triangles attached to each of the square's edges. When folded, what shape does it form?",
+    "choices": [
+      "A cube",
+      "A rectangular prism",
+      "A square pyramid",
+      "A triangular prism"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The four triangles fold upward and their free vertices meet at a single point above the square base, forming a square pyramid."
+  },
+  {
+    "external_key": "AO-PF-5",
+    "file": "b2",
+    "difficulty": 5,
+    "topic_id": "ao.paper-folding-nets",
+    "flags": [
+      "thin(33w)",
+      "no-trap-named"
+    ],
+    "stem": "A square sheet of paper is folded in half by bringing the bottom edge up to meet the top edge (a horizontal fold). The resulting rectangle is then folded in half by bringing the right edge over to meet the left edge (a vertical fold). The paper is then fully unfolded. How many rectangular sections does the paper have?",
+    "choices": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The first fold creates 2 sections; the second fold divides each of those in half. When unfolded, the paper has 2 \u00d7 2 = 4 rectangular sections separated by the two crease lines."
+  },
+  {
+    "external_key": "AO-SC-1",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(10w)",
+      "no-trap-named"
+    ],
+    "stem": "A structure is built by stacking cubes. The bottom layer is a 3\u00d73 grid (9 cubes). The second layer is a 2\u00d72 grid centered on the first (4 cubes). The third layer has 1 cube centered on the second. How many cubes are in the structure?",
+    "choices": [
+      "9",
+      "12",
+      "14",
+      "16"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total = 9 + 4 + 1 = 14 cubes."
+  },
+  {
+    "external_key": "AO-SC-3",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(10w)",
+      "no-trap-named"
+    ],
+    "stem": "You see a staircase of cubes: 3 cubes on the bottom row, 2 cubes on the middle row, and 1 cube on the top. All rows are aligned to the left edge. How many cubes are in the structure?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Total = 3 + 2 + 1 = 6 cubes."
+  },
+  {
+    "external_key": "AO-SC-4",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "A 2\u00d73 single-layer base (6 cubes) sits on a table. A second layer of 2\u00d72 cubes is stacked on top starting from one corner. How many cubes are in the complete structure?",
+    "choices": [
+      "8",
+      "9",
+      "10",
+      "12"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Bottom layer: 2 \u00d7 3 = 6. Second layer: 2 \u00d7 2 = 4. Total = 6 + 4 = 10 cubes."
+  },
+  {
+    "external_key": "AO-SC-5",
+    "file": "b2",
+    "difficulty": 5,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(23w)",
+      "no-trap-named"
+    ],
+    "stem": "A 4\u00d74\u00d74 large cube is built from unit cubes. How many unit cubes are completely hidden inside (touching no outer face)?",
+    "choices": [
+      "0",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The hidden interior is a (4\u22122)\u00d7(4\u22122)\u00d7(4\u22122) = 2\u00d72\u00d72 = 8 unit cube block. Every other unit cube touches at least one outer face."
+  },
+  {
+    "external_key": "AO-PA-B7-1",
+    "file": "b7",
+    "difficulty": 1,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "thin(29w)",
+      "no-trap-named"
+    ],
+    "stem": "Three pieces are given: Piece A is a large right triangle with a right angle at the bottom-left corner. Piece B is a small right triangle with the right angle at the top-right corner. Piece C is a rectangle. When pieces A, B, and C are assembled together, which figure results?",
+    "choices": [
+      "A large rectangle whose width equals the base of piece A",
+      "A square with side length equal to the height of piece A",
+      "A large right triangle with no interior gaps",
+      "An L-shaped piece with a notch on one side"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Piece B's hypotenuse mirrors piece A's hypotenuse; placing B against A fills the triangular gap along that edge. The rectangle C bridges the remaining strip, completing a large rectangle."
+  },
+  {
+    "external_key": "AO-PA-B7-2",
+    "file": "b7",
+    "difficulty": 1,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "thin(34w)",
+      "no-trap-named"
+    ],
+    "stem": "Two pieces are shown: Piece A is a medium square with a dot in its center. Piece B is an identical medium square with no markings. When placed side by side along their right and left edges respectively, what shape results?",
+    "choices": [
+      "A large square",
+      "A tall thin rectangle",
+      "A wide rectangle with the dot on the left half",
+      "A wide rectangle with the dot on the right half"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The two squares placed side by side form a wide rectangle (2:1 ratio). Piece A (with the dot) is on the left, so the dot appears in the left half of the assembled figure."
+  },
+  {
+    "external_key": "AO-PA-B7-3",
+    "file": "b7",
+    "difficulty": 1,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "thin(34w)",
+      "no-trap-named"
+    ],
+    "stem": "Four small right triangles, each identical and each with a right angle at the bottom-left, are shown. When all four are assembled by rotating pairs to face each other and joining along their hypotenuses, what shape do they form?",
+    "choices": [
+      "A large right triangle",
+      "A rectangle",
+      "A parallelogram",
+      "An irregular pentagon"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Pairing two triangles along each hypotenuse creates two rectangles; those two rectangles can then be placed side by side to form one larger rectangle. All four identical right triangles together always tile a rectangle."
+  },
+  {
+    "external_key": "AO-PA-B7-4",
+    "file": "b7",
+    "difficulty": 2,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "thin(28w)",
+      "no-trap-named"
+    ],
+    "stem": "Three pieces are given: Piece A is a large equilateral triangle marked with an arrow pointing up. Piece B is an identical equilateral triangle with no marking. Piece C is a small equilateral triangle. Pieces A and B are joined along one edge with B flipped (pointing down). Where should piece C be placed to complete a larger equilateral triangle?",
+    "choices": [
+      "Along the left edge of piece A",
+      "In the gap at the upper-right where the two piece edges don't meet",
+      "In the corner gap at the bottom where the combined A-B shape has an open notch",
+      "On top of piece A to extend it upward"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Two equilateral triangles joined base-to-base (one pointing up, one pointing down) form a rhombus. A small equilateral triangle fills the bottom-corner notch to complete a larger equilateral triangle."
+  },
+  {
+    "external_key": "AO-PA-B7-5",
+    "file": "b7",
+    "difficulty": 2,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Four pieces are shown: Piece A is a large square. Piece B is a right triangle whose legs are each half the side length of piece A. Piece C is an identical triangle to B. Piece D is an identical triangle to B. When B, C, and D are assembled and attached to piece A, which shape results?",
+    "choices": [
+      "A larger square",
+      "A regular hexagon",
+      "A square with one corner cut off",
+      "A pentagon with one right angle"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Each triangle fills one corner of the large square when pressed against it. Three triangles cover three corners; the fourth corner remains. The result is a pentagon with the uncovered corner forming the one remaining right angle."
+  },
+  {
+    "external_key": "AO-PA-B7-6",
+    "file": "b7",
+    "difficulty": 2,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "thin(23w)",
+      "no-trap-named"
+    ],
+    "stem": "Two pieces are given: Piece A is an L-shaped piece (a 3\u00d72 rectangle with a 1\u00d71 square removed from one corner). Piece B is a small 1\u00d71 square. When piece B is placed in the missing corner of piece A, what shape results?",
+    "choices": [
+      "A 3\u00d72 rectangle",
+      "A 2\u00d73 rectangle (same thing, different orientation)",
+      "A T-shape",
+      "A 4\u00d71 strip"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Piece A is a 3\u00d72 rectangle minus a 1\u00d71 corner square. Filling the missing corner with piece B restores the complete 3\u00d72 rectangle."
+  },
+  {
+    "external_key": "AO-PA-B7-7",
+    "file": "b7",
+    "difficulty": 2,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Three pieces are given: Piece A is a medium isosceles right triangle with the right angle at top. Piece B is an identical triangle. Piece C is a small square whose side equals the leg length of pieces A and B. When A and B are placed with their hypotenuses together, then C is attached to one open side, which figure results?",
+    "choices": [
+      "A larger isosceles right triangle",
+      "A square",
+      "A rectangle that is twice as wide as it is tall",
+      "A rectangle with a triangular bump on one end"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Two identical isosceles right triangles joined at their hypotenuses form a square. Attaching the small square C (side = leg length) to one open side of that square extends it into a rectangle that is twice as wide as it is tall. The resulting shape is a rectangle with a 2:1 width-to-height ratio."
+  },
+  {
+    "external_key": "AO-PA-B7-8",
+    "file": "b7",
+    "difficulty": 3,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Five pieces are labeled A\u2013E. Piece A is a large square. Pieces B and C are identical right triangles each with legs equal to half the side of A. Piece D is a small square with side equal to one-quarter the side of A. Piece E is a thin rectangle. When all five pieces are assembled without gaps or overlaps, which overall shape results?",
+    "choices": [
+      "A large right triangle",
+      "A large square larger than piece A",
+      "A large rectangle that is twice as long as it is wide",
+      "A T-shape"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Piece A forms the core. Triangles B and C fill two corners, piece D fills a quarter-corner gap, and rectangle E fills the remaining strip. Combined, they tile a large square whose side is 1.5 times piece A's side."
+  },
+  {
+    "external_key": "AO-PA-B7-9",
+    "file": "b7",
+    "difficulty": 3,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "thin(27w)",
+      "no-trap-named"
+    ],
+    "stem": "Piece A is a large right triangle with the right angle at the lower-left, the vertical leg on the left, and the horizontal leg on the bottom. Piece B is a smaller right triangle that is congruent to the upper-left half of piece A when it is cut along its median. Piece C is the remaining lower-right portion of that median cut. When B and C are reassembled, which shape do they form?",
+    "choices": [
+      "A square",
+      "A shape identical to piece A",
+      "A rectangle",
+      "A parallelogram"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Pieces B and C are simply the two halves of piece A cut along its median to the hypotenuse. Reassembling B and C recreates piece A identically."
+  },
+  {
+    "external_key": "AO-PA-B7-10",
+    "file": "b7",
+    "difficulty": 3,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Four pieces: Piece A is a large square with a diagonal line drawn from the top-left to the bottom-right corner. Pieces B, C, D are right triangles of equal size. When B, C, and D are placed against piece A so that each triangle's hypotenuse aligns with an outer edge of A, which overall assembled figure results?",
+    "choices": [
+      "A regular octagon",
+      "A larger square rotated 45\u00b0",
+      "A plus sign (cross shape)",
+      "A star shape"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Adding right triangles to three sides of a square by aligning their hypotenuses to the square's edges extends each side outward. Three such triangles together with the square form a larger square rotated 45\u00b0 relative to the original."
+  },
+  {
+    "external_key": "AO-PA-B7-11",
+    "file": "b7",
+    "difficulty": 3,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "Three pieces: Piece A is a large rectangle (3 units wide, 2 units tall). Piece B is a right triangle with legs 2 units and 1 unit. Piece C is a right triangle identical to B. B and C are mirror images of each other. When B is placed against the right side of A (hypotenuse facing A's right edge), and C is placed against the left side (mirrored), which shape results?",
+    "choices": [
+      "A regular hexagon",
+      "A parallelogram",
+      "A hexagon with two right angles",
+      "A parallelogram with clipped corners"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Placing opposite-facing right triangles on each short end of a rectangle extends both ends diagonally in the same slant direction, converting the rectangle into a parallelogram."
+  },
+  {
+    "external_key": "AO-PA-B7-12",
+    "file": "b7",
+    "difficulty": 4,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Six pieces labeled A\u2013F. Piece A is a medium square. Piece B is a medium square of identical size. Piece C is a right triangle with legs equal to the side of A. Piece D is an identical triangle to C. Piece E is a small rectangle 1\u00d72 units. Piece F is a 1\u00d71 square. All pieces assembled without gaps or overlap: which overall shape is formed?",
+    "choices": [
+      "A square whose side equals twice the side of piece A",
+      "A rectangle twice as long as it is wide",
+      "An irregular pentagon",
+      "A large right triangle"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Pieces A and B form a 1\u00d72 rectangle. Triangles C and D complete a square at each end (each triangle fills a corner gap). Piece E and piece F fill the remaining central strip. Total area = side\u00b2 \u00d7 4, forming a square with side = 2\u00d7 piece A."
+  },
+  {
+    "external_key": "AO-PA-B7-13",
+    "file": "b7",
+    "difficulty": 4,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Piece A is a large isosceles trapezoid with a long base of 4 units, a short top of 2 units, and height 2 units. Piece B is a right triangle with legs 2 units each. Piece C is an identical right triangle to B. When B is placed against trapezoid A's left slanted edge and C is placed against the right slanted edge, what overall shape is formed?",
+    "choices": [
+      "A large rectangle 4 units wide and 2 units tall",
+      "A large square 4 units on each side",
+      "A regular hexagon",
+      "A parallelogram"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Each right triangle fills the gap between the trapezoid's slanted leg and a vertical line. With both gaps filled, the combined shape is a rectangle 4 units wide (matching the long base) and 2 units tall."
+  },
+  {
+    "external_key": "AO-PA-B7-14",
+    "file": "b7",
+    "difficulty": 4,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "thin(32w)",
+      "no-trap-named"
+    ],
+    "stem": "Piece A is a large square. A smaller square piece B (half the side of A) is cut from the center-right of A, leaving an L-shape. Piece C is that same smaller square. Piece D is a right triangle with legs equal to half the side of A. When pieces A (L-shape), C, and D are assembled in a flat arrangement without overlap, what results?",
+    "choices": [
+      "A shape identical to the original large square A",
+      "A right triangle larger than piece D",
+      "A rectangle that is 1.5 times as long as it is wide",
+      "A pentagon"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Re-assembling the L-shape with square C restores the original square. Adding triangle D along one edge extends it into a 1.5:1 rectangle (area of square + area of triangle produces this ratio)."
+  },
+  {
+    "external_key": "AO-PA-B7-15",
+    "file": "b7",
+    "difficulty": 3,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "thin(29w)",
+      "no-trap-named"
+    ],
+    "stem": "Pieces A, B, C, D are four congruent parallelograms, each with a horizontal top edge and slanted sides leaning to the right. When the four pieces are arranged in a 2\u00d72 grid with alternating orientations (every other piece flipped upside down), what overall shape is formed?",
+    "choices": [
+      "A large parallelogram",
+      "A large rectangle",
+      "A rhombus",
+      "An irregular hexagon"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Alternating orientation (normal and flipped) of parallelograms in a grid causes the slanted edges to cancel out, producing straight left and right edges. The combined shape is a rectangle."
+  },
+  {
+    "external_key": "AO-PA-B7-16",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Seven pieces: Piece A is a regular hexagon with a dot at its center. Pieces B through G are six equilateral triangles, each with one side equal to the side length of hexagon A. When all six triangles (B\u2013G) are placed against each outer edge of hexagon A, what shape results?",
+    "choices": [
+      "A larger regular hexagon",
+      "A 12-pointed star",
+      "A regular 12-sided polygon (dodecagon)",
+      "A six-pointed Star of David shape"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Placing an equilateral triangle against each of the six edges of a regular hexagon fills in six triangular gaps. The outer vertices of those triangles form the six vertices of a larger regular hexagon, exactly doubling the side length."
+  },
+  {
+    "external_key": "AO-PA-B7-17",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Four pieces: Piece A is a large right triangle (legs 3 and 4 units). Piece B is a right triangle with legs 3 and 4 units (identical to A). Piece C is a 3\u00d74 rectangle. Piece D is a right triangle with legs 3 and 4. When A and B are joined at their hypotenuses and C is placed along the 3-unit side, then D fills the remaining gap, what shape is formed?",
+    "choices": [
+      "A square with side 5 units",
+      "A rectangle 4 units wide and 6 units tall",
+      "A rectangle 3 units wide and 8 units tall",
+      "A 3\u00d74 rectangle"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A and B joined at hypotenuses form a 3\u00d74 rectangle. Adding C (another 3\u00d74 rectangle) doubles it to a 4\u00d76 or 3\u00d78 strip \u2014 with C on the 4-unit side the result is 4 units wide and 6 units tall. Triangle D fills the diagonal gap producing a clean 4\u00d76 rectangle."
+  },
+  {
+    "external_key": "AO-PA-B7-19",
+    "file": "b7",
+    "difficulty": 4,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Three pieces: Piece A is a medium square (side = 2 units) with a diagonal arrow pointing from the bottom-left to the top-right corner. Piece B is a right triangle with legs 2 and 2 units (the lower-left half of a same-sized square). Piece C is a right triangle with legs 2 and 2 units (the upper-right half). When A, B, and C are assembled flat without overlap, what shape results?",
+    "choices": [
+      "A 2\u00d74 rectangle",
+      "A large right triangle with legs 4 units each",
+      "A large square with side 2\u221a2",
+      "A 2\u00d72 square with two triangular ears on the sides"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Piece A (2\u00d72 square) combined with triangle B (lower-left 2\u00d72 half) and triangle C (upper-right 2\u00d72 half) totals 2 complete 2\u00d72 squares in area. Arranged in an L: the square and two triangles tile a large right triangle with both legs measuring 4 units."
+  },
+  {
+    "external_key": "AO-PA-B7-20",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ao.pattern-assembly",
+    "flags": [
+      "thin(34w)",
+      "no-trap-named"
+    ],
+    "stem": "Five pieces are shown. Piece A is a large equilateral triangle (side 4 units). Pieces B, C, D are small equilateral triangles (side 2 units). Piece E is a rhombus made from two small equilateral triangles joined at one edge. When A, B, C, D, and E are assembled, which shape results?",
+    "choices": [
+      "A regular hexagon with side 2 units",
+      "A larger equilateral triangle with side 6 units",
+      "A trapezoid",
+      "A regular hexagon with side 4 units"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The large triangle (area 4 small-triangle units\u00b2) plus three small triangles plus rhombus E (2 small-triangle units\u00b2) equals 9 small equilateral triangle areas \u2014 exactly a side-6 equilateral triangle. They tile it without gaps."
+  },
+  {
+    "external_key": "AO-3D-B7-1",
+    "file": "b7",
+    "difficulty": 1,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(30w)",
+      "no-trap-named"
+    ],
+    "stem": "A rectangular prism (box) is sitting with its longest dimension running left to right. If you rotate it 90\u00b0 by tipping it backward (the top face tilts away from you, rotating around the back-bottom edge), which face is now on top?",
+    "choices": [
+      "The original top face",
+      "The original bottom face",
+      "The original back face",
+      "The original front face"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Tipping backward around the back-bottom edge causes the front face to swing up and become the new top. The original top rotates away to become the new front (facing away)."
+  },
+  {
+    "external_key": "AO-3D-B7-2",
+    "file": "b7",
+    "difficulty": 1,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(30w)"
+    ],
+    "stem": "A cube has colored stickers: top = orange, bottom = purple, front = red, back = blue, left = green, right = white. The cube is picked up and turned upside-down (rotated 180\u00b0 around a horizontal front-to-back axis). What color is now on top?",
+    "choices": [
+      "Orange",
+      "Purple",
+      "Red",
+      "Blue"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A 180\u00b0 flip around the front-to-back axis swaps top and bottom, and swaps left and right, but leaves front and back unchanged. The original bottom (purple) is now on top."
+  },
+  {
+    "external_key": "AO-3D-B7-3",
+    "file": "b7",
+    "difficulty": 1,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(24w)",
+      "no-trap-named"
+    ],
+    "stem": "You are looking directly at the front face of a rectangular prism. It is then rotated 90\u00b0 to the left around its vertical axis (the left side swings toward you). Which face is now facing you?",
+    "choices": [
+      "The original front face",
+      "The original right face",
+      "The original back face",
+      "The original left face"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Rotating left around the vertical axis brings the right face around to the front. The original front moves to become the new left side."
+  },
+  {
+    "external_key": "AO-3D-B7-5",
+    "file": "b7",
+    "difficulty": 2,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "A rectangular prism is 2 units wide, 3 units tall, and 4 units deep. You view it from directly in front. If you then view it from directly above (bird's-eye view), what shape do you see?",
+    "choices": [
+      "A 2\u00d73 rectangle",
+      "A 2\u00d74 rectangle",
+      "A 3\u00d74 rectangle",
+      "A 4\u00d74 square"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The top view shows width \u00d7 depth = 2\u00d74. The front view (2\u00d73) and side view (4\u00d73) each involve height. Only the top view gives 2\u00d74."
+  },
+  {
+    "external_key": "AO-3D-B7-7",
+    "file": "b7",
+    "difficulty": 3,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(20w)",
+      "no-trap-named"
+    ],
+    "stem": "A solid triangular prism rests with one rectangular face flat on a table. You view it from the front and see a rectangle. What shape do you see when you view it from the left end?",
+    "choices": [
+      "A rectangle",
+      "A triangle",
+      "A square",
+      "A trapezoid"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A triangular prism has triangular cross-sections on its two ends. Viewing it from the left end reveals the triangular face."
+  },
+  {
+    "external_key": "AO-3D-B7-8",
+    "file": "b7",
+    "difficulty": 4,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(32w)",
+      "no-trap-named"
+    ],
+    "stem": "A cube is placed with face 1 on top. It is then rotated 90\u00b0 forward twice in a row (each time the top tilts toward you, pivoting around the front-bottom edge). After both rotations, which original face is now on top?",
+    "choices": [
+      "The original top face (face 1)",
+      "The original front face",
+      "The original bottom face (face opposite face 1)",
+      "The original back face"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Each 90\u00b0 forward rotation advances the cycle: top \u2192 front \u2192 bottom \u2192 back \u2192 top. After 1 rotation: original front is on top. After 2 rotations: original bottom is on top."
+  },
+  {
+    "external_key": "AO-3D-B7-10",
+    "file": "b7",
+    "difficulty": 4,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "A rectangular prism has dimensions 1\u00d72\u00d74 (height \u00d7 width \u00d7 depth). If you slice it with a horizontal plane halfway up its height, what shape is the cross-section?",
+    "choices": [
+      "A 1\u00d72 rectangle",
+      "A 2\u00d74 rectangle",
+      "A 1\u00d74 rectangle",
+      "A square"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A horizontal cut through a rectangular prism reveals a rectangle whose dimensions are width \u00d7 depth = 2\u00d74, regardless of where vertically the cut is made."
+  },
+  {
+    "external_key": "AO-3D-B7-11",
+    "file": "b7",
+    "difficulty": 3,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(18w)",
+      "no-trap-named"
+    ],
+    "stem": "A cube: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. Rotate 90\u00b0 to the right (vertical axis). What color is now on the left side?",
+    "choices": [
+      "Blue",
+      "Red",
+      "Green",
+      "Yellow"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Right rotation (vertical axis): right\u2192front, front\u2192left, left\u2192back, back\u2192right. Original front (red) moves to the left position. Answer: Red."
+  },
+  {
+    "external_key": "AO-3D-B7-13",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A cube is sliced by a plane that passes through the midpoints of four parallel edges \u2014 specifically the four edges running left-to-right on the front and back faces (two on the front face, two on the back). What is the shape of the cross-section?",
+    "choices": [
+      "A square",
+      "A rectangle that is not a square",
+      "A rhombus",
+      "A trapezoid"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Cutting through the midpoints of four parallel edges of a cube with a plane parallel to two faces produces a square cross-section, since all four edge midpoints are equidistant and form a square in the plane of the cut."
+  },
+  {
+    "external_key": "AO-3D-B7-15",
+    "file": "b7",
+    "difficulty": 4,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "A cube: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. Rotate the cube 90\u00b0 backward (top tilts away, pivoting around the back-bottom edge), then 90\u00b0 to the left (around vertical axis). What color is on the bottom after both rotations?",
+    "choices": [
+      "Red",
+      "White",
+      "Green",
+      "Black"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Rotation 1 (90\u00b0 backward): new top=green(old back), new front=white(old top), new bottom=red(old front), new back=black(old bottom); left/right unchanged (blue/yellow). Rotation 2 (90\u00b0 left, vertical): top and bottom unchanged. Bottom stays red."
+  },
+  {
+    "external_key": "AO-3D-B7-16",
+    "file": "b7",
+    "difficulty": 3,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(16w)",
+      "no-trap-named"
+    ],
+    "stem": "A cube: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. Rotate 90\u00b0 forward (top toward you, front-bottom pivot). What color is now on the back face?",
+    "choices": [
+      "White",
+      "Green",
+      "Red",
+      "Black"
+    ],
+    "correct_index": 0,
+    "current_explanation": "90\u00b0 forward (front-bottom pivot): top\u2192front, front\u2192bottom, bottom\u2192back, back\u2192top. Original top (white) moves to the back position."
+  },
+  {
+    "external_key": "AO-PF-B7-2",
+    "file": "b7",
+    "difficulty": 1,
+    "topic_id": "ao.paper-folding-nets",
+    "flags": [
+      "ai-tell:\\blet me trace\\b"
+    ],
+    "stem": "A net consists of six squares arranged as follows: a row of four squares (labeled 1\u20134, left to right), square 5 attached to the top edge of square 2, and square 6 attached to the bottom edge of square 3. When this net is folded, what 3D object is formed?",
+    "choices": [
+      "An open-top box",
+      "A cube",
+      "A rectangular prism that is not a cube",
+      "A triangular prism"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Verify fold: Square 2 is the base. Square 1 folds up to become the left face. Square 3 folds up to become the right face. Square 4 folds up to become the far face (opposite square 1 would be... let me trace: 1-2-3-4 is the spine. Fold 1 up\u2192left wall. Fold 3 up\u2192right wall. Fold 4 up\u2192back wall. Square 5 (top of 2) folds up\u2192front wall. Square 6 (bottom of 3): when square 3 is already the right wall, square 6 is on its lower edge which becomes the top. So: base=2, walls=1(left),3(right\u2192folds to right wall), 4(back), 5(front), 6(top). All six squares, all same size \u2192 cube."
+  },
+  {
+    "external_key": "AO-PF-B7-13",
+    "file": "b7",
+    "difficulty": 3,
+    "topic_id": "ao.paper-folding-nets",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A square sheet is folded once by bringing the left edge to meet the right edge (a vertical fold, creating a rectangle half the original width). A hole is then punched through all layers at the center of the folded rectangle. When the sheet is unfolded, how many holes are there, and where?",
+    "choices": [
+      "One hole in the exact center of the original sheet",
+      "Two holes symmetrically placed left and right of center, each at the vertical midpoint",
+      "Four holes at the four quadrant centers",
+      "Two holes \u2014 one in the center of each half \u2014 stacked vertically"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Folding left-to-right (vertical fold) doubles the layers side by side. Punching the center of the folded rectangle punches through both layers simultaneously. When unfolded, those two punch points are mirror images left and right of the center crease, both at the same vertical height (midpoint)."
+  },
+  {
+    "external_key": "AO-SC-B7-1",
+    "file": "b7",
+    "difficulty": 1,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(25w)",
+      "no-trap-named"
+    ],
+    "stem": "A staircase of cubes is built against a wall: the first column from the left is 1 cube tall, the second is 2 cubes tall, and the third is 3 cubes tall. Each column is 1 cube wide and 1 cube deep. How many total cubes are in the staircase?",
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "9"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Total = 1 + 2 + 3 = 6 cubes. The staircase pattern always sums to n(n+1)/2 for n steps, which equals 3(4)/2 = 6."
+  },
+  {
+    "external_key": "AO-SC-B7-2",
+    "file": "b7",
+    "difficulty": 1,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(10w)",
+      "no-trap-named"
+    ],
+    "stem": "A rectangular arrangement of cubes is 4 cubes long, 2 cubes wide, and 1 cube tall (a single flat layer). How many cubes are in the arrangement?",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "10"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total = 4 \u00d7 2 \u00d7 1 = 8 cubes."
+  },
+  {
+    "external_key": "AO-SC-B7-3",
+    "file": "b7",
+    "difficulty": 1,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(11w)",
+      "no-trap-named"
+    ],
+    "stem": "A 2\u00d72\u00d72 cube structure is built from unit cubes. How many unit cubes are used in total?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total = 2 \u00d7 2 \u00d7 2 = 8 unit cubes."
+  },
+  {
+    "external_key": "AO-SC-B7-4",
+    "file": "b7",
+    "difficulty": 2,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "A structure has a base layer of 3\u00d73 cubes (9 cubes) and a top layer of only the four corner positions of that 3\u00d73 grid (4 cubes at the corners). How many total cubes are in the structure?",
+    "choices": [
+      "9",
+      "11",
+      "13",
+      "16"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Bottom layer = 9 cubes. Top layer = 4 corner cubes. Total = 9 + 4 = 13 cubes."
+  },
+  {
+    "external_key": "AO-SC-B7-6",
+    "file": "b7",
+    "difficulty": 2,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "Looking at a structure from directly above, you see a 3\u00d73 grid with a hole in the center (the center position is empty). All visible squares are exactly 1 cube tall. How many total unit cubes are in the structure?",
+    "choices": [
+      "7",
+      "8",
+      "9",
+      "12"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The 3\u00d73 grid has 9 positions. One center position is empty (no cube there). Remaining = 9 \u2212 1 = 8 cubes, all 1 unit tall."
+  },
+  {
+    "external_key": "AO-SC-B7-7",
+    "file": "b7",
+    "difficulty": 3,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(28w)",
+      "no-trap-named"
+    ],
+    "stem": "A 3\u00d73\u00d73 large cube is built from unit cubes. All six outer faces are painted red. How many unit cubes have exactly three painted faces?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Unit cubes with three painted faces are at the corners of the large cube. A cube has exactly 8 corners, so 8 unit cubes have three painted faces."
+  },
+  {
+    "external_key": "AO-SC-B7-8",
+    "file": "b7",
+    "difficulty": 3,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(24w)",
+      "no-trap-named"
+    ],
+    "stem": "A 5\u00d75\u00d75 large cube is assembled from unit cubes. How many unit cubes are completely hidden (touch no outer face)?",
+    "choices": [
+      "9",
+      "16",
+      "27",
+      "64"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Interior (hidden) cubes form a (5\u22122)\u00b3 = 3\u00b3 = 27 unit cube block inside. Every other unit cube touches at least one outer face."
+  },
+  {
+    "external_key": "AO-SC-B7-10",
+    "file": "b7",
+    "difficulty": 4,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(12w)",
+      "no-trap-named"
+    ],
+    "stem": "A tower is built: bottom layer is 4\u00d74 (16 cubes), next layer is 3\u00d73 (9 cubes) centered on the first, next is 2\u00d72 (4 cubes), then 1\u00d71 (1 cube). How many unit cubes are in the tower?",
+    "choices": [
+      "25",
+      "28",
+      "30",
+      "32"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total = 16 + 9 + 4 + 1 = 30 cubes."
+  },
+  {
+    "external_key": "AO-SC-B7-11",
+    "file": "b7",
+    "difficulty": 4,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A 3\u00d73\u00d73 cube has all six faces painted blue. It is then cut into 27 unit cubes. How many unit cubes have NO painted faces at all?",
+    "choices": [
+      "0",
+      "1",
+      "6",
+      "8"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The only unit cube with zero painted faces is the one at the very center of the 3\u00d73\u00d73 cube \u2014 it is surrounded on all sides and touches no outer face. There is exactly 1 such cube."
+  },
+  {
+    "external_key": "AO-SC-B7-12",
+    "file": "b7",
+    "difficulty": 4,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "An L-shaped structure is built on a table: one arm is 4 cubes long, 1 cube wide, and 1 cube tall. The other arm is 3 cubes long, 1 cube wide, and 2 cubes tall. The two arms share 1 corner cube. How many total cubes are in the structure?",
+    "choices": [
+      "9",
+      "10",
+      "11",
+      "13"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Arm 1 is 4 cubes long \u00d7 1 cube wide \u00d7 1 cube tall = 4 cubes. Arm 2 is 3 cubes long \u00d7 1 cube wide \u00d7 2 cubes tall = 6 cubes. The two arms share exactly 1 corner cube at their junction. Total = 4 + 6 \u2212 1 = 9 cubes."
+  },
+  {
+    "external_key": "AO-SC-B7-14",
+    "file": "b7",
+    "difficulty": 3,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(27w)",
+      "no-trap-named"
+    ],
+    "stem": "From the front, a structure appears as: 3 cubes across on the bottom row, 2 cubes in the middle row (centered), 1 cube on top (centered). Each stack is 1 cube deep. How many total cubes are in this pyramid viewed from the side?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "9"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Bottom row: 3 cubes. Middle row: 2 cubes. Top: 1 cube. Total = 3 + 2 + 1 = 6 cubes (each 1 cube deep as stated)."
+  },
+  {
+    "external_key": "AO-PF-B7-18",
+    "file": "b7",
+    "difficulty": 2,
+    "topic_id": "ao.paper-folding-nets",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A square sheet of paper has its four corners labeled A (top-left), B (top-right), C (bottom-right), and D (bottom-left). The sheet is folded by bringing corner B down to meet corner D (a diagonal fold along the line from A to C). Which shape does the folded paper form?",
+    "choices": [
+      "A smaller square",
+      "A right triangle with the right angle at corner A",
+      "A right triangle with vertices at A, the merged B-D point, and C",
+      "A rectangle"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Folding B to meet D folds along the diagonal AC. The two non-diagonal corners (B and D) come together while A and C remain at their positions. The result is a right triangle whose vertices are A, C, and the merged B-D point."
+  },
+  {
+    "external_key": "AO-PF-B7-20",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ao.paper-folding-nets",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A rectangular sheet (2 units wide, 4 units tall) is folded in half by bringing the top edge to the bottom edge (horizontal fold \u2192 2\u00d72 square). Then folded again bringing the top edge to the bottom edge (another horizontal fold \u2192 2\u00d71 rectangle, four layers). A hole is punched at the center of this 2\u00d71 rectangle through all layers. When fully unfolded, how many holes appear and how are they arranged?",
+    "choices": [
+      "One hole in the center of the sheet",
+      "Two holes side by side across the middle of the sheet",
+      "Four holes in a vertical column at the sheet's horizontal center",
+      "Four holes in a 2\u00d72 grid"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Fold 1 (top\u2192bottom) stacks top half on bottom half \u2014 two layers. Fold 2 (top\u2192bottom of the 2\u00d72 square) stacks upper quarter on lower quarter \u2014 four layers. The punch hits four positions that unfold into a vertical column of 4 holes, spaced at equal intervals along the sheet's vertical axis, all at the horizontal center."
+  },
+  {
+    "external_key": "AO-SC-B7-19",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A hollow open-top box is built from unit cubes: outer dimensions are 4 wide \u00d7 4 deep \u00d7 3 tall, with walls and bottom exactly 1 unit thick and no top face. How many unit cubes make up this box?",
+    "choices": [
+      "28",
+      "36",
+      "40",
+      "48"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Bottom layer (solid 4\u00d74) = 16 cubes. Each of the 2 upper layers has walls only (outer 4\u00d74 minus inner hollow 2\u00d72) = 12 cubes per layer. Two upper layers: 12 \u00d7 2 = 24 cubes. Total = 16 + 24 = 40 cubes."
+  },
+  {
+    "external_key": "AO-SC-B7-20",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "ao.spatial-counting",
+    "flags": [
+      "thin(30w)",
+      "no-trap-named"
+    ],
+    "stem": "A 4\u00d74\u00d74 large cube painted on all six outer faces is cut into 64 unit cubes. How many unit cubes have zero painted faces?",
+    "choices": [
+      "0",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The interior of a 4\u00d74\u00d74 cube consists of (4\u22122)\u00b3 = 2\u00b3 = 8 unit cubes completely surrounded by other cubes, touching no outer face and therefore having zero painted faces."
+  },
+  {
+    "external_key": "AO-3D-B7-18",
+    "file": "b7",
+    "difficulty": 2,
+    "topic_id": "ao.3d-visualization",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "A cube: top = silver, bottom = gold, front = red, back = blue, left = green, right = white. The cube is rotated 180\u00b0 around the vertical axis (spinning a half-turn so the front face goes all the way to the back). What color is now facing you (front)?",
+    "choices": [
+      "Red",
+      "Blue",
+      "Green",
+      "White"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A 180\u00b0 rotation around the vertical axis swaps front and back, and swaps left and right, while top and bottom remain unchanged. The original back face (blue) becomes the new front."
+  }
+]

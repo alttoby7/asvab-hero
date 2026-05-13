@@ -1,0 +1,156 @@
+[
+  {
+    "external_key": "AR-RP-NEW-1",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A pancake recipe uses flour and sugar in a 2:1 ratio. If a baker uses 4 cups of flour, how much sugar is needed?",
+    "choices": ["2 cups", "3 cups", "6 cups", "8 cups"],
+    "correct_index": 0,
+    "explanation": "Set up the proportion flour/sugar = 2/1 = 4/x. Cross-multiply: 2x = 4, so x = 2 cups. The choice 8 cups multiplies 4 by 2 instead of dividing, treating flour as the smaller part. The choice 6 cups adds the parts (4 + 2) instead of scaling. The choice 3 cups subtracts 1 from 4 instead of applying the ratio. Sugar is the smaller quantity here, so it must be less than the flour amount.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-2",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "Concrete is mixed with cement and sand in a 1:3 ratio. If 5 bags of cement are used, how many bags of sand are needed?",
+    "choices": ["8", "12", "15", "20"],
+    "correct_index": 2,
+    "explanation": "Set up cement/sand = 1/3 = 5/x. Cross-multiply: x = 15 bags. The choice 8 adds the parts (5 + 3) instead of scaling. The choice 20 multiplies 5 by 4 (the total ratio parts) instead of by 3. The choice 12 subtracts 3 from a wrong total. Sand needs three times the cement, so each cement bag pairs with three sand bags, giving 5 times 3.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-3",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "In a classroom the ratio of boys to girls is 3:4. If there are 9 boys, how many girls are in the class?",
+    "choices": ["10", "12", "13", "16"],
+    "correct_index": 1,
+    "explanation": "Set up boys/girls = 3/4 = 9/x. Cross-multiply: 3x = 36, so x = 12 girls. The choice 13 adds 4 to 9 instead of scaling proportionally. The choice 16 applies the scale factor 4 to the wrong number (4 times 4). The choice 10 mixes addition and the ratio incorrectly. Scaling the 3 up to 9 means multiplying by 3, so the 4 also scales by 3 to reach 12.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-4",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A paint mix uses red and white in a 1:2 ratio. If 3 quarts of red are used, how much white is needed?",
+    "choices": ["1.5 quarts", "5 quarts", "6 quarts", "9 quarts"],
+    "correct_index": 2,
+    "explanation": "Set up red/white = 1/2 = 3/x. Cross-multiply: x = 6 quarts. The choice 1.5 quarts flips the ratio and divides instead of multiplying. The choice 5 quarts adds the parts (3 + 2) instead of scaling. The choice 9 quarts multiplies 3 by 3 (the total parts) instead of by 2. White is twice the red, so 3 quarts of red pairs with 6 quarts of white.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-5",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "On a map, 1 inch represents 25 miles. Two towns are 6.5 inches apart on the map. How far apart are they in reality?",
+    "choices": ["31.5 miles", "150 miles", "162.5 miles", "175 miles"],
+    "correct_index": 2,
+    "explanation": "Set up inches/miles = 1/25 = 6.5/x. Cross-multiply: x = 162.5 miles. The choice 31.5 adds 25 and 6.5 instead of multiplying. The choice 150 drops the 0.5 inch from the calculation. The choice 175 rounds 6.5 up to 7 before multiplying. Each inch on the map equals 25 actual miles, so 6.5 inches scales directly to 6.5 times 25.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-6",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "A cookie recipe uses 3 cups of flour to make 8 cookies. How many cups of flour are needed to make 60 cookies?",
+    "choices": ["20 cups", "22.5 cups", "24 cups", "65 cups"],
+    "correct_index": 1,
+    "explanation": "Set up flour/cookies = 3/8 = x/60. Cross-multiply: 8x = 180, so x = 22.5 cups. The choice 20 cups multiplies 60 by 1/3 instead of 3/8. The choice 24 cups uses the wrong ratio of 60 divided by something close. The choice 65 cups adds 60 and 5 with no proportional logic. Each cookie needs 3/8 cup of flour, so 60 cookies need 60 times 3/8.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-7",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "A server tips at a rate of $4 for every $25 of bill. If the bill is $87.50, what tip should be left at this rate?",
+    "choices": ["$12.50", "$14.00", "$17.50", "$21.88"],
+    "correct_index": 1,
+    "explanation": "Set up tip/bill = 4/25 = x/87.50. Cross-multiply: 25x = 350, so x = $14.00. The choice $12.50 applies a flat 1/7 ratio incorrectly. The choice $17.50 uses a 20 percent tip rate, not the 16 percent given. The choice $21.88 uses a 25 percent rate from confusing the 25 in the ratio. The given ratio is 4 out of 25, which is 16 percent, so 87.50 times 0.16 gives 14.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-8",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "On a map, 2 centimeters represents 15 kilometers. If two cities are 9 centimeters apart on the map, how far apart are they?",
+    "choices": ["22 km", "45 km", "67.5 km", "135 km"],
+    "correct_index": 2,
+    "explanation": "Set up cm/km = 2/15 = 9/x. Cross-multiply: 2x = 135, so x = 67.5 km. The choice 135 km forgets to divide by 2 after multiplying 9 by 15. The choice 45 km uses 1 cm per 5 km, the wrong scale. The choice 22 km adds 15 and 9 minus 2. Each centimeter equals 7.5 km, so 9 centimeters equals 67.5 km.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-9",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "In a class the ratio of boys to girls is 3:5. If the class has 32 students total, how many are boys?",
+    "choices": ["8", "12", "19", "20"],
+    "correct_index": 1,
+    "explanation": "The ratio 3:5 means 3 + 5 = 8 total parts. Boys are 3/8 of the total: 32 times 3/8 = 12 boys. The choice 19 treats the part-to-part ratio as part-to-whole, computing 32 times 3/5. The choice 20 makes the same error in the other direction (32 times 5/8). The choice 8 just reports the total parts. Always add the ratio parts before splitting a known total.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-10",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "Concrete is mixed with cement, sand, and gravel in a 1:2:4 ratio. A batch contains 35 cubic feet of concrete total. How much gravel is in the batch?",
+    "choices": ["5 cubic feet", "10 cubic feet", "20 cubic feet", "28 cubic feet"],
+    "correct_index": 2,
+    "explanation": "Add the parts: 1 + 2 + 4 = 7 total parts. Gravel is 4/7 of the total: 35 times 4/7 = 20 cubic feet. The choice 28 cubic feet treats 4/5 as the gravel share, forgetting to include cement in the sum. The choice 10 cubic feet uses 4/14, dividing by twice the correct total. The choice 5 cubic feet divides 35 by 7 without scaling up. Add all three parts of the ratio before taking the gravel fraction.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-11",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A paint blend uses red, yellow, and blue in a 4:3:2 ratio. If the blend contains 18 ounces of blue, how many ounces is the entire blend?",
+    "choices": ["54 oz", "63 oz", "72 oz", "81 oz"],
+    "correct_index": 3,
+    "explanation": "Blue is 2 parts. Each part equals 18 divided by 2, or 9 ounces. Add the parts: 4 + 3 + 2 = 9 total parts. Total blend = 9 parts times 9 ounces = 81 ounces. The choice 54 oz multiplies 18 by 3, treating yellow's ratio number as the scale factor. The choice 72 oz uses 8 parts, forgetting blue itself. The choice 63 oz uses 7 parts, dropping blue. Find the per-part value first, then multiply by total parts.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-12",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "A bag contains red, blue, and green marbles in a 2:3:5 ratio. The bag has 24 red marbles. How many green marbles are in the bag?",
+    "choices": ["36", "48", "60", "72"],
+    "correct_index": 2,
+    "explanation": "Red is 2 parts and equals 24 marbles, so each part equals 12 marbles. Green is 5 parts: 5 times 12 = 60 green marbles. The choice 36 multiplies 12 by 3, giving the blue count instead of green. The choice 48 uses a scale factor of 24 divided by 5. The choice 72 uses all 6 parts after the red is gone. Find the value of one part by dividing the known quantity by its ratio number, then multiply by the target ratio number.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-13",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "A salad dressing mixes oil, vinegar, and water in a 1:2:5 ratio. If the recipe uses 30 ounces of water, how many ounces of dressing does it make total?",
+    "choices": ["36 oz", "42 oz", "48 oz", "75 oz"],
+    "correct_index": 2,
+    "explanation": "Water is 5 parts and equals 30 ounces, so each part equals 6 ounces. Add the parts: 1 + 2 + 5 = 8 total parts. Total dressing = 8 times 6 = 48 ounces. The choice 36 oz uses only 6 parts, dropping the water itself. The choice 42 oz uses 7 parts, dropping one of the smaller components. The choice 75 oz multiplies 30 by 2.5, treating the ratio additively. Find the per-part value, add all parts, then multiply.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-14",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 5,
+    "stem": "Six workers can paint a house in 10 days. Working at the same rate, how many days will 4 workers need to paint the same house?",
+    "choices": ["6.67 days", "8 days", "12 days", "15 days"],
+    "correct_index": 3,
+    "explanation": "This is inverse proportion: fewer workers means more days. Total work equals 6 times 10 = 60 worker-days. With 4 workers, days = 60 divided by 4 = 15 days. The choice 6.67 days applies direct proportion (10 times 4/6), shrinking the time as workers shrink. The choice 12 days subtracts 2 workers and adds 2 days. The choice 8 days reduces time even more, the opposite of what should happen. When one quantity decreases, the other increases by the inverse factor.",
+    "status": "draft"
+  }
+]

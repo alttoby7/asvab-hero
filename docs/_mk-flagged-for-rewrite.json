@@ -1,0 +1,1367 @@
+[
+  {
+    "external_key": "MK-2",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(14w)"
+    ],
+    "stem": "Solve for x: 3x \u2212 7 = 14",
+    "choices": [
+      "x = 3",
+      "x = 5",
+      "x = 7",
+      "x = 9"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Add 7 to both sides: 3x = 21. Divide by 3: x = 7."
+  },
+  {
+    "external_key": "MK-3",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(13w)"
+    ],
+    "stem": "What is the value of 2\u2075?",
+    "choices": [
+      "10",
+      "16",
+      "25",
+      "32"
+    ],
+    "correct_index": 3,
+    "current_explanation": "2\u2075 = 2 \u00d7 2 \u00d7 2 \u00d7 2 \u00d7 2 = 32."
+  },
+  {
+    "external_key": "MK-8",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(9w)"
+    ],
+    "stem": "What is 15% of 240?",
+    "choices": [
+      "30",
+      "36",
+      "40",
+      "42"
+    ],
+    "correct_index": 1,
+    "current_explanation": "15% \u00d7 240 = 0.15 \u00d7 240 = 36."
+  },
+  {
+    "external_key": "MK-10",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "mk.geometry",
+    "flags": [
+      "thin(12w)"
+    ],
+    "stem": "What is the circumference of a circle with a diameter of 10 inches? (Use \u03c0 \u2248 3.14)",
+    "choices": [
+      "15.7 inches",
+      "31.4 inches",
+      "78.5 inches",
+      "314 inches"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Circumference = \u03c0 \u00d7 diameter = 3.14 \u00d7 10 = 31.4 inches."
+  },
+  {
+    "external_key": "MK-11",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(7w)"
+    ],
+    "stem": "If the ratio of boys to girls in a class is 3:5 and there are 24 boys, how many girls are in the class?",
+    "choices": [
+      "32",
+      "36",
+      "40",
+      "48"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Girls = (5/3) \u00d7 24 = 40."
+  },
+  {
+    "external_key": "MK-AL-1",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(14w)",
+      "no-trap-named"
+    ],
+    "stem": "Solve for x: 3x + 7 = 22",
+    "choices": [
+      "x = 3",
+      "x = 5",
+      "x = 7",
+      "x = 9"
+    ],
+    "correct_index": 1,
+    "current_explanation": "3x = 22 \u2212 7 = 15. x = 15 \u00f7 3 = 5."
+  },
+  {
+    "external_key": "MK-AL-2",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(14w)",
+      "no-trap-named"
+    ],
+    "stem": "Solve for x: 4x \u2212 9 = 23",
+    "choices": [
+      "x = 3.5",
+      "x = 7",
+      "x = 8",
+      "x = 32"
+    ],
+    "correct_index": 2,
+    "current_explanation": "4x = 23 + 9 = 32. x = 32 \u00f7 4 = 8."
+  },
+  {
+    "external_key": "MK-AL-3",
+    "file": "b2",
+    "difficulty": 5,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Solve the system: 2x + y = 11 and x \u2212 y = 1. What is the value of x?",
+    "choices": [
+      "x = 2",
+      "x = 3",
+      "x = 4",
+      "x = 5"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Add both equations: (2x + y) + (x \u2212 y) = 11 + 1 \u2192 3x = 12 \u2192 x = 4. Then y = x \u2212 1 = 3. Verify: 2(4) + 3 = 11 \u2713."
+  },
+  {
+    "external_key": "MK-AL-4",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "Which value of x satisfies the inequality 5x \u2212 4 > 16?",
+    "choices": [
+      "x = 3",
+      "x = 4",
+      "x = 4.5",
+      "x = 5"
+    ],
+    "correct_index": 3,
+    "current_explanation": "5x > 16 + 4 = 20, so x > 4. Among the choices, only x = 5 satisfies x > 4."
+  },
+  {
+    "external_key": "MK-AL-5",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(12w)",
+      "no-trap-named"
+    ],
+    "stem": "If 2(x + 3) = 18, what is x?",
+    "choices": [
+      "x = 6",
+      "x = 7",
+      "x = 9",
+      "x = 12"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Distribute: 2x + 6 = 18. 2x = 12. x = 6."
+  },
+  {
+    "external_key": "MK-AL-6",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(34w)",
+      "no-trap-named"
+    ],
+    "stem": "A soldier earns $d per day. After 5 days he has earned $650. He spends $200. Which expression correctly gives his remaining money?",
+    "choices": [
+      "5d \u2212 200",
+      "d/5 \u2212 200",
+      "650 \u2212 5d",
+      "5(d \u2212 200)"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Total earned after 5 days = 5d. Since 5d = $650, he then spends $200, leaving 5d \u2212 200 = 650 \u2212 200 = $450. The expression 5d \u2212 200 models earning then spending."
+  },
+  {
+    "external_key": "MK-FR-1",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(27w)"
+    ],
+    "stem": "What is 3/4 + 2/3?",
+    "choices": [
+      "5/7",
+      "5/12",
+      "1 5/12",
+      "1 7/12"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Common denominator is 12. 3/4 = 9/12; 2/3 = 8/12. Sum = 17/12 = 1 5/12. The trap is adding numerators and denominators directly to get 5/7."
+  },
+  {
+    "external_key": "MK-FR-2",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "Which fraction is largest: 5/8, 2/3, 3/5, or 7/12?",
+    "choices": [
+      "5/8",
+      "2/3",
+      "3/5",
+      "7/12"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Convert to a common denominator of 120: 5/8 = 75/120, 2/3 = 80/120, 3/5 = 72/120, 7/12 = 70/120. Largest is 2/3."
+  },
+  {
+    "external_key": "MK-FR-3",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(13w)",
+      "no-trap-named"
+    ],
+    "stem": "A soldier runs 2.75 miles on Monday and 1 3/4 miles on Tuesday. What is the combined distance?",
+    "choices": [
+      "4.00 miles",
+      "4.25 miles",
+      "4.50 miles",
+      "4.75 miles"
+    ],
+    "correct_index": 2,
+    "current_explanation": "1 3/4 = 1.75 miles. Total = 2.75 + 1.75 = 4.50 miles."
+  },
+  {
+    "external_key": "MK-FR-5",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(23w)"
+    ],
+    "stem": "Express 0.625 as a fraction in lowest terms.",
+    "choices": [
+      "5/8",
+      "6/10",
+      "25/40",
+      "3/5"
+    ],
+    "correct_index": 0,
+    "current_explanation": "0.625 = 625/1000. Divide by GCF 125: 5/8. Options 6/10 and 25/40 are equivalent but not fully reduced; 3/5 = 0.60 \u2260 0.625."
+  },
+  {
+    "external_key": "MK-EP-1",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "Simplify: 2\u00b3 \u00d7 2\u2074",
+    "choices": [
+      "2\u2076",
+      "2\u2077",
+      "4\u2077",
+      "8\u2077"
+    ],
+    "correct_index": 1,
+    "current_explanation": "When multiplying powers with the same base, add the exponents: 2\u00b3 \u00d7 2\u2074 = 2^(3+4) = 2\u2077 = 128."
+  },
+  {
+    "external_key": "MK-EP-2",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(25w)"
+    ],
+    "stem": "What is (3\u00b2)\u00b3?",
+    "choices": [
+      "3\u2075",
+      "3\u2076",
+      "9\u00b3",
+      "27\u00b2"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Power of a power rule: multiply the exponents. (3\u00b2)\u00b3 = 3^(2\u00d73) = 3\u2076 = 729. The trap is adding instead of multiplying to get 3\u2075."
+  },
+  {
+    "external_key": "MK-EP-3",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "Expand and simplify: (x + 4)(x \u2212 3)",
+    "choices": [
+      "x\u00b2 \u2212 12",
+      "x\u00b2 + x \u2212 12",
+      "x\u00b2 \u2212 x \u2212 12",
+      "x\u00b2 + 7x \u2212 12"
+    ],
+    "correct_index": 1,
+    "current_explanation": "FOIL: x\u00b7x + x\u00b7(\u22123) + 4\u00b7x + 4\u00b7(\u22123) = x\u00b2 \u2212 3x + 4x \u2212 12 = x\u00b2 + x \u2212 12."
+  },
+  {
+    "external_key": "MK-EP-5",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(20w)",
+      "no-trap-named"
+    ],
+    "stem": "Simplify: (4x\u00b3y\u00b2) \u00f7 (2xy)",
+    "choices": [
+      "2x\u00b2y",
+      "2x\u00b3y",
+      "4x\u00b2y",
+      "2x\u00b2y\u00b2"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Coefficients: 4 \u00f7 2 = 2. x-terms: x\u00b3 \u00f7 x = x\u00b2. y-terms: y\u00b2 \u00f7 y = y. Result: 2x\u00b2y."
+  },
+  {
+    "external_key": "MK-GE-1",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "mk.geometry",
+    "flags": [
+      "thin(28w)"
+    ],
+    "stem": "A rectangular field is 80 meters long and 35 meters wide. What is its perimeter?",
+    "choices": [
+      "115 m",
+      "230 m",
+      "270 m",
+      "2,800 m"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Perimeter = 2(l + w) = 2(80 + 35) = 2(115) = 230 m. The trap is computing l + w once (115 m) without multiplying by 2."
+  },
+  {
+    "external_key": "MK-GE-2",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "mk.geometry",
+    "flags": [
+      "thin(26w)"
+    ],
+    "stem": "A triangle has a base of 14 cm and a height of 9 cm. What is its area?",
+    "choices": [
+      "46 cm\u00b2",
+      "63 cm\u00b2",
+      "126 cm\u00b2",
+      "252 cm\u00b2"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Area = (1/2) \u00d7 base \u00d7 height = (1/2) \u00d7 14 \u00d7 9 = 63 cm\u00b2. The trap is omitting the 1/2 factor, giving 126 cm\u00b2."
+  },
+  {
+    "external_key": "MK-GE-4",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "mk.geometry",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "A circle has a diameter of 10 cm. What is its area? (Use \u03c0 \u2248 3.14)",
+    "choices": [
+      "31.4 cm\u00b2",
+      "62.8 cm\u00b2",
+      "78.5 cm\u00b2",
+      "314 cm\u00b2"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Radius = diameter \u00f7 2 = 5 cm. Area = \u03c0r\u00b2 = 3.14 \u00d7 25 = 78.5 cm\u00b2. Using the diameter as the radius gives 3.14 \u00d7 100 = 314 \u2014 a classic trap."
+  },
+  {
+    "external_key": "MK-NP-1",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "thin(28w)",
+      "no-trap-named"
+    ],
+    "stem": "Which of the following is a prime number?",
+    "choices": [
+      "51",
+      "57",
+      "61",
+      "91"
+    ],
+    "correct_index": 2,
+    "current_explanation": "51 = 3 \u00d7 17; 57 = 3 \u00d7 19; 91 = 7 \u00d7 13. Only 61 has no factors besides 1 and itself, so it is prime."
+  },
+  {
+    "external_key": "MK-NP-2",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "thin(33w)",
+      "no-trap-named"
+    ],
+    "stem": "What is the greatest common factor (GCF) of 36 and 48?",
+    "choices": [
+      "6",
+      "9",
+      "12",
+      "18"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Factors of 36 include 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 48 include 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The largest common factor is 12."
+  },
+  {
+    "external_key": "MK-NP-3",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "thin(29w)",
+      "no-trap-named"
+    ],
+    "stem": "The product of two consecutive even integers is 48. What is the smaller integer?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Let the integers be n and n + 2. n(n + 2) = 48. Try n = 6: 6 \u00d7 8 = 48. \u2713 The smaller integer is 6."
+  },
+  {
+    "external_key": "MK-AL-B3-1",
+    "file": "b3",
+    "difficulty": 2,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(7w)"
+    ],
+    "stem": "Solve for x: x + 14 = 30",
+    "choices": [
+      "x = 12",
+      "x = 14",
+      "x = 16",
+      "x = 18"
+    ],
+    "correct_index": 2,
+    "current_explanation": "x = 30 \u2212 14 = 16."
+  },
+  {
+    "external_key": "MK-AL-B3-2",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(14w)",
+      "no-trap-named"
+    ],
+    "stem": "Solve for x: 6x \u2212 11 = 31",
+    "choices": [
+      "x = 5",
+      "x = 6",
+      "x = 7",
+      "x = 8"
+    ],
+    "correct_index": 2,
+    "current_explanation": "6x = 31 + 11 = 42. x = 42 \u00f7 6 = 7."
+  },
+  {
+    "external_key": "MK-AL-B3-3",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(11w)",
+      "no-trap-named"
+    ],
+    "stem": "If y = 3x \u2212 4 and x = 5, what is y?",
+    "choices": [
+      "7",
+      "9",
+      "11",
+      "13"
+    ],
+    "correct_index": 2,
+    "current_explanation": "y = 3(5) \u2212 4 = 15 \u2212 4 = 11."
+  },
+  {
+    "external_key": "MK-AL-B3-6",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Which value of x satisfies both inequalities: 2x > 6 AND x + 3 < 10?",
+    "choices": [
+      "x = 2",
+      "x = 3",
+      "x = 4",
+      "x = 8"
+    ],
+    "correct_index": 2,
+    "current_explanation": "From 2x > 6: x > 3. From x + 3 < 10: x < 7. So 3 < x < 7. Among the choices, only x = 4 satisfies both. x = 3 fails the strict inequality x > 3; x = 8 fails x < 7."
+  },
+  {
+    "external_key": "MK-AL-B3-7",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(34w)",
+      "no-trap-named"
+    ],
+    "stem": "A number is 5 more than twice another number. Their sum is 29. What is the larger number?",
+    "choices": [
+      "17",
+      "19",
+      "21",
+      "23"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Let the smaller number = n. Larger = 2n + 5. Sum: n + 2n + 5 = 29 \u2192 3n = 24 \u2192 n = 8. Larger = 2(8) + 5 = 21."
+  },
+  {
+    "external_key": "MK-AL-B3-8",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(26w)"
+    ],
+    "stem": "Solve for x: (x/3) + 5 = 11",
+    "choices": [
+      "x = 12",
+      "x = 15",
+      "x = 18",
+      "x = 21"
+    ],
+    "correct_index": 2,
+    "current_explanation": "x/3 = 11 \u2212 5 = 6. x = 6 \u00d7 3 = 18. The trap is choosing x = 6 (stopping before multiplying by 3)."
+  },
+  {
+    "external_key": "MK-AL-B3-10",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(28w)",
+      "no-trap-named"
+    ],
+    "stem": "The sum of three consecutive odd integers is 57. What is the largest of the three integers?",
+    "choices": [
+      "17",
+      "19",
+      "21",
+      "23"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Let the integers be n, n+2, n+4. Sum: 3n + 6 = 57 \u2192 3n = 51 \u2192 n = 17. Largest = n + 4 = 21."
+  },
+  {
+    "external_key": "MK-AL-B3-11",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Solve the system: 3x \u2212 y = 11 and x + y = 9. What is x + y?",
+    "choices": [
+      "5",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Add the two equations: 4x = 20, so x = 5. From x + y = 9: y = 4. x + y = 9. Verify: 3(5) \u2212 4 = 11 \u2713; 5 + 4 = 9 \u2713."
+  },
+  {
+    "external_key": "MK-FR-B3-1",
+    "file": "b3",
+    "difficulty": 2,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(10w)"
+    ],
+    "stem": "What is 1/2 + 1/4 + 1/8?",
+    "choices": [
+      "6/8",
+      "7/8",
+      "3/4",
+      "5/8"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Convert to eighths: 4/8 + 2/8 + 1/8 = 7/8."
+  },
+  {
+    "external_key": "MK-FR-B3-2",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(28w)"
+    ],
+    "stem": "What is 5/6 \u2212 3/8?",
+    "choices": [
+      "11/24",
+      "7/24",
+      "2/3",
+      "1/2"
+    ],
+    "correct_index": 0,
+    "current_explanation": "LCD = 24. 5/6 = 20/24; 3/8 = 9/24. 20/24 \u2212 9/24 = 11/24. The trap is subtracting numerators and denominators directly: (5\u22123)/(6\u22128) = 2/(\u22122), which is wrong."
+  },
+  {
+    "external_key": "MK-FR-B3-3",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "What is 1 3/4 \u00d7 2 2/3?",
+    "choices": [
+      "3 1/2",
+      "4 2/3",
+      "4 5/12",
+      "3 11/12"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Convert to improper fractions: 7/4 \u00d7 8/3 = 56/12 = 14/3 = 4 2/3. The trap is multiplying whole numbers and fractional parts separately: (1\u00d72) + (3/4\u00d72/3) = 2 + 1/2 = 2 1/2."
+  },
+  {
+    "external_key": "MK-FR-B3-4",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(25w)"
+    ],
+    "stem": "Divide: (7/8) \u00f7 (7/4)",
+    "choices": [
+      "1/2",
+      "2",
+      "49/32",
+      "1/4"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Dividing by a fraction means multiplying by its reciprocal: (7/8) \u00d7 (4/7) = 28/56 = 1/2. The trap is multiplying straight across to get 49/32."
+  },
+  {
+    "external_key": "MK-FR-B3-5",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(18w)",
+      "no-trap-named"
+    ],
+    "stem": "A recipe calls for 2 2/3 cups of oats and 1 3/4 cups of flour. What is the combined total of these two ingredients?",
+    "choices": [
+      "4 1/12 cups",
+      "4 5/12 cups",
+      "4 7/12 cups",
+      "5 cups"
+    ],
+    "correct_index": 1,
+    "current_explanation": "2 2/3 = 2 8/12; 1 3/4 = 1 9/12. Sum = 3 17/12 = 4 5/12 cups."
+  },
+  {
+    "external_key": "MK-FR-B3-6",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(20w)"
+    ],
+    "stem": "Convert 3/16 to a decimal.",
+    "choices": [
+      "0.1875",
+      "0.1975",
+      "0.3125",
+      "0.1667"
+    ],
+    "correct_index": 0,
+    "current_explanation": "3 \u00f7 16 = 0.1875. A common trap is misreading 16 as 6 and computing 3 \u00f7 6 = 0.5."
+  },
+  {
+    "external_key": "MK-FR-B3-7",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(27w)"
+    ],
+    "stem": "Which of the following represents the greatest value?",
+    "choices": [
+      "0.6\u0304  (= 0.6666\u2026)",
+      "5/7",
+      "7/11",
+      "0.63"
+    ],
+    "correct_index": 1,
+    "current_explanation": "As decimals: 0.666\u2026; 5/7 \u2248 0.7143; 7/11 \u2248 0.6364; 0.63. Largest is 5/7 \u2248 0.7143. The trap is selecting 0.666\u2026 because it visually resembles a large value."
+  },
+  {
+    "external_key": "MK-FR-B3-8",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(20w)",
+      "no-trap-named"
+    ],
+    "stem": "A plank 7 1/2 feet long is cut into pieces each 5/8 foot long. How many complete pieces can be cut?",
+    "choices": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "correct_index": 2,
+    "current_explanation": "7 1/2 = 15/2 feet. Pieces = (15/2) \u00f7 (5/8) = (15/2) \u00d7 (8/5) = 120/10 = 12 complete pieces."
+  },
+  {
+    "external_key": "MK-FR-B3-9",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "A runner completed 3/5 of a 15-mile race before stopping. After resting, she runs 2/3 of the remaining distance. How many miles does she still have left to run?",
+    "choices": [
+      "1 mile",
+      "2 miles",
+      "3 miles",
+      "4 miles"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Completed first = 3/5 \u00d7 15 = 9 miles. Remaining = 6 miles. Second run = 2/3 \u00d7 6 = 4 miles. Still remaining = 6 \u2212 4 = 2 miles."
+  },
+  {
+    "external_key": "MK-FR-B3-10",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(30w)"
+    ],
+    "stem": "If 2/3 of a number equals 1/2 of another number, and the first number is 24, what is the second number?",
+    "choices": [
+      "16",
+      "28",
+      "32",
+      "36"
+    ],
+    "correct_index": 2,
+    "current_explanation": "2/3 \u00d7 24 = 16. So 1/2 \u00d7 N = 16, which gives N = 32. The trap is stopping at 16 (the equal value) rather than solving for N."
+  },
+  {
+    "external_key": "MK-FR-B3-11",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(21w)",
+      "no-trap-named"
+    ],
+    "stem": "Which of the following is equal to 0.41\u03046\u0304 (= 0.41666\u2026)?",
+    "choices": [
+      "5/12",
+      "5/11",
+      "4/9",
+      "3/7"
+    ],
+    "correct_index": 0,
+    "current_explanation": "5/12 = 0.41666\u2026 (the 6 repeats). 5/11 = 0.4545\u2026; 4/9 = 0.444\u2026; 3/7 = 0.4285\u2026. Only 5/12 matches the given decimal."
+  },
+  {
+    "external_key": "MK-EP-B3-1",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(26w)"
+    ],
+    "stem": "What is 3\u00b2 + 2\u00b3?",
+    "choices": [
+      "10",
+      "13",
+      "17",
+      "19"
+    ],
+    "correct_index": 2,
+    "current_explanation": "3\u00b2 = 9; 2\u00b3 = 8. Sum = 17. The trap is computing 3\u00b2 as 3 \u00d7 2 = 6, giving 6 + 8 = 14."
+  },
+  {
+    "external_key": "MK-EP-B3-2",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(29w)"
+    ],
+    "stem": "Simplify: 5\u2074 \u00f7 5\u00b2",
+    "choices": [
+      "5\u00b9",
+      "5\u00b2",
+      "5\u2076",
+      "25\u00b2"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Dividing same-base powers: subtract exponents. 5\u2074 \u00f7 5\u00b2 = 5^(4\u22122) = 5\u00b2 = 25. The trap is multiplying the exponents (power of a power rule misapplied): 5^(4\u00d72) = 5\u2078."
+  },
+  {
+    "external_key": "MK-EP-B3-3",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(27w)"
+    ],
+    "stem": "What is the value of 2\u2070 + 3\u00b9 + 4\u00b2?",
+    "choices": [
+      "16",
+      "18",
+      "20",
+      "22"
+    ],
+    "correct_index": 2,
+    "current_explanation": "2\u2070 = 1; 3\u00b9 = 3; 4\u00b2 = 16. Sum = 20. The trap is treating 2\u2070 = 0, giving 0 + 3 + 16 = 19."
+  },
+  {
+    "external_key": "MK-EP-B3-4",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(26w)"
+    ],
+    "stem": "What is 10\u207b\u00b2?",
+    "choices": [
+      "\u2212100",
+      "\u221220",
+      "0.001",
+      "0.01"
+    ],
+    "correct_index": 3,
+    "current_explanation": "A negative exponent means take the reciprocal: 10\u207b\u00b2 = 1/10\u00b2 = 1/100 = 0.01. The trap is writing the negative exponent as a negative number: \u2212100."
+  },
+  {
+    "external_key": "MK-EP-B3-7",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(14w)",
+      "no-trap-named"
+    ],
+    "stem": "Add the polynomials: (3x\u00b2 \u2212 2x + 5) + (x\u00b2 + 4x \u2212 3)",
+    "choices": [
+      "4x\u00b2 + 2x + 2",
+      "4x\u00b2 + 2x \u2212 2",
+      "4x\u00b2 \u2212 2x + 2",
+      "3x\u00b2 + 2x + 2"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Combine like terms: (3x\u00b2+x\u00b2) + (\u22122x+4x) + (5\u22123) = 4x\u00b2 + 2x + 2."
+  },
+  {
+    "external_key": "MK-EP-B3-8",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(28w)"
+    ],
+    "stem": "Factor completely: 2x\u00b2 \u2212 8",
+    "choices": [
+      "2(x \u2212 2)(x \u2212 2)",
+      "2(x + 2)(x \u2212 2)",
+      "(2x + 4)(x \u2212 2)",
+      "(x + 2)(2x \u2212 4)"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Factor out 2: 2(x\u00b2 \u2212 4). Then apply difference of squares: 2(x + 2)(x \u2212 2). The trap choices (2x+4)(x\u22122) and (x+2)(2x\u22124) are equivalent but not fully factored."
+  },
+  {
+    "external_key": "MK-EP-B3-9",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(10w)",
+      "no-trap-named"
+    ],
+    "stem": "Simplify: (x\u00b3y\u00b2)\u00b2 \u00f7 (x\u00b2y)",
+    "choices": [
+      "x\u00b2y",
+      "x\u2074y\u00b3",
+      "x\u2074y\u00b2",
+      "x\u00b2y\u00b3"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Numerator: (x\u00b3y\u00b2)\u00b2 = x\u2076y\u2074. Divide: x^(6\u22122) \u00d7 y^(4\u22121) = x\u2074y\u00b3."
+  },
+  {
+    "external_key": "MK-EP-B3-10",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Expand: (x + 3)(x\u00b2 \u2212 3x + 9)",
+    "choices": [
+      "x\u00b3 \u2212 27",
+      "x\u00b3 + 27",
+      "x\u00b3 \u2212 9x + 27",
+      "x\u00b3 + 9x\u00b2 \u2212 27"
+    ],
+    "correct_index": 1,
+    "current_explanation": "This is the sum-of-cubes pattern: (a + b)(a\u00b2 \u2212 ab + b\u00b2) = a\u00b3 + b\u00b3, with a = x, b = 3. Result = x\u00b3 + 27. Verify by expansion: x\u00b3 \u2212 3x\u00b2 + 9x + 3x\u00b2 \u2212 9x + 27 = x\u00b3 + 27."
+  },
+  {
+    "external_key": "MK-GE-B3-3",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.geometry",
+    "flags": [
+      "thin(17w)"
+    ],
+    "stem": "A square has a side length of 13 cm. What is its perimeter?",
+    "choices": [
+      "36 cm",
+      "48 cm",
+      "52 cm",
+      "64 cm"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Perimeter = 4 \u00d7 13 = 52 cm. The trap is computing the area: 13\u00b2 = 169."
+  },
+  {
+    "external_key": "MK-GE-B3-5",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.geometry",
+    "flags": [
+      "thin(25w)"
+    ],
+    "stem": "A rectangular swimming pool is 25 m long, 12 m wide, and 2 m deep. What is the volume of water needed to fill it completely?",
+    "choices": [
+      "300 m\u00b3",
+      "450 m\u00b3",
+      "600 m\u00b3",
+      "750 m\u00b3"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Volume = 25 \u00d7 12 \u00d7 2 = 600 m\u00b3. The trap is computing the surface area and selecting a number based on that calculation."
+  },
+  {
+    "external_key": "MK-GE-B3-6",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.geometry",
+    "flags": [
+      "thin(27w)"
+    ],
+    "stem": "A trapezoid has parallel sides of 10 cm and 14 cm, and a height of 8 cm. What is its area?",
+    "choices": [
+      "88 cm\u00b2",
+      "92 cm\u00b2",
+      "96 cm\u00b2",
+      "100 cm\u00b2"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Area = (1/2)(b\u2081 + b\u2082)(h) = (1/2)(10 + 14)(8) = (1/2)(24)(8) = 96 cm\u00b2. The trap is omitting the 1/2: (10 + 14) \u00d7 8 = 192."
+  },
+  {
+    "external_key": "MK-GE-B3-7",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "mk.geometry",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "A right triangle has a hypotenuse of 17 cm and one leg of 8 cm. What is the area of the triangle?",
+    "choices": [
+      "45 cm\u00b2",
+      "60 cm\u00b2",
+      "68 cm\u00b2",
+      "75 cm\u00b2"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Missing leg = \u221a(17\u00b2 \u2212 8\u00b2) = \u221a(289 \u2212 64) = \u221a225 = 15 cm. Area = (1/2) \u00d7 8 \u00d7 15 = 60 cm\u00b2. This uses the 8-15-17 Pythagorean triple."
+  },
+  {
+    "external_key": "MK-GE-B3-12",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.geometry",
+    "flags": [
+      "thin(21w)"
+    ],
+    "stem": "A rectangular room is 14 feet long and 10 feet wide. What is its area?",
+    "choices": [
+      "120 sq ft",
+      "130 sq ft",
+      "140 sq ft",
+      "150 sq ft"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Area = 14 \u00d7 10 = 140 sq ft. The trap is computing the perimeter: 2(14 + 10) = 48 ft."
+  },
+  {
+    "external_key": "MK-NP-B3-2",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "thin(31w)"
+    ],
+    "stem": "What is the LCM (least common multiple) of 8 and 12?",
+    "choices": [
+      "16",
+      "20",
+      "24",
+      "32"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Multiples of 8: 8, 16, 24\u2026; multiples of 12: 12, 24\u2026 LCM = 24. The trap is multiplying 8 \u00d7 12 = 96, or confusing LCM with GCF (GCF = 4)."
+  },
+  {
+    "external_key": "MK-NP-B3-3",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "thin(31w)"
+    ],
+    "stem": "What is the GCF (greatest common factor) of 54 and 72?",
+    "choices": [
+      "6",
+      "9",
+      "12",
+      "18"
+    ],
+    "correct_index": 3,
+    "current_explanation": "54 = 2 \u00d7 3\u00b3; 72 = 2\u00b3 \u00d7 3\u00b2. GCF = 2\u00b9 \u00d7 3\u00b2 = 18. The trap is selecting 9 (taking only 3\u00b2) or 6 (taking 2 \u00d7 3)."
+  },
+  {
+    "external_key": "MK-NP-B3-4",
+    "file": "b3",
+    "difficulty": 3,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "thin(30w)",
+      "no-trap-named"
+    ],
+    "stem": "Which of the following numbers is divisible by both 3 and 4?",
+    "choices": [
+      "34",
+      "42",
+      "48",
+      "50"
+    ],
+    "correct_index": 2,
+    "current_explanation": "48 \u00f7 3 = 16 \u2713; 48 \u00f7 4 = 12 \u2713. The others fail: 34 \u00f7 4 = 8.5; 42 \u00f7 4 = 10.5; 50 \u00f7 3 \u2248 16.67."
+  },
+  {
+    "external_key": "MK-NP-B3-5",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "thin(27w)"
+    ],
+    "stem": "What is the absolute value expression |\u221214| \u2212 |6 \u2212 19|?",
+    "choices": [
+      "\u22121",
+      "0",
+      "1",
+      "27"
+    ],
+    "correct_index": 2,
+    "current_explanation": "|\u221214| = 14. |6 \u2212 19| = |\u221213| = 13. 14 \u2212 13 = 1. The trap is adding instead of subtracting: 14 + 13 = 27."
+  },
+  {
+    "external_key": "MK-NP-B3-6",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "thin(30w)",
+      "no-trap-named"
+    ],
+    "stem": "How many prime numbers are between 20 and 40?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Primes between 20 and 40: 23, 29, 31, 37. That is 4 primes. Students often include 21 (= 3\u00d77), 27 (= 3\u00d79), or 39 (= 3\u00d713) by failing divisibility checks."
+  },
+  {
+    "external_key": "MK-NP-B3-8",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "When a positive integer n is divided by 7, the remainder is 4. What is the remainder when 3n is divided by 7?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "correct_index": 3,
+    "current_explanation": "n = 7k + 4 for some integer k. Then 3n = 21k + 12 = 7(3k + 1) + 5. The remainder is 5. The shortcut: (3 \u00d7 4) mod 7 = 12 mod 7 = 5."
+  },
+  {
+    "external_key": "MK-NP-B3-9",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "thin(28w)"
+    ],
+    "stem": "The product of two integers is \u221236 and their sum is \u22125. What are the two integers?",
+    "choices": [
+      "4 and \u22129",
+      "\u22124 and 9",
+      "3 and \u221212",
+      "6 and \u22126"
+    ],
+    "correct_index": 0,
+    "current_explanation": "4 \u00d7 (\u22129) = \u221236 \u2713; 4 + (\u22129) = \u22125 \u2713. The trap answer \u22124 and 9 has the same product but sum = +5, not \u22125."
+  },
+  {
+    "external_key": "MK-NP-B3-10",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "If n is an even integer, which of the following expressions must also be even?",
+    "choices": [
+      "n\u00b2 + 1",
+      "n\u00b2 \u2212 n + 1",
+      "n\u00b2 + n",
+      "n\u00b3 + 1"
+    ],
+    "correct_index": 2,
+    "current_explanation": "n even \u2192 n = 2k. n\u00b2 + n = n(n + 1) = 2k(2k+1), which is always even. Check others: n\u00b2 + 1 = even + 1 = odd; n\u00b2 \u2212 n + 1 = even \u2212 even + 1 = odd; n\u00b3 + 1 = even + 1 = odd."
+  },
+  {
+    "external_key": "MK-NP-B3-11",
+    "file": "b3",
+    "difficulty": 5,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A set of 5 integers has a mean of 8 and a range of 10. The smallest integer is 3. Which of the following could be the set?",
+    "choices": [
+      "{3, 6, 8, 11, 13}",
+      "{3, 7, 8, 9, 13}",
+      "{3, 8, 9, 10, 13}",
+      "{3, 5, 8, 10, 13}"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Range = max \u2212 min = 10; min = 3, so max = 13. Mean = 8 with 5 integers \u2192 sum = 40. Check B: 3+7+8+9+13 = 40 \u2713, range = 10 \u2713. A: 3+6+8+11+13 = 41 \u2717. C: 3+8+9+10+13 = 43 \u2717. D: 3+5+8+10+13 = 39 \u2717."
+  },
+  {
+    "external_key": "MK-NP-B3-12",
+    "file": "b3",
+    "difficulty": 4,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "thin(30w)"
+    ],
+    "stem": "Which statement is true about (\u22123)\u2074?",
+    "choices": [
+      "It equals \u221281",
+      "It equals 81",
+      "It equals \u221212",
+      "It is undefined"
+    ],
+    "correct_index": 1,
+    "current_explanation": "(\u22123)\u2074 = (\u22123)(\u22123)(\u22123)(\u22123) = 9 \u00d7 9 = 81. An even exponent applied to any real number produces a non-negative result. The trap is confusing (\u22123)\u2074 with \u2212(3\u2074) = \u221281."
+  },
+  {
+    "external_key": "MK-B7-D5-1",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "A soldier has twice as many push-ups completed as sit-ups. If he does 12 more sit-ups, both totals will be equal. How many push-ups did he complete originally?",
+    "choices": [
+      "12",
+      "18",
+      "24",
+      "36"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Let sit-ups = s, push-ups = 2s. Setting equal after 12 more sit-ups: 2s = s + 12. s = 12. Push-ups = 2(12) = 24."
+  },
+  {
+    "external_key": "MK-B7-D5-2",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "mk.geometry",
+    "flags": [
+      "thin(24w)",
+      "no-trap-named"
+    ],
+    "stem": "A right triangle has legs of 5 cm and 12 cm. A square is constructed on the hypotenuse. What is the area of that square?",
+    "choices": [
+      "60 cm\u00b2",
+      "119 cm\u00b2",
+      "144 cm\u00b2",
+      "169 cm\u00b2"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Hypotenuse = \u221a(5\u00b2 + 12\u00b2) = \u221a(25 + 144) = \u221a169 = 13 cm. Area of square on hypotenuse = 13\u00b2 = 169 cm\u00b2."
+  },
+  {
+    "external_key": "MK-B7-D5-3",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "mk.exponents-polynomials",
+    "flags": [
+      "thin(20w)",
+      "no-trap-named"
+    ],
+    "stem": "Simplify: (2x\u00b2y)\u00b3 \u00f7 (4x\u00b3y\u00b2)",
+    "choices": [
+      "2x\u00b3y",
+      "2x\u00b2y",
+      "x\u00b3y",
+      "2xy\u00b3"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Numerator: (2x\u00b2y)\u00b3 = 2\u00b3 \u00b7 x\u2076 \u00b7 y\u00b3 = 8x\u2076y\u00b3. Divide by 4x\u00b3y\u00b2: (8/4) \u00b7 x^(6\u22123) \u00b7 y^(3\u22122) = 2x\u00b3y."
+  },
+  {
+    "external_key": "MK-B7-D5-4",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "mk.fractions-decimals",
+    "flags": [
+      "thin(28w)",
+      "no-trap-named"
+    ],
+    "stem": "A tank is 3/8 full. After adding 45 gallons it is 5/8 full. What is the total capacity of the tank?",
+    "choices": [
+      "120 gallons",
+      "150 gallons",
+      "180 gallons",
+      "210 gallons"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The added 45 gallons filled 5/8 \u2212 3/8 = 2/8 = 1/4 of the tank. Total capacity = 45 \u00f7 (1/4) = 45 \u00d7 4 = 180 gallons."
+  },
+  {
+    "external_key": "MK-B7-D5-5",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "mk.number-properties",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "The sum of three consecutive odd integers is 111. What is the largest of the three integers?",
+    "choices": [
+      "35",
+      "37",
+      "39",
+      "41"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Let the integers be n, n+2, n+4. Sum: 3n + 6 = 111. 3n = 105. n = 35. Largest = 35 + 4 = 39."
+  },
+  {
+    "external_key": "MK-B7-D5-6",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "mk.algebra-linear",
+    "flags": [
+      "thin(18w)",
+      "no-trap-named"
+    ],
+    "stem": "If 2/3 of a number equals 4/5 of another number, and the first number is 60, what is the second number?",
+    "choices": [
+      "40",
+      "48",
+      "50",
+      "72"
+    ],
+    "correct_index": 2,
+    "current_explanation": "2/3 \u00d7 60 = 40. Set 4/5 \u00d7 n = 40. n = 40 \u00d7 5/4 = 50."
+  },
+  {
+    "external_key": "MK-B7-D5-7",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "mk.geometry",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "A rectangular room is 15 feet long and 10 feet wide. A diagonal brace runs from one corner to the opposite corner. What is the length of the brace, to the nearest whole foot?",
+    "choices": [
+      "16 feet",
+      "17 feet",
+      "18 feet",
+      "19 feet"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Diagonal = \u221a(15\u00b2 + 10\u00b2) = \u221a(225 + 100) = \u221a325 \u2248 18.03 feet, which rounds to 18 feet."
+  }
+]

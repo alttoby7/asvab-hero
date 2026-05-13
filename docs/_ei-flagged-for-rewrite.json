@@ -1,0 +1,844 @@
+[
+  {
+    "external_key": "EI-1",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ei.ohms-law-power",
+    "flags": [
+      "thin(14w)",
+      "no-trap-named"
+    ],
+    "stem": "A circuit has a voltage of 12 volts and a resistance of 4 ohms. According to Ohm's Law, what is the current flowing through the circuit?",
+    "choices": [
+      "0.33 amperes",
+      "3 amperes",
+      "8 amperes",
+      "48 amperes"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Ohm's Law: I = V \u00f7 R = 12 \u00f7 4 = 3 amperes."
+  },
+  {
+    "external_key": "EI-2",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ei.circuit-types",
+    "flags": [
+      "thin(28w)",
+      "no-trap-named"
+    ],
+    "stem": "In a series circuit with three light bulbs, one bulb burns out. What happens to the other two bulbs?",
+    "choices": [
+      "They burn brighter.",
+      "They continue operating normally.",
+      "They also go out.",
+      "They flicker but stay on."
+    ],
+    "correct_index": 2,
+    "current_explanation": "In a series circuit, all components share a single path for current. If one bulb fails (opens the circuit), current cannot flow and all other bulbs go out."
+  },
+  {
+    "external_key": "EI-3",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "ei.components-devices",
+    "flags": [
+      "thin(16w)",
+      "no-trap-named"
+    ],
+    "stem": "What unit is used to measure electrical resistance?",
+    "choices": [
+      "Volt",
+      "Ampere",
+      "Watt",
+      "Ohm"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Resistance is measured in ohms (\u03a9). Volts measure voltage, amperes measure current, and watts measure power."
+  },
+  {
+    "external_key": "EI-4",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ei.components-devices",
+    "flags": [
+      "thin(27w)",
+      "no-trap-named"
+    ],
+    "stem": "Which component in an electrical circuit allows current to flow in only one direction?",
+    "choices": [
+      "Resistor",
+      "Capacitor",
+      "Diode",
+      "Transformer"
+    ],
+    "correct_index": 2,
+    "current_explanation": "A diode is a semiconductor device that permits current to flow in one direction only. It is commonly used to convert AC to DC in rectifier circuits."
+  },
+  {
+    "external_key": "EI-5",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ei.ohms-law-power",
+    "flags": [
+      "thin(23w)",
+      "no-trap-named"
+    ],
+    "stem": "A 60-watt light bulb operates on a 120-volt circuit. What is the current drawn by the bulb?",
+    "choices": [
+      "0.25 amperes",
+      "0.5 amperes",
+      "2 amperes",
+      "7,200 amperes"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Power (P) = Voltage (V) \u00d7 Current (I). Solving for I: I = P \u00f7 V = 60 \u00f7 120 = 0.5 amperes."
+  },
+  {
+    "external_key": "EI-6",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "ei.components-devices",
+    "flags": [
+      "thin(25w)",
+      "no-trap-named"
+    ],
+    "stem": "What is the purpose of a fuse in an electrical circuit?",
+    "choices": [
+      "Increase voltage to components",
+      "Store electrical charge",
+      "Protect the circuit by breaking if current exceeds a safe level",
+      "Regulate alternating current frequency"
+    ],
+    "correct_index": 2,
+    "current_explanation": "A fuse contains a thin metal element that melts and breaks the circuit if current exceeds its rated value, protecting wiring and components from damage."
+  },
+  {
+    "external_key": "EI-7",
+    "file": "free",
+    "difficulty": 3,
+    "topic_id": "ei.circuit-types",
+    "flags": [
+      "thin(33w)",
+      "no-trap-named"
+    ],
+    "stem": "Two resistors of 6 ohms each are connected in parallel. What is the total resistance of the combination?",
+    "choices": [
+      "12 ohms",
+      "6 ohms",
+      "3 ohms",
+      "1 ohm"
+    ],
+    "correct_index": 2,
+    "current_explanation": "For two equal resistors (R) in parallel, total resistance = R \u00f7 2 = 6 \u00f7 2 = 3 ohms. Formula: 1/Rt = 1/6 + 1/6 = 2/6, so Rt = 3 ohms."
+  },
+  {
+    "external_key": "EI-8",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "ei.conductors-insulators",
+    "flags": [
+      "thin(25w)",
+      "no-trap-named"
+    ],
+    "stem": "Which material is the BEST electrical conductor?",
+    "choices": [
+      "Rubber",
+      "Glass",
+      "Copper",
+      "Wood"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Copper is one of the best electrical conductors available and is widely used in wiring. Rubber, glass, and wood are insulators that resist current flow."
+  },
+  {
+    "external_key": "EI-9",
+    "file": "free",
+    "difficulty": 3,
+    "topic_id": "ei.components-devices",
+    "flags": [
+      "thin(18w)",
+      "no-trap-named"
+    ],
+    "stem": "A transformer has 100 turns on its primary coil and 400 turns on its secondary coil. If the primary voltage is 120 volts, what is the secondary voltage?",
+    "choices": [
+      "30 volts",
+      "120 volts",
+      "480 volts",
+      "600 volts"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Transformer ratio: Vs/Vp = Ns/Np \u2192 Vs = 120 \u00d7 (400/100) = 120 \u00d7 4 = 480 volts."
+  },
+  {
+    "external_key": "EI-CON-2",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "ei.conductors-insulators",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A semiconductor differs from a conductor because a semiconductor:",
+    "choices": [
+      "conducts electricity under all conditions",
+      "never allows current to flow",
+      "conducts electricity only under certain conditions (such as added heat or doping)",
+      "has the same resistance as an insulator"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Semiconductors (like silicon and germanium) have electrical properties between conductors and insulators. Their conductivity can be controlled by temperature, light, or adding impurities (doping), which is why they are the basis of transistors and computer chips."
+  },
+  {
+    "external_key": "EI-CON-3",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "ei.conductors-insulators",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Which of the following best explains why aluminum wire requires a larger gauge than copper wire to carry the same current safely?",
+    "choices": [
+      "aluminum is magnetic, which resists current flow",
+      "aluminum has higher resistivity than copper, so a larger cross-section is needed to reduce resistance",
+      "aluminum melts at a lower temperature and must be thicker for safety",
+      "aluminum has lower resistivity, making it harder for electrons to move"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Aluminum has about 1.6 times the resistivity of copper. To achieve the same resistance (and carry the same current without excessive heat), aluminum wire must have a larger cross-sectional area. This is why aluminum wiring uses larger gauges."
+  },
+  {
+    "external_key": "EI-CON-5",
+    "file": "b1",
+    "difficulty": 5,
+    "topic_id": "ei.conductors-insulators",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A technician handles a live wire while standing on a dry rubber mat. Why does the rubber mat protect the technician?",
+    "choices": [
+      "rubber absorbs excess electrical current and releases it as heat",
+      "rubber is an insulator that blocks the flow of current from the technician to ground",
+      "rubber becomes positively charged and repels electrons",
+      "rubber stores electrical charge, reducing voltage at the technician's feet"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Electrical current flows along a complete circuit \u2014 from source, through a conductor, and back to ground. Rubber is an insulator; standing on it breaks the path to ground, preventing current from flowing through the technician's body. This is why insulated footwear is required in electrical work."
+  },
+  {
+    "external_key": "EI-OL-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "ei.ohms-law-power",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "According to Ohm's Law, if the voltage across a resistor is 10 volts and the resistance is 5 ohms, the current through the resistor is:",
+    "choices": [
+      "0.5 amperes",
+      "1 ampere",
+      "2 amperes",
+      "50 amperes"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Ohm's Law: I = V \u00f7 R = 10 \u00f7 5 = 2 amperes. Multiplying voltage by resistance (10 \u00d7 5 = 50) is the most common error; the formula divides voltage by resistance."
+  },
+  {
+    "external_key": "EI-OL-B5-2",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "ei.ohms-law-power",
+    "flags": [
+      "thin(27w)"
+    ],
+    "stem": "Electrical power in a circuit is calculated using the formula P = IV. If a device draws 3 amperes from a 12-volt source, its power consumption is:",
+    "choices": [
+      "4 watts",
+      "9 watts",
+      "15 watts",
+      "36 watts"
+    ],
+    "correct_index": 3,
+    "current_explanation": "P = I \u00d7 V = 3 \u00d7 12 = 36 watts. Dividing gives 4 (12/3) \u2014 a common error confusing the power formula with Ohm's Law."
+  },
+  {
+    "external_key": "EI-OL-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "ei.ohms-law-power",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "Using P = I\u00b2R, what power is dissipated by a 4-ohm resistor carrying 5 amperes?",
+    "choices": [
+      "20 watts",
+      "40 watts",
+      "80 watts",
+      "100 watts"
+    ],
+    "correct_index": 3,
+    "current_explanation": "P = I\u00b2R = 5\u00b2 \u00d7 4 = 25 \u00d7 4 = 100 watts. A common error is computing I \u00d7 R first (5 \u00d7 4 = 20) and forgetting to square the current."
+  },
+  {
+    "external_key": "EI-OL-B5-5",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.ohms-law-power",
+    "flags": [
+      "thin(33w)"
+    ],
+    "stem": "Four resistors of 10 ohms each are connected in series. What is the total resistance of the circuit?",
+    "choices": [
+      "2.5 ohms",
+      "10 ohms",
+      "40 ohms",
+      "1,000 ohms"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Series resistances add directly: R_total = 10 + 10 + 10 + 10 = 40 ohms. Using the parallel formula (1/R_total = 4/10 \u2192 2.5) is a common error when resistances appear equal."
+  },
+  {
+    "external_key": "EI-OL-B5-6",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.ohms-law-power",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A 100-watt appliance runs on 200 volts. Using P = V\u00b2/R, what is its resistance?",
+    "choices": [
+      "2 ohms",
+      "50 ohms",
+      "400 ohms",
+      "20,000 ohms"
+    ],
+    "correct_index": 2,
+    "current_explanation": "P = V\u00b2/R \u2192 R = V\u00b2/P = 200\u00b2 \u00f7 100 = 40,000 \u00f7 100 = 400 ohms. First squaring voltage (40,000) then dividing by power is required; simply computing 200/100 = 2 skips the squaring step."
+  },
+  {
+    "external_key": "EI-OL-B5-7",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.ohms-law-power",
+    "flags": [
+      "thin(33w)",
+      "no-trap-named"
+    ],
+    "stem": "Three resistors \u2014 2 ohms, 3 ohms, and 5 ohms \u2014 are connected in series to a 20-volt battery. What is the current in the circuit?",
+    "choices": [
+      "0.5 amperes",
+      "1 ampere",
+      "2 amperes",
+      "4 amperes"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total series resistance = 2 + 3 + 5 = 10 ohms. Current = V/R = 20/10 = 2 amperes. Using only one resistor (e.g., 20/5 = 4) ignores the others in series."
+  },
+  {
+    "external_key": "EI-OL-B5-8",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.ohms-law-power",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A 24-volt source powers three identical resistors connected in parallel. If each resistor is 12 ohms, what is the total current drawn from the source?",
+    "choices": [
+      "0.67 amperes",
+      "2 amperes",
+      "4 amperes",
+      "6 amperes"
+    ],
+    "correct_index": 3,
+    "current_explanation": "In parallel, each branch sees the full 24 V. Current in each branch = 24/12 = 2 A. Three branches \u00d7 2 A = 6 A total. Alternately: parallel resistance = 12/3 = 4 ohms; total I = 24/4 = 6 A."
+  },
+  {
+    "external_key": "EI-OL-B5-10",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "ei.ohms-law-power",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A series circuit with a 30-volt source contains two resistors: R\u2081 = 6 ohms and R\u2082 = 4 ohms. What is the voltage drop across R\u2081?",
+    "choices": [
+      "6 volts",
+      "12 volts",
+      "18 volts",
+      "24 volts"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total resistance = 6 + 4 = 10 ohms. Current = 30/10 = 3 A. Voltage across R\u2081 = I \u00d7 R\u2081 = 3 \u00d7 6 = 18 volts. Voltage drops are proportional to resistance: R\u2081 is 60% of total, so it takes 60% of 30 V = 18 V. The remaining 12 V appears across R\u2082."
+  },
+  {
+    "external_key": "EI-OL-B5-11",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "ei.ohms-law-power",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A device with 50 ohms of resistance must dissipate exactly 200 watts. What supply voltage is required?",
+    "choices": [
+      "10 volts",
+      "50 volts",
+      "100 volts",
+      "4 volts"
+    ],
+    "correct_index": 2,
+    "current_explanation": "P = V\u00b2/R \u2192 V\u00b2 = P \u00d7 R = 200 \u00d7 50 = 10,000 \u2192 V = \u221a10,000 = 100 volts. Using P = IV requires finding I first: I = \u221a(P/R) = \u221a4 = 2 A, then V = IR = 2 \u00d7 50 = 100 V \u2014 both routes confirm 100 V."
+  },
+  {
+    "external_key": "EI-OL-B5-12",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.ohms-law-power",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "If resistance in a circuit doubles while voltage stays constant, what happens to the current?",
+    "choices": [
+      "It doubles",
+      "It remains the same",
+      "It is cut in half",
+      "It increases by the square of the resistance"
+    ],
+    "correct_index": 2,
+    "current_explanation": "I = V/R. If R doubles and V is constant, I = V/(2R) \u2014 current is halved. Current is inversely proportional to resistance in Ohm's Law."
+  },
+  {
+    "external_key": "EI-CT-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "ei.circuit-types",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "In a parallel circuit, the voltage across each branch compared to the source voltage is:",
+    "choices": [
+      "Less than the source voltage",
+      "Equal to the source voltage",
+      "Greater than the source voltage",
+      "Divided equally among branches"
+    ],
+    "correct_index": 1,
+    "current_explanation": "In a parallel circuit, each branch is connected directly between the same two nodes (the source terminals), so every branch sees the full source voltage. This is the key difference from a series circuit, where voltage is divided."
+  },
+  {
+    "external_key": "EI-CT-B5-2",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "ei.circuit-types",
+    "flags": [
+      "thin(30w)"
+    ],
+    "stem": "In a series circuit, the current through each component is:",
+    "choices": [
+      "Different for each component based on its resistance",
+      "The same throughout the entire circuit",
+      "Zero if any component has high resistance",
+      "Split between components based on their resistance"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A series circuit provides only one path for current flow, so the same current passes through every component. Voltage divides across components in proportion to resistance, but current remains constant."
+  },
+  {
+    "external_key": "EI-CT-B5-3",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "ei.circuit-types",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Three light bulbs are connected in parallel to a battery. One bulb burns out (open circuit). What happens to the other two bulbs?",
+    "choices": [
+      "They also go out because the circuit is broken",
+      "They dim slightly because total resistance decreases",
+      "They continue to glow normally",
+      "They burn brighter because they now draw more current"
+    ],
+    "correct_index": 2,
+    "current_explanation": "In a parallel circuit, each bulb has its own independent path to the source. A failed bulb opens only its own branch; the remaining branches still carry current normally. This is why home wiring uses parallel circuits."
+  },
+  {
+    "external_key": "EI-CT-B5-5",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.circuit-types",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Adding more resistors in parallel to an existing circuit will:",
+    "choices": [
+      "Increase total resistance and decrease total current",
+      "Decrease total resistance and increase total current",
+      "Have no effect on total current from the source",
+      "Decrease voltage at the source"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Each additional parallel branch creates another current path, reducing total resistance (1/R_total increases). With source voltage constant, lower total resistance means greater total current draw. This is why plugging in more appliances on the same circuit can trip a breaker."
+  },
+  {
+    "external_key": "EI-CT-B5-6",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.circuit-types",
+    "flags": [
+      "thin(31w)"
+    ],
+    "stem": "In a series circuit, adding a resistor will:",
+    "choices": [
+      "Decrease total resistance and increase current",
+      "Increase total resistance and decrease current",
+      "Keep current the same because voltage adjusts",
+      "Only affect the components after it in the circuit"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Series resistances add: total resistance increases. By Ohm's Law (I = V/R), with voltage constant, higher resistance reduces current throughout the entire series loop \u2014 not just after the added resistor."
+  },
+  {
+    "external_key": "EI-CT-B5-7",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.circuit-types",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Kirchhoff's Current Law states that the total current entering a junction in a circuit equals the total current leaving it. This law applies to which circuit type as a core analysis tool?",
+    "choices": [
+      "Series circuits only",
+      "Open circuits only",
+      "Parallel and combination circuits",
+      "Only DC battery circuits"
+    ],
+    "correct_index": 2,
+    "current_explanation": "KCL is most useful at nodes (junctions) where current divides \u2014 which occurs in parallel and combination circuits. In a simple series circuit, there are no junctions; current never splits, so KCL is trivially satisfied."
+  },
+  {
+    "external_key": "EI-CT-B5-9",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.circuit-types",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A switch is placed in the main line of a parallel circuit (before the branches split). If this switch is opened, what happens?",
+    "choices": [
+      "Only the first branch loses power",
+      "All branches lose power simultaneously",
+      "Branches alternate between on and off",
+      "The branch with the highest resistance loses power first"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A switch in the main line controls current to the entire parallel section. Opening it breaks the only path for current before it can split into branches, cutting power to all branches simultaneously \u2014 the same principle as the main breaker in a home."
+  },
+  {
+    "external_key": "EI-CT-B5-10",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.circuit-types",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A combination circuit has a 2-ohm resistor in series with a parallel combination of a 4-ohm and 4-ohm resistor. What is the total circuit resistance?",
+    "choices": [
+      "10 ohms",
+      "6 ohms",
+      "4 ohms",
+      "2 ohms"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Two 4-ohm resistors in parallel: R_parallel = 4/2 = 2 ohms. Total = series 2 ohms + parallel 2 ohms = 4 ohms. Adding all three directly (2 + 4 + 4 = 10) ignores the parallel arrangement."
+  },
+  {
+    "external_key": "EI-CT-B5-11",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "ei.circuit-types",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "In a series circuit with a 48-volt source and three resistors (R\u2081 = 8 \u03a9, R\u2082 = 4 \u03a9, R\u2083 = 4 \u03a9), what percentage of the source voltage appears across R\u2081?",
+    "choices": [
+      "25%",
+      "33%",
+      "50%",
+      "75%"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Total resistance = 8 + 4 + 4 = 16 \u03a9. Current = 48/16 = 3 A. Voltage across R\u2081 = 3 \u00d7 8 = 24 V. Percentage = 24/48 \u00d7 100 = 50%. Alternatively, R\u2081 is 8/16 = 50% of total resistance, so it captures 50% of the voltage."
+  },
+  {
+    "external_key": "EI-CD-B5-2",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "ei.components-devices",
+    "flags": [
+      "thin(27w)",
+      "no-trap-named"
+    ],
+    "stem": "A resistor is used in an electrical circuit mainly to:",
+    "choices": [
+      "Store charge for later use",
+      "Limit the amount of current flowing through a component",
+      "Convert AC voltage to DC voltage",
+      "Step up or step down voltage levels"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Resistors oppose current flow (resistance measured in ohms) and limit current according to Ohm's Law. Capacitors store charge; rectifiers convert AC to DC; transformers change voltage levels."
+  },
+  {
+    "external_key": "EI-CD-B5-3",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "ei.components-devices",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "An inductor stores energy in a:",
+    "choices": [
+      "Chemical battery cell",
+      "Magnetic field",
+      "Electric field between plates",
+      "Mechanical flywheel"
+    ],
+    "correct_index": 1,
+    "current_explanation": "An inductor (a coil of wire) stores energy in the magnetic field created by current flowing through it. Capacitors store energy in an electric field; batteries in chemical form. The inductor resists changes in current."
+  },
+  {
+    "external_key": "EI-CD-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "ei.components-devices",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Which device is used to step up or step down alternating current voltage levels in power distribution systems?",
+    "choices": [
+      "Rectifier",
+      "Transistor",
+      "Transformer",
+      "Capacitor"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Transformers use electromagnetic induction to change AC voltage levels. Power companies step up voltage for long-distance transmission to reduce energy loss, then step it back down for home use. Rectifiers convert AC to DC; transistors amplify or switch signals."
+  },
+  {
+    "external_key": "EI-CD-B5-6",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.components-devices",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A transistor can be used as an electronic switch because it can:",
+    "choices": [
+      "Block all current from flowing in either direction",
+      "Store charge and release it on command",
+      "Control a large output current with a small input (base) current",
+      "Convert AC to DC by allowing current in one direction only"
+    ],
+    "correct_index": 2,
+    "current_explanation": "In a transistor (BJT), a small current at the base terminal controls a much larger current between collector and emitter \u2014 enabling amplification and switching. When base current is zero, the transistor is off (open switch); when sufficient, it is on (closed switch)."
+  },
+  {
+    "external_key": "EI-CD-B5-8",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.components-devices",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A transformer has 200 turns on its primary and 50 turns on its secondary. If the primary carries 1 ampere, what is the secondary current (assuming 100% efficiency)?",
+    "choices": [
+      "0.25 amperes",
+      "1 ampere",
+      "4 amperes",
+      "10 amperes"
+    ],
+    "correct_index": 2,
+    "current_explanation": "For an ideal transformer, power is conserved: Vp \u00d7 Ip = Vs \u00d7 Is. The turns ratio Np/Ns = 200/50 = 4, so the transformer steps down voltage by 4 and steps up current by 4: Is = Ip \u00d7 (Np/Ns) = 1 \u00d7 4 = 4 amperes."
+  },
+  {
+    "external_key": "EI-CD-B5-9",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.components-devices",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A Zener diode is connected in reverse bias in a circuit. Its primary application is to:",
+    "choices": [
+      "Block all current completely in that branch",
+      "Amplify voltage to a higher level",
+      "Regulate voltage by maintaining a constant voltage drop",
+      "Convert AC to DC in a rectifier bridge"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Zener diodes are designed to conduct in reverse bias once voltage reaches their Zener breakdown voltage, clamping the voltage to a stable reference level. They are used in voltage regulators to protect sensitive components from voltage spikes."
+  },
+  {
+    "external_key": "EI-CD-B5-10",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.components-devices",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Which effect describes how an inductor resists changes in current by generating a back-EMF (electromotive force)?",
+    "choices": [
+      "Capacitance",
+      "Self-inductance",
+      "Dielectric effect",
+      "Zener breakdown"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Self-inductance (measured in henries) is the property of a coil to oppose changes in current by inducing a voltage that opposes the change \u2014 Faraday's Law in action. Capacitance opposes voltage changes; dielectric effect describes insulator behavior in capacitors."
+  },
+  {
+    "external_key": "EI-CI-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "ei.conductors-insulators",
+    "flags": [
+      "thin(34w)",
+      "no-trap-named"
+    ],
+    "stem": "Which of the following materials is the best electrical insulator?",
+    "choices": [
+      "Aluminum",
+      "Graphite",
+      "Silver",
+      "Ceramic"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Ceramic (and glass, rubber, plastic) are insulators \u2014 they have very high electrical resistance and prevent current flow. Aluminum, graphite, and silver are all conductors. Ceramic is used for electrical insulators on power lines."
+  },
+  {
+    "external_key": "EI-CI-B5-3",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "ei.conductors-insulators",
+    "flags": [
+      "thin(31w)"
+    ],
+    "stem": "Gold is used in some high-quality electrical connectors despite its high cost because:",
+    "choices": [
+      "Gold has higher conductivity than any other metal",
+      "Gold is non-corrosive and maintains low contact resistance over time",
+      "Gold's weight improves mechanical connection strength",
+      "Gold stores electrical charge better than copper"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Gold does not oxidize (corrode), so gold-plated connectors maintain reliable, low-resistance electrical contact over time. Silver and copper have higher conductivity but corrode, increasing contact resistance. Weight provides no electrical benefit."
+  },
+  {
+    "external_key": "EI-CI-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "ei.conductors-insulators",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "When the temperature of most metals increases, their electrical resistance:",
+    "choices": [
+      "Decreases because the electrons move faster",
+      "Stays the same regardless of temperature",
+      "Increases because atomic vibrations impede electron flow",
+      "Drops to zero because the metal becomes a superconductor"
+    ],
+    "correct_index": 2,
+    "current_explanation": "As metal temperature rises, atoms vibrate more vigorously, creating more collisions that impede electron movement \u2014 increasing resistance. Superconductivity (zero resistance) occurs only at extremely low temperatures in certain materials, not at room temperature."
+  },
+  {
+    "external_key": "EI-CI-B5-5",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "ei.conductors-insulators",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Silicon is classified as a semiconductor because its conductivity:",
+    "choices": [
+      "Is equal to that of copper at all temperatures",
+      "Can be precisely controlled by temperature, light, or the addition of impurities (doping)",
+      "Is zero until voltage exceeds a fixed threshold",
+      "Depends only on the current direction, like a diode"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Semiconductors occupy the middle ground between conductors and insulators. Silicon's conductivity is tunable: doping with phosphorus adds free electrons (n-type) and doping with boron adds holes (p-type), enabling transistors and diodes. Pure silicon is a poor conductor at room temperature."
+  },
+  {
+    "external_key": "EI-CI-B5-8",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.conductors-insulators",
+    "flags": [
+      "thin(32w)",
+      "no-trap-named"
+    ],
+    "stem": "Two copper wires are identical in length. Wire A has twice the cross-sectional area of Wire B. How does the resistance of Wire A compare to Wire B?",
+    "choices": [
+      "Wire A has twice the resistance of Wire B",
+      "Wire A has the same resistance as Wire B",
+      "Wire A has half the resistance of Wire B",
+      "Wire A has four times the resistance of Wire B"
+    ],
+    "correct_index": 2,
+    "current_explanation": "R = \u03c1L/A. Since A_A = 2 \u00d7 A_B, R_A = \u03c1L/(2 \u00d7 A_B) = R_B/2. Doubling the cross-sectional area halves the resistance \u2014 the wire provides more parallel paths for electrons."
+  },
+  {
+    "external_key": "EI-CI-B5-10",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "ei.conductors-insulators",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A 10-meter copper wire has a resistance of 0.2 ohms. If the wire is replaced with a 20-meter wire of the same material and the same cross-sectional area, what is the new resistance?",
+    "choices": [
+      "0.1 ohms",
+      "0.2 ohms",
+      "0.4 ohms",
+      "0.8 ohms"
+    ],
+    "correct_index": 2,
+    "current_explanation": "R = \u03c1L/A. Doubling the length (while keeping area and material constant) doubles the resistance: 2 \u00d7 0.2 = 0.4 ohms. Halving length would halve resistance (0.1 ohms); neither area change nor a squared relationship applies here."
+  },
+  {
+    "external_key": "EI-CI-B5-11",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "ei.conductors-insulators",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "N-type semiconductor material is created by doping silicon with an element that has more valence electrons than silicon. Which of the following dopants creates an n-type semiconductor?",
+    "choices": [
+      "Boron (3 valence electrons)",
+      "Aluminum (3 valence electrons)",
+      "Phosphorus (5 valence electrons)",
+      "Carbon (4 valence electrons)"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Silicon has 4 valence electrons. Adding phosphorus (5 valence electrons) provides one extra electron per dopant atom \u2014 these free electrons become the majority charge carriers, creating an n-type (negative carrier) semiconductor. Boron and aluminum have only 3 valence electrons and create p-type material by introducing electron holes."
+  },
+  {
+    "external_key": "EI-CI-B5-12",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "ei.conductors-insulators",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Which of the following most accurately describes why distilled water is a poor conductor while seawater conducts electricity well?",
+    "choices": [
+      "Seawater contains more hydrogen, which improves conductivity",
+      "Distilled water has no dissolved ions, while seawater's dissolved salts provide free ions that carry charge",
+      "Distilled water molecules resist current because of their polarity",
+      "The pressure of the ocean compresses seawater, increasing conductivity"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Electrical conduction in liquids requires free charge carriers. Distilled water has virtually no ions, so it conducts poorly. Dissolved salts (NaCl, MgCl\u2082, etc.) ionize in seawater, providing Na\u207a, Cl\u207b, Mg\u00b2\u207a ions that carry charge \u2014 making seawater a reasonable conductor."
+  }
+]

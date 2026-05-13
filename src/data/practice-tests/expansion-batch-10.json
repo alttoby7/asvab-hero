@@ -1,0 +1,626 @@
+[
+  {
+    "external_key": "PC-P3-MI-1",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Stormwater drains carry rain from city streets into pipes that empty directly into rivers and bays. Anything that washes off pavement, including motor oil, lawn fertilizer, and pet waste, moves through those pipes without any treatment along the way. City crews stencil messages on drains reminding residents that the system is not a sewer and that the pollutants entering it reach local waters within a few hours.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "City crews stencil warning messages directly on the storm drains.",
+      "Stormwater drains send untreated runoff straight into waterways, so what enters them affects local waters quickly.",
+      "Motor oil is the most damaging pollutant in urban runoff systems.",
+      "All drainage pipes in a city eventually need treatment plants installed."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage explains that stormwater pipes \"empty directly into rivers and bays\" and that runoff travels \"without any treatment along the way,\" which supports the keyed answer that anything entering the drain affects local water. The stenciling choice is a supporting detail rather than the central point of the paragraph. The motor oil claim is an over-generalization because the passage lists three pollutants without ranking any of them. The treatment plant statement is tangential and also contradicts the passage, which explicitly states the system is not a sewer and runs untreated to receiving waters.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-MI-2",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Antibiotic resistance grows when bacteria are exposed to drugs that fail to kill them outright. Surviving cells multiply and pass resistance genes to nearby cells. Hospitals see this most often when patients stop a prescription early because they feel better. Livestock operations contribute when animals receive low-dose antibiotics in feed for months at a time. Public health agencies now ask doctors to prescribe shorter courses only when truly needed, and ask farmers to stop using drugs simply to promote growth in healthy animals.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Antibiotic resistance spreads through misuse in both medicine and agriculture, prompting calls for changed practices.",
+      "Stopping antibiotics early in hospitals is the single leading cause of resistance.",
+      "Public health agencies are issuing entirely new guidelines for doctors and farmers.",
+      "Livestock should never receive antibiotics for any reason."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage gives parallel attention to hospitals and to farms and ends with paired recommendations for doctors and farmers, which supports the keyed answer. The hospital-only statement is an over-generalization because the passage gives equal weight to agriculture as a source of misuse. The agency guidelines option is a supporting detail rather than the central claim of the paragraph. The livestock-never choice contradicts the passage, which only opposes growth promotion in healthy animals and never bans therapeutic veterinary use of antibiotics.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-MI-3",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Urban gardens occupy lots that once held vacant buildings or unused pavement scattered across older neighborhoods. Beyond producing vegetables for nearby residents, the gardens cool surrounding blocks by replacing dark asphalt with leaves and soil, slow stormwater that would otherwise rush into the drainage system, and pull volunteers into shared weekly work. City planners increasingly count gardens as small pieces of green infrastructure rather than as hobby spaces. Recent funding decisions in several cities now treat a new garden the same as a stormwater retention basin or a pocket park.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Cities increasingly fund urban gardens because the gardens deliver infrastructure benefits beyond food production.",
+      "Urban gardens cool blocks by replacing dark asphalt with leaves and soil.",
+      "Pocket parks and stormwater retention basins are interchangeable structures with gardens.",
+      "Hobby gardening is no longer a valid use of available city land."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage builds from a list of cooling, drainage, and community benefits to a funding shift, and the closing line frames gardens \"the same as a stormwater retention basin or a pocket park,\" which supports the keyed answer about infrastructure recognition. The cooling claim is a supporting detail rather than the main point. The interchangeable choice is an over-generalization since the passage says funding treatment is similar, not that the physical structures are equivalent. The hobby gardening option is a contradiction because the passage reclassifies gardens without banning hobby use anywhere.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-MI-4",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 4,
+    "stem": "Electric scooters appeared on city sidewalks within a single rental season and immediately produced a wave of complaints from residents. Riders left them blocking curb ramps and accessible parking. Pedestrians dodged them along busy walkways near transit stations. Hospitals reported a steady rise in wrist and head injuries from falls on uneven pavement. Cities responded with mandatory parking corrals, rider tutorials inside the rental app, and posted speed caps in dense business districts. Three years on, ridership has stabilized and injury rates per trip have dropped, though sidewalk clutter remains the single most common citizen complaint in resident survey data.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Hospitals saw a rise in wrist and head injuries from scooter falls.",
+      "Cities should ban electric scooters in all dense business districts.",
+      "App tutorials and posted speed caps solved every problem scooters originally caused.",
+      "Cities have curbed several scooter problems through regulation, though sidewalk clutter still persists."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage tracks problems, then city responses, and ends by noting \"sidewalk clutter remains the single most common citizen complaint,\" which supports the keyed answer about partial success with persistent issues. The hospital injury statement is a supporting detail in the middle of the paragraph, not the main idea. The ban claim contradicts the passage, which describes cities regulating scooters rather than banning them anywhere. The \"solved every problem\" choice is an over-generalization that the closing line of the paragraph directly disproves through the clutter qualifier.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-MI-5",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 5,
+    "stem": "Traffic signal timing once relied on fixed cycles set during a single 1970s engineering study and rarely updated thereafter except during major street reconstruction projects. Today, many intersections use sensors embedded in the pavement and cameras mounted on the signal arm to detect waiting cars, approaching cyclists, and pedestrians standing at the crosswalk button. Control software adjusts green time minute by minute, lengthening the phase for the heavier travel direction and shortening empty phases when no traffic is present at all on a given approach. Independent studies in three midsize cities found average commute times fell between six and eleven percent after adaptive systems replaced fixed timing, with the largest gains during off-peak hours when fixed cycles had wasted the most green time on empty streets.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Adaptive signal systems use real-time sensors to shorten commutes compared with fixed-timing approaches.",
+      "Off-peak hours waste the largest amount of green time under fixed signal timing.",
+      "Cameras mounted on signal arms now detect pedestrians at marked crosswalks.",
+      "Cities should replace every fixed-timing signal in the country immediately."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage contrasts the older fixed cycles with newer adaptive timing and reports concrete commute reductions across three cities, which supports the keyed main idea about adaptive systems. The off-peak choice is a true supporting fact at the end of the paragraph rather than the central point. The camera statement is also a supporting detail describing one piece of detection hardware. The replace-every-signal option is an over-generalization the passage never makes, since it reports findings from three cities without prescribing any universal policy action across the country.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-DR-1",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Updated nutrition labels now show added sugars on a separate line from total sugars at the top of the panel. The change distinguishes sugar that occurs naturally in fruit or milk from sugar added during commercial processing. Manufacturers must list added sugars in grams and as a percent of the daily value, which sits at 50 grams for a standard 2,000-calorie diet. Single-ingredient products like pure honey and maple syrup carry a footnote rather than a percent value on the label.\n\nAccording to the passage, what is the daily value for added sugars on a 2,000-calorie diet?",
+    "choices": [
+      "20 grams",
+      "100 grams",
+      "50 grams",
+      "200 grams"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states the daily value \"sits at 50 grams for a standard 2,000-calorie diet,\" which matches the keyed answer almost verbatim. The 20-gram choice is plausible-sounding but absent from the passage and likely reflects a different nutrition target. The 100-gram choice is an off-by-one swap that simply doubles the correct figure and may tempt readers who only skim the panel description. The 200-gram option is a nearby-detail trap that picks up the 2,000-calorie figure from the same sentence and re-uses it as if it were the gram value.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-DR-2",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Public libraries now lend e-books through a digital platform that limits each title to one reader at a time, matching the physical loan model that most publishers prefer. A typical library pays roughly $55 for a popular new e-book, compared with about $15 for the same title in a consumer reading app. The library license expires after two years or twenty-six checkouts, whichever comes first, after which the library must repurchase the same e-book to keep offering it on the lending platform.\n\nAccording to the passage, when does a library e-book license expire?",
+    "choices": [
+      "After two years or fifty checkouts, whichever comes first",
+      "After one full year regardless of total checkouts",
+      "After twenty-six checkouts only, with no time limit",
+      "After two years or twenty-six checkouts, whichever comes first"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states the license expires \"after two years or twenty-six checkouts, whichever comes first,\" which the keyed answer reproduces directly. The fifty-checkout choice is an off-by-one swap that inflates the checkout cap to a rounder but incorrect number. The one-year option is plausible-sounding but is absent from the passage and contradicts the stated two-year figure. The twenty-six-only choice is a nearby-detail trap that quotes one half of the dual condition while omitting the time component clearly listed in the passage.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-DR-3",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Classroom designers no longer assume rows of desks facing a single board at the front of the room. New construction guidelines call for flexible furniture mounted on wheels, two writable wall surfaces in every room, and natural light entering from at least one direction. Acoustic ceiling panels reduce echo so a teacher can speak without straining a voice all day long. The guidelines also set a maximum class size of twenty-four students for kindergarten through third grade and twenty-eight students for fourth through sixth grade.\n\nAccording to the passage, what is the maximum class size for kindergarten through third grade?",
+    "choices": [
+      "Twenty-four students",
+      "Twenty-two students",
+      "Twenty-six students",
+      "Twenty-eight students"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage specifies \"a maximum class size of twenty-four students for kindergarten through third grade,\" which matches the keyed answer exactly. The twenty-two option is plausible-sounding but absent and never appears in the paragraph. The twenty-six choice is an off-by-one swap that lands halfway between the two listed grade-band caps. The twenty-eight choice is a nearby-detail trap that pulls from the fourth-through-sixth-grade figure listed in the same closing sentence, rather than the lower grades the question asks about.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-DR-4",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 4,
+    "stem": "Freight railroads in this country moved roughly 1.6 billion tons of goods last year, including grain harvests, industrial chemicals, finished automobiles, and consumer products packed into standardized shipping containers heading to and from coastal ports. The container traffic, called intermodal because the boxes transfer freely between ships, trains, and trucks at terminal yards, grew faster than any other freight category and now accounts for about a quarter of all total carloads. A single intermodal train can replace several hundred long-haul trucks on the interstate highway system, easing both congestion and fuel use. Coal traffic, once the largest single category by tonnage hauled, has fallen to fourth place behind chemicals, grain, and intermodal containers.\n\nAccording to the passage, what is the current rank of coal among freight categories?",
+    "choices": [
+      "First",
+      "Second",
+      "Third",
+      "Fourth"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states coal \"fell to fourth place behind chemicals, grain, and intermodal containers,\" which the keyed answer reproduces. The first-place choice is plausible-sounding because the passage notes coal was \"once the largest single category,\" but that historical condition no longer applies. The second-place option is a nearby-detail trap pulling from the chemicals position. The third-place choice is an off-by-one swap from the stated fourth position in the sentence and may tempt readers who recall a low ranking without checking the precise number.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-DR-5",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 4,
+    "stem": "Civic engagement surveys ask residents how often they personally contact elected officials, attend public meetings of any kind, or join active neighborhood committees in their area. The most recent county survey reached 1,200 households across the entire region and reported a 38 percent overall response rate after two rounds of follow-up contact. Among the residents who did respond to the questions, 22 percent reported attending at least one public meeting in the past year, 14 percent had emailed an elected official directly, and 6 percent had served on a formal neighborhood committee. Respondents over age 65 participated at roughly double the rate of those under 35 across all three of these activities.\n\nAccording to the passage, what percentage of respondents emailed an elected official in the past year?",
+    "choices": [
+      "Six percent",
+      "Twenty-two percent",
+      "Fourteen percent",
+      "Thirty-eight percent"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states that \"14 percent had emailed an elected official directly,\" which matches the keyed answer. The six-percent choice is a nearby-detail trap drawn from committee service in the same sentence. The twenty-two-percent option is a nearby-detail trap from public meeting attendance just earlier in the list. The thirty-eight-percent choice is plausible-sounding but pulls from the overall survey response rate rather than the email activity rate, making it a category swap that ignores the question's actual target.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-INF-1",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Asteroid mining proposals describe scooping water ice and useful metals from rocks orbiting between Mars and Jupiter. Backers note that lifting fuel from Earth's surface into orbit costs thousands of dollars per pound, while water already in space can be split into hydrogen and oxygen for rocket propellant on site. A single ice-rich asteroid could refuel hundreds of future missions without any propellant ever being launched from the ground.\n\nWhat can be inferred from this passage?",
+    "choices": [
+      "Asteroid mining will replace all Earth-based fuel production within the next decade.",
+      "Hydrogen and oxygen are the only useful materials available anywhere in space.",
+      "Mars has more accessible ice reserves than the asteroid belt does.",
+      "Reducing the cost of launching fuel from Earth is a key motivation for mining asteroids."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage emphasizes that launching fuel \"costs thousands of dollars per pound\" and that space-sourced water bypasses ground launches entirely, which supports the keyed inference about cost as a motivator. The replace-all-fuel option is an over-reach the passage never asserts at any point. The hydrogen-and-oxygen-only claim is an over-reach because the passage also explicitly mentions metals among the targets. The Mars choice is off-topic since the passage compares space-based versus ground-based supply, not the relative ice reserves of Mars and the asteroid belt.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-INF-2",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Microplastic particles smaller than five millimeters across appear in farm soil, in drinking water supplies, and in the digestive tracts of fish caught for human consumption. Researchers can identify these particles using infrared scanners that match each fragment to a specific plastic type, but a single sample can take several hours to process from start to finish. Until faster scanning equipment reaches more regional laboratories, microplastic studies will continue to rely on small sample sets and will offer broad trend estimates rather than precise concentrations across different regions.\n\nWhat can be inferred from this passage?",
+    "choices": [
+      "Microplastics are completely harmless to fish populations.",
+      "Infrared scanners cannot identify any plastic types accurately.",
+      "Faster scanning equipment would allow studies to report more precise regional concentrations.",
+      "All drinking water now exceeds safe microplastic limits."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage links slow processing directly to \"small sample sets\" and to \"trend estimates rather than precise concentrations,\" which supports the keyed inference that faster equipment would change that picture. The harmless-to-fish choice contradicts the passage's neutral framing and adds a safety claim that the paragraph never makes. The cannot-identify option contradicts the passage, which explicitly says scanners can match each fragment to a plastic type. The all-drinking-water choice is an over-reach since the passage never mentions any safety limits at all.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-INF-3",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 4,
+    "stem": "Municipal water systems must regularly test for a federally regulated list of contaminants, but the list itself updates slowly through a multi-year rulemaking process. New compounds, including certain firefighting foam residues and durable industrial coatings, can circulate in source water for years before any federal standard requires routine testing at the treatment plant. State agencies sometimes add their own tests well ahead of federal action, particularly when a local industry is a known source of a specific contaminant in nearby waterways. Public water utilities then face the choice of investing in new treatment equipment before being formally required to do so by law, weighing customer rates against long-term risk.\n\nThe passage suggests that:",
+    "choices": [
+      "Federal contaminant lists update faster than equivalent state lists do.",
+      "Firefighting foam residues are now banned from production nationwide.",
+      "All state agencies test water identically to the federal government.",
+      "Communities served by a single utility can end up with very different water-testing standards depending on where they live."
+    ],
+    "correct_index": 3,
+    "explanation": "Because states act on their own timelines and utilities make independent investment choices, two communities served by different utilities can face different testing regimes for the same contaminant, even though neither breaks federal law. That supports the keyed inference, which the passage never states outright. The federal-faster claim contradicts the passage, which says federal lists update slowly. The firefighting-foam ban is an over-reach since the passage only discusses detection and testing. The states-test-identically choice contradicts the description of state-led divergence from the federal testing regime.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-INF-4",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 4,
+    "stem": "School districts that pushed high school start times from 7:25 a.m. to 8:30 a.m. reported fewer student tardies, higher daily attendance figures, and a measurable drop in caffeine sales at on-campus convenience stores. Athletic schedules adjusted by moving practices slightly earlier in the afternoon to preserve daylight time, and bus routes ran a second wave for older students instead of stacking every grade into a single early-morning window. Parents who initially worried about after-school childcare coverage reported, in follow-up survey responses gathered the following spring, that the new schedule worked better than they had expected going in to the change.\n\nWhat can be inferred from this passage?",
+    "choices": [
+      "Districts can adopt later start times without major operational breakdown.",
+      "Caffeine sales actually increased after the schedule shift took effect.",
+      "Bus routes for the district were eliminated entirely.",
+      "Athletic schedules became impossible to manage under the change."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage reports attendance gains, an adapted bus system running a second wave, adjusted athletic schedules, and parents reporting better-than-expected results in follow-up surveys, which together support the keyed inference about feasibility. The caffeine-increase choice directly contradicts the passage, which reports \"a measurable drop in caffeine sales\" on campus stores. The bus-elimination claim also contradicts the passage, which describes a second wave of routes for older students rather than any route elimination. The athletics-impossible choice contradicts the passage as well, which states practices simply moved slightly earlier into the afternoon to preserve daylight.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-INF-5",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 5,
+    "stem": "Adult language learners who practice for just ten minutes daily retain noticeably more vocabulary than those who study for one long session per week, even when the total weekly minute counts match exactly between the two groups during a controlled trial period. Researchers attribute the effect to spaced retrieval: each short daily session forces the brain to recall words after a brief forgetting interval has passed, which strengthens long-term memory far more than rereading the same words once in a single longer sitting. Mobile apps that schedule short daily lessons tend to outperform traditional textbooks for vocabulary retention over many weeks of consistent use, though textbooks still produce stronger grammar understanding when learners carefully read through the printed explanations and complete the practice exercises at the end of each chapter.\n\nWhat can be inferred from this passage?",
+    "choices": [
+      "Mobile apps are universally better than textbooks for every adult language learner.",
+      "Total study time matters more than how that time is distributed across the week.",
+      "A learner who can only set aside one block of study per week is unlikely to retain vocabulary as efficiently as someone with the same weekly total split across days.",
+      "Spaced retrieval techniques have no measurable effect on grammar learning."
+    ],
+    "correct_index": 2,
+    "explanation": "The keyed answer applies the spaced-retrieval finding to a real learner constrained to a single weekly block, which the passage does not address in those terms but which follows logically from the equal-total comparison. The apps-universally-better choice is an over-reach since the passage credits textbooks for grammar outcomes. The total-time claim contradicts the passage, which shows distribution outweighing equal totals. The grammar-no-effect option is an over-reach since the passage discusses vocabulary retention specifically and never claims spaced retrieval fails to affect grammar.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-ATP-1",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "A geothermal heat pump moves heat between a home and the ground through buried pipes filled with water and antifreeze. Below about ten feet, soil temperature stays near 55 degrees year-round, so the system pulls warmth from the ground in winter and dumps heat back into it during summer. Installation costs more than a standard furnace and air conditioner combined, but operating costs drop by half or more, and most systems pay back the price difference within twelve years of use.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Persuade readers to abandon all natural gas heating immediately.",
+      "Explain how geothermal heat pumps work and outline their cost tradeoff.",
+      "Briefly mention geothermal systems without offering any detail at all.",
+      "Argue that geothermal heat pumps are an inferior technology overall."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes the working mechanism, the ground temperature behavior, and the cost payback period in concrete numerical terms, which supports the keyed explanatory purpose. The persuade-abandon choice is adjacent-too-strong because the passage clearly informs rather than urges any specific action from the reader. The brief-mention option is adjacent-too-weak since the passage actually provides mechanical detail, temperature data, and a payback figure. The inferior-technology choice is wrong-polarity since the passage describes a favorable long-term payback and lower operating cost, not a negative comparison.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-ATP-2",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Rural vaccine delivery faces problems urban clinics rarely encounter at any scale. A pediatric vaccine shipment must stay between 36 and 46 degrees Fahrenheit from the manufacturer's loading dock all the way to the patient's arm. In counties with only one clinic and a single refrigerator, a power outage can spoil months of stored supply overnight. State programs now distribute battery-backed monitoring sensors to those clinics, but installation tends to run well ahead of training, and some clinics receive the equipment without anyone yet certified to interpret the alerts.\n\nThe author's tone is best described as:",
+    "choices": [
+      "Outraged at clinic staff incompetence in handling supply.",
+      "Concerned about implementation gaps in a needed program.",
+      "Mildly amused by the quirks of rural logistics.",
+      "Celebratory about the state program's clear success."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage names a real cold-chain risk and then observes that \"installation tends to run well ahead of training,\" which frames a sober concern about implementation rather than any stronger emotion. The outraged choice is adjacent-too-strong since the passage never assigns blame to clinic staff anywhere in the paragraph. The mildly amused option is wrong-polarity, treating a serious supply problem as a source of humor. The celebratory choice is adjacent-too-strong in the opposite direction, since the passage flags a current gap rather than praising the program's outcomes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-ATP-3",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 4,
+    "stem": "Radiocarbon dating measures the remaining carbon-14 in organic material to estimate when the original organism died and stopped exchanging carbon with the atmosphere. The method works reliably back to about 50,000 years, beyond which too little carbon-14 remains to detect with confidence even on the best laboratory instruments. For older sites, archaeologists turn to other dating methods, including potassium-argon dating of volcanic ash layers and luminescence dating of buried sediments long shielded from sunlight. No single method covers the full archaeological timeline, so well-dated sites usually rely on cross-checks from two or more independent techniques run on samples from the same location.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Argue that radiocarbon dating is the only reliable method available.",
+      "Describe radiocarbon dating's range and explain why archaeologists combine methods.",
+      "Briefly note that dating methods exist without offering any explanation.",
+      "Convince readers that all archaeological dating methods are unreliable."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states the 50,000-year reliable range, names two alternative methods for older work, and closes by noting that \"well-dated sites usually rely on cross-checks from two or more independent techniques,\" which supports the keyed purpose. The only-reliable-method claim contradicts the passage and is adjacent-too-strong on the positive side. The brief-mention option is adjacent-too-weak because the passage actually explains both the range and the rationale for combining techniques. The unreliable-methods choice is wrong-polarity since the passage describes complementary techniques, not systemic failure.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-ATP-4",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 5,
+    "stem": "Consumer GPS units mounted in cars or phones report a position with horizontal accuracy of about three to five meters under open sky conditions, which suffices for everyday driving directions but not for technical tasks like staking property lines or guiding tractor implements through narrow crop rows during the spring planting season. Survey-grade receivers add a correction signal from a fixed base station located nearby and reach centimeter-level accuracy under the same open-sky conditions, which property surveyors and precision farmers rely on for daily work. The accuracy advantage largely disappears under dense tree canopy or beside tall urban buildings, where signal reflection introduces errors that no correction technique fully removes from the resulting position fix, regardless of how expensive the receiver hardware happens to be in any given application.\n\nThe author's tone is best described as:",
+    "choices": [
+      "Dismissive of consumer GPS technology overall.",
+      "Promotional toward survey-grade equipment manufacturers.",
+      "Measured and informative about GPS accuracy and its limits.",
+      "Alarmed about widespread navigation failures."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage names specific accuracy figures, distinguishes use cases by purpose, and acknowledges that even survey-grade corrections fail under canopy and beside tall buildings, which together support the keyed measured-informative tone. The dismissive choice is wrong-polarity since the passage credits consumer GPS for being suitable for driving directions. The promotional choice is adjacent-too-strong because the passage notes that survey-grade equipment also fails under the same obstructed conditions. The alarmed option is adjacent-too-strong since the passage reports limits factually without using any alarming language.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-P3-ATP-5",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 5,
+    "stem": "Soundproofing a home office costs far less than most homeowners initially expect when the actual goal is reducing daily distraction rather than achieving full recording-studio silence inside the room. Weatherstripping the office door, hanging dense fabric curtains across the windows, and adding a thick area rug to the floor can drop intrusive household noise by ten to fifteen decibels, which the human ear perceives as roughly half as loud as before. Achieving true studio conditions, by contrast, requires double walls, decoupled ceiling assemblies, and specialized acoustic doors, which can easily exceed twenty thousand dollars in a single typical bedroom-sized room. The right level of investment depends on what daily tasks the room must actually support each week, not on what is theoretically possible to build at any cost.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Persuade readers to build a recording studio inside their home.",
+      "Help readers match soundproofing investment to their actual needs.",
+      "Briefly list soundproofing materials without supplying any context.",
+      "Warn readers that home soundproofing rarely works well at all."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage contrasts a low-cost basic approach with a full studio build and closes by tying investment level to \"what tasks the room must actually support each day,\" which matches the keyed purpose. The build-a-studio choice is adjacent-too-strong since the passage describes studio construction as expensive overkill for most home users. The brief-list option is adjacent-too-weak because the passage provides decibel figures, dollar figures, and a clear decision criterion. The rarely-works choice is wrong-polarity since the passage describes meaningful noise gains from modest steps.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-SN-1",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "TENACITY most nearly means:",
+    "choices": [
+      "weakness",
+      "loudness",
+      "honesty",
+      "persistence"
+    ],
+    "correct_index": 3,
+    "explanation": "TENACITY is the quality of holding firmly to a goal or position despite difficulty, making 'persistence' the direct synonym. 'Weakness' is the antonym trap, since a tenacious person refuses to yield. 'Loudness' is a register-confusion trap that conflates forceful behavior with volume, but tenacity is about endurance, not noise level. 'Honesty' is an unrelated virtue word that test takers may pick because it sounds positive like tenacity, but truthfulness has no semantic overlap with gripping power. The Latin root TEN means hold, the same root in TENANT and RETAIN, which both involve holding on.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-SN-2",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "RESOLUTE most nearly means:",
+    "choices": [
+      "doubtful",
+      "determined",
+      "dissolved",
+      "graceful"
+    ],
+    "correct_index": 1,
+    "explanation": "RESOLUTE describes someone firm in purpose and unwilling to be swayed, which matches 'determined' exactly. 'Doubtful' is the antonym trap, since a resolute person has already settled the question. 'Dissolved' is a sound-alike trap built on the shared SOLU/SOLV root, since RESOLUTE and DISSOLVE both come from Latin SOLVERE (to loosen), but the meanings diverged: dissolve breaks something apart, while resolute holds a position together. 'Graceful' is a register-confusion trap that picks any generally positive trait, ignoring that grace describes movement or manner rather than commitment. RESOLUTE shares its root with RESOLVE and RESOLUTION, both of which name a firm decision.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-SN-3",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 4,
+    "stem": "ELOQUENT most nearly means:",
+    "choices": [
+      "silent",
+      "wealthy",
+      "well-spoken",
+      "elegant"
+    ],
+    "correct_index": 2,
+    "explanation": "ELOQUENT describes fluent, persuasive, and graceful use of language, which matches 'well-spoken.' 'Silent' is the antonym trap, since eloquence requires speaking, not refraining from it. 'Wealthy' is a sound-alike trap built on the shared opening sound with ELOQUENT, but money has no bearing on speech quality. 'Elegant' is the partial-overlap trap and the strongest distractor, since both words suggest refinement, but elegance describes style in dress, design, or movement, while eloquence applies specifically to verbal expression. The Latin LOQU means speak, the same root in LOQUACIOUS and SOLILOQUY.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-SN-4",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 4,
+    "stem": "INDIGNANT most nearly means:",
+    "choices": [
+      "ashamed",
+      "indifferent",
+      "angry at injustice",
+      "poverty-stricken"
+    ],
+    "correct_index": 2,
+    "explanation": "INDIGNANT means feeling anger triggered by something perceived as unfair or unworthy, so 'angry at injustice' is the precise synonym. 'Ashamed' is a register-confusion trap, since both are negative emotions, but shame is directed inward at oneself while indignation is directed outward at a wrong. 'Indifferent' is the antonym trap, since an indignant person is the opposite of unconcerned. 'Poverty-stricken' is a sound-alike trap that confuses INDIGNANT with INDIGENT, a near-homophone meaning poor. The Latin DIGNUS means worthy, and INDIGNANT literally describes a response to what one considers unworthy treatment.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-CTX-1",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "In the sentence 'The child was RELUCTANT to enter the dentist's office and had to be coaxed through the door,' the word RELUCTANT most nearly means:",
+    "choices": [
+      "eager",
+      "unwilling",
+      "tired",
+      "polite"
+    ],
+    "correct_index": 1,
+    "explanation": "The evidence is that the child had to be coaxed through the door, meaning persuasion was required to overcome resistance. That pins the meaning to 'unwilling.' 'Eager' is the antonym trap, since an eager child would have walked in without coaxing. 'Tired' is a register-confusion trap that substitutes one negative state for another, but fatigue would not specifically require coaxing through a doorway, it would lead to slow movement everywhere. 'Polite' is unsupported by the sentence, since the child's resistance is the opposite of cooperative manners. Only 'unwilling' fits a person who must be persuaded to act.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-CTX-2",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'After a year of exotic travel, returning to her office cubicle and weekly paperwork felt utterly MUNDANE,' the word MUNDANE most nearly means:",
+    "choices": [
+      "ordinary",
+      "exciting",
+      "foreign",
+      "luxurious"
+    ],
+    "correct_index": 0,
+    "explanation": "The contrast pins the meaning. Exotic travel is set against the office cubicle and weekly paperwork, framing the second as the dull opposite of the first. That matches 'ordinary.' 'Exciting' is the antonym trap and describes the travel rather than the return. 'Foreign' is a register-confusion trap that misreads the contrast, applying the exotic side of the comparison to the wrong half of the sentence. 'Luxurious' is also drawn from the travel half and contradicts the cubicle setting. Only 'ordinary' fits the deflating return to routine work that the sentence describes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-CTX-3",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'Every expense report was placed under intense SCRUTINY by the auditor, who questioned every receipt and flagged inconsistencies,' the word SCRUTINY most nearly means:",
+    "choices": [
+      "rapid approval",
+      "open praise",
+      "casual review",
+      "close examination"
+    ],
+    "correct_index": 3,
+    "explanation": "The evidence is that the auditor questioned every receipt and flagged inconsistencies, which describes detailed inspection rather than a glance. That matches 'close examination.' 'Rapid approval' is the antonym trap, since questioning every line item is the opposite of waving items through. 'Open praise' contradicts the auditor's challenging stance and applies a positive register to a critical activity. 'Casual review' is a partial-overlap trap, since both involve looking at documents, but casual review skips the line-by-line attention the sentence describes. SCRUTINY shares its root with SCRUTINIZE and always implies careful, searching attention.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-CTX-4",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 4,
+    "stem": "In the sentence 'The opposing army was so FORMIDABLE that the general considered surrender before the first arrow was fired,' the word FORMIDABLE most nearly means:",
+    "choices": [
+      "friendly",
+      "impressive and frightening",
+      "small",
+      "disorganized"
+    ],
+    "correct_index": 1,
+    "explanation": "The evidence is that the general considered surrender before fighting began, which means the enemy inspired both awe and fear. That matches 'impressive and frightening.' 'Friendly' is the antonym trap, since no general surrenders to friendly forces. 'Small' contradicts the strength implied by causing a general to capitulate preemptively. 'Disorganized' is also an antonym trap, since a disorganized army would invite attack rather than prevent it. FORMIDABLE comes from Latin FORMIDARE, to dread, and applies to anything so powerful or daunting that it triggers respect mixed with fear.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-CTX-5",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 5,
+    "stem": "In the sentence 'His IMPETUOUS decision to quit his job without notice or savings left his family scrambling for rent money,' the word IMPETUOUS most nearly means:",
+    "choices": [
+      "careful",
+      "rash and impulsive",
+      "respectful",
+      "delayed"
+    ],
+    "correct_index": 1,
+    "explanation": "The evidence is quitting without notice or savings, which signals action taken without forethought. That matches 'rash and impulsive.' 'Careful' is the antonym trap, since a careful person would have given notice and saved first. 'Respectful' contradicts the abrupt exit, which leaves an employer and family stranded. 'Delayed' is a sound-alike trap built on IMPED- in IMPEDE rather than IMPET- in IMPETUOUS, two different Latin roots that students often confuse. IMPETUOUS shares its root with IMPETUS and means driven by sudden force or urge rather than by plan.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-PFX-1",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The prefix SUB- means under or below. Based on this, SUBMARINE most nearly means:",
+    "choices": [
+      "a ship above water",
+      "a vessel that operates under water",
+      "a small boat",
+      "a foreign navy"
+    ],
+    "correct_index": 1,
+    "explanation": "SUBMARINE pairs SUB- (under, below) with MARINE (relating to the sea). The same prefix carries through SUBWAY, SUBTERRANEAN, and SUBMERGE, each describing something beneath. Choice A confuses SUB- with SUPER- or SUR-, prefixes meaning above. Choice C ignores the prefix entirely and assigns a size meaning that morphology does not support. Choice D supplies a foreign-policy meaning unrelated to either morpheme, a classic distractor that picks a word from the same general topic, in this case navies. A submarine is defined by its position under water, which is exactly what the prefix specifies.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-PFX-2",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The prefix ANTI- means against or opposite. Based on this, ANTISOCIAL most nearly means:",
+    "choices": [
+      "loving company",
+      "opposed to social interaction",
+      "very popular",
+      "ahead of fashion"
+    ],
+    "correct_index": 1,
+    "explanation": "ANTISOCIAL combines ANTI- (against, opposite) with SOCIAL (relating to society or company). The same prefix produces ANTIBIOTIC, ANTIDOTE, and ANTIFREEZE, each working against something. Choice A is the antonym trap and describes a sociable person, the exact opposite of the morphology. Choice C also reverses the prefix, since popularity implies enjoying company. Choice D confuses ANTI- with ANTE- (before), a one-letter difference that flips the meaning entirely, the same trap that confuses ANTEBELLUM (before war) with ANTIWAR (against war). An antisocial person actively avoids social contact.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-PFX-3",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The suffix -ABLE means capable of or fit for. Based on this, READABLE most nearly means:",
+    "choices": [
+      "already read",
+      "able to be read",
+      "boring to read",
+      "written by a reader"
+    ],
+    "correct_index": 1,
+    "explanation": "READABLE attaches -ABLE (capable of) to READ. The same suffix produces PORTABLE, EDIBLE, and AUDIBLE, each meaning capable of an action. Choice A confuses -ABLE with the past-tense morpheme -ED, an off-by-one morphology trap that swaps capability for completion. Choice C imports a value judgment that the suffix does not carry, since READABLE marks possibility, not quality. Choice D confuses -ABLE with the agentive -ER, which would name the person doing the reading. READABLE describes any text that can be read, whether it is well-written or not.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-PFX-4",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The prefix SUPER- means above or beyond. Based on this, SUPERVISE most nearly means:",
+    "choices": [
+      "to work under another",
+      "to repeat a task",
+      "to remove from duty",
+      "to look at from above"
+    ],
+    "correct_index": 3,
+    "explanation": "SUPERVISE pairs SUPER- (above, beyond) with VIS- (to see), the Latin root in VISION and VISIBLE. The combination produces oversight from a higher position. The same prefix carries through SUPERSCRIPT, SUPERIOR, and SUPERVISORY. Choice A is the antonym trap and would require SUB- rather than SUPER-, the exact prefix reversal that distinguishes a supervisor from a subordinate. Choice B confuses SUPER- with RE- (again), two unrelated prefixes. Choice C imports a disciplinary meaning unsupported by either morpheme. A supervisor is one who watches from above the work being performed.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-PFX-5",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The prefix BENE- means good or well. The word BENEFACTOR therefore is best defined as:",
+    "choices": [
+      "one who does evil",
+      "one who does good things, especially by giving",
+      "one who makes mistakes",
+      "one who refuses help"
+    ],
+    "correct_index": 1,
+    "explanation": "BENEFACTOR joins BENE- (good, well) with FAC- (to do, make), the Latin root in FACTORY and MANUFACTURE. The same prefix carries through BENEFIT, BENEVOLENT, and BENEDICTION. Choice A is the antonym trap and supplies the meaning of MAL- (bad), the prefix that produces MALEFACTOR, the exact mirror image of BENEFACTOR. Choice C confuses BENE- with MIS- or ERR-, prefixes for error rather than goodness. Choice D contradicts both morphemes, since a benefactor by definition gives rather than withholds. A benefactor is most often a person whose financial gifts do good for an institution or individual.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-ROOT-1",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The root PORT appears in TRANSPORT, EXPORT, and PORTABLE. The root PORT most nearly means:",
+    "choices": [
+      "to see",
+      "to carry",
+      "to break",
+      "to write"
+    ],
+    "correct_index": 1,
+    "explanation": "PORT comes from Latin PORTARE, meaning to carry. TRANSPORT carries something across, EXPORT carries it out of a country, and PORTABLE describes anything able to be carried. The same root produces IMPORT, REPORT (carry information back), and PORTER (one who carries luggage). 'To see' belongs to VID/VIS as in VISION and EVIDENCE, a separate Latin root. 'To break' belongs to FRACT/FRAG as in FRACTURE and FRAGMENT. 'To write' belongs to SCRIB/SCRIPT as in SCRIBE and DESCRIPTION. Only carrying explains the common thread across all three given words.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-ROOT-2",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root SCRIB/SCRIPT appears in SCRIBE, MANUSCRIPT, and PRESCRIPTION. This root most nearly means:",
+    "choices": [
+      "to write",
+      "to read",
+      "to speak",
+      "to remember"
+    ],
+    "correct_index": 0,
+    "explanation": "SCRIB/SCRIPT comes from Latin SCRIBERE, meaning to write. A SCRIBE writes by trade, a MANUSCRIPT is written by hand (MANU = hand), and a PRESCRIPTION is what a doctor writes before treatment. The root also produces DESCRIBE, INSCRIPTION, and TRANSCRIPT. 'To read' belongs to LEG/LECT, the root in LEGIBLE and LECTURE, often confused with SCRIBE because both involve text on a page. 'To speak' belongs to DICT or LOQU, separate roots. 'To remember' belongs to MEM, the root in MEMORY and COMMEMORATE. The shared writing action is the only meaning consistent with all three given examples.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-ROOT-3",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 4,
+    "stem": "The root CRED appears in CREDIBLE, INCREDIBLE, and CREDENTIAL. The root CRED most nearly means:",
+    "choices": [
+      "to count",
+      "to praise",
+      "to believe or trust",
+      "to fear"
+    ],
+    "correct_index": 2,
+    "explanation": "CRED comes from Latin CREDERE, meaning to believe or trust. CREDIBLE describes something worthy of belief, INCREDIBLE means literally not believable, and CREDENTIALS are documents that establish trust in a person's qualifications. The root also produces CREDIT (trust extended financially), CREED (statement of belief), and INCREDULOUS (unwilling to believe). 'To count' belongs to NUMER, the root in NUMERAL and ENUMERATE, often confused because both relate to financial language. 'To praise' belongs to LAUD as in LAUDABLE. 'To fear' belongs to TIM or PHOB, the roots in TIMID and PHOBIA. Only trust unites all three given examples.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-ROOT-4",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 4,
+    "stem": "The root SPEC/SPECT appears in INSPECT, SPECTATOR, and PERSPECTIVE. This root most nearly means:",
+    "choices": [
+      "to hear",
+      "to look or see",
+      "to choose",
+      "to hide"
+    ],
+    "correct_index": 1,
+    "explanation": "SPEC/SPECT comes from Latin SPECERE, meaning to look or see. To INSPECT is to look into, a SPECTATOR is one who looks at an event, and PERSPECTIVE is a way of looking through a situation. The root also produces RESPECT (look back at with regard), SUSPECT (look from below), and SPECTACLES (lenses for seeing). 'To hear' belongs to AUD, the root in AUDIBLE and AUDIENCE, sometimes confused since both senses receive information. 'To choose' belongs to LECT/LEG as in SELECT and ELECT. 'To hide' belongs to CRYPT or LATEN, the roots in CRYPTIC and LATENT. Looking is the thread.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-ROOT-5",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 5,
+    "stem": "The root DUC/DUCT appears in CONDUCT, INDUCT, ABDUCT, and PRODUCE. This root most nearly means:",
+    "choices": [
+      "to lead or bring",
+      "to argue",
+      "to finish",
+      "to follow"
+    ],
+    "correct_index": 0,
+    "explanation": "DUC/DUCT comes from Latin DUCERE, meaning to lead or bring. To CONDUCT is to lead together (an orchestra or current), to INDUCT is to lead into membership, to ABDUCT is to lead away by force, and to PRODUCE is to bring forth. The root also yields DUKE (leader), AQUEDUCT (water-leader), EDUCATE (lead out of ignorance), and DEDUCE (lead from premises). 'To argue' belongs to LITIG or DISPUT, the roots in LITIGATE and DISPUTE. 'To finish' belongs to FIN as in FINAL and FINITE. 'To follow' is the antonym trap, since leaders go first while followers come after. Leading explains every example.",
+    "status": "draft"
+  }
+]

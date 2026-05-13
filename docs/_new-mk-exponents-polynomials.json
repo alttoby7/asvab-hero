@@ -1,0 +1,222 @@
+[
+  {
+    "external_key": "MK-EP-NEW-1",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "Evaluate 3⁴.",
+    "choices": ["12", "27", "64", "81"],
+    "correct_index": 3,
+    "explanation": "An exponent means repeated multiplication of the base. 3⁴ equals 3 · 3 · 3 · 3, which equals 81. Choice 12 multiplies the base and exponent (3 × 4), a common shortcut error. Choice 27 stops one step early at 3³. Choice 64 confuses the base and exponent and computes 4³ instead. Only the full product 3 · 3 · 3 · 3 = 81 applies the definition of an exponent correctly.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-2",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "Simplify x³ · x⁴.",
+    "choices": ["x⁷", "x¹²", "x", "2x⁷"],
+    "correct_index": 0,
+    "explanation": "When multiplying powers with the same base, add the exponents. x³ · x⁴ becomes x^(3+4), which equals x⁷. Choice x¹² multiplies the exponents instead of adding them, which is the rule for a power raised to a power, not multiplication. Choice x subtracts the exponents as if dividing. Choice 2x⁷ incorrectly doubles the coefficient; the bases each have an implied coefficient of 1, and 1 · 1 stays 1.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-3",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "Evaluate 2⁵.",
+    "choices": ["10", "16", "25", "32"],
+    "correct_index": 3,
+    "explanation": "2⁵ means multiply 2 by itself five times: 2 · 2 · 2 · 2 · 2, which equals 32. Choice 10 multiplies the base by the exponent (2 × 5), which ignores the meaning of exponents. Choice 16 stops one factor short at 2⁴. Choice 25 swaps the base and exponent and computes 5². Working through each doubling, 2, 4, 8, 16, 32, confirms 32 is correct.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-4",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Simplify x⁸ / x³.",
+    "choices": ["x¹¹", "x²⁴", "x⁵", "x⁵/³"],
+    "correct_index": 2,
+    "explanation": "When dividing powers with the same base, subtract the exponents. x⁸ / x³ becomes x^(8-3), which equals x⁵. Choice x¹¹ adds the exponents, which is the rule for multiplication, not division. Choice x²⁴ multiplies the exponents, which applies to a power of a power. Choice x⁵/³ treats the exponents as a fraction left over after subtraction, mixing rules. Subtracting exponents during same-base division produces x⁵.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-5",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Simplify (x³)⁴.",
+    "choices": ["x⁷", "x¹²", "x⁸¹", "x⁶⁴"],
+    "correct_index": 1,
+    "explanation": "When raising a power to a power, multiply the exponents. (x³)⁴ becomes x^(3·4), which equals x¹². Choice x⁷ adds the exponents, which is the rule for multiplying same-base expressions, not nesting. Choice x⁸¹ raises 3 to the fourth power and treats that as the exponent. Choice x⁶⁴ raises 4 to the third power. Multiplying the two exponents directly gives x¹².",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-6",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Rewrite x⁻³ with a positive exponent.",
+    "choices": ["1/x³", "-x³", "-3x", "1/(-x³)"],
+    "correct_index": 0,
+    "explanation": "A negative exponent means take the reciprocal of the base with a positive exponent. x⁻³ equals 1/x³. Choice -x³ treats the negative exponent as a negative sign on the result, which confuses two different operations. Choice -3x multiplies the base by the exponent. Choice 1/(-x³) puts the negative on the base itself, which would only happen if the base were written as (-x). The rule converts the negative exponent into a positive exponent in the denominator.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-7",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Simplify (y²)⁵.",
+    "choices": ["y⁷", "y¹⁰", "y²⁵", "y³²"],
+    "correct_index": 1,
+    "explanation": "When raising a power to a power, multiply the exponents. (y²)⁵ becomes y^(2·5), which equals y¹⁰. Choice y⁷ adds the exponents, which is the rule for multiplying same-base terms, not nesting. Choice y²⁵ squares the outer exponent and uses that as the result. Choice y³² evaluates 2⁵ and treats that as the exponent. The correct move is to multiply 2 and 5 to get y¹⁰.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-8",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify (2x³)².",
+    "choices": ["2x⁶", "4x⁵", "4x⁶", "4x⁹"],
+    "correct_index": 2,
+    "explanation": "When an exponent applies to a product, distribute it to each factor. (2x³)² becomes 2² · (x³)², which equals 4 · x⁶, or 4x⁶. Choice 2x⁶ squares the variable part but forgets to square the coefficient. Choice 4x⁵ squares the coefficient but adds exponents instead of multiplying them. Choice 4x⁹ raises the inside exponent to the outside power instead of multiplying. The product 4x⁶ applies both the coefficient and exponent rules.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-9",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Expand (x + 3)(x + 4).",
+    "choices": ["x² + 12", "2x + 7", "x² + 7x + 7", "x² + 7x + 12"],
+    "correct_index": 3,
+    "explanation": "Use FOIL to expand: first x · x = x², outer x · 4 = 4x, inner 3 · x = 3x, last 3 · 4 = 12. Combine like terms 4x + 3x to get 7x. The product is x² + 7x + 12. Choice x² + 12 multiplies only the first and last terms and skips the middle. Choice 2x + 7 adds the binomials instead of multiplying. Choice x² + 7x + 7 forgets to multiply the constants and uses 3 + 4 instead of 3 · 4.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-10",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify (xy²)³.",
+    "choices": ["xy⁶", "x³y⁵", "x³y⁶", "x³y⁸"],
+    "correct_index": 2,
+    "explanation": "Distribute the exponent across each factor in the product, multiplying exponents when raising a power to a power. (xy²)³ becomes x³ · (y²)³, which equals x³y⁶. Choice xy⁶ raises only y to the third power and leaves x with exponent 1. Choice x³y⁵ adds exponents 2 and 3 instead of multiplying. Choice x³y⁸ raises 2 to the third power and treats that as the exponent of y. The product rule cubes each factor.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-11",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify x⁵ · x⁻².",
+    "choices": ["x⁷", "x³", "x⁻¹⁰", "1/x³"],
+    "correct_index": 1,
+    "explanation": "When multiplying powers with the same base, add the exponents, including negatives. x⁵ · x⁻² becomes x^(5 + (-2)), which equals x³. Choice x⁷ adds 5 and 2 as if both were positive, ignoring the negative sign. Choice x⁻¹⁰ multiplies the exponents instead of adding them. Choice 1/x³ flips the result to the denominator, which would apply only if the final exponent were negative. The sum 5 + (-2) = 3 keeps the answer in the numerator.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-12",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Expand (x - 2)(x + 5).",
+    "choices": ["x² - 10", "x² - 3x - 10", "x² + 3x + 10", "x² + 3x - 10"],
+    "correct_index": 3,
+    "explanation": "FOIL: first x · x = x², outer x · 5 = 5x, inner -2 · x = -2x, last -2 · 5 = -10. Combine 5x and -2x to get 3x. The result is x² + 3x - 10. Choice x² - 10 skips the middle terms. Choice x² - 3x - 10 reverses the sign on the middle term, a common error from subtracting instead of adding 5x and -2x. Choice x² + 3x + 10 keeps the constant positive, forgetting that a positive times a negative is negative.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-13",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Factor x² + 7x + 10.",
+    "choices": ["(x + 1)(x + 10)", "(x + 2)(x + 5)", "(x + 3)(x + 4)", "(x - 2)(x - 5)"],
+    "correct_index": 1,
+    "explanation": "Find two numbers that multiply to 10 and add to 7. The pair 2 and 5 works because 2 · 5 = 10 and 2 + 5 = 7, so the factors are (x + 2)(x + 5). Choice (x + 1)(x + 10) multiplies to 10 but adds to 11. Choice (x + 3)(x + 4) adds to 7 but multiplies to 12. Choice (x - 2)(x - 5) multiplies to 10 but adds to -7, flipping the sign on the middle term.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-14",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Factor x² - x - 12.",
+    "choices": ["(x - 4)(x + 3)", "(x + 4)(x - 3)", "(x - 4)(x - 3)", "(x + 6)(x - 2)"],
+    "correct_index": 0,
+    "explanation": "Find two numbers that multiply to -12 and add to -1. The pair -4 and 3 works because -4 · 3 = -12 and -4 + 3 = -1, so the factors are (x - 4)(x + 3). Choice (x + 4)(x - 3) multiplies to -12 but adds to 1, the wrong sign on the middle term. Choice (x - 4)(x - 3) multiplies to 12, not -12. Choice (x + 6)(x - 2) multiplies to -12 but adds to 4. Sign placement matters because the constant is negative.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-15",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Simplify ((x²)³)².",
+    "choices": ["x⁷", "x⁸", "x¹²", "x⁶⁴"],
+    "correct_index": 2,
+    "explanation": "Apply the power of a power rule from the inside out, multiplying exponents at each step. (x²)³ becomes x⁶. Then (x⁶)² becomes x^(6·2), which equals x¹². Choice x⁷ adds the three exponents 2 + 3 + 2 instead of multiplying. Choice x⁸ multiplies 2 · 4, treating the outer 2 as applying to the inner 2. Choice x⁶⁴ evaluates 2⁶ and treats that as the exponent. Multiplying 2 · 3 · 2 gives 12.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-16",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Factor x² + 10x + 25.",
+    "choices": ["(x + 5)²", "(x - 5)²", "(x + 5)(x - 5)", "(x + 25)(x + 1)"],
+    "correct_index": 0,
+    "explanation": "Look for two numbers that multiply to 25 and add to 10. The pair 5 and 5 works, so the factors are (x + 5)(x + 5), which equals (x + 5)². This is a perfect square trinomial. Choice (x - 5)² expands to x² - 10x + 25, with the wrong sign on the middle term. Choice (x + 5)(x - 5) is the difference of squares, which would produce x² - 25 and no middle term. Choice (x + 25)(x + 1) multiplies to 25 but adds to 26.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-17",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "Evaluate 7⁰.",
+    "choices": ["0", "1", "7", "undefined"],
+    "correct_index": 1,
+    "explanation": "Any nonzero number raised to the zero power equals 1, so 7⁰ equals 1. The rule follows from the division pattern: 7^n / 7^n equals 1, but using the exponent rule it also equals 7^(n-n), which equals 7⁰. Choice 0 confuses the exponent with the result. Choice 7 keeps the base when the exponent is zero, mixing it up with the rule for an exponent of 1. Choice undefined applies only to 0⁰, not to a nonzero base.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-18",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "Factor x² - 49.",
+    "choices": ["(x - 7)²", "(x + 7)²", "(x + 7)(x - 7)", "(x - 49)(x + 1)"],
+    "correct_index": 2,
+    "explanation": "The expression is a difference of squares because 49 equals 7² and there is no middle term. The pattern a² - b² factors as (a + b)(a - b), so x² - 49 becomes (x + 7)(x - 7). Choice (x - 7)² expands to x² - 14x + 49, which has a middle term and the wrong constant sign. Choice (x + 7)² expands to x² + 14x + 49. Choice (x - 49)(x + 1) multiplies to -49 but produces x² - 48x - 49, not a clean difference of squares.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-19",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "Which expression equals x^(1/2)?",
+    "choices": ["x/2", "√x", "1/x²", "2/x"],
+    "correct_index": 1,
+    "explanation": "A fractional exponent of 1/2 means take the square root of the base, so x^(1/2) equals √x. The general rule states x^(1/n) equals the nth root of x. Choice x/2 divides the base by 2, treating the exponent as a regular fraction multiplier. Choice 1/x² applies the negative-exponent rule and squares the base, mixing two unrelated operations. Choice 2/x flips the fraction and uses the base as a denominator. Only the square root matches the fractional exponent definition.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-20",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "Evaluate 25^(1/2).",
+    "choices": ["5", "12.5", "50", "625"],
+    "correct_index": 0,
+    "explanation": "A fractional exponent of 1/2 means take the square root of the base, so 25^(1/2) equals √25, which equals 5. Choice 12.5 multiplies 25 by 1/2, treating the exponent as a regular multiplier instead of a root. Choice 50 multiplies 25 by 2, applying the reciprocal of the exponent as a multiplier. Choice 625 squares 25, which would happen with an exponent of 2 rather than 1/2. The square root, not multiplication, defines a 1/2 power.",
+    "status": "draft"
+  }
+]

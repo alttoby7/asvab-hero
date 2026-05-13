@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
-import Nav from "@/components/Nav";
-import UpgradeBanner from "@/components/UpgradeBanner";
-import Footer from "@/components/Footer";
+import MarketingShell from "@/components/MarketingShell";
 import JsonLd from "@/components/JsonLd";
 import OutboundTracker from "@/components/OutboundTracker";
 import { AnalyticsUserBinder } from "@/components/AnalyticsUserBinder";
@@ -93,10 +91,7 @@ export default function RootLayout({
               "Free ASVAB score calculator and military job finder",
           }}
         />
-        <Nav />
-        <UpgradeBanner />
-        <main className="relative z-1">{children}</main>
-        <Footer />
+        <MarketingShell>{children}</MarketingShell>
         <OutboundTracker />
         <AnalyticsUserBinder />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-96BXQ7YRJ8" strategy="afterInteractive" />

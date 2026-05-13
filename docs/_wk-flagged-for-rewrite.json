@@ -1,0 +1,1482 @@
+[
+  {
+    "external_key": "WK-1",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "ARID most nearly means:",
+    "choices": [
+      "Damp",
+      "Stormy",
+      "Dry",
+      "Fertile"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Arid means extremely dry, with little or no rain. It is commonly used to describe deserts or climates with very low precipitation."
+  },
+  {
+    "external_key": "WK-2",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(17w)",
+      "no-trap-named"
+    ],
+    "stem": "PRUDENT most nearly means:",
+    "choices": [
+      "Reckless",
+      "Cautious",
+      "Generous",
+      "Stubborn"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Prudent means acting with care and good judgment to avoid risk. It is the opposite of reckless."
+  },
+  {
+    "external_key": "WK-3",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(15w)",
+      "no-trap-named"
+    ],
+    "stem": "CONCISE most nearly means:",
+    "choices": [
+      "Wordy",
+      "Unclear",
+      "Brief",
+      "Detailed"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Concise means expressing information clearly in few words. It contrasts with wordy or verbose communication."
+  },
+  {
+    "external_key": "WK-4",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(21w)",
+      "no-trap-named"
+    ],
+    "stem": "OMINOUS most nearly means:",
+    "choices": [
+      "Cheerful",
+      "Threatening",
+      "Ordinary",
+      "Surprising"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Ominous means giving the impression that something bad or unpleasant is going to happen; it is synonymous with threatening or foreboding."
+  },
+  {
+    "external_key": "WK-5",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "TENACIOUS most nearly means:",
+    "choices": [
+      "Fragile",
+      "Persistent",
+      "Timid",
+      "Generous"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Tenacious means holding firmly to a purpose or position; persistent and determined. It implies stubbornness in a positive sense."
+  },
+  {
+    "external_key": "WK-6",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(22w)"
+    ],
+    "stem": "AMBIGUOUS most nearly means:",
+    "choices": [
+      "Certain",
+      "Unclear",
+      "Ambitious",
+      "Honest"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Ambiguous means open to more than one interpretation; not having a clear meaning. It is distinct from ambitious, which relates to goals."
+  },
+  {
+    "external_key": "WK-7",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(20w)",
+      "no-trap-named"
+    ],
+    "stem": "VALIDATE most nearly means:",
+    "choices": [
+      "Deny",
+      "Confirm",
+      "Improve",
+      "Replace"
+    ],
+    "correct_index": 1,
+    "current_explanation": "To validate means to confirm or check the accuracy or legitimacy of something. It is synonymous with verify or confirm."
+  },
+  {
+    "external_key": "WK-8",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "AUSTERE most nearly means:",
+    "choices": [
+      "Luxurious",
+      "Severe",
+      "Colorful",
+      "Warm"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Austere means severe or strict in manner or appearance; lacking comfort or ornament. It describes a plain, unadorned quality."
+  },
+  {
+    "external_key": "WK-9",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(20w)",
+      "no-trap-named"
+    ],
+    "stem": "DILIGENT most nearly means:",
+    "choices": [
+      "Lazy",
+      "Careful",
+      "Hardworking",
+      "Honest"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Diligent means showing steady, earnest effort in one's work or duties. It is closest in meaning to hardworking or industrious."
+  },
+  {
+    "external_key": "WK-10",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(20w)",
+      "no-trap-named"
+    ],
+    "stem": "VOLATILE most nearly means:",
+    "choices": [
+      "Stable",
+      "Unstable",
+      "Heavy",
+      "Silent"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Volatile describes something that is liable to change rapidly and unpredictably, especially for the worse. It suggests instability or explosiveness."
+  },
+  {
+    "external_key": "WK-11",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(24w)",
+      "no-trap-named"
+    ],
+    "stem": "EXPEDITE most nearly means:",
+    "choices": [
+      "Delay",
+      "Organize",
+      "Accelerate",
+      "Evaluate"
+    ],
+    "correct_index": 2,
+    "current_explanation": "To expedite means to speed up the process of something; to cause it to happen more quickly. It is synonymous with accelerate or hasten."
+  },
+  {
+    "external_key": "WK-12",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "METICULOUS most nearly means:",
+    "choices": [
+      "Careless",
+      "Precise",
+      "Modest",
+      "Flexible"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Meticulous means showing great attention to detail; very careful and precise. It describes someone who is thorough and exact."
+  },
+  {
+    "external_key": "WK-CTX-1",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(31w)"
+    ],
+    "stem": "In the sentence 'The senator's VERBOSE reply frustrated reporters who needed a simple yes or no,' the word VERBOSE most nearly means:",
+    "choices": [
+      "enthusiastic",
+      "evasive",
+      "using more words than necessary",
+      "difficult to hear"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Verbose means using an unnecessarily large number of words. The clue 'needed a simple yes or no' signals that the reply was overly wordy, not merely evasive or hard to hear."
+  },
+  {
+    "external_key": "WK-CTX-2",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(26w)"
+    ],
+    "stem": "In the sentence 'After three sleepless days on patrol, the soldiers were so TORPID they could barely lift their rifles,' the word TORPID most nearly means:",
+    "choices": [
+      "alert",
+      "sluggish",
+      "angry",
+      "well-trained"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Torpid means sluggish or mentally/physically inactive. The context clue 'sleepless days' and 'could barely lift their rifles' points directly to extreme sluggishness, not anger or alertness."
+  },
+  {
+    "external_key": "WK-CTX-5",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(24w)"
+    ],
+    "stem": "In the sentence 'The hiking trail was so ARDUOUS that even the most experienced climbers needed rest breaks every half mile,' the word ARDUOUS most nearly means:",
+    "choices": [
+      "scenic",
+      "demanding",
+      "well-marked",
+      "narrow"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Arduous means requiring great effort and endurance. 'Even the most experienced climbers needed rest breaks' signals extreme difficulty, not just narrowness or poor signage."
+  },
+  {
+    "external_key": "WK-CTX-6",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(30w)",
+      "no-trap-named"
+    ],
+    "stem": "In the sentence 'Her SARDONIC smile told the interviewer she found the question absurd, though she answered politely,' the word SARDONIC most nearly means:",
+    "choices": [
+      "warm and welcoming",
+      "mocking or grimly humorous",
+      "nervous and tense",
+      "bright and enthusiastic"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Sardonic means grimly mocking or cynically humorous. The clue 'found the question absurd' while still being outwardly polite is characteristic of sardonic expression. Warm or enthusiastic contradicts the implied disdain."
+  },
+  {
+    "external_key": "WK-CTX-8",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(29w)",
+      "no-trap-named"
+    ],
+    "stem": "In the sentence 'Despite losing power for three days, the team remained RESILIENT and rebuilt the network faster than expected,' the word RESILIENT most nearly means:",
+    "choices": [
+      "resourceful",
+      "quick to recover from setbacks",
+      "highly trained",
+      "well-funded"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Resilient means able to recover quickly from difficulties. 'Despite losing power' sets up the adversity, and 'rebuilt faster than expected' confirms swift recovery \u2014 the core meaning of resilience."
+  },
+  {
+    "external_key": "WK-CTX-9",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(28w)"
+    ],
+    "stem": "In the sentence 'The general's IMPERIOUS tone left no doubt that his orders were not suggestions \u2014 they were commands,' the word IMPERIOUS most nearly means:",
+    "choices": [
+      "calm and measured",
+      "domineering and commanding",
+      "persuasive and logical",
+      "vague and uncertain"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Imperious means arrogantly domineering. The contrast between 'not suggestions' and 'commands' reinforces a tone that expects immediate obedience. Persuasive implies reasoning and choice, which contradicts the passage's meaning."
+  },
+  {
+    "external_key": "WK-CTX-10",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "In the sentence 'The scientist's HYPOTHESIS, though TENUOUS at first, grew stronger as more experimental data came in,' the word TENUOUS most nearly means:",
+    "choices": [
+      "widely accepted",
+      "poorly worded",
+      "weak or lacking support",
+      "based on observation"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Tenuous means thin or weak, often used to describe an argument or idea with little supporting evidence. The phrase 'grew stronger as more data came in' confirms it started from a position of minimal support."
+  },
+  {
+    "external_key": "WK-CTX-11",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "In the sentence 'The judge's IMPARTIAL ruling satisfied both sides because neither could claim favoritism,' the word IMPARTIAL most nearly means:",
+    "choices": [
+      "biased toward the defendant",
+      "based on strict law",
+      "treating all sides equally without favoritism",
+      "delivered quickly"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Impartial means not favoring one side over another. 'Neither could claim favoritism' is the direct context clue. 'Based on strict law' is tempting but describes method rather than the fairness quality the word captures."
+  },
+  {
+    "external_key": "WK-CTX-12",
+    "file": "b1",
+    "difficulty": 5,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "In the sentence 'His PERFUNCTORY review of the safety checklist \u2014 glancing at it for seconds before signing \u2014 nearly cost the crew their lives,' the word PERFUNCTORY most nearly means:",
+    "choices": [
+      "thorough and systematic",
+      "done as a formality without real care",
+      "delayed and overdue",
+      "conducted by a supervisor"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Perfunctory means carried out with minimal effort and as a routine duty, not with genuine care. 'Glancing at it for seconds before signing' is the exact clue; the near-catastrophe underscores how inadequate it was."
+  },
+  {
+    "external_key": "WK-PFX-1",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(31w)"
+    ],
+    "stem": "The word ANTECEDENT contains the prefix ANTE-. Based on that prefix, ANTECEDENT most nearly means:",
+    "choices": [
+      "something that comes after",
+      "something that came before",
+      "something that contradicts",
+      "something that repeats"
+    ],
+    "correct_index": 1,
+    "current_explanation": "ANTE- means before or preceding (compare: antebellum, anteroom). An antecedent is a thing or event that came before another. ANTI- (against) is the common confusion, but the spelling here is ANTE-."
+  },
+  {
+    "external_key": "WK-PFX-2",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(26w)"
+    ],
+    "stem": "The word BENEVOLENT contains the root VOL (wish, will) and the prefix BENE-. BENEVOLENT most nearly means:",
+    "choices": [
+      "well-wishing or kind",
+      "all-powerful",
+      "voluntary",
+      "truthful"
+    ],
+    "correct_index": 0,
+    "current_explanation": "BENE- means well or good (benefit, benefactor). Combined with -VOL- (wish), benevolent means well-wishing or kindly disposed. Voluntary shares the same root but a different prefix."
+  },
+  {
+    "external_key": "WK-PFX-3",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(32w)"
+    ],
+    "stem": "The suffix -LOGY means the study of. CHRONOLOGY is therefore best defined as:",
+    "choices": [
+      "the science of timekeeping devices",
+      "the arrangement of events in time order",
+      "a record of weather patterns",
+      "the study of ancient languages"
+    ],
+    "correct_index": 1,
+    "current_explanation": "CHRONO- means time; -LOGY means study or systematic knowledge. Chronology is the arrangement and study of events in time sequence. A chronograph measures time but -GRAPH means write or record, not study."
+  },
+  {
+    "external_key": "WK-PFX-4",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(30w)",
+      "no-trap-named"
+    ],
+    "stem": "The word CIRCUMSPECT contains the prefix CIRCUM- (around) and the root SPECT (look). CIRCUMSPECT most nearly means:",
+    "choices": [
+      "easily distracted",
+      "wary and considering all possibilities",
+      "surrounded by obstacles",
+      "quick to decide"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Circumspect literally means 'looking around' \u2014 considering all circumstances before acting, hence wary and careful. Quick to decide is the opposite. 'Surrounded by obstacles' misreads CIRCUM- as a physical description."
+  },
+  {
+    "external_key": "WK-PFX-5",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(21w)",
+      "no-trap-named"
+    ],
+    "stem": "The prefix TRANS- means across or through. A TRANSOCEANIC voyage is therefore a voyage:",
+    "choices": [
+      "below the ocean surface",
+      "along the coastline",
+      "across an ocean",
+      "within a single ocean region"
+    ],
+    "correct_index": 2,
+    "current_explanation": "TRANS- means across or through, as in transport, transfer, transatlantic. Transoceanic means crossing an ocean from one side to the other."
+  },
+  {
+    "external_key": "WK-PFX-7",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "The suffix -OLOGY means the study of, while -OLOGIST means one who studies. A SEISMOLOGIST studies:",
+    "choices": [
+      "the structure of the atmosphere",
+      "earthquake activity",
+      "ocean currents",
+      "ancient fossils"
+    ],
+    "correct_index": 1,
+    "current_explanation": "SEISMO- derives from the Greek seismos, meaning earthquake or shaking. A seismologist studies earthquakes and seismic waves. Fossils (paleontology) and ocean currents (oceanography) involve different prefixes."
+  },
+  {
+    "external_key": "WK-PFX-8",
+    "file": "b1",
+    "difficulty": 5,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "The word MAGNANIMOUS contains the roots MAGN- (great) and ANIM- (spirit/soul). MAGNANIMOUS most nearly means:",
+    "choices": [
+      "physically large and imposing",
+      "generous in forgiving insults or injuries",
+      "highly educated",
+      "emotionally volatile"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Magnanimous means 'great-spirited' \u2014 generous, noble, and especially forgiving toward rivals or those who have wronged you. Physically large (magnitude) uses the same root but the ANIM- component shifts meaning toward character, not size."
+  },
+  {
+    "external_key": "WK-ROOT-1",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "wk.root-words",
+    "flags": [
+      "thin(29w)",
+      "no-trap-named"
+    ],
+    "stem": "The word AUDIBLE shares its root with AUDITORIUM and AUDIENCE. The root AUD- means:",
+    "choices": [
+      "to speak",
+      "to hear",
+      "to see",
+      "to gather"
+    ],
+    "correct_index": 1,
+    "current_explanation": "AUD- comes from the Latin audire, to hear. Audible means capable of being heard; an auditorium is a place for hearing performances; an audience is a group of listeners."
+  },
+  {
+    "external_key": "WK-ROOT-2",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "wk.root-words",
+    "flags": [
+      "thin(30w)"
+    ],
+    "stem": "The root CHRON appears in CHRONIC, CHRONOMETER, and ANACHRONISM. CHRON means:",
+    "choices": [
+      "color",
+      "time",
+      "order",
+      "distance"
+    ],
+    "correct_index": 1,
+    "current_explanation": "CHRON comes from the Greek chronos, meaning time. A chronometer measures time precisely; an anachronism is something placed in the wrong time period; chronic means persisting over a long time."
+  },
+  {
+    "external_key": "WK-ROOT-3",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "wk.root-words",
+    "flags": [
+      "thin(33w)",
+      "no-trap-named"
+    ],
+    "stem": "The root TERRA appears in TERRITORY, TERRAIN, and MEDITERRANEAN. TERRA most nearly means:",
+    "choices": [
+      "water",
+      "sky",
+      "earth or land",
+      "boundary"
+    ],
+    "correct_index": 2,
+    "current_explanation": "TERRA comes from Latin meaning earth or land. Mediterranean literally means 'middle of the earth (land)'; terrain refers to the features of a stretch of land; territory is a defined area of land."
+  },
+  {
+    "external_key": "WK-CTX-HARD-1",
+    "file": "b1",
+    "difficulty": 5,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "In the sentence 'The politician's OBSEQUIOUS deference to every donor in the room struck journalists as calculated rather than genuine,' the word OBSEQUIOUS most nearly means:",
+    "choices": [
+      "bold and outspoken",
+      "excessively eager to please or serve",
+      "professionally courteous",
+      "openly hostile"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Obsequious means servilely compliant or fawning \u2014 behaving in an excessively eager-to-please way. The clue that it 'struck journalists as calculated' confirms it goes beyond normal professional courtesy, ruling out choice C. Bold or hostile are direct opposites."
+  },
+  {
+    "external_key": "WK-SYN-HARD-1",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(30w)",
+      "no-trap-named"
+    ],
+    "stem": "EPHEMERAL most nearly means:",
+    "choices": [
+      "ancient",
+      "lasting only a short time",
+      "extraordinarily rare",
+      "deeply emotional"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Ephemeral means lasting for a very short time (from Greek ephemeros, 'for a day'). Ancient is essentially its opposite. Rare and emotional are unrelated to its core meaning of brevity."
+  },
+  {
+    "external_key": "WK-SYN-HARD-2",
+    "file": "b1",
+    "difficulty": 5,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(31w)"
+    ],
+    "stem": "VERACIOUS most nearly means:",
+    "choices": [
+      "extremely hungry",
+      "truthful",
+      "speedy",
+      "aggressive"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Veracious means habitually speaking the truth. It is commonly confused with voracious (extremely hungry), which sounds similar. The VER- root relates to truth (verify, veracity), while VOR- relates to eating (devour)."
+  },
+  {
+    "external_key": "WK-PFX-D2-1",
+    "file": "b1",
+    "difficulty": 2,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(29w)"
+    ],
+    "stem": "The prefix MIS- means wrongly or badly. MISJUDGE therefore means:",
+    "choices": [
+      "to judge again",
+      "to judge fairly",
+      "to judge wrongly",
+      "to refuse to judge"
+    ],
+    "correct_index": 2,
+    "current_explanation": "MIS- attaches to a verb and means wrongly or badly \u2014 as in mislead (lead wrongly), misfire (fire at wrong time), misuse. Misjudge means to form an incorrect judgment."
+  },
+  {
+    "external_key": "WK-SN-2",
+    "file": "b2",
+    "difficulty": 2,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(8w)",
+      "no-trap-named"
+    ],
+    "stem": "TRANQUIL most nearly means:",
+    "choices": [
+      "Noisy",
+      "Peaceful",
+      "Rushed",
+      "Dangerous"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Tranquil means free from disturbance; calm and peaceful."
+  },
+  {
+    "external_key": "WK-SN-5",
+    "file": "b2",
+    "difficulty": 3,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(11w)",
+      "no-trap-named"
+    ],
+    "stem": "LETHARGIC most nearly means:",
+    "choices": [
+      "Energetic",
+      "Sluggish",
+      "Aggressive",
+      "Focused"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Lethargic means lacking energy or enthusiasm; sluggish. Energetic is its antonym."
+  },
+  {
+    "external_key": "WK-SN-6",
+    "file": "b2",
+    "difficulty": 4,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "INSCRUTABLE most nearly means:",
+    "choices": [
+      "Mysterious",
+      "Obvious",
+      "Unreliable",
+      "Talkative"
+    ],
+    "correct_index": 0,
+    "current_explanation": "Inscrutable means impossible to understand or interpret; mysterious. The root 'scrutin-' means to examine \u2014 inscrutable means it cannot be read through."
+  },
+  {
+    "external_key": "WK-SN-10",
+    "file": "b2",
+    "difficulty": 5,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(23w)"
+    ],
+    "stem": "RECALCITRANT most nearly means:",
+    "choices": [
+      "Obedient",
+      "Defiant",
+      "Cautious",
+      "Calculating"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Recalcitrant means stubbornly resistant to authority or control. 'Calculating' is a common wrong answer due to visual similarity. From Latin calcitrare, to kick."
+  },
+  {
+    "external_key": "WK-SN-B4-1",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(20w)",
+      "no-trap-named"
+    ],
+    "stem": "BRAVE most nearly means:",
+    "choices": [
+      "cowardly",
+      "courageous",
+      "careless",
+      "clever"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Brave means ready to face danger or pain without showing fear. Courageous is its closest synonym. Cowardly is the antonym."
+  },
+  {
+    "external_key": "WK-SN-B4-2",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(20w)",
+      "no-trap-named"
+    ],
+    "stem": "RAPID most nearly means:",
+    "choices": [
+      "slow",
+      "loud",
+      "fast",
+      "heavy"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Rapid means happening in a short time or at great speed. Fast is its direct synonym. Slow is the antonym."
+  },
+  {
+    "external_key": "WK-SN-B4-4",
+    "file": "b4",
+    "difficulty": 2,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(19w)",
+      "no-trap-named"
+    ],
+    "stem": "GREGARIOUS most nearly means:",
+    "choices": [
+      "shy",
+      "talkative and sociable",
+      "aggressive",
+      "hardworking"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Gregarious means fond of company; sociable. It describes someone who enjoys being around other people. Shy is the antonym."
+  },
+  {
+    "external_key": "WK-SN-B4-5",
+    "file": "b4",
+    "difficulty": 2,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(22w)"
+    ],
+    "stem": "INDOLENT most nearly means:",
+    "choices": [
+      "energetic",
+      "rude",
+      "lazy",
+      "independent"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Indolent means avoiding activity; habitually lazy. Energetic is its antonym. Do not confuse indolent with insolent (rude), which differs by one letter."
+  },
+  {
+    "external_key": "WK-SN-B4-6",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(27w)",
+      "no-trap-named"
+    ],
+    "stem": "LACONIC most nearly means:",
+    "choices": [
+      "wordy",
+      "brief in speech",
+      "humorous",
+      "secretive"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Laconic means using very few words; brief and to the point. Wordy is the antonym. It comes from Laconia (Sparta), whose inhabitants were famous for terse speech."
+  },
+  {
+    "external_key": "WK-SN-B4-7",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(26w)"
+    ],
+    "stem": "MITIGATE most nearly means:",
+    "choices": [
+      "worsen",
+      "lessen or reduce",
+      "eliminate",
+      "conceal"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Mitigate means to make something less severe, harmful, or painful. Worsen is its antonym. Eliminate goes further than mitigate \u2014 mitigate reduces, not removes, the harm."
+  },
+  {
+    "external_key": "WK-SN-B4-8",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(26w)"
+    ],
+    "stem": "OSTRACIZE most nearly means:",
+    "choices": [
+      "welcome",
+      "exclude from a group",
+      "punish physically",
+      "deceive"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Ostracize means to banish or exclude someone from a group or society. Welcome is its antonym. The trap 'punish physically' confuses social exclusion with corporal punishment."
+  },
+  {
+    "external_key": "WK-SN-B4-9",
+    "file": "b4",
+    "difficulty": 4,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(23w)",
+      "no-trap-named",
+      "length-tell(correct=37 vs 8)"
+    ],
+    "stem": "ASSIDUOUS most nearly means:",
+    "choices": [
+      "careless",
+      "showing careful and persistent effort",
+      "sociable",
+      "bold"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Assiduous means showing great care, effort, and persistence in doing something. It describes someone who works diligently and attentively. Careless is the antonym."
+  },
+  {
+    "external_key": "WK-SN-B4-10",
+    "file": "b4",
+    "difficulty": 4,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "PROSAIC most nearly means:",
+    "choices": [
+      "poetic",
+      "dull and unimaginative",
+      "precise",
+      "aggressive"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Prosaic means commonplace; lacking originality or imagination. It comes from prose (ordinary writing), as opposed to poetry. Poetic is essentially the antonym."
+  },
+  {
+    "external_key": "WK-SN-B4-11",
+    "file": "b4",
+    "difficulty": 4,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(30w)"
+    ],
+    "stem": "VENERATE most nearly means:",
+    "choices": [
+      "criticize",
+      "regard with deep respect",
+      "imitate",
+      "investigate"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Venerate means to regard with great respect and reverence, often for age or wisdom. Criticize is its antonym. Do not confuse with generate (to produce) \u2014 the spelling is different."
+  },
+  {
+    "external_key": "WK-SN-B4-12",
+    "file": "b4",
+    "difficulty": 5,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(27w)",
+      "no-trap-named"
+    ],
+    "stem": "ERSATZ most nearly means:",
+    "choices": [
+      "authentic",
+      "an inferior substitute",
+      "elaborate",
+      "traditional"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Ersatz means made or used as a substitute, typically an inferior one. From German, it was applied to wartime replacements for scarce goods. Authentic is the antonym."
+  },
+  {
+    "external_key": "WK-SN-B4-13",
+    "file": "b4",
+    "difficulty": 5,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(23w)"
+    ],
+    "stem": "FATUOUS most nearly means:",
+    "choices": [
+      "insightful",
+      "complacently stupid",
+      "cautious",
+      "withdrawn"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Fatuous means self-satisfied and pointlessly foolish; smugly stupid. Insightful is the antonym. Do not confuse fatuous with fatigued (tired) \u2014 they are unrelated."
+  },
+  {
+    "external_key": "WK-CTX-B4-1",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(25w)"
+    ],
+    "stem": "In the sentence 'The child was ELATED when she learned she had won the spelling bee,' the word ELATED most nearly means:",
+    "choices": [
+      "frightened",
+      "very happy",
+      "surprised",
+      "tired"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Elated means filled with joy and pride. Winning a competition clearly produces happiness, not fear. Surprised is tempting but does not capture the celebratory context."
+  },
+  {
+    "external_key": "WK-CTX-B4-2",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(26w)"
+    ],
+    "stem": "In the sentence 'The sun was SCORCHING, so we moved into the shade to cool down,' the word SCORCHING most nearly means:",
+    "choices": [
+      "mild",
+      "extremely hot",
+      "cloudy",
+      "distant"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Scorching means burning hot. The action of moving into shade to cool down is the direct clue that the heat was extreme, not mild or cloudy."
+  },
+  {
+    "external_key": "WK-CTX-B4-4",
+    "file": "b4",
+    "difficulty": 2,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(31w)"
+    ],
+    "stem": "In the sentence 'The DILATORY contractor missed three deadlines, forcing the base commander to find a new vendor,' the word DILATORY most nearly means:",
+    "choices": [
+      "expensive",
+      "slow to act or chronically late",
+      "dishonest",
+      "inexperienced"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Dilatory means slow to act; tending to delay. Three missed deadlines is the direct clue for chronic lateness, not dishonesty or expense. Inexperienced might cause delays but is a different concept."
+  },
+  {
+    "external_key": "WK-CTX-B4-6",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(30w)"
+    ],
+    "stem": "In the sentence 'The recruit FLOUTED every regulation he disagreed with, earning himself extra duty each week,' the word FLOUTED most nearly means:",
+    "choices": [
+      "followed carefully",
+      "openly disregarded",
+      "misunderstood",
+      "reported"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Flout means to openly disregard a rule or convention. The penalty of extra duty each week confirms deliberate rule-breaking, not misunderstanding. Do not confuse flout with flaunt (to display ostentatiously)."
+  },
+  {
+    "external_key": "WK-CTX-B4-7",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(34w)",
+      "no-trap-named"
+    ],
+    "stem": "In the sentence 'The speaker's TRENCHANT analysis cut through the confusion and identified the problem within minutes,' the word TRENCHANT most nearly means:",
+    "choices": [
+      "lengthy and detailed",
+      "incisive and vigorous",
+      "calm and measured",
+      "unexpected"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Trenchant means vigorous and incisive in expression or style; cutting right to the point. 'Cut through the confusion' is the key metaphor in the passage, directly supporting the meaning of sharp and effective analysis."
+  },
+  {
+    "external_key": "WK-CTX-B4-8",
+    "file": "b4",
+    "difficulty": 4,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(32w)"
+    ],
+    "stem": "In the sentence 'Her SAGACIOUS decision to stockpile medical supplies before the hurricane proved correct when the storm knocked out supply lines for two weeks,' the word SAGACIOUS most nearly means:",
+    "choices": [
+      "lucky and fortunate",
+      "having keen practical wisdom",
+      "reckless and impulsive",
+      "conservative and reluctant"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Sagacious means having good judgment and foresight. The passage distinguishes this from luck by showing the decision was made before the storm \u2014 implying deliberate wisdom, not chance. Reckless is the opposite."
+  },
+  {
+    "external_key": "WK-CTX-B4-9",
+    "file": "b4",
+    "difficulty": 4,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "In the sentence 'The sergeant REPUDIATED the accusations against his unit, producing records that showed the team had followed every protocol,' the word REPUDIATED most nearly means:",
+    "choices": [
+      "quietly accepted",
+      "firmly rejected",
+      "investigated",
+      "summarized"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Repudiate means to refuse to accept or deny the truth of something. Producing records to disprove accusations is an act of firm rejection, not quiet acceptance. Investigated implies looking into, not countering, the claims."
+  },
+  {
+    "external_key": "WK-CTX-B4-10",
+    "file": "b4",
+    "difficulty": 4,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(33w)"
+    ],
+    "stem": "In the sentence 'Despite owning a popular restaurant, the chef lived FRUGALLY, driving an old car and rarely buying new clothes,' the word FRUGALLY most nearly means:",
+    "choices": [
+      "lavishly",
+      "in a thrifty manner",
+      "with great caution",
+      "in an isolated way"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Frugally means carefully spending as little money as possible. The examples \u2014 old car, few new clothes \u2014 confirm thrifty behavior. Lavishly is the antonym. 'With great caution' might describe driving, not lifestyle."
+  },
+  {
+    "external_key": "WK-CTX-B4-11",
+    "file": "b4",
+    "difficulty": 5,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "In the sentence 'The diplomat's LACONIC cable \u2014 three words where others would have written three pages \u2014 conveyed the mission's outcome without ambiguity,' the word LACONIC most nearly means:",
+    "choices": [
+      "cryptically coded",
+      "using very few words",
+      "overly detailed",
+      "formally worded"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Laconic means using very few words. 'Three words where others would have written three pages' is the direct numerical contrast establishing extreme brevity. Coded implies obscurity; laconic implies clarity through brevity."
+  },
+  {
+    "external_key": "WK-PFX-B4-1",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(28w)"
+    ],
+    "stem": "The prefix UN- means not. Based on this, UNHAPPY most nearly means:",
+    "choices": [
+      "very happy",
+      "not happy",
+      "somewhat happy",
+      "formerly happy"
+    ],
+    "correct_index": 1,
+    "current_explanation": "UN- is a negating prefix, so unhappy means not happy. This prefix works the same way in unfair, unclear, and unkind. 'Formerly happy' would require the prefix EX-."
+  },
+  {
+    "external_key": "WK-PFX-B4-2",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "The suffix -FUL means full of or having. Based on this, CAREFUL most nearly means:",
+    "choices": [
+      "without care",
+      "full of care and attention",
+      "able to be cared for",
+      "beyond care"
+    ],
+    "correct_index": 1,
+    "current_explanation": "-FUL adds the meaning 'full of' or 'characterized by.' Careful means full of care; similarly, hopeful means full of hope and peaceful means full of peace."
+  },
+  {
+    "external_key": "WK-PFX-B4-3",
+    "file": "b4",
+    "difficulty": 2,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "The prefix PRE- means before. Based on this, PRECAUTION most nearly means:",
+    "choices": [
+      "an action taken after the fact",
+      "an action taken in advance to prevent harm",
+      "a warning given loudly",
+      "a rule set by authorities"
+    ],
+    "correct_index": 1,
+    "current_explanation": "PRE- means before; a precaution is an action taken beforehand to avoid danger. Compare: preview (see before), prevent (come before to stop), predict (say before). 'After the fact' would be POST-."
+  },
+  {
+    "external_key": "WK-PFX-B4-4",
+    "file": "b4",
+    "difficulty": 2,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(29w)",
+      "no-trap-named"
+    ],
+    "stem": "The suffix -LESS means without. Based on this, RECKLESS most nearly means:",
+    "choices": [
+      "very careful",
+      "without caution",
+      "full of energy",
+      "beyond control"
+    ],
+    "correct_index": 1,
+    "current_explanation": "-LESS means without, so reckless means without reck (thought or care). Similarly, careless means without care, and helpless means without help. 'Full of energy' misreads the suffix as -FUL."
+  },
+  {
+    "external_key": "WK-PFX-B4-5",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(30w)"
+    ],
+    "stem": "The prefix MIS- means wrongly or badly. The word MISCONSTRUE therefore most nearly means:",
+    "choices": [
+      "to build incorrectly",
+      "to interpret wrongly",
+      "to communicate clearly",
+      "to confuse deliberately"
+    ],
+    "correct_index": 1,
+    "current_explanation": "CONSTRUE means to interpret; MIS- means wrongly. Misconstrue means to interpret something incorrectly. 'Deliberately confuse' implies intent to deceive; misconstrue means the interpretation itself is simply wrong, not necessarily deceptive."
+  },
+  {
+    "external_key": "WK-PFX-B4-6",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "The prefix INTER- means between or among. Based on this, INTERLUDE most nearly means:",
+    "choices": [
+      "a final performance",
+      "a period between two events",
+      "an opening ceremony",
+      "a conflict between parties"
+    ],
+    "correct_index": 1,
+    "current_explanation": "INTER- means between; -LUDE comes from Latin ludere (to play). An interlude is a pause or event occurring between two others. Compare: international (between nations), intermission (pause between acts). A conflict would use INTER- differently (interchange/interfere)."
+  },
+  {
+    "external_key": "WK-PFX-B4-7",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(25w)",
+      "no-trap-named"
+    ],
+    "stem": "The suffix -MENT turns a verb into a noun indicating result or process. DEPLOYMENT therefore most nearly means:",
+    "choices": [
+      "the ability to deploy",
+      "the act or result of deploying",
+      "one who deploys",
+      "worthy of being deployed"
+    ],
+    "correct_index": 1,
+    "current_explanation": "-MENT creates nouns from verbs: deploy \u2192 deployment (act of deploying), manage \u2192 management (process of managing). -ER/-OR would indicate a person; -ABLE indicates capability."
+  },
+  {
+    "external_key": "WK-PFX-B4-8",
+    "file": "b4",
+    "difficulty": 4,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(32w)"
+    ],
+    "stem": "The prefix COUNTER- means against or in opposition to. Based on this, COUNTERINTUITIVE most nearly means:",
+    "choices": [
+      "supporting common sense",
+      "going against what one would naturally expect",
+      "requiring careful thought",
+      "relating to military counter-operations"
+    ],
+    "correct_index": 1,
+    "current_explanation": "COUNTER- means against; intuitive means based on instinct or natural feeling. Counterintuitive means contrary to what your instincts or common sense would suggest. 'Requiring careful thought' describes complexity, not opposition to expectation."
+  },
+  {
+    "external_key": "WK-ROOT-B4-1",
+    "file": "b4",
+    "difficulty": 1,
+    "topic_id": "wk.root-words",
+    "flags": [
+      "thin(29w)",
+      "no-trap-named"
+    ],
+    "stem": "The root VIS appears in VISIBLE, VISION, and VISUAL. VIS most nearly means:",
+    "choices": [
+      "to move",
+      "to see",
+      "to speak",
+      "to know"
+    ],
+    "correct_index": 1,
+    "current_explanation": "VIS comes from the Latin videre, to see. Visible means capable of being seen; vision is the ability to see; visual relates to sight. Compare with AUDI- (to hear)."
+  },
+  {
+    "external_key": "WK-ROOT-B4-3",
+    "file": "b4",
+    "difficulty": 2,
+    "topic_id": "wk.root-words",
+    "flags": [
+      "thin(30w)",
+      "no-trap-named"
+    ],
+    "stem": "The root CRED appears in CREDIBLE, CREDIT, and INCREDULOUS. CRED most nearly means:",
+    "choices": [
+      "to judge",
+      "to believe",
+      "to know",
+      "to value"
+    ],
+    "correct_index": 1,
+    "current_explanation": "CRED comes from the Latin credere, to believe. Credible means believable; credit means trust placed in someone; incredulous means unwilling to believe. The credo (creed) is a statement of beliefs."
+  },
+  {
+    "external_key": "WK-ROOT-B4-4",
+    "file": "b4",
+    "difficulty": 2,
+    "topic_id": "wk.root-words",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "The root DICT appears in DICTATE, PREDICT, and CONTRADICT. DICT most nearly means:",
+    "choices": [
+      "to write",
+      "to say or speak",
+      "to lead",
+      "to order by force"
+    ],
+    "correct_index": 1,
+    "current_explanation": "DICT comes from Latin dicere, to say. Dictate means to say aloud for someone to write; predict means to say beforehand; contradict means to say the opposite. To write is SCRIB/SCRIPT; to lead is DUC."
+  },
+  {
+    "external_key": "WK-ROOT-B4-5",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "wk.root-words",
+    "flags": [
+      "thin(34w)",
+      "no-trap-named"
+    ],
+    "stem": "The root BENE appears in BENEFIT, BENEFACTOR, and BENEVOLENT. BENE most nearly means:",
+    "choices": [
+      "great",
+      "good or well",
+      "many",
+      "before"
+    ],
+    "correct_index": 1,
+    "current_explanation": "BENE comes from Latin meaning good or well. A benefactor is one who does good for others; benefit is a good outcome; benevolent means well-wishing. PRE- means before; MULTI- means many; MAGN- means great."
+  },
+  {
+    "external_key": "WK-ROOT-B4-6",
+    "file": "b4",
+    "difficulty": 3,
+    "topic_id": "wk.root-words",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "The root GREG appears in GREGARIOUS, CONGREGATE, and SEGREGATE. GREG most nearly means:",
+    "choices": [
+      "to speak",
+      "a flock or group",
+      "a leader",
+      "a law"
+    ],
+    "correct_index": 1,
+    "current_explanation": "GREG comes from Latin grex/gregis, meaning flock or herd. Gregarious means fond of the group (sociable); congregate means to gather as a group; segregate means to separate from the group. A leader would be DUX; a law would be LEX."
+  },
+  {
+    "external_key": "WK-ROOT-B4-8",
+    "file": "b4",
+    "difficulty": 4,
+    "topic_id": "wk.root-words",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "The root TRACT appears in EXTRACT, CONTRACT, and RETRACT. TRACT most nearly means:",
+    "choices": [
+      "to push",
+      "to pull or draw",
+      "to hold",
+      "to cut"
+    ],
+    "correct_index": 1,
+    "current_explanation": "TRACT comes from Latin trahere, to pull or drag. Extract means to pull out; retract means to pull back; contract literally means to pull together (draw closer). Traction is the grip that allows pulling or movement."
+  },
+  {
+    "external_key": "WK-ROOT-B4-10",
+    "file": "b4",
+    "difficulty": 4,
+    "topic_id": "wk.root-words",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "The root VOC appears in INVOKE, VOCALIZE, and IRREVOCABLE. VOCA/VOC most nearly means:",
+    "choices": [
+      "to see",
+      "to feel",
+      "to call or voice",
+      "to rule"
+    ],
+    "correct_index": 2,
+    "current_explanation": "VOC comes from Latin vocare, to call. Invoke means to call upon; vocalize means to give voice to; irrevocable means unable to be called back (reversed). VIS means to see; SENT/SENS means to feel; REG/RECT means to rule."
+  },
+  {
+    "external_key": "WK-ROOT-B4-12",
+    "file": "b4",
+    "difficulty": 5,
+    "topic_id": "wk.root-words",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "The root PLAC appears in PLACATE, COMPLACENT, and IMPLACABLE. PLAC most nearly means:",
+    "choices": [
+      "to please or calm",
+      "to place or position",
+      "to promise",
+      "to fill"
+    ],
+    "correct_index": 0,
+    "current_explanation": "PLAC comes from Latin placare, to please or appease. Placate means to calm or appease; complacent means self-satisfied (pleased with oneself to excess); implacable means impossible to appease. 'Place' (Latin: ponere/positum) is a different root despite the visual similarity."
+  },
+  {
+    "external_key": "WK-B7-D5-2",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "wk.synonyms",
+    "flags": [
+      "thin(26w)"
+    ],
+    "stem": "INVETERATE most nearly means:",
+    "choices": [
+      "Recently reformed",
+      "Deeply experienced",
+      "Long-established and unlikely to change",
+      "Violently opposed"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Inveterate means having a habit or activity deeply embedded by long practice; firmly established. 'Deeply experienced' is tempting but misses the key meaning of habitual permanence."
+  },
+  {
+    "external_key": "WK-B7-D5-3",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "wk.context-clues",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "In the sentence 'The diplomat's ANODYNE speech avoided any statement that might offend either side, leaving the audience with nothing to applaud or protest,' the word ANODYNE most nearly means:",
+    "choices": [
+      "Highly persuasive",
+      "Inoffensive to the point of being dull",
+      "Deeply critical of both parties",
+      "Remarkably brief"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Anodyne means not likely to cause offense or controversy; bland or inoffensive. The context clue 'nothing to applaud or protest' confirms that the speech provoked neither agreement nor disagreement \u2014 it was deliberately dull."
+  },
+  {
+    "external_key": "WK-B7-D5-4",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "wk.prefixes-suffixes",
+    "flags": [
+      "thin(25w)",
+      "no-trap-named"
+    ],
+    "stem": "The word PUSILLANIMOUS contains the Latin root ANIM (spirit/soul) and the prefix PUSILL- (very small). PUSILLANIMOUS most nearly means:",
+    "choices": [
+      "Extremely generous of spirit",
+      "Showing a lack of courage; cowardly",
+      "Spiritually enlightened",
+      "Overly animated or energetic"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Pusillanimous literally means 'small-souled' \u2014 lacking courage or resolution; timid. The root ANIM (soul/spirit) combined with PUSILL- (tiny) points to a shrunken spirit, i.e., cowardice."
+  },
+  {
+    "external_key": "WK-B7-D5-5",
+    "file": "b7",
+    "difficulty": 5,
+    "topic_id": "wk.root-words",
+    "flags": [
+      "thin(31w)"
+    ],
+    "stem": "The root PATER (father) appears in PATERNALISTIC. A PATERNALISTIC policy is one that:",
+    "choices": [
+      "Grants full autonomy to individuals",
+      "Restricts freedom supposedly for people's own good, like a father deciding for a child",
+      "Applies equally to all family members",
+      "Traces authority through the maternal line"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Paternalistic describes authority that limits individual freedom in a way a father might control a child's choices \u2014 ostensibly for their benefit. It carries a connotation of over-control rather than equality."
+  }
+]

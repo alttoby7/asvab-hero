@@ -1,0 +1,211 @@
+[
+  {
+    "external_key": "WK-P3-SN-1",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "TENACITY most nearly means:",
+    "choices": ["weakness", "loudness", "honesty", "persistence"],
+    "correct_index": 3,
+    "explanation": "TENACITY is the quality of holding firmly to a goal or position despite difficulty, making 'persistence' the direct synonym. 'Weakness' is the antonym trap, since a tenacious person refuses to yield. 'Loudness' is a register-confusion trap that conflates forceful behavior with volume, but tenacity is about endurance, not noise level. 'Honesty' is an unrelated virtue word that test takers may pick because it sounds positive like tenacity, but truthfulness has no semantic overlap with gripping power. The Latin root TEN means hold, the same root in TENANT and RETAIN, which both involve holding on.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-SN-2",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "RESOLUTE most nearly means:",
+    "choices": ["doubtful", "determined", "delayed", "graceful"],
+    "correct_index": 1,
+    "explanation": "RESOLUTE describes someone firm in purpose and unwilling to be swayed, which matches 'determined' exactly. 'Doubtful' is the antonym trap, since a resolute person has already settled the question. 'Delayed' is a sound-alike trap that confuses RESOLUTE with words like SLOWED or RELUCTANT, but resolve speaks to firmness of will, not timing. 'Graceful' is a register-confusion trap that picks any generally positive trait, ignoring that grace describes movement or manner rather than commitment. RESOLUTE shares its root with RESOLVE and RESOLUTION, both of which name a firm decision.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-SN-3",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 4,
+    "stem": "ELOQUENT most nearly means:",
+    "choices": ["silent", "wealthy", "well-spoken", "elegant"],
+    "correct_index": 2,
+    "explanation": "ELOQUENT describes fluent, persuasive, and graceful use of language, which matches 'well-spoken.' 'Silent' is the antonym trap, since eloquence requires speaking, not refraining from it. 'Wealthy' is a sound-alike trap built on the shared opening sound with ELOQUENT, but money has no bearing on speech quality. 'Elegant' is the partial-overlap trap and the strongest distractor, since both words suggest refinement, but elegance describes style in dress, design, or movement, while eloquence applies specifically to verbal expression. The Latin LOQU means speak, the same root in LOQUACIOUS and SOLILOQUY.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-SN-4",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 4,
+    "stem": "INDIGNANT most nearly means:",
+    "choices": ["ashamed", "indifferent", "angry at injustice", "poverty-stricken"],
+    "correct_index": 2,
+    "explanation": "INDIGNANT means feeling anger triggered by something perceived as unfair or unworthy, so 'angry at injustice' is the precise synonym. 'Ashamed' is a register-confusion trap, since both are negative emotions, but shame is directed inward at oneself while indignation is directed outward at a wrong. 'Indifferent' is the antonym trap, since an indignant person is the opposite of unconcerned. 'Poverty-stricken' is a sound-alike trap that confuses INDIGNANT with INDIGENT, a near-homophone meaning poor. The Latin DIGNUS means worthy, and INDIGNANT literally describes a response to what one considers unworthy treatment.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-CTX-1",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "In the sentence 'The child was RELUCTANT to enter the dentist's office and had to be coaxed through the door,' the word RELUCTANT most nearly means:",
+    "choices": ["eager", "unwilling", "tired", "polite"],
+    "correct_index": 1,
+    "explanation": "The evidence is that the child had to be coaxed through the door, meaning persuasion was required to overcome resistance. That pins the meaning to 'unwilling.' 'Eager' is the antonym trap, since an eager child would have walked in without coaxing. 'Tired' is a register-confusion trap that substitutes one negative state for another, but fatigue would not specifically require coaxing through a doorway, it would lead to slow movement everywhere. 'Polite' is unsupported by the sentence, since the child's resistance is the opposite of cooperative manners. Only 'unwilling' fits a person who must be persuaded to act.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-CTX-2",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'After a year of exotic travel, returning to her office cubicle and weekly paperwork felt utterly MUNDANE,' the word MUNDANE most nearly means:",
+    "choices": ["ordinary", "exciting", "foreign", "luxurious"],
+    "correct_index": 0,
+    "explanation": "The contrast pins the meaning. Exotic travel is set against the office cubicle and weekly paperwork, framing the second as the dull opposite of the first. That matches 'ordinary.' 'Exciting' is the antonym trap and describes the travel rather than the return. 'Foreign' is a register-confusion trap that misreads the contrast, applying the exotic side of the comparison to the wrong half of the sentence. 'Luxurious' is also drawn from the travel half and contradicts the cubicle setting. Only 'ordinary' fits the deflating return to routine work that the sentence describes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-CTX-3",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'Every expense report was placed under intense SCRUTINY by the auditor, who questioned every receipt and flagged inconsistencies,' the word SCRUTINY most nearly means:",
+    "choices": ["rapid approval", "open praise", "casual review", "close examination"],
+    "correct_index": 3,
+    "explanation": "The evidence is that the auditor questioned every receipt and flagged inconsistencies, which describes detailed inspection rather than a glance. That matches 'close examination.' 'Rapid approval' is the antonym trap, since questioning every line item is the opposite of waving items through. 'Open praise' contradicts the auditor's challenging stance and applies a positive register to a critical activity. 'Casual review' is a partial-overlap trap, since both involve looking at documents, but casual review skips the line-by-line attention the sentence describes. SCRUTINY shares its root with SCRUTINIZE and always implies careful, searching attention.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-CTX-4",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 4,
+    "stem": "In the sentence 'The opposing army was so FORMIDABLE that the general considered surrender before the first arrow was fired,' the word FORMIDABLE most nearly means:",
+    "choices": ["friendly", "impressive and frightening", "small", "disorganized"],
+    "correct_index": 1,
+    "explanation": "The evidence is that the general considered surrender before fighting began, which means the enemy inspired both awe and fear. That matches 'impressive and frightening.' 'Friendly' is the antonym trap, since no general surrenders to friendly forces. 'Small' contradicts the strength implied by causing a general to capitulate preemptively. 'Disorganized' is also an antonym trap, since a disorganized army would invite attack rather than prevent it. FORMIDABLE comes from Latin FORMIDARE, to dread, and applies to anything so powerful or daunting that it triggers respect mixed with fear.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-CTX-5",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 5,
+    "stem": "In the sentence 'His IMPETUOUS decision to quit his job without notice or savings left his family scrambling for rent money,' the word IMPETUOUS most nearly means:",
+    "choices": ["careful", "rash and impulsive", "respectful", "delayed"],
+    "correct_index": 1,
+    "explanation": "The evidence is quitting without notice or savings, which signals action taken without forethought. That matches 'rash and impulsive.' 'Careful' is the antonym trap, since a careful person would have given notice and saved first. 'Respectful' contradicts the abrupt exit, which leaves an employer and family stranded. 'Delayed' is a sound-alike trap built on IMPED- in IMPEDE rather than IMPET- in IMPETUOUS, two different Latin roots that students often confuse. IMPETUOUS shares its root with IMPETUS and means driven by sudden force or urge rather than by plan.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-PFX-1",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The prefix SUB- means under or below. Based on this, SUBMARINE most nearly means:",
+    "choices": ["a ship above water", "a vessel that operates under water", "a small boat", "a foreign navy"],
+    "correct_index": 1,
+    "explanation": "SUBMARINE pairs SUB- (under, below) with MARINE (relating to the sea). The same prefix carries through SUBWAY, SUBTERRANEAN, and SUBMERGE, each describing something beneath. Choice A confuses SUB- with SUPER- or SUR-, prefixes meaning above. Choice C ignores the prefix entirely and assigns a size meaning that morphology does not support. Choice D supplies a foreign-policy meaning unrelated to either morpheme, a classic distractor that picks a word from the same general topic, in this case navies. A submarine is defined by its position under water, which is exactly what the prefix specifies.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-PFX-2",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The prefix ANTI- means against or opposite. Based on this, ANTISOCIAL most nearly means:",
+    "choices": ["loving company", "opposed to social interaction", "very popular", "ahead of fashion"],
+    "correct_index": 1,
+    "explanation": "ANTISOCIAL combines ANTI- (against, opposite) with SOCIAL (relating to society or company). The same prefix produces ANTIBIOTIC, ANTIDOTE, and ANTIFREEZE, each working against something. Choice A is the antonym trap and describes a sociable person, the exact opposite of the morphology. Choice C also reverses the prefix, since popularity implies enjoying company. Choice D confuses ANTI- with ANTE- (before), a one-letter difference that flips the meaning entirely, the same trap that confuses ANTEBELLUM (before war) with ANTIWAR (against war). An antisocial person actively avoids social contact.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-PFX-3",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The suffix -ABLE means capable of or fit for. Based on this, READABLE most nearly means:",
+    "choices": ["already read", "able to be read", "boring to read", "written by a reader"],
+    "correct_index": 1,
+    "explanation": "READABLE attaches -ABLE (capable of) to READ. The same suffix produces PORTABLE, EDIBLE, and AUDIBLE, each meaning capable of an action. Choice A confuses -ABLE with the past-tense morpheme -ED, an off-by-one morphology trap that swaps capability for completion. Choice C imports a value judgment that the suffix does not carry, since READABLE marks possibility, not quality. Choice D confuses -ABLE with the agentive -ER, which would name the person doing the reading. READABLE describes any text that can be read, whether it is well-written or not.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-PFX-4",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The prefix SUPER- means above or beyond. Based on this, SUPERVISE most nearly means:",
+    "choices": ["to work under another", "to repeat a task", "to remove from duty", "to look at from above"],
+    "correct_index": 3,
+    "explanation": "SUPERVISE pairs SUPER- (above, beyond) with VIS- (to see), the Latin root in VISION and VISIBLE. The combination produces oversight from a higher position. The same prefix carries through SUPERSCRIPT, SUPERIOR, and SUPERVISORY. Choice A is the antonym trap and would require SUB- rather than SUPER-, the exact prefix reversal that distinguishes a supervisor from a subordinate. Choice B confuses SUPER- with RE- (again), two unrelated prefixes. Choice C imports a disciplinary meaning unsupported by either morpheme. A supervisor is one who watches from above the work being performed.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-PFX-5",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The prefix BENE- means good or well. The word BENEFACTOR therefore is best defined as:",
+    "choices": ["one who does evil", "one who does good things, especially by giving", "one who makes mistakes", "one who refuses help"],
+    "correct_index": 1,
+    "explanation": "BENEFACTOR joins BENE- (good, well) with FAC- (to do, make), the Latin root in FACTORY and MANUFACTURE. The same prefix carries through BENEFIT, BENEVOLENT, and BENEDICTION. Choice A is the antonym trap and supplies the meaning of MAL- (bad), the prefix that produces MALEFACTOR, the exact mirror image of BENEFACTOR. Choice C confuses BENE- with MIS- or ERR-, prefixes for error rather than goodness. Choice D contradicts both morphemes, since a benefactor by definition gives rather than withholds. A benefactor is most often a person whose financial gifts do good for an institution or individual.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-ROOT-1",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The root PORT appears in TRANSPORT, EXPORT, and PORTABLE. The root PORT most nearly means:",
+    "choices": ["to see", "to carry", "to break", "to write"],
+    "correct_index": 1,
+    "explanation": "PORT comes from Latin PORTARE, meaning to carry. TRANSPORT carries something across, EXPORT carries it out of a country, and PORTABLE describes anything able to be carried. The same root produces IMPORT, REPORT (carry information back), and PORTER (one who carries luggage). 'To see' belongs to VID/VIS as in VISION and EVIDENCE, a separate Latin root. 'To break' belongs to FRACT/FRAG as in FRACTURE and FRAGMENT. 'To write' belongs to SCRIB/SCRIPT as in SCRIBE and DESCRIPTION. Only carrying explains the common thread across all three given words.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-ROOT-2",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root SCRIB/SCRIPT appears in SCRIBE, MANUSCRIPT, and PRESCRIPTION. This root most nearly means:",
+    "choices": ["to write", "to read", "to speak", "to remember"],
+    "correct_index": 0,
+    "explanation": "SCRIB/SCRIPT comes from Latin SCRIBERE, meaning to write. A SCRIBE writes by trade, a MANUSCRIPT is written by hand (MANU = hand), and a PRESCRIPTION is what a doctor writes before treatment. The root also produces DESCRIBE, INSCRIPTION, and TRANSCRIPT. 'To read' belongs to LEG/LECT, the root in LEGIBLE and LECTURE, often confused with SCRIBE because both involve text on a page. 'To speak' belongs to DICT or LOQU, separate roots. 'To remember' belongs to MEM, the root in MEMORY and COMMEMORATE. The shared writing action is the only meaning consistent with all three given examples.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-ROOT-3",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 4,
+    "stem": "The root CRED appears in CREDIBLE, INCREDIBLE, and CREDENTIAL. The root CRED most nearly means:",
+    "choices": ["to count", "to praise", "to believe or trust", "to fear"],
+    "correct_index": 2,
+    "explanation": "CRED comes from Latin CREDERE, meaning to believe or trust. CREDIBLE describes something worthy of belief, INCREDIBLE means literally not believable, and CREDENTIALS are documents that establish trust in a person's qualifications. The root also produces CREDIT (trust extended financially), CREED (statement of belief), and INCREDULOUS (unwilling to believe). 'To count' belongs to NUMER, the root in NUMERAL and ENUMERATE, often confused because both relate to financial language. 'To praise' belongs to LAUD as in LAUDABLE. 'To fear' belongs to TIM or PHOB, the roots in TIMID and PHOBIA. Only trust unites all three given examples.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-ROOT-4",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 4,
+    "stem": "The root SPEC/SPECT appears in INSPECT, SPECTATOR, and PERSPECTIVE. This root most nearly means:",
+    "choices": ["to hear", "to look or see", "to choose", "to hide"],
+    "correct_index": 1,
+    "explanation": "SPEC/SPECT comes from Latin SPECERE, meaning to look or see. To INSPECT is to look into, a SPECTATOR is one who looks at an event, and PERSPECTIVE is a way of looking through a situation. The root also produces RESPECT (look back at with regard), SUSPECT (look from below), and SPECTACLES (lenses for seeing). 'To hear' belongs to AUD, the root in AUDIBLE and AUDIENCE, sometimes confused since both senses receive information. 'To choose' belongs to LECT/LEG as in SELECT and ELECT. 'To hide' belongs to CRYPT or LATEN, the roots in CRYPTIC and LATENT. Looking is the thread.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-P3-ROOT-5",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 5,
+    "stem": "The root DUC/DUCT appears in CONDUCT, INDUCT, ABDUCT, and PRODUCE. This root most nearly means:",
+    "choices": ["to lead or bring", "to argue", "to finish", "to follow"],
+    "correct_index": 0,
+    "explanation": "DUC/DUCT comes from Latin DUCERE, meaning to lead or bring. To CONDUCT is to lead together (an orchestra or current), to INDUCT is to lead into membership, to ABDUCT is to lead away by force, and to PRODUCE is to bring forth. The root also yields DUKE (leader), AQUEDUCT (water-leader), EDUCATE (lead out of ignorance), and DEDUCE (lead from premises). 'To argue' belongs to LITIG or DISPUT, the roots in LITIGATE and DISPUTE. 'To finish' belongs to FIN as in FINAL and FINITE. 'To follow' is the antonym trap, since leaders go first while followers come after. Leading explains every example.",
+    "status": "draft"
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "external_key": "WK-ROOT-NEW-1",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The root TELE appears in TELEPHONE, TELESCOPE, and TELEVISION. The root TELE most nearly means:",
+    "choices": ["far or distant", "sound", "picture or image", "machine"],
+    "correct_index": 0,
+    "explanation": "TELE comes from Greek tele, meaning far or distant. Cognates include telephone (distant sound), telescope (viewing what is distant), television (distant viewing), telegraph (writing at a distance), and teleport (carry across distance). 'Sound' is a trap because telephone involves sound, but PHON carries that meaning, not TELE. 'Picture or image' confuses the function of television with the root, since VIS supplies the image meaning. 'Machine' is a generic association with electronics, but TELE never refers to a device, only to distance.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-2",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The root AUTO appears in AUTOMATIC, AUTOBIOGRAPHY, and AUTONOMY. The root AUTO most nearly means:",
+    "choices": ["machine", "self", "car", "moving"],
+    "correct_index": 1,
+    "explanation": "AUTO comes from Greek autos, meaning self. Cognates include autobiography (self-written life story), autonomy (self-rule), automatic (acting on its own without outside help), autograph (a self-written signature), and autocrat (a self-appointed ruler). 'Machine' confuses AUTO with the English word automation, but the underlying root means self, not the device performing the action. 'Car' is the most common English association with auto, yet automobile literally means self-moving, where AUTO still means self. 'Moving' belongs to MOT or MOB (motor, mobile), separate Latin roots unrelated to AUTO.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-3",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The root ZOO appears in ZOOLOGY, ZODIAC, and PROTOZOA. The root ZOO most nearly means:",
+    "choices": ["cage or enclosure", "animal or living thing", "wild", "garden"],
+    "correct_index": 1,
+    "explanation": "ZOO comes from Greek zoion, meaning animal or living being. Cognates include zoology (study of animals), protozoa (first-form animals, single-celled), zodiac (originally a circle of animal-shaped constellations), and zoophyte (an animal-plant hybrid such as coral). 'Cage or enclosure' reflects the modern English word zoo as a place, but the root itself names the creatures inside, not the building around them. 'Wild' is a related-but-distinct concept supplied by FER (feral, ferocious), not ZOO. 'Garden' belongs to HORT (horticulture, horticulturist), unrelated to ZOO.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-4",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "Based on the root THERM (meaning heat), the word THERMAL most likely means:",
+    "choices": ["relating to cold", "relating to heat", "relating to weather", "relating to light"],
+    "correct_index": 1,
+    "explanation": "THERM comes from Greek therme, meaning heat. Cognates include thermal (relating to heat), thermometer (heat measurer), thermos (heat-retaining container), hypothermia (low body heat), and geothermal (heat from the earth). 'Relating to cold' is the opposite, the trap students fall into because hypothermia involves being cold, though the root itself names heat. 'Relating to weather' confuses THERM with general climate words, but weather belongs to METEOR (meteorology). 'Relating to light' belongs to PHOT (photograph) or LUM, separate roots.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-5",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The root MAR appears in MARINE, MARITIME, and SUBMARINE. The root MAR most nearly means:",
+    "choices": ["sand or shore", "sea", "boat", "salt"],
+    "correct_index": 1,
+    "explanation": "MAR comes from Latin mare, meaning sea. Cognates include marine (relating to the sea), maritime (concerning sea navigation), submarine (under the sea), mariner (a sailor), and aquamarine (sea-water blue). 'Sand or shore' is a related-but-distinct concept supplied by LITTOR (littoral) or AREN (arena, originally sand), not MAR. 'Boat' confuses the vessel with the body of water, since submarines are boats but MAR points to the sea itself. 'Salt' belongs to SAL (saline, salary), a different Latin root, even though seas are salty.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-6",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The root LUM appears in ILLUMINATE, LUMINOUS, and LUMINARY. The root LUM most nearly means:",
+    "choices": ["heat", "light", "color", "shadow"],
+    "correct_index": 1,
+    "explanation": "LUM comes from Latin lumen, meaning light. Cognates include illuminate (to light up), luminous (giving off light), luminary (a shining person or body), lumen (a unit of light), and translucent (light passing through). 'Heat' is a related-but-distinct concept because hot objects often glow, yet heat belongs to THERM or CALOR, not LUM. 'Color' belongs to CHROM (chromatic), often confused because colored objects reflect light. 'Shadow' is the opposite of LUM and belongs to UMBRA (umbrella, penumbra), the Latin root for shade.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-7",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The root HELIO appears in HELIOCENTRIC, HELIOTROPE, and HELIUM. The root HELIO most nearly means:",
+    "choices": ["heat", "sun", "sky", "star"],
+    "correct_index": 1,
+    "explanation": "HELIO comes from Greek helios, meaning sun. Cognates include heliocentric (sun-centered), heliotrope (a plant that turns toward the sun), helium (the element first detected in sunlight), and perihelion (closest point to the sun in an orbit). 'Heat' is a related-but-distinct concept because the sun gives heat, but heat itself is THERM. 'Sky' belongs to CEL (celestial) or URAN (Uranus), separate roots. 'Star' belongs to ASTER or STELL (astronomy, stellar), commonly confused with HELIO because both involve space, yet HELIO names only our sun.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-8",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "MONOTONE shares its root with MONOPOLY and MONARCH. The shared root means:",
+    "choices": ["money", "one or single", "voice", "rule"],
+    "correct_index": 1,
+    "explanation": "MONO comes from Greek monos, meaning one or single. Cognates include monotone (one tone), monopoly (one seller), monarch (one ruler), monologue (one person speaking), and monogamy (one partner). 'Money' confuses MONO with monetary words, which actually use MONET (Latin moneta), an unrelated root. 'Voice' is a trap because monotone involves voice, yet the voice meaning belongs to VOC, while MONO contributes only the one. 'Rule' is a related-but-distinct concept supplied by ARCH (monarch, anarchy), which is the second half of monarch, not MONO.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-9",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root AMBI appears in AMBIDEXTROUS, AMBIGUOUS, and AMBIVALENT. The root AMBI most nearly means:",
+    "choices": ["around", "both", "uncertain", "skilled"],
+    "correct_index": 1,
+    "explanation": "AMBI comes from Latin ambi, meaning both or on both sides. Cognates include ambidextrous (using both hands), ambiguous (having both meanings), ambivalent (having both feelings), and amphibian (living in both water and on land, from the Greek cognate amphi). 'Around' belongs to CIRCUM (circumference) or PERI (perimeter), often confused because ambient sound surrounds you. 'Uncertain' describes the result of ambiguity, not the root itself. 'Skilled' is the common-cognate trap from ambidextrous, but AMBI supplies both, while DEXTER supplies the skilled or right-handed meaning.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-10",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root MAGN appears in MAGNIFY, MAGNANIMOUS, and MAGNITUDE. The root MAGN most nearly means:",
+    "choices": ["strong", "great or large", "many", "powerful attraction"],
+    "correct_index": 1,
+    "explanation": "MAGN comes from Latin magnus, meaning great or large. Cognates include magnify (make larger), magnitude (greatness in size), magnanimous (great-souled, generous), magnificent (great in deed), and magnate (a great person in business). 'Strong' is a related-but-distinct concept supplied by FORT (fortify) or ROBUST, not MAGN. 'Many' belongs to MULTI or POLY, often confused with great because both suggest abundance. 'Powerful attraction' is the common-cognate trap from magnet, an unrelated word borrowed from a place name (Magnesia), not the size root.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-11",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root MIT/MISS appears in TRANSMIT, EMIT, MISSILE, and DISMISS. This root most nearly means:",
+    "choices": ["to send", "to receive", "to throw", "to allow"],
+    "correct_index": 0,
+    "explanation": "MIT/MISS comes from Latin mittere, meaning to send. Cognates include transmit (send across), emit (send out), missile (something sent), dismiss (send away), and submit (send under, yield). 'To receive' is the opposite and belongs to CIP/CEPT (receive, accept), commonly confused because messages must be both sent and received. 'To throw' belongs to JECT (eject, reject), a related-but-distinct action since throwing and sending overlap. 'To allow' is the common-cognate trap from permit and admit, where the English meaning has drifted, while the underlying root still means send.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-12",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root JUR/JUS appears in JURY, JUSTICE, PERJURY, and JURISDICTION. This root most nearly means:",
+    "choices": ["law or oath", "judge", "court", "punishment"],
+    "correct_index": 0,
+    "explanation": "JUR/JUS comes from Latin jus, meaning law, right, or sworn oath. Cognates include jury (a sworn body), justice (lawful rightness), perjury (false oath), jurisdiction (the speaking of law), and jurisprudence (the study of law). 'Judge' belongs to JUDIC (judicial, adjudicate), a related-but-distinct root for the person, not the law itself. 'Court' is a related-but-distinct concept supplied by CUR (curia, courthouse), where law is applied. 'Punishment' belongs to PEN or PUN (penalty, punitive), the consequence of breaking law, not law itself.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-13",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 4,
+    "stem": "The root VOR appears in CARNIVORE, HERBIVORE, OMNIVORE, and VORACIOUS. This root most nearly means:",
+    "choices": ["to grow", "to devour or eat greedily", "to hunt", "to feed"],
+    "correct_index": 1,
+    "explanation": "VOR comes from Latin vorare, meaning to devour or swallow whole. Cognates include carnivore (meat-devourer), herbivore (plant-devourer), omnivore (all-devourer), voracious (greedy in appetite), and devour itself. 'To grow' belongs to CRESC (crescendo, increase), an unrelated concept. 'To hunt' is a related-but-distinct action supplied by VEN (venatic) or PRED (predator), since hunting precedes devouring. 'To feed' is the gentler common-cognate trap, since carnivores do feed, yet VOR specifically carries the violent, greedy swallowing, not ordinary eating, which is ED or NUTR.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-14",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 4,
+    "stem": "The root NOM/NOMEN appears in NOMINATE, NOMENCLATURE, and IGNOMINIOUS. This root most nearly means:",
+    "choices": ["number", "name", "law", "honor"],
+    "correct_index": 1,
+    "explanation": "NOM/NOMEN comes from Latin nomen, meaning name. Cognates include nominate (to put a name forward), nomenclature (a system of names), ignominious (without good name, shameful), pseudonym (false name), and renown (re-named, famous). 'Number' is the common-cognate trap because numerator and enumerate share the NUM root, a different Latin word that students confuse with NOM. 'Law' belongs to LEG or JUR, separate roots. 'Honor' is the opposite of ignominious and is supplied by HONOR or DIGNI (dignity), related-but-distinct concepts shaped by but not equal to a good name.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-15",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 5,
+    "stem": "The root FID appears in FIDELITY, CONFIDE, PERFIDY, and BONA FIDE. The root FID most nearly means:",
+    "choices": ["faith or trust", "loyalty", "secret", "promise"],
+    "correct_index": 0,
+    "explanation": "FID comes from Latin fides, meaning faith or trust. Cognates include fidelity (faithfulness), confide (to trust with a secret), perfidy (betrayal of trust), bona fide (in good faith), and infidel (one without faith). 'Loyalty' is the close common-cognate trap since fidelity often translates as loyalty, yet loyalty itself comes from LEG (lawful), while FID carries the broader trust meaning. 'Secret' confuses the act of confiding with the root, but secret belongs to SECR (secret, secrete). 'Promise' is a related-but-distinct concept supplied by PROMIS or VOW, the result of trust rather than its root.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-16",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 5,
+    "stem": "The root JECT appears in EJECT, INJECT, PROJECT, and DEJECTED. The root JECT most nearly means:",
+    "choices": ["to send", "to throw", "to push", "to fall"],
+    "correct_index": 1,
+    "explanation": "JECT comes from Latin jacere, meaning to throw or hurl. Cognates include eject (throw out), inject (throw in), project (throw forward), dejected (thrown down, low in spirit), and trajectory (the path of a thrown object). 'To send' belongs to MIT/MISS (transmit, missile), a related-but-distinct action commonly confused because both move things outward, yet sending implies a destination while throwing does not. 'To push' belongs to PEL/PULS (propel, expulsion), the contact-force root. 'To fall' is the opposite direction, supplied by CAD/CAS (cascade, casualty), often confused with dejected because both involve downward motion.",
+    "status": "draft"
+  }
+]

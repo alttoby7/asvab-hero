@@ -1,0 +1,320 @@
+[
+  {
+    "external_key": "MC-1",
+    "new_explanation": "Lever balance requires equal torques on both sides of the fulcrum: W1 x D1 = W2 x D2. Plug in: 10 lb x 6 ft = 15 lb x D2, so 60 = 15 x D2, and D2 = 4 feet. Choice A (2 feet) divides 6 by 3 instead of using the torque equation. Choice C (6 feet) keeps the same distance and ignores that the heavier weight needs a shorter arm. Choice D (9 feet) puts the heavier weight farther out, which would unbalance the lever further since 15 lb x 9 ft = 135 lb-ft, more than double the 60 lb-ft on the other side.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-2",
+    "new_explanation": "Meshing gears conserve linear tooth speed, so RPM is inversely proportional to tooth count: RPM_large = RPM_small x (teeth_small / teeth_large) = 200 x (10/40) = 50 RPM. Choice A (25 RPM) divides by 8 instead of 4, doubling the reduction. Choice C (100 RPM) only halves the speed, applying a 2:1 ratio instead of the actual 4:1. Choice D (800 RPM) inverts the formula and multiplies 200 by 4, treating the large gear as the faster one when in fact the larger gear always turns slower than the smaller one it meshes with.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-3",
+    "new_explanation": "Newton's Second Law: if an object does not accelerate, the net force is zero. The crate is stationary, so static friction adjusts to exactly cancel the applied push. Friction = 50 pounds, opposite to the push. Choice A (0 pounds) ignores that something must be canceling the 50-pound push. Choice C (150 pounds) confuses friction with the difference between weight and applied force. Choice D (200 pounds) uses the full weight as the friction force, but weight acts vertically and is canceled by the normal force, not by horizontal friction. Static friction only equals what is needed to prevent motion, up to its maximum.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-4",
+    "new_explanation": "Mechanical advantage of a wheel-and-axle equals the wheel radius divided by the axle radius: MA = 12 / 3 = 4. The effort applied at the wheel's rim travels a larger circle, while the axle moves a smaller circle with greater force. Choice A (2) halves the correct ratio, possibly confusing radius with diameter on only one side. Choice B (3) uses the axle radius alone as the answer. Choice D (6) appears to add the radii (12 + 3) and halve them, or otherwise mix dimensions. Only the radius ratio gives the correct mechanical advantage.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-5",
+    "new_explanation": "A fixed pulley has only one rope segment supporting the load, so its mechanical advantage equals 1. Its only function is to change the direction of the applied force, not its magnitude. Choice A (reduces force by half) describes a single movable pulley, which has MA = 2. Choice B (multiplies by rope segments) describes a block-and-tackle with multiple supporting strands. Choice D (eliminates gravity) is physically impossible; pulleys redistribute or redirect force but never cancel weight. Only choice C correctly identifies that the load still requires a pulling force equal to its weight.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-6",
+    "new_explanation": "Pressure equals force divided by contact area: P = F / A. With weight held constant, shrinking the area concentrates the same force onto fewer square inches and raises pressure. Choice A (tilting at 45 degrees) actually reduces the normal force on the table because part of the weight vector shifts off-axis, lowering pressure. Choice B (increasing surface area) spreads force over more area and decreases pressure, the opposite of what is asked. Choice D (moving the block) changes location only; both area and weight stay the same, so pressure is unchanged. Only reducing the contact face increases pressure.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-7",
+    "new_explanation": "Pressure equals force divided by area: P = F / A = 10 lb / 2 in^2 = 5 psi. Pascal's principle states this pressure is transmitted equally to every part of the enclosed fluid. Choice A (2 psi) uses the area as the answer directly, ignoring the force. Choice C (12 psi) adds the force and area (10 + 2), which mixes incompatible units. Choice D (20 psi) multiplies force by area (10 x 2), inverting the formula. The pressure-versus-force distinction matters: pressure is what the fluid carries; force is what each piston exerts, and the two are connected by piston area.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-8",
+    "new_explanation": "Projectile motion describes any object launched with a horizontal velocity that is then acted on only by gravity. The horizontal speed stays constant while vertical speed grows under g, producing a parabolic path. Choice A (circular motion) requires a centripetal force pulling toward a center point, not a constant downward gravitational pull. Choice B (simple harmonic motion) describes oscillation about an equilibrium, like a pendulum or spring, not a one-way arc. Choice D (linear motion) requires a straight-line path, but the ball curves downward as it leaves the table, ruling out a straight trajectory.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-9",
+    "new_explanation": "Mechanical advantage of an inclined plane equals ramp length divided by ramp height: MA = L / h. Increasing L while keeping h fixed makes the ratio larger, so MA goes up and the required effort force goes down. Choice A (increase effort) reverses the trade-off; a longer ramp lowers effort, not raises it. Choice B (decrease MA) inverts the formula. Choice D (no effect) ignores that MA depends explicitly on the L/h ratio. Work in equals work out: a longer ramp spreads the same lifting work over more distance, so the force at each point drops.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-IPH-1",
+    "new_explanation": "Mechanical advantage of an inclined plane equals length divided by height: MA = 15 / 5 = 3. Effort = Load / MA = 300 / 3 = 100 pounds. Choice A (60 pounds) corresponds to an MA of 5, which would require a 25-foot ramp at this height. Choice C (150 pounds) is half the load, treating the ramp like a single movable pulley. Choice D (300 pounds) ignores the ramp entirely and just lists the load weight, which is what would be required to lift the crate straight up with no machine helping.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-IPH-2",
+    "new_explanation": "Pascal's principle gives F1/A1 = F2/A2, so F2 = F1 x (A2/A1) = 50 x (10/2) = 50 x 5 = 250 pounds. Choice A (10 pounds) divides force by area ratio instead of multiplying, treating hydraulics as if the large piston reduced force. Choice B (100 pounds) doubles the input, applying only the bare 2:1 ratio between pistons rather than the full 5:1 area ratio. Choice D (500 pounds) doubles the correct answer by mishandling the area ratio (using 10 x 1 instead of 10 / 2). The area ratio, not piston diameter or simple multiples, sets force multiplication.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-IPH-3",
+    "new_explanation": "A block-and-tackle's mechanical advantage equals the number of rope segments directly supporting the load. With 4 supporting strands, MA = 4, so the maximum load = effort x MA = 75 x 4 = 300 pounds. Choice A (75 pounds) ignores the pulley advantage entirely, treating the system like a single fixed pulley. Choice B (150 pounds) counts only two supporting strands, like a single movable pulley. Choice C (225 pounds) uses an MA of 3, possibly miscounting rope segments. Each supporting strand splits the load weight evenly, so doubling strands doubles the lift capacity for the same pull.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-IPH-4",
+    "new_explanation": "Hydraulic MA = output area / input area = 20 / 4 = 5. Input force = Load / MA = 1,000 / 5 = 200 pounds. Choice A (50 pounds) corresponds to MA = 20, which would require comparing the output area to a 1-square-inch input. Choice C (400 pounds) cuts the load by 2.5 instead of 5, perhaps using diameter ratio if the pistons were taken as round, but areas are given directly. Choice D (5,000 pounds) multiplies the load by 5 instead of dividing, inverting Pascal's principle. The input piston always moves with less force than the output when areas are larger downstream.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-IPH-6",
+    "new_explanation": "Compare mechanical advantages, ignoring friction. Fixed pulley: MA = 1, effort = 400 / 1 = 400 lb. 18-foot ramp lifting 6 feet: MA = 18 / 6 = 3, effort = 400 / 3 = 133.3 lb. Hydraulic 5:1: MA = 5, effort = 400 / 5 = 80 lb. The hydraulic jack wins with the highest MA and the smallest required input force. Choice A (fixed pulley) only redirects force and gives no mechanical advantage. Choice B (ramp) helps but at MA = 3 still requires more than 130 pounds. Choice D (all identical) is wrong because each machine has a different MA.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-MOT-1",
+    "new_explanation": "Conservation of momentum: total momentum before equals total momentum after. Before: p = (5 kg)(6 m/s) + (5 kg)(0) = 30 kg m/s. After: first ball is at rest, so all 30 kg m/s must be carried by the second ball: 5 x v = 30, so v = 6 m/s. Choice A (0 m/s) violates conservation; momentum cannot vanish. Choice B (3 m/s) halves the answer, perhaps splitting the momentum across both balls. Choice D (12 m/s) doubles the answer, possibly adding velocities instead of conserving momentum. Equal masses in a head-on elastic-style stop produce a clean velocity transfer.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-MOT-2",
+    "new_explanation": "Under free fall starting from rest, velocity equals g times time: v = g x t = 9.8 m/s^2 x 3 s = 29.4 m/s. Choice A (9.8 m/s) is the velocity after only 1 second, ignoring the 3-second duration. Choice B (19.6 m/s) is the velocity after 2 seconds, off by one second. Choice D (44.1 m/s) uses the distance formula d = 0.5 x g x t^2 (which gives 44.1 m) and mislabels it as velocity. Velocity and distance under constant acceleration are different quantities: velocity grows linearly with time, while distance grows with the square of time.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-MOT-3",
+    "new_explanation": "Newton's Second Law: a = F / m = 20 N / 4 kg = 5 m/s^2. Choice A (0.2 m/s^2) inverts the formula and divides mass by force (4 / 20). Choice C (16 m/s^2) subtracts mass from force (20 - 4), mixing incompatible units. Choice D (80 m/s^2) multiplies force by mass (20 x 4) instead of dividing, which would give force units squared and is dimensionally invalid. Acceleration scales directly with force and inversely with mass, so heavier objects accelerate less under the same force.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-MOT-4",
+    "new_explanation": "In projectile motion the horizontal and vertical components are independent. Gravity acts only vertically, so without air resistance there is no force in the horizontal direction. With zero horizontal force, Newton's First Law keeps the horizontal velocity constant at 20 m/s for the entire fall. Choice A (increases) would require a forward-pointing force, which gravity is not. Choice B (decreases) would require a backward-pointing force, also absent without air resistance. Choice D (zero at peak height) confuses this with a vertically launched projectile; a horizontally launched ball has no peak, only a parabolic fall.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-MOT-5",
+    "new_explanation": "Impulse equals force times time and equals the change in momentum: F x t = m x delta-v. Same time and same mass, but double the force on puck A means double the impulse and therefore double the change in velocity. Starting from rest, the final velocity of A is twice that of B. Choice A (same velocity) ignores the force difference. Choice C (four times) squares the force ratio, which would apply to kinetic energy (KE proportional to v^2), not momentum. Choice D (half) inverts the relationship, treating more force as if it slowed the puck.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-MOT-6",
+    "new_explanation": "Momentum is a vector. Taking east as positive: p_total = (10)(+4) + (6)(-4) = 40 - 24 = 16 kg m/s east. After sticking, combined mass = 10 + 6 = 16 kg. Common velocity = 16 / 16 = 1 m/s east. Choice A (4 m/s east) ignores the westbound object's momentum entirely. Choice C (0 m/s) treats the speeds as equal-and-opposite without weighting by mass; only equal masses would fully cancel. Choice D (2.5 m/s west) assumes the lighter object wins the collision, but in an inelastic collision the direction follows the larger momentum, which is east.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-MOT-D2-1",
+    "new_explanation": "Newton's First Law states that an object continues in uniform motion unless a net external force acts on it. The frictionless-ice puck has no horizontal force acting on it, so its constant speed is a direct demonstration of inertia. Choice A (ball rolling downhill speeding up) shows acceleration caused by gravity along the incline, which is the Second Law in action. Choice C (rocket accelerating) involves a thrust force, again Second Law. Choice D (pendulum slowing) involves air resistance and gravity, both unbalanced forces, so motion changes; this illustrates a violation of the First Law's idealized condition, not its demonstration.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-LP-B6-1",
+    "new_explanation": "A third-class lever places the effort between the fulcrum and the load. Common examples include tweezers, fishing rods, and the human forearm lifting a weight. Choice A (first-class) places the fulcrum between effort and load, like a seesaw or pliers. Choice B (second-class) places the load between fulcrum and effort, like a wheelbarrow or bottle opener. Choice D (fourth-class) does not exist in mechanics; only three classes of lever are defined, distinguished by which of the three elements (fulcrum, load, effort) sits in the middle.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-LP-B6-2",
+    "new_explanation": "A lever balances when torques are equal: W1 x D1 = W2 x D2. With 20 pounds at equal distances, both torques match and the lever is balanced. Mechanical advantage = effort arm / load arm = 1, so no force is multiplied. Choice B (tipped left) and choice C (tipped right) ignore that the moments are equal. Choice D (MA of 2) requires the effort arm to be twice the load arm; here they are equal. A first-class lever with arms of equal length only redirects force, much like a fixed pulley.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-LP-B6-3",
+    "new_explanation": "Lever MA equals effort arm divided by load arm: MA = 4 / 1 = 4. This means 1 pound of effort can lift a 4-pound load (ignoring the lever's own weight). Choice A (1) would require equal arm lengths and corresponds to a balanced first-class lever with no mechanical advantage. Choice B (2) halves the correct ratio. Choice D (5) adds the arm lengths (4 + 1) instead of dividing them. Mechanical advantage is always a ratio of effort arm to load arm, never a sum.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-LP-B6-4",
+    "new_explanation": "A single movable pulley is attached to the load and supported by two rope segments. Each segment shares half the load, so the effort needed is half the load weight; MA = 2. The trade-off is that the effort end of the rope must travel twice as far as the load rises (conservation of work). Choice A (no change) describes a fixed pulley, not a movable one. Choice C (triples to 3) requires three supporting strands, which a single movable pulley does not have. Choice D (reverses direction with no force benefit) describes a fixed pulley's behavior, not a movable one.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-LP-B6-10",
+    "new_explanation": "Torque balance: Effort x Effort arm = Load x Load arm. So Effort x 4.5 = 150 x 1.5 = 225 lb-ft. Effort = 225 / 4.5 = 50 pounds. Choice B (75 pounds) is half the load weight, the answer for a single movable pulley, not a second-class lever with these arm lengths. Choice C (100 pounds) ignores the load arm and divides 150 by some other ratio. Choice D (225 pounds) is the torque value (in lb-ft) being misread as a force. MA = effort arm / load arm = 4.5 / 1.5 = 3, so effort is one-third of load weight.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-LP-B6-11",
+    "new_explanation": "Belt-connected pulleys have rim speeds equal (no slip), so RPM is inversely proportional to diameter: Driven RPM = Driver RPM x (Driver d / Driven d) = 300 x (8 / 4) = 600 RPM. Choice A (150 RPM) inverts the ratio and treats the larger pulley as the faster one. Choice B (300 RPM) leaves the speed unchanged, ignoring the size difference. Choice D (1200 RPM) doubles the correct answer, possibly multiplying by 4 instead of by 2. The smaller driven pulley always spins faster than the larger driver when belt-coupled.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-GW-B6-1",
+    "new_explanation": "When two external spur gears mesh, the teeth push against each other at the contact point. Equal and opposite contact forces (Newton's Third Law) cause the two gears to spin in opposite directions. Choice A (same direction) only happens with an idler gear between them, or with internal gears. Choice C (alternating depending on speed) is not how gear direction works; direction is set by geometry, not speed. Choice D (same direction when equal size) is also wrong; same-size meshing gears still rotate opposite each other. To get same direction without size change, an idler gear must be inserted.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-GW-B6-2",
+    "new_explanation": "Gear ratio (driven to driver) equals teeth on driven divided by teeth on driver: 24 / 8 = 3:1. The driving gear turns three times for every one turn of the driven gear, producing a 3:1 speed reduction and a 3:1 torque multiplication. Choice A (1:3) inverts the ratio, which would describe a speed-up gear set (small driver, larger driven). Choice C (8:1) and choice D (1:8) use the wrong tooth count or completely skip the division step. Direction of the ratio (driven:driver vs driver:driven) must always be matched to context; the convention here is driven first.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-GW-B6-3",
+    "new_explanation": "RPM is inversely proportional to tooth count: RPM_B = RPM_A x (Teeth_A / Teeth_B) = 600 x (12 / 36) = 600 x (1/3) = 200 RPM. Choice A (100 RPM) divides by 6 instead of 3, doubling the reduction. Choice C (300 RPM) only halves the speed, applying a 2:1 ratio. Choice D (1,800 RPM) multiplies by 3 instead of dividing, treating the larger gear as the faster one. The bigger gear always rotates slower than the smaller gear it meshes with; torque trades up by the same factor speed trades down.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-GW-B6-5",
+    "new_explanation": "Each external gear mesh reverses the direction of rotation. Gear 1 to Gear 2 is one reversal; Gear 2 to Gear 3 is a second reversal. Two reversals return Gear 3 to the same rotational direction as Gear 1. The idler also makes the final speed ratio depend only on the first and last gears (10 and 10), not the idler in the middle, so the speed ratio is 1:1. Choice A (opposite) counts only one reversal. Choice C (does not rotate) misunderstands what an idler does; it transmits motion. Choice D (90 degrees out of phase) confuses rotational direction with phase angle, which is not a quantity defined for spur gears.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-GW-B6-7",
+    "new_explanation": "Output RPM = Input RPM x (Pinion teeth / Ring teeth) = 2,000 x (5/40) = 250 RPM. The gear reduction ratio is 40/5 = 8:1. In an ideal gear set, what is lost in speed is gained in torque, so output torque = input torque x 8. Choice B (250 RPM, same torque) gets the speed right but ignores the speed-torque trade-off. Choice C (16,000 RPM, torque /8) inverts the formula and treats the small gear as the driven side. Choice D (400 RPM, torque x 5) uses the wrong ratio (5 instead of 8). Gear ratio always equals teeth_driven / teeth_driver.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-GW-B6-8",
+    "new_explanation": "Chain drives behave like gears: rear wheel revolutions per pedal revolution = chainring teeth / sprocket teeth = 48 / 16 = 3. Each pedal stroke turns the rear wheel three times, giving a speed advantage at the cost of higher pedaling force. Choice A (1 time) ignores the tooth ratio entirely. Choice B (2 times) halves the correct ratio. Choice D (4 times) uses the wrong division (perhaps 48 / 12 or similar). Larger chainring relative to sprocket means more wheel revolutions per pedal turn, which is the trade-off cyclists make for higher top speed.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-GW-B6-10",
+    "new_explanation": "A single-start worm advances the worm wheel by one tooth per full worm revolution. With 50 teeth on the wheel, the gear ratio is 50:1. Output RPM = Input RPM / 50 = 1,500 / 50 = 30 RPM. Choice A (1 RPM) over-reduces, dividing by 1,500 or otherwise inflating the ratio. Choice C (50 RPM) leaves out one step in the division. Choice D (75,000 RPM) multiplies instead of dividing, treating the worm wheel as a speed-up element. Worm gears are extreme speed reducers and large torque multipliers, often used where high torque at low speed is needed.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-GW-B6-11",
+    "new_explanation": "Gear reduction multiplies torque: Output torque = Engine torque x Gear ratio = 200 Nm x 3.5 = 700 Nm. Choice A (57 Nm) divides 200 by 3.5, inverting the formula and treating first gear as a speed-up. Choice B (200 Nm) ignores the gear ratio and just lists engine torque, which would only be the case in fourth gear (1:1). Choice C (440 Nm) uses the 2.2:1 second-gear ratio instead of first gear. First gear has the highest reduction and therefore the highest output torque, which is exactly why vehicles start from rest in first gear.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-GW-B6-12",
+    "new_explanation": "Center-to-center distance equals the sum of the pitch radii: 18 = 6 + r_B, so r_B = 12 cm. Pitch radius is proportional to tooth count, so the size ratio sets the gear ratio. With Gear A as driver, the ratio of driver:driven sizes is 6:12 = 1:2. Choice A (1:1) would require equal radii. Choice C (2:1) flips the convention and reads driven:driver instead of driver:driven, or treats the driver as the larger gear. Choice D (3:1) divides 18/6 instead of 12/6, mistaking the center distance for the driven radius. The driven gear turns at half the driver's speed.",
+    "needs_correct_index_review": true,
+    "notes": "Gear-ratio convention is ambiguous in the stem. Index 1 ('1:2') matches driver:driven and is consistent with the current correct_index, but the previous explanation contradicted itself by saying 'driven:driver = 2:1' while selecting '1:2'. Rewrite resolves to driver:driven = 1:2, matching index 1. Recommend stem clarify which order the ratio uses."
+  },
+  {
+    "external_key": "MC-GW-B6-13",
+    "new_explanation": "A rack is a straight, flat gear; a pinion is a circular gear. When the pinion rotates, its teeth engage the rack and push it along its length, converting rotary motion into linear motion. This is the operating principle of rack-and-pinion steering, where steering-wheel rotation becomes linear motion of the tie rods. Choice B (linear to circular oscillation) reverses the input/output and adds oscillation, which is not what a rack-and-pinion does. Choice C (vertical to horizontal rotary) garbles the geometry; the conversion is rotary-to-linear, not vertical-to-horizontal. Choice D (torque to electricity) describes a generator, not a mechanical gear set.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-FF-B6-2",
+    "new_explanation": "Kinetic (sliding) friction is generally less than the maximum static friction for the same surfaces. Once an object breaks free of static friction and begins sliding, fewer microscopic surface interlocks form, so the resisting force drops. Choice A (greater) reverses the well-established relationship. Choice B (equal) ignores the difference between coefficients of static and kinetic friction. Choice D (depends only on velocity) is wrong; for most practical surfaces, kinetic friction is approximately constant with velocity at typical speeds. This is why a heavy object takes more force to start moving than to keep moving.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-FF-B6-3",
+    "new_explanation": "Maximum static friction equals the coefficient of static friction times the normal force: f_s = mu_s x N = 0.4 x 100 = 40 pounds. On a horizontal surface, normal force equals the object's weight, so 40 pounds of push is the minimum to start motion. Choice A (20 pounds) halves the coefficient or uses 0.2 by mistake. Choice C (60 pounds) inflates the coefficient to 0.6. Choice D (100 pounds) ignores the coefficient and uses the full weight as the friction force, which would only be true if mu_s equaled 1.0.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-FF-B6-4",
+    "new_explanation": "Kinetic friction equals the coefficient times the normal force: f_k = mu_k x N = 0.25 x 200 = 50 pounds. On a flat floor the normal force equals the box's weight. Choice A (25 pounds) halves the coefficient to 0.125. Choice C (80 pounds) uses a coefficient of 0.4 instead of 0.25. Choice D (200 pounds) ignores the coefficient and uses the full weight, which would only apply if mu_k were 1.0 (an extreme value rarely seen). Friction always scales with normal force, not with the applied force.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-FF-B6-6",
+    "new_explanation": "Friction force equals the coefficient of friction times the normal force: f = mu x N. Adding a downward component of push increases the normal force the floor exerts upward on the mower wheels, and friction scales directly with that normal force. Choice A (decreases) reverses the relationship; pushing down increases, not decreases, the resistance. Choice C (unchanged) ignores that the vertical force component adds to the weight, raising the normal force. Choice D (eliminated) is physically impossible; no horizontal component can cancel friction. This is why pulling at an upward angle is easier than pushing at a downward angle.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-FF-B6-7",
+    "new_explanation": "Net force = 50 - 30 = 20 pounds to the right. Mass in slugs = weight / g = 120 / 32 = 3.75 slugs. Acceleration = F_net / m = 20 / 3.75 = 5.33 ft/s^2 to the right. Choice B (80 pounds; 21 ft/s^2) adds the two forces instead of subtracting them. Choice C (20 pounds; 2.5 ft/s^2) uses weight (120 lb) directly as mass instead of dividing by g, doubling the apparent mass. Choice D (50 pounds; no acceleration) misreads the surface as having friction; with no friction, the only horizontal forces are the two applied pushes.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-FF-B6-9",
+    "new_explanation": "Constant velocity means zero acceleration, so the net force along the ramp is zero. The component of gravity pulling the block down the ramp (W sin theta) must be exactly canceled by kinetic friction (mu_k x N) acting up the ramp. Choice A (no friction) would leave gravity unopposed and the block would accelerate, not move at constant speed. Choice C (normal equals gravity) is true only on a flat surface; on a ramp, normal force equals W cos theta, less than full weight. Choice D (mu_k = 0) is equivalent to choice A and contradicts the constant-speed observation.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-FF-B6-11",
+    "new_explanation": "Originally, applied force (80 N) balanced friction (80 N) for constant velocity. Halving the coefficient of kinetic friction halves the friction force to 40 N while the applied force stays at 80 N. Net force = 80 - 40 = 40 N in the direction of motion. By Newton's Second Law, a = F_net / m > 0, so the crate accelerates. Choice A (same velocity) ignores the new force imbalance. Choice B (decelerates) reverses the direction of the net force; less friction means less resistance, not more. Choice D (reverses direction) would require a net force opposite to motion, which is not the case here.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-IPH-B6-1",
+    "new_explanation": "A screw is geometrically an inclined plane wrapped helically around a cylinder. The pitch (distance between threads) is the height of the inclined plane, and the circumference traveled per rotation is its length. Choice A (lever) is unrelated; a screw does not rotate around a fixed fulcrum like a lever. Choice B (wheel and axle) is the closest second answer because screws are turned by a wheel-like head, but the underlying geometry that creates the linear advance is the spiral ramp itself, not a wheel-axle radius ratio. Choice D (pulley) does not match; pulleys use ropes and grooves, not threaded inclines.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-IPH-B6-2",
+    "new_explanation": "Pascal's principle states that pressure applied to an enclosed, incompressible fluid is transmitted equally in all directions and to every surface bounding the fluid. This is the foundation of hydraulic systems, brakes, and lifts. Choice A (absorbed and converted to heat) describes friction or compression losses, not the transmission of pressure. Choice C (reduced by depth) is true for static fluid pressure due to gravity but is not Pascal's principle; Pascal's law concerns the added pressure from external force. Choice D (only upward) is geometrically wrong; fluids transmit applied pressure in every direction at once.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-IPH-B6-4",
+    "new_explanation": "Hydraulic force multiplication: F_out = F_in x (A_out / A_in) = 100 x (25 / 5) = 100 x 5 = 500 pounds. Choice A (20 pounds) inverts the area ratio and divides force by 5 instead of multiplying. Choice B (100 pounds) ignores the area difference entirely. Choice D (2,500 pounds) multiplies force by the output area alone (100 x 25), ignoring the input area in the denominator. Hydraulics multiply force by the ratio of areas; the input piston moves a longer distance with less force, the output piston moves a shorter distance with more force, conserving work.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-IPH-B6-6",
+    "new_explanation": "Two stages of multiplication apply in series. Booster: 30 x 4 = 120 pounds at the master cylinder. Hydraulic area ratio: 120 x (3/1) = 360 pounds at the caliper. Choice A (30 pounds) ignores both stages. Choice B (90 pounds) applies only the hydraulic ratio to the bare pedal force (30 x 3 = 90), skipping the booster. Choice C (120 pounds) stops after the booster and ignores the hydraulic stage. When mechanical and hydraulic advantages chain together, you multiply their factors: total MA = 4 x 3 = 12, and final force = 30 x 12 = 360 pounds.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-IPH-B6-7",
+    "new_explanation": "Wedge MA = length / thickness = 10 / 2 = 5. Driving force = Load / MA = 600 / 5 = 120 pounds. Choice A (60 pounds) doubles the wedge MA to 10, perhaps using length / (thickness/2). Choice C (300 pounds) halves the load and ignores the MA, treating the wedge like a simple lever with MA = 2. Choice D (600 pounds) skips the wedge entirely and uses the load weight as the required force. A wedge converts a small driving force along its length into a much larger splitting force perpendicular to its motion, just like an inclined plane in mirror image.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-IPH-B6-11",
+    "new_explanation": "When simple machines are combined in series, their mechanical advantages multiply: Total MA = 3 x 4 = 12. Effort = Load / Total MA = 600 / 12 = 50 pounds. Choice B (200 pounds) uses only the pulley MA of 3, ignoring the lever. Choice C (400 pounds) reduces the load by only 1.5, perhaps averaging the MAs (3+4)/2 instead of multiplying. Choice D (600 pounds) ignores both stages and uses the full engine weight. Compound machines trade input force for input distance: you pull through 12 times the distance the engine rises.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-MP-B6-1",
+    "new_explanation": "Newton's Second Law: F = m x a = 2 kg x 10 m/s^2 = 20 N. Choice A (5 N) divides incorrectly (a / m / 2). Choice B (12 N) adds mass and acceleration (2 + 10), mixing incompatible units. Choice D (0.2 N) inverts the formula and divides mass by acceleration (2 / 10). Force is proportional to both mass and acceleration; the units (N = kg m/s^2) confirm the multiplicative relationship. Heavier objects need more force for the same acceleration; lighter objects accelerate more under the same force.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-MP-B6-2",
+    "new_explanation": "Near Earth's surface, gravity acts vertically downward at 9.8 m/s^2 regardless of horizontal motion. The instant the ball leaves the hand, the only force on it (ignoring air resistance) is the downward pull of gravity. Choice A (horizontal in direction of throw) confuses initial velocity with the gravitational force; the throw gives velocity, not a continued force. Choice B (upward) reverses gravity's direction. Choice D (45 degrees) adds a horizontal component to gravity that does not exist; horizontal and vertical motions are independent in projectile motion, with gravity acting only on the vertical component.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "MC-MP-B6-5",
+    "new_explanation": "Newton's Third Law: for every action force there is an equal and opposite reaction force. The rocket pushes exhaust gases backward (action); the gases push the rocket forward with an equal force (reaction). Because the action-reaction pair acts on the rocket and the gases (not on the surrounding air), thrust works in a vacuum. Choice A (no inertia in space) is wrong; objects retain their mass and inertia everywhere. Choice C (mass loss alone causes speed) ignores that a force is needed to accelerate the remaining mass. Choice D (gravity pulls forward) misidentifies the force; gravity pulls toward planetary masses, not in the direction of acceleration.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  }
+]

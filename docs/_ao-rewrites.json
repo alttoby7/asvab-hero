@@ -1,0 +1,404 @@
+[
+  {
+    "external_key": "AO-1",
+    "new_explanation": "Each right triangle has two equal legs and a hypotenuse. With the right angles meeting at a center, the four 90 degree corners account for the full 360 degrees around the point, and the equal legs line up edge to edge along four straight rays. The outer boundary is four equal hypotenuses meeting at right angles, which is a square. 'A circle' tempts anyone picturing pie slices, but straight hypotenuses cannot trace a curve. 'A hexagon' would require six pieces, not four. 'A rectangle' is technically true but incomplete: equal sides make this the special-case rectangle called a square.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-2",
+    "new_explanation": "Folding in half once produces 2 layers, leaving 1 crease and 2 sections. Folding the same axis again doubles the layer count to 4 and adds a second crease parallel to the first, splitting each prior section in two. When unfolded the paper shows 3 parallel creases and 4 equal strips. Choosing '2' counts only the first fold. Choosing '3' counts creases instead of sections (a classic off-by-one). Choosing '6' confuses doubling with adding, as if each fold added 3 new sections. Doubling, not adding, is the rule for parallel folds along the same axis.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3",
+    "new_explanation": "Two-face cubes sit along the edges of the large cube but not at the corners (corners would be three-face) and not at the centers of faces (one-face). A cube has 12 edges. In a 3x3x3 grid, each edge has 3 small cubes along it: 2 corners plus 1 middle. Only that middle position counts as a two-face cube, giving 12 edges times 1 cube each = 12. The choice '8' is the corner count (three-face cubes), a common substitution. '6' is the count of face centers (one-face cubes). '24' double-counts edges or confuses with the 24 edge-positions on the surface.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-4",
+    "new_explanation": "Cutting a small square from each corner separates the base from four side flaps. Folding the flaps up along the cut lines produces vertical walls on all four sides with the original middle square as the floor and no piece left to cap the top. That is the definition of an open-top box. 'A pyramid' is the trap of imagining the flaps converging to a point, but square flaps fold up parallel to each other, never meeting at an apex. 'A cylinder' and 'a cone' require curved surfaces, which flat cardboard cannot produce by folding along straight lines.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-5",
+    "new_explanation": "A vertical cut through the axis of a cylinder slices it lengthwise, producing a flat face whose horizontal span equals the diameter and whose vertical span equals the height. That face is bounded by two straight parallel edges (the cut sides) and two straight parallel edges where the top and bottom circles were divided. Four straight sides at right angles make a rectangle. 'Circle' is the cross-section of a horizontal cut perpendicular to the axis, not a vertical one. 'Ellipse' is produced by an oblique slanted cut. 'Triangle' has no path through a cylinder of any orientation.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-6",
+    "new_explanation": "Each equilateral triangle has interior angles of 60 degrees. Three vertices meeting at the center contribute 3 times 60 degrees = 180 degrees of swept angle, which means the triangles cover only half of the space around the point. The remaining 180 degrees is uncovered. Selecting '360 degrees' applies the angles-around-a-point rule incorrectly; that total only applies when shapes fully tile the area around the point, and 60 degree corners cannot do that with just three pieces. '240 degrees' would require four triangles, not three. '270 degrees' has no geometric basis, possibly mixing in a right angle by mistake.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-7",
+    "new_explanation": "On a standard die, opposite faces always sum to 7. The pairs are 1 and 6, 2 and 5, 3 and 4. With 1 facing up, the face directly opposite is 6. Choosing '2' or '5' confuses opposite faces with adjacent faces, since 2 and 5 sit on the sides of a 1-up die rather than the bottom. Choosing '4' applies the wrong arithmetic, perhaps subtracting 1 from 5 or guessing without using the sum-to-7 rule.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-9",
+    "new_explanation": "Let the shorter piece have length x. The longer piece is twice as long, so 2x. Together they form the full ruler: x + 2x = 3x = 12, giving x = 4. The pieces measure 4 inches and 8 inches. '3 and 9' satisfies the sum but the ratio is 3 to 1, not 2 to 1. '5 and 7' has the right sum but a ratio of 7 to 5. '6 and 6' makes two equal pieces, which would mean a 1 to 1 ratio rather than 2 to 1. Only 4 and 8 satisfy both the sum and the doubling relationship.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-1",
+    "new_explanation": "When the cube tilts forward around its front-bottom edge, that edge stays anchored while the cube falls onto its front face. The original front face rotates down to rest on the table, the original top swings forward to face the viewer, and the original back rotates up to occupy the top position. So the new top is the original back face. Choosing 'the original front face' confuses the destination of the top with the destination of the front; the front ends up on the bottom. The 'red original top' is now in the front position, not the top. 'Original bottom' would require a 180 degree forward rotation, not 90.",
+    "needs_correct_index_review": true,
+    "notes": "Stated correct_index is 1 (original front face). Tracing the rotation: pivot is front-bottom edge, top tilts toward viewer. The face that rotates into the top position is the original back. The original front rotates down to the bottom. Current explanation 'lifts the front face up to become the new top' is geometrically wrong; the front folds under, not up. Correct answer should be 'The original back face' (index 2). Recommend reviewing and likely changing correct_index to 2."
+  },
+  {
+    "external_key": "AO-3D-3",
+    "new_explanation": "Rotation around the vertical axis only moves the four side faces; the top and bottom faces stay fixed because they sit on that axis. So white remains on top regardless of how far the cube is spun horizontally. 'Yellow' is the trap of grabbing the right face (which was yellow before the spin), confusing horizontal rotation with a tilt that would actually bring a side face to the top. 'Blue' makes the same mistake with the left face. 'Black' would require flipping the cube upside down, which is a rotation around a horizontal axis, not vertical.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-4",
+    "new_explanation": "A 90 degree rotation to the right around the vertical axis (right side swinging forward, per the convention in question AO-3D-3) brings the yellow right face around to the front. The red original front rotates to the left, the blue original left moves to the back, and the green original back rotates to the right. New front equals yellow. 'Red' is the trap of forgetting that the cube moved at all, treating the original front as fixed. 'Blue' confuses left and right rotation. 'Green' jumps to the opposite face, which would require a 180 degree turn rather than 90.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-5",
+    "new_explanation": "Pick three vertices of a cube, one on each of three faces that share no common edge: each pair of those vertices is connected by a face diagonal of the cube. Face diagonals of a cube all have the same length (side times sqrt 2). Three equal-length edges meeting pairwise create an equilateral triangle. 'Square' would require four vertices, not three. 'Rectangle' also needs four vertices and two distinct edge lengths. 'Right triangle' tempts test takers who assume any triangle inside a cube must have a right angle, but the three vertices chosen here lie symmetrically and produce 60 degree angles, not 90.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PF-1",
+    "new_explanation": "The plus-shaped net has one central square plus four flaps attached to each side. Folding the four flaps up along the central square produces a base with four walls but no top: only 5 of the 6 sides needed for a closed cube are present. The result is an open-top box. 'A cube' is the natural trap, but a cube needs 6 squares, not 5. 'A square pyramid' would require triangular flaps converging to a point, not square ones folding up parallel. 'A triangular prism' has 3 rectangular sides and 2 triangular ends, none of which appear in this all-square net.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PF-3",
+    "new_explanation": "The square in the center becomes the base. Each equilateral triangle hinges upward along one edge of the square. Because all four triangles have the same side length and lean inward at equal angles, their free apex vertices converge to a single point above the center of the base. That is the definition of a square pyramid. 'A cube' is impossible because the net has triangles, not all squares. 'A rectangular prism' likewise needs 6 rectangular faces. 'A triangular prism' has only 2 triangular faces (the ends) plus 3 rectangular sides, while this net has 4 triangles and a square.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PF-5",
+    "new_explanation": "Each fold along a different axis multiplies, not adds. The first horizontal fold creates 1 crease across the middle, splitting the square into 2 horizontal strips. The second vertical fold adds 1 crease running the other direction, slicing each strip in two. The result is a 2 by 2 grid: 4 rectangular sections separated by one horizontal and one vertical crease. '2' counts only the first fold. '6' incorrectly adds 2 plus the perceived 4. '8' doubles every step as if both folds shared the same axis, but perpendicular folds multiply differently than parallel ones.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-1",
+    "new_explanation": "Add the cubes layer by layer. Bottom layer: 3 by 3 = 9. Middle layer: 2 by 2 = 4. Top: 1. Total = 9 + 4 + 1 = 14. '9' counts only the bottom layer, ignoring the stacked layers. '12' is a guess that splits the difference between 9 and the next plausible number. '16' overcounts, possibly by assuming the second layer is 3 by 3 again or by squaring 4 instead of using 2 by 2. The layered sum approach (9 + 4 + 1) gives 14 directly.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-3",
+    "new_explanation": "Add the cubes row by row: bottom 3, middle 2, top 1, for a total of 3 + 2 + 1 = 6. '5' undercounts, possibly missing the top cube. '7' overcounts by adding an extra. '9' applies the wrong rule entirely (3 by 3 grid logic instead of a staircase). The staircase formula n(n+1)/2 with n = 3 gives 3 times 4 divided by 2 = 6, confirming the direct count.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-4",
+    "new_explanation": "Count by layer. Bottom layer is 2 by 3 = 6 cubes. Second layer is 2 by 2 = 4 cubes stacked on top. Total = 6 + 4 = 10. '8' undercounts the second layer (treating it as 2 cubes instead of 4). '9' splits the difference between 6 and 10 without a clear method. '12' overcounts by assuming the second layer matches the base (2 by 3 = 6) rather than the smaller stated 2 by 2. The layered addition gives 10.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-5",
+    "new_explanation": "Hidden interior cubes do not touch any outer face. For a 4 by 4 by 4 cube, peel off the outer shell one unit thick on every side: the remaining hidden core is (4 minus 2) cubed = 2 cubed = 8 cubes. '16' confuses surface count with interior. '4' undercounts the interior dimension. '0' is the answer only for a cube smaller than 3 units on a side, where there is no interior. The (n minus 2) cubed formula works for any n by n by n cube where n is at least 3.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PA-B7-1",
+    "new_explanation": "Piece A (large right triangle) and piece B (small right triangle) share matching hypotenuse angles. Placing B against A along the hypotenuse fills the diagonal strip and produces a rectangle whose width equals A's base. Piece C (rectangle) then extends the figure in the same width direction, completing a larger rectangle. 'A large right triangle with no interior gaps' cannot form, because adding a rectangle (piece C) to a triangle straightens one side and disqualifies the triangle outline. 'A square' would require both dimensions to match, which the pieces' proportions do not guarantee. 'An L-shape' requires a notch that the rectangle C is specifically filling.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PA-B7-2",
+    "new_explanation": "Two identical squares placed edge to edge span twice the width and the same height, producing a 2:1 wide rectangle. Piece A (with the dot) is on the left, so the dot sits in the left half. 'A large square' would require placing the squares to also double the height, which side-by-side placement does not do. 'A tall thin rectangle' confuses the long axis: the squares meet horizontally, so the result is wide. 'Wide rectangle with the dot on the right half' reverses the placement of piece A.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PA-B7-3",
+    "new_explanation": "Two right triangles joined along their hypotenuses (one rotated 180 degrees relative to the other) form a rectangle, since the right-angle corners are now diagonally opposite and the legs line up edge to edge. Doing this with all four triangles produces two such rectangles, which then sit side by side to make one larger rectangle. 'A large right triangle' would require pairing along legs, not hypotenuses, and would leave a triangular outline rather than a four-sided one. 'A parallelogram' would result from sliding rather than reflecting the pieces. 'An irregular pentagon' requires five sides, but the four-triangle hypotenuse pairing has exactly four straight edges.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PA-B7-4",
+    "new_explanation": "Joining two equilateral triangles along a shared edge with opposite orientations (one apex up, one apex down) creates a rhombus shape, not a complete equilateral triangle. A small equilateral triangle is needed to fill the bottom-corner notch where the combined shape sweeps inward, completing the larger equilateral triangle outline. 'Along the left edge' would extend the figure sideways rather than fill any gap. 'In the upper-right gap' does not match the bottom-pointing geometry of the joined pair. 'On top of piece A' would simply double-cover existing area rather than complete a new shape.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PA-B7-5",
+    "new_explanation": "The geometry depends on whether the triangles attach inside or outside the square. Pressed against three corners of the square externally, with the right angle of each triangle matching a corner, each triangle extends one side of the square outward. The combined boundary becomes a five-sided figure where one corner retains the original 90 degree angle of the square. 'A regular hexagon' would require equal angles and sides, which extending three corners cannot produce. 'A larger square' would require four matching extensions, not three. 'A square with one corner cut off' is the inverse arrangement (subtracting rather than adding).",
+    "needs_correct_index_review": true,
+    "notes": "The pattern-assembly problem is geometrically ambiguous: 'triangles assembled and attached to A' does not specify whether they are attached internally (cutting corners) or externally (extending corners). The stated answer (pentagon with one right angle) implies a specific arrangement that needs a figure to verify. Without a diagram, multiple interpretations yield different outlines (e.g., extending three corners creates a complex shape with seven or eight sides, not five). Recommend reviewing with the original figure."
+  },
+  {
+    "external_key": "AO-PA-B7-6",
+    "new_explanation": "Piece A is a 3 by 2 rectangle with a 1 by 1 corner removed, leaving an L-shape. Piece B is exactly the 1 by 1 square that was removed. Placing B back into the missing corner restores the original 3 by 2 rectangle. The 2 by 3 rectangle option is the same shape with axes swapped, but the puzzle specifies a 3 by 2 orientation. 'A T-shape' would form only if B were attached to the outside of the L, extending a leg. 'A 4 by 1 strip' would require breaking apart and re-arranging the L, which the problem does not allow.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PA-B7-7",
+    "new_explanation": "Two isosceles right triangles joined along their hypotenuses form a square whose side equals the triangles' leg length. Adding piece C, a square of the same side length, along one open edge of that square extends it horizontally into a rectangle measuring 2 leg-lengths wide and 1 leg-length tall, a 2:1 ratio. 'A larger isosceles right triangle' would require placing the triangles' legs together instead of hypotenuses. 'A square' covers only the first step (triangles alone) before C is added. 'A rectangle with a triangular bump' would result only if C were attached at an angle or off-center, not flush along an edge.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PA-B7-8",
+    "new_explanation": "The pieces include a large square A, two triangles with legs equal to half of A's side, a small square equal to one-quarter of A's side, and a thin rectangle. Combined areas can in principle tile a square whose side is 1.5 times piece A. The triangles fill two corner gaps, the small square fills a quarter-corner gap, and the rectangle bridges the remaining strip. 'A large right triangle' has the wrong outline (3 sides instead of 4). 'A 2:1 rectangle' would leave gaps that the given piece set cannot fill. 'A T-shape' has notches that an enclosed tiling does not produce.",
+    "needs_correct_index_review": true,
+    "notes": "Area check: A = s^2, B+C = 2*(s/2)^2/2 = s^2/4, D = (s/4)^2 = s^2/16, total without E = 21s^2/16. A square of side 1.5s has area 2.25s^2 = 36s^2/16, so piece E would need area 15s^2/16. The problem describes E only as a 'thin rectangle' without dimensions, making the tiling unverifiable without the original figure. Recommend reviewing whether E's dimensions are specified in the source image or whether the answer holds."
+  },
+  {
+    "external_key": "AO-PA-B7-9",
+    "new_explanation": "Pieces B and C are described as the two halves of piece A cut along its median to the hypotenuse. Reuniting them along that cut line restores piece A exactly. The result is geometrically identical to the original triangle. 'A square' would require the cut to produce four equal corners, which a single median cut cannot do. 'A rectangle' would require the cut piece pair to share a right angle on every corner, which a triangle's halves do not. 'A parallelogram' would require sliding rather than re-attaching B and C, separating them rather than re-joining them.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PA-B7-10",
+    "new_explanation": "Adding isosceles right triangles to the outside of a square with their hypotenuses flush along three sides extends three of the square's edges outward into points. Depending on the proportions of the triangles, the assembled outline forms a larger square oriented at 45 degrees relative to the original. 'A regular octagon' would require eight equal sides and angles, which only emerges from a more symmetric cut. 'A plus sign' results from placing the triangles on the inside or from using rectangles instead. 'A star shape' requires triangles on every side with notches between them, not flush hypotenuses.",
+    "needs_correct_index_review": true,
+    "notes": "Geometric concern: a square plus three external isosceles right triangles (hypotenuse on a square edge, right-angle apex outward) cannot in general form a complete rotated square, because the fourth side of the original square remains exposed and unmatched. Forming a rotated square requires a triangle on all four sides, not three. Current stated answer (larger square rotated 45 degrees) may be incorrect for the described 3-triangle assembly. Recommend reviewing the source figure: is the fourth triangle implicit, or is the answer actually a different shape (like a pentagon)?"
+  },
+  {
+    "external_key": "AO-PA-B7-11",
+    "new_explanation": "Placing two opposite-facing right triangles on the short ends of a rectangle, each angled in the same slant direction (mirror images that nonetheless lean the same way along the long axis), converts the rectangle into a parallelogram. The triangles shift each short side into a slanted edge while preserving the top and bottom horizontal edges. 'A regular hexagon' has six sides with equal lengths and angles, neither of which the rectangle plus triangle pair produces. 'A hexagon with two right angles' would require the original short sides of the rectangle to survive as vertical edges, but the triangles replace them. 'A parallelogram with clipped corners' would require additional cuts.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PA-B7-12",
+    "new_explanation": "Two squares of side s (A and B) form a 2s by s rectangle when joined edge to edge. The two right triangles with legs s each fill the two open corners above (or below), extending the figure into a 2s by 2s square. The thin rectangle E and the small square F fit into the remaining interior gaps to complete the tiling. The result is a square whose side equals 2s, twice piece A. 'A 2:1 rectangle' covers only the first step. 'An irregular pentagon' has five sides, which an enclosed tiling does not produce. 'A large right triangle' has the wrong outline entirely.",
+    "needs_correct_index_review": true,
+    "notes": "Area check: A + B = 2s^2, triangles C + D = s^2, plus E (1x2 unspecified relative units) and F (1x1 unspecified). A square of side 2s has area 4s^2, so E + F should sum to s^2. Without knowing whether the 1x2 and 1x1 dimensions are in the same unit as s, the tiling cannot be verified. The stated answer is plausible but the puzzle is ambiguous on unit scaling. Recommend reviewing source figure."
+  },
+  {
+    "external_key": "AO-PA-B7-13",
+    "new_explanation": "The trapezoid has a long base of 4 and short top of 2, leaving a horizontal offset of 1 unit on each slanted side. Each right triangle placed against a slanted edge fills the gap between that slant and a vertical line, extending the trapezoid into a rectangle with width matching the long base and height matching the trapezoid's height. The result is a 4 by 2 rectangle. 'A 4 by 4 square' would require doubling the height. 'A regular hexagon' needs six equal sides, not four. 'A parallelogram' would result if both triangles slanted in the same direction, but mirrored triangles square off both ends.",
+    "needs_correct_index_review": true,
+    "notes": "Geometric inconsistency: the triangles are stated to have legs of 2 and 2, but the trapezoid's slant gap on each side has a horizontal offset of 1 and vertical offset of 2, so the gap-filling triangle should have legs of 1 and 2, not 2 and 2. With legs 2 and 2, the triangles cannot fit the slanted edges (hypotenuse length 2*sqrt(2) does not match the trapezoid's slant length sqrt(5)). The stated answer of a 4x2 rectangle is geometrically incompatible with the stated triangle dimensions. Recommend reviewing triangle leg dimensions or the trapezoid shape."
+  },
+  {
+    "external_key": "AO-PA-B7-14",
+    "new_explanation": "Re-attaching the missing square (piece C) to the L-shaped remainder restores the original large square. Adding the right triangle D, which has legs equal to half the side of A, along one outer edge extends the figure by a triangular bump. With the right proportion choice, that bump completes the shape into a rectangle 1.5 times longer than it is wide. 'A shape identical to the original square' ignores piece D. 'A right triangle' would require the square to fold into a triangle, which it cannot. 'A pentagon' would result from triangle D being attached at an angle or only partially.",
+    "needs_correct_index_review": true,
+    "notes": "Area check: large square A has area s^2. Square C (cut and replaced) restores A, so total before D is s^2. Triangle D (legs s/2 each) adds area s^2/8. Total area = 9s^2/8. A 1.5:1 rectangle with one side s would have area 1.5s^2 = 12s^2/8, which is greater than 9s^2/8 and would leave gaps. A 1.5:1 rectangle with one side s/2 would have area 3s^2/8, smaller than 9s^2/8 and would require overlaps. Neither matches. The stated answer is geometrically inconsistent with the piece areas. Recommend reviewing piece sizes or correct answer."
+  },
+  {
+    "external_key": "AO-PA-B7-15",
+    "new_explanation": "Each parallelogram leans the same direction on its own, but flipping every other parallelogram in a 2 by 2 grid reverses its slant. When laid out, the slanted edges of adjacent flipped and unflipped pieces meet to form straight vertical edges along the left and right of the grid, while the top and bottom remain horizontal. The combined boundary is a rectangle. 'A large parallelogram' would result from placing all four in the same orientation, not alternating. 'A rhombus' has four equal slanted sides, which alternating parallelograms cancel out. 'An irregular hexagon' would require six sides, but the alternation produces exactly four straight edges.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PA-B7-16",
+    "new_explanation": "A regular hexagon has 120 degree interior angles. Attaching an equilateral triangle outward on each edge creates six triangular points. At each hexagon vertex, the hexagon's 120 degrees plus two adjacent triangle base corners (60 degrees each) total 240 degrees, leaving a 120 degree notch pointing outward between consecutive triangle tips. That alternating tip-and-notch outline is a six-pointed star, not a smooth larger hexagon. 'A 12-sided dodecagon' would require equal sides and angles along the boundary, which the points and notches do not provide. 'A 12-pointed star' would require 12 triangular tips, not 6.",
+    "needs_correct_index_review": true,
+    "notes": "Geometric concern: placing equilateral triangles on each edge of a regular hexagon does not produce a larger regular hexagon. The resulting outline is a hexagram (Star of David shape, six-pointed star), since the triangle apex angles (60 degrees) and the inter-triangle gaps at hexagon vertices create concave notches. To form a larger hexagon, the six triangles would also need to fill the notches at the hexagon's vertices, which the problem does not include. Correct answer is likely the six-pointed Star of David shape (index 3), not larger regular hexagon (index 0). Recommend reviewing."
+  },
+  {
+    "external_key": "AO-PA-B7-17",
+    "new_explanation": "Two 3-4-5 right triangles joined along their hypotenuses form a 3 by 4 rectangle of area 12. Adding the 3 by 4 rectangle C produces an aligned strip, and triangle D fills the remaining diagonal gap. The total area equals the sum of all pieces, which determines the resulting rectangle's outer dimensions. A 4 by 6 rectangle has area 24, matching the rectangle interpretation of the sum. 'A 5 by 5 square' has area 25 and does not match the piece total. 'A 3 by 8 rectangle' has area 24 with the wrong aspect ratio for these legs. 'A 3 by 4 rectangle' covers only the first step.",
+    "needs_correct_index_review": true,
+    "notes": "Area check: A (6) + B (6) + C (12) + D (6) = 30. A 4x6 rectangle has area 24, which does not match the piece total. None of the answer choices (5x5 = 25, 4x6 = 24, 3x8 = 24, 3x4 = 12) match the total area of 30. The puzzle is geometrically impossible as stated. Recommend reviewing whether piece D should be used differently (perhaps overlapping or replacing a piece) or whether the answer choices need adjustment."
+  },
+  {
+    "external_key": "AO-PA-B7-19",
+    "new_explanation": "Piece A is a 2 by 2 square (area 4). Pieces B and C are right triangles with legs 2 and 2 (area 2 each). Total area = 8, matching a right triangle with legs 4 and 4. The square fits one corner of that larger triangle and the two right triangles fill the other two corner regions. 'A 2 by 4 rectangle' has area 8 too, but its four-right-angle outline does not match the L-shaped reassembly. 'A square with side 2 times sqrt 2' has area 8 but requires a rotated arrangement. 'A 2 by 2 square with triangular ears' leaves protrusions rather than enclosing a clean shape.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PA-B7-20",
+    "new_explanation": "Measure everything in units of small triangles (side 2 each). Large triangle A (side 4) holds 4 small-triangle areas. The three small triangles add 3. The rhombus E (two joined) adds 2. Total = 9, exactly the area of an equilateral triangle with side 6. They tile that triangle with A at one corner, the rhombus filling an adjacent strip, and the small triangles completing the outer edge. 'A hexagon side 2' has area 6 small-triangle units, too small. 'A trapezoid' has the wrong outline. 'A hexagon side 4' has area 24, far too large.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-B7-1",
+    "new_explanation": "When the prism tips backward around its back-bottom edge, that edge stays fixed and the cube falls onto its back face. The original top rotates away to become the new back, the original front swings upward to occupy the top position, and the original bottom moves to face the viewer as the new front. So the new top is the original front face. 'The original top face' would only stay on top if no rotation occurred. 'The original bottom face' would require a 180 degree rotation. 'The original back face' rotates downward to the bottom, not upward.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-B7-2",
+    "new_explanation": "Flipping the cube 180 degrees around the horizontal front-to-back axis spins it like a wheel through the front and back faces, swapping top with bottom and left with right while front and back remain fixed. The original bottom (purple) ends up on top. 'Orange' would only stay on top if no rotation had occurred. 'Red' and 'Blue' label the front and back faces, which the axis preserves rather than moves to the top.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-B7-3",
+    "new_explanation": "Rotating to the left around the vertical axis (left side swinging toward the viewer) brings the original left face around to the front. The original front rotates to the right, the original right moves to the back, and the original back rotates to the left. So the new front is the original left face. 'The original right face' is the trap of confusing left and right rotation directions. 'The original back face' would require a 180 degree turn, not 90. 'The original front face' would mean no rotation occurred.",
+    "needs_correct_index_review": true,
+    "notes": "Stated correct_index is 1 (original right face). Tracing the rotation: the stem says 'rotated 90 degrees to the left ... the left side swings toward you.' If left swings to the front, then new front = original left, not original right. The dataset's convention in AO-3D-3 (right rotation = right swings to front) supports the symmetric reading here. Recommend changing correct_index to 3 (original left face)."
+  },
+  {
+    "external_key": "AO-3D-B7-5",
+    "new_explanation": "The bird's-eye view from directly above shows the prism's top face, which is bounded by width and depth: 2 by 4. Height drops out of the view because the eye looks straight down along that axis. '2 by 3' is the front view (width by height). '3 by 4' is the side view (height by depth). '4 by 4' has no matching face on the prism. Each viewpoint projects out the dimension along its sight line, so identifying which dimension disappears (height for the top view) gives the answer directly.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-B7-7",
+    "new_explanation": "A triangular prism has two triangular end faces and three rectangular side faces connecting them. The front view (a rectangular face) shows a rectangle. Looking at the left end reveals the triangular cross-section at that end. 'A rectangle' would result from any side-face view but not an end-face view. 'A square' would require equal-sided rectangles, which the problem does not guarantee. 'A trapezoid' results from cutting a prism obliquely, not from looking at its standard end face.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-B7-8",
+    "new_explanation": "Each 90 degree forward rotation cycles the faces so that the face at the back rotates up to become the new top, the original top moves forward to become the new front, the original front rotates down to the bottom, and the original bottom rotates back to the rear. After one rotation, the original back is on top. After two rotations, the face that was at back-after-the-first rotation (which is the original bottom) is now on top. 'The original top' would only return after four rotations. 'The original front' is on top after three rotations, not two. 'The original back' is on top after one rotation only.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-B7-10",
+    "new_explanation": "A horizontal slice through the rectangular prism, taken at any height, exposes a face parallel to the top and bottom. Its dimensions are width by depth, which the problem states as 2 by 4. The vertical height of 1 unit does not appear in the cross-section because the cut is perpendicular to that axis. '1 by 2' uses height and width but omits depth. '1 by 4' uses height and depth but omits width. 'A square' would require width equal to depth, which is not the case here.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-B7-11",
+    "new_explanation": "Following the dataset's right rotation convention (right side swings to front, established in AO-3D-3), the cycle is right to front, front to left, left to back, back to right, with top and bottom unchanged. The original front (red) moves to the left position. 'Blue' was the original left and rotates to the back, not staying in place. 'Green' was the original back and ends up on the right. 'Yellow' was the original right and moves to the front, not the left.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-B7-13",
+    "new_explanation": "The four edges referenced are the top-front, bottom-front, top-back, and bottom-back edges. Their midpoints sit at the cube's horizontal middle and form the four corners of a square in the vertical plane running front-to-back through the center. The cross-section is a square. 'A rectangle that is not a square' would require two distinct edge lengths, but the midpoints are equidistant. 'A rhombus' has equal sides, but the 90 degree angles here make it specifically a square. 'A trapezoid' has only one pair of parallel sides, while this cross-section has two pairs.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-B7-15",
+    "new_explanation": "First rotation, 90 degrees backward around the back-bottom edge: top rotates away to become the new back, the original front swings up to the top, the original bottom rotates forward to become the new front, and the original back rotates down to the new bottom. So after rotation 1: new bottom = original back = green. Second rotation, 90 degrees left around the vertical axis: top and bottom are on the rotation axis and stay fixed. The bottom remains green. 'Red' is the new top after rotation 1, not the bottom. 'White' is the new back, having moved away from view. 'Black' (the original bottom) has rotated to the front.",
+    "needs_correct_index_review": true,
+    "notes": "Stated correct_index is 0 (Red). Tracing the backward rotation around the back-bottom edge: the cube falls backward onto its back face. Original top moves to back (top to back); original back moves to bottom (back to bottom); original bottom moves to front (bottom to front); original front moves to top (front to top). So new bottom = original back = green, not red. Current explanation incorrectly assigns 'new bottom = old front (red)'. Correct answer should be Green (index 2). Recommend reviewing."
+  },
+  {
+    "external_key": "AO-3D-B7-16",
+    "new_explanation": "A 90 degree forward rotation around the front-bottom edge tips the cube forward: the original top rotates forward to face the viewer (becoming the new front), the original front rotates down to rest on the table (becoming the new bottom), the original bottom rotates away to face backward (becoming the new back), and the original back rotates upward (becoming the new top). So the new back is the original bottom face, which is black. 'White' was the original top and is now the front, not the back. 'Green' was the original back and is now the top. 'Red' was the original front and is now the bottom.",
+    "needs_correct_index_review": true,
+    "notes": "Stated correct_index is 0 (White). Tracing the forward rotation: top to front, front to bottom, bottom to back, back to top. The current explanation lists this cycle correctly but then incorrectly concludes 'Original top (white) moves to the back position.' From the same cycle, top moves to front, not back. New back = original bottom = black (index 3). Recommend changing correct_index to 3."
+  },
+  {
+    "external_key": "AO-PF-B7-2",
+    "new_explanation": "Use square 2 as the base. Square 1 folds up as the left wall, square 3 folds up as the right wall, square 4 (attached to square 3) folds inward from the right wall to form the back wall, square 5 (atop square 2) folds up as the front wall, and square 6 (below square 3) folds inward to cap the top. All six equal squares enclose the volume, forming a cube. 'An open-top box' covers only 5 squares with no lid. 'A rectangular prism that is not a cube' would require unequal squares. 'A triangular prism' requires triangular end faces, which the all-square net cannot produce.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PF-B7-13",
+    "new_explanation": "A single vertical fold halves the sheet's width and stacks two layers along the fold. The punch goes through both layers at the center of the folded rectangle. When unfolded, the two punch holes appear mirrored across the vertical fold line, both at the same vertical height (the midpoint). 'One hole in the exact center' would result only if the punch were on the fold line itself. 'Four holes at quadrant centers' requires two perpendicular folds, not one. 'Two holes stacked vertically' would result from a horizontal fold, not vertical.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-1",
+    "new_explanation": "Each column contains as many cubes as its height: 1 + 2 + 3 = 6 cubes. The staircase formula n(n+1)/2 with n = 3 confirms 3 times 4 divided by 2 = 6. '5' undercounts, perhaps missing the top cube of the tallest column. '7' overcounts by 1. '9' applies the formula for a 3 by 3 grid (9 cubes), which is the bounding box rather than the actual staircase shape.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-2",
+    "new_explanation": "Multiply the three dimensions: 4 long times 2 wide times 1 tall = 8 cubes. '6' undercounts, possibly by adding instead of multiplying (4 + 2 = 6). '7' has no clear derivation. '10' overcounts, possibly by adding the dimensions and an extra 4 (4 + 2 + 4 = 10). The volume formula L times W times H gives 8 directly.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-3",
+    "new_explanation": "A 2 by 2 by 2 cube structure contains 2 times 2 times 2 = 8 unit cubes. '4' is the count of cubes in a single 2 by 2 layer, missing the second layer above. '6' is the count of faces on a cube, not unit cubes inside. '12' is the count of edges on a cube, also not the unit count. The volume formula resolves directly to 8.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-4",
+    "new_explanation": "Bottom layer is 3 by 3 = 9 cubes. Top layer has only the four corner positions = 4 cubes. Total = 9 + 4 = 13. '9' counts only the bottom and forgets the corners on top. '11' miscounts the corner additions (perhaps using 2 instead of 4). '16' would result from a fully filled second layer (also 3 by 3), but the problem specifies only the corners.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-6",
+    "new_explanation": "The 3 by 3 footprint has 9 positions. The center position is empty, so 9 minus 1 = 8 cubes remain. Each cube is 1 unit tall, so there is no additional vertical multiplication. '7' undercounts by 1, perhaps removing two positions instead of one. '9' ignores the hole. '12' overcounts, possibly by treating the structure as having a second layer.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-7",
+    "new_explanation": "Three-face cubes sit at the corners of the large painted cube, since each corner sits at the intersection of three outer faces. Any cube has exactly 8 corners, so 8 unit cubes have three painted faces, regardless of the cube's overall size (as long as it is at least 2 units per side). '4' confuses corners with face count of a tetrahedron or a different solid. '6' is the count of face centers (one-face cubes). '12' is the count of edges (two-face cubes for a 3 by 3 by 3 cube).",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-8",
+    "new_explanation": "Peel off the painted outer shell, one cube thick, on every side. The hidden interior of a 5 by 5 by 5 cube measures (5 minus 2) cubed = 3 cubed = 27 unit cubes. '9' uses 3 squared instead of 3 cubed, dropping a dimension. '16' uses 4 squared, mixing up the formula. '64' uses 4 cubed, which is the surface cube count rather than the hidden interior. The (n minus 2) cubed rule applies to any cube with n at least 3.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-10",
+    "new_explanation": "Add the cubes per layer: 16 + 9 + 4 + 1 = 30. The pyramid follows the sequence of perfect squares from 1 to n squared, summed: in this case 4 squared plus 3 squared plus 2 squared plus 1 squared. '25' uses only 16 + 9, omitting the upper two layers. '28' undercounts by 2. '32' overcounts, possibly adding an extra layer. The straightforward sum of squares from 1 to 4 gives 30.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-11",
+    "new_explanation": "Zero-paint cubes have no exposed face. For a 3 by 3 by 3 cube, peel off the outer shell on every side: the hidden interior is (3 minus 2) cubed = 1 cubed = 1 unit cube, the single cube at the very center. '0' would be correct only for cubes 2 by 2 by 2 or smaller, where every unit cube touches an outer face. '6' is the count of face-center cubes (one-face cubes), each of which has one painted side. '8' is the corner count (three-face cubes).",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-12",
+    "new_explanation": "Count each arm separately, then subtract the shared cube to avoid double-counting. Arm 1 has 4 times 1 times 1 = 4 cubes. Arm 2 has 3 times 1 times 2 = 6 cubes. The two arms share 1 corner cube at their junction. Total = 4 + 6 minus 1 = 9. '10' forgets to subtract the shared cube. '11' overcounts further. '13' adds two extra cubes, possibly from miscounting arm 2. The inclusion-exclusion adjustment (subtract the overlap) is essential.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-14",
+    "new_explanation": "Add the rows: 3 + 2 + 1 = 6 cubes. Each row is 1 cube deep, so the depth dimension does not multiply the count. '4' undercounts by 2, perhaps missing rows. '5' undercounts by 1. '9' would result from a 3 by 3 grid in every row instead of a stepped pyramid. The triangular pattern n + (n-1) + ... + 1 gives 6 for n = 3.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PF-B7-18",
+    "new_explanation": "Folding B onto D means the fold line is the perpendicular bisector of segment BD, which is the diagonal AC. Half of the square reflects across AC. Corners B and D merge to a single point, while A and C stay in place. The visible boundary has vertices at A, C, and the merged B-D point. 'A right triangle with the right angle at corner A' misplaces the right angle: after folding, the right angle sits at the merged point, not at A. 'A smaller square' would require a midline fold, not a diagonal one. 'A rectangle' likewise requires a midline fold rather than a diagonal one.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-PF-B7-20",
+    "new_explanation": "The first fold (top to bottom) creates 2 layers stacked vertically. The second fold (top to bottom again) creates 4 layers stacked vertically. Each fold halves the vertical extent and doubles the layers along the vertical axis, leaving the horizontal axis untouched. Punching the center of the 4-layer rectangle puts 4 punch points along the vertical axis at the horizontal center when unfolded, each at a different vertical position spaced by the fold intervals. 'One hole' covers only a single layer. 'Two holes side by side' would require a vertical fold, not horizontal. 'Four holes in a 2 by 2 grid' requires perpendicular folds rather than two parallel folds.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-19",
+    "new_explanation": "Build the count layer by layer. The bottom layer is a solid 4 by 4 = 16 cubes (the floor). Each of the 2 upper layers is the wall only: outer 4 by 4 = 16 positions minus the inner hollow 2 by 2 = 4 positions, leaving 12 wall cubes per upper layer. Two upper layers contribute 12 times 2 = 24. Total = 16 + 24 = 40. '28' undercounts, possibly with one upper layer only. '36' undercounts by 4, possibly missing the floor's interior or one wall layer. '48' overcounts, possibly treating the upper layers as solid 4 by 4 = 16 each.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-SC-B7-20",
+    "new_explanation": "Hidden interior cubes do not touch any outer face. The hidden core of a 4 by 4 by 4 cube measures (4 minus 2) cubed = 2 cubed = 8 unit cubes. '0' would apply only for cubes 2 by 2 by 2 or smaller. '4' undercounts the interior. '16' overcounts, possibly by squaring 4 (the surface count of one face) instead of cubing 2. The (n minus 2) cubed rule works for any cube with n at least 3.",
+    "needs_correct_index_review": false,
+    "notes": ""
+  },
+  {
+    "external_key": "AO-3D-B7-18",
+    "new_explanation": "A 180 degree rotation around the vertical axis spins the cube halfway, so the original front swings all the way around to the back, and the original back rotates to the front. Top and bottom sit on the rotation axis and stay fixed. The original back (blue) becomes the new front. 'Red' was the original front and is now on the back. 'Green' and 'White' are the left and right faces, which a vertical-axis rotation swaps with each other but does not move to the front (after a full 180 degree turn, left and right have also swapped, but neither ends up at the front).",
+    "needs_correct_index_review": false,
+    "notes": ""
+  }
+]

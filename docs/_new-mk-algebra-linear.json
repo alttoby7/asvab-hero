@@ -1,0 +1,178 @@
+[
+  {
+    "external_key": "MK-AL-NEW-1",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "If x + 7 = 15, what is the value of x?",
+    "choices": ["7", "8", "22", "9"],
+    "correct_index": 1,
+    "explanation": "Isolate x by subtracting 7 from both sides: x + 7 - 7 = 15 - 7, which gives x = 8. Choice 22 is the sign-error trap that comes from adding 7 to 15 instead of subtracting. Choice 7 is the constant on the left side rather than the variable's value. Choice 9 results from subtracting 6 instead of 7. The inverse operation of addition is subtraction, so a positive constant added to x must be subtracted to undo it.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-2",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "If x - 9 = 4, what is x?",
+    "choices": ["-5", "5", "13", "36"],
+    "correct_index": 2,
+    "explanation": "Add 9 to both sides to isolate x: x - 9 + 9 = 4 + 9, which gives x = 13. Choice -5 is the sign-error trap from subtracting 9 from 4 instead of adding. Choice 5 reverses the direction by computing 9 - 4. Choice 36 comes from multiplying 9 and 4 instead of using inverse operations. Subtraction of a positive constant is undone by addition of that same constant on both sides.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-3",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "If 6x = 42, what is x?",
+    "choices": ["6", "7", "8", "36"],
+    "correct_index": 1,
+    "explanation": "Divide both sides by 6 to isolate x: 6x / 6 = 42 / 6, which gives x = 7. Choice 6 is the coefficient itself, not the solution value of the variable. Choice 8 results from a division error treating 42 as 48 in the head. Choice 36 comes from subtracting 6 from 42 instead of dividing, an inverted-operation trap. Multiplication of x by a coefficient is undone by dividing both sides by that coefficient, not by subtracting it from both sides.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-4",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "If 4x + 3 = 19, what is x?",
+    "choices": ["4", "5.5", "16", "22"],
+    "correct_index": 0,
+    "explanation": "Subtract 3 from both sides to clear the constant: 4x + 3 - 3 = 19 - 3, which gives 4x = 16. Then divide both sides by 4: x = 4. Choice 16 is the intermediate value of 4x reported instead of x. Choice 22 adds 3 to 19 instead of subtracting, a sign-error on transposition. Choice 5.5 comes from dividing 22 by 4 after that same transposition error. The order matters: undo addition first, then undo multiplication, because the coefficient binds tighter to the variable.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-5",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "If 5x - 2 = 23, what is x?",
+    "choices": ["4.2", "5", "21", "25"],
+    "correct_index": 1,
+    "explanation": "Add 2 to both sides: 5x = 25. Then divide by 5: x = 5. Choice 25 is the intermediate value of 5x reported as the answer instead of x. Choice 21 comes from subtracting 2 from 23 instead of adding, a sign-error trap. Choice 4.2 results from dividing 21 by 5 after the same transposition error. A negative constant on the variable side must be added to both sides, then the coefficient must be divided out.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-6",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "If x/3 + 4 = 9, what is x?",
+    "choices": ["5", "13", "15", "39"],
+    "correct_index": 2,
+    "explanation": "Subtract 4 from both sides: x/3 = 5. Then multiply both sides by 3: x = 15. Choice 5 is the intermediate value of x/3 reported instead of x. Choice 13 comes from adding 4 to 9 instead of subtracting, a sign-error on transposition. Choice 39 results from multiplying 13 by 3 after the same transposition error. Division by a constant is undone by multiplying both sides by that constant after the addition is cleared.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-7",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If 3(x - 2) = 18, what is x?",
+    "choices": ["4", "6", "8", "20"],
+    "correct_index": 2,
+    "explanation": "Distribute the 3: 3x - 6 = 18. Add 6 to both sides: 3x = 24. Divide by 3: x = 8. Choice 4 comes from a distribution error of 3x - 2 = 18, dropping the multiplication on the constant, then solving as 3x = 20 incorrectly. Choice 6 results from subtracting 6 from 18 then dividing only the right side incorrectly. Choice 20 is the value of 3x - 6 + 2 from skipping a step. Both terms inside the parentheses must be multiplied by the factor outside.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-8",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If -2x + 9 = 1, what is x?",
+    "choices": ["-4", "4", "5", "-5"],
+    "correct_index": 1,
+    "explanation": "Subtract 9 from both sides: -2x = -8. Divide by -2: x = 4. Choice -4 is the sign-error trap from dividing -8 by 2 instead of -2, or from forgetting that negative divided by negative is positive. Choice 5 comes from adding 9 to 1 instead of subtracting and then dividing by 2. Choice -5 compounds both errors. When the variable has a negative coefficient, the final division by that negative must flip the sign of the result.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-9",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If 4(2x + 1) = 28, what is x?",
+    "choices": ["3", "3.375", "13.5", "27"],
+    "correct_index": 0,
+    "explanation": "Distribute the 4: 8x + 4 = 28. Subtract 4 from both sides: 8x = 24. Divide by 8: x = 3. Choice 13.5 comes from a distribution error of 2x + 1 = 28, dividing only one term by 4 instead of distributing. Choice 3.375 results from 8x + 1 = 28 from a distribution error that multiplies 2x by 4 but leaves the 1 unmultiplied. Choice 27 is the intermediate value 28 - 1. The factor outside the parentheses must hit every term inside.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-10",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If 5 - 3x = -7, what is x?",
+    "choices": ["-4", "4", "-2/3", "2/3"],
+    "correct_index": 1,
+    "explanation": "Subtract 5 from both sides: -3x = -12. Divide by -3: x = 4. Choice -4 is the sign-error trap from dividing -12 by 3 instead of -3, ignoring that a negative divided by a negative yields positive. Choice -2/3 comes from adding 5 to -7 to get -2 then dividing by 3, a transposition error. Choice 2/3 compounds the same transposition with the sign-flip. Negative coefficients on the variable demand careful tracking of signs through the final division.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-11",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "If 7x - 4 = 3x + 12, what is x?",
+    "choices": ["2", "4", "8", "16"],
+    "correct_index": 1,
+    "explanation": "Subtract 3x from both sides: 4x - 4 = 12. Add 4 to both sides: 4x = 16. Divide by 4: x = 4. Choice 16 is the intermediate value of 4x reported instead of x. Choice 2 comes from a sign-error of subtracting 4 from 12 instead of adding, giving 4x = 8. Choice 8 results from 7x + 3x = 10x and then 10x = 16 with arithmetic slips on combining variable terms. Move variable terms to one side and constants to the other before isolating.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-12",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "If 2x + 5 = 17, what is the value of x² - x?",
+    "choices": ["6", "12", "30", "42"],
+    "correct_index": 2,
+    "explanation": "Solve for x first: 2x + 5 = 17, so 2x = 12 and x = 6. Substitute into x² - x: 6² - 6 = 36 - 6 = 30. Choice 6 stops at x without computing the expression, a common premature-stop trap. Choice 12 is the intermediate value of 2x from the first equation. Choice 42 comes from x² + x = 36 + 6, a sign-error on the second term. Always read what the question asks for after solving for the variable, not just the variable's value.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-13",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "If 5x + 8 = 2x - 7, what is x?",
+    "choices": ["-5", "5", "-1/3", "1/3"],
+    "correct_index": 0,
+    "explanation": "Subtract 2x from both sides: 3x + 8 = -7. Subtract 8 from both sides: 3x = -15. Divide by 3: x = -5. Choice 5 is the sign-error trap from dropping the negative on the final division. Choice -1/3 comes from adding 8 to -7 to get 1 instead of subtracting, then dividing by 3 with a sign flip. Choice 1/3 compounds both arithmetic and sign errors. Negative results are common when variable coefficients on the left exceed those on the right but the constants pull the answer below zero.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-14",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 5,
+    "stem": "If x + y = 10 and x - y = 4, what is x?",
+    "choices": ["3", "6", "7", "14"],
+    "correct_index": 2,
+    "explanation": "Add the two equations: (x + y) + (x - y) = 10 + 4, which gives 2x = 14, so x = 7. Choice 14 is the intermediate value of 2x reported instead of x. Choice 3 is the value of y, not x: substituting x = 7 into x + y = 10 gives y = 3. Choice 6 comes from averaging the right-hand sides incorrectly. Adding the two equations cancels the y terms because their coefficients are opposites, leaving a single-variable equation in x.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-15",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 5,
+    "stem": "If -3x > 12, which describes x?",
+    "choices": ["x > 4", "x > -4", "x < 4", "x < -4"],
+    "correct_index": 3,
+    "explanation": "Divide both sides by -3. Dividing or multiplying an inequality by a negative number flips the direction of the inequality: x < -4. Choice x > -4 is the trap of dividing without flipping the sign, the most common inequality error. Choice x > 4 also fails to flip the sign and additionally drops the negative on -4. Choice x < 4 flips the sign but drops the negative result. Two operations must happen together when dividing an inequality by a negative: compute the numeric result and reverse the inequality symbol.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-16",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 5,
+    "stem": "If 2x + y = 11 and x + y = 7, what is y?",
+    "choices": ["3", "4", "7", "11"],
+    "correct_index": 0,
+    "explanation": "Subtract the second equation from the first: (2x + y) - (x + y) = 11 - 7, which gives x = 4. Substitute x = 4 into x + y = 7: 4 + y = 7, so y = 3. Choice 4 is the value of x, not y, a common premature-stop trap when the question asks for the other variable. Choice 7 is the right-hand side of the second equation, not y. Choice 11 is the right-hand side of the first equation. Subtracting one equation from another with matching y coefficients eliminates y, but here it isolates x.",
+    "status": "draft"
+  }
+]

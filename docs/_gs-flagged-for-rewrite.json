@@ -1,0 +1,910 @@
+[
+  {
+    "external_key": "GS-1",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.life-science",
+    "flags": [
+      "thin(28w)"
+    ],
+    "stem": "Which organ is primarily responsible for filtering waste products from the blood and producing urine?",
+    "choices": [
+      "Liver",
+      "Kidney",
+      "Pancreas",
+      "Spleen"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The kidneys filter blood to remove waste products and excess water, which are excreted as urine. The liver processes nutrients and detoxifies chemicals but does not produce urine."
+  },
+  {
+    "external_key": "GS-2",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "thin(30w)",
+      "no-trap-named"
+    ],
+    "stem": "Water (H\u2082O) is best classified as which of the following?",
+    "choices": [
+      "An element",
+      "A compound",
+      "A mixture",
+      "An isotope"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Water is a compound because it consists of two different elements \u2014 hydrogen and oxygen \u2014 chemically bonded in a fixed ratio. An element contains only one type of atom."
+  },
+  {
+    "external_key": "GS-3",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.earth-space-science",
+    "flags": [
+      "thin(22w)",
+      "no-trap-named"
+    ],
+    "stem": "Which layer of Earth's atmosphere contains the ozone layer that absorbs most of the sun's ultraviolet radiation?",
+    "choices": [
+      "Troposphere",
+      "Mesosphere",
+      "Stratosphere",
+      "Thermosphere"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The stratosphere, roughly 10\u201350 km above Earth's surface, contains the ozone layer. The troposphere is the lowest layer where most weather occurs."
+  },
+  {
+    "external_key": "GS-4",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.earth-space-science",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "Which type of rock is formed when molten magma cools and solidifies?",
+    "choices": [
+      "Sedimentary",
+      "Metamorphic",
+      "Igneous",
+      "Organic"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Igneous rocks form from the cooling of molten rock (magma or lava). Sedimentary rocks form from compacted sediments, and metamorphic rocks form under heat and pressure."
+  },
+  {
+    "external_key": "GS-5",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.life-science",
+    "flags": [
+      "thin(21w)",
+      "no-trap-named"
+    ],
+    "stem": "Which of the following best describes the function of red blood cells?",
+    "choices": [
+      "Fight infection by producing antibodies",
+      "Transport oxygen throughout the body",
+      "Regulate blood clotting",
+      "Produce hormones"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Red blood cells (erythrocytes) contain hemoglobin, which binds to oxygen in the lungs and delivers it to tissues throughout the body."
+  },
+  {
+    "external_key": "GS-6",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "thin(28w)",
+      "no-trap-named"
+    ],
+    "stem": "Newton's Third Law of Motion states that for every action there is:",
+    "choices": [
+      "An equal but delayed reaction",
+      "A greater and opposite reaction",
+      "An equal and opposite reaction",
+      "A proportional and parallel reaction"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Newton's Third Law states that for every action force, there is an equal in magnitude and opposite in direction reaction force. This explains recoil, rocket propulsion, and walking."
+  },
+  {
+    "external_key": "GS-7",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.life-science",
+    "flags": [
+      "thin(23w)",
+      "no-trap-named"
+    ],
+    "stem": "Photosynthesis in plants primarily uses which two resources to produce glucose?",
+    "choices": [
+      "Oxygen and nitrogen",
+      "Carbon dioxide and water",
+      "Glucose and oxygen",
+      "Nitrogen and phosphorus"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Plants use carbon dioxide (CO\u2082) from the air and water (H\u2082O) from the soil, along with sunlight energy, to produce glucose through photosynthesis."
+  },
+  {
+    "external_key": "GS-8",
+    "file": "free",
+    "difficulty": 1,
+    "topic_id": "gs.earth-space-science",
+    "flags": [
+      "thin(25w)",
+      "no-trap-named"
+    ],
+    "stem": "Which planet in our solar system is largest by diameter?",
+    "choices": [
+      "Saturn",
+      "Neptune",
+      "Jupiter",
+      "Uranus"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Jupiter is the largest planet in the solar system, with a diameter of about 143,000 km \u2014 more than 11 times the diameter of Earth."
+  },
+  {
+    "external_key": "GS-9",
+    "file": "free",
+    "difficulty": 2,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "thin(24w)",
+      "no-trap-named"
+    ],
+    "stem": "In an acid-base reaction, the pH of a neutral solution is:",
+    "choices": [
+      "0",
+      "7",
+      "10",
+      "14"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The pH scale runs from 0 (most acidic) to 14 (most basic/alkaline). A pH of 7 represents a neutral solution, such as pure water."
+  },
+  {
+    "external_key": "GS-PHY-2",
+    "file": "b1",
+    "difficulty": 3,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Which simple machine is a screw most closely related to?",
+    "choices": [
+      "lever",
+      "wheel and axle",
+      "inclined plane",
+      "pulley"
+    ],
+    "correct_index": 2,
+    "current_explanation": "A screw is essentially an inclined plane wrapped around a cylinder. The threads create a continuous spiral ramp, converting rotational force into linear motion. This is the same mechanical principle as a ramp, just in a circular form."
+  },
+  {
+    "external_key": "GS-PHY-4",
+    "file": "b1",
+    "difficulty": 4,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A compressed spring stores energy as:",
+    "choices": [
+      "kinetic energy",
+      "thermal energy",
+      "potential energy",
+      "chemical energy"
+    ],
+    "correct_index": 2,
+    "current_explanation": "A compressed or stretched spring stores elastic potential energy \u2014 energy stored due to the object's position or deformation. When released, potential energy converts to kinetic energy. Thermal energy would imply the spring heated up."
+  },
+  {
+    "external_key": "GS-PHY-6",
+    "file": "b1",
+    "difficulty": 5,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A 500-W electric motor lifts a 200-N load vertically. How high can it lift the load in 4 seconds (ignoring friction)?",
+    "choices": [
+      "2.5 meters",
+      "5 meters",
+      "10 meters",
+      "40 meters"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Power = Work / Time, so Work = Power \u00d7 Time = 500 \u00d7 4 = 2,000 joules. Work = Force \u00d7 Distance, so Distance = Work / Force = 2,000 / 200 = 10 meters. Using 4 seconds as the distance (40 m) is a unit confusion error."
+  },
+  {
+    "external_key": "GS-PHY-D2-1",
+    "file": "b1",
+    "difficulty": 2,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Which of the following is an example of potential energy?",
+    "choices": [
+      "a spinning fan blade",
+      "a rock sitting on a high cliff",
+      "a car moving at 60 mph",
+      "sound traveling through air"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Potential energy is stored energy due to an object's position or condition. A rock on a cliff has gravitational potential energy because of its height. The other options describe energy in motion (kinetic) or wave energy."
+  },
+  {
+    "external_key": "GS-LS-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.life-science",
+    "flags": [
+      "thin(25w)",
+      "no-trap-named"
+    ],
+    "stem": "Which organelle is known as the powerhouse of the cell because it produces most of the cell's energy?",
+    "choices": [
+      "Nucleus",
+      "Ribosome",
+      "Mitochondria",
+      "Vacuole"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Mitochondria produce ATP through cellular respiration, supplying the energy cells need for all their functions. The nucleus stores DNA; ribosomes make proteins; vacuoles store materials."
+  },
+  {
+    "external_key": "GS-LS-B5-2",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.life-science",
+    "flags": [
+      "thin(20w)"
+    ],
+    "stem": "Which gas do plants release as a byproduct of photosynthesis?",
+    "choices": [
+      "Carbon dioxide",
+      "Nitrogen",
+      "Oxygen",
+      "Hydrogen"
+    ],
+    "correct_index": 2,
+    "current_explanation": "During photosynthesis, plants split water molecules and release oxygen as a byproduct. Carbon dioxide is consumed, not released, during photosynthesis."
+  },
+  {
+    "external_key": "GS-LS-B5-3",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.life-science",
+    "flags": [
+      "thin(28w)",
+      "no-trap-named"
+    ],
+    "stem": "The primary role of the cell membrane is to:",
+    "choices": [
+      "Produce proteins for the cell",
+      "Control what enters and exits the cell",
+      "Store genetic information",
+      "Convert sunlight into energy"
+    ],
+    "correct_index": 1,
+    "current_explanation": "The cell membrane is selectively permeable, regulating the passage of substances in and out of the cell. Protein production occurs at ribosomes; DNA is stored in the nucleus."
+  },
+  {
+    "external_key": "GS-LS-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.life-science",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "In an ecosystem, which organisms are the primary producers?",
+    "choices": [
+      "Herbivores",
+      "Carnivores",
+      "Decomposers",
+      "Plants and algae"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Primary producers (plants, algae, and some bacteria) capture energy from sunlight through photosynthesis and form the base of the food chain. Herbivores and carnivores are consumers; decomposers break down dead matter."
+  },
+  {
+    "external_key": "GS-LS-B5-5",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.life-science",
+    "flags": [
+      "thin(29w)",
+      "no-trap-named"
+    ],
+    "stem": "Which blood component is primarily responsible for fighting bacterial infections?",
+    "choices": [
+      "Red blood cells",
+      "Platelets",
+      "White blood cells",
+      "Plasma"
+    ],
+    "correct_index": 2,
+    "current_explanation": "White blood cells (leukocytes) are the immune system's primary defense, attacking bacteria and other pathogens. Red blood cells carry oxygen; platelets help clot blood; plasma is the liquid carrier."
+  },
+  {
+    "external_key": "GS-LS-B5-7",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.life-science",
+    "flags": [
+      "thin(30w)",
+      "no-trap-named"
+    ],
+    "stem": "A food chain reads: grass \u2192 grasshopper \u2192 frog \u2192 hawk. If the frog population is removed, what is the most likely short-term result?",
+    "choices": [
+      "Hawks will increase in number",
+      "Grasshoppers will increase in number",
+      "Grass will decrease",
+      "Hawks will switch to eating grasshoppers directly and maintain balance"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Removing frogs eliminates the primary predator of grasshoppers, so grasshopper populations would surge. Hawks lose a food source and may decline. Grass would likely decrease as more grasshoppers consume it."
+  },
+  {
+    "external_key": "GS-LS-B5-9",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.life-science",
+    "flags": [
+      "thin(33w)",
+      "no-trap-named"
+    ],
+    "stem": "Which organ system is responsible for removing gaseous waste (carbon dioxide) from the body?",
+    "choices": [
+      "Digestive system",
+      "Urinary system",
+      "Respiratory system",
+      "Circulatory system"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The respiratory system \u2014 specifically the lungs \u2014 exchanges gases: oxygen enters the blood and carbon dioxide is expelled when exhaling. The urinary system removes liquid waste; the digestive system removes solid waste."
+  },
+  {
+    "external_key": "GS-LS-B5-12",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.life-science",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "Which process do decomposers like fungi and bacteria perform that is essential to the nutrient cycle?",
+    "choices": [
+      "Photosynthesis \u2014 converting CO\u2082 to glucose",
+      "Nitrogen fixation \u2014 converting N\u2082 gas to ammonia",
+      "Decomposition \u2014 breaking organic matter into inorganic nutrients",
+      "Transpiration \u2014 releasing water vapor from leaves"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Decomposers break down dead organisms and waste into simpler inorganic compounds, returning nutrients like carbon and nitrogen to the soil and atmosphere. Without decomposers, ecosystems would become buried in dead matter."
+  },
+  {
+    "external_key": "GS-PS-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "Which state of matter has a definite volume but no definite shape?",
+    "choices": [
+      "Solid",
+      "Liquid",
+      "Gas",
+      "Plasma"
+    ],
+    "correct_index": 1,
+    "current_explanation": "A liquid has a fixed volume but takes the shape of its container. Solids have both definite shape and volume; gases have neither. Plasma is an ionized gas with neither fixed shape nor volume."
+  },
+  {
+    "external_key": "GS-PS-B5-2",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "thin(32w)"
+    ],
+    "stem": "Which of the following is a chemical change?",
+    "choices": [
+      "Ice melting into water",
+      "Cutting a piece of paper",
+      "Iron rusting",
+      "Sugar dissolving in water"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Rusting involves iron reacting with oxygen to form iron oxide \u2014 a new substance with different chemical properties. Melting, cutting, and dissolving are physical changes; the substance's chemical identity does not change."
+  },
+  {
+    "external_key": "GS-PS-B5-3",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "thin(29w)",
+      "no-trap-named"
+    ],
+    "stem": "On the periodic table, elements in the same column (group) share similar properties primarily because they have the same:",
+    "choices": [
+      "Atomic mass",
+      "Number of protons",
+      "Number of neutrons",
+      "Number of valence electrons"
+    ],
+    "correct_index": 3,
+    "current_explanation": "Elements in the same group have the same number of valence electrons, which determines their chemical behavior and bonding tendencies. Atomic mass and neutron count vary even within groups."
+  },
+  {
+    "external_key": "GS-PS-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "What happens to the pressure of a gas inside a sealed container when the temperature increases, assuming volume stays constant?",
+    "choices": [
+      "Pressure decreases",
+      "Pressure stays the same",
+      "Pressure increases",
+      "The gas liquefies"
+    ],
+    "correct_index": 2,
+    "current_explanation": "When temperature rises, gas molecules move faster and collide with container walls more forcefully and frequently, increasing pressure. This relationship is described by Gay-Lussac's Law (P \u221d T at constant volume)."
+  },
+  {
+    "external_key": "GS-PS-B5-5",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "thin(26w)",
+      "no-trap-named"
+    ],
+    "stem": "In a chemical reaction, the substances that are present before the reaction begins are called:",
+    "choices": [
+      "Products",
+      "Reactants",
+      "Catalysts",
+      "Compounds"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Reactants are the starting materials in a chemical reaction that are converted into products. Catalysts speed up reactions without being consumed; products are the substances formed."
+  },
+  {
+    "external_key": "GS-PS-B5-6",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A substance has a pH of 2. Which statement best describes this substance?",
+    "choices": [
+      "It is strongly basic and will feel slippery",
+      "It is weakly acidic and slightly corrosive",
+      "It is strongly acidic with high hydrogen ion concentration",
+      "It is neutral and safe to drink in any quantity"
+    ],
+    "correct_index": 2,
+    "current_explanation": "pH 2 is strongly acidic \u2014 far below the neutral pH of 7. The lower the pH, the higher the concentration of hydrogen ions (H\u207a). Battery acid (pH ~1) and vinegar (pH ~3) bracket this range; strongly basic substances have high pH (above 7)."
+  },
+  {
+    "external_key": "GS-PS-B5-7",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "thin(33w)",
+      "no-trap-named"
+    ],
+    "stem": "When a substance undergoes sublimation, it transitions directly from:",
+    "choices": [
+      "Liquid to gas",
+      "Solid to liquid",
+      "Solid to gas",
+      "Gas to liquid"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Sublimation is the direct phase transition from solid to gas without passing through the liquid state. Dry ice (solid CO\u2082) is a common example. The reverse process (gas to solid) is called deposition."
+  },
+  {
+    "external_key": "GS-PS-B5-8",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "thin(31w)",
+      "no-trap-named"
+    ],
+    "stem": "Which type of chemical bond results from the transfer of electrons from one atom to another?",
+    "choices": [
+      "Covalent bond",
+      "Hydrogen bond",
+      "Ionic bond",
+      "Metallic bond"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Ionic bonds form when one atom gives electrons to another, creating oppositely charged ions that attract each other. Covalent bonds involve sharing electrons; hydrogen bonds are weak attractions between polar molecules."
+  },
+  {
+    "external_key": "GS-PS-B5-10",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "In a neutralization reaction, an acid and a base react to form:",
+    "choices": [
+      "Another acid with different strength",
+      "Salt and water",
+      "Carbon dioxide and oxygen",
+      "A metal oxide"
+    ],
+    "correct_index": 1,
+    "current_explanation": "When an acid and a base react, the H\u207a ions from the acid combine with the OH\u207b ions from the base to form water, while the remaining ions form a salt. Example: HCl + NaOH \u2192 NaCl + H\u2082O."
+  },
+  {
+    "external_key": "GS-PS-B5-11",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Which of the following correctly identifies the number of moles in 44 grams of CO\u2082? (C = 12 g/mol, O = 16 g/mol)",
+    "choices": [
+      "0.5 moles",
+      "1 mole",
+      "2 moles",
+      "44 moles"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Molar mass of CO\u2082 = 12 + (2 \u00d7 16) = 44 g/mol. Moles = mass \u00f7 molar mass = 44 \u00f7 44 = 1 mole. This is a foundational stoichiometry relationship: one mole of CO\u2082 weighs exactly 44 grams."
+  },
+  {
+    "external_key": "GS-PS-B5-12",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "gs.physical-science",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "In the balanced equation 2H\u2082 + O\u2082 \u2192 2H\u2082O, how many moles of water are produced from 3 moles of H\u2082 and excess O\u2082?",
+    "choices": [
+      "1.5 moles",
+      "2 moles",
+      "3 moles",
+      "6 moles"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The molar ratio of H\u2082 to H\u2082O is 2:2 = 1:1. Therefore 3 moles of H\u2082 produce 3 moles of H\u2082O when O\u2082 is in excess. Dividing by 2 (getting 1.5) misreads the 1:1 ratio."
+  },
+  {
+    "external_key": "GS-ES-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.earth-space-science",
+    "flags": [
+      "thin(34w)",
+      "no-trap-named"
+    ],
+    "stem": "The layer of Earth that we live on, which makes up the surface and outer crust, is called the:",
+    "choices": [
+      "Mantle",
+      "Core",
+      "Lithosphere",
+      "Asthenosphere"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The lithosphere includes Earth's crust and the uppermost solid part of the mantle \u2014 the rigid layer on which continents and ocean floors rest. The mantle is below; the core is the deepest layer."
+  },
+  {
+    "external_key": "GS-ES-B5-3",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.earth-space-science",
+    "flags": [
+      "thin(30w)",
+      "no-trap-named"
+    ],
+    "stem": "Metamorphic rock is formed when existing rock is subjected to:",
+    "choices": [
+      "Rapid cooling of magma at the surface",
+      "The compaction of layers of sediment over time",
+      "High heat and pressure deep within Earth",
+      "Erosion by wind and water"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Metamorphic rocks (marble, slate, quartzite) form when pre-existing rocks are altered by intense heat and pressure without melting. Rapid cooling of magma creates igneous rock; compacted sediment creates sedimentary rock."
+  },
+  {
+    "external_key": "GS-ES-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.earth-space-science",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "The water cycle step in which water vapor cools and changes into liquid water droplets to form clouds is called:",
+    "choices": [
+      "Evaporation",
+      "Condensation",
+      "Precipitation",
+      "Transpiration"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Condensation is the process by which water vapor loses heat energy and converts to liquid droplets, forming clouds and fog. Evaporation is the opposite (liquid to vapor); precipitation is water falling from clouds; transpiration is water released by plants."
+  },
+  {
+    "external_key": "GS-ES-B5-5",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.earth-space-science",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Which atmospheric layer, positioned just above the stratosphere, is where meteors typically burn up upon entering Earth's atmosphere?",
+    "choices": [
+      "Troposphere",
+      "Stratosphere",
+      "Mesosphere",
+      "Thermosphere"
+    ],
+    "correct_index": 2,
+    "current_explanation": "The mesosphere extends from about 50 to 80 km altitude. The thin air in this layer creates enough friction to burn up most meteors. The troposphere (0\u201312 km) contains weather; the stratosphere (12\u201350 km) holds the ozone layer."
+  },
+  {
+    "external_key": "GS-ES-B5-6",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.earth-space-science",
+    "flags": [
+      "thin(34w)"
+    ],
+    "stem": "According to the rock cycle, which process can convert igneous rock into sedimentary rock?",
+    "choices": [
+      "Melting followed by rapid cooling",
+      "Heat and pressure deep underground",
+      "Weathering, erosion, and compaction of the rock fragments",
+      "Volcanic uplift pushing the rock to the surface"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Igneous rock can be broken down by weathering and erosion into sediment. Over time the sediment is deposited, buried, and compacted (lithification) into sedimentary rock. Heat and pressure would produce metamorphic rock, not sedimentary."
+  },
+  {
+    "external_key": "GS-ES-B5-7",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.earth-space-science",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "At which location would a hurricane most likely begin to weaken significantly?",
+    "choices": [
+      "Over warm tropical ocean water",
+      "When moving toward the equator",
+      "After making landfall or moving over cooler water",
+      "When it absorbs a nearby low-pressure system"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Hurricanes are fueled by warm ocean water that evaporates and feeds the storm's convection. When a hurricane moves over land or cooler water, it loses its energy source and weakens. Warm equatorial water would sustain or intensify the storm."
+  },
+  {
+    "external_key": "GS-ES-B5-8",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.earth-space-science",
+    "flags": [
+      "thin(33w)",
+      "no-trap-named"
+    ],
+    "stem": "Which type of plate boundary is associated with the formation of most of Earth's major mountain ranges?",
+    "choices": [
+      "Divergent boundary, where plates move apart",
+      "Transform boundary, where plates slide past each other",
+      "Convergent boundary, where plates collide and compress",
+      "Subduction boundary, where oceanic plates sink under oceanic plates"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Mountain ranges like the Himalayas and Alps form at convergent boundaries where two continental plates collide, compressing and folding the crust upward. Divergent boundaries form rift valleys; transform boundaries produce faults and earthquakes."
+  },
+  {
+    "external_key": "GS-ES-B5-9",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.earth-space-science",
+    "flags": [
+      "thin(34w)",
+      "no-trap-named"
+    ],
+    "stem": "As altitude increases in the troposphere, air temperature generally:",
+    "choices": [
+      "Increases at a steady rate",
+      "Remains constant",
+      "Decreases",
+      "Increases then decreases"
+    ],
+    "correct_index": 2,
+    "current_explanation": "In the troposphere, temperature decreases with altitude at roughly 6.5\u00b0C per 1,000 meters (the environmental lapse rate). This is opposite to the stratosphere, where temperature increases with altitude due to ozone absorbing UV radiation."
+  },
+  {
+    "external_key": "GS-ES-B5-11",
+    "file": "b5",
+    "difficulty": 5,
+    "topic_id": "gs.earth-space-science",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Which phenomenon best explains why oceanic crust is generally younger than continental crust?",
+    "choices": [
+      "Oceanic crust forms faster due to more volcanic activity on land",
+      "Continental crust is recycled through subduction more rapidly",
+      "Oceanic crust is continuously created at mid-ocean ridges and destroyed at subduction zones",
+      "Tidal forces from the Moon preferentially age continental crust"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Mid-ocean ridges constantly produce new oceanic crust as magma rises and solidifies. This crust spreads outward and is eventually subducted back into the mantle at trenches, completing the cycle. Continental crust is less dense and resists subduction, so it accumulates age."
+  },
+  {
+    "external_key": "GS-PM-B5-1",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Which type of energy does a moving car possess?",
+    "choices": [
+      "Chemical energy",
+      "Potential energy",
+      "Kinetic energy",
+      "Nuclear energy"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Kinetic energy is the energy of motion. Any object in motion \u2014 a car, a thrown ball, flowing water \u2014 possesses kinetic energy. Potential energy is stored energy due to position; chemical energy is stored in molecular bonds."
+  },
+  {
+    "external_key": "GS-PM-B5-2",
+    "file": "b5",
+    "difficulty": 1,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "thin(28w)",
+      "no-trap-named"
+    ],
+    "stem": "A wedge is a type of simple machine. The primary mechanical purpose of a wedge is to:",
+    "choices": [
+      "Change the direction of a force along a rope",
+      "Multiply rotational force through gears",
+      "Convert a downward force into an outward splitting force",
+      "Store energy that can be released later"
+    ],
+    "correct_index": 2,
+    "current_explanation": "A wedge converts a driving force (usually downward) into outward forces that split or separate material. Axes and chisels are examples. It is essentially a moving inclined plane."
+  },
+  {
+    "external_key": "GS-PM-B5-4",
+    "file": "b5",
+    "difficulty": 2,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "thin(29w)",
+      "no-trap-named"
+    ],
+    "stem": "Newton's Second Law states that force equals mass times acceleration (F = ma). If the net force on an object doubles while its mass stays the same, its acceleration will:",
+    "choices": [
+      "Stay the same",
+      "Double",
+      "Quadruple",
+      "Decrease by half"
+    ],
+    "correct_index": 1,
+    "current_explanation": "From F = ma, if F doubles and m is constant, a must double to maintain the equality. Acceleration is directly proportional to net force when mass is unchanged."
+  },
+  {
+    "external_key": "GS-PM-B5-5",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "A first-class lever has the fulcrum between the effort and the load. Which of the following is an example of a first-class lever?",
+    "choices": [
+      "A wheelbarrow",
+      "A pair of scissors",
+      "A baseball bat",
+      "A bottle opener"
+    ],
+    "correct_index": 1,
+    "current_explanation": "Scissors have the fulcrum (pivot pin) between the effort (handles) and the load (cutting blades) \u2014 defining a first-class lever. A wheelbarrow is second-class (load between fulcrum and effort); a baseball bat is third-class (effort between fulcrum and load)."
+  },
+  {
+    "external_key": "GS-PM-B5-6",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "thin(33w)"
+    ],
+    "stem": "If a 10-kg object is lifted 5 meters, how much gravitational potential energy does it gain? (Use g = 10 m/s\u00b2)",
+    "choices": [
+      "15 joules",
+      "50 joules",
+      "500 joules",
+      "5,000 joules"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Gravitational PE = mass \u00d7 g \u00d7 height = 10 \u00d7 10 \u00d7 5 = 500 joules. A common error is forgetting to include g and computing 10 \u00d7 5 = 50 joules."
+  },
+  {
+    "external_key": "GS-PM-B5-7",
+    "file": "b5",
+    "difficulty": 3,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "Friction always acts in what direction relative to an object's motion?",
+    "choices": [
+      "Perpendicular to motion",
+      "In the same direction as motion",
+      "Opposite to the direction of motion",
+      "Downward due to gravity"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Friction is a resistive force that always opposes relative motion or the tendency to move. If a box slides right, friction acts leftward on it. This is why friction converts kinetic energy into thermal energy and slows moving objects."
+  },
+  {
+    "external_key": "GS-PM-B5-8",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "thin(32w)"
+    ],
+    "stem": "A 4-kg block slides down a frictionless ramp and reaches the bottom with a speed of 6 m/s. What is its kinetic energy at the bottom?",
+    "choices": [
+      "24 joules",
+      "48 joules",
+      "72 joules",
+      "144 joules"
+    ],
+    "correct_index": 2,
+    "current_explanation": "KE = \u00bdmv\u00b2 = \u00bd \u00d7 4 \u00d7 6\u00b2 = \u00bd \u00d7 4 \u00d7 36 = 72 joules. A common error is forgetting the \u00bd, giving 4 \u00d7 36 = 144 joules."
+  },
+  {
+    "external_key": "GS-PM-B5-9",
+    "file": "b5",
+    "difficulty": 4,
+    "topic_id": "gs.physics-mechanics",
+    "flags": [
+      "no-trap-named"
+    ],
+    "stem": "What is the mechanical advantage of a lever when the effort arm is 3 meters and the load arm is 1 meter?",
+    "choices": [
+      "0.33",
+      "1",
+      "3",
+      "4"
+    ],
+    "correct_index": 2,
+    "current_explanation": "Mechanical advantage = effort arm length \u00f7 load arm length = 3 \u00f7 1 = 3. This means you can lift a load 3 times heavier than the force you apply. A MA less than 1 would mean the lever puts you at a disadvantage."
+  }
+]

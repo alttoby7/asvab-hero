@@ -1,0 +1,189 @@
+[
+  {
+    "external_key": "AR-AF-NEW-1",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A warehouse stores 24 boxes. Each box holds 12 items. How many items are in the warehouse?",
+    "choices": ["36", "252", "288", "296"],
+    "correct_index": 2,
+    "explanation": "Multiply the count of boxes by items per box: 24 x 12. Break it down: 24 x 10 = 240, then 24 x 2 = 48, and 240 + 48 = 288. Choice 36 adds 24 + 12 instead of multiplying. Choice 252 reflects a mis-carried digit in the 24 x 12 column (treating 2 x 24 as 28). Choice 296 adds 8 too many, likely from carrying twice. The correct total is 288 items.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-2",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A truck began the day with 156 packages. The driver delivered 89. How many packages remain on the truck?",
+    "choices": ["57", "67", "77", "245"],
+    "correct_index": 1,
+    "explanation": "Subtract delivered packages from the starting count: 156 - 89. Stack the numbers and borrow from the tens column: 16 - 9 = 7 in the ones place, then 14 - 8 = 6 after borrowing in the tens place, giving 67. Verify by adding back: 89 + 67 = 156. Choice 245 adds the two numbers, inverting the operation entirely. Choice 77 forgets to subtract 1 from the tens column after borrowing, leaving 5 instead of 4. Choice 57 reflects subtracting 99 instead of 89, a misread digit. The driver has 67 packages left on the truck.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-3",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A bakery splits 144 cookies evenly into 12 boxes. How many cookies go in each box?",
+    "choices": ["11", "12", "13", "132"],
+    "correct_index": 1,
+    "explanation": "Divide total cookies by number of boxes to find the size of each share: 144 / 12. Recall the multiplication fact 12 x 12 = 144, so the quotient is 12. Verify by multiplying back: 12 cookies per box x 12 boxes = 144 cookies total, matching the starting number. Choice 132 subtracts 12 from 144, treating the problem as removal rather than even partition into groups. Choice 11 reflects an off-by-one slip, perhaps recalling 11 x 12 = 132. Choice 13 over-shoots, since 13 x 12 = 156, which exceeds the actual total. Each box contains exactly 12 cookies.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-4",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A clerk buys 6 notebooks at $3.25 each. What is the total cost?",
+    "choices": ["$9.25", "$18.50", "$19.50", "$19.75"],
+    "correct_index": 2,
+    "explanation": "Multiply quantity by unit price: 6 x $3.25. Split the price into whole dollars and cents to simplify. The dollar portion gives 6 x $3 = $18.00, and the cents portion gives 6 x $0.25 = $1.50. Add the parts: $18.00 + $1.50 = $19.50. Choice $9.25 adds 6 + 3.25, inverting the operation by using addition instead of multiplication. Choice $18.50 forgets the carry from the cents multiplication, treating 6 x $0.25 as $0.50 rather than $1.50. Choice $19.75 adds an extra quarter from a miscounted carry in the cents column. The total cost is $19.50.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-5",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A depot starts with 1,247 rounds. A shipment adds 968, and a training event uses 415. How many rounds remain?",
+    "choices": ["1,690", "1,800", "2,215", "2,630"],
+    "correct_index": 1,
+    "explanation": "Work through the two operations in order: first add the shipment, then subtract the training expenditure. Step one: 1,247 + 968 = 2,215. Step two: 2,215 - 415 = 1,800. Choice 2,215 stops after the addition step, reporting the intermediate sum as the final answer without subtracting the training rounds. Choice 2,630 adds all three numbers together, ignoring that the training event removes rounds rather than adds them. Choice 1,690 reflects subtracting 525 instead of 415, a digit misread that swaps the 1 in the tens place for a 2. The depot has 1,800 rounds remaining.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-6",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A coach divides 84 athletes into 4 equal squads, then adds 15 reserves to one squad. How many athletes are in that enlarged squad?",
+    "choices": ["21", "27", "36", "39"],
+    "correct_index": 2,
+    "explanation": "Two operations are needed in a specific order: divide the athletes into equal squads first, then add reserves to the one enlarged squad. Step one: 84 / 4 = 21 athletes per squad. Step two: 21 + 15 = 36 athletes in the enlarged squad. Choice 21 reports the squad size before reserves arrive, stopping at the intermediate value and ignoring the second step. Choice 39 adds 15 to 84 before dividing, then divides incorrectly, breaking the order of operations stated in the problem. Choice 27 reflects a miscount in the addition step, perhaps adding 6 instead of 15. The enlarged squad has 36 athletes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-7",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A field has 80 trees. A storm destroys 0.75 of them. How many trees were destroyed?",
+    "choices": ["20", "60", "75", "105"],
+    "correct_index": 1,
+    "explanation": "Multiply the total count by the decimal fraction to find the affected portion: 0.75 x 80. Convert 0.75 into the equivalent fraction three-quarters, then take three-quarters of 80. One-quarter of 80 is 20, so three-quarters is 3 x 20 = 60. Verify with direct multiplication: 0.75 x 80 = 60. Choice 20 reports the trees that survived the storm (80 - 60), answering the opposite question from what was asked. Choice 75 treats 0.75 as a count of 75 trees directly, ignoring the multiplication. Choice 105 adds the decimal to a wrong base. The storm destroyed 60 trees.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-8",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A shopper buys 3 pounds of beef at $4.80 per pound and 2 packs of buns at $3.25 each. She pays with a $30 bill. How much change does she receive?",
+    "choices": ["$8.10", "$9.10", "$9.20", "$20.90"],
+    "correct_index": 1,
+    "explanation": "Three steps are required: compute each item subtotal, sum the subtotals to get the bill, then subtract from the amount tendered. Beef subtotal: 3 x $4.80 = $14.40. Bun subtotal: 2 x $3.25 = $6.50. Bill total: $14.40 + $6.50 = $20.90. Change owed: $30.00 - $20.90 = $9.10. Choice $20.90 reports the bill total itself, stopping at the intermediate value before the change calculation. Choice $9.20 reflects a ten-cent rounding error during the addition of subtotals. Choice $8.10 subtracts a miscomputed bill of $21.90. She receives $9.10 in change.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-9",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A driver travels at 60 miles per hour for 2 hours and 45 minutes. How many miles does he cover?",
+    "choices": ["120", "145", "165", "180"],
+    "correct_index": 2,
+    "explanation": "Convert the minutes into a decimal fraction of an hour, then multiply by speed. 45 minutes equals 45/60 = 0.75 hour, so total time is 2.75 hours. Distance equals rate times time: 60 x 2.75 = 165 miles. Split the multiplication for clarity: 60 x 2 = 120, and 60 x 0.75 = 45, then 120 + 45 = 165. Choice 120 uses only the two whole hours, dropping the 45-minute portion. Choice 180 rounds the time up to 3 full hours before multiplying. Choice 145 treats 45 minutes as 0.45 hour, a unit-conversion error. The driver covers 165 miles.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-10",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A teacher needs 3 pencils for each of her 18 students. Pencils are sold only in boxes of 12. What is the minimum number of boxes she must buy?",
+    "choices": ["4", "5", "6", "54"],
+    "correct_index": 1,
+    "explanation": "Three steps: find total pencils needed, divide by box size to get boxes, then round up because partial boxes cannot be purchased. Pencils needed: 18 students x 3 pencils each = 54 pencils. Boxes required: 54 / 12 = 4.5 boxes. Since stores sell only whole boxes, round up to 5 so the class has enough. Buying only 4 boxes provides 48 pencils, leaving the class 6 short. Choice 4 rounds down and leaves the class short. Choice 54 reports the total pencil count rather than the number of boxes. Choice 6 over-rounds by one box, buying more than necessary. She must buy 5 boxes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-11",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A 5-gallon bucket of paint covers 1,750 square feet. How many gallons are needed to cover 4,200 square feet?",
+    "choices": ["8", "10", "12", "14"],
+    "correct_index": 2,
+    "explanation": "Set up a unit-rate problem in two steps: find coverage per gallon, then divide the target area by that rate to find gallons needed. Coverage per gallon: 1,750 / 5 = 350 square feet per gallon. Gallons needed for 4,200 square feet: 4,200 / 350 = 12 gallons. Verify by multiplying back: 12 x 350 = 4,200, which matches the target area exactly. Choice 10 reflects dividing 4,200 by an incorrect per-gallon rate of 420. Choice 14 doubles the original five-gallon bucket without checking the proportion of areas. Choice 8 results from a miscomputed per-gallon rate near 525. The job requires 12 gallons of paint.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-12",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A worker earns $18 per hour for regular time and 1.5 times that for any hours over 40 in a week. She works 46 hours. What is her total pay?",
+    "choices": ["$828", "$882", "$900", "$1,242"],
+    "correct_index": 1,
+    "explanation": "Split the 46 hours into regular and overtime portions, compute each pay segment, then add. Regular hours: 40 at $18 each = $720. Overtime hours: 46 - 40 = 6 hours. Overtime rate: 1.5 x $18 = $27 per hour. Overtime pay: 6 x $27 = $162. Total: $720 + $162 = $882. Choice $828 pays all 46 hours at the regular $18 rate (46 x $18 = $828), ignoring the overtime premium. Choice $1,242 applies the 1.5x multiplier to every hour worked rather than only hours above 40. Choice $900 rounds the overtime pay to a clean number. Her total pay is $882.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-13",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A truck has a maximum load of 2,000 pounds. Equipment weighing 380 pounds is already on board. How many 45-pound crates can be added without exceeding the limit?",
+    "choices": ["32", "35", "36", "44"],
+    "correct_index": 2,
+    "explanation": "Two steps: find remaining weight capacity after the existing load, then divide by crate weight. Remaining capacity: 2,000 - 380 = 1,620 pounds available. Crates that fit: 1,620 / 45 = 36 exactly, with no remainder. Verify: 36 x 45 = 1,620, exactly filling the remaining capacity. Choice 44 divides the full 2,000 by 45, ignoring the 380 pounds of equipment already on board. Choice 35 rounds the answer down by one, even though 36 crates fit perfectly. Choice 32 reflects dividing by 50 instead of 45, a misread weight. The truck can carry 36 more crates.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-14",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "Two vehicles start 270 miles apart and drive toward each other. One travels at 55 mph and the other at 35 mph. How many hours until they meet?",
+    "choices": ["2.7", "3", "4", "5"],
+    "correct_index": 1,
+    "explanation": "When two objects move toward each other, the gap between them shrinks at a rate equal to the sum of their speeds. Add the speeds first, then divide the starting distance by that combined rate. Combined closing speed: 55 + 35 = 90 mph. Time to meet: 270 / 90 = 3 hours. Verify: in 3 hours the first car covers 55 x 3 = 165 miles and the second covers 35 x 3 = 105 miles, totaling 270. Choice 2.7 divides 270 by 100, a slipped digit. Choice 4 divides by the slower speed only. Choice 5 uses the faster speed alone. They meet in 3 hours.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-15",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A tank holds 240 gallons when full. Water flows in at 8 gallons per minute while a drain removes 3 gallons per minute. Starting empty, how many minutes does it take to fill the tank?",
+    "choices": ["30", "48", "53", "80"],
+    "correct_index": 1,
+    "explanation": "Two opposing rates are at work, so find the net fill rate, then divide tank volume by that rate. Net rate: 8 gallons in minus 3 gallons out = 5 gallons per minute of actual filling. Time to fill: 240 / 5 = 48 minutes. Verify: in 48 minutes, 8 x 48 = 384 gallons flow in while 3 x 48 = 144 drain out, leaving 240 in the tank, matching its capacity. Choice 30 uses only the 8-gallon inflow, ignoring the drain. Choice 80 uses only the drain rate, inverting the problem. Choice 53 reflects a miscomputed net rate near 4.5. The tank fills in 48 minutes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-16",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 5,
+    "stem": "A student earns scores of 78, 85, and 92 on three tests. After a fourth test, her average across all four is exactly 84. What did she score on the fourth test?",
+    "choices": ["79", "81", "82", "84"],
+    "correct_index": 1,
+    "explanation": "Use the average formula: total points equals average times count. Required total: 84 x 4 = 336. Sum of first three: 78 + 85 + 92 = 255. Fourth score: 336 - 255 = 81. Choice 84 assumes the fourth score must equal the average, which only holds when the prior scores already average to 84. Choice 82 reflects an arithmetic slip in summing 78 + 85 + 92 as 254. Choice 79 subtracts in the wrong direction. She scored 81.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-17",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 5,
+    "stem": "What is the sum of all whole numbers from 1 to 50, inclusive?",
+    "choices": ["1,225", "1,275", "1,325", "2,550"],
+    "correct_index": 1,
+    "explanation": "Use the arithmetic series formula: sum equals n times (n + 1) divided by 2, where n is the largest number. Here n = 50, so sum = 50 x 51 / 2 = 2,550 / 2 = 1,275. Choice 2,550 forgets to divide by 2, reporting n times (n + 1) directly. Choice 1,225 uses n = 49 by accident, summing 1 to 49. Choice 1,325 adds 50 to 1,275 a second time. The correct sum is 1,275.",
+    "status": "draft"
+  }
+]

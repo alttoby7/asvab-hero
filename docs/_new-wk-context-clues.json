@@ -1,0 +1,123 @@
+[
+  {
+    "external_key": "WK-CTX-NEW-1",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "In the sentence 'The driver was so RECKLESS that he ran three red lights and nearly hit a pedestrian,' the word RECKLESS most nearly means:",
+    "choices": ["careless", "skilled", "patient", "cautious"],
+    "correct_index": 0,
+    "explanation": "The sentence describes a driver running three red lights and nearly hitting a pedestrian, behavior that shows no regard for safety or for traffic law. That evidence pins the meaning to 'careless.' 'Skilled' contradicts the near-collision, since skilled driving would avoid that outcome rather than produce it. 'Patient' contradicts running red lights, which is impatient behavior that refuses to wait. 'Cautious' is the direct opposite of ignoring traffic signals and endangering people on foot. Only 'careless' matches a driver who disregards rules and consequences at once.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-2",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "In the sentence 'Her argument was so COMPELLING that even her opponents agreed she was right,' the word COMPELLING most nearly means:",
+    "choices": ["persuasive", "lengthy", "confusing", "polite"],
+    "correct_index": 0,
+    "explanation": "The evidence is that even her opponents agreed she was right, an outcome that only happens when an argument actually convinces the people who started out against it. That pins the meaning to 'persuasive.' 'Lengthy' describes duration and would not by itself flip opponents to agreement, since long arguments often bore listeners. 'Confusing' contradicts the outcome, since a confusing argument would not produce agreement from anyone. 'Polite' describes tone, not force, and politeness alone does not change opponents' minds. Only 'persuasive' explains why opponents conceded the point against their own position.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-3",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "In the sentence 'The hiking trail was so OBSCURE that we had to push aside branches just to see where it went,' the word OBSCURE most nearly means:",
+    "choices": ["hidden", "popular", "steep", "wide"],
+    "correct_index": 0,
+    "explanation": "The evidence is having to push aside branches just to see the trail, which means the path was concealed from view. That pins the meaning to 'hidden.' 'Popular' contradicts the overgrown condition, since a popular trail would be cleared by foot traffic. 'Steep' describes incline, not visibility, and pushing branches aside is about seeing the path, not climbing it. 'Wide' contradicts a trail covered by branches. Only 'hidden' fits a path that has to be uncovered to follow.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-4",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "In the sentence 'She was METHODICAL about her morning routine, doing every task in the same order at the same time each day,' the word METHODICAL most nearly means:",
+    "choices": ["systematic", "rushed", "cheerful", "lazy"],
+    "correct_index": 0,
+    "explanation": "The evidence is doing every task in the same order at the same time each day, which describes a fixed system rather than a loose habit. That pins the meaning to 'systematic.' 'Rushed' contradicts a routine performed at consistent times, since rushing varies with pressure and rarely repeats on schedule. 'Cheerful' describes mood and is not implied by repeating an order of tasks on a clock. 'Lazy' contradicts the discipline of completing every task daily without skipping any. Only 'systematic' captures a routine governed by both order and timing.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-5",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "In the sentence 'After learning he had passed the bar exam, Marcus felt EUPHORIC and called everyone he knew to share the news,' the word EUPHORIC most nearly means:",
+    "choices": ["overjoyed", "anxious", "exhausted", "indifferent"],
+    "correct_index": 0,
+    "explanation": "The evidence is passing the bar exam and calling everyone he knew to share the news, behavior driven by intense happiness rather than ordinary satisfaction. That pins the meaning to 'overjoyed.' 'Anxious' contradicts the celebration, since an anxious person would not broadcast good news to a long list of contacts. 'Exhausted' would mean wanting rest after the strain of the exam, not picking up the phone to call person after person. 'Indifferent' contradicts the eagerness to tell everyone, since indifference produces silence. Only 'overjoyed' explains the impulse to share the achievement so widely.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-6",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "In the sentence 'The loss of her grandmother had a PROFOUND effect on her, changing how she viewed family and time,' the word PROFOUND most nearly means:",
+    "choices": ["deep", "brief", "amusing", "unclear"],
+    "correct_index": 0,
+    "explanation": "The evidence is that the loss changed how she viewed family and time, which describes a fundamental shift in outlook rather than a passing reaction. That pins the meaning to 'deep.' 'Brief' contradicts a change in worldview, which by definition persists once it takes hold. 'Amusing' contradicts grief over a grandmother's death and the serious reflection that followed. 'Unclear' contradicts the sentence, which names exactly what changed in concrete terms: her view of family and her view of time. Only 'deep' fits an effect that reaches a person's core perspective and reshapes it.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-7",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'The monk lived in an AUSTERE cabin with only a wooden bed, a single chair, and one bowl,' the word AUSTERE most nearly means:",
+    "choices": ["plain", "luxurious", "crowded", "cheerful"],
+    "correct_index": 0,
+    "explanation": "The evidence is a cabin with only a wooden bed, a single chair, and one bowl, an inventory stripped of comfort and limited to bare necessities. That pins the meaning to 'plain.' 'Luxurious' is the direct opposite of owning three sparse items made of wood and clay. 'Crowded' contradicts the short list of furnishings, which signals emptiness rather than abundance of objects. 'Cheerful' describes mood, and the bare list conveys severity and restraint rather than warmth or decoration. Only 'plain' fits a dwelling defined by the deliberate absence of extras.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-8",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'The climber's grip on the icy ledge was PRECARIOUS, and a single gust of wind could have sent her falling,' the word PRECARIOUS most nearly means:",
+    "choices": ["unstable", "firm", "comfortable", "permanent"],
+    "correct_index": 0,
+    "explanation": "The evidence is that a single gust of wind could have sent her falling, which describes a hold one small force away from failing completely. That pins the meaning to 'unstable.' 'Firm' contradicts the risk of falling from a breeze, since a firm grip would withstand normal weather. 'Comfortable' contradicts hanging on an icy ledge with no margin for error or rest. 'Permanent' contradicts a grip that could end in an instant from one passing gust. Only 'unstable' captures a position that depends entirely on conditions not changing, even for a second.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-9",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 4,
+    "stem": "In the sentence 'Critics called the new album DERIVATIVE, pointing out that nearly every song borrowed melodies from earlier hits by other artists,' the word DERIVATIVE most nearly means:",
+    "choices": ["unoriginal", "complex", "popular", "experimental"],
+    "correct_index": 0,
+    "explanation": "The evidence is that nearly every song borrowed melodies from earlier hits by other artists, which is the textbook definition of work taken from existing sources. That pins the meaning to 'unoriginal.' 'Complex' describes structure and is not implied by copying melodies. 'Popular' describes reception, not source, and critics are faulting the album rather than praising its sales. 'Experimental' contradicts borrowing from established hits, since experimentation departs from familiar material. Only 'unoriginal' matches the critics' charge.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-10",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 4,
+    "stem": "In the sentence 'The doctor assured the worried parents that the small bump was INNOCUOUS and would fade on its own within a week,' the word INNOCUOUS most nearly means:",
+    "choices": ["harmless", "painful", "contagious", "permanent"],
+    "correct_index": 0,
+    "explanation": "The evidence is the doctor reassuring worried parents and predicting the bump would fade within a week, two signals that together rule out anything dangerous. That pins the meaning to 'harmless.' 'Painful' contradicts reassurance offered to anxious parents, since pain would call for treatment rather than calm. 'Contagious' would prompt warnings about spread to other family members, not assurance about a quick fade. 'Permanent' is the direct opposite of fading on its own within a week. Only 'harmless' fits a finding that calms parents and predicts a quiet resolution without intervention.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-11",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 5,
+    "stem": "In the sentence 'His FACETIOUS remark about the bride's dress at the rehearsal made everyone uncomfortable, since no one could tell whether he meant the insult or was only joking,' the word FACETIOUS most nearly means:",
+    "choices": ["flippant", "sincere", "respectful", "tearful"],
+    "correct_index": 0,
+    "explanation": "The evidence is that listeners could not tell whether he meant the insult or was only joking, which describes humor offered at an inappropriate moment. That pins the meaning to 'flippant.' 'Sincere' contradicts the possibility that he was joking, since sincere speech is meant straight. 'Respectful' contradicts insulting a bride at her rehearsal. 'Tearful' describes emotion and does not match a remark that reads as a joke. Only 'flippant' captures a comment that treats a serious moment as material for humor.",
+    "status": "draft"
+  }
+]

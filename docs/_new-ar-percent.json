@@ -1,0 +1,156 @@
+[
+  {
+    "external_key": "AR-PC-NEW-1",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "What is 25% of 60?",
+    "choices": ["12", "15", "18", "20"],
+    "correct_index": 1,
+    "explanation": "Percent of an amount uses the formula (percent/100) x amount. Plug in: 0.25 x 60 = 15. Choice 12 comes from using 20% instead of 25%, reading the percent loosely. Choice 18 comes from using 30% instead of 25%, also a misread. Choice 20 results from dividing 60 by 3, which would be one-third, not one-quarter. Reading 25% as one-quarter is a useful shortcut: 60 divided by 4 equals 15. Either method, formula or fraction conversion, lands on 15 cleanly.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-2",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "30 is what percent of 150?",
+    "choices": ["15%", "20%", "25%", "30%"],
+    "correct_index": 1,
+    "explanation": "Percent-of-total uses the formula (part/whole) x 100. Plug in: (30/150) x 100 = 20%. A quick check: 150 divided by 5 equals 30, so 30 is one-fifth of 150, and one-fifth is 20%. Choice 15% halves the part incorrectly. Choice 25% comes from dividing 30 by 120 instead of 150, a wrong-base error that ignores the stated total. Choice 30% mistakes the part value for the answer, ignoring that the question asks for a ratio. The whole always goes in the denominator.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-3",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "What is 15% of 80?",
+    "choices": ["8", "10", "12", "16"],
+    "correct_index": 2,
+    "explanation": "Percent of an amount uses (percent/100) x amount. Plug in: 0.15 x 80 = 12. A fast method splits 15% into 10% plus 5%: 10% of 80 is 8, 5% of 80 is 4, and the sum is 12. Choice 8 stops at 10% and forgets the extra 5%. Choice 10 comes from rough rounding between the two pieces. Choice 16 doubles to 20% by mistake, treating 15% as if it were closer to one-fifth. The 10%-plus-5% trick handles most tip-style and sales-tax calculations quickly without a calculator.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-4",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "A recruit answered 18 questions correctly out of 20. What percent did the recruit get right?",
+    "choices": ["80%", "85%", "90%", "95%"],
+    "correct_index": 2,
+    "explanation": "Percent correct uses (correct/total) x 100. Plug in: (18/20) x 100 = 90%. Choice 80% comes from inverting the ratio and reading 2 wrong out of 10 as 20% wrong, then subtracting incorrectly. Choice 85% splits the difference without computing. Choice 95% comes from treating 1 missed question as 5% instead of 2 missed as 10%. The shortcut: each missed question out of 20 is worth 5 percentage points, so 2 missed equals 10 points off 100%.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-5",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A $50 shirt is on sale for 30% off. What is the sale price?",
+    "choices": ["$15", "$20", "$30", "$35"],
+    "correct_index": 3,
+    "explanation": "Sale price after a percent discount uses original x (1 - discount). Plug in: 50 x 0.70 = $35. Choice $15 confuses percent off with percent paid: 30% of 50 is the discount amount, not the price paid. Choice $20 comes from subtracting 30 directly from 50, treating the percent as a dollar amount. Choice $30 comes from using 40% off instead of 30%. The customer always pays (100 - discount)% of the original, which here is 70% of $50.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-6",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A dinner bill is $80. With an 18% tip, what is the total amount paid?",
+    "choices": ["$14.40", "$80.18", "$94.40", "$98.00"],
+    "correct_index": 2,
+    "explanation": "Total with tip uses bill x (1 + tip rate). Plug in: 80 x 1.18 = $94.40. The tip alone is 0.18 x 80 = $14.40, which appears as choice $14.40 but represents only the tip, not the total. Choice $80.18 treats 18% as 18 cents, a decimal-place error. Choice $98.00 uses 22.5% rounding or adds $18 flat instead of 18%. The question asks for the total paid, so the tip must be added to the original bill.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-7",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A recruit increased pushup reps from 100 to 125. What is the percent increase?",
+    "choices": ["20%", "25%", "30%", "125%"],
+    "correct_index": 1,
+    "explanation": "Percent increase uses (new - old)/old x 100. Plug in: (125 - 100)/100 x 100 = 25 / 100 x 100 = 25%. Choice 20% uses the new value 125 as the denominator (25/125), a wrong-base error common in percent-change problems. Choice 30% comes from rough estimation between 25 and 33. Choice 125% treats the new total as the percent change instead of computing the change relative to the starting value. The original value always goes in the denominator for percent change, because the question asks how much the count grew compared with where it started.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-8",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A $200 item has an 8% sales tax. What is the total cost?",
+    "choices": ["$208", "$212", "$216", "$280"],
+    "correct_index": 2,
+    "explanation": "Total with tax uses price x (1 + tax rate). Plug in: 200 x 1.08 = $216. Tax alone is 0.08 x 200 = $16. Choice $208 treats 8% as 8 dollars flat. Choice $212 uses 6% by mistake. Choice $280 confuses 8% with 40% or treats tax as a much larger rate. The shortcut for 8% of any round number: take 10% and subtract a quarter of it. 10% of 200 is 20, a quarter of 20 is 5, so 8% is 15. Close to the exact $16.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-9",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A practice score rose from 40 to 52. What is the percent increase?",
+    "choices": ["12%", "23%", "30%", "52%"],
+    "correct_index": 2,
+    "explanation": "Percent increase uses (new - old)/old x 100. Plug in: (52 - 40)/40 x 100 = 12/40 x 100 = 30%. Choice 23% divides by the new value 52 instead of the original 40, the classic wrong-base error. Choice 12% reports the raw point gain as a percent, ignoring the formula. Choice 52% mistakes the new score for the answer. The original value is always the denominator in percent change problems, because the question asks how much it grew relative to where it started.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-10",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A $500 loan charges 6% simple interest per year. How much interest accrues over 2 years?",
+    "choices": ["$30", "$53", "$60", "$66"],
+    "correct_index": 2,
+    "explanation": "Simple interest uses I = principal x rate x time. Plug in: 500 x 0.06 x 2 = $60. Choice $30 forgets the time factor and computes only one year of interest. Choice $53 reflects compound interest treatment, which is not the same formula and is not asked here. Choice $66 treats the rate as 6.6% or adds an extra period. Simple interest never compounds: each year adds the same fixed dollar amount, calculated from the original principal only.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-11",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A mile time dropped from 8:00 minutes to 6:00 minutes. What is the percent decrease?",
+    "choices": ["20%", "25%", "33%", "75%"],
+    "correct_index": 1,
+    "explanation": "Percent decrease uses (old - new)/old x 100. Plug in: (8 - 6)/8 x 100 = 2/8 x 100 = 25%. Choice 20% comes from dividing by 10 or a similar wrong-base slip. Choice 33% divides by the new value 6 instead of the original 8, a wrong-base error that inflates the answer. Choice 75% reports the ratio of new to old (6/8) as if it were the decrease, confusing percent remaining with percent change. Faster runs mean a decrease in time, but the formula stays the same.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-12",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 4,
+    "stem": "A jacket costs $80. It is marked down 25%, then 8% sales tax is added to the sale price. What is the final price?",
+    "choices": ["$60.00", "$62.40", "$64.80", "$67.00"],
+    "correct_index": 2,
+    "explanation": "Sequential percent changes apply one at a time. Step 1: 80 x 0.75 = $60 sale price. Step 2: 60 x 1.08 = $64.80 final. Choice $60.00 stops after the discount and forgets to add tax. Choice $62.40 applies tax to the original $80 instead of the discounted $60, then subtracts the discount, an order error. Choice $67.00 combines 25% off and 8% tax into a single 17% net change, but sequential percentages on different bases do not add directly. The base for tax is the sale price, not the sticker price.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-13",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 4,
+    "stem": "After a 20% discount, a backpack costs $48. What was the original price?",
+    "choices": ["$57.60", "$60.00", "$68.00", "$76.80"],
+    "correct_index": 1,
+    "explanation": "Working backward from a discounted price uses original = sale/(1 - discount). Plug in: 48/0.80 = $60. Choice $57.60 multiplies $48 by 1.20, treating the discount as if it added back as a percent increase on the sale price, but 20% of $48 is not the same as 20% of the original. Choice $68 adds a flat $20 to the sale price. Choice $76.80 divides by 0.625 or applies the wrong adjustment. The sale price represents 80% of the original, so dividing by 0.80 recovers 100%.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-14",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 5,
+    "stem": "A stock rises 20% one month, then falls 20% the next month. What is the net percent change from the starting price?",
+    "choices": ["0% (no change)", "4% decrease", "4% increase", "20% decrease"],
+    "correct_index": 1,
+    "explanation": "Chained percent changes apply to different bases. Start with 1.00, multiply by 1.20 for the rise: 1.20. Then multiply by 0.80 for the fall: 1.20 x 0.80 = 0.96, which is a 4% decrease from the start. Choice 0% adds the percentages directly (+20 - 20 = 0), the classic trap, but the 20% drop applies to a larger base than the 20% gain did. Choice 4% increase reverses the direction. Choice 20% decrease ignores the first rise entirely. Equal-percent up-then-down sequences always net to a small loss.",
+    "status": "draft"
+  }
+]

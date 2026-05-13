@@ -1,0 +1,178 @@
+[
+  {
+    "external_key": "MK-GE-NEW-1",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "A rectangular rug measures 8 ft by 5 ft. What is its area?",
+    "choices": ["13 sq ft", "26 sq ft", "40 sq ft", "45 sq ft"],
+    "correct_index": 2,
+    "explanation": "Area of a rectangle is length times width: 8 times 5 equals 40 square feet. Choice 13 sq ft adds the sides instead of multiplying. Choice 26 sq ft computes the perimeter (2 times 8 plus 2 times 5) and confuses it with area. Choice 45 sq ft is 9 times 5, a multiplication slip. Area always carries square units; perimeter carries linear units. When the question asks how much surface a rug covers, you want square feet, which signals area, not perimeter.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-2",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "What is the circumference of a circle with radius 6 in? Use pi equals 3.14.",
+    "choices": ["18.84 in", "28.26 in", "37.68 in", "113.04 in"],
+    "correct_index": 2,
+    "explanation": "Circumference equals 2 pi r: 2 times 3.14 times 6 equals 37.68 inches. Choice 18.84 in uses pi r and forgets the factor of 2. Choice 28.26 in is pi times r squared divided by 4, a garbled mix of formulas. Choice 113.04 in is the area pi r squared (3.14 times 36), which is square inches, not linear inches. Circumference is a distance around the circle, so the units must be linear inches, not square inches.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-3",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "A square patio has sides of 7 ft. What is its perimeter?",
+    "choices": ["14 ft", "21 ft", "28 ft", "49 ft"],
+    "correct_index": 2,
+    "explanation": "Perimeter of a square is 4 times the side length: 4 times 7 equals 28 feet. Choice 14 ft doubles the side as if the figure were a line segment with two ends. Choice 21 ft uses three sides only. Choice 49 ft is 7 squared, which gives the area in square feet, not the perimeter in linear feet. Perimeter measures the fence-line distance around the patio, so it must use linear units and count all four equal sides.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-4",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "A triangle has a base of 10 cm and a height of 6 cm. What is its area?",
+    "choices": ["16 sq cm", "30 sq cm", "60 sq cm", "120 sq cm"],
+    "correct_index": 1,
+    "explanation": "Area of a triangle is one-half base times height: 0.5 times 10 times 6 equals 30 square centimeters. Choice 16 sq cm adds base and height instead of multiplying. Choice 60 sq cm forgets the one-half factor and treats the triangle like a rectangle. Choice 120 sq cm doubles that error. The one-half factor exists because a triangle is exactly half of a rectangle with the same base and height, so any triangle area must include it.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-5",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "A right triangle has legs of 6 in and 8 in. What is the length of the hypotenuse?",
+    "choices": ["10 in", "12 in", "14 in", "48 in"],
+    "correct_index": 0,
+    "explanation": "Using the Pythagorean theorem, a squared plus b squared equals c squared: 36 plus 64 equals 100, so c equals the square root of 100, which is 10 inches. Choice 12 in adds the legs as if perimeter mattered (it does not for hypotenuse). Choice 14 in is just 6 plus 8. Choice 48 in multiplies the legs. The 6-8-10 triple is a scaled 3-4-5; recognizing it on sight saves time. The hypotenuse is always the side opposite the right angle and is the longest side.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-6",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "What is the surface area of a cube with edge length 4 in?",
+    "choices": ["16 sq in", "64 sq in", "96 sq in", "384 sq in"],
+    "correct_index": 2,
+    "explanation": "A cube has 6 identical square faces. Each face has area 4 squared, which is 16 square inches. Total surface area is 6 times 16, which equals 96 square inches. Choice 16 sq in gives only one face. Choice 64 sq in is 4 cubed, the volume in cubic inches. Choice 384 sq in is 6 times 64, mixing volume with the face count. Surface area uses square units; volume uses cubic units. Watching units catches the volume-vs-surface confusion fast.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-7",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A rectangular shipping crate is 5 ft long, 3 ft wide, and 2 ft tall. What is its volume?",
+    "choices": ["10 cubic ft", "15 cubic ft", "30 cubic ft", "62 cubic ft"],
+    "correct_index": 2,
+    "explanation": "Volume of a rectangular prism is length times width times height: 5 times 3 times 2 equals 30 cubic feet. Choice 10 cubic ft multiplies only length and height, omitting width. Choice 15 cubic ft multiplies length and width and forgets the height entirely, a common error when people stop at base area. Choice 62 cubic ft is the surface area 2(lw + lh + wh), not the volume. Volume needs all three dimensions and uses cubic units.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-8",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A soda can is shaped like a cylinder with radius 2 in and height 5 in. What is its volume? Use pi equals 3.14.",
+    "choices": ["31.4 cubic in", "62.8 cubic in", "78.5 cubic in", "125.6 cubic in"],
+    "correct_index": 1,
+    "explanation": "Volume of a cylinder is pi r squared times height: 3.14 times 4 times 5 equals 62.8 cubic inches. Choice 31.4 cubic in uses pi r h, forgetting to square the radius. Choice 78.5 cubic in is pi r squared times r, using radius instead of height. Choice 125.6 cubic in doubles the answer, likely from using diameter (4) where radius (2) belongs and then squaring. Always square the radius in pi r squared and keep diameter and radius separated.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-9",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A right triangle has one leg of 5 m and a hypotenuse of 13 m. What is the length of the other leg?",
+    "choices": ["8 m", "12 m", "14 m", "18 m"],
+    "correct_index": 1,
+    "explanation": "Use a squared plus b squared equals c squared, where c is the hypotenuse: 5 squared plus b squared equals 13 squared, so 25 plus b squared equals 169. Then b squared equals 144, and b equals 12 meters. Choice 8 m subtracts 5 from 13 as if the sides were collinear. Choice 14 m adds them. Choice 18 m is 13 plus 5. This is the 5-12-13 triple. The hypotenuse is the longest side and always sits opposite the right angle.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-10",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "What is the area of a circle with diameter 10 cm? Use pi equals 3.14.",
+    "choices": ["15.7 sq cm", "31.4 sq cm", "78.5 sq cm", "314 sq cm"],
+    "correct_index": 2,
+    "explanation": "First convert diameter to radius: 10 divided by 2 equals 5 cm. Area is pi r squared: 3.14 times 25 equals 78.5 square centimeters. Choice 15.7 sq cm is half the circumference, mixing formulas. Choice 31.4 sq cm is the circumference using the diameter (pi times d). Choice 314 sq cm squares the diameter instead of the radius (3.14 times 100). Whenever a circle problem gives diameter, halve it before using pi r squared so the radius is squared, not the diameter.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-11",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "Two triangles are similar. The smaller has sides 4, 6, and 8 in. The longest side of the larger triangle is 20 in. What is the length of its shortest side?",
+    "choices": ["10 in", "12 in", "15 in", "16 in"],
+    "correct_index": 0,
+    "explanation": "Similar triangles have a constant scale factor. The longest side scales from 8 to 20, so the factor is 20 divided by 8, which equals 2.5. The shortest side scales from 4 in, so 4 times 2.5 equals 10 inches. Choice 12 in scales the middle side (6 times 2). Choice 15 in scales the middle side by 2.5 (correct factor, wrong side). Choice 16 in doubles the shortest side using a factor of 2 from a wrong pairing. Always pair corresponding sides before computing the scale factor.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-12",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "A garden is a rectangle 12 ft by 6 ft with a semicircle attached to one short end. What is the total area? Use pi equals 3.14.",
+    "choices": ["72 sq ft", "86.13 sq ft", "100.26 sq ft", "172.5 sq ft"],
+    "correct_index": 1,
+    "explanation": "The rectangle area is 12 times 6, which equals 72 square feet. The semicircle sits on the short end, so its diameter is 6 ft and its radius is 3 ft. A full circle would be pi times 9, or 28.26; half of that is 14.13 square feet. Total area is 72 plus 14.13, which equals 86.13 square feet. Choice 72 sq ft skips the semicircle. Choice 100.26 sq ft adds a full circle instead of a half. Choice 172.5 sq ft uses the wrong radius (6 instead of 3) and forgets to halve.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-13",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "A circle has radius 12 in. What is the length of an arc that subtends a central angle of 90 degrees? Use pi equals 3.14.",
+    "choices": ["9.42 in", "18.84 in", "37.68 in", "75.36 in"],
+    "correct_index": 1,
+    "explanation": "A 90-degree central angle is one-fourth of the full 360-degree circle, so the arc is one-fourth of the circumference. Circumference is 2 pi r: 2 times 3.14 times 12 equals 75.36 inches. One-fourth of 75.36 is 18.84 inches. Choice 9.42 in halves the radius then takes one-fourth, double-shrinking. Choice 37.68 in is half the circumference (a semicircle, not a quarter). Choice 75.36 in is the full circumference. Match the angle fraction to the full 360 before slicing the circumference.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-14",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "What is the surface area of a closed cylinder with radius 3 ft and height 7 ft? Use pi equals 3.14.",
+    "choices": ["131.88 sq ft", "188.4 sq ft", "197.82 sq ft", "263.76 sq ft"],
+    "correct_index": 1,
+    "explanation": "Surface area of a closed cylinder is 2 pi r squared plus 2 pi r h. The two circular ends are 2 times 3.14 times 9, which equals 56.52 square feet. The side is 2 times 3.14 times 3 times 7, which equals 131.88 square feet. Total is 56.52 plus 131.88, which equals 188.4 square feet. Choice 131.88 sq ft is the lateral side only and forgets the two ends. Choice 197.82 sq ft is the volume pi r squared h (3.14 times 9 times 7), wrong formula entirely. Choice 263.76 sq ft double-counts the side.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-15",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "Two parallel lines are cut by a transversal. One of the angles formed measures 65 degrees. What is the measure of its co-interior (same-side interior) angle?",
+    "choices": ["25 degrees", "65 degrees", "115 degrees", "130 degrees"],
+    "correct_index": 2,
+    "explanation": "When parallel lines are cut by a transversal, co-interior (same-side interior) angles are supplementary, so they sum to 180 degrees. 180 minus 65 equals 115 degrees. Choice 25 degrees uses 90 minus 65, treating the angles as complementary, which would only apply if they summed to a right angle. Choice 65 degrees treats them as corresponding or alternate-interior angles, which are equal but not the relationship asked for. Choice 130 degrees doubles 65, a slip. Same-side interior pairs are always supplementary when the lines are parallel.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-16",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "In a 30-60-90 triangle, the shorter leg is 5 in. What is the length of the hypotenuse?",
+    "choices": ["5 in", "10 in", "5 times square root of 3 in", "10 times square root of 3 in"],
+    "correct_index": 1,
+    "explanation": "In a 30-60-90 right triangle, the side ratios are 1 to square root of 3 to 2, corresponding to the sides opposite the 30, 60, and 90 degree angles. The shorter leg (opposite 30) is 5 in, so the hypotenuse (opposite 90) is 2 times the shorter leg, which is 10 inches. Choice 5 in repeats the shorter leg. Choice 5 times square root of 3 in is the longer leg (opposite 60), not the hypotenuse. Choice 10 times square root of 3 in doubles the longer leg, mixing two ratios. The hypotenuse is always opposite the right angle and is twice the shorter leg in a 30-60-90.",
+    "status": "draft"
+  }
+]

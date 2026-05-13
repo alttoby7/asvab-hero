@@ -1,0 +1,178 @@
+[
+  {
+    "external_key": "AR-RD-NEW-1",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A car travels at a steady 55 mph for 4 hours. How far does it go?",
+    "choices": ["13.75 miles", "59 miles", "220 miles", "275 miles"],
+    "correct_index": 2,
+    "explanation": "Use D = R x T. Distance equals 55 mph times 4 hours, which is 220 miles. The choice 13.75 reverses the operation and divides 55 by 4. The choice 59 adds rate and time instead of multiplying. The choice 275 uses 5 hours instead of 4, a common slip when rereading the problem. Always identify which quantity is missing and pick the matching form of the formula before plugging in numbers.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-2",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A cyclist rides 36 miles at 12 mph. How long does the ride take?",
+    "choices": ["2 hours", "3 hours", "4 hours", "24 hours"],
+    "correct_index": 1,
+    "explanation": "Use T = D / R. Time equals 36 miles divided by 12 mph, which is 3 hours. The choice 2 divides 36 by 18 by mistake. The choice 4 divides 36 by 9, often from misreading the rate. The choice 24 multiplies distance by 2 instead of dividing, the classic operation-flip trap. When you want time, isolate it on one side of the formula first so the arithmetic step is clear.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-3",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A runner averages 8 mph for 2 hours. How far does she run?",
+    "choices": ["4 miles", "10 miles", "16 miles", "82 miles"],
+    "correct_index": 2,
+    "explanation": "Use D = R x T. Distance equals 8 mph times 2 hours, which is 16 miles. The choice 4 divides 8 by 2, reversing the operation. The choice 10 adds the rate and time. The choice 82 concatenates the digits, a sign of skipping the formula entirely. Even with friendly numbers, write D = R x T before computing so the operation is locked in.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-4",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A train moves at 75 mph for 6 hours. How many miles does it cover?",
+    "choices": ["12.5 miles", "81 miles", "450 miles", "475 miles"],
+    "correct_index": 2,
+    "explanation": "Use D = R x T. Distance equals 75 mph times 6 hours, which is 450 miles. The choice 12.5 divides 75 by 6. The choice 81 adds the two numbers. The choice 475 comes from a multiplication slip where 75 x 6 is read as 75 x 6 + 25. Multiply column by column on scratch paper if the product is not automatic, and always pair the unit of the answer (miles) with the formula.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-5",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A car drives at 65 mph for 2.5 hours. How far does it travel?",
+    "choices": ["26 miles", "130 miles", "162.5 miles", "195 miles"],
+    "correct_index": 2,
+    "explanation": "Use D = R x T. Distance equals 65 mph times 2.5 hours, which is 162.5 miles. Compute 65 x 2 = 130, then add half of 65, which is 32.5, for 162.5. The choice 26 divides 65 by 2.5. The choice 130 ignores the half hour. The choice 195 uses 3 hours instead of 2.5. With decimal time, split the hours into whole and fractional parts and multiply each before adding.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-6",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A bus drives at 40 mph for 45 minutes. How far does it go?",
+    "choices": ["18 miles", "30 miles", "45 miles", "1,800 miles"],
+    "correct_index": 1,
+    "explanation": "Convert minutes to hours first. 45 minutes equals 0.75 hour. Then D = R x T = 40 x 0.75 = 30 miles. The choice 18 uses 0.45 hour, a unit-conversion error treating minutes as a decimal. The choice 45 simply restates the time number with the wrong unit. The choice 1,800 multiplies 40 by 45 without converting minutes. Always convert mixed time units to hours before applying the formula.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-7",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A delivery van covers 240 miles at an average speed of 48 mph. How long does the trip take?",
+    "choices": ["4 hours", "5 hours", "6 hours", "192 hours"],
+    "correct_index": 1,
+    "explanation": "Use T = D / R. Time equals 240 miles divided by 48 mph. 48 times 5 is 240, so the trip takes 5 hours. The choice 4 divides 240 by 60 by mistake. The choice 6 divides 240 by 40. The choice 192 subtracts 48 from 240, the wrong operation entirely. When the rate is close to a round number, test the round number first as a sanity check before doing long division.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-8",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A jogger runs for 1 hour 30 minutes at 22 mph on a bike-jog trail. How far does she go?",
+    "choices": ["11 miles", "23.5 miles", "33 miles", "44 miles"],
+    "correct_index": 2,
+    "explanation": "Convert 1 hour 30 minutes to 1.5 hours. Then D = R x T = 22 x 1.5 = 33 miles. Compute 22 x 1 = 22 and add half of 22, which is 11, for 33. The choice 11 reports only the half-hour portion. The choice 23.5 adds 22 and 1.5. The choice 44 uses 2 hours instead of 1.5. Mixed time formats are the most common error source, so always rewrite them as a single decimal or fraction of an hour first.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-9",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A truck covers 90 miles in 1.5 hours. What is its average speed?",
+    "choices": ["45 mph", "60 mph", "75 mph", "135 mph"],
+    "correct_index": 1,
+    "explanation": "Use R = D / T. Speed equals 90 miles divided by 1.5 hours, which is 60 mph. Multiply numerator and denominator by 2 to clear the decimal: 180 / 3 = 60. The choice 45 divides 90 by 2 instead of 1.5. The choice 75 splits the difference between 90 and 60 in a guessing pattern. The choice 135 multiplies 90 by 1.5 instead of dividing, the classic operation flip when solving for rate.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-10",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A driver covers the first 120 miles at 60 mph and the next 180 miles at 45 mph. What is the average speed for the entire trip?",
+    "choices": ["50 mph", "52.5 mph", "54 mph", "55 mph"],
+    "correct_index": 0,
+    "explanation": "Average speed equals total distance divided by total time, not the average of the two rates. Time for leg one is 120 / 60 = 2 hours. Time for leg two is 180 / 45 = 4 hours. Total distance is 300 miles in 6 hours, so the average is 50 mph. The choice 52.5 is the arithmetic mean of 60 and 45, the classic trap. The choices 54 and 55 weight the legs incorrectly. When segments differ in length and rate, always sum the actual times.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-11",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "Two cars leave the same point heading the same direction. Car A travels at 50 mph and Car B travels at 65 mph. How far apart are they after 3 hours?",
+    "choices": ["15 miles", "45 miles", "150 miles", "345 miles"],
+    "correct_index": 1,
+    "explanation": "Same direction, so use the rate difference. The gap grows at 65 - 50 = 15 mph. After 3 hours the gap is 15 x 3 = 45 miles. The choice 15 reports only the rate difference and forgets the time. The choice 150 uses the sum of the rates, which would apply only if the cars were heading opposite directions. The choice 345 adds the two distances they traveled. For chase problems, work with the difference of the rates from the start.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-12",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A hiker walks 3 miles at 4 mph, then 5 miles at 5 mph. How long does the full hike take?",
+    "choices": ["1 hour", "1.5 hours", "1.75 hours", "2 hours"],
+    "correct_index": 2,
+    "explanation": "Compute each leg separately, then add. Leg one takes 3 / 4 = 0.75 hour. Leg two takes 5 / 5 = 1 hour. Total time is 0.75 + 1 = 1.75 hours. The choice 1 reports only the second leg. The choice 1.5 averages the two legs incorrectly. The choice 2 rounds 1.75 up to a tidier number. Resist the urge to average times or rates across legs of different lengths. Sum the actual minutes each piece takes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-13",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 4,
+    "stem": "A car leaves a rest stop at 60 mph. One hour later, a second car leaves the same rest stop on the same road at 75 mph. How far from the rest stop does the second car catch the first?",
+    "choices": ["240 miles", "270 miles", "300 miles", "375 miles"],
+    "correct_index": 2,
+    "explanation": "When the second car starts, the first car has a 60-mile head start. The closing speed is 75 - 60 = 15 mph. Catch-up time is 60 / 15 = 4 hours. Distance from the rest stop is 75 x 4 = 300 miles. The choice 240 uses the slower car's distance at 4 hours, which is the same point but computed inconsistently in a way that often misfires. The choice 270 averages the two cars. The choice 375 uses 5 hours by mistake. Track who starts when and which rate is the gap closer.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-14",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 4,
+    "stem": "Two trains start 360 miles apart and head toward each other on parallel tracks. One travels at 55 mph and the other at 65 mph. How long until they meet?",
+    "choices": ["2 hours", "3 hours", "3.6 hours", "6 hours"],
+    "correct_index": 1,
+    "explanation": "When two objects move toward each other, add the rates to get the closing speed. 55 + 65 = 120 mph. Time to meet is 360 / 120 = 3 hours. The choice 2 uses only one rate. The choice 3.6 divides 360 by 100, a common slip when adding rates carelessly. The choice 6 uses the difference of the rates instead of the sum, which applies to same-direction chase problems. Sum for converging motion, subtract for catch-up.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-15",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 5,
+    "stem": "A boat moves at 15 mph in still water. On a river with a 3 mph current, the boat travels 36 miles downstream and then 36 miles back upstream. How long does the round trip take?",
+    "choices": ["4 hours", "4.8 hours", "5 hours", "6 hours"],
+    "correct_index": 2,
+    "explanation": "Downstream the current adds to the boat speed, so the effective rate is 15 + 3 = 18 mph. Upstream the current subtracts, giving 15 - 3 = 12 mph. Downstream time is 36 / 18 = 2 hours. Upstream time is 36 / 12 = 3 hours. Total is 5 hours. The choice 4 averages the two leg times. The choice 4.8 divides total distance 72 by 15, ignoring the current. The choice 6 divides 72 by 12, using only the slower leg's rate. Compute each leg with its own effective rate.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-16",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 5,
+    "stem": "A plane flies 600 miles with a 40 mph tailwind, then returns the same 600 miles against a 40 mph headwind. Its airspeed in still air is 200 mph. What is the total flight time for the round trip?",
+    "choices": ["5 hours", "6 hours", "6.25 hours", "7.5 hours"],
+    "correct_index": 2,
+    "explanation": "Ground speed outbound is 200 + 40 = 240 mph. Ground speed returning is 200 - 40 = 160 mph. Outbound time is 600 / 240 = 2.5 hours. Return time is 600 / 160 = 3.75 hours. Total is 6.25 hours. The choice 5 ignores the wind and uses 1,200 / 240. The choice 6 averages the two leg times. The choice 7.5 doubles 3.75, treating both legs as the slow leg. The arithmetic mean of two rates never gives the right round-trip time when distances are equal but rates differ.",
+    "status": "draft"
+  }
+]

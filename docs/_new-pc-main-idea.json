@@ -1,0 +1,290 @@
+[
+  {
+    "external_key": "PC-MI-NEW-1",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Hand-washing is the single most effective way to prevent the spread of common illnesses. Soap breaks down the oils on skin that hold germs in place, allowing running water to rinse them away. Twenty seconds of scrubbing is enough to remove most contaminants. Public health agencies continue to promote this simple habit because no vaccine or medication matches its everyday impact. What is the main idea of this passage?",
+    "choices": [
+      "Hand-washing is the most effective everyday way to prevent the spread of illness.",
+      "Soap dissolves oils that trap germs on the skin.",
+      "Twenty seconds of scrubbing removes most contaminants from hands.",
+      "Public health depends entirely on individual hygiene habits."
+    ],
+    "correct_index": 0,
+    "explanation": "The first sentence states the thesis directly and the rest of the passage supports it with mechanism and endorsement. Choice B describes how soap works, a supporting detail, not the central claim. Choice C cites a specific scrubbing duration, again a detail in service of the main point. Choice D over-generalizes by claiming public health depends entirely on hygiene, a stronger claim than the passage makes. Only the keyed option restates the explicit topic sentence without adding or narrowing its scope.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-2",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "A library card offers more than free books. Most public libraries now lend audiobooks, streaming films, museum passes, and even hotspots for home internet. Cardholders can attend tax workshops, language classes, and resume clinics at no cost. The card has quietly become one of the most versatile free resources available to residents. Which statement best expresses the main idea?",
+    "choices": [
+      "A library card gives access to a wide range of free resources beyond books.",
+      "Libraries lend internet hotspots to people without home service.",
+      "Tax workshops and resume clinics are popular library offerings.",
+      "Public libraries are the most important institutions in any community."
+    ],
+    "correct_index": 0,
+    "explanation": "The opening sentence states that a card offers more than books, and the rest of the passage lists examples of that range plus the free-resource framing. Choice B isolates the internet-hotspot service, a single supporting detail. Choice C names two specific workshop programs from the example list, again narrower than the central claim. Choice D inflates the argument to call libraries the most important institutions, language the passage never uses and a clear over-generalization. The keyed option mirrors the opening sentence and captures the variety theme that ties the supporting details together.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-3",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Sleep is essential for memory consolidation. During deep sleep, the brain replays the day's experiences and strengthens the neural connections tied to important information. People who sleep fewer than six hours a night routinely score lower on memory tests the next day. Adequate rest is not a luxury for students; it is part of the learning process itself. What is the main idea of this passage?",
+    "choices": [
+      "Adequate sleep is essential for forming and retaining memories.",
+      "Sleeping less than six hours lowers next-day memory test scores.",
+      "The brain replays daily experiences during deep sleep.",
+      "Students should treat sleep as more important than studying."
+    ],
+    "correct_index": 0,
+    "explanation": "The first sentence names sleep as essential for memory consolidation, and the closing sentence reinforces it by calling rest part of the learning process itself. Choice B reports a specific finding about test scores cited as supporting evidence rather than the central claim. Choice C describes the neural replay mechanism, another piece of supporting detail that explains why the thesis holds. Choice D over-generalizes by ranking sleep above studying, a direct comparison the passage does not make. The keyed answer captures the central claim that sleep and memory formation are tightly linked.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-4",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Recycling aluminum saves enormous amounts of energy. Producing a can from recycled aluminum uses about ninety-five percent less electricity than making one from raw ore. The metal can be melted and reformed indefinitely without losing any strength or quality. For every ton of aluminum recycled, the equivalent of several barrels of oil is conserved nationwide. Which statement best expresses the main idea?",
+    "choices": [
+      "Recycling aluminum conserves a large amount of energy.",
+      "Recycled aluminum cans require ninety-five percent less electricity to produce.",
+      "Aluminum can be melted and reused without losing strength.",
+      "Industrial recycling could replace most oil production."
+    ],
+    "correct_index": 0,
+    "explanation": "The opening sentence states the thesis about energy savings, and the rest of the passage quantifies and reinforces it with electricity figures and oil-equivalent conservation. Choice B is the specific ninety-five percent statistic offered as evidence, a supporting detail rather than the main idea. Choice C addresses the metal's durability under repeated recycling, another supporting fact that explains why aluminum recycling is so efficient. Choice D wildly over-generalizes by suggesting industrial recycling could replace most oil production, a claim the passage never makes. The keyed option restates the topic sentence in plain terms.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-5",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "City planners in many regions are widening sidewalks, lowering speed limits, and adding shaded benches. Cars still dominate most corridors, but pedestrian counts on retrofitted blocks have climbed sharply. Shop owners along these streets report higher foot traffic and longer customer visits. Even short walks in better-designed neighborhoods correlate with improved cardiovascular health in older residents. What is the main idea of this passage?",
+    "choices": [
+      "Walkable street design produces measurable economic and health benefits.",
+      "Shop owners earn more money when sidewalks are widened.",
+      "Older residents have better hearts than younger residents in walkable areas.",
+      "Cities should ban cars from downtown corridors."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage stacks two parallel results, business gains and health gains, after describing the design changes that produced them. The implied thesis ties pedestrian-friendly design to both outcomes, and it sits across the second and third sentences rather than in one place. Choice B captures only the commercial half and overstates with the word earn, a supporting detail. Choice C distorts the health claim into a generational comparison the passage never makes. Choice D pushes a car-ban policy position the passage avoids, since it explicitly notes cars still dominate most corridors. The keyed answer holds both supporting threads together.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-6",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "When a household water heater fails, the symptoms often appear gradually. Showers grow lukewarm over several weeks, and the tank may begin to hum or rattle as sediment builds. Rust-tinted water from the hot tap is a later warning sign. Homeowners who replace a failing unit on a planned schedule typically pay less than those who wait for a flood. Which statement best expresses the main idea?",
+    "choices": [
+      "Recognizing early warning signs of water-heater failure helps homeowners avoid costly emergencies.",
+      "Rust-tinted hot water means a water heater has already failed.",
+      "Sediment buildup is the leading cause of water-heater problems.",
+      "Most water heaters last fewer than ten years before failing."
+    ],
+    "correct_index": 0,
+    "explanation": "The first three sentences catalogue warning signs and the final sentence links advance recognition to lower cost, implying the thesis. Choice B treats one symptom as a definitive verdict, a misread of late warning sign. Choice C names sediment as the leading cause, a ranking the passage never asserts. Choice D introduces a lifespan figure that does not appear in the passage at all. The keyed answer joins the symptoms half to the cost half.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-7",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "A well-written cover letter does more than repeat a resume. It connects past experience to the specific role, names the hiring manager when possible, and uses the company's own language about its goals. Recruiters often skim a stack of applications in seconds, so the opening lines must give them a reason to keep reading. What is the main idea of this passage?",
+    "choices": [
+      "A strong cover letter is tailored to the role and designed to hold a recruiter's attention.",
+      "Recruiters spend only a few seconds reviewing each application.",
+      "Cover letters should always name the hiring manager.",
+      "Resumes are less important than cover letters in modern hiring."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage outlines what a good cover letter does, namely connect experience to the role and mirror the company's language, and then explains why, the recruiter-skim context. The thesis combines tailoring with attention-holding across the two halves of the paragraph. Choice B repeats the seconds-of-skim detail as if it were the central point, an isolated supporting fact. Choice C absolutizes one suggested practice with the word always, sliding past the passage's softer when possible. Choice D invents a head-to-head comparison between resumes and cover letters that the passage never makes. The keyed option ties the writing advice to the audience constraint that drives it.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-8",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Honey produced near a beekeeper's home tastes different from honey produced fifty miles away. Local flora determine the flavor profile because bees forage within a few miles of the hive. Spring honey from orchard country carries a light apple-blossom note, while late-summer honey from a meadow tastes darker and fuller. Even neighboring counties can yield jars with distinct character. Which statement best expresses the main idea?",
+    "choices": [
+      "Honey's flavor reflects the specific plants bees forage near their hive.",
+      "Bees forage within a few miles of their hive.",
+      "Spring honey is lighter than late-summer honey.",
+      "Local honey is healthier than honey from distant regions."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage contrasts honey from different areas and explains the cause: nearby flora that the bees forage on. The thesis sits across the first two sentences and is then reinforced by the spring-versus-summer example. Choice B isolates the foraging range, a mechanism detail that supports rather than states the main idea. Choice C captures one seasonal contrast from the examples, again a piece of evidence rather than the central claim. Choice D introduces a health claim about local honey that the passage never makes. The keyed answer joins the observed flavor variation to its botanical cause, which is what the four sentences collectively argue.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-9",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Most modern bicycles use cable-actuated brakes that work well in dry conditions. In wet weather, however, water and grit on the rim reduce the friction that stops the wheel. Riders who ride year-round increasingly switch to disc brakes, which clamp a dedicated rotor near the hub. The rotor stays cleaner and provides consistent stopping power across temperatures. Bike shops report that disc-equipped models now account for the majority of new sales above entry level. What is the main idea of this passage?",
+    "choices": [
+      "Disc brakes are displacing rim brakes because they perform more consistently in varied conditions.",
+      "Cable-actuated brakes work poorly in wet weather.",
+      "Most new bicycles sold are now equipped with disc brakes.",
+      "Year-round cyclists need specialized equipment to ride safely."
+    ],
+    "correct_index": 0,
+    "explanation": "No single sentence states the thesis; it emerges from the contrast between rim and disc performance, the wet-weather problem, and the closing sales trend at bike shops. Choice B captures only the weakness of the older cable-actuated system, a supporting half. Choice C reports the sales detail in isolation without explaining why the shift is happening, an accurate-but-tangential restatement. Choice D over-generalizes about safety and the need for specialized equipment, neither of which the passage actually frames as necessary for year-round cyclists. The keyed answer synthesizes the performance reason and the market shift into one statement.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-10",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Community gardens often start with a single empty lot and a handful of volunteers. Within a season, raised beds appear, neighbors begin trading produce, and unfamiliar faces become regulars. Crime statistics on blocks with active gardens tend to drift downward over the following years. City officials in several regions now treat these gardens as low-cost public-safety investments rather than purely agricultural projects. Which statement best expresses the main idea?",
+    "choices": [
+      "Community gardens function as social investments that strengthen neighborhoods beyond food production.",
+      "Empty lots are the most common starting points for community gardens.",
+      "Crime rates fall sharply on every block with a community garden.",
+      "Cities should subsidize gardening supplies for low-income residents."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage moves from origin to social effects to municipal reframing without naming a single topic sentence. The synthesized point is that gardens deliver social value far beyond the produce they grow. Choice B grabs the empty-lot starting-point detail, an opening fact rather than the central argument. Choice C overstates the crime trend with sharply and every block, while the passage uses softer hedging like tend and drift downward. Choice D proposes a subsidy policy for gardening supplies that the passage never recommends or even mentions. The keyed answer captures the full arc that the four sentences trace together.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-11",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "The cost of solar panels has fallen sharply over the past fifteen years. Battery prices, once the bottleneck for home installations, have also dropped significantly. Utility companies face a new dynamic: customers who once bought every kilowatt now sell power back during peak hours. Some regulators are rewriting rate structures to reflect a grid that flows in both directions. The old one-way model is increasingly difficult to defend. What is the main idea of this passage?",
+    "choices": [
+      "Cheaper solar and battery technology is reshaping the relationship between utilities and customers.",
+      "Solar panel prices have fallen over the past fifteen years.",
+      "Regulators are updating rate structures in some regions.",
+      "Home solar installations will soon replace traditional power plants."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage threads price drops, customer behavior, regulatory response, and a closing judgment about how hard the old one-way model is to defend. The thesis must tie the technology shift to the changing utility relationship. Choice B reports only the price half of the story, a supporting fact. Choice C captures only the regulatory rate-structure response, again a supporting piece. Choice D predicts that home solar will replace traditional power plants, a far stronger claim than the passage actually makes about a two-way grid. The keyed answer integrates the cause, the customer behavior, and the institutional response into one statement.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-12",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Reading aloud to young children does more than entertain. It exposes them to vocabulary and sentence structures that rarely appear in everyday conversation. Children who are read to regularly enter kindergarten with measurably larger vocabularies than peers who are not. Even shared reading at bedtime, lasting only minutes, contributes to the language gap that schools spend years trying to close. Which statement best expresses the main idea?",
+    "choices": [
+      "Reading aloud to young children builds vocabulary that shapes their school readiness.",
+      "Bedtime stories last only a few minutes for most families.",
+      "Vocabulary in books rarely overlaps with everyday speech.",
+      "Schools are unable to close the language gap among students."
+    ],
+    "correct_index": 0,
+    "explanation": "Four sentences move from the activity to its vocabulary mechanism to its measurable effect on kindergarten readiness and the language gap that follows. The synthesized point ties reading aloud directly to school readiness. Choice B picks up a duration detail about how brief bedtime reading is, an aside rather than the argument. Choice C captures the vocabulary mechanism without naming the educational outcome it produces. Choice D distorts the closing line about schools spending years to close the gap into a flat claim that schools have failed entirely. The keyed answer holds the cause and the educational outcome together, matching what all four sentences build.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-13",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 4,
+    "stem": "Many drivers assume premium gasoline cleans their engine better than regular fuel. In most vehicles, however, the octane rating governs only how resistant the fuel is to premature ignition under compression. Detergent additives are mandated for all grades sold in the United States, so cleaning performance is largely equivalent across the pump. Cars whose owner's manuals specify regular fuel gain no measurable benefit from premium and only pay more per gallon. A small group of high-compression engines does require premium, but for everyone else the upgrade is purely a charge against the wallet. What is the main idea of this passage?",
+    "choices": [
+      "Premium gasoline benefits only the small set of engines that require it; for most drivers it is wasted money.",
+      "Detergent additives are mandated in all grades of gasoline sold in the United States.",
+      "Octane rating measures resistance to premature ignition under compression.",
+      "Premium gasoline cleans engines more effectively than regular gasoline."
+    ],
+    "correct_index": 0,
+    "explanation": "Several factual claims compete for the spotlight: detergent additive rules, the octane definition, the owner's-manual specification, and the high-compression exception. The primary point is the cost-benefit verdict in the last sentence, framed against the common cleaning-power assumption that opens the passage. Choice B isolates a supporting fact about mandated additives, the mechanism for why cleaning is equivalent. Choice C defines octane, more supporting machinery for the larger argument. Choice D directly contradicts the passage, which is the assumption being refuted from the start. The keyed answer captures the verdict the passage was built to deliver.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-14",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 4,
+    "stem": "Many beginning cooks blame their knives when chopping feels slow or unsafe. A dull blade certainly increases the force required and the chance of a slip, and most home knives are duller than their owners realize. Cutting boards matter too; glass and stone surfaces destroy edges within weeks. Yet experienced cooks point out that grip and posture govern far more than equipment. A sharp knife held poorly is still slow, while a modest knife held well moves quickly through onions and herbs. Which statement best expresses the main idea?",
+    "choices": [
+      "Technique influences chopping speed and safety more than equipment alone.",
+      "A dull blade increases the force required to cut and raises the risk of slips.",
+      "Glass and stone cutting boards damage knife edges quickly.",
+      "Home cooks should buy sharper knives to improve their results."
+    ],
+    "correct_index": 0,
+    "explanation": "Two themes compete inside the passage: equipment matters (dullness, board surface) and technique matters more (grip, posture, knife handling). The yet pivot in sentence four signals which claim is primary, and the closing onions-and-herbs example reinforces it. Choice B captures a supporting detail about how dull blades increase force and slip risk. Choice C captures the cutting-board surface detail, another piece of equipment evidence. Choice D draws an equipment recommendation that the passage explicitly downgrades in favor of technique over gear. The keyed answer reflects the experienced-cooks pivot that organizes the whole passage.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-15",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 4,
+    "stem": "Online customer reviews shape modern purchasing in two directions at once. Buyers consult them before committing money, especially for items they cannot inspect in person, and a single string of negative ratings can sink a product. At the same time, sellers have learned to solicit, edit, and occasionally fabricate reviews to manage their ratings. Platforms publish trust-and-safety reports, but enforcement is uneven and reviewers themselves often cannot tell genuine praise from paid copy. The marketplace runs on a system that buyers depend on and many sellers quietly distort. What is the main idea of this passage?",
+    "choices": [
+      "Online reviews remain central to purchasing decisions even as their reliability is widely compromised.",
+      "Negative reviews can sink a product's sales on most platforms.",
+      "Platforms publish trust-and-safety reports about review fraud.",
+      "Buyers should stop relying on online reviews when making purchases."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage develops two opposing forces: buyer dependence on reviews and seller distortion of them. The closing sentence makes both sides explicit. Choice B captures only the buyer-impact side. Choice C reports a platform action without the broader argument. Choice D draws a prescription the passage never offers, especially given the opening insistence on how central reviews remain. The keyed answer holds the dependence and the distortion in the same statement, matching the closing summary.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-16",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 5,
+    "stem": "When a city replaces a stretch of asphalt with permeable pavers, the visible difference is small. The pavers look much like ordinary stone, and traffic crosses them without noticing. Underground, however, rainwater that once ran off the surface and overwhelmed storm drains now seeps through gaps between the stones into a gravel bed below. Local creeks downstream show fewer pollution spikes after heavy storms, and basement flooding complaints drop on neighboring blocks. The repaving looks ordinary, but the watershed quietly works differently. Skeptics often ask why the city did not simply build larger drains; engineers respond that the new surface costs less to maintain across its lifespan and treats the cause rather than the symptom. What is the main idea of this passage?",
+    "choices": [
+      "Permeable paving produces meaningful environmental and economic benefits that are not visible at street level.",
+      "Permeable pavers look much like ordinary stone surfaces.",
+      "Engineers prefer permeable pavers over larger storm drains.",
+      "Cities should require permeable pavement on every new project."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage hinges on the contrast between appearance and outcome: an ordinary-looking surface delivers downstream environmental and cost benefits. The author's overall point is that the value is real but hidden. Choice B captures only the appearance half. Choice C grabs the engineers-prefer detail without the broader payoff. Choice D pushes a policy mandate the passage avoids. The keyed answer integrates the invisible-but-meaningful framing that the opening, the middle examples, and the closing engineer comparison all support.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-17",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 5,
+    "stem": "Productivity advice often centers on tools: a new planner, a tracking app, a different notebook system. New hires especially gravitate to whatever system their manager praises, hoping the right method will close the gap between effort and output. Most observers of long careers tell a different story. The colleagues who consistently finish what they start rarely use unusual tools; they protect their attention from interruption, decide quickly which tasks belong to them, and review their week before it begins. The tools merely record habits already in place. A planner is not a substitute for the underlying discipline, though many buyers hope it will be. Which statement best expresses the main idea?",
+    "choices": [
+      "Lasting productivity comes from underlying habits rather than from the specific tools people adopt.",
+      "Many new hires copy whatever productivity system their manager praises.",
+      "Effective workers protect their attention and plan their weeks in advance.",
+      "Planners are useful only when paired with a tracking app."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage contrasts tool-focused hopes with habit-focused reality and closes by saying a planner is not a substitute for the underlying discipline it tries to capture. The author's overall claim runs through every sentence and emerges only by inference. Choice B captures the new-hire copying detail, a piece of color rather than the thesis. Choice C lists the supporting habits like attention protection and weekly review without naming the tool-versus-habit thesis itself. Choice D invents a recommendation about pairing planners with tracking apps that the passage never makes and would actually contradict. The keyed answer states the underlying argument that organizes the contrast and the closing judgment.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-18",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 5,
+    "stem": "Volunteer firefighters once formed the backbone of rural emergency response in many regions. Decades ago, neighbors who farmed or worked nearby trades could reach the firehouse within minutes of a tone. The economic geography has shifted: fewer residents work where they live, training requirements have grown, and the average volunteer is now over fifty. Recruiting drives produce modest gains that rarely keep pace with retirements. Some counties have begun staffing a paid skeleton crew during weekdays while preserving the volunteer roster for nights and weekends. Communities that once relied entirely on neighbors are quietly reorganizing around a hybrid model, even when local pride still describes the department as volunteer. What is the main idea of this passage?",
+    "choices": [
+      "Rural fire response is gradually shifting from a purely volunteer model to a hybrid arrangement driven by economic and demographic pressures.",
+      "The average volunteer firefighter is now over fifty years old.",
+      "Some counties pay a small daytime crew while keeping volunteers for nights and weekends.",
+      "Volunteer firefighting is no longer a viable model anywhere in the country."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage traces a historical baseline, names the pressures, and describes the structural response, closing on the gap between local self-description and reality. The author's overall point is the underlying transition. Choice B isolates a demographic statistic. Choice C captures the hybrid example without the larger trend it illustrates. Choice D over-generalizes to nowhere viable, while the passage describes a gradual reorganization that still includes volunteers. The keyed answer states the inferential thesis that organizes every sentence in the paragraph.",
+    "status": "draft"
+  }
+]
