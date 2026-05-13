@@ -2,12 +2,15 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
 
-export default function LoginPage() {
+function LoginPageInner() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const nextUrl = searchParams?.get("next") || "/app/home";
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
@@ -29,7 +32,7 @@ export default function LoginPage() {
       setLoading(false);
     } else {
       trackEvent(FunnelEvents.LoginComplete);
-      router.push("/account");
+      router.push(nextUrl);
     }
   }
 
@@ -111,5 +114,19 @@ export default function LoginPage() {
         </p>
       </div>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="text-text-secondary text-sm">Loading…</div>
+        </div>
+      }
+    >
+      <LoginPageInner />
+    </Suspense>
   );
 }

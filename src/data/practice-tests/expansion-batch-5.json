@@ -12,7 +12,7 @@
       "Vacuole"
     ],
     "correct_index": 2,
-    "explanation": "Mitochondria produce ATP through cellular respiration, supplying the energy cells need for all their functions. The nucleus stores DNA; ribosomes make proteins; vacuoles store materials."
+    "explanation": "Mitochondria run cellular respiration, converting glucose and oxygen into ATP, the energy currency cells spend on every active process. Muscle cells and neurons pack in extra mitochondria because they burn through ATP fast. The nucleus stores DNA and directs gene expression, but it does not generate energy. Ribosomes are the protein-assembly stations that read mRNA and link amino acids. Vacuoles store water, food, or waste, especially in plant cells. Confusing the nucleus with mitochondria is the most common slip since both are major organelles students hear about first."
   },
   {
     "external_key": "GS-LS-B5-2",
@@ -27,7 +27,7 @@
       "Hydrogen"
     ],
     "correct_index": 2,
-    "explanation": "During photosynthesis, plants split water molecules and release oxygen as a byproduct. Carbon dioxide is consumed, not released, during photosynthesis."
+    "explanation": "During photosynthesis the plant splits water molecules to harvest electrons, and the leftover oxygen is released through stomata. That is why forests and ocean phytoplankton drive Earth's oxygen supply. Carbon dioxide is the opposite: plants pull it in as a raw material and lock its carbon into glucose, so they consume it rather than release it. Nitrogen is the dominant gas in the atmosphere but plants cannot use it directly from the air, so it is not part of photosynthesis. Hydrogen ends up bound inside glucose, not released as gas."
   },
   {
     "external_key": "GS-LS-B5-3",
@@ -42,7 +42,7 @@
       "Convert sunlight into energy"
     ],
     "correct_index": 1,
-    "explanation": "The cell membrane is selectively permeable, regulating the passage of substances in and out of the cell. Protein production occurs at ribosomes; DNA is stored in the nucleus."
+    "explanation": "The cell membrane is a phospholipid bilayer studded with proteins that acts as a selective gate, letting some substances pass freely (small nonpolar molecules), pumping others in or out actively (ions, glucose), and blocking the rest. Protein production happens at ribosomes attached to rough ER or floating in cytoplasm, not at the membrane. Genetic information lives in the nucleus in eukaryotes or in the nucleoid region in bacteria. Converting sunlight to energy is the chloroplast's job, found only in plants and algae. The membrane is gatekeeper, not factory."
   },
   {
     "external_key": "GS-LS-B5-4",
@@ -57,7 +57,7 @@
       "Plants and algae"
     ],
     "correct_index": 3,
-    "explanation": "Primary producers (plants, algae, and some bacteria) capture energy from sunlight through photosynthesis and form the base of the food chain. Herbivores and carnivores are consumers; decomposers break down dead matter."
+    "explanation": "Primary producers capture energy from sunlight (or chemicals at deep-sea vents) and turn it into stored chemical energy, building the base of every food web. Plants, algae, and photosynthetic bacteria do this. Herbivores like deer or grasshoppers are primary consumers because they eat producers. Carnivores eat other animals and sit higher in the chain. Decomposers like fungi and bacteria recycle dead matter into nutrients, which is essential but not the same as producing energy from sunlight. The distinction is whether the organism makes food or eats food."
   },
   {
     "external_key": "GS-LS-B5-5",
@@ -72,7 +72,7 @@
       "Plasma"
     ],
     "correct_index": 2,
-    "explanation": "White blood cells (leukocytes) are the immune system's primary defense, attacking bacteria and other pathogens. Red blood cells carry oxygen; platelets help clot blood; plasma is the liquid carrier."
+    "explanation": "White blood cells, also called leukocytes, are the immune system's frontline. Neutrophils swallow bacteria, lymphocytes produce antibodies and kill infected cells, and macrophages clean up debris. Red blood cells carry oxygen and have no role in fighting infection. Platelets are cell fragments that plug wounds and start clotting cascades. Plasma is the straw-colored liquid that carries everything else, including antibodies the white cells produce, but plasma itself is the transport medium rather than the attacker. White cell count rises during infection, which is why doctors order a CBC to check it."
   },
   {
     "external_key": "GS-LS-B5-7",
@@ -87,7 +87,7 @@
       "Hawks will switch to eating grasshoppers directly and maintain balance"
     ],
     "correct_index": 1,
-    "explanation": "Removing frogs eliminates the primary predator of grasshoppers, so grasshopper populations would surge. Hawks lose a food source and may decline. Grass would likely decrease as more grasshoppers consume it."
+    "explanation": "Remove the predator and the prey explodes. With frogs gone, grasshoppers face no consistent predator at their trophic level, so their numbers surge in the short term. Hawks lose a major food source and would decline, not increase. Grass would also decline as more grasshoppers eat it, but that secondary effect lags behind the grasshopper boom itself, making the grasshopper increase the more immediate result. Hawks switching directly to grasshoppers ignores that food chains are not infinitely flexible and that adapting prey preferences takes time and may not maintain population balance."
   },
   {
     "external_key": "GS-LS-B5-8",
@@ -117,7 +117,7 @@
       "Circulatory system"
     ],
     "correct_index": 2,
-    "explanation": "The respiratory system — specifically the lungs — exchanges gases: oxygen enters the blood and carbon dioxide is expelled when exhaling. The urinary system removes liquid waste; the digestive system removes solid waste."
+    "explanation": "The respiratory system handles gas exchange in the alveoli of the lungs, where oxygen diffuses into the blood and carbon dioxide diffuses out and gets exhaled. The circulatory system transports CO₂ from tissues to the lungs but does not actually remove it from the body, which is a common slip because blood is involved in both transport and removal. The urinary system removes liquid nitrogen waste as urine. The digestive system removes undigested solid waste as feces. Match the waste type to the system: gas to lungs, liquid to kidneys, solid to intestines."
   },
   {
     "external_key": "GS-LS-B5-10",
@@ -162,7 +162,7 @@
       "Transpiration — releasing water vapor from leaves"
     ],
     "correct_index": 2,
-    "explanation": "Decomposers break down dead organisms and waste into simpler inorganic compounds, returning nutrients like carbon and nitrogen to the soil and atmosphere. Without decomposers, ecosystems would become buried in dead matter."
+    "explanation": "Decomposition is the breakdown of dead organisms and waste into simpler inorganic molecules like CO₂, ammonia, and mineral ions that return to soil, water, and air. Without it, carbon and nitrogen would stay locked in corpses and dead leaves and ecosystems would starve. Photosynthesis is what plants and algae do, not fungi. Nitrogen fixation is a narrow process performed by specific bacteria (Rhizobium, cyanobacteria) on N₂ gas, not the general decomposer role. Transpiration is water loss from plant leaves, completely separate from nutrient cycling driven by decomposers."
   },
   {
     "external_key": "GS-LS-B5-13",
@@ -207,7 +207,7 @@
       "Plasma"
     ],
     "correct_index": 1,
-    "explanation": "A liquid has a fixed volume but takes the shape of its container. Solids have both definite shape and volume; gases have neither. Plasma is an ionized gas with neither fixed shape nor volume."
+    "explanation": "Liquids hold a fixed volume because their molecules stay close together, but they flow to take the shape of whatever container holds them. Pour a liter of water into a tall cylinder or a flat tray, and it remains a liter while changing outline. Solids lock in both shape and volume because their molecules are fixed in place. Gases expand to fill the entire container, so they lack both a fixed shape and a fixed volume. Plasma is ionized gas found in stars and neon signs; like ordinary gas, it conforms to no fixed shape or volume."
   },
   {
     "external_key": "GS-PS-B5-2",
@@ -222,7 +222,7 @@
       "Sugar dissolving in water"
     ],
     "correct_index": 2,
-    "explanation": "Rusting involves iron reacting with oxygen to form iron oxide — a new substance with different chemical properties. Melting, cutting, and dissolving are physical changes; the substance's chemical identity does not change."
+    "explanation": "Rusting is iron combining with oxygen to form a new compound, iron oxide, with different color, hardness, and chemical properties. New substance means chemical change. Ice melting is a physical change because the H₂O molecules are identical before and after, just rearranged from rigid crystal to flowing liquid. Cutting paper changes shape, not composition. Sugar dissolving spreads sucrose molecules through water but does not transform them; evaporate the water and the sugar returns unchanged. The test is whether a brand-new substance with new chemistry has appeared."
   },
   {
     "external_key": "GS-PS-B5-3",
@@ -237,7 +237,7 @@
       "Number of valence electrons"
     ],
     "correct_index": 3,
-    "explanation": "Elements in the same group have the same number of valence electrons, which determines their chemical behavior and bonding tendencies. Atomic mass and neutron count vary even within groups."
+    "explanation": "Valence electrons are the outermost shell electrons that participate in chemical bonding, and elements in the same group share the same valence count. That is why all Group 1 alkali metals react violently with water and all Group 18 noble gases barely react at all. Atomic mass increases steadily down a group, so it cannot be the cause. Proton count defines the element itself and is unique to each element, never shared. Neutron count varies among isotopes even within a single element and has no bearing on chemical behavior, only on stability and mass."
   },
   {
     "external_key": "GS-PS-B5-4",
@@ -252,7 +252,7 @@
       "The gas liquefies"
     ],
     "correct_index": 2,
-    "explanation": "When temperature rises, gas molecules move faster and collide with container walls more forcefully and frequently, increasing pressure. This relationship is described by Gay-Lussac's Law (P ∝ T at constant volume)."
+    "explanation": "Heating a gas speeds up its molecules. They hit the container walls harder and more often, which is exactly what pressure measures. With volume fixed, pressure rises in direct proportion to absolute temperature; double the Kelvin temperature and pressure doubles. This is Gay-Lussac's Law. A sealed aerosol can in a hot car can rupture for this reason. The gas does not liquefy from heating; liquefaction usually requires cooling or compressing. Pressure cannot stay the same because faster molecules cannot avoid more forceful collisions when the walls do not move."
   },
   {
     "external_key": "GS-PS-B5-5",
@@ -267,7 +267,7 @@
       "Compounds"
     ],
     "correct_index": 1,
-    "explanation": "Reactants are the starting materials in a chemical reaction that are converted into products. Catalysts speed up reactions without being consumed; products are the substances formed."
+    "explanation": "Reactants are the starting materials that get consumed and rearranged during a reaction, written on the left side of the arrow. Products are what comes out on the right side, so swapping the two reverses the equation. Catalysts speed up reactions by lowering activation energy but are not consumed and are not counted among reactants or products; they often appear above the arrow. Compound describes a category of substance, not a reaction role; both reactants and products can be compounds or elements. The arrow direction is the visual cue: left equals reactant, right equals product."
   },
   {
     "external_key": "GS-PS-B5-6",
@@ -282,7 +282,7 @@
       "It is neutral and safe to drink in any quantity"
     ],
     "correct_index": 2,
-    "explanation": "pH 2 is strongly acidic — far below the neutral pH of 7. The lower the pH, the higher the concentration of hydrogen ions (H⁺). Battery acid (pH ~1) and vinegar (pH ~3) bracket this range; strongly basic substances have high pH (above 7)."
+    "explanation": "A pH of 2 is strongly acidic, only one step away from battery acid at pH 1 and well below the neutral mark at 7. Because pH is logarithmic, pH 2 has 100,000 times more hydrogen ions than neutral water. Calling it weakly acidic underestimates the danger; lemon juice sits around pH 2 and is still capable of dissolving tooth enamel. Strongly basic substances feel slippery and have high pH above 12, not low pH. Neutral substances sit at 7, not 2, and nothing at pH 2 is universally safe to drink in unlimited amounts."
   },
   {
     "external_key": "GS-PS-B5-7",
@@ -297,7 +297,7 @@
       "Gas to liquid"
     ],
     "correct_index": 2,
-    "explanation": "Sublimation is the direct phase transition from solid to gas without passing through the liquid state. Dry ice (solid CO₂) is a common example. The reverse process (gas to solid) is called deposition."
+    "explanation": "Sublimation skips the liquid phase, going straight from solid to gas. Dry ice (solid CO₂) is the textbook example because at room pressure it cannot exist as a liquid, so it simply turns into CO₂ gas. Solid air fresheners and mothballs also sublime slowly. Liquid to gas is evaporation or boiling, not sublimation. Solid to liquid is plain melting. Gas to liquid is condensation, the reverse of evaporation. The reverse of sublimation, gas straight to solid, is called deposition, which is how frost forms on a cold windshield without dew first."
   },
   {
     "external_key": "GS-PS-B5-8",
@@ -312,7 +312,7 @@
       "Metallic bond"
     ],
     "correct_index": 2,
-    "explanation": "Ionic bonds form when one atom gives electrons to another, creating oppositely charged ions that attract each other. Covalent bonds involve sharing electrons; hydrogen bonds are weak attractions between polar molecules."
+    "explanation": "Ionic bonds form when one atom hands off electrons to another, creating a positively charged cation and a negatively charged anion. The opposite charges attract and lock the ions in place, as in sodium chloride where sodium gives up an electron to chlorine. Covalent bonds work differently, with atoms sharing electron pairs rather than transferring them, common in water and methane. Hydrogen bonds are weak attractions between polar molecules, like the ones holding water's strands together, not full bonds. Metallic bonds let electrons flow freely through a lattice of metal atoms, giving conductivity."
   },
   {
     "external_key": "GS-PS-B5-9",
@@ -342,7 +342,7 @@
       "A metal oxide"
     ],
     "correct_index": 1,
-    "explanation": "When an acid and a base react, the H⁺ ions from the acid combine with the OH⁻ ions from the base to form water, while the remaining ions form a salt. Example: HCl + NaOH → NaCl + H₂O."
+    "explanation": "An acid donates H⁺ ions, a base donates OH⁻ ions, and when they meet the ions combine to form H₂O while the leftover spectator ions pair up as a salt. Hydrochloric acid plus sodium hydroxide gives sodium chloride and water: HCl + NaOH → NaCl + H₂O. The pH moves toward 7. Producing another acid would mean the reaction never neutralized anything. Carbon dioxide and oxygen come out of combustion or photosynthesis, not acid-base neutralization. Metal oxides form when metals burn or corrode with oxygen and have nothing to do with mixing an acid and a base."
   },
   {
     "external_key": "GS-PS-B5-11",
@@ -357,7 +357,7 @@
       "44 moles"
     ],
     "correct_index": 1,
-    "explanation": "Molar mass of CO₂ = 12 + (2 × 16) = 44 g/mol. Moles = mass ÷ molar mass = 44 ÷ 44 = 1 mole. This is a foundational stoichiometry relationship: one mole of CO₂ weighs exactly 44 grams."
+    "explanation": "Molar mass of CO₂ is 12 (one carbon) plus 2 times 16 (two oxygens), which equals 44 g/mol. Moles equals mass divided by molar mass, so 44 grams divided by 44 g/mol gives exactly 1 mole. The 2-mole answer comes from doubling because there are two oxygens, but the formula already accounts for that in the molar mass. The 0.5-mole answer halves correctly only if the substance were O₂ or someone forgot the carbon. The 44-mole answer mistakes grams for moles entirely and ignores the conversion."
   },
   {
     "external_key": "GS-PS-B5-12",
@@ -372,7 +372,7 @@
       "6 moles"
     ],
     "correct_index": 2,
-    "explanation": "The molar ratio of H₂ to H₂O is 2:2 = 1:1. Therefore 3 moles of H₂ produce 3 moles of H₂O when O₂ is in excess. Dividing by 2 (getting 1.5) misreads the 1:1 ratio."
+    "explanation": "Read the coefficients: 2 moles of H₂ produce 2 moles of H₂O, a 1 to 1 ratio. So 3 moles of hydrogen produce 3 moles of water when oxygen is plentiful. Dividing 3 by 2 to get 1.5 misreads the ratio by treating the 2 in front of H₂ as a divisor rather than recognizing it pairs evenly with the 2 in front of H₂O. Doubling to 6 mistakenly multiplies by 2. Answering 2 moles ignores that the limiting reactant is H₂ and that excess O₂ means hydrogen sets the cap."
   },
   {
     "external_key": "GS-PS-B5-13",
@@ -402,7 +402,7 @@
       "Asthenosphere"
     ],
     "correct_index": 2,
-    "explanation": "The lithosphere includes Earth's crust and the uppermost solid part of the mantle — the rigid layer on which continents and ocean floors rest. The mantle is below; the core is the deepest layer."
+    "explanation": "The lithosphere is the rigid outer shell of Earth, including the crust and the cool uppermost portion of the mantle, and it is the layer broken into tectonic plates that carry continents and oceans. The mantle as a whole sits below the lithosphere and is much hotter and more deformable. The core is the metallic center, an outer liquid layer and an inner solid layer of mostly iron and nickel. The asthenosphere is the partly molten zone right beneath the lithosphere where plates ride and convection occurs. We live on top of the lithosphere."
   },
   {
     "external_key": "GS-ES-B5-2",
@@ -432,7 +432,7 @@
       "Erosion by wind and water"
     ],
     "correct_index": 2,
-    "explanation": "Metamorphic rocks (marble, slate, quartzite) form when pre-existing rocks are altered by intense heat and pressure without melting. Rapid cooling of magma creates igneous rock; compacted sediment creates sedimentary rock."
+    "explanation": "Metamorphic rock starts as another rock (igneous, sedimentary, or even older metamorphic) and gets reshaped by intense heat and pressure deep underground without fully melting. Limestone becomes marble, shale becomes slate, sandstone becomes quartzite. Rapid cooling of magma at the surface produces extrusive igneous rocks like basalt, not metamorphic. Compaction of sediment layers makes sedimentary rocks like shale and sandstone. Erosion by wind and water is the breakdown step that creates sediment in the first place; it does not form rock by itself. The key word is transformed, not melted, not crushed, not weathered."
   },
   {
     "external_key": "GS-ES-B5-4",
@@ -447,7 +447,7 @@
       "Transpiration"
     ],
     "correct_index": 1,
-    "explanation": "Condensation is the process by which water vapor loses heat energy and converts to liquid droplets, forming clouds and fog. Evaporation is the opposite (liquid to vapor); precipitation is water falling from clouds; transpiration is water released by plants."
+    "explanation": "Condensation is the phase change from gas back to liquid. As warm moist air rises and cools, vapor molecules slow down enough to stick together as tiny droplets around dust or salt particles, forming clouds and fog. Evaporation is the opposite direction, liquid turning to vapor when surface water absorbs heat. Precipitation comes after condensation, when droplets grow heavy enough to fall as rain, snow, or hail. Transpiration is plant-driven evaporation through leaf stomata; it adds moisture to the air but is not the cloud-forming step. Cooling vapor equals condensation."
   },
   {
     "external_key": "GS-ES-B5-5",
@@ -462,7 +462,7 @@
       "Thermosphere"
     ],
     "correct_index": 2,
-    "explanation": "The mesosphere extends from about 50 to 80 km altitude. The thin air in this layer creates enough friction to burn up most meteors. The troposphere (0–12 km) contains weather; the stratosphere (12–50 km) holds the ozone layer."
+    "explanation": "The mesosphere extends from roughly 50 to 80 km up, sitting directly above the stratosphere. The air there is thin but dense enough that friction with incoming meteoroids generates the heat that produces shooting stars. The troposphere is the bottom weather layer and is too low to see most meteor burns. The stratosphere holds the ozone layer but is below where meteors flame. The thermosphere is the next layer up, where the ISS orbits and auroras glow, and although it is hot, the air is too thin to ignite meteors efficiently."
   },
   {
     "external_key": "GS-ES-B5-6",
@@ -477,7 +477,7 @@
       "Volcanic uplift pushing the rock to the surface"
     ],
     "correct_index": 2,
-    "explanation": "Igneous rock can be broken down by weathering and erosion into sediment. Over time the sediment is deposited, buried, and compacted (lithification) into sedimentary rock. Heat and pressure would produce metamorphic rock, not sedimentary."
+    "explanation": "An igneous rock at the surface is exposed to weather. Rain, wind, ice, and biological activity break it into fragments, which rivers and gravity carry to lower ground. Layers pile up, get buried, and compact and cement into sedimentary rock through lithification. Melting and rapid cooling would just produce another igneous rock, not sedimentary. Heat and pressure deep underground transform existing rocks into metamorphic rocks like slate or marble. Volcanic uplift moves rock around but does not by itself change what type of rock it is. The route to sedimentary always passes through sediment."
   },
   {
     "external_key": "GS-ES-B5-7",
@@ -492,7 +492,7 @@
       "When it absorbs a nearby low-pressure system"
     ],
     "correct_index": 2,
-    "explanation": "Hurricanes are fueled by warm ocean water that evaporates and feeds the storm's convection. When a hurricane moves over land or cooler water, it loses its energy source and weakens. Warm equatorial water would sustain or intensify the storm."
+    "explanation": "Hurricanes are heat engines fed by evaporation from ocean water warmer than about 26°C. Cut off that energy source and the storm dies. Moving over land removes the moisture supply and adds frictional drag, so storms decay quickly inland. Moving over cooler water has the same effect of starving the convection. Warm tropical ocean water is what fuels hurricanes, so it strengthens rather than weakens them. Hurricanes do not move toward the equator (they curve poleward due to Coriolis steering). Absorbing a low-pressure system can actually feed energy in, not drain it."
   },
   {
     "external_key": "GS-ES-B5-8",
@@ -507,7 +507,7 @@
       "Subduction boundary, where oceanic plates sink under oceanic plates"
     ],
     "correct_index": 2,
-    "explanation": "Mountain ranges like the Himalayas and Alps form at convergent boundaries where two continental plates collide, compressing and folding the crust upward. Divergent boundaries form rift valleys; transform boundaries produce faults and earthquakes."
+    "explanation": "Major mountain ranges form where plates collide. The Himalayas rose from India ramming Eurasia, and the Alps rose from Africa pushing into Europe. Collision compresses and folds the crust upward over millions of years. Divergent boundaries pull apart and form rift valleys and mid-ocean ridges, not tall continental mountain belts. Transform boundaries grind past each other and produce earthquakes along faults like the San Andreas, not big ranges. Oceanic-on-oceanic subduction creates island arcs like Japan, which are mountainous but not the world's major continental ranges. The biggest mountains come from continental crash."
   },
   {
     "external_key": "GS-ES-B5-9",
@@ -522,7 +522,7 @@
       "Increases then decreases"
     ],
     "correct_index": 2,
-    "explanation": "In the troposphere, temperature decreases with altitude at roughly 6.5°C per 1,000 meters (the environmental lapse rate). This is opposite to the stratosphere, where temperature increases with altitude due to ozone absorbing UV radiation."
+    "explanation": "Within the troposphere, temperature drops about 6.5°C for every 1,000 meters of climb, known as the environmental lapse rate. That is why mountaintops carry snow while valleys stay green and why airliner cabins need heating at cruise altitude. The pattern flips in the stratosphere right above, where ozone absorbs UV and warms the air with altitude. A constant temperature would describe the isothermal tropopause boundary, not the bulk troposphere. Increase then decrease describes the overall atmospheric profile across all layers, not the troposphere alone. Inside the troposphere the direction is simple: up means cooler."
   },
   {
     "external_key": "GS-ES-B5-10",
@@ -552,7 +552,7 @@
       "Tidal forces from the Moon preferentially age continental crust"
     ],
     "correct_index": 2,
-    "explanation": "Mid-ocean ridges constantly produce new oceanic crust as magma rises and solidifies. This crust spreads outward and is eventually subducted back into the mantle at trenches, completing the cycle. Continental crust is less dense and resists subduction, so it accumulates age."
+    "explanation": "Oceanic crust is born at mid-ocean ridges where magma rises and solidifies, spreads outward like a conveyor belt, and is eventually pulled back into the mantle at deep-sea trenches. The full cycle takes about 200 million years, which is young in geological terms. Continental crust is less dense, so it floats and resists being subducted, accumulating ages up to 4 billion years. Saying continents recycle faster reverses the truth. Oceanic crust does not form on land. The Moon's tides influence the oceans and slow Earth's rotation but do not selectively age continental rock."
   },
   {
     "external_key": "GS-ES-B5-12",
@@ -582,7 +582,7 @@
       "Nuclear energy"
     ],
     "correct_index": 2,
-    "explanation": "Kinetic energy is the energy of motion. Any object in motion — a car, a thrown ball, flowing water — possesses kinetic energy. Potential energy is stored energy due to position; chemical energy is stored in molecular bonds."
+    "explanation": "Kinetic energy is the energy of motion, calculated as one-half mass times velocity squared. Any object moving has it: a rolling car, a thrown football, flowing river water. Chemical energy is stored in molecular bonds, like the gasoline in the tank before combustion, but once the engine burns it the energy converts and the car's motion now carries kinetic energy. Potential energy is positional, like the same car parked at the top of a hill before it rolls. Nuclear energy comes from atomic nuclei in reactors or stars and has nothing to do with a normal car in motion."
   },
   {
     "external_key": "GS-PM-B5-2",
@@ -597,7 +597,7 @@
       "Store energy that can be released later"
     ],
     "correct_index": 2,
-    "explanation": "A wedge converts a driving force (usually downward) into outward forces that split or separate material. Axes and chisels are examples. It is essentially a moving inclined plane."
+    "explanation": "A wedge is essentially a moving inclined plane that takes a single push along its blunt end and redirects that force outward along its sloped faces, prying or splitting material apart. Axes, chisels, knives, and splitting mauls all work this way. Changing direction along a rope describes a pulley. Multiplying rotational force through gears describes a wheel-and-axle system or gear train, not a wedge. Storing energy describes a spring or capacitor, not a wedge, which simply redirects force during contact. The signature move of a wedge is conversion of one push into two outward separations."
   },
   {
     "external_key": "GS-PM-B5-3",
@@ -627,7 +627,7 @@
       "Decrease by half"
     ],
     "correct_index": 1,
-    "explanation": "From F = ma, if F doubles and m is constant, a must double to maintain the equality. Acceleration is directly proportional to net force when mass is unchanged."
+    "explanation": "Rearrange F = ma to a = F/m. With mass held constant, acceleration scales directly with net force, so doubling force doubles acceleration. Quadrupling would only happen if force quadrupled or if mass were also halved. Decreasing by half would require mass to double (a is inversely proportional to mass at fixed F), but mass is fixed here. Staying the same is only true if force is unchanged. The mental shortcut: in F = ma, if one side doubles and one variable is held, the remaining variable must move in lockstep to keep the equation balanced."
   },
   {
     "external_key": "GS-PM-B5-5",
@@ -642,7 +642,7 @@
       "A bottle opener"
     ],
     "correct_index": 1,
-    "explanation": "Scissors have the fulcrum (pivot pin) between the effort (handles) and the load (cutting blades) — defining a first-class lever. A wheelbarrow is second-class (load between fulcrum and effort); a baseball bat is third-class (effort between fulcrum and load)."
+    "explanation": "Scissors place the pivot pin between your hand on the handles (effort) and the material being cut at the blades (load), which is the defining setup of a first-class lever. Seesaws and crowbars work the same way. A wheelbarrow is a second-class lever because the load (cargo) sits between the fulcrum (wheel) and the effort (hands lifting handles). A baseball bat is a third-class lever because the effort (hand near the knob) sits between the fulcrum (other hand or shoulder) and the load (the ball at the barrel). A bottle opener is also second-class."
   },
   {
     "external_key": "GS-PM-B5-6",
@@ -657,7 +657,7 @@
       "5,000 joules"
     ],
     "correct_index": 2,
-    "explanation": "Gravitational PE = mass × g × height = 10 × 10 × 5 = 500 joules. A common error is forgetting to include g and computing 10 × 5 = 50 joules."
+    "explanation": "Gravitational potential energy equals mass times g times height: 10 kg times 10 m/s² times 5 m equals 500 joules. The 50-joule answer drops the g factor and just multiplies mass by height, a common slip when students think of weight as a single number. The 15-joule answer adds the values instead of multiplying. The 5,000-joule answer adds an extra factor of 10, perhaps by using g = 100 by mistake. Keep the formula PE = mgh in mind and plug in carefully; each piece must be there and in the right units."
   },
   {
     "external_key": "GS-PM-B5-7",
@@ -672,7 +672,7 @@
       "Downward due to gravity"
     ],
     "correct_index": 2,
-    "explanation": "Friction is a resistive force that always opposes relative motion or the tendency to move. If a box slides right, friction acts leftward on it. This is why friction converts kinetic energy into thermal energy and slows moving objects."
+    "explanation": "Friction is a resistive force that always points opposite to the direction of motion (or the tendency to move). Slide a box right and friction pushes left; brakes work because friction between pads and rotor opposes the wheel's spin. Acting in the same direction as motion would describe a propelling force, not friction, which would mean friction speeds objects up instead of slowing them. Perpendicular to motion describes the normal force, the support force from a surface. Downward describes gravity, which is unrelated to friction's direction. Friction always pushes back against whatever motion is happening."
   },
   {
     "external_key": "GS-PM-B5-8",
@@ -687,7 +687,7 @@
       "144 joules"
     ],
     "correct_index": 2,
-    "explanation": "KE = ½mv² = ½ × 4 × 6² = ½ × 4 × 36 = 72 joules. A common error is forgetting the ½, giving 4 × 36 = 144 joules."
+    "explanation": "Kinetic energy equals one-half mass times velocity squared: 0.5 times 4 kg times 6² equals 0.5 times 4 times 36, which equals 72 joules. The 144-joule answer forgets the one-half factor and just multiplies 4 times 36. The 48-joule answer uses 6 instead of 6², dropping the velocity-squared term entirely. The 24-joule answer halves 48, compounding two errors. The KE formula has three pieces (½, mass, velocity squared); skip any one and the answer drifts to a distractor. Always square the velocity before multiplying by mass and half."
   },
   {
     "external_key": "GS-PM-B5-9",
@@ -702,7 +702,7 @@
       "4"
     ],
     "correct_index": 2,
-    "explanation": "Mechanical advantage = effort arm length ÷ load arm length = 3 ÷ 1 = 3. This means you can lift a load 3 times heavier than the force you apply. A MA less than 1 would mean the lever puts you at a disadvantage."
+    "explanation": "Mechanical advantage of a lever equals the effort arm length divided by the load arm length: 3 divided by 1 equals 3. This means a force applied at the effort end can lift a load three times heavier. The 0.33 answer inverts the ratio (load divided by effort) and would describe a lever working against you, useful only for speed or distance multiplication. The MA of 1 implies the arms are equal, like a balance scale, which they are not here. The MA of 4 would require the effort arm to be 4 times the load arm, not 3. Always: effort length over load length."
   },
   {
     "external_key": "GS-PM-B5-10",
@@ -732,7 +732,7 @@
       "50 amperes"
     ],
     "correct_index": 2,
-    "explanation": "Ohm's Law: I = V ÷ R = 10 ÷ 5 = 2 amperes. Multiplying voltage by resistance (10 × 5 = 50) is the most common error; the formula divides voltage by resistance."
+    "explanation": "Ohm's Law: I = V / R = 10 V / 5 Ω = 2 A. Current is 2 amperes. Choice A (0.5 A) inverts the formula and divides R by V (5 / 10). Choice B (1 A) subtracts instead of dividing (10 minus 5, halved by some misstep) or applies a guessed ratio. Choice D (50 A) multiplies V by R, treating Ohm's Law as if voltage times resistance produces current. The formula is strictly division: voltage over resistance equals current."
   },
   {
     "external_key": "EI-OL-B5-2",
@@ -747,7 +747,7 @@
       "36 watts"
     ],
     "correct_index": 3,
-    "explanation": "P = I × V = 3 × 12 = 36 watts. Dividing gives 4 (12/3) — a common error confusing the power formula with Ohm's Law."
+    "explanation": "Power formula: P = I × V = 3 A × 12 V = 36 W. The device consumes 36 watts. Choice A (4 W) divides V by I (12 / 3), confusing the power formula with Ohm's Law for resistance. Choice B (9 W) squares current (3²) and ignores voltage. Choice C (15 W) adds the two values (12 + 3) instead of multiplying. Power in a DC circuit is always the product of voltage and current, never the sum or quotient of those quantities."
   },
   {
     "external_key": "EI-OL-B5-4",
@@ -762,7 +762,7 @@
       "100 watts"
     ],
     "correct_index": 3,
-    "explanation": "P = I²R = 5² × 4 = 25 × 4 = 100 watts. A common error is computing I × R first (5 × 4 = 20) and forgetting to square the current."
+    "explanation": "Use P = I²R. Square the current first: 5² = 25. Then multiply by resistance: 25 × 4 = 100 W. The resistor dissipates 100 watts. Choice A (20 W) computes I × R (5 × 4) and forgets to square. Choice B (40 W) doubles I × R or applies 2 × I × R, which is not a power formula. Choice C (80 W) doubles the I × R result. Squaring current is essential because power grows with the square of current, not linearly."
   },
   {
     "external_key": "EI-OL-B5-5",
@@ -777,7 +777,7 @@
       "1,000 ohms"
     ],
     "correct_index": 2,
-    "explanation": "Series resistances add directly: R_total = 10 + 10 + 10 + 10 = 40 ohms. Using the parallel formula (1/R_total = 4/10 → 2.5) is a common error when resistances appear equal."
+    "explanation": "Series resistors add directly: Rt = 10 + 10 + 10 + 10 = 40 Ω. Total resistance is 40 ohms. Choice A (2.5 Ω) misapplies the parallel formula, computing 10 / 4 instead of 10 × 4. Choice B (10 Ω) leaves resistance unchanged, ignoring that each added resistor stacks more opposition in the single current path. Choice D (1,000 Ω) multiplies the resistors (10 × 10 × 10) instead of summing them. In series, the values stack additively because current crosses each in sequence."
   },
   {
     "external_key": "EI-OL-B5-6",
@@ -792,7 +792,7 @@
       "20,000 ohms"
     ],
     "correct_index": 2,
-    "explanation": "P = V²/R → R = V²/P = 200² ÷ 100 = 40,000 ÷ 100 = 400 ohms. First squaring voltage (40,000) then dividing by power is required; simply computing 200/100 = 2 skips the squaring step."
+    "explanation": "Rearrange P = V² / R to R = V² / P. Square voltage: 200² = 40,000. Divide by power: 40,000 / 100 = 400 Ω. Resistance is 400 ohms. Choice A (2 Ω) divides V by P (200 / 100) and skips squaring entirely. Choice C (50 Ω) divides P by an arbitrary factor or computes V / (2P). Choice D (20,000 Ω) divides V² by 2 instead of P, or otherwise mishandles the divisor. The V² term is non-negotiable when the formula uses V² / R."
   },
   {
     "external_key": "EI-OL-B5-7",
@@ -807,7 +807,7 @@
       "4 amperes"
     ],
     "correct_index": 2,
-    "explanation": "Total series resistance = 2 + 3 + 5 = 10 ohms. Current = V/R = 20/10 = 2 amperes. Using only one resistor (e.g., 20/5 = 4) ignores the others in series."
+    "explanation": "Add series resistances: Rt = 2 + 3 + 5 = 10 Ω. Apply Ohm's Law: I = V / Rt = 20 V / 10 Ω = 2 A. Current is 2 amperes. Choice A (0.5 A) divides Rt by V (10 / 20) and inverts the formula. Choice B (1 A) uses only part of the resistance or divides by 20 instead of 10. Choice D (4 A) uses only the 5-ohm resistor (20 / 5), forgetting that current sees the full series stack, not one component."
   },
   {
     "external_key": "EI-OL-B5-8",
@@ -822,7 +822,7 @@
       "6 amperes"
     ],
     "correct_index": 3,
-    "explanation": "In parallel, each branch sees the full 24 V. Current in each branch = 24/12 = 2 A. Three branches × 2 A = 6 A total. Alternately: parallel resistance = 12/3 = 4 ohms; total I = 24/4 = 6 A."
+    "explanation": "Each parallel branch sees the full 24 V. Branch current = 24 / 12 = 2 A. With three identical branches, total current = 3 × 2 = 6 A. Cross-check: parallel resistance = 12 / 3 = 4 Ω; total I = 24 / 4 = 6 A. Choice A (0.67 A) divides voltage by series total (24 / 36) as if the resistors were in series. Choice B (2 A) reports only one branch. Choice C (4 A) reports only two branches or uses parallel resistance as branch current."
   },
   {
     "external_key": "EI-OL-B5-9",
@@ -852,7 +852,7 @@
       "24 volts"
     ],
     "correct_index": 2,
-    "explanation": "Total resistance = 6 + 4 = 10 ohms. Current = 30/10 = 3 A. Voltage across R₁ = I × R₁ = 3 × 6 = 18 volts. Voltage drops are proportional to resistance: R₁ is 60% of total, so it takes 60% of 30 V = 18 V. The remaining 12 V appears across R₂."
+    "explanation": "Total resistance = 6 + 4 = 10 Ω. Circuit current = 30 V / 10 Ω = 3 A. Voltage across R1 = I × R1 = 3 × 6 = 18 V. By the voltage divider rule, R1 takes 6/10 = 60% of source voltage, and 60% of 30 V is 18 V. Choice A (6 V) reports the resistance value as if it were a voltage. Choice B (12 V) gives the drop across R2 instead. Choice D (24 V) inverts the ratio and assigns R1 80% of the source."
   },
   {
     "external_key": "EI-OL-B5-11",
@@ -867,7 +867,7 @@
       "4 volts"
     ],
     "correct_index": 2,
-    "explanation": "P = V²/R → V² = P × R = 200 × 50 = 10,000 → V = √10,000 = 100 volts. Using P = IV requires finding I first: I = √(P/R) = √4 = 2 A, then V = IR = 2 × 50 = 100 V — both routes confirm 100 V."
+    "explanation": "Use P = V² / R, so V² = P × R = 200 × 50 = 10,000, and V = √10,000 = 100 V. Cross-check with two-step path: I = √(P/R) = √4 = 2 A, then V = IR = 2 × 50 = 100 V. Choice A (10 V) takes √(P) and ignores R, or divides incorrectly. Choice B (50 V) reports the resistance value. Choice D (4 V) divides P by 50 to get 4 and stops, skipping the square root step that the V² relationship requires."
   },
   {
     "external_key": "EI-OL-B5-12",
@@ -882,7 +882,7 @@
       "It increases by the square of the resistance"
     ],
     "correct_index": 2,
-    "explanation": "I = V/R. If R doubles and V is constant, I = V/(2R) — current is halved. Current is inversely proportional to resistance in Ohm's Law."
+    "explanation": "Ohm's Law: I = V / R. With V constant and R doubled, new current = V / (2R), which is half the original. Current is cut in half. Choice A (doubles) assumes a direct relationship, but current is inversely proportional to resistance, not directly. Choice B (stays the same) ignores the formula entirely. Choice D (squares the resistance) confuses Ohm's Law with the I²R power expression. Only one variable changed here, and the inverse relationship between I and R settles the result."
   },
   {
     "external_key": "EI-CT-B5-1",
@@ -897,7 +897,7 @@
       "Divided equally among branches"
     ],
     "correct_index": 1,
-    "explanation": "In a parallel circuit, each branch is connected directly between the same two nodes (the source terminals), so every branch sees the full source voltage. This is the key difference from a series circuit, where voltage is divided."
+    "explanation": "In a parallel circuit, every branch connects directly to the same two source nodes, so each branch sees the full source voltage. That is the defining property. Choice A (less than source) describes a series component, where voltage divides across each resistor. Choice C (greater than source) violates energy conservation; no passive component creates voltage. Choice D (divided equally among branches) confuses parallel voltage behavior with current behavior, where current does split among branches according to each branch's resistance, but voltage stays equal across all branches."
   },
   {
     "external_key": "EI-CT-B5-2",
@@ -912,7 +912,7 @@
       "Split between components based on their resistance"
     ],
     "correct_index": 1,
-    "explanation": "A series circuit provides only one path for current flow, so the same current passes through every component. Voltage divides across components in proportion to resistance, but current remains constant."
+    "explanation": "A series circuit has one path for current, so the same current passes through every component. Voltage divides across them based on resistance, but current does not. Choice A (different per component) confuses current with voltage; voltage varies in series, current does not. Choice C (zero with one high resistor) is wrong because high resistance reduces current but does not stop it unless the component is fully open. Choice D (splits among components) describes parallel behavior, where multiple paths share the total current."
   },
   {
     "external_key": "EI-CT-B5-3",
@@ -927,7 +927,7 @@
       "They burn brighter because they now draw more current"
     ],
     "correct_index": 2,
-    "explanation": "In a parallel circuit, each bulb has its own independent path to the source. A failed bulb opens only its own branch; the remaining branches still carry current normally. This is why home wiring uses parallel circuits."
+    "explanation": "Each bulb in a parallel circuit has its own independent loop from source to source. When one bulb opens, only that branch breaks; the other branches still see the full source voltage and full branch current. The remaining bulbs glow normally. Choice A (all go out) describes series behavior. Choice B (dim slightly) gets the direction wrong; if anything, total resistance rises and total current falls, but per-branch voltage and current do not change. Choice D (burn brighter) confuses branches with a series voltage redistribution that does not happen here."
   },
   {
     "external_key": "EI-CT-B5-4",
@@ -957,7 +957,7 @@
       "Decrease voltage at the source"
     ],
     "correct_index": 1,
-    "explanation": "Each additional parallel branch creates another current path, reducing total resistance (1/R_total increases). With source voltage constant, lower total resistance means greater total current draw. This is why plugging in more appliances on the same circuit can trip a breaker."
+    "explanation": "Adding parallel resistors means 1/Rt = 1/R1 + 1/R2 + 1/R3 + ..., and each new term increases the right side, which lowers Rt. With source voltage fixed, I = V / Rt rises. Choice A reverses the direction; parallel branches do not raise resistance, they lower it. Choice C ignores Ohm's Law; total current must respond when total resistance shifts. Choice D confuses load behavior with source behavior; an ideal source holds voltage constant, and even a real source's voltage drop would be a secondary effect, not the primary outcome."
   },
   {
     "external_key": "EI-CT-B5-6",
@@ -972,7 +972,7 @@
       "Only affect the components after it in the circuit"
     ],
     "correct_index": 1,
-    "explanation": "Series resistances add: total resistance increases. By Ohm's Law (I = V/R), with voltage constant, higher resistance reduces current throughout the entire series loop — not just after the added resistor."
+    "explanation": "Series resistances add: Rt = R1 + R2 + R3 + ... So a new series resistor raises total resistance. By Ohm's Law I = V / Rt, with V constant, higher Rt means lower current through the entire loop. Choice A reverses the direction; series additions cannot lower resistance. Choice C invokes a self-adjusting voltage that the source does not perform. Choice D claims only downstream components feel the change, but a series loop carries one current value everywhere; every component upstream or downstream sees the same reduced current."
   },
   {
     "external_key": "EI-CT-B5-7",
@@ -987,7 +987,7 @@
       "Only DC battery circuits"
     ],
     "correct_index": 2,
-    "explanation": "KCL is most useful at nodes (junctions) where current divides — which occurs in parallel and combination circuits. In a simple series circuit, there are no junctions; current never splits, so KCL is trivially satisfied."
+    "explanation": "Kirchhoff's Current Law operates at junctions where current splits or merges. Pure series circuits have no junctions; the same current flows through every component, so KCL is trivially true and offers no analytical leverage. Parallel and combination circuits are where KCL earns its keep, balancing inflow against outflow at each node. Choice A picks the one topology where KCL is unnecessary. Choice B (open circuits) carries no current at all. Choice D (DC battery only) invents a restriction; KCL holds for AC and DC alike."
   },
   {
     "external_key": "EI-CT-B5-8",
@@ -1017,7 +1017,7 @@
       "The branch with the highest resistance loses power first"
     ],
     "correct_index": 1,
-    "explanation": "A switch in the main line controls current to the entire parallel section. Opening it breaks the only path for current before it can split into branches, cutting power to all branches simultaneously — the same principle as the main breaker in a home."
+    "explanation": "A switch in the main line sits before the current splits into parallel branches. Opening it breaks the only path connecting all branches to the source, so every branch loses power at once. This is exactly how a main breaker cuts a whole panel. Choice A (only first branch) describes a switch placed inside one branch, not the main line. Choice C (alternating on/off) describes oscillator behavior, not a static switch. Choice D (highest-resistance branch first) invents a sequencing rule that does not exist in DC circuit analysis."
   },
   {
     "external_key": "EI-CT-B5-10",
@@ -1032,7 +1032,7 @@
       "2 ohms"
     ],
     "correct_index": 2,
-    "explanation": "Two 4-ohm resistors in parallel: R_parallel = 4/2 = 2 ohms. Total = series 2 ohms + parallel 2 ohms = 4 ohms. Adding all three directly (2 + 4 + 4 = 10) ignores the parallel arrangement."
+    "explanation": "First combine the parallel pair: 4 Ω || 4 Ω = 4 / 2 = 2 Ω. Then add the series 2 Ω: Rt = 2 + 2 = 4 Ω. Total circuit resistance is 4 ohms. Choice A (10 Ω) adds all three values as if everything were in series. Choice B (6 Ω) leaves the 4-ohm pair uncombined or sums 2 + 4 once. Choice D (2 Ω) reports only the parallel combination and forgets the series 2-ohm resistor. Combination circuits demand reducing parallel sections first, then summing what remains."
   },
   {
     "external_key": "EI-CT-B5-11",
@@ -1047,7 +1047,7 @@
       "75%"
     ],
     "correct_index": 2,
-    "explanation": "Total resistance = 8 + 4 + 4 = 16 Ω. Current = 48/16 = 3 A. Voltage across R₁ = 3 × 8 = 24 V. Percentage = 24/48 × 100 = 50%. Alternatively, R₁ is 8/16 = 50% of total resistance, so it captures 50% of the voltage."
+    "explanation": "Series total: Rt = 8 + 4 + 4 = 16 Ω. Current = 48 / 16 = 3 A. Voltage across R1 = 3 × 8 = 24 V. Percentage = 24 / 48 = 50%. Voltage-divider shortcut: R1 is 8/16 = 50% of total resistance, so it takes 50% of source voltage. Choice A (25%) treats R1 as one of four equal parts. Choice B (33%) divides by component count (3) instead of resistance share. Choice D (75%) inverts the ratio, giving R1 the share that belongs to R2 and R3 combined."
   },
   {
     "external_key": "EI-CT-B5-12",
@@ -1092,7 +1092,7 @@
       "Step up or step down voltage levels"
     ],
     "correct_index": 1,
-    "explanation": "Resistors oppose current flow (resistance measured in ohms) and limit current according to Ohm's Law. Capacitors store charge; rectifiers convert AC to DC; transformers change voltage levels."
+    "explanation": "Resistors oppose current flow, with opposition measured in ohms. Ohm's Law (I = V / R) shows directly how a resistor sets the current for a given voltage, which is how engineers limit current to protect LEDs, transistors, and other sensitive parts. Choice A (store charge) describes a capacitor, which holds energy in an electric field. Choice C (AC to DC) describes a rectifier built from diodes. Choice D (step voltage) describes a transformer, which uses electromagnetic induction to change AC voltage levels."
   },
   {
     "external_key": "EI-CD-B5-3",
@@ -1107,7 +1107,7 @@
       "Mechanical flywheel"
     ],
     "correct_index": 1,
-    "explanation": "An inductor (a coil of wire) stores energy in the magnetic field created by current flowing through it. Capacitors store energy in an electric field; batteries in chemical form. The inductor resists changes in current."
+    "explanation": "An inductor is a coil of wire. Current through the coil creates a magnetic field, and energy is stored in that field. When current changes, the collapsing or rising field induces a back-EMF that opposes the change. Choice A (chemical cell) describes a battery, where energy is locked in chemical bonds. Choice C (electric field between plates) describes a capacitor, the inductor's complement, which stores energy in an electric field across a dielectric. Choice D (mechanical flywheel) stores kinetic energy and is not an electrical component at all."
   },
   {
     "external_key": "EI-CD-B5-4",
@@ -1122,7 +1122,7 @@
       "Capacitor"
     ],
     "correct_index": 2,
-    "explanation": "Transformers use electromagnetic induction to change AC voltage levels. Power companies step up voltage for long-distance transmission to reduce energy loss, then step it back down for home use. Rectifiers convert AC to DC; transistors amplify or switch signals."
+    "explanation": "A transformer uses electromagnetic induction between primary and secondary coils to step AC voltage up or down according to the turns ratio. Power grids step voltage up to hundreds of thousands of volts for low-loss transmission, then step it back down for delivery. Choice A (rectifier) converts AC to DC and does not change AC voltage levels. Choice B (transistor) amplifies or switches signals, mostly in DC and small-signal contexts. Choice D (capacitor) filters and stores charge but cannot transform voltage levels in a sustained AC distribution system."
   },
   {
     "external_key": "EI-CD-B5-5",
@@ -1152,7 +1152,7 @@
       "Convert AC to DC by allowing current in one direction only"
     ],
     "correct_index": 2,
-    "explanation": "In a transistor (BJT), a small current at the base terminal controls a much larger current between collector and emitter — enabling amplification and switching. When base current is zero, the transistor is off (open switch); when sufficient, it is on (closed switch)."
+    "explanation": "In a bipolar junction transistor, a small base current controls a much larger collector-to-emitter current. Zero base current leaves the transistor off (open switch); enough base current saturates it on (closed switch). That gain is what makes amplifiers and digital logic possible. Choice A describes an open circuit or insulator, not a switching device. Choice B describes a capacitor's storage behavior, not a transistor's gain. Choice D describes a diode's one-way conduction. Transistors do more than diode action; they amplify."
   },
   {
     "external_key": "EI-CD-B5-7",
@@ -1182,7 +1182,7 @@
       "10 amperes"
     ],
     "correct_index": 2,
-    "explanation": "For an ideal transformer, power is conserved: Vp × Ip = Vs × Is. The turns ratio Np/Ns = 200/50 = 4, so the transformer steps down voltage by 4 and steps up current by 4: Is = Ip × (Np/Ns) = 1 × 4 = 4 amperes."
+    "explanation": "An ideal transformer conserves power: Vp × Ip = Vs × Is. The turns ratio Np / Ns = 200 / 50 = 4, so this is a step-down transformer for voltage and a step-up for current. Is = Ip × (Np / Ns) = 1 × 4 = 4 A. Choice A (0.25 A) inverts the ratio (50 / 200), which gives the secondary voltage scale, not the current. Choice B (1 A) assumes current is unchanged, ignoring the inverse relationship. Choice D (10 A) uses an invented multiplier rather than the actual turns ratio."
   },
   {
     "external_key": "EI-CD-B5-9",
@@ -1197,7 +1197,7 @@
       "Convert AC to DC in a rectifier bridge"
     ],
     "correct_index": 2,
-    "explanation": "Zener diodes are designed to conduct in reverse bias once voltage reaches their Zener breakdown voltage, clamping the voltage to a stable reference level. They are used in voltage regulators to protect sensitive components from voltage spikes."
+    "explanation": "A Zener diode is engineered to break down at a precise reverse voltage and then hold that voltage steady across itself, even as current through it varies. That clamp action makes it ideal as a voltage reference or regulator. Choice A (block all current) describes a non-conducting open. Choice B (amplify voltage) describes a transistor or op-amp, not a passive diode. Choice D (AC-to-DC bridge) describes standard rectifier diodes; Zener diodes are used specifically for regulation, not for steering AC into DC pulses."
   },
   {
     "external_key": "EI-CD-B5-10",
@@ -1212,7 +1212,7 @@
       "Zener breakdown"
     ],
     "correct_index": 1,
-    "explanation": "Self-inductance (measured in henries) is the property of a coil to oppose changes in current by inducing a voltage that opposes the change — Faraday's Law in action. Capacitance opposes voltage changes; dielectric effect describes insulator behavior in capacitors."
+    "explanation": "Self-inductance is the property by which a coil's own changing current induces a voltage in itself, and that induced voltage opposes the change (Lenz's Law applied to Faraday's Law). It is measured in henries. Choice A (capacitance) opposes voltage changes by storing charge, not by generating back-EMF. Choice C (dielectric effect) describes how an insulator between capacitor plates increases capacitance, unrelated to current opposition. Choice D (Zener breakdown) describes a diode entering reverse conduction at a fixed voltage, not an inductor's reaction to changing current."
   },
   {
     "external_key": "EI-CD-B5-11",
@@ -1257,7 +1257,7 @@
       "Ceramic"
     ],
     "correct_index": 3,
-    "explanation": "Ceramic (and glass, rubber, plastic) are insulators — they have very high electrical resistance and prevent current flow. Aluminum, graphite, and silver are all conductors. Ceramic is used for electrical insulators on power lines."
+    "explanation": "Ceramic has extremely high resistivity and is the standard insulator on overhead power-line standoffs and inside spark plugs. Choice A (aluminum) is a common conductor used in transmission lines and wiring. Choice B (graphite) is a form of carbon that conducts well enough to be used in motor brushes and electrodes. Choice C (silver) has the highest electrical conductivity of any metal at room temperature. Three of the four options conduct readily, which is the giveaway that the lone insulator is the answer."
   },
   {
     "external_key": "EI-CI-B5-2",
@@ -1287,7 +1287,7 @@
       "Gold stores electrical charge better than copper"
     ],
     "correct_index": 1,
-    "explanation": "Gold does not oxidize (corrode), so gold-plated connectors maintain reliable, low-resistance electrical contact over time. Silver and copper have higher conductivity but corrode, increasing contact resistance. Weight provides no electrical benefit."
+    "explanation": "Gold does not oxidize in air, so gold-plated contacts keep a low, stable contact resistance for years. That matters more than raw conductivity in connector design, where surface chemistry dominates over time. Choice A (highest conductivity) is wrong; silver and copper both conduct better than gold. Choice C (weight) has no electrical relevance; mechanical force comes from spring contacts, not metal mass. Choice D (stores charge) confuses connector metal with a capacitor; conductors do not store charge in any useful sense in a connector."
   },
   {
     "external_key": "EI-CI-B5-4",
@@ -1302,7 +1302,7 @@
       "Drops to zero because the metal becomes a superconductor"
     ],
     "correct_index": 2,
-    "explanation": "As metal temperature rises, atoms vibrate more vigorously, creating more collisions that impede electron movement — increasing resistance. Superconductivity (zero resistance) occurs only at extremely low temperatures in certain materials, not at room temperature."
+    "explanation": "In most metals, higher temperature means more vigorous atomic vibration, which causes more electron-lattice collisions. More collisions mean more resistance. That positive temperature coefficient is what lets PTC thermistors and incandescent filaments self-limit. Choice A (decreases) gets the direction wrong; faster electrons do not overcome the increased scattering. Choice B (unchanged) ignores temperature dependence that is well measured for copper, aluminum, and tungsten. Choice D (superconductivity) only occurs in specific materials cooled well below room temperature, not from ordinary heating."
   },
   {
     "external_key": "EI-CI-B5-5",
@@ -1317,7 +1317,7 @@
       "Depends only on the current direction, like a diode"
     ],
     "correct_index": 1,
-    "explanation": "Semiconductors occupy the middle ground between conductors and insulators. Silicon's conductivity is tunable: doping with phosphorus adds free electrons (n-type) and doping with boron adds holes (p-type), enabling transistors and diodes. Pure silicon is a poor conductor at room temperature."
+    "explanation": "Silicon's conductivity is tunable. Doping with phosphorus adds free electrons (n-type), doping with boron adds holes (p-type), heating excites carriers across the band gap, and light injects photogenerated carriers. That control is the entire basis for transistors, diodes, solar cells, and integrated circuits. Choice A (equals copper) overstates pure silicon's conductivity by many orders of magnitude. Choice C (fixed threshold) describes a Zener-like behavior, not the broad tunability of silicon. Choice D (direction-dependent) describes a diode junction, not bulk silicon material."
   },
   {
     "external_key": "EI-CI-B5-6",
@@ -1362,7 +1362,7 @@
       "Wire A has four times the resistance of Wire B"
     ],
     "correct_index": 2,
-    "explanation": "R = ρL/A. Since A_A = 2 × A_B, R_A = ρL/(2 × A_B) = R_B/2. Doubling the cross-sectional area halves the resistance — the wire provides more parallel paths for electrons."
+    "explanation": "Resistance follows R = ρL / A. With L and ρ constant and A_A = 2 × A_B, R_A = ρL / (2 × A_B) = R_B / 2. Doubling cross-sectional area halves the resistance, because a thicker wire offers more parallel paths for electrons. Choice A (double) gets the direction backward; more area lowers resistance, not raises it. Choice B (same) ignores that area appears in the resistance formula at all. Choice D (four times) treats area as if it appeared squared in R = ρL/A, which it does not."
   },
   {
     "external_key": "EI-CI-B5-9",
@@ -1392,7 +1392,7 @@
       "0.8 ohms"
     ],
     "correct_index": 2,
-    "explanation": "R = ρL/A. Doubling the length (while keeping area and material constant) doubles the resistance: 2 × 0.2 = 0.4 ohms. Halving length would halve resistance (0.1 ohms); neither area change nor a squared relationship applies here."
+    "explanation": "R = ρL / A is linear in length. Doubling L from 10 m to 20 m while holding A and material constant doubles the resistance: 2 × 0.2 = 0.4 Ω. Choice A (0.1 Ω) halves resistance, which would happen if length were halved instead of doubled. Choice B (0.2 Ω) leaves resistance unchanged, ignoring the length dependence entirely. Choice D (0.8 Ω) quadruples resistance, treating length as if it appeared squared in the formula, when in fact only the cross-section can change resistance non-linearly through area."
   },
   {
     "external_key": "EI-CI-B5-11",
@@ -1407,7 +1407,7 @@
       "Carbon (4 valence electrons)"
     ],
     "correct_index": 2,
-    "explanation": "Silicon has 4 valence electrons. Adding phosphorus (5 valence electrons) provides one extra electron per dopant atom — these free electrons become the majority charge carriers, creating an n-type (negative carrier) semiconductor. Boron and aluminum have only 3 valence electrons and create p-type material by introducing electron holes."
+    "explanation": "Silicon has 4 valence electrons. Phosphorus has 5, so each phosphorus atom contributes one extra electron not needed for covalent bonding. That free electron becomes a mobile negative charge carrier, producing n-type silicon. Choice A (boron, 3 valence) creates p-type silicon by introducing holes. Choice B (aluminum, 3 valence) also creates p-type material. Choice D (carbon, 4 valence) matches silicon's valence count exactly, so it contributes neither extra electrons nor holes and would not produce useful doping for n-type or p-type behavior."
   },
   {
     "external_key": "EI-CI-B5-12",
@@ -1422,6 +1422,6 @@
       "The pressure of the ocean compresses seawater, increasing conductivity"
     ],
     "correct_index": 1,
-    "explanation": "Electrical conduction in liquids requires free charge carriers. Distilled water has virtually no ions, so it conducts poorly. Dissolved salts (NaCl, MgCl₂, etc.) ionize in seawater, providing Na⁺, Cl⁻, Mg²⁺ ions that carry charge — making seawater a reasonable conductor."
+    "explanation": "Liquid conduction depends on free charge carriers. Distilled water has almost no dissolved ions, so it has very few mobile charges and conducts poorly. Seawater holds dissolved NaCl, MgCl₂, and other salts that dissociate into Na⁺, Cl⁻, and Mg²⁺ ions, which carry charge freely. Choice A (more hydrogen) is wrong; both waters share the same H₂O molecules. Choice C blames water's polarity, but polarity alone does not block conduction. Choice D invokes pressure, which has a negligible effect on conductivity compared with ion concentration."
   }
 ]

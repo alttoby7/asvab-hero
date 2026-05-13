@@ -221,12 +221,21 @@ export default function TestResults({
           >
             Retake Test
           </button>
-          <Link
-            href="/pricing"
-            className="flex-1 rounded-xl border border-accent/30 bg-accent-dim px-4 py-3 text-center text-sm font-semibold text-accent no-underline transition-colors hover:border-accent/50 hover:bg-accent/20"
-          >
-            Unlock Unlimited Tests
-          </Link>
+          {entitlement.isPro ? (
+            <Link
+              href="/app/home"
+              className="flex-1 rounded-xl border border-accent/30 bg-accent-dim px-4 py-3 text-center text-sm font-semibold text-accent no-underline transition-colors hover:border-accent/50 hover:bg-accent/20"
+            >
+              Go to Dashboard
+            </Link>
+          ) : (
+            <Link
+              href="/pricing"
+              className="flex-1 rounded-xl border border-accent/30 bg-accent-dim px-4 py-3 text-center text-sm font-semibold text-accent no-underline transition-colors hover:border-accent/50 hover:bg-accent/20"
+            >
+              Unlock Unlimited Tests
+            </Link>
+          )}
         </div>
 
         {!userId && (

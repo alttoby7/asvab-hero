@@ -12,7 +12,7 @@
       "Ball-peen hammer"
     ],
     "correct_index": 0,
-    "explanation": "An adjustable wrench (crescent wrench) has a movable jaw that can be set to grip different fastener sizes. Pliers grip by pressure rather than fitting a hex shape, so they risk rounding fastener corners."
+    "explanation": "An adjustable wrench, often called a crescent wrench, has a thumbwheel that slides one jaw in and out so a single tool fits a range of hex nuts and bolts. Needle-nose pliers are for gripping small wires and parts in tight spots and will round the corners of any fastener you try to drive with them. A cold chisel is a striking tool for cutting metal, not for fasteners. A ball-peen hammer is used to shape metal and strike punches. Only the adjustable wrench is designed to set its opening to a fastener size."
   },
   {
     "external_key": "AS-HT-B6-2",
@@ -27,7 +27,7 @@
       "Offset screwdriver"
     ],
     "correct_index": 1,
-    "explanation": "A pipe wrench has serrated, self-tightening jaws angled so that applying torque causes them to bite harder into the cylinder. Box-end and open-end wrenches are designed for hex fasteners, not round stock."
+    "explanation": "A pipe wrench has hardened, toothed jaws set at an angle so that pulling on the handle drives the teeth deeper into the round pipe, locking the grip tighter the harder you pull. Slip-joint pliers can hold a pipe but the jaws will rotate around the work under any real torque. A box-end wrench is shaped to wrap a six- or twelve-point hex fastener and will not grip a smooth cylinder at all. An offset screwdriver is for turning screws in cramped spots. Only the pipe wrench is built for round stock."
   },
   {
     "external_key": "AS-HT-B6-3",
@@ -42,7 +42,7 @@
       "you are working in a tight space and need a ratcheting motion"
     ],
     "correct_index": 1,
-    "explanation": "A torque wrench applies a measured, calibrated twisting force to a fastener. This is critical for engine head bolts, wheel lug nuts, and other joints where over- or under-tightening causes failure. A standard ratchet cannot measure torque."
+    "explanation": "A torque wrench has a calibrated mechanism that signals or limits at a preset value, letting you tighten a fastener to the exact specification a manufacturer calls out for head bolts, lug nuts, or connecting rods. Reaching deep recesses is what a socket extension solves, not a torque wrench. A stripped fastener head needs an extractor or vise grips, not torque measurement. Tight-space ratcheting is offered by any ratchet handle, including non-torque ones. The defining feature is the calibrated measurement, not the reach or the ratcheting."
   },
   {
     "external_key": "AS-HT-B6-4",
@@ -57,7 +57,7 @@
       "To cut a hole in sheet metal without a drill"
     ],
     "correct_index": 1,
-    "explanation": "A center punch creates a small indentation at the exact drilling location. This dimple seats the tip of the drill bit and prevents it from skating across the smooth metal surface as drilling begins."
+    "explanation": "A center punch is struck with a hammer to dimple the metal at the spot where a hole will be drilled, and that dimple cups the drill point so the bit starts where you intended instead of wandering across the surface. Scribing a straight line is the job of a scriber or a square. Removing burrs from a drilled hole is what a deburring tool or countersink does. Cutting a hole in sheet metal without a drill calls for a hole punch or knockout, not a center punch. Center punches mark, they do not cut or scribe."
   },
   {
     "external_key": "AS-HT-B6-5",
@@ -72,7 +72,7 @@
       "large-diameter holes in wood only"
     ],
     "correct_index": 1,
-    "explanation": "A standard high-speed steel (HSS) twist drill with a 118-degree point is the general-purpose choice for metals like steel and aluminum. Masonry bits have a carbide tip; glass bits require a spear-point or diamond tip."
+    "explanation": "A standard high-speed steel twist bit with a 118-degree tip is the everyday bit for drilling steel, aluminum, and brass, and it is what comes in a typical mechanic's index. Concrete and masonry require a carbide-tipped masonry bit driven by a hammer drill, because HSS cannot cut stone. Glass and ceramic tile need a spear-point or diamond bit and very slow speed to avoid cracking. Wood-only large-diameter holes are the territory of spade bits, Forstner bits, or hole saws. The 118-degree point geometry is the giveaway for general metal work."
   },
   {
     "external_key": "AS-HT-B6-6",
@@ -87,7 +87,7 @@
       "adjusts automatically to the size of the fastener"
     ],
     "correct_index": 1,
-    "explanation": "Locking pliers have an over-center mechanism: once the jaws are clamped, the linkage locks and the tool maintains grip without hand pressure. This frees the user's hands and applies constant clamping force — useful for holding, bending, and removing stripped fasteners."
+    "explanation": "Locking pliers, often called Vise-Grips, use an over-center toggle linkage that snaps the jaws shut and holds them there without any hand pressure, freeing both of your hands and applying steady clamping force. Slip-joint pliers and channel locks need a constant squeeze to hold anything. The pliers are not limited to hex fasteners and can grip almost any shape. Wire cutting is a feature of dedicated cutters or a small notch on some pliers, not the defining feature here. They do not auto-adjust to fastener size; the user sets the jaw with a thumbscrew."
   },
   {
     "external_key": "AS-HT-B6-7",
@@ -177,7 +177,7 @@
       "To allow the bolts to be re-tightened after the engine warms up"
     ],
     "correct_index": 1,
-    "explanation": "A star (criss-cross) pattern draws the head down against the gasket from the center outward in a balanced way. Tightening sequentially from one end pulls that end tight first, which can bow the head or create uneven gasket compression that leads to leaks."
+    "explanation": "A star or criss-cross pattern pulls the cylinder head down against the gasket from the center outward in stepped increments, so clamping load builds evenly across every bolt and the gasket compresses uniformly. Tightening end-to-end pulls one side down first, which can warp the head or pinch the gasket and leak. Finishing faster is not the point of the sequence. Head bolts are not left-hand threaded on alternating positions. Retorquing after warm-up is required on some older engines but is a separate step, not the reason for the pattern itself."
   },
   {
     "external_key": "AS-HT-B6-13",
@@ -207,7 +207,7 @@
       "Exhaust stroke"
     ],
     "correct_index": 2,
-    "explanation": "The four strokes in order are: intake (piston moves down, drawing in air-fuel mixture), compression (piston moves up, compressing the mixture), power (spark ignites mixture, piston pushed down), and exhaust (piston moves up, pushing burnt gases out)."
+    "explanation": "On the intake stroke, the piston travels down the cylinder while the intake valve is open, and the resulting vacuum pulls the air-fuel charge into the combustion chamber. The compression stroke comes next, with both valves closed and the piston moving up to squeeze that charge. The power stroke is when the spark fires and the burning mixture drives the piston back down. The exhaust stroke is the piston moving up with the exhaust valve open to push spent gases out. The order is intake, compression, power, exhaust."
   },
   {
     "external_key": "AS-VS-B6-2",
@@ -222,7 +222,7 @@
       "control the flow of coolant to the engine block"
     ],
     "correct_index": 1,
-    "explanation": "The clutch uses friction plates to engage and disengage the engine from the transmission. Pressing the clutch pedal separates the plates, allowing the driver to shift gears without grinding. Releasing the pedal reconnects engine power to the drivetrain."
+    "explanation": "Pressing the clutch pedal pulls the pressure plate away from the friction disc, breaking the link between the engine flywheel and the transmission input shaft so you can move the gear lever without grinding gears against engine speed. Engine idle speed is held by the idle air control or throttle body, not by the clutch. Alternator output is rectified by diodes inside the alternator itself, never by the drivetrain. Coolant flow is gated by the thermostat. Each wrong answer points at a different system unrelated to torque interruption."
   },
   {
     "external_key": "AS-VS-B6-3",
@@ -237,7 +237,7 @@
       "It compresses refrigerant in the air conditioning system"
     ],
     "correct_index": 1,
-    "explanation": "When a vehicle turns, the outer wheel must travel a larger arc than the inner wheel and therefore must rotate faster. The differential uses a planetary gear set to allow the two drive wheels to spin at different speeds while still receiving engine torque."
+    "explanation": "When a car rounds a corner, the outer drive wheel travels a longer arc than the inner wheel and has to spin faster, and the differential's bevel gears let the two axles turn at different rates while still splitting engine torque between them. Filtering fuel is the fuel filter's job. Regulating charging voltage is done by the voltage regulator inside the alternator. Compressing refrigerant is the air-conditioning compressor's role. The differential lives in the drive axle, not in the fuel, charging, or HVAC systems."
   },
   {
     "external_key": "AS-VS-B6-4",
@@ -252,7 +252,7 @@
       "Voltage regulator only"
     ],
     "correct_index": 2,
-    "explanation": "The alternator is driven by a belt from the engine crankshaft and generates AC electricity, which is converted to DC to recharge the battery and power electrical loads while the engine runs. The starter is only used during cranking."
+    "explanation": "Once the engine is running, the alternator is belt-driven off the crankshaft and produces the current that recharges the battery and runs every electrical load on the car. The starter motor only spins while the key is in the start position to crank the engine over; after that it disengages. The distributor, on engines that have one, routes spark to plugs and does not generate current. The voltage regulator alone controls how much output the alternator makes, but it does not produce current by itself. The alternator is the generator in this system."
   },
   {
     "external_key": "AS-VS-B6-5",
@@ -267,7 +267,7 @@
       "The ABS modulator"
     ],
     "correct_index": 1,
-    "explanation": "The master cylinder converts the mechanical force of the brake pedal (often amplified by a vacuum booster) into hydraulic pressure in the brake lines. This pressure pushes caliper pistons outward to clamp the pads against the rotor."
+    "explanation": "The master cylinder is a hydraulic pump tied directly to the brake pedal pushrod. When you press the pedal, a piston inside pushes brake fluid through the steel lines, and that pressure pushes the caliper pistons out against the pads. The brake booster only multiplies the foot force you put into the pedal using engine vacuum; it does not generate hydraulic pressure on its own. The proportioning valve balances front-to-rear pressure, downstream of the master cylinder. The ABS modulator pulses the brakes during a skid but does not create the base pressure."
   },
   {
     "external_key": "AS-VS-B6-6",
@@ -282,7 +282,7 @@
       "Rev the engine to increase oil pump speed"
     ],
     "correct_index": 1,
-    "explanation": "Oil pressure lubricates engine bearings and prevents metal-to-metal contact. Near-zero pressure means bearings are running dry; continued operation causes scoring and seizure within seconds. Shutting off the engine immediately is the correct response."
+    "explanation": "Engine oil pressure is what keeps a film of oil between the crankshaft and the bearing surfaces. If pressure drops to near zero, the bearings run dry and metal-on-metal contact spins or seizes them in seconds. Shutting the engine off immediately is the only way to save the engine. Driving on to the next station finishes the damage. Adding oil to a running engine is dangerous near hot moving parts and may not even solve the problem if the issue is the pump or a leak. Revving makes the wear faster, not slower."
   },
   {
     "external_key": "AS-VS-B6-7",
@@ -297,7 +297,7 @@
       "replaces the differential in front-wheel-drive vehicles"
     ],
     "correct_index": 1,
-    "explanation": "The torque converter is a fluid coupling filled with transmission fluid. The engine drives a pump impeller; fluid motion spins a turbine connected to the transmission input shaft. At low speeds the fluid also provides torque multiplication, acting like a variable gear reduction."
+    "explanation": "A torque converter is a sealed fluid coupling. Engine torque spins a pump impeller that throws transmission fluid against a turbine connected to the transmission input shaft, and a stator in the middle redirects fluid flow to multiply torque at low speeds. It does not lock the engine to the transmission solidly except when an internal lockup clutch engages at cruise. Centrifugal governors selected shift points on old automatics but do not transfer torque. The differential is a separate gearset farther down the drivetrain. The torque converter replaces the clutch with fluid, not gears."
   },
   {
     "external_key": "AS-VS-B6-8",
@@ -327,7 +327,7 @@
       "control cooling fan speed based on engine temperature"
     ],
     "correct_index": 1,
-    "explanation": "The O2 sensor measures oxygen content in exhaust gases, which indicates whether combustion was rich (too much fuel) or lean (too little fuel). The ECM uses this feedback in a closed-loop system to trim injector on-time (pulse width) and keep the mixture near stoichiometric (14.7:1 air-to-fuel ratio)."
+    "explanation": "The oxygen sensor reads how much unburned oxygen is left in the exhaust, which tells the ECM whether the mixture entering the cylinders was rich or lean. The ECM then trims injector pulse width up or down on the next cycle to hold the air-fuel ratio near 14.7 to 1 for catalyst efficiency. Knock-based timing advance comes from the knock sensor, not the O2 sensor. Alternator voltage is governed by the voltage regulator. Cooling fan speed is driven by coolant temperature sensor input. Each wrong answer pairs a different sensor with its own control loop."
   },
   {
     "external_key": "AS-VS-B6-10",
@@ -342,7 +342,7 @@
       "A loose exhaust heat shield"
     ],
     "correct_index": 0,
-    "explanation": "CV joints allow the drive axle to transmit power through a range of angles as the front wheels turn and move with suspension travel. When a CV joint's boot tears and loses grease, the joint wears and produces a clicking or popping noise that is loudest during sharp, low-speed turns."
+    "explanation": "A constant-velocity joint lets a front drive axle send power through the steering angle as the wheel turns and the suspension moves. When the rubber boot tears, grease escapes, dirt gets in, and the joint's internal balls and races wear, producing a sharp clicking that is loudest on tight, slow turns and quiet when going straight. Low power steering fluid causes a whining or moaning during steering effort, not a click. A cracked brake rotor produces a pulse or grind under braking, not on turns. A loose heat shield rattles with engine RPM, regardless of steering input."
   },
   {
     "external_key": "AS-VS-B6-11",
@@ -372,7 +372,7 @@
       "An air leak in the intake manifold"
     ],
     "correct_index": 1,
-    "explanation": "Detonation (knock or ping) occurs when the air-fuel mixture ignites spontaneously before the spark plug fires, causing a shock wave inside the cylinder. It is most pronounced under load when cylinder pressures and temperatures are high, and nearly absent at light-throttle idle. Low-octane fuel, carbon deposits causing hot spots, or over-advanced ignition timing are common causes."
+    "explanation": "Detonation, also called spark knock or ping, happens when cylinder pressure and heat are high enough that part of the air-fuel charge ignites on its own before the spark plug fires, slamming a shock wave into the piston. Heavy load is exactly when pressure and temperature peak, which is why the knock fades at idle. Common causes are gasoline with octane below what the engine needs, carbon deposits glowing hot in the chamber, or timing advanced too far. A cracked flywheel makes a noise tied to RPM, not load. A broken motor mount thumps on shifts. An intake leak shows up as a lean miss and rough idle, the opposite load pattern."
   },
   {
     "external_key": "AS-SS-B6-1",
@@ -387,7 +387,7 @@
       "reduce humidity that causes rust on tools"
     ],
     "correct_index": 1,
-    "explanation": "Gasoline, solvent, and similar vapors are heavier than air and collect at floor level. In an enclosed, unventilated space they can reach explosive concentrations. Proper ventilation dilutes vapors below their lower explosive limit, preventing ignition."
+    "explanation": "Gasoline and most solvent vapors are denser than air, so they pool at floor level in a closed shop and can build up to a concentration that ignites from a spark, a pilot light, or a piece of running equipment. Moving air through the space keeps the concentration below the lower explosive limit. Tool operating temperature is not driven by shop ventilation. Paint drying is a side benefit on some jobs but not the safety reason for the rule. Rust prevention is about humidity control, which is a different problem with a different solution. Ventilation is fundamentally about explosion and fire prevention."
   },
   {
     "external_key": "AS-SS-B6-2",
@@ -402,7 +402,7 @@
       "Any available extinguisher regardless of rating"
     ],
     "correct_index": 2,
-    "explanation": "Water on a flammable-liquid (Class B) fire can spread burning fuel and make the fire worse. CO2 smothers the fire by displacing oxygen; dry chemical extinguishers interrupt the chemical chain reaction. Both are rated for Class B fires."
+    "explanation": "Class B fires involve flammable liquids like gasoline, oil, and solvents, and the right answer is a CO2 or dry chemical extinguisher rated for Class B. CO2 smothers the fire by displacing oxygen, and dry chemical interrupts the chemical chain reaction. Water spreads burning liquid because the fuel floats on top of the water and rides the splash. A Class A only extinguisher, designed for wood and paper, will not safely handle a fuel fire. Grabbing any extinguisher regardless of rating risks making the situation worse. Match the extinguisher class to the fuel class."
   },
   {
     "external_key": "AS-SS-B6-3",
@@ -417,7 +417,7 @@
       "ensure tools are returned to their correct storage locations"
     ],
     "correct_index": 1,
-    "explanation": "LOTO procedures physically lock energy-isolation devices (circuit breakers, valves) in the off position and attach a tag. This prevents the machine from being accidentally energized while a worker's hands or body are in a dangerous position inside the equipment."
+    "explanation": "Lockout/tagout puts a physical lock on the energy isolation point, a breaker, valve, or disconnect, so the equipment cannot be powered up while a worker has hands or body inside it. The lock and tag stay there until the worker who applied them removes them. Documenting maintenance is a paperwork goal, not a safety control. Notifying supervisors is communication, not energy isolation. Returning tools to storage is housekeeping. Only physical lockout actually prevents the startup that injures or kills the technician."
   },
   {
     "external_key": "AS-SS-B6-4",
@@ -432,7 +432,7 @@
       "Pour water over the spill to dilute it"
     ],
     "correct_index": 1,
-    "explanation": "An oil spill is a slip hazard and must be cleaned up immediately. Oil-absorbent compound (or sawdust) draws up the liquid; the material is then swept and disposed of properly. Leaving it until shift end risks falls; oily rags in open trash cans can spontaneously combust."
+    "explanation": "An oil puddle is a slip hazard the instant it hits the floor, so the safest move is to spread oil-absorbent material or sawdust, sweep it up, and dispose of it properly right away. Marking the spill with a cone and waiting until end of shift leaves a fall hazard live for hours. Wiping with a rag and tossing it in an open trash can risks spontaneous combustion as the oil oxidizes inside a pile of paper trash. Pouring water spreads the oil and does not remove it, and the floor stays slick. Immediate absorbent cleanup is the standard."
   },
   {
     "external_key": "AS-SS-B6-5",
@@ -447,7 +447,7 @@
       "Chemical-splash goggles and a rubber apron"
     ],
     "correct_index": 1,
-    "explanation": "Grinding produces sparks (burn hazard), metal fragments (impact hazard), and loud noise (hearing hazard). A full face shield over safety glasses provides both impact and burn protection for the face; leather gloves protect hands from sharp edges and heat; hearing protection guards against noise-induced damage."
+    "explanation": "Grinding throws hot sparks, sharp metal fragments, and abrasive grit, and the wheel screams loud enough to damage hearing on a long job, so the worker needs a face shield over safety glasses for the face, leather gloves for hot edges, and hearing protection for the noise. Latex exam gloves and a paper dust mask offer no impact, heat, or noise protection. Safety glasses alone leave the rest of the face exposed to flying debris and slag. Chemical-splash goggles and a rubber apron are dressed for solvent or acid work, not for incandescent sparks that would burn through rubber."
   },
   {
     "external_key": "AS-SS-B6-6",
@@ -462,7 +462,7 @@
       "Run the engine for 10 minutes to warm the oil before working"
     ],
     "correct_index": 1,
-    "explanation": "A floor (hydraulic) jack can fail due to seal leakage or accidental contact. Jack stands are rigid mechanical supports that prevent the vehicle from dropping onto a person working beneath it. Never rely on a jack alone as the sole support for a vehicle you are working under."
+    "explanation": "A hydraulic floor jack lifts the vehicle, but a seal can leak or a valve can release, and the jack can drop. Jack stands are rigid steel supports that mechanically hold the load while you work, so you place them under the frame rails or pinch welds before crawling under. Removing the wheels does not address the falling-vehicle hazard. The parking brake on its own, with the jack as sole support, ignores the failure mode that kills people. Warming up the oil is unrelated to whether the car is safely supported. Always pair the jack with stands before going underneath."
   },
   {
     "external_key": "AS-SS-B6-7",
@@ -477,7 +477,7 @@
       "Open drum to allow vapors to escape"
     ],
     "correct_index": 1,
-    "explanation": "Oils and solvents soaked into rags can oxidize and generate heat through spontaneous combustion. A sealed metal container limits oxygen supply and contains any fire that starts. Plastic bins can melt; open drums allow vapor to accumulate and ignite."
+    "explanation": "Oils and many solvents react slowly with oxygen and give off heat, and rags piled together insulate that heat until they reach the ignition point on their own, a process called spontaneous combustion. A sealed metal can starves any fire of oxygen and contains the heat away from the rest of the shop. Cardboard burns through in minutes once a fire starts inside it. Plastic bins soften and melt and do not contain a fire at all. An open drum lets vapors escape into the air and feeds any spark that finds them. Metal, sealed, and approved is the standard."
   },
   {
     "external_key": "AS-SS-B6-8",
@@ -507,7 +507,7 @@
       "Class D"
     ],
     "correct_index": 2,
-    "explanation": "Class C fires involve energized electrical equipment. Class A covers ordinary combustibles (wood, paper); Class B covers flammable liquids; Class D covers combustible metals. For Class C fires, use a non-conductive extinguishing agent (CO2 or dry chemical); water is dangerous because it conducts electricity."
+    "explanation": "Class C fires involve energized electrical equipment such as panels, motors, or wiring, and the rule is to use a non-conductive extinguisher like CO2 or dry chemical so you do not get shocked through the stream. Class A is ordinary combustibles like wood, paper, and cloth. Class B is flammable liquids such as gasoline, oil, and solvents. Class D is combustible metals like magnesium and sodium. Memorizing the letter-to-fuel mapping is the only way to choose the right extinguisher quickly under stress."
   },
   {
     "external_key": "AS-SS-B6-10",
@@ -522,7 +522,7 @@
       "Seal any ventilation openings to keep temperature stable"
     ],
     "correct_index": 1,
-    "explanation": "Confined spaces can contain oxygen-deficient atmospheres or accumulated toxic/flammable vapors from residues. Atmospheric testing with calibrated instruments is mandatory before entry. Entering without testing risks asphyxiation, explosion, or poisoning."
+    "explanation": "A tank or other confined space can hold an oxygen-deficient atmosphere, leftover toxic vapors, or flammable residues, and you cannot see or smell most of those hazards. A calibrated four-gas meter has to test oxygen, combustibles, and toxic gases before anyone goes in. Entering quickly to beat the buildup ignores that the hazardous atmosphere may already be there. A lit lamp inside an unknown atmosphere is an ignition source. Sealing ventilation makes the atmosphere worse, not safer. Test, ventilate, and only then enter, with a permit."
   },
   {
     "external_key": "AS-SS-B6-11",
@@ -537,7 +537,7 @@
       "100 ppm must be measured monthly to comply with OSHA standards"
     ],
     "correct_index": 1,
-    "explanation": "IDLH defines the maximum concentration from which a healthy worker could escape within 30 minutes without escape-impairing symptoms or irreversible health effects. It is used to select respirator types for emergency planning. The permissible exposure limit (PEL) is a separate, lower value for routine shift exposure."
+    "explanation": "IDLH is the concentration at which a worker who loses respiratory protection has roughly thirty minutes to get out before symptoms keep them from escaping or before irreversible health damage sets in. It is an emergency-planning value used to pick respirator type for entry or rescue work. The permissible exposure limit, PEL, is the much lower routine-exposure ceiling for an eight-hour shift, so the safe-shift answer is wrong. IDLH says nothing directly about flammability, which is set by the lower explosive limit. The monthly-monitoring rule is invented; OSHA monitoring frequency depends on the specific substance."
   },
   {
     "external_key": "AS-SS-B6-12",
@@ -552,7 +552,7 @@
       "Tape cardboard over the exposed area as a temporary barrier"
     ],
     "correct_index": 1,
-    "explanation": "Machine guards are a primary engineering control against contact with rotating parts. Operating unguarded machinery violates safety standards and exposes the worker to serious injury. The correct response is to stop, report the hazard to a supervisor, and await proper repair before operating the machine."
+    "explanation": "Machine guards keep hands and clothing out of rotating gears, belts, and pinch points, and they are a primary engineering control required before the machine runs. The right move is to stop, report the missing guard, and refuse to operate until it is replaced. Running it briefly without the guard exposes the worker for exactly the time the hazard is loose. Holding the guard by hand puts the holding hand inside the danger zone. Cardboard taped over the opening is not a guard, will not stop a rotating part, and can be pulled in. The line is clear: no guard, no operation."
   },
   {
     "external_key": "AS-MR-B6-1",
@@ -567,7 +567,7 @@
       "The reservoir level is irrelevant; check only the radiator cap"
     ],
     "correct_index": 0,
-    "explanation": "The overflow reservoir is the service point for most modern cooling systems. If the level is below MIN when cold, add the manufacturer-specified antifreeze/water mix (typically 50/50) to bring it into the MIN-MAX range. Adding straight water repeatedly dilutes the antifreeze and reduces freeze/boil protection."
+    "explanation": "On a modern engine the overflow reservoir is where you check and add coolant when the engine is cold, and the right top-up is the manufacturer-specified antifreeze and water mix, typically a 50/50 blend, to keep both freeze and boil protection intact. Draining and replacing all the coolant is a full service, not a level correction. Adding straight water dilutes the antifreeze and weakens corrosion inhibitors. The radiator cap is not a service point for level on systems built around a reservoir, and opening a hot cap is a burn risk anyway. Add the correct mix, to the correct mark, when cold."
   },
   {
     "external_key": "AS-MR-B6-2",
@@ -582,7 +582,7 @@
       "Add transmission fluid to the engine to restore pressure quickly"
     ],
     "correct_index": 1,
-    "explanation": "A low oil pressure warning can indicate low oil level, low oil pressure, or a failing oil pressure sensor. The safest immediate action is to shut off the engine (protecting it from oil starvation), check the dipstick, and add oil if the level is low. Never add transmission fluid to an engine — it can damage seals and bearings."
+    "explanation": "A low oil pressure warning at idle can mean the level is genuinely low, the pump or bearings are failing, or the sensor itself is bad, and you cannot tell which one without stopping. Shutting the engine off protects the bearings from oil starvation, then a dipstick check shows whether oil is needed before restart. Revving the engine pushes more oil only at the cost of more wear if pressure really is gone. Driving on because the light might be faulty is exactly the gamble that destroys engines. Transmission fluid is not engine oil and will damage seals and clutches that do not belong in an engine."
   },
   {
     "external_key": "AS-MR-B6-3",
@@ -597,7 +597,7 @@
       "No action needed — brake fluid darkens naturally and remains effective"
     ],
     "correct_index": 1,
-    "explanation": "Brake fluid is hygroscopic and absorbs water over time, lowering its boiling point and promoting corrosion of metal components. Dark, contaminated fluid should be flushed from the system completely and replaced with fresh fluid matching the vehicle's DOT rating (e.g., DOT 3, DOT 4). Topping off only dilutes the contamination without removing it."
+    "explanation": "Brake fluid is hygroscopic, meaning it pulls moisture out of the air over time, and that water lowers the boiling point and corrodes calipers, lines, and the master cylinder from the inside. Dark brown fluid is contaminated and needs to be flushed completely from each wheel and refilled with fresh fluid matching the vehicle's DOT specification. Topping off only mixes new fluid with bad and leaves the contamination in place. Brake fluid conditioners are not a recognized service for this and cannot undo moisture absorption. The claim that dark fluid is normal and effective is simply wrong; brake fluid should be light amber."
   },
   {
     "external_key": "AS-MR-B6-4",
@@ -657,7 +657,7 @@
       "The coolant system is leaking into the cylinder"
     ],
     "correct_index": 1,
-    "explanation": "An oil-fouled spark plug — wet and black — indicates oil contamination in the combustion chamber. This happens when piston rings wear and lose their seal, or when valve stem seals fail and allow oil to enter from the valve guides. A lean mixture leaves a white powdery deposit; coolant leaks leave a white crusty or sweet-smelling residue."
+    "explanation": "A wet, oily, black coating on the plug means liquid oil is reaching the combustion chamber, either past worn piston rings from below or past failed valve stem seals from above, and it is being burned along with the fuel. A lean mixture, with too little fuel, leaves a chalky white or very light gray deposit because there is no extra fuel to leave soot. Excessively advanced ignition timing produces detonation symptoms and may erode the electrode, not coat it with oil. A coolant leak into the cylinder bakes onto the plug as a hard white crust, sometimes with a sweet smell, not a wet black film."
   },
   {
     "external_key": "AS-MR-B6-8",
@@ -747,7 +747,7 @@
       "Fourth-class lever"
     ],
     "correct_index": 2,
-    "explanation": "In a third-class lever the effort is between the fulcrum and the load (e.g., a fishing rod or tweezers). First-class has the fulcrum in the middle (e.g., a seesaw); second-class has the load in the middle (e.g., a wheelbarrow). There is no fourth-class lever."
+    "explanation": "A third-class lever places the effort between the fulcrum and the load. Common examples include tweezers, fishing rods, and the human forearm lifting a weight. Choice A (first-class) places the fulcrum between effort and load, like a seesaw or pliers. Choice B (second-class) places the load between fulcrum and effort, like a wheelbarrow or bottle opener. Choice D (fourth-class) does not exist in mechanics; only three classes of lever are defined, distinguished by which of the three elements (fulcrum, load, effort) sits in the middle."
   },
   {
     "external_key": "MC-LP-B6-2",
@@ -762,7 +762,7 @@
       "Providing a mechanical advantage of 2"
     ],
     "correct_index": 0,
-    "explanation": "When both sides have equal weight at equal distance from the fulcrum, torques are equal and the lever is balanced. Mechanical advantage requires the effort arm to be longer than the load arm; equal arm lengths give MA = 1 (no advantage, just direction change)."
+    "explanation": "A lever balances when torques are equal: W1 x D1 = W2 x D2. With 20 pounds at equal distances, both torques match and the lever is balanced. Mechanical advantage = effort arm / load arm = 1, so no force is multiplied. Choice B (tipped left) and choice C (tipped right) ignore that the moments are equal. Choice D (MA of 2) requires the effort arm to be twice the load arm; here they are equal. A first-class lever with arms of equal length only redirects force, much like a fixed pulley."
   },
   {
     "external_key": "MC-LP-B6-3",
@@ -777,7 +777,7 @@
       "5"
     ],
     "correct_index": 2,
-    "explanation": "Mechanical advantage of a lever = effort arm length / load arm length = 4 / 1 = 4. This means you can lift a 4-pound load with 1 pound of effort (ignoring the lever's own weight)."
+    "explanation": "Lever MA equals effort arm divided by load arm: MA = 4 / 1 = 4. This means 1 pound of effort can lift a 4-pound load (ignoring the lever's own weight). Choice A (1) would require equal arm lengths and corresponds to a balanced first-class lever with no mechanical advantage. Choice B (2) halves the correct ratio. Choice D (5) adds the arm lengths (4 + 1) instead of dividing them. Mechanical advantage is always a ratio of effort arm to load arm, never a sum."
   },
   {
     "external_key": "MC-LP-B6-4",
@@ -792,7 +792,7 @@
       "Reverses the direction of pull with no force benefit"
     ],
     "correct_index": 1,
-    "explanation": "A movable pulley travels with the load. Both sides of the rope support the load, so each side bears half the weight — giving a mechanical advantage of 2. The trade-off is that you pull twice the rope distance (distance is doubled, force is halved)."
+    "explanation": "A single movable pulley is attached to the load and supported by two rope segments. Each segment shares half the load, so the effort needed is half the load weight; MA = 2. The trade-off is that the effort end of the rope must travel twice as far as the load rises (conservation of work). Choice A (no change) describes a fixed pulley, not a movable one. Choice C (triples to 3) requires three supporting strands, which a single movable pulley does not have. Choice D (reverses direction with no force benefit) describes a fixed pulley's behavior, not a movable one."
   },
   {
     "external_key": "MC-LP-B6-5",
@@ -882,7 +882,7 @@
       "225 pounds"
     ],
     "correct_index": 0,
-    "explanation": "Effort × Effort arm = Load × Load arm. Effort × 4.5 = 150 × 1.5 = 225. Effort = 225 / 4.5 = 50 pounds. The wheelbarrow's long effort arm (handles) gives MA = 4.5 / 1.5 = 3, so you need only 1/3 of the load's weight."
+    "explanation": "Torque balance: Effort x Effort arm = Load x Load arm. So Effort x 4.5 = 150 x 1.5 = 225 lb-ft. Effort = 225 / 4.5 = 50 pounds. Choice B (75 pounds) is half the load weight, the answer for a single movable pulley, not a second-class lever with these arm lengths. Choice C (100 pounds) ignores the load arm and divides 150 by some other ratio. Choice D (225 pounds) is the torque value (in lb-ft) being misread as a force. MA = effort arm / load arm = 4.5 / 1.5 = 3, so effort is one-third of load weight."
   },
   {
     "external_key": "MC-LP-B6-11",
@@ -897,7 +897,7 @@
       "1200 RPM"
     ],
     "correct_index": 2,
-    "explanation": "Belt-connected pulleys: speed ratio is inversely proportional to diameter ratio. Driven RPM = Driver RPM × (Driver diameter / Driven diameter) = 300 × (8 / 4) = 300 × 2 = 600 RPM. A smaller driven pulley spins faster; a larger one spins slower."
+    "explanation": "Belt-connected pulleys have rim speeds equal (no slip), so RPM is inversely proportional to diameter: Driven RPM = Driver RPM x (Driver d / Driven d) = 300 x (8 / 4) = 600 RPM. Choice A (150 RPM) inverts the ratio and treats the larger pulley as the faster one. Choice B (300 RPM) leaves the speed unchanged, ignoring the size difference. Choice D (1200 RPM) doubles the correct answer, possibly multiplying by 4 instead of by 2. The smaller driven pulley always spins faster than the larger driver when belt-coupled."
   },
   {
     "external_key": "MC-LP-B6-12",
@@ -942,7 +942,7 @@
       "the same direction only when they are the same size"
     ],
     "correct_index": 1,
-    "explanation": "When two external spur gears mesh, their teeth push against each other, causing each gear to rotate in the direction opposite to the other. If you need both gears to rotate the same direction, you must add an idler gear between them."
+    "explanation": "When two external spur gears mesh, the teeth push against each other at the contact point. Equal and opposite contact forces (Newton's Third Law) cause the two gears to spin in opposite directions. Choice A (same direction) only happens with an idler gear between them, or with internal gears. Choice C (alternating depending on speed) is not how gear direction works; direction is set by geometry, not speed. Choice D (same direction when equal size) is also wrong; same-size meshing gears still rotate opposite each other. To get same direction without size change, an idler gear must be inserted."
   },
   {
     "external_key": "MC-GW-B6-2",
@@ -957,7 +957,7 @@
       "1:8"
     ],
     "correct_index": 1,
-    "explanation": "Gear ratio (driven to driver) = teeth on driven / teeth on driver = 24 / 8 = 3:1. This means the driven gear completes one revolution for every three revolutions of the driving gear — a 3:1 gear reduction."
+    "explanation": "Gear ratio (driven to driver) equals teeth on driven divided by teeth on driver: 24 / 8 = 3:1. The driving gear turns three times for every one turn of the driven gear, producing a 3:1 speed reduction and a 3:1 torque multiplication. Choice A (1:3) inverts the ratio, which would describe a speed-up gear set (small driver, larger driven). Choice C (8:1) and choice D (1:8) use the wrong tooth count or completely skip the division step. Direction of the ratio (driven:driver vs driver:driven) must always be matched to context; the convention here is driven first."
   },
   {
     "external_key": "MC-GW-B6-3",
@@ -972,7 +972,7 @@
       "1,800 RPM"
     ],
     "correct_index": 1,
-    "explanation": "Speed is inversely proportional to teeth count: RPM_B = RPM_A × (Teeth_A / Teeth_B) = 600 × (12 / 36) = 600 × (1/3) = 200 RPM. The larger gear turns slower; this is a 3:1 reduction in speed (and a 3:1 increase in torque)."
+    "explanation": "RPM is inversely proportional to tooth count: RPM_B = RPM_A x (Teeth_A / Teeth_B) = 600 x (12 / 36) = 600 x (1/3) = 200 RPM. Choice A (100 RPM) divides by 6 instead of 3, doubling the reduction. Choice C (300 RPM) only halves the speed, applying a 2:1 ratio. Choice D (1,800 RPM) multiplies by 3 instead of dividing, treating the larger gear as the faster one. The bigger gear always rotates slower than the smaller gear it meshes with; torque trades up by the same factor speed trades down."
   },
   {
     "external_key": "MC-GW-B6-4",
@@ -1002,7 +1002,7 @@
       "Gear 3 rotates 90 degrees out of phase with Gear 1"
     ],
     "correct_index": 1,
-    "explanation": "Each time two external gears mesh, the direction reverses. Gear 1→Gear 2 is one reversal; Gear 2→Gear 3 is a second reversal. Two reversals return Gear 3 to the same direction as Gear 1. The idler (Gear 2) also changes the speed ratio to 1:1 in this case (10:20:10)."
+    "explanation": "Each external gear mesh reverses the direction of rotation. Gear 1 to Gear 2 is one reversal; Gear 2 to Gear 3 is a second reversal. Two reversals return Gear 3 to the same rotational direction as Gear 1. The idler also makes the final speed ratio depend only on the first and last gears (10 and 10), not the idler in the middle, so the speed ratio is 1:1. Choice A (opposite) counts only one reversal. Choice C (does not rotate) misunderstands what an idler does; it transmits motion. Choice D (90 degrees out of phase) confuses rotational direction with phase angle, which is not a quantity defined for spur gears."
   },
   {
     "external_key": "MC-GW-B6-6",
@@ -1032,7 +1032,7 @@
       "400 RPM output; torque is multiplied by 5"
     ],
     "correct_index": 0,
-    "explanation": "Output RPM = 2,000 × (5/40) = 250 RPM. Gear ratio = 40/5 = 8:1 reduction. With a factor of 8 reduction in speed, torque is multiplied by 8 (before friction losses). This is the fundamental speed-torque trade-off in gear reductions."
+    "explanation": "Output RPM = Input RPM x (Pinion teeth / Ring teeth) = 2,000 x (5/40) = 250 RPM. The gear reduction ratio is 40/5 = 8:1. In an ideal gear set, what is lost in speed is gained in torque, so output torque = input torque x 8. Choice B (250 RPM, same torque) gets the speed right but ignores the speed-torque trade-off. Choice C (16,000 RPM, torque /8) inverts the formula and treats the small gear as the driven side. Choice D (400 RPM, torque x 5) uses the wrong ratio (5 instead of 8). Gear ratio always equals teeth_driven / teeth_driver."
   },
   {
     "external_key": "MC-GW-B6-8",
@@ -1047,7 +1047,7 @@
       "4 times"
     ],
     "correct_index": 2,
-    "explanation": "The chain transmits motion: rear wheel revolutions per pedal revolution = chainring teeth / sprocket teeth = 48 / 16 = 3. Each pedal stroke turns the rear wheel 3 times — a speed advantage that requires more pedaling force."
+    "explanation": "Chain drives behave like gears: rear wheel revolutions per pedal revolution = chainring teeth / sprocket teeth = 48 / 16 = 3. Each pedal stroke turns the rear wheel three times, giving a speed advantage at the cost of higher pedaling force. Choice A (1 time) ignores the tooth ratio entirely. Choice B (2 times) halves the correct ratio. Choice D (4 times) uses the wrong division (perhaps 48 / 12 or similar). Larger chainring relative to sprocket means more wheel revolutions per pedal turn, which is the trade-off cyclists make for higher top speed."
   },
   {
     "external_key": "MC-GW-B6-9",
@@ -1077,7 +1077,7 @@
       "75,000 RPM"
     ],
     "correct_index": 1,
-    "explanation": "For a single-start worm, each full turn of the worm advances the worm wheel by 1 tooth. The wheel has 50 teeth, so the gear ratio is 50:1. Output RPM = 1,500 / 50 = 30 RPM. A multi-start worm (e.g., 2 threads) would give 1,500 / 25 = 60 RPM."
+    "explanation": "A single-start worm advances the worm wheel by one tooth per full worm revolution. With 50 teeth on the wheel, the gear ratio is 50:1. Output RPM = Input RPM / 50 = 1,500 / 50 = 30 RPM. Choice A (1 RPM) over-reduces, dividing by 1,500 or otherwise inflating the ratio. Choice C (50 RPM) leaves out one step in the division. Choice D (75,000 RPM) multiplies instead of dividing, treating the worm wheel as a speed-up element. Worm gears are extreme speed reducers and large torque multipliers, often used where high torque at low speed is needed."
   },
   {
     "external_key": "MC-GW-B6-11",
@@ -1092,22 +1092,22 @@
       "700 Nm"
     ],
     "correct_index": 3,
-    "explanation": "Output torque = Engine torque × Gear ratio = 200 × 3.5 = 700 Nm. Gear reduction multiplies torque — this is why first gear provides the greatest pulling force for starting from rest. In fourth gear (1:1), output torque equals engine torque (200 Nm)."
+    "explanation": "Gear reduction multiplies torque: Output torque = Engine torque x Gear ratio = 200 Nm x 3.5 = 700 Nm. Choice A (57 Nm) divides 200 by 3.5, inverting the formula and treating first gear as a speed-up. Choice B (200 Nm) ignores the gear ratio and just lists engine torque, which would only be the case in fourth gear (1:1). Choice C (440 Nm) uses the 2.2:1 second-gear ratio instead of first gear. First gear has the highest reduction and therefore the highest output torque, which is exactly why vehicles start from rest in first gear."
   },
   {
     "external_key": "MC-GW-B6-12",
     "subtest": "MC",
     "topic_id": "mc.gears-wheels",
     "difficulty": 5,
-    "stem": "Two meshing gears have a center-to-center distance of 18 cm. Gear A has a pitch radius of 6 cm. What is the gear ratio if Gear A is the driver?",
+    "stem": "Two meshing gears have a center-to-center distance of 18 cm. Gear A (the driver) has a pitch radius of 6 cm. Expressing gear ratio as driven-to-driver, what is the gear ratio?",
     "choices": [
       "1:1",
       "1:2",
       "2:1",
       "3:1"
     ],
-    "correct_index": 1,
-    "explanation": "Center-to-center distance = radius_A + radius_B. 18 = 6 + radius_B, so radius_B = 12 cm. Since pitch radius is proportional to tooth count, gear ratio (driven:driver) = radius_B / radius_A = 12 / 6 = 2:1. The driven gear is twice as large, so it turns at half the speed of the driver."
+    "correct_index": 2,
+    "explanation": "For meshing external gears the center-to-center distance equals the sum of the two pitch radii. So radius_B = 18 minus 6 = 12 cm. Pitch radius is proportional to tooth count, so the driven-to-driver ratio is 12 to 6, which simplifies to 2:1. The driven gear (B) is twice as large, so for every one rotation of the driver it turns half a revolution, and its torque is doubled. '1:1' would require equal radii (9 and 9). '1:2' inverts the convention and would describe driver-to-driven instead. '3:1' would require radius_B = 18, which violates the geometric constraint."
   },
   {
     "external_key": "MC-GW-B6-13",
@@ -1122,7 +1122,7 @@
       "Torque to electrical energy"
     ],
     "correct_index": 0,
-    "explanation": "A rack is a straight gear (linear); a pinion is a circular gear. As the pinion rotates, its teeth engage the rack and push it linearly. This converts rotary (circular) motion into linear (straight-line) motion — the basis of rack-and-pinion steering systems."
+    "explanation": "A rack is a straight, flat gear; a pinion is a circular gear. When the pinion rotates, its teeth engage the rack and push it along its length, converting rotary motion into linear motion. This is the operating principle of rack-and-pinion steering, where steering-wheel rotation becomes linear motion of the tie rods. Choice B (linear to circular oscillation) reverses the input/output and adds oscillation, which is not what a rack-and-pinion does. Choice C (vertical to horizontal rotary) garbles the geometry; the conversion is rotary-to-linear, not vertical-to-horizontal. Choice D (torque to electricity) describes a generator, not a mechanical gear set."
   },
   {
     "external_key": "MC-FF-B6-1",
@@ -1152,7 +1152,7 @@
       "Dependent only on velocity"
     ],
     "correct_index": 2,
-    "explanation": "Kinetic friction — the friction acting on a sliding object — is typically less than the maximum static friction required to start the object moving. This is why it takes more force to start sliding a heavy box than to keep it sliding once moving."
+    "explanation": "Kinetic (sliding) friction is generally less than the maximum static friction for the same surfaces. Once an object breaks free of static friction and begins sliding, fewer microscopic surface interlocks form, so the resisting force drops. Choice A (greater) reverses the well-established relationship. Choice B (equal) ignores the difference between coefficients of static and kinetic friction. Choice D (depends only on velocity) is wrong; for most practical surfaces, kinetic friction is approximately constant with velocity at typical speeds. This is why a heavy object takes more force to start moving than to keep moving."
   },
   {
     "external_key": "MC-FF-B6-3",
@@ -1167,7 +1167,7 @@
       "100 pounds"
     ],
     "correct_index": 1,
-    "explanation": "Maximum static friction = coefficient of static friction × normal force = 0.4 × 100 = 40 pounds. This is the minimum force needed to overcome static friction and start motion. On a horizontal surface, the normal force equals the object's weight."
+    "explanation": "Maximum static friction equals the coefficient of static friction times the normal force: f_s = mu_s x N = 0.4 x 100 = 40 pounds. On a horizontal surface, normal force equals the object's weight, so 40 pounds of push is the minimum to start motion. Choice A (20 pounds) halves the coefficient or uses 0.2 by mistake. Choice C (60 pounds) inflates the coefficient to 0.6. Choice D (100 pounds) ignores the coefficient and uses the full weight as the friction force, which would only be true if mu_s equaled 1.0."
   },
   {
     "external_key": "MC-FF-B6-4",
@@ -1182,7 +1182,7 @@
       "200 pounds"
     ],
     "correct_index": 1,
-    "explanation": "Kinetic friction = coefficient of kinetic friction × normal force = 0.25 × 200 = 50 pounds. To maintain constant speed, the applied force must equal this friction force. Multiplying 0.25 × 200 = 50; dividing 200 by 0.25 = 800 is a common arithmetic reversal."
+    "explanation": "Kinetic friction equals the coefficient times the normal force: f_k = mu_k x N = 0.25 x 200 = 50 pounds. On a flat floor the normal force equals the box's weight. Choice A (25 pounds) halves the coefficient to 0.125. Choice C (80 pounds) uses a coefficient of 0.4 instead of 0.25. Choice D (200 pounds) ignores the coefficient and uses the full weight, which would only apply if mu_k were 1.0 (an extreme value rarely seen). Friction always scales with normal force, not with the applied force."
   },
   {
     "external_key": "MC-FF-B6-5",
@@ -1212,7 +1212,7 @@
       "Friction is eliminated by the forward-directed component"
     ],
     "correct_index": 1,
-    "explanation": "Friction force = coefficient × normal force. When a downward force component is added to the weight, the total normal force increases, which proportionally increases the friction force. This is why pushing down on a handle makes it harder to slide the mower across rough grass."
+    "explanation": "Friction force equals the coefficient of friction times the normal force: f = mu x N. Adding a downward component of push increases the normal force the floor exerts upward on the mower wheels, and friction scales directly with that normal force. Choice A (decreases) reverses the relationship; pushing down increases, not decreases, the resistance. Choice C (unchanged) ignores that the vertical force component adds to the weight, raising the normal force. Choice D (eliminated) is physically impossible; no horizontal component can cancel friction. This is why pulling at an upward angle is easier than pushing at a downward angle."
   },
   {
     "external_key": "MC-FF-B6-7",
@@ -1227,22 +1227,22 @@
       "Net 50 pounds right; no acceleration because friction balances it"
     ],
     "correct_index": 0,
-    "explanation": "Net force = 50 − 30 = 20 pounds to the right. Mass = weight / g = 120 / 32 = 3.75 slugs. Acceleration = F / m = 20 / 3.75 ≈ 5.3 ft/s². (Note: In SI, 120 lb ≈ 534 N, but using US customary: a = F(lb) / m(slugs). The surface is frictionless, so there is no friction balance issue.)"
+    "explanation": "Net force = 50 - 30 = 20 pounds to the right. Mass in slugs = weight / g = 120 / 32 = 3.75 slugs. Acceleration = F_net / m = 20 / 3.75 = 5.33 ft/s^2 to the right. Choice B (80 pounds; 21 ft/s^2) adds the two forces instead of subtracting them. Choice C (20 pounds; 2.5 ft/s^2) uses weight (120 lb) directly as mass instead of dividing by g, doubling the apparent mass. Choice D (50 pounds; no acceleration) misreads the surface as having friction; with no friction, the only horizontal forces are the two applied pushes."
   },
   {
     "external_key": "MC-FF-B6-8",
     "subtest": "MC",
     "topic_id": "mc.forces-friction",
     "difficulty": 4,
-    "stem": "A 500-Newton engine rests on a steel workbench. The coefficient of static friction between the engine and bench is 0.3. A horizontal force of 160 N is applied. Does the engine move, and if not, what is the friction force?",
+    "stem": "A 500-Newton engine rests on a steel workbench. The coefficient of static friction between the engine and bench is 0.3. A horizontal force of 160 N is applied to the engine. Does the engine move, and what is the maximum static friction force?",
     "choices": [
-      "Yes, it moves because 160 N exceeds friction",
-      "No; static friction = 150 N, and 160 N exceeds it, so it moves",
-      "No; maximum static friction = 150 N — since 160 N > 150 N, it just barely moves",
-      "No; friction = 160 N opposing the applied force, since the engine is stationary"
+      "Yes, the engine moves; maximum static friction was 150 N, which 160 N exceeds",
+      "Yes, the engine moves; maximum static friction was 160 N, which the applied force just equals",
+      "No, the engine stays put; maximum static friction was 150 N, but it grows to match the 160 N applied",
+      "No, the engine stays put; maximum static friction was 160 N opposing the applied force"
     ],
-    "correct_index": 2,
-    "explanation": "Maximum static friction = 0.3 × 500 = 150 N. The applied force is 160 N, which exceeds the maximum static friction. Therefore the engine just begins to move. (If static friction could exactly equal 160 N, it would hold, but 150 N is the ceiling.) The answer correctly identifies that movement occurs."
+    "correct_index": 0,
+    "explanation": "Compute the static-friction ceiling: f_s,max = μ_s × N = 0.3 × 500 = 150 N. The applied force of 160 N exceeds that ceiling, so the engine begins to slide. Choice B (150 vs 160 is mistakenly read as equal) ignores the 10 N gap that triggers motion. Choice C is the most common misconception: students think static friction always rises to match whatever force is applied, but it actually caps at μ_s × N. Choice D treats kinetic friction as the answer at rest and uses the wrong number entirely; static friction never exceeds its ceiling."
   },
   {
     "external_key": "MC-FF-B6-9",
@@ -1257,7 +1257,7 @@
       "The coefficient of kinetic friction is zero"
     ],
     "correct_index": 1,
-    "explanation": "Constant speed means zero acceleration, so net force = 0. Along the ramp direction, gravity's component (W sin θ) pulls the block down the ramp while kinetic friction (μk × W cos θ) acts up the ramp. At constant speed these forces are exactly equal and opposite."
+    "explanation": "Constant velocity means zero acceleration, so the net force along the ramp is zero. The component of gravity pulling the block down the ramp (W sin theta) must be exactly canceled by kinetic friction (mu_k x N) acting up the ramp. Choice A (no friction) would leave gravity unopposed and the block would accelerate, not move at constant speed. Choice C (normal equals gravity) is true only on a flat surface; on a ramp, normal force equals W cos theta, less than full weight. Choice D (mu_k = 0) is equivalent to choice A and contradicts the constant-speed observation."
   },
   {
     "external_key": "MC-FF-B6-10",
@@ -1287,7 +1287,7 @@
       "It reverses direction"
     ],
     "correct_index": 2,
-    "explanation": "Originally, 80 N of applied force equaled 80 N of kinetic friction (constant velocity). Halving the coefficient halves the friction force to 40 N. Now the net force = 80 − 40 = 40 N in the direction of motion, so the crate accelerates. Newton's Second Law: a = F_net / m > 0."
+    "explanation": "Originally, applied force (80 N) balanced friction (80 N) for constant velocity. Halving the coefficient of kinetic friction halves the friction force to 40 N while the applied force stays at 80 N. Net force = 80 - 40 = 40 N in the direction of motion. By Newton's Second Law, a = F_net / m > 0, so the crate accelerates. Choice A (same velocity) ignores the new force imbalance. Choice B (decelerates) reverses the direction of the net force; less friction means less resistance, not more. Choice D (reverses direction) would require a net force opposite to motion, which is not the case here."
   },
   {
     "external_key": "MC-FF-B6-12",
@@ -1317,7 +1317,7 @@
       "Pulley"
     ],
     "correct_index": 2,
-    "explanation": "A screw is essentially an inclined plane (ramp) wrapped in a spiral around a cylinder. Rotating the screw converts the rotational force (torque) into a linear force along the screw's axis, just as a ramp converts a horizontal push into a vertical lift."
+    "explanation": "A screw is geometrically an inclined plane wrapped helically around a cylinder. The pitch (distance between threads) is the height of the inclined plane, and the circumference traveled per rotation is its length. Choice A (lever) is unrelated; a screw does not rotate around a fixed fulcrum like a lever. Choice B (wheel and axle) is the closest second answer because screws are turned by a wheel-like head, but the underlying geometry that creates the linear advance is the spiral ramp itself, not a wheel-axle radius ratio. Choice D (pulley) does not match; pulleys use ropes and grooves, not threaded inclines."
   },
   {
     "external_key": "MC-IPH-B6-2",
@@ -1332,7 +1332,7 @@
       "only transmitted upward in the fluid"
     ],
     "correct_index": 1,
-    "explanation": "Pascal's principle states that a change in pressure applied to an enclosed fluid is transmitted undiminished to every part of the fluid and to the walls of the container. This is the operating principle behind all hydraulic systems."
+    "explanation": "Pascal's principle states that pressure applied to an enclosed, incompressible fluid is transmitted equally in all directions and to every surface bounding the fluid. This is the foundation of hydraulic systems, brakes, and lifts. Choice A (absorbed and converted to heat) describes friction or compression losses, not the transmission of pressure. Choice C (reduced by depth) is true for static fluid pressure due to gravity but is not Pascal's principle; Pascal's law concerns the added pressure from external force. Choice D (only upward) is geometrically wrong; fluids transmit applied pressure in every direction at once."
   },
   {
     "external_key": "MC-IPH-B6-3",
@@ -1362,7 +1362,7 @@
       "2,500 pounds"
     ],
     "correct_index": 2,
-    "explanation": "Hydraulic force multiplication: F_out = F_in × (A_out / A_in) = 100 × (25 / 5) = 100 × 5 = 500 pounds. The output force is multiplied by the ratio of the piston areas — the fundamental advantage of hydraulics."
+    "explanation": "Hydraulic force multiplication: F_out = F_in x (A_out / A_in) = 100 x (25 / 5) = 100 x 5 = 500 pounds. Choice A (20 pounds) inverts the area ratio and divides force by 5 instead of multiplying. Choice B (100 pounds) ignores the area difference entirely. Choice D (2,500 pounds) multiplies force by the output area alone (100 x 25), ignoring the input area in the denominator. Hydraulics multiply force by the ratio of areas; the input piston moves a longer distance with less force, the output piston moves a shorter distance with more force, conserving work."
   },
   {
     "external_key": "MC-IPH-B6-5",
@@ -1392,7 +1392,7 @@
       "360 pounds"
     ],
     "correct_index": 3,
-    "explanation": "Pedal force after booster = 30 × 4 = 120 pounds to the master cylinder piston. Hydraulic area ratio = 3/1 = 3. Caliper force = 120 × 3 = 360 pounds. Two stages of force multiplication (mechanical booster + hydraulic area ratio) are applied in sequence."
+    "explanation": "Two stages of multiplication apply in series. Booster: 30 x 4 = 120 pounds at the master cylinder. Hydraulic area ratio: 120 x (3/1) = 360 pounds at the caliper. Choice A (30 pounds) ignores both stages. Choice B (90 pounds) applies only the hydraulic ratio to the bare pedal force (30 x 3 = 90), skipping the booster. Choice C (120 pounds) stops after the booster and ignores the hydraulic stage. When mechanical and hydraulic advantages chain together, you multiply their factors: total MA = 4 x 3 = 12, and final force = 30 x 12 = 360 pounds."
   },
   {
     "external_key": "MC-IPH-B6-7",
@@ -1407,7 +1407,7 @@
       "600 pounds"
     ],
     "correct_index": 1,
-    "explanation": "Wedge MA = length / thickness = 10 / 2 = 5. Effort needed = Load / MA = 600 / 5 = 120 pounds. The wedge allows a relatively small driving force to create a much larger splitting or lifting force perpendicular to the wedge's direction of travel."
+    "explanation": "Wedge MA = length / thickness = 10 / 2 = 5. Driving force = Load / MA = 600 / 5 = 120 pounds. Choice A (60 pounds) doubles the wedge MA to 10, perhaps using length / (thickness/2). Choice C (300 pounds) halves the load and ignores the MA, treating the wedge like a simple lever with MA = 2. Choice D (600 pounds) skips the wedge entirely and uses the load weight as the required force. A wedge converts a small driving force along its length into a much larger splitting force perpendicular to its motion, just like an inclined plane in mirror image."
   },
   {
     "external_key": "MC-IPH-B6-8",
@@ -1467,7 +1467,7 @@
       "600 pounds"
     ],
     "correct_index": 0,
-    "explanation": "Total MA = lever MA × pulley MA = 3 × 4 = 12. Minimum effort = Load / Total MA = 600 / 12 = 50 pounds. When multiple simple machines are combined in series, their mechanical advantages multiply."
+    "explanation": "When simple machines are combined in series, their mechanical advantages multiply: Total MA = 3 x 4 = 12. Effort = Load / Total MA = 600 / 12 = 50 pounds. Choice B (200 pounds) uses only the pulley MA of 3, ignoring the lever. Choice C (400 pounds) reduces the load by only 1.5, perhaps averaging the MAs (3+4)/2 instead of multiplying. Choice D (600 pounds) ignores both stages and uses the full engine weight. Compound machines trade input force for input distance: you pull through 12 times the distance the engine rises."
   },
   {
     "external_key": "MC-IPH-B6-12",
@@ -1497,7 +1497,7 @@
       "0.2 N"
     ],
     "correct_index": 2,
-    "explanation": "F = m × a = 2 kg × 10 m/s² = 20 N. Dividing m by a (2/10 = 0.2) inverts the formula. Adding them (2 + 10 = 12) misunderstands the relationship. Newton's Second Law: force is proportional to both mass and acceleration."
+    "explanation": "Newton's Second Law: F = m x a = 2 kg x 10 m/s^2 = 20 N. Choice A (5 N) divides incorrectly (a / m / 2). Choice B (12 N) adds mass and acceleration (2 + 10), mixing incompatible units. Choice D (0.2 N) inverts the formula and divides mass by acceleration (2 / 10). Force is proportional to both mass and acceleration; the units (N = kg m/s^2) confirm the multiplicative relationship. Heavier objects need more force for the same acceleration; lighter objects accelerate more under the same force."
   },
   {
     "external_key": "MC-MP-B6-2",
@@ -1512,7 +1512,7 @@
       "At a 45-degree angle combining horizontal and vertical"
     ],
     "correct_index": 2,
-    "explanation": "Gravity always acts vertically downward, independent of horizontal motion. This is the key principle of projectile motion: horizontal and vertical motions are independent. The moment the ball leaves the hand, gravity begins pulling it straight down at 9.8 m/s²."
+    "explanation": "Near Earth's surface, gravity acts vertically downward at 9.8 m/s^2 regardless of horizontal motion. The instant the ball leaves the hand, the only force on it (ignoring air resistance) is the downward pull of gravity. Choice A (horizontal in direction of throw) confuses initial velocity with the gravitational force; the throw gives velocity, not a continued force. Choice B (upward) reverses gravity's direction. Choice D (45 degrees) adds a horizontal component to gravity that does not exist; horizontal and vertical motions are independent in projectile motion, with gravity acting only on the vertical component."
   },
   {
     "external_key": "MC-MP-B6-3",
@@ -1557,7 +1557,7 @@
       "Gravity pulls the rocket forward in the direction of acceleration"
     ],
     "correct_index": 1,
-    "explanation": "Newton's Third Law: for every action force there is an equal and opposite reaction force. The rocket engine pushes exhaust gases out the back (action); the gases push the rocket forward with an equal force (reaction). This works in a vacuum where there is no air to push against."
+    "explanation": "Newton's Third Law: for every action force there is an equal and opposite reaction force. The rocket pushes exhaust gases backward (action); the gases push the rocket forward with an equal force (reaction). Because the action-reaction pair acts on the rocket and the gases (not on the surrounding air), thrust works in a vacuum. Choice A (no inertia in space) is wrong; objects retain their mass and inertia everywhere. Choice C (mass loss alone causes speed) ignores that a force is needed to accelerate the remaining mass. Choice D (gravity pulls forward) misidentifies the force; gravity pulls toward planetary masses, not in the direction of acceleration."
   },
   {
     "external_key": "MC-MP-B6-6",

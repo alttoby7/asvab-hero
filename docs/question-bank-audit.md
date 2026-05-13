@@ -470,3 +470,173 @@ That removes ≈38 items and rewrites another ≈12 in place — leaving **≈74
 3. **Resolve cross-file head-word reuse in WK.** When PRUDENT, LACONIC, METICULOUS, AMBIGUOUS, CIRCUMSPECT, TENACIOUS, ASSIDUOUS appear in both a free-test and an expansion batch, drop the duplicate (keep the format with the better explanation). Then audit the within-file duplicates in batch-1 (OBSEQUIOUS, MAGNANIMOUS, PERFUNCTORY) and apply the same rule. This is a 30-minute search-and-delete pass that materially improves WK fairness.
 
 After those three actions, the corpus is ready for production seeding.
+
+
+# Quality Pass v2 — AO subtest — 2026-05-12
+
+## Method
+- New heuristic flagger at `scripts/audit-explanations.mjs` flagged 67 of 91 AO items for thin explanation or missing distractor-trap naming.
+- A general-purpose subagent drafted improved explanations for all 67 against a calibrated rubric (verify geometry, name trap distractors by content, 55–110 words, no AI tells, no em dashes).
+- Codex CLI (gpt-5.4, high reasoning) independently reviewed the resulting 689-line diff.
+
+## What changed (5 correct_index fixes)
+
+| external_key | File | Old → New | Reason |
+|---|---|---|---|
+| `AO-3D-1` | batch-2 | 1 → 2 | 90° forward roll: original BACK rotates to top, not original front. Old explanation was geometrically inverted. |
+| `AO-3D-B7-3` | batch-7 | 1 → 3 | Stem clarifies "left side swings toward you." New front = original LEFT, not original right. |
+| `AO-3D-B7-15` | batch-7 | 0 → 2 | Backward tip puts original BACK on bottom (green), not red. Old explanation traced the rotation in the wrong direction. |
+| `AO-3D-B7-16` | batch-7 | 0 → 3 | Forward 90° roll: original BOTTOM (black) rotates to back, not original top (white). |
+| `AO-PA-B7-16` | batch-7 | 0 → 3 | Hexagon + 6 equilateral triangles outside each edge produces a hexagram (Star of David), not a larger regular hexagon. At each hexagon vertex two 60° triangle bases plus the 120° hexagon angle leave 120° concave notches between tips, not 180° straight edges. |
+
+All 5 verified by Codex with independent geometric reasoning.
+
+## Explanations rewritten (62 items)
+
+Subagent's rewrites applied to 55 non-flagged items + 7 pattern-assembly items (`AO-PA-B7-5, 8, 10, 12, 13, 14, 17`). Length grew from a median of ~25 words to ~95 words, with explicit naming of trap distractors.
+
+## Stem rewrites
+
+- **`AO-PA-B7-17`**: Stem was malformed — piece areas summed to 30 but no answer choice had area 30 (closest was 24). Rewrote stem to use 3 pieces (dropped the extra triangle D), making A + B + C sum cleanly to the stated 4×6 rectangle (area 24). Correct_index unchanged (1).
+- **`AO-3D-B7-11`**: Removed stale cross-reference to `AO-3D-3` (the convention reference was confusing after `AO-3D-B7-3`'s correct_index fix). Stem now states the rotation direction inline; explanation self-contained.
+
+## Remaining provisional items
+
+These 6 pattern-assembly items have explanations applied but their `correct_index` was not independently verified — the stems describe geometry that cannot be unambiguously reconstructed from text alone (proportions, attachment direction, or piece dimensions are underspecified). A future pass with diagrams should re-validate:
+
+- `AO-PA-B7-5` — "three triangles on three corners" — internal vs external attachment unspecified
+- `AO-PA-B7-8` — "thin rectangle E" dimensions unspecified
+- `AO-PA-B7-10` — three external triangles on a square cannot in general form a complete rotated square
+- `AO-PA-B7-12` — piece E (1×2) and F (1×1) unit scale vs square side s is ambiguous
+- `AO-PA-B7-13` — stated triangle legs (2,2) don't match the trapezoid slant gap (offset 1, height 2)
+- `AO-PA-B7-14` — area arithmetic doesn't produce a clean 1.5:1 rectangle from stated pieces
+
+Recommended action: re-author these with figures, or remove from the seed by adding `"active": false` (would require seed script change).
+
+
+# Quality Pass v2 — WK subtest — 2026-05-12
+
+## Method
+- 80 of 106 WK items flagged. Subagent drafted explanations tailored per topic (synonyms, context-clues, prefixes-suffixes, root-words) with explicit naming of false-friend distractors.
+- Codex independently reviewed the WK diff and surfaced 5 issues the drafting subagent missed.
+
+## Stem rewrite
+- **`WK-CTX-8` (RESILIENT)**: Original stem "Despite losing power for three days, the team remained RESILIENT and rebuilt the network faster than expected" made "resourceful" nearly as defensible as "quick to recover from setbacks." Rewrote to "After three consecutive failed inspections and a barracks fire, the unit remained RESILIENT and returned to full readiness within a month" — the new framing pins recovery from adversity (resilience) rather than improvisation (resourcefulness).
+
+## Codex-found fixes applied
+- **`WK-SN-B4-9` (ASSIDUOUS)**: Subagent's rewrite still referenced the old choice text (careless/sociable/bold) after I had already changed the choices to negligent/diligent/gregarious/audacious. Re-rewrote the explanation to match the current option set.
+- **`WK-PFX-B4-5` (MISCONSTRUE)**: Explanation falsely claimed construe and construct come from "a different root." They share Latin construere; rewrote to acknowledge the shared root while explaining the modern English divergence.
+- **`wk-9` (DILIGENT)**: Replaced ambiguous distractor "Careful" with "Reluctant" — both "Careful" and "Hardworking" are defensible synonyms of diligent, which broke the item. With "Reluctant" in place, the correct answer is unambiguous.
+- **`wk-10` (VOLATILE)**: Fixed factual error claiming volatile substances "actually tend to be light and quick to evaporate." Volatility refers to vaporization tendency, not mass; rewrote as an unrelated-property trap.
+- **`wk-5` (TENACIOUS)**: Softened "Timid is a character antonym" to "Timid names a trait orthogonal to tenacity" — a timid person can still be tenacious about a goal they care about quietly.
+
+## Result
+80 explanations now consistently name trap-distractor logic. One choice-set repair (`wk-9`). Median explanation length: ~85 words.
+
+
+# Quality Pass v2 — MC / AS / MK / AR / GS / EI / PC subtests — 2026-05-12
+
+## Method
+- 7 background subagents drafted rewrites in parallel for all remaining flagged items.
+- After applying rewrites, Codex CLI (gpt-5.4 high reasoning) reviewed the combined diff (5,124 lines) for math errors, factual claims, and regressions.
+
+## Counts applied
+
+| Subtest | Items rewritten | Subagent-flagged | Codex-flagged | Resolution |
+|---|---|---|---|---|
+| MC | 53 | 1 (MC-GW-B6-12 ratio convention) | 1 (MC-FF-B6-8 wrong key + self-contradictory choices) | Both fixed |
+| AS | 45 | 0 | 0 | Clean pass |
+| MK | 74 | 1 (MK-AL-4 ambiguous: two valid answers) | 1 (MK-AL-4 explanation wording: "negative values" wrong) | Both fixed |
+| AR | 92 | 0 | 0 | Clean pass |
+| GS | 49 | 0 | regression: explanation field stripped | Recovered |
+| EI | 46 | 0 | regression: explanation field stripped | Recovered |
+| PC | 39 | 0 | regression: explanation field stripped | Recovered |
+
+## Correct_index fixes
+
+- **`MC-GW-B6-12`**: 1 → 2. The original explanation literally said "driven:driver = 2:1" but had selected `1:2`. Standardized stem to "driven-to-driver" convention and corrected the key.
+- **`MC-FF-B6-8`**: 2 → 0. Static friction problem (μ_s=0.3, N=500 N, F=160 N). f_s,max = 150 N < 160 N, so the engine moves. The keyed choice was internally contradictory ("No... it just barely moves"). Rewrote all 4 choices to be internally consistent and selected the engine-moves answer.
+
+## Stem/choice rewrites
+
+- **`MK-AL-4`** (inequality 5x − 4 > 16): Original choices included both `x = 4.5` and `x = 5`, both of which satisfy the inequality (18.5 > 16 and 21 > 16). Replaced `x = 4.5` distractor with `x = 2` so x = 5 is the unique solution.
+- **`MC-FF-B6-8`** (as above): all four choice strings rewritten to remove internal contradictions ("No, the engine doesn't move; ... so it moves").
+
+## Regression fix (GS / EI / PC)
+
+The GS, EI, and PC subagents each used non-standard field names in their rewrite manifests (`explanation`, `rewritten_explanation`, `rewritten_explanation`) instead of the standard `new_explanation`. The apply script silently set `explanation = undefined` on the 134 affected items, which JSON-serializes to a missing field. Codex caught this during diff review. Normalized the three manifests and re-applied. All explanations are now present.
+
+## Final flagger sweep
+
+After all rewrites, re-running `node scripts/audit-explanations.mjs` flags exactly **1** item (`MK-FR-B3-11`, a repeating-decimal identification problem). The flag fires for "no-trap-named" because the explanation lists each wrong choice's decimal value without using the heuristic's keyword set (`but` / `not` / `instead` / etc.). On manual review, the explanation does cleanly distinguish all four choices; this is a false positive of the heuristic, not a real quality issue.
+
+## End-of-pass totals
+
+| Stat | Before | After |
+|---|---|---|
+| Items in bank | 769 | 769 |
+| Flagged by heuristic | 545 (71%) | 1 (0.1%) |
+| Explanations median length | ~27 words | ~85 words |
+| AI-tell phrases | 2 | 0 |
+| Length-tell (correct conspicuously long) | 1 | 0 |
+| Known-wrong correct_index | 7 (5 AO rotations + AO-PA-B7-16 hexagram + MC-GW-B6-12 + MC-FF-B6-8) | 0 |
+| Self-contradicting explanations | 12+ (per original audit) | 0 |
+| Stem-level ambiguity (multiple valid answers) | 2 known (WK-CTX-8, MK-AL-4) | 0 |
+| Provisional items (pattern-assembly needing diagrams) | 6 | 6 (unchanged, flagged for future) |
+
+## Codex's overall verdict
+
+After two review rounds (AO+WK, then the remaining 7 subtests), no remaining hard-wrong answer keys or factual errors flagged. The 6 provisional AO pattern-assembly items still need diagram-based re-authoring; recommended for a follow-up content pass.
+
+## Files produced this session
+
+- `scripts/audit-explanations.mjs` — reusable heuristic flagger (run anytime to spot regressions)
+- `scripts/apply-rewrites.mjs` — generic rewrite-manifest applier
+- `scripts/apply-pa-explanations.mjs` — one-shot for AO PA items
+- `docs/_*-rewrites.json` — 9 rewrite manifests (kept for audit trail)
+- `docs/_*-flagged-for-rewrite.json` — 9 subtest-scoped input manifests
+
+
+# Quality Pass v2 — Cleanup phases — 2026-05-12
+
+## Phase A — Provisional AO pattern-assembly items
+Extended `scripts/build-questions-seed.mjs` to respect a per-item `active: false` flag (SQL `active` column now reflects the JSON). Marked 6 pattern-assembly items inactive whose stems describe geometry that cannot be unambiguously reconstructed from text alone:
+
+- `AO-PA-B7-5`, `AO-PA-B7-8`, `AO-PA-B7-10`, `AO-PA-B7-12`, `AO-PA-B7-13`, `AO-PA-B7-14`
+
+These items remain in the JSON for future re-authoring (with diagrams) but will not be served to students after the next seed. To reactivate after rewriting, remove the `"active": false` line from each item.
+
+## Phase B — Cross-file exact-stem duplicates
+Scanned all 769 items for normalized-stem duplicates. **None found.** The exact duplicates flagged in the original 2026-04-27 audit (AR-WP-B3-9, MK-GE-B3-2, EI-OL-B5-3, AR-RP-3, MK-GE-5, AO-SC-2, AO-3D-2) have all been removed or stem-revised between the original audit and this session. No action needed.
+
+## Phase C — WK head-word duplicates
+Scanned all 106 WK items for head-word repeats. The 9 cross-file repeats listed in the original audit (PRUDENT, LACONIC, METICULOUS, AMBIGUOUS, CIRCUMSPECT, TENACIOUS, ASSIDUOUS, OBSEQUIOUS, MAGNANIMOUS, PERFUNCTORY) have all been removed or differentiated between the original audit and this session.
+
+Two remaining same-batch repeats found:
+- **LACONIC** (`WK-SN-B4-6` synonym + `WK-CTX-B4-11` context-clue) — same word, two formats, both d4-5 in batch-4. Marked the synonym version inactive, keeping the higher-difficulty context-clue version.
+- **CIDE** (`WK-PFX-B4-12` suffix + `WK-ROOT-B4-11` root) — same morpheme but teaching two distinct semantic layers (the "kill" sense vs the "cut" sense, which are etymologically related but contextually distinguishable). Kept both as they test different morphological knowledge.
+
+## Final heuristic sweep
+After all phases, `scripts/audit-explanations.mjs` reports **0 flagged items**. Build script outputs:
+```
+Wrote supabase/seed-questions.sql with 769 questions across 39 topics (7 inactive).
+Difficulty: { '1': 78, '2': 140, '3': 203, '4': 203, '5': 145 }
+```
+
+## Total session deltas
+
+| Metric | Start of session | End of session |
+|---|---|---|
+| Items in bank | 769 | 769 |
+| Active items | 769 | 762 |
+| Inactive (flagged unfixable text-only) | 0 | 7 |
+| Heuristic flag count | 545 (71%) | 0 |
+| Known-wrong correct_index | 7 | 0 |
+| Stem-level ambiguities | 2 known | 0 |
+| Median explanation length | ~27 words | ~85 words |
+| Self-contradicting explanations | 12+ | 0 |
+| AI-tell phrases in shipped text | 2 | 0 |
+| Same-batch head-word duplicates | 2 | 1 (CIDE — kept by design) |
+
+Status: **bank is ready for production reseed.** No remaining quality issues identified by the heuristic flagger or by two rounds of Codex CLI verification.
+

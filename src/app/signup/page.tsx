@@ -60,7 +60,7 @@ export default function SignupPage() {
       email,
       password,
       options: {
-        emailRedirectTo: `${window.location.origin}/account`,
+        emailRedirectTo: `${window.location.origin}/app/home`,
         data: { signup_source: resolvedSource },
       },
     });

@@ -104,6 +104,7 @@ export default function AccountDashboardPage() {
 
   useEffect(() => {
     if (!sessionLoading && !session) router.replace("/login");
+    if (!sessionLoading && session) router.replace("/app/home");
   }, [session, sessionLoading, router]);
 
   useEffect(() => { setHasInProgress(getInProgressTest()); }, []);

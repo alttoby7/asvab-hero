@@ -27,7 +27,7 @@
       "432"
     ],
     "correct_index": 0,
-    "explanation": "Total received = 3 × 144 = 432. Remaining = 432 − 85 = 347. The trap answer 432 ignores the removal step."
+    "explanation": "Total received = 3 × 144 = 432, then 432 − 85 = 347 remain. Choice 357 subtracts 75 instead of 85, dropping a digit during the subtraction step. Choice 372 subtracts 60 instead of 85, misreading the removal count as a smaller round number. Choice 432 reports the gross intake and forgets the removal step entirely, the most common misread of the problem."
   },
   {
     "external_key": "AR-AF-B3-3",
@@ -42,7 +42,7 @@
       "$324"
     ],
     "correct_index": 3,
-    "explanation": "Total hours = 7 + 5 + 6 = 18 hours. Earnings = 18 × $18 = $324. The trap is computing 18 hours but multiplying by the wrong wage (e.g., $16/hr = $288)."
+    "explanation": "Total hours = 7 + 5 + 6 = 18, then earnings = 18 × $18 = $324. Choice $216 multiplies 18 × $12, using a $12 wage instead of $18. Choice $252 multiplies 14 × $18, dropping a workday (likely Tuesday). Choice $288 multiplies 18 × $16, using a wrong hourly wage that is close to but lower than $18. Each trap keeps the hours right and bends the wage, or keeps the wage and bends the hours."
   },
   {
     "external_key": "AR-AF-B3-4",
@@ -57,7 +57,7 @@
       "240 gallons"
     ],
     "correct_index": 2,
-    "explanation": "Fuel used = (3/8) × 320 = 120 gallons. Remaining = 320 − 120 = 200 gallons. The trap is choosing 120 (the amount used, not the amount remaining)."
+    "explanation": "Remaining fraction = 1 − 3/8 = 5/8, so remaining gallons = 5/8 × 320 = 200. Choice 120 gallons reports the amount used (3/8 × 320), the exact opposite of what is asked. Choice 160 gallons takes half the tank, treating 3/8 as if it were 1/2. Choice 240 gallons uses 3/4 remaining, possibly misreading 3/8 as the leftover share rather than the used share."
   },
   {
     "external_key": "AR-AF-B3-5",
@@ -72,7 +72,7 @@
       "$2,220"
     ],
     "correct_index": 0,
-    "explanation": "Savings contribution = 5% × $2,640 = $132. Take-home = $2,640 − $132 − $420 = $2,088. The trap is forgetting the 5% contribution and subtracting only rent: $2,640 − $420 = $2,220."
+    "explanation": "Savings = 5% × $2,640 = $132; take-home = $2,640 − $132 − $420 = $2,088, subtracting both deductions in order. Choice $2,100 rounds the savings to $120 and rounds rent loosely, settling on a tempting round number. Choice $2,112 deducts a 4% savings rate ($105.60) instead of 5%, undercounting the contribution by a single percentage point. Choice $2,220 subtracts only rent and ignores the 5% savings contribution, the classic missing-deduction trap on multi-step paycheck problems."
   },
   {
     "external_key": "AR-AF-B3-6",
@@ -87,7 +87,7 @@
       "$28.00"
     ],
     "correct_index": 2,
-    "explanation": "Notebooks: 8 × $2.50 = $20.00. Pens: 10 × $0.75 = $7.50. Total = $20.00 + $7.50 = $27.50."
+    "explanation": "Total = (8 × $2.50) + (10 × $0.75) = $20.00 + $7.50 = $27.50, summing the two product lines. Choice $25.00 rounds pens down to $0.50 each, dropping a quarter per pen across the ten pens. Choice $26.50 uses 8 pens instead of 10, miscounting the pen quantity and pulling the total down. Choice $28.00 rounds the pen line up to $8 instead of $7.50, adding a stray $0.50 in the totals step."
   },
   {
     "external_key": "AR-AF-B3-7",
@@ -102,7 +102,7 @@
       "24"
     ],
     "correct_index": 1,
-    "explanation": "Empty seats: trip 1 = 48 − 35 = 13; trip 2 = 48 − 41 = 7; trip 3 = 48 − 48 = 0. Total empty = 13 + 7 + 0 = 20."
+    "explanation": "Empty seats per trip = 48 − 35, 48 − 41, 48 − 48 = 13, 7, 0; total = 13 + 7 + 0 = 20. Choice 18 drops 2 seats during the sum (perhaps 13 + 5 instead of 13 + 7). Choice 22 adds 2 phantom empty seats to the third trip, treating 48 passengers as 46. Choice 24 uses (48 − 35) + (48 − 37), misreading the middle trip count as 37 instead of 41."
   },
   {
     "external_key": "AR-AF-B3-8",
@@ -132,7 +132,7 @@
       "2,400"
     ],
     "correct_index": 3,
-    "explanation": "Eggs = 4 per soldier × 120 soldiers × 5 days = 2,400 eggs. The trap is computing 4 × 120 = 480 and forgetting to multiply by the 5-day period."
+    "explanation": "Eggs = eggs per soldier × soldiers × days = 4 × 120 × 5 = 2,400. Choice 480 computes 4 × 120 and stops, forgetting the 5-day window entirely. Choice 1,200 multiplies 120 × 5 × 2, halving the eggs-per-soldier from 4 to 2. Choice 2,000 uses 100 soldiers × 4 × 5, rounding the unit size down from 120 to 100 to make the arithmetic easier."
   },
   {
     "external_key": "AR-AF-B3-10",
@@ -162,7 +162,7 @@
       "$7.00"
     ],
     "correct_index": 2,
-    "explanation": "Cost = 16 × $1.25 = $20.00. Total paid = $20 + $5 = $25. Change = $25 − $20 = $5.00."
+    "explanation": "Cost = 16 × $1.25 = $20.00; total paid = $20 + $5 = $25; change = $25 − $20 = $5.00. Choice $1.00 forgets the $5 bill, treating the soldier as paying $21 (a $20 bottle stack plus $1 extra). Choice $3.00 uses 17 bottles in the multiplication, overpaying the count by one. Choice $7.00 multiplies 16 × $1.125 = $18, dropping pennies from the unit price."
   },
   {
     "external_key": "AR-AF-B3-12",
@@ -177,7 +177,7 @@
       "13"
     ],
     "correct_index": 2,
-    "explanation": "Total = 3 + 4 + 5 = 12 miles."
+    "explanation": "Total = 3 + 4 + 5 = 12 miles, a straight sum of the three workouts. Choice 10 drops a mile somewhere in the sum (perhaps treating Wednesday as 3 miles). Choice 11 swaps Wednesday's 4 for a 3, totaling 3 + 3 + 5. Choice 13 adds an extra mile, perhaps double-counting one workout or misreading Friday as 6 miles."
   },
   {
     "external_key": "AR-AF-B3-13",
@@ -222,7 +222,7 @@
       "100 miles"
     ],
     "correct_index": 2,
-    "explanation": "Actual distance = 4 × 20 = 80 miles. The trap is dividing 20 ÷ 4 = 5, which inverts the scale."
+    "explanation": "Actual distance = inches × scale = 4 × 20 = 80 miles. Choice 5 miles divides 20 ÷ 4, inverting the scale to ask how many miles per inch of map instead of total. Choice 24 miles adds 20 + 4, mixing the scale and the map inches as if they were the same unit. Choice 100 miles multiplies 5 × 20, treating the map distance as 5 inches rather than 4."
   },
   {
     "external_key": "AR-RP-B3-2",
@@ -252,7 +252,7 @@
       "15"
     ],
     "correct_index": 2,
-    "explanation": "Rate = 75 ÷ 3 = 25 miles per gallon. Gallons needed = 325 ÷ 25 = 13 gallons."
+    "explanation": "Mileage = 75 ÷ 3 = 25 mpg, so gallons = 325 ÷ 25 = 13. Choice 9 uses about 36 mpg, miscomputing the rate (perhaps 75 ÷ 2 rounded). Choice 11 divides 325 by 30 mpg, rounding the mileage up by 5. Choice 15 divides 300 by 20, using both numbers as round figures rather than the exact 25 mpg from the setup."
   },
   {
     "external_key": "AR-RP-B3-4",
@@ -282,7 +282,7 @@
       "600"
     ],
     "correct_index": 3,
-    "explanation": "Rate = 420 ÷ 7 = 60 parts/hour. Output in 10 hours = 60 × 10 = 600 parts."
+    "explanation": "Rate = 420 ÷ 7 = 60 parts/hour, so output in 10 hours = 60 × 10 = 600 parts at the same rate. Choice 540 uses about 54 parts/hour, dropping 6 parts per hour from the true rate. Choice 560 uses 56 parts/hour, an undershoot from miscomputing the division. Choice 580 uses 58 parts/hour, again under the true rate, possibly from a long-division slip on 420 ÷ 7."
   },
   {
     "external_key": "AR-RP-B3-6",
@@ -297,7 +297,7 @@
       "150 m"
     ],
     "correct_index": 2,
-    "explanation": "Actual length in cm = 48 × 250 = 12,000 cm. Convert to meters: 12,000 ÷ 100 = 120 m. The trap is reporting the answer in centimeters (12,000) or forgetting the conversion factor."
+    "explanation": "Actual length = 48 × 250 = 12,000 cm = 120 m after dividing by 100 to convert cm to m. Choice 90 m uses about a 1:187.5 ratio by mistake, scaling shorter than the stated 1:250. Choice 100 m rounds 12,000 cm down to 10,000 cm before converting to meters, the classic round-to-something-easy trap. Choice 150 m uses a 1:312 ratio, scaling longer than 1:250 by inflating the multiplier above the stated value."
   },
   {
     "external_key": "AR-RP-B3-7",
@@ -312,7 +312,7 @@
       "8"
     ],
     "correct_index": 2,
-    "explanation": "Proportion: 2/12 = x/42. Cross-multiply: 12x = 84. x = 7 cups. Alternatively, scale factor = 42/12 = 3.5; flour = 2 × 3.5 = 7 cups."
+    "explanation": "Scale factor = 42 ÷ 12 = 3.5, so flour = 2 × 3.5 = 7 cups. Choice 5 uses a scale factor of 2.5, treating 42 as 30 cookies. Choice 6 triples the flour, ignoring the half-batch in the scale factor. Choice 8 uses a scale of 4, rounding 42/12 up to a clean 4 instead of using 3.5 exactly."
   },
   {
     "external_key": "AR-RP-B3-8",
@@ -342,7 +342,7 @@
       "3 hours"
     ],
     "correct_index": 2,
-    "explanation": "Total work = 8 × 3 = 24 worker-hours. After hour 1, work completed = 8 worker-hours. Remaining = 16 worker-hours. With 6 workers: 16 ÷ 6 = 2⅔ hours = 2 hours 40 minutes."
+    "explanation": "Total job = 8 × 3 = 24 worker-hours; after 1 hour, 8 worker-hours are completed, leaving 16. With 6 workers, 16 ÷ 6 = 2 hours 40 minutes. Choice 2 hours scales linearly (24/6 minus the hour already done) without correctly tracking remaining worker-hours. Choice 2 hours 20 minutes uses 16/7 by miscount of remaining workers. Choice 3 hours ignores the first hour's work and divides 18 wh by 6 workers."
   },
   {
     "external_key": "AR-RP-B3-10",
@@ -357,7 +357,7 @@
       "10"
     ],
     "correct_index": 2,
-    "explanation": "Total parts = 2 + 5 = 7. Blue portion = (2/7) × 28 = 8 ounces. The trap is computing (2/5) × 28 ≈ 11.2, treating the ratio as blue:white rather than blue:total."
+    "explanation": "Total parts = 2 + 5 = 7, so blue = (2/7) × 28 = 8 ounces. Choice 4 takes (2/14) of 28, doubling the total parts to 14 by miscount. Choice 6 uses 28/5 rounded, treating the total ratio sum as 5 (the white share) instead of 7. Choice 10 uses (2/5) × 28 ≈ 11 then rounds down, reading the ratio as blue/white rather than blue/total, the classic parts-confusion trap."
   },
   {
     "external_key": "AR-RP-B3-11",
@@ -417,7 +417,7 @@
       "21 liters"
     ],
     "correct_index": 1,
-    "explanation": "Total parts = 3 + 7 = 10. Juice = (3/10) × 50 = 15 liters. The trap is using 3/7 of 50 ≈ 21.4 liters, treating the ratio as juice:water rather than juice:total."
+    "explanation": "Total parts = 3 + 7 = 10, so juice = (3/10) × 50 = 15 liters. Choice 12 liters uses (3/12) × 50, miscounting total parts as 12. Choice 18 liters uses about 36% of 50 by averaging the two ratio numbers poorly. Choice 21 liters takes (3/7) × 50 ≈ 21.4, treating the ratio as juice/water rather than juice/total, the most common ratio-parts trap."
   },
   {
     "external_key": "AR-PC-B3-1",
@@ -432,7 +432,7 @@
       "80%"
     ],
     "correct_index": 2,
-    "explanation": "Percent correct = (30 ÷ 40) × 100 = 75%."
+    "explanation": "Percent correct = correct ÷ total × 100 = 30 ÷ 40 × 100 = 75%. Choice 65% uses 26 correct out of 40, undercounting the correct answers by four. Choice 70% uses 28/40, off by two on the correct count. Choice 80% uses 32/40, two questions too generous on the correct count and rounding the percentage up to a clean 80."
   },
   {
     "external_key": "AR-PC-B3-2",
@@ -447,7 +447,7 @@
       "50"
     ],
     "correct_index": 2,
-    "explanation": "30% × 150 = 0.30 × 150 = 45."
+    "explanation": "30% × 150 = 0.30 × 150 = 45, a clean decimal multiplication. Choice 35 takes about 23% of 150, rounding 30% down to roughly a quarter. Choice 40 uses about 27% of 150, undershooting the rate. Choice 50 takes 1/3 of 150, treating 30% as if it were exactly one-third, the classic almost-the-same-fraction trap on percent problems."
   },
   {
     "external_key": "AR-PC-B3-3",
@@ -462,7 +462,7 @@
       "$312"
     ],
     "correct_index": 2,
-    "explanation": "Discount = 15% × $360 = $54. Sale price = $360 − $54 = $306. The trap is computing a 16.7% discount or rounding $360 × 0.85 incorrectly to $300."
+    "explanation": "Sale price = $360 × (1 − 0.15) = $360 × 0.85 = $306, applying the discount factor directly. Choice $288 uses a 20% discount instead of 15%, rounding the discount rate up. Choice $300 rounds the discount to $60 (about 16.7% off) for a cleaner final price. Choice $312 uses about a 13% discount, rounding 15% down for a friendlier markdown but cutting less off the original."
   },
   {
     "external_key": "AR-PC-B3-4",
@@ -477,7 +477,7 @@
       "8.1%"
     ],
     "correct_index": 2,
-    "explanation": "Decrease = 15 lb. Percent decrease = (15 ÷ 200) × 100 = 7.5%. The trap is dividing by the new weight: 15 ÷ 185 ≈ 8.1%."
+    "explanation": "Percent decrease = (200 − 185) / 200 × 100 = 15/200 × 100 = 7.5%. Choice 6.5% uses a 13-pound drop instead of 15. Choice 7.0% divides 15 by 215, an averaged base that doesn't match either weight. Choice 8.1% divides 15 by 185, using the new weight as the base instead of the original, the most common percent-change reversal."
   },
   {
     "external_key": "AR-PC-B3-5",
@@ -492,7 +492,7 @@
       "33%"
     ],
     "correct_index": 1,
-    "explanation": "Increase = $800. Percent increase = ($800 ÷ $3,200) × 100 = 25%. The trap is dividing by the new amount: $800 ÷ $4,000 = 20%."
+    "explanation": "Percent increase = (new − old) / old × 100 = 800 / 3,200 × 100 = 25%. Choice 20% divides 800 by 4,000, using the new total as the base, the classic percent-change reversal. Choice 28% averages the two bases to about 3,600 and divides 800 by that. Choice 33% treats the ratio of new to old as 4:3 and reads the 1/3 as a percent gain on the larger total."
   },
   {
     "external_key": "AR-PC-B3-6",
@@ -507,7 +507,7 @@
       "33"
     ],
     "correct_index": 1,
-    "explanation": "45% × 60 = 0.45 × 60 = 27 students. The trap is rounding 45% to 50% and computing 30."
+    "explanation": "45% × 60 = 0.45 × 60 = 27 students received an A or B. Choice 24 uses 40% of 60, rounding 45% down to a friendlier rate. Choice 30 rounds 45% up to 50%, picking exactly half the class. Choice 33 uses 55%, the complement of the rounded-down 45%, mixing rounding direction with the complement of the asked percentage."
   },
   {
     "external_key": "AR-PC-B3-7",
@@ -522,7 +522,7 @@
       "$2,850"
     ],
     "correct_index": 1,
-    "explanation": "Interest = $2,500 × 0.04 × 2.5 = $250. Balance = $2,500 + $250 = $2,750. The trap is computing only 1 year of interest ($100) and arriving at $2,600."
+    "explanation": "Simple interest = P × r × t = $2,500 × 0.04 × 2.5 = $250, so balance = $2,500 + $250 = $2,750. Choice $2,600 uses only 1 year of interest ($100), forgetting the 2.5-year window. Choice $2,800 uses 3 years of interest by rounding 2.5 up to 3 years. Choice $2,850 uses 3.5 years of interest, adding an extra year on top of the rounded value and inflating the gain."
   },
   {
     "external_key": "AR-PC-B3-8",
@@ -612,7 +612,7 @@
       "$116,000"
     ],
     "correct_index": 3,
-    "explanation": "After Q1: $80,000 × 1.25 = $100,000. After Q2: $100,000 × 1.16 = $116,000. The trap is adding the growth rates: 25% + 16% = 41%, giving $80,000 × 1.41 = $112,800."
+    "explanation": "After Q1: $80,000 × 1.25 = $100,000; after Q2: $100,000 × 1.16 = $116,000. Choice $103,200 applies 16% to the original $80,000 and stacks part of the Q1 gain incorrectly. Choice $107,200 applies the 16% growth to the original (giving $92,800) then adds 25% of $58,000, mixing bases. Choice $112,800 sums the rates additively (25% + 16% = 41%) and applies once: $80,000 × 1.41, the classic non-compounding trap."
   },
   {
     "external_key": "AR-PC-B3-14",
@@ -642,7 +642,7 @@
       "160 miles"
     ],
     "correct_index": 2,
-    "explanation": "Distance = speed × time = 50 × 3 = 150 miles."
+    "explanation": "Distance = speed × time = 50 × 3 = 150 miles. Choice 100 miles uses 50 × 2, dropping an hour from the time. Choice 140 miles uses about 47 mph for 3 hours, rounding the speed down. Choice 160 miles uses about 53 mph for 3 hours, rounding the speed up by a few mph, or alternatively adds an extra 10-mile fudge to the correct answer."
   },
   {
     "external_key": "AR-RD-B3-2",
@@ -657,7 +657,7 @@
       "37 miles"
     ],
     "correct_index": 2,
-    "explanation": "2 hours 20 minutes = 7/3 hours. Distance = 15 × 7/3 = 35 miles."
+    "explanation": "Convert 2 hr 20 min to 7/3 hours, then distance = 15 × 7/3 = 35 miles. Choice 30 miles drops the 20 minutes and uses 15 × 2 only. Choice 33 miles uses 2.2 hours, converting 20 minutes to 0.2 of an hour rather than the correct 1/3. Choice 37 miles uses 2.5 hours, rounding 20 minutes up to a half hour."
   },
   {
     "external_key": "AR-RD-B3-3",
@@ -672,7 +672,7 @@
       "6 hours"
     ],
     "correct_index": 2,
-    "explanation": "Speed = 360 ÷ 4 = 90 mph. Time = 495 ÷ 90 = 5.5 hours."
+    "explanation": "Speed = 360 ÷ 4 = 90 mph, so time = 495 ÷ 90 = 5.5 hours at the same speed. Choice 4.5 hours uses about 110 mph (495/4.5), inflating the speed by 20 mph. Choice 5 hours uses 99 mph, rounding 90 up to 99 for a cleaner divisor against 495. Choice 6 hours uses about 82.5 mph, rounding the speed down to make the division simpler at the cost of accuracy."
   },
   {
     "external_key": "AR-RD-B3-4",
@@ -687,7 +687,7 @@
       "480 mph"
     ],
     "correct_index": 3,
-    "explanation": "Speed = 1,200 ÷ 2.5 = 480 mph."
+    "explanation": "Speed = distance ÷ time = 1,200 ÷ 2.5 = 480 mph, the average speed for the flight. Choice 400 mph uses 3 hours instead of 2.5, rounding the time up by a half hour. Choice 440 mph divides by about 2.73, splitting the difference between 2.5 and 3 hours. Choice 460 mph uses about 2.6 hours, rounding the time up slightly to a friendlier denominator and pulling the answer down."
   },
   {
     "external_key": "AR-RD-B3-5",
@@ -717,7 +717,7 @@
       "7 hours"
     ],
     "correct_index": 2,
-    "explanation": "One-way driving time = 120 ÷ 40 = 3 hours. Round trip = 6 hours. Stop = 45 min = 0.75 hr. Total = 6.75 hours = 6 hours 45 minutes."
+    "explanation": "One-way time = 120 ÷ 40 = 3 hours; round trip = 6 hours; plus the 0.75-hour stop = 6 hours 45 minutes. Choice 5 hours 45 minutes only counts one leg at 3 hours and the second leg at 2 hours, dropping driving time. Choice 6 hours 15 minutes treats the stop as 15 minutes instead of 45. Choice 7 hours rounds the 45-minute stop up to a full hour."
   },
   {
     "external_key": "AR-RD-B3-7",
@@ -732,7 +732,7 @@
       "3 hours"
     ],
     "correct_index": 1,
-    "explanation": "Combined rate = 1/6 + 1/4 = 5/12 bins/hour. Time = 12/5 = 2.4 hours = 2 hours 24 minutes. The trap is averaging the times: (6 + 4) ÷ 2 = 5 hours."
+    "explanation": "Combined rate = 1/6 + 1/4 = 5/12 bins/hour, so time = 12/5 = 2 hours 24 minutes. Choice 2 hours assumes the team finishes in half of A's time, ignoring B's rate. Choice 2 hours 48 minutes adds rates wrong, perhaps 1/(6+4) × 2. Choice 3 hours averages 4 and 6 by halving the sum, the classic average-the-times trap that beginners always fall into."
   },
   {
     "external_key": "AR-RD-B3-8",
@@ -747,7 +747,7 @@
       "50 minutes"
     ],
     "correct_index": 3,
-    "explanation": "Net drain rate = 30 − 12 = 18 gal/min. Time to empty = 900 ÷ 18 = 50 minutes. The trap is using only the drain rate: 900 ÷ 30 = 30 minutes."
+    "explanation": "Net drain rate = 30 − 12 = 18 gal/min, so time = 900 ÷ 18 = 50 minutes. Choice 30 minutes divides 900 by 30, using only the drain rate and ignoring the inflow. Choice 40 minutes uses about 22.5 gal/min net by miscomputing the rate difference. Choice 45 minutes uses 20 gal/min, rounding the net rate up by 2 to get a cleaner divisor."
   },
   {
     "external_key": "AR-RD-B3-9",
@@ -777,7 +777,7 @@
       "2.5 hours"
     ],
     "correct_index": 0,
-    "explanation": "After t hours, A is 50t miles north and B is 120t miles east. Distance = √((50t)² + (120t)²) = t√(2,500 + 14,400) = 130t = 130, so t = 1 hour. This uses the 5-12-13 triple (50 = 5×10, 120 = 12×10, 130 = 13×10)."
+    "explanation": "Distance after t hours = √((50t)² + (120t)²) = 130t (a 5-12-13 right triangle scaled by 10), so set 130t = 130 and t = 1 hour. Choice 1.5 hours adds the speeds (170 mph) and divides 130 ÷ 170 wrong. Choice 2 hours uses one convoy alone, treating motion as linear addition. Choice 2.5 hours averages the speeds and divides 130 by the average, ignoring the Pythagorean setup that perpendicular motion requires."
   },
   {
     "external_key": "AR-RD-B3-11",
@@ -792,7 +792,7 @@
       "3 hours 20 minutes"
     ],
     "correct_index": 1,
-    "explanation": "Combined rate = 1/6 + 1/8 + 1/12 = 4/24 + 3/24 + 2/24 = 9/24 = 3/8 fence/hr. Time = 8/3 hours = 2⅔ hours = 2 hours 40 minutes."
+    "explanation": "Combined rate = 1/6 + 1/8 + 1/12 = 4/24 + 3/24 + 2/24 = 9/24 = 3/8 fence/hour, so time = 8/3 = 2 hours 40 minutes. Choice 2 hours 10 minutes adds only 1/6 + 1/8, ignoring Painter 3 entirely. Choice 3 hours rounds 8/3 down to 3. Choice 3 hours 20 minutes averages the three times (6 + 8 + 12)/3 ≈ 8.67 then trims, the classic average-the-times error."
   },
   {
     "external_key": "AR-RD-B3-12",
@@ -807,7 +807,7 @@
       "11:00 AM"
     ],
     "correct_index": 1,
-    "explanation": "By 9:00 AM, Car A has gone 60 miles; gap remaining = 210 − 60 = 150 miles. After 9 AM, combined closing speed = 60 + 90 = 150 mph. Time to close = 150 ÷ 150 = 1 hour. Cars meet at 10:00 AM."
+    "explanation": "At 9:00 AM, Car A has covered 60 miles, leaving a 150-mile gap; closing rate after 9 AM = 60 + 90 = 150 mph, so time to close = 150 ÷ 150 = 1 hour, meeting at 10:00 AM. Choice 9:30 AM uses a 75-mile gap, dropping Car A's hour of head start. Choice 10:30 AM closes 150 miles at 100 mph average. Choice 11:00 AM ignores the head start and divides 210/150 = 1.4 hours after 9 AM."
   },
   {
     "external_key": "AR-RD-B3-13",
@@ -822,7 +822,7 @@
       "75 hours"
     ],
     "correct_index": 3,
-    "explanation": "Outbound time = 540 ÷ 18 = 30 hours. Return time = 540 ÷ 12 = 45 hours. Total = 30 + 45 = 75 hours."
+    "explanation": "Outbound = 540 ÷ 18 = 30 hours; return = 540 ÷ 12 = 45 hours; total = 30 + 45 = 75 hours. Choice 65 hours uses an average speed of about 16.6 knots over the full 1,080 miles. Choice 70 hours uses 15 knots over 1,080 miles, averaging the two speeds (18 + 12)/2, the classic harmonic-mean trap. Choice 72 hours uses 30 hours + 42 hours, miscomputing 540/12 as 42 instead of 45."
   },
   {
     "external_key": "AR-RD-B3-14",
@@ -837,7 +837,7 @@
       "7 hours"
     ],
     "correct_index": 1,
-    "explanation": "Effective downstream speed = 14 + 4 = 18 mph. Time = 108 ÷ 18 = 6 hours. The trap is using the engine speed alone: 108 ÷ 14 ≈ 7.7 hours."
+    "explanation": "Effective downstream speed = 14 + 4 = 18 mph, so time = 108 ÷ 18 = 6 hours. Choice 5 hours uses about 21.6 mph, adding the current twice on top of the engine speed. Choice 6.5 hours divides 108 by about 16.6 mph, splitting the current contribution in half. Choice 7 hours uses 108 ÷ 14, ignoring the current's downstream boost entirely."
   },
   {
     "external_key": "AR-WP-B3-1",
@@ -852,7 +852,7 @@
       "14"
     ],
     "correct_index": 2,
-    "explanation": "Each of the 6 hikers starts with 48 ÷ 6 = 8 bars. The seventh hiker gets 2 bars from each of the 6: 2 × 6 = 12 bars."
+    "explanation": "Each of the 6 hikers gets 48 ÷ 6 = 8 bars, then gives 2 to the seventh, so the seventh receives 6 × 2 = 12 bars. Choice 8 reports the share each original hiker received. Choice 10 uses 48 ÷ 6 + 2, adding the 2 bars once instead of multiplying by six contributors. Choice 14 splits 48 ÷ 7 ≈ 7 then doubles, ignoring the rule that only six hikers contribute."
   },
   {
     "external_key": "AR-WP-B3-2",
@@ -867,7 +867,7 @@
       "96"
     ],
     "correct_index": 3,
-    "explanation": "Tomatoes = 5 × 12 = 60. Peppers = 4 × 9 = 36. Total = 60 + 36 = 96."
+    "explanation": "Tomatoes = 5 × 12 = 60; peppers = 4 × 9 = 36; total = 60 + 36 = 96. Choice 84 uses 4 × 12 + 4 × 9, dropping a row of tomatoes. Choice 88 uses 5 × 12 + 4 × 7, miscomputing the pepper-per-row count. Choice 92 uses 5 × 12 + 4 × 8, miscounting peppers per row as 8 instead of 9, the closest near-miss on the trap path."
   },
   {
     "external_key": "AR-WP-B3-3",
@@ -882,7 +882,7 @@
       "300"
     ],
     "correct_index": 1,
-    "explanation": "Calories running = 8 × 25 = 200. Calories walking = 3 × 20 = 60. Total = 260."
+    "explanation": "Total = (8 × 25) + (3 × 20) = 200 + 60 = 260. Choice 240 uses (8 × 20) + (4 × 20), swapping run minutes for walk minutes and bumping the walking rate. Choice 280 uses 11 × 25, summing the rates as 11 cal/min and applying to run time only. Choice 300 uses (8 × 30) + (3 × 20), inflating the run time by 5 minutes."
   },
   {
     "external_key": "AR-WP-B3-4",
@@ -897,7 +897,7 @@
       "$210"
     ],
     "correct_index": 2,
-    "explanation": "Revenue = 60 × $7 = $420. Cost = 60 × $4 = $240. Profit = $420 − $240 = $180."
+    "explanation": "Profit per item = $7 − $4 = $3, then total profit = 60 × $3 = $180. Choice $120 uses $2 profit per item, miscomputing the price spread. Choice $150 uses 50 items × $3, dropping ten items from the inventory. Choice $210 uses 60 × $3.50, splitting the difference between cost and price as if the markup were halfway between them."
   },
   {
     "external_key": "AR-WP-B3-5",
@@ -927,7 +927,7 @@
       "2,000"
     ],
     "correct_index": 2,
-    "explanation": "The added 240 gallons raised the level by 9/10 − 3/4 = 18/20 − 15/20 = 3/20 of capacity. So (3/20) × C = 240. C = 240 × 20/3 = 1,600 gallons."
+    "explanation": "The 240 gallons fills the gap 9/10 − 3/4 = 18/20 − 15/20 = 3/20 of capacity, so capacity = 240 ÷ (3/20) = 240 × 20/3 = 1,600 gallons. Choice 1,200 treats 240 as 1/5 of capacity, miscomputing the fraction added. Choice 1,500 treats 240 as 4/25, near the right setup but with wrong subtraction. Choice 2,000 treats 240 as 3/25 of capacity, over-shrinking the added fraction."
   },
   {
     "external_key": "AR-WP-B3-7",
@@ -942,7 +942,7 @@
       "$280"
     ],
     "correct_index": 1,
-    "explanation": "First hour = $65. Additional 3 hours = 3 × $45 = $135. Materials = $20. Total = $65 + $135 + $20 = $220."
+    "explanation": "Bill = first hour + 3 additional hours + materials = $65 + 3 × $45 + $20 = $65 + $135 + $20 = $220. Choice $200 forgets the $20 materials fee. Choice $240 uses 4 × $45 + $20 + $40, treating the first hour at the same $45 rate. Choice $280 uses 4 × $65 + $20, charging the first-hour rate of $65 for all four hours."
   },
   {
     "external_key": "AR-WP-B3-8",
@@ -972,7 +972,7 @@
       "12"
     ],
     "correct_index": 3,
-    "explanation": "Full shelves = 3/4 × 8 = 6 shelves. Empty shelves = 2. Each empty shelf holds 6 books. Remaining capacity = 2 × 6 = 12 books."
+    "explanation": "Empty shelves = 8 × (1 − 3/4) = 2; remaining capacity = 2 × 6 = 12 books. Choice 6 reports the capacity of just one shelf, treating only 1 shelf as empty. Choice 8 likely counts 2 empty shelves but multiplies by 4 books per shelf, miscounting capacity. Choice 10 uses 2 empty shelves × 5 books per shelf, dropping a book per shelf from the count."
   },
   {
     "external_key": "AR-WP-B3-11",
@@ -987,7 +987,7 @@
       "40"
     ],
     "correct_index": 2,
-    "explanation": "Let c = number of children; adults = 3c. Bill: 11(3c) + 7c = 33c + 7c = 40c = $1,200. c = 30 children. Verify: 90 adults × $11 = $990; 30 children × $7 = $210; $990 + $210 = $1,200 ✓."
+    "explanation": "Let c = children, adults = 3c, so total = 11(3c) + 7c = 40c = $1,200, giving c = 30. Choice 20 sets up 60c = $1,200, miscomputing the coefficient by adding rates flat. Choice 25 uses 48c, mixing adult and child rates with a wrong multiplier. Choice 40 ignores the 3:1 adult-to-child ratio and just divides $1,200 by an average price near $30, missing the structural relationship."
   },
   {
     "external_key": "AR-WP-B3-12",
@@ -1002,7 +1002,7 @@
       "7:10 AM"
     ],
     "correct_index": 2,
-    "explanation": "LCM(20, 30) = 60 minutes. They next depart together 60 minutes after 6:00 AM = 7:00 AM. The trap is adding 20 + 30 = 50 minutes, giving 6:50 AM."
+    "explanation": "Next joint departure = LCM(20, 30) = 60 minutes after 6:00 AM, so 7:00 AM. Choice 6:40 AM picks 2 × 20 = 40 minutes, the bus's second departure, but the train isn't there yet. Choice 6:50 AM adds 20 + 30 = 50 minutes, treating the cycles as additive rather than a least common multiple. Choice 7:10 AM overshoots the LCM by 10 minutes, picking 70 minutes after start."
   },
   {
     "external_key": "AR-WP-B3-13",
@@ -1017,7 +1017,7 @@
       "$800"
     ],
     "correct_index": 1,
-    "explanation": "Housing = 1/3 × $2,400 = $800. Food = 1/4 × $2,400 = $600. Transportation = 1/6 × $2,400 = $400. Total spent = $1,800. Remaining = $2,400 − $1,800 = $600."
+    "explanation": "Spent fraction = 1/3 + 1/4 + 1/6 = 4/12 + 3/12 + 2/12 = 9/12 = 3/4, so remaining = 1/4 × $2,400 = $600. Choice $500 sums fractions wrong (perhaps 1/3 + 1/4 + 1/6 = 11/12), leaving 1/12 × $2,400 ≈ $200 plus a slip. Choice $700 mixes spending categories and reports a near-miss leftover. Choice $800 reports the housing amount alone instead of the leftover."
   },
   {
     "external_key": "AR-WP-B3-14",
@@ -1032,7 +1032,7 @@
       "$2,400"
     ],
     "correct_index": 2,
-    "explanation": "Regular revenue = 150 × $8 = $1,200. VIP revenue = 50 × $20 = $1,000. Total = $1,200 + $1,000 = $2,200."
+    "explanation": "Total = (150 × $8) + (50 × $20) = $1,200 + $1,000 = $2,200. Choice $1,800 uses (150 × $8) + (30 × $20), miscounting VIP tickets as 30 instead of 50. Choice $2,000 uses 200 tickets × $10 average, blending the two ticket prices into one. Choice $2,400 uses (200 × $12) average pricing, inflating the per-ticket value by a couple of dollars."
   },
   {
     "external_key": "MK-AL-B3-1",
@@ -1047,7 +1047,7 @@
       "x = 18"
     ],
     "correct_index": 2,
-    "explanation": "x = 30 − 14 = 16."
+    "explanation": "Subtract 14 from both sides to isolate x: x = 30 − 14 = 16. The choice x = 12 comes from subtracting 18 (a misread of 14). The choice x = 14 comes from copying the constant on the left side instead of solving. The choice x = 18 comes from subtracting 14 from a misread 32 or adding instead of subtracting somewhere in the chain."
   },
   {
     "external_key": "MK-AL-B3-2",
@@ -1062,7 +1062,7 @@
       "x = 8"
     ],
     "correct_index": 2,
-    "explanation": "6x = 31 + 11 = 42. x = 42 ÷ 6 = 7."
+    "explanation": "Add 11 to both sides to clear the constant: 6x = 42. Divide by 6: x = 7. The choice x = 5 comes from subtracting 11 instead of adding, getting 6x = 20 and rounding 20÷6. The choice x = 6 comes from a slip that gives 6x = 36 (subtracting 5 instead of adding 11). The choice x = 8 comes from dividing 48 by 6, using 31 + 17 or 42 + 6 by mistake."
   },
   {
     "external_key": "MK-AL-B3-3",
@@ -1077,7 +1077,7 @@
       "13"
     ],
     "correct_index": 2,
-    "explanation": "y = 3(5) − 4 = 15 − 4 = 11."
+    "explanation": "Substitute x = 5 into the formula. y = 3(5) − 4 = 15 − 4 = 11. Order of operations matters: multiply before subtracting. The choice 7 comes from subtracting first, computing 3(5 − 4) = 3. The choice 9 comes from computing 3(5) − 4 − 2 with a stray slip, or 5 + 4 = 9 (using the wrong operation entirely). The choice 13 comes from adding 4 instead of subtracting it."
   },
   {
     "external_key": "MK-AL-B3-4",
@@ -1122,7 +1122,7 @@
       "x = 8"
     ],
     "correct_index": 2,
-    "explanation": "From 2x > 6: x > 3. From x + 3 < 10: x < 7. So 3 < x < 7. Among the choices, only x = 4 satisfies both. x = 3 fails the strict inequality x > 3; x = 8 fails x < 7."
+    "explanation": "Solve each inequality. From 2x > 6, divide by 2: x > 3. From x + 3 < 10, subtract 3: x < 7. Combined range: 3 < x < 7. Only x = 4 lies strictly inside. The choice x = 2 fails the first inequality (2 is not greater than 3). The choice x = 3 fails the strict greater-than: x must exceed 3, not equal it. The choice x = 8 fails the second inequality (8 is not less than 7)."
   },
   {
     "external_key": "MK-AL-B3-7",
@@ -1137,7 +1137,7 @@
       "23"
     ],
     "correct_index": 2,
-    "explanation": "Let the smaller number = n. Larger = 2n + 5. Sum: n + 2n + 5 = 29 → 3n = 24 → n = 8. Larger = 2(8) + 5 = 21."
+    "explanation": "Let the smaller number be n. The larger is 2n + 5. Their sum is n + (2n + 5) = 29, so 3n = 24 and n = 8. The larger number is 2(8) + 5 = 21. The choice 17 comes from computing 2n + 1 instead of 2n + 5. The choice 19 comes from using n = 7 (off-by-one in the division). The choice 23 comes from solving for the smaller and adding 15 instead of 5, or by using n + 5 instead of 2n + 5."
   },
   {
     "external_key": "MK-AL-B3-8",
@@ -1152,7 +1152,7 @@
       "x = 21"
     ],
     "correct_index": 2,
-    "explanation": "x/3 = 11 − 5 = 6. x = 6 × 3 = 18. The trap is choosing x = 6 (stopping before multiplying by 3)."
+    "explanation": "Subtract 5 from both sides: x/3 = 6. Multiply both sides by 3: x = 18. The choice x = 12 comes from dividing 11 by something or treating x/3 as 3x and computing 3x = 6. The choice x = 15 comes from subtracting 5 from 11 to get 6, then multiplying by 2.5 by mistake, or computing 11 + 4. The choice x = 21 comes from adding 5 instead of subtracting (x/3 = 16) and rounding 16 × something."
   },
   {
     "external_key": "MK-AL-B3-9",
@@ -1182,7 +1182,7 @@
       "23"
     ],
     "correct_index": 2,
-    "explanation": "Let the integers be n, n+2, n+4. Sum: 3n + 6 = 57 → 3n = 51 → n = 17. Largest = n + 4 = 21."
+    "explanation": "Consecutive odd integers differ by 2. Let them be n, n + 2, n + 4. Sum: 3n + 6 = 57, so 3n = 51 and n = 17. The largest is n + 4 = 21. Check: 17 + 19 + 21 = 57. The choice 17 returns the smallest integer instead of the largest. The choice 19 returns the middle integer. The choice 23 comes from using n + 6 as the largest (treating four integers instead of three)."
   },
   {
     "external_key": "MK-AL-B3-11",
@@ -1197,7 +1197,7 @@
       "9"
     ],
     "correct_index": 3,
-    "explanation": "Add the two equations: 4x = 20, so x = 5. From x + y = 9: y = 4. x + y = 9. Verify: 3(5) − 4 = 11 ✓; 5 + 4 = 9 ✓."
+    "explanation": "The second equation states x + y = 9 directly, so the answer is 9 without further work. To verify, add the equations to eliminate y: 4x = 20, so x = 5; then y = 4. Sum: 5 + 4 = 9. The choice 5 returns x alone. The choice 7 comes from averaging x and y or another mid-step value. The choice 8 comes from using x − y = 1 (the result of subtracting the equations) and pairing it with the wrong x."
   },
   {
     "external_key": "MK-AL-B3-12",
@@ -1227,7 +1227,7 @@
       "5/8"
     ],
     "correct_index": 1,
-    "explanation": "Convert to eighths: 4/8 + 2/8 + 1/8 = 7/8."
+    "explanation": "Use a common denominator of 8. Convert: 1/2 = 4/8, 1/4 = 2/8, 1/8 = 1/8. Sum: 4/8 + 2/8 + 1/8 = 7/8. The choice 6/8 misses the final 1/8 (stops after 1/2 + 1/4 only). The choice 3/4 equals 6/8 in lowest terms, the same one-eighth-short error. The choice 5/8 comes from converting 1/2 as 2/8 instead of 4/8."
   },
   {
     "external_key": "MK-FR-B3-2",
@@ -1242,7 +1242,7 @@
       "1/2"
     ],
     "correct_index": 0,
-    "explanation": "LCD = 24. 5/6 = 20/24; 3/8 = 9/24. 20/24 − 9/24 = 11/24. The trap is subtracting numerators and denominators directly: (5−3)/(6−8) = 2/(−2), which is wrong."
+    "explanation": "Find the LCD of 6 and 8, which is 24. Convert: 5/6 = 20/24 and 3/8 = 9/24. Subtract: 20/24 − 9/24 = 11/24. The choice 7/24 comes from converting 5/6 as 18/24 instead of 20/24 by mistake. The choice 2/3 comes from subtracting numerators and denominators directly: (5−3)/(6−8) = 2/(−2), which would give −1, then taking the absolute value and rewriting. The choice 1/2 comes from estimating 5/6 ≈ 0.83 and 3/8 ≈ 0.38 and reading the difference as 0.5 instead of 0.46."
   },
   {
     "external_key": "MK-FR-B3-3",
@@ -1257,7 +1257,7 @@
       "3 11/12"
     ],
     "correct_index": 1,
-    "explanation": "Convert to improper fractions: 7/4 × 8/3 = 56/12 = 14/3 = 4 2/3. The trap is multiplying whole numbers and fractional parts separately: (1×2) + (3/4×2/3) = 2 + 1/2 = 2 1/2."
+    "explanation": "Convert mixed numbers to improper fractions before multiplying. 1 3/4 = 7/4 and 2 2/3 = 8/3. Multiply: 7/4 × 8/3 = 56/12 = 14/3 = 4 2/3. The choice 3 1/2 comes from multiplying whole-number parts (1 × 2 = 2) and fractional parts (3/4 × 2/3 = 1/2) separately, missing the cross terms. The choice 4 5/12 comes from a partial cross-term sum. The choice 3 11/12 mixes mixed-number multiplication with addition of the fractional parts."
   },
   {
     "external_key": "MK-FR-B3-4",
@@ -1272,7 +1272,7 @@
       "1/4"
     ],
     "correct_index": 0,
-    "explanation": "Dividing by a fraction means multiplying by its reciprocal: (7/8) × (4/7) = 28/56 = 1/2. The trap is multiplying straight across to get 49/32."
+    "explanation": "Dividing by a fraction means multiplying by its reciprocal. (7/8) ÷ (7/4) = (7/8) × (4/7) = 28/56 = 1/2. The 7s cancel and 4/8 reduces to 1/2. The choice 2 comes from flipping the wrong fraction, computing (8/7) × (7/4) = 8/4 = 2. The choice 49/32 multiplies straight across without flipping: 7×7 over 8×4. The choice 1/4 comes from cancelling the 7s but mishandling 4/8 as 1/4."
   },
   {
     "external_key": "MK-FR-B3-5",
@@ -1287,7 +1287,7 @@
       "5 cups"
     ],
     "correct_index": 1,
-    "explanation": "2 2/3 = 2 8/12; 1 3/4 = 1 9/12. Sum = 3 17/12 = 4 5/12 cups."
+    "explanation": "Find a common denominator of 12 for the fractional parts. 2 2/3 = 2 8/12 and 1 3/4 = 1 9/12. Add whole parts and fractional parts: 3 + 17/12 = 3 + 1 5/12 = 4 5/12 cups. The choice 4 1/12 cups misses the carry from 17/12, treating it as 12/12 plus 1/12. The choice 4 7/12 cups comes from carrying twice (3 + 1 + 7/12) or converting one fraction incorrectly. The choice 5 cups rounds both mixed numbers up before adding."
   },
   {
     "external_key": "MK-FR-B3-6",
@@ -1302,7 +1302,7 @@
       "0.1667"
     ],
     "correct_index": 0,
-    "explanation": "3 ÷ 16 = 0.1875. A common trap is misreading 16 as 6 and computing 3 ÷ 6 = 0.5."
+    "explanation": "Divide 3 by 16 directly: 3 ÷ 16 = 0.1875. A shortcut: 1/16 = 0.0625, so 3 × 0.0625 = 0.1875. The choice 0.1975 is a small arithmetic slip on the long division. The choice 0.3125 is 5/16, the result of reading the numerator wrong. The choice 0.1667 is 1/6, the result of confusing 16 with 6 in the denominator."
   },
   {
     "external_key": "MK-FR-B3-7",
@@ -1317,7 +1317,7 @@
       "0.63"
     ],
     "correct_index": 1,
-    "explanation": "As decimals: 0.666…; 5/7 ≈ 0.7143; 7/11 ≈ 0.6364; 0.63. Largest is 5/7 ≈ 0.7143. The trap is selecting 0.666… because it visually resembles a large value."
+    "explanation": "Convert each to a decimal. 0.666… from the repeating 6. 5/7 ≈ 0.7143. 7/11 ≈ 0.6364. 0.63 is already a decimal. The largest is 5/7 at about 0.7143. The choice 0.666… looks large with the repeating bar but is smaller than 5/7. The choice 7/11 sits below both 0.666 and 5/7. The choice 0.63 is the smallest of the four."
   },
   {
     "external_key": "MK-FR-B3-8",
@@ -1332,7 +1332,7 @@
       "13"
     ],
     "correct_index": 2,
-    "explanation": "7 1/2 = 15/2 feet. Pieces = (15/2) ÷ (5/8) = (15/2) × (8/5) = 120/10 = 12 complete pieces."
+    "explanation": "Convert 7 1/2 to an improper fraction: 15/2 feet. Divide by 5/8 by multiplying by the reciprocal: (15/2) × (8/5) = 120/10 = 12. Twelve complete 5/8-foot pieces fit. The choice 10 comes from a rough estimate (about 7.5 ÷ 0.75 instead of ÷ 0.625). The choice 11 comes from rounding down too aggressively or dropping an extra piece. The choice 13 comes from rounding up to count a partial piece, which the question excludes by saying \"complete pieces.\""
   },
   {
     "external_key": "MK-FR-B3-9",
@@ -1347,7 +1347,7 @@
       "4 miles"
     ],
     "correct_index": 1,
-    "explanation": "Completed first = 3/5 × 15 = 9 miles. Remaining = 6 miles. Second run = 2/3 × 6 = 4 miles. Still remaining = 6 − 4 = 2 miles."
+    "explanation": "First leg: 3/5 × 15 = 9 miles, leaving 15 − 9 = 6 miles. After resting, she runs 2/3 × 6 = 4 of those 6 miles. Still remaining: 6 − 4 = 2 miles. The choice 1 mile comes from taking 2/3 of the whole 15 minus 9 and slipping a calculation. The choice 3 miles takes 1/2 of the remaining 6 instead of 2/3, leaving 3. The choice 4 miles returns the distance she just ran (2/3 of 6), not what is left."
   },
   {
     "external_key": "MK-FR-B3-10",
@@ -1362,7 +1362,7 @@
       "36"
     ],
     "correct_index": 2,
-    "explanation": "2/3 × 24 = 16. So 1/2 × N = 16, which gives N = 32. The trap is stopping at 16 (the equal value) rather than solving for N."
+    "explanation": "Compute 2/3 of the first number: 2/3 × 24 = 16. Set this equal to 1/2 of the second: (1/2) × N = 16, so N = 32. The choice 16 is the shared value, not the second number; students stop one step early. The choice 28 comes from adding 24 + 4 or another off-target arithmetic step. The choice 36 comes from multiplying 24 by 3/2 instead of solving the half-equation, getting a number related to the first fraction rather than the second."
   },
   {
     "external_key": "MK-FR-B3-11",
@@ -1377,7 +1377,7 @@
       "3/7"
     ],
     "correct_index": 0,
-    "explanation": "5/12 = 0.41666… (the 6 repeats). 5/11 = 0.4545…; 4/9 = 0.444…; 3/7 = 0.4285…. Only 5/12 matches the given decimal."
+    "explanation": "Test each fraction by long division. 5 ÷ 12 = 0.41666…, where the 6 repeats indefinitely, matching the target exactly. The choice 5/11 = 0.4545… is a trap of confusing two different repeating patterns; the early digits look similar but 11 in the denominator gives a 45-block, not a single repeating 6. The choice 4/9 = 0.4444… is the trap of assuming any fraction with a 4 in the tenths place must repeat 4; the denominator 9 always yields a single-digit repeat. The choice 3/7 = 0.42857… repeats but with a six-digit cycle, not the single digit 6 specified."
   },
   {
     "external_key": "MK-FR-B3-12",
@@ -1407,7 +1407,7 @@
       "19"
     ],
     "correct_index": 2,
-    "explanation": "3² = 9; 2³ = 8. Sum = 17. The trap is computing 3² as 3 × 2 = 6, giving 6 + 8 = 14."
+    "explanation": "Evaluate each power, then add. 3² = 9 and 2³ = 8. Sum: 9 + 8 = 17. The choice 10 comes from computing 3² as 3×2 = 6 and 2³ as 2×3 = 6, then approximating (or from 9 + 1 slip). The choice 13 comes from computing 3² as 6 (multiplying the base by the exponent) and adding 8: 6 + 8 = 14, rounded to 13 with a slip. The choice 19 comes from computing 2³ as 10 by counting one too many factors, then 9 + 10."
   },
   {
     "external_key": "MK-EP-B3-2",
@@ -1422,7 +1422,7 @@
       "25²"
     ],
     "correct_index": 1,
-    "explanation": "Dividing same-base powers: subtract exponents. 5⁴ ÷ 5² = 5^(4−2) = 5² = 25. The trap is multiplying the exponents (power of a power rule misapplied): 5^(4×2) = 5⁸."
+    "explanation": "When dividing powers with the same base, subtract the exponents: 5⁴ ÷ 5² = 5^(4−2) = 5² = 25. The choice 5¹ subtracts the wrong direction (2 − 4 then flipped). The choice 5⁶ adds the exponents instead of subtracting, using the multiplication rule by mistake. The choice 25² = 625 in value and uses the wrong base by squaring 5 first; the exponent simplification asked for is 5², which equals 25."
   },
   {
     "external_key": "MK-EP-B3-3",
@@ -1437,7 +1437,7 @@
       "22"
     ],
     "correct_index": 2,
-    "explanation": "2⁰ = 1; 3¹ = 3; 4² = 16. Sum = 20. The trap is treating 2⁰ = 0, giving 0 + 3 + 16 = 19."
+    "explanation": "Apply each exponent rule. Anything to the zero power equals 1, so 2⁰ = 1. Any number to the first power is itself, so 3¹ = 3. And 4² = 16. Sum: 1 + 3 + 16 = 20. The choice 16 ignores both 2⁰ and 3¹, returning only 4². The choice 18 comes from 2⁰ = 0 (a common error) plus 3 plus 15 (a misread of 4²). The choice 22 comes from 2⁰ = 2 plus 4 plus 16."
   },
   {
     "external_key": "MK-EP-B3-4",
@@ -1452,7 +1452,7 @@
       "0.01"
     ],
     "correct_index": 3,
-    "explanation": "A negative exponent means take the reciprocal: 10⁻² = 1/10² = 1/100 = 0.01. The trap is writing the negative exponent as a negative number: −100."
+    "explanation": "A negative exponent means take the reciprocal of the positive-power version. 10⁻² = 1/10² = 1/100 = 0.01. The choice −100 reads the negative exponent as a negative sign on the result, treating it as −(10²). The choice −20 reads the exponent as a multiplier: −2 × 10. The choice 0.001 is 10⁻³, off by one decimal place from a counting error."
   },
   {
     "external_key": "MK-EP-B3-5",
@@ -1497,7 +1497,7 @@
       "3x² + 2x + 2"
     ],
     "correct_index": 0,
-    "explanation": "Combine like terms: (3x²+x²) + (−2x+4x) + (5−3) = 4x² + 2x + 2."
+    "explanation": "Combine like terms by adding coefficients. x² terms: 3 + 1 = 4, giving 4x². x terms: −2 + 4 = 2, giving +2x. Constants: 5 + (−3) = 2. Result: 4x² + 2x + 2. The choice 4x² + 2x − 2 sign-flips the constants when combining (5 − 3 read as −2 by error). The choice 4x² − 2x + 2 keeps the original −2x and ignores +4x. The choice 3x² + 2x + 2 forgets to add the x² coefficients, copying the first polynomial's 3x²."
   },
   {
     "external_key": "MK-EP-B3-8",
@@ -1512,7 +1512,7 @@
       "(x + 2)(2x − 4)"
     ],
     "correct_index": 1,
-    "explanation": "Factor out 2: 2(x² − 4). Then apply difference of squares: 2(x + 2)(x − 2). The trap choices (2x+4)(x−2) and (x+2)(2x−4) are equivalent but not fully factored."
+    "explanation": "Pull out the common factor of 2 first: 2(x² − 4). Then apply difference of squares to x² − 4 = (x + 2)(x − 2). Final: 2(x + 2)(x − 2). The choice 2(x − 2)(x − 2) factors as a perfect square instead of a difference of squares, losing the +2 factor. The choices (2x + 4)(x − 2) and (x + 2)(2x − 4) multiply back to the right expression but are not fully factored because each contains a common factor of 2 still inside a binomial."
   },
   {
     "external_key": "MK-EP-B3-9",
@@ -1527,7 +1527,7 @@
       "x²y³"
     ],
     "correct_index": 1,
-    "explanation": "Numerator: (x³y²)² = x⁶y⁴. Divide: x^(6−2) × y^(4−1) = x⁴y³."
+    "explanation": "Apply the power-of-a-power rule to the numerator: (x³y²)² = x⁶y⁴. Then divide by x²y by subtracting exponents: x^(6−2) y^(4−1) = x⁴y³. The choice x²y comes from subtracting exponents before squaring, applying the rules in the wrong order. The choice x⁴y² forgets to square y² to y⁴ in the numerator. The choice x²y³ has the y right but treats x as (x³)² = x⁵ minus x³, slipping the arithmetic."
   },
   {
     "external_key": "MK-EP-B3-10",
@@ -1542,7 +1542,7 @@
       "x³ + 9x² − 27"
     ],
     "correct_index": 1,
-    "explanation": "This is the sum-of-cubes pattern: (a + b)(a² − ab + b²) = a³ + b³, with a = x, b = 3. Result = x³ + 27. Verify by expansion: x³ − 3x² + 9x + 3x² − 9x + 27 = x³ + 27."
+    "explanation": "This matches the sum-of-cubes pattern (a + b)(a² − ab + b²) = a³ + b³ with a = x and b = 3, giving x³ + 27. Direct expansion confirms: x(x² − 3x + 9) + 3(x² − 3x + 9) = x³ − 3x² + 9x + 3x² − 9x + 27 = x³ + 27. The choice x³ − 27 flips the sign, confusing it with difference of cubes. The choice x³ − 9x + 27 keeps the cross terms uncancelled. The choice x³ + 9x² − 27 distributes carelessly and inverts the constant sign."
   },
   {
     "external_key": "MK-EP-B3-11",
@@ -1602,7 +1602,7 @@
       "64 cm"
     ],
     "correct_index": 2,
-    "explanation": "Perimeter = 4 × 13 = 52 cm. The trap is computing the area: 13² = 169."
+    "explanation": "A square has four equal sides, so perimeter = 4s. P = 4 × 13 = 52 cm. The choice 36 cm comes from computing 13 + 13 + 10 with a slip, or using only three sides. The choice 48 cm comes from using s = 12 by mistake (4 × 12). The choice 64 cm comes from using s = 16, perhaps reading a 6 as a 3 in 13."
   },
   {
     "external_key": "MK-GE-B3-4",
@@ -1632,7 +1632,7 @@
       "750 m³"
     ],
     "correct_index": 2,
-    "explanation": "Volume = 25 × 12 × 2 = 600 m³. The trap is computing the surface area and selecting a number based on that calculation."
+    "explanation": "Volume of a rectangular prism is length × width × height. V = 25 × 12 × 2 = 600 m³. The choice 300 m³ omits the depth or divides by 2 (computing only the floor area times 1). The choice 450 m³ comes from arithmetic slips such as 25 × 12 = 300 plus 12 × 12 stitched together. The choice 750 m³ multiplies by 2.5 instead of 2, perhaps misreading the depth."
   },
   {
     "external_key": "MK-GE-B3-6",
@@ -1647,7 +1647,7 @@
       "100 cm²"
     ],
     "correct_index": 2,
-    "explanation": "Area = (1/2)(b₁ + b₂)(h) = (1/2)(10 + 14)(8) = (1/2)(24)(8) = 96 cm². The trap is omitting the 1/2: (10 + 14) × 8 = 192."
+    "explanation": "Trapezoid area uses A = (1/2)(b₁ + b₂)h. Plug in: A = (1/2)(10 + 14)(8) = (1/2)(24)(8) = 96 cm². The choice 88 cm² comes from using a smaller sum (10 + 12 instead of 10 + 14) or dropping a unit. The choice 92 cm² comes from (1/2)(11 + 12)(8) or another mid-step slip. The choice 100 cm² comes from averaging the bases as 12 and multiplying by something close to 8.3."
   },
   {
     "external_key": "MK-GE-B3-7",
@@ -1662,7 +1662,7 @@
       "75 cm²"
     ],
     "correct_index": 1,
-    "explanation": "Missing leg = √(17² − 8²) = √(289 − 64) = √225 = 15 cm. Area = (1/2) × 8 × 15 = 60 cm². This uses the 8-15-17 Pythagorean triple."
+    "explanation": "Find the missing leg with the Pythagorean theorem. leg = √(17² − 8²) = √(289 − 64) = √225 = 15 cm. This is the 8-15-17 Pythagorean triple. Area = (1/2)(8)(15) = 60 cm². The choice 45 cm² comes from using leg = 11 or another wrong value, or (1/2)(8)(11.25). The choice 68 cm² multiplies leg × hypotenuse × 1/2 = (1/2)(8)(17), using the hypotenuse instead of the other leg. The choice 75 cm² comes from √(289 + 64) = √353 and a small slip thereafter."
   },
   {
     "external_key": "MK-GE-B3-8",
@@ -1737,7 +1737,7 @@
       "150 sq ft"
     ],
     "correct_index": 2,
-    "explanation": "Area = 14 × 10 = 140 sq ft. The trap is computing the perimeter: 2(14 + 10) = 48 ft."
+    "explanation": "Rectangle area is length × width. A = 14 × 10 = 140 sq ft. The choice 120 sq ft comes from using 12 × 10 (misreading length). The choice 130 sq ft comes from 13 × 10, off by one in the length. The choice 150 sq ft comes from 15 × 10, off by one in the other direction. Adjacent integer slips are the classic trap when the multiplication itself is easy."
   },
   {
     "external_key": "MK-NP-B3-1",
@@ -1767,7 +1767,7 @@
       "32"
     ],
     "correct_index": 2,
-    "explanation": "Multiples of 8: 8, 16, 24…; multiples of 12: 12, 24… LCM = 24. The trap is multiplying 8 × 12 = 96, or confusing LCM with GCF (GCF = 4)."
+    "explanation": "Use prime factorization. 8 = 2³ and 12 = 2² × 3. LCM takes the highest power of each prime: 2³ × 3 = 24. Verify by listing multiples: 8, 16, 24 and 12, 24. The choice 16 is a multiple of 8 but not of 12. The choice 20 is a multiple of neither. The choice 32 is a multiple of 8 but not of 12; it comes from doubling 16 or multiplying 8 × 4 by mistake."
   },
   {
     "external_key": "MK-NP-B3-3",
@@ -1782,7 +1782,7 @@
       "18"
     ],
     "correct_index": 3,
-    "explanation": "54 = 2 × 3³; 72 = 2³ × 3². GCF = 2¹ × 3² = 18. The trap is selecting 9 (taking only 3²) or 6 (taking 2 × 3)."
+    "explanation": "Prime factorize. 54 = 2 × 3³ and 72 = 2³ × 3². GCF takes the lowest power of each shared prime: 2¹ × 3² = 2 × 9 = 18. The choice 6 takes 2 × 3, missing one factor of 3. The choice 9 takes 3² but ignores the shared factor of 2. The choice 12 = 2² × 3 mixes the higher power of 2 (which only 72 has) with a missing factor of 3, so it is not a factor of 54."
   },
   {
     "external_key": "MK-NP-B3-4",
@@ -1797,7 +1797,7 @@
       "50"
     ],
     "correct_index": 2,
-    "explanation": "48 ÷ 3 = 16 ✓; 48 ÷ 4 = 12 ✓. The others fail: 34 ÷ 4 = 8.5; 42 ÷ 4 = 10.5; 50 ÷ 3 ≈ 16.67."
+    "explanation": "A number divisible by both 3 and 4 must be divisible by 12. Test: 48 ÷ 12 = 4, so 48 qualifies. Confirm: 48 ÷ 3 = 16 and 48 ÷ 4 = 12. The choice 34 is not divisible by 3 (3 + 4 = 7) or by 4 (34/4 = 8.5). The choice 42 is divisible by 3 but not by 4 (42/4 = 10.5). The choice 50 is divisible by neither (50/3 ≈ 16.67, 50/4 = 12.5)."
   },
   {
     "external_key": "MK-NP-B3-5",
@@ -1812,7 +1812,7 @@
       "27"
     ],
     "correct_index": 2,
-    "explanation": "|−14| = 14. |6 − 19| = |−13| = 13. 14 − 13 = 1. The trap is adding instead of subtracting: 14 + 13 = 27."
+    "explanation": "Evaluate each absolute value first. |−14| = 14. Inside the second bars: 6 − 19 = −13, so |−13| = 13. Subtract: 14 − 13 = 1. The choice −1 reverses the subtraction order, giving 13 − 14. The choice 0 comes from forgetting one of the absolute values and computing 14 − 14 or 13 − 13. The choice 27 ignores the absolute values entirely and treats them as parentheses, computing 14 + 13 by sign error."
   },
   {
     "external_key": "MK-NP-B3-6",
@@ -1827,7 +1827,7 @@
       "6"
     ],
     "correct_index": 1,
-    "explanation": "Primes between 20 and 40: 23, 29, 31, 37. That is 4 primes. Students often include 21 (= 3×7), 27 (= 3×9), or 39 (= 3×13) by failing divisibility checks."
+    "explanation": "List the candidates and rule out composites. 23 (prime), 25 = 5², 27 = 3³, 29 (prime), 31 (prime), 33 = 3 × 11, 35 = 5 × 7, 37 (prime), 39 = 3 × 13. That gives four primes: 23, 29, 31, 37. The choice 3 misses one of the four, often 37. The choice 5 wrongly counts 21, 27, or 33 as prime by skipping the divisibility-by-3 check. The choice 6 adds two non-primes to the list."
   },
   {
     "external_key": "MK-NP-B3-7",
@@ -1857,7 +1857,7 @@
       "5"
     ],
     "correct_index": 3,
-    "explanation": "n = 7k + 4 for some integer k. Then 3n = 21k + 12 = 7(3k + 1) + 5. The remainder is 5. The shortcut: (3 × 4) mod 7 = 12 mod 7 = 5."
+    "explanation": "Write n = 7k + 4 for some integer k. Then 3n = 21k + 12 = 7(3k + 1) + 5. The remainder when 3n is divided by 7 is 5. Shortcut: multiply the remainder by 3 and reduce mod 7. 3 × 4 = 12, and 12 − 7 = 5. The choice 1 comes from 12 mod 7 read as 12 − 11. The choice 2 comes from 3 + 4 − 5 or another mid-step error. The choice 3 comes from forgetting to multiply by 3 and just returning that coefficient."
   },
   {
     "external_key": "MK-NP-B3-9",
@@ -1872,7 +1872,7 @@
       "6 and −6"
     ],
     "correct_index": 0,
-    "explanation": "4 × (−9) = −36 ✓; 4 + (−9) = −5 ✓. The trap answer −4 and 9 has the same product but sum = +5, not −5."
+    "explanation": "Negative product means one positive and one negative integer. Negative sum means the negative one has the larger absolute value. Test 4 and −9: product = −36, sum = −5. Both conditions check. The choice −4 and 9 has product −36 but sum +5, the sign-flipped version. The choice 3 and −12 has product −36 but sum −9, not −5. The choice 6 and −6 sums to 0 and has product −36, failing the sum condition."
   },
   {
     "external_key": "MK-NP-B3-10",
@@ -1887,7 +1887,7 @@
       "n³ + 1"
     ],
     "correct_index": 2,
-    "explanation": "n even → n = 2k. n² + n = n(n + 1) = 2k(2k+1), which is always even. Check others: n² + 1 = even + 1 = odd; n² − n + 1 = even − even + 1 = odd; n³ + 1 = even + 1 = odd."
+    "explanation": "If n is even, n² is even and n itself is even, so n² + n = n(n + 1) is even × anything = even. The choice n² + 1 is even + 1 = odd. The choice n² − n + 1 is even − even + 1 = odd. The choice n³ + 1 is even + 1 = odd. The trap on each wrong choice is adding 1 to an even quantity, which always flips parity to odd. Only n² + n avoids that flip."
   },
   {
     "external_key": "MK-NP-B3-11",
@@ -1902,7 +1902,7 @@
       "{3, 5, 8, 10, 13}"
     ],
     "correct_index": 1,
-    "explanation": "Range = max − min = 10; min = 3, so max = 13. Mean = 8 with 5 integers → sum = 40. Check B: 3+7+8+9+13 = 40 ✓, range = 10 ✓. A: 3+6+8+11+13 = 41 ✗. C: 3+8+9+10+13 = 43 ✗. D: 3+5+8+10+13 = 39 ✗."
+    "explanation": "Two constraints must both hold. Range = max − min = 10 with min = 3 forces max = 13. Mean = 8 with five integers forces sum = 40. Test choice B: 3 + 7 + 8 + 9 + 13 = 40 and max − min = 10. Both pass. Choice A sums to 41 (mean fails). Choice C sums to 43 (mean fails). Choice D sums to 39 (mean fails). Many test-takers stop after confirming the range and ignore the sum, picking the first set with 3 and 13 as endpoints."
   },
   {
     "external_key": "MK-NP-B3-12",
@@ -1917,6 +1917,6 @@
       "It is undefined"
     ],
     "correct_index": 1,
-    "explanation": "(−3)⁴ = (−3)(−3)(−3)(−3) = 9 × 9 = 81. An even exponent applied to any real number produces a non-negative result. The trap is confusing (−3)⁴ with −(3⁴) = −81."
+    "explanation": "Parentheses include the negative sign in the base. (−3)⁴ = (−3)(−3)(−3)(−3). Pair up: (−3)(−3) = 9 and (−3)(−3) = 9, so 9 × 9 = 81. An even exponent on any real base produces a non-negative result. The choice −81 confuses (−3)⁴ with −(3⁴) = −81, leaving the negative outside the parentheses. The choice −12 reads the exponent as a multiplier (−3 × 4). The choice \"undefined\" treats negative bases with even exponents as invalid, which is incorrect for integer exponents."
   }
 ]

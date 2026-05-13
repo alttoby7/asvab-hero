@@ -1,0 +1,2706 @@
+[
+  {
+    "external_key": "AR-AF-NEW-1",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A warehouse stores 24 boxes. Each box holds 12 items. How many items are in the warehouse?",
+    "choices": [
+      "36",
+      "252",
+      "288",
+      "296"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply the count of boxes by items per box: 24 x 12. Break it down: 24 x 10 = 240, then 24 x 2 = 48, and 240 + 48 = 288. Choice 36 adds 24 + 12 instead of multiplying. Choice 252 reflects a mis-carried digit in the 24 x 12 column (treating 2 x 24 as 28). Choice 296 adds 8 too many, likely from carrying twice. The correct total is 288 items.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-2",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A truck began the day with 156 packages. The driver delivered 89. How many packages remain on the truck?",
+    "choices": [
+      "57",
+      "67",
+      "77",
+      "245"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtract delivered packages from the starting count: 156 - 89. Stack the numbers and borrow from the tens column: 16 - 9 = 7 in the ones place, then 14 - 8 = 6 after borrowing in the tens place, giving 67. Verify by adding back: 89 + 67 = 156. Choice 245 adds the two numbers, inverting the operation entirely. Choice 77 forgets to subtract 1 from the tens column after borrowing, leaving 5 instead of 4. Choice 57 reflects subtracting 99 instead of 89, a misread digit. The driver has 67 packages left on the truck.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-3",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A bakery splits 144 cookies evenly into 12 boxes. How many cookies go in each box?",
+    "choices": [
+      "11",
+      "12",
+      "13",
+      "132"
+    ],
+    "correct_index": 1,
+    "explanation": "Divide total cookies by number of boxes to find the size of each share: 144 / 12. Recall the multiplication fact 12 x 12 = 144, so the quotient is 12. Verify by multiplying back: 12 cookies per box x 12 boxes = 144 cookies total, matching the starting number. Choice 132 subtracts 12 from 144, treating the problem as removal rather than even partition into groups. Choice 11 reflects an off-by-one slip, perhaps recalling 11 x 12 = 132. Choice 13 over-shoots, since 13 x 12 = 156, which exceeds the actual total. Each box contains exactly 12 cookies.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-4",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A clerk buys 6 notebooks at $3.25 each. What is the total cost?",
+    "choices": [
+      "$9.25",
+      "$18.50",
+      "$19.50",
+      "$19.75"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply quantity by unit price: 6 x $3.25. Split the price into whole dollars and cents to simplify. The dollar portion gives 6 x $3 = $18.00, and the cents portion gives 6 x $0.25 = $1.50. Add the parts: $18.00 + $1.50 = $19.50. Choice $9.25 adds 6 + 3.25, inverting the operation by using addition instead of multiplication. Choice $18.50 forgets the carry from the cents multiplication, treating 6 x $0.25 as $0.50 rather than $1.50. Choice $19.75 adds an extra quarter from a miscounted carry in the cents column. The total cost is $19.50.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-5",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A depot starts with 1,247 rounds. A shipment adds 968, and a training event uses 415. How many rounds remain?",
+    "choices": [
+      "1,690",
+      "1,800",
+      "2,215",
+      "2,630"
+    ],
+    "correct_index": 1,
+    "explanation": "Work through the two operations in order: first add the shipment, then subtract the training expenditure. Step one: 1,247 + 968 = 2,215. Step two: 2,215 - 415 = 1,800. Choice 2,215 stops after the addition step, reporting the intermediate sum as the final answer without subtracting the training rounds. Choice 2,630 adds all three numbers together, ignoring that the training event removes rounds rather than adds them. Choice 1,690 reflects subtracting 525 instead of 415, a digit misread that swaps the 1 in the tens place for a 2. The depot has 1,800 rounds remaining.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-6",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A coach divides 84 athletes into 4 equal squads, then adds 15 reserves to one squad. How many athletes are in that enlarged squad?",
+    "choices": [
+      "21",
+      "27",
+      "36",
+      "51"
+    ],
+    "correct_index": 2,
+    "explanation": "Two operations are needed in a specific order: divide the athletes into equal squads first, then add reserves to the one enlarged squad. Step one: 84 / 4 = 21 athletes per squad. Step two: 21 + 15 = 36 athletes in the enlarged squad. Choice 21 reports the squad size before reserves arrive, stopping at the intermediate value and ignoring the second step. Choice 51 adds the reserves twice, computing 21 + 15 + 15 by double-counting the addition step. Choice 27 reflects a miscount in the addition step, perhaps adding 6 instead of 15. The enlarged squad has 36 athletes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-7",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A field has 80 trees. A storm destroys 0.75 of them. How many trees were destroyed?",
+    "choices": [
+      "20",
+      "60",
+      "75",
+      "40"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiply the total count by the decimal fraction to find the affected portion: 0.75 x 80. Convert 0.75 into the equivalent fraction three-quarters, then take three-quarters of 80. One-quarter of 80 is 20, so three-quarters is 3 x 20 = 60. Verify with direct multiplication: 0.75 x 80 = 60. Choice 20 reports the trees that survived the storm (80 - 60), answering the opposite question from what was asked. Choice 75 treats 0.75 as a count of 75 trees directly, ignoring the multiplication. Choice 40 misreads 0.75 as one-half and computes 0.5 x 80. The storm destroyed 60 trees.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-8",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A shopper buys 3 pounds of beef at $4.80 per pound and 2 packs of buns at $3.25 each. She pays with a $30 bill. How much change does she receive?",
+    "choices": [
+      "$8.10",
+      "$9.10",
+      "$9.20",
+      "$20.90"
+    ],
+    "correct_index": 1,
+    "explanation": "Three steps are required: compute each item subtotal, sum the subtotals to get the bill, then subtract from the amount tendered. Beef subtotal: 3 x $4.80 = $14.40. Bun subtotal: 2 x $3.25 = $6.50. Bill total: $14.40 + $6.50 = $20.90. Change owed: $30.00 - $20.90 = $9.10. Choice $20.90 reports the bill total itself, stopping at the intermediate value before the change calculation. Choice $9.20 reflects a ten-cent rounding error during the addition of subtotals. Choice $8.10 subtracts a miscomputed bill of $21.90. She receives $9.10 in change.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-9",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A driver travels at 60 miles per hour for 2 hours and 45 minutes. How many miles does he cover?",
+    "choices": [
+      "120",
+      "145",
+      "165",
+      "180"
+    ],
+    "correct_index": 2,
+    "explanation": "Convert the minutes into a decimal fraction of an hour, then multiply by speed. 45 minutes equals 45/60 = 0.75 hour, so total time is 2.75 hours. Distance equals rate times time: 60 x 2.75 = 165 miles. Split the multiplication for clarity: 60 x 2 = 120, and 60 x 0.75 = 45, then 120 + 45 = 165. Choice 120 uses only the two whole hours, dropping the 45-minute portion. Choice 180 rounds the time up to 3 full hours before multiplying. Choice 145 treats 45 minutes as 0.45 hour, a unit-conversion error. The driver covers 165 miles.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-10",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A teacher needs 3 pencils for each of her 18 students. Pencils are sold only in boxes of 12. What is the minimum number of boxes she must buy?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "54"
+    ],
+    "correct_index": 1,
+    "explanation": "Three steps: find total pencils needed, divide by box size to get boxes, then round up because partial boxes cannot be purchased. Pencils needed: 18 students x 3 pencils each = 54 pencils. Boxes required: 54 / 12 = 4.5 boxes. Since stores sell only whole boxes, round up to 5 so the class has enough. Buying only 4 boxes provides 48 pencils, leaving the class 6 short. Choice 4 rounds down and leaves the class short. Choice 54 reports the total pencil count rather than the number of boxes. Choice 6 over-rounds by one box, buying more than necessary. She must buy 5 boxes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-11",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A 5-gallon bucket of paint covers 1,750 square feet. How many gallons are needed to cover 4,200 square feet?",
+    "choices": [
+      "8",
+      "10",
+      "12",
+      "14"
+    ],
+    "correct_index": 2,
+    "explanation": "Set up a unit-rate problem in two steps: find coverage per gallon, then divide the target area by that rate to find gallons needed. Coverage per gallon: 1,750 / 5 = 350 square feet per gallon. Gallons needed for 4,200 square feet: 4,200 / 350 = 12 gallons. Verify by multiplying back: 12 x 350 = 4,200, which matches the target area exactly. Choice 10 reflects dividing 4,200 by an incorrect per-gallon rate of 420. Choice 14 doubles the original five-gallon bucket without checking the proportion of areas. Choice 8 results from a miscomputed per-gallon rate near 525. The job requires 12 gallons of paint.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-12",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A worker earns $18 per hour for regular time and 1.5 times that for any hours over 40 in a week. She works 46 hours. What is her total pay?",
+    "choices": [
+      "$828",
+      "$882",
+      "$900",
+      "$1,242"
+    ],
+    "correct_index": 1,
+    "explanation": "Split the 46 hours into regular and overtime portions, compute each pay segment, then add. Regular hours: 40 at $18 each = $720. Overtime hours: 46 - 40 = 6 hours. Overtime rate: 1.5 x $18 = $27 per hour. Overtime pay: 6 x $27 = $162. Total: $720 + $162 = $882. Choice $828 pays all 46 hours at the regular $18 rate (46 x $18 = $828), ignoring the overtime premium. Choice $1,242 applies the 1.5x multiplier to every hour worked rather than only hours above 40. Choice $900 rounds the overtime pay to a clean number. Her total pay is $882.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-13",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A truck has a maximum load of 2,000 pounds. Equipment weighing 380 pounds is already on board. How many 45-pound crates can be added without exceeding the limit?",
+    "choices": [
+      "32",
+      "35",
+      "36",
+      "44"
+    ],
+    "correct_index": 2,
+    "explanation": "Two steps: find remaining weight capacity after the existing load, then divide by crate weight. Remaining capacity: 2,000 - 380 = 1,620 pounds available. Crates that fit: 1,620 / 45 = 36 exactly, with no remainder. Verify: 36 x 45 = 1,620, exactly filling the remaining capacity. Choice 44 divides the full 2,000 by 45, ignoring the 380 pounds of equipment already on board. Choice 35 rounds the answer down by one, even though 36 crates fit perfectly. Choice 32 reflects dividing by 50 instead of 45, a misread weight. The truck can carry 36 more crates.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-14",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "Two vehicles start 270 miles apart and drive toward each other. One travels at 55 mph and the other at 35 mph. How many hours until they meet?",
+    "choices": [
+      "2.7",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct_index": 1,
+    "explanation": "When two objects move toward each other, the gap between them shrinks at a rate equal to the sum of their speeds. Add the speeds first, then divide the starting distance by that combined rate. Combined closing speed: 55 + 35 = 90 mph. Time to meet: 270 / 90 = 3 hours. Verify: in 3 hours the first car covers 55 x 3 = 165 miles and the second covers 35 x 3 = 105 miles, totaling 270. Choice 2.7 divides 270 by 100, a slipped digit. Choice 4 divides by the slower speed only. Choice 5 uses the faster speed alone. They meet in 3 hours.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-15",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A tank holds 240 gallons when full. Water flows in at 8 gallons per minute while a drain removes 3 gallons per minute. Starting empty, how many minutes does it take to fill the tank?",
+    "choices": [
+      "30",
+      "48",
+      "53",
+      "80"
+    ],
+    "correct_index": 1,
+    "explanation": "Two opposing rates are at work, so find the net fill rate, then divide tank volume by that rate. Net rate: 8 gallons in minus 3 gallons out = 5 gallons per minute of actual filling. Time to fill: 240 / 5 = 48 minutes. Verify: in 48 minutes, 8 x 48 = 384 gallons flow in while 3 x 48 = 144 drain out, leaving 240 in the tank, matching its capacity. Choice 30 uses only the 8-gallon inflow, ignoring the drain. Choice 80 uses only the drain rate, inverting the problem. Choice 53 reflects a miscomputed net rate near 4.5. The tank fills in 48 minutes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-16",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A student earns scores of 78, 85, and 92 on three tests. After a fourth test, her average across all four is exactly 84. What did she score on the fourth test?",
+    "choices": [
+      "79",
+      "81",
+      "82",
+      "84"
+    ],
+    "correct_index": 1,
+    "explanation": "Use the average formula: total points equals average times count. Required total: 84 x 4 = 336. Sum of first three: 78 + 85 + 92 = 255. Fourth score: 336 - 255 = 81. Choice 84 assumes the fourth score must equal the average, which only holds when the prior scores already average to 84. Choice 82 reflects an arithmetic slip in summing 78 + 85 + 92 as 254. Choice 79 subtracts in the wrong direction. She scored 81.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-AF-NEW-17",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "What is the sum of all whole numbers from 1 to 50, inclusive?",
+    "choices": [
+      "1,225",
+      "1,275",
+      "1,325",
+      "2,550"
+    ],
+    "correct_index": 1,
+    "explanation": "Use the arithmetic series formula: sum equals n times (n + 1) divided by 2, where n is the largest number. Here n = 50, so sum = 50 x 51 / 2 = 2,550 / 2 = 1,275. Choice 2,550 forgets to divide by 2, reporting n times (n + 1) directly. Choice 1,225 uses n = 49 by accident, summing 1 to 49. Choice 1,325 adds 50 to 1,275 a second time. The correct sum is 1,275.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-1",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "What is 25% of 60?",
+    "choices": [
+      "12",
+      "15",
+      "18",
+      "20"
+    ],
+    "correct_index": 1,
+    "explanation": "Percent of an amount uses the formula (percent/100) x amount. Plug in: 0.25 x 60 = 15. Choice 12 comes from using 20% instead of 25%, reading the percent loosely. Choice 18 comes from using 30% instead of 25%, also a misread. Choice 20 results from dividing 60 by 3, which would be one-third, not one-quarter. Reading 25% as one-quarter is a useful shortcut: 60 divided by 4 equals 15. Either method, formula or fraction conversion, lands on 15 cleanly.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-2",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "30 is what percent of 150?",
+    "choices": [
+      "15%",
+      "20%",
+      "25%",
+      "30%"
+    ],
+    "correct_index": 1,
+    "explanation": "Percent-of-total uses the formula (part/whole) x 100. Plug in: (30/150) x 100 = 20%. A quick check: 150 divided by 5 equals 30, so 30 is one-fifth of 150, and one-fifth is 20%. Choice 15% halves the part incorrectly. Choice 25% comes from dividing 30 by 120 instead of 150, a wrong-base error that ignores the stated total. Choice 30% mistakes the part value for the answer, ignoring that the question asks for a ratio. The whole always goes in the denominator.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-3",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "What is 15% of 80?",
+    "choices": [
+      "8",
+      "10",
+      "12",
+      "16"
+    ],
+    "correct_index": 2,
+    "explanation": "Percent of an amount uses (percent/100) x amount. Plug in: 0.15 x 80 = 12. A fast method splits 15% into 10% plus 5%: 10% of 80 is 8, 5% of 80 is 4, and the sum is 12. Choice 8 stops at 10% and forgets the extra 5%. Choice 10 comes from rough rounding between the two pieces. Choice 16 doubles to 20% by mistake, treating 15% as if it were closer to one-fifth. The 10%-plus-5% trick handles most tip-style and sales-tax calculations quickly without a calculator.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-4",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "A recruit answered 18 questions correctly out of 20. What percent did the recruit get right?",
+    "choices": [
+      "80%",
+      "85%",
+      "90%",
+      "95%"
+    ],
+    "correct_index": 2,
+    "explanation": "Percent correct uses (correct/total) x 100. Plug in: (18/20) x 100 = 90%. Choice 80% comes from miscounting 4 missed instead of 2, since 16/20 = 80%, or from doubling the number wrong before converting. Choice 85% splits the difference without computing. Choice 95% comes from treating 1 missed question as 5% instead of 2 missed as 10%. The shortcut: each missed question out of 20 is worth 5 percentage points, so 2 missed equals 10 points off 100%.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-5",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A $50 shirt is on sale for 30% off. What is the sale price?",
+    "choices": [
+      "$15",
+      "$20",
+      "$30",
+      "$35"
+    ],
+    "correct_index": 3,
+    "explanation": "Sale price after a percent discount uses original x (1 - discount). Plug in: 50 x 0.70 = $35. Choice $15 confuses percent off with percent paid: 30% of 50 is the discount amount, not the price paid. Choice $20 comes from subtracting 30 directly from 50, treating the percent as a dollar amount. Choice $30 comes from using 40% off instead of 30%. The customer always pays (100 - discount)% of the original, which here is 70% of $50.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-6",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A dinner bill is $80. With an 18% tip, what is the total amount paid?",
+    "choices": [
+      "$14.40",
+      "$80.18",
+      "$94.40",
+      "$98.00"
+    ],
+    "correct_index": 2,
+    "explanation": "Total with tip uses bill x (1 + tip rate). Plug in: 80 x 1.18 = $94.40. The tip alone is 0.18 x 80 = $14.40, which appears as choice $14.40 but represents only the tip, not the total. Choice $80.18 treats 18% as 18 cents, a decimal-place error. Choice $98.00 uses 22.5% rounding or adds $18 flat instead of 18%. The question asks for the total paid, so the tip must be added to the original bill.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-7",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A recruit increased pushup reps from 100 to 125. What is the percent increase?",
+    "choices": [
+      "20%",
+      "25%",
+      "30%",
+      "125%"
+    ],
+    "correct_index": 1,
+    "explanation": "Percent increase uses (new - old)/old x 100. Plug in: (125 - 100)/100 x 100 = 25 / 100 x 100 = 25%. Choice 20% uses the new value 125 as the denominator (25/125), a wrong-base error common in percent-change problems. Choice 30% comes from rough estimation between 25 and 33. Choice 125% treats the new total as the percent change instead of computing the change relative to the starting value. The original value always goes in the denominator for percent change, because the question asks how much the count grew compared with where it started.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-8",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A $200 item has an 8% sales tax. What is the total cost?",
+    "choices": [
+      "$208",
+      "$212",
+      "$216",
+      "$280"
+    ],
+    "correct_index": 2,
+    "explanation": "Total with tax uses price x (1 + tax rate). Plug in: 200 x 1.08 = $216. Tax alone is 0.08 x 200 = $16, then add to the price: 200 + 16 = $216. Choice $208 treats 8% as 8 dollars flat. Choice $212 uses 6% by mistake (0.06 x 200 = $12, plus $200 = $212). Choice $280 confuses 8% with 40% or treats tax as a much larger rate. A shortcut for 8% of a round number: take 10% and subtract one-fifth of it. 10% of 200 is 20, one-fifth of 20 is 4, so 8% is 16.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-9",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A practice score rose from 40 to 52. What is the percent increase?",
+    "choices": [
+      "12%",
+      "23%",
+      "30%",
+      "52%"
+    ],
+    "correct_index": 2,
+    "explanation": "Percent increase uses (new - old)/old x 100. Plug in: (52 - 40)/40 x 100 = 12/40 x 100 = 30%. Choice 23% divides by the new value 52 instead of the original 40, the classic wrong-base error. Choice 12% reports the raw point gain as a percent, ignoring the formula. Choice 52% mistakes the new score for the answer. The original value is always the denominator in percent change problems, because the question asks how much it grew relative to where it started.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-10",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A $500 loan charges 6% simple interest per year. How much interest accrues over 2 years?",
+    "choices": [
+      "$30",
+      "$50",
+      "$60",
+      "$66"
+    ],
+    "correct_index": 2,
+    "explanation": "Simple interest uses I = principal x rate x time. Plug in: 500 x 0.06 x 2 = $60. Choice $30 forgets the time factor and computes only one year of interest. Choice $50 misreads the rate as 5% and computes 500 x 0.05 x 2 = $50. Choice $66 reflects compound interest applied incorrectly (500 x 1.06 x 1.06 minus 500 rounds near 61.80, then bumped). Simple interest never compounds: each year adds the same fixed dollar amount, calculated from the original principal only.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-11",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A mile time dropped from 8:00 minutes to 6:00 minutes. What is the percent decrease?",
+    "choices": [
+      "20%",
+      "25%",
+      "33%",
+      "75%"
+    ],
+    "correct_index": 1,
+    "explanation": "Percent decrease uses (old - new)/old x 100. Plug in: (8 - 6)/8 x 100 = 2/8 x 100 = 25%. Choice 20% comes from dividing by 10 or a similar wrong-base slip. Choice 33% divides by the new value 6 instead of the original 8, a wrong-base error that inflates the answer. Choice 75% reports the ratio of new to old (6/8) as if it were the decrease, confusing percent remaining with percent change. Faster runs mean a decrease in time, but the formula stays the same.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-12",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 4,
+    "stem": "A jacket costs $80. It is marked down 25%, then 8% sales tax is added to the sale price. What is the final price?",
+    "choices": [
+      "$60.00",
+      "$62.40",
+      "$64.80",
+      "$67.00"
+    ],
+    "correct_index": 2,
+    "explanation": "Sequential percent changes apply one at a time. Step 1: 80 x 0.75 = $60 sale price. Step 2: 60 x 1.08 = $64.80 final. Choice $60.00 stops after the discount and forgets to add tax. Choice $62.40 applies tax to the original $80 instead of the discounted $60, then subtracts the discount, an order error. Choice $67.00 combines 25% off and 8% tax into a single 17% net change, but sequential percentages on different bases do not add directly. The base for tax is the sale price, not the sticker price.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-13",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 4,
+    "stem": "After a 20% discount, a backpack costs $48. What was the original price?",
+    "choices": [
+      "$57.60",
+      "$60.00",
+      "$68.00",
+      "$76.80"
+    ],
+    "correct_index": 1,
+    "explanation": "Working backward from a discounted price uses original = sale/(1 - discount). Plug in: 48/0.80 = $60. Choice $57.60 multiplies $48 by 1.20, treating the discount as if it added back as a percent increase on the sale price, but 20% of $48 is not the same as 20% of the original. Choice $68 adds a flat $20 to the sale price. Choice $76.80 divides by 0.625 or applies the wrong adjustment. The sale price represents 80% of the original, so dividing by 0.80 recovers 100%.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-PC-NEW-14",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 5,
+    "stem": "A stock rises 20% one month, then falls 20% the next month. What is the net percent change from the starting price?",
+    "choices": [
+      "0% (no change)",
+      "4% decrease",
+      "4% increase",
+      "20% decrease"
+    ],
+    "correct_index": 1,
+    "explanation": "Chained percent changes apply to different bases. Start with 1.00, multiply by 1.20 for the rise: 1.20. Then multiply by 0.80 for the fall: 1.20 x 0.80 = 0.96, which is a 4% decrease from the start. Choice 0% adds the percentages directly (+20 - 20 = 0), the classic trap, but the 20% drop applies to a larger base than the 20% gain did. Choice 4% increase reverses the direction. Choice 20% decrease ignores the first rise entirely. Equal-percent up-then-down sequences always net to a small loss.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-1",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A car travels at a steady 55 mph for 4 hours. How far does it go?",
+    "choices": [
+      "13.75 miles",
+      "59 miles",
+      "220 miles",
+      "275 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "Use D = R x T. Distance equals 55 mph times 4 hours, which is 220 miles. The choice 13.75 reverses the operation and divides 55 by 4. The choice 59 adds rate and time instead of multiplying. The choice 275 uses 5 hours instead of 4, a common slip when rereading the problem. Always identify which quantity is missing and pick the matching form of the formula before plugging in numbers.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-2",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A cyclist rides 36 miles at 12 mph. How long does the ride take?",
+    "choices": [
+      "2 hours",
+      "3 hours",
+      "4 hours",
+      "24 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Use T = D / R. Time equals 36 miles divided by 12 mph, which is 3 hours. The choice 2 divides 36 by 18 by mistake. The choice 4 divides 36 by 9, often from misreading the rate. The choice 24 multiplies distance by 2 instead of dividing, the classic operation-flip trap. When you want time, isolate it on one side of the formula first so the arithmetic step is clear.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-3",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A runner averages 8 mph for 2 hours. How far does she run?",
+    "choices": [
+      "4 miles",
+      "10 miles",
+      "16 miles",
+      "82 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "Use D = R x T. Distance equals 8 mph times 2 hours, which is 16 miles. The choice 4 divides 8 by 2, reversing the operation. The choice 10 adds the rate and time. The choice 82 concatenates the digits, a sign of skipping the formula entirely. Even with friendly numbers, write D = R x T before computing so the operation is locked in.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-4",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A train moves at 75 mph for 6 hours. How many miles does it cover?",
+    "choices": [
+      "12.5 miles",
+      "81 miles",
+      "450 miles",
+      "475 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "Use D = R x T. Distance equals 75 mph times 6 hours, which is 450 miles. The choice 12.5 divides 75 by 6. The choice 81 adds the two numbers. The choice 475 comes from a multiplication slip where 75 x 6 is read as 75 x 6 + 25. Multiply column by column on scratch paper if the product is not automatic, and always pair the unit of the answer (miles) with the formula.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-5",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A car drives at 65 mph for 2.5 hours. How far does it travel?",
+    "choices": [
+      "26 miles",
+      "130 miles",
+      "162.5 miles",
+      "195 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "Use D = R x T. Distance equals 65 mph times 2.5 hours, which is 162.5 miles. Compute 65 x 2 = 130, then add half of 65, which is 32.5, for 162.5. The choice 26 divides 65 by 2.5. The choice 130 ignores the half hour. The choice 195 uses 3 hours instead of 2.5. With decimal time, split the hours into whole and fractional parts and multiply each before adding.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-6",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A bus drives at 40 mph for 45 minutes. How far does it go?",
+    "choices": [
+      "18 miles",
+      "30 miles",
+      "45 miles",
+      "1,800 miles"
+    ],
+    "correct_index": 1,
+    "explanation": "Convert minutes to hours first. 45 minutes equals 0.75 hour. Then D = R x T = 40 x 0.75 = 30 miles. The choice 18 uses 0.45 hour, a unit-conversion error treating minutes as a decimal. The choice 45 simply restates the time number with the wrong unit. The choice 1,800 multiplies 40 by 45 without converting minutes. Always convert mixed time units to hours before applying the formula.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-7",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A delivery van covers 240 miles at an average speed of 48 mph. How long does the trip take?",
+    "choices": [
+      "4 hours",
+      "5 hours",
+      "6 hours",
+      "192 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Use T = D / R. Time equals 240 miles divided by 48 mph. 48 times 5 is 240, so the trip takes 5 hours. The choice 4 divides 240 by 60 by mistake. The choice 6 divides 240 by 40. The choice 192 subtracts 48 from 240, the wrong operation entirely. When the rate is close to a round number, test the round number first as a sanity check before doing long division.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-8",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A jogger runs for 1 hour 30 minutes at 22 mph on a bike-jog trail. How far does she go?",
+    "choices": [
+      "11 miles",
+      "23.5 miles",
+      "33 miles",
+      "44 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "Convert 1 hour 30 minutes to 1.5 hours. Then D = R x T = 22 x 1.5 = 33 miles. Compute 22 x 1 = 22 and add half of 22, which is 11, for 33. The choice 11 reports only the half-hour portion. The choice 23.5 adds 22 and 1.5. The choice 44 uses 2 hours instead of 1.5. Mixed time formats are the most common error source, so always rewrite them as a single decimal or fraction of an hour first.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-9",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A truck covers 90 miles in 1.5 hours. What is its average speed?",
+    "choices": [
+      "45 mph",
+      "60 mph",
+      "75 mph",
+      "135 mph"
+    ],
+    "correct_index": 1,
+    "explanation": "Use R = D / T. Speed equals 90 miles divided by 1.5 hours, which is 60 mph. Multiply numerator and denominator by 2 to clear the decimal: 180 / 3 = 60. The choice 45 divides 90 by 2 instead of 1.5. The choice 75 splits the difference between 90 and 60 in a guessing pattern. The choice 135 multiplies 90 by 1.5 instead of dividing, the classic operation flip when solving for rate.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-10",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A driver covers the first 120 miles at 60 mph and the next 180 miles at 45 mph. What is the average speed for the entire trip?",
+    "choices": [
+      "50 mph",
+      "52.5 mph",
+      "54 mph",
+      "55 mph"
+    ],
+    "correct_index": 0,
+    "explanation": "Average speed equals total distance divided by total time, not the average of the two rates. Time for leg one is 120 / 60 = 2 hours. Time for leg two is 180 / 45 = 4 hours. Total distance is 300 miles in 6 hours, so the average is 50 mph. The choice 52.5 is the arithmetic mean of 60 and 45, the classic trap. The choices 54 and 55 weight the legs incorrectly. When segments differ in length and rate, always sum the actual times.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-11",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "Two cars leave the same point heading the same direction. Car A travels at 50 mph and Car B travels at 65 mph. How far apart are they after 3 hours?",
+    "choices": [
+      "15 miles",
+      "45 miles",
+      "150 miles",
+      "345 miles"
+    ],
+    "correct_index": 1,
+    "explanation": "Same direction, so use the rate difference. The gap grows at 65 - 50 = 15 mph. After 3 hours the gap is 15 x 3 = 45 miles. The choice 15 reports only the rate difference and forgets the time. The choice 150 uses the sum of the rates, which would apply only if the cars were heading opposite directions. The choice 345 adds the two distances they traveled. For chase problems, work with the difference of the rates from the start.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-12",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A hiker walks 3 miles at 4 mph, then 5 miles at 5 mph. How long does the full hike take?",
+    "choices": [
+      "1 hour",
+      "1.5 hours",
+      "1.75 hours",
+      "2 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Compute each leg separately, then add. Leg one takes 3 / 4 = 0.75 hour. Leg two takes 5 / 5 = 1 hour. Total time is 0.75 + 1 = 1.75 hours. The choice 1 reports only the second leg. The choice 1.5 averages the two legs incorrectly. The choice 2 rounds 1.75 up to a tidier number. Resist the urge to average times or rates across legs of different lengths. Sum the actual minutes each piece takes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-13",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 4,
+    "stem": "A car leaves a rest stop at 60 mph. One hour later, a second car leaves the same rest stop on the same road at 75 mph. How far from the rest stop does the second car catch the first?",
+    "choices": [
+      "240 miles",
+      "270 miles",
+      "300 miles",
+      "375 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "When the second car starts, the first car has a 60-mile head start. The closing speed is 75 - 60 = 15 mph. Catch-up time is 60 / 15 = 4 hours. Distance from the rest stop is 75 x 4 = 300 miles. The choice 240 uses the slower car's distance at 4 hours, which is the same point but computed inconsistently in a way that often misfires. The choice 270 averages the two cars. The choice 375 uses 5 hours by mistake. Track who starts when and which rate is the gap closer.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-14",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 4,
+    "stem": "Two trains start 360 miles apart and head toward each other on parallel tracks. One travels at 55 mph and the other at 65 mph. How long until they meet?",
+    "choices": [
+      "2 hours",
+      "3 hours",
+      "3.6 hours",
+      "6 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "When two objects move toward each other, add the rates to get the closing speed. 55 + 65 = 120 mph. Time to meet is 360 / 120 = 3 hours. The choice 2 uses only one rate. The choice 3.6 divides 360 by 100, a common slip when adding rates carelessly. The choice 6 uses the difference of the rates instead of the sum, which applies to same-direction chase problems. Sum for converging motion, subtract for catch-up.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-15",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 5,
+    "stem": "A boat moves at 15 mph in still water. On a river with a 3 mph current, the boat travels 36 miles downstream and then 36 miles back upstream. How long does the round trip take?",
+    "choices": [
+      "4 hours",
+      "4.8 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Downstream the current adds to the boat speed, so the effective rate is 15 + 3 = 18 mph. Upstream the current subtracts, giving 15 - 3 = 12 mph. Downstream time is 36 / 18 = 2 hours. Upstream time is 36 / 12 = 3 hours. Total is 5 hours. The choice 4 averages the two leg times. The choice 4.8 divides total distance 72 by 15, ignoring the current. The choice 6 divides 72 by 12, using only the slower leg's rate. Compute each leg with its own effective rate.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RD-NEW-16",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 5,
+    "stem": "A plane flies 600 miles with a 40 mph tailwind, then returns the same 600 miles against a 40 mph headwind. Its airspeed in still air is 200 mph. What is the total flight time for the round trip?",
+    "choices": [
+      "5 hours",
+      "6 hours",
+      "6.25 hours",
+      "7.5 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Ground speed outbound is 200 + 40 = 240 mph. Ground speed returning is 200 - 40 = 160 mph. Outbound time is 600 / 240 = 2.5 hours. Return time is 600 / 160 = 3.75 hours. Total is 6.25 hours. The choice 5 ignores the wind and uses 1,200 / 240. The choice 6 averages the two leg times. The choice 7.5 doubles 3.75, treating both legs as the slow leg. The arithmetic mean of two rates never gives the right round-trip time when distances are equal but rates differ.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-1",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A pancake recipe uses flour and sugar in a 2:1 ratio. If a baker uses 4 cups of flour, how much sugar is needed?",
+    "choices": [
+      "2 cups",
+      "3 cups",
+      "6 cups",
+      "8 cups"
+    ],
+    "correct_index": 0,
+    "explanation": "Set up the proportion flour/sugar = 2/1 = 4/x. Cross-multiply: 2x = 4, so x = 2 cups. The choice 8 cups multiplies 4 by 2 instead of dividing, treating flour as the smaller part. The choice 6 cups adds the parts (4 + 2) instead of scaling. The choice 3 cups subtracts 1 from 4 instead of applying the ratio. Sugar is the smaller quantity here, so it must be less than the flour amount.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-2",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "Concrete is mixed with cement and sand in a 1:3 ratio. If 5 bags of cement are used, how many bags of sand are needed?",
+    "choices": [
+      "8",
+      "12",
+      "15",
+      "20"
+    ],
+    "correct_index": 2,
+    "explanation": "Set up cement/sand = 1/3 = 5/x. Cross-multiply: x = 15 bags. The choice 8 adds the parts (5 + 3) instead of scaling. The choice 20 multiplies 5 by 4 (the total ratio parts) instead of by 3. The choice 12 subtracts 3 from a wrong total. Sand needs three times the cement, so each cement bag pairs with three sand bags, giving 5 times 3.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-3",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "In a classroom the ratio of boys to girls is 3:4. If there are 9 boys, how many girls are in the class?",
+    "choices": [
+      "10",
+      "12",
+      "13",
+      "16"
+    ],
+    "correct_index": 1,
+    "explanation": "Set up boys/girls = 3/4 = 9/x. Cross-multiply: 3x = 36, so x = 12 girls. The choice 13 adds 4 to 9 instead of scaling proportionally. The choice 16 applies the scale factor 4 to the wrong number (4 times 4). The choice 10 mixes addition and the ratio incorrectly. Scaling the 3 up to 9 means multiplying by 3, so the 4 also scales by 3 to reach 12.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-4",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A paint mix uses red and white in a 1:2 ratio. If 3 quarts of red are used, how much white is needed?",
+    "choices": [
+      "1.5 quarts",
+      "5 quarts",
+      "6 quarts",
+      "9 quarts"
+    ],
+    "correct_index": 2,
+    "explanation": "Set up red/white = 1/2 = 3/x. Cross-multiply: x = 6 quarts. The choice 1.5 quarts flips the ratio and divides instead of multiplying. The choice 5 quarts adds the parts (3 + 2) instead of scaling. The choice 9 quarts multiplies 3 by 3 (the total parts) instead of by 2. White is twice the red, so 3 quarts of red pairs with 6 quarts of white.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-5",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "On a map, 1 inch represents 25 miles. Two towns are 6.5 inches apart on the map. How far apart are they in reality?",
+    "choices": [
+      "31.5 miles",
+      "150 miles",
+      "162.5 miles",
+      "175 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "Set up inches/miles = 1/25 = 6.5/x. Cross-multiply: x = 162.5 miles. The choice 31.5 adds 25 and 6.5 instead of multiplying. The choice 150 drops the 0.5 inch from the calculation. The choice 175 rounds 6.5 up to 7 before multiplying. Each inch on the map equals 25 actual miles, so 6.5 inches scales directly to 6.5 times 25.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-6",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "A cookie recipe uses 3 cups of flour to make 8 cookies. How many cups of flour are needed to make 60 cookies?",
+    "choices": [
+      "20 cups",
+      "22.5 cups",
+      "24 cups",
+      "65 cups"
+    ],
+    "correct_index": 1,
+    "explanation": "Set up flour/cookies = 3/8 = x/60. Cross-multiply: 8x = 180, so x = 22.5 cups. The choice 20 cups multiplies 60 by 1/3 instead of 3/8. The choice 24 cups uses the wrong ratio of 60 divided by something close. The choice 65 cups adds 60 and 5 with no proportional logic. Each cookie needs 3/8 cup of flour, so 60 cookies need 60 times 3/8.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-7",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "A server tips at a rate of $4 for every $25 of bill. If the bill is $87.50, what tip should be left at this rate?",
+    "choices": [
+      "$12.50",
+      "$14.00",
+      "$17.50",
+      "$21.88"
+    ],
+    "correct_index": 1,
+    "explanation": "Set up tip/bill = 4/25 = x/87.50. Cross-multiply: 25x = 350, so x = $14.00. The choice $12.50 applies a flat 1/7 ratio incorrectly. The choice $17.50 uses a 20 percent tip rate, not the 16 percent given. The choice $21.88 uses a 25 percent rate from confusing the 25 in the ratio. The given ratio is 4 out of 25, which is 16 percent, so 87.50 times 0.16 gives 14.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-8",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "On a map, 2 centimeters represents 15 kilometers. If two cities are 9 centimeters apart on the map, how far apart are they?",
+    "choices": [
+      "22 km",
+      "45 km",
+      "67.5 km",
+      "135 km"
+    ],
+    "correct_index": 2,
+    "explanation": "Set up cm/km = 2/15 = 9/x. Cross-multiply: 2x = 135, so x = 67.5 km. The choice 135 km forgets to divide by 2 after multiplying 9 by 15. The choice 45 km uses 1 cm per 5 km, the wrong scale. The choice 22 km adds 15 and 9 minus 2. Each centimeter equals 7.5 km, so 9 centimeters equals 67.5 km.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-9",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "In a class the ratio of boys to girls is 3:5. If the class has 32 students total, how many are boys?",
+    "choices": [
+      "8",
+      "12",
+      "19",
+      "20"
+    ],
+    "correct_index": 1,
+    "explanation": "The ratio 3:5 means 3 + 5 = 8 total parts. Boys are 3/8 of the total: 32 times 3/8 = 12 boys. The choice 19 treats the part-to-part ratio as part-to-whole, computing 32 times 3/5. The choice 20 makes the same error in the other direction (32 times 5/8). The choice 8 just reports the total parts. Always add the ratio parts before splitting a known total.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-10",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "Concrete is mixed with cement, sand, and gravel in a 1:2:4 ratio. A batch contains 35 cubic feet of concrete total. How much gravel is in the batch?",
+    "choices": [
+      "5 cubic feet",
+      "10 cubic feet",
+      "20 cubic feet",
+      "28 cubic feet"
+    ],
+    "correct_index": 2,
+    "explanation": "Add the parts: 1 + 2 + 4 = 7 total parts. Gravel is 4/7 of the total: 35 times 4/7 = 20 cubic feet. The choice 28 cubic feet treats 4/5 as the gravel share, forgetting to include cement in the sum. The choice 10 cubic feet uses 4/14, dividing by twice the correct total. The choice 5 cubic feet divides 35 by 7 without scaling up. Add all three parts of the ratio before taking the gravel fraction.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-11",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A paint blend uses red, yellow, and blue in a 4:3:2 ratio. If the blend contains 18 ounces of blue, how many ounces is the entire blend?",
+    "choices": [
+      "54 oz",
+      "63 oz",
+      "72 oz",
+      "81 oz"
+    ],
+    "correct_index": 3,
+    "explanation": "Blue is 2 parts. Each part equals 18 divided by 2, or 9 ounces. Add the parts: 4 + 3 + 2 = 9 total parts. Total blend = 9 parts times 9 ounces = 81 ounces. The choice 54 oz multiplies 18 by 3, treating yellow's ratio number as the scale factor. The choice 72 oz uses 8 parts, forgetting blue itself. The choice 63 oz uses 7 parts, dropping blue. Find the per-part value first, then multiply by total parts.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-12",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "A bag contains red, blue, and green marbles in a 2:3:5 ratio. The bag has 24 red marbles. How many green marbles are in the bag?",
+    "choices": [
+      "36",
+      "48",
+      "60",
+      "96"
+    ],
+    "correct_index": 2,
+    "explanation": "Red is 2 parts and equals 24 marbles, so each part equals 12 marbles. Green is 5 parts: 5 times 12 = 60 green marbles. The choice 36 multiplies 12 by 3, giving the blue count instead of green. The choice 48 treats green as 4 parts (12 times 4) by miscounting the ratio. The choice 96 reports blue plus green combined (3 + 5 = 8 parts at 12 each), answering for the non-red total rather than green alone. Find the value of one part by dividing the known quantity by its ratio number, then multiply by the target ratio number.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-13",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "A salad dressing mixes oil, vinegar, and water in a 1:2:5 ratio. If the recipe uses 30 ounces of water, how many ounces of dressing does it make total?",
+    "choices": [
+      "36 oz",
+      "42 oz",
+      "48 oz",
+      "75 oz"
+    ],
+    "correct_index": 2,
+    "explanation": "Water is 5 parts and equals 30 ounces, so each part equals 6 ounces. Add the parts: 1 + 2 + 5 = 8 total parts. Total dressing = 8 times 6 = 48 ounces. The choice 36 oz misadds the ratio as 1 + 2 + 3 = 6 total parts and multiplies 6 by 6. The choice 42 oz uses 7 parts, dropping one of the smaller components. The choice 75 oz multiplies 30 by 2.5, treating the ratio additively. Find the per-part value, add all parts, then multiply.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-RP-NEW-14",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "Six workers can paint a house in 10 days. Working at the same rate, how many days will 4 workers need to paint the same house?",
+    "choices": [
+      "6.67 days",
+      "8 days",
+      "12 days",
+      "15 days"
+    ],
+    "correct_index": 3,
+    "explanation": "This is inverse proportion: fewer workers means more days. Total work equals 6 times 10 = 60 worker-days. With 4 workers, days = 60 divided by 4 = 15 days. The choice 6.67 days applies direct proportion (10 times 4/6), shrinking the time as workers shrink. The choice 12 days subtracts 2 workers and adds 2 days. The choice 8 days reduces time even more, the opposite of what should happen. When one quantity decreases, the other increases by the inverse factor.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-1",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A paperback book costs $12. How much do 5 of these books cost?",
+    "choices": [
+      "$17",
+      "$55",
+      "$60",
+      "$65"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply the unit price by the quantity: 12 x 5 = 60, so 5 books cost $60. Choice $17 adds 12 and 5 instead of multiplying, a slip that happens when small numbers nudge the brain toward addition. Choice $55 misreads the price as $11 and computes 11 x 5, or drops a dollar when carrying. Choice $65 adds an extra $5, a common slip from rounding 12 up to 13 before multiplying. The structure is a single-step unit-cost problem, and the only operation needed is one multiplication.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-2",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A teacher splits 24 students into 4 equal groups. How many students are in each group?",
+    "choices": [
+      "5",
+      "6",
+      "8",
+      "20"
+    ],
+    "correct_index": 1,
+    "explanation": "Divide the total by the number of groups: 24 / 4 = 6 students per group. Choice A comes from dividing 24 by 5 by accident, then rounding to a nearby whole number. Choice C results from dividing 24 by 3, a common error when a student confuses the number of groups with the number of dividers needed between groups. Choice D comes from subtracting 4 from 24 instead of dividing, a misread of the cue phrase 'split into.' One operation, equal-share division, is all this question asks for, and the keyword 'equal groups' is the signal to divide.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-3",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A train travels at a constant 60 miles per hour. How far does it travel in 3 hours?",
+    "choices": [
+      "20 miles",
+      "63 miles",
+      "120 miles",
+      "180 miles"
+    ],
+    "correct_index": 3,
+    "explanation": "Distance equals rate times time: 60 x 3 = 180 miles. Choice A inverts the formula and divides 60 by 3 instead of multiplying, which would give a speed-per-hour fraction rather than a distance. Choice B adds 60 and 3 instead of multiplying, a classic operator swap when the rate and time numbers look small. Choice C uses 2 hours instead of 3, an off-by-one read on the time value. Distance-rate-time is one of the most common word-problem setups, and at this difficulty only a single product is required to reach the answer.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-4",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A bakery starts the day with 48 muffins. By noon, 19 muffins have been sold. How many muffins remain?",
+    "choices": [
+      "29",
+      "31",
+      "39",
+      "67"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract the amount sold from the starting count: 48 - 19 = 29 muffins remain. Choice B comes from subtracting 17 instead of 19, a digit misread on the ones place. Choice C results from subtracting only the 9 in 19 and ignoring the tens digit, leaving 39 muffins. Choice D adds the two numbers instead of subtracting, which is the operator-flip trap when the word 'sold' is glossed over and the stem is read as a combine-totals problem. A single subtraction handles the whole problem, and careful alignment of place values prevents the digit-slip distractors.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-5",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A shirt is marked $25, and a store offers 20% off. What is the sale price?",
+    "choices": [
+      "$5",
+      "$20",
+      "$24.50",
+      "$30"
+    ],
+    "correct_index": 1,
+    "explanation": "Find 20% of $25 (which is $5), then subtract from the original: 25 - 5 = $20. Choice A reports only the discount amount and forgets to subtract from the price, a stopping-too-early mistake. Choice C treats 20% as 2%, taking $0.50 off instead of $5, a decimal-place slip. Choice D adds the discount to the price rather than subtracting it, the operator-flip error when the cue word 'off' is missed. Percent-off problems are two-step: compute the discount amount, then apply it in the correct direction to reach the sale price.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-6",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "Marcus earns $14 per hour. He works 6 hours on Monday and 4 hours on Tuesday. How much does he earn in total for both days?",
+    "choices": [
+      "$56",
+      "$84",
+      "$140",
+      "$1,400"
+    ],
+    "correct_index": 2,
+    "explanation": "Add the hours first, then multiply by the rate: 6 + 4 = 10 hours, and 10 x 14 = $140. Choice A multiplies only Tuesday's 4 hours by 14, dropping Monday entirely. Choice B multiplies only Monday's 6 hours by 14, dropping Tuesday entirely. Choice D misplaces the decimal, sliding a zero so the hourly rate is treated as $140 instead of $14, a place-value slip. Two-day pay problems need both days summed before the wage rate is applied, and the order of operations matters when the same wage covers both shifts.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-7",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "Three pizzas are each cut into 8 slices. If 4 friends share all the slices equally, how many slices does each friend get?",
+    "choices": [
+      "3",
+      "6",
+      "8",
+      "12"
+    ],
+    "correct_index": 1,
+    "explanation": "Find the total slices first: 3 x 8 = 24, then divide among 4 people: 24 / 4 = 6 slices each. Choice A divides 12 by 4, using only one pizza. Choice C reports the slices per pizza, skipping the share step. Choice D divides 24 by 2 instead of 4, halving the friends. The two operations have to happen in order, multiply then divide, and missing either step lands on a wrong choice.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-8",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A car travels 240 miles using 8 gallons of gas. What is the car's mileage in miles per gallon?",
+    "choices": [
+      "30 mpg",
+      "32 mpg",
+      "248 mpg",
+      "1,920 mpg"
+    ],
+    "correct_index": 0,
+    "explanation": "Miles per gallon equals miles divided by gallons: 240 / 8 = 30 mpg. Choice B comes from dividing 256 by 8, a digit slip that reads the miles value wrong. Choice C adds 240 and 8 instead of dividing, an operator-swap error that ignores the per-unit cue in the question. Choice D multiplies 240 by 8, which would give total miles if you drove 8 full tanks, not a rate per gallon. The phrase 'per gallon' signals division, with miles as the numerator and gallons as the denominator, and getting the order right matters since flipping it produces gallons per mile.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-9",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A bag contains 60 marbles. One-fourth are red, one-third are blue, and the rest are green. How many marbles are green?",
+    "choices": [
+      "15",
+      "20",
+      "25",
+      "35"
+    ],
+    "correct_index": 2,
+    "explanation": "Red: 60 x 1/4 = 15. Blue: 60 x 1/3 = 20. Green: 60 - 15 - 20 = 25. Choice A reports the red count only. Choice B reports the blue count only. Choice D adds the red and blue counts instead of subtracting them from 60, taking the wrong complement. Fraction-of-total problems often hide the answer in the last step, so the leftover quantity, not either named fraction, is what the stem asks for.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-10",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "Jordan saved $150. He spent 40% of his savings on a bike, then spent 25% of the remaining money on a helmet. How much money does Jordan have left?",
+    "choices": [
+      "$30.00",
+      "$52.50",
+      "$67.50",
+      "$90.00"
+    ],
+    "correct_index": 2,
+    "explanation": "Bike cost: 150 x 0.40 = $60, leaving 150 - 60 = $90. Helmet: 90 x 0.25 = $22.50, leaving 90 - 22.50 = $67.50. Choice $30.00 subtracts the bike cost twice, computing 90 - 60 by mistake. Choice $52.50 adds the two percentages (65%) and takes that off $150 directly: 150 - 97.50 = $52.50. Choice $90.00 stops after the bike purchase and forgets the helmet. The key move is using the post-bike balance as the new base for the 25%.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-11",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A pancake recipe uses 2 cups of flour to serve 4 people. How many cups of flour are needed to serve 10 people using the same recipe?",
+    "choices": [
+      "2.5 cups",
+      "4 cups",
+      "5 cups",
+      "8 cups"
+    ],
+    "correct_index": 2,
+    "explanation": "Set up a proportion: 2 cups / 4 people = x / 10 people, so x = (2 x 10) / 4 = 5 cups. Choice A reverses the ratio and divides 10 by 4. Choice B doubles the recipe to serve 8 people instead of 10, an undershoot. Choice D multiplies 2 by 4 instead of by 10/4, applying the wrong scaling factor. Proportion problems require keeping the same quantity (flour or people) in the same position on both sides of the equation.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-12",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A student's five test scores are 78, 85, 92, 89, and 76. What is the average of these scores?",
+    "choices": [
+      "82",
+      "84",
+      "85",
+      "88"
+    ],
+    "correct_index": 1,
+    "explanation": "Sum the scores: 78 + 85 + 92 + 89 + 76 = 420. Divide by 5: 420 / 5 = 84. Choice A undercounts the sum by 10 (likely reading 78 as 68). Choice C reports the median (the middle score when sorted: 76, 78, 85, 89, 92) instead of the mean. Choice D divides 440 by 5, an addition error in the sum. Averages have two stages, and a single arithmetic slip in the sum is the most common way to miss this kind of item.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-13",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A worker assembles 12 widgets in 45 minutes. Working at the same rate, how many widgets can the worker assemble in 3 hours?",
+    "choices": [
+      "32",
+      "36",
+      "48",
+      "60"
+    ],
+    "correct_index": 2,
+    "explanation": "Convert 3 hours to 180 minutes, then scale: 180 / 45 = 4, and 4 x 12 = 48 widgets. Choice A multiplies 12 by 3 hours without converting units, treating hours and 45-minute blocks as equal. Choice B uses 135 minutes (2.25 hours) instead of 180. Choice D multiplies 12 by 5, assuming five 45-minute blocks fit in 3 hours rather than four. The unit conversion from hours to minutes (or to 45-minute blocks) is the trip-up step.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-14",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "Two trains leave the same station at the same time, traveling in opposite directions. One train moves at 55 mph and the other at 65 mph. After how many hours are the trains 360 miles apart?",
+    "choices": [
+      "1.5 hours",
+      "3 hours",
+      "4.5 hours",
+      "6 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "When objects move in opposite directions, their separation rate is the sum of their speeds: 55 + 65 = 120 mph. Time = distance / rate = 360 / 120 = 3 hours. Choice 1.5 hours doubles the combined rate to 240 mph (perhaps by also doubling each speed) and computes 360 / 240. Choice 4.5 hours misreads 65 as 25 (digit slip), uses 80 mph as the combined rate, and computes 360 / 80. Choice 6 hours averages the two speeds to get 60 mph instead of summing, then divides 360 / 60. The combined-rate setup is the load-bearing step.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-15",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "An inlet pipe can fill a tank in 6 hours. A drain pipe can empty the full tank in 9 hours. If both pipes are open and the tank starts empty, how long will it take to fill the tank?",
+    "choices": [
+      "3 hours",
+      "7.5 hours",
+      "15 hours",
+      "18 hours"
+    ],
+    "correct_index": 3,
+    "explanation": "Add the rates with the drain as negative: 1/6 - 1/9 = 3/18 - 2/18 = 1/18 tank per hour. Time to fill one tank = 18 hours. Choice A subtracts 6 from 9 and reports the difference. Choice B averages 6 and 9 to get 7.5, ignoring that the pipes work against each other. Choice C adds the two times (6 + 9) instead of combining rates. Work-rate problems require rates, not times, to be combined, with the sign matching whether each pipe fills or drains.",
+    "status": "draft"
+  },
+  {
+    "external_key": "AR-WP-NEW-16",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 5,
+    "stem": "$1,000 is deposited in an account earning 5% interest compounded annually. How much interest is earned after 2 years?",
+    "choices": [
+      "$100.00",
+      "$102.50",
+      "$105.00",
+      "$110.25"
+    ],
+    "correct_index": 1,
+    "explanation": "Compound balance after 2 years: 1000 x (1.05)^2 = 1000 x 1.1025 = $1,102.50. Interest earned is 1102.50 - 1000 = $102.50. Choice A applies simple interest (1000 x 0.05 x 2), missing the compounding bump. Choice C reports only the first year's interest (1000 x 0.05). Choice D reports the multiplier 1.1025 scaled to $110.25, mistakenly using a $1,000 principal at 10.25% per year for one year, or forgetting to subtract the original principal from a slightly mis-scaled balance. Compound interest answers are always slightly above the simple-interest figure for the same period.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-1",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "If x + 7 = 15, what is the value of x?",
+    "choices": [
+      "7",
+      "8",
+      "22",
+      "9"
+    ],
+    "correct_index": 1,
+    "explanation": "Isolate x by subtracting 7 from both sides: x + 7 - 7 = 15 - 7, which gives x = 8. Choice 22 is the sign-error trap that comes from adding 7 to 15 instead of subtracting. Choice 7 is the constant on the left side rather than the variable's value. Choice 9 results from subtracting 6 instead of 7. The inverse operation of addition is subtraction, so a positive constant added to x must be subtracted to undo it.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-2",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "If x - 9 = 4, what is x?",
+    "choices": [
+      "-5",
+      "5",
+      "13",
+      "36"
+    ],
+    "correct_index": 2,
+    "explanation": "Add 9 to both sides to isolate x: x - 9 + 9 = 4 + 9, which gives x = 13. Choice -5 is the sign-error trap from subtracting 9 from 4 instead of adding. Choice 5 reverses the direction by computing 9 - 4. Choice 36 comes from multiplying 9 and 4 instead of using inverse operations. Subtraction of a positive constant is undone by addition of that same constant on both sides.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-3",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "If 6x = 42, what is x?",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "36"
+    ],
+    "correct_index": 1,
+    "explanation": "Divide both sides by 6 to isolate x: 6x / 6 = 42 / 6, which gives x = 7. Choice 6 is the coefficient itself, not the solution value of the variable. Choice 8 results from a division error treating 42 as 48 in the head. Choice 36 comes from subtracting 6 from 42 instead of dividing, an inverted-operation trap. Multiplication of x by a coefficient is undone by dividing both sides by that coefficient, not by subtracting it from both sides.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-4",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "If 4x + 3 = 19, what is x?",
+    "choices": [
+      "4",
+      "5.5",
+      "16",
+      "22"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 3 from both sides to clear the constant: 4x + 3 - 3 = 19 - 3, which gives 4x = 16. Then divide both sides by 4: x = 4. Choice 16 is the intermediate value of 4x reported instead of x. Choice 22 adds 3 to 19 instead of subtracting, a sign-error on transposition. Choice 5.5 comes from dividing 22 by 4 after that same transposition error. The order matters: undo addition first, then undo multiplication, because the coefficient binds tighter to the variable.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-5",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "If 5x - 2 = 23, what is x?",
+    "choices": [
+      "4.2",
+      "5",
+      "21",
+      "25"
+    ],
+    "correct_index": 1,
+    "explanation": "Add 2 to both sides: 5x = 25. Then divide by 5: x = 5. Choice 25 is the intermediate value of 5x reported as the answer instead of x. Choice 21 comes from subtracting 2 from 23 instead of adding, a sign-error trap. Choice 4.2 results from dividing 21 by 5 after the same transposition error. A negative constant on the variable side must be added to both sides, then the coefficient must be divided out.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-6",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "If x/3 + 4 = 9, what is x?",
+    "choices": [
+      "5",
+      "13",
+      "15",
+      "39"
+    ],
+    "correct_index": 2,
+    "explanation": "Subtract 4 from both sides: x/3 = 5. Then multiply both sides by 3: x = 15. Choice 5 is the intermediate value of x/3 reported instead of x. Choice 13 comes from adding 4 to 9 instead of subtracting, a sign-error on transposition. Choice 39 results from multiplying 13 by 3 after the same transposition error. Division by a constant is undone by multiplying both sides by that constant after the addition is cleared.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-7",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If 3(x - 2) = 18, what is x?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "20"
+    ],
+    "correct_index": 2,
+    "explanation": "Distribute the 3: 3x - 6 = 18. Add 6 to both sides: 3x = 24. Divide by 3: x = 8. Choice 4 comes from subtracting 6 from both sides instead of adding, yielding 3x = 12 and then x = 4. Choice 6 drops the constant entirely after distributing and divides 18 by 3, ignoring the -6 term. Choice 20 reports the value of 3x - 4 by skipping the divide step (3x = 24, then 24 - 4). Both terms inside the parentheses must be multiplied by the factor outside, and the -6 must be moved to the right side by adding.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-8",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If -2x + 9 = 1, what is x?",
+    "choices": [
+      "-4",
+      "4",
+      "5",
+      "-5"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtract 9 from both sides: -2x = -8. Divide by -2: x = 4. Choice -4 is the sign-error trap from dividing -8 by 2 instead of -2, or from forgetting that negative divided by negative is positive. Choice 5 comes from adding 9 to 1 instead of subtracting and then dividing by 2. Choice -5 compounds both errors. When the variable has a negative coefficient, the final division by that negative must flip the sign of the result.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-9",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If 4(2x + 1) = 28, what is x?",
+    "choices": [
+      "3",
+      "3.375",
+      "13.5",
+      "27"
+    ],
+    "correct_index": 0,
+    "explanation": "Distribute the 4: 8x + 4 = 28. Subtract 4 from both sides: 8x = 24. Divide by 8: x = 3. Choice 13.5 comes from dropping the 4 entirely on the left side (writing 2x + 1 = 28), then solving 2x = 27 to get x = 13.5. Choice 3.375 results from 8x + 1 = 28: the student multiplies 2x by 4 but leaves the 1 unmultiplied, then solves 8x = 27 to get x = 3.375. Choice 27 is the intermediate value 28 - 1, reported before dividing. The factor outside the parentheses must hit every term inside.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-10",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If 5 - 3x = -7, what is x?",
+    "choices": [
+      "-4",
+      "4",
+      "-2/3",
+      "2/3"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtract 5 from both sides: -3x = -12. Divide by -3: x = 4. Choice -4 is the sign-error trap from dividing -12 by 3 instead of -3, ignoring that a negative divided by a negative yields positive. Choice -2/3 comes from adding 5 to -7 to get -2 then dividing by 3, a transposition error. Choice 2/3 compounds the same transposition with the sign-flip. Negative coefficients on the variable demand careful tracking of signs through the final division.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-11",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "If 7x - 4 = 3x + 12, what is x?",
+    "choices": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtract 3x from both sides: 4x - 4 = 12. Add 4 to both sides: 4x = 16. Divide by 4: x = 4. Choice 16 is the intermediate value of 4x reported instead of x. Choice 2 comes from a sign-error of subtracting 4 from 12 instead of adding, giving 4x = 8. Choice 8 results from 7x + 3x = 10x and then 10x = 16 with arithmetic slips on combining variable terms. Move variable terms to one side and constants to the other before isolating.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-12",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "If 2x + 5 = 17, what is the value of x\u00b2 - x?",
+    "choices": [
+      "6",
+      "12",
+      "30",
+      "42"
+    ],
+    "correct_index": 2,
+    "explanation": "Solve for x first: 2x + 5 = 17, so 2x = 12 and x = 6. Substitute into x\u00b2 - x: 6\u00b2 - 6 = 36 - 6 = 30. Choice 6 stops at x without computing the expression, a common premature-stop trap. Choice 12 is the intermediate value of 2x from the first equation. Choice 42 comes from x\u00b2 + x = 36 + 6, a sign-error on the second term. Always read what the question asks for after solving for the variable, not just the variable's value.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-13",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "If 5x + 8 = 2x - 7, what is x?",
+    "choices": [
+      "-5",
+      "5",
+      "-1/3",
+      "1/3"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 2x from both sides: 3x + 8 = -7. Subtract 8 from both sides: 3x = -15. Divide by 3: x = -5. Choice 5 is the sign-error trap from dropping the negative on the final division. Choice -1/3 comes from adding 8 to -7 to get 1 instead of subtracting, then dividing by 3 with a sign flip. Choice 1/3 compounds both arithmetic and sign errors. Negative results are common when variable coefficients on the left exceed those on the right but the constants pull the answer below zero.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-14",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "If x + y = 10 and x - y = 4, what is x?",
+    "choices": [
+      "3",
+      "6",
+      "7",
+      "14"
+    ],
+    "correct_index": 2,
+    "explanation": "Add the two equations: (x + y) + (x - y) = 10 + 4, which gives 2x = 14, so x = 7. Choice 14 is the intermediate value of 2x reported instead of x. Choice 3 is the value of y, not x: substituting x = 7 into x + y = 10 gives y = 3. Choice 6 comes from averaging the right-hand sides incorrectly. Adding the two equations cancels the y terms because their coefficients are opposites, leaving a single-variable equation in x.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-15",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 5,
+    "stem": "If -3x > 12, which describes x?",
+    "choices": [
+      "x > 4",
+      "x > -4",
+      "x < 4",
+      "x < -4"
+    ],
+    "correct_index": 3,
+    "explanation": "Divide both sides by -3. Dividing or multiplying an inequality by a negative number flips the direction of the inequality: x < -4. Choice x > -4 is the trap of dividing without flipping the sign, the most common inequality error. Choice x > 4 also fails to flip the sign and additionally drops the negative on -4. Choice x < 4 flips the sign but drops the negative result. Two operations must happen together when dividing an inequality by a negative: compute the numeric result and reverse the inequality symbol.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-AL-NEW-16",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 5,
+    "stem": "If 2x + y = 11 and x + y = 7, what is y?",
+    "choices": [
+      "3",
+      "4",
+      "7",
+      "11"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract the second equation from the first: (2x + y) - (x + y) = 11 - 7, which gives x = 4. Substitute x = 4 into x + y = 7: 4 + y = 7, so y = 3. Choice 4 is the value of x, not y, a common premature-stop trap when the question asks for the other variable. Choice 7 is the right-hand side of the second equation, not y. Choice 11 is the right-hand side of the first equation. Subtracting one equation from another with matching y coefficients eliminates y, but here it isolates x.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-1",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "Evaluate 3\u2074.",
+    "choices": [
+      "12",
+      "27",
+      "64",
+      "81"
+    ],
+    "correct_index": 3,
+    "explanation": "An exponent means repeated multiplication of the base. 3\u2074 equals 3 \u00b7 3 \u00b7 3 \u00b7 3, which equals 81. Choice 12 multiplies the base and exponent (3 \u00d7 4), a common shortcut error. Choice 27 stops one step early at 3\u00b3. Choice 64 confuses the base and exponent and computes 4\u00b3 instead. Only the full product 3 \u00b7 3 \u00b7 3 \u00b7 3 = 81 applies the definition of an exponent correctly.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-2",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "Simplify x\u00b3 \u00b7 x\u2074.",
+    "choices": [
+      "x\u2077",
+      "x\u00b9\u00b2",
+      "x",
+      "2x\u2077"
+    ],
+    "correct_index": 0,
+    "explanation": "When multiplying powers with the same base, add the exponents. x\u00b3 \u00b7 x\u2074 becomes x^(3+4), which equals x\u2077. Choice x\u00b9\u00b2 multiplies the exponents instead of adding them, which is the rule for a power raised to a power, not multiplication. Choice x subtracts the exponents as if dividing. Choice 2x\u2077 incorrectly doubles the coefficient; the bases each have an implied coefficient of 1, and 1 \u00b7 1 stays 1.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-3",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "Evaluate 2\u2075.",
+    "choices": [
+      "10",
+      "16",
+      "25",
+      "32"
+    ],
+    "correct_index": 3,
+    "explanation": "2\u2075 means multiply 2 by itself five times: 2 \u00b7 2 \u00b7 2 \u00b7 2 \u00b7 2, which equals 32. Choice 10 multiplies the base by the exponent (2 \u00d7 5), which ignores the meaning of exponents. Choice 16 stops one factor short at 2\u2074. Choice 25 swaps the base and exponent and computes 5\u00b2. Working through each doubling, 2, 4, 8, 16, 32, confirms 32 is correct.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-4",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Simplify x\u2078 / x\u00b3.",
+    "choices": [
+      "x\u00b9\u00b9",
+      "x\u00b2\u2074",
+      "x\u2075",
+      "x\u2075/\u00b3"
+    ],
+    "correct_index": 2,
+    "explanation": "When dividing powers with the same base, subtract the exponents. x\u2078 / x\u00b3 becomes x^(8-3), which equals x\u2075. Choice x\u00b9\u00b9 adds the exponents, which is the rule for multiplication, not division. Choice x\u00b2\u2074 multiplies the exponents, which applies to a power of a power. Choice x\u2075/\u00b3 treats the exponents as a fraction left over after subtraction, mixing rules. Subtracting exponents during same-base division produces x\u2075.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-5",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Simplify (x\u00b3)\u2074.",
+    "choices": [
+      "x\u2077",
+      "x\u00b9\u00b2",
+      "x\u2078\u00b9",
+      "x\u2076\u2074"
+    ],
+    "correct_index": 1,
+    "explanation": "When raising a power to a power, multiply the exponents. (x\u00b3)\u2074 becomes x^(3\u00b74), which equals x\u00b9\u00b2. Choice x\u2077 adds the exponents, which is the rule for multiplying same-base expressions, not nesting. Choice x\u2078\u00b9 raises 3 to the fourth power and treats that as the exponent. Choice x\u2076\u2074 raises 4 to the third power. Multiplying the two exponents directly gives x\u00b9\u00b2.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-6",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Rewrite x\u207b\u00b3 with a positive exponent.",
+    "choices": [
+      "1/x\u00b3",
+      "-x\u00b3",
+      "-3x",
+      "1/(-x\u00b3)"
+    ],
+    "correct_index": 0,
+    "explanation": "A negative exponent means take the reciprocal of the base with a positive exponent. x\u207b\u00b3 equals 1/x\u00b3. Choice -x\u00b3 treats the negative exponent as a negative sign on the result, which confuses two different operations. Choice -3x multiplies the base by the exponent. Choice 1/(-x\u00b3) puts the negative on the base itself, which would only happen if the base were written as (-x). The rule converts the negative exponent into a positive exponent in the denominator.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-7",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Simplify (y\u00b2)\u2075.",
+    "choices": [
+      "y\u2077",
+      "y\u00b9\u2070",
+      "y\u00b2\u2075",
+      "y\u00b3\u00b2"
+    ],
+    "correct_index": 1,
+    "explanation": "When raising a power to a power, multiply the exponents. (y\u00b2)\u2075 becomes y^(2\u00b75), which equals y\u00b9\u2070. Choice y\u2077 adds the exponents, which is the rule for multiplying same-base terms, not nesting. Choice y\u00b2\u2075 squares the outer exponent and uses that as the result. Choice y\u00b3\u00b2 evaluates 2\u2075 and treats that as the exponent. The correct move is to multiply 2 and 5 to get y\u00b9\u2070.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-8",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify (2x\u00b3)\u00b2.",
+    "choices": [
+      "2x\u2076",
+      "4x\u2075",
+      "4x\u2076",
+      "4x\u2079"
+    ],
+    "correct_index": 2,
+    "explanation": "When an exponent applies to a product, distribute it to each factor. (2x\u00b3)\u00b2 becomes 2\u00b2 \u00b7 (x\u00b3)\u00b2, which equals 4 \u00b7 x\u2076, or 4x\u2076. Choice 2x\u2076 squares the variable part but forgets to square the coefficient. Choice 4x\u2075 squares the coefficient but adds exponents instead of multiplying them. Choice 4x\u2079 raises the inside exponent to the outside power instead of multiplying. The product 4x\u2076 applies both the coefficient and exponent rules.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-9",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Expand (x + 3)(x + 4).",
+    "choices": [
+      "x\u00b2 + 12",
+      "2x + 7",
+      "x\u00b2 + 7x + 7",
+      "x\u00b2 + 7x + 12"
+    ],
+    "correct_index": 3,
+    "explanation": "Use FOIL to expand: first x \u00b7 x = x\u00b2, outer x \u00b7 4 = 4x, inner 3 \u00b7 x = 3x, last 3 \u00b7 4 = 12. Combine like terms 4x + 3x to get 7x. The product is x\u00b2 + 7x + 12. Choice x\u00b2 + 12 multiplies only the first and last terms and skips the middle. Choice 2x + 7 adds the binomials instead of multiplying. Choice x\u00b2 + 7x + 7 forgets to multiply the constants and uses 3 + 4 instead of 3 \u00b7 4.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-10",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify (xy\u00b2)\u00b3.",
+    "choices": [
+      "xy\u2076",
+      "x\u00b3y\u2075",
+      "x\u00b3y\u2076",
+      "x\u00b3y\u2078"
+    ],
+    "correct_index": 2,
+    "explanation": "Distribute the exponent across each factor in the product, multiplying exponents when raising a power to a power. (xy\u00b2)\u00b3 becomes x\u00b3 \u00b7 (y\u00b2)\u00b3, which equals x\u00b3y\u2076. Choice xy\u2076 raises only y to the third power and leaves x with exponent 1. Choice x\u00b3y\u2075 adds exponents 2 and 3 instead of multiplying. Choice x\u00b3y\u2078 raises 2 to the third power and treats that as the exponent of y. The product rule cubes each factor.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-11",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify x\u2075 \u00b7 x\u207b\u00b2.",
+    "choices": [
+      "x\u2077",
+      "x\u00b3",
+      "x\u207b\u00b9\u2070",
+      "1/x\u00b3"
+    ],
+    "correct_index": 1,
+    "explanation": "When multiplying powers with the same base, add the exponents, including negatives. x\u2075 \u00b7 x\u207b\u00b2 becomes x^(5 + (-2)), which equals x\u00b3. Choice x\u2077 adds 5 and 2 as if both were positive, ignoring the negative sign. Choice x\u207b\u00b9\u2070 multiplies the exponents instead of adding them. Choice 1/x\u00b3 flips the result to the denominator, which would apply only if the final exponent were negative. The sum 5 + (-2) = 3 keeps the answer in the numerator.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-12",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Expand (x - 2)(x + 5).",
+    "choices": [
+      "x\u00b2 - 10",
+      "x\u00b2 - 3x - 10",
+      "x\u00b2 + 3x + 10",
+      "x\u00b2 + 3x - 10"
+    ],
+    "correct_index": 3,
+    "explanation": "FOIL: first x \u00b7 x = x\u00b2, outer x \u00b7 5 = 5x, inner -2 \u00b7 x = -2x, last -2 \u00b7 5 = -10. Combine 5x and -2x to get 3x. The result is x\u00b2 + 3x - 10. Choice x\u00b2 - 10 skips the middle terms. Choice x\u00b2 - 3x - 10 reverses the sign on the middle term, a common error from subtracting instead of adding 5x and -2x. Choice x\u00b2 + 3x + 10 keeps the constant positive, forgetting that a positive times a negative is negative.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-13",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Factor x\u00b2 + 7x + 10.",
+    "choices": [
+      "(x + 1)(x + 10)",
+      "(x + 2)(x + 5)",
+      "(x + 3)(x + 4)",
+      "(x - 2)(x - 5)"
+    ],
+    "correct_index": 1,
+    "explanation": "Find two numbers that multiply to 10 and add to 7. The pair 2 and 5 works because 2 \u00b7 5 = 10 and 2 + 5 = 7, so the factors are (x + 2)(x + 5). Choice (x + 1)(x + 10) multiplies to 10 but adds to 11. Choice (x + 3)(x + 4) adds to 7 but multiplies to 12. Choice (x - 2)(x - 5) multiplies to 10 but adds to -7, flipping the sign on the middle term.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-14",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Factor x\u00b2 - x - 12.",
+    "choices": [
+      "(x - 4)(x + 3)",
+      "(x + 4)(x - 3)",
+      "(x - 4)(x - 3)",
+      "(x + 6)(x - 2)"
+    ],
+    "correct_index": 0,
+    "explanation": "Find two numbers that multiply to -12 and add to -1. The pair -4 and 3 works because -4 \u00b7 3 = -12 and -4 + 3 = -1, so the factors are (x - 4)(x + 3). Choice (x + 4)(x - 3) multiplies to -12 but adds to 1, the wrong sign on the middle term. Choice (x - 4)(x - 3) multiplies to 12, not -12. Choice (x + 6)(x - 2) multiplies to -12 but adds to 4. Sign placement matters because the constant is negative.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-15",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Simplify ((x\u00b2)\u00b3)\u00b2.",
+    "choices": [
+      "x\u2077",
+      "x\u2078",
+      "x\u00b9\u00b2",
+      "x\u2076\u2074"
+    ],
+    "correct_index": 2,
+    "explanation": "Apply the power of a power rule from the inside out, multiplying exponents at each step. (x\u00b2)\u00b3 becomes x\u2076. Then (x\u2076)\u00b2 becomes x^(6\u00b72), which equals x\u00b9\u00b2. Choice x\u2077 adds the three exponents 2 + 3 + 2 instead of multiplying. Choice x\u2078 multiplies 2 \u00b7 4, treating the outer 2 as applying to the inner 2. Choice x\u2076\u2074 evaluates 2\u2076 and treats that as the exponent. Multiplying 2 \u00b7 3 \u00b7 2 gives 12.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-16",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Factor x\u00b2 + 10x + 25.",
+    "choices": [
+      "(x + 5)\u00b2",
+      "(x - 5)\u00b2",
+      "(x + 5)(x - 5)",
+      "(x + 25)(x + 1)"
+    ],
+    "correct_index": 0,
+    "explanation": "Look for two numbers that multiply to 25 and add to 10. The pair 5 and 5 works, so the factors are (x + 5)(x + 5), which equals (x + 5)\u00b2. This is a perfect square trinomial. Choice (x - 5)\u00b2 expands to x\u00b2 - 10x + 25, with the wrong sign on the middle term. Choice (x + 5)(x - 5) is the difference of squares, which would produce x\u00b2 - 25 and no middle term. Choice (x + 25)(x + 1) multiplies to 25 but adds to 26.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-17",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "Evaluate 7\u2070.",
+    "choices": [
+      "0",
+      "1",
+      "7",
+      "undefined"
+    ],
+    "correct_index": 1,
+    "explanation": "Any nonzero number raised to the zero power equals 1, so 7\u2070 equals 1. The rule follows from the division pattern: 7^n / 7^n equals 1, but using the exponent rule it also equals 7^(n-n), which equals 7\u2070. Choice 0 confuses the exponent with the result. Choice 7 keeps the base when the exponent is zero, mixing it up with the rule for an exponent of 1. Choice undefined applies only to 0\u2070, not to a nonzero base.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-18",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "Factor x\u00b2 - 49.",
+    "choices": [
+      "(x - 7)\u00b2",
+      "(x + 7)\u00b2",
+      "(x + 7)(x - 7)",
+      "(x - 49)(x + 1)"
+    ],
+    "correct_index": 2,
+    "explanation": "The expression is a difference of squares because 49 equals 7\u00b2 and there is no middle term. The pattern a\u00b2 - b\u00b2 factors as (a + b)(a - b), so x\u00b2 - 49 becomes (x + 7)(x - 7). Choice (x - 7)\u00b2 expands to x\u00b2 - 14x + 49, which has a middle term and the wrong constant sign. Choice (x + 7)\u00b2 expands to x\u00b2 + 14x + 49. Choice (x - 49)(x + 1) multiplies to -49 but produces x\u00b2 - 48x - 49, not a clean difference of squares.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-19",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "Which expression equals x^(1/2)?",
+    "choices": [
+      "x/2",
+      "\u221ax",
+      "1/x\u00b2",
+      "2/x"
+    ],
+    "correct_index": 1,
+    "explanation": "A fractional exponent of 1/2 means take the square root of the base, so x^(1/2) equals \u221ax. The general rule states x^(1/n) equals the nth root of x. Choice x/2 divides the base by 2, treating the exponent as a regular fraction multiplier. Choice 1/x\u00b2 applies the negative-exponent rule and squares the base, mixing two unrelated operations. Choice 2/x flips the fraction and uses the base as a denominator. Only the square root matches the fractional exponent definition.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-EP-NEW-20",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "Evaluate 25^(1/2).",
+    "choices": [
+      "5",
+      "12.5",
+      "50",
+      "625"
+    ],
+    "correct_index": 0,
+    "explanation": "A fractional exponent of 1/2 means take the square root of the base, so 25^(1/2) equals \u221a25, which equals 5. Choice 12.5 multiplies 25 by 1/2, treating the exponent as a regular multiplier instead of a root. Choice 50 multiplies 25 by 2, applying the reciprocal of the exponent as a multiplier. Choice 625 squares 25, which would happen with an exponent of 2 rather than 1/2. The square root, not multiplication, defines a 1/2 power.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-1",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "1/2 + 1/4 = ?",
+    "choices": [
+      "2/6",
+      "3/4",
+      "1/6",
+      "2/4"
+    ],
+    "correct_index": 1,
+    "explanation": "Rewrite 1/2 with a denominator of 4 so both fractions share a common base: 1/2 equals 2/4. Now add the numerators while holding the denominator fixed: 2/4 plus 1/4 equals 3/4. The result is already in lowest terms because 3 and 4 share no common factor. The choice 2/6 comes from adding numerators and denominators separately, which is not how fraction addition works. The choice 2/4 is the converted form of 1/2 alone, with no addition performed. The choice 1/6 reflects a similar add-everything error applied with the wrong sign.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-2",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "0.3 + 0.4 = ?",
+    "choices": [
+      "0.07",
+      "0.7",
+      "0.34",
+      "7"
+    ],
+    "correct_index": 1,
+    "explanation": "Line up the decimal points and add tenths to tenths. Three tenths plus four tenths equals seven tenths, written 0.7. Since each addend has only one digit after the decimal point, the sum also has one digit after the decimal point. The choice 0.07 places the sum two decimal places to the right, treating 0.3 and 0.4 as hundredths rather than tenths. The choice 0.34 concatenates the digits without performing any addition. The choice 7 drops the decimal point entirely and gives a whole number. Only 0.7 preserves the place value of the original addends.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-3",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "What is 1/2 of 0.5?",
+    "choices": [
+      "0.25",
+      "1.0",
+      "0.5",
+      "0.1"
+    ],
+    "correct_index": 0,
+    "explanation": "Taking half of a number means multiplying by 1/2, which equals 0.5. Compute 0.5 times 0.5: multiply 5 by 5 to get 25, then place two decimal places in the product because each factor has one decimal place. The result is 0.25. As a fraction, 1/2 times 1/2 equals 1/4, which converts to 0.25 and confirms the answer. The choice 1.0 results from adding 0.5 to itself instead of halving. The choice 0.5 leaves the value unchanged, ignoring the halving step. The choice 0.1 misplaces the decimal point.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-4",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "1/3 + 1/4 = ?",
+    "choices": [
+      "2/7",
+      "7/12",
+      "1/7",
+      "2/12"
+    ],
+    "correct_index": 1,
+    "explanation": "The denominators 3 and 4 share no common factors, so the least common denominator is their product, 12. Convert each fraction: 1/3 becomes 4/12 because 1 times 4 is 4 and 3 times 4 is 12, while 1/4 becomes 3/12 because 1 times 3 is 3 and 4 times 3 is 12. Add the numerators: 4 plus 3 equals 7. The sum is 7/12, already in lowest terms since 7 is prime. The choice 2/7 comes from adding numerators and denominators directly. The choice 1/7 reflects a similar error with a subtraction step. The choice 2/12 ignores the conversion step.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-5",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "2/3 \u00d7 3/5 = ? (lowest terms)",
+    "choices": [
+      "6/15",
+      "5/8",
+      "2/5",
+      "1/5"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply numerators across and denominators across without finding a common denominator, since this is multiplication. 2 times 3 is 6, and 3 times 5 is 15, giving 6/15. Reduce by dividing both by their greatest common factor, 3: 6 divided by 3 is 2, and 15 divided by 3 is 5. The result is 2/5. The choice 6/15 is the unsimplified product, which fails the lowest-terms requirement stated in the stem. The choice 5/8 comes from adding numerators and denominators instead of multiplying. The choice 1/5 reflects an over-reduction error that drops too much from the numerator.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-6",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "Write 0.6 as a fraction in lowest terms.",
+    "choices": [
+      "6/10",
+      "3/5",
+      "2/3",
+      "6/100"
+    ],
+    "correct_index": 1,
+    "explanation": "The decimal 0.6 means six tenths, written as the fraction 6/10. To put this in lowest terms, find the greatest common factor of 6 and 10, which is 2. Divide both top and bottom by 2: 6 over 10 becomes 3 over 5. Since 3 and 5 share no common factor, 3/5 is fully reduced. The choice 6/10 is correct in value but not in lowest terms, so it fails the stated requirement. The choice 2/3 is close in decimal value, 0.666..., but not equal to 0.6 exactly. The choice 6/100 misreads the place value, treating 0.6 as six hundredths.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-7",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "5/8 \u2212 1/4 = ?",
+    "choices": [
+      "4/4",
+      "3/8",
+      "1/2",
+      "4/8"
+    ],
+    "correct_index": 1,
+    "explanation": "Find a common denominator before subtracting. The denominators 8 and 4 share 4 as a factor, and 8 is a multiple of 4, so use 8 as the common denominator. Convert 1/4 to eighths by multiplying top and bottom by 2: 1/4 equals 2/8. Subtract: 5/8 minus 2/8 equals 3/8. Since 3 and 8 share no common factor, 3/8 is already in lowest terms. The choice 4/4 comes from subtracting numerators and denominators separately. The choice 1/2 reflects a guess at a familiar fraction near the answer. The choice 4/8 forgets the conversion and subtracts 1 from 5 directly.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-8",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "2 1/3 + 1 1/4 = ?",
+    "choices": [
+      "3 2/7",
+      "3 7/12",
+      "3 1/12",
+      "4 7/12"
+    ],
+    "correct_index": 1,
+    "explanation": "Add whole parts first: 2 plus 1 equals 3. For the fractional parts, use the common denominator 12: 1/3 becomes 4/12, and 1/4 becomes 3/12. Add 4/12 plus 3/12 to get 7/12. Combine the whole part with the fractional part: 3 and 7/12. The choice 3 2/7 adds numerators and denominators of the fractional parts. The choice 3 1/12 subtracts instead of adds. The choice 4 7/12 adds an extra whole unit that does not arise here.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-9",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Express 1/3 as a decimal.",
+    "choices": [
+      "0.3",
+      "0.33",
+      "0.333...",
+      "0.13"
+    ],
+    "correct_index": 2,
+    "explanation": "Perform long division of 1 by 3. The first digit after the decimal point is 3, with remainder 1. The next digit is again 3, with remainder 1, and the pattern continues forever. The result is 0.333..., a repeating decimal, often written with a bar over the 3. The choice 0.3 truncates after one place and loses accuracy. The choice 0.33 truncates after two places and is still short of the exact value, falling between 0.33 and 0.34. The choice 0.13 misorders the digits and gives a much smaller number. Only 0.333... captures the full repeating pattern.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-10",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Which fraction is largest: 3/5, 5/8, 7/12, 2/3?",
+    "choices": [
+      "3/5",
+      "5/8",
+      "7/12",
+      "2/3"
+    ],
+    "correct_index": 3,
+    "explanation": "Convert each to a decimal for direct comparison, rounded to three places. 3 divided by 5 equals 0.600 exactly. 5 divided by 8 equals 0.625 exactly. 7 divided by 12 equals 0.583 with a 3 repeating. 2 divided by 3 equals 0.666 with a 6 repeating. Even without exact decimals, the comparison is clear: 0.666... is larger than 0.625, which is larger than 0.600, which is larger than 0.583. So 2/3 is the largest fraction. Comparing numerators or denominators alone fails because both differ across the four fractions. Decimal conversion gives a single common scale that makes the ordering immediate.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-11",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "3 1/2 \u2212 1 3/4 = ?",
+    "choices": [
+      "2 1/4",
+      "1 3/4",
+      "1 1/4",
+      "2 3/4"
+    ],
+    "correct_index": 1,
+    "explanation": "Convert both to improper fractions to avoid borrowing errors. 3 1/2 becomes 7/2, which equals 14/4. 1 3/4 stays as 7/4. Subtract: 14/4 minus 7/4 equals 7/4. Convert back to a mixed number: 7 divided by 4 is 1 with remainder 3, giving 1 3/4. The choice 2 1/4 results from subtracting whole parts and fractional parts separately without borrowing. The choice 1 1/4 drops half a unit somewhere in the borrow. The choice 2 3/4 reverses the operation.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-12",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 4,
+    "stem": "(3/4) \u00f7 (2/3) = ?",
+    "choices": [
+      "1/2",
+      "6/12",
+      "1 1/8",
+      "2/4"
+    ],
+    "correct_index": 2,
+    "explanation": "Dividing by a fraction means multiplying by its reciprocal, the flip-and-multiply rule. Flip the divisor 2/3 to 3/2, then multiply: 3/4 times 3/2. Multiply numerators across to get 9, and multiply denominators across to get 8, giving 9/8. Convert 9/8 to a mixed number: 9 divided by 8 is 1 with remainder 1, so the result is 1 1/8. The choice 1/2 comes from multiplying 3/4 by 2/3 without flipping. The choice 6/12 also reflects multiplying instead of dividing. The choice 2/4 simplifies the same multiplication error. Only flipping and multiplying gives 1 1/8.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-13",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 4,
+    "stem": "What is 1/2 of 3/4 of 8?",
+    "choices": [
+      "3",
+      "6",
+      "4",
+      "12"
+    ],
+    "correct_index": 0,
+    "explanation": "Work from the inside out. Three-fourths of 8 is 6, since 8 divided by 4 is 2 and 2 times 3 is 6. Then one-half of 6 is 3. Equivalently, multiply across: 1/2 times 3/4 times 8 equals 24/8 equals 3. The choice 6 stops after the first step and forgets to take half. The choice 4 reflects taking half of 8 first and ignoring the 3/4. The choice 12 adds the steps instead of multiplying them.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-14",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 4,
+    "stem": "(1/2 + 1/3) \u00f7 (1/6) = ?",
+    "choices": [
+      "5/36",
+      "5",
+      "1/5",
+      "6/5"
+    ],
+    "correct_index": 1,
+    "explanation": "Add inside the parentheses first using a common denominator of 6, since 6 is the least common multiple of 2 and 3. Convert: 1/2 becomes 3/6, and 1/3 becomes 2/6. Add the numerators to get 5/6. Now divide by 1/6 by flipping the divisor and multiplying: 5/6 times 6/1 equals 30/6, which simplifies to 5. The choice 5/36 multiplies by 1/6 instead of dividing. The choice 1/5 reverses the final operation entirely. The choice 6/5 inverts the answer. Only flipping the divisor and multiplying delivers 5.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-15",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 4,
+    "stem": "(2/5) \u00f7 (4/15) = ? Express as a mixed number in lowest terms.",
+    "choices": [
+      "8/75",
+      "1 1/2",
+      "4/3",
+      "2/3"
+    ],
+    "correct_index": 1,
+    "explanation": "Invert the divisor and multiply: 2/5 times 15/4 equals 30/20. Reduce by dividing top and bottom by 10: 30 over 20 becomes 3 over 2. Convert to a mixed number as the stem requests: 3/2 equals 1 1/2. The choice 8/75 multiplies the original fractions without flipping the divisor. The choice 4/3 comes from inverting the wrong fraction, flipping 2/5 to 5/2 and then misreducing. The choice 2/3 inverts the final answer. Only 1 1/2 is the simplified quotient in the requested mixed-number form.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-16",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 5,
+    "stem": "Which fraction equals 0.1818... (the 18 repeats)?",
+    "choices": [
+      "18/100",
+      "9/50",
+      "2/11",
+      "1/9"
+    ],
+    "correct_index": 2,
+    "explanation": "Use the standard rule for repeating decimals: a two-digit repeating block becomes that block over 99. So 0.1818... equals 18/99. Reduce by dividing top and bottom by the greatest common factor, 9: 18 over 99 becomes 2 over 11. Verify by long division: 2 divided by 11 produces 0.181818..., confirming the match. The choice 18/100 equals 0.18 exactly, with no repeating tail. The choice 9/50 also equals 0.18 exactly and terminates. The choice 1/9 equals 0.111..., a different repeating pattern. Only 2/11 produces the 0.18 repeat shown in the stem.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-17",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 5,
+    "stem": "Which fraction has a terminating decimal expansion?",
+    "choices": [
+      "1/3",
+      "1/6",
+      "1/7",
+      "1/8"
+    ],
+    "correct_index": 3,
+    "explanation": "A fraction in lowest terms terminates exactly when its denominator factors into only 2s and 5s. Check each denominator. 3 has a factor of 3, so 1/3 repeats. 6 equals 2 times 3, so 1/6 repeats. 7 is prime and not 2 or 5, so 1/7 repeats. 8 equals 2 times 2 times 2, with only 2s, so 1/8 terminates. Indeed 1/8 equals 0.125 exactly. Only denominators built from 2s and 5s alone produce terminating decimals.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-FR-NEW-18",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 5,
+    "stem": "Compare 7/16 and 0.4375.",
+    "choices": [
+      "7/16 > 0.4375",
+      "7/16 < 0.4375",
+      "7/16 = 0.4375",
+      "Cannot be determined"
+    ],
+    "correct_index": 2,
+    "explanation": "Convert 7/16 to a decimal by dividing 7 by 16. Long division gives 0.4375 exactly, with no remainder, since 16 equals 2 to the fourth power and produces a terminating decimal. The two values are identical. The choices claiming inequality assume a rounding gap that does not exist here. The choice for cannot be determined is incorrect because exact conversion is always possible when the denominator is a power of 2. Only the equality statement matches the conversion.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-1",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "A rectangular rug measures 8 ft by 5 ft. What is its area?",
+    "choices": [
+      "13 sq ft",
+      "26 sq ft",
+      "40 sq ft",
+      "45 sq ft"
+    ],
+    "correct_index": 2,
+    "explanation": "Area of a rectangle is length times width: 8 times 5 equals 40 square feet. Choice 13 sq ft adds the sides instead of multiplying. Choice 26 sq ft computes the perimeter (2 times 8 plus 2 times 5) and confuses it with area. Choice 45 sq ft is 9 times 5, a multiplication slip. Area always carries square units; perimeter carries linear units. When the question asks how much surface a rug covers, you want square feet, which signals area, not perimeter.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-2",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "What is the circumference of a circle with radius 6 in? Use pi equals 3.14.",
+    "choices": [
+      "18.84 in",
+      "28.26 in",
+      "37.68 in",
+      "113.04 in"
+    ],
+    "correct_index": 2,
+    "explanation": "Circumference equals 2 pi r: 2 times 3.14 times 6 equals 37.68 inches. Choice 18.84 in uses pi r and forgets the factor of 2. Choice 28.26 in is pi times r squared divided by 4, a garbled mix of formulas. Choice 113.04 in is the area pi r squared (3.14 times 36), which is square inches, not linear inches. Circumference is a distance around the circle, so the units must be linear inches, not square inches.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-3",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "A square patio has sides of 7 ft. What is its perimeter?",
+    "choices": [
+      "14 ft",
+      "21 ft",
+      "28 ft",
+      "49 ft"
+    ],
+    "correct_index": 2,
+    "explanation": "Perimeter of a square is 4 times the side length: 4 times 7 equals 28 feet. Choice 14 ft doubles the side as if the figure were a line segment with two ends. Choice 21 ft uses three sides only. Choice 49 ft is 7 squared, which gives the area in square feet, not the perimeter in linear feet. Perimeter measures the fence-line distance around the patio, so it must use linear units and count all four equal sides.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-4",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "A triangle has a base of 10 cm and a height of 6 cm. What is its area?",
+    "choices": [
+      "16 sq cm",
+      "30 sq cm",
+      "60 sq cm",
+      "120 sq cm"
+    ],
+    "correct_index": 1,
+    "explanation": "Area of a triangle is one-half base times height: 0.5 times 10 times 6 equals 30 square centimeters. Choice 16 sq cm adds base and height instead of multiplying. Choice 60 sq cm forgets the one-half factor and treats the triangle like a rectangle. Choice 120 sq cm doubles that error. The one-half factor exists because a triangle is exactly half of a rectangle with the same base and height, so any triangle area must include it.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-5",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "A right triangle has legs of 6 in and 8 in. What is the length of the hypotenuse?",
+    "choices": [
+      "10 in",
+      "100 in",
+      "14 in",
+      "48 in"
+    ],
+    "correct_index": 0,
+    "explanation": "Using the Pythagorean theorem, a squared plus b squared equals c squared: 36 plus 64 equals 100, so c equals the square root of 100, which is 10 inches. Choice 100 in forgets to take the square root at the end and reports c squared as if it were c. Choice 14 in adds the legs directly (6 + 8 = 14), skipping the theorem entirely. Choice 48 in multiplies the legs (6 x 8). The 6-8-10 triple is a scaled 3-4-5; recognizing it on sight saves time. The hypotenuse is always the side opposite the right angle and is the longest side.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-6",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "What is the surface area of a cube with edge length 4 in?",
+    "choices": [
+      "16 sq in",
+      "64 sq in",
+      "96 sq in",
+      "384 sq in"
+    ],
+    "correct_index": 2,
+    "explanation": "A cube has 6 identical square faces. Each face has area 4 squared, which is 16 square inches. Total surface area is 6 times 16, which equals 96 square inches. Choice 16 sq in gives only one face. Choice 64 sq in is 4 cubed, the volume in cubic inches. Choice 384 sq in is 6 times 64, mixing volume with the face count. Surface area uses square units; volume uses cubic units. Watching units catches the volume-vs-surface confusion fast.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-7",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A rectangular shipping crate is 5 ft long, 3 ft wide, and 2 ft tall. What is its volume?",
+    "choices": [
+      "10 cubic ft",
+      "15 cubic ft",
+      "30 cubic ft",
+      "62 cubic ft"
+    ],
+    "correct_index": 2,
+    "explanation": "Volume of a rectangular prism is length times width times height: 5 times 3 times 2 equals 30 cubic feet. Choice 10 cubic ft multiplies only length and height, omitting width. Choice 15 cubic ft multiplies length and width and forgets the height entirely, a common error when people stop at base area. Choice 62 cubic ft is the surface area 2(lw + lh + wh), not the volume. Volume needs all three dimensions and uses cubic units.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-8",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A soda can is shaped like a cylinder with radius 2 in and height 5 in. What is its volume? Use pi equals 3.14.",
+    "choices": [
+      "31.4 cubic in",
+      "62.8 cubic in",
+      "78.5 cubic in",
+      "125.6 cubic in"
+    ],
+    "correct_index": 1,
+    "explanation": "Volume of a cylinder is pi r squared times height: 3.14 times 4 times 5 equals 62.8 cubic inches. Choice 31.4 cubic in uses pi r h, forgetting to square the radius. Choice 78.5 cubic in is pi r squared times r, using radius instead of height. Choice 125.6 cubic in doubles the answer, likely from using diameter (4) where radius (2) belongs and then squaring. Always square the radius in pi r squared and keep diameter and radius separated.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-9",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A right triangle has one leg of 5 m and a hypotenuse of 13 m. What is the length of the other leg?",
+    "choices": [
+      "8 m",
+      "12 m",
+      "14 m",
+      "18 m"
+    ],
+    "correct_index": 1,
+    "explanation": "Use a squared plus b squared equals c squared, where c is the hypotenuse: 5 squared plus b squared equals 13 squared, so 25 plus b squared equals 169. Then b squared equals 144, and b equals 12 meters. Choice 8 m subtracts 5 from 13 as if the sides were collinear. Choice 14 m adds them. Choice 18 m is 13 plus 5. This is the 5-12-13 triple. The hypotenuse is the longest side and always sits opposite the right angle.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-10",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "What is the area of a circle with diameter 10 cm? Use pi equals 3.14.",
+    "choices": [
+      "15.7 sq cm",
+      "31.4 sq cm",
+      "78.5 sq cm",
+      "314 sq cm"
+    ],
+    "correct_index": 2,
+    "explanation": "First convert diameter to radius: 10 divided by 2 equals 5 cm. Area is pi r squared: 3.14 times 25 equals 78.5 square centimeters. Choice 15.7 sq cm is half the circumference, mixing formulas. Choice 31.4 sq cm is the circumference using the diameter (pi times d). Choice 314 sq cm squares the diameter instead of the radius (3.14 times 100). Whenever a circle problem gives diameter, halve it before using pi r squared so the radius is squared, not the diameter.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-11",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "Two triangles are similar. The smaller has sides 4, 6, and 8 in. The longest side of the larger triangle is 20 in. What is the length of its shortest side?",
+    "choices": [
+      "10 in",
+      "12 in",
+      "15 in",
+      "16 in"
+    ],
+    "correct_index": 0,
+    "explanation": "Similar triangles have a constant scale factor. The longest side scales from 8 to 20, so the factor is 20 divided by 8, which equals 2.5. The shortest side scales from 4 in, so 4 times 2.5 equals 10 inches. Choice 12 in scales the middle side (6 times 2). Choice 15 in scales the middle side by 2.5 (correct factor, wrong side). Choice 16 in doubles the shortest side using a factor of 2 from a wrong pairing. Always pair corresponding sides before computing the scale factor.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-12",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "A garden is a rectangle 12 ft by 6 ft with a semicircle attached to one short end. What is the total area? Use pi equals 3.14.",
+    "choices": [
+      "72 sq ft",
+      "86.13 sq ft",
+      "100.26 sq ft",
+      "172.5 sq ft"
+    ],
+    "correct_index": 1,
+    "explanation": "The rectangle area is 12 times 6, which equals 72 square feet. The semicircle sits on the short end, so its diameter is 6 ft and its radius is 3 ft. A full circle would be pi times 9, or 28.26; half of that is 14.13 square feet. Total area is 72 plus 14.13, which equals 86.13 square feet. Choice 72 sq ft skips the semicircle. Choice 100.26 sq ft adds a full circle instead of a half. Choice 172.5 sq ft uses the wrong radius (6 instead of 3) and forgets to halve.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-13",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "A circle has radius 12 in. What is the length of an arc that subtends a central angle of 90 degrees? Use pi equals 3.14.",
+    "choices": [
+      "9.42 in",
+      "18.84 in",
+      "37.68 in",
+      "75.36 in"
+    ],
+    "correct_index": 1,
+    "explanation": "A 90-degree central angle is one-fourth of the full 360-degree circle, so the arc is one-fourth of the circumference. Circumference is 2 pi r: 2 times 3.14 times 12 equals 75.36 inches. One-fourth of 75.36 is 18.84 inches. Choice 9.42 in halves the radius then takes one-fourth, double-shrinking. Choice 37.68 in is half the circumference (a semicircle, not a quarter). Choice 75.36 in is the full circumference. Match the angle fraction to the full 360 before slicing the circumference.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-14",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "What is the surface area of a closed cylinder with radius 3 ft and height 7 ft? Use pi equals 3.14.",
+    "choices": [
+      "131.88 sq ft",
+      "188.4 sq ft",
+      "197.82 sq ft",
+      "263.76 sq ft"
+    ],
+    "correct_index": 1,
+    "explanation": "Surface area of a closed cylinder is 2 pi r squared plus 2 pi r h. The two circular ends are 2 times 3.14 times 9, which equals 56.52 square feet. The side is 2 times 3.14 times 3 times 7, which equals 131.88 square feet. Total is 56.52 plus 131.88, which equals 188.4 square feet. Choice 131.88 sq ft is the lateral side only and forgets the two ends. Choice 197.82 sq ft is the volume pi r squared h (3.14 times 9 times 7), wrong formula entirely. Choice 263.76 sq ft double-counts the side.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-15",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "Two parallel lines are cut by a transversal. One of the angles formed measures 65 degrees. What is the measure of its co-interior (same-side interior) angle?",
+    "choices": [
+      "25 degrees",
+      "65 degrees",
+      "115 degrees",
+      "130 degrees"
+    ],
+    "correct_index": 2,
+    "explanation": "When parallel lines are cut by a transversal, co-interior (same-side interior) angles are supplementary, so they sum to 180 degrees. 180 minus 65 equals 115 degrees. Choice 25 degrees uses 90 minus 65, treating the angles as complementary, which would only apply if they summed to a right angle. Choice 65 degrees treats them as corresponding or alternate-interior angles, which are equal but not the relationship asked for. Choice 130 degrees doubles 65, a slip. Same-side interior pairs are always supplementary when the lines are parallel.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-GE-NEW-16",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "In a 30-60-90 triangle, the shorter leg is 5 in. What is the length of the hypotenuse?",
+    "choices": [
+      "5 in",
+      "10 in",
+      "5 times square root of 3 in",
+      "10 times square root of 3 in"
+    ],
+    "correct_index": 1,
+    "explanation": "In a 30-60-90 right triangle, the side ratios are 1 to square root of 3 to 2, corresponding to the sides opposite the 30, 60, and 90 degree angles. The shorter leg (opposite 30) is 5 in, so the hypotenuse (opposite 90) is 2 times the shorter leg, which is 10 inches. Choice 5 in repeats the shorter leg. Choice 5 times square root of 3 in is the longer leg (opposite 60), not the hypotenuse. Choice 10 times square root of 3 in doubles the longer leg, mixing two ratios. The hypotenuse is always opposite the right angle and is twice the shorter leg in a 30-60-90.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-1",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "Which of the following is a prime number?",
+    "choices": [
+      "9",
+      "15",
+      "17",
+      "21"
+    ],
+    "correct_index": 2,
+    "explanation": "A prime number has exactly two positive divisors: 1 and itself. Check each: 9 = 3 \u00d7 3, 15 = 3 \u00d7 5, and 21 = 3 \u00d7 7, so each has divisors beyond 1 and itself. Only 17 has no positive divisors except 1 and 17, making it prime. A common trap is forgetting that small odd composites like 9, 15, and 21 are not prime just because they look prime at a glance. Another trap is treating 1 as prime, but 1 has only one divisor and is excluded from the primes by definition.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-2",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "What is the value of |-12|?",
+    "choices": [
+      "-12",
+      "0",
+      "12",
+      "144"
+    ],
+    "correct_index": 2,
+    "explanation": "Absolute value gives the distance of a number from zero on the number line, which is never negative. The distance from -12 to 0 is 12 units, so |-12| = 12. A common trap is leaving the negative sign in place and answering -12, but absolute value strips the sign. Another trap is squaring the number to get 144, which confuses |x| with x\u00b2. A third trap is collapsing the bars to 0, which only applies when the input itself is 0.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-3",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "Is 84 divisible by 4?",
+    "choices": [
+      "Yes, because 84 \u00f7 4 = 21 with no remainder",
+      "No, because 84 is odd",
+      "No, because 84 is not a multiple of 8",
+      "No, because 8 + 4 = 12 is not divisible by 4"
+    ],
+    "correct_index": 0,
+    "explanation": "A number is divisible by 4 when its last two digits form a number divisible by 4. The last two digits of 84 are 84, and 84 \u00f7 4 = 21 with no remainder, so 84 is divisible by 4. The first No choice is wrong on a factual level: 84 ends in 4 and is even, not odd. The second No choice confuses divisibility by 4 with divisibility by 8 (every multiple of 8 is a multiple of 4, but not the reverse). The third No choice applies the digit-sum rule, which belongs to 3 and 9, not 4. Only the Yes choice supplies a valid verdict and reason.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-4",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "What is the smallest prime factor of 30?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "correct_index": 1,
+    "explanation": "The prime factors of 30 are 2, 3, and 5, since 30 = 2 \u00d7 3 \u00d7 5. The smallest of these is 2. A common trap is selecting 1, but 1 is not prime and is excluded from any prime factorization. Another trap is forgetting that 2 is prime because it is the only even prime, leading test-takers to skip it and pick 3. The smallest prime factor of any even number is always 2.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-5",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "What is the greatest common factor (GCF) of 18 and 24?",
+    "choices": [
+      "2",
+      "3",
+      "6",
+      "72"
+    ],
+    "correct_index": 2,
+    "explanation": "Factor each number: 18 = 2 \u00d7 3\u00b2, and 24 = 2\u00b3 \u00d7 3. The GCF takes the lowest power of each shared prime: 2\u00b9 \u00d7 3\u00b9 = 6. The trap of selecting 72 confuses GCF with LCM, since 72 is the least common multiple of 18 and 24. The traps of 2 and 3 stop after finding one shared prime instead of multiplying all shared primes together. The GCF is always less than or equal to the smaller of the two numbers.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-6",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "What is the least common multiple (LCM) of 4 and 6?",
+    "choices": [
+      "2",
+      "10",
+      "12",
+      "24"
+    ],
+    "correct_index": 2,
+    "explanation": "Factor each: 4 = 2\u00b2 and 6 = 2 \u00d7 3. The LCM takes the highest power of every prime present: 2\u00b2 \u00d7 3 = 12. The trap of selecting 2 confuses LCM with GCF, since 2 is the greatest common factor of 4 and 6. The trap of 24 multiplies the two numbers directly, which only gives the LCM when the numbers share no common factor. The trap of 10 adds the numbers instead of building from their prime factorizations.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-7",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "How many positive factors does 12 have?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_index": 3,
+    "explanation": "List all positive integers that divide 12 evenly: 1, 2, 3, 4, 6, and 12. That is 6 factors total. A common trap is excluding 1 or 12 from the count and answering 4, but every positive integer counts itself and 1 among its factors. Another trap is counting only the prime factors (2 and 3) and answering 2 or stopping at 3. A shortcut: 12 = 2\u00b2 \u00d7 3\u00b9, so factor count = (2 + 1)(1 + 1) = 6.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-8",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "Which of the following is a perfect square?",
+    "choices": [
+      "18",
+      "24",
+      "36",
+      "50"
+    ],
+    "correct_index": 2,
+    "explanation": "A perfect square is an integer that equals some integer squared. Check each: \u221a18 \u2248 4.24, \u221a24 \u2248 4.90, \u221a36 = 6 exactly, and \u221a50 \u2248 7.07. Only 36 = 6\u00b2 is a perfect square. A common trap is picking 50 because it ends in 0 and looks clean, but perfect squares can end in 0, 1, 4, 5, 6, or 9, never in 2, 3, 7, or 8. Another trap is picking 18 or 24 because they are even, but evenness alone does not make a perfect square.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-9",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "Which of the following is NOT a prime number?",
+    "choices": [
+      "2",
+      "11",
+      "27",
+      "31"
+    ],
+    "correct_index": 2,
+    "explanation": "Check each for divisors beyond 1 and itself: 11 and 31 have none, so both are prime. 27 = 3 \u00d7 9 = 3\u00b3, which is composite. The number 2 is prime because its only divisors are 1 and 2, even though it is even. A common trap is picking 2 because being even feels like it should disqualify a prime, but 2 is the only even prime. Another trap is missing that 27 is 3\u00b3, since 27 is odd and looks prime to test-takers who only screen for even composites.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-10",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "What is the greatest common factor (GCF) of 12, 18, and 30?",
+    "choices": [
+      "2",
+      "3",
+      "6",
+      "60"
+    ],
+    "correct_index": 2,
+    "explanation": "Factor each: 12 = 2\u00b2 \u00d7 3, 18 = 2 \u00d7 3\u00b2, and 30 = 2 \u00d7 3 \u00d7 5. The GCF uses the lowest power of each prime shared by all three: 2\u00b9 \u00d7 3\u00b9 = 6. The trap of 60 confuses GCF with LCM. The traps of 2 and 3 stop after finding one shared prime instead of multiplying every prime shared across all three numbers. Note that 5 appears only in 30, so it cannot be part of the GCF; a prime must be in every number to count.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-11",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "What is the least common multiple (LCM) of 3, 4, and 6?",
+    "choices": [
+      "1",
+      "12",
+      "24",
+      "72"
+    ],
+    "correct_index": 1,
+    "explanation": "Factor each: 3 = 3, 4 = 2\u00b2, and 6 = 2 \u00d7 3. The LCM takes the highest power of every prime that appears in any number: 2\u00b2 \u00d7 3 = 12. The trap of 72 multiplies all three numbers together, which overcounts shared primes. The trap of 24 doubles 12 unnecessarily, perhaps by forgetting that 6 is already covered when both 3 and 4 are present. The trap of 1 confuses LCM with GCF, since the GCF of 3, 4, and 6 is 1.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-12",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "Is 432 divisible by 9?",
+    "choices": [
+      "No, because 432 is not a multiple of 6",
+      "Yes, because 4 + 3 + 2 = 9",
+      "No, because 432 is not divisible by 3",
+      "No, because 432 does not end in 0 or 9"
+    ],
+    "correct_index": 1,
+    "explanation": "A number is divisible by 9 when the sum of its digits is divisible by 9. For 432, the digit sum is 4 + 3 + 2 = 9, which is divisible by 9, so 432 is divisible by 9 (432 \u00f7 9 = 48). The first No fails on its premise: 432 is in fact a multiple of 6 (432 \u00f7 6 = 72), and divisibility by 6 is not the test for 9. The second No claims 432 is not divisible by 3, which is false; any multiple of 9 is also a multiple of 3. The last-digit rule belongs to 5 or 10, not 9.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-13",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "The product of an even integer and an odd integer is always:",
+    "choices": [
+      "Odd",
+      "Even",
+      "Prime",
+      "A perfect square"
+    ],
+    "correct_index": 1,
+    "explanation": "Any even integer contains a factor of 2. When that even integer is multiplied by an odd integer, the factor of 2 remains in the product, so the product is even. For example, 4 \u00d7 3 = 12 and 6 \u00d7 5 = 30. The trap of selecting odd misapplies the rule that odd \u00d7 odd = odd to a mixed case. The trap of prime ignores that even products greater than 2 cannot be prime, since they have 2 as a factor. The trap of perfect square assumes structure that the rule does not guarantee.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-14",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "The sum of two odd integers is always:",
+    "choices": [
+      "Odd",
+      "Even",
+      "Prime",
+      "Divisible by 4"
+    ],
+    "correct_index": 1,
+    "explanation": "Write any odd integer as 2k + 1 for some integer k. The sum of two odd integers is (2a + 1) + (2b + 1) = 2a + 2b + 2 = 2(a + b + 1), which is a multiple of 2 and therefore even. Examples: 3 + 5 = 8 and 7 + 9 = 16. The trap of odd extends the wrong intuition that odd inputs yield odd outputs under addition. The trap of divisible by 4 holds only sometimes (3 + 5 = 8 works, but 3 + 7 = 10 does not). The trap of prime fails for almost every example.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-15",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "A trainer wants to split 24 boys and 36 girls into the largest possible teams, with each team having the same number of boys and the same number of girls. How many teams can she make?",
+    "choices": [
+      "6",
+      "12",
+      "60",
+      "72"
+    ],
+    "correct_index": 1,
+    "explanation": "Largest equal groups across two counts requires the greatest common factor. Factor: 24 = 2\u00b3 \u00d7 3 and 36 = 2\u00b2 \u00d7 3\u00b2. GCF = 2\u00b2 \u00d7 3 = 12, so she can make 12 teams, each with 24 \u00f7 12 = 2 boys and 36 \u00f7 12 = 3 girls. The trap of 60 adds the totals (24 + 36) and treats the result as the team count. The trap of 72 reaches for the LCM, which solves repeat-cycle problems, not equal-grouping problems. The trap of 6 stops at a shared factor without checking whether a larger one exists.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-16",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "Bus A leaves every 15 minutes and Bus B leaves every 20 minutes. If both buses leave together at 8:00 AM, when will they next leave together?",
+    "choices": [
+      "8:35 AM",
+      "8:45 AM",
+      "9:00 AM",
+      "10:00 AM"
+    ],
+    "correct_index": 2,
+    "explanation": "The next shared departure time is the least common multiple of the two intervals. Factor: 15 = 3 \u00d7 5 and 20 = 2\u00b2 \u00d7 5. LCM = 2\u00b2 \u00d7 3 \u00d7 5 = 60, so the buses next leave together after 60 minutes, at 9:00 AM. The trap of 8:35 AM adds the two intervals (15 + 20 = 35). The trap of 10:00 AM multiplies the intervals (15 \u00d7 20 = 300 minutes), which overcounts the shared factor of 5. The trap of 8:45 AM picks the next multiple of 15 without checking 20.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-17",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "Simplify \u221a72.",
+    "choices": [
+      "6\u221a2",
+      "2\u221a18",
+      "8\u221a3",
+      "12\u221a2"
+    ],
+    "correct_index": 0,
+    "explanation": "Find the largest perfect-square factor of 72. Factor: 72 = 36 \u00d7 2, and 36 is a perfect square. So \u221a72 = \u221a36 \u00d7 \u221a2 = 6\u221a2. The trap of 2\u221a18 pulls out only a partial factor (4) and leaves a square inside the radical, since 18 = 9 \u00d7 2 still has a perfect-square factor. The trap of 8\u221a3 mismatches the factorization (8\u00b2 \u00d7 3 = 192, not 72). The trap of 12\u221a2 doubles the correct coefficient, perhaps from confusing 72 with 144. Always extract the largest perfect square.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-18",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "Simplify \u221a50.",
+    "choices": [
+      "2\u221a5",
+      "5\u221a2",
+      "10\u221a5",
+      "25\u221a2"
+    ],
+    "correct_index": 1,
+    "explanation": "Find the largest perfect-square factor of 50. Factor: 50 = 25 \u00d7 2, and 25 is a perfect square. So \u221a50 = \u221a25 \u00d7 \u221a2 = 5\u221a2. The trap of 2\u221a5 swaps the coefficient and the radicand, since (2\u221a5)\u00b2 = 20, not 50. The trap of 25\u221a2 fails to take the square root of 25 and leaves it as a coefficient. The trap of 10\u221a5 picks the wrong factor pair (10 \u00d7 5) where neither 10 nor 5 is a perfect square. The check: (5\u221a2)\u00b2 = 25 \u00d7 2 = 50.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-19",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 5,
+    "stem": "What is the prime factorization of 60?",
+    "choices": [
+      "2 \u00d7 30",
+      "2\u00b2 \u00d7 15",
+      "2\u00b2 \u00d7 3 \u00d7 5",
+      "2 \u00d7 3 \u00d7 10"
+    ],
+    "correct_index": 2,
+    "explanation": "A prime factorization expresses a number as a product of prime numbers only. Break 60 down: 60 = 2 \u00d7 30 = 2 \u00d7 2 \u00d7 15 = 2 \u00d7 2 \u00d7 3 \u00d7 5 = 2\u00b2 \u00d7 3 \u00d7 5. Every factor in the final form is prime. The trap of 2 \u00d7 30 stops too early, since 30 is composite. The trap of 2\u00b2 \u00d7 15 also stops short, since 15 = 3 \u00d7 5 is composite. The trap of 2 \u00d7 3 \u00d7 10 includes 10, which is composite (10 = 2 \u00d7 5). A prime factorization is complete only when every factor is prime.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-20",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 5,
+    "stem": "How many positive divisors does 36 have?",
+    "choices": [
+      "6",
+      "8",
+      "9",
+      "12"
+    ],
+    "correct_index": 2,
+    "explanation": "Use the divisor-count formula: if n = p^a \u00d7 q^b, then n has (a + 1)(b + 1) positive divisors. Factor: 36 = 2\u00b2 \u00d7 3\u00b2. Divisor count = (2 + 1)(2 + 1) = 9. Verify by listing: 1, 2, 3, 4, 6, 9, 12, 18, 36, which is 9 divisors. The trap of 6 counts only some divisors or confuses divisors with prime factors. The trap of 8 forgets that 36 itself counts as a divisor. The trap of 12 may come from adding the exponents (2 + 2) and multiplying by 3, which is not the correct rule.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-21",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "Three consecutive integers have a sum of 72. What is the middle integer?",
+    "choices": [
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "correct_index": 2,
+    "explanation": "Let the three consecutive integers be n - 1, n, and n + 1, where n is the middle integer. Their sum is (n - 1) + n + (n + 1) = 3n. Set 3n = 72, so n = 24. Check: 23 + 24 + 25 = 72. A useful shortcut for any odd count of consecutive integers: the sum divided by the count gives the middle term directly. The trap of 23 picks the smallest of the three. The trap of 25 picks the largest. The trap of 22 may come from dividing 72 by 3 and then subtracting 2 by mistake.",
+    "status": "draft"
+  },
+  {
+    "external_key": "MK-NP-NEW-22",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "What is the sum of the first five prime numbers?",
+    "choices": [
+      "18",
+      "26",
+      "28",
+      "39"
+    ],
+    "correct_index": 2,
+    "explanation": "List the first five primes in order: 2, 3, 5, 7, 11. Remember that 1 is not prime and 2 is the only even prime. Sum them: 2 + 3 + 5 + 7 + 11 = 28. The trap of 26 counts 9 as prime and lists 2, 3, 5, 7, 9, missing that 9 = 3 x 3. The trap of 39 skips 2 by assuming all primes are odd, listing 3, 5, 7, 11, 13. The trap of 18 counts 1 as prime and lists 1, 2, 3, 5, 7, stopping one prime short of the real first five.",
+    "status": "draft"
+  }
+]

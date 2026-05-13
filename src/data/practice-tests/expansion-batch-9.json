@@ -1,0 +1,1810 @@
+[
+  {
+    "external_key": "PC-ATP-NEW-1",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"Recycling at home is one of the easiest ways to help the environment. Sorting paper, plastic, and glass takes only a few minutes each week, but it keeps tons of waste out of landfills. Most cities now provide curbside bins at no extra cost, so the equipment is already there. The habit costs nothing and the payoff for local landfills is real. Every household should make recycling part of its weekly routine.\"\n\nThe author's primary purpose in writing this passage is to:",
+    "choices": [
+      "explain how recycling facilities sort materials",
+      "encourage readers to recycle at home",
+      "compare landfills in different cities",
+      "describe the history of curbside recycling"
+    ],
+    "correct_index": 1,
+    "explanation": "The closing sentence states the goal directly: \"Every household should make recycling part of its weekly routine.\" That imperative, paired with \"easiest ways to help\" and \"only a few minutes,\" marks the piece as persuasion. Choice B names that purpose. Choice A picks a technical angle the passage never enters, since sorting is mentioned only as effort the reader spends. Choice C invents a city-to-city comparison that does not appear. Choice D adds historical framing the passage does not provide. Only B fits the directive tone.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-2",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"The new community park is a wonderful addition to our neighborhood. The walking trails are beautiful, the playground equipment is top quality, and the open lawns give families a perfect place to gather on weekends. The benches along the main path are already filled most evenings, and the new splash pad has been a favorite with children all summer. Residents should be proud of what their tax dollars built.\"\n\nThe author's tone is best described as:",
+    "choices": [
+      "skeptical",
+      "enthusiastic",
+      "indifferent",
+      "regretful"
+    ],
+    "correct_index": 1,
+    "explanation": "Every adjective in the passage is praise: \"wonderful,\" \"beautiful,\" \"top quality,\" \"perfect,\" \"proud.\" That stacked positive language signals enthusiasm rather than measured approval. Choice B names that tone. Choice A reverses the polarity, treating celebration as doubt. Choice C ignores the value-loaded vocabulary, which is the opposite of indifferent. Choice D imports regret the passage never expresses, since the author closes with pride rather than loss. Only B fits the consistently warm and celebratory language.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-3",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"Reminder: All employees must complete the annual safety training by the end of the month. The training takes about thirty minutes and can be accessed through the company portal using your standard login credentials. Once complete, your manager will be notified automatically and no paperwork needs to be submitted. Failure to complete the training on time may delay payroll processing for the following pay period.\"\n\nThe author's primary purpose in this memo is to:",
+    "choices": [
+      "praise employees for completing training quickly",
+      "inform employees of a deadline and how to meet it",
+      "argue that safety training should be made shorter",
+      "warn that the company is being investigated"
+    ],
+    "correct_index": 1,
+    "explanation": "The memo opens with \"Reminder\" and then lists the deadline, the time required, and how to access the training. That structure is straight notification. Choice B captures the informative purpose. Choice A invents praise the memo never offers, since employees are being prompted rather than thanked. Choice C reverses the position, since the author treats the thirty-minute length as a small ask, not a problem. Choice D escalates the routine consequence \"may delay payroll\" into an investigation the memo does not mention.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-4",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"I bought this blender expecting another disappointment. The last three I tried in this price range either burned out within weeks or struggled with anything thicker than a smoothie. Instead, this one crushed ice on the first try, cleaned up in under a minute, and has run every morning for six months without complaint. The motor still sounds the way it did out of the box. For under fifty dollars, I would call that a small miracle.\"\n\nThe author's attitude toward the blender is best described as:",
+    "choices": [
+      "pleasantly surprised",
+      "wildly obsessive",
+      "mildly disappointed",
+      "coolly analytical"
+    ],
+    "correct_index": 0,
+    "explanation": "The author primes the reader for letdown with \"expecting another disappointment,\" then flips with \"Instead, it crushed ice on the first try\" and \"a small miracle.\" That contrast signals surprise paired with approval. Choice A names that exact attitude. Choice B overshoots into obsession, when the praise is measured rather than fanatical. Choice C contradicts the passage by holding onto disappointment the author explicitly drops. Choice D undersells the warmth in \"small miracle,\" treating an excited review as a neutral analysis.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-5",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"The proposal claims the new policy will save the city millions, but the numbers come from an internal estimate, not an independent audit. The same office that drafted the proposal also produced the financial projections that support it. Supporters keep citing the savings figure as if it were settled fact, and last week a council member quoted it on the radio without noting its source. Until outside reviewers verify the math, residents deserve to ask harder questions.\"\n\nThe author's tone is best described as:",
+    "choices": [
+      "openly hostile",
+      "skeptical",
+      "fully convinced",
+      "uninterested"
+    ],
+    "correct_index": 1,
+    "explanation": "The author flags the source of the numbers as \"an internal estimate, not an independent audit\" and calls for \"outside reviewers\" before treating the figure as fact. That is doubt grounded in process, not attack. Choice B names that skeptical tone. Choice A overshoots into hostility, since the author proposes verification rather than condemnation. Choice C reverses the position by treating the savings claim as accepted, which the passage refuses to do. Choice D ignores the active push for harder questions, which is the opposite of disengaged.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-6",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"To: All staff. The fourth-floor copier will be out of service Thursday afternoon for scheduled maintenance. Please route urgent print jobs to the second-floor machine, which has the same drivers installed and accepts the same employee codes. Bulk print jobs over two hundred pages should be moved to Wednesday afternoon if possible. Service should be restored by 5 p.m., and a follow-up email will confirm the copier is available again. Thank you for your patience.\"\n\nThe author's primary purpose in writing this memo is to:",
+    "choices": [
+      "apologize for repeated equipment failures",
+      "notify staff of a brief outage and offer a workaround",
+      "warn that the copier may be permanently removed",
+      "request feedback on copier performance"
+    ],
+    "correct_index": 1,
+    "explanation": "The memo states the outage window, offers the second-floor machine as an alternative, and gives a restoration time. Choice B captures that notify-and-redirect purpose. Choice A reads \"thank you for your patience\" as apology for repeated problems, but the passage describes one scheduled maintenance event, not a pattern of failures. Choice C invents a permanent removal the memo never raises. Choice D imports a feedback request that does not appear; nothing in the memo asks staff to evaluate the copier.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-7",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"Walking the same streets where my grandmother sold flowers seventy years ago, I notice that the shopfronts have all changed. The bakery on the corner is now a phone store, and the small market where she bought her ribbon closed before I was born. Yet the morning light hitting the brick still looks the way it did in her old photographs, and the cracked sidewalk near the church has not been repoured. Cities do not stay the same, yet small details survive longer than we expect.\"\n\nThe author's tone is best described as:",
+    "choices": [
+      "nostalgic",
+      "bitter",
+      "scientific",
+      "alarmed"
+    ],
+    "correct_index": 0,
+    "explanation": "The author anchors the present in the past with \"my grandmother sold flowers seventy years ago,\" \"her old photographs,\" and \"small details survive.\" That looking-back warmth is nostalgia rather than complaint. Choice A names that tone. Choice B imports bitterness the passage never voices, since the author notes loss without resentment. Choice C ignores the personal, memory-laden vocabulary, which is the opposite of detached observation. Choice D escalates a gentle reflection into alarm, when the closing sentence is consoling rather than urgent.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-8",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"Early results from the trial suggest the new treatment may reduce recovery time by about two days. The sample was small, follow-up was short, and outcomes varied across age groups. Patients over sixty saw the largest effect, while younger participants showed almost none. The researchers themselves stop short of recommending broader use, and the published paper calls for a multi-site replication before any guidelines are updated. The findings are promising enough to justify a larger study, though not yet to change clinical practice.\"\n\nThe author's tone is best described as:",
+    "choices": [
+      "cautiously optimistic",
+      "enthusiastic",
+      "dismissive",
+      "alarmed"
+    ],
+    "correct_index": 0,
+    "explanation": "The author balances hope with limits: \"promising enough to justify a larger study\" sits next to \"sample was small\" and \"not yet to change clinical practice.\" That paired structure is the signature of cautious optimism. Choice A names it. Choice B overshoots into enthusiasm, ignoring the qualifiers the author keeps inserting. Choice C reverses the position by treating the results as worth dismissing, when the passage explicitly calls them promising. Choice D imports alarm that nothing in the passage supports, since the framing is measured rather than worried.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-9",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"The mayor's plan to add bike lanes downtown is a reasonable start, even if it falls short of what the traffic studies recommended. The original review called for protected lanes on twelve streets; the approved plan funds only seven. Half a fix is still better than none, and the lanes that are being built happen to cover the most dangerous intersections, including the two with the highest crash counts in last year's report. Residents who wanted more should treat this as a foundation, not a finish line.\"\n\nThe author would most likely agree with which statement?",
+    "choices": [
+      "The plan is a disappointing failure that should be rejected.",
+      "The plan is an acceptable first step that needs to be expanded.",
+      "The plan is exactly the right size and does not need additional work.",
+      "The plan is irrelevant because traffic patterns will not change."
+    ],
+    "correct_index": 1,
+    "explanation": "The author calls the plan \"a reasonable start\" and tells residents to treat it as \"a foundation, not a finish line,\" which combines approval of the current step with a demand for more. Choice B captures both halves. Choice A reads the criticism as outright rejection, ignoring \"reasonable start\" and \"better than none.\" Choice C drops the call for expansion the author explicitly makes. Choice D invents fatalism about traffic that the passage never expresses, since the lanes are credited with covering the most dangerous intersections.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-10",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"Coastal communities have always rebuilt after storms. Generations of families have torn out drywall, replaced shingles, and put their lives back together more times than they care to count. What is new is the speed with which the same neighborhoods are being asked to rebuild again, sometimes twice in a single decade. Insurance maps are being redrawn quietly, premiums in flagged zones have doubled in five years, and the cost of staying is no longer just measured in lumber and shingles.\"\n\nThe author's primary purpose in writing this passage is to:",
+    "choices": [
+      "celebrate the resilience of coastal towns",
+      "raise concern about rising costs and risks of coastal rebuilding",
+      "explain how insurance maps are technically constructed",
+      "argue that coastal communities should be abandoned immediately"
+    ],
+    "correct_index": 1,
+    "explanation": "The author pivots on \"What is new is the speed\" and notes that \"the cost of staying is no longer just measured in lumber and shingles,\" which signals worry about a shifting situation. Choice B captures that concern. Choice A picks up the opening line about rebuilding but misses the warning that follows. Choice C invents a technical explanation the passage does not provide, since insurance maps are mentioned only as evidence. Choice D overshoots into a call for abandonment the author never makes, since the passage raises stakes without prescribing exit.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-11",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The latest software update promises faster load times, sharper graphics, and a redesigned interface that the company describes as a complete rethink of the workflow. Reviewers have been quick to call it a leap forward, and early demo videos have circulated widely. The benchmarks the company released cover load times and rendering speed, both of which are genuinely improved. Whether the new interface actually helps users finish tasks any faster is a separate question, and one the company has not chosen to answer with data.\"\n\nThe author's attitude toward the update is best described as:",
+    "choices": [
+      "openly cynical",
+      "skeptical",
+      "appreciative",
+      "indifferent"
+    ],
+    "correct_index": 1,
+    "explanation": "The author reports the marketing claims, notes the reviewer praise, then isolates a missing piece: \"a separate question, and one the company has not chosen to answer with data.\" That targeted doubt is skepticism. Choice B names it. Choice A overshoots into cynicism, which would imply the author assumes bad faith rather than asking for evidence. Choice C reverses the position by treating the author as approving, when the closing sentence withholds approval. Choice D ignores the pointed final clause, which is the opposite of disengaged.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-12",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The old library building is not beautiful in any conventional sense. Its bricks are dark, its windows are narrow, and the front steps slope at an angle no architect would defend today. But generations have walked those steps to find books they could not afford anywhere else, and that history sits in the walls more firmly than any renovation could.\"\n\nThe author's attitude toward the library is best described as:",
+    "choices": [
+      "admiring",
+      "appreciative",
+      "sentimental and uncritical",
+      "professionally detached"
+    ],
+    "correct_index": 1,
+    "explanation": "The author acknowledges the building's flaws plainly: \"not beautiful,\" \"dark,\" \"narrow,\" \"slope at an angle no architect would defend.\" The warmth arrives only in the closing pivot to what the building has meant for readers. That balance is appreciation, valuing the function and history without praising the form. Choice B fits. Choice A overshoots into admiration, which would treat the building itself as worthy of praise. Choice C drops the author's frank critique of the architecture. Choice D ignores the personal closing line about generations of readers.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-13",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 5,
+    "stem": "Read the passage below and answer the question.\n\n\"The committee's report concludes that the program has, on the whole, met its stated objectives. A closer reading of the appendix shows that two of those objectives were revised downward halfway through the review period. The remaining metrics are real, and the gains they describe are real, even if the bar they cleared is lower than the one originally set.\"\n\nThe author would most likely agree with which statement?",
+    "choices": [
+      "The program is a clear success and the report should be accepted as written.",
+      "The program produced genuine gains, but the report's headline claim overstates the result.",
+      "The program failed on every measure and the committee is hiding the truth.",
+      "The program's metrics are unimportant and should be ignored entirely."
+    ],
+    "correct_index": 1,
+    "explanation": "The author validates part of the report by calling \"the gains they describe\" real, then flags that \"two of those objectives were revised downward\" and the \"bar they cleared is lower than the one originally set.\" That is partial credit plus a caveat about the headline. Choice B captures both. Choice A drops the caveat the author insists on. Choice C escalates a calibration concern into total failure and concealment, which the passage does not support. Choice D dismisses the metrics the author explicitly affirms as real.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-ATP-NEW-14",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 5,
+    "stem": "Read the passage below and answer the question.\n\n\"Critics of the new arts grant point out, fairly, that the selection process favored applicants from a small number of established institutions. The committee has acknowledged the imbalance and promised changes for next cycle. None of that erases the fact that the funded projects, judged on their own merits, are among the strongest the program has produced in a decade.\"\n\nThe author's position is best described as:",
+    "choices": [
+      "fully defending the grant process against any criticism",
+      "rejecting the funded projects because of the flawed process",
+      "acknowledging the process flaw while still affirming the quality of the results",
+      "refusing to take any position on the outcome"
+    ],
+    "correct_index": 2,
+    "explanation": "The author concedes the critique with \"point out, fairly\" and notes the committee's promised changes, then pivots with \"None of that erases the fact\" to defend the projects on quality. That two-part move is precisely a process concession plus a results endorsement. Choice C names it. Choice A drops the concession the author openly makes. Choice B drops the endorsement the author insists on with \"strongest the program has produced in a decade.\" Choice D ignores the clear final position, since the author commits to a verdict rather than hedging.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-1",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "The Hoover Dam was completed in 1936 after five years of continuous construction. Located on the border between Nevada and Arizona, it stands 726 feet tall. The dam created Lake Mead, which is the largest reservoir in the United States by volume. During its construction, more than 21,000 workers were employed, and 96 of them died on the job. The dam generates approximately four billion kilowatt-hours of electricity each year, serving customers in three states. Originally called the Boulder Dam, it was renamed in 1947 to honor President Herbert Hoover, who had championed the project while serving as Secretary of Commerce.\n\nAccording to the passage, in what year was the Hoover Dam completed?",
+    "choices": [
+      "1931",
+      "1936",
+      "1947",
+      "1921"
+    ],
+    "correct_index": 1,
+    "explanation": "The first sentence states, \"The Hoover Dam was completed in 1936 after five years of continuous construction.\" Choice 1931 reflects when construction began (five years before 1936) but is not the completion year, an off-by-one trap on the five-year span. Choice 1947 is when the dam was renamed to honor Hoover, not when it was completed; it is a correct-but-wrong-question trap pulled from the closing sentence. Choice 1921 has no support in the passage; it is a plausible-looking distant date with no anchor in the text. Only 1936 directly matches the topic sentence and the completion question.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-2",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Honeybees communicate the location of food sources through a behavior called the waggle dance. A returning forager performs the dance on the vertical surface of the honeycomb, using a figure-eight pattern. The angle of the straight portion of the dance relative to vertical indicates the direction of the food source relative to the sun. The duration of the waggle phase signals the distance to the source. Karl von Frisch first decoded this behavior in the 1940s, work that earned him a Nobel Prize in 1973. Researchers have since confirmed that bees adjust the dance to account for the sun's movement across the sky.\n\nAccording to the passage, what is the name of the behavior bees use to communicate food location?",
+    "choices": [
+      "The figure-eight signal",
+      "The waggle dance",
+      "The forager pattern",
+      "The honeycomb dance"
+    ],
+    "correct_index": 1,
+    "explanation": "The opening sentence reads, \"Honeybees communicate the location of food sources through a behavior called the waggle dance.\" Choice \"figure-eight signal\" describes the dance's shape but is not its name. Choice \"forager pattern\" combines two real words from the passage (forager, pattern) into a label the passage never uses. Choice \"honeycomb dance\" trades on the location of the dance (the honeycomb) but is not what the behavior is called. Only \"waggle dance\" appears as the explicit name.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-3",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Solar panels convert sunlight directly into electricity using photovoltaic cells made primarily of silicon. The cells contain two layers of silicon that have been treated with different chemicals to give one layer a positive charge and the other a negative charge. When photons from sunlight strike the cells, they knock electrons loose, creating a flow of current. A single residential solar panel typically produces between 250 and 400 watts of power under ideal conditions. Most home installations use 20 to 30 panels arranged on a roof. The first practical silicon solar cell was developed at Bell Labs in 1954.\n\nAccording to the passage, what material are photovoltaic cells primarily made of?",
+    "choices": [
+      "Copper",
+      "Silicon",
+      "Aluminum",
+      "Carbon"
+    ],
+    "correct_index": 1,
+    "explanation": "The opening sentence states cells are \"made primarily of silicon.\" Copper is a common electrical material but the passage never mentions it; it is a plausible-sounding contradiction that readers might guess for anything electrical. Aluminum is similarly never named; it is a swap with another common conductor used in real-world wiring. Carbon is mentioned nowhere; it is included as a plausible chemistry-sounding distractor because of its broad role in materials science. Only silicon appears in the topic sentence as the primary material making up photovoltaic cells, so it is the single supported answer.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-4",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "The Pony Express was a mail delivery service that operated from April 1860 to October 1861. It used a relay of riders on horseback to carry letters between St. Joseph, Missouri, and Sacramento, California. The route covered approximately 1,900 miles and was usually completed in about 10 days. Riders changed horses every 10 to 15 miles at stations along the route, and they changed riders every 75 to 100 miles. The service ended just two days after the transcontinental telegraph line was completed, making the slower mail relay obsolete. Despite its short life, the Pony Express became a lasting symbol of the American West.\n\nAccording to the passage, when did the Pony Express begin operating?",
+    "choices": [
+      "October 1860",
+      "April 1861",
+      "April 1860",
+      "October 1861"
+    ],
+    "correct_index": 2,
+    "explanation": "The opening sentence states the service \"operated from April 1860 to October 1861,\" identifying April 1860 as the start date. Choice October 1860 is a swap of the end-of-service month into the start year, a deliberately mixed pair. Choice April 1861 is a swap of the start month into the end year, the mirror image of the previous trap. Choice October 1861 is the date the service ended, not when it began, a correct-but-wrong-question trap. Only April 1860 matches the start date given explicitly in the topic sentence of the passage.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-5",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Coffee plants thrive in a narrow band of climates near the equator known as the bean belt. Brazil leads the world in coffee production, growing roughly one-third of the global supply. The two commercially important species are arabica and robusta. Arabica beans, prized for their smoother flavor, account for about 60 percent of world production but require cooler temperatures and higher elevations. Robusta plants tolerate heat and lower altitudes, and they contain nearly twice the caffeine of arabica. Most premium specialty coffees are arabica. Vietnam is the largest producer of robusta, while Colombia specializes almost entirely in arabica.\n\nAccording to the passage, which country is the largest producer of robusta coffee?",
+    "choices": [
+      "Brazil",
+      "Colombia",
+      "Vietnam",
+      "Ethiopia"
+    ],
+    "correct_index": 2,
+    "explanation": "Near the end the passage states, \"Vietnam is the largest producer of robusta.\" Brazil leads in overall coffee production at roughly one-third of global supply, not specifically robusta, so it is a correct-but-wrong-question trap that confuses overall leadership with category leadership. Colombia specializes almost entirely in arabica, the opposite species, making it a plausible swap of roles between the two named producers. Ethiopia is never mentioned and is included as a coffee-knowledge distractor since it is widely associated with coffee origins. Only Vietnam is explicitly tied to robusta leadership in the passage.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-6",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "The human skeleton contains 206 bones in adulthood, but newborns are born with about 270. The difference is explained by the fusion of bones during growth, especially in the skull and spine. The longest bone in the body is the femur, located in the thigh, while the smallest is the stapes, found in the middle ear and measuring only about three millimeters. Bones serve several functions, including supporting the body, protecting organs, producing blood cells inside the marrow, and storing minerals such as calcium. Roughly half of all bones in the adult skeleton are located in the hands and feet.\n\nAccording to the passage, what is the smallest bone in the human body?",
+    "choices": [
+      "The femur",
+      "The stapes",
+      "A bone in the spine",
+      "A bone in the hand"
+    ],
+    "correct_index": 1,
+    "explanation": "The middle of the passage states, \"the smallest is the stapes, found in the middle ear.\" The femur is named as the longest bone, not the smallest, making it a swap-of-roles trap. \"A bone in the spine\" plays on the fusion detail mentioned earlier but the passage never names any spine bone as smallest. \"A bone in the hand\" exploits the closing detail that half of all bones are in hands and feet, an over-generalization. Only the stapes is identified as smallest.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-7",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Workplace ergonomics is the science of designing tasks and tools to fit the worker rather than forcing the worker to adapt. A properly configured office workstation places the top of the monitor at eye level, with the screen about an arm's length away. Chairs should support the lower back, and feet should rest flat on the floor or on a footrest. The keyboard should be positioned so that the elbows form roughly a 90-degree angle. Studies by the Occupational Safety and Health Administration show that ergonomic improvements can reduce repetitive strain injuries by up to 60 percent. Frequent short breaks further reduce fatigue.\n\nAccording to the passage, where should the top of a computer monitor be positioned?",
+    "choices": [
+      "At chin level",
+      "At eye level",
+      "Slightly above eye level",
+      "An arm's length below eye level"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states, \"the top of the monitor at eye level, with the screen about an arm's length away.\" \"Chin level\" is a plausible-sounding contradiction not in the text. \"Slightly above eye level\" is the kind of detail readers may guess but the passage gives exactly \"at eye level,\" not above it. \"An arm's length below eye level\" mashes together two true details (an arm's length away, eye level) into a false position. Only \"at eye level\" matches the passage.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-8",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Hurricanes are tropical storms that form over warm ocean waters near the equator. To be classified as a hurricane, a storm must produce sustained winds of at least 74 miles per hour. Storms are ranked on the Saffir-Simpson scale, which assigns a category from 1 through 5 based on wind speed. A Category 1 hurricane has winds between 74 and 95 miles per hour, while a Category 5 has sustained winds above 157 miles per hour. The Atlantic hurricane season officially runs from June 1 through November 30, with peak activity typically occurring in mid-September. Hurricanes are called typhoons in the western Pacific.\n\nAccording to the passage, what is the minimum sustained wind speed for a storm to be classified as a hurricane?",
+    "choices": [
+      "95 miles per hour",
+      "157 miles per hour",
+      "74 miles per hour",
+      "60 miles per hour"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states a storm \"must produce sustained winds of at least 74 miles per hour\" to be classified as a hurricane. 95 mph is the upper bound of Category 1 on the Saffir-Simpson scale, a correct-but-wrong-question trap pulled from the middle of the passage. 157 mph is the threshold for Category 5, the most severe rating, and represents the opposite extreme of the scale rather than the minimum. 60 mph is a plausible-sounding wind speed for tropical storms but the passage never gives that figure. Only 74 mph matches the stated minimum hurricane classification threshold.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-9",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "The Apollo program landed twelve astronauts on the Moon between 1969 and 1972 across six successful missions. Apollo 11, in July 1969, made the first landing, with Neil Armstrong and Buzz Aldrin walking on the surface while Michael Collins remained in orbit. The final mission, Apollo 17, in December 1972, included geologist Harrison Schmitt, the only trained scientist to walk on the Moon. Apollo 13, in April 1970, was intended to land but suffered an oxygen tank explosion and looped around the Moon without landing. The Apollo astronauts collectively returned 842 pounds of lunar samples to Earth.\n\nAccording to the passage, who was the only trained scientist to walk on the Moon?",
+    "choices": [
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Michael Collins",
+      "Harrison Schmitt"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states, \"Apollo 17, in December 1972, included geologist Harrison Schmitt, the only trained scientist to walk on the Moon.\" Armstrong and Aldrin are named as the first to walk on the Moon during Apollo 11, but neither is described as a trained scientist. Collins is named as the Apollo 11 astronaut who remained in orbit and never walked on the surface at all. Among four named astronauts, only Schmitt is explicitly identified as the trained scientist.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-10",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Vaccines work by training the immune system to recognize specific pathogens without causing the disease itself. Live attenuated vaccines, such as the one for measles, use a weakened form of the virus. Inactivated vaccines, like the standard flu shot, use a killed version of the pathogen. Subunit vaccines, such as the one for hepatitis B, contain only specific pieces of the pathogen rather than the whole microbe. mRNA vaccines, used against COVID-19, give cells instructions to produce a harmless piece of the virus to trigger an immune response. Each approach has trade-offs in storage requirements, manufacturing speed, and how long protection lasts.\n\nAccording to the passage, which type of vaccine is the standard flu shot?",
+    "choices": [
+      "Live attenuated",
+      "Inactivated",
+      "Subunit",
+      "mRNA"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states, \"Inactivated vaccines, like the standard flu shot, use a killed version of the pathogen.\" Live attenuated is the category given for the measles vaccine, a correct-but-wrong-question trap among the four types listed. Subunit is the category for hepatitis B, not the flu shot. mRNA is the technology used against COVID-19. Each wrong choice is a real vaccine category from the passage but is tied there to a different disease, not to the flu shot.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-11",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Plate tectonics describes how Earth's outer shell is divided into roughly a dozen large pieces called plates that move slowly over the planet's mantle. The plates interact in three main ways. At convergent boundaries, plates collide, sometimes pushing one plate beneath the other in a process called subduction. The Andes Mountains formed this way. At divergent boundaries, plates pull apart, allowing magma to rise and create new crust, as in the Mid-Atlantic Ridge. At transform boundaries, plates slide past each other horizontally, generating frequent earthquakes; California's San Andreas Fault is the best-known example. Average plate movement is about two to four inches per year.\n\nAccording to the passage, the Andes Mountains formed at what type of plate boundary?",
+    "choices": [
+      "Divergent",
+      "Transform",
+      "Convergent",
+      "Subduction"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states, \"At convergent boundaries, plates collide... The Andes Mountains formed this way.\" Divergent boundaries are tied to the Mid-Atlantic Ridge, not the Andes. Transform boundaries are tied to the San Andreas Fault and frequent earthquakes, not mountain building. \"Subduction\" is mentioned in the passage as a process that can occur at convergent boundaries, but it is not itself a type of boundary; it is an over-generalization of a sub-detail. Only convergent matches the boundary type for the Andes.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-12",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "OSHA reporting rules require employers to record any work-related injury that meets specific criteria. A case must be logged if it results in death, days away from work, restricted work activity, transfer to another job, loss of consciousness, or a significant injury diagnosed by a licensed health-care professional. Minor cuts treated with a bandage and standard first aid do not have to be recorded. Employers must also report serious incidents directly to OSHA within set time limits: any fatality within 8 hours and any inpatient hospitalization, amputation, or loss of an eye within 24 hours. Records must be retained for five years.\n\nAccording to the passage, within how many hours must an employer report a work-related fatality to OSHA?",
+    "choices": [
+      "24 hours",
+      "8 hours",
+      "5 hours",
+      "48 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states, \"any fatality within 8 hours and any inpatient hospitalization, amputation, or loss of an eye within 24 hours.\" 24 hours is the deadline for hospitalizations, amputations, and eye loss, a correct-but-wrong-question trap that swaps the two reporting windows. 5 hours echoes the \"five years\" retention period reshaped from years into hours; no such 5-hour rule exists in the passage. 48 hours is a plausible-sounding compliance window often associated with regulatory deadlines but is never mentioned in this text. Only 8 hours matches the fatality-reporting deadline stated explicitly.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-13",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 4,
+    "stem": "The Great Barrier Reef, located off the northeastern coast of Australia, is the largest coral reef system in the world. It stretches more than 1,400 miles and is composed of nearly 3,000 individual reefs and 900 islands. The reef supports over 1,500 species of fish, 400 species of coral, and 4,000 types of mollusks. It is visible from space and was declared a UNESCO World Heritage Site in 1981. Climate change, agricultural runoff, and crown-of-thorns starfish are the main threats to its survival. Mass coral bleaching events occurred in 2016, 2017, 2020, and 2022.\n\nWhich of the following is NOT mentioned in the passage as a threat to the Great Barrier Reef?",
+    "choices": [
+      "Climate change",
+      "Agricultural runoff",
+      "Crown-of-thorns starfish",
+      "Commercial fishing"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage lists \"Climate change, agricultural runoff, and crown-of-thorns starfish\" as the main threats to the reef. Climate change is explicitly named as a main threat, so it does appear. Agricultural runoff is explicitly named in the same sentence and likewise appears. Crown-of-thorns starfish is explicitly named alongside the other two, also appearing in the text. Commercial fishing sounds like a plausible reef threat that readers may guess from outside knowledge, but it never appears in this passage, making it the only option not mentioned and therefore the correct answer to a NOT-mentioned question.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-14",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 4,
+    "stem": "A standard home electrical panel in the United States distributes 240-volt service through a series of circuit breakers. Most lighting and outlet circuits operate on 15-amp or 20-amp breakers at 120 volts. Larger appliances draw 240 volts: electric dryers typically use 30-amp breakers, electric ranges use 40-amp or 50-amp breakers, and central air-conditioning condensers use 30-amp or 40-amp breakers. Each breaker is designed to trip when current exceeds its rating, preventing wires from overheating. Modern code also requires ground-fault circuit interrupters in bathrooms, kitchens, garages, and outdoor outlets, and arc-fault interrupters in bedrooms.\n\nWhich of the following appliances is NOT mentioned in the passage?",
+    "choices": [
+      "Electric dryer",
+      "Electric range",
+      "Central air-conditioning condenser",
+      "Electric water heater"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage names three specific appliances drawing 240 volts: \"electric dryers typically use 30-amp breakers, electric ranges use 40-amp or 50-amp breakers, and central air-conditioning condensers use 30-amp or 40-amp breakers.\" Electric dryer is mentioned by name with its breaker rating. Electric range is mentioned with its breaker rating. Central air-conditioning condenser is mentioned with its breaker rating. Electric water heaters are a real 240-volt appliance and sound plausible to a reader bringing outside knowledge, but they never appear in this passage, making them the only choice not mentioned in the text.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-15",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 4,
+    "stem": "A balanced diet recommended by the U.S. Dietary Guidelines includes five food groups: fruits, vegetables, grains, protein foods, and dairy. Fruits and vegetables should fill roughly half of each plate. At least half of grain servings should be whole grains rather than refined grains. Protein foods include lean meats, poultry, eggs, seafood, beans, peas, nuts, and soy products. Dairy options include milk, yogurt, cheese, and fortified soy beverages. The guidelines also recommend limiting added sugars to less than 10 percent of daily calories, saturated fats to less than 10 percent of daily calories, and sodium to less than 2,300 milligrams per day.\n\nWhich of the following is NOT listed in the passage as one of the five food groups?",
+    "choices": [
+      "Vegetables",
+      "Grains",
+      "Fats",
+      "Dairy"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage names \"fruits, vegetables, grains, protein foods, and dairy\" as the five food groups in the U.S. Dietary Guidelines. Vegetables is explicitly named in that list. Grains is explicitly named in that list. Dairy is explicitly named in that list. Fats are discussed only as something to limit, with saturated fats specifically capped at less than 10 percent of daily calories, and they are never listed as a food group. Fats is therefore the only option not in the five-group list, making it the correct answer to the NOT-listed question.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-16",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 5,
+    "stem": "A small business tracks its monthly utility bills to budget for the year. In January, electricity costs were $420 and natural gas was $310. By July, electricity had risen to $680 due to air-conditioning demand, while natural gas had fallen to $90. Water charges remained steady at about $75 per month throughout the year. Internet and phone service together cost $185 per month on a flat plan. The owner noticed that combined utility expenses in July exceeded combined utility expenses in January, even though heating costs had dropped substantially during the warmer months.\n\nBased on the passage, by approximately how much did the company's combined utility bill increase from January to July?",
+    "choices": [
+      "$30",
+      "$220",
+      "$260",
+      "$170"
+    ],
+    "correct_index": 0,
+    "explanation": "January totals: $420 + $310 + $75 + $185 = $990. July totals: $680 + $90 + $75 + $185 = $1,030. The increase is $1,030 minus $990, which equals $40, closest to $30 among the choices. $260 reflects only the electricity rise ($680 minus $420). $220 over-counts by mixing electricity and gas changes in one direction. $170 conflates partial swings. Only $30 approximates the true net change once gas savings offset most of the electricity increase.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-17",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 5,
+    "stem": "A regional hospital reports its emergency department traffic each quarter. In the first quarter, the department treated 4,200 patients, with an average wait time of 38 minutes. In the second quarter, patient volume rose to 5,100 and average wait time stretched to 52 minutes. The third quarter saw 5,400 patients with a wait time of 49 minutes after two additional triage nurses were hired in late June. In the fourth quarter, holiday-related cases pushed volume to 5,800, but wait times held at 50 minutes thanks to the staffing change. Administrators consider any quarter with average wait under 45 minutes a success.\n\nBased on the passage, how many quarters met the administrators' success criterion?",
+    "choices": [
+      "Zero",
+      "One",
+      "Two",
+      "Three"
+    ],
+    "correct_index": 1,
+    "explanation": "Success requires average wait under 45 minutes. Q1 wait is 38 minutes, which meets the criterion. Q2 is 52 minutes, which fails. Q3 is 49 minutes, which still fails despite improvement after the triage hires. Q4 is 50 minutes, which also fails. Only one quarter meets the standard. \"Zero\" overlooks Q1, the lowest wait time in the year. \"Two\" likely arises from mistakenly treating Q3's near-45 figure as passing the threshold. \"Three\" assumes most quarters succeeded, the opposite of what the recorded numbers actually show.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-DR-NEW-18",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 5,
+    "stem": "A community library tracks book checkouts by category. Fiction accounts for about 45 percent of all checkouts, biography for 15 percent, science and technology for 12 percent, children's books for 20 percent, and reference for the remainder. In the most recent year, the library logged 60,000 total checkouts. Staff have noticed that biography circulation has roughly doubled since a popular streaming documentary series launched two years ago. The library plans to expand its biography collection if the category exceeds 10,000 annual checkouts in the coming year.\n\nBased on the passage, approximately how many biography checkouts did the library record in the most recent year?",
+    "choices": [
+      "6,000",
+      "9,000",
+      "12,000",
+      "10,000"
+    ],
+    "correct_index": 1,
+    "explanation": "Biography is stated as 15 percent of 60,000 total checkouts. Computing 15 percent of 60,000 gives 9,000 biography checkouts in the most recent year. 6,000 corresponds to 10 percent and would match the lower-end share but contradicts the stated 15 percent figure for biography. 12,000 corresponds to 20 percent, which is the figure given for children's books, a correct-but-wrong-question swap between two categories. 10,000 is the trigger number for collection expansion in the coming year, not the current biography total. Only 9,000 is consistent with the stated 15 percent share.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-1",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Honeybees navigate using polarized sunlight, even on cloudy days when humans see only diffuse gray sky overhead. Their compound eyes contain specialized receptors that detect the orientation of light waves passing through the atmosphere. When researchers covered hive entrances with polarizing filters that scrambled the natural light pattern, foragers returning from familiar feeding sites became visibly disoriented and circled the hive for extended periods before they could land.\n\nWhat can be inferred from the passage?",
+    "choices": [
+      "Honeybees rely on detecting polarized light patterns to orient themselves",
+      "Honeybees cannot see at all when the sky is cloudy",
+      "Honeybees have compound eyes with specialized receptors",
+      "Honeybees produce more honey on sunny days than on cloudy days"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states bees use polarized light for navigation and that scrambling that pattern disoriented even experienced foragers, which directly supports choice A as a one-step inference from cause and effect. Choice B contradicts the passage, which explicitly says bees navigate even on cloudy days when humans see only gray. Choice C is the under-reach trap, restating an explicit detail about receptors without drawing any inference from it. Choice D is off-topic; honey production is never mentioned anywhere in the passage. Choice A is the cleanest one-step read of the evidence.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-2",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Concrete poured in freezing weather can fail catastrophically. Water in the wet mix expands as it crystallizes into ice, creating internal pressure that fractures the curing matrix before the cement can develop strength. Contractors working in cold climates use heated enclosures, insulated blankets, or chemical accelerators to keep concrete above 40 degrees Fahrenheit during the first 24 hours after pouring.\n\nBased on the passage, which conclusion is most strongly supported?",
+    "choices": [
+      "The first day after pouring is the most vulnerable period for concrete in cold conditions",
+      "Concrete poured in summer never develops any structural defects",
+      "Chemical accelerators are more effective than insulated blankets",
+      "Heated enclosures are required by building codes in every cold region"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage specifies that protective measures target the first 24 hours after pouring, which implies that window is when freezing damage is most likely to occur. Choice A captures this one-step inference cleanly. Choice B over-reaches; the passage focuses on cold weather and never claims summer concrete is defect-free. Choice C over-reaches by ranking effectiveness among methods the passage merely lists side by side. Choice D over-reaches by inferring a legal mandate from a description of common practice. The 24-hour detail points clearly to choice A.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-3",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Sourdough bread relies on wild yeast and lactic acid bacteria that live in the flour and surrounding air. Unlike commercial baker's yeast, which produces consistent rise times, wild cultures vary in activity depending on temperature, humidity, and the specific strains present in a kitchen. Two bakers using identical recipes in different homes will often produce loaves with noticeably different textures and flavors.\n\nWhat can be inferred from the passage?",
+    "choices": [
+      "Environmental conditions affect the outcome of sourdough baking",
+      "Commercial baker's yeast produces better-tasting bread than wild yeast",
+      "Lactic acid bacteria are harmful to people who eat sourdough",
+      "Professional bakers always control humidity in their kitchens"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage explicitly ties variation in texture and flavor to differences in temperature, humidity, and local strains across kitchens, which supports choice A as a direct one-step inference. Choice B over-reaches by introducing a quality judgment the passage never makes; consistency is mentioned, not superiority. Choice C contradicts the implication that these bacteria are a normal and expected part of sourdough fermentation. Choice D over-reaches by inferring professional behavior from a passage that only describes home bakers using identical recipes. Choice A is the cleanest read.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-4",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Modern wind turbines automatically pitch their blades to limit rotation speed during high winds. If a blade caught the full force of a gust without adjusting, centrifugal stress could rip it from the hub. The pitch control system rotates each blade along its long axis, reducing the effective angle that strikes the wind and slowing the rotor before damage occurs.\n\nThe passage suggests that pitch control primarily exists to:",
+    "choices": [
+      "Protect turbine components from wind-induced mechanical failure",
+      "Increase electricity output during periods of low wind",
+      "Reduce noise complaints from nearby residents",
+      "Allow turbines to operate without any electronic monitoring"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage describes pitch control as a response to dangerous high winds that would otherwise generate centrifugal stress capable of tearing blades from the hub, which supports choice A directly. Choice B contradicts the passage, which describes the system slowing rotation rather than boosting output during low wind. Choice C is off-topic; noise complaints are never mentioned anywhere in the text. Choice D contradicts the implication of an automatic system, which requires monitoring of wind conditions to function. Protection from mechanical failure is the clearest single-step inference.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-5",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Lithium-ion batteries lose capacity faster when stored at full charge in warm conditions. A battery held at 100 percent in a hot garage may lose 35 percent of its original capacity within a year, while the same battery kept at 50 percent charge in a cool basement might lose only 4 percent over the same period. Manufacturers therefore recommend storing rarely used devices at moderate charge levels in temperature-controlled spaces.\n\nWhat can be inferred from the passage?",
+    "choices": [
+      "Storing a laptop fully charged in a warm closet accelerates battery degradation",
+      "Lithium-ion batteries last longer than nickel-cadmium batteries",
+      "Cool temperatures alone are enough to prevent any capacity loss",
+      "Manufacturers recommend never charging a battery above 50 percent"
+    ],
+    "correct_index": 0,
+    "explanation": "Choice A combines two stated conditions, full charge plus warm storage, to draw a specific applied inference about a laptop in a warm closet, which is the textbook two-step pattern this difficulty level expects. Choice B is off-topic; no other battery chemistry is mentioned for comparison. Choice C over-reaches by inferring complete prevention when the passage shows only reduced loss at four percent rather than zero. Choice D over-reaches by turning a storage recommendation into a charging prohibition; the passage addresses rarely used devices, not daily use.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-6",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "City planners studying foot traffic found that pedestrians overwhelmingly prefer routes with continuous shade during summer months. On one downtown corridor, a sidewalk lined with mature oak trees carried four times the foot traffic of a parallel route two blocks away, even though the shaded path added roughly 90 seconds to most trips. After the city removed several diseased oaks, monthly counts on the shaded corridor fell sharply.\n\nBased on the passage, which conclusion is most strongly supported?",
+    "choices": [
+      "Pedestrians will accept modestly longer walks in exchange for shade",
+      "Oak trees are the only tree species that attract foot traffic",
+      "Removing trees has no measurable effect on pedestrian behavior",
+      "Most pedestrians avoid downtown areas during summer entirely"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states that pedestrians chose the shaded route despite the added 90 seconds and that traffic dropped sharply when trees were removed. Combining these two facts supports choice A as a two-step inference about preference and trade-off. Choice B over-reaches; oaks are the specific example used, not a stated species requirement for foot traffic. Choice C directly contradicts the passage, which explicitly describes a sharp drop after tree removal. Choice D contradicts the high four-times traffic count on the shaded corridor in summer.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-7",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Most small claims courts cap awards at amounts between 5,000 and 25,000 dollars depending on the state. Filing fees usually run under 100 dollars, and parties typically argue their own cases without attorneys. Judges aim to resolve disputes within a single brief hearing, often the same morning multiple cases are scheduled. Plaintiffs seeking larger awards or complex remedies must use higher courts, which involve formal procedure and significantly greater expense.\n\nWhat can be inferred from the passage?",
+    "choices": [
+      "Small claims courts are designed to handle low-value disputes quickly and affordably",
+      "Small claims court hearings always last several days",
+      "Hiring an attorney is prohibited in small claims court",
+      "Higher courts award smaller damages than small claims courts"
+    ],
+    "correct_index": 0,
+    "explanation": "Choice A integrates the dollar caps, low filing fees, and same-morning hearing format into a coherent two-step inference about the court's purpose and design. Choice B directly contradicts the same-morning brief-hearing detail given in the passage. Choice C over-reaches; the passage says parties typically self-represent, which describes practice rather than a legal prohibition on hiring attorneys. Choice D contradicts the passage, which states explicitly that larger awards require moving up to higher courts. Choice A is the synthesis the passage clearly invites a reader to draw.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-8",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Coral reefs form only in clear tropical seawater between roughly 73 and 84 degrees Fahrenheit. The animals that build reefs depend on symbiotic algae that photosynthesize inside their tissues, so cloudy water blocks the light those algae need. When ocean temperatures climb above 86 degrees for sustained periods, the corals expel their algal partners and turn white, a condition called bleaching that often kills the colony.\n\nWhich conclusion does the passage most strongly support?",
+    "choices": [
+      "Reef survival depends on water that is both warm enough and clear enough",
+      "Bleached corals always recover if temperatures fall the following week",
+      "Tropical seawater never exceeds 86 degrees Fahrenheit",
+      "Algae can photosynthesize without any access to sunlight"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage gives a narrow temperature range and a separate clarity requirement, both presented as essential, which supports choice A as a two-fact synthesis about reef-building conditions. Choice B over-reaches with the word always; the passage says bleaching often kills colonies, suggesting recovery is far from guaranteed. Choice C directly contradicts the passage, which describes temperatures climbing above 86 degrees and triggering bleaching. Choice D contradicts the explicit role of light in algal photosynthesis described in the same sentence. Choice A is the disciplined inference.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-9",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Cooking shows that emphasize speed and convenience above all else have shaped a generation of home cooks who panic when a recipe calls for resting dough overnight or simmering stock for hours. We have come to treat any process longer than 30 minutes as a failure of efficiency, as if our grandparents wasted their lives by braising. The richest flavors in any tradition arise from patience, and a kitchen that cannot wait is a kitchen that cannot taste.\n\nWhich statement does the author most likely believe?",
+    "choices": [
+      "Modern media has trained cooks to undervalue time-intensive techniques",
+      "Cooking shows should be banned from television",
+      "Older generations cooked exclusively with slow methods",
+      "Resting dough overnight is the only worthwhile technique"
+    ],
+    "correct_index": 0,
+    "explanation": "The author's frustration with speed-focused shows, the rhetorical question about grandparents, and the closing line about waiting and tasting reveal an implicit assumption that modern media has narrowed cooks' patience for slow technique, which supports choice A. Choice B over-reaches; the author criticizes a trend in programming, not the existence of cooking shows themselves. Choice C over-reaches with the word exclusively, which the passage never claims. Choice D over-reaches by treating a single example of slow technique as the only valued one. Choice A captures the implicit position.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-10",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Volunteer firefighting departments in rural counties face a recruitment crisis that no amount of equipment funding can solve. Trucks and gear sit unused not because budgets are tight but because fewer working-age residents remain in these communities, and those who stay often commute too far to respond during daylight hours. Until lawmakers grapple with rural depopulation itself, even generous grants will leave stations short-handed at the moments they matter most.\n\nThe passage suggests that the author believes:",
+    "choices": [
+      "Equipment grants alone cannot fix what is fundamentally a population problem",
+      "Volunteer firefighting is no longer a useful model anywhere",
+      "Rural residents are unwilling to volunteer for any community service",
+      "Lawmakers have already solved the rural depopulation problem"
+    ],
+    "correct_index": 0,
+    "explanation": "The author treats funding as misdirected because the root cause is demographic rather than financial, an implicit assumption clearly visible in the contrast between budgets and bodies, which supports choice A. Choice B over-reaches; the author critiques the recruitment shortfall in rural areas, not the volunteer model itself or its use elsewhere. Choice C over-reaches by attributing unwillingness when the passage explicitly cites commuting distance and population loss as the cause. Choice D directly contradicts the passage's call for lawmakers to begin grappling with the issue.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-11",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Public libraries that once defined themselves by their book collections have spent the last decade quietly transforming into community workspaces. Patrons now book private rooms for video interviews, borrow laptop chargers, and use 3D printers as often as they check out novels. Some librarians worry that calling these institutions libraries at all may eventually mislead the public about what they actually offer.\n\nThe author would most likely agree that:",
+    "choices": [
+      "The traditional definition of a library no longer captures the full range of services offered",
+      "Libraries should immediately remove all books from their buildings",
+      "Patrons who still read novels are an obstacle to library modernization",
+      "Library budgets have grown substantially over the last decade"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage describes a transformation and quotes librarians worried about an outdated name, which together reveal an implicit assumption that the old definition is becoming inadequate, supporting choice A. Choice B over-reaches; the passage describes evolution alongside continued book lending, not the removal of books. Choice C contradicts the neutral tone toward novel-borrowing patrons, who appear in the same sentence as 3D printer users without judgment. Choice D is off-topic; library budgets are never discussed anywhere in the passage. Choice A captures the implicit position about naming and identity.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-12",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Manufacturers of premium kitchen knives have begun stamping serial numbers on every blade and offering lifetime warranties tied to the original purchaser. Marketing materials describe these moves as quality assurance, but the practice also makes it harder for buyers to resell knives privately and easier for makers to track which retailers discount their inventory. Consumer advocates have started questioning whose interests these programs really serve.\n\nWhich statement does the author most likely believe?",
+    "choices": [
+      "Lifetime warranty programs may benefit manufacturers more than buyers",
+      "Premium kitchen knives are not worth their listed price",
+      "Serial numbers always lower the quality of finished blades",
+      "Consumer advocates have proven that all warranty programs are fraudulent"
+    ],
+    "correct_index": 0,
+    "explanation": "The author juxtaposes marketing claims about quality assurance with practical effects that constrain resale and police retailers, an implicit assumption that buyers are not the primary beneficiary of these programs, which supports choice A. Choice B is off-topic; the price-to-value question is never argued or even raised in the passage. Choice C over-reaches by inventing a link between serial numbers and product quality that the passage does not make. Choice D over-reaches; the passage says advocates have started questioning, not that they have proven anything fraudulent.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-13",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 4,
+    "stem": "A study of urban bicycle commuters found that those who wore high-visibility yellow vests reported feeling safer than those who did not, even though crash data from the same period showed no statistically significant difference in collision rates between the two groups. Researchers cautioned that perceived safety and actual safety can diverge in ways that affect behavior, including how aggressively riders position themselves in traffic.\n\nWhich conclusion is best supported by the passage?",
+    "choices": [
+      "The perception of being safer does not necessarily reflect actual reductions in crash risk",
+      "Yellow vests cause more bicycle collisions than they prevent",
+      "Bicycle commuters should stop wearing high-visibility gear",
+      "All safety equipment is purely psychological in effect"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage cleanly distinguishes self-reported feelings from crash data and warns explicitly about divergence between perceived and actual safety, which supports choice A without any unsupported leaps. Choice B over-reaches; the data showed no significant difference between groups, not that vests caused additional crashes. Choice C is an unsupported recommendation; the passage offers cautious analysis rather than any prescription for riders. Choice D is the inference-overreach trap, generalizing from one specific finding about vests to a sweeping claim about all safety equipment. Choice A stops exactly where the evidence stops.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-14",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 4,
+    "stem": "Researchers analyzing customer reviews on a major online retailer noticed that products with average ratings between 4.2 and 4.5 stars tended to outsell products rated 4.8 or higher. Interviews with shoppers suggested that perfect or near-perfect ratings raised suspicion of manipulation, while slightly imperfect ratings struck buyers as more credible. The retailer has not announced any plans to change how ratings are displayed.\n\nWhich conclusion is most strongly supported?",
+    "choices": [
+      "Shoppers may interpret slightly imperfect ratings as a signal of authenticity",
+      "Ratings above 4.5 stars are always the result of manipulation",
+      "The retailer is planning to hide perfect ratings from buyers",
+      "Customer reviews have no influence on online purchasing decisions"
+    ],
+    "correct_index": 0,
+    "explanation": "Shopper interviews tied buyer suspicion to near-perfect ratings and credibility to slightly imperfect ones, which supports choice A as a careful inference about how buyers read review patterns. Choice B is the over-reach trap, converting a buyer perception into a factual claim that high ratings are manipulated. Choice C directly contradicts the explicit statement that the retailer has announced no display changes. Choice D contradicts the passage, which shows ratings clearly influence sales by linking specific rating ranges to outselling. Choice A stops at what the shoppers themselves report.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-15",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 4,
+    "stem": "A regional hospital system that switched from paper charts to a unified electronic medical record initially saw medication errors drop 22 percent. Three years later, however, error rates had crept back to within 4 percent of the original baseline. Quality officers attributed the rebound to alert fatigue, the phenomenon in which clinicians begin to ignore safety warnings after encountering too many false positives during routine work.\n\nWhich conclusion is most strongly supported?",
+    "choices": [
+      "Technology gains in safety can erode when human responses to that technology change",
+      "Electronic medical records ultimately cause more errors than paper charts",
+      "Alert fatigue is unique to hospitals that recently switched systems",
+      "Reducing the number of safety alerts would eliminate medication errors entirely"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage describes an initial 22 percent gain that eroded as clinicians adapted to alerts, which supports choice A as a precise inference about behavior eroding technical benefits over time. Choice B over-reaches; error rates rebounded close to but not above the paper baseline, so the system did not cause more errors. Choice C over-reaches by claiming uniqueness the passage never asserts about this hospital system. Choice D over-reaches with the word entirely; the passage offers no guarantee that reducing alerts would eliminate every error. Choice A captures exactly what the rebound implies.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-16",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 5,
+    "stem": "A 12-year analysis of municipal recycling programs found that cities mandating clear plastic collection bags had higher reported recycling rates than cities using opaque bags, but landfill audits revealed that the clear-bag cities also threw away slightly more recyclable material in regular trash. Researchers theorized that residents avoided putting questionable items in transparent bags out of social embarrassment, preferring to discard them invisibly.\n\nWhich conclusion is most strongly supported?",
+    "choices": [
+      "Visibility-based policies can shift where waste appears without changing total recycling behavior",
+      "Clear-bag policies cause residents to recycle more material overall",
+      "Opaque bag cities have eliminated recycling contamination",
+      "Social embarrassment is the strongest motivator of recycling behavior"
+    ],
+    "correct_index": 0,
+    "explanation": "Higher reported rates paired with more recyclables found in landfill trash means visibility shifted disposal location without expanding total recycling, which supports choice A as the disciplined synthesis. Choice B is the almost-but-not-quite trap; higher reported rates initially look like more recycling, but the landfill audit cancels that gain by showing recyclables hidden in regular trash. Choice C over-reaches; opaque-bag cities are never described as contamination-free in the passage. Choice D over-reaches by elevating one researcher theory to the strongest motivator when the passage offers it tentatively. Choice A is the precise read.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-INF-NEW-17",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 5,
+    "stem": "An evaluation of remote-work pilot programs across 14 large companies found that employees reporting the highest job satisfaction were those who worked remotely two or three days per week, not those who worked remotely full time. Fully remote employees often reported satisfaction comparable to fully in-office employees, but they were also significantly more likely to leave their employer within 18 months. Researchers suggested that satisfaction surveys may miss factors like weak peer attachment that influence retention.\n\nWhich conclusion is most strongly supported?",
+    "choices": [
+      "Self-reported satisfaction may not fully capture the conditions that keep employees at a job",
+      "Fully remote employees are less satisfied than hybrid employees",
+      "Companies should require all employees to work in the office at least two days per week",
+      "Peer attachment is the only factor that predicts employee turnover"
+    ],
+    "correct_index": 0,
+    "explanation": "Comparable satisfaction scores combined with significantly higher attrition imply that the survey instrument misses retention-relevant factors, which is exactly what choice A captures. Choice B is the almost-supported trap; hybrid employees did report the highest satisfaction, but the passage says fully remote workers were comparable to in-office, not lower in a way that proves dissatisfaction drove their exits. Choice C is an unsupported policy recommendation the passage never makes. Choice D over-reaches with only; the passage offers peer attachment as one factor researchers suggested might matter. Choice A respects every qualifier in the evidence.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-1",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Hand-washing is the single most effective way to prevent the spread of common illnesses. Soap breaks down the oils on skin that hold germs in place, allowing running water to rinse them away. Twenty seconds of scrubbing is enough to remove most contaminants. Public health agencies continue to promote this simple habit because no vaccine or medication matches its everyday impact. What is the main idea of this passage?",
+    "choices": [
+      "Twenty seconds of scrubbing removes most contaminants from hands.",
+      "Soap dissolves oils that trap germs on the skin.",
+      "Public health depends entirely on individual hygiene habits.",
+      "Hand-washing is the most effective everyday way to prevent the spread of illness."
+    ],
+    "correct_index": 3,
+    "explanation": "The first sentence states the thesis directly and the rest of the passage supports it with mechanism and endorsement. The option about soap dissolving oils that trap germs describes how the mechanism works, a supporting detail rather than the central claim. The twenty-seconds-of-scrubbing option cites a specific duration, again a detail in service of the main point. The choice that says public health depends entirely on individual hygiene habits over-generalizes, a stronger claim than the passage makes. Only the keyed option restates the explicit topic sentence without adding or narrowing its scope.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-2",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "A library card offers more than free books. Most public libraries now lend audiobooks, streaming films, museum passes, and even hotspots for home internet. Cardholders can attend tax workshops, language classes, and resume clinics at no cost. The card has quietly become one of the most versatile free resources available to residents. Which statement best expresses the main idea?",
+    "choices": [
+      "Public libraries are the most important institutions in any community.",
+      "Tax workshops and resume clinics are popular library offerings.",
+      "A library card gives access to a wide range of free resources beyond books.",
+      "Libraries lend internet hotspots to people without home service."
+    ],
+    "correct_index": 2,
+    "explanation": "The opening sentence states that a card offers more than books, and the rest of the passage lists examples of that range plus the free-resource framing. The option about libraries lending internet hotspots isolates one example service, a single supporting detail. The option naming tax workshops and resume clinics picks up two specific programs from the example list, again narrower than the central claim. The choice calling libraries the most important institutions in any community inflates the argument with language the passage never uses, a clear over-generalization. The keyed option mirrors the opening sentence and captures the variety theme that ties the supporting details together.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-3",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Sleep is essential for memory consolidation. During deep sleep, the brain replays the day's experiences and strengthens the neural connections tied to important information. People who sleep fewer than six hours a night routinely score lower on memory tests the next day. Adequate rest is not a luxury for students; it is part of the learning process itself. What is the main idea of this passage?",
+    "choices": [
+      "Sleeping less than six hours lowers next-day memory test scores.",
+      "Students should treat sleep as more important than studying.",
+      "The brain replays daily experiences during deep sleep.",
+      "Adequate sleep is essential for forming and retaining memories."
+    ],
+    "correct_index": 3,
+    "explanation": "The first sentence names sleep as essential for memory consolidation, and the closing sentence reinforces it by calling rest part of the learning process itself. The option about scoring lower on memory tests after fewer than six hours reports a specific finding cited as supporting evidence rather than the central claim. The choice describing the brain's nightly replay of daily experiences names the neural mechanism, another piece of supporting detail that explains why the thesis holds. The option saying students should treat sleep as more important than studying over-generalizes by ranking the two, a direct comparison the passage does not make. The keyed answer captures the central claim that sleep and memory formation are tightly linked.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-4",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Recycling aluminum saves enormous amounts of energy. Producing a can from recycled aluminum uses about ninety-five percent less electricity than making one from raw ore. The metal can be melted and reformed indefinitely without losing any strength or quality. For every ton of aluminum recycled, the equivalent of several barrels of oil is conserved nationwide. Which statement best expresses the main idea?",
+    "choices": [
+      "Recycled aluminum cans require ninety-five percent less electricity to produce.",
+      "Aluminum can be melted and reused without losing strength.",
+      "Recycling aluminum conserves a large amount of energy.",
+      "Industrial recycling could replace most oil production."
+    ],
+    "correct_index": 2,
+    "explanation": "The opening sentence states the thesis about energy savings, and the rest of the passage quantifies and reinforces it with electricity figures and oil-equivalent conservation. The choice citing the ninety-five percent electricity figure repeats a specific statistic offered as evidence, a supporting detail rather than the main idea. The option about aluminum being melted and reused without losing strength addresses the metal's durability under repeated recycling, another supporting fact that explains why aluminum recycling is so efficient. The choice claiming industrial recycling could replace most oil production wildly over-generalizes, a claim the passage never makes. The keyed option restates the topic sentence in plain terms.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-5",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "City planners in many regions are widening sidewalks, lowering speed limits, and adding shaded benches. Cars still dominate most corridors, but pedestrian counts on retrofitted blocks have climbed sharply. Shop owners along these streets report higher foot traffic and longer customer visits. Even short walks in better-designed neighborhoods correlate with improved cardiovascular health in older residents. What is the main idea of this passage?",
+    "choices": [
+      "Shop owners earn more money when sidewalks are widened.",
+      "Older residents have better hearts than younger residents in walkable areas.",
+      "Cities should ban cars from downtown corridors.",
+      "Walkable street design produces measurable economic and health benefits."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage stacks two parallel results, business gains and health gains, after describing the design changes that produced them. The implied thesis ties pedestrian-friendly design to both outcomes, and it sits across the second and third sentences rather than in one place. The option saying shop owners earn more money captures only the commercial half and overstates with the word earn, a supporting detail. The choice comparing older residents' hearts to younger residents distorts the health claim into a generational comparison the passage never makes. The option calling for cities to ban cars from downtown corridors pushes a policy position the passage avoids, since it explicitly notes cars still dominate most corridors. The keyed answer holds both supporting threads together.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-6",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "When a household water heater fails, the symptoms often appear gradually. Showers grow lukewarm over several weeks, and the tank may begin to hum or rattle as sediment builds. Rust-tinted water from the hot tap is a later warning sign. Homeowners who replace a failing unit on a planned schedule typically pay less than those who wait for a flood. Which statement best expresses the main idea?",
+    "choices": [
+      "Rust-tinted hot water means a water heater has already failed.",
+      "Most water heaters last fewer than ten years before failing.",
+      "Sediment buildup is the leading cause of water-heater problems.",
+      "Recognizing early warning signs of water-heater failure helps homeowners avoid costly emergencies."
+    ],
+    "correct_index": 3,
+    "explanation": "The first three sentences catalogue warning signs and the final sentence links advance recognition to lower cost, implying the thesis. The option saying rust-tinted hot water means the heater has already failed treats one symptom as a definitive verdict, a misread of the passage's late warning sign language. The choice naming sediment buildup as the leading cause asserts a ranking the passage never makes. The option about most heaters lasting fewer than ten years introduces a lifespan figure that does not appear in the passage at all. The keyed answer joins the symptoms half to the cost half.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-7",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "A well-written cover letter does more than repeat a resume. It connects past experience to the specific role, names the hiring manager when possible, and uses the company's own language about its goals. Recruiters often skim a stack of applications in seconds, so the opening lines must give them a reason to keep reading. What is the main idea of this passage?",
+    "choices": [
+      "Cover letters should always name the hiring manager.",
+      "Recruiters spend only a few seconds reviewing each application.",
+      "A strong cover letter is tailored to the role and designed to hold a recruiter's attention.",
+      "Resumes are less important than cover letters in modern hiring."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage outlines what a good cover letter does, namely connect experience to the role and mirror the company's language, and then explains why, the recruiter-skim context. The thesis combines tailoring with attention-holding across the two halves of the paragraph. The option about recruiters spending only seconds repeats the skim detail as if it were the central point, an isolated supporting fact. The choice saying cover letters should always name the hiring manager absolutizes one suggested practice with the word always, sliding past the passage's softer when possible. The option ranking resumes as less important than cover letters invents a head-to-head comparison the passage never makes. The keyed option ties the writing advice to the audience constraint that drives it.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-8",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Honey produced near a beekeeper's home tastes different from honey produced fifty miles away. Local flora determine the flavor profile because bees forage within a few miles of the hive. Spring honey from orchard country carries a light apple-blossom note, while late-summer honey from a meadow tastes darker and fuller. Even neighboring counties can yield jars with distinct character. Which statement best expresses the main idea?",
+    "choices": [
+      "Bees forage within a few miles of their hive.",
+      "Local honey is healthier than honey from distant regions.",
+      "Honey's flavor reflects the specific plants bees forage near their hive.",
+      "Spring honey is lighter than late-summer honey."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage contrasts honey from different areas and explains the cause: nearby flora that the bees forage on. The thesis sits across the first two sentences and is then reinforced by the spring-versus-summer example. The option about bees foraging within a few miles isolates the range mechanism, a detail that supports rather than states the main idea. The choice contrasting spring and late-summer honey captures one seasonal example, again a piece of evidence rather than the central claim. The option calling local honey healthier than distant honey introduces a health claim the passage never makes. The keyed answer joins the observed flavor variation to its botanical cause, which is what the four sentences collectively argue.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-9",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Most modern bicycles use cable-actuated brakes that work well in dry conditions. In wet weather, however, water and grit on the rim reduce the friction that stops the wheel. Riders who ride year-round increasingly switch to disc brakes, which clamp a dedicated rotor near the hub. The rotor stays cleaner and provides consistent stopping power across temperatures. Bike shops report that disc-equipped models now account for the majority of new sales above entry level. What is the main idea of this passage?",
+    "choices": [
+      "Disc brakes are displacing rim brakes because they perform more consistently in varied conditions.",
+      "Most new bicycles sold are now equipped with disc brakes.",
+      "Cable-actuated brakes work poorly in wet weather.",
+      "Year-round cyclists need specialized equipment to ride safely."
+    ],
+    "correct_index": 0,
+    "explanation": "No single sentence states the thesis; it emerges from the contrast between rim and disc performance, the wet-weather problem, and the closing sales trend at bike shops. The option saying cable-actuated brakes work poorly in wet weather captures only the weakness of the older system, a supporting half. The choice reporting that most new bicycles now ship with disc brakes states the sales detail in isolation without explaining why the shift is happening, an accurate-but-tangential restatement. The option claiming year-round cyclists need specialized equipment over-generalizes about safety and necessity, neither of which the passage actually frames that way. The keyed answer synthesizes the performance reason and the market shift into one statement.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-10",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Community gardens often start with a single empty lot and a handful of volunteers. Within a season, raised beds appear, neighbors begin trading produce, and unfamiliar faces become regulars. Crime statistics on blocks with active gardens tend to drift downward over the following years. City officials in several regions now treat these gardens as low-cost public-safety investments rather than purely agricultural projects. Which statement best expresses the main idea?",
+    "choices": [
+      "Crime rates fall sharply on every block with a community garden.",
+      "Cities should subsidize gardening supplies for low-income residents.",
+      "Community gardens function as social investments that strengthen neighborhoods beyond food production.",
+      "Empty lots are the most common starting points for community gardens."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage moves from origin to social effects to municipal reframing without naming a single topic sentence. The synthesized point is that gardens deliver social value far beyond the produce they grow. The option about empty lots being the most common starting points grabs the opening fact rather than the central argument. The choice saying crime rates fall sharply on every block overstates the trend, while the passage uses softer hedging like tend and drift downward. The option urging cities to subsidize gardening supplies for low-income residents proposes a policy the passage never recommends or even mentions. The keyed answer captures the full arc that the four sentences trace together.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-11",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "The cost of solar panels has fallen sharply over the past fifteen years. Battery prices, once the bottleneck for home installations, have also dropped significantly. Utility companies face a new dynamic: customers who once bought every kilowatt now sell power back during peak hours. Some regulators are rewriting rate structures to reflect a grid that flows in both directions. The old one-way model is increasingly difficult to defend. What is the main idea of this passage?",
+    "choices": [
+      "Regulators are updating rate structures in some regions.",
+      "Solar panel prices have fallen over the past fifteen years.",
+      "Home solar installations will soon replace traditional power plants.",
+      "Cheaper solar and battery technology is reshaping the relationship between utilities and customers."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage threads price drops, customer behavior, regulatory response, and a closing judgment about how hard the old one-way model is to defend. The thesis must tie the technology shift to the changing utility relationship. The option that solar panel prices have fallen over fifteen years reports only the price half of the story, a supporting fact. The choice about regulators updating rate structures in some regions captures only the institutional response, again a supporting piece. The option predicting that home solar will soon replace traditional power plants advances a far stronger claim than the passage actually makes about a two-way grid. The keyed answer integrates the cause, the customer behavior, and the institutional response into one statement.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-12",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Reading aloud to young children does more than entertain. It exposes them to vocabulary and sentence structures that rarely appear in everyday conversation. Children who are read to regularly enter kindergarten with measurably larger vocabularies than peers who are not. Even shared reading at bedtime, lasting only minutes, contributes to the language gap that schools spend years trying to close. Which statement best expresses the main idea?",
+    "choices": [
+      "Schools are unable to close the language gap among students.",
+      "Vocabulary in books rarely overlaps with everyday speech.",
+      "Bedtime stories last only a few minutes for most families.",
+      "Reading aloud to young children builds vocabulary that shapes their school readiness."
+    ],
+    "correct_index": 3,
+    "explanation": "Four sentences move from the activity to its vocabulary mechanism to its measurable effect on kindergarten readiness and the language gap that follows. The synthesized point ties reading aloud directly to school readiness. Choice B picks up a duration detail about how brief bedtime reading is, an aside rather than the argument. Choice C captures the vocabulary mechanism without naming the educational outcome it produces. Choice D distorts the closing line about schools spending years to close the gap into a flat claim that schools have failed entirely. The keyed answer holds the cause and the educational outcome together, matching what all four sentences build.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-13",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 4,
+    "stem": "Many drivers assume premium gasoline cleans their engine better than regular fuel. In most vehicles, however, the octane rating governs only how resistant the fuel is to premature ignition under compression. Detergent additives are mandated for all grades sold in the United States, so cleaning performance is largely equivalent across the pump. Cars whose owner's manuals specify regular fuel gain no measurable benefit from premium and only pay more per gallon. A small group of high-compression engines does require premium, but for everyone else the upgrade is purely a charge against the wallet. What is the main idea of this passage?",
+    "choices": [
+      "Premium gasoline cleans engines more effectively than regular gasoline.",
+      "Detergent additives are mandated in all grades of gasoline sold in the United States.",
+      "Premium gasoline benefits only the small set of engines that require it; for most drivers it is wasted money.",
+      "Octane rating measures resistance to premature ignition under compression."
+    ],
+    "correct_index": 2,
+    "explanation": "Several factual claims compete for the spotlight: detergent additive rules, the octane definition, the owner's-manual specification, and the high-compression exception. The primary point is the cost-benefit verdict in the last sentence, framed against the common cleaning-power assumption that opens the passage. Choice B isolates a supporting fact about mandated additives, the mechanism for why cleaning is equivalent. Choice C defines octane, more supporting machinery for the larger argument. Choice D directly contradicts the passage, which is the assumption being refuted from the start. The keyed answer captures the verdict the passage was built to deliver.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-14",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 4,
+    "stem": "Many beginning cooks blame their knives when chopping feels slow or unsafe. A dull blade certainly increases the force required and the chance of a slip, and most home knives are duller than their owners realize. Cutting boards matter too; glass and stone surfaces destroy edges within weeks. Yet experienced cooks point out that grip and posture govern far more than equipment. A sharp knife held poorly is still slow, while a modest knife held well moves quickly through onions and herbs. Which statement best expresses the main idea?",
+    "choices": [
+      "Glass and stone cutting boards damage knife edges quickly.",
+      "Home cooks should buy sharper knives to improve their results.",
+      "A dull blade increases the force required to cut and raises the risk of slips.",
+      "Technique influences chopping speed and safety more than equipment alone."
+    ],
+    "correct_index": 3,
+    "explanation": "Two themes compete inside the passage: equipment matters (dullness, board surface) and technique matters more (grip, posture, knife handling). The yet pivot in sentence four signals which claim is primary, and the closing onions-and-herbs example reinforces it. Choice B captures a supporting detail about how dull blades increase force and slip risk. Choice C captures the cutting-board surface detail, another piece of equipment evidence. Choice D draws an equipment recommendation that the passage explicitly downgrades in favor of technique over gear. The keyed answer reflects the experienced-cooks pivot that organizes the whole passage.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-15",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 4,
+    "stem": "Online customer reviews shape modern purchasing in two directions at once. Buyers consult them before committing money, especially for items they cannot inspect in person, and a single string of negative ratings can sink a product. At the same time, sellers have learned to solicit, edit, and occasionally fabricate reviews to manage their ratings. Platforms publish trust-and-safety reports, but enforcement is uneven and reviewers themselves often cannot tell genuine praise from paid copy. The marketplace runs on a system that buyers depend on and many sellers quietly distort. What is the main idea of this passage?",
+    "choices": [
+      "Online reviews remain central to purchasing decisions even as their reliability is widely compromised.",
+      "Negative reviews can sink a product's sales on most platforms.",
+      "Buyers should stop relying on online reviews when making purchases.",
+      "Platforms publish trust-and-safety reports about review fraud."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage develops two opposing forces: buyer dependence on reviews and seller distortion of them. The closing sentence makes both sides explicit. Choice B captures only the buyer-impact side. Choice C reports a platform action without the broader argument. Choice D draws a prescription the passage never offers, especially given the opening insistence on how central reviews remain. The keyed answer holds the dependence and the distortion in the same statement, matching the closing summary.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-16",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 5,
+    "stem": "When a city replaces a stretch of asphalt with permeable pavers, the visible difference is small. The pavers look much like ordinary stone, and traffic crosses them without noticing. Underground, however, rainwater that once ran off the surface and overwhelmed storm drains now seeps through gaps between the stones into a gravel bed below. Local creeks downstream show fewer pollution spikes after heavy storms, and basement flooding complaints drop on neighboring blocks. The repaving looks ordinary, but the watershed quietly works differently. Skeptics often ask why the city did not simply build larger drains; engineers respond that the new surface costs less to maintain across its lifespan and treats the cause rather than the symptom. What is the main idea of this passage?",
+    "choices": [
+      "Cities should require permeable pavement on every new project.",
+      "Permeable paving produces meaningful environmental and economic benefits that are not visible at street level.",
+      "Engineers prefer permeable pavers over larger storm drains.",
+      "Permeable pavers look much like ordinary stone surfaces."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage hinges on the contrast between appearance and outcome: an ordinary-looking surface delivers downstream environmental and cost benefits. The author's overall point is that the value is real but hidden. Choice B captures only the appearance half. Choice C grabs the engineers-prefer detail without the broader payoff. Choice D pushes a policy mandate the passage avoids. The keyed answer integrates the invisible-but-meaningful framing that the opening, the middle examples, and the closing engineer comparison all support.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-17",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 5,
+    "stem": "Productivity advice often centers on tools: a new planner, a tracking app, a different notebook system. New hires especially gravitate to whatever system their manager praises, hoping the right method will close the gap between effort and output. Most observers of long careers tell a different story. The colleagues who consistently finish what they start rarely use unusual tools; they protect their attention from interruption, decide quickly which tasks belong to them, and review their week before it begins. The tools merely record habits already in place. A planner is not a substitute for the underlying discipline, though many buyers hope it will be. Which statement best expresses the main idea?",
+    "choices": [
+      "Many new hires copy whatever productivity system their manager praises.",
+      "Planners are useful only when paired with a tracking app.",
+      "Effective workers protect their attention and plan their weeks in advance.",
+      "Lasting productivity comes from underlying habits rather than from the specific tools people adopt."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage contrasts tool-focused hopes with habit-focused reality and closes by saying a planner is not a substitute for the underlying discipline it tries to capture. The author's overall claim runs through every sentence and emerges only by inference. Choice B captures the new-hire copying detail, a piece of color rather than the thesis. Choice C lists the supporting habits like attention protection and weekly review without naming the tool-versus-habit thesis itself. Choice D invents a recommendation about pairing planners with tracking apps that the passage never makes and would actually contradict. The keyed answer states the underlying argument that organizes the contrast and the closing judgment.",
+    "status": "draft"
+  },
+  {
+    "external_key": "PC-MI-NEW-18",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 5,
+    "stem": "Volunteer firefighters once formed the backbone of rural emergency response in many regions. Decades ago, neighbors who farmed or worked nearby trades could reach the firehouse within minutes of a tone. The economic geography has shifted: fewer residents work where they live, training requirements have grown, and the average volunteer is now over fifty. Recruiting drives produce modest gains that rarely keep pace with retirements. Some counties have begun staffing a paid skeleton crew during weekdays while preserving the volunteer roster for nights and weekends. Communities that once relied entirely on neighbors are quietly reorganizing around a hybrid model, even when local pride still describes the department as volunteer. What is the main idea of this passage?",
+    "choices": [
+      "The average volunteer firefighter is now over fifty years old.",
+      "Volunteer firefighting is no longer a viable model anywhere in the country.",
+      "Rural fire response is gradually shifting from a purely volunteer model to a hybrid arrangement driven by economic and demographic pressures.",
+      "Some counties pay a small daytime crew while keeping volunteers for nights and weekends."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage traces a historical baseline, names the pressures, and describes the structural response, closing on the gap between local self-description and reality. The author's overall point is the underlying transition. Choice B isolates a demographic statistic. Choice C captures the hybrid example without the larger trend it illustrates. Choice D over-generalizes to nowhere viable, while the passage describes a gradual reorganization that still includes volunteers. The keyed answer states the inferential thesis that organizes every sentence in the paragraph.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-1",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "In the sentence 'The driver was so RECKLESS that he ran three red lights and nearly hit a pedestrian,' the word RECKLESS most nearly means:",
+    "choices": [
+      "careless",
+      "skilled",
+      "patient",
+      "cautious"
+    ],
+    "correct_index": 0,
+    "explanation": "The sentence describes a driver running three red lights and nearly hitting a pedestrian, behavior that shows no regard for safety or for traffic law. That evidence pins the meaning to 'careless.' 'Skilled' contradicts the near-collision, since skilled driving would avoid that outcome rather than produce it. 'Patient' contradicts running red lights, which is impatient behavior that refuses to wait. 'Cautious' is the direct opposite of ignoring traffic signals and endangering people on foot. Only 'careless' matches a driver who disregards rules and consequences at once.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-2",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "In the sentence 'Her argument was so COMPELLING that even her opponents agreed she was right,' the word COMPELLING most nearly means:",
+    "choices": [
+      "persuasive",
+      "lengthy",
+      "confusing",
+      "polite"
+    ],
+    "correct_index": 0,
+    "explanation": "The evidence is that even her opponents agreed she was right, an outcome that only happens when an argument actually convinces the people who started out against it. That pins the meaning to 'persuasive.' 'Lengthy' describes duration and would not by itself flip opponents to agreement, since long arguments often bore listeners. 'Confusing' contradicts the outcome, since a confusing argument would not produce agreement from anyone. 'Polite' describes tone, not force, and politeness alone does not change opponents' minds. Only 'persuasive' explains why opponents conceded the point against their own position.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-3",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "In the sentence 'The hiking trail was so OBSCURE that we had to push aside branches just to see where it went,' the word OBSCURE most nearly means:",
+    "choices": [
+      "hidden",
+      "popular",
+      "steep",
+      "wide"
+    ],
+    "correct_index": 0,
+    "explanation": "The evidence is having to push aside branches just to see the trail, which means the path was concealed from view. That pins the meaning to 'hidden.' 'Popular' contradicts the overgrown condition, since a popular trail would be cleared by foot traffic. 'Steep' describes incline, not visibility, and pushing branches aside is about seeing the path, not climbing it. 'Wide' contradicts a trail covered by branches. Only 'hidden' fits a path that has to be uncovered to follow.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-4",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "In the sentence 'She was METHODICAL about her morning routine, doing every task in the same order at the same time each day,' the word METHODICAL most nearly means:",
+    "choices": [
+      "systematic",
+      "rushed",
+      "cheerful",
+      "lazy"
+    ],
+    "correct_index": 0,
+    "explanation": "The evidence is doing every task in the same order at the same time each day, which describes a fixed system rather than a loose habit. That pins the meaning to 'systematic.' 'Rushed' contradicts a routine performed at consistent times, since rushing varies with pressure and rarely repeats on schedule. 'Cheerful' describes mood and is not implied by repeating an order of tasks on a clock. 'Lazy' contradicts the discipline of completing every task daily without skipping any. Only 'systematic' captures a routine governed by both order and timing.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-5",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "In the sentence 'After learning he had passed the bar exam, Marcus felt EUPHORIC and called everyone he knew to share the news,' the word EUPHORIC most nearly means:",
+    "choices": [
+      "overjoyed",
+      "anxious",
+      "exhausted",
+      "indifferent"
+    ],
+    "correct_index": 0,
+    "explanation": "The evidence is passing the bar exam and calling everyone he knew to share the news, behavior driven by intense happiness rather than ordinary satisfaction. That pins the meaning to 'overjoyed.' 'Anxious' contradicts the celebration, since an anxious person would not broadcast good news to a long list of contacts. 'Exhausted' would mean wanting rest after the strain of the exam, not picking up the phone to call person after person. 'Indifferent' contradicts the eagerness to tell everyone, since indifference produces silence. Only 'overjoyed' explains the impulse to share the achievement so widely.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-6",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "In the sentence 'The loss of her grandmother had a PROFOUND effect on her, changing how she viewed family and time,' the word PROFOUND most nearly means:",
+    "choices": [
+      "deep",
+      "brief",
+      "amusing",
+      "unclear"
+    ],
+    "correct_index": 0,
+    "explanation": "The evidence is that the loss changed how she viewed family and time, which describes a fundamental shift in outlook rather than a passing reaction. That pins the meaning to 'deep.' 'Brief' contradicts a change in worldview, which by definition persists once it takes hold. 'Amusing' contradicts grief over a grandmother's death and the serious reflection that followed. 'Unclear' contradicts the sentence, which names exactly what changed in concrete terms: her view of family and her view of time. Only 'deep' fits an effect that reaches a person's core perspective and reshapes it.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-7",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'The monk lived in an AUSTERE cabin with only a wooden bed, a single chair, and one bowl,' the word AUSTERE most nearly means:",
+    "choices": [
+      "plain",
+      "luxurious",
+      "crowded",
+      "cheerful"
+    ],
+    "correct_index": 0,
+    "explanation": "The evidence is a cabin with only a wooden bed, a single chair, and one bowl, an inventory stripped of comfort and limited to bare necessities. That pins the meaning to 'plain.' 'Luxurious' is the direct opposite of owning three sparse items made of wood and clay. 'Crowded' contradicts the short list of furnishings, which signals emptiness rather than abundance of objects. 'Cheerful' describes mood, and the bare list conveys severity and restraint rather than warmth or decoration. Only 'plain' fits a dwelling defined by the deliberate absence of extras.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-8",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'The climber's grip on the icy ledge was PRECARIOUS, and a single gust of wind could have sent her falling,' the word PRECARIOUS most nearly means:",
+    "choices": [
+      "unstable",
+      "firm",
+      "comfortable",
+      "permanent"
+    ],
+    "correct_index": 0,
+    "explanation": "The evidence is that a single gust of wind could have sent her falling, which describes a hold one small force away from failing completely. That pins the meaning to 'unstable.' 'Firm' contradicts the risk of falling from a breeze, since a firm grip would withstand normal weather. 'Comfortable' contradicts hanging on an icy ledge with no margin for error or rest. 'Permanent' contradicts a grip that could end in an instant from one passing gust. Only 'unstable' captures a position that depends entirely on conditions not changing, even for a second.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-9",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 4,
+    "stem": "In the sentence 'Critics called the new album DERIVATIVE, pointing out that nearly every song borrowed melodies from earlier hits by other artists,' the word DERIVATIVE most nearly means:",
+    "choices": [
+      "unoriginal",
+      "complex",
+      "popular",
+      "experimental"
+    ],
+    "correct_index": 0,
+    "explanation": "The evidence is that nearly every song borrowed melodies from earlier hits by other artists, which is the textbook definition of work taken from existing sources. That pins the meaning to 'unoriginal.' 'Complex' describes structure and is not implied by copying melodies. 'Popular' describes reception, not source, and critics are faulting the album rather than praising its sales. 'Experimental' contradicts borrowing from established hits, since experimentation departs from familiar material. Only 'unoriginal' matches the critics' charge.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-10",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 4,
+    "stem": "In the sentence 'The doctor assured the worried parents that the small bump was INNOCUOUS and would fade on its own within a week,' the word INNOCUOUS most nearly means:",
+    "choices": [
+      "harmless",
+      "painful",
+      "contagious",
+      "permanent"
+    ],
+    "correct_index": 0,
+    "explanation": "The evidence is the doctor reassuring worried parents and predicting the bump would fade within a week, two signals that together rule out anything dangerous. That pins the meaning to 'harmless.' 'Painful' contradicts reassurance offered to anxious parents, since pain would call for treatment rather than calm. 'Contagious' would prompt warnings about spread to other family members, not assurance about a quick fade. 'Permanent' is the direct opposite of fading on its own within a week. Only 'harmless' fits a finding that calms parents and predicts a quiet resolution without intervention.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-CTX-NEW-11",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 5,
+    "stem": "In the sentence 'His FACETIOUS remark about the bride's dress at the rehearsal made everyone uncomfortable, since no one could tell whether he meant the insult or was only joking,' the word FACETIOUS most nearly means:",
+    "choices": [
+      "flippant",
+      "sincere",
+      "respectful",
+      "tearful"
+    ],
+    "correct_index": 0,
+    "explanation": "The evidence is that listeners could not tell whether he meant the insult or was only joking, which describes humor offered at an inappropriate moment. That pins the meaning to 'flippant.' 'Sincere' contradicts the possibility that he was joking, since sincere speech is meant straight. 'Respectful' contradicts insulting a bride at her rehearsal. 'Tearful' describes emotion and does not match a remark that reads as a joke. Only 'flippant' captures a comment that treats a serious moment as material for humor.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-1",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The prefix RE- means again or back. Based on this, REPLAY most nearly means:",
+    "choices": [
+      "to play before",
+      "to play once and stop",
+      "to play again",
+      "to refuse to play"
+    ],
+    "correct_index": 2,
+    "explanation": "REPLAY decomposes into RE- (again, back) plus PLAY. The prefix RE- appears in REWIND, REVISIT, and REBUILD, all signaling repetition or return. Choice A inverts the meaning by swapping RE- for PRE- (before). Choice B drops the prefix entirely and defines only the root. Choice D confuses RE- with the negating prefix REF- in REFUSE, which carries a different Latin origin (re- plus fundere, to pour back). The correct reading combines repetition with the action of playing.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-2",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The prefix NON- means not or absence of. Based on this, NONFICTION most nearly means:",
+    "choices": [
+      "writing that is made up",
+      "writing that is not made up",
+      "writing that is poorly done",
+      "writing that is unfinished"
+    ],
+    "correct_index": 1,
+    "explanation": "NONFICTION breaks into NON- (not) plus FICTION (invented narrative). The prefix NON- works the same way in NONSTOP, NONPROFIT, NONVERBAL, and NONSENSE, each simply negating the root that follows. Choice A defines fiction itself and ignores the prefix entirely, the most common error when the test taker rushes past the leading morpheme. Choice C confuses NON- with the Latin MAL- (bad) seen in MALPRACTICE and MALFUNCTION, which carries a moral judgment NON- does not. Choice D confuses NON- with the suffix -LESS or with the prefix UN- as in UNFINISHED. NONFICTION names writing grounded in fact rather than invention.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-3",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The prefix DIS- means not, opposite of, or away. Based on this, DISLOYAL most nearly means:",
+    "choices": [
+      "extremely loyal",
+      "loyal at times",
+      "not loyal",
+      "loyal to a leader"
+    ],
+    "correct_index": 2,
+    "explanation": "DISLOYAL splits into DIS- (not, opposite of) plus LOYAL. The same prefix appears in DISAGREE, DISHONEST, and DISCONNECT, each reversing the root. Choice A inverts the meaning by treating DIS- as an intensifier, a common error since spoken stress can sound emphatic. Choice B softens the negation into a partial state the prefix does not allow. Choice D ignores the prefix and defines only the root. DISLOYAL describes someone who fails to keep faith with a person, cause, or country.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-4",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The prefix TRANS- means across or beyond. The word TRANSPORT therefore is best defined as:",
+    "choices": [
+      "to carry across or from one place to another",
+      "to store in a harbor",
+      "to repair a damaged vehicle",
+      "to load goods onto a ship"
+    ],
+    "correct_index": 0,
+    "explanation": "TRANSPORT combines TRANS- (across) with the Latin root PORT (to carry), the same root in PORTER, IMPORT, and EXPORT. The prefix appears in TRANSMIT, TRANSFER, and TRANSCONTINENTAL with consistent meaning. Choice B mistakes PORT the prefix-bearing root for PORT meaning harbor, a homograph trap. Choice C invents a meaning unsupported by either morpheme. Choice D names a specific shipping action but ignores the across or beyond element supplied by TRANS-. TRANSPORT denotes movement of people or goods across distance.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-5",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The suffix -LESS means without. Based on this, FEARLESS most nearly means:",
+    "choices": [
+      "easily frightened",
+      "feeling moderate fear",
+      "causing fear in others",
+      "without fear"
+    ],
+    "correct_index": 3,
+    "explanation": "FEARLESS attaches the suffix -LESS (without) to the root FEAR. The same suffix produces HOPELESS, ENDLESS, and HARMLESS, each signaling absence of the root quality. Choice A reverses the meaning, the kind of error that arises when a reader confuses -LESS with -FUL. Choice B softens the absolute negation the suffix demands. Choice C confuses -LESS with the agentive suffix -SOME as in FEARSOME, which means causing fear. FEARLESS describes a person or action free from fear.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-6",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The suffix -FUL means full of or characterized by. The word PLAYFUL therefore most nearly means:",
+    "choices": [
+      "full of or showing a desire to play",
+      "without any sense of play",
+      "tired from playing too much",
+      "skilled at a particular game"
+    ],
+    "correct_index": 0,
+    "explanation": "PLAYFUL joins the root PLAY with the suffix -FUL (full of). The same suffix produces JOYFUL, CAREFUL, and HOPEFUL, each meaning full of the root quality. Choice B reverses the meaning by treating -FUL as if it were -LESS. Choice C drifts toward modern colloquial English where playful is sometimes loosely linked to exhaustion, but morphology does not support that reading. Choice D narrows the word to athletic skill, ignoring the broad sense of disposition the suffix supplies. PLAYFUL describes a mood or behavior marked by lighthearted fun.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-7",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The prefix INTER- means between or among. Based on this, INTERSTATE most nearly means:",
+    "choices": [
+      "inside a single state",
+      "between two or more states",
+      "owned by the state government",
+      "below the state level"
+    ],
+    "correct_index": 1,
+    "explanation": "INTERSTATE pairs INTER- (between, among) with STATE. The same prefix carries through INTERNATIONAL, INTERACT, INTERSECT, and INTERVIEW, each describing something that occurs between or among multiple parties. Choice A confuses INTER- with INTRA- (within), a high-frequency trap since the two prefixes differ by a single letter but reverse the meaning, as in INTRASTATE commerce that stays within one state. Choice C ignores the prefix entirely and assigns government ownership unsupported by the morphology. Choice D confuses INTER- with SUB- (below) or with the suffix -ARY indicating subordinate rank. An INTERSTATE highway runs between states, which is why the federal system carries that label.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-8",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The prefix MAL- means bad or wrongful. The word MALCONTENT therefore is best defined as:",
+    "choices": [
+      "a person who is satisfied",
+      "a person who avoids conflict",
+      "a person who is dissatisfied or rebellious",
+      "a person who lacks ambition"
+    ],
+    "correct_index": 2,
+    "explanation": "MALCONTENT joins MAL- (bad, wrongful) with CONTENT (satisfied). The same prefix drives MALFUNCTION, MALPRACTICE, MALEVOLENT, and MALICE, each signaling a corrupt or harmful version of the root. Choice A defines CONTENT alone and ignores the prefix entirely, the most common slip when a reader recognizes only the familiar second morpheme. Choice B confuses MAL- with the prefix DIS- (apart, away) or with the idea of withdrawal, but MAL- carries no sense of avoidance. Choice D drifts into a vague personality description unsupported by either morpheme. A MALCONTENT is a person whose dissatisfaction often expresses itself as grumbling or open rebellion against authority.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-9",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The suffix -ISM means a doctrine, belief, or practice. Based on this, BAPTISM most nearly means:",
+    "choices": [
+      "the person who performs a religious rite",
+      "the practice or rite of baptizing",
+      "a building used for religious services",
+      "the study of religious texts"
+    ],
+    "correct_index": 1,
+    "explanation": "BAPTISM combines the Greek root BAPT (to dip, immerse) with the suffix -ISM (practice, doctrine). The same suffix produces CAPITALISM, JOURNALISM, and CRITICISM, each naming a practice or system. Choice A confuses -ISM with the agentive suffix -IST, which names the person who practices (BAPTIST). Choice C confuses -ISM with -ARY or -ERY (BAPTISTRY, the building). Choice D confuses -ISM with -OLOGY (study of). BAPTISM names the rite itself rather than its practitioner, location, or academic study.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-10",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word AMBIDEXTROUS contains the prefix AMBI- (both) and the root DEXTR- (right hand, skill). AMBIDEXTROUS most nearly means:",
+    "choices": [
+      "unable to use either hand well",
+      "able to use both hands with equal skill",
+      "preferring the left hand",
+      "lacking coordination"
+    ],
+    "correct_index": 1,
+    "explanation": "AMBIDEXTROUS decomposes into AMBI- (both) plus DEXTR- (right hand, skill) plus the adjective suffix -OUS. The same prefix appears in AMBIGUOUS (both ways) and AMBIVALENT (both feelings). Choice A inverts the meaning by stripping the positive sense of DEXTR-. Choice C confuses DEXTR- with SINISTR- (left hand), the Latin opposite preserved in SINISTER. Choice D ignores both morphemes and describes a generic lack of physical skill. AMBIDEXTROUS describes a person who handles tools, writing, or tasks equally well with either hand.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-11",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 4,
+    "stem": "The word MISANTHROPE contains the Greek prefix MIS- (hatred of) and the root ANTHROP- (humankind). MISANTHROPE most nearly means:",
+    "choices": [
+      "a person who studies human cultures",
+      "a person who hates or distrusts humankind",
+      "a person who acts wrongly toward others",
+      "a person who lives among other people"
+    ],
+    "correct_index": 1,
+    "explanation": "MISANTHROPE comes from Greek MIS- (hatred) plus ANTHROP- (man, humankind), the same root in ANTHROPOLOGY and PHILANTHROPY. The trap is that Greek MIS- (hatred, as in MISOGYNY) is spelled identically to the Latin MIS- (wrongly, as in MISJUDGE), but the two prefixes are unrelated. Choice A confuses MISANTHROPE with ANTHROPOLOGIST, swapping the prefix for the suffix -OLOGIST. Choice C applies the Latin MIS- (wrongly) instead of the Greek one. Choice D ignores the hostility carried by MIS- entirely. A MISANTHROPE actively dislikes the human race.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-12",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 4,
+    "stem": "The word BIBLIOPHILE contains the root BIBLIO- (book) and the suffix -PHILE (lover of). BIBLIOPHILE most nearly means:",
+    "choices": [
+      "one who writes books",
+      "one who fears books",
+      "one who loves and collects books",
+      "one who sells books"
+    ],
+    "correct_index": 2,
+    "explanation": "BIBLIOPHILE pairs BIBLIO- (book) with -PHILE (lover of), the same suffix in AUDIOPHILE and FRANCOPHILE. The trap is the closely spelled -PHOBE (fear of), which reverses the meaning, as in CLAUSTROPHOBE. Choice A confuses -PHILE with the agentive ending in AUTHOR. Choice B applies -PHOBE instead of -PHILE, a high-value distractor because the suffixes look almost identical to a quick reader. Choice D narrows the word to commercial activity not supported by either morpheme. A BIBLIOPHILE is a devoted reader and collector of books.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-13",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 5,
+    "stem": "The suffix -EFY (a variant of -IFY) means to make or cause to become. The word LIQUEFY therefore is best defined as:",
+    "choices": [
+      "to make solid",
+      "to make liquid",
+      "to remove liquid from",
+      "to study the properties of liquid"
+    ],
+    "correct_index": 1,
+    "explanation": "LIQUEFY joins LIQU- (the root in LIQUID) with -EFY (to make), a rare variant of -IFY preserved in only a handful of words such as PUTREFY and STUPEFY. Most English verbs use -IFY (CLARIFY, MAGNIFY), so spellers often miswrite LIQUIFY, but the dictionary form keeps the older -EFY. Choice A inverts the meaning by treating -EFY as if it carried negation. Choice C confuses -EFY (to make) with the prefix DE- (to remove). Choice D confuses -EFY with -OLOGY (study of). LIQUEFY names the process of melting or dissolving a solid into liquid form.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-PFX-NEW-14",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 5,
+    "stem": "The word EPIDERMIS contains the Greek prefix EPI- (upon, over) and the root DERM- (skin). EPIDERMIS most nearly means:",
+    "choices": [
+      "the deepest layer of skin",
+      "the outer layer of skin",
+      "the layer beneath the skin",
+      "a disease affecting the skin"
+    ],
+    "correct_index": 1,
+    "explanation": "EPIDERMIS combines EPI- (upon, over) with DERM- (skin), the same root in DERMATOLOGY. The trap is the prefix APO- (away from), which looks and sounds similar to EPI- but reverses the spatial sense, as in APOSTASY. Choice A confuses EPI- with HYPO- (under), the prefix found in HYPODERMIC (under the skin). Choice C also applies HYPO- or SUB- instead of EPI-. Choice D confuses the prefix with the suffix -ITIS (inflammation) or -OSIS (condition). EPIDERMIS names the outermost protective layer of skin covering the body.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-1",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The root TELE appears in TELEPHONE, TELESCOPE, and TELEVISION. The root TELE most nearly means:",
+    "choices": [
+      "far or distant",
+      "sound",
+      "picture or image",
+      "machine"
+    ],
+    "correct_index": 0,
+    "explanation": "TELE comes from Greek tele, meaning far or distant. Cognates include telephone (distant sound), telescope (viewing what is distant), television (distant viewing), telegraph (writing at a distance), and teleport (carry across distance). 'Sound' is a trap because telephone involves sound, but PHON carries that meaning, not TELE. 'Picture or image' confuses the function of television with the root, since VIS supplies the image meaning. 'Machine' is a generic association with electronics, but TELE never refers to a device, only to distance.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-2",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The root AUTO appears in AUTOMATIC, AUTOBIOGRAPHY, and AUTONOMY. The root AUTO most nearly means:",
+    "choices": [
+      "machine",
+      "self",
+      "car",
+      "moving"
+    ],
+    "correct_index": 1,
+    "explanation": "AUTO comes from Greek autos, meaning self. Cognates include autobiography (self-written life story), autonomy (self-rule), automatic (acting on its own without outside help), autograph (a self-written signature), and autocrat (a self-appointed ruler). 'Machine' confuses AUTO with the English word automation, but the underlying root means self, not the device performing the action. 'Car' is the most common English association with auto, yet automobile literally means self-moving, where AUTO still means self. 'Moving' belongs to MOT or MOB (motor, mobile), separate Latin roots unrelated to AUTO.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-3",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The root ZOO appears in ZOOLOGY, ZODIAC, and PROTOZOA. The root ZOO most nearly means:",
+    "choices": [
+      "cage or enclosure",
+      "animal or living thing",
+      "wild",
+      "garden"
+    ],
+    "correct_index": 1,
+    "explanation": "ZOO comes from Greek zoion, meaning animal or living being. Cognates include zoology (study of animals), protozoa (first-form animals, single-celled), zodiac (originally a circle of animal-shaped constellations), and zoophyte (an animal-plant hybrid such as coral). 'Cage or enclosure' reflects the modern English word zoo as a place, but the root itself names the creatures inside, not the building around them. 'Wild' is a related-but-distinct concept supplied by FER (feral, ferocious), not ZOO. 'Garden' belongs to HORT (horticulture, horticulturist), unrelated to ZOO.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-4",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "Based on the root THERM (meaning heat), the word THERMAL most likely means:",
+    "choices": [
+      "relating to cold",
+      "relating to heat",
+      "relating to weather",
+      "relating to light"
+    ],
+    "correct_index": 1,
+    "explanation": "THERM comes from Greek therme, meaning heat. Cognates include thermal (relating to heat), thermometer (heat measurer), thermos (heat-retaining container), hypothermia (low body heat), and geothermal (heat from the earth). 'Relating to cold' is the opposite, the trap students fall into because hypothermia involves being cold, though the root itself names heat. 'Relating to weather' confuses THERM with general climate words, but weather belongs to METEOR (meteorology). 'Relating to light' belongs to PHOT (photograph) or LUM, separate roots.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-5",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The root MAR appears in MARINE, MARITIME, and SUBMARINE. The root MAR most nearly means:",
+    "choices": [
+      "sand or shore",
+      "sea",
+      "boat",
+      "salt"
+    ],
+    "correct_index": 1,
+    "explanation": "MAR comes from Latin mare, meaning sea. Cognates include marine (relating to the sea), maritime (concerning sea navigation), submarine (under the sea), mariner (a sailor), and aquamarine (sea-water blue). 'Sand or shore' is a related-but-distinct concept supplied by LITTOR (littoral) or AREN (arena, originally sand), not MAR. 'Boat' confuses the vessel with the body of water, since submarines are boats but MAR points to the sea itself. 'Salt' belongs to SAL (saline, salary), a different Latin root, even though seas are salty.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-6",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The root LUM appears in ILLUMINATE, LUMINOUS, and LUMINARY. The root LUM most nearly means:",
+    "choices": [
+      "heat",
+      "light",
+      "color",
+      "shadow"
+    ],
+    "correct_index": 1,
+    "explanation": "LUM comes from Latin lumen, meaning light. Cognates include illuminate (to light up), luminous (giving off light), luminary (a shining person or body), lumen (a unit of light), and translucent (light passing through). 'Heat' is a related-but-distinct concept because hot objects often glow, yet heat belongs to THERM or CALOR, not LUM. 'Color' belongs to CHROM (chromatic), often confused because colored objects reflect light. 'Shadow' is the opposite of LUM and belongs to UMBRA (umbrella, penumbra), the Latin root for shade.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-7",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The root HELIO appears in HELIOCENTRIC, HELIOTROPE, and HELIUM. The root HELIO most nearly means:",
+    "choices": [
+      "heat",
+      "sun",
+      "sky",
+      "star"
+    ],
+    "correct_index": 1,
+    "explanation": "HELIO comes from Greek helios, meaning sun. Cognates include heliocentric (sun-centered), heliotrope (a plant that turns toward the sun), helium (the element first detected in sunlight), and perihelion (closest point to the sun in an orbit). 'Heat' is a related-but-distinct concept because the sun gives heat, but heat itself is THERM. 'Sky' belongs to CEL (celestial) or URAN (Uranus), separate roots. 'Star' belongs to ASTER or STELL (astronomy, stellar), commonly confused with HELIO because both involve space, yet HELIO names only our sun.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-8",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "MONOTONE shares its root with MONOPOLY and MONARCH. The shared root means:",
+    "choices": [
+      "money",
+      "one or single",
+      "voice",
+      "rule"
+    ],
+    "correct_index": 1,
+    "explanation": "MONO comes from Greek monos, meaning one or single. Cognates include monotone (one tone), monopoly (one seller), monarch (one ruler), monologue (one person speaking), and monogamy (one partner). 'Money' confuses MONO with monetary words, which actually use MONET (Latin moneta), an unrelated root. 'Voice' is a trap because monotone involves voice, yet the voice meaning belongs to VOC, while MONO contributes only the one. 'Rule' is a related-but-distinct concept supplied by ARCH (monarch, anarchy), which is the second half of monarch, not MONO.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-9",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root AMBI appears in AMBIDEXTROUS, AMBIGUOUS, and AMBIVALENT. The root AMBI most nearly means:",
+    "choices": [
+      "around",
+      "both",
+      "uncertain",
+      "skilled"
+    ],
+    "correct_index": 1,
+    "explanation": "AMBI comes from Latin ambi, meaning both or on both sides. Cognates include ambidextrous (using both hands), ambiguous (having both meanings), ambivalent (having both feelings), and amphibian (living in both water and on land, from the Greek cognate amphi). 'Around' belongs to CIRCUM (circumference) or PERI (perimeter), often confused because ambient sound surrounds you. 'Uncertain' describes the result of ambiguity, not the root itself. 'Skilled' is the common-cognate trap from ambidextrous, but AMBI supplies both, while DEXTER supplies the skilled or right-handed meaning.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-10",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root MAGN appears in MAGNIFY, MAGNANIMOUS, and MAGNITUDE. The root MAGN most nearly means:",
+    "choices": [
+      "strong",
+      "great or large",
+      "many",
+      "powerful attraction"
+    ],
+    "correct_index": 1,
+    "explanation": "MAGN comes from Latin magnus, meaning great or large. Cognates include magnify (make larger), magnitude (greatness in size), magnanimous (great-souled, generous), magnificent (great in deed), and magnate (a great person in business). 'Strong' is a related-but-distinct concept supplied by FORT (fortify) or ROBUST, not MAGN. 'Many' belongs to MULTI or POLY, often confused with great because both suggest abundance. 'Powerful attraction' is the common-cognate trap from magnet, an unrelated word borrowed from a place name (Magnesia), not the size root.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-11",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root MIT/MISS appears in TRANSMIT, EMIT, MISSILE, and DISMISS. This root most nearly means:",
+    "choices": [
+      "to send",
+      "to receive",
+      "to throw",
+      "to allow"
+    ],
+    "correct_index": 0,
+    "explanation": "MIT/MISS comes from Latin mittere, meaning to send. Cognates include transmit (send across), emit (send out), missile (something sent), dismiss (send away), and submit (send under, yield). 'To receive' is the opposite and belongs to CIP/CEPT (receive, accept), commonly confused because messages must be both sent and received. 'To throw' belongs to JECT (eject, reject), a related-but-distinct action since throwing and sending overlap. 'To allow' is the common-cognate trap from permit and admit, where the English meaning has drifted, while the underlying root still means send.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-12",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root JUR/JUS appears in JURY, JUSTICE, PERJURY, and JURISDICTION. This root most nearly means:",
+    "choices": [
+      "law or oath",
+      "judge",
+      "court",
+      "punishment"
+    ],
+    "correct_index": 0,
+    "explanation": "JUR/JUS comes from Latin jus, meaning law, right, or sworn oath. Cognates include jury (a sworn body), justice (lawful rightness), perjury (false oath), jurisdiction (the speaking of law), and jurisprudence (the study of law). 'Judge' belongs to JUDIC (judicial, adjudicate), a related-but-distinct root for the person, not the law itself. 'Court' is a related-but-distinct concept supplied by CUR (curia, courthouse), where law is applied. 'Punishment' belongs to PEN or PUN (penalty, punitive), the consequence of breaking law, not law itself.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-13",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 4,
+    "stem": "The root VOR appears in CARNIVORE, HERBIVORE, OMNIVORE, and VORACIOUS. This root most nearly means:",
+    "choices": [
+      "to grow",
+      "to devour or eat greedily",
+      "to hunt",
+      "to feed"
+    ],
+    "correct_index": 1,
+    "explanation": "VOR comes from Latin vorare, meaning to devour or swallow whole. Cognates include carnivore (meat-devourer), herbivore (plant-devourer), omnivore (all-devourer), voracious (greedy in appetite), and devour itself. 'To grow' belongs to CRESC (crescendo, increase), an unrelated concept. 'To hunt' is a related-but-distinct action supplied by VEN (venatic) or PRED (predator), since hunting precedes devouring. 'To feed' is the gentler common-cognate trap, since carnivores do feed, yet VOR specifically carries the violent, greedy swallowing, not ordinary eating, which is ED or NUTR.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-14",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 4,
+    "stem": "The root NOM/NOMEN appears in NOMINATE, NOMENCLATURE, and IGNOMINIOUS. This root most nearly means:",
+    "choices": [
+      "number",
+      "name",
+      "law",
+      "honor"
+    ],
+    "correct_index": 1,
+    "explanation": "NOM/NOMEN comes from Latin nomen, meaning name. Cognates include nominate (to put a name forward), nomenclature (a system of names), ignominious (without good name, shameful), pseudonym (false name), and renown (re-named, famous). 'Number' is the common-cognate trap because numerator and enumerate share the NUM root, a different Latin word that students confuse with NOM. 'Law' belongs to LEG or JUR, separate roots. 'Honor' is the opposite of ignominious and is supplied by HONOR or DIGNI (dignity), related-but-distinct concepts shaped by but not equal to a good name.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-15",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 5,
+    "stem": "The root FID appears in FIDELITY, CONFIDE, PERFIDY, and BONA FIDE. The root FID most nearly means:",
+    "choices": [
+      "faith or trust",
+      "loyalty",
+      "secret",
+      "promise"
+    ],
+    "correct_index": 0,
+    "explanation": "FID comes from Latin fides, meaning faith or trust. Cognates include fidelity (faithfulness), confide (to trust with a secret), perfidy (betrayal of trust), bona fide (in good faith), and infidel (one without faith). 'Loyalty' is the close common-cognate trap since fidelity often translates as loyalty, yet loyalty itself comes from LEG (lawful), while FID carries the broader trust meaning. 'Secret' confuses the act of confiding with the root, but secret belongs to SECR (secret, secrete). 'Promise' is a related-but-distinct concept supplied by PROMIS or VOW, the result of trust rather than its root.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-ROOT-NEW-16",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 5,
+    "stem": "The root JECT appears in EJECT, INJECT, PROJECT, and DEJECTED. The root JECT most nearly means:",
+    "choices": [
+      "to send",
+      "to throw",
+      "to push",
+      "to fall"
+    ],
+    "correct_index": 1,
+    "explanation": "JECT comes from Latin jacere, meaning to throw or hurl. Cognates include eject (throw out), inject (throw in), project (throw forward), dejected (thrown down, low in spirit), and trajectory (the path of a thrown object). 'To send' belongs to MIT/MISS (transmit, missile), a related-but-distinct action commonly confused because both move things outward, yet sending implies a destination while throwing does not. 'To push' belongs to PEL/PULS (propel, expulsion), the contact-force root. 'To fall' is the opposite direction, supplied by CAD/CAS (cascade, casualty), often confused with dejected because both involve downward motion.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-SN-NEW-1",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "CANDID most nearly means:",
+    "choices": [
+      "frank",
+      "cautious",
+      "candied",
+      "polite"
+    ],
+    "correct_index": 0,
+    "explanation": "Candid means honest and straightforward in expression, as in a candid review that holds nothing back. Frank carries the same sense of open, unguarded speech. Cautious is the antonym trap: a cautious speaker filters and hedges, the opposite of candid. Candied is a sound-alike that means coated in sugar and has no relation to honesty. Polite is a register-confusion distractor; candid speakers may be polite or blunt, but politeness describes manners rather than openness.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-SN-NEW-2",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "INNOCUOUS most nearly means:",
+    "choices": [
+      "harmless",
+      "innocent",
+      "ignorant",
+      "harmful"
+    ],
+    "correct_index": 0,
+    "explanation": "Innocuous means producing no injury or offense, as in an innocuous comment that no one took badly. Harmless is a direct match. Innocent is a sound-alike and partial-overlap trap; it refers to lack of guilt or moral fault, not lack of harmful effect. Ignorant is another sound-alike pulled by the prefix in, but it means lacking knowledge. Harmful is the antonym, naming the exact quality innocuous denies.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-SN-NEW-3",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "IMMINENT most nearly means:",
+    "choices": [
+      "impending",
+      "eminent",
+      "immense",
+      "distant"
+    ],
+    "correct_index": 0,
+    "explanation": "Imminent means about to occur, as in an imminent storm that forces the crew indoors within minutes. Impending shares the meaning of a near, unavoidable arrival. Eminent is the classic sound-alike trap; it means distinguished or prominent in reputation and has nothing to do with timing. Immense is another sound-alike that describes great size, not closeness in time. Distant is the antonym, placing the event far from the present.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-SN-NEW-4",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "AMICABLE most nearly means:",
+    "choices": [
+      "friendly",
+      "talkative",
+      "hostile",
+      "amicus"
+    ],
+    "correct_index": 0,
+    "explanation": "Amicable means marked by goodwill, as in an amicable settlement that leaves both parties on decent terms. Friendly captures that cooperative warmth. Talkative is a register-confusion distractor; an amicable person may speak little, since the word describes disposition rather than volume of speech. Hostile is the antonym, naming the antagonism amicable resolves. Amicus is a Latin sound-alike root meaning friend, but as a standalone English word it does not mean friendly the way amicable does.",
+    "status": "draft"
+  },
+  {
+    "external_key": "WK-SN-NEW-5",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "DESPONDENT most nearly means:",
+    "choices": [
+      "dejected",
+      "responsive",
+      "dependent",
+      "elated"
+    ],
+    "correct_index": 0,
+    "explanation": "Despondent means cast down in spirits to the point of losing hope, as in a despondent candidate who stops returning calls after the rejection. Dejected matches that low, defeated mood. Responsive is a sound-alike pulled from the spond root meaning to answer or pledge, but it describes reactivity, not sorrow. Dependent is another sound-alike that means relying on others, with no emotional content. Elated is the antonym, naming the high spirits despondency lacks.",
+    "status": "draft"
+  }
+]

@@ -151,7 +151,7 @@ export function OnboardingForm() {
       weakest_subtest: weakest ?? undefined,
     });
 
-    router.push("/practice-test?variant=diagnostic&welcome=1");
+    router.push("/app/home");
   }
 
   async function handleSkip() {
@@ -181,7 +181,7 @@ export function OnboardingForm() {
     }
 
     trackEvent("onboarding_skipped");
-    router.push("/account");
+    router.push("/app/home");
   }
 
   return (

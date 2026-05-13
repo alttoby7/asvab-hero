@@ -790,7 +790,7 @@ export default function AFCTPage() {
           Above 100 signals readiness; below 100 means more study. Pair
           whichever program you pick with the{" "}
           <Link href="/asvab-study-guide">ASVAB study guide</Link> and free{" "}
-          <Link href="/practice-test">practice test</Link>.
+          <Link href="/afct-practice-test">AFCT practice test</Link>.
         </p>
 
         {/* TABLE: AFCT Prep Program Comparison */}
@@ -1203,8 +1203,8 @@ export default function AFCTPage() {
               stuck. Read PC questions before the passage. Use scratch paper for
               AR setup. Eliminate two WK distractors before deciding. Two-pass
               through every subtest. For night-before refreshers, hit the{" "}
-              <Link href="/practice-test">practice test</Link> and review weak
-              subtests one last time.
+              <Link href="/afct-practice-test">AFCT practice test</Link> and
+              review weak subtests one last time.
             </p>
           </div>
         </div>
@@ -1324,18 +1324,27 @@ export default function AFCTPage() {
         {/* ───────── CTA Box ───────── */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">
           <h3 className="font-display text-xl font-bold text-text-primary">
-            See What Your Scores Unlock
+            Check Your Baseline Before You Retest
           </h3>
           <p className="mt-2 text-sm text-text-secondary">
-            Enter your 9 subtest scores and instantly see your AFQT, composite
-            scores, and every job you qualify for.
+            Take a free 30-question diagnostic with the same subtests and
+            question types as the AFCT. See which areas are holding your GT
+            down.
           </p>
-          <Link
-            href="/calculator"
-            className="mt-4 inline-block rounded-xl bg-accent px-6 py-3 font-display text-base font-bold text-white transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)] no-underline"
-          >
-            Try the Free Calculator
-          </Link>
+          <div className="mt-4 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+            <Link
+              href="/afct-practice-test"
+              className="inline-block rounded-xl bg-accent px-6 py-3 font-display text-base font-bold text-white transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)] no-underline"
+            >
+              Take the Free AFCT Diagnostic
+            </Link>
+            <Link
+              href="/calculator"
+              className="inline-block rounded-xl border border-navy-border px-6 py-3 font-display text-base font-bold text-text-secondary transition-all duration-200 hover:border-accent hover:text-accent no-underline"
+            >
+              Score Calculator
+            </Link>
+          </div>
         </div>
       </article>
     </div>

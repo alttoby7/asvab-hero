@@ -12,7 +12,7 @@
       "300"
     ],
     "correct_index": 2,
-    "explanation": "Total = 24 × 15 = 360 bottles. 360 − 120 = 240 remain. The trap is computing 24 × 12 = 288 by misreading the crate count."
+    "explanation": "Total bottles received = 24 × 15 = 360, then subtract sold: 360 − 120 = 240 remain. Choice 120 picks the number sold instead of the number left, a direct misread of the question. Choice 180 subtracts the sold count from a wrong multiplication (24 × 12.5 = 300, then 300 − 120). Choice 300 uses 20 × 15 = 300 by dropping the 4 in 24, then forgets to subtract anything afterward."
   },
   {
     "external_key": "AR-AF-2",
@@ -27,7 +27,7 @@
       "$19.50"
     ],
     "correct_index": 3,
-    "explanation": "Notebooks: 4 × $3 = $12. Pens: 6 × $1.25 = $7.50. Total = $12 + $7.50 = $19.50."
+    "explanation": "Total = (4 × $3) + (6 × $1.25) = $12 + $7.50 = $19.50. Choice $16.50 uses 6 × $0.75 for the pens, dropping the whole-dollar part of $1.25. Choice $17.50 rounds pens to $1 each ($6) and adds $11.50 in notebooks, slipping a dollar. Choice $18.75 multiplies 5 × $1.25 = $6.25 for pens, miscounting six pens as five before adding to the $12 notebook total plus $0.50."
   },
   {
     "external_key": "AR-AF-3",
@@ -42,7 +42,7 @@
       "150"
     ],
     "correct_index": 1,
-    "explanation": "10 boxes × 75 lb = 750 lb loaded. Remaining capacity = 850 − 750 = 100 lb."
+    "explanation": "Load = 10 × 75 = 750 lb, so remaining capacity = 850 − 750 = 100 lb. Choice 75 reports the weight of a single box instead of the leftover capacity, a misread of the question. Choice 125 subtracts 725 instead of 750 (dropped a 5 in the box-multiplication). Choice 150 doubles one box weight to arrive at a tempting round number that has no basis in the setup."
   },
   {
     "external_key": "AR-AF-4",
@@ -57,7 +57,7 @@
       "14"
     ],
     "correct_index": 2,
-    "explanation": "Total beds = 6 × 4 = 24. Empty = 24 − 14 = 10."
+    "explanation": "Total beds = 6 × 4 = 24, then empty beds = 24 − 14 = 10. Choice 6 picks the room count by mistake instead of completing the bed count. Choice 8 uses (4 × 4) − 14 = 2, then adds 6 rooms or similar mix-up between rooms and beds. Choice 14 reports the number of soldiers currently assigned instead of the empty beds, the most direct misread of the question."
   },
   {
     "external_key": "AR-AF-5",
@@ -72,7 +72,7 @@
       "$11,520"
     ],
     "correct_index": 2,
-    "explanation": "Monthly savings = $2,880 − $720 − $340 = $1,820. Over 4 months: $1,820 × 4 = $7,280."
+    "explanation": "Monthly savings = $2,880 − $720 − $340 = $1,820, and 4 months × $1,820 = $7,280. Choice $1,820 reports one month of savings, forgetting the four-month window. Choice $6,400 uses ($2,880 − $720) × 4, skipping the second bill of $340. Choice $11,520 multiplies the full $2,880 paycheck by 4 months and ignores both deductions, treating the question as gross pay only."
   },
   {
     "external_key": "AR-RP-1",
@@ -87,7 +87,7 @@
       "18"
     ],
     "correct_index": 1,
-    "explanation": "Flour:Sugar = 3:2. Sugar = (2/3) × 12 = 8 cups. The trap is flipping the ratio and using 3/2 × 12 = 18."
+    "explanation": "Sugar = (2/3) × 12 = 8 cups, applying the sugar-to-flour ratio directly. Choice 6 halves the flour count, treating the ratio as a clean 2:1. Choice 9 uses 3/4 of 12, confusing the ratio parts with the total ratio sum. Choice 18 flips the ratio and computes 3/2 × 12 = 18, giving more sugar than flour, which contradicts a 3:2 flour-heavy ratio."
   },
   {
     "external_key": "AR-RP-2",
@@ -102,7 +102,7 @@
       "282"
     ],
     "correct_index": 2,
-    "explanation": "Euros = 240 × 0.85 = 204. The trap answer 282 comes from dividing 240 ÷ 0.85, which is converting in the wrong direction."
+    "explanation": "Euros = dollars × rate = 240 × 0.85 = 204 euros. Choice 180 uses 0.75 instead of 0.85, misreading the conversion factor. Choice 196 multiplies by about 0.82, rounding the rate down before the multiplication. Choice 282 divides 240 ÷ 0.85, converting in the reverse direction as if 240 euros were being converted to dollars, the classic currency-direction trap."
   },
   {
     "external_key": "AR-RP-4",
@@ -117,7 +117,7 @@
       "7 hours"
     ],
     "correct_index": 2,
-    "explanation": "Total work = 12 × 8 = 96 soldier-hours. With 16 soldiers: 96 ÷ 16 = 6 hours. This is inverse proportion — more workers means less time."
+    "explanation": "Total work = 12 × 8 = 96 soldier-hours, so with 16 soldiers the time = 96 ÷ 16 = 6 hours. This is inverse proportion: more workers means less time. Choice 4 hours halves the time because the crew grew, but 16 is not double 12. Choice 5 hours scales linearly (8 − 3), treating extra soldiers as a flat hour subtraction. Choice 7 hours barely reduces the time, as if 4 extra soldiers only shave off 1 hour."
   },
   {
     "external_key": "AR-RP-5",
@@ -132,7 +132,7 @@
       "40"
     ],
     "correct_index": 2,
-    "explanation": "Vinegar = (3/8) × 64 = 24 ounces. The trap is using 3/5 of 64 = 38.4, or thinking vinegar is the larger portion."
+    "explanation": "Total parts = 5 + 3 = 8, so vinegar = (3/8) × 64 = 24 ounces. Choice 16 uses (2/8) × 64, miscounting parts or off-by-one on the vinegar share. Choice 20 uses (5/16) × 64, mixing the parts-of-eight with a parts-of-sixteen denominator. Choice 40 takes (5/8) × 64, giving the oil portion instead of the vinegar portion, the classic which-side-of-the-ratio trap."
   },
   {
     "external_key": "AR-RP-6",
@@ -147,7 +147,7 @@
       "16"
     ],
     "correct_index": 1,
-    "explanation": "Pepper = (1/4) × 20 = 5 grams."
+    "explanation": "Pepper = salt ÷ 4 = 20 ÷ 4 = 5 grams, applying the 4:1 ratio directly. Choice 4 picks the larger ratio number itself rather than scaling it against the 20 grams. Choice 8 doubles the correct answer, treating the ratio as 4:2 by mistake. Choice 16 subtracts 4 from 20, mixing subtraction with the ratio relationship instead of dividing."
   },
   {
     "external_key": "AR-RP-7",
@@ -177,7 +177,7 @@
       "$65"
     ],
     "correct_index": 2,
-    "explanation": "Discount = 25% × $80 = $20. Sale price = $80 − $20 = $60."
+    "explanation": "Sale price = $80 × (1 − 0.25) = $80 × 0.75 = $60. Choice $20 reports the discount amount ($80 × 0.25) instead of the sale price, a misread of what is asked. Choice $55 subtracts $25 (treating 25% as a flat dollar amount). Choice $65 subtracts $15, using a roughly 19% discount or rounding $20 down to $15 in the discount step."
   },
   {
     "external_key": "AR-PC-2",
@@ -192,7 +192,7 @@
       "30%"
     ],
     "correct_index": 2,
-    "explanation": "Percent increase = (75 − 60) / 60 × 100 = 15/60 × 100 = 25%. The trap is dividing by the new value 75 to get 20%."
+    "explanation": "Percent change = (new − old) / old × 100 = (75 − 60) / 60 × 100 = 15/60 × 100 = 25%. Choice 15% reports the raw point gain as if a percentage, treating each point as one percent. Choice 20% divides 15 by the new value 75 instead of the original 60, the most common percent-change error. Choice 30% doubles the raw gain, treating each point as 2%."
   },
   {
     "external_key": "AR-PC-3",
@@ -222,7 +222,7 @@
       "$600"
     ],
     "correct_index": 1,
-    "explanation": "Simple interest = Principal × Rate × Time = $1,000 × 0.06 × 3 = $180. The trap is computing only 1 year's interest ($60) or applying compound interest."
+    "explanation": "Simple interest = P × r × t = $1,000 × 0.06 × 3 = $180. Choice $60 computes one year's interest only and forgets to multiply by the 3-year period. Choice $191 applies compound interest (1,000 × 1.06³ − 1,000 ≈ 191), but the problem specifies simple interest. Choice $600 uses 60% instead of 6%, shifting the decimal one place during the rate setup."
   },
   {
     "external_key": "AR-PC-5",
@@ -237,7 +237,7 @@
       "$58.00"
     ],
     "correct_index": 1,
-    "explanation": "Marked-up price = $50 × 1.20 = $60. After 10% discount: $60 × 0.90 = $54. The trap is thinking +20% then −10% nets +10%, giving $55."
+    "explanation": "Final = $50 × 1.20 × 0.90 = $60 × 0.90 = $54. Choice $50.00 assumes +20% and −10% cancel back to the original price, but the percentages apply to different bases. Choice $55.00 nets the rates additively (+20% − 10% = +10%) and applies that single rate to $50. Choice $58.00 applies the 10% discount to the original $50 first and then adds the 20% markup, mixing the order of operations."
   },
   {
     "external_key": "AR-PC-6",
@@ -252,7 +252,7 @@
       "16%"
     ],
     "correct_index": 2,
-    "explanation": "Percent increase = (600 ÷ 4,000) × 100 = 15%."
+    "explanation": "Percent increase = (new − old) / old × 100 = 600 / 4,000 × 100 = 15%. Choice 12.5% divides 600 by 4,800, slightly inflating the base population beyond the original. Choice 13% divides 600 by 4,600, using the new total as the base, the most common percent-change reversal trap. Choice 16% divides 600 by 3,750 or rounds 15% up to a friendlier whole number, overshooting the true ratio by a single percentage point."
   },
   {
     "external_key": "AR-RD-1",
@@ -267,7 +267,7 @@
       "5 miles"
     ],
     "correct_index": 2,
-    "explanation": "45 minutes = 0.75 hours. Distance = 6 × 0.75 = 4.5 miles."
+    "explanation": "Convert 45 minutes to 0.75 hour, then distance = 6 × 0.75 = 4.5 miles. Choice 3.5 miles uses 35 minutes instead of 45, misreading the time. Choice 4 miles rounds 0.75 down to 2/3 and computes 6 × 2/3, undershooting the time fraction. Choice 5 miles rounds 0.75 up to about 0.83 hour, overshooting the conversion from minutes to hours."
   },
   {
     "external_key": "AR-RD-2",
@@ -282,7 +282,7 @@
       "200 miles"
     ],
     "correct_index": 3,
-    "explanation": "Combined separation rate = 45 + 55 = 100 mph. Distance apart = 100 × 2 = 200 miles. The trap is using only one convoy's speed."
+    "explanation": "Combined separation rate = 45 + 55 = 100 mph, so after 2 hours they are 100 × 2 = 200 miles apart. Choice 90 miles uses only the slower convoy (45 × 2), ignoring the second convoy's motion. Choice 110 miles uses only the faster convoy (55 × 2). Choice 180 miles uses an average speed of 50 mph for one convoy and doubles, settling on 90 × 2 instead of summing both speeds."
   },
   {
     "external_key": "AR-RD-3",
@@ -297,7 +297,7 @@
       "67 minutes"
     ],
     "correct_index": 2,
-    "explanation": "Net fill rate = 40 − 15 = 25 gal/min. Time = 1,000 ÷ 25 = 40 minutes."
+    "explanation": "Net fill rate = 40 − 15 = 25 gal/min, so time = 1,000 ÷ 25 = 40 minutes. Choice 25 minutes divides 1,000 by 40, using only the fill rate and ignoring the drain. Choice 33 minutes uses about 30 gal/min net, rounding the fill rate up loosely. Choice 67 minutes divides 1,000 by 15, using only the drain rate as if the fill pump were off, the inverse-direction trap."
   },
   {
     "external_key": "AR-RD-4",
@@ -312,7 +312,7 @@
       "5 hours"
     ],
     "correct_index": 2,
-    "explanation": "Speed = 180 ÷ 3 = 60 mph. Time for 270 miles = 270 ÷ 60 = 4.5 hours."
+    "explanation": "Speed = 180 ÷ 3 = 60 mph, so time for 270 miles = 270 ÷ 60 = 4.5 hours. Choice 3.5 hours adds a half-hour to the original 3 hours, ignoring the proper rate-based scaling for the extra 90 miles. Choice 4 hours uses a speed of 67.5 mph (270/4), rounding the speed up. Choice 5 hours uses 54 mph (270/5), rounding the speed down a hair below the actual 60 mph."
   },
   {
     "external_key": "AR-RD-5",
@@ -327,7 +327,7 @@
       "3 hours 20 minutes"
     ],
     "correct_index": 1,
-    "explanation": "Combined rate = 1/4 + 1/6 = 3/12 + 2/12 = 5/12 per hour. Time = 12/5 = 2.4 hours = 2 hours 24 minutes."
+    "explanation": "Combined rate = 1/4 + 1/6 = 5/12 per hour, so time = 12/5 = 2.4 hours = 2 hours 24 minutes. Choice 2 hours assumes the team finishes in half of A's time, ignoring B's slower pace. Choice 3 hours splits the difference between 4 and 6 by halving the sum, the classic average-the-times trap. Choice 3 hours 20 minutes adds the times wrong (10/3 hours), still averaging instead of combining rates."
   },
   {
     "external_key": "AR-RD-6",
@@ -342,7 +342,7 @@
       "3.5 hours"
     ],
     "correct_index": 2,
-    "explanation": "Time = Distance ÷ Speed = 420 ÷ 140 = 3 hours."
+    "explanation": "Time = distance ÷ speed = 420 ÷ 140 = 3 hours, a clean division once the formula is set up. Choice 2 hours divides 420 by about 210, mistakenly doubling the speed before dividing. Choice 2.5 hours divides 420 by 168, an arbitrary midpoint between 140 and 210. Choice 3.5 hours divides 420 by 120, rounding the speed down from 140 by a full 20 mph and inflating the time."
   },
   {
     "external_key": "AR-WP-1",
@@ -357,7 +357,7 @@
       "$1,000"
     ],
     "correct_index": 3,
-    "explanation": "Rent = 1/3 × $2,400 = $800. Food = 1/4 × $2,400 = $600. Savings = $2,400 − $800 − $600 = $1,000."
+    "explanation": "Spent fraction = 1/3 + 1/4 = 7/12, so saved fraction = 5/12, and 5/12 × $2,400 = $1,000. Choice $400 takes about 1/6 of pay, likely from adding 1/3 + 1/4 incorrectly as 1/7 then taking the complement. Choice $600 reports the food spending alone instead of the savings. Choice $800 reports the rent spending alone, again confusing a spent category with the leftover savings amount."
   },
   {
     "external_key": "AR-WP-2",
@@ -372,7 +372,7 @@
       "$210"
     ],
     "correct_index": 3,
-    "explanation": "Let each of the two pay x. The third pays 2x. Equation: x + x + 2x = 4x = $420, so x = $105. The larger share = 2x = $210."
+    "explanation": "Let each smaller share = x and the larger share = 2x; total = x + x + 2x = 4x = $420, so x = $105 and the larger share = 2x = $210. Choice $105 reports the smaller share rather than the larger one. Choice $140 splits $420 evenly across three soldiers, ignoring the doubled share. Choice $168 uses 2/5 of $420 instead of 2/4, splitting the order into five parts rather than four."
   },
   {
     "external_key": "AR-WP-3",
@@ -387,7 +387,7 @@
       "312"
     ],
     "correct_index": 3,
-    "explanation": "On leave = 35% × 480 = 168. On base = 480 − 168 = 312. The trap is selecting 168 (those on leave) rather than those remaining."
+    "explanation": "On base = 480 × (1 − 0.35) = 480 × 0.65 = 312. Choice 148 uses about 30% remaining (a rounding-down of the complement). Choice 168 reports the number on leave (480 × 0.35) instead of those remaining, the most common misread. Choice 288 uses 60% on base instead of 65%, rounding the leave percent up to 40% before taking the complement."
   },
   {
     "external_key": "AR-WP-4",
@@ -402,7 +402,7 @@
       "600"
     ],
     "correct_index": 2,
-    "explanation": "Breakfast = 80 × 2 = 160. Lunch = 120 × 3 = 360. Total = 160 + 360 = 520."
+    "explanation": "Total = (80 × 2) + (120 × 3) = 160 + 360 = 520. Choice 400 multiplies 80 × 5 hours, applying the breakfast rate to the entire 5-hour window. Choice 500 uses 100 × 5, averaging the two rates instead of weighting each by its own hours. Choice 600 uses 120 × 5, applying the lunch rate to all hours and inflating the breakfast portion."
   },
   {
     "external_key": "AR-WP-5",
@@ -417,7 +417,7 @@
       "6.5 hours"
     ],
     "correct_index": 2,
-    "explanation": "Leg 1: 60 ÷ 30 = 2 hrs. Leg 2: 120 ÷ 60 = 2 hrs. Leg 3: 90 ÷ 45 = 2 hrs. Total = 6 hours."
+    "explanation": "Each leg takes distance ÷ speed: 60/30 = 2 hr, 120/60 = 2 hr, 90/45 = 2 hr, total = 6 hours. Choice 5 hours adds two legs at 2 hours and rounds the third leg down to 1 hour. Choice 5.5 hours uses 90/60 = 1.5 hours for the third leg, applying the wrong speed. Choice 6.5 hours adds a half-hour buffer that the problem never mentions."
   },
   {
     "external_key": "AR-WP-6",
@@ -432,7 +432,7 @@
       "$3,200"
     ],
     "correct_index": 2,
-    "explanation": "Raise = 5% × $3,000 = $150. New pay = $3,000 + $150 = $3,150."
+    "explanation": "New pay = $3,000 × 1.05 = $3,150, or compute the raise as $3,000 × 0.05 = $150 and add. Choice $3,050 adds only $50, treating 5% as a flat $50 increase. Choice $3,100 uses about a 3.3% raise (adding $100). Choice $3,200 uses a 6.7% raise, rounding the dollar increase up to a friendlier $200 instead of the actual $150."
   },
   {
     "external_key": "MK-AL-1",
@@ -447,7 +447,7 @@
       "x = 9"
     ],
     "correct_index": 1,
-    "explanation": "3x = 22 − 7 = 15. x = 15 ÷ 3 = 5."
+    "explanation": "Undo addition first, then multiplication. Subtract 7 from both sides: 3x = 15. Divide by 3: x = 5. The choice x = 3 comes from dividing 22 by 3 (skipping the −7 step) and rounding. The choice x = 7 comes from leaving the 7 on the wrong side, computing (22 + 7)÷3 = 29÷3 ≈ 9.67 and selecting the nearest small integer, or by sign-flipping the 7. The choice x = 9 adds 7 instead of subtracting, getting 3x = 29 → about 9.67 rounded to 9."
   },
   {
     "external_key": "MK-AL-2",
@@ -462,7 +462,7 @@
       "x = 32"
     ],
     "correct_index": 2,
-    "explanation": "4x = 23 + 9 = 32. x = 32 ÷ 4 = 8."
+    "explanation": "Add 9 to both sides to clear the constant: 4x = 32. Divide by 4: x = 8. The choice x = 3.5 comes from subtracting 9 instead of adding, getting 4x = 14, then 14÷4. The choice x = 7 comes from adding 9 but then subtracting 4 instead of dividing: 32 − 4 close to 28, slipped to 28÷4. The choice x = 32 stops one step short, taking 4x = 32 as the final answer without dividing by 4."
   },
   {
     "external_key": "MK-AL-3",
@@ -477,7 +477,7 @@
       "x = 5"
     ],
     "correct_index": 2,
-    "explanation": "Add both equations: (2x + y) + (x − y) = 11 + 1 → 3x = 12 → x = 4. Then y = x − 1 = 3. Verify: 2(4) + 3 = 11 ✓."
+    "explanation": "Add the equations to eliminate y: (2x + y) + (x − y) = 11 + 1, giving 3x = 12, so x = 4. Back-substitute into x − y = 1: y = 3. Verify: 2(4) + 3 = 11. The choice x = 2 comes from subtracting the equations instead of adding (the y terms have opposite signs, so addition is what cancels). The choice x = 3 returns the y value by mistake. The choice x = 5 comes from solving only the first equation with a guessed y."
   },
   {
     "external_key": "MK-AL-4",
@@ -486,13 +486,13 @@
     "difficulty": 4,
     "stem": "Which value of x satisfies the inequality 5x − 4 > 16?",
     "choices": [
+      "x = 2",
       "x = 3",
       "x = 4",
-      "x = 4.5",
       "x = 5"
     ],
     "correct_index": 3,
-    "explanation": "5x > 16 + 4 = 20, so x > 4. Among the choices, only x = 5 satisfies x > 4."
+    "explanation": "Solve the inequality first: add 4 to both sides to get 5x > 20, then divide by 5 to get x > 4. The solution set is every value strictly greater than 4, so x = 5 is the only choice that qualifies. 'x = 4' is the trap of treating > as ≥; substituting gives 5(4) − 4 = 16, which equals 16 rather than strictly exceeding it. 'x = 3' gives 5(3) − 4 = 11 and 'x = 2' gives 5(2) − 4 = 6, both well below 16."
   },
   {
     "external_key": "MK-AL-5",
@@ -507,7 +507,7 @@
       "x = 12"
     ],
     "correct_index": 0,
-    "explanation": "Distribute: 2x + 6 = 18. 2x = 12. x = 6."
+    "explanation": "Two equivalent paths give the same answer. Distribute: 2x + 6 = 18, then 2x = 12, so x = 6. Or divide first: x + 3 = 9, then x = 6. The choice x = 7 comes from subtracting 3 from 18 first (15) and dividing by something near 2. The choice x = 9 comes from dividing 18 by 2 and stopping, ignoring the +3 inside the parentheses. The choice x = 12 stops at 2x = 12 without dividing by 2."
   },
   {
     "external_key": "MK-AL-6",
@@ -522,7 +522,7 @@
       "5(d − 200)"
     ],
     "correct_index": 0,
-    "explanation": "Total earned after 5 days = 5d. Since 5d = $650, he then spends $200, leaving 5d − 200 = 650 − 200 = $450. The expression 5d − 200 models earning then spending."
+    "explanation": "Earnings come first, then spending. Five days at $d per day earns 5d total. Subtracting the $200 spent leaves 5d − 200. The choice d/5 − 200 divides instead of multiplies, treating d as a total rather than a daily rate. The choice 650 − 5d double-counts the earnings by subtracting them from the stated total. The choice 5(d − 200) applies the spending inside the daily rate, which would mean spending $200 every day, not once."
   },
   {
     "external_key": "MK-FR-1",
@@ -537,7 +537,7 @@
       "1 7/12"
     ],
     "correct_index": 2,
-    "explanation": "Common denominator is 12. 3/4 = 9/12; 2/3 = 8/12. Sum = 17/12 = 1 5/12. The trap is adding numerators and denominators directly to get 5/7."
+    "explanation": "Find a common denominator. LCD of 4 and 3 is 12. Convert: 3/4 = 9/12 and 2/3 = 8/12. Add: 9/12 + 8/12 = 17/12 = 1 5/12. The choice 5/7 comes from adding numerators and denominators directly (3+2 over 4+3), which never works for fraction addition. The choice 5/12 has the right denominator but uses subtraction in the numerator. The choice 1 7/12 swaps the numerator and adds an extra 2/12 by mis-converting 2/3 as 10/12."
   },
   {
     "external_key": "MK-FR-2",
@@ -552,7 +552,7 @@
       "7/12"
     ],
     "correct_index": 1,
-    "explanation": "Convert to a common denominator of 120: 5/8 = 75/120, 2/3 = 80/120, 3/5 = 72/120, 7/12 = 70/120. Largest is 2/3."
+    "explanation": "Convert to a common denominator of 120: 5/8 = 75/120, 2/3 = 80/120, 3/5 = 72/120, 7/12 = 70/120. The largest numerator wins, so 2/3 is largest. Decimal check: 0.625, 0.667, 0.600, 0.583. The choice 5/8 looks close to 2/3 but is a hair smaller. The choice 3/5 confuses students who think a smaller denominator always means a larger fraction. The choice 7/12 has the largest denominator and is the smallest of the four."
   },
   {
     "external_key": "MK-FR-3",
@@ -567,7 +567,7 @@
       "4.75 miles"
     ],
     "correct_index": 2,
-    "explanation": "1 3/4 = 1.75 miles. Total = 2.75 + 1.75 = 4.50 miles."
+    "explanation": "Put both in the same form. 1 3/4 = 1.75 miles. Add: 2.75 + 1.75 = 4.50 miles. The choice 4.00 miles comes from misreading 3/4 as 1/4, giving 1.25 + 2.75. The choice 4.25 miles comes from converting 3/4 to 0.5 (mixing it up with 1/2). The choice 4.75 miles comes from adding the whole-number parts to the larger decimal (2.75 + 2 instead of 2.75 + 1.75)."
   },
   {
     "external_key": "MK-FR-4",
@@ -597,7 +597,7 @@
       "3/5"
     ],
     "correct_index": 0,
-    "explanation": "0.625 = 625/1000. Divide by GCF 125: 5/8. Options 6/10 and 25/40 are equivalent but not fully reduced; 3/5 = 0.60 ≠ 0.625."
+    "explanation": "Write the decimal as a fraction over a power of ten and reduce. 0.625 = 625/1000. Divide numerator and denominator by 125: 5/8. Verify: 5 ÷ 8 = 0.625. The choice 6/10 simplifies to 3/5 = 0.6, not 0.625. The choice 25/40 equals 5/8 in value but is not in lowest terms, so it fails the \"lowest terms\" requirement. The choice 3/5 equals 0.6, off by 0.025."
   },
   {
     "external_key": "MK-EP-1",
@@ -612,7 +612,7 @@
       "8⁷"
     ],
     "correct_index": 1,
-    "explanation": "When multiplying powers with the same base, add the exponents: 2³ × 2⁴ = 2^(3+4) = 2⁷ = 128."
+    "explanation": "When multiplying powers with the same base, add the exponents: 2³ × 2⁴ = 2^(3+4) = 2⁷. The choice 2⁶ comes from off-by-one addition (treating 3 + 4 as 6) or counting one factor short. The choice 4⁷ comes from multiplying the bases together (2 × 2 = 4) while still adding the exponents, which double-counts the multiplication. The choice 8⁷ comes from computing 2³ = 8 as the new base while keeping the second exponent stack intact."
   },
   {
     "external_key": "MK-EP-2",
@@ -627,7 +627,7 @@
       "27²"
     ],
     "correct_index": 1,
-    "explanation": "Power of a power rule: multiply the exponents. (3²)³ = 3^(2×3) = 3⁶ = 729. The trap is adding instead of multiplying to get 3⁵."
+    "explanation": "Power of a power means multiply the exponents: (3²)³ = 3^(2×3) = 3⁶ = 729. The choice 3⁵ comes from adding the exponents (2 + 3) instead of multiplying, which is the rule for same-base multiplication, not nested powers. The choice 9³ computes 3² = 9 first as the new base, which equals 729 in value but is not the simplified exponent form the question asks for. The choice 27² = 729 in value but again is not the requested simplification."
   },
   {
     "external_key": "MK-EP-3",
@@ -642,7 +642,7 @@
       "x² + 7x − 12"
     ],
     "correct_index": 1,
-    "explanation": "FOIL: x·x + x·(−3) + 4·x + 4·(−3) = x² − 3x + 4x − 12 = x² + x − 12."
+    "explanation": "Use FOIL. First: x · x = x². Outer: x · (−3) = −3x. Inner: 4 · x = 4x. Last: 4 · (−3) = −12. Combine like terms: x² + 4x − 3x − 12 = x² + x − 12. The choice x² − 12 skips the cross terms entirely. The choice x² − x − 12 reverses the sign on the middle term by swapping which term gets the negative. The choice x² + 7x − 12 adds the cross terms instead of combining them with their correct signs (4 + 3 instead of 4 − 3)."
   },
   {
     "external_key": "MK-EP-4",
@@ -672,7 +672,7 @@
       "2x²y²"
     ],
     "correct_index": 0,
-    "explanation": "Coefficients: 4 ÷ 2 = 2. x-terms: x³ ÷ x = x². y-terms: y² ÷ y = y. Result: 2x²y."
+    "explanation": "Divide piece by piece. Coefficients: 4 ÷ 2 = 2. Powers of x: x³ ÷ x¹ = x² (subtract exponents). Powers of y: y² ÷ y¹ = y. Result: 2x²y. The choice 2x³y keeps the x³ unchanged, forgetting to subtract exponents. The choice 4x²y forgets to divide the coefficients. The choice 2x²y² keeps the y² unchanged, again skipping the exponent subtraction on y."
   },
   {
     "external_key": "MK-GE-1",
@@ -687,7 +687,7 @@
       "2,800 m"
     ],
     "correct_index": 1,
-    "explanation": "Perimeter = 2(l + w) = 2(80 + 35) = 2(115) = 230 m. The trap is computing l + w once (115 m) without multiplying by 2."
+    "explanation": "Perimeter of a rectangle equals 2(length + width). P = 2(80 + 35) = 2(115) = 230 m. The choice 115 m computes the sum of length and width but forgets to double it, capturing only two of the four sides. The choice 270 m comes from adding 80 + 35 + 80 + 75 with an arithmetic slip on the last width. The choice 2,800 m computes the area (80 × 35) instead of perimeter, mixing area and perimeter formulas."
   },
   {
     "external_key": "MK-GE-2",
@@ -702,7 +702,7 @@
       "252 cm²"
     ],
     "correct_index": 1,
-    "explanation": "Area = (1/2) × base × height = (1/2) × 14 × 9 = 63 cm². The trap is omitting the 1/2 factor, giving 126 cm²."
+    "explanation": "Triangle area uses A = (1/2) × base × height. A = (1/2) × 14 × 9 = 63 cm². The choice 46 cm² comes from adding base and height twice (perimeter-style thinking) and adjusting. The choice 126 cm² omits the (1/2) factor, applying the rectangle formula to a triangle. The choice 252 cm² doubles the rectangle value instead of halving the triangle, the opposite mistake."
   },
   {
     "external_key": "MK-GE-3",
@@ -732,7 +732,7 @@
       "314 cm²"
     ],
     "correct_index": 2,
-    "explanation": "Radius = diameter ÷ 2 = 5 cm. Area = πr² = 3.14 × 25 = 78.5 cm². Using the diameter as the radius gives 3.14 × 100 = 314 — a classic trap."
+    "explanation": "Area uses πr², not πd. Radius = diameter ÷ 2 = 5 cm. Area = 3.14 × 5² = 3.14 × 25 = 78.5 cm². The choice 31.4 cm² computes circumference (πd) and mislabels it as area. The choice 62.8 cm² computes 2πr (also a circumference variant) and treats it as area. The choice 314 cm² plugs the diameter into r² instead of the radius, getting 3.14 × 100."
   },
   {
     "external_key": "MK-NP-1",
@@ -747,7 +747,7 @@
       "91"
     ],
     "correct_index": 2,
-    "explanation": "51 = 3 × 17; 57 = 3 × 19; 91 = 7 × 13. Only 61 has no factors besides 1 and itself, so it is prime."
+    "explanation": "A prime number has exactly two factors: 1 and itself. Test each. 51 = 3 × 17 (digits sum to 6, divisible by 3). 57 = 3 × 19 (digits sum to 12, divisible by 3). 91 = 7 × 13 (a common trap because it looks prime). 61 has no divisor between 2 and 7 (its square root is about 7.8), so it is prime. The choice 51 fools students who skip the divisibility-by-3 check. The choice 57 has the same trap. The choice 91 is the classic ASVAB prime-trap because the factors 7 and 13 are not in the small-number reflex set."
   },
   {
     "external_key": "MK-NP-2",
@@ -762,7 +762,7 @@
       "18"
     ],
     "correct_index": 2,
-    "explanation": "Factors of 36 include 1, 2, 3, 4, 6, 9, 12, 18, 36. Factors of 48 include 1, 2, 3, 4, 6, 8, 12, 16, 24, 48. The largest common factor is 12."
+    "explanation": "Use prime factorization. 36 = 2² × 3² and 48 = 2⁴ × 3. Take the lowest power of each shared prime: 2² × 3 = 12. The choice 6 takes only 2 × 3, missing one factor of 2. The choice 9 takes 3², ignoring the shared 2s entirely. The choice 18 includes 3² but only one prime is shared at that power (3 appears as 3² in 36 but only 3¹ in 48), so 18 over-counts and is a factor of 36 but not of 48."
   },
   {
     "external_key": "MK-NP-3",
@@ -777,7 +777,7 @@
       "10"
     ],
     "correct_index": 1,
-    "explanation": "Let the integers be n and n + 2. n(n + 2) = 48. Try n = 6: 6 × 8 = 48. ✓ The smaller integer is 6."
+    "explanation": "Consecutive even integers differ by 2. Let them be n and n + 2 with n(n + 2) = 48. Test even integers: 4 × 6 = 24 (too low), 6 × 8 = 48. The smaller is 6. The choice 4 comes from picking the first factor pair without checking that both must be even and consecutive (4 and 12 multiply to 48 but are not consecutive). The choice 8 returns the larger of the correct pair. The choice 10 comes from solving for the wrong product (10 × 12 = 120) or sliding too far up the even integers."
   },
   {
     "external_key": "MK-NP-4",
@@ -807,7 +807,7 @@
       "Dangerous"
     ],
     "correct_index": 1,
-    "explanation": "Tranquil means free from disturbance; calm and peaceful."
+    "explanation": "Tranquil means free from agitation and disturbance, as in 'the tranquil pond mirrored the trees without a ripple.' Noisy is the direct antonym, naming auditory chaos. Rushed is a register antonym, pointing to hurried motion rather than calm stillness. Dangerous is a register trap that draws on the absence of threat in tranquil settings, but danger is about risk while tranquil is about absence of disturbance. Peaceful is the dominant synonym, sharing the core sense of stillness and freedom from agitation."
   },
   {
     "external_key": "WK-SN-5",
@@ -822,7 +822,7 @@
       "Focused"
     ],
     "correct_index": 1,
-    "explanation": "Lethargic means lacking energy or enthusiasm; sluggish. Energetic is its antonym."
+    "explanation": "Lethargic means lacking energy and slow to act, as in 'after the long flight he felt lethargic and could barely climb the stairs.' Energetic is the direct antonym, naming vigor rather than torpor. Aggressive is a register antonym, naming active hostility, which requires energy lethargic lacks. Focused is a register trap, since a focused person can be calm but is engaged, not depleted. Sluggish is the dominant synonym, sharing the slowed-down, low-energy quality at the heart of lethargic."
   },
   {
     "external_key": "WK-SN-6",
@@ -837,7 +837,7 @@
       "Talkative"
     ],
     "correct_index": 0,
-    "explanation": "Inscrutable means impossible to understand or interpret; mysterious. The root 'scrutin-' means to examine — inscrutable means it cannot be read through."
+    "explanation": "Inscrutable means impossible to interpret or read, as in 'his inscrutable expression gave away nothing during negotiations.' The root SCRUT- means examine (scrutinize, scrutiny); the IN- here negates it. Obvious is the direct antonym, naming easy readability. Unreliable is a register trap, since an inscrutable person may be trustworthy or not; readability has no necessary tie to dependability. Talkative is unrelated; inscrutable concerns interpretability of expression or motive, not volume of speech. Only Mysterious captures the unreadable quality."
   },
   {
     "external_key": "WK-SN-10",
@@ -852,22 +852,22 @@
       "Calculating"
     ],
     "correct_index": 1,
-    "explanation": "Recalcitrant means stubbornly resistant to authority or control. 'Calculating' is a common wrong answer due to visual similarity. From Latin calcitrare, to kick."
+    "explanation": "Recalcitrant means stubbornly resistant to authority or control, as in 'the recalcitrant prisoner refused every order.' From Latin calcitrare, to kick back. Obedient is the direct antonym. Cautious overlaps with hesitation but cautious people slow down to think, while recalcitrant people actively resist. Calculating is a visual-similarity trap, drawing on the shared CAL- letters, but calculating means scheming and shrewd, an unrelated trait. A test-taker picking Calculating has matched letters rather than meaning. Only Defiant captures the active resistance."
   },
   {
     "external_key": "AO-3D-1",
     "subtest": "AO",
     "topic_id": "ao.3d-visualization",
     "difficulty": 3,
-    "stem": "A solid cube rests flat on a table. The top face is painted red. The cube is rotated 90° forward — tilting toward you, pivoting around its front bottom edge. After this rotation, which face is now on top?",
+    "stem": "A solid cube rests flat on a table. The top face is painted red. The cube is rotated 90 degrees forward, tilting toward you and pivoting around its front-bottom edge. After this rotation, which face is now on top?",
     "choices": [
       "The original top face (red)",
       "The original front face",
       "The original back face",
       "The original bottom face"
     ],
-    "correct_index": 1,
-    "explanation": "Rotating 90° forward around the front bottom edge lifts the front face up to become the new top. The red original top now faces toward you (the new front)."
+    "correct_index": 2,
+    "explanation": "Imagine a die rolling toward you one quarter turn. The pivot is the front-bottom edge, so that edge stays put while the cube tips forward. The face that was on top swings forward to become the new front (so the red moves to the front, not the top). The original front swings down onto the table (new bottom). The original bottom swings forward and up to face away from the viewer (new back). The original back swings up into the sky position, so it is now on top. Choice A confuses the rotation with a 360 spin; choice B is the trap of stopping the trace one step early; choice D would require a full 180 flip, not 90."
   },
   {
     "external_key": "AO-3D-3",
@@ -882,7 +882,7 @@
       "Blue"
     ],
     "correct_index": 0,
-    "explanation": "Rotating around the vertical axis does not change the top or bottom faces — only the four side faces rotate. The top remains white."
+    "explanation": "Rotation around the vertical axis only moves the four side faces; the top and bottom faces stay fixed because they sit on that axis. So white remains on top regardless of how far the cube is spun horizontally. 'Yellow' is the trap of grabbing the right face (which was yellow before the spin), confusing horizontal rotation with a tilt that would actually bring a side face to the top. 'Blue' makes the same mistake with the left face. 'Black' would require flipping the cube upside down, which is a rotation around a horizontal axis, not vertical."
   },
   {
     "external_key": "AO-3D-4",
@@ -897,7 +897,7 @@
       "Blue"
     ],
     "correct_index": 2,
-    "explanation": "Rotating the cube 90° to the right (vertical axis) brings the right face (yellow) to the front. Red rotates to the left, green to the right, and blue to the back."
+    "explanation": "A 90 degree rotation to the right around the vertical axis (right side swinging forward, per the convention in question AO-3D-3) brings the yellow right face around to the front. The red original front rotates to the left, the blue original left moves to the back, and the green original back rotates to the right. New front equals yellow. 'Red' is the trap of forgetting that the cube moved at all, treating the original front as fixed. 'Blue' confuses left and right rotation. 'Green' jumps to the opposite face, which would require a 180 degree turn rather than 90."
   },
   {
     "external_key": "AO-3D-5",
@@ -912,7 +912,7 @@
       "Right triangle"
     ],
     "correct_index": 2,
-    "explanation": "A plane through three mutually non-adjacent vertices of a cube cuts through three face diagonals of equal length, forming an equilateral triangle cross-section."
+    "explanation": "Pick three vertices of a cube, one on each of three faces that share no common edge: each pair of those vertices is connected by a face diagonal of the cube. Face diagonals of a cube all have the same length (side times sqrt 2). Three equal-length edges meeting pairwise create an equilateral triangle. 'Square' would require four vertices, not three. 'Rectangle' also needs four vertices and two distinct edge lengths. 'Right triangle' tempts test takers who assume any triangle inside a cube must have a right angle, but the three vertices chosen here lie symmetrically and produce 60 degree angles, not 90."
   },
   {
     "external_key": "AO-PF-1",
@@ -927,7 +927,7 @@
       "A triangular prism"
     ],
     "correct_index": 2,
-    "explanation": "Five squares form a base plus four walls but no top. You need 6 squares to close a cube. This net creates an open-top box."
+    "explanation": "The plus-shaped net has one central square plus four flaps attached to each side. Folding the four flaps up along the central square produces a base with four walls but no top: only 5 of the 6 sides needed for a closed cube are present. The result is an open-top box. 'A cube' is the natural trap, but a cube needs 6 squares, not 5. 'A square pyramid' would require triangular flaps converging to a point, not square ones folding up parallel. 'A triangular prism' has 3 rectangular sides and 2 triangular ends, none of which appear in this all-square net."
   },
   {
     "external_key": "AO-PF-3",
@@ -942,7 +942,7 @@
       "A triangular prism"
     ],
     "correct_index": 2,
-    "explanation": "The four triangles fold upward and their free vertices meet at a single point above the square base, forming a square pyramid."
+    "explanation": "The square in the center becomes the base. Each equilateral triangle hinges upward along one edge of the square. Because all four triangles have the same side length and lean inward at equal angles, their free apex vertices converge to a single point above the center of the base. That is the definition of a square pyramid. 'A cube' is impossible because the net has triangles, not all squares. 'A rectangular prism' likewise needs 6 rectangular faces. 'A triangular prism' has only 2 triangular faces (the ends) plus 3 rectangular sides, while this net has 4 triangles and a square."
   },
   {
     "external_key": "AO-PF-4",
@@ -972,7 +972,7 @@
       "8"
     ],
     "correct_index": 1,
-    "explanation": "The first fold creates 2 sections; the second fold divides each of those in half. When unfolded, the paper has 2 × 2 = 4 rectangular sections separated by the two crease lines."
+    "explanation": "Each fold along a different axis multiplies, not adds. The first horizontal fold creates 1 crease across the middle, splitting the square into 2 horizontal strips. The second vertical fold adds 1 crease running the other direction, slicing each strip in two. The result is a 2 by 2 grid: 4 rectangular sections separated by one horizontal and one vertical crease. '2' counts only the first fold. '6' incorrectly adds 2 plus the perceived 4. '8' doubles every step as if both folds shared the same axis, but perpendicular folds multiply differently than parallel ones."
   },
   {
     "external_key": "AO-SC-1",
@@ -987,7 +987,7 @@
       "16"
     ],
     "correct_index": 2,
-    "explanation": "Total = 9 + 4 + 1 = 14 cubes."
+    "explanation": "Add the cubes layer by layer. Bottom layer: 3 by 3 = 9. Middle layer: 2 by 2 = 4. Top: 1. Total = 9 + 4 + 1 = 14. '9' counts only the bottom layer, ignoring the stacked layers. '12' is a guess that splits the difference between 9 and the next plausible number. '16' overcounts, possibly by assuming the second layer is 3 by 3 again or by squaring 4 instead of using 2 by 2. The layered sum approach (9 + 4 + 1) gives 14 directly."
   },
   {
     "external_key": "AO-SC-3",
@@ -1002,7 +1002,7 @@
       "9"
     ],
     "correct_index": 1,
-    "explanation": "Total = 3 + 2 + 1 = 6 cubes."
+    "explanation": "Add the cubes row by row: bottom 3, middle 2, top 1, for a total of 3 + 2 + 1 = 6. '5' undercounts, possibly missing the top cube. '7' overcounts by adding an extra. '9' applies the wrong rule entirely (3 by 3 grid logic instead of a staircase). The staircase formula n(n+1)/2 with n = 3 gives 3 times 4 divided by 2 = 6, confirming the direct count."
   },
   {
     "external_key": "AO-SC-4",
@@ -1017,7 +1017,7 @@
       "12"
     ],
     "correct_index": 2,
-    "explanation": "Bottom layer: 2 × 3 = 6. Second layer: 2 × 2 = 4. Total = 6 + 4 = 10 cubes."
+    "explanation": "Count by layer. Bottom layer is 2 by 3 = 6 cubes. Second layer is 2 by 2 = 4 cubes stacked on top. Total = 6 + 4 = 10. '8' undercounts the second layer (treating it as 2 cubes instead of 4). '9' splits the difference between 6 and 10 without a clear method. '12' overcounts by assuming the second layer matches the base (2 by 3 = 6) rather than the smaller stated 2 by 2. The layered addition gives 10."
   },
   {
     "external_key": "AO-SC-5",
@@ -1032,6 +1032,6 @@
       "16"
     ],
     "correct_index": 2,
-    "explanation": "The hidden interior is a (4−2)×(4−2)×(4−2) = 2×2×2 = 8 unit cube block. Every other unit cube touches at least one outer face."
+    "explanation": "Hidden interior cubes do not touch any outer face. For a 4 by 4 by 4 cube, peel off the outer shell one unit thick on every side: the remaining hidden core is (4 minus 2) cubed = 2 cubed = 8 cubes. '16' confuses surface count with interior. '4' undercounts the interior dimension. '0' is the answer only for a cube smaller than 3 units on a side, where there is no interior. The (n minus 2) cubed formula works for any n by n by n cube where n is at least 3."
   }
 ]

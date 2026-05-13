@@ -12,7 +12,7 @@
       "clever"
     ],
     "correct_index": 1,
-    "explanation": "Brave means ready to face danger or pain without showing fear. Courageous is its closest synonym. Cowardly is the antonym."
+    "explanation": "Brave means ready to face danger or pain without showing fear, as in 'the brave firefighter ran into the burning house.' Cowardly is the direct antonym, naming fear and avoidance. Careless is a register trap, since brave people may take risks, but bravery involves accepting fear deliberately while carelessness ignores risk through inattention. Clever names quick intelligence, a separate trait that does not require courage. Courageous is the dominant synonym, sharing the willingness to face fear directly in the service of action."
   },
   {
     "external_key": "WK-SN-B4-2",
@@ -27,7 +27,7 @@
       "heavy"
     ],
     "correct_index": 2,
-    "explanation": "Rapid means happening in a short time or at great speed. Fast is its direct synonym. Slow is the antonym."
+    "explanation": "Rapid means happening or moving quickly, as in 'the rapid current carried the raft downstream in minutes.' Slow is the direct antonym. Loud names volume, an unrelated sensory dimension. Heavy is a register trap drawing on the force of fast-moving objects, but weight has no necessary connection to speed. Fast is the dominant synonym, sharing both the motion and the brief-time-frame senses of rapid. The two words are interchangeable in most contexts, which makes Fast the clearest match."
   },
   {
     "external_key": "WK-SN-B4-4",
@@ -42,7 +42,7 @@
       "hardworking"
     ],
     "correct_index": 1,
-    "explanation": "Gregarious means fond of company; sociable. It describes someone who enjoys being around other people. Shy is the antonym."
+    "explanation": "Gregarious means fond of the company of others, as in 'the gregarious sergeant spent every weekend hosting cookouts for the platoon.' The root GREG- means flock or herd (congregate, segregate). Shy is the direct antonym, naming social withdrawal. Aggressive is a register trap: gregarious people seek company but not conflict; aggression is about hostility, not affection for groups. Hardworking is unrelated to sociability and names a different dimension of personality. Only Talkative and sociable captures the core meaning of group-loving."
   },
   {
     "external_key": "WK-SN-B4-5",
@@ -57,7 +57,7 @@
       "independent"
     ],
     "correct_index": 2,
-    "explanation": "Indolent means avoiding activity; habitually lazy. Energetic is its antonym. Do not confuse indolent with insolent (rude), which differs by one letter."
+    "explanation": "Indolent means habitually avoiding work, as in 'the indolent clerk left every task for the next shift.' Energetic is the direct antonym. Rude is the spelling-confusion trap: indolent looks one letter off from insolent (disrespectful), but the two words differ by an N and have unrelated meanings. Independent is a register trap, since independent people choose to act on their own while indolent people simply do not act. Lazy is the dominant synonym, sharing the persistent avoidance of effort."
   },
   {
     "external_key": "WK-SN-B4-6",
@@ -72,7 +72,8 @@
       "secretive"
     ],
     "correct_index": 1,
-    "explanation": "Laconic means using very few words; brief and to the point. Wordy is the antonym. It comes from Laconia (Sparta), whose inhabitants were famous for terse speech."
+    "explanation": "Laconic means using very few words, as in 'his laconic 'roger that' was the only acknowledgment we got.' The word comes from Laconia (Sparta), whose soldiers were famous for terse replies. Wordy is the direct antonym. Humorous is a register trap: laconic speech can be dryly funny but humor is not part of the definition. Secretive is a partial-overlap trap, since terse people may seem to withhold, but laconic speech is short rather than evasive. Brief in speech is the dominant synonym.",
+    "active": false
   },
   {
     "external_key": "WK-SN-B4-7",
@@ -87,7 +88,7 @@
       "conceal"
     ],
     "correct_index": 1,
-    "explanation": "Mitigate means to make something less severe, harmful, or painful. Worsen is its antonym. Eliminate goes further than mitigate — mitigate reduces, not removes, the harm."
+    "explanation": "Mitigate means to make something less severe or painful, as in 'sandbags mitigated the flood damage but did not stop it.' Worsen is the direct antonym. Conceal names hiding, a different action that does not change severity. Eliminate is the closest distractor and the most important false friend: eliminate means to remove entirely, while mitigate means only to reduce. A test-taker picking Eliminate has overshot the strength of the word. Only Lessen or reduce captures the partial-reduction sense that defines mitigate."
   },
   {
     "external_key": "WK-SN-B4-8",
@@ -102,7 +103,7 @@
       "deceive"
     ],
     "correct_index": 1,
-    "explanation": "Ostracize means to banish or exclude someone from a group or society. Welcome is its antonym. The trap 'punish physically' confuses social exclusion with corporal punishment."
+    "explanation": "Ostracize means to deliberately exclude someone from a group, as in 'the team ostracized the recruit who broke ranks.' The word comes from ancient Athens, where citizens voted to banish individuals by writing names on shards (ostraka). Welcome is the direct antonym. Punish physically is a register trap, since ostracism is a social punishment, not a corporal one. Deceive is unrelated; exclusion is open, not hidden. Only Exclude from a group captures the deliberate social removal at the heart of the word."
   },
   {
     "external_key": "WK-SN-B4-9",
@@ -111,13 +112,13 @@
     "difficulty": 4,
     "stem": "ASSIDUOUS most nearly means:",
     "choices": [
-      "careless",
-      "showing careful and persistent effort",
-      "sociable",
-      "bold"
+      "negligent",
+      "diligent",
+      "gregarious",
+      "audacious"
     ],
     "correct_index": 1,
-    "explanation": "Assiduous means showing great care, effort, and persistence in doing something. It describes someone who works diligently and attentively. Careless is the antonym."
+    "explanation": "Assiduous means showing constant and careful attention to a task, as in 'her assiduous note-taking filled three notebooks by midterm.' The Latin root ASSID- (to sit at, attend to) gives the sense of sitting with the work until it is done. Negligent is the direct antonym, naming the lack of careful attention. Gregarious describes someone who enjoys the company of others, a personality trait unrelated to work habits. Audacious names a willingness to take bold risks, which speaks to an attitude toward danger rather than effort. Only diligent captures the steady, attentive effort that defines assiduous."
   },
   {
     "external_key": "WK-SN-B4-10",
@@ -132,7 +133,7 @@
       "aggressive"
     ],
     "correct_index": 1,
-    "explanation": "Prosaic means commonplace; lacking originality or imagination. It comes from prose (ordinary writing), as opposed to poetry. Poetic is essentially the antonym."
+    "explanation": "Prosaic means commonplace and lacking imagination, as in 'his prosaic explanation drained the magic from the story.' The word comes from prose (ordinary writing) as opposed to poetry. Poetic is essentially the antonym, naming the elevated and imaginative quality prosaic lacks. Precise is a register trap, since prosaic writing can be precise but lacks creative spark; precision is about accuracy, not imagination. Aggressive is unrelated to creativity or style. Only Dull and unimaginative captures the commonplace, uninspired quality at the heart of prosaic."
   },
   {
     "external_key": "WK-SN-B4-11",
@@ -147,7 +148,7 @@
       "investigate"
     ],
     "correct_index": 1,
-    "explanation": "Venerate means to regard with great respect and reverence, often for age or wisdom. Criticize is its antonym. Do not confuse with generate (to produce) — the spelling is different."
+    "explanation": "Venerate means to regard with deep respect, often because of age, wisdom, or sacred status, as in 'the cadets venerated the retired general.' From Latin venerari, to worship. Criticize is the direct antonym. Imitate is a partial-overlap trap, since respected figures are often imitated, but admiration and copying are separate acts. Investigate is a register trap, drawing on the careful attention venerate requires, but investigating implies skeptical inquiry, the opposite of reverence. Only Regard with deep respect captures the reverent quality of venerate."
   },
   {
     "external_key": "WK-SN-B4-12",
@@ -162,7 +163,7 @@
       "traditional"
     ],
     "correct_index": 1,
-    "explanation": "Ersatz means made or used as a substitute, typically an inferior one. From German, it was applied to wartime replacements for scarce goods. Authentic is the antonym."
+    "explanation": "Ersatz means used as an inferior substitute, as in 'the ersatz coffee made from chicory was the only option during the shortage.' From German Ersatz (replacement), applied to wartime stand-ins. Authentic is the direct antonym, naming the genuine article. Elaborate is a register trap, drawing on the sound of the word, but ersatz things are usually plain and basic, not ornate. Traditional names long-standing customs, a separate concept that does not imply inferiority or substitution. Only An inferior substitute carries both the replacement and the lower-quality senses."
   },
   {
     "external_key": "WK-SN-B4-13",
@@ -177,7 +178,7 @@
       "withdrawn"
     ],
     "correct_index": 1,
-    "explanation": "Fatuous means self-satisfied and pointlessly foolish; smugly stupid. Insightful is the antonym. Do not confuse fatuous with fatigued (tired) — they are unrelated."
+    "explanation": "Fatuous means smugly foolish, as in 'his fatuous comment that war is easy made the veterans walk out.' From Latin fatuus, silly. Insightful is the direct antonym, naming intelligent perception. Cautious is a register trap, since fatuous people are often unwisely bold, but caution is about risk-avoidance, not intelligence. Withdrawn describes social manner, not the foolish-self-satisfaction core of fatuous. The spelling-confusion trap with fatigued (tired) catches some test-takers, but the words share only the first two letters and come from different Latin roots. Only Complacently stupid fits."
   },
   {
     "external_key": "WK-CTX-B4-1",
@@ -192,7 +193,7 @@
       "tired"
     ],
     "correct_index": 1,
-    "explanation": "Elated means filled with joy and pride. Winning a competition clearly produces happiness, not fear. Surprised is tempting but does not capture the celebratory context."
+    "explanation": "Winning a spelling bee pins the meaning to strong positive emotion. Elated specifically labels intense joy. 'Frightened' is the direct opposite of a celebratory reaction. 'Surprised' is plausible vocabulary-wise, since unexpected wins do surprise, but the sentence frames the moment as celebratory rather than astonished. 'Tired' could follow a long competition but does not match the focus on learning she won. Only Very happy matches the celebratory frame the spelling-bee win establishes."
   },
   {
     "external_key": "WK-CTX-B4-2",
@@ -207,7 +208,7 @@
       "distant"
     ],
     "correct_index": 1,
-    "explanation": "Scorching means burning hot. The action of moving into shade to cool down is the direct clue that the heat was extreme, not mild or cloudy."
+    "explanation": "Moving into the shade specifically to cool down pins the meaning to extreme heat. Scorching specifically labels burning hot conditions. 'Mild' is the direct opposite of the response the sentence describes. 'Cloudy' addresses sky cover, not temperature, and the move to shade would not make sense under clouds. 'Distant' is a register trap, since the sun is literally distant, but the sentence rates how the sun felt that day, not its astronomical position. Only Extremely hot matches the cool-down evidence."
   },
   {
     "external_key": "WK-CTX-B4-3",
@@ -237,7 +238,7 @@
       "inexperienced"
     ],
     "correct_index": 1,
-    "explanation": "Dilatory means slow to act; tending to delay. Three missed deadlines is the direct clue for chronic lateness, not dishonesty or expense. Inexperienced might cause delays but is a different concept."
+    "explanation": "Three missed deadlines forcing the commander to find a new vendor pins the meaning to chronic lateness. Dilatory specifically labels persistent delay. 'Expensive' addresses cost, which the sentence never raises. 'Dishonest' is plausible vocabulary-wise for a fired contractor, but the sentence faults schedule failures, not deception. 'Inexperienced' could explain missed deadlines but names the cause rather than the behavior itself, and the sentence describes how the contractor acted. Only Slow to act or chronically late matches the missed-deadline evidence directly."
   },
   {
     "external_key": "WK-CTX-B4-6",
@@ -252,7 +253,7 @@
       "reported"
     ],
     "correct_index": 1,
-    "explanation": "Flout means to openly disregard a rule or convention. The penalty of extra duty each week confirms deliberate rule-breaking, not misunderstanding. Do not confuse flout with flaunt (to display ostentatiously)."
+    "explanation": "Earning extra duty each week by ignoring regulations he disagreed with pins the meaning to deliberate, open rule-breaking. Flouted specifically labels open contempt for rules. 'Followed carefully' is the direct opposite. 'Misunderstood' is plausible vocabulary-wise, but the consequence of extra duty repeating weekly signals intent, not error. 'Reported' would describe turning others in, not breaking rules himself. The classic spelling-confusion trap is flout versus flaunt (to display showily), but the meanings are unrelated despite the similar sound. Only Openly disregarded matches."
   },
   {
     "external_key": "WK-CTX-B4-7",
@@ -267,7 +268,7 @@
       "unexpected"
     ],
     "correct_index": 1,
-    "explanation": "Trenchant means vigorous and incisive in expression or style; cutting right to the point. 'Cut through the confusion' is the key metaphor in the passage, directly supporting the meaning of sharp and effective analysis."
+    "explanation": "The phrase 'cut through the confusion and identified the problem within minutes' pins the meaning to sharp and effective analysis. Trenchant specifically labels vigorous, incisive thinking that cuts to the point. 'Lengthy and detailed' is the opposite of the speed and decisiveness the sentence praises. 'Calm and measured' addresses tone but trenchant carries force, not just composure. 'Unexpected' is a register trap that draws on dramatic flair, but trenchant names the cutting quality itself, not surprise. Only Incisive and vigorous matches the cut-through-confusion image."
   },
   {
     "external_key": "WK-CTX-B4-8",
@@ -282,7 +283,7 @@
       "conservative and reluctant"
     ],
     "correct_index": 1,
-    "explanation": "Sagacious means having good judgment and foresight. The passage distinguishes this from luck by showing the decision was made before the storm — implying deliberate wisdom, not chance. Reckless is the opposite."
+    "explanation": "Stockpiling supplies before the storm, then being vindicated by a two-week outage, pins the meaning to deliberate foresight. Sagacious specifically labels keen practical wisdom. 'Lucky and fortunate' is the trickiest distractor since outcomes matched expectations, but the sentence emphasizes the decision was made beforehand, which signals planning rather than chance. 'Reckless and impulsive' is the opposite of careful preparation. 'Conservative and reluctant' describes hesitation, while the decision was decisive action. Only Having keen practical wisdom captures the prescient judgment shown."
   },
   {
     "external_key": "WK-CTX-B4-9",
@@ -297,7 +298,7 @@
       "summarized"
     ],
     "correct_index": 1,
-    "explanation": "Repudiate means to refuse to accept or deny the truth of something. Producing records to disprove accusations is an act of firm rejection, not quiet acceptance. Investigated implies looking into, not countering, the claims."
+    "explanation": "Producing records to disprove accusations pins the meaning to firm, evidence-backed denial. Repudiated specifically labels formal, decisive rejection. 'Quietly accepted' is the direct opposite of producing counter-evidence. 'Investigated' is the trickiest distractor since gathering records can look like investigation, but the sentence describes presenting findings against the claims, not opening an inquiry. 'Summarized' addresses condensing information rather than rejecting accusations. Only Firmly rejected matches the disprove-with-evidence behavior the sentence describes."
   },
   {
     "external_key": "WK-CTX-B4-10",
@@ -312,14 +313,14 @@
       "in an isolated way"
     ],
     "correct_index": 1,
-    "explanation": "Frugally means carefully spending as little money as possible. The examples — old car, few new clothes — confirm thrifty behavior. Lavishly is the antonym. 'With great caution' might describe driving, not lifestyle."
+    "explanation": "Owning a popular restaurant yet driving an old car and rarely buying new clothes pins the meaning to deliberate thrift despite means. Frugally specifically labels careful, sparing spending. 'Lavishly' is the direct opposite. 'With great caution' is plausible (cautious spenders save), but caution focuses on risk avoidance while frugality focuses on minimizing expense regardless of risk. 'In an isolated way' addresses social life, which the sentence never raises. Only In a thrifty manner captures the chosen modesty of consumption despite a popular business."
   },
   {
     "external_key": "WK-CTX-B4-11",
     "subtest": "WK",
     "topic_id": "wk.context-clues",
     "difficulty": 5,
-    "stem": "In the sentence 'The diplomat's LACONIC cable — three words where others would have written three pages — conveyed the mission's outcome without ambiguity,' the word LACONIC most nearly means:",
+    "stem": "In the sentence 'The diplomat's LACONIC cable \u2014 three words where others would have written three pages \u2014 conveyed the mission's outcome without ambiguity,' the word LACONIC most nearly means:",
     "choices": [
       "cryptically coded",
       "using very few words",
@@ -327,7 +328,7 @@
       "formally worded"
     ],
     "correct_index": 1,
-    "explanation": "Laconic means using very few words. 'Three words where others would have written three pages' is the direct numerical contrast establishing extreme brevity. Coded implies obscurity; laconic implies clarity through brevity."
+    "explanation": "The contrast 'three words where others would have written three pages' pins the meaning to extreme brevity. Laconic specifically labels speech or writing of very few words. 'Cryptically coded' is the trickiest distractor since a three-word cable sounds mysterious, but the sentence specifies the cable conveyed the outcome 'without ambiguity,' ruling out obscurity. 'Overly detailed' is the direct opposite. 'Formally worded' addresses tone rather than length, and the sentence rewards length specifically. Only Using very few words matches the numerical contrast."
   },
   {
     "external_key": "WK-CTX-B4-12",
@@ -357,7 +358,7 @@
       "formerly happy"
     ],
     "correct_index": 1,
-    "explanation": "UN- is a negating prefix, so unhappy means not happy. This prefix works the same way in unfair, unclear, and unkind. 'Formerly happy' would require the prefix EX-."
+    "explanation": "UNHAPPY breaks down as UN- (not) plus HAPPY. The UN- prefix simply negates the base word, as in unfair (not fair), unclear (not clear), unkind (not kind). 'Very happy' would require an intensifier like SUPER- or HYPER-, not UN-. 'Somewhat happy' would require a diminisher like SEMI- or SUB-, not UN-, which is absolute negation. 'Formerly happy' would require EX- (former, as in ex-soldier) or PRE- (before). Only Not happy tracks the simple negating function of UN-."
   },
   {
     "external_key": "WK-PFX-B4-2",
@@ -372,7 +373,7 @@
       "beyond care"
     ],
     "correct_index": 1,
-    "explanation": "-FUL adds the meaning 'full of' or 'characterized by.' Careful means full of care; similarly, hopeful means full of hope and peaceful means full of peace."
+    "explanation": "CAREFUL breaks down as CARE plus -FUL (full of, characterized by). The -FUL suffix adds the meaning 'having a lot of,' as in hopeful (full of hope), peaceful (full of peace), beautiful (full of beauty). 'Without care' would require -LESS, the opposite suffix (careless). 'Able to be cared for' would require -ABLE, which signals capability rather than abundance. 'Beyond care' has no standard prefix or suffix for that meaning in English. Only Full of care and attention tracks the standard -FUL function."
   },
   {
     "external_key": "WK-PFX-B4-3",
@@ -387,7 +388,7 @@
       "a rule set by authorities"
     ],
     "correct_index": 1,
-    "explanation": "PRE- means before; a precaution is an action taken beforehand to avoid danger. Compare: preview (see before), prevent (come before to stop), predict (say before). 'After the fact' would be POST-."
+    "explanation": "PRECAUTION breaks down as PRE- (before) plus CAUTION (carefulness), literally caution taken in advance. Compare preview (see before), predict (say before), prevent (come before to stop). 'An action taken after the fact' would require POST- (after), the direct opposite prefix. 'A warning given loudly' addresses volume and audience, which PRE- does not encode. 'A rule set by authorities' addresses source, not timing, and would not require PRE-. Only An action taken in advance to prevent harm tracks PRE- correctly with CAUTION."
   },
   {
     "external_key": "WK-PFX-B4-4",
@@ -402,7 +403,7 @@
       "beyond control"
     ],
     "correct_index": 1,
-    "explanation": "-LESS means without, so reckless means without reck (thought or care). Similarly, careless means without care, and helpless means without help. 'Full of energy' misreads the suffix as -FUL."
+    "explanation": "RECKLESS breaks down as RECK (old English for care or heed) plus -LESS (without). Compare careless (without care), helpless (without help), fearless (without fear). 'Very careful' is the direct opposite of the meaning -LESS produces. 'Full of energy' confuses -LESS with -FUL, the opposite suffix; reckless people may be energetic but the word itself names the absence of caution, not the presence of energy. 'Beyond control' addresses degree rather than absence, and -LESS specifically encodes absence. Only Without caution tracks the morphology."
   },
   {
     "external_key": "WK-PFX-B4-5",
@@ -417,7 +418,7 @@
       "to confuse deliberately"
     ],
     "correct_index": 1,
-    "explanation": "CONSTRUE means to interpret; MIS- means wrongly. Misconstrue means to interpret something incorrectly. 'Deliberately confuse' implies intent to deceive; misconstrue means the interpretation itself is simply wrong, not necessarily deceptive."
+    "explanation": "MISCONSTRUE breaks down as MIS- (wrongly) plus CONSTRUE (to interpret). Compare misjudge (judge wrongly), misread (read wrongly), misunderstand (understand wrongly). 'To build incorrectly' confuses CONSTRUE with CONSTRUCT. Both trace back to the same Latin verb construere (to put together), but in modern English construct kept the physical-assembly sense while construe shifted to mean parsing meaning, so misconstrue is about reading not building. 'To communicate clearly' is the opposite of what MIS- produces. 'To confuse deliberately' would require an intent prefix; MIS- only signals that the interpretation came out wrong, not that deception was intended."
   },
   {
     "external_key": "WK-PFX-B4-6",
@@ -432,7 +433,7 @@
       "a conflict between parties"
     ],
     "correct_index": 1,
-    "explanation": "INTER- means between; -LUDE comes from Latin ludere (to play). An interlude is a pause or event occurring between two others. Compare: international (between nations), intermission (pause between acts). A conflict would use INTER- differently (interchange/interfere)."
+    "explanation": "INTERLUDE breaks down as INTER- (between) plus LUDE (from Latin ludere, to play), literally a small play or pause between two larger events. Compare international (between nations), intermission (pause between acts), interstate (between states). 'A final performance' would require POST- (after) or FIN- (end), not INTER-. 'An opening ceremony' would require PRE- (before) or INTRO- (into the start), not INTER-. 'A conflict between parties' uses INTER- correctly but does not match LUDE (play); a conflict would be INTERVENE or INTERPLAY in a hostile sense. Only A period between two events fits."
   },
   {
     "external_key": "WK-PFX-B4-7",
@@ -447,7 +448,7 @@
       "worthy of being deployed"
     ],
     "correct_index": 1,
-    "explanation": "-MENT creates nouns from verbs: deploy → deployment (act of deploying), manage → management (process of managing). -ER/-OR would indicate a person; -ABLE indicates capability."
+    "explanation": "DEPLOYMENT breaks down as DEPLOY (verb) plus -MENT (suffix forming a noun of action or result). Compare manage to management, develop to development, achieve to achievement. 'The ability to deploy' would require -ABLE or -ITY (deployability), not -MENT. 'One who deploys' would require -ER or -OR (deployer), the agent suffix. 'Worthy of being deployed' would require -ABLE (deployable, worthy of deployment), the capability suffix. Only The act or result of deploying tracks the -MENT noun-forming function."
   },
   {
     "external_key": "WK-PFX-B4-8",
@@ -462,7 +463,7 @@
       "relating to military counter-operations"
     ],
     "correct_index": 1,
-    "explanation": "COUNTER- means against; intuitive means based on instinct or natural feeling. Counterintuitive means contrary to what your instincts or common sense would suggest. 'Requiring careful thought' describes complexity, not opposition to expectation."
+    "explanation": "COUNTERINTUITIVE breaks down as COUNTER- (against, opposite) plus INTUITIVE (based on instinct). Compare counterclockwise (opposite of clockwise), counteract (act against), counterargument (argument against). 'Supporting common sense' is the direct opposite. 'Requiring careful thought' is a register trap, since counterintuitive ideas often demand careful thought to accept, but the word names the conflict with instinct, not the cognitive effort. 'Relating to military counter-operations' reads COUNTER- as the military noun rather than the prefix, a category error. Only Going against what one would naturally expect fits."
   },
   {
     "external_key": "WK-PFX-B4-10",
@@ -477,7 +478,7 @@
       "to speak quietly"
     ],
     "correct_index": 1,
-    "explanation": "SUB- means under; VERT comes from Latin vertere (to turn). Subvert means to turn under — i.e., to undermine or overturn an established system from within. 'Support from beneath' misreads sub- as physically supporting rather than undermining."
+    "explanation": "SUB- means under; VERT comes from Latin vertere (to turn). Subvert means to turn under \u2014 i.e., to undermine or overturn an established system from within. 'Support from beneath' misreads sub- as physically supporting rather than undermining."
   },
   {
     "external_key": "WK-PFX-B4-11",
@@ -522,7 +523,7 @@
       "to know"
     ],
     "correct_index": 1,
-    "explanation": "VIS comes from the Latin videre, to see. Visible means capable of being seen; vision is the ability to see; visual relates to sight. Compare with AUDI- (to hear)."
+    "explanation": "VIS comes from Latin videre, to see. Cognates include visible (able to be seen), vision (the sense or act of sight), visual (relating to sight), visit (originally, to go see), and television (seeing at a distance). 'To move' would use MOV- or MOT- (motion, mobile), different roots. 'To speak' would use DICT- (dictate) or LOQU- (eloquent), commonly confused with VIS- only by general association. 'To know' would use SCI- (science) or COGN- (cognition, recognize). Only To see fits all the listed cognates."
   },
   {
     "external_key": "WK-ROOT-B4-2",
@@ -537,7 +538,7 @@
       "to place"
     ],
     "correct_index": 1,
-    "explanation": "PORT comes from Latin portare, to carry. Portable means able to be carried; transport means to carry across; export means to carry out. Do not confuse with port (harbor) — the root is about carrying, not water."
+    "explanation": "PORT comes from Latin portare, to carry. Portable means able to be carried; transport means to carry across; export means to carry out. Do not confuse with port (harbor) \u2014 the root is about carrying, not water."
   },
   {
     "external_key": "WK-ROOT-B4-3",
@@ -552,7 +553,7 @@
       "to value"
     ],
     "correct_index": 1,
-    "explanation": "CRED comes from the Latin credere, to believe. Credible means believable; credit means trust placed in someone; incredulous means unwilling to believe. The credo (creed) is a statement of beliefs."
+    "explanation": "CRED comes from Latin credere, to believe. Cognates include credible (believable), credit (trust extended), incredulous (unwilling to believe), creed (a statement of beliefs), and credentials (proof that warrants trust). 'To judge' would use JUDIC- (judicial, prejudice), an adjacent legal root that test-takers sometimes mix with CRED- because both touch courtroom contexts. 'To know' would use SCI- or COGN-, separate roots. 'To value' would use VAL- (value, valor), also separate. Only To believe matches all the cognates."
   },
   {
     "external_key": "WK-ROOT-B4-4",
@@ -567,7 +568,7 @@
       "to order by force"
     ],
     "correct_index": 1,
-    "explanation": "DICT comes from Latin dicere, to say. Dictate means to say aloud for someone to write; predict means to say beforehand; contradict means to say the opposite. To write is SCRIB/SCRIPT; to lead is DUC."
+    "explanation": "DICT comes from Latin dicere, to say. Cognates include dictate (say aloud for recording), predict (say before), contradict (say against), edict (an official saying), and dictionary (a book of word sayings). 'To write' would use SCRIB or SCRIPT (scribble, manuscript, prescription), an easy confusion since saying and writing pair so often in school. 'To lead' would use DUC (conduct, induce), a different root. 'To order by force' would use IMPER- (imperative, emperor); a dictator orders but the DICT root names the saying, not the force. Only To say or speak fits."
   },
   {
     "external_key": "WK-ROOT-B4-5",
@@ -582,7 +583,7 @@
       "before"
     ],
     "correct_index": 1,
-    "explanation": "BENE comes from Latin meaning good or well. A benefactor is one who does good for others; benefit is a good outcome; benevolent means well-wishing. PRE- means before; MULTI- means many; MAGN- means great."
+    "explanation": "BENE comes from Latin meaning good or well. Cognates include benefit (a good outcome), benefactor (one who does good), benevolent (well-wishing), benediction (a blessing or good saying), and benign (kind or harmless). 'Great' would use MAGN- (magnificent, magnify), commonly confused since 'great' and 'good' overlap in casual praise. 'Many' would use MULTI- (multiple, multitude), a separate root. 'Before' would use PRE- or ANTE-, also separate. Only Good or well matches BENE- across the listed cognates."
   },
   {
     "external_key": "WK-ROOT-B4-6",
@@ -597,7 +598,7 @@
       "a law"
     ],
     "correct_index": 1,
-    "explanation": "GREG comes from Latin grex/gregis, meaning flock or herd. Gregarious means fond of the group (sociable); congregate means to gather as a group; segregate means to separate from the group. A leader would be DUX; a law would be LEX."
+    "explanation": "GREG comes from Latin grex/gregis, meaning flock or herd. Cognates include gregarious (fond of the flock, sociable), congregate (gather as a flock), segregate (separate from the flock), and egregious (originally, standing out from the flock, now negative). 'To speak' would use DICT- or LOQU-, separate roots. 'A leader' would use DUC- (duke, conduct) or PRINC- (prince), since a leader heads the flock but is not the flock itself. 'A law' would use LEG- (legal, legislation). Only A flock or group matches GREG across cognates."
   },
   {
     "external_key": "WK-ROOT-B4-7",
@@ -627,7 +628,7 @@
       "to cut"
     ],
     "correct_index": 1,
-    "explanation": "TRACT comes from Latin trahere, to pull or drag. Extract means to pull out; retract means to pull back; contract literally means to pull together (draw closer). Traction is the grip that allows pulling or movement."
+    "explanation": "TRACT comes from Latin trahere, to pull or drag. Cognates include extract (pull out), retract (pull back), contract (pull together, draw closer), traction (the grip that allows pulling), and tractor (a pulling machine). 'To push' would use PULS- or PEL- (propel, expel), the literal opposite root. 'To hold' would use TEN- (tenacious, retain) or HABE- (habit, inhibit). 'To cut' would use CIS- or SECT- (incision, dissect). Only To pull or draw fits the cognate set, with push as the most tempting wrong answer because it shares the directional-force frame."
   },
   {
     "external_key": "WK-ROOT-B4-9",
@@ -642,7 +643,7 @@
       "to add weight"
     ],
     "correct_index": 1,
-    "explanation": "PEND comes from Latin pendere, to hang. Pending means hanging (unresolved); suspend means to hang up or halt; appendix hangs from the main body of text. 'Add weight' is a trap — although appended items extend a document, the root captures the hanging quality."
+    "explanation": "PEND comes from Latin pendere, to hang. Pending means hanging (unresolved); suspend means to hang up or halt; appendix hangs from the main body of text. 'Add weight' is a trap \u2014 although appended items extend a document, the root captures the hanging quality."
   },
   {
     "external_key": "WK-ROOT-B4-10",
@@ -657,7 +658,7 @@
       "to rule"
     ],
     "correct_index": 2,
-    "explanation": "VOC comes from Latin vocare, to call. Invoke means to call upon; vocalize means to give voice to; irrevocable means unable to be called back (reversed). VIS means to see; SENT/SENS means to feel; REG/RECT means to rule."
+    "explanation": "VOC comes from Latin vocare, to call. Cognates include invoke (call upon), vocalize (give voice to), irrevocable (unable to be called back), advocate (one who calls in support), provoke (call forth a reaction), and vocation (a calling). 'To see' would use VIS- (vision, visible), a separate root that learners sometimes confuse with VOC- because both involve sensory output. 'To feel' would use SENT or SENS (sentiment, sensory). 'To rule' would use REG or RECT (regal, direct). Only To call or voice fits the cognates."
   },
   {
     "external_key": "WK-ROOT-B4-11",
@@ -687,7 +688,7 @@
       "to fill"
     ],
     "correct_index": 0,
-    "explanation": "PLAC comes from Latin placare, to please or appease. Placate means to calm or appease; complacent means self-satisfied (pleased with oneself to excess); implacable means impossible to appease. 'Place' (Latin: ponere/positum) is a different root despite the visual similarity."
+    "explanation": "PLAC comes from Latin placare, to please or appease. Cognates include placate (calm someone down), complacent (self-satisfied, pleased with oneself to excess), implacable (impossible to appease), placid (calm), and placebo (literally 'I shall please'). 'To place or position' is the most tempting wrong answer because of the visual similarity, but it comes from a different Latin root (ponere/positum), so PLACE and PLACATE only look related. 'To promise' would use PROMIS- or SPONS-. 'To fill' would use PLE- (replete, plenary). Only To please or calm fits."
   },
   {
     "external_key": "PC-MI-B4-1",
@@ -702,7 +703,7 @@
       "Most people do not drink enough water."
     ],
     "correct_index": 1,
-    "explanation": "The passage covers water's importance and multiple functions. Choice A is too narrow (focuses only on quantity). Choice C is a detail. Choice D is an inference not stated in the passage."
+    "explanation": "The opening sentence states the umbrella claim: \"Drinking enough water each day is important for good health.\" The next sentence backs it up with three functions, and the third sentence adds a guideline. Choice B captures both the importance claim and the multiple functions. Choice A misreads \"at least eight glasses\" as \"exactly eight\" and treats one guideline as the whole point. Choice C picks one supporting detail (waste removal) and elevates it to the main idea. Choice D invents a claim about people falling short, which the passage never makes."
   },
   {
     "external_key": "PC-MI-B4-2",
@@ -717,7 +718,7 @@
       "Dogs are the most popular pets in the world."
     ],
     "correct_index": 0,
-    "explanation": "The passage covers both historical and modern uses of dogs, making the broad partnership theme the main idea. Choices B and C are supporting details. Choice D is not stated in the passage."
+    "explanation": "The passage covers both the long history (\"lived alongside humans for thousands of years\") and modern uses (\"Today, dogs are still used to assist the blind, support law enforcement, and provide emotional comfort\"). Choice A blends both halves into one statement. Choice B picks a single modern example and treats it as the whole point. Choice C captures only the historical half and misses the present-day evidence. Choice D introduces a popularity ranking the passage never makes. Only A reflects the full scope of partnership across past and present."
   },
   {
     "external_key": "PC-MI-B4-3",
@@ -732,7 +733,7 @@
       "Adults who sleep eight hours make better decisions."
     ],
     "correct_index": 2,
-    "explanation": "The passage makes a case for sleep as an active, essential process — not passive rest. Choice A is a supporting detail. Choice B overstates one detail. Choice D introduces a specific claim (eight hours) not stated in the passage."
+    "explanation": "The passage makes a case for sleep as an active, essential process \u2014 not passive rest. Choice A is a supporting detail. Choice B overstates one detail. Choice D introduces a specific claim (eight hours) not stated in the passage."
   },
   {
     "external_key": "PC-MI-B4-4",
@@ -747,7 +748,7 @@
       "All military bases in the United States are being renamed."
     ],
     "correct_index": 2,
-    "explanation": "The passage establishes the installation's scale and importance. The renaming and the 82nd Airborne are supporting details. Choice D goes beyond what the passage states."
+    "explanation": "The first sentence states the umbrella claim: Fort Liberty is \"one of the largest military installations in the world.\" The remaining sentences support that with the resident units, 160,000 acres, and 50,000 soldiers. Choice C captures the size-and-significance frame. Choice A picks the 82nd Airborne detail and treats it as the main idea. Choice B picks the renaming aside, which is presented in passing. Choice D overreaches by generalizing from one base to every military installation in the country, a claim the passage does not make."
   },
   {
     "external_key": "PC-MI-B4-5",
@@ -769,7 +770,7 @@
     "subtest": "PC",
     "topic_id": "pc.main-idea",
     "difficulty": 3,
-    "stem": "Read the passage below and answer the question.\n\n\"Coral reefs cover less than one percent of the ocean floor yet support roughly 25 percent of all marine species. Rising ocean temperatures cause corals to expel the algae that give them color and nutrients — a process called bleaching. Without intervention, scientists estimate that most of the world's reefs could disappear by 2050.\"\n\nWhat is the main idea of this passage?",
+    "stem": "Read the passage below and answer the question.\n\n\"Coral reefs cover less than one percent of the ocean floor yet support roughly 25 percent of all marine species. Rising ocean temperatures cause corals to expel the algae that give them color and nutrients \u2014 a process called bleaching. Without intervention, scientists estimate that most of the world's reefs could disappear by 2050.\"\n\nWhat is the main idea of this passage?",
     "choices": [
       "Bleaching is the only threat facing coral reefs.",
       "Coral reefs are critically important ecosystems under threat from warming oceans.",
@@ -777,14 +778,14 @@
       "Coral reefs cover 25 percent of the ocean floor."
     ],
     "correct_index": 1,
-    "explanation": "The passage establishes the reefs' importance (25% of species, <1% of floor) and the threat from warming. Choice A narrows the threat incorrectly. Choice C contradicts the passage's prediction. Choice D confuses the statistics."
+    "explanation": "The passage pairs an importance claim (\"support roughly 25 percent of all marine species\") with a threat claim (\"rising ocean temperatures cause corals to expel the algae\" and reefs \"could disappear by 2050\"). Choice B captures both halves. Choice A overstates by saying bleaching is the \"only\" threat; the passage never claims that. Choice C contradicts the passage, which gives a 2050 prediction. Choice D scrambles the statistics, since 25% refers to marine species supported, not to the share of ocean floor reefs cover."
   },
   {
     "external_key": "PC-MI-B4-7",
     "subtest": "PC",
     "topic_id": "pc.main-idea",
     "difficulty": 3,
-    "stem": "Read the passage below and answer the question.\n\n\"Urban heat islands form when cities replace natural land with asphalt, concrete, and buildings that absorb and trap heat. Summer temperatures in urban centers can be 10°F higher than in surrounding rural areas. This excess heat increases energy demand for cooling, worsens air quality, and disproportionately harms elderly residents and people without air conditioning.\"\n\nWhat is the main idea of this passage?",
+    "stem": "Read the passage below and answer the question.\n\n\"Urban heat islands form when cities replace natural land with asphalt, concrete, and buildings that absorb and trap heat. Summer temperatures in urban centers can be 10\u00b0F higher than in surrounding rural areas. This excess heat increases energy demand for cooling, worsens air quality, and disproportionately harms elderly residents and people without air conditioning.\"\n\nWhat is the main idea of this passage?",
     "choices": [
       "Cities should replace concrete with more trees.",
       "Elderly people are most at risk from high temperatures.",
@@ -792,7 +793,7 @@
       "Air quality is worse in cities than in rural areas for many reasons."
     ],
     "correct_index": 2,
-    "explanation": "The passage defines the phenomenon and explains its multiple effects. Choice A prescribes a solution not mentioned in the text. Choice B focuses on one detail. Choice D broadens beyond the passage's scope."
+    "explanation": "The passage defines the phenomenon, gives the temperature gap (\"can be 10\u00b0F higher\"), and lists three downstream harms: energy demand, air quality, and vulnerable populations. Choice C captures the cause-and-cascade structure. Choice A prescribes a solution (more trees) the passage never recommends. Choice B picks one detail (elderly harm) and treats it as the main point. Choice D broadens beyond the passage by attributing air quality differences to \"many reasons,\" when the text discusses only urban heat island effects."
   },
   {
     "external_key": "PC-MI-B4-8",
@@ -822,14 +823,14 @@
       "Most commanders are stronger at tactics than at strategy."
     ],
     "correct_index": 2,
-    "explanation": "The passage shows that neither strategy alone nor tactics alone suffices — both examples end in failure. The integrated lesson is the main idea. Choice B is a supporting definition, not the conclusion. The passage does not rank one above the other or claim one is more common."
+    "explanation": "The passage shows that neither strategy alone nor tactics alone suffices \u2014 both examples end in failure. The integrated lesson is the main idea. Choice B is a supporting definition, not the conclusion. The passage does not rank one above the other or claim one is more common."
   },
   {
     "external_key": "PC-MI-B4-10",
     "subtest": "PC",
     "topic_id": "pc.main-idea",
     "difficulty": 4,
-    "stem": "Read the passage below and answer the question.\n\n\"The invention of the printing press in the 15th century did not merely speed up book production — it fundamentally restructured the flow of information in European society. Within decades, ideas that once took generations to spread could circle the continent in months. The resulting surge in literacy, religious debate, and scientific exchange contributed to the Reformation, the Scientific Revolution, and ultimately the Enlightenment.\"\n\nWhat is the main idea of this passage?",
+    "stem": "Read the passage below and answer the question.\n\n\"The invention of the printing press in the 15th century did not merely speed up book production \u2014 it fundamentally restructured the flow of information in European society. Within decades, ideas that once took generations to spread could circle the continent in months. The resulting surge in literacy, religious debate, and scientific exchange contributed to the Reformation, the Scientific Revolution, and ultimately the Enlightenment.\"\n\nWhat is the main idea of this passage?",
     "choices": [
       "The printing press made books cheaper and more widely available.",
       "The Reformation was caused primarily by the printing press.",
@@ -837,14 +838,14 @@
       "Johannes Gutenberg's invention changed European religion more than European science."
     ],
     "correct_index": 2,
-    "explanation": "The passage argues for broad historical transformation, not just faster printing. Choice A is a supporting detail. Choice B overstates one aspect. Choice D creates a ranking the passage does not support — it lists Reformation and Science as parallel effects."
+    "explanation": "The passage argues for broad historical transformation, not just faster printing. Choice A is a supporting detail. Choice B overstates one aspect. Choice D creates a ranking the passage does not support \u2014 it lists Reformation and Science as parallel effects."
   },
   {
     "external_key": "PC-MI-B4-11",
     "subtest": "PC",
     "topic_id": "pc.main-idea",
     "difficulty": 5,
-    "stem": "Read the passage below and answer the question.\n\n\"Risk homeostasis theory suggests that individuals have a target level of acceptable risk and unconsciously adjust their behavior to maintain it. When safety devices reduce perceived danger, people may compensate by behaving more recklessly — a phenomenon observed in seatbelt studies, where drivers with belts were found to follow more closely and brake later than unbelted drivers. The implication is that some safety interventions may partially cancel their own benefits.\"\n\nWhat is the main idea of this passage?",
+    "stem": "Read the passage below and answer the question.\n\n\"Risk homeostasis theory suggests that individuals have a target level of acceptable risk and unconsciously adjust their behavior to maintain it. When safety devices reduce perceived danger, people may compensate by behaving more recklessly \u2014 a phenomenon observed in seatbelt studies, where drivers with belts were found to follow more closely and brake later than unbelted drivers. The implication is that some safety interventions may partially cancel their own benefits.\"\n\nWhat is the main idea of this passage?",
     "choices": [
       "Seatbelts are ineffective because people drive more recklessly when wearing them.",
       "Safety technology always produces unintended negative consequences.",
@@ -852,14 +853,14 @@
       "Risk homeostasis theory explains all dangerous driving behavior."
     ],
     "correct_index": 2,
-    "explanation": "The passage presents the theory and seatbelt study as evidence that safety devices may be partially offset by behavioral changes — not that they are worthless. Choice A overstates the seatbelt finding. Choice B says 'always,' which is unsupported. Choice D overextends the theory's scope."
+    "explanation": "The passage presents the theory and seatbelt study as evidence that safety devices may be partially offset by behavioral changes \u2014 not that they are worthless. Choice A overstates the seatbelt finding. Choice B says 'always,' which is unsupported. Choice D overextends the theory's scope."
   },
   {
     "external_key": "PC-MI-B4-12",
     "subtest": "PC",
     "topic_id": "pc.main-idea",
     "difficulty": 5,
-    "stem": "Read the passage below and answer the question.\n\n\"Counterinsurgency doctrine recognizes that military force alone rarely defeats an insurgency. Winning the loyalty of the civilian population — through security guarantees, economic development, and effective governance — is as critical as any battlefield outcome. When operations undermine civilian trust, tactical victories can accelerate strategic defeat by driving the population toward the insurgents.\"\n\nWhat is the main idea of this passage?",
+    "stem": "Read the passage below and answer the question.\n\n\"Counterinsurgency doctrine recognizes that military force alone rarely defeats an insurgency. Winning the loyalty of the civilian population \u2014 through security guarantees, economic development, and effective governance \u2014 is as critical as any battlefield outcome. When operations undermine civilian trust, tactical victories can accelerate strategic defeat by driving the population toward the insurgents.\"\n\nWhat is the main idea of this passage?",
     "choices": [
       "Economic development is the most important element of counterinsurgency.",
       "Military force is useless in counterinsurgency operations.",
@@ -867,7 +868,7 @@
       "Counterinsurgency doctrine was developed in the 20th century."
     ],
     "correct_index": 2,
-    "explanation": "The passage argues that civilian loyalty is as critical as military results, and that operations damaging civilian trust can cause strategic failure despite tactical wins. Choice A elevates one element above the others without support. Choice B overstates ('alone rarely defeats' ≠ 'useless'). Choice D is not addressed."
+    "explanation": "The passage argues that civilian loyalty is as critical as military results, and that operations damaging civilian trust can cause strategic failure despite tactical wins. Choice A elevates one element above the others without support. Choice B overstates ('alone rarely defeats' \u2260 'useless'). Choice D is not addressed."
   },
   {
     "external_key": "PC-DR-B4-1",
@@ -882,7 +883,7 @@
       "seven"
     ],
     "correct_index": 2,
-    "explanation": "The passage explicitly states the ACFT includes six events and then lists all six. The test replaced the older APFT in 2020."
+    "explanation": "The passage states the count directly: \"The ACFT includes six events,\" followed by a list of all six. Choice C matches the stated number. Choices A and B undercount, picking numbers the passage does not support and that you cannot reach by reading the list. Choice D overcounts by one, the classic trap of miscounting the listed events or assuming the year 2020 is somehow part of the count. The safest move is to trust the explicit count and then verify by counting the listed events, which yields six."
   },
   {
     "external_key": "PC-DR-B4-2",
@@ -897,14 +898,14 @@
       "both sides equally"
     ],
     "correct_index": 2,
-    "explanation": "The passage states that the left side receives oxygen-rich blood from the lungs and pumps it to the body. The right side handles oxygen-poor blood on its way to the lungs."
+    "explanation": "The passage assigns each side a specific role: \"the left side receives oxygen-rich blood from the lungs and pumps it out to the body.\" Choice C matches that line. Choice A picks a real chamber name but the wrong side, since the right atrium handles oxygen-poor blood on the way to the lungs. Choice B does the same with the right ventricle. Choice D contradicts the passage's clear division of labor between the two sides. Only C names the side the passage actually identifies as pumping oxygen-rich blood out to the body."
   },
   {
     "external_key": "PC-DR-B4-3",
     "subtest": "PC",
     "topic_id": "pc.detail-recall",
     "difficulty": 2,
-    "stem": "Read the passage below and answer the question.\n\n\"The Uniform Code of Military Justice (UCMJ) is the foundation of military law in the United States. Enacted by Congress in 1950, it applies to all members of the armed forces at all times — on duty or off, in the United States or abroad. Violations are addressed through the military justice system, not the civilian court system.\"\n\nWhen does the UCMJ apply to service members?",
+    "stem": "Read the passage below and answer the question.\n\n\"The Uniform Code of Military Justice (UCMJ) is the foundation of military law in the United States. Enacted by Congress in 1950, it applies to all members of the armed forces at all times \u2014 on duty or off, in the United States or abroad. Violations are addressed through the military justice system, not the civilian court system.\"\n\nWhen does the UCMJ apply to service members?",
     "choices": [
       "Only while on active duty in the United States",
       "Only when serving overseas",
@@ -912,7 +913,7 @@
       "Only when in uniform"
     ],
     "correct_index": 2,
-    "explanation": "The passage states explicitly that the UCMJ applies 'at all times — on duty or off, in the United States or abroad.' Being in uniform is not mentioned as a condition."
+    "explanation": "The passage states the scope without qualification: the UCMJ \"applies to all members of the armed forces at all times \u2014 on duty or off, in the United States or abroad.\" Choice C reproduces that breadth. Choice A narrows to active duty in the U.S., which the passage explicitly contradicts. Choice B does the same in reverse, restricting application to overseas service. Choice D invents a uniform requirement that the text never sets. Each wrong choice adds a condition the passage rules out by saying the code applies at all times and in all locations."
   },
   {
     "external_key": "PC-DR-B4-4",
@@ -927,7 +928,7 @@
       "specially trained dogs"
     ],
     "correct_index": 1,
-    "explanation": "The passage lists metal detectors, ground-penetrating radar, and specially trained dogs as clearing methods. Controlled burning is not mentioned. The daily clearing rate of 20–50 square meters is a detail, not a method."
+    "explanation": "The passage lists three clearing methods: \"metal detectors, ground-penetrating radar, or specially trained dogs.\" Choices A, C, and D all appear in that sentence, so they cannot be the NOT-mentioned method. Choice B, controlled burning, never appears in the passage at all and is the correct answer to a negative question. The trap on items like this is reading too fast and selecting one of the actual methods because it sounds familiar. The 20\u201350 square meter figure describes clearing rate, not a method."
   },
   {
     "external_key": "PC-DR-B4-5",
@@ -942,14 +943,14 @@
       "To define which weapons are illegal in combat"
     ],
     "correct_index": 1,
-    "explanation": "The passage states the conventions 'establish international legal standards for humane treatment' and clarifies they 'do not prohibit war' but regulate how it is conducted. Courts and weapons restrictions are not mentioned."
+    "explanation": "The passage states the purpose directly: the conventions \"establish international legal standards for the humane treatment of wounded soldiers, prisoners of war, and civilians in armed conflict.\" Choice B paraphrases that line. Choice A is contradicted explicitly by \"They do not prohibit war.\" Choice C invents an international court, a related but distinct international-law concept the passage never raises. Choice D invents weapons restrictions, another adjacent topic that does not appear. Only B reflects the stated purpose: regulating conduct in war, not preventing war or enforcing weapons rules."
   },
   {
     "external_key": "PC-DR-B4-6",
     "subtest": "PC",
     "topic_id": "pc.detail-recall",
     "difficulty": 3,
-    "stem": "Read the passage below and answer the question.\n\n\"Permafrost is ground that remains frozen for at least two consecutive years. It underlies about 15 percent of the world's exposed land surface, concentrated in Alaska, Canada, Russia, and Greenland. As global temperatures rise, permafrost thaws and releases carbon dioxide and methane — greenhouse gases that had been trapped for thousands of years. Scientists estimate that Arctic permafrost alone stores twice as much carbon as is currently in the atmosphere.\"\n\nAccording to the passage, what happens when permafrost thaws?",
+    "stem": "Read the passage below and answer the question.\n\n\"Permafrost is ground that remains frozen for at least two consecutive years. It underlies about 15 percent of the world's exposed land surface, concentrated in Alaska, Canada, Russia, and Greenland. As global temperatures rise, permafrost thaws and releases carbon dioxide and methane \u2014 greenhouse gases that had been trapped for thousands of years. Scientists estimate that Arctic permafrost alone stores twice as much carbon as is currently in the atmosphere.\"\n\nAccording to the passage, what happens when permafrost thaws?",
     "choices": [
       "It releases oxygen into the atmosphere",
       "It lowers global temperatures by exposing cooler ground",
@@ -957,7 +958,7 @@
       "It creates new lakes that absorb greenhouse gases"
     ],
     "correct_index": 2,
-    "explanation": "The passage directly states that thawing permafrost 'releases carbon dioxide and methane — greenhouse gases that had been trapped for thousands of years.' The other options are not stated or are contradicted."
+    "explanation": "The passage states that thawing permafrost \"releases carbon dioxide and methane \u2014 greenhouse gases that had been trapped for thousands of years.\" Choice C reproduces that detail. Choice A swaps oxygen for the actual gases named. Choice B reverses the climate effect, since the passage describes warming amplification, not cooling. Choice D invents lakes that absorb greenhouse gases, a plausible-sounding but unsupported claim. Each wrong choice keeps the topic of permafrost but flips one piece of the actual mechanism the passage describes."
   },
   {
     "external_key": "PC-DR-B4-7",
@@ -972,7 +973,7 @@
       "It enables the weapon to fire different caliber rounds"
     ],
     "correct_index": 1,
-    "explanation": "The passage states the collapsible stock allows adjustment for comfort and easier operation in confined spaces. Range, weight comparison, and caliber flexibility are separate details not attributed to the stock specifically."
+    "explanation": "The passage credits the collapsible stock specifically with two things: it \"allows soldiers to adjust the weapon for comfort and to operate it more easily in confined spaces.\" Choice B reproduces both. Choice A invents a range boost the passage does not attribute to the stock. Choice C cites a real passage detail (lighter than the M16) but assigns it to the wrong feature, since lightness is a property of the carbine overall, not the stock. Choice D invents caliber flexibility never mentioned. Only B matches the advantage tied to the stock."
   },
   {
     "external_key": "PC-DR-B4-8",
@@ -987,14 +988,14 @@
       "People who take regular vitamin supplements"
     ],
     "correct_index": 1,
-    "explanation": "The passage lists three groups at risk: people in northern latitudes in winter, those who spend little time outdoors, and those with darker skin. High altitude and supplementation are not mentioned."
+    "explanation": "The passage names three risk groups: people in northern latitudes in winter, \"people who spend little time outdoors,\" and people with darker skin. Choice B matches the second group verbatim. Choice A pulls on the word \"cholesterol\" from the passage but flips it into a dietary claim the text does not make. Choice C names a real geographic factor that sounds related to latitude but is never mentioned. Choice D reverses the relationship, since supplements would generally reduce risk rather than raise it. Only B appears in the passage's stated risk list."
   },
   {
     "external_key": "PC-DR-B4-9",
     "subtest": "PC",
     "topic_id": "pc.detail-recall",
     "difficulty": 4,
-    "stem": "Read the passage below and answer the question.\n\n\"The Korean War (1950–1953) ended with an armistice agreement rather than a peace treaty. An armistice is a ceasefire agreement that halts active fighting; it does not formally end a state of war. As a result, North Korea and South Korea remain technically at war to this day, with the armistice line — roughly along the 38th parallel — serving as the border between the two nations.\"\n\nAccording to the passage, why are North Korea and South Korea technically still at war?",
+    "stem": "Read the passage below and answer the question.\n\n\"The Korean War (1950\u20131953) ended with an armistice agreement rather than a peace treaty. An armistice is a ceasefire agreement that halts active fighting; it does not formally end a state of war. As a result, North Korea and South Korea remain technically at war to this day, with the armistice line \u2014 roughly along the 38th parallel \u2014 serving as the border between the two nations.\"\n\nAccording to the passage, why are North Korea and South Korea technically still at war?",
     "choices": [
       "The United Nations never recognized South Korea as a separate nation.",
       "Fighting resumed after the armistice was signed.",
@@ -1002,7 +1003,7 @@
       "The peace treaty was signed but never ratified by both governments."
     ],
     "correct_index": 2,
-    "explanation": "The passage explains that an armistice is only a ceasefire and does not end the war legally. No peace treaty was signed — nor does the passage say one was signed and unratified. Choice B is contradicted by the passage."
+    "explanation": "The passage explains that an armistice is only a ceasefire and does not end the war legally. No peace treaty was signed \u2014 nor does the passage say one was signed and unratified. Choice B is contradicted by the passage."
   },
   {
     "external_key": "PC-DR-B4-10",
@@ -1024,7 +1025,7 @@
     "subtest": "PC",
     "topic_id": "pc.detail-recall",
     "difficulty": 5,
-    "stem": "Read the passage below and answer the question.\n\n\"The NATO phonetic alphabet assigns a standardized spoken word to each letter of the alphabet to prevent miscommunication over radio — where letters like B, D, E, and P sound similar. The system, adopted internationally in 1956, uses words such as Alpha (A), Bravo (B), Charlie (C), and Delta (D). These words were chosen based on their distinctiveness across multiple languages and accents, not merely their convenience in English.\"\n\nAccording to the passage, why were the NATO phonetic alphabet words specifically chosen?",
+    "stem": "Read the passage below and answer the question.\n\n\"The NATO phonetic alphabet assigns a standardized spoken word to each letter of the alphabet to prevent miscommunication over radio \u2014 where letters like B, D, E, and P sound similar. The system, adopted internationally in 1956, uses words such as Alpha (A), Bravo (B), Charlie (C), and Delta (D). These words were chosen based on their distinctiveness across multiple languages and accents, not merely their convenience in English.\"\n\nAccording to the passage, why were the NATO phonetic alphabet words specifically chosen?",
     "choices": [
       "Because they were easiest for English-speaking soldiers to remember",
       "Because they are the shortest words possible for each letter",
@@ -1032,14 +1033,14 @@
       "Because they replaced a longer, more complicated system used in World War II"
     ],
     "correct_index": 2,
-    "explanation": "The passage explicitly states words were chosen for distinctiveness 'across multiple languages and accents, not merely their convenience in English.' Choice A is directly contradicted. Choices B and D are not mentioned."
+    "explanation": "The passage states the selection criterion directly: the words \"were chosen based on their distinctiveness across multiple languages and accents, not merely their convenience in English.\" Choice C matches that line. Choice A is contradicted by the same sentence, which explicitly says the choice was not merely about English convenience. Choice B invents a brevity standard the passage never mentions. Choice D invents a WWII predecessor, a plausible historical detail that does not appear in the text. Only C reflects the stated reason for selection."
   },
   {
     "external_key": "PC-DR-B4-12",
     "subtest": "PC",
     "topic_id": "pc.detail-recall",
     "difficulty": 5,
-    "stem": "Read the passage below and answer the question.\n\n\"Autonomous vehicles use a combination of lidar, radar, cameras, and ultrasonic sensors to map their environment in real time. Lidar creates a three-dimensional point cloud by emitting laser pulses and measuring their return time; radar works in darkness and adverse weather where lidar degrades; cameras interpret visual detail and read signs. No single sensor alone provides sufficient data — redundancy across sensor types is what makes autonomous navigation reliable.\"\n\nAccording to the passage, what advantage does radar offer over lidar?",
+    "stem": "Read the passage below and answer the question.\n\n\"Autonomous vehicles use a combination of lidar, radar, cameras, and ultrasonic sensors to map their environment in real time. Lidar creates a three-dimensional point cloud by emitting laser pulses and measuring their return time; radar works in darkness and adverse weather where lidar degrades; cameras interpret visual detail and read signs. No single sensor alone provides sufficient data \u2014 redundancy across sensor types is what makes autonomous navigation reliable.\"\n\nAccording to the passage, what advantage does radar offer over lidar?",
     "choices": [
       "Radar creates a more detailed three-dimensional map of the surroundings",
       "Radar is more accurate at reading road signs than cameras",
@@ -1047,7 +1048,7 @@
       "Radar is less expensive than lidar and therefore used as the primary sensor"
     ],
     "correct_index": 2,
-    "explanation": "The passage states radar 'works in darkness and adverse weather where lidar degrades.' Three-dimensional mapping is attributed to lidar. Sign reading is cameras. Cost is not mentioned."
+    "explanation": "The passage states the radar-versus-lidar advantage directly: \"radar works in darkness and adverse weather where lidar degrades.\" Choice C reproduces that line. Choice A swaps roles, since three-dimensional point clouds are attributed to lidar, not radar. Choice B swaps roles again, since sign reading is the cameras' job. Choice D invents a cost comparison and a \"primary sensor\" claim the passage contradicts by emphasizing redundancy. Each wrong choice paraphrases a real passage detail but reassigns it to the wrong sensor, which is the dominant trap in multi-component recall questions."
   },
   {
     "external_key": "PC-INF-B4-1",
@@ -1062,7 +1063,7 @@
       "Maria had already taken the ASVAB once before."
     ],
     "correct_index": 1,
-    "explanation": "Two weeks of nightly study, review of all material, and three mock exams clearly suggest thorough and serious preparation. No information supports failure or a prior attempt."
+    "explanation": "Two weeks of nightly study, a full pass through the practice questions, and three mock exams form a pattern that fits one description: serious, thorough preparation. Choice B captures that. Choice A contradicts the passage, since Maria clearly did study. Choice C overreaches by inventing a failed outcome the text never mentions. Choice D overreaches in the other direction by inventing a prior attempt, also unsupported. The safest inference stays close to what the actions themselves demonstrate, which is effort and seriousness, not outcomes or backstory."
   },
   {
     "external_key": "PC-INF-B4-2",
@@ -1077,7 +1078,7 @@
       "Food shortages are common at this installation."
     ],
     "correct_index": 0,
-    "explanation": "Running out of food before all soldiers could eat implies either underestimation or a planning failure. The other choices introduce specifics (punishment, closure, recurring shortages) that the passage does not support."
+    "explanation": "If a mess hall \"ran out of food before the last two platoons could eat,\" the most reasonable inference is that the kitchen prepared less food than the headcount required, which is a planning miss. Choice A captures that. Choice B invents a punishment-detail backstory the passage never gives. Choice C overreaches with a permanent closure claim from a single bad meal. Choice D overreaches by treating one incident as a pattern. Each wrong choice goes well beyond the single event described, while A stays tied to what the shortage itself implies."
   },
   {
     "external_key": "PC-INF-B4-3",
@@ -1107,7 +1108,7 @@
       "Cell phones are not counted as electronic devices under the regulation."
     ],
     "correct_index": 1,
-    "explanation": "Four devices exceeds the limit of two. The regulation states excess devices will be confiscated. The passage gives no basis for special authorization or exempting phones from the device count."
+    "explanation": "The regulation caps personal electronic devices at two, and \"soldiers found with additional devices will have the excess items confiscated.\" Four devices is two over the cap, so the soldier is in violation and faces confiscation. Choice B says exactly that. Choice A invents a function-based exception the passage does not allow. Choice C invents a special authorization the passage never mentions. Choice D invents an exemption that exempts cell phones, again unsupported. Each wrong choice creates a loophole the regulation does not provide; B follows the rule on its face."
   },
   {
     "external_key": "PC-INF-B4-5",
@@ -1122,7 +1123,7 @@
       "Heavy rain events were unknown when the drainage system was built."
     ],
     "correct_index": 1,
-    "explanation": "The original system's capacity (2 in/hr) was appropriate for its time; recent storms exceed it (3–4 in/hr). The most logical inference is that conditions have changed, not that the original design was wrong. Relocation is not suggested, and heavy rain certainly occurred in the 1950s."
+    "explanation": "The original system's capacity (2 in/hr) was appropriate for its time; recent storms exceed it (3\u20134 in/hr). The most logical inference is that conditions have changed, not that the original design was wrong. Relocation is not suggested, and heavy rain certainly occurred in the 1950s."
   },
   {
     "external_key": "PC-INF-B4-6",
@@ -1137,7 +1138,7 @@
       "The medic could not determine which patient was most critical."
     ],
     "correct_index": 1,
-    "explanation": "The medic moved the second patient — the one with the severe abdominal wound — immediately to surgery. A severe abdominal wound is typically life-threatening, explaining the prioritization. The other injuries (broken wrist, laceration, dislocated shoulder) are serious but less immediately fatal."
+    "explanation": "The medic moved the second patient \u2014 the one with the severe abdominal wound \u2014 immediately to surgery. A severe abdominal wound is typically life-threatening, explaining the prioritization. The other injuries (broken wrist, laceration, dislocated shoulder) are serious but less immediately fatal."
   },
   {
     "external_key": "PC-INF-B4-7",
@@ -1152,14 +1153,14 @@
       "Walking at the rear is the safest position in dangerous terrain."
     ],
     "correct_index": 1,
-    "explanation": "His statement that a group is only as fast as its slowest member logically motivates watching those at the back. If the group's pace is governed by the slowest person, the guide at the rear can monitor that person and keep the column together."
+    "explanation": "The guide's saying is the key: a group \"is only as fast as its slowest member.\" If the slowest person sets the pace, the guide gains the most leverage by watching that person directly, which means staying at the back. Choice B draws that link. Choice A invents a fear of leading that contradicts the experienced-guide framing. Choice C reduces a deliberate tactical choice to personal preference. Choice D overreaches by adding terrain danger and a safety theory the passage never raises. Only B connects the stated belief to the observed behavior."
   },
   {
     "external_key": "PC-INF-B4-8",
     "subtest": "PC",
     "topic_id": "pc.inference",
     "difficulty": 4,
-    "stem": "Read the passage below and answer the question.\n\n\"Archaeological evidence shows that the first settlements at the site date to approximately 3,000 BCE. The settlement was abandoned suddenly around 1,200 BCE — grain stores were left full, tools were found mid-task, and cooking fires had not been extinguished. No bodies were found in the ruins.\"\n\nWhat can be reasonably inferred from the evidence described?",
+    "stem": "Read the passage below and answer the question.\n\n\"Archaeological evidence shows that the first settlements at the site date to approximately 3,000 BCE. The settlement was abandoned suddenly around 1,200 BCE \u2014 grain stores were left full, tools were found mid-task, and cooking fires had not been extinguished. No bodies were found in the ruins.\"\n\nWhat can be reasonably inferred from the evidence described?",
     "choices": [
       "The settlement was destroyed by a volcanic eruption that killed all residents.",
       "The inhabitants left abruptly and likely survived to resettle elsewhere.",
@@ -1182,7 +1183,7 @@
       "The 40 percent increase indicates that discipline worsened after the manual was issued."
     ],
     "correct_index": 1,
-    "explanation": "The near-elimination of undocumented deviations alongside a rise in documented ones suggests that deviations were occurring before — just unrecorded. The requirement brought them into the official record, not that more deviations were happening. The wording about 'discipline worsening' misreads more documentation as more rule-breaking."
+    "explanation": "The near-elimination of undocumented deviations alongside a rise in documented ones suggests that deviations were occurring before \u2014 just unrecorded. The requirement brought them into the official record, not that more deviations were happening. The wording about 'discipline worsening' misreads more documentation as more rule-breaking."
   },
   {
     "external_key": "PC-INF-B4-10",
@@ -1197,7 +1198,7 @@
       "Both nations treated the deadline as optional."
     ],
     "correct_index": 1,
-    "explanation": "Four extension requests and only 8% completion against a 30% requirement strongly suggests reluctance or unwillingness, not merely technical difficulty. Nation A's prompt action makes the treaty's feasibility clear. Choice C contradicts the 8% figure. Choice D is not supported — Nation A complied."
+    "explanation": "Four extension requests and only 8% completion against a 30% requirement strongly suggests reluctance or unwillingness, not merely technical difficulty. Nation A's prompt action makes the treaty's feasibility clear. Choice C contradicts the 8% figure. Choice D is not supported \u2014 Nation A complied."
   },
   {
     "external_key": "PC-INF-B4-11",
@@ -1227,7 +1228,7 @@
       "The follow-up study invalidates the results of the first study."
     ],
     "correct_index": 2,
-    "explanation": "The two studies together show a trade-off: observation increases routine accuracy but suppresses creativity; removing observation reverses both effects. Neither study is invalidated — they are complementary. Choices A and B draw absolute policy conclusions the data do not support."
+    "explanation": "The two studies together show a trade-off: observation increases routine accuracy but suppresses creativity; removing observation reverses both effects. Neither study is invalidated \u2014 they are complementary. Choices A and B draw absolute policy conclusions the data do not support."
   },
   {
     "external_key": "PC-ATP-B4-1",
@@ -1242,7 +1243,7 @@
       "report the results of a scientific study"
     ],
     "correct_index": 1,
-    "explanation": "The imperative 'Make it a habit' and the benefits-focused framing show the author's goal is to persuade the reader to act. The passage does not cover history, food comparisons, or methodology."
+    "explanation": "The closing imperative says it plainly: \"Make it a habit to eat something in the morning, even if it is small.\" Combined with the benefits framing, the passage is a soft pitch, not neutral exposition. Choice B captures that persuasive purpose. Choice A invents a cultural-history angle that never appears. Choice C invents a comparison among breakfast foods the passage does not make. Choice D treats the unsourced student claim as a formal study report, which the passage does not present as research findings. Only B fits the directive tone."
   },
   {
     "external_key": "PC-ATP-B4-2",
@@ -1257,14 +1258,14 @@
       "compare the base library to civilian public libraries"
     ],
     "correct_index": 2,
-    "explanation": "The passage consists entirely of factual information: hours, closure days, and ID requirement. No opinion, comparison, or persuasion is present."
+    "explanation": "Every sentence delivers a fact: hours of operation, closure days, and the ID requirement. No language praises the library, urges use, or weighs alternatives. Choice C captures that neutral, informational purpose. Choice A invents an argumentative stance the passage never takes. Choice B invents persuasion that the matter-of-fact language does not carry. Choice D invents a comparison to civilian libraries that never appears. The passage reads like a posted notice, and only C describes that purpose accurately."
   },
   {
     "external_key": "PC-ATP-B4-3",
     "subtest": "PC",
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 2,
-    "stem": "Read the passage below and answer the question.\n\n\"Every spring, the river flooded the lower fields, and every spring the farmers rebuilt their fences, replanted their seeds, and returned to work. They did not complain — or if they did, they complained only to one another, quietly, and then went back to the fields.\"\n\nThe author's tone toward the farmers can best be described as:",
+    "stem": "Read the passage below and answer the question.\n\n\"Every spring, the river flooded the lower fields, and every spring the farmers rebuilt their fences, replanted their seeds, and returned to work. They did not complain \u2014 or if they did, they complained only to one another, quietly, and then went back to the fields.\"\n\nThe author's tone toward the farmers can best be described as:",
     "choices": [
       "critical of their failure to prevent the flooding",
       "admiring of their quiet resilience",
@@ -1272,7 +1273,7 @@
       "sympathetic but pessimistic about their future"
     ],
     "correct_index": 1,
-    "explanation": "'Did not complain' and returning to work each year without fanfare conveys quiet strength. The author's choice to note their stoicism — and to present it without irony — signals admiration. No criticism, indifference, or pessimism is present in the tone."
+    "explanation": "'Did not complain' and returning to work each year without fanfare conveys quiet strength. The author's choice to note their stoicism \u2014 and to present it without irony \u2014 signals admiration. No criticism, indifference, or pessimism is present in the tone."
   },
   {
     "external_key": "PC-ATP-B4-4",
@@ -1287,14 +1288,14 @@
       "alarmed by the economic impact on local businesses"
     ],
     "correct_index": 1,
-    "explanation": "'Progress, apparently, is on schedule' is the give-away — said while describing three studies and no solution, this is textbook sarcasm. The author presents facts in a way that makes the inaction obvious, then punctuates it with a mock-positive conclusion."
+    "explanation": "The closer gives it away: \"Progress, apparently, is on schedule.\" That line, placed after three studies, three closures, and yet another task force, is mock-praise. Choice B names that sarcasm. Choice A reverses the attitude. Choice C ignores the loaded \"apparently\" and the deliberate juxtaposition of inaction with mock progress. Choice D names a near-but-distinct attitude, since the author's focus is the council's pattern of avoidance rather than alarm over business impact specifically. The business closures function as evidence for the critique, not as the emotional center."
   },
   {
     "external_key": "PC-ATP-B4-5",
     "subtest": "PC",
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 3,
-    "stem": "Read the passage below and answer the question.\n\n\"Letters from soldiers to their families during World War I reveal an almost universal silence on the worst of what they experienced. The mud, the cold, and the artillery were mentioned; the dead faces of friends were not. They wrote about food, about home, about small jokes — anything to protect the people they loved from what could not be unseen.\"\n\nThe author's tone toward the soldiers can best be described as:",
+    "stem": "Read the passage below and answer the question.\n\n\"Letters from soldiers to their families during World War I reveal an almost universal silence on the worst of what they experienced. The mud, the cold, and the artillery were mentioned; the dead faces of friends were not. They wrote about food, about home, about small jokes \u2014 anything to protect the people they loved from what could not be unseen.\"\n\nThe author's tone toward the soldiers can best be described as:",
     "choices": [
       "critical of the soldiers for hiding the truth from their families",
       "analytical and detached",
@@ -1309,7 +1310,7 @@
     "subtest": "PC",
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 3,
-    "stem": "Read the passage below and answer the question.\n\n\"A growing body of research suggests that multitasking — far from being a productivity technique — reduces performance on all tasks attempted simultaneously. The brain does not truly parallel-process complex activities; it rapidly switches attention between them, with a switching cost paid each time. Those who believe they are efficient multitaskers are often, according to the data, among the worst performers on divided-attention tests.\"\n\nThe author's primary purpose is to:",
+    "stem": "Read the passage below and answer the question.\n\n\"A growing body of research suggests that multitasking \u2014 far from being a productivity technique \u2014 reduces performance on all tasks attempted simultaneously. The brain does not truly parallel-process complex activities; it rapidly switches attention between them, with a switching cost paid each time. Those who believe they are efficient multitaskers are often, according to the data, among the worst performers on divided-attention tests.\"\n\nThe author's primary purpose is to:",
     "choices": [
       "celebrate the ability of skilled professionals to multitask effectively",
       "describe the history of research on human attention",
@@ -1317,22 +1318,22 @@
       "compare multitasking across different professions"
     ],
     "correct_index": 2,
-    "explanation": "The passage presents evidence against multitasking and ends with the ironic finding that self-described multitaskers perform worst. The purpose is clearly to challenge the assumption. History and cross-profession comparisons are absent."
+    "explanation": "The passage opens by saying multitasking is \"far from being a productivity technique\" and closes with the ironic finding that self-described efficient multitaskers \"are often, according to the data, among the worst performers.\" Both moves push against a common belief. Choice C captures that. Choice A reverses the stance. Choice B invents a history-of-research framing the passage does not adopt. Choice D invents cross-profession comparison that never appears. Only C reflects the corrective, myth-busting purpose the passage actually pursues."
   },
   {
     "external_key": "PC-ATP-B4-7",
     "subtest": "PC",
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 3,
-    "stem": "Read the passage below and answer the question.\n\n\"The space between words is where a good editor works. A manuscript arrives fat with adjectives, brimming with throat-clearing introductions, padded with every idea the writer was afraid to leave out. The editor's gift is not addition but subtraction — the courage to remove what the writer loved but the reader does not need.\"\n\nThe author's attitude toward the act of editing is best described as:",
+    "stem": "Read the passage below and answer the question.\n\n\"The space between words is where a good editor works. A manuscript arrives fat with adjectives, brimming with throat-clearing introductions, padded with every idea the writer was afraid to leave out. The editor's gift is not addition but subtraction \u2014 the courage to remove what the writer loved but the reader does not need.\"\n\nThe author's attitude toward the act of editing is best described as:",
     "choices": [
       "skeptical that most editors have the necessary skills",
-      "reverential — viewing good editing as a rare and meaningful craft",
+      "reverential \u2014 viewing good editing as a rare and meaningful craft",
       "critical of writers who overwrite their manuscripts",
       "neutral, presenting editing as a technical process"
     ],
     "correct_index": 1,
-    "explanation": "'The editor's gift' and 'the courage to remove' frame editing as a special ability — a gift requiring bravery. This elevated treatment signals reverence, not skepticism or neutrality. The passage describes writer habits sympathetically ('every idea the writer was afraid to leave out'), not critically."
+    "explanation": "'The editor's gift' and 'the courage to remove' frame editing as a special ability \u2014 a gift requiring bravery. This elevated treatment signals reverence, not skepticism or neutrality. The passage describes writer habits sympathetically ('every idea the writer was afraid to leave out'), not critically."
   },
   {
     "external_key": "PC-ATP-B4-8",
@@ -1347,7 +1348,7 @@
       "mournful about the disappearance of glaciers"
     ],
     "correct_index": 1,
-    "explanation": "'It turns out' and the observation that ice 'becomes geology' are quiet, reflective moments — the author finds something worth remarking on in the long view of time. This is contemplative, slightly wry, not alarmed or data-driven. Glacial disappearance is not the subject."
+    "explanation": "'It turns out' and the observation that ice 'becomes geology' are quiet, reflective moments \u2014 the author finds something worth remarking on in the long view of time. This is contemplative, slightly wry, not alarmed or data-driven. Glacial disappearance is not the subject."
   },
   {
     "external_key": "PC-ATP-B4-9",
@@ -1356,10 +1357,10 @@
     "difficulty": 4,
     "stem": "Read the passage below and answer the question.\n\n\"The committee report ran to 847 pages. It was released on a Friday afternoon in December, with no press conference scheduled. The executive summary was 4 pages. The findings were labeled 'preliminary.' Six months later, a follow-up was promised.\"\n\nThe author's implied attitude toward the committee's handling of the report is:",
     "choices": [
-      "supportive — a 847-page report demonstrates thoroughness",
-      "critical — the details suggest the report was released to minimize public attention",
-      "neutral — the author is simply presenting facts without judgment",
-      "hopeful — the follow-up report may address unresolved questions"
+      "supportive \u2014 a 847-page report demonstrates thoroughness",
+      "critical \u2014 the details suggest the report was released to minimize public attention",
+      "neutral \u2014 the author is simply presenting facts without judgment",
+      "hopeful \u2014 the follow-up report may address unresolved questions"
     ],
     "correct_index": 1,
     "explanation": "Friday afternoon December releases, no press conference, 'preliminary' findings, and a delayed follow-up are classic bureaucratic tactics for burying unwanted information. The author selects these details deliberately to imply criticism without stating it. A neutral author would not stack these signals."
@@ -1369,7 +1370,7 @@
     "subtest": "PC",
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 5,
-    "stem": "Read the passage below and answer the question.\n\n\"The soldier who does not think about the mission — who moves on instinct, reflex, and training alone — is often called battle-hardened. We praise him for it. We decorate him for it. And then, when the war ends and he cannot stop moving on instinct, we call it a disorder and wonder why the training does not switch off when the war does.\"\n\nThe author's primary purpose is to:",
+    "stem": "Read the passage below and answer the question.\n\n\"The soldier who does not think about the mission \u2014 who moves on instinct, reflex, and training alone \u2014 is often called battle-hardened. We praise him for it. We decorate him for it. And then, when the war ends and he cannot stop moving on instinct, we call it a disorder and wonder why the training does not switch off when the war does.\"\n\nThe author's primary purpose is to:",
     "choices": [
       "argue that soldiers should not be given combat training",
       "criticize soldiers for seeking recognition through combat",
@@ -1384,14 +1385,14 @@
     "subtest": "PC",
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 5,
-    "stem": "Read the passage below and answer the question.\n\n\"There is something both useful and troubling about the word 'closure.' Useful, because it gives people permission to move forward after loss. Troubling, because it implies that grief has a terminal state — that the missing weight of a person eventually becomes light enough to carry without noticing. People who have lost someone they love report, almost universally, that they do not stop missing them. They simply learn to carry the weight differently.\"\n\nThe author's tone toward the concept of 'closure' is best described as:",
+    "stem": "Read the passage below and answer the question.\n\n\"There is something both useful and troubling about the word 'closure.' Useful, because it gives people permission to move forward after loss. Troubling, because it implies that grief has a terminal state \u2014 that the missing weight of a person eventually becomes light enough to carry without noticing. People who have lost someone they love report, almost universally, that they do not stop missing them. They simply learn to carry the weight differently.\"\n\nThe author's tone toward the concept of 'closure' is best described as:",
     "choices": [
-      "firmly opposed — the author believes the word should be abandoned",
-      "fully supportive — closure is essential for healthy grieving",
-      "nuanced — the author acknowledges its usefulness while questioning its implied finality",
+      "firmly opposed \u2014 the author believes the word should be abandoned",
+      "fully supportive \u2014 closure is essential for healthy grieving",
+      "nuanced \u2014 the author acknowledges its usefulness while questioning its implied finality",
       "clinical and detached, reporting grief research without personal interpretation"
     ],
     "correct_index": 2,
-    "explanation": "The author calls closure 'both useful and troubling,' then unpacks both halves. This is not opposition or support — it is a nuanced critique that preserves the word's value while questioning its misleading implication of completeness. The lyrical ending ('carry the weight differently') rules out clinical detachment."
+    "explanation": "The author calls closure 'both useful and troubling,' then unpacks both halves. This is not opposition or support \u2014 it is a nuanced critique that preserves the word's value while questioning its misleading implication of completeness. The lyrical ending ('carry the weight differently') rules out clinical detachment."
   }
 ]

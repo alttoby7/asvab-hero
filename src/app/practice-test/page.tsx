@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PracticeTestClient from "@/components/practice-test/PracticeTestClient";
 import BrandHero from "@/components/BrandHero";
@@ -38,6 +39,16 @@ export default function PracticeTestPage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           Free ASVAB Practice Test
         </h1>
+        <p className="mt-2 text-sm text-text-tertiary">
+          Active duty?{" "}
+          <Link
+            href="/afct-practice-test"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            Use the AFCT practice page
+          </Link>{" "}
+          for retesting-specific framing.
+        </p>
         <p className="mt-3 text-text-secondary">
           Test your readiness with timed questions covering all 9 ASVAB
           subtests. Get an estimated AFQT score, a per-topic breakdown, and a

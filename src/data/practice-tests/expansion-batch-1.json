@@ -12,7 +12,7 @@
       "difficult to hear"
     ],
     "correct_index": 2,
-    "explanation": "Verbose means using an unnecessarily large number of words. The clue 'needed a simple yes or no' signals that the reply was overly wordy, not merely evasive or hard to hear."
+    "explanation": "The phrase 'needed a simple yes or no' pins the meaning: the reply failed because it used too many words for the simple answer required. Verbose specifically labels speech that uses more words than necessary. 'Evasive' is plausible vocabulary-wise (a long answer can dodge), but the sentence frames frustration around length, not deception. 'Enthusiastic' fits a long reply only if the speaker were excited, which the senator setting does not suggest. 'Difficult to hear' addresses volume, which the sentence never raises."
   },
   {
     "external_key": "WK-CTX-2",
@@ -27,7 +27,7 @@
       "well-trained"
     ],
     "correct_index": 1,
-    "explanation": "Torpid means sluggish or mentally/physically inactive. The context clue 'sleepless days' and 'could barely lift their rifles' points directly to extreme sluggishness, not anger or alertness."
+    "explanation": "Three sleepless days and barely being able to lift their rifles pin the meaning to extreme physical and mental drain. Torpid specifically labels that drained, slowed state. 'Alert' is the direct opposite of what the clues describe. 'Angry' is plausible vocabulary-wise (tired soldiers may snap), but the sentence describes weakness, not temper. 'Well-trained' fits the soldier frame but contradicts the clue: trained soldiers struggling to move signals exhaustion, not capability. Only Sluggish matches the evidence."
   },
   {
     "external_key": "WK-CTX-4",
@@ -57,7 +57,7 @@
       "narrow"
     ],
     "correct_index": 1,
-    "explanation": "Arduous means requiring great effort and endurance. 'Even the most experienced climbers needed rest breaks' signals extreme difficulty, not just narrowness or poor signage."
+    "explanation": "Experienced climbers needing rest breaks every half mile pins the meaning to extreme physical difficulty. Arduous specifically labels work or paths that demand great effort. 'Scenic' is plausible for a hiking trail in general but the sentence focuses on hardship, not beauty. 'Well-marked' addresses signage and visibility, which the sentence never mentions. 'Narrow' could explain difficulty for some hikers but would not stop experienced climbers in particular. Only Demanding matches the evidence of effort overcoming even seasoned hikers."
   },
   {
     "external_key": "WK-CTX-6",
@@ -72,14 +72,14 @@
       "bright and enthusiastic"
     ],
     "correct_index": 1,
-    "explanation": "Sardonic means grimly mocking or cynically humorous. The clue 'found the question absurd' while still being outwardly polite is characteristic of sardonic expression. Warm or enthusiastic contradicts the implied disdain."
+    "explanation": "Finding the question absurd while staying outwardly polite pins the meaning: the smile mocked the question without saying so openly. Sardonic specifically labels grimly humorous mockery. 'Warm and welcoming' contradicts the disdain implied by finding the question absurd. 'Nervous and tense' is plausible for an interview frame but the clue is contempt, not anxiety. 'Bright and enthusiastic' clashes with the silent judgment behind the smile. Only Mocking or grimly humorous fits the combination of polite surface and dismissive interior."
   },
   {
     "external_key": "WK-CTX-8",
     "subtest": "WK",
     "topic_id": "wk.context-clues",
     "difficulty": 3,
-    "stem": "In the sentence 'Despite losing power for three days, the team remained RESILIENT and rebuilt the network faster than expected,' the word RESILIENT most nearly means:",
+    "stem": "In the sentence 'After three consecutive failed inspections and a barracks fire, the unit remained RESILIENT and returned to full readiness within a month,' the word RESILIENT most nearly means:",
     "choices": [
       "resourceful",
       "quick to recover from setbacks",
@@ -87,7 +87,7 @@
       "well-funded"
     ],
     "correct_index": 1,
-    "explanation": "Resilient means able to recover quickly from difficulties. 'Despite losing power' sets up the adversity, and 'rebuilt faster than expected' confirms swift recovery — the core meaning of resilience."
+    "explanation": "The sentence stacks adversities (failed inspections plus a fire) and then notes a return to full readiness. That pattern of being knocked down and bouncing back is exactly what resilient names: the capacity to recover from setbacks. 'Resourceful' is the trickiest distractor because resourceful units also rebound, but resourcefulness specifically means creative problem-solving with limited means, not the rebound itself. 'Highly trained' would describe a baseline competence, not a response to repeated adversity. 'Well-funded' is unsupported by the sentence. Only 'quick to recover from setbacks' names the resilience itself rather than a contributor to it."
   },
   {
     "external_key": "WK-CTX-9",
@@ -102,7 +102,7 @@
       "vague and uncertain"
     ],
     "correct_index": 1,
-    "explanation": "Imperious means arrogantly domineering. The contrast between 'not suggestions' and 'commands' reinforces a tone that expects immediate obedience. Persuasive implies reasoning and choice, which contradicts the passage's meaning."
+    "explanation": "Orders that 'were not suggestions, they were commands' pins the meaning to a tone that expects unquestioning obedience. Imperious specifically labels that domineering authority. 'Calm and measured' contradicts the forceful contrast in the sentence. 'Persuasive and logical' implies the listener is being convinced through reasoning, but the sentence emphasizes that no choice is offered. 'Vague and uncertain' is the opposite of the clarity the sentence describes. Only Domineering and commanding matches the no-choice frame the general's tone establishes."
   },
   {
     "external_key": "WK-CTX-10",
@@ -117,7 +117,7 @@
       "based on observation"
     ],
     "correct_index": 2,
-    "explanation": "Tenuous means thin or weak, often used to describe an argument or idea with little supporting evidence. The phrase 'grew stronger as more data came in' confirms it started from a position of minimal support."
+    "explanation": "The phrase 'grew stronger as more experimental data came in' pins the meaning: the hypothesis began with little support. Tenuous specifically labels arguments or threads that are thin and weakly supported. 'Widely accepted' is the opposite of what the sentence describes. 'Poorly worded' addresses phrasing rather than evidence, which the sentence never criticizes. 'Based on observation' is plausible for any hypothesis but does not capture the weakness that the data later remedied. Only Weak or lacking support matches the trajectory from thin to strong."
   },
   {
     "external_key": "WK-CTX-11",
@@ -132,7 +132,7 @@
       "delivered quickly"
     ],
     "correct_index": 2,
-    "explanation": "Impartial means not favoring one side over another. 'Neither could claim favoritism' is the direct context clue. 'Based on strict law' is tempting but describes method rather than the fairness quality the word captures."
+    "explanation": "The phrase 'neither could claim favoritism' pins the meaning: the ruling did not lean toward either side. Impartial specifically labels that even-handed fairness. 'Biased toward the defendant' is the opposite. 'Based on strict law' is the trickiest distractor since strict law often is impartial, but strictness names rigor, not balance, and the sentence rewards balance specifically. 'Delivered quickly' addresses speed, which the sentence never raises. Only Treating all sides equally without favoritism matches the both-sides-satisfied clue."
   },
   {
     "external_key": "WK-CTX-12",
@@ -147,7 +147,7 @@
       "conducted by a supervisor"
     ],
     "correct_index": 1,
-    "explanation": "Perfunctory means carried out with minimal effort and as a routine duty, not with genuine care. 'Glancing at it for seconds before signing' is the exact clue; the near-catastrophe underscores how inadequate it was."
+    "explanation": "Glancing at the checklist for seconds before signing, with near-catastrophic results, pins the meaning to a review done as bare formality. Perfunctory specifically labels actions done mechanically without genuine effort. 'Thorough and systematic' is the direct opposite. 'Delayed and overdue' addresses timing, but the sentence faults quality, not lateness. 'Conducted by a supervisor' addresses who, not how, and the sentence never identifies the reviewer's rank. Only Done as a formality without real care matches the seconds-of-glancing evidence."
   },
   {
     "external_key": "WK-PFX-1",
@@ -162,7 +162,7 @@
       "something that repeats"
     ],
     "correct_index": 1,
-    "explanation": "ANTE- means before or preceding (compare: antebellum, anteroom). An antecedent is a thing or event that came before another. ANTI- (against) is the common confusion, but the spelling here is ANTE-."
+    "explanation": "ANTECEDENT breaks down as ANTE- (before) plus CED- (go, from cedere) plus -ENT (noun-forming suffix), literally 'that which goes before.' An antecedent is the prior thing that a later thing refers back to. 'Something that comes after' confuses ANTE- (before) with POST- (after). 'Something that contradicts' confuses ANTE- with ANTI- (against), the single most common error since the two prefixes differ by only one letter. 'Something that repeats' would require RE- (again), a different prefix entirely."
   },
   {
     "external_key": "WK-PFX-2",
@@ -177,7 +177,7 @@
       "truthful"
     ],
     "correct_index": 0,
-    "explanation": "BENE- means well or good (benefit, benefactor). Combined with -VOL- (wish), benevolent means well-wishing or kindly disposed. Voluntary shares the same root but a different prefix."
+    "explanation": "BENEVOLENT breaks down as BENE- (well, good) plus VOL- (wish, will) plus -ENT (adjective-forming suffix), literally 'well-wishing.' 'All-powerful' would require OMNI- (all) plus POT- (power), as in omnipotent, a different morphology. 'Voluntary' shares the VOL- root but lacks BENE-, so it names willingness without the good-wishing component. 'Truthful' would require VER- (true, as in veracity), a different root that learners sometimes confuse with VOL-. Only Well-wishing or kind tracks both BENE- and VOL- correctly."
   },
   {
     "external_key": "WK-PFX-3",
@@ -192,7 +192,7 @@
       "the study of ancient languages"
     ],
     "correct_index": 1,
-    "explanation": "CHRONO- means time; -LOGY means study or systematic knowledge. Chronology is the arrangement and study of events in time sequence. A chronograph measures time but -GRAPH means write or record, not study."
+    "explanation": "CHRONOLOGY breaks down as CHRONO- (time) plus -LOGY (study or systematic ordering of). A chronology arranges events in time sequence. 'The science of timekeeping devices' confuses -LOGY (study) with horology, which is the actual word for clock science. 'A record of weather patterns' would require METEORO- (atmosphere), as in meteorology, not CHRONO-. 'The study of ancient languages' would require PHILO- or LINGUO-, not CHRONO-. Only Arrangement of events in time order tracks both CHRONO- and -LOGY correctly."
   },
   {
     "external_key": "WK-PFX-4",
@@ -207,7 +207,7 @@
       "quick to decide"
     ],
     "correct_index": 1,
-    "explanation": "Circumspect literally means 'looking around' — considering all circumstances before acting, hence wary and careful. Quick to decide is the opposite. 'Surrounded by obstacles' misreads CIRCUM- as a physical description."
+    "explanation": "CIRCUMSPECT breaks down as CIRCUM- (around) plus SPECT (look, from spectare), literally 'looking around' before acting. The morphology points to careful surveying of all sides before deciding. 'Easily distracted' misreads looking around as scattered attention, when the word actually means deliberate scanning. 'Surrounded by obstacles' treats CIRCUM- as a physical description of the subject rather than an action they perform. 'Quick to decide' is the opposite of what the morphology suggests. Only Wary and considering all possibilities tracks both pieces."
   },
   {
     "external_key": "WK-PFX-5",
@@ -222,7 +222,7 @@
       "within a single ocean region"
     ],
     "correct_index": 2,
-    "explanation": "TRANS- means across or through, as in transport, transfer, transatlantic. Transoceanic means crossing an ocean from one side to the other."
+    "explanation": "TRANSOCEANIC breaks down as TRANS- (across, through) plus OCEAN plus -IC (adjective-forming), literally 'across the ocean.' Compare transcontinental, transatlantic, transport (carry across). 'Below the ocean surface' would require SUB- (under), as in submarine, a different prefix. 'Along the coastline' would require something like PARA- or PERI- (alongside, around), not TRANS-. 'Within a single ocean region' would require INTRA- (within), the prefix that contrasts most directly with TRANS-. Only Across an ocean matches TRANS-."
   },
   {
     "external_key": "WK-PFX-6",
@@ -252,7 +252,7 @@
       "ancient fossils"
     ],
     "correct_index": 1,
-    "explanation": "SEISMO- derives from the Greek seismos, meaning earthquake or shaking. A seismologist studies earthquakes and seismic waves. Fossils (paleontology) and ocean currents (oceanography) involve different prefixes."
+    "explanation": "SEISMOLOGIST breaks down as SEISMO- (shaking, earthquake, from Greek seismos) plus -OLOGIST (one who studies). 'Structure of the atmosphere' would require METEORO-, the prefix for meteorology, not SEISMO-. 'Ocean currents' would require OCEANO-, as in oceanography, plus the -GRAPHY suffix for description rather than -OLOGY. 'Ancient fossils' would require PALEO- (ancient) plus ONTO- (being), as in paleontology, a completely different morpheme. Only Earthquake activity matches SEISMO- specifically."
   },
   {
     "external_key": "WK-PFX-8",
@@ -267,7 +267,7 @@
       "emotionally volatile"
     ],
     "correct_index": 1,
-    "explanation": "Magnanimous means 'great-spirited' — generous, noble, and especially forgiving toward rivals or those who have wronged you. Physically large (magnitude) uses the same root but the ANIM- component shifts meaning toward character, not size."
+    "explanation": "MAGNANIMOUS breaks down as MAGN- (great) plus ANIM- (spirit, soul) plus -OUS (adjective-forming), literally 'great-spirited.' The ANIM- piece shifts the meaning from physical greatness toward greatness of character, especially generosity toward rivals. 'Physically large and imposing' reads only the MAGN- piece (as in magnitude) and ignores ANIM-. 'Highly educated' would require ERUD- or SAPI- roots, not MAGN-/ANIM-. 'Emotionally volatile' confuses ANIM- with animated agitation rather than soul or character. Only Generous in forgiving insults or injuries tracks both pieces."
   },
   {
     "external_key": "WK-ROOT-1",
@@ -282,7 +282,7 @@
       "to gather"
     ],
     "correct_index": 1,
-    "explanation": "AUD- comes from the Latin audire, to hear. Audible means capable of being heard; an auditorium is a place for hearing performances; an audience is a group of listeners."
+    "explanation": "AUD- comes from Latin audire, meaning to hear. Cognates include audible (able to be heard), auditorium (a place built for hearing), audience (a group of listeners), audition (a hearing trial), and audio (sound recording). 'To speak' would use DICT- (dictate, predict) or LOQU- (eloquent, loquacious), different roots entirely. 'To see' would use VIS- (vision, visible) or SPEC- (spectator), commonly confused since both involve perception. 'To gather' would use GREG- (congregate) or AGGREG-, not AUD-."
   },
   {
     "external_key": "WK-ROOT-2",
@@ -297,7 +297,7 @@
       "distance"
     ],
     "correct_index": 1,
-    "explanation": "CHRON comes from the Greek chronos, meaning time. A chronometer measures time precisely; an anachronism is something placed in the wrong time period; chronic means persisting over a long time."
+    "explanation": "CHRON comes from Greek chronos, meaning time. Cognates include chronic (continuing over a long time), chronometer (a precise time-measuring device), anachronism (something placed in the wrong time period), chronicle (a time-ordered record), and synchronize (occur at the same time). 'Color' would use CHROM- (chromatic, chromosome), a similar-sounding root that test-takers confuse with CHRON- because both start with CHR-. 'Order' would use ORDIN- (ordinal, ordinary). 'Distance' would use METR- or MILE-, not CHRON-."
   },
   {
     "external_key": "WK-ROOT-3",
@@ -312,7 +312,7 @@
       "boundary"
     ],
     "correct_index": 2,
-    "explanation": "TERRA comes from Latin meaning earth or land. Mediterranean literally means 'middle of the earth (land)'; terrain refers to the features of a stretch of land; territory is a defined area of land."
+    "explanation": "TERRA comes from Latin meaning earth or land. Cognates include terrain (the lay of the land), territory (a defined area of land), Mediterranean (middle of the land), terrestrial (relating to earth), and terrace (a flat platform of land). 'Water' would use AQUA- (aquatic, aqueduct) or HYDRO- (hydrate, hydraulic), different roots. 'Sky' would use AERO- or CEL- (celestial), not TERRA-. 'Boundary' would use FIN- (finite, define) or LIMIT-, also separate roots. Only Earth or land matches TERRA across all the cognates."
   },
   {
     "external_key": "WK-ROOT-4",
@@ -372,7 +372,7 @@
       "compare different methods of teaching personal finance"
     ],
     "correct_index": 1,
-    "explanation": "The passage makes a direct argument: schools that skip financial literacy are 'failing their students.' The word 'failing' signals advocacy, not neutral description. The author is not explaining contract mechanics or comparing teaching methods."
+    "explanation": "The passage builds toward a verdict: \"Schools that skip personal finance education are not saving curriculum space; they are failing their students.\" The word \"failing\" plus \"survival skill\" signals advocacy, not neutral explanation. Choice B captures that argumentative purpose. Choice A picks the contracts example and treats it as the subject, when contracts are only the opening illustration. Choice C names a related topic but misses the persuasive thrust, since the author is not describing graduate hardship in general. Choice D invents a comparison of teaching methods that never appears."
   },
   {
     "external_key": "PC-ATP-2",
@@ -417,7 +417,7 @@
       "critical of beginners who rush their work"
     ],
     "correct_index": 1,
-    "explanation": "'Craftsmanship at its best,' 'patience,' and 'sawdust and purpose' all express genuine admiration. The author does mention critics but counters them confidently rather than defensively, and offers no criticism of beginners specifically."
+    "explanation": "Phrases like \"craftsmanship at its best,\" \"patience, the right tools,\" and \"a shop full of sawdust and purpose\" register as praise. Choice B names that admiring tone. Choice A picks a near-but-distinct attitude, since the author confidently dismisses critics rather than sounding insecure about the craft's future. Choice C ignores the value-loaded language entirely. Choice D misreads \"refusal to accept good enough\" as criticism of beginners, but that phrase praises the carpenter's standards rather than scolding learners. Only B fits the celebratory tone the passage actually carries."
   },
   {
     "external_key": "PC-ATP-5",
@@ -432,7 +432,7 @@
       "uncertain about whether the wetland matters"
     ],
     "correct_index": 1,
-    "explanation": "The author selects details that expose procedural shortcuts: a 72-hour decision on a months-long process, no public notification, federal agencies noting violations. This pattern of detail selection signals criticism even without explicit judgment words."
+    "explanation": "The author selects details that all point in one direction: \"approved in 72 hours\" against \"months of environmental review,\" conservation groups \"not notified until after the vote,\" and \"three federal agencies later noted that proper procedure had not been followed, yet construction began on schedule.\" That pattern of contrast amounts to implied criticism. Choice A reverses the attitude. Choice C ignores the loaded selection of details, treating implied judgment as plain reporting. Choice D invents uncertainty about the wetland, when the author's focus is procedural shortcuts rather than ecological worth."
   },
   {
     "external_key": "PC-ATP-6",
@@ -492,7 +492,7 @@
       "maintain proper tire pressure"
     ],
     "correct_index": 1,
-    "explanation": "Over time, engine oil accumulates metal particles, carbon deposits, and acids that degrade its lubricating ability. Regular changes remove these contaminants and restore proper protection. Oil does not affect fuel octane or tire pressure."
+    "explanation": "Engine oil picks up combustion soot, metal wear particles, and acidic byproducts as it circulates, and its additive package wears out over time. Draining and refilling at the recommended interval removes that contamination and restores fresh detergents and viscosity improvers so bearings and rings stay protected. Fuel octane is a property of the gasoline itself, set at the refinery, and no oil change can change it. Cooling transmission fluid is the job of the transmission cooler or radiator side tank. Tire pressure is set by air volume in the tire, completely unrelated to engine oil."
   },
   {
     "external_key": "AS-MNT-2",
@@ -522,7 +522,7 @@
       "rotating tires improves fuel octane combustion"
     ],
     "correct_index": 1,
-    "explanation": "Front tires handle steering forces and often support more weight from the engine, causing them to wear faster — especially on front-wheel-drive vehicles. Rotation equalizes wear across all four tires, extending overall tire life."
+    "explanation": "On most cars, especially front-wheel-drive, the front tires carry more weight from the engine and transaxle and also handle every steering input, so they wear noticeably faster than the rears. Moving tires to new positions on a schedule evens out that wear and stretches the useful life of the full set. The TPMS reset is a separate maintenance step done with a scan tool or by drive cycle, not by rotating. Flat-spotting comes from prolonged parking with hot tires, not from rotation patterns. Octane combustion has nothing to do with tires."
   },
   {
     "external_key": "AS-MNT-4",
@@ -567,7 +567,7 @@
       "low power steering fluid"
     ],
     "correct_index": 1,
-    "explanation": "When brake pad friction material wears away completely, the metal backing plate contacts the rotor directly, producing a grinding noise under braking. Alternator failure and low power steering fluid cause distinct, unrelated symptoms."
+    "explanation": "Brake pads have friction material bonded to a steel backing plate. When the friction material wears down past its service limit, the bare steel rubs against the cast-iron rotor and produces a coarse grinding noise every time you brake. An alternator failure shows up as a dead battery or warning light, not as a sound tied to the brake pedal. Loose lug nuts make a clunk or vibration that is present whether or not you are braking. Low power steering fluid causes whining when you turn the wheel, again unrelated to the brakes. The brake-only timing is the key clue."
   },
   {
     "external_key": "AS-MNT-7",
@@ -612,7 +612,7 @@
       "300 pounds"
     ],
     "correct_index": 1,
-    "explanation": "Mechanical advantage of an inclined plane = length / height = 15 / 5 = 3. Required force = load / MA = 300 / 3 = 100 pounds. Using the full 300 pounds ignores the ramp's advantage; 60 pounds would require MA of 5."
+    "explanation": "Mechanical advantage of an inclined plane equals length divided by height: MA = 15 / 5 = 3. Effort = Load / MA = 300 / 3 = 100 pounds. Choice A (60 pounds) corresponds to an MA of 5, which would require a 25-foot ramp at this height. Choice C (150 pounds) is half the load, treating the ramp like a single movable pulley. Choice D (300 pounds) ignores the ramp entirely and just lists the load weight, which is what would be required to lift the crate straight up with no machine helping."
   },
   {
     "external_key": "MC-IPH-2",
@@ -627,7 +627,7 @@
       "500 pounds"
     ],
     "correct_index": 2,
-    "explanation": "Pascal's principle: F₂/A₂ = F₁/A₁, so F₂ = F₁ × (A₂/A₁) = 50 × (10/2) = 50 × 5 = 250 pounds. The hydraulic system multiplies force in proportion to the area ratio."
+    "explanation": "Pascal's principle gives F1/A1 = F2/A2, so F2 = F1 x (A2/A1) = 50 x (10/2) = 50 x 5 = 250 pounds. Choice A (10 pounds) divides force by area ratio instead of multiplying, treating hydraulics as if the large piston reduced force. Choice B (100 pounds) doubles the input, applying only the bare 2:1 ratio between pistons rather than the full 5:1 area ratio. Choice D (500 pounds) doubles the correct answer by mishandling the area ratio (using 10 x 1 instead of 10 / 2). The area ratio, not piston diameter or simple multiples, sets force multiplication."
   },
   {
     "external_key": "MC-IPH-3",
@@ -642,7 +642,7 @@
       "300 pounds"
     ],
     "correct_index": 3,
-    "explanation": "With 4 supporting rope segments, the mechanical advantage is 4. Lift capacity = effort × MA = 75 × 4 = 300 pounds. Each supporting strand shares the load equally, so more strands mean more force multiplication."
+    "explanation": "A block-and-tackle's mechanical advantage equals the number of rope segments directly supporting the load. With 4 supporting strands, MA = 4, so the maximum load = effort x MA = 75 x 4 = 300 pounds. Choice A (75 pounds) ignores the pulley advantage entirely, treating the system like a single fixed pulley. Choice B (150 pounds) counts only two supporting strands, like a single movable pulley. Choice C (225 pounds) uses an MA of 3, possibly miscounting rope segments. Each supporting strand splits the load weight evenly, so doubling strands doubles the lift capacity for the same pull."
   },
   {
     "external_key": "MC-IPH-4",
@@ -657,7 +657,7 @@
       "5,000 pounds"
     ],
     "correct_index": 1,
-    "explanation": "Hydraulic MA = output area / input area = 20 / 4 = 5. Input force = load / MA = 1,000 / 5 = 200 pounds. Selecting 50 pounds corresponds to an MA of 20 (confusing areas with MA directly)."
+    "explanation": "Hydraulic MA = output area / input area = 20 / 4 = 5. Input force = Load / MA = 1,000 / 5 = 200 pounds. Choice A (50 pounds) corresponds to MA = 20, which would require comparing the output area to a 1-square-inch input. Choice C (400 pounds) cuts the load by 2.5 instead of 5, perhaps using diameter ratio if the pistons were taken as round, but areas are given directly. Choice D (5,000 pounds) multiplies the load by 5 instead of dividing, inverting Pascal's principle. The input piston always moves with less force than the output when areas are larger downstream."
   },
   {
     "external_key": "MC-IPH-5",
@@ -687,7 +687,7 @@
       "all three require identical force"
     ],
     "correct_index": 2,
-    "explanation": "Single fixed pulley: MA = 1, force = 400 lbs. Ramp: MA = 18/6 = 3, force = 400/3 ≈ 133 lbs. Hydraulic jack: MA = 5, force = 400/5 = 80 lbs. The hydraulic jack requires the least force at 80 lbs."
+    "explanation": "Compare mechanical advantages, ignoring friction. Fixed pulley: MA = 1, effort = 400 / 1 = 400 lb. 18-foot ramp lifting 6 feet: MA = 18 / 6 = 3, effort = 400 / 3 = 133.3 lb. Hydraulic 5:1: MA = 5, effort = 400 / 5 = 80 lb. The hydraulic jack wins with the highest MA and the smallest required input force. Choice A (fixed pulley) only redirects force and gives no mechanical advantage. Choice B (ramp) helps but at MA = 3 still requires more than 130 pounds. Choice D (all identical) is wrong because each machine has a different MA."
   },
   {
     "external_key": "MC-MOT-1",
@@ -702,7 +702,7 @@
       "12 m/s"
     ],
     "correct_index": 2,
-    "explanation": "Conservation of momentum: total momentum before = total momentum after. (5 × 6) + (5 × 0) = 30 kg·m/s. After: first ball stops, so second ball carries all momentum: 5 × v = 30, v = 6 m/s."
+    "explanation": "Conservation of momentum: total momentum before equals total momentum after. Before: p = (5 kg)(6 m/s) + (5 kg)(0) = 30 kg m/s. After: first ball is at rest, so all 30 kg m/s must be carried by the second ball: 5 x v = 30, so v = 6 m/s. Choice A (0 m/s) violates conservation; momentum cannot vanish. Choice B (3 m/s) halves the answer, perhaps splitting the momentum across both balls. Choice D (12 m/s) doubles the answer, possibly adding velocities instead of conserving momentum. Equal masses in a head-on elastic-style stop produce a clean velocity transfer."
   },
   {
     "external_key": "MC-MOT-2",
@@ -717,7 +717,7 @@
       "44.1 m/s"
     ],
     "correct_index": 2,
-    "explanation": "Velocity under free fall = g × t = 9.8 × 3 = 29.4 m/s. Each second adds 9.8 m/s of downward velocity; after 3 seconds the object is moving at 29.4 m/s."
+    "explanation": "Under free fall starting from rest, velocity equals g times time: v = g x t = 9.8 m/s^2 x 3 s = 29.4 m/s. Choice A (9.8 m/s) is the velocity after only 1 second, ignoring the 3-second duration. Choice B (19.6 m/s) is the velocity after 2 seconds, off by one second. Choice D (44.1 m/s) uses the distance formula d = 0.5 x g x t^2 (which gives 44.1 m) and mislabels it as velocity. Velocity and distance under constant acceleration are different quantities: velocity grows linearly with time, while distance grows with the square of time."
   },
   {
     "external_key": "MC-MOT-3",
@@ -732,7 +732,7 @@
       "80 m/s²"
     ],
     "correct_index": 1,
-    "explanation": "Newton's Second Law: a = F/m = 20/4 = 5 m/s². Dividing mass by force (4/20 = 0.2) inverts the formula, a common error. Multiplying gives 80, which misapplies the relationship."
+    "explanation": "Newton's Second Law: a = F / m = 20 N / 4 kg = 5 m/s^2. Choice A (0.2 m/s^2) inverts the formula and divides mass by force (4 / 20). Choice C (16 m/s^2) subtracts mass from force (20 - 4), mixing incompatible units. Choice D (80 m/s^2) multiplies force by mass (20 x 4) instead of dividing, which would give force units squared and is dimensionally invalid. Acceleration scales directly with force and inversely with mass, so heavier objects accelerate less under the same force."
   },
   {
     "external_key": "MC-MOT-4",
@@ -747,7 +747,7 @@
       "it reaches zero at peak height"
     ],
     "correct_index": 2,
-    "explanation": "In projectile motion, horizontal and vertical components are independent. Gravity acts only vertically, so the horizontal speed remains 20 m/s throughout the flight. There is no peak height for a horizontally launched projectile — it only falls."
+    "explanation": "In projectile motion the horizontal and vertical components are independent. Gravity acts only vertically, so without air resistance there is no force in the horizontal direction. With zero horizontal force, Newton's First Law keeps the horizontal velocity constant at 20 m/s for the entire fall. Choice A (increases) would require a forward-pointing force, which gravity is not. Choice B (decreases) would require a backward-pointing force, also absent without air resistance. Choice D (zero at peak height) confuses this with a vertically launched projectile; a horizontally launched ball has no peak, only a parabolic fall."
   },
   {
     "external_key": "MC-MOT-5",
@@ -762,7 +762,7 @@
       "half the final velocity"
     ],
     "correct_index": 1,
-    "explanation": "Impulse = F × t = change in momentum. Same time, twice the force → twice the impulse → twice the change in momentum. Since masses are equal, twice the momentum means twice the velocity."
+    "explanation": "Impulse equals force times time and equals the change in momentum: F x t = m x delta-v. Same time and same mass, but double the force on puck A means double the impulse and therefore double the change in velocity. Starting from rest, the final velocity of A is twice that of B. Choice A (same velocity) ignores the force difference. Choice C (four times) squares the force ratio, which would apply to kinetic energy (KE proportional to v^2), not momentum. Choice D (half) inverts the relationship, treating more force as if it slowed the puck."
   },
   {
     "external_key": "MC-MOT-6",
@@ -777,7 +777,7 @@
       "2.5 m/s west"
     ],
     "correct_index": 1,
-    "explanation": "Momentum is a vector. Taking east as positive: p = (10 × 4) + (6 × −4) = 40 − 24 = 16 kg·m/s east. Combined mass = 16 kg. v = 16/16 = 1 m/s east. They don't stop because the heavier object's eastward momentum exceeds the lighter one's westward momentum."
+    "explanation": "Momentum is a vector. Taking east as positive: p_total = (10)(+4) + (6)(-4) = 40 - 24 = 16 kg m/s east. After sticking, combined mass = 10 + 6 = 16 kg. Common velocity = 16 / 16 = 1 m/s east. Choice A (4 m/s east) ignores the westbound object's momentum entirely. Choice C (0 m/s) treats the speeds as equal-and-opposite without weighting by mass; only equal masses would fully cancel. Choice D (2.5 m/s west) assumes the lighter object wins the collision, but in an inelastic collision the direction follows the larger momentum, which is east."
   },
   {
     "external_key": "GS-PHY-1",
@@ -807,7 +807,7 @@
       "pulley"
     ],
     "correct_index": 2,
-    "explanation": "A screw is essentially an inclined plane wrapped around a cylinder. The threads create a continuous spiral ramp, converting rotational force into linear motion. This is the same mechanical principle as a ramp, just in a circular form."
+    "explanation": "A screw is an inclined plane wrapped around a cylinder. The threads form a spiral ramp that lets a small rotational force advance the screw a small distance with each turn, trading turns for depth, exactly like walking up a long shallow ramp instead of a short steep one. A lever pivots about a fulcrum and uses arm length to multiply force. A wheel and axle multiplies force through different radii. A pulley redirects force through a rope. None of those involve a ramp wound into a cylinder the way a screw does."
   },
   {
     "external_key": "GS-PHY-3",
@@ -837,7 +837,7 @@
       "chemical energy"
     ],
     "correct_index": 2,
-    "explanation": "A compressed or stretched spring stores elastic potential energy — energy stored due to the object's position or deformation. When released, potential energy converts to kinetic energy. Thermal energy would imply the spring heated up."
+    "explanation": "A compressed or stretched spring holds elastic potential energy, stored in the deformed structure and ready to do work when released. Kinetic energy is energy of motion, which the spring only has while the coils are actively moving, not while held still in compression. Thermal energy would mean the spring heated up, which is not the dominant effect of squeezing it. Chemical energy lives in molecular bonds, like in gasoline or a battery, and is unrelated to mechanical deformation. Position and shape, not motion or heat, are what store the energy here."
   },
   {
     "external_key": "GS-PHY-5",
@@ -867,7 +867,7 @@
       "40 meters"
     ],
     "correct_index": 2,
-    "explanation": "Power = Work / Time, so Work = Power × Time = 500 × 4 = 2,000 joules. Work = Force × Distance, so Distance = Work / Force = 2,000 / 200 = 10 meters. Using 4 seconds as the distance (40 m) is a unit confusion error."
+    "explanation": "Power equals work divided by time, so total work is 500 W times 4 s, or 2,000 joules. Work also equals force times distance, so distance equals 2,000 J divided by 200 N, which is 10 meters. The 40-meter answer multiplies power by time directly without dividing by force, a unit-confusion error. The 2.5-meter answer divides force by power, inverting the relationship. The 5-meter answer divides time by force. Keeping the units paired (J = N·m, W = J/s) prevents the wrong combination."
   },
   {
     "external_key": "EI-CON-2",
@@ -882,7 +882,7 @@
       "has the same resistance as an insulator"
     ],
     "correct_index": 2,
-    "explanation": "Semiconductors (like silicon and germanium) have electrical properties between conductors and insulators. Their conductivity can be controlled by temperature, light, or adding impurities (doping), which is why they are the basis of transistors and computer chips."
+    "explanation": "Semiconductors like silicon and germanium sit between conductors and insulators. Pure silicon barely conducts at room temperature, but doping it with phosphorus (n-type) or boron (p-type), heating it, or shining light on it can flip it into a conductive state. Choice A (conducts always) describes a conductor like copper. Choice B (never conducts) describes a true insulator like glass. Choice D (same resistance as insulator) ignores the controllable middle ground that makes transistors and integrated circuits possible in the first place."
   },
   {
     "external_key": "EI-CON-3",
@@ -897,7 +897,7 @@
       "aluminum has lower resistivity, making it harder for electrons to move"
     ],
     "correct_index": 1,
-    "explanation": "Aluminum has about 1.6 times the resistivity of copper. To achieve the same resistance (and carry the same current without excessive heat), aluminum wire must have a larger cross-sectional area. This is why aluminum wiring uses larger gauges."
+    "explanation": "Resistance follows R = ρL/A. Aluminum's resistivity (about 2.8 × 10⁻⁸ Ω·m) is roughly 1.6 times copper's (1.7 × 10⁻⁸ Ω·m). To match copper's resistance at the same length, aluminum needs a proportionally larger cross-sectional area, meaning a larger gauge. Choice A (magnetic) is wrong; aluminum is non-magnetic. Choice C (melting point) confuses ampacity ratings with the underlying resistivity argument. Choice D inverts the truth by claiming aluminum has lower resistivity, when it actually has higher resistivity than copper."
   },
   {
     "external_key": "EI-CON-4",
@@ -927,7 +927,7 @@
       "rubber stores electrical charge, reducing voltage at the technician's feet"
     ],
     "correct_index": 1,
-    "explanation": "Electrical current flows along a complete circuit — from source, through a conductor, and back to ground. Rubber is an insulator; standing on it breaks the path to ground, preventing current from flowing through the technician's body. This is why insulated footwear is required in electrical work."
+    "explanation": "Current needs a complete path from source to ground. Rubber has extremely high resistivity, so a dry rubber mat breaks the path between the technician's body and ground, and no meaningful current flows through the technician. Choice A confuses rubber with a resistor that absorbs and dissipates energy as heat. Choice C invents a charge-repulsion mechanism rubber does not have at normal scales. Choice D describes a capacitor storing charge, which is not how an insulating mat protects against shock; it simply blocks the return path."
   },
   {
     "external_key": "EI-OHM-1",
@@ -1062,7 +1062,7 @@
       "240 miles"
     ],
     "correct_index": 1,
-    "explanation": "Speed = 120 / 2.5 = 48 mph. Distance in 4 hours = 48 × 4 = 192 miles. Multiplying 120 × 4 = 480 ignores the rate calculation; 200 miles results from rounding 48 to 50 mph."
+    "explanation": "Speed = 120 ÷ 2.5 = 48 mph, so distance in 4 hours = 48 × 4 = 192 miles. Choice 160 miles uses 40 mph, rounding 48 down a bit too aggressively. Choice 200 miles rounds 48 up to 50 mph before multiplying, a clean but inaccurate shortcut. Choice 240 miles doubles 120 because 4 is roughly double 2.5, skipping the rate calculation entirely and treating the time ratio as 2:1."
   },
   {
     "external_key": "AR-ALG-1",
@@ -1077,7 +1077,7 @@
       "120 items"
     ],
     "correct_index": 2,
-    "explanation": "Bottom shelf: 15. Middle shelf: 15 × 2 = 30. Top shelf: 30 × 2 = 60. Total = 15 + 30 + 60 = 105 items. Adding 15 three times (45) misses the doubling; multiplying all by 2 once (30 × 3 = 90) misapplies the doubling pattern."
+    "explanation": "Build the sequence: bottom = 15, middle = 30, top = 60, so total = 15 + 30 + 60 = 105. Choice 45 items adds 15 three times, ignoring the doubling entirely. Choice 90 items doubles 15 once and triples the result (15 × 2 × 3), applying the doubling rule flat across all shelves instead of compounding it. Choice 120 items doubles to 60 only and then doubles again to 120, picking the top shelf alone after one extra doubling step."
   },
   {
     "external_key": "MK-ALG-1",
@@ -1137,7 +1137,7 @@
       "openly hostile"
     ],
     "correct_index": 1,
-    "explanation": "Obsequious means servilely compliant or fawning — behaving in an excessively eager-to-please way. The clue that it 'struck journalists as calculated' confirms it goes beyond normal professional courtesy, ruling out choice C. Bold or hostile are direct opposites."
+    "explanation": "The phrase 'struck journalists as calculated rather than genuine' pins the meaning: the deference went beyond what real courtesy looks like. Obsequious specifically labels fawning servility, often used negatively. 'Bold and outspoken' is the direct opposite of deference. 'Openly hostile' also contradicts the sentence. 'Professionally courteous' is the trickiest distractor since deference can be courteous, but the sentence explicitly distinguishes the politician's behavior from genuine courtesy by calling it calculated. Only Excessively eager to please or serve matches the negative excess the clue establishes."
   },
   {
     "external_key": "WK-SYN-HARD-1",
@@ -1152,7 +1152,7 @@
       "deeply emotional"
     ],
     "correct_index": 1,
-    "explanation": "Ephemeral means lasting for a very short time (from Greek ephemeros, 'for a day'). Ancient is essentially its opposite. Rare and emotional are unrelated to its core meaning of brevity."
+    "explanation": "Ephemeral means lasting only a brief moment, from Greek ephemeros 'lasting a day,' as in 'the ephemeral mayfly lives less than 24 hours.' Ancient is the direct antonym, naming long duration rather than brevity. Extraordinarily rare is a partial-overlap trap: ephemeral things are often hard to catch, but rarity is about scarcity, not duration. Deeply emotional is a register trap, drawing on the poetic feel of the word rather than its meaning. Only Lasting only a short time captures the core of brief duration."
   },
   {
     "external_key": "WK-SYN-HARD-2",
@@ -1167,7 +1167,7 @@
       "aggressive"
     ],
     "correct_index": 1,
-    "explanation": "Veracious means habitually speaking the truth. It is commonly confused with voracious (extremely hungry), which sounds similar. The VER- root relates to truth (verify, veracity), while VOR- relates to eating (devour)."
+    "explanation": "Veracious means habitually truthful, as in 'a veracious witness whose testimony has never been contradicted.' The VER- root means truth (verify, verdict, veracity). Extremely hungry is the classic sound-alike trap with voracious, which uses VOR- (to devour, as in carnivore, devour). Speedy is unrelated; truthfulness has no speed component. Aggressive is a register trap drawing on the harsh sound, but veracious is a neutral quality of honesty, not force. Only Truthful matches VER-, while voracious lives one letter away."
   },
   {
     "external_key": "PC-INF-HARD-1",
@@ -1272,7 +1272,7 @@
       "to refuse to judge"
     ],
     "correct_index": 2,
-    "explanation": "MIS- attaches to a verb and means wrongly or badly — as in mislead (lead wrongly), misfire (fire at wrong time), misuse. Misjudge means to form an incorrect judgment."
+    "explanation": "MISJUDGE breaks down as MIS- (wrongly, badly) plus JUDGE. Compare mislead (lead wrongly), misfire (fire wrongly), misuse (use wrongly), misread (read wrongly). 'To judge again' would require RE- (again), as in rejudge or reconsider, a different prefix. 'To judge fairly' is the opposite of the morpheme MIS-, which always signals error. 'To refuse to judge' would require a negating or rejecting prefix like UN-, NON-, or DIS-, not MIS-, which means the judgment happened but came out wrong. Only To judge wrongly tracks MIS-."
   },
   {
     "external_key": "AS-MNT-D2-1",
@@ -1287,7 +1287,7 @@
       "Coolant level determines oil viscosity"
     ],
     "correct_index": 1,
-    "explanation": "Engine coolant carries heat away from the engine block to the radiator. If the level drops too low, there is insufficient fluid to absorb engine heat, and the engine can overheat — causing serious damage such as a warped head gasket."
+    "explanation": "Coolant is the working fluid that absorbs heat at the cylinder head and block and carries it out to the radiator. If the level falls too low, less fluid is available to soak up the heat, temperatures climb, and you can warp a head, blow a head gasket, or crack the block. Low coolant does not improve fuel economy, and an overheating engine usually hurts economy by running rich. Transmission shift points come from the transmission control module, not the cooling system. Oil viscosity is determined by the oil grade itself."
   },
   {
     "external_key": "GS-PHY-D2-1",
@@ -1302,7 +1302,7 @@
       "sound traveling through air"
     ],
     "correct_index": 1,
-    "explanation": "Potential energy is stored energy due to an object's position or condition. A rock on a cliff has gravitational potential energy because of its height. The other options describe energy in motion (kinetic) or wave energy."
+    "explanation": "Potential energy is stored energy from position or configuration. A rock on a cliff has gravitational potential energy: pull mass times g times height, and the rock can convert all of it to kinetic energy if it falls. A spinning fan blade is in motion, so its energy is kinetic. A car moving at 60 mph is also kinetic, and a fast-moving car carries a lot of it because KE scales with velocity squared. Sound traveling through air is a wave carrying kinetic energy through molecular vibration, not stored stationary energy."
   },
   {
     "external_key": "MC-MOT-D2-1",
@@ -1317,7 +1317,7 @@
       "a pendulum slowing down due to air resistance"
     ],
     "correct_index": 1,
-    "explanation": "Newton's First Law describes inertia: no net force means no change in motion. A puck on frictionless ice has no friction or other horizontal force acting on it, so it maintains constant speed — the purest illustration of the law. The pendulum example actually shows the law being violated by air resistance."
+    "explanation": "Newton's First Law states that an object continues in uniform motion unless a net external force acts on it. The frictionless-ice puck has no horizontal force acting on it, so its constant speed is a direct demonstration of inertia. Choice A (ball rolling downhill speeding up) shows acceleration caused by gravity along the incline, which is the Second Law in action. Choice C (rocket accelerating) involves a thrust force, again Second Law. Choice D (pendulum slowing) involves air resistance and gravity, both unbalanced forces, so motion changes; this illustrates a violation of the First Law's idealized condition, not its demonstration."
   },
   {
     "external_key": "EI-OHM-D2-1",

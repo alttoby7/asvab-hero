@@ -15,7 +15,7 @@
         "Spleen"
       ],
       "correctIndex": 1,
-      "explanation": "The kidneys filter blood to remove waste products and excess water, which are excreted as urine. The liver processes nutrients and detoxifies chemicals but does not produce urine."
+      "explanation": "The kidneys filter nitrogen-rich waste and excess water from the blood and excrete them as urine. Each kidney contains roughly a million nephrons that do this filtering work. The liver also processes blood, but its job is detoxifying chemicals, breaking down old red cells, and metabolizing nutrients into bile and proteins, not making urine. The pancreas produces digestive enzymes and the hormone insulin. The spleen filters old red blood cells and stores immune cells but does not produce urine. Urine production is the kidney's defining function."
     },
     {
       "id": "gs-2",
@@ -28,7 +28,7 @@
         "An isotope"
       ],
       "correctIndex": 1,
-      "explanation": "Water is a compound because it consists of two different elements — hydrogen and oxygen — chemically bonded in a fixed ratio. An element contains only one type of atom."
+      "explanation": "A compound is two or more different elements chemically bonded in a fixed ratio, which is exactly what H₂O is: hydrogen and oxygen locked at 2 to 1 by covalent bonds. An element contains only one kind of atom, so water cannot qualify because it holds two. A mixture is a physical blend whose components keep their own identities and can be separated by physical means, like salt water or air, but the H and O in water cannot be separated that way. An isotope describes versions of one element with different neutron counts, not a multi-element substance."
     },
     {
       "id": "gs-3",
@@ -41,7 +41,7 @@
         "Thermosphere"
       ],
       "correctIndex": 2,
-      "explanation": "The stratosphere, roughly 10–50 km above Earth's surface, contains the ozone layer. The troposphere is the lowest layer where most weather occurs."
+      "explanation": "The stratosphere sits roughly 10 to 50 kilometers above the surface, and within it the ozone layer absorbs most incoming UV radiation. The troposphere is the bottom layer where weather happens and airliners cruise; it lacks the ozone concentration. The mesosphere is above the stratosphere and is where meteors burn up. The thermosphere is higher still and hosts auroras and the International Space Station, but it does not hold ozone. Pairing ozone with the wrong neighboring layer (mesosphere or troposphere) is the typical slip."
     },
     {
       "id": "ar-1",
@@ -80,7 +80,7 @@
         "10 cups"
       ],
       "correctIndex": 2,
-      "explanation": "With a 5:2 ratio, sugar = (2/5) × 20 = 8 cups."
+      "explanation": "Set sugar/flour = 2/5, so sugar = (2/5) × 20 = 8 cups. Choice 4 cups uses the difference between ratio parts (5 − 2 = 3) and applies it loosely, then halves the answer. Choice 6 cups assumes the ratio means 2 cups of sugar for every 6 of flour, misreading the colon as a one-step gap rather than a multiplicative ratio. Choice 10 cups halves the 20 cups of flour, ignoring the 5:2 relationship and treating the ratio as if it were 2:1."
     },
     {
       "id": "ar-4",
@@ -106,7 +106,7 @@
         "Fertile"
       ],
       "correctIndex": 2,
-      "explanation": "Arid means extremely dry, with little or no rain. It is commonly used to describe deserts or climates with very low precipitation."
+      "explanation": "Arid means extremely dry, with little or no rainfall, as in 'the arid desert of southern Arizona received only four inches of rain last year.' Damp is the direct antonym, naming wetness rather than dryness. Stormy is a sound-association trap, drawing on the weather frame but referring to active turbulent weather, not the absence of moisture. Fertile is a secondary antonym, since arid land is typically infertile, but fertility is about productivity, not water content directly. Only Dry captures the core meaning of arid."
     },
     {
       "id": "wk-2",
@@ -119,7 +119,7 @@
         "Stubborn"
       ],
       "correctIndex": 1,
-      "explanation": "Prudent means acting with care and good judgment to avoid risk. It is the opposite of reckless."
+      "explanation": "Prudent means showing careful thought and good judgment about future consequences, as in 'it was prudent to refuel before crossing the desert.' Reckless is the direct antonym, naming heedless risk-taking. Generous overlaps with prudence as a positive trait but describes giving freely, a separate virtue. Stubborn is a register trap: a prudent person holds firm on careful reasoning, but stubbornness refuses to budge regardless of reasoning. Cautious is the dominant synonym, sharing both the forward-looking concern and the avoidance of risk."
     },
     {
       "id": "wk-3",
@@ -132,7 +132,7 @@
         "Detailed"
       ],
       "correctIndex": 2,
-      "explanation": "Concise means expressing information clearly in few words. It contrasts with wordy or verbose communication."
+      "explanation": "Concise means expressing information in a small number of well-chosen words, as in 'her concise summary fit on one index card.' Wordy is the direct antonym, naming excess language. Unclear is a register trap, since concise writing is often very clear, not muddled. Detailed is a partial-overlap trap: a concise message can include essentials, but detailed implies thoroughness and length, the opposite of concise compression. Brief is the dominant synonym, sharing the core idea of short and to the point."
     },
     {
       "id": "wk-4",
@@ -145,7 +145,7 @@
         "Surprising"
       ],
       "correctIndex": 1,
-      "explanation": "Ominous means giving the impression that something bad or unpleasant is going to happen; it is synonymous with threatening or foreboding."
+      "explanation": "Ominous means giving the impression that something bad is about to happen, as in 'the ominous clouds rolling in promised a violent storm.' Cheerful is the direct antonym, naming brightness rather than dread. Ordinary is a register trap, since ominous signals warn of the unusual and dangerous, not the routine. Surprising is a partial-overlap trap: an ominous event may startle, but the defining quality is foreboding menace, not novelty. Threatening is the dominant synonym, sharing the sense of impending harm."
     },
     {
       "id": "pc-1",
@@ -158,7 +158,7 @@
         "Photovoltaic cells are expensive to manufacture."
       ],
       "correctIndex": 2,
-      "explanation": "The passage introduces how solar panels work and emphasizes that solar energy is clean and emission-free — that combination is the central point."
+      "explanation": "Both sentences work together to make one point. The first defines how solar panels operate (\"convert sunlight directly into electricity using photovoltaic cells\"), and the second adds the clean-energy claim (\"no emissions during operation, making it one of the cleanest energy sources available\"). Choice C captures both halves. Choice A treats the brief mention of fossil fuels as the topic when fossil fuels appear only as a comparison point. Choice B invents maintenance, which the passage never discusses. Choice D introduces cost, which is also absent. Both wrong-direction choices add information the text does not provide."
     },
     {
       "id": "pc-2",
@@ -171,7 +171,7 @@
         "They will be exempt from future tests."
       ],
       "correctIndex": 1,
-      "explanation": "The standard requires completing the run in under 18 minutes. Exactly 18 minutes does not meet the 'under 18' requirement, so those soldiers would be enrolled in remedial training."
+      "explanation": "The standard is \"under 18 minutes,\" and \"soldiers who fail to meet the standard will be enrolled in a remedial training program.\" Exactly 18:00 is not under 18:00, so the runner fails the standard and lands in remedial training. Choice A invents an award the passage never mentions. Choice C reverses the math by treating a tie as exceeding the standard. Choice D goes beyond what the passage supports, since nothing in the text discusses exemptions from future tests. Only B follows from the passage's wording without adding information."
     },
     {
       "id": "pc-3",
@@ -184,7 +184,7 @@
         "It only affects physical performance, not mental performance."
       ],
       "correctIndex": 2,
-      "explanation": "The passage explicitly states that a 2% loss of body water can reduce concentration and decision-making ability, affecting both physical and cognitive performance."
+      "explanation": "The passage states directly that \"even a 2% loss of body water can reduce a person's ability to concentrate and make decisions.\" Choice C reproduces that wording almost verbatim. Choice A overreaches by adding \"permanent,\" a claim the passage never makes. Choice B contradicts the passage outright, since 2% is below 5% and the text confirms an effect at that level. Choice D contradicts the opening line, which says dehydration impairs both physical and cognitive performance. The keyed answer is the only one the text actually supports."
     },
     {
       "id": "mk-1",
@@ -210,7 +210,7 @@
         "x = 9"
       ],
       "correctIndex": 2,
-      "explanation": "Add 7 to both sides: 3x = 21. Divide by 3: x = 7."
+      "explanation": "Isolate the variable in two steps. Add 7 to both sides to undo the subtraction: 3x = 21. Divide both sides by 3 to undo the multiplication: x = 7. The choice x = 3 comes from dividing the original 14 by 3 and ignoring the −7 entirely. The choice x = 5 comes from subtracting 7 from 14 first (14 − 7 = 7), then dividing the wrong direction. The choice x = 9 comes from sign confusion, treating −7 as +7 and computing (14 − 7)÷3 backwards or 21÷3 with an extra add."
     },
     {
       "id": "mk-3",
@@ -223,7 +223,7 @@
         "32"
       ],
       "correctIndex": 3,
-      "explanation": "2⁵ = 2 × 2 × 2 × 2 × 2 = 32."
+      "explanation": "An exponent counts how many times the base multiplies itself. 2⁵ = 2 × 2 × 2 × 2 × 2 = 32. Build it stepwise: 2×2 = 4, ×2 = 8, ×2 = 16, ×2 = 32. The choice 10 comes from confusing exponentiation with multiplication and computing 2 × 5. The choice 16 is 2⁴, one factor short. The choice 25 comes from swapping base and exponent and computing 5² instead of 2⁵."
     },
     {
       "id": "mk-4",
@@ -249,7 +249,7 @@
         "48 amperes"
       ],
       "correctIndex": 1,
-      "explanation": "Ohm's Law: I = V ÷ R = 12 ÷ 4 = 3 amperes."
+      "explanation": "Ohm's Law solves for current as I = V / R. Plug in: I = 12 V / 4 Ω = 3 A. The answer is 3 amperes. Choice A (0.33 A) inverts the formula and computes R / V = 4 / 12. Choice C (8 A) subtracts instead of dividing (12 minus 4). Choice D (48 A) multiplies V by R, which is the calculation for a totally different relationship and ignores that current is voltage divided by resistance, not the product."
     },
     {
       "id": "ei-2",
@@ -262,7 +262,7 @@
         "They flicker but stay on."
       ],
       "correctIndex": 2,
-      "explanation": "In a series circuit, all components share a single path for current. If one bulb fails (opens the circuit), current cannot flow and all other bulbs go out."
+      "explanation": "A series circuit has one continuous loop, so current must pass through every bulb. When one filament opens, the loop breaks and current stops everywhere. All remaining bulbs go dark. Choice A (brighter) confuses series with parallel, where losing one branch can shift current. Choice B (normal operation) describes parallel wiring, where each bulb sits on its own independent path. Choice D (flicker but stay on) imagines a partial connection, but an open filament is a hard break, not an intermittent contact."
     },
     {
       "id": "ei-3",
@@ -275,7 +275,7 @@
         "Ohm"
       ],
       "correctIndex": 3,
-      "explanation": "Resistance is measured in ohms (Ω). Volts measure voltage, amperes measure current, and watts measure power."
+      "explanation": "Resistance is measured in ohms, symbol Ω. The four core electrical units pair one-to-one: volts measure voltage (electrical pressure), amperes measure current (flow rate of charge), watts measure power (energy per second), and ohms measure resistance (opposition to flow). Choice A (volt) confuses resistance with the driving voltage from Ohm's Law. Choice B (ampere) confuses it with the current that resistance opposes. Choice C (watt) measures power dissipated in a resistor, not the resistance itself."
     },
     {
       "id": "as-1",
@@ -288,7 +288,7 @@
         "Torque screwdriver"
       ],
       "correctIndex": 1,
-      "explanation": "A socket wrench with an extension bar allows a technician to reach fasteners in deep or confined spaces where an open-end wrench cannot fit."
+      "explanation": "A socket wrench accepts extensions and universal joints, letting you reach a bolt buried inside a recess where a straight-handled tool cannot sit square on the head. An open-end wrench needs side clearance to slide onto the flats and room to swing, which a recessed bolt does not give you. Adjustable pliers grip by squeezing the head and will round off the corners under any real torque. A torque screwdriver is for screw heads with a driver bit and is meant for measuring torque on small fasteners, not for reaching into deep cavities."
     },
     {
       "id": "as-2",
@@ -301,7 +301,7 @@
         "Reduce exhaust emissions"
       ],
       "correctIndex": 2,
-      "explanation": "The radiator removes heat from the engine coolant by passing it through thin fins where air flow carries the heat away, preventing engine overheating."
+      "explanation": "The radiator is a heat exchanger. Hot coolant pumped from the engine flows through narrow tubes and fins, and air moving across those fins carries the heat away before the coolant returns to the block. Filtering oil is the oil filter's job in the lubrication system, which is a separate circuit from the cooling system. Fuel mixture is metered by the injectors or carburetor, not by the cooling components. Exhaust emissions are cleaned by the catalytic converter downstream of the engine, again a different system entirely."
     },
     {
       "id": "as-3",
@@ -314,7 +314,7 @@
         "Check the sharpness of the blade by touch"
       ],
       "correctIndex": 1,
-      "explanation": "Personal protective equipment — especially eye protection — must be donned before any shop operation begins. Blade fragments and sawdust present immediate eye hazards."
+      "explanation": "Eye protection goes on before anything else because flying chips, sawdust, and a thrown blade tooth can reach your face the instant the saw spins up. Testing the blade on scrap and checking for a sharp blade are reasonable steps later in the sequence, but they expose your eyes to hazards if you do them with no PPE on. Letting a corded saw \"warm up\" plugged in is not a real practice and leaves a live tool unattended. The rule is gear up first, then handle the tool."
     },
     {
       "id": "mc-1",
@@ -327,7 +327,7 @@
         "9 feet"
       ],
       "correctIndex": 1,
-      "explanation": "Lever balance: W₁ × D₁ = W₂ × D₂ → 10 × 6 = 15 × D₂ → D₂ = 60 ÷ 15 = 4 feet."
+      "explanation": "Lever balance requires equal torques on both sides of the fulcrum: W1 x D1 = W2 x D2. Plug in: 10 lb x 6 ft = 15 lb x D2, so 60 = 15 x D2, and D2 = 4 feet. Choice A (2 feet) divides 6 by 3 instead of using the torque equation. Choice C (6 feet) keeps the same distance and ignores that the heavier weight needs a shorter arm. Choice D (9 feet) puts the heavier weight farther out, which would unbalance the lever further since 15 lb x 9 ft = 135 lb-ft, more than double the 60 lb-ft on the other side."
     },
     {
       "id": "mc-2",
@@ -340,7 +340,7 @@
         "800 RPM"
       ],
       "correctIndex": 1,
-      "explanation": "Gear ratio = 10/40 = 1/4. Large gear RPM = 200 × (10/40) = 200 × 0.25 = 50 RPM."
+      "explanation": "Meshing gears conserve linear tooth speed, so RPM is inversely proportional to tooth count: RPM_large = RPM_small x (teeth_small / teeth_large) = 200 x (10/40) = 50 RPM. Choice A (25 RPM) divides by 8 instead of 4, doubling the reduction. Choice C (100 RPM) only halves the speed, applying a 2:1 ratio instead of the actual 4:1. Choice D (800 RPM) inverts the formula and multiplies 200 by 4, treating the large gear as the faster one when in fact the larger gear always turns slower than the smaller one it meshes with."
     },
     {
       "id": "mc-3",
@@ -353,7 +353,7 @@
         "200 pounds"
       ],
       "correctIndex": 1,
-      "explanation": "Since the crate is stationary (not accelerating), the net force is zero. Static friction exactly opposes the applied force, so friction = 50 pounds."
+      "explanation": "Newton's Second Law: if an object does not accelerate, the net force is zero. The crate is stationary, so static friction adjusts to exactly cancel the applied push. Friction = 50 pounds, opposite to the push. Choice A (0 pounds) ignores that something must be canceling the 50-pound push. Choice C (150 pounds) confuses friction with the difference between weight and applied force. Choice D (200 pounds) uses the full weight as the friction force, but weight acts vertically and is canceled by the normal force, not by horizontal friction. Static friction only equals what is needed to prevent motion, up to its maximum."
     },
     {
       "id": "ao-1",
@@ -366,7 +366,7 @@
         "A hexagon"
       ],
       "correctIndex": 2,
-      "explanation": "Four identical isosceles right triangles placed with their right angles at a common center and hypotenuses facing outward form a perfect square."
+      "explanation": "Each right triangle has two equal legs and a hypotenuse. With the right angles meeting at a center, the four 90 degree corners account for the full 360 degrees around the point, and the equal legs line up edge to edge along four straight rays. The outer boundary is four equal hypotenuses meeting at right angles, which is a square. 'A circle' tempts anyone picturing pie slices, but straight hypotenuses cannot trace a curve. 'A hexagon' would require six pieces, not four. 'A rectangle' is technically true but incomplete: equal sides make this the special-case rectangle called a square."
     },
     {
       "id": "ao-2",
@@ -379,7 +379,7 @@
         "6"
       ],
       "correctIndex": 2,
-      "explanation": "Each fold doubles the number of sections. One fold → 2 sections; two folds → 4 equal sections."
+      "explanation": "Folding in half once produces 2 layers, leaving 1 crease and 2 sections. Folding the same axis again doubles the layer count to 4 and adds a second crease parallel to the first, splitting each prior section in two. When unfolded the paper shows 3 parallel creases and 4 equal strips. Choosing '2' counts only the first fold. Choosing '3' counts creases instead of sections (a classic off-by-one). Choosing '6' confuses doubling with adding, as if each fold added 3 new sections. Doubling, not adding, is the rule for parallel folds along the same axis."
     },
     {
       "id": "ao-3",
@@ -392,7 +392,7 @@
         "24"
       ],
       "correctIndex": 2,
-      "explanation": "Cubes with paint on exactly two faces sit along the edges (not corners) of the larger cube. A 3×3×3 cube has 12 edges, each contributing 1 such cube, giving 12 total."
+      "explanation": "Two-face cubes sit along the edges of the large cube but not at the corners (corners would be three-face) and not at the centers of faces (one-face). A cube has 12 edges. In a 3x3x3 grid, each edge has 3 small cubes along it: 2 corners plus 1 middle. Only that middle position counts as a two-face cube, giving 12 edges times 1 cube each = 12. The choice '8' is the corner count (three-face cubes), a common substitution. '6' is the count of face centers (one-face cubes). '24' double-counts edges or confuses with the 24 edge-positions on the surface."
     },
     {
       "id": "gs-4",
@@ -405,7 +405,7 @@
         "Organic"
       ],
       "correctIndex": 2,
-      "explanation": "Igneous rocks form from the cooling of molten rock (magma or lava). Sedimentary rocks form from compacted sediments, and metamorphic rocks form under heat and pressure."
+      "explanation": "Igneous rock forms when magma (underground) or lava (surface) cools and crystallizes. Granite is the classic slow-cooled intrusive example; basalt is the fast-cooled extrusive one. Sedimentary rock forms from pressed and cemented sediments like sandstone or limestone and never involves melting. Metamorphic rock starts as another rock that is reshaped by heat and pressure without fully melting, producing slate or marble. Organic is not one of the three official rock-cycle categories, which makes it a distractor designed to look plausible next to the real three."
     },
     {
       "id": "gs-5",
@@ -418,7 +418,7 @@
         "Produce hormones"
       ],
       "correctIndex": 1,
-      "explanation": "Red blood cells (erythrocytes) contain hemoglobin, which binds to oxygen in the lungs and delivers it to tissues throughout the body."
+      "explanation": "Red blood cells carry hemoglobin, an iron-rich protein that grabs oxygen in the lungs and releases it to tissues, then carries some carbon dioxide back. Producing antibodies is the job of white blood cells, specifically B lymphocytes. Clotting is handled by platelets along with clotting factors in plasma. Hormones come from endocrine glands like the thyroid, adrenal, and pituitary, not from blood cells. Confusing red cells with white cells or platelets is the standard trap because all three live in blood and look similar at first glance."
     },
     {
       "id": "gs-6",
@@ -431,7 +431,7 @@
         "A proportional and parallel reaction"
       ],
       "correctIndex": 2,
-      "explanation": "Newton's Third Law states that for every action force, there is an equal in magnitude and opposite in direction reaction force. This explains recoil, rocket propulsion, and walking."
+      "explanation": "Newton's Third Law says forces come in pairs that are equal in magnitude and opposite in direction, acting on two different bodies. Push on a wall and the wall pushes back on you with the same force. A rocket pushes exhaust gas down and the gas pushes the rocket up by the same amount. The forces act at the same instant, never delayed, which rules out the first choice. They are equal, never greater, which kills the second. Parallel and proportional confuses Third Law with the F=ma scaling of the Second Law."
     },
     {
       "id": "ar-5",
@@ -444,7 +444,7 @@
         "50 minutes"
       ],
       "correctIndex": 2,
-      "explanation": "Net drain rate = 25 − 10 = 15 gallons per minute. Time = 500 ÷ 15 ≈ 33.3, so approximately 33 minutes."
+      "explanation": "Net drain rate = 25 − 10 = 15 gal/min, so time = 500 ÷ 15 ≈ 33.3 minutes, which rounds to 33. Choice 20 minutes divides 500 by 25, using the drain rate alone and ignoring the simultaneous inflow. Choice 25 minutes splits the difference between the two rates without combining them into a net rate. Choice 50 minutes divides 500 by 10, using only the fill rate as if the tank were filling, the exact opposite of the scenario."
     },
     {
       "id": "ar-6",
@@ -457,7 +457,7 @@
         "16 pounds"
       ],
       "correctIndex": 1,
-      "explanation": "480 ÷ 40 = 12 pounds per soldier."
+      "explanation": "Divide total load by soldiers: 480 ÷ 40 = 12 pounds each. Choice 10 pounds rounds 480 down to 400 to avoid the long division. Choice 14 pounds estimates between 10 and 16 without doing the division. Choice 16 pounds divides 480 by 30 instead of 40, miscounting the platoon size."
     },
     {
       "id": "ar-7",
@@ -483,7 +483,7 @@
         "20 hours"
       ],
       "correctIndex": 1,
-      "explanation": "Combined rate = 1/6 room/hr. Worker 1 rate = 1/10. Worker 2 rate = 1/6 − 1/10 = 5/30 − 3/30 = 2/30 = 1/15. So Worker 2 takes 15 hours."
+      "explanation": "Worker 2's rate = combined rate − Worker 1's rate = 1/6 − 1/10 = 5/30 − 3/30 = 2/30 = 1/15, so Worker 2 alone takes 15 hours. Choice 12 hours averages 6 and 10 incorrectly, splitting the difference between team and Worker 1 times. Choice 16 hours adds the two stated times (10 + 6) instead of subtracting rates. Choice 20 hours simply doubles 10, assuming Worker 2 is half as fast without using the combined-rate equation."
     },
     {
       "id": "wk-5",
@@ -496,7 +496,7 @@
         "Generous"
       ],
       "correctIndex": 1,
-      "explanation": "Tenacious means holding firmly to a purpose or position; persistent and determined. It implies stubbornness in a positive sense."
+      "explanation": "Tenacious means holding firmly to a purpose, position, or grip, as in 'the tenacious investigator refused to drop the cold case.' Fragile is the direct antonym, describing a weak hold rather than a firm grip. Timid names a trait about willingness to engage with risk, which is orthogonal to tenacity (a timid person can still be tenacious about a goal they care about quietly). Generous is unrelated to grip or persistence; it names willingness to share. Persistent is the dominant synonym, sharing the core idea of refusing to let go of a goal or effort over time."
     },
     {
       "id": "wk-6",
@@ -509,7 +509,7 @@
         "Honest"
       ],
       "correctIndex": 1,
-      "explanation": "Ambiguous means open to more than one interpretation; not having a clear meaning. It is distinct from ambitious, which relates to goals."
+      "explanation": "Ambiguous means having more than one possible meaning, as in 'his ambiguous answer could be read as yes or no.' Certain is the direct antonym, naming single clear meaning. Ambitious is a sound-alike trap that shares the first four letters but comes from a different root (ambi-/ambit, going around for goals), not from ambi-/ambig (driving both ways). Honest overlaps with clarity as a virtue but refers to truthfulness, not whether the statement has one interpretation. Unclear is the dominant synonym."
     },
     {
       "id": "wk-7",
@@ -522,7 +522,7 @@
         "Replace"
       ],
       "correctIndex": 1,
-      "explanation": "To validate means to confirm or check the accuracy or legitimacy of something. It is synonymous with verify or confirm."
+      "explanation": "To validate means to establish or check that something is accurate, sound, or legitimate, as in 'the supervisor validated the inspection report before signing.' Deny is the direct antonym, naming rejection rather than verification. Improve is a partial-overlap trap, since validation can lead to improvements, but the act itself is confirming current accuracy, not upgrading quality. Replace is a register trap, suggesting swapping out rather than approving. Confirm is the dominant synonym, sharing the meaning of certifying that something holds up."
     },
     {
       "id": "wk-8",
@@ -535,7 +535,7 @@
         "Warm"
       ],
       "correctIndex": 1,
-      "explanation": "Austere means severe or strict in manner or appearance; lacking comfort or ornament. It describes a plain, unadorned quality."
+      "explanation": "Austere means stern, plain, and lacking comfort or ornament, as in 'the austere monastery had bare walls and cold floors.' Luxurious is the direct antonym, naming richness and indulgence. Colorful is a partial antonym focused on visual decoration; austere settings are typically muted. Warm is a register trap, since austere implies emotional coldness and physical sparseness alike. Severe is the dominant synonym, sharing the connotation of unforgiving strictness in style, tone, or living conditions."
     },
     {
       "id": "pc-4",
@@ -548,7 +548,7 @@
         "Congress funded a national eagle relocation program."
       ],
       "correctIndex": 1,
-      "explanation": "The passage directly credits the banning of DDT and legal protections as the reasons for the population's recovery."
+      "explanation": "The passage attributes recovery to two specific causes: \"the population rebounded after DDT was banned in 1972 and legal protections were enacted.\" Choice B names both. Choice A invents captive breeding, which is never mentioned. Choice C invents urban adaptation, also absent. Choice D invents a relocation program. Each wrong choice introduces a plausible-sounding conservation mechanism that the passage simply does not discuss, while B reflects the exact causal pair the text provides."
     },
     {
       "id": "pc-5",
@@ -561,7 +561,7 @@
         "Cardiac arrest"
       ],
       "correctIndex": 2,
-      "explanation": "The passage states that symptoms 'progress from shivering and confusion,' meaning those are the earliest symptoms listed."
+      "explanation": "The passage lays out a sequence: \"Symptoms progress from shivering and confusion to loss of coordination and, eventually, unconsciousness.\" Shivering and confusion sit at the start of that progression. Choice A names the final stage. Choice B names the middle stage. The wrong choices paraphrase real passage details but answer the wrong question, picking later stages instead of the first. Choice D invents cardiac arrest, which the text never lists. Only C matches the symptom the passage places at the beginning of the progression."
     },
     {
       "id": "pc-6",
@@ -574,7 +574,7 @@
         "The vehicle navigator"
       ],
       "correctIndex": 2,
-      "explanation": "The passage explicitly states that 'drivers are responsible for maintaining their own interval,' making each individual driver responsible."
+      "explanation": "The passage states plainly that \"drivers are responsible for maintaining their own interval regardless of road conditions.\" That phrasing places the duty on every driver individually. Choice A picks a military role the passage never assigns. Choice B uses a real passage element (the lead vehicle) but treats it as the responsible party when the text says following drivers maintain the gap. Choice D invents a navigator, who is not mentioned at all. C is the only choice that reflects the assignment of responsibility the passage actually makes."
     },
     {
       "id": "mk-5",
@@ -626,7 +626,7 @@
         "42"
       ],
       "correctIndex": 1,
-      "explanation": "15% × 240 = 0.15 × 240 = 36."
+      "explanation": "Convert the percent to a decimal and multiply: 15% = 0.15, so 0.15 × 240 = 36. Cross-check by computing 10% of 240 = 24, then 5% = 12, sum = 36. The choice 30 comes from using 12.5% (an off-by-one in the percent). The choice 40 comes from misreading 15% as 1/6 of 240. The choice 42 comes from adding 12 + 30 or other small slips in mental math."
     },
     {
       "id": "ei-4",
@@ -639,7 +639,7 @@
         "Transformer"
       ],
       "correctIndex": 2,
-      "explanation": "A diode is a semiconductor device that permits current to flow in one direction only. It is commonly used to convert AC to DC in rectifier circuits."
+      "explanation": "A diode is a semiconductor with a p-n junction that conducts when forward-biased and blocks current when reverse-biased, giving it one-way behavior. Rectifier bridges use this to turn AC into DC. Choice A (resistor) opposes current in both directions equally and is not polarity-sensitive. Choice B (capacitor) stores charge on plates and passes AC while blocking steady DC, but it has no preferred direction. Choice D (transformer) steps AC voltage up or down through induction and does not rectify direction at all."
     },
     {
       "id": "ei-5",
@@ -652,7 +652,7 @@
         "7,200 amperes"
       ],
       "correctIndex": 1,
-      "explanation": "Power (P) = Voltage (V) × Current (I). Solving for I: I = P ÷ V = 60 ÷ 120 = 0.5 amperes."
+      "explanation": "Use P = I × V and solve for current: I = P / V = 60 W / 120 V = 0.5 A. The bulb draws 0.5 amperes. Choice A (0.25 A) divides by 240 or applies the formula twice. Choice C (2 A) inverts the division and computes V / P = 120 / 60. Choice D (7,200 A) multiplies power by voltage (60 × 120), which has no physical meaning here because the power formula calls for division when current is unknown, not multiplication."
     },
     {
       "id": "ei-6",
@@ -665,7 +665,7 @@
         "Regulate alternating current frequency"
       ],
       "correctIndex": 2,
-      "explanation": "A fuse contains a thin metal element that melts and breaks the circuit if current exceeds its rated value, protecting wiring and components from damage."
+      "explanation": "A fuse contains a thin metal strip rated for a specific current. When current exceeds that rating, the strip melts and opens the circuit, cutting power before wires overheat or components burn. Choice A (increase voltage) describes a transformer or boost converter, not a protective device. Choice B (store charge) describes a capacitor, which holds energy on plates. Choice D (regulate AC frequency) describes oscillator or inverter circuitry. A fuse only opens; it does not modify voltage, store energy, or shape waveforms."
     },
     {
       "id": "as-4",
@@ -678,7 +678,7 @@
         "Regulates engine coolant temperature"
       ],
       "correctIndex": 1,
-      "explanation": "The alternator converts mechanical energy from the engine into electrical energy, recharging the battery and supplying power to the vehicle's electrical systems while the engine runs."
+      "explanation": "While the engine runs, a belt off the crankshaft spins the alternator, which generates electricity to recharge the battery and run the lights, ignition, fans, and accessories. Cranking the engine is the starter motor's job, and it only operates for the few seconds it takes to fire the engine. Fuel injection timing is controlled by the engine control module reading crank and cam sensors. Coolant temperature is regulated by the thermostat and the cooling fan, not by anything in the charging system."
     },
     {
       "id": "as-5",
@@ -691,7 +691,7 @@
         "Hex screwdriver"
       ],
       "correctIndex": 2,
-      "explanation": "A Phillips screwdriver has a cross-shaped tip designed to fit X-shaped (Phillips) screw head recesses, providing better torque than a flathead."
+      "explanation": "A Phillips screwdriver has a cross-shaped tip that seats into the X-pattern recess on a Phillips screw head, giving four points of drive contact and resisting slip better than a flat blade. A flathead (slotted) screwdriver fits a single straight slot and will cam right out of a Phillips head. A Torx driver has a six-pointed star tip for Torx screws found on automotive trim and electronics. A hex driver, sometimes called an Allen key, fits the six-sided socket of a hex-head screw. Each tip belongs to its own screw family."
     },
     {
       "id": "as-6",
@@ -704,7 +704,7 @@
         "Once per year regardless of mileage"
       ],
       "correctIndex": 2,
-      "explanation": "Manufacturers specify oil change intervals (commonly every 3,000–7,500 miles or more with synthetic oil) based on engineering data. Following these intervals prevents engine wear."
+      "explanation": "Manufacturers publish oil change intervals based on engineering tests of the oil, filter, and engine, and they express the interval as miles or months, whichever comes first. Waiting for the oil pressure warning light means the engine is already starving for lubrication and damage is happening. Changing oil at every fuel fill-up is wasteful and unnecessary. A flat once-a-year rule ignores how much the car was actually driven, so a high-mileage driver would run far past the safe interval. Following the owner's manual schedule is the practical standard."
     },
     {
       "id": "mc-4",
@@ -717,7 +717,7 @@
         "6"
       ],
       "correctIndex": 2,
-      "explanation": "Mechanical advantage of a wheel and axle = wheel radius ÷ axle radius = 12 ÷ 3 = 4."
+      "explanation": "Mechanical advantage of a wheel-and-axle equals the wheel radius divided by the axle radius: MA = 12 / 3 = 4. The effort applied at the wheel's rim travels a larger circle, while the axle moves a smaller circle with greater force. Choice A (2) halves the correct ratio, possibly confusing radius with diameter on only one side. Choice B (3) uses the axle radius alone as the answer. Choice D (6) appears to add the radii (12 + 3) and halve them, or otherwise mix dimensions. Only the radius ratio gives the correct mechanical advantage."
     },
     {
       "id": "mc-5",
@@ -730,7 +730,7 @@
         "It eliminates the effect of gravity on the load."
       ],
       "correctIndex": 2,
-      "explanation": "A single fixed pulley only redirects the pulling force; it does not reduce the effort required to lift the load. Mechanical advantage = 1."
+      "explanation": "A fixed pulley has only one rope segment supporting the load, so its mechanical advantage equals 1. Its only function is to change the direction of the applied force, not its magnitude. Choice A (reduces force by half) describes a single movable pulley, which has MA = 2. Choice B (multiplies by rope segments) describes a block-and-tackle with multiple supporting strands. Choice D (eliminates gravity) is physically impossible; pulleys redistribute or redirect force but never cancel weight. Only choice C correctly identifies that the load still requires a pulling force equal to its weight."
     },
     {
       "id": "mc-6",
@@ -743,7 +743,7 @@
         "Moving the block to the center of the table"
       ],
       "correctIndex": 2,
-      "explanation": "Pressure = Force ÷ Area. Reducing the contact area while keeping the weight the same increases the pressure, since the same force is concentrated on a smaller surface."
+      "explanation": "Pressure equals force divided by contact area: P = F / A. With weight held constant, shrinking the area concentrates the same force onto fewer square inches and raises pressure. Choice A (tilting at 45 degrees) actually reduces the normal force on the table because part of the weight vector shifts off-axis, lowering pressure. Choice B (increasing surface area) spreads force over more area and decreases pressure, the opposite of what is asked. Choice D (moving the block) changes location only; both area and weight stay the same, so pressure is unchanged. Only reducing the contact face increases pressure."
     },
     {
       "id": "ao-4",
@@ -756,7 +756,7 @@
         "A cone"
       ],
       "correctIndex": 1,
-      "explanation": "Cutting squares from each corner and folding up the resulting flaps creates an open-top rectangular box — a standard net-folding construction."
+      "explanation": "Cutting a small square from each corner separates the base from four side flaps. Folding the flaps up along the cut lines produces vertical walls on all four sides with the original middle square as the floor and no piece left to cap the top. That is the definition of an open-top box. 'A pyramid' is the trap of imagining the flaps converging to a point, but square flaps fold up parallel to each other, never meeting at an apex. 'A cylinder' and 'a cone' require curved surfaces, which flat cardboard cannot produce by folding along straight lines."
     },
     {
       "id": "ao-5",
@@ -769,7 +769,7 @@
         "Triangle"
       ],
       "correctIndex": 2,
-      "explanation": "Cutting a cylinder along its axis (lengthwise through the center) produces a rectangular cross-section whose width equals the cylinder's diameter and height equals its length."
+      "explanation": "A vertical cut through the axis of a cylinder slices it lengthwise, producing a flat face whose horizontal span equals the diameter and whose vertical span equals the height. That face is bounded by two straight parallel edges (the cut sides) and two straight parallel edges where the top and bottom circles were divided. Four straight sides at right angles make a rectangle. 'Circle' is the cross-section of a horizontal cut perpendicular to the axis, not a vertical one. 'Ellipse' is produced by an oblique slanted cut. 'Triangle' has no path through a cylinder of any orientation."
     },
     {
       "id": "ao-6",
@@ -782,7 +782,7 @@
         "360 degrees"
       ],
       "correctIndex": 0,
-      "explanation": "Three equilateral triangles meeting at a vertex contribute their three 60° interior corners. Total angle contribution = 3 × 60° = 180°. The ‘angles around a point sum to 360°’ rule applies only when shapes tile the entire space around the point — here they don’t, since 180° leaves 180° of the surrounding plane uncovered."
+      "explanation": "Each equilateral triangle has interior angles of 60 degrees. Three vertices meeting at the center contribute 3 times 60 degrees = 180 degrees of swept angle, which means the triangles cover only half of the space around the point. The remaining 180 degrees is uncovered. Selecting '360 degrees' applies the angles-around-a-point rule incorrectly; that total only applies when shapes fully tile the area around the point, and 60 degree corners cannot do that with just three pieces. '240 degrees' would require four triangles, not three. '270 degrees' has no geometric basis, possibly mixing in a right angle by mistake."
     },
     {
       "id": "gs-7",
@@ -795,7 +795,7 @@
         "Nitrogen and phosphorus"
       ],
       "correctIndex": 1,
-      "explanation": "Plants use carbon dioxide (CO₂) from the air and water (H₂O) from the soil, along with sunlight energy, to produce glucose through photosynthesis."
+      "explanation": "Photosynthesis takes carbon dioxide pulled in through leaf stomata and water drawn up from the roots, then uses solar energy captured by chlorophyll to build glucose and release oxygen. Glucose and oxygen are the products, not the inputs, so picking them reverses the equation. Nitrogen and phosphorus matter for plant growth, but they are soil nutrients used in proteins and DNA, not the raw materials for sugar. The simple equation worth memorizing: 6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂."
     },
     {
       "id": "gs-8",
@@ -808,7 +808,7 @@
         "Uranus"
       ],
       "correctIndex": 2,
-      "explanation": "Jupiter is the largest planet in the solar system, with a diameter of about 143,000 km — more than 11 times the diameter of Earth."
+      "explanation": "Jupiter is the largest planet at roughly 143,000 km in diameter, more than 11 Earths wide and over 300 Earths in mass. Saturn comes in second and is often confused for the biggest because of its prominent rings, which make it look visually huge in photos, but Saturn is actually smaller and far less dense than Jupiter. Uranus and Neptune are the ice giants and are much smaller, each only about four times Earth's diameter. The mental shortcut: Jupiter is the king of the gas giants by size and mass."
     },
     {
       "id": "gs-9",
@@ -821,7 +821,7 @@
         "14"
       ],
       "correctIndex": 1,
-      "explanation": "The pH scale runs from 0 (most acidic) to 14 (most basic/alkaline). A pH of 7 represents a neutral solution, such as pure water."
+      "explanation": "The pH scale runs from 0 to 14, and 7 sits dead center as the neutral point where hydrogen-ion and hydroxide-ion concentrations are equal. Pure water is the standard example. A pH of 0 marks the strongest common acids like concentrated hydrochloric acid. A pH of 14 marks the strongest bases like concentrated sodium hydroxide. A pH of 10 is mildly basic (think milk of magnesia), not neutral. Each whole-number step represents a tenfold change in hydrogen-ion concentration, so the scale is logarithmic, not linear."
     },
     {
       "id": "ar-9",
@@ -847,7 +847,7 @@
         "10,400"
       ],
       "correctIndex": 2,
-      "explanation": "Area = length × width = 120 × 80 = 9,600 square yards."
+      "explanation": "Area = length × width = 120 × 80 = 9,600 square yards. Choice 4,800 halves the answer, perhaps computing perimeter logic (2 × (120 + 80) = 400) and then estimating area from that. Choice 8,400 drops a hundreds digit during the multiplication, treating it as 12 × 7 instead of 12 × 8. Choice 10,400 adds an extra 800 from a stray carry during the multiplication."
     },
     {
       "id": "ar-11",
@@ -860,7 +860,7 @@
         "1:00 PM"
       ],
       "correctIndex": 1,
-      "explanation": "After 1 hour, Train 1 is 60 miles ahead. Closing rate = 90 − 60 = 30 mph. Time to close gap = 60 ÷ 30 = 2 hours after 10:00 AM = 12:00 PM."
+      "explanation": "Train 1's head start at 10:00 AM is 60 miles, closing rate = 90 − 60 = 30 mph, so catch-up = 60 ÷ 30 = 2 hours after 10:00 AM, which is 12:00 PM. Choice 11:00 AM uses 90 mph as the closing rate, forgetting that Train 1 keeps moving forward. Choice 12:30 PM adds a 30-minute buffer for unstated startup. Choice 1:00 PM divides 60 by 20 instead of 30, miscalculating the speed gap between the trains."
     },
     {
       "id": "ar-12",
@@ -873,7 +873,7 @@
         "225 miles"
       ],
       "correctIndex": 1,
-      "explanation": "Actual distance = 3.5 × 50 = 175 miles."
+      "explanation": "Actual distance = inches × scale = 3.5 × 50 = 175 miles. Choice 150 miles rounds 3.5 down to 3 inches before multiplying. Choice 200 miles rounds 3.5 up to 4 inches. Choice 225 miles adds an extra half-scale unit (4.5 × 50), reading the half-inch as a full step on top of the 4-inch round-up."
     },
     {
       "id": "wk-9",
@@ -881,12 +881,12 @@
       "question": "DILIGENT most nearly means:",
       "options": [
         "Lazy",
-        "Careful",
+        "Reluctant",
         "Hardworking",
         "Honest"
       ],
       "correctIndex": 2,
-      "explanation": "Diligent means showing steady, earnest effort in one's work or duties. It is closest in meaning to hardworking or industrious."
+      "explanation": "Diligent means showing steady, careful effort in work or duty, as in 'the diligent technician double-checked every wire before powering on.' Lazy is the direct antonym, naming the absence of effort. Reluctant describes unwillingness to act, the inverse of the eager application of effort that diligent names. Honest names truthfulness, a different virtue not focused on labor. Hardworking is the dominant synonym, capturing both the effort and the persistence at the heart of diligence."
     },
     {
       "id": "wk-10",
@@ -899,7 +899,7 @@
         "Silent"
       ],
       "correctIndex": 1,
-      "explanation": "Volatile describes something that is liable to change rapidly and unpredictably, especially for the worse. It suggests instability or explosiveness."
+      "explanation": "Volatile means liable to change rapidly and unpredictably, especially for the worse, as in 'the volatile chemical reacted the moment air hit it.' Stable is the direct antonym, naming consistency and predictability. Heavy is a property-confusion trap: volatility describes a tendency to vaporize or shift state, not weight, so the two words name unrelated traits. Silent is also unrelated; volatility is about change, not sound. Unstable is the dominant synonym, capturing both the unpredictability and the tendency toward sudden shifts."
     },
     {
       "id": "wk-11",
@@ -912,7 +912,7 @@
         "Evaluate"
       ],
       "correctIndex": 2,
-      "explanation": "To expedite means to speed up the process of something; to cause it to happen more quickly. It is synonymous with accelerate or hasten."
+      "explanation": "To expedite means to speed up a process or make it happen sooner, as in 'the dispatcher expedited the parts shipment so the crew could finish by Friday.' Delay is the direct antonym, naming slowdown rather than acceleration. Organize is a partial-overlap trap: organizing can help speed things up, but the act of arranging is not the act of hastening. Evaluate is a register trap, naming assessment rather than acceleration. Accelerate is the dominant synonym, sharing the core meaning of moving faster."
     },
     {
       "id": "wk-12",
@@ -925,7 +925,7 @@
         "Flexible"
       ],
       "correctIndex": 1,
-      "explanation": "Meticulous means showing great attention to detail; very careful and precise. It describes someone who is thorough and exact."
+      "explanation": "Meticulous means showing extreme attention to detail, as in 'her meticulous packing list accounted for every screw and zip tie.' Careless is the direct antonym, naming inattention. Modest describes humility about oneself, a different trait entirely. Flexible is a register trap, since meticulous people often follow exacting standards that resist bending. Precise is the dominant synonym, sharing the core meaning of exactness and careful accuracy, though meticulous adds the connotation of painstaking thoroughness across many details."
     },
     {
       "id": "pc-7",
@@ -938,7 +938,7 @@
         "The common cold can be cured with the right antibiotic."
       ],
       "correctIndex": 2,
-      "explanation": "The passage states that overuse of antibiotics leads to drug-resistant bacteria, implying that using them when unnecessary worsens the resistance problem."
+      "explanation": "The passage states that \"overuse of antibiotics has led to the emergence of drug-resistant bacteria.\" Choice C restates that link in plain terms: unnecessary use feeds resistance. Choice A contradicts the passage, since the text warns about overuse. Choice B contradicts the first sentence, which says antibiotics have no effect on viral illnesses. Choice D also contradicts that line, because the cold is named as a viral illness antibiotics cannot treat. Only C draws a conclusion the passage actually supports."
     },
     {
       "id": "pc-8",
@@ -951,7 +951,7 @@
         "They can only be used by specially trained soldiers."
       ],
       "correctIndex": 2,
-      "explanation": "The passage explicitly states that night vision devices cannot function in complete darkness because they amplify existing light and require some ambient light to work."
+      "explanation": "The passage states the limitation directly: \"night vision devices cannot function in complete darkness.\" That follows logically from the explanation that the devices \"amplify existing light.\" Choice A invents a weight problem the text never raises. Choice B paraphrases a passage detail but flips it, since heat detection is what thermal devices do, not night vision. Choice D adds a training requirement the passage does not discuss. C is the only choice that names a limitation the text actually states."
     },
     {
       "id": "pc-9",
@@ -964,7 +964,7 @@
         "To train civilian contractors in military combat tactics"
       ],
       "correctIndex": 1,
-      "explanation": "The passage states that LOGCAP contracts civilian companies for support services specifically so that military units can focus on combat operations."
+      "explanation": "The second sentence states the purpose explicitly: LOGCAP \"allows military units to focus on combat operations rather than logistics management.\" Choice B paraphrases that line directly. Choice A overstates by adding \"all,\" since the passage never claims total replacement. Choice C invents a budget motive the text does not discuss. Choice D reverses the relationship by suggesting civilians learn combat tactics, when the passage describes civilians taking on support work so soldiers can fight. B is the only choice that matches the stated purpose."
     },
     {
       "id": "mk-9",
@@ -990,7 +990,7 @@
         "314 inches"
       ],
       "correctIndex": 1,
-      "explanation": "Circumference = π × diameter = 3.14 × 10 = 31.4 inches."
+      "explanation": "Circumference uses C = πd, where d is the diameter. C = 3.14 × 10 = 31.4 inches. The choice 15.7 inches uses the radius (5) instead of the diameter, computing πr. The choice 78.5 inches applies the area formula πr² with r = 5, mixing area and circumference. The choice 314 inches uses d² instead of d, computing π × 100."
     },
     {
       "id": "mk-11",
@@ -1003,7 +1003,7 @@
         "48"
       ],
       "correctIndex": 2,
-      "explanation": "Girls = (5/3) × 24 = 40."
+      "explanation": "Find the value of one ratio unit. 3 units = 24 boys, so 1 unit = 8. Girls = 5 units = 5 × 8 = 40. The choice 32 adds 8 to the boy count instead of scaling the girl ratio. The choice 36 mixes up the ratio direction (3/5 × something) and lands near 40. The choice 48 treats the ratio 3:5 as parts of 8, then multiplies the boy count by the total ratio (24 × 8/4) or doubles the boys."
     },
     {
       "id": "mk-12",
@@ -1029,7 +1029,7 @@
         "1 ohm"
       ],
       "correctIndex": 2,
-      "explanation": "For two equal resistors (R) in parallel, total resistance = R ÷ 2 = 6 ÷ 2 = 3 ohms. Formula: 1/Rt = 1/6 + 1/6 = 2/6, so Rt = 3 ohms."
+      "explanation": "Parallel resistance uses 1/Rt = 1/R1 + 1/R2 = 1/6 + 1/6 = 2/6, so Rt = 3 Ω. Shortcut for equal parallel resistors: divide one by the count, 6 / 2 = 3 Ω. Choice A (12 Ω) adds them as if in series. Choice B (6 Ω) leaves resistance unchanged, missing that parallel paths reduce total resistance. Choice D (1 Ω) misapplies the formula by computing 1/(1/6 + 1/6) incorrectly or treating the reciprocal sum as the answer instead of inverting it."
     },
     {
       "id": "ei-8",
@@ -1042,7 +1042,7 @@
         "Wood"
       ],
       "correctIndex": 2,
-      "explanation": "Copper is one of the best electrical conductors available and is widely used in wiring. Rubber, glass, and wood are insulators that resist current flow."
+      "explanation": "Copper has a sea of loosely bound free electrons, giving it very low resistivity (about 1.7 × 10⁻⁸ Ω·m), which is why nearly all household wiring uses it. Choice A (rubber) is the classic insulator used for wire jackets, with resistivity many orders of magnitude higher. Choice B (glass) is an insulator used on power-line standoffs. Choice D (wood) is an insulator when dry. Mistaking any insulator for a conductor reverses the basic distinction between materials that pass current freely and materials that block it."
     },
     {
       "id": "ei-9",
@@ -1055,7 +1055,7 @@
         "600 volts"
       ],
       "correctIndex": 2,
-      "explanation": "Transformer ratio: Vs/Vp = Ns/Np → Vs = 120 × (400/100) = 120 × 4 = 480 volts."
+      "explanation": "Transformer turns ratio: Vs / Vp = Ns / Np. Plug in: Vs = 120 V × (400 / 100) = 120 × 4 = 480 V. More secondary turns means a step-up transformer. Choice A (30 V) inverts the ratio (100/400) and steps down instead of up. Choice B (120 V) ignores the ratio entirely. Choice D (600 V) multiplies primary voltage by 5 instead of 4, possibly by adding turns wrong or using (Np + Ns)/Np. The ratio is secondary over primary, not their sum."
     },
     {
       "id": "as-7",
@@ -1068,7 +1068,7 @@
         "Regulate fuel pressure in the injection system"
       ],
       "correctIndex": 1,
-      "explanation": "The timing belt/chain synchronizes the crankshaft and camshaft so that engine valves open and close at the correct times during each piston stroke."
+      "explanation": "The timing belt or chain ties the crankshaft to the camshaft so the valves open and close in step with piston position, which is what makes the four-stroke cycle work. Transferring transmission output to the wheels is the driveshaft and axles, not anything inside the engine. Connecting the steering wheel to the front wheels is the steering linkage. Fuel pressure is controlled by the fuel pump and pressure regulator in the fuel system. All three wrong answers swap timing components for parts in completely separate vehicle systems."
     },
     {
       "id": "as-8",
@@ -1081,7 +1081,7 @@
         "Combination square"
       ],
       "correctIndex": 2,
-      "explanation": "An outside micrometer provides precise measurements of the outer dimensions of cylindrical objects, with accuracy to thousandths of an inch."
+      "explanation": "An outside micrometer is built specifically to measure outside diameters, with a calibrated thimble that reads to a thousandth of an inch as the spindle closes on the workpiece. A tape measure resolves to about a sixteenth of an inch, which is nowhere near precision work on a metal rod. An inside caliper measures the inside of a bore or hole, the opposite kind of measurement. A combination square is a layout tool for checking right angles and marking lines, not a diameter gauge. Match the tool family to whether you are measuring outside, inside, or laying out."
     },
     {
       "id": "as-9",
@@ -1094,7 +1094,7 @@
         "Indicate the direction of welding travel"
       ],
       "correctIndex": 1,
-      "explanation": "The ground clamp completes the electrical circuit from the welder through the workpiece, allowing current to flow and create the arc needed for welding."
+      "explanation": "Welding works by passing electrical current through an arc between the electrode and the workpiece, melting metal so it fuses. The ground clamp closes that circuit by giving the current a path back to the welder. Without it, no arc strikes. Warping comes from heat input and joint design, not from the clamp. Cooling happens by conduction into the parent metal and ambient air after the arc stops. Travel direction is something the welder controls by hand. The clamp is purely an electrical connection."
     },
     {
       "id": "mc-7",
@@ -1107,7 +1107,7 @@
         "20 psi"
       ],
       "correctIndex": 1,
-      "explanation": "Pressure = Force ÷ Area = 10 ÷ 2 = 5 pounds per square inch (psi). This pressure is transmitted equally throughout the fluid."
+      "explanation": "Pressure equals force divided by area: P = F / A = 10 lb / 2 in^2 = 5 psi. Pascal's principle states this pressure is transmitted equally to every part of the enclosed fluid. Choice A (2 psi) uses the area as the answer directly, ignoring the force. Choice C (12 psi) adds the force and area (10 + 2), which mixes incompatible units. Choice D (20 psi) multiplies force by area (10 x 2), inverting the formula. The pressure-versus-force distinction matters: pressure is what the fluid carries; force is what each piston exerts, and the two are connected by piston area."
     },
     {
       "id": "mc-8",
@@ -1120,7 +1120,7 @@
         "Linear motion"
       ],
       "correctIndex": 2,
-      "explanation": "When an object has a horizontal velocity and is acted on by gravity, it follows a curved (parabolic) path called projectile motion — a combination of horizontal and vertical components."
+      "explanation": "Projectile motion describes any object launched with a horizontal velocity that is then acted on only by gravity. The horizontal speed stays constant while vertical speed grows under g, producing a parabolic path. Choice A (circular motion) requires a centripetal force pulling toward a center point, not a constant downward gravitational pull. Choice B (simple harmonic motion) describes oscillation about an equilibrium, like a pendulum or spring, not a one-way arc. Choice D (linear motion) requires a straight-line path, but the ball curves downward as it leaves the table, ruling out a straight trajectory."
     },
     {
       "id": "mc-9",
@@ -1133,7 +1133,7 @@
         "Have no effect on mechanical advantage"
       ],
       "correctIndex": 2,
-      "explanation": "Mechanical advantage of an inclined plane = ramp length ÷ height. A longer ramp with the same height produces a larger mechanical advantage, reducing the effort force required."
+      "explanation": "Mechanical advantage of an inclined plane equals ramp length divided by ramp height: MA = L / h. Increasing L while keeping h fixed makes the ratio larger, so MA goes up and the required effort force goes down. Choice A (increase effort) reverses the trade-off; a longer ramp lowers effort, not raises it. Choice B (decrease MA) inverts the formula. Choice D (no effect) ignores that MA depends explicitly on the L/h ratio. Work in equals work out: a longer ramp spreads the same lifting work over more distance, so the force at each point drops."
     },
     {
       "id": "ao-7",
@@ -1146,7 +1146,7 @@
         "5"
       ],
       "correctIndex": 2,
-      "explanation": "On a standard die, opposite faces always sum to 7. The face opposite the 1 is 6 (1 + 6 = 7)."
+      "explanation": "On a standard die, opposite faces always sum to 7. The pairs are 1 and 6, 2 and 5, 3 and 4. With 1 facing up, the face directly opposite is 6. Choosing '2' or '5' confuses opposite faces with adjacent faces, since 2 and 5 sit on the sides of a 1-up die rather than the bottom. Choosing '4' applies the wrong arithmetic, perhaps subtracting 1 from 5 or guessing without using the sum-to-7 rule."
     },
     {
       "id": "ao-9",
@@ -1159,7 +1159,7 @@
         "6 inches and 6 inches"
       ],
       "correctIndex": 1,
-      "explanation": "Let the shorter piece = x. Then 2x = longer piece. x + 2x = 12 → 3x = 12 → x = 4. The pieces are 4 inches and 8 inches."
+      "explanation": "Let the shorter piece have length x. The longer piece is twice as long, so 2x. Together they form the full ruler: x + 2x = 3x = 12, giving x = 4. The pieces measure 4 inches and 8 inches. '3 and 9' satisfies the sum but the ratio is 3 to 1, not 2 to 1. '5 and 7' has the right sum but a ratio of 7 to 5. '6 and 6' makes two equal pieces, which would mean a 1 to 1 ratio rather than 2 to 1. Only 4 and 8 satisfy both the sum and the doubling relationship."
     }
   ]
 }
