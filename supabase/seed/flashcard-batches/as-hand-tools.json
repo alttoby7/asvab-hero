@@ -92,9 +92,9 @@
       "external_key": "ASHT-010",
       "topic_id": "as.hand-tools",
       "difficulty": 3,
-      "front": "Used to drive recessed fasteners with a six-sided star-shaped tip",
+      "front": "Used to drive recessed fasteners with a six-sided (hexagonal) tip",
       "back": "Hex (Allen) wrench / key",
-      "explanation": "Often called an Allen wrench or hex key; the L-shape lets you switch between fast turning and high torque by flipping it.",
+      "explanation": "Often called an Allen wrench or hex key; the L-shape lets you switch between fast turning and high torque by flipping it. Don't confuse with Torx, which has a six-pointed star tip.",
       "sort_order": 10
     },
     {
@@ -110,7 +110,7 @@
       "external_key": "ASHT-012",
       "topic_id": "as.hand-tools",
       "difficulty": 3,
-      "front": "Used to shape metal by striking with a rounded face on one end and a hemispherical face on the other",
+      "front": "Used to shape metal by striking with a flat face on one end and a hemispherical (rounded) peen on the other",
       "back": "Ball-peen hammer",
       "explanation": "The rounded peen is used for peening rivets and shaping metal; a claw hammer's softer steel would deform if struck on metal stock.",
       "sort_order": 12

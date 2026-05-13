@@ -40,7 +40,7 @@
       "difficulty": 2,
       "front": "PRE-",
       "back": "before (prefix)",
-      "explanation": "Examples: preview (view before), prepare (ready before), predict (say before).",
+      "explanation": "Examples: preheat (heat before cooking), predict (say before), preview (view before), prearrange (arrange before).",
       "sort_order": 4
     },
     {
@@ -139,7 +139,7 @@
       "difficulty": 3,
       "front": "-OUS",
       "back": "full of, having the quality of (suffix)",
-      "explanation": "Examples: dangerous (full of danger), joyous (full of joy), nervous (full of nerves).",
+      "explanation": "Examples: poisonous (full of poison), dangerous (full of danger), mountainous (full of mountains).",
       "sort_order": 15
     },
     {
@@ -184,7 +184,7 @@
       "difficulty": 5,
       "front": "-WISE",
       "back": "in the manner or direction of (suffix)",
-      "explanation": "Examples: clockwise (in the direction of a clock), lengthwise (in the direction of length), otherwise (in another manner).",
+      "explanation": "Examples: likewise (in the same manner), edgewise (in the direction of the edge), clockwise (in the direction of a clock), lengthwise (in the direction of length).",
       "sort_order": 20
     }
   ]

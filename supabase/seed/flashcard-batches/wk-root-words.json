@@ -112,7 +112,7 @@
       "difficulty": 3,
       "front": "CRED",
       "back": "to believe or trust",
-      "explanation": "Examples: credible (believable), incredulous (unbelieving), credentials (proof that earns trust).",
+      "explanation": "Examples: credible (believable), incredulous (unbelieving), credentials (proof that earns trust). Test trap: incredulous = unwilling to believe (the listener); incredible = unbelievable (the thing).",
       "sort_order": 12
     },
     {
@@ -148,7 +148,7 @@
       "difficulty": 4,
       "front": "FRACT/FRAG",
       "back": "to break",
-      "explanation": "Examples: fracture (a break), refract (to break light's path), infraction (a breaking of rules).",
+      "explanation": "Examples: fragment (a broken piece), fracture (a break), fraction (a broken-off part of a whole), refract (to break light's path), infraction (a breaking of rules).",
       "sort_order": 16
     },
     {
@@ -184,7 +184,7 @@
       "difficulty": 5,
       "front": "GNOS",
       "back": "to know",
-      "explanation": "Examples: prognosis (foreknowledge of an outcome), agnostic (one without knowledge of the divine), diagnostic (distinguishing through knowledge).",
+      "explanation": "Examples: diagnosis (knowing through symptoms), prognosis (foreknowledge of an outcome), agnostic (one without knowledge of the divine).",
       "sort_order": 20
     }
   ]

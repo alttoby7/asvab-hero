@@ -66,8 +66,8 @@
       "topic_id": "wk.synonyms",
       "difficulty": 2,
       "front": "CANDID",
-      "back": "honest or frank",
-      "explanation": "Common ASVAB synonym pairing: candid ≈ frank, straightforward, blunt.",
+      "back": "open and honest in expression",
+      "explanation": "Common ASVAB synonym pairing: candid ≈ frank, open, forthright. Note: 'blunt' is similar but sharper in tone.",
       "sort_order": 7
     },
     {
@@ -93,8 +93,8 @@
       "topic_id": "wk.synonyms",
       "difficulty": 2,
       "front": "DETER",
-      "back": "to discourage or prevent",
-      "explanation": "Common ASVAB synonym pairing: deter ≈ discourage, dissuade, hinder.",
+      "back": "to discourage or prevent through fear or doubt",
+      "explanation": "Common ASVAB synonym pairing: deter ≈ dissuade, prevent, discourage. Stronger than 'hinder,' which only obstructs.",
       "sort_order": 10
     },
     {
@@ -111,8 +111,8 @@
       "topic_id": "wk.synonyms",
       "difficulty": 2,
       "front": "RESOLVE",
-      "back": "to settle or decide firmly",
-      "explanation": "Common ASVAB synonym pairing: resolve ≈ determine, settle, conclude.",
+      "back": "(v.) to decide firmly or settle; (n.) firmness of purpose, determination",
+      "explanation": "Common ASVAB synonym pairing: resolve (n.) ≈ determination, tenacity, fortitude. ASVAB items often test the noun sense.",
       "sort_order": 12
     },
     {
@@ -218,18 +218,18 @@
       "external_key": "WKSY-024",
       "topic_id": "wk.synonyms",
       "difficulty": 4,
-      "front": "RECONDITE",
-      "back": "obscure or hard to understand",
-      "explanation": "Common ASVAB synonym pairing: recondite ≈ obscure, abstruse, esoteric.",
+      "front": "PROLIFIC",
+      "back": "producing abundantly or in large quantities",
+      "explanation": "Common ASVAB synonym pairing: prolific ≈ productive, abundant, fruitful. Often describes writers, artists, or natural output.",
       "sort_order": 24
     },
     {
       "external_key": "WKSY-025",
       "topic_id": "wk.synonyms",
       "difficulty": 5,
-      "front": "PERSPICACIOUS",
-      "back": "having keen insight",
-      "explanation": "Common ASVAB synonym pairing: perspicacious ≈ perceptive, discerning, insightful.",
+      "front": "GARRULOUS",
+      "back": "excessively talkative; chatty",
+      "explanation": "Common ASVAB synonym pairing: garrulous ≈ talkative, loquacious, verbose. Opposite: laconic, reserved.",
       "sort_order": 25
     }
   ]
