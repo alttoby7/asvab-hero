@@ -1,0 +1,13 @@
+{
+  "_comment": "Canonical list of Stripe events the stripe-webhook handler subscribes to. Source of truth for scripts/enforce-webhook-events.sh and the weekly n8n drift detector. Keep in sync with the switch statement in index.ts and the table in docs/runbooks/stripe-webhook-events.md.",
+  "webhook_endpoint_id": "we_1TRQ39DjRScowBLlbLoSKKXX",
+  "enabled_events": [
+    "checkout.session.completed",
+    "customer.subscription.created",
+    "customer.subscription.updated",
+    "customer.subscription.deleted",
+    "customer.subscription.trial_will_end",
+    "invoice.paid",
+    "invoice.payment_failed"
+  ]
+}
