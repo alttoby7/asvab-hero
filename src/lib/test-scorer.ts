@@ -87,21 +87,27 @@ export function estimateAFQT(subtestResults: SubtestResult[]): {
 } {
   const resultMap = new Map(subtestResults.map((r) => [r.subtest, r]));
 
-  const mapToStandardScore = (pct: number): number => {
-    // Map 0-100% → 20-99 standard score range
-    return Math.round(20 + (pct / 100) * 79);
+  // With only 3-4 questions per subtest, raw percentages are noisy.
+  // Regress toward the population mean (standard score 50) based on
+  // sample size. confidence = seen/15 so 3-4 questions ≈ 0.2-0.27.
+  // This prevents every diagnostic from producing AFQT 99.
+  const toScore = (pct: number, seen: number): number => {
+    const rawScore = 20 + (pct / 100) * 79;
+    const mean = 50;
+    const confidence = Math.min(seen / 15, 1);
+    return Math.round(mean + (rawScore - mean) * confidence);
   };
 
   const scores: SubtestScores = {
-    GS: mapToStandardScore(resultMap.get("GS")?.percentage ?? 0),
-    AR: mapToStandardScore(resultMap.get("AR")?.percentage ?? 0),
-    WK: mapToStandardScore(resultMap.get("WK")?.percentage ?? 0),
-    PC: mapToStandardScore(resultMap.get("PC")?.percentage ?? 0),
-    MK: mapToStandardScore(resultMap.get("MK")?.percentage ?? 0),
-    EI: mapToStandardScore(resultMap.get("EI")?.percentage ?? 0),
-    AS: mapToStandardScore(resultMap.get("AS")?.percentage ?? 0),
-    MC: mapToStandardScore(resultMap.get("MC")?.percentage ?? 0),
-    AO: mapToStandardScore(resultMap.get("AO")?.percentage ?? 0),
+    GS: toScore(resultMap.get("GS")?.percentage ?? 0, resultMap.get("GS")?.total ?? 0),
+    AR: toScore(resultMap.get("AR")?.percentage ?? 0, resultMap.get("AR")?.total ?? 0),
+    WK: toScore(resultMap.get("WK")?.percentage ?? 0, resultMap.get("WK")?.total ?? 0),
+    PC: toScore(resultMap.get("PC")?.percentage ?? 0, resultMap.get("PC")?.total ?? 0),
+    MK: toScore(resultMap.get("MK")?.percentage ?? 0, resultMap.get("MK")?.total ?? 0),
+    EI: toScore(resultMap.get("EI")?.percentage ?? 0, resultMap.get("EI")?.total ?? 0),
+    AS: toScore(resultMap.get("AS")?.percentage ?? 0, resultMap.get("AS")?.total ?? 0),
+    MC: toScore(resultMap.get("MC")?.percentage ?? 0, resultMap.get("MC")?.total ?? 0),
+    AO: toScore(resultMap.get("AO")?.percentage ?? 0, resultMap.get("AO")?.total ?? 0),
   };
 
   const afqt = calculateAFQT(scores);
