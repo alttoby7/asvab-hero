@@ -275,6 +275,40 @@ ${statsLine}
 `;
 };
 
+// Renewal charge failed. accessActive is false in this codebase because
+// has_active_pro() in 0002_billing.sql only treats billing_status='active' (or
+// 'lifetime') as Pro — once Stripe flips the sub to past_due, our handler sets
+// billing_status='past_due' and Pro access is gated immediately. Do not lie.
+const renderPaymentFailed = (
+  firstName: string,
+  attemptCount: number | null,
+  nextAttemptISO: string | null,
+): string => {
+  const opening = attemptCount && attemptCount >= 2
+    ? `<p>Your ASVAB Hero renewal still hasn't gone through — latest attempt was charge ${attemptCount}.</p>`
+    : `<p>Your ASVAB Hero renewal just didn't go through — most likely an expired card or a temporary hold from your bank.</p>`;
+
+  const nextLine = nextAttemptISO
+    ? `<p>Stripe will retry on ${new Date(nextAttemptISO).toLocaleDateString("en-US", { month: "long", day: "numeric" })}, but the easier path is to update your card now.</p>`
+    : "";
+
+  return `\
+<p>Hi ${firstName},</p>
+
+${opening}
+${nextLine}
+<p>Until the card goes through, your Pro features are paused. Practice history is safe, your account is intact, you just won't see Pro until billing recovers.</p>
+
+<p>Fix it in one click here: <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a> opens the Stripe customer portal where you can update or replace the card on file.</p>
+
+<p>If the card on file is the right one and you still got this, it might be a hold from your bank — call the number on the back of the card and ask them to clear ASVAB Hero. Then update the card in the link above and we'll retry.</p>
+
+<p>Reply if you need help. I read every reply.</p>
+
+<p>Trish<br>ASVAB Hero</p>
+`;
+};
+
 const renderWelcomeTrial = (firstName: string): string => `\
 <p>Hi ${firstName},</p>
 
@@ -612,6 +646,210 @@ const sendTrialConvertedEmail = async (args: {
     .eq("user_id", userId);
   if (updateErr) {
     console.error("trial-converted: status update failed", { userId, error: updateErr.message, status });
+  }
+};
+
+// Send the renewal-failed dunning email via Resend.
+// Idempotency lives on `payment_failed_emails` keyed by invoice_id (PK). Stripe
+// Smart Retries fires up to 4 payment_failed events per failed renewal with
+// distinct event IDs but the same invoice.id — ON CONFLICT DO NOTHING on the
+// ledger means we send exactly one email per invoice.
+//
+// Gating: only sends when collection_method='charge_automatically' AND
+// billing_reason='subscription_cycle'. Anything else (send_invoice manual A/R,
+// subscription_create initial signup failure) writes a 'suppressed_*' row and
+// skips the email — those cases don't deserve "update your card" copy.
+//
+// Never throws; never fails the webhook.
+const sendPaymentFailedEmail = async (args: {
+  userId: string;
+  customerEmail: string | undefined;
+  invoiceId: string;
+  subscriptionId: string | null;
+  attemptCount: number | null;
+  nextPaymentAttempt: number | null;
+  collectionMethod: string | null;
+  billingReason: string | null;
+  eventType: string;
+}): Promise<void> => {
+  const {
+    userId,
+    customerEmail,
+    invoiceId,
+    subscriptionId,
+    attemptCount,
+    nextPaymentAttempt,
+    collectionMethod,
+    billingReason,
+    eventType,
+  } = args;
+
+  const nextAttemptISO = nextPaymentAttempt
+    ? new Date(nextPaymentAttempt * 1000).toISOString()
+    : null;
+
+  // Decide suppression up front. We still record the row for debugging.
+  let suppressedStatus: string | null = null;
+  if (collectionMethod !== "charge_automatically") {
+    suppressedStatus = "suppressed_collection_method";
+  } else if (billingReason !== "subscription_cycle") {
+    suppressedStatus = "suppressed_billing_reason";
+  }
+
+  // Atomic claim via ledger PK on invoice_id. Insert with the gate decision
+  // baked into status. If a row already exists for this invoice, do nothing.
+  const insertRow = {
+    invoice_id: invoiceId,
+    user_id: userId,
+    subscription_id: subscriptionId,
+    attempt_count: attemptCount,
+    next_payment_attempt_at: nextAttemptISO,
+    collection_method: collectionMethod,
+    billing_reason: billingReason,
+    status: suppressedStatus ?? "sending",
+  };
+  const { data: claimed, error: claimErr } = await supabaseAdmin
+    .from("payment_failed_emails")
+    .upsert(insertRow, { onConflict: "invoice_id", ignoreDuplicates: true })
+    .select("invoice_id")
+    .maybeSingle();
+
+  if (claimErr) {
+    console.error("payment-failed: claim failed", { userId, invoiceId, error: claimErr.message });
+    return;
+  }
+  if (!claimed) {
+    console.log("payment-failed: invoice already handled, skipping", { userId, invoiceId });
+    return;
+  }
+  if (suppressedStatus) {
+    console.log("payment-failed: suppressed", {
+      userId,
+      invoiceId,
+      reason: suppressedStatus,
+      collectionMethod,
+      billingReason,
+    });
+    return;
+  }
+
+  const resendKey = Deno.env.get("ASVAB_RESEND_API_KEY");
+  if (!resendKey) {
+    console.log("payment-failed: ASVAB_RESEND_API_KEY not set, leaving status='sending'", { invoiceId });
+    return;
+  }
+
+  // Read display_name + email for the greeting + recipient fallback.
+  const { data: profile } = await supabaseAdmin
+    .from("profiles")
+    .select("display_name, email")
+    .eq("user_id", userId)
+    .maybeSingle();
+
+  const recipientEmail = customerEmail || profile?.email || undefined;
+  if (!recipientEmail) {
+    console.log("payment-failed: no recipient email; marking error_no_recipient", { userId, invoiceId });
+    await supabaseAdmin
+      .from("payment_failed_emails")
+      .update({ status: "error_no_recipient", updated_at: new Date().toISOString() })
+      .eq("invoice_id", invoiceId);
+    return;
+  }
+
+  const greetingName = profile?.display_name ?? "there";
+  const subject = "Your ASVAB Hero payment didn't go through";
+  const html = renderPaymentFailed(greetingName, attemptCount, nextAttemptISO);
+
+  let resendId: string | null = null;
+  let status: string;
+  let updateSentAt = false;
+
+  try {
+    const resp = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${resendKey}`,
+      },
+      body: JSON.stringify({
+        from: "Trish at ASVAB Hero <info@asvabhero.com>",
+        to: [recipientEmail],
+        reply_to: "trish@dach.family",
+        subject,
+        html,
+      }),
+    });
+
+    if (resp.ok) {
+      const body = (await resp.json().catch(() => ({}))) as { id?: string };
+      resendId = body.id ?? null;
+      status = "sent";
+      updateSentAt = true;
+      console.log(
+        "payment-failed: sent",
+        JSON.stringify({
+          event_type: eventType,
+          user_id: userId,
+          email: recipientEmail,
+          invoice_id: invoiceId,
+          attempt_count: attemptCount,
+          resend_status: resp.status,
+          resend_id: resendId,
+        }),
+      );
+    } else {
+      const errBody = await resp.text().catch(() => "");
+      status = `error_${resp.status}`;
+      console.error(
+        "payment-failed: resend non-2xx",
+        JSON.stringify({
+          event_type: eventType,
+          user_id: userId,
+          email: recipientEmail,
+          invoice_id: invoiceId,
+          resend_status: resp.status,
+          resend_body: errBody.slice(0, 500),
+        }),
+      );
+      await captureMessage(`resend payment-failed non-2xx (${resp.status})`, {
+        level: "warning",
+        fingerprint: ["vendor-non-2xx", "resend", "payment-failed"],
+        tags: { provider: "resend", template: "payment-failed", resend_status: resp.status, event_type: eventType, user_id: userId },
+        extra: { detail: errBody.slice(0, 500), invoice_id: invoiceId },
+      });
+    }
+  } catch (err) {
+    status = "error_throw";
+    console.error(
+      "payment-failed: resend threw",
+      JSON.stringify({
+        event_type: eventType,
+        user_id: userId,
+        email: recipientEmail,
+        invoice_id: invoiceId,
+        error: String(err),
+      }),
+    );
+    await captureException(err, {
+      tags: { provider: "resend", template: "payment-failed", event_type: eventType, user_id: userId },
+      fingerprint: ["vendor-throw", "resend", "payment-failed"],
+    });
+  }
+
+  const updatePayload: Record<string, unknown> = {
+    status,
+    updated_at: new Date().toISOString(),
+  };
+  if (updateSentAt) {
+    updatePayload.sent_at = new Date().toISOString();
+    updatePayload.resend_id = resendId;
+  }
+  const { error: updateErr } = await supabaseAdmin
+    .from("payment_failed_emails")
+    .update(updatePayload)
+    .eq("invoice_id", invoiceId);
+  if (updateErr) {
+    console.error("payment-failed: status update failed", { userId, invoiceId, error: updateErr.message, status });
   }
 };
 
@@ -1029,6 +1267,17 @@ Deno.serve(async (req) => {
           const userId = meta.user_id ?? (customerId ? await findUserIdForCustomer(customerId) : null);
           if (userId) await updateProfileFromSubscription(userId, sub, event.created);
 
+          // Mark any prior payment_failed email for THIS invoice as recovered.
+          // Silent — the customer already knows (their card worked). This just
+          // gives support tooling a clean "ongoing dunning" vs "recovered" signal.
+          if (invoiceId) {
+            await supabaseAdmin
+              .from("payment_failed_emails")
+              .update({ recovered_at: new Date().toISOString(), updated_at: new Date().toISOString() })
+              .eq("invoice_id", invoiceId)
+              .is("recovered_at", null);
+          }
+
           // Trial-converted welcome email — only when this is a recurring cycle
           // invoice AND the user came off a trial (trial_ends_at was set).
           // Idempotent via profiles.trial_converted_email_sent_at.
@@ -1048,6 +1297,60 @@ Deno.serve(async (req) => {
             }
           }
         }
+        break;
+      }
+      case "invoice.payment_failed": {
+        const invoiceId = (obj.id as string | undefined) ?? null;
+        const subscriptionId = (obj.subscription as string | undefined) ?? null;
+        const customerId = (obj.customer as string | undefined) ?? null;
+        const customerEmail =
+          (obj.customer_email as string | undefined) ??
+          ((obj.customer_details as { email?: string } | undefined)?.email) ??
+          undefined;
+        const attemptCount = (obj.attempt_count as number | undefined) ?? null;
+        const nextPaymentAttempt = (obj.next_payment_attempt as number | undefined) ?? null;
+        const collectionMethod = (obj.collection_method as string | undefined) ?? null;
+        const billingReason = (obj.billing_reason as string | undefined) ?? null;
+
+        if (!invoiceId) {
+          console.log("payment_failed: no invoice id on event, skipping");
+          break;
+        }
+
+        // Sync billing state (Stripe has already flipped sub.status to past_due).
+        // Fetch fresh sub if we have a subscription id — updateProfileFromSubscription
+        // is guarded against stale events via subscriptionEventIsStale.
+        let userId: string | null = null;
+        if (subscriptionId) {
+          const sub = await stripeRequest<Parameters<typeof updateProfileFromSubscription>[1]>(
+            "GET",
+            `/subscriptions/${subscriptionId}`,
+            {},
+          );
+          const meta = ((sub as unknown as { metadata?: Record<string, string> }).metadata) ?? {};
+          const subCustomerId = (sub as { customer?: string }).customer ?? customerId;
+          userId = meta.user_id ?? (subCustomerId ? await findUserIdForCustomer(subCustomerId) : null);
+          if (userId) await updateProfileFromSubscription(userId, sub, event.created);
+        } else if (customerId) {
+          userId = await findUserIdForCustomer(customerId);
+        }
+
+        if (!userId) {
+          console.log("payment_failed: could not resolve userId, skipping email", { invoiceId, customerId });
+          break;
+        }
+
+        await sendPaymentFailedEmail({
+          userId,
+          customerEmail,
+          invoiceId,
+          subscriptionId,
+          attemptCount,
+          nextPaymentAttempt,
+          collectionMethod,
+          billingReason,
+          eventType: event.type,
+        });
         break;
       }
       default:
