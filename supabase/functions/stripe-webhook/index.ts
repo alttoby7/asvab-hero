@@ -36,9 +36,13 @@ const updateProfileFromSubscription = async (
   sub: {
     id: string;
     status: string;
-    current_period_end: number;
+    // Stripe API 2025-03-31.basil moved current_period_end off the sub object
+    // onto the subscription item. The top-level field is omitted in payloads
+    // from that version forward. Older API versions still send it here.
+    current_period_end?: number | null;
+    trial_end?: number | null;
     cancel_at_period_end?: boolean;
-    items?: { data?: { price?: { id: string } }[] };
+    items?: { data?: { price?: { id: string }; current_period_end?: number | null }[] };
     customer?: string;
   },
 ) => {
@@ -50,10 +54,20 @@ const updateProfileFromSubscription = async (
   else if (sub.status === "canceled" || sub.status === "incomplete_expired") billingStatus = "canceled";
   else billingStatus = "free";
 
+  // Period end now lives on the item in newer API versions. Fall back to the
+  // top-level field (older API versions) then trial_end (trialing subs always
+  // have it). Null is acceptable if nothing usable is present — better than
+  // throwing RangeError on `new Date(NaN).toISOString()`.
+  const periodEndSec =
+    sub.items?.data?.[0]?.current_period_end ?? sub.current_period_end ?? sub.trial_end ?? null;
+  const proUntil = typeof periodEndSec === "number" && Number.isFinite(periodEndSec)
+    ? new Date(periodEndSec * 1000).toISOString()
+    : null;
+
   const update: Record<string, unknown> = {
     billing_status: billingStatus,
     pro_tier: tier,
-    pro_until: new Date(sub.current_period_end * 1000).toISOString(),
+    pro_until: proUntil,
     stripe_subscription_id: sub.id,
     stripe_price_id: priceId,
     stripe_customer_id: sub.customer ?? undefined,
