@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import Calculator from "@/components/Calculator";
-import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import type { MilitaryJob } from "@/types";
 
@@ -70,15 +69,6 @@ export default function CalculatorPage() {
       <Suspense>
         <Calculator allJobs={allJobs} />
       </Suspense>
-
-      <section className="mt-10">
-        <EmailCapture
-          headline="Save these results — get a 30-day plan to raise them"
-          subhead="Free 6-page PDF plus a 5-email crash course on AFQT and line scores. Sent in the next few minutes."
-          cta="Email me the plan"
-          tag="full-calculator"
-        />
-      </section>
     </div>
   );
 }
