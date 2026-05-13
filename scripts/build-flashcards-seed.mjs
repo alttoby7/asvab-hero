@@ -93,20 +93,20 @@ lines.push(
 );
 lines.push("");
 lines.push(
-  "insert into flashcard_cards (deck_id, topic_id, difficulty, front, back, explanation, sort_order, active)",
+  "insert into flashcard_cards (deck_id, topic_id, difficulty, front, back, explanation, sort_order, external_key, active)",
 );
 lines.push("select");
-lines.push("  d.id, c.topic_id, c.difficulty, c.front, c.back, c.explanation, c.sort_order, true");
+lines.push("  d.id, c.topic_id, c.difficulty, c.front, c.back, c.explanation, c.sort_order, c.external_key, true");
 lines.push("from (values");
 lines.push(
   cards
     .map(
       (c) =>
-        `  (${sqlEscape(c.deck_slug)}, ${sqlEscape(c.topic_id)}, ${c.difficulty}, ${sqlEscape(c.front)}, ${sqlEscape(c.back)}, ${sqlEscapeNullable(c.explanation)}, ${c.sort_order})`,
+        `  (${sqlEscape(c.deck_slug)}, ${sqlEscape(c.topic_id)}, ${c.difficulty}, ${sqlEscape(c.front)}, ${sqlEscape(c.back)}, ${sqlEscapeNullable(c.explanation)}, ${c.sort_order}, ${sqlEscape(c.external_key)})`,
     )
     .join(",\n"),
 );
-lines.push(") as c(deck_slug, topic_id, difficulty, front, back, explanation, sort_order)");
+lines.push(") as c(deck_slug, topic_id, difficulty, front, back, explanation, sort_order, external_key)");
 lines.push("join flashcard_decks d on d.slug = c.deck_slug;");
 lines.push("commit;");
 
