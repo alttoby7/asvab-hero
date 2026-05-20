@@ -6,9 +6,9 @@ import BrandHero from "@/components/BrandHero";
 import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "Free ASVAB Practice Test — 30 Questions, All 9 Subtests",
+  title: "ASVAB Practice Test: Diagnostic + Subtest Drills",
   description:
-    "Take our free ASVAB practice test with 30 timed questions across all 9 subtests. Get your estimated AFQT score, identify strengths and weaknesses, and see which military jobs you qualify for.",
+    "Free ASVAB diagnostic plus unlimited subtest drills. 30 timed questions across all 9 subtests, estimated AFQT score, per-topic breakdown, and targeted drill mode for every subtest.",
   alternates: {
     canonical: "https://asvabhero.com/practice-test",
   },
@@ -37,7 +37,7 @@ export default function PracticeTestPage() {
       {/* SEO Content */}
       <div className="mb-8">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          Free ASVAB Practice Test
+          ASVAB Practice Test &amp; Subtest Drills
         </h1>
         <p className="mt-2 text-sm text-text-tertiary">
           Active duty?{" "}

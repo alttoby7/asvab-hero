@@ -23,15 +23,15 @@ worked_examples:
     solution: "In- = not. De-fatigable = capable of being fatigued. Indefatigable = not capable of being fatigued — tireless. Answer: B"
 ---
 
-## Why this matters more than flashcards
+## What the ASVAB is actually testing
 
-Flashcards work when you've seen the word before. Prefixes and suffixes work on words you've never seen. The ASVAB will throw unfamiliar words at you — this is the tool that keeps you from guessing blind.
+Word Knowledge is 16 questions on the CAT-ASVAB. You'll see words you've studied — and words you haven't. Prefixes and suffixes are how you get partial credit on unfamiliar words. The test isn't checking whether you memorized every vocab list. It's checking whether you can reason about language under time pressure.
 
-English borrows heavily from Latin and Greek. The same building blocks show up in thousands of words across science, law, military terminology, and everyday speech. Learn the blocks, decode the words.
+A word like *insubordinate* might never have appeared in your prep materials. But if you know *in-* means "not" and *sub-* means "under," you've cut the guessing down dramatically.
 
 ## The prefixes worth memorizing first
 
-**Negative/reversal:**
+**Negative / reversal:**
 - *un-* — unable, unfit, unkempt
 - *dis-* — displace, disloyal, disrupt
 - *mis-* — misjudge, misconduct, mislead
@@ -53,22 +53,30 @@ English borrows heavily from Latin and Greek. The same building blocks show up i
 
 ## Suffixes that signal meaning
 
-**-ous** (full of): hazardous, conspicuous, strenuous
-**-ful** (having): resourceful, forceful, dreadful
-**-less** (without): reckless, careless, relentless
-**-able / -ible** (capable of): capable, flexible, compatible
-**-tion / -sion** (act or state): mission, operation, condition
-**-ist** (one who): strategist, specialist, antagonist
-**-ify / -fy** (to make): fortify, clarify, magnify
+**-ous** (full of): hazardous, conspicuous, strenuous  
+**-ful** (having): resourceful, forceful, dreadful  
+**-less** (without): reckless, careless, relentless  
+**-able / -ible** (capable of): capable, flexible, compatible  
+**-tion / -sion** (act or state): mission, operation, condition  
+**-ist** (one who): strategist, specialist, antagonist  
+**-ify / -fy** (to make): fortify, clarify, magnify  
 
-## Worked breakdown: dissect before you guess
+## Dissect before you guess
 
 Take *noncombatant*: **non-** (not) + **combat** + **-ant** (one who does). A noncombatant = one who does not combat — a civilian or medical personnel in a military context.
 
 Take *subversive*: **sub-** (under/against) + **vers** (to turn) + **-ive** (tending to). Subversive = tending to undermine or turn against authority.
 
-Two or three parts, decoded separately, give you the full meaning.
+Two or three parts, decoded separately, give you the full meaning — even if you've never seen the word before.
 
-## Study priority
+## What trips people up
 
-Focus on the 30 most common Latin and Greek prefixes first. They cover the majority of hard ASVAB words. Add suffixes second — they're easier because they mostly signal part of speech, not meaning. Roots come third (see the Root Words guide).
+**The *in-* ambiguity.** *In-* can mean "not" (*inactive*, *incomplete*) or "into/within" (*insert*, *incorporate*). The meaning depends on the root. Don't assume every *in-* word is a negative.
+
+**Stopping after the prefix.** You identify *mal-* and think "bad." That's a start, not an answer. *Malevolent*, *malodorous*, and *malicious* are all "bad" — but they mean different things. The root narrows it.
+
+**Spelling vs. meaning on -able/-ible.** Both mean "capable of." The distinction is spelling only. Don't waste time on the difference — use it to confirm the meaning, not to choose between two answers.
+
+## Practice move
+
+Prefixes and suffixes work best when you've drilled them until they're automatic. If you still have to consciously recall what *mal-* means mid-question, you're burning time the test doesn't give you. Work through the practice set until you're splitting words on sight — then apply it to full Word Knowledge question sets.
