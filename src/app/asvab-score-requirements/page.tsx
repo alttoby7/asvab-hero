@@ -1238,6 +1238,30 @@ export default function ASVABScoreRequirementsPage() {
               enlistment standards of any branch.
             </li>
             <li>
+              Targeting a specific job or career advancement? See{" "}
+              <Link
+                href="/gt-score-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                GT score requirements
+              </Link>
+              ,{" "}
+              <Link
+                href="/mos-asvab-score-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                MOS ASVAB score requirements by job
+              </Link>
+              , and{" "}
+              <Link
+                href="/what-jobs-qualify-asvab-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                what jobs your score qualifies you for
+              </Link>
+              .
+            </li>
+            <li>
               New to scoring? Start with the{" "}
               <Link
                 href="/afqt-score"

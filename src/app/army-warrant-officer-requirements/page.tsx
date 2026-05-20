@@ -212,7 +212,15 @@ export default function ArmyWarrantOfficerRequirementsPage() {
           >
             GT score guide
           </Link>{" "}
-          for which subtests move it fastest.
+          for which subtests move it fastest. The full{" "}
+          <Link
+            href="/gt-score-requirements"
+            className="text-accent hover:text-accent-hover"
+          >
+            GT score requirements
+          </Link>{" "}
+          reference shows how the 110 warrant gate compares to every other GT
+          threshold.
         </p>
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -617,7 +625,15 @@ export default function ArmyWarrantOfficerRequirementsPage() {
           >
             Army MOS list
           </Link>
-          , then put your study time where it moves the GT.
+          , then put your study time where it moves the GT. For how the warrant
+          path works across all branches, see the{" "}
+          <Link
+            href="/warrant-officer-requirements"
+            className="text-accent hover:text-accent-hover"
+          >
+            warrant officer requirements overview
+          </Link>
+          .
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">

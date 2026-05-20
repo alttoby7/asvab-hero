@@ -906,6 +906,30 @@ export default function ArmyASVABScorePage() {
               .
             </li>
             <li>
+              Already serving and looking to advance? See{" "}
+              <Link
+                href="/army-warrant-officer-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Army warrant officer requirements
+              </Link>
+              ,{" "}
+              <Link
+                href="/gt-score-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                GT score requirements
+              </Link>
+              , and how to{" "}
+              <Link
+                href="/mos-reclassification"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                reclassify into a new MOS
+              </Link>
+              .
+            </li>
+            <li>
               Other branches:{" "}
               <Link
                 href="/navy-asvab-score-requirements"

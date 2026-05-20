@@ -122,12 +122,12 @@ export default function MOSReclassificationPage() {
           Force have their own versions, covered at the end. Before you start,
           look up the line score for the MOS you want in our{" "}
           <Link
-            href="/army-mos-list"
+            href="/mos-asvab-score-requirements"
             className="text-accent hover:text-accent-hover"
           >
-            Army MOS list
-          </Link>
-          .
+            MOS ASVAB score requirements
+          </Link>{" "}
+          guide.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
@@ -284,12 +284,12 @@ export default function MOSReclassificationPage() {
             Pull the exact line-score requirement before you commit. Look up your
             target job in our{" "}
             <Link
-              href="/army-mos-list"
+              href="/mos-asvab-score-requirements"
               className="text-accent hover:text-accent-hover"
             >
-              Army MOS list
-            </Link>
-            , run the math in the{" "}
+              MOS ASVAB score requirements
+            </Link>{" "}
+            guide, run the math in the{" "}
             <Link
               href="/asvab-line-score-calculator"
               className="text-accent hover:text-accent-hover"

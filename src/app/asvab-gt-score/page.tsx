@@ -1819,6 +1819,35 @@ export default function ASVABGTScorePage() {
             variant="inline"
           />
         </section>
+
+        {/* Related links */}
+        <section className="my-8 not-prose rounded-xl border border-accent/30 bg-navy-light p-6">
+          <h2 className="font-display text-xl font-bold text-text-primary">
+            Related GT and Career Guides
+          </h2>
+          <ul className="mt-4 space-y-3 text-text-secondary">
+            <li>
+              <Link
+                href="/gt-score-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                GT score requirements
+              </Link>{" "}
+              &mdash; every GT threshold by job, program, and branch in one
+              reference.
+            </li>
+            <li>
+              <Link
+                href="/army-warrant-officer-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Army warrant officer requirements
+              </Link>{" "}
+              &mdash; the GT 110 gate plus the full eligibility checklist for the
+              warrant officer path.
+            </li>
+          </ul>
+        </section>
       </article>
     </div>
   );

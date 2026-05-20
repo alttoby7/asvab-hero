@@ -401,10 +401,10 @@ export default function WarrantOfficerRequirementsPage() {
           For the complete Army breakdown, including specialty-specific gates and
           the packet timeline, see our{" "}
           <Link
-            href="/army-asvab-score"
+            href="/army-warrant-officer-requirements"
             className="text-accent hover:text-accent-hover"
           >
-            Army ASVAB score requirements
+            Army warrant officer requirements
           </Link>{" "}
           guide. If your GT is short,{" "}
           <Link href="/bsep" className="text-accent hover:text-accent-hover">
