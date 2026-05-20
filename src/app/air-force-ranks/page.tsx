@@ -552,7 +552,7 @@ export default function AirForceRanksPage() {
           Your ASVAB score doesn&apos;t determine your rank. It determines which jobs you can even be offered. That shapes everything else.
         </p>
         <p className="text-text-secondary">
-          The Air Force requires a minimum AFQT score of 36 for applicants with a high school diploma and 50 for GED holders. That 36 minimum is the second-highest of any branch. Only the Coast Guard, at 40, sets the bar higher.
+          The Air Force requires a minimum AFQT score of 36 for applicants with a high school diploma and 65 for GED holders. That 36 minimum, shared with the Space Force, is the highest diploma floor of any branch.
         </p>
         <p className="text-text-secondary">
           But the AFQT is just the entry ticket. What actually matters for job qualification are the four MAGE composite scores, each built from different ASVAB subtests:

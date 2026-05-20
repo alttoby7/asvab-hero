@@ -41,7 +41,7 @@ const faqJsonLd = {
       name: "What is the minimum ASVAB score for the Coast Guard?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The official AFQT minimum is 36 for high school diploma holders. It was 40 until November 2023, when the Coast Guard lowered it to address recruiting challenges. GED holders need an AFQT of 50 or higher. The Reserve minimum is 40. In practice, scoring well above the minimum gives you significantly better chances since the Coast Guard is the most selective branch.",
+        text: "The official AFQT minimum is 32 for high school diploma holders. It was 40 until November 2023, when the Coast Guard lowered it to address recruiting challenges. GED holders need an AFQT of 50 or higher. The Reserve minimum is 40. In practice, scoring well above the minimum gives you significantly better chances since the Coast Guard is the most selective branch.",
       },
     },
     {
@@ -57,7 +57,7 @@ const faqJsonLd = {
       name: "Does the Coast Guard accept a GED?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, but with restrictions. You need an AFQT of 50 or higher (vs. 36 for diploma holders), and fewer than 5% of accepted Coast Guard recruits lack a diploma. Completing 15 college credit hours upgrades your status to Tier 1, giving you the same scoring threshold as diploma holders.",
+        text: "Yes, but with restrictions. You need an AFQT of 50 or higher (vs. 32 for diploma holders), and fewer than 5% of accepted Coast Guard recruits lack a diploma. Completing 15 college credit hours upgrades your status to Tier 1, giving you the same scoring threshold as diploma holders.",
       },
     },
     {
@@ -190,7 +190,7 @@ export default function CoastGuardASVABScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Coast Guard
                 </td>
-                <td className="py-2 pr-4 font-mono">36</td>
+                <td className="py-2 pr-4 font-mono">32</td>
                 <td className="py-2 font-mono">50</td>
               </tr>
               <tr>
@@ -216,7 +216,7 @@ export default function CoastGuardASVABScorePage() {
           <p className="text-sm font-semibold text-text-primary">Key Point</p>
           <p className="mt-1 text-sm text-text-secondary">
             Aim for an AFQT of 50+ to be competitive for enlistment. Scoring 65+
-            opens specialized ratings like AST (Rescue Swimmer). The 36 minimum
+            opens specialized ratings like AST (Rescue Swimmer). The 32 minimum
             is a floor, not a target.
           </p>
         </aside>
@@ -927,7 +927,7 @@ export default function CoastGuardASVABScorePage() {
               What is the minimum ASVAB score for the Coast Guard?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              The official AFQT minimum is 36 for high school diploma holders. It
+              The official AFQT minimum is 32 for high school diploma holders. It
               was 40 until November 2023, when the Coast Guard lowered it to
               address recruiting challenges. GED holders need an AFQT of 50 or
               higher. The Reserve minimum is 40. In practice, scoring well above
@@ -952,7 +952,7 @@ export default function CoastGuardASVABScorePage() {
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
               Yes, but with restrictions. You need an AFQT of 50 or higher (vs.
-              36 for diploma holders), and fewer than 5% of accepted Coast Guard
+              32 for diploma holders), and fewer than 5% of accepted Coast Guard
               recruits lack a diploma. Completing 15 college credit hours
               upgrades your status to Tier 1, giving you the same scoring
               threshold as diploma holders.

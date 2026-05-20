@@ -57,7 +57,7 @@ export default function HowToStudyForTheASVABPage() {
               name: "What ASVAB score do I need for each military branch?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "AFQT minimums with a high school diploma: Army 31, Marines 32, Navy 35, Air Force 36, Space Force 36, Coast Guard 40. GED holders need higher scores: Army 50, Navy 50, Air Force 65. These are enlistment floors. Most specific jobs require composite scores significantly higher.",
+                text: "AFQT minimums with a high school diploma: Army 31, Marines 32, Navy 35, Air Force 36, Space Force 36, Coast Guard 32. GED holders need higher scores: Army 50, Navy 50, Air Force 65. These are enlistment floors. Most specific jobs require composite scores significantly higher.",
               },
             },
             {
@@ -927,7 +927,7 @@ export default function HowToStudyForTheASVABPage() {
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
               AFQT minimums with a high school diploma: Army 31, Marines 32,
-              Navy 35, Air Force 36, Space Force 36, Coast Guard 40. GED holders
+              Navy 35, Air Force 36, Space Force 36, Coast Guard 32. GED holders
               need higher scores: Army 50, Navy 50, Air Force 65. These are
               enlistment floors. Most specific jobs require composite scores
               significantly higher. Use our{" "}

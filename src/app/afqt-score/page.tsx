@@ -519,16 +519,16 @@ export default function AFQTScorePage() {
         </h3>
         <p className="mt-4 text-text-secondary">
           The spread between branches creates real strategic decisions. A diploma
-          holder scoring 33 qualifies for the Army and Marines but gets rejected
-          by the Navy (35), Air Force (36), Space Force (36), and Coast Guard
-          (40). Two more points on the AFQT opens two more branches.
+          holder scoring 33 qualifies for the Army (31), Marines (32), and Coast
+          Guard (32) but gets rejected by the Navy (35), Air Force (36), and
+          Space Force (36). Three more points on the AFQT opens those branches.
         </p>
         <p className="text-text-secondary">
           The Army&apos;s floor of 31 is the lowest across all branches, making
           it the most accessible path for recruits near the bottom of the
-          qualifying range. The Coast Guard&apos;s 40 is the highest diploma
-          minimum, reflecting its smaller force size and higher selectivity per
-          slot.
+          qualifying range. The Air Force and Space Force share the highest
+          diploma minimum at 36, reflecting their selectivity and technical
+          job mix.
         </p>
 
         <h3 className="mt-6 font-display text-lg font-bold text-text-primary">

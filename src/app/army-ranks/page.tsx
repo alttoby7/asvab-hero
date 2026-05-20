@@ -568,7 +568,7 @@ export default function ArmyRanksPage() {
           {[
             { label: "NCO Threshold", desc: "Army NCO status begins at E-4 Corporal (leadership-designated) or E-5 Sergeant for most soldiers. The Air Force and Space Force do not grant NCO status until E-5." },
             { label: "Warrant Officers", desc: "The Army maintains roughly 25,000 warrant officers across W-1 to W-5. The Air Force abolished the rank in 1959 and only reintroduced it in 2022 for extremely limited technical roles. The Navy and Marines maintain small programs in select specialties." },
-            { label: "AFQT Minimums", desc: "The Army requires the lowest AFQT score of any active branch: 31. Marines require 32. Navy requires 35. Air Force and Space Force require 36. Coast Guard requires 40." },
+            { label: "AFQT Minimums", desc: "The Army requires the lowest AFQT score of any active branch: 31. Marines require 32. Navy requires 35. Air Force and Space Force require 36. Coast Guard requires 32." },
             { label: "Job Selection", desc: "The Army offers 150+ MOS codes, the widest job selection of any branch." },
           ].map((item) => (
             <div key={item.label} className="rounded-lg bg-navy p-4">

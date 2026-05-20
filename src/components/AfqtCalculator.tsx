@@ -42,7 +42,7 @@ const BRANCH_MINIMUMS = [
   { branch: "Navy", min: 35, gedNote: "50 + 15 college credits with GED" },
   { branch: "Air Force", min: 36, gedNote: "65 with GED" },
   { branch: "Space Force", min: 36, gedNote: "65 with GED" },
-  { branch: "Coast Guard", min: 40, gedNote: "50 + 15 college credits with GED" },
+  { branch: "Coast Guard", min: 32, gedNote: "50 + 15 college credits with GED" },
 ] as const;
 
 export default function AfqtCalculator() {

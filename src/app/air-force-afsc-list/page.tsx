@@ -104,7 +104,7 @@ export default function AirForceAFSCListPage() {
         </p>
 
         <p className="text-text-secondary">
-          Your AFQT score gets you through the door. A 31 with a diploma (50 with a GED) qualifies you to enlist. But the <strong>Air Force AFSC list</strong> you actually qualify for depends on four composite scores most recruits have never heard of: Mechanical (M), Administrative (A), General (G), and Electronics (E). The MAGE system.
+          Your AFQT score gets you through the door. A 31 with a diploma (65 with a GED) qualifies you to enlist. But the <strong>Air Force AFSC list</strong> you actually qualify for depends on four composite scores most recruits have never heard of: Mechanical (M), Administrative (A), General (G), and Electronics (E). The MAGE system.
         </p>
 
         <p className="text-text-secondary">

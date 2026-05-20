@@ -9,7 +9,7 @@ import VerifiedBlock from "@/components/VerifiedBlock";
 export const metadata: Metadata = {
   title: "Navy AFQT Calculator 2026: Check If You Meet the 35 Minimum",
   description:
-    "Free Navy and Coast Guard AFQT calculator. Enter AR, WK, PC, MK to see if you meet the Navy 35 minimum (50 + 15 college credits with GED). Coast Guard requires 40.",
+    "Free Navy and Coast Guard AFQT calculator. Enter AR, WK, PC, MK to see if you meet the Navy 35 minimum (50 + 15 college credits with GED). Coast Guard requires 32.",
   alternates: {
     canonical: "https://asvabhero.com/navy-afqt-calculator",
   },
@@ -28,7 +28,7 @@ export default function NavyAfqtCalculatorPage() {
           operatingSystem: "Web",
           offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
           description:
-            "Check if your AFQT meets the Navy minimum of 35 for diploma holders. Coast Guard requires 40. Instant percentile from 4 subtest scores.",
+            "Check if your AFQT meets the Navy minimum of 35 for diploma holders. Coast Guard requires 32. Instant percentile from 4 subtest scores.",
         }}
       />
       <JsonLd
@@ -49,7 +49,7 @@ export default function NavyAfqtCalculatorPage() {
               name: "What about the Coast Guard AFQT minimum?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Coast Guard requires 40 with a diploma, making it the highest floor of any branch. GED holders need 50 plus 15 college credits, the same structure the Navy uses.",
+                text: "Coast Guard requires 32 with a diploma. GED holders need 50 plus 15 college credits, the same structure the Navy uses.",
               },
             },
             {
@@ -121,7 +121,7 @@ export default function NavyAfqtCalculatorPage() {
       <section className="mt-8">
         <EmailCapture
           headline="Get the 30-day Navy ASVAB study plan"
-          subhead="Free 6-page PDF tuned for the Navy 35 (or 50 + 15 credits GED) floor and Coast Guard 40, plus a 5-email crash course on AFQT and line scores."
+          subhead="Free 6-page PDF tuned for the Navy 35 (or 50 + 15 credits GED) floor and Coast Guard 32, plus a 5-email crash course on AFQT and line scores."
           cta="Email me the plan"
           tag="afqt-calculator-navy"
         />
@@ -230,11 +230,11 @@ export default function NavyAfqtCalculatorPage() {
           {[
             {
               q: "What AFQT score do I need for the Navy?",
-              a: "35 with a diploma, 50 plus 15 semester hours of college credit with a GED. The Navy has a middle floor: higher than Army (31) and Marines (32), lower than Air Force (36) and Coast Guard (40).",
+              a: "35 with a diploma, 50 plus 15 semester hours of college credit with a GED. The Navy has a middle floor: higher than Army (31), Marines (32), and Coast Guard (32), but lower than Air Force and Space Force (36).",
             },
             {
               q: "What about the Coast Guard AFQT minimum?",
-              a: "Coast Guard requires 40 with a diploma, the highest floor of any branch. GED holders need 50 plus 15 college credits, matching the Navy structure. Coast Guard is the most selective branch per slot; expect recruiter preference for higher scores.",
+              a: "Coast Guard requires 32 with a diploma, lowered from 40 in November 2023. GED holders need 50 plus 15 college credits, matching the Navy structure. Coast Guard is the most selective branch per slot; expect recruiter preference for higher scores.",
             },
             {
               q: "What is the Navy DEP Enrichment Program?",

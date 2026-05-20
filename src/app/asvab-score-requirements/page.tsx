@@ -56,7 +56,7 @@ export default function ASVABScoreRequirementsPage() {
               name: "What ASVAB score do I need for the Air Force?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "The Air Force minimum is AFQT 36 with a diploma, 50 with a GED. Air Force jobs use the MAGE composite system (Mechanical, Administrative, General, Electronics). Many technical and cyber roles require General scores of 60 or higher. Space Force uses the same minimums and system.",
+                text: "The Air Force minimum is AFQT 36 with a diploma, 65 with a GED. Air Force jobs use the MAGE composite system (Mechanical, Administrative, General, Electronics). Many technical and cyber roles require General scores of 60 or higher. Space Force uses the same minimums and system.",
               },
             },
             {
@@ -64,7 +64,7 @@ export default function ASVABScoreRequirementsPage() {
               name: "Can I join the military with a GED?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Yes, but most branches require an AFQT of 50 instead of the diploma minimum (31-36). The Coast Guard requires 47. Earning 15 college credits at the 100-level or higher reclassifies you as Tier I, dropping your requirement to diploma-level minimums.",
+                text: "Yes, but most branches require an AFQT of 50 instead of the diploma minimum (31-36). The Coast Guard requires 50. Earning 15 college credits at the 100-level or higher reclassifies you as Tier I, dropping your requirement to diploma-level minimums.",
               },
             },
             {
@@ -144,9 +144,9 @@ export default function ASVABScoreRequirementsPage() {
 
         <p className="mt-4 text-text-secondary">
           Some prep sites list the Air Force minimum at 31. Others say 36. The
-          Coast Guard shows up as 32, 36, or 40 depending on who you ask. Here
-          are the verified 2026 AFQT minimums for all six branches, broken out
-          by education tier.
+          Coast Guard shows up as 32, 36, or 40 depending on who you ask &mdash;
+          the current diploma floor is 32. Here are the verified 2026 AFQT
+          minimums for all six branches, broken out by education tier.
         </p>
 
         <div className="my-4 overflow-x-auto">
@@ -191,21 +191,21 @@ export default function ASVABScoreRequirementsPage() {
                   Air Force
                 </td>
                 <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">50</td>
+                <td className="py-2 font-mono">65</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Space Force
                 </td>
                 <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">50</td>
+                <td className="py-2 font-mono">65</td>
               </tr>
               <tr>
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Coast Guard
                 </td>
-                <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">47</td>
+                <td className="py-2 pr-4 font-mono">32</td>
+                <td className="py-2 font-mono">50</td>
               </tr>
             </tbody>
           </table>
@@ -226,7 +226,7 @@ export default function ASVABScoreRequirementsPage() {
           a diploma but rarely accepts GED holders, capping them at 5% of annual
           enlistments. The Air Force and Space Force both require 36, the
           highest diploma-tier minimum among standard enlistment branches. The
-          Coast Guard matches that at 36 but requires 95% of its recruits to
+          Coast Guard sits lower at 32 but requires 95% of its recruits to
           hold diplomas, making it the most selective branch by education
           credential.
         </p>
@@ -469,30 +469,30 @@ export default function ASVABScoreRequirementsPage() {
                   Air Force
                 </td>
                 <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">50</td>
+                <td className="py-2 font-mono">65</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Space Force
                 </td>
                 <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">50</td>
+                <td className="py-2 font-mono">65</td>
               </tr>
               <tr>
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Coast Guard
                 </td>
-                <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">47</td>
+                <td className="py-2 pr-4 font-mono">32</td>
+                <td className="py-2 font-mono">50</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <p className="text-text-secondary">
-          The gap ranges from 11 to 19 points depending on the branch. For the
+          The gap ranges from 15 to 29 points depending on the branch. For the
           Army, a GED holder needs to score 19 points higher (50 vs. 31). For
-          the Coast Guard, the gap is 11 points (47 vs. 36). That is a
+          the Coast Guard, the gap is 18 points (50 vs. 32). That is a
           meaningful difference in study time and test performance.
         </p>
 
@@ -1090,7 +1090,7 @@ export default function ASVABScoreRequirementsPage() {
               What ASVAB score do I need for the Air Force?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              The Air Force minimum is AFQT 36 with a diploma, 50 with a GED.
+              The Air Force minimum is AFQT 36 with a diploma, 65 with a GED.
               Air Force jobs use the MAGE composite system (Mechanical,
               Administrative, General, Electronics). Many technical and cyber
               roles require General scores of 60 or higher. Space Force uses the
@@ -1104,7 +1104,7 @@ export default function ASVABScoreRequirementsPage() {
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
               Yes, but most branches require an AFQT of 50 instead of the
-              diploma minimum (31&ndash;36). The Coast Guard requires 47.
+              diploma minimum (31&ndash;36). The Coast Guard requires 50.
               Earning 15 college credits at the 100-level or higher reclassifies
               you as Tier I, dropping your requirement to diploma-level minimums.
             </p>

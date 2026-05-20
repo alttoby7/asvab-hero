@@ -248,21 +248,21 @@ export default function WhatJobsQualifyASVABScorePage() {
                   Air Force
                 </td>
                 <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">50</td>
+                <td className="py-2 font-mono">65</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Space Force
                 </td>
                 <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">50</td>
+                <td className="py-2 font-mono">65</td>
               </tr>
               <tr>
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Coast Guard
                 </td>
-                <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">47</td>
+                <td className="py-2 pr-4 font-mono">32</td>
+                <td className="py-2 font-mono">50</td>
               </tr>
             </tbody>
           </table>

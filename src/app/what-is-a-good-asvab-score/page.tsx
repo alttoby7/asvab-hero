@@ -64,7 +64,7 @@ export default function WhatIsAGoodASVABScorePage() {
               name: "What ASVAB score do I need for the Air Force?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "The official minimum is 31 with a high school diploma, but over 90% of approved Air Force enlistees score 50 or above, making 50 the practical minimum. GED holders need a 50. Without a diploma or GED, you need a 65 plus at least 15 college credits.",
+                text: "The official minimum is 31 with a high school diploma, but over 90% of approved Air Force enlistees score 50 or above, making 50 the practical minimum. GED holders need a 65. Without a diploma or GED, you need a 65 plus at least 15 college credits.",
               },
             },
             {
@@ -614,7 +614,7 @@ export default function WhatIsAGoodASVABScorePage() {
             },
             {
               q: "What ASVAB score do I need for the Air Force?",
-              a: "The official minimum is 31 with a high school diploma, but over 90% of approved Air Force enlistees score 50 or above, making 50 the practical minimum. GED holders need a 50. Without a diploma or GED, you need a 65 plus at least 15 college credits.",
+              a: "The official minimum is 31 with a high school diploma, but over 90% of approved Air Force enlistees score 50 or above, making 50 the practical minimum. GED holders need a 65. Without a diploma or GED, you need a 65 plus at least 15 college credits.",
             },
             {
               q: "What is the highest ASVAB score?",

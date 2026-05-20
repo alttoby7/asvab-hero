@@ -41,7 +41,7 @@ export default function AirForceAfqtCalculatorPage() {
               name: "What AFQT score do I need for the Air Force?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "36 with a high school diploma, 65 with a GED. The Space Force uses the same minimums. These are the highest diploma floors of any branch after the Coast Guard, and the Air Force rarely accepts waivers below 36.",
+                text: "36 with a high school diploma, 65 with a GED. The Space Force uses the same minimums. These are the highest diploma floors of any branch, and the Air Force rarely accepts waivers below 36.",
               },
             },
             {
@@ -98,8 +98,8 @@ export default function AirForceAfqtCalculatorPage() {
         <p>
           The <strong>Air Force AFQT minimum is 36</strong> for diploma
           holders and <strong>65 for GED holders</strong>. Space Force uses
-          the same standards. These are tied with Space Force as the second
-          highest branch floors, only Coast Guard sits higher at 40. The
+          the same standards. At 36, the Air Force and Space Force share the
+          highest diploma floor of any branch. The
           calculator below runs your 4 AFQT subtests (AR, WK, PC, MK) through
           the official PAY97 Table 2.5 lookup so you know exactly where you
           stand before MEPS.

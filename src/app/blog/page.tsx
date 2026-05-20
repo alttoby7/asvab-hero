@@ -73,7 +73,7 @@ const resources = [
 const quickFacts = [
   { label: "AFQT Score Range", value: "1–99", note: "Percentile vs. other test-takers" },
   { label: "Army Minimum AFQT", value: "31", note: "Diploma required" },
-  { label: "Coast Guard Minimum", value: "40", note: "Highest of all branches" },
+  { label: "Coast Guard Minimum", value: "32", note: "Lowered from 40 in Nov 2023" },
   { label: "9 Subtests", value: "~3 hrs", note: "Total testing time" },
   { label: "AFQT Subtests", value: "4 of 9", note: "AR, WK, PC, MK" },
   { label: "Jobs Unlocked", value: "500+", note: "Across all 6 branches" },

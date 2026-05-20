@@ -598,7 +598,7 @@ export default function ASVABStudyGuidePage() {
                   { branch: "Navy", min: 35 },
                   { branch: "Air Force", min: 36 },
                   { branch: "Space Force", min: 36 },
-                  { branch: "Coast Guard", min: 40 },
+                  { branch: "Coast Guard", min: 32 },
                 ].map((row) => (
                   <tr
                     key={row.branch}

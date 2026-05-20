@@ -170,7 +170,7 @@ export default function AirForceCalculatorPage() {
           {[
             {
               q: "What's the minimum ASVAB score to join the Air Force?",
-              a: "31 AFQT with a high school diploma, 50 with a GED. But most Air Force AFSCs require significantly higher MAGE scores, so hitting just the AFQT minimum typically leaves you with few job options.",
+              a: "31 AFQT with a high school diploma, 65 with a GED. But most Air Force AFSCs require significantly higher MAGE scores, so hitting just the AFQT minimum typically leaves you with few job options.",
             },
             {
               q: "What's the difference between AFQT and MAGE scores?",
