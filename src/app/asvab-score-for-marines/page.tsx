@@ -63,7 +63,7 @@ export default function ASVABScoreForMarinesPage() {
               name: "What is a GT score on the ASVAB?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "GT stands for General Technical. It is the most commonly required line score for Marine Corps MOSs. The formula is GT = VE + AR, where VE is your combined Word Knowledge and Paragraph Comprehension score. GT is not capped at 99 like AFQT. Scores above 150 are achievable with strong verbal and arithmetic performance.",
+                text: "GT stands for General Technical. It is the most commonly required line score for Marine Corps MOSs. The formula is GT = VE + AR, where VE is your combined Word Knowledge and Paragraph Comprehension score. GT is not capped at 99 like the AFQT. The highest documented GT score is 144, confirmed by Army Personnel Testing as the maximum possible on the AFCT.",
               },
             },
             {
@@ -915,7 +915,7 @@ export default function ASVABScoreForMarinesPage() {
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">What is a GT score on the ASVAB?</h3>
             <p className="mt-1 text-sm text-text-secondary">
-              GT stands for General Technical. It is the most commonly required line score for Marine Corps MOSs. The formula is GT = VE + AR, where VE is your combined Word Knowledge and Paragraph Comprehension score. GT is not capped at 99 like AFQT. Scores above 150 are achievable with strong verbal and arithmetic performance.
+              GT stands for General Technical. It is the most commonly required line score for Marine Corps MOSs. The formula is GT = VE + AR, where VE is your combined Word Knowledge and Paragraph Comprehension score. GT is not capped at 99 like the AFQT. The highest documented GT score is 144, confirmed by Army Personnel Testing as the maximum possible on the AFCT.
             </p>
           </div>
 

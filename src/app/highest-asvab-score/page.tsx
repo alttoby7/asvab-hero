@@ -477,7 +477,14 @@ export default function HighestASVABScorePage() {
           Here is a concrete example. Army General Technical (GT) equals VE plus
           AR. If your VE is 65 and your AR is 68, your GT score is 133. The
           highest-demand Army jobs, like Cryptologic Linguist (35P), require a
-          minimum GT of 110. Top scorers push GT above 140.
+          minimum GT of 110. Top scorers push GT above 140, with the{" "}
+          <Link
+            href="/gt-score-max"
+            className="text-accent hover:text-accent-hover"
+          >
+            highest possible GT score
+          </Link>{" "}
+          documented at 144.
         </p>
 
         <p className="text-text-secondary">

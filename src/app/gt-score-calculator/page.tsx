@@ -237,7 +237,14 @@ export default function GTScoreCalculatorPage() {
           calculator uses the raw composite. If your result sits clearly above
           or below the threshold, the raw number is a reliable guide. If
           you&apos;re within 5-10 points of a critical line, confirm the scaled
-          number at MEPS.
+          number at MEPS. If you prefer to follow the math by hand, our{" "}
+          <Link
+            href="/calculate-gt-score"
+            className="text-accent hover:text-accent-hover"
+          >
+            how to calculate your GT score
+          </Link>{" "}
+          companion walks through each step.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
@@ -625,7 +632,15 @@ export default function GTScoreCalculatorPage() {
           The Army&apos;s documented outcomes show that soldiers who start BSEP
           with GT scores below 90 have regularly finished above 110. The program
           focuses on the exact two things the GT tests: math and verbal
-          reasoning.
+          reasoning. There is a limit to how far the number can climb, though,
+          and our guide to the{" "}
+          <Link
+            href="/gt-score-max"
+            className="text-accent hover:text-accent-hover"
+          >
+            highest possible GT score
+          </Link>{" "}
+          covers the documented 144 ceiling.
         </p>
 
         <p className="text-text-secondary">

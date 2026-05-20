@@ -277,6 +277,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://asvabhero.com/gt-score</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://asvabhero.com/calculate-gt-score</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://asvabhero.com/gt-score-max</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://asvabhero.com/pricing</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>

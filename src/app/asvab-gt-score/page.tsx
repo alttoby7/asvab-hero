@@ -49,7 +49,7 @@ export default function ASVABGTScorePage() {
               name: "What is the highest possible GT score?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "No official ceiling. The practical maximum is approximately 145-147 for Army and 151 for Marines. Scores above 130 place you in roughly the top 7%.",
+                text: "The highest documented GT score is 144. Army Personnel Testing has confirmed 144 is the maximum possible on the AFCT, and the first known perfect score was earned in 2023. GT is not capped at 99 like the AFQT, and scores above 130 place you in roughly the top 7%.",
               },
             },
             {
@@ -201,7 +201,7 @@ export default function ASVABGTScorePage() {
           GT stands for General Technical. It is a composite line score, not the
           overall ASVAB score. Your AFQT is a percentile from 1 to 99 that
           determines whether you can enlist. Your GT is a standard score
-          (typically ranging from about 40 to 145) that determines what you can
+          (typically ranging from about 40 to 144) that determines what you can
           do after enlistment.
         </p>
         <p className="text-text-secondary">
@@ -264,7 +264,7 @@ export default function ASVABGTScorePage() {
                   Scale
                 </td>
                 <td className="py-2 pr-4 font-mono">1-99</td>
-                <td className="py-2 font-mono">~40-145</td>
+                <td className="py-2 font-mono">~40-144</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
@@ -361,6 +361,18 @@ export default function ASVABGTScorePage() {
             programs.
           </li>
         </ul>
+
+        <p className="text-text-secondary">
+          If you want to run your own numbers step by step, our{" "}
+          <Link
+            href="/calculate-gt-score"
+            className="text-accent hover:text-accent-hover"
+          >
+            guide to calculating your GT score
+          </Link>{" "}
+          walks through the VE + AR math and links straight to the interactive
+          tool.
+        </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
           <p className="text-sm font-semibold text-emerald-400">Tip</p>
@@ -495,7 +507,7 @@ export default function ASVABGTScorePage() {
                 <td className="py-2 pr-4 font-mono">GT</td>
                 <td className="py-2 pr-4 font-mono">VE + AR</td>
                 <td className="py-2 pr-4">Standard score</td>
-                <td className="py-2 pr-4 font-mono">~40-147</td>
+                <td className="py-2 pr-4 font-mono">~40-144</td>
                 <td className="py-2">The baseline reference</td>
               </tr>
               <tr className="border-b border-navy-border/50">
@@ -505,7 +517,7 @@ export default function ASVABGTScorePage() {
                 <td className="py-2 pr-4 font-mono">GT</td>
                 <td className="py-2 pr-4 font-mono">VE + AR</td>
                 <td className="py-2 pr-4">Standard score</td>
-                <td className="py-2 pr-4 font-mono">~40-151</td>
+                <td className="py-2 pr-4 font-mono">~40-144</td>
                 <td className="py-2">Identical to Army formula</td>
               </tr>
               <tr className="border-b border-navy-border/50">
@@ -760,9 +772,18 @@ export default function ASVABGTScorePage() {
         </div>
 
         <p className="text-text-secondary">
-          The practical maximum is roughly 145-147 for Army and 151 for Marines.
-          Scores above 130 are rare, and anything above 120 puts you ahead of
-          roughly 84% of test-takers.
+          The highest documented GT score is 144. Army Personnel Testing has
+          confirmed 144 is the maximum possible on the AFCT. Scores above 130 are
+          rare, and anything above 120 puts you ahead of roughly 84% of
+          test-takers. For the full story on that ceiling, see our breakdown of
+          the{" "}
+          <Link
+            href="/gt-score-max"
+            className="text-accent hover:text-accent-hover"
+          >
+            highest possible GT score
+          </Link>
+          .
         </p>
         <p className="text-text-secondary">
           An ASVAB GT score of 110 is the single most important threshold in
@@ -1672,9 +1693,17 @@ export default function ASVABGTScorePage() {
               What is the highest possible GT score?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              No official ceiling. The practical maximum is approximately 145-147
-              for Army and 151 for Marines. Scores above 130 place you in
-              roughly the top 7%.
+              The highest documented GT score is 144. Army Personnel Testing has
+              confirmed 144 is the maximum possible on the AFCT, and the first
+              known perfect score was earned in 2023. GT is not capped at 99 like
+              the AFQT, and scores above 130 place you in roughly the top 7%. Our{" "}
+              <Link
+                href="/gt-score-max"
+                className="text-accent hover:text-accent-hover"
+              >
+                highest possible GT score
+              </Link>{" "}
+              guide covers how that ceiling works in detail.
             </p>
           </div>
           <div>

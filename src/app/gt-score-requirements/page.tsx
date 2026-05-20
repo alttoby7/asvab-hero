@@ -156,7 +156,15 @@ export default function GTScoreRequirementsPage() {
           GT stands for <strong>General Technical</strong>. It is a composite
           line score, not a percentile. While your AFQT compares you to a
           national sample, your GT is a standard score that the military uses to
-          match you to jobs and programs.
+          match you to jobs and programs. If this is the first time you have run
+          into the term, start with our plain-language explainer of{" "}
+          <Link
+            href="/gt-score"
+            className="text-accent hover:text-accent-hover"
+          >
+            what a GT score is
+          </Link>
+          .
         </p>
 
         <p className="text-text-secondary">The formula is short:</p>
@@ -799,7 +807,14 @@ export default function GTScoreRequirementsPage() {
               >
                 GT score calculator
               </Link>
-              , which handles the VE conversion for you.
+              . If you would rather work the math by hand, our{" "}
+              <Link
+                href="/calculate-gt-score"
+                className="text-accent hover:text-accent-hover"
+              >
+                step-by-step guide to calculating a GT score
+              </Link>{" "}
+              shows the VE conversion in full.
             </p>
           </div>
 
