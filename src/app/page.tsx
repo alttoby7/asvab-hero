@@ -132,6 +132,15 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+          <p className="mt-8 text-center text-sm text-text-secondary">
+            Not sure what you&apos;re aiming for?{" "}
+            <Link
+              href="/asvab-score-requirements"
+              className="font-semibold text-accent no-underline transition-colors hover:text-accent-hover"
+            >
+              See the ASVAB score requirements for every branch &rarr;
+            </Link>
+          </p>
         </div>
       </section>
 

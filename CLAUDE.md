@@ -22,10 +22,10 @@
 - **Plan:** `~/.claude/plans/adaptive-churning-shell.md` — full design (schema, variants, adaptive logic, v1→v3 phasing).
 - **Memory:** `~/.claude/projects/-home-trisha-google-drive-0-AI/memory/asvab-platform-v1.md`
 - **Flashcards (LIVE 2026-05-12, commit `e9a5dbc`):** 6 decks / 123 cards. SM-2 client-side scheduler at `src/lib/flashcards/scheduler.ts`. Routes `/flashcards`, `/flashcards/[deckSlug]`. Dashboard widget on `/account`. Free deck = `wk.synonyms`. Pro content gated by migration `0010_flashcards_rls_pro_gating.sql` (RLS, not just client-side helper). Race lock in `ReviewEngine.tsx` uses `useRef`. Add decks: drop JSON in `supabase/seed/flashcard-batches/`, run `scripts/build-flashcards-seed.mjs`, re-seed (destructive — wipes `flashcard_reviews`).
-- **Pending v2/v3:** daily 10-q challenge Edge Function + Listmonk reminder, AFQT Sprint + Weakness Loop variants, Full ASVAB Sim + Retake Readiness (gated on bank growth ≥1000 items). Stripe live-mode flip required before real revenue. ~30 study guide pages body length >400 words (audit flagged, not blocking).
+- **Pending v2/v3:** daily 10-q challenge Edge Function + Listmonk reminder, AFQT Sprint + Weakness Loop variants, Full ASVAB Sim + Retake Readiness (gated on bank growth ≥1000 items). ~30 study guide pages body length >400 words (audit flagged, not blocking).
 
 ## Monetization Layer (2026-04-27 → 2026-04-28)
-- **Stripe test mode end-to-end.** Schema `0002_billing.sql` adds billing columns + `has_active_pro()` SQL fn. Product `prod_UQ8lIeJ18IMwZm`. Plans: $9.99/mo or $49.99/yr.
+- **Stripe LIVE in production** (verified 2026-05-20 via central `.env`: `sk_live_`/`pk_live_` keys, live product `prod_UQGaoePk7IZ4Kx`, live prices `price_1TRQ38…`, live webhook `we_1TRQ39DjRScowBLlbLoSKKXX`). The original launch was test-mode (old test product `prod_UQ8lIeJ18IMwZm`); that is historical. Schema `0002_billing.sql` adds billing columns + `has_active_pro()` SQL fn. Plans: $9.99/mo or $49.99/yr.
 - **3 Stripe Edge Functions deployed:** `stripe-checkout`, `stripe-portal`, `stripe-webhook`. Webhook secret: `ASVABHERO_STRIPE_WEBHOOK_SECRET` in central `.env`.
 - **Hard paywall:** free users hit wall after first diagnostic; Pro unlocks unlimited diagnostics + history.
 - **Account dashboard redesign:** `/account` is now a SaaS dashboard (greeting, stats, recent attempts, weak topics, plan card). Settings → `/account/settings`. New: `/account/billing` (Customer Portal link), `/account/history` (Pro-only).
@@ -256,7 +256,7 @@ Full memo: `docs/marketing-strategy-2026-04-28.md`. Quick state:
 
 - **Skill updated:** `asvab-post-writer` now models two products — SEO articles AND subtest topic study guides (markdown into `content/study-guides/{subtest}/{topic}.md`, no page.tsx). Frontmatter shape, body structure, and Pro-funnel role spec'd in the skill.
 - **Study guides reframed:** defensive product completeness for the Pro funnel, not a growth channel. GSC has zero striking-distance signal for topic content. Don't invest growth budget on the remaining 17 non-AFQT pages.
-- **Decision lean: Failed-ASVAB Recovery Funnel.** Acute pain segment (30-day retake clock, demonstrated buying intent). Open architecture choice: standalone $49 30-day track vs. Pro variant with retake guarantee. Pre-reqs: flip Stripe to live mode, baseline score guarantee, decide offer architecture.
+- **Decision lean: Failed-ASVAB Recovery Funnel.** Acute pain segment (30-day retake clock, demonstrated buying intent). Open architecture choice: standalone $49 30-day track vs. Pro variant with retake guarantee. Pre-reqs: baseline score guarantee, decide offer architecture. (Stripe live-mode flip is DONE — see Monetization Layer.)
 - **Score Insurance considered + rejected** (adverse selection, verification, regulatory exposure). Standard money-back guarantee with engagement gates is the de-risked replacement.
 - **Top non-funnel moves to sequence after:** recruiter B2B dashboard, "Score Your AI" stunt, TikTok score-transformation reels, Reddit/Discord plan execution.
 

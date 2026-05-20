@@ -2,8 +2,10 @@
 
 import { useState, useMemo, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
+import Link from "next/link";
 import type { SubtestScores, AsvabSubtest, MilitaryJob, Branch, CompositeScores } from "@/types";
 import { ALL_SUBTESTS, BRANCH_NAMES } from "@/types";
+import { useEntitlement } from "@/hooks/useEntitlement";
 import {
   calculateAFQT,
   getAFQTCategory,
@@ -50,6 +52,7 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
   const [scores, setScores] = useState<SubtestScores>(DEFAULT_SCORES);
   const [compositeTab, setCompositeTab] = useState<Branch>(branchFilter ?? "army");
   const searchParams = useSearchParams();
+  const { entitlement } = useEntitlement();
 
   const filteredJobs = useMemo(
     () => (branchFilter ? allJobs.filter((j) => j.branch === branchFilter) : allJobs),
@@ -153,6 +156,48 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
           variant="card"
           withScoreSignal
         />
+      )}
+
+      {/* Pro upsell at the result moment — calculator shows the gap, Pro closes it.
+         Shown to everyone except confirmed Pro users (most calculator traffic is
+         anonymous search visitors). Mirrors the TestResults Phase E upsell. */}
+      {afqt > 0 && !entitlement.isPro && (
+        <section className="rounded-2xl border-t-2 border-accent bg-navy-light p-6 sm:p-7">
+          <p className="font-mono text-xs uppercase tracking-[0.2em] text-text-tertiary">
+            <span className="text-accent">●</span> Ready to raise this score?
+          </p>
+          <h3 className="mt-3 font-display text-xl font-bold text-text-primary">
+            The calculator shows the gap. Pro closes it.
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+            Unlimited practice diagnostics, weak-topic drills, and score tracking
+            so you can watch your AFQT climb from {afqt} toward{" "}
+            {Math.min(afqt + 10, 99)}. $9.99/mo or $49.99/yr — cancel anytime.
+          </p>
+          <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <Link
+              href="/upgrade?from=calculator-result"
+              onClick={() =>
+                trackEvent("calculator_pro_cta_click", {
+                  afqt,
+                  branch: branchFilter ?? "all",
+                })
+              }
+              className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-white no-underline transition-colors hover:bg-accent-hover"
+            >
+              Start raising your score
+              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
+            <Link
+              href="/pricing"
+              className="inline-flex items-center justify-center rounded-xl border border-navy-border px-6 py-3 text-sm font-semibold text-text-secondary no-underline transition-colors hover:border-accent/40 hover:text-text-primary"
+            >
+              Compare plans
+            </Link>
+          </div>
+        </section>
       )}
 
       {/* Score Inputs */}
