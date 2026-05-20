@@ -1419,6 +1419,85 @@ export default function NavyASVABScoreRequirementsPage() {
             Try the Free Calculator
           </Link>
         </div>
+
+        {/* Related links */}
+        <section className="my-8 not-prose rounded-xl border border-accent/30 bg-navy-light p-6">
+          <h2 className="font-display text-xl font-bold text-text-primary">
+            Related ASVAB Score Guides
+          </h2>
+          <ul className="mt-4 space-y-3 text-text-secondary">
+            <li>
+              Compare every service on the{" "}
+              <Link
+                href="/asvab-score-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                ASVAB score requirements by branch
+              </Link>{" "}
+              hub.
+            </li>
+            <li>
+              Go deeper on Navy scoring in the{" "}
+              <Link
+                href="/navy-asvab-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                complete Navy ASVAB score guide
+              </Link>{" "}
+              and browse jobs in the{" "}
+              <Link
+                href="/navy-ratings-list"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Navy ratings list
+              </Link>
+              .
+            </li>
+            <li>
+              Check eligibility with the{" "}
+              <Link
+                href="/navy-afqt-calculator"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Navy AFQT calculator
+              </Link>{" "}
+              and see how scores map to{" "}
+              <Link
+                href="/navy-ranks"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Navy ranks
+              </Link>
+              .
+            </li>
+            <li>
+              Other branches:{" "}
+              <Link
+                href="/coast-guard-asvab-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Coast Guard
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="/army-asvab-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Army
+              </Link>{" "}
+              ASVAB scores.
+            </li>
+            <li>
+              <Link
+                href="/practice-test"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Take a free ASVAB practice test
+              </Link>{" "}
+              before you sit for the real thing.
+            </li>
+          </ul>
+        </section>
       </article>
     </div>
   );

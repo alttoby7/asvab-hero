@@ -57,6 +57,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/asvab-score-requirements"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Score Requirements
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/asvab-study-guide"
                   className="text-sm text-text-tertiary hover:text-text-primary no-underline"
                 >

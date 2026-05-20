@@ -1020,6 +1020,68 @@ export default function CoastGuardASVABScorePage() {
             Try the Free Calculator
           </Link>
         </div>
+
+        {/* Related links */}
+        <section className="my-8 not-prose rounded-xl border border-accent/30 bg-navy-light p-6">
+          <h2 className="font-display text-xl font-bold text-text-primary">
+            Related ASVAB Score Guides
+          </h2>
+          <ul className="mt-4 space-y-3 text-text-secondary">
+            <li>
+              Compare every service on the{" "}
+              <Link
+                href="/asvab-score-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                ASVAB score requirements by branch
+              </Link>{" "}
+              hub.
+            </li>
+            <li>
+              Work out rating composites on the{" "}
+              <Link
+                href="/asvab-line-score-calculator"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                ASVAB line score calculator
+              </Link>{" "}
+              and check eligibility with the{" "}
+              <Link
+                href="/afqt-calculator"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                AFQT calculator
+              </Link>
+              .
+            </li>
+            <li>
+              Other branches:{" "}
+              <Link
+                href="/navy-asvab-score-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Navy
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="/army-asvab-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Army
+              </Link>{" "}
+              ASVAB scores.
+            </li>
+            <li>
+              <Link
+                href="/practice-test"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Take a free ASVAB practice test
+              </Link>{" "}
+              before you talk to a recruiter.
+            </li>
+          </ul>
+        </section>
       </article>
     </div>
   );

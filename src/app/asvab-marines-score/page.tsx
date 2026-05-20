@@ -1373,6 +1373,85 @@ export default function ASVABMarinesScorePage() {
             Try the Free Calculator
           </Link>
         </div>
+
+        {/* Related links */}
+        <section className="my-8 not-prose rounded-xl border border-accent/30 bg-navy-light p-6">
+          <h2 className="font-display text-xl font-bold text-text-primary">
+            Related ASVAB Score Guides
+          </h2>
+          <ul className="mt-4 space-y-3 text-text-secondary">
+            <li>
+              Compare every service on the{" "}
+              <Link
+                href="/asvab-score-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                ASVAB score requirements by branch
+              </Link>{" "}
+              hub.
+            </li>
+            <li>
+              Go deeper in the{" "}
+              <Link
+                href="/asvab-score-for-marines"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                complete ASVAB score guide for Marines
+              </Link>{" "}
+              and browse jobs in the{" "}
+              <Link
+                href="/usmc-mos-list"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                USMC MOS list
+              </Link>
+              .
+            </li>
+            <li>
+              Check your line scores on the{" "}
+              <Link
+                href="/marines-afqt-calculator"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Marines AFQT calculator
+              </Link>{" "}
+              and see how scores map to{" "}
+              <Link
+                href="/marine-corps-ranks"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Marine Corps ranks
+              </Link>
+              .
+            </li>
+            <li>
+              Other branches:{" "}
+              <Link
+                href="/navy-asvab-score-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Navy
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="/air-force-asvab-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Air Force
+              </Link>{" "}
+              ASVAB scores.
+            </li>
+            <li>
+              <Link
+                href="/practice-test"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Take a free ASVAB practice test
+              </Link>{" "}
+              to see if you clear the GT and line scores you need.
+            </li>
+          </ul>
+        </section>
       </article>
     </div>
   );

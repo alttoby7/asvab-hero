@@ -1182,6 +1182,87 @@ export default function ASVABScoreRequirementsPage() {
             Try the Free Calculator
           </Link>
         </div>
+
+        {/* Related links */}
+        <section className="my-8 not-prose rounded-xl border border-accent/30 bg-navy-light p-6">
+          <h2 className="font-display text-xl font-bold text-text-primary">
+            ASVAB Score Requirements by Branch
+          </h2>
+          <ul className="mt-4 space-y-3 text-text-secondary">
+            <li>
+              <Link
+                href="/army-asvab-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Army ASVAB scores
+              </Link>{" "}
+              &mdash; line scores, MOS minimums, and the GT score that gates
+              warrant officer and Special Forces.
+            </li>
+            <li>
+              <Link
+                href="/navy-asvab-score-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Navy ASVAB scores
+              </Link>{" "}
+              &mdash; AFQT tiers, rating composites, and the Nuclear Field and
+              SEAL pipelines.
+            </li>
+            <li>
+              <Link
+                href="/air-force-asvab-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Air Force ASVAB scores
+              </Link>{" "}
+              &mdash; the MAGE composites and which AFSC each one unlocks.
+            </li>
+            <li>
+              <Link
+                href="/asvab-marines-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Marines ASVAB scores
+              </Link>{" "}
+              &mdash; the GT formula and line score minimums for every MOS field.
+            </li>
+            <li>
+              <Link
+                href="/coast-guard-asvab-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Coast Guard ASVAB scores
+              </Link>{" "}
+              &mdash; rating-specific requirements and the most selective
+              enlistment standards of any branch.
+            </li>
+            <li>
+              New to scoring? Start with the{" "}
+              <Link
+                href="/afqt-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                AFQT score guide
+              </Link>{" "}
+              and the{" "}
+              <Link
+                href="/asvab-score-ranges"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                score ranges breakdown
+              </Link>
+              , then{" "}
+              <Link
+                href="/practice-test"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                take a free practice test
+              </Link>{" "}
+              to see where you stand.
+            </li>
+          </ul>
+        </section>
       </article>
     </div>
   );

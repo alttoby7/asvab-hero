@@ -854,6 +854,85 @@ export default function ArmyASVABScorePage() {
             Try the Free Calculator
           </Link>
         </div>
+
+        {/* Related links */}
+        <section className="my-8 not-prose rounded-xl border border-accent/30 bg-navy-light p-6">
+          <h2 className="font-display text-xl font-bold text-text-primary">
+            Related ASVAB Score Guides
+          </h2>
+          <ul className="mt-4 space-y-3 text-text-secondary">
+            <li>
+              Compare every service on the{" "}
+              <Link
+                href="/asvab-score-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                ASVAB score requirements by branch
+              </Link>{" "}
+              hub.
+            </li>
+            <li>
+              Run your numbers on the{" "}
+              <Link
+                href="/army-asvab-calculator"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Army ASVAB calculator
+              </Link>{" "}
+              and find qualifying jobs in the{" "}
+              <Link
+                href="/army-mos-list"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                full Army MOS list
+              </Link>
+              .
+            </li>
+            <li>
+              Targeting warrant officer, Cyber, or Special Forces? See the{" "}
+              <Link
+                href="/asvab-gt-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                GT score breakdown
+              </Link>{" "}
+              and how scores map to{" "}
+              <Link
+                href="/army-ranks"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Army ranks
+              </Link>
+              .
+            </li>
+            <li>
+              Other branches:{" "}
+              <Link
+                href="/navy-asvab-score-requirements"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Navy
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="/air-force-asvab-score"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Air Force
+              </Link>{" "}
+              ASVAB scores.
+            </li>
+            <li>
+              <Link
+                href="/practice-test"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                Take a free ASVAB practice test
+              </Link>{" "}
+              to see if you clear the line scores you need.
+            </li>
+          </ul>
+        </section>
       </article>
     </div>
   );
