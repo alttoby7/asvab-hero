@@ -5,9 +5,9 @@ import JsonLd from "@/components/JsonLd";
 import BrandHero from "@/components/BrandHero";
 
 export const metadata: Metadata = {
-  title: "ASVAB Mechanical Comprehension: 9 Tips for Levers, Gears, and Pulleys (2026)",
+  title: "ASVAB Mechanical Comprehension: 9 Tips to Score Higher",
   description:
-    "Master ASVAB Mechanical Comprehension with 9 proven tips: lever classes, gear ratios, pulley counting, Pascal&apos;s Law, and diagram strategies.",
+    "Boost your ASVAB Mechanical Comprehension score with 9 proven tips: lever classes, gear ratios, pulley counting, Pascal&apos;s Law, and how to read diagrams fast.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-mechanical-comprehension-tips",
   },

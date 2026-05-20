@@ -5,9 +5,9 @@ import JsonLd from "@/components/JsonLd";
 import BrandHero from "@/components/BrandHero";
 
 export const metadata: Metadata = {
-  title: "ASVAB Electronics Information: 10 Tips to Beat 30 Seconds/Question (2026)",
+  title: "ASVAB Electronics Information: 10 Tips to Score Higher",
   description:
-    "Master the ASVAB EI subtest with 10 proven tips: Ohm&apos;s Law triangles, series vs. parallel circuits, component functions, and pacing for 30 sec/question.",
+    "Boost your ASVAB Electronics Information score with 10 proven tips: Ohm&apos;s Law triangles, series vs. parallel circuits, component functions, and how to pace 30 seconds per question.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-electronics-information-tips",
   },

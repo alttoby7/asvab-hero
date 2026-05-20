@@ -30,9 +30,9 @@ const allJobs: MilitaryJob[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "ASVAB Line Score Calculator: All 6 Branches Explained | ASVAB Hero",
+  title: "Free ASVAB Line Score Calculator: All 6 Branches (2026)",
   description:
-    "Learn how ASVAB line scores are calculated for Army, Marines, Air Force, Navy, and Coast Guard. Use our free calculator to see every job you qualify for.",
+    "Calculate your ASVAB line scores free for Army, Marines, Air Force, Navy, Space Force and Coast Guard. Enter your subtests and instantly see every military job you qualify for.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-line-score-calculator",
   },
