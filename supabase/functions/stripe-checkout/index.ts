@@ -30,7 +30,7 @@ Deno.serve(async (req) => {
   try {
     const { userId, supabaseAdmin } = await requireUser(req);
 
-    let body: { tier?: string; returnPath?: string };
+    let body: { tier?: string; returnPath?: string; paywall_context_id?: string };
     try {
       body = await req.json();
     } catch {
@@ -78,6 +78,18 @@ Deno.serve(async (req) => {
 
     const returnPath = body.returnPath ?? "/account/billing";
 
+    // Paywall "why-tracking": carry the client-minted paywall_context_id through
+    // the Stripe round-trip. Validated as a UUID so a malformed value can't
+    // pollute the cancel_url. Purely additive — affects nothing else.
+    const pcid =
+      typeof body.paywall_context_id === "string" &&
+      /^[0-9a-f-]{36}$/i.test(body.paywall_context_id)
+        ? body.paywall_context_id
+        : null;
+    const cancelUrl = pcid
+      ? `${SITE_URL}/upgrade?status=cancelled&pcid=${pcid}`
+      : `${SITE_URL}/upgrade?status=cancelled`;
+
     // Build checkout params; conditionally add trial only for first-time MONTHLY subs.
     const checkoutParams: Record<string, unknown> = {
       mode: "subscription",
@@ -85,7 +97,7 @@ Deno.serve(async (req) => {
       "line_items[0][price]": priceId,
       "line_items[0][quantity]": 1,
       success_url: `${SITE_URL}/onboarding?welcome=1`,
-      cancel_url: `${SITE_URL}/upgrade?status=cancelled`,
+      cancel_url: cancelUrl,
       allow_promotion_codes: "true",
       "subscription_data[metadata][user_id]": userId,
       "metadata[user_id]": userId,
@@ -98,6 +110,13 @@ Deno.serve(async (req) => {
     if (profile.signup_source) {
       checkoutParams["metadata[signup_source]"] = profile.signup_source;
       checkoutParams["subscription_data[metadata][signup_source]"] = profile.signup_source;
+    }
+
+    // Paywall pcid into metadata (mirrors the signup_source propagation), so
+    // the journey is recoverable from Stripe even if URL/sessionStorage is lost.
+    if (pcid) {
+      checkoutParams["metadata[paywall_context_id]"] = pcid;
+      checkoutParams["subscription_data[metadata][paywall_context_id]"] = pcid;
     }
 
     const isFirstTimeSubscriber = !profile.stripe_subscription_id;
