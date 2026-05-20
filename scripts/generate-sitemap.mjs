@@ -69,6 +69,12 @@ const pages = [
   { path: "/afct", priority: "0.8", changefreq: "monthly" },
   { path: "/afct-practice-test", priority: "0.9", changefreq: "monthly" },
   { path: "/bsep", priority: "0.8", changefreq: "monthly" },
+  { path: "/asvab-score-requirements", priority: "0.9", changefreq: "monthly" },
+  { path: "/army-asvab-score", priority: "0.85", changefreq: "monthly" },
+  { path: "/navy-asvab-score-requirements", priority: "0.85", changefreq: "monthly" },
+  { path: "/air-force-asvab-score", priority: "0.85", changefreq: "monthly" },
+  { path: "/asvab-marines-score", priority: "0.85", changefreq: "monthly" },
+  { path: "/coast-guard-asvab-score", priority: "0.85", changefreq: "monthly" },
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
