@@ -640,3 +640,76 @@ Difficulty: { '1': 78, '2': 140, '3': 203, '4': 203, '5': 145 }
 
 Status: **bank is ready for production reseed.** No remaining quality issues identified by the heuristic flagger or by two rounds of Codex CLI verification.
 
+
+
+# Bank Expansion Session — 2026-05-12 to 2026-05-13
+
+## What shipped to production
+
+**Schema migration (Phase 0):** `supabase/migrations/0014_question_status.sql` — added `status` column with enum `draft | verified | trusted` + check constraint + index. Applied to prod via Supabase Management API. Existing 762 active items → `trusted`; 7 previously inactive items → `draft`. Build script (`scripts/build-questions-seed.mjs`) updated to emit `status` derived from JSON; drafts get `active=false` so the existing sampler filter still gates them out of paid serving.
+
+**Phase 1 — AR + MK low-band + mid-band rescue (169 items):**
+File: `src/data/practice-tests/expansion-batch-8.json`. All items `status: draft`.
+- AR-AF-NEW-1..17 (arithmetic-fundamentals)
+- AR-PC-NEW-1..14 (percent)
+- AR-RD-NEW-1..16 (rate-distance-time)
+- AR-RP-NEW-1..14 (ratio-proportion)
+- AR-WP-NEW-1..16 (word-problems)
+- MK-AL-NEW-1..16 (algebra-linear)
+- MK-EP-NEW-1..20 (exponents-polynomials)
+- MK-FR-NEW-1..18 (fractions-decimals)
+- MK-GE-NEW-1..16 (geometry)
+- MK-NP-NEW-1..22 (number-properties)
+
+Codex audit caught 23 issues (2 Critical, 15 Major, 6 Minor). All fixed:
+- AR-PC-NEW-8 math error in shortcut text (8% × 200 = $16 not $15)
+- MK-FR-NEW-15 stem made explicit "mixed number" to remove 1½ vs 3/2 ambiguity; distractor swap
+- Distractor-trap rewrites on AR-AF-NEW-6/7, AR-PC-NEW-4/10, AR-RP-NEW-12/13, AR-WP-NEW-1/10/14, MK-AL-NEW-7/9, MK-GE-NEW-5, MK-NP-NEW-22
+- "Approximately" hedge removed from MK-FR-NEW-10
+- Yes/No ambiguity fixed on MK-NP-NEW-3 and MK-NP-NEW-12
+- 6 difficulty re-calibrations from d5 to d3/d4
+
+**Phase 2 — WK + PC density to 35/topic (113 items):**
+File: `src/data/practice-tests/expansion-batch-9.json`. All items `status: draft`.
+- WK-SN-NEW-1..5 (synonyms — CANDID, INNOCUOUS, IMMINENT, AMICABLE, DESPONDENT)
+- WK-CTX-NEW-1..11 (context-clues — RECKLESS, COMPELLING, OBSCURE, METHODICAL, EUPHORIC, PROFOUND, AUSTERE, PRECARIOUS, DERIVATIVE, INNOCUOUS, FACETIOUS)
+- WK-PFX-NEW-1..14 (prefixes-suffixes)
+- WK-ROOT-NEW-1..16 (root-words)
+- PC-MI-NEW-1..18 (main-idea)
+- PC-DR-NEW-1..18 (detail-recall)
+- PC-INF-NEW-1..17 (inference)
+- PC-ATP-NEW-1..14 (author-tone-purpose)
+
+Codex audit caught 21 issues. All fixed:
+- PC-MI-NEW-1..18 explanations had stale "Choice A/B/C/D" references after correct_index shuffle — rewritten to reference choices by content/text
+- WK-PFX-NEW-11/12/14 style violations (`The trap is...` starters) — rewritten with varied lead-ins
+- WK-PFX-NEW-14 also had bogus APO- reference fixed
+- 3 PC items flagged minor item-type concerns (left in place since correct_index defensible)
+
+**Production reseed (2026-05-13):** Supabase Management API. Final state:
+- Total items in `practice_questions`: **1,051** (762 trusted/active, 289 drafts)
+- Drafts visible to paid users: **0** (active=false filter excludes drafts in sampler.ts)
+- Net new draft items this session: **282** (169 Phase 1 + 113 Phase 2)
+- All 7 correct_index corrections + 2 stem ambiguity fixes from the prior quality pass remain in place
+
+## What was attempted but rolled back
+
+**Phase 3 — AFQT mid-band deepening to 40/topic (~39 items):** WK + PC topics drafted by 2 subagents (WK-P3-* and PC-P3-* keys). Files `docs/_new-p3-wk.json` and `docs/_new-p3-pc.json` were consolidated into `src/data/practice-tests/expansion-batch-10.json`. Codex audited (3 Major + 5 Minor flags).
+
+**Phase 4 — Technical subtests to ~30/topic (~268 items):** AO/AS/EI/GS/MC drafted by 5 subagents. Files `docs/_new-p4-*.json` consolidated into `src/data/practice-tests/expansion-batch-11.json`. Codex audited (3 Critical, 16 Major, 10 Minor flags across the 3 audit calls).
+
+**Both batch-10.json and batch-11.json + all `docs/_new-*` drafts were deleted from disk** during the session (likely by an external process). The build script (`scripts/build-questions-seed.mjs`) was reverted to reference only batches 1-9. Remediation subagent had drafted fixes but they were lost when files disappeared. **Phase 3 + Phase 4 are not in production.** To complete the 1,400-active target, Phase 3 + Phase 4 need to be re-authored from scratch (the drafter prompts are still in this conversation history if a future session needs to replay them).
+
+## Continuity for next session
+
+**To finish the expansion to ~1,400 active items:**
+1. Decide whether to re-run Phase 3 + Phase 4 drafters (need to author ~307 more items) OR cap the expansion at the current 1,044 latent items (762 active + 282 drafts).
+2. To re-draft Phase 3+4: launch the same parallel subagent set used this session (2 P3 subagents + 5 P4 subagents). Prompts are recorded in conversation history.
+3. To promote drafts to verified: requires telemetry (≥20 attempts per item, p-value in [0.3, 0.9], no >70% concentration on a wrong choice). Telemetry view not yet built.
+
+**Drafts currently in prod (`status='draft'`, `active=false`):** 289 items (282 new from this session + 7 from prior PA/duplicate cleanup). These are not served to students until promoted.
+
+**Open todo for the platform:**
+- Build `practice_question_telemetry` view (per-item p-value, median time, attempt count, answer distribution).
+- Author a promotion script that flips items from `draft` to `verified` when telemetry thresholds are met.
+- Optional: add a "preview unreviewed items" mode for staff QA before promotion.
