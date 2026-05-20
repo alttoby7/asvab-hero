@@ -24,14 +24,6 @@ export default function Nav() {
   const ranksRef = useRef<HTMLDivElement>(null);
   const accountRef = useRef<HTMLDivElement>(null);
 
-  if (pathname?.startsWith("/app")) return null;
-
-  async function handleSignOut() {
-    const supabase = getSupabaseBrowserClient();
-    await supabase.auth.signOut();
-    router.push("/");
-  }
-
   useEffect(() => {
     function handleClick(e: MouseEvent) {
       if (ranksRef.current && !ranksRef.current.contains(e.target as Node)) {
@@ -44,6 +36,14 @@ export default function Nav() {
     document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
+
+  if (pathname?.startsWith("/app")) return null;
+
+  async function handleSignOut() {
+    const supabase = getSupabaseBrowserClient();
+    await supabase.auth.signOut();
+    router.push("/");
+  }
 
   const showUpgradeLink =
     !sessionLoading && !entitlementLoading && !!session && !entitlement.isPro;
