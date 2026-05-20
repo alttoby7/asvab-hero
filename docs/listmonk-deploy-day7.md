@@ -1,5 +1,7 @@
 # Listmonk Deploy — Day-7 Pro Upgrade Template
 
+> **STATUS: DEPLOYED 2026-05-20.** Template created as **id 17** ("ASVAB Hero — Drip Day 7 (Pro upgrade)"). `DRIP_SCHEDULE` on the droplet (`/root/scripts/asvab_drip.py`) updated to `{2: 7, 5: 8, 7: 17, 10: 9, 14: 10}` (backup saved alongside). Dry-run verified day-7 fires (template 17). The daily 14:30 UTC cron now sends it; a backlog of week-old free subscribers will receive it on the next runs. Steps below are the original procedure, kept for reference.
+
 ## Step 1: Upload the template via API
 
 Run from any machine with access to the Listmonk API credentials (stored in the central `.env` as `ASVAB_LISTMONK_API_USER` and `ASVAB_LISTMONK_API_TOKEN`):
