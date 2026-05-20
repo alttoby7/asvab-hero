@@ -365,27 +365,56 @@ export default function WarrantOfficerRequirementsPage() {
         </div>
 
         <p className="text-text-secondary">
-          For the standard technical track, you build your case on demonstrated
-          proficiency in your MOS. You assemble a warrant officer packet, secure
-          a chain-of-command endorsement, and go in front of a selection board.
-          Selection is competitive, and a borderline GT will sink an otherwise
-          strong file.
+          The GT 110 floor traces to AR 135-100, the regulation governing the
+          appointment of warrant officers. It is the one truly non-waivable line
+          on the list, while almost every other requirement has a waiver, an
+          exception, or a workaround.
         </p>
 
         <p className="text-text-secondary">
-          The Army carves out one exception to the prior-service rule. Only
-          aviation warrant officer and cyber warrant officer candidates can enter
-          the Army as a warrant officer with no prior service. Those candidates
-          attend Basic Combat Training first, then Warrant Officer Candidate
-          School.
+          For the standard technical track, you build your case on demonstrated
+          proficiency in your MOS. Most technical warrant tracks expect you to be
+          serving at sergeant (E-5) or above with roughly 3 to 7 years of
+          hands-on experience in a related field, verified through your NCOERs, so
+          the paper trail matters as much as the time. You assemble a warrant
+          officer packet, secure a chain-of-command endorsement, and go in front
+          of a selection board. Selection is competitive, and a borderline GT will
+          sink an otherwise strong file.
+        </p>
+
+        <p className="text-text-secondary">
+          The Army runs more than 40 warrant specialties, and which one you target
+          determines who can apply. High-demand feeder tracks include 153A
+          (rotary-wing aviator), 170A (cyber warfare technician), 255A
+          (information services technician, from signal soldiers), 350F (all-source
+          intelligence technician), and 915A (automotive maintenance, from the
+          91-series). The lineup also spans logistics (the 920-series), property
+          and supply, engineering, field artillery targeting, and CID special
+          agents (311A). Clearance scales with the field: most specialties require
+          a final Secret, while intelligence, cyber, and CID tracks require Top
+          Secret with SCI access.
+        </p>
+
+        <p className="text-text-secondary">
+          The Army carves out one exception to the prior-service rule. Only two
+          specialties let a civilian enter as a warrant officer with no prior
+          service: 153A through Warrant Officer Flight Training (the &quot;Street
+          to Seat&quot; path) and 170A Cyber Warfare Technician through direct
+          accession. Aviation applicants must clear the SIFT (Selection Instrument
+          for Flight Training) with a 40 or higher on top of the GT 110, with
+          competitive scores running in the 50s and up. Those candidates attend
+          Basic Combat Training first, then Warrant Officer Candidate School.
         </p>
 
         <p className="text-text-secondary">
           WOCS itself is a five-week course at Fort Novosel, Alabama (formerly
-          Fort Rucker). Aviation candidates carry extra gates: a 90 or higher on
-          the flight aptitude test (SIFT/FAST) and a Class 1A flight physical,
-          followed by flight school. After appointment, every warrant officer
-          certifies in their specialty through the Warrant Officer Basic Course.
+          Fort Rucker), and graduates are appointed Warrant Officer 1. Aviation
+          candidates then carry extra gates: a Class 1A flight physical followed by
+          flight school, and a 10-year active-duty service obligation that does not
+          start counting until flight school is complete. Technical warrant
+          officers generally incur about 6 years. After appointment, every warrant
+          officer certifies in their specialty through the Warrant Officer Basic
+          Course.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
@@ -398,19 +427,20 @@ export default function WarrantOfficerRequirementsPage() {
         </aside>
 
         <p className="text-text-secondary">
-          For the complete Army breakdown, including specialty-specific gates and
-          the packet timeline, see our{" "}
-          <Link
-            href="/army-warrant-officer-requirements"
-            className="text-accent hover:text-accent-hover"
-          >
-            Army warrant officer requirements
-          </Link>{" "}
-          guide. If your GT is short,{" "}
+          The application packet centers on the DA Form 61 (Application for
+          Appointment), a USAREC Form 3.2 resume, your ERB and NCOERs, and letters
+          of recommendation from your company commander, battalion commander, and a
+          senior warrant officer. Most MOS are boarded twice a year, and a
+          non-select returns as FQ-NS (fully qualified, not selected), which means
+          try again rather than start over. If your GT is short,{" "}
           <Link href="/bsep" className="text-accent hover:text-accent-hover">
             BSEP
           </Link>{" "}
-          is the in-service fix.
+          is the in-service fix, and active-duty soldiers retest through the{" "}
+          <Link href="/afct" className="text-accent hover:text-accent-hover">
+            AFCT
+          </Link>{" "}
+          rather than the recruiting ASVAB.
         </p>
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -463,7 +493,7 @@ export default function WarrantOfficerRequirementsPage() {
         <p className="text-text-secondary">
           If you are pointed toward the Navy, our{" "}
           <Link
-            href="/navy-asvab-score-requirements"
+            href="/navy-asvab-score"
             className="text-accent hover:text-accent-hover"
           >
             Navy ASVAB score requirements
@@ -513,7 +543,7 @@ export default function WarrantOfficerRequirementsPage() {
         <p className="text-text-secondary">
           If you are building the line scores a Marine board wants, our{" "}
           <Link
-            href="/asvab-marines-score"
+            href="/marines-asvab-score"
             className="text-accent hover:text-accent-hover"
           >
             Marines ASVAB score requirements
@@ -650,7 +680,7 @@ export default function WarrantOfficerRequirementsPage() {
           to find the weak subtests dragging your GT down. For the full mechanics
           of the line score, see our{" "}
           <Link
-            href="/asvab-gt-score"
+            href="/gt-score"
             className="text-accent hover:text-accent-hover"
           >
             ASVAB GT score guide

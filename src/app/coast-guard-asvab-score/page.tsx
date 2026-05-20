@@ -689,7 +689,7 @@ export default function CoastGuardASVABScorePage() {
             Calculate your GT score instantly with our{" "}
             <Link href="/gt-score-calculator">GT score calculator</Link>. For a
             complete breakdown of what GT means and how to raise it, see the{" "}
-            <Link href="/asvab-gt-score">GT score guide</Link>.
+            <Link href="/gt-score">GT score guide</Link>.
           </p>
         </aside>
 
@@ -1057,7 +1057,7 @@ export default function CoastGuardASVABScorePage() {
             <li>
               Other branches:{" "}
               <Link
-                href="/navy-asvab-score-requirements"
+                href="/navy-asvab-score"
                 className="text-accent underline hover:text-accent-hover"
               >
                 Navy

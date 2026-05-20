@@ -299,7 +299,7 @@ export default function ArmyAfqtCalculatorPage() {
           <li>
             Targeting GT 110 for Cyber or OCS? See the{" "}
             <Link
-              href="/asvab-gt-score"
+              href="/gt-score"
               className="text-accent underline hover:text-accent-hover"
             >
               Army GT score breakdown

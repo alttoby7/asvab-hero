@@ -891,7 +891,7 @@ export default function ArmyASVABScorePage() {
             <li>
               Targeting warrant officer, Cyber, or Special Forces? See the{" "}
               <Link
-                href="/asvab-gt-score"
+                href="/gt-score"
                 className="text-accent underline hover:text-accent-hover"
               >
                 GT score breakdown
@@ -908,7 +908,7 @@ export default function ArmyASVABScorePage() {
             <li>
               Already serving and looking to advance? See{" "}
               <Link
-                href="/army-warrant-officer-requirements"
+                href="/warrant-officer-requirements"
                 className="text-accent underline hover:text-accent-hover"
               >
                 Army warrant officer requirements
@@ -932,7 +932,7 @@ export default function ArmyASVABScorePage() {
             <li>
               Other branches:{" "}
               <Link
-                href="/navy-asvab-score-requirements"
+                href="/navy-asvab-score"
                 className="text-accent underline hover:text-accent-hover"
               >
                 Navy

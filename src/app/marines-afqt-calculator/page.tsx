@@ -265,7 +265,7 @@ export default function MarinesAfqtCalculatorPage() {
           <li>
             Check every Marine MOS you qualify for on the{" "}
             <Link
-              href="/asvab-score-for-marines"
+              href="/marines-asvab-score"
               className="text-accent underline hover:text-accent-hover"
             >
               Marines ASVAB score guide

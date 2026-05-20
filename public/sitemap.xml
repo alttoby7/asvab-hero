@@ -157,12 +157,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://asvabhero.com/asvab-gt-score</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://asvabhero.com/how-many-questions-on-the-asvab</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -211,12 +205,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://asvabhero.com/asvab-score-for-marines</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://asvabhero.com/asvab-retake-policy</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -259,12 +247,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://asvabhero.com/army-warrant-officer-requirements</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://asvabhero.com/mos-reclassification</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -278,18 +260,6 @@
   </url>
   <url>
     <loc>https://asvabhero.com/gt-score</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://asvabhero.com/calculate-gt-score</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://asvabhero.com/gt-score-max</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -439,19 +409,13 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://asvabhero.com/navy-asvab-score-requirements</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://asvabhero.com/air-force-asvab-score</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://asvabhero.com/asvab-marines-score</loc>
+    <loc>https://asvabhero.com/marines-asvab-score</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>

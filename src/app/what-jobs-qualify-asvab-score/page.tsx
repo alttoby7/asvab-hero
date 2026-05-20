@@ -513,7 +513,7 @@ export default function WhatJobsQualifyASVABScorePage() {
           from VE + AR + MK + GS. Electronics Technician builds from AR + MK + EI
           + GS. Full details at{" "}
           <Link
-            href="/navy-asvab-score-requirements"
+            href="/navy-asvab-score"
             className="text-accent hover:text-accent-hover"
           >
             Navy ASVAB score requirements
@@ -552,7 +552,7 @@ export default function WhatJobsQualifyASVABScorePage() {
           <strong>Marines.</strong> Four line scores. Infantry Rifleman (0311)
           needs GT 80; Military Police (5811) needs GT 100. Full details at{" "}
           <Link
-            href="/asvab-marines-score"
+            href="/marines-asvab-score"
             className="text-accent hover:text-accent-hover"
           >
             Marines ASVAB score requirements

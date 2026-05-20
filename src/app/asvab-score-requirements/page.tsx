@@ -797,7 +797,7 @@ export default function ASVABScoreRequirementsPage() {
           You need GT 107. Want Special Forces? GT 110 plus CO 100. The{" "}
           <Link href="/gt-score-calculator">GT score calculator</Link> shows
           exactly where you stand, and the{" "}
-          <Link href="/asvab-gt-score">full GT score guide</Link> covers every
+          <Link href="/gt-score">full GT score guide</Link> covers every
           threshold and formula.
         </p>
 
@@ -1201,7 +1201,7 @@ export default function ASVABScoreRequirementsPage() {
             </li>
             <li>
               <Link
-                href="/navy-asvab-score-requirements"
+                href="/navy-asvab-score"
                 className="text-accent underline hover:text-accent-hover"
               >
                 Navy ASVAB scores
@@ -1220,7 +1220,7 @@ export default function ASVABScoreRequirementsPage() {
             </li>
             <li>
               <Link
-                href="/asvab-marines-score"
+                href="/marines-asvab-score"
                 className="text-accent underline hover:text-accent-hover"
               >
                 Marines ASVAB scores

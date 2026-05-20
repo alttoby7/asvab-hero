@@ -382,7 +382,7 @@ export default function AirForceASVABScorePage() {
             and Marines GT score: AR + VE. If you&apos;re comparing scores across
             branches or considering a transfer, the G composite is your GT
             equivalent. See our{" "}
-            <Link href="/asvab-gt-score">GT score guide</Link> for the full
+            <Link href="/gt-score">GT score guide</Link> for the full
             breakdown, or use the{" "}
             <Link href="/gt-score-calculator">GT score calculator</Link> to
             check your number.
@@ -1349,7 +1349,7 @@ export default function AirForceASVABScorePage() {
             <li>
               Other branches:{" "}
               <Link
-                href="/asvab-marines-score"
+                href="/marines-asvab-score"
                 className="text-accent underline hover:text-accent-hover"
               >
                 Marines

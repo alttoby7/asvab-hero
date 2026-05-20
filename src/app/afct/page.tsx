@@ -109,7 +109,7 @@ export default function AFCTPage() {
         </h1>
 
         <p className="mt-4 text-text-secondary">
-          You have a <Link href="/asvab-gt-score">GT score</Link> below 110 and
+          You have a <Link href="/gt-score">GT score</Link> below 110 and
           a warrant officer packet, OCS application, or 18X reclass you
           can&apos;t submit. Sergeant Major Raymond Chandler put it bluntly: a
           GT under 110 &ldquo;starts to disqualify yourself from other
@@ -300,7 +300,7 @@ export default function AFCTPage() {
           language is direct: &ldquo;if you retake the AFCT, your new scores
           will count even if your new score is lower.&rdquo; The same protocol
           allocates 30 days of structured study, mandates a{" "}
-          <Link href="/asvab-gt-score">GT Predictor</Link> exam, and only
+          <Link href="/gt-score">GT Predictor</Link> exam, and only
           clears the soldier to schedule once the predictor result clears 100.
           Score replacement is the reason that prep isn&apos;t optional. For how
           civilian retake rules differ at MEPS, see the{" "}
@@ -749,7 +749,7 @@ export default function AFCTPage() {
           To stress-test your own ladder before scheduling, run projected gains
           through the{" "}
           <Link href="/gt-score-calculator">GT score calculator</Link> and
-          benchmark against <Link href="/asvab-gt-score">GT score</Link>{" "}
+          benchmark against <Link href="/gt-score">GT score</Link>{" "}
           thresholds.
         </p>
 
@@ -1273,7 +1273,7 @@ export default function AFCTPage() {
               110 is non-waivable for 180A. Project potential gains through the{" "}
               <Link href="/gt-score-calculator">GT score calculator</Link> and
               benchmark against{" "}
-              <Link href="/asvab-gt-score">GT score</Link> thresholds.
+              <Link href="/gt-score">GT score</Link> thresholds.
             </p>
           </div>
           <div>

@@ -938,7 +938,7 @@ export default function MOSASVABScoreRequirementsPage() {
           </Link>
           , with tier minimums at{" "}
           <Link
-            href="/navy-asvab-score-requirements"
+            href="/navy-asvab-score"
             className="text-accent hover:text-accent-hover"
           >
             Navy ASVAB score requirements
@@ -1128,7 +1128,7 @@ export default function MOSASVABScoreRequirementsPage() {
           </Link>
           , and check minimums at{" "}
           <Link
-            href="/asvab-marines-score"
+            href="/marines-asvab-score"
             className="text-accent hover:text-accent-hover"
           >
             Marines ASVAB score requirements
@@ -1191,7 +1191,7 @@ export default function MOSASVABScoreRequirementsPage() {
         <p className="text-text-secondary">
           Read the full breakdown in our{" "}
           <Link
-            href="/asvab-gt-score"
+            href="/gt-score"
             className="text-accent hover:text-accent-hover"
           >
             ASVAB GT score guide

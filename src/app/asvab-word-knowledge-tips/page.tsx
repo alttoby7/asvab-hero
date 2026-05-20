@@ -1083,7 +1083,7 @@ export default function ASVABWordKnowledgeTipsPage() {
           to see which jobs you qualify for right now. For full composite
           breakdowns by branch, see the{" "}
           <Link
-            href="/asvab-gt-score"
+            href="/gt-score"
             className="text-accent hover:text-accent-hover"
           >
             ASVAB GT score

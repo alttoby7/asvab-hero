@@ -479,7 +479,7 @@ export default function HighestASVABScorePage() {
           highest-demand Army jobs, like Cryptologic Linguist (35P), require a
           minimum GT of 110. Top scorers push GT above 140, with the{" "}
           <Link
-            href="/gt-score-max"
+            href="/gt-score"
             className="text-accent hover:text-accent-hover"
           >
             highest possible GT score

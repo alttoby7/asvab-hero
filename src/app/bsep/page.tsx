@@ -137,7 +137,7 @@ export default function BSEPPage() {
           like day by day, and what realistic outcomes look like, with data from
           Fort Knox, Fort Leonard Wood, Rhine Ordnance Barracks, and Fort
           Buchanan. If you need context on what{" "}
-          <Link href="/asvab-gt-score">GT actually measures</Link>, start there
+          <Link href="/gt-score">GT actually measures</Link>, start there
           first. Already have your scores? Plug them into the{" "}
           <Link href="/calculator">ASVAB score calculator</Link> to see where
           you stand before starting the process.

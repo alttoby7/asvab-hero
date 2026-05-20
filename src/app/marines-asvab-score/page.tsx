@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "A complete guide to how the Marine ASVAB score works: the correct GT formula (and the myth to ignore), all 5 USMC line scores explained, and how each subtest feeds your composites.",
   alternates: {
-    canonical: "https://asvabhero.com/asvab-marines-score",
+    canonical: "https://asvabhero.com/marines-asvab-score",
   },
 };
 
@@ -18,7 +18,7 @@ const articleJsonLd = {
   headline: "ASVAB Marines Score Explained: GT Formula and Line Scores (2026)",
   description:
     "A complete guide to how the Marine ASVAB score works: the correct GT formula (and the myth to ignore), all 5 USMC line scores explained, and how each subtest feeds your composites.",
-  url: "https://asvabhero.com/asvab-marines-score",
+  url: "https://asvabhero.com/marines-asvab-score",
   author: {
     "@type": "Organization",
     name: "ASVAB Hero",
@@ -29,7 +29,7 @@ const articleJsonLd = {
     name: "ASVAB Hero",
   },
   datePublished: "2026-05-13",
-  dateModified: "2026-05-13",
+  dateModified: "2026-05-20",
 };
 
 const faqJsonLd = {
@@ -58,6 +58,14 @@ const faqJsonLd = {
       acceptedAnswer: {
         "@type": "Answer",
         text: "GT = VE + AR. The version that adds Mechanical Comprehension (MC) to the formula is a persistent myth. MC feeds into MM and ST composites, not GT. If you are studying gears and levers to raise your GT, you are wasting time. Focus on AR and WK/PC instead.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is a GT score on the ASVAB?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "GT stands for General Technical. It is the most commonly required line score for Marine Corps MOSs. The formula is GT = VE + AR, where VE is your combined Word Knowledge and Paragraph Comprehension score. GT is not capped at 99 like the AFQT. The highest documented GT score is 144, confirmed by Army Personnel Testing as the maximum possible on the AFCT.",
       },
     },
     {
@@ -95,7 +103,7 @@ const faqJsonLd = {
   ],
 };
 
-export default function ASVABMarinesScorePage() {
+export default function MarinesASVABScorePage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
       <JsonLd data={articleJsonLd} />
@@ -182,6 +190,14 @@ export default function ASVABMarinesScorePage() {
         </p>
 
         <p className="text-text-secondary">
+          Your AFQT score is a percentile. A 31 means you scored better than 31%
+          of the norming population on four subtests: Arithmetic Reasoning (AR),
+          Mathematics Knowledge (MK), Word Knowledge (WK), and Paragraph
+          Comprehension (PC). The full breakdown is at{" "}
+          <Link href="/asvab-scores-explained">ASVAB scores explained</Link>.
+        </p>
+
+        <p className="text-text-secondary">
           GED holders face a steeper climb. The Marines require AFQT 50 with a
           GED, and they cap non-diploma enlistees at 5% of annual recruits. That
           is the strictest GED policy of any branch. If you have earned 15 or
@@ -189,6 +205,77 @@ export default function ASVABMarinesScorePage() {
           and qualify at the 31 threshold. This is not automatic. Confirm with
           your recruiter before counting on it.
         </p>
+
+        {/* Branch AFQT Minimums Table (folded in from asvab-score-for-marines) */}
+        <p className="text-text-secondary">
+          Here is how the Marine AFQT floor compares to every other branch:
+        </p>
+
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Branch
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Diploma Minimum
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  GED Minimum
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Army
+                </td>
+                <td className="py-2 pr-4 font-mono">31</td>
+                <td className="py-2 font-mono">50</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  <strong>Marines</strong>
+                </td>
+                <td className="py-2 pr-4 font-mono">
+                  <strong>31</strong>
+                </td>
+                <td className="py-2 font-mono">
+                  <strong>50</strong>
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Navy
+                </td>
+                <td className="py-2 pr-4 font-mono">31</td>
+                <td className="py-2 font-mono">50</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Air Force
+                </td>
+                <td className="py-2 pr-4 font-mono">36</td>
+                <td className="py-2 font-mono">50</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Space Force
+                </td>
+                <td className="py-2 pr-4 font-mono">36</td>
+                <td className="py-2 font-mono">50</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Coast Guard
+                </td>
+                <td className="py-2 pr-4 font-mono">36</td>
+                <td className="py-2 font-mono">50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <p className="text-text-secondary">
           The minimum AFQT score for Marines is an enlistment floor. It does not
@@ -218,7 +305,7 @@ export default function ASVABMarinesScorePage() {
         </p>
 
         <EmailCapture
-          tag="asvab-marines-score"
+          tag="marines-asvab-score"
           headline="Get a Free Marine Corps ASVAB Study Plan"
           subhead="We'll send you a personalized study plan based on the Marine MOS you're targeting."
           cta="Send My Study Plan"
@@ -440,6 +527,173 @@ export default function ASVABMarinesScorePage() {
           <Link href="/gt-score-calculator">GT score calculator</Link>.
         </p>
 
+        {/* ── Section: Worked Example (folded in from asvab-score-for-marines) ── */}
+
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          Worked Example: Calculating Your Marine Corps Line Scores
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          Meet a sample recruit. Here are her standard scores from the ASVAB:
+        </p>
+
+        {/* Sample Subtest Scores Table */}
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Subtest
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Standard Score
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">WK</td>
+                <td className="py-2 font-mono">55</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">PC</td>
+                <td className="py-2 font-mono">52</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">AR</td>
+                <td className="py-2 font-mono">58</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">MK</td>
+                <td className="py-2 font-mono">50</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">GS</td>
+                <td className="py-2 font-mono">48</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">EI</td>
+                <td className="py-2 font-mono">45</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">MC</td>
+                <td className="py-2 font-mono">52</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">AS</td>
+                <td className="py-2 font-mono">50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="mt-4 text-text-secondary">
+          First, calculate VE: 55 (WK) + 52 (PC) = <strong>107 VE</strong>
+        </p>
+
+        <p className="text-text-secondary">Now run each formula:</p>
+
+        <div className="my-4 space-y-2">
+          <div className="rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
+            GT = VE + AR = 107 + 58 = <strong>165</strong>
+          </div>
+          <div className="rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
+            EL = GS + AR + MK + EI = 48 + 58 + 50 + 45 = <strong>201</strong>
+          </div>
+          <div className="rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
+            MM = AR + EI + MC + AS = 58 + 45 + 52 + 50 = <strong>205</strong>
+          </div>
+          <div className="rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
+            CL = VE + AR + MK = 107 + 58 + 50 = <strong>215</strong>
+          </div>
+          <div className="rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
+            ST = GS + VE + MK + MC = 48 + 107 + 50 + 52 = <strong>257</strong>
+          </div>
+        </div>
+
+        <p className="mt-4 text-text-secondary">
+          With these scores, this recruit qualifies for most Marine Corps MOSs.
+          Her GT of 165 clears every GT requirement on the books. Her EL of 201
+          easily passes the toughest electronics thresholds. Cross-reference
+          these against the MOS table in the next section to see exactly which
+          jobs open up.
+        </p>
+
+        <p className="text-text-secondary">
+          Now watch what happens if her AR drops by just 4 points (from 58 to
+          54):
+        </p>
+
+        {/* AR Cascade Effect Table */}
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Line Score
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Before (AR=58)
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  After (AR=54)
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Change
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">GT</td>
+                <td className="py-2 pr-4 font-mono">165</td>
+                <td className="py-2 pr-4 font-mono">161</td>
+                <td className="py-2 font-mono">-4</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">EL</td>
+                <td className="py-2 pr-4 font-mono">201</td>
+                <td className="py-2 pr-4 font-mono">197</td>
+                <td className="py-2 font-mono">-4</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">MM</td>
+                <td className="py-2 pr-4 font-mono">205</td>
+                <td className="py-2 pr-4 font-mono">201</td>
+                <td className="py-2 font-mono">-4</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">CL</td>
+                <td className="py-2 pr-4 font-mono">215</td>
+                <td className="py-2 pr-4 font-mono">211</td>
+                <td className="py-2 font-mono">-4</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">ST</td>
+                <td className="py-2 pr-4 font-mono">257</td>
+                <td className="py-2 pr-4 font-mono">257</td>
+                <td className="py-2 font-mono">0 (no AR)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="mt-4 text-text-secondary">
+          A 4-point swing in AR cascades across four line scores simultaneously.
+          That single subtest has more influence on your Marine Corps job
+          options than any other.
+        </p>
+
+        <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
+          <p className="text-sm font-semibold text-emerald-400">Tip</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Skip the math. Plug your subtest scores into the{" "}
+            <Link href="/calculator">ASVAB calculator</Link> and instantly see
+            your line scores, AFQT, and every{" "}
+            <Link href="/usmc-mos-list">Marine Corps MOS</Link> you qualify for.
+          </p>
+        </aside>
+
         {/* ── Section: GT Tier Breakdown ── */}
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -578,6 +832,156 @@ export default function ASVABMarinesScorePage() {
           <Link href="/usmc-mos-list">USMC MOS list</Link>, or plug your subtest
           scores into the <Link href="/calculator">calculator</Link> to see your
           GT and every job you qualify for.
+        </p>
+
+        {/* ── Section: Popular MOS Requirements (folded in from asvab-score-for-marines) ── */}
+
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          ASVAB Score Requirements for Popular Marine Corps Jobs
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          Not all MOSs are created equal. Some need a single line score. Others
+          require you to clear thresholds on two or more composites. Here are the
+          requirements for the most sought-after Marine jobs, including the
+          dual-score MOSs that trip up applicants who only watch their GT:
+        </p>
+
+        {/* Popular USMC MOS Requirements Table */}
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  MOS
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Title
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Line Score Requirements
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  0311
+                </td>
+                <td className="py-2 pr-4">Rifleman</td>
+                <td className="py-2 font-mono">GT 80</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  0317
+                </td>
+                <td className="py-2 pr-4">Scout Sniper</td>
+                <td className="py-2 font-mono">GT 100</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  0321
+                </td>
+                <td className="py-2 pr-4">Reconnaissance Marine</td>
+                <td className="py-2 font-mono">GT 105</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  0111
+                </td>
+                <td className="py-2 pr-4">Administrative Specialist</td>
+                <td className="py-2 font-mono">CL 100</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  0621
+                </td>
+                <td className="py-2 pr-4">Radio Operator</td>
+                <td className="py-2 font-mono">GT 100, EL 100</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  0631
+                </td>
+                <td className="py-2 pr-4">Network Administrator</td>
+                <td className="py-2 font-mono">GT 110, EL 110</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  0861
+                </td>
+                <td className="py-2 pr-4">Fire Support Marine</td>
+                <td className="py-2 font-mono">GT 105</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  1141
+                </td>
+                <td className="py-2 pr-4">Electrician</td>
+                <td className="py-2 font-mono">EL 90</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  1371
+                </td>
+                <td className="py-2 pr-4">Combat Engineer</td>
+                <td className="py-2 font-mono">MM 95</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  2621
+                </td>
+                <td className="py-2 pr-4">Signals Intelligence Analyst</td>
+                <td className="py-2 font-mono">GT 100, EL 100</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  2831
+                </td>
+                <td className="py-2 pr-4">Digital Wideband System Tech</td>
+                <td className="py-2 font-mono">EL 105</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  7314
+                </td>
+                <td className="py-2 pr-4">Unmanned Aircraft Systems Operator</td>
+                <td className="py-2 font-mono">GT 110</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">
+                  1721
+                </td>
+                <td className="py-2 pr-4">Cyberspace Warfare Operator</td>
+                <td className="py-2 font-mono">GT 115, EL 115</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
+          <p className="text-sm font-semibold text-text-primary">Key Point</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            GT is the most common gatekeeper. In this list alone, 11 of 13 MOSs
+            require a GT threshold. If you only improve one line score, make it
+            GT.
+          </p>
+        </aside>
+
+        <p className="text-text-secondary">
+          Pay attention to dual requirements. MOS 0631 (Network Administrator)
+          needs both GT 110 and EL 110. Meeting one but not the other
+          disqualifies you. MOS 2621 (Signals Intelligence) has the same
+          structure: GT 100 and EL 100. Your ASVAB score for Marines is rarely
+          about a single number.
+        </p>
+
+        <p className="text-text-secondary">
+          Cyber and intelligence MOSs sit at the top. MOS 1721 demands GT 115 and
+          EL 115, making it one of the hardest Marine jobs to qualify for. Those
+          high thresholds also come with the biggest enlistment bonuses. If you
+          are 5 points short, the study section below tells you exactly where to
+          focus.
         </p>
 
         {/* ── Section: Top MOS Requirements by Line Score ── */}
@@ -782,6 +1186,66 @@ export default function ASVABMarinesScorePage() {
             <Link href="/usmc-mos-list">USMC MOS list</Link>.
           </p>
         </aside>
+
+        {/* ── Section: AFQT vs Line Scores (folded in from asvab-score-for-marines) ── */}
+
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          AFQT vs Line Scores: What Actually Matters for Marines
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          These two scoring systems serve completely different purposes.
+          Confusing them is the most common ASVAB mistake recruits make.
+        </p>
+
+        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
+          AFQT (Armed Forces Qualification Test)
+        </h3>
+        <ul className="mt-2 space-y-1 text-sm text-text-secondary">
+          <li>Percentile score (1&ndash;99)</li>
+          <li>Formula: 2(VE) + AR + MK</li>
+          <li>Purpose: determines whether you can enlist</li>
+          <li>Threshold: 31 for Marines (diploma)</li>
+        </ul>
+
+        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
+          Line Scores (GT, EL, MM, CL, ST)
+        </h3>
+        <ul className="mt-2 space-y-1 text-sm text-text-secondary">
+          <li>Raw composite scores (no fixed max)</li>
+          <li>Purpose: determines which MOS you qualify for</li>
+          <li>Higher scores unlock more and better jobs</li>
+        </ul>
+
+        <p className="mt-4 text-text-secondary">
+          The key distinction: once you clear 31 AFQT, a higher AFQT score does
+          not unlock more jobs. No MOS in the Marine Corps requires
+          &ldquo;AFQT 70&rdquo; or &ldquo;AFQT 85.&rdquo; Jobs only care about
+          line scores.
+        </p>
+
+        <p className="text-text-secondary">
+          One qualifier: AFQT 50+ opens certain enlistment incentives and gives
+          recruiters more scheduling flexibility. It is also the minimum for GED
+          holders. But no MOS lists an AFQT requirement.
+        </p>
+
+        <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
+          <p className="text-sm font-semibold text-text-primary">Key Point</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            AFQT 35 with GT 115 qualifies you for more Marine jobs than AFQT 85
+            with GT 90. The percentile gets you in. The line scores get you the
+            job.
+          </p>
+        </aside>
+
+        <p className="text-text-secondary">
+          There is overlap. The AFQT formula uses VE, AR, and MK. GT uses VE and
+          AR. CL uses all three. So studying for a higher AFQT naturally boosts
+          GT and CL. MK is the swing subtest: it feeds AFQT, EL, CL, and ST,
+          making it the best single addition to a study plan after you have
+          covered AR and VE.
+        </p>
 
         {/* ── Section: Recon, MARSOC, and Special Ops ── */}
 
@@ -1038,6 +1502,63 @@ export default function ASVABMarinesScorePage() {
           </p>
         </aside>
 
+        {/* ── Section: Open Contract vs Guaranteed MOS (folded in from asvab-score-for-marines) ── */}
+
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          Open Contract vs Guaranteed MOS: Why Your Score Matters Even More
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          There are two ways to enlist in the Marine Corps, and your ASVAB score
+          for Marines directly determines which option you get.
+        </p>
+
+        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
+          Guaranteed MOS (Program Designator)
+        </h3>
+        <p className="mt-2 text-text-secondary">
+          You sign a contract specifying your occupational field before you ship
+          to boot camp. Examples: BK (infantry), CK (electronics/communications),
+          DB (data/intelligence). Your MOS is locked. You know what you are
+          training for.
+        </p>
+
+        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
+          Open Contract
+        </h3>
+        <p className="mt-2 text-text-secondary">
+          You ship with no guaranteed MOS. The Marine Corps assigns you a job
+          during or after boot camp based on what they need to fill. You might
+          get something decent. You might get something you never wanted.
+        </p>
+
+        <p className="mt-4 text-text-secondary">
+          Higher ASVAB scores give you leverage. With strong line scores, you
+          qualify for more program designators and can negotiate with your
+          recruiter from a position of strength. A recruit with GT 115 and EL 110
+          has options. A recruit with GT 82 does not.
+        </p>
+
+        <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
+          <p className="text-sm font-semibold text-text-primary">Warning</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Never sign an open contract if you care about your MOS. If your
+            scores are not high enough for the job you want, retake the ASVAB. A
+            30-day wait beats four years in a job you did not choose.
+          </p>
+        </aside>
+
+        <p className="text-text-secondary">
+          Recruiters sometimes push open contracts when they have quotas to fill.
+          That is their job. Your job is to know your line scores, understand
+          what you qualify for, and hold out for a guaranteed contract. Check
+          your qualifications at the{" "}
+          <Link href="/usmc-mos-list">USMC MOS list</Link>, use the{" "}
+          <Link href="/calculator">calculator</Link> to verify your scores, and
+          if you are short, see{" "}
+          <Link href="/how-to-retake-the-asvab">how to retake the ASVAB</Link>.
+        </p>
+
         {/* ── Section: FY2026 Enlistment Bonuses ── */}
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -1114,14 +1635,20 @@ export default function ASVABMarinesScorePage() {
         </aside>
 
         <p className="text-text-secondary">
+          Important: bonuses require a guaranteed MOS contract. Open contracts do
+          not qualify. You must sign for a specific program designator that
+          includes the bonus-eligible MOS before you ship.
+        </p>
+
+        <p className="text-text-secondary">
           These figures come from MARADMIN 526/25 (November 2025). Bonus amounts
           and eligibility change quarterly. Confirm current numbers with your
-          recruiter, but use these figures for planning. For a deeper look at how
-          bonuses map to MOS requirements, see the full breakdown on our{" "}
-          <Link href="/asvab-score-for-marines">
-            ASVAB score for Marines
-          </Link>{" "}
-          page.
+          recruiter, but use these figures for planning. For study strategies to
+          close the gap, see{" "}
+          <Link href="/how-to-study-for-the-asvab">
+            how to study for the ASVAB
+          </Link>
+          .
         </p>
 
         {/* ── Section: What to Study First ── */}
@@ -1310,6 +1837,20 @@ export default function ASVABMarinesScorePage() {
 
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
+              What is a GT score on the ASVAB?
+            </h3>
+            <p className="mt-1 text-sm text-text-secondary">
+              GT stands for General Technical. It is the most commonly required
+              line score for Marine Corps MOSs. The formula is GT = VE + AR,
+              where VE is your combined Word Knowledge and Paragraph
+              Comprehension score. GT is not capped at 99 like the AFQT. The
+              highest documented GT score is 144, confirmed by Army Personnel
+              Testing as the maximum possible on the AFCT.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-display text-base font-bold text-text-primary">
               How long are ASVAB scores valid for the Marine Corps?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
@@ -1393,14 +1934,7 @@ export default function ASVABMarinesScorePage() {
               hub.
             </li>
             <li>
-              Go deeper in the{" "}
-              <Link
-                href="/asvab-score-for-marines"
-                className="text-accent underline hover:text-accent-hover"
-              >
-                complete ASVAB score guide for Marines
-              </Link>{" "}
-              and browse jobs in the{" "}
+              Browse every Marine job and its qualifying scores in the{" "}
               <Link
                 href="/usmc-mos-list"
                 className="text-accent underline hover:text-accent-hover"
@@ -1429,7 +1963,7 @@ export default function ASVABMarinesScorePage() {
             <li>
               Other branches:{" "}
               <Link
-                href="/navy-asvab-score-requirements"
+                href="/navy-asvab-score"
                 className="text-accent underline hover:text-accent-hover"
               >
                 Navy

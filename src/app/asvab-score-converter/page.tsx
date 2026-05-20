@@ -309,7 +309,7 @@ export default function AsvabScoreConverterPage() {
         <p className="mt-3 text-sm text-text-secondary">
           For the GT-specific deep dive, see{" "}
           <Link
-            href="/asvab-gt-score"
+            href="/gt-score"
             className="text-accent underline hover:text-accent-hover"
           >
             the ASVAB GT score guide
@@ -401,7 +401,7 @@ export default function AsvabScoreConverterPage() {
             For the GT deep dive (the 110 threshold, raise strategy, branch
             differences), read the{" "}
             <Link
-              href="/asvab-gt-score"
+              href="/gt-score"
               className="text-accent underline hover:text-accent-hover"
             >
               ASVAB GT score guide

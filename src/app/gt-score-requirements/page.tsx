@@ -204,7 +204,7 @@ export default function GTScoreRequirementsPage() {
           For the full formula breakdown and branch-by-branch differences, see
           the{" "}
           <Link
-            href="/asvab-gt-score"
+            href="/gt-score"
             className="text-accent hover:text-accent-hover"
           >
             complete GT score guide
@@ -809,7 +809,7 @@ export default function GTScoreRequirementsPage() {
               </Link>
               . If you would rather work the math by hand, our{" "}
               <Link
-                href="/calculate-gt-score"
+                href="/gt-score"
                 className="text-accent hover:text-accent-hover"
               >
                 step-by-step guide to calculating a GT score

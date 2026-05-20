@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Navy ASVAB Score Explained: How Navy Scoring Works | ASVAB Hero",
+  title:
+    "Navy ASVAB Score: How Scoring Works + Requirements by Rating | ASVAB Hero",
   description:
-    "A complete guide to how the Navy ASVAB score works: the AFQT vs. composite two-gate system, why the Navy skips named line scores, and how rating formulas are built.",
+    "How the Navy ASVAB score works plus the minimum scores you need to qualify: the AFQT vs. composite two-gate system, exact rating composite minimums, nuclear field, SEAL/EOD cutoffs, and FY2026 bonuses.",
   alternates: {
     canonical: "https://asvabhero.com/navy-asvab-score",
   },
@@ -15,9 +17,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "Navy ASVAB Score Explained: How Navy Scoring Actually Works",
+    "Navy ASVAB Score: How Scoring Works and Requirements by Rating",
   description:
-    "A complete guide to how the Navy ASVAB score works: the AFQT vs. composite two-gate system, why the Navy skips named line scores, and how rating formulas are built.",
+    "How the Navy ASVAB score works plus the minimum scores you need to qualify: the AFQT vs. composite two-gate system, exact rating composite minimums, nuclear field, SEAL/EOD cutoffs, and FY2026 bonuses.",
   url: "https://asvabhero.com/navy-asvab-score",
   author: {
     "@type": "Organization",
@@ -29,7 +31,7 @@ const articleJsonLd = {
     name: "ASVAB Hero",
   },
   datePublished: "2026-03-22",
-  dateModified: "2026-03-22",
+  dateModified: "2026-05-20",
 };
 
 const faqJsonLd = {
@@ -116,6 +118,14 @@ const faqJsonLd = {
         text: "Yes, effectively. Line score reductions from the 2022-2023 recruiting crisis reverted on October 1, 2025. FY2026 recruits face the original, stricter subtest requirements. AFQT minimums (31 for diploma, 50 for GED) are unchanged, but rating formulas are back to pre-crisis thresholds.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Can active-duty sailors improve their ASVAB scores?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, through the AFCT (Armed Forces Classification Test). You need 24+ months in your current rate, under 12 years of service, and PO1 (E-6) or below. The AFCT is identical to the ASVAB. New scores replace previous scores and can unlock cross-rating opportunities.",
+      },
+    },
   ],
 };
 
@@ -126,7 +136,7 @@ export default function NavyASVABScorePage() {
       <JsonLd data={faqJsonLd} />
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          Navy ASVAB Score Explained: How Navy Scoring Actually Works
+          Navy ASVAB Score: How Scoring Works and Requirements by Rating
         </h1>
 
         <p className="mt-4 text-text-secondary">
@@ -139,8 +149,9 @@ export default function NavyASVABScorePage() {
         </p>
         <p className="text-text-secondary">
           This guide covers the exact AFQT and subtest thresholds for
-          enlistment, popular ratings, nuclear field, and special warfare
-          programs. If you already have scores, plug them into our{" "}
+          enlistment, the minimum scores required for popular ratings, nuclear
+          field, special warfare programs, FY2026 bonuses, and active-duty
+          retesting. If you already have scores, plug them into our{" "}
           <Link href="/calculator">free ASVAB calculator</Link> to see which
           Navy ratings you qualify for right now.
         </p>
@@ -778,6 +789,316 @@ export default function NavyASVABScorePage() {
           study planning.
         </p>
 
+        {/* Section 6b: Navy ASVAB Score Requirements / Minimums by Rating */}
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          Navy ASVAB Score Requirements: Minimums by Rating
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          Knowing the navy ASVAB score requirements before you visit MEPS lets
+          you walk in with a target instead of reacting to whatever your
+          recruiter offers. The tables below group the most popular ratings by
+          career field with their FY2026 composite minimums (post-reversion to
+          pre-crisis standards). You only need to clear one qualifying formula
+          per rating.
+        </p>
+
+        <EmailCapture
+          headline="Want to know exactly which Navy ratings your scores unlock?"
+          subhead="Free PDF study plan plus a 5-email crash course on AFQT, composites, and which subtests matter most for Navy ratings."
+          cta="Email me the plan"
+          tag="navy-asvab-score-requirements"
+        />
+
+        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
+          Technical and Electronics Ratings
+        </h3>
+
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Rating
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Full Name
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Qualifying Formula(s)
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  ET
+                </td>
+                <td className="py-2 pr-4">Electronics Technician</td>
+                <td className="py-2 font-mono text-xs">
+                  AR+MK+EI+GS &gt;= 222 OR AR+2MK+GS &gt;= 230
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  IT
+                </td>
+                <td className="py-2 pr-4">Information Systems Technician</td>
+                <td className="py-2 font-mono text-xs">
+                  AR+VE+MK+GS &gt;= 222 OR VE+MK+GS &gt;= 162
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  FC
+                </td>
+                <td className="py-2 pr-4">Fire Controlman</td>
+                <td className="py-2 font-mono text-xs">
+                  AR+MK+EI+GS &gt;= 222 OR AR+2MK+GS &gt;= 230
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  CTN
+                </td>
+                <td className="py-2 pr-4">
+                  Cryptologic Technician (Networks)
+                </td>
+                <td className="py-2 font-mono text-xs">AR+2MK+GS &gt;= 212</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  CTR
+                </td>
+                <td className="py-2 pr-4">
+                  Cryptologic Technician (Collection)
+                </td>
+                <td className="py-2 font-mono text-xs">
+                  MK+PC &gt;= 110 OR AR+MK+PC &gt;= 164
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  CTM
+                </td>
+                <td className="py-2 pr-4">
+                  Cryptologic Technician (Maintenance)
+                </td>
+                <td className="py-2 font-mono text-xs">AR+MK+EI+VE &gt;= 221</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  ST
+                </td>
+                <td className="py-2 pr-4">Sonar Technician</td>
+                <td className="py-2 font-mono text-xs">
+                  AR+MK+EI+GS &gt;= 223 OR AR+MK+VE+AO &gt;= 228
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-text-secondary">
+          Technical ratings cluster around the 212&ndash;223 range for
+          four-subtest composites. These carry the strongest civilian career
+          crossover into cybersecurity, defense contracting, and
+          telecommunications, and typically come with the largest enlistment
+          bonuses.
+        </p>
+
+        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
+          Medical and Administrative Ratings
+        </h3>
+
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Rating
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Full Name
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Qualifying Formula(s)
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  HM
+                </td>
+                <td className="py-2 pr-4">Hospital Corpsman</td>
+                <td className="py-2 font-mono text-xs">
+                  VE+AR+MK+GS &gt;= 208 OR MK+GS+2VE &gt;= 208 OR AR+PC+MK
+                  &gt;= 156
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  YN
+                </td>
+                <td className="py-2 pr-4">Yeoman</td>
+                <td className="py-2 font-mono text-xs">
+                  VE+MK &gt;= 99 OR VE+MK+CS &gt;= 148
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  LS
+                </td>
+                <td className="py-2 pr-4">Logistics Specialist</td>
+                <td className="py-2 font-mono text-xs">VE+AR &gt;= 96</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  PS
+                </td>
+                <td className="py-2 pr-4">Personnel Specialist</td>
+                <td className="py-2 font-mono text-xs">
+                  VE+MK &gt;= 103 OR VE+MK+CS &gt;= 148
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  LN
+                </td>
+                <td className="py-2 pr-4">Legalman</td>
+                <td className="py-2 font-mono text-xs">
+                  VE+MK &gt;= 105 and VE &gt;= 52 OR VE+AR &gt;= 105 and VE
+                  &gt;= 52
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  MA
+                </td>
+                <td className="py-2 pr-4">Master-at-Arms</td>
+                <td className="py-2 font-mono text-xs">
+                  WK+AR &gt;= 98, minimum WK &gt;= 43
+                </td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  IS
+                </td>
+                <td className="py-2 pr-4">Intelligence Specialist</td>
+                <td className="py-2 font-mono text-xs">
+                  VE+AR+MK+GS &gt;= 215
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-text-secondary">
+          Medical and admin ratings lean on VE and AR. Hospital Corpsman is one
+          of the most competitive ratings despite having three qualifying paths.
+          Limited slots mean even qualified applicants may wait for openings.
+        </p>
+
+        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
+          Aviation and General Ratings
+        </h3>
+
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Rating
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Full Name
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Qualifying Formula(s)
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  AC
+                </td>
+                <td className="py-2 pr-4">Air Traffic Controller</td>
+                <td className="py-2 font-mono text-xs">
+                  VE+AR+MK+MC &gt;= 220 OR VE+MK+MC+CS &gt;= 220
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  AE
+                </td>
+                <td className="py-2 pr-4">Aviation Electrician&apos;s Mate</td>
+                <td className="py-2 font-mono text-xs">
+                  VE+AR+MK+MC &gt;= 217 OR VE+AR+MK+AO &gt;= 217
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  AD
+                </td>
+                <td className="py-2 pr-4">Aviation Machinist&apos;s Mate</td>
+                <td className="py-2 font-mono text-xs">
+                  VE+MK+AS &gt;= 158 OR VE+MK+EI &gt;= 155
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  BM
+                </td>
+                <td className="py-2 pr-4">Boatswain&apos;s Mate</td>
+                <td className="py-2 font-mono text-xs">
+                  No line score minimum (AFQT only)
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  CS
+                </td>
+                <td className="py-2 pr-4">Culinary Specialist</td>
+                <td className="py-2 font-mono text-xs">VE+AR &gt;= 82</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  ABE
+                </td>
+                <td className="py-2 pr-4">
+                  Aviation Boatswain&apos;s Mate (Equipment)
+                </td>
+                <td className="py-2 font-mono text-xs">
+                  VE+AR+MK+AS &gt;= 184
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-text-secondary">
+          BM (Boatswain&apos;s Mate) requires no line score minimum. Meet the
+          AFQT threshold and you are eligible. CS (Culinary Specialist) has one
+          of the lowest bars at VE+AR &gt;= 82.
+        </p>
+
+        <p className="text-text-secondary">
+          For the complete list of all 89 Navy ratings, see our{" "}
+          <Link href="/navy-ratings-list">Navy ratings list</Link>.
+        </p>
+
+        <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
+          <p className="text-sm font-semibold text-amber-400">Warning</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Line score requirements reverted to pre-crisis levels on October 1,
+            2025. If you are using a 2023 or 2024 requirements chart, verify the
+            numbers. Many online tables still show the relaxed crisis-era
+            standards.
+          </p>
+        </aside>
+
         {/* Section 7: Nuclear Field and Navy SEAL */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           Nuclear Field and Navy SEAL Score Requirements
@@ -812,14 +1133,78 @@ export default function NavyASVABScorePage() {
         <p className="text-text-secondary">
           If either combo falls below 225, there are no waivers. The NAPT
           (Nuclear Field Aptitude Test) is 80 questions covering Algebra II,
-          trigonometry, chemistry, and physics. Minimum passing score is 50.
-          Your NAPT result is valid for 2 years with a 90-day wait between
-          retakes.
+          trigonometry, chemistry, and physics. Minimum passing score is 50, and
+          a retest is authorized if your initial score was 40+. Your NAPT result
+          is valid for 2 years with a 90-day wait between retakes.
         </p>
+
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Criteria
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  NFa (No NAPT)
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  NFb (With NAPT)
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Both combo minimums
+                </td>
+                <td className="py-2 pr-4 font-mono">235</td>
+                <td className="py-2 font-mono">225</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  One combo must reach
+                </td>
+                <td className="py-2 pr-4 font-mono">252</td>
+                <td className="py-2">N/A</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  NAPT minimum
+                </td>
+                <td className="py-2 pr-4">Not required</td>
+                <td className="py-2 font-mono">50</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Combined score (NAPT + combo)
+                </td>
+                <td className="py-2 pr-4">N/A</td>
+                <td className="py-2 font-mono">290</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-text-secondary">
+          Nuclear field also requires at least one year of high school or
+          college-level algebra. Automatic review triggers include 5+ years
+          since your last qualifying math course, any D or F in high school math,
+          or a junior/senior GPA below 2.0.
+        </p>
+
+        <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
+          <p className="text-sm font-semibold text-text-primary">Note</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Some websites list the NAPT minimum as 55. The official minimum is
+            50 per NavyCS and current CNRC guidance.
+          </p>
+        </aside>
         <p className="text-text-secondary">
           Nuclear field sailors serve as MMN (Machinist&apos;s Mate Nuclear),
           EMN (Electrician&apos;s Mate Nuclear), or ETN (Electronics Technician
-          Nuclear). Bonuses reach up to $40K. After a 6-year enlistment,
+          Nuclear). FY2026 bonuses reach $75,000 (the highest in the Navy), with
+          a source rate bonus of $40,000. After a 6-year enlistment,
           nuclear-trained sailors routinely earn $80K&ndash;$120K in civilian
           nuclear power, defense contracting, or utility industries. The
           training pipeline is 18&ndash;24 months and is widely considered the
@@ -930,6 +1315,13 @@ export default function NavyASVABScorePage() {
           Nuclear field has the highest raw subtest demands in the Navy. SEAL
           has a moderate ASVAB bar but an extreme physical and mental selection
           process beyond the test.
+        </p>
+        <p className="text-text-secondary">
+          Every special warfare program requires MC (Mechanical Comprehension)
+          &gt;= 51 as a hard floor. No other subtest combination compensates for
+          a low MC. BUD/S graduates historically score at the 78th AFQT
+          percentile despite the 35 minimum, with attrition running 68% to 80%
+          per class. FY2026 bonus caps for special warfare reach $60,000.
         </p>
 
         {/* Section 8: How to Read Your Score Report */}
@@ -1131,6 +1523,212 @@ export default function NavyASVABScorePage() {
           </p>
         </aside>
 
+        {/* Section 9b: FY2026 Changes */}
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          FY2026 Changes: What Reverted and What Stayed
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          If you were planning around relaxed standards from the 2022&ndash;2023
+          recruiting crisis, those are gone. Here is the timeline that produced
+          today&apos;s requirements.
+        </p>
+
+        <div className="my-4 space-y-2">
+          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
+            <span className="font-mono text-sm font-bold text-accent">
+              Nov 2022
+            </span>
+            <span className="text-sm text-text-secondary">
+              Navy lowered line scores and AFQT minimum (down to 10) during the
+              recruiting shortfall
+            </span>
+          </div>
+          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
+            <span className="font-mono text-sm font-bold text-accent">
+              May/Aug 2024
+            </span>
+            <span className="text-sm text-text-secondary">
+              AFQT minimum restored to 31 for diploma holders
+            </span>
+          </div>
+          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
+            <span className="font-mono text-sm font-bold text-accent">
+              Apr 1, 2025
+            </span>
+            <span className="text-sm text-text-secondary">
+              FSPC-A floor raised from 21 to 26
+            </span>
+          </div>
+          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
+            <span className="font-mono text-sm font-bold text-accent">
+              Oct 1, 2025
+            </span>
+            <span className="text-sm text-text-secondary">
+              All rating-specific line score formulas reverted to pre-crisis
+              levels
+            </span>
+          </div>
+        </div>
+
+        <p className="text-text-secondary">
+          <strong>What stayed:</strong> AFQT minimums unchanged (31 diploma, 50
+          GED). FSPC-A bridge still active. Tier III eligibility remains since
+          January 2024.
+        </p>
+        <p className="text-text-secondary">
+          <strong>What changed:</strong> Every rating composite formula reverted
+          to original thresholds. FY2026 recruits face higher subtest bars than
+          anyone who enlisted between November 2022 and September 2025. The
+          FY2026 NDAA also modified Category IV accounting so that FSPC-A
+          graduates whose scores improved sufficiently are excluded from the 4%
+          Cat IV quota, giving the Navy more flexibility with the bridge program.
+        </p>
+
+        {/* Section 9c: Enlistment Bonuses by Score Level */}
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          Enlistment Bonuses by Score Level
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          Your navy ASVAB score directly affects how much bonus money is on the
+          table. Higher scores unlock higher-paying ratings and bigger signing
+          incentives.
+        </p>
+
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Category
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Maximum Bonus Cap
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Examples
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Nuclear Field
+                </td>
+                <td className="py-2 pr-4 font-mono">$75,000</td>
+                <td className="py-2">MMN, EMN, ETN</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Special Warfare / Advanced Technical
+                </td>
+                <td className="py-2 pr-4 font-mono">$60,000</td>
+                <td className="py-2">SEAL, SWCC, EOD, HM-ATF, AIRR</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  All Other Ratings
+                </td>
+                <td className="py-2 pr-4 font-mono">$50,000</td>
+                <td className="py-2">MA, ET, IT, CTN, and others</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-text-secondary">
+          Top source rate bonuses: Nuclear $40,000. AIRR, EOD, HM-ATF, ND, and
+          SB-ATF at $30,000 each.
+        </p>
+
+        <p className="text-text-secondary">Bonus eligibility by score:</p>
+
+        <ul className="my-4 list-disc space-y-2 pl-6 text-text-secondary">
+          <li>
+            <strong>AFQT &gt;= 31:</strong> Required for any Enlistment Bonus for
+            Shipping (EBSHP)
+          </li>
+          <li>
+            <strong>AFQT &gt;= 50:</strong> Required for the Loan Repayment
+            Program (LRP)
+          </li>
+          <li>
+            <strong>Tier III education:</strong> Ineligible for any enlistment
+            bonus regardless of score
+          </li>
+        </ul>
+
+        <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
+          <p className="text-sm font-semibold text-emerald-400">Tip</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Bonus amounts change multiple times per fiscal year. Ask your
+            recruiter for the current GENADMIN message, not last quarter&apos;s
+            numbers.
+          </p>
+        </aside>
+
+        {/* Section 9d: Active-Duty AFCT */}
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          Active-Duty Sailors: Retaking the ASVAB via AFCT
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          This page is not just for future sailors. If you are already serving
+          and want a different rating, you can improve your scores through the
+          AFCT (Armed Forces Classification Test), the active-duty version of the
+          ASVAB. Identical content, identical scoring.
+        </p>
+
+        <div className="my-4 space-y-2">
+          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
+            <span className="font-mono text-sm font-bold text-accent">
+              Eligibility
+            </span>
+            <span className="text-sm text-text-secondary">
+              24+ months in current rate
+            </span>
+          </div>
+          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
+            <span className="font-mono text-sm font-bold text-accent">
+              Time in service
+            </span>
+            <span className="text-sm text-text-secondary">Under 12 years</span>
+          </div>
+          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
+            <span className="font-mono text-sm font-bold text-accent">
+              Maximum rank
+            </span>
+            <span className="text-sm text-text-secondary">
+              PO1 (E-6) or below
+            </span>
+          </div>
+          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
+            <span className="font-mono text-sm font-bold text-accent">
+              Governing policy
+            </span>
+            <span className="text-sm text-text-secondary">
+              MILPERSMAN 1236-010
+            </span>
+          </div>
+        </div>
+
+        <p className="text-text-secondary">
+          Request authorization through your chain of command, study the subtests
+          feeding your target rating&apos;s formula, take the AFCT, and submit a
+          cross-rate request if your new scores qualify. Your newest score
+          replaces all previous scores, so study before you test.
+        </p>
+
+        <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
+          <p className="text-sm font-semibold text-text-primary">Note</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            The AFCT is the most underutilized tool for active-duty sailors stuck
+            in a rating they did not choose. If your initial ASVAB locked you out
+            of your preferred career field, you can change that.
+          </p>
+        </aside>
+
         {/* Section 10: FAQ */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           Navy ASVAB Score FAQ
@@ -1249,6 +1847,17 @@ export default function NavyASVABScorePage() {
               face the original, stricter subtest requirements. AFQT minimums
               (31 for diploma, 50 for GED) are unchanged, but rating formulas
               are back to pre-crisis thresholds.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-text-primary">
+              Can active-duty sailors improve their ASVAB scores?
+            </h3>
+            <p className="mt-1 text-sm text-text-secondary">
+              Yes, through the AFCT (Armed Forces Classification Test). You need
+              24+ months in your current rate, under 12 years of service, and
+              PO1 (E-6) or below. The AFCT is identical to the ASVAB. New scores
+              replace previous scores and can unlock cross-rating opportunities.
             </p>
           </div>
         </div>

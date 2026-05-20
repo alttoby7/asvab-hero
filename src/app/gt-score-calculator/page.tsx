@@ -239,7 +239,7 @@ export default function GTScoreCalculatorPage() {
           you&apos;re within 5-10 points of a critical line, confirm the scaled
           number at MEPS. If you prefer to follow the math by hand, our{" "}
           <Link
-            href="/calculate-gt-score"
+            href="/gt-score"
             className="text-accent hover:text-accent-hover"
           >
             how to calculate your GT score
@@ -635,7 +635,7 @@ export default function GTScoreCalculatorPage() {
           reasoning. There is a limit to how far the number can climb, though,
           and our guide to the{" "}
           <Link
-            href="/gt-score-max"
+            href="/gt-score"
             className="text-accent hover:text-accent-hover"
           >
             highest possible GT score
