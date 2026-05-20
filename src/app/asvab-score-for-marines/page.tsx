@@ -3,9 +3,9 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "ASVAB Score for Marines: Line Scores, MOS Requirements (2026) | ASVAB Hero",
+  title: "ASVAB Score for Marines: Minimums & MOS Requirements (2026) | ASVAB Hero",
   description:
-    "Learn the minimum ASVAB score for Marines, all 5 line score formulas, MOS requirements for popular jobs, and FY2026 enlistment bonuses. Free calculator included.",
+    "The minimum ASVAB score for Marines and the exact line score each MOS requires in 2026, from infantry to cyber. See which Marine jobs you qualify for and FY2026 bonuses.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-score-for-marines",
   },
@@ -19,9 +19,9 @@ export default function ASVABScoreForMarinesPage() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline:
-            "ASVAB Score for Marines: Minimum Scores, Line Score Formulas, and MOS Requirements (2026)",
+            "ASVAB Score for Marines: Minimums and MOS Requirements (2026)",
           description:
-            "Learn the minimum ASVAB score for Marines, all 5 line score formulas, MOS requirements for popular jobs, and FY2026 enlistment bonuses. Free calculator included.",
+            "The minimum ASVAB score for Marines and the exact line score each MOS requires in 2026, from infantry to cyber. See which Marine jobs you qualify for and FY2026 bonuses.",
           url: "https://asvabhero.com/asvab-score-for-marines",
           author: {
             "@type": "Organization",
@@ -104,15 +104,11 @@ export default function ASVABScoreForMarinesPage() {
 
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          ASVAB Score for Marines: Minimum Scores, Line Score Formulas, and MOS Requirements (2026)
+          ASVAB Score for Marines: Minimums and MOS Requirements (2026)
         </h1>
 
         <p className="mt-4 text-text-secondary">
-          The minimum <strong>ASVAB score for Marines</strong> is 31. That&apos;s the second-lowest of any branch. It&apos;s also almost meaningless.
-        </p>
-
-        <p className="text-text-secondary">
-          A 31 AFQT gets you through the door at your recruiting station. It does not get you a job worth doing. Line scores determine which of 300+ Marine Corps MOSs you actually qualify for, and most websites get the formulas wrong. This page breaks down the real formulas, shows you how each subtest feeds into your line scores, and lists the requirements for the most popular Marine jobs in FY2026.
+          The minimum <strong>ASVAB score for Marines</strong> is 31, but that only gets you in the door. The score that decides your job is the line score each MOS requires. This page is the lookup: it lists the minimum score to enlist, then the exact line score needed for the most popular Marine jobs in FY2026 so you can see which ones you qualify for.
         </p>
 
         <p className="text-text-secondary">

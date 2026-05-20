@@ -3,9 +3,9 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Navy ASVAB Score: What You Need to Enlist | ASVAB Hero",
+  title: "Navy ASVAB Score Explained: How Navy Scoring Works | ASVAB Hero",
   description:
-    "Learn what navy ASVAB score you need to enlist and qualify for 80+ Navy ratings. Covers minimums by tier, composites, nuclear field, and SEAL requirements.",
+    "A complete guide to how the Navy ASVAB score works: the AFQT vs. composite two-gate system, why the Navy skips named line scores, and how rating formulas are built.",
   alternates: {
     canonical: "https://asvabhero.com/navy-asvab-score",
   },
@@ -15,9 +15,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "Navy ASVAB Score: What You Actually Need to Enlist and Pick Your Rating",
+    "Navy ASVAB Score Explained: How Navy Scoring Actually Works",
   description:
-    "Learn what navy ASVAB score you need to enlist and qualify for 80+ Navy ratings. Covers minimums by tier, composites, nuclear field, and SEAL requirements.",
+    "A complete guide to how the Navy ASVAB score works: the AFQT vs. composite two-gate system, why the Navy skips named line scores, and how rating formulas are built.",
   url: "https://asvabhero.com/navy-asvab-score",
   author: {
     "@type": "Organization",
@@ -126,17 +126,16 @@ export default function NavyASVABScorePage() {
       <JsonLd data={faqJsonLd} />
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          Navy ASVAB Score: What You Actually Need to Enlist and Pick Your
-          Rating
+          Navy ASVAB Score Explained: How Navy Scoring Actually Works
         </h1>
 
         <p className="mt-4 text-text-secondary">
-          The Navy&apos;s minimum AFQT is 31. But scoring a 31 qualifies you
-          for roughly 12 of 80+ ratings. Your{" "}
-          <strong>navy ASVAB score</strong> determines whether you enlist, and
-          your subtest score combinations determine which rating (Navy job) you
-          actually get. Those combinations are unique to the Navy and have
-          nothing to do with your AFQT alone.
+          The <strong>navy ASVAB score</strong> system confuses people because it
+          works differently from every other branch. This guide explains how it
+          actually works: a two-gate system where your AFQT percentile decides
+          whether you can enlist, and unique subtest combinations, not the named
+          line scores other branches use, decide which rating you get. Once you
+          understand the mechanics, the requirements make sense.
         </p>
         <p className="text-text-secondary">
           This guide covers the exact AFQT and subtest thresholds for

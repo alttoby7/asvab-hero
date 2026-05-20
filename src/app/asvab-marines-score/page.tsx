@@ -4,9 +4,9 @@ import JsonLd from "@/components/JsonLd";
 import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "ASVAB Marines Score: GT Formula, MOS Requirements (2026)",
+  title: "ASVAB Marines Score Explained: GT Formula & Line Scores (2026)",
   description:
-    "Learn the real ASVAB marines score requirements for 2026. GT formula corrected, all 5 line scores, Recon/MARSOC pipeline, and a GT tier-by-tier MOS breakdown.",
+    "A complete guide to how the Marine ASVAB score works: the correct GT formula (and the myth to ignore), all 5 USMC line scores explained, and how each subtest feeds your composites.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-marines-score",
   },
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "ASVAB Marines Score: What You Actually Need to Qualify in 2026",
+  headline: "ASVAB Marines Score Explained: GT Formula and Line Scores (2026)",
   description:
-    "Learn the real ASVAB marines score requirements for 2026. GT formula corrected, all 5 line scores, Recon/MARSOC pipeline, and a GT tier-by-tier MOS breakdown.",
+    "A complete guide to how the Marine ASVAB score works: the correct GT formula (and the myth to ignore), all 5 USMC line scores explained, and how each subtest feeds your composites.",
   url: "https://asvabhero.com/asvab-marines-score",
   author: {
     "@type": "Organization",
@@ -102,14 +102,16 @@ export default function ASVABMarinesScorePage() {
       <JsonLd data={faqJsonLd} />
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          ASVAB Marines Score: What You Actually Need to Qualify in 2026
+          ASVAB Marines Score Explained: GT Formula and Line Scores (2026)
         </h1>
 
         <p className="mt-4 text-text-secondary">
-          Search for your <strong>ASVAB marines score</strong> requirements and
-          you will find three different minimums, two different GT formulas, and
-          MOS tables that contradict each other from one site to the next. Some
-          of that misinformation will cost you weeks of misdirected study time.
+          This guide explains how the <strong>ASVAB marines score</strong>
+          {" "}actually works, starting with the part that trips up almost
+          everyone: the GT formula. Search for it and you will find two
+          conflicting versions, and studying the wrong one costs weeks of
+          misdirected prep. We settle the GT formula, then walk through how all
+          five USMC line scores are built from your subtests.
         </p>
 
         <p className="text-text-secondary">

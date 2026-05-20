@@ -4,9 +4,9 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Navy ASVAB Score Requirements 2026: Ratings, Nuclear, SEAL",
+  title: "Navy ASVAB Score Requirements 2026: Minimums by Rating",
   description:
-    "Learn the exact Navy ASVAB score requirements for 2026. AFQT minimums, 20 rating formulas, nuclear field paths, SEAL/EOD thresholds, and FY2026 bonus caps.",
+    "The minimum ASVAB scores you need to qualify for the Navy in 2026: AFQT floor by tier, exact rating composite minimums, nuclear field, and SEAL/EOD cutoffs. Check if you qualify.",
   alternates: {
     canonical: "https://asvabhero.com/navy-asvab-score-requirements",
   },
@@ -20,9 +20,9 @@ export default function NavyASVABScoreRequirementsPage() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline:
-            "Navy ASVAB Score Requirements: The Complete Qualification Guide for 2026",
+            "Navy ASVAB Score Requirements 2026: Minimums by Rating",
           description:
-            "Learn the exact Navy ASVAB score requirements for 2026. AFQT minimums, 20 rating formulas, nuclear field paths, SEAL/EOD thresholds, and FY2026 bonus caps.",
+            "The minimum ASVAB scores you need to qualify for the Navy in 2026: AFQT floor by tier, exact rating composite minimums, nuclear field, and SEAL/EOD cutoffs. Check if you qualify.",
           url: "https://asvabhero.com/navy-asvab-score-requirements",
           author: {
             "@type": "Organization",
@@ -113,14 +113,14 @@ export default function NavyASVABScoreRequirementsPage() {
 
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          Navy ASVAB Score Requirements: The Complete Qualification Guide for
-          2026
+          Navy ASVAB Score Requirements 2026: Minimums by Rating
         </h1>
 
         <p className="mt-4 text-text-secondary">
-          The Navy&apos;s minimum AFQT is 31. But that number only gets you
-          through the front door. A 31 qualifies you for roughly 12 of 80+
-          ratings, and most of those are deck jobs.
+          Use this page to find the exact minimum score you need to qualify for
+          the Navy and the specific rating you want. It lists the AFQT floor by
+          tier and the composite cutoffs for every rating, from entry-level deck
+          jobs at a 31 AFQT up through nuclear field, SEAL, and EOD.
         </p>
 
         <p className="text-text-secondary">
