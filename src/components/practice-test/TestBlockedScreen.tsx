@@ -2,6 +2,11 @@
 
 import Link from "next/link";
 import { useSession } from "@/hooks/useSession";
+import {
+  trackEvent,
+  PaywallEvents,
+  getPaywallContextId,
+} from "@/lib/analytics";
 
 interface TestBlockedScreenProps {
   reason: string;
@@ -39,7 +44,11 @@ export default function TestBlockedScreen({
 
   const headline = HEADLINES[reason] ?? "This feature requires Pro";
   const subtext = SUBTEXTS[reason] ?? "Upgrade to Pro to unlock this feature.";
-  const upgradeHref = `/upgrade?from=${reason}&variant=${variant}${subtest ? `&subtest=${subtest}` : ""}`;
+  const baseUpgradeHref = `/upgrade?from=${reason}&variant=${variant}${subtest ? `&subtest=${subtest}` : ""}`;
+  // Carry the paywall_context_id through to /upgrade so the journey stitches
+  // across the page boundary. Minted by the wrapper's mount effect; null-safe.
+  const pcid = getPaywallContextId();
+  const upgradeHref = pcid ? `${baseUpgradeHref}&pcid=${pcid}` : baseUpgradeHref;
   const backHref = isAuthed ? "/account" : "/";
   const backLabel = isAuthed ? "Back to dashboard" : "Back home";
 
@@ -73,6 +82,12 @@ export default function TestBlockedScreen({
         <div className="space-y-3">
           <Link
             href={upgradeHref}
+            onClick={() =>
+              trackEvent(PaywallEvents.PaywallCtaUpgradeClick, {
+                reason,
+                variant,
+              })
+            }
             className="block w-full rounded-xl bg-accent px-6 py-3.5 font-display text-base font-bold text-white no-underline transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)]"
           >
             Upgrade to Pro
@@ -81,6 +96,11 @@ export default function TestBlockedScreen({
           {reason === "free_diagnostic_used" && lastAttemptId && (
             <Link
               href="/account"
+              onClick={() =>
+                trackEvent(PaywallEvents.PaywallCtaSecondaryClick, {
+                  which: "results",
+                })
+              }
               className="block w-full rounded-xl border border-navy-border bg-navy px-6 py-3 text-sm font-semibold text-text-secondary no-underline transition-colors hover:bg-navy-lighter hover:text-text-primary"
             >
               View my last results
@@ -90,6 +110,11 @@ export default function TestBlockedScreen({
           {reason === "free_user_no_diagnostic" && (
             <Link
               href="/practice-test?variant=diagnostic"
+              onClick={() =>
+                trackEvent(PaywallEvents.PaywallCtaSecondaryClick, {
+                  which: "diagnostic",
+                })
+              }
               className="block w-full rounded-xl border border-navy-border bg-navy px-6 py-3 text-sm font-semibold text-text-secondary no-underline transition-colors hover:bg-navy-lighter hover:text-text-primary"
             >
               Take my free diagnostic
@@ -98,6 +123,7 @@ export default function TestBlockedScreen({
 
           <Link
             href={backHref}
+            onClick={() => trackEvent(PaywallEvents.PaywallBackClick, { reason })}
             className="block w-full rounded-xl border border-navy-border bg-navy px-6 py-3 text-sm font-semibold text-text-secondary no-underline transition-colors hover:bg-navy-lighter hover:text-text-primary"
           >
             {backLabel}

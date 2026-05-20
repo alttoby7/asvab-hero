@@ -4,6 +4,7 @@ import { Suspense, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useSession } from "@/hooks/useSession";
 import { OnboardingForm } from "@/components/onboarding/OnboardingForm";
+import { trackEvent, PaywallEvents } from "@/lib/analytics";
 
 function OnboardingPageInner() {
   const router = useRouter();
@@ -14,6 +15,16 @@ function OnboardingPageInner() {
   useEffect(() => {
     if (!sessionLoading && !session) router.replace("/login?next=/onboarding");
   }, [session, sessionLoading, router]);
+
+  // Close the funnel: Stripe success_url is /onboarding?welcome=1.
+  useEffect(() => {
+    if (!isWelcome) return;
+    try {
+      trackEvent(PaywallEvents.CheckoutReturnedCompleted, {});
+    } catch {
+      /* swallow */
+    }
+  }, [isWelcome]);
 
   if (sessionLoading) {
     return (

@@ -1,14 +1,20 @@
 "use client";
 
-import { Suspense, useEffect } from "react";
+import { Suspense, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import PricingPlans from "@/components/PricingPlans";
 import BrandHero from "@/components/BrandHero";
 import EmailCapture from "@/components/EmailCapture";
+import WhySurvey from "@/components/feedback/WhySurvey";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
-import { trackEvent, FunnelEvents } from "@/lib/analytics";
+import {
+  trackEvent,
+  FunnelEvents,
+  PaywallEvents,
+  adoptPaywallContextId,
+} from "@/lib/analytics";
 
 type FromParam =
   | "variant_picker"
@@ -27,12 +33,62 @@ const HEADLINES: Record<NonNullable<FromParam>, string> = {
 function UpgradeContent() {
   const searchParams = useSearchParams();
   const from = searchParams.get("from") as FromParam;
+  const status = searchParams.get("status");
+  const isCancelled = status === "cancelled";
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
 
+  const pricingRef = useRef<HTMLDivElement | null>(null);
+  const scroll50Ref = useRef(false);
+  const scroll90Ref = useRef(false);
+  const faqFiredRef = useRef<Set<string>>(new Set());
+
   useEffect(() => {
+    // Existing GA4 event — unchanged.
     trackEvent(FunnelEvents.UpgradePageView, { from: from ?? "direct" });
+    // First-party: adopt an inbound pcid (URL) or ensure one, then fire the
+    // additive event + detect the Stripe cancel return.
+    try {
+      adoptPaywallContextId(searchParams.get("pcid"));
+      trackEvent(PaywallEvents.UpgradePageViewed, { from: from ?? "direct" });
+      if (isCancelled) {
+        trackEvent(PaywallEvents.CheckoutReturnedCancelled, {});
+      }
+    } catch {
+      /* swallow */
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [from]);
+
+  // Pricing scroll-depth (IntersectionObserver, once each).
+  useEffect(() => {
+    const node = pricingRef.current;
+    if (!node || typeof IntersectionObserver === "undefined") return;
+    const obs = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          const ratio = entry.intersectionRatio;
+          if (ratio >= 0.5 && !scroll50Ref.current) {
+            scroll50Ref.current = true;
+            trackEvent(PaywallEvents.PricingScrolled50, {});
+          }
+          if (ratio >= 0.9 && !scroll90Ref.current) {
+            scroll90Ref.current = true;
+            trackEvent(PaywallEvents.PricingScrolled90, {});
+          }
+        }
+      },
+      { threshold: [0.5, 0.9] },
+    );
+    obs.observe(node);
+    return () => obs.disconnect();
+  }, []);
+
+  function handleFaqOpen(q: string) {
+    if (faqFiredRef.current.has(q)) return;
+    faqFiredRef.current.add(q);
+    trackEvent(PaywallEvents.FaqOpened, { q });
+  }
 
   const isLoading = sessionLoading || entitlementLoading;
   const headline = (from && HEADLINES[from]) || "Upgrade to Pro";
@@ -87,7 +143,12 @@ function UpgradeContent() {
         </div>
       )}
 
-      <div className="mb-10">
+      <div
+        className="mb-10"
+        onSubmitCapture={() =>
+          trackEvent(PaywallEvents.EmailCaptureExitClick, { tag: "upgrade-exit" })
+        }
+      >
         <EmailCapture
           variant="inline"
           headline="Not ready to upgrade? Get the free 30-day plan first"
@@ -98,7 +159,9 @@ function UpgradeContent() {
       </div>
 
       {/* Plan grid */}
-      <PricingPlans defaultBilling="annual" source={from ?? "upgrade_page"} />
+      <div ref={pricingRef}>
+        <PricingPlans defaultBilling="annual" source={from ?? "upgrade_page"} />
+      </div>
 
       {/* Tight 2-question FAQ */}
       <div className="mt-16">
@@ -106,27 +169,48 @@ function UpgradeContent() {
           Quick answers
         </h2>
         <div className="grid gap-6 sm:grid-cols-2">
-          <div className="rounded-2xl border border-navy-border bg-navy-light p-6">
-            <h3 className="font-semibold text-text-primary mb-2">
+          <details
+            className="rounded-2xl border border-navy-border bg-navy-light p-6"
+            onToggle={(e) => {
+              if ((e.currentTarget as HTMLDetailsElement).open)
+                handleFaqOpen("why_now");
+            }}
+          >
+            <summary className="cursor-pointer font-semibold text-text-primary marker:text-accent">
               Why upgrade now?
-            </h3>
-            <p className="text-sm text-text-secondary leading-relaxed">
+            </summary>
+            <p className="mt-2 text-sm text-text-secondary leading-relaxed">
               Most recruits prep for 4–8 weeks. Practice volume is the single
               biggest predictor of score improvement — Pro removes every limit so
               you can drill as much as you need.
             </p>
-          </div>
-          <div className="rounded-2xl border border-navy-border bg-navy-light p-6">
-            <h3 className="font-semibold text-text-primary mb-2">
+          </details>
+          <details
+            className="rounded-2xl border border-navy-border bg-navy-light p-6"
+            onToggle={(e) => {
+              if ((e.currentTarget as HTMLDetailsElement).open)
+                handleFaqOpen("not_for_me");
+            }}
+          >
+            <summary className="cursor-pointer font-semibold text-text-primary marker:text-accent">
               What if it&apos;s not for me?
-            </h3>
-            <p className="text-sm text-text-secondary leading-relaxed">
+            </summary>
+            <p className="mt-2 text-sm text-text-secondary leading-relaxed">
               7-day money-back guarantee, no questions asked. Cancel anytime
               after that and your access continues until the billing period ends.
             </p>
-          </div>
+          </details>
         </div>
       </div>
+
+      {/* Cancel-return survey (v1: checkout_cancelled trigger only). Non-modal,
+          never blocks navigation, self-suppresses. */}
+      {isCancelled && (
+        <WhySurvey
+          trigger="checkout_cancelled"
+          accessToken={session?.access_token ?? null}
+        />
+      )}
     </div>
   );
 }

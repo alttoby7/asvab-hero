@@ -4,7 +4,13 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
-import { trackEvent, FunnelEvents } from "@/lib/analytics";
+import {
+  trackEvent,
+  FunnelEvents,
+  PaywallEvents,
+  getPaywallContextId,
+  flush,
+} from "@/lib/analytics";
 import Link from "next/link";
 
 const MONTHLY_PRICE_ID = "price_1TRIUPDjRScowBLlHUFX2nzc";
@@ -44,6 +50,11 @@ export default function PricingPlans({
 
   const isLoading = sessionLoading || entitlementLoading;
 
+  function toggleBilling(to: "monthly" | "annual") {
+    setBilling(to);
+    trackEvent(PaywallEvents.PlanToggled, { to });
+  }
+
   async function handleUpgradeClick() {
     if (isLoading) return;
 
@@ -67,10 +78,19 @@ export default function PricingPlans({
       tier: billing,
       from: source ?? "unknown",
     });
+    // Additive first-party event.
+    trackEvent(PaywallEvents.CheckoutClick, {
+      tier: billing,
+      from: source ?? "unknown",
+    });
 
     try {
       const returnPath = "/account/billing";
       const tier = billing;
+      // Carry pcid into Stripe so the journey is recoverable across the
+      // round-trip even if URL/sessionStorage is lost (additive body field;
+      // stripe-checkout mirrors it into subscription metadata + cancel_url).
+      const paywallContextId = getPaywallContextId();
       const res = await fetch(
         `${SUPABASE_URL}/functions/v1/stripe-checkout`,
         {
@@ -79,7 +99,13 @@ export default function PricingPlans({
             Authorization: `Bearer ${session.access_token}`,
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ tier, returnPath }),
+          body: JSON.stringify({
+            tier,
+            returnPath,
+            ...(paywallContextId
+              ? { paywall_context_id: paywallContextId }
+              : {}),
+          }),
         }
       );
 
@@ -90,8 +116,14 @@ export default function PricingPlans({
 
       const { url } = await res.json();
       if (!url) throw new Error("No checkout URL returned");
+      trackEvent(PaywallEvents.CheckoutSessionCreated, { tier: billing });
+      trackEvent(PaywallEvents.CheckoutRedirected, { tier: billing });
+      // The redirect leaves the page — beacon the queue synchronously first.
+      // flush() swallows all errors; never blocks the redirect.
+      flush(true);
       window.location.href = url;
     } catch (err: unknown) {
+      trackEvent(PaywallEvents.CheckoutReturnedError, { tier: billing });
       setCheckoutError(
         err instanceof Error ? err.message : "Something went wrong. Please try again."
       );
@@ -118,7 +150,7 @@ export default function PricingPlans({
       {/* Billing toggle */}
       <div className="flex items-center justify-center gap-3 mb-8">
         <button
-          onClick={() => setBilling("monthly")}
+          onClick={() => toggleBilling("monthly")}
           className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
             billing === "monthly"
               ? "bg-navy-lighter text-text-primary"
@@ -128,7 +160,7 @@ export default function PricingPlans({
           Monthly
         </button>
         <button
-          onClick={() => setBilling("annual")}
+          onClick={() => toggleBilling("annual")}
           className={`flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
             billing === "annual"
               ? "bg-navy-lighter text-text-primary"

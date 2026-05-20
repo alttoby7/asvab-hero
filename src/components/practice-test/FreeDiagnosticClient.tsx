@@ -6,7 +6,15 @@ import TestBlockedScreen from "./TestBlockedScreen";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { useSession } from "@/hooks/useSession";
 import { canStartVariant, checkAnonDiagnosticUsed } from "@/lib/practice/gate";
-import { trackEvent, FunnelEvents } from "@/lib/analytics";
+import {
+  trackEvent,
+  FunnelEvents,
+  PaywallEvents,
+  ensurePaywallContextId,
+  classifyProbableReason,
+  paywallContextToProps,
+} from "@/lib/analytics";
+import { buildPaywallContext, deriveAuthState } from "@/lib/paywall-context";
 
 function FreeDiagnosticInner() {
   const { session, loading: sessionLoading } = useSession();
@@ -44,12 +52,38 @@ function TestBlockedScreenWithEvent({
   reason: string;
   variant: string;
 }) {
+  const { session } = useSession();
+  const { entitlement } = useEntitlement();
   useEffect(() => {
+    // Existing GA4 event — unchanged.
     trackEvent(FunnelEvents.PaywallShown, {
       reason,
       from: "free_practice_test",
       variant,
     });
+    // Additive first-party rich event.
+    try {
+      const pcid = ensurePaywallContextId();
+      const ctx = buildPaywallContext({
+        entrySurface: "free_practice_test",
+        authState: deriveAuthState({
+          isAuthed: !!session,
+          isPro: entitlement.isPro,
+          isTrial: entitlement.isTrial,
+        }),
+        variant,
+        reason,
+        freeDiagnosticUsedAt: entitlement.freeDiagnosticUsedAt,
+      });
+      trackEvent(PaywallEvents.PaywallViewed, {
+        ...paywallContextToProps(ctx),
+        probable_reason_category: classifyProbableReason(ctx),
+        paywall_context_id: pcid,
+      });
+    } catch {
+      /* swallow */
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reason, variant]);
   return <TestBlockedScreen reason={reason} variant={variant} />;
 }
