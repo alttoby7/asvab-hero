@@ -40,8 +40,11 @@ except ImportError:
 
 
 # Schedule configs for auto-creating monitors on first check-in.
+# NOTE: constant name kept for import stability; the listmonk drip's real
+# droplet crontab runs at 14:30 UTC (30 14 * * *), so the monitor schedule
+# must match it or Sentry logs false "missed" check-ins daily.
 MONITOR_CONFIG_DAILY_2AM_UTC: dict = {
-    "schedule": {"type": "crontab", "value": "0 2 * * *"},
+    "schedule": {"type": "crontab", "value": "30 14 * * *"},
     "timezone": "UTC",
     "checkin_margin": 5,       # minutes — alert if no in_progress within 5 min of expected
     "max_runtime": 30,         # minutes — alert if check-in not closed within 30 min
