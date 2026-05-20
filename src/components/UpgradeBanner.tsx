@@ -2,17 +2,18 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
 
 const DISMISSED_KEY = "asvabhero.upgradeBannerDismissed";
 
 export default function UpgradeBanner() {
+  const pathname = usePathname();
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
   const [dismissed, setDismissed] = useState(true); // start hidden to avoid flash
 
-  // Read localStorage after mount (client-only)
   useEffect(() => {
     try {
       setDismissed(localStorage.getItem(DISMISSED_KEY) === "1");
@@ -30,7 +31,7 @@ export default function UpgradeBanner() {
     setDismissed(true);
   }
 
-  // Don't render: no session, loading, isPro, or dismissed
+  if (pathname?.startsWith("/app")) return null;
   if (sessionLoading || entitlementLoading) return null;
   if (!session) return null;
   if (entitlement.isPro) return null;

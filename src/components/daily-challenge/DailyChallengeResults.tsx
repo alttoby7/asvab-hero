@@ -125,10 +125,10 @@ export default function DailyChallengeResults({
           Back to Dashboard
         </Link>
         <Link
-          href="/practice-test"
+          href="/flashcards"
           className="flex-1 rounded-xl border border-navy-border bg-navy-light px-6 py-3 text-center text-sm font-semibold text-text-secondary no-underline hover:bg-navy-lighter hover:text-text-primary"
         >
-          Full Practice Test
+          Review Flashcards
         </Link>
       </div>
     </div>

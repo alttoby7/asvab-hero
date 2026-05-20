@@ -5,7 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 const RANKS_LINKS = [
   { href: "/air-force-ranks", label: "Air Force Ranks" },
@@ -15,6 +15,7 @@ const RANKS_LINKS = [
 
 export default function Nav() {
   const router = useRouter();
+  const pathname = usePathname();
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
   const [open, setOpen] = useState(false);
@@ -22,6 +23,8 @@ export default function Nav() {
   const [accountOpen, setAccountOpen] = useState(false);
   const ranksRef = useRef<HTMLDivElement>(null);
   const accountRef = useRef<HTMLDivElement>(null);
+
+  if (pathname?.startsWith("/app")) return null;
 
   async function handleSignOut() {
     const supabase = getSupabaseBrowserClient();
