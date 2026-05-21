@@ -14,11 +14,76 @@ const b6 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/e
 const b7 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-7.json'), 'utf8'));
 const b8 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-8.json'), 'utf8'));
 const b9 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-9.json'), 'utf8'));
+const b10 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-10.json'), 'utf8'));
 const tags = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/question-tags.seed.json'), 'utf8'));
 const tagMap = new Map(tags.map(t => [t.external_key.toUpperCase(), t]));
 
 const sqlEscape = s => "'" + String(s).replace(/'/g, "''") + "'";
 const jsonbEscape = arr => "'" + JSON.stringify(arr).replace(/'/g, "''") + "'::jsonb";
+
+// ---------------------------------------------------------------------------
+// item_family_id: groups near-sibling items (same template / skill / head-word)
+// so WS6's sampler can enforce a sibling cooldown. An explicit JSON field
+// (item_family_id) always wins; otherwise we derive a family from content for
+// the over-represented AFQT templates the audit flagged, falling back to a
+// unique per-item id (topic_id::external_key). 100% of AFQT items (ar.*, mk.*,
+// wk.*, pc.*) are guaranteed a family id; non-AFQT items get a unique fallback.
+// ---------------------------------------------------------------------------
+function deriveFamily(externalKey, topicId, stem) {
+  const s = String(stem);
+  const sl = s.toLowerCase();
+  const t = topicId || '';
+
+  // WK: group by head-word / taught morpheme (the ALL-CAPS token in the stem).
+  // The same word/morpheme tested in synonym, context-clue, prefix, or root
+  // format becomes one family so a drill never serves the same vocabulary twice.
+  if (t.startsWith('wk.')) {
+    const caps = (s.match(/\b[A-Z]{4,}\b/g) || [])
+      .filter(w => !['ASVAB', 'WORD', 'MOST', 'NEARLY', 'MEANS', 'TRAP'].includes(w));
+    if (caps.length) return `wk.headword::${caps[0].toLowerCase()}`;
+  }
+
+  if (t === 'ar.percent') {
+    if (/mark(ed)? ?up|markup/.test(sl) && /discount|off|sale/.test(sl)) return 'ar.percent::markup-then-discount';
+    if (/net/.test(sl) && /(gain|rose|rises|grew|grow|increase|up).*(then|next|month).*(los|fell|fall|decrease|down)/.test(sl)) return 'ar.percent::sequential-gain-loss';
+    if (/tip/.test(sl) && /tax|service fee/.test(sl)) return 'ar.percent::tip-plus-tax';
+    if (/interest/.test(sl)) return 'ar.percent::simple-interest';
+    if (/percent (increase|decrease)|percent change|net percent/.test(sl)) return 'ar.percent::percent-change';
+    if (/discount|% off|on sale|marked down|markdown/.test(sl)) return 'ar.percent::single-discount';
+    if (/what is \d+% of|what percent|% of \d/.test(sl)) return 'ar.percent::basic-percent';
+  }
+  if (t === 'ar.ratio-proportion') {
+    if (/scale|map|inch.*mile|1 ?in/.test(sl)) return 'ar.ratio-proportion::map-scale';
+    if (/flour|sugar|recipe|cookies|batch/.test(sl)) return 'ar.ratio-proportion::recipe-ratio';
+    if (/exchange rate|usd|eur|dollar.*euro|currency/.test(sl)) return 'ar.ratio-proportion::exchange-rate';
+  }
+  if (t === 'ar.rate-distance-time') {
+    if (/fill|drain|pump|tank|gpm|gallons per/.test(sl)) return 'ar.rate-distance-time::fill-drain';
+    if (/two trains|catch up|toward each other|apart.*toward|head.?on/.test(sl)) return 'ar.rate-distance-time::two-bodies';
+  }
+  if (t === 'ar.word-problems') {
+    if (/pay raise|raise.*pay|% (pay )?raise|monthly pay/.test(sl)) return 'ar.word-problems::pay-raise';
+  }
+  if (t === 'mk.geometry') {
+    if (/(right triangle|hypotenuse|legs? of)/.test(sl) && /\d/.test(sl)) return 'mk.geometry::pythagorean-triple';
+  }
+  if (t === 'mk.exponents-polynomials') {
+    if (/simplify/.test(sl) && /[·*^]|x[²-¹⁰-⁹]/.test(s)) return 'mk.exponents-polynomials::simplify-power';
+  }
+  if (t === 'mk.algebra-linear') {
+    if (/consecutive (odd|even|integer)/.test(sl)) return 'mk.algebra-linear::consecutive-integers';
+  }
+  if (t === 'mk.number-properties') {
+    if (/prime number|is prime|which.*prime/.test(sl)) return 'mk.number-properties::identify-prime';
+    if (/least common multiple|\blcm\b/.test(sl)) return 'mk.number-properties::lcm';
+    if (/greatest common factor|\bgcf\b/.test(sl)) return 'mk.number-properties::gcf';
+  }
+  if (t.startsWith('pc.')) {
+    if (/urban heat island/.test(sl)) return 'pc.passage::urban-heat-island';
+  }
+
+  return `${t || 'misc'}::${externalKey}`;
+}
 
 function normalize(items, source) {
   return items.map((q, i) => {
@@ -43,6 +108,7 @@ function normalize(items, source) {
     if (!['draft', 'verified', 'trusted'].includes(status)) {
       throw new Error(`Invalid status "${status}" at ${source}[${i}] key=${externalKey}`);
     }
+    const itemFamilyId = q.item_family_id ?? deriveFamily(externalKey, topicId, stem);
     return {
       external_key: externalKey,
       subtest: q.subtest,
@@ -54,6 +120,7 @@ function normalize(items, source) {
       explanation: q.explanation ?? '',
       status,
       active: status !== 'draft',
+      item_family_id: itemFamilyId,
     };
   });
 }
@@ -69,6 +136,7 @@ const all = [
   ...normalize(b7, 'batch-7'),
   ...normalize(b8, 'batch-8'),
   ...normalize(b9, 'batch-9'),
+  ...normalize(b10, 'batch-10'),
 ];
 
 const seen = new Set();
@@ -82,9 +150,9 @@ lines.push('-- Generated by scripts/build-questions-seed.mjs');
 lines.push('-- Idempotent: deletes existing rows before insert.');
 lines.push('begin;');
 lines.push('delete from practice_questions;');
-lines.push('insert into practice_questions (external_key, subtest, topic_id, difficulty, stem, choices, correct_index, explanation, active, status) values');
+lines.push('insert into practice_questions (external_key, subtest, topic_id, difficulty, stem, choices, correct_index, explanation, active, status, item_family_id) values');
 const valueLines = all.map(q =>
-  `  (${sqlEscape(q.external_key)}, ${sqlEscape(q.subtest)}, ${sqlEscape(q.topic_id)}, ${q.difficulty}, ${sqlEscape(q.stem)}, ${jsonbEscape(q.choices)}, ${q.correct_index}, ${sqlEscape(q.explanation)}, ${q.active ? 'true' : 'false'}, ${sqlEscape(q.status)})`
+  `  (${sqlEscape(q.external_key)}, ${sqlEscape(q.subtest)}, ${sqlEscape(q.topic_id)}, ${q.difficulty}, ${sqlEscape(q.stem)}, ${jsonbEscape(q.choices)}, ${q.correct_index}, ${sqlEscape(q.explanation)}, ${q.active ? 'true' : 'false'}, ${sqlEscape(q.status)}, ${sqlEscape(q.item_family_id)})`
 );
 lines.push(valueLines.join(',\n') + ';');
 lines.push('commit;');
@@ -105,3 +173,37 @@ console.log('Status:', byStatus, `(active=${all.filter(q => q.active).length})`)
 console.log('Difficulty:', byDifficulty);
 console.log('Topics with <3 items (still under-served):',
   Object.entries(byTopic).filter(([, n]) => n < 3).map(([t, n]) => `${t}=${n}`).join(', ') || 'none');
+
+// --- item_family_id coverage check (AFQT must be 100%) ---
+const isAfqt = t => /^(ar|mk|wk|pc)\./.test(t || '');
+const afqtItems = all.filter(q => isAfqt(q.topic_id));
+const afqtMissingFamily = afqtItems.filter(q => !q.item_family_id);
+const families = new Set(all.map(q => q.item_family_id));
+const afqtFamilies = new Set(afqtItems.map(q => q.item_family_id));
+console.log(
+  `item_family_id: ${all.length}/${all.length} items assigned; ${families.size} distinct families ` +
+  `(AFQT: ${afqtItems.length} items in ${afqtFamilies.size} families, missing=${afqtMissingFamily.length})`
+);
+if (afqtMissingFamily.length) {
+  throw new Error(`AFQT items missing item_family_id: ${afqtMissingFamily.map(q => q.external_key).join(', ')}`);
+}
+
+// --- AFQT active floor check: each AFQT topic needs >=12 active items with d1/d2/d3 coverage ---
+const afqtActiveFloor = {};
+for (const q of all) {
+  if (!isAfqt(q.topic_id) || !q.active) continue;
+  const f = (afqtActiveFloor[q.topic_id] ??= { total: 0, d1: 0, d2: 0, d3plus: 0 });
+  f.total++;
+  if (q.difficulty === 1) f.d1++;
+  else if (q.difficulty === 2) f.d2++;
+  else f.d3plus++;
+}
+console.log('\nAFQT active floor (target: >=12 total, with d1>=1, d2>=1, d3+>=1):');
+const floorGaps = [];
+for (const t of Object.keys(afqtActiveFloor).sort()) {
+  const f = afqtActiveFloor[t];
+  const ok = f.total >= 12 && f.d1 >= 1 && f.d2 >= 1 && f.d3plus >= 1;
+  if (!ok) floorGaps.push(t);
+  console.log(`  ${ok ? 'OK ' : 'GAP'} ${t.padEnd(30)} total=${String(f.total).padStart(3)} d1=${f.d1} d2=${f.d2} d3+=${f.d3plus}`);
+}
+console.log(floorGaps.length ? `Floor gaps remaining: ${floorGaps.join(', ')}` : 'All AFQT topics meet the active floor.');

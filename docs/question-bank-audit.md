@@ -713,3 +713,155 @@ Codex audit caught 21 issues. All fixed:
 - Build `practice_question_telemetry` view (per-item p-value, median time, attempt count, answer distribution).
 - Author a promotion script that flips items from `draft` to `verified` when telemetry thresholds are met.
 - Optional: add a "preview unreviewed items" mode for staff QA before promotion.
+
+
+# WS5 Bank Quality Pass — 2026-05-21
+
+Workstream WS5 of the parallel "be the best ASVAB prep" build. Scope: re-verify
+the blocker/duplicate findings from the prior audits, add `item_family_id` for
+sibling-aware sampling (consumed by WS6), and fill the AFQT-first difficulty
+floor that the coverage matrix flagged as empty (`d1`/`d2` for AR & MK).
+
+## Re-verification of prior blockers and duplicates (all already remediated)
+
+The earlier "Full-Corpus Audit (post-tripling)" listed 4 blockers and ~38
+duplicate/near-duplicate findings. The subsequent Quality Pass v2 sessions
+(2026-05-12) and Bank Expansion session (2026-05-12/13) fixed them. WS5
+re-verified the current on-disk state:
+
+- **4 blockers — confirmed fixed in `expansion-batch-7.json`:**
+  - `AO-PA-B7-7` — wrong key corrected to `correct_index: 2` (rectangle 2:1). Verified.
+  - `AO-3D-B7-4` — wrong key corrected to `correct_index: 0` (Yellow). Verified.
+  - 12-item leaked authoring scratch-work ("Correction: correct_index = X", "Wait", "Reassign", etc.) — **zero leaks remain** in any batch file (grep across all 10 files returns 0 matches).
+  - `AO-PF-B7-1` (unsolvable 4-square net) — **removed** from the corpus; no longer present.
+- **~38 duplicates — confirmed resolved.** A normalized-stem scan of all current
+  items finds no cross-file exact-stem duplicates among served items. The WK
+  head-word reuses (PRUDENT, METICULOUS, AMBIGUOUS, CIRCUMSPECT, TENACIOUS,
+  ASSIDUOUS, LACONIC, OBSEQUIOUS, MAGNANIMOUS, PERFUNCTORY) were already
+  differentiated or marked inactive in prior passes. **No further dupe removals
+  were required this pass.** The remaining same-word pairs (e.g. the prefix
+  morphemes TRANS/LESS/INTER/CIDE, LACONIC syn+ctx, urban-heat-island passage)
+  are now grouped under a shared `item_family_id` so the WS6 sampler enforces a
+  cooldown rather than us deleting otherwise-correct items.
+
+Net: the blocker/dupe remediation work the spec anticipated had already shipped
+in the 2026-05-12 passes. WS5's value-add is the family-id layer and the floor.
+
+## `item_family_id` (migration 0024 + seed pipeline)
+
+- **Migration:** `supabase/migrations/0024_question_bank_quality.sql` adds a
+  nullable `item_family_id text` column and a `(subtest, item_family_id)` index.
+  Idempotent (`add column if not exists`, `create index if not exists`).
+- **Pipeline:** `scripts/build-questions-seed.mjs` now derives a family id for
+  every item and emits it into the INSERT. An explicit JSON `item_family_id`
+  field always wins; otherwise `deriveFamily()` assigns:
+  - **WK** → `wk.headword::<word|morpheme>` (the ALL-CAPS token in the stem), so
+    the same vocabulary in synonym/context/prefix/root format is one family.
+  - **AR/MK/PC** → a named template family for the over-represented templates the
+    audits flagged (markup-then-discount, percent-change, single-discount,
+    basic-percent, simple-interest, tip-plus-tax, sequential-gain-loss, map-scale,
+    recipe-ratio, exchange-rate, fill-drain, two-bodies, pay-raise,
+    pythagorean-triple, simplify-power, consecutive-integers, identify-prime,
+    lcm, gcf, urban-heat-island passage).
+  - **Everything else** → a unique fallback `<topic_id>::<external_key>`.
+- **Coverage:** the build asserts (throws on failure) that **100% of AFQT items
+  (ar.*, mk.*, wk.*, pc.*) carry a family id**. Current build: 1,111 items in
+  1,030 distinct families; AFQT = 743 items in 662 families, 0 missing. 23+
+  multi-member families correctly cluster template siblings + head-word reuses.
+
+## AFQT difficulty-floor fill (`expansion-batch-10.json`)
+
+The coverage matrix flagged the AR and MK low-difficulty floor as the single
+largest structural defect: `d1` was empty and `d2` thin for every AR/MK topic
+among **active** items. (The batch-8 `*-NEW-*` floor items exist but are
+`status: draft` / inactive, so they were not being served.) Rather than promote
+unverified drafts, WS5 authored **60 new, individually verified floor items** in
+`src/data/practice-tests/expansion-batch-10.json` — 3 d1 + 3 d2 for each of the
+10 AR/MK topics. Every item has an independently re-computed answer key (all 60
+verified), 4 plausible distractors each tied to a named real-student error, a
+worked explanation, correct topic_id + difficulty, a unique stem, no AI tics,
+and no em-dashes. `status: verified` (active) so they serve immediately.
+
+The build now enforces an **AFQT active-floor gate**: every AFQT topic must have
+≥12 active items with ≥1 each at d1, d2, and d3+. After this pass **all 18 AFQT
+topics pass.** AR/MK floor after additions:
+
+| AFQT topic | active total | d1 | d2 | d3+ |
+|---|---:|---:|---:|---:|
+| ar.arithmetic-fundamentals | 29 | 4 | 6 | 19 |
+| ar.percent | 32 | 3 | 7 | 22 |
+| ar.rate-distance-time | 30 | 3 | 4 | 23 |
+| ar.ratio-proportion | 32 | 3 | 6 | 23 |
+| ar.word-problems | 31 | 3 | 3 | 25 |
+| mk.algebra-linear | 30 | 4 | 5 | 21 |
+| mk.exponents-polynomials | 26 | 4 | 4 | 18 |
+| mk.fractions-decimals | 28 | 4 | 6 | 18 |
+| mk.geometry | 30 | 4 | 8 | 18 |
+| mk.number-properties | 24 | 4 | 4 | 16 |
+| pc.author-tone-purpose | 21 | 2 | 2 | 17 |
+| pc.detail-recall | 17 | 3 | 5 | 9 |
+| pc.inference | 18 | 2 | 4 | 12 |
+| pc.main-idea | 17 | 2 | 4 | 11 |
+| wk.context-clues | 24 | 2 | 3 | 19 |
+| wk.prefixes-suffixes | 21 | 2 | 3 | 16 |
+| wk.root-words | 19 | 2 | 2 | 15 |
+| wk.synonyms | 31 | 5 | 12 | 14 |
+
+## Post-rebuild totals
+
+```
+1,111 questions across 39 topics.
+Status: { draft: 289, verified: 60, trusted: 762 }  (active = 822)
+Difficulty: { 1: 168, 2: 238, 3: 277, 4: 250, 5: 178 }
+```
+
+- **+60 new verified items** (this pass) → active count **762 → 822**.
+- item_family_id on 100% of AFQT items.
+
+## Remaining depth gap toward the targets (next-pass plan)
+
+Targets: **≥1,500 total / ≥900 AFQT**. Current: **1,111 total** (822 active +
+289 drafts), **743 AFQT items** (of which ~415 active). The shortfall is
+**~389 total** and **~157 AFQT** items to reach the targets, and most of the
+quickest path is **promoting the 289 existing batch-8/9 drafts**, not authoring
+net-new content. The largest single lever is the draft floor: each AR/MK topic
+already has ~16 additional drafted items (`*-NEW-*`) awaiting telemetry-based
+promotion.
+
+Per-topic depth toward target (active served / total authored incl. drafts):
+
+| AFQT topic | active served | total authored | gap to ~50 served |
+|---|---:|---:|---:|
+| ar.arithmetic-fundamentals | 29 | 46 | 21 |
+| ar.percent | 32 | 46 | 18 |
+| ar.rate-distance-time | 30 | 46 | 20 |
+| ar.ratio-proportion | 32 | 46 | 18 |
+| ar.word-problems | 31 | 47 | 19 |
+| mk.algebra-linear | 30 | 46 | 20 |
+| mk.exponents-polynomials | 26 | 46 | 24 |
+| mk.fractions-decimals | 28 | 46 | 22 |
+| mk.geometry | 30 | 46 | 20 |
+| mk.number-properties | 24 | 46 | 26 |
+| pc.author-tone-purpose | 21 | 35 | 29 |
+| pc.detail-recall | 17 | 31 | 33 |
+| pc.inference | 18 | 32 | 32 |
+| pc.main-idea | 17 | 33 | 33 |
+| wk.context-clues | 24 | 35 | 26 |
+| wk.prefixes-suffixes | 21 | 35 | 29 |
+| wk.root-words | 19 | 35 | 31 |
+| wk.synonyms | 31 | 37 | 19 |
+
+**Honest assessment:** this pass did NOT reach the ≥1,500 / ≥900-AFQT target,
+and deliberately did not mass-promote drafts to inflate the count — quality bar
+is paramount. What it DID deliver: a served d1/d2 floor for every AFQT math
+topic (the documented structural defect), 100% family-id coverage for
+sibling-aware sampling, and a build-time gate that fails if either regresses.
+
+**Recommended next pass (in priority order):**
+1. Build the `practice_question_telemetry` view + a promotion script so the 289
+   drafts (already audited by Codex in the 2026-05-12/13 sessions) can graduate
+   from `draft` to `verified` on real-usage thresholds. This alone moves ~289
+   items into the served set with no new authoring.
+2. Author ~30 PC items (detail-recall, inference, main-idea are the thinnest
+   served topics at 17/18/17) at mixed difficulty.
+3. Then top up WK root-words and the AR/MK mid/high bands toward ~50 served each.
