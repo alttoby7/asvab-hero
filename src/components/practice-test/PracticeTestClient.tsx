@@ -17,10 +17,18 @@ import {
   paywallContextToProps,
 } from "@/lib/analytics";
 import { buildPaywallContext, deriveAuthState } from "@/lib/paywall-context";
+import { isAdaptiveEnabled, ADAPTIVE_VARIANT_CODE } from "@/lib/practice/sampler";
 import type { AsvabSubtest } from "@/types";
 import { ALL_SUBTESTS } from "@/types";
 
-const ALLOWED_VARIANTS = new Set(["diagnostic", "subtest_drill"]);
+// `afqt_adaptive` is only a valid entry-point URL when the build-time flag is on
+// (it is additionally Pro-gated by canStartVariant + inactive in the DB until the
+// content-depth gate is met). When the flag is off it falls through to the picker.
+const ALLOWED_VARIANTS = new Set([
+  "diagnostic",
+  "subtest_drill",
+  ...(isAdaptiveEnabled() ? [ADAPTIVE_VARIANT_CODE] : []),
+]);
 
 function PracticeTestInner() {
   const searchParams = useSearchParams();
