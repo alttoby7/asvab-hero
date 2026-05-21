@@ -236,6 +236,27 @@ export type Database = {
           },
         ]
       }
+      daily_prescriptions: {
+        Row: {
+          created_at: string
+          payload: Json
+          prescription_date: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          payload?: Json
+          prescription_date?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          payload?: Json
+          prescription_date?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
       feedback_responses: {
         Row: {
           answer_key: string
@@ -421,6 +442,130 @@ export type Database = {
           },
         ]
       }
+      item_exposures: {
+        Row: {
+          ability_proxy: number | null
+          content_version: number
+          exposed_at: string
+          is_correct: boolean
+          question_id: string
+          subtest: string | null
+          topic_id: string | null
+          user_id: string
+        }
+        Insert: {
+          ability_proxy?: number | null
+          content_version?: number
+          exposed_at?: string
+          is_correct: boolean
+          question_id: string
+          subtest?: string | null
+          topic_id?: string | null
+          user_id: string
+        }
+        Update: {
+          ability_proxy?: number | null
+          content_version?: number
+          exposed_at?: string
+          is_correct?: boolean
+          question_id?: string
+          subtest?: string | null
+          topic_id?: string | null
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "item_exposures_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
+          },
+        ]
+      }
+      job_catalog: {
+        Row: {
+          branch: string
+          category: string | null
+          code: string
+          created_at: string
+          description: string | null
+          id: string
+          min_afqt: number | null
+          source_slug: string | null
+          source_version: string | null
+          support_status: string
+          title: string
+          unsupported_reason: string | null
+          updated_at: string
+        }
+        Insert: {
+          branch: string
+          category?: string | null
+          code: string
+          created_at?: string
+          description?: string | null
+          id: string
+          min_afqt?: number | null
+          source_slug?: string | null
+          source_version?: string | null
+          support_status?: string
+          title: string
+          unsupported_reason?: string | null
+          updated_at?: string
+        }
+        Update: {
+          branch?: string
+          category?: string | null
+          code?: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          min_afqt?: number | null
+          source_slug?: string | null
+          source_version?: string | null
+          support_status?: string
+          title?: string
+          unsupported_reason?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      job_requirement_rules: {
+        Row: {
+          composite_code: string
+          created_at: string
+          id: number
+          job_id: string
+          min_score: number
+          requirement_group: number
+        }
+        Insert: {
+          composite_code: string
+          created_at?: string
+          id?: number
+          job_id: string
+          min_score: number
+          requirement_group?: number
+        }
+        Update: {
+          composite_code?: string
+          created_at?: string
+          id?: number
+          job_id?: string
+          min_score?: number
+          requirement_group?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "job_requirement_rules_job_id_fkey"
+            columns: ["job_id"]
+            isOneToOne: false
+            referencedRelation: "job_catalog"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       payment_failed_emails: {
         Row: {
           attempt_count: number | null
@@ -488,6 +633,7 @@ export type Database = {
           explanation: string
           external_key: string
           id: string
+          item_family_id: string | null
           status: string
           stem: string
           subtest: string
@@ -503,6 +649,7 @@ export type Database = {
           explanation: string
           external_key: string
           id?: string
+          item_family_id?: string | null
           status?: string
           stem: string
           subtest: string
@@ -518,6 +665,7 @@ export type Database = {
           explanation?: string
           external_key?: string
           id?: string
+          item_family_id?: string | null
           status?: string
           stem?: string
           subtest?: string
@@ -535,6 +683,7 @@ export type Database = {
       }
       profiles: {
         Row: {
+          afqt_goal: number | null
           billing_status: string
           branch: string | null
           created_at: string
@@ -547,6 +696,7 @@ export type Database = {
           marketing_opt_in: boolean
           milestone_50q_email_sent_at: string | null
           onboarding_completed_at: string | null
+          preferred_study_time: string | null
           pro_tier: string | null
           pro_until: string | null
           pro_updated_at: string | null
@@ -556,6 +706,7 @@ export type Database = {
           stripe_customer_id: string | null
           stripe_price_id: string | null
           stripe_subscription_id: string | null
+          study_days_per_week: number | null
           target_test_date: string | null
           target_test_date_bucket: string | null
           timezone: string
@@ -575,6 +726,7 @@ export type Database = {
           welcome_email_status: string | null
         }
         Insert: {
+          afqt_goal?: number | null
           billing_status?: string
           branch?: string | null
           created_at?: string
@@ -587,6 +739,7 @@ export type Database = {
           marketing_opt_in?: boolean
           milestone_50q_email_sent_at?: string | null
           onboarding_completed_at?: string | null
+          preferred_study_time?: string | null
           pro_tier?: string | null
           pro_until?: string | null
           pro_updated_at?: string | null
@@ -596,6 +749,7 @@ export type Database = {
           stripe_customer_id?: string | null
           stripe_price_id?: string | null
           stripe_subscription_id?: string | null
+          study_days_per_week?: number | null
           target_test_date?: string | null
           target_test_date_bucket?: string | null
           timezone?: string
@@ -615,6 +769,7 @@ export type Database = {
           welcome_email_status?: string | null
         }
         Update: {
+          afqt_goal?: number | null
           billing_status?: string
           branch?: string | null
           created_at?: string
@@ -627,6 +782,7 @@ export type Database = {
           marketing_opt_in?: boolean
           milestone_50q_email_sent_at?: string | null
           onboarding_completed_at?: string | null
+          preferred_study_time?: string | null
           pro_tier?: string | null
           pro_until?: string | null
           pro_updated_at?: string | null
@@ -636,6 +792,7 @@ export type Database = {
           stripe_customer_id?: string | null
           stripe_price_id?: string | null
           stripe_subscription_id?: string | null
+          study_days_per_week?: number | null
           target_test_date?: string | null
           target_test_date_bucket?: string | null
           timezone?: string
@@ -656,6 +813,48 @@ export type Database = {
         }
         Relationships: []
       }
+      question_calibrations: {
+        Row: {
+          ability_adj_difficulty: number | null
+          author_difficulty: number | null
+          content_version: number
+          last_calibrated_at: string | null
+          n_correct: number | null
+          n_firstseen: number | null
+          question_id: string
+          raw_correct_rate: number | null
+          shrunk_difficulty: number | null
+          subtest: string | null
+          topic_id: string | null
+        }
+        Insert: {
+          ability_adj_difficulty?: number | null
+          author_difficulty?: number | null
+          content_version?: number
+          last_calibrated_at?: string | null
+          n_correct?: number | null
+          n_firstseen?: number | null
+          question_id: string
+          raw_correct_rate?: number | null
+          shrunk_difficulty?: number | null
+          subtest?: string | null
+          topic_id?: string | null
+        }
+        Update: {
+          ability_adj_difficulty?: number | null
+          author_difficulty?: number | null
+          content_version?: number
+          last_calibrated_at?: string | null
+          n_correct?: number | null
+          n_firstseen?: number | null
+          question_id?: string
+          raw_correct_rate?: number | null
+          shrunk_difficulty?: number | null
+          subtest?: string | null
+          topic_id?: string | null
+        }
+        Relationships: []
+      }
       question_reviews: {
         Row: {
           content_version: number
@@ -669,6 +868,9 @@ export type Database = {
           question_id: string
           repetitions: number
           resolved: boolean
+          shadow_due_at: string | null
+          shadow_interval_days: number | null
+          shadow_scaling_version: string | null
           subtest: string
           topic_id: string | null
           updated_at: string
@@ -686,6 +888,9 @@ export type Database = {
           question_id: string
           repetitions?: number
           resolved?: boolean
+          shadow_due_at?: string | null
+          shadow_interval_days?: number | null
+          shadow_scaling_version?: string | null
           subtest: string
           topic_id?: string | null
           updated_at?: string
@@ -703,6 +908,9 @@ export type Database = {
           question_id?: string
           repetitions?: number
           resolved?: boolean
+          shadow_due_at?: string | null
+          shadow_interval_days?: number | null
+          shadow_scaling_version?: string | null
           subtest?: string
           topic_id?: string | null
           updated_at?: string
@@ -926,6 +1134,98 @@ export type Database = {
         }
         Relationships: []
       }
+      trajectory_score_snapshots: {
+        Row: {
+          afqt_band_key: string | null
+          afqt_band_label: string | null
+          afqt_high: number | null
+          afqt_low: number | null
+          afqt_point: number | null
+          algorithm_version: string
+          attempt_count: number
+          branch_composite_estimates: Json
+          generated_at: string
+          input_summary: Json
+          latest_attempt_at: string | null
+          overall_confidence: string
+          snapshot_kind: string
+          subtest_estimates: Json
+          user_id: string
+        }
+        Insert: {
+          afqt_band_key?: string | null
+          afqt_band_label?: string | null
+          afqt_high?: number | null
+          afqt_low?: number | null
+          afqt_point?: number | null
+          algorithm_version: string
+          attempt_count?: number
+          branch_composite_estimates?: Json
+          generated_at?: string
+          input_summary?: Json
+          latest_attempt_at?: string | null
+          overall_confidence?: string
+          snapshot_kind: string
+          subtest_estimates?: Json
+          user_id: string
+        }
+        Update: {
+          afqt_band_key?: string | null
+          afqt_band_label?: string | null
+          afqt_high?: number | null
+          afqt_low?: number | null
+          afqt_point?: number | null
+          algorithm_version?: string
+          attempt_count?: number
+          branch_composite_estimates?: Json
+          generated_at?: string
+          input_summary?: Json
+          latest_attempt_at?: string | null
+          overall_confidence?: string
+          snapshot_kind?: string
+          subtest_estimates?: Json
+          user_id?: string
+        }
+        Relationships: []
+      }
+      user_target_jobs: {
+        Row: {
+          created_at: string
+          display_order: number
+          id: string
+          is_primary: boolean
+          job_id: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          display_order?: number
+          id?: string
+          is_primary?: boolean
+          job_id: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          display_order?: number
+          id?: string
+          is_primary?: boolean
+          job_id?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_target_jobs_job_id_fkey"
+            columns: ["job_id"]
+            isOneToOne: false
+            referencedRelation: "job_catalog"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
@@ -942,6 +1242,20 @@ export type Database = {
         }
         Returns: undefined
       }
+      calc_difficulty_scale: {
+        Args: { p_content_version: number; p_question_id: string }
+        Returns: number
+      }
+      get_cohort_afqt_delta: {
+        Args: never
+        Returns: {
+          group_kind: string
+          group_value: string
+          mean_delta: number
+          n_users: number
+          stddev_delta: number
+        }[]
+      }
       grade_flashcard_review: {
         Args: { p_card_id: string; p_quality: number }
         Returns: undefined
@@ -951,9 +1265,87 @@ export type Database = {
         Returns: undefined
       }
       has_active_pro: { Args: { p_user_id?: string }; Returns: boolean }
+      recompute_item_calibrations: { Args: never; Returns: number }
       recompute_topic_stats: {
         Args: { p_topic_ids: string[]; p_user_id: string }
         Returns: undefined
+      }
+      rpc_add_target_job: {
+        Args: { p_job_id: string; p_make_primary?: boolean }
+        Returns: {
+          created_at: string
+          display_order: number
+          id: string
+          is_primary: boolean
+          job_id: string
+          updated_at: string
+          user_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "user_target_jobs"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      rpc_get_home_trajectory: { Args: never; Returns: Json }
+      rpc_refresh_trajectory_snapshot: {
+        Args: { p_snapshot_kind?: string }
+        Returns: {
+          afqt_band_key: string | null
+          afqt_band_label: string | null
+          afqt_high: number | null
+          afqt_low: number | null
+          afqt_point: number | null
+          algorithm_version: string
+          attempt_count: number
+          branch_composite_estimates: Json
+          generated_at: string
+          input_summary: Json
+          latest_attempt_at: string | null
+          overall_confidence: string
+          snapshot_kind: string
+          subtest_estimates: Json
+          user_id: string
+        }
+        SetofOptions: {
+          from: "*"
+          to: "trajectory_score_snapshots"
+          isOneToOne: true
+          isSetofReturn: false
+        }
+      }
+      rpc_remove_target_job: {
+        Args: { p_target_job_id: string }
+        Returns: undefined
+      }
+      rpc_reorder_target_jobs: {
+        Args: { p_target_job_ids: string[] }
+        Returns: undefined
+      }
+      rpc_search_job_catalog: {
+        Args: { p_branch?: string; p_limit?: number; p_query?: string }
+        Returns: {
+          branch: string
+          category: string | null
+          code: string
+          created_at: string
+          description: string | null
+          id: string
+          min_afqt: number | null
+          source_slug: string | null
+          source_version: string | null
+          support_status: string
+          title: string
+          unsupported_reason: string | null
+          updated_at: string
+        }[]
+        SetofOptions: {
+          from: "*"
+          to: "job_catalog"
+          isOneToOne: false
+          isSetofReturn: true
+        }
       }
       sm2_next: {
         Args: {
@@ -965,6 +1357,24 @@ export type Database = {
         }
         Returns: Record<string, unknown>
       }
+      traj_afqt_band: {
+        Args: { p_afqt: number }
+        Returns: {
+          band_key: string
+          band_label: string
+        }[]
+      }
+      traj_afqt_band_index: { Args: { p_afqt: number }; Returns: number }
+      traj_branch_composites: { Args: { p_std: Json }; Returns: Json }
+      traj_composite_band: { Args: { p_score: number }; Returns: number }
+      traj_eval_job_gap: {
+        Args: {
+          p_job_id: string
+          p_snapshot: Database["public"]["Tables"]["trajectory_score_snapshots"]["Row"]
+        }
+        Returns: Json
+      }
+      traj_pay97_percentile: { Args: { p_raw: number }; Returns: number }
     }
     Enums: {
       [_ in never]: never
