@@ -105,7 +105,7 @@ Deno.serve(async (req) => {
 
   const { data: profiles, error: pErr } = await admin
     .from("profiles")
-    .select("user_id,email,display_name,last_mistake_reminder_on")
+    .select("user_id,email,display_name,last_mistake_reminder_on,daily_email_opt_in")
     .in("user_id", userIds);
   if (pErr) return json({ error: pErr.message }, 500);
 
@@ -114,6 +114,11 @@ Deno.serve(async (req) => {
   let failed = 0;
   for (const p of profiles ?? []) {
     const count = counts.get(p.user_id) ?? 0;
+    // CAN-SPAM: honor email opt-out. null/true => opted in; false => skip.
+    if (p.daily_email_opt_in === false) {
+      skipped++;
+      continue;
+    }
     // Idempotent: one reminder per user per day.
     if (!p.email || count === 0 || p.last_mistake_reminder_on === today) {
       skipped++;

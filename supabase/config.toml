@@ -2,3 +2,11 @@ project_id = "abypyprvgvofzrtifgzi"
 
 [functions.stripe-webhook]
 verify_jwt = false
+
+# Cron-invoked via pg_net with an x-cron-secret header (no Supabase JWT).
+[functions.mistake-reminders]
+verify_jwt = false
+
+# Sibling workstream's calibration recompute job; cron-invoked, no JWT.
+[functions.recompute-item-calibrations]
+verify_jwt = false

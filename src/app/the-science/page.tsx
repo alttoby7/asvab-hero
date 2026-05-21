@@ -18,6 +18,24 @@ interface Technique {
   how: string;
 }
 
+// Tier B — measured, first-party results.
+// Populated by hand from get_cohort_afqt_delta() (migration 0026) ONLY once we
+// have a defensible sample. This is a STATIC export, so there is no live data at
+// build time — the values are pasted in from the SQL function's "overall" row.
+// The section below renders only when this is non-null AND n >= 30 paired
+// diagnostics, so we never publish a thin or made-up number. No "proven" claims:
+// we report n, baseline, mean delta, and a 95% CI, and nothing more.
+interface MeasuredResults {
+  n: number; // paired diagnostics (users with >= 2 diagnostics)
+  baselineMeanAfqt: number; // mean first-diagnostic AFQT estimate
+  meanDelta: number; // mean (latest - earliest) AFQT estimate
+  ci95: [number, number]; // 95% confidence interval on the mean delta
+  asOf: string; // ISO date the sample was pulled
+}
+
+// Stays null until the cohort has a defensible sample — keeps the section hidden.
+const MEASURED_RESULTS: MeasuredResults | null = null;
+
 const TECHNIQUES: Technique[] = [
   {
     name: "Retrieval practice (the testing effect)",
@@ -141,6 +159,37 @@ export default function TheSciencePage() {
           gain — with the methodology in plain sight. We won&apos;t make a number up.
         </p>
       </section>
+
+      {/* Measured results (Tier B) — gated: renders only with a defensible
+          first-party sample (n >= 30 paired diagnostics). Hidden until then. */}
+      {MEASURED_RESULTS && MEASURED_RESULTS.n >= 30 && (
+        <section className="mt-12 rounded-2xl border border-accent/30 bg-navy-light p-6 sm:p-7">
+          <h2 className="font-display text-xl font-bold text-text-primary">
+            Measured results
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+            This is our own first-party data, not a lab study. Across{" "}
+            <span className="font-semibold text-text-primary">
+              {MEASURED_RESULTS.n.toLocaleString()}
+            </span>{" "}
+            ASVAB Hero users who took at least two diagnostics, the average AFQT
+            estimate rose by{" "}
+            <span className="font-semibold text-text-primary">
+              {MEASURED_RESULTS.meanDelta > 0 ? "+" : ""}
+              {MEASURED_RESULTS.meanDelta}
+            </span>{" "}
+            points (95% CI {MEASURED_RESULTS.ci95[0]} to{" "}
+            {MEASURED_RESULTS.ci95[1]}) from a baseline mean of{" "}
+            {MEASURED_RESULTS.baselineMeanAfqt}.
+          </p>
+          <p className="mt-3 text-xs leading-relaxed text-text-tertiary">
+            Method: per-user change between first and most-recent diagnostic
+            AFQT estimate. Observational — users self-select into more practice —
+            so this is an upper bound, not a controlled effect. As of{" "}
+            {MEASURED_RESULTS.asOf}.
+          </p>
+        </section>
+      )}
 
       {/* CTA */}
       <section className="mt-12 text-center">
