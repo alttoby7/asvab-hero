@@ -15,6 +15,8 @@ const b7 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/e
 const b8 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-8.json'), 'utf8'));
 const b9 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-9.json'), 'utf8'));
 const b10 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-10.json'), 'utf8'));
+const b11 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-11-math.json'), 'utf8'));
+const b12 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-12-verbal.json'), 'utf8'));
 const tags = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/question-tags.seed.json'), 'utf8'));
 const tagMap = new Map(tags.map(t => [t.external_key.toUpperCase(), t]));
 
@@ -137,6 +139,8 @@ const all = [
   ...normalize(b8, 'batch-8'),
   ...normalize(b9, 'batch-9'),
   ...normalize(b10, 'batch-10'),
+  ...normalize(b11, 'batch-11-math'),
+  ...normalize(b12, 'batch-12-verbal'),
 ];
 
 const seen = new Set();

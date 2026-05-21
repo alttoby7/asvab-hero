@@ -9,6 +9,7 @@
 - Build output `out/`. Cache controlled by `public/_headers`.
 - **Redirects:** `public/_redirects` (Cloudflare Pages 301s, format `/old /new 301`). Next.js `redirects()` does NOT work under static export — use this file.
 - **Deploy:** Cloudflare Pages auto-deploys on push to `main`. Domain `asvabhero.com` (Cloudflare DNS → CF Pages).
+- **Edge WAF (Cloudflare, 2026-05-21):** custom rule in `http_request_firewall_custom` phase — `managed_challenge` when `(not cf.client.bot and ip.src.country in {"SG" "CN"})`. Kills the SG/CN headless-bot noise GA4 surfaced (49 SG + 4 CN sessions, ~0% engagement) while `not cf.client.bot` keeps AI/search crawlers and all US/real traffic untouched. Zone `1589e9ac252d44ba0dadceb3ae7be88e`; applied via central `.env` token `CLOUDFLARE_WAF_API_TOKEN_ALLZONES`. Portfolio-wide rollout; GA4 recheck ~2026-05-27. Ref: memory `peptides-bot-mitigation.md`.
 - **Supabase backend** (LIVE since 2026-04-27): Postgres + Auth + Edge Functions. Project ref `abypyprvgvofzrtifgzi`. Migrations in `supabase/migrations/`. Edge Functions in `supabase/functions/` (Deno-style URL imports; excluded from Next tsconfig).
 - **Stripe** LIVE in production. Plans $9.99/mo or $49.99/yr + 7-day card-required monthly trial. Functions: `stripe-checkout`, `stripe-portal`, `stripe-webhook`.
 - **Email:** Listmonk (self-hosted, droplet `64.23.194.109`) + Resend SMTP. Full reference: [`docs/email-infrastructure.md`](./docs/email-infrastructure.md).
