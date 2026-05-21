@@ -48,4 +48,5 @@
 - Question bank audit: `docs/question-bank-audit.md`
 - Runbooks: `docs/runbooks/` (incl. `stripe-webhook-events.md`)
 - Marketing strategy: `docs/marketing-strategy-2026-04-28.md`
+- Learning-science strategy + build specs (Mistake Bank, Adaptive Engine): `docs/learning-science-strategy.md`
 - Platform design plan: `~/.claude/plans/adaptive-churning-shell.md`
