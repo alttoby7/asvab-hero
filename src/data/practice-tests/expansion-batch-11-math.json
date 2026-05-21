@@ -1,0 +1,1378 @@
+[
+  {
+    "external_key": "AR-B11-AF-1",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A supply room receives 6 boxes, and each box holds 12 flashlights. How many flashlights are there in total?",
+    "choices": [
+      "18",
+      "60",
+      "72",
+      "84"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply boxes by flashlights per box: 6 x 12 = 72. The choice 18 adds 6 + 12 instead of multiplying. The choice 60 is 5 x 12, undercounting by one box. The choice 84 is 7 x 12, overcounting by one box. The correct total is 72.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-AF-2",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A truck is loaded with 480 rations to be split evenly among 16 squads. How many rations does each squad receive?",
+    "choices": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "correct_index": 1,
+    "explanation": "Divide total rations by squads: 480 / 16 = 30. The choice 28 results from dividing by 17 by mistake. The choice 32 results from dividing by 15. The choice 34 comes from rounding up an incorrect quotient. The correct amount is 30.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-AF-3",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A warehouse has 1,250 helmets. After shipping out 875, how many helmets remain?",
+    "choices": [
+      "325",
+      "375",
+      "425",
+      "475"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtract shipped from total: 1,250 - 875 = 375. The choice 325 subtracts 925 by misreading the number shipped. The choice 425 subtracts 825. The choice 475 subtracts 775. The correct remainder is 375.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-AF-4",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A unit orders 14 cases of water bottles. Each case contains 24 bottles. If 96 bottles are used the first day, how many remain?",
+    "choices": [
+      "240",
+      "264",
+      "288",
+      "336"
+    ],
+    "correct_index": 0,
+    "explanation": "First find the total: 14 x 24 = 336 bottles. Then subtract usage: 336 - 96 = 240. The choice 264 subtracts only 72. The choice 288 subtracts only 48. The choice 336 is the total before any bottles are used. The correct remainder is 240.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-AF-5",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A motor pool has 9 vehicles. Each vehicle needs 7 quarts of oil, and oil comes in 5-quart jugs. How many jugs must be purchased so every vehicle is filled?",
+    "choices": [
+      "12",
+      "13",
+      "14",
+      "63"
+    ],
+    "correct_index": 1,
+    "explanation": "Total oil needed is 9 x 7 = 63 quarts. Divide by jug size: 63 / 5 = 12.6, so 13 jugs are needed because 12 jugs supply only 60 quarts. The choice 12 ignores the remainder. The choice 14 rounds up too far. The choice 63 is the quarts needed, not jugs. The correct count is 13.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-AF-6",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A contractor buys materials for 2,340 dollars, splits the cost equally with 2 partners so all 3 pay the same, then each partner gets a 60 dollar rebate. What does each partner finally pay?",
+    "choices": [
+      "700",
+      "720",
+      "780",
+      "1,110"
+    ],
+    "correct_index": 1,
+    "explanation": "Split among 3 people: 2,340 / 3 = 780 each. Subtract the rebate: 780 - 60 = 720. The choice 700 subtracts 80. The choice 780 ignores the rebate. The choice 1,110 splits between only 2 people. The correct amount is 720.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-PCT-1",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "What is 10% of 250?",
+    "choices": [
+      "2.5",
+      "25",
+      "125",
+      "250"
+    ],
+    "correct_index": 1,
+    "explanation": "Ten percent means multiply by 0.10: 250 x 0.10 = 25. The choice 2.5 is 1% of 250. The choice 125 is 50% of 250. The choice 250 is the whole amount. The correct value is 25.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-PCT-2",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A recruit answered 45 of 60 questions correctly. What percent did the recruit answer correctly?",
+    "choices": [
+      "65%",
+      "70%",
+      "75%",
+      "80%"
+    ],
+    "correct_index": 2,
+    "explanation": "Divide correct by total: 45 / 60 = 0.75, which is 75%. The choice 65% misdivides. The choice 70% rounds incorrectly. The choice 80% would require 48 correct. The correct percent is 75%.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-PCT-3",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A jacket costs 80 dollars and is marked down 25%. What is the sale price?",
+    "choices": [
+      "20",
+      "55",
+      "60",
+      "75"
+    ],
+    "correct_index": 2,
+    "explanation": "The discount is 80 x 0.25 = 20 dollars, so the sale price is 80 - 20 = 60. The choice 20 is the discount amount, not the price. The choice 55 subtracts 25 dollars instead of 25 percent. The choice 75 subtracts only 5 dollars. The correct price is 60.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-PCT-4",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A town's population grew from 4,000 to 4,600 in one year. What was the percent increase?",
+    "choices": [
+      "6%",
+      "13%",
+      "15%",
+      "60%"
+    ],
+    "correct_index": 2,
+    "explanation": "The increase is 4,600 - 4,000 = 600. Divide by the original: 600 / 4,000 = 0.15, which is 15%. The choice 6% misplaces the decimal. The choice 13% divides by the new total instead of the original. The choice 60% misreads the increase. The correct increase is 15%.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-PCT-5",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 4,
+    "stem": "A 200 dollar item is discounted 20%, and then 8% sales tax is added to the discounted price. What is the final cost?",
+    "choices": [
+      "160.00",
+      "172.80",
+      "184.00",
+      "192.00"
+    ],
+    "correct_index": 1,
+    "explanation": "Apply the discount first: 200 x 0.80 = 160. Then add tax: 160 x 1.08 = 172.80. The choice 160.00 omits the tax. The choice 184.00 applies tax to the original 200 before discount and mishandles the order. The choice 192.00 subtracts only 4%. The correct cost is 172.80.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-PCT-6",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 5,
+    "stem": "After a 15% raise, an employee earns 4,600 dollars per month. What was the monthly salary before the raise?",
+    "choices": [
+      "3,910",
+      "3,910.00",
+      "4,000",
+      "4,060"
+    ],
+    "correct_index": 2,
+    "explanation": "The new salary is 115% of the old: old x 1.15 = 4,600, so old = 4,600 / 1.15 = 4,000. The choices 3,910 and 3,910.00 incorrectly subtract 15% of the new salary. The choice 4,060 subtracts only 540. The correct prior salary is 4,000.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RDT-1",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A car travels at 50 miles per hour for 3 hours. How far does it travel?",
+    "choices": [
+      "53",
+      "100",
+      "150",
+      "200"
+    ],
+    "correct_index": 2,
+    "explanation": "Distance equals rate times time: 50 x 3 = 150 miles. The choice 53 adds 50 + 3. The choice 100 uses 2 hours. The choice 200 uses 4 hours. The correct distance is 150 miles.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RDT-2",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A runner covers 18 miles in 3 hours. What is the runner's average speed in miles per hour?",
+    "choices": [
+      "5",
+      "6",
+      "9",
+      "21"
+    ],
+    "correct_index": 1,
+    "explanation": "Speed equals distance divided by time: 18 / 3 = 6 miles per hour. The choice 5 misdivides. The choice 9 divides by 2 hours. The choice 21 adds 18 + 3. The correct speed is 6 miles per hour.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RDT-3",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "How long does it take to drive 240 miles at a steady 60 miles per hour?",
+    "choices": [
+      "3 hours",
+      "4 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Time equals distance divided by rate: 240 / 60 = 4 hours. The choice 3 hours uses 80 miles per hour. The choice 5 hours uses 48 miles per hour. The choice 6 hours uses 40 miles per hour. The correct time is 4 hours.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RDT-4",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A train leaves a station traveling 45 miles per hour. After 2 hours it speeds up to 65 miles per hour for the next 3 hours. How far has it traveled in total?",
+    "choices": [
+      "225",
+      "265",
+      "285",
+      "325"
+    ],
+    "correct_index": 2,
+    "explanation": "First leg: 45 x 2 = 90 miles. Second leg: 65 x 3 = 195 miles. Total: 90 + 195 = 285 miles. The choice 225 applies 45 miles per hour to all 5 hours. The choice 265 swaps the two times, using 45 for 3 hours and 65 for 2 hours. The choice 325 applies 65 miles per hour to all 5 hours. The correct distance is 285 miles.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RDT-5",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 4,
+    "stem": "Two cyclists start at the same point and ride in opposite directions, one at 12 miles per hour and the other at 16 miles per hour. How far apart are they after 2.5 hours?",
+    "choices": [
+      "28",
+      "40",
+      "56",
+      "70"
+    ],
+    "correct_index": 3,
+    "explanation": "Their separation rate is 12 + 16 = 28 miles per hour. Over 2.5 hours: 28 x 2.5 = 70 miles. The choice 28 is the combined rate for one hour only. The choice 40 multiplies 16 by 2.5 alone. The choice 56 uses 2 hours. The correct distance is 70 miles.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RDT-6",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 5,
+    "stem": "A pilot flies 600 miles to a base, then flies the same 600 miles back. The trip out takes 2 hours and the return takes 3 hours. What is the average speed for the entire round trip?",
+    "choices": [
+      "120",
+      "200",
+      "240",
+      "250"
+    ],
+    "correct_index": 2,
+    "explanation": "Total distance is 600 + 600 = 1,200 miles. Total time is 2 + 3 = 5 hours. Average speed is 1,200 / 5 = 240 miles per hour. The choice 120 divides one-way distance by total time. The choice 200 is only the return-leg speed of 600 / 3. The choice 250 averages the two leg speeds, which is the wrong method for average speed. The correct value is 240 miles per hour.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RAT-1",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A recipe uses 2 cups of flour for every 3 cups of water. If 6 cups of flour are used, how many cups of water are needed?",
+    "choices": [
+      "4",
+      "7",
+      "9",
+      "12"
+    ],
+    "correct_index": 2,
+    "explanation": "Flour tripled from 2 to 6, so water must triple too: 3 x 3 = 9 cups. The choice 4 doubles the flour amount instead. The choice 7 adds 4 to 3. The choice 12 doubles 6. The correct amount is 9 cups.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RAT-2",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "The ratio of officers to enlisted in a unit is 1 to 8. If there are 40 enlisted, how many officers are there?",
+    "choices": [
+      "5",
+      "8",
+      "32",
+      "48"
+    ],
+    "correct_index": 0,
+    "explanation": "For every 8 enlisted there is 1 officer: 40 / 8 = 5 officers. The choice 8 restates the ratio number. The choice 32 subtracts 8 from 40. The choice 48 adds 8 to 40. The correct count is 5 officers.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RAT-3",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A map uses a scale of 1 inch to 25 miles. Two cities are 4.5 inches apart on the map. How many miles apart are they?",
+    "choices": [
+      "29.5",
+      "100",
+      "112.5",
+      "125"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply inches by the scale: 4.5 x 25 = 112.5 miles. The choice 29.5 adds 4.5 to 25. The choice 100 uses 4 inches. The choice 125 uses 5 inches. The correct distance is 112.5 miles.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RAT-4",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A class of 35 students has a boy-to-girl ratio of 3 to 4. How many boys are in the class?",
+    "choices": [
+      "12",
+      "15",
+      "20",
+      "21"
+    ],
+    "correct_index": 1,
+    "explanation": "The ratio has 3 + 4 = 7 parts, so each part is 35 / 7 = 5 students. Boys are 3 parts: 3 x 5 = 15. The choice 12 uses 4 parts incorrectly assigned. The choice 20 is the number of girls. The choice 21 uses the ratio numbers as a sum. The correct count is 15 boys.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RAT-5",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "If 4 machines produce 600 parts in a day, how many parts can 7 machines produce in a day at the same rate?",
+    "choices": [
+      "900",
+      "1,050",
+      "1,200",
+      "1,500"
+    ],
+    "correct_index": 1,
+    "explanation": "Each machine makes 600 / 4 = 150 parts per day. With 7 machines: 150 x 7 = 1,050 parts. The choice 900 uses 6 machines. The choice 1,200 uses 8 machines. The choice 1,500 uses 10 machines. The correct output is 1,050 parts.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RAT-6",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 5,
+    "stem": "A sum of 720 dollars is split among three people in the ratio 2 to 3 to 4. How much does the person with the largest share receive?",
+    "choices": [
+      "160",
+      "240",
+      "320",
+      "360"
+    ],
+    "correct_index": 2,
+    "explanation": "The ratio totals 2 + 3 + 4 = 9 parts, so each part is 720 / 9 = 80 dollars. The largest share is 4 parts: 4 x 80 = 320. The choice 160 is the smallest share. The choice 240 is the middle share. The choice 360 splits the money in half. The correct amount is 320.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-WRD-1",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A recruit had 28 dollars and earned 15 more for chores. How much money does the recruit have now?",
+    "choices": [
+      "13",
+      "33",
+      "43",
+      "53"
+    ],
+    "correct_index": 2,
+    "explanation": "Add the earnings to the starting amount: 28 + 15 = 43. The choice 13 subtracts instead of adding. The choice 33 adds only 5. The choice 53 adds 25. The correct total is 43.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-WRD-2",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A book has 320 pages. If a reader finishes 40 pages each night, how many nights will it take to finish the book?",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correct_index": 2,
+    "explanation": "Divide total pages by pages per night: 320 / 40 = 8 nights. The choice 6 uses 53 pages per night. The choice 7 rounds down incorrectly. The choice 9 adds an extra night. The correct answer is 8 nights.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-WRD-3",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "Tickets cost 12 dollars each. A group buys 9 tickets and pays with a 150 dollar bill. How much change should they receive?",
+    "choices": [
+      "42",
+      "48",
+      "54",
+      "108"
+    ],
+    "correct_index": 0,
+    "explanation": "The cost is 9 x 12 = 108 dollars. Change is 150 - 108 = 42. The choice 48 uses 8 tickets. The choice 54 uses 8 tickets and a different price. The choice 108 is the cost, not the change. The correct change is 42.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-WRD-4",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "A worker earns 18 dollars per hour for the first 40 hours and 27 dollars per hour for each hour beyond 40. What is the worker's pay for a 46-hour week?",
+    "choices": [
+      "828",
+      "882",
+      "918",
+      "1,242"
+    ],
+    "correct_index": 1,
+    "explanation": "Regular pay is 40 x 18 = 720. Overtime is 6 x 27 = 162. Total is 720 + 162 = 882. The choice 828 pays the 6 overtime hours at the regular rate. The choice 918 pays all 46 hours plus an error. The choice 1,242 pays all 46 hours at the overtime rate. The correct pay is 882.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-WRD-5",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 4,
+    "stem": "A tank holds 60 gallons and is one-fourth full. A pump adds 9 gallons per minute. How many minutes until the tank is full?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct_index": 1,
+    "explanation": "One-fourth of 60 is 15 gallons present, so 60 - 15 = 45 gallons are still needed. At 9 gallons per minute: 45 / 9 = 5 minutes. The choice 4 uses 36 gallons needed. The choice 6 uses 54 gallons needed. The choice 7 ignores the water already present. The correct time is 5 minutes.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-WRD-6",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 5,
+    "stem": "A father is 3 times as old as his son. In 12 years he will be twice as old as his son. How old is the son now?",
+    "choices": [
+      "10",
+      "12",
+      "24",
+      "36"
+    ],
+    "correct_index": 1,
+    "explanation": "Let the son be s, so the father is 3s. In 12 years: 3s + 12 = 2(s + 12). Solving gives 3s + 12 = 2s + 24, so s = 12. The choice 10 fails the future condition. The choice 24 is twice the son's age. The choice 36 is the father's current age. The correct age is 12.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-AF-7",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A barracks has 4 floors with 15 rooms on each floor. How many rooms are there in total?",
+    "choices": [
+      "19",
+      "45",
+      "60",
+      "75"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply floors by rooms per floor: 4 x 15 = 60. The choice 19 adds 4 + 15. The choice 45 uses 3 floors. The choice 75 uses 5 floors. The correct total is 60.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-PCT-7",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "What is 50% of 86?",
+    "choices": [
+      "33",
+      "43",
+      "50",
+      "86"
+    ],
+    "correct_index": 1,
+    "explanation": "Fifty percent means half: 86 / 2 = 43. The choice 33 subtracts incorrectly. The choice 50 restates the percent. The choice 86 is the whole. The correct value is 43.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-AL-1",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "Solve for x: x + 9 = 17.",
+    "choices": [
+      "6",
+      "8",
+      "9",
+      "26"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtract 9 from both sides: x = 17 - 9 = 8. The choice 6 subtracts 11. The choice 9 restates the constant. The choice 26 adds instead of subtracting. The correct value is 8.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-AL-2",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "Solve for x: 3x - 4 = 20.",
+    "choices": [
+      "6",
+      "8",
+      "16",
+      "24"
+    ],
+    "correct_index": 1,
+    "explanation": "Add 4 to both sides to get 3x = 24, then divide by 3: x = 8. The choice 6 divides 20 by 3 then rounds. The choice 16 forgets to divide by 3 after subtracting. The choice 24 stops before dividing. The correct value is 8.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-AL-3",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "If 5x + 2 = 3x + 14, what is x?",
+    "choices": [
+      "3",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct_index": 2,
+    "explanation": "Subtract 3x from both sides to get 2x + 2 = 14, then 2x = 12, so x = 6. The choice 3 divides 12 by 4. The choice 4 mishandles the constants. The choice 8 adds instead of subtracting terms. The correct value is 6.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-AL-4",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If 2(x + 3) = 18, what is x?",
+    "choices": [
+      "6",
+      "9",
+      "12",
+      "15"
+    ],
+    "correct_index": 0,
+    "explanation": "Divide both sides by 2 to get x + 3 = 9, then subtract 3: x = 6. The choice 9 stops before subtracting 3. The choice 12 distributes incorrectly. The choice 15 adds 3 instead of subtracting. The correct value is 6.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-AL-5",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 4,
+    "stem": "Solve for y: (y / 4) + 5 = 12.",
+    "choices": [
+      "7",
+      "17",
+      "28",
+      "68"
+    ],
+    "correct_index": 2,
+    "explanation": "Subtract 5 to get y / 4 = 7, then multiply by 4: y = 28. The choice 7 stops before multiplying. The choice 17 adds 5 instead of subtracting. The choice 68 multiplies 17 by 4. The correct value is 28.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-AL-6",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 5,
+    "stem": "Solve for x: 4x - 7 = 2x + 11.",
+    "choices": [
+      "2",
+      "6",
+      "9",
+      "18"
+    ],
+    "correct_index": 2,
+    "explanation": "Subtract 2x from both sides to get 2x - 7 = 11, then add 7 to get 2x = 18, so x = 9. The choice 2 mishandles the constants. The choice 6 divides 18 by 3. The choice 18 stops before dividing by 2. The correct value is 9.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-EP-1",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "What is 4 squared?",
+    "choices": [
+      "6",
+      "8",
+      "16",
+      "44"
+    ],
+    "correct_index": 2,
+    "explanation": "Four squared means 4 x 4 = 16. The choice 6 adds 4 + 2. The choice 8 multiplies 4 x 2. The choice 44 places the digits side by side. The correct value is 16.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-EP-2",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Simplify: x^3 times x^4.",
+    "choices": [
+      "x^7",
+      "x^12",
+      "x^1",
+      "2x^7"
+    ],
+    "correct_index": 0,
+    "explanation": "When multiplying like bases, add the exponents: 3 + 4 = 7, giving x^7. The choice x^12 multiplies the exponents. The choice x^1 subtracts them. The choice 2x^7 incorrectly doubles the base. The correct result is x^7.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-EP-3",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Simplify: (x^5) / (x^2).",
+    "choices": [
+      "x^2",
+      "x^3",
+      "x^7",
+      "x^10"
+    ],
+    "correct_index": 1,
+    "explanation": "When dividing like bases, subtract the exponents: 5 - 2 = 3, giving x^3. The choice x^2 subtracts in the wrong order. The choice x^7 adds the exponents. The choice x^10 multiplies them. The correct result is x^3.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-EP-4",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify: (3x^2)(4x^3).",
+    "choices": [
+      "7x^5",
+      "12x^5",
+      "12x^6",
+      "7x^6"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiply the coefficients (3 x 4 = 12) and add the exponents (2 + 3 = 5), giving 12x^5. The choice 7x^5 adds the coefficients. The choice 12x^6 multiplies the exponents. The choice 7x^6 makes both errors. The correct result is 12x^5.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-EP-5",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Expand: (x + 5)(x + 2).",
+    "choices": [
+      "x^2 + 7x + 10",
+      "x^2 + 10x + 7",
+      "x^2 + 7x + 7",
+      "x^2 + 10"
+    ],
+    "correct_index": 0,
+    "explanation": "Use FOIL: x times x is x^2, the outer and inner terms give 2x + 5x = 7x, and 5 times 2 is 10. The result is x^2 + 7x + 10. The choice x^2 + 10x + 7 swaps the middle and last terms. The choice x^2 + 7x + 7 mishandles the constant. The choice x^2 + 10 drops the middle term. The correct expansion is x^2 + 7x + 10.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-EP-6",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 5,
+    "stem": "Factor completely: x^2 - 9.",
+    "choices": [
+      "(x - 3)(x - 3)",
+      "(x + 3)(x + 3)",
+      "(x - 3)(x + 3)",
+      "(x - 9)(x + 1)"
+    ],
+    "correct_index": 2,
+    "explanation": "This is a difference of squares: x^2 - 9 = (x - 3)(x + 3). The choices (x - 3)(x - 3) and (x + 3)(x + 3) each produce a middle term and the wrong sign on the constant. The choice (x - 9)(x + 1) does not multiply back to x^2 - 9. The correct factoring is (x - 3)(x + 3).",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-FRC-1",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "What is 1/2 + 1/4?",
+    "choices": [
+      "1/6",
+      "2/6",
+      "3/4",
+      "1/8"
+    ],
+    "correct_index": 2,
+    "explanation": "Convert 1/2 to 2/4, then add: 2/4 + 1/4 = 3/4. The choice 1/6 adds numerators and denominators. The choice 2/6 makes the same error differently. The choice 1/8 multiplies the fractions. The correct sum is 3/4.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-FRC-2",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "What is 2/3 of 21?",
+    "choices": [
+      "7",
+      "9",
+      "14",
+      "42"
+    ],
+    "correct_index": 2,
+    "explanation": "Divide 21 by 3 to get 7, then multiply by 2: 7 x 2 = 14. The choice 7 is only one-third. The choice 9 misdivides. The choice 42 doubles 21. The correct value is 14.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-FRC-3",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "Convert 3/8 to a decimal.",
+    "choices": [
+      "0.375",
+      "0.38",
+      "0.625",
+      "2.667"
+    ],
+    "correct_index": 0,
+    "explanation": "Divide 3 by 8: 3 / 8 = 0.375. The choice 0.38 rounds prematurely. The choice 0.625 is 5/8. The choice 2.667 divides 8 by 3. The correct decimal is 0.375.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-FRC-4",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "What is 3/4 divided by 1/2?",
+    "choices": [
+      "3/8",
+      "3/2",
+      "1/2",
+      "2/3"
+    ],
+    "correct_index": 1,
+    "explanation": "Dividing by 1/2 is the same as multiplying by 2: 3/4 x 2/1 = 6/4 = 3/2. The choice 3/8 multiplies the fractions instead of inverting the divisor. The choice 1/2 ignores the dividend. The choice 2/3 inverts the wrong fraction. The correct value is 3/2.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-FRC-5",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 4,
+    "stem": "Simplify the fraction 18/24 to lowest terms.",
+    "choices": [
+      "2/3",
+      "3/4",
+      "6/8",
+      "9/12"
+    ],
+    "correct_index": 1,
+    "explanation": "The greatest common factor of 18 and 24 is 6: 18 / 6 = 3 and 24 / 6 = 4, giving 3/4. The choice 2/3 reduces by the wrong factor. The choices 6/8 and 9/12 are equivalent but not in lowest terms. The correct simplest form is 3/4.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-FRC-6",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 5,
+    "stem": "What is 0.6 written as a fraction in lowest terms?",
+    "choices": [
+      "1/6",
+      "3/5",
+      "6/100",
+      "60/10"
+    ],
+    "correct_index": 1,
+    "explanation": "0.6 is 6/10, which reduces by 2 to 3/5. The choice 1/6 misreads the decimal. The choice 6/100 treats 0.6 as 0.06. The choice 60/10 misplaces the decimal entirely. The correct fraction is 3/5.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-GEO-1",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "What is the area of a rectangle that is 8 inches long and 5 inches wide?",
+    "choices": [
+      "13",
+      "26",
+      "40",
+      "80"
+    ],
+    "correct_index": 2,
+    "explanation": "Area equals length times width: 8 x 5 = 40 square inches. The choice 13 adds the sides. The choice 26 is the perimeter. The choice 80 doubles the area. The correct area is 40.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-GEO-2",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "What is the perimeter of a square with a side length of 9 cm?",
+    "choices": [
+      "18",
+      "27",
+      "36",
+      "81"
+    ],
+    "correct_index": 2,
+    "explanation": "A square has 4 equal sides: 4 x 9 = 36 cm. The choice 18 doubles one side. The choice 27 uses 3 sides. The choice 81 is the area. The correct perimeter is 36.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-GEO-3",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "Two angles of a triangle measure 50 degrees and 60 degrees. What is the third angle?",
+    "choices": [
+      "70",
+      "80",
+      "90",
+      "110"
+    ],
+    "correct_index": 0,
+    "explanation": "The angles of a triangle sum to 180 degrees: 180 - 50 - 60 = 70. The choice 80 subtracts incorrectly. The choice 90 assumes a right angle. The choice 110 is the sum of the two given angles. The correct angle is 70 degrees.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-GEO-4",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "What is the area of a triangle with a base of 10 cm and a height of 6 cm?",
+    "choices": [
+      "16",
+      "30",
+      "60",
+      "32"
+    ],
+    "correct_index": 1,
+    "explanation": "Area equals one-half base times height: 0.5 x 10 x 6 = 30 square cm. The choice 16 adds base and height. The choice 60 omits the one-half. The choice 32 is the perimeter of a related shape. The correct area is 30.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-GEO-5",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 4,
+    "stem": "A right triangle has legs of 6 and 8. What is the length of the hypotenuse?",
+    "choices": [
+      "10",
+      "12",
+      "14",
+      "48"
+    ],
+    "correct_index": 0,
+    "explanation": "By the Pythagorean theorem, the hypotenuse is the square root of 6^2 + 8^2 = 36 + 64 = 100, which is 10. The choice 12 mishandles the squares. The choice 14 adds the legs. The choice 48 multiplies the legs. The correct length is 10.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-GEO-6",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 5,
+    "stem": "What is the area of a circle with a radius of 5 cm? Use 3.14 for pi.",
+    "choices": [
+      "15.7",
+      "31.4",
+      "78.5",
+      "157"
+    ],
+    "correct_index": 2,
+    "explanation": "Area equals pi times the radius squared: 3.14 x 5^2 = 3.14 x 25 = 78.5 square cm. The choice 15.7 is half the circumference. The choice 31.4 is the circumference. The choice 157 multiplies by 50 instead of 25. The correct area is 78.5.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-NP-1",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "Which of the following is a prime number?",
+    "choices": [
+      "9",
+      "15",
+      "21",
+      "23"
+    ],
+    "correct_index": 3,
+    "explanation": "A prime number has exactly two factors, 1 and itself. 23 has no other factors. The choice 9 is 3 x 3. The choice 15 is 3 x 5. The choice 21 is 3 x 7. The correct prime is 23.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-NP-2",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "What is the greatest common factor of 24 and 36?",
+    "choices": [
+      "6",
+      "8",
+      "12",
+      "72"
+    ],
+    "correct_index": 2,
+    "explanation": "The largest number that divides both 24 and 36 evenly is 12. The choice 6 is a common factor but not the greatest. The choice 8 divides 24 but not 36. The choice 72 is the least common multiple. The correct answer is 12.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-NP-3",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "What is the least common multiple of 4 and 6?",
+    "choices": [
+      "2",
+      "10",
+      "12",
+      "24"
+    ],
+    "correct_index": 2,
+    "explanation": "The smallest number divisible by both 4 and 6 is 12. The choice 2 is the greatest common factor. The choice 10 is not a multiple of either correctly. The choice 24 is a common multiple but not the least. The correct answer is 12.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-NP-4",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "Evaluate: -7 + 12 - 3.",
+    "choices": [
+      "2",
+      "-2",
+      "8",
+      "22"
+    ],
+    "correct_index": 0,
+    "explanation": "Work left to right: -7 + 12 = 5, then 5 - 3 = 2. The choice -2 mishandles the signs. The choice 8 adds 12 and 3 then subtracts incorrectly. The choice 22 adds all values as positives. The correct value is 2.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-NP-5",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "Evaluate using order of operations: 6 + 2 x (5 - 1).",
+    "choices": [
+      "14",
+      "20",
+      "32",
+      "44"
+    ],
+    "correct_index": 0,
+    "explanation": "Do the parentheses first: 5 - 1 = 4. Then multiply: 2 x 4 = 8. Then add: 6 + 8 = 14. The choice 20 adds before multiplying. The choice 32 multiplies everything together incorrectly. The choice 44 mishandles all operations. The correct value is 14.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-NP-6",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 5,
+    "stem": "What is the value of the square root of 144?",
+    "choices": [
+      "10",
+      "12",
+      "14",
+      "72"
+    ],
+    "correct_index": 1,
+    "explanation": "The square root of 144 is the number that multiplies by itself to give 144, which is 12 because 12 x 12 = 144. The choice 10 gives 100 when squared. The choice 14 gives 196. The choice 72 is half of 144. The correct value is 12.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-FRC-7",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "What is 0.25 written as a fraction in lowest terms?",
+    "choices": [
+      "1/2",
+      "1/4",
+      "1/5",
+      "25/10"
+    ],
+    "correct_index": 1,
+    "explanation": "0.25 equals 25/100, which reduces to 1/4. The choice 1/2 is 0.5. The choice 1/5 is 0.2. The choice 25/10 misplaces the decimal. The correct fraction is 1/4.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-GEO-7",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "How many degrees are in a straight angle?",
+    "choices": [
+      "90",
+      "180",
+      "270",
+      "360"
+    ],
+    "correct_index": 1,
+    "explanation": "A straight angle forms a straight line and measures 180 degrees. The choice 90 is a right angle. The choice 270 is three right angles. The choice 360 is a full circle. The correct measure is 180 degrees.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RDT-7",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A walker moves at 3 miles per hour for 2 hours. How far does the walker go?",
+    "choices": [
+      "1.5",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct_index": 2,
+    "explanation": "Distance equals rate times time: 3 x 2 = 6 miles. The choice 1.5 divides instead of multiplying. The choice 5 adds 3 + 2. The choice 8 uses the wrong factors. The correct distance is 6 miles.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RAT-7",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "If 3 pencils cost 1.50 dollars, how much do 10 pencils cost at the same rate?",
+    "choices": [
+      "3.00",
+      "4.50",
+      "5.00",
+      "15.00"
+    ],
+    "correct_index": 2,
+    "explanation": "One pencil costs 1.50 / 3 = 0.50 dollars. Ten pencils cost 10 x 0.50 = 5.00. The choice 3.00 doubles the original. The choice 4.50 triples it. The choice 15.00 multiplies 10 by 1.50. The correct cost is 5.00.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-WRD-7",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A team scored 12 points in the first half and 19 in the second half. The opposing team scored 25 points total. By how many points did the team win?",
+    "choices": [
+      "6",
+      "7",
+      "12",
+      "31"
+    ],
+    "correct_index": 0,
+    "explanation": "The team scored 12 + 19 = 31 points. The margin is 31 - 25 = 6 points. The choice 7 mishandles the subtraction. The choice 12 uses only the first half. The choice 31 is the team's total, not the margin. The correct margin is 6 points.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-AF-8",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 5,
+    "stem": "A crew lays 1,800 feet of cable in 6 equal days, then doubles its daily pace for 4 more days. How many feet are laid in all 10 days?",
+    "choices": [
+      "3,000",
+      "4,200",
+      "4,800",
+      "5,400"
+    ],
+    "correct_index": 1,
+    "explanation": "Daily pace is 1,800 / 6 = 300 feet. The faster pace is 600 feet per day for 4 days, which is 2,400 feet. Total is 1,800 + 2,400 = 4,200 feet. The choice 3,000 forgets to double the later pace. The choice 4,800 doubles all ten days at the faster rate. The choice 5,400 adds an extra day. The correct total is 4,200.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-AF-9",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A cashier has 7 stacks of bills with 23 bills in each stack. How many bills are there in total?",
+    "choices": [
+      "30",
+      "141",
+      "161",
+      "184"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply stacks by bills per stack: 7 x 23 = 161. The choice 30 adds 7 + 23. The choice 141 uses 6 stacks plus an error. The choice 184 uses 8 stacks. The correct total is 161.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-AF-10",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 4,
+    "stem": "A team needs to fold 1,000 flyers. Three members fold 120 each and two members fold 95 each. How many flyers still need to be folded?",
+    "choices": [
+      "450",
+      "540",
+      "550",
+      "640"
+    ],
+    "correct_index": 0,
+    "explanation": "Three members fold 3 x 120 = 360 and two fold 2 x 95 = 190, for 550 folded. Remaining is 1,000 - 550 = 450. The choice 540 mishandles one product. The choice 550 is the number folded, not remaining. The choice 640 subtracts only 360. The correct remainder is 450.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-PCT-8",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "What is 30% of 90?",
+    "choices": [
+      "18",
+      "24",
+      "27",
+      "30"
+    ],
+    "correct_index": 2,
+    "explanation": "Thirty percent means multiply by 0.30: 90 x 0.30 = 27. The choice 18 is 20% of 90. The choice 24 misjudges the product. The choice 30 restates the percent. The correct value is 27.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-PCT-9",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 4,
+    "stem": "A salesperson earns a 6% commission on sales. If commission for the month was 1,080 dollars, what were the total sales?",
+    "choices": [
+      "6,480",
+      "12,000",
+      "16,200",
+      "18,000"
+    ],
+    "correct_index": 3,
+    "explanation": "Sales times 0.06 equals 1,080, so sales equal 1,080 / 0.06 = 18,000 dollars. The choice 6,480 multiplies 1,080 by 6. The choice 12,000 uses 9 percent. The choice 16,200 mishandles the division. The correct total is 18,000.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RDT-8",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A printer prints 45 pages per minute. How many pages can it print in 8 minutes?",
+    "choices": [
+      "320",
+      "350",
+      "360",
+      "405"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply rate by time: 45 x 8 = 360 pages. The choice 320 uses 40 pages per minute. The choice 350 mishandles the product. The choice 405 uses 9 minutes. The correct total is 360.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RDT-9",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A faucet fills a 36-gallon tub at 4 gallons per minute. How many minutes does it take to fill the tub?",
+    "choices": [
+      "7",
+      "8",
+      "9",
+      "12"
+    ],
+    "correct_index": 2,
+    "explanation": "Time equals volume divided by rate: 36 / 4 = 9 minutes. The choice 7 mishandles the division. The choice 8 uses 4.5 gallons per minute. The choice 12 uses 3 gallons per minute. The correct time is 9 minutes.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RAT-8",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A photo that is 4 inches wide and 6 inches tall is enlarged so the width becomes 10 inches. What is the new height if proportions are kept?",
+    "choices": [
+      "12",
+      "15",
+      "16",
+      "18"
+    ],
+    "correct_index": 1,
+    "explanation": "The scale factor is 10 / 4 = 2.5. New height is 6 x 2.5 = 15 inches. The choice 12 doubles the original. The choice 16 adds the increase to the height directly. The choice 18 triples the height. The correct height is 15 inches.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-RAT-9",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 4,
+    "stem": "A fuel mixture requires gas and oil in a 25 to 1 ratio. How many ounces of oil are needed for 100 ounces of gas?",
+    "choices": [
+      "2",
+      "4",
+      "5",
+      "25"
+    ],
+    "correct_index": 1,
+    "explanation": "For every 25 ounces of gas, 1 ounce of oil is used: 100 / 25 = 4 ounces of oil. The choice 2 uses a 50 to 1 ratio. The choice 5 uses a 20 to 1 ratio. The choice 25 restates the ratio number. The correct amount is 4 ounces.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-WRD-8",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A phone plan costs 35 dollars per month plus 0.10 dollars per text. If the bill was 47 dollars, how many texts were sent?",
+    "choices": [
+      "100",
+      "110",
+      "120",
+      "130"
+    ],
+    "correct_index": 2,
+    "explanation": "Texts cost 47 - 35 = 12 dollars. At 0.10 per text: 12 / 0.10 = 120 texts. The choice 100 uses 10 dollars of texts. The choice 110 mishandles the division. The choice 130 uses 13 dollars of texts. The correct count is 120 texts.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B11-WRD-9",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 5,
+    "stem": "Two pipes fill a pool together. One alone fills it in 6 hours, the other alone in 12 hours. How long does it take with both running together?",
+    "choices": [
+      "3 hours",
+      "4 hours",
+      "6 hours",
+      "9 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "In one hour the pipes fill 1/6 + 1/12 = 2/12 + 1/12 = 3/12 = 1/4 of the pool, so the full pool takes 4 hours. The choice 3 hours halves the faster pipe's time of 6 hours. The choice 6 hours uses only the faster pipe. The choice 9 hours averages the two times. The correct time is 4 hours.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-AL-7",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "If 6x + 5 = 4x + 17, what is x?",
+    "choices": [
+      "3",
+      "6",
+      "11",
+      "12"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtract 4x from both sides to get 2x + 5 = 17, then 2x = 12, so x = 6. The choice 3 divides 12 by 4. The choice 11 mishandles the constants. The choice 12 stops before dividing. The correct value is 6.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-AL-8",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "If x / 3 = 7, what is x?",
+    "choices": [
+      "4",
+      "10",
+      "21",
+      "37"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply both sides by 3: x = 7 x 3 = 21. The choice 4 subtracts 3. The choice 10 adds 3. The choice 37 mishandles the operation. The correct value is 21.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-EP-7",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify: (2x^3)^2.",
+    "choices": [
+      "2x^5",
+      "2x^6",
+      "4x^5",
+      "4x^6"
+    ],
+    "correct_index": 3,
+    "explanation": "Square both the coefficient and the power: 2^2 = 4 and (x^3)^2 = x^6, giving 4x^6. The choice 2x^5 adds exponents and ignores the coefficient. The choice 2x^6 squares only the variable. The choice 4x^5 adds the exponents. The correct result is 4x^6.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-EP-8",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 4,
+    "stem": "Add the polynomials: (3x^2 + 2x - 1) + (x^2 - 5x + 4).",
+    "choices": [
+      "4x^2 - 3x + 3",
+      "4x^2 + 7x + 3",
+      "2x^2 - 3x + 3",
+      "4x^2 - 3x - 5"
+    ],
+    "correct_index": 0,
+    "explanation": "Combine like terms: 3x^2 + x^2 = 4x^2, 2x - 5x = -3x, and -1 + 4 = 3, giving 4x^2 - 3x + 3. The choice 4x^2 + 7x + 3 adds the x coefficients without the sign. The choice 2x^2 - 3x + 3 subtracts the squared terms. The choice 4x^2 - 3x - 5 mishandles the constants. The correct sum is 4x^2 - 3x + 3.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-FRC-8",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "What is 5/6 - 1/3?",
+    "choices": [
+      "1/3",
+      "1/2",
+      "4/3",
+      "2/3"
+    ],
+    "correct_index": 1,
+    "explanation": "Convert 1/3 to 2/6, then subtract: 5/6 - 2/6 = 3/6 = 1/2. The choice 1/3 subtracts numerators only. The choice 4/3 adds instead of subtracting. The choice 2/3 mishandles the common denominator. The correct value is 1/2.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-GEO-8",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "What is the volume of a box that is 4 cm long, 3 cm wide, and 5 cm tall?",
+    "choices": [
+      "12",
+      "27",
+      "60",
+      "94"
+    ],
+    "correct_index": 2,
+    "explanation": "Volume equals length times width times height: 4 x 3 x 5 = 60 cubic cm. The choice 12 multiplies only length and width. The choice 27 adds the dimensions and cubes. The choice 94 is the surface area. The correct volume is 60.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-NP-7",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "Evaluate: (-4)(-6).",
+    "choices": [
+      "-24",
+      "-10",
+      "10",
+      "24"
+    ],
+    "correct_index": 3,
+    "explanation": "A negative times a negative is positive: 4 x 6 = 24. The choice -24 keeps a negative sign. The choice -10 adds the numbers with a sign error. The choice 10 adds the numbers. The correct value is 24.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B11-NP-8",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 4,
+    "stem": "Evaluate: 20 - 12 / 4 + 2.",
+    "choices": [
+      "4",
+      "9",
+      "19",
+      "20"
+    ],
+    "correct_index": 2,
+    "explanation": "Divide first: 12 / 4 = 3. Then work left to right: 20 - 3 + 2 = 19. The choice 4 divides the running total. The choice 9 subtracts before dividing. The choice 20 mishandles the addition. The correct value is 19.",
+    "status": "verified"
+  }
+]
