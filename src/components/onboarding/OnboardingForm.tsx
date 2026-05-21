@@ -5,6 +5,9 @@ import { useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
 import { trackEvent } from "@/lib/analytics";
+import { addTargetJob } from "@/lib/trajectory/queries";
+import type { JobCatalogEntry } from "@/lib/trajectory/types";
+import JobPicker from "@/components/app/JobPicker";
 
 type Branch =
   | "army"
@@ -96,6 +99,8 @@ export function OnboardingForm() {
   const [specificDate, setSpecificDate] = useState<string>("");
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [weakest, setWeakest] = useState<WeakestSubtest | null>(null);
+  // Optional goal jobs (up to 3), persisted on submit via rpc_add_target_job.
+  const [goalJobs, setGoalJobs] = useState<JobCatalogEntry[]>([]);
 
   const [submitting, setSubmitting] = useState(false);
   const [skipping, setSkipping] = useState(false);
@@ -145,10 +150,20 @@ export function OnboardingForm() {
       return;
     }
 
+    // Persist any picked goal jobs (best-effort; first becomes primary).
+    for (let i = 0; i < goalJobs.length; i++) {
+      try {
+        await addTargetJob(sb, goalJobs[i].id, i === 0);
+      } catch {
+        /* non-fatal — onboarding still completes */
+      }
+    }
+
     trackEvent("onboarding_completed", {
       branch: branch ?? undefined,
       has_test_date: !!specificDate,
       weakest_subtest: weakest ?? undefined,
+      goal_jobs: goalJobs.length,
     });
 
     router.push("/app/home");
@@ -271,6 +286,59 @@ export function OnboardingForm() {
           ))}
         </div>
       </div>
+
+      {/* Q4 — Optional goal jobs (after branch is chosen) */}
+      {branch && branch !== "undecided" && (
+        <div>
+          <label className="block font-display text-lg font-semibold text-text-primary mb-1">
+            4. Any target jobs? <span className="text-text-tertiary text-sm font-normal">(optional)</span>
+          </label>
+          <p className="mb-3 text-sm text-text-secondary">
+            Pick up to 3. We&apos;ll track how close you are to each — as a
+            confidence band, not a single number.
+          </p>
+
+          {goalJobs.length > 0 && (
+            <div className="mb-3 flex flex-wrap gap-2">
+              {goalJobs.map((j) => (
+                <span
+                  key={j.id}
+                  className="inline-flex items-center gap-2 rounded-lg border border-accent/40 bg-accent-dim px-3 py-1.5 text-sm text-accent"
+                >
+                  <span className="font-medium">{j.code}</span>
+                  <span className="text-accent/80">{j.title}</span>
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setGoalJobs((g) => g.filter((x) => x.id !== j.id))
+                    }
+                    className="text-accent/70 hover:text-accent"
+                    aria-label={`Remove ${j.code}`}
+                  >
+                    ×
+                  </button>
+                </span>
+              ))}
+            </div>
+          )}
+
+          {goalJobs.length < 3 ? (
+            <JobPicker
+              defaultBranch={branch as never}
+              onPick={(entry) =>
+                setGoalJobs((g) =>
+                  g.some((x) => x.id === entry.id) ? g : [...g, entry]
+                )
+              }
+              disabledJobIds={goalJobs.map((j) => j.id)}
+            />
+          ) : (
+            <p className="text-xs text-text-tertiary">
+              You&apos;ve picked the max of 3. Remove one to swap.
+            </p>
+          )}
+        </div>
+      )}
 
       {error && (
         <div className="rounded-lg border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-300">

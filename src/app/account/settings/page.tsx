@@ -1,10 +1,19 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
 import type { Database } from "@/lib/supabase/types";
+import {
+  getHomeTrajectory,
+  addTargetJob,
+  removeTargetJob,
+  reorderTargetJobs,
+} from "@/lib/trajectory/queries";
+import type { TargetJobGap } from "@/lib/trajectory/types";
+import { BRANCH_NAMES, type Branch } from "@/types";
+import JobPicker from "@/components/app/JobPicker";
 
 type Profile = Database["public"]["Tables"]["profiles"]["Row"];
 
@@ -29,6 +38,12 @@ export default function AccountSettingsPage() {
   const [timezone, setTimezone] = useState("UTC");
   const [marketingOptIn, setMarketingOptIn] = useState(false);
   const [dailyEmailOptIn, setDailyEmailOptIn] = useState(true);
+
+  // Target jobs manager state
+  const [targetJobs, setTargetJobs] = useState<TargetJobGap[]>([]);
+  const [jobsLoading, setJobsLoading] = useState(true);
+  const [addingJob, setAddingJob] = useState(false);
+  const [jobMsg, setJobMsg] = useState<string | null>(null);
 
   // UI state
   const [saveLoading, setSaveLoading] = useState(false);
@@ -66,6 +81,93 @@ export default function AccountSettingsPage() {
         setProfileLoading(false);
       });
   }, [session]);
+
+  // Load target jobs via the home trajectory RPC (gives title/order/primary).
+  const loadTargetJobs = useCallback(async () => {
+    if (!session) return;
+    setJobsLoading(true);
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const sb = getSupabaseBrowserClient() as any;
+      const traj = await getHomeTrajectory(sb);
+      setTargetJobs(traj.target_jobs ?? []);
+    } catch {
+      setTargetJobs([]);
+    } finally {
+      setJobsLoading(false);
+    }
+  }, [session]);
+
+  useEffect(() => {
+    if (!session) return;
+    loadTargetJobs();
+  }, [session, loadTargetJobs]);
+
+  async function handleAddJob(jobId: string) {
+    setJobMsg(null);
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const sb = getSupabaseBrowserClient() as any;
+      await addTargetJob(sb, jobId, targetJobs.length === 0);
+      setAddingJob(false);
+      await loadTargetJobs();
+    } catch (e) {
+      setJobMsg(e instanceof Error ? e.message : "Could not add that job.");
+    }
+  }
+
+  async function handleRemoveJob(targetJobId: string) {
+    setJobMsg(null);
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const sb = getSupabaseBrowserClient() as any;
+      await removeTargetJob(sb, targetJobId);
+      await loadTargetJobs();
+    } catch (e) {
+      setJobMsg(e instanceof Error ? e.message : "Could not remove that job.");
+    }
+  }
+
+  // Reorder: move a job up/down, or make it primary (move to front).
+  async function persistOrder(orderedTargetJobIds: string[]) {
+    setJobMsg(null);
+    // Optimistic: reflect new order locally before the round-trip.
+    const byId = new Map(targetJobs.map((j) => [j.target_job_id, j]));
+    setTargetJobs(
+      orderedTargetJobIds
+        .map((id, i) => {
+          const j = byId.get(id);
+          return j
+            ? { ...j, display_order: i, is_primary: i === 0 }
+            : null;
+        })
+        .filter((j): j is TargetJobGap => j !== null)
+    );
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const sb = getSupabaseBrowserClient() as any;
+      await reorderTargetJobs(sb, orderedTargetJobIds);
+      await loadTargetJobs();
+    } catch (e) {
+      setJobMsg(e instanceof Error ? e.message : "Could not save order.");
+      await loadTargetJobs();
+    }
+  }
+
+  function moveJob(index: number, dir: -1 | 1) {
+    const ids = targetJobs.map((j) => j.target_job_id);
+    const next = index + dir;
+    if (next < 0 || next >= ids.length) return;
+    [ids[index], ids[next]] = [ids[next], ids[index]];
+    persistOrder(ids);
+  }
+
+  function makePrimary(index: number) {
+    if (index === 0) return;
+    const ids = targetJobs.map((j) => j.target_job_id);
+    const [picked] = ids.splice(index, 1);
+    persistOrder([picked, ...ids]);
+  }
 
   async function handleSave(e: React.FormEvent) {
     e.preventDefault();
@@ -299,6 +401,137 @@ export default function AccountSettingsPage() {
             </button>
           </div>
         </form>
+      </div>
+
+      {/* Goal jobs manager */}
+      <div className="rounded-2xl border border-navy-border bg-navy-light p-8 mb-6">
+        <div className="mb-1 flex items-center justify-between gap-3">
+          <h2 className="font-display text-lg font-semibold text-text-primary">
+            Goal jobs
+          </h2>
+          <span className="text-xs text-text-tertiary">
+            {targetJobs.length}/3
+          </span>
+        </div>
+        <p className="mb-5 text-sm text-text-secondary">
+          Track up to 3 target jobs. The first is your primary goal and is
+          highlighted on your home screen.
+        </p>
+
+        {jobsLoading ? (
+          <div className="text-sm text-text-tertiary">Loading…</div>
+        ) : (
+          <>
+            {targetJobs.length === 0 && !addingJob && (
+              <div className="rounded-lg border border-navy-border bg-navy px-4 py-3 text-sm text-text-secondary">
+                No goal jobs yet. Add one to track your standing against it.
+              </div>
+            )}
+
+            {targetJobs.length > 0 && (
+              <div className="space-y-2">
+                {targetJobs.map((j, i) => (
+                  <div
+                    key={j.target_job_id}
+                    className={`flex items-center justify-between gap-3 rounded-lg border px-3 py-2.5 ${
+                      j.is_primary
+                        ? "border-accent/40 bg-accent/5"
+                        : "border-navy-border bg-navy"
+                    }`}
+                  >
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2">
+                        <span className="font-medium text-text-primary">
+                          {j.code}
+                        </span>
+                        {j.is_primary && (
+                          <span className="rounded border border-accent/40 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-accent">
+                            Primary
+                          </span>
+                        )}
+                      </div>
+                      <div className="truncate text-xs text-text-secondary">
+                        {BRANCH_NAMES[j.branch]} · {j.title}
+                      </div>
+                    </div>
+                    <div className="flex shrink-0 items-center gap-1.5">
+                      {!j.is_primary && (
+                        <button
+                          onClick={() => makePrimary(i)}
+                          className="rounded border border-navy-border px-2 py-1 text-[11px] text-text-secondary transition-colors hover:text-text-primary"
+                        >
+                          Make primary
+                        </button>
+                      )}
+                      <button
+                        onClick={() => moveJob(i, -1)}
+                        disabled={i === 0}
+                        aria-label="Move up"
+                        className="rounded border border-navy-border px-2 py-1 text-text-secondary transition-colors hover:text-text-primary disabled:opacity-30"
+                      >
+                        ↑
+                      </button>
+                      <button
+                        onClick={() => moveJob(i, 1)}
+                        disabled={i === targetJobs.length - 1}
+                        aria-label="Move down"
+                        className="rounded border border-navy-border px-2 py-1 text-text-secondary transition-colors hover:text-text-primary disabled:opacity-30"
+                      >
+                        ↓
+                      </button>
+                      <button
+                        onClick={() => handleRemoveJob(j.target_job_id)}
+                        aria-label="Remove"
+                        className="rounded border border-danger/40 px-2 py-1 text-danger transition-colors hover:bg-danger-dim"
+                      >
+                        ×
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {jobMsg && (
+              <div className="mt-3 rounded-lg border border-danger/40 bg-danger-dim px-3 py-2 text-xs text-danger">
+                {jobMsg}
+              </div>
+            )}
+
+            {addingJob ? (
+              <div className="mt-4 rounded-xl border border-navy-border bg-navy p-4">
+                <JobPicker
+                  defaultBranch={(profile?.branch ?? null) as Branch | null}
+                  onPick={(entry) => handleAddJob(entry.id)}
+                  disabledJobIds={targetJobs.map((j) => j.job_id)}
+                  notice={
+                    targetJobs.length >= 3
+                      ? "You're tracking the max of 3 goal jobs."
+                      : null
+                  }
+                />
+                <button
+                  onClick={() => {
+                    setAddingJob(false);
+                    setJobMsg(null);
+                  }}
+                  className="mt-3 text-sm text-text-tertiary transition-colors hover:text-text-secondary"
+                >
+                  Cancel
+                </button>
+              </div>
+            ) : (
+              targetJobs.length < 3 && (
+                <button
+                  onClick={() => setAddingJob(true)}
+                  className="mt-4 inline-flex rounded-lg border border-accent/40 px-4 py-2 text-sm font-medium text-accent transition-colors hover:bg-accent-dim"
+                >
+                  Add a goal job
+                </button>
+              )
+            )}
+          </>
+        )}
       </div>
 
       {/* Data & account */}

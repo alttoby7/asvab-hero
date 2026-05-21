@@ -5,15 +5,19 @@ import { useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
-import { estimateStandardScores } from "@/lib/estimate-scores";
 import { loadDeckSummaries } from "@/lib/flashcards/queries";
 import { FREE_DECK_SLUG, type DeckSummary } from "@/lib/flashcards/types";
 import { getDueMistakeCount, isClosedLoopEnabled } from "@/lib/mistakes/queries";
-import type { TopicStats, SubtestScores } from "@/types";
+import { getHomeTrajectory } from "@/lib/trajectory/queries";
+import type { HomeTrajectory } from "@/lib/trajectory/types";
+import { getTrajectoryPrescription } from "@/lib/account/next-action";
+import type { TopicStats } from "@/types";
 
 import MissionCard from "@/components/app/MissionCard";
 import StatsRow from "@/components/app/StatsRow";
-import JobGoalCard from "@/components/app/JobGoalCard";
+import GoalJobsTracker from "@/components/app/GoalJobsTracker";
+import TrajectoryCard from "@/components/app/TrajectoryCard";
+import PrescriptionCard from "@/components/app/PrescriptionCard";
 import MasteryMap from "@/components/app/MasteryMap";
 import QuickActions from "@/components/app/QuickActions";
 
@@ -23,6 +27,7 @@ interface ProfileData {
   branch: string | null;
   target_test_date: string | null;
   target_test_date_bucket: string | null;
+  study_days_per_week: number | null;
   streak_count: number;
   last_challenge_completed_on: string | null;
   onboarding_completed_at: string | null;
@@ -35,7 +40,6 @@ interface AttemptRow {
   question_count: number;
   correct_count: number;
   afqt_estimate: number | null;
-  results_by_subtest: Record<string, { seen: number; correct: number }>;
 }
 
 interface TopicRow {
@@ -72,6 +76,28 @@ function getTestDateCountdown(
   return null;
 }
 
+/** Days until the user's specific test date, when set; null otherwise. */
+function daysToTestFrom(
+  targetDate: string | null,
+  bucket: string | null
+): number | null {
+  if (targetDate) {
+    return Math.max(
+      0,
+      Math.ceil((new Date(targetDate).getTime() - Date.now()) / 86400000)
+    );
+  }
+  // Coarse mapping from bucket so urgency still reflects intent.
+  switch (bucket) {
+    case "lt_30":
+      return 21;
+    case "30_90":
+      return 60;
+    default:
+      return null;
+  }
+}
+
 function isToday(dateStr: string | null): boolean {
   if (!dateStr) return false;
   const d = new Date(dateStr);
@@ -93,9 +119,15 @@ export default function AppHomePage() {
   const [attempts, setAttempts] = useState<AttemptRow[]>([]);
   const [topicStats, setTopicStats] = useState<TopicStats[]>([]);
   const [topics, setTopics] = useState<TopicRow[]>([]);
-  const [todaysChallenge, setTodaysChallenge] = useState<DailyChallengeRow | null>(null);
-  const [flashcardSummaries, setFlashcardSummaries] = useState<DeckSummary[]>([]);
+  const [todaysChallenge, setTodaysChallenge] =
+    useState<DailyChallengeRow | null>(null);
+  const [flashcardSummaries, setFlashcardSummaries] = useState<DeckSummary[]>(
+    []
+  );
   const [dueMistakeCount, setDueMistakeCount] = useState(0);
+  const [trajectory, setTrajectory] = useState<HomeTrajectory | null>(null);
+  // Bump to re-run the loader after a target-job mutation.
+  const [refreshKey, setRefreshKey] = useState(0);
 
   useEffect(() => {
     if (sessionLoading || entLoading) return;
@@ -106,37 +138,50 @@ export default function AppHomePage() {
     const userId = session.user.id;
 
     async function load() {
-      const [profileRes, attemptsRes, statsRes, topicsRes, dailyRes, flashRes, dueCountRes] =
-        await Promise.all([
-          sb
-            .from("profiles")
-            .select(
-              "display_name,email,branch,target_test_date,target_test_date_bucket,streak_count,last_challenge_completed_on,onboarding_completed_at"
-            )
-            .eq("user_id", userId)
-            .single(),
-          sb
-            .from("attempts")
-            .select(
-              "id,variant_code,completed_at,question_count,correct_count,afqt_estimate,results_by_subtest"
-            )
-            .eq("user_id", userId)
-            .order("completed_at", { ascending: false })
-            .limit(20),
-          sb
-            .from("topic_stats")
-            .select("topic_id,seen,correct,posterior,confidence,priority,status,last_seen_at,updated_at")
-            .eq("user_id", userId),
-          sb.from("topics").select("id,subtest,slug,title").eq("active", true),
-          sb
-            .from("daily_challenges")
-            .select("status")
-            .eq("user_id", userId)
-            .eq("challenge_date", new Date().toISOString().split("T")[0])
-            .maybeSingle(),
-          loadDeckSummaries(userId),
-          getDueMistakeCount(userId),
-        ]);
+      const [
+        profileRes,
+        attemptsRes,
+        statsRes,
+        topicsRes,
+        dailyRes,
+        flashRes,
+        dueCountRes,
+        trajectoryRes,
+      ] = await Promise.all([
+        sb
+          .from("profiles")
+          .select(
+            "display_name,email,branch,target_test_date,target_test_date_bucket,study_days_per_week,streak_count,last_challenge_completed_on,onboarding_completed_at"
+          )
+          .eq("user_id", userId)
+          .single(),
+        sb
+          .from("attempts")
+          .select(
+            "id,variant_code,completed_at,question_count,correct_count,afqt_estimate"
+          )
+          .eq("user_id", userId)
+          .order("completed_at", { ascending: false })
+          .limit(20),
+        sb
+          .from("topic_stats")
+          .select(
+            "topic_id,seen,correct,posterior,confidence,priority,status,last_seen_at,updated_at"
+          )
+          .eq("user_id", userId),
+        sb.from("topics").select("id,subtest,slug,title").eq("active", true),
+        sb
+          .from("daily_challenges")
+          .select("status")
+          .eq("user_id", userId)
+          .eq("challenge_date", new Date().toISOString().split("T")[0])
+          .maybeSingle(),
+        loadDeckSummaries(userId),
+        getDueMistakeCount(userId),
+        // Single source of truth for standing + projected + target-job gaps.
+        // No client-side score math remains in home.
+        getHomeTrajectory(sb).catch(() => null),
+      ]);
 
       // Onboarding guard
       if (profileRes.data?.onboarding_completed_at == null) {
@@ -156,11 +201,12 @@ export default function AppHomePage() {
       setTodaysChallenge(dailyRes.data ?? null);
       setFlashcardSummaries(flashRes ?? []);
       setDueMistakeCount(dueCountRes ?? 0);
+      setTrajectory(trajectoryRes ?? null);
       setLoading(false);
     }
 
     load();
-  }, [session, sessionLoading, entLoading, router]);
+  }, [session, sessionLoading, entLoading, router, refreshKey]);
 
   if (sessionLoading || entLoading || loading) {
     return (
@@ -179,8 +225,12 @@ export default function AppHomePage() {
     profile.target_test_date,
     profile.target_test_date_bucket
   );
+  const daysToTest = daysToTestFrom(
+    profile.target_test_date,
+    profile.target_test_date_bucket
+  );
 
-  // Attempt stats
+  // Attempt stats (display only — NOT used to derive standing; the RPC does that)
   const diagnostics = attempts.filter((a) => a.variant_code === "diagnostic");
   const hasDiagnostic = diagnostics.length > 0;
   const latestDiagnostic = diagnostics[0] ?? null;
@@ -189,7 +239,7 @@ export default function AppHomePage() {
   const totalC = attempts.reduce((s, a) => s + a.correct_count, 0);
   const accuracy = totalQ > 0 ? Math.round((totalC / totalQ) * 100) : null;
 
-  // Weak topic
+  // Weak topic (for mission + mastery copy)
   const weakStats = [...topicStats]
     .filter((ts) => ts.priority > 0 && ts.seen >= 3)
     .sort((a, b) => b.priority - a.priority);
@@ -218,26 +268,30 @@ export default function AppHomePage() {
     missionState = "daily_available";
   }
 
-  // Estimated scores for job gap analysis
-  const estimatedScores: SubtestScores | null = latestDiagnostic
-    ? estimateStandardScores(
-        latestDiagnostic.results_by_subtest as Record<
-          string,
-          { seen: number; correct: number }
-        >
-      )
-    : null;
-
-  // Mistake count
-  const mistakeCount = attempts.reduce((sum, a) => {
-    return sum + (a.question_count - a.correct_count);
-  }, 0);
+  // Mistake count (lifetime, for QuickActions fallback)
+  const mistakeCount = attempts.reduce(
+    (sum, a) => sum + (a.question_count - a.correct_count),
+    0
+  );
 
   // Flashcard due count
   const accessibleDecks = isPro
     ? flashcardSummaries
     : flashcardSummaries.filter((s) => s.deck.slug === FREE_DECK_SLUG);
   const flashcardDueCount = accessibleDecks.reduce((s, d) => s + d.due, 0);
+
+  // Today's prescription — derived from the trajectory snapshot (no score math
+  // here; getTrajectoryPrescription is a pure function over RPC data).
+  const standing = trajectory?.current_standing ?? null;
+  const prescription = getTrajectoryPrescription({
+    subtestEstimates: standing?.subtest_estimates ?? {},
+    confidence: standing?.overall_confidence ?? "low",
+    dueMistakeCount,
+    attemptCount: standing?.attempt_count ?? attempts.length,
+    targetJobs: trajectory?.target_jobs ?? [],
+    studyDaysPerWeek: profile.study_days_per_week,
+    daysToTest,
+  });
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 space-y-5">
@@ -250,6 +304,9 @@ export default function AppHomePage() {
           <p className="mt-1 text-sm text-text-secondary">{countdown}</p>
         )}
       </div>
+
+      {/* Today's Prescription (single highest-leverage action) */}
+      <PrescriptionCard prescription={prescription} />
 
       {/* Today's Mission */}
       <MissionCard
@@ -271,6 +328,14 @@ export default function AppHomePage() {
         totalQuestions={totalQ}
       />
 
+      {/* Trajectory — band + confidence only */}
+      {standing && (
+        <TrajectoryCard
+          currentStanding={standing}
+          projectedTestDay={trajectory?.projected_test_day ?? null}
+        />
+      )}
+
       {/* Quick Actions */}
       <QuickActions
         flashcardDueCount={flashcardDueCount}
@@ -280,11 +345,11 @@ export default function AppHomePage() {
         isPro={isPro}
       />
 
-      {/* Job Goal */}
-      <JobGoalCard
+      {/* Goal Jobs Tracker (up to 3) */}
+      <GoalJobsTracker
+        targetJobs={trajectory?.target_jobs ?? []}
         profileBranch={profile.branch}
-        estimatedScores={estimatedScores}
-        isPro={isPro}
+        onChanged={() => setRefreshKey((k) => k + 1)}
       />
 
       {/* Mastery Map */}
