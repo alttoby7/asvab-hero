@@ -40,6 +40,7 @@
 - **MAGE normalization bug:** AF job thresholds are 1–99 percentile but `calculateAirForceComposites()` returns raw sums → AF job matching unreliable. Needs a normalization table (like PAY97). Deferred.
 - **Missing calculator pages:** `/marines-asvab-calculator`, `/coast-guard-asvab-calculator`, `/space-force-asvab-calculator` — follow `/army-asvab-calculator` pattern.
 - **Pending operator step:** enable `invoice.payment_failed` in Stripe Dashboard for `we_1TRQ39DjRScowBLlbLoSKKXX`.
+- **Mistake Bank (Closed-Loop v0) shipped DARK (2026-05-20):** migrations 0017–0019 live; single-source SM-2 in PL/pgSQL (`sm2_next`); flashcards + missed questions grade via RPC. `/app/mistakes` + home entry points behind `NEXT_PUBLIC_CLOSED_LOOP_ENABLED` (off). To launch: set flag=true in CF Pages → rebuild; then deploy+schedule `mistake-reminders` fn (activation SQL in `0019`).
 - **Not yet committed/deployed:** AFCT Practice Test landing page, App Shell (`/app/home`, daily challenge). See history doc.
 - **v2/v3 gated:** AFQT Sprint + Weakness Loop + Full Sim + Retake Readiness variants (gated on bank ≥1000 items); daily challenge Edge Function.
 
@@ -52,3 +53,4 @@
 - Runbooks: `docs/runbooks/` (incl. `stripe-webhook-events.md`)
 - Marketing strategy: `docs/marketing-strategy-2026-04-28.md`
 - Platform design plan: `~/.claude/plans/adaptive-churning-shell.md`
+- Efficacy plan + Phase 1 pickup: `~/.claude/plans/synthetic-bouncing-walrus.md` · `Personal/asvab-hero/CONTINUITY-mistake-bank-phase1-2026-05-20.md`
