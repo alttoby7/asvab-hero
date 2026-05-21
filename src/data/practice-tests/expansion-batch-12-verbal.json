@@ -1,0 +1,1122 @@
+[
+  {
+    "external_key": "WK-B12-SYN-1",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "ABUNDANT most nearly means:",
+    "choices": [
+      "plentiful",
+      "expensive",
+      "fragile",
+      "hidden"
+    ],
+    "correct_index": 0,
+    "explanation": "Abundant means present in large quantity, as in 'rain was abundant that spring.' Plentiful is its direct synonym. Expensive describes high cost, a different idea, since something can be abundant and cheap. Fragile describes how easily a thing breaks, unrelated to quantity. Hidden describes something concealed, the opposite of the visible plenty abundant suggests.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-2",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "STURDY most nearly means:",
+    "choices": [
+      "quiet",
+      "strong",
+      "heavy",
+      "smooth"
+    ],
+    "correct_index": 1,
+    "explanation": "Sturdy means strongly and solidly built, as in 'a sturdy table.' Strong is its direct synonym. Quiet describes low sound, unrelated to build. Heavy is a near miss because sturdy objects are often heavy, but sturdiness names durability, not weight, since light materials can also be sturdy. Smooth describes an even surface, a separate property.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-3",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "CONCEAL most nearly means:",
+    "choices": [
+      "hide",
+      "repair",
+      "announce",
+      "carry"
+    ],
+    "correct_index": 0,
+    "explanation": "Conceal means to keep from being seen or known, as in 'she concealed the gift.' Hide is its direct synonym. Announce means to make publicly known, the opposite of conceal. Repair means to fix something broken, unrelated. Carry means to transport, a different action entirely.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-4",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "DILIGENT most nearly means:",
+    "choices": [
+      "wealthy",
+      "hardworking",
+      "cheerful",
+      "talented"
+    ],
+    "correct_index": 1,
+    "explanation": "Diligent means showing steady, careful effort, as in 'a diligent student who reviews every night.' Hardworking is its direct synonym. Talented is a near miss because a diligent person may also be talented, but diligence describes effort, not natural ability. Wealthy describes having money, unrelated. Cheerful describes a happy mood, which has nothing to do with the steady work diligent names.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-5",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "VITAL most nearly means:",
+    "choices": [
+      "essential",
+      "optional",
+      "temporary",
+      "expensive"
+    ],
+    "correct_index": 0,
+    "explanation": "Vital means absolutely necessary, as in 'water is vital to survival.' Essential is its direct synonym. Optional is the antonym, naming what can be left out. Temporary describes short duration, unrelated to importance. Expensive describes cost, a separate quality, since a vital thing can be cheap.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-6",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "ABRUPT most nearly means:",
+    "choices": [
+      "gradual",
+      "sudden",
+      "polite",
+      "lengthy"
+    ],
+    "correct_index": 1,
+    "explanation": "Abrupt means happening suddenly and without warning, as in 'an abrupt stop.' Sudden is its direct synonym. Gradual is the antonym, describing slow, steady change. Polite describes courteous manners; abrupt can mean curt, but its core sense here is suddenness, not rudeness. Lengthy describes long duration, the opposite of the quickness abrupt implies.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-7",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "FERTILE most nearly means:",
+    "choices": [
+      "productive",
+      "barren",
+      "frozen",
+      "rocky"
+    ],
+    "correct_index": 0,
+    "explanation": "Fertile means able to produce abundantly, as in 'fertile soil.' Productive is its direct synonym. Barren is the antonym, naming land that produces nothing. Frozen describes temperature and rocky describes texture; both are conditions that can reduce fertility, but neither defines the word itself.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-8",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "VIGILANT most nearly means:",
+    "choices": [
+      "watchful",
+      "careless",
+      "cheerful",
+      "exhausted"
+    ],
+    "correct_index": 0,
+    "explanation": "Vigilant means keeping careful watch for danger, as in 'a vigilant guard.' Watchful is its direct synonym. Careless is the antonym, naming a failure to pay attention. Cheerful describes a happy mood, unrelated to alertness. Exhausted describes tiredness, which would undermine vigilance rather than define it.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-9",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "NOVICE most nearly means:",
+    "choices": [
+      "expert",
+      "beginner",
+      "leader",
+      "rival"
+    ],
+    "correct_index": 1,
+    "explanation": "Novice means a person new to an activity, as in 'a novice climber.' Beginner is its direct synonym. Expert is the antonym, naming someone highly skilled. Leader describes someone who directs others, unrelated to experience level. Rival describes a competitor, a different relationship entirely.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-10",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "LENIENT most nearly means:",
+    "choices": [
+      "strict",
+      "merciful",
+      "honest",
+      "wealthy"
+    ],
+    "correct_index": 1,
+    "explanation": "Lenient means not strict, willing to forgive or go easy, as in 'a lenient judge.' Merciful is its closest synonym. Strict is the direct antonym. Honest describes truthfulness, unrelated to how harshly someone enforces rules. Wealthy describes having money, a separate idea.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-11",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "TEDIOUS most nearly means:",
+    "choices": [
+      "dangerous",
+      "boring",
+      "expensive",
+      "complicated"
+    ],
+    "correct_index": 1,
+    "explanation": "Tedious means tiresome through dullness and length, as in 'a tedious lecture.' Boring is its direct synonym. Complicated is a near miss because a tedious task can be hard, but tedium comes from monotony, not difficulty. Dangerous describes risk and expensive describes cost, neither of which is what tedious names.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-12",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "DOCILE most nearly means:",
+    "choices": [
+      "obedient",
+      "intelligent",
+      "stubborn",
+      "fragile"
+    ],
+    "correct_index": 0,
+    "explanation": "Docile means easy to manage or teach, as in 'a docile horse.' Obedient is its closest synonym. Stubborn is the antonym, naming resistance to control. Intelligent describes mental ability, which a docile animal may lack or possess. Fragile describes how easily something breaks, unrelated to temperament.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-13",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 4,
+    "stem": "GARRULOUS most nearly means:",
+    "choices": [
+      "talkative",
+      "silent",
+      "forgetful",
+      "rude"
+    ],
+    "correct_index": 0,
+    "explanation": "Garrulous means excessively talkative, especially about small matters, as in 'a garrulous neighbor.' Talkative is its direct synonym. Silent is the antonym. Rude is a register trap, since a garrulous person can be perfectly polite, just long-winded. Forgetful describes poor memory, unrelated to how much one speaks.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-14",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 4,
+    "stem": "FRUGAL most nearly means:",
+    "choices": [
+      "wasteful",
+      "thrifty",
+      "honest",
+      "fearful"
+    ],
+    "correct_index": 1,
+    "explanation": "Frugal means careful and sparing with money or resources, as in 'a frugal budget.' Thrifty is its direct synonym. Wasteful is the antonym, naming careless spending. Honest describes truthfulness and fearful describes anxiety; neither relates to economy with resources.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-15",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 4,
+    "stem": "RESOLUTE most nearly means:",
+    "choices": [
+      "determined",
+      "uncertain",
+      "exhausted",
+      "generous"
+    ],
+    "correct_index": 0,
+    "explanation": "Resolute means firmly determined and unwavering, as in 'resolute in her decision.' Determined is its direct synonym. Uncertain is the antonym, naming doubt. Exhausted describes tiredness, unrelated to firmness of purpose. Generous describes willingness to give, a different trait entirely.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-16",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 4,
+    "stem": "MEAGER most nearly means:",
+    "choices": [
+      "scanty",
+      "generous",
+      "filthy",
+      "ancient"
+    ],
+    "correct_index": 0,
+    "explanation": "Meager means lacking in quantity, thin or scant, as in 'a meager portion.' Scanty is its direct synonym. Generous, naming an ample amount, is the antonym. Filthy describes dirtiness and ancient describes age; neither has to do with how small or sparse a quantity is.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-17",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 5,
+    "stem": "CACOPHONY most nearly means:",
+    "choices": [
+      "harsh noise",
+      "sweet melody",
+      "deep silence",
+      "bright color"
+    ],
+    "correct_index": 0,
+    "explanation": "Cacophony means a harsh, jarring mixture of sounds, as in 'the cacophony of car horns.' Harsh noise captures it directly. Sweet melody is its near opposite, naming pleasant sound. Deep silence is the absence of sound, the full opposite. Bright color belongs to sight, not hearing, so it is the wrong sense entirely.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-SYN-18",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 5,
+    "stem": "INDIGENT most nearly means:",
+    "choices": [
+      "impoverished",
+      "outraged",
+      "native",
+      "lazy"
+    ],
+    "correct_index": 0,
+    "explanation": "Indigent means very poor, lacking the means to live, as in 'aid for indigent families.' Impoverished is its direct synonym. Outraged is a sound-alike trap, since indigent is easily confused with indignant, which means angry. Native is a separate confusion with indigenous. Lazy describes a lack of effort, not a lack of money.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-CTX-1",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "In the sentence 'After the long march, the soldiers were WEARY and could barely lift their packs,' the word WEARY most nearly means:",
+    "choices": [
+      "excited",
+      "tired",
+      "hungry",
+      "lost"
+    ],
+    "correct_index": 1,
+    "explanation": "The clue 'could barely lift their packs' after a long march points to exhaustion. Weary means tired or worn out. Hungry is plausible after a march, but the sentence ties the state to lifting packs, which signals fatigue, not appetite. Excited reverses the mood, since worn-out soldiers are not energized. Lost addresses direction, which the sentence never raises.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-CTX-2",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "In the sentence 'The new recruit was so TIMID that he hesitated to ask even simple questions,' the word TIMID most nearly means:",
+    "choices": [
+      "shy",
+      "clever",
+      "loud",
+      "strong"
+    ],
+    "correct_index": 0,
+    "explanation": "The clue 'hesitated to ask even simple questions' shows a lack of confidence. Timid means shy or easily frightened. Loud is the opposite, since a timid person tends to be quiet. Clever describes intelligence, which the sentence does not measure. Strong describes physical or emotional power, the reverse of the hesitation described.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-CTX-3",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "In the sentence 'The instructions were so VAGUE that no two students completed the task the same way,' the word VAGUE most nearly means:",
+    "choices": [
+      "detailed",
+      "unclear",
+      "lengthy",
+      "strict"
+    ],
+    "correct_index": 1,
+    "explanation": "The clue 'no two students completed the task the same way' shows the instructions lacked precision. Vague means not clearly expressed. Detailed is the opposite, since detailed instructions would produce uniform results. Lengthy describes length, but long instructions can still be clear. Strict describes how firmly rules are enforced, which the sentence does not address.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-CTX-4",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "In the sentence 'The hikers were CAUTIOUS on the icy trail, testing each step before shifting their weight,' the word CAUTIOUS most nearly means:",
+    "choices": [
+      "careless",
+      "careful",
+      "cheerful",
+      "exhausted"
+    ],
+    "correct_index": 1,
+    "explanation": "The clue 'testing each step before shifting their weight' shows deliberate care to avoid danger. Cautious means careful to avoid risk. Careless is the direct opposite. Cheerful describes mood, which the sentence does not raise. Exhausted describes fatigue, but the hikers' slowness comes from caution on ice, not tiredness.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-CTX-5",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "In the sentence 'The manager praised the report as THOROUGH because it answered every question the client had raised,' the word THOROUGH most nearly means:",
+    "choices": [
+      "brief",
+      "complete",
+      "colorful",
+      "late"
+    ],
+    "correct_index": 1,
+    "explanation": "The clue 'answered every question' signals nothing was left out. Thorough means complete and careful, covering all details. Brief is the opposite, naming something short and partial. Colorful describes vivid style, not completeness. Late describes timing, which the sentence does not mention.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-CTX-6",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'The report was BIASED, presenting only the facts that favored one side and ignoring the rest,' the word BIASED most nearly means:",
+    "choices": [
+      "unfair",
+      "balanced",
+      "lengthy",
+      "outdated"
+    ],
+    "correct_index": 0,
+    "explanation": "The clue 'presenting only the facts that favored one side and ignoring the rest' signals a slanted, one-sided treatment. Biased means unfairly favoring one side. Balanced is the antonym, naming an even-handed account. Lengthy describes length, which the sentence does not measure. Outdated describes age, but the problem is selective fairness, not timeliness.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-CTX-7",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'Funding was so SCARCE that the program had to turn away qualified applicants,' the word SCARCE most nearly means:",
+    "choices": [
+      "abundant",
+      "limited",
+      "delayed",
+      "complicated"
+    ],
+    "correct_index": 1,
+    "explanation": "The clue 'had to turn away qualified applicants' shows there was not enough to go around. Scarce means available in short supply. Abundant is the antonym, naming plenty. Delayed addresses timing, but the problem is quantity, not lateness. Complicated describes difficulty of process, which the sentence does not raise.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-CTX-8",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'The coach remained COMPOSED even as the score slipped away, calmly calling the next play,' the word COMPOSED most nearly means:",
+    "choices": [
+      "panicked",
+      "calm",
+      "angry",
+      "confused"
+    ],
+    "correct_index": 1,
+    "explanation": "The clue 'calmly calling the next play' even under pressure shows self-control. Composed means calm and in control of one's emotions. Panicked and angry both name strong reactions the coach is said to avoid. Confused describes mental disorder, but the coach acts with clear purpose, not bewilderment.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-CTX-9",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 4,
+    "stem": "In the sentence 'Her PRAGMATIC plan ignored grand theories and focused only on what would actually work by Friday,' the word PRAGMATIC most nearly means:",
+    "choices": [
+      "practical",
+      "idealistic",
+      "expensive",
+      "secretive"
+    ],
+    "correct_index": 0,
+    "explanation": "The contrast 'ignored grand theories and focused only on what would actually work' defines the term. Pragmatic means dealing with things sensibly and realistically. Idealistic is the contrast the sentence sets up, naming the theory-driven approach she rejects. Expensive addresses cost and secretive addresses concealment, neither of which the sentence raises.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-CTX-10",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 4,
+    "stem": "In the sentence 'The new supervisor was ABRASIVE, snapping at staff and dismissing their concerns,' the word ABRASIVE most nearly means:",
+    "choices": [
+      "harsh",
+      "gentle",
+      "humorous",
+      "patient"
+    ],
+    "correct_index": 0,
+    "explanation": "The clue 'snapping at staff and dismissing their concerns' shows a rough, irritating manner. Abrasive means harsh or grating in dealing with others. Gentle and patient are both opposites, naming a mild, tolerant manner. Humorous describes a comic style, which the unkind behavior in the sentence does not match.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-CTX-11",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 5,
+    "stem": "In the sentence 'The witness gave such a LUCID account that the jury followed every step without confusion,' the word LUCID most nearly means:",
+    "choices": [
+      "clear",
+      "muddled",
+      "lengthy",
+      "false"
+    ],
+    "correct_index": 0,
+    "explanation": "The clue 'the jury followed every step without confusion' shows the account was easy to understand. Lucid means clear and easy to follow. Muddled is the antonym, naming something confusing. Lengthy describes length, but a long account can still be unclear. False describes untruth, which the sentence does not raise; lucidity is about clarity, not honesty.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-CTX-12",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 5,
+    "stem": "In the sentence 'Rather than make a scene, she handled the insult with great EQUANIMITY and simply changed the subject,' the word EQUANIMITY most nearly means:",
+    "choices": [
+      "composure",
+      "outrage",
+      "confusion",
+      "generosity"
+    ],
+    "correct_index": 0,
+    "explanation": "The clue 'Rather than make a scene' and 'simply changed the subject' shows calm self-possession under provocation. Equanimity means evenness of temper, calmness. Outrage is the reaction she deliberately avoids. Confusion describes a muddled mind, but she responds with clear control. Generosity describes giving, unrelated to staying calm.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-ROOT-1",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word SPECTATOR shares its root with INSPECT and SPECTACLE. The root SPECT- means:",
+    "choices": [
+      "to hear",
+      "to look",
+      "to build",
+      "to break"
+    ],
+    "correct_index": 1,
+    "explanation": "SPECT- comes from Latin specere, meaning to look or watch. Cognates include spectator (one who watches), inspect (to look into), spectacle (a sight), and prospect (a view ahead). 'To hear' would use AUD-, a different sense entirely. 'To build' would use STRUCT- (structure, construct). 'To break' would use FRACT- or RUPT-, unrelated roots.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-ROOT-2",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word MANUAL shares its root with MANUFACTURE and MANIPULATE. The root MAN- means:",
+    "choices": [
+      "hand",
+      "mind",
+      "water",
+      "fire"
+    ],
+    "correct_index": 0,
+    "explanation": "MAN- comes from Latin manus, meaning hand. Cognates include manual (done by hand), manufacture (originally to make by hand), manipulate (to handle), and manuscript (written by hand). 'Mind' would use MENT- (mental) or PSYCH-. 'Water' would use AQUA- or HYDRO-. 'Fire' would use IGN- or PYRO-, none of which is MAN-.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-ROOT-3",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word VOLUNTEER shares its root with VOLUNTARY and VOLITION. The root VOL- means:",
+    "choices": [
+      "to fly",
+      "to wish or will",
+      "to roll",
+      "to speak"
+    ],
+    "correct_index": 1,
+    "explanation": "In these words VOL- comes from Latin velle, meaning to wish or will. Cognates include volunteer (one who acts by choice), voluntary (done by choice), and volition (the act of willing). 'To fly' belongs to a separate Latin root volare, not the one in volition. 'To roll' would use VOLV- (revolve), and 'to speak' would use DICT- or LOQU-, different roots.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-ROOT-4",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 4,
+    "stem": "The word BIOLOGY shares its root with BIOGRAPHY and ANTIBIOTIC. The root BIO- means:",
+    "choices": [
+      "earth",
+      "life",
+      "light",
+      "sound"
+    ],
+    "correct_index": 1,
+    "explanation": "BIO- comes from Greek bios, meaning life. Cognates include biology (the study of life), biography (an account of a life), and antibiotic (acting against living microbes). 'Earth' would use GEO- (geology). 'Light' would use PHOTO- (photograph). 'Sound' would use PHON- (telephone), none of which is BIO-.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-ROOT-5",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 4,
+    "stem": "The word TENABLE shares its root with RETAIN and TENACIOUS. The root TEN- means:",
+    "choices": [
+      "to hold",
+      "to throw",
+      "to cut",
+      "to lead"
+    ],
+    "correct_index": 0,
+    "explanation": "TEN- comes from Latin tenere, meaning to hold. Cognates include tenable (able to be held or defended), retain (to keep holding), and tenacious (holding firmly). 'To throw' would use JECT- (eject). 'To cut' would use CIS- (incision). 'To lead' would use DUCT- (conduct), separate roots.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-ROOT-6",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 5,
+    "stem": "The word FRACTURE shares its root with FRAGMENT and INFRACTION. The root FRACT- (also FRAG-) means:",
+    "choices": [
+      "to bend",
+      "to break",
+      "to join",
+      "to measure"
+    ],
+    "correct_index": 1,
+    "explanation": "FRACT-, with the variant FRAG-, comes from Latin frangere, meaning to break. Cognates include fracture (a break), fragment (a broken piece), and infraction (a breaking of a rule). 'To bend' would use FLEX- (flexible). 'To join' would use JUNCT- (junction). 'To measure' would use METER- or MENS-, unrelated roots.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-PFX-1",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word PREVIEW contains the prefix PRE-. Based on that prefix, PRE- most nearly means:",
+    "choices": [
+      "before",
+      "after",
+      "against",
+      "again"
+    ],
+    "correct_index": 0,
+    "explanation": "PRE- means before, so a preview is a viewing before the main event. Other examples include predict (say before) and prepare (get ready before). 'After' would use POST- (postwar). 'Against' would use ANTI- (antiwar). 'Again' would use RE- (rewrite), each a different prefix.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-PFX-2",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word SUBMERGE contains the prefix SUB-. Based on that prefix, SUB- most nearly means:",
+    "choices": [
+      "over",
+      "under",
+      "beside",
+      "around"
+    ],
+    "correct_index": 1,
+    "explanation": "SUB- means under or below, so to submerge is to put under water. Other examples include submarine (under the sea) and subway (an under-ground line). 'Over' would use SUPER- or SUPRA- (superscript). 'Beside' would use JUXTA- or PARA-. 'Around' would use CIRCUM- (circumnavigate), separate prefixes.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-PFX-3",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word MALFUNCTION contains the prefix MAL-. Based on that prefix, MAL- most nearly means:",
+    "choices": [
+      "well",
+      "badly or wrongly",
+      "fully",
+      "partly"
+    ],
+    "correct_index": 1,
+    "explanation": "MAL- means bad or wrong, so a malfunction is a faulty operation. Other examples include malnutrition (bad nutrition) and malevolent (wishing ill). 'Well' is the opposite sense, carried by BENE- (benefit). 'Fully' would use a different intensifier, and 'partly' would use SEMI- or DEMI-, unrelated prefixes.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-PFX-4",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word WASHABLE ends in the suffix -ABLE. Based on that suffix, -ABLE most nearly means:",
+    "choices": [
+      "capable of being",
+      "the state of",
+      "one who does",
+      "without"
+    ],
+    "correct_index": 0,
+    "explanation": "The suffix -ABLE means capable of or able to be, so washable means able to be washed. Other examples include readable (able to be read) and breakable (able to be broken). 'The state of' is carried by -NESS or -ITY. 'One who does' is carried by -ER or -OR. 'Without' is carried by -LESS, different suffixes.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-PFX-5",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 4,
+    "stem": "The word OMNIPRESENT contains the prefix OMNI-. Based on that prefix, OMNI- most nearly means:",
+    "choices": [
+      "none",
+      "all",
+      "half",
+      "self"
+    ],
+    "correct_index": 1,
+    "explanation": "OMNI- means all, so omnipresent means present everywhere. Other examples include omnivore (eating all kinds of food) and omnipotent (all-powerful). 'None' would be carried by a negating prefix like NON- or A-. 'Half' would use SEMI- or HEMI-. 'Self' would use AUTO- (automatic), different prefixes.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B12-PFX-6",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 4,
+    "stem": "The word NARRATOR ends in the suffix -OR. Based on that suffix, -OR most nearly means:",
+    "choices": [
+      "one who does",
+      "the act of",
+      "capable of",
+      "before"
+    ],
+    "correct_index": 0,
+    "explanation": "The suffix -OR names a person or thing that performs an action, so a narrator is one who narrates. Other examples include actor (one who acts) and inventor (one who invents). 'The act of' is carried by -ION (action). 'Capable of' is carried by -ABLE (readable). 'Before' is carried by the prefix PRE-, not a suffix.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-MI-1",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"Honeybees do far more than make honey. As they move from flower to flower collecting nectar, they carry pollen with them, allowing plants to produce fruits and seeds. Many of the crops people eat every day depend on this pollination to grow. Without bees, grocery shelves would hold far less variety.\"\n\nThe main idea of this passage is that:",
+    "choices": [
+      "honey is the most important product bees make",
+      "bees are important because they pollinate the crops people eat",
+      "bees travel long distances between flowers",
+      "grocery stores should sell more honey"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage opens with 'Honeybees do far more than make honey' and spends the rest explaining pollination and its effect on food crops. Choice B states that central point. Choice A is contradicted by the first sentence, which downplays honey. Choice C names a supporting detail, how bees move, not the main idea. Choice D adds a recommendation about stores the passage never makes.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-MI-2",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"Drinking enough water affects nearly every part of how the body works. It helps regulate temperature, keeps joints cushioned, and carries nutrients to cells. When a person does not drink enough, even mild dehydration can cause headaches and trouble concentrating. Staying hydrated is a simple habit with wide-reaching effects.\"\n\nWhich statement best expresses the main idea?",
+    "choices": [
+      "Dehydration always causes severe headaches.",
+      "Water plays many important roles in keeping the body working well.",
+      "Joints are the most important part of the body.",
+      "People should drink water only when they feel thirsty."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage lists several functions of water and closes by calling hydration 'a simple habit with wide-reaching effects.' Choice B captures that broad point. Choice A overstates the text, which says mild dehydration 'can cause headaches,' not always severe ones. Choice C elevates one example, joints, above the rest. Choice D gives advice about thirst the passage never offers.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-MI-3",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"The first public libraries were not free. Early reading rooms charged membership fees, which kept books out of reach for most working families. It was only in the nineteenth century that towns began funding libraries through taxes, opening their shelves to everyone. That shift turned the library from a private club into a public service.\"\n\nThe main idea of this passage is that:",
+    "choices": [
+      "libraries have always been free to the public",
+      "libraries changed from paid clubs into free public services",
+      "working families never used early libraries",
+      "the nineteenth century was the best time for reading"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage traces a change: early libraries 'charged membership fees,' then tax funding 'opened their shelves to everyone.' Choice B names that transformation. Choice A contradicts the opening line that libraries 'were not free.' Choice C overstates the text, which says fees kept books 'out of reach for most,' not that families never used them. Choice D adds a value judgment about the century the passage does not make.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-MI-4",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"Sleep is often treated as wasted time, but the brain stays remarkably busy while we rest. During deep sleep, it sorts through the day's events, strengthening memories worth keeping and clearing away clutter. Skipping sleep does not just leave a person tired; it weakens the very process that helps learning stick.\"\n\nWhich statement best expresses the main idea?",
+    "choices": [
+      "The brain shuts down completely during sleep.",
+      "Sleep is wasted time that could be spent learning.",
+      "Sleep is active work that helps the brain store what it learns.",
+      "People who sleep more always perform better in school."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage rejects the idea of sleep as 'wasted time' and describes the brain 'remarkably busy' sorting and storing memories. Choice C captures that point. Choice A contradicts the description of a busy brain. Choice B states the very view the passage argues against. Choice D makes a guaranteed-outcome claim about grades the passage does not support.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-MI-5",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"Supporters of the new bridge point to shorter commutes and easier access to the hospital across the river. Critics counter that the cost has doubled since the first estimate and that traffic studies relied on outdated data. Both sides agree the current ferry is unreliable, but they disagree sharply on whether a bridge is the right fix.\"\n\nThe main idea of this passage is that:",
+    "choices": [
+      "the bridge will definitely be built",
+      "people disagree about whether the bridge is the right solution",
+      "the ferry is the best way to cross the river",
+      "the hospital should be moved to the other side"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage presents supporters and critics and ends by noting they 'disagree sharply on whether a bridge is the right fix.' Choice B states that the debate is the point. Choice A predicts an outcome the passage never settles. Choice C misreads the shared view that the ferry 'is unreliable.' Choice D introduces moving the hospital, an idea the passage does not raise.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-MI-6",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"For decades, doctors warned patients to avoid all fats. Newer research draws a sharper line: some fats, like those in olive oil and fish, support heart health, while others, found in fried and heavily processed foods, do the opposite. The lesson is not to fear fat itself, but to learn which kinds belong on the plate.\"\n\nWhich statement best expresses the main idea?",
+    "choices": [
+      "All fats are equally harmful to the heart.",
+      "The type of fat matters more than avoiding fat altogether.",
+      "Olive oil is the only healthy food.",
+      "Doctors no longer give any dietary advice."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage contrasts old blanket advice with newer findings that distinguish helpful from harmful fats, closing with 'learn which kinds belong on the plate.' Choice B names that point. Choice A states the outdated view the passage corrects. Choice C overstates one example into the only option. Choice D makes a sweeping claim about doctors the passage does not support.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-MI-7",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The factory's switch to solar power was praised as a green milestone, and on sunny days it does run almost entirely on the sun. Yet on cloudy stretches it still draws heavily from the regional grid, which burns natural gas. Calling the plant fully renewable, then, paints a cleaner picture than the daily numbers support.\"\n\nThe main idea of this passage is that:",
+    "choices": [
+      "the factory has completely stopped using fossil fuels",
+      "the factory's renewable claim is more partial than it sounds",
+      "solar power never works for factories",
+      "natural gas is cheaper than solar power"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage credits the solar switch but notes the plant 'still draws heavily from the grid' on cloudy days, concluding the renewable label 'paints a cleaner picture than the daily numbers support.' Choice B captures that qualified judgment. Choice A is contradicted by the grid reliance described. Choice C overgeneralizes, since the plant does run on solar on sunny days. Choice D compares costs the passage never discusses.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-DR-1",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"The aquarium's new exhibit features three types of jellyfish. The moon jelly glows pale white, the sea nettle trails long orange tentacles, and the spotted jelly carries tiny algae inside its body. Visitors can view all three in a single darkened room near the main entrance.\"\n\nAccording to the passage, which jellyfish carries algae inside its body?",
+    "choices": [
+      "the moon jelly",
+      "the sea nettle",
+      "the spotted jelly",
+      "all three jellyfish"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states directly that 'the spotted jelly carries tiny algae inside its body.' Choice C matches that detail. The moon jelly is described only as glowing pale white, so Choice A is wrong. The sea nettle is described by its orange tentacles, not algae, so Choice B is wrong. The passage attributes algae to only one type, so Choice D contradicts the text.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-DR-2",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"The hiking club meets every Saturday at 7 a.m. in the north parking lot. Members are asked to bring at least two liters of water, a light snack, and sturdy shoes. The leader provides a first aid kit and a trail map for each outing.\"\n\nAccording to the passage, what does the leader provide?",
+    "choices": [
+      "water and snacks",
+      "a first aid kit and a trail map",
+      "sturdy shoes",
+      "transportation to the trailhead"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states 'The leader provides a first aid kit and a trail map.' Choice B matches that detail. Water and snacks are listed as items members bring, not the leader, so Choice A is wrong. Sturdy shoes are also a member responsibility, so Choice C is wrong. Transportation is never mentioned, so Choice D adds information not in the text.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-DR-3",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"The library extended its hours during exam week. From Monday through Thursday it now stays open until midnight, two hours later than usual. On Friday it closes at the regular time of 8 p.m., and on the weekend it keeps its normal schedule. Free coffee is offered after 9 p.m. on the late nights.\"\n\nAccording to the passage, on which days does the library stay open until midnight?",
+    "choices": [
+      "every day of the week",
+      "Monday through Thursday",
+      "only on Friday",
+      "only on the weekend"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states the library stays open until midnight 'From Monday through Thursday.' Choice B matches that detail exactly. Choice A is wrong because Friday closes at 8 p.m. and the weekend keeps its normal schedule. Choice C names Friday, which the passage gives the regular 8 p.m. closing. Choice D names the weekend, which the passage says follows the normal schedule.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-DR-4",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"The recipe makes two dozen muffins. It calls for two cups of flour, one cup of sugar, and three eggs, plus a half cup of blueberries folded in at the end. The batter bakes for eighteen minutes at 375 degrees. The author notes that frozen blueberries work just as well as fresh ones.\"\n\nAccording to the passage, how long do the muffins bake?",
+    "choices": [
+      "eight minutes",
+      "fifteen minutes",
+      "eighteen minutes",
+      "twenty-four minutes"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states the batter 'bakes for eighteen minutes at 375 degrees.' Choice C matches that detail. The other times are distractors built from nearby numbers: twenty-four echoes the two dozen muffins, and fifteen and eight resemble parts of eighteen but do not appear as the baking time.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-DR-5",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"The museum offers three membership levels. The basic tier costs forty dollars a year and includes unlimited general admission. The family tier, at seventy-five dollars, adds free entry for two children and discounts in the gift shop. The patron tier, at two hundred dollars, includes everything in the family tier plus invitations to private exhibit previews.\"\n\nAccording to the passage, which benefit is unique to the patron tier?",
+    "choices": [
+      "unlimited general admission",
+      "gift shop discounts",
+      "invitations to private previews",
+      "free entry for two children"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage says the patron tier 'includes everything in the family tier plus invitations to private exhibit previews,' so the previews are the added benefit. Choice C is correct. Unlimited admission is part of the basic tier and shared upward, so Choice A is not unique. Gift shop discounts and free entry for two children both belong to the family tier, so Choices B and D are shared, not exclusive to patrons.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-DR-6",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"The storm caused damage across the county in three stages. First, heavy rain flooded low-lying roads on Tuesday night. Then, high winds on Wednesday morning knocked down power lines, leaving thousands without electricity. Finally, falling temperatures Wednesday night froze the standing water, making travel dangerous well into Thursday.\"\n\nAccording to the passage, what happened on Wednesday morning?",
+    "choices": [
+      "Heavy rain flooded the roads.",
+      "High winds knocked down power lines.",
+      "Falling temperatures froze the water.",
+      "Travel returned to normal."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states that 'high winds on Wednesday morning knocked down power lines.' Choice B matches that detail. The flooding happened Tuesday night, so Choice A is the wrong stage. The freezing happened Wednesday night, so Choice C is also the wrong time. The passage says travel stayed dangerous into Thursday, so Choice D contradicts the text.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-DR-7",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The grant came with strict conditions. The funds could be spent only on lab equipment, not on salaries or travel. Any purchase over five thousand dollars required written approval from the review board. Unspent money had to be returned at the end of the year, and a final report was due within sixty days of the project's close.\"\n\nAccording to the passage, what required written approval from the review board?",
+    "choices": [
+      "any spending on salaries",
+      "purchases over five thousand dollars",
+      "the final report",
+      "all travel expenses"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states that 'Any purchase over five thousand dollars required written approval from the review board.' Choice B matches that condition. Salaries and travel were not allowed at all, so they could not be approved purchases, ruling out Choices A and D. The final report had a sixty-day deadline but no approval requirement, so Choice C confuses two separate rules.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-INF-1",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"Maria checked the sky one more time, zipped her jacket to the chin, and tucked the umbrella into her bag before stepping out the door. Dark clouds had been gathering all morning.\"\n\nIt can be inferred from the passage that Maria expects:",
+    "choices": [
+      "a sunny afternoon",
+      "rain",
+      "a snowstorm",
+      "a long vacation"
+    ],
+    "correct_index": 1,
+    "explanation": "Maria zips up, packs an umbrella, and notes the 'dark clouds gathering,' all signs she anticipates wet weather. Choice B follows from those clues. Choice A contradicts the dark clouds. Choice C jumps to snow, which the passage does not signal; an umbrella suits rain, not snow. Choice D about a vacation has no support in the brief, weather-focused scene.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-INF-2",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"By the time the new manager arrived, the office had gone three years without a single all-staff meeting. Within her first month, she scheduled one for every Monday and asked each team to share what it was working on.\"\n\nIt can be inferred that the new manager values:",
+    "choices": [
+      "cutting costs",
+      "open communication among staff",
+      "longer working hours",
+      "reducing the size of the staff"
+    ],
+    "correct_index": 1,
+    "explanation": "The manager replaces a three-year silence with weekly meetings and asks teams to share their work, which signals she wants people informed and talking. Choice B follows from those actions. Choice A about costs has no support; meetings are not framed as a budget move. Choice C reads hours into a scheduling change that says nothing about workday length. Choice D about cutting staff contradicts the inclusive, all-staff tone.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-INF-3",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"The trail was empty except for fresh tire tracks in the mud and a still-warm campfire ring at the clearing. A water bottle sat upright on a log, its cap off.\"\n\nIt can be inferred from the passage that:",
+    "choices": [
+      "no one had visited the trail in weeks",
+      "someone had been at the clearing very recently",
+      "the trail was permanently closed",
+      "a storm had just passed through"
+    ],
+    "correct_index": 1,
+    "explanation": "Fresh tracks, a 'still-warm' fire, and an open water bottle left upright all point to a recent presence. Choice B follows from those clues. Choice A contradicts the freshness of the signs. Choice C about a closure has no support, since the evidence shows recent use. Choice D imports a storm the passage never mentions; the clues describe people, not weather.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-INF-4",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"When the small bakery first opened, it sold out of bread by noon and turned away a line of customers each afternoon. The owner has just signed a lease on the empty shop next door and hired two more bakers.\"\n\nIt can be inferred that the owner is expanding because:",
+    "choices": [
+      "the bakery is losing money",
+      "demand has been greater than the bakery can meet",
+      "the original shop is being torn down",
+      "bread has become unpopular"
+    ],
+    "correct_index": 1,
+    "explanation": "The bakery sells out daily and turns customers away, then leases more space and hires bakers, which signals growth driven by strong demand. Choice B follows from those facts. Choice A contradicts the picture of a thriving shop. Choice C invents a teardown the passage never mentions. Choice D reverses the evident popularity, since the bread sells out by noon.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-INF-5",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"James reread the email twice, set his phone face down, and stared out the window for several minutes before finally typing a short reply. He had been hoping for a different answer.\"\n\nIt can be inferred from the passage that James:",
+    "choices": [
+      "was pleased with the email's news",
+      "was disappointed by the email's news",
+      "had not yet read the email",
+      "was writing the email to himself"
+    ],
+    "correct_index": 1,
+    "explanation": "James pauses, sets the phone down, stares out the window, and 'had been hoping for a different answer,' all signs the news let him down. Choice B follows from those cues. Choice A reverses the disappointment the last sentence states. Choice C contradicts the fact that he reread the email twice. Choice D misreads the situation, since he is replying to a message someone sent him.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-INF-6",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The committee released its report on a Friday evening before a holiday weekend, with no press conference and no summary for reporters. The full document ran four hundred pages, and the most significant findings appeared in an unlabeled appendix near the back.\"\n\nIt can be inferred from the passage that the committee:",
+    "choices": [
+      "wanted the findings to attract as much attention as possible",
+      "preferred that the findings draw little notice",
+      "had no significant findings to report",
+      "was required by law to hold a press conference"
+    ],
+    "correct_index": 1,
+    "explanation": "Releasing the report before a holiday weekend, skipping a press conference, and burying key findings in an 'unlabeled appendix' are all moves that reduce visibility. Choice B follows from that pattern. Choice A reverses it, since these are not attention-seeking tactics. Choice C contradicts the mention of 'the most significant findings.' Choice D invents a legal requirement the passage never states.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-INF-7",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The coach kept the rookie on the bench for the entire first half, even as the starters fell further behind. In the second half she sent him in, and within minutes he had scored twice. Afterward she told reporters only that the timing had to be right.\"\n\nIt can be inferred that the coach delayed playing the rookie because:",
+    "choices": [
+      "she did not think he was any good",
+      "she was waiting for a moment she judged best",
+      "the rookie had refused to play earlier",
+      "the game had already been won"
+    ],
+    "correct_index": 1,
+    "explanation": "The coach benches the rookie, then plays him to immediate effect and says 'the timing had to be right,' which signals a deliberate choice about when to use him. Choice B follows from that statement. Choice A is contradicted by his quick success once he played. Choice C invents a refusal the passage never mentions. Choice D contradicts the fact that the starters were falling behind.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-ATP-1",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"To make a paper boat, start with a rectangular sheet and fold it in half lengthwise. Open it, then fold the top two corners down to meet the center crease. Fold the bottom edges up on each side, and gently pull the sides outward until the boat takes shape. With a little practice, the whole process takes under a minute.\"\n\nThe author's primary purpose in this passage is to:",
+    "choices": [
+      "argue that paper boats are better than toys",
+      "explain how to make a paper boat",
+      "describe the history of paper folding",
+      "warn readers about a difficult craft"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage gives ordered steps, 'start with,' 'open it,' 'fold,' 'pull,' which is the structure of instructions. Choice B names that how-to purpose. Choice A invents an argument comparing boats to toys the passage never makes. Choice C adds history the passage does not provide. Choice D misreads the tone, since the author calls the task quick and easy rather than difficult.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-ATP-2",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"Volunteering at the animal shelter changed how I see my weekends. I used to fill Saturdays with errands and screens, but now I spend the morning walking dogs that have no one else to walk them. I come home tired and covered in fur, and I would not trade it for anything.\"\n\nThe author's tone is best described as:",
+    "choices": [
+      "resentful",
+      "grateful",
+      "indifferent",
+      "alarmed"
+    ],
+    "correct_index": 1,
+    "explanation": "The author frames the change as positive, ending with 'I would not trade it for anything,' which signals warmth and appreciation. Choice B names that grateful tone. Choice A reverses the feeling, since the author embraces the new routine rather than resenting it. Choice C ignores the strong personal investment described. Choice D imports alarm the passage never expresses.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-ATP-3",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"Notice to residents: The water main on Oak Street will be shut off Tuesday from 9 a.m. to 2 p.m. for repairs. Please store enough water for drinking and cooking during that window. Service will resume automatically once work is complete, and discolored water for the first few minutes afterward is normal and safe.\"\n\nThe author's primary purpose in this notice is to:",
+    "choices": [
+      "apologize for poor water quality",
+      "inform residents of a planned shutoff and how to prepare",
+      "argue that the water main should be replaced",
+      "advertise a new water service"
+    ],
+    "correct_index": 1,
+    "explanation": "The notice states the shutoff window, tells residents to store water, and explains what to expect afterward, which is straightforward notification. Choice B captures that inform-and-prepare purpose. Choice A reads apology into a routine repair notice. Choice C invents an argument for replacement the passage never makes. Choice D treats the notice as an advertisement, but nothing is being sold.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-ATP-4",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"Every city council seems to chase the same shiny project while the basics fall apart. We get a new fountain downtown, but the buses still run late and the side streets still flood after every storm. Maybe before we cut another ribbon, we could fix the things people actually use.\"\n\nThe author's tone is best described as:",
+    "choices": [
+      "frustrated",
+      "delighted",
+      "neutral",
+      "fearful"
+    ],
+    "correct_index": 0,
+    "explanation": "The author contrasts 'shiny' projects with neglected basics and closes with the pointed 'before we cut another ribbon, we could fix the things people actually use.' That complaint signals frustration. Choice A names it. Choice B reverses the mood, since the author is unhappy, not pleased. Choice C ignores the clear criticism. Choice D names fear, but the passage expresses irritation about priorities, not dread.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-ATP-5",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"The report describes the rollout as a success, yet it leaves out the two regions where the program was canceled within a month. The figures it does include come only from the pilot sites that volunteered, which are likely the best-prepared. A fuller picture would need data the report quietly sets aside.\"\n\nThe author's primary purpose in this passage is to:",
+    "choices": [
+      "celebrate the program's clear success",
+      "question whether the report gives a complete picture",
+      "explain how to design a pilot program",
+      "praise the regions that volunteered"
+    ],
+    "correct_index": 1,
+    "explanation": "The author notes the report 'leaves out' canceled regions and relies on self-selected sites, concluding a fuller picture needs data the report 'quietly sets aside.' Choice B names that critical purpose. Choice A states the very success claim the author challenges. Choice C reads a how-to guide into a critique. Choice D misreads the mention of volunteer sites, which the author treats as a source of bias, not praise.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-ATP-6",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The brochure promises that the supplement 'melts away fat while you sleep,' with no diet or exercise required. It offers no studies, names no ingredients by amount, and points only to glowing testimonials from unnamed customers. Claims this dramatic, backed this thinly, deserve a careful second look.\"\n\nThe author's tone toward the supplement's claims is best described as:",
+    "choices": [
+      "trusting",
+      "skeptical",
+      "enthusiastic",
+      "indifferent"
+    ],
+    "correct_index": 1,
+    "explanation": "The author lists what the brochure lacks, 'no studies,' no named amounts, only 'unnamed customers,' and urges 'a careful second look.' That doubt grounded in missing evidence is skepticism. Choice B names it. Choice A reverses the stance, since the author plainly does not trust the claims. Choice C matches the brochure's tone, not the author's. Choice D ignores the active warning the author gives.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B12-ATP-7",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The data on the program's results are mixed. Test scores rose modestly at four schools and fell slightly at two others, while attendance held steady throughout. The sample is small and the follow-up brief, so the early gains are worth noting without being mistaken for proof.\"\n\nThe author's tone is best described as:",
+    "choices": [
+      "measured",
+      "outraged",
+      "dismissive",
+      "triumphant"
+    ],
+    "correct_index": 0,
+    "explanation": "The author reports gains and losses evenly and warns the early results are 'worth noting without being mistaken for proof.' That balanced caution is a measured tone. Choice A names it. Choice B overshoots into anger the passage never shows. Choice C dismisses the findings, but the author keeps them in view as worth noting. Choice D claims victory the careful hedging explicitly avoids.",
+    "status": "verified"
+  }
+]
