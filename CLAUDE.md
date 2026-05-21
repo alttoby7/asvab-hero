@@ -7,6 +7,7 @@
 - Next.js 15 **static export** (`output: "export"`) — no SSR. Marketing pages are static; app surfaces (auth/practice/study) are client-rendered React talking to Supabase JS.
 - Tailwind v4, custom tokens in `@theme` block of `src/app/globals.css`. TypeScript, **no test suite**.
 - Build output `out/`. Cache controlled by `public/_headers`.
+- **Redirects:** `public/_redirects` (Cloudflare Pages 301s, format `/old /new 301`). Next.js `redirects()` does NOT work under static export — use this file.
 - **Deploy:** Cloudflare Pages auto-deploys on push to `main`. Domain `asvabhero.com` (Cloudflare DNS → CF Pages).
 - **Supabase backend** (LIVE since 2026-04-27): Postgres + Auth + Edge Functions. Project ref `abypyprvgvofzrtifgzi`. Migrations in `supabase/migrations/`. Edge Functions in `supabase/functions/` (Deno-style URL imports; excluded from Next tsconfig).
 - **Stripe** LIVE in production. Plans $9.99/mo or $49.99/yr + 7-day card-required monthly trial. Functions: `stripe-checkout`, `stripe-portal`, `stripe-webhook`.
@@ -32,6 +33,7 @@
 - **Article pages:** use `prose-asvab` CSS class. DVIDS hero images via `DvidsHeroImage` component (DoD disclaimer); download with `scripts/dvids-image.py`.
 - **Amazon affiliate:** tag `asvabhero-20`, read from `NEXT_PUBLIC_AMAZON_TAG`. Books only — no affiliate links to competing online subscriptions.
 - **Content authoring:** `/asvab-post-writer` skill models SEO articles AND study guides (markdown into `content/study-guides/{subtest}/{topic}.md`).
+- **No cannibalization:** one canonical page per search intent. Branch score spokes follow `{branch}-asvab-score` (`/army-asvab-score`, `/marines-asvab-score`, …). To consolidate dupes: merge content into the winner, 301 the losers in `public/_redirects`, repoint internal links, drop the paths from `scripts/generate-sitemap.mjs`. See history doc 2026-05-20.
 - **Stripe API gotcha:** `current_period_end` lives on `sub.items.data[0]`, not the subscription object (API `2025-03-31.basil`). Migration files are NOT evidence of runtime state — verify `pg_proc`/`pg_trigger` after migrating a function.
 
 ## Active Open Issues

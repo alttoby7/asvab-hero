@@ -23,7 +23,7 @@ Detailed changelog of shipped work, moved out of `CLAUDE.md` to keep that file l
 - **Hard paywall:** free users hit wall after first diagnostic; Pro unlocks unlimited diagnostics + history.
 - **Account dashboard redesign:** `/account` is now a SaaS dashboard (greeting, stats, recent attempts, weak topics, plan card). Settings → `/account/settings`. New: `/account/billing` (Customer Portal link), `/account/history` (Pro-only).
 - **Conversion nudges:** sticky `<UpgradeBanner />` in layout.tsx for free authed users; Pro upsell card on TestResults; Upgrade button in Nav for free authed users only.
-- **Day-7 Listmonk drip:** template at `docs/listmonk-template-pro-upgrade-day7.html`, deploy steps at `docs/listmonk-deploy-day7.md`. NOT yet deployed.
+- **Day-7 Listmonk drip:** template at `docs/listmonk-template-pro-upgrade-day7.html`, deploy steps at `docs/listmonk-deploy-day7.md`. **DEPLOYED 2026-05-20** as Listmonk template **17**; droplet `DRIP_SCHEDULE={2:7, 5:8, 7:17, 10:9, 14:10}`.
 
 ## Study Guide Coverage (2026-04-28)
 All 39/39 topic pages are live. 36 missing pages authored in one session (5 parallel agents) across all 9 subtests. Each file at `content/study-guides/{subtest}/{topic-slug}.md` — frontmatter + 250-400 word body + worked examples + pitfalls section.
@@ -242,3 +242,21 @@ End-to-end webhook deadletter + Sentry across 11 failure surfaces. Plan at `~/.c
 - **Dual-secret verify:** stripe-webhook accepts both `ASVABHERO_STRIPE_WEBHOOK_SECRET` (live) and `ASVABHERO_STRIPE_WEBHOOK_SECRET_TEST` (test, only when env set). Currently TEST unset; code is safe no-op without it. To re-test in future: `stripe webhook_endpoints create --url <fn url> --enabled-events ...` → capture secret → `supabase secrets set ASVABHERO_STRIPE_WEBHOOK_SECRET_TEST=...` → redeploy → `stripe trigger ...` → cleanup with `stripe webhook_endpoints delete <we_id> --confirm` + `supabase secrets unset`.
 - **v2 cleanup:** delete `mirrorToDashboard` (winning.basecampdigital.pro) ~2 weeks post-launch once Sentry has caught everything the dashboard was showing.
 - **Dashboard read access (2026-05-13):** migration `0015_dashboard_export_webhook_events.sql` grants `dashboard_export` role SELECT on `stripe_webhook_events` for the AsvabWebhookHealth widget at winning.basecampdigital.pro. Read-only, isolated role.
+
+## Conversion Sprint (2026-05-20)
+Commits `49439e9`, `9deebb2`. "Make money now" pass — ASVAB Hero is the only personal project with a live paid product. Plan: `~/.claude/plans/open-personal-projects-and-linear-quill.md`; continuity: `~/google-drive/0-AI/Personal/asvab-hero/CONTINUITY-conversion-sprint-2026-05-20.md`.
+- **Stripe confirmed LIVE** (see Monetization Layer) — corrected stale "test mode" doc lines.
+- **Pro CTA at the calculator result moment** (`src/components/Calculator.tsx`): upsell card shown when `afqt > 0 && !entitlement.isPro` → `/upgrade?from=calculator-result` with `calculator_pro_cta_click` tracking. Renders on all 13 calculator pages. Closed the funnel's biggest gap (highest-intent moment previously had only an email form).
+- **Homepage → Tier-1 hub link:** added a prominent in-body link to `/asvab-score-requirements` (`src/app/page.tsx`).
+- **Lead-magnet funnel verified working** (was wrongly believed missing): all 5 PDFs exist in `public/`; welcome template 5 links `study-plan.pdf`; CF Pages has `LISTMONK_WELCOME_TEMPLATE_ID=5` + per-subtest overrides (AR=12, WK=13, GT_BOOSTER=14, PC=16).
+- **Day-7 drip deployed** (template 17 — see Monetization Layer).
+- **Indexing audit:** ~35/73 pages not indexed (mostly "crawled/discovered – currently not indexed" = quality/authority on a young site; no robots/canonical bug). Biggest fixable contributor = cannibalization (next section).
+
+## Cannibalization Consolidation (2026-05-20)
+Commits `14825b9` (consolidation) + `fbf3c01` (Navy table dedupe). Refined with Codex; scope chosen with the user. None of the dupes were indexed (zero GSC impressions) so no ranking history was at risk. Mechanics: merge unique content into the winner → 301 in `public/_redirects` → repoint all internal links (incl. Tier-1 hub spokes) → drop paths from `scripts/generate-sitemap.mjs` → delete old route dirs. Verified: clean build, zero internal links to redirected slugs, no redirect chains, all 7 old URLs return live 301 → winner, winners 200.
+- **Marines:** renamed `/asvab-marines-score` → **`/marines-asvab-score`** (sibling-pattern fix); folded in `/asvab-score-for-marines` minimums + MOS tables. 301: both old slugs → `/marines-asvab-score`.
+- **Navy:** canonical **`/navy-asvab-score`**; folded in the minimums-by-rating tables; broadened title to dual intent. 301: `/navy-asvab-score-requirements` → it. **Follow-up (`fbf3c01`):** the merge had left two overlapping ratings tables with conflicting FY2026 values (IT, FC, CTR, YN, MA, LS, CS) — removed the redundant "Popular Ratings" table, kept the comprehensive category-grouped "Minimums by Rating" tables, preserved the lone unique rating (GM → Aviation/General).
+- **Warrant officer:** canonical **`/warrant-officer-requirements`**; folded Army specifics in. 301: `/army-warrant-officer-requirements` → it.
+- **GT cluster (moderate scope):** pillar **`/gt-score`** absorbed `/asvab-gt-score`, `/calculate-gt-score`, `/gt-score-max` (301'd). Kept distinct: `/gt-score-requirements` (110-wall intent) and `/gt-score-calculator` (tool).
+- **Kept (not redirected):** `/mos-asvab-score-requirements` (distinct threshold-directory intent).
+- **Open:** confirm in GSC over coming days that redirected URLs drop and winners move toward indexed.
