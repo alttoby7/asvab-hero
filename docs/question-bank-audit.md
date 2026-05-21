@@ -865,3 +865,82 @@ sibling-aware sampling, and a build-time gate that fails if either regresses.
 2. Author ~30 PC items (detail-recall, inference, main-idea are the thinnest
    served topics at 17/18/17) at mixed difficulty.
 3. Then top up WK root-words and the AR/MK mid/high bands toward ~50 served each.
+
+---
+
+# PROMOTE pass — DRAFT → verified QA (2026-05-21)
+
+Manual content QA of every `draft` item in the bank, AFQT-first. Each draft was
+re-derived from scratch (recompute the key, test all 4 distractors for
+plausibility/ambiguity, check the stem for leaked authoring notes or AI tics,
+confirm topic_id/difficulty, and check for duplicate stems against the active
+set). Sound items (or items needing only a trivial fix) were promoted to
+`status: "verified"`; anything with an ambiguous key, weak distractors, an
+off-topic placement, or a duplicate was left `draft`. High bar held throughout —
+the goal is "be the best," not to inflate the served count.
+
+## Scope
+
+289 drafts existed before this pass:
+- 282 in the modern `status: "draft"` form (batch-8 = 169, batch-9 = 113).
+- 7 legacy `active: false` items with no `status` field (batch-4 ×1 WK, batch-7 ×6 AO).
+
+## Result — 282 promoted, 7 left draft
+
+| Subtest | Drafts reviewed | Promoted → verified | Left draft |
+|---|---|---|---|
+| AR (Arithmetic Reasoning) | 77 | 77 | 0 |
+| MK (Mathematics Knowledge) | 92 | 91 | 1 |
+| WK (Word Knowledge) | 47 | 47 | 0 |
+| PC (Paragraph Comprehension) | 67 | 67 | 0 |
+| AO (Assembling Objects, non-AFQT) | 6 | 0 | 6 |
+| **Total** | **289** | **282** | **7** |
+
+(WK count includes the 46 modern drafts in batch-9 plus the 1 legacy `LACONIC`
+item in batch-4.)
+
+All four AFQT subtests cleared cleanly. Every AR, MK (less one dup), WK, and PC
+draft had a correct, re-derived answer key, four unambiguous distractors built
+on real misconceptions (wrong-base percent errors, FOIL sign flips,
+operation-flip traps in rate/distance, sound-alike/antonym/register traps in
+vocab, over-reach/under-reach/off-topic traps in reading), clean stems with no
+authoring residue, and correct topic/difficulty tags. A programmatic scan for
+authoring tics (TODO/placeholder/"as an AI"/bracketed notes) across all drafts
+returned zero hits, and the only duplicate stem found was the one noted below.
+
+## Items left as draft (with reasons)
+
+- **MK-NP-NEW-1** ("Which of the following is a prime number?") — exact-stem
+  **duplicate** of the already-active item `MK-NP-1`. The item itself is correct,
+  but promoting it would serve the same question twice. Left draft.
+- **AO-PA-B7-5, -8, -10, -12, -13, -14** (6 × `ao.pattern-assembly`) — Assembling
+  Objects is a **visual/spatial** subtest whose pieces must be rendered as
+  images; these stems describe the pieces in prose only. Worse, several keys are
+  **underdetermined** by their own explanations, which hedge: "can *in principle*
+  tile a square" (B7-8, where the piece areas do not actually sum to the claimed
+  square), "*depending on the proportions* of the triangles" (B7-10), and "*with
+  the right proportion choice*" (B7-13). Ambiguous keys + non-AFQT + no
+  text-renderable figure → left draft.
+
+## Files changed
+
+- `src/data/practice-tests/expansion-batch-8.json` — 168 status flips draft→verified (1 skipped: MK-NP-NEW-1).
+- `src/data/practice-tests/expansion-batch-9.json` — 113 status flips draft→verified.
+- `src/data/practice-tests/expansion-batch-4.json` — 1 legacy `"active": false` → `"status": "verified"` (LACONIC).
+- `docs/question-bank-audit.md` — this section.
+
+Edits were surgical line replacements (the source files store some characters as
+`\uXXXX` escapes, so a JSON re-stringify would have produced a noisy whole-file
+diff); each file's diff is exactly the status changes and nothing else.
+
+## Verification
+
+`node scripts/build-questions-seed.mjs` runs clean against the promoted set:
+1,111 questions, status `{ draft: 7, verified: 342, trusted: 762 }` (1,104
+active). **Every AFQT topic now meets the active floor** (≥12 served with
+d1/d2/d3+ coverage) — previously the documented structural gap — and AFQT
+item_family_id coverage stays at 100%. The regenerated `supabase/seed-questions.sql`
+was reverted after the check (it is regenerated centrally).
+
+Central rebuild (`node scripts/build-questions-seed.mjs`) + re-seed will pick up
+the new verified statuses.
