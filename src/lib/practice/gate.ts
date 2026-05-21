@@ -55,6 +55,10 @@ export function canStartVariant(opts: {
     return { allowed: true };
   }
 
-  // Every other variant is Pro-only for free/anon users.
+  // Every other variant is Pro-only for free/anon users. This includes the WS6
+  // adaptive AFQT variant (`afqt_adaptive`): it is intentionally a Pro-only
+  // variant, consistent with subtest_drill and the other v2/v3 variants. Pro
+  // users are already short-circuited to allowed above. No live effect while the
+  // adaptive variant is inactive (the picker never offers it).
   return { allowed: false, reason: "pro_only_variant" };
 }

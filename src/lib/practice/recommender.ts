@@ -66,12 +66,34 @@ function groupWeakBySubtest(stats: TopicStats[]): Map<AsvabSubtest, string[]> {
   return out;
 }
 
+function adaptiveHref(): string {
+  return `/practice-test?variant=afqt_adaptive`;
+}
+
 export function recommendNextStep(
   input: RecommenderInput
 ): NextStepRecommendation {
   const { latestByTopic, topicStats, activeVariantCodes } = input;
   const subtestDrillActive = activeVariantCodes.has("subtest_drill");
   const diagnosticActive = activeVariantCodes.has("diagnostic");
+  // WS6: only surfaced when `afqt_adaptive` is active in the DB. While the
+  // variant is inactive it is absent from activeVariantCodes, so this branch is
+  // never taken and the recommender behaves exactly as before.
+  const adaptiveActive = activeVariantCodes.has("afqt_adaptive");
+
+  // Adaptive practice is the strongest next step once available: it self-targets
+  // the user's ability across the four AFQT subtests. Offer it first to any user
+  // who has at least one measured weak/developing topic (i.e. we have an ability
+  // signal to adapt against). New users with no stats still flow to the
+  // diagnostic-first cascade below.
+  if (adaptiveActive && topicStats && topicStats.some((s) => s.seen > 0)) {
+    return {
+      headline: "Run an Adaptive AFQT session",
+      body: "This session tunes each question to your current level across Arithmetic Reasoning, Math Knowledge, Word Knowledge, and Paragraph Comprehension — keeping you in the productive 70–80% range so every question moves your score.",
+      ctaLabel: "Start Adaptive Practice",
+      ctaHref: adaptiveHref(),
+    };
+  }
 
   // ── Logged-in path: drive off topic_stats. ───────────────────────────────
   if (topicStats && topicStats.length > 0) {

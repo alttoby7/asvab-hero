@@ -14,6 +14,8 @@ import {
   loadVariant,
   loadQuestionPool,
   sampleForVariant,
+  sampleAdaptive,
+  shouldUseAdaptive,
 } from "@/lib/practice/sampler";
 import {
   saveAttempt,
@@ -192,19 +194,31 @@ export default function PracticeTestEngine({
 
   const startFresh = useCallback(() => {
     if (!variant || pool.length === 0) return;
-    const sampled = sampleForVariant(variant, pool, { subtest });
-    setShuffledQuestions(sampled);
-    setAnswers(
-      sampled.map((q) => ({ questionId: q.id, selectedIndex: null }))
-    );
-    setCurrentIndex(0);
-    startTimeRef.current = Date.now();
-    clientAttemptIdRef.current = generateClientAttemptId();
-    setTimeRemaining(variant.rules.time_seconds);
-    setDidSaveAttempt(false);
-    setPhase("testing");
-    localStorage.removeItem(STORAGE_KEY);
-  }, [variant, pool, subtest]);
+
+    const beginWith = (sampled: PracticeQuestion[]) => {
+      setShuffledQuestions(sampled);
+      setAnswers(sampled.map((q) => ({ questionId: q.id, selectedIndex: null })));
+      setCurrentIndex(0);
+      startTimeRef.current = Date.now();
+      clientAttemptIdRef.current = generateClientAttemptId();
+      setTimeRemaining(variant.rules.time_seconds);
+      setDidSaveAttempt(false);
+      setPhase("testing");
+      localStorage.removeItem(STORAGE_KEY);
+    };
+
+    // Adaptive path (WS6): only when the flag is on AND the adaptive variant is
+    // active. Inert otherwise — the default fixed-mix path below is unchanged.
+    if (shouldUseAdaptive(variant)) {
+      (async () => {
+        const sampled = await sampleAdaptive(variant, { userId });
+        beginWith(sampled);
+      })();
+      return;
+    }
+
+    beginWith(sampleForVariant(variant, pool, { subtest }));
+  }, [variant, pool, subtest, userId]);
 
   const startTest = useCallback(
     (resume = false) => {

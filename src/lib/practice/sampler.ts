@@ -22,6 +22,39 @@ import type {
 import { ALL_SUBTESTS } from "@/types";
 import freeTest from "@/data/practice-tests/free-test.json";
 import questionTags from "@/data/question-tags.seed.json";
+import { getItemCalibrations } from "@/lib/practice/item-calibration";
+import {
+  AFQT_SUBTESTS,
+  selectAdaptiveItems,
+  type AdaptiveBlueprint,
+  type AdaptiveCandidate,
+  type AdaptiveTopicStat,
+} from "@/lib/practice/adaptive-selector";
+
+/** Variant code for the WS6 adaptive AFQT test (seeded inactive in 0025). */
+export const ADAPTIVE_VARIANT_CODE = "afqt_adaptive";
+
+/**
+ * Build-time kill switch for the adaptive selector. Mirrors the closed-loop /
+ * why-tracking flags: must be the literal string "true" in the Cloudflare Pages
+ * build env. OFF by default → the entire adaptive path is dead code at runtime.
+ */
+export function isAdaptiveEnabled(): boolean {
+  return process.env.NEXT_PUBLIC_ADAPTIVE_ENABLED === "true";
+}
+
+/**
+ * True only when the adaptive engine should actually drive selection: the build
+ * flag is on AND the supplied variant is the adaptive variant AND that variant
+ * is active in the DB. Any false → callers fall back to `sampleForVariant`.
+ */
+export function shouldUseAdaptive(variant: TestVariant): boolean {
+  return (
+    isAdaptiveEnabled() &&
+    variant.code === ADAPTIVE_VARIANT_CODE &&
+    variant.active === true
+  );
+}
 
 // ─── Local-seed fallback ────────────────────────────────────────────────────
 
@@ -229,4 +262,176 @@ export function sampleForVariant(
 
   // ── Unknown mix sentinel: just shuffle + slice. ─────────────────────────
   return shuffle(pool).slice(0, Math.min(rules.length, pool.length));
+}
+
+// ─── Adaptive AFQT path (WS6) ────────────────────────────────────────────────
+//
+// All of the below is inert unless `shouldUseAdaptive(variant)` is true (flag on
+// + active adaptive variant). The default sampler path above is untouched.
+
+/** Extract the AFQT-subtest macro blueprint from the variant's mix object. */
+function adaptiveBlueprintFromVariant(variant: TestVariant): AdaptiveBlueprint {
+  const out: AdaptiveBlueprint = {};
+  const mix = variant.rules.mix;
+  if (typeof mix === "object" && mix !== null) {
+    for (const st of AFQT_SUBTESTS) {
+      const n = (mix as Partial<Record<AsvabSubtest, number>>)[st] ?? 0;
+      if (n > 0) out[st] = n;
+    }
+  }
+  return out;
+}
+
+/** AFQT-only enriched candidate row (status + family) for the adaptive selector. */
+async function loadAdaptiveCandidates(): Promise<{
+  candidates: AdaptiveCandidate[];
+  byKey: Map<string, PracticeQuestion>;
+}> {
+  const byKey = new Map<string, PracticeQuestion>();
+  const candidates: AdaptiveCandidate[] = [];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const sb = getSupabaseBrowserClient() as any;
+  const { data, error } = await sb
+    .from("practice_questions")
+    .select(
+      "id, external_key, subtest, topic_id, difficulty, stem, choices, correct_index, explanation, active, status, item_family_id",
+    )
+    .eq("active", true)
+    .in("subtest", AFQT_SUBTESTS);
+  if (error || !data) return { candidates, byKey };
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const rows = data as any[];
+  const keys = rows.map((r) => (r.external_key as string) ?? (r.id as string));
+  const calibrations = await getItemCalibrations(keys);
+
+  for (const row of rows) {
+    const key = (row.external_key as string) ?? (row.id as string);
+    const subtest = row.subtest as AsvabSubtest;
+    const topicId = (row.topic_id as string) ?? `${subtest.toLowerCase()}.unknown`;
+    const authorPrior = (row.difficulty as number) ?? 3;
+    const cal = calibrations.get(key);
+
+    byKey.set(key, {
+      id: key,
+      subtest,
+      question: row.stem as string,
+      options: row.choices as [string, string, string, string],
+      correctIndex: row.correct_index as number,
+      explanation: row.explanation as string,
+      topicId,
+      difficulty: authorPrior,
+    });
+
+    candidates.push({
+      externalKey: key,
+      subtest,
+      topicId,
+      itemFamilyId: (row.item_family_id as string) ?? `${topicId}::${key}`,
+      status: (row.status as AdaptiveCandidate["status"]) ?? "draft",
+      active: row.active === true,
+      // Use the calibrated shrunk difficulty when present, else the author prior.
+      difficulty: cal ? cal.shrunk_difficulty : authorPrior,
+      nFirstseen: cal?.n_firstseen ?? 0,
+    });
+  }
+  return { candidates, byKey };
+}
+
+/** Read the user's topic_stats slice the selector needs. Empty on failure. */
+async function loadAdaptiveTopicStats(userId: string): Promise<AdaptiveTopicStat[]> {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const sb = getSupabaseBrowserClient() as any;
+    const { data, error } = await sb
+      .from("topic_stats")
+      .select("topic_id, posterior, confidence, seen")
+      .eq("user_id", userId);
+    if (error || !data) return [];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return (data as any[]).map((r) => ({
+      topicId: r.topic_id as string,
+      subtest: String(r.topic_id ?? "")
+        .split(".")[0]
+        .toUpperCase() as AsvabSubtest,
+      posterior: Number(r.posterior ?? 0.5),
+      confidence: Number(r.confidence ?? 0),
+      seen: Number(r.seen ?? 0),
+    }));
+  } catch {
+    return [];
+  }
+}
+
+/** external_keys currently DUE in the Mistake Bank (excluded from adaptive). */
+async function loadDueExternalKeys(userId: string): Promise<Set<string>> {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const sb = getSupabaseBrowserClient() as any;
+    const { data, error } = await sb
+      .from("question_reviews")
+      .select("question_id")
+      .eq("user_id", userId)
+      .eq("resolved", false)
+      .lte("due_at", new Date().toISOString());
+    if (error || !data) return new Set();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    return new Set((data as any[]).map((r) => r.question_id as string));
+  } catch {
+    return new Set();
+  }
+}
+
+/**
+ * Adaptive entrypoint. Gathers the injected inputs from Supabase, runs the pure
+ * `selectAdaptiveItems`, and returns the chosen questions in adaptive order.
+ *
+ * Falls back to `sampleForVariant` on any failure (no auth, empty pool, etc.) so
+ * the test always renders. Callers MUST gate this behind `shouldUseAdaptive`.
+ */
+export async function sampleAdaptive(
+  variant: TestVariant,
+  opts: { userId: string | null; recentExternalKeys?: Set<string> },
+): Promise<PracticeQuestion[]> {
+  try {
+    const blueprint = adaptiveBlueprintFromVariant(variant);
+    const { candidates, byKey } = await loadAdaptiveCandidates();
+    if (candidates.length === 0) throw new Error("empty_adaptive_pool");
+
+    const [topicStats, dueExternalKeys] = await Promise.all([
+      opts.userId ? loadAdaptiveTopicStats(opts.userId) : Promise.resolve([]),
+      opts.userId ? loadDueExternalKeys(opts.userId) : Promise.resolve(new Set<string>()),
+    ]);
+
+    const explorationFraction =
+      typeof (variant.rules as { exploration_fraction?: number })
+        .exploration_fraction === "number"
+        ? (variant.rules as { exploration_fraction?: number }).exploration_fraction
+        : undefined;
+    const anchorsPerSubtest =
+      typeof (variant.rules as { anchor_per_subtest?: number }).anchor_per_subtest ===
+      "number"
+        ? (variant.rules as { anchor_per_subtest?: number }).anchor_per_subtest
+        : undefined;
+
+    const { order } = selectAdaptiveItems({
+      pool: candidates,
+      topicStats,
+      recentExternalKeys: opts.recentExternalKeys ?? new Set<string>(),
+      dueExternalKeys,
+      blueprint,
+      explorationFraction,
+      anchorsPerSubtest,
+    });
+
+    const questions = order
+      .map((key) => byKey.get(key))
+      .filter((q): q is PracticeQuestion => Boolean(q));
+    if (questions.length === 0) throw new Error("adaptive_no_questions");
+    return questions;
+  } catch {
+    // Robust fallback: behave exactly like the default fixed-mix path.
+    const pool = await loadQuestionPool();
+    return sampleForVariant(variant, pool);
+  }
 }
