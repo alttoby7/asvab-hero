@@ -1,0 +1,41 @@
+-- =============================================================
+-- 0019_mistake_reminder_tracking.sql
+-- Idempotency for the daily Spaced Mistake Bank reminder (Edge Function
+-- supabase/functions/mistake-reminders). Tracks the last day a user was
+-- reminded so we send at most one per day.
+--
+-- This migration only adds the tracking column (harmless, additive). The
+-- reminder cron is NOT scheduled here — it must wait until the closed-loop UI
+-- flag (NEXT_PUBLIC_CLOSED_LOOP_ENABLED) is live, or users would be emailed to
+-- review mistakes on a page that redirects home.
+-- =============================================================
+
+alter table profiles
+  add column if not exists last_mistake_reminder_on date;
+
+-- -------------------------------------------------------------
+-- ACTIVATION (run manually at launch, after the function is deployed and the
+-- closed-loop flag is on). Requires pg_cron + pg_net and a stored secret.
+--
+--   create extension if not exists pg_cron;
+--   create extension if not exists pg_net;
+--
+--   select cron.schedule(
+--     'mistake-reminders-daily',
+--     '0 14 * * *',                       -- 14:00 UTC daily (align w/ existing drip)
+--     $$
+--       select net.http_post(
+--         url     := 'https://abypyprvgvofzrtifgzi.supabase.co/functions/v1/mistake-reminders',
+--         headers := jsonb_build_object(
+--                      'Content-Type', 'application/json',
+--                      'x-cron-secret', current_setting('app.mistake_reminders_secret', true)
+--                    ),
+--         body    := '{}'::jsonb
+--       );
+--     $$
+--   );
+--
+-- Deploy the function + set secrets first:
+--   supabase functions deploy mistake-reminders --no-verify-jwt
+--   supabase secrets set ASVAB_RESEND_API_KEY=... MISTAKE_REMINDERS_SECRET=...
+-- -------------------------------------------------------------

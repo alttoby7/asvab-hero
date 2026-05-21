@@ -216,16 +216,9 @@ export async function saveAttempt(
         .single();
       if (insErr) throw insErr;
 
-      const topicIds = Object.keys(attempt.results_by_topic);
-      if (topicIds.length > 0) {
-        // Recompute topic_stats server-side via the canonical function.
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const { error: rpcErr } = await (sb.rpc as any)(
-          "recompute_topic_stats",
-          { p_user_id: userId, p_topic_ids: topicIds }
-        );
-        if (rpcErr) throw rpcErr;
-      }
+      // topic_stats recompute AND Spaced Mistake Bank ingestion are handled
+      // DB-side by the ingest_attempt_mistakes trigger on `attempts` (migration
+      // 0017) — single authoritative pipeline, fired on the insert above.
 
       // Stamp free_diagnostic_used_at for authed users on their first diagnostic.
       if (attempt.variant_code === "diagnostic") {

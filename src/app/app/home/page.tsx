@@ -8,6 +8,7 @@ import { useEntitlement } from "@/hooks/useEntitlement";
 import { estimateStandardScores } from "@/lib/estimate-scores";
 import { loadDeckSummaries } from "@/lib/flashcards/queries";
 import { FREE_DECK_SLUG, type DeckSummary } from "@/lib/flashcards/types";
+import { getDueMistakeCount, isClosedLoopEnabled } from "@/lib/mistakes/queries";
 import type { TopicStats, SubtestScores } from "@/types";
 
 import MissionCard from "@/components/app/MissionCard";
@@ -94,6 +95,7 @@ export default function AppHomePage() {
   const [topics, setTopics] = useState<TopicRow[]>([]);
   const [todaysChallenge, setTodaysChallenge] = useState<DailyChallengeRow | null>(null);
   const [flashcardSummaries, setFlashcardSummaries] = useState<DeckSummary[]>([]);
+  const [dueMistakeCount, setDueMistakeCount] = useState(0);
 
   useEffect(() => {
     if (sessionLoading || entLoading) return;
@@ -104,7 +106,7 @@ export default function AppHomePage() {
     const userId = session.user.id;
 
     async function load() {
-      const [profileRes, attemptsRes, statsRes, topicsRes, dailyRes, flashRes] =
+      const [profileRes, attemptsRes, statsRes, topicsRes, dailyRes, flashRes, dueCountRes] =
         await Promise.all([
           sb
             .from("profiles")
@@ -133,6 +135,7 @@ export default function AppHomePage() {
             .eq("challenge_date", new Date().toISOString().split("T")[0])
             .maybeSingle(),
           loadDeckSummaries(userId),
+          getDueMistakeCount(userId),
         ]);
 
       // Onboarding guard
@@ -152,6 +155,7 @@ export default function AppHomePage() {
       setTopics(topicsRes.data ?? []);
       setTodaysChallenge(dailyRes.data ?? null);
       setFlashcardSummaries(flashRes ?? []);
+      setDueMistakeCount(dueCountRes ?? 0);
       setLoading(false);
     }
 
@@ -169,6 +173,7 @@ export default function AppHomePage() {
   if (!session || !profile) return null;
 
   const { isPro } = entitlement;
+  const closedLoopEnabled = isClosedLoopEnabled();
   const greeting = profile.display_name || profile.email.split("@")[0];
   const countdown = getTestDateCountdown(
     profile.target_test_date,
@@ -253,6 +258,8 @@ export default function AppHomePage() {
         weakestTopicTitle={weakestTopic?.title ?? null}
         weakestSubtest={weakestTopic?.subtest ?? null}
         isPro={isPro}
+        mistakeDueCount={dueMistakeCount}
+        closedLoopEnabled={closedLoopEnabled}
       />
 
       {/* Stats */}
@@ -268,6 +275,8 @@ export default function AppHomePage() {
       <QuickActions
         flashcardDueCount={flashcardDueCount}
         mistakeCount={mistakeCount}
+        dueMistakeCount={dueMistakeCount}
+        closedLoopEnabled={closedLoopEnabled}
         isPro={isPro}
       />
 

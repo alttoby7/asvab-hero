@@ -45,6 +45,7 @@
 
 ## Key Docs & Plans
 - History / changelog: `docs/project-history.md`
+- Learning-science strategy + roadmap: `docs/learning-science-strategy.md`
 - Scoring: `docs/scoring-model.md`
 - Email infra: `docs/email-infrastructure.md` · templates: `docs/email-templates-drafts.md`
 - Question bank audit: `docs/question-bank-audit.md`

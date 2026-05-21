@@ -148,27 +148,20 @@ export async function loadDueCards(opts: {
   return ordered.slice(0, limit);
 }
 
-export async function submitReview(opts: {
-  userId: string;
+/**
+ * Grade a flashcard review. SM-2 scheduling is computed DB-side via the shared
+ * sm2_next() function (migration 0018) — the single source of truth for SM-2
+ * across the whole app. The user is derived from auth.uid() inside the RPC.
+ */
+export async function gradeFlashcardReview(opts: {
   cardId: string;
-  next: ReviewState;
+  quality: number;
 }): Promise<void> {
-  const { userId, cardId, next } = opts;
   const supabase = getSupabaseBrowserClient();
-
-  const { error } = await supabase.from("flashcard_reviews").upsert(
-    {
-      user_id: userId,
-      card_id: cardId,
-      ease_factor: next.ease_factor,
-      interval_days: next.interval_days,
-      repetitions: next.repetitions,
-      due_at: next.due_at,
-      last_reviewed_at: next.last_reviewed_at,
-      last_quality: next.last_quality,
-      updated_at: new Date().toISOString(),
-    },
-    { onConflict: "user_id,card_id" },
-  );
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const { error } = await (supabase as any).rpc("grade_flashcard_review", {
+    p_card_id: opts.cardId,
+    p_quality: opts.quality,
+  });
   if (error) throw error;
 }

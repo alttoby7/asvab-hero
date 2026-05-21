@@ -77,6 +77,29 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────────────
+         EVIDENCE TRUST STRIP — leads with the moat: built on the study methods
+         research proves raise scores. Links to the full methodology page.
+      ──────────────────────────────────────────────────────────────────── */}
+      <section className="border-y border-navy-border bg-navy-light/50">
+        <div className="mx-auto flex max-w-4xl flex-col items-center gap-3 px-4 py-8 text-center sm:flex-row sm:justify-between sm:text-left sm:px-6">
+          <p className="text-sm leading-relaxed text-text-secondary">
+            <span className="font-semibold text-text-primary">Built on the evidence.</span>{" "}
+            Retrieval practice, spaced repetition, and interleaving — the methods cognitive
+            science proves raise scores, not the rereading most apps rely on.
+          </p>
+          <Link
+            href="/the-science"
+            className="inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-accent no-underline transition-colors hover:text-accent-hover"
+          >
+            See the science
+            <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </section>
+
+      {/* ────────────────────────────────────────────────────────────────────
          THREE PILLARS — Calculator · Practice · Study Guide.
          Each card carries a hard number (500+, 769, 39) so the homepage tells
          the proof story before any conversion ask.

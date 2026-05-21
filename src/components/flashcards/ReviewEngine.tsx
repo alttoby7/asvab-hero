@@ -2,8 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { defaultReviewState, scheduleReview } from "@/lib/flashcards/scheduler";
-import { submitReview } from "@/lib/flashcards/queries";
+import { gradeFlashcardReview } from "@/lib/flashcards/queries";
 import {
   gradeToQuality,
   type CardWithReview,
@@ -17,12 +16,11 @@ import SessionComplete from "./SessionComplete";
 interface Props {
   deck: Deck;
   initialCards: CardWithReview[];
-  userId: string;
 }
 
 type Phase = "front" | "back" | "complete";
 
-export default function ReviewEngine({ deck, initialCards, userId }: Props) {
+export default function ReviewEngine({ deck, initialCards }: Props) {
   const [queue, setQueue] = useState<CardWithReview[]>(initialCards);
   const [index, setIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>("front");
@@ -53,11 +51,9 @@ export default function ReviewEngine({ deck, initialCards, userId }: Props) {
       submittingRef.current = true;
       setSubmitting(true);
       const quality = gradeToQuality(grade);
-      const prev = current.review ?? defaultReviewState();
-      const next = scheduleReview(prev, quality);
 
       try {
-        await submitReview({ userId, cardId: current.id, next });
+        await gradeFlashcardReview({ cardId: current.id, quality });
       } catch (err) {
         console.error("Failed to submit review", err);
       }
@@ -66,7 +62,7 @@ export default function ReviewEngine({ deck, initialCards, userId }: Props) {
 
       let newQueue = queue;
       if (grade === "again") {
-        const requeued = { ...current, review: next };
+        const requeued = { ...current };
         const reinsertAt = Math.min(queue.length, index + 4);
         newQueue = [...queue.slice(0, index + 1), ...queue.slice(index + 1)];
         newQueue.splice(reinsertAt, 0, requeued);
@@ -83,7 +79,7 @@ export default function ReviewEngine({ deck, initialCards, userId }: Props) {
       submittingRef.current = false;
       setSubmitting(false);
     },
-    [phase, current, queue, index, userId],
+    [phase, current, queue, index],
   );
 
   useEffect(() => {

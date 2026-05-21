@@ -97,7 +97,7 @@ export default function ReviewEngineClient({ deckSlug }: Props) {
     return <CaughtUpScreen deck={deck} />;
   }
 
-  return <ReviewEngine deck={deck} initialCards={cards} userId={session!.user.id} />;
+  return <ReviewEngine deck={deck} initialCards={cards} />;
 }
 
 function SkeletonCard() {

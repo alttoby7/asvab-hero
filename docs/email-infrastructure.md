@@ -253,3 +253,20 @@ Set on the `stripe-webhook` function via `supabase secrets set`:
 - `LISTMONK_TEMPLATE_TRIAL_ENDING` — Listmonk transactional template ID for the T-3 reminder (create the template first, then set this to its numeric ID)
 
 If `LISTMONK_TEMPLATE_TRIAL_ENDING` is unset, the `trial_will_end` branch logs and skips — webhook still returns 200.
+
+## Spaced Mistake Bank reminders (Edge Function `mistake-reminders`)
+
+Spacing-aware adherence email for the Closed-Loop v0 (Phase 1). Unlike the
+fixed-day Listmonk drip, this is **due-based**: it emails users who have
+unresolved `question_reviews` due now, at most once/day (idempotency via
+`profiles.last_mistake_reminder_on`, migration 0019). Sends via Resend
+(`ASVAB_RESEND_API_KEY`), from `info@asvabhero.com`, CTA → `/app/mistakes`.
+
+- Source: `supabase/functions/mistake-reminders/index.ts`
+- Auth: shared secret header `x-cron-secret` = `MISTAKE_REMINDERS_SECRET`
+- **NOT deployed/scheduled yet by design** — activate only after the
+  `NEXT_PUBLIC_CLOSED_LOOP_ENABLED` flag is live, else users get emailed to use
+  a page that redirects home. Activation SQL (pg_cron + pg_net) is in
+  `supabase/migrations/0019_mistake_reminder_tracking.sql`.
+- Deploy at launch: `supabase functions deploy mistake-reminders --no-verify-jwt`
+  then `supabase secrets set ASVAB_RESEND_API_KEY=... MISTAKE_REMINDERS_SECRET=...`

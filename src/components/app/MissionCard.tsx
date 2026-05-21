@@ -14,6 +14,10 @@ interface MissionCardProps {
   weakestTopicTitle: string | null;
   weakestSubtest: string | null;
   isPro: boolean;
+  /** Reviews due now in the Spaced Mistake Bank (closed loop). */
+  mistakeDueCount?: number;
+  /** Build-time flag gating the closed-loop entry points. */
+  closedLoopEnabled?: boolean;
 }
 
 export default function MissionCard({
@@ -22,9 +26,32 @@ export default function MissionCard({
   weakestTopicTitle,
   weakestSubtest,
   isPro,
+  mistakeDueCount = 0,
+  closedLoopEnabled = false,
 }: MissionCardProps) {
+  const showMistakeCta = closedLoopEnabled && mistakeDueCount > 0;
   return (
     <div className="rounded-2xl border border-accent/30 bg-gradient-to-br from-accent/10 to-transparent p-6 sm:p-8">
+      {/* Highest-priority action: spaced review of due mistakes. */}
+      {showMistakeCta && (
+        <div className="mb-5 flex flex-col gap-3 rounded-xl border border-accent/40 bg-accent-dim/40 p-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="font-display text-sm font-bold text-text-primary">
+              {mistakeDueCount} mistake{mistakeDueCount === 1 ? "" : "s"} ready to review
+            </p>
+            <p className="mt-0.5 text-xs text-text-secondary">
+              Brought back right before you&apos;d forget — the fastest way to raise your score.
+            </p>
+          </div>
+          <Link
+            href="/app/mistakes"
+            className="inline-flex shrink-0 rounded-lg bg-accent px-5 py-2 text-sm font-semibold text-white no-underline transition-colors hover:bg-accent-hover"
+          >
+            Review now
+          </Link>
+        </div>
+      )}
+
       {state === "no_diagnostic" && (
         <>
           <h2 className="font-display text-xl font-bold text-text-primary">

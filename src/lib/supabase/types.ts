@@ -12,8 +12,92 @@ export type Database = {
   __InternalSupabase: {
     PostgrestVersion: "14.5"
   }
+  graphql_public: {
+    Tables: {
+      [_ in never]: never
+    }
+    Views: {
+      [_ in never]: never
+    }
+    Functions: {
+      graphql: {
+        Args: {
+          extensions?: Json
+          operationName?: string
+          query?: string
+          variables?: Json
+        }
+        Returns: Json
+      }
+    }
+    Enums: {
+      [_ in never]: never
+    }
+    CompositeTypes: {
+      [_ in never]: never
+    }
+  }
   public: {
     Tables: {
+      analytics_events: {
+        Row: {
+          attempt_id: string | null
+          auth_state: string
+          client_ts: string | null
+          entry_surface: string | null
+          event_name: string
+          id: string
+          paywall_context_id: string | null
+          probable_reason_category: string | null
+          props: Json
+          received_at: string
+          session_id: string
+          subtest: string | null
+          user_id: string | null
+          variant: string | null
+        }
+        Insert: {
+          attempt_id?: string | null
+          auth_state: string
+          client_ts?: string | null
+          entry_surface?: string | null
+          event_name: string
+          id?: string
+          paywall_context_id?: string | null
+          probable_reason_category?: string | null
+          props?: Json
+          received_at?: string
+          session_id: string
+          subtest?: string | null
+          user_id?: string | null
+          variant?: string | null
+        }
+        Update: {
+          attempt_id?: string | null
+          auth_state?: string
+          client_ts?: string | null
+          entry_surface?: string | null
+          event_name?: string
+          id?: string
+          paywall_context_id?: string | null
+          probable_reason_category?: string | null
+          props?: Json
+          received_at?: string
+          session_id?: string
+          subtest?: string | null
+          user_id?: string | null
+          variant?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "analytics_events_attempt_id_fkey"
+            columns: ["attempt_id"]
+            isOneToOne: false
+            referencedRelation: "attempts"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       attempts: {
         Row: {
           afqt_estimate: number | null
@@ -152,6 +236,48 @@ export type Database = {
           },
         ]
       }
+      feedback_responses: {
+        Row: {
+          answer_key: string
+          auth_state: string | null
+          client_ts: string | null
+          free_text: string | null
+          id: string
+          paywall_context_id: string | null
+          question_key: string
+          received_at: string
+          session_id: string | null
+          trigger: string
+          user_id: string | null
+        }
+        Insert: {
+          answer_key: string
+          auth_state?: string | null
+          client_ts?: string | null
+          free_text?: string | null
+          id?: string
+          paywall_context_id?: string | null
+          question_key: string
+          received_at?: string
+          session_id?: string | null
+          trigger: string
+          user_id?: string | null
+        }
+        Update: {
+          answer_key?: string
+          auth_state?: string | null
+          client_ts?: string | null
+          free_text?: string | null
+          id?: string
+          paywall_context_id?: string | null
+          question_key?: string
+          received_at?: string
+          session_id?: string | null
+          trigger?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
       flashcard_cards: {
         Row: {
           active: boolean
@@ -159,6 +285,7 @@ export type Database = {
           deck_id: string
           difficulty: number
           explanation: string | null
+          external_key: string
           front: string
           id: string
           sort_order: number
@@ -170,6 +297,7 @@ export type Database = {
           deck_id: string
           difficulty: number
           explanation?: string | null
+          external_key: string
           front: string
           id?: string
           sort_order?: number
@@ -181,6 +309,7 @@ export type Database = {
           deck_id?: string
           difficulty?: number
           explanation?: string | null
+          external_key?: string
           front?: string
           id?: string
           sort_order?: number
@@ -292,16 +421,74 @@ export type Database = {
           },
         ]
       }
+      payment_failed_emails: {
+        Row: {
+          attempt_count: number | null
+          billing_reason: string | null
+          collection_method: string | null
+          created_at: string
+          invoice_id: string
+          next_payment_attempt_at: string | null
+          recovered_at: string | null
+          resend_id: string | null
+          sent_at: string | null
+          status: string | null
+          subscription_id: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          attempt_count?: number | null
+          billing_reason?: string | null
+          collection_method?: string | null
+          created_at?: string
+          invoice_id: string
+          next_payment_attempt_at?: string | null
+          recovered_at?: string | null
+          resend_id?: string | null
+          sent_at?: string | null
+          status?: string | null
+          subscription_id?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          attempt_count?: number | null
+          billing_reason?: string | null
+          collection_method?: string | null
+          created_at?: string
+          invoice_id?: string
+          next_payment_attempt_at?: string | null
+          recovered_at?: string | null
+          resend_id?: string | null
+          sent_at?: string | null
+          status?: string | null
+          subscription_id?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "payment_failed_emails_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
+          },
+        ]
+      }
       practice_questions: {
         Row: {
           active: boolean
           choices: Json
+          content_version: number
           correct_index: number
           created_at: string
           difficulty: number
           explanation: string
           external_key: string
           id: string
+          status: string
           stem: string
           subtest: string
           topic_id: string
@@ -309,12 +496,14 @@ export type Database = {
         Insert: {
           active?: boolean
           choices: Json
+          content_version?: number
           correct_index: number
           created_at?: string
           difficulty: number
           explanation: string
           external_key: string
           id?: string
+          status?: string
           stem: string
           subtest: string
           topic_id: string
@@ -322,12 +511,14 @@ export type Database = {
         Update: {
           active?: boolean
           choices?: Json
+          content_version?: number
           correct_index?: number
           created_at?: string
           difficulty?: number
           explanation?: string
           external_key?: string
           id?: string
+          status?: string
           stem?: string
           subtest?: string
           topic_id?: string
@@ -352,6 +543,7 @@ export type Database = {
           email: string
           free_diagnostic_used_at: string | null
           last_challenge_completed_on: string | null
+          last_mistake_reminder_on: string | null
           marketing_opt_in: boolean
           milestone_50q_email_sent_at: string | null
           onboarding_completed_at: string | null
@@ -367,7 +559,14 @@ export type Database = {
           target_test_date: string | null
           target_test_date_bucket: string | null
           timezone: string
+          trial_converted_email_invoice_id: string | null
+          trial_converted_email_resend_id: string | null
+          trial_converted_email_sent_at: string | null
+          trial_converted_email_status: string | null
           trial_day2_email_sent_at: string | null
+          trial_ending_email_sent_at: string | null
+          trial_ending_email_status: string | null
+          trial_ending_email_stripe_event_id: string | null
           trial_ends_at: string | null
           updated_at: string
           user_id: string
@@ -384,6 +583,7 @@ export type Database = {
           email: string
           free_diagnostic_used_at?: string | null
           last_challenge_completed_on?: string | null
+          last_mistake_reminder_on?: string | null
           marketing_opt_in?: boolean
           milestone_50q_email_sent_at?: string | null
           onboarding_completed_at?: string | null
@@ -399,7 +599,14 @@ export type Database = {
           target_test_date?: string | null
           target_test_date_bucket?: string | null
           timezone?: string
+          trial_converted_email_invoice_id?: string | null
+          trial_converted_email_resend_id?: string | null
+          trial_converted_email_sent_at?: string | null
+          trial_converted_email_status?: string | null
           trial_day2_email_sent_at?: string | null
+          trial_ending_email_sent_at?: string | null
+          trial_ending_email_status?: string | null
+          trial_ending_email_stripe_event_id?: string | null
           trial_ends_at?: string | null
           updated_at?: string
           user_id: string
@@ -416,6 +623,7 @@ export type Database = {
           email?: string
           free_diagnostic_used_at?: string | null
           last_challenge_completed_on?: string | null
+          last_mistake_reminder_on?: string | null
           marketing_opt_in?: boolean
           milestone_50q_email_sent_at?: string | null
           onboarding_completed_at?: string | null
@@ -431,13 +639,137 @@ export type Database = {
           target_test_date?: string | null
           target_test_date_bucket?: string | null
           timezone?: string
+          trial_converted_email_invoice_id?: string | null
+          trial_converted_email_resend_id?: string | null
+          trial_converted_email_sent_at?: string | null
+          trial_converted_email_status?: string | null
           trial_day2_email_sent_at?: string | null
+          trial_ending_email_sent_at?: string | null
+          trial_ending_email_status?: string | null
+          trial_ending_email_stripe_event_id?: string | null
           trial_ends_at?: string | null
           updated_at?: string
           user_id?: string
           welcome_email_resend_id?: string | null
           welcome_email_sent_at?: string | null
           welcome_email_status?: string | null
+        }
+        Relationships: []
+      }
+      question_reviews: {
+        Row: {
+          content_version: number
+          created_at: string
+          due_at: string
+          ease_factor: number
+          interval_days: number
+          lapses: number
+          last_quality: number | null
+          last_reviewed_at: string | null
+          question_id: string
+          repetitions: number
+          resolved: boolean
+          subtest: string
+          topic_id: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          content_version?: number
+          created_at?: string
+          due_at?: string
+          ease_factor?: number
+          interval_days?: number
+          lapses?: number
+          last_quality?: number | null
+          last_reviewed_at?: string | null
+          question_id: string
+          repetitions?: number
+          resolved?: boolean
+          subtest: string
+          topic_id?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          content_version?: number
+          created_at?: string
+          due_at?: string
+          ease_factor?: number
+          interval_days?: number
+          lapses?: number
+          last_quality?: number | null
+          last_reviewed_at?: string | null
+          question_id?: string
+          repetitions?: number
+          resolved?: boolean
+          subtest?: string
+          topic_id?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "question_reviews_topic_id_fkey"
+            columns: ["topic_id"]
+            isOneToOne: false
+            referencedRelation: "topics"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "question_reviews_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
+          },
+        ]
+      }
+      stripe_webhook_events: {
+        Row: {
+          api_version: string | null
+          attempt_count: number
+          event_type: string
+          id: string
+          last_error: string | null
+          livemode: boolean
+          payload: Json
+          processed_at: string | null
+          received_at: string
+          status: string
+          stripe_created: string
+          stripe_event_id: string
+          updated_at: string
+        }
+        Insert: {
+          api_version?: string | null
+          attempt_count?: number
+          event_type: string
+          id?: string
+          last_error?: string | null
+          livemode: boolean
+          payload: Json
+          processed_at?: string | null
+          received_at?: string
+          status: string
+          stripe_created: string
+          stripe_event_id: string
+          updated_at?: string
+        }
+        Update: {
+          api_version?: string | null
+          attempt_count?: number
+          event_type?: string
+          id?: string
+          last_error?: string | null
+          livemode?: boolean
+          payload?: Json
+          processed_at?: string | null
+          received_at?: string
+          status?: string
+          stripe_created?: string
+          stripe_event_id?: string
+          updated_at?: string
         }
         Relationships: []
       }
@@ -599,10 +931,39 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      apply_question_grade: {
+        Args: {
+          p_correct: boolean
+          p_now?: string
+          p_question_id: string
+          p_subtest: string
+          p_topic_id: string
+          p_user_id: string
+        }
+        Returns: undefined
+      }
+      grade_flashcard_review: {
+        Args: { p_card_id: string; p_quality: number }
+        Returns: undefined
+      }
+      grade_question_review: {
+        Args: { p_correct: boolean; p_question_id: string }
+        Returns: undefined
+      }
       has_active_pro: { Args: { p_user_id?: string }; Returns: boolean }
       recompute_topic_stats: {
         Args: { p_topic_ids: string[]; p_user_id: string }
         Returns: undefined
+      }
+      sm2_next: {
+        Args: {
+          p_ease: number
+          p_interval: number
+          p_now: string
+          p_quality: number
+          p_reps: number
+        }
+        Returns: Record<string, unknown>
       }
     }
     Enums: {
@@ -732,6 +1093,9 @@ export type CompositeTypes<
     : never
 
 export const Constants = {
+  graphql_public: {
+    Enums: {},
+  },
   public: {
     Enums: {},
   },

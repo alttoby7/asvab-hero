@@ -345,17 +345,12 @@ export default function DailyChallengeEngine({
     };
 
     try {
+      // The ingest_attempt_mistakes trigger on `attempts` (migration 0017)
+      // recomputes topic_stats AND banks missed questions DB-side on insert,
+      // so no client-side recompute_topic_stats call is needed here.
       await sb
         .from("attempts")
         .insert({ user_id: userId, ...attemptPayload, synced_from_local: false });
-
-      const topicIds = Object.keys(resultsByTopic);
-      if (topicIds.length > 0) {
-        await sb.rpc("recompute_topic_stats", {
-          p_user_id: userId,
-          p_topic_ids: topicIds,
-        });
-      }
     } catch { /* non-blocking */ }
   }, [questions, answers, userId, streakCount, lastChallengeCompletedOn]);
 
