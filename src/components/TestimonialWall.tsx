@@ -43,12 +43,14 @@ export default function TestimonialWall() {
             </div>
           </>
         ) : (
-          <div className="text-center">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-text-tertiary">
-              <span className="text-accent">●</span> Used by recruits every day
+          <div>
+            <p className="text-center font-mono text-xs uppercase tracking-[0.2em] text-text-tertiary">
+              <span className="text-accent">●</span> Why recruits trust ASVAB Hero
             </p>
-            <div className="mt-6 flex flex-col items-center justify-center gap-8 sm:flex-row sm:gap-16">
-              <div>
+
+            {/* Real usage numbers (GA4, rounded down) */}
+            <div className="mt-7 flex flex-col items-center justify-center gap-8 sm:flex-row sm:gap-16">
+              <div className="text-center">
                 <div className="font-mono text-4xl font-extrabold text-text-primary sm:text-5xl">
                   {RECRUITS_PER_MONTH.toLocaleString()}+
                 </div>
@@ -56,7 +58,7 @@ export default function TestimonialWall() {
                   recruits this month
                 </div>
               </div>
-              <div>
+              <div className="text-center">
                 <div className="font-mono text-4xl font-extrabold text-text-primary sm:text-5xl">
                   {SCORE_CHECKS_PER_MONTH.toLocaleString()}+
                 </div>
@@ -64,16 +66,40 @@ export default function TestimonialWall() {
                   score checks run in 30 days
                 </div>
               </div>
+              <div className="text-center">
+                <div className="font-mono text-4xl font-extrabold text-text-primary sm:text-5xl">
+                  6
+                </div>
+                <div className="mt-2 text-xs uppercase tracking-widest text-text-tertiary">
+                  branches covered
+                </div>
+              </div>
             </div>
-            <p className="mx-auto mt-8 max-w-xl text-sm leading-relaxed text-text-secondary">
-              Real reviews are coming as our first recruits finish their prep — and
-              we&apos;ll only ever post real ones.{" "}
-              <span className="text-text-primary">
-                No fake testimonials, no made-up averages.
-              </span>{" "}
-              We publish score-improvement numbers only once we have a defensible
-              sample of real users.
-            </p>
+
+            {/* Authority proof — the method, as credibility */}
+            <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-navy-border bg-navy p-6 text-center sm:p-7">
+              <p className="text-sm leading-relaxed text-text-secondary">
+                Built on the study methods cognitive science shows actually raise
+                scores —{" "}
+                <span className="text-text-primary">
+                  retrieval practice, spaced repetition, interleaving, and adaptive
+                  difficulty
+                </span>{" "}
+                — not the rereading most apps rely on.
+              </p>
+              <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium text-text-tertiary">
+                <span>Free to start · no card</span>
+                <span className="text-navy-border">·</span>
+                <span>7-day money-back guarantee on Pro</span>
+                <span className="text-navy-border">·</span>
+                <a
+                  href="/the-science"
+                  className="text-accent no-underline transition-colors hover:text-accent-hover"
+                >
+                  See the science &rarr;
+                </a>
+              </div>
+            </div>
           </div>
         )}
       </div>
