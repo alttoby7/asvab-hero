@@ -20,6 +20,8 @@ const HEADLINES: Record<string, string> = {
   anon_diagnostic_used: "You\'ve already taken your free diagnostic",
   pro_only_variant: "This is a Pro feature",
   free_user_no_diagnostic: "Take your free diagnostic first",
+  free_adaptive_daily_limit: "That\'s today\'s adaptive block — nice work",
+  adaptive_needs_account: "Create a free account to start",
 };
 
 const SUBTEXTS: Record<string, string> = {
@@ -31,6 +33,10 @@ const SUBTEXTS: Record<string, string> = {
     "Subtest drills, AFQT sprints, weakness loops, and full sims are included with Pro. Upgrade to unlock unlimited targeted practice.",
   free_user_no_diagnostic:
     "Start with the free diagnostic to get your baseline score, then upgrade to Pro to drill your weak areas.",
+  free_adaptive_daily_limit:
+    "Your free plan includes one adaptive AFQT block a day — the part that actually moves your score. Clear your due mistakes to keep practicing today, come back tomorrow for the next block, or go Pro for unlimited adaptive practice, full-length sims, and deeper analytics.",
+  adaptive_needs_account:
+    "Adaptive practice builds on your personal mastery model, so it needs an account. Sign up free — one adaptive AFQT block a day is included, no card required.",
 };
 
 export default function TestBlockedScreen({
@@ -80,18 +86,49 @@ export default function TestBlockedScreen({
         <p className="mb-8 text-sm text-text-secondary">{subtext}</p>
 
         <div className="space-y-3">
-          <Link
-            href={upgradeHref}
-            onClick={() =>
-              trackEvent(PaywallEvents.PaywallCtaUpgradeClick, {
-                reason,
-                variant,
-              })
-            }
-            className="block w-full rounded-xl bg-accent px-6 py-3.5 font-display text-base font-bold text-white no-underline transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)]"
-          >
-            Upgrade to Pro
-          </Link>
+          {reason === "adaptive_needs_account" ? (
+            <Link
+              href="/signup"
+              onClick={() =>
+                trackEvent(PaywallEvents.PaywallCtaSecondaryClick, {
+                  which: "signup",
+                  reason,
+                })
+              }
+              className="block w-full rounded-xl bg-accent px-6 py-3.5 font-display text-base font-bold text-white no-underline transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)]"
+            >
+              Create a free account
+            </Link>
+          ) : (
+            <Link
+              href={upgradeHref}
+              onClick={() =>
+                trackEvent(PaywallEvents.PaywallCtaUpgradeClick, {
+                  reason,
+                  variant,
+                })
+              }
+              className="block w-full rounded-xl bg-accent px-6 py-3.5 font-display text-base font-bold text-white no-underline transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)]"
+            >
+              {reason === "free_adaptive_daily_limit"
+                ? "Go Pro for unlimited"
+                : "Upgrade to Pro"}
+            </Link>
+          )}
+
+          {reason === "free_adaptive_daily_limit" && (
+            <Link
+              href="/app/mistakes"
+              onClick={() =>
+                trackEvent(PaywallEvents.PaywallCtaSecondaryClick, {
+                  which: "review_mistakes",
+                })
+              }
+              className="block w-full rounded-xl border border-navy-border bg-navy px-6 py-3 text-sm font-semibold text-text-secondary no-underline transition-colors hover:bg-navy-lighter hover:text-text-primary"
+            >
+              Review your due mistakes
+            </Link>
+          )}
 
           {reason === "free_diagnostic_used" && lastAttemptId && (
             <Link

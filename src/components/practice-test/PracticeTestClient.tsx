@@ -1,13 +1,18 @@
 "use client";
 
-import { Suspense, useEffect } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import PracticeTestEngine from "./PracticeTestEngine";
 import VariantPicker from "./VariantPicker";
 import TestBlockedScreen from "./TestBlockedScreen";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { useSession } from "@/hooks/useSession";
-import { canStartVariant, checkAnonDiagnosticUsed } from "@/lib/practice/gate";
+import { getSupabaseBrowserClient } from "@/lib/supabase/client";
+import {
+  canStartVariant,
+  checkAnonDiagnosticUsed,
+  ADAPTIVE_VARIANT,
+} from "@/lib/practice/gate";
 import {
   trackEvent,
   FunnelEvents,
@@ -44,6 +49,43 @@ function PracticeTestInner() {
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
 
+  // For the free adaptive core we cap signed-in free users at one block/day.
+  // Fetch today's completed adaptive count to enforce it (Pro is uncapped).
+  const needsAdaptiveCount =
+    variant === ADAPTIVE_VARIANT && !!session && !entitlement.isPro;
+  const [adaptiveUsedToday, setAdaptiveUsedToday] = useState<number | null>(null);
+  useEffect(() => {
+    if (!needsAdaptiveCount || !session) {
+      setAdaptiveUsedToday(0);
+      return;
+    }
+    let cancelled = false;
+    (async () => {
+      try {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const sb = getSupabaseBrowserClient() as any;
+        const now = new Date();
+        const startOfDay = new Date(
+          now.getFullYear(),
+          now.getMonth(),
+          now.getDate()
+        ).toISOString();
+        const { count } = await sb
+          .from("attempts")
+          .select("id", { count: "exact", head: true })
+          .eq("user_id", session.user.id)
+          .eq("variant_code", ADAPTIVE_VARIANT)
+          .gte("completed_at", startOfDay);
+        if (!cancelled) setAdaptiveUsedToday(count ?? 0);
+      } catch {
+        if (!cancelled) setAdaptiveUsedToday(0);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [needsAdaptiveCount, session]);
+
   if (sessionLoading || entitlementLoading) {
     return (
       <div className="rounded-2xl border border-navy-border bg-navy-light p-8 text-center text-sm text-text-tertiary">
@@ -56,12 +98,22 @@ function PracticeTestInner() {
     return <VariantPicker />;
   }
 
+  // Wait for the adaptive day-count before deciding (avoids a flash of the cap).
+  if (needsAdaptiveCount && adaptiveUsedToday === null) {
+    return (
+      <div className="rounded-2xl border border-navy-border bg-navy-light p-8 text-center text-sm text-text-tertiary">
+        Loading…
+      </div>
+    );
+  }
+
   const decision = canStartVariant({
     variantCode: variant,
     isAuthed: !!session,
     isPro: entitlement.isPro,
     freeDiagnosticUsedAt: entitlement.freeDiagnosticUsedAt,
     anonDiagnosticUsedLocally: checkAnonDiagnosticUsed(),
+    adaptiveUsedToday: adaptiveUsedToday ?? 0,
   });
 
   if (!decision.allowed) {

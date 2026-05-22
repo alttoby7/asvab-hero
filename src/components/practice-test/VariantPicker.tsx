@@ -7,6 +7,7 @@ import { ALL_SUBTESTS, SUBTEST_NAMES } from "@/types";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { useSession } from "@/hooks/useSession";
 import { checkAnonDiagnosticUsed } from "@/lib/practice/gate";
+import { isAdaptiveEnabled } from "@/lib/practice/sampler";
 
 /**
  * Two-card variant picker for v1: Diagnostic + Subtest Drill.
@@ -30,6 +31,12 @@ export default function VariantPicker() {
   const diagnosticLocked = !isPro && diagnosticUsed;
   // Drill is locked for any non-Pro user.
   const drillLocked = !isPro;
+  // Adaptive AFQT is the FREE score-moving core (one block/day for free users;
+  // unlimited for Pro). Anon users need an account first.
+  const adaptiveAvailable = isAdaptiveEnabled();
+  const adaptiveHref = isAuthed
+    ? "/app/practice?variant=afqt_adaptive"
+    : "/signup";
 
   function handleDiagnosticClick(e: React.MouseEvent) {
     if (loading) return;
@@ -103,6 +110,60 @@ export default function VariantPicker() {
           </svg>
         </div>
       </Link>
+
+      {/* Adaptive AFQT — the free score-moving core */}
+      {adaptiveAvailable && (
+        <Link
+          href={adaptiveHref}
+          className="block rounded-2xl border border-accent/40 bg-gradient-to-br from-accent/10 to-transparent p-6 no-underline transition-colors hover:border-accent/70 sm:p-7"
+        >
+          <div className="flex items-start gap-4">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent-dim">
+              <svg
+                className="h-6 w-6 text-accent"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={1.75}
+              >
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <div className="flex-1">
+              <div className="flex flex-wrap items-center gap-2">
+                <h2 className="font-display text-lg font-bold text-text-primary sm:text-xl">
+                  Adaptive AFQT Practice
+                </h2>
+                <span className="inline-flex items-center rounded-md bg-accent/20 px-2 py-0.5 text-xs font-semibold text-accent">
+                  Free · daily
+                </span>
+              </div>
+              <p className="mt-1 text-sm text-text-secondary">
+                36 questions · ~39 minutes · AR / MK / WK / PC
+              </p>
+              <p className="mt-2 text-sm text-text-tertiary">
+                The core of the method. Picks the right question at the right
+                difficulty for where you are — close to one-on-one tutoring. One
+                block a day is free; Pro unlocks unlimited.
+                {!isAuthed && (
+                  <span className="mt-1 block text-accent/80">
+                    Create a free account to start.
+                  </span>
+                )}
+              </p>
+            </div>
+            <svg
+              className="hidden h-5 w-5 shrink-0 text-text-tertiary sm:block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </Link>
+      )}
 
       {/* Subtest Drill */}
       <div className="rounded-2xl border border-navy-border bg-navy-light p-6 sm:p-7">
@@ -215,7 +276,9 @@ export default function VariantPicker() {
 
       {/* ── Phase E: free-tier footer hint ────────────────────────────────── */}
       <p className="mt-2 text-center text-xs text-text-tertiary">
-        Free: 1 diagnostic.&nbsp; Pro: unlimited tests &middot; $9.99/mo &middot;{" "}
+        Free: 1 diagnostic + 1 adaptive AFQT block/day + unlimited mistake
+        review.&nbsp; Pro: unlimited adaptive, drills &amp; sims &middot;
+        $9.99/mo &middot;{" "}
         <Link
           href="/upgrade?from=variant_picker_footer"
           className="text-accent no-underline hover:underline"

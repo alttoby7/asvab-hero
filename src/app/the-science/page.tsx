@@ -71,7 +71,7 @@ const TECHNIQUES: Technique[] = [
     name: "Adaptive mastery sequencing",
     evidence: "d ≈ 0.76 for intelligent tutoring — near one-on-one tutoring (Kulik & Fletcher, 2016)",
     what: "Choosing the next question based on what you've actually mastered — at the right difficulty — approaches the effectiveness of a personal tutor.",
-    how: "A per-topic mastery model already targets your weak spots in the Daily Challenge, and a full adaptive engine for the AFQT subtests (Arithmetic Reasoning, Math Knowledge, Word Knowledge, Paragraph Comprehension) is on the way.",
+    how: "A per-topic mastery model targets your weak spots, and the adaptive engine for the AFQT subtests (Arithmetic Reasoning, Math Knowledge, Word Knowledge, Paragraph Comprehension) is live — one adaptive block a day is free for every signed-in user.",
   },
 ];
 
