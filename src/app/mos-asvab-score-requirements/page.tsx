@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "MOS ASVAB Score Requirements by Branch | ASVAB Hero",
+  title: "MOS ASVAB Score Requirements by Branch",
   description:
     "MOS ASVAB score requirements for every branch: Army line scores, Air Force MAGE, Navy ratings, and Marine composites, with formulas and exact job numbers.",
   alternates: {

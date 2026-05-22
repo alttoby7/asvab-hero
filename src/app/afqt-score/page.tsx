@@ -4,7 +4,7 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "AFQT Score: What It Is and How to Improve It | ASVAB Hero",
+  title: "AFQT Score: What It Is and How to Improve It",
   description:
     "Learn what your AFQT score means, how it&apos;s calculated from 4 ASVAB subtests, branch minimums for 2026, and the fastest ways to raise it.",
   alternates: {

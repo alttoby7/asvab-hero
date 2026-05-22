@@ -5,7 +5,7 @@ import DvidsHeroImage from "@/components/DvidsHeroImage";
 import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "ASVAB Paragraph Comprehension Tips: 9 Strategies | ASVAB Hero",
+  title: "ASVAB Paragraph Comprehension Tips: 9 Strategies",
   description:
     "Master ASVAB paragraph comprehension with 9 tested strategies. Learn question types, trap patterns, and pacing tips to boost your PC score and AFQT.",
   alternates: {

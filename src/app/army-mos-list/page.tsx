@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Army MOS List 2026: Every Enlisted Job with ASVAB Scores | ASVAB Hero",
+  title: "Army MOS List 2026: Every Enlisted Job with ASVAB Scores",
   description:
     "Complete Army MOS list with ASVAB line score requirements, all 10 composite formulas, FY26 bonuses up to $50K, and the warrant officer track by Career Management Field.",
   alternates: {

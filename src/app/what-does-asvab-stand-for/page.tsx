@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "What Does ASVAB Stand For? Acronym Decoded | ASVAB Hero",
+  title: "What Does ASVAB Stand For? Acronym Decoded",
   description:
     "ASVAB stands for Armed Services Vocational Aptitude Battery. Decode each word, see 2026 branch minimums, and discover what higher scores unlock.",
   alternates: {

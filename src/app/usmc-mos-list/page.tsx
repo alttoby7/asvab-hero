@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "USMC MOS List 2026: Marine Corps Jobs with ASVAB Scores | ASVAB Hero",
+  title: "USMC MOS List 2026: Marine Corps Jobs with ASVAB Scores",
   description:
     "Complete USMC MOS list with ASVAB line score requirements, FY26 bonuses up to $15K, TS/SCI clearances, and Force Design 2030 changes by occupational field.",
   alternates: {

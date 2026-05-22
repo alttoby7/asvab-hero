@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "ASVAB Retake Policy 2026: Rules & Waiting Periods | ASVAB Hero",
+  title: "ASVAB Retake Policy 2026: Rules & Waiting Periods",
   description:
     "Learn the complete ASVAB retake policy for 2026: the 1-1-6 waiting period rule, DEP restrictions by branch, C-Test triggers, and score expiration.",
   alternates: {

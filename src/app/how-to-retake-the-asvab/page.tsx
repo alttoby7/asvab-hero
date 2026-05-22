@@ -4,7 +4,7 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "How to Retake the ASVAB in 2026: Rules, Waiting Periods, Tips | ASVAB Hero",
+  title: "How to Retake the ASVAB in 2026: Rules, Waiting Periods, Tips",
   description:
     "The official 2026 ASVAB retake policy: wait 1 month, then 1 more, then 6 (the 1/1/6 rule), the 20-point Confirmation Test trap, and branch limits. Your most recent score is the one that counts.",
   alternates: {

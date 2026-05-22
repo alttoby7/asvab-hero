@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "9 ASVAB Word Knowledge Tips That Actually Work | ASVAB Hero",
+  title: "9 ASVAB Word Knowledge Tips That Actually Work",
   description:
     "Learn 9 proven ASVAB word knowledge tips: VE double-count mechanics, root-word decoding, synonym clusters, trap answer patterns, and CAT pacing strategy.",
   alternates: {

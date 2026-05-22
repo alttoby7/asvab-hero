@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "BSEP: Army's Free GT Score Improvement Program (2026 Guide) | ASVAB Hero",
+    "BSEP: Army's Free GT Score Improvement Program (2026 Guide)",
   description:
     "Learn how BSEP raises your GT score by 19-23 points on average. Eligibility tiers, enrollment steps, curriculum breakdown, and real outcome data from 6 installations.",
   alternates: {

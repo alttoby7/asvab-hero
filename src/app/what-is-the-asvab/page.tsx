@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 
 export const metadata: Metadata = {
-  title: "What Is the ASVAB Test? The Complete Guide | ASVAB Hero",
+  title: "What Is the ASVAB Test? The Complete Guide",
   description:
     "Learn what the ASVAB test is, how the 10 subtests work, how your AFQT score is calculated, and what every branch requires. Includes all 6 branch minimums.",
   alternates: {

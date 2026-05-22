@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 
 export const metadata: Metadata = {
-  title: "What Is a Good ASVAB Score? Score Ranges Explained | ASVAB Hero",
+  title: "What Is a Good ASVAB Score? Score Ranges Explained",
   description:
     "Find out what a good ASVAB score is for enlistment, job qualification, and bonuses. Branch minimums, incentive thresholds, and elite path requirements explained.",
   alternates: {

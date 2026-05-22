@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "MOS Reclassification: How to Reclass Army Jobs | ASVAB Hero",
+  title: "MOS Reclassification: How to Reclass Army Jobs",
   description:
     "MOS reclassification step by step: eligibility, In/Out Calls, the line score your new MOS needs, the AFCT retake, DA Form 4187, and what changes.",
   alternates: {

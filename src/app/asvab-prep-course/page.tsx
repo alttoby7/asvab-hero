@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "ASVAB Prep Course: How to Pick the Right One | ASVAB Hero",
+  title: "ASVAB Prep Course: How to Pick the Right One",
   description:
     "Compare all six ASVAB prep course categories, from free to tutoring, with real pricing, guarantee fine print, and a scenario decision framework.",
   alternates: {

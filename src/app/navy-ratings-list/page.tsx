@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Navy Ratings List (2026): Jobs and Required ASVAB Scores | ASVAB Hero",
+  title: "Navy Ratings List (2026): Jobs and Required ASVAB Scores",
   description:
     "Complete navy ratings list organized by career community. ASVAB composite scores for all 89 jobs, FY2026 bonuses, NAPT requirements, and PACT path explained.",
   alternates: {

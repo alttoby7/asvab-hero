@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "ASVAB Vocabulary: Word Knowledge Study Guide | ASVAB Hero",
+  title: "ASVAB Vocabulary: Word Knowledge Study Guide",
   description:
     "ASVAB vocabulary study pays double via the VE formula. Get a high-frequency word list, root word decode system, CAT pacing tips, and a 4-week study plan.",
   alternates: {

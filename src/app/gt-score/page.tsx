@@ -4,7 +4,7 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "ASVAB GT Score Explained + GT Score Calculator (2026) | ASVAB Hero",
+  title: "ASVAB GT Score Explained + GT Score Calculator (2026)",
   description:
     "Your GT score decides which military jobs you can hold. Learn the VE + AR formula, how to calculate it, Army GT cutoffs, the 110 threshold, the highest possible GT (144), and how to raise it.",
   alternates: {

@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "The Science: How ASVAB Hero Raises Your Score | ASVAB Hero",
+  title: "The Science: How ASVAB Hero Raises Your Score",
   description:
     "ASVAB Hero is built on the study methods cognitive science proves actually raise test scores — retrieval practice, spaced repetition, interleaving, and immediate feedback — not the rereading most apps rely on.",
   alternates: {

@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 
 export const metadata: Metadata = {
-  title: "How to Study for the ASVAB: 8-Step Plan | ASVAB Hero",
+  title: "How to Study for the ASVAB: 8-Step Plan",
   description:
     "Learn how to study for the ASVAB with a proven 8-step plan. Set your target score, build a schedule, master the right subtests, and nail the CAT-ASVAB.",
   alternates: {

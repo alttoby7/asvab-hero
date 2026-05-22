@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "GT Score Military: Requirements & the 110 Wall | ASVAB Hero",
+  title: "GT Score Military: Requirements & the 110 Wall",
   description:
     "What a GT score is in the military, how it differs from AFQT, the thresholds for warrant officer, OCS, and 18X, and how to raise it. See where you stand.",
   alternates: {

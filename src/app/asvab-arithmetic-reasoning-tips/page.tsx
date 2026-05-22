@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "9 ASVAB Arithmetic Reasoning Tips to Raise Your Score | ASVAB Hero",
+  title: "9 ASVAB Arithmetic Reasoning Tips to Raise Your Score",
   description:
     "Learn 9 proven ASVAB arithmetic reasoning tips with worked examples, mental math shortcuts, and a 5-week study plan to boost your AR, AFQT, and GT scores.",
   alternates: {

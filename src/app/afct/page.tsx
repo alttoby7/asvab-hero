@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "AFCT (Armed Forces Classification Test): Active-Duty Retake Guide | ASVAB Hero",
+    "AFCT (Armed Forces Classification Test): Active-Duty Retake Guide",
   description:
     "Learn the AFCT score replacement rule, branch retake policies, BSEP prep programs, and GT-to-MOS thresholds. Free calculator and practice test included.",
   alternates: {

@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Warrant Officer Requirements by Branch (2026) | ASVAB Hero",
+  title: "Warrant Officer Requirements by Branch (2026)",
   description:
     "Warrant officer requirements by branch: GT scores, rank, and years of service for the Army, Navy, Marines, Coast Guard, and the new 2024 Air Force program.",
   alternates: {

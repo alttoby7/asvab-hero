@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "How Many Questions Are on the ASVAB? (2026) | ASVAB Hero",
+  title: "How Many Questions Are on the ASVAB? (2026)",
   description:
     "The ASVAB has 145 questions on CAT or 225 on paper. See every subtest's question count, time limit, and pacing strategy for both versions.",
   alternates: {

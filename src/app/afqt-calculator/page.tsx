@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
-  title: "AFQT Score Calculator (2026): Estimate Your AFQT Percentile | ASVAB Hero",
+  title: "AFQT Score Calculator (2026): Estimate Your AFQT Percentile",
   description:
     "Free AFQT score calculator. Enter AR, WK, PC, and MK standard scores to get your AFQT percentile, DoD category (I through V), and which branches you qualify for. Uses the official PAY97 conversion table.",
   alternates: {

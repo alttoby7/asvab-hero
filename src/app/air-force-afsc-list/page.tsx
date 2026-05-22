@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Air Force AFSC List 2026: Every Job With ASVAB Scores | ASVAB Hero",
+  title: "Air Force AFSC List 2026: Every Job With ASVAB Scores",
   description:
     "Complete Air Force AFSC list with MAGE composite score requirements for every enlisted job. Find which AFSCs your ASVAB score qualifies you for in 2026.",
   alternates: {

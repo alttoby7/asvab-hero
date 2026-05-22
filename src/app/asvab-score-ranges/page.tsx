@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "ASVAB Score Ranges: What Each Score Level Unlocks | ASVAB Hero",
+  title: "ASVAB Score Ranges: What Each Score Level Unlocks",
   description:
     "Understand what each ASVAB score range unlocks: AFQT categories, branch minimums, composite scores, and real job examples across all 6 branches.",
   alternates: {

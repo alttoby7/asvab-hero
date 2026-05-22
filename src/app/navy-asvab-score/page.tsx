@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "Navy ASVAB Score: How Scoring Works + Requirements by Rating | ASVAB Hero",
+    "Navy ASVAB Score: How Scoring Works + Requirements by Rating",
   description:
     "How the Navy ASVAB score works plus the minimum scores you need to qualify: the AFQT vs. composite two-gate system, exact rating composite minimums, nuclear field, SEAL/EOD cutoffs, and FY2026 bonuses.",
   alternates: {
