@@ -37,6 +37,9 @@ export default function VariantPicker() {
   const adaptiveHref = isAuthed
     ? "/app/practice?variant=afqt_adaptive"
     : "/signup";
+  // Full-length sim is Pro (paid gates sims); the plan paces it weekly in the
+  // final stretch.
+  const simLocked = !isPro;
 
   function handleDiagnosticClick(e: React.MouseEvent) {
     if (loading) return;
@@ -273,6 +276,61 @@ export default function VariantPicker() {
           </div>
         )}
       </div>
+
+      {/* Full-length simulation (Pro) — final-stretch rehearsal */}
+      <Link
+        href="/practice-test?variant=full_sim"
+        onClick={(e) => {
+          if (loading) return;
+          if (simLocked) {
+            e.preventDefault();
+            router.push("/upgrade?from=variant_picker&variant=full_sim");
+          }
+        }}
+        className="block rounded-2xl border border-navy-border bg-navy-light p-6 no-underline transition-colors hover:border-accent/40 hover:bg-navy-lighter sm:p-7"
+      >
+        <div className="flex items-start gap-4">
+          <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy-lighter">
+            <svg
+              className="h-6 w-6 text-text-secondary"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={1.75}
+            >
+              <path d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+          </div>
+          <div className="flex-1">
+            <div className="flex items-center gap-2">
+              <h2 className="font-display text-lg font-bold text-text-primary sm:text-xl">
+                Full-Length Simulation
+              </h2>
+              {simLocked && !loading && (
+                <span className="inline-flex items-center rounded-md bg-accent/20 px-2 py-0.5 text-xs font-semibold text-accent">
+                  Pro
+                </span>
+              )}
+            </div>
+            <p className="mt-1 text-sm text-text-secondary">
+              144 questions · all 9 subtests · timed like the real thing
+            </p>
+            <p className="mt-2 text-sm text-text-tertiary">
+              Save this for the final weeks. A full timed run builds stamina and
+              pacing so test day feels familiar — not a daily drill.
+            </p>
+          </div>
+          <svg
+            className="hidden h-5 w-5 shrink-0 text-text-tertiary sm:block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path d="M9 5l7 7-7 7" />
+          </svg>
+        </div>
+      </Link>
 
       {/* ── Phase E: free-tier footer hint ────────────────────────────────── */}
       <p className="mt-2 text-center text-xs text-text-tertiary">

@@ -149,14 +149,14 @@ insert into test_variants (code, name, rules, active) values
     'full_sim',
     'Full ASVAB Simulation',
     '{
-      "length": 145,
+      "length": 144,
       "time_seconds": 9000,
-      "mix": "full_asvab_distribution",
+      "mix": {"GS":16,"AR":16,"WK":16,"PC":11,"MK":16,"EI":16,"AS":11,"MC":16,"AO":16},
       "afqt_eligible": true,
       "subtest_locked": null,
-      "note": "v3 only — requires ~250-350 question bank"
+      "note": "Full-length ASVAB simulation — final-stretch weekly rehearsal."
     }'::jsonb,
-    false
+    true
   ),
 
   (

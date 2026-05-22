@@ -32,6 +32,7 @@ import { ALL_SUBTESTS } from "@/types";
 const ALLOWED_VARIANTS = new Set([
   "diagnostic",
   "subtest_drill",
+  "full_sim",
   ...(isAdaptiveEnabled() ? [ADAPTIVE_VARIANT_CODE] : []),
 ]);
 
