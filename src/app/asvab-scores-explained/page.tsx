@@ -186,7 +186,11 @@ export default function ASVABScoresExplainedPage() {
           </p>
         </div>
         <p className="text-text-secondary">
-          The same 5-point gain in AR would only add 5 raw points. This 2x multiplier makes verbal prep the single most efficient use of your study time if you need a higher AFQT.
+          The same 5-point gain in AR would only add 5 raw points. This 2x multiplier makes verbal prep the single most efficient use of your study time if you need a higher AFQT. Drop your four subtests into the{" "}
+          <Link href="/afqt-calculator" className="text-accent hover:text-accent-hover">
+            AFQT calculator
+          </Link>{" "}
+          to see your exact percentile and DoD category.
         </p>
         <p className="text-text-secondary">
           The raw total gets converted to a percentile based on the <strong>1997 norming study</strong> (the Profile of American Youth), a nationally representative sample of 18-to-23-year-olds. The reference group is nearly 30 years old and hasn&apos;t been updated. Your percentile compares you to that 1997 cohort, not to current test-takers.
@@ -306,7 +310,12 @@ export default function ASVABScoresExplainedPage() {
           <div className="rounded-lg bg-navy p-4">
             <h3 className="font-display text-base font-bold text-text-primary">Army: 10 Line Scores</h3>
             <p className="mt-1 text-sm text-text-secondary">
-              GT, CL, EL, CO, FA, GM, MM, OF, SC, ST. Each combines 2-4 subtests. GT (AR + VE) is most common for intelligence and technical jobs.
+              CL, EL, CO, FA, GM, MM, OF, SC, ST, and the{" "}
+              <Link href="/gt-score" className="text-accent hover:text-accent-hover">
+                GT score
+              </Link>
+              . Each combines 2-4 subtests. GT (AR + VE) is most common for
+              intelligence and technical jobs.
             </p>
           </div>
           <div className="rounded-lg bg-navy p-4">

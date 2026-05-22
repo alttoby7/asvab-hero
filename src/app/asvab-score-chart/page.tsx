@@ -152,7 +152,15 @@ export default function ASVABScoreChartPage() {
           <strong>ASVAB score chart</strong> breaks down every score range, every branch minimum, and every composite formula so you can see exactly where you stand.
         </p>
         <p className="text-text-secondary">
-          Two numbers matter most: your AFQT score (determines if you can enlist) and your composite scores (determine which jobs you qualify for). You can have a high AFQT and still miss the composite minimum for a specific job, so both scores shape your career options.
+          Two numbers matter most: your AFQT score (determines if you can enlist) and your composite scores (determine which jobs you qualify for). You can have a high AFQT and still miss the composite minimum for a specific job, so both scores shape your career options. Use the{" "}
+          <Link href="/afqt-calculator" className="text-accent hover:text-accent-hover">
+            AFQT calculator
+          </Link>{" "}
+          to pin down your percentile, or browse the{" "}
+          <Link href="/navy-ratings-list" className="text-accent hover:text-accent-hover">
+            Navy ratings list
+          </Link>{" "}
+          to see required scores job by job.
         </p>
         <p className="text-text-secondary">
           AFQT is a percentile comparing you to a 1997 national reference group of about 6,000 young adults, not a percent-correct grade. A score of 60 means you outperformed 60% of that group. Your AFQT comes from four subtests (Arithmetic Reasoning, Math Knowledge, Word Knowledge, and Paragraph Comprehension), while your remaining subtests feed into composite scores that each branch calculates differently. The{" "}

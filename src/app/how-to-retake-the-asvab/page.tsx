@@ -4,7 +4,7 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "ASVAB Retake Policy 2026: How Long You Wait & Score Rules",
+  title: "How to Retake the ASVAB in 2026: Rules, Waiting Periods, Tips | ASVAB Hero",
   description:
     "The official 2026 ASVAB retake policy: wait 1 month, then 1 more, then 6 (the 1/1/6 rule), the 20-point Confirmation Test trap, and branch limits. Your most recent score is the one that counts.",
   alternates: {
@@ -126,6 +126,22 @@ export default function HowToRetakeTheASVABPage() {
             {" · "}Last verified: April 2026
           </p>
         </aside>
+
+        <div className="my-6 not-prose rounded-xl border border-accent/30 bg-navy-light p-5 text-center sm:flex sm:items-center sm:justify-between sm:text-left">
+          <p className="text-sm font-semibold text-text-primary">
+            Retaking soon? Start a free diagnostic first to see exactly where you
+            lost points.
+          </p>
+          <Link
+            href="/practice-test"
+            className="mt-3 inline-flex items-center justify-center gap-1.5 rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:bg-accent-hover sm:mt-0 sm:shrink-0"
+          >
+            Start a free diagnostic
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </Link>
+        </div>
 
         <section className="my-8 not-prose">
           <EmailCapture

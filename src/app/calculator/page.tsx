@@ -1,5 +1,6 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
 import Calculator from "@/components/Calculator";
 import JsonLd from "@/components/JsonLd";
 import type { MilitaryJob } from "@/types";
@@ -64,6 +65,23 @@ export default function CalculatorPage() {
           Enter your 9 subtest standard scores to see your AFQT percentile,
           branch-specific composite scores, and every military job you qualify
           for.
+        </p>
+        <p className="mt-3 text-sm text-text-tertiary">
+          Want a single number? Use the{" "}
+          <Link
+            href="/gt-score-calculator"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            Army GT score calculator
+          </Link>{" "}
+          or the{" "}
+          <Link
+            href="/afqt-calculator"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            AFQT calculator
+          </Link>
+          .
         </p>
       </div>
       <Suspense>
