@@ -18,6 +18,7 @@ import StatsRow from "@/components/app/StatsRow";
 import GoalJobsTracker from "@/components/app/GoalJobsTracker";
 import TrajectoryCard from "@/components/app/TrajectoryCard";
 import PrescriptionCard from "@/components/app/PrescriptionCard";
+import TestimonialPrompt from "@/components/app/TestimonialPrompt";
 import MasteryMap from "@/components/app/MasteryMap";
 import QuickActions from "@/components/app/QuickActions";
 
@@ -268,6 +269,24 @@ export default function AppHomePage() {
     daysToTest,
   });
 
+  // Testimonial prompt — only after a genuine win (a 7-day streak, or a 2nd
+  // diagnostic that improved). The component itself shows once (localStorage).
+  const earliestDiagnostic = diagnostics[diagnostics.length - 1] ?? null;
+  let testimonialContext: string | null = null;
+  let testimonialHeadline = "";
+  if (profile.streak_count >= 7) {
+    testimonialContext = "streak_7";
+    testimonialHeadline = `You're on a ${profile.streak_count}-day streak.`;
+  } else if (
+    diagnostics.length >= 2 &&
+    latestDiagnostic?.afqt_estimate != null &&
+    earliestDiagnostic?.afqt_estimate != null &&
+    latestDiagnostic.afqt_estimate > earliestDiagnostic.afqt_estimate
+  ) {
+    testimonialContext = "afqt_improved";
+    testimonialHeadline = "Your AFQT is climbing.";
+  }
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 space-y-5">
       {/* Greeting */}
@@ -279,6 +298,15 @@ export default function AppHomePage() {
           <p className="mt-1 text-sm text-text-secondary">{countdown}</p>
         )}
       </div>
+
+      {/* Testimonial prompt — only after a genuine win. */}
+      {testimonialContext && (
+        <TestimonialPrompt
+          userId={session.user.id}
+          context={testimonialContext}
+          headline={testimonialHeadline}
+        />
+      )}
 
       {/* Today's Prescription (single highest-leverage action) */}
       <PrescriptionCard prescription={prescription} />

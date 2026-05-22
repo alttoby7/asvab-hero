@@ -15,6 +15,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useSession } from "@/hooks/useSession";
 import { trackEvent } from "@/lib/analytics";
+import { RECRUITS_PER_MONTH } from "@/data/social-proof";
 import type { Branch } from "@/types";
 
 interface CalculatorResultBridgeProps {
@@ -174,7 +175,8 @@ export default function CalculatorResultBridge({
         </Link>
       </div>
       <p className="mt-3 text-xs text-text-tertiary">
-        Free account. No card required.{" "}
+        Free account, no card — join {RECRUITS_PER_MONTH.toLocaleString()}+ recruits
+        prepping here this month.{" "}
         {!isPro && (
           <>
             Want unlimited practice + full-length sims later?{" "}

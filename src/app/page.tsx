@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import BrandHero from "@/components/BrandHero";
+import GapToGoalRail from "@/components/GapToGoalRail";
+import TestimonialWall from "@/components/TestimonialWall";
 import { QUESTIONS_PLUS, TOPIC_COUNT, SUBTEST_COUNT } from "@/lib/bank-stats";
 
 export const metadata: Metadata = {
@@ -147,6 +149,26 @@ export default function HomePage() {
           <p className="mt-3 font-mono text-xs uppercase tracking-wider text-text-tertiary">
             Free account · no card · the score-moving core is free
           </p>
+        </div>
+      </section>
+
+      {/* ────────────────────────────────────────────────────────────────────
+         WALKTHROUGH — the animated "Gap-to-Goal Rail": shows the daily loop
+         closing the gap (the product's whole promise) in ~8 seconds.
+      ──────────────────────────────────────────────────────────────────── */}
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(249,115,22,0.06),_transparent_70%)]" />
+        <div className="relative mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
+          <div className="mb-8 text-center">
+            <h2 className="font-display text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">
+              Watch the gap close.
+            </h2>
+            <p className="mt-3 text-base text-text-secondary">
+              Diagnose, clear your misses, do one adaptive block — repeat. That&apos;s
+              the loop. Here&apos;s what it does to your score.
+            </p>
+          </div>
+          <GapToGoalRail />
         </div>
       </section>
 
@@ -341,6 +363,12 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+      {/* ────────────────────────────────────────────────────────────────────
+         SOCIAL PROOF — real usage numbers now; real testimonials when earned
+         (never fabricated). Swaps automatically once curated in.
+      ──────────────────────────────────────────────────────────────────── */}
+      <TestimonialWall />
 
       {/* ────────────────────────────────────────────────────────────────────
          ONE EMAIL CAPTURE — replaces the prior two homepage forms.
