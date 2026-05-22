@@ -214,6 +214,28 @@ export default function TestResults({
           </svg>
         </Link>
 
+        {/* Non-Pro → the FREE score-moving plan (save the score, start the loop).
+           This is the peak-intent moment, mirroring the calculator bridge. */}
+        {!entitlement.isPro && (
+          <Link
+            href={userId ? "/app/plan" : "/signup?next=%2Fapp%2Fplan"}
+            className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#f97316]/40 bg-[#0a1628] px-6 py-3.5 font-display text-base font-bold text-[#f97316] no-underline transition-all duration-200 hover:bg-[#101e36]"
+          >
+            <svg
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            {userId
+              ? "Go to my free plan"
+              : "Save my score & start my free plan"}
+          </Link>
+        )}
+
         <div className="flex flex-wrap gap-3">
           <button
             onClick={onRetake}
@@ -231,47 +253,31 @@ export default function TestResults({
           ) : (
             <Link
               href="/pricing"
-              className="flex-1 rounded-xl border border-accent/30 bg-accent-dim px-4 py-3 text-center text-sm font-semibold text-accent no-underline transition-colors hover:border-accent/50 hover:bg-accent/20"
+              className="flex-1 rounded-xl border border-navy-border bg-navy-light px-4 py-3 text-center text-sm font-semibold text-text-secondary no-underline transition-colors hover:bg-navy-lighter hover:text-text-primary"
             >
-              Unlock Unlimited Tests
+              Compare plans
             </Link>
           )}
         </div>
-
-        {!userId && (
-          <Link
-            href="/signup?return=/practice-test/results"
-            className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#f97316]/40 bg-[#0a1628] px-6 py-3.5 font-display text-base font-bold text-[#f97316] no-underline transition-all duration-200 hover:bg-[#101e36]"
-          >
-            <svg
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            Save my progress (free account)
-          </Link>
-        )}
       </section>
 
       {/* ── Phase E: Pro upsell card for free authed users ────────────────── */}
       {showProUpsell && (
         <section className="rounded-2xl border-t-2 border-accent bg-navy-light p-6">
           <h3 className="font-display text-lg font-bold text-text-primary">
-            Want to fix these weak spots?
+            Ready to go faster?
           </h3>
           <p className="mt-2 text-sm text-text-secondary">
-            Pro unlocks subtest drills on every topic, unlimited tests, score
-            tracking, and flashcards (coming). $9.99/mo or $49.99/yr.
+            Your free plan already drills these weak spots every day — one adaptive
+            AFQT block plus Mistake-Bank review. Pro adds unlimited practice,
+            full-length timed sims, and deeper analytics for the final push.
+            $9.99/mo or $49.99/yr.
           </p>
           <Link
             href="/upgrade?from=results"
             className="mt-4 inline-flex items-center gap-1.5 font-semibold text-accent no-underline transition-colors hover:text-accent-hover"
           >
-            See plans &rarr;
+            See Pro &rarr;
           </Link>
         </section>
       )}

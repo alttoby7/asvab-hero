@@ -64,7 +64,8 @@ export default function SignupPage() {
     let calcContext: { afqt?: string; branch?: string } = {};
     try {
       const sp = new URLSearchParams(window.location.search);
-      const raw = sp.get("next");
+      // Honor both ?next= (new) and ?return= (existing CTAs on results/pricing).
+      const raw = sp.get("next") ?? sp.get("return");
       if (raw && raw.startsWith("/") && !raw.startsWith("//")) {
         nextPath = raw;
       }
