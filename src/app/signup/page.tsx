@@ -56,11 +56,37 @@ export default function SignupPage() {
       /* ignore — fall back to signup_page */
     }
 
+    // Path integrity: honor a ?next= so the email-confirm link returns the user
+    // to where they intended (e.g. the calculator bridge sends them to their
+    // plan), instead of always dumping them on /app/home. Validate to a same-site
+    // relative app path to avoid an open redirect.
+    let nextPath = "/app/home";
+    let calcContext: { afqt?: string; branch?: string } = {};
+    try {
+      const sp = new URLSearchParams(window.location.search);
+      const raw = sp.get("next");
+      if (raw && raw.startsWith("/") && !raw.startsWith("//")) {
+        nextPath = raw;
+      }
+      // Stash calculator context so onboarding can pre-fill the branch.
+      const afqt = sp.get("afqt");
+      const branch = sp.get("branch");
+      if (afqt || branch) {
+        calcContext = { afqt: afqt ?? undefined, branch: branch ?? undefined };
+        localStorage.setItem(
+          "asvabhero.calc_context",
+          JSON.stringify({ ...calcContext, capturedAt: Date.now() })
+        );
+      }
+    } catch {
+      /* ignore — fall back to /app/home */
+    }
+
     const { error: authError } = await supabase.auth.signUp({
       email,
       password,
       options: {
-        emailRedirectTo: `${window.location.origin}/app/home`,
+        emailRedirectTo: `${window.location.origin}${nextPath}`,
         data: { signup_source: resolvedSource },
       },
     });

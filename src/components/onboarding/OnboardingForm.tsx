@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
@@ -125,6 +125,22 @@ export function OnboardingForm() {
   const [submitting, setSubmitting] = useState(false);
   const [skipping, setSkipping] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  // Pre-fill the branch from the calculator context (set at /signup) so a user
+  // who came in through the calculator-result bridge doesn't re-answer it.
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem("asvabhero.calc_context");
+      if (!raw) return;
+      const parsed = JSON.parse(raw) as { branch?: string };
+      if (parsed.branch && BRANCH_OPTIONS.some((o) => o.value === parsed.branch)) {
+        setBranch(parsed.branch as Branch);
+      }
+      localStorage.removeItem("asvabhero.calc_context");
+    } catch {
+      /* ignore */
+    }
+  }, []);
 
   const hasTestDate = !!specificDate || !!bucket;
   const canSubmit =
