@@ -3,11 +3,14 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
+import { saveAttempt } from "@/lib/practice/profile-sync";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
+import type { AttemptPayload, AsvabSubtest } from "@/types";
 
 interface DbQuestion {
   id: string;
+  external_key: string;
   stem: string;
   choices: string[];
   correct_index: number;
@@ -90,7 +93,7 @@ export default function MiniDrill({ topicId }: MiniDrillProps) {
     const supabase = getSupabaseBrowserClient();
     supabase
       .from("practice_questions")
-      .select("id, stem, choices, correct_index, explanation, topic_id, subtest, difficulty")
+      .select("id, external_key, stem, choices, correct_index, explanation, topic_id, subtest, difficulty")
       .eq("topic_id", topicId)
       .eq("active", true)
       .limit(5)
@@ -132,32 +135,38 @@ export default function MiniDrill({ topicId }: MiniDrillProps) {
       const userId = session.user.id;
       const now = new Date().toISOString();
 
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      await (supabase.from("attempts") as any).insert({
-        user_id: userId,
+      // Persist via the single audited path. The ingest_attempt_mistakes
+      // trigger (migration 0020) banks misses, captures item_exposures, and
+      // recomputes topic_stats DB-side — so no explicit recompute_topic_stats
+      // rpc is needed. question_results MUST use external_key ids and an
+      // INTEGER `correct` (the trigger casts ->>'correct' to int; a boolean
+      // threw and silently dropped every mini-drill attempt).
+      const subtest = (questions[0]?.subtest ?? null) as AsvabSubtest | null;
+      const attemptPayload: AttemptPayload = {
+        client_attempt_id: crypto.randomUUID(),
         variant_code: "subtest_drill",
         source: "mini_drill",
+        subtest,
         topic_id: topicId,
         started_at: now,
         completed_at: now,
         duration_seconds: 0,
         question_count: questions.length,
         correct_count: correctCount,
-        results_by_subtest: {},
-        results_by_topic: { [topicId]: { correct: correctCount, total: questions.length } },
+        afqt_estimate: null,
+        results_by_subtest: subtest
+          ? { [subtest]: { seen: questions.length, correct: correctCount } }
+          : {},
+        results_by_topic: { [topicId]: { seen: questions.length, correct: correctCount } },
         question_results: questions.map((q, i) => ({
-          question_id: q.id,
-          selected: answers[i],
-          correct: answers[i] === q.correct_index,
+          question_id: q.external_key,
+          selected: answers[i] ?? null,
+          correct: q.correct_index,
           topic_id: q.topic_id,
+          is_correct: answers[i] === q.correct_index,
         })),
-      });
-
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      await (supabase as any).rpc("recompute_topic_stats", {
-        p_user_id: userId,
-        p_topic_ids: [topicId],
-      });
+      };
+      await saveAttempt(attemptPayload, userId);
 
       const pct = Math.round((correctCount / questions.length) * 100);
       // eslint-disable-next-line @typescript-eslint/no-explicit-any

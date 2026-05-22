@@ -21,6 +21,7 @@
  *     posterior >= 0.55 AND seen >= 4     → 'developing'
  *     else                                → 'weak'
  */
+import * as Sentry from "@sentry/nextjs";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import type { Attempt, AttemptPayload, TopicStats } from "@/types";
 
@@ -240,7 +241,16 @@ export async function saveAttempt(
         attemptId: (row?.id as string) ?? undefined,
         profile,
       };
-    } catch {
+    } catch (err) {
+      // A logged-in user's attempt failed to persist remotely. This is the
+      // exact silent failure that hid the Daily Challenge ingest bug for ~9
+      // days — surface it (Sentry + console) before falling through to local
+      // persistence so we don't lose the attempt but DO get alerted.
+      console.error("[saveAttempt] remote insert failed for authed user; falling back to localStorage:", err);
+      Sentry.captureException(err, {
+        tags: { area: "saveAttempt", outcome: "remote_insert_failed" },
+        extra: { variant_code: attempt.variant_code, source: attempt.source },
+      });
       // Fall through to local persistence so we don't lose the attempt.
     }
   }

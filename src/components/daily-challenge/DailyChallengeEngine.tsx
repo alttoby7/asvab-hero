@@ -3,6 +3,7 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { loadQuestionPool } from "@/lib/practice/sampler";
+import { saveAttempt } from "@/lib/practice/profile-sync";
 import { scoreBySubtest, scoreByTopic, estimateAFQT, totalCorrect } from "@/lib/test-scorer";
 import type { PracticeQuestion, UserAnswer, TopicStats, AttemptPayload } from "@/types";
 import QuestionCard from "@/components/practice-test/QuestionCard";
@@ -21,10 +22,6 @@ interface ChallengeRow {
   question_ids: string[];
   correct_count: number | null;
   streak_after_completion: number | null;
-}
-
-function generateClientAttemptId(): string {
-  return `daily_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
 }
 
 function isYesterday(dateStr: string | null): boolean {
@@ -328,7 +325,10 @@ export default function DailyChallengeEngine({
     }
 
     const attemptPayload: AttemptPayload = {
-      client_attempt_id: generateClientAttemptId(),
+      // The daily-challenge row id is a stable uuid → re-firing completion is
+      // idempotent under attempts' unique(user_id, client_attempt_id). Must be
+      // a valid uuid: attempts.client_attempt_id is a uuid column.
+      client_attempt_id: challengeIdRef.current ?? crypto.randomUUID(),
       variant_code: "daily_challenge",
       source: "daily_challenge",
       subtest: null,
@@ -344,14 +344,12 @@ export default function DailyChallengeEngine({
       question_results: questionResults,
     };
 
-    try {
-      // The ingest_attempt_mistakes trigger on `attempts` (migration 0017)
-      // recomputes topic_stats AND banks missed questions DB-side on insert,
-      // so no client-side recompute_topic_stats call is needed here.
-      await sb
-        .from("attempts")
-        .insert({ user_id: userId, ...attemptPayload, synced_from_local: false });
-    } catch { /* non-blocking */ }
+    // Persist via the single audited path. saveAttempt inserts into `attempts`,
+    // whose ingest_attempt_mistakes trigger (migration 0020) banks missed
+    // questions, captures item_exposures, and recomputes topic_stats DB-side.
+    // saveAttempt now surfaces remote failures to Sentry (no more silent swallow,
+    // which is what hid this ingest bug). Non-blocking for the streak UX.
+    await saveAttempt(attemptPayload, userId);
   }, [questions, answers, userId, streakCount, lastChallengeCompletedOn]);
 
   useEffect(() => {

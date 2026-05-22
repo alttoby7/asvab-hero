@@ -1,0 +1,1328 @@
+[
+  {
+    "external_key": "MC-B16-001",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Which type of friction is generally GREATER for the same two surfaces?",
+    "choices": [
+      "Kinetic (sliding) friction",
+      "Static (starting) friction",
+      "They are always exactly equal",
+      "Rolling friction"
+    ],
+    "correct_index": 1,
+    "explanation": "Static friction (the friction that must be overcome to START an object moving) is generally greater than kinetic friction (the friction once it is already sliding). That is why it takes more force to begin pushing a heavy box than to keep it moving. Choice A is the smaller of the two. Choice C is false; the two values differ for most surfaces. Choice D, rolling friction, is typically smaller than both static and kinetic sliding friction.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::static-vs-kinetic"
+  },
+  {
+    "external_key": "MC-B16-002",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Adding oil between two metal surfaces that rub together will MOST directly:",
+    "choices": [
+      "Increase friction",
+      "Have no effect on friction",
+      "Increase the weight of the object",
+      "Reduce friction"
+    ],
+    "correct_index": 3,
+    "explanation": "A lubricant such as oil reduces friction by separating the surfaces so they slide more easily. Choice A is the opposite of what a lubricant does. Choice C is wrong because adding a thin film of oil does not meaningfully change the object's weight, and weight is not the point of lubrication. Choice B is wrong because lubrication clearly changes (lowers) the friction.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::reducing-friction"
+  },
+  {
+    "external_key": "MC-B16-003",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "When an object rests on a table and is not moving, the forces acting on it are:",
+    "choices": [
+      "Unbalanced, with a net downward force",
+      "Balanced, with a net upward force",
+      "Balanced, so the net force is zero",
+      "Always zero, since nothing is touching it"
+    ],
+    "correct_index": 2,
+    "explanation": "An object at rest is in equilibrium: the downward weight is balanced by the upward support (normal) force from the table, so the net force is zero. Choice A is wrong because a net downward force would make it accelerate down. Choice B is contradictory; balanced forces give a net of zero, not a net upward force. Choice D is wrong because real forces (weight and the table's support) are present and acting.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::equilibrium"
+  },
+  {
+    "external_key": "MC-B16-004",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "What is the difference between an object's weight and its mass?",
+    "choices": [
+      "They are the same thing",
+      "Weight measures the amount of matter; mass is the pull of gravity",
+      "Mass measures the amount of matter; weight is the force of gravity on that matter",
+      "Mass changes with location but weight never does"
+    ],
+    "correct_index": 2,
+    "explanation": "Mass is the amount of matter in an object and stays the same everywhere. Weight is the force of gravity acting on that mass, so weight changes if gravity changes (for example, on the Moon). Choice A is wrong because they are distinct quantities. Choice B reverses the definitions. Choice D is backward: mass stays constant while weight changes with location.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::weight-vs-mass"
+  },
+  {
+    "external_key": "MC-B16-005",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Pressure is defined as:",
+    "choices": [
+      "Force multiplied by area",
+      "Area divided by force",
+      "Force divided by area",
+      "Force multiplied by distance"
+    ],
+    "correct_index": 2,
+    "explanation": "Pressure equals force divided by area (P = F/A). The same force spread over a smaller area produces greater pressure. Choice A multiplies instead of divides. Choice B inverts the correct ratio. Choice D describes work (force times distance), not pressure.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::pressure-basics"
+  },
+  {
+    "external_key": "MC-B16-006",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Replacing a sliding contact with ball bearings reduces friction mainly because:",
+    "choices": [
+      "Rolling friction is generally less than sliding friction",
+      "Bearings increase the weight on the surface",
+      "Bearings increase the contact area",
+      "Rolling friction is always larger than sliding friction"
+    ],
+    "correct_index": 0,
+    "explanation": "Ball bearings let parts roll rather than slide, and rolling friction is generally much less than sliding friction, so the parts move more freely. Choice B is wrong because adding bearings does not meaningfully add weight, and more weight would raise friction anyway. Choice C is wrong because bearings reduce, not increase, effective contact. Choice D states the opposite of the true relationship.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::reducing-friction"
+  },
+  {
+    "external_key": "MC-B16-007",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Which surface pairing would produce the GREATEST friction?",
+    "choices": [
+      "Ice on ice",
+      "Rubber on dry concrete",
+      "Oiled steel on steel",
+      "Wet tile on smooth plastic"
+    ],
+    "correct_index": 1,
+    "explanation": "Rubber on dry concrete has a high friction (high traction), which is why tires grip the road. Choice A (ice on ice) is very slippery, with low friction. Choice C is lubricated, lowering friction. Choice D involves wet, smooth surfaces, which also reduce friction.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::factors-surface"
+  },
+  {
+    "external_key": "MC-B16-008",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Two people push on a stationary crate from opposite sides with equal force. The crate:",
+    "choices": [
+      "Accelerates toward the stronger pusher",
+      "Stays still because the forces are balanced",
+      "Moves at constant speed forever",
+      "Lifts off the floor"
+    ],
+    "correct_index": 1,
+    "explanation": "Equal and opposite pushes cancel, producing a net force of zero, so the crate remains in equilibrium and does not move. Choice A is wrong because the forces are equal, so neither pusher wins. Choice C describes motion that would require an existing velocity, but the crate starts at rest. Choice D is wrong because horizontal pushes do not lift the crate vertically.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::equilibrium"
+  },
+  {
+    "external_key": "MC-B16-009",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Friction between two surfaces acts in a direction that:",
+    "choices": [
+      "Helps the motion along",
+      "Opposes the motion or attempted motion",
+      "Is always straight down",
+      "Is always straight up"
+    ],
+    "correct_index": 1,
+    "explanation": "Friction always acts opposite to the direction of motion (or attempted motion), resisting sliding. Choice A is wrong because friction resists rather than aids motion. Choices C and D are wrong because friction acts along the contact surface, not strictly vertically; the surface could be horizontal, vertical, or sloped.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::friction-direction"
+  },
+  {
+    "external_key": "MC-B16-010",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A box weighs 200 newtons and sits on a flat floor. The coefficient of static friction is 0.4. About how much horizontal force is needed to JUST start it sliding?",
+    "choices": [
+      "50 N",
+      "80 N",
+      "200 N",
+      "500 N"
+    ],
+    "correct_index": 1,
+    "explanation": "Maximum static friction equals the coefficient times the normal force. On a flat floor the normal force equals the weight (200 N), so friction = 0.4 x 200 = 80 N, and you must apply just over 80 N to start sliding. Choice A divides instead of using the right product. Choice C mistakes the weight for the friction force. Choice D divides weight by the coefficient (200 / 0.4) instead of multiplying.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::friction-calc"
+  },
+  {
+    "external_key": "MC-B16-011",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A force of 300 N is spread evenly over an area of 6 square meters. What is the pressure?",
+    "choices": [
+      "50 pascals",
+      "300 pascals",
+      "1,800 pascals",
+      "0.02 pascals"
+    ],
+    "correct_index": 0,
+    "explanation": "Pressure = force / area = 300 N / 6 m^2 = 50 pascals. Choice B simply repeats the force without dividing. Choice C multiplies force by area (300 x 6) instead of dividing. Choice D divides area by force (6 / 300), inverting the formula.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::pressure-calc"
+  },
+  {
+    "external_key": "MC-B16-012",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A sharp knife cuts more easily than a dull one because the sharp edge:",
+    "choices": [
+      "Applies less total force",
+      "Concentrates the force over a smaller area, raising pressure",
+      "Reduces the friction of the food",
+      "Has more mass behind it"
+    ],
+    "correct_index": 1,
+    "explanation": "Because pressure = force / area, a thin sharp edge has a tiny contact area, so the same force produces much higher pressure and cuts more easily. Choice A is wrong because the total force can be the same; only the area changes. Choice C confuses cutting with friction reduction. Choice D is wrong because mass is not what makes a sharp edge cut better than a dull one.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::pressure-basics"
+  },
+  {
+    "external_key": "MC-B16-013",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "If the same crate is pushed onto a surface with a higher coefficient of friction (everything else equal), the force needed to slide it will:",
+    "choices": [
+      "Decrease",
+      "Stay exactly the same",
+      "Increase",
+      "Drop to zero"
+    ],
+    "correct_index": 2,
+    "explanation": "Friction force equals the coefficient of friction times the normal force, so a higher coefficient means more friction and a larger push is required. Choice A is the opposite. Choice B is wrong because changing the coefficient changes the friction. Choice D is wrong because friction does not disappear; it grows.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::factors-normal"
+  },
+  {
+    "external_key": "MC-B16-014",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A wide tractor tire and a narrow bicycle tire carry the same load. The wide tire exerts LESS pressure on the ground because:",
+    "choices": [
+      "It carries less weight",
+      "The same force is spread over a larger contact area",
+      "Wide tires reduce the force of gravity",
+      "Pressure increases with contact area"
+    ],
+    "correct_index": 1,
+    "explanation": "Pressure = force / area. Spreading the same load over a larger contact area lowers the pressure, which is why wide tires sink less into soft ground. Choice A is wrong because the load is stated to be the same. Choice C is wrong because tire width does not change gravity. Choice D states the relationship backward; larger area means lower pressure, not higher.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::pressure-calc"
+  },
+  {
+    "external_key": "MC-B16-015",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "An object hangs motionless from a single rope. If the object weighs 150 N, the tension in the rope is:",
+    "choices": [
+      "0 N",
+      "75 N",
+      "150 N",
+      "300 N"
+    ],
+    "correct_index": 2,
+    "explanation": "Because the object is in equilibrium (not accelerating), the upward rope tension must exactly balance the 150 N downward weight, so tension = 150 N. Choice A would mean no support at all, and the object would fall. Choice B halves the weight without reason. Choice D doubles it, which would accelerate the object upward.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::tension-equilibrium"
+  },
+  {
+    "external_key": "MC-B16-016",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "On Earth a wrench has a mass of 2 kg and a weight of about 20 N. Taken to the Moon, where gravity is weaker, the wrench's:",
+    "choices": [
+      "Mass and weight both stay 2 kg and 20 N",
+      "Mass stays 2 kg but its weight becomes less than 20 N",
+      "Mass becomes less than 2 kg but weight stays 20 N",
+      "Mass and weight both increase"
+    ],
+    "correct_index": 1,
+    "explanation": "Mass is the amount of matter and does not change with location, so it stays 2 kg. Weight is the force of gravity, and the Moon's weaker gravity makes the wrench weigh less than 20 N. Choice A is wrong because weight decreases on the Moon. Choice C is wrong because mass does not change. Choice D is wrong because the weaker Moon gravity lowers weight, not raises it.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::weight-vs-mass"
+  },
+  {
+    "external_key": "MC-B16-017",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "Two equal forces of 40 N each pull on a ring, one to the east and one to the west. The net force on the ring is:",
+    "choices": [
+      "0 N",
+      "40 N east",
+      "40 N west",
+      "80 N"
+    ],
+    "correct_index": 0,
+    "explanation": "Equal forces in opposite directions cancel, so the net force is zero and the ring stays in equilibrium. Choice B and Choice C wrongly pick one direction as if it dominates, but the forces are equal. Choice D adds the magnitudes as if they pointed the same way; opposite directions subtract to zero.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::net-force"
+  },
+  {
+    "external_key": "MC-B16-018",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "For a given pair of dry, hard surfaces, the friction force is best described as depending on:",
+    "choices": [
+      "The size of the contact area",
+      "How hard the surfaces press together (the normal force) and how rough they are",
+      "The color of the surfaces",
+      "Only the speed of sliding"
+    ],
+    "correct_index": 1,
+    "explanation": "For ideal dry surfaces, friction depends on the normal force pressing the surfaces together and on the roughness of the surfaces (the coefficient of friction), not on the apparent contact area. Choice A is a common misconception; contact area does not change ideal friction. Choice C has no effect on friction. Choice D is wrong because friction does not depend mainly on speed for these surfaces.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::factors-normal"
+  },
+  {
+    "external_key": "MC-B16-019",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "When two gears are meshed together (their teeth interlock directly), they turn:",
+    "choices": [
+      "In the same direction",
+      "Without turning at all",
+      "At the same speed always",
+      "In opposite directions"
+    ],
+    "correct_index": 3,
+    "explanation": "Two directly meshed gears always rotate in opposite directions, because where the teeth touch they push each other in opposite ways. Choice A describes belt or chain drives, not directly meshed gears. Choice C is wrong because meshed gears of different sizes turn at different speeds. Choice B is wrong because meshed gears do turn each other.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::direction"
+  },
+  {
+    "external_key": "MC-B16-020",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "In a gear system, the gear that supplies the power and starts the motion is called the:",
+    "choices": [
+      "Driven gear",
+      "Idler gear",
+      "Driver gear",
+      "Free gear"
+    ],
+    "correct_index": 2,
+    "explanation": "The driver gear is the one connected to the power source that turns first and drives the rest of the system. Choice A, the driven gear, is the output gear that receives motion. Choice B, an idler gear, sits between others mainly to change direction. Choice D is not a standard gear term.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::driver-driven"
+  },
+  {
+    "external_key": "MC-B16-021",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "Two pulleys connected by a belt (not crossed) will rotate:",
+    "choices": [
+      "In opposite directions",
+      "Only if they are the same size",
+      "At the same speed regardless of size",
+      "In the same direction"
+    ],
+    "correct_index": 3,
+    "explanation": "An open (uncrossed) belt or chain drive makes both pulleys turn in the same direction, since the belt pulls the same way around each. Choice A describes directly meshed gears, not a belt drive. Choice C is wrong because different-sized pulleys spin at different speeds. Choice B is wrong because a belt connects pulleys of any sizes.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::belt-chain"
+  },
+  {
+    "external_key": "MC-B16-022",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "A small gear driving a large gear will cause the large gear to turn:",
+    "choices": [
+      "Faster than the small gear, with less torque",
+      "At exactly the same speed",
+      "Slower than the small gear, with more torque",
+      "In the same direction as the small gear"
+    ],
+    "correct_index": 2,
+    "explanation": "A small gear driving a larger gear trades speed for torque: the large gear turns more slowly but with greater turning force (torque). Choice A reverses the tradeoff. Choice B is wrong because different sizes give different speeds. Choice D is wrong because directly meshed gears turn in opposite directions.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::speed-torque"
+  },
+  {
+    "external_key": "MC-B16-023",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "What is the main purpose of an idler gear placed between a driver and a driven gear?",
+    "choices": [
+      "To change the gear ratio dramatically",
+      "To stop the system from turning",
+      "To remove all friction",
+      "To make the driven gear turn the same direction as the driver"
+    ],
+    "correct_index": 3,
+    "explanation": "An idler gear reverses direction once more, so the driven gear ends up turning the same direction as the driver; it does not change the overall speed ratio. Choice A is wrong because an idler does not change the final speed ratio between driver and driven. Choice C is false; gears cannot remove all friction. Choice B is wrong because an idler still transmits motion.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::idler"
+  },
+  {
+    "external_key": "MC-B16-024",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "A wheel-and-axle works as a simple machine. Turning the large wheel to rotate the small axle gives you:",
+    "choices": [
+      "A reduction in distance moved by the wheel",
+      "Less force than you put in",
+      "No change in force or speed",
+      "A mechanical advantage (more output force)"
+    ],
+    "correct_index": 3,
+    "explanation": "When effort is applied to the large wheel and the load is on the small axle, the wheel-and-axle multiplies force, giving a mechanical advantage (like a doorknob or steering wheel). Choice B is wrong; this arrangement increases output force. Choice C is wrong because a force/speed tradeoff does occur. Choice A is wrong because the large wheel moves a greater distance, which is the trade for more force.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::wheel-axle"
+  },
+  {
+    "external_key": "MC-B16-025",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "Three gears are meshed in a row: A drives B, and B drives C. If gear A turns clockwise, gear C turns:",
+    "choices": [
+      "Clockwise",
+      "Counterclockwise",
+      "It does not turn",
+      "At the same speed as B"
+    ],
+    "correct_index": 0,
+    "explanation": "Each meshed pair reverses direction. A clockwise reverses B to counterclockwise, and B counterclockwise reverses C back to clockwise. With an odd number of gears in a line, the last gear turns the same way as the first. Choice B would be correct only with an even number of gears. Choice C is wrong because the gears do transmit motion. Choice D is about speed, not direction, and need not match.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::direction"
+  },
+  {
+    "external_key": "MC-B16-026",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "A large gear driving a small gear makes the small gear turn:",
+    "choices": [
+      "Slower, with more torque",
+      "At the same speed",
+      "Faster, with less torque",
+      "Backward then forward repeatedly"
+    ],
+    "correct_index": 2,
+    "explanation": "When a large gear drives a small one, the small gear spins faster but delivers less torque. This is the speed-for-torque tradeoff in reverse from a small-driving-large setup. Choice A describes a small gear driving a large one. Choice B is wrong because different sizes give different speeds. Choice D is not how steadily meshed gears behave.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::speed-torque"
+  },
+  {
+    "external_key": "MC-B16-027",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "On a bicycle, the chain connects the front sprocket to the rear sprocket. The two sprockets turn:",
+    "choices": [
+      "In opposite directions",
+      "At identical speeds always",
+      "Only when coasting",
+      "In the same direction"
+    ],
+    "correct_index": 3,
+    "explanation": "A chain drive, like a belt drive, makes both sprockets rotate in the same direction. Choice A describes directly meshed gears, not a chain. Choice C is wrong because the sprockets turn together while pedaling, not only when coasting. Choice B is wrong because different-sized sprockets turn at different speeds.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::belt-chain"
+  },
+  {
+    "external_key": "MC-B16-028",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "A driver gear has 10 teeth and the driven gear has 30 teeth. For every one full turn of the driven gear, the driver gear makes:",
+    "choices": [
+      "3 turns",
+      "1 turn",
+      "30 turns",
+      "10 turns"
+    ],
+    "correct_index": 0,
+    "explanation": "The number of turns is inversely proportional to teeth. The driven gear (30 teeth) is three times bigger, so the small driver (10 teeth) makes 30/10 = 3 turns for each single turn of the driven gear. Choice B would be true only for equal-size gears. Choice C and Choice D simply copy a tooth count rather than computing the ratio.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::turns-ratio"
+  },
+  {
+    "external_key": "MC-B16-029",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "A driver gear with 12 teeth turns at 60 revolutions per minute and meshes with a driven gear of 24 teeth. The driven gear turns at:",
+    "choices": [
+      "120 rpm",
+      "48 rpm",
+      "60 rpm",
+      "30 rpm"
+    ],
+    "correct_index": 3,
+    "explanation": "Speed is inversely proportional to teeth: driven speed = driver speed x (driver teeth / driven teeth) = 60 x (12/24) = 30 rpm. The larger driven gear turns slower. Choice A doubles the speed, which would be the case if the driven gear were smaller. Choice C ignores the size difference. Choice B uses an incorrect ratio.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::rpm-ratio"
+  },
+  {
+    "external_key": "MC-B16-030",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "Two meshed gears have a gear ratio of 4 to 1 (driven to driver). Compared with the input, the output provides:",
+    "choices": [
+      "More speed and less torque",
+      "The same torque and speed",
+      "More speed and more torque",
+      "More torque and less speed"
+    ],
+    "correct_index": 3,
+    "explanation": "A 4-to-1 reduction (large driven gear) multiplies torque about four times while cutting output speed to one quarter. You trade speed for force. Choice A describes a speed-increasing (overdrive) setup, the opposite. Choice C is impossible; you cannot gain both speed and torque for free. Choice B ignores the gear ratio entirely.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::ratio-tradeoff"
+  },
+  {
+    "external_key": "MC-B16-031",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "A driver gear has 20 teeth and the driven gear has 40 teeth. For every two full turns of the driver gear, the driven gear makes:",
+    "choices": [
+      "Half a turn",
+      "2 turns",
+      "4 turns",
+      "1 turn"
+    ],
+    "correct_index": 3,
+    "explanation": "The driven gear (40 teeth) is twice as large, so it turns half as fast as the driver. Two turns of the driver produce 2 x (20/40) = 1 turn of the driven gear. Choice B ignores the size difference. Choice C inverts the ratio. Choice A is the result for only one turn of the driver, not two.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::turns-ratio"
+  },
+  {
+    "external_key": "MC-B16-032",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "A wheel-and-axle has a wheel of radius 20 cm and an axle of radius 4 cm. Applying effort at the wheel to lift a load on the axle gives an ideal mechanical advantage of:",
+    "choices": [
+      "5",
+      "0.2",
+      "16",
+      "24"
+    ],
+    "correct_index": 0,
+    "explanation": "The ideal mechanical advantage of a wheel-and-axle is the wheel radius divided by the axle radius: 20 / 4 = 5. Choice B inverts the ratio (axle over wheel). Choice C multiplies the radii (20 x 4 is not even 16; this is just a distractor value). Choice D adds the radii (20 + 4) instead of dividing.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::wheel-axle"
+  },
+  {
+    "external_key": "MC-B16-033",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "An engineer wants a fan to spin FASTER than the motor. The motor's gear should be:",
+    "choices": [
+      "Larger than the fan's gear",
+      "Smaller than the fan's gear",
+      "The same size as the fan's gear",
+      "Connected with an idler only"
+    ],
+    "correct_index": 0,
+    "explanation": "To make the driven (fan) gear spin faster, the driver (motor) gear must be larger so the smaller fan gear turns more times per motor revolution. Choice B would make the fan turn slower. Choice C would give equal speeds. Choice D, an idler, changes direction but not the overall speed ratio.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::ratio-tradeoff"
+  },
+  {
+    "external_key": "MC-B16-034",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "Gear A (driver, 15 teeth) meshes with Gear B (driven, 45 teeth). What is the gear ratio of driven to driver?",
+    "choices": [
+      "1 to 3",
+      "1 to 1",
+      "3 to 1",
+      "45 to 1"
+    ],
+    "correct_index": 2,
+    "explanation": "The gear ratio of driven to driver is 45 to 15, which simplifies to 3 to 1. Choice A is the inverse (driver to driven). Choice B would require equal teeth. Choice D uses the raw tooth count without simplifying against the 15-tooth driver.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::teeth-ratio"
+  },
+  {
+    "external_key": "MC-B16-035",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "An inclined plane (ramp) makes it easier to raise a load because it:",
+    "choices": [
+      "Removes the weight of the load",
+      "Reduces the load's mass",
+      "Increases gravity in your favor",
+      "Lets you apply a smaller force over a longer distance"
+    ],
+    "correct_index": 3,
+    "explanation": "A ramp trades distance for force: you push with a smaller force but over a longer path, doing the same total work to raise the load. Choice A is wrong because the weight is unchanged. Choice C is wrong because gravity is constant. Choice B is wrong because mass does not change on a ramp.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::ramp-concept"
+  },
+  {
+    "external_key": "MC-B16-036",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "A wedge (such as an axe head or doorstop) is essentially:",
+    "choices": [
+      "A type of lever",
+      "An inclined plane that moves",
+      "A wheel-and-axle",
+      "A fixed pulley"
+    ],
+    "correct_index": 1,
+    "explanation": "A wedge is a moving inclined plane (often two inclined planes back to back) used to split or hold; the user moves it into the work. Choice A confuses it with a lever. Choice C and Choice D are entirely different simple machines, not wedges.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::wedge-screw"
+  },
+  {
+    "external_key": "MC-B16-037",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "A screw can be thought of as which simple machine wrapped around a cylinder?",
+    "choices": [
+      "A lever",
+      "A pulley",
+      "An inclined plane",
+      "A wheel-and-axle"
+    ],
+    "correct_index": 2,
+    "explanation": "A screw is an inclined plane wrapped in a spiral around a shaft; its threads are the slope. Choice A, a lever, pivots on a fulcrum and is unrelated. Choice B, a pulley, uses a rope over a wheel. Choice D, a wheel-and-axle, is a different machine, though a screwdriver handle uses that principle to turn the screw.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::wedge-screw"
+  },
+  {
+    "external_key": "MC-B16-038",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "Pascal's principle states that pressure applied to a confined fluid is:",
+    "choices": [
+      "Lost as heat",
+      "Reduced as it travels",
+      "Only felt at the point of contact",
+      "Transmitted equally throughout the fluid"
+    ],
+    "correct_index": 3,
+    "explanation": "Pascal's principle says pressure applied to an enclosed fluid is transmitted undiminished and equally to every part of the fluid and the container walls. This is the basis of hydraulic systems. Choice A is wrong; the pressure is transmitted, not lost to heat. Choice C is wrong because the pressure spreads throughout. Choice B is wrong because the pressure is not reduced in transmission.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::pascal"
+  },
+  {
+    "external_key": "MC-B16-039",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "A hydraulic system can multiply force because:",
+    "choices": [
+      "The output piston is always smaller",
+      "Liquids weigh less than solids",
+      "The fluid removes friction completely",
+      "The output piston has a larger area than the input piston"
+    ],
+    "correct_index": 3,
+    "explanation": "In a hydraulic press the same pressure acts on a larger output piston, and since force equals pressure times area, the bigger area produces a bigger force. Choice B is irrelevant to force multiplication. Choice C is false; hydraulics do not remove friction. Choice A is backward; the output piston is larger, not smaller, to gain force.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::hydraulic-concept"
+  },
+  {
+    "external_key": "MC-B16-040",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "Compared with lifting a load straight up, a longer, more gradual ramp requires:",
+    "choices": [
+      "More force",
+      "No force at all",
+      "Exactly the same force",
+      "Less force"
+    ],
+    "correct_index": 3,
+    "explanation": "A longer, gentler ramp has a higher mechanical advantage (length divided by height), so it requires less force to move the same load up, though over a greater distance. Choice A is the opposite. Choice C ignores the benefit of the ramp. Choice B is impossible; some force is always needed against gravity and friction.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::ramp-concept"
+  },
+  {
+    "external_key": "MC-B16-041",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "In a hydraulic car lift, you press a small piston and a large piston rises to lift the car. The large piston moves:",
+    "choices": [
+      "A greater distance than the small piston",
+      "Exactly the same distance",
+      "A shorter distance than the small piston",
+      "Backward"
+    ],
+    "correct_index": 2,
+    "explanation": "Hydraulics multiply force but trade off distance: the large output piston moves a shorter distance than the small input piston, just as a ramp trades force for distance. Choice A reverses the tradeoff. Choice B ignores the area difference. Choice D is wrong because both pistons move in coordinated directions, not backward.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::hydraulic-concept"
+  },
+  {
+    "external_key": "MC-B16-042",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "A ramp is 12 meters long and rises to a height of 3 meters. Its ideal mechanical advantage is:",
+    "choices": [
+      "9",
+      "3",
+      "4",
+      "0.25"
+    ],
+    "correct_index": 2,
+    "explanation": "The ideal mechanical advantage of an inclined plane is its length divided by its height: 12 / 3 = 4. Choice B just repeats the height. Choice A subtracts (12 - 3) instead of dividing. Choice D inverts the ratio (height over length).",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::ramp-calc"
+  },
+  {
+    "external_key": "MC-B16-043",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "A 600 N barrel is rolled up a frictionless ramp with a mechanical advantage of 3. The effort force needed is about:",
+    "choices": [
+      "200 N",
+      "300 N",
+      "600 N",
+      "1,800 N"
+    ],
+    "correct_index": 0,
+    "explanation": "With a mechanical advantage of 3, the required effort equals the load divided by the MA: 600 / 3 = 200 N. Choice B halves the load instead of dividing by 3. Choice C ignores the ramp's advantage. Choice D multiplies the load by 3 instead of dividing.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::ramp-calc"
+  },
+  {
+    "external_key": "MC-B16-044",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "In a hydraulic press, the input piston has an area of 2 square cm and the output piston has an area of 20 square cm. A 50 N push on the input produces an output force of:",
+    "choices": [
+      "5 N",
+      "50 N",
+      "500 N",
+      "1,000 N"
+    ],
+    "correct_index": 2,
+    "explanation": "The hydraulic mechanical advantage is the area ratio: 20 / 2 = 10. The output force is 50 N x 10 = 500 N. Choice A divides instead of multiplies. Choice B ignores the area difference. Choice D multiplies by the output area (50 x 20) instead of by the area ratio.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::hydraulic-calc"
+  },
+  {
+    "external_key": "MC-B16-045",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "Two ramps reach the same loading dock height. Ramp X is short and steep; Ramp Y is long and gradual. Pushing the same crate up Ramp Y requires:",
+    "choices": [
+      "More force than Ramp X",
+      "The same force as Ramp X",
+      "Less force than Ramp X",
+      "No force"
+    ],
+    "correct_index": 2,
+    "explanation": "For the same height, the longer ramp (Y) has a larger length-to-height ratio, so it has more mechanical advantage and needs less force. Choice A reverses this. Choice B ignores that the ramps differ in length. Choice D is impossible because gravity still must be overcome.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::ramp-compare"
+  },
+  {
+    "external_key": "MC-B16-046",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "In a hydraulic system, the output piston has 4 times the area of the input piston. To raise the output piston 1 cm, the input piston must move:",
+    "choices": [
+      "1 cm",
+      "2 cm",
+      "4 cm",
+      "0.25 cm"
+    ],
+    "correct_index": 2,
+    "explanation": "Because the fluid volume pushed equals the volume that rises, distance is inversely proportional to area. The output force is multiplied by 4, so the input must move 4 times as far: 4 cm. Choice A ignores the volume tradeoff. Choice B uses the wrong factor. Choice D applies the ratio backward (it would mean the output piston moved farther, which is impossible here).",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::hydraulic-calc"
+  },
+  {
+    "external_key": "MC-B16-047",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "A seesaw, with the pivot in the middle and a person on each end, is an example of which lever class?",
+    "choices": [
+      "First-class lever",
+      "Second-class lever",
+      "Third-class lever",
+      "It is not a lever"
+    ],
+    "correct_index": 0,
+    "explanation": "A seesaw is a first-class lever because the fulcrum (pivot) is between the effort and the load. Choice B (second-class) puts the load between fulcrum and effort, like a wheelbarrow. Choice C (third-class) puts the effort in the middle, like tweezers. Choice D is wrong because a seesaw clearly is a lever.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::lever-classes"
+  },
+  {
+    "external_key": "MC-B16-048",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "A wheelbarrow, where the load sits between the wheel (fulcrum) and your hands (effort), is which class of lever?",
+    "choices": [
+      "First-class lever",
+      "Second-class lever",
+      "Third-class lever",
+      "Fourth-class lever"
+    ],
+    "correct_index": 1,
+    "explanation": "A wheelbarrow is a second-class lever because the load is positioned between the fulcrum (the wheel) and the effort (your hands). Choice A puts the fulcrum in the middle, like a seesaw. Choice C puts the effort in the middle, like tweezers. Choice D does not exist; there are only three lever classes.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::lever-class-second"
+  },
+  {
+    "external_key": "MC-B16-049",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "A pair of tweezers, where you squeeze in the middle to move the tips, is which class of lever?",
+    "choices": [
+      "First-class lever",
+      "Second-class lever",
+      "Third-class lever",
+      "It has no fulcrum"
+    ],
+    "correct_index": 2,
+    "explanation": "Tweezers are a third-class lever because the effort (your fingers) is applied between the fulcrum (the joined end) and the load (the tips). Choice A puts the fulcrum in the middle. Choice B puts the load in the middle. Choice D is wrong because the joined end acts as the fulcrum.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::lever-class-third"
+  },
+  {
+    "external_key": "MC-B16-050",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "A single FIXED pulley (attached overhead) gives a mechanical advantage of:",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "correct_index": 0,
+    "explanation": "A single fixed pulley only changes the direction of the force; it has a mechanical advantage of 1, so you still pull with a force equal to the load. Choice B is the value for a single movable pulley, not a fixed one. Choice C is too high for any single pulley. Choice D would mean it provides no support, which is false.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::pulley-types"
+  },
+  {
+    "external_key": "MC-B16-051",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "The main advantage of a single fixed pulley is that it:",
+    "choices": [
+      "Multiplies your force by two",
+      "Has a mechanical advantage of 4",
+      "Removes the weight of the load",
+      "Lets you pull down to lift a load up (changes direction)"
+    ],
+    "correct_index": 3,
+    "explanation": "A fixed pulley changes the direction of the applied force, letting you pull down to raise a load, which is more convenient even though it does not multiply force. Choice A describes a movable pulley. Choice C is impossible; the load's weight remains. Choice B is far too high for a single pulley.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::fixed-pulley"
+  },
+  {
+    "external_key": "MC-B16-052",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "A single MOVABLE pulley (one that rises with the load) gives an ideal mechanical advantage of:",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct_index": 1,
+    "explanation": "A single movable pulley has two rope segments supporting the load, giving an ideal mechanical advantage of 2, so you lift with about half the force. Choice A is the value for a fixed pulley. Choices C and D are too high for a single movable pulley.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::pulley-types"
+  },
+  {
+    "external_key": "MC-B16-053",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "In a block-and-tackle pulley system, the ideal mechanical advantage equals:",
+    "choices": [
+      "The number of pulleys you can see",
+      "Always exactly 2",
+      "The length of the rope",
+      "The number of rope segments supporting the load"
+    ],
+    "correct_index": 3,
+    "explanation": "The ideal mechanical advantage of a block and tackle equals the number of rope segments actually supporting the moving load (the load block). Choice A is a common error; not every pulley adds a supporting segment. Choice C confuses rope length with advantage. Choice B is wrong because the advantage depends on the rigging, not a fixed value of 2.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::block-tackle-concept"
+  },
+  {
+    "external_key": "MC-B16-054",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "The lever law for balance states that:",
+    "choices": [
+      "Effort plus effort-arm equals load plus load-arm",
+      "Effort always equals the load",
+      "Effort divided by load equals zero",
+      "Effort times effort-arm equals load times load-arm"
+    ],
+    "correct_index": 3,
+    "explanation": "A lever balances when the effort multiplied by its distance from the fulcrum equals the load multiplied by its distance: effort x effort-arm = load x load-arm. Choice A adds instead of multiplies. Choice C is meaningless for balance. Choice B is only true when the arms are equal, not in general.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::lever-law"
+  },
+  {
+    "external_key": "MC-B16-055",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "Which everyday tool is a clear example of a first-class lever?",
+    "choices": [
+      "A wheelbarrow",
+      "A pair of scissors (or a seesaw)",
+      "A pair of tweezers",
+      "A ramp"
+    ],
+    "correct_index": 1,
+    "explanation": "Scissors (and a seesaw) are first-class levers because the fulcrum sits between the effort and the load. Choice A, a wheelbarrow, is a second-class lever. Choice C, tweezers, is a third-class lever. Choice D, a ramp, is an inclined plane, not a lever at all.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::lever-classes"
+  },
+  {
+    "external_key": "MC-B16-056",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "On a seesaw, a 60 lb child sits 4 ft from the pivot. To balance, an 80 lb child must sit how far from the pivot?",
+    "choices": [
+      "3 ft",
+      "4 ft",
+      "5 ft",
+      "6 ft"
+    ],
+    "correct_index": 0,
+    "explanation": "Balance requires effort x arm = load x arm: 60 x 4 = 240, so 80 x distance = 240, giving distance = 240 / 80 = 3 ft. The heavier child sits closer. Choice B would only balance equal weights. Choice C and Choice D place the heavier child too far, which would tip the seesaw toward that child.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::lever-balance"
+  },
+  {
+    "external_key": "MC-B16-057",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A lever is used to lift a 500 N rock. The effort arm is 5 times longer than the load arm. The effort force needed (ideally) is:",
+    "choices": [
+      "100 N",
+      "500 N",
+      "2,500 N",
+      "50 N"
+    ],
+    "correct_index": 0,
+    "explanation": "With an effort arm 5 times the load arm, the mechanical advantage is 5, so effort = load / 5 = 500 / 5 = 100 N. Choice B ignores the lever advantage. Choice C multiplies by 5 instead of dividing. Choice D divides by 10 instead of 5.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::lever-law"
+  },
+  {
+    "external_key": "MC-B16-058",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A worker lifts a 400 N load using a single movable pulley (ideal). The force the worker must apply is about:",
+    "choices": [
+      "100 N",
+      "400 N",
+      "200 N",
+      "800 N"
+    ],
+    "correct_index": 2,
+    "explanation": "A single movable pulley has a mechanical advantage of 2, so the effort is half the load: 400 / 2 = 200 N. Choice A divides by 4, as if there were two movable pulleys. Choice B ignores the pulley advantage. Choice D doubles the load instead of halving it.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::movable-pulley"
+  },
+  {
+    "external_key": "MC-B16-059",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A block-and-tackle has 4 rope segments supporting the load. To lift a 600 N load (ideally), the effort needed is:",
+    "choices": [
+      "600 N",
+      "200 N",
+      "150 N",
+      "2,400 N"
+    ],
+    "correct_index": 2,
+    "explanation": "The mechanical advantage equals the 4 supporting segments, so effort = load / 4 = 600 / 4 = 150 N. Choice B divides by 3 instead of 4. Choice A ignores the mechanical advantage. Choice D multiplies by 4 instead of dividing.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::block-tackle"
+  },
+  {
+    "external_key": "MC-B16-060",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "Two weights balance on a lever. A 30 N weight is 6 cm from the fulcrum. A second weight is 9 cm from the fulcrum on the other side. The second weight is:",
+    "choices": [
+      "20 N",
+      "30 N",
+      "45 N",
+      "180 N"
+    ],
+    "correct_index": 0,
+    "explanation": "Balance means 30 x 6 = weight x 9, so 180 = weight x 9, giving weight = 180 / 9 = 20 N. The weight farther from the fulcrum is lighter. Choice B would balance only at equal arms. Choice C reverses the relationship. Choice D is the moment value (180), not the weight.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::lever-balance"
+  },
+  {
+    "external_key": "MC-B16-061",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "Which lever class always provides a mechanical advantage GREATER than 1 (output force larger than input)?",
+    "choices": [
+      "First-class lever",
+      "All lever classes equally",
+      "Third-class lever",
+      "Second-class lever"
+    ],
+    "correct_index": 3,
+    "explanation": "A second-class lever always has the load between the fulcrum and effort, so the effort arm is always longer than the load arm, giving a mechanical advantage greater than 1 (more force out). Choice A, a first-class lever, can be greater or less than 1 depending on placement. Choice C, a third-class lever, always has MA less than 1 (it trades force for speed/distance). Choice B is false because the classes differ.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::lever-class-advantage"
+  },
+  {
+    "external_key": "MC-B16-062",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A pulley system lifts a load using an effort of 50 N to move a 250 N load. Its mechanical advantage is:",
+    "choices": [
+      "5",
+      "0.2",
+      "200",
+      "300"
+    ],
+    "correct_index": 0,
+    "explanation": "Mechanical advantage equals load divided by effort: 250 / 50 = 5. Choice B inverts the ratio (effort over load). Choice C subtracts the forces (250 - 50). Choice D adds them (250 + 50).",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::block-tackle"
+  },
+  {
+    "external_key": "MC-B16-063",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "Adding a single fixed pulley at the top of a block-and-tackle, in addition to the movable pulleys, mainly serves to:",
+    "choices": [
+      "Double the mechanical advantage by itself",
+      "Cut the rope length in half",
+      "Remove the load's weight",
+      "Let the operator pull downward instead of upward"
+    ],
+    "correct_index": 3,
+    "explanation": "A fixed pulley redirects the rope so the operator can pull down (a more natural, gravity-assisted direction); by itself it adds no mechanical advantage. Choice A is wrong because a fixed pulley alone does not double the advantage. Choice C is impossible. Choice B misstates the effect; rope length relates to the number of supporting segments, not to adding a single redirect.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::fixed-pulley"
+  },
+  {
+    "external_key": "MC-B16-064",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "Gear A drives gear B, which drives gear C, all directly meshed in a line. If gear A turns clockwise, what direction does gear B turn?",
+    "choices": [
+      "Clockwise, like A",
+      "It does not turn",
+      "The same direction as C",
+      "Counterclockwise"
+    ],
+    "correct_index": 3,
+    "explanation": "Each pair of directly meshed gears turns in opposite directions, so if A turns clockwise, the gear next to it (B) must turn counterclockwise. Choice A is wrong because meshed neighbors cannot turn the same way. Choice B is wrong because B is driven by A and does turn. Choice C is wrong because C (two reversals from A) turns clockwise, opposite to B.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::direction-chain"
+  },
+  {
+    "external_key": "MC-B16-065",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "What is the difference between speed and velocity?",
+    "choices": [
+      "They are identical terms",
+      "Speed has direction; velocity does not",
+      "Velocity includes direction; speed does not",
+      "Velocity is always larger than speed"
+    ],
+    "correct_index": 2,
+    "explanation": "Velocity is speed in a specific direction (a vector), while speed is just how fast (a magnitude with no direction). Choice A is wrong because they differ in the direction aspect. Choice B reverses the definitions. Choice D is wrong because their magnitudes are the same; velocity simply adds direction.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::speed-velocity"
+  },
+  {
+    "external_key": "MC-B16-066",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "Acceleration is best defined as:",
+    "choices": [
+      "The distance an object travels",
+      "The total speed of an object",
+      "A force pushing an object",
+      "The rate at which velocity changes"
+    ],
+    "correct_index": 3,
+    "explanation": "Acceleration is the rate of change of velocity over time, including speeding up, slowing down, or changing direction. Choice A describes distance. Choice C describes a force, which causes acceleration but is not the same thing. Choice B confuses acceleration with speed.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::acceleration"
+  },
+  {
+    "external_key": "MC-B16-067",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "Ignoring air resistance, if a heavy ball and a light ball are dropped from the same height at the same time, they will:",
+    "choices": [
+      "Hit the ground at the same time",
+      "The heavy ball lands first",
+      "The light ball lands first",
+      "Neither one falls"
+    ],
+    "correct_index": 0,
+    "explanation": "Ignoring air resistance, all objects fall with the same gravitational acceleration, so both balls hit the ground at the same time regardless of mass. Choice B is a common misconception; heavier does not mean faster falling without air resistance. Choice C is also wrong for the same reason. Choice D is wrong because gravity makes both fall.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::falling"
+  },
+  {
+    "external_key": "MC-B16-068",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "Momentum of a moving object depends on its:",
+    "choices": [
+      "Color and shape",
+      "Height above the ground",
+      "Temperature only",
+      "Mass and velocity"
+    ],
+    "correct_index": 3,
+    "explanation": "Momentum equals mass times velocity, so a heavier or faster object has more momentum. Choice A has nothing to do with momentum. Choice C, temperature, does not determine momentum. Choice B, height, relates to potential energy, not momentum.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::momentum"
+  },
+  {
+    "external_key": "MC-B16-069",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "An object moving in a circle at constant speed is accelerating because:",
+    "choices": [
+      "Its speed keeps increasing",
+      "Its direction keeps changing",
+      "It has stopped moving",
+      "Its mass is changing"
+    ],
+    "correct_index": 1,
+    "explanation": "Even at constant speed, an object moving in a circle constantly changes direction, and any change in velocity (which includes direction) is acceleration, directed toward the center. Choice A is wrong because the speed is stated as constant. Choice C contradicts that it is moving. Choice D is wrong because mass does not change.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::centripetal"
+  },
+  {
+    "external_key": "MC-B16-070",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "When a ball is thrown horizontally off a cliff, the force of gravity acts:",
+    "choices": [
+      "Forward, in the direction of the throw",
+      "Straight down",
+      "Backward, opposing the throw",
+      "Upward"
+    ],
+    "correct_index": 1,
+    "explanation": "Gravity always acts straight down, pulling the ball toward the ground while it continues moving forward, producing a curved (projectile) path. Choice A is wrong because gravity does not act in the throwing direction. Choice C describes air resistance, not gravity. Choice D is wrong because gravity pulls down, not up.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::projectile"
+  },
+  {
+    "external_key": "MC-B16-071",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "An object moving at a steady, unchanging velocity has an acceleration of:",
+    "choices": [
+      "A negative value",
+      "A large positive value",
+      "Zero",
+      "Equal to its speed"
+    ],
+    "correct_index": 2,
+    "explanation": "If velocity is not changing (steady speed and direction), there is no acceleration, so acceleration is zero. Choice B and Choice A would require the velocity to be changing. Choice D confuses acceleration with speed; they are different quantities.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::zero-acceleration"
+  },
+  {
+    "external_key": "MC-B16-072",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "A car travels 150 miles in 3 hours. Its average speed is:",
+    "choices": [
+      "50 miles per hour",
+      "45 miles per hour",
+      "450 miles per hour",
+      "153 miles per hour"
+    ],
+    "correct_index": 0,
+    "explanation": "Average speed equals distance divided by time: 150 / 3 = 50 miles per hour. Choice B is an incorrect division. Choice C multiplies distance by time (150 x 3). Choice D adds distance and time (150 + 3), which mixes units and is meaningless.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::speed-calc"
+  },
+  {
+    "external_key": "MC-B16-073",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "A car speeds up from 10 m/s to 30 m/s in 5 seconds. Its average acceleration is:",
+    "choices": [
+      "4 m/s squared",
+      "20 m/s squared",
+      "6 m/s squared",
+      "40 m/s squared"
+    ],
+    "correct_index": 0,
+    "explanation": "Acceleration equals the change in velocity divided by time: (30 - 10) / 5 = 20 / 5 = 4 m/s squared. Choice B is the change in velocity (20) without dividing by time. Choice C divides the final speed by 5 incorrectly. Choice D multiplies instead of dividing.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::acceleration-calc"
+  },
+  {
+    "external_key": "MC-B16-074",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "A 4 kg object moves at 5 m/s. Its momentum is:",
+    "choices": [
+      "9 kg m/s",
+      "0.8 kg m/s",
+      "1.25 kg m/s",
+      "20 kg m/s"
+    ],
+    "correct_index": 3,
+    "explanation": "Momentum equals mass times velocity: 4 x 5 = 20 kg m/s. Choice A adds mass and velocity (4 + 5) instead of multiplying. Choice C divides velocity by mass (5 / 4). Choice B divides mass by velocity (4 / 5).",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::momentum"
+  },
+  {
+    "external_key": "MC-B16-075",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "Ignoring air resistance, an object dropped from rest falls about 10 m/s faster each second (gravity is about 10 m/s squared). After 3 seconds, its downward speed is about:",
+    "choices": [
+      "10 m/s",
+      "30 m/s",
+      "3 m/s",
+      "300 m/s"
+    ],
+    "correct_index": 1,
+    "explanation": "Speed gained equals acceleration times time: 10 x 3 = 30 m/s. Choice A is the speed after only 1 second. Choice C uses the time alone without multiplying by gravity. Choice D multiplies by 100 instead of by 3 seconds.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::falling"
+  },
+  {
+    "external_key": "MC-B16-076",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "A runner completes a 400 m lap and returns to the exact starting line. Her total distance and her displacement are:",
+    "choices": [
+      "Distance 400 m, displacement 0 m",
+      "Distance 0 m, displacement 400 m",
+      "Both 400 m",
+      "Both 0 m"
+    ],
+    "correct_index": 0,
+    "explanation": "Distance is the total path traveled (400 m), but displacement is the straight-line change in position from start to finish; since she returns to the start, displacement is 0 m. Choice B reverses the two. Choice C wrongly treats displacement as the full path. Choice D wrongly zeros out the distance, but she did travel 400 m.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::speed-velocity"
+  },
+  {
+    "external_key": "MC-B16-077",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "On level ground, a ball is thrown horizontally and at the same instant an identical ball is simply dropped from the same height. Ignoring air resistance, they hit the ground:",
+    "choices": [
+      "At the same time",
+      "The thrown ball lands much sooner",
+      "The dropped ball lands much sooner",
+      "Neither ball lands"
+    ],
+    "correct_index": 0,
+    "explanation": "Horizontal motion does not affect the time to fall; both balls have the same downward acceleration from the same height, so they land at the same time. Choice B and Choice C are common misconceptions; horizontal speed does not change fall time. Choice D is wrong because gravity brings both down.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::projectile"
+  },
+  {
+    "external_key": "MC-B16-078",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "A cyclist rides 60 km in 2 hours, then 30 km in 1 hour. Her average speed for the whole trip is:",
+    "choices": [
+      "30 km/h",
+      "45 km/h",
+      "90 km/h",
+      "20 km/h"
+    ],
+    "correct_index": 0,
+    "explanation": "Average speed is total distance divided by total time: (60 + 30) / (2 + 1) = 90 / 3 = 30 km/h. Choice B averages the two leg speeds (30 and 30... actually each leg is 30 km/h) incorrectly as if weighting differently. Choice C uses total distance without dividing by time. Choice D divides incorrectly. Note both legs are 30 km/h, so the trip average is also 30 km/h.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::speed-calc"
+  }
+]

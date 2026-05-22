@@ -4,6 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import BrandHero from "@/components/BrandHero";
 import EmailCapture from "@/components/EmailCapture";
 import AfctPracticeClient from "@/components/practice-test/AfctPracticeClient";
+import { QUESTIONS_PLUS } from "@/lib/bank-stats";
 
 export const metadata: Metadata = {
   title:
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 const faqEntries = [
   {
     q: "Is the AFCT practice test different from the ASVAB practice test?",
-    a: "No. The AFCT and the ASVAB cover the same 9 subtests with the same question types. The difference is regulatory: AFCT scores replace your previous scores on file, even if lower. This practice test uses the same 769-question bank to give you an accurate baseline before you retest.",
+    a: `No. The AFCT and the ASVAB cover the same 9 subtests with the same question types. The difference is regulatory: AFCT scores replace your previous scores on file, even if lower. This practice test uses the same ${QUESTIONS_PLUS} question bank to give you an accurate baseline before you retest.`,
   },
   {
     q: "Can I use this to estimate my GT score?",
@@ -88,7 +89,7 @@ export default function AfctPracticeTestPage() {
 
         {/* Proof strip */}
         <div className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs font-medium uppercase tracking-wider text-text-tertiary">
-          <span>769 questions</span>
+          <span>{QUESTIONS_PLUS} questions</span>
           <span className="text-navy-border">·</span>
           <span>9 subtests</span>
           <span className="text-navy-border">·</span>

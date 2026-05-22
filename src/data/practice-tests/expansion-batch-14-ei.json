@@ -1,0 +1,1073 @@
+[
+  {
+    "external_key": "EI-B14-001",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "In a series circuit, the components are connected so that the current has how many paths to flow through?",
+    "choices": [
+      "One path",
+      "Two paths",
+      "Three paths",
+      "As many paths as there are components"
+    ],
+    "correct_index": 0,
+    "explanation": "A series circuit provides a single path for current, so the same current flows through every component in turn. Two paths and three paths describe parallel arrangements, where current splits among branches. The choice of one path per component also describes a parallel circuit, not a series circuit. A series circuit has exactly one path.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-current-path"
+  },
+  {
+    "external_key": "EI-B14-002",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "In a parallel circuit, each component is connected across the same two points, so each branch receives what?",
+    "choices": [
+      "A smaller current than the source",
+      "Half the source voltage",
+      "No voltage until the next branch closes",
+      "The same voltage as the source"
+    ],
+    "correct_index": 3,
+    "explanation": "In a parallel circuit every branch connects across the same two nodes, so each branch sees the full source voltage. Branch current can differ between branches, but that is current, not voltage. Half the source voltage describes a series voltage divider, not parallel branches. Branches are independent, so one does not have to close before another gets voltage. Each parallel branch receives the same voltage as the source.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-voltage-same"
+  },
+  {
+    "external_key": "EI-B14-003",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "A circuit in which the path is complete and current can flow is called what?",
+    "choices": [
+      "An open circuit",
+      "A short circuit",
+      "A broken circuit",
+      "A closed circuit"
+    ],
+    "correct_index": 3,
+    "explanation": "A closed circuit has a complete, unbroken path, so current flows. An open circuit has a break in the path and stops current. A short circuit is an unintended low-resistance path that bypasses the load; it allows current but is a fault, not the normal complete circuit described. A broken circuit is just another name for an open circuit. The complete, current-carrying circuit is a closed circuit.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::open-closed-define"
+  },
+  {
+    "external_key": "EI-B14-004",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "What is an open circuit?",
+    "choices": [
+      "A circuit with a break that stops current flow",
+      "A circuit with a complete path for current",
+      "A circuit with two or more current paths",
+      "A circuit with an unintended low-resistance path"
+    ],
+    "correct_index": 0,
+    "explanation": "An open circuit has a break in the path, so current cannot flow. A complete path describes a closed circuit. Two or more paths describes a parallel circuit. An unintended low-resistance path describes a short circuit. An open circuit is defined by the break that stops current.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::open-closed-define"
+  },
+  {
+    "external_key": "EI-B14-005",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "A short circuit is best described as which of the following?",
+    "choices": [
+      "An unintended low-resistance path that lets current bypass the load",
+      "A break that stops all current",
+      "A circuit that uses less wire than normal",
+      "A circuit with the switch turned off"
+    ],
+    "correct_index": 0,
+    "explanation": "A short circuit is an unintended low-resistance path that lets current bypass the intended load, causing a large current. A break that stops current describes an open circuit. A short has nothing to do with using less wire. A switch turned off creates an open circuit, not a short. A short is the unintended low-resistance path.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::short-define"
+  },
+  {
+    "external_key": "EI-B14-006",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Two light bulbs are wired in series. If one bulb burns out, what happens to the other bulb?",
+    "choices": [
+      "It glows brighter",
+      "It is unaffected",
+      "It glows dimmer but stays on",
+      "It also goes out"
+    ],
+    "correct_index": 3,
+    "explanation": "In a series circuit there is only one path, so a burned-out bulb breaks that path and the other bulb also goes out. It cannot glow brighter or stay on because no current can flow. Staying lit (unaffected or dimmer) would only happen in a parallel circuit. In series, both bulbs go out.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::bulb-fails-series"
+  },
+  {
+    "external_key": "EI-B14-007",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Two light bulbs are wired in parallel. If one bulb burns out, what happens to the other bulb?",
+    "choices": [
+      "It also goes out",
+      "It glows much brighter",
+      "The whole circuit shorts out",
+      "It stays lit"
+    ],
+    "correct_index": 3,
+    "explanation": "In a parallel circuit each bulb has its own path, so one bulb burning out does not break the path of the other; it stays lit. It would only go out if they were in series. The remaining bulb does not change brightness much because it still sees the same source voltage. A burned-out bulb is an open, not a short. The other bulb stays lit.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::bulb-fails-parallel"
+  },
+  {
+    "external_key": "EI-B14-008",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "In a simple series circuit, the current measured at any point in the circuit is which of the following?",
+    "choices": [
+      "The same everywhere",
+      "Largest near the battery",
+      "Different in each component",
+      "Zero at the last component"
+    ],
+    "correct_index": 0,
+    "explanation": "Because a series circuit has only one path, the same current flows through every part of it, so current is the same everywhere. It does not get larger near the battery or shrink along the way. Current would differ between branches only in a parallel circuit. It is not zero at the last component. Series current is the same everywhere.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-current-same"
+  },
+  {
+    "external_key": "EI-B14-009",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Christmas lights where every bulb goes dark when a single bulb fails are most likely wired in what configuration?",
+    "choices": [
+      "Parallel",
+      "Series",
+      "Short circuit",
+      "Open by design"
+    ],
+    "correct_index": 1,
+    "explanation": "If one failed bulb darkens the whole string, the bulbs share a single path, which is a series circuit. In a parallel string, one failure would leave the rest lit. A short circuit is a wiring fault, not a normal lighting layout. Open by design is not a real circuit type. The all-or-nothing behavior indicates a series circuit.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::bulb-fails-series"
+  },
+  {
+    "external_key": "EI-B14-010",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Two resistors are connected in series across a battery. Compared with the current through the first resistor, the current through the second resistor is which of the following?",
+    "choices": [
+      "Twice as large",
+      "Half as large",
+      "The same",
+      "Zero"
+    ],
+    "correct_index": 2,
+    "explanation": "Series components share one path, so the same current flows through both resistors. It is not doubled or halved between them because current is not used up. It is not zero, since the circuit is complete. The current through the second resistor is the same as through the first.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-current-same"
+  },
+  {
+    "external_key": "EI-B14-011",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "A circuit has three lamps connected so that switching off one lamp leaves the other two lit at full brightness. This circuit is wired in which way?",
+    "choices": [
+      "Series",
+      "A single loop",
+      "A short circuit",
+      "Parallel"
+    ],
+    "correct_index": 3,
+    "explanation": "Because turning off one lamp leaves the others at full brightness, each lamp must have its own path across the source, which is a parallel circuit. In a series single loop, opening one lamp would break the whole circuit and the others would go dark. A short circuit is a fault, not a lamp arrangement. The independent operation indicates a parallel circuit.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-independent"
+  },
+  {
+    "external_key": "EI-B14-012",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Household outlets are wired in parallel mainly so that which of the following is true?",
+    "choices": [
+      "Total resistance increases with each device added",
+      "Current is the same in every branch",
+      "Devices must all be turned on together",
+      "Each device gets the same full voltage and can run independently"
+    ],
+    "correct_index": 3,
+    "explanation": "Parallel wiring gives every outlet the same full line voltage and lets each device run independently. Adding parallel branches decreases total resistance, not increases it. Branch currents can differ, so current is not the same in every branch. Devices do not have to be on together, which is the whole advantage. Parallel wiring gives full voltage and independent operation.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-independent"
+  },
+  {
+    "external_key": "EI-B14-013",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "When identical resistors are added in series, the total resistance of the circuit does what?",
+    "choices": [
+      "Decreases",
+      "Stays the same",
+      "Increases",
+      "Drops to zero"
+    ],
+    "correct_index": 2,
+    "explanation": "In a series circuit, resistances add, so adding more resistors increases the total resistance. Total resistance decreases only when resistors are added in parallel. It does not stay the same or fall to zero. Adding series resistors increases total resistance.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-vs-parallel-resistance"
+  },
+  {
+    "external_key": "EI-B14-014",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "When identical resistors are added in parallel, the total resistance of the circuit does what?",
+    "choices": [
+      "Increases",
+      "Stays exactly the same",
+      "Decreases",
+      "Becomes infinite"
+    ],
+    "correct_index": 2,
+    "explanation": "Adding parallel branches gives current more paths, so the total resistance decreases. Resistance increases only when resistors are added in series. It does not stay the same. Infinite resistance describes an open circuit, the opposite of adding paths. Adding parallel resistors decreases total resistance.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-vs-parallel-resistance"
+  },
+  {
+    "external_key": "EI-B14-015",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "A wire accidentally connects the two battery terminals directly with almost no resistance in between. This condition is called what, and it produces what?",
+    "choices": [
+      "An open circuit, producing no current",
+      "A short circuit, producing a very large current",
+      "A parallel circuit, producing equal branch voltages",
+      "A series circuit, producing reduced current"
+    ],
+    "correct_index": 1,
+    "explanation": "A direct, near-zero-resistance connection across the source is a short circuit, and by Ohm's law a tiny resistance produces a very large current. An open circuit is a break with no current, the opposite of this. This is a fault, not a normal parallel or series arrangement. The condition is a short circuit producing a very large current.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::short-define"
+  },
+  {
+    "external_key": "EI-B14-016",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "In a parallel circuit, how does the total current drawn from the source compare with the current in any single branch?",
+    "choices": [
+      "It equals the current in one branch",
+      "It is always less than any branch current",
+      "It is zero",
+      "It is the sum of all the branch currents"
+    ],
+    "correct_index": 3,
+    "explanation": "The current leaving the source splits among the branches, so the total source current equals the sum of all the branch currents. It is not equal to just one branch, since several branches draw current. It cannot be less than a single branch when several branches draw from the same source. It is not zero in a working circuit. Total current is the sum of the branch currents.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-current-sums"
+  },
+  {
+    "external_key": "EI-B14-017",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "A switch is placed in the single loop of a series circuit. When the switch is opened, what happens to the circuit?",
+    "choices": [
+      "Current increases",
+      "The circuit becomes open and current stops",
+      "Voltage doubles",
+      "The circuit becomes a short"
+    ],
+    "correct_index": 1,
+    "explanation": "Opening the switch breaks the single path, making the circuit open so current stops. Breaking the path cannot increase current or double voltage. An open is the opposite of a short, which is an unintended low-resistance path. Opening the switch creates an open circuit and stops the current.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::open-switch"
+  },
+  {
+    "external_key": "EI-B14-018",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Two resistors in series are connected to a 12-volt battery. The voltage measured across the first resistor is 5 volts. What is the voltage across the second resistor?",
+    "choices": [
+      "5 volts",
+      "7 volts",
+      "12 volts",
+      "17 volts"
+    ],
+    "correct_index": 1,
+    "explanation": "In a series circuit the source voltage divides among the components and the drops add up to the source: 12 - 5 = 7 volts across the second resistor. The choice 5 volts wrongly assumes both drops are equal. The choice 12 volts ignores the first drop, as if the second resistor got the whole source. The choice 17 volts adds instead of subtracting. The second resistor drops 7 volts.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-voltage-divides"
+  },
+  {
+    "external_key": "EI-B14-019",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "What is the main function of a resistor in a circuit?",
+    "choices": [
+      "To store electric charge",
+      "To allow current in only one direction",
+      "To increase voltage",
+      "To limit or control the flow of current"
+    ],
+    "correct_index": 3,
+    "explanation": "A resistor opposes current, so it limits or controls how much current flows. Storing charge is the job of a capacitor. Allowing current in only one direction is the job of a diode. Increasing voltage is done by a transformer or step-up circuit. A resistor limits current.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::resistor-function"
+  },
+  {
+    "external_key": "EI-B14-020",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "What is the main function of a capacitor?",
+    "choices": [
+      "To store electrical energy in an electric field",
+      "To convert AC to DC",
+      "To amplify a signal",
+      "To resist the flow of current"
+    ],
+    "correct_index": 0,
+    "explanation": "A capacitor stores electrical energy in an electric field between its plates. Converting AC to DC is the job of a diode in a rectifier. Amplifying a signal is the job of a transistor. Resisting current is the job of a resistor. A capacitor stores energy in an electric field.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::capacitor-function"
+  },
+  {
+    "external_key": "EI-B14-021",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A diode is a component that does what?",
+    "choices": [
+      "Allows current to flow in only one direction",
+      "Stores charge between two plates",
+      "Steps voltage up or down",
+      "Splits current into branches"
+    ],
+    "correct_index": 0,
+    "explanation": "A diode allows current to flow in only one direction, acting like a one-way valve. Storing charge between plates describes a capacitor. Stepping voltage up or down is done by a transformer. Splitting current into branches is what a parallel junction does, not a single component. A diode permits one-way current.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::diode-function"
+  },
+  {
+    "external_key": "EI-B14-022",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A transistor is commonly used to do which of the following?",
+    "choices": [
+      "Store energy in a magnetic field",
+      "Convert AC to DC only",
+      "Provide a fixed resistance",
+      "Switch or amplify electrical signals"
+    ],
+    "correct_index": 3,
+    "explanation": "A transistor is used to switch or amplify electrical signals, which makes it a building block of electronics. Storing energy in a magnetic field describes an inductor. Converting AC to DC is done by a diode rectifier. Providing a fixed resistance is the job of a resistor. A transistor switches or amplifies.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transistor-function"
+  },
+  {
+    "external_key": "EI-B14-023",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "What is the purpose of a fuse in an electrical circuit?",
+    "choices": [
+      "To store charge for later use",
+      "To step the voltage up",
+      "To smooth out a signal",
+      "To protect the circuit by breaking it if current gets too high"
+    ],
+    "correct_index": 3,
+    "explanation": "A fuse protects a circuit by melting and breaking the path when current exceeds a safe level. Storing charge is the job of a capacitor. Stepping voltage up is the job of a transformer. Smoothing a signal is done by capacitors or filters. A fuse protects against excess current by breaking the circuit.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::fuse-function"
+  },
+  {
+    "external_key": "EI-B14-024",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A transformer is a device that primarily does what?",
+    "choices": [
+      "Steps AC voltage up or down",
+      "Allows current in one direction only",
+      "Stores energy in an electric field",
+      "Converts light into electricity"
+    ],
+    "correct_index": 0,
+    "explanation": "A transformer uses two coils to step an AC voltage up or down. Allowing current in one direction is the job of a diode. Storing energy in an electric field describes a capacitor. Converting light into electricity is what a photocell or solar cell does. A transformer steps AC voltage up or down.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transformer-function"
+  },
+  {
+    "external_key": "EI-B14-025",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "What does LED stand for?",
+    "choices": [
+      "Low Energy Device",
+      "Light Emitting Diode",
+      "Linear Electric Detector",
+      "Load Energy Director"
+    ],
+    "correct_index": 1,
+    "explanation": "LED stands for Light Emitting Diode, a diode that gives off light when current flows through it. The other options are invented phrases that do not match the standard term. LED means Light Emitting Diode.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::led-define"
+  },
+  {
+    "external_key": "EI-B14-026",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "What is the function of a switch in a circuit?",
+    "choices": [
+      "To store electrical charge",
+      "To increase current automatically",
+      "To convert AC to DC",
+      "To open or close the circuit path"
+    ],
+    "correct_index": 3,
+    "explanation": "A switch opens or closes the circuit path to turn current on or off. Storing charge is the job of a capacitor. A switch does not increase current on its own. Converting AC to DC is done by a diode. A switch opens or closes the path.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::switch-function"
+  },
+  {
+    "external_key": "EI-B14-027",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A battery is a source that supplies which of the following to a circuit?",
+    "choices": [
+      "Magnetic force only",
+      "Electrical energy through chemical reactions",
+      "Resistance to limit current",
+      "Light when current flows"
+    ],
+    "correct_index": 1,
+    "explanation": "A battery converts stored chemical energy into electrical energy to drive current through a circuit. It does not supply magnetic force as its purpose. Limiting current is the job of a resistor. Emitting light when current flows describes an LED. A battery supplies electrical energy from chemical reactions.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::battery-function"
+  },
+  {
+    "external_key": "EI-B14-028",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "An inductor stores energy in which form?",
+    "choices": [
+      "An electric field between plates",
+      "A magnetic field around a coil",
+      "Chemical bonds",
+      "Heat in a resistive element"
+    ],
+    "correct_index": 1,
+    "explanation": "An inductor is a coil that stores energy in the magnetic field created around it when current flows. Storing energy in an electric field between plates describes a capacitor. Chemical bonds describe a battery. Heat in a resistive element describes a resistor dissipating power, not storing it. An inductor stores energy in a magnetic field.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::inductor-function"
+  },
+  {
+    "external_key": "EI-B14-029",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "Which component would you use to convert alternating current (AC) into direct current (DC)?",
+    "choices": [
+      "Resistor",
+      "Capacitor",
+      "Diode",
+      "Switch"
+    ],
+    "correct_index": 2,
+    "explanation": "A diode passes current in only one direction, so it can rectify AC into DC. A resistor only limits current and cannot change AC to DC. A capacitor can smooth DC but does not perform the conversion. A switch only opens or closes the path. A diode converts AC to DC by rectification.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::diode-function"
+  },
+  {
+    "external_key": "EI-B14-030",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A transformer has more turns of wire on its secondary coil than on its primary coil. This transformer will do what to the voltage?",
+    "choices": [
+      "Step it up",
+      "Step it down",
+      "Leave it unchanged",
+      "Convert it to DC"
+    ],
+    "correct_index": 0,
+    "explanation": "A transformer's output voltage rises with more secondary turns, so more secondary turns than primary turns steps the voltage up. Fewer secondary turns would step it down. Equal turns would leave it unchanged. A transformer works only with AC and does not convert to DC. More secondary turns steps the voltage up.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transformer-turns"
+  },
+  {
+    "external_key": "EI-B14-031",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A device that protects a circuit from excess current and can be reset by flipping a switch instead of being replaced is called what?",
+    "choices": [
+      "A fuse",
+      "A capacitor",
+      "A resistor",
+      "A circuit breaker"
+    ],
+    "correct_index": 3,
+    "explanation": "A circuit breaker trips to stop excess current and can be reset by flipping it back on. A fuse also stops excess current but melts and must be replaced, not reset. A capacitor stores charge and offers no overcurrent protection. A resistor only limits current and does not trip. A resettable overcurrent protector is a circuit breaker.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::breaker-vs-fuse"
+  },
+  {
+    "external_key": "EI-B14-032",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "Which component, when correctly biased, lets current flow forward but blocks it in the reverse direction?",
+    "choices": [
+      "Capacitor",
+      "Diode",
+      "Resistor",
+      "Inductor"
+    ],
+    "correct_index": 1,
+    "explanation": "A diode conducts when forward biased and blocks current when reverse biased, acting as a one-way valve. A capacitor blocks steady DC but passes changing signals in both directions; it is not a one-way valve. A resistor passes current both ways. An inductor passes current both ways while opposing changes. The one-way component is a diode.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::diode-bias"
+  },
+  {
+    "external_key": "EI-B14-033",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A schematic symbol drawn as a zigzag line (or a plain rectangle in newer drawings) represents which component?",
+    "choices": [
+      "Capacitor",
+      "Resistor",
+      "Battery",
+      "Inductor"
+    ],
+    "correct_index": 1,
+    "explanation": "The zigzag line, or a rectangle in newer standards, is the schematic symbol for a resistor. A capacitor is drawn as two parallel lines. A battery is drawn as alternating long and short parallel lines. An inductor is drawn as a series of loops or coils. The zigzag or rectangle is a resistor.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::symbol-resistor"
+  },
+  {
+    "external_key": "EI-B14-034",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A schematic symbol drawn as a series of coils or loops in the wire represents which component?",
+    "choices": [
+      "Resistor",
+      "Inductor",
+      "Capacitor",
+      "Diode"
+    ],
+    "correct_index": 1,
+    "explanation": "A series of coils or loops is the schematic symbol for an inductor, reflecting its coil of wire. A resistor is a zigzag or rectangle. A capacitor is two parallel lines. A diode is a triangle pointing into a bar. The coiled symbol is an inductor.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::symbol-inductor"
+  },
+  {
+    "external_key": "EI-B14-035",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "On a schematic, a battery is usually shown using which of the following?",
+    "choices": [
+      "A triangle touching a straight bar",
+      "Alternating long and short parallel lines",
+      "A zigzag line",
+      "Two equal-length parallel plates"
+    ],
+    "correct_index": 1,
+    "explanation": "A battery symbol uses alternating long and short parallel lines, with the long line as the positive terminal. A triangle touching a bar is a diode. A zigzag line is a resistor. Two equal-length parallel plates form a capacitor. A battery is shown with alternating long and short lines.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::symbol-battery"
+  },
+  {
+    "external_key": "EI-B14-036",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "Which component would you choose to amplify a weak audio signal into a stronger one?",
+    "choices": [
+      "Transistor",
+      "Fuse",
+      "Capacitor",
+      "Resistor"
+    ],
+    "correct_index": 0,
+    "explanation": "A transistor can amplify, using a small input signal to control a larger output, so it boosts a weak audio signal. A fuse only protects against overcurrent. A capacitor stores charge and can couple signals but does not provide gain. A resistor only limits current. Amplification is done by a transistor.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transistor-function"
+  },
+  {
+    "external_key": "EI-B14-037",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Which of the following materials is the best conductor of electricity?",
+    "choices": [
+      "Rubber",
+      "Copper",
+      "Glass",
+      "Dry wood"
+    ],
+    "correct_index": 1,
+    "explanation": "Copper is a metal with many free electrons, making it an excellent conductor, which is why it is used in most wiring. Rubber, glass, and dry wood are insulators that strongly resist current. The best conductor listed is copper.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::pick-conductor"
+  },
+  {
+    "external_key": "EI-B14-038",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Which material is commonly used as an insulator around electrical wires?",
+    "choices": [
+      "Copper",
+      "Aluminum",
+      "Silver",
+      "Rubber"
+    ],
+    "correct_index": 3,
+    "explanation": "Rubber resists the flow of current, so it is used as insulation around wires to keep electricity contained and safe. Copper, aluminum, and silver are all metals and good conductors, which is why they form the wire itself rather than the insulation. The insulator is rubber.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::pick-insulator"
+  },
+  {
+    "external_key": "EI-B14-039",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Metals are good conductors of electricity mainly because they have what?",
+    "choices": [
+      "Very tightly bound electrons",
+      "No electrons at all",
+      "Many free electrons that can move",
+      "A hard, shiny surface"
+    ],
+    "correct_index": 2,
+    "explanation": "Metals conduct well because they have many free electrons that move easily and carry current. Tightly bound electrons describe insulators, where charges cannot move. All materials have electrons, so having none is incorrect. A shiny surface is unrelated to electrical conduction. Metals conduct because of their free electrons.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::why-conduct"
+  },
+  {
+    "external_key": "EI-B14-040",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Which of the following is the best example of an electrical insulator?",
+    "choices": [
+      "Gold",
+      "Aluminum",
+      "Glass",
+      "Copper"
+    ],
+    "correct_index": 2,
+    "explanation": "Glass holds its electrons tightly and resists current, so it is a good insulator. Gold, aluminum, and copper are all metals and good conductors. The insulator is glass.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::pick-insulator"
+  },
+  {
+    "external_key": "EI-B14-041",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "A material whose ability to conduct electricity falls between that of a conductor and an insulator is called a what?",
+    "choices": [
+      "Superconductor",
+      "Semiconductor",
+      "Resistor",
+      "Dielectric"
+    ],
+    "correct_index": 1,
+    "explanation": "A semiconductor, such as silicon, conducts more than an insulator but less than a metal, putting it between the two. A superconductor conducts with essentially no resistance, beyond a normal conductor. A resistor is a component, not a material class. A dielectric is an insulating material used in capacitors. The in-between material is a semiconductor.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::semiconductor-define"
+  },
+  {
+    "external_key": "EI-B14-042",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "The purpose of grounding an electrical system is mainly to do what?",
+    "choices": [
+      "Increase the voltage",
+      "Store extra energy",
+      "Provide a safe path for stray current to the earth",
+      "Speed up the current"
+    ],
+    "correct_index": 2,
+    "explanation": "Grounding gives stray or fault current a safe, low-resistance path to the earth, protecting people and equipment. It does not raise voltage or store energy. It does not speed up current. Grounding provides a safe path to earth for stray current.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::grounding-purpose"
+  },
+  {
+    "external_key": "EI-B14-043",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Which common material is the most widely used conductor in household electrical wiring?",
+    "choices": [
+      "Plastic",
+      "Copper",
+      "Rubber",
+      "Wood"
+    ],
+    "correct_index": 1,
+    "explanation": "Copper is the most widely used wiring conductor because it conducts well and is reasonably affordable. Plastic, rubber, and wood are insulators and do not carry current. The common wiring conductor is copper.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::pick-conductor"
+  },
+  {
+    "external_key": "EI-B14-044",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Silicon is the base material for most modern transistors and chips because it is what kind of material?",
+    "choices": [
+      "A perfect conductor",
+      "A semiconductor",
+      "A perfect insulator",
+      "A magnetic metal"
+    ],
+    "correct_index": 1,
+    "explanation": "Silicon is a semiconductor, so its conductivity can be controlled, which is exactly what transistors and chips need. A perfect conductor would carry current uncontrollably. A perfect insulator would block current entirely. Silicon is not a magnetic metal. Silicon is a semiconductor.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::semiconductor-define"
+  },
+  {
+    "external_key": "EI-B14-045",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "In the American Wire Gauge (AWG) system, as the gauge number gets larger, the wire diameter does what?",
+    "choices": [
+      "Gets larger",
+      "Gets smaller",
+      "Stays the same",
+      "Becomes a better conductor"
+    ],
+    "correct_index": 1,
+    "explanation": "In AWG, a larger gauge number means a thinner wire, so the diameter gets smaller. It does not get larger or stay the same. A thinner wire actually carries less current safely, so it does not become a better conductor. Larger AWG numbers mean smaller wire diameter.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::awg-gauge"
+  },
+  {
+    "external_key": "EI-B14-046",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Which wire can safely carry more current: a thick 10-gauge wire or a thin 18-gauge wire?",
+    "choices": [
+      "The 18-gauge wire",
+      "Both carry the same current",
+      "Neither can carry current",
+      "The 10-gauge wire"
+    ],
+    "correct_index": 3,
+    "explanation": "In AWG a smaller number is a thicker wire, and thicker wire carries more current, so the 10-gauge wire carries more than the 18-gauge. The 18-gauge wire is thinner and carries less. They are different sizes, so they do not carry the same. Both are conductors and can carry current. The 10-gauge wire carries more current.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::awg-gauge"
+  },
+  {
+    "external_key": "EI-B14-047",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Why is rubber or plastic used to coat electrical cords rather than leaving the metal bare?",
+    "choices": [
+      "To make the wire conduct better",
+      "To insulate the wire and prevent shocks or shorts",
+      "To increase the voltage",
+      "To make the wire heavier"
+    ],
+    "correct_index": 1,
+    "explanation": "Rubber and plastic are insulators, so coating the wire prevents accidental shocks and short circuits. They do not improve conduction; only the metal inside conducts. They do not change the voltage. Adding weight is not the goal. The coating insulates the wire for safety.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::why-insulate"
+  },
+  {
+    "external_key": "EI-B14-048",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "A three-prong plug includes a grounding prong. What is the main job of that grounding prong?",
+    "choices": [
+      "To deliver more power to the device",
+      "To store charge for the device",
+      "To carry fault current safely away if a wire touches the metal case",
+      "To convert AC to DC"
+    ],
+    "correct_index": 2,
+    "explanation": "The grounding prong gives fault current a safe path to ground if a hot wire contacts the device's metal case, preventing shock. It does not deliver more power or store charge. It does not convert AC to DC. The grounding prong safely carries away fault current.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::grounding-purpose"
+  },
+  {
+    "external_key": "EI-B14-049",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Of the following metals, which is generally the best electrical conductor?",
+    "choices": [
+      "Iron",
+      "Silver",
+      "Lead",
+      "Tin"
+    ],
+    "correct_index": 1,
+    "explanation": "Silver has the lowest resistance of common metals, making it the best electrical conductor of the choices listed. Iron, lead, and tin all conduct but have noticeably higher resistance than silver. The best conductor here is silver.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::best-conductor-metal"
+  },
+  {
+    "external_key": "EI-B14-050",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Dry wood is generally considered an insulator, but wet wood can conduct electricity. Why does adding water change this?",
+    "choices": [
+      "Water has dissolved ions that can carry current",
+      "Water turns wood into a metal",
+      "Water removes all electrons from the wood",
+      "Water lowers the wood's temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "Ordinary water contains dissolved ions that can carry charge, so wetting the wood gives current a path it lacks when dry. Water does not turn wood into a metal or strip out its electrons. Temperature change is not the reason it conducts. Wet wood conducts because water carries dissolved ions.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::why-conduct"
+  },
+  {
+    "external_key": "EI-B14-051",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "Ohm's law states the relationship among voltage, current, and resistance. Which equation is correct?",
+    "choices": [
+      "V = I / R",
+      "V = R / I",
+      "V = I + R",
+      "V = I x R"
+    ],
+    "correct_index": 3,
+    "explanation": "Ohm's law is V = I x R, where voltage equals current times resistance. V = I / R and V = R / I divide instead of multiply, which is incorrect. V = I + R adds two quantities with different units, which is meaningless. The correct form is V = I x R.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::ohms-law-form"
+  },
+  {
+    "external_key": "EI-B14-052",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "Electrical power in a simple circuit can be found using which formula?",
+    "choices": [
+      "P = V / I",
+      "P = V + I",
+      "P = V - I",
+      "P = V x I"
+    ],
+    "correct_index": 3,
+    "explanation": "Power equals voltage times current: P = V x I. Dividing voltage by current (P = V / I) is incorrect. Adding or subtracting voltage and current mixes different units and is meaningless. The correct power formula is P = V x I.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::power-form"
+  },
+  {
+    "external_key": "EI-B14-053",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "A 12-volt source drives a current of 3 amperes through a resistor. What is the voltage already given, and what does Ohm's law let you find using R = V / I?",
+    "choices": [
+      "2 ohms",
+      "4 ohms",
+      "6 ohms",
+      "36 ohms"
+    ],
+    "correct_index": 1,
+    "explanation": "Using R = V / I, divide voltage by current: 12 / 3 = 4 ohms. The choice 2 ohms divides incorrectly. The choice 6 ohms comes from using 12 / 2. The choice 36 ohms multiplies 12 x 3 instead of dividing. The resistance is 4 ohms.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::ohms-law-solve-R"
+  },
+  {
+    "external_key": "EI-B14-054",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "A 9-volt battery is connected across a 3-ohm resistor. Using Ohm's law (I = V / R), how much current flows?",
+    "choices": [
+      "3 amperes",
+      "6 amperes",
+      "12 amperes",
+      "27 amperes"
+    ],
+    "correct_index": 0,
+    "explanation": "Using I = V / R, divide voltage by resistance: 9 / 3 = 3 amperes. The choice 6 amperes divides incorrectly. The choice 12 amperes adds 9 + 3. The choice 27 amperes multiplies 9 x 3 instead of dividing. The current is 3 amperes.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::ohms-law-solve-I"
+  },
+  {
+    "external_key": "EI-B14-055",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "A current of 2 amperes flows through a 5-ohm resistor. Using Ohm's law (V = I x R), what is the voltage across the resistor?",
+    "choices": [
+      "2.5 volts",
+      "7 volts",
+      "10 volts",
+      "20 volts"
+    ],
+    "correct_index": 2,
+    "explanation": "Using V = I x R, multiply current by resistance: 2 x 5 = 10 volts. The choice 2.5 volts divides 5 / 2 instead of multiplying. The choice 7 volts adds 2 + 5. The choice 20 volts doubles the correct answer. The voltage is 10 volts.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::ohms-law-solve-V"
+  },
+  {
+    "external_key": "EI-B14-056",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "How many milliamperes (mA) are in 1 ampere?",
+    "choices": [
+      "10 mA",
+      "100 mA",
+      "1,000 mA",
+      "1,000,000 mA"
+    ],
+    "correct_index": 2,
+    "explanation": "The prefix milli means one-thousandth, so 1 ampere equals 1,000 milliamperes. The choices 10 and 100 mA are too small by factors of 100 and 10. The choice 1,000,000 mA would equal 1,000 amperes, confusing milli with micro. One ampere is 1,000 milliamperes.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::unit-prefix"
+  },
+  {
+    "external_key": "EI-B14-057",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A device uses 4 amperes at 120 volts. Using P = V x I, what is its power consumption?",
+    "choices": [
+      "30 watts",
+      "124 watts",
+      "480 watts",
+      "480 amperes"
+    ],
+    "correct_index": 2,
+    "explanation": "Using P = V x I, multiply: 120 x 4 = 480 watts. The choice 30 watts divides 120 / 4 instead of multiplying. The choice 124 watts adds 120 + 4. The value 480 amperes uses the wrong unit; power is measured in watts. The power is 480 watts.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::power-solve"
+  },
+  {
+    "external_key": "EI-B14-058",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "Two resistors, 3 ohms and 5 ohms, are connected in series. What is their total resistance?",
+    "choices": [
+      "8 ohms",
+      "1.875 ohms",
+      "15 ohms",
+      "2 ohms"
+    ],
+    "correct_index": 0,
+    "explanation": "Series resistances add: 3 + 5 = 8 ohms. The choice 1.875 ohms is the parallel result, which does not apply to series. The choice 15 ohms multiplies 3 x 5 instead of adding. The choice 2 ohms subtracts 5 - 3. The series total is 8 ohms.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::series-resistance-add"
+  },
+  {
+    "external_key": "EI-B14-059",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "Two equal 10-ohm resistors are connected in parallel. What is their total resistance?",
+    "choices": [
+      "5 ohms",
+      "10 ohms",
+      "20 ohms",
+      "100 ohms"
+    ],
+    "correct_index": 0,
+    "explanation": "Two equal resistors in parallel give half of one resistor's value: 10 / 2 = 5 ohms. The choice 10 ohms ignores the parallel effect. The choice 20 ohms adds them as if in series. The choice 100 ohms multiplies 10 x 10. The parallel total is 5 ohms.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::parallel-resistance"
+  },
+  {
+    "external_key": "EI-B14-060",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A resistor carries 2 amperes and has a resistance of 4 ohms. Using P = I squared x R, what power does it dissipate?",
+    "choices": [
+      "8 watts",
+      "16 watts",
+      "32 watts",
+      "64 watts"
+    ],
+    "correct_index": 1,
+    "explanation": "Using P = I squared x R: 2 squared is 4, then 4 x 4 = 16 watts. The choice 8 watts forgets to square the current, doing 2 x 4. The choice 32 watts doubles the correct answer. The choice 64 watts squares the whole product incorrectly. The power dissipated is 16 watts.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::power-i2r"
+  },
+  {
+    "external_key": "EI-B14-061",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 2-kilohm (kΩ) resistor is the same as how many ohms?",
+    "choices": [
+      "20 ohms",
+      "200 ohms",
+      "2,000 ohms",
+      "200,000 ohms"
+    ],
+    "correct_index": 2,
+    "explanation": "The prefix kilo means one thousand, so 2 kilohms equals 2 x 1,000 = 2,000 ohms. The choices 20 and 200 ohms are too small by factors of 100 and 10. The choice 200,000 ohms confuses kilo with a larger prefix. Two kilohms is 2,000 ohms.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::unit-prefix"
+  },
+  {
+    "external_key": "EI-B14-062",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 24-volt source is connected across a 6-ohm resistor. Using P = V squared / R, what is the power dissipated?",
+    "choices": [
+      "4 watts",
+      "48 watts",
+      "96 watts",
+      "144 watts"
+    ],
+    "correct_index": 2,
+    "explanation": "Using P = V squared / R: 24 squared is 576, then 576 / 6 = 96 watts. The choice 4 watts divides 24 / 6 without squaring. The choice 48 watts comes from 24 x 6 / 3, an incorrect setup. The choice 144 watts multiplies 24 x 6. The power dissipated is 96 watts.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::power-v2r"
+  },
+  {
+    "external_key": "EI-B14-063",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A circuit draws 0.5 ampere from a 12-volt battery. Using Ohm's law (R = V / I), what is the circuit's resistance?",
+    "choices": [
+      "6 ohms",
+      "12 ohms",
+      "24 ohms",
+      "0.5 ohm"
+    ],
+    "correct_index": 2,
+    "explanation": "Using R = V / I, divide voltage by current: 12 / 0.5 = 24 ohms. The choice 6 ohms multiplies 12 x 0.5 instead of dividing. The choice 12 ohms ignores the current. The choice 0.5 ohm just repeats the current value. The resistance is 24 ohms.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::ohms-law-solve-R"
+  }
+]

@@ -1,0 +1,1090 @@
+[
+  {
+    "external_key": "AS-B15-001",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which type of screwdriver fits a screw with a single straight slot across its head?",
+    "choices": [
+      "Phillips",
+      "Allen",
+      "Torx",
+      "Flathead"
+    ],
+    "correct_index": 3,
+    "explanation": "A flathead (slotted) screwdriver has a single flat blade that fits the straight slot of a slotted screw. A Phillips screwdriver has a cross- or plus-shaped tip for cross-recess screws. Torx has a six-point star tip. An Allen (hex) key fits hexagonal socket screws. Only the flathead matches a single straight slot.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::screwdriver-types"
+  },
+  {
+    "external_key": "AS-B15-002",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which hand tool is specifically designed to apply a measured, exact amount of tightening force to a fastener?",
+    "choices": [
+      "Pipe wrench",
+      "Open-end wrench",
+      "Torque wrench",
+      "Box-end wrench"
+    ],
+    "correct_index": 2,
+    "explanation": "A torque wrench measures and limits the rotational force (torque) applied so a bolt is tightened to an exact specification. An open-end wrench grips two flats of a fastener but cannot measure force. A pipe wrench grips round pipe and applies no measured torque. A box-end wrench surrounds the fastener fully but also does not measure force. Only the torque wrench applies a specified amount of force.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::torque-wrench"
+  },
+  {
+    "external_key": "AS-B15-003",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which pliers have long, thin, tapered jaws for gripping small objects in tight spaces?",
+    "choices": [
+      "Channel-lock pliers",
+      "Slip-joint pliers",
+      "Needle-nose pliers",
+      "Locking pliers"
+    ],
+    "correct_index": 2,
+    "explanation": "Needle-nose pliers have long, narrow, tapered jaws ideal for reaching into tight spaces and holding small wires or parts. Channel-lock (tongue-and-groove) pliers have wide, adjustable jaws for large objects. Slip-joint pliers have a movable pivot for two jaw widths but blunt jaws. Locking pliers clamp and lock onto a part. Only needle-nose pliers have the long tapered jaws described.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::pliers-types"
+  },
+  {
+    "external_key": "AS-B15-004",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which hammer has one flat striking face and one rounded face used for shaping metal and striking punches?",
+    "choices": [
+      "Ball-peen hammer",
+      "Claw hammer",
+      "Sledgehammer",
+      "Rubber mallet"
+    ],
+    "correct_index": 0,
+    "explanation": "A ball-peen hammer has a flat face for striking and a rounded (ball) peen for shaping metal and setting rivets, making it standard for metalwork. A claw hammer has a flat face and a curved claw for pulling nails. A sledgehammer is a heavy two-faced hammer for demolition. A rubber mallet has a soft head to avoid marring surfaces. Only the ball-peen has a rounded peen for shaping metal.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::hammer-types"
+  },
+  {
+    "external_key": "AS-B15-005",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "An Allen wrench (hex key) is used to drive fasteners that have what kind of recess?",
+    "choices": [
+      "A six-sided (hexagonal) recess",
+      "A cross-shaped recess",
+      "A single straight slot",
+      "A square recess"
+    ],
+    "correct_index": 0,
+    "explanation": "An Allen wrench, or hex key, is an L-shaped tool with six flat sides that fits a hexagonal socket recess in the fastener head. A cross-shaped recess is driven by a Phillips screwdriver. A single straight slot is driven by a flathead. A square recess is driven by a Robertson driver. Only a hexagonal recess matches the Allen wrench.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::allen-wrench"
+  },
+  {
+    "external_key": "AS-B15-006",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which tool is used to cut internal threads inside a drilled hole?",
+    "choices": [
+      "Tap",
+      "Die",
+      "Reamer",
+      "File"
+    ],
+    "correct_index": 0,
+    "explanation": "A tap cuts internal threads inside a hole so a bolt or screw can be threaded into it. A die cuts external threads onto a rod or bolt. A reamer enlarges and smooths a hole to an exact size but does not cut threads. A file removes material to smooth or shape surfaces. Only a tap cuts internal threads.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::taps-dies"
+  },
+  {
+    "external_key": "AS-B15-007",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which measuring tool uses a thin blade of a known thickness to measure the gap between two parts?",
+    "choices": [
+      "Tape measure",
+      "Micrometer",
+      "Feeler gauge",
+      "Caliper"
+    ],
+    "correct_index": 2,
+    "explanation": "A feeler gauge is a set of thin metal blades, each a known thickness, that are slipped into a gap to measure its width, such as a spark plug or valve clearance. A micrometer measures the outside thickness of an object very precisely. A tape measure measures longer lengths. A caliper measures inside, outside, and depth dimensions. Only the feeler gauge is built to measure a gap with set-thickness blades.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::feeler-gauge"
+  },
+  {
+    "external_key": "AS-B15-008",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which wrench completely surrounds a nut or bolt head on all six points for the strongest grip?",
+    "choices": [
+      "Open-end wrench",
+      "Pipe wrench",
+      "Box-end wrench",
+      "Adjustable wrench"
+    ],
+    "correct_index": 2,
+    "explanation": "A box-end wrench fully encloses the fastener and contacts all six points of a hex head, giving the best grip with the least chance of slipping or rounding. An open-end wrench grips only two flats and can slip. A pipe wrench is for round pipe, not hex fasteners. An adjustable wrench grips two flats with movable jaws that can slip. Only the box-end wrench surrounds the head completely.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::wrench-types"
+  },
+  {
+    "external_key": "AS-B15-009",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "A cold chisel is a striking tool used mainly to do what?",
+    "choices": [
+      "Tighten bolts",
+      "Measure thread pitch",
+      "Cut and shape metal",
+      "Drill round holes"
+    ],
+    "correct_index": 2,
+    "explanation": "A cold chisel is a hardened steel tool struck with a hammer to cut, chip, or shape cold metal such as removing rivet heads or cutting bar stock. Measuring thread pitch is done with a thread pitch gauge. Tightening bolts is done with a wrench. Drilling round holes is done with a drill bit. Only cutting and shaping metal describes the cold chisel.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::chisel"
+  },
+  {
+    "external_key": "AS-B15-010",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A mechanic must loosen a bolt that is recessed deep inside a tube where only a straight-down approach is possible. Which tool is best?",
+    "choices": [
+      "Socket with an extension and ratchet",
+      "Open-end wrench",
+      "Channel-lock pliers",
+      "Box-end wrench"
+    ],
+    "correct_index": 0,
+    "explanation": "A socket on an extension bar driven by a ratchet reaches straight down into a recessed area and turns the bolt fully enclosed, which is exactly what a deep, narrow space requires. An open-end wrench needs side clearance to swing and grips only two flats. Channel-lock pliers would round the bolt and cannot reach deep. A box-end wrench needs swing room and cannot reach down a tube. The socket-and-extension setup is designed for this access.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::socket-access"
+  },
+  {
+    "external_key": "AS-B15-011",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A technician needs to measure the diameter of a bolt shaft to the nearest thousandth of an inch. Which tool gives that precision?",
+    "choices": [
+      "Outside micrometer",
+      "Tape measure",
+      "Yardstick",
+      "Carpenter's square"
+    ],
+    "correct_index": 0,
+    "explanation": "An outside micrometer measures small outside dimensions to within a thousandth of an inch using a precise threaded spindle, ideal for a bolt shaft diameter. A tape measure reads only to about a sixteenth of an inch. A yardstick is even less precise. A carpenter's square checks right angles, not diameters. Only the micrometer offers thousandth-inch precision.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::micrometer"
+  },
+  {
+    "external_key": "AS-B15-012",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A bolt head is rounded off and a wrench will no longer grip it. Which tool is the best choice to remove it?",
+    "choices": [
+      "Phillips screwdriver",
+      "Open-end wrench",
+      "Locking pliers (vise-grips)",
+      "Feeler gauge"
+    ],
+    "correct_index": 2,
+    "explanation": "Locking pliers clamp down hard and lock onto a damaged, rounded fastener, biting into what remains so it can be turned out. An open-end wrench needs clean flats and will keep slipping on a rounded head. A Phillips screwdriver drives cross-recess screws, not a rounded bolt. A feeler gauge only measures gaps. Locking pliers are the right tool for a stripped fastener.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::locking-pliers"
+  },
+  {
+    "external_key": "AS-B15-013",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A worker needs to cut new external threads onto the end of a metal rod. Which tool does the job?",
+    "choices": [
+      "Die",
+      "Tap",
+      "Hacksaw",
+      "Center punch"
+    ],
+    "correct_index": 0,
+    "explanation": "A die cuts external (male) threads onto the outside of a rod or bolt blank. A tap cuts internal threads inside a hole, the opposite job. A hacksaw cuts a rod to length but cannot make threads. A center punch marks a starting dimple for drilling. Only a die produces external threads.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::taps-dies"
+  },
+  {
+    "external_key": "AS-B15-014",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "Before drilling a hole in flat steel, a machinist wants to keep the drill bit from wandering off the mark. Which tool should be used first?",
+    "choices": [
+      "Torque wrench",
+      "Cold chisel",
+      "Center punch",
+      "File"
+    ],
+    "correct_index": 2,
+    "explanation": "A center punch is struck to make a small dimple at the mark, giving the drill bit a starting point so it does not slide across the surface. A cold chisel cuts metal, not a precise starting dimple. A torque wrench applies measured force to fasteners. A file smooths surfaces. Only the center punch makes the locating dimple for drilling.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::center-punch"
+  },
+  {
+    "external_key": "AS-B15-015",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A mechanic must hold two pieces of glued wood firmly together while the adhesive sets. Which tool is best?",
+    "choices": [
+      "C-clamp",
+      "Pry bar",
+      "Ratchet",
+      "Hacksaw"
+    ],
+    "correct_index": 0,
+    "explanation": "A C-clamp tightens a screw to apply steady pressure and hold parts together while glue or weld sets. A pry bar applies leverage to separate or lift, the opposite action. A ratchet turns sockets on fasteners. A hacksaw cuts material. Only the C-clamp holds parts together under pressure.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::clamps"
+  },
+  {
+    "external_key": "AS-B15-016",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A technician needs to make a long, straight cut through a sheet of plywood. Which saw is best suited?",
+    "choices": [
+      "Circular saw",
+      "Hacksaw",
+      "Coping saw",
+      "Keyhole saw"
+    ],
+    "correct_index": 0,
+    "explanation": "A circular saw uses a large spinning blade to make fast, long, straight cuts through plywood and lumber. A hacksaw has a fine blade for cutting metal, not large wood panels. A coping saw cuts tight curves in thin wood. A keyhole saw cuts small openings in tight spots. Only the circular saw is built for long straight cuts in plywood.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::saw-selection"
+  },
+  {
+    "external_key": "AS-B15-017",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A worker must smooth and round a rough metal edge after cutting. Which tool is designed for this?",
+    "choices": [
+      "File",
+      "Wood chisel",
+      "Tap",
+      "Soldering iron"
+    ],
+    "correct_index": 0,
+    "explanation": "A file has rows of hardened teeth that shave off small amounts of metal to smooth and shape a rough edge. A wood chisel is for cutting wood, not finishing metal edges. A tap cuts internal threads. A soldering iron melts solder to join parts, not remove metal. Only the file smooths and shapes the metal edge.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::file-use"
+  },
+  {
+    "external_key": "AS-B15-018",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "During an oil change, what component is normally replaced along with the oil?",
+    "choices": [
+      "Brake pad",
+      "Spark plug",
+      "Oil filter",
+      "Serpentine belt"
+    ],
+    "correct_index": 2,
+    "explanation": "The oil filter is replaced with the oil because it traps contaminants and becomes clogged over time. A spark plug is part of the ignition system and is changed on its own schedule. A brake pad is a braking component, unrelated to oil changes. A serpentine belt drives accessories and is replaced when worn. Only the oil filter is routinely changed with the oil.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::oil-change"
+  },
+  {
+    "external_key": "AS-B15-019",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "Rotating tires means doing what?",
+    "choices": [
+      "Moving tires to different positions on the vehicle",
+      "Balancing each tire on a machine",
+      "Adding air to each tire",
+      "Replacing the valve stems"
+    ],
+    "correct_index": 0,
+    "explanation": "Tire rotation moves tires from one position to another (such as front to back) so they wear more evenly and last longer. Balancing adds weights to correct vibration but is a separate service. Adding air sets tire pressure, not rotation. Replacing valve stems is its own repair. Only moving tires between positions describes a rotation.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::tire-rotation"
+  },
+  {
+    "external_key": "AS-B15-020",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "The gap on a spark plug is measured and set using which tool?",
+    "choices": [
+      "Feeler or gap gauge",
+      "Torque wrench",
+      "Tire pressure gauge",
+      "Compression tester"
+    ],
+    "correct_index": 0,
+    "explanation": "A spark plug gap is the small space between the center and ground electrodes, set precisely with a feeler or gap gauge. A torque wrench tightens the plug to spec but does not measure the gap. A tire pressure gauge reads air pressure in tires. A compression tester checks cylinder pressure. Only a feeler or gap gauge sets the spark plug gap.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::spark-plug-gap"
+  },
+  {
+    "external_key": "AS-B15-021",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "Which fluid should be checked using the engine's dipstick?",
+    "choices": [
+      "Refrigerant",
+      "Window washer fluid",
+      "Engine oil",
+      "Tire sealant"
+    ],
+    "correct_index": 2,
+    "explanation": "The dipstick is pulled out, wiped, reinserted, and read to check the engine oil level and condition. Window washer fluid is checked at its own reservoir, which has no dipstick. Refrigerant is measured with gauges on the air-conditioning system. Tire sealant is not a checked fluid. Only engine oil is measured with the dipstick.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::fluid-checks"
+  },
+  {
+    "external_key": "AS-B15-022",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "When jump-starting a dead battery, which cable color is connected to the positive terminal?",
+    "choices": [
+      "Black",
+      "Green",
+      "Red",
+      "White"
+    ],
+    "correct_index": 2,
+    "explanation": "The red jumper cable connects to the positive (+) terminal of both batteries. Black is the negative cable, connected to the negative terminal or an unpainted ground point. Green and white are not standard jumper cable colors. Only red is the positive cable.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::battery-service"
+  },
+  {
+    "external_key": "AS-B15-023",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "In a typical disc brake system, what part squeezes against the rotor to slow the wheel?",
+    "choices": [
+      "Tie rods",
+      "Spark plugs",
+      "Brake pads",
+      "Lug nuts"
+    ],
+    "correct_index": 2,
+    "explanation": "Brake pads are pressed against the spinning rotor by the caliper, and the resulting friction slows the wheel. Spark plugs ignite the fuel mixture and have nothing to do with braking. Tie rods are steering parts. Lug nuts hold the wheel onto the hub. Only the brake pads create the friction that slows the rotor.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::brake-service"
+  },
+  {
+    "external_key": "AS-B15-024",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A car's engine overheats and the temperature gauge climbs into the red. Which of these is a likely cause to check first?",
+    "choices": [
+      "Low engine coolant",
+      "A worn brake pad",
+      "A loose gas cap",
+      "A burned-out headlight"
+    ],
+    "correct_index": 0,
+    "explanation": "Low coolant reduces the cooling system's ability to carry heat away from the engine, so it is a leading cause of overheating and the first thing to check. A worn brake pad affects braking, not engine temperature. A loose gas cap may trigger an emissions light but not overheating. A burned-out headlight is an electrical issue unrelated to engine heat. Low coolant is the relevant cause.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::overheat-diagnosis"
+  },
+  {
+    "external_key": "AS-B15-025",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A driver hears a squealing noise from the front wheels that goes away when the brakes are pressed. What does this most likely indicate?",
+    "choices": [
+      "The brake pads are worn and need replacement",
+      "The transmission needs fluid",
+      "The tires are overinflated",
+      "The battery is low"
+    ],
+    "correct_index": 0,
+    "explanation": "Many brake pads have a wear indicator that squeals when the pad material is thin; the noise often changes or stops as the brakes are applied, signaling the pads need replacement. Transmission fluid affects shifting, not a wheel squeal. Overinflated tires cause a rougher ride, not a brake squeal. A low battery affects starting and electronics. Worn brake pads best explain the squeal.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::brake-symptom"
+  },
+  {
+    "external_key": "AS-B15-026",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "An engine cranks but will not start, and there is no spark at the plugs. Which system should be checked first?",
+    "choices": [
+      "Ignition system",
+      "Cooling system",
+      "Exhaust system",
+      "Suspension system"
+    ],
+    "correct_index": 0,
+    "explanation": "No spark points to the ignition system, which produces and delivers the spark needed for combustion, so it is the first system to check. The cooling system controls engine temperature, not spark. The exhaust system carries away burned gases. The suspension system handles ride and handling. The ignition system is responsible for spark.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::no-start-diagnosis"
+  },
+  {
+    "external_key": "AS-B15-027",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A serpentine belt that drives the alternator and water pump is cracked and frayed. What is the correct action?",
+    "choices": [
+      "Replace the belt before it breaks",
+      "Add belt dressing and ignore it",
+      "Tighten the lug nuts",
+      "Top off the brake fluid"
+    ],
+    "correct_index": 0,
+    "explanation": "A cracked, frayed serpentine belt is failing and should be replaced before it snaps and shuts down the alternator, water pump, and other accessories. Belt dressing only masks noise and does not fix a worn belt. Tightening lug nuts addresses the wheels, not the belt. Topping off brake fluid is unrelated to the belt. Replacing the worn belt is the correct repair.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::belt-replacement"
+  },
+  {
+    "external_key": "AS-B15-028",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "Before removing a wheel to service the brakes, when should the lug nuts be loosened?",
+    "choices": [
+      "While the vehicle's weight is still on the tire",
+      "After the wheel is fully off the ground",
+      "Only after the brake job is finished",
+      "They should never be loosened by hand"
+    ],
+    "correct_index": 0,
+    "explanation": "Lug nuts should be broken loose while the tire still rests on the ground because the ground keeps the wheel from spinning, letting you apply force safely. If the wheel is already lifted, it spins freely and can rock the vehicle off the jack. Waiting until after the job makes no sense, since the wheel must come off first. Lug nuts are routinely loosened with a lug wrench. Loosening while weight is on the tire is correct.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::wheel-removal"
+  },
+  {
+    "external_key": "AS-B15-029",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Which piece of personal protective equipment protects the eyes from flying debris while grinding?",
+    "choices": [
+      "Steel-toe boots",
+      "Work gloves",
+      "Safety glasses",
+      "Ear plugs"
+    ],
+    "correct_index": 2,
+    "explanation": "Safety glasses (or goggles) shield the eyes from sparks and flying particles produced while grinding. Work gloves protect the hands but not the eyes. Steel-toe boots protect the feet from falling objects. Ear plugs protect hearing from loud noise. Only safety glasses protect the eyes from debris.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::eye-ppe"
+  },
+  {
+    "external_key": "AS-B15-030",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "After raising a vehicle with a jack, what must be placed under it before anyone works underneath?",
+    "choices": [
+      "Wheel chocks only",
+      "Jack stands",
+      "A floor mat",
+      "More jacks of the same type"
+    ],
+    "correct_index": 1,
+    "explanation": "Jack stands are rigid supports placed under the vehicle to hold it safely once it is raised, because a hydraulic jack alone can leak down or fail. Wheel chocks block the wheels from rolling but do not support a raised vehicle. A floor mat offers no structural support. Relying only on jacks is unsafe because a jack can fail. Jack stands are required for working underneath.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::jack-stands"
+  },
+  {
+    "external_key": "AS-B15-031",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Which class of fire extinguisher is intended for electrical fires?",
+    "choices": [
+      "Class A",
+      "Class B",
+      "Class C",
+      "Class D"
+    ],
+    "correct_index": 2,
+    "explanation": "A Class C extinguisher is rated for fires in energized electrical equipment, using an agent that does not conduct electricity. Class A is for ordinary combustibles like wood and paper. Class B is for flammable liquids such as gasoline and oil. Class D is for combustible metals. Only Class C is for electrical fires.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::fire-classes"
+  },
+  {
+    "external_key": "AS-B15-032",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Why should an engine never be run inside a closed garage without ventilation?",
+    "choices": [
+      "It uses too much electricity",
+      "The engine will run too cold",
+      "The exhaust contains deadly carbon monoxide",
+      "The tires will lose air"
+    ],
+    "correct_index": 2,
+    "explanation": "Engine exhaust contains carbon monoxide, a colorless, odorless gas that can be deadly when it builds up in an enclosed space, so ventilation is essential. Running an engine warms it, it does not run too cold. An engine burns fuel, not building electricity. Tire pressure is not affected by running the engine indoors. The carbon monoxide hazard is the reason.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::ventilation"
+  },
+  {
+    "external_key": "AS-B15-033",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Flammable liquids such as gasoline should be stored in what?",
+    "choices": [
+      "An open bucket",
+      "An approved, sealed safety container",
+      "A glass jar near a heater",
+      "A cardboard box"
+    ],
+    "correct_index": 1,
+    "explanation": "Flammable liquids must be kept in an approved, sealed safety container designed to contain vapors and resist ignition. An open bucket lets vapors escape and can ignite easily. A glass jar near a heater is dangerous because heat and a fragile container invite fire. A cardboard box cannot hold liquid or contain vapor. Only an approved safety container is correct.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::flammables"
+  },
+  {
+    "external_key": "AS-B15-034",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What does an SDS (Safety Data Sheet) provide information about?",
+    "choices": [
+      "The price of a part",
+      "The horsepower of an engine",
+      "The hazards and safe handling of a chemical",
+      "A vehicle's fuel economy"
+    ],
+    "correct_index": 2,
+    "explanation": "A Safety Data Sheet lists a chemical's hazards, safe handling, storage, first-aid, and emergency information. Engine horsepower is found in vehicle specifications, not an SDS. Part prices come from a catalog or invoice. Fuel economy is a vehicle rating. Only chemical hazard and handling information comes from an SDS.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::sds"
+  },
+  {
+    "external_key": "AS-B15-035",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Which PPE protects your hearing from loud shop equipment like air tools and grinders?",
+    "choices": [
+      "A respirator",
+      "Ear muffs or ear plugs",
+      "Safety glasses",
+      "A face shield"
+    ],
+    "correct_index": 1,
+    "explanation": "Ear muffs or ear plugs block harmful noise and protect hearing around loud equipment. A respirator protects the lungs from dust and fumes. Safety glasses protect the eyes. A face shield protects the face from flying debris and splashes. Only ear protection guards hearing.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::hearing-ppe"
+  },
+  {
+    "external_key": "AS-B15-036",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "When lifting a heavy object from the floor, what is the correct technique?",
+    "choices": [
+      "Bend at the waist and lift with the back",
+      "Bend the knees and lift with the legs",
+      "Twist the body while lifting",
+      "Hold the object far from your body"
+    ],
+    "correct_index": 1,
+    "explanation": "Proper lifting means bending the knees and using the strong leg muscles while keeping the back straight, which protects the spine. Bending at the waist and lifting with the back strains and can injure it. Twisting while lifting risks back injury. Holding a load far from the body increases strain. Lifting with the legs is the safe technique.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::lifting"
+  },
+  {
+    "external_key": "AS-B15-037",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What is the purpose of a machine guard on a bench grinder or saw?",
+    "choices": [
+      "To make the tool quieter",
+      "To keep the operator away from moving parts",
+      "To increase the tool's speed",
+      "To store extra blades"
+    ],
+    "correct_index": 1,
+    "explanation": "A machine guard is a barrier that keeps the operator's hands and clothing away from rotating wheels, blades, or belts to prevent injury. It is not designed to reduce noise. It does not increase speed. It is not a storage compartment. Protecting the operator from moving parts is its purpose.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::machine-guarding"
+  },
+  {
+    "external_key": "AS-B15-038",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A small gasoline fire starts in a drip pan under a car. Which fire extinguisher class should be used?",
+    "choices": [
+      "Class A",
+      "Class B",
+      "Class K",
+      "No extinguisher; pour water on it"
+    ],
+    "correct_index": 1,
+    "explanation": "Gasoline is a flammable liquid, so a Class B extinguisher is the correct choice. Class A is for ordinary solids like wood and paper, not liquids. Class K is for cooking-oil and grease fires in kitchens. Pouring water on burning gasoline spreads the fuel and the fire. Class B is the right choice for a gasoline fire.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::extinguisher-selection"
+  },
+  {
+    "external_key": "AS-B15-039",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A worker is about to repair a machine that could start unexpectedly. Which safety procedure prevents accidental start-up during the repair?",
+    "choices": [
+      "Wheel balancing",
+      "Tire rotation",
+      "Lockout/tagout",
+      "Oil change"
+    ],
+    "correct_index": 2,
+    "explanation": "Lockout/tagout shuts off and locks the energy source, then tags it, so the machine cannot be powered on while someone is working on it. Tire rotation, wheel balancing, and oil changes are maintenance tasks that do nothing to prevent unexpected start-up. Only lockout/tagout controls the energy source during a repair.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::lockout-tagout"
+  },
+  {
+    "external_key": "AS-B15-040",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A mechanic will be spraying paint in an enclosed booth with strong fumes. Which PPE is most important to add?",
+    "choices": [
+      "A back brace",
+      "Steel-toe boots",
+      "Ear plugs",
+      "A respirator"
+    ],
+    "correct_index": 3,
+    "explanation": "A respirator filters harmful paint fumes and vapors so they are not breathed into the lungs, which is the main hazard when spraying paint. Steel-toe boots protect the feet from impacts, not fumes. Ear plugs protect hearing. A back brace supports the back during lifting. A respirator addresses the breathing hazard.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::respirator"
+  },
+  {
+    "external_key": "AS-B15-041",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Why should oily shop rags be kept in a closed metal container rather than piled in a corner?",
+    "choices": [
+      "They are easier to count",
+      "They will dry out too quickly",
+      "They take up less floor space",
+      "They can spontaneously combust"
+    ],
+    "correct_index": 3,
+    "explanation": "Oily rags can heat up on their own as the oils oxidize, and piled together this heat can build until they catch fire, so a closed metal container limits oxygen and contains any fire. Keeping them dry is not the safety reason. Saving floor space and counting them are conveniences, not the hazard being controlled. Preventing spontaneous combustion is the reason.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::oily-rags"
+  },
+  {
+    "external_key": "AS-B15-042",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Before working under a vehicle on a slope, what should be done to keep it from rolling?",
+    "choices": [
+      "Leave it in neutral with no brake",
+      "Place wheel chocks against the tires",
+      "Open all the doors",
+      "Remove the wheels first"
+    ],
+    "correct_index": 1,
+    "explanation": "Wheel chocks are wedges placed against the tires to keep the vehicle from rolling, which is essential on a slope. Leaving it in neutral with no brake invites it to roll. Opening the doors does nothing to stop motion. Removing the wheels before securing the vehicle is dangerous. Wheel chocks prevent rolling.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::wheel-chocks"
+  },
+  {
+    "external_key": "AS-B15-043",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A label says a cleaning solvent is corrosive. What is the best practice when handling it?",
+    "choices": [
+      "Use bare hands for better grip",
+      "Wear chemical-resistant gloves and eye protection",
+      "Pour it down the storm drain when done",
+      "Mix it with other cleaners for strength"
+    ],
+    "correct_index": 1,
+    "explanation": "A corrosive solvent can burn skin and eyes, so chemical-resistant gloves and eye protection are required when handling it. Using bare hands exposes the skin to chemical burns. Pouring it down a storm drain is illegal and pollutes the environment. Mixing cleaners can create dangerous fumes or reactions. Wearing proper PPE is the best practice.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::chemical-handling"
+  },
+  {
+    "external_key": "AS-B15-044",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A grinding wheel must be operated. Which combination of PPE is most appropriate?",
+    "choices": [
+      "Sandals and shorts",
+      "Safety glasses and a face shield",
+      "A back brace only",
+      "Loose long sleeves and a necktie"
+    ],
+    "correct_index": 1,
+    "explanation": "Grinding throws sparks and particles, so safety glasses with a face shield protect the eyes and face, the parts most at risk. Sandals and shorts leave skin and feet exposed. A back brace alone protects nothing from sparks. Loose sleeves and a necktie can be caught by the spinning wheel and pull the worker in. Eye and face protection is the appropriate PPE.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::grinder-ppe"
+  },
+  {
+    "external_key": "AS-B15-045",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "An air compressor tank shows rust and a small leak at a weld. What is the safest action?",
+    "choices": [
+      "Keep using it at higher pressure",
+      "Take it out of service and have it inspected or replaced",
+      "Patch it with tape and keep working",
+      "Paint over the rust"
+    ],
+    "correct_index": 1,
+    "explanation": "A rusted, leaking pressure tank can rupture violently, so it should be taken out of service and inspected or replaced. Raising the pressure makes a rupture more likely. Tape cannot safely hold pressurized air at a weld. Painting over rust hides the problem without fixing the weakened metal. Removing it from service is the safe action.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::compressor-safety"
+  },
+  {
+    "external_key": "AS-B15-046",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Why is it important to keep shop floors free of oil and clutter?",
+    "choices": [
+      "To improve the building's resale value",
+      "To prevent slips, trips, and falls",
+      "To make tools last longer",
+      "To reduce the electric bill"
+    ],
+    "correct_index": 1,
+    "explanation": "Oil spills and clutter create slip, trip, and fall hazards, the most common cause of shop injuries, so keeping floors clean prevents those accidents. Resale value is not a safety concern. Floor cleanliness does not directly extend tool life. It does not affect the electric bill. Preventing slips, trips, and falls is the reason.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::housekeeping"
+  },
+  {
+    "external_key": "AS-B15-047",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the correct order of the four strokes in a four-stroke gasoline engine?",
+    "choices": [
+      "Compression, intake, exhaust, power",
+      "Intake, compression, power, exhaust",
+      "Power, exhaust, intake, compression",
+      "Exhaust, power, compression, intake"
+    ],
+    "correct_index": 1,
+    "explanation": "A four-stroke engine runs intake (draws in air and fuel), compression (squeezes the mixture), power (ignition pushes the piston down), then exhaust (pushes out burned gases). The other sequences scramble these steps out of order. Only intake, compression, power, exhaust is the correct cycle.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::four-stroke-cycle"
+  },
+  {
+    "external_key": "AS-B15-048",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the main job of the radiator in a cooling system?",
+    "choices": [
+      "To filter the fuel",
+      "To store engine oil",
+      "To generate electricity",
+      "To release heat from the coolant to the air"
+    ],
+    "correct_index": 3,
+    "explanation": "The radiator passes hot coolant through thin tubes and fins so air flowing across them carries the heat away, cooling the coolant before it returns to the engine. Engine oil is stored in the oil pan, not the radiator. Electricity is generated by the alternator. Fuel is cleaned by the fuel filter. Only releasing heat to the air describes the radiator.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::cooling-system"
+  },
+  {
+    "external_key": "AS-B15-049",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "Which component charges the battery and powers the electrical system while the engine runs?",
+    "choices": [
+      "Starter",
+      "Alternator",
+      "Radiator",
+      "Catalytic converter"
+    ],
+    "correct_index": 1,
+    "explanation": "The alternator is driven by the engine and produces electricity to recharge the battery and run the electrical system while the engine runs. The starter uses battery power to crank the engine and then stops. The radiator cools the engine. The catalytic converter cleans exhaust gases. Only the alternator charges the battery while running.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::charging-system"
+  },
+  {
+    "external_key": "AS-B15-050",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What part transfers engine power to the drive wheels and lets the driver change gear ratios?",
+    "choices": [
+      "Water pump",
+      "Muffler",
+      "Alternator",
+      "Transmission"
+    ],
+    "correct_index": 3,
+    "explanation": "The transmission takes power from the engine and, through different gear ratios, sends it to the drive wheels for a range of speeds and torque. The muffler quiets exhaust noise. The alternator generates electricity. The water pump circulates coolant. Only the transmission changes gear ratios to drive the wheels.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::drivetrain"
+  },
+  {
+    "external_key": "AS-B15-051",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the main purpose of engine oil in the lubrication system?",
+    "choices": [
+      "To ignite the fuel",
+      "To reduce friction between moving parts",
+      "To cool the cabin",
+      "To inflate the tires"
+    ],
+    "correct_index": 1,
+    "explanation": "Engine oil coats moving parts with a film that reduces friction and wear, and also helps carry away heat. Igniting the fuel is the job of the spark plug. Cabin cooling is handled by the air-conditioning system. Tire inflation comes from compressed air. Only reducing friction describes the role of engine oil.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::lubrication"
+  },
+  {
+    "external_key": "AS-B15-052",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What does the catalytic converter in the exhaust system do?",
+    "choices": [
+      "Increases engine horsepower",
+      "Reduces harmful emissions in the exhaust",
+      "Cools the engine coolant",
+      "Charges the battery"
+    ],
+    "correct_index": 1,
+    "explanation": "The catalytic converter uses a catalyst to change harmful exhaust gases into less harmful ones, reducing emissions. It does not add horsepower; it is part of the emissions system. Coolant is cooled by the radiator. The battery is charged by the alternator. Only reducing harmful emissions describes the catalytic converter.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::exhaust-system"
+  },
+  {
+    "external_key": "AS-B15-053",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "In a manual-transmission vehicle, what does the clutch do?",
+    "choices": [
+      "Filters the engine oil",
+      "Stores brake fluid",
+      "Cools the exhaust",
+      "Connects and disconnects the engine from the transmission"
+    ],
+    "correct_index": 3,
+    "explanation": "The clutch engages and disengages the connection between the engine and the transmission, allowing the driver to shift gears and stop without stalling. Brake fluid is held in the master cylinder and reservoir. The exhaust is cooled by airflow, not the clutch. Oil is cleaned by the oil filter. Only connecting and disconnecting the engine and transmission describes the clutch.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::clutch"
+  },
+  {
+    "external_key": "AS-B15-054",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What does the thermostat in a cooling system control?",
+    "choices": [
+      "The air pressure in the tires",
+      "The amount of fuel injected",
+      "The brightness of the headlights",
+      "The flow of coolant based on engine temperature"
+    ],
+    "correct_index": 3,
+    "explanation": "The thermostat is a temperature-sensitive valve that stays closed until the engine warms up, then opens to let coolant flow to the radiator, keeping the engine at the right temperature. Fuel delivery is managed by the injection system. Headlight brightness is an electrical function. Tire pressure comes from compressed air. Only controlling coolant flow by temperature describes the thermostat.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::thermostat"
+  },
+  {
+    "external_key": "AS-B15-055",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "Which part uses electrical power from the battery to crank the engine when starting the vehicle?",
+    "choices": [
+      "Radiator",
+      "Muffler",
+      "Differential",
+      "Starter motor"
+    ],
+    "correct_index": 3,
+    "explanation": "The starter motor draws power from the battery to spin the engine fast enough to begin the combustion cycle when the key is turned. The muffler quiets exhaust noise. The differential splits power between drive wheels. The radiator cools the engine. Only the starter motor cranks the engine.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::starter"
+  },
+  {
+    "external_key": "AS-B15-056",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "During which stroke of a four-stroke engine does the spark plug fire to ignite the fuel mixture?",
+    "choices": [
+      "At the start of the intake stroke",
+      "Near the end of the compression stroke",
+      "During the exhaust stroke",
+      "While the engine is off"
+    ],
+    "correct_index": 1,
+    "explanation": "The spark plug fires near the end of the compression stroke, when the mixture is fully compressed, so the burning gases drive the piston down on the power stroke. Firing at the start of intake would ignite an incomplete charge. Firing during exhaust would waste the spark on burned gases. The engine off means no combustion at all. Ignition near the end of compression is correct.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::ignition-timing"
+  },
+  {
+    "external_key": "AS-B15-057",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A car's headlights dim and the battery keeps dying even after a recharge. Which component is the most likely cause?",
+    "choices": [
+      "A leaking radiator",
+      "A clogged air filter",
+      "A worn brake pad",
+      "A faulty alternator"
+    ],
+    "correct_index": 3,
+    "explanation": "If the alternator fails, the battery is not recharged while the engine runs, so it drains and the lights dim. A clogged air filter affects engine breathing and power, not charging. A worn brake pad affects braking. A leaking radiator causes overheating. A faulty alternator best explains a battery that will not stay charged.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::charging-diagnosis"
+  },
+  {
+    "external_key": "AS-B15-058",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What is the main purpose of the differential in a vehicle's drivetrain?",
+    "choices": [
+      "To boost radio signal",
+      "To store engine coolant",
+      "To filter the cabin air",
+      "To let the drive wheels turn at different speeds in a turn"
+    ],
+    "correct_index": 3,
+    "explanation": "The differential lets the two drive wheels rotate at different speeds, which is needed in a turn because the outside wheel travels farther than the inside wheel. It does not store coolant, which the radiator and reservoir handle. It does not filter cabin air. It has nothing to do with radio signal. Allowing different wheel speeds in a turn is its purpose.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::differential"
+  },
+  {
+    "external_key": "AS-B15-059",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "Why do most vehicles use hydraulic fluid in the brake system?",
+    "choices": [
+      "It increases fuel economy",
+      "It makes the engine run cooler",
+      "It charges the battery",
+      "Liquid transmits the pedal force to the brakes at each wheel"
+    ],
+    "correct_index": 3,
+    "explanation": "Brake fluid is nearly incompressible, so pressing the pedal pushes the fluid and transmits that force evenly through the lines to the brakes at each wheel. Brake fluid does not cool the engine, which the coolant does. It does not charge the battery, which is the alternator's job. It does not affect fuel economy. Transmitting pedal force to the wheels is why hydraulic fluid is used.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::hydraulic-brakes"
+  },
+  {
+    "external_key": "AS-B15-060",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What does an ABS (anti-lock braking system) do during hard braking?",
+    "choices": [
+      "Charges the battery faster",
+      "Increases engine horsepower",
+      "Cools the brake fluid",
+      "Keeps the wheels from locking up so the driver can steer"
+    ],
+    "correct_index": 3,
+    "explanation": "ABS rapidly pulses brake pressure to keep the wheels from locking and skidding during hard braking, letting the driver keep steering control. It does not change engine horsepower. It does not cool brake fluid. It has no role in charging the battery. Preventing wheel lockup so the driver can steer is what ABS does.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::abs"
+  },
+  {
+    "external_key": "AS-B15-061",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A driver notices the engine temperature rising and the coolant level is fine, but the water pump belt is broken. Why would that cause overheating?",
+    "choices": [
+      "The transmission will not shift",
+      "The fuel will not ignite",
+      "The headlights stop working",
+      "The water pump can no longer circulate coolant through the engine"
+    ],
+    "correct_index": 3,
+    "explanation": "The water pump circulates coolant through the engine and radiator; if its drive belt is broken, the pump stops and coolant no longer moves, so heat builds and the engine overheats. A broken pump belt does not stop the spark that ignites fuel. It does not control the headlights. It does not affect transmission shifting. Loss of coolant circulation is why it overheats.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::water-pump"
+  },
+  {
+    "external_key": "AS-B15-062",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "On the power stroke of a four-stroke engine, what produces the force that pushes the piston down?",
+    "choices": [
+      "The coolant flowing past the cylinder",
+      "The exhaust leaving the cylinder",
+      "Fresh air being drawn in",
+      "The burning, expanding fuel-air mixture"
+    ],
+    "correct_index": 3,
+    "explanation": "On the power stroke, the ignited fuel-air mixture burns and expands rapidly, and that high pressure forces the piston down to turn the crankshaft. Exhaust leaving happens on the exhaust stroke, after power. Fresh air drawn in occurs on the intake stroke. Coolant flowing only carries away heat and does not move the piston. The expanding burning mixture produces the power.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::four-stroke-cycle"
+  },
+  {
+    "external_key": "AS-B15-063",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A vehicle's brakes feel spongy and the pedal sinks toward the floor. Which is the most likely cause?",
+    "choices": [
+      "Low tire pressure",
+      "A dead battery",
+      "A clogged air filter",
+      "Air trapped in the brake lines"
+    ],
+    "correct_index": 3,
+    "explanation": "Air in the brake lines compresses when the pedal is pressed, giving a soft, spongy feel and a sinking pedal, which is fixed by bleeding the brakes. A dead battery affects starting and electronics, not pedal feel. A clogged air filter affects engine breathing. Low tire pressure changes handling, not the brake pedal. Air in the lines best explains a spongy pedal.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::brake-symptom"
+  },
+  {
+    "external_key": "AS-B15-064",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What is the primary job of the suspension system, including the shock absorbers and springs?",
+    "choices": [
+      "To charge the battery",
+      "To ignite the fuel mixture",
+      "To cool the engine",
+      "To smooth the ride and keep the tires in contact with the road"
+    ],
+    "correct_index": 3,
+    "explanation": "The suspension, using springs and shock absorbers, absorbs bumps to smooth the ride and keeps the tires pressed against the road for traction and control. Igniting the fuel is the ignition system's job. Cooling the engine is the cooling system's role. Charging the battery is done by the alternator. Smoothing the ride and maintaining tire contact is the suspension's primary job.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::suspension"
+  }
+]

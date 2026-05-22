@@ -157,5 +157,19 @@ insert into test_variants (code, name, rules, active) values
       "note": "v3 only — requires ~250-350 question bank"
     }'::jsonb,
     false
+  ),
+
+  (
+    'daily_challenge',
+    'Daily Challenge',
+    '{
+      "length": 10,
+      "time_seconds": 720,
+      "mix": "interleaved",
+      "afqt_eligible": false,
+      "subtest_locked": null,
+      "note": "10 interleaved questions; banks misses via ingest_attempt_mistakes"
+    }'::jsonb,
+    true
   )
 ;

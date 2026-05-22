@@ -1,0 +1,801 @@
+[
+  {
+    "external_key": "AO-B17-001",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A cube has colored stickers: top = red, bottom = yellow, front = blue, back = green, left = white, right = black. The cube is rotated 90 degrees to the left around the vertical axis (the left face swings to the front). What color is now facing you (the front)?",
+    "choices": [
+      "Blue",
+      "Green",
+      "Black",
+      "White"
+    ],
+    "correct_index": 3,
+    "explanation": "Rotating 90 degrees to the left around the vertical axis swings the left face forward to become the new front. The left face is white, so white now faces you. 'Blue' is the trap of forgetting the cube moved at all (blue was the original front). 'Black' confuses left rotation with right rotation, which would bring the right face (black) forward. 'Green' jumps to the opposite face, which would need a 180 degree turn, not 90.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::vertical-axis-spin"
+  },
+  {
+    "external_key": "AO-B17-002",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A cube has colored stickers: top = red, bottom = yellow, front = blue, back = green, left = white, right = black. The cube is rotated 90 degrees to the left around the vertical axis (the left face swings to the front). The top and bottom faces sit on the axis of rotation. What color is now on top?",
+    "choices": [
+      "White",
+      "Black",
+      "Red",
+      "Yellow"
+    ],
+    "correct_index": 2,
+    "explanation": "A rotation around the vertical axis only moves the four side faces; the top and bottom faces lie on the axis and stay put. The top was red and remains red. 'White' and 'Black' grab side faces, which would only reach the top if the cube were tilted (a horizontal-axis rotation), not spun. 'Yellow' would require flipping the cube upside down.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::vertical-axis-spin"
+  },
+  {
+    "external_key": "AO-B17-003",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A cube rests on a table. Its top face is marked with a star. The cube is tipped over to the right, rotating 90 degrees around its bottom-right edge (the top tilts toward the right side). After this single quarter turn, where is the star face now pointing?",
+    "choices": [
+      "Still on top",
+      "Facing left",
+      "Facing right",
+      "On the bottom"
+    ],
+    "correct_index": 2,
+    "explanation": "Tipping the cube 90 degrees over its bottom-right edge swings the top face down toward the right, so the star ends up on the right-facing side. The original right face rotates down to the table (new bottom), the original bottom swings up to the left side, and the original left face moves to the top. 'Still on top' ignores the rotation. 'Facing left' reverses the tip direction. 'On the bottom' would require a 180 degree flip, not a single 90 degree tip.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::single-tip"
+  },
+  {
+    "external_key": "AO-B17-004",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A tall rectangular box stands upright with its longest dimension vertical, like a refrigerator. You walk around and view it from directly above (a bird's-eye view looking straight down). What shape do you see?",
+    "choices": [
+      "A rectangle that is wider than it is tall (the footprint)",
+      "A tall rectangle",
+      "A square only if the box is a cube",
+      "A triangle"
+    ],
+    "correct_index": 0,
+    "explanation": "Looking straight down at any box shows only its top face, which is the footprint of the box. For a fridge-shaped box standing upright, the footprint is a flat rectangle (its base outline), generally wider than deep. The tall vertical dimension is hidden because you are looking down its length. 'A tall rectangle' describes the front view, not the top view. The square option is a distractor about a special case that the stem does not state. A box never projects as a triangle from a face-on overhead view.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::viewing-direction"
+  },
+  {
+    "external_key": "AO-B17-005",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A cube has top = white, bottom = black, front = red, back = green, left = blue, right = yellow. The cube is flipped forward 90 degrees, pivoting around its front-bottom edge (the top tilts toward you and the front goes down to the table). What color is now on the bottom (touching the table)?",
+    "choices": [
+      "Black",
+      "White",
+      "Green",
+      "Red"
+    ],
+    "correct_index": 3,
+    "explanation": "Pivoting forward around the front-bottom edge sends the front face straight down onto the table, so the red front becomes the new bottom. The top (white) swings forward to become the new front, the bottom (black) swings up and back to become the new back, and the back (green) rises to the top. 'Black' is the trap of assuming the old bottom stays on the bottom. 'White' was the top, which becomes the front. 'Green' becomes the top, not the bottom.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::single-tip"
+  },
+  {
+    "external_key": "AO-B17-006",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A cube has top = white, bottom = black, front = red, back = green, left = blue, right = yellow. The cube is rotated 90 degrees to the right around the vertical axis (right face swings to the front), and then tipped forward 90 degrees around its new front-bottom edge (the new top tilts toward you, the new front goes down). What color is now on top?",
+    "choices": [
+      "Blue",
+      "Red",
+      "White",
+      "Green"
+    ],
+    "correct_index": 0,
+    "explanation": "Step 1, spin right around the vertical axis: top stays white, bottom stays black, and the sides cycle so the new front is yellow (old right), new right is green (old back), new back is blue (old left), new left is red (old front). Step 2, tip forward around the new front-bottom edge: the new front (yellow) goes to the bottom, the top (white) swings to the front, the bottom (black) swings to the back, and the back face (blue) rises to the top. So blue is now on top. 'White' forgets the second tip moves the top to the front. 'Red' and 'Green' are side faces that end up left and right, not on top.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::two-step-rotation"
+  },
+  {
+    "external_key": "AO-B17-007",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A cube has top = white, bottom = black, front = red, back = green, left = blue, right = yellow. The cube is tipped to the left 90 degrees (around its bottom-left edge, the top tilting toward the left), then tipped to the left 90 degrees again the same way. What color is now on top?",
+    "choices": [
+      "Black",
+      "White",
+      "Yellow",
+      "Blue"
+    ],
+    "correct_index": 0,
+    "explanation": "Each left tip is a 90 degree rotation around the front-to-back horizontal axis. One tip: top (white) goes to the left, left (blue) goes to the bottom, bottom (black) goes to the right, right (yellow) goes to the top. Second identical tip: the current top (yellow) goes to the left, current left (white) goes to the bottom, current bottom (blue) goes to the right, current right (black) goes to the top. Two left tips equal a 180 degree roll, so the original top and bottom swap: black is now on top. 'White' ignores that 180 degrees flips top and bottom. 'Yellow' stops after only one tip. 'Blue' is a side face, not the top.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::two-step-rotation"
+  },
+  {
+    "external_key": "AO-B17-008",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A cylinder (like a soup can) is lying on its side on a table so it can roll. You view it from directly above, looking straight down. What shape do you see?",
+    "choices": [
+      "A circle",
+      "A triangle",
+      "An oval that is taller than it is wide",
+      "A rectangle"
+    ],
+    "correct_index": 3,
+    "explanation": "A can lying on its side shows its curved body to an overhead viewer. Looking straight down, the outline of that curved surface projects as a rectangle: the can's length in one direction and its diameter in the other. The circular ends point sideways, not up, so you do not see a circle from above. 'A circle' is the view you would get looking down a standing can. 'An oval' confuses a tilted perspective with a straight overhead projection. A cylinder never projects as a triangle.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::viewing-direction"
+  },
+  {
+    "external_key": "AO-B17-009",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A cube has top = white, bottom = black, front = red, back = green, left = blue, right = yellow. It is rotated 180 degrees around the vertical axis (spun halfway around so the front and back swap). What color is now facing you (the front), and is the top color changed?",
+    "choices": [
+      "Front = green, top still white",
+      "Front = blue, top now black",
+      "Front = green, top now black",
+      "Front = red, top still white"
+    ],
+    "correct_index": 0,
+    "explanation": "A 180 degree spin around the vertical axis swaps front with back and swaps left with right, but leaves top and bottom fixed because they sit on the axis. So the back (green) comes around to the front, and the top stays white. 'Front = blue, top now black' wrongly moves a side to the front and flips the top. 'Front = green, top now black' is right about the front but wrongly flips the top. 'Front = red' forgets the cube turned at all.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::half-turn-spin"
+  },
+  {
+    "external_key": "AO-B17-010",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A square-based pyramid (four triangular sides meeting at a point on top, sitting on its square base) is viewed from directly above, looking straight down at the apex. What shape outline do you see?",
+    "choices": [
+      "A triangle",
+      "A square with diagonal lines from each corner to the center",
+      "A circle",
+      "A single point only"
+    ],
+    "correct_index": 1,
+    "explanation": "Viewed straight down, the outer outline of the pyramid is its square base. The apex sits directly above the center, and the four sloping edges from the base corners to the apex project as four diagonal lines running from each corner inward to the center point. So you see a square with an X-like set of diagonals to the middle. 'A triangle' is a side view, not an overhead view. 'A circle' would be a cone, not a square pyramid. 'A single point only' ignores the visible base outline.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::pyramid-projection"
+  },
+  {
+    "external_key": "AO-B17-011",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A flat net is shaped like a plus sign (cross): one square in the center, plus one square attached to each of the center square's four edges (top, bottom, left, right), and one more square attached to the outer edge of the top arm. That is 6 squares total. When folded along all the shared edges, what 3D shape is formed?",
+    "choices": [
+      "An open-top box",
+      "A cube",
+      "A rectangular prism that is not a cube",
+      "A triangular prism"
+    ],
+    "correct_index": 1,
+    "explanation": "Six identical squares is exactly the number needed for a cube, and this layout is a classic valid cube net: the central square plus its four neighbors wrap around to form four sides, a top, and a bottom, while the sixth square (on the top arm) folds over to close the remaining open face. 'An open-top box' uses only 5 squares; here there are 6, so no face is left open. A 'rectangular prism that is not a cube' requires non-square faces. A 'triangular prism' needs triangles, not squares.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::cube-net-id"
+  },
+  {
+    "external_key": "AO-B17-012",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A flat net consists of five identical squares: one center square with one square attached to each of its four edges (a plus sign with no extra squares). When folded up along the shared edges, what 3D shape is formed?",
+    "choices": [
+      "A cube",
+      "A pyramid",
+      "A rectangular prism",
+      "An open-top box (five faces, one face missing)"
+    ],
+    "correct_index": 3,
+    "explanation": "Five squares fold into a box with a bottom and four upright sides but no lid, because a cube needs six faces and only five are present. The center square becomes the bottom and the four attached squares fold up to become the walls, leaving the top open. 'A cube' needs all six faces. 'A rectangular prism' would still be six faces. 'A pyramid' would require triangular sides meeting at a point, not four squares.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::cube-net-id"
+  },
+  {
+    "external_key": "AO-B17-013",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A flat net is made of one square base with four identical triangles attached, one to each edge of the square, all pointing outward. When the four triangles are folded upward so their tips meet at a single point above the center, what 3D shape is formed?",
+    "choices": [
+      "A cube",
+      "A triangular prism",
+      "A square-based pyramid",
+      "A cone"
+    ],
+    "correct_index": 2,
+    "explanation": "A square base with four triangles that fold up to meet at one apex point is the definition of a square-based pyramid (think of the great pyramids). 'A cube' would need six square faces. 'A triangular prism' has two triangular ends and three rectangular sides, not four triangles around a square. 'A cone' has a circular base and a curved surface, not flat triangles.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::solid-from-net"
+  },
+  {
+    "external_key": "AO-B17-014",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A flat net has two identical triangles and three rectangles. The three rectangles are joined edge to edge in a row, and one triangle is attached to the top edge of the middle rectangle while the other triangle is attached to the bottom edge of that same middle rectangle. When folded, what 3D shape is formed?",
+    "choices": [
+      "A triangular prism",
+      "A square-based pyramid",
+      "A cube",
+      "A cylinder"
+    ],
+    "correct_index": 0,
+    "explanation": "A triangular prism has two triangular ends and three rectangular sides. The three rectangles wrap around to form the three side walls, and the two triangles fold to cap the two open ends, exactly matching this net. 'A square-based pyramid' has one base and four triangles meeting at a point, not two triangles plus three rectangles. 'A cube' has six squares. 'A cylinder' has curved surfaces and circular ends, which flat rectangles and triangles cannot form.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::solid-from-net"
+  },
+  {
+    "external_key": "AO-B17-015",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A cube net is laid out as a vertical column of three squares (top, middle, bottom) with one extra square attached to the right edge of the middle square and one extra square attached to the left edge of the middle square. That is 5 squares forming a plus-like shape. How many squares must be added, and where, to make a complete cube net?",
+    "choices": [
+      "No squares needed; it already folds into a cube",
+      "Three squares",
+      "Two squares",
+      "One square, on the far (outer) edge of any one of the four arms"
+    ],
+    "correct_index": 3,
+    "explanation": "A cube has six faces and this net has only five, so exactly one more is needed. The five squares form a plus shape: the middle square is the base and the four arms fold up as the four walls, leaving the top open. Adding one square to the free outer edge of any one of those four arms supplies the lid and closes the cube. Adding two or three squares would exceed six faces. Saying none are needed ignores that five squares fold into an open box, not a closed cube.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::complete-the-net"
+  },
+  {
+    "external_key": "AO-B17-016",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A cube net is drawn as a row of four squares left to right (labeled 1, 2, 3, 4) with one square attached above square 2 and one square attached below square 2. When folded into a cube, which face ends up directly opposite square 2?",
+    "choices": [
+      "Square 1",
+      "Square 3",
+      "Square 4",
+      "The square above square 2"
+    ],
+    "correct_index": 2,
+    "explanation": "In a row of four squares, opposite faces are two apart in the chain: square 2 folds opposite square 4, and square 1 folds opposite square 3. The squares attached above and below square 2 become the top and bottom faces, opposite each other. So square 4 is directly opposite square 2. 'Square 1' is adjacent to square 2, not opposite. 'Square 3' is opposite square 1. The square above square 2 becomes a top/bottom face, opposite the square below it, not opposite square 2.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::opposite-faces"
+  },
+  {
+    "external_key": "AO-B17-017",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A cube net is a row of four squares left to right labeled A, B, C, D, with one square labeled E attached above square B and one square labeled F attached below square C. When folded into a cube, which face is opposite square E?",
+    "choices": [
+      "Square F",
+      "Square A",
+      "Square B",
+      "Square D"
+    ],
+    "correct_index": 0,
+    "explanation": "Trace the fold: the four-square row A-B-C-D wraps around as the four side faces (A opposite C, B opposite D). E (above B) and F (below C) become the remaining two faces, the top and the bottom, which are opposite each other. So E is opposite F. 'Square B' is the face E folds onto and shares an edge with, so it is adjacent, not opposite. 'Square A' and 'Square D' are side faces adjacent to the top and bottom, not opposite E.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::opposite-faces"
+  },
+  {
+    "external_key": "AO-B17-018",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A standard six-sided die is folded from a cube net. On a real die, the numbers on opposite faces always add up to 7. If one face shows 2 and the face that will fold to be directly opposite it must follow that rule, what number is on the opposite face?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_index": 2,
+    "explanation": "Opposite faces of a standard die sum to 7. The face opposite 2 must be 7 minus 2, which equals 5. 'The 3' pairs with 4, 'the 4' pairs with 3, and 'the 6' pairs with 1, so none of those are opposite the 2.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::die-opposite-sum"
+  },
+  {
+    "external_key": "AO-B17-019",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A cube net is shaped like a capital T: a vertical column of four squares (top to bottom: P, Q, R, S) with one square attached to the left edge of the top square P and one square attached to the right edge of the top square P. When folded into a cube, which square is opposite square R?",
+    "choices": [
+      "Square P",
+      "Square Q",
+      "Square S",
+      "The square left of P"
+    ],
+    "correct_index": 0,
+    "explanation": "In the vertical chain P-Q-R-S, faces two apart in the chain are opposite: P is opposite R, and Q is opposite S. The two squares attached to the left and right of P become opposite each other (the remaining pair). So square R is opposite square P. 'Square Q' shares an edge with R, making it adjacent. 'Square S' is opposite Q, not R. The square left of P is part of the other opposite pair.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::opposite-faces-tnet"
+  },
+  {
+    "external_key": "AO-B17-020",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A flat net is made of six identical squares arranged in a single straight row of all six in a line, attached edge to edge. If you try to fold this along the shared edges, what happens?",
+    "choices": [
+      "It folds into a perfect cube",
+      "It cannot form a cube; two faces overlap and one face is left missing",
+      "It folds into an open-top box",
+      "It folds into a rectangular prism"
+    ],
+    "correct_index": 1,
+    "explanation": "A straight strip of six squares wraps around like a tube, but four squares already complete the loop around the four sides; the fifth and sixth squares wrap back over faces that are already covered, causing overlap, while no squares are positioned to cap the two open ends. So it cannot form a closed cube. A valid cube net must have squares branching off to reach the top and bottom faces, which a straight line never provides. 'A cube,' 'an open-top box,' and 'a rectangular prism' all require faces in positions the straight strip does not offer.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::invalid-net"
+  },
+  {
+    "external_key": "AO-B17-021",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 1,
+    "stem": "Two identical right triangles are given. Each has two legs of equal length (a 45-45-90 triangle). The two triangles are joined edge to edge along their hypotenuses (the longest side), with one flipped so the right-angle corners end up on opposite ends. What single shape results?",
+    "choices": [
+      "A larger triangle",
+      "A square",
+      "A parallelogram",
+      "A pentagon"
+    ],
+    "correct_index": 1,
+    "explanation": "Two identical 45-45-90 right triangles joined along their hypotenuses, with one reflected, place the two right-angle corners diagonally opposite and line the equal legs up edge to edge. Because both legs are equal, the four outer edges are all the same length and meet at right angles, forming a square. 'A larger triangle' would come from joining along a leg, not the hypotenuse. 'A parallelogram' results from sliding (translating) one triangle rather than flipping it. 'A pentagon' has five sides; this figure has four.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::two-triangles"
+  },
+  {
+    "external_key": "AO-B17-022",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 1,
+    "stem": "Two identical right triangles, each with legs of different lengths (one short leg, one long leg, and a hypotenuse), are joined edge to edge along their matching long legs, with one triangle flipped so the right angles sit at opposite ends of that shared leg. What shape results?",
+    "choices": [
+      "A larger triangle (isosceles)",
+      "A rectangle",
+      "A square",
+      "A parallelogram"
+    ],
+    "correct_index": 0,
+    "explanation": "Joining two identical right triangles along a shared leg, with one reflected so the right angles are at opposite ends of that leg, makes the two short legs point outward in opposite directions and the two hypotenuses form the two equal slanted sides. The result is a larger isosceles triangle whose base equals twice the short leg and whose height equals the shared long leg. 'A rectangle' or 'square' would require joining along the hypotenuse with right angles preserved. 'A parallelogram' comes from sliding the second triangle rather than flipping it.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::two-triangles"
+  },
+  {
+    "external_key": "AO-B17-023",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 1,
+    "stem": "Two identical squares are placed edge to edge, sharing one full side, lying flat in the same plane. What single shape results?",
+    "choices": [
+      "A larger square",
+      "An L-shape",
+      "A triangle",
+      "A rectangle twice as long as it is tall"
+    ],
+    "correct_index": 3,
+    "explanation": "Two identical squares sharing one full edge span twice the width but only one square of height, giving a rectangle that is twice as long as it is tall (a 2:1 rectangle). 'A larger square' would require four squares (a 2-by-2 block) to double both dimensions. 'A triangle' cannot be made from two squares meeting on a full edge. 'An L-shape' would require offsetting the squares, but they share a full side here, keeping the outline a clean rectangle.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::squares"
+  },
+  {
+    "external_key": "AO-B17-024",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 1,
+    "stem": "Two identical equilateral triangles are joined edge to edge along one full side, with the second triangle flipped to point the opposite direction (one apex up, one apex down). What shape results?",
+    "choices": [
+      "A larger equilateral triangle",
+      "A square",
+      "A rhombus (diamond)",
+      "A regular hexagon"
+    ],
+    "correct_index": 2,
+    "explanation": "Two equilateral triangles sharing a full edge, oriented in opposite directions, form a rhombus (a four-sided diamond) because all four outer sides equal the triangle's side length and opposite angles match. 'A larger equilateral triangle' would require a small triangle to also fill a corner notch, not just two triangles base to base. 'A square' needs right angles, which equilateral triangles (60-degree angles) do not produce. 'A regular hexagon' needs six triangles around a center, not two.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::triangles-other"
+  },
+  {
+    "external_key": "AO-B17-025",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 1,
+    "stem": "Two identical half-circles (semicircles) are joined along their flat straight edges (the diameters), with the curved sides bulging in opposite directions. What shape results?",
+    "choices": [
+      "An oval (ellipse)",
+      "A full circle",
+      "A crescent",
+      "A square"
+    ],
+    "correct_index": 1,
+    "explanation": "Each semicircle is exactly half of a circle. Joining two identical semicircles along their straight diameter edges, with the curves bulging outward in opposite directions, reassembles the two halves into one complete circle. 'An oval' would require stretching the halves apart, but they share the full diameter edge here. 'A crescent' is one curve subtracted from another, not two halves joined. 'A square' has straight sides only.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::curved-pieces"
+  },
+  {
+    "external_key": "AO-B17-026",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 1,
+    "stem": "A square has a smaller square notch cut out of one corner, leaving an L-shaped piece. You are given that L-shaped piece plus the small square that was removed. When the small square is placed back into the notch, what shape results?",
+    "choices": [
+      "A rectangle",
+      "A complete square",
+      "A larger L-shape",
+      "A triangle"
+    ],
+    "correct_index": 1,
+    "explanation": "The L-shape is simply a square missing one corner square. Returning that exact small square to the notch fills the missing corner and restores the original complete square. 'A rectangle' would require the pieces to have different dimensions than described. 'A larger L-shape' would mean adding outside the outline rather than filling the notch. 'A triangle' cannot result from fitting two rectangular pieces together.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::notch-fit"
+  },
+  {
+    "external_key": "AO-B17-027",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 1,
+    "stem": "Four identical small squares are arranged in a 2-by-2 block, each sharing full edges with its neighbors. What single shape results?",
+    "choices": [
+      "A rectangle twice as long as it is tall",
+      "A triangle",
+      "A plus sign",
+      "A larger square"
+    ],
+    "correct_index": 3,
+    "explanation": "A 2-by-2 block of identical squares is two squares wide and two squares tall, doubling both dimensions equally, which produces a larger square. 'A rectangle twice as long as tall' would be a 1-by-2 (only two squares) or 1-by-4 strip, not a 2-by-2 block. 'A plus sign' needs five squares arranged in a cross. 'A triangle' cannot be tiled from four full squares meeting on edges.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::squares"
+  },
+  {
+    "external_key": "AO-B17-028",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 1,
+    "stem": "A right triangle and a rectangle are given. The rectangle's height equals the triangle's vertical leg, and the rectangle is placed so the triangle's vertical leg lines up flush against the rectangle's left side, with the triangle's right angle at the bottom-left and its slanted hypotenuse rising to the right. What is the outline of the combined figure?",
+    "choices": [
+      "A larger rectangle",
+      "A right trapezoid (a four-sided shape with one slanted side)",
+      "A larger triangle",
+      "A pentagon with five equal sides"
+    ],
+    "correct_index": 1,
+    "explanation": "The rectangle gives a flat bottom, a flat vertical side, and a flat top; attaching the right triangle along the matching vertical side, with its hypotenuse slanting, replaces one straight edge with a slanted one. The result has a bottom, a vertical side, a top, and one slanted side: a right trapezoid (four sides, one slanted). 'A larger rectangle' would need the added piece to keep all right angles. 'A larger triangle' would require removing the rectangle's flat top. The figure has four sides, not five, so it is not a pentagon.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::triangle-plus-rect"
+  },
+  {
+    "external_key": "AO-B17-029",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 2,
+    "stem": "You have four identical right triangles, each with two equal legs (45-45-90). They are arranged with all four right-angle corners pointing inward to meet at a single center point, and the hypotenuses forming the outer boundary. What shape does the outer boundary form?",
+    "choices": [
+      "A larger right triangle",
+      "A square",
+      "A rectangle that is not a square",
+      "A regular hexagon"
+    ],
+    "correct_index": 1,
+    "explanation": "Four identical 45-45-90 triangles with right angles meeting at the center each contribute one hypotenuse to the outer edge. The four right-angle vertices total 360 degrees, exactly filling the center with no gap, and the four equal hypotenuses become four equal outer sides meeting at right angles, forming a square. 'A larger right triangle' has only three sides, but four hypotenuses make four sides. 'A rectangle that is not a square' would need unequal sides, but all hypotenuses are equal. 'A regular hexagon' needs six outer edges, not four.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::four-triangles"
+  },
+  {
+    "external_key": "AO-B17-030",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 2,
+    "stem": "Six identical equilateral triangles are arranged around a single shared center point, each sharing one edge with the next, all pointing outward from the center. What shape does the combined figure form?",
+    "choices": [
+      "A regular hexagon",
+      "A circle",
+      "A six-pointed star",
+      "A pentagon"
+    ],
+    "correct_index": 0,
+    "explanation": "Each equilateral triangle has a 60-degree angle at its tip. Six tips meeting at the center sum to 6 times 60, which equals exactly 360 degrees, filling the area with no gaps or overlaps. The six outer edges (one base per triangle) form a closed boundary of six equal sides and six equal angles: a regular hexagon. 'A circle' would need infinitely many pieces. 'A six-pointed star' results when triangles point alternately in and out, not all from a shared center. 'A pentagon' has only five sides.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::triangles-other"
+  },
+  {
+    "external_key": "AO-B17-031",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 2,
+    "stem": "Two identical right triangles, each with legs of different lengths, are joined along their hypotenuses with one triangle flipped (reflected) so the right-angle corners land at opposite ends of the shared hypotenuse. What shape results?",
+    "choices": [
+      "A square",
+      "A rectangle",
+      "An isosceles triangle",
+      "A kite"
+    ],
+    "correct_index": 1,
+    "explanation": "When two congruent right triangles are joined along the hypotenuse with one reflected, the two right-angle corners sit at opposite ends, and the matching legs align to form four sides meeting at right angles. Because the original legs have different lengths, the result is a rectangle (a square only if the legs were equal). 'A square' requires equal legs, which the stem rules out. 'An isosceles triangle' comes from joining along a leg, not the hypotenuse. 'A kite' would require the triangles joined without reflection along two adjacent unequal sides.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::two-triangles-rectangle"
+  },
+  {
+    "external_key": "AO-B17-032",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 2,
+    "stem": "You have three pieces: two identical right trapezoids (each a four-sided shape with one slanted side, parallel top and bottom) and they are mirror images when one is flipped. If the two trapezoids are joined along their slanted sides, with one flipped so the slants match, what shape results?",
+    "choices": [
+      "A rectangle",
+      "A larger trapezoid",
+      "A triangle",
+      "A hexagon"
+    ],
+    "correct_index": 0,
+    "explanation": "Each right trapezoid has one vertical side, one slanted side, and parallel top and bottom. Flipping one and joining the two slanted sides cancels the slants against each other, leaving the two vertical sides on the outer left and right and the parallel tops and bottoms aligning into a flat top and bottom. The outline becomes a rectangle. 'A larger trapezoid' would keep a slanted side, but the slants were joined internally. 'A triangle' has three sides. 'A hexagon' would require six sides, but matching the slants removes them, leaving four.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::trapezoids"
+  },
+  {
+    "external_key": "AO-B17-033",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 2,
+    "stem": "A large square is divided by one diagonal line into two triangles. You are given those two triangle pieces. If you take one triangle and flip it over, then slide it next to the other so they share a leg (not the hypotenuse) and form a shape with the two hypotenuses on the outside, what is the resulting shape?",
+    "choices": [
+      "The original square again",
+      "A smaller square",
+      "A parallelogram",
+      "A larger triangle"
+    ],
+    "correct_index": 3,
+    "explanation": "Cutting a square along its diagonal yields two identical 45-45-90 right triangles. Joining them along a leg (with one flipped so the right angles sit at opposite ends of that shared leg) makes the two hypotenuses become the two equal slanted outer sides, producing a larger isosceles triangle. 'The original square' would come from rejoining along the diagonal (hypotenuse). 'A parallelogram' comes from sliding without flipping. 'A smaller square' is impossible because the combined area equals the original square's area, not less.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::two-triangles-leg"
+  },
+  {
+    "external_key": "AO-B17-034",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 2,
+    "stem": "A jigsaw piece is a square with a rounded tab sticking out of its right edge. A second jigsaw piece is a square with a matching rounded notch (a cavity) cut into its left edge, identical in size and shape to the first piece's tab. When the tab is inserted into the notch and the two squares are pushed together flush, what is the outline of the combined shape?",
+    "choices": [
+      "A square with a bump on the right",
+      "A rectangle twice as wide as one square",
+      "An hourglass shape",
+      "A circle"
+    ],
+    "correct_index": 1,
+    "explanation": "Because the tab on the first piece exactly matches the notch on the second, the tab fills the notch perfectly and the two square bodies sit flush side by side. The interlocking detail disappears into the seam, so the outer outline is just two squares in a row, a rectangle twice as wide as one square. 'A square with a bump' would mean the tab still protrudes, but it is buried in the matching notch. 'An hourglass' implies pinched middle, which flush squares do not create. 'A circle' has no straight edges.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::notch-fit"
+  },
+  {
+    "external_key": "AO-B17-035",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 2,
+    "stem": "Two identical right triangles, each with legs of different lengths, are joined along their matching SHORT legs, with one triangle slid (translated, not flipped) so both right angles point the same direction. The two hypotenuses end up parallel. What shape results?",
+    "choices": [
+      "A rectangle",
+      "An isosceles triangle",
+      "A parallelogram",
+      "A square"
+    ],
+    "correct_index": 2,
+    "explanation": "Sliding (translating) one triangle and joining short legs without reflecting it keeps both right angles pointing the same way, so the two hypotenuses come out parallel and the two long legs become the other pair of parallel sides. Opposite sides parallel and equal but no right angles at the joined corner makes a parallelogram. 'A rectangle' would require flipping one triangle so a straight rectangular boundary forms. 'An isosceles triangle' comes from reflecting along a leg. 'A square' needs equal sides and right angles, which differing legs and the slide do not give.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::two-triangles-parallelogram"
+  },
+  {
+    "external_key": "AO-B17-036",
+    "subtest": "AO",
+    "topic_id": "ao.pattern-assembly",
+    "difficulty": 2,
+    "stem": "You have one square and four identical right triangles, each triangle's longest leg equal to the square's side. The square is placed in the center, and one triangle is attached to each of the square's four sides, with each triangle's right angle at the square's corner and the hypotenuse pointing outward. What is the outer outline of the whole figure?",
+    "choices": [
+      "A regular octagon",
+      "A larger tilted square (a diamond shape)",
+      "A circle",
+      "A plus sign"
+    ],
+    "correct_index": 1,
+    "explanation": "Placing a right triangle on each side of the square with the hypotenuses facing outward turns the four flat sides into four slanted edges. With four identical triangles, those four hypotenuses are equal and meet at right angles at the outer tips, so the outline is a larger square tilted relative to the original (a diamond). 'A regular octagon' would need eight outer edges, but there are only four hypotenuses. 'A circle' has no straight edges. 'A plus sign' would result if the triangles pointed inward as notches, not outward as added points.",
+    "status": "verified",
+    "item_family_id": "ao.pattern-assembly::triangle-plus-rect"
+  },
+  {
+    "external_key": "AO-B17-037",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A solid block is built from small identical cubes arranged 3 cubes long, 2 cubes wide, and 2 cubes tall, with no gaps. How many small cubes are in the block?",
+    "choices": [
+      "7",
+      "10",
+      "12",
+      "14"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply the three dimensions: 3 times 2 times 2 equals 12 cubes. '7' adds the dimensions instead of multiplying (3+2+2). '10' is a miscount. '14' over-counts. The block is full and solid, so every position is filled.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::block-volume"
+  },
+  {
+    "external_key": "AO-B17-038",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A standard cube (like a box) has how many faces, edges, and vertices (corners)?",
+    "choices": [
+      "6 faces, 12 edges, 8 vertices",
+      "8 faces, 12 edges, 6 vertices",
+      "6 faces, 8 edges, 12 vertices",
+      "4 faces, 8 edges, 8 vertices"
+    ],
+    "correct_index": 0,
+    "explanation": "A cube has 6 flat square faces, 12 straight edges where faces meet, and 8 corner vertices. The other options swap the numbers around: 8 faces and 6 vertices reverses faces and corners, and 8 edges or 4 faces simply undercount the standard cube.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::solid-features"
+  },
+  {
+    "external_key": "AO-B17-039",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "Cubes are stacked into three columns standing side by side in a row: the left column is 2 cubes tall, the middle column is 4 cubes tall, and the right column is 1 cube tall. Each column is 1 cube wide and 1 cube deep. How many cubes are there in total?",
+    "choices": [
+      "6",
+      "9",
+      "8",
+      "7"
+    ],
+    "correct_index": 3,
+    "explanation": "Add the heights of the columns: 2 plus 4 plus 1 equals 7 cubes. '6' drops one cube, '8' adds one, and '9' over-counts. Since each column is one cube wide and deep, the count is simply the sum of the heights.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::column-stack"
+  },
+  {
+    "external_key": "AO-B17-040",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A square-based pyramid (a square bottom with four triangular sides meeting at one apex point) has how many vertices (corners)?",
+    "choices": [
+      "4",
+      "8",
+      "6",
+      "5"
+    ],
+    "correct_index": 3,
+    "explanation": "A square base has 4 corners, and the single apex point on top adds 1 more, for a total of 5 vertices. '4' counts only the base and forgets the apex. '6' and '8' over-count, perhaps confusing the pyramid with a prism or cube.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::solid-features"
+  },
+  {
+    "external_key": "AO-B17-041",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A solid cube measuring 2 cubes by 2 cubes by 2 cubes is built from 8 small cubes. The whole outside surface is painted. How many of the small cubes have at least one painted face?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "0"
+    ],
+    "correct_index": 2,
+    "explanation": "In a 2x2x2 cube, every one of the 8 small cubes sits on a corner of the big cube, so each touches the outside surface and gets paint on at least one face. There is no hidden interior cube in a 2x2x2 block (an interior would first appear at 3x3x3). So all 8 are painted. '4' and '6' assume some cubes are hidden, but none are. '0' is the opposite error.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::painted-cube-2x2"
+  },
+  {
+    "external_key": "AO-B17-042",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 2,
+    "stem": "A solid block is 3 cubes long, 3 cubes wide, and 2 cubes tall, made of small identical cubes with no gaps. It sits on a table. Looking at the block from any outside angle, how many small cubes are completely hidden from view (touching no outside surface, including the bottom that rests on the table)?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "A small cube is fully hidden only if it is surrounded on all six faces by other cubes, meaning it must have at least one cube on every side: left, right, front, back, top, and bottom. That requires the block to be at least 3 cubes in every dimension. Here the height is only 2, so every cube touches either the top face or the bottom face (the table side counts as an exposed bottom). Therefore zero cubes are fully interior. '1', '2', and '3' assume an interior layer that a 2-tall block cannot have.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::hidden-cubes"
+  },
+  {
+    "external_key": "AO-B17-043",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 2,
+    "stem": "A solid 3-by-3-by-3 cube is built from 27 small cubes. The entire outer surface is painted, then the cube is taken apart. How many of the small cubes have NO paint at all (were completely inside)?",
+    "choices": [
+      "0",
+      "8",
+      "6",
+      "1"
+    ],
+    "correct_index": 3,
+    "explanation": "In a 3x3x3 cube, exactly one small cube sits in the very center, surrounded on all six sides by other cubes, so it never touches the painted surface. That single center cube is the only one with no paint. '8' is the count of corner cubes (which have THREE painted faces, the opposite of unpainted). '6' is the count of face-center cubes (one painted face each). '0' wrongly assumes no interior cube exists.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::painted-cube"
+  },
+  {
+    "external_key": "AO-B17-044",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 2,
+    "stem": "A solid 3-by-3-by-3 cube is built from 27 small cubes and the whole outside is painted. How many of the small cubes have exactly THREE painted faces?",
+    "choices": [
+      "6",
+      "8",
+      "12",
+      "1"
+    ],
+    "correct_index": 1,
+    "explanation": "A small cube gets three painted faces only at the corners of the big cube, where three outer surfaces meet. A cube has exactly 8 corners, so 8 small cubes have three painted faces. '12' is the count of edge cubes (two painted faces each, one on each of the 12 edges). '6' is the count of face-center cubes (one painted face). '1' is the single hidden center cube (zero painted faces).",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::painted-cube"
+  },
+  {
+    "external_key": "AO-B17-045",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 2,
+    "stem": "Cubes are stacked to form a pyramid-style staircase. The bottom layer is a 3-by-3 square of cubes, the middle layer is a 2-by-2 square of cubes centered on top, and the top layer is a single 1 cube centered on that. How many cubes are used in total?",
+    "choices": [
+      "12",
+      "13",
+      "14",
+      "9"
+    ],
+    "correct_index": 2,
+    "explanation": "Count each layer and add: bottom 3x3 equals 9 cubes, middle 2x2 equals 4 cubes, top equals 1 cube. 9 plus 4 plus 1 equals 14. '9' counts only the bottom layer. '12' misses two cubes. '13' is off by one. Each layer is solid, so no positions are empty.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::column-stack"
+  },
+  {
+    "external_key": "AO-B17-046",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A flat net is folded into a triangular prism (two triangular ends and three rectangular sides). Once folded, how many total edges does the prism have?",
+    "choices": [
+      "6",
+      "5",
+      "12",
+      "9"
+    ],
+    "correct_index": 3,
+    "explanation": "Count the edges of the folded prism: each triangular end contributes 3 edges (3 plus 3 equals 6), and 3 more edges run lengthwise where the rectangular sides meet, joining the two triangles. That gives 6 plus 3 equals 9 edges. '6' counts only the two triangle outlines and forgets the connecting edges. '12' is the edge count of a cube, not a triangular prism. '5' is the number of faces, not edges.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::folded-solid-features"
+  },
+  {
+    "external_key": "AO-B17-047",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 2,
+    "stem": "A solid 3-by-3-by-3 cube is built from 27 small cubes and the entire outside is painted. How many of the small cubes have exactly ONE painted face?",
+    "choices": [
+      "8",
+      "12",
+      "6",
+      "1"
+    ],
+    "correct_index": 2,
+    "explanation": "A small cube has exactly one painted face only when it sits in the center of one of the big cube's faces, touching just that single outer surface. A cube has 6 faces, and each face has exactly one center small cube, so 6 small cubes have exactly one painted face. '8' is the count of corner cubes (three painted faces each). '12' is the count of edge cubes (two painted faces each). '1' is the single hidden center cube (zero painted faces).",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::painted-cube-faces"
+  }
+]

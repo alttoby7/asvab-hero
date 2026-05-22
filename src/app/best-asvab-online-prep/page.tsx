@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import { QUESTIONS_PLUS } from "@/lib/bank-stats";
 
 export const metadata: Metadata = {
   title: "Best ASVAB Online Prep 2026: Honest Comparison",
@@ -201,7 +202,7 @@ export default function BestASVABOnlinePrepPage() {
         </h3>
         <div className="mb-4 grid gap-2 sm:grid-cols-2">
           {[
-            "769 practice questions across all ASVAB subtests",
+            `${QUESTIONS_PLUS} practice questions across all ASVAB subtests`,
             "39 topic categories, each drillable independently",
             "All 5 difficulty levels (Beginner → Expert)",
             "AFQT estimator — see your projected percentile",
@@ -621,7 +622,7 @@ export default function BestASVABOnlinePrepPage() {
                 {
                   name: "ASVAB Hero Pro",
                   price: "$9.99/mo ($49.99/yr)",
-                  questions: "769",
+                  questions: QUESTIONS_PLUS,
                   tracking: "Yes — per topic",
                   trial: "Free 30-q diagnostic",
                   refund: "7-day guarantee",

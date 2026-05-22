@@ -17,6 +17,12 @@ const b9 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/e
 const b10 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-10.json'), 'utf8'));
 const b11 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-11-math.json'), 'utf8'));
 const b12 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-12-verbal.json'), 'utf8'));
+// Non-AFQT depth batches (GS/EI/AS/MC/AO) — d1/d2 floor fill, 2026-05-22.
+const b13 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-13-gs.json'), 'utf8'));
+const b14 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-14-ei.json'), 'utf8'));
+const b15 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-15-as.json'), 'utf8'));
+const b16 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-16-mc.json'), 'utf8'));
+const b17 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-17-ao.json'), 'utf8'));
 const tags = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/question-tags.seed.json'), 'utf8'));
 const tagMap = new Map(tags.map(t => [t.external_key.toUpperCase(), t]));
 
@@ -141,6 +147,11 @@ const all = [
   ...normalize(b10, 'batch-10'),
   ...normalize(b11, 'batch-11-math'),
   ...normalize(b12, 'batch-12-verbal'),
+  ...normalize(b13, 'batch-13-gs'),
+  ...normalize(b14, 'batch-14-ei'),
+  ...normalize(b15, 'batch-15-as'),
+  ...normalize(b16, 'batch-16-mc'),
+  ...normalize(b17, 'batch-17-ao'),
 ];
 
 const seen = new Set();
@@ -211,3 +222,43 @@ for (const t of Object.keys(afqtActiveFloor).sort()) {
   console.log(`  ${ok ? 'OK ' : 'GAP'} ${t.padEnd(30)} total=${String(f.total).padStart(3)} d1=${f.d1} d2=${f.d2} d3+=${f.d3plus}`);
 }
 console.log(floorGaps.length ? `Floor gaps remaining: ${floorGaps.join(', ')}` : 'All AFQT topics meet the active floor.');
+
+// --- Non-AFQT active floor report (target: >=30 total, d1>=8, d2>=8, d3+>=8) ---
+// Report-only (like the AFQT check) so routine rebuilds aren't blocked.
+const isNonAfqt = t => /^(gs|ei|as|mc|ao)\./.test(t || '');
+const nonAfqtFloor = {};
+for (const q of all) {
+  if (!isNonAfqt(q.topic_id) || !q.active) continue;
+  const f = (nonAfqtFloor[q.topic_id] ??= { total: 0, d1: 0, d2: 0, d3plus: 0 });
+  f.total++;
+  if (q.difficulty === 1) f.d1++;
+  else if (q.difficulty === 2) f.d2++;
+  else f.d3plus++;
+}
+console.log('\nNon-AFQT active floor (target: >=30 total, with d1>=8, d2>=8, d3+>=8):');
+const nonAfqtGaps = [];
+for (const t of Object.keys(nonAfqtFloor).sort()) {
+  const f = nonAfqtFloor[t];
+  const ok = f.total >= 30 && f.d1 >= 8 && f.d2 >= 8 && f.d3plus >= 8;
+  if (!ok) nonAfqtGaps.push(t);
+  console.log(`  ${ok ? 'OK ' : 'GAP'} ${t.padEnd(30)} total=${String(f.total).padStart(3)} d1=${f.d1} d2=${f.d2} d3+=${f.d3plus}`);
+}
+console.log(nonAfqtGaps.length ? `Non-AFQT floor gaps remaining: ${nonAfqtGaps.join(', ')}` : 'All non-AFQT topics meet the active floor.');
+
+// --- Emit bank-stats.json: single source of truth for marketing copy counts. ---
+// Committed to the repo (npm run build does NOT run this generator, and CF Pages
+// builds from the committed tree), so site copy auto-updates on every reseed.
+const activeItems = all.filter(q => q.active);
+const activeTopics = new Set(activeItems.map(q => q.topic_id));
+const activeSubtests = new Set(activeItems.map(q => q.subtest));
+const bankStats = {
+  total: all.length,
+  active: activeItems.length,
+  afqtActive: activeItems.filter(q => isAfqt(q.topic_id)).length,
+  topicCount: activeTopics.size,
+  subtestCount: activeSubtests.size,
+  generatedAt: new Date().toISOString().slice(0, 10),
+};
+const statsOut = path.join(ROOT, 'src/data/bank-stats.json');
+fs.writeFileSync(statsOut, JSON.stringify(bankStats, null, 2) + '\n');
+console.log(`\nWrote ${statsOut}:`, bankStats);

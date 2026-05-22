@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import BrandHero from "@/components/BrandHero";
+import { QUESTIONS_PLUS, TOPIC_COUNT, SUBTEST_COUNT } from "@/lib/bank-stats";
 
 export const metadata: Metadata = {
   title: "ASVAB Calculator 2026: AFQT, GT & Line Scores (All Branches)",
@@ -18,7 +19,7 @@ export default function HomePage() {
       {/* ────────────────────────────────────────────────────────────────────
          HERO — recruit's actual goal, not a feature pitch.
          One primary CTA (diagnostic, the conversion engine), one secondary.
-         Numerical proof inline: "769 questions · 39 topics · 9 subtests."
+         Numerical proof inline from bank-stats.json (QUESTIONS_PLUS · topics · subtests).
       ──────────────────────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(249,115,22,0.10),_transparent_60%)]" />
@@ -101,7 +102,7 @@ export default function HomePage() {
 
       {/* ────────────────────────────────────────────────────────────────────
          THREE PILLARS — Calculator · Practice · Study Guide.
-         Each card carries a hard number (500+, 769, 39) so the homepage tells
+         Each card carries a hard number (from bank-stats.json) so the homepage tells
          the proof story before any conversion ask.
       ──────────────────────────────────────────────────────────────────── */}
       <section className="border-y border-navy-border bg-navy-light/30">
@@ -117,7 +118,7 @@ export default function HomePage() {
                 cta: "Open calculator",
               },
               {
-                stat: "769",
+                stat: QUESTIONS_PLUS,
                 label: "practice questions",
                 title: "Practice Tests",
                 desc: "Diagnostic plus subtest drills. Per-question explanations on every item. Track weak topics over time.",
@@ -248,9 +249,9 @@ export default function HomePage() {
           </div>
           <div className="mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-navy-border bg-navy-border sm:grid-cols-4">
             {[
-              { value: "769", label: "Tagged questions" },
-              { value: "39", label: "Topic categories" },
-              { value: "9", label: "ASVAB subtests" },
+              { value: QUESTIONS_PLUS, label: "Tagged questions" },
+              { value: String(TOPIC_COUNT), label: "Topic categories" },
+              { value: String(SUBTEST_COUNT), label: "ASVAB subtests" },
               { value: "1–5", label: "Difficulty levels" },
             ].map((s) => (
               <div key={s.label} className="bg-navy px-6 py-10 text-center">
