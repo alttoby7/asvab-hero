@@ -313,7 +313,7 @@ export default function VariantPicker() {
               )}
             </div>
             <p className="mt-1 text-sm text-text-secondary">
-              144 questions · all 9 subtests · timed like the real thing
+              134 questions · all 9 subtests · timed like the real thing
             </p>
             <p className="mt-2 text-sm text-text-tertiary">
               Save this for the final weeks. A full timed run builds stamina and

@@ -149,7 +149,7 @@ insert into test_variants (code, name, rules, active) values
     'full_sim',
     'Full ASVAB Simulation',
     '{
-      "length": 144,
+      "length": 134,
       "time_seconds": 9000,
       "mix": {"GS":16,"AR":16,"WK":16,"PC":11,"MK":16,"EI":16,"AS":11,"MC":16,"AO":16},
       "afqt_eligible": true,
