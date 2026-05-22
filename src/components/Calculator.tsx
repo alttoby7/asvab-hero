@@ -12,6 +12,7 @@ import {
   calculateAllComposites,
 } from "@/lib/score-calculator";
 import { buildJobMatchSnapshot } from "@/lib/job-matcher";
+import type { JobMatchSnapshot } from "@/lib/job-matcher";
 import { trackEvent } from "@/lib/analytics";
 import ScoreInput from "./ScoreInput";
 import JobResults from "./JobResults";
@@ -26,17 +27,16 @@ interface CalculatorProps {
   branchFilter?: Branch;
 }
 
-const DEFAULT_SCORES: SubtestScores = {
-  GS: 50,
-  AR: 50,
-  WK: 50,
-  PC: 50,
-  MK: 50,
-  EI: 50,
-  AS: 50,
-  MC: 50,
-  AO: 50,
-};
+/** Draft scores: null = the user hasn't entered that subtest yet. */
+type DraftScores = Record<AsvabSubtest, number | null>;
+
+const EMPTY_SCORES: DraftScores = ALL_SUBTESTS.reduce((acc, st) => {
+  acc[st] = null;
+  return acc;
+}, {} as DraftScores);
+
+/** The four subtests that determine AFQT (AR, WK, PC, MK). */
+const AFQT_SUBTESTS: AsvabSubtest[] = ["AR", "WK", "PC", "MK"];
 
 const BRANCH_TAB_ORDER: Branch[] = [
   "army",
@@ -48,7 +48,7 @@ const BRANCH_TAB_ORDER: Branch[] = [
 ];
 
 export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
-  const [scores, setScores] = useState<SubtestScores>(DEFAULT_SCORES);
+  const [scores, setScores] = useState<DraftScores>(EMPTY_SCORES);
   const [compositeTab, setCompositeTab] = useState<Branch>(branchFilter ?? "army");
   const searchParams = useSearchParams();
   const { entitlement } = useEntitlement();
@@ -63,12 +63,13 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
     const hasScoreParams = ALL_SUBTESTS.some((st) => searchParams.get(st));
     if (!hasScoreParams) return;
 
-    const fromParams: Partial<SubtestScores> = {};
+    const fromParams: Partial<DraftScores> = {};
     for (const st of ALL_SUBTESTS) {
       const val = searchParams.get(st);
       if (val) {
         const num = parseInt(val, 10);
-        if (!isNaN(num) && num >= 20 && num <= 145) {
+        // Clamp to the calculator's real input range (matches the UI/slider).
+        if (!isNaN(num) && num >= 20 && num <= 99) {
           fromParams[st] = num;
         }
       }
@@ -78,18 +79,42 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
     }
   }, [searchParams]);
 
-  const handleScoreChange = (subtest: AsvabSubtest, value: number) => {
+  const handleScoreChange = (subtest: AsvabSubtest, value: number | null) => {
     setScores((prev) => ({ ...prev, [subtest]: value }));
   };
 
-  const afqt = useMemo(() => calculateAFQT(scores), [scores]);
+  // Readiness gates — nothing is computed or shown off seeded defaults.
+  const afqtReady = useMemo(
+    () => AFQT_SUBTESTS.every((st) => scores[st] != null),
+    [scores]
+  );
+  const compositesReady = useMemo(
+    () => ALL_SUBTESTS.every((st) => scores[st] != null),
+    [scores]
+  );
+
+  // Typed view of the draft. The fallback is only ever read for a subtest the
+  // relevant gate already proved is non-null, so it never affects a shown number.
+  const filledScores = useMemo<SubtestScores>(() => {
+    const out = {} as SubtestScores;
+    for (const st of ALL_SUBTESTS) out[st] = scores[st] ?? 0;
+    return out;
+  }, [scores]);
+
+  const afqt = useMemo(
+    () => (afqtReady ? calculateAFQT(filledScores) : 0),
+    [afqtReady, filledScores]
+  );
   const afqtCategory = useMemo(() => getAFQTCategory(afqt), [afqt]);
   const afqtDesc = useMemo(
     () => getAFQTCategoryDescription(afqtCategory),
     [afqtCategory]
   );
 
-  const allComposites = useMemo(() => calculateAllComposites(scores), [scores]);
+  const allComposites = useMemo(
+    () => (compositesReady ? calculateAllComposites(filledScores) : []),
+    [compositesReady, filledScores]
+  );
 
   const compositesByBranch = useMemo(() => {
     const map: Record<Branch, CompositeScores> = {} as Record<Branch, CompositeScores>;
@@ -99,9 +124,12 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
     return map;
   }, [allComposites]);
 
-  const snapshot = useMemo(
-    () => buildJobMatchSnapshot(filteredJobs, compositesByBranch, afqt),
-    [filteredJobs, compositesByBranch, afqt]
+  const snapshot = useMemo<JobMatchSnapshot | null>(
+    () =>
+      compositesReady
+        ? buildJobMatchSnapshot(filteredJobs, compositesByBranch, afqt)
+        : null,
+    [compositesReady, filteredJobs, compositesByBranch, afqt]
   );
 
   const activeComposites = useMemo(
@@ -109,24 +137,25 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
     [allComposites, compositeTab]
   );
 
-  const handleReset = () => setScores(DEFAULT_SCORES);
+  const handleReset = () => setScores(EMPTY_SCORES);
 
-  // Fire `calculator_view_result` once per mount when results are first available.
+  // Fire `calculator_view_result` once per mount — only when a real, full result exists.
   const viewedResultRef = useRef(false);
   useEffect(() => {
     if (viewedResultRef.current) return;
-    if (snapshot.totalQualifying === 0 && afqt === 0) return;
+    if (!compositesReady || !snapshot) return;
     viewedResultRef.current = true;
     trackEvent("calculator_view_result", {
       afqt,
       branch: branchFilter ?? "all",
       qualifying_jobs_count: snapshot.totalQualifying,
     });
-  }, [snapshot.totalQualifying, afqt, branchFilter]);
+  }, [compositesReady, snapshot, afqt, branchFilter]);
 
   // Debounced `calculator_submit` — fire ~800ms after the user stops adjusting scores.
-  // Avoids one event per keystroke while still capturing "finalized" AFQT/job counts.
+  // Avoids one event per keystroke, and never fires off the blank/partial state.
   useEffect(() => {
+    if (!compositesReady || !snapshot) return;
     const handle = window.setTimeout(() => {
       trackEvent("calculator_submit", {
         afqt,
@@ -135,21 +164,25 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
       });
     }, 800);
     return () => window.clearTimeout(handle);
-  }, [afqt, snapshot.totalQualifying, branchFilter]);
+  }, [compositesReady, snapshot, afqt, branchFilter]);
 
   return (
     <div className="space-y-8">
-      <ResultCard
-        scores={scores}
-        afqt={afqt}
-        afqtCategory={afqtCategory}
-        qualifyingCount={snapshot.totalQualifying}
-      />
+      {compositesReady && snapshot && (
+        <ResultCard
+          scores={filledScores}
+          afqt={afqt}
+          afqtCategory={afqtCategory}
+          qualifyingCount={snapshot.totalQualifying}
+        />
+      )}
 
       {/* Conversion #1 — the free-plan bridge at the peak-intent result moment.
          Replaces the old PDF email capture + straight-to-$9.99 upsell with a
-         save-your-score → free-plan signup (the score-moving core is free). */}
-      {afqt > 0 && (
+         save-your-score → free-plan signup (the score-moving core is free).
+         Waits for all 9 subtests: its success state cites the job count, which
+         isn't real until composites/jobs are computed. */}
+      {compositesReady && snapshot && (
         <CalculatorResultBridge
           afqt={afqt}
           branch={branchFilter}
@@ -190,35 +223,48 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
         </div>
       </section>
 
-      {/* AFQT Score */}
-      <section className="rounded-xl border border-navy-border bg-navy-light p-6">
-        <h2 className="mb-4 font-display text-lg font-bold text-text-primary">
-          Your AFQT Score
-        </h2>
-        <div className="flex items-center gap-6">
-          <div className="flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full border-4 border-accent bg-accent-dim">
-            <span className="font-mono text-3xl font-bold text-accent">
-              {afqt}
-            </span>
-          </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="text-sm font-semibold text-text-secondary">
-                Category
-              </span>
-              <span className="rounded bg-accent-dim px-2 py-0.5 font-mono text-sm font-bold text-accent">
-                {afqtCategory}
+      {/* AFQT Score — appears once the four AFQT subtests are entered. */}
+      {afqtReady ? (
+        <section className="rounded-xl border border-navy-border bg-navy-light p-6">
+          <h2 className="mb-4 font-display text-lg font-bold text-text-primary">
+            Your AFQT Score
+          </h2>
+          <div className="flex items-center gap-6">
+            <div className="flex h-24 w-24 flex-shrink-0 items-center justify-center rounded-full border-4 border-accent bg-accent-dim">
+              <span className="font-mono text-3xl font-bold text-accent">
+                {afqt}
               </span>
             </div>
-            <p className="mt-1 text-sm text-text-tertiary">{afqtDesc}</p>
-            <p className="mt-2 text-xs text-text-tertiary">
-              AFQT = 2 &times; (WK + PC) + AR + MK, converted to percentile
-            </p>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-semibold text-text-secondary">
+                  Category
+                </span>
+                <span className="rounded bg-accent-dim px-2 py-0.5 font-mono text-sm font-bold text-accent">
+                  {afqtCategory}
+                </span>
+              </div>
+              <p className="mt-1 text-sm text-text-tertiary">{afqtDesc}</p>
+              <p className="mt-2 text-xs text-text-tertiary">
+                AFQT = 2 &times; (WK + PC) + AR + MK, converted to percentile
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : (
+        <section className="rounded-xl border border-dashed border-navy-border bg-navy-light/50 p-8 text-center">
+          <p className="text-sm text-text-secondary">
+            Enter your scores above to see your AFQT percentile, line scores, and
+            the military jobs you qualify for.
+          </p>
+          <p className="mt-1 text-xs text-text-tertiary">
+            Your AFQT needs the four highlighted subtests: AR, WK, PC, and MK.
+          </p>
+        </section>
+      )}
 
-      {/* Composite Scores */}
+      {/* Composite Scores — full 9-subtest results only. */}
+      {compositesReady && (
       <section className="rounded-xl border border-navy-border bg-navy-light p-6">
         <h2 className="mb-4 font-display text-lg font-bold text-text-primary">
           Composite / Line Scores
@@ -264,34 +310,39 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
           </div>
         )}
       </section>
+      )}
 
-      {/* Qualifying Jobs */}
-      <section className="rounded-xl border border-navy-border bg-navy-light p-6">
-        <JobResults
-          jobsByBranch={snapshot.qualifyingByBranch}
-          totalJobs={snapshot.totalQualifying}
-          afqt={afqt}
-        />
-      </section>
+      {compositesReady && snapshot && (
+        <>
+          {/* Qualifying Jobs */}
+          <section className="rounded-xl border border-navy-border bg-navy-light p-6">
+            <JobResults
+              jobsByBranch={snapshot.qualifyingByBranch}
+              totalJobs={snapshot.totalQualifying}
+              afqt={afqt}
+            />
+          </section>
 
-      {/* Score Gap Engine — minimum-effort path to closest jobs */}
-      <ScoreGapEngine snapshot={snapshot} afqt={afqt} />
+          {/* Score Gap Engine — minimum-effort path to closest jobs */}
+          <ScoreGapEngine snapshot={snapshot} afqt={afqt} />
 
-      {/* Share actions */}
-      <ShareActions
-        scores={scores}
-        afqt={afqt}
-        qualifyingCount={snapshot.totalQualifying}
-      />
+          {/* Share actions */}
+          <ShareActions
+            scores={filledScores}
+            afqt={afqt}
+            qualifyingCount={snapshot.totalQualifying}
+          />
 
-      {/* Non-Qualifying Jobs */}
-      <section className="rounded-xl border border-navy-border bg-navy-light p-6">
-        <NonQualifyingResults
-          jobsByBranch={snapshot.nonQualifyingByBranch}
-          totalJobs={snapshot.totalNonQualifying}
-          afqt={afqt}
-        />
-      </section>
+          {/* Non-Qualifying Jobs */}
+          <section className="rounded-xl border border-navy-border bg-navy-light p-6">
+            <NonQualifyingResults
+              jobsByBranch={snapshot.nonQualifyingByBranch}
+              totalJobs={snapshot.totalNonQualifying}
+              afqt={afqt}
+            />
+          </section>
+        </>
+      )}
     </div>
   );
 }

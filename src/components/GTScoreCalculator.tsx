@@ -3,16 +3,16 @@
 import { useState, useMemo, useEffect, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import type { SubtestScores, AsvabSubtest } from "@/types";
+import type { AsvabSubtest } from "@/types";
 import { trackEvent } from "@/lib/analytics";
 import ScoreInput from "./ScoreInput";
 
 const GT_SUBTESTS: AsvabSubtest[] = ["WK", "PC", "AR"];
 
-const DEFAULT_SCORES: SubtestScores = {
-  GS: 50, AR: 50, WK: 50, PC: 50, MK: 50,
-  EI: 50, AS: 50, MC: 50, AO: 50,
-};
+/** null = not entered yet. Only WK/PC/AR feed the GT composite. */
+type GtDraft = Partial<Record<AsvabSubtest, number | null>>;
+
+const EMPTY_SCORES: GtDraft = { WK: null, PC: null, AR: null };
 
 const GT_TIERS = [
   {
@@ -65,14 +65,14 @@ const TIER_COLORS = {
 } as const;
 
 export default function GTScoreCalculator() {
-  const [scores, setScores] = useState<SubtestScores>(DEFAULT_SCORES);
+  const [scores, setScores] = useState<GtDraft>(EMPTY_SCORES);
   const searchParams = useSearchParams();
 
   useEffect(() => {
     const hasParams = GT_SUBTESTS.some((st) => searchParams.get(st));
     if (!hasParams) return;
 
-    const fromParams: Partial<SubtestScores> = {};
+    const fromParams: GtDraft = {};
     for (const st of GT_SUBTESTS) {
       const val = searchParams.get(st);
       if (val) {
@@ -87,15 +87,23 @@ export default function GTScoreCalculator() {
     }
   }, [searchParams]);
 
-  const handleScoreChange = (subtest: AsvabSubtest, value: number) => {
+  const handleScoreChange = (subtest: AsvabSubtest, value: number | null) => {
     setScores((prev) => ({ ...prev, [subtest]: value }));
   };
 
-  const handleReset = () =>
-    setScores({ ...DEFAULT_SCORES, WK: 50, PC: 50, AR: 50 });
+  const handleReset = () => setScores(EMPTY_SCORES);
 
-  const ve = useMemo(() => scores.WK + scores.PC, [scores.WK, scores.PC]);
-  const gt = useMemo(() => ve + scores.AR, [ve, scores.AR]);
+  // Only compute/show once all three GT subtests are entered.
+  const gtReady = useMemo(
+    () => GT_SUBTESTS.every((st) => scores[st] != null),
+    [scores]
+  );
+  const wk = scores.WK ?? 0;
+  const pc = scores.PC ?? 0;
+  const ar = scores.AR ?? 0;
+
+  const ve = useMemo(() => wk + pc, [wk, pc]);
+  const gt = useMemo(() => ve + ar, [ve, ar]);
 
   const nextTier = useMemo(
     () => GT_TIERS.slice().reverse().find((t) => gt < t.threshold),
@@ -104,26 +112,28 @@ export default function GTScoreCalculator() {
 
   const lowestSubtest = useMemo(() => {
     const vals: { key: AsvabSubtest; value: number }[] = [
-      { key: "WK", value: scores.WK },
-      { key: "PC", value: scores.PC },
-      { key: "AR", value: scores.AR },
+      { key: "WK", value: wk },
+      { key: "PC", value: pc },
+      { key: "AR", value: ar },
     ];
     return vals.reduce((a, b) => (a.value <= b.value ? a : b));
-  }, [scores.WK, scores.PC, scores.AR]);
+  }, [wk, pc, ar]);
 
   const viewedRef = useRef(false);
   useEffect(() => {
     if (viewedRef.current) return;
+    if (!gtReady) return;
     viewedRef.current = true;
     trackEvent("gt_calculator_view_result", { gt, ve });
-  }, [gt, ve]);
+  }, [gtReady, gt, ve]);
 
   useEffect(() => {
+    if (!gtReady) return;
     const handle = window.setTimeout(() => {
       trackEvent("gt_calculator_submit", { gt, ve });
     }, 800);
     return () => window.clearTimeout(handle);
-  }, [gt, ve]);
+  }, [gtReady, gt, ve]);
 
   return (
     <div className="space-y-8 p-6">
@@ -149,7 +159,7 @@ export default function GTScoreCalculator() {
             <ScoreInput
               key={subtest}
               subtest={subtest}
-              value={scores[subtest]}
+              value={scores[subtest] ?? null}
               onChange={handleScoreChange}
               highlight={true}
             />
@@ -157,7 +167,17 @@ export default function GTScoreCalculator() {
         </div>
       </section>
 
+      {!gtReady && (
+        <section className="rounded-xl border border-dashed border-navy-border bg-navy-light/50 p-8 text-center">
+          <p className="text-sm text-text-secondary">
+            Enter your WK, PC, and AR scores above to see your GT score and the
+            programs it unlocks.
+          </p>
+        </section>
+      )}
+
       {/* GT result */}
+      {gtReady && (
       <section className="rounded-xl border border-navy-border bg-navy-light p-6">
         <h2 className="mb-4 font-display text-lg font-bold text-text-primary">
           Your GT Score
@@ -182,7 +202,10 @@ export default function GTScoreCalculator() {
         </div>
       </section>
 
+      )}
+
       {/* Qualification tiers */}
+      {gtReady && (
       <section className="rounded-xl border border-navy-border bg-navy-light p-6">
         <h2 className="mb-3 font-display text-lg font-bold text-text-primary">
           GT {gt} — What It Unlocks
@@ -225,8 +248,10 @@ export default function GTScoreCalculator() {
         </div>
       </section>
 
+      )}
+
       {/* Gap analysis */}
-      {nextTier && (
+      {gtReady && nextTier && (
         <section className="rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">
             How to Close the Gap

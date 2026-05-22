@@ -25,26 +25,26 @@ interface CalculatorResultBridgeProps {
   isPro: boolean;
 }
 
-/** Honest tier framing keyed off the real AFQT cutoffs (31 floor, 50 quality, 65 top). */
+/** Honest tier framing keyed off the real AFQT category lines (50 = IIIA, 65 = II, 93 = I). */
 function tierFraming(afqt: number): { target: number; eyebrow: string; headline: string } {
   if (afqt < 50) {
     return {
       target: 50,
-      eyebrow: "Close doesn't qualify",
-      headline: "You're below the line for the jobs worth wanting.",
+      eyebrow: "More options ahead",
+      headline: "Reaching 50 opens far more jobs and enlistment incentives.",
     };
   }
   if (afqt < 65) {
     return {
       target: 65,
-      eyebrow: "Good — not yet great",
-      headline: "Solid score. The highest-clearance jobs want 65+.",
+      eyebrow: "Good — aim higher",
+      headline: "Solid score. Reaching 65 opens the most competitive jobs.",
     };
   }
   return {
-    target: 92,
+    target: 93,
     eyebrow: "Strong — now protect it",
-    headline: "Strong score. Lock it in and aim for the elite cutoffs.",
+    headline: "Strong score. Push toward 93 (Category I) and lock it in.",
   };
 }
 

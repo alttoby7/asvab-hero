@@ -9,10 +9,13 @@ const MAX = 99;
 
 interface ScoreInputProps {
   subtest: AsvabSubtest;
-  value: number;
-  onChange: (subtest: AsvabSubtest, value: number) => void;
+  /** null = not yet entered (field renders blank). */
+  value: number | null;
+  onChange: (subtest: AsvabSubtest, value: number | null) => void;
   highlight?: boolean;
 }
+
+const toStr = (v: number | null) => (v == null ? "" : String(v));
 
 export default function ScoreInput({
   subtest,
@@ -20,19 +23,24 @@ export default function ScoreInput({
   onChange,
   highlight,
 }: ScoreInputProps) {
-  const [inputValue, setInputValue] = useState(String(value));
+  const [inputValue, setInputValue] = useState(toStr(value));
   const isFocused = useRef(false);
 
   // Sync prop → local string when parent changes it (Reset All, URL params)
   // but only when the user isn't actively typing
   useEffect(() => {
     if (!isFocused.current) {
-      setInputValue(String(value));
+      setInputValue(toStr(value));
     }
   }, [value]);
 
   const handleTextChange = (raw: string) => {
     setInputValue(raw);
+    if (raw.trim() === "") {
+      // Cleared field → no value yet.
+      onChange(subtest, null);
+      return;
+    }
     const n = parseInt(raw, 10);
     if (!isNaN(n) && n >= MIN && n <= MAX) {
       onChange(subtest, n);
@@ -41,10 +49,15 @@ export default function ScoreInput({
 
   const handleBlur = () => {
     isFocused.current = false;
+    if (inputValue.trim() === "") {
+      // Allow the field to stay empty.
+      onChange(subtest, null);
+      return;
+    }
     const n = parseInt(inputValue, 10);
-    if (isNaN(n) || n < MIN || n > MAX) {
-      // Revert to last confirmed valid value
-      setInputValue(String(value));
+    if (isNaN(n)) {
+      // Revert to last confirmed value (which may be empty).
+      setInputValue(toStr(value));
     } else {
       const clamped = Math.max(MIN, Math.min(MAX, n));
       onChange(subtest, clamped);
@@ -58,7 +71,10 @@ export default function ScoreInput({
     onChange(subtest, n);
   };
 
-  const sliderPct = `${(((value - MIN) / (MAX - MIN)) * 100).toFixed(1)}%`;
+  const isEmpty = value == null;
+  const sliderPct = isEmpty
+    ? "0%"
+    : `${(((value - MIN) / (MAX - MIN)) * 100).toFixed(1)}%`;
 
   return (
     <div
@@ -96,6 +112,7 @@ export default function ScoreInput({
           inputMode="numeric"
           pattern="[0-9]*"
           value={inputValue}
+          placeholder="—"
           onFocus={(e) => {
             isFocused.current = true;
             e.target.select();
@@ -104,7 +121,7 @@ export default function ScoreInput({
           onChange={(e) => handleTextChange(e.target.value)}
           aria-label={`${SUBTEST_NAMES[subtest]} score`}
           aria-describedby={`score-range-${subtest}`}
-          className="w-20 rounded-md border border-navy-border bg-navy px-3 py-2 text-center font-mono text-2xl font-bold text-text-primary outline-none transition-colors focus:border-accent focus:ring-1 focus:ring-accent"
+          className="w-20 rounded-md border border-navy-border bg-navy px-3 py-2 text-center font-mono text-2xl font-bold text-text-primary outline-none transition-colors placeholder:text-text-tertiary/50 focus:border-accent focus:ring-1 focus:ring-accent"
         />
       </div>
 
@@ -113,11 +130,11 @@ export default function ScoreInput({
         type="range"
         min={MIN}
         max={MAX}
-        value={value}
+        value={value ?? MIN}
         onChange={(e) => handleSlider(e.target.value)}
         aria-label={`${SUBTEST_NAMES[subtest]} score slider`}
         tabIndex={-1}
-        className="score-slider"
+        className={`score-slider${isEmpty ? " opacity-40" : ""}`}
         style={{ "--slider-pct": sliderPct } as React.CSSProperties}
       />
 

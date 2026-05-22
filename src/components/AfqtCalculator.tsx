@@ -23,16 +23,19 @@ import ScoreInput from "./ScoreInput";
 
 const AFQT_SUBTESTS: AsvabSubtest[] = ["AR", "WK", "PC", "MK"];
 
-const DEFAULT_SCORES: SubtestScores = {
-  GS: 50,
-  AR: 50,
-  WK: 50,
-  PC: 50,
-  MK: 50,
-  EI: 50,
-  AS: 50,
-  MC: 50,
-  AO: 50,
+/** Draft scores: null = not entered yet. Only AR/WK/PC/MK are read by AFQT. */
+type DraftScores = Record<AsvabSubtest, number | null>;
+
+const EMPTY_SCORES: DraftScores = {
+  GS: null,
+  AR: null,
+  WK: null,
+  PC: null,
+  MK: null,
+  EI: null,
+  AS: null,
+  MC: null,
+  AO: null,
 };
 
 // Diploma minimum AFQT per branch, 2026. GED minimums are higher and noted inline.
@@ -46,7 +49,7 @@ const BRANCH_MINIMUMS = [
 ] as const;
 
 export default function AfqtCalculator() {
-  const [scores, setScores] = useState<SubtestScores>(DEFAULT_SCORES);
+  const [scores, setScores] = useState<DraftScores>(EMPTY_SCORES);
   const searchParams = useSearchParams();
 
   // Load the 4 AFQT subtests from URL params if present (e.g. from shared links)
@@ -54,7 +57,7 @@ export default function AfqtCalculator() {
     const hasParams = AFQT_SUBTESTS.some((st) => searchParams.get(st));
     if (!hasParams) return;
 
-    const fromParams: Partial<SubtestScores> = {};
+    const fromParams: Partial<DraftScores> = {};
     for (const st of AFQT_SUBTESTS) {
       const val = searchParams.get(st);
       if (val) {
@@ -69,35 +72,49 @@ export default function AfqtCalculator() {
     }
   }, [searchParams]);
 
-  const handleScoreChange = (subtest: AsvabSubtest, value: number) => {
+  const handleScoreChange = (subtest: AsvabSubtest, value: number | null) => {
     setScores((prev) => ({ ...prev, [subtest]: value }));
   };
 
-  const afqt = useMemo(() => calculateAFQT(scores), [scores]);
+  // Only compute/show once all four AFQT subtests are entered.
+  const afqtReady = useMemo(
+    () => AFQT_SUBTESTS.every((st) => scores[st] != null),
+    [scores]
+  );
+  const filledScores = useMemo<SubtestScores>(() => {
+    const out = {} as SubtestScores;
+    for (const st of Object.keys(scores) as AsvabSubtest[]) out[st] = scores[st] ?? 0;
+    return out;
+  }, [scores]);
+
+  const afqt = useMemo(
+    () => (afqtReady ? calculateAFQT(filledScores) : 0),
+    [afqtReady, filledScores]
+  );
   const category = useMemo(() => getAFQTCategory(afqt), [afqt]);
   const categoryDesc = useMemo(
     () => getAFQTCategoryDescription(category),
     [category]
   );
 
-  const handleReset = () =>
-    setScores({ ...DEFAULT_SCORES, AR: 50, WK: 50, PC: 50, MK: 50 });
+  const handleReset = () => setScores(EMPTY_SCORES);
 
-  // Fire afqt_calculator_view_result once per mount when percentile settles
+  // Fire calculator_view_result once per mount — only on a real result.
   const viewedRef = useRef(false);
   useEffect(() => {
     if (viewedRef.current) return;
-    if (afqt === 0) return;
+    if (!afqtReady) return;
     viewedRef.current = true;
     trackEvent("calculator_view_result", {
       afqt,
       branch: "afqt_only",
       qualifying_jobs_count: 0,
     });
-  }, [afqt]);
+  }, [afqtReady, afqt]);
 
-  // Debounced submit telemetry (~800ms after last change)
+  // Debounced submit telemetry (~800ms after last change) — only when ready.
   useEffect(() => {
+    if (!afqtReady) return;
     const handle = window.setTimeout(() => {
       trackEvent("calculator_submit", {
         afqt,
@@ -106,7 +123,7 @@ export default function AfqtCalculator() {
       });
     }, 800);
     return () => window.clearTimeout(handle);
-  }, [afqt]);
+  }, [afqtReady, afqt]);
 
   // VE and raw for transparency in the UI (post-remap)
   const { veDisplay, rawDisplay } = useMemo(() => {
@@ -115,10 +132,10 @@ export default function AfqtCalculator() {
       const s = Math.min(99, Math.max(20, v));
       return Math.round(20 + (s - 20) * 42 / 79);
     };
-    const ve = toEquated(scores.WK) + toEquated(scores.PC);
-    const raw = 2 * ve + toEquated(scores.AR) + toEquated(scores.MK);
+    const ve = toEquated(filledScores.WK) + toEquated(filledScores.PC);
+    const raw = 2 * ve + toEquated(filledScores.AR) + toEquated(filledScores.MK);
     return { veDisplay: ve, rawDisplay: raw };
-  }, [scores]);
+  }, [filledScores]);
 
   return (
     <div className="space-y-8">
@@ -152,7 +169,17 @@ export default function AfqtCalculator() {
         </div>
       </section>
 
+      {!afqtReady && (
+        <section className="rounded-xl border border-dashed border-navy-border bg-navy-light/50 p-8 text-center">
+          <p className="text-sm text-text-secondary">
+            Enter all four subtest scores above to see your AFQT percentile and
+            branch eligibility.
+          </p>
+        </section>
+      )}
+
       {/* AFQT percentile + category */}
+      {afqtReady && (
       <section className="rounded-xl border border-navy-border bg-navy-light p-6">
         <h2 className="mb-4 font-display text-lg font-bold text-text-primary">
           Your AFQT Percentile
@@ -187,7 +214,10 @@ export default function AfqtCalculator() {
         </div>
       </section>
 
+      )}
+
       {/* Branch eligibility matrix */}
+      {afqtReady && (
       <section className="rounded-xl border border-navy-border bg-navy-light p-6">
         <h2 className="mb-3 font-display text-lg font-bold text-text-primary">
           Branch Eligibility at AFQT {afqt}
@@ -237,6 +267,7 @@ export default function AfqtCalculator() {
           annual recruits across DoD.
         </p>
       </section>
+      )}
 
       {/* Next steps CTA */}
       <section className="rounded-xl border border-accent/30 bg-navy-light p-6">
