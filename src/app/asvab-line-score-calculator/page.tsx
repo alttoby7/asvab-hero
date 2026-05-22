@@ -179,8 +179,12 @@ export default function ASVABLineScoreCalculatorPage() {
         <p className="text-text-secondary">
           Line scores are raw sums of standard scores (mean 50, SD ~10, range 20
           to 145). The Army has 10. The Air Force has 4. The Navy has dozens,
-          one per rating. Line scores use all 9 subtests, including GS, EI, AS,
-          and MC. AFQT ignores those four.
+          one per rating — see the full{" "}
+          <Link href="/navy-ratings-list" className="text-accent hover:text-accent-hover">
+            Navy ratings list
+          </Link>{" "}
+          with the required composite for each. Line scores use all 9 subtests,
+          including GS, EI, AS, and MC. AFQT ignores those four.
         </p>
 
         <p className="text-text-secondary">

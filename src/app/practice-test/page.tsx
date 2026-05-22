@@ -55,6 +55,23 @@ export default function PracticeTestPage() {
           recommended next step. Pick a Diagnostic for a balanced 30-question
           run, or drill a single subtest where you need the most work.
         </p>
+        <p className="mt-3 text-sm text-text-tertiary">
+          The diagnostic also helps you{" "}
+          <Link
+            href="/gt-score"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            estimate your GT score
+          </Link>{" "}
+          from your verbal and arithmetic results. Already tested? Review the{" "}
+          <Link
+            href="/how-to-retake-the-asvab"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            ASVAB retake rules
+          </Link>{" "}
+          before you book again.
+        </p>
         <BrandHero
           src="/images/generated/asvab-practice-test-hero.png"
           alt="Close-up of a hand filling in a Scantron-style ASVAB answer sheet with a #2 pencil, timer ticking beside it."

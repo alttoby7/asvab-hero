@@ -155,6 +155,71 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+          {/* ──────────────────────────────────────────────────────────────
+             DE-CANNIBALIZATION — exact-match links to dedicated calculator
+             pages so Google ranks the spoke, not this hub, for those queries.
+             One clear target per query cluster.
+          ────────────────────────────────────────────────────────────── */}
+          <div className="mt-10 rounded-2xl border border-navy-border bg-navy-light/40 p-6 sm:p-8">
+            <h3 className="font-display text-base font-bold text-text-primary">
+              Jump to a specific calculator
+            </h3>
+            <div className="mt-4 grid gap-x-8 gap-y-2.5 text-sm sm:grid-cols-2">
+              <Link
+                href="/afqt-calculator"
+                className="text-accent no-underline transition-colors hover:text-accent-hover"
+              >
+                AFQT Calculator &rarr;
+              </Link>
+              <Link
+                href="/gt-score-calculator"
+                className="text-accent no-underline transition-colors hover:text-accent-hover"
+              >
+                GT Score Calculator &rarr;
+              </Link>
+              <Link
+                href="/asvab-line-score-calculator"
+                className="text-accent no-underline transition-colors hover:text-accent-hover"
+              >
+                Line Score Calculator &rarr;
+              </Link>
+              <Link
+                href="/asvab-score-converter"
+                className="text-accent no-underline transition-colors hover:text-accent-hover"
+              >
+                ASVAB Score Converter &rarr;
+              </Link>
+              <Link
+                href="/army-asvab-calculator"
+                className="text-accent no-underline transition-colors hover:text-accent-hover"
+              >
+                Army ASVAB Calculator &rarr;
+              </Link>
+              <Link
+                href="/navy-asvab-score-calculator"
+                className="text-accent no-underline transition-colors hover:text-accent-hover"
+              >
+                Navy ASVAB Calculator &rarr;
+              </Link>
+            </div>
+            <p className="mt-5 text-sm leading-relaxed text-text-secondary">
+              New to the scoring? Start with the{" "}
+              <Link
+                href="/gt-score"
+                className="font-semibold text-accent no-underline transition-colors hover:text-accent-hover"
+              >
+                Army GT score
+              </Link>{" "}
+              guide, or browse the full{" "}
+              <Link
+                href="/navy-ratings-list"
+                className="font-semibold text-accent no-underline transition-colors hover:text-accent-hover"
+              >
+                Navy ratings list
+              </Link>{" "}
+              with required scores.
+            </p>
+          </div>
           <p className="mt-8 text-center text-sm text-text-secondary">
             Not sure what you&apos;re aiming for?{" "}
             <Link

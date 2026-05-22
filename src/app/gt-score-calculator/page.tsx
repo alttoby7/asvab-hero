@@ -6,7 +6,7 @@ import GTScoreCalculator from "@/components/GTScoreCalculator";
 import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
-  title: "Free GT Score Calculator: Enter Subtests, See Your GT (2026)",
+  title: "GT Score Calculator (2026): Estimate Your Army GT Score | ASVAB Hero",
   description:
     "Calculate your ASVAB GT score instantly with our free calculator. Enter your subtests to get your GT, plus Army, Marine Corps and Air Force formulas and how to raise it.",
   alternates: {

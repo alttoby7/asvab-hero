@@ -172,7 +172,14 @@ export default function ASVABStudyGuidePage() {
               read our ASVAB Scores Explained guide
             </Link>{" "}
             first. It covers AFQT, composite scores, and branch minimums with
-            interactive tools.
+            interactive tools. Planning a second attempt? Check the{" "}
+            <Link
+              href="/how-to-retake-the-asvab"
+              className="text-accent hover:text-accent-hover no-underline"
+            >
+              ASVAB retake rules
+            </Link>{" "}
+            before you build your plan.
           </p>
         </section>
 

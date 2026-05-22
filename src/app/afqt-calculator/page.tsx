@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
-  title: "AFQT Calculator 2026: Instant Percentile + Category from 4 Subtests",
+  title: "AFQT Score Calculator (2026): Estimate Your AFQT Percentile | ASVAB Hero",
   description:
     "Free AFQT score calculator. Enter AR, WK, PC, and MK standard scores to get your AFQT percentile, DoD category (I through V), and which branches you qualify for. Uses the official PAY97 conversion table.",
   alternates: {
@@ -267,6 +267,72 @@ export default function AfqtCalculatorPage() {
           Category IV accessions are capped at 4% of annual recruits across all
           DoD branches by federal law (32 CFR 66.6). Category V is barred
           entirely.
+        </p>
+      </section>
+
+      {/* Branch-minimum AFQT table */}
+      <section className="mt-8 rounded-xl border border-navy-border bg-navy-light p-6">
+        <h2 className="font-display text-xl font-bold text-text-primary">
+          Minimum AFQT Score by Branch (2026)
+        </h2>
+        <p className="mt-3 text-text-secondary">
+          The percentile your calculator returns has to clear your branch&apos;s
+          floor before anything else matters. Diploma holders face lower minimums
+          than GED holders in every branch.
+        </p>
+        <div className="mt-4 overflow-x-auto">
+          <table className="min-w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Branch
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Diploma Minimum
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  GED Minimum
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["Army", "31", "50"],
+                ["Marine Corps", "32", "50"],
+                ["Coast Guard", "32", "50 (+15 college credits)"],
+                ["Navy", "35", "50 (+15 college credits)"],
+                ["Air Force", "36", "50 (+15 college credits)"],
+                ["Space Force", "36", "50 (+15 college credits)"],
+              ].map(([branch, diploma, ged]) => (
+                <tr key={branch} className="border-b border-navy-border/50">
+                  <td className="py-2 pr-4 font-semibold text-text-primary">
+                    {branch}
+                  </td>
+                  <td className="py-2 pr-4 font-mono text-text-secondary">
+                    {diploma}
+                  </td>
+                  <td className="py-2 text-text-secondary">{ged}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-sm text-text-secondary">
+          For the full breakdown of how every score works, see{" "}
+          <Link
+            href="/asvab-scores-explained"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            ASVAB scores explained
+          </Link>{" "}
+          and the{" "}
+          <Link
+            href="/asvab-score-chart"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            ASVAB score chart
+          </Link>
+          .
         </p>
       </section>
 

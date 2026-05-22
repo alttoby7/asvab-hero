@@ -97,7 +97,15 @@ export default function FreeAsvabPracticeTestsPage() {
           You searched for free ASVAB practice tests. There are dozens of them.
           Most aren&apos;t worth your time. This page covers the six that
           actually are, what each one does well, where it falls short, and how
-          to use any of them so you walk out of MEPS with the score you need.
+          to use any of them so you walk out of MEPS with the score you need. If
+          you&apos;ve already tested once, read the{" "}
+          <Link
+            href="/how-to-retake-the-asvab"
+            className="text-accent hover:text-accent-hover"
+          >
+            ASVAB retake rules
+          </Link>{" "}
+          before booking your next attempt.
         </p>
 
         {/* TL;DR */}

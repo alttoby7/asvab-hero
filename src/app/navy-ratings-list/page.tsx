@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Navy Ratings List 2026: 89 Jobs & ASVAB Scores | ASVAB Hero",
+  title: "Navy Ratings List (2026): Jobs and Required ASVAB Scores | ASVAB Hero",
   description:
     "Complete navy ratings list organized by career community. ASVAB composite scores for all 89 jobs, FY2026 bonuses, NAPT requirements, and PACT path explained.",
   alternates: {
@@ -175,6 +175,59 @@ export default function NavyRatingsListPage() {
           return on study time.
         </p>
 
+        {/* Category jump links — TOC into each community */}
+        <nav
+          aria-label="Jump to a Navy community"
+          className="my-6 not-prose rounded-xl border border-navy-border bg-navy-light p-5"
+        >
+          <p className="text-sm font-semibold text-text-primary">
+            Jump to a career community
+          </p>
+          <div className="mt-3 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
+            {[
+              ["#aviation", "Aviation"],
+              ["#surface-combat", "Surface Combat & Deck"],
+              ["#engineering", "Engineering & Propulsion"],
+              ["#intelligence", "Intelligence, Crypto & Cyber"],
+              ["#submarine", "Submarine Service"],
+              ["#nuclear", "Nuclear Field"],
+              ["#medical-admin", "Medical, Admin & Supply"],
+              ["#special-warfare", "Special Warfare"],
+              ["#seabees", "Seabees / Construction"],
+            ].map(([href, label]) => (
+              <a
+                key={href}
+                href={href}
+                className="text-accent no-underline transition-colors hover:text-accent-hover"
+              >
+                {label} &rarr;
+              </a>
+            ))}
+          </div>
+        </nav>
+
+        {/* CTA module — high-intent: find the ratings you already qualify for */}
+        <div className="my-6 not-prose rounded-2xl border border-accent/30 bg-navy-light p-6 text-center sm:flex sm:items-center sm:justify-between sm:text-left">
+          <div>
+            <p className="font-display text-base font-bold text-text-primary">
+              See which ratings you qualify for right now
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">
+              Take a free 3-minute diagnostic to estimate your AFQT and line scores
+              before you talk to a recruiter.
+            </p>
+          </div>
+          <Link
+            href="/practice-test"
+            className="mt-4 inline-flex items-center justify-center gap-1.5 rounded-xl bg-accent px-5 py-3 text-sm font-semibold text-white no-underline transition-colors hover:bg-accent-hover sm:mt-0 sm:ml-6 sm:shrink-0"
+          >
+            Start free diagnostic
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </Link>
+        </div>
+
         {/* ── Section: How Navy ASVAB Scoring Works ── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           How Navy ASVAB Scoring Works: AFQT vs Composite Scores
@@ -239,7 +292,7 @@ export default function NavyRatingsListPage() {
         </p>
 
         {/* ── Section 1: Aviation Community ── */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        <h2 id="aviation" className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary">
           1. Aviation Community Ratings (14 Jobs)
         </h2>
 
@@ -383,7 +436,7 @@ export default function NavyRatingsListPage() {
         </p>
 
         {/* ── Section 2: Surface Combat Systems ── */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        <h2 id="surface-combat" className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary">
           2. Surface Combat Systems and Deck Ratings (12 Jobs)
         </h2>
 
@@ -513,7 +566,7 @@ export default function NavyRatingsListPage() {
         </p>
 
         {/* ── Section 3: Engineering and Propulsion ── */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        <h2 id="engineering" className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary">
           3. Engineering and Propulsion Ratings (8 Jobs)
         </h2>
 
@@ -618,7 +671,7 @@ export default function NavyRatingsListPage() {
         </p>
 
         {/* ── Section 4: Intelligence, Cryptologic, and Cyber ── */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        <h2 id="intelligence" className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary">
           4. Intelligence, Cryptologic, and Cyber Ratings (10 Jobs)
         </h2>
 
@@ -751,7 +804,7 @@ export default function NavyRatingsListPage() {
         </p>
 
         {/* ── Section 5: Submarine Service ── */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        <h2 id="submarine" className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary">
           5. Submarine Service Ratings (Including SECF)
         </h2>
 
@@ -858,7 +911,7 @@ export default function NavyRatingsListPage() {
         </p>
 
         {/* ── Section 6: Nuclear Field ── */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        <h2 id="nuclear" className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary">
           6. Nuclear Field Ratings and the NAPT Exam
         </h2>
 
@@ -965,7 +1018,7 @@ export default function NavyRatingsListPage() {
         </p>
 
         {/* ── Section 7: Medical, Admin, Supply, and Support ── */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        <h2 id="medical-admin" className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary">
           7. Medical, Admin, Supply, and Support Ratings (10 Jobs)
         </h2>
 
@@ -1099,7 +1152,7 @@ export default function NavyRatingsListPage() {
         </p>
 
         {/* ── Section 8: Special Warfare ── */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        <h2 id="special-warfare" className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary">
           8. Special Warfare Ratings (5 Jobs)
         </h2>
 
@@ -1188,7 +1241,7 @@ export default function NavyRatingsListPage() {
         </p>
 
         {/* ── Section 9: Naval Construction Force ── */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        <h2 id="seabees" className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary">
           9. Naval Construction Force and Seabees (7 Jobs)
         </h2>
 
