@@ -52,16 +52,18 @@ function afqtPercentileFromRaw(raw: number): number {
   return 99;
 }
 
+/** Remap a standard score (20-99) to the PAY97 equated scale (~20-62). */
+export function standardToEquated(v: number): number {
+  const s = Math.min(99, Math.max(20, v));
+  return Math.round(20 + ((s - 20) * 42) / 79);
+}
+
 export function calculateAFQT(scores: SubtestScores): number {
   // Remap standard scores (20-99) to PAY97 equated scale (20-62) linearly.
   // This ensures a score of 50 (military-applicant mean) yields ~66th percentile
   // rather than collapsing near the 99th percentile ceiling.
-  const toEquated = (v: number) => {
-    const s = Math.min(99, Math.max(20, v));
-    return Math.round(20 + (s - 20) * 42 / 79);
-  };
-  const ve = toEquated(scores.WK) + toEquated(scores.PC);
-  const raw = 2 * ve + toEquated(scores.AR) + toEquated(scores.MK);
+  const ve = standardToEquated(scores.WK) + standardToEquated(scores.PC);
+  const raw = 2 * ve + standardToEquated(scores.AR) + standardToEquated(scores.MK);
   return afqtPercentileFromRaw(raw);
 }
 

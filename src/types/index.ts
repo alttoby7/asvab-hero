@@ -190,6 +190,10 @@ export interface Attempt {
     topic_id: string;
     is_correct: boolean;
   }>;
+  /** Prep-mode snapshot at write time (AFCT cohort measurement). */
+  test_type?: string | null;
+  primary_metric_code?: string | null; // AFQT | GT | G
+  primary_metric_estimate?: number | null;
 }
 
 /** Insert payload — client builds this; server fills user_id / id / created_at. */

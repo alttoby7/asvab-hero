@@ -208,6 +208,9 @@ export async function saveAttempt(
         results_by_subtest: attempt.results_by_subtest,
         results_by_topic: attempt.results_by_topic,
         question_results: attempt.question_results,
+        test_type: attempt.test_type ?? null,
+        primary_metric_code: attempt.primary_metric_code ?? null,
+        primary_metric_estimate: attempt.primary_metric_estimate ?? null,
         synced_from_local: false,
       };
       const { data: row, error: insErr } = await sb

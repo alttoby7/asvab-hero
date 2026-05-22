@@ -7,7 +7,12 @@ import type {
   TopicResult,
 } from "@/types";
 import { ALL_SUBTESTS } from "@/types";
-import { calculateAFQT, getAFQTCategory } from "./score-calculator";
+import {
+  calculateAFQT,
+  getAFQTCategory,
+  standardToEquated,
+} from "./score-calculator";
+import type { PrimaryMetric } from "./prep-mode";
 
 /**
  * Per-topic scoring. Mirrors `scoreBySubtest` but groups by `topic_id`,
@@ -112,6 +117,36 @@ export function estimateAFQT(subtestResults: SubtestResult[]): {
 
   const afqt = calculateAFQT(scores);
   return { score: afqt, category: getAFQTCategory(afqt) };
+}
+
+/**
+ * Prep-mode primary metric from a completed test. AFQT = percentile (banded).
+ * GT / General = an equated AR+WK+PC PROXY (same equated scale as the trajectory
+ * composites — consistent for within-cohort delta; NOT an official GT/MAGE score
+ * and NOT compared to qualification tiers). Reuses estimateAFQT's regressed
+ * standard scores so noisy 3-4-question subtests don't spike the proxy.
+ */
+export function estimatePrimaryMetric(
+  subtestResults: SubtestResult[],
+  metric: PrimaryMetric
+): { score: number; label: string; category: string | null } {
+  if (metric === "AFQT") {
+    const a = estimateAFQT(subtestResults);
+    return { score: a.score, label: "AFQT", category: a.category };
+  }
+  const resultMap = new Map(subtestResults.map((r) => [r.subtest, r]));
+  const toScore = (pct: number, seen: number): number => {
+    const raw = 20 + (pct / 100) * 79;
+    const confidence = Math.min(seen / 15, 1);
+    return Math.round(50 + (raw - 50) * confidence);
+  };
+  const eq = (st: AsvabSubtest) =>
+    standardToEquated(
+      toScore(resultMap.get(st)?.percentage ?? 0, resultMap.get(st)?.total ?? 0)
+    );
+  // GT (Army/Marines) and General (AF/SF) are both AR+WK+PC.
+  const score = eq("AR") + eq("WK") + eq("PC");
+  return { score, label: metric === "G" ? "General (G)" : "GT", category: null };
 }
 
 export function getStrengths(results: SubtestResult[]): SubtestResult[] {

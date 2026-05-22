@@ -27,8 +27,11 @@ import {
   scoreBySubtest,
   scoreByTopic,
   estimateAFQT,
+  estimatePrimaryMetric,
   totalCorrect,
 } from "@/lib/test-scorer";
+import { getPrepMode, type PrepMode } from "@/lib/prep-mode";
+import type { Branch } from "@/types";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
 import QuestionCard from "./QuestionCard";
@@ -78,6 +81,7 @@ export default function PracticeTestEngine({
   const [timeRemaining, setTimeRemaining] = useState(0);
   const [hasSavedState, setHasSavedState] = useState(false);
   const [userId, setUserId] = useState<string | null>(null);
+  const [prepMode, setPrepMode] = useState<PrepMode | null>(null);
   const [savedProfile, setSavedProfile] = useState<TopicStats[] | null>(null);
   const [didSaveAttempt, setDidSaveAttempt] = useState(false);
   const startTimeRef = useRef<number>(0);
@@ -115,11 +119,25 @@ export default function PracticeTestEngine({
         if (!cancelled) setLoadState("error");
       }
 
-      // Auth check (best-effort).
+      // Auth + prep-mode (best-effort). Prep mode drives the primary metric
+      // (AFQT vs GT/General) for the results + the attempt's cohort fields.
       try {
         const sb = getSupabaseBrowserClient();
         const { data } = await sb.auth.getUser();
-        if (!cancelled) setUserId(data.user?.id ?? null);
+        const uid = data.user?.id ?? null;
+        if (!cancelled) setUserId(uid);
+        if (uid) {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          const { data: prof } = await (sb.from("profiles") as any)
+            .select("test_type,branch")
+            .eq("user_id", uid)
+            .single();
+          if (!cancelled) {
+            setPrepMode(
+              getPrepMode(prof?.test_type ?? null, (prof?.branch ?? null) as Branch | null)
+            );
+          }
+        }
       } catch {
         if (!cancelled) setUserId(null);
       }
@@ -303,6 +321,9 @@ export default function PracticeTestEngine({
       const topicResults = scoreByTopic(shuffledQuestions, answers);
       const correct = totalCorrect(shuffledQuestions, answers);
       const afqt = estimateAFQT(subtestResults).score;
+      // Prep-mode primary metric (AFQT vs GT/General proxy) for the cohort fields.
+      const metricCode = prepMode?.primaryMetric ?? "AFQT";
+      const primaryEstimate = estimatePrimaryMetric(subtestResults, metricCode).score;
 
       const resultsBySubtest: Record<
         string,
@@ -358,6 +379,9 @@ export default function PracticeTestEngine({
         results_by_subtest: resultsBySubtest,
         results_by_topic: resultsByTopic,
         question_results: questionResults,
+        test_type: prepMode?.testType ?? null,
+        primary_metric_code: metricCode,
+        primary_metric_estimate: primaryEstimate,
       };
 
       try {
@@ -522,6 +546,7 @@ export default function PracticeTestEngine({
         onRetake={handleRetake}
         userId={userId}
         savedProfile={savedProfile}
+        prepMode={prepMode}
       />
     );
   }

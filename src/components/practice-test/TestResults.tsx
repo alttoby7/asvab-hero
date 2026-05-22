@@ -12,12 +12,14 @@ import {
   scoreBySubtest,
   scoreByTopic,
   estimateAFQT,
+  estimatePrimaryMetric,
   estimateStandardScores,
   totalCorrect,
 } from "@/lib/test-scorer";
 import { ALL_SUBTESTS } from "@/types";
 import { getAFQTCategoryDescription } from "@/lib/score-calculator";
 import { recommendNextStep } from "@/lib/practice/recommender";
+import type { PrepMode } from "@/lib/prep-mode";
 import TopicBreakdown from "./TopicBreakdown";
 import NextStepCard from "./NextStepCard";
 import QuestionReviewList from "./QuestionReviewList";
@@ -30,6 +32,8 @@ interface TestResultsProps {
   onRetake: () => void;
   userId: string | null;
   savedProfile: TopicStats[] | null;
+  /** Prep mode — AFCT users see GT/General (proxy) instead of AFQT. */
+  prepMode?: PrepMode | null;
 }
 
 function SubtestCard({ result }: { result: SubtestResult }) {
@@ -115,6 +119,7 @@ export default function TestResults({
   onRetake,
   userId,
   savedProfile,
+  prepMode,
 }: TestResultsProps) {
   // Phase E: entitlement for upgrade nudge
   const { entitlement } = useEntitlement();
@@ -123,6 +128,11 @@ export default function TestResults({
   const subtestResults = scoreBySubtest(questions, answers);
   const topicResults = scoreByTopic(questions, answers);
   const afqtEstimate = estimateAFQT(subtestResults);
+  // AFCT users see their GT/General proxy instead of AFQT (no tier claims).
+  const isAfqtMode = !prepMode || prepMode.primaryMetric === "AFQT";
+  const primary = isAfqtMode
+    ? null
+    : estimatePrimaryMetric(subtestResults, prepMode.primaryMetric);
   const correct = totalCorrect(questions, answers);
   const overallPct = Math.round((correct / questions.length) * 100);
   const estimatedScores = estimateStandardScores(subtestResults);
@@ -161,12 +171,26 @@ export default function TestResults({
             label="Overall Score"
             sublabel={`${correct} of ${questions.length} correct`}
           />
-          <ScoreCircle
-            value={afqtEstimate.score}
-            label="Est. AFQT"
-            sublabel={`Category ${afqtEstimate.category}`}
-          />
+          {isAfqtMode ? (
+            <ScoreCircle
+              value={afqtEstimate.score}
+              label="Est. AFQT"
+              sublabel={`Category ${afqtEstimate.category}`}
+            />
+          ) : (
+            <ScoreCircle
+              value={primary!.score}
+              label={`Est. ${primary!.label}`}
+              sublabel="practice proxy"
+            />
+          )}
         </div>
+        {!isAfqtMode && (
+          <p className="mt-3 text-center text-xs text-text-tertiary">
+            A practice proxy to track your {primary!.label} climb — not an official
+            score or a qualification guarantee. Targets vary by role/program.
+          </p>
+        )}
         <div className="mt-4 text-center">
           <p className="text-sm text-text-secondary">
             {getAFQTCategoryDescription(afqtEstimate.category)}
