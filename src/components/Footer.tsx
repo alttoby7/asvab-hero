@@ -121,6 +121,14 @@ export default function Footer() {
             <ul className="space-y-2 list-none p-0">
               <li>
                 <Link
+                  href="/how-it-works"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  How it works
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/about"
                   className="text-sm text-text-tertiary hover:text-text-primary no-underline"
                 >

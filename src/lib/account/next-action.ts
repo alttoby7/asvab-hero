@@ -214,3 +214,175 @@ export function getTrajectoryPrescription(
     urgent,
   };
 }
+
+// =============================================================
+// PILLAR 2 — "Your Plan" weekly routine (powers /app/plan)
+//
+// Turns the single-action prescription into the durable ROUTINE CONTRACT the
+// product was missing: which phase the user is in (driven by time-to-test),
+// the daily loop to run on study days, what's scheduled THIS WEEK, and a short
+// "why it works" rationale. Pure function — no fabricated scores, band-only
+// upstream, safe with sparse data. Phasing mirrors docs/learning-science-strategy.md.
+// =============================================================
+
+/** Study phase, driven by weeks-to-test (and whether a baseline exists). */
+export type StudyPhase = "baseline" | "foundation" | "build" | "final";
+
+/** Days-to-test thresholds (inclusive upper bounds). */
+const FINAL_STRETCH_DAYS = 21; // ~3 weeks
+const BUILD_DAYS = 56; // ~8 weeks
+
+/** Cadence for re-baselining: a fresh diagnostic every ~14 days. */
+const DIAGNOSTIC_CADENCE_DAYS = 14;
+
+export interface PlanStep {
+  /** Stable id so the UI can check completion against today's activity. */
+  id: "diagnostic" | "review_mistakes" | "adaptive_block" | "timed_section" | "full_sim" | "pretest_writing";
+  label: string;
+  /** Why this step, in one short clause (links to /the-science in the UI). */
+  why: string;
+  ctaHref: string;
+  /** Cadence: the daily loop vs. a once-this-week task. */
+  cadence: "daily" | "weekly";
+  /** Only relevant when the step is actually scheduled now. */
+  optional?: boolean;
+}
+
+export interface WeeklyPlan {
+  phase: StudyPhase;
+  phaseLabel: string;
+  /** One-line description of where the user is in the arc. */
+  phaseSummary: string;
+  daysToTest: number | null;
+  studyDaysPerWeek: number;
+  /** The ordered daily loop to run on a study day. */
+  dailyLoop: PlanStep[];
+  /** Once-this-week tasks (diagnostic re-baseline, timed section, full sim). */
+  thisWeek: PlanStep[];
+  /** Whether a fresh diagnostic is due (no baseline, or cadence elapsed). */
+  diagnosticDue: boolean;
+  urgent: boolean;
+}
+
+const STEP_REVIEW: PlanStep = {
+  id: "review_mistakes",
+  label: "Clear your due mistakes",
+  why: "Retrieval practice on items you've missed — the highest-leverage minutes you have.",
+  ctaHref: "/app/mistakes",
+  cadence: "daily",
+};
+const STEP_ADAPTIVE: PlanStep = {
+  id: "adaptive_block",
+  label: "One adaptive AFQT block",
+  why: "The app targets the right topic at the right difficulty — close to one-on-one tutoring.",
+  ctaHref: "/app/practice?variant=afqt_adaptive",
+  cadence: "daily",
+};
+const STEP_DIAGNOSTIC: PlanStep = {
+  id: "diagnostic",
+  label: "Take a diagnostic",
+  why: "Re-baseline so you can see real movement and re-aim your practice.",
+  ctaHref: "/app/practice?variant=diagnostic",
+  cadence: "weekly",
+};
+const STEP_TIMED_SECTION: PlanStep = {
+  id: "timed_section",
+  label: "One timed AFQT section",
+  why: "Builds pacing and stamina so the clock isn't a surprise on test day.",
+  ctaHref: "/app/practice?variant=afqt_adaptive&timed=1",
+  cadence: "weekly",
+};
+const STEP_FULL_SIM: PlanStep = {
+  id: "full_sim",
+  label: "One full-length simulation",
+  why: "Removes test-day novelty — rehearse the real structure and length once a week.",
+  ctaHref: "/app/practice?variant=full_sim",
+  cadence: "weekly",
+};
+const STEP_PRETEST_WRITING: PlanStep = {
+  id: "pretest_writing",
+  label: "10-minute pre-test write-out",
+  why: "Writing out test worries before a high-stakes test recovers lost points (Ramirez & Beilock, 2011).",
+  ctaHref: "/app/plan#pretest-writing",
+  cadence: "weekly",
+  optional: true,
+};
+
+export interface WeeklyPlanInput {
+  hasDiagnostic: boolean;
+  confidence: Confidence;
+  daysToTest: number | null;
+  studyDaysPerWeek: number | null;
+  /** Days since the most recent diagnostic (null if none). */
+  daysSinceDiagnostic: number | null;
+}
+
+export function getWeeklyPlan(input: WeeklyPlanInput): WeeklyPlan {
+  const { hasDiagnostic, confidence, daysToTest, daysSinceDiagnostic } = input;
+  const studyDaysPerWeek = input.studyDaysPerWeek ?? 4;
+  const urgent = daysToTest != null && daysToTest <= FINAL_STRETCH_DAYS;
+
+  // Phase: no baseline (or still rough) -> baseline; else by time-to-test.
+  let phase: StudyPhase;
+  if (!hasDiagnostic || confidence === "low") {
+    phase = "baseline";
+  } else if (daysToTest != null && daysToTest <= FINAL_STRETCH_DAYS) {
+    phase = "final";
+  } else if (daysToTest != null && daysToTest <= BUILD_DAYS) {
+    phase = "build";
+  } else {
+    phase = "foundation";
+  }
+
+  const diagnosticDue =
+    !hasDiagnostic ||
+    daysSinceDiagnostic == null ||
+    daysSinceDiagnostic >= DIAGNOSTIC_CADENCE_DAYS;
+
+  // Daily loop: mistakes first, then an adaptive block (the free core).
+  const dailyLoop: PlanStep[] = [STEP_REVIEW, STEP_ADAPTIVE];
+
+  // This-week tasks accrue with the phase.
+  const thisWeek: PlanStep[] = [];
+  if (diagnosticDue) thisWeek.push(STEP_DIAGNOSTIC);
+  if (phase === "build" || phase === "final") thisWeek.push(STEP_TIMED_SECTION);
+  if (phase === "final") {
+    thisWeek.push(STEP_FULL_SIM);
+    thisWeek.push(STEP_PRETEST_WRITING);
+  }
+
+  const PHASE_META: Record<StudyPhase, { label: string; summary: string }> = {
+    baseline: {
+      label: "Get your baseline",
+      summary:
+        "Start with one diagnostic so we can see where you're testing today and aim your plan.",
+    },
+    foundation: {
+      label: "Foundation",
+      summary:
+        "More than 8 weeks out — build the habit: clear due mistakes, then one adaptive AFQT block on each study day. Let spacing do the work.",
+    },
+    build: {
+      label: "Build",
+      summary:
+        "3–8 weeks out — keep the daily loop and add one timed AFQT section each week to build pacing.",
+    },
+    final: {
+      label: "Final stretch",
+      summary:
+        "Under 3 weeks — keep the daily loop, add a weekly full-length simulation, and do the pre-test write-out before each sim.",
+    },
+  };
+
+  return {
+    phase,
+    phaseLabel: PHASE_META[phase].label,
+    phaseSummary: PHASE_META[phase].summary,
+    daysToTest: daysToTest ?? null,
+    studyDaysPerWeek,
+    dailyLoop: phase === "baseline" ? [STEP_DIAGNOSTIC] : dailyLoop,
+    thisWeek: phase === "baseline" ? [] : thisWeek,
+    diagnosticDue,
+    urgent,
+  };
+}

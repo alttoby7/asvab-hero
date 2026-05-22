@@ -217,6 +217,22 @@ export async function saveAttempt(
         .single();
       if (insErr) throw insErr;
 
+      // Durable "study day completed" event (migration 0028) — the dose metric
+      // for paired-diagnostic AFQT-delta analysis. One row per user per local
+      // day; idempotent. Non-blocking — never fail an attempt over telemetry.
+      try {
+        const now = new Date();
+        const localDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+        await sb
+          .from("study_days")
+          .upsert(
+            { user_id: userId, study_date: localDate, trigger: attempt.variant_code },
+            { onConflict: "user_id,study_date", ignoreDuplicates: true }
+          );
+      } catch {
+        /* telemetry-only; ignore */
+      }
+
       // topic_stats recompute AND Spaced Mistake Bank ingestion are handled
       // DB-side by the ingest_attempt_mistakes trigger on `attempts` (migration
       // 0017) — single authoritative pipeline, fired on the insert above.

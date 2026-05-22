@@ -13,7 +13,7 @@ import type { HomeTrajectory } from "@/lib/trajectory/types";
 import { getTrajectoryPrescription } from "@/lib/account/next-action";
 import type { TopicStats } from "@/types";
 
-import MissionCard from "@/components/app/MissionCard";
+import Link from "next/link";
 import StatsRow from "@/components/app/StatsRow";
 import GoalJobsTracker from "@/components/app/GoalJobsTracker";
 import TrajectoryCard from "@/components/app/TrajectoryCard";
@@ -232,41 +232,16 @@ export default function AppHomePage() {
 
   // Attempt stats (display only — NOT used to derive standing; the RPC does that)
   const diagnostics = attempts.filter((a) => a.variant_code === "diagnostic");
-  const hasDiagnostic = diagnostics.length > 0;
   const latestDiagnostic = diagnostics[0] ?? null;
   const previousDiagnostic = diagnostics[1] ?? null;
   const totalQ = attempts.reduce((s, a) => s + a.question_count, 0);
   const totalC = attempts.reduce((s, a) => s + a.correct_count, 0);
   const accuracy = totalQ > 0 ? Math.round((totalC / totalQ) * 100) : null;
 
-  // Weak topic (for mission + mastery copy)
-  const weakStats = [...topicStats]
-    .filter((ts) => ts.priority > 0 && ts.seen >= 3)
-    .sort((a, b) => b.priority - a.priority);
-  const weakest = weakStats[0] ?? null;
-  const weakestTopic = weakest
-    ? topics.find((t) => t.id === weakest.topic_id)
-    : null;
-
-  // Mission state
+  // Daily challenge done-today (shown on the Your Plan card below).
   const dailyDoneToday =
     todaysChallenge?.status === "completed" ||
     isToday(profile.last_challenge_completed_on);
-
-  type MissionState =
-    | "no_diagnostic"
-    | "daily_available"
-    | "daily_done"
-    | "keep_practicing";
-
-  let missionState: MissionState;
-  if (!hasDiagnostic) {
-    missionState = "no_diagnostic";
-  } else if (dailyDoneToday) {
-    missionState = "daily_done";
-  } else {
-    missionState = "daily_available";
-  }
 
   // Mistake count (lifetime, for QuickActions fallback)
   const mistakeCount = attempts.reduce(
@@ -308,16 +283,39 @@ export default function AppHomePage() {
       {/* Today's Prescription (single highest-leverage action) */}
       <PrescriptionCard prescription={prescription} />
 
-      {/* Today's Mission */}
-      <MissionCard
-        state={missionState}
-        streakCount={profile.streak_count}
-        weakestTopicTitle={weakestTopic?.title ?? null}
-        weakestSubtest={weakestTopic?.subtest ?? null}
-        isPro={isPro}
-        mistakeDueCount={dueMistakeCount}
-        closedLoopEnabled={closedLoopEnabled}
-      />
+      {/* Your Plan — the routine contract (replaces the old Mission card so the
+          page has one hero action above + one "see the whole method" link). */}
+      <div className="rounded-2xl border border-navy-border bg-navy-light p-5 sm:p-6">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <h2 className="font-display text-lg font-bold text-text-primary">
+              Your Plan
+            </h2>
+            <p className="mt-1 text-sm text-text-secondary">
+              Your full weekly routine — exactly what to do today and this week.
+            </p>
+          </div>
+          <Link
+            href="/app/plan"
+            className="shrink-0 rounded-lg bg-navy-lighter px-4 py-2 text-sm font-semibold text-text-primary no-underline transition-colors hover:bg-navy-border"
+          >
+            See your plan
+          </Link>
+        </div>
+        <Link
+          href="/app/daily"
+          className="mt-4 inline-flex items-center gap-2 text-sm text-text-secondary no-underline transition-colors hover:text-text-primary"
+        >
+          {dailyDoneToday
+            ? "Daily challenge — done for today ✓"
+            : "Daily challenge — ready"}
+          {profile.streak_count > 0 && (
+            <span className="text-text-tertiary">
+              · {profile.streak_count}-day streak
+            </span>
+          )}
+        </Link>
+      </div>
 
       {/* Stats */}
       <StatsRow

@@ -63,6 +63,22 @@ const SUBTEST_OPTIONS: { value: WeakestSubtest; label: string }[] = [
   { value: "not_sure", label: "Not sure" },
 ];
 
+// Implementation intention (Gollwitzer): committing to days + a time + a concrete
+// anchor measurably raises adherence — the lab-to-field gap for real score gains.
+type StudyTime = "morning" | "afternoon" | "evening";
+const DAYS_OPTIONS: { value: number; label: string }[] = [
+  { value: 3, label: "3 days" },
+  { value: 4, label: "4 days" },
+  { value: 5, label: "5 days" },
+  { value: 6, label: "6 days" },
+  { value: 7, label: "Every day" },
+];
+const TIME_OPTIONS: { value: StudyTime; label: string }[] = [
+  { value: "morning", label: "Morning" },
+  { value: "afternoon", label: "Afternoon" },
+  { value: "evening", label: "Evening" },
+];
+
 function SegmentButton<T extends string>({
   value,
   label,
@@ -99,6 +115,10 @@ export function OnboardingForm() {
   const [specificDate, setSpecificDate] = useState<string>("");
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [weakest, setWeakest] = useState<WeakestSubtest | null>(null);
+  // Implementation intention.
+  const [studyDays, setStudyDays] = useState<number | null>(null);
+  const [studyTime, setStudyTime] = useState<StudyTime | null>(null);
+  const [studyAnchor, setStudyAnchor] = useState<string>("");
   // Optional goal jobs (up to 3), persisted on submit via rpc_add_target_job.
   const [goalJobs, setGoalJobs] = useState<JobCatalogEntry[]>([]);
 
@@ -107,7 +127,14 @@ export function OnboardingForm() {
   const [error, setError] = useState<string | null>(null);
 
   const hasTestDate = !!specificDate || !!bucket;
-  const canSubmit = !!branch && hasTestDate && !!weakest && !submitting && !skipping;
+  const canSubmit =
+    !!branch &&
+    hasTestDate &&
+    !!weakest &&
+    !!studyDays &&
+    !!studyTime &&
+    !submitting &&
+    !skipping;
 
   function handleBucket(v: TestDateBucket) {
     setBucket(v);
@@ -136,6 +163,9 @@ export function OnboardingForm() {
       target_test_date: specificDate ? specificDate : null,
       target_test_date_bucket: specificDate ? null : bucket,
       self_reported_weakest_subtest: weakest,
+      study_days_per_week: studyDays,
+      preferred_study_time: studyTime,
+      study_anchor: studyAnchor.trim() || null,
       onboarding_completed_at: new Date().toISOString(),
     };
 
@@ -163,10 +193,14 @@ export function OnboardingForm() {
       branch: branch ?? undefined,
       has_test_date: !!specificDate,
       weakest_subtest: weakest ?? undefined,
+      study_days_per_week: studyDays ?? undefined,
+      study_time: studyTime ?? undefined,
       goal_jobs: goalJobs.length,
     });
 
-    router.push("/app/home");
+    // Deliver the actual plan (was routing to /app/home — the button promised a
+    // plan it never showed). /app/plan renders the personalized routine.
+    router.push("/app/plan");
   }
 
   async function handleSkip() {
@@ -339,6 +373,55 @@ export function OnboardingForm() {
           )}
         </div>
       )}
+
+      {/* Q5 — Implementation intention (days + time + anchor) */}
+      <div>
+        <label className="block font-display text-lg font-semibold text-text-primary mb-1">
+          5. How often will you study?
+        </label>
+        <p className="mb-3 text-sm text-text-secondary">
+          Showing up on your study days beats cramming — it&apos;s the biggest
+          predictor of real score gains. Pick a rhythm you can keep.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {DAYS_OPTIONS.map((opt) => (
+            <SegmentButton
+              key={opt.value}
+              value={String(opt.value)}
+              label={opt.label}
+              selected={studyDays === opt.value}
+              onClick={(v) => setStudyDays(Number(v))}
+            />
+          ))}
+        </div>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          {TIME_OPTIONS.map((opt) => (
+            <SegmentButton
+              key={opt.value}
+              value={opt.value}
+              label={opt.label}
+              selected={studyTime === opt.value}
+              onClick={setStudyTime}
+            />
+          ))}
+        </div>
+
+        <div className="mt-4">
+          <label className="block text-sm text-text-secondary mb-1">
+            I&apos;ll study right after&hellip;{" "}
+            <span className="text-text-tertiary">(optional anchor)</span>
+          </label>
+          <input
+            type="text"
+            value={studyAnchor}
+            onChange={(e) => setStudyAnchor(e.target.value)}
+            placeholder="e.g. breakfast, my last class, work"
+            maxLength={80}
+            className="w-full max-w-sm rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary focus:border-accent focus:outline-none"
+          />
+        </div>
+      </div>
 
       {error && (
         <div className="rounded-lg border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-300">
