@@ -8,6 +8,8 @@ import { trackEvent } from "@/lib/analytics";
 import { addTargetJob } from "@/lib/trajectory/queries";
 import type { JobCatalogEntry } from "@/lib/trajectory/types";
 import JobPicker from "@/components/app/JobPicker";
+import { getPrepMode, type TestType } from "@/lib/prep-mode";
+import type { Branch as BranchType } from "@/types";
 
 type Branch =
   | "army"
@@ -110,6 +112,7 @@ export function OnboardingForm() {
   const router = useRouter();
   const { session } = useSession();
 
+  const [testType, setTestType] = useState<TestType>("initial_asvab");
   const [branch, setBranch] = useState<Branch | null>(null);
   const [bucket, setBucket] = useState<TestDateBucket | null>(null);
   const [specificDate, setSpecificDate] = useState<string>("");
@@ -175,6 +178,7 @@ export function OnboardingForm() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const sb = getSupabaseBrowserClient() as any;
     const payload = {
+      test_type: testType,
       branch,
       target_test_date: specificDate ? specificDate : null,
       target_test_date_bucket: specificDate ? null : bucket,
@@ -227,6 +231,7 @@ export function OnboardingForm() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const sb = getSupabaseBrowserClient() as any;
     const payload = {
+      test_type: testType,
       branch: null,
       target_test_date: null,
       target_test_date_bucket: null,
@@ -254,10 +259,53 @@ export function OnboardingForm() {
       onSubmit={handleSubmit}
       className="rounded-2xl border border-navy-border bg-navy-light p-6 sm:p-8 space-y-8"
     >
-      {/* Q1 — Branch */}
+      {/* Q1 — Test type (reframes the whole plan) */}
+      <div>
+        <label className="block font-display text-lg font-semibold text-text-primary mb-1">
+          1. Which test are you preparing for?
+        </label>
+        <div className="mt-3 grid gap-2 sm:grid-cols-2">
+          <button
+            type="button"
+            onClick={() => setTestType("initial_asvab")}
+            className={
+              "rounded-lg border px-4 py-3 text-left transition-colors " +
+              (testType === "initial_asvab"
+                ? "border-accent bg-accent-dim"
+                : "border-navy-border bg-navy hover:border-accent/40")
+            }
+          >
+            <span className="block text-sm font-semibold text-text-primary">
+              Initial ASVAB
+            </span>
+            <span className="mt-0.5 block text-xs text-text-secondary">
+              Joining the military — raise your AFQT to qualify for jobs and branches.
+            </span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setTestType("afct")}
+            className={
+              "rounded-lg border px-4 py-3 text-left transition-colors " +
+              (testType === "afct"
+                ? "border-accent bg-accent-dim"
+                : "border-navy-border bg-navy hover:border-accent/40")
+            }
+          >
+            <span className="block text-sm font-semibold text-text-primary">
+              AFCT (active-duty retest)
+            </span>
+            <span className="mt-0.5 block text-xs text-text-secondary">
+              Already serving — raise your score to reclassify or retrain.
+            </span>
+          </button>
+        </div>
+      </div>
+
+      {/* Q2 — Branch */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-3">
-          1. Which branch are you targeting?
+          2. Which branch are you targeting?
         </label>
         <div className="flex flex-wrap gap-2">
           {BRANCH_OPTIONS.map((opt) => (
@@ -270,12 +318,22 @@ export function OnboardingForm() {
             />
           ))}
         </div>
+        {testType === "afct" && branch && (
+          <p className="mt-3 text-sm text-text-secondary">
+            {(() => {
+              const pm = getPrepMode("afct", branch as BranchType);
+              if (pm.branchSupported)
+                return `We'll focus your plan on ${pm.metricLabel} (AR + WK + PC) — the score ${branch === "air_force" || branch === "space_force" ? "the Air Force/Space Force uses for retraining" : "your branch uses to reclassify"}.`;
+              return "Rating conversion uses rating-specific line scores, so branch-specific targeting isn't built yet — we'll track your retest on AFQT for now.";
+            })()}
+          </p>
+        )}
       </div>
 
       {/* Q2 — Test date */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-3">
-          2. When are you planning to take the ASVAB?
+          3. When are you planning to take the test?
         </label>
         {!showDatePicker ? (
           <>
@@ -322,7 +380,7 @@ export function OnboardingForm() {
       {/* Q3 — Weakest subtest */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-3">
-          3. Which subtest feels weakest right now?
+          4. Which subtest feels weakest right now?
         </label>
         <div className="flex flex-wrap gap-2">
           {SUBTEST_OPTIONS.map((opt) => (
@@ -341,7 +399,7 @@ export function OnboardingForm() {
       {branch && branch !== "undecided" && (
         <div>
           <label className="block font-display text-lg font-semibold text-text-primary mb-1">
-            4. Any target jobs? <span className="text-text-tertiary text-sm font-normal">(optional)</span>
+            5. Any target jobs? <span className="text-text-tertiary text-sm font-normal">(optional)</span>
           </label>
           <p className="mb-3 text-sm text-text-secondary">
             Pick up to 3. We&apos;ll track how close you are to each — as a
@@ -393,7 +451,7 @@ export function OnboardingForm() {
       {/* Q5 — Implementation intention (days + time + anchor) */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-1">
-          5. How often will you study?
+          6. How often will you study?
         </label>
         <p className="mb-3 text-sm text-text-secondary">
           Showing up on your study days beats cramming — it&apos;s the biggest

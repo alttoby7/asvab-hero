@@ -65,6 +65,35 @@ export function calculateAFQT(scores: SubtestScores): number {
   return afqtPercentileFromRaw(raw);
 }
 
+/** Verbal Expression = WK + PC (standard scores). */
+export function calculateVE(scores: SubtestScores): number {
+  return scores.WK + scores.PC;
+}
+
+/**
+ * GT (General Technical) = AR + VE. Used by Army & Marines for reclassification /
+ * programs. Same AR+WK+PC scale as the Army GT tiers and the trajectory's
+ * branch_composite_estimates.army.GT.
+ */
+export function calculateGT(scores: SubtestScores): number {
+  return scores.AR + calculateVE(scores);
+}
+
+/** Air Force / Space Force MAGE "General" (G) = AR + WK + PC (same as GT). */
+export function calculateGeneral(scores: SubtestScores): number {
+  return scores.AR + scores.WK + scores.PC;
+}
+
+/** Resolve a prep mode's primary-metric value from subtest scores. */
+export function calculatePrimaryMetric(
+  scores: SubtestScores,
+  metric: "AFQT" | "GT" | "G"
+): number {
+  if (metric === "GT") return calculateGT(scores);
+  if (metric === "G") return calculateGeneral(scores);
+  return calculateAFQT(scores);
+}
+
 export function getAFQTCategory(afqt: number): string {
   if (afqt >= 93) return "I";
   if (afqt >= 65) return "II";
