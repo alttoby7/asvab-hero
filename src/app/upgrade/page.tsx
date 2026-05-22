@@ -5,7 +5,6 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import PricingPlans from "@/components/PricingPlans";
 import BrandHero from "@/components/BrandHero";
-import EmailCapture from "@/components/EmailCapture";
 import WhySurvey from "@/components/feedback/WhySurvey";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
@@ -105,13 +104,16 @@ function UpgradeContent() {
         </h1>
         {showStats && (
           <p className="mt-3 text-text-secondary">
-            You&apos;re spending real time prepping — Pro removes the cap so nothing slows
-            you down.
+            Your daily adaptive block and Mistake Bank are already free. Pro removes
+            every limit — unlimited adaptive practice, full-length sims, and deeper
+            analytics — so nothing slows you down.
           </p>
         )}
         {!showStats && !isLoading && (
           <p className="mt-3 text-text-secondary">
-            Start with one free diagnostic. Upgrade for unlimited practice.
+            The score-moving core is free: a daily adaptive AFQT block, unlimited
+            Mistake-Bank review, and your diagnostic. Pro unlocks unlimited practice,
+            full-length sims, and deeper analytics.
           </p>
         )}
       </div>
@@ -143,20 +145,29 @@ function UpgradeContent() {
         </div>
       )}
 
-      <div
-        className="mb-10"
-        onSubmitCapture={() =>
-          trackEvent(PaywallEvents.EmailCaptureExitClick, { tag: "upgrade-exit" })
-        }
-      >
-        <EmailCapture
-          variant="inline"
-          headline="Not ready to upgrade? Get the free 30-day plan first"
-          subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
-          cta="Email me the plan"
-          tag="upgrade-exit"
-        />
-      </div>
+      {/* Not ready for Pro? The free plan already raises scores — route there,
+         not to a PDF dead end. */}
+      {!isLoading && !entitlement.isPro && (
+        <div className="mb-10 rounded-2xl border border-navy-border bg-navy-light p-6 text-center sm:p-7">
+          <p className="font-display text-lg font-bold text-text-primary">
+            Not ready for Pro? Start the free plan first.
+          </p>
+          <p className="mx-auto mt-2 max-w-xl text-sm text-text-secondary">
+            One adaptive AFQT block a day, unlimited Mistake-Bank review, and a
+            weekly plan — all free, no card. Come back for Pro when you want
+            unlimited practice and full-length sims.
+          </p>
+          <Link
+            href="/app/plan"
+            onClick={() =>
+              trackEvent(PaywallEvents.PaywallCtaSecondaryClick, { which: "free_plan", from: "upgrade" })
+            }
+            className="mt-5 inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-white no-underline transition-colors hover:bg-accent-hover"
+          >
+            Start my free plan
+          </Link>
+        </div>
+      )}
 
       {/* Plan grid */}
       <div ref={pricingRef}>

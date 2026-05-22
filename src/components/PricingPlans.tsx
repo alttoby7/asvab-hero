@@ -18,18 +18,19 @@ const ANNUAL_PRICE_ID = "price_1TRIUPDjRScowBLlwZK8YuyC";
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 
 const FREE_FEATURES = [
-  "1 full diagnostic test (30 questions)",
-  "Full results + per-question explanations",
+  "Daily adaptive AFQT practice (1 block/day)",
+  "Spaced Mistake Bank — unlimited review",
+  "Full diagnostic + per-question explanations",
+  "Your weekly study plan",
   "ASVAB calculators + 500+ job matching",
-  "Study guides for every topic",
 ];
 
 const PRO_FEATURES = [
   "Everything in Free",
-  "Unlimited diagnostics + subtest drills",
-  "Score tracking + history",
-  "Weak-topic recommendations engine",
-  "Flashcards (included when released)",
+  "Unlimited adaptive practice + subtest drills",
+  "Full-length timed simulations",
+  "Score tracking, history + deeper analytics",
+  "Spaced-repetition flashcards",
 ];
 
 interface PricingPlansProps {

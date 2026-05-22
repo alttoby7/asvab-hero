@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PricingPlans from "@/components/PricingPlans";
-import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -13,8 +12,8 @@ export const metadata: Metadata = {
 
 const FAQ = [
   {
-    q: "Is one free test enough?",
-    a: "It's a real 30-question adaptive diagnostic — not a teaser. You'll get full results with per-question explanations and a clear picture of your weak subtests. Pro unlocks the practice volume to actually fix them.",
+    q: "What's actually free?",
+    a: "The whole score-moving core: a daily adaptive AFQT block, unlimited Mistake-Bank review, your weekly study plan, the full diagnostic with per-question explanations, and the calculators. No card required. Pro adds unlimited practice, full-length timed sims, and deeper analytics.",
   },
   {
     q: "Why is this cheaper than other ASVAB prep sites?",
@@ -26,7 +25,7 @@ const FAQ = [
   },
   {
     q: "Do I need Pro if I already know my weak areas?",
-    a: "The free diagnostic shows you the gap. Pro closes it. Knowing you struggle with Arithmetic Reasoning is half the battle -- but you need repetition drilled on those specific topics to move the needle before test day.",
+    a: "Not to start. The free plan already drills your weak areas with one adaptive AFQT block a day plus unlimited Mistake-Bank review. Pro removes the daily limit and adds full-length timed sims for the final stretch before test day.",
   },
 ];
 
@@ -38,18 +37,8 @@ export default function PricingPage() {
           Simple, transparent pricing
         </h1>
         <p className="mt-3 text-text-secondary">
-          Start with one free diagnostic. Upgrade for unlimited practice.
+          The score-moving core is free — no card. Pro removes every limit.
         </p>
-      </div>
-
-      <div className="mb-10">
-        <EmailCapture
-          variant="inline"
-          headline="Not ready to upgrade? Get the free 30-day plan first"
-          subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
-          cta="Email me the plan"
-          tag="pricing-exit"
-        />
       </div>
 
       <PricingPlans defaultBilling="annual" source="pricing_page" />
