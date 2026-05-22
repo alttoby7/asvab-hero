@@ -18,6 +18,7 @@ import { useSession } from "@/hooks/useSession";
 import { getDueMistakeCount } from "@/lib/mistakes/queries";
 import { getHomeTrajectory } from "@/lib/trajectory/queries";
 import type { HomeTrajectory } from "@/lib/trajectory/types";
+import type { Branch } from "@/types";
 import {
   getTrajectoryPrescription,
   getWeeklyPlan,
@@ -33,6 +34,8 @@ interface ProfileData {
   preferred_study_time: string | null;
   study_anchor: string | null;
   last_challenge_completed_on: string | null;
+  test_type: "initial_asvab" | "afct" | null;
+  branch: Branch | null;
 }
 
 interface AttemptRow {
@@ -129,7 +132,7 @@ export default function AppPlanPage() {
           sb
             .from("profiles")
             .select(
-              "display_name,target_test_date,target_test_date_bucket,study_days_per_week,preferred_study_time,study_anchor,last_challenge_completed_on,onboarding_completed_at"
+              "display_name,target_test_date,target_test_date_bucket,study_days_per_week,preferred_study_time,study_anchor,last_challenge_completed_on,onboarding_completed_at,test_type,branch"
             )
             .eq("user_id", userId)
             .single(),
@@ -233,6 +236,8 @@ export default function AppPlanPage() {
     daysToTest,
     studyDaysPerWeek: profile.study_days_per_week,
     daysSinceDiagnostic: derived.daysSinceDiagnostic,
+    testType: profile.test_type,
+    branch: profile.branch,
   });
 
   // A daily-loop step is "done today" when its work is already cleared.

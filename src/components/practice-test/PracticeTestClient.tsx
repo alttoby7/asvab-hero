@@ -11,7 +11,8 @@ import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import {
   canStartVariant,
   checkAnonDiagnosticUsed,
-  ADAPTIVE_VARIANT,
+  isAdaptiveVariant,
+  ADAPTIVE_VARIANTS,
 } from "@/lib/practice/gate";
 import {
   trackEvent,
@@ -22,7 +23,7 @@ import {
   paywallContextToProps,
 } from "@/lib/analytics";
 import { buildPaywallContext, deriveAuthState } from "@/lib/paywall-context";
-import { isAdaptiveEnabled, ADAPTIVE_VARIANT_CODE } from "@/lib/practice/sampler";
+import { isAdaptiveEnabled, ADAPTIVE_VARIANT_CODES } from "@/lib/practice/sampler";
 import type { AsvabSubtest } from "@/types";
 import { ALL_SUBTESTS } from "@/types";
 
@@ -33,7 +34,7 @@ const ALLOWED_VARIANTS = new Set([
   "diagnostic",
   "subtest_drill",
   "full_sim",
-  ...(isAdaptiveEnabled() ? [ADAPTIVE_VARIANT_CODE] : []),
+  ...(isAdaptiveEnabled() ? [...ADAPTIVE_VARIANT_CODES] : []),
 ]);
 
 function PracticeTestInner() {
@@ -53,7 +54,7 @@ function PracticeTestInner() {
   // For the free adaptive core we cap signed-in free users at one block/day.
   // Fetch today's completed adaptive count to enforce it (Pro is uncapped).
   const needsAdaptiveCount =
-    variant === ADAPTIVE_VARIANT && !!session && !entitlement.isPro;
+    !!variant && isAdaptiveVariant(variant) && !!session && !entitlement.isPro;
   const [adaptiveUsedToday, setAdaptiveUsedToday] = useState<number | null>(null);
   useEffect(() => {
     if (!needsAdaptiveCount || !session) {
@@ -75,7 +76,7 @@ function PracticeTestInner() {
           .from("attempts")
           .select("id", { count: "exact", head: true })
           .eq("user_id", session.user.id)
-          .eq("variant_code", ADAPTIVE_VARIANT)
+          .in("variant_code", [...ADAPTIVE_VARIANTS])
           .gte("completed_at", startOfDay);
         if (!cancelled) setAdaptiveUsedToday(count ?? 0);
       } catch {

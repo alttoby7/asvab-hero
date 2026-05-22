@@ -82,7 +82,9 @@ export function getPrepMode(
       goalPhrase: isGeneral
         ? "retraining into a new AFSC"
         : "reclassification and the programs you want",
-      hasTargets: branch === "army", // only Army has real tier targets
+      // v1: GT/General are shown as a PROXY (equated AR+WK+PC), so no hard tier
+      // qualification claims yet — see the GT-scale note. Real norming deferred.
+      hasTargets: false,
       branchSupported: true,
     };
   }
@@ -104,4 +106,19 @@ export function getFocusSubtests(
   branch: Branch | null
 ): AsvabSubtest[] {
   return getPrepMode(testType, branch).focusSubtests;
+}
+
+/**
+ * Which adaptive variant to send the user to. AFCT users on the four VE+AR
+ * branches get `gt_adaptive` (AR/WK/PC, drop MK); everyone else (initial ASVAB,
+ * or Navy/CG until S7) gets `afqt_adaptive`.
+ */
+export function adaptiveVariantForPrep(
+  testType: TestType | null,
+  branch: Branch | null
+): "afqt_adaptive" | "gt_adaptive" {
+  const pm = getPrepMode(testType, branch);
+  return pm.testType === "afct" && pm.branchSupported
+    ? "gt_adaptive"
+    : "afqt_adaptive";
 }

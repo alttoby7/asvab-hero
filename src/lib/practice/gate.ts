@@ -18,8 +18,14 @@ export type GateDecision =
 /** The free adaptive AFQT core: one block per day for signed-in free users. */
 export const FREE_ADAPTIVE_DAILY_LIMIT = 1;
 
-/** The score-moving mechanism is free; Pro gates scale (more blocks, sims, analytics). */
+/** The score-moving mechanism is free; Pro gates scale (more blocks, sims, analytics).
+ * Both adaptive variants count as the free daily core: afqt_adaptive (initial
+ * ASVAB) + gt_adaptive (AFCT GT/General). */
 export const ADAPTIVE_VARIANT = "afqt_adaptive";
+export const ADAPTIVE_VARIANTS = ["afqt_adaptive", "gt_adaptive"] as const;
+export function isAdaptiveVariant(code: string): boolean {
+  return (ADAPTIVE_VARIANTS as readonly string[]).includes(code);
+}
 
 export const ANON_DIAGNOSTIC_USED_KEY = "asvabhero.anonDiagnosticUsed";
 
@@ -76,7 +82,7 @@ export function canStartVariant(opts: {
   // that raises scores is free; Pro gates scale). Signed-in free users get one
   // block/day; beyond that, upgrade for unlimited. Anon users need an account
   // (adaptive reads their mastery model).
-  if (variantCode === ADAPTIVE_VARIANT) {
+  if (isAdaptiveVariant(variantCode)) {
     if (!isAuthed) return { allowed: false, reason: "adaptive_needs_account" };
     if (adaptiveUsedToday >= FREE_ADAPTIVE_DAILY_LIMIT) {
       return { allowed: false, reason: "free_adaptive_daily_limit" };

@@ -2,13 +2,18 @@
 // should take next, based on their progress state. Mirrors the priority order
 // from src/app/account/page.tsx:189-222 but flattened for inline rendering.
 
-import type { AsvabSubtest } from "@/types";
+import type { AsvabSubtest, Branch } from "@/types";
 import { SUBTEST_NAMES } from "@/types";
 import type {
   Confidence,
   SubtestEstimates,
   TargetJobGap,
 } from "@/lib/trajectory/types";
+import {
+  getPrepMode,
+  adaptiveVariantForPrep,
+  type TestType,
+} from "@/lib/prep-mode";
 
 export type NextAction = {
   label: string;
@@ -315,12 +320,38 @@ export interface WeeklyPlanInput {
   studyDaysPerWeek: number | null;
   /** Days since the most recent diagnostic (null if none). */
   daysSinceDiagnostic: number | null;
+  /** Prep mode (default initial ASVAB / AFQT when omitted). */
+  testType?: TestType | null;
+  branch?: Branch | null;
 }
 
 export function getWeeklyPlan(input: WeeklyPlanInput): WeeklyPlan {
   const { hasDiagnostic, confidence, daysToTest, daysSinceDiagnostic } = input;
   const studyDaysPerWeek = input.studyDaysPerWeek ?? 4;
   const urgent = daysToTest != null && daysToTest <= FINAL_STRETCH_DAYS;
+
+  // Prep-mode aware: AFCT VE+AR branches route to gt_adaptive (AR/WK/PC) and
+  // label the metric GT/General; everyone else stays AFQT/afqt_adaptive.
+  const prep = getPrepMode(input.testType ?? null, input.branch ?? null);
+  const metric = prep.metricLabel; // "AFQT" | "GT" | "General (G)"
+  const adaptiveVariant = adaptiveVariantForPrep(
+    input.testType ?? null,
+    input.branch ?? null
+  );
+  const adaptiveStep: PlanStep = {
+    id: "adaptive_block",
+    label: `One adaptive ${metric} block`,
+    why: STEP_ADAPTIVE.why,
+    ctaHref: `/app/practice?variant=${adaptiveVariant}`,
+    cadence: "daily",
+  };
+  const timedStep: PlanStep = {
+    id: "timed_section",
+    label: `One timed ${metric} section`,
+    why: STEP_TIMED_SECTION.why,
+    ctaHref: `/app/practice?variant=${adaptiveVariant}&timed=1`,
+    cadence: "weekly",
+  };
 
   // Phase: no baseline (or still rough) -> baseline; else by time-to-test.
   let phase: StudyPhase;
@@ -340,12 +371,12 @@ export function getWeeklyPlan(input: WeeklyPlanInput): WeeklyPlan {
     daysSinceDiagnostic >= DIAGNOSTIC_CADENCE_DAYS;
 
   // Daily loop: mistakes first, then an adaptive block (the free core).
-  const dailyLoop: PlanStep[] = [STEP_REVIEW, STEP_ADAPTIVE];
+  const dailyLoop: PlanStep[] = [STEP_REVIEW, adaptiveStep];
 
   // This-week tasks accrue with the phase.
   const thisWeek: PlanStep[] = [];
   if (diagnosticDue) thisWeek.push(STEP_DIAGNOSTIC);
-  if (phase === "build" || phase === "final") thisWeek.push(STEP_TIMED_SECTION);
+  if (phase === "build" || phase === "final") thisWeek.push(timedStep);
   if (phase === "final") {
     thisWeek.push(STEP_FULL_SIM);
     thisWeek.push(STEP_PRETEST_WRITING);
@@ -359,13 +390,11 @@ export function getWeeklyPlan(input: WeeklyPlanInput): WeeklyPlan {
     },
     foundation: {
       label: "Foundation",
-      summary:
-        "More than 8 weeks out — build the habit: clear due mistakes, then one adaptive AFQT block on each study day. Let spacing do the work.",
+      summary: `More than 8 weeks out — build the habit: clear due mistakes, then one adaptive ${metric} block on each study day. Let spacing do the work.`,
     },
     build: {
       label: "Build",
-      summary:
-        "3–8 weeks out — keep the daily loop and add one timed AFQT section each week to build pacing.",
+      summary: `3–8 weeks out — keep the daily loop and add one timed ${metric} section each week to build pacing.`,
     },
     final: {
       label: "Final stretch",

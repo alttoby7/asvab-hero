@@ -33,6 +33,8 @@ import {
 
 /** Variant code for the WS6 adaptive AFQT test (seeded inactive in 0025). */
 export const ADAPTIVE_VARIANT_CODE = "afqt_adaptive";
+/** All adaptive variants the selector drives: afqt_adaptive + gt_adaptive (AFCT). */
+export const ADAPTIVE_VARIANT_CODES = ["afqt_adaptive", "gt_adaptive"] as const;
 
 /**
  * Build-time kill switch for the adaptive selector. Mirrors the closed-loop /
@@ -51,7 +53,7 @@ export function isAdaptiveEnabled(): boolean {
 export function shouldUseAdaptive(variant: TestVariant): boolean {
   return (
     isAdaptiveEnabled() &&
-    variant.code === ADAPTIVE_VARIANT_CODE &&
+    (ADAPTIVE_VARIANT_CODES as readonly string[]).includes(variant.code) &&
     variant.active === true
   );
 }

@@ -171,5 +171,19 @@ insert into test_variants (code, name, rules, active) values
       "note": "10 interleaved questions; banks misses via ingest_attempt_mistakes"
     }'::jsonb,
     true
+  ),
+
+  (
+    'gt_adaptive',
+    'Adaptive GT / General',
+    '{
+      "length": 36,
+      "time_seconds": 2340,
+      "mix": {"AR":12,"WK":12,"PC":12},
+      "afqt_eligible": false,
+      "subtest_locked": null,
+      "note": "AFCT VE+AR-branch blueprint: AR+WK+PC (drop MK). Army/Marines GT + AF/SF General."
+    }'::jsonb,
+    true
   )
 ;
