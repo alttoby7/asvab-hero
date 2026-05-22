@@ -47,7 +47,7 @@ const BRANCH_AFQT_MIN: Record<Branch, number> = {
   navy: 35,
   air_force: 36,
   marines: 32,
-  coast_guard: 40,
+  coast_guard: 32,
   space_force: 36,
 };
 

@@ -367,7 +367,7 @@ export default function HowToRetakeTheASVABPage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Coast Guard
                 </td>
-                <td className="py-2 pr-4 font-mono">36</td>
+                <td className="py-2 pr-4 font-mono">32</td>
                 <td className="py-2 font-mono">50</td>
               </tr>
               <tr>

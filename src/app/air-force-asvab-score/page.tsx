@@ -139,9 +139,9 @@ export default function AirForceASVABScorePage() {
         <p className="text-text-secondary">
           The Air Force operating minimum is{" "}
           <strong>AFQT 36</strong> for high school diploma holders and{" "}
-          <strong>AFQT 65</strong> for GED holders. That makes the Air Force the
-          second-strictest branch behind the Coast Guard for diploma holders, and
-          the strictest for GED holders by a wide margin.
+          <strong>AFQT 65</strong> for GED holders. That ties the Air Force with
+          Space Force for the highest diploma minimum among the services, and
+          makes it the strictest for GED holders by a wide margin.
         </p>
 
         {/* TABLE: Branch AFQT Minimums */}
@@ -193,7 +193,7 @@ export default function AirForceASVABScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Coast Guard
                 </td>
-                <td className="py-2 pr-4 font-mono">40</td>
+                <td className="py-2 pr-4 font-mono">32</td>
                 <td className="py-2 font-mono">50</td>
               </tr>
               <tr>

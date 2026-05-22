@@ -583,7 +583,7 @@ export default function WhatIsTheASVABPage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Coast Guard
                 </td>
-                <td className="py-2 pr-4 font-mono">40</td>
+                <td className="py-2 pr-4 font-mono">32</td>
                 <td className="py-2 font-mono">50</td>
               </tr>
             </tbody>
@@ -591,8 +591,7 @@ export default function WhatIsTheASVABPage() {
         </div>
 
         <p className="mt-4 text-text-secondary">
-          Two things jump out. First, the Coast Guard is the most selective at
-          40 for diploma holders. Second, GED holders face a universal minimum
+          Two things jump out. First, GED holders face a universal minimum
           of 50 across every single branch. That&apos;s a 19-point jump from the
           Army, Navy, and Marines minimums, and a 14-point jump from the Air
           Force and Space Force.

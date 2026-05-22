@@ -317,7 +317,7 @@ export default function ASVABScoreChartPage() {
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="px-3 py-3 font-semibold">Coast Guard</td>
-                <td className="px-3 py-3">36</td>
+                <td className="px-3 py-3">32</td>
                 <td className="px-3 py-3">47</td>
                 <td className="px-3 py-3">Smallest branch, fewer annual slots</td>
               </tr>

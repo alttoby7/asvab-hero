@@ -10,13 +10,56 @@ import ScoreImpactSimulator from "@/components/scores-explained/ScoreImpactSimul
 import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
-  title: "AFQT vs Line Scores: How to Read Your ASVAB Score Sheet (2026)",
+  title: "ASVAB Scores Explained: AFQT, Line Scores & What They Mean (2026)",
   description:
-    "Your AFQT gates enlistment. Your line scores gate jobs. Here's exactly what each number on your score sheet means, the 2026 branch minimums, and how to read it fast.",
+    "ASVAB scores explained: your AFQT gates enlistment, your line scores gate jobs. What every number on your score sheet means, plus the 2026 branch minimums.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-scores-explained",
   },
 };
+
+const faqItems = [
+  {
+    q: "What is a good ASVAB score?",
+    a: "A 50 AFQT is average. A 60+ puts you in Category IIIA, which opens most jobs and bonus eligibility across all branches. Scoring 70+ gives you strong leverage for your preferred MOS. \"Good\" depends on your target branch and job, but aim for 50+ at minimum.",
+  },
+  {
+    q: "Is the ASVAB hard?",
+    a: "The content covers roughly high school level material. The challenge is breadth: vocabulary, math, science, electronics, mechanics, and spatial reasoning in one sitting. If you graduated high school with decent grades, you can score above minimum thresholds with modest preparation.",
+  },
+  {
+    q: "Can you fail the ASVAB?",
+    a: "There's no pass/fail. But scoring below your target branch's minimum AFQT (31 Army, 32 Marines, 35 Navy, 36 Air Force/Space Force, 32 Coast Guard) means you can't enlist with that branch. Scoring below 10 (Category V) disqualifies you from all branches.",
+  },
+  {
+    q: "What ASVAB score do I need for a specific job?",
+    a: "Each job has its own composite/line score requirement, not just an AFQT cutoff. For example, Army 35F (Intelligence Analyst) requires an ST (Skilled Technical) score of 101. Run your subtests through the calculator to see which jobs your composites unlock.",
+  },
+  {
+    q: "How long are ASVAB scores valid?",
+    a: "ASVAB scores are valid for 2 years from your test date. After that, you need a fresh test to enlist.",
+  },
+  {
+    q: "Can I retake the ASVAB?",
+    a: "Yes. After 1 month you can retake, then 1 month again, then 6 months for every attempt after that. Your newest score replaces all previous scores.",
+  },
+  {
+    q: "What's the difference between AFQT and line scores?",
+    a: "Your AFQT is a single percentile (1-99) from 4 subtests that determines enlistment eligibility. Line scores (composites) combine various subtests and determine which specific jobs you qualify for. You need both.",
+  },
+  {
+    q: "Does the ASVAB score affect my rank or pay?",
+    a: "No. Your ASVAB determines enlistment eligibility and job qualification only. Starting rank depends on education level and special programs. Pay follows rank and time in service.",
+  },
+  {
+    q: "What happens if my score goes down on a retake?",
+    a: "Your most recent score replaces all prior scores. If you scored 72 and retake for a 58, your official AFQT is now 58. The military does not let you keep the higher number.",
+  },
+  {
+    q: "Is the ASVAB the same as the AFQT?",
+    a: "No. The ASVAB is the full test with 9 subtests. The AFQT is a score derived from 4 of those subtests. When someone says \"I got a 70 on the ASVAB,\" they almost always mean their AFQT percentile.",
+  },
+];
 
 export default function ASVABScoresExplainedPage() {
   return (
@@ -27,7 +70,7 @@ export default function ASVABScoresExplainedPage() {
           "@type": "Article",
           headline: "ASVAB Scores Explained: What Your Numbers Actually Mean",
           description:
-            "Comprehensive guide to understanding ASVAB scores including AFQT percentiles, composite line scores, branch minimums, and study strategies.",
+            "How to read every number on your ASVAB score sheet: AFQT percentiles, the 9 subtest standard scores, composite line scores, and 2026 branch minimums.",
           url: "https://asvabhero.com/asvab-scores-explained",
           author: {
             "@type": "Organization",
@@ -39,7 +82,7 @@ export default function ASVABScoresExplainedPage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-03-17",
-          dateModified: "2026-04-19",
+          dateModified: "2026-05-22",
         }}
       />
 
@@ -47,55 +90,21 @@ export default function ASVABScoresExplainedPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "FAQPage",
-          mainEntity: [
-            {
-              "@type": "Question",
-              name: "What is a good ASVAB score?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "A 50 AFQT is average. A 60+ puts you in Category IIIA, which opens most jobs and bonus eligibility across all branches. Scoring 70+ gives you strong leverage for your preferred MOS and enlistment incentives.",
-              },
+          mainEntity: faqItems.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.a,
             },
-            {
-              "@type": "Question",
-              name: "Can you fail the ASVAB?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "There's no pass/fail. But scoring below your target branch's minimum AFQT (31 Army, 32 Marines, 35 Navy, 36 Air Force/Space Force, 32 Coast Guard) means you can't enlist with that branch. Scoring below 10 (Category V) disqualifies you from all branches.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "How long are ASVAB scores valid?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "ASVAB scores are valid for 2 years from your test date. After that, you need a fresh test to enlist.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "What's the difference between AFQT and line scores?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Your AFQT is a single percentile (1-99) from 4 subtests that determines enlistment eligibility. Line scores (composites) combine various subtests and determine which specific jobs you qualify for. You need both.",
-              },
-            },
-            {
-              "@type": "Question",
-              name: "Can I retake the ASVAB?",
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: "Yes. After 1 month you can retake, then 1 month again, then 6 months for every attempt after that. Your newest score replaces all previous scores.",
-              },
-            },
-          ],
+          })),
         }}
       />
 
       <article className="prose-asvab">
         {/* ─── INTRO ─── */}
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          AFQT vs Line Scores: How to Read Your ASVAB Score Sheet (2026)
+          ASVAB Scores Explained: What Every Number on Your Score Sheet Means
         </h1>
 
         <VerifiedBlock
@@ -151,6 +160,62 @@ export default function ASVABScoresExplainedPage() {
           </Link>{" "}
           to see which jobs you qualify for across all 6 branches.
         </p>
+
+        {/* ─── HOW TO READ YOUR SCORE SHEET ─── */}
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          How to Read Your ASVAB Score Sheet
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          Your score sheet shows three different kinds of numbers on three different scales. Mixing them up is the most common reason people misread their results &mdash; a &ldquo;62&rdquo; next to one label is well above average, and a &ldquo;62&rdquo; next to another barely clears the door. Sort them into three buckets and the page stops being intimidating.
+        </p>
+
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">What you see</th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Scale</th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">What it decides</th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">9 subtest standard scores</td>
+                <td className="py-2 pr-4 font-mono">mean 50, SD 10</td>
+                <td className="py-2">Nothing on their own &mdash; they feed the two scores below.</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">AFQT</td>
+                <td className="py-2 pr-4 font-mono">1&ndash;99 percentile</td>
+                <td className="py-2">Whether you can enlist (the branch-minimum gate).</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">Composite / line scores</td>
+                <td className="py-2 pr-4 font-mono">branch-specific</td>
+                <td className="py-2">Which jobs you qualify for.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p className="text-text-secondary">
+          <strong>Start with the standard scores.</strong> Each of the 9 subtests is reported on a scale where 50 is the average and every 10 points is one standard deviation, so most scores land between 30 and 70. A 60 in Word Knowledge means one standard deviation above average &mdash; not &ldquo;60% correct.&rdquo; These nine numbers are the raw material; the two numbers that actually decide anything are built from them.
+        </p>
+        <p className="text-text-secondary">
+          <strong>Then find your AFQT.</strong> It&apos;s the only percentile on the sheet (1&ndash;99), built from four subtests as 2(VE) + AR + MK, and it&apos;s the number your recruiter means when they ask what you got. It decides eligibility, not jobs. <strong>Last, read your composite / line scores</strong> &mdash; Army GT, Air Force MAGE, Navy rating combos &mdash; which decide the jobs you can pick. Check the AFQT against the branch minimums further down, then drop all nine subtests into our{" "}
+          <Link href="/calculator" className="text-accent hover:text-accent-hover">
+            free ASVAB score calculator
+          </Link>{" "}
+          to turn the composites into an actual job list.
+        </p>
+
+        <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
+          <p className="text-sm font-semibold text-text-primary">Key Point</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Your AFQT is a percentile, not a percent. An AFQT of 50 doesn&apos;t mean you answered half the questions correctly &mdash; it means you scored as well as or better than 50% of the 1997 reference group. The subtest standard scores (mean 50) and the AFQT percentile (1&ndash;99) look like the same kind of number and measure completely different things.
+          </p>
+        </aside>
 
         {/* ─── AFQT SCORE ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -473,48 +538,7 @@ export default function ASVABScoresExplainedPage() {
         </h2>
 
         <div className="mt-4 space-y-6">
-          {[
-            {
-              q: "What is a good ASVAB score?",
-              a: "A 50 AFQT is average. A 60+ puts you in Category IIIA, which opens most jobs and bonus eligibility. Scoring 70+ gives you strong leverage for your preferred MOS. \"Good\" depends on your target branch and job, but aim for 50+ at minimum.",
-            },
-            {
-              q: "Is the ASVAB hard?",
-              a: "The content covers roughly high school level material. The challenge is breadth: vocabulary, math, science, electronics, mechanics, and spatial reasoning in one sitting. If you graduated high school with decent grades, you can score above minimum thresholds with modest preparation.",
-            },
-            {
-              q: "Can you fail the ASVAB?",
-              a: "There's no pass/fail. But scoring below your target branch's minimum AFQT (31 Army, 32 Marines, 35 Navy, 36 Air Force/Space Force, 32 Coast Guard) means you can't enlist. Scoring below 10 (Category V) disqualifies you from all branches.",
-            },
-            {
-              q: "What ASVAB score do I need for a specific job?",
-              a: "Each MOS, rating, or AFSC has its own composite score requirements. For example, Army 35F (Intelligence Analyst) requires GT 101+.",
-            },
-            {
-              q: "How long are ASVAB scores valid?",
-              a: "2 years from your test date. After that, you need a fresh test to enlist.",
-            },
-            {
-              q: "Can I retake the ASVAB?",
-              a: "Yes. After 1 month you can retake, then 1 month again, then 6 months for every attempt after that. Your newest score replaces all previous scores.",
-            },
-            {
-              q: "What's the difference between AFQT and line scores?",
-              a: "Your AFQT is a single percentile (1-99) from 4 subtests that determines enlistment eligibility. Line scores combine various subtests and determine which specific jobs you qualify for. You need both.",
-            },
-            {
-              q: "Does the ASVAB score affect my rank or pay?",
-              a: "No. Your ASVAB determines enlistment eligibility and job qualification only. Starting rank depends on education level and special programs. Pay follows rank and time in service.",
-            },
-            {
-              q: "What happens if my score goes DOWN on a retake?",
-              a: "Your most recent score replaces all prior scores. If you scored 72 and retake for a 58, your official AFQT is now 58. The military does not let you keep the higher number.",
-            },
-            {
-              q: "Is the ASVAB the same as the AFQT?",
-              a: "No. The ASVAB is the full test with 9 subtests. The AFQT is a score derived from 4 of those subtests. When someone says \"I got a 70 on the ASVAB,\" they almost always mean their AFQT percentile.",
-            },
-          ].map((faq) => (
+          {faqItems.map((faq) => (
             <div key={faq.q}>
               <h3 className="font-display text-base font-bold text-text-primary">
                 {faq.q}

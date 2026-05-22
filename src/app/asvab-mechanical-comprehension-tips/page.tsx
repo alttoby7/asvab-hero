@@ -843,7 +843,7 @@ export default function ASVABMechanicalComprehensionTipsPage() {
               affects composite line scores that determine job eligibility but
               has zero impact on your AFQT percentile. If your AFQT is below
               your branch minimum (Army/Navy/Marines: 31, Air Force: 36, Coast
-              Guard: 40), fix that first before spending time on MC.
+              Guard: 32), fix that first before spending time on MC.
             </p>
           </div>
           <div>

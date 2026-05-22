@@ -36,7 +36,7 @@ const BRANCH_FLOORS = [
   { branch: "Navy", afqt: 35 },
   { branch: "Air Force", afqt: 36 },
   { branch: "Space Force", afqt: 36 },
-  { branch: "Coast Guard", afqt: 40 },
+  { branch: "Coast Guard", afqt: 32 },
 ] as const;
 
 type FieldKey = "AR" | "WK" | "PC" | "MK";

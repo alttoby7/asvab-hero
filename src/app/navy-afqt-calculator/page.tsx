@@ -83,7 +83,7 @@ export default function NavyAfqtCalculatorPage() {
       </div>
 
       <VerifiedBlock
-        verifiedDate="April 2026"
+        verifiedDate="May 2026"
         sources={[
           {
             label: "officialasvab.com",
@@ -93,13 +93,17 @@ export default function NavyAfqtCalculatorPage() {
             label: "navy.com",
             url: "https://www.navy.com/joining/requirements",
           },
+          {
+            label: "gocoastguard.com",
+            url: "https://www.gocoastguard.com/",
+          },
         ]}
       >
         <p>
           The <strong>Navy AFQT minimum is 35</strong> for diploma holders.
           GED holders need <strong>50 plus 15 semester hours of college
           credit</strong>. The Coast Guard uses the same GED structure but
-          with a higher diploma floor of 40. Diploma holders scoring 28
+          with a diploma floor of 32. Diploma holders scoring 28
           to 30 can enter the DEP Enrichment Program and retest to 35
           before shipping. The calculator below runs your 4 AFQT subtests
           (AR, WK, PC, MK) through the official PAY97 Table 2.5 lookup.
@@ -165,9 +169,9 @@ export default function NavyAfqtCalculatorPage() {
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold">Coast Guard (diploma)</td>
-                <td className="py-2 pr-4 font-mono font-bold text-accent">40</td>
+                <td className="py-2 pr-4 font-mono font-bold text-accent">32</td>
                 <td className="py-2 text-text-secondary">
-                  Highest floor of any branch.
+                  Lowered from 40 in November 2023.
                 </td>
               </tr>
               <tr>

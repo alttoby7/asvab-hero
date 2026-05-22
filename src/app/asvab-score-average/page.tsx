@@ -331,7 +331,7 @@ export default function ASVABScoreAveragePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Coast Guard
                 </td>
-                <td className="py-2 pr-4 font-mono">36</td>
+                <td className="py-2 pr-4 font-mono">32</td>
                 <td className="py-2">
                   Most selective. 95% must hold HS diploma.
                 </td>

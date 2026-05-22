@@ -26,7 +26,7 @@ const BRANCH_LABELS: Record<Branch, string> = {
 };
 
 const BRANCH_MIN_AFQT: Record<Branch, number> = {
-  army: 31, navy: 35, air_force: 36, marines: 32, coast_guard: 40, space_force: 36,
+  army: 31, navy: 35, air_force: 36, marines: 32, coast_guard: 32, space_force: 36,
 };
 
 const BRANCH_JOBS: Record<Branch, Job[]> = {

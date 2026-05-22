@@ -286,8 +286,8 @@ export default function ASVABPrepCoursePage() {
 
         <p className="text-text-secondary">
           The goal variable matters most, and most readers guess at it. Branch
-          AFQT minimums run from 31 for the Army to 36 for the Air Force and 40
-          for the Coast Guard, and the better jobs sit well above those floors.
+          AFQT minimums run from 31 for the Army to 36 for the Air Force and
+          Space Force, and the better jobs sit well above those floors.
           Roughly 30% of first-time test-takers miss their branch minimum, so a
           10-point gain often decides whether you qualify at all. Plug a target
           job into the{" "}

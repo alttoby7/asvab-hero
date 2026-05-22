@@ -5,7 +5,7 @@
     "title": "Boatswain's Mate",
     "description": "Operates and maintains boats, deck equipment, and aids to navigation. Leads seamanship operations, search and rescue, and law enforcement boardings.",
     "category": "Operations",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+AR",
@@ -19,7 +19,7 @@
     "title": "Machinery Technician",
     "description": "Operates, maintains, and repairs diesel engines, gas turbines, pumps, and other mechanical systems aboard Coast Guard cutters and boats.",
     "category": "Engineering",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "AR+MC+AS",
@@ -37,7 +37,7 @@
     "title": "Electronics Technician",
     "description": "Installs, operates, and maintains electronic navigation, communication, and detection systems including radar, GPS, and radio equipment.",
     "category": "Engineering",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "MK+EI+GS",
@@ -52,7 +52,7 @@
     "title": "Electrician's Mate",
     "description": "Maintains and repairs electrical power generation and distribution systems, motors, lighting, and associated electrical equipment on cutters.",
     "category": "Engineering",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "MK+EI+GS",
@@ -67,7 +67,7 @@
     "title": "Information Systems Technician",
     "description": "Installs, operates, and maintains computer systems, networks, cybersecurity infrastructure, and information technology equipment.",
     "category": "Engineering",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "MK+EI+GS",
@@ -82,7 +82,7 @@
     "title": "Storekeeper",
     "description": "Manages supply chain operations, procurement, inventory control, and financial management for Coast Guard units.",
     "category": "Administrative",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+AR",
@@ -97,7 +97,7 @@
     "title": "Yeoman",
     "description": "Performs personnel administration, human resources management, legal assistance, and office management functions.",
     "category": "Administrative",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+AR",
@@ -111,7 +111,7 @@
     "title": "Health Services Technician",
     "description": "Provides emergency medical care, preventive medicine, dental assistance, and health services as the primary medical caregiver for Coast Guard units.",
     "category": "Medical",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+MK+GS",
@@ -125,7 +125,7 @@
     "title": "Maritime Enforcement Specialist",
     "description": "Conducts law enforcement boardings, port security operations, drug and migrant interdiction, and use-of-force operations.",
     "category": "Maritime Law Enforcement",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+AR",
@@ -139,7 +139,7 @@
     "title": "Gunner's Mate",
     "description": "Maintains and operates small arms, crew-served weapons, pyrotechnics, and ordnance systems aboard Coast Guard vessels.",
     "category": "Operations",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "AR+MK+EI+GS",
@@ -153,7 +153,7 @@
     "title": "Damage Controlman",
     "description": "Performs damage control, firefighting, flooding response, and chemical/biological/radiological defense to maintain vessel survivability.",
     "category": "Engineering",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+MC+AS",
@@ -167,7 +167,7 @@
     "title": "Operations Specialist",
     "description": "Operates radar, communications, and navigation systems in command centers to coordinate search and rescue, maritime patrol, and traffic management.",
     "category": "Operations",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+AR",
@@ -181,7 +181,7 @@
     "title": "Aviation Electrical Technician",
     "description": "Inspects, troubleshoots, and repairs aircraft avionics, electrical systems, navigation equipment, and communications systems at Coast Guard air stations.",
     "category": "Aviation",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "MK+EI+GS",
@@ -196,7 +196,7 @@
     "title": "Aviation Maintenance Technician",
     "description": "Maintains and repairs Coast Guard aircraft airframes, engines, hydraulic systems, and structural components to ensure airworthiness.",
     "category": "Aviation",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "AR+MC+AS+EI",
@@ -211,7 +211,7 @@
     "title": "Aviation Survival Technician",
     "description": "Serves as rescue swimmer and paramedic, performing helicopter hoist rescues and emergency medical care in the most demanding search and rescue conditions.",
     "category": "Aviation",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+MC+AS",
@@ -225,7 +225,7 @@
     "title": "Avionics Electrical Technician",
     "description": "Maintains and repairs aircraft avionics and electronic systems. Note: This rating was redesignated as AET. Use AET for current requirements.",
     "category": "Aviation",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "MK+EI+GS",
@@ -240,7 +240,7 @@
     "title": "Marine Science Technician",
     "description": "Enforces marine environmental laws, responds to oil and chemical spills, conducts port safety inspections, and monitors marine pollution.",
     "category": "Operations",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+AR",
@@ -255,7 +255,7 @@
     "title": "Public Affairs Specialist",
     "description": "Manages media relations, produces multimedia content, coordinates public information campaigns, and serves as the Coast Guard's communications representative.",
     "category": "Administrative",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+AR",
@@ -270,7 +270,7 @@
     "title": "Culinary Specialist",
     "description": "Prepares and serves meals, manages food service operations, and maintains galleys and dining facilities aboard cutters and at shore installations.",
     "category": "Administrative",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+AR",
@@ -284,7 +284,7 @@
     "title": "Intelligence Specialist",
     "description": "Collects, analyzes, and disseminates intelligence to support Coast Guard operations including counter-narcotics, counter-terrorism, and maritime security.",
     "category": "Intelligence",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+AR",
@@ -298,7 +298,7 @@
     "title": "Investigator",
     "description": "Conducts criminal investigations, fraud inquiries, and administrative investigations within the Coast Guard Investigative Service (CGIS).",
     "category": "Intelligence",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": []
   },
   {
@@ -307,7 +307,7 @@
     "title": "Port Security Specialist",
     "description": "Conducts port and waterways security operations, vessel and facility inspections, and maritime homeland security missions.",
     "category": "Maritime Law Enforcement",
-    "minAFQT": 40,
+    "minAFQT": 32,
     "requirements": [
       {
         "composite": "VE+AR",
