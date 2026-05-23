@@ -9,9 +9,9 @@ import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 const NAV_LINKS = [
   { href: "/app/home", label: "Home", icon: "home" },
   { href: "/app/daily", label: "Daily", icon: "daily" },
-  { href: "/practice-test", label: "Practice", icon: "practice" },
-  { href: "/asvab-study-guide", label: "Study", icon: "study" },
-  { href: "/flashcards", label: "Cards", icon: "cards" },
+  { href: "/app/practice", label: "Practice", icon: "practice" },
+  { href: "/app/plan", label: "Plan", icon: "plan" },
+  { href: "/app/flashcards", label: "Cards", icon: "cards" },
 ];
 
 function NavIcon({ icon, className }: { icon: string; className?: string }) {
@@ -45,6 +45,12 @@ function NavIcon({ icon, className }: { icon: string; className?: string }) {
       return (
         <svg className={cn} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L12 12.75 6.429 9.75m11.142 0l4.179 2.25-9.75 5.25-9.75-5.25 4.179-2.25" />
+        </svg>
+      );
+    case "plan":
+      return (
+        <svg className={cn} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z M16.5 9.75l-3.5 4-1.5-1.5" />
         </svg>
       );
     default:

@@ -125,7 +125,7 @@ export default function DailyChallengeResults({
           Back to Dashboard
         </Link>
         <Link
-          href="/flashcards"
+          href="/app/flashcards"
           className="flex-1 rounded-xl border border-navy-border bg-navy-light px-6 py-3 text-center text-sm font-semibold text-text-secondary no-underline hover:bg-navy-lighter hover:text-text-primary"
         >
           Review Flashcards

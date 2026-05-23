@@ -126,7 +126,7 @@ export default function ReviewEngine({ deck, initialCards }: Props) {
     <div className="space-y-5">
       <div className="flex items-center justify-between text-sm">
         <Link
-          href="/flashcards"
+          href="/app/flashcards"
           className="text-text-tertiary no-underline transition-colors hover:text-text-secondary"
         >
           ← {deck.title.replace(/^.+? — /, "")}

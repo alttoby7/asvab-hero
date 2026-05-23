@@ -23,7 +23,7 @@ export default function QuickActions({
   return (
     <div className="grid grid-cols-3 gap-3">
       <Link
-        href="/flashcards"
+        href="/app/flashcards"
         className="rounded-xl border border-navy-border bg-navy-light px-4 py-4 text-center no-underline transition-colors hover:bg-white/5"
       >
         <div className="text-lg font-bold text-accent">

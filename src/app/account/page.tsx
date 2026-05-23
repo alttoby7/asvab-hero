@@ -213,7 +213,7 @@ export default function AccountDashboardPage() {
       {hasInProgress ? (
         <div className="rounded-2xl border border-accent/40 bg-accent-dim p-6 flex items-center justify-between gap-4 flex-wrap">
           <div><p className="font-semibold text-text-primary">You have a test in progress</p><p className="text-sm text-text-secondary mt-0.5">Pick up where you left off.</p></div>
-          <Link href="/practice-test" className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline whitespace-nowrap">Resume test</Link>
+          <Link href="/app/practice" className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline whitespace-nowrap">Resume test</Link>
         </div>
       ) : weakest && weakest.title ? (
         <div className="rounded-2xl border border-navy-border bg-navy-light p-6 flex items-center justify-between gap-4 flex-wrap">
@@ -222,7 +222,7 @@ export default function AccountDashboardPage() {
             <p className="text-sm text-text-secondary mt-0.5">{weakest.subtest ? `${weakest.subtest} subtest` : "Targeted drill"}</p>
           </div>
           {isPro ? (
-            <Link href={`/practice-test?variant=subtest_drill&subtest=${weakest.subtest ?? ""}`} className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline whitespace-nowrap">Start {weakest.subtest} drill</Link>
+            <Link href={`/app/practice?variant=subtest_drill&subtest=${weakest.subtest ?? ""}`} className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline whitespace-nowrap">Start {weakest.subtest} drill</Link>
           ) : (
             <Link href="/upgrade" className="rounded-lg border border-accent px-5 py-2.5 text-sm font-semibold text-accent transition-colors hover:bg-accent-dim no-underline whitespace-nowrap">Upgrade to drill</Link>
           )}
@@ -230,7 +230,7 @@ export default function AccountDashboardPage() {
       ) : isPro ? (
         <div className="rounded-2xl border border-navy-border bg-navy-light p-6 flex items-center justify-between gap-4 flex-wrap">
           <div><p className="font-semibold text-text-primary">Keep your streak going</p><p className="text-sm text-text-secondary mt-0.5">Take another full diagnostic.</p></div>
-          <Link href="/practice-test?variant=diagnostic" className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline whitespace-nowrap">Take a diagnostic</Link>
+          <Link href="/app/practice?variant=diagnostic" className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline whitespace-nowrap">Take a diagnostic</Link>
         </div>
       ) : hasAttempts ? (
         <div className="rounded-2xl border border-navy-border bg-navy-light p-6 flex items-center justify-between gap-4 flex-wrap">
@@ -240,7 +240,7 @@ export default function AccountDashboardPage() {
       ) : (
         <div className="rounded-2xl border border-accent/40 bg-accent-dim p-6 flex items-center justify-between gap-4 flex-wrap">
           <div><p className="font-semibold text-text-primary">Your free diagnostic is waiting</p><p className="text-sm text-text-secondary mt-0.5">30 questions across all 9 subtests. Get your estimated AFQT.</p></div>
-          <Link href="/practice-test" className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline whitespace-nowrap">Take free diagnostic</Link>
+          <Link href="/app/practice" className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover no-underline whitespace-nowrap">Take free diagnostic</Link>
         </div>
       )}
 

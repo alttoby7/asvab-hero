@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import type { DeckSummary } from "@/lib/flashcards/types";
+import { flashcardDeckHref } from "@/lib/routes";
 
 interface DeckCardProps {
   summary: DeckSummary;
@@ -40,7 +41,10 @@ export default function DeckCard({ summary, locked, isFreeDeck, requiresAuth }: 
     );
   }
 
-  const href = requiresAuth ? `/signup?next=/flashcards/${deck.slug}` : `/flashcards/${deck.slug}`;
+  // Members always review inside the app shell; anon users sign up first (and
+  // land back in the app shell afterwards).
+  const target = flashcardDeckHref(deck.slug, true);
+  const href = requiresAuth ? `/signup?next=${encodeURIComponent(target)}` : target;
 
   return (
     <Link

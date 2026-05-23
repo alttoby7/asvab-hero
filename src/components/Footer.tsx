@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const pathname = usePathname();
-  if (pathname?.startsWith("/app")) return null;
+  // Hide marketing chrome inside the member shells (/app and the account area).
+  if (pathname?.startsWith("/app") || pathname?.startsWith("/account")) return null;
 
   return (
     <footer className="border-t border-navy-border bg-navy-light">

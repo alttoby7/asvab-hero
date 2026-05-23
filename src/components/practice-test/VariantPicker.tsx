@@ -14,6 +14,7 @@ import {
   adaptiveVariantForPrep,
   type TestType,
 } from "@/lib/prep-mode";
+import { practiceHref } from "@/lib/routes";
 
 /**
  * Two-card variant picker for v1: Diagnostic + Subtest Drill.
@@ -123,7 +124,7 @@ export default function VariantPicker() {
     <div className="space-y-4">
       {/* Diagnostic */}
       <Link
-        href="/practice-test?variant=diagnostic"
+        href={practiceHref("diagnostic", { authed: isAuthed })}
         onClick={handleDiagnosticClick}
         className="block rounded-2xl border border-navy-border bg-navy-light p-6 no-underline transition-colors hover:border-accent/40 hover:bg-navy-lighter sm:p-7"
       >
@@ -320,7 +321,7 @@ export default function VariantPicker() {
             {ALL_SUBTESTS.map((st) => (
               <Link
                 key={st}
-                href={`/practice-test?variant=subtest_drill&subtest=${st}`}
+                href={practiceHref("subtest_drill", { authed: isAuthed, subtest: st })}
                 onClick={(e) => handleDrillSubtestClick(e, st)}
                 className="flex flex-col items-start rounded-xl border border-navy-border bg-navy px-3 py-2.5 no-underline transition-colors hover:border-accent/40 hover:bg-navy-lighter"
               >
@@ -338,7 +339,7 @@ export default function VariantPicker() {
 
       {/* Full-length simulation (Pro) — final-stretch rehearsal */}
       <Link
-        href="/practice-test?variant=full_sim"
+        href={practiceHref("full_sim", { authed: isAuthed })}
         onClick={(e) => {
           if (loading) return;
           if (simLocked) {

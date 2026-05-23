@@ -31,7 +31,7 @@ export default function UpgradeBanner() {
     setDismissed(true);
   }
 
-  if (pathname?.startsWith("/app")) return null;
+  if (pathname?.startsWith("/app") || pathname?.startsWith("/account")) return null;
   if (sessionLoading || entitlementLoading) return null;
   if (!session) return null;
   if (entitlement.isPro) return null;

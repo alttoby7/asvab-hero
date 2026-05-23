@@ -7,6 +7,7 @@ import {
   PaywallEvents,
   getPaywallContextId,
 } from "@/lib/analytics";
+import { practiceHref } from "@/lib/routes";
 
 interface TestBlockedScreenProps {
   reason: string;
@@ -158,7 +159,7 @@ export default function TestBlockedScreen({
 
           {reason === "free_user_no_diagnostic" && (
             <Link
-              href="/practice-test?variant=diagnostic"
+              href={practiceHref("diagnostic", { authed: isAuthed })}
               onClick={() =>
                 trackEvent(PaywallEvents.PaywallCtaSecondaryClick, {
                   which: "diagnostic",

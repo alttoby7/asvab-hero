@@ -280,7 +280,7 @@ export default function TrajectoryCard({
             {currentStanding.attempt_count === 1 ? "attempt" : "attempts"}.
           </span>
           <Link
-            href="/practice-test?variant=diagnostic"
+            href="/app/practice?variant=diagnostic"
             className="shrink-0 text-xs font-medium text-accent no-underline transition-colors hover:text-accent-hover"
           >
             {hasStanding ? "Retake diagnostic" : "Start diagnostic"}

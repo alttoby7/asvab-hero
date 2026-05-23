@@ -58,13 +58,13 @@ export default function SessionComplete({ deck, stats, total }: Props) {
 
       <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:justify-center">
         <Link
-          href="/flashcards"
+          href="/app/flashcards"
           className="rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white no-underline hover:bg-accent-hover"
         >
           Back to flashcards
         </Link>
         <Link
-          href="/account"
+          href="/app/home"
           className="rounded-xl border border-navy-border bg-navy px-5 py-2.5 text-sm font-semibold text-text-secondary no-underline hover:text-text-primary"
         >
           Dashboard

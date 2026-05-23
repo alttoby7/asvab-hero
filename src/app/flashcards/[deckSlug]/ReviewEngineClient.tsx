@@ -8,6 +8,7 @@ import { canReviewDeck } from "@/lib/flashcards/gate";
 import { loadDeckBySlug, loadDueCards } from "@/lib/flashcards/queries";
 import type { CardWithReview, Deck } from "@/lib/flashcards/types";
 import ReviewEngine from "@/components/flashcards/ReviewEngine";
+import { flashcardsHref, flashcardDeckHref } from "@/lib/routes";
 
 interface Props {
   deckSlug: string;
@@ -58,7 +59,7 @@ export default function ReviewEngineClient({ deckSlug }: Props) {
     return (
       <div className="rounded-2xl border border-danger-dim bg-navy-light p-6 text-center">
         <p className="text-text-secondary">Couldn&apos;t load deck: {error}</p>
-        <Link href="/flashcards" className="mt-4 inline-block text-accent underline">
+        <Link href={flashcardsHref(!!session)} className="mt-4 inline-block text-accent underline">
           Back to flashcards
         </Link>
       </div>
@@ -73,7 +74,7 @@ export default function ReviewEngineClient({ deckSlug }: Props) {
           The deck &ldquo;{deckSlug}&rdquo; doesn&apos;t exist or has been deactivated.
         </p>
         <Link
-          href="/flashcards"
+          href={flashcardsHref(!!session)}
           className="mt-6 inline-block rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white no-underline hover:bg-accent-hover"
         >
           Browse decks
@@ -130,13 +131,13 @@ function CaughtUpScreen({ deck }: { deck: Deck }) {
       </p>
       <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:justify-center">
         <Link
-          href="/flashcards"
+          href="/app/flashcards"
           className="rounded-xl bg-accent px-5 py-2.5 text-sm font-semibold text-white no-underline hover:bg-accent-hover"
         >
           Browse other decks
         </Link>
         <Link
-          href="/account"
+          href="/app/home"
           className="rounded-xl border border-navy-border bg-navy px-5 py-2.5 text-sm font-semibold text-text-secondary no-underline hover:text-text-primary"
         >
           Back to dashboard
@@ -158,7 +159,9 @@ function BlockedScreen({
   const subtext = isAuth
     ? "Create a free account to track your flashcard progress. The Word Knowledge synonyms deck is free for all signed-in users."
     : "Pro unlocks all six flashcard decks plus unlimited subtest drills and AFQT sprints. $9.99/mo or $49.99/yr.";
-  const primaryHref = isAuth ? `/signup?next=/flashcards/${deckSlug}` : `/upgrade?from=flashcards-${deckSlug}`;
+  const primaryHref = isAuth
+    ? `/signup?next=${encodeURIComponent(flashcardDeckHref(deckSlug, true))}`
+    : `/upgrade?from=flashcards-${deckSlug}`;
   const primaryLabel = isAuth ? "Create free account" : "Upgrade to Pro";
 
   return (
@@ -189,14 +192,14 @@ function BlockedScreen({
         </Link>
         {!isAuth && (
           <Link
-            href="/flashcards/wk.synonyms"
+            href={flashcardDeckHref("wk.synonyms", true)}
             className="block w-full rounded-xl border border-navy-border bg-navy px-6 py-3 text-sm font-semibold text-text-secondary no-underline hover:text-text-primary"
           >
             Try the free deck instead
           </Link>
         )}
         <Link
-          href="/flashcards"
+          href={flashcardsHref(!isAuth)}
           className="block w-full rounded-xl border border-navy-border bg-navy px-6 py-3 text-sm font-semibold text-text-secondary no-underline hover:text-text-primary"
         >
           Back to flashcards

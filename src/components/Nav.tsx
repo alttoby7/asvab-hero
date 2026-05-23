@@ -37,7 +37,7 @@ export default function Nav() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
-  if (pathname?.startsWith("/app")) return null;
+  if (pathname?.startsWith("/app") || pathname?.startsWith("/account")) return null;
 
   async function handleSignOut() {
     const supabase = getSupabaseBrowserClient();

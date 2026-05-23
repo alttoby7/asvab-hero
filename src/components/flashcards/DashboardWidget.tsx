@@ -6,6 +6,7 @@ import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { loadDeckSummaries } from "@/lib/flashcards/queries";
 import { FREE_DECK_SLUG, type DeckSummary } from "@/lib/flashcards/types";
+import { flashcardsHref } from "@/lib/routes";
 
 export default function FlashcardsDashboardWidget() {
   const { session, loading: sessionLoading } = useSession();
@@ -84,7 +85,7 @@ export default function FlashcardsDashboardWidget() {
           )}
         </div>
         <Link
-          href="/flashcards"
+          href={flashcardsHref(!!session)}
           className="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white no-underline transition-colors hover:bg-accent-hover"
         >
           {totalDue > 0 ? "Review now" : "Browse decks"}
