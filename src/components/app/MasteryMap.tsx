@@ -164,7 +164,7 @@ export default function MasteryMap({ topicStats, topics, isPro }: MasteryMapProp
                     return (
                       <Link
                         key={t.id}
-                        href={`/study/${st.toLowerCase()}/${t.slug}`}
+                        href={`/app/study/${st.toLowerCase()}/${t.slug}`}
                         className={`rounded-lg border ${STATUS_BORDER[status]} px-3 py-2 no-underline transition-colors hover:bg-white/5`}
                       >
                         <div className="text-xs font-medium text-text-primary truncate">

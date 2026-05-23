@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { href: "/app/home", label: "Home", icon: "home" },
   { href: "/app/daily", label: "Daily", icon: "daily" },
   { href: "/app/practice", label: "Practice", icon: "practice" },
+  { href: "/app/study", label: "Study", icon: "study" },
   { href: "/app/plan", label: "Plan", icon: "plan" },
   { href: "/app/flashcards", label: "Cards", icon: "cards" },
 ];
