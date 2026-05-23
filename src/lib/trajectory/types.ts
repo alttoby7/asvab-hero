@@ -128,6 +128,8 @@ export interface RequirementCheck {
   composite_code: string;
   /** 0 = mandatory ALL-OF; >0 = alternate OR path. */
   requirement_group: number;
+  /** Minimum required composite score for this rule (added in migration 0038). */
+  required_score: number;
   status: RequirementStatus;
   gap_band: GapBand;
   actual_band: number;

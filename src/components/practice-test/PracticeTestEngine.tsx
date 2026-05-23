@@ -447,6 +447,15 @@ export default function PracticeTestEngine({
         ...(subtest ? { subtest } : {}),
       });
 
+      // GT Target Mode: additive GT-specific completion event.
+      if (variantCode === "gt_adaptive") {
+        trackEvent("gt_block_complete", {
+          primary_metric_estimate: primaryEstimate,
+          primary_metric_code: metricCode,
+          question_count: shuffledQuestions.length,
+        });
+      }
+
       // Mark diagnostic used after submit so the gate fires on next attempt.
       if (variantCode === "diagnostic") {
         if (userId) {

@@ -1,15 +1,25 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
+import { trackEvent } from "@/lib/analytics";
 import { loadDeckSummaries } from "@/lib/flashcards/queries";
 import { FREE_DECK_SLUG, type DeckSummary } from "@/lib/flashcards/types";
 import { getDueMistakeCount, isClosedLoopEnabled } from "@/lib/mistakes/queries";
 import { getHomeTrajectory } from "@/lib/trajectory/queries";
 import type { HomeTrajectory } from "@/lib/trajectory/types";
+import {
+  isGtPrepMode,
+  getGtRange,
+  getGtConfidence,
+  getEffectiveGtTarget,
+  getGtGap,
+  getGtProjection,
+  GT_PROJECTION_REASON_COPY,
+} from "@/lib/trajectory/gt-target-mode";
 import { getTrajectoryPrescription } from "@/lib/account/next-action";
 import type { TopicStats } from "@/types";
 
@@ -26,8 +36,10 @@ interface ProfileData {
   display_name: string | null;
   email: string;
   branch: string | null;
+  test_type: string | null;
   target_test_date: string | null;
   target_test_date_bucket: string | null;
+  target_gt_score: number | null;
   study_days_per_week: number | null;
   streak_count: number;
   last_challenge_completed_on: string | null;
@@ -41,6 +53,9 @@ interface AttemptRow {
   question_count: number;
   correct_count: number;
   afqt_estimate: number | null;
+  test_type: string | null;
+  primary_metric_code: string | null;
+  primary_metric_estimate: number | null;
 }
 
 interface TopicRow {
@@ -99,6 +114,15 @@ function daysToTestFrom(
   }
 }
 
+/** Coarse GT gap bucket for analytics. */
+function gapBucket(gap: number | null): string {
+  if (gap == null) return "unknown";
+  if (gap <= 0) return "at_or_above";
+  if (gap <= 5) return "1_5";
+  if (gap <= 10) return "6_10";
+  return "11_plus";
+}
+
 function isToday(dateStr: string | null): boolean {
   if (!dateStr) return false;
   const d = new Date(dateStr);
@@ -127,8 +151,11 @@ export default function AppHomePage() {
   );
   const [dueMistakeCount, setDueMistakeCount] = useState(0);
   const [trajectory, setTrajectory] = useState<HomeTrajectory | null>(null);
+  const [studyDayDates, setStudyDayDates] = useState<string[]>([]);
   // Bump to re-run the loader after a target-job mutation.
   const [refreshKey, setRefreshKey] = useState(0);
+  // gt_target_mode_view fires once per data load.
+  const gtViewTracked = useRef(false);
 
   useEffect(() => {
     if (sessionLoading || entLoading) return;
@@ -148,22 +175,23 @@ export default function AppHomePage() {
         flashRes,
         dueCountRes,
         trajectoryRes,
+        studyDaysRes,
       ] = await Promise.all([
         sb
           .from("profiles")
           .select(
-            "display_name,email,branch,target_test_date,target_test_date_bucket,study_days_per_week,streak_count,last_challenge_completed_on,onboarding_completed_at"
+            "display_name,email,branch,test_type,target_test_date,target_test_date_bucket,target_gt_score,study_days_per_week,streak_count,last_challenge_completed_on,onboarding_completed_at"
           )
           .eq("user_id", userId)
           .single(),
         sb
           .from("attempts")
           .select(
-            "id,variant_code,completed_at,question_count,correct_count,afqt_estimate"
+            "id,variant_code,completed_at,question_count,correct_count,afqt_estimate,test_type,primary_metric_code,primary_metric_estimate"
           )
           .eq("user_id", userId)
           .order("completed_at", { ascending: false })
-          .limit(20),
+          .limit(50),
         sb
           .from("topic_stats")
           .select(
@@ -182,6 +210,13 @@ export default function AppHomePage() {
         // Single source of truth for standing + projected + target-job gaps.
         // No client-side score math remains in home.
         getHomeTrajectory(sb).catch(() => null),
+        // GT dose: study days for the projection guardrails.
+        sb
+          .from("study_days")
+          .select("study_date")
+          .eq("user_id", userId)
+          .order("study_date", { ascending: false })
+          .limit(120),
       ]);
 
       // Onboarding guard
@@ -203,11 +238,55 @@ export default function AppHomePage() {
       setFlashcardSummaries(flashRes ?? []);
       setDueMistakeCount(dueCountRes ?? 0);
       setTrajectory(trajectoryRes ?? null);
+      setStudyDayDates(
+        (studyDaysRes.data ?? []).map((r: { study_date: string }) => r.study_date)
+      );
+      gtViewTracked.current = false;
       setLoading(false);
     }
 
     load();
   }, [session, sessionLoading, entLoading, router, refreshKey]);
+
+  // gt_target_mode_view — fire once per load when the GT card has real data.
+  useEffect(() => {
+    if (loading || !profile || !trajectory) return;
+    if (gtViewTracked.current) return;
+    if (!isGtPrepMode(profile.test_type, profile.branch)) return;
+    const s = trajectory.current_standing;
+    if (!s || s.attempt_count === 0) return;
+    gtViewTracked.current = true;
+    const eff = getEffectiveGtTarget(
+      profile.target_gt_score,
+      trajectory.target_jobs ?? []
+    );
+    const conf = getGtConfidence(s.subtest_estimates);
+    const range = getGtRange(s.subtest_estimates);
+    const point =
+      trajectory.primary_metric?.is_proxy &&
+      trajectory.primary_metric.code === "GT"
+        ? trajectory.primary_metric.current_value
+        : range.point;
+    const proj = getGtProjection({
+      attempts: attempts.map((a) => ({
+        primary_metric_code: a.primary_metric_code,
+        primary_metric_estimate: a.primary_metric_estimate,
+        completed_at: a.completed_at,
+      })),
+      studyDays: studyDayDates,
+      targetGt: eff.target,
+      studyDaysPerWeek: profile.study_days_per_week,
+      gtConfidence: conf,
+    });
+    trackEvent("gt_target_mode_view", {
+      branch: profile.branch ?? undefined,
+      prep_test_type: profile.test_type ?? undefined,
+      target_gt: eff.target ?? undefined,
+      gap_bucket: gapBucket(getGtGap(point, eff.target)),
+      confidence: conf,
+      has_projection: proj.status === "available",
+    });
+  }, [loading, profile, trajectory, attempts, studyDayDates]);
 
   if (sessionLoading || entLoading || loading) {
     return (
@@ -268,6 +347,46 @@ export default function AppHomePage() {
     studyDaysPerWeek: profile.study_days_per_week,
     daysToTest,
   });
+
+  // ── GT Target Mode derivations (Army/Marines AFCT) ────────────────────────
+  const isGtMode = isGtPrepMode(profile.test_type, profile.branch);
+  const gtSubtests = standing?.subtest_estimates ?? {};
+  const gtRange = getGtRange(gtSubtests);
+  const gtConfidence = getGtConfidence(gtSubtests);
+  const effectiveTarget = getEffectiveGtTarget(
+    profile.target_gt_score,
+    trajectory?.target_jobs ?? []
+  );
+  // Prefer the server's branch-correct GT point; the summed range is the band.
+  const gtPoint =
+    trajectory?.primary_metric?.is_proxy &&
+    trajectory.primary_metric.code === "GT"
+      ? trajectory.primary_metric.current_value
+      : gtRange.point;
+  const gtGap = getGtGap(gtPoint, effectiveTarget.target);
+  const gtProjection = getGtProjection({
+    attempts: attempts.map((a) => ({
+      primary_metric_code: a.primary_metric_code,
+      primary_metric_estimate: a.primary_metric_estimate,
+      completed_at: a.completed_at,
+    })),
+    studyDays: studyDayDates,
+    targetGt: effectiveTarget.target,
+    studyDaysPerWeek: profile.study_days_per_week,
+    gtConfidence,
+  });
+
+  // Prep-aware StatsRow metric (GT users see GT trend, not AFQT).
+  const gtAttempts = attempts.filter(
+    (a) => a.primary_metric_code === "GT" && a.primary_metric_estimate != null
+  );
+  const statsMetricLabel = isGtMode ? "GT" : "AFQT";
+  const statsLatest = isGtMode
+    ? gtAttempts[0]?.primary_metric_estimate ?? null
+    : latestDiagnostic?.afqt_estimate ?? null;
+  const statsPrevious = isGtMode
+    ? gtAttempts[1]?.primary_metric_estimate ?? null
+    : previousDiagnostic?.afqt_estimate ?? null;
 
   // Testimonial prompt — only after a genuine win (a 7-day streak, or a 2nd
   // diagnostic that improved). The component itself shows once (localStorage).
@@ -348,18 +467,38 @@ export default function AppHomePage() {
       {/* Stats */}
       <StatsRow
         streakCount={profile.streak_count}
-        latestAfqt={latestDiagnostic?.afqt_estimate ?? null}
-        previousAfqt={previousDiagnostic?.afqt_estimate ?? null}
+        metricLabel={statsMetricLabel}
+        latestMetric={statsLatest}
+        previousMetric={statsPrevious}
         accuracy={accuracy}
         totalQuestions={totalQ}
       />
 
-      {/* Trajectory — band + confidence only */}
+      {/* Trajectory — band + confidence only (GT Target Mode for Army/Marines AFCT) */}
       {standing && (
         <TrajectoryCard
           currentStanding={standing}
           projectedTestDay={trajectory?.projected_test_day ?? null}
           primaryMetric={trajectory?.primary_metric ?? null}
+          gtTargetMode={isGtMode}
+          targetValue={effectiveTarget.target}
+          targetSource={effectiveTarget.source}
+          targetJobCode={effectiveTarget.jobCode}
+          gtRangeLow={gtRange.low}
+          gtRangeHigh={gtRange.high}
+          gapToTarget={gtGap}
+          confidenceOverride={isGtMode ? gtConfidence : null}
+          projectedTargetDate={
+            gtProjection.status === "available"
+              ? gtProjection.projectedDate
+              : null
+          }
+          projectionStatus={gtProjection.status}
+          projectedReason={
+            gtProjection.status === "unavailable"
+              ? GT_PROJECTION_REASON_COPY[gtProjection.reason]
+              : null
+          }
         />
       )}
 

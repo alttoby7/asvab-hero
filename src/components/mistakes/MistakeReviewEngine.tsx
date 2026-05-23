@@ -20,7 +20,14 @@ type Phase = "loading" | "empty" | "reviewing" | "feedback" | "complete";
 const OPTION_LETTERS = ["A", "B", "C", "D"] as const;
 const REQUEUE_GAP = 4; // re-insert a missed item this many positions later
 
-export default function MistakeReviewEngine({ userId }: { userId: string }) {
+export default function MistakeReviewEngine({
+  userId,
+  prioritySubtests,
+}: {
+  userId: string;
+  /** GT Target Mode: ordered AR/WK/PC (weakest first) to front the queue. */
+  prioritySubtests?: string[];
+}) {
   const [phase, setPhase] = useState<Phase>("loading");
   const [queue, setQueue] = useState<PracticeQuestion[]>([]);
   const [index, setIndex] = useState(0);
@@ -34,13 +41,14 @@ export default function MistakeReviewEngine({ userId }: { userId: string }) {
     let cancelled = false;
     async function init() {
       const [due, pool] = await Promise.all([
-        getDueMistakes(userId),
+        getDueMistakes(userId, { prioritySubtests }),
         loadQuestionPool(),
       ]);
       if (cancelled) return;
 
       const byKey = new Map(pool.map((q) => [q.id, q]));
-      // Preserve AFQT-first / due order; drop items whose content no longer exists.
+      // Preserve incoming order (GT priority or AFQT-first / due); drop items
+      // whose content no longer exists.
       const items = due
         .map((d) => byKey.get(d.question_id))
         .filter((q): q is PracticeQuestion => Boolean(q));
@@ -58,7 +66,7 @@ export default function MistakeReviewEngine({ userId }: { userId: string }) {
     return () => {
       cancelled = true;
     };
-  }, [userId]);
+  }, [userId, prioritySubtests]);
 
   const current = queue[index] ?? null;
 

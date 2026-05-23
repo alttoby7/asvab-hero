@@ -2,24 +2,27 @@
 
 interface StatsRowProps {
   streakCount: number;
-  latestAfqt: number | null;
-  previousAfqt: number | null;
+  /** Prep-aware center metric (AFQT / GT / General). */
+  metricLabel: string;
+  latestMetric: number | null;
+  previousMetric: number | null;
   accuracy: number | null;
   totalQuestions: number;
 }
 
 export default function StatsRow({
   streakCount,
-  latestAfqt,
-  previousAfqt,
+  metricLabel,
+  latestMetric,
+  previousMetric,
   accuracy,
   totalQuestions,
 }: StatsRowProps) {
-  const afqtTrend =
-    latestAfqt != null && previousAfqt != null
-      ? latestAfqt > previousAfqt
+  const trend =
+    latestMetric != null && previousMetric != null
+      ? latestMetric > previousMetric
         ? "up"
-        : latestAfqt < previousAfqt
+        : latestMetric < previousMetric
           ? "down"
           : "flat"
       : null;
@@ -45,16 +48,16 @@ export default function StatsRow({
         </div>
       </div>
 
-      {/* AFQT */}
+      {/* Primary metric (AFQT / GT / General) */}
       <div className="rounded-xl border border-navy-border bg-navy-light px-4 py-4 text-center">
         <div className="font-display text-2xl font-bold text-accent">
-          {latestAfqt != null ? (
+          {latestMetric != null ? (
             <span>
-              {latestAfqt}
-              {afqtTrend === "up" && (
+              {latestMetric}
+              {trend === "up" && (
                 <span className="ml-1 text-sm text-success">↑</span>
               )}
-              {afqtTrend === "down" && (
+              {trend === "down" && (
                 <span className="ml-1 text-sm text-danger">↓</span>
               )}
             </span>
@@ -63,7 +66,7 @@ export default function StatsRow({
           )}
         </div>
         <div className="mt-1 text-xs uppercase tracking-wide text-text-tertiary">
-          AFQT
+          {metricLabel}
         </div>
       </div>
 

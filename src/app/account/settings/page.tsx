@@ -14,12 +14,14 @@ import {
 import type { TargetJobGap } from "@/lib/trajectory/types";
 import { BRANCH_NAMES, type Branch } from "@/types";
 import JobPicker from "@/components/app/JobPicker";
+import { trackEvent } from "@/lib/analytics";
 
 // The generated types lag a couple migrations (test_type 0032, study_anchor
 // 0028), so augment locally — same reason onboarding/plan cast to any.
 type Profile = Database["public"]["Tables"]["profiles"]["Row"] & {
   test_type: string | null;
   study_anchor: string | null;
+  target_gt_score: number | null;
 };
 
 const TIMEZONES = [
@@ -93,8 +95,17 @@ export default function AccountSettingsPage() {
   const [studyAnchor, setStudyAnchor] = useState("");
   const [targetDate, setTargetDate] = useState("");
   const [targetBucket, setTargetBucket] = useState("");
+  const [targetGt, setTargetGt] = useState("");
   const [planLoading, setPlanLoading] = useState(false);
   const [planMsg, setPlanMsg] = useState<{ type: "success" | "error"; text: string } | null>(null);
+
+  // GT Target Mode is Army/Marines AFCT (primary metric GT = AR+WK+PC).
+  const isSettingsGtMode =
+    testType === "afct" && (branch === "army" || branch === "marines");
+  const parsedTargetGt = (() => {
+    const n = parseInt(targetGt, 10);
+    return Number.isFinite(n) && n >= 60 && n <= 186 ? n : null;
+  })();
 
   // Target jobs manager state
   const [targetJobs, setTargetJobs] = useState<TargetJobGap[]>([]);
@@ -142,6 +153,9 @@ export default function AccountSettingsPage() {
           setStudyAnchor(data.study_anchor ?? "");
           setTargetDate(data.target_test_date ?? "");
           setTargetBucket(data.target_test_date_bucket ?? "");
+          setTargetGt(
+            data.target_gt_score != null ? String(data.target_gt_score) : ""
+          );
         }
         setProfileLoading(false);
       });
@@ -278,6 +292,7 @@ export default function AccountSettingsPage() {
       study_anchor: studyAnchor.trim() || null,
       target_test_date: targetDate || null,
       target_test_date_bucket: targetDate ? null : targetBucket || null,
+      target_gt_score: isSettingsGtMode ? parsedTargetGt : null,
       updated_at: new Date().toISOString(),
     };
 
@@ -293,6 +308,15 @@ export default function AccountSettingsPage() {
       setPlanMsg({ type: "error", text: error.message });
     } else {
       setProfile((p) => (p ? { ...p, ...payload } : p));
+      if (isSettingsGtMode) {
+        trackEvent("gt_target_set", {
+          source: "settings",
+          branch: branch || undefined,
+          test_type: testType || undefined,
+          prep_test_type: testType || undefined,
+          target_gt: parsedTargetGt ?? undefined,
+        });
+      }
       setPlanMsg({ type: "success", text: "Study plan saved." });
       setTimeout(() => setPlanMsg(null), 3000);
     }
@@ -554,6 +578,30 @@ export default function AccountSettingsPage() {
               ))}
             </select>
           </div>
+
+          {/* GT target — Army/Marines AFCT only (GT = AR+WK+PC). */}
+          {isSettingsGtMode && (
+            <div className="flex flex-col gap-1.5">
+              <label htmlFor="targetGt" className="text-sm font-medium text-text-secondary">
+                Target GT score
+              </label>
+              <input
+                id="targetGt"
+                type="number"
+                inputMode="numeric"
+                min={60}
+                max={186}
+                value={targetGt}
+                onChange={(e) => setTargetGt(e.target.value)}
+                placeholder="e.g. 110"
+                className="w-full max-w-[160px] rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-accent"
+              />
+              <p className="text-xs text-text-tertiary">
+                GT is AR + WK + PC. We optimize your plan toward this score. If you
+                set a goal job with a higher GT minimum, the higher one is used.
+              </p>
+            </div>
+          )}
 
           {/* Test date — specific date wins; bucket is the fallback. */}
           <div className="flex flex-col gap-1.5">

@@ -196,6 +196,10 @@ function PracticeTestEngineWithEvent({
       variant,
       ...(subtest ? { subtest } : {}),
     });
+    // GT Target Mode: additive GT-specific start event (keeps the funnel event).
+    if (variant === "gt_adaptive") {
+      trackEvent("gt_block_start", { variant, prep_test_type: "afct" });
+    }
   }, [variant, subtest]);
   return <PracticeTestEngine variant={variant} subtest={subtest} />;
 }

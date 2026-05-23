@@ -124,6 +124,11 @@ export function OnboardingForm() {
   const [studyAnchor, setStudyAnchor] = useState<string>("");
   // Optional goal jobs (up to 3), persisted on submit via rpc_add_target_job.
   const [goalJobs, setGoalJobs] = useState<JobCatalogEntry[]>([]);
+  // GT Target Mode — Army/Marines AFCT only. The score we optimize toward.
+  const [targetGtPreset, setTargetGtPreset] = useState<
+    100 | 105 | 107 | 110 | "custom" | null
+  >(null);
+  const [customTargetGt, setCustomTargetGt] = useState<string>("");
 
   const [submitting, setSubmitting] = useState(false);
   const [skipping, setSkipping] = useState(false);
@@ -145,6 +150,28 @@ export function OnboardingForm() {
     }
   }, []);
 
+  // GT Target Mode is Army/Marines AFCT (primary metric GT = AR+WK+PC).
+  const isGtMode =
+    testType === "afct" && (branch === "army" || branch === "marines");
+  const parsedCustomTargetGt = (() => {
+    const n = parseInt(customTargetGt, 10);
+    return Number.isFinite(n) && n >= 60 && n <= 186 ? n : null;
+  })();
+  const targetGtScore: number | null =
+    targetGtPreset === "custom"
+      ? parsedCustomTargetGt
+      : typeof targetGtPreset === "number"
+        ? targetGtPreset
+        : null;
+
+  // Don't let a stale GT target leak into save if the user leaves GT mode.
+  useEffect(() => {
+    if (!isGtMode) {
+      setTargetGtPreset(null);
+      setCustomTargetGt("");
+    }
+  }, [isGtMode]);
+
   const hasTestDate = !!specificDate || !!bucket;
   const canSubmit =
     !!branch &&
@@ -152,6 +179,7 @@ export function OnboardingForm() {
     !!weakest &&
     !!studyDays &&
     !!studyTime &&
+    (!isGtMode || targetGtScore != null) &&
     !submitting &&
     !skipping;
 
@@ -186,6 +214,7 @@ export function OnboardingForm() {
       study_days_per_week: studyDays,
       preferred_study_time: studyTime,
       study_anchor: studyAnchor.trim() || null,
+      target_gt_score: isGtMode ? targetGtScore : null,
       onboarding_completed_at: new Date().toISOString(),
     };
 
@@ -211,12 +240,26 @@ export function OnboardingForm() {
 
     trackEvent("onboarding_completed", {
       branch: branch ?? undefined,
+      test_type: testType,
+      prep_test_type: testType,
       has_test_date: !!specificDate,
       weakest_subtest: weakest ?? undefined,
       study_days_per_week: studyDays ?? undefined,
       study_time: studyTime ?? undefined,
+      target_gt_score: isGtMode ? targetGtScore ?? undefined : undefined,
       goal_jobs: goalJobs.length,
     });
+
+    if (isGtMode) {
+      trackEvent("gt_target_set", {
+        source: "onboarding",
+        branch: branch ?? undefined,
+        test_type: testType,
+        prep_test_type: testType,
+        target_gt: targetGtScore ?? undefined,
+        goal_jobs: goalJobs.length,
+      });
+    }
 
     // Deliver the actual plan (was routing to /app/home — the button promised a
     // plan it never showed). /app/plan renders the personalized routine.
@@ -236,6 +279,7 @@ export function OnboardingForm() {
       target_test_date: null,
       target_test_date_bucket: null,
       self_reported_weakest_subtest: null,
+      target_gt_score: null,
       onboarding_completed_at: new Date().toISOString(),
     };
 
@@ -330,10 +374,61 @@ export function OnboardingForm() {
         )}
       </div>
 
-      {/* Q2 — Test date */}
+      {/* Q3 — GT target (Army/Marines AFCT only) */}
+      {isGtMode && (
+        <div>
+          <label className="block font-display text-lg font-semibold text-text-primary mb-1">
+            3. What GT score are you aiming for?
+          </label>
+          <p className="mb-3 text-sm text-text-secondary">
+            Army and Marine GT is AR + WK + PC. Pick the score you need for your
+            MOS, reclass packet, or program.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {([100, 105, 107, 110] as const).map((v) => (
+              <SegmentButton
+                key={v}
+                value={String(v)}
+                label={String(v)}
+                selected={targetGtPreset === v}
+                onClick={() => setTargetGtPreset(v)}
+              />
+            ))}
+            <SegmentButton
+              value="custom"
+              label="Custom"
+              selected={targetGtPreset === "custom"}
+              onClick={() => setTargetGtPreset("custom")}
+            />
+          </div>
+          {targetGtPreset === "custom" && (
+            <div className="mt-3">
+              <label className="block text-sm text-text-secondary mb-1">
+                Custom GT target
+              </label>
+              <input
+                type="number"
+                inputMode="numeric"
+                min={60}
+                max={186}
+                value={customTargetGt}
+                onChange={(e) => setCustomTargetGt(e.target.value)}
+                placeholder="e.g. 112"
+                className="w-full max-w-[140px] rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary focus:border-accent focus:outline-none"
+              />
+              <p className="mt-1 text-xs text-text-tertiary">
+                Use the score you want the app to optimize toward. Your goal jobs
+                are tracked separately.
+              </p>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Q4 — Test date */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-3">
-          3. When are you planning to take the test?
+          4. When are you planning to take the test?
         </label>
         {!showDatePicker ? (
           <>
@@ -377,10 +472,10 @@ export function OnboardingForm() {
         )}
       </div>
 
-      {/* Q3 — Weakest subtest */}
+      {/* Q5 — Weakest subtest */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-3">
-          4. Which subtest feels weakest right now?
+          5. Which subtest feels weakest right now?
         </label>
         <div className="flex flex-wrap gap-2">
           {SUBTEST_OPTIONS.map((opt) => (
@@ -399,7 +494,7 @@ export function OnboardingForm() {
       {branch && branch !== "undecided" && (
         <div>
           <label className="block font-display text-lg font-semibold text-text-primary mb-1">
-            5. Any target jobs? <span className="text-text-tertiary text-sm font-normal">(optional)</span>
+            6. Any target jobs? <span className="text-text-tertiary text-sm font-normal">(optional)</span>
           </label>
           <p className="mb-3 text-sm text-text-secondary">
             Pick up to 3. We&apos;ll track how close you are to each — as a
@@ -451,7 +546,7 @@ export function OnboardingForm() {
       {/* Q5 — Implementation intention (days + time + anchor) */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-1">
-          6. How often will you study?
+          7. How often will you study?
         </label>
         <p className="mb-3 text-sm text-text-secondary">
           Showing up on your study days beats cramming — it&apos;s the biggest

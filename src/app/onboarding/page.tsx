@@ -48,8 +48,8 @@ function OnboardingPageInner() {
           Personalize your study plan
         </h1>
         <p className="mt-3 text-text-secondary">
-          3 quick questions, 90 seconds. We use this to build your weak-topic drill list and
-          time your study plan to your test date.
+          A few quick questions, about 2 minutes. We use this to build your study plan,
+          set your GT target, and time everything to your test date.
         </p>
       </div>
       <OnboardingForm />

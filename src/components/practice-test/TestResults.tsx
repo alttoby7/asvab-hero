@@ -23,6 +23,7 @@ import { recommendNextStep } from "@/lib/practice/recommender";
 import type { PrepMode } from "@/lib/prep-mode";
 import TopicBreakdown from "./TopicBreakdown";
 import NextStepCard from "./NextStepCard";
+import GtPostBlockCard from "./GtPostBlockCard";
 import QuestionReviewList from "./QuestionReviewList";
 import Link from "next/link";
 import { useEntitlement } from "@/hooks/useEntitlement";
@@ -211,6 +212,11 @@ export default function TestResults({
           </p>
         </div>
       </section>
+
+      {/* GT Target Mode post-block card (Army/Marines AFCT) — the GT CTA moment */}
+      {userId && prepMode?.primaryMetric === "GT" && (
+        <GtPostBlockCard userId={userId} />
+      )}
 
       {/* Topic breakdown — top-3 strong / top-3 weak */}
       <TopicBreakdown topicResults={topicResults} />

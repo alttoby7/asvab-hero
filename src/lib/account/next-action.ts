@@ -83,6 +83,7 @@ const AFQT_SUBTEST_ORDER: Array<"AR" | "MK" | "WK" | "PC"> = [
 export type PrescriptionKind =
   | "review_mistakes"
   | "drill_subtest"
+  | "adaptive_block"
   | "take_diagnostic";
 
 export interface PrescriptionInput {
@@ -100,6 +101,14 @@ export interface PrescriptionInput {
   studyDaysPerWeek?: number | null;
   /** Days until the user's test (optional; null = unknown). */
   daysToTest?: number | null;
+  // ── GT Target Mode (Army/Marines AFCT) ──────────────────────────────
+  testType?: TestType | null;
+  branch?: Branch | null;
+  targetGtScore?: number | null;
+  /** Client-derived GT confidence — overrides AFQT confidence in GT mode. */
+  gtConfidence?: Confidence | null;
+  /** GT points remaining to target (negative = at/above). */
+  gtGap?: number | null;
 }
 
 export interface Prescription {
@@ -149,7 +158,8 @@ function targetsNeedWork(targetJobs: TargetJobGap[]): boolean {
   );
 }
 
-const DRILL_HREF = (st: AsvabSubtest) => `/app/practice?subtest=${st}`;
+const DRILL_HREF = (st: AsvabSubtest) =>
+  `/app/practice?variant=subtest_drill&subtest=${st}`;
 
 /**
  * Compute today's prescription. Precedence:
@@ -181,6 +191,42 @@ export function getTrajectoryPrescription(
       body: "Clear your due mistake bank first — retrieval practice on items you've missed is the highest-leverage minutes you have today.",
       ctaLabel: "Review mistakes",
       ctaHref: "/app/mistakes",
+      urgent,
+    };
+  }
+
+  // 1b. GT Target Mode (Army/Marines AFCT): the daily promise is the GT block.
+  const isGt =
+    getPrepMode(input.testType ?? null, input.branch ?? null).primaryMetric ===
+    "GT";
+  if (isGt) {
+    // First-ever attempt → establish a baseline; after that, the GT block IS the
+    // prescription (it also builds the AR/WK/PC evidence that raises confidence).
+    if (attemptCount === 0) {
+      return {
+        kind: "take_diagnostic",
+        headline: "Take your first GT diagnostic",
+        body: "We need one block to see where your AR, WK, and PC are testing today. It takes about 15 minutes and calibrates your GT plan.",
+        ctaLabel: "Start GT block",
+        ctaHref: "/app/practice?variant=gt_adaptive",
+        urgent,
+      };
+    }
+    const gtConf = input.gtConfidence ?? confidence;
+    const gap = input.gtGap;
+    const atTarget = gap != null && gap <= 0;
+    const body =
+      gtConf === "low"
+        ? "GT is your primary target. Keep running adaptive GT blocks — each one sharpens your AR, WK, and PC range and unlocks your target-date projection."
+        : atTarget
+          ? "Stay sharp with one adaptive GT block. It keeps your AR, WK, and PC range fresh without spending time on non-GT sections."
+          : "GT is your primary target. This block updates AR, WK, and PC together, refreshes your GT range, and is the fastest way to close the current gap.";
+    return {
+      kind: "adaptive_block",
+      headline: "Run today's adaptive GT block",
+      body,
+      ctaLabel: "Start GT block",
+      ctaHref: "/app/practice?variant=gt_adaptive",
       urgent,
     };
   }

@@ -16,6 +16,7 @@ const KIND_EYEBROW: Record<Prescription["kind"], string> = {
   review_mistakes: "Closed the loop",
   take_diagnostic: "First, get your baseline",
   drill_subtest: "Highest-leverage drill",
+  adaptive_block: "Score-moving core",
 };
 
 interface PrescriptionCardProps {

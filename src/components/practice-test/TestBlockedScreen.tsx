@@ -48,8 +48,20 @@ export default function TestBlockedScreen({
   const { session } = useSession();
   const isAuthed = !!session;
 
+  // GT Target Mode users see GT-specific copy on the adaptive gates.
+  const isGtAdaptive = variant === "gt_adaptive";
+  const GT_SUBTEXTS: Record<string, string> = {
+    free_adaptive_daily_limit:
+      "Your free plan includes one adaptive GT block a day — AR, WK, and PC only. Clear your due mistakes to keep practicing today, come back tomorrow for the next GT block, or go Pro for unlimited adaptive practice and deeper analytics.",
+    adaptive_needs_account:
+      "Adaptive GT practice builds on your personal mastery model, so it needs an account. Sign up free — one adaptive GT block a day is included, no card required.",
+  };
+
   const headline = HEADLINES[reason] ?? "This feature requires Pro";
-  const subtext = SUBTEXTS[reason] ?? "Upgrade to Pro to unlock this feature.";
+  const subtext =
+    (isGtAdaptive && GT_SUBTEXTS[reason]) ||
+    SUBTEXTS[reason] ||
+    "Upgrade to Pro to unlock this feature.";
   const baseUpgradeHref = `/upgrade?from=${reason}&variant=${variant}${subtest ? `&subtest=${subtest}` : ""}`;
   // Carry the paywall_context_id through to /upgrade so the journey stitches
   // across the page boundary. Minted by the wrapper's mount effect; null-safe.

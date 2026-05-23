@@ -24,6 +24,15 @@ import {
   getWeeklyPlan,
   type PlanStep,
 } from "@/lib/account/next-action";
+import {
+  isGtPrepMode,
+  getGtRange,
+  getGtConfidence,
+  getEffectiveGtTarget,
+  getGtGap,
+  getGtProjection,
+  GT_PROJECTION_REASON_COPY,
+} from "@/lib/trajectory/gt-target-mode";
 import PrescriptionCard from "@/components/app/PrescriptionCard";
 
 interface ProfileData {
@@ -36,6 +45,7 @@ interface ProfileData {
   last_challenge_completed_on: string | null;
   test_type: "initial_asvab" | "afct" | null;
   branch: Branch | null;
+  target_gt_score: number | null;
 }
 
 interface AttemptRow {
@@ -43,6 +53,8 @@ interface AttemptRow {
   variant_code: string;
   source: string | null;
   completed_at: string | null;
+  primary_metric_code: string | null;
+  primary_metric_estimate: number | null;
 }
 
 /** Days until the user's specific test date, when set; null otherwise.
@@ -109,6 +121,7 @@ export default function AppPlanPage() {
   const [attempts, setAttempts] = useState<AttemptRow[]>([]);
   const [dueMistakeCount, setDueMistakeCount] = useState(0);
   const [trajectory, setTrajectory] = useState<HomeTrajectory | null>(null);
+  const [studyDayDates, setStudyDayDates] = useState<string[]>([]);
 
   // "Why this works" expandable chips.
   const [openChip, setOpenChip] = useState<number | null>(null);
@@ -127,23 +140,31 @@ export default function AppPlanPage() {
     const userId = session.user.id;
 
     async function load() {
-      const [profileRes, attemptsRes, dueCountRes, trajectoryRes] =
+      const [profileRes, attemptsRes, dueCountRes, trajectoryRes, studyDaysRes] =
         await Promise.all([
           sb
             .from("profiles")
             .select(
-              "display_name,target_test_date,target_test_date_bucket,study_days_per_week,preferred_study_time,study_anchor,last_challenge_completed_on,onboarding_completed_at,test_type,branch"
+              "display_name,target_test_date,target_test_date_bucket,study_days_per_week,preferred_study_time,study_anchor,last_challenge_completed_on,onboarding_completed_at,test_type,branch,target_gt_score"
             )
             .eq("user_id", userId)
             .single(),
           sb
             .from("attempts")
-            .select("id,variant_code,source,completed_at")
+            .select(
+              "id,variant_code,source,completed_at,primary_metric_code,primary_metric_estimate"
+            )
             .eq("user_id", userId)
             .order("completed_at", { ascending: false })
             .limit(200),
           getDueMistakeCount(userId),
           getHomeTrajectory(sb).catch(() => null),
+          sb
+            .from("study_days")
+            .select("study_date")
+            .eq("user_id", userId)
+            .order("study_date", { ascending: false })
+            .limit(120),
         ]);
 
       // Onboarding guard (mirrors home/page.tsx).
@@ -156,6 +177,11 @@ export default function AppPlanPage() {
       setAttempts(attemptsRes.data ?? []);
       setDueMistakeCount(dueCountRes ?? 0);
       setTrajectory(trajectoryRes ?? null);
+      setStudyDayDates(
+        (studyDaysRes.data ?? []).map(
+          (r: { study_date: string }) => r.study_date
+        )
+      );
       setLoading(false);
     }
 
@@ -220,6 +246,35 @@ export default function AppPlanPage() {
     profile.target_test_date_bucket
   );
 
+  // ── GT Target Mode derivations (Army/Marines AFCT) ────────────────────────
+  const isGtMode = isGtPrepMode(profile.test_type, profile.branch);
+  const gtSubtests = standing?.subtest_estimates ?? {};
+  const gtRange = getGtRange(gtSubtests);
+  const gtConfidence = getGtConfidence(gtSubtests);
+  const effectiveTarget = getEffectiveGtTarget(
+    profile.target_gt_score,
+    trajectory?.target_jobs ?? []
+  );
+  const gtPoint =
+    trajectory?.primary_metric?.is_proxy &&
+    trajectory.primary_metric.code === "GT"
+      ? trajectory.primary_metric.current_value
+      : gtRange.point;
+  const gtGap = getGtGap(gtPoint, effectiveTarget.target);
+  const gtProjection = getGtProjection({
+    attempts: attempts
+      .filter((a) => a.completed_at)
+      .map((a) => ({
+        primary_metric_code: a.primary_metric_code,
+        primary_metric_estimate: a.primary_metric_estimate,
+        completed_at: a.completed_at as string,
+      })),
+    studyDays: studyDayDates,
+    targetGt: effectiveTarget.target,
+    studyDaysPerWeek: profile.study_days_per_week,
+    gtConfidence,
+  });
+
   const prescription = getTrajectoryPrescription({
     subtestEstimates: standing?.subtest_estimates ?? {},
     confidence,
@@ -228,6 +283,11 @@ export default function AppPlanPage() {
     targetJobs: trajectory?.target_jobs ?? [],
     studyDaysPerWeek: profile.study_days_per_week,
     daysToTest,
+    testType: profile.test_type,
+    branch: profile.branch,
+    targetGtScore: effectiveTarget.target,
+    gtConfidence: isGtMode ? gtConfidence : null,
+    gtGap,
   });
 
   const plan = getWeeklyPlan({
@@ -282,6 +342,48 @@ export default function AppPlanPage() {
         </h2>
         <PrescriptionCard prescription={prescription} />
       </section>
+
+      {/* 2b. GT TARGET MATH — honest projection or cold-start reason */}
+      {isGtMode && (
+        <section>
+          <h2 className="mb-2 text-xs font-semibold uppercase tracking-wider text-text-tertiary">
+            GT target math
+          </h2>
+          <div className="rounded-2xl border border-navy-border bg-navy-light p-4">
+            {gtProjection.status === "available" ? (
+              <>
+                <p className="text-sm text-text-primary">
+                  About{" "}
+                  <span className="font-semibold">
+                    {gtProjection.studyDaysNeeded} study days
+                  </span>{" "}
+                  left at your current pace.
+                </p>
+                <p className="mt-1 text-sm text-text-secondary">
+                  At {plan.studyDaysPerWeek} study days/week, that&apos;s roughly{" "}
+                  {gtProjection.calendarDaysNeeded} calendar days
+                  {effectiveTarget.target != null
+                    ? ` to GT ${effectiveTarget.target}`
+                    : ""}
+                  .
+                </p>
+              </>
+            ) : gtProjection.status === "at_target" ? (
+              <p className="text-sm text-text-secondary">
+                You&apos;re testing at or above your GT target on our practice
+                scale. Keep a GT block in the loop to hold it.
+              </p>
+            ) : (
+              <p className="text-sm text-text-secondary">
+                {GT_PROJECTION_REASON_COPY[gtProjection.reason]}
+              </p>
+            )}
+            <p className="mt-2 text-[11px] text-text-tertiary">
+              Practice proxy based on AR + WK + PC — not an official GT score.
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* 3. YOUR DAILY LOOP — ordered checklist */}
       <section>

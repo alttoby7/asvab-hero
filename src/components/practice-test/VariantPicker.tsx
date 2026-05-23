@@ -1,13 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ALL_SUBTESTS, SUBTEST_NAMES } from "@/types";
+import { ALL_SUBTESTS, SUBTEST_NAMES, type Branch } from "@/types";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { useSession } from "@/hooks/useSession";
 import { checkAnonDiagnosticUsed } from "@/lib/practice/gate";
 import { isAdaptiveEnabled } from "@/lib/practice/sampler";
+import { getSupabaseBrowserClient } from "@/lib/supabase/client";
+import {
+  getPrepMode,
+  adaptiveVariantForPrep,
+  type TestType,
+} from "@/lib/prep-mode";
 
 /**
  * Two-card variant picker for v1: Diagnostic + Subtest Drill.
@@ -31,11 +37,66 @@ export default function VariantPicker() {
   const diagnosticLocked = !isPro && diagnosticUsed;
   // Drill is locked for any non-Pro user.
   const drillLocked = !isPro;
-  // Adaptive AFQT is the FREE score-moving core (one block/day for free users;
-  // unlimited for Pro). Anon users need an account first.
+  // Adaptive practice is the FREE score-moving core (one block/day for free
+  // users; unlimited for Pro). Anon users need an account first.
   const adaptiveAvailable = isAdaptiveEnabled();
+
+  // Profile-aware adaptive variant (GT for Army/Marines AFCT, General for AF/SF,
+  // AFQT otherwise). Best-effort fetch; default to AFQT until it settles so we
+  // never block render.
+  const [prep, setPrep] = useState<{
+    testType: string | null;
+    branch: string | null;
+  }>({ testType: null, branch: null });
+
+  useEffect(() => {
+    if (!isAuthed || !session) return;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const sb = getSupabaseBrowserClient() as any;
+    sb.from("profiles")
+      .select("test_type,branch")
+      .eq("user_id", session.user.id)
+      .single()
+      .then(
+        ({ data }: { data: { test_type: string | null; branch: string | null } | null }) => {
+          if (data) setPrep({ testType: data.test_type, branch: data.branch });
+        }
+      );
+  }, [isAuthed, session]);
+
+  const prepMode = getPrepMode(
+    prep.testType as TestType | null,
+    prep.branch as Branch | null
+  );
+  const adaptiveVariant = adaptiveVariantForPrep(
+    prep.testType as TestType | null,
+    prep.branch as Branch | null
+  );
+  const adaptiveMetric = prepMode.primaryMetric; // "AFQT" | "GT" | "G"
+  const adaptiveTitle =
+    adaptiveMetric === "GT"
+      ? "Adaptive GT Practice"
+      : adaptiveMetric === "G"
+        ? "Adaptive General Practice"
+        : "Adaptive AFQT Practice";
+  const adaptiveSubtitle =
+    adaptiveMetric === "AFQT"
+      ? "36 questions · ~39 minutes · AR / MK / WK / PC"
+      : "36 questions · ~39 minutes · AR / WK / PC";
+  const adaptiveBody =
+    adaptiveMetric === "GT"
+      ? "The score-moving core for Army and Marine reclass prep. Each block targets AR, WK, and PC only and refreshes your GT range after every session. One block a day is free; Pro unlocks unlimited."
+      : adaptiveMetric === "G"
+        ? "The score-moving core for Air Force/Space Force retraining. Each block targets AR, WK, and PC only and refreshes your General (G) range after every session. One block a day is free; Pro unlocks unlimited."
+        : "The core of the method. Picks the right question at the right difficulty for where you are — close to one-on-one tutoring. One block a day is free; Pro unlocks unlimited.";
+  const adaptiveFreeLabel =
+    adaptiveMetric === "GT"
+      ? "GT"
+      : adaptiveMetric === "G"
+        ? "General"
+        : "AFQT";
   const adaptiveHref = isAuthed
-    ? "/app/practice?variant=afqt_adaptive"
+    ? `/app/practice?variant=${adaptiveVariant}`
     : "/signup";
   // Full-length sim is Pro (paid gates sims); the plan paces it weekly in the
   // final stretch.
@@ -135,19 +196,17 @@ export default function VariantPicker() {
             <div className="flex-1">
               <div className="flex flex-wrap items-center gap-2">
                 <h2 className="font-display text-lg font-bold text-text-primary sm:text-xl">
-                  Adaptive AFQT Practice
+                  {adaptiveTitle}
                 </h2>
                 <span className="inline-flex items-center rounded-md bg-accent/20 px-2 py-0.5 text-xs font-semibold text-accent">
                   Free · daily
                 </span>
               </div>
               <p className="mt-1 text-sm text-text-secondary">
-                36 questions · ~39 minutes · AR / MK / WK / PC
+                {adaptiveSubtitle}
               </p>
               <p className="mt-2 text-sm text-text-tertiary">
-                The core of the method. Picks the right question at the right
-                difficulty for where you are — close to one-on-one tutoring. One
-                block a day is free; Pro unlocks unlimited.
+                {adaptiveBody}
                 {!isAuthed && (
                   <span className="mt-1 block text-accent/80">
                     Create a free account to start.
@@ -334,8 +393,8 @@ export default function VariantPicker() {
 
       {/* ── Phase E: free-tier footer hint ────────────────────────────────── */}
       <p className="mt-2 text-center text-xs text-text-tertiary">
-        Free: 1 diagnostic + 1 adaptive AFQT block/day + unlimited mistake
-        review.&nbsp; Pro: unlimited adaptive, drills &amp; sims &middot;
+        Free: 1 diagnostic + 1 adaptive {adaptiveFreeLabel} block/day + unlimited
+        mistake review.&nbsp; Pro: unlimited adaptive, drills &amp; sims &middot;
         $9.99/mo &middot;{" "}
         <Link
           href="/upgrade?from=variant_picker_footer"

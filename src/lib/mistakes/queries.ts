@@ -43,8 +43,16 @@ export async function getDueMistakeCount(userId: string): Promise<number> {
   }
 }
 
-/** Due unresolved reviews, AFQT subtests first, then soonest-due. */
-export async function getDueMistakes(userId: string): Promise<DueReviewRow[]> {
+/**
+ * Due unresolved reviews. Default order: AFQT subtests first, then soonest-due.
+ * When `prioritySubtests` is provided (GT Target Mode = ordered AR/WK/PC by
+ * weakest), those subtests come first in list order, then soonest-due. This is
+ * presentation/queue priority only — the DB scheduler is untouched.
+ */
+export async function getDueMistakes(
+  userId: string,
+  opts?: { prioritySubtests?: string[] }
+): Promise<DueReviewRow[]> {
   try {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const sb = getSupabaseBrowserClient() as any;
@@ -56,7 +64,20 @@ export async function getDueMistakes(userId: string): Promise<DueReviewRow[]> {
       .lte("due_at", new Date().toISOString())
       .order("due_at", { ascending: true });
     if (error || !data) return [];
-    return [...(data as DueReviewRow[])].sort((a, b) => {
+    const rows = [...(data as DueReviewRow[])];
+
+    const priority = opts?.prioritySubtests;
+    if (priority && priority.length > 0) {
+      const rank = new Map(priority.map((s, i) => [s, i]));
+      return rows.sort((a, b) => {
+        const ar = rank.has(a.subtest) ? (rank.get(a.subtest) as number) : Infinity;
+        const br = rank.has(b.subtest) ? (rank.get(b.subtest) as number) : Infinity;
+        if (ar !== br) return ar - br;
+        return new Date(a.due_at).getTime() - new Date(b.due_at).getTime();
+      });
+    }
+
+    return rows.sort((a, b) => {
       const aAfqt = AFQT_SUBTESTS.has(a.subtest) ? 0 : 1;
       const bAfqt = AFQT_SUBTESTS.has(b.subtest) ? 0 : 1;
       if (aAfqt !== bAfqt) return aAfqt - bAfqt;
