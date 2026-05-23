@@ -15,7 +15,12 @@ import type { TargetJobGap } from "@/lib/trajectory/types";
 import { BRANCH_NAMES, type Branch } from "@/types";
 import JobPicker from "@/components/app/JobPicker";
 
-type Profile = Database["public"]["Tables"]["profiles"]["Row"];
+// The generated types lag a couple migrations (test_type 0032, study_anchor
+// 0028), so augment locally — same reason onboarding/plan cast to any.
+type Profile = Database["public"]["Tables"]["profiles"]["Row"] & {
+  test_type: string | null;
+  study_anchor: string | null;
+};
 
 const TIMEZONES = [
   "America/New_York",
@@ -25,6 +30,47 @@ const TIMEZONES = [
   "America/Anchorage",
   "Pacific/Honolulu",
   "UTC",
+];
+
+// Study-plan options — mirror the onboarding form so settings is the durable
+// editor for everything onboarding captures (test type / branch / cadence /
+// test date). Keeping these in sync is what makes "Set your study days" and
+// "Change schedule" on /app/plan actually lead somewhere.
+const TEST_TYPE_OPTIONS: { value: string; label: string }[] = [
+  { value: "initial_asvab", label: "Initial ASVAB (joining)" },
+  { value: "afct", label: "AFCT (active-duty retest)" },
+];
+
+const BRANCH_OPTIONS: { value: string; label: string }[] = [
+  { value: "army", label: "Army" },
+  { value: "navy", label: "Navy" },
+  { value: "marines", label: "Marines" },
+  { value: "air_force", label: "Air Force" },
+  { value: "space_force", label: "Space Force" },
+  { value: "coast_guard", label: "Coast Guard" },
+  { value: "undecided", label: "Undecided" },
+];
+
+const BUCKET_OPTIONS: { value: string; label: string }[] = [
+  { value: "lt_30", label: "Within 30 days" },
+  { value: "30_90", label: "1-3 months" },
+  { value: "90_180", label: "3-6 months" },
+  { value: "gt_180", label: "More than 6 months" },
+  { value: "not_sure", label: "Not sure yet" },
+];
+
+const DAYS_OPTIONS: { value: number; label: string }[] = [
+  { value: 3, label: "3 days a week" },
+  { value: 4, label: "4 days a week" },
+  { value: 5, label: "5 days a week" },
+  { value: 6, label: "6 days a week" },
+  { value: 7, label: "Every day" },
+];
+
+const TIME_OPTIONS: { value: string; label: string }[] = [
+  { value: "morning", label: "Morning" },
+  { value: "afternoon", label: "Afternoon" },
+  { value: "evening", label: "Evening" },
 ];
 
 export default function AccountSettingsPage() {
@@ -38,6 +84,17 @@ export default function AccountSettingsPage() {
   const [timezone, setTimezone] = useState("UTC");
   const [marketingOptIn, setMarketingOptIn] = useState(false);
   const [dailyEmailOptIn, setDailyEmailOptIn] = useState(true);
+
+  // Study-plan form state (test type / branch / cadence / test date)
+  const [testType, setTestType] = useState("");
+  const [branch, setBranch] = useState("");
+  const [studyDays, setStudyDays] = useState<number | null>(null);
+  const [studyTime, setStudyTime] = useState("");
+  const [studyAnchor, setStudyAnchor] = useState("");
+  const [targetDate, setTargetDate] = useState("");
+  const [targetBucket, setTargetBucket] = useState("");
+  const [planLoading, setPlanLoading] = useState(false);
+  const [planMsg, setPlanMsg] = useState<{ type: "success" | "error"; text: string } | null>(null);
 
   // Target jobs manager state
   const [targetJobs, setTargetJobs] = useState<TargetJobGap[]>([]);
@@ -64,7 +121,8 @@ export default function AccountSettingsPage() {
   useEffect(() => {
     if (!session) return;
 
-    const supabase = getSupabaseBrowserClient();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const supabase = getSupabaseBrowserClient() as any;
     supabase
       .from("profiles")
       .select("*")
@@ -77,6 +135,13 @@ export default function AccountSettingsPage() {
           setTimezone(data.timezone ?? "UTC");
           setMarketingOptIn(data.marketing_opt_in ?? false);
           setDailyEmailOptIn(data.daily_email_opt_in ?? true);
+          setTestType(data.test_type ?? "");
+          setBranch(data.branch ?? "");
+          setStudyDays(data.study_days_per_week ?? null);
+          setStudyTime(data.preferred_study_time ?? "");
+          setStudyAnchor(data.study_anchor ?? "");
+          setTargetDate(data.target_test_date ?? "");
+          setTargetBucket(data.target_test_date_bucket ?? "");
         }
         setProfileLoading(false);
       });
@@ -194,6 +259,42 @@ export default function AccountSettingsPage() {
     } else {
       setSaveMsg({ type: "success", text: "Changes saved." });
       setTimeout(() => setSaveMsg(null), 3000);
+    }
+  }
+
+  async function handleSaveStudyPlan(e: React.FormEvent) {
+    e.preventDefault();
+    if (!session) return;
+    setPlanLoading(true);
+    setPlanMsg(null);
+
+    // A specific date and a rough bucket are mutually exclusive (mirrors
+    // onboarding): a concrete date always wins and clears the bucket.
+    const payload = {
+      test_type: testType || null,
+      branch: branch || null,
+      study_days_per_week: studyDays,
+      preferred_study_time: studyTime || null,
+      study_anchor: studyAnchor.trim() || null,
+      target_test_date: targetDate || null,
+      target_test_date_bucket: targetDate ? null : targetBucket || null,
+      updated_at: new Date().toISOString(),
+    };
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const supabase = getSupabaseBrowserClient() as any;
+    const { error } = await supabase
+      .from("profiles")
+      .update(payload)
+      .eq("user_id", session.user.id);
+
+    setPlanLoading(false);
+    if (error) {
+      setPlanMsg({ type: "error", text: error.message });
+    } else {
+      setProfile((p) => (p ? { ...p, ...payload } : p));
+      setPlanMsg({ type: "success", text: "Study plan saved." });
+      setTimeout(() => setPlanMsg(null), 3000);
     }
   }
 
@@ -398,6 +499,169 @@ export default function AccountSettingsPage() {
               className="rounded-lg border border-navy-border px-5 py-2.5 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary"
             >
               Change password
+            </button>
+          </div>
+        </form>
+      </div>
+
+      {/* Study plan */}
+      <div className="rounded-2xl border border-navy-border bg-navy-light p-8 mb-6">
+        <h2 className="font-display text-lg font-semibold text-text-primary mb-1">Study plan</h2>
+        <p className="mb-6 text-sm text-text-secondary">
+          Sets your target metric and the cadence your plan holds you to. Choose
+          AFCT if you&apos;re already serving and retesting to reclassify.
+        </p>
+        <form onSubmit={handleSaveStudyPlan} className="flex flex-col gap-5">
+          {/* Test type */}
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="testType" className="text-sm font-medium text-text-secondary">
+              Which test are you preparing for?
+            </label>
+            <select
+              id="testType"
+              value={testType}
+              onChange={(e) => setTestType(e.target.value)}
+              className="w-full rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-accent"
+            >
+              <option value="">Not set</option>
+              {TEST_TYPE_OPTIONS.map((o) => (
+                <option key={o.value} value={o.value}>{o.label}</option>
+              ))}
+            </select>
+            {testType === "afct" && (branch === "navy" || branch === "coast_guard") && (
+              <p className="text-xs text-text-tertiary">
+                Navy/Coast Guard retests use rating-specific line scores — add your
+                target rating under Goal jobs and your plan will drill its
+                composite (shown as a practice proxy, not an official score).
+              </p>
+            )}
+          </div>
+
+          {/* Branch */}
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="branch" className="text-sm font-medium text-text-secondary">
+              Branch
+            </label>
+            <select
+              id="branch"
+              value={branch}
+              onChange={(e) => setBranch(e.target.value)}
+              className="w-full rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-accent"
+            >
+              <option value="">Not set</option>
+              {BRANCH_OPTIONS.map((o) => (
+                <option key={o.value} value={o.value}>{o.label}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Test date — specific date wins; bucket is the fallback. */}
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="targetDate" className="text-sm font-medium text-text-secondary">
+              Test date
+            </label>
+            <input
+              id="targetDate"
+              type="date"
+              value={targetDate}
+              onChange={(e) => {
+                setTargetDate(e.target.value);
+                if (e.target.value) setTargetBucket("");
+              }}
+              className="w-full rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-accent"
+            />
+            <label htmlFor="targetBucket" className="mt-1 text-xs text-text-tertiary">
+              Or a rough timeframe if you don&apos;t have a date yet:
+            </label>
+            <select
+              id="targetBucket"
+              value={targetBucket}
+              disabled={!!targetDate}
+              onChange={(e) => setTargetBucket(e.target.value)}
+              className="w-full rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-accent disabled:opacity-50"
+            >
+              <option value="">Not set</option>
+              {BUCKET_OPTIONS.map((o) => (
+                <option key={o.value} value={o.value}>{o.label}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Study days per week */}
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="studyDays" className="text-sm font-medium text-text-secondary">
+              Study days
+            </label>
+            <select
+              id="studyDays"
+              value={studyDays ?? ""}
+              onChange={(e) => setStudyDays(e.target.value ? Number(e.target.value) : null)}
+              className="w-full rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-accent"
+            >
+              <option value="">Not set</option>
+              {DAYS_OPTIONS.map((o) => (
+                <option key={o.value} value={o.value}>{o.label}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Preferred study time */}
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="studyTime" className="text-sm font-medium text-text-secondary">
+              Preferred study time
+            </label>
+            <select
+              id="studyTime"
+              value={studyTime}
+              onChange={(e) => setStudyTime(e.target.value)}
+              className="w-full rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-accent"
+            >
+              <option value="">Not set</option>
+              {TIME_OPTIONS.map((o) => (
+                <option key={o.value} value={o.value}>{o.label}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Study anchor */}
+          <div className="flex flex-col gap-1.5">
+            <label htmlFor="studyAnchor" className="text-sm font-medium text-text-secondary">
+              Study anchor <span className="text-text-tertiary">(optional)</span>
+            </label>
+            <input
+              id="studyAnchor"
+              type="text"
+              value={studyAnchor}
+              maxLength={80}
+              onChange={(e) => setStudyAnchor(e.target.value)}
+              placeholder="I'll study right after… e.g. breakfast, my last class"
+              className="w-full rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary placeholder-text-tertiary outline-none transition-colors focus:border-accent"
+            />
+            <p className="text-xs text-text-tertiary">
+              Anchoring study to an existing habit makes the routine far more
+              likely to stick.
+            </p>
+          </div>
+
+          {planMsg && (
+            <div
+              className={`rounded-lg border px-4 py-3 text-sm ${
+                planMsg.type === "success"
+                  ? "border-success bg-success-dim text-success"
+                  : "border-danger bg-danger-dim text-danger"
+              }`}
+            >
+              {planMsg.text}
+            </div>
+          )}
+
+          <div className="pt-1">
+            <button
+              type="submit"
+              disabled={planLoading}
+              className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover disabled:opacity-60"
+            >
+              {planLoading ? "Saving…" : "Save study plan"}
             </button>
           </div>
         </form>

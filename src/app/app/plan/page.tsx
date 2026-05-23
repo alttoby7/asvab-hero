@@ -429,6 +429,12 @@ export default function AppPlanPage() {
           <p className="mt-3 border-t border-navy-border pt-3 text-xs text-text-tertiary">
             Reminders on for due mistakes.
           </p>
+          <Link
+            href="/app/retake"
+            className="mt-3 inline-flex text-xs font-semibold text-accent no-underline hover:text-accent-hover"
+          >
+            Log real scores &amp; see your retake date →
+          </Link>
         </div>
       </section>
 

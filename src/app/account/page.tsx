@@ -343,6 +343,8 @@ export default function AccountDashboardPage() {
       <div className="flex flex-wrap items-center gap-4 px-1 pb-4">
         <Link href="/account/settings" className="text-sm text-text-secondary hover:text-text-primary no-underline transition-colors">Settings</Link>
         <span className="text-navy-border">·</span>
+        <Link href="/app/retake" className="text-sm text-text-secondary hover:text-text-primary no-underline transition-colors">Retake tracker</Link>
+        <span className="text-navy-border">·</span>
         <Link href="/account/billing" className="text-sm text-text-secondary hover:text-text-primary no-underline transition-colors">Billing</Link>
         <span className="text-navy-border">·</span>
         <SignOutButton />
