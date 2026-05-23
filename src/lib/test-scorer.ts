@@ -149,6 +149,34 @@ export function estimatePrimaryMetric(
   return { score, label: metric === "G" ? "General (G)" : "GT", category: null };
 }
 
+/**
+ * Navy/CG rating composite PROXY (S7) — the weighted sum of equated subtest
+ * scores per a parsed composite (e.g. {WK:1,PC:1,AR:1,MK:1,MC:1} for VE+AR+MK+MC).
+ * Same equated scale as the trajectory composites (within-cohort comparable);
+ * NOT an official line score and NOT compared to qualification minimums.
+ */
+export function estimateRatingComposite(
+  subtestResults: SubtestResult[],
+  weights: Partial<Record<AsvabSubtest, number>>
+): number {
+  const resultMap = new Map(subtestResults.map((r) => [r.subtest, r]));
+  const toScore = (pct: number, seen: number): number => {
+    const raw = 20 + (pct / 100) * 79;
+    const confidence = Math.min(seen / 15, 1);
+    return Math.round(50 + (raw - 50) * confidence);
+  };
+  const eq = (st: AsvabSubtest) =>
+    standardToEquated(
+      toScore(resultMap.get(st)?.percentage ?? 0, resultMap.get(st)?.total ?? 0)
+    );
+  let sum = 0;
+  for (const st of ALL_SUBTESTS) {
+    const w = weights[st] ?? 0;
+    if (w > 0) sum += w * eq(st);
+  }
+  return Math.round(sum);
+}
+
 export function getStrengths(results: SubtestResult[]): SubtestResult[] {
   return [...results].sort((a, b) => b.percentage - a.percentage).slice(0, 3);
 }

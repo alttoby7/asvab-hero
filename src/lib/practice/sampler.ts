@@ -24,8 +24,8 @@ import freeTest from "@/data/practice-tests/free-test.json";
 import questionTags from "@/data/question-tags.seed.json";
 import { getItemCalibrations } from "@/lib/practice/item-calibration";
 import {
-  AFQT_SUBTESTS,
   selectAdaptiveItems,
+  blueprintSubtests,
   type AdaptiveBlueprint,
   type AdaptiveCandidate,
   type AdaptiveTopicStat,
@@ -33,8 +33,16 @@ import {
 
 /** Variant code for the WS6 adaptive AFQT test (seeded inactive in 0025). */
 export const ADAPTIVE_VARIANT_CODE = "afqt_adaptive";
-/** All adaptive variants the selector drives: afqt_adaptive + gt_adaptive (AFCT). */
-export const ADAPTIVE_VARIANT_CODES = ["afqt_adaptive", "gt_adaptive"] as const;
+/**
+ * All adaptive variants the selector drives: afqt_adaptive (AFQT), gt_adaptive
+ * (AFCT GT/General — AR/WK/PC), rating_adaptive (Navy/CG rating composites —
+ * runtime weighted blueprint over the target rating's required subtests).
+ */
+export const ADAPTIVE_VARIANT_CODES = [
+  "afqt_adaptive",
+  "gt_adaptive",
+  "rating_adaptive",
+] as const;
 
 /**
  * Build-time kill switch for the adaptive selector. Mirrors the closed-loop /
@@ -271,12 +279,12 @@ export function sampleForVariant(
 // All of the below is inert unless `shouldUseAdaptive(variant)` is true (flag on
 // + active adaptive variant). The default sampler path above is untouched.
 
-/** Extract the AFQT-subtest macro blueprint from the variant's mix object. */
+/** Extract the macro blueprint (any subtests) from the variant's mix object. */
 function adaptiveBlueprintFromVariant(variant: TestVariant): AdaptiveBlueprint {
   const out: AdaptiveBlueprint = {};
   const mix = variant.rules.mix;
   if (typeof mix === "object" && mix !== null) {
-    for (const st of AFQT_SUBTESTS) {
+    for (const st of ALL_SUBTESTS) {
       const n = (mix as Partial<Record<AsvabSubtest, number>>)[st] ?? 0;
       if (n > 0) out[st] = n;
     }
@@ -284,13 +292,18 @@ function adaptiveBlueprintFromVariant(variant: TestVariant): AdaptiveBlueprint {
   return out;
 }
 
-/** AFQT-only enriched candidate row (status + family) for the adaptive selector. */
-async function loadAdaptiveCandidates(): Promise<{
+/**
+ * Enriched candidate rows (status + family + calibration) for the adaptive
+ * selector, restricted to the blueprint's subtests. AFQT/GT load AR/MK/WK/PC;
+ * Navy/CG rating composites pull in GS/EI/AS/MC/AO as needed.
+ */
+async function loadAdaptiveCandidates(subtests: AsvabSubtest[]): Promise<{
   candidates: AdaptiveCandidate[];
   byKey: Map<string, PracticeQuestion>;
 }> {
   const byKey = new Map<string, PracticeQuestion>();
   const candidates: AdaptiveCandidate[] = [];
+  if (subtests.length === 0) return { candidates, byKey };
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const sb = getSupabaseBrowserClient() as any;
   const { data, error } = await sb
@@ -299,7 +312,7 @@ async function loadAdaptiveCandidates(): Promise<{
       "id, external_key, subtest, topic_id, difficulty, stem, choices, correct_index, explanation, active, status, item_family_id",
     )
     .eq("active", true)
-    .in("subtest", AFQT_SUBTESTS);
+    .in("subtest", subtests);
   if (error || !data) return { candidates, byKey };
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -393,11 +406,22 @@ async function loadDueExternalKeys(userId: string): Promise<Set<string>> {
  */
 export async function sampleAdaptive(
   variant: TestVariant,
-  opts: { userId: string | null; recentExternalKeys?: Set<string> },
+  opts: {
+    userId: string | null;
+    recentExternalKeys?: Set<string>;
+    /** Runtime blueprint (rating_adaptive): overrides the variant's static mix
+     *  with the target rating's weighted required-subtest demand. */
+    blueprintOverride?: AdaptiveBlueprint;
+  },
 ): Promise<PracticeQuestion[]> {
   try {
-    const blueprint = adaptiveBlueprintFromVariant(variant);
-    const { candidates, byKey } = await loadAdaptiveCandidates();
+    const blueprint =
+      opts.blueprintOverride && Object.keys(opts.blueprintOverride).length > 0
+        ? opts.blueprintOverride
+        : adaptiveBlueprintFromVariant(variant);
+    const { candidates, byKey } = await loadAdaptiveCandidates(
+      blueprintSubtests(blueprint),
+    );
     if (candidates.length === 0) throw new Error("empty_adaptive_pool");
 
     const [topicStats, dueExternalKeys] = await Promise.all([

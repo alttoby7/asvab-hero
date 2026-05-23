@@ -13,6 +13,7 @@ import {
   scoreByTopic,
   estimateAFQT,
   estimatePrimaryMetric,
+  estimateRatingComposite,
   estimateStandardScores,
   totalCorrect,
 } from "@/lib/test-scorer";
@@ -128,11 +129,20 @@ export default function TestResults({
   const subtestResults = scoreBySubtest(questions, answers);
   const topicResults = scoreByTopic(questions, answers);
   const afqtEstimate = estimateAFQT(subtestResults);
-  // AFCT users see their GT/General proxy instead of AFQT (no tier claims).
-  const isAfqtMode = !prepMode || prepMode.primaryMetric === "AFQT";
-  const primary = isAfqtMode
-    ? null
-    : estimatePrimaryMetric(subtestResults, prepMode.primaryMetric);
+  // AFCT users see their prep proxy instead of AFQT (no tier/qualification claims):
+  //   • Navy/CG rating → the composite line-score proxy (weighted equated sum)
+  //   • GT / General   → AR+WK+PC equated proxy
+  const rating = prepMode?.ratingComposite ?? null;
+  const isAfqtMode =
+    !rating && (!prepMode || prepMode.primaryMetric === "AFQT");
+  const primary: { score: number; label: string } | null = rating
+    ? {
+        score: estimateRatingComposite(subtestResults, rating.weights),
+        label: rating.label,
+      }
+    : isAfqtMode
+      ? null
+      : estimatePrimaryMetric(subtestResults, prepMode!.primaryMetric);
   const correct = totalCorrect(questions, answers);
   const overallPct = Math.round((correct / questions.length) * 100);
   const estimatedScores = estimateStandardScores(subtestResults);

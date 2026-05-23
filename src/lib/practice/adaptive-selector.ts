@@ -46,9 +46,22 @@ import type { AsvabSubtest } from "@/types";
 
 // ── Inputs ──────────────────────────────────────────────────────────────────
 
-/** AFQT subtests, in canonical order. The macro layer only schedules these. */
+/** AFQT subtests, in canonical order. Still used by the AFQT/GT loaders. */
 export const AFQT_SUBTESTS: AsvabSubtest[] = ["AR", "MK", "WK", "PC"];
-const AFQT_SET = new Set<AsvabSubtest>(AFQT_SUBTESTS);
+
+/**
+ * Canonical scheduling order for ALL subtests. AFQT four come first so an AFQT
+ * (or GT = AR/WK/PC) blueprint schedules byte-for-byte identically to the
+ * pre-S7 AFQT-only engine; Navy/CG rating composites then pull in the rest.
+ */
+const SCHEDULE_ORDER: AsvabSubtest[] = [
+  "AR", "MK", "WK", "PC", "GS", "EI", "AS", "MC", "AO",
+];
+
+/** The subtests a blueprint actually owes, in canonical schedule order. */
+export function blueprintSubtests(blueprint: AdaptiveBlueprint): AsvabSubtest[] {
+  return SCHEDULE_ORDER.filter((st) => (blueprint[st] ?? 0) > 0);
+}
 
 /** One candidate item, normalised from practice_questions + its calibration. */
 export interface AdaptiveCandidate {
@@ -206,9 +219,8 @@ function topicScore(
  *  subtest while any other subtest still owes a slot (largest-remainder style). */
 export function buildSubtestSchedule(blueprint: AdaptiveBlueprint): AsvabSubtest[] {
   const remaining = new Map<AsvabSubtest, number>();
-  for (const st of AFQT_SUBTESTS) {
-    const n = blueprint[st] ?? 0;
-    if (n > 0) remaining.set(st, n);
+  for (const st of blueprintSubtests(blueprint)) {
+    remaining.set(st, blueprint[st] as number);
   }
   const total = [...remaining.values()].reduce((a, b) => a + b, 0);
   const schedule: AsvabSubtest[] = [];
@@ -256,12 +268,14 @@ export function selectAdaptiveItems(
     rng = Math.random,
   } = input;
 
-  // ── Hard filters: audited, active, AFQT subtest, not on exact/due cooldown ──
+  // ── Hard filters: audited, active, in-blueprint subtest, not on cooldown ──
+  const activeSubtests = blueprintSubtests(blueprint);
+  const activeSet = new Set<AsvabSubtest>(activeSubtests);
   const eligible = pool.filter(
     (c) =>
       c.active &&
       isAudited(c) &&
-      AFQT_SET.has(c.subtest) &&
+      activeSet.has(c.subtest) &&
       !recentExternalKeys.has(c.externalKey) &&
       !dueExternalKeys.has(c.externalKey),
   );
@@ -418,7 +432,7 @@ export function selectAdaptiveItems(
   // medium anchor difficulty, ignoring ability (we have none yet). Anchors still
   // count against each subtest's blueprint quota.
   const anchorBudget = new Map<AsvabSubtest, number>();
-  for (const st of AFQT_SUBTESTS) {
+  for (const st of activeSubtests) {
     const want = blueprint[st] ?? 0;
     if (want > 0) anchorBudget.set(st, Math.min(anchorsPerSubtest, want));
   }
@@ -427,7 +441,7 @@ export function selectAdaptiveItems(
   for (const st of schedule) subtestQuota.set(st, (subtestQuota.get(st) ?? 0) + 1);
 
   let slot = 0;
-  for (const st of AFQT_SUBTESTS) {
+  for (const st of activeSubtests) {
     const n = anchorBudget.get(st) ?? 0;
     for (let k = 0; k < n; k++) {
       const { list } = candidatesFor(st);
@@ -455,7 +469,7 @@ export function selectAdaptiveItems(
   // We re-derive a post-anchor schedule from the residual quota so the
   // interleave is correct after anchors were front-loaded by subtest.
   const residualBlueprint: AdaptiveBlueprint = {};
-  for (const st of AFQT_SUBTESTS) {
+  for (const st of activeSubtests) {
     const left = subtestQuota.get(st) ?? 0;
     if (left > 0) residualBlueprint[st] = left;
   }

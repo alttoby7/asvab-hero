@@ -15,8 +15,13 @@
 import type {
   HomeTrajectory,
   JobCatalogEntry,
+  TargetJobGap,
   UserTargetJob,
 } from "./types";
+import {
+  ratingCompositeFromFormula,
+  type RatingComposite,
+} from "@/lib/prep-mode";
 
 /** Minimal shape we need from a Supabase client (browser or server). */
 export interface RpcClient {
@@ -36,6 +41,34 @@ export async function getHomeTrajectory(
   client: RpcClient
 ): Promise<HomeTrajectory> {
   return unwrap<HomeTrajectory>(await client.rpc("rpc_get_home_trajectory"));
+}
+
+/**
+ * Resolve the Navy/CG target rating composite to drive `rating_adaptive` prep
+ * (S7). Picks the user's PRIMARY target job, then its mandatory requirement
+ * (requirement_group 0) composite — the canonical line score for that rating.
+ * Returns null when there is no target rating or no parseable composite, so the
+ * caller falls back to the honest AFQT path. Pure given a HomeTrajectory.
+ */
+export function resolvePrimaryRatingComposite(
+  traj: HomeTrajectory | null
+): RatingComposite | null {
+  if (!traj || !Array.isArray(traj.target_jobs) || traj.target_jobs.length === 0) {
+    return null;
+  }
+  const primary: TargetJobGap =
+    traj.target_jobs.find((t) => t.is_primary) ?? traj.target_jobs[0];
+  if (!primary || !Array.isArray(primary.checks) || primary.checks.length === 0) {
+    return null;
+  }
+  // Mandatory group first (the always-required line score); else first check.
+  const mandatory = primary.checks.filter((c) => c.requirement_group === 0);
+  const pick = mandatory[0] ?? primary.checks[0];
+  if (!pick?.composite_code) return null;
+  return ratingCompositeFromFormula(
+    pick.composite_code,
+    `${primary.code} (${pick.composite_code})`
+  );
 }
 
 /** Force a snapshot recompute (normally automatic in getHomeTrajectory). */

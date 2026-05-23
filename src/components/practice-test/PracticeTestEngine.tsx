@@ -28,9 +28,19 @@ import {
   scoreByTopic,
   estimateAFQT,
   estimatePrimaryMetric,
+  estimateRatingComposite,
   totalCorrect,
 } from "@/lib/test-scorer";
-import { getPrepMode, type PrepMode } from "@/lib/prep-mode";
+import {
+  getPrepMode,
+  ratingBlueprint,
+  type PrepMode,
+} from "@/lib/prep-mode";
+import {
+  getHomeTrajectory,
+  resolvePrimaryRatingComposite,
+  type RpcClient,
+} from "@/lib/trajectory/queries";
 import type { Branch } from "@/types";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
@@ -132,11 +142,20 @@ export default function PracticeTestEngine({
             .select("test_type,branch")
             .eq("user_id", uid)
             .single();
-          if (!cancelled) {
-            setPrepMode(
-              getPrepMode(prof?.test_type ?? null, (prof?.branch ?? null) as Branch | null)
-            );
+          const tt = prof?.test_type ?? null;
+          const br = (prof?.branch ?? null) as Branch | null;
+          // Navy/CG AFCT: resolve the target rating's composite so prep drills
+          // that line score. Best-effort; falls back to honest AFQT on any miss.
+          let ratingComposite = null;
+          if (tt === "afct" && (br === "navy" || br === "coast_guard")) {
+            try {
+              const traj = await getHomeTrajectory(sb as unknown as RpcClient);
+              ratingComposite = resolvePrimaryRatingComposite(traj);
+            } catch {
+              /* no target rating yet → AFQT fallback */
+            }
           }
+          if (!cancelled) setPrepMode(getPrepMode(tt, br, ratingComposite));
         }
       } catch {
         if (!cancelled) setUserId(null);
@@ -228,15 +247,24 @@ export default function PracticeTestEngine({
     // Adaptive path (WS6): only when the flag is on AND the adaptive variant is
     // active. Inert otherwise — the default fixed-mix path below is unchanged.
     if (shouldUseAdaptive(variant)) {
+      // Navy/CG AFCT: override the blueprint with the target rating's weighted
+      // composite demand so the adaptive engine drills that line score's
+      // subtests regardless of which adaptive variant routed here.
+      const blueprintOverride = prepMode?.ratingComposite
+        ? ratingBlueprint(prepMode.ratingComposite.weights)
+        : undefined;
       (async () => {
-        const sampled = await sampleAdaptive(variant, { userId });
+        const sampled = await sampleAdaptive(variant, {
+          userId,
+          blueprintOverride,
+        });
         beginWith(sampled);
       })();
       return;
     }
 
     beginWith(sampleForVariant(variant, pool, { subtest }));
-  }, [variant, pool, subtest, userId]);
+  }, [variant, pool, subtest, userId, prepMode]);
 
   const startTest = useCallback(
     (resume = false) => {
@@ -321,9 +349,18 @@ export default function PracticeTestEngine({
       const topicResults = scoreByTopic(shuffledQuestions, answers);
       const correct = totalCorrect(shuffledQuestions, answers);
       const afqt = estimateAFQT(subtestResults).score;
-      // Prep-mode primary metric (AFQT vs GT/General proxy) for the cohort fields.
-      const metricCode = prepMode?.primaryMetric ?? "AFQT";
-      const primaryEstimate = estimatePrimaryMetric(subtestResults, metricCode).score;
+      // Prep-mode primary metric for the cohort fields:
+      //   • Navy/CG rating  → primary_metric_code = the composite FORMULA,
+      //     estimate = its weighted equated proxy (cross-cohort comparable).
+      //   • AFQT / GT / G   → coarse code + its proxy.
+      const rating = prepMode?.ratingComposite ?? null;
+      const metricCode = rating ? rating.code : prepMode?.primaryMetric ?? "AFQT";
+      const primaryEstimate = rating
+        ? estimateRatingComposite(subtestResults, rating.weights)
+        : estimatePrimaryMetric(
+            subtestResults,
+            prepMode?.primaryMetric ?? "AFQT"
+          ).score;
 
       const resultsBySubtest: Record<
         string,

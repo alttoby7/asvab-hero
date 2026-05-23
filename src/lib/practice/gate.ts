@@ -19,10 +19,14 @@ export type GateDecision =
 export const FREE_ADAPTIVE_DAILY_LIMIT = 1;
 
 /** The score-moving mechanism is free; Pro gates scale (more blocks, sims, analytics).
- * Both adaptive variants count as the free daily core: afqt_adaptive (initial
- * ASVAB) + gt_adaptive (AFCT GT/General). */
+ * All adaptive variants count as the free daily core: afqt_adaptive (initial
+ * ASVAB) + gt_adaptive (AFCT GT/General) + rating_adaptive (Navy/CG rating). */
 export const ADAPTIVE_VARIANT = "afqt_adaptive";
-export const ADAPTIVE_VARIANTS = ["afqt_adaptive", "gt_adaptive"] as const;
+export const ADAPTIVE_VARIANTS = [
+  "afqt_adaptive",
+  "gt_adaptive",
+  "rating_adaptive",
+] as const;
 export function isAdaptiveVariant(code: string): boolean {
   return (ADAPTIVE_VARIANTS as readonly string[]).includes(code);
 }
