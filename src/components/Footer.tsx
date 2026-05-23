@@ -129,6 +129,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/programs"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  For JROTC &amp; Schools
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/about"
                   className="text-sm text-text-tertiary hover:text-text-primary no-underline"
                 >
