@@ -4,6 +4,9 @@
  * Real ASVAB score log + retake-eligibility tracker (free core feature).
  * Users record their official test dates + scores; we compute when they're next
  * eligible to retest under the DoD 1-1-6 rule (see src/lib/retake.ts).
+ *
+ * Score entry uses the shared OfficialScoreForm (single validated write path via
+ * rpc_log_official_test). This page owns the list, eligibility, and delete.
  */
 
 import { useState, useEffect, useCallback } from "react";
@@ -11,6 +14,7 @@ import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
 import { ALL_SUBTESTS, type AsvabSubtest } from "@/types";
+import OfficialScoreForm from "@/components/score/OfficialScoreForm";
 import {
   computeRetakeEligibility,
   cTestTriggered,
@@ -29,13 +33,6 @@ interface RealTest {
   note: string | null;
 }
 
-const FORMAT_OPTIONS: { value: string; label: string }[] = [
-  { value: "cat", label: "CAT-ASVAB (computer at MEPS)" },
-  { value: "papt", label: "Paper (P&P)" },
-  { value: "picat", label: "PiCAT (at home)" },
-  { value: "unknown", label: "Not sure" },
-];
-
 const SUBTEST_LABEL: Record<AsvabSubtest, string> = {
   GS: "GS",
   AR: "AR",
@@ -52,15 +49,7 @@ export default function RetakePage() {
   const { session } = useSession();
   const [tests, setTests] = useState<RealTest[]>([]);
   const [loading, setLoading] = useState(true);
-
-  // add-form state
   const [showForm, setShowForm] = useState(false);
-  const [date, setDate] = useState("");
-  const [format, setFormat] = useState("cat");
-  const [afqt, setAfqt] = useState("");
-  const [scores, setScores] = useState<Record<string, string>>({});
-  const [note, setNote] = useState("");
-  const [saving, setSaving] = useState(false);
   const [msg, setMsg] = useState<{ type: "success" | "error"; text: string } | null>(null);
 
   const load = useCallback(async () => {
@@ -80,47 +69,6 @@ export default function RetakePage() {
   useEffect(() => {
     load();
   }, [load]);
-
-  async function handleAdd(e: React.FormEvent) {
-    e.preventDefault();
-    if (!session || !date) return;
-    setSaving(true);
-    setMsg(null);
-
-    const std: Record<string, number> = {};
-    for (const st of ALL_SUBTESTS) {
-      const v = scores[st];
-      if (v !== undefined && v !== "" && !Number.isNaN(Number(v))) {
-        std[st] = Number(v);
-      }
-    }
-
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const sb = getSupabaseBrowserClient() as any;
-    const { error } = await sb.from("real_asvab_tests").insert({
-      user_id: session.user.id,
-      test_date: date,
-      test_format: format || "unknown",
-      afqt: afqt ? Number(afqt) : null,
-      standard_scores: Object.keys(std).length ? std : null,
-      note: note.trim() || null,
-    });
-
-    setSaving(false);
-    if (error) {
-      setMsg({ type: "error", text: error.message });
-      return;
-    }
-    setDate("");
-    setAfqt("");
-    setScores({});
-    setNote("");
-    setFormat("cat");
-    setShowForm(false);
-    setMsg({ type: "success", text: "Test logged." });
-    setTimeout(() => setMsg(null), 3000);
-    load();
-  }
 
   async function handleDelete(id: string) {
     if (!session) return;
@@ -307,120 +255,25 @@ export default function RetakePage() {
           </div>
         )}
 
-        {/* Add form */}
+        {/* Add form (shared component) */}
         {showForm && (
-          <form
-            onSubmit={handleAdd}
-            className="mt-3 rounded-xl border border-navy-border bg-navy p-4"
-          >
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="flex flex-col gap-1.5">
-                <label htmlFor="rt-date" className="text-sm font-medium text-text-secondary">
-                  Test date <span className="text-danger">*</span>
-                </label>
-                <input
-                  id="rt-date"
-                  type="date"
-                  required
-                  max={todayISO()}
-                  value={date}
-                  onChange={(e) => setDate(e.target.value)}
-                  className="rounded-lg border border-navy-border bg-navy-light px-3 py-2 text-sm text-text-primary outline-none focus:border-accent"
-                />
-              </div>
-              <div className="flex flex-col gap-1.5">
-                <label htmlFor="rt-format" className="text-sm font-medium text-text-secondary">
-                  Format
-                </label>
-                <select
-                  id="rt-format"
-                  value={format}
-                  onChange={(e) => setFormat(e.target.value)}
-                  className="rounded-lg border border-navy-border bg-navy-light px-3 py-2 text-sm text-text-primary outline-none focus:border-accent"
-                >
-                  {FORMAT_OPTIONS.map((o) => (
-                    <option key={o.value} value={o.value}>{o.label}</option>
-                  ))}
-                </select>
-              </div>
-              <div className="flex flex-col gap-1.5">
-                <label htmlFor="rt-afqt" className="text-sm font-medium text-text-secondary">
-                  AFQT score (percentile)
-                </label>
-                <input
-                  id="rt-afqt"
-                  type="number"
-                  min={1}
-                  max={99}
-                  value={afqt}
-                  onChange={(e) => setAfqt(e.target.value)}
-                  placeholder="e.g. 65"
-                  className="rounded-lg border border-navy-border bg-navy-light px-3 py-2 text-sm text-text-primary placeholder-text-tertiary outline-none focus:border-accent"
-                />
-              </div>
-            </div>
-
-            <div className="mt-4">
-              <label className="text-sm font-medium text-text-secondary">
-                Subtest standard scores <span className="text-text-tertiary">(optional)</span>
-              </label>
-              <div className="mt-2 grid grid-cols-3 gap-2 sm:grid-cols-5">
-                {ALL_SUBTESTS.map((st) => (
-                  <div key={st} className="flex flex-col gap-1">
-                    <label htmlFor={`rt-${st}`} className="text-[11px] text-text-tertiary">
-                      {SUBTEST_LABEL[st]}
-                    </label>
-                    <input
-                      id={`rt-${st}`}
-                      type="number"
-                      min={1}
-                      max={99}
-                      value={scores[st] ?? ""}
-                      onChange={(e) =>
-                        setScores((s) => ({ ...s, [st]: e.target.value }))
-                      }
-                      className="rounded-md border border-navy-border bg-navy-light px-2 py-1.5 text-sm text-text-primary outline-none focus:border-accent"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="mt-4 flex flex-col gap-1.5">
-              <label htmlFor="rt-note" className="text-sm font-medium text-text-secondary">
-                Note <span className="text-text-tertiary">(optional)</span>
-              </label>
-              <input
-                id="rt-note"
-                type="text"
-                maxLength={200}
-                value={note}
-                onChange={(e) => setNote(e.target.value)}
-                placeholder="e.g. first attempt at MEPS"
-                className="rounded-lg border border-navy-border bg-navy-light px-3 py-2 text-sm text-text-primary placeholder-text-tertiary outline-none focus:border-accent"
-              />
-            </div>
-
-            <div className="mt-4 flex gap-3">
-              <button
-                type="submit"
-                disabled={saving || !date}
-                className="rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-hover disabled:opacity-60"
-              >
-                {saving ? "Saving…" : "Save test"}
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  setShowForm(false);
-                  setMsg(null);
-                }}
-                className="rounded-lg border border-navy-border px-5 py-2.5 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary"
-              >
-                Cancel
-              </button>
-            </div>
-          </form>
+          <div className="mt-3">
+            <OfficialScoreForm
+              context="retake"
+              showExamKind
+              submitLabel="Save test"
+              onSaved={() => {
+                setShowForm(false);
+                setMsg({ type: "success", text: "Test logged." });
+                setTimeout(() => setMsg(null), 3000);
+                load();
+              }}
+              onCancel={() => {
+                setShowForm(false);
+                setMsg(null);
+              }}
+            />
+          </div>
         )}
       </div>
 

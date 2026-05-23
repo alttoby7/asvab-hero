@@ -31,6 +31,8 @@ import PrescriptionCard from "@/components/app/PrescriptionCard";
 import TestimonialPrompt from "@/components/app/TestimonialPrompt";
 import MasteryMap from "@/components/app/MasteryMap";
 import QuickActions from "@/components/app/QuickActions";
+import LogOfficialScoresCard from "@/components/app/LogOfficialScoresCard";
+import ScoreProgressCard from "@/components/app/ScoreProgressCard";
 
 interface ProfileData {
   display_name: string | null;
@@ -44,6 +46,7 @@ interface ProfileData {
   streak_count: number;
   last_challenge_completed_on: string | null;
   onboarding_completed_at: string | null;
+  official_test_status: string | null;
 }
 
 interface AttemptRow {
@@ -180,7 +183,7 @@ export default function AppHomePage() {
         sb
           .from("profiles")
           .select(
-            "display_name,email,branch,test_type,target_test_date,target_test_date_bucket,target_gt_score,study_days_per_week,streak_count,last_challenge_completed_on,onboarding_completed_at"
+            "display_name,email,branch,test_type,target_test_date,target_test_date_bucket,target_gt_score,study_days_per_week,streak_count,last_challenge_completed_on,onboarding_completed_at,official_test_status"
           )
           .eq("user_id", userId)
           .single(),
@@ -430,6 +433,14 @@ export default function AppHomePage() {
       {/* Today's Prescription (single highest-leverage action) */}
       <PrescriptionCard prescription={prescription} />
 
+      {/* Official-score capture — prompts until the user logs real results. */}
+      <LogOfficialScoresCard
+        officialTestStatus={profile.official_test_status}
+        targetTestDate={profile.target_test_date}
+        testType={profile.test_type}
+        onLogged={() => setRefreshKey((k) => k + 1)}
+      />
+
       {/* Your Plan — the routine contract (replaces the old Mission card so the
           page has one hero action above + one "see the whole method" link). */}
       <div className="rounded-2xl border border-navy-border bg-navy-light p-5 sm:p-6">
@@ -472,6 +483,13 @@ export default function AppHomePage() {
         previousMetric={statsPrevious}
         accuracy={accuracy}
         totalQuestions={totalQ}
+      />
+
+      {/* Unified AFQT progress — baseline → practice → official (connect scores) */}
+      <ScoreProgressCard
+        userId={session.user.id}
+        projectedAfqt={null}
+        refreshKey={refreshKey}
       />
 
       {/* Trajectory — band + confidence only (GT Target Mode for Army/Marines AFCT) */}

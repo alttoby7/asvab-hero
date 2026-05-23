@@ -10,6 +10,10 @@ import type { JobCatalogEntry } from "@/lib/trajectory/types";
 import JobPicker from "@/components/app/JobPicker";
 import { getPrepMode, type TestType } from "@/lib/prep-mode";
 import type { Branch as BranchType } from "@/types";
+import OfficialScoreForm, {
+  type ExamKind,
+  type OfficialScoreSaved,
+} from "@/components/score/OfficialScoreForm";
 
 type Branch =
   | "army"
@@ -81,6 +85,25 @@ const TIME_OPTIONS: { value: StudyTime; label: string }[] = [
   { value: "evening", label: "Evening" },
 ];
 
+// Education status (initial-ASVAB only) — GED vs diploma vs college credits
+// materially changes branch-qualification framing. The one extra signup field.
+type EducationStatus =
+  | "high_school_student"
+  | "hs_diploma"
+  | "ged"
+  | "college_15plus"
+  | "not_sure";
+const EDUCATION_OPTIONS: { value: EducationStatus; label: string }[] = [
+  { value: "high_school_student", label: "In high school" },
+  { value: "hs_diploma", label: "HS diploma" },
+  { value: "ged", label: "GED" },
+  { value: "college_15plus", label: "15+ college credits" },
+  { value: "not_sure", label: "Not sure" },
+];
+
+// Whether the user has already sat an official ASVAB. Routes the score panel.
+type OfficialChoice = "not_yet" | "have" | "no_sheet";
+
 function SegmentButton<T extends string>({
   value,
   label,
@@ -129,6 +152,15 @@ export function OnboardingForm() {
     100 | 105 | 107 | 110 | "custom" | null
   >(null);
   const [customTargetGt, setCustomTargetGt] = useState<string>("");
+  // Education (initial-ASVAB only).
+  const [educationStatus, setEducationStatus] = useState<EducationStatus | null>(
+    null
+  );
+  // Official-score capture: has the user already taken the ASVAB?
+  const [officialChoice, setOfficialChoice] = useState<OfficialChoice | null>(
+    null
+  );
+  const [officialSaved, setOfficialSaved] = useState(false);
 
   const [submitting, setSubmitting] = useState(false);
   const [skipping, setSkipping] = useState(false);
@@ -205,7 +237,7 @@ export function OnboardingForm() {
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const sb = getSupabaseBrowserClient() as any;
-    const payload = {
+    const payload: Record<string, unknown> = {
       test_type: testType,
       branch,
       target_test_date: specificDate ? specificDate : null,
@@ -215,8 +247,15 @@ export function OnboardingForm() {
       preferred_study_time: studyTime,
       study_anchor: studyAnchor.trim() || null,
       target_gt_score: isGtMode ? targetGtScore : null,
+      education_status: testType === "initial_asvab" ? educationStatus : null,
       onboarding_completed_at: new Date().toISOString(),
     };
+    // Official-score status: rpc_log_official_test already set 'taken_logged'
+    // when scores were saved in-form, so only set the non-logged states here.
+    if (officialChoice === "no_sheet")
+      payload.official_test_status = "taken_not_logged";
+    else if (officialChoice === "not_yet" && !officialSaved)
+      payload.official_test_status = "not_taken";
 
     const { error: updateError } = await sb
       .from("profiles")
@@ -248,6 +287,10 @@ export function OnboardingForm() {
       study_time: studyTime ?? undefined,
       target_gt_score: isGtMode ? targetGtScore ?? undefined : undefined,
       goal_jobs: goalJobs.length,
+      education_status:
+        testType === "initial_asvab" ? educationStatus ?? undefined : undefined,
+      official_choice: officialChoice ?? undefined,
+      official_saved: officialSaved,
     });
 
     if (isGtMode) {
@@ -280,6 +323,7 @@ export function OnboardingForm() {
       target_test_date_bucket: null,
       self_reported_weakest_subtest: null,
       target_gt_score: null,
+      education_status: null,
       onboarding_completed_at: new Date().toISOString(),
     };
 
@@ -374,11 +418,102 @@ export function OnboardingForm() {
         )}
       </div>
 
-      {/* Q3 — GT target (Army/Marines AFCT only) */}
+      {/* Q3 — Education status (Initial ASVAB only — affects qualification) */}
+      {testType === "initial_asvab" && (
+        <div>
+          <label className="block font-display text-lg font-semibold text-text-primary mb-1">
+            3. What&apos;s your education status?{" "}
+            <span className="text-text-tertiary text-sm font-normal">(optional)</span>
+          </label>
+          <p className="mb-3 text-sm text-text-secondary">
+            A diploma vs. GED changes which branches and AFQT cutoffs apply to
+            you — it helps us give the right advice.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {EDUCATION_OPTIONS.map((opt) => (
+              <SegmentButton
+                key={opt.value}
+                value={opt.value}
+                label={opt.label}
+                selected={educationStatus === opt.value}
+                onClick={setEducationStatus}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Q4 — Already taken the ASVAB? (routing for the score panel below) */}
+      <div>
+        <label className="block font-display text-lg font-semibold text-text-primary mb-1">
+          4.{" "}
+          {testType === "afct"
+            ? "Have you taken the ASVAB or AFCT before?"
+            : "Have you already taken the official ASVAB?"}
+        </label>
+        <p className="mb-3 text-sm text-text-secondary">
+          If you have real scores, we&apos;ll track your progress against them and
+          time your retake correctly.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          <SegmentButton
+            value="not_yet"
+            label="Not yet"
+            selected={officialChoice === "not_yet"}
+            onClick={(v) => {
+              setOfficialChoice(v as OfficialChoice);
+              setOfficialSaved(false);
+            }}
+          />
+          <SegmentButton
+            value="have"
+            label="Yes — I have my scores"
+            selected={officialChoice === "have"}
+            onClick={(v) => setOfficialChoice(v as OfficialChoice)}
+          />
+          <SegmentButton
+            value="no_sheet"
+            label="Yes, but no score sheet handy"
+            selected={officialChoice === "no_sheet"}
+            onClick={(v) => {
+              setOfficialChoice(v as OfficialChoice);
+              setOfficialSaved(false);
+            }}
+          />
+        </div>
+        {officialChoice === "have" && officialSaved && (
+          <p className="mt-3 text-sm text-success">
+            ✓ Scores saved. We&apos;ll use them as your starting point.
+          </p>
+        )}
+        {officialChoice === "have" && !officialSaved && (
+          <div className="mt-4">
+            <OfficialScoreForm
+              context="onboarding"
+              defaultExamKind={
+                (testType === "afct" ? "afct" : "initial_asvab") as ExamKind
+              }
+              submitLabel="Save my scores"
+              onSaved={(saved: OfficialScoreSaved) => {
+                setOfficialSaved(true);
+                // Prefill weakest subtest from the entered scores (overridable).
+                if (
+                  saved.weakestSubtest &&
+                  SUBTEST_OPTIONS.some((o) => o.value === saved.weakestSubtest)
+                ) {
+                  setWeakest(saved.weakestSubtest as WeakestSubtest);
+                }
+              }}
+            />
+          </div>
+        )}
+      </div>
+
+      {/* Q5 — GT target (Army/Marines AFCT only) */}
       {isGtMode && (
         <div>
           <label className="block font-display text-lg font-semibold text-text-primary mb-1">
-            3. What GT score are you aiming for?
+            5. What GT score are you aiming for?
           </label>
           <p className="mb-3 text-sm text-text-secondary">
             Army and Marine GT is AR + WK + PC. Pick the score you need for your
@@ -425,10 +560,10 @@ export function OnboardingForm() {
         </div>
       )}
 
-      {/* Q4 — Test date */}
+      {/* Q6 — Test date */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-3">
-          4. When are you planning to take the test?
+          6. When are you planning to take the test?
         </label>
         {!showDatePicker ? (
           <>
@@ -472,10 +607,10 @@ export function OnboardingForm() {
         )}
       </div>
 
-      {/* Q5 — Weakest subtest */}
+      {/* Q7 — Weakest subtest */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-3">
-          5. Which subtest feels weakest right now?
+          7. Which subtest feels weakest right now?
         </label>
         <div className="flex flex-wrap gap-2">
           {SUBTEST_OPTIONS.map((opt) => (
@@ -490,11 +625,11 @@ export function OnboardingForm() {
         </div>
       </div>
 
-      {/* Q4 — Optional goal jobs (after branch is chosen) */}
+      {/* Q8 — Optional goal jobs (after branch is chosen) */}
       {branch && branch !== "undecided" && (
         <div>
           <label className="block font-display text-lg font-semibold text-text-primary mb-1">
-            6. Any target jobs? <span className="text-text-tertiary text-sm font-normal">(optional)</span>
+            8. Any target jobs? <span className="text-text-tertiary text-sm font-normal">(optional)</span>
           </label>
           <p className="mb-3 text-sm text-text-secondary">
             Pick up to 3. We&apos;ll track how close you are to each — as a
@@ -543,10 +678,10 @@ export function OnboardingForm() {
         </div>
       )}
 
-      {/* Q5 — Implementation intention (days + time + anchor) */}
+      {/* Q9 — Implementation intention (days + time + anchor) */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-1">
-          7. How often will you study?
+          9. How often will you study?
         </label>
         <p className="mb-3 text-sm text-text-secondary">
           Showing up on your study days beats cramming — it&apos;s the biggest
