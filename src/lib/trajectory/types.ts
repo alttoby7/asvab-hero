@@ -157,10 +157,39 @@ export interface TargetJobGap {
   is_primary: boolean;
 }
 
+// ── Primary metric (S5: AFCT prep differentiation) ───────────────────
+
+/**
+ * The metric the user is actually prepping for, resolved server-side from
+ * profiles.test_type+branch. Initial-ASVAB (and AFCT on navy/coast_guard until
+ * S7) → AFQT, banded. AFCT on a VE+AR branch → GT (Army/Marines) or General/G
+ * (AF/SF) as an equated PROXY — `is_proxy=true`, value-based, NO qualification
+ * tier implied (the card must frame it as a practice proxy).
+ */
+export type PrimaryMetric =
+  | {
+      code: "AFQT";
+      label: string;
+      is_proxy: false;
+      current_band_key: AfqtBandKey | null;
+      current_band_label: string | null;
+      projected_band_key: AfqtBandKey | null;
+      projected_band_label: string | null;
+    }
+  | {
+      code: "GT" | "G";
+      label: string;
+      is_proxy: true;
+      current_value: number | null;
+      projected_value: number | null;
+    };
+
 // ── Top-level home payload (rpc_get_home_trajectory) ─────────────────
 
 export interface HomeTrajectory {
   algorithm_version: string | null;
+  /** Added in migration 0034; older snapshots/clients may omit it. */
+  primary_metric?: PrimaryMetric | null;
   current_standing: CurrentStanding;
   projected_test_day: ProjectedTestDay | null;
   target_jobs: TargetJobGap[];

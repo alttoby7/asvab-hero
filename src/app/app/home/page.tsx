@@ -359,6 +359,7 @@ export default function AppHomePage() {
         <TrajectoryCard
           currentStanding={standing}
           projectedTestDay={trajectory?.projected_test_day ?? null}
+          primaryMetric={trajectory?.primary_metric ?? null}
         />
       )}
 
