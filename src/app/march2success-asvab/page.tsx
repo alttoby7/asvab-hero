@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "March2Success ASVAB: Is the Free Prep Enough? | ASVAB Hero",
+  title: "March2Success ASVAB: Is the Free Prep Enough?",
   description:
     "March2Success is the Army's free ASVAB prep. See what you actually get, whether it raises your score, how to use it, and the best free way to pair it.",
   alternates: {
