@@ -182,11 +182,18 @@ Deno.serve(async (req) => {
     const ok = await send(p.email, subject, html);
     if (ok) {
       sent++;
+      const todayStr = new Date().toISOString().slice(0, 10);
       await admin.from("test_date_emails_sent").insert({
         user_id: p.user_id,
         email_key: key,
         test_date: p.target_test_date,
       });
+      // Stamp the shared engagement cap so same-day nudges (mistake-reminders)
+      // yield. Test-date emails are sparse milestones, so they always send.
+      await admin
+        .from("profiles")
+        .update({ last_engagement_email_on: todayStr })
+        .eq("user_id", p.user_id);
     } else {
       failed++;
     }

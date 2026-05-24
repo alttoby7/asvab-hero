@@ -20,9 +20,21 @@ const CRON_SECRET = Deno.env.get("MISTAKE_REMINDERS_SECRET");
 const SITE_URL = "https://asvabhero.com";
 const FROM = "Trish at ASVAB Hero <info@asvabhero.com>";
 
+// Spaced + forgiving: at most one review nudge every few days, and never on a
+// day the user already got an engagement email from us. Daily nagging erodes
+// adherence (and the static "N due" count read as guilt, not help).
+const MIN_GAP_DAYS = 3;
+
 const admin = createClient(SUPABASE_URL, SERVICE_KEY, {
   auth: { persistSession: false, autoRefreshToken: false },
 });
+
+/** Whole days between two YYYY-MM-DD date strings (a - b). */
+function daysBetween(a: string, b: string): number {
+  return Math.round(
+    (Date.parse(a + "T00:00:00Z") - Date.parse(b + "T00:00:00Z")) / 86400000,
+  );
+}
 
 function json(body: unknown, status = 200): Response {
   return new Response(JSON.stringify(body), {
@@ -31,34 +43,32 @@ function json(body: unknown, status = 200): Response {
   });
 }
 
-function reminderHtml(name: string | null, count: number): string {
+function reminderHtml(name: string | null): string {
   const hi = name ? `Hi ${name},` : "Hi,";
-  const noun = count === 1 ? "question you missed is" : "questions you missed are";
+  // Forgiving + if-then (implementation intention), framed as one short rep —
+  // no scary static "N due" count. The mechanism is retrieval, not guilt.
   return `
   <div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:520px;margin:0 auto;color:#0a1628">
     <p>${hi}</p>
-    <p><strong>${count} ${noun} ready to review.</strong></p>
-    <p>We bring missed questions back right before you'd forget them — retrieving an
-    answer from memory (and getting corrected when you slip) is the highest-evidence
-    way to make it stick for test day. A few minutes now pays off on the real ASVAB.</p>
+    <p><strong>A quick review is ready when you are.</strong></p>
+    <p>A few of the questions you've missed are due to come back — and re-answering
+    them from memory is the single highest-evidence thing you can do for test day.
+    This is a 10-minute rep, not a backlog to clear.</p>
+    <p><strong>Try this:</strong> right after you sit down tonight, do one short review block. That's it.</p>
     <p style="text-align:center;margin:28px 0">
       <a href="${SITE_URL}/app/mistakes"
          style="background:#f97316;color:#fff;text-decoration:none;padding:12px 28px;border-radius:10px;font-weight:600;display:inline-block">
-        Review ${count} ${count === 1 ? "mistake" : "mistakes"}
+        Start a 10-minute review
       </a>
     </p>
     <p style="color:#64748b;font-size:12px">
-      You're getting this because you have due reviews in your ASVAB Hero Mistake Bank.
-      Manage email preferences in your <a href="${SITE_URL}/account/settings" style="color:#64748b">account settings</a>.
+      You're getting this because you have reviews due in your ASVAB Hero Mistake Bank.
+      We keep these spaced out. Manage email preferences in your <a href="${SITE_URL}/account/settings" style="color:#64748b">account settings</a>.
     </p>
   </div>`;
 }
 
-async function sendReminder(
-  email: string,
-  name: string | null,
-  count: number,
-): Promise<boolean> {
+async function sendReminder(email: string, name: string | null): Promise<boolean> {
   try {
     const resp = await fetch("https://api.resend.com/emails", {
       method: "POST",
@@ -69,8 +79,8 @@ async function sendReminder(
       body: JSON.stringify({
         from: FROM,
         to: email,
-        subject: `${count} ASVAB ${count === 1 ? "question" : "questions"} ready to review`,
-        html: reminderHtml(name, count),
+        subject: "Your next ASVAB review is ready",
+        html: reminderHtml(name),
       }),
     });
     return resp.ok;
@@ -105,7 +115,9 @@ Deno.serve(async (req) => {
 
   const { data: profiles, error: pErr } = await admin
     .from("profiles")
-    .select("user_id,email,display_name,last_mistake_reminder_on,daily_email_opt_in")
+    .select(
+      "user_id,email,display_name,daily_email_opt_in,last_engagement_email_on",
+    )
     .in("user_id", userIds);
   if (pErr) return json({ error: pErr.message }, 500);
 
@@ -119,17 +131,28 @@ Deno.serve(async (req) => {
       skipped++;
       continue;
     }
-    // Idempotent: one reminder per user per day.
-    if (!p.email || count === 0 || p.last_mistake_reminder_on === today) {
+    if (!p.email || count === 0) {
       skipped++;
       continue;
     }
-    const ok = await sendReminder(p.email, p.display_name, count);
+    // Spaced + cross-sender cap: skip if ANY engagement email went out within
+    // MIN_GAP_DAYS (this is a low-priority nudge — it yields to everything).
+    if (
+      p.last_engagement_email_on &&
+      daysBetween(today, p.last_engagement_email_on) < MIN_GAP_DAYS
+    ) {
+      skipped++;
+      continue;
+    }
+    const ok = await sendReminder(p.email, p.display_name);
     if (ok) {
       sent++;
       await admin
         .from("profiles")
-        .update({ last_mistake_reminder_on: today })
+        .update({
+          last_mistake_reminder_on: today,
+          last_engagement_email_on: today,
+        })
         .eq("user_id", p.user_id);
     } else {
       failed++;
