@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Calculator from "@/components/Calculator";
+import JobCatalog from "@/components/JobCatalog";
 import JsonLd from "@/components/JsonLd";
 import type { MilitaryJob } from "@/types";
 
@@ -87,6 +88,11 @@ export default function CalculatorPage() {
       <Suspense>
         <Calculator allJobs={allJobs} />
       </Suspense>
+
+      {/* Server-rendered full job catalog — present in the static HTML for search
+         + AI crawlers regardless of calculator state (the interactive results
+         above only appear once all 9 subtests are entered). */}
+      <JobCatalog jobs={allJobs} />
     </div>
   );
 }
