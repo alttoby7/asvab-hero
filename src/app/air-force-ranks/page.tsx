@@ -7,9 +7,9 @@ import PromotionPathPlanner from "@/components/ranks/PromotionPathPlanner";
 import BranchJobUnlockExplorer from "@/components/ranks/BranchJobUnlockExplorer";
 
 export const metadata: Metadata = {
-  title: "Air Force Ranks: Complete Guide to Every Grade (2026)",
+  title: "Air Force Ranks and Pay Grades (2026): Enlisted, Officer, Abbreviations",
   description:
-    "All 20 Air Force ranks explained — enlisted E-1 to E-9 and officer O-1 to O-10 with 2026 pay, insignia, and promotion timelines. See which jobs your ASVAB score unlocks.",
+    "Air Force ranks in order: 9 enlisted grades (E-1 to E-9) and 10 officer grades (O-1 to O-10) with 2026 pay, abbreviations, and insignia, plus the 2024 warrant officer restart. See which jobs your ASVAB score unlocks.",
   alternates: {
     canonical: "https://asvabhero.com/air-force-ranks",
   },
@@ -22,9 +22,9 @@ export default function AirForceRanksPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "Article",
-          headline: "Air Force Ranks: Every Grade from Airman Basic to General",
+          headline: "Air Force Ranks and Pay Grades: Enlisted, Officer, and Abbreviations (2026)",
           description:
-            "Complete guide to all 20 Air Force ranks — enlisted E-1 through E-9 and officer O-1 through O-10, with 2026 pay, insignia, promotion timelines, and ASVAB score connections.",
+            "Air Force ranks in order — 9 enlisted grades (E-1 through E-9) and 10 officer grades (O-1 through O-10), with 2026 pay, abbreviations, insignia, promotion timelines, and the 2024 warrant officer restart.",
           url: "https://asvabhero.com/air-force-ranks",
           author: {
             "@type": "Person",
@@ -37,7 +37,28 @@ export default function AirForceRanksPage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-03-17",
-          dateModified: "2026-03-17",
+          dateModified: "2026-05-24",
+        }}
+      />
+
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "ASVAB Hero",
+              item: "https://asvabhero.com",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Air Force Ranks and Pay Grades",
+              item: "https://asvabhero.com/air-force-ranks",
+            },
+          ],
         }}
       />
 
@@ -67,7 +88,7 @@ export default function AirForceRanksPage() {
               name: "Does the Air Force have warrant officers?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "No. The Air Force eliminated its warrant officer program in 1959 when E-8 and E-9 grades were created. The last active-duty Air Force warrant officer retired in 1980. As of 2026, no warrant officer grade exists in the active force.",
+                text: "Yes, on a limited basis. The Air Force ended its original warrant officer program in 1959 when E-8 and E-9 grades were created, but it restarted warrant officer accessions in 2024, with the first new Air Force warrant officers graduating December 6, 2024. The program currently targets technical fields such as cyber and IT. Enlisted (E-1 through E-9) and officer (O-1 through O-10) remain the two primary tracks most applicants compare.",
               },
             },
             {
@@ -109,14 +130,40 @@ export default function AirForceRanksPage() {
       <article className="prose-asvab">
         {/* ─── INTRO ─── */}
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          Air Force Ranks: Every Grade from Airman Basic to General
+          Air Force Ranks and Pay Grades: Enlisted, Officer, and Abbreviations (2026)
         </h1>
+
+        {/* Answer unit */}
+        <p className="mt-6 text-lg text-text-secondary">
+          As of May 24, 2026, the main Air Force pay-grade ladder most applicants need is 9 enlisted ranks, E-1 through E-9, and 10 officer ranks, O-1 through O-10. Read the structure by pay grade, abbreviation, and monthly base pay first. The Air Force also restarted limited warrant officer accessions in 2024, but enlisted and officer remain the two primary tracks most applicants compare.
+        </p>
+
+        <p className="mt-2 text-xs text-text-tertiary">
+          Last verified: May 24, 2026. Pay figures are 2026 base pay at the lowest applicable step, per the{" "}
+          <a
+            href="https://www.airforce.com/pay-and-benefits/pay-calculator"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent hover:text-accent-hover"
+          >
+            Air Force pay calculator
+          </a>
+          .
+        </p>
+
+        {/* Jump links */}
+        <nav className="mt-5 flex flex-wrap items-center gap-2" aria-label="On this page">
+          <span className="text-xs font-bold uppercase tracking-wider text-text-tertiary">Jump to:</span>
+          <a href="#enlisted-ranks" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Enlisted ranks</a>
+          <a href="#officer-ranks" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Officer ranks</a>
+          <a href="#rank-abbreviations" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Rank abbreviations</a>
+        </nav>
 
         {/* Stats row */}
         <div className="mt-6 flex flex-wrap gap-2">
           {[
-            { label: "Total Ranks", value: "20" },
-            { label: "Warrant Officers", value: "None" },
+            { label: "Enlisted Ranks", value: "9" },
+            { label: "Officer Ranks", value: "10" },
             { label: "Min AFQT", value: "36" },
             { label: "Active Duty", value: "330K" },
           ].map((stat) => (
@@ -127,28 +174,22 @@ export default function AirForceRanksPage() {
           ))}
         </div>
 
-        <p className="mt-4 text-text-secondary">
-          The Air Force is the only branch of the U.S. military with no warrant officers. That single gap reshapes the entire <strong>air force ranks</strong> structure, pushing technical expertise into the enlisted tiers rather than a separate officer track. Every other branch has a middle layer between NCOs and commissioned officers. The Air Force doesn&apos;t.
-        </p>
-        <p className="text-text-secondary">
-          This guide covers all 20 ranks: enlisted E-1 through E-9, officer O-1 through O-10, the Chief Master Sergeant of the Air Force, and how your ASVAB scores connect to which Air Force jobs you can actually get. Pay figures are 2026 base pay at the lowest applicable step.
-        </p>
-        <p className="text-text-secondary">
-          Whether you&apos;re studying for the ASVAB, weighing enlisted vs. officer paths, or comparing the Air Force to other branches, this is the reference that replaces the five tabs you have open right now.
-        </p>
-
-        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Compare pay grades across all 6 branches →</p>
-          <RankEquivalencyExplorer />
-        </div>
-
-        {/* ─── ENLISTED RANKS ─── */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        {/* ─── ENLISTED RANKS (static answer table, placed first) ─── */}
+        <h2 id="enlisted-ranks" className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary">
           Air Force Enlisted Ranks: E-1 through E-9
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Nine enlisted grades split into three tiers — each with a distinct purpose and a different relationship to leadership.
+          Nine enlisted grades split into three tiers — each with a distinct purpose and a different relationship to leadership. Pay figures below are 2026 base pay at the lowest applicable step (
+          <a
+            href="https://www.airforce.com/pay-and-benefits/pay-calculator"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent hover:text-accent-hover"
+          >
+            Air Force pay calculator
+          </a>
+          ).
         </p>
 
         <div className="mt-4 mb-6 grid gap-3 sm:grid-cols-3">
@@ -230,11 +271,6 @@ export default function AirForceRanksPage() {
         <p className="text-text-secondary">
           The pay jump from E-7 to E-8 ($3,932 to $5,657) is the largest single increase in the enlisted structure, reflecting both the responsibility and the extreme selectivity of making Senior Master Sergeant.
         </p>
-
-        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Estimate your starting rank based on your background →</p>
-          <StartingRankEstimator />
-        </div>
 
         {/* ─── STARTING RANK ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -362,7 +398,16 @@ export default function AirForceRanksPage() {
           The CMSAF advises the Air Force Chief of Staff and the Secretary of the Air Force on everything affecting the enlisted force: readiness, morale, welfare, professional development, and utilization. They travel to bases worldwide, represent enlisted airmen to senior leadership, and testify before Congress. The role carries the same E-9 pay grade as any other Chief Master Sergeant, but the authority and visibility are unmatched in the enlisted structure.
         </p>
         <p className="text-text-secondary">
-          The current CMSAF is David R. Wolfe, the 21st person to hold the position. He was sworn in on December 8, 2025. Wolfe is a former Security Forces airman who replaced David Flosi, who stepped down after his wife died suddenly in October 2025.
+          The current CMSAF is David R. Wolfe, the 21st person to hold the position. He was sworn in on December 8, 2025. Wolfe is a former Security Forces airman who replaced David Flosi, who stepped down after his wife died suddenly in October 2025. You can confirm the sitting CMSAF on the{" "}
+          <a
+            href="https://www.af.mil/About-Us/Air-Force-Senior-Leaders/CMSAF/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent hover:text-accent-hover"
+          >
+            official Air Force CMSAF page
+          </a>
+          .
         </p>
         <p className="text-text-secondary">
           The position was created in 1967. The first holder was CMSgt Paul Airey, a World War II and Korean War veteran who spent time as a prisoner of war. Since then, each CMSAF has served roughly 3-4 years, shaping enlisted policy during their tenure. The role has no fixed term, but tradition and turnover aligned with Chief of Staff changes have established that cycle.
@@ -373,13 +418,22 @@ export default function AirForceRanksPage() {
           <p className="mt-1 text-sm text-text-secondary">Sworn in December 8, 2025. Exactly one person holds this position at any time — same E-9 pay grade, unmatched authority in the enlisted force.</p>
         </aside>
 
-        {/* ─── OFFICER RANKS ─── */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        {/* ─── OFFICER RANKS (static answer table) ─── */}
+        <h2 id="officer-ranks" className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary">
           Air Force Officer Ranks: O-1 through O-10
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Ten officer grades in three tiers. Company grade officers (O-1 through O-3) lead flights and small teams. Field grade officers (O-4 through O-6) run squadrons, groups, and wings. General officers (O-7 through O-10) run major commands and the Air Force itself.
+          Ten officer grades in three tiers. Company grade officers (O-1 through O-3) lead flights and small teams. Field grade officers (O-4 through O-6) run squadrons, groups, and wings. General officers (O-7 through O-10) run major commands and the Air Force itself. Pay figures are 2026 base pay at the lowest applicable step (
+          <a
+            href="https://www.airforce.com/pay-and-benefits/pay-calculator"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent hover:text-accent-hover"
+          >
+            Air Force pay calculator
+          </a>
+          ).
         </p>
 
         <div className="my-4 overflow-x-auto">
@@ -441,11 +495,6 @@ export default function AirForceRanksPage() {
         <p className="text-text-secondary">
           One critical distinction: officers do NOT take the ASVAB. They take the Air Force Officer Qualifying Test (AFOQT). If someone tells you they need a certain ASVAB score to become an Air Force officer, they&apos;re confused about how commissioning works.
         </p>
-
-        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Map your promotion timeline from enlistment to retirement →</p>
-          <PromotionPathPlanner />
-        </div>
 
         {/* ─── ENLISTED VS OFFICER ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -520,28 +569,31 @@ export default function AirForceRanksPage() {
 
         {/* ─── WARRANT OFFICERS ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          Why the Air Force Has No Warrant Officers
+          Air Force Warrant Officers: Restarted in 2024
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          The Army, Navy, and Marine Corps all have warrant officers. The Air Force doesn&apos;t.
+          For most of the last half-century, the Air Force had no warrant officers. In 1959, Congress created the E-8 and E-9 pay grades across all branches, and the Air Force concluded those new senior enlisted grades covered the technical expertise warrant officers were meant to fill. It wound down its warrant officer program, and the last active-duty Air Force warrant officer, CWO4 James H. Long, retired in 1980.
         </p>
         <p className="text-text-secondary">
-          In 1959, Congress created the E-8 and E-9 pay grades across all branches. Air Force leadership looked at these new senior enlisted grades and concluded they covered the same technical expertise that warrant officers were supposed to fill. Rather than maintain a parallel track, the Air Force ended its warrant officer program that same year.
+          That changed in 2024. The Air Force restarted limited warrant officer accessions, and the{" "}
+          <a
+            href="https://www.af.mil/News/Article-Display/Article/3987738/first-air-force-warrant-officers-graduate-prepare-to-enter-force/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-accent hover:text-accent-hover"
+          >
+            first new Air Force warrant officers graduated on December 6, 2024
+          </a>
+          . The revived program targets critical technical fields, particularly cyber and information technology, rather than reintroducing warrant officers across every career field.
         </p>
         <p className="text-text-secondary">
-          The transition took two decades. The last active-duty Air Force warrant officer, CWO4 James H. Long, retired in 1980. Since then, the Air Force has operated without that middle tier entirely.
-        </p>
-        <p className="text-text-secondary">
-          What this means practically: technical expertise is rewarded within the SNCO track (E-7 through E-9) rather than a separate warrant track. A highly skilled avionics specialist or cyber operator becomes a Chief Master Sergeant, not a Chief Warrant Officer. The technical path and the leadership path are the same path.
-        </p>
-        <p className="text-text-secondary">
-          In April 2024, the Secretary of the Air Force announced a study into potentially reintroducing warrant officers to fill critical technical gaps, particularly in cyber and IT. As of 2026, no warrant officer grade exists in the active force, and the study has not produced a formal recommendation.
+          For applicants comparing paths today, the practical picture is still simple: enlisted (E-1 through E-9) and officer (O-1 through O-10) remain the two primary tracks, and they are what the rest of this guide focuses on. The warrant officer track is new, small, and currently scoped to specific technical specialties. Most of the Air Force&apos;s technical expertise is still developed and rewarded within the senior enlisted (SNCO) tier, E-7 through E-9.
         </p>
 
         <aside className="my-6 rounded-xl border-l-4 border-accent bg-navy-lighter px-5 py-4">
-          <p className="text-sm font-semibold text-text-primary">Air Force Warrant Officers: A Brief History</p>
-          <p className="mt-1 text-sm text-text-secondary">Program abolished 1959 when E-8/E-9 grades were created. Last active-duty warrant officer (CWO4 James H. Long) retired 1980. As of 2026, no warrant officer grade exists in the Air Force.</p>
+          <p className="text-sm font-semibold text-text-primary">Air Force Warrant Officers: Status in 2026</p>
+          <p className="mt-1 text-sm text-text-secondary">The original program wound down by 1980, but the Air Force restarted limited warrant officer accessions in 2024 (first cohort graduated December 6, 2024), focused on cyber and IT. Enlisted and officer remain the two primary tracks most applicants compare.</p>
         </aside>
 
         {/* ─── ASVAB SCORES ─── */}
@@ -622,8 +674,8 @@ export default function AirForceRanksPage() {
           to see which Air Force jobs your current or projected scores would qualify you for.
         </p>
 
-        {/* ─── ABBREVIATIONS ─── */}
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        {/* ─── ABBREVIATIONS (static answer table) ─── */}
+        <h2 id="rank-abbreviations" className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary">
           Air Force Rank Abbreviations: Quick Reference
         </h2>
 
@@ -727,11 +779,35 @@ export default function AirForceRanksPage() {
           The biggest structural difference is where NCO authority begins. In the Air Force, NCO status starts at E-5 (Staff Sergeant). In the Army and Marines, NCO status starts at E-4 (Corporal). An Air Force Senior Airman at E-4 is not an NCO and does not hold supervisory authority. An Army Corporal at the same pay grade does. This matters if you&apos;re comparing career timelines across branches. Air Force members wait longer before they&apos;re formally in a leadership role.
         </p>
         <p className="text-text-secondary">
-          The other major difference: warrant officers exist in the Army (W-1 through W-5), Navy (W-2 through W-5), and Marines (W-2 through W-5). They do not exist in the Air Force or Space Force. The Army alone has over 25,000 warrant officers filling technical roles that the Air Force handles through its SNCO track. If you&apos;re a technical specialist who wants a warrant officer career, the Air Force isn&apos;t the branch for that path.
+          The other major difference is in the warrant officer tier. The Army (W-1 through W-5), Navy (W-2 through W-5), and Marines (W-2 through W-5) all maintain large, established warrant officer corps; the Army alone has over 25,000 warrant officers. The Air Force ran without warrant officers for decades and only restarted limited accessions in 2024, currently scoped to a handful of technical fields like cyber and IT. So while warrant officers now exist in the Air Force again, the corps is new and small, and most Air Force technical expertise is still handled through the SNCO track.
         </p>
         <p className="text-text-secondary">
           Base pay is identical across branches at the same pay grade and years of service. An Air Force E-7 with 10 years makes exactly what a Marine E-7 with 10 years makes. The differences show up in special duty pay, bonuses, and allowances tied to specific assignments.
         </p>
+
+        {/* ─── INTERACTIVE TOOLS (placed below all static answer content) ─── */}
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          Interactive Air Force Rank Tools
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          Now that the static reference is covered, use these tools to apply it to your own situation — compare grades across branches, estimate your starting rank, map a promotion timeline, and see which jobs your ASVAB score unlocks.
+        </p>
+
+        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Compare pay grades across all 6 branches →</p>
+          <RankEquivalencyExplorer />
+        </div>
+
+        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Estimate your starting rank based on your background →</p>
+          <StartingRankEstimator />
+        </div>
+
+        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Map your promotion timeline from enlistment to retirement →</p>
+          <PromotionPathPlanner />
+        </div>
 
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
           <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — See which jobs your ASVAB score unlocks across every branch →</p>
@@ -741,6 +817,10 @@ export default function AirForceRanksPage() {
         {/* ─── CROSS-LINKS ─── */}
         <div className="mt-6 flex flex-wrap items-center gap-2 rounded-xl border border-navy-border bg-navy-light px-4 py-3">
           <span className="text-xs font-bold uppercase tracking-wider text-text-tertiary">Also explore:</span>
+          <Link href="/air-force-afqt-calculator" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Air Force AFQT Calculator</Link>
+          <Link href="/air-force-mage-score" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Air Force MAGE Score</Link>
+          <Link href="/air-force-asvab-calculator" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Air Force ASVAB Calculator</Link>
+          <Link href="/air-force-jobs" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Air Force Jobs</Link>
           <Link href="/army-ranks" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Army Ranks</Link>
           <Link href="/navy-ranks" className="rounded-md border border-navy-border px-3 py-1 text-xs font-semibold text-text-secondary transition-colors hover:border-accent/40 hover:text-accent no-underline">Navy Ranks</Link>
         </div>
@@ -780,7 +860,7 @@ export default function AirForceRanksPage() {
             },
             {
               q: "Does the Air Force have warrant officers?",
-              a: "No. The Air Force eliminated its warrant officer program in 1959 when E-8 and E-9 grades were created. The last active-duty Air Force warrant officer retired in 1980. A 2024 study into reintroducing them has not produced a formal recommendation. As of 2026, no warrant officer grade exists in the active force.",
+              a: "Yes, on a limited basis. The Air Force ended its original warrant officer program by 1980, but it restarted warrant officer accessions in 2024, with the first new Air Force warrant officers graduating December 6, 2024. The revived program targets technical fields such as cyber and IT. Enlisted (E-1 to E-9) and officer (O-1 to O-10) remain the two primary tracks most applicants compare.",
             },
             {
               q: "What is the highest enlisted rank in the Air Force?",

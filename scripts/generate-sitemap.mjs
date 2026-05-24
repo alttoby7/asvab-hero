@@ -85,6 +85,12 @@ const pages = [
   { path: "/coast-guard-asvab-score", priority: "0.85", changefreq: "monthly" },
   { path: "/march2success-asvab", priority: "0.8", changefreq: "monthly" },
   { path: "/programs", priority: "0.7", changefreq: "monthly" },
+  { path: "/air-force-jobs", priority: "0.85", changefreq: "monthly" },
+  { path: "/air-force-mage-score", priority: "0.8", changefreq: "monthly" },
+  { path: "/air-force-security-forces-asvab-score", priority: "0.7", changefreq: "monthly" },
+  { path: "/air-force-loadmaster-asvab-score", priority: "0.7", changefreq: "monthly" },
+  { path: "/air-force-pararescue-asvab-score", priority: "0.7", changefreq: "monthly" },
+  { path: "/air-force-pilot-asvab-requirements", priority: "0.7", changefreq: "monthly" },
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>

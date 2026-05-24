@@ -94,11 +94,25 @@ export default function AirForceCalculatorPage() {
         <p className="mt-3 text-text-secondary">
           Every Air Force AFSC publishes its minimum in one or more of these
           four composites. Raise the subtests feeding the composite you need —
-          not just your AFQT.
+          not just your AFQT. For the full breakdown, see the{" "}
+          <Link
+            href="/air-force-mage-score"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            MAGE score guide
+          </Link>{" "}
+          and the{" "}
+          <Link
+            href="/air-force-jobs"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            Air Force jobs list
+          </Link>
+          .
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           {[
-            ["M — Mechanical", "MC + GS + 2×AS"],
+            ["M — Mechanical", "AR + 2×VE + MC + AS"],
             ["A — Administrative", "VE + MK"],
             ["G — General", "VE + AR"],
             ["E — Electronics", "AR + MK + EI + GS"],
@@ -112,9 +126,10 @@ export default function AirForceCalculatorPage() {
           ))}
         </div>
         <p className="mt-4 text-xs text-text-tertiary">
-          VE = 2×WK + PC. MAGE scores are reported as percentiles (not
-          standard scores like Army line scores). A G-55 is a 55th-percentile
-          General score.
+          VE is an optimally weighted Word Knowledge + Paragraph Comprehension
+          composite, not a plain WK + PC sum. MAGE scores are reported as
+          percentiles (not standard scores like Army line scores). A G-55 is a
+          55th-percentile General score. Last verified: May 24, 2026.
         </p>
       </section>
 
@@ -157,8 +172,12 @@ export default function AirForceCalculatorPage() {
         </div>
         <p className="mt-4 text-sm text-text-secondary">
           The calculator above checks every AFSC we have data for — not just
-          these. Use it to see which ones you qualify for and which ones are
-          within reach with a retake.
+          these. Treat the results as published minimums and an estimate of
+          where you stand, not a guarantee of qualification: exact MAGE
+          percentiles can&apos;t be reliably derived from a rounded score
+          report, so always verify your actual qualifications with a recruiter.
+          Use it to see which fields are within reach and which would need a
+          retake.
         </p>
       </section>
 
@@ -170,7 +189,7 @@ export default function AirForceCalculatorPage() {
           {[
             {
               q: "What's the minimum ASVAB score to join the Air Force?",
-              a: "31 AFQT with a high school diploma, 65 with a GED. But most Air Force AFSCs require significantly higher MAGE scores, so hitting just the AFQT minimum typically leaves you with few job options.",
+              a: "The baseline AFQT floor is 36 with a high school diploma (per DAFMAN 36-2032), and Air Force career/FAQ pages quote 65 for GED/non-graduate paths. But most Air Force AFSCs require significantly higher MAGE scores, so hitting just the AFQT minimum typically leaves you with few job options.",
             },
             {
               q: "What's the difference between AFQT and MAGE scores?",

@@ -21,6 +21,26 @@ export default function AirForceAfqtCalculatorPage() {
       <JsonLd
         data={{
           "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://asvabhero.com",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Air Force AFQT Calculator",
+              item: "https://asvabhero.com/air-force-afqt-calculator",
+            },
+          ],
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
           "@type": "WebApplication",
           name: "Air Force AFQT Calculator",
           url: "https://asvabhero.com/air-force-afqt-calculator",
@@ -105,6 +125,98 @@ export default function AirForceAfqtCalculatorPage() {
           stand before MEPS.
         </p>
       </VerifiedBlock>
+
+      {/* Answer unit: Air Force minimum AFQT score 2026 */}
+      <section className="mt-8 rounded-xl border border-accent/30 bg-navy-light p-6">
+        <h2 className="font-display text-xl font-bold text-text-primary">
+          Air Force Minimum AFQT Score (2026)
+        </h2>
+        <p className="mt-3 text-text-secondary">
+          As of May 24, 2026, the baseline AFQT minimum for the active-duty Air
+          Force (RegAF) and Space Force (USSF) is{" "}
+          <strong className="text-text-primary">36</strong> for tier-one
+          applicants, meaning those holding a standard high school diploma or an
+          equivalent tier-one credential. This floor comes from{" "}
+          <strong className="text-text-primary">
+            DAFMAN 36-2032, Military Recruiting and Accessions
+          </strong>{" "}
+          (certified current December 9, 2025).
+        </p>
+        <p className="mt-3 text-text-secondary">
+          The picture is not a single flat number, though. Several Air Force
+          enlisted career and FAQ pages publish tighter, non-graduate language:
+          applicants without a tier-one credential (for example GED holders, who
+          are treated as a lower education tier) are commonly held to{" "}
+          <strong className="text-text-primary">65</strong>. So the honest answer
+          is that <strong className="text-text-primary">36</strong> is the
+          credential-dependent regulatory floor for diploma holders, while{" "}
+          <strong className="text-text-primary">65</strong> is the working
+          threshold you will see quoted for non-graduate paths. Recruiters in
+          strong recruiting years also enforce higher effective cutoffs than the
+          policy floor.
+        </p>
+
+        {/* Credential path vs minimum vs source */}
+        <div className="mt-5 overflow-x-auto">
+          <table className="min-w-full text-sm">
+            <thead className="text-text-secondary">
+              <tr className="border-b border-navy-border">
+                <th className="py-2 pr-4 text-left">Credential path</th>
+                <th className="py-2 pr-4 text-left">Minimum AFQT</th>
+                <th className="py-2 text-left">Source</th>
+              </tr>
+            </thead>
+            <tbody className="text-text-primary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold">
+                  Tier-one (HS diploma) — RegAF &amp; USSF
+                </td>
+                <td className="py-2 pr-4 font-mono font-bold text-accent">36</td>
+                <td className="py-2 text-text-secondary">
+                  DAFMAN 36-2032 (certified current Dec 9, 2025)
+                </td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold">
+                  Non-graduate / GED (lower education tier)
+                </td>
+                <td className="py-2 pr-4 font-mono font-bold text-accent">65</td>
+                <td className="py-2 text-text-secondary">
+                  Air Force enlisted career / FAQ pages (tighter non-graduate
+                  language)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-4 text-xs text-text-tertiary">
+          Source:{" "}
+          <a
+            href="https://static.e-publishing.af.mil/production/1/af_a1/publication/dafman36-2032/dafman36-2032.pdf"
+            className="underline hover:text-accent"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            DAFMAN 36-2032
+          </a>
+          . Last verified: May 24, 2026. AFQT alone only decides whether you can
+          enlist. Your{" "}
+          <Link
+            href="/air-force-mage-score"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            MAGE composite scores
+          </Link>{" "}
+          decide which{" "}
+          <Link
+            href="/air-force-jobs"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            Air Force jobs
+          </Link>{" "}
+          you actually qualify for.
+        </p>
+      </section>
 
       <section className="mt-8">
         <Suspense
