@@ -51,11 +51,30 @@ export default function JobCatalog({ jobs }: { jobs: MilitaryJob[] }) {
         your scores above to see exactly which of these you qualify for.
       </p>
 
+      {/* Jump-to-branch nav */}
+      <nav
+        aria-label="Jump to branch"
+        className="mt-5 flex flex-wrap gap-2"
+      >
+        {byBranch.map(({ branch, jobs: branchJobs }) => (
+          <a
+            key={branch}
+            href={`#jobs-${branch}`}
+            className="rounded-md border border-navy-border bg-navy px-3 py-1.5 text-xs font-medium text-text-secondary no-underline transition-colors hover:border-accent/40 hover:text-text-primary"
+          >
+            {BRANCH_NAMES[branch]}{" "}
+            <span className="text-text-tertiary">({branchJobs.length})</span>
+          </a>
+        ))}
+      </nav>
+
       <div className="mt-6 space-y-3">
         {byBranch.map(({ branch, jobs: branchJobs }) => (
           <details
             key={branch}
-            className="group rounded-xl border border-navy-border bg-navy-light"
+            id={`jobs-${branch}`}
+            open
+            className="group scroll-mt-24 rounded-xl border border-navy-border bg-navy-light"
           >
             <summary className="flex cursor-pointer items-center justify-between gap-3 px-5 py-4 font-display text-base font-semibold text-text-primary marker:content-['']">
               <span>{BRANCH_NAMES[branch]}</span>
