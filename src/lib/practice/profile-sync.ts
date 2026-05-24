@@ -330,8 +330,16 @@ export async function syncLocalHistoryToRemote(
       )
     );
 
+    // client_attempt_id is a uuid column. Legacy local rows with a non-uuid id
+    // would fail the whole bulk insert (invalid input syntax for type uuid),
+    // silently blocking ALL of this user's history from syncing. Skip those so
+    // the valid rows still sync. Also coalesce the NOT NULL jsonb columns.
+    const isUuid = (v: unknown): v is string =>
+      typeof v === "string" &&
+      /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(v);
+
     const toInsert = history
-      .filter((a) => !seen.has(a.client_attempt_id))
+      .filter((a) => isUuid(a.client_attempt_id) && !seen.has(a.client_attempt_id))
       .map((a) => ({
         user_id: userId,
         client_attempt_id: a.client_attempt_id,
@@ -345,9 +353,9 @@ export async function syncLocalHistoryToRemote(
         question_count: a.question_count,
         correct_count: a.correct_count,
         afqt_estimate: a.afqt_estimate,
-        results_by_subtest: a.results_by_subtest,
-        results_by_topic: a.results_by_topic,
-        question_results: a.question_results,
+        results_by_subtest: a.results_by_subtest ?? {},
+        results_by_topic: a.results_by_topic ?? {},
+        question_results: a.question_results ?? [],
         test_type: a.test_type ?? null,
         primary_metric_code: a.primary_metric_code ?? null,
         primary_metric_estimate: a.primary_metric_estimate ?? null,
