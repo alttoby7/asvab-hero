@@ -90,6 +90,22 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/air-force-jobs"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Air Force Jobs
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/air-force-mage-score"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Air Force MAGE Score
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/army-ranks"
                   className="text-sm text-text-tertiary hover:text-text-primary no-underline"
                 >

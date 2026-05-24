@@ -18,6 +18,26 @@ export default function AirForceASVABScorePage() {
       <JsonLd
         data={{
           "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              position: 1,
+              name: "Home",
+              item: "https://asvabhero.com",
+            },
+            {
+              "@type": "ListItem",
+              position: 2,
+              name: "Air Force ASVAB Score",
+              item: "https://asvabhero.com/air-force-asvab-score",
+            },
+          ],
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
           "@type": "Article",
           headline:
             "Air Force ASVAB Score: What You Need to Qualify and Which Jobs You Can Get",
@@ -126,6 +146,218 @@ export default function AirForceASVABScorePage() {
           which Air Force jobs you qualify for right now.
         </p>
 
+        {/* ────────── SECTION: Air Force ASVAB Score Chart (early answer unit) ────────── */}
+
+        <h2
+          id="air-force-asvab-score-chart"
+          className="mt-12 scroll-mt-24 font-display text-2xl font-bold text-text-primary"
+        >
+          Air Force ASVAB Score Chart
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          Two charts do most of the work. The first is the AFQT credential chart
+          that decides whether you can enlist. The second is a MAGE quick chart
+          that decides which career fields open up. A popular-jobs chart follows.{" "}
+          <strong className="text-text-primary">Last verified: May 24, 2026.</strong>
+        </p>
+
+        {/* Layer 1: AFQT credential chart */}
+        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
+          AFQT credential chart (enlistment gate)
+        </h3>
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Credential path
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Minimum AFQT
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Notes
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  High school diploma (tier one)
+                </td>
+                <td className="py-2 pr-4 font-mono">36</td>
+                <td className="py-2">
+                  Baseline RegAF/USSF floor per DAFMAN 36-2032.
+                </td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  GED / non-graduate
+                </td>
+                <td className="py-2 pr-4 font-mono">65</td>
+                <td className="py-2">
+                  Tighter non-graduate language on AF career/FAQ pages. 15+
+                  college credits can reclassify you at the diploma tier.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* Layer 2: MAGE quick chart */}
+        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
+          MAGE quick chart (career-field gate)
+        </h3>
+        <p className="mt-4 text-text-secondary">
+          The Air Force converts each composite below to a percentile (0&ndash;99).
+          VE is an optimally weighted Word Knowledge + Paragraph Comprehension
+          composite, not a plain WK + PC sum.
+        </p>
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Composite
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Formula
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Drives
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  M (Mechanical)
+                </td>
+                <td className="py-2 pr-4 font-mono">AR + 2&times;VE + MC + AS</td>
+                <td className="py-2">Maintenance, propulsion, munitions</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  A (Administrative)
+                </td>
+                <td className="py-2 pr-4 font-mono">VE + MK</td>
+                <td className="py-2">Personnel, logistics, admin</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  G (General)
+                </td>
+                <td className="py-2 pr-4 font-mono">VE + AR</td>
+                <td className="py-2">Cyber, intel, ATC, medical, finance</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  E (Electronics)
+                </td>
+                <td className="py-2 pr-4 font-mono">AR + MK + EI + GS</td>
+                <td className="py-2">Avionics, space systems, cyber transport</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* Layer 3: Popular jobs chart (public signals only) */}
+        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
+          Popular jobs (published public signals)
+        </h3>
+        <p className="mt-4 text-text-secondary">
+          These are the public signals only. Exact MAGE percentiles can shift,
+          so treat them as published minimums and confirm with a recruiter.
+        </p>
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Career field
+                </th>
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
+                  Published ASVAB signal
+                </th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">
+                  Detail
+                </th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Pararescue (PJ)
+                </td>
+                <td className="py-2 pr-4 font-mono">G 49</td>
+                <td className="py-2">
+                  See{" "}
+                  <Link href="/air-force-pararescue-asvab-score">
+                    Pararescue ASVAB score
+                  </Link>
+                  .
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Mobility Force Aviator (legacy &ldquo;Loadmaster&rdquo;)
+                </td>
+                <td className="py-2 pr-4 font-mono">M 60</td>
+                <td className="py-2">
+                  See{" "}
+                  <Link href="/air-force-loadmaster-asvab-score">
+                    Loadmaster ASVAB score
+                  </Link>
+                  .
+                </td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Security Forces
+                </td>
+                <td className="py-2 pr-4 font-mono">General area</td>
+                <td className="py-2">
+                  No published numeric cutoff &mdash; verify with a recruiter.
+                  See{" "}
+                  <Link href="/air-force-security-forces-asvab-score">
+                    Security Forces ASVAB score
+                  </Link>
+                  .
+                </td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-semibold text-text-primary">
+                  Pilot
+                </td>
+                <td className="py-2 pr-4 font-mono">Officer / AFOQT</td>
+                <td className="py-2">
+                  Not an enlisted ASVAB path; selected via the AFOQT. See{" "}
+                  <Link href="/air-force-pilot-asvab-requirements">
+                    Pilot ASVAB requirements
+                  </Link>
+                  .
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="text-sm text-text-tertiary">
+          Sources:{" "}
+          <a
+            href="https://www.officialasvab.com/applicants/military-jobs/"
+            className="underline hover:text-accent"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            officialasvab.com military jobs
+          </a>{" "}
+          and the airforce.com career pages. Last verified: May 24, 2026. Full
+          breakdowns:{" "}
+          <Link href="/air-force-mage-score">MAGE score guide</Link> and the{" "}
+          <Link href="/air-force-jobs">Air Force jobs list</Link>.
+        </p>
+
         {/* ────────── SECTION: AFQT Minimums ────────── */}
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -212,8 +444,9 @@ export default function AirForceASVABScorePage() {
           The AFQT is a percentile (1&ndash;99) calculated from four subtests:
           Arithmetic Reasoning (AR), Mathematics Knowledge (MK), Word Knowledge
           (WK), and Paragraph Comprehension (PC). The formula doubles Verbal
-          Expression (VE = WK + PC), which means verbal improvement gives you
-          twice the leverage of any other subtest.
+          Expression (VE), an optimally weighted Word Knowledge + Paragraph
+          Comprehension composite (not a plain WK + PC sum), which means verbal
+          improvement gives you twice the leverage of any other subtest.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
@@ -291,7 +524,7 @@ export default function AirForceASVABScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   M (Mechanical)
                 </td>
-                <td className="py-2 pr-4 font-mono">GS + MC + 2xAS</td>
+                <td className="py-2 pr-4 font-mono">AR + 2&times;VE + MC + AS</td>
                 <td className="py-2 pr-4">
                   Physical principles, machines, auto/shop
                 </td>
@@ -303,7 +536,7 @@ export default function AirForceASVABScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   A (Administrative)
                 </td>
-                <td className="py-2 pr-4 font-mono">WK + PC + MK</td>
+                <td className="py-2 pr-4 font-mono">VE + MK</td>
                 <td className="py-2 pr-4">
                   Verbal reasoning and math for office roles
                 </td>
@@ -315,7 +548,7 @@ export default function AirForceASVABScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   G (General)
                 </td>
-                <td className="py-2 pr-4 font-mono">AR + WK + PC</td>
+                <td className="py-2 pr-4 font-mono">VE + AR</td>
                 <td className="py-2 pr-4">
                   General aptitude for most career fields
                 </td>
@@ -327,7 +560,7 @@ export default function AirForceASVABScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   E (Electronics)
                 </td>
-                <td className="py-2 pr-4 font-mono">GS + AR + MK + EI</td>
+                <td className="py-2 pr-4 font-mono">AR + MK + EI + GS</td>
                 <td className="py-2 pr-4">
                   Technical and electronics aptitude
                 </td>
@@ -341,22 +574,26 @@ export default function AirForceASVABScorePage() {
 
         {/* FORMULA */}
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          M = GS + MC + 2(AS)
+          M = AR + 2(VE) + MC + AS
           <br />
-          A = WK + PC + MK
+          A = VE + MK
           <br />
-          G = AR + WK + PC
+          G = VE + AR
           <br />
-          E = GS + AR + MK + EI
+          E = AR + MK + EI + GS
         </div>
+        <p className="text-sm text-text-tertiary">
+          VE is an optimally weighted Word Knowledge + Paragraph Comprehension
+          composite, not a plain WK + PC sum.
+        </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
           <p className="text-sm font-semibold text-amber-400">Warning</p>
           <p className="mt-1 text-sm text-text-secondary">
             Many websites still list the Administrative (A) composite as NO + CS
             + VE. The Numerical Operations and Coding Speed subtests were removed
-            from the ASVAB over two decades ago. The current A composite uses WK
-            + PC + MK.
+            from the ASVAB over two decades ago. The current A composite is VE +
+            MK, where VE is the optimally weighted WK + PC composite.
           </p>
         </aside>
 
