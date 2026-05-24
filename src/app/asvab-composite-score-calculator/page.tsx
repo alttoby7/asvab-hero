@@ -21,10 +21,11 @@ const articleJsonLd = {
     "Calculate ASVAB composite scores for all 6 branches. See which MOS, rate, and AFSC you qualify for with worked examples and the free calculator.",
   url: "https://asvabhero.com/asvab-composite-score-calculator",
   author: {
-    "@type": "Organization",
-    name: "ASVAB Hero",
-    url: "https://asvabhero.com",
-  },
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
   publisher: {
     "@type": "Organization",
     name: "ASVAB Hero",

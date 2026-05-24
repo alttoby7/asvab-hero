@@ -26,7 +26,12 @@ export default function NavyRanksPage() {
           description:
             "All Navy ranks explained — enlisted E-1 to E-9, warrant officers W-2 to W-5, and officers O-1 to O-10 with 2026 pay, the rating system, and promotion timelines.",
           url: "https://asvabhero.com/navy-ranks",
-          author: { "@type": "Organization", name: "ASVAB Hero", url: "https://asvabhero.com" },
+          author: {
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
           publisher: { "@type": "Organization", name: "ASVAB Hero" },
           datePublished: "2026-03-17",
           dateModified: "2026-03-17",

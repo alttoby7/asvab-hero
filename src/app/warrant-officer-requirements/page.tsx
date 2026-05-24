@@ -24,9 +24,10 @@ export default function WarrantOfficerRequirementsPage() {
             "Warrant officer requirements by branch: GT scores, rank, and years of service for the Army, Navy, Marines, Coast Guard, and the new 2024 Air Force program.",
           url: "https://asvabhero.com/warrant-officer-requirements",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

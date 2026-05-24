@@ -23,9 +23,10 @@ export default function March2SuccessAsvabPage() {
             "March2Success is the Army's free ASVAB prep. See what you actually get, whether it raises your score, how to use it, and the best free way to pair it.",
           url: "https://asvabhero.com/march2success-asvab",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: { "@type": "Organization", name: "ASVAB Hero" },
           datePublished: "2026-05-22",

@@ -54,10 +54,11 @@ export default function GTScoreCalculatorPage() {
       "Calculate your ASVAB GT score instantly. Learn the Army, Marine Corps, and Air Force GT formulas, score requirements, and how to raise your GT.",
     url: "https://asvabhero.com/gt-score-calculator",
     author: {
-      "@type": "Organization",
-      name: "ASVAB Hero",
-      url: "https://asvabhero.com",
-    },
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
     publisher: {
       "@type": "Organization",
       name: "ASVAB Hero",

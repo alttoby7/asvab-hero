@@ -19,10 +19,11 @@ const articleJsonLd = {
     "Proven ASVAB math tips for Arithmetic Reasoning and Mathematics Knowledge. Formulas, pacing strategies, and a 5-week study plan to boost your AFQT score.",
   url: "https://asvabhero.com/asvab-math-tips",
   author: {
-    "@type": "Organization",
-    name: "ASVAB Hero",
-    url: "https://asvabhero.com",
-  },
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
   publisher: {
     "@type": "Organization",
     name: "ASVAB Hero",

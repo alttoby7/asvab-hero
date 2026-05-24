@@ -20,10 +20,11 @@ const articleJsonLd = {
     "Learn 9 proven ASVAB arithmetic reasoning tips with worked examples, mental math shortcuts, and a 5-week study plan to boost your AR, AFQT, and GT scores.",
   url: "https://asvabhero.com/asvab-arithmetic-reasoning-tips",
   author: {
-    "@type": "Organization",
-    name: "ASVAB Hero",
-    url: "https://asvabhero.com",
-  },
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
   publisher: {
     "@type": "Organization",
     name: "ASVAB Hero",

@@ -25,9 +25,10 @@ export default function BestASVABOnlinePrepPage() {
             "An honest head-to-head comparison of the best ASVAB online prep services in 2026 — price, question count, score tracking, and refund policy.",
           url: "https://asvabhero.com/best-asvab-online-prep",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

@@ -57,6 +57,7 @@ const pages = [
   { path: "/asvab-vocabulary", priority: "0.8", changefreq: "monthly" },
   { path: "/pricing", priority: "0.7", changefreq: "monthly" },
   { path: "/about", priority: "0.5", changefreq: "monthly" },
+  { path: "/team/jordan-avery", priority: "0.4", changefreq: "yearly" },
   { path: "/contact", priority: "0.4", changefreq: "monthly" },
   { path: "/blog", priority: "0.6", changefreq: "weekly" },
   { path: "/army-asvab-calculator", priority: "0.9", changefreq: "monthly" },

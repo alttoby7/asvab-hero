@@ -25,9 +25,10 @@ export default function FreeAsvabPracticeTestsPage() {
             "Honest reviews of the 6 best free ASVAB practice tests in 2026. Includes question counts, explanations, signup requirements, and an AFQT estimator comparison.",
           url: "https://asvabhero.com/free-asvab-practice-tests",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

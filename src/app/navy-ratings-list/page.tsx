@@ -19,10 +19,11 @@ const articleSchema = {
     "Complete navy ratings list organized by career community. ASVAB composite scores for all 89 jobs, FY2026 bonuses, NAPT requirements, and PACT path explained.",
   url: "https://asvabhero.com/navy-ratings-list",
   author: {
-    "@type": "Organization",
-    name: "ASVAB Hero",
-    url: "https://asvabhero.com",
-  },
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
   publisher: {
     "@type": "Organization",
     name: "ASVAB Hero",

@@ -47,10 +47,11 @@ const articleJsonLd = {
     "Learn how ASVAB line scores are calculated for Army, Marines, Air Force, Navy, and Coast Guard. Use our free calculator to see every job you qualify for.",
   url: "https://asvabhero.com/asvab-line-score-calculator",
   author: {
-    "@type": "Organization",
-    name: "ASVAB Hero",
-    url: "https://asvabhero.com",
-  },
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
   publisher: {
     "@type": "Organization",
     name: "ASVAB Hero",

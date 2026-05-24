@@ -26,7 +26,12 @@ export default function ArmyRanksPage() {
           description:
             "Complete guide to all 29 Army ranks — enlisted E-1 through E-9, warrant officers W-1 through W-5, and officers O-1 through O-10, with 2026 pay, promotion timelines, and ASVAB connections.",
           url: "https://asvabhero.com/army-ranks",
-          author: { "@type": "Organization", name: "ASVAB Hero", url: "https://asvabhero.com" },
+          author: {
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
           publisher: { "@type": "Organization", name: "ASVAB Hero" },
           datePublished: "2026-03-17",
           dateModified: "2026-03-17",

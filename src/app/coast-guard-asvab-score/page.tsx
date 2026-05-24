@@ -20,10 +20,11 @@ const articleJsonLd = {
     "Learn the Coast Guard ASVAB score minimums, every rating's subtest formula, and which scores you need to qualify. Complete 2026 requirements guide.",
   url: "https://asvabhero.com/coast-guard-asvab-score",
   author: {
-    "@type": "Organization",
-    name: "ASVAB Hero",
-    url: "https://asvabhero.com",
-  },
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
   publisher: {
     "@type": "Organization",
     name: "ASVAB Hero",

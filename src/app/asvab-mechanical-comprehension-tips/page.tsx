@@ -26,9 +26,10 @@ export default function ASVABMechanicalComprehensionTipsPage() {
             "Master ASVAB Mechanical Comprehension with 9 proven tips: lever classes, gear ratios, pulley counting, Pascal's Law, and diagram strategies.",
           url: "https://asvabhero.com/asvab-mechanical-comprehension-tips",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

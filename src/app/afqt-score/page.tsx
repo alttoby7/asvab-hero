@@ -25,9 +25,10 @@ export default function AFQTScorePage() {
             "Learn what your AFQT score means, how it's calculated from 4 ASVAB subtests, branch minimums for 2026, and the fastest ways to raise it.",
           url: "https://asvabhero.com/afqt-score",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

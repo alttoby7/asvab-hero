@@ -22,10 +22,11 @@ const articleJsonLd = {
     "Master ASVAB paragraph comprehension with 9 tested strategies. Learn question types, trap patterns, and pacing tips to boost your PC score and AFQT.",
   url: "https://asvabhero.com/asvab-paragraph-comprehension-tips",
   author: {
-    "@type": "Organization",
-    name: "ASVAB Hero",
-    url: "https://asvabhero.com",
-  },
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
   publisher: {
     "@type": "Organization",
     name: "ASVAB Hero",

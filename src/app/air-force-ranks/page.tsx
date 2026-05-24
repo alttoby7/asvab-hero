@@ -27,9 +27,10 @@ export default function AirForceRanksPage() {
             "Complete guide to all 20 Air Force ranks — enlisted E-1 through E-9 and officer O-1 through O-10, with 2026 pay, insignia, promotion timelines, and ASVAB score connections.",
           url: "https://asvabhero.com/air-force-ranks",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

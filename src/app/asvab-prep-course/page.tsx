@@ -24,9 +24,10 @@ export default function ASVABPrepCoursePage() {
             "Compare all six ASVAB prep course categories, from free to tutoring, with real pricing, guarantee fine print, and a scenario decision framework.",
           url: "https://asvabhero.com/asvab-prep-course",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

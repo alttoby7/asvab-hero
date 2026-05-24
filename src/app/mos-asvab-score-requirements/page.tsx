@@ -24,9 +24,10 @@ export default function MOSASVABScoreRequirementsPage() {
             "MOS ASVAB score requirements for every branch: Army line scores, Air Force MAGE, Navy ratings, and Marine composites, with formulas and exact job numbers.",
           url: "https://asvabhero.com/mos-asvab-score-requirements",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

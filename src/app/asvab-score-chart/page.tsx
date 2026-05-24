@@ -26,9 +26,10 @@ export default function ASVABScoreChartPage() {
             "Complete ASVAB score chart covering AFQT categories I through V, branch minimums for all 6 branches, composite line score formulas, and what each score range actually unlocks.",
           url: "https://asvabhero.com/asvab-score-chart",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

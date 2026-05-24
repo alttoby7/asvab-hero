@@ -218,9 +218,10 @@ export default function BestASVABStudyBookPage() {
             "The 8 best ASVAB study books for 2026, ranked by score-improvement potential. Honest reviews covering Kaplan, Dummies, Mometrix, Peterson's, Barron's, and more.",
           url: "https://asvabhero.com/best-asvab-study-book",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

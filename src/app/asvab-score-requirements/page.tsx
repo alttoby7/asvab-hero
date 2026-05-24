@@ -25,9 +25,10 @@ export default function ASVABScoreRequirementsPage() {
             "Every 2026 ASVAB score requirement by branch, from AFQT minimums and GED tiers to composite scores for specific jobs. Find what score you need.",
           url: "https://asvabhero.com/asvab-score-requirements",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",
