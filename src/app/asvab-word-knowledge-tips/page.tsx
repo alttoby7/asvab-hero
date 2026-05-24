@@ -25,9 +25,10 @@ export default function ASVABWordKnowledgeTipsPage() {
             "Learn 9 proven ASVAB word knowledge tips: VE double-count mechanics, root-word decoding, synonym clusters, trap answer patterns, and CAT pacing strategy.",
           url: "https://asvabhero.com/asvab-word-knowledge-tips",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

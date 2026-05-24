@@ -24,9 +24,10 @@ export default function GTScoreRequirementsPage() {
             "What a GT score is in the military, how it differs from AFQT, the thresholds for warrant officer, OCS, and 18X, and how to raise it. See where you stand.",
           url: "https://asvabhero.com/gt-score-requirements",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

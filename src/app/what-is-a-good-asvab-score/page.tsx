@@ -3,6 +3,7 @@ import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
+import ArticleByline from "@/components/ArticleByline";
 
 export const metadata: Metadata = {
   title: "What Is a Good ASVAB Score? Score Ranges Explained",
@@ -25,9 +26,10 @@ export default function WhatIsAGoodASVABScorePage() {
             "Find out what a good ASVAB score is for enlistment, job qualification, and bonuses. Branch minimums, incentive thresholds, and elite path requirements explained.",
           url: "https://asvabhero.com/what-is-a-good-asvab-score",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",
@@ -105,6 +107,7 @@ export default function WhatIsAGoodASVABScorePage() {
 
       <article className="prose-asvab">
         <h1>What Is a Good ASVAB Score? It Depends on What You Want to Do</h1>
+        <ArticleByline lastVerified="May 2026" />
 
         <DvidsHeroImage
           src="/images/what-is-a-good-asvab-score/hero.jpg"

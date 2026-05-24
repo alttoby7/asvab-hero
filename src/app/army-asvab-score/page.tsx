@@ -25,9 +25,10 @@ export default function ArmyASVABScorePage() {
             "Learn Army ASVAB score requirements for 2026. AFQT minimums, all 10 line score formulas, MOS job table, and GT score thresholds for career advancement.",
           url: "https://asvabhero.com/army-asvab-score",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

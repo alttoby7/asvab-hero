@@ -22,10 +22,11 @@ const articleJsonLd = {
     "Master the ASVAB EI subtest with 10 proven tips: Ohm's Law triangles, series vs. parallel circuits, component functions, and pacing for 30 sec/question.",
   url: "https://asvabhero.com/asvab-electronics-information-tips",
   author: {
-    "@type": "Organization",
-    name: "ASVAB Hero",
-    url: "https://asvabhero.com",
-  },
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
   publisher: {
     "@type": "Organization",
     name: "ASVAB Hero",

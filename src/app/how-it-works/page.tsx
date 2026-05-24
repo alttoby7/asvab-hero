@@ -67,7 +67,12 @@ export default function HowItWorksPage() {
           description:
             "The exact way to use ASVAB Hero to raise your AFQT: take a free diagnostic, clear your Mistake Bank daily, do one adaptive AFQT block per study day, retake diagnostics on schedule, and rehearse under time before test day.",
           url: "https://asvabhero.com/how-it-works",
-          author: { "@type": "Organization", name: "ASVAB Hero", url: "https://asvabhero.com" },
+          author: {
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
           publisher: { "@type": "Organization", name: "ASVAB Hero" },
           datePublished: "2026-05-22",
           dateModified: "2026-05-22",

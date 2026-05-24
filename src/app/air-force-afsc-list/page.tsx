@@ -24,9 +24,10 @@ export default function AirForceAFSCListPage() {
             "Complete Air Force AFSC list with MAGE composite score requirements for every enlisted job. Find which AFSCs your ASVAB score qualifies you for in 2026.",
           url: "https://asvabhero.com/air-force-afsc-list",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

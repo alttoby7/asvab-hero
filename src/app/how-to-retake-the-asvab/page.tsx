@@ -25,9 +25,10 @@ export default function HowToRetakeTheASVABPage() {
             "You can retake the ASVAB after a 1-month wait. Second retest: 1 more month. Third+: 6 months. Branch-specific DEP restrictions, Confirmation Test triggers, and study strategies to score higher.",
           url: "https://asvabhero.com/how-to-retake-the-asvab",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

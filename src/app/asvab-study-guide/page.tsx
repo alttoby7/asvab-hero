@@ -32,10 +32,11 @@ export default function ASVABStudyGuidePage() {
               "Comprehensive ASVAB study guide with interactive tools. Set career goals, explore all 9 subtests, generate a personalized week-by-week study plan, and track your progress.",
             url: "https://asvabhero.com/asvab-study-guide",
             author: {
-              "@type": "Organization",
-              name: "ASVAB Hero",
-              url: "https://asvabhero.com",
-            },
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
             publisher: {
               "@type": "Organization",
               name: "ASVAB Hero",

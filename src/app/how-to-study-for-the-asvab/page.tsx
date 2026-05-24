@@ -3,6 +3,7 @@ import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
+import ArticleByline from "@/components/ArticleByline";
 
 export const metadata: Metadata = {
   title: "How to Study for the ASVAB: 8-Step Plan",
@@ -26,9 +27,10 @@ export default function HowToStudyForTheASVABPage() {
             "Learn how to study for the ASVAB with a proven 8-step plan. Set your target score, build a schedule, master the right subtests, and nail the CAT-ASVAB.",
           url: "https://asvabhero.com/how-to-study-for-the-asvab",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",
@@ -108,6 +110,7 @@ export default function HowToStudyForTheASVABPage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           How to Study for the ASVAB: An 8-Step Study Plan That Actually Works
         </h1>
+        <ArticleByline lastVerified="May 2026" />
 
         <DvidsHeroImage
           src="/images/how-to-study-for-the-asvab/hero.jpg"

@@ -86,7 +86,12 @@ export default function TheSciencePage() {
           description:
             "ASVAB Hero is built on the study methods cognitive science proves actually raise test scores: retrieval practice, spaced repetition, interleaving, and immediate feedback.",
           url: "https://asvabhero.com/the-science",
-          author: { "@type": "Organization", name: "ASVAB Hero", url: "https://asvabhero.com" },
+          author: {
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
           publisher: { "@type": "Organization", name: "ASVAB Hero" },
           datePublished: "2026-05-21",
           dateModified: "2026-05-21",

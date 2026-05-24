@@ -5,6 +5,7 @@ import AfqtCalculator from "@/components/AfqtCalculator";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
+import ArticleByline from "@/components/ArticleByline";
 
 export const metadata: Metadata = {
   title: "AFQT Score Calculator (2026): Estimate Your AFQT Percentile",
@@ -92,6 +93,7 @@ export default function AfqtCalculatorPage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           AFQT Calculator
         </h1>
+        <ArticleByline lastVerified="May 2026" />
         <p className="mt-3 text-lg text-text-secondary">
           Get your AFQT percentile from 4 subtest scores in seconds. See your
           DoD category and every branch you qualify for.

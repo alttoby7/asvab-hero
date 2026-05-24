@@ -20,10 +20,11 @@ const articleJsonLd = {
     "ASVAB vocabulary study pays double via the VE formula. Get a high-frequency word list, root word decode system, CAT pacing tips, and a 4-week study plan.",
   url: "https://asvabhero.com/asvab-vocabulary",
   author: {
-    "@type": "Organization",
-    name: "ASVAB Hero",
-    url: "https://asvabhero.com",
-  },
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
   publisher: {
     "@type": "Organization",
     name: "ASVAB Hero",

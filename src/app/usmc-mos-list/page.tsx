@@ -24,9 +24,10 @@ export default function USMCMOSListPage() {
             "Complete USMC MOS list with ASVAB line score requirements, FY26 bonuses up to $15K, TS/SCI clearances, and Force Design 2030 changes by occupational field.",
           url: "https://asvabhero.com/usmc-mos-list",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

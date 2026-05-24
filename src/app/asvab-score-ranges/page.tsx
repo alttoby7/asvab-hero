@@ -19,10 +19,11 @@ const articleJsonLd = {
     "Understand what each ASVAB score range unlocks: AFQT categories, branch minimums, composite scores, and real job examples across all 6 branches.",
   url: "https://asvabhero.com/asvab-score-ranges",
   author: {
-    "@type": "Organization",
-    name: "ASVAB Hero",
-    url: "https://asvabhero.com",
-  },
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
+          },
   publisher: {
     "@type": "Organization",
     name: "ASVAB Hero",

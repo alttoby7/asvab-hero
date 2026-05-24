@@ -23,9 +23,10 @@ export default function WhatDoesASVABStandForPage() {
             "ASVAB stands for Armed Services Vocational Aptitude Battery. Decode each word, see 2026 branch minimums, and discover what higher scores unlock.",
           url: "https://asvabhero.com/what-does-asvab-stand-for",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

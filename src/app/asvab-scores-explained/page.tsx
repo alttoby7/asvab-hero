@@ -73,9 +73,10 @@ export default function ASVABScoresExplainedPage() {
             "How to read every number on your ASVAB score sheet: AFQT percentiles, the 9 subtest standard scores, composite line scores, and 2026 branch minimums.",
           url: "https://asvabhero.com/asvab-scores-explained",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",

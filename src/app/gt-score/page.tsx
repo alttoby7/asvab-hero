@@ -25,9 +25,10 @@ export default function GTScorePage() {
             "Your GT score decides which military jobs you can hold. Learn the VE + AR formula, how to calculate it, Army GT cutoffs, the 110 threshold, the highest possible GT, and how to raise it.",
           url: "https://asvabhero.com/gt-score",
           author: {
-            "@type": "Organization",
-            name: "ASVAB Hero",
-            url: "https://asvabhero.com",
+            "@type": "Person",
+            "@id": "https://asvabhero.com/team/jordan-avery#editor",
+            name: "Jordan Avery",
+            url: "https://asvabhero.com/team/jordan-avery",
           },
           publisher: {
             "@type": "Organization",
