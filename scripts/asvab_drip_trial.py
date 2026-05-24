@@ -418,7 +418,11 @@ def job_day2(
             service_key,
             "profiles",
             {"user_id": f"eq.{user_id}"},
-            {"trial_day2_email_sent_at": ts},
+            {
+                "trial_day2_email_sent_at": ts,
+                # Cross-sender cap: stamp so same-day mistake-reminders yield.
+                "last_engagement_email_on": datetime.now(timezone.utc).date().isoformat(),
+            },
         )
         if not patched:
             err(f"[trial_drip] job=day2 user={user_id} timestamp_update_failed (email already sent, may resend next tick)")
@@ -500,7 +504,11 @@ def job_milestone(
             service_key,
             "profiles",
             {"user_id": f"eq.{user_id}"},
-            {"milestone_50q_email_sent_at": ts},
+            {
+                "milestone_50q_email_sent_at": ts,
+                # Cross-sender cap: stamp so same-day mistake-reminders yield.
+                "last_engagement_email_on": datetime.now(timezone.utc).date().isoformat(),
+            },
         )
         if not patched:
             err(f"[trial_drip] job=milestone user={user_id} timestamp_update_failed (email already sent, may resend next tick)")

@@ -25,6 +25,7 @@ import sys
 import base64
 import urllib.request
 import urllib.error
+import urllib.parse
 import datetime as dt
 
 # Sentry helper lives next to this script on the droplet (/root/scripts/).
@@ -50,11 +51,19 @@ USER = os.environ["LISTMONK_API_USER"]
 TOKEN = os.environ["LISTMONK_API_TOKEN"]
 LIST_ID = int(os.environ["LISTMONK_LIST_ID"])
 
+# Cross-sender frequency cap (shared with the Supabase edge functions): after a
+# drip send, stamp profiles.last_engagement_email_on so a same-day mistake-
+# reminder yields. Creds already live in asvab_drip.env (added for the trial
+# drip). Best-effort — a stamp failure never blocks the drip.
+SUPABASE_URL = (os.environ.get("ASVABHERO_SUPABASE_URL") or "").rstrip("/")
+SUPABASE_KEY = os.environ.get("ASVABHERO_SUPABASE_SECRET_KEY") or ""
+
 init_sentry(os.environ, surface="drip-listmonk")
 
 DRIP_SCHEDULE = {
     2: 7,    # Day 2: WK mistakes
     5: 8,    # Day 5: GT math
+    7: 17,   # Day 7: Pro upgrade
     10: 9,   # Day 10: hidden jobs
     14: 10,  # Day 14: retake
 }
@@ -80,6 +89,32 @@ def api(method, path, body=None):
             return json.loads(r.read())
     except urllib.error.HTTPError as e:
         return {"error": e.read().decode(), "status": e.code}
+
+
+def stamp_engagement(email):
+    """Mark profiles.last_engagement_email_on=today (matched by email) so lower-
+    priority nudges (mistake-reminders) yield the same day. Best-effort."""
+    if not SUPABASE_URL or not SUPABASE_KEY:
+        return
+    today = dt.datetime.now(dt.timezone.utc).date().isoformat()
+    url = f"{SUPABASE_URL}/rest/v1/profiles?email=eq.{urllib.parse.quote(email)}"
+    data = json.dumps({"last_engagement_email_on": today}).encode()
+    req = urllib.request.Request(
+        url,
+        data=data,
+        method="PATCH",
+        headers={
+            "apikey": SUPABASE_KEY,
+            "Authorization": f"Bearer {SUPABASE_KEY}",
+            "Content-Type": "application/json",
+            "Prefer": "return=minimal",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15):
+            pass
+    except Exception as e:  # noqa: BLE001 — never let a stamp failure block the drip
+        print(f"  WARN engagement stamp failed for {email}: {e}", file=sys.stderr)
 
 
 def fetch_subscribers():
@@ -150,6 +185,7 @@ def send_drip(sub, day, template_id, sent_so_far):
     r2 = api("PUT", f"/api/subscribers/{sub['id']}", update)
     if "error" in r2:
         print(f"  WARN attrib update failed for {email}: {r2}", file=sys.stderr)
+    stamp_engagement(email)
     print(f"  sent day {day} -> {email}")
     return True
 
