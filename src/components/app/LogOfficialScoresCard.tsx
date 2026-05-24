@@ -2,9 +2,10 @@
 
 /**
  * Dashboard card prompting the user to log their OFFICIAL ASVAB scores.
- * Shows whenever official_test_status != 'taken_logged', and turns into a
- * stronger "did you take your test?" prompt once the user's target test date
- * has passed. Uses the shared OfficialScoreForm (single validated write path).
+ * Shows whenever no real official AFQT is on record (gated on actual presence,
+ * not the profile status string — an incomplete test row must NOT suppress it),
+ * and turns into a stronger "did you take your test?" prompt once the user's
+ * target test date has passed. Uses the shared OfficialScoreForm.
  */
 
 import { useState } from "react";
@@ -13,20 +14,20 @@ import { trackEvent } from "@/lib/analytics";
 import OfficialScoreForm, { type ExamKind } from "@/components/score/OfficialScoreForm";
 
 export default function LogOfficialScoresCard({
-  officialTestStatus,
+  hasOfficialAfqt,
   targetTestDate,
   testType,
   onLogged,
 }: {
-  officialTestStatus: string | null;
+  hasOfficialAfqt: boolean;
   targetTestDate: string | null;
   testType: string | null;
   onLogged?: () => void;
 }) {
   const [open, setOpen] = useState(false);
 
-  // Already logged → nothing to prompt.
-  if (officialTestStatus === "taken_logged") return null;
+  // A real official AFQT is on record → nothing to prompt.
+  if (hasOfficialAfqt) return null;
 
   const testDatePassed =
     !!targetTestDate && new Date(targetTestDate) < new Date();

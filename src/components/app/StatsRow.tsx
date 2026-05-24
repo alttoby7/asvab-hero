@@ -1,32 +1,21 @@
 "use client";
 
+/**
+ * Momentum tiles — habit + output only. AFQT lives in the trajectory hero card
+ * (one authoritative score), so it is deliberately NOT shown here anymore.
+ */
+
 interface StatsRowProps {
   streakCount: number;
-  /** Prep-aware center metric (AFQT / GT / General). */
-  metricLabel: string;
-  latestMetric: number | null;
-  previousMetric: number | null;
-  accuracy: number | null;
   totalQuestions: number;
+  accuracy: number | null;
 }
 
 export default function StatsRow({
   streakCount,
-  metricLabel,
-  latestMetric,
-  previousMetric,
-  accuracy,
   totalQuestions,
+  accuracy,
 }: StatsRowProps) {
-  const trend =
-    latestMetric != null && previousMetric != null
-      ? latestMetric > previousMetric
-        ? "up"
-        : latestMetric < previousMetric
-          ? "down"
-          : "flat"
-      : null;
-
   return (
     <div className="grid grid-cols-3 gap-3">
       {/* Streak */}
@@ -48,35 +37,23 @@ export default function StatsRow({
         </div>
       </div>
 
-      {/* Primary metric (AFQT / GT / General) */}
+      {/* Questions answered (volume) */}
       <div className="rounded-xl border border-navy-border bg-navy-light px-4 py-4 text-center">
         <div className="font-display text-2xl font-bold text-accent">
-          {latestMetric != null ? (
-            <span>
-              {latestMetric}
-              {trend === "up" && (
-                <span className="ml-1 text-sm text-success">↑</span>
-              )}
-              {trend === "down" && (
-                <span className="ml-1 text-sm text-danger">↓</span>
-              )}
-            </span>
-          ) : (
-            "—"
-          )}
+          {totalQuestions > 0 ? totalQuestions.toLocaleString() : "—"}
         </div>
         <div className="mt-1 text-xs uppercase tracking-wide text-text-tertiary">
-          {metricLabel}
+          Questions answered
         </div>
       </div>
 
-      {/* Accuracy */}
+      {/* Accuracy (quality) */}
       <div className="rounded-xl border border-navy-border bg-navy-light px-4 py-4 text-center">
         <div className="font-display text-2xl font-bold text-accent">
           {accuracy != null ? `${accuracy}%` : "—"}
         </div>
         <div className="mt-1 text-xs uppercase tracking-wide text-text-tertiary">
-          {totalQuestions > 0 ? `${totalQuestions}q` : "Accuracy"}
+          Accuracy
         </div>
       </div>
     </div>

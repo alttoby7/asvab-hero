@@ -32,7 +32,7 @@ import TestimonialPrompt from "@/components/app/TestimonialPrompt";
 import MasteryMap from "@/components/app/MasteryMap";
 import QuickActions from "@/components/app/QuickActions";
 import LogOfficialScoresCard from "@/components/app/LogOfficialScoresCard";
-import ScoreProgressCard from "@/components/app/ScoreProgressCard";
+import { getScoreTimeline, type ScoreTimeline } from "@/lib/score-timeline/queries";
 
 interface ProfileData {
   display_name: string | null;
@@ -154,6 +154,7 @@ export default function AppHomePage() {
   );
   const [dueMistakeCount, setDueMistakeCount] = useState(0);
   const [trajectory, setTrajectory] = useState<HomeTrajectory | null>(null);
+  const [scoreTimeline, setScoreTimeline] = useState<ScoreTimeline | null>(null);
   const [studyDayDates, setStudyDayDates] = useState<string[]>([]);
   // Bump to re-run the loader after a target-job mutation.
   const [refreshKey, setRefreshKey] = useState(0);
@@ -179,6 +180,7 @@ export default function AppHomePage() {
         dueCountRes,
         trajectoryRes,
         studyDaysRes,
+        scoreTimelineRes,
       ] = await Promise.all([
         sb
           .from("profiles")
@@ -220,6 +222,8 @@ export default function AppHomePage() {
           .eq("user_id", userId)
           .order("study_date", { ascending: false })
           .limit(120),
+        // Official-score anchor + baseline for the trajectory hero card.
+        getScoreTimeline(sb, userId).catch(() => null),
       ]);
 
       // Onboarding guard
@@ -241,6 +245,7 @@ export default function AppHomePage() {
       setFlashcardSummaries(flashRes ?? []);
       setDueMistakeCount(dueCountRes ?? 0);
       setTrajectory(trajectoryRes ?? null);
+      setScoreTimeline(scoreTimelineRes ?? null);
       setStudyDayDates(
         (studyDaysRes.data ?? []).map((r: { study_date: string }) => r.study_date)
       );
@@ -316,7 +321,6 @@ export default function AppHomePage() {
   // Attempt stats (display only — NOT used to derive standing; the RPC does that)
   const diagnostics = attempts.filter((a) => a.variant_code === "diagnostic");
   const latestDiagnostic = diagnostics[0] ?? null;
-  const previousDiagnostic = diagnostics[1] ?? null;
   const totalQ = attempts.reduce((s, a) => s + a.question_count, 0);
   const totalC = attempts.reduce((s, a) => s + a.correct_count, 0);
   const accuracy = totalQ > 0 ? Math.round((totalC / totalQ) * 100) : null;
@@ -379,17 +383,11 @@ export default function AppHomePage() {
     gtConfidence,
   });
 
-  // Prep-aware StatsRow metric (GT users see GT trend, not AFQT).
-  const gtAttempts = attempts.filter(
-    (a) => a.primary_metric_code === "GT" && a.primary_metric_estimate != null
-  );
-  const statsMetricLabel = isGtMode ? "GT" : "AFQT";
-  const statsLatest = isGtMode
-    ? gtAttempts[0]?.primary_metric_estimate ?? null
-    : latestDiagnostic?.afqt_estimate ?? null;
-  const statsPrevious = isGtMode
-    ? gtAttempts[1]?.primary_metric_estimate ?? null
-    : previousDiagnostic?.afqt_estimate ?? null;
+  // Official AFQT anchor for the trajectory hero + the log-scores prompt gate.
+  // Gated on actual presence of a logged official AFQT, not the status string.
+  const officialAfqt = scoreTimeline?.latestOfficialAfqt ?? null;
+  const officialDate = scoreTimeline?.latestOfficialDate ?? null;
+  const hasOfficialAfqt = (scoreTimeline?.officialCount ?? 0) > 0;
 
   // Testimonial prompt — only after a genuine win (a 7-day streak, or a 2nd
   // diagnostic that improved). The component itself shows once (localStorage).
@@ -433,9 +431,9 @@ export default function AppHomePage() {
       {/* Today's Prescription (single highest-leverage action) */}
       <PrescriptionCard prescription={prescription} />
 
-      {/* Official-score capture — prompts until the user logs real results. */}
+      {/* Official-score capture — prompts until a real official AFQT is logged. */}
       <LogOfficialScoresCard
-        officialTestStatus={profile.official_test_status}
+        hasOfficialAfqt={hasOfficialAfqt}
         targetTestDate={profile.target_test_date}
         testType={profile.test_type}
         onLogged={() => setRefreshKey((k) => k + 1)}
@@ -475,29 +473,23 @@ export default function AppHomePage() {
         </Link>
       </div>
 
-      {/* Stats */}
+      {/* Momentum tiles — streak / volume / accuracy (AFQT lives in the hero). */}
       <StatsRow
         streakCount={profile.streak_count}
-        metricLabel={statsMetricLabel}
-        latestMetric={statsLatest}
-        previousMetric={statsPrevious}
-        accuracy={accuracy}
         totalQuestions={totalQ}
+        accuracy={accuracy}
       />
 
-      {/* Unified AFQT progress — baseline → practice → official (connect scores) */}
-      <ScoreProgressCard
-        userId={session.user.id}
-        projectedAfqt={null}
-        refreshKey={refreshKey}
-      />
-
-      {/* Trajectory — band + confidence only (GT Target Mode for Army/Marines AFCT) */}
+      {/* Trajectory hero — one authoritative AFQT (band + confidence + official
+          anchor + interpretation). GT Target Mode for Army/Marines AFCT. */}
       {standing && (
         <TrajectoryCard
           currentStanding={standing}
           projectedTestDay={trajectory?.projected_test_day ?? null}
           primaryMetric={trajectory?.primary_metric ?? null}
+          officialAfqt={officialAfqt}
+          officialDate={officialDate}
+          testDateIso={profile.target_test_date}
           gtTargetMode={isGtMode}
           targetValue={effectiveTarget.target}
           targetSource={effectiveTarget.source}
