@@ -4,7 +4,59 @@ import EmailCapture from "@/components/EmailCapture";
 import BrandHero from "@/components/BrandHero";
 import GapToGoalRail from "@/components/GapToGoalRail";
 import TestimonialWall from "@/components/TestimonialWall";
+import JsonLd from "@/components/JsonLd";
 import { QUESTIONS_PLUS, TOPIC_COUNT, SUBTEST_COUNT } from "@/lib/bank-stats";
+
+// Entity anchor for search + AI engines: who we are (Organization) and what the
+// product is (WebApplication / SoftwareApplication with its free + paid offers).
+const HOME_SCHEMA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://asvabhero.com/#organization",
+      name: "ASVAB Hero",
+      url: "https://asvabhero.com",
+      logo: "https://asvabhero.com/og-image.png",
+      description:
+        "Free, adaptive ASVAB test-prep app: a free diagnostic with estimated AFQT, free score calculators, 500+ job matches, and a daily adaptive practice loop built on evidence-based learning science.",
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://asvabhero.com/#webapp",
+      name: "ASVAB Hero",
+      url: "https://asvabhero.com",
+      applicationCategory: "EducationalApplication",
+      operatingSystem: "Any (web)",
+      browserRequirements: "Requires a modern web browser",
+      publisher: { "@id": "https://asvabhero.com/#organization" },
+      description:
+        "Free ASVAB diagnostic and calculators plus a daily adaptive practice loop. Free account includes your saved score report, weakest-topic map, spaced Mistake Bank, and a daily adaptive block. Pro adds unlimited practice, full-length timed simulations, and deeper analytics.",
+      offers: [
+        {
+          "@type": "Offer",
+          name: "Free",
+          price: "0",
+          priceCurrency: "USD",
+        },
+        {
+          "@type": "Offer",
+          name: "Pro (monthly)",
+          price: "9.99",
+          priceCurrency: "USD",
+          url: "https://asvabhero.com/pricing",
+        },
+        {
+          "@type": "Offer",
+          name: "Pro (annual)",
+          price: "49.99",
+          priceCurrency: "USD",
+          url: "https://asvabhero.com/pricing",
+        },
+      ],
+    },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "ASVAB Calculator 2026: AFQT, GT & Line Scores (All Branches)",
@@ -18,6 +70,7 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <div>
+      <JsonLd data={HOME_SCHEMA} />
       {/* ────────────────────────────────────────────────────────────────────
          HERO — recruit's actual goal, not a feature pitch.
          One primary CTA (diagnostic, the conversion engine), one secondary.

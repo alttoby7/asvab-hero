@@ -25,6 +25,7 @@ import TopicBreakdown from "./TopicBreakdown";
 import NextStepCard from "./NextStepCard";
 import GtPostBlockCard from "./GtPostBlockCard";
 import QuestionReviewList from "./QuestionReviewList";
+import DiagnosticResultsBridge from "./DiagnosticResultsBridge";
 import Link from "next/link";
 import { useEntitlement } from "@/hooks/useEntitlement";
 
@@ -218,23 +219,42 @@ export default function TestResults({
         <GtPostBlockCard userId={userId} />
       )}
 
-      {/* Topic breakdown — top-3 strong / top-3 weak */}
-      <TopicBreakdown topicResults={topicResults} />
+      {/* Anonymous users: soft-gate the personalized artifact behind a free
+         account. The top-line scores above stay visible (the immediate answer +
+         AI/search landing payoff); the breakdown, per-question review, and plan
+         are unlocked by signing up. The just-finished diagnostic is held in
+         localStorage and migrated into the new account on first authed app load
+         (AppLayout → syncLocalHistoryToRemote), so nothing is lost. */}
+      {!userId && (
+        <DiagnosticResultsBridge
+          afqt={isAfqtMode ? afqtEstimate.score : primary?.score ?? afqtEstimate.score}
+          questionCount={questions.length}
+          isAfqtMode={isAfqtMode}
+        />
+      )}
 
-      {/* Score by Subtest */}
-      <section>
-        <h3 className="mb-4 font-display text-lg font-bold text-text-primary">
-          Score by Subtest
-        </h3>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {subtestResults.map((result) => (
-            <SubtestCard key={result.subtest} result={result} />
-          ))}
-        </div>
-      </section>
+      {/* Topic breakdown + subtest scores + next step — gated to authed users. */}
+      {userId && (
+        <>
+          {/* Topic breakdown — top-3 strong / top-3 weak */}
+          <TopicBreakdown topicResults={topicResults} />
 
-      {/* Single deterministic next-step recommendation */}
-      <NextStepCard recommendation={recommendation} />
+          {/* Score by Subtest */}
+          <section>
+            <h3 className="mb-4 font-display text-lg font-bold text-text-primary">
+              Score by Subtest
+            </h3>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {subtestResults.map((result) => (
+                <SubtestCard key={result.subtest} result={result} />
+              ))}
+            </div>
+          </section>
+
+          {/* Single deterministic next-step recommendation */}
+          <NextStepCard recommendation={recommendation} />
+        </>
+      )}
 
       {/* CTAs */}
       <section className="space-y-3">
@@ -254,11 +274,12 @@ export default function TestResults({
           </svg>
         </Link>
 
-        {/* Non-Pro → the FREE score-moving plan (save the score, start the loop).
-           This is the peak-intent moment, mirroring the calculator bridge. */}
-        {!entitlement.isPro && (
+        {/* Authed free users → their free plan. Anon users get this as the
+           primary CTA inside the DiagnosticResultsBridge above, so it's gated
+           to signed-in users here to avoid a duplicate ask. */}
+        {userId && !entitlement.isPro && (
           <Link
-            href={userId ? "/app/plan" : "/signup?next=%2Fapp%2Fplan"}
+            href="/app/plan"
             className="flex w-full items-center justify-center gap-2 rounded-xl border border-[#f97316]/40 bg-[#0a1628] px-6 py-3.5 font-display text-base font-bold text-[#f97316] no-underline transition-all duration-200 hover:bg-[#101e36]"
           >
             <svg
@@ -270,9 +291,7 @@ export default function TestResults({
             >
               <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            {userId
-              ? "Go to my free plan"
-              : "Save my score & start my free plan"}
+            Go to my free plan
           </Link>
         )}
 
@@ -323,8 +342,9 @@ export default function TestResults({
       )}
       {/* ── End Phase E ───────────────────────────────────────────────────── */}
 
-      {/* Per-question review (collapsed by default) */}
-      <QuestionReviewList questions={questions} answers={answers} />
+      {/* Per-question review (collapsed by default) — gated to authed users;
+         anon users unlock it via the free-account bridge above. */}
+      {userId && <QuestionReviewList questions={questions} answers={answers} />}
     </div>
   );
 }

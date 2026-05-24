@@ -1,14 +1,20 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useSession } from "@/hooks/useSession";
+import { syncLocalHistoryToRemote } from "@/lib/practice/profile-sync";
 import AppNav from "@/components/AppNav";
 import { AnalyticsUserBinder } from "@/components/AnalyticsUserBinder";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const { session, loading } = useSession();
   const router = useRouter();
+  // Gate children on the one-time anon→authed history migration so the first
+  // /app page (e.g. /app/plan from the diagnostic results bridge) reads the
+  // just-migrated attempt instead of racing it. Returns instantly when there's
+  // no local history, so signed-up-and-returning users see no delay.
+  const [migrating, setMigrating] = useState(true);
 
   useEffect(() => {
     if (!loading && !session) {
@@ -16,7 +22,22 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     }
   }, [loading, session, router]);
 
-  if (loading) {
+  useEffect(() => {
+    if (loading) return;
+    if (!session) {
+      setMigrating(false);
+      return;
+    }
+    let cancelled = false;
+    syncLocalHistoryToRemote(session.user.id).finally(() => {
+      if (!cancelled) setMigrating(false);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [loading, session]);
+
+  if (loading || migrating) {
     return (
       <div className="flex min-h-screen items-center justify-center bg-navy text-text-tertiary text-sm">
         Loading…
