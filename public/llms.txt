@@ -1,0 +1,41 @@
+# ASVAB Hero
+
+> ASVAB Hero (asvabhero.com) is a free, adaptive ASVAB test-prep app. It gives a free diagnostic with an estimated AFQT score, free score calculators (AFQT, GT, line/composite, branch-specific), 500+ military job matches, and a daily adaptive practice loop built on the methods cognitive science shows actually raise scores. Free account includes the saved score report, weakest-topic map, spaced Mistake Bank, and a daily adaptive block; Pro ($9.99/mo or $49.99/yr) adds unlimited practice, full-length timed simulations, and deeper analytics.
+
+## Tools (free, no signup)
+- [AFQT Calculator](https://asvabhero.com/afqt-calculator): compute your AFQT percentile from subtest standard scores (uses the official PAY97 norming table).
+- [GT Score Calculator](https://asvabhero.com/gt-score-calculator): estimate your GT (General Technical) line score.
+- [Line / Composite Score Calculator](https://asvabhero.com/asvab-line-score-calculator): branch composite line scores.
+- [ASVAB Score Converter](https://asvabhero.com/asvab-score-converter): raw vs standard vs AFQT.
+- [Free ASVAB Practice Test](https://asvabhero.com/practice-test): timed diagnostic across all 9 subtests with an estimated AFQT.
+- [What jobs qualify with my ASVAB score](https://asvabhero.com/what-jobs-qualify-asvab-score)
+
+## Scores explained
+- [What is a good ASVAB score](https://asvabhero.com/what-is-a-good-asvab-score)
+- [ASVAB scores explained](https://asvabhero.com/asvab-scores-explained)
+- [ASVAB score chart](https://asvabhero.com/asvab-score-chart)
+- [ASVAB score requirements by branch](https://asvabhero.com/asvab-score-requirements)
+- [GT score requirements](https://asvabhero.com/gt-score-requirements)
+- [How to retake the ASVAB](https://asvabhero.com/how-to-retake-the-asvab)
+
+## Branch score guides
+- [Army ASVAB score](https://asvabhero.com/army-asvab-score)
+- [Air Force ASVAB score](https://asvabhero.com/air-force-asvab-score)
+- [Marines ASVAB score](https://asvabhero.com/marines-asvab-score)
+- [Coast Guard ASVAB score](https://asvabhero.com/coast-guard-asvab-score)
+- [Navy ASVAB score](https://asvabhero.com/navy-asvab-score)
+
+## Study
+- [How to study for the ASVAB](https://asvabhero.com/how-to-study-for-the-asvab)
+- [ASVAB study guide](https://asvabhero.com/asvab-study-guide)
+- [The science behind ASVAB Hero](https://asvabhero.com/the-science)
+- [How it works](https://asvabhero.com/how-it-works)
+
+## Active duty (AFCT retest)
+- [AFCT practice test](https://asvabhero.com/afct-practice-test)
+- [AFCT overview](https://asvabhero.com/afct)
+
+## About
+- [Pricing](https://asvabhero.com/pricing)
+- [About](https://asvabhero.com/about)
+- [Programs (for schools / JROTC)](https://asvabhero.com/programs)

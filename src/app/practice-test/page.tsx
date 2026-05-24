@@ -3,7 +3,6 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PracticeTestClient from "@/components/practice-test/PracticeTestClient";
 import BrandHero from "@/components/BrandHero";
-import EmailCapture from "@/components/EmailCapture";
 
 export const metadata: Metadata = {
   title: "ASVAB Practice Test: Diagnostic + Subtest Drills",
@@ -83,15 +82,6 @@ export default function PracticeTestPage() {
       </div>
 
       <PracticeTestClient />
-
-      <section className="mt-10">
-        <EmailCapture
-          headline="Want a study plan that targets your weakest subtests?"
-          subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
-          cta="Email me the plan"
-          tag="practice-test"
-        />
-      </section>
     </div>
   );
 }

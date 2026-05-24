@@ -293,6 +293,108 @@ export async function saveAttempt(
   };
 }
 
+/**
+ * Migrate any anonymous practice history from localStorage into the now-authed
+ * user's Supabase account. Called once after signup/login so the diagnostic an
+ * anon visitor just completed (and was promised would be "saved") actually lands
+ * in their account — powering /app/plan, the Mistake Bank, and topic_stats.
+ *
+ * localStorage survives the signup redirect (same origin), so the rich attempt
+ * data is intact here even though it never hit the DB while anonymous.
+ *
+ * Idempotent: dedupes against attempts already present remotely (by
+ * `client_attempt_id`), so a double-mount or a re-login is a no-op. The DB
+ * trigger on `attempts` (migration 0017) handles topic_stats + Mistake Bank
+ * ingestion, exactly as a live authed attempt would. On full success the local
+ * history/profile are cleared so subsequent loads read from the server of record.
+ */
+export async function syncLocalHistoryToRemote(
+  userId: string
+): Promise<{ synced: number }> {
+  const history = readLocalHistory();
+  if (history.length === 0) return { synced: 0 };
+
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const sb = getSupabaseBrowserClient() as any;
+
+    // Dedupe against attempts already stored for this user.
+    const { data: existing, error: selErr } = await sb
+      .from("attempts")
+      .select("client_attempt_id")
+      .eq("user_id", userId);
+    if (selErr) throw selErr;
+    const seen = new Set(
+      ((existing as { client_attempt_id: string }[] | null) ?? []).map(
+        (r) => r.client_attempt_id
+      )
+    );
+
+    const toInsert = history
+      .filter((a) => !seen.has(a.client_attempt_id))
+      .map((a) => ({
+        user_id: userId,
+        client_attempt_id: a.client_attempt_id,
+        variant_code: a.variant_code,
+        source: a.source,
+        subtest: a.subtest,
+        topic_id: a.topic_id,
+        started_at: a.started_at,
+        completed_at: a.completed_at,
+        duration_seconds: a.duration_seconds,
+        question_count: a.question_count,
+        correct_count: a.correct_count,
+        afqt_estimate: a.afqt_estimate,
+        results_by_subtest: a.results_by_subtest,
+        results_by_topic: a.results_by_topic,
+        question_results: a.question_results,
+        test_type: a.test_type ?? null,
+        primary_metric_code: a.primary_metric_code ?? null,
+        primary_metric_estimate: a.primary_metric_estimate ?? null,
+        synced_from_local: true,
+      }));
+
+    if (toInsert.length > 0) {
+      const { error: insErr } = await sb.from("attempts").insert(toInsert);
+      if (insErr) throw insErr;
+
+      // Stamp the free-diagnostic gate if a diagnostic was among the synced
+      // attempts (idempotent: only writes when still null).
+      const firstDiagnostic = toInsert.find(
+        (a) => a.variant_code === "diagnostic"
+      );
+      if (firstDiagnostic) {
+        try {
+          await sb
+            .from("profiles")
+            .update({
+              free_diagnostic_used_at:
+                firstDiagnostic.completed_at ?? new Date().toISOString(),
+            })
+            .eq("user_id", userId)
+            .is("free_diagnostic_used_at", null);
+        } catch {
+          /* non-blocking */
+        }
+      }
+    }
+
+    // Fully migrated — drop the local copies so the server is the only record.
+    writeLocalHistory([]);
+    writeLocalProfile([]);
+
+    return { synced: toInsert.length };
+  } catch (err) {
+    // Never block the app on a sync failure; keep local history so a later
+    // mount can retry. Surface it so we know if migration is silently failing.
+    console.error("[syncLocalHistoryToRemote] failed:", err);
+    Sentry.captureException(err, {
+      tags: { area: "syncLocalHistoryToRemote" },
+    });
+    return { synced: 0 };
+  }
+}
+
 /** Generate a UUID-ish client_attempt_id (no `crypto.randomUUID` polyfill needed). */
 export function generateClientAttemptId(): string {
   if (

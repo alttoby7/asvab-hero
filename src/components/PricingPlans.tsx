@@ -18,19 +18,19 @@ const ANNUAL_PRICE_ID = "price_1TRIUPDjRScowBLlwZK8YuyC";
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 
 const FREE_FEATURES = [
-  "Daily adaptive AFQT practice (1 block/day)",
-  "Spaced Mistake Bank — unlimited review",
-  "Full diagnostic + per-question explanations",
-  "Your weekly study plan",
+  "Full diagnostic + your saved score report",
+  "Your weakest topics ranked — every answer explained",
+  "Daily adaptive practice — the part that moves your score",
+  "Saved score history + resume on any device",
   "ASVAB calculators + 500+ job matching",
 ];
 
 const PRO_FEATURES = [
   "Everything in Free",
-  "Unlimited adaptive practice + subtest drills",
-  "Full-length timed simulations",
-  "Score tracking, history + deeper analytics",
-  "Spaced-repetition flashcards",
+  "Unlimited adaptive practice + targeted subtest drills",
+  "Full-length, timed sims — test under real conditions",
+  "Deeper analytics + score-trajectory tracking",
+  "Spaced-repetition flashcards (all decks)",
 ];
 
 interface PricingPlansProps {
@@ -185,7 +185,8 @@ export default function PricingPlans({
             <span className="text-text-tertiary"> / forever</span>
           </div>
           <p className="mt-4 text-sm text-text-secondary">
-            Everything you need to understand your ASVAB scores and find qualifying jobs.
+            A free account that saves your diagnostic and turns it into a daily,
+            score-moving plan.
           </p>
           <ul className="mt-6 space-y-3">
             {FREE_FEATURES.map((f) => (
@@ -237,7 +238,8 @@ export default function PricingPlans({
             </p>
           )}
           <p className="mt-4 text-sm text-text-secondary">
-            Serious prep tools to maximize your score and unlock your dream job.
+            Go faster: unlimited practice and full-length, timed sims for the
+            final push to your target score.
           </p>
           <ul className="mt-6 space-y-3">
             {PRO_FEATURES.map((f) => (

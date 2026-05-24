@@ -1,4 +1,58 @@
+# asvabhero.com — open to search and AI crawlers.
+# AI-referred visitors (esp. ChatGPT) are our highest-intent traffic, so the
+# citation/search bots are explicitly welcomed below.
+
 User-agent: *
+Allow: /
+
+# ── OpenAI ──────────────────────────────────────────────
+# OAI-SearchBot = inclusion in ChatGPT search results/citations
+# ChatGPT-User  = user-triggered browsing inside ChatGPT
+# GPTBot        = model training (allowing it also aids freshness)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# ── Perplexity ──────────────────────────────────────────
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# ── Google (AI Overviews / Gemini grounding) ────────────
+User-agent: Google-Extended
+Allow: /
+
+# ── Anthropic (Claude) ──────────────────────────────────
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+# ── Microsoft Copilot / Bing ────────────────────────────
+User-agent: bingbot
+Allow: /
+
+# ── Apple Intelligence ──────────────────────────────────
+User-agent: Applebot-Extended
+Allow: /
+
+# ── Amazon ──────────────────────────────────────────────
+User-agent: Amazonbot
+Allow: /
+
+# ── Common Crawl (training corpus many models pull from) ─
+User-agent: CCBot
 Allow: /
 
 Sitemap: https://asvabhero.com/sitemap.xml

@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "node scripts/generate-sitemap.mjs && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "indexnow": "node scripts/indexnow-ping.mjs"
   },
   "dependencies": {
     "@sentry/nextjs": "^10.53.1",
