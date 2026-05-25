@@ -39,7 +39,7 @@ export function getNextAction(input: NextActionInput): NextAction {
   if (!input.hasAttempts) {
     return {
       label: "Take your diagnostic",
-      sublabel: "30 questions, 18 minutes — calibrates your study plan",
+      sublabel: "30 questions, 18 minutes, calibrates your study plan",
       href: "/practice-test?variant=diagnostic",
     };
   }
@@ -60,11 +60,11 @@ export function getNextAction(input: NextActionInput): NextAction {
 }
 
 // =============================================================
-// WS3 — Trajectory-aware "today's prescription"
+// WS3, Trajectory-aware "today's prescription"
 //
 // Pure function: from current standing + target jobs + study cadence +
 // days-to-test, returns the single most useful next action. Correct even with
-// sparse data — it NEVER requires a predicted score and NEVER emits a point
+// sparse data, it NEVER requires a predicted score and NEVER emits a point
 // delta. Precedence: (1) due mistakes (the closed-loop habit), then (2) a
 // diagnostic when standing is unestablished, then (3) the weakest AFQT subtest.
 //
@@ -89,7 +89,7 @@ export type PrescriptionKind =
 export interface PrescriptionInput {
   /** Per-subtest equated estimates from the current-standing snapshot. */
   subtestEstimates: SubtestEstimates;
-  /** Snapshot confidence — drives whether we recommend a diagnostic first. */
+  /** Snapshot confidence, drives whether we recommend a diagnostic first. */
   confidence: Confidence;
   /** Count of mistake-bank items due now (question_reviews due_at<=now). */
   dueMistakeCount: number;
@@ -105,7 +105,7 @@ export interface PrescriptionInput {
   testType?: TestType | null;
   branch?: Branch | null;
   targetGtScore?: number | null;
-  /** Client-derived GT confidence — overrides AFQT confidence in GT mode. */
+  /** Client-derived GT confidence, overrides AFQT confidence in GT mode. */
   gtConfidence?: Confidence | null;
   /** GT points remaining to target (negative = at/above). */
   gtGap?: number | null;
@@ -121,7 +121,7 @@ export interface Prescription {
   ctaHref: string;
   /** Subtest the action targets, when applicable. */
   subtest?: AsvabSubtest;
-  /** Whether the clock is tight (days-to-test small) — WS4 may emphasize. */
+  /** Whether the clock is tight (days-to-test small), WS4 may emphasize. */
   urgent: boolean;
 }
 
@@ -163,7 +163,7 @@ const DRILL_HREF = (st: AsvabSubtest) =>
 
 /**
  * Compute today's prescription. Precedence:
- *   1. Due mistakes (closed-loop retrieval) — always first when present.
+ *   1. Due mistakes (closed-loop retrieval), always first when present.
  *   2. No attempts / low confidence -> take a diagnostic to establish standing.
  *   3. Drill the weakest AFQT subtest (blocking targets if any need work).
  */
@@ -181,14 +181,14 @@ export function getTrajectoryPrescription(
 
   const urgent = daysToTest != null && daysToTest <= 14;
 
-  // 1. Due mistakes first — the habit that compounds.
+  // 1. Due mistakes first, the habit that compounds.
   if (dueMistakeCount > 0) {
     return {
       kind: "review_mistakes",
       headline: `Review ${dueMistakeCount} due ${
         dueMistakeCount === 1 ? "mistake" : "mistakes"
       }`,
-      body: "Clear your due mistake bank first — retrieval practice on items you've missed is the highest-leverage minutes you have today.",
+      body: "Clear your due mistake bank first, retrieval practice on items you've missed is the highest-leverage minutes you have today.",
       ctaLabel: "Review mistakes",
       ctaHref: "/app/mistakes",
       urgent,
@@ -217,7 +217,7 @@ export function getTrajectoryPrescription(
     const atTarget = gap != null && gap <= 0;
     const body =
       gtConf === "low"
-        ? "GT is your primary target. Keep running adaptive GT blocks — each one sharpens your AR, WK, and PC range and unlocks your target-date projection."
+        ? "GT is your primary target. Keep running adaptive GT blocks, each one sharpens your AR, WK, and PC range and unlocks your target-date projection."
         : atTarget
           ? "Stay sharp with one adaptive GT block. It keeps your AR, WK, and PC range fresh without spending time on non-GT sections."
           : "GT is your primary target. This block updates AR, WK, and PC together, refreshes your GT range, and is the fastest way to close the current gap.";
@@ -258,7 +258,7 @@ export function getTrajectoryPrescription(
     headline: `Drill ${name}`,
     body: blocking
       ? `${name} is the AFQT subtest most likely to move you toward your target jobs. Run a focused drill.`
-      : `Keep your edge sharp with a focused ${name} drill — it's your lowest-evidence AFQT area.`,
+      : `Keep your edge sharp with a focused ${name} drill, it's your lowest-evidence AFQT area.`,
     ctaLabel: `Drill ${subtest}`,
     ctaHref: DRILL_HREF(subtest),
     subtest,
@@ -267,12 +267,12 @@ export function getTrajectoryPrescription(
 }
 
 // =============================================================
-// PILLAR 2 — "Your Plan" weekly routine (powers /app/plan)
+// PILLAR 2, "Your Plan" weekly routine (powers /app/plan)
 //
 // Turns the single-action prescription into the durable ROUTINE CONTRACT the
 // product was missing: which phase the user is in (driven by time-to-test),
 // the daily loop to run on study days, what's scheduled THIS WEEK, and a short
-// "why it works" rationale. Pure function — no fabricated scores, band-only
+// "why it works" rationale. Pure function, no fabricated scores, band-only
 // upstream, safe with sparse data. Phasing mirrors docs/learning-science-strategy.md.
 // =============================================================
 
@@ -318,14 +318,14 @@ export interface WeeklyPlan {
 const STEP_REVIEW: PlanStep = {
   id: "review_mistakes",
   label: "Clear your due mistakes",
-  why: "Retrieval practice on items you've missed — the highest-leverage minutes you have.",
+  why: "Retrieval practice on items you've missed, the highest-leverage minutes you have.",
   ctaHref: "/app/mistakes",
   cadence: "daily",
 };
 const STEP_ADAPTIVE: PlanStep = {
   id: "adaptive_block",
   label: "One adaptive AFQT block",
-  why: "The app targets the right topic at the right difficulty — close to one-on-one tutoring.",
+  why: "The app targets the right topic at the right difficulty, close to one-on-one tutoring.",
   ctaHref: "/app/practice?variant=afqt_adaptive",
   cadence: "daily",
 };
@@ -346,7 +346,7 @@ const STEP_TIMED_SECTION: PlanStep = {
 const STEP_FULL_SIM: PlanStep = {
   id: "full_sim",
   label: "One full-length simulation",
-  why: "Removes test-day novelty — rehearse the real structure and length once a week.",
+  why: "Removes test-day novelty, rehearse the real structure and length once a week.",
   ctaHref: "/app/practice?variant=full_sim",
   cadence: "weekly",
 };
@@ -436,16 +436,16 @@ export function getWeeklyPlan(input: WeeklyPlanInput): WeeklyPlan {
     },
     foundation: {
       label: "Foundation",
-      summary: `More than 8 weeks out — build the habit: clear due mistakes, then one adaptive ${metric} block on each study day. Let spacing do the work.`,
+      summary: `More than 8 weeks out, build the habit: clear due mistakes, then one adaptive ${metric} block on each study day. Let spacing do the work.`,
     },
     build: {
       label: "Build",
-      summary: `3–8 weeks out — keep the daily loop and add one timed ${metric} section each week to build pacing.`,
+      summary: `3–8 weeks out, keep the daily loop and add one timed ${metric} section each week to build pacing.`,
     },
     final: {
       label: "Final stretch",
       summary:
-        "Under 3 weeks — keep the daily loop, add a weekly full-length simulation, and do the pre-test write-out before each sim.",
+        "Under 3 weeks, keep the daily loop, add a weekly full-length simulation, and do the pre-test write-out before each sim.",
     },
   };
 

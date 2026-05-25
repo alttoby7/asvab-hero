@@ -66,7 +66,7 @@ export default function ReviewMode({
                 {/* Subtest badge + question */}
                 <div className="mb-1 flex items-center gap-2">
                   <span className="text-[10px] font-bold uppercase tracking-wider text-text-tertiary">
-                    {q.subtest} — {SUBTEST_NAMES[q.subtest]}
+                    {q.subtest}, {SUBTEST_NAMES[q.subtest]}
                   </span>
                 </div>
                 <p className="truncate text-sm text-text-secondary">
@@ -81,7 +81,7 @@ export default function ReviewMode({
                 }`}
               >
                 {isUnanswered
-                  ? "—"
+                  ? ", "
                   : OPTION_LETTERS[selected as number]}
               </span>
             </button>

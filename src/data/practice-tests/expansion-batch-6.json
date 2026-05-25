@@ -117,7 +117,7 @@
       "The wrong type will strip the threading on the fastener"
     ],
     "correct_index": 1,
-    "explanation": "External snap rings are compressed to fit into a shaft groove; internal rings are expanded to fit inside a bore groove. Using expanding pliers on an external ring — or compressing pliers on an internal ring — pushes the ring the wrong way, risking sudden release and possible injury or ring damage."
+    "explanation": "External snap rings are compressed to fit into a shaft groove; internal rings are expanded to fit inside a bore groove. Using expanding pliers on an external ring, or compressing pliers on an internal ring, pushes the ring the wrong way, risking sudden release and possible injury or ring damage."
   },
   {
     "external_key": "AS-HT-B6-9",
@@ -443,7 +443,7 @@
     "choices": [
       "Latex examination gloves and a dust mask",
       "Face shield over safety glasses, leather gloves, and hearing protection",
-      "Safety glasses only — sparks are not hazardous at short range",
+      "Safety glasses only, sparks are not hazardous at short range",
       "Chemical-splash goggles and a rubber apron"
     ],
     "correct_index": 1,
@@ -578,7 +578,7 @@
     "choices": [
       "Rev the engine to 3,000 RPM to build oil pressure",
       "Turn off the engine, check the oil level, and add oil if needed before restarting",
-      "Continue driving — oil pressure lights are often faulty",
+      "Continue driving, oil pressure lights are often faulty",
       "Add transmission fluid to the engine to restore pressure quickly"
     ],
     "correct_index": 1,
@@ -594,7 +594,7 @@
       "Top off with fresh fluid to dilute the contamination",
       "Flush the brake system and fill with fresh fluid of the correct DOT specification",
       "Add a brake fluid conditioner and continue use",
-      "No action needed — brake fluid darkens naturally and remains effective"
+      "No action needed, brake fluid darkens naturally and remains effective"
     ],
     "correct_index": 1,
     "explanation": "Brake fluid is hygroscopic, meaning it pulls moisture out of the air over time, and that water lowers the boiling point and corrodes calipers, lines, and the master cylinder from the inside. Dark brown fluid is contaminated and needs to be flushed completely from each wheel and refilled with fresh fluid matching the vehicle's DOT specification. Topping off only mixes new fluid with bad and leaves the contamination in place. Brake fluid conditioners are not a recognized service for this and cannot undo moisture absorption. The claim that dark fluid is normal and effective is simply wrong; brake fluid should be light amber."
@@ -667,7 +667,7 @@
     "stem": "A vehicle's power steering pump whines loudly when the steering wheel is turned to full lock in either direction. The fluid level is within the normal range. The MOST likely cause is:",
     "choices": [
       "Overfilled power steering reservoir",
-      "Normal cavitation at the pressure limit — acceptable as long as not held at full lock for extended time",
+      "Normal cavitation at the pressure limit, acceptable as long as not held at full lock for extended time",
       "A failing electric power steering motor",
       "A clogged hydraulic return line causing system overpressure"
     ],
@@ -687,7 +687,7 @@
       "Burning engine oil due to a cracked piston"
     ],
     "correct_index": 2,
-    "explanation": "Light white smoke on cold startup that clears quickly is normal condensation. Persistent white smoke after warm-up that has a sweet smell and does not dissipate strongly indicates coolant (antifreeze) burning in the cylinders — a hallmark of a blown head gasket or cracked block. Oil smoke tends to be blue-gray with an acrid odor."
+    "explanation": "Light white smoke on cold startup that clears quickly is normal condensation. Persistent white smoke after warm-up that has a sweet smell and does not dissipate strongly indicates coolant (antifreeze) burning in the cylinders, a hallmark of a blown head gasket or cracked block. Oil smoke tends to be blue-gray with an acrid odor."
   },
   {
     "external_key": "AS-MR-B6-10",
@@ -697,7 +697,7 @@
     "stem": "A technician performs a cylinder compression test and finds cylinder 3 has 80 psi while all others read 165 psi. Adding a small amount of oil to cylinder 3 through the spark plug hole raises its compression to 150 psi. What does this indicate?",
     "choices": [
       "A bent intake valve in cylinder 3",
-      "Worn piston rings in cylinder 3 — the oil temporarily seals the gap",
+      "Worn piston rings in cylinder 3, the oil temporarily seals the gap",
       "A cracked cylinder wall in cylinder 3",
       "A leaking head gasket between cylinders 3 and 4"
     ],
@@ -837,7 +837,7 @@
       "4 feet"
     ],
     "correct_index": 1,
-    "explanation": "Total lever length = 4 feet = 48 inches. Load arm = 6 inches. Effort arm = 48 − 6 = 42 inches. MA = 42 / 6 = 7 — a significant mechanical advantage. The trap is reporting the effort arm as 4 feet (the whole lever)."
+    "explanation": "Total lever length = 4 feet = 48 inches. Load arm = 6 inches. Effort arm = 48 − 6 = 42 inches. MA = 42 / 6 = 7, a significant mechanical advantage. The trap is reporting the effort arm as 4 feet (the whole lever)."
   },
   {
     "external_key": "MC-LP-B6-8",
@@ -852,7 +852,7 @@
       "The speed of the rope only"
     ],
     "correct_index": 1,
-    "explanation": "A single fixed pulley has a mechanical advantage of 1 — it does not reduce the force needed. Its only benefit is redirecting the force: you pull down to move the load up, which is more convenient. To reduce required force you need a movable pulley or a compound system."
+    "explanation": "A single fixed pulley has a mechanical advantage of 1, it does not reduce the force needed. Its only benefit is redirecting the force: you pull down to move the load up, which is more convenient. To reduce required force you need a movable pulley or a compound system."
   },
   {
     "external_key": "MC-LP-B6-9",
@@ -921,13 +921,13 @@
     "difficulty": 5,
     "stem": "A lever system is set up with the fulcrum 1 foot from the load end and 5 feet from the effort end (total 6 feet). A 200-pound load is placed at the load end. How much effort is needed, and what is the direction of effort relative to the load for a first-class lever?",
     "choices": [
-      "40 pounds applied upward — same direction as the load pushes",
-      "40 pounds applied downward — opposite direction to the load",
+      "40 pounds applied upward, same direction as the load pushes",
+      "40 pounds applied downward, opposite direction to the load",
       "200 pounds applied downward",
       "40 pounds applied horizontally"
     ],
     "correct_index": 1,
-    "explanation": "Effort = Load × Load arm / Effort arm = 200 × 1 / 5 = 40 pounds. In a first-class lever the fulcrum is between effort and load, so effort and load forces act in opposite directions — pressing down at the effort end lifts the load end up. The effort is applied downward (opposite to the upward force the load exerts on its end)."
+    "explanation": "Effort = Load × Load arm / Effort arm = 200 × 1 / 5 = 40 pounds. In a first-class lever the fulcrum is between effort and load, so effort and load forces act in opposite directions, pressing down at the effort end lifts the load end up. The effort is applied downward (opposite to the upward force the load exerts on its end)."
   },
   {
     "external_key": "MC-GW-B6-1",
@@ -996,8 +996,8 @@
     "difficulty": 3,
     "stem": "Three gears are in a row: Gear 1 (driver, 10 teeth) meshes with Gear 2 (20 teeth, idler), which meshes with Gear 3 (10 teeth). In which direction does Gear 3 turn relative to Gear 1?",
     "choices": [
-      "Opposite direction — the idler reverses the direction once",
-      "Same direction — each mesh reverses direction, and two reversals return to original",
+      "Opposite direction, the idler reverses the direction once",
+      "Same direction, each mesh reverses direction, and two reversals return to original",
       "Gear 3 does not rotate when an idler is present",
       "Gear 3 rotates 90 degrees out of phase with Gear 1"
     ],
@@ -1062,7 +1062,7 @@
       "All outputs produce identical torque"
     ],
     "correct_index": 0,
-    "explanation": "When the ring gear is fixed and the sun drives the system, the planet gears walk around the fixed ring, carrying the planet carrier (arm) as output. The speed reduction is significant (overall ratio = 1 + Ring/Sun = 1 + 40/20 = 3:1), giving 3× torque multiplication at the carrier — the highest available output torque configuration for this setup."
+    "explanation": "When the ring gear is fixed and the sun drives the system, the planet gears walk around the fixed ring, carrying the planet carrier (arm) as output. The speed reduction is significant (overall ratio = 1 + Ring/Sun = 1 + 40/20 = 3:1), giving 3× torque multiplication at the carrier, the highest available output torque configuration for this setup."
   },
   {
     "external_key": "MC-GW-B6-10",
@@ -1197,7 +1197,7 @@
       "120 pounds"
     ],
     "correct_index": 1,
-    "explanation": "Normal force = W × cos(θ) = 60 × cos(30°) = 60 × 0.866 ≈ 52 pounds. The component pulling the block down the ramp = W × sin(30°) = 60 × 0.5 = 30 pounds. The normal force is NOT equal to the full weight on a ramp — it is reduced by the cosine of the angle."
+    "explanation": "Normal force = W × cos(θ) = 60 × cos(30°) = 60 × 0.866 ≈ 52 pounds. The component pulling the block down the ramp = W × sin(30°) = 60 × 0.5 = 30 pounds. The normal force is NOT equal to the full weight on a ramp, it is reduced by the cosine of the angle."
   },
   {
     "external_key": "MC-FF-B6-6",
@@ -1422,7 +1422,7 @@
       "40 inches"
     ],
     "correct_index": 1,
-    "explanation": "Fluid volume is conserved: Volume in = Volume out. Input volume = 2 in² × 10 in = 20 in³. Output: 20 in³ = 8 in² × d. d = 20 / 8 = 2.5 inches. The output piston moves a shorter distance but with proportionally more force — the same trade-off as any mechanical advantage system."
+    "explanation": "Fluid volume is conserved: Volume in = Volume out. Input volume = 2 in² × 10 in = 20 in³. Output: 20 in³ = 8 in² × d. d = 20 / 8 = 2.5 inches. The output piston moves a shorter distance but with proportionally more force, the same trade-off as any mechanical advantage system."
   },
   {
     "external_key": "MC-IPH-B6-9",
@@ -1437,7 +1437,7 @@
       "14,400 foot-pounds"
     ],
     "correct_index": 2,
-    "explanation": "Work done against gravity = weight × vertical height = 800 × 6 = 4,800 foot-pounds. The ramp's MA (18/6 = 3) reduces the effort force to 800/3 ≈ 267 pounds, but you push over 18 feet of ramp: 267 × 18 = 4,800 ft-lb — the same result, confirming conservation of energy. Work done on the load always equals weight × height, regardless of the path."
+    "explanation": "Work done against gravity = weight × vertical height = 800 × 6 = 4,800 foot-pounds. The ramp's MA (18/6 = 3) reduces the effort force to 800/3 ≈ 267 pounds, but you push over 18 feet of ramp: 267 × 18 = 4,800 ft-lb, the same result, confirming conservation of energy. Work done on the load always equals weight × height, regardless of the path."
   },
   {
     "external_key": "MC-IPH-B6-10",
@@ -1452,7 +1452,7 @@
       "3,750 N"
     ],
     "correct_index": 2,
-    "explanation": "Area ratio = 75 / 3 = 25. Output force = 60 × 25 = 1,500 N. The output piston moves 50 × (3/75) = 2 cm — short distance but large force. Output piston travel is inversely proportional to the area ratio, confirming energy conservation."
+    "explanation": "Area ratio = 75 / 3 = 25. Output force = 60 × 25 = 1,500 N. The output piston moves 50 × (3/75) = 2 cm, short distance but large force. Output piston travel is inversely proportional to the area ratio, confirming energy conservation."
   },
   {
     "external_key": "MC-IPH-B6-11",
@@ -1542,7 +1542,7 @@
       "Neither momentum nor kinetic energy"
     ],
     "correct_index": 1,
-    "explanation": "In any collision (elastic or inelastic), total momentum is conserved. In a perfectly inelastic collision, kinetic energy is NOT conserved — some is converted to heat, sound, and deformation. Elastic collisions conserve both momentum and kinetic energy."
+    "explanation": "In any collision (elastic or inelastic), total momentum is conserved. In a perfectly inelastic collision, kinetic energy is NOT conserved, some is converted to heat, sound, and deformation. Elastic collisions conserve both momentum and kinetic energy."
   },
   {
     "external_key": "MC-MP-B6-5",
@@ -1572,7 +1572,7 @@
       "2 m/s east"
     ],
     "correct_index": 1,
-    "explanation": "Conservation of momentum: p_before = (3 × 8) + (3 × 0) = 24 kg·m/s. Combined mass = 6 kg. v_after = 24 / 6 = 4 m/s east. The combined mass is twice the original, so velocity is halved. This is a perfectly inelastic collision — kinetic energy is not conserved but momentum is."
+    "explanation": "Conservation of momentum: p_before = (3 × 8) + (3 × 0) = 24 kg·m/s. Combined mass = 6 kg. v_after = 24 / 6 = 4 m/s east. The combined mass is twice the original, so velocity is halved. This is a perfectly inelastic collision, kinetic energy is not conserved but momentum is."
   },
   {
     "external_key": "MC-MP-B6-7",
@@ -1587,7 +1587,7 @@
       "Velocity = 0 m/s; acceleration is upward until it reverses"
     ],
     "correct_index": 1,
-    "explanation": "At the highest point, vertical velocity is momentarily zero (the ball is neither moving up nor down). However, gravity still acts downward at 9.8 m/s² continuously — acceleration due to gravity never stops, regardless of the object's velocity. This is a common misconception: zero velocity does not mean zero acceleration."
+    "explanation": "At the highest point, vertical velocity is momentarily zero (the ball is neither moving up nor down). However, gravity still acts downward at 9.8 m/s² continuously, acceleration due to gravity never stops, regardless of the object's velocity. This is a common misconception: zero velocity does not mean zero acceleration."
   },
   {
     "external_key": "MC-MP-B6-8",

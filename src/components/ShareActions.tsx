@@ -29,7 +29,7 @@ function buildShareText(
   const line =
     `My ASVAB results: AFQT ${afqt}, qualifying for ${qualifyingCount} jobs. ` +
     `Full breakdown: ${url}`;
-  // scores intentionally not itemized in message body — URL has them
+  // scores intentionally not itemized in message body, URL has them
   void scores;
   return line;
 }
@@ -55,7 +55,7 @@ export default function ShareActions({
       setCopied(true);
       setTimeout(() => setCopied(false), 1800);
     } catch {
-      // clipboard denied — fall back to selection
+      // clipboard denied, fall back to selection
       const input = document.createElement("input");
       input.value = url;
       document.body.appendChild(input);

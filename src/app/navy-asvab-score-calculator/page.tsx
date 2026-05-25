@@ -46,7 +46,7 @@ export default function NavyCalculatorPage() {
           Navy ASVAB Score Calculator
         </h1>
         <p className="mt-3 text-lg text-text-secondary">
-          See every Navy rating you qualify for — plus the composite scores
+          See every Navy rating you qualify for, plus the composite scores
           behind Nuclear Field, SEAL, SWCC, and every technical rating.
         </p>
       </div>
@@ -59,7 +59,7 @@ export default function NavyCalculatorPage() {
         ]}
       >
         <p>
-          The Navy uses a <strong>rating system</strong> — your job (rating)
+          The Navy uses a <strong>rating system</strong>, your job (rating)
           is baked into your rank title. Qualifying for a rating depends on
           raw subtest combinations (AR+VE+MK+MC for Nuclear Field, AR+WK+PC+MC
           for Air Traffic Control, etc.). The minimum <strong>AFQT</strong>{" "}
@@ -138,11 +138,11 @@ export default function NavyCalculatorPage() {
             },
             {
               q: "Does the Navy still use the AR+VE+MK+MC line scores?",
-              a: "Yes — most ratings publish requirements as sums of specific subtests rather than named composites like the Army. This means your subtest strengths map directly to eligible ratings.",
+              a: "Yes, most ratings publish requirements as sums of specific subtests rather than named composites like the Army. This means your subtest strengths map directly to eligible ratings.",
             },
             {
               q: "What ASVAB score do SEALs need?",
-              a: "GS + MC + EI ≥ 170 is the standard minimum. Candidates must also pass the PST, meet medical standards, and complete BUD/S. The ASVAB is the first gate — not the hard part.",
+              a: "GS + MC + EI ≥ 170 is the standard minimum. Candidates must also pass the PST, meet medical standards, and complete BUD/S. The ASVAB is the first gate, not the hard part.",
             },
             {
               q: "Can I retake the Navy ASVAB if I miss a rating's cutoff?",
@@ -161,7 +161,7 @@ export default function NavyCalculatorPage() {
 
       <section className="mt-10">
         <EmailCapture
-          headline="Land the Navy rating you want — free 30-day study plan"
+          headline="Land the Navy rating you want, free 30-day study plan"
           subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
           cta="Email me the plan"
           tag="navy-calculator"

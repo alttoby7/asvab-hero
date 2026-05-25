@@ -256,7 +256,7 @@ export default function AppHomePage() {
     load();
   }, [session, sessionLoading, entLoading, router, refreshKey]);
 
-  // gt_target_mode_view — fire once per load when the GT card has real data.
+  // gt_target_mode_view, fire once per load when the GT card has real data.
   useEffect(() => {
     if (loading || !profile || !trajectory) return;
     if (gtViewTracked.current) return;
@@ -318,7 +318,7 @@ export default function AppHomePage() {
     profile.target_test_date_bucket
   );
 
-  // Attempt stats (display only — NOT used to derive standing; the RPC does that)
+  // Attempt stats (display only, NOT used to derive standing; the RPC does that)
   const diagnostics = attempts.filter((a) => a.variant_code === "diagnostic");
   const latestDiagnostic = diagnostics[0] ?? null;
   const totalQ = attempts.reduce((s, a) => s + a.question_count, 0);
@@ -342,7 +342,7 @@ export default function AppHomePage() {
     : flashcardSummaries.filter((s) => s.deck.slug === FREE_DECK_SLUG);
   const flashcardDueCount = accessibleDecks.reduce((s, d) => s + d.due, 0);
 
-  // Today's prescription — derived from the trajectory snapshot (no score math
+  // Today's prescription, derived from the trajectory snapshot (no score math
   // here; getTrajectoryPrescription is a pure function over RPC data).
   const standing = trajectory?.current_standing ?? null;
   const prescription = getTrajectoryPrescription({
@@ -389,7 +389,7 @@ export default function AppHomePage() {
   const officialDate = scoreTimeline?.latestOfficialDate ?? null;
   const hasOfficialAfqt = (scoreTimeline?.officialCount ?? 0) > 0;
 
-  // Testimonial prompt — only after a genuine win (a 7-day streak, or a 2nd
+  // Testimonial prompt, only after a genuine win (a 7-day streak, or a 2nd
   // diagnostic that improved). The component itself shows once (localStorage).
   const earliestDiagnostic = diagnostics[diagnostics.length - 1] ?? null;
   let testimonialContext: string | null = null;
@@ -419,7 +419,7 @@ export default function AppHomePage() {
         )}
       </div>
 
-      {/* Testimonial prompt — only after a genuine win. */}
+      {/* Testimonial prompt, only after a genuine win. */}
       {testimonialContext && (
         <TestimonialPrompt
           userId={session.user.id}
@@ -431,7 +431,7 @@ export default function AppHomePage() {
       {/* Today's Prescription (single highest-leverage action) */}
       <PrescriptionCard prescription={prescription} />
 
-      {/* Official-score capture — prompts until a real official AFQT is logged. */}
+      {/* Official-score capture, prompts until a real official AFQT is logged. */}
       <LogOfficialScoresCard
         hasOfficialAfqt={hasOfficialAfqt}
         targetTestDate={profile.target_test_date}
@@ -439,7 +439,7 @@ export default function AppHomePage() {
         onLogged={() => setRefreshKey((k) => k + 1)}
       />
 
-      {/* Your Plan — the routine contract (replaces the old Mission card so the
+      {/* Your Plan, the routine contract (replaces the old Mission card so the
           page has one hero action above + one "see the whole method" link). */}
       <div className="rounded-2xl border border-navy-border bg-navy-light p-5 sm:p-6">
         <div className="flex items-start justify-between gap-4">
@@ -448,7 +448,7 @@ export default function AppHomePage() {
               Your Plan
             </h2>
             <p className="mt-1 text-sm text-text-secondary">
-              Your full weekly routine — exactly what to do today and this week.
+              Your full weekly routine, exactly what to do today and this week.
             </p>
           </div>
           <Link
@@ -463,8 +463,8 @@ export default function AppHomePage() {
           className="mt-4 inline-flex items-center gap-2 text-sm text-text-secondary no-underline transition-colors hover:text-text-primary"
         >
           {dailyDoneToday
-            ? "Daily challenge — done for today ✓"
-            : "Daily challenge — ready"}
+            ? "Daily challenge, done for today ✓"
+            : "Daily challenge, ready"}
           {profile.streak_count > 0 && (
             <span className="text-text-tertiary">
               · {profile.streak_count}-day streak
@@ -473,14 +473,14 @@ export default function AppHomePage() {
         </Link>
       </div>
 
-      {/* Momentum tiles — streak / volume / accuracy (AFQT lives in the hero). */}
+      {/* Momentum tiles, streak / volume / accuracy (AFQT lives in the hero). */}
       <StatsRow
         streakCount={profile.streak_count}
         totalQuestions={totalQ}
         accuracy={accuracy}
       />
 
-      {/* Trajectory hero — one authoritative AFQT (band + confidence + official
+      {/* Trajectory hero, one authoritative AFQT (band + confidence + official
           anchor + interpretation). GT Target Mode for Army/Marines AFCT. */}
       {standing && (
         <TrajectoryCard

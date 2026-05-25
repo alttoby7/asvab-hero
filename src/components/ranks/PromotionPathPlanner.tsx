@@ -45,7 +45,7 @@ const ENLISTED_PATHS: Record<Branch, RankNode[]> = {
     { grade: "E-4", title: "Petty Officer 3rd Class", abbr: "PO3", timeToAchieve: "~24 months TIS", description: "First petty officer grade. Leading small teams, supervising work center tasks.", monthlyPay: "$2,393" },
     { grade: "E-5", title: "Petty Officer 2nd Class", abbr: "PO2", timeToAchieve: "3–5 years (exam-based)", description: "Leading larger work center sections. Advancing in rating expertise.", monthlyPay: "$2,610" },
     { grade: "E-6", title: "Petty Officer 1st Class", abbr: "PO1", timeToAchieve: "6–10 years (competitive)", description: "Senior petty officer. Division leading petty officer role common.", monthlyPay: "$2,926" },
-    { grade: "E-7", title: "Chief Petty Officer", abbr: "CPO", timeToAchieve: "10–15 years (highly selective)", description: "Chief's Mess. Fundamental shift — the CPO selection is among the most rigorous in any branch.", monthlyPay: "$3,294" },
+    { grade: "E-7", title: "Chief Petty Officer", abbr: "CPO", timeToAchieve: "10–15 years (highly selective)", description: "Chief's Mess. Fundamental shift, the CPO selection is among the most rigorous in any branch.", monthlyPay: "$3,294" },
   ],
   marines: [
     { grade: "E-1", title: "Private", abbr: "Pvt", timeToAchieve: "Entry", description: "Marine Corps Recruit Depot. The most demanding basic training of any branch.", monthlyPay: "$1,833" },

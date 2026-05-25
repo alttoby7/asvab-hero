@@ -11,7 +11,7 @@ import { getSupabaseBrowserClient } from "@/lib/supabase/client";
  *
  * These helpers are pure reads. Difficulties are on the author's 1-5 scale
  * (higher = harder). Until an item has enough first-seen data (n_firstseen >= 60
- * or a narrow CI), `shrunk_difficulty` sits at/near the author prior by design —
+ * or a narrow CI), `shrunk_difficulty` sits at/near the author prior by design, 
  * so callers can always use `shrunk_difficulty` and get a sane number even at
  * cold start.
  */
@@ -27,7 +27,7 @@ export interface ItemCalibration {
   raw_correct_rate: number | null;
   author_difficulty: number; // 1-5 author prior
   ability_adj_difficulty: number | null; // 1-5, ability-adjusted
-  shrunk_difficulty: number; // 1-5, shrunk toward author prior — the field to use
+  shrunk_difficulty: number; // 1-5, shrunk toward author prior, the field to use
   last_calibrated_at: string | null;
 }
 
@@ -41,7 +41,7 @@ export function isFullyCalibrated(c: Pick<ItemCalibration, "n_firstseen">): bool
 /**
  * Fetch calibrations for a set of external_keys.
  * Returns a map keyed by external_key. Missing keys (no exposures yet) are
- * simply absent from the map — callers fall back to the author prior.
+ * simply absent from the map, callers fall back to the author prior.
  *
  * When multiple content_versions exist for a key, the newest is returned
  * (current item content is what callers schedule/select against).

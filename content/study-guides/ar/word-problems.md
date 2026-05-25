@@ -2,19 +2,19 @@
 topic_id: ar.word-problems
 subtest: AR
 title: Multi-Step Word Problems
-summary: Multi-step word problems aren't harder math — they're the same operations done in sequence, and the skill is extracting the right numbers in the right order.
+summary: Multi-step word problems aren't harder math, they're the same operations done in sequence, and the skill is extracting the right numbers in the right order.
 formula_reference:
   - "Read for what's asked first, then work backward to identify what you need"
-  - "Write out each step before calculating — don't solve in your head"
+  - "Write out each step before calculating, don't solve in your head"
   - "Label every number with its unit (dollars, miles, hours, gallons) to catch setup errors"
   - "Check: does the answer make real-world sense? (A bus can't average 600 mph)"
   - "Estimate first: use round numbers to sanity-check the magnitude of your answer"
 pitfalls:
-  - "Answering the wrong question — re-read the last sentence before choosing an answer"
+  - "Answering the wrong question, re-read the last sentence before choosing an answer"
   - "Using all the numbers in the problem whether they're needed or not (some are distractors)"
   - "Skipping the label on intermediate calculations and losing track of what each number represents"
-  - "Stopping one step too early — multi-step means the first result feeds into a second calculation"
-  - "Not checking units in the answer choices — they often signal what the final answer should represent"
+  - "Stopping one step too early, multi-step means the first result feeds into a second calculation"
+  - "Not checking units in the answer choices, they often signal what the final answer should represent"
 worked_examples:
   - prompt: "A unit has 120 soldiers. 1/3 are on patrol, and 25% of the remaining soldiers are at training. How many soldiers are available at base?"
     solution: "Step 1: On patrol = 120 ÷ 3 = 40. Step 2: Remaining = 120 − 40 = 80. Step 3: At training = 25% × 80 = 20. Step 4: At base = 80 − 20 = 60 soldiers"
@@ -26,7 +26,7 @@ worked_examples:
 
 ## What the ASVAB is actually testing
 
-Multi-step word problems test whether you can read carefully, organize a plan, and execute it without losing track of where you are. The math skills involved — addition, subtraction, percents, rates — are all covered in other AR topics. The challenge here is sequencing them correctly under time pressure.
+Multi-step word problems test whether you can read carefully, organize a plan, and execute it without losing track of where you are. The math skills involved, addition, subtraction, percents, rates, are all covered in other AR topics. The challenge here is sequencing them correctly under time pressure.
 
 The test is also checking whether you can ignore irrelevant information. Not every number in a problem is used.
 
@@ -34,7 +34,7 @@ The test is also checking whether you can ignore irrelevant information. Not eve
 
 **1. Read the question last sentence first.** Identify exactly what you're solving for before reading anything else. This tells you where to stop.
 
-**2. Read the full problem and label every piece of information.** Write down what each number represents — don't trust your memory for a multi-step chain.
+**2. Read the full problem and label every piece of information.** Write down what each number represents, don't trust your memory for a multi-step chain.
 
 **3. Identify the sequence of steps.** What do you need to calculate first before you can solve for the final answer? Map it out in order.
 
@@ -42,11 +42,11 @@ The test is also checking whether you can ignore irrelevant information. Not eve
 
 ## Catching distractor numbers
 
-The ASVAB occasionally embeds a number that sounds useful but isn't needed. If you find yourself using every single number in the problem, double-check — one might be there to see if you'll grab it out of habit.
+The ASVAB occasionally embeds a number that sounds useful but isn't needed. If you find yourself using every single number in the problem, double-check, one might be there to see if you'll grab it out of habit.
 
 ## The "one step too early" trap
 
-Multi-step problems often have a plausible answer that corresponds to stopping after the first or second step. The answer choices are designed so that intermediate results appear as options. Always finish reading the question — "how many are left at base?" and "how many total are away from base?" give different answers from the same calculation chain.
+Multi-step problems often have a plausible answer that corresponds to stopping after the first or second step. The answer choices are designed so that intermediate results appear as options. Always finish reading the question, "how many are left at base?" and "how many total are away from base?" give different answers from the same calculation chain.
 
 ## Connection to other topics
 

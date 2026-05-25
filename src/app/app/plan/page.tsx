@@ -1,12 +1,12 @@
 "use client";
 
 /**
- * Pillar 2 — "Your Plan" (/app/plan).
+ * Pillar 2, "Your Plan" (/app/plan).
  *
  * The in-app routine contract: tells a logged-in user exactly how to use the
  * product THIS WEEK. Personalized + executable, not a reading page. All routine
  * logic lives in src/lib/account/next-action.ts (getWeeklyPlan +
- * getTrajectoryPrescription) — this page only loads state and renders. No
+ * getTrajectoryPrescription), this page only loads state and renders. No
  * fabricated scores; everything is band/qualitative.
  */
 
@@ -100,7 +100,7 @@ function startOfWeekMonday(now: Date): Date {
 const SCIENCE_CHIPS: Array<{ title: string; body: string }> = [
   {
     title: "Retrieval + spacing",
-    body: "Pulling an answer from memory — and revisiting it on a widening schedule — builds far more durable recall than re-reading ever does.",
+    body: "Pulling an answer from memory, and revisiting it on a widening schedule, builds far more durable recall than re-reading ever does.",
   },
   {
     title: "Adaptive targeting",
@@ -335,7 +335,7 @@ export default function AppPlanPage() {
         <p className="mt-2 text-sm text-text-secondary">{plan.phaseSummary}</p>
       </header>
 
-      {/* 2. TODAY — the single next action */}
+      {/* 2. TODAY, the single next action */}
       <section>
         <h2 className="mb-2 text-xs font-semibold uppercase tracking-wider text-text-tertiary">
           Today
@@ -343,7 +343,7 @@ export default function AppPlanPage() {
         <PrescriptionCard prescription={prescription} />
       </section>
 
-      {/* 2b. GT TARGET MATH — honest projection or cold-start reason */}
+      {/* 2b. GT TARGET MATH, honest projection or cold-start reason */}
       {isGtMode && (
         <section>
           <h2 className="mb-2 text-xs font-semibold uppercase tracking-wider text-text-tertiary">
@@ -379,13 +379,13 @@ export default function AppPlanPage() {
               </p>
             )}
             <p className="mt-2 text-[11px] text-text-tertiary">
-              Practice proxy based on AR + WK + PC — not an official GT score.
+              Practice proxy based on AR + WK + PC, not an official GT score.
             </p>
           </div>
         </section>
       )}
 
-      {/* 3. YOUR DAILY LOOP — ordered checklist */}
+      {/* 3. YOUR DAILY LOOP, ordered checklist */}
       <section>
         <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-text-tertiary">
           Your daily loop
@@ -437,7 +437,7 @@ export default function AppPlanPage() {
         </ol>
       </section>
 
-      {/* 4. THIS WEEK — scheduled tasks beyond the daily loop */}
+      {/* 4. THIS WEEK, scheduled tasks beyond the daily loop */}
       <section>
         <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-text-tertiary">
           This week
@@ -445,7 +445,7 @@ export default function AppPlanPage() {
         {plan.thisWeek.length === 0 ? (
           <div className="rounded-2xl border border-navy-border bg-navy-light p-4">
             <p className="text-sm text-text-secondary">
-              Nothing scheduled beyond your daily loop this week — consistency is
+              Nothing scheduled beyond your daily loop this week, consistency is
               the goal.
             </p>
           </div>
@@ -517,7 +517,7 @@ export default function AppPlanPage() {
               {!profile.study_anchor && (
                 <p className="mt-1 text-xs text-text-tertiary">
                   Tip: anchor your study to an existing habit (e.g. after
-                  breakfast) — it makes the routine far more likely to stick.
+                  breakfast), it makes the routine far more likely to stick.
                 </p>
               )}
               <Link
@@ -540,7 +540,7 @@ export default function AppPlanPage() {
         </div>
       </section>
 
-      {/* 6. WHY THIS WORKS — expandable chips */}
+      {/* 6. WHY THIS WORKS, expandable chips */}
       <section>
         <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-text-tertiary">
           Why this works
@@ -581,7 +581,7 @@ export default function AppPlanPage() {
         </div>
       </section>
 
-      {/* 7. PROGRESS — study days this week */}
+      {/* 7. PROGRESS, study days this week */}
       <section>
         <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-text-tertiary">
           Progress
@@ -601,13 +601,13 @@ export default function AppPlanPage() {
             />
           </div>
           <p className="mt-2 text-xs text-text-tertiary">
-            We count study days, not hours or questions — showing up is the habit
+            We count study days, not hours or questions, showing up is the habit
             that compounds.
           </p>
         </div>
       </section>
 
-      {/* 8. PRE-TEST WRITING — final phase only */}
+      {/* 8. PRE-TEST WRITING, final phase only */}
       {plan.phase === "final" && (
         <section id="pretest-writing" className="scroll-mt-24">
           <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-text-tertiary">
@@ -619,19 +619,19 @@ export default function AppPlanPage() {
           <div className="rounded-2xl border border-navy-border bg-navy-light p-4">
             <p className="text-sm text-text-secondary">
               Before a high-stakes test, spend 8–10 minutes writing out whatever
-              you&apos;re worried about. It&apos;s not therapy — it clears the
+              you&apos;re worried about. It&apos;s not therapy, it clears the
               mental noise that otherwise eats your working memory on test day, so
               the points you&apos;ve earned actually show up.
             </p>
             <textarea
               value={worries}
               onChange={(e) => setWorries(e.target.value)}
-              placeholder="What's on your mind about the test? Write freely — this stays on your device."
+              placeholder="What's on your mind about the test? Write freely, this stays on your device."
               rows={6}
               className="mt-3 w-full resize-y rounded-lg border border-navy-border bg-navy px-3 py-2 text-sm text-text-primary placeholder:text-text-tertiary focus:border-accent focus:outline-none"
             />
             <p className="mt-2 text-xs text-text-tertiary">
-              This is local-only and not saved — close the page and it&apos;s
+              This is local-only and not saved, close the page and it&apos;s
               gone. The point is the writing, not the record.
             </p>
           </div>

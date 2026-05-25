@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Best ASVAB Practice Test Book 2026 (Tested + Ranked)",
   description:
-    "The 8 best ASVAB practice test books for 2026, ranked by total practice volume. Honest reviews of Kaplan, For Dummies, Mometrix, Barron&apos;s, and more — with edition-recency notes and a side-by-side table.",
+    "The 8 best ASVAB practice test books for 2026, ranked by total practice volume. Honest reviews of Kaplan, For Dummies, Mometrix, Barron&apos;s, and more, with edition-recency notes and a side-by-side table.",
   alternates: {
     canonical: "https://asvabhero.com/best-asvab-practice-test-book",
   },
@@ -21,13 +21,12 @@ export default function BestASVABPracticeTestBookPage() {
           headline:
             "Best ASVAB Practice Test Books for 2026: Ranked by Practice Volume and Edition Recency",
           description:
-            "The 8 best ASVAB practice test books for 2026, ranked by total practice volume. Honest reviews of Kaplan, For Dummies, Mometrix, Barron's, and more — with edition-recency notes and a side-by-side table.",
+            "The 8 best ASVAB practice test books for 2026, ranked by total practice volume. Honest reviews of Kaplan, For Dummies, Mometrix, Barron's, and more, with edition-recency notes and a side-by-side table.",
           url: "https://asvabhero.com/best-asvab-practice-test-book",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",

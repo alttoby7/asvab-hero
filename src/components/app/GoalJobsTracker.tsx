@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * WS4 — Multi-goal-job tracker (replaces JobGoalCard).
+ * WS4, Multi-goal-job tracker (replaces JobGoalCard).
  *
  * Renders up to 3 evaluated target jobs from rpc_get_home_trajectory()'s
- * `target_jobs`. BAND + STATUS ONLY — never a raw point gap. AF/Space Force
+ * `target_jobs`. BAND + STATUS ONLY, never a raw point gap. AF/Space Force
  * jobs (support_status beta/unsupported) render "Not yet reliable for this
  * branch" instead of a status, because their MAGE composites are raw sums while
  * thresholds are percentiles (see catalog.ts MAGE_BETA_REASON).
@@ -147,7 +147,7 @@ function JobCard({ job }: { job: TargetJobGap }) {
       {isBeta ? (
         <div className="mt-3 rounded-lg border border-navy-border bg-navy-light px-3 py-2.5 text-xs text-text-secondary">
           Not yet reliable for this branch. Air Force and Space Force scores use
-          MAGE percentiles, which we can&apos;t estimate accurately yet — so we
+          MAGE percentiles, which we can&apos;t estimate accurately yet, so we
           won&apos;t guess your standing for {job.code}.
         </div>
       ) : (
@@ -215,7 +215,7 @@ export default function GoalJobsTracker({
         </h2>
         <p className="mt-1 text-sm text-text-secondary">
           Track up to 3 target MOS/AFSC/ratings. We&apos;ll show how close you
-          are to each — as a confidence band, not a single number.
+          are to each, as a confidence band, not a single number.
         </p>
         <button
           onClick={() => setAdding(true)}

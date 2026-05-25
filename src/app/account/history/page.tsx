@@ -232,7 +232,7 @@ function HistoryInner() {
                             {a.afqt_estimate}
                           </span>
                         ) : (
-                          <span className="text-text-tertiary">—</span>
+                          <span className="text-text-tertiary">, </span>
                         )}
                       </td>
                     </tr>

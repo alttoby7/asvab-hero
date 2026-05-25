@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * WS4 — Reusable goal-job picker.
+ * WS4, Reusable goal-job picker.
  *
  * Branch tabs + debounced search against `rpc_search_job_catalog`. Used by the
  * onboarding goal step, the account-settings target-jobs manager, and the home
@@ -23,7 +23,7 @@ interface JobPickerProps {
   defaultBranch?: Branch | null;
   /** Called with the chosen catalog entry. */
   onPick: (entry: JobCatalogEntry) => void | Promise<void>;
-  /** Job ids already chosen — shown as disabled "Added". */
+  /** Job ids already chosen, shown as disabled "Added". */
   disabledJobIds?: string[];
   /** Optional message rendered above the list (e.g. limit reached). */
   notice?: string | null;

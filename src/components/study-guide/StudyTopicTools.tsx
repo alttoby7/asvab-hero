@@ -107,7 +107,7 @@ export default function StudyTopicTools({ topicId, subtest, subtestName }: Props
         {pct == null
           ? "Read the concept above, then run a quick drill to lock it in."
           : pct >= 80
-            ? "Strong — keep it warm with the occasional drill."
+            ? "Strong, keep it warm with the occasional drill."
             : "Read the concept above, then drill until this climbs."}
       </p>
 

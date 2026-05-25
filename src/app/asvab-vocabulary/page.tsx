@@ -20,10 +20,9 @@ const articleJsonLd = {
     "ASVAB vocabulary study pays double via the VE formula. Get a high-frequency word list, root word decode system, CAT pacing tips, and a 4-week study plan.",
   url: "https://asvabhero.com/asvab-vocabulary",
   author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
   publisher: {
     "@type": "Organization",
@@ -712,7 +711,7 @@ export default function ASVABVocabularyPage() {
         <div className="my-4 space-y-2">
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-accent">
-              Type 1 &mdash; Direct synonym
+              Type 1, Direct synonym
             </p>
             <p className="mt-1 text-sm text-text-secondary">
               &ldquo;Antagonize most nearly means,&rdquo; answer provoke. Decode
@@ -723,7 +722,7 @@ export default function ASVABVocabularyPage() {
           </div>
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-accent">
-              Type 2 &mdash; Word in sentence context
+              Type 2, Word in sentence context
             </p>
             <p className="mt-1 text-sm text-text-secondary">
               &ldquo;His record provides no reason for apprehension,&rdquo;
@@ -838,7 +837,7 @@ export default function ASVABVocabularyPage() {
           <Link href="/asvab-scoring-and-results">
             ASVAB scoring and results
           </Link>
-          , and rehearse the timing on a timed{" "}
+, and rehearse the timing on a timed{" "}
           <Link href="/practice-test">practice test</Link>.
         </p>
 
@@ -940,7 +939,7 @@ export default function ASVABVocabularyPage() {
           <Link href="/navy-asvab-score-requirements">
             Navy ASVAB score requirements
           </Link>
-          , and browse the full job list in the{" "}
+, and browse the full job list in the{" "}
           <Link href="/air-force-afsc-list">Air Force AFSC list</Link>.
         </p>
 
@@ -1054,7 +1053,7 @@ export default function ASVABVocabularyPage() {
               <Link href="/what-is-a-good-asvab-score">
                 what is a good ASVAB score
               </Link>
-              , then plug your scores into the{" "}
+, then plug your scores into the{" "}
               <Link href="/calculator">calculator</Link> and take a{" "}
               <Link href="/practice-test">practice test</Link>.
             </p>

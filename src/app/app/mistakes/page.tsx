@@ -44,7 +44,7 @@ export default function MistakesPage() {
       }
 
       // GT users: front the queue with the weakest GT subtests (AR/WK/PC by
-      // lowest current point). Best-effort — failure just falls back to default.
+      // lowest current point). Best-effort, failure just falls back to default.
       if (isGtPrepMode(data.test_type ?? null, data.branch ?? null)) {
         try {
           const traj = await getHomeTrajectory(sb);

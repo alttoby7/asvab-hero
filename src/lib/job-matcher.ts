@@ -73,7 +73,7 @@ export function evaluateJobEligibility(
     if (!passed) qualifies = false;
   }
 
-  // Composite checks — AND logic (all must pass)
+  // Composite checks, AND logic (all must pass)
   const checks: RequirementCheck[] = job.requirements.map((req) => {
     const actual = composites[req.composite] ?? 0;
     const delta = actual - req.minScore;
@@ -82,7 +82,7 @@ export function evaluateJobEligibility(
     return { composite: req.composite, required: req.minScore, actual, delta, passed };
   });
 
-  // anyOf checks — OR logic (at least one path must pass)
+  // anyOf checks, OR logic (at least one path must pass)
   if (job.anyOf && job.anyOf.length > 0) {
     const paths = job.anyOf.map((req) => {
       const actual = composites[req.composite] ?? 0;

@@ -170,11 +170,11 @@ export default function MistakeReviewEngine({
           Review complete
         </h2>
         <p className="text-sm text-text-secondary">
-          You worked through {reviewed} retrieval{reviewed === 1 ? "" : "s"} —{" "}
+          You worked through {reviewed} retrieval{reviewed === 1 ? "" : "s"}, {" "}
           <span className="font-semibold text-text-primary">{correctCount} correct</span>
           {againCount > 0 && (
             <>
-              , <span className="font-semibold text-text-primary">{againCount}</span>{" "}
+, <span className="font-semibold text-text-primary">{againCount}</span>{" "}
               to come back
             </>
           )}
@@ -200,7 +200,7 @@ export default function MistakeReviewEngine({
       {/* Header */}
       <div className="flex items-center justify-between">
         <span className="rounded-md bg-accent-dim px-2.5 py-1 text-xs font-semibold tracking-wide text-accent">
-          {current.subtest} — {SUBTEST_NAMES[current.subtest]}
+          {current.subtest}, {SUBTEST_NAMES[current.subtest]}
         </span>
         <span className="font-mono text-sm tabular-nums text-text-tertiary">
           {index + 1} / {queue.length}
@@ -262,10 +262,10 @@ export default function MistakeReviewEngine({
         <div className="space-y-4 border-t border-navy-border pt-5">
           <p className="text-sm font-semibold">
             {gotItRight ? (
-              <span className="text-emerald-400">Correct — locked in a little more.</span>
+              <span className="text-emerald-400">Correct, locked in a little more.</span>
             ) : (
               <span className="text-red-400">
-                Not quite — the answer is {OPTION_LETTERS[current.correctIndex]}.
+                Not quite, the answer is {OPTION_LETTERS[current.correctIndex]}.
               </span>
             )}
           </p>
@@ -277,7 +277,7 @@ export default function MistakeReviewEngine({
           <p className="rounded-lg bg-navy-light px-4 py-3 text-xs leading-relaxed text-text-tertiary">
             <span className="font-semibold text-text-secondary">Why this works:</span>{" "}
             You missed this one before, so we bring it back right before you&apos;d
-            forget. Retrieving it from memory — and being corrected when you slip — is
+            forget. Retrieving it from memory, and being corrected when you slip, is
             the highest-evidence way to make it stick for test day.
           </p>
           <div className="flex justify-end">

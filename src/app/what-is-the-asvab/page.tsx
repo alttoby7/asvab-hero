@@ -25,10 +25,9 @@ export default function WhatIsTheASVABPage() {
             "Learn what the ASVAB test is, how the 10 subtests work, how your AFQT score is calculated, and what every branch requires. Includes all 6 branch minimums.",
           url: "https://asvabhero.com/what-is-the-asvab",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",

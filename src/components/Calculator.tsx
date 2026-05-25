@@ -83,7 +83,7 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
     setScores((prev) => ({ ...prev, [subtest]: value }));
   };
 
-  // Readiness gates — nothing is computed or shown off seeded defaults.
+  // Readiness gates, nothing is computed or shown off seeded defaults.
   const afqtReady = useMemo(
     () => AFQT_SUBTESTS.every((st) => scores[st] != null),
     [scores]
@@ -139,7 +139,7 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
 
   const handleReset = () => setScores(EMPTY_SCORES);
 
-  // Fire `calculator_view_result` once per mount — only when a real, full result exists.
+  // Fire `calculator_view_result` once per mount, only when a real, full result exists.
   const viewedResultRef = useRef(false);
   useEffect(() => {
     if (viewedResultRef.current) return;
@@ -152,7 +152,7 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
     });
   }, [compositesReady, snapshot, afqt, branchFilter]);
 
-  // Debounced `calculator_submit` — fire ~800ms after the user stops adjusting scores.
+  // Debounced `calculator_submit`, fire ~800ms after the user stops adjusting scores.
   // Avoids one event per keystroke, and never fires off the blank/partial state.
   useEffect(() => {
     if (!compositesReady || !snapshot) return;
@@ -177,7 +177,7 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
         />
       )}
 
-      {/* Conversion #1 — the free-plan bridge at the peak-intent result moment.
+      {/* Conversion #1, the free-plan bridge at the peak-intent result moment.
          Replaces the old PDF email capture + straight-to-$9.99 upsell with a
          save-your-score → free-plan signup (the score-moving core is free).
          Waits for all 9 subtests: its success state cites the job count, which
@@ -223,7 +223,7 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
         </div>
       </section>
 
-      {/* AFQT Score — appears once the four AFQT subtests are entered. */}
+      {/* AFQT Score, appears once the four AFQT subtests are entered. */}
       {afqtReady ? (
         <section className="rounded-xl border border-navy-border bg-navy-light p-6">
           <h2 className="mb-4 font-display text-lg font-bold text-text-primary">
@@ -263,14 +263,14 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
         </section>
       )}
 
-      {/* Composite Scores — full 9-subtest results only. */}
+      {/* Composite Scores, full 9-subtest results only. */}
       {compositesReady && (
       <section className="rounded-xl border border-navy-border bg-navy-light p-6">
         <h2 className="mb-4 font-display text-lg font-bold text-text-primary">
           Composite / Line Scores
         </h2>
 
-        {/* Branch tabs — hidden when branch is locked */}
+        {/* Branch tabs, hidden when branch is locked */}
         {!branchFilter && (
           <div className="mb-4 flex flex-wrap gap-2">
             {BRANCH_TAB_ORDER.map((branch) => (
@@ -323,7 +323,7 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
             />
           </section>
 
-          {/* Score Gap Engine — minimum-effort path to closest jobs */}
+          {/* Score Gap Engine, minimum-effort path to closest jobs */}
           <ScoreGapEngine snapshot={snapshot} afqt={afqt} />
 
           {/* Share actions */}

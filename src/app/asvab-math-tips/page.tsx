@@ -19,10 +19,9 @@ const articleJsonLd = {
     "Proven ASVAB math tips for Arithmetic Reasoning and Mathematics Knowledge. Formulas, pacing strategies, and a 5-week study plan to boost your AFQT score.",
   url: "https://asvabhero.com/asvab-math-tips",
   author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
   publisher: {
     "@type": "Organization",
@@ -249,13 +248,13 @@ export default function ASVABMathTipsPage() {
           <h3 className="font-display text-base font-bold text-text-primary">The 3-Step Method</h3>
           <ul className="mt-2 space-y-3 text-sm text-text-secondary">
             <li>
-              <strong className="text-text-primary">Step 1 — WANT:</strong> What is the question actually asking for? Identify the unknown and its unit.
+              <strong className="text-text-primary">Step 1, WANT:</strong> What is the question actually asking for? Identify the unknown and its unit.
             </li>
             <li>
-              <strong className="text-text-primary">Step 2 — HAVE:</strong> What numbers and relationships are given? Write them down with units.
+              <strong className="text-text-primary">Step 2, HAVE:</strong> What numbers and relationships are given? Write them down with units.
             </li>
             <li>
-              <strong className="text-text-primary">Step 3 — CONNECT:</strong> Which operation or formula links HAVE to WANT? Set up the equation, then solve.
+              <strong className="text-text-primary">Step 3, CONNECT:</strong> Which operation or formula links HAVE to WANT? Set up the equation, then solve.
             </li>
           </ul>
         </div>

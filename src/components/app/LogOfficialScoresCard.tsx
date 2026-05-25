@@ -3,7 +3,7 @@
 /**
  * Dashboard card prompting the user to log their OFFICIAL ASVAB scores.
  * Shows whenever no real official AFQT is on record (gated on actual presence,
- * not the profile status string — an incomplete test row must NOT suppress it),
+ * not the profile status string, an incomplete test row must NOT suppress it),
  * and turns into a stronger "did you take your test?" prompt once the user's
  * target test date has passed. Uses the shared OfficialScoreForm.
  */
@@ -37,7 +37,7 @@ export default function LogOfficialScoresCard({
     : "Already have official ASVAB scores?";
   const blurb = testDatePassed
     ? "Add your real results so we can track your progress and time your retake correctly."
-    : "Log your real scores to set your starting point — we'll chart your progress against them and handle retake timing.";
+    : "Log your real scores to set your starting point, we'll chart your progress against them and handle retake timing.";
 
   return (
     <div className="rounded-2xl border border-accent/30 bg-accent-dim/40 p-5 sm:p-6">

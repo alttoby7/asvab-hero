@@ -1,10 +1,10 @@
-import Link from "next/link";
-import { AUTHOR_NAME, AUTHOR_URL } from "@/lib/author";
+import { AUTHOR_DISPLAY } from "@/lib/author";
 
 /**
- * Visible authorship credit that matches the Article `author` schema (the
- * Jordan Avery editorial persona). Pair with an optional "last verified" date
- * to signal freshness to readers and AI/search engines.
+ * Visible authorship credit. Attributed to the ASVAB Hero Editorial Team (the
+ * organization), matching the Article `author` schema. No individual byline.
+ * Pair with an optional "last verified" date to signal freshness to readers and
+ * AI/search engines.
  */
 export default function ArticleByline({
   lastVerified,
@@ -14,16 +14,7 @@ export default function ArticleByline({
 }) {
   return (
     <div className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-text-tertiary">
-      <span>
-        By{" "}
-        <Link
-          href={AUTHOR_URL}
-          className="font-medium text-text-secondary underline-offset-2 hover:text-text-primary hover:underline"
-        >
-          {AUTHOR_NAME}
-        </Link>
-        , Editor
-      </span>
+      <span>By the {AUTHOR_DISPLAY}</span>
       {lastVerified && (
         <>
           <span aria-hidden>·</span>

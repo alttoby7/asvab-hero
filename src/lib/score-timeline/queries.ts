@@ -1,5 +1,5 @@
 /**
- * Unified score timeline — the "connect all scores" read layer.
+ * Unified score timeline, the "connect all scores" read layer.
  *
  * Stitches the three previously-disconnected score stores into one view:
  *   - official_test     ← real_asvab_tests (ground truth)

@@ -1752,7 +1752,7 @@
       "20"
     ],
     "correct_index": 0,
-    "explanation": "60 ÷ 8 = 7.5 — not a whole number, so 8 is not a factor. 60 ÷ 12 = 5; 60 ÷ 15 = 4; 60 ÷ 20 = 3 — all are factors."
+    "explanation": "60 ÷ 8 = 7.5, not a whole number, so 8 is not a factor. 60 ÷ 12 = 5; 60 ÷ 15 = 4; 60 ÷ 20 = 3, all are factors."
   },
   {
     "external_key": "MK-NP-B3-2",

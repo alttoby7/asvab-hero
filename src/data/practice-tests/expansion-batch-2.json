@@ -582,7 +582,7 @@
       "5/3"
     ],
     "correct_index": 1,
-    "explanation": "Multiply numerators and denominators: (3 × 10) / (5 × 9) = 30/45 = 2/3 in lowest terms. The trap ‘5/3’ is what students get when they invert the wrong fraction and multiply — flipping 10/9 to 9/10 then computing (3/5) × (9/10)? No: the inversion error is treating multiplication like division, giving 3/5 ÷ 10/9 = (3/5) × (9/10) = 27/50, or more simply, students who flip both fractions get (5/3) × (9/10) and then lose track. The key takeaway: multiply straight across, then simplify."
+    "explanation": "Multiply numerators and denominators: (3 × 10) / (5 × 9) = 30/45 = 2/3 in lowest terms. The trap ‘5/3’ is what students get when they invert the wrong fraction and multiply, flipping 10/9 to 9/10 then computing (3/5) × (9/10)? No: the inversion error is treating multiplication like division, giving 3/5 ÷ 10/9 = (3/5) × (9/10) = 27/50, or more simply, students who flip both fractions get (5/3) × (9/10) and then lose track. The key takeaway: multiply straight across, then simplify."
   },
   {
     "external_key": "MK-FR-5",
@@ -717,7 +717,7 @@
       "1,570 cm³"
     ],
     "correct_index": 2,
-    "explanation": "V = πr²h = 3.14 × 5² × 10 = 3.14 × 25 × 10 = 785 cm³. Using the diameter (10) as the radius gives 3.14 × 100 × 10 = 3,140 — a common error."
+    "explanation": "V = πr²h = 3.14 × 5² × 10 = 3.14 × 25 × 10 = 785 cm³. Using the diameter (10) as the radius gives 3.14 × 100 × 10 = 3,140, a common error."
   },
   {
     "external_key": "MK-GE-4",
@@ -874,7 +874,7 @@
     "subtest": "AO",
     "topic_id": "ao.3d-visualization",
     "difficulty": 4,
-    "stem": "A cube's faces are colored: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. The cube is rotated 90° to the right (around the vertical axis — the right side swings to the front). What color is now on top?",
+    "stem": "A cube's faces are colored: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. The cube is rotated 90° to the right (around the vertical axis, the right side swings to the front). What color is now on top?",
     "choices": [
       "White",
       "Black",
@@ -919,7 +919,7 @@
     "subtest": "AO",
     "topic_id": "ao.paper-folding-nets",
     "difficulty": 3,
-    "stem": "A flat net consists of 1 center square with 4 squares attached, one to each side (forming a plus/cross shape — 5 squares total). When folded, what 3D shape does it create?",
+    "stem": "A flat net consists of 1 center square with 4 squares attached, one to each side (forming a plus/cross shape, 5 squares total). When folded, what 3D shape does it create?",
     "choices": [
       "A cube",
       "A square pyramid",
@@ -957,7 +957,7 @@
       "Face D"
     ],
     "correct_index": 1,
-    "explanation": "With face A as the base of the cube, B folds up to be the back wall and C folds up to be the front wall — making B and C opposite faces. D and E become the left and right sides (also opposite). F, attached to C’s far edge, folds over to become the top — making F opposite A. Therefore the face opposite B is C."
+    "explanation": "With face A as the base of the cube, B folds up to be the back wall and C folds up to be the front wall, making B and C opposite faces. D and E become the left and right sides (also opposite). F, attached to C’s far edge, folds over to become the top, making F opposite A. Therefore the face opposite B is C."
   },
   {
     "external_key": "AO-PF-5",

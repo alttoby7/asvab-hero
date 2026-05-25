@@ -4,7 +4,7 @@ import Link from "next/link";
 
 interface QuickActionsProps {
   flashcardDueCount: number;
-  /** Lifetime miss count — fallback label when the closed loop is disabled. */
+  /** Lifetime miss count, fallback label when the closed loop is disabled. */
   mistakeCount: number;
   /** Reviews due now in the Spaced Mistake Bank (closed loop). */
   dueMistakeCount: number;
@@ -35,7 +35,7 @@ export default function QuickActions({
       </Link>
 
       {closedLoopEnabled ? (
-        // Free for everyone — reviewing your own mistakes is the core loop.
+        // Free for everyone, reviewing your own mistakes is the core loop.
         <Link
           href="/app/mistakes"
           className="rounded-xl border border-navy-border bg-navy-light px-4 py-4 text-center no-underline transition-colors hover:bg-white/5"
@@ -53,7 +53,7 @@ export default function QuickActions({
           className="rounded-xl border border-navy-border bg-navy-light px-4 py-4 text-center no-underline transition-colors hover:bg-white/5"
         >
           <div className="text-lg font-bold text-accent">
-            {mistakeCount > 0 ? mistakeCount : "—"}
+            {mistakeCount > 0 ? mistakeCount : ", "}
           </div>
           <div className="mt-1 text-xs text-text-tertiary">
             Mistakes

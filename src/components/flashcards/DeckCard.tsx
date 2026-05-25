@@ -25,7 +25,7 @@ export default function DeckCard({ summary, locked, isFreeDeck, requiresAuth }: 
           </span>
         </div>
         <h3 className="pr-16 font-display text-base font-semibold text-text-primary">
-          {deck.title.replace(/^.+? — /, "")}
+          {deck.title.replace(/^.+?, /, "")}
         </h3>
         <p className="mt-1 text-xs text-text-tertiary">{total} cards</p>
         {deck.description && (
@@ -59,7 +59,7 @@ export default function DeckCard({ summary, locked, isFreeDeck, requiresAuth }: 
         </div>
       )}
       <h3 className="pr-16 font-display text-base font-semibold text-text-primary">
-        {deck.title.replace(/^.+? — /, "")}
+        {deck.title.replace(/^.+?, /, "")}
       </h3>
       <div className="mt-2 flex items-center gap-3 text-xs text-text-tertiary">
         <span className={due > 0 ? "font-semibold text-accent" : ""}>{dueLabel}</span>

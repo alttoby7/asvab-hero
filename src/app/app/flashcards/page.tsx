@@ -1,5 +1,5 @@
 /**
- * In-app flashcards deck list — the member-shell home for Cards. Server wrapper
+ * In-app flashcards deck list, the member-shell home for Cards. Server wrapper
  * (noindex) around the shared client; the public, canonical SEO version lives at
  * /flashcards. Keeping signed-in users here means the bottom-tab "Cards" no
  * longer drops them into the marketing chrome.

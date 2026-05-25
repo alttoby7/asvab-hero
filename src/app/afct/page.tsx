@@ -21,10 +21,9 @@ const articleJsonLd = {
     "Learn the AFCT score replacement rule, branch retake policies, BSEP prep programs, and GT-to-MOS thresholds. Free calculator and practice test included.",
   url: "https://asvabhero.com/afct",
   author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
   publisher: {
     "@type": "Organization",

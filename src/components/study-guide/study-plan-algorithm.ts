@@ -302,7 +302,7 @@ export function generateStudyPlan(input: StudyPlanInput): WeekPlan[] {
     const mixedReviewHours = roundToHalf(totalHours * reviewPct);
     const availableForSubtests = totalHours - mixedReviewHours;
 
-    // Allocate by priority — iteratively drop lowest until remaining get ≥ 0.5h
+    // Allocate by priority, iteratively drop lowest until remaining get ≥ 0.5h
     const cap = totalHours * 0.4;
     let eligible = priorities.filter((p) => p.total > 0.05);
 
@@ -332,7 +332,7 @@ export function generateStudyPlan(input: StudyPlanInput): WeekPlan[] {
     // Add mixed review as a pseudo-allocation note
     if (mixedReviewHours >= 0.5) {
       allocations.push({
-        subtest: "AR" as AsvabSubtest, // placeholder — UI should display as "Mixed Review"
+        subtest: "AR" as AsvabSubtest, // placeholder, UI should display as "Mixed Review"
         hours: mixedReviewHours,
         blocks: Math.round(mixedReviewHours * 2),
         priority: -1, // sentinel for mixed review
@@ -372,9 +372,9 @@ function getMilestone(weekIndex: number, totalWeeks: number, phase: string): str
   if (weekIndex === 0) return "Complete initial assessment of all weak areas";
   if (progress < 0.25) return "Cover core concepts in your weakest subtests";
   if (progress < 0.5) return "Take a practice quiz to check progress";
-  if (progress < 0.75) return "Focus on timed practice — build speed and accuracy";
+  if (progress < 0.75) return "Focus on timed practice, build speed and accuracy";
   if (weekIndex === totalWeeks - 2) return "Full practice test under timed conditions";
-  if (weekIndex === totalWeeks - 1) return "Light review only — rest before test day";
+  if (weekIndex === totalWeeks - 1) return "Light review only, rest before test day";
   return "Continue targeted practice on remaining weak areas";
 }
 
@@ -394,12 +394,12 @@ function getWeekExplanation(
   };
 
   if (phase === "Learning") {
-    return `Focus on building fundamentals — ${subtestNames[subtest]} is your top priority this week. ${Math.round(learningPct * 100)}% new material, ${Math.round(practicePct * 100)}% practice.`;
+    return `Focus on building fundamentals, ${subtestNames[subtest]} is your top priority this week. ${Math.round(learningPct * 100)}% new material, ${Math.round(practicePct * 100)}% practice.`;
   }
   if (phase === "Practice") {
     return `Shift to targeted practice. Apply what you've learned in ${subtestNames[subtest]} and other weak areas. Timed sets recommended.`;
   }
-  return `Final review phase — focus on mixed timed practice across all subtests. Stay sharp, don't cram new material.`;
+  return `Final review phase, focus on mixed timed practice across all subtests. Stay sharp, don't cram new material.`;
 }
 
 // ── Download plan as text ───────────────────────────────────────────────
@@ -419,7 +419,7 @@ export function planToText(weeks: WeekPlan[], input: StudyPlanInput): string {
   text += "─".repeat(50) + "\n\n";
 
   for (const week of weeks) {
-    text += `WEEK ${week.weekNumber} — ${week.phase} Phase (${week.startDate})\n`;
+    text += `WEEK ${week.weekNumber}, ${week.phase} Phase (${week.startDate})\n`;
     text += `${week.explanation}\n\n`;
 
     for (const alloc of week.allocations) {

@@ -4,14 +4,14 @@
  * Soft-gate for the diagnostic results artifact (anonymous users only).
  *
  * The top-line score (overall % + Est. AFQT/category) stays visible above this
- * component — that's the immediate answer and the AI/search landing payoff. The
- * *personalized takeaway you keep* — your weakest topics, every answer explained,
- * and your first plan — is gated behind a free account. The anon diagnostic the
+ * component, that's the immediate answer and the AI/search landing payoff. The
+ * *personalized takeaway you keep*, your weakest topics, every answer explained,
+ * and your first plan, is gated behind a free account. The anon diagnostic the
  * visitor just finished is held in localStorage and migrated into their account
  * on first authed app load (see AppLayout → syncLocalHistoryToRemote), so the
  * "Save my score + build my free plan" promise is real, not a retake.
  *
- * No card, no Pro ask here — the $9.99 ask lives downstream (daily-limit / sims),
+ * No card, no Pro ask here, the $9.99 ask lives downstream (daily-limit / sims),
  * mirroring CalculatorResultBridge.
  */
 
@@ -21,7 +21,7 @@ import { trackEvent } from "@/lib/analytics";
 import { RECRUITS_PER_MONTH } from "@/data/social-proof";
 
 interface DiagnosticResultsBridgeProps {
-  /** AFQT estimate (or primary-metric estimate for AFCT modes) — context only. */
+  /** AFQT estimate (or primary-metric estimate for AFCT modes), context only. */
   afqt: number;
   questionCount: number;
   /** AFCT users have no AFQT; tweak the framing to a neutral "score". */
@@ -85,7 +85,7 @@ export default function DiagnosticResultsBridge({
       </h3>
       <p className="mt-2 text-sm leading-relaxed text-text-secondary">
         You just answered {questionCount} questions. Create a free account to keep
-        this result and turn it into a plan — built on the methods cognitive
+        this result and turn it into a plan, built on the methods cognitive
         science shows actually raise scores. No card.
       </p>
 
@@ -137,7 +137,7 @@ export default function DiagnosticResultsBridge({
         </Link>
       </div>
       <p className="mt-3 text-xs text-text-tertiary">
-        Free account, no card — join {RECRUITS_PER_MONTH.toLocaleString()}+ recruits
+        Free account, no card, join {RECRUITS_PER_MONTH.toLocaleString()}+ recruits
         prepping here this month.
       </p>
     </section>

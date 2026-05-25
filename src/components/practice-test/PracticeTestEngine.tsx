@@ -245,7 +245,7 @@ export default function PracticeTestEngine({
     };
 
     // Adaptive path (WS6): only when the flag is on AND the adaptive variant is
-    // active. Inert otherwise — the default fixed-mix path below is unchanged.
+    // active. Inert otherwise, the default fixed-mix path below is unchanged.
     if (shouldUseAdaptive(variant)) {
       // Navy/CG AFCT: override the blueprint with the target rating's weighted
       // composite demand so the adaptive engine drills that line score's

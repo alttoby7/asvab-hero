@@ -25,10 +25,9 @@ export default function AFQTScorePage() {
             "Learn what your AFQT score means, how it's calculated from 4 ASVAB subtests, branch minimums for 2026, and the fastest ways to raise it.",
           url: "https://asvabhero.com/afqt-score",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -1059,7 +1058,7 @@ export default function AFQTScorePage() {
 
         <section className="mt-8 not-prose">
           <EmailCapture
-            headline="Raise your AFQT in 30 days — free plan"
+            headline="Raise your AFQT in 30 days, free plan"
             subhead="A 6-page PDF plan plus a 5-email crash course covering AFQT, line scores, and branch minimums. No spam."
             cta="Email me the plan"
             tag="afqt-score-end"

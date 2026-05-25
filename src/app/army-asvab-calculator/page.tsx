@@ -46,7 +46,7 @@ export default function ArmyCalculatorPage() {
           Army ASVAB Calculator
         </h1>
         <p className="mt-3 text-lg text-text-secondary">
-          See every Army MOS you qualify for — plus the line scores recruiters
+          See every Army MOS you qualify for, plus the line scores recruiters
           actually use to assign you a job.
         </p>
       </div>
@@ -97,16 +97,16 @@ export default function ArmyCalculatorPage() {
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           {[
-            ["GT — General Technical", "VE + AR"],
-            ["CL — Clerical", "VE + AR + MK"],
-            ["CO — Combat", "AR + CS + AS + MC"],
-            ["EL — Electronics", "GS + AR + MK + EI"],
-            ["FA — Field Artillery", "AR + CS + MK + MC"],
-            ["GM — General Maintenance", "GS + AS + MK + EI"],
-            ["MM — Mechanical Maintenance", "AS + MC + EI"],
-            ["OF — Operators & Food", "VE + AS + MC"],
-            ["SC — Surveillance & Comm", "VE + AR + AS + MC"],
-            ["ST — Skilled Technical", "GS + VE + MK + MC"],
+            ["GT, General Technical", "VE + AR"],
+            ["CL, Clerical", "VE + AR + MK"],
+            ["CO, Combat", "AR + CS + AS + MC"],
+            ["EL, Electronics", "GS + AR + MK + EI"],
+            ["FA, Field Artillery", "AR + CS + MK + MC"],
+            ["GM, General Maintenance", "GS + AS + MK + EI"],
+            ["MM, Mechanical Maintenance", "AS + MC + EI"],
+            ["OF, Operators & Food", "VE + AS + MC"],
+            ["SC, Surveillance & Comm", "VE + AR + AS + MC"],
+            ["ST, Skilled Technical", "GS + VE + MK + MC"],
           ].map(([label, formula]) => (
             <div key={label} className="rounded-lg bg-navy px-4 py-3">
               <p className="font-mono text-sm font-bold text-accent">{label}</p>
@@ -161,7 +161,7 @@ export default function ArmyCalculatorPage() {
           </table>
         </div>
         <p className="mt-4 text-sm text-text-secondary">
-          The calculator above checks every Army MOS — not just these. It also
+          The calculator above checks every Army MOS, not just these. It also
           shows which ones you&apos;re <em>close</em> to qualifying for and
           which subtests would close the gap fastest.
         </p>
@@ -187,7 +187,7 @@ export default function ArmyCalculatorPage() {
             },
             {
               q: "Can I pick my MOS before enlisting?",
-              a: "Yes — through a guaranteed MOS contract. If the Army offers you a contract for a specific MOS, that's what you'll train for. Open contracts (where the Army assigns you based on needs) are also available but give up control. Always ask for guaranteed MOS if possible.",
+              a: "Yes, through a guaranteed MOS contract. If the Army offers you a contract for a specific MOS, that's what you'll train for. Open contracts (where the Army assigns you based on needs) are also available but give up control. Always ask for guaranteed MOS if possible.",
             },
             {
               q: "Do I qualify for a signing bonus?",
@@ -206,7 +206,7 @@ export default function ArmyCalculatorPage() {
 
       <section className="mt-10">
         <EmailCapture
-          headline="Unlock the Army MOS you actually want — free 30-day plan"
+          headline="Unlock the Army MOS you actually want, free 30-day plan"
           subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
           cta="Email me the plan"
           tag="army-calculator"

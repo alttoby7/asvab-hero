@@ -22,10 +22,9 @@ const articleJsonLd = {
     "Understand ASVAB scoring and results: AFQT formula with VE double-count, line scores by branch, 2026 minimums, and what to do after testing.",
   url: "https://asvabhero.com/asvab-scoring-and-results",
   author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
   publisher: {
     "@type": "Organization",

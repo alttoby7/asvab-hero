@@ -1,12 +1,12 @@
 "use client";
 
 /**
- * Conversion #1 — the calculator-result FREE-PLAN bridge (the peak-intent moment).
+ * Conversion #1, the calculator-result FREE-PLAN bridge (the peak-intent moment).
  *
  * Replaces the old "30-day PDF" email capture + straight-to-$9.99 Pro upsell.
  * The score the visitor just computed becomes the hook to create a FREE account:
  * save the score, track the climb, and start the free daily plan (adaptive AFQT
- * block + Mistake Bank). The $9.99 ask is intentionally NOT here — it moves
+ * block + Mistake Bank). The $9.99 ask is intentionally NOT here, it moves
  * downstream (daily-limit hit / sims). Honest framing: AFQT tiers vs the real
  * enlistment/quality cutoffs; "evidence-based," never "proven."
  */
@@ -37,13 +37,13 @@ function tierFraming(afqt: number): { target: number; eyebrow: string; headline:
   if (afqt < 65) {
     return {
       target: 65,
-      eyebrow: "Good — aim higher",
+      eyebrow: "Good, aim higher",
       headline: "Solid score. Reaching 65 opens the most competitive jobs.",
     };
   }
   return {
     target: 93,
-    eyebrow: "Strong — now protect it",
+    eyebrow: "Strong, now protect it",
     headline: "Strong score. Push toward 93 (Category I) and lock it in.",
   };
 }
@@ -101,7 +101,7 @@ export default function CalculatorResultBridge({
         <span className="text-accent">●</span> {eyebrow}
       </p>
 
-      {/* Score-gap reveal — the focal moment. */}
+      {/* Score-gap reveal, the focal moment. */}
       <div className="mt-4 flex items-end justify-between gap-4">
         <div>
           <div className="font-mono text-5xl font-extrabold leading-none text-text-primary sm:text-6xl">
@@ -150,7 +150,7 @@ export default function CalculatorResultBridge({
       </h3>
       <p className="mt-2 text-sm leading-relaxed text-text-secondary">
         Create a free account to <span className="text-text-primary">save this score</span>,{" "}
-        track your climb, and start your plan — one adaptive AFQT block a day,
+        track your climb, and start your plan, one adaptive AFQT block a day,
         unlimited Mistake-Bank review, and a weekly plan focused on the four
         subtests that actually move your AFQT. Built on the methods cognitive
         science shows raise scores. No card.
@@ -175,7 +175,7 @@ export default function CalculatorResultBridge({
         </Link>
       </div>
       <p className="mt-3 text-xs text-text-tertiary">
-        Free account, no card — join {RECRUITS_PER_MONTH.toLocaleString()}+ recruits
+        Free account, no card, join {RECRUITS_PER_MONTH.toLocaleString()}+ recruits
         prepping here this month.{" "}
         {!isPro && (
           <>

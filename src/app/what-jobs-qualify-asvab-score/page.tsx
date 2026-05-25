@@ -23,10 +23,9 @@ export default function WhatJobsQualifyASVABScorePage() {
             "Find out what jobs you qualify for with your ASVAB score. Learn the two-gate AFQT and composite system, then check every job in our free calculator.",
           url: "https://asvabhero.com/what-jobs-qualify-asvab-score",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",

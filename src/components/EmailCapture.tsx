@@ -34,7 +34,7 @@ export default function EmailCapture({
 
   // Fire `email_capture_shown` only when the form actually enters the viewport
   // (50% threshold, once per mount). Avoids ghost impressions from off-screen
-  // mounts — see /calculator's 115 mount-fires with 0 conversions.
+  // mounts, see /calculator's 115 mount-fires with 0 conversions.
   useEffect(() => {
     const node = containerRef.current;
     if (!node) return;
@@ -93,7 +93,7 @@ export default function EmailCapture({
       // Persist capture source so a later /signup signup_complete event can
       // attribute back to the originating mount (e.g. `calculator-result`).
       // 14-day TTL; cleared on signup_complete read. Cross-tab leak is
-      // intentional — capture in tab 1 → signup in tab 2 should attribute.
+      // intentional, capture in tab 1 → signup in tab 2 should attribute.
       try {
         localStorage.setItem(
           "asvabhero.last_capture_source",

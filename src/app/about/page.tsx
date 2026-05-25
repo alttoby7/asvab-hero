@@ -16,7 +16,7 @@ export default function AboutPage() {
       </h1>
       <BrandHero
         src="/images/generated/asvab-about-hero.png"
-        alt="A future military recruit studying in a small library — the click-moment when a hard concept becomes clear."
+        alt="A future military recruit studying in a small library, the click-moment when a hard concept becomes clear."
         width={1536}
         height={1024}
         className="mt-8 overflow-hidden rounded-2xl border border-navy-border shadow-2xl shadow-black/40"
@@ -45,7 +45,7 @@ export default function AboutPage() {
         <ul className="list-disc pl-5 space-y-2">
           <li>
             <strong className="text-text-primary">Free ASVAB Calculator</strong>{" "}
-            — Enter your 9 subtest scores, see your AFQT percentile and
+, Enter your 9 subtest scores, see your AFQT percentile and
             branch-specific composites, and browse 500+ qualifying military
             jobs.
           </li>
@@ -53,7 +53,7 @@ export default function AboutPage() {
             <strong className="text-text-primary">
               Pro Practice Tests (coming soon)
             </strong>{" "}
-            — Unlimited timed tests, score tracking, predicted AFQT, smart study
+, Unlimited timed tests, score tracking, predicted AFQT, smart study
             plans, and flashcards.
           </li>
         </ul>

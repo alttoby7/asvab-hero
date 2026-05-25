@@ -9,7 +9,7 @@
  *   - `loadProfile`    → reads localStorage["asvabhero.practiceProfile.v1"]
  *   - `saveAttempt`    → appends to localStorage["asvabhero.practiceHistory.v1"]
  *                        and rebuilds practiceProfile.v1 by replaying every
- *                        attempt — matches the SQL function's formula exactly.
+ *                        attempt, matches the SQL function's formula exactly.
  *
  * **Posterior formula (must match `recompute_topic_stats` in the migration):**
  *   posterior  = (correct + 1) / (seen + 2)
@@ -140,7 +140,7 @@ function writeLocalProfile(profile: TopicStats[]): void {
  * exists, otherwise the array stored in localStorage.
  *
  * For logged-in users: SELECT * FROM topic_stats. If the query fails, falls
- * back to local — this keeps the results screen working even if the DB blip
+ * back to local, this keeps the results screen working even if the DB blip
  * is transient.
  */
 export async function loadProfile(
@@ -220,9 +220,9 @@ export async function saveAttempt(
         .single();
       if (insErr) throw insErr;
 
-      // Durable "study day completed" event (migration 0028) — the dose metric
+      // Durable "study day completed" event (migration 0028), the dose metric
       // for paired-diagnostic AFQT-delta analysis. One row per user per local
-      // day; idempotent. Non-blocking — never fail an attempt over telemetry.
+      // day; idempotent. Non-blocking, never fail an attempt over telemetry.
       try {
         const now = new Date();
         const localDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
@@ -238,7 +238,7 @@ export async function saveAttempt(
 
       // topic_stats recompute AND Spaced Mistake Bank ingestion are handled
       // DB-side by the ingest_attempt_mistakes trigger on `attempts` (migration
-      // 0017) — single authoritative pipeline, fired on the insert above.
+      // 0017), single authoritative pipeline, fired on the insert above.
 
       // Stamp free_diagnostic_used_at for authed users on their first diagnostic.
       if (attempt.variant_code === "diagnostic") {
@@ -263,7 +263,7 @@ export async function saveAttempt(
     } catch (err) {
       // A logged-in user's attempt failed to persist remotely. This is the
       // exact silent failure that hid the Daily Challenge ingest bug for ~9
-      // days — surface it (Sentry + console) before falling through to local
+      // days, surface it (Sentry + console) before falling through to local
       // persistence so we don't lose the attempt but DO get alerted.
       console.error("[saveAttempt] remote insert failed for authed user; falling back to localStorage:", err);
       Sentry.captureException(err, {
@@ -297,7 +297,7 @@ export async function saveAttempt(
  * Migrate any anonymous practice history from localStorage into the now-authed
  * user's Supabase account. Called once after signup/login so the diagnostic an
  * anon visitor just completed (and was promised would be "saved") actually lands
- * in their account — powering /app/plan, the Mistake Bank, and topic_stats.
+ * in their account, powering /app/plan, the Mistake Bank, and topic_stats.
  *
  * localStorage survives the signup redirect (same origin), so the rich attempt
  * data is intact here even though it never hit the DB while anonymous.
@@ -387,7 +387,7 @@ export async function syncLocalHistoryToRemote(
       }
     }
 
-    // Fully migrated — drop the local copies so the server is the only record.
+    // Fully migrated, drop the local copies so the server is the only record.
     writeLocalHistory([]);
     writeLocalProfile([]);
 

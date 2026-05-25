@@ -104,7 +104,7 @@ export default function ScoreInput({
         )}
       </div>
 
-      {/* Score number — large, directly editable */}
+      {/* Score number, large, directly editable */}
       <div className="mb-2 flex justify-center">
         <input
           id={`score-${subtest}`}
@@ -112,7 +112,7 @@ export default function ScoreInput({
           inputMode="numeric"
           pattern="[0-9]*"
           value={inputValue}
-          placeholder="—"
+          placeholder=", "
           onFocus={(e) => {
             isFocused.current = true;
             e.target.select();

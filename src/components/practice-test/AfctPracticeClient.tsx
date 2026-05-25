@@ -47,7 +47,7 @@ function AfctBlockedWithEvent({ reason }: { reason: string }) {
   const { session } = useSession();
   const { entitlement } = useEntitlement();
   useEffect(() => {
-    // Existing GA4 event — unchanged.
+    // Existing GA4 event, unchanged.
     trackEvent(FunnelEvents.PaywallShown, {
       reason,
       from: "afct-practice-test",
@@ -96,7 +96,7 @@ function AfctEngineWithEvent() {
     <PracticeTestEngine
       variant="diagnostic"
       testName="AFCT Practice Diagnostic"
-      testDescription="30 timed questions across all 9 subtests — the same content you'll see on the AFCT. Get your estimated AFQT and GT-driving subtest scores before you risk replacing your official record."
+      testDescription="30 timed questions across all 9 subtests, the same content you'll see on the AFCT. Get your estimated AFQT and GT-driving subtest scores before you risk replacing your official record."
     />
   );
 }

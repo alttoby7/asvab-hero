@@ -46,7 +46,7 @@ function estimateStartingRank(
 
   // Prior service overrides most things
   if (priorService) {
-    reasons.push("Prior military service — entry grade depends on previous rank and branch negotiation.");
+    reasons.push("Prior military service, entry grade depends on previous rank and branch negotiation.");
     return { grade: "E-3", reasons };
   }
 
@@ -74,7 +74,7 @@ function estimateStartingRank(
       reasons.push("JROTC (2+ years) qualifies for E-2 entry.");
     } else {
       grade = Math.max(grade, 2);
-      reasons.push("JROTC credit may qualify for E-2 — confirm with recruiter.");
+      reasons.push("JROTC credit may qualify for E-2, confirm with recruiter.");
     }
   }
 
@@ -104,7 +104,7 @@ function estimateStartingRank(
   }
 
   if (reasons.length === 0) {
-    reasons.push("No advanced entry credits — you'd start at E-1 like most recruits.");
+    reasons.push("No advanced entry credits, you'd start at E-1 like most recruits.");
   }
 
   const gradeStr = `E-${grade}`;
@@ -134,7 +134,7 @@ export default function StartingRankEstimator() {
     <div className="rounded-xl border border-navy-border bg-navy-light overflow-hidden">
       <div className="border-b border-navy-border px-5 py-4">
         <h3 className="font-display text-base font-bold text-text-primary">Starting Rank Estimator</h3>
-        <p className="mt-0.5 text-xs text-text-tertiary">Tell us about your background — we'll show what pay grade you'd likely enter at.</p>
+        <p className="mt-0.5 text-xs text-text-tertiary">Tell us about your background, we'll show what pay grade you'd likely enter at.</p>
       </div>
 
       <div className="p-5 space-y-5">
@@ -183,7 +183,7 @@ export default function StartingRankEstimator() {
             })}
           </div>
 
-          {/* Credits slider — only for some_college */}
+          {/* Credits slider, only for some_college */}
           {education === "some_college" && (
             <div className="mt-3 rounded-lg border border-navy-border bg-navy px-4 py-3">
               <div className="mb-1 flex items-center justify-between">
@@ -262,7 +262,7 @@ export default function StartingRankEstimator() {
               </li>
             ))}
           </ul>
-          <p className="mt-2 text-[11px] text-text-tertiary italic">Always confirm with a recruiter — exact entry grade depends on current policy and availability.</p>
+          <p className="mt-2 text-[11px] text-text-tertiary italic">Always confirm with a recruiter, exact entry grade depends on current policy and availability.</p>
         </div>
       </div>
     </div>

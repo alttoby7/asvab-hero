@@ -20,10 +20,9 @@ const articleJsonLd = {
     "Learn 9 proven ASVAB arithmetic reasoning tips with worked examples, mental math shortcuts, and a 5-week study plan to boost your AR, AFQT, and GT scores.",
   url: "https://asvabhero.com/asvab-arithmetic-reasoning-tips",
   author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
   publisher: {
     "@type": "Organization",
@@ -468,8 +467,8 @@ export default function ASVABArithmeticReasoningTipsPage() {
 
         <section className="my-8 not-prose">
           <EmailCapture
-            headline="Get the 1-page AR formula card — every formula you need on test day"
-            subhead="Order of operations, fraction-decimal-percent table, distance/rate/time, work-rate, mixture, percent change, ratios — plus the word-problem patterns ASVAB writers love."
+            headline="Get the 1-page AR formula card, every formula you need on test day"
+            subhead="Order of operations, fraction-decimal-percent table, distance/rate/time, work-rate, mixture, percent change, ratios, plus the word-problem patterns ASVAB writers love."
             cta="Email me the formula card"
             tag="ar-tips"
           />
@@ -884,8 +883,8 @@ export default function ASVABArithmeticReasoningTipsPage() {
         <section className="mt-10 not-prose">
           <EmailCapture
             variant="inline"
-            headline="Get the 1-page AR formula card — every formula you need on test day"
-            subhead="Order of operations, fraction-decimal-percent table, distance/rate/time, work-rate, mixture, percent change, ratios — plus the word-problem patterns ASVAB writers love."
+            headline="Get the 1-page AR formula card, every formula you need on test day"
+            subhead="Order of operations, fraction-decimal-percent table, distance/rate/time, work-rate, mixture, percent change, ratios, plus the word-problem patterns ASVAB writers love."
             cta="Email me the formula card"
             tag="ar-tips"
           />

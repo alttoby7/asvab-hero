@@ -2,11 +2,11 @@
  * Authenticated practice surface. The app layout (src/app/app/layout.tsx) guards
  * auth + renders AppNav, so this is a thin SERVER wrapper around the shared
  * client engine. Hosts the in-app diagnostic / adaptive AFQT / subtest-drill /
- * full-sim flows — the route the home prescription, Your Plan, recommender, and
+ * full-sim flows, the route the home prescription, Your Plan, recommender, and
  * VariantPicker link to (/app/practice?variant=…). PracticeTestClient reads
  * ?variant and ?subtest.
  *
- * Kept a server component (no "use client") so it can declare `noindex` — this
+ * Kept a server component (no "use client") so it can declare `noindex`, this
  * is the member-shell duplicate of the public, canonical /practice-test.
  */
 

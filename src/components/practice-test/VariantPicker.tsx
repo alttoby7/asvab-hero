@@ -89,7 +89,7 @@ export default function VariantPicker() {
       ? "The score-moving core for Army and Marine reclass prep. Each block targets AR, WK, and PC only and refreshes your GT range after every session. One block a day is free; Pro unlocks unlimited."
       : adaptiveMetric === "G"
         ? "The score-moving core for Air Force/Space Force retraining. Each block targets AR, WK, and PC only and refreshes your General (G) range after every session. One block a day is free; Pro unlocks unlimited."
-        : "The core of the method. Picks the right question at the right difficulty for where you are — close to one-on-one tutoring. One block a day is free; Pro unlocks unlimited.";
+        : "The core of the method. Picks the right question at the right difficulty for where you are, close to one-on-one tutoring. One block a day is free; Pro unlocks unlimited.";
   const adaptiveFreeLabel =
     adaptiveMetric === "GT"
       ? "GT"
@@ -176,7 +176,7 @@ export default function VariantPicker() {
         </div>
       </Link>
 
-      {/* Adaptive AFQT — the free score-moving core */}
+      {/* Adaptive AFQT, the free score-moving core */}
       {adaptiveAvailable && (
         <Link
           href={adaptiveHref}
@@ -337,7 +337,7 @@ export default function VariantPicker() {
         )}
       </div>
 
-      {/* Full-length simulation (Pro) — final-stretch rehearsal */}
+      {/* Full-length simulation (Pro), final-stretch rehearsal */}
       <Link
         href={practiceHref("full_sim", { authed: isAuthed })}
         onClick={(e) => {
@@ -377,7 +377,7 @@ export default function VariantPicker() {
             </p>
             <p className="mt-2 text-sm text-text-tertiary">
               Save this for the final weeks. A full timed run builds stamina and
-              pacing so test day feels familiar — not a daily drill.
+              pacing so test day feels familiar, not a daily drill.
             </p>
           </div>
           <svg

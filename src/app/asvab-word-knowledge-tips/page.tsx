@@ -25,10 +25,9 @@ export default function ASVABWordKnowledgeTipsPage() {
             "Learn 9 proven ASVAB word knowledge tips: VE double-count mechanics, root-word decoding, synonym clusters, trap answer patterns, and CAT pacing strategy.",
           url: "https://asvabhero.com/asvab-word-knowledge-tips",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -459,7 +458,7 @@ export default function ASVABWordKnowledgeTipsPage() {
 
         <section className="my-8 not-prose">
           <EmailCapture
-            headline="100 ASVAB Word Knowledge power words — the high-frequency list"
+            headline="100 ASVAB Word Knowledge power words, the high-frequency list"
             subhead="Real vocab from the ASVAB pool with one-line definitions and memory hooks. The military-flavored words, the sneaky synonyms, and the roots that decode the rest."
             cta="Email me the word list"
             tag="wk-tips"
@@ -1186,7 +1185,7 @@ export default function ASVABWordKnowledgeTipsPage() {
         <section className="mt-10 not-prose">
           <EmailCapture
             variant="inline"
-            headline="100 ASVAB Word Knowledge power words — the high-frequency list"
+            headline="100 ASVAB Word Knowledge power words, the high-frequency list"
             subhead="Real vocab from the ASVAB pool with one-line definitions and memory hooks. The military-flavored words, the sneaky synonyms, and the roots that decode the rest."
             cta="Email me the word list"
             tag="wk-tips"

@@ -35,7 +35,7 @@ export default function QuestionCard({
       {/* Header */}
       <div className="flex items-center justify-between">
         <span className="rounded-md bg-accent-dim px-2.5 py-1 text-xs font-semibold tracking-wide text-accent">
-          {question.subtest} — {SUBTEST_NAMES[question.subtest]}
+          {question.subtest}, {SUBTEST_NAMES[question.subtest]}
         </span>
         <span className="font-mono text-sm tabular-nums text-text-tertiary">
           {questionNumber} / {totalQuestions}

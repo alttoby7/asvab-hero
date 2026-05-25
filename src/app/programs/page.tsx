@@ -65,7 +65,7 @@ const COMPARISON: { dim: string; m2s: string; hero: string }[] = [
   {
     dim: "Getting cadets started",
     m2s: "Each cadet self-registers and links the monitor; no bulk registration",
-    hero: "One join link — your program is running in a day",
+    hero: "One join link, your program is running in a day",
   },
   {
     dim: "Practice model",

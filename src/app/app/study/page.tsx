@@ -2,7 +2,7 @@
  * In-app Study pillar hub. Server-builds the guide index (39 guides across all 9
  * subtests) from the markdown loader, then hands it to a client island that
  * overlays the user's per-topic mastery + studied state + a personalized
- * "focus first" row. noindex — the public /asvab-study-guide is canonical.
+ * "focus first" row. noindex, the public /asvab-study-guide is canonical.
  */
 
 import type { Metadata } from "next";
@@ -51,7 +51,7 @@ export default function AppStudyHubPage() {
         <h1 className="font-display text-2xl font-bold text-text-primary">Study</h1>
         <p className="mt-1 text-sm text-text-secondary">
           Learn the concept, then drill it. We surface the topics dragging your
-          score first — read, run a quick check, and watch your mastery climb.
+          score first, read, run a quick check, and watch your mastery climb.
         </p>
       </header>
       <StudyHubClient

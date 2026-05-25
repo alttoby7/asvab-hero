@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Best ASVAB Study Books 2026 (Tested + Ranked)",
   description:
-    "The 8 best ASVAB study books for 2026, ranked by score-improvement potential. Honest reviews covering Kaplan, Dummies, Mometrix, Peterson's, Barron's, and more — with Amazon links and a side-by-side comparison table.",
+    "The 8 best ASVAB study books for 2026, ranked by score-improvement potential. Honest reviews covering Kaplan, Dummies, Mometrix, Peterson's, Barron's, and more, with Amazon links and a side-by-side comparison table.",
   alternates: {
     canonical: "https://asvabhero.com/best-asvab-study-book",
   },
@@ -25,13 +25,13 @@ const books = [
     practiceTests: "7 full-length",
     bestFor: "All-rounder, high scorer",
     pros: [
-      "Seven full-length practice tests — more than any other book in this list",
+      "Seven full-length practice tests, more than any other book in this list",
       "Covers all 9 subtests in depth, not just the AFQT four",
       "Kaplan's content is tightly aligned to what actually appears on the CAT-ASVAB",
       "Includes online access to additional practice via Kaplan's platform (the BOOK version, not their paid subscription)",
     ],
     cons: [
-      "Heavy — not the book you carry to lunch. Plan a dedicated study space.",
+      "Heavy, not the book you carry to lunch. Plan a dedicated study space.",
       "More material than some recruits need; the sheer size can be paralyzing if you don't know where to start",
     ],
     whoFor:
@@ -48,7 +48,7 @@ const books = [
     practiceTests: "6 full-length",
     bestFor: "Beginner, nervous test-taker",
     pros: [
-      "Plain-language explanations — doesn't assume any background knowledge",
+      "Plain-language explanations, doesn't assume any background knowledge",
       "Six full practice tests, solid volume for the price",
       "Johnston is a retired Army NCO; the military context in explanations is accurate and not generic",
       "Good chapter-by-chapter organization for recruits who need to build from scratch",
@@ -71,8 +71,8 @@ const books = [
     practiceTests: "3 full-length",
     bestFor: "Budget buyer, retake candidate",
     pros: [
-      "Significantly cheaper than Kaplan or Dummies — good value for what you get",
-      "Concise — covers what matters without filler chapters",
+      "Significantly cheaper than Kaplan or Dummies, good value for what you get",
+      "Concise, covers what matters without filler chapters",
       "Three practice tests is enough to measure progress across a 4–6 week plan",
       "Updated for 2025-2026 test content",
     ],
@@ -87,7 +87,7 @@ const books = [
   {
     id: "mometrix-book",
     label: "Best for Visual/Video Learners",
-    title: "Mometrix ASVAB Study Guide (8th ed.) — THE BOOK",
+    title: "Mometrix ASVAB Study Guide (8th ed.), THE BOOK",
     publisher: "Matthew Bowling / Mometrix",
     edition: "8th",
     asin: "1516725069",
@@ -95,18 +95,18 @@ const books = [
     practiceTests: "3 full-length",
     bestFor: "Visual learner, video supplement seeker",
     pros: [
-      "Comes with access to free companion video explanations for key concepts — genuinely useful for visual learners",
+      "Comes with access to free companion video explanations for key concepts, genuinely useful for visual learners",
       "Solid content on all four AFQT subtests",
       "Clear chapter organization, not overwhelming",
       "One of the better Mechanical Comprehension explanations in the print-book category",
     ],
     cons: [
-      "Three practice tests is the minimum for serious prep — supplement with our free diagnostic",
-      "Mometrix's online course is a direct competitor to ASVAB Hero Pro — we're recommending the BOOK ONLY. Do not confuse the two products.",
+      "Three practice tests is the minimum for serious prep, supplement with our free diagnostic",
+      "Mometrix's online course is a direct competitor to ASVAB Hero Pro, we're recommending the BOOK ONLY. Do not confuse the two products.",
     ],
     whoFor:
       "Recruits who learn better with video explanations alongside text. The companion videos are a genuine differentiator for this book. Pair it with our free practice test at asvabhero.com/practice-test to add more test volume.",
-    note: "Important: This is a link to the physical book. Mometrix also sells an online prep course subscription — that is a separate product we are not recommending here.",
+    note: "Important: This is a link to the physical book. Mometrix also sells an online prep course subscription, that is a separate product we are not recommending here.",
   },
   {
     id: "premium-prep",
@@ -120,9 +120,9 @@ const books = [
     bestFor: "Serious self-studier, practice-volume maximizer",
     pros: [
       "Six full-length tests, plus additional online practice questions via Kaplan access",
-      "Focused and slightly leaner than Total Prep — easier to pace if you're time-constrained",
+      "Focused and slightly leaner than Total Prep, easier to pace if you're time-constrained",
       "Kaplan's diagnostic approach helps you prioritize subtests efficiently",
-      "Strong AR and MK explanations — two of the highest-leverage AFQT subtests",
+      "Strong AR and MK explanations, two of the highest-leverage AFQT subtests",
     ],
     cons: [
       "Slightly less content breadth than Total Prep on technical subtests",
@@ -145,10 +145,10 @@ const books = [
       "More attention to branch-specific composite scores than most competitor books",
       "Five practice tests with solid diagnostic breakdowns",
       "Covers the AFQT and all 9 subtests without skimping on the technical sections",
-      "Peterson's military publishing history is deep — content is credible",
+      "Peterson's military publishing history is deep, content is credible",
     ],
     cons: [
-      "Layout and design are more utilitarian than Kaplan — works fine, just not pretty",
+      "Layout and design are more utilitarian than Kaplan, works fine, just not pretty",
       "Peterson's also sells online prep courses; we're recommending the book, not the course",
     ],
     whoFor:
@@ -165,8 +165,8 @@ const books = [
     practiceTests: "6 full-length",
     bestFor: "Mid-range buyer, clean reference format",
     pros: [
-      "Six full-length tests for the price — competitive value",
-      "Barron's formatting is clean and scannable — works well as a quick reference",
+      "Six full-length tests for the price, competitive value",
+      "Barron's formatting is clean and scannable, works well as a quick reference",
       "Good index and chapter headers for recruits who want to jump straight to their weak areas",
       "Barron's test prep reputation is solid and longstanding",
     ],
@@ -188,17 +188,17 @@ const books = [
     practiceTests: "N/A",
     bestFor: "Visual learner, Word Knowledge builder, on-the-go review",
     pros: [
-      "Physical flashcards beat app-based cards for many people — no screen, no distractions",
+      "Physical flashcards beat app-based cards for many people, no screen, no distractions",
       "Covers vocabulary (WK), math formulas (AR + MK), and key facts across all 9 subtests",
-      "Compact enough to carry — use during lunch, commute, or any short break",
+      "Compact enough to carry, use during lunch, commute, or any short break",
       "Pairs well with any study guide book as a spaced-repetition supplement",
     ],
     cons: [
-      "Not a standalone prep resource — you need a full study guide alongside this",
+      "Not a standalone prep resource, you need a full study guide alongside this",
       "Vocabulary coverage is broad, not infinite; supplement with your own flashcards for Word Knowledge",
     ],
     whoFor:
-      "Any recruit, as a supplement to a full study guide. Particularly strong for Word Knowledge vocabulary drilling and math formula memorization. Best used with spaced repetition — review a batch daily, not all at once.",
+      "Any recruit, as a supplement to a full study guide. Particularly strong for Word Knowledge vocabulary drilling and math formula memorization. Best used with spaced repetition, review a batch daily, not all at once.",
     note: "This is a physical flashcard product from Mometrix. Not affiliated with their online subscription course.",
   },
 ];
@@ -218,10 +218,9 @@ export default function BestASVABStudyBookPage() {
             "The 8 best ASVAB study books for 2026, ranked by score-improvement potential. Honest reviews covering Kaplan, Dummies, Mometrix, Peterson's, Barron's, and more.",
           url: "https://asvabhero.com/best-asvab-study-book",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -242,7 +241,7 @@ export default function BestASVABStudyBookPage() {
               name: "How much should I budget for an ASVAB study book?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Most quality ASVAB study guides run $20-35 on Amazon. The budget end (Test Prep Books, Trivium) is $20-25 and gets you 3 practice tests and solid AFQT coverage. The premium end (Kaplan Total Prep) is $30-35 and gets you 6-7 tests plus deeper content on all 9 subtests. Buy one good book and use it — buying three mediocre ones is a waste of money and time.",
+                text: "Most quality ASVAB study guides run $20-35 on Amazon. The budget end (Test Prep Books, Trivium) is $20-25 and gets you 3 practice tests and solid AFQT coverage. The premium end (Kaplan Total Prep) is $30-35 and gets you 6-7 tests plus deeper content on all 9 subtests. Buy one good book and use it, buying three mediocre ones is a waste of money and time.",
               },
             },
             {
@@ -266,7 +265,7 @@ export default function BestASVABStudyBookPage() {
               name: "What's the best ASVAB book for retake candidates?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "For retakes, you usually know your weak subtests from your MEPS score report. Use that as your baseline — you don't need a full content review. A targeted pick: Test Prep Books for budget or Kaplan Premium Prep if you want practice volume. Pair either with our free 30-question diagnostic at asvabhero.com/practice-test to measure where you stand before you burn a retake attempt.",
+                text: "For retakes, you usually know your weak subtests from your MEPS score report. Use that as your baseline, you don't need a full content review. A targeted pick: Test Prep Books for budget or Kaplan Premium Prep if you want practice volume. Pair either with our free 30-question diagnostic at asvabhero.com/practice-test to measure where you stand before you burn a retake attempt.",
               },
             },
             {
@@ -274,7 +273,7 @@ export default function BestASVABStudyBookPage() {
               name: "Are free PDF guides good enough to pass the ASVAB?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Free PDFs can supplement but rarely replace a structured study guide. The issue isn't the price — it's the quality. Most free PDFs have outdated question banks, no full practice tests, and weak explanations. If budget is genuinely tight, use free resources (Khan Academy for math, officialasvab.com for practice questions) plus our free diagnostic at asvabhero.com/practice-test. That combination beats a bad paid book.",
+                text: "Free PDFs can supplement but rarely replace a structured study guide. The issue isn't the price, it's the quality. Most free PDFs have outdated question banks, no full practice tests, and weak explanations. If budget is genuinely tight, use free resources (Khan Academy for math, officialasvab.com for practice questions) plus our free diagnostic at asvabhero.com/practice-test. That combination beats a bad paid book.",
               },
             },
           ],
@@ -291,7 +290,7 @@ export default function BestASVABStudyBookPage() {
           Potential)
         </h1>
         <p className="text-lg leading-relaxed text-text-secondary">
-          Eight books. Ranked by how much they can actually move your score —
+          Eight books. Ranked by how much they can actually move your score, 
           not by who paid for placement. Each review covers what the book does
           well, where it falls short, and who it&apos;s really for.
         </p>
@@ -304,7 +303,7 @@ export default function BestASVABStudyBookPage() {
             Affiliate disclosure:
           </strong>{" "}
           This page contains affiliate links. As an Amazon Associate, ASVAB
-          Hero earns from qualifying purchases — at no extra cost to you. We
+          Hero earns from qualifying purchases, at no extra cost to you. We
           only recommend books we&apos;d give a recruit to study with. Prices
           vary; check Amazon for current pricing before buying.
         </p>
@@ -313,7 +312,7 @@ export default function BestASVABStudyBookPage() {
       {/* TL;DR Top 3 */}
       <section className="mb-12">
         <h2 className="mb-4 font-display text-2xl font-bold text-text-primary">
-          TL;DR — Top 3 Picks
+          TL;DR, Top 3 Picks
         </h2>
         <div className="space-y-3">
           {topThree.map((book, i) => (
@@ -327,7 +326,7 @@ export default function BestASVABStudyBookPage() {
               <div className="flex-1">
                 <p className="font-semibold text-text-primary">{book.title}</p>
                 <p className="mt-0.5 text-sm text-text-secondary">
-                  {book.label} —{" "}
+                  {book.label}, {" "}
                   {i === 0
                     ? "One book to cover everything; 7 practice tests."
                     : i === 1
@@ -365,7 +364,7 @@ export default function BestASVABStudyBookPage() {
           {[
             {
               label: "Edition recency",
-              desc: "2024 or newer. The AFQT format and CAT-ASVAB question bank get updated — older editions have stale practice questions.",
+              desc: "2024 or newer. The AFQT format and CAT-ASVAB question bank get updated, older editions have stale practice questions.",
             },
             {
               label: "Review count threshold",
@@ -396,7 +395,7 @@ export default function BestASVABStudyBookPage() {
         <p className="mt-4 text-sm italic text-text-secondary">
           One trap recruits make constantly: buying an edition more than 2 years
           old because it&apos;s cheap used. The AFQT scoring scale hasn&apos;t
-          fundamentally changed since the PAY97 norm tables — but the practice
+          fundamentally changed since the PAY97 norm tables, but the practice
           question banks do get updated. A 2021 edition won&apos;t reflect
           current CAT-ASVAB format details. Stick to 2024-2026 editions.
         </p>
@@ -580,7 +579,7 @@ export default function BestASVABStudyBookPage() {
             free 30-question diagnostic
           </Link>
           . If you score 70%+ on your target subtests, you may not need a full
-          prep book at all — or you can get away with a budget option rather
+          prep book at all, or you can get away with a budget option rather
           than Kaplan Total Prep.
         </p>
         <p className="mb-3 text-text-secondary leading-relaxed">
@@ -593,7 +592,7 @@ export default function BestASVABStudyBookPage() {
           >
             ASVAB Hero Pro
           </Link>{" "}
-          is $9.99/month and covers all nine subtests with unlimited practice —
+          is $9.99/month and covers all nine subtests with unlimited practice, 
           a different use case from a physical book, but worth knowing before
           you pay $40/month for a competitor course.
         </p>
@@ -613,7 +612,7 @@ export default function BestASVABStudyBookPage() {
           {[
             {
               q: "How much should I budget for an ASVAB study book?",
-              a: "Most quality ASVAB study guides run $20–35 on Amazon. The budget end (Test Prep Books, Trivium) is $20–25 and gets you 3 practice tests and solid AFQT coverage. The premium end (Kaplan Total Prep) is $30–35 and gets you 6–7 tests plus deeper content on all 9 subtests. Buy one good book and use it — buying three mediocre ones is a waste of money and time.",
+              a: "Most quality ASVAB study guides run $20–35 on Amazon. The budget end (Test Prep Books, Trivium) is $20–25 and gets you 3 practice tests and solid AFQT coverage. The premium end (Kaplan Total Prep) is $30–35 and gets you 6–7 tests plus deeper content on all 9 subtests. Buy one good book and use it, buying three mediocre ones is a waste of money and time.",
             },
             {
               q: "Do I need both a study guide AND a practice test book?",
@@ -621,11 +620,11 @@ export default function BestASVABStudyBookPage() {
             },
             {
               q: "When does the edition of an ASVAB book matter?",
-              a: "Don't buy an edition older than 2 years. The AFQT scoring scale hasn't changed fundamentally since the PAY97 norms — but question banks, subtest question counts, and format details get updated regularly. A 2020 edition won't reflect current CAT-ASVAB changes. Stick to 2024-2026 editions.",
+              a: "Don't buy an edition older than 2 years. The AFQT scoring scale hasn't changed fundamentally since the PAY97 norms, but question banks, subtest question counts, and format details get updated regularly. A 2020 edition won't reflect current CAT-ASVAB changes. Stick to 2024-2026 editions.",
             },
             {
               q: "What's the best ASVAB book for retake candidates?",
-              a: "For retakes, use your MEPS score report as your baseline — you know your weak subtests. You don't need a full content review. A targeted pick: Test Prep Books for budget or Kaplan Premium Prep for practice volume. Pair either with the free 30-question diagnostic at asvabhero.com/practice-test to measure where you stand before burning a retake attempt.",
+              a: "For retakes, use your MEPS score report as your baseline, you know your weak subtests. You don't need a full content review. A targeted pick: Test Prep Books for budget or Kaplan Premium Prep for practice volume. Pair either with the free 30-question diagnostic at asvabhero.com/practice-test to measure where you stand before burning a retake attempt.",
             },
             {
               q: "Are free PDF guides good enough to pass the ASVAB?",
@@ -653,7 +652,7 @@ export default function BestASVABStudyBookPage() {
           Side-by-Side Comparison
         </h2>
         <p className="mb-4 text-sm text-text-secondary">
-          Current prices vary — check Amazon links for up-to-date pricing.
+          Current prices vary, check Amazon links for up-to-date pricing.
         </p>
         <div className="overflow-x-auto rounded-xl border border-navy-border">
           <table className="w-full text-sm">

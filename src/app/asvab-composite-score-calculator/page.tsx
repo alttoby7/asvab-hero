@@ -21,10 +21,9 @@ const articleJsonLd = {
     "Calculate ASVAB composite scores for all 6 branches. See which MOS, rate, and AFSC you qualify for with worked examples and the free calculator.",
   url: "https://asvabhero.com/asvab-composite-score-calculator",
   author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
   publisher: {
     "@type": "Organization",
@@ -1294,7 +1293,7 @@ export default function ASVABCompositeScoreCalculatorPage() {
 
         <section className="mt-10 not-prose">
           <EmailCapture
-            headline="Unlock more jobs — get the 30-day plan that lifts every composite"
+            headline="Unlock more jobs, get the 30-day plan that lifts every composite"
             subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
             cta="Email me the plan"
             tag="composite-calculator"

@@ -76,7 +76,7 @@ export default function JobResults({
         <span className="font-mono font-semibold text-text-secondary">
           {afqt}
         </span>{" "}
-        — meets requirements for all jobs shown
+, meets requirements for all jobs shown
       </p>
 
       {/* Branch filter tabs */}

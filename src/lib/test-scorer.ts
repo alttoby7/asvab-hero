@@ -122,7 +122,7 @@ export function estimateAFQT(subtestResults: SubtestResult[]): {
 /**
  * Prep-mode primary metric from a completed test. AFQT = percentile (banded).
  * GT / General = an equated AR+WK+PC PROXY (same equated scale as the trajectory
- * composites — consistent for within-cohort delta; NOT an official GT/MAGE score
+ * composites, consistent for within-cohort delta; NOT an official GT/MAGE score
  * and NOT compared to qualification tiers). Reuses estimateAFQT's regressed
  * standard scores so noisy 3-4-question subtests don't spike the proxy.
  */
@@ -150,7 +150,7 @@ export function estimatePrimaryMetric(
 }
 
 /**
- * Navy/CG rating composite PROXY (S7) — the weighted sum of equated subtest
+ * Navy/CG rating composite PROXY (S7), the weighted sum of equated subtest
  * scores per a parsed composite (e.g. {WK:1,PC:1,AR:1,MK:1,MC:1} for VE+AR+MK+MC).
  * Same equated scale as the trajectory composites (within-cohort comparable);
  * NOT an official line score and NOT compared to qualification minimums.

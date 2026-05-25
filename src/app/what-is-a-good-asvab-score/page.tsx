@@ -26,10 +26,9 @@ export default function WhatIsAGoodASVABScorePage() {
             "Find out what a good ASVAB score is for enlistment, job qualification, and bonuses. Branch minimums, incentive thresholds, and elite path requirements explained.",
           url: "https://asvabhero.com/what-is-a-good-asvab-score",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -146,7 +145,7 @@ export default function WhatIsAGoodASVABScorePage() {
 
         <section className="my-8 not-prose">
           <EmailCapture
-            headline="Define 'good' for your goal — get a tailored 30-day plan"
+            headline="Define 'good' for your goal, get a tailored 30-day plan"
             subhead="Free 6-page PDF plus a 5-email crash course on AFQT, line scores, and the bonus thresholds that matter for your branch."
             cta="Email me the plan"
             tag="good-asvab-score"

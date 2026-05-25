@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import FlashcardsClient from "./FlashcardsClient";
 
 export const metadata: Metadata = {
-  title: "ASVAB Flashcards — Spaced-Repetition Vocab, Formulas, Tools",
+  title: "ASVAB Flashcards, Spaced-Repetition Vocab, Formulas, Tools",
   description:
     "Drill ASVAB Word Knowledge synonyms, math geometry formulas, electronics laws, and shop tools with spaced-repetition flashcards. One free deck. Pro unlocks all six.",
   alternates: { canonical: "https://asvabhero.com/flashcards" },

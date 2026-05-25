@@ -21,7 +21,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { deckSlug } = await params;
   return {
-    title: `Flashcards — ${deckSlug.replace(/\./g, " ").toUpperCase()}`,
+    title: `Flashcards, ${deckSlug.replace(/\./g, " ").toUpperCase()}`,
     robots: { index: false, follow: false },
   };
 }

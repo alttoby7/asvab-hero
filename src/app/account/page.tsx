@@ -53,7 +53,7 @@ function fmtDate(iso: string): string {
 }
 
 function fmtProUntil(iso: string | null): string {
-  if (!iso) return "—";
+  if (!iso) return ", ";
   return new Date(iso).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 }
 
@@ -109,7 +109,7 @@ export default function AccountDashboardPage() {
 
   useEffect(() => { setHasInProgress(getInProgressTest()); }, []);
 
-  // pro_active — fire once per user when /account loads with isPro=true.
+  // pro_active, fire once per user when /account loads with isPro=true.
   // Wait for `data` so we can attach the durable signup_source from the
   // profile (survives localStorage clears and long free→Pro lag).
   useEffect(() => {
@@ -135,7 +135,7 @@ export default function AccountDashboardPage() {
       if (!session) return;
       setDataLoading(true);
       const { data: profile } = await sb.from("profiles").select("display_name,free_diagnostic_used_at,pro_tier,pro_until,email,onboarding_completed_at,signup_source").eq("user_id", session.user.id).single();
-      // Onboarding guard — Pro users who haven't completed onboarding go through it first.
+      // Onboarding guard, Pro users who haven't completed onboarding go through it first.
       if (entitlement.isPro && profile && profile.onboarding_completed_at == null) {
         router.replace("/onboarding");
         return;
@@ -201,8 +201,8 @@ export default function AccountDashboardPage() {
         {hasAttempts ? (
           <div className="mt-5 grid grid-cols-3 gap-4">
             <div className="rounded-xl border border-navy-border bg-navy px-4 py-4 text-center"><div className="font-display text-2xl font-bold text-accent">{totalQ}</div><div className="mt-1 text-xs text-text-tertiary uppercase tracking-wide">Questions</div></div>
-            <div className="rounded-xl border border-navy-border bg-navy px-4 py-4 text-center"><div className="font-display text-2xl font-bold text-accent">{accuracy !== null ? `${accuracy}%` : "—"}</div><div className="mt-1 text-xs text-text-tertiary uppercase tracking-wide">Accuracy</div></div>
-            <div className="rounded-xl border border-navy-border bg-navy px-4 py-4 text-center"><div className="font-display text-2xl font-bold text-accent">{bestAfqt !== null ? bestAfqt : "—"}</div><div className="mt-1 text-xs text-text-tertiary uppercase tracking-wide">Best AFQT</div></div>
+            <div className="rounded-xl border border-navy-border bg-navy px-4 py-4 text-center"><div className="font-display text-2xl font-bold text-accent">{accuracy !== null ? `${accuracy}%` : ", "}</div><div className="mt-1 text-xs text-text-tertiary uppercase tracking-wide">Accuracy</div></div>
+            <div className="rounded-xl border border-navy-border bg-navy px-4 py-4 text-center"><div className="font-display text-2xl font-bold text-accent">{bestAfqt !== null ? bestAfqt : ", "}</div><div className="mt-1 text-xs text-text-tertiary uppercase tracking-wide">Best AFQT</div></div>
           </div>
         ) : (
           <p className="mt-3 text-text-secondary">Take your first diagnostic to see your stats.</p>

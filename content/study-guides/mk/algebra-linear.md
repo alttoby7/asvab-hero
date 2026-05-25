@@ -2,7 +2,7 @@
 topic_id: mk.algebra-linear
 subtest: MK
 title: Linear Equations & Algebra
-summary: Isolate the variable — that's the entire job in linear algebra, and every ASVAB MK question in this category follows the same rules.
+summary: Isolate the variable, that's the entire job in linear algebra, and every ASVAB MK question in this category follows the same rules.
 formula_reference:
   - "Solve for x: do the same operation to both sides of the equation"
   - "Distributive property: a(b + c) = ab + ac"
@@ -29,7 +29,7 @@ worked_examples:
 
 ## What the ASVAB is actually testing
 
-Linear algebra questions on MK always have one goal: solve for an unknown. The variable might be x, it might be in a formula, or it might be embedded in a geometry calculation. The ASVAB doesn't test advanced algebra — no quadratics, no logarithms. It tests whether you can isolate a variable using the basic rules of equality.
+Linear algebra questions on MK always have one goal: solve for an unknown. The variable might be x, it might be in a formula, or it might be embedded in a geometry calculation. The ASVAB doesn't test advanced algebra, no quadratics, no logarithms. It tests whether you can isolate a variable using the basic rules of equality.
 
 If you can reliably do that, you'll get full credit on this topic.
 
@@ -43,12 +43,12 @@ Undo operations in reverse order of operations. If the equation is `3x − 7 = 1
 
 When a negative is outside parentheses, it applies to every term inside. `−3(x − 4)` is not `−3x − 12`. The double negative gives you `−3x + 12`. This is the single most common algebra mistake on the ASVAB.
 
-Write out the distribution step explicitly — don't do it in your head.
+Write out the distribution step explicitly, don't do it in your head.
 
 ## Slope-intercept form
 
-The ASVAB tests y = mx + b mostly by asking for the slope, y-intercept, or a specific y-value given an x. Know that m is slope (rise over run) and b is where the line crosses the y-axis. Plug in and compute — there's nothing tricky here as long as you don't mix up which constant is which.
+The ASVAB tests y = mx + b mostly by asking for the slope, y-intercept, or a specific y-value given an x. Know that m is slope (rise over run) and b is where the line crosses the y-axis. Plug in and compute, there's nothing tricky here as long as you don't mix up which constant is which.
 
 ## Connection to other topics
 
-Linear algebra connects to every MK topic that uses formulas — geometry perimeter, area, and volume problems are often algebra in disguise: you're given one value and asked to solve for a dimension. Fractions and decimals also appear as coefficients, so combine this topic with fractions-decimals for the full picture.
+Linear algebra connects to every MK topic that uses formulas, geometry perimeter, area, and volume problems are often algebra in disguise: you're given one value and asked to solve for a dimension. Fractions and decimals also appear as coefficients, so combine this topic with fractions-decimals for the full picture.

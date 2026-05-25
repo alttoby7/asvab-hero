@@ -169,7 +169,7 @@ export default function AirForceAfqtCalculatorPage() {
             <tbody className="text-text-primary">
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold">
-                  Tier-one (HS diploma) — RegAF &amp; USSF
+                  Tier-one (HS diploma), RegAF &amp; USSF
                 </td>
                 <td className="py-2 pr-4 font-mono font-bold text-accent">36</td>
                 <td className="py-2 text-text-secondary">

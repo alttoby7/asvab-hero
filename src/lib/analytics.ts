@@ -17,14 +17,14 @@ declare global {
 }
 
 export function trackEvent(name: string, params?: GtagParams): void {
-  // 1) GA4 — unchanged existing behaviour. Fires for EVERY event name.
+  // 1) GA4, unchanged existing behaviour. Fires for EVERY event name.
   if (typeof window !== "undefined") {
     const gtag = window.gtag;
     if (typeof gtag === "function") {
       try {
         gtag("event", name, params);
       } catch {
-        // swallow — analytics must never break the app
+        // swallow, analytics must never break the app
       }
     }
   }
@@ -36,7 +36,7 @@ export function trackEvent(name: string, params?: GtagParams): void {
       enqueue(name as AnalyticsEventName, sanitizeProps(params));
     }
   } catch {
-    // swallow — first-party emission must never break the app or GA4
+    // swallow, first-party emission must never break the app or GA4
   }
 }
 
@@ -60,7 +60,7 @@ export function setAnalyticsUser(
 }
 
 /**
- * Funnel event names — single source of truth so the dashboard
+ * Funnel event names, single source of truth so the dashboard
  * ingestion can match exact strings.
  */
 export const FunnelEvents = {
@@ -82,7 +82,7 @@ export const FunnelEvents = {
 } as const;
 
 // =====================================================================
-// Paywall "why-tracking" — first-party event pipeline (additive to GA4)
+// Paywall "why-tracking", first-party event pipeline (additive to GA4)
 // Spec: Personal/asvab-hero/why-tracking-spec-2026-05-20.md
 //
 // SAFETY: every code path below is fully isolated and swallowed. A failure
@@ -351,7 +351,7 @@ export function flush(useBeacon = false): void {
       }).catch(() => {});
     }
   } catch {
-    // swallow — analytics must never break the app
+    // swallow, analytics must never break the app
   }
 }
 

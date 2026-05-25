@@ -2,7 +2,7 @@
 
 /**
  * Shared official-ASVAB-score entry form. Single write path for ALL surfaces
- * (onboarding step, dashboard card, /app/retake) — it calls the validated
+ * (onboarding step, dashboard card, /app/retake), it calls the validated
  * rpc_log_official_test RPC (migration 0042), which rejects bad data, sets
  * profiles.official_test_status, and writes a calibration row.
  *

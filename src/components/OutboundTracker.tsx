@@ -59,7 +59,7 @@ export default function OutboundTracker() {
           location: findLocation(a),
         });
       } catch {
-        // malformed URL — skip
+        // malformed URL, skip
       }
     }
 

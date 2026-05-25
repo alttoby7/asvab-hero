@@ -55,7 +55,7 @@ export default function UpgradeBanner() {
         </span>
         <p className="min-w-0 flex-1 truncate text-sm text-text-secondary">
           <span className="font-semibold text-text-primary">You&apos;re on Free.</span>{" "}
-          <span className="hidden sm:inline">Unlock unlimited drills + score tracking — </span>
+          <span className="hidden sm:inline">Unlock unlimited drills + score tracking, </span>
           <span className="font-mono text-xs text-text-primary">$9.99/mo</span>
         </p>
         <Link

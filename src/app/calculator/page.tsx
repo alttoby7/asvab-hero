@@ -14,7 +14,7 @@ import coastGuardJobs from "@/data/coast-guard-jobs.json";
 import spaceForceJobs from "@/data/space-force-jobs.json";
 
 export const metadata: Metadata = {
-  title: "Free ASVAB Score Calculator — See Every Job You Qualify For",
+  title: "Free ASVAB Score Calculator, See Every Job You Qualify For",
   description:
     "Enter your 9 ASVAB subtest scores and instantly see your AFQT percentile, composite line scores, and every military job you qualify for across all 6 branches.",
   alternates: {
@@ -89,7 +89,7 @@ export default function CalculatorPage() {
         <Calculator allJobs={allJobs} />
       </Suspense>
 
-      {/* Server-rendered full job catalog — present in the static HTML for search
+      {/* Server-rendered full job catalog, present in the static HTML for search
          + AI crawlers regardless of calculator state (the interactive results
          above only appear once all 9 subtests are entered). */}
       <JobCatalog jobs={allJobs} />

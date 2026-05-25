@@ -18,7 +18,7 @@ export type PracticeVariant =
   | "full_sim"
   | "subtest_drill";
 
-/** Practice hub (variant picker) — `/app/practice` for members, public otherwise. */
+/** Practice hub (variant picker), `/app/practice` for members, public otherwise. */
 export function practiceHubHref(authed: boolean): string {
   return authed ? "/app/practice" : "/practice-test";
 }

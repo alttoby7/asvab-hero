@@ -28,10 +28,9 @@ export default function MarineCorpsRanksPage() {
             "Complete guide to all 29 Marine Corps ranks with 2026 pay tables, promotion timelines, and how your ASVAB score shapes your USMC career path.",
           url: "https://asvabhero.com/marine-corps-ranks",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",

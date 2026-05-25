@@ -25,10 +25,9 @@ export default function GTScorePage() {
             "Your GT score decides which military jobs you can hold. Learn the VE + AR formula, how to calculate it, Army GT cutoffs, the 110 threshold, the highest possible GT, and how to raise it.",
           url: "https://asvabhero.com/gt-score",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -214,7 +213,7 @@ export default function GTScorePage() {
         <section className="my-8 not-prose">
           <EmailCapture
             headline="Trying to clear GT 110 for OCS, SF, or Cyber?"
-            subhead="Free 30-day plan focused on WK, PC, and AR — the only 3 subtests that move your GT. PDF plus a 5-email crash course."
+            subhead="Free 30-day plan focused on WK, PC, and AR, the only 3 subtests that move your GT. PDF plus a 5-email crash course."
             cta="Email me the GT plan"
             tag="gt-score"
           />
@@ -351,7 +350,7 @@ export default function GTScorePage() {
           >
             GT score calculator
           </Link>
-          , which applies the official conversion and returns your GT plus the
+, which applies the official conversion and returns your GT plus the
           jobs it unlocks in seconds. The manual way is below, and it gives you
           an estimate, not the exact figure, because one step relies on a
           conversion table the services apply automatically and do not hand out.
@@ -778,7 +777,7 @@ export default function GTScorePage() {
           >
             GT score requirements page
           </Link>
-          , and the officer track is covered in our{" "}
+, and the officer track is covered in our{" "}
           <Link
             href="/warrant-officer-requirements"
             className="text-accent hover:text-accent-hover"
@@ -1720,8 +1719,7 @@ export default function GTScorePage() {
                 className="text-accent underline hover:text-accent-hover"
               >
                 GT score calculator
-              </Link>{" "}
-              &mdash; enter your WK, PC, and AR scores and get your exact GT plus
+              </Link>{" "}, enter your WK, PC, and AR scores and get your exact GT plus
               the jobs it unlocks.
             </li>
             <li>
@@ -1730,8 +1728,7 @@ export default function GTScorePage() {
                 className="text-accent underline hover:text-accent-hover"
               >
                 GT score requirements
-              </Link>{" "}
-              &mdash; every GT threshold by job, program, and branch in one
+              </Link>{" "}, every GT threshold by job, program, and branch in one
               reference.
             </li>
             <li>
@@ -1740,8 +1737,7 @@ export default function GTScorePage() {
                 className="text-accent underline hover:text-accent-hover"
               >
                 Army warrant officer requirements
-              </Link>{" "}
-              &mdash; the GT 110 gate plus the full eligibility checklist for the
+              </Link>{" "}, the GT 110 gate plus the full eligibility checklist for the
               warrant officer path.
             </li>
           </ul>

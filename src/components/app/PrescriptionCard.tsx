@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * WS4 — "Today's prescription" card.
+ * WS4, "Today's prescription" card.
  *
  * Renders the output of getTrajectoryPrescription() (src/lib/account/next-action.ts):
- * the single highest-leverage action for today — clear due mistakes, take a
+ * the single highest-leverage action for today, clear due mistakes, take a
  * diagnostic to establish standing, or drill the weakest AFQT subtest. Works
  * with sparse data and never emits a point delta or a fabricated score.
  */

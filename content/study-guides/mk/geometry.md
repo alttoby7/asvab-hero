@@ -2,7 +2,7 @@
 topic_id: mk.geometry
 subtest: MK
 title: "Geometry: Area, Perimeter & Volume"
-summary: ASVAB geometry is formula-driven — know the six core formulas, read the question for which measurement is asked, and plug in.
+summary: ASVAB geometry is formula-driven, know the six core formulas, read the question for which measurement is asked, and plug in.
 formula_reference:
   - "Rectangle: Area = length × width; Perimeter = 2(l + w)"
   - "Triangle: Area = ½ × base × height; Perimeter = sum of all three sides"
@@ -14,7 +14,7 @@ pitfalls:
   - "Using diameter when the formula calls for radius (r = diameter ÷ 2)"
   - "Confusing perimeter (distance around) with area (space inside)"
   - "Using slant height instead of vertical height for triangle and trapezoid area"
-  - "Forgetting to square the radius in circle area — πr² not π×2r"
+  - "Forgetting to square the radius in circle area, πr² not π×2r"
   - "Mixing units within the same problem (feet vs. inches) before calculating"
 worked_examples:
   - prompt: "A rectangle is 12 feet long and 5 feet wide. What is its area and perimeter?"
@@ -35,11 +35,11 @@ The skill the test is measuring is formula recall plus careful reading of what m
 
 ## Area vs. perimeter: don't mix them up
 
-Perimeter is a length — the distance you'd walk around the edge. It's measured in units (feet, meters).
+Perimeter is a length, the distance you'd walk around the edge. It's measured in units (feet, meters).
 
-Area is a surface — the space inside. It's measured in square units (ft², m²).
+Area is a surface, the space inside. It's measured in square units (ft², m²).
 
-Volume is a space — how much fits inside a 3D shape. Measured in cubic units (ft³, m³).
+Volume is a space, how much fits inside a 3D shape. Measured in cubic units (ft³, m³).
 
 The test writes questions that make "perimeter" and "area" easy to swap accidentally. Underline the word being asked for before you calculate.
 
@@ -49,8 +49,8 @@ Every circle formula uses radius (r), not diameter (d). If the problem gives dia
 
 ## When the height is not an obvious side
 
-For triangles and trapezoids, "height" is the perpendicular distance between base and apex — it's not necessarily one of the sides. The ASVAB occasionally labels a diagram where the height has to be read carefully from the figure rather than assumed.
+For triangles and trapezoids, "height" is the perpendicular distance between base and apex, it's not necessarily one of the sides. The ASVAB occasionally labels a diagram where the height has to be read carefully from the figure rather than assumed.
 
 ## Connection to other topics
 
-Geometry on the ASVAB frequently embeds algebra: "the perimeter is 40 and the length is twice the width — find the width." That's a geometry formula combined with a linear equation. Recognize the combo and solve in two steps.
+Geometry on the ASVAB frequently embeds algebra: "the perimeter is 40 and the length is twice the width, find the width." That's a geometry formula combined with a linear equation. Recognize the combo and solve in two steps.

@@ -24,10 +24,9 @@ export default function CanICheckMyASVABScoreOnlinePage() {
             "Yes, if you took the high school CEP test. Learn which portal fits your path and how to get your ASVAB score online fast.",
           url: "https://asvabhero.com/can-i-check-my-asvab-score-online",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",

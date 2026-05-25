@@ -21,10 +21,9 @@ const articleJsonLd = {
     "Learn how BSEP raises your GT score by 19-23 points on average. Eligibility tiers, enrollment steps, curriculum breakdown, and real outcome data from 6 installations.",
   url: "https://asvabhero.com/bsep",
   author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
   publisher: {
     "@type": "Organization",

@@ -11,7 +11,7 @@ import { trackEvent, FunnelEvents } from "@/lib/analytics";
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
 function formatDate(iso: string | null): string {
-  if (!iso) return "—";
+  if (!iso) return ", ";
   return new Date(iso).toLocaleDateString("en-US", {
     month: "long",
     day: "numeric",
@@ -39,7 +39,7 @@ function BillingInner() {
     }
   }, [session, sessionLoading, router]);
 
-  // checkout_success — fire once when redirected back with status=success.
+  // checkout_success, fire once when redirected back with status=success.
   useEffect(() => {
     if (statusParam !== "success") return;
     const dedupeKey = `asvabhero.checkout_success_fired.${sessionId ?? "unknown"}`;
@@ -47,7 +47,7 @@ function BillingInner() {
       if (localStorage.getItem(dedupeKey)) return;
       localStorage.setItem(dedupeKey, "1");
     } catch {
-      // localStorage unavailable — fire anyway, GA4 will dedupe by event_id if set.
+      // localStorage unavailable, fire anyway, GA4 will dedupe by event_id if set.
     }
     trackEvent(FunnelEvents.CheckoutSuccess, {
       tier: entitlement.proTier ?? "unknown",
@@ -144,7 +144,7 @@ function BillingInner() {
               <div>
                 <p className="text-xs text-text-tertiary uppercase tracking-wide mb-0.5">Tier</p>
                 <p className="text-sm text-text-primary font-medium capitalize">
-                  {proTier ?? "—"}
+                  {proTier ?? ", "}
                 </p>
               </div>
               <div>

@@ -1,10 +1,10 @@
 /**
- * GT Target Mode — the single source of truth for GT range, confidence, target,
+ * GT Target Mode, the single source of truth for GT range, confidence, target,
  * gap, and the honest target-date projection. Home, plan, results, and mistakes
  * all consume this module so GT math is computed in exactly one place.
  *
  * Why a separate confidence here: the backend `overall_confidence` is AFQT-shaped
- * (it expects MK evidence), so a GT-only user — who never sees MK — can never
+ * (it expects MK evidence), so a GT-only user, who never sees MK, can never
  * reach "high". We derive GT confidence from AR/WK/PC evidence directly.
  *
  * Honesty stance (FTC): GT is a PRACTICE PROXY. We only project a target date
@@ -40,7 +40,7 @@ export interface GtRange {
 
 /**
  * Summed AR+WK+PC range for the GT uncertainty band. Returns nulls unless all
- * three subtests are present. NOTE: this is the band only — the displayed GT
+ * three subtests are present. NOTE: this is the band only, the displayed GT
  * POINT should prefer the server's branch-correct `primary_metric.current_value`
  * (Army GT = AR+VE, Marines GT = AR+WK+PC); this sum is the honest spread to show.
  */
@@ -61,9 +61,9 @@ export function getGtRange(est: SubtestEstimates | null | undefined): GtRange {
 
 /**
  * Client-derived GT confidence from AR/WK/PC evidence:
- *   low    — any of AR/WK/PC has zero attempts seen, OR fewer than 2 are well-sampled
- *   medium — at least 2 of 3 well-sampled (seen >= 8)
- *   high   — all 3 well-sampled (seen >= 8)
+ *   low, any of AR/WK/PC has zero attempts seen, OR fewer than 2 are well-sampled
+ *   medium, at least 2 of 3 well-sampled (seen >= 8)
+ *   high, all 3 well-sampled (seen >= 8)
  * Thin-but-nonzero evidence stays "low" on purpose (we under-claim, never over-claim).
  */
 export function getGtConfidence(
@@ -192,7 +192,7 @@ function dateOnly(ts: string): string {
 /**
  * Project a target date from the user's OWN recent GT trajectory, gated by strict
  * evidence guardrails. Returns an explicit reason when we won't (and shouldn't)
- * guess. Pure — no I/O.
+ * guess. Pure, no I/O.
  */
 export function getGtProjection(input: GtProjectionInput): GtProjection {
   const { attempts, studyDays, targetGt, studyDaysPerWeek, gtConfidence } = input;
@@ -219,7 +219,7 @@ export function getGtProjection(input: GtProjectionInput): GtProjection {
   const latestEstimate = latest.primary_metric_estimate as number;
   const earliestEstimate = earliest.primary_metric_estimate as number;
 
-  // Already at/above target on the practice scale — no projection needed.
+  // Already at/above target on the practice scale, no projection needed.
   if (targetGt <= latestEstimate) return { status: "at_target" };
 
   if (gtConfidence === "low") {

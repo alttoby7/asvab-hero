@@ -1,14 +1,14 @@
 "use client";
 
 /**
- * Animated product walkthrough — the "Gap-to-Goal Rail" (Codex-brainstormed pick).
+ * Animated product walkthrough, the "Gap-to-Goal Rail" (Codex-brainstormed pick).
  *
  * One ~8s proof loop: an AFQT marker starts "short by 4", the three daily-loop
  * stations (Diagnose → Clear Mistakes → Adaptive block) each ratchet it forward,
  * and it lands on the target tick, flipping "Short by 4" → "Qualified". This
  * visualizes the product's whole promise (the gap closing) without claiming a
  * guaranteed result (see the honest caption). Autoplays once on scroll-into-view;
- * honors prefers-reduced-motion with a static final state. SVG/CSS only — no
+ * honors prefers-reduced-motion with a static final state. SVG/CSS only, no
  * libraries, static-export safe, mobile-first, no layout shift.
  */
 
@@ -189,7 +189,7 @@ export default function GapToGoalRail() {
       </div>
 
       <p className="mt-5 text-xs text-text-tertiary">
-        An illustration of the daily loop — not a guaranteed result. How far your
+        An illustration of the daily loop, not a guaranteed result. How far your
         score climbs depends on the reps you put in.
       </p>
     </div>

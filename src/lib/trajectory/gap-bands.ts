@@ -1,5 +1,5 @@
 /**
- * WS3 — Band + gap-status logic (pure TS mirror of the SQL in
+ * WS3, Band + gap-status logic (pure TS mirror of the SQL in
  * 0022_trajectory_target_jobs.sql: traj_afqt_band, traj_composite_band,
  * traj_eval_job_gap).
  *
@@ -59,7 +59,7 @@ export function compositeBand(score: number): CompositeBand {
 
 /**
  * Banded gap label from actual vs required band indexes.
- * NEVER a point delta — only at_or_above / within_one / more_than_one.
+ * NEVER a point delta, only at_or_above / within_one / more_than_one.
  */
 export function gapBandFromIndexes(
   actualBandIdx: number,

@@ -168,10 +168,10 @@ export default function StudyPlanGenerator() {
           </div>
           <p className="mt-2 text-xs text-text-tertiary">
             {state.hoursPerWeek <= 5
-              ? "Light schedule — we'll focus on highest-impact areas"
+              ? "Light schedule, we'll focus on highest-impact areas"
               : state.hoursPerWeek <= 10
-                ? "Solid commitment — good coverage across all subtests"
-                : "Intensive prep — full coverage with plenty of practice"}
+                ? "Solid commitment, good coverage across all subtests"
+                : "Intensive prep, full coverage with plenty of practice"}
           </p>
         </div>
       </div>

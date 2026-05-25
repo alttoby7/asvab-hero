@@ -20,10 +20,9 @@ const articleJsonLd = {
     "A complete guide to how the Marine ASVAB score works: the correct GT formula (and the myth to ignore), all 5 USMC line scores explained, and how each subtest feeds your composites.",
   url: "https://asvabhero.com/marines-asvab-score",
   author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
   publisher: {
     "@type": "Organization",

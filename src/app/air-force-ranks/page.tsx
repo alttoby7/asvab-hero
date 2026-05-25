@@ -24,13 +24,12 @@ export default function AirForceRanksPage() {
           "@type": "Article",
           headline: "Air Force Ranks and Pay Grades: Enlisted, Officer, and Abbreviations (2026)",
           description:
-            "Air Force ranks in order — 9 enlisted grades (E-1 through E-9) and 10 officer grades (O-1 through O-10), with 2026 pay, abbreviations, insignia, promotion timelines, and the 2024 warrant officer restart.",
+            "Air Force ranks in order, 9 enlisted grades (E-1 through E-9) and 10 officer grades (O-1 through O-10), with 2026 pay, abbreviations, insignia, promotion timelines, and the 2024 warrant officer restart.",
           url: "https://asvabhero.com/air-force-ranks",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -180,7 +179,7 @@ export default function AirForceRanksPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Nine enlisted grades split into three tiers — each with a distinct purpose and a different relationship to leadership. Pay figures below are 2026 base pay at the lowest applicable step (
+          Nine enlisted grades split into three tiers, each with a distinct purpose and a different relationship to leadership. Pay figures below are 2026 base pay at the lowest applicable step (
           <a
             href="https://www.airforce.com/pay-and-benefits/pay-calculator"
             target="_blank"
@@ -346,9 +345,9 @@ export default function AirForceRanksPage() {
             </thead>
             <tbody className="text-text-secondary">
               {[
-                ["E-2", "6 months", "—", "No", "6 months"],
-                ["E-3", "—", "10 months TIG", "No", "10 months"],
-                ["E-4", "36mo TIS + 20mo TIG, or 28mo TIG", "—", "No", "~18-24 months"],
+                ["E-2", "6 months", ", ", "No", "6 months"],
+                ["E-3", ", ", "10 months TIG", "No", "10 months"],
+                ["E-4", "36mo TIS + 20mo TIG, or 28mo TIG", ", ", "No", "~18-24 months"],
                 ["E-5", "3 years TIS", "6 months TIG", "YES (WAPS)", "~4 years total"],
                 ["E-6", "5 years TIS", "23 months TIG", "YES (WAPS)", "~12 years"],
                 ["E-7", "8 years TIS", "24 months TIG", "YES (board)", "~17 years"],
@@ -415,7 +414,7 @@ export default function AirForceRanksPage() {
 
         <aside className="my-6 rounded-xl border-l-4 border-accent bg-navy-lighter px-5 py-4">
           <p className="text-sm font-semibold text-text-primary">Current CMSAF: David R. Wolfe (21st)</p>
-          <p className="mt-1 text-sm text-text-secondary">Sworn in December 8, 2025. Exactly one person holds this position at any time — same E-9 pay grade, unmatched authority in the enlisted force.</p>
+          <p className="mt-1 text-sm text-text-secondary">Sworn in December 8, 2025. Exactly one person holds this position at any time, same E-9 pay grade, unmatched authority in the enlisted force.</p>
         </aside>
 
         {/* ─── OFFICER RANKS (static answer table) ─── */}
@@ -791,26 +790,26 @@ export default function AirForceRanksPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Now that the static reference is covered, use these tools to apply it to your own situation — compare grades across branches, estimate your starting rank, map a promotion timeline, and see which jobs your ASVAB score unlocks.
+          Now that the static reference is covered, use these tools to apply it to your own situation, compare grades across branches, estimate your starting rank, map a promotion timeline, and see which jobs your ASVAB score unlocks.
         </p>
 
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Compare pay grades across all 6 branches →</p>
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool, Compare pay grades across all 6 branches →</p>
           <RankEquivalencyExplorer />
         </div>
 
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Estimate your starting rank based on your background →</p>
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool, Estimate your starting rank based on your background →</p>
           <StartingRankEstimator />
         </div>
 
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Map your promotion timeline from enlistment to retirement →</p>
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool, Map your promotion timeline from enlistment to retirement →</p>
           <PromotionPathPlanner />
         </div>
 
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — See which jobs your ASVAB score unlocks across every branch →</p>
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool, See which jobs your ASVAB score unlocks across every branch →</p>
           <BranchJobUnlockExplorer />
         </div>
 

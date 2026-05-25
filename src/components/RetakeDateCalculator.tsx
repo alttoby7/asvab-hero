@@ -51,7 +51,7 @@ export default function RetakeDateCalculator() {
 
   const isEligibleNow = result && result.daysFromToday <= 0;
 
-  // Debounced track — fire after inputs settle.
+  // Debounced track, fire after inputs settle.
   useEffect(() => {
     if (!result) return;
     const handle = window.setTimeout(() => {
@@ -216,7 +216,7 @@ export default function RetakeDateCalculator() {
 
           <p className="mt-4 text-xs text-text-tertiary">
             Based on the official 1/1/6 ASVAB retest policy. Your recruiter
-            schedules the actual retest through MEPS — bring this date to your
+            schedules the actual retest through MEPS, bring this date to your
             next meeting.
           </p>
         </section>

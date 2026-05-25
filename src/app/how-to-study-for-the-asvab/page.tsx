@@ -27,10 +27,9 @@ export default function HowToStudyForTheASVABPage() {
             "Learn how to study for the ASVAB with a proven 8-step plan. Set your target score, build a schedule, master the right subtests, and nail the CAT-ASVAB.",
           url: "https://asvabhero.com/how-to-study-for-the-asvab",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",

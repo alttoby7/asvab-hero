@@ -9,7 +9,7 @@ import OutboundTracker from "@/components/OutboundTracker";
 import { AnalyticsUserBinder } from "@/components/AnalyticsUserBinder";
 
 const siteTitle =
-  "ASVAB Hero — Free ASVAB Score Calculator & Military Job Finder";
+  "ASVAB Hero, Free ASVAB Score Calculator & Military Job Finder";
 const siteDescription =
   "Enter your ASVAB scores and instantly see every military job you qualify for across all 6 branches. Free calculator with 500+ jobs.";
 
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "ASVAB Hero — Free practice tests + score calculators",
+        alt: "ASVAB Hero, Free practice tests + score calculators",
       },
     ],
   },

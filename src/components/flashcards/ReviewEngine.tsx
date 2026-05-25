@@ -129,7 +129,7 @@ export default function ReviewEngine({ deck, initialCards }: Props) {
           href="/app/flashcards"
           className="text-text-tertiary no-underline transition-colors hover:text-text-secondary"
         >
-          ← {deck.title.replace(/^.+? — /, "")}
+          ← {deck.title.replace(/^.+?, /, "")}
         </Link>
         <span className="text-text-tertiary">
           {index + 1} / {queue.length}

@@ -23,10 +23,9 @@ export default function WhatDoesASVABStandForPage() {
             "ASVAB stands for Armed Services Vocational Aptitude Battery. Decode each word, see 2026 branch minimums, and discover what higher scores unlock.",
           url: "https://asvabhero.com/what-does-asvab-stand-for",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -556,7 +555,7 @@ export default function WhatDoesASVABStandForPage() {
           </div>
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-accent">Weeks 2&ndash;4</p>
-            <p className="mt-1 text-sm text-text-secondary">Drill the four AFQT subtests (AR, WK, PC, MK) — these decide enlistment</p>
+            <p className="mt-1 text-sm text-text-secondary">Drill the four AFQT subtests (AR, WK, PC, MK), these decide enlistment</p>
           </div>
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-accent">Weeks 5&ndash;6</p>

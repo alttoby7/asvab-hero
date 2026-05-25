@@ -19,10 +19,9 @@ const articleSchema = {
     "Complete navy ratings list organized by career community. ASVAB composite scores for all 89 jobs, FY2026 bonuses, NAPT requirements, and PACT path explained.",
   url: "https://asvabhero.com/navy-ratings-list",
   author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
   publisher: {
     "@type": "Organization",
@@ -176,7 +175,7 @@ export default function NavyRatingsListPage() {
           return on study time.
         </p>
 
-        {/* Category jump links — TOC into each community */}
+        {/* Category jump links, TOC into each community */}
         <nav
           aria-label="Jump to a Navy community"
           className="my-6 not-prose rounded-xl border border-navy-border bg-navy-light p-5"
@@ -207,7 +206,7 @@ export default function NavyRatingsListPage() {
           </div>
         </nav>
 
-        {/* CTA module — high-intent: find the ratings you already qualify for */}
+        {/* CTA module, high-intent: find the ratings you already qualify for */}
         <div className="my-6 not-prose rounded-2xl border border-accent/30 bg-navy-light p-6 text-center sm:flex sm:items-center sm:justify-between sm:text-left">
           <div>
             <p className="font-display text-base font-bold text-text-primary">

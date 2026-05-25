@@ -13,7 +13,7 @@ import { trackEvent } from "@/lib/analytics";
 import ScoreInput from "./ScoreInput";
 
 /**
- * Focused AFQT calculator — only the 4 subtests that determine enlistment
+ * Focused AFQT calculator, only the 4 subtests that determine enlistment
  * eligibility (AR, WK, PC, MK). Uses the same PAY97 lookup as the full
  * Calculator so results are consistent across the site.
  *
@@ -99,7 +99,7 @@ export default function AfqtCalculator() {
 
   const handleReset = () => setScores(EMPTY_SCORES);
 
-  // Fire calculator_view_result once per mount — only on a real result.
+  // Fire calculator_view_result once per mount, only on a real result.
   const viewedRef = useRef(false);
   useEffect(() => {
     if (viewedRef.current) return;
@@ -112,7 +112,7 @@ export default function AfqtCalculator() {
     });
   }, [afqtReady, afqt]);
 
-  // Debounced submit telemetry (~800ms after last change) — only when ready.
+  // Debounced submit telemetry (~800ms after last change), only when ready.
   useEffect(() => {
     if (!afqtReady) return;
     const handle = window.setTimeout(() => {
@@ -139,7 +139,7 @@ export default function AfqtCalculator() {
 
   return (
     <div className="space-y-8">
-      {/* Score inputs — 4 AFQT subtests only */}
+      {/* Score inputs, 4 AFQT subtests only */}
       <section>
         <div className="mb-4 flex items-center justify-between">
           <h2 className="font-display text-xl font-bold text-text-primary">

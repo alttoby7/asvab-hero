@@ -11,10 +11,10 @@ import {
 import { trackEvent } from "@/lib/analytics";
 
 /**
- * ASVAB Score Converter — converts standard subtest scores into the three
+ * ASVAB Score Converter, converts standard subtest scores into the three
  * derived numbers people actually care about: AFQT percentile, VE (verbal
  * expression), and GT line score (Army formula). Other branches use the same
- * raw inputs but bundle them differently into composites — those live on
+ * raw inputs but bundle them differently into composites, those live on
  * dedicated branch pages.
  */
 

@@ -61,7 +61,7 @@ const HOME_SCHEMA = {
 export const metadata: Metadata = {
   title: "ASVAB Calculator 2026: AFQT, GT & Line Scores (All Branches)",
   description:
-    "Free ASVAB calculator for Army, Navy, Air Force, Marines, Coast Guard & Space Force. Get your AFQT percentile, GT score, and line scores instantly — see every job you qualify for.",
+    "Free ASVAB calculator for Army, Navy, Air Force, Marines, Coast Guard & Space Force. Get your AFQT percentile, GT score, and line scores instantly, see every job you qualify for.",
   alternates: {
     canonical: "https://asvabhero.com",
   },
@@ -72,7 +72,7 @@ export default function HomePage() {
     <div>
       <JsonLd data={HOME_SCHEMA} />
       {/* ────────────────────────────────────────────────────────────────────
-         HERO — recruit's actual goal, not a feature pitch.
+         HERO, recruit's actual goal, not a feature pitch.
          One primary CTA (diagnostic, the conversion engine), one secondary.
          Numerical proof inline from bank-stats.json (QUESTIONS_PLUS · topics · subtests).
       ──────────────────────────────────────────────────────────────────── */}
@@ -94,7 +94,7 @@ export default function HomePage() {
               AFQT, GT &amp; line scores.
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-text-secondary">
-              Army, Navy, Air Force, Marines, Coast Guard, Space Force — plug in
+              Army, Navy, Air Force, Marines, Coast Guard, Space Force, plug in
               your subtest scores and see every job you qualify for. Or take the
               30-question diagnostic to estimate your AFQT first.
             </p>
@@ -122,7 +122,7 @@ export default function HomePage() {
           <div className="mx-auto mt-16 max-w-4xl">
             <BrandHero
               src="/images/generated/asvab-home-hero.png"
-              alt="A future US military recruit studying for the ASVAB at her kitchen table — practice book open, calculator and pencil in hand, focused on the work."
+              alt="A future US military recruit studying for the ASVAB at her kitchen table, practice book open, calculator and pencil in hand, focused on the work."
               width={1536}
               height={1024}
               priority
@@ -133,7 +133,7 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────────────
-         PAIN-LED CONVERSION BAND — the real recruit pain → the free score-moving
+         PAIN-LED CONVERSION BAND, the real recruit pain → the free score-moving
          plan. Sits below the SEO hero (H1 untouched). Primary CTA = free plan.
       ──────────────────────────────────────────────────────────────────── */}
       <section className="border-t border-navy-border bg-navy-light/40">
@@ -142,13 +142,13 @@ export default function HomePage() {
             <span className="text-accent">●</span> Close doesn&apos;t qualify
           </p>
           <h2 className="mt-4 max-w-3xl font-display text-3xl font-extrabold leading-tight tracking-tight text-text-primary sm:text-4xl">
-            You&apos;re short for the job you want — and most apps just show you
+            You&apos;re short for the job you want, and most apps just show you
             that, then upsell you.
           </h2>
           <p className="mt-4 max-w-2xl text-lg leading-relaxed text-text-secondary">
             ASVAB Hero turns &ldquo;you&apos;re short by X for the job you
             want&rdquo; into a <span className="text-text-primary">free daily plan</span>{" "}
-            that targets the exact subtests most likely to move your score — built
+            that targets the exact subtests most likely to move your score, built
             on the methods cognitive science shows actually work, not the
             rereading most apps sell.
           </p>
@@ -165,7 +165,7 @@ export default function HomePage() {
               },
               {
                 t: "A plan, not a pile",
-                d: "A weekly routine aimed at your test date — exactly what to do today. Free.",
+                d: "A weekly routine aimed at your test date, exactly what to do today. Free.",
               },
             ].map((f) => (
               <div
@@ -206,7 +206,7 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────────────
-         WALKTHROUGH — the animated "Gap-to-Goal Rail": shows the daily loop
+         WALKTHROUGH, the animated "Gap-to-Goal Rail": shows the daily loop
          closing the gap (the product's whole promise) in ~8 seconds.
       ──────────────────────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden">
@@ -217,7 +217,7 @@ export default function HomePage() {
               Watch the gap close.
             </h2>
             <p className="mt-3 text-base text-text-secondary">
-              Diagnose, clear your misses, do one adaptive block — repeat. That&apos;s
+              Diagnose, clear your misses, do one adaptive block, repeat. That&apos;s
               the loop. Here&apos;s what it does to your score.
             </p>
           </div>
@@ -226,14 +226,14 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────────────
-         EVIDENCE TRUST STRIP — leads with the moat: built on the study methods
+         EVIDENCE TRUST STRIP, leads with the moat: built on the study methods
          research proves raise scores. Links to the full methodology page.
       ──────────────────────────────────────────────────────────────────── */}
       <section className="border-y border-navy-border bg-navy-light/50">
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-3 px-4 py-8 text-center sm:flex-row sm:justify-between sm:text-left sm:px-6">
           <p className="text-sm leading-relaxed text-text-secondary">
             <span className="font-semibold text-text-primary">Built on the evidence.</span>{" "}
-            Retrieval practice, spaced repetition, and interleaving — the methods cognitive
+            Retrieval practice, spaced repetition, and interleaving, the methods cognitive
             science proves raise scores, not the rereading most apps rely on.
           </p>
           <Link
@@ -249,7 +249,7 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────────────
-         THREE PILLARS — Calculator · Practice · Study Guide.
+         THREE PILLARS, Calculator · Practice · Study Guide.
          Each card carries a hard number (from bank-stats.json) so the homepage tells
          the proof story before any conversion ask.
       ──────────────────────────────────────────────────────────────────── */}
@@ -305,7 +305,7 @@ export default function HomePage() {
             ))}
           </div>
           {/* ──────────────────────────────────────────────────────────────
-             DE-CANNIBALIZATION — exact-match links to dedicated calculator
+             DE-CANNIBALIZATION, exact-match links to dedicated calculator
              pages so Google ranks the spoke, not this hub, for those queries.
              One clear target per query cluster.
           ────────────────────────────────────────────────────────────── */}
@@ -382,7 +382,7 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────────────
-         BANK PROOF BLOCK — editorial number row.
+         BANK PROOF BLOCK, editorial number row.
          Replaces the generic "6 / 500+ / 100% Free" stats card grid.
       ──────────────────────────────────────────────────────────────────── */}
       <section className="relative overflow-hidden">
@@ -412,19 +412,19 @@ export default function HomePage() {
           </div>
           <p className="mx-auto mt-8 max-w-2xl text-center text-sm text-text-secondary">
             Every topic has items at every difficulty. Every question has a written
-            explanation. PAY97 norming table for AFQT — same calibration the DoD uses.
+            explanation. PAY97 norming table for AFQT, same calibration the DoD uses.
           </p>
         </div>
       </section>
 
       {/* ────────────────────────────────────────────────────────────────────
-         SOCIAL PROOF — real usage numbers now; real testimonials when earned
+         SOCIAL PROOF, real usage numbers now; real testimonials when earned
          (never fabricated). Swaps automatically once curated in.
       ──────────────────────────────────────────────────────────────────── */}
       <TestimonialWall />
 
       {/* ────────────────────────────────────────────────────────────────────
-         ONE EMAIL CAPTURE — replaces the prior two homepage forms.
+         ONE EMAIL CAPTURE, replaces the prior two homepage forms.
          Shifted to ribbon-style (slim, full-width vibe) so the homepage isn't
          visually dominated by a card.
       ──────────────────────────────────────────────────────────────────── */}
@@ -441,7 +441,7 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────────────
-         PRO SECTION — accurate copy, real CTA.
+         PRO SECTION, accurate copy, real CTA.
          Replaces the stale "Coming Soon" block. Two-column on desktop:
          feature list on the left, plan card on the right.
       ──────────────────────────────────────────────────────────────────── */}
@@ -460,7 +460,7 @@ export default function HomePage() {
               </h2>
               <p className="mt-5 text-base leading-relaxed text-text-secondary">
                 Your daily adaptive AFQT block, the Mistake Bank, and your weekly
-                plan are free for everyone — no card. When you&apos;re ready to go
+                plan are free for everyone, no card. When you&apos;re ready to go
                 harder, Pro removes the daily limit and adds full-length sims and
                 deeper analytics for the final push to test day.
               </p>
@@ -486,7 +486,7 @@ export default function HomePage() {
                 <span className="text-sm text-text-tertiary">/ month</span>
               </div>
               <p className="mt-1 text-sm text-text-tertiary">
-                or <span className="font-semibold text-accent">$49.99 / year</span> &mdash; save 58%
+                or <span className="font-semibold text-accent">$49.99 / year</span>, save 58%
               </p>
               <Link
                 href="/upgrade?from=home"
@@ -509,7 +509,7 @@ export default function HomePage() {
       </section>
 
       {/* ────────────────────────────────────────────────────────────────────
-         FINAL CTA — single sharp ask.
+         FINAL CTA, single sharp ask.
          Closing line that converts undecided readers without another form.
       ──────────────────────────────────────────────────────────────────── */}
       <section className="border-t border-navy-border">

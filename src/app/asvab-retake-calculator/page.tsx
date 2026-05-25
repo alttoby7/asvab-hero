@@ -37,7 +37,7 @@ export default function AsvabRetakeCalculatorPage() {
         </h1>
         <p className="mt-3 text-lg text-text-secondary">
           Enter your last test date. We&apos;ll tell you the exact day you can
-          retest — and flag anything that could blow it up.
+          retest, and flag anything that could blow it up.
         </p>
       </div>
 
@@ -103,7 +103,7 @@ export default function AsvabRetakeCalculatorPage() {
           </table>
         </div>
         <p className="mt-4 text-sm text-text-tertiary">
-          &ldquo;Calendar month&rdquo; means same date next month — January 15
+          &ldquo;Calendar month&rdquo; means same date next month, January 15
           → February 15, not 30 days later.
         </p>
       </section>
@@ -137,7 +137,7 @@ export default function AsvabRetakeCalculatorPage() {
 
       <section className="mt-10">
         <EmailCapture
-          headline="Make your retake count — get the 30-day study plan"
+          headline="Make your retake count, get the 30-day study plan"
           subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
           cta="Email me the plan"
           tag="retake-calculator"
@@ -164,7 +164,7 @@ export default function AsvabRetakeCalculatorPage() {
             >
               Read the full retest policy guide
             </Link>{" "}
-            — DEP rules, branch differences, C-Test scenarios.
+, DEP rules, branch differences, C-Test scenarios.
           </li>
           <li>
             &bull;{" "}

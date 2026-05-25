@@ -9,7 +9,7 @@ import BranchJobUnlockExplorer from "@/components/ranks/BranchJobUnlockExplorer"
 export const metadata: Metadata = {
   title: "Navy Ranks: Complete Guide to Every Pay Grade (2026)",
   description:
-    "All Navy ranks explained — enlisted E-1 to E-9, warrant officers W-2 to W-5, and officers O-1 to O-10 with 2026 pay, the rating system, and promotion timelines.",
+    "All Navy ranks explained, enlisted E-1 to E-9, warrant officers W-2 to W-5, and officers O-1 to O-10 with 2026 pay, the rating system, and promotion timelines.",
   alternates: {
     canonical: "https://asvabhero.com/navy-ranks",
   },
@@ -24,13 +24,12 @@ export default function NavyRanksPage() {
           "@type": "Article",
           headline: "Navy Ranks: Complete Guide to Every Pay Grade (2026)",
           description:
-            "All Navy ranks explained — enlisted E-1 to E-9, warrant officers W-2 to W-5, and officers O-1 to O-10 with 2026 pay, the rating system, and promotion timelines.",
+            "All Navy ranks explained, enlisted E-1 to E-9, warrant officers W-2 to W-5, and officers O-1 to O-10 with 2026 pay, the rating system, and promotion timelines.",
           url: "https://asvabhero.com/navy-ranks",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: { "@type": "Organization", name: "ASVAB Hero" },
           datePublished: "2026-03-17",
@@ -136,7 +135,7 @@ export default function NavyRanksPage() {
           See how every Navy rank lines up against the Army, Air Force, Marines, Coast Guard, and Space Force.
         </p>
         <div className="my-6 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Compare pay grades across all 6 branches →</p>
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool, Compare pay grades across all 6 branches →</p>
           <RankEquivalencyExplorer />
         </div>
 
@@ -377,7 +376,7 @@ export default function NavyRanksPage() {
           Your starting rank depends on your education, prior service, and qualifications. Use this tool to see where you&apos;d enter.
         </p>
         <div className="my-6 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Estimate your starting rank based on your background →</p>
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool, Estimate your starting rank based on your background →</p>
           <StartingRankEstimator />
         </div>
 
@@ -504,7 +503,7 @@ export default function NavyRanksPage() {
           See how long it realistically takes to reach your target rank based on your entry point and track.
         </p>
         <div className="my-6 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Map your promotion timeline from enlistment to retirement →</p>
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool, Map your promotion timeline from enlistment to retirement →</p>
           <PromotionPathPlanner />
         </div>
 
@@ -737,7 +736,7 @@ export default function NavyRanksPage() {
           See which Navy jobs and leadership roles unlock at each rank, and how they compare to other branches.
         </p>
         <div className="my-6 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — See which jobs your ASVAB score unlocks across every branch →</p>
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool, See which jobs your ASVAB score unlocks across every branch →</p>
           <BranchJobUnlockExplorer />
         </div>
 

@@ -1,5 +1,5 @@
 /**
- * In-app study-guide topic page — member-shell version of
+ * In-app study-guide topic page, member-shell version of
  * /study/[subtest]/[topicSlug]. Server wrapper (noindex; the public page is the
  * canonical SEO URL). Reuses the shared StudyGuideArticle + MiniDrill, and adds
  * StudyTopicTools (mark-studied, mastery, app-scoped drill CTA) so the
@@ -62,7 +62,7 @@ export default async function AppStudyGuidePage({ params }: PageProps) {
         subtestName={subtestName}
       />
 
-      {/* Mini Drill — quick check right after reading */}
+      {/* Mini Drill, quick check right after reading */}
       <section className="mb-6 space-y-4 rounded-xl border border-navy-border bg-navy-light p-6">
         <MiniDrill topicId={frontmatter.topic_id} />
       </section>

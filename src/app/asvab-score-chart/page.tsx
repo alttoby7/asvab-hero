@@ -26,10 +26,9 @@ export default function ASVABScoreChartPage() {
             "Complete ASVAB score chart covering AFQT categories I through V, branch minimums for all 6 branches, composite line score formulas, and what each score range actually unlocks.",
           url: "https://asvabhero.com/asvab-score-chart",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -173,7 +172,7 @@ export default function ASVABScoreChartPage() {
 
         <section className="my-8 not-prose">
           <EmailCapture
-            headline="Climbing categories — IIIB to IIIA, IIIA to II?"
+            headline="Climbing categories, IIIB to IIIA, IIIA to II?"
             subhead="Free 30-day plan plus a 5-email crash course on the highest-leverage AFQT moves to bump your category and unlock more jobs and bonuses."
             cta="Email me the plan"
             tag="score-chart"
@@ -268,7 +267,7 @@ export default function ASVABScoreChartPage() {
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
           <p className="text-xs text-text-secondary px-4 pt-3 pb-1 uppercase tracking-wider">AFQT Category Lookup</p>
           <div className="p-4">
-            <p className="text-text-secondary text-sm">Interactive AFQT category lookup — coming soon. Use the <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB calculator</Link> in the meantime.</p>
+            <p className="text-text-secondary text-sm">Interactive AFQT category lookup, coming soon. Use the <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB calculator</Link> in the meantime.</p>
           </div>
         </div>
 
@@ -358,7 +357,7 @@ export default function ASVABScoreChartPage() {
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
           <p className="text-xs text-text-secondary px-4 pt-3 pb-1 uppercase tracking-wider">Branch Eligibility Checker</p>
           <div className="p-4">
-            <p className="text-text-secondary text-sm">Interactive branch eligibility checker — coming soon. Enter your credential type and score to see which branches you qualify for.</p>
+            <p className="text-text-secondary text-sm">Interactive branch eligibility checker, coming soon. Enter your credential type and score to see which branches you qualify for.</p>
           </div>
         </div>
 
@@ -531,7 +530,7 @@ export default function ASVABScoreChartPage() {
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
           <p className="text-xs text-text-secondary px-4 pt-3 pb-1 uppercase tracking-wider">Composite Score Explorer</p>
           <div className="p-4">
-            <p className="text-text-secondary text-sm">Interactive composite score explorer — coming soon. Enter your subtest scores to calculate composites for each branch.</p>
+            <p className="text-text-secondary text-sm">Interactive composite score explorer, coming soon. Enter your subtest scores to calculate composites for each branch.</p>
           </div>
         </div>
 
@@ -646,7 +645,7 @@ export default function ASVABScoreChartPage() {
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
           <p className="text-xs text-text-secondary px-4 pt-3 pb-1 uppercase tracking-wider">Retake Decision Tool</p>
           <div className="p-4">
-            <p className="text-text-secondary text-sm">Interactive retake decision tool — coming soon. Enter your current score and target to see if retaking is worth it.</p>
+            <p className="text-text-secondary text-sm">Interactive retake decision tool, coming soon. Enter your current score and target to see if retaking is worth it.</p>
           </div>
         </div>
 

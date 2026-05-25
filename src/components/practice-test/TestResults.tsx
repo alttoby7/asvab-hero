@@ -35,7 +35,7 @@ interface TestResultsProps {
   onRetake: () => void;
   userId: string | null;
   savedProfile: TopicStats[] | null;
-  /** Prep mode — AFCT users see GT/General (proxy) instead of AFQT. */
+  /** Prep mode, AFCT users see GT/General (proxy) instead of AFQT. */
   prepMode?: PrepMode | null;
 }
 
@@ -153,7 +153,7 @@ export default function TestResults({
   ).join("&");
 
   // Determine which variants are active. v1: diagnostic + subtest_drill.
-  // We don't await the DB here — the recommender is rendered synchronously.
+  // We don't await the DB here, the recommender is rendered synchronously.
   // Anything beyond v1 will fail the active check and be skipped.
   const activeVariantCodes = useMemo(
     () => new Set(["diagnostic", "subtest_drill"]),
@@ -199,7 +199,7 @@ export default function TestResults({
         </div>
         {!isAfqtMode && (
           <p className="mt-3 text-center text-xs text-text-tertiary">
-            A practice proxy to track your {primary!.label} climb — not an official
+            A practice proxy to track your {primary!.label} climb, not an official
             score or a qualification guarantee. Targets vary by role/program.
           </p>
         )}
@@ -208,13 +208,13 @@ export default function TestResults({
             {getAFQTCategoryDescription(afqtEstimate.category)}
           </p>
           <p className="mt-1 text-xs text-text-tertiary">
-            AFQT estimate based on {questions.length} questions — take a
+            AFQT estimate based on {questions.length} questions, take a
             full-length test for a more accurate score.
           </p>
         </div>
       </section>
 
-      {/* GT Target Mode post-block card (Army/Marines AFCT) — the GT CTA moment */}
+      {/* GT Target Mode post-block card (Army/Marines AFCT), the GT CTA moment */}
       {userId && prepMode?.primaryMetric === "GT" && (
         <GtPostBlockCard userId={userId} />
       )}
@@ -233,10 +233,10 @@ export default function TestResults({
         />
       )}
 
-      {/* Topic breakdown + subtest scores + next step — gated to authed users. */}
+      {/* Topic breakdown + subtest scores + next step, gated to authed users. */}
       {userId && (
         <>
-          {/* Topic breakdown — top-3 strong / top-3 weak */}
+          {/* Topic breakdown, top-3 strong / top-3 weak */}
           <TopicBreakdown topicResults={topicResults} />
 
           {/* Score by Subtest */}
@@ -327,7 +327,7 @@ export default function TestResults({
             Ready to go faster?
           </h3>
           <p className="mt-2 text-sm text-text-secondary">
-            Your free plan already drills these weak spots every day — one adaptive
+            Your free plan already drills these weak spots every day, one adaptive
             AFQT block plus Mistake-Bank review. Pro adds unlimited practice,
             full-length timed sims, and deeper analytics for the final push.
             $9.99/mo or $49.99/yr.
@@ -342,7 +342,7 @@ export default function TestResults({
       )}
       {/* ── End Phase E ───────────────────────────────────────────────────── */}
 
-      {/* Per-question review (collapsed by default) — gated to authed users;
+      {/* Per-question review (collapsed by default), gated to authed users;
          anon users unlock it via the free-account bridge above. */}
       {userId && <QuestionReviewList questions={questions} answers={answers} />}
     </div>

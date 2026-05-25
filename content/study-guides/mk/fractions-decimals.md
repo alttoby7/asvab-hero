@@ -2,7 +2,7 @@
 topic_id: mk.fractions-decimals
 subtest: MK
 title: Fractions, Decimals & Percent
-summary: Three ways to say the same thing — once you can convert freely between them, most MK problems get easier.
+summary: Three ways to say the same thing, once you can convert freely between them, most MK problems get easier.
 formula_reference:
   - "Fraction → Decimal: divide numerator by denominator (3/4 = 3÷4 = 0.75)"
   - "Decimal → Percent: multiply by 100 (0.75 × 100 = 75%)"
@@ -14,7 +14,7 @@ formula_reference:
 pitfalls:
   - "Adding denominators instead of finding a common denominator (1/3 + 1/4 ≠ 2/7)"
   - "Forgetting to flip the divisor when dividing fractions"
-  - "Mixing up 'percent of a number' with 'percent increase' — they use different formulas"
+  - "Mixing up 'percent of a number' with 'percent increase', they use different formulas"
   - "Leaving an answer as an improper fraction when the choices are mixed numbers (or vice versa)"
 worked_examples:
   - prompt: "What is 3/8 as a decimal?"
@@ -31,7 +31,7 @@ worked_examples:
 
 Fractions, decimals, and percents are three different representations of the same underlying idea: a part of a whole. The ASVAB Math Knowledge section tests whether you can work fluently in all three forms and convert between them when needed.
 
-This comes up more than any other single topic in MK. It also supports algebra, geometry, and percent-change problems — so getting solid here lifts your whole score.
+This comes up more than any other single topic in MK. It also supports algebra, geometry, and percent-change problems, so getting solid here lifts your whole score.
 
 ## Conversions you should know cold
 
@@ -44,7 +44,7 @@ This comes up more than any other single topic in MK. It also supports algebra, 
 | 1/5 | 0.2 | 20% |
 | 1/8 | 0.125 | 12.5% |
 
-Memorize these. When you see 0.125 in a problem, you should immediately recognize it as 1/8 — that can save time on multi-step problems.
+Memorize these. When you see 0.125 in a problem, you should immediately recognize it as 1/8, that can save time on multi-step problems.
 
 ## Fraction operations: the two rules that matter most
 
@@ -66,7 +66,7 @@ Most percent questions are one of three types:
 2. **Find what percent one number is of another:** "27 is what percent of 90?" then 27/90 = 0.30 = 30%
 3. **Find the original number:** "30% of what number is 27?" then 27 / 0.30 = 90
 
-Recognize which type you have before you start calculating. The formula is always (part/whole = percent/100) — rearrange for what's missing.
+Recognize which type you have before you start calculating. The formula is always (part/whole = percent/100), rearrange for what's missing.
 
 **Percent increase/decrease** is its own thing:
 
@@ -76,4 +76,4 @@ A price going from $80 to $100 is a (100-80)/80 x 100 = 25% increase. Don't conf
 
 ## Practice approach
 
-The most common errors here are mechanical — forgetting to flip, adding denominators. Slow down on setup, especially on fraction division and percent-of-a-number problems. Once the setup is right, the arithmetic is easy.
+The most common errors here are mechanical, forgetting to flip, adding denominators. Slow down on setup, especially on fraction division and percent-of-a-number problems. Once the setup is right, the arithmetic is easy.

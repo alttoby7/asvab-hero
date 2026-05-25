@@ -1,5 +1,5 @@
 /**
- * Prep-mode config — the single source of truth for how prep differs by
+ * Prep-mode config, the single source of truth for how prep differs by
  * (test_type, branch). Initial ASVAB targets AFQT (enlistment); AFCT targets the
  * composite the branch uses to reclassify/retrain. Built for ALL branches:
  *
@@ -31,7 +31,7 @@ const VE_AR_BRANCHES = new Set<Branch>([
 
 /** A parsed rating composite (Navy/CG): the formula + its weighted subtest demand. */
 export interface RatingComposite {
-  /** The raw composite formula, e.g. "VE+AR+MK+MC" — also the measurement key. */
+  /** The raw composite formula, e.g. "VE+AR+MK+MC", also the measurement key. */
   code: string;
   /** Human label for the surface, e.g. "AR+MK+EI+GS line score". */
   label: string;
@@ -52,7 +52,7 @@ export interface PrepMode {
   goalPhrase: string;
   /** Whether we have real target tiers to show (Army AFCT only). */
   hasTargets: boolean;
-  /** False for Navy/CG AFCT with no chosen target rating — honest AFQT fallback. */
+  /** False for Navy/CG AFCT with no chosen target rating, honest AFQT fallback. */
   branchSupported: boolean;
   /** Set for Navy/CG AFCT once a target rating's composite is known (S7). When
    *  present, prep drills this composite's subtests and the proxy uses its
@@ -167,7 +167,7 @@ export function getPrepMode(
         ? "retraining into a new AFSC"
         : "reclassification and the programs you want",
       // v1: GT/General are shown as a PROXY (equated AR+WK+PC), so no hard tier
-      // qualification claims yet — see the GT-scale note. Real norming deferred.
+      // qualification claims yet, see the GT-scale note. Real norming deferred.
       hasTargets: false,
       branchSupported: true,
     };
@@ -193,7 +193,7 @@ export function getPrepMode(
     };
   }
 
-  // Navy / Coast Guard (or unknown branch) under AFCT with NO target rating —
+  // Navy / Coast Guard (or unknown branch) under AFCT with NO target rating, 
   // honest AFQT fallback + nudge to pick a rating.
   return {
     testType: "afct",

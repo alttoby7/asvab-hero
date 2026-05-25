@@ -162,12 +162,12 @@ export default function NonQualifyingResults({
 
   return (
     <div className="space-y-4">
-      {/* Close Misses — always visible */}
+      {/* Close Misses, always visible */}
       {closeMisses.length > 0 && (
         <div className="border-l-2 border-almost pl-4">
           <div className="mb-3">
             <h3 className="font-display text-base font-bold text-almost">
-              Almost There — {closeMisses.length} {closeMisses.length === 1 ? "job" : "jobs"} within reach
+              Almost There, {closeMisses.length} {closeMisses.length === 1 ? "job" : "jobs"} within reach
             </h3>
             <p className="text-sm text-text-tertiary">
               You&apos;re within {CLOSE_MISS_THRESHOLD} points of qualifying for these jobs
@@ -202,7 +202,7 @@ export default function NonQualifyingResults({
         </div>
       )}
 
-      {/* Remaining non-qualifying — collapsed by default */}
+      {/* Remaining non-qualifying, collapsed by default */}
       {remaining.length > 0 && (
         <div>
           <button

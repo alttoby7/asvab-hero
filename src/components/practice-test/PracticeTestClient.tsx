@@ -143,14 +143,14 @@ function TestBlockedScreenWithEvent({
   const { session } = useSession();
   const { entitlement } = useEntitlement();
   useEffect(() => {
-    // Existing GA4 event — unchanged.
+    // Existing GA4 event, unchanged.
     trackEvent(FunnelEvents.PaywallShown, {
       reason,
       from: "practice_test",
       variant,
       ...(subtest ? { subtest } : {}),
     });
-    // Additive first-party rich event — mints/carries paywall_context_id.
+    // Additive first-party rich event, mints/carries paywall_context_id.
     try {
       const pcid = ensurePaywallContextId();
       const ctx = buildPaywallContext({
@@ -171,7 +171,7 @@ function TestBlockedScreenWithEvent({
         paywall_context_id: pcid,
       });
     } catch {
-      /* swallow — never affect paywall render */
+      /* swallow, never affect paywall render */
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reason, variant, subtest]);

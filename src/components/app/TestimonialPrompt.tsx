@@ -16,7 +16,7 @@ const DONE_KEY = "asvabhero.testimonial_done";
 
 interface TestimonialPromptProps {
   userId: string;
-  /** Why it fired — stored for context, e.g. "streak_7" or "afqt_improved". */
+  /** Why it fired, stored for context, e.g. "streak_7" or "afqt_improved". */
   context: string;
   /** Headline tailored to the win. */
   headline: string;
@@ -74,7 +74,7 @@ export default function TestimonialPrompt({
       });
       trackEvent("testimonial_submitted", { context, allow_publish: allowPublish });
     } catch {
-      /* non-blocking — never trap the user over feedback */
+      /* non-blocking, never trap the user over feedback */
     }
     finish();
     setDone(true);
@@ -89,7 +89,7 @@ export default function TestimonialPrompt({
         <div className="flex items-center gap-3">
           <span className="text-2xl">🎉</span>
           <p className="text-sm text-text-secondary">
-            Thank you — that genuinely helps other recruits decide to start.
+            Thank you, that genuinely helps other recruits decide to start.
           </p>
         </div>
       ) : (

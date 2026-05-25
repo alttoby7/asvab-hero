@@ -208,7 +208,7 @@ export default function GTScoreCalculator() {
       {gtReady && (
       <section className="rounded-xl border border-navy-border bg-navy-light p-6">
         <h2 className="mb-3 font-display text-lg font-bold text-text-primary">
-          GT {gt} — What It Unlocks
+          GT {gt}, What It Unlocks
         </h2>
         <p className="mb-4 text-sm text-text-secondary">
           Army MOS and program thresholds. Higher GT opens more career paths.
@@ -263,7 +263,7 @@ export default function GTScoreCalculator() {
             <span className="font-mono font-semibold text-accent">
               {lowestSubtest.key}
             </span>{" "}
-            at {lowestSubtest.value} — raising it offers the most room for
+            at {lowestSubtest.value}, raising it offers the most room for
             improvement. See the{" "}
             <Link
               href="/asvab-study-guide"
@@ -278,7 +278,7 @@ export default function GTScoreCalculator() {
 
       {/* Branch note */}
       <p className="text-xs text-text-tertiary">
-        The Navy does not use a GT composite — each rating has unique subtest
+        The Navy does not use a GT composite, each rating has unique subtest
         requirements. See{" "}
         <Link
           href="/navy-asvab-score"

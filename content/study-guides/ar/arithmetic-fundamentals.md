@@ -2,7 +2,7 @@
 topic_id: ar.arithmetic-fundamentals
 subtest: AR
 title: Arithmetic Fundamentals
-summary: The four basic operations — add, subtract, multiply, divide — are the foundation of every AR question, and the order you do them in determines whether you get it right.
+summary: The four basic operations, add, subtract, multiply, divide, are the foundation of every AR question, and the order you do them in determines whether you get it right.
 formula_reference:
   - "Order of operations (PEMDAS): Parentheses → Exponents → Multiply/Divide (left to right) → Add/Subtract (left to right)"
   - "Even × anything = even; odd × odd = odd"
@@ -12,7 +12,7 @@ formula_reference:
   - "Remainder: a ÷ b = quotient remainder r means a = b × quotient + r"
 pitfalls:
   - "Skipping parentheses and doing multiplication before resolving them"
-  - "Assuming the result of dividing two negatives is negative — it's positive"
+  - "Assuming the result of dividing two negatives is negative, it's positive"
   - "Confusing 'factor' (divides evenly into) with 'multiple' (divisible by the number)"
   - "Forgetting that zero is even, and that dividing by zero is undefined"
   - "Misreading a remainder question as asking for the quotient"
@@ -27,9 +27,9 @@ worked_examples:
 
 ## What the ASVAB is actually testing
 
-Arithmetic Reasoning isn't a computation marathon — it's a reasoning test. Almost every AR question is a word problem that requires you to decide which operation to use and in what order. Arithmetic fundamentals are the engine under the hood. If your order of operations is sloppy, or you can't spot a remainder situation, you'll miss questions that have nothing to do with the hard math.
+Arithmetic Reasoning isn't a computation marathon, it's a reasoning test. Almost every AR question is a word problem that requires you to decide which operation to use and in what order. Arithmetic fundamentals are the engine under the hood. If your order of operations is sloppy, or you can't spot a remainder situation, you'll miss questions that have nothing to do with the hard math.
 
-## Order of operations — the one rule to own
+## Order of operations, the one rule to own
 
 PEMDAS. Parentheses, Exponents, Multiply/Divide, Add/Subtract. That order is non-negotiable. The ASVAB regularly tests whether recruits skip steps or go left to right blindly.
 
@@ -49,8 +49,8 @@ These rules let you eliminate wrong answer choices without doing any division at
 
 ## Remainders and real-world framing
 
-The ASVAB loves remainder questions disguised as distribution problems: "X items split equally among Y people — how many are left over?" Set it up as division, find the quotient, multiply back, and subtract. The difference is your remainder.
+The ASVAB loves remainder questions disguised as distribution problems: "X items split equally among Y people, how many are left over?" Set it up as division, find the quotient, multiply back, and subtract. The difference is your remainder.
 
 ## Connection to other AR topics
 
-Get arithmetic fundamentals right and every other AR topic gets easier. Ratios, percents, rate problems — they all reduce to these four operations applied in the right sequence. Weak PEMDAS skills create downstream errors even when the higher-level concept is correct.
+Get arithmetic fundamentals right and every other AR topic gets easier. Ratios, percents, rate problems, they all reduce to these four operations applied in the right sequence. Weak PEMDAS skills create downstream errors even when the higher-level concept is correct.

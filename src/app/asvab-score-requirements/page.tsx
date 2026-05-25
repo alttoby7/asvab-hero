@@ -25,10 +25,9 @@ export default function ASVABScoreRequirementsPage() {
             "Every 2026 ASVAB score requirement by branch, from AFQT minimums and GED tiers to composite scores for specific jobs. Find what score you need.",
           url: "https://asvabhero.com/asvab-score-requirements",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -145,8 +144,7 @@ export default function ASVABScoreRequirementsPage() {
 
         <p className="mt-4 text-text-secondary">
           Some prep sites list the Air Force minimum at 31. Others say 36. The
-          Coast Guard shows up as 32, 36, or 40 depending on who you ask &mdash;
-          the current diploma floor is 32. Here are the verified 2026 AFQT
+          Coast Guard shows up as 32, 36, or 40 depending on who you ask, the current diploma floor is 32. Here are the verified 2026 AFQT
           minimums for all six branches, broken out by education tier.
         </p>
 
@@ -1196,8 +1194,7 @@ export default function ASVABScoreRequirementsPage() {
                 className="text-accent underline hover:text-accent-hover"
               >
                 Army ASVAB scores
-              </Link>{" "}
-              &mdash; line scores, MOS minimums, and the GT score that gates
+              </Link>{" "}, line scores, MOS minimums, and the GT score that gates
               warrant officer and Special Forces.
             </li>
             <li>
@@ -1206,8 +1203,7 @@ export default function ASVABScoreRequirementsPage() {
                 className="text-accent underline hover:text-accent-hover"
               >
                 Navy ASVAB scores
-              </Link>{" "}
-              &mdash; AFQT tiers, rating composites, and the Nuclear Field and
+              </Link>{" "}, AFQT tiers, rating composites, and the Nuclear Field and
               SEAL pipelines.
             </li>
             <li>
@@ -1216,8 +1212,7 @@ export default function ASVABScoreRequirementsPage() {
                 className="text-accent underline hover:text-accent-hover"
               >
                 Air Force ASVAB scores
-              </Link>{" "}
-              &mdash; the MAGE composites and which AFSC each one unlocks.
+              </Link>{" "}, the MAGE composites and which AFSC each one unlocks.
             </li>
             <li>
               <Link
@@ -1225,8 +1220,7 @@ export default function ASVABScoreRequirementsPage() {
                 className="text-accent underline hover:text-accent-hover"
               >
                 Marines ASVAB scores
-              </Link>{" "}
-              &mdash; the GT formula and line score minimums for every MOS field.
+              </Link>{" "}, the GT formula and line score minimums for every MOS field.
             </li>
             <li>
               <Link
@@ -1234,8 +1228,7 @@ export default function ASVABScoreRequirementsPage() {
                 className="text-accent underline hover:text-accent-hover"
               >
                 Coast Guard ASVAB scores
-              </Link>{" "}
-              &mdash; rating-specific requirements and the most selective
+              </Link>{" "}, rating-specific requirements and the most selective
               enlistment standards of any branch.
             </li>
             <li>
@@ -1246,14 +1239,14 @@ export default function ASVABScoreRequirementsPage() {
               >
                 GT score requirements
               </Link>
-              ,{" "}
+,{" "}
               <Link
                 href="/mos-asvab-score-requirements"
                 className="text-accent underline hover:text-accent-hover"
               >
                 MOS ASVAB score requirements by job
               </Link>
-              , and{" "}
+, and{" "}
               <Link
                 href="/what-jobs-qualify-asvab-score"
                 className="text-accent underline hover:text-accent-hover"
@@ -1277,7 +1270,7 @@ export default function ASVABScoreRequirementsPage() {
               >
                 score ranges breakdown
               </Link>
-              , then{" "}
+, then{" "}
               <Link
                 href="/practice-test"
                 className="text-accent underline hover:text-accent-hover"

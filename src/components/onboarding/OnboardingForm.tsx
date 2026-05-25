@@ -70,7 +70,7 @@ const SUBTEST_OPTIONS: { value: WeakestSubtest; label: string }[] = [
 ];
 
 // Implementation intention (Gollwitzer): committing to days + a time + a concrete
-// anchor measurably raises adherence — the lab-to-field gap for real score gains.
+// anchor measurably raises adherence, the lab-to-field gap for real score gains.
 type StudyTime = "morning" | "afternoon" | "evening";
 const DAYS_OPTIONS: { value: number; label: string }[] = [
   { value: 3, label: "3 days" },
@@ -85,7 +85,7 @@ const TIME_OPTIONS: { value: StudyTime; label: string }[] = [
   { value: "evening", label: "Evening" },
 ];
 
-// Education status (initial-ASVAB only) — GED vs diploma vs college credits
+// Education status (initial-ASVAB only), GED vs diploma vs college credits
 // materially changes branch-qualification framing. The one extra signup field.
 type EducationStatus =
   | "high_school_student"
@@ -147,7 +147,7 @@ export function OnboardingForm() {
   const [studyAnchor, setStudyAnchor] = useState<string>("");
   // Optional goal jobs (up to 3), persisted on submit via rpc_add_target_job.
   const [goalJobs, setGoalJobs] = useState<JobCatalogEntry[]>([]);
-  // GT Target Mode — Army/Marines AFCT only. The score we optimize toward.
+  // GT Target Mode, Army/Marines AFCT only. The score we optimize toward.
   const [targetGtPreset, setTargetGtPreset] = useState<
     100 | 105 | 107 | 110 | "custom" | null
   >(null);
@@ -273,7 +273,7 @@ export function OnboardingForm() {
       try {
         await addTargetJob(sb, goalJobs[i].id, i === 0);
       } catch {
-        /* non-fatal — onboarding still completes */
+        /* non-fatal, onboarding still completes */
       }
     }
 
@@ -304,7 +304,7 @@ export function OnboardingForm() {
       });
     }
 
-    // Deliver the actual plan (was routing to /app/home — the button promised a
+    // Deliver the actual plan (was routing to /app/home, the button promised a
     // plan it never showed). /app/plan renders the personalized routine.
     router.push("/app/plan");
   }
@@ -347,7 +347,7 @@ export function OnboardingForm() {
       onSubmit={handleSubmit}
       className="rounded-2xl border border-navy-border bg-navy-light p-6 sm:p-8 space-y-8"
     >
-      {/* Q1 — Test type (reframes the whole plan) */}
+      {/* Q1, Test type (reframes the whole plan) */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-1">
           1. Which test are you preparing for?
@@ -367,7 +367,7 @@ export function OnboardingForm() {
               Initial ASVAB
             </span>
             <span className="mt-0.5 block text-xs text-text-secondary">
-              Joining the military — raise your AFQT to qualify for jobs and branches.
+              Joining the military, raise your AFQT to qualify for jobs and branches.
             </span>
           </button>
           <button
@@ -384,13 +384,13 @@ export function OnboardingForm() {
               AFCT (active-duty retest)
             </span>
             <span className="mt-0.5 block text-xs text-text-secondary">
-              Already serving — raise your score to reclassify or retrain.
+              Already serving, raise your score to reclassify or retrain.
             </span>
           </button>
         </div>
       </div>
 
-      {/* Q2 — Branch */}
+      {/* Q2, Branch */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-3">
           2. Which branch are you targeting?
@@ -411,14 +411,14 @@ export function OnboardingForm() {
             {(() => {
               const pm = getPrepMode("afct", branch as BranchType);
               if (pm.branchSupported)
-                return `We'll focus your plan on ${pm.metricLabel} (AR + WK + PC) — the score ${branch === "air_force" || branch === "space_force" ? "the Air Force/Space Force uses for retraining" : "your branch uses to reclassify"}.`;
-              return "Rating conversion uses rating-specific line scores, so branch-specific targeting isn't built yet — we'll track your retest on AFQT for now.";
+                return `We'll focus your plan on ${pm.metricLabel} (AR + WK + PC), the score ${branch === "air_force" || branch === "space_force" ? "the Air Force/Space Force uses for retraining" : "your branch uses to reclassify"}.`;
+              return "Rating conversion uses rating-specific line scores, so branch-specific targeting isn't built yet, we'll track your retest on AFQT for now.";
             })()}
           </p>
         )}
       </div>
 
-      {/* Q3 — Education status (Initial ASVAB only — affects qualification) */}
+      {/* Q3, Education status (Initial ASVAB only, affects qualification) */}
       {testType === "initial_asvab" && (
         <div>
           <label className="block font-display text-lg font-semibold text-text-primary mb-1">
@@ -427,7 +427,7 @@ export function OnboardingForm() {
           </label>
           <p className="mb-3 text-sm text-text-secondary">
             A diploma vs. GED changes which branches and AFQT cutoffs apply to
-            you — it helps us give the right advice.
+            you, it helps us give the right advice.
           </p>
           <div className="flex flex-wrap gap-2">
             {EDUCATION_OPTIONS.map((opt) => (
@@ -443,7 +443,7 @@ export function OnboardingForm() {
         </div>
       )}
 
-      {/* Q4 — Already taken the ASVAB? (routing for the score panel below) */}
+      {/* Q4, Already taken the ASVAB? (routing for the score panel below) */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-1">
           4.{" "}
@@ -467,7 +467,7 @@ export function OnboardingForm() {
           />
           <SegmentButton
             value="have"
-            label="Yes — I have my scores"
+            label="Yes, I have my scores"
             selected={officialChoice === "have"}
             onClick={(v) => setOfficialChoice(v as OfficialChoice)}
           />
@@ -509,7 +509,7 @@ export function OnboardingForm() {
         )}
       </div>
 
-      {/* Q5 — GT target (Army/Marines AFCT only) */}
+      {/* Q5, GT target (Army/Marines AFCT only) */}
       {isGtMode && (
         <div>
           <label className="block font-display text-lg font-semibold text-text-primary mb-1">
@@ -560,7 +560,7 @@ export function OnboardingForm() {
         </div>
       )}
 
-      {/* Q6 — Test date */}
+      {/* Q6, Test date */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-3">
           6. When are you planning to take the test?
@@ -607,7 +607,7 @@ export function OnboardingForm() {
         )}
       </div>
 
-      {/* Q7 — Weakest subtest */}
+      {/* Q7, Weakest subtest */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-3">
           7. Which subtest feels weakest right now?
@@ -625,14 +625,14 @@ export function OnboardingForm() {
         </div>
       </div>
 
-      {/* Q8 — Optional goal jobs (after branch is chosen) */}
+      {/* Q8, Optional goal jobs (after branch is chosen) */}
       {branch && branch !== "undecided" && (
         <div>
           <label className="block font-display text-lg font-semibold text-text-primary mb-1">
             8. Any target jobs? <span className="text-text-tertiary text-sm font-normal">(optional)</span>
           </label>
           <p className="mb-3 text-sm text-text-secondary">
-            Pick up to 3. We&apos;ll track how close you are to each — as a
+            Pick up to 3. We&apos;ll track how close you are to each, as a
             confidence band, not a single number.
           </p>
 
@@ -678,13 +678,13 @@ export function OnboardingForm() {
         </div>
       )}
 
-      {/* Q9 — Implementation intention (days + time + anchor) */}
+      {/* Q9, Implementation intention (days + time + anchor) */}
       <div>
         <label className="block font-display text-lg font-semibold text-text-primary mb-1">
           9. How often will you study?
         </label>
         <p className="mb-3 text-sm text-text-secondary">
-          Showing up on your study days beats cramming — it&apos;s the biggest
+          Showing up on your study days beats cramming, it&apos;s the biggest
           predictor of real score gains. Pick a rhythm you can keep.
         </p>
         <div className="flex flex-wrap gap-2">

@@ -47,10 +47,9 @@ const articleJsonLd = {
     "Learn how ASVAB line scores are calculated for Army, Marines, Air Force, Navy, and Coast Guard. Use our free calculator to see every job you qualify for.",
   url: "https://asvabhero.com/asvab-line-score-calculator",
   author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
   publisher: {
     "@type": "Organization",
@@ -180,7 +179,7 @@ export default function ASVABLineScoreCalculatorPage() {
         <p className="text-text-secondary">
           Line scores are raw sums of standard scores (mean 50, SD ~10, range 20
           to 145). The Army has 10. The Air Force has 4. The Navy has dozens,
-          one per rating — see the full{" "}
+          one per rating, see the full{" "}
           <Link href="/navy-ratings-list" className="text-accent hover:text-accent-hover">
             Navy ratings list
           </Link>{" "}
@@ -1082,7 +1081,7 @@ export default function ASVABLineScoreCalculatorPage() {
 
         <section className="mt-10 not-prose">
           <EmailCapture
-            headline="Hit your target line score — free 30-day study plan"
+            headline="Hit your target line score, free 30-day study plan"
             subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
             cta="Email me the plan"
             tag="line-score-calculator"

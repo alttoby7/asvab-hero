@@ -24,10 +24,9 @@ export default function HighestASVABScorePage() {
             "The highest ASVAB score is 99 AFQT. Learn what that percentile means, how subtest and composite scores differ, what a 99 unlocks, and how to get there.",
           url: "https://asvabhero.com/highest-asvab-score",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",

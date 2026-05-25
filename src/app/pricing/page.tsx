@@ -4,7 +4,7 @@ import PricingPlans from "@/components/PricingPlans";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "ASVAB Hero pricing — free calculator for everyone, Pro subscription for unlimited practice tests and study tools.",
+    "ASVAB Hero pricing, free calculator for everyone, Pro subscription for unlimited practice tests and study tools.",
   alternates: {
     canonical: "https://asvabhero.com/pricing",
   },
@@ -37,7 +37,7 @@ export default function PricingPage() {
           Simple, transparent pricing
         </h1>
         <p className="mt-3 text-text-secondary">
-          The score-moving core is free — no card. Pro removes every limit.
+          The score-moving core is free, no card. Pro removes every limit.
         </p>
       </div>
 

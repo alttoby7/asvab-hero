@@ -73,10 +73,9 @@ export default function ASVABScoresExplainedPage() {
             "How to read every number on your ASVAB score sheet: AFQT percentiles, the 9 subtest standard scores, composite line scores, and 2026 branch minimums.",
           url: "https://asvabhero.com/asvab-scores-explained",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -117,7 +116,7 @@ export default function ASVABScoresExplainedPage() {
           <p>
             Your ASVAB score sheet has two kinds of numbers. The{" "}
             <strong>AFQT</strong> (a 1–99 percentile built from AR + MK + 2×VE)
-            decides whether you can enlist at all — branch minimums run 31–40.
+            decides whether you can enlist at all, branch minimums run 31–40.
             The <strong>line scores / composites</strong> (Army GT, Air Force
             MAGE, Navy rating combos, Marines GT/EL/MM/CL/ST) decide which
             jobs you qualify for. AFQT ≠ jobs. Line scores = jobs. Scroll
@@ -168,7 +167,7 @@ export default function ASVABScoresExplainedPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Your score sheet shows three different kinds of numbers on three different scales. Mixing them up is the most common reason people misread their results &mdash; a &ldquo;62&rdquo; next to one label is well above average, and a &ldquo;62&rdquo; next to another barely clears the door. Sort them into three buckets and the page stops being intimidating.
+          Your score sheet shows three different kinds of numbers on three different scales. Mixing them up is the most common reason people misread their results, a &ldquo;62&rdquo; next to one label is well above average, and a &ldquo;62&rdquo; next to another barely clears the door. Sort them into three buckets and the page stops being intimidating.
         </p>
 
         <div className="my-4 overflow-x-auto">
@@ -184,7 +183,7 @@ export default function ASVABScoresExplainedPage() {
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">9 subtest standard scores</td>
                 <td className="py-2 pr-4 font-mono">mean 50, SD 10</td>
-                <td className="py-2">Nothing on their own &mdash; they feed the two scores below.</td>
+                <td className="py-2">Nothing on their own, they feed the two scores below.</td>
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">AFQT</td>
@@ -201,10 +200,10 @@ export default function ASVABScoresExplainedPage() {
         </div>
 
         <p className="text-text-secondary">
-          <strong>Start with the standard scores.</strong> Each of the 9 subtests is reported on a scale where 50 is the average and every 10 points is one standard deviation, so most scores land between 30 and 70. A 60 in Word Knowledge means one standard deviation above average &mdash; not &ldquo;60% correct.&rdquo; These nine numbers are the raw material; the two numbers that actually decide anything are built from them.
+          <strong>Start with the standard scores.</strong> Each of the 9 subtests is reported on a scale where 50 is the average and every 10 points is one standard deviation, so most scores land between 30 and 70. A 60 in Word Knowledge means one standard deviation above average, not &ldquo;60% correct.&rdquo; These nine numbers are the raw material; the two numbers that actually decide anything are built from them.
         </p>
         <p className="text-text-secondary">
-          <strong>Then find your AFQT.</strong> It&apos;s the only percentile on the sheet (1&ndash;99), built from four subtests as 2(VE) + AR + MK, and it&apos;s the number your recruiter means when they ask what you got. It decides eligibility, not jobs. <strong>Last, read your composite / line scores</strong> &mdash; Army GT, Air Force MAGE, Navy rating combos &mdash; which decide the jobs you can pick. Check the AFQT against the branch minimums further down, then drop all nine subtests into our{" "}
+          <strong>Then find your AFQT.</strong> It&apos;s the only percentile on the sheet (1&ndash;99), built from four subtests as 2(VE) + AR + MK, and it&apos;s the number your recruiter means when they ask what you got. It decides eligibility, not jobs. <strong>Last, read your composite / line scores</strong>, Army GT, Air Force MAGE, Navy rating combos, which decide the jobs you can pick. Check the AFQT against the branch minimums further down, then drop all nine subtests into our{" "}
           <Link href="/calculator" className="text-accent hover:text-accent-hover">
             free ASVAB score calculator
           </Link>{" "}
@@ -214,7 +213,7 @@ export default function ASVABScoresExplainedPage() {
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Key Point</p>
           <p className="mt-1 text-sm text-text-secondary">
-            Your AFQT is a percentile, not a percent. An AFQT of 50 doesn&apos;t mean you answered half the questions correctly &mdash; it means you scored as well as or better than 50% of the 1997 reference group. The subtest standard scores (mean 50) and the AFQT percentile (1&ndash;99) look like the same kind of number and measure completely different things.
+            Your AFQT is a percentile, not a percent. An AFQT of 50 doesn&apos;t mean you answered half the questions correctly, it means you scored as well as or better than 50% of the 1997 reference group. The subtest standard scores (mean 50) and the AFQT percentile (1&ndash;99) look like the same kind of number and measure completely different things.
           </p>
         </aside>
 

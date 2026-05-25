@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import EmailCapture from "@/components/EmailCapture";
+import { subtestPracticeIndex } from "@/lib/free-practice";
 
 export const metadata: Metadata = {
   title: "Free ASVAB Practice Tests (2026): What's Actually Worth Using",
@@ -25,10 +26,9 @@ export default function FreeAsvabPracticeTestsPage() {
             "Honest reviews of the 6 best free ASVAB practice tests in 2026. Includes question counts, explanations, signup requirements, and an AFQT estimator comparison.",
           url: "https://asvabhero.com/free-asvab-practice-tests",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -49,7 +49,7 @@ export default function FreeAsvabPracticeTestsPage() {
               name: "Is one free practice test enough to prepare for the ASVAB?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "One practice test is enough to get a baseline — not enough to prepare. A single test shows you where you stand today. Fixing weak spots takes repeated drilling on the specific subtests dragging your score down. Treat your first practice test as a diagnosis, not as prep.",
+                text: "One practice test is enough to get a baseline, not enough to prepare. A single test shows you where you stand today. Fixing weak spots takes repeated drilling on the specific subtests dragging your score down. Treat your first practice test as a diagnosis, not as prep.",
               },
             },
             {
@@ -81,7 +81,7 @@ export default function FreeAsvabPracticeTestsPage() {
               name: "What's the difference between a practice test and the real ASVAB?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "The real CAT-ASVAB at MEPS is computer-adaptive — questions get harder as you answer correctly, which means the test is always working at the edge of your ability. Practice tests are typically fixed-difficulty. The real test also covers 9 subtests under timed conditions in a proctored room. Most free practice tests cover fewer subtests or don't enforce time limits. Practice tests are useful for identifying weak areas and building familiarity with question formats, but they aren't a perfect simulation of MEPS conditions.",
+                text: "The real CAT-ASVAB at MEPS is computer-adaptive, questions get harder as you answer correctly, which means the test is always working at the edge of your ability. Practice tests are typically fixed-difficulty. The real test also covers 9 subtests under timed conditions in a proctored room. Most free practice tests cover fewer subtests or don't enforce time limits. Practice tests are useful for identifying weak areas and building familiarity with question formats, but they aren't a perfect simulation of MEPS conditions.",
               },
             },
           ],
@@ -111,16 +111,16 @@ export default function FreeAsvabPracticeTestsPage() {
 
         {/* TL;DR */}
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">TL;DR — Top 3 Free Options</p>
+          <p className="text-sm font-semibold text-text-primary">TL;DR: Top 3 Free Options</p>
           <ul className="mt-2 space-y-1 text-sm text-text-secondary list-none">
             <li>
-              <strong className="text-text-primary">1. ASVAB Hero Free Diagnostic</strong> — 30 questions across all 9 subtests, full explanations, AFQT estimate, no signup required.
+              <strong className="text-text-primary">1. ASVAB Hero Free Diagnostic:</strong> 30 questions across all 9 subtests, full explanations, AFQT estimate, no signup required.
             </li>
             <li>
-              <strong className="text-text-primary">2. UnionTestPrep</strong> — Large question bank, no signup, decent explanations. Ad-heavy but usable.
+              <strong className="text-text-primary">2. UnionTestPrep:</strong> large question bank, no signup, decent explanations. Ad-heavy but usable.
             </li>
             <li>
-              <strong className="text-text-primary">3. March2Success</strong> — Army&apos;s official free portal, comprehensive content. Signup required, dated UX.
+              <strong className="text-text-primary">3. March2Success:</strong> Army&apos;s official free portal, comprehensive content. Signup required, dated UX.
             </li>
           </ul>
         </aside>
@@ -165,7 +165,7 @@ export default function FreeAsvabPracticeTestsPage() {
 
         <p className="text-text-secondary">
           The six options below have real question counts, real explanations, or
-          real institutional backing — in some cases all three.
+          real institutional backing, in some cases all three.
         </p>
 
         {/* Section 2: Methodology */}
@@ -218,9 +218,9 @@ export default function FreeAsvabPracticeTestsPage() {
           </table>
         </div>
 
-        {/* Section 3: #1 — ASVAB Hero */}
+        {/* Section 3: #1: ASVAB Hero */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          #1 — ASVAB Hero Free Diagnostic
+          #1: ASVAB Hero Free Diagnostic
         </h2>
 
         <p className="mt-4 text-text-secondary">
@@ -234,10 +234,10 @@ export default function FreeAsvabPracticeTestsPage() {
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-emerald-400">Pros</p>
             <ul className="mt-1 space-y-1 text-sm text-text-secondary list-disc list-inside">
-              <li>30 questions covering all 9 subtests — enough for a real baseline</li>
+              <li>30 questions covering all 9 subtests, enough for a real baseline</li>
               <li>AFQT estimate shown at the end</li>
               <li>Full explanation for every question, including why wrong answers are wrong</li>
-              <li>Weak-topic identification — shows which subtests need the most work</li>
+              <li>Weak-topic identification, shows which subtests need the most work</li>
               <li>No signup required to start or finish the test</li>
               <li>Mobile-friendly, no ads</li>
             </ul>
@@ -254,7 +254,7 @@ export default function FreeAsvabPracticeTestsPage() {
 
         <p className="text-text-secondary">
           It&apos;s designed for recruits who want to know where they actually
-          stand — not a vague letter grade, but a real AFQT estimate and a
+          stand, not a vague letter grade, but a real AFQT estimate and a
           list of which subtests are holding them back.
         </p>
 
@@ -273,15 +273,15 @@ export default function FreeAsvabPracticeTestsPage() {
           </Link>
         </div>
 
-        {/* Section 4: #2 — UnionTestPrep */}
+        {/* Section 4: #2: UnionTestPrep */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          #2 — UnionTestPrep
+          #2: UnionTestPrep
         </h2>
 
         <p className="mt-4 text-text-secondary">
           UnionTestPrep has one of the larger free question banks for the ASVAB.
           You can practice individual subtests by category without creating an
-          account, and the explanations are generally solid — more than just
+          account, and the explanations are generally solid, more than just
           &ldquo;the answer is B.&rdquo;
         </p>
 
@@ -297,7 +297,7 @@ export default function FreeAsvabPracticeTestsPage() {
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-amber-400">Cons</p>
             <ul className="mt-1 space-y-1 text-sm text-text-secondary list-disc list-inside">
-              <li>Ad-heavy — distracting on mobile, intrusive on desktop</li>
+              <li>Ad-heavy, distracting on mobile, intrusive on desktop</li>
               <li>No AFQT estimator; you&apos;ll have to do the math yourself</li>
               <li>No progress tracking across sessions without an account</li>
             </ul>
@@ -310,7 +310,7 @@ export default function FreeAsvabPracticeTestsPage() {
           weak spots. Use it for subtest drilling, not for a baseline assessment.
         </p>
 
-        {/* Email Capture — inline, mid-page */}
+        {/* Email Capture, inline, mid-page */}
         <div className="my-10">
           <EmailCapture
             variant="inline"
@@ -321,14 +321,36 @@ export default function FreeAsvabPracticeTestsPage() {
           />
         </div>
 
-        {/* Section 5: #3 — March2Success */}
+        {/* Our free per-subtest practice tests */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          #3 — March2Success (Army&apos;s Free Portal)
+          Free ASVAB practice tests by subtest
+        </h2>
+        <p className="mt-4 text-text-secondary">
+          Beyond the full diagnostic, we publish free practice questions for each
+          ASVAB subtest, every question has the correct answer and a full
+          explanation, and none of them require an account:
+        </p>
+        <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+          {subtestPracticeIndex().map((s) => (
+            <li key={s.slug}>
+              <Link
+                href={`/free-asvab-practice-test/${s.slug}`}
+                className="text-accent underline hover:text-accent-hover"
+              >
+                ASVAB {s.meta.fullName} practice test ({s.questions.length} questions)
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* Section 5: #3: March2Success */}
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          #3: March2Success (Army&apos;s Free Portal)
         </h2>
 
         <p className="mt-4 text-text-secondary">
           March2Success is the U.S. Army&apos;s free academic prep program.
-          It includes full ASVAB prep across all subtests — not just math and
+          It includes full ASVAB prep across all subtests, not just math and
           English, but the full battery. The content is accurate, institution-
           backed, and genuinely comprehensive.
         </p>
@@ -337,7 +359,7 @@ export default function FreeAsvabPracticeTestsPage() {
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-emerald-400">Pros</p>
             <ul className="mt-1 space-y-1 text-sm text-text-secondary list-disc list-inside">
-              <li>Official Army resource — content is reliable and current</li>
+              <li>Official Army resource, content is reliable and current</li>
               <li>Free and comprehensive</li>
               <li>Covers all ASVAB subtests with study lessons, not just quizzes</li>
             </ul>
@@ -346,7 +368,7 @@ export default function FreeAsvabPracticeTestsPage() {
             <p className="font-mono text-sm font-bold text-amber-400">Cons</p>
             <ul className="mt-1 space-y-1 text-sm text-text-secondary list-disc list-inside">
               <li>Signup required before accessing any content</li>
-              <li>Dated interface — slow to navigate on mobile</li>
+              <li>Dated interface, slow to navigate on mobile</li>
               <li>Army-focused framing; recruits targeting other branches may find the context off</li>
               <li>No AFQT estimator</li>
             </ul>
@@ -359,9 +381,9 @@ export default function FreeAsvabPracticeTestsPage() {
           friction, start elsewhere.
         </p>
 
-        {/* Section 6: #4 — 4Tests / Test-Guide */}
+        {/* Section 6: #4: 4Tests / Test-Guide */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          #4 — 4Tests / Test-Guide.com
+          #4: 4Tests / Test-Guide.com
         </h2>
 
         <p className="mt-4 text-text-secondary">
@@ -375,7 +397,7 @@ export default function FreeAsvabPracticeTestsPage() {
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-emerald-400">Pros</p>
             <ul className="mt-1 space-y-1 text-sm text-text-secondary list-disc list-inside">
-              <li>Multiple short tests per subtest — useful for variety</li>
+              <li>Multiple short tests per subtest, useful for variety</li>
               <li>No signup</li>
               <li>Accessible and fast to load</li>
             </ul>
@@ -396,13 +418,13 @@ export default function FreeAsvabPracticeTestsPage() {
           replacement for a full-length timed test before MEPS.
         </p>
 
-        {/* Section 7: #5 — Kaplan */}
+        {/* Section 7: #5: Kaplan */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          #5 — Kaplan Free Sample
+          #5: Kaplan Free Sample
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Kaplan offers a small free sample of their ASVAB course — typically
+          Kaplan offers a small free sample of their ASVAB course, typically
           around 20 questions. The quality is noticeably higher than generic
           quiz sites. The questions are well-written, the explanations are clear,
           and the interface is clean.
@@ -420,9 +442,9 @@ export default function FreeAsvabPracticeTestsPage() {
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-amber-400">Cons</p>
             <ul className="mt-1 space-y-1 text-sm text-text-secondary list-disc list-inside">
-              <li>Only ~20 items — too short for a real diagnostic</li>
+              <li>Only ~20 items, too short for a real diagnostic</li>
               <li>Explicitly a teaser for their paid course ($200+)</li>
-              <li>The free portion is gated — you&apos;ll see upsell prompts throughout</li>
+              <li>The free portion is gated, you&apos;ll see upsell prompts throughout</li>
             </ul>
           </div>
         </div>
@@ -433,15 +455,15 @@ export default function FreeAsvabPracticeTestsPage() {
           for a full practice test.
         </p>
 
-        {/* Section 8: #6 — GoArmy.com / Official */}
+        {/* Section 8: #6: GoArmy.com / Official */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          #6 — GoArmy.com / Official Government Practice
+          #6: GoArmy.com / Official Government Practice
         </h2>
 
         <p className="mt-4 text-text-secondary">
           GoArmy.com and some .mil resources include basic ASVAB practice
-          content. The content is accurate — it&apos;s official government
-          material — but the experience is basic. Expect a small number of
+          content. The content is accurate, it&apos;s official government
+          material, but the experience is basic. Expect a small number of
           sample questions with minimal feedback.
         </p>
 
@@ -449,7 +471,7 @@ export default function FreeAsvabPracticeTestsPage() {
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-emerald-400">Pros</p>
             <ul className="mt-1 space-y-1 text-sm text-text-secondary list-disc list-inside">
-              <li>Official government content — accurate and current</li>
+              <li>Official government content, accurate and current</li>
               <li>Free with no signup</li>
               <li>Good for understanding what the real ASVAB covers</li>
             </ul>
@@ -457,7 +479,7 @@ export default function FreeAsvabPracticeTestsPage() {
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-amber-400">Cons</p>
             <ul className="mt-1 space-y-1 text-sm text-text-secondary list-disc list-inside">
-              <li>Very few questions — more of an orientation than a practice test</li>
+              <li>Very few questions, more of an orientation than a practice test</li>
               <li>No AFQT estimator, no score tracking, minimal explanations</li>
               <li>Navigation is cumbersome on .mil sites</li>
             </ul>
@@ -554,7 +576,7 @@ export default function FreeAsvabPracticeTestsPage() {
         <p className="mt-4 text-text-secondary">
           Free practice tests will give you a baseline. They&apos;ll show you
           which subtests are dragging your AFQT down. That&apos;s genuinely
-          useful — but it&apos;s step one, not step three.
+          useful, but it&apos;s step one, not step three.
         </p>
 
         <p className="text-text-secondary">
@@ -580,7 +602,7 @@ export default function FreeAsvabPracticeTestsPage() {
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-accent">Adaptive difficulty</p>
             <p className="mt-1 text-sm text-text-secondary">
-              The real ASVAB at MEPS is adaptive — it adjusts to your level.
+              The real ASVAB at MEPS is adaptive, it adjusts to your level.
               Static free tests don&apos;t simulate that experience.
             </p>
           </div>
@@ -588,7 +610,7 @@ export default function FreeAsvabPracticeTestsPage() {
 
         <p className="text-text-secondary">
           If you want to fix weak spots rather than just identify them, your
-          options are a study book ($20&ndash;35 one-time — see our{" "}
+          options are a study book ($20&ndash;35 one-time, see our{" "}
           <Link href="/best-asvab-study-book" className="text-accent hover:text-accent-hover">
             best ASVAB study book guide
           </Link>
@@ -597,7 +619,7 @@ export default function FreeAsvabPracticeTestsPage() {
             Pro plan ($9.99/mo)
           </Link>{" "}
           gives you unlimited subtest drilling, full-length practice tests, and
-          progress tracking — cancel anytime once you&apos;ve sat at MEPS.
+          progress tracking, cancel anytime once you&apos;ve sat at MEPS.
         </p>
 
         {/* Section 11: How to use a free practice test wisely */}
@@ -668,7 +690,7 @@ export default function FreeAsvabPracticeTestsPage() {
               Is one free practice test enough to prepare for the ASVAB?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              One practice test is enough to get a baseline — not enough to
+              One practice test is enough to get a baseline, not enough to
               prepare. A single test shows you where you stand today. Fixing
               weak spots takes repeated drilling on the specific subtests
               dragging your score down. Treat your first practice test as a
@@ -724,7 +746,7 @@ export default function FreeAsvabPracticeTestsPage() {
               ASVAB?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              The real CAT-ASVAB at MEPS is computer-adaptive — questions get
+              The real CAT-ASVAB at MEPS is computer-adaptive, questions get
               harder as you answer correctly, which means the test is always
               working at the edge of your ability. Practice tests are typically
               fixed-difficulty. The real test also covers 9 subtests under

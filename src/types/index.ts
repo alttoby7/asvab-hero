@@ -88,9 +88,9 @@ export interface PracticeQuestion {
   options: [string, string, string, string];
   correctIndex: number;
   explanation: string;
-  /** Optional — set when sampled from Supabase, used by topic-level scoring. */
+  /** Optional, set when sampled from Supabase, used by topic-level scoring. */
   topicId?: string;
-  /** Optional — difficulty 1–5 from the DB. */
+  /** Optional, difficulty 1–5 from the DB. */
   difficulty?: number;
 }
 
@@ -196,7 +196,7 @@ export interface Attempt {
   primary_metric_estimate?: number | null;
 }
 
-/** Insert payload — client builds this; server fills user_id / id / created_at. */
+/** Insert payload, client builds this; server fills user_id / id / created_at. */
 export type AttemptPayload = Omit<Attempt, "id" | "user_id">;
 
 export interface NextStepRecommendation {

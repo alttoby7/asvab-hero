@@ -1,7 +1,7 @@
 // Client-side Sentry init for the static-exported Next.js app.
 // Loaded automatically by @sentry/nextjs when present at the project root.
 //
-// `output: "export"` means there's no server or edge runtime — this file
+// `output: "export"` means there's no server or edge runtime, this file
 // is the only Sentry config that runs. We skip sentry.server.config.ts and
 // sentry.edge.config.ts deliberately.
 //

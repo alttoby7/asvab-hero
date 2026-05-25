@@ -82,7 +82,7 @@ export default function FlashcardsClient() {
             </span>
             {!isPro && (
               <span className="rounded-full border border-accent-dim bg-accent-dim px-3 py-1 text-accent">
-                Free plan — 1 of 6 decks unlocked
+                Free plan, 1 of 6 decks unlocked
               </span>
             )}
           </div>

@@ -46,7 +46,7 @@ export default function AirForceCalculatorPage() {
           Air Force ASVAB Calculator
         </h1>
         <p className="mt-3 text-lg text-text-secondary">
-          See every Air Force AFSC you qualify for — plus your MAGE composite
+          See every Air Force AFSC you qualify for, plus your MAGE composite
           scores, the four gates that decide your career field.
         </p>
       </div>
@@ -93,7 +93,7 @@ export default function AirForceCalculatorPage() {
         </h2>
         <p className="mt-3 text-text-secondary">
           Every Air Force AFSC publishes its minimum in one or more of these
-          four composites. Raise the subtests feeding the composite you need —
+          four composites. Raise the subtests feeding the composite you need, 
           not just your AFQT. For the full breakdown, see the{" "}
           <Link
             href="/air-force-mage-score"
@@ -112,10 +112,10 @@ export default function AirForceCalculatorPage() {
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           {[
-            ["M — Mechanical", "AR + 2×VE + MC + AS"],
-            ["A — Administrative", "VE + MK"],
-            ["G — General", "VE + AR"],
-            ["E — Electronics", "AR + MK + EI + GS"],
+            ["M, Mechanical", "AR + 2×VE + MC + AS"],
+            ["A, Administrative", "VE + MK"],
+            ["G, General", "VE + AR"],
+            ["E, Electronics", "AR + MK + EI + GS"],
           ].map(([label, formula]) => (
             <div key={label} className="rounded-lg bg-navy px-4 py-3">
               <p className="font-mono text-sm font-bold text-accent">{label}</p>
@@ -171,7 +171,7 @@ export default function AirForceCalculatorPage() {
           </table>
         </div>
         <p className="mt-4 text-sm text-text-secondary">
-          The calculator above checks every AFSC we have data for — not just
+          The calculator above checks every AFSC we have data for, not just
           these. Treat the results as published minimums and an estimate of
           where you stand, not a guarantee of qualification: exact MAGE
           percentiles can&apos;t be reliably derived from a rounded score
@@ -220,7 +220,7 @@ export default function AirForceCalculatorPage() {
 
       <section className="mt-10">
         <EmailCapture
-          headline="Push your MAGE scores into AFSC range — free 30-day plan"
+          headline="Push your MAGE scores into AFSC range, free 30-day plan"
           subhead="Free 30-day study plan plus a 5-email crash course on AFQT, line scores, and the topics covered here."
           cta="Email me the plan"
           tag="airforce-calculator"

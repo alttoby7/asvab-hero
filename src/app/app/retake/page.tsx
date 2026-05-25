@@ -144,7 +144,7 @@ export default function RetakePage() {
               </>
             )}
             <p className="mt-2 border-t border-navy-border pt-2 text-xs text-text-tertiary">
-              {elig.rule} Branches may add their own DEP restrictions — confirm
+              {elig.rule} Branches may add their own DEP restrictions, confirm
               the exact date with your recruiter.
             </p>
           </>
@@ -155,7 +155,7 @@ export default function RetakePage() {
       {cTest && (
         <div className="mt-3 rounded-lg border border-amber-500/40 bg-amber-500/10 px-4 py-3 text-xs text-amber-200">
           Heads-up: your AFQT rose 20+ points within 6 months, which triggers a
-          confirmation test (C-Test) at MEPS — taken immediately with no wait.
+          confirmation test (C-Test) at MEPS, taken immediately with no wait.
         </div>
       )}
       {scoresExpired && (

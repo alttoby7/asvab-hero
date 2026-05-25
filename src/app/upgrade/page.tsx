@@ -24,7 +24,7 @@ type FromParam =
 
 const HEADLINES: Record<NonNullable<FromParam>, string> = {
   variant_picker: "Unlock unlimited practice",
-  diagnostic_used: "You've used your free diagnostic — keep going with Pro",
+  diagnostic_used: "You've used your free diagnostic, keep going with Pro",
   mini_drill: "Drills are part of Pro",
   results: "Ready for serious prep?",
 };
@@ -43,7 +43,7 @@ function UpgradeContent() {
   const faqFiredRef = useRef<Set<string>>(new Set());
 
   useEffect(() => {
-    // Existing GA4 event — unchanged.
+    // Existing GA4 event, unchanged.
     trackEvent(FunnelEvents.UpgradePageView, { from: from ?? "direct" });
     // First-party: adopt an inbound pcid (URL) or ensure one, then fire the
     // additive event + detect the Stripe cancel return.
@@ -92,7 +92,7 @@ function UpgradeContent() {
   const isLoading = sessionLoading || entitlementLoading;
   const headline = (from && HEADLINES[from]) || "Upgrade to Pro";
 
-  // Stats section — only show for logged-in users
+  // Stats section, only show for logged-in users
   const showStats = !isLoading && !!session;
 
   return (
@@ -105,8 +105,8 @@ function UpgradeContent() {
         {showStats && (
           <p className="mt-3 text-text-secondary">
             Your daily adaptive block and Mistake Bank are already free. Pro removes
-            every limit — unlimited adaptive practice, full-length sims, and deeper
-            analytics — so nothing slows you down.
+            every limit, unlimited adaptive practice, full-length sims, and deeper
+            analytics, so nothing slows you down.
           </p>
         )}
         {!showStats && !isLoading && (
@@ -118,11 +118,11 @@ function UpgradeContent() {
         )}
       </div>
 
-      {/* Hero image — the satisfaction moment after the practice grind pays off */}
+      {/* Hero image, the satisfaction moment after the practice grind pays off */}
       <div className="mb-12 mx-auto max-w-3xl">
         <BrandHero
           src="/images/generated/asvab-upgrade-hero.png"
-          alt="A focused candidate breaking through ASVAB practice — calculator in hand, notebook of worked-out problems, mid-morning daylight."
+          alt="A focused candidate breaking through ASVAB practice, calculator in hand, notebook of worked-out problems, mid-morning daylight."
           width={1536}
           height={1024}
           priority
@@ -130,7 +130,7 @@ function UpgradeContent() {
         />
       </div>
 
-      {/* Already Pro — manage link */}
+      {/* Already Pro, manage link */}
       {!isLoading && entitlement.isPro && (
         <div className="mb-8 rounded-2xl border border-accent bg-accent/10 p-6 text-center">
           <p className="font-semibold text-text-primary mb-2">
@@ -145,7 +145,7 @@ function UpgradeContent() {
         </div>
       )}
 
-      {/* Not ready for Pro? The free plan already raises scores — route there,
+      {/* Not ready for Pro? The free plan already raises scores, route there,
          not to a PDF dead end. */}
       {!isLoading && !entitlement.isPro && (
         <div className="mb-10 rounded-2xl border border-navy-border bg-navy-light p-6 text-center sm:p-7">
@@ -154,7 +154,7 @@ function UpgradeContent() {
           </p>
           <p className="mx-auto mt-2 max-w-xl text-sm text-text-secondary">
             One adaptive AFQT block a day, unlimited Mistake-Bank review, and a
-            weekly plan — all free, no card. Come back for Pro when you want
+            weekly plan, all free, no card. Come back for Pro when you want
             unlimited practice and full-length sims.
           </p>
           <Link
@@ -192,7 +192,7 @@ function UpgradeContent() {
             </summary>
             <p className="mt-2 text-sm text-text-secondary leading-relaxed">
               Most recruits prep for 4–8 weeks. Practice volume is the single
-              biggest predictor of score improvement — Pro removes every limit so
+              biggest predictor of score improvement, Pro removes every limit so
               you can drill as much as you need.
             </p>
           </details>

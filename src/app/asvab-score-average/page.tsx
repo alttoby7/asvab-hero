@@ -24,10 +24,9 @@ export default function ASVABScoreAveragePage() {
             "An average ASVAB score is AFQT 50. Learn what average means, which jobs it qualifies you for, score averages by branch, and how to score above average.",
           url: "https://asvabhero.com/asvab-score-average",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",

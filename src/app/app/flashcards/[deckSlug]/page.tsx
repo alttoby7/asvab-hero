@@ -1,5 +1,5 @@
 /**
- * In-app deck review — member-shell version of /flashcards/[deckSlug]. Server
+ * In-app deck review, member-shell version of /flashcards/[deckSlug]. Server
  * wrapper (noindex) around the shared ReviewEngineClient. `generateStaticParams`
  * mirrors the public deck page so every deck is statically exported under /app.
  */

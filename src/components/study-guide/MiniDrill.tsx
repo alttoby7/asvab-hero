@@ -62,7 +62,7 @@ export default function MiniDrill({ topicId }: MiniDrillProps) {
   // Only fetch questions for Pro users.
   const shouldFetch = !entitlementLoading && entitlement.isPro;
 
-  // paywall_shown — fires once when free user first sees the lock card.
+  // paywall_shown, fires once when free user first sees the lock card.
   useEffect(() => {
     if (entitlementLoading || entitlement.isPro || paywallFiredRef.current) return;
     paywallFiredRef.current = true;
@@ -73,7 +73,7 @@ export default function MiniDrill({ topicId }: MiniDrillProps) {
     });
   }, [entitlementLoading, entitlement.isPro, topicId]);
 
-  // topic_drill_start — fires once when questions are loaded for a Pro user.
+  // topic_drill_start, fires once when questions are loaded for a Pro user.
   useEffect(() => {
     if (!questions || questions.length < 3 || startedRef.current) return;
     startedRef.current = true;
@@ -137,7 +137,7 @@ export default function MiniDrill({ topicId }: MiniDrillProps) {
 
       // Persist via the single audited path. The ingest_attempt_mistakes
       // trigger (migration 0020) banks misses, captures item_exposures, and
-      // recomputes topic_stats DB-side — so no explicit recompute_topic_stats
+      // recomputes topic_stats DB-side, so no explicit recompute_topic_stats
       // rpc is needed. question_results MUST use external_key ids and an
       // INTEGER `correct` (the trigger casts ->>'correct' to int; a boolean
       // threw and silently dropped every mini-drill attempt).
@@ -357,11 +357,11 @@ export default function MiniDrill({ topicId }: MiniDrillProps) {
                     <span className="font-medium">Correct. </span>
                   ) : isWrong ? (
                     <span className="font-medium">
-                      Incorrect — correct answer: {OPTION_LETTERS[q.correct_index]}.{" "}
+                      Incorrect, correct answer: {OPTION_LETTERS[q.correct_index]}.{" "}
                     </span>
                   ) : (
                     <span className="font-medium">
-                      Skipped — answer: {OPTION_LETTERS[q.correct_index]}.{" "}
+                      Skipped, answer: {OPTION_LETTERS[q.correct_index]}.{" "}
                     </span>
                   )}
                   {q.explanation}

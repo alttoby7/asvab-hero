@@ -3,9 +3,10 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import FreeDiagnosticClient from "@/components/practice-test/FreeDiagnosticClient";
 import EmailCapture from "@/components/EmailCapture";
+import { subtestPracticeIndex } from "@/lib/free-practice";
 
 export const metadata: Metadata = {
-  title: "Free ASVAB Practice Test (2026) — 30 Questions, Instant AFQT Score",
+  title: "Free ASVAB Practice Test (2026), 30 Questions, Instant AFQT Score",
   description:
     "Take a free ASVAB practice test with 30 timed questions across all 9 subtests. Get your estimated AFQT score instantly. No signup required to start.",
   alternates: {
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
 const faqItems = [
   {
     q: "Is this ASVAB practice test really free?",
-    a: "Yes. The 30-question diagnostic is completely free — no account required, no credit card, no trial. You can take it right now and see your results immediately.",
+    a: "Yes. The 30-question diagnostic is completely free, no account required, no credit card, no trial. You can take it right now and see your results immediately.",
   },
   {
     q: "How many questions are on this practice test?",
@@ -28,7 +29,7 @@ const faqItems = [
   },
   {
     q: "Will I get an AFQT score?",
-    a: "Yes. After completing the test you'll see an estimated AFQT percentile based on your performance on the four AFQT subtests (AR, WK, PC, MK). It's an estimate — real ASVAB scores account for item-level difficulty — but it's close enough to gauge your readiness.",
+    a: "Yes. After completing the test you'll see an estimated AFQT percentile based on your performance on the four AFQT subtests (AR, WK, PC, MK). It's an estimate, real ASVAB scores account for item-level difficulty, but it's close enough to gauge your readiness.",
   },
   {
     q: "How accurate is this practice test compared to the real ASVAB?",
@@ -115,6 +116,29 @@ export default function FreeAsvabPracticeTestPage() {
         <FreeDiagnosticClient />
       </div>
 
+      {/* Practice one subtest at a time (links to crawlable per-subtest pages) */}
+      <section className="mt-10 rounded-xl border border-navy-border bg-navy-light p-6">
+        <h2 className="font-display text-xl font-bold text-text-primary">
+          Or practice one subtest at a time
+        </h2>
+        <p className="mt-2 text-sm text-text-secondary">
+          Practice questions for each ASVAB subtest, each with a worked
+          explanation of the right answer.
+        </p>
+        <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+          {subtestPracticeIndex().map((s) => (
+            <li key={s.slug}>
+              <Link
+                href={`/free-asvab-practice-test/${s.slug}`}
+                className="text-sm text-accent underline hover:text-accent-hover"
+              >
+                {s.meta.fullName} practice test ({s.questions.length} Q)
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
       {/* Post-test email capture */}
       <section className="mt-10">
         <EmailCapture
@@ -161,7 +185,7 @@ export default function FreeAsvabPracticeTestPage() {
             How long does the practice test take?
           </h2>
           <p className="mt-4 text-text-secondary">
-            The timed limit is 36 minutes — roughly 72 seconds per question. Most
+            The timed limit is 36 minutes, roughly 72 seconds per question. Most
             users finish in 20–25 minutes. The timer reflects real CAT-ASVAB
             pacing so your score estimate accounts for time pressure, not just
             accuracy.
@@ -229,12 +253,12 @@ export default function FreeAsvabPracticeTestPage() {
             Your results page shows exactly which subtests pulled your score down.
             That&apos;s your study list. A high AFQT with a weak MC score won&apos;t
             block enlistment, but it will close off mechanical and technical jobs.
-            A low AR or MK score affects both your AFQT and most line scores —
+            A low AR or MK score affects both your AFQT and most line scores, 
             prioritize those first.
           </p>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-text-secondary">
             <li>
-              <strong className="text-text-primary">Drill weak subtests</strong> —
+              <strong className="text-text-primary">Drill weak subtests</strong>, 
               use the{" "}
               <Link
                 href="/practice-test"
@@ -245,13 +269,13 @@ export default function FreeAsvabPracticeTestPage() {
               to focus on one area at a time
             </li>
             <li>
-              <strong className="text-text-primary">Review study guides</strong> —
+              <strong className="text-text-primary">Review study guides</strong>, 
               topic-level guides for every subtest are available under each
               subtest&apos;s study section
             </li>
             <li>
               <strong className="text-text-primary">Check your target score</strong>{" "}
-              —{" "}
+, {" "}
               <Link
                 href="/asvab-score-requirements"
                 className="text-accent underline hover:text-accent-hover"
@@ -291,7 +315,7 @@ export default function FreeAsvabPracticeTestPage() {
               >
                 Subtest drills
               </Link>{" "}
-              — drill one subtest at a time
+, drill one subtest at a time
             </li>
             <li>
               <Link
@@ -300,7 +324,7 @@ export default function FreeAsvabPracticeTestPage() {
               >
                 ASVAB score calculator
               </Link>{" "}
-              — convert raw scores to AFQT and line scores
+, convert raw scores to AFQT and line scores
             </li>
             <li>
               <Link
@@ -309,7 +333,7 @@ export default function FreeAsvabPracticeTestPage() {
               >
                 Score requirements by branch
               </Link>{" "}
-              — army, navy, air force, marines, coast guard
+, army, navy, air force, marines, coast guard
             </li>
           </ul>
         </div>

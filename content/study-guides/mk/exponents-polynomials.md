@@ -2,20 +2,20 @@
 topic_id: mk.exponents-polynomials
 subtest: MK
 title: Exponents & Polynomials
-summary: Exponents are shorthand for repeated multiplication — learn the six rules and ASVAB polynomial questions become mechanical.
+summary: Exponents are shorthand for repeated multiplication, learn the six rules and ASVAB polynomial questions become mechanical.
 formula_reference:
   - "Product rule: xᵃ × xᵇ = xᵃ⁺ᵇ (same base, add exponents)"
   - "Quotient rule: xᵃ ÷ xᵇ = xᵃ⁻ᵇ (same base, subtract exponents)"
-  - "Power rule: (xᵃ)ᵇ = xᵃˣᵇ (exponent of an exponent — multiply)"
+  - "Power rule: (xᵃ)ᵇ = xᵃˣᵇ (exponent of an exponent, multiply)"
   - "Zero exponent: x⁰ = 1 for any nonzero x"
   - "Negative exponent: x⁻ᵃ = 1/xᵃ"
-  - "Distributing exponents: (xy)ᵃ = xᵃ × yᵃ — exponents apply to every factor inside"
+  - "Distributing exponents: (xy)ᵃ = xᵃ × yᵃ, exponents apply to every factor inside"
 pitfalls:
-  - "Adding bases instead of exponents: x² × x³ ≠ x⁶ — it's x⁵"
+  - "Adding bases instead of exponents: x² × x³ ≠ x⁶, it's x⁵"
   - "Applying exponent rules across unlike bases: x² × y³ cannot be simplified further"
-  - "Thinking x⁰ = 0 — it equals 1 (for any nonzero x)"
+  - "Thinking x⁰ = 0, it equals 1 (for any nonzero x)"
   - "Mishandling negative exponents: 2⁻³ is 1/8, not −8"
-  - "Distributing an exponent into addition: (x + y)² ≠ x² + y² — you must FOIL"
+  - "Distributing an exponent into addition: (x + y)² ≠ x² + y², you must FOIL"
 worked_examples:
   - prompt: "Simplify: x⁴ × x³"
     solution: "Same base, add exponents: x⁴⁺³ = x⁷"
@@ -29,7 +29,7 @@ worked_examples:
 
 ## What the ASVAB is actually testing
 
-Exponent questions on MK test whether you know the rules for combining powers — product rule, quotient rule, power rule, zero and negative exponents. Polynomial questions test whether you can expand or factor simple expressions. The test stays at the level of two-term polynomials (binomials) and clean integer exponents.
+Exponent questions on MK test whether you know the rules for combining powers, product rule, quotient rule, power rule, zero and negative exponents. Polynomial questions test whether you can expand or factor simple expressions. The test stays at the level of two-term polynomials (binomials) and clean integer exponents.
 
 Nothing here is exotic. It's rule application.
 
@@ -37,11 +37,11 @@ Nothing here is exotic. It's rule application.
 
 Think of exponents as counting how many times a base is multiplied. That perspective makes the rules obvious:
 
-- **Product rule:** `x² × x³ = (x×x)(x×x×x) = x⁵` — count up the multiplications, add the exponents.
-- **Quotient rule:** `x⁵ ÷ x² = x³` — cancel pairs, subtract exponents.
-- **Power rule:** `(x²)³ = x²×x²×x² = x⁶` — multiply exponents.
+- **Product rule:** `x² × x³ = (x×x)(x×x×x) = x⁵`, count up the multiplications, add the exponents.
+- **Quotient rule:** `x⁵ ÷ x² = x³`, cancel pairs, subtract exponents.
+- **Power rule:** `(x²)³ = x²×x²×x² = x⁶`, multiply exponents.
 - **Zero exponent:** Any nonzero base raised to 0 equals 1. This is a definition, not a coincidence.
-- **Negative exponent:** `x⁻²` means `1/x²` — it's a reciprocal, not a negative number.
+- **Negative exponent:** `x⁻²` means `1/x²`, it's a reciprocal, not a negative number.
 - **Distributing over multiplication:** `(2x)³ = 2³ × x³ = 8x³`. The exponent applies to every factor.
 
 ## The FOIL trap

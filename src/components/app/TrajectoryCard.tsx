@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * WS4 — Trajectory card.
+ * WS4, Trajectory card.
  *
  * Shows the user's DERIVED current AFQT standing as a BAND + a confidence badge
- * — never a single AFQT number. Renders the projected test-day band ONLY when
+ *, never a single AFQT number. Renders the projected test-day band ONLY when
  * the backend provides one (projected_test_day != null); otherwise it tells the
  * user honestly that another diagnostic is needed to project test day. No
  * fabricated numbers.
@@ -53,8 +53,8 @@ function interpretBand(low: number, high: number): { line: string; tone: InterpT
   if (low < AFQT_QUALIFY)
     return { line: "Right around the common 31 cutoff", tone: "almost" };
   if (low >= AFQT_BENCHMARK)
-    return { line: "Above the 50 benchmark — strong standing", tone: "success" };
-  return { line: "Above the 31 minimum — climbing toward 50", tone: "success" };
+    return { line: "Above the 50 benchmark, strong standing", tone: "success" };
+  return { line: "Above the 31 minimum, climbing toward 50", tone: "success" };
 }
 
 /** A 0-99 AFQT scale with the user's band highlighted and the 31/50 cutoffs marked. */
@@ -100,7 +100,7 @@ function daysUntil(iso: string): number | null {
 /**
  * Test-day countdown chip for the hero. Shows a precise day count when an exact
  * test date is set; otherwise a subtle prompt to set one (a coarse bucket alone
- * can't drive a real countdown — or the date-based emails).
+ * can't drive a real countdown, or the date-based emails).
  */
 function TestDayCountdown({ iso }: { iso: string | null }) {
   const days = iso ? daysUntil(iso) : null;
@@ -243,7 +243,7 @@ export default function TrajectoryCard({
               Target GT
             </div>
             <div className="mt-1 font-display text-xl font-bold text-text-primary">
-              {targetValue != null ? targetValue : "—"}
+              {targetValue != null ? targetValue : ", "}
             </div>
             {targetValue != null && fromJob && (
               <div className="mt-0.5 text-[11px] text-text-tertiary">
@@ -261,7 +261,7 @@ export default function TrajectoryCard({
                 ? "At target"
                 : gapToTarget != null && gapToTarget > 0
                   ? `~${gapToTarget}`
-                  : "—"}
+                  : ", "}
             </div>
             {gapToTarget != null && gapToTarget > 0 && (
               <div className="mt-0.5 text-[11px] text-text-tertiary">
@@ -271,7 +271,7 @@ export default function TrajectoryCard({
           </div>
         </div>
 
-        {/* Projected target date — honest: only when our guardrails pass. */}
+        {/* Projected target date, honest: only when our guardrails pass. */}
         <div className="mt-3 rounded-xl border border-navy-border bg-navy px-4 py-3">
           <div className="text-xs font-medium uppercase tracking-wider text-text-tertiary">
             Projected target date
@@ -293,7 +293,7 @@ export default function TrajectoryCard({
         </div>
 
         <p className="mt-3 text-[11px] leading-snug text-text-tertiary">
-          Practice proxy based on AR + WK + PC on our equated scale — not an
+          Practice proxy based on AR + WK + PC on our equated scale, not an
           official GT score or a qualification guarantee.
         </p>
 
@@ -354,7 +354,7 @@ export default function TrajectoryCard({
           </p>
         )}
 
-        {/* Projected test day — proxy value when provided. */}
+        {/* Projected test day, proxy value when provided. */}
         <div className="mt-4 rounded-xl border border-navy-border bg-navy px-4 py-3">
           <div className="text-xs font-medium uppercase tracking-wider text-text-tertiary">
             Projected on test day
@@ -378,7 +378,7 @@ export default function TrajectoryCard({
 
         <p className="mt-3 text-[11px] leading-snug text-text-tertiary">
           A practice proxy to track your {primaryMetric.label} climb on our equated
-          scale — not an official {primaryMetric.label} score. Real qualification
+          scale, not an official {primaryMetric.label} score. Real qualification
           targets vary by role/program.
         </p>
 
@@ -452,7 +452,7 @@ export default function TrajectoryCard({
         </p>
       )}
 
-      {/* Official AFQT anchor — the ground-truth result when logged. */}
+      {/* Official AFQT anchor, the ground-truth result when logged. */}
       <div className="mt-4 flex items-center justify-between gap-3 rounded-xl border border-navy-border bg-navy px-4 py-3">
         <div className="text-xs font-medium uppercase tracking-wider text-text-tertiary">
           Official AFQT
@@ -479,7 +479,7 @@ export default function TrajectoryCard({
         )}
       </div>
 
-      {/* Projected test day — only when the backend supplies one. */}
+      {/* Projected test day, only when the backend supplies one. */}
       <div className="mt-3 rounded-xl border border-navy-border bg-navy px-4 py-3">
         <div className="text-xs font-medium uppercase tracking-wider text-text-tertiary">
           Projected on test day

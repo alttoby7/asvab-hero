@@ -1,7 +1,7 @@
 // Builds the §3.3 paywall_viewed context from client-side signals only.
 //
 // Best-effort + fully swallowed: any failure returns conservative defaults so a
-// throw can never reach the paywall render. No PII — bands not raw scores.
+// throw can never reach the paywall render. No PII, bands not raw scores.
 
 import type {
   AuthState,
@@ -29,7 +29,7 @@ function bandAfqt(
   return "93+";
 }
 
-/** Coarse proxy for "how many jobs does this AFQT unlock" — bucketed off the
+/** Coarse proxy for "how many jobs does this AFQT unlock", bucketed off the
  *  AFQT band since exact job counts need branch context the paywall lacks. */
 function bandJobs(
   afqt: number | null | undefined,

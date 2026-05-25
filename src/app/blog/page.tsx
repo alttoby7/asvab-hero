@@ -29,7 +29,7 @@ const resources = [
     tagColor: "bg-success-dim text-success",
     title: "ASVAB Scores Explained",
     description:
-      "What is an AFQT score? How are composites calculated? What scores do you need for each branch? Everything you need to understand your results — with interactive visualizations.",
+      "What is an AFQT score? How are composites calculated? What scores do you need for each branch? Everything you need to understand your results, with interactive visualizations.",
     cta: "Understand Your Scores",
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
@@ -91,7 +91,7 @@ export default function BlogPage() {
           Everything You Need to Ace the ASVAB
         </h1>
         <p className="mt-3 max-w-2xl text-text-secondary">
-          Free guides, interactive tools, and practice tests — built for people
+          Free guides, interactive tools, and practice tests, built for people
           who actually want to understand their scores and land the job they
           want.
         </p>

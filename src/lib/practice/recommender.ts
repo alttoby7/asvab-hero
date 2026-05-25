@@ -18,7 +18,7 @@
  *   4. Otherwise →
  *        Diagnostic (re-)take + study-guide on the weakest visible topic.
  *
- * v2/v3 add `weakness_loop`, `afqt_sprint`, etc. — those branches are
+ * v2/v3 add `weakness_loop`, `afqt_sprint`, etc., those branches are
  * stubbed as comments and gated behind the `activeVariantCodes` set.
  */
 import type {
@@ -33,7 +33,7 @@ import { getTopic } from "./topic-catalog";
 interface RecommenderInput {
   /** Per-topic results from the just-completed attempt. */
   latestByTopic: TopicResult[];
-  /** Per-topic running stats — null for anonymous users with no history. */
+  /** Per-topic running stats, null for anonymous users with no history. */
   topicStats: TopicStats[] | null;
   /** Variant codes that are currently `active = true` in the DB. */
   activeVariantCodes: Set<string>;
@@ -89,7 +89,7 @@ export function recommendNextStep(
   if (adaptiveActive && topicStats && topicStats.some((s) => s.seen > 0)) {
     return {
       headline: "Run an Adaptive AFQT session",
-      body: "This session tunes each question to your current level across Arithmetic Reasoning, Math Knowledge, Word Knowledge, and Paragraph Comprehension — keeping you in the productive 70–80% range so every question moves your score.",
+      body: "This session tunes each question to your current level across Arithmetic Reasoning, Math Knowledge, Word Knowledge, and Paragraph Comprehension, keeping you in the productive 70–80% range so every question moves your score.",
       ctaLabel: "Start Adaptive Practice",
       ctaHref: adaptiveHref(),
     };
@@ -128,7 +128,7 @@ export function recommendNextStep(
       const title = topic?.title ?? weakest.topic_id;
       return {
         headline: `Brush up on ${title}`,
-        body: `This is your highest-priority gap right now. The study guide walks through the formulas and worked examples — about 10 minutes.`,
+        body: `This is your highest-priority gap right now. The study guide walks through the formulas and worked examples, about 10 minutes.`,
         ctaLabel: `Study ${title}`,
         ctaHref: studyGuideHref(weakest.topic_id),
       };
@@ -167,7 +167,7 @@ export function recommendNextStep(
     if (worst && worst.pct < 0.7) {
       return {
         headline: `Drill ${SUBTEST_NAMES[worst.subtest]} next`,
-        body: `You scored ${Math.round(worst.pct * 100)}% on ${SUBTEST_NAMES[worst.subtest]} — the lowest of the nine subtests. A focused 25-question drill is the fastest fix.`,
+        body: `You scored ${Math.round(worst.pct * 100)}% on ${SUBTEST_NAMES[worst.subtest]}, the lowest of the nine subtests. A focused 25-question drill is the fastest fix.`,
         ctaLabel: `Start ${SUBTEST_NAMES[worst.subtest]} Drill`,
         ctaHref: subtestDrillHref(worst.subtest),
       };

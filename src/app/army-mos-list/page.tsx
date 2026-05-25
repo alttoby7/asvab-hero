@@ -24,10 +24,9 @@ export default function ArmyMOSListPage() {
             "Complete Army MOS list with ASVAB line score requirements, all 10 composite formulas, FY26 bonuses up to $50K, and the warrant officer track by Career Management Field.",
           url: "https://asvabhero.com/army-mos-list",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",

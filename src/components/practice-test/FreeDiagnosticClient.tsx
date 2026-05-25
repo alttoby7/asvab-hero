@@ -55,7 +55,7 @@ function TestBlockedScreenWithEvent({
   const { session } = useSession();
   const { entitlement } = useEntitlement();
   useEffect(() => {
-    // Existing GA4 event — unchanged.
+    // Existing GA4 event, unchanged.
     trackEvent(FunnelEvents.PaywallShown, {
       reason,
       from: "free_practice_test",

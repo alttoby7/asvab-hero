@@ -1,7 +1,7 @@
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 
 /**
- * Spaced Mistake Bank — client data layer.
+ * Spaced Mistake Bank, client data layer.
  *
  * The DB is authoritative for scheduling: every wrong answer is banked by the
  * `ingest_attempt_mistakes` trigger on `attempts`, and grading flows through the
@@ -47,7 +47,7 @@ export async function getDueMistakeCount(userId: string): Promise<number> {
  * Due unresolved reviews. Default order: AFQT subtests first, then soonest-due.
  * When `prioritySubtests` is provided (GT Target Mode = ordered AR/WK/PC by
  * weakest), those subtests come first in list order, then soonest-due. This is
- * presentation/queue priority only — the DB scheduler is untouched.
+ * presentation/queue priority only, the DB scheduler is untouched.
  */
 export async function getDueMistakes(
   userId: string,

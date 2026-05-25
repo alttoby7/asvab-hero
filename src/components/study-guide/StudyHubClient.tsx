@@ -120,7 +120,7 @@ export default function StudyHubClient({
       {focus.length > 0 && (
         <section>
           <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-accent">
-            Focus first — your weakest topics
+            Focus first, your weakest topics
           </h2>
           <div className="space-y-2">
             {focus.map((e) => (

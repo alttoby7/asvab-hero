@@ -2,7 +2,7 @@
 topic_id: mk.number-properties
 subtest: MK
 title: Number Properties & Absolute Value
-summary: Number properties questions test whether you know the rules integers follow — sign behavior, divisibility, absolute value — not whether you can do heavy arithmetic.
+summary: Number properties questions test whether you know the rules integers follow, sign behavior, divisibility, absolute value, not whether you can do heavy arithmetic.
 formula_reference:
   - "Absolute value: |x| = x if x ≥ 0; |x| = −x if x < 0. Always non-negative."
   - "Even/odd rules: even + even = even; odd + odd = even; even + odd = odd"
@@ -11,11 +11,11 @@ formula_reference:
   - "Factors vs. multiples: factors divide into a number evenly; multiples are the number × an integer"
   - "GCF: largest factor shared by two numbers. LCM: smallest multiple shared by two numbers."
 pitfalls:
-  - "Assuming 1 is prime — it is not (it has only one factor: itself)"
+  - "Assuming 1 is prime, it is not (it has only one factor: itself)"
   - "Thinking |−x| always equals x: if x is negative, −x is positive, so |−x| = |positive number|"
-  - "Confusing GCF with LCM — GCF makes numbers smaller, LCM makes them bigger"
+  - "Confusing GCF with LCM, GCF makes numbers smaller, LCM makes them bigger"
   - "Assuming all even numbers are composite: 2 is even AND prime"
-  - "Getting sign wrong after multiple negatives: count the negatives — odd count → negative result"
+  - "Getting sign wrong after multiple negatives: count the negatives, odd count → negative result"
 worked_examples:
   - prompt: "What is |−15| + |−8|?"
     solution: "|−15| = 15 and |−8| = 8. Sum = 15 + 8 = 23"
@@ -29,13 +29,13 @@ worked_examples:
 
 ## What the ASVAB is actually testing
 
-Number properties questions check conceptual knowledge, not calculation skill. The test asks about odd/even behavior, prime numbers, absolute value, factors, and multiples — things you either know or you don't. The good news is these rules are short, fixed, and completely learnable in an afternoon.
+Number properties questions check conceptual knowledge, not calculation skill. The test asks about odd/even behavior, prime numbers, absolute value, factors, and multiples, things you either know or you don't. The good news is these rules are short, fixed, and completely learnable in an afternoon.
 
 ## Absolute value: always non-negative
 
 Absolute value is the distance from zero on a number line. Distance is never negative. So |−7| = 7 and |7| = 7. The expression inside can be negative; the result never is.
 
-When absolute value appears in an equation — like |2x − 6| = 10 — there are always two cases: the inside equals the positive value, or the inside equals the negative of the right side. Solve both and check both.
+When absolute value appears in an equation, like |2x − 6| = 10, there are always two cases: the inside equals the positive value, or the inside equals the negative of the right side. Solve both and check both.
 
 ## Prime numbers: know the list
 
@@ -45,7 +45,7 @@ To test an unfamiliar number, check divisibility by all primes up to its square 
 
 ## GCF vs. LCM: which direction are you going?
 
-GCF (Greatest Common Factor) is used when you want to reduce or split — the biggest number that divides evenly into both. LCM (Least Common Multiple) is used when you need a common denominator or want the smallest number both divide into.
+GCF (Greatest Common Factor) is used when you want to reduce or split, the biggest number that divides evenly into both. LCM (Least Common Multiple) is used when you need a common denominator or want the smallest number both divide into.
 
 A quick way to remember: GCF shrinks, LCM grows.
 

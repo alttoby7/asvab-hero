@@ -147,7 +147,7 @@
       "Two cells with different genetic makeup due to chromosome shuffling"
     ],
     "correct_index": 0,
-    "explanation": "Mitosis produces two genetically identical cells that each carry the same number of chromosomes as the original cell — used for growth and repair. Meiosis (not mitosis) produces four cells with half the chromosome count for sexual reproduction."
+    "explanation": "Mitosis produces two genetically identical cells that each carry the same number of chromosomes as the original cell, used for growth and repair. Meiosis (not mitosis) produces four cells with half the chromosome count for sexual reproduction."
   },
   {
     "external_key": "GS-LS-B5-12",
@@ -156,10 +156,10 @@
     "difficulty": 4,
     "stem": "Which process do decomposers like fungi and bacteria perform that is essential to the nutrient cycle?",
     "choices": [
-      "Photosynthesis — converting CO₂ to glucose",
-      "Nitrogen fixation — converting N₂ gas to ammonia",
-      "Decomposition — breaking organic matter into inorganic nutrients",
-      "Transpiration — releasing water vapor from leaves"
+      "Photosynthesis, converting CO₂ to glucose",
+      "Nitrogen fixation, converting N₂ gas to ammonia",
+      "Decomposition, breaking organic matter into inorganic nutrients",
+      "Transpiration, releasing water vapor from leaves"
     ],
     "correct_index": 2,
     "explanation": "Decomposition is the breakdown of dead organisms and waste into simpler inorganic molecules like CO₂, ammonia, and mineral ions that return to soil, water, and air. Without it, carbon and nitrogen would stay locked in corpses and dead leaves and ecosystems would starve. Photosynthesis is what plants and algae do, not fungi. Nitrogen fixation is a narrow process performed by specific bacteria (Rhizobium, cyanobacteria) on N₂ gas, not the general decomposer role. Transpiration is water loss from plant leaves, completely separate from nutrient cycling driven by decomposers."
@@ -192,7 +192,7 @@
       "On the outer mitochondrial membrane"
     ],
     "correct_index": 2,
-    "explanation": "The Krebs cycle (citric acid cycle) occurs in the mitochondrial matrix — the innermost compartment. Glycolysis happens in the cytoplasm. The electron transport chain is located on the inner mitochondrial membrane, not in the matrix itself."
+    "explanation": "The Krebs cycle (citric acid cycle) occurs in the mitochondrial matrix, the innermost compartment. Glycolysis happens in the cytoplasm. The electron transport chain is located on the inner mitochondrial membrane, not in the matrix itself."
   },
   {
     "external_key": "GS-PS-B5-1",
@@ -567,7 +567,7 @@
       "Sunlight heats the Moon's surface, causing it to glow red"
     ],
     "correct_index": 1,
-    "explanation": "During a lunar eclipse, Earth's atmosphere acts like a lens: it scatters away blue wavelengths but bends (refracts) longer red and orange wavelengths into Earth's shadow, illuminating the Moon with a reddish glow — the same physics that makes sunsets red."
+    "explanation": "During a lunar eclipse, Earth's atmosphere acts like a lens: it scatters away blue wavelengths but bends (refracts) longer red and orange wavelengths into Earth's shadow, illuminating the Moon with a reddish glow, the same physics that makes sunsets red."
   },
   {
     "external_key": "GS-PM-B5-1",
@@ -612,7 +612,7 @@
       "Thermal energy from being stretched"
     ],
     "correct_index": 2,
-    "explanation": "Stretching a rubber band stores elastic potential energy — energy due to deformation. When released, this potential energy converts to kinetic energy. Thermal energy might increase slightly, but the dominant stored energy is elastic potential."
+    "explanation": "Stretching a rubber band stores elastic potential energy, energy due to deformation. When released, this potential energy converts to kinetic energy. Thermal energy might increase slightly, but the dominant stored energy is elastic potential."
   },
   {
     "external_key": "GS-PM-B5-4",
@@ -799,7 +799,7 @@
     "subtest": "EI",
     "topic_id": "ei.ohms-law-power",
     "difficulty": 3,
-    "stem": "Three resistors — 2 ohms, 3 ohms, and 5 ohms — are connected in series to a 20-volt battery. What is the current in the circuit?",
+    "stem": "Three resistors, 2 ohms, 3 ohms, and 5 ohms, are connected in series to a 20-volt battery. What is the current in the circuit?",
     "choices": [
       "0.5 amperes",
       "1 ampere",
@@ -1002,7 +1002,7 @@
       "24 ohms"
     ],
     "correct_index": 2,
-    "explanation": "In parallel, each branch sees 12 volts. R_B = V/I_B = 12/2 = 6 ohms. Do not add the branch currents before calculating resistance — each branch is analyzed independently with the full source voltage."
+    "explanation": "In parallel, each branch sees 12 volts. R_B = V/I_B = 12/2 = 6 ohms. Do not add the branch currents before calculating resistance, each branch is analyzed independently with the full source voltage."
   },
   {
     "external_key": "EI-CT-B5-9",
@@ -1062,7 +1062,7 @@
       "2 amperes"
     ],
     "correct_index": 1,
-    "explanation": "Total voltage = 6 + 6 = 12 V. Total resistance = 1 + 1 + 10 = 12 Ω (internal resistances add in series). Current = 12/12 = 1 ampere. Ignoring internal resistance gives 12/10 = 1.2 A — a common error on multi-battery problems."
+    "explanation": "Total voltage = 6 + 6 = 12 V. Total resistance = 1 + 1 + 10 = 12 Ω (internal resistances add in series). Current = 12/12 = 1 ampere. Ignoring internal resistance gives 12/10 = 1.2 A, a common error on multi-battery problems."
   },
   {
     "external_key": "EI-CD-B5-1",

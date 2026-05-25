@@ -5,7 +5,7 @@ import type { StudyGuide } from "@/lib/study-guides/loader";
 /**
  * Presentational study-guide article body, shared by the public SEO page
  * (/study/[subtest]/[topicSlug]) and the in-app member page (/app/study/…).
- * Static content only (no session/hooks) — pages add their own CTAs, MiniDrill,
+ * Static content only (no session/hooks), pages add their own CTAs, MiniDrill,
  * and (in-app) personalization so each surface routes correctly.
  */
 export default function StudyGuideArticle({ guide }: { guide: StudyGuide }) {
@@ -18,7 +18,7 @@ export default function StudyGuideArticle({ guide }: { guide: StudyGuide }) {
       {/* Header */}
       <header className="mb-8 space-y-2">
         <span className="inline-block rounded-md bg-accent-dim px-2.5 py-1 text-xs font-semibold tracking-wide text-accent">
-          {frontmatter.subtest} — {subtestName}
+          {frontmatter.subtest}, {subtestName}
         </span>
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           {frontmatter.title}

@@ -54,10 +54,9 @@ export default function GTScoreCalculatorPage() {
       "Calculate your ASVAB GT score instantly. Learn the Army, Marine Corps, and Air Force GT formulas, score requirements, and how to raise your GT.",
     url: "https://asvabhero.com/gt-score-calculator",
     author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
     publisher: {
       "@type": "Organization",
@@ -700,11 +699,11 @@ export default function GTScoreCalculatorPage() {
           <Link href="/asvab-word-knowledge-tips">
             ASVAB Word Knowledge Tips
           </Link>
-          ,{" "}
+,{" "}
           <Link href="/asvab-paragraph-comprehension-tips">
             ASVAB Paragraph Comprehension Tips
           </Link>
-          , and{" "}
+, and{" "}
           <Link href="/asvab-arithmetic-reasoning-tips">
             ASVAB Arithmetic Reasoning Tips
           </Link>
@@ -772,7 +771,7 @@ export default function GTScoreCalculatorPage() {
 
         <section className="mt-10 not-prose">
           <EmailCapture
-            headline="Get the GT Score Booster guide — push your GT 10+ points in 14 days"
+            headline="Get the GT Score Booster guide, push your GT 10+ points in 14 days"
             subhead="The formula, the cutoffs that unlock real MOS, the 14-day schedule that actually works, and the retake math that tells you when a second test is worth it."
             cta="Email me the GT booster"
             tag="gt-calculator"

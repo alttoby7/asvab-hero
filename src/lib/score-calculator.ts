@@ -5,7 +5,7 @@ import type { SubtestScores, CompositeScores, BranchComposites, Branch } from "@
  *
  * Source: DMDC "Development and Evaluation of the 1997 ASVAB Score Scale" (July 2004), Table 2.5.
  * The Profile of American Youth 1997 (PAY97) norming study established the official conversion
- * from raw AFQT scores to percentiles. The distribution is bell-curved — not linear.
+ * from raw AFQT scores to percentiles. The distribution is bell-curved, not linear.
  *
  * Formula: VE = WK + PC (Verbal Expression); raw = 2×VE + AR + MK
  *
@@ -16,7 +16,7 @@ import type { SubtestScores, CompositeScores, BranchComposites, Branch } from "@
  */
 
 // PAY97 Table 2.5: [minRaw, maxRaw, percentile]
-// Note: percentiles 37, 58, and 65 do not appear — those raw score ranges don't exist in the data.
+// Note: percentiles 37, 58, and 65 do not appear, those raw score ranges don't exist in the data.
 const PAY97_RANGES: ReadonlyArray<readonly [number, number, number]> = [
   [Number.NEGATIVE_INFINITY, 109, 1],
   [110, 118, 2],  [119, 124, 3],  [125, 133, 4],  [134, 137, 5],
@@ -109,20 +109,20 @@ export function getAFQTCategory(afqt: number): string {
 
 export function getAFQTCategoryDescription(cat: string): string {
   const descriptions: Record<string, string> = {
-    I: "Outstanding — qualifies for all branches and jobs",
-    II: "Excellent — qualifies for most jobs across all branches",
-    IIIA: "Above Average — qualifies for most military jobs",
-    IIIB: "Average — meets minimum for enlistment in all branches",
-    IVA: "Below Average — limited job options, may require waiver",
-    IVB: "Below Average — very limited options",
-    IVC: "Well Below Average — generally not eligible",
+    I: "Outstanding, qualifies for all branches and jobs",
+    II: "Excellent, qualifies for most jobs across all branches",
+    IIIA: "Above Average, qualifies for most military jobs",
+    IIIB: "Average, meets minimum for enlistment in all branches",
+    IVA: "Below Average, limited job options, may require waiver",
+    IVB: "Below Average, very limited options",
+    IVC: "Well Below Average, generally not eligible",
     V: "Not eligible for military enlistment",
   };
   return descriptions[cat] || "";
 }
 
 /**
- * Army Line Scores — 10 composites computed from subtest standard scores.
+ * Army Line Scores, 10 composites computed from subtest standard scores.
  */
 export function calculateArmyLineScores(scores: SubtestScores): CompositeScores {
   const ve = scores.WK + scores.PC;
@@ -141,7 +141,7 @@ export function calculateArmyLineScores(scores: SubtestScores): CompositeScores 
 }
 
 /**
- * Air Force Composites — MAGE
+ * Air Force Composites, MAGE
  * M (Mechanical): MC + AS + GS
  * A (Administrative): WK + PC + MK
  * G (General): AR + WK + PC
@@ -157,7 +157,7 @@ export function calculateAirForceComposites(scores: SubtestScores): CompositeSco
 }
 
 /**
- * Marine Corps Composites — 3 line scores
+ * Marine Corps Composites, 3 line scores
  * MM: AR + MC + AS + EI (Mechanical Maintenance)
  * GT: AR + WK + PC (General Technical)
  * EL: GS + AR + MK + EI (Electronics)

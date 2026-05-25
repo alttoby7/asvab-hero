@@ -19,8 +19,8 @@ const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 
 const FREE_FEATURES = [
   "Full diagnostic + your saved score report",
-  "Your weakest topics ranked — every answer explained",
-  "Daily adaptive practice — the part that moves your score",
+  "Your weakest topics ranked, every answer explained",
+  "Daily adaptive practice, the part that moves your score",
   "Saved score history + resume on any device",
   "ASVAB calculators + 500+ job matching",
 ];
@@ -28,7 +28,7 @@ const FREE_FEATURES = [
 const PRO_FEATURES = [
   "Everything in Free",
   "Unlimited adaptive practice + targeted subtest drills",
-  "Full-length, timed sims — test under real conditions",
+  "Full-length, timed sims, test under real conditions",
   "Deeper analytics + score-trajectory tracking",
   "Spaced-repetition flashcards (all decks)",
 ];
@@ -59,7 +59,7 @@ export default function PricingPlans({
   async function handleUpgradeClick() {
     if (isLoading) return;
 
-    // Not logged in — send to signup
+    // Not logged in, send to signup
     if (!session) {
       const tier = billing;
       const returnPath = source
@@ -69,7 +69,7 @@ export default function PricingPlans({
       return;
     }
 
-    // Already Pro — no-op (button is disabled)
+    // Already Pro, no-op (button is disabled)
     if (entitlement.isPro) return;
 
     setCheckoutLoading(true);
@@ -119,7 +119,7 @@ export default function PricingPlans({
       if (!url) throw new Error("No checkout URL returned");
       trackEvent(PaywallEvents.CheckoutSessionCreated, { tier: billing });
       trackEvent(PaywallEvents.CheckoutRedirected, { tier: billing });
-      // The redirect leaves the page — beacon the queue synchronously first.
+      // The redirect leaves the page, beacon the queue synchronously first.
       // flush() swallows all errors; never blocks the redirect.
       flush(true);
       window.location.href = url;
@@ -233,7 +233,7 @@ export default function PricingPlans({
                 onClick={() => setBilling("annual")}
                 className="underline text-accent hover:no-underline"
               >
-                $49.99/year — save 58%
+                $49.99/year, save 58%
               </button>
             </p>
           )}
@@ -287,7 +287,7 @@ export default function PricingPlans({
                   Loading checkout...
                 </span>
               ) : billing === "monthly" ? (
-                "Start 7-day free trial — then $9.99/mo"
+                "Start 7-day free trial, then $9.99/mo"
               ) : (
                 "Upgrade to Pro"
               )}
@@ -308,7 +308,7 @@ export default function PricingPlans({
 
       {/* Refund footnote */}
       <p className="mt-6 text-center text-xs text-text-tertiary">
-        7-day money-back guarantee — no questions asked.
+        7-day money-back guarantee, no questions asked.
       </p>
     </div>
   );

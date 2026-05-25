@@ -95,6 +95,6 @@ export function canStartVariant(opts: {
   }
 
   // Every other variant (subtest_drill, full_sim, …) is Pro-only for free/anon
-  // users — paid gates scale/intensity. Pro is already short-circuited above.
+  // users, paid gates scale/intensity. Pro is already short-circuited above.
   return { allowed: false, reason: "pro_only_variant" };
 }

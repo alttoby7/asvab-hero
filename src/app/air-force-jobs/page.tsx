@@ -286,19 +286,19 @@ export default function AirForceJobsPage() {
         <ul className="mt-4 space-y-2 text-text-secondary">
           <li>
             <span className="font-mono font-bold text-accent">M</span>{" "}
-            Mechanical &mdash; aircraft and vehicle maintenance, aircrew, munitions.
+            Mechanical, aircraft and vehicle maintenance, aircrew, munitions.
           </li>
           <li>
             <span className="font-mono font-bold text-accent">A</span>{" "}
-            Administrative &mdash; personnel, finance, contracting.
+            Administrative, personnel, finance, contracting.
           </li>
           <li>
             <span className="font-mono font-bold text-accent">G</span>{" "}
-            General &mdash; security forces, intelligence, medical, aircrew.
+            General, security forces, intelligence, medical, aircrew.
           </li>
           <li>
             <span className="font-mono font-bold text-accent">E</span>{" "}
-            Electronic &mdash; avionics, cyber transport, missile systems.
+            Electronic, avionics, cyber transport, missile systems.
           </li>
         </ul>
         <p className="mt-4 text-text-secondary">
@@ -325,8 +325,8 @@ export default function AirForceJobsPage() {
         </p>
         <p className="mt-3 text-text-secondary">
           If you want every enlisted Air Force Specialty Code with its MAGE
-          composite and exact minimum score &mdash; across Operations,
-          Maintenance, Support, Medical, and more &mdash; that lives on the full{" "}
+          composite and exact minimum score, across Operations,
+          Maintenance, Support, Medical, and more, that lives on the full{" "}
           <Link
             href="/air-force-afsc-list"
             className="text-accent underline hover:text-accent-hover"
@@ -386,21 +386,21 @@ export default function AirForceJobsPage() {
             >
               Security Forces
             </Link>
-            ,{" "}
+,{" "}
             <Link
               href="/air-force-loadmaster-asvab-score"
               className="text-accent underline hover:text-accent-hover"
             >
               Loadmaster
             </Link>
-            ,{" "}
+,{" "}
             <Link
               href="/air-force-pararescue-asvab-score"
               className="text-accent underline hover:text-accent-hover"
             >
               Pararescue
             </Link>
-            , and{" "}
+, and{" "}
             <Link
               href="/air-force-pilot-asvab-requirements"
               className="text-accent underline hover:text-accent-hover"
@@ -437,7 +437,7 @@ export default function AirForceJobsPage() {
             >
               Air Force AFQT calculator
             </Link>
-            , then see every job you qualify for with the{" "}
+, then see every job you qualify for with the{" "}
             <Link
               href="/air-force-asvab-calculator"
               className="text-accent underline hover:text-accent-hover"
@@ -462,7 +462,7 @@ export default function AirForceJobsPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              officialasvab.com &mdash; Military Jobs
+              officialasvab.com, Military Jobs
             </a>
           </li>
           <li>
@@ -472,7 +472,7 @@ export default function AirForceJobsPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              airforce.com &mdash; Security Forces
+              airforce.com, Security Forces
             </a>
           </li>
           <li>
@@ -482,7 +482,7 @@ export default function AirForceJobsPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              airforce.com &mdash; Pararescue
+              airforce.com, Pararescue
             </a>
           </li>
           <li>
@@ -492,7 +492,7 @@ export default function AirForceJobsPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              airforce.com &mdash; Mobility Force Aviator
+              airforce.com, Mobility Force Aviator
             </a>
           </li>
           <li>
@@ -502,7 +502,7 @@ export default function AirForceJobsPage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              airforce.com &mdash; Pilot
+              airforce.com, Pilot
             </a>
           </li>
         </ul>

@@ -21,7 +21,7 @@ const HEADLINES: Record<string, string> = {
   anon_diagnostic_used: "You\'ve already taken your free diagnostic",
   pro_only_variant: "This is a Pro feature",
   free_user_no_diagnostic: "Take your free diagnostic first",
-  free_adaptive_daily_limit: "That\'s today\'s adaptive block — nice work",
+  free_adaptive_daily_limit: "That\'s today\'s adaptive block, nice work",
   adaptive_needs_account: "Create a free account to start",
 };
 
@@ -35,9 +35,9 @@ const SUBTEXTS: Record<string, string> = {
   free_user_no_diagnostic:
     "Start with the free diagnostic to get your baseline score, then upgrade to Pro to drill your weak areas.",
   free_adaptive_daily_limit:
-    "Your free plan includes one adaptive AFQT block a day — the part that actually moves your score. Clear your due mistakes to keep practicing today, come back tomorrow for the next block, or go Pro for unlimited adaptive practice, full-length sims, and deeper analytics.",
+    "Your free plan includes one adaptive AFQT block a day, the part that actually moves your score. Clear your due mistakes to keep practicing today, come back tomorrow for the next block, or go Pro for unlimited adaptive practice, full-length sims, and deeper analytics.",
   adaptive_needs_account:
-    "Adaptive practice builds on your personal mastery model, so it needs an account. Sign up free — one adaptive AFQT block a day is included, no card required.",
+    "Adaptive practice builds on your personal mastery model, so it needs an account. Sign up free, one adaptive AFQT block a day is included, no card required.",
 };
 
 export default function TestBlockedScreen({
@@ -53,9 +53,9 @@ export default function TestBlockedScreen({
   const isGtAdaptive = variant === "gt_adaptive";
   const GT_SUBTEXTS: Record<string, string> = {
     free_adaptive_daily_limit:
-      "Your free plan includes one adaptive GT block a day — AR, WK, and PC only. Clear your due mistakes to keep practicing today, come back tomorrow for the next GT block, or go Pro for unlimited adaptive practice and deeper analytics.",
+      "Your free plan includes one adaptive GT block a day, AR, WK, and PC only. Clear your due mistakes to keep practicing today, come back tomorrow for the next GT block, or go Pro for unlimited adaptive practice and deeper analytics.",
     adaptive_needs_account:
-      "Adaptive GT practice builds on your personal mastery model, so it needs an account. Sign up free — one adaptive GT block a day is included, no card required.",
+      "Adaptive GT practice builds on your personal mastery model, so it needs an account. Sign up free, one adaptive GT block a day is included, no card required.",
   };
 
   const headline = HEADLINES[reason] ?? "This feature requires Pro";

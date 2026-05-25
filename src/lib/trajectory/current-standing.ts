@@ -1,5 +1,5 @@
 /**
- * WS3 — Current-standing inference (pure TS mirror of
+ * WS3, Current-standing inference (pure TS mirror of
  * rpc_refresh_trajectory_snapshot in 0022_trajectory_target_jobs.sql).
  *
  * Supersedes the rough src/lib/estimate-scores.ts with an AGGREGATE, CI-aware

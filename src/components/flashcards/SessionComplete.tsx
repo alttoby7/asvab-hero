@@ -31,7 +31,7 @@ export default function SessionComplete({ deck, stats, total }: Props) {
       </div>
       <h1 className="font-display text-2xl font-bold text-text-primary">Session complete</h1>
       <p className="mt-2 text-sm text-text-secondary">
-        {deck.title.replace(/^.+? — /, "")}
+        {deck.title.replace(/^.+?, /, "")}
       </p>
 
       <dl className="mt-6 grid grid-cols-3 gap-3 text-left">

@@ -32,10 +32,9 @@ export default function ASVABStudyGuidePage() {
               "Comprehensive ASVAB study guide with interactive tools. Set career goals, explore all 9 subtests, generate a personalized week-by-week study plan, and track your progress.",
             url: "https://asvabhero.com/asvab-study-guide",
             author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
             publisher: {
               "@type": "Organization",
@@ -72,7 +71,7 @@ export default function ASVABStudyGuidePage() {
                 name: "Can I study for the ASVAB on my own?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Absolutely. The ASVAB tests knowledge from high school-level courses — no advanced degrees needed. Free online resources, practice tests, and study guides (like this one) cover everything you need. The key is having a structured plan and sticking to it consistently.",
+                  text: "Absolutely. The ASVAB tests knowledge from high school-level courses, no advanced degrees needed. Free online resources, practice tests, and study guides (like this one) cover everything you need. The key is having a structured plan and sticking to it consistently.",
                 },
               },
               {
@@ -88,7 +87,7 @@ export default function ASVABStudyGuidePage() {
                 name: "How many hours a week should I study for the ASVAB?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "6-10 hours per week is the sweet spot for most people. Less than 3 hours per week makes progress too slow. More than 15 hours leads to burnout. Split your time into 30-60 minute focused sessions rather than marathon cramming — your brain retains more with spaced practice.",
+                  text: "6-10 hours per week is the sweet spot for most people. Less than 3 hours per week makes progress too slow. More than 15 hours leads to burnout. Split your time into 30-60 minute focused sessions rather than marathon cramming, your brain retains more with spaced practice.",
                 },
               },
               {
@@ -104,7 +103,7 @@ export default function ASVABStudyGuidePage() {
                 name: "Is the ASVAB hard?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "The ASVAB covers high school-level material, so nothing on it should be completely new. The challenge is breadth — 9 subtests covering everything from vocabulary to electronics to mechanical physics. With 4-8 weeks of focused study, most people score well above branch minimums. The people who struggle are those who don't study at all.",
+                  text: "The ASVAB covers high school-level material, so nothing on it should be completely new. The challenge is breadth, 9 subtests covering everything from vocabulary to electronics to mechanical physics. With 4-8 weeks of focused study, most people score well above branch minimums. The people who struggle are those who don't study at all.",
                 },
               },
               {
@@ -142,7 +141,7 @@ export default function ASVABStudyGuidePage() {
             Stop guessing what to study. This guide helps you set career goals,
             identify your weak spots, and generate a personalized week-by-week
             study schedule based on the jobs you actually want. Every tool below
-            is free — no sign-up required.
+            is free, no sign-up required.
           </p>
         </div>
 
@@ -165,7 +164,7 @@ export default function ASVABStudyGuidePage() {
             this page do.
           </p>
           <p className="text-text-secondary leading-relaxed">
-            If you&apos;re not sure how ASVAB scoring works —{" "}
+            If you&apos;re not sure how ASVAB scoring works, {" "}
             <Link
               href="/asvab-scores-explained"
               className="text-accent hover:text-accent-hover no-underline"
@@ -197,7 +196,7 @@ export default function ASVABStudyGuidePage() {
               Pick your target branch and up to 3 dream jobs. The tool will
               analyze the AFQT and composite score requirements, compare them
               against your self-assessment, and tell you exactly which subtests
-              to prioritize. Your study plan is only as good as your goal —
+              to prioritize. Your study plan is only as good as your goal, 
               start here.
             </p>
           </div>
@@ -217,7 +216,7 @@ export default function ASVABStudyGuidePage() {
             </h2>
             <p className="mt-2 text-text-secondary leading-relaxed">
               The ASVAB has 9 subtests, but they&apos;re not all equal. Four of
-              them (AR, WK, PC, MK) feed your AFQT score — that&apos;s the number
+              them (AR, WK, PC, MK) feed your AFQT score, that&apos;s the number
               that determines whether you can enlist at all. The other five feed
               branch-specific composite scores that determine which{" "}
               <em>jobs</em> you qualify for. Click any card to see what it
@@ -268,7 +267,7 @@ export default function ASVABStudyGuidePage() {
           </h2>
           <p className="mb-4 text-text-secondary leading-relaxed">
             Below is a study checklist with specific topics for all 9 subtests.
-            Check off topics as you cover them — your progress saves
+            Check off topics as you cover them, your progress saves
             automatically. If you set career goals above, the subtests are
             sorted by priority for your target jobs.
           </p>
@@ -301,7 +300,7 @@ export default function ASVABStudyGuidePage() {
               <p className="mb-2 text-sm text-text-secondary leading-relaxed">
                 Word problems testing real-world math. You&apos;ll see rate/distance
                 problems, percentage calculations, ratio questions, and basic
-                algebra. The key skill isn&apos;t math itself — it&apos;s translating
+                algebra. The key skill isn&apos;t math itself, it&apos;s translating
                 English sentences into equations. Practice by converting word
                 problems into math before solving.
               </p>
@@ -319,7 +318,7 @@ export default function ASVABStudyGuidePage() {
                 </span>
               </h3>
               <p className="mb-2 text-sm text-text-secondary leading-relaxed">
-                Vocabulary — pick the word closest in meaning. This subtest is
+                Vocabulary, pick the word closest in meaning. This subtest is
                 pure memorization. Learn 10 new words per day using flashcards
                 with root words, prefixes, and suffixes. Focus on Latin/Greek
                 roots (bene-, mal-, anti-, pre-) since knowing roots lets you
@@ -341,7 +340,7 @@ export default function ASVABStudyGuidePage() {
               <p className="mb-2 text-sm text-text-secondary leading-relaxed">
                 Short reading passages with questions about main ideas, details,
                 and inferences. Read the questions first, then scan the passage
-                for answers. Practice daily reading — even 15 minutes of news
+                for answers. Practice daily reading, even 15 minutes of news
                 articles or non-fiction builds the comprehension speed you need.
               </p>
               <p className="text-xs text-text-tertiary">
@@ -355,7 +354,7 @@ export default function ASVABStudyGuidePage() {
                 Mathematics Knowledge
               </h3>
               <p className="mb-2 text-sm text-text-secondary leading-relaxed">
-                Straight math problems — no word problems, just equations.
+                Straight math problems, no word problems, just equations.
                 Covers algebra, geometry, fractions, exponents, and order of
                 operations. If you know PEMDAS, can solve for X, and remember
                 area/volume formulas, you&apos;re most of the way there. Drill
@@ -376,15 +375,15 @@ export default function ASVABStudyGuidePage() {
           <p className="mb-4 text-text-secondary leading-relaxed">
             These subtests don&apos;t affect your AFQT, but they determine which
             specific jobs you qualify for. Only study them if your target jobs
-            need them — check the Career Goal Setter above to find out.
+            need them, check the Career Goal Setter above to find out.
           </p>
           <div className="grid gap-3 sm:grid-cols-2">
             {[
               { code: "GS", name: "General Science", tip: "Review high school biology, chemistry, physics, and earth science. Focus on systems (digestive, respiratory) and basic chemistry (periodic table, reactions)." },
               { code: "EI", name: "Electronics Information", tip: "Learn Ohm's law (V=IR), series vs parallel circuits, and basic component identification. Critical for IT, signals, and electronics jobs." },
               { code: "AS", name: "Auto & Shop", tip: "Know basic engine systems, common hand tools, and shop safety. If you've worked on cars or done woodwork, you have a head start." },
-              { code: "MC", name: "Mechanical Comprehension", tip: "Understand levers, pulleys, gears, and force/pressure. Think about WHY things move — mechanical advantage, torque, and balance." },
-              { code: "AO", name: "Assembling Objects", tip: "Practice spatial reasoning puzzles. Focus on connection point problems and mentally rotating shapes. This subtest is hard to study for — practice is the best prep." },
+              { code: "MC", name: "Mechanical Comprehension", tip: "Understand levers, pulleys, gears, and force/pressure. Think about WHY things move, mechanical advantage, torque, and balance." },
+              { code: "AO", name: "Assembling Objects", tip: "Practice spatial reasoning puzzles. Focus on connection point problems and mentally rotating shapes. This subtest is hard to study for, practice is the best prep." },
             ].map((st) => (
               <div
                 key={st.code}
@@ -416,7 +415,7 @@ export default function ASVABStudyGuidePage() {
               career goals, skill ratings, and the AFQT formula weights to
               create a week-by-week schedule. It automatically shifts from
               learning new material to practice to review as your test date
-              approaches — like a real training program.
+              approaches, like a real training program.
             </p>
           </div>
           <div className="rounded-2xl border border-navy-border bg-navy-light p-4 sm:p-6">
@@ -463,7 +462,7 @@ export default function ASVABStudyGuidePage() {
                 Focus on the AFQT subtests first
               </h3>
               <p className="text-sm text-text-secondary leading-relaxed">
-                If your AFQT is below 31, nothing else matters — you can&apos;t
+                If your AFQT is below 31, nothing else matters, you can&apos;t
                 enlist. Get your AFQT above your branch&apos;s minimum with a
                 safety buffer (aim for 50+), then shift focus to the technical
                 subtests your target jobs need.
@@ -488,7 +487,7 @@ export default function ASVABStudyGuidePage() {
                 Every ASVAB question has 4 answer choices. Even if you&apos;re
                 unsure, you can usually eliminate 1-2 obviously wrong answers.
                 Going from 4 choices to 2 doubles your odds. Never leave a
-                question blank — there&apos;s no penalty for wrong answers on the
+                question blank, there&apos;s no penalty for wrong answers on the
                 ASVAB.
               </p>
             </div>
@@ -540,7 +539,7 @@ export default function ASVABStudyGuidePage() {
             What If You Need to Retake the ASVAB?
           </h2>
           <p className="mb-4 text-text-secondary leading-relaxed">
-            A low score isn&apos;t the end. You can retake the ASVAB — but
+            A low score isn&apos;t the end. You can retake the ASVAB, but
             there are waiting periods:
           </p>
           <div className="grid gap-3 sm:grid-cols-3">
@@ -584,7 +583,7 @@ export default function ASVABStudyGuidePage() {
           </h2>
           <p className="mb-4 text-text-secondary leading-relaxed">
             Your AFQT percentile determines which branches you can enlist in.
-            Aim higher than the minimum — a 50+ AFQT opens most jobs and bonus
+            Aim higher than the minimum, a 50+ AFQT opens most jobs and bonus
             eligibility.
           </p>
           <div className="overflow-hidden rounded-xl border border-navy-border">
@@ -654,7 +653,7 @@ export default function ASVABStudyGuidePage() {
               },
               {
                 q: "Which ASVAB subtests are the most important?",
-                a: "The four AFQT subtests (AR, WK, PC, MK) determine enlistment eligibility. Beyond that, importance depends on your target jobs — use the Career Goal Setter above to see which subtests matter for your goals.",
+                a: "The four AFQT subtests (AR, WK, PC, MK) determine enlistment eligibility. Beyond that, importance depends on your target jobs, use the Career Goal Setter above to see which subtests matter for your goals.",
               },
               {
                 q: "Is the ASVAB hard?",

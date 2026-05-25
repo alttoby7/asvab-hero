@@ -3,6 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import PracticeTestClient from "@/components/practice-test/PracticeTestClient";
 import BrandHero from "@/components/BrandHero";
+import { subtestPracticeIndex } from "@/lib/free-practice";
 
 export const metadata: Metadata = {
   title: "ASVAB Practice Test: Diagnostic + Subtest Drills",
@@ -82,6 +83,29 @@ export default function PracticeTestPage() {
       </div>
 
       <PracticeTestClient />
+
+      {/* Crawlable free practice by subtest */}
+      <section className="mt-12 border-t border-navy-border pt-10">
+        <h2 className="font-display text-2xl font-bold text-text-primary">
+          Free practice questions by subtest
+        </h2>
+        <p className="mt-3 text-text-secondary">
+          Want to study without signing in? Each subtest has free practice
+          questions with the correct answer and a full explanation for every one:
+        </p>
+        <ul className="mt-4 grid gap-2 sm:grid-cols-2">
+          {subtestPracticeIndex().map((s) => (
+            <li key={s.slug}>
+              <Link
+                href={`/free-asvab-practice-test/${s.slug}`}
+                className="text-sm text-accent underline hover:text-accent-hover"
+              >
+                ASVAB {s.meta.fullName} practice test ({s.questions.length} questions)
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
     </div>
   );
 }

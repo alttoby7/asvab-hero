@@ -1,5 +1,5 @@
 /**
- * WS3 — Job catalog model + the canonical anyOf -> requirement-group transform.
+ * WS3, Job catalog model + the canonical anyOf -> requirement-group transform.
  *
  * This is the single source of truth for how src/data/*-jobs.json maps onto
  * the job_catalog + job_requirement_rules schema:

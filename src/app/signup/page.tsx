@@ -30,7 +30,7 @@ export default function SignupPage() {
     const supabase = getSupabaseBrowserClient();
 
     // Resolve attribution from the most recent EmailCapture submit (if any).
-    // 14-day TTL — older captures are treated as direct /signup traffic.
+    // 14-day TTL, older captures are treated as direct /signup traffic.
     // We resolve BEFORE signUp so we can pass signup_source as user metadata;
     // the on_auth_user_created trigger reads raw_user_meta_data->>'signup_source'
     // and writes it atomically into profiles.signup_source. This avoids the
@@ -49,11 +49,11 @@ export default function SignupPage() {
         if (parsed.source && ageMs >= 0 && ageMs <= TTL_MS) {
           resolvedSource = parsed.source;
         }
-        // Clear regardless — stale or used, the touch is consumed.
+        // Clear regardless, stale or used, the touch is consumed.
         localStorage.removeItem("asvabhero.last_capture_source");
       }
     } catch {
-      /* ignore — fall back to signup_page */
+      /* ignore, fall back to signup_page */
     }
 
     // Path integrity: honor a ?next= so the email-confirm link returns the user
@@ -80,7 +80,7 @@ export default function SignupPage() {
         );
       }
     } catch {
-      /* ignore — fall back to /app/home */
+      /* ignore, fall back to /app/home */
     }
 
     const { error: authError } = await supabase.auth.signUp({

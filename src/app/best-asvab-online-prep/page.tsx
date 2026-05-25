@@ -6,7 +6,7 @@ import { QUESTIONS_PLUS } from "@/lib/bank-stats";
 export const metadata: Metadata = {
   title: "Best ASVAB Online Prep 2026: Honest Comparison",
   description:
-    "An honest head-to-head comparison of the best ASVAB online prep services in 2026 — ASVAB Hero Pro, Mometrix Academy, Kaplan, Princeton Review, Peterson's, and UnionTestPrep. Price, question count, score tracking, and refund policy, all in one place.",
+    "An honest head-to-head comparison of the best ASVAB online prep services in 2026, ASVAB Hero Pro, Mometrix Academy, Kaplan, Princeton Review, Peterson's, and UnionTestPrep. Price, question count, score tracking, and refund policy, all in one place.",
   alternates: {
     canonical: "https://asvabhero.com/best-asvab-online-prep",
   },
@@ -22,13 +22,12 @@ export default function BestASVABOnlinePrepPage() {
           headline:
             "Best ASVAB Online Prep 2026 (Honest Comparison: ASVAB Hero, Mometrix, Kaplan, More)",
           description:
-            "An honest head-to-head comparison of the best ASVAB online prep services in 2026 — price, question count, score tracking, and refund policy.",
+            "An honest head-to-head comparison of the best ASVAB online prep services in 2026, price, question count, score tracking, and refund policy.",
           url: "https://asvabhero.com/best-asvab-online-prep",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -49,7 +48,7 @@ export default function BestASVABOnlinePrepPage() {
               name: "Is paid ASVAB prep necessary?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "No — free resources exist (UnionTestPrep, Khan Academy for math, government practice tests) and many recruits pass without paying. Paid prep earns its cost when you need structured progress tracking, weak-topic identification, or unlimited practice volume without hunting across a dozen sites.",
+                text: "No, free resources exist (UnionTestPrep, Khan Academy for math, government practice tests) and many recruits pass without paying. Paid prep earns its cost when you need structured progress tracking, weak-topic identification, or unlimited practice volume without hunting across a dozen sites.",
               },
             },
             {
@@ -65,7 +64,7 @@ export default function BestASVABOnlinePrepPage() {
               name: "What is the cheapest ASVAB online prep option?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "UnionTestPrep is completely free and covers all ASVAB subtests with a large question bank — no account required. Among paid options, ASVAB Hero Pro at $9.99/month is the lowest-cost option with score tracking and unlimited practice.",
+                text: "UnionTestPrep is completely free and covers all ASVAB subtests with a large question bank, no account required. Among paid options, ASVAB Hero Pro at $9.99/month is the lowest-cost option with score tracking and unlimited practice.",
               },
             },
             {
@@ -81,7 +80,7 @@ export default function BestASVABOnlinePrepPage() {
               name: "Can I get a refund if I'm not happy with an ASVAB prep course?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Refund policies vary significantly. ASVAB Hero Pro offers a 7-day money-back guarantee, no questions asked. Mometrix Academy has a lifetime guarantee on their book products but check their specific online course terms. Kaplan and Princeton Review offer conditional satisfaction guarantees — read the fine print carefully before purchasing. Peterson's terms vary by product.",
+                text: "Refund policies vary significantly. ASVAB Hero Pro offers a 7-day money-back guarantee, no questions asked. Mometrix Academy has a lifetime guarantee on their book products but check their specific online course terms. Kaplan and Princeton Review offer conditional satisfaction guarantees, read the fine print carefully before purchasing. Peterson's terms vary by product.",
               },
             },
           ],
@@ -104,14 +103,14 @@ export default function BestASVABOnlinePrepPage() {
       {/* Transparency note */}
       <div className="mb-8 rounded-xl border border-navy-border bg-navy-light p-4">
         <p className="text-sm italic text-text-secondary leading-relaxed">
-          <strong className="text-text-primary not-italic">Transparency:</strong> ASVAB Hero Pro is on this list. We built it. We ranked it where the math puts it — using the same criteria applied to every other product. Our methodology is in the next section. Judge for yourself.
+          <strong className="text-text-primary not-italic">Transparency:</strong> ASVAB Hero Pro is on this list. We built it. We ranked it where the math puts it, using the same criteria applied to every other product. Our methodology is in the next section. Judge for yourself.
         </p>
       </div>
 
       {/* TL;DR */}
       <section className="mb-10">
         <h2 className="mb-4 font-display text-2xl font-bold text-text-primary">
-          TL;DR — Quick Picks
+          TL;DR, Quick Picks
         </h2>
         <div className="grid gap-3 sm:grid-cols-3">
           <div className="rounded-xl border border-accent/30 bg-accent-dim p-4">
@@ -156,7 +155,7 @@ export default function BestASVABOnlinePrepPage() {
           How We Picked
         </h2>
         <p className="mb-4 text-text-secondary leading-relaxed">
-          We evaluated each service on six criteria. Every service got scored the same way — including ours.
+          We evaluated each service on six criteria. Every service got scored the same way, including ours.
         </p>
         <div className="space-y-2">
           {[
@@ -195,7 +194,7 @@ export default function BestASVABOnlinePrepPage() {
         </p>
 
         <p className="mb-4 text-text-secondary leading-relaxed">
-          ASVAB Hero Pro is the platform we built, and it ranks first on price for most self-study users. At $9.99/month — or $49.99/year, which works out to $4.17/month — it&apos;s the cheapest option that includes real score tracking and unlimited practice.
+          ASVAB Hero Pro is the platform we built, and it ranks first on price for most self-study users. At $9.99/month, or $49.99/year, which works out to $4.17/month, it&apos;s the cheapest option that includes real score tracking and unlimited practice.
         </p>
 
         <h3 className="mb-2 font-display text-lg font-bold text-text-primary">
@@ -206,7 +205,7 @@ export default function BestASVABOnlinePrepPage() {
             `${QUESTIONS_PLUS} practice questions across all ASVAB subtests`,
             "39 topic categories, each drillable independently",
             "All 5 difficulty levels (Beginner → Expert)",
-            "AFQT estimator — see your projected percentile",
+            "AFQT estimator, see your projected percentile",
             "Weak-topic recommendations based on your answers",
             "Score history so you can track improvement over time",
             "Free 30-question diagnostic to find your starting point",
@@ -231,14 +230,14 @@ export default function BestASVABOnlinePrepPage() {
           Who it&apos;s for
         </h3>
         <p className="mb-4 text-text-secondary leading-relaxed">
-          Anyone doing self-directed prep who wants unlimited practice and wants to know exactly which topics to focus on. The price point means you can subscribe for one or two months, drill hard, and cancel — total cost under $20.
+          Anyone doing self-directed prep who wants unlimited practice and wants to know exactly which topics to focus on. The price point means you can subscribe for one or two months, drill hard, and cancel, total cost under $20.
         </p>
 
         <h3 className="mb-2 font-display text-lg font-bold text-text-primary">
           What could be better
         </h3>
         <p className="mb-6 text-text-secondary leading-relaxed">
-          ASVAB Hero Pro is a newer product. There are no instructor-led video lessons — this is question-and-explanation drill work, not a course with a teacher walking you through concepts. Flashcards are coming but aren&apos;t here yet. Mometrix has more feature polish from years in the market. If you&apos;re the type of learner who needs video instruction to understand a concept before drilling it, read the Mometrix section next.
+          ASVAB Hero Pro is a newer product. There are no instructor-led video lessons, this is question-and-explanation drill work, not a course with a teacher walking you through concepts. Flashcards are coming but aren&apos;t here yet. Mometrix has more feature polish from years in the market. If you&apos;re the type of learner who needs video instruction to understand a concept before drilling it, read the Mometrix section next.
         </p>
 
         <div className="flex flex-col gap-3 sm:flex-row">
@@ -252,7 +251,7 @@ export default function BestASVABOnlinePrepPage() {
             href="/upgrade?from=best-online-prep"
             className="rounded-xl bg-accent px-5 py-3 text-center font-display text-sm font-bold text-white transition-colors hover:bg-accent-hover no-underline"
           >
-            Upgrade to Pro — $9.99/mo
+            Upgrade to Pro, $9.99/mo
           </Link>
         </div>
       </section>
@@ -268,7 +267,7 @@ export default function BestASVABOnlinePrepPage() {
           </h2>
         </div>
         <p className="mb-4 text-sm text-text-secondary">
-          ~$39.99/mo (current price varies — check{" "}
+          ~$39.99/mo (current price varies, check{" "}
           <a
             href="https://www.mometrix.com"
             target="_blank"
@@ -277,11 +276,11 @@ export default function BestASVABOnlinePrepPage() {
           >
             mometrix.com
           </a>{" "}
-          — no affiliate link)
+, no affiliate link)
         </p>
 
         <p className="mb-4 text-text-secondary leading-relaxed">
-          Mometrix is the name most people recognize in test prep. They&apos;ve been in the market for years, and their ASVAB offering reflects that maturity — polished video lessons, solid practice questions, and explanations that go beyond &quot;the answer is C.&quot;
+          Mometrix is the name most people recognize in test prep. They&apos;ve been in the market for years, and their ASVAB offering reflects that maturity, polished video lessons, solid practice questions, and explanations that go beyond &quot;the answer is C.&quot;
         </p>
 
         <h3 className="mb-2 font-display text-lg font-bold text-text-primary">
@@ -289,7 +288,7 @@ export default function BestASVABOnlinePrepPage() {
         </h3>
         <div className="mb-4 space-y-2">
           {[
-            "Video-heavy instruction — if you need someone to explain a concept before drilling, this is where Mometrix wins",
+            "Video-heavy instruction, if you need someone to explain a concept before drilling, this is where Mometrix wins",
             "Strong brand reputation with a long track record in standardized test prep",
             "Platform covers many other tests (GED, SAT, nursing exams), so there's no ASVAB-only focus diluting the team's attention to their core market",
             "Practice questions include detailed explanations, not just answer keys",
@@ -307,7 +306,7 @@ export default function BestASVABOnlinePrepPage() {
         <div className="mb-4 space-y-2">
           {[
             "About 4× the price of ASVAB Hero Pro at ~$39.99/month",
-            "Monthly auto-renew — easy to forget and get charged for a month you don't use",
+            "Monthly auto-renew, easy to forget and get charged for a month you don't use",
             "Per-topic score tracking is less granular than what Pro offers",
             "No AFQT estimator based on your actual practice performance",
           ].map((c) => (
@@ -322,7 +321,7 @@ export default function BestASVABOnlinePrepPage() {
           Who it&apos;s for
         </h3>
         <p className="text-text-secondary leading-relaxed">
-          Learners who need video instruction to understand concepts before drilling. If you watch a lesson and then do practice problems — rather than learning from practice problems directly — Mometrix is worth the price premium. Budget-conscious self-studiers will likely find more value elsewhere.
+          Learners who need video instruction to understand concepts before drilling. If you watch a lesson and then do practice problems, rather than learning from practice problems directly, Mometrix is worth the price premium. Budget-conscious self-studiers will likely find more value elsewhere.
         </p>
       </section>
 
@@ -337,7 +336,7 @@ export default function BestASVABOnlinePrepPage() {
           </h2>
         </div>
         <p className="mb-4 text-sm text-text-secondary">
-          ~$49+ depending on package (current price varies — check{" "}
+          ~$49+ depending on package (current price varies, check{" "}
           <a
             href="https://www.kaptest.com"
             target="_blank"
@@ -346,11 +345,11 @@ export default function BestASVABOnlinePrepPage() {
           >
             kaptest.com
           </a>{" "}
-          — no affiliate link)
+, no affiliate link)
         </p>
 
         <p className="mb-4 text-text-secondary leading-relaxed">
-          Kaplan is one of the largest test prep brands in the country. Their ASVAB materials are thorough and professionally produced. The platform carries decades of brand equity from SAT, LSAT, and medical board prep — which is both a strength and a limitation for ASVAB students.
+          Kaplan is one of the largest test prep brands in the country. Their ASVAB materials are thorough and professionally produced. The platform carries decades of brand equity from SAT, LSAT, and medical board prep, which is both a strength and a limitation for ASVAB students.
         </p>
 
         <h3 className="mb-2 font-display text-lg font-bold text-text-primary">
@@ -375,10 +374,10 @@ export default function BestASVABOnlinePrepPage() {
         </h3>
         <div className="mb-4 space-y-2">
           {[
-            "ASVAB is a relatively small market for Kaplan — the product exists but it's not their priority vertical",
+            "ASVAB is a relatively small market for Kaplan, the product exists but it's not their priority vertical",
             "Higher price point with less ASVAB-specific tracking than dedicated platforms",
             "Some users find the interface more suited to academic tests than military enlistment prep",
-            "Pricing is package-based and can be confusing — compare carefully before purchasing",
+            "Pricing is package-based and can be confusing, compare carefully before purchasing",
           ].map((c) => (
             <div key={c} className="flex gap-2 rounded-lg border border-navy-border bg-navy-light p-3">
               <span className="mt-0.5 text-danger text-sm leading-none">✗</span>
@@ -406,7 +405,7 @@ export default function BestASVABOnlinePrepPage() {
           </h2>
         </div>
         <p className="mb-4 text-sm text-text-secondary">
-          Price varies by package — check{" "}
+          Price varies by package, check{" "}
           <a
             href="https://www.princetonreview.com"
             target="_blank"
@@ -445,8 +444,8 @@ export default function BestASVABOnlinePrepPage() {
           {[
             "Online-specific ASVAB tools are limited compared to dedicated platforms",
             "No meaningful per-topic adaptive tracking in the online tier",
-            "Like Kaplan, ASVAB is a small segment of their overall business — platform investment reflects that",
-            "Pricing can be opaque — packages bundle other test materials you may not need",
+            "Like Kaplan, ASVAB is a small segment of their overall business, platform investment reflects that",
+            "Pricing can be opaque, packages bundle other test materials you may not need",
           ].map((c) => (
             <div key={c} className="flex gap-2 rounded-lg border border-navy-border bg-navy-light p-3">
               <span className="mt-0.5 text-danger text-sm leading-none">✗</span>
@@ -474,7 +473,7 @@ export default function BestASVABOnlinePrepPage() {
           </h2>
         </div>
         <p className="mb-4 text-sm text-text-secondary">
-          Price varies — check{" "}
+          Price varies, check{" "}
           <a
             href="https://www.petersons.com"
             target="_blank"
@@ -487,7 +486,7 @@ export default function BestASVABOnlinePrepPage() {
         </p>
 
         <p className="mb-4 text-text-secondary leading-relaxed">
-          Peterson&apos;s has a long history in military and civil service test prep — longer than most brands on this list. Their ASVAB coverage is comprehensive. The platform has evolved significantly in recent years as they&apos;ve pushed into digital tools.
+          Peterson&apos;s has a long history in military and civil service test prep, longer than most brands on this list. Their ASVAB coverage is comprehensive. The platform has evolved significantly in recent years as they&apos;ve pushed into digital tools.
         </p>
 
         <h3 className="mb-2 font-display text-lg font-bold text-text-primary">
@@ -495,7 +494,7 @@ export default function BestASVABOnlinePrepPage() {
         </h3>
         <div className="mb-4 space-y-2">
           {[
-            "Deep heritage in military test prep — they know this space well",
+            "Deep heritage in military test prep, they know this space well",
             "Large question bank with full coverage of all ASVAB subtests",
             "Includes detailed score reporting and section analysis on practice tests",
           ].map((p) => (
@@ -511,9 +510,9 @@ export default function BestASVABOnlinePrepPage() {
         </h3>
         <div className="mb-4 space-y-2">
           {[
-            "Interface feels dated compared to newer platforms — navigation can be clunky",
+            "Interface feels dated compared to newer platforms, navigation can be clunky",
             "Mobile experience is inconsistent; works better on desktop",
-            "Pricing has shifted frequently — confirm current subscription terms before purchasing",
+            "Pricing has shifted frequently, confirm current subscription terms before purchasing",
           ].map((c) => (
             <div key={c} className="flex gap-2 rounded-lg border border-navy-border bg-navy-light p-3">
               <span className="mt-0.5 text-danger text-sm leading-none">✗</span>
@@ -562,7 +561,7 @@ export default function BestASVABOnlinePrepPage() {
         </h3>
         <div className="mb-4 space-y-2">
           {[
-            "Completely free — no credit card, no trial, no upsell",
+            "Completely free, no credit card, no trial, no upsell",
             "Large question volume covering all 9 subtests",
             "Good supplemental source if you want additional questions beyond your primary platform",
           ].map((p) => (
@@ -578,7 +577,7 @@ export default function BestASVABOnlinePrepPage() {
         </h3>
         <div className="mb-4 space-y-2">
           {[
-            "No score tracking or progress history — you can't see if you're improving week-over-week",
+            "No score tracking or progress history, you can't see if you're improving week-over-week",
             "No weak-topic recommendations",
             "No AFQT estimator or composite score projections",
             "Ad-supported interface",
@@ -604,7 +603,7 @@ export default function BestASVABOnlinePrepPage() {
           Pricing Comparison Table
         </h2>
         <p className="mb-4 text-sm text-text-secondary">
-          All prices reflect best available information as of April 2026. Competitor prices change — verify at their sites before purchasing.
+          All prices reflect best available information as of April 2026. Competitor prices change, verify at their sites before purchasing.
         </p>
         <div className="overflow-x-auto rounded-xl border border-navy-border">
           <table className="w-full text-sm">
@@ -624,7 +623,7 @@ export default function BestASVABOnlinePrepPage() {
                   name: "ASVAB Hero Pro",
                   price: "$9.99/mo ($49.99/yr)",
                   questions: QUESTIONS_PLUS,
-                  tracking: "Yes — per topic",
+                  tracking: "Yes, per topic",
                   trial: "Free 30-q diagnostic",
                   refund: "7-day guarantee",
                   highlight: true,
@@ -700,7 +699,7 @@ export default function BestASVABOnlinePrepPage() {
           </table>
         </div>
         <p className="mt-2 text-xs text-text-tertiary">
-          Some columns hidden on mobile. Competitor prices sourced from public listings — verify before purchasing.
+          Some columns hidden on mobile. Competitor prices sourced from public listings, verify before purchasing.
         </p>
       </section>
 
@@ -728,7 +727,7 @@ export default function BestASVABOnlinePrepPage() {
             },
             {
               persona: "You're already a Kaplan or Princeton Review student",
-              rec: "Stick with what you have for content, but supplement with ASVAB Hero Pro for per-topic tracking — the price is low enough that running both isn't unreasonable.",
+              rec: "Stick with what you have for content, but supplement with ASVAB Hero Pro for per-topic tracking, the price is low enough that running both isn't unreasonable.",
               cta: null,
             },
             {
@@ -769,7 +768,7 @@ export default function BestASVABOnlinePrepPage() {
           {[
             {
               q: "Is paid ASVAB prep necessary?",
-              a: "No — free resources exist (UnionTestPrep, Khan Academy for math) and many recruits pass without paying. Paid prep earns its cost when you need structured progress tracking, weak-topic identification, or unlimited practice volume without hunting across a dozen sites.",
+              a: "No, free resources exist (UnionTestPrep, Khan Academy for math) and many recruits pass without paying. Paid prep earns its cost when you need structured progress tracking, weak-topic identification, or unlimited practice volume without hunting across a dozen sites.",
             },
             {
               q: "Can I use multiple ASVAB prep services at once?",
@@ -785,7 +784,7 @@ export default function BestASVABOnlinePrepPage() {
             },
             {
               q: "Can I get a refund if I'm not happy with an ASVAB prep course?",
-              a: "Refund policies vary. ASVAB Hero Pro has a 7-day money-back guarantee, no questions asked. Mometrix Academy has a lifetime guarantee on their book products — check their online course terms specifically. Kaplan and Princeton Review offer conditional satisfaction guarantees. Read the fine print before purchasing any service.",
+              a: "Refund policies vary. ASVAB Hero Pro has a 7-day money-back guarantee, no questions asked. Mometrix Academy has a lifetime guarantee on their book products, check their online course terms specifically. Kaplan and Princeton Review offer conditional satisfaction guarantees. Read the fine print before purchasing any service.",
             },
           ].map((item) => (
             <div
@@ -809,7 +808,7 @@ export default function BestASVABOnlinePrepPage() {
           Bottom Line
         </h2>
         <p className="mb-4 text-text-secondary leading-relaxed">
-          For most self-study students, ASVAB Hero Pro is the right call. It&apos;s the cheapest option with real score tracking, covers all 9 subtests across 39 topic categories, and costs less than a single meal out. Start with the free diagnostic to see your baseline — no account, no credit card. If the results show weak areas you want to systematically address, upgrade.
+          For most self-study students, ASVAB Hero Pro is the right call. It&apos;s the cheapest option with real score tracking, covers all 9 subtests across 39 topic categories, and costs less than a single meal out. Start with the free diagnostic to see your baseline, no account, no credit card. If the results show weak areas you want to systematically address, upgrade.
         </p>
         <p className="mb-6 text-text-secondary leading-relaxed">
           If you&apos;re a video learner who needs conceptual instruction before you drill, Mometrix is worth the higher price. If money is zero, use UnionTestPrep and our free diagnostic in combination.
@@ -825,7 +824,7 @@ export default function BestASVABOnlinePrepPage() {
             href="/upgrade?from=best-online-prep"
             className="rounded-xl bg-accent px-6 py-3 text-center font-display text-sm font-bold text-white transition-colors hover:bg-accent-hover no-underline"
           >
-            Upgrade to Pro — $9.99/mo
+            Upgrade to Pro, $9.99/mo
           </Link>
         </div>
       </section>

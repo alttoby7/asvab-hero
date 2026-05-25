@@ -45,10 +45,9 @@ export default function AirForceASVABScorePage() {
             "Learn Air Force ASVAB score requirements for 2026. AFQT minimums, MAGE composite formulas, AFSC score tables, special warfare thresholds, and study strategies.",
           url: "https://asvabhero.com/air-force-asvab-score",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -318,7 +317,7 @@ export default function AirForceASVABScorePage() {
                 </td>
                 <td className="py-2 pr-4 font-mono">General area</td>
                 <td className="py-2">
-                  No published numeric cutoff &mdash; verify with a recruiter.
+                  No published numeric cutoff, verify with a recruiter.
                   See{" "}
                   <Link href="/air-force-security-forces-asvab-score">
                     Security Forces ASVAB score

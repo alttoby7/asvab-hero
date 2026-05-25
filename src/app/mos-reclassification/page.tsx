@@ -23,10 +23,9 @@ export default function MOSReclassificationPage() {
             "MOS reclassification step by step: eligibility, In/Out Calls, the line score your new MOS needs, the AFCT retake, DA Form 4187, and what changes.",
           url: "https://asvabhero.com/mos-reclassification",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",

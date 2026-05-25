@@ -23,7 +23,7 @@
  *           predicted success in the ~70-80% target band near the user's
  *           estimated ability.
  *   4. ~10-15% of post-anchor slots are EXPLORATION: sample an under-calibrated
- *      trusted item to earn calibration signal — but exploration NEVER overrides
+ *      trusted item to earn calibration signal, but exploration NEVER overrides
  *      the macro blueprint (it only changes WHICH item fills a slot the
  *      blueprint already assigned to that subtest).
  *
@@ -74,7 +74,7 @@ export interface AdaptiveCandidate {
   /** trust tier from practice_questions.status. */
   status: "draft" | "verified" | "trusted";
   active: boolean;
-  /** Difficulty on the author 1-5 scale to use for band-targeting — the WS1
+  /** Difficulty on the author 1-5 scale to use for band-targeting, the WS1
    *  shrunk_difficulty when calibrated, else the author prior. Always present. */
   difficulty: number;
   /** First-seen exposure count from WS1. 0 when never calibrated. Drives the
@@ -86,9 +86,9 @@ export interface AdaptiveCandidate {
 export interface AdaptiveTopicStat {
   topicId: string;
   subtest: AsvabSubtest;
-  /** (correct + 1) / (seen + 2) — higher = stronger. */
+  /** (correct + 1) / (seen + 2), higher = stronger. */
   posterior: number;
-  /** min(seen / 8, 1) — higher = more measured. */
+  /** min(seen / 8, 1), higher = more measured. */
   confidence: number;
   /** seen count, for recency/coverage tie-breaks. */
   seen: number;
@@ -102,9 +102,9 @@ export interface AdaptiveSelectionInput {
   pool: AdaptiveCandidate[];
   /** Per-topic stats for the user (empty for a brand-new user → cold start). */
   topicStats: AdaptiveTopicStat[];
-  /** external_keys served recently (this + recent sessions) — exact cooldown. */
+  /** external_keys served recently (this + recent sessions), exact cooldown. */
   recentExternalKeys: Set<string>;
-  /** external_keys currently DUE in the Mistake Bank — excluded so the adaptive
+  /** external_keys currently DUE in the Mistake Bank, excluded so the adaptive
    *  test never collides with the spaced-review surface. */
   dueExternalKeys: Set<string>;
   /** Per-subtest quotas. Total length = sum of these. */
@@ -164,7 +164,7 @@ function isAudited(c: AdaptiveCandidate): boolean {
  * We map difficulty to a hardness in [0,1] (1→0 easy, 5→1 hard) and model
  * success as ability shifted by (0.5 - hardness): an average item (hardness .5)
  * predicts ~ability; a hard item drops it, an easy item lifts it. Clamped [0,1].
- * Deliberately simple/monotone — band-targeting only needs a sane ordering.
+ * Deliberately simple/monotone, band-targeting only needs a sane ordering.
  */
 export function predictSuccess(difficulty: number, ability: number): number {
   const hardness = (clamp(difficulty, 1, 5) - 1) / 4; // 0..1

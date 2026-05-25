@@ -11,7 +11,7 @@ import { trackEvent } from "@/lib/analytics";
  * All jobs render into the static HTML (client components are prerendered in the
  * static export), so search + AI crawlers index the full list + requirements +
  * descriptions with no interaction. On top of that, it captures ANONYMOUS
- * interest — no login needed:
+ * interest, no login needed:
  *   • `catalog_job_open`   when a visitor expands a job (branch, code, title)
  *   • `catalog_branch_jump` when they use the jump-to-branch nav
  * That's the per-job interest signal we otherwise can't see (jobs aren't pages).
@@ -97,7 +97,7 @@ export default function JobCatalog({ jobs }: { jobs: MilitaryJob[] }) {
       </h2>
       <p className="mt-2 text-sm text-text-secondary">
         Browse every enlisted job across all six branches and the minimum AFQT
-        and line/composite scores each one requires — no scores needed. Tap any
+        and line/composite scores each one requires, no scores needed. Tap any
         job for details, or enter your scores above to see which you qualify for.
       </p>
 

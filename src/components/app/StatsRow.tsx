@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Momentum tiles — habit + output only. AFQT lives in the trajectory hero card
+ * Momentum tiles, habit + output only. AFQT lives in the trajectory hero card
  * (one authoritative score), so it is deliberately NOT shown here anymore.
  */
 
@@ -29,7 +29,7 @@ export default function StatsRow({
               {streakCount}
             </span>
           ) : (
-            "—"
+            ", "
           )}
         </div>
         <div className="mt-1 text-xs uppercase tracking-wide text-text-tertiary">
@@ -40,7 +40,7 @@ export default function StatsRow({
       {/* Questions answered (volume) */}
       <div className="rounded-xl border border-navy-border bg-navy-light px-4 py-4 text-center">
         <div className="font-display text-2xl font-bold text-accent">
-          {totalQuestions > 0 ? totalQuestions.toLocaleString() : "—"}
+          {totalQuestions > 0 ? totalQuestions.toLocaleString() : ", "}
         </div>
         <div className="mt-1 text-xs uppercase tracking-wide text-text-tertiary">
           Questions answered
@@ -50,7 +50,7 @@ export default function StatsRow({
       {/* Accuracy (quality) */}
       <div className="rounded-xl border border-navy-border bg-navy-light px-4 py-4 text-center">
         <div className="font-display text-2xl font-bold text-accent">
-          {accuracy != null ? `${accuracy}%` : "—"}
+          {accuracy != null ? `${accuracy}%` : ", "}
         </div>
         <div className="mt-1 text-xs uppercase tracking-wide text-text-tertiary">
           Accuracy

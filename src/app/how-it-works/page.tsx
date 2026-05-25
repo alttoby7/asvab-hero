@@ -31,12 +31,12 @@ const STEPS: Step[] = [
     name: "Clear your Mistake Bank daily",
     what: "Every question you miss is saved automatically and brought back on a spaced schedule until you own it. This is the highest-leverage few minutes you have.",
     action:
-      "Each study day, open the Mistake Bank first and clear what's due. A missed question keeps coming back — with the explanation — until you can answer it cold.",
+      "Each study day, open the Mistake Bank first and clear what's due. A missed question keeps coming back, with the explanation, until you can answer it cold.",
   },
   {
     number: 3,
     name: "Do one adaptive AFQT block on each study day",
-    what: "The app picks the right question at the right difficulty, mixing subtests and targeting your weak spots — so your time goes where it actually moves your score.",
+    what: "The app picks the right question at the right difficulty, mixing subtests and targeting your weak spots, so your time goes where it actually moves your score.",
     action:
       "Run one adaptive block per study day. It focuses on the four subtests that make up your AFQT: Arithmetic Reasoning, Math Knowledge, Word Knowledge, and Paragraph Comprehension.",
   },
@@ -68,10 +68,9 @@ export default function HowItWorksPage() {
             "The exact way to use ASVAB Hero to raise your AFQT: take a free diagnostic, clear your Mistake Bank daily, do one adaptive AFQT block per study day, retake diagnostics on schedule, and rehearse under time before test day.",
           url: "https://asvabhero.com/how-it-works",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: { "@type": "Organization", name: "ASVAB Hero" },
           datePublished: "2026-05-22",
@@ -88,7 +87,7 @@ export default function HowItWorksPage() {
           How to use ASVAB Hero to raise your score
         </h1>
         <p className="text-lg leading-relaxed text-text-secondary">
-          Five steps, done on repeat. This is the exact way to use the product — what
+          Five steps, done on repeat. This is the exact way to use the product, what
           to do, in what order, every study day. Follow it and your practice goes
           where it actually moves your AFQT.
         </p>
@@ -122,14 +121,14 @@ export default function HowItWorksPage() {
         </h2>
         <ul className="mt-3 space-y-2 text-sm leading-relaxed text-text-secondary">
           <li>Pick your study days and stick to them.</li>
-          <li>Clear your due mistakes first — that&apos;s your warm-up and your weakest spots in one.</li>
+          <li>Clear your due mistakes first, that&apos;s your warm-up and your weakest spots in one.</li>
           <li>Do one adaptive AFQT block.</li>
-          <li>Let the spacing do the work — material comes back exactly when you need it.</li>
+          <li>Let the spacing do the work, material comes back exactly when you need it.</li>
         </ul>
         <p className="mt-4 text-sm leading-relaxed text-text-primary">
           <span className="font-semibold">Consistency beats cramming.</span> Simply
           showing up on your study days is the single biggest predictor of real score
-          gains — bigger than any one session.
+          gains, bigger than any one session.
         </p>
       </section>
 

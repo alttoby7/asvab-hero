@@ -17,7 +17,7 @@ import JobPicker from "@/components/app/JobPicker";
 import { trackEvent } from "@/lib/analytics";
 
 // The generated types lag a couple migrations (test_type 0032, study_anchor
-// 0028), so augment locally — same reason onboarding/plan cast to any.
+// 0028), so augment locally, same reason onboarding/plan cast to any.
 type Profile = Database["public"]["Tables"]["profiles"]["Row"] & {
   test_type: string | null;
   study_anchor: string | null;
@@ -34,7 +34,7 @@ const TIMEZONES = [
   "UTC",
 ];
 
-// Study-plan options — mirror the onboarding form so settings is the durable
+// Study-plan options, mirror the onboarding form so settings is the durable
 // editor for everything onboarding captures (test type / branch / cadence /
 // test date). Keeping these in sync is what makes "Set your study days" and
 // "Change schedule" on /app/plan actually lead somewhere.
@@ -554,7 +554,7 @@ export default function AccountSettingsPage() {
             </select>
             {testType === "afct" && (branch === "navy" || branch === "coast_guard") && (
               <p className="text-xs text-text-tertiary">
-                Navy/Coast Guard retests use rating-specific line scores — add your
+                Navy/Coast Guard retests use rating-specific line scores, add your
                 target rating under Goal jobs and your plan will drill its
                 composite (shown as a practice proxy, not an official score).
               </p>
@@ -579,7 +579,7 @@ export default function AccountSettingsPage() {
             </select>
           </div>
 
-          {/* GT target — Army/Marines AFCT only (GT = AR+WK+PC). */}
+          {/* GT target, Army/Marines AFCT only (GT = AR+WK+PC). */}
           {isSettingsGtMode && (
             <div className="flex flex-col gap-1.5">
               <label htmlFor="targetGt" className="text-sm font-medium text-text-secondary">
@@ -603,7 +603,7 @@ export default function AccountSettingsPage() {
             </div>
           )}
 
-          {/* Test date — specific date wins; bucket is the fallback. */}
+          {/* Test date, specific date wins; bucket is the fallback. */}
           <div className="flex flex-col gap-1.5">
             <label htmlFor="targetDate" className="text-sm font-medium text-text-secondary">
               Test date

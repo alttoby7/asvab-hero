@@ -2,13 +2,13 @@
  * Variant-aware question sampler.
  *
  * Responsibilities:
- *   1. `loadVariant(code)`        — fetch a TestVariant from Supabase.
- *   2. `loadQuestionPool(opts?)`  — fetch active practice_questions, optionally
+ *   1. `loadVariant(code)`, fetch a TestVariant from Supabase.
+ *   2. `loadQuestionPool(opts?)`, fetch active practice_questions, optionally
  *                                    filtered by subtest. Falls back to the
  *                                    local seed JSON if Supabase is unreachable
  *                                    or the table is empty (anonymous flow
  *                                    must keep working offline).
- *   3. `sampleForVariant(...)`    — pure function that applies the variant's
+ *   3. `sampleForVariant(...)`, pure function that applies the variant's
  *                                    mix rules to the pool and returns the
  *                                    questions to serve.
  */
@@ -35,7 +35,7 @@ import {
 export const ADAPTIVE_VARIANT_CODE = "afqt_adaptive";
 /**
  * All adaptive variants the selector drives: afqt_adaptive (AFQT), gt_adaptive
- * (AFCT GT/General — AR/WK/PC), rating_adaptive (Navy/CG rating composites —
+ * (AFCT GT/General, AR/WK/PC), rating_adaptive (Navy/CG rating composites, 
  * runtime weighted blueprint over the target rating's required subtests).
  */
 export const ADAPTIVE_VARIANT_CODES = [

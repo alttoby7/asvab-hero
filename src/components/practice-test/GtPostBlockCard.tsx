@@ -2,7 +2,7 @@
 
 /**
  * Post-block GT trajectory card (Army/Marines AFCT). Shown on the results page
- * right after a GT block — the highest-conversion GT moment after home.
+ * right after a GT block, the highest-conversion GT moment after home.
  *
  * Self-loading and FAIL-OPEN: if any query breaks, it renders nothing and the
  * results page is unaffected. Uses the GT helper as the single source of truth
@@ -135,7 +135,7 @@ export default function GtPostBlockCard({ userId }: GtPostBlockCardProps) {
           projection,
         });
       } catch {
-        /* fail open — leave vm null, render nothing */
+        /* fail open, leave vm null, render nothing */
       }
     }
     load();
@@ -179,7 +179,7 @@ export default function GtPostBlockCard({ userId }: GtPostBlockCardProps) {
             Current GT
           </div>
           <div className="mt-0.5 font-display text-2xl font-bold text-text-primary">
-            {vm.point != null ? vm.point : "—"}
+            {vm.point != null ? vm.point : ", "}
           </div>
           {vm.point != null && hasRange && (
             <div className="text-[11px] text-text-tertiary">
@@ -192,7 +192,7 @@ export default function GtPostBlockCard({ userId }: GtPostBlockCardProps) {
             Target GT
           </div>
           <div className="mt-0.5 font-display text-2xl font-bold text-text-primary">
-            {vm.target != null ? vm.target : "—"}
+            {vm.target != null ? vm.target : ", "}
           </div>
           {vm.target != null && fromJob && (
             <div className="text-[11px] text-text-tertiary">
@@ -209,7 +209,7 @@ export default function GtPostBlockCard({ userId }: GtPostBlockCardProps) {
               ? "At target"
               : vm.gap != null && vm.gap > 0
                 ? `~${vm.gap}`
-                : "—"}
+                : ", "}
           </div>
         </div>
         <div>
@@ -222,7 +222,7 @@ export default function GtPostBlockCard({ userId }: GtPostBlockCardProps) {
         </div>
       </div>
 
-      {/* Projected target date — honest. */}
+      {/* Projected target date, honest. */}
       <div className="mt-4 rounded-xl border border-navy-border bg-navy px-4 py-3">
         <div className="text-[11px] uppercase tracking-wide text-text-tertiary">
           Projected target date

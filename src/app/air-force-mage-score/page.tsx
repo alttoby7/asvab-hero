@@ -117,8 +117,7 @@ export default function AirForceMageScorePage() {
             Your AFQT decides whether you can enlist; MAGE helps sort which
             AFSCs (jobs) you can hold. Official sources publish the composite
             formulas and percentile tables, but not a clean way to
-            back-calculate exact percentiles from a rounded score report &mdash;
-            so treat MAGE numbers as estimates and verify specifics with a
+            back-calculate exact percentiles from a rounded score report, so treat MAGE numbers as estimates and verify specifics with a
             recruiter.
           </p>
         </VerifiedBlock>
@@ -137,7 +136,7 @@ export default function AirForceMageScorePage() {
 
         <p className="text-text-secondary">
           Your <strong>AFQT</strong> is a single percentile (1&ndash;99) built
-          from four subtests &mdash; Arithmetic Reasoning (AR), Mathematics
+          from four subtests, Arithmetic Reasoning (AR), Mathematics
           Knowledge (MK), Word Knowledge (WK), and Paragraph Comprehension (PC).
           It is the enlistment gate. If you clear the Air Force and Space Force
           floor, you can enlist. See our{" "}
@@ -149,7 +148,7 @@ export default function AirForceMageScorePage() {
 
         <p className="text-text-secondary">
           Your <strong>MAGE</strong> scores are four separate aptitude
-          composites &mdash; Mechanical (M), Administrative (A), General (G),
+          composites, Mechanical (M), Administrative (A), General (G),
           and Electronic (E). They are the classification gate. Each Air Force
           Specialty Code (AFSC) lists a minimum on one or more of these four
           areas, and that is what decides which jobs you can actually book.
@@ -257,7 +256,7 @@ export default function AirForceMageScorePage() {
           >
             PAY97 percentile tables
           </a>
-          , and the aptitude-area system is described on the{" "}
+, and the aptitude-area system is described on the{" "}
           <a
             href="https://www.officialasvab.com/applicants/military-jobs/"
             target="_blank"
@@ -359,7 +358,7 @@ export default function AirForceMageScorePage() {
           >
             Air Force Pararescue career page
           </a>
-          , and the Mobility Force Aviator signal comes from the{" "}
+, and the Mobility Force Aviator signal comes from the{" "}
           <a
             href="https://www.airforce.com/careers/aviation-and-flight/mobility-force-aviator"
             target="_blank"
@@ -419,7 +418,7 @@ export default function AirForceMageScorePage() {
             <Link href="/air-force-asvab-calculator">
               Air Force ASVAB calculator
             </Link>
-            , then confirm the real requirement with a recruiter.
+, then confirm the real requirement with a recruiter.
           </li>
         </ol>
 

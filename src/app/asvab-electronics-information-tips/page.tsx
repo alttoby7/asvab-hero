@@ -22,10 +22,9 @@ const articleJsonLd = {
     "Master the ASVAB EI subtest with 10 proven tips: Ohm's Law triangles, series vs. parallel circuits, component functions, and pacing for 30 sec/question.",
   url: "https://asvabhero.com/asvab-electronics-information-tips",
   author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
   publisher: {
     "@type": "Organization",
@@ -103,7 +102,7 @@ export default function ASVABElectronicsInformationTipsPage() {
 
         <BrandHero
           src="/images/asvab-electronics-information-tips/hero.jpg"
-          alt="A future recruit at a home workbench with multimeter, breadboard, soldering iron, and circuit textbook — practicing electronics fundamentals for the ASVAB EI subtest."
+          alt="A future recruit at a home workbench with multimeter, breadboard, soldering iron, and circuit textbook, practicing electronics fundamentals for the ASVAB EI subtest."
           width={1536}
           height={1024}
           className="my-6 overflow-hidden rounded-lg border border-navy-border"

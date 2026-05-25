@@ -8,7 +8,7 @@ import { QUESTIONS_PLUS } from "@/lib/bank-stats";
 
 export const metadata: Metadata = {
   title:
-    "Free AFCT Practice Test — 30 Questions, All 9 Subtests",
+    "Free AFCT Practice Test, 30 Questions, All 9 Subtests",
   description:
     "Take a free AFCT practice test with 30 timed questions across all 9 subtests. Estimate your GT score before risking your official record. Built for active-duty retesting.",
   alternates: {
@@ -23,11 +23,11 @@ const faqEntries = [
   },
   {
     q: "Can I use this to estimate my GT score?",
-    a: "Yes. After you finish the 30-question diagnostic, you get a per-subtest breakdown including Word Knowledge, Paragraph Comprehension, and Arithmetic Reasoning — the three subtests that determine your GT composite. Plug those numbers into the GT Score Calculator for a projection.",
+    a: "Yes. After you finish the 30-question diagnostic, you get a per-subtest breakdown including Word Knowledge, Paragraph Comprehension, and Arithmetic Reasoning, the three subtests that determine your GT composite. Plug those numbers into the GT Score Calculator for a projection.",
   },
   {
     q: "How many times can I take the AFCT?",
-    a: "Branch policies vary. Army and Marines require a 6-month wait between attempts (waived for BSEP graduates). Air Force and Navy follow similar intervals. There is no lifetime cap, but each attempt replaces your score — study until you are confident before retesting.",
+    a: "Branch policies vary. Army and Marines require a 6-month wait between attempts (waived for BSEP graduates). Air Force and Navy follow similar intervals. There is no lifetime cap, but each attempt replaces your score, study until you are confident before retesting.",
   },
   {
     q: "What is the AFCT score replacement rule?",
@@ -121,7 +121,7 @@ export default function AfctPracticeTestPage() {
             The Armed Forces Classification Test is how active-duty service
             members retake the ASVAB without returning to MEPS. It covers the
             same 9 subtests, uses the same scoring, and determines the same
-            composite scores — GT, CL, ST, and every other line score on your
+            composite scores, GT, CL, ST, and every other line score on your
             record.
           </p>
           <p className="mt-2">
@@ -163,7 +163,7 @@ export default function AfctPracticeTestPage() {
                 <strong className="text-text-primary">
                   GT 110 for OCS or Warrant Officer
                 </strong>{" "}
-                — see exactly which subtests are holding your GT down
+, see exactly which subtests are holding your GT down
               </span>
             </li>
             <li className="flex items-start gap-2">
@@ -172,7 +172,7 @@ export default function AfctPracticeTestPage() {
                 <strong className="text-text-primary">
                   MOS reclass or lateral move
                 </strong>{" "}
-                — confirm you meet the line score threshold before you submit
+, confirm you meet the line score threshold before you submit
                 your packet
               </span>
             </li>
@@ -182,7 +182,7 @@ export default function AfctPracticeTestPage() {
                 <strong className="text-text-primary">
                   BSEP or FAST prep
                 </strong>{" "}
-                — baseline your weak areas before starting a formal program
+, baseline your weak areas before starting a formal program
               </span>
             </li>
             <li className="flex items-start gap-2">
@@ -191,7 +191,7 @@ export default function AfctPracticeTestPage() {
                 <strong className="text-text-primary">
                   Pre-packet score refresh
                 </strong>{" "}
-                — verify readiness before burning a 6-month retest window
+, verify readiness before burning a 6-month retest window
               </span>
             </li>
           </ul>
@@ -252,15 +252,15 @@ export default function AfctPracticeTestPage() {
           </p>
           <ul className="mt-3 space-y-1 text-sm">
             <li>
-              <strong className="text-text-primary">GT 100</strong> — minimum
+              <strong className="text-text-primary">GT 100</strong>, minimum
               for most reclassification MOSs
             </li>
             <li>
-              <strong className="text-text-primary">GT 107</strong> — unlocks
+              <strong className="text-text-primary">GT 107</strong>, unlocks
               intelligence, cyber, and technical MOSs
             </li>
             <li>
-              <strong className="text-text-primary">GT 110+</strong> — required
+              <strong className="text-text-primary">GT 110+</strong>, required
               for OCS, Warrant Officer, and senior technical billets
             </li>
           </ul>

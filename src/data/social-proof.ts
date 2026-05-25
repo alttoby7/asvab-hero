@@ -1,4 +1,4 @@
-// Honest social proof. Numbers are REAL (Google Analytics) and rounded DOWN —
+// Honest social proof. Numbers are REAL (Google Analytics) and rounded DOWN, 
 // never inflated, never fabricated. Refresh roughly monthly from GA4.
 //
 // Source (GA4 property 404444165, trailing 30 days, as of 2026-05-22):

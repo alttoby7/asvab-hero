@@ -150,7 +150,7 @@ export async function loadDueCards(opts: {
 
 /**
  * Grade a flashcard review. SM-2 scheduling is computed DB-side via the shared
- * sm2_next() function (migration 0018) — the single source of truth for SM-2
+ * sm2_next() function (migration 0018), the single source of truth for SM-2
  * across the whole app. The user is derived from auth.uid() inside the RPC.
  */
 export async function gradeFlashcardReview(opts: {

@@ -25,10 +25,9 @@ export default function HowToRetakeTheASVABPage() {
             "You can retake the ASVAB after a 1-month wait. Second retest: 1 more month. Third+: 6 months. Branch-specific DEP restrictions, Confirmation Test triggers, and study strategies to score higher.",
           url: "https://asvabhero.com/how-to-retake-the-asvab",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",
@@ -104,7 +103,7 @@ export default function HowToRetakeTheASVABPage() {
         <aside className="mt-6 rounded-lg border-l-4 border-accent bg-navy-lighter/60 p-5">
           <p className="text-sm font-semibold text-accent">The short answer</p>
           <p className="mt-2 text-text-primary">
-            <strong>Yes, you can retake the ASVAB — there is no lifetime limit.</strong>{" "}
+            <strong>Yes, you can retake the ASVAB, there is no lifetime limit.</strong>{" "}
             The military uses the <strong>1/1/6 rule</strong>: wait 1 calendar
             month for your 1st retest, 1 month for your 2nd, then 6 months for
             every retest after that. The waiting period is the same whether
@@ -256,7 +255,7 @@ export default function HowToRetakeTheASVABPage() {
           through the Career Exploration Program) or an enlistment ASVAB
           (administered at MEPS or a MET site). If you took the student ASVAB
           on January 15, your first enlistment-ASVAB retest opens February 15
-          — not sooner.
+, not sooner.
         </p>
         <p className="text-text-secondary">
           Student ASVAB scores are also valid for enlistment for 2 years from
@@ -273,7 +272,7 @@ export default function HowToRetakeTheASVABPage() {
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">
-            Student ASVAB counts — verify before you test
+            Student ASVAB counts, verify before you test
           </p>
           <p className="mt-1 text-sm text-text-secondary">
             The high school student ASVAB (Career Exploration Program) uses
@@ -1146,7 +1145,7 @@ export default function HowToRetakeTheASVABPage() {
 
         <section className="mt-8 not-prose">
           <EmailCapture
-            headline="Don't wing the retake — get the 30-day plan"
+            headline="Don't wing the retake, get the 30-day plan"
             subhead="A free PDF plan plus a 5-email crash course covering AFQT, line scores, and how to avoid the C-Test reset."
             cta="Email me the plan"
             tag="how-to-retake-end"

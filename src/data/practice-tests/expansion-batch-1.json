@@ -42,7 +42,7 @@
       "fair but strict"
     ],
     "correct_index": 1,
-    "explanation": "Taciturn means habitually saying very little. The sentence's clue is that soldiers got no verbal feedback at all, only nods — indicating a person who rarely speaks, not one who is merely stern or moody."
+    "explanation": "Taciturn means habitually saying very little. The sentence's clue is that soldiers got no verbal feedback at all, only nods, indicating a person who rarely speaks, not one who is merely stern or moody."
   },
   {
     "external_key": "WK-CTX-5",
@@ -94,7 +94,7 @@
     "subtest": "WK",
     "topic_id": "wk.context-clues",
     "difficulty": 4,
-    "stem": "In the sentence 'The general's IMPERIOUS tone left no doubt that his orders were not suggestions — they were commands,' the word IMPERIOUS most nearly means:",
+    "stem": "In the sentence 'The general's IMPERIOUS tone left no doubt that his orders were not suggestions, they were commands,' the word IMPERIOUS most nearly means:",
     "choices": [
       "calm and measured",
       "domineering and commanding",
@@ -139,7 +139,7 @@
     "subtest": "WK",
     "topic_id": "wk.context-clues",
     "difficulty": 5,
-    "stem": "In the sentence 'His PERFUNCTORY review of the safety checklist — glancing at it for seconds before signing — nearly cost the crew their lives,' the word PERFUNCTORY most nearly means:",
+    "stem": "In the sentence 'His PERFUNCTORY review of the safety checklist, glancing at it for seconds before signing, nearly cost the crew their lives,' the word PERFUNCTORY most nearly means:",
     "choices": [
       "thorough and systematic",
       "done as a formality without real care",
@@ -237,7 +237,7 @@
       "clearly stated"
     ],
     "correct_index": 1,
-    "explanation": "Equivocal literally means 'equal voices' — a statement that calls equally in two directions, making it deliberately ambiguous or unclear. Clearly stated is the antonym. Fair and balanced is a trap that uses EQUI- in isolation."
+    "explanation": "Equivocal literally means 'equal voices', a statement that calls equally in two directions, making it deliberately ambiguous or unclear. Clearly stated is the antonym. Fair and balanced is a trap that uses EQUI- in isolation."
   },
   {
     "external_key": "WK-PFX-7",
@@ -364,7 +364,7 @@
     "subtest": "PC",
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 3,
-    "stem": "Read the passage below and answer the question.\n\n\"Every year, thousands of young people sign contracts they do not fully understand, binding themselves to financial obligations that can follow them for a decade. Financial literacy is not a luxury — it is a survival skill. Schools that skip personal finance education are not saving curriculum space; they are failing their students.\"\n\nThe author's primary purpose is to:",
+    "stem": "Read the passage below and answer the question.\n\n\"Every year, thousands of young people sign contracts they do not fully understand, binding themselves to financial obligations that can follow them for a decade. Financial literacy is not a luxury, it is a survival skill. Schools that skip personal finance education are not saving curriculum space; they are failing their students.\"\n\nThe author's primary purpose is to:",
     "choices": [
       "explain how financial contracts work",
       "argue that financial education should be required in schools",
@@ -379,7 +379,7 @@
     "subtest": "PC",
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 3,
-    "stem": "Read the passage below and answer the question.\n\n\"The old lighthouse stood at the edge of the cliff, its white paint peeling, its lamp long dark. Fishermen who once depended on its beam now navigated by GPS coordinates that glowed on small screens below the wheelhouse. Progress, it seemed, had made the lighthouse beautiful again — no longer a tool, just a memory.\"\n\nThe author's tone toward the lighthouse can best be described as:",
+    "stem": "Read the passage below and answer the question.\n\n\"The old lighthouse stood at the edge of the cliff, its white paint peeling, its lamp long dark. Fishermen who once depended on its beam now navigated by GPS coordinates that glowed on small screens below the wheelhouse. Progress, it seemed, had made the lighthouse beautiful again, no longer a tool, just a memory.\"\n\nThe author's tone toward the lighthouse can best be described as:",
     "choices": [
       "angry at the march of technology",
       "nostalgic and somewhat wistful",
@@ -387,7 +387,7 @@
       "indifferent to the lighthouse's fate"
     ],
     "correct_index": 1,
-    "explanation": "'Beautiful again — no longer a tool, just a memory' expresses a wistful, nostalgic view of something that has outlived its usefulness. The author is not angry — progress is accepted — but there is a gentle sense of loss, not pride or indifference."
+    "explanation": "'Beautiful again, no longer a tool, just a memory' expresses a wistful, nostalgic view of something that has outlived its usefulness. The author is not angry, progress is accepted, but there is a gentle sense of loss, not pride or indifference."
   },
   {
     "external_key": "PC-ATP-3",
@@ -409,7 +409,7 @@
     "subtest": "PC",
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 3,
-    "stem": "Read the passage below and answer the question.\n\n\"If you have ever watched a skilled carpenter fit two pieces of wood together without a visible gap, you have witnessed craftsmanship at its best. It is not magic — it is patience, the right tools, and a refusal to accept 'good enough.' Anyone who calls woodworking a dying art has never stood in a shop full of sawdust and purpose.\"\n\nThe author's attitude toward woodworking is best described as:",
+    "stem": "Read the passage below and answer the question.\n\n\"If you have ever watched a skilled carpenter fit two pieces of wood together without a visible gap, you have witnessed craftsmanship at its best. It is not magic, it is patience, the right tools, and a refusal to accept 'good enough.' Anyone who calls woodworking a dying art has never stood in a shop full of sawdust and purpose.\"\n\nThe author's attitude toward woodworking is best described as:",
     "choices": [
       "defensive and insecure about the craft's future",
       "enthusiastic and admiring",
@@ -424,7 +424,7 @@
     "subtest": "PC",
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 4,
-    "stem": "Read the passage below and answer the question.\n\n\"The proposal to expand the highway through the wetland was approved in 72 hours — a process that typically takes months of environmental review. Local conservation groups were not notified until after the vote. Three federal agencies later noted that proper procedure had not been followed, yet construction began on schedule.\"\n\nThe author's implied attitude toward the approval process is:",
+    "stem": "Read the passage below and answer the question.\n\n\"The proposal to expand the highway through the wetland was approved in 72 hours, a process that typically takes months of environmental review. Local conservation groups were not notified until after the vote. Three federal agencies later noted that proper procedure had not been followed, yet construction began on schedule.\"\n\nThe author's implied attitude toward the approval process is:",
     "choices": [
       "supportive of faster infrastructure decisions",
       "critical of the rushed and irregular process",
@@ -457,19 +457,19 @@
     "stem": "Read the passage below and answer the question.\n\n\"Efficiency, we are often told, is the highest virtue of a modern organization. But efficiency is a tool, not a goal. A surgeon who operates faster does not thereby become a better surgeon; a teacher who covers content faster is not necessarily teaching. When organizations optimize processes without asking what those processes are for, they risk becoming very good at doing the wrong thing.\"\n\nThe author's attitude toward efficiency is best described as:",
     "choices": [
       "strongly opposed to using efficiency in any professional context",
-      "cautiously skeptical — useful in the right place, but easily misapplied",
+      "cautiously skeptical, useful in the right place, but easily misapplied",
       "fully supportive if efficiency is paired with speed",
       "indifferent; the author is presenting both sides without a position"
     ],
     "correct_index": 1,
-    "explanation": "The author calls efficiency 'a tool, not a goal' and uses examples to show how misapplied efficiency backfires — but never argues against efficiency itself. This is cautious skepticism, not wholesale opposition. The author clearly has a position, ruling out indifference."
+    "explanation": "The author calls efficiency 'a tool, not a goal' and uses examples to show how misapplied efficiency backfires, but never argues against efficiency itself. This is cautious skepticism, not wholesale opposition. The author clearly has a position, ruling out indifference."
   },
   {
     "external_key": "PC-ATP-8",
     "subtest": "PC",
     "topic_id": "pc.author-tone-purpose",
     "difficulty": 5,
-    "stem": "Read the passage below and answer the question.\n\n\"The recruits arrived in October — cocky, loud, certain they were ready for anything. By December, most had stopped talking about what they thought training would be like. They had learned something that cannot be taught in a classroom: that confidence earned is different from confidence assumed.\"\n\nThe author's tone toward the recruits at the end of the passage is best described as:",
+    "stem": "Read the passage below and answer the question.\n\n\"The recruits arrived in October, cocky, loud, certain they were ready for anything. By December, most had stopped talking about what they thought training would be like. They had learned something that cannot be taught in a classroom: that confidence earned is different from confidence assumed.\"\n\nThe author's tone toward the recruits at the end of the passage is best described as:",
     "choices": [
       "contemptuous of their early arrogance",
       "approving of the growth they experienced",
@@ -477,7 +477,7 @@
       "amused by their naivety throughout"
     ],
     "correct_index": 1,
-    "explanation": "'Confidence earned is different from confidence assumed' is the author's conclusion — framing the change as meaningful growth, not humiliation. Contemptuous would suggest the author mocks them; the passage instead presents the transformation with respect."
+    "explanation": "'Confidence earned is different from confidence assumed' is the author's conclusion, framing the change as meaningful growth, not humiliation. Contemptuous would suggest the author mocks them; the passage instead presents the transformation with respect."
   },
   {
     "external_key": "AS-MNT-1",
@@ -592,12 +592,12 @@
     "stem": "An engine runs rough at idle but smoothly at higher RPM. Disconnecting one spark plug wire at a time, you find that one cylinder makes no change to idle quality when its wire is removed. This means:",
     "choices": [
       "that cylinder is firing too often at idle",
-      "that cylinder is not contributing to engine power — it is misfiring or dead",
+      "that cylinder is not contributing to engine power, it is misfiring or dead",
       "the ignition coil for that cylinder is delivering extra voltage",
       "all cylinders are sharing load equally"
     ],
     "correct_index": 1,
-    "explanation": "Removing a plug wire from a healthy cylinder will cause idle to noticeably worsen. If removing a wire causes no change, that cylinder was already not contributing — it was misfiring. This test isolates the dead cylinder."
+    "explanation": "Removing a plug wire from a healthy cylinder will cause idle to noticeably worsen. If removing a wire causes no change, that cylinder was already not contributing, it was misfiring. This test isolates the dead cylinder."
   },
   {
     "external_key": "MC-IPH-1",
@@ -822,7 +822,7 @@
       "240 joules"
     ],
     "correct_index": 2,
-    "explanation": "Work = Force × Distance = 60 N × 2 m = 120 joules. Work is measured in joules (newton-meters). Dividing instead of multiplying gives 30 — a common sign-flip error. Adding (60 + 2 = 62) confuses the formula."
+    "explanation": "Work = Force × Distance = 60 N × 2 m = 120 joules. Work is measured in joules (newton-meters). Dividing instead of multiplying gives 30, a common sign-flip error. Adding (60 + 2 = 62) confuses the formula."
   },
   {
     "external_key": "GS-PHY-4",
@@ -852,7 +852,7 @@
       "it depends on the shape of each ball"
     ],
     "correct_index": 2,
-    "explanation": "In a vacuum there is no air resistance. Gravity accelerates all objects equally regardless of mass (9.8 m/s²). This is what Galileo demonstrated — the common misconception is that heavier objects fall faster because gravity 'pulls harder,' but acceleration is mass-independent."
+    "explanation": "In a vacuum there is no air resistance. Gravity accelerates all objects equally regardless of mass (9.8 m/s²). This is what Galileo demonstrated, the common misconception is that heavier objects fall faster because gravity 'pulls harder,' but acceleration is mass-independent."
   },
   {
     "external_key": "GS-PHY-6",
@@ -942,7 +942,7 @@
       "480 watts"
     ],
     "correct_index": 2,
-    "explanation": "Power = Voltage × Current = P = IV = 120 × 2 = 240 watts. Dividing (120/2 = 60) is the most common error — students confuse the power formula with Ohm's Law for resistance."
+    "explanation": "Power = Voltage × Current = P = IV = 120 × 2 = 240 watts. Dividing (120/2 = 60) is the most common error, students confuse the power formula with Ohm's Law for resistance."
   },
   {
     "external_key": "EI-OHM-2",
@@ -972,7 +972,7 @@
       "36 watts"
     ],
     "correct_index": 2,
-    "explanation": "Total resistance = 3 + 1 = 4 ohms. Current = V/R = 12/4 = 3 amperes. Power in the 3-ohm resistor: P = I²R = 3² × 3 = 9 × 3 = 27 watts. Using total voltage instead of calculating current first gives 48 W — a two-step problem requiring correct sequencing."
+    "explanation": "Total resistance = 3 + 1 = 4 ohms. Current = V/R = 12/4 = 3 amperes. Power in the 3-ohm resistor: P = I²R = 3² × 3 = 9 × 3 = 27 watts. Using total voltage instead of calculating current first gives 48 W, a two-step problem requiring correct sequencing."
   },
   {
     "external_key": "EI-OHM-4",
@@ -1002,7 +1002,7 @@
       "3 amperes"
     ],
     "correct_index": 2,
-    "explanation": "In parallel circuits, voltage across each branch equals source voltage. Branch 1 current: I₁ = 9/9 = 1 A. Branch 2 current: I₂ = 9/18 = 0.5 A. Total current = I₁ + I₂ = 1.5 A. Students who use combined parallel resistance alone often get the right answer but skip confirming via branch currents — here either method works."
+    "explanation": "In parallel circuits, voltage across each branch equals source voltage. Branch 1 current: I₁ = 9/9 = 1 A. Branch 2 current: I₂ = 9/18 = 0.5 A. Total current = I₁ + I₂ = 1.5 A. Students who use combined parallel resistance alone often get the right answer but skip confirming via branch currents, here either method works."
   },
   {
     "external_key": "AR-WRD-1",
@@ -1017,7 +1017,7 @@
       "56 boxes"
     ],
     "correct_index": 1,
-    "explanation": "Crates use: 20 × 120 = 2,400 lbs. Remaining capacity: 4,800 − 2,400 = 2,400 lbs. Number of boxes: 2,400 / 60 = 40 boxes. Dividing remaining capacity by 120 (crate weight) gives 20 — the error of using the wrong unit weight."
+    "explanation": "Crates use: 20 × 120 = 2,400 lbs. Remaining capacity: 4,800 − 2,400 = 2,400 lbs. Number of boxes: 2,400 / 60 = 40 boxes. Dividing remaining capacity by 120 (crate weight) gives 20, the error of using the wrong unit weight."
   },
   {
     "external_key": "AR-WRD-2",
@@ -1032,7 +1032,7 @@
       "36 gallons"
     ],
     "correct_index": 2,
-    "explanation": "If 3/4 of the tank = 24 gallons, then 1/4 = 8 gallons, and the full tank = 4 × 8 = 32 gallons. Multiplying 24 × (3/4) = 18 gallons is the reverse error — treating the fraction as a multiplier instead of recognizing it represents the current fill level."
+    "explanation": "If 3/4 of the tank = 24 gallons, then 1/4 = 8 gallons, and the full tank = 4 × 8 = 32 gallons. Multiplying 24 × (3/4) = 18 gallons is the reverse error, treating the fraction as a multiplier instead of recognizing it represents the current fill level."
   },
   {
     "external_key": "AR-PCT-1",
@@ -1107,7 +1107,7 @@
       "942 cubic feet"
     ],
     "correct_index": 2,
-    "explanation": "Volume of a cylinder = π × r² × h = 3.14 × 9 × 10 = 282.6 cubic feet. Using diameter (6) instead of radius (3) gives 3.14 × 36 × 10 = 1,130.4 — squaring the diameter is the most common error. Using r = 3 without squaring gives 3.14 × 3 × 10 = 94.2."
+    "explanation": "Volume of a cylinder = π × r² × h = 3.14 × 9 × 10 = 282.6 cubic feet. Using diameter (6) instead of radius (3) gives 3.14 × 36 × 10 = 1,130.4, squaring the diameter is the most common error. Using r = 3 without squaring gives 3.14 × 3 × 10 = 94.2."
   },
   {
     "external_key": "MK-FRC-1",
@@ -1182,14 +1182,14 @@
       "The board chair ultimately supported the research once it was explained clearly."
     ],
     "correct_index": 1,
-    "explanation": "The detail that the board kept finding new objections — and that the final research contradicted the chair's own published theory — strongly implies a conflict of interest. Choice A is contradicted by the research's eventual publication. Choices C and D are not supported by any passage detail."
+    "explanation": "The detail that the board kept finding new objections, and that the final research contradicted the chair's own published theory, strongly implies a conflict of interest. Choice A is contradicted by the research's eventual publication. Choices C and D are not supported by any passage detail."
   },
   {
     "external_key": "PC-MAIN-HARD-1",
     "subtest": "PC",
     "topic_id": "pc.main-idea",
     "difficulty": 4,
-    "stem": "Read the passage below and answer the question.\n\n\"Maps are not neutral documents. Every map involves choices: what to include, what to omit, which areas to enlarge, and which projection to use. The Mercator projection, still common in classrooms, inflates the size of land near the poles — making Greenland appear as large as Africa, when Africa is actually fourteen times larger. A map teaches not just geography but a way of seeing the world.\"\n\nWhat is the main idea of this passage?",
+    "stem": "Read the passage below and answer the question.\n\n\"Maps are not neutral documents. Every map involves choices: what to include, what to omit, which areas to enlarge, and which projection to use. The Mercator projection, still common in classrooms, inflates the size of land near the poles, making Greenland appear as large as Africa, when Africa is actually fourteen times larger. A map teaches not just geography but a way of seeing the world.\"\n\nWhat is the main idea of this passage?",
     "choices": [
       "The Mercator projection is the most accurate map projection available.",
       "Maps reflect decisions and assumptions that shape how people perceive the world.",
@@ -1242,7 +1242,7 @@
       "25%"
     ],
     "correct_index": 2,
-    "explanation": "Percent increase = (new − old) / old × 100 = (88 − 72) / 72 × 100 = 16/72 × 100 ≈ 22.2%, rounded to 22%. Dividing by the new score (16/88 ≈ 18%) is the most common error — percent change always uses the original value as the base."
+    "explanation": "Percent increase = (new − old) / old × 100 = (88 − 72) / 72 × 100 = 16/72 × 100 ≈ 22.2%, rounded to 22%. Dividing by the new score (16/88 ≈ 18%) is the most common error, percent change always uses the original value as the base."
   },
   {
     "external_key": "WK-CTX-D2-1",
@@ -1257,7 +1257,7 @@
       "unfamiliar"
     ],
     "correct_index": 0,
-    "explanation": "Treacherous means deceptively dangerous — something that appears safe but conceals serious hazards. The new stem reinforces this with 'hidden drop-offs and unstable footing.' Exhausting, remote, and unfamiliar describe possible trail qualities but do not capture the deceptive, unpredictable danger that treacherous conveys."
+    "explanation": "Treacherous means deceptively dangerous, something that appears safe but conceals serious hazards. The new stem reinforces this with 'hidden drop-offs and unstable footing.' Exhausting, remote, and unfamiliar describe possible trail qualities but do not capture the deceptive, unpredictable danger that treacherous conveys."
   },
   {
     "external_key": "WK-PFX-D2-1",

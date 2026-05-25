@@ -21,10 +21,9 @@ const articleJsonLd = {
     "Master the ASVAB General Science subtest with these 10 tips covering body systems, earth science, physics, chemistry, mnemonics, and a 4-week study plan.",
   url: "https://asvabhero.com/asvab-general-science-tips",
   author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
   publisher: {
     "@type": "Organization",

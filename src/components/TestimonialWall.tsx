@@ -1,7 +1,7 @@
 /**
  * Social-proof wall. Renders REAL, curated testimonials when we have them
- * (src/data/testimonials.ts). Until then it shows HONEST proof — the real usage
- * counter + an explicit "no fake reviews" line — so the slot is never empty and
+ * (src/data/testimonials.ts). Until then it shows HONEST proof, the real usage
+ * counter + an explicit "no fake reviews" line, so the slot is never empty and
  * never fake. Swap happens automatically the moment real testimonials are
  * curated in (collected via TestimonialPrompt → testimonials table → approval).
  */
@@ -76,16 +76,16 @@ export default function TestimonialWall() {
               </div>
             </div>
 
-            {/* Authority proof — the method, as credibility */}
+            {/* Authority proof, the method, as credibility */}
             <div className="mx-auto mt-10 max-w-3xl rounded-2xl border border-navy-border bg-navy p-6 text-center sm:p-7">
               <p className="text-sm leading-relaxed text-text-secondary">
                 Built on the study methods cognitive science shows actually raise
-                scores —{" "}
+                scores, {" "}
                 <span className="text-text-primary">
                   retrieval practice, spaced repetition, interleaving, and adaptive
                   difficulty
                 </span>{" "}
-                — not the rereading most apps rely on.
+, not the rereading most apps rely on.
               </p>
               <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium text-text-tertiary">
                 <span>Free to start · no card</span>

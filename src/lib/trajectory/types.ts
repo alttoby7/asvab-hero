@@ -1,5 +1,5 @@
 /**
- * WS3 — Trajectory / multi-target-job backend contracts.
+ * WS3, Trajectory / multi-target-job backend contracts.
  *
  * BAND-ONLY by design: this module NEVER exposes raw point deltas to the UI.
  * Reliability is low (~25 attempts in prod; a single diagnostic is ~±10 AFQT
@@ -75,7 +75,7 @@ export type JobOverallStatus =
   | "needs_work"
   | "unsupported";
 
-/** Banded gap label — the ONLY gap signal exposed to the UI. */
+/** Banded gap label, the ONLY gap signal exposed to the UI. */
 export type GapBand =
   | "at_or_above_band"
   | "within_one_band"
@@ -103,7 +103,7 @@ export type SubtestEstimates = Partial<Record<AfqtSubtest, SubtestEstimate>>;
 
 /**
  * The current-standing portion of the home payload. Note: raw AFQT
- * point/low/high are intentionally NOT in the contract — only bands +
+ * point/low/high are intentionally NOT in the contract, only bands +
  * confidence are surfaced (raw values are stored server-side for debugging).
  */
 export interface CurrentStanding {
@@ -165,7 +165,7 @@ export interface TargetJobGap {
  * The metric the user is actually prepping for, resolved server-side from
  * profiles.test_type+branch. Initial-ASVAB (and AFCT on navy/coast_guard until
  * S7) → AFQT, banded. AFCT on a VE+AR branch → GT (Army/Marines) or General/G
- * (AF/SF) as an equated PROXY — `is_proxy=true`, value-based, NO qualification
+ * (AF/SF) as an equated PROXY, `is_proxy=true`, value-based, NO qualification
  * tier implied (the card must frame it as a practice proxy).
  */
 export type PrimaryMetric =

@@ -9,7 +9,7 @@ import BranchJobUnlockExplorer from "@/components/ranks/BranchJobUnlockExplorer"
 export const metadata: Metadata = {
   title: "Army Ranks: Complete Guide to Every Grade (2026)",
   description:
-    "All 29 Army ranks explained — enlisted E-1 to E-9, warrant officers W-1 to W-5, and officers O-1 to O-10 with 2026 pay and promotion timelines.",
+    "All 29 Army ranks explained, enlisted E-1 to E-9, warrant officers W-1 to W-5, and officers O-1 to O-10 with 2026 pay and promotion timelines.",
   alternates: {
     canonical: "https://asvabhero.com/army-ranks",
   },
@@ -24,13 +24,12 @@ export default function ArmyRanksPage() {
           "@type": "Article",
           headline: "Army Ranks: The Complete Guide to Every Grade from E-1 to General",
           description:
-            "Complete guide to all 29 Army ranks — enlisted E-1 through E-9, warrant officers W-1 through W-5, and officers O-1 through O-10, with 2026 pay, promotion timelines, and ASVAB connections.",
+            "Complete guide to all 29 Army ranks, enlisted E-1 through E-9, warrant officers W-1 through W-5, and officers O-1 through O-10, with 2026 pay, promotion timelines, and ASVAB connections.",
           url: "https://asvabhero.com/army-ranks",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: { "@type": "Organization", name: "ASVAB Hero" },
           datePublished: "2026-03-17",
@@ -118,7 +117,7 @@ export default function ArmyRanksPage() {
         </p>
 
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Compare pay grades across all 6 branches →</p>
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool, Compare pay grades across all 6 branches →</p>
           <RankEquivalencyExplorer />
         </div>
 
@@ -255,7 +254,7 @@ export default function ArmyRanksPage() {
 
         <aside className="my-6 rounded-xl border-l-4 border-accent bg-navy-lighter px-5 py-4">
           <p className="text-sm font-semibold text-text-primary">Current SMA: Michael R. Weimer (17th)</p>
-          <p className="mt-1 text-sm text-text-secondary">Assumed duties August 2023. Exactly one person holds this position at any time — the senior enlisted adviser to the Army Chief of Staff, representing all enlisted soldiers.</p>
+          <p className="mt-1 text-sm text-text-secondary">Assumed duties August 2023. Exactly one person holds this position at any time, the senior enlisted adviser to the Army Chief of Staff, representing all enlisted soldiers.</p>
         </aside>
 
         <h3 className="mt-6 font-display text-base font-bold text-text-primary">The PME Ladder (Required, Not Optional)</h3>
@@ -288,7 +287,7 @@ export default function ArmyRanksPage() {
         </p>
 
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Estimate your starting rank based on your background →</p>
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool, Estimate your starting rank based on your background →</p>
           <StartingRankEstimator />
         </div>
 
@@ -416,7 +415,7 @@ export default function ArmyRanksPage() {
         </div>
 
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — Map your promotion timeline from enlistment to retirement →</p>
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool, Map your promotion timeline from enlistment to retirement →</p>
           <PromotionPathPlanner />
         </div>
 
@@ -617,7 +616,7 @@ export default function ArmyRanksPage() {
         </p>
 
         <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool — See which jobs your ASVAB score unlocks across every branch →</p>
+          <p className="px-4 pt-4 text-xs font-semibold uppercase tracking-wider text-text-tertiary">Interactive Tool, See which jobs your ASVAB score unlocks across every branch →</p>
           <BranchJobUnlockExplorer />
         </div>
 

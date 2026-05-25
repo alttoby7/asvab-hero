@@ -23,10 +23,9 @@ export default function AsvabRetakePolicyPage() {
             "Learn the complete ASVAB retake policy for 2026: the 1-1-6 waiting period rule, DEP restrictions by branch, C-Test triggers, and score expiration.",
           url: "https://asvabhero.com/asvab-retake-policy",
           author: {
-            "@type": "Person",
-            "@id": "https://asvabhero.com/team/jordan-avery#editor",
-            name: "Jordan Avery",
-            url: "https://asvabhero.com/team/jordan-avery",
+            "@type": "Organization",
+            "@id": "https://asvabhero.com/#organization",
+            name: "ASVAB Hero",
           },
           publisher: {
             "@type": "Organization",

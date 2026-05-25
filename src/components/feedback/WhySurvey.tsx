@@ -1,6 +1,6 @@
 "use client";
 
-// ASVAB Hero — paywall "why-tracking" one-tap survey.
+// ASVAB Hero, paywall "why-tracking" one-tap survey.
 //
 // v1 SCOPE: cancel-return survey only (trigger="checkout_cancelled"), shown on
 // /upgrade?status=cancelled. Free-text OFF. Once-per-paywall_context_id +
@@ -34,8 +34,8 @@ const SUPPRESS_KEY = "asvabhero.survey.suppressUntil.v1";
 const SUPPRESS_MS = 14 * 24 * 60 * 60 * 1000; // 14 days
 
 const PROMPTS: Record<SurveyTrigger, string> = {
-  paywall_exit: "Quick one — what's holding you back?",
-  checkout_cancelled: "Quick one — what's holding you back?",
+  paywall_exit: "Quick one, what's holding you back?",
+  checkout_cancelled: "Quick one, what's holding you back?",
   churn_email: "What made you cancel?",
 };
 
@@ -112,7 +112,7 @@ export default function WhySurvey({ trigger, accessToken }: WhySurveyProps) {
       if (pcid && readShownSet().has(pcid)) return;
       setOpen(true);
     } catch {
-      // swallow — never block render
+      // swallow, never block render
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -198,9 +198,9 @@ export default function WhySurvey({ trigger, accessToken }: WhySurveyProps) {
         <div className="flex items-start justify-between gap-3">
           <p className="font-display text-sm font-bold text-text-primary">
             {step === "done"
-              ? "Thanks — that helps."
+              ? "Thanks, that helps."
               : step === "price"
-                ? "One more — would any of these work?"
+                ? "One more, would any of these work?"
                 : PROMPTS[trigger]}
           </p>
           <button

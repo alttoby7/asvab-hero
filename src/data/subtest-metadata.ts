@@ -41,7 +41,7 @@ export const SUBTEST_METADATA: SubtestMeta[] = [
     isAFQT: true,
     veDoubled: false,
     description:
-      "Word problems that test your ability to solve real-world math situations. One of the 4 AFQT subtests — directly affects your enlistment eligibility.",
+      "Word problems that test your ability to solve real-world math situations. One of the 4 AFQT subtests, so it directly affects your enlistment eligibility.",
     topicSummary: "Word problems: rates, percentages, ratios, basic algebra",
     sampleTopics: [
       "Rate, time & distance problems",
@@ -64,7 +64,7 @@ export const SUBTEST_METADATA: SubtestMeta[] = [
     isAFQT: true,
     veDoubled: true,
     description:
-      "Vocabulary test — pick the word closest in meaning. Part of the Verbal Expression (VE) score which is DOUBLED in the AFQT formula, making it extremely high-impact.",
+      "Vocabulary test: pick the word closest in meaning. Part of the Verbal Expression (VE) score which is DOUBLED in the AFQT formula, making it extremely high-impact.",
     topicSummary: "Vocabulary, synonyms, word meanings in context",
     sampleTopics: [
       "Common prefixes & suffixes",
@@ -85,7 +85,7 @@ export const SUBTEST_METADATA: SubtestMeta[] = [
     isAFQT: true,
     veDoubled: true,
     description:
-      "Reading passages followed by questions about main ideas, details, and inferences. Also part of VE — DOUBLED in AFQT formula.",
+      "Reading passages followed by questions about main ideas, details, and inferences. Also part of VE, which is DOUBLED in the AFQT formula.",
     topicSummary: "Reading comprehension: main idea, details, inference",
     sampleTopics: [
       "Finding the main idea",
@@ -105,7 +105,7 @@ export const SUBTEST_METADATA: SubtestMeta[] = [
     isAFQT: true,
     veDoubled: false,
     description:
-      "Pure math — algebra, geometry, and number theory. One of the 4 AFQT subtests. Unlike AR, these are straight math problems, not word problems.",
+      "Pure math: algebra, geometry, and number theory. One of the 4 AFQT subtests. Unlike AR, these are straight math problems, not word problems.",
     topicSummary: "Algebra, geometry, fractions, exponents, equations",
     sampleTopics: [
       "Fractions, decimals & percentages",
@@ -194,7 +194,7 @@ export const SUBTEST_METADATA: SubtestMeta[] = [
     isAFQT: false,
     veDoubled: false,
     description:
-      "Spatial reasoning — mentally assemble puzzle pieces or follow connection points. Tests your ability to visualize how parts fit together.",
+      "Spatial reasoning: mentally assemble puzzle pieces or follow connection points. Tests your ability to visualize how parts fit together.",
     topicSummary: "Spatial reasoning, puzzle assembly, connection points",
     sampleTopics: [
       "Puzzle assembly (matching shapes)",

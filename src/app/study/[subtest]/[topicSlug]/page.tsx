@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const { frontmatter } = guide;
   return {
-    title: `${frontmatter.title} — ASVAB ${frontmatter.subtest} Study Guide`,
+    title: `${frontmatter.title}, ASVAB ${frontmatter.subtest} Study Guide`,
     description: frontmatter.summary,
     alternates: {
       canonical: `https://asvabhero.com/study/${subtest}/${topicSlug}`,

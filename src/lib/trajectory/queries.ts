@@ -1,5 +1,5 @@
 /**
- * WS3 — Typed client wrappers around the trajectory RPCs
+ * WS3, Typed client wrappers around the trajectory RPCs
  * (0022_trajectory_target_jobs.sql). WS4 calls these from the home surface.
  *
  * All wrappers accept a Supabase client so they work from browser components
@@ -46,7 +46,7 @@ export async function getHomeTrajectory(
 /**
  * Resolve the Navy/CG target rating composite to drive `rating_adaptive` prep
  * (S7). Picks the user's PRIMARY target job, then its mandatory requirement
- * (requirement_group 0) composite — the canonical line score for that rating.
+ * (requirement_group 0) composite, the canonical line score for that rating.
  * Returns null when there is no target rating or no parseable composite, so the
  * caller falls back to the honest AFQT path. Pure given a HomeTrajectory.
  */
