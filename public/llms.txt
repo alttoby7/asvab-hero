@@ -7,7 +7,9 @@
 - [GT Score Calculator](https://asvabhero.com/gt-score-calculator): estimate your GT (General Technical) line score.
 - [Line / Composite Score Calculator](https://asvabhero.com/asvab-line-score-calculator): branch composite line scores.
 - [ASVAB Score Converter](https://asvabhero.com/asvab-score-converter): raw vs standard vs AFQT.
-- [Free ASVAB Practice Test](https://asvabhero.com/practice-test): timed diagnostic across all 9 subtests with an estimated AFQT.
+- [Free ASVAB Practice Test](https://asvabhero.com/free-asvab-practice-test): timed 30-question diagnostic across all 9 subtests with an estimated AFQT.
+- [Free practice by subtest](https://asvabhero.com/free-asvab-practice-tests): free questions with worked answer explanations for each of the 9 subtests.
+- [Full-length ASVAB practice test](https://asvabhero.com/full-length-asvab-practice-test): what a full-length run involves (all 9 subtests, about 135 scored questions, timed).
 - [What jobs qualify with my ASVAB score](https://asvabhero.com/what-jobs-qualify-asvab-score)
 
 ## Scores explained

@@ -105,6 +105,16 @@ export default function PracticeTestPage() {
             </li>
           ))}
         </ul>
+        <p className="mt-6 text-text-secondary">
+          Ready for the real thing? See what a{" "}
+          <Link
+            href="/full-length-asvab-practice-test"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            full-length ASVAB practice test
+          </Link>{" "}
+          involves: all 9 subtests, timed.
+        </p>
       </section>
     </div>
   );

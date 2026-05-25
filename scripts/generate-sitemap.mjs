@@ -85,6 +85,7 @@ const pages = [
   { path: "/free-asvab-practice-test/auto-and-shop-information", priority: "0.9", changefreq: "monthly" },
   { path: "/free-asvab-practice-test/mechanical-comprehension", priority: "0.9", changefreq: "monthly" },
   { path: "/free-asvab-practice-test/assembling-objects", priority: "0.9", changefreq: "monthly" },
+  { path: "/full-length-asvab-practice-test", priority: "0.9", changefreq: "monthly" },
   { path: "/afct", priority: "0.8", changefreq: "monthly" },
   { path: "/afct-practice-test", priority: "0.9", changefreq: "monthly" },
   { path: "/bsep", priority: "0.8", changefreq: "monthly" },
