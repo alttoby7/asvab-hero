@@ -234,7 +234,7 @@ export default function FullLengthAsvabPracticeTestPage() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`/images/generated/asvab-subtest-${m.subtest.toLowerCase()}.png`}
+                  src={`/images/generated/asvab-subtest-${m.subtest.toLowerCase()}-t.png`}
                   alt={`${m.fullName} (${m.subtest}) ASVAB practice`}
                   width={96}
                   height={96}
