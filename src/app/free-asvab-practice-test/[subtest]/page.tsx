@@ -58,7 +58,7 @@ function buildFaq(data: SubtestPractice) {
     },
     {
       q: `Are these the same as the real ASVAB questions?`,
-      a: `No. These are original practice questions calibrated to match the style and difficulty of the real ASVAB. The actual test is a secure exam, so no one publishes its live items. Practicing this format is the closest legitimate prep.`,
+      a: `No. These are original practice questions in the same multiple-choice format and topic coverage as the real ASVAB. The actual test is a secure exam, so no one publishes its live items. Practicing this format is solid prep, but the real ASVAB score comes only from a test-center sitting.`,
     },
   ];
 }

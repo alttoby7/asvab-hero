@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import EmailCapture from "@/components/EmailCapture";
+import VerifiedBlock from "@/components/VerifiedBlock";
 import { subtestPracticeIndex } from "@/lib/free-practice";
 
 export const metadata: Metadata = {
@@ -57,7 +58,7 @@ export default function FreeAsvabPracticeTestsPage() {
               name: "How accurate are free AFQT estimates from practice tests?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Reasonably close if the test covers all four AFQT subtests (AR, WK, PC, MK) with real question difficulty. Generic quiz-style tests with easy questions will overestimate your real AFQT. The ASVAB Hero diagnostic uses calibrated difficulty across all 9 subtests and produces an AFQT estimate within 5-8 points of a test-center score for most users.",
+                text: "Reasonably close if the test covers all four AFQT subtests (AR, WK, PC, MK) with real question difficulty. Generic quiz-style tests with easy questions will overestimate your real AFQT. The ASVAB Hero diagnostic covers all 9 subtests in the same multiple-choice format as the CAT-ASVAB, but treat the result as a practice estimate, not an official score. Only a test-center sitting produces an official AFQT.",
               },
             },
             {
@@ -109,18 +110,38 @@ export default function FreeAsvabPracticeTestsPage() {
           before booking your next attempt.
         </p>
 
-        {/* TL;DR */}
+        <VerifiedBlock
+          title="Before you pick one, start here"
+          verifiedDate="May 2026"
+          sources={[
+            { label: "Official ASVAB sample questions", url: "https://www.officialasvab.com/applicants/sample-questions/" },
+            { label: "Official ASVAB prep disclaimer", url: "https://www.officialasvab.com/applicants/asvab-test-preparation-disclaimer/" },
+            { label: "March2Success (free, official)", url: "https://www.march2success.com" },
+          ]}
+        >
+          <p>
+            The official ASVAB program directs test-takers to its own free
+            sample questions and to March2Success first. The reviews below are
+            independent and include ASVAB Hero (we publish this page); use
+            multiple sources, and treat any practice score as an estimate.
+          </p>
+        </VerifiedBlock>
+
+        {/* TL;DR — independent options first, our diagnostic listed last with disclosure */}
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">TL;DR: Top 3 Free Options</p>
+          <p className="text-sm font-semibold text-text-primary">Where to start (free, no purchase)</p>
           <ul className="mt-2 space-y-1 text-sm text-text-secondary list-none">
             <li>
-              <strong className="text-text-primary">1. ASVAB Hero Free Diagnostic:</strong> 30 questions across all 9 subtests, full explanations, AFQT estimate, no signup required.
+              <strong className="text-text-primary">Official ASVAB sample questions:</strong> a small but authoritative set published by the ASVAB program itself; the cleanest place to begin.
             </li>
             <li>
-              <strong className="text-text-primary">2. UnionTestPrep:</strong> large question bank, no signup, decent explanations. Ad-heavy but usable.
+              <strong className="text-text-primary">March2Success:</strong> the U.S. Army&apos;s free official prep portal; broad coverage. Signup required, dated UX.
             </li>
             <li>
-              <strong className="text-text-primary">3. March2Success:</strong> Army&apos;s official free portal, comprehensive content. Signup required, dated UX.
+              <strong className="text-text-primary">UnionTestPrep:</strong> large independent question bank, no signup, decent explanations. Ad-heavy but usable.
+            </li>
+            <li>
+              <strong className="text-text-primary">ASVAB Hero diagnostic (we publish this page):</strong> 30 questions across all 9 subtests, full explanations, AFQT estimate, no signup. Listed last for transparency; use alongside the resources above, not in place of them.
             </li>
           </ul>
         </aside>
@@ -706,9 +727,10 @@ export default function FreeAsvabPracticeTestsPage() {
               Reasonably close if the test covers all four AFQT subtests (AR,
               WK, PC, MK) with real question difficulty. Generic quiz-style
               tests with easy questions will overestimate your real AFQT. The
-              ASVAB Hero diagnostic uses calibrated difficulty across all 9
-              subtests and produces an AFQT estimate within 5&ndash;8 points of
-              a test-center score for most users.
+              ASVAB Hero diagnostic covers all 9 subtests in the same multiple-
+              choice format as the CAT-ASVAB, but treat the result as a practice
+              estimate, not an official score. Only a test-center sitting
+              produces an official AFQT.
             </p>
           </div>
 

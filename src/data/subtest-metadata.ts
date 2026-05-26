@@ -17,7 +17,7 @@ export const SUBTEST_METADATA: SubtestMeta[] = [
     subtest: "GS",
     fullName: "General Science",
     questionCount: 15,
-    timeMinutes: 10,
+    timeMinutes: 12,
     isAFQT: false,
     veDoubled: false,
     description:
@@ -37,7 +37,7 @@ export const SUBTEST_METADATA: SubtestMeta[] = [
     subtest: "AR",
     fullName: "Arithmetic Reasoning",
     questionCount: 15,
-    timeMinutes: 39,
+    timeMinutes: 55,
     isAFQT: true,
     veDoubled: false,
     description:
@@ -81,7 +81,7 @@ export const SUBTEST_METADATA: SubtestMeta[] = [
     subtest: "PC",
     fullName: "Paragraph Comprehension",
     questionCount: 10,
-    timeMinutes: 22,
+    timeMinutes: 27,
     isAFQT: true,
     veDoubled: true,
     description:
@@ -101,7 +101,7 @@ export const SUBTEST_METADATA: SubtestMeta[] = [
     subtest: "MK",
     fullName: "Mathematics Knowledge",
     questionCount: 15,
-    timeMinutes: 23,
+    timeMinutes: 31,
     isAFQT: true,
     veDoubled: false,
     description:
@@ -145,8 +145,8 @@ export const SUBTEST_METADATA: SubtestMeta[] = [
   {
     subtest: "AS",
     fullName: "Auto & Shop Information",
-    questionCount: 10,
-    timeMinutes: 7,
+    questionCount: 20,
+    timeMinutes: 13,
     isAFQT: false,
     veDoubled: false,
     description:
@@ -168,7 +168,7 @@ export const SUBTEST_METADATA: SubtestMeta[] = [
     subtest: "MC",
     fullName: "Mechanical Comprehension",
     questionCount: 15,
-    timeMinutes: 20,
+    timeMinutes: 22,
     isAFQT: false,
     veDoubled: false,
     description:
@@ -190,7 +190,7 @@ export const SUBTEST_METADATA: SubtestMeta[] = [
     subtest: "AO",
     fullName: "Assembling Objects",
     questionCount: 15,
-    timeMinutes: 15,
+    timeMinutes: 18,
     isAFQT: false,
     veDoubled: false,
     description:

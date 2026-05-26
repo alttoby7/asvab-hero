@@ -4,6 +4,7 @@ import Link from "next/link";
 import Calculator from "@/components/Calculator";
 import JobCatalog from "@/components/JobCatalog";
 import JsonLd from "@/components/JsonLd";
+import VerifiedBlock from "@/components/VerifiedBlock";
 import type { MilitaryJob } from "@/types";
 
 import armyJobs from "@/data/army-jobs.json";
@@ -85,6 +86,25 @@ export default function CalculatorPage() {
           .
         </p>
       </div>
+      <VerifiedBlock
+        title="How this calculator works"
+        verifiedDate="May 2026"
+        sources={[
+          { label: "Official ASVAB scores guide", url: "https://www.officialasvab.com/applicants/scores/" },
+          { label: "Official CAT-ASVAB", url: "https://www.officialasvab.com/applicants/cat-asvab/" },
+          { label: "Official ASVAB fact sheet", url: "https://www.officialasvab.com/applicants/fact-sheet/" },
+        ]}
+      >
+        <p>
+          AFQT is computed using the official PAY97 norming table (DMDC 2004,
+          Table 2.5): VE = WK + PC, raw = 2 x VE + AR + MK, then converted to a
+          1 to 99 percentile. Branch composite formulas (GT, CL, MM, EL, etc.)
+          come from each service&apos;s published recruiter information. Treat
+          all outputs as practice estimates. Final job qualification depends on
+          your official test-center scores and current branch policy, so confirm
+          with a recruiter.
+        </p>
+      </VerifiedBlock>
       <Suspense>
         <Calculator allJobs={allJobs} />
       </Suspense>

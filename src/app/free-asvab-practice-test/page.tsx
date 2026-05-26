@@ -3,6 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import FreeDiagnosticClient from "@/components/practice-test/FreeDiagnosticClient";
 import EmailCapture from "@/components/EmailCapture";
+import VerifiedBlock from "@/components/VerifiedBlock";
 import { subtestPracticeIndex } from "@/lib/free-practice";
 
 export const metadata: Metadata = {
@@ -33,7 +34,7 @@ const faqItems = [
   },
   {
     q: "How accurate is this practice test compared to the real ASVAB?",
-    a: "Questions are calibrated to match the difficulty distribution of the CAT-ASVAB. For most users, the AFQT estimate is within 5–10 points of a test-center score. The closer you are to your goal score, the more useful it is to supplement with subtest drills.",
+    a: "Questions follow the same multiple-choice format and topic coverage as the CAT-ASVAB. Treat the AFQT result as a practice estimate, not an official score, because only a test-center sitting produces an official AFQT. The closer you are to your goal score, the more useful it is to supplement with repeated subtest drills.",
   },
   {
     q: "Can I take the diagnostic more than once?",
@@ -110,6 +111,23 @@ export default function FreeAsvabPracticeTestPage() {
           for retesting-specific framing.
         </p>
       </div>
+
+      <VerifiedBlock
+        title="How this diagnostic works"
+        verifiedDate="May 2026"
+        sources={[
+          { label: "Official ASVAB sample questions", url: "https://www.officialasvab.com/applicants/sample-questions/" },
+          { label: "Official ASVAB prep disclaimer", url: "https://www.officialasvab.com/applicants/asvab-test-preparation-disclaimer/" },
+          { label: "Official CAT-ASVAB", url: "https://www.officialasvab.com/applicants/cat-asvab/" },
+        ]}
+      >
+        <p>
+          30 original practice questions across all 9 subtests, in the same
+          multiple-choice format as the CAT-ASVAB. Your AFQT result is a
+          practice estimate, not an official score. Only a test-center sitting
+          produces an official AFQT.
+        </p>
+      </VerifiedBlock>
 
       {/* Embedded test */}
       <div id="test">
@@ -230,11 +248,11 @@ export default function FreeAsvabPracticeTestPage() {
             How close is this to the real ASVAB?
           </h2>
           <p className="mt-4 text-text-secondary">
-            Questions are calibrated to match the difficulty distribution of the
-            CAT-ASVAB. For most users, the AFQT estimate lands within 5–10 points
-            of a test-center score. The closer you are to a qualifying cutoff, the
-            more you should supplement with repeated drills rather than relying on
-            a single practice run.
+            Questions follow the same multiple-choice format and topic coverage
+            as the CAT-ASVAB. Treat the AFQT result as a practice estimate. Only
+            a test-center sitting produces an official AFQT. The closer you are
+            to a qualifying cutoff, the more you should supplement with repeated
+            drills rather than relying on a single practice run.
           </p>
           <p className="mt-3 text-text-secondary">
             One thing to keep in mind: the real CAT-ASVAB adapts question

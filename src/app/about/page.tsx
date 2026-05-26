@@ -58,6 +58,50 @@ export default function AboutPage() {
           </li>
         </ul>
         <h2 className="font-display text-xl font-bold text-text-primary pt-4">
+          Editorial standards
+        </h2>
+        <p>
+          Content is written and reviewed by the ASVAB Hero Editorial Team. We
+          attribute authorship at the organization level, not to a single named
+          author, and we do not invent personas or credentials.
+        </p>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>
+            <strong className="text-text-primary">Primary sources:</strong>{" "}
+            <a href="https://www.officialasvab.com/applicants/cat-asvab/" className="text-accent underline hover:text-accent-hover">official CAT-ASVAB administration page</a>{" "}
+            for test structure; the{" "}
+            <a href="https://www.officialasvab.com/applicants/scores/" className="text-accent underline hover:text-accent-hover">official ASVAB scores guide</a>{" "}
+            for scoring; and each branch&apos;s current recruiting site for
+            entry requirements (airforce.com, goarmy.com, marines.com,
+            navy.com, gocoastguard.com, spaceforce.com).
+          </li>
+          <li>
+            <strong className="text-text-primary">AFQT methodology:</strong> we
+            compute AFQT using the official PAY97 norming table (DMDC 2004,
+            Table 2.5), the same table used by the Department of Defense.
+          </li>
+          <li>
+            <strong className="text-text-primary">Re-verification:</strong>{" "}
+            score-and-requirement pages carry a visible {`"Last verified"`} date.
+            We re-check score minimums against the source branch&apos;s public
+            page at least quarterly, and update when policies change.
+          </li>
+          <li>
+            <strong className="text-text-primary">Practice estimates:</strong>{" "}
+            any AFQT or line-score result from a practice test on this site is
+            an estimate. Only a test-center sitting produces an official ASVAB
+            score.
+          </li>
+          <li>
+            <strong className="text-text-primary">Corrections:</strong> if you
+            spot a factual error, email{" "}
+            <a href="mailto:editors@asvabhero.com" className="text-accent underline hover:text-accent-hover">
+              editors@asvabhero.com
+            </a>{" "}
+            and we will verify and correct.
+          </li>
+        </ul>
+        <h2 className="font-display text-xl font-bold text-text-primary pt-4">
           Disclaimer
         </h2>
         <p className="text-sm text-text-tertiary">

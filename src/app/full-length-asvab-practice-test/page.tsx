@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import EmailCapture from "@/components/EmailCapture";
+import VerifiedBlock from "@/components/VerifiedBlock";
 import { ORG_AUTHOR } from "@/lib/author";
 import { SUBTEST_METADATA } from "@/data/subtest-metadata";
 import { subtestPracticeIndex } from "@/lib/free-practice";
@@ -10,9 +11,9 @@ const BASE = "https://asvabhero.com";
 const URL = `${BASE}/full-length-asvab-practice-test`;
 
 export const metadata: Metadata = {
-  title: "Full-Length ASVAB Practice Test (2026): All 9 Subtests, Timed",
+  title: "Full-Length ASVAB Practice Test: Format, Timing, and How to Prepare",
   description:
-    "What a full-length ASVAB practice test really involves: all 9 subtests, about 135 scored questions on the CAT version, and real timing. Start free, then run a full timed simulation.",
+    "What a full-length ASVAB looks like: all 9 subtests, 135 scored questions on the CAT version (225 on paper), and per-section time limits. Start free with a 30-question diagnostic; full timed simulation is part of ASVAB Hero Pro.",
   alternates: { canonical: URL },
 };
 
@@ -94,28 +95,34 @@ export default function FullLengthAsvabPracticeTestPage() {
       </nav>
 
       <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-        Full-Length ASVAB Practice Test
+        Full-Length ASVAB Practice Test: Format and How to Prepare
       </h1>
       <p className="mt-3 text-lg text-text-secondary">
-        All 9 subtests, real timing, and a true AFQT plus line-score readout. The
-        way to rehearse test day, not just check what you know.
+        What the real ASVAB looks like end-to-end: all 9 subtests, 135 scored
+        questions on the CAT, and per-section time limits. Free 30-question
+        diagnostic on this site; the full timed simulation is part of ASVAB
+        Hero Pro.
       </p>
       <p className="mt-2 text-sm text-text-tertiary">Last updated May 2026</p>
 
-      {/* Answer-first */}
-      <section className="mt-8 rounded-xl border border-navy-border bg-navy-light p-5 sm:p-6">
-        <p className="text-text-secondary">
-          <strong className="text-text-primary">
-            The full ASVAB has 9 subtests and about 135 scored questions
-          </strong>{" "}
-          on the computer-adaptive CAT-ASVAB (225 on the paper version), and it
-          takes most people 2.5 to 3 hours. A real full-length practice test
-          should match that scope. A 10 or 20 question quiz tells you almost
-          nothing about how you will hold up across the whole battery under time
-          pressure. Start free with the diagnostic below, then run a full timed
-          simulation when you are close to test day.
+      {/* Answer-first + sources */}
+      <VerifiedBlock
+        title="The short answer"
+        verifiedDate="May 2026"
+        sources={[
+          { label: "Official CAT-ASVAB administration", url: "https://www.officialasvab.com/applicants/cat-asvab/" },
+          { label: "Official ASVAB fact sheet", url: "https://www.officialasvab.com/applicants/fact-sheet/" },
+        ]}
+      >
+        <p>
+          The full ASVAB has 9 subtests and 135 scored questions on the
+          computer-adaptive CAT-ASVAB (about 145 with tryout items, 225 on the
+          paper version), and the maximum scored time is roughly 3 hours. A real
+          full-length practice test should match that scope. Start free with the
+          30-question diagnostic below, then run a full timed simulation closer
+          to test day.
         </p>
-      </section>
+      </VerifiedBlock>
 
       {/* Structure table */}
       <section className="mt-12">
