@@ -127,7 +127,7 @@ export default function FreeAsvabPracticeTestsPage() {
           </p>
         </VerifiedBlock>
 
-        {/* TL;DR — independent options first, our diagnostic listed last with disclosure */}
+        {/* TL;DR: independent options first, our diagnostic listed last with disclosure */}
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Where to start (free, no purchase)</p>
           <ul className="mt-2 space-y-1 text-sm text-text-secondary list-none">
