@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
+import AffiliateBookBlock from "@/components/AffiliateBookBlock";
 import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 import AFQTFormulaExplorer from "@/components/scores-explained/AFQTFormulaExplorer";
@@ -570,9 +571,13 @@ export default function ASVABScoresExplainedPage() {
         </div>
 
         <section className="mt-8 not-prose">
+          <AffiliateBookBlock source="scores-explained-end" />
+        </section>
+
+        <section className="mt-8 not-prose">
           <EmailCapture
-            headline="Get the 30-day plan that turns this score sheet into a job offer"
-            subhead="Free PDF plus a 5-email crash course on AFQT, VE leverage, and line scores. Sent in the next few minutes."
+            headline="Get the plan that turns this score sheet into a job offer"
+            subhead="The four subtests that move your AFQT fastest, plus a short email crash course on VE leverage and line scores. Free."
             cta="Email me the plan"
             tag="scores-explained-end"
             variant="inline"

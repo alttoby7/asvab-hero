@@ -431,8 +431,8 @@ export default function HomePage() {
       <section className="border-y border-navy-border bg-navy-light/40">
         <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6">
           <EmailCapture
-            headline="Get the 30-day ASVAB study plan, free"
-            subhead="6-page PDF plus a 5-email crash course on AFQT and line scores. No spam."
+            headline="Get your personalized ASVAB study plan, free"
+            subhead="The four subtests that move your AFQT fastest, a week-by-week plan, and short lessons by email. No spam."
             cta="Email me the plan"
             tag="homepage-mid"
             variant="inline"

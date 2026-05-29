@@ -11,20 +11,51 @@ function OnboardingPageInner() {
   const searchParams = useSearchParams();
   const { session, loading: sessionLoading } = useSession();
   const isWelcome = searchParams?.get("welcome") === "1";
+  const plan = searchParams?.get("plan") ?? "monthly";
+  const value = Number.parseFloat(searchParams?.get("value") ?? "9.99");
 
   useEffect(() => {
     if (!sessionLoading && !session) router.replace("/login?next=/onboarding");
   }, [session, sessionLoading, router]);
 
   // Close the funnel: Stripe success_url is /onboarding?welcome=1.
+  // Fire GA4 purchase + subscription_started here (the only client-visible point
+  // in the checkout round-trip). Guarded so a refresh / re-render can't double-count.
   useEffect(() => {
     if (!isWelcome) return;
     try {
       trackEvent(PaywallEvents.CheckoutReturnedCompleted, {});
+
+      const FIRED_KEY = "asvabhero.purchase_tracked.v1";
+      let already = false;
+      try {
+        already = sessionStorage.getItem(FIRED_KEY) === "1";
+      } catch {
+        /* ignore */
+      }
+      if (!already) {
+        const safeValue = Number.isFinite(value) ? value : 9.99;
+        trackEvent("purchase", {
+          transaction_id: `sub_${Date.now()}`,
+          value: safeValue,
+          currency: "USD",
+          plan,
+        });
+        trackEvent("subscription_started", {
+          plan,
+          value: safeValue,
+          currency: "USD",
+        });
+        try {
+          sessionStorage.setItem(FIRED_KEY, "1");
+        } catch {
+          /* ignore */
+        }
+      }
     } catch {
       /* swallow */
     }
-  }, [isWelcome]);
+  }, [isWelcome, plan, value]);
 
   if (sessionLoading) {
     return (

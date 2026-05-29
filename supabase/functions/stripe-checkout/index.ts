@@ -96,7 +96,9 @@ Deno.serve(async (req) => {
       customer: customerId,
       "line_items[0][price]": priceId,
       "line_items[0][quantity]": 1,
-      success_url: `${SITE_URL}/onboarding?welcome=1`,
+      // Carry plan + list value so the client can fire an accurate GA4 purchase
+      // event on the success return (no Measurement Protocol secret needed).
+      success_url: `${SITE_URL}/onboarding?welcome=1&plan=${tier}&value=${tier === "annual" ? "49.99" : "9.99"}`,
       cancel_url: cancelUrl,
       allow_promotion_codes: "true",
       "subscription_data[metadata][user_id]": userId,

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import AffiliateBookBlock from "@/components/AffiliateBookBlock";
 
 export const metadata: Metadata = {
   title: "USMC MOS List 2026: Marine Corps Jobs with ASVAB Scores",
@@ -1348,6 +1349,10 @@ export default function USMCMOSListPage() {
           >
             Try the Free Calculator
           </Link>
+        </div>
+
+        <div className="mt-8 not-prose">
+          <AffiliateBookBlock source="usmc-mos-list-end" />
         </div>
       </article>
     </div>

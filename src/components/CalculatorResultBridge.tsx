@@ -149,9 +149,13 @@ export default function CalculatorResultBridge({
         {headline}
       </h3>
       <p className="mt-2 text-sm leading-relaxed text-text-secondary">
-        Create a free account to <span className="text-text-primary">save this score</span>,{" "}
-        track your climb, and start your plan, one adaptive AFQT block a day,
-        unlimited Mistake-Bank review, and a weekly plan focused on the four
+        Create a free account to{" "}
+        <span className="text-text-primary">
+          see the full list of {qualifyingCount.toLocaleString()} jobs you qualify
+          for
+        </span>
+        , save this score, and track your climb, plus one adaptive AFQT block a
+        day, unlimited Mistake-Bank review, and a weekly plan focused on the four
         subtests that actually move your AFQT. Built on the methods cognitive
         science shows raise scores. No card.
       </p>

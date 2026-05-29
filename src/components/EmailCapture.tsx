@@ -19,9 +19,9 @@ const ENDPOINT =
 type Status = "idle" | "submitting" | "success" | "error";
 
 export default function EmailCapture({
-  headline = "Email me my 30-day ASVAB study plan",
-  subhead = "Get a personalized 6-page PDF plus a 5-email crash course on AFQT & line scores.",
-  cta = "Send it to me",
+  headline = "Email me my personalized ASVAB study plan",
+  subhead = "Get the four subtests that move your AFQT fastest, a week-by-week plan, and short lessons by email. Free.",
+  cta = "Send my plan",
   tag = "asvab-study-plan",
   variant = "card",
   withScoreSignal = false,
@@ -90,6 +90,9 @@ export default function EmailCapture({
       if (!res.ok) throw new Error("Signup failed");
       setStatus("success");
       trackEvent("signup_submit", { source: tag, success: true });
+      // Conversion event (GA4 Key Event). The lead is the money step for the
+      // calculator/article funnel, fire a clean, dedicated event for it.
+      trackEvent("generate_lead", { source: tag, method: "email_capture" });
       // Persist capture source so a later /signup signup_complete event can
       // attribute back to the originating mount (e.g. `calculator-result`).
       // 14-day TTL; cleared on signup_complete read. Cross-tab leak is

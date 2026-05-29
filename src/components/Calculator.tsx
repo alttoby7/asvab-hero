@@ -21,6 +21,7 @@ import ScoreGapEngine from "./ScoreGapEngine";
 import ShareActions from "./ShareActions";
 import ResultCard from "./ResultCard";
 import CalculatorResultBridge from "./CalculatorResultBridge";
+import AffiliateBookBlock from "./AffiliateBookBlock";
 
 interface CalculatorProps {
   allJobs: MilitaryJob[];
@@ -341,6 +342,10 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
               afqt={afqt}
             />
           </section>
+
+          {/* Monetize the peak-intent moment: study books for recruits who want
+             to keep prepping off-site. Clicks auto-track as affiliate_click. */}
+          <AffiliateBookBlock source="calculator-result" />
         </>
       )}
     </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import AffiliateBookBlock from "@/components/AffiliateBookBlock";
 
 export const metadata: Metadata = {
   title: "Navy Ratings List (2026): Jobs and Required ASVAB Scores",
@@ -1634,6 +1635,10 @@ export default function NavyRatingsListPage() {
           >
             Try the Free Calculator
           </Link>
+        </div>
+
+        <div className="mt-8 not-prose">
+          <AffiliateBookBlock source="navy-ratings-list-end" />
         </div>
       </article>
     </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import AffiliateBookBlock from "@/components/AffiliateBookBlock";
 import RankEquivalencyExplorer from "@/components/ranks/RankEquivalencyExplorer";
 import StartingRankEstimator from "@/components/ranks/StartingRankEstimator";
 import PromotionPathPlanner from "@/components/ranks/PromotionPathPlanner";
@@ -727,6 +728,10 @@ export default function ArmyRanksPage() {
           >
             Try the Free Calculator
           </Link>
+        </div>
+
+        <div className="mt-8 not-prose">
+          <AffiliateBookBlock source="army-ranks-end" />
         </div>
       </article>
     </div>
