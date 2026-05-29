@@ -12,27 +12,32 @@ import Link from "next/link";
 const TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "asvabhero-20";
 
 interface Book {
+  /** Stable id matching /best-asvab-study-book so per-book analytics aggregate across placements. */
+  id: string;
   asin: string;
   title: string;
   label: string;
   blurb: string;
 }
 
-/** Curated top-3 from /best-asvab-study-book (kept in sync with that page's ASINs). */
+/** Curated top-3 from /best-asvab-study-book (kept in sync with that page's ASINs + ids). */
 const DEFAULT_BOOKS: Book[] = [
   {
+    id: "total-prep",
     asin: "150629720X",
     title: "ASVAB Total Prep 2025-2026 (Kaplan)",
     label: "Best overall",
     blurb: "7 full-length practice tests, all 9 subtests in depth.",
   },
   {
+    id: "for-dummies",
     asin: "1394323468",
     title: "ASVAB For Dummies 2025/2026",
     label: "Best for beginners",
     blurb: "Plain-language explanations and 6 full practice tests.",
   },
   {
+    id: "test-prep-books",
     asin: "1637750358",
     title: "ASVAB Study Guide 2025-2026 (Test Prep Books)",
     label: "Best budget",
@@ -83,6 +88,7 @@ export default function AffiliateBookBlock({
               rel="sponsored nofollow noopener"
               data-affiliate="amazon"
               data-asin={book.asin}
+              data-book-id={book.id}
               data-source={source}
               className="mt-3 inline-flex items-center justify-center rounded-md bg-accent px-3 py-2 text-xs font-semibold text-white no-underline transition-colors hover:bg-accent-hover"
             >
