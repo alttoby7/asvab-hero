@@ -5,7 +5,7 @@ import Link from "next/link";
  * traffic that currently leaves without converting to a signup. Books only (house
  * rule, no links to competing online subscriptions). Clicks auto-track as
  * `affiliate_click` via the global OutboundTracker, which reads the
- * `data-affiliate` / `data-asin` / `data-source` attributes below — no client JS
+ * `data-affiliate` / `data-asin` / `data-source` attributes below, no client JS
  * needed here, so this stays a static server component.
  */
 

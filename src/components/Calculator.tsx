@@ -20,7 +20,7 @@ import NonQualifyingResults from "./NonQualifyingResults";
 import ScoreGapEngine from "./ScoreGapEngine";
 import ShareActions from "./ShareActions";
 import ResultCard from "./ResultCard";
-import CalculatorResultBridge from "./CalculatorResultBridge";
+import CalculatorPlanCapture from "./CalculatorPlanCapture";
 import AffiliateBookBlock from "./AffiliateBookBlock";
 
 interface CalculatorProps {
@@ -178,20 +178,6 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
         />
       )}
 
-      {/* Conversion #1, the free-plan bridge at the peak-intent result moment.
-         Replaces the old PDF email capture + straight-to-$9.99 upsell with a
-         save-your-score → free-plan signup (the score-moving core is free).
-         Waits for all 9 subtests: its success state cites the job count, which
-         isn't real until composites/jobs are computed. */}
-      {compositesReady && snapshot && (
-        <CalculatorResultBridge
-          afqt={afqt}
-          branch={branchFilter}
-          qualifyingCount={snapshot.totalQualifying}
-          isPro={entitlement.isPro}
-        />
-      )}
-
       {/* Score Inputs */}
       <section>
         <div className="mb-4 flex items-center justify-between">
@@ -262,6 +248,18 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
             Your AFQT needs the four highlighted subtests: AR, WK, PC, and MK.
           </p>
         </section>
+      )}
+
+      {/* Conversion: two-step capture at the peak-intent moment. Gates a
+         personalized improvement plan (the AFQT levers + path to the next tier),
+         then nudges to a free account. Renders as soon as the AFQT is known. */}
+      {afqtReady && (
+        <CalculatorPlanCapture
+          afqt={afqt}
+          branch={branchFilter}
+          scores={filledScores}
+          isPro={entitlement.isPro}
+        />
       )}
 
       {/* Composite Scores, full 9-subtest results only. */}
