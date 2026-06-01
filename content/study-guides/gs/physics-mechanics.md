@@ -67,4 +67,4 @@ Heat moves in three ways:
 
 ## Study approach
 
-Memorize the five formulas in the reference block above. Practice plugging in numbers, the arithmetic on GS physics is usually simple once you have the right equation. Focus on understanding what each law describes qualitatively so you can answer concept questions without calculation.
+Memorize the formulas in the reference block above. Practice plugging in numbers, the arithmetic on GS physics is usually simple once you have the right equation. Focus on understanding what each law describes qualitatively so you can answer concept questions without calculation.

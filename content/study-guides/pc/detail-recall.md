@@ -55,14 +55,14 @@ This keeps you from re-reading the whole passage for every question.
 
 ## Sample passage
 
-> The Army Combat Fitness Test (ACFT) replaced the Army Physical Fitness Test in October 2020. It consists of six events: the deadlift, standing power throw, hand-release push-up, sprint-drag-carry, leg tuck (later replaced by the plank), and two-mile run. Unlike the old test, the ACFT uses the same standards regardless of age or gender.
+> The Army Combat Fitness Test (ACFT) replaced the Army Physical Fitness Test in October 2020. It consists of six events: the deadlift, standing power throw, hand-release push-up, sprint-drag-carry, leg tuck (later replaced by the plank), and two-mile run. Unlike the old test, the ACFT is scored on standards that vary by age and gender.
 
 **Detail questions this passage could ask:**
 
 - How many events does the ACFT have? (Six)
 - What did the ACFT replace? (The Army Physical Fitness Test)
 - When did the ACFT replace the old test? (October 2020)
-- How do ACFT standards differ by age and gender? (They don't, same standards for all)
+- How are ACFT scoring standards set? (They vary by age and gender)
 
 Each answer lives in one specific sentence. If you can't point to the sentence, you don't have the right answer.
 

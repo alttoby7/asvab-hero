@@ -14,7 +14,7 @@ pitfalls:
   - "Using diameter when the formula calls for radius (r = diameter ÷ 2)"
   - "Confusing perimeter (distance around) with area (space inside)"
   - "Using slant height instead of vertical height for triangle and trapezoid area"
-  - "Forgetting to square the radius in circle area, πr² not π×2r"
+  - "Forgetting to square the radius in circle area: Area = πr², not π × r × 2"
   - "Mixing units within the same problem (feet vs. inches) before calculating"
 worked_examples:
   - prompt: "A rectangle is 12 feet long and 5 feet wide. What is its area and perimeter?"

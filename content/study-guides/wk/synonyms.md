@@ -15,7 +15,7 @@ worked_examples:
   - prompt: "COVERT most nearly means: (A) hidden (B) surface (C) noisy (D) expensive"
     solution: "Covert means secret or hidden. 'Surface' is the opposite. Answer: A"
   - prompt: "ARDUOUS most nearly means: (A) creative (B) difficult (C) boring (D) colorful"
-    solution: "Arduous means requiring great effort, difficult. If you know 'ardor' (intense effort), you can reason your way there. Answer: B"
+    solution: "Arduous means requiring great effort, difficult. Eliminate creative, boring, and colorful as unrelated. Answer: B"
   - prompt: "BREVITY most nearly means: (A) courage (B) sadness (C) shortness (D) cleverness"
     solution: "Brevity means brief duration or expression, shortness. 'Brave' sounds related, but that's 'bravery'. Answer: C"
 ---
@@ -24,7 +24,7 @@ worked_examples:
 
 Word Knowledge questions give you one word, sometimes in a sentence, sometimes standing alone, and ask you to pick the answer that "most nearly means" the same thing. That qualifier matters: you're not looking for an exact synonym, just the closest one among the four choices.
 
-The section is 16 questions on the CAT-ASVAB (computerized version). It moves fast.
+The section is 15 questions on the CAT-ASVAB (computerized version). It moves fast.
 
 ## Why vocabulary is learnable
 

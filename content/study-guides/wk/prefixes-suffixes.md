@@ -25,7 +25,7 @@ worked_examples:
 
 ## What the ASVAB is actually testing
 
-Word Knowledge is 16 questions on the CAT-ASVAB. You'll see words you've studied, and words you haven't. Prefixes and suffixes are how you get partial credit on unfamiliar words. The test isn't checking whether you memorized every vocab list. It's checking whether you can reason about language under time pressure.
+Word Knowledge is 15 questions on the CAT-ASVAB. You'll see words you've studied, and words you haven't. Prefixes and suffixes are how you get partial credit on unfamiliar words. The test isn't checking whether you memorized every vocab list. It's checking whether you can reason about language under time pressure.
 
 A word like *insubordinate* might never have appeared in your prep materials. But if you know *in-* means "not" and *sub-* means "under," you've cut the guessing down dramatically.
 

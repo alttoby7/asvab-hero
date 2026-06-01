@@ -20,7 +20,7 @@ worked_examples:
   - prompt: "Unlike her VERBOSE partner, Maria kept her briefings short and to the point. VERBOSE most nearly means: (A) quiet (B) experienced (C) wordy (D) efficient"
     solution: "'Unlike' signals contrast. Maria is brief, so her partner is the opposite, wordy. Answer: C"
   - prompt: "The sergeant's demeanor was AMIABLE, he greeted every recruit with a handshake and a smile. AMIABLE most nearly means: (A) strict (B) nervous (C) distracted (D) friendly"
-    solution: "The dash introduces examples: handshake, smile, both friendly behaviors. Amiable means friendly. Answer: D"
+    solution: "The comma introduces illustrating behaviors, a handshake and a smile, both friendly. Amiable means friendly. Answer: D"
 ---
 
 ## What context clues actually are

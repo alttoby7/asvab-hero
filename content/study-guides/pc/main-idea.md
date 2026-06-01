@@ -37,7 +37,7 @@ worked_examples:
 
 ## What the ASVAB Paragraph Comprehension section tests
 
-Paragraph Comprehension (PC) has 11 questions on the CAT-ASVAB. You read short passages, usually 4–8 sentences, and answer questions about them. Main idea questions are the most common type.
+Paragraph Comprehension (PC) has 10 questions on the CAT-ASVAB. You read short passages, usually 4–8 sentences, and answer questions about them. Main idea questions are the most common type.
 
 The challenge isn't reading speed. It's precision: knowing the difference between the main idea and a supporting detail.
 

@@ -13,7 +13,7 @@ formula_reference:
 pitfalls:
   - "Mixing up open-end and box-end wrenches, box-end grips all six sides and is safer on tight fasteners"
   - "Confusing a tap (cuts internal threads) with a die (cuts external threads)"
-  - "Reading a micrometer without accounting for the thimble's vernier line"
+  - "Reading a micrometer without accounting for the thimble scale against the barrel datum line"
   - "Assuming a Phillips driver works in a Pozidriv head, the cross geometry is slightly different and causes cam-out"
   - "Using an adjustable wrench backward, the movable jaw should face the direction of pull"
 worked_examples:
@@ -52,7 +52,7 @@ A **tap** cuts internal threads (inside a hole). A **die** cuts external threads
 
 ## Common traps on the test
 
-Screwdriver types are a favorite test target. Phillips is cross-shaped and designed to cam out at a set torque (prevents over-driving in assembly lines). Torx has a 6-point star profile and won't cam out, preferred where precision torque matters. Flathead (slotted) is the oldest pattern and prone to slipping.
+Screwdriver types are a favorite test target. Phillips is cross-shaped and tends to cam out under high torque (which limits over-driving on assembly lines). Torx has a 6-point star profile and won't cam out, preferred where precision torque matters. Flathead (slotted) is the oldest pattern and prone to slipping.
 
 If a question says a fastener is "damaged" or "rounded off," the answer is almost always to reach for a different wrench, a box-end over an open-end, or vice versa, not a larger size.
 

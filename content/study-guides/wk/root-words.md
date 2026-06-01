@@ -12,8 +12,8 @@ formula_reference:
   - "Latin root 'bene' (good): benefit, benevolent, beneficial, benign"
 pitfalls:
   - "Treating roots as perfect definitions, roots give a direction, not a dictionary entry"
-  - "Confusing roots that look similar: 'scrib' (write) vs. 'scrub' (clean), check the full word"
-  - "Forgetting that a root often changes spelling when combined: 'duc' becomes 'duct', 'duct', 'duce'"
+  - "Confusing roots that look similar: 'ped' (foot, Latin: pedal) vs. 'ped' (child, Greek: pediatric), check the full word"
+  - "Forgetting that a root often changes spelling when combined: 'duc' becomes 'duct' or 'duce'"
   - "Relying on root alone without the prefix, 'benign' vs. 'malign' flip meaning entirely with prefix"
 worked_examples:
   - prompt: "CHRONIC most nearly means: (A) sudden (B) long-lasting (C) painful (D) contagious"
@@ -78,7 +78,7 @@ You may not get the exact dictionary definition, but you get close enough to eli
 
 **Time words**, chronic, chronological, synchronize, anachronism, chronicle (all from *chron*)
 
-**Life words**, biology, biography, biography, antibiotic, symbiosis (all from *bio*)
+**Life words**, biology, biography, biome, antibiotic, symbiosis (all from *bio*)
 
 **Sound words**, telephone, symphony, microphone, phonics, euphony (all from *phon*)
 
