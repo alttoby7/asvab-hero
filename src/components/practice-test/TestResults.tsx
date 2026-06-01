@@ -19,7 +19,8 @@ import {
 } from "@/lib/test-scorer";
 import { ALL_SUBTESTS } from "@/types";
 import { getAFQTCategoryDescription } from "@/lib/score-calculator";
-import { recommendNextStep } from "@/lib/practice/recommender";
+import { recommendNextStep, weakTopicStudyGuides } from "@/lib/practice/recommender";
+import { trackEvent } from "@/lib/analytics";
 import type { PrepMode } from "@/lib/prep-mode";
 import TopicBreakdown from "./TopicBreakdown";
 import NextStepCard from "./NextStepCard";
@@ -170,6 +171,17 @@ export default function TestResults({
     [topicResults, savedProfile, activeVariantCodes]
   );
 
+  // Free study-guide path for the weakest topics. The NextStepCard above often
+  // surfaces a Pro-gated drill, so this always-free section sits beside it.
+  const studyGuides = useMemo(
+    () =>
+      weakTopicStudyGuides(
+        { latestByTopic: topicResults, topicStats: savedProfile },
+        2
+      ),
+    [topicResults, savedProfile]
+  );
+
   return (
     <div className="space-y-8" style={{ animation: "fadeIn 0.5s ease-out" }}>
       {/* Hero scores */}
@@ -253,6 +265,36 @@ export default function TestResults({
 
           {/* Single deterministic next-step recommendation */}
           <NextStepCard recommendation={recommendation} />
+
+          {/* Free study guides for the weakest topics, always available. */}
+          {studyGuides.length > 0 && (
+            <section className="rounded-2xl border border-navy-border bg-navy-light p-6">
+              <h3 className="mb-1 font-display text-lg font-bold text-text-primary">
+                Study guides for your weakest topics
+              </h3>
+              <p className="mb-4 text-sm text-text-secondary">
+                Free concept walkthroughs for the topics you missed most.
+              </p>
+              <ul className="space-y-2">
+                {studyGuides.map((g) => (
+                  <li key={g.topicId}>
+                    <Link
+                      href={g.href}
+                      onClick={() =>
+                        trackEvent("results_study_guide_click", {
+                          topic_id: g.topicId,
+                          href: g.href,
+                        })
+                      }
+                      className="text-sm text-text-primary underline-offset-2 transition-colors hover:text-accent hover:underline"
+                    >
+                      {g.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
         </>
       )}
 

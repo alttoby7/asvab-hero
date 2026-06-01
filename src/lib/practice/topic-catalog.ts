@@ -44,3 +44,18 @@ export function topicsForSubtest(subtest: AsvabSubtest): Topic[] {
     (a, b) => a.sort_order - b.sort_order
   );
 }
+
+/**
+ * Public study-guide links for a subtest's topics, used to surface free guides
+ * from the calculator's disappointed-scorer path. Returns up to `limit` topics
+ * that have a public study_guide_href, in sort order.
+ */
+export function studyGuidesForSubtest(
+  subtest: AsvabSubtest,
+  limit = 3
+): { href: string; label: string }[] {
+  return topicsForSubtest(subtest)
+    .filter((t) => t.study_guide_href)
+    .slice(0, limit)
+    .map((t) => ({ href: t.study_guide_href as string, label: t.title }));
+}

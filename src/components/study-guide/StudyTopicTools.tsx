@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
 import { practiceHref } from "@/lib/routes";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
 
 /**
  * In-app personalization for a study-guide topic: durable "mark as studied"
@@ -78,6 +79,12 @@ export default function StudyTopicTools({ topicId, subtest, subtestName }: Props
       { onConflict: "user_id,topic_id" }
     );
     if (!firstViewedRef.current) firstViewedRef.current = now;
+    if (next) {
+      trackEvent(FunnelEvents.StudyGuideMarkedStudied, {
+        topic_id: topicId,
+        subtest,
+      });
+    }
     setStudied(next);
     setSaving(false);
   }

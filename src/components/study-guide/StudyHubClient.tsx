@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
+import { trackEvent } from "@/lib/analytics";
 import type { AsvabSubtest } from "@/types";
 
 export interface StudyGuideIndexEntry {
@@ -89,6 +90,18 @@ export default function StudyHubClient({
       .map((x) => x.e);
   }, [index, stats, loaded, session]);
 
+  // Lead with the single weakest practiced topic as a "recommended next guide".
+  const recommended = focus[0] ?? null;
+  const recShownRef = useRef(false);
+  useEffect(() => {
+    if (!recommended || recShownRef.current) return;
+    recShownRef.current = true;
+    trackEvent("study_recommendation_shown", {
+      topic_id: recommended.topicId,
+      subtest: recommended.subtest,
+    });
+  }, [recommended]);
+
   const studiedCount = studied.size;
 
   const bySubtest = useMemo(() => {
@@ -100,8 +113,41 @@ export default function StudyHubClient({
     return groups;
   }, [index, order]);
 
+  // Remaining focus topics, minus the one promoted into the hero card.
+  const focusRest = recommended ? focus.slice(1) : focus;
+
   return (
     <div className="space-y-8">
+      {/* Recommended next guide, the single weakest practiced topic. */}
+      {recommended && (
+        <Link
+          href={`/app/study/${recommended.subtestSlug}/${recommended.slug}`}
+          onClick={() =>
+            trackEvent("study_recommendation_click", {
+              topic_id: recommended.topicId,
+              subtest: recommended.subtest,
+            })
+          }
+          className="block rounded-2xl border border-accent/50 bg-accent/10 p-6 no-underline transition-colors hover:border-accent/80"
+        >
+          <div className="text-xs font-semibold uppercase tracking-wider text-accent">
+            Recommended next guide
+          </div>
+          <div className="mt-2 font-display text-xl font-bold text-text-primary">
+            {recommended.title}
+          </div>
+          <div className="mt-1 text-sm text-text-secondary">
+            {recommended.subtestName}
+            {masteryPct(stats[recommended.topicId]) != null
+              ? ` · ${masteryPct(stats[recommended.topicId])}% mastery`
+              : " · needs work"}
+          </div>
+          <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent">
+            Study this now &rarr;
+          </span>
+        </Link>
+      )}
+
       {/* Progress */}
       <div className="flex items-center justify-between rounded-xl border border-navy-border bg-navy-light px-4 py-3 text-sm">
         <span className="text-text-secondary">
@@ -116,14 +162,14 @@ export default function StudyHubClient({
         </div>
       </div>
 
-      {/* Focus first (personalized) */}
-      {focus.length > 0 && (
+      {/* Focus first (personalized), minus the promoted recommended topic. */}
+      {focusRest.length > 0 && (
         <section>
           <h2 className="mb-3 text-xs font-semibold uppercase tracking-wider text-accent">
             Focus first, your weakest topics
           </h2>
           <div className="space-y-2">
-            {focus.map((e) => (
+            {focusRest.map((e) => (
               <FocusRow key={e.topicId} entry={e} pct={masteryPct(stats[e.topicId])} />
             ))}
           </div>

@@ -70,6 +70,61 @@ function adaptiveHref(): string {
   return `/practice-test?variant=afqt_adaptive`;
 }
 
+/** A free study-guide link surfaced for a weak topic. */
+export interface WeakTopicGuide {
+  topicId: string;
+  title: string;
+  href: string;
+}
+
+/**
+ * Additive, pure helper: the user's weakest topics that have a public study
+ * guide. The diagnostic-results NextStepCard usually surfaces a Pro-gated drill,
+ * so this gives the free study-guide path its own surface that always shows.
+ *
+ * Prefers measured topic_stats (status === "weak", highest priority first);
+ * falls back to the latest attempt's lowest-% topics (seen > 0, percentage < 60,
+ * ascending). Topics without a study_guide_href are skipped. Stops at `limit`.
+ */
+export function weakTopicStudyGuides(
+  input: { latestByTopic: TopicResult[]; topicStats: TopicStats[] | null },
+  limit = 2,
+): WeakTopicGuide[] {
+  const { latestByTopic, topicStats } = input;
+  const out: WeakTopicGuide[] = [];
+  const seenIds = new Set<string>();
+
+  const push = (topicId: string): boolean => {
+    if (out.length >= limit) return false;
+    if (seenIds.has(topicId)) return true;
+    const topic = getTopic(topicId);
+    if (!topic?.study_guide_href) return true;
+    seenIds.add(topicId);
+    out.push({ topicId, title: topic.title, href: topic.study_guide_href });
+    return true;
+  };
+
+  const weakStats = (topicStats ?? [])
+    .filter((s) => s.status === "weak")
+    .sort((a, b) => b.priority - a.priority);
+  for (const s of weakStats) {
+    if (out.length >= limit) break;
+    push(s.topic_id);
+  }
+
+  if (out.length < limit) {
+    const fallback = [...latestByTopic]
+      .filter((r) => r.seen > 0 && r.percentage < 60)
+      .sort((a, b) => a.percentage - b.percentage);
+    for (const r of fallback) {
+      if (out.length >= limit) break;
+      push(r.topic_id);
+    }
+  }
+
+  return out;
+}
+
 export function recommendNextStep(
   input: RecommenderInput
 ): NextStepRecommendation {

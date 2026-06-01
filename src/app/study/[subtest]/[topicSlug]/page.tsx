@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getAllTopicSlugs, getStudyGuide } from "@/lib/study-guides/loader";
 import MiniDrill from "@/components/study-guide/MiniDrill";
 import StudyGuideArticle from "@/components/study-guide/StudyGuideArticle";
+import StudyGuideViewBeacon from "@/components/study-guide/StudyGuideViewBeacon";
 import { SUBTEST_NAMES } from "@/types";
 import type { AsvabSubtest } from "@/types";
 
@@ -48,6 +49,11 @@ export default async function StudyGuidePage({ params }: PageProps) {
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+      <StudyGuideViewBeacon
+        topicId={frontmatter.topic_id}
+        subtest={subtestUpper}
+        surface="public"
+      />
       {/* Breadcrumb */}
       <nav className="mb-6 flex items-center gap-2 text-sm text-text-tertiary">
         <Link href="/asvab-study-guide" className="transition-colors hover:text-text-secondary">

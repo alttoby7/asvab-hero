@@ -21,6 +21,7 @@ import ScoreGapEngine from "./ScoreGapEngine";
 import ShareActions from "./ShareActions";
 import ResultCard from "./ResultCard";
 import CalculatorPlanCapture from "./CalculatorPlanCapture";
+import CalculatorWeakSubtestGuides from "./CalculatorWeakSubtestGuides";
 import AffiliateBookBlock from "./AffiliateBookBlock";
 
 interface CalculatorProps {
@@ -260,6 +261,13 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
           scores={filledScores}
           isPro={entitlement.isPro}
         />
+      )}
+
+      {/* Disappointed-scorer path: free study guides for the two lowest AFQT
+         subtests the user typed. Renders alongside the plan capture once the
+         AFQT is known. */}
+      {afqtReady && (
+        <CalculatorWeakSubtestGuides scores={filledScores} afqt={afqt} />
       )}
 
       {/* Composite Scores, full 9-subtest results only. */}
