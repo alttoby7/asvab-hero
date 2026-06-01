@@ -23,6 +23,10 @@ const b14 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/
 const b15 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-15-as.json'), 'utf8'));
 const b16 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-16-mc.json'), 'utf8'));
 const b17 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-17-ao.json'), 'utf8'));
+const b18 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-18-ar-curated.json'), 'utf8'));
+const b19 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-19-mk-curated.json'), 'utf8'));
+const b20 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-20-wk-curated.json'), 'utf8'));
+const b21 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-21-pc-curated.json'), 'utf8'));
 const tags = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/question-tags.seed.json'), 'utf8'));
 const tagMap = new Map(tags.map(t => [t.external_key.toUpperCase(), t]));
 
@@ -152,6 +156,10 @@ const all = [
   ...normalize(b15, 'batch-15-as'),
   ...normalize(b16, 'batch-16-mc'),
   ...normalize(b17, 'batch-17-ao'),
+  ...normalize(b18, 'batch-18-ar-curated'),
+  ...normalize(b19, 'batch-19-mk-curated'),
+  ...normalize(b20, 'batch-20-wk-curated'),
+  ...normalize(b21, 'batch-21-pc-curated'),
 ];
 
 const seen = new Set();

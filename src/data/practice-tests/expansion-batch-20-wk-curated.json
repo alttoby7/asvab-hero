@@ -1,0 +1,386 @@
+[
+  {
+    "external_key": "WK-B20-ANT-1",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "EXPAND is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "contract",
+      "grow",
+      "measure",
+      "paint"
+    ],
+    "correct_index": 0,
+    "explanation": "Expand means to grow larger or take up more space. Its opposite is contract, to grow smaller. 'Grow' is the synonym trap, since it means the same as expand, not the opposite. Measure and paint are unrelated actions.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-ANT-2",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "ANCIENT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "modern",
+      "old",
+      "heavy",
+      "distant"
+    ],
+    "correct_index": 0,
+    "explanation": "Ancient means very old, from long ago. Its opposite is modern, belonging to the present. 'Old' is the synonym trap, a close match for ancient rather than its opposite. Heavy describes weight and distant describes space, neither related to age.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-ANT-3",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "ASCEND is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "descend",
+      "climb",
+      "hurry",
+      "arrive"
+    ],
+    "correct_index": 0,
+    "explanation": "Ascend is a verb meaning to move upward. Its opposite is descend, to move downward. 'Climb' is the synonym trap, since climbing also means going up. Hurry and arrive describe speed and reaching a place, not direction of movement.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-ANT-4",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "GENEROUS is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "stingy",
+      "giving",
+      "wealthy",
+      "friendly"
+    ],
+    "correct_index": 0,
+    "explanation": "Generous means free in giving and sharing. Its opposite is stingy, unwilling to give or spend. 'Giving' is the synonym trap, a direct match for generous. Wealthy is merely related, since a rich person can still be stingy, and friendly names a different trait.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-ANT-5",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "TRANQUIL is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "turbulent",
+      "calm",
+      "distant",
+      "honest"
+    ],
+    "correct_index": 0,
+    "explanation": "Tranquil means calm and peaceful. Its opposite is turbulent, marked by disturbance and agitation. 'Calm' is the synonym trap, since it means the same as tranquil. Distant describes space and honest describes truthfulness, neither tied to calmness.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-ANT-6",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "ABUNDANT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "scarce",
+      "plentiful",
+      "expensive",
+      "fragile"
+    ],
+    "correct_index": 0,
+    "explanation": "Abundant means present in large quantity. Its opposite is scarce, available in short supply. 'Plentiful' is the synonym trap, a direct match for abundant. Expensive describes cost and fragile describes how easily something breaks, neither related to quantity.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-ANT-7",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "CONCEAL is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "reveal",
+      "hide",
+      "repair",
+      "carry"
+    ],
+    "correct_index": 0,
+    "explanation": "Conceal is a verb meaning to keep from being seen. Its opposite is reveal, to make visible or known. 'Hide' is the synonym trap, a direct match for conceal. Repair means to fix and carry means to transport, both unrelated actions.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-ANT-8",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "PRUDENT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "reckless",
+      "cautious",
+      "wealthy",
+      "quiet"
+    ],
+    "correct_index": 0,
+    "explanation": "Prudent means careful and sensible, acting with good judgment. Its opposite is reckless, acting without care for consequences. 'Cautious' is the synonym trap, since it means the same as prudent. Wealthy and quiet describe money and sound, neither related to judgment.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-ANT-9",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "TRANSPARENT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "opaque",
+      "clear",
+      "fragile",
+      "colorful"
+    ],
+    "correct_index": 0,
+    "explanation": "Transparent means able to be seen through, like clear glass. Its opposite is opaque, not allowing light through. 'Clear' is the synonym trap, a direct match for transparent. Fragile describes breakability and colorful describes hue, neither the opposite of see-through.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-ANT-10",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "AMPLE is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "meager",
+      "plentiful",
+      "rapid",
+      "honest"
+    ],
+    "correct_index": 0,
+    "explanation": "Ample means more than enough, generous in amount. Its opposite is meager, lacking in quantity. 'Plentiful' is the synonym trap, a close match for ample rather than its opposite. Rapid describes speed and honest describes truthfulness, neither related to amount.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-ANT-11",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 4,
+    "stem": "BENEVOLENT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "malicious",
+      "kind",
+      "wealthy",
+      "talkative"
+    ],
+    "correct_index": 0,
+    "explanation": "Benevolent means kind and wishing others well, sharing the BENE- root meaning good. Its opposite is malicious, intending to do harm. 'Kind' is the synonym trap, a direct match for benevolent. Wealthy and talkative describe money and speech, neither tied to goodwill.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-ANT-12",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 4,
+    "stem": "CANDID is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "evasive",
+      "frank",
+      "cheerful",
+      "wealthy"
+    ],
+    "correct_index": 0,
+    "explanation": "Candid means open and honest, speaking frankly. Its opposite is evasive, avoiding a direct answer. 'Frank' is the synonym trap, a direct match for candid. Cheerful describes mood and wealthy describes money, neither related to openness.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-MM-1",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In the sentence 'The carpenter built a new TABLE for the kitchen,' the word TABLE most nearly means:",
+    "choices": [
+      "a piece of furniture",
+      "to postpone a decision",
+      "a chart of numbers",
+      "a flat plateau"
+    ],
+    "correct_index": 0,
+    "explanation": "Table has several meanings: a piece of furniture, a chart of data, or, as a verb, to set a motion aside. Here a carpenter 'built' it 'for the kitchen,' so it is the furniture meaning. To postpone is the verb meaning, which does not fit a thing that is built. The chart and plateau meanings do not match a kitchen object.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-MM-2",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In the sentence 'Please TURN off the lights before you leave,' the word TURN most nearly means:",
+    "choices": [
+      "to switch by moving a control",
+      "a chance to play in a game",
+      "to become sour",
+      "a bend in the road"
+    ],
+    "correct_index": 0,
+    "explanation": "Turn can mean to rotate or operate a control, a chance in a game, to spoil ('the milk turned'), or a curve in a road. Paired with 'off the lights,' it means to switch by moving a control. A chance to play and a bend in the road are noun meanings that do not fit. Going sour does not apply to lights.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-MM-3",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In the sentence 'The nurse will CHECK the patient's temperature,' the word CHECK most nearly means:",
+    "choices": [
+      "to examine",
+      "a written order for money",
+      "a pattern of squares",
+      "to stop suddenly"
+    ],
+    "correct_index": 0,
+    "explanation": "Check can mean a bank draft, a pattern of squares, to halt, or to examine or test. Taking a temperature means to examine, so that meaning fits. A written order for money and a pattern of squares are noun meanings unrelated to a nurse's action. To stop suddenly does not match measuring a temperature.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-MM-4",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In the sentence 'The strong CURRENT pulled the swimmer away from shore,' the word CURRENT most nearly means:",
+    "choices": [
+      "a flow of moving water",
+      "up to date",
+      "a strong opinion",
+      "a unit of money"
+    ],
+    "correct_index": 0,
+    "explanation": "Current can be a noun meaning a flow of water or electricity, or an adjective meaning present and up to date. Pulling a swimmer 'away from shore' points to the flowing-water meaning. 'Up to date' is the adjective meaning and does not fit a thing that pulls. A strong opinion and a unit of money are not meanings of current.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-MM-5",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In the sentence 'The roof beams must BEAR the weight of the heavy snow,' the word BEAR most nearly means:",
+    "choices": [
+      "to support",
+      "a large wild animal",
+      "to give birth",
+      "to turn to one side"
+    ],
+    "correct_index": 0,
+    "explanation": "Bear can mean the animal, or as a verb to carry or support, to endure, to produce, or to veer ('bear left'). With beams holding up 'the weight,' it means to support. The animal is a noun meaning that does not fit. To give birth and to turn to one side are real meanings of bear but do not match holding weight.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-MM-6",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In the sentence 'The judge ruled the contract was FAIR to both sides,' the word FAIR most nearly means:",
+    "choices": [
+      "just and even-handed",
+      "a public event with rides",
+      "light in color",
+      "only average in quality"
+    ],
+    "correct_index": 0,
+    "explanation": "Fair can mean just and even, a public event, light in color, or merely acceptable. A judge ruling it 'fair to both sides' points to just and even-handed. A public event is a noun meaning that does not fit a contract. Light in color and only average are real senses of fair but do not match a ruling about fairness.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-MM-7",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In the sentence 'They built the camp on the grassy BANK of the river,' the word BANK most nearly means:",
+    "choices": [
+      "the raised ground along the water",
+      "a place that holds money",
+      "to tilt while turning",
+      "a row of switches"
+    ],
+    "correct_index": 0,
+    "explanation": "Bank can mean a financial institution, the side of a river, to tilt in flight, or a row of things. 'On the grassy bank of the river' points to the raised ground along the water. A place that holds money does not fit a riverside camp. To tilt while turning is a verb meaning, and a row of switches is a separate sense.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-MM-8",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In the sentence 'The senator moved to TABLE the motion until the next session,' the word TABLE most nearly means:",
+    "choices": [
+      "to set aside for later",
+      "a piece of furniture",
+      "a chart of figures",
+      "to serve a meal"
+    ],
+    "correct_index": 0,
+    "explanation": "In legislative use, to table a motion means to postpone it or set it aside. Here table is a verb, so the noun meanings of furniture and a chart of figures do not fit. To serve a meal is not a meaning of table. The wording 'until the next session' confirms the postponing sense.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-MM-9",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In the sentence 'Adding more debt will only COMPOUND the problem,' the word COMPOUND most nearly means:",
+    "choices": [
+      "to make worse",
+      "a chemical mixture",
+      "an enclosed group of buildings",
+      "to pay in full"
+    ],
+    "correct_index": 0,
+    "explanation": "Compound can be a noun meaning a chemical mixture or an enclosed set of buildings, or a verb meaning to increase or make worse. 'Will only compound the problem' uses the verb meaning, to make worse. The two noun meanings do not fit a sentence about a worsening problem. To pay in full is not a meaning of compound.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-MM-10",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In the sentence 'She was hired to RUN the new factory,' the word RUN most nearly means:",
+    "choices": [
+      "to manage or operate",
+      "to move quickly on foot",
+      "to flow steadily",
+      "to spread when wet"
+    ],
+    "correct_index": 0,
+    "explanation": "Run has many senses: to jog, to flow, to bleed or spread, or to manage. Being 'hired to run the new factory' uses the manage-or-operate meaning. To move quickly on foot does not fit running a business. To flow steadily and to spread when wet (as dye runs) are real meanings of run but do not match managing a factory.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-MM-11",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 4,
+    "stem": "The word ARTICULATE is used the same way in 'She gave an ARTICULATE answer to the hard question' as it is in:",
+    "choices": [
+      "His clear, articulate speech impressed the panel.",
+      "She could articulate her plan in a single sentence.",
+      "The arm has an articulate joint at the elbow.",
+      "He failed to articulate why he was upset."
+    ],
+    "correct_index": 0,
+    "explanation": "Articulate can be an adjective meaning clearly expressed or a verb meaning to put into words (and a separate sense meaning jointed). In the prompt, 'an articulate answer' is the adjective meaning clearly expressed. Choice A, 'clear, articulate speech,' uses that same adjective sense. Choices B and D use the verb 'to articulate,' and choice C uses the jointed sense, so their parts of speech and meanings differ.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B20-MM-12",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 4,
+    "stem": "The word TEMPER is used the same way in 'The blacksmith had to TEMPER the steel blade' as it is in:",
+    "choices": [
+      "Engineers temper the glass to make it stronger.",
+      "She lost her temper during the argument.",
+      "Time can temper even the deepest grief.",
+      "Try to keep your temper in check."
+    ],
+    "correct_index": 0,
+    "explanation": "Temper can be a noun meaning a state of mind or mood, or a verb meaning to harden metal or glass by heating, or to soften or moderate. In the prompt, 'temper the steel blade' is the verb meaning to harden metal. Choice A, 'temper the glass to make it stronger,' uses that same hardening sense. 'Lost her temper' and 'keep your temper in check' are the noun meaning, and 'temper even the deepest grief' is the soften-or-moderate sense.",
+    "status": "verified"
+  }
+]

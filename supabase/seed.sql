@@ -22,18 +22,24 @@ insert into topics (id, subtest, slug, title, sort_order) values
   ('ar.percent',                'AR','percent',                'Percent & Markup',            3),
   ('ar.rate-distance-time',     'AR','rate-distance-time',     'Rate, Distance & Time',      4),
   ('ar.word-problems',          'AR','word-problems',          'Multi-Step Word Problems',   5),
+  ('ar.averages',               'AR','averages',               'Averages & Mean',            6),
+  ('ar.work-rate',              'AR','work-rate',              'Work & Rate Problems',       7),
 
   -- WK — Word Knowledge
   ('wk.synonyms',         'WK','synonyms',         'Synonyms & Definitions',     1),
   ('wk.context-clues',    'WK','context-clues',    'Context Clues',              2),
   ('wk.prefixes-suffixes','WK','prefixes-suffixes', 'Prefixes & Suffixes',        3),
   ('wk.root-words',       'WK','root-words',        'Root Words',                 4),
+  ('wk.antonyms',              'WK','antonyms',              'Antonyms & Opposites',       5),
+  ('wk.multiple-meaning-words','WK','multiple-meaning-words','Multiple-Meaning Words',     6),
 
   -- PC — Paragraph Comprehension
   ('pc.main-idea',          'PC','main-idea',          'Main Idea & Purpose',      1),
   ('pc.detail-recall',      'PC','detail-recall',      'Detail & Recall',          2),
   ('pc.inference',          'PC','inference',           'Inference & Conclusion',   3),
   ('pc.author-tone-purpose','PC','author-tone-purpose', 'Author Tone & Purpose',   4),
+  ('pc.vocabulary-in-context','PC','vocabulary-in-context','Vocabulary in Context',    5),
+  ('pc.text-structure',      'PC','text-structure',      'Sequence & Text Structure',6),
 
   -- MK — Mathematics Knowledge
   ('mk.geometry',             'MK','geometry',             'Geometry: Area, Perimeter & Volume', 1),
@@ -41,6 +47,8 @@ insert into topics (id, subtest, slug, title, sort_order) values
   ('mk.fractions-decimals',   'MK','fractions-decimals',   'Fractions, Decimals & Percent',      3),
   ('mk.exponents-polynomials','MK','exponents-polynomials', 'Exponents & Polynomials',            4),
   ('mk.number-properties',    'MK','number-properties',    'Number Properties & Absolute Value', 5),
+  ('mk.order-of-operations',  'MK','order-of-operations',  'Order of Operations',                6),
+  ('mk.inequalities',         'MK','inequalities',         'Inequalities',                       7),
 
   -- EI — Electronics Information
   ('ei.ohms-law-power',       'EI','ohms-law-power',       'Ohm''s Law & Power',                 1),

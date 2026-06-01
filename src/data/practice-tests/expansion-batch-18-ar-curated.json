@@ -1,0 +1,386 @@
+[
+  {
+    "external_key": "AR-B18-AVG-1",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 1,
+    "stem": "What is the average of 4, 8, and 12?",
+    "choices": [
+      "6",
+      "8",
+      "12",
+      "24"
+    ],
+    "correct_index": 1,
+    "explanation": "Add the values and divide by how many there are: (4 + 8 + 12) / 3 = 24 / 3 = 8. The choice 6 mishandles the division. The choice 24 is the sum, not the average. The choice 12 is the largest value, not the mean. The correct average is 8.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-AVG-2",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 1,
+    "stem": "A recruit runs 2 miles on Monday, 3 miles on Tuesday, and 4 miles on Wednesday. What is the average distance per day?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "9"
+    ],
+    "correct_index": 1,
+    "explanation": "Sum the miles and divide by the number of days: (2 + 3 + 4) / 3 = 9 / 3 = 3. The choice 9 is the total miles, not the average. The choices 2 and 4 are individual days, not the mean. The correct average is 3 miles.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-AVG-3",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 1,
+    "stem": "What is the average of 10, 20, 30, and 40?",
+    "choices": [
+      "20",
+      "25",
+      "30",
+      "100"
+    ],
+    "correct_index": 1,
+    "explanation": "Add the four values and divide by 4: (10 + 20 + 30 + 40) / 4 = 100 / 4 = 25. The choice 100 is the sum, not the average. The choices 20 and 30 are middle values but not the mean. The correct average is 25.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-AVG-4",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "A soldier scores 85, 90, and 95 on three PT events. What is the average score?",
+    "choices": [
+      "88",
+      "90",
+      "92",
+      "270"
+    ],
+    "correct_index": 1,
+    "explanation": "Sum the scores and divide by 3: (85 + 90 + 95) / 3 = 270 / 3 = 90. The choice 270 is the total, not the average. The choices 88 and 92 miscompute the division. The correct average is 90.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-AVG-5",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "The average of 5 numbers is 12. What is the sum of all 5 numbers?",
+    "choices": [
+      "12",
+      "17",
+      "60",
+      "2.4"
+    ],
+    "correct_index": 2,
+    "explanation": "Sum equals average times count: 12 x 5 = 60. The choice 12 restates the average. The choice 17 adds 12 and 5. The choice 2.4 divides 12 by 5 instead of multiplying. The correct sum is 60.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-AVG-6",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "Find the median of these test scores: 70, 95, 80, 60, 85.",
+    "choices": [
+      "78",
+      "80",
+      "85",
+      "95"
+    ],
+    "correct_index": 1,
+    "explanation": "Put the scores in order: 60, 70, 80, 85, 95. The middle value is 80. The choice 78 is the mean, not the median. The choice 95 is the highest value. The choice 85 is the fourth value, not the middle. The correct median is 80.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-AVG-7",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "A supply clerk counts boxes for 4 days: 12, 15, 11, and 14 boxes. What is the average number of boxes per day?",
+    "choices": [
+      "12",
+      "13",
+      "14",
+      "52"
+    ],
+    "correct_index": 1,
+    "explanation": "Sum the counts and divide by 4: (12 + 15 + 11 + 14) / 4 = 52 / 4 = 13. The choice 52 is the total, not the average. The choices 12 and 14 are individual days. The correct average is 13 boxes.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-AVG-8",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 3,
+    "stem": "A recruit has scores of 78, 84, and 90 on three tests. What must the recruit score on a fourth test to average 85?",
+    "choices": [
+      "85",
+      "86",
+      "88",
+      "340"
+    ],
+    "correct_index": 2,
+    "explanation": "To average 85 over 4 tests the total must be 85 x 4 = 340. The three scores so far total 78 + 84 + 90 = 252, so the fourth must be 340 - 252 = 88. The choice 85 is the target average, not the needed score. The choice 86 averages the existing three scores. The choice 340 is the required total, not a single score. The correct score is 88.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-AVG-9",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 3,
+    "stem": "A truck drives 120 miles out at 40 mph and the same 120 miles back at 60 mph. What is the average speed for the round trip?",
+    "choices": [
+      "48",
+      "50",
+      "52",
+      "100"
+    ],
+    "correct_index": 0,
+    "explanation": "Time out is 120 / 40 = 3 hours and time back is 120 / 60 = 2 hours, so total distance is 240 miles over 5 hours: 240 / 5 = 48 mph. The choice 50 averages the two speeds, which is the wrong method because more time is spent on the slow leg. The choice 100 adds the two speeds. The choice 52 miscomputes the total time. The correct average speed is 48 mph.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-AVG-10",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 3,
+    "stem": "A platoon of 10 soldiers averages 70 push-ups and a platoon of 30 soldiers averages 90 push-ups. What is the average for all 40 soldiers combined?",
+    "choices": [
+      "80",
+      "82",
+      "85",
+      "88"
+    ],
+    "correct_index": 2,
+    "explanation": "Use a weighted average: (10 x 70) + (30 x 90) = 700 + 2,700 = 3,400 total push-ups over 40 soldiers, so 3,400 / 40 = 85. The choice 80 averages the two group averages, which is wrong because the groups are different sizes. The choices 82 and 88 misweight the groups. The correct average is 85.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-AVG-11",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 4,
+    "stem": "After 4 tests a recruit has an average of 82. One more test of 92 is added. What is the new average over all 5 tests?",
+    "choices": [
+      "84",
+      "85",
+      "87",
+      "82"
+    ],
+    "correct_index": 0,
+    "explanation": "The first 4 tests total 82 x 4 = 328. Adding 92 gives 328 + 92 = 420 over 5 tests: 420 / 5 = 84. The choice 85 mishandles the new total. The choice 87 averages 82 and 92 directly, ignoring that the 82 represents 4 tests. The choice 82 ignores the new score. The correct new average is 84.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-AVG-12",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 4,
+    "stem": "The average weight of 6 rucksacks is 38 pounds. When one more rucksack is added, the average drops to 36 pounds. How much does the added rucksack weigh?",
+    "choices": [
+      "24",
+      "30",
+      "36",
+      "38"
+    ],
+    "correct_index": 0,
+    "explanation": "Six rucksacks total 38 x 6 = 228 pounds. Seven rucksacks at the new average total 36 x 7 = 252 pounds. The added rucksack is 252 - 228 = 24 pounds. The choice 36 is the new average, not the added weight. The choice 38 is the old average. The choice 30 splits the difference incorrectly. The correct weight is 24 pounds.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-WR-1",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 1,
+    "stem": "A soldier can clean a barracks in 5 hours. What fraction of the barracks does the soldier clean in 1 hour?",
+    "choices": [
+      "1/2",
+      "1/5",
+      "5",
+      "1/10"
+    ],
+    "correct_index": 1,
+    "explanation": "Rate equals one job divided by the time to finish: 1 / 5 = 1/5 of the barracks per hour. The choice 5 is the number of hours, not the hourly rate. The choice 1/2 ignores the 5 hours. The choice 1/10 halves the rate. The correct rate is 1/5.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-WR-2",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 1,
+    "stem": "A machine produces 50 parts per hour. How many parts does it produce in 4 hours?",
+    "choices": [
+      "54",
+      "150",
+      "200",
+      "250"
+    ],
+    "correct_index": 2,
+    "explanation": "Output equals rate times time: 50 x 4 = 200 parts. The choice 54 adds 50 + 4. The choice 150 uses 3 hours. The choice 250 uses 5 hours. The correct output is 200 parts.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-WR-3",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 1,
+    "stem": "A worker earns 15 dollars per hour. How much does the worker earn in 6 hours?",
+    "choices": [
+      "21",
+      "75",
+      "90",
+      "96"
+    ],
+    "correct_index": 2,
+    "explanation": "Pay equals rate times time: 15 x 6 = 90 dollars. The choice 21 adds 15 + 6. The choice 75 uses 5 hours. The choice 96 mishandles the product. The correct pay is 90 dollars.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-WR-4",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 2,
+    "stem": "A pump moves 8 gallons per minute. How many minutes does it take to move 96 gallons?",
+    "choices": [
+      "10",
+      "12",
+      "14",
+      "88"
+    ],
+    "correct_index": 1,
+    "explanation": "Time equals total divided by rate: 96 / 8 = 12 minutes. The choice 10 mishandles the division. The choice 14 uses about 7 gallons per minute. The choice 88 subtracts 8 from 96. The correct time is 12 minutes.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-WR-5",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 2,
+    "stem": "Worker A loads a truck in 6 hours and Worker B loads the same truck in 6 hours. Working together, how long does it take?",
+    "choices": [
+      "2 hours",
+      "3 hours",
+      "6 hours",
+      "12 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Each works at 1/6 per hour, so together they do 1/6 + 1/6 = 2/6 = 1/3 of the job per hour, finishing in 3 hours. The choice 12 hours wrongly adds the two times. The choice 6 hours ignores the help from the second worker. The choice 2 hours overstates the speedup. The correct time is 3 hours.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-WR-6",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 2,
+    "stem": "A copier prints 1,200 pages in 4 hours at a steady rate. How many pages does it print per hour?",
+    "choices": [
+      "250",
+      "300",
+      "350",
+      "4,800"
+    ],
+    "correct_index": 1,
+    "explanation": "Rate equals total divided by time: 1,200 / 4 = 300 pages per hour. The choice 250 mishandles the division. The choice 350 overstates the rate. The choice 4,800 multiplies instead of dividing. The correct rate is 300 pages per hour.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-WR-7",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 2,
+    "stem": "A soldier digs 18 feet of trench per hour. At that rate, how long does it take to dig 90 feet?",
+    "choices": [
+      "4 hours",
+      "5 hours",
+      "6 hours",
+      "72 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Time equals total divided by rate: 90 / 18 = 5 hours. The choice 4 hours uses about 22 feet per hour. The choice 6 hours uses 15 feet per hour. The choice 72 hours subtracts 18 from 90. The correct time is 5 hours.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-WR-8",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 3,
+    "stem": "Worker A paints a wall in 4 hours and Worker B paints the same wall in 12 hours. Working together, how long does it take?",
+    "choices": [
+      "3 hours",
+      "4 hours",
+      "8 hours",
+      "16 hours"
+    ],
+    "correct_index": 0,
+    "explanation": "Combined rate is 1/4 + 1/12 = 3/12 + 1/12 = 4/12 = 1/3 of the job per hour, so the time is 3 hours. The choice 8 hours averages the two times. The choice 16 hours adds the two times. The choice 4 hours ignores the help from Worker B. The correct time is 3 hours.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-WR-9",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 3,
+    "stem": "A pipe fills a fuel tank in 6 hours. A drain empties the full tank in 12 hours. With both open, how long does it take to fill the empty tank?",
+    "choices": [
+      "4 hours",
+      "8 hours",
+      "12 hours",
+      "18 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "The net rate is the fill rate minus the drain rate: 1/6 - 1/12 = 2/12 - 1/12 = 1/12 of the tank per hour, so it takes 12 hours. The choice 4 hours adds the rates instead of subtracting. The choice 18 hours adds the two times. The choice 8 hours miscombines the rates. The correct time is 12 hours.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-WR-10",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 3,
+    "stem": "Two soldiers fill sandbags together. One alone fills a pallet in 3 hours, the other in 6 hours. How long does it take both working together?",
+    "choices": [
+      "1.5 hours",
+      "2 hours",
+      "4.5 hours",
+      "9 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined rate is 1/3 + 1/6 = 2/6 + 1/6 = 3/6 = 1/2 of a pallet per hour, so the time is 2 hours. The choice 4.5 hours averages the two times. The choice 9 hours adds the two times. The choice 1.5 hours overstates the speedup. The correct time is 2 hours.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-WR-11",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 4,
+    "stem": "A team must pack 600 ration kits. Three packers each do 40 kits per hour and work for 4 hours. How many kits still need to be packed?",
+    "choices": [
+      "120",
+      "160",
+      "480",
+      "0"
+    ],
+    "correct_index": 0,
+    "explanation": "The three packers together do 3 x 40 = 120 kits per hour, so in 4 hours they pack 120 x 4 = 480 kits. Remaining is 600 - 480 = 120. The choice 480 is the number packed, not remaining. The choice 160 uses only 2 packers. The choice 0 assumes the job is finished. The correct remaining count is 120 kits.",
+    "status": "verified"
+  },
+  {
+    "external_key": "AR-B18-WR-12",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 4,
+    "stem": "Two pumps drain a flooded bunker. The first removes 1/8 of the water per hour and the second removes 1/24 per hour. Running together, how long to empty the bunker?",
+    "choices": [
+      "4 hours",
+      "6 hours",
+      "12 hours",
+      "16 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined rate is 1/8 + 1/24 = 3/24 + 1/24 = 4/24 = 1/6 of the water per hour, so it takes 6 hours. The choice 16 hours adds the two times of 8 and 24 incorrectly. The choice 12 hours averages the two rates. The choice 4 hours overstates the combined rate. The correct time is 6 hours.",
+    "status": "verified"
+  }
+]

@@ -1,0 +1,386 @@
+[
+  {
+    "external_key": "PC-B21-VIC-1",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"The hikers found a level clearing and decided to camp there. After a steep climb all afternoon, the flat ground was a welcome change.\"\n\nIn this passage, the word \"level\" most nearly means:",
+    "choices": [
+      "even and flat",
+      "a stage or rank",
+      "to aim a weapon",
+      "honest and fair"
+    ],
+    "correct_index": 0,
+    "explanation": "The next sentence calls the clearing 'flat ground,' so 'level' here means even and flat. 'A stage or rank' and 'to aim a weapon' are real meanings of level but neither fits a place to camp. 'Honest and fair' (as in 'level with me') does not match the description of the ground.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-VIC-2",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"The coach kept a firm grip on the rope as the students climbed. He would not let it slip, no matter how hard they pulled.\"\n\nAs used in the passage, the word \"firm\" most nearly means:",
+    "choices": [
+      "a business company",
+      "tight and steady",
+      "a final decision",
+      "strict and harsh"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage says he 'would not let it slip,' so a 'firm grip' is a tight, steady hold. 'A business company' is a common meaning of firm but makes no sense for holding a rope. 'Strict and harsh' describes a person, not a grip on a rope. 'A final decision' does not fit the sentence.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-VIC-3",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"The store will stock the new boots next week. Until then, the shelves where they belong sit empty.\"\n\nIn this passage, the word \"stock\" most nearly means:",
+    "choices": [
+      "a share of a company",
+      "soup base",
+      "supply with goods",
+      "a wooden frame"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage talks about empty shelves that will hold boots next week, so 'stock' means to supply the shelves with goods. 'A share of a company' and 'soup base' are other meanings of stock that do not fit a store filling its shelves. 'A wooden frame' is unrelated to the passage.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-VIC-4",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"The drill instructor's praise was rare, so the recruits prized it. A single nod from him meant more than a long speech from anyone else.\"\n\nAs used in the passage, the word \"prized\" most nearly means:",
+    "choices": [
+      "valued highly",
+      "won as an award",
+      "forced open with a tool",
+      "measured carefully"
+    ],
+    "correct_index": 0,
+    "explanation": "Because the praise was 'rare' and a single nod 'meant more' than a long speech, the recruits valued it highly. 'Won as an award' connects to the noun 'prize' but does not fit how the recruits treated the praise. 'Forced open with a tool' (pried) and 'measured carefully' are not supported by the passage.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-VIC-5",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"The committee decided to table the proposal until more data arrived. There was no point voting on numbers they did not yet have.\"\n\nIn this passage, the word \"table\" most nearly means:",
+    "choices": [
+      "a piece of furniture",
+      "a chart of numbers",
+      "set aside for later",
+      "bring up for a vote"
+    ],
+    "correct_index": 2,
+    "explanation": "The committee waited 'until more data arrived' and saw 'no point voting' yet, so to 'table' the proposal is to set it aside for later. 'A piece of furniture' and 'a chart of numbers' are common meanings of table that do not fit the action described. 'Bring up for a vote' is the opposite of what the committee did.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-VIC-6",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"Everyone expected the speech to be tedious, but the speaker proved sharp and lively. People who had planned to leave early stayed until the very end.\"\n\nAs used in the passage, the word \"sharp\" most nearly means:",
+    "choices": [
+      "having a fine edge",
+      "quick and clever",
+      "a sudden pain",
+      "exactly on time"
+    ],
+    "correct_index": 1,
+    "explanation": "The signal word 'but' contrasts 'tedious' with 'sharp and lively,' and the audience stayed, so 'sharp' means quick and clever. 'Having a fine edge' is the most literal meaning of sharp but a speech does not have an edge. 'A sudden pain' and 'exactly on time' (as in 'two o'clock sharp') are other meanings that do not fit the contrast.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-VIC-7",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"The new rule was designed to curb wasteful spending. Within a year, the department's budget overruns had shrunk by half.\"\n\nIn this passage, the word \"curb\" most nearly means:",
+    "choices": [
+      "the edge of a sidewalk",
+      "a strap on a horse's bit",
+      "restrain or reduce",
+      "encourage to grow"
+    ],
+    "correct_index": 2,
+    "explanation": "The next sentence says overruns 'had shrunk by half,' so the rule was meant to restrain or reduce wasteful spending. 'The edge of a sidewalk' and 'a strap on a horse's bit' are real meanings of curb but neither fits a rule about budgets. 'Encourage to grow' is the opposite of what the rule did.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-VIC-8",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"Witnesses described the suspect as anything but bold. He was a retiring man who avoided crowds and spoke only when spoken to.\"\n\nAs used in the passage, the word \"retiring\" most nearly means:",
+    "choices": [
+      "leaving a job for good",
+      "going to bed",
+      "shy and withdrawn",
+      "wealthy from savings"
+    ],
+    "correct_index": 2,
+    "explanation": "The man is contrasted with 'bold' and described as avoiding crowds and rarely speaking, so 'retiring' means shy and withdrawn. 'Leaving a job for good' is the most common meaning of retiring but the passage describes a personality, not a career move. 'Going to bed' and 'wealthy from savings' are not supported by the passage.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-VIC-9",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"The treaty did little to temper the rivalry between the two nations. If anything, the forced handshake left both sides more bitter than before.\"\n\nIn this passage, the word \"temper\" most nearly means:",
+    "choices": [
+      "a state of anger",
+      "soften or ease",
+      "harden steel by heating",
+      "a musical tuning"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage says the treaty 'did little to temper the rivalry' and left both sides 'more bitter,' so 'temper' here means to soften or ease the rivalry. 'A state of anger' uses temper as a noun, which does not fit the verb form in the sentence. 'Harden steel by heating' and 'a musical tuning' are real meanings of temper but neither fits a rivalry between nations.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-VIC-10",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"The veteran sergeant had a wealth of stories from his years overseas, though he rarely had wealth of any other kind. His richest possessions were his memories.\"\n\nAs used in the first sentence, the word \"wealth\" most nearly means:",
+    "choices": [
+      "a large amount",
+      "money and property",
+      "good health",
+      "a famous reputation"
+    ],
+    "correct_index": 0,
+    "explanation": "A 'wealth of stories' means a large amount of stories, and the passage even contrasts it with 'wealth of any other kind,' meaning money. 'Money and property' is the most common meaning of wealth, but the passage uses that sense only in the second half to set up the contrast; the first sentence is about a large supply. 'Good health' and 'a famous reputation' are not meanings the passage supports.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-VIC-11",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The negotiator was known for her tact. Even when delivering bad news, she chose her words so carefully that no one left the room feeling insulted.\"\n\nIn this passage, the word \"tact\" most nearly means:",
+    "choices": [
+      "a plan of attack",
+      "a sense of touch",
+      "skill in handling people gently",
+      "a small nail"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage explains tact by showing she chose words 'so carefully that no one left the room feeling insulted,' which is skill in handling people gently. 'A plan of attack' confuses tact with the similar word 'tactic.' 'A sense of touch' and 'a small nail' (tack) are sound-alikes the passage gives no support for.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-VIC-12",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The report praised the program in glowing terms, yet a close reader could detect a current of doubt running beneath the compliments. The author seemed unconvinced by his own praise.\"\n\nAs used in the passage, the word \"current\" most nearly means:",
+    "choices": [
+      "happening now",
+      "flow of electricity",
+      "an underlying movement of feeling",
+      "a small dried fruit"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage describes 'a current of doubt running beneath the compliments,' an undercurrent of feeling the author tries to hide. 'Happening now' is the most common meaning of current (as an adjective) but does not fit 'a current of doubt.' 'Flow of electricity' is too literal here, and 'a small dried fruit' (currant) is a sound-alike with no support in the passage.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-TS-1",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"To make toast, first place the bread in the toaster. Next, push down the lever to start it. Then wait for the toast to pop up. Finally, spread butter on the warm slice.\"\n\nAccording to the passage, what is the first step in making toast?",
+    "choices": [
+      "Push down the lever",
+      "Place the bread in the toaster",
+      "Spread butter on the slice",
+      "Wait for the toast to pop up"
+    ],
+    "correct_index": 1,
+    "explanation": "The word 'first' marks the opening step: 'place the bread in the toaster.' Pushing the lever is signaled by 'next,' spreading butter by 'finally,' and waiting by 'then,' so they are later steps, not the first.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-TS-2",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"The forecast warned of a hard freeze overnight. Because the gardener covered her plants with cloth, they survived the cold. The neighbors who did not cover theirs lost most of their garden.\"\n\nThe passage is organized mainly by:",
+    "choices": [
+      "listing items in alphabetical order",
+      "comparing two seasons",
+      "showing cause and effect",
+      "describing a place"
+    ],
+    "correct_index": 2,
+    "explanation": "The word 'because' links covering the plants to their survival, and not covering them to the loss, which is a cause-effect structure. There is no alphabetical list and no comparison of two seasons, so those choices do not match the passage.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-TS-3",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the passage below and answer the question.\n\n\"First, the recruits woke at dawn and ate breakfast. After that, they ran the morning course. Then they cleaned their barracks before lunch.\"\n\nAccording to the passage, which activity came last?",
+    "choices": [
+      "Eating breakfast",
+      "Running the morning course",
+      "Cleaning the barracks",
+      "Waking at dawn"
+    ],
+    "correct_index": 2,
+    "explanation": "The transition words set the order: 'first' breakfast, 'after that' the run, 'then' cleaning the barracks before lunch. Cleaning the barracks is the last activity named. Waking and eating happen 'first,' and the run comes before the cleaning.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-TS-4",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"Gas cars burn fuel and release exhaust as they drive. Electric cars, on the other hand, run on batteries and produce no tailpipe emissions. However, electric cars take longer to refuel than it takes to fill a gas tank.\"\n\nHow is this passage organized?",
+    "choices": [
+      "Steps in time order",
+      "Compare and contrast",
+      "Problem and solution",
+      "A single cause with many effects"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage sets gas cars against electric cars using 'on the other hand' and 'however,' which is a compare-and-contrast structure. There is no time sequence of steps, and no problem is stated and then solved, so those choices do not fit.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-TS-5",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"To change a flat tire, loosen the lug nuts first while the car is still on the ground. Next, raise the car with the jack. Then remove the nuts the rest of the way and pull off the wheel. Finally, mount the spare and tighten the nuts.\"\n\nAccording to the passage, what should you do right after raising the car with the jack?",
+    "choices": [
+      "Loosen the lug nuts while the car is on the ground",
+      "Remove the nuts the rest of the way and pull off the wheel",
+      "Mount the spare tire",
+      "Tighten the nuts fully"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage uses 'then' right after raising the car: 'remove the nuts the rest of the way and pull off the wheel.' Loosening the nuts on the ground happens 'first,' before the jack. Mounting and the final tightening are signaled by 'finally,' so they come last.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-TS-6",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"For years the town's only bridge was too narrow for two cars to pass, causing daily backups. To fix this, the county built a second lane beside the old one. Traffic now flows in both directions without delay.\"\n\nHow is this passage organized?",
+    "choices": [
+      "Compare and contrast",
+      "A list of unrelated facts",
+      "Problem followed by a solution",
+      "Events in reverse time order"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage names a problem (a narrow bridge causing backups), then signals a fix with 'to fix this' and describes the new lane that solved it. That is a problem-solution structure. Nothing is being compared, and the facts are clearly related, so those choices do not fit.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-TS-7",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the passage below and answer the question.\n\n\"The factory dumped waste into the river for years. As a result, fish populations downstream collapsed. Because the fish vanished, the local fishing businesses soon closed.\"\n\nWhich choice best describes the order of causes and effects in the passage?",
+    "choices": [
+      "Fishing businesses closed, which caused the factory to dump waste",
+      "Dumping waste led to fish dying, which led to businesses closing",
+      "Fish died first, which caused the factory to start dumping",
+      "Businesses closing caused the fish to vanish"
+    ],
+    "correct_index": 1,
+    "explanation": "The signal words trace the chain: dumping waste, then 'as a result' fish collapsed, then 'because the fish vanished' the businesses closed. Choice B follows that order. The other choices reverse cause and effect, putting the result before the thing that caused it.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-TS-8",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"The road was washed out by morning. It had collapsed during the night, after a week of rain soaked the soil beneath it. By the time crews arrived, the gap was twenty feet wide.\"\n\nWhich event happened first?",
+    "choices": [
+      "The road was washed out by morning",
+      "Crews arrived at the gap",
+      "A week of rain soaked the soil",
+      "The gap grew to twenty feet wide"
+    ],
+    "correct_index": 2,
+    "explanation": "Although the washed-out road is mentioned first, the passage explains it collapsed 'after a week of rain soaked the soil,' so the rain happened earliest. The collapse and washout came next, and the crews arriving 'by the time' the gap was wide came last. The order of telling is not the order of events.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-TS-9",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"New employees first complete safety orientation. Once that is done, they shadow an experienced worker for a week. After the shadowing period, they handle tasks on their own under light supervision. The handbook ends its onboarding chapter at this point.\"\n\nBased on the passage's pattern, what would most likely come next after light supervision?",
+    "choices": [
+      "Repeating the safety orientation",
+      "Working fully on their own",
+      "Quitting the company",
+      "Starting the shadowing week again"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage moves forward through stages of growing independence: orientation, shadowing, then light supervision. The next step in that pattern is working fully on their own. Repeating orientation or restarting shadowing reverses the forward progression, and quitting breaks the pattern of advancing toward independence.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-TS-10",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the passage below and answer the question.\n\n\"The new alarm system was meant to deter break-ins. However, thieves quickly learned to cut the outdoor wires before entering. To counter this, the company moved to a wireless system that cannot be disabled from outside.\"\n\nHow is this passage organized?",
+    "choices": [
+      "A simple list of security products",
+      "Compare and contrast of two companies",
+      "A problem, a complication, and a new solution",
+      "Events told in reverse order"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage sets up a solution (the alarm), introduces a complication with 'however' (thieves cut the wires), then offers a new fix with 'to counter this' (the wireless system). That problem-complication-solution flow matches choice C. It is not a plain list, and only one company is involved, so those choices do not fit.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-TS-11",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"By the time the medics reached him, the soldier was already stable. They had been delayed because the radio call came in garbled, so the location had to be confirmed twice before anyone moved.\"\n\nAccording to the passage, which event happened earliest?",
+    "choices": [
+      "The medics reached the soldier",
+      "The radio call came in garbled",
+      "The soldier became stable",
+      "The location was confirmed twice"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage explains the delay started 'because the radio call came in garbled,' which then forced the location to be confirmed twice before the medics moved and finally reached the soldier. So the garbled call is the earliest event. The medics reaching him is described first but happened last, a trap of telling order versus event order.",
+    "status": "verified"
+  },
+  {
+    "external_key": "PC-B21-TS-12",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 4,
+    "stem": "Read the passage below and answer the question.\n\n\"The essay opens by describing how cities flooded as sea levels rose. It then steps back to trace the cause: decades of warming had melted distant glaciers. Only in its final lines does the essay turn to what coastal towns might do about it.\"\n\nHow is the essay organized, according to the passage?",
+    "choices": [
+      "Strict step-by-step time order from start to finish",
+      "Effect first, then cause, then a turn toward solutions",
+      "A side-by-side comparison of two cities",
+      "A list of definitions with examples"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage says the essay 'opens by describing' the flooding (an effect), 'then steps back to trace the cause' (warming and melting glaciers), and only at the end 'turn[s] to what coastal towns might do' (solutions). That effect-cause-solution order matches choice B. It is not strict forward time order, because the cause is given after its effect. No two cities are compared and no list of definitions appears.",
+    "status": "verified"
+  }
+]

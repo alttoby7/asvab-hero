@@ -81,6 +81,24 @@
     "recommended_drill": "subtest_drill_ar"
   },
   {
+    "id": "ar.averages",
+    "subtest": "AR",
+    "slug": "averages",
+    "title": "Averages & Mean",
+    "sort_order": 6,
+    "study_guide_href": "/study/ar/averages",
+    "recommended_drill": "subtest_drill_ar"
+  },
+  {
+    "id": "ar.work-rate",
+    "subtest": "AR",
+    "slug": "work-rate",
+    "title": "Work & Rate Problems",
+    "sort_order": 7,
+    "study_guide_href": "/study/ar/work-rate",
+    "recommended_drill": "subtest_drill_ar"
+  },
+  {
     "id": "wk.synonyms",
     "subtest": "WK",
     "slug": "synonyms",
@@ -117,6 +135,24 @@
     "recommended_drill": "subtest_drill_wk"
   },
   {
+    "id": "wk.antonyms",
+    "subtest": "WK",
+    "slug": "antonyms",
+    "title": "Antonyms & Opposites",
+    "sort_order": 5,
+    "study_guide_href": "/study/wk/antonyms",
+    "recommended_drill": "subtest_drill_wk"
+  },
+  {
+    "id": "wk.multiple-meaning-words",
+    "subtest": "WK",
+    "slug": "multiple-meaning-words",
+    "title": "Multiple-Meaning Words",
+    "sort_order": 6,
+    "study_guide_href": "/study/wk/multiple-meaning-words",
+    "recommended_drill": "subtest_drill_wk"
+  },
+  {
     "id": "pc.main-idea",
     "subtest": "PC",
     "slug": "main-idea",
@@ -150,6 +186,24 @@
     "title": "Author Tone & Purpose",
     "sort_order": 4,
     "study_guide_href": "/study/pc/author-tone-purpose",
+    "recommended_drill": "subtest_drill_pc"
+  },
+  {
+    "id": "pc.vocabulary-in-context",
+    "subtest": "PC",
+    "slug": "vocabulary-in-context",
+    "title": "Vocabulary in Context",
+    "sort_order": 5,
+    "study_guide_href": "/study/pc/vocabulary-in-context",
+    "recommended_drill": "subtest_drill_pc"
+  },
+  {
+    "id": "pc.text-structure",
+    "subtest": "PC",
+    "slug": "text-structure",
+    "title": "Sequence & Text Structure",
+    "sort_order": 6,
+    "study_guide_href": "/study/pc/text-structure",
     "recommended_drill": "subtest_drill_pc"
   },
   {
@@ -195,6 +249,24 @@
     "title": "Number Properties & Absolute Value",
     "sort_order": 5,
     "study_guide_href": "/study/mk/number-properties",
+    "recommended_drill": "subtest_drill_mk"
+  },
+  {
+    "id": "mk.order-of-operations",
+    "subtest": "MK",
+    "slug": "order-of-operations",
+    "title": "Order of Operations",
+    "sort_order": 6,
+    "study_guide_href": "/study/mk/order-of-operations",
+    "recommended_drill": "subtest_drill_mk"
+  },
+  {
+    "id": "mk.inequalities",
+    "subtest": "MK",
+    "slug": "inequalities",
+    "title": "Inequalities",
+    "sort_order": 7,
+    "study_guide_href": "/study/mk/inequalities",
     "recommended_drill": "subtest_drill_mk"
   },
   {
