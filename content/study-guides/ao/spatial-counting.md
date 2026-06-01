@@ -2,7 +2,7 @@
 topic_id: ao.spatial-counting
 subtest: AO
 title: Spatial Counting & Orientation
-summary: Count hidden cubes and track directional relationships accurately, systematic layering beats eyeballing every time.
+summary: Cube-counting and orientation drills sharpen the 3D tracking and left/right discipline that support Assembling Objects. Systematic layering beats eyeballing every time.
 formula_reference:
   - "Total cubes in a rectangular stack: length × width × height (use this to double-check your count)"
   - "Visible cubes: cubes touching at least one exposed surface, does not include cubes completely buried inside"
@@ -23,11 +23,13 @@ worked_examples:
     solution: "You face south. Your left is east. The flagpole is east of the building. Your colleague faces west. East is now behind them. The flagpole is behind your colleague."
 ---
 
-## What spatial counting tests
+## How this fits the AO section
 
-Spatial counting and orientation questions give you a drawing of stacked cubes or a map-style arrangement and ask two types of questions: (1) How many cubes are present? and (2) What is the spatial relationship between two reference points when the viewer's orientation changes?
+The actual Assembling Objects questions are connector and puzzle items, not cube-counting or compass problems. These drills are here as spatial-reasoning practice: counting hidden cubes trains 3D tracking, and orientation problems train left/right discipline, both of which pay off when you rotate and fit shapes on the real items. See the Pattern Assembly guide for the actual AO formats.
 
-Both types punish rushing and reward a systematic approach.
+One scope note: AO counts only for the Navy and is not part of your AFQT, so study it last if you do not need it.
+
+These drills come in two flavors: (1) how many cubes are present, and (2) the spatial relationship between two points when the viewer's orientation changes. Both punish rushing and reward a systematic approach.
 
 ## Counting cubes the right way
 

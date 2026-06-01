@@ -2,7 +2,7 @@
 topic_id: ao.paper-folding-nets
 subtest: AO
 title: Paper Folding & Nets
-summary: Predict where a punched hole or a marked face ends up after folds, the key is tracing each fold step-by-step, never jumping ahead.
+summary: Paper-folding and cube-net drills build the fold/unfold spatial visualization that supports Assembling Objects. Trace each fold step by step, never jump ahead.
 formula_reference:
   - "A cube net has exactly 6 squares arranged so no two squares that will become opposite faces are adjacent in the net"
   - "Opposite faces of a cube: in a standard cross-shaped net, the center square is always opposite the one at the far end of the vertical strip"
@@ -23,9 +23,13 @@ worked_examples:
     solution: "Label the squares: Center (C), Top (T), Bottom (B), Left (L), Right (R), and Far-right (F). When folding: C becomes the bottom face. T folds to become the front face. B folds to become the back face. L folds to become the left face. R folds to become the right face. F wraps over to become the top face. Opposite pairs: C (bottom) opposite F (top); T (front) opposite B (back); L (left) opposite R (right)."
 ---
 
-## The core challenge of paper folding
+## How this fits the AO section
 
-AO paper-folding questions show a sequence of fold operations on a flat sheet, sometimes followed by a hole punch. You need to predict what the unfolded sheet looks like. The challenge is that every fold is a mirror operation, features do not just slide, they reflect across the fold line.
+The actual Assembling Objects questions are connector and puzzle items, not fold-and-punch problems (those appear on aviation batteries like the AFOQT, not the ASVAB). Paper folding and cube nets are here as spatial-visualization practice: they train the same fold/unfold, mirror-across-a-line reasoning you use when you mentally fit pieces together. Treat this as a warm-up, and see the Pattern Assembly guide for the real AO formats.
+
+One scope note: AO counts only for the Navy and is not part of your AFQT, so study it last if you do not need it.
+
+The core mechanic to master here: every fold is a mirror operation, features do not just slide, they reflect across the fold line.
 
 The most important habit: process folds one at a time, in the exact order given. Never skip ahead.
 

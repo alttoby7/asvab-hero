@@ -2,7 +2,7 @@
 topic_id: ao.3d-visualization
 subtest: AO
 title: 3D Object Visualization
-summary: Train your mind to rotate and inspect a 3D object without touching it, the AO section rewards test-takers who can hold a stable mental model under pressure.
+summary: Mental rotation is the core spatial muscle behind Assembling Objects. Train it on simple 3D objects so the actual connector and puzzle items feel easier.
 formula_reference:
   - "Opposite faces of a standard cube are parallel and never share an edge"
   - "A cube has 6 faces, 12 edges, and 8 vertices, count carefully before selecting"
@@ -23,11 +23,11 @@ worked_examples:
     solution: "Tilting 90° forward rotates around the horizontal left-right axis. Width stays 2 units. The old depth (4 units) becomes the new height. The old height (3 units) becomes the new depth. New dimensions: 2 wide, 4 tall, 3 deep."
 ---
 
-## What the AO section is actually testing
+## How this fits the AO section
 
-Assembling Objects is the only ASVAB subtest that tests pure spatial reasoning, no formulas, no vocabulary. The question shows you a 3D shape from one angle and asks you to identify how it looks from a different angle, or which of four answer choices matches the object after a specified rotation.
+Assembling Objects is a spatial-reasoning subtest, no formulas, no vocabulary. Its actual questions come in two forms: connector items (shapes joined at labeled points) and puzzle items (fitting cut-up pieces together). Both lean on one underlying skill, mental rotation: can you turn a shape in your head without losing track of which part is which? This guide drills that skill on simple 3D objects so the real items feel slower and clearer.
 
-The skill being tested is mental rotation: can you manipulate a three-dimensional image in your head without losing track of which face is which?
+One scope note: AO counts only for the Navy and is not part of your AFQT. If you are not testing for a Navy job that uses it, study it last. For the actual AO question formats, see the Pattern Assembly guide.
 
 ## The anchor-face method
 

@@ -2,7 +2,7 @@
 topic_id: ao.pattern-assembly
 subtest: AO
 title: Pattern Assembly & Rotation
-summary: Identify which puzzle pieces fit together and which rotated shape matches the target, match edges first, then confirm interior features.
+summary: The two real AO formats are connector items and puzzle assembly. Match edges first, mind rotation vs. mirror image, then confirm interior features.
 formula_reference:
   - "Edge-length matching: two pieces can join only if the shared edge has equal length on both pieces"
   - "Interior angle check: at each joining corner, the angles from both pieces must sum to 360° for a flat (non-overlapping) assembly"
@@ -20,16 +20,21 @@ worked_examples:
   - prompt: "Two pieces must combine to form a 2×4 rectangle. Piece 1 is an L-shape: a 2×3 rectangle with a 1×1 square removed from its top-right corner. Describe the exact shape of Piece 2 that would complete the rectangle."
     solution: "The full rectangle is 2×4, area = 8 square units. Piece 1 is a 2×3 rectangle minus a 1×1 corner = 6 - 1 = 5 square units. Piece 2 must have area = 8 - 5 = 3 square units. The missing region is an L-shape mirroring the cut corner: a 1×3 strip along the right side of the rectangle PLUS the 1×1 square that was removed. Combined, Piece 2 is a 1×3 column on the right plus a 1×1 notch extending left at the top, it resembles a backward L rotated 180°."
   - prompt: "A flat shape that looks like a plus sign (+) is shown. The answer choices show four shapes: (A) the plus sign rotated 45°, appearing as an X; (B) the plus sign at its original 0° orientation; (C) the plus sign rotated 90° (looks identical to the original because the plus sign has 4-fold symmetry); (D) the mirror image of the plus sign. Which choices are identical to the original plus sign (after any allowed rotation)?"
-    solution: "A plus sign has 4-fold rotational symmetry, rotating by 90°, 180°, or 270° produces the same shape. Choice A (45° rotation giving an X shape) is NOT the same shape. Choice B (0°) is identical. Choice C (90° rotation) looks identical to B due to the 4-fold symmetry. Choice D (mirror image), a plus sign is also symmetric under reflection, so D is also identical. Correct: B, C, and D match; A does not."
+    solution: "A plus sign has 4-fold rotational symmetry, rotating by 90°, 180°, or 270° produces the same shape. Choice A (45° rotation giving an X shape) is NOT the same shape. Choice B (0°) is identical. Choice C (90° rotation) looks identical to B due to the 4-fold symmetry. Choice D (mirror image): a plus sign is symmetric, so its mirror is identical to itself, a special case. For an asymmetric piece a mirror image would NOT fit, that is the rule to remember. Correct: B, C, and D match; A does not."
 ---
 
-## What pattern assembly requires
+## The two AO question formats
 
-Pattern assembly questions give you a target shape and ask which of four answer pieces either (a) matches the target after some rotation, or (b) fits together with another given piece to form the target. The skill is combining edge-length matching with an awareness of chirality, whether a shape has been rotated or mirrored.
+Assembling Objects has exactly two item types, and both come down to the same skills:
+
+- Connector items: you see two shapes, each marked with a labeled point (A on one, B on the other), and pick the answer that joins them correctly at those points, with the right orientation and matching edge.
+- Puzzle (jigsaw) items: you see a set of disassembled pieces and pick the answer that shows them correctly fit together into one shape.
+
+Both reward edge-length matching plus an awareness of chirality, whether a shape has been rotated or mirrored. (Scope note: AO counts only for the Navy and is not part of your AFQT.)
 
 ## Rotation vs. mirror image, the critical distinction
 
-This is the most consequential concept in the entire section. The ASVAB does not allow you to flip a piece over. Rotation keeps a shape in the same plane (think spinning a piece on a table). Mirroring flips it through the paper, producing its reflection.
+This is the concept the section leans on most. The ASVAB does not allow you to flip a piece over. Rotation keeps a shape in the same plane (think spinning a piece on a table). Mirroring flips it through the paper, producing its reflection.
 
 A right triangle with the right angle at the bottom-left and a mirror-image right triangle with the right angle at the bottom-right are not interchangeable. They may look nearly identical in a quick scan, especially when both are present as distractors.
 
