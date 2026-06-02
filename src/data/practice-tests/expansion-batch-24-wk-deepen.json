@@ -1,0 +1,578 @@
+[
+  {
+    "external_key": "WK-B24-ANT-1",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "RAPID is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "slow",
+      "quick",
+      "loud",
+      "narrow"
+    ],
+    "correct_index": 0,
+    "explanation": "Rapid means moving or happening fast. Its opposite is slow, moving at low speed. 'Quick' is the synonym trap, a direct match for rapid. Loud describes sound and narrow describes width, neither related to speed.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-2",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "ARRIVE is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "depart",
+      "reach",
+      "build",
+      "answer"
+    ],
+    "correct_index": 0,
+    "explanation": "Arrive is a verb meaning to reach a place. Its opposite is depart, to leave a place. 'Reach' is the synonym trap, since reaching a destination is the same as arriving. Build and answer are unrelated actions.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-3",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "PERMANENT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "temporary",
+      "lasting",
+      "heavy",
+      "distant"
+    ],
+    "correct_index": 0,
+    "explanation": "Permanent means lasting without end. Its opposite is temporary, lasting only a short time. 'Lasting' is the synonym trap, a close match for permanent. Heavy describes weight and distant describes space, neither related to duration.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-4",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "ACCEPT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "reject",
+      "receive",
+      "repair",
+      "follow"
+    ],
+    "correct_index": 0,
+    "explanation": "Accept is a verb meaning to take or agree to something offered. Its opposite is reject, to refuse it. 'Receive' is the synonym trap, since receiving is close to accepting. Repair and follow are unrelated actions.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-5",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "HUMBLE is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "arrogant",
+      "modest",
+      "wealthy",
+      "quiet"
+    ],
+    "correct_index": 0,
+    "explanation": "Humble means modest and not proud. Its opposite is arrogant, full of self-importance. 'Modest' is the synonym trap, a direct match for humble. Wealthy and quiet describe money and sound, neither related to pride.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-6",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "RIGID is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "flexible",
+      "stiff",
+      "bright",
+      "honest"
+    ],
+    "correct_index": 0,
+    "explanation": "Rigid means stiff and not able to bend. Its opposite is flexible, able to bend easily. 'Stiff' is the synonym trap, a direct match for rigid. Bright describes light and honest describes truthfulness, neither related to stiffness.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-7",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "VACANT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "occupied",
+      "empty",
+      "fragile",
+      "rapid"
+    ],
+    "correct_index": 0,
+    "explanation": "Vacant means empty or not in use. Its opposite is occupied, filled or in use. 'Empty' is the synonym trap, a direct match for vacant. Fragile describes breakability and rapid describes speed, neither related to whether a space is filled.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-8",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "DEFEND is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "attack",
+      "protect",
+      "measure",
+      "gather"
+    ],
+    "correct_index": 0,
+    "explanation": "Defend is a verb meaning to protect from harm. Its opposite is attack, to act against with force. 'Protect' is the synonym trap, a direct match for defend. Measure and gather are unrelated actions.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-9",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "FERTILE is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "barren",
+      "productive",
+      "distant",
+      "noisy"
+    ],
+    "correct_index": 0,
+    "explanation": "Fertile means able to produce abundantly, as rich soil does. Its opposite is barren, unable to produce. 'Productive' is the synonym trap, a close match for fertile. Distant describes space and noisy describes sound, neither related to productivity.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-10",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "DILIGENT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "lazy",
+      "hardworking",
+      "wealthy",
+      "cheerful"
+    ],
+    "correct_index": 0,
+    "explanation": "Diligent means careful and hardworking. Its opposite is lazy, unwilling to work or make effort. 'Hardworking' is the synonym trap, a direct match for diligent. Wealthy and cheerful describe money and mood, neither related to effort.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-11",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "OBSCURE is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "clear",
+      "unclear",
+      "heavy",
+      "distant"
+    ],
+    "correct_index": 0,
+    "explanation": "Obscure means not clearly understood or hard to see. Its opposite is clear, easily seen or understood. 'Unclear' is the synonym trap, a direct match for obscure. Heavy describes weight and distant describes space, neither related to clarity.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-12",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "HOSTILE is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "friendly",
+      "unfriendly",
+      "expensive",
+      "rapid"
+    ],
+    "correct_index": 0,
+    "explanation": "Hostile means unfriendly and ready to oppose. Its opposite is friendly, warm and welcoming. 'Unfriendly' is the synonym trap, a direct match for hostile. Expensive describes cost and rapid describes speed, neither related to attitude.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-13",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "FEEBLE is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "strong",
+      "weak",
+      "bright",
+      "honest"
+    ],
+    "correct_index": 0,
+    "explanation": "Feeble means lacking strength, weak. Its opposite is strong, having great power or force. 'Weak' is the synonym trap, a direct match for feeble. Bright describes light and honest describes truthfulness, neither related to strength.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-14",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "LENIENT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "strict",
+      "merciful",
+      "wealthy",
+      "quiet"
+    ],
+    "correct_index": 0,
+    "explanation": "Lenient means not harsh, willing to forgive or go easy. Its opposite is strict, demanding and firm in rules. 'Merciful' is the synonym trap, a close match for lenient. Wealthy and quiet describe money and sound, neither related to how firmly rules are enforced.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-15",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "FRUGAL is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "wasteful",
+      "thrifty",
+      "cheerful",
+      "distant"
+    ],
+    "correct_index": 0,
+    "explanation": "Frugal means careful with money, thrifty. Its opposite is wasteful, spending or using carelessly. 'Thrifty' is the synonym trap, a direct match for frugal. Cheerful describes mood and distant describes space, neither related to spending habits.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-16",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 4,
+    "stem": "VERBOSE is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "concise",
+      "wordy",
+      "honest",
+      "rapid"
+    ],
+    "correct_index": 0,
+    "explanation": "Verbose means using too many words, wordy. Its opposite is concise, expressing much in few words. 'Wordy' is the synonym trap, a direct match for verbose. Honest describes truthfulness and rapid describes speed, neither related to length of speech.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-17",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 4,
+    "stem": "AMIABLE is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "disagreeable",
+      "friendly",
+      "wealthy",
+      "talkative"
+    ],
+    "correct_index": 0,
+    "explanation": "Amiable means good-natured and pleasant, easy to like. Its opposite is disagreeable, unpleasant and hard to get along with. 'Friendly' is the synonym trap, a direct match for amiable. Wealthy and talkative describe money and speech, neither related to pleasantness.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-ANT-18",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 4,
+    "stem": "ARDUOUS is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "effortless",
+      "difficult",
+      "honest",
+      "distant"
+    ],
+    "correct_index": 0,
+    "explanation": "Arduous means hard to do, requiring great effort. Its opposite is effortless, requiring little or no effort. 'Difficult' is the synonym trap, a direct match for arduous. Honest describes truthfulness and distant describes space, neither related to how hard a task is.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-1",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In the sentence 'She put a stamp on the LETTER before mailing it,' the word LETTER most nearly means:",
+    "choices": [
+      "a written message sent by mail",
+      "a symbol of the alphabet",
+      "a person who lets property",
+      "an award worn on a jacket"
+    ],
+    "correct_index": 0,
+    "explanation": "Letter can mean a piece of mail, a character of the alphabet, an athletic award, or one who lets out property. 'Put a stamp on it before mailing' points to a written message sent by mail. A symbol of the alphabet and the other senses do not fit something you stamp and mail.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-2",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In the sentence 'He used a sharp knife to PARE the apple,' the word PARE most nearly means:",
+    "choices": [
+      "to trim off the outer layer",
+      "two of a kind",
+      "a sweet fruit",
+      "to join together"
+    ],
+    "correct_index": 0,
+    "explanation": "Pare is a verb meaning to cut away an outer layer or peel. With 'a sharp knife' and 'the apple,' it means to trim off the skin. 'Two of a kind' (pair) and 'a sweet fruit' (pear) are different words that only sound the same. To join together is not a meaning of pare.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-3",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In the sentence 'The lamp gave off a soft LIGHT,' the word LIGHT most nearly means:",
+    "choices": [
+      "brightness that lets us see",
+      "not heavy",
+      "to set on fire",
+      "pale in color"
+    ],
+    "correct_index": 0,
+    "explanation": "Light can mean brightness, not heavy, to ignite, or pale in color. A lamp that 'gave off a soft light' uses the brightness meaning. Not heavy and pale in color are adjective senses that do not fit something a lamp gives off, and to set on fire is a verb that does not match.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-4",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In the sentence 'The runner came in LAST in the race,' the word LAST most nearly means:",
+    "choices": [
+      "final, after all others",
+      "to continue over time",
+      "a mold for shaping a shoe",
+      "most recent"
+    ],
+    "correct_index": 0,
+    "explanation": "Last can mean final in order, to endure, a shoemaker's mold, or most recent. 'Came in last in the race' means final, after all others. To continue over time is a verb meaning, a shoe mold is a separate noun, and most recent (as in 'last week') does not fit a finishing position.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-5",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In the sentence 'The hikers reached the highest POINT on the trail,' the word POINT most nearly means:",
+    "choices": [
+      "a specific place or spot",
+      "the sharp end of an object",
+      "a unit of score",
+      "the main idea"
+    ],
+    "correct_index": 0,
+    "explanation": "Point can mean a place or spot, a sharp tip, a unit of score, or the main idea. 'The highest point on the trail' means a specific place or spot. The sharp end of an object, a unit of score, and the main idea are real senses of point but do not fit a location on a trail.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-6",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In the sentence 'The factory will SHIP the order on Friday,' the word SHIP most nearly means:",
+    "choices": [
+      "to send goods to a destination",
+      "a large boat",
+      "a crew of sailors",
+      "to take on water"
+    ],
+    "correct_index": 0,
+    "explanation": "Ship can be a noun meaning a large boat or, as a verb, to send goods. 'Will ship the order on Friday' uses the verb meaning, to send goods to a destination. A large boat and a crew of sailors are noun meanings that do not fit sending an order. To take on water is a separate nautical sense that does not match.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-7",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In the sentence 'A heavy SPRING holds the door shut,' the word SPRING most nearly means:",
+    "choices": [
+      "a coiled piece of metal",
+      "the season after winter",
+      "a source of water",
+      "to leap suddenly"
+    ],
+    "correct_index": 0,
+    "explanation": "Spring can mean a coil, a season, a water source, or to leap. A 'heavy spring' that 'holds the door shut' is a coiled piece of metal. The season after winter, a source of water, and to leap suddenly are real meanings of spring but do not fit a part that holds a door closed.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-8",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In the sentence 'The hostess showed us to our SEAT,' the word SEAT most nearly means:",
+    "choices": [
+      "a place to sit",
+      "to install a part firmly",
+      "the center of authority",
+      "a share in an organization"
+    ],
+    "correct_index": 0,
+    "explanation": "Seat can mean a place to sit, to set firmly in place, a center of power, or membership in a body. 'Showed us to our seat' means a place to sit. To install a part firmly is a verb meaning, while the center of authority and a share in an organization are figurative senses that do not fit being shown where to sit.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-9",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In the sentence 'The team will DRILL the new play until they master it,' the word DRILL most nearly means:",
+    "choices": [
+      "to practice by repetition",
+      "a tool that bores holes",
+      "to make a hole",
+      "a coarse cotton fabric"
+    ],
+    "correct_index": 0,
+    "explanation": "Drill can mean a boring tool, to bore a hole, to train by repetition, or a heavy fabric. 'Will drill the new play until they master it' means to practice by repetition. A tool that bores holes and a coarse cotton fabric are noun meanings, and to make a hole does not fit practicing a play.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-10",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In the sentence 'The two nations agreed to forge a lasting BOND,' the word BOND most nearly means:",
+    "choices": [
+      "a connection between people or groups",
+      "money paid to release a prisoner",
+      "a certificate of debt",
+      "a glue that holds things together"
+    ],
+    "correct_index": 0,
+    "explanation": "Bond can mean a tie between people, bail money, a financial certificate, or an adhesive. 'A lasting bond' between two nations means a connection between people or groups. Money paid to release a prisoner, a certificate of debt, and a glue are real meanings of bond but do not fit a relationship between nations.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-11",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In the sentence 'Cooks STRAIN the broth to remove the bones,' the word STRAIN most nearly means:",
+    "choices": [
+      "to pass through a filter",
+      "to injure by overuse",
+      "great pressure or stress",
+      "a particular variety of plant or germ"
+    ],
+    "correct_index": 0,
+    "explanation": "Strain can mean to filter, to injure by overuse, stress or pressure, or a variety of organism. 'Strain the broth to remove the bones' means to pass through a filter. To injure by overuse and great pressure are real senses of strain, and a particular variety of plant or germ does not fit filtering broth.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-12",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In the sentence 'The general decided to MOUNT a surprise attack at dawn,' the word MOUNT most nearly means:",
+    "choices": [
+      "to organize and launch",
+      "to climb up onto",
+      "a tall hill or peak",
+      "a support that holds something in place"
+    ],
+    "correct_index": 0,
+    "explanation": "Mount can mean to climb onto, to organize and carry out, a peak, or a support for an object. 'Mount a surprise attack' means to organize and launch. To climb up onto is a different verb sense, while a tall hill and a support are noun meanings that do not fit launching an attack.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-13",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In the sentence 'The witness gave a clear ACCOUNT of what happened,' the word ACCOUNT most nearly means:",
+    "choices": [
+      "a description of events",
+      "a record of money at a bank",
+      "to consider or regard",
+      "a reason or explanation"
+    ],
+    "correct_index": 0,
+    "explanation": "Account can mean a description, a bank record, to consider, or a reason. A witness who 'gave a clear account of what happened' means a description of events. A record of money is a noun meaning that does not fit, to consider is a verb sense, and a reason or explanation does not match telling what happened.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-14",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In the sentence 'The senator holds a great deal of WEIGHT in the committee,' the word WEIGHT most nearly means:",
+    "choices": [
+      "influence or importance",
+      "how heavy something is",
+      "a heavy object used for lifting",
+      "a burden of worry"
+    ],
+    "correct_index": 0,
+    "explanation": "Weight can mean heaviness, a lifting object, a worry, or influence. 'Holds a great deal of weight in the committee' means influence or importance. How heavy something is and a heavy object are literal senses that do not fit, and a burden of worry does not match having power in a committee.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-15",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 4,
+    "stem": "The word SOUND is used the same way in 'The bridge was still SOUND after the storm' as it is in:",
+    "choices": [
+      "After the repairs, the engine was sound again.",
+      "The sound of the bell carried across the valley.",
+      "We could sound the depth of the lake with a rope.",
+      "She gave him sound advice about the job."
+    ],
+    "correct_index": 0,
+    "explanation": "Sound can be a noun (a noise), a verb (to measure depth), or an adjective meaning either in good condition or sensible. In the prompt, a bridge 'still sound after the storm' means in good condition. Choice A, an engine 'sound again' after repairs, uses that same meaning. Choice B is the noun, choice C is the verb, and choice D means sensible, a different adjective sense.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-16",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "The word KEEN is used the same way in 'The hawk has KEEN eyesight' as it is in:",
+    "choices": [
+      "The dog has a keen sense of smell.",
+      "She was keen to start the new project.",
+      "The mourners began to keen at the grave.",
+      "He felt a keen disappointment at the news."
+    ],
+    "correct_index": 0,
+    "explanation": "Keen can mean sharp or acute (of senses), eager, intense (of feeling), or, as a verb, to wail in grief. In the prompt, 'keen eyesight' means sharp or acute. Choice A, a 'keen sense of smell,' uses that same meaning. Choice B means eager, choice C is the verb to wail, and choice D means intense in feeling, which are different senses.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-17",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 4,
+    "stem": "The word RELIEVE is used the same way in 'These pills RELIEVE the pain quickly' as it is in:",
+    "choices": [
+      "A warm bath will relieve sore muscles.",
+      "The next shift came to relieve the guards.",
+      "Tall hedges relieve the plain brick wall.",
+      "The general was relieved of his command."
+    ],
+    "correct_index": 0,
+    "explanation": "Relieve can mean to ease pain or distress, to take over a duty from someone, to break up monotony, or to remove from a position. In the prompt, pills that 'relieve the pain' means to ease distress. Choice A, a bath that will 'relieve sore muscles,' uses that same meaning. Choice B means to take over a duty, choice C means to break up monotony, and choice D means to remove from a position.",
+    "status": "verified"
+  },
+  {
+    "external_key": "WK-B24-MM-18",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 4,
+    "stem": "The word EXECUTE is used the same way in 'The pilot will EXECUTE the landing carefully' as it is in:",
+    "choices": [
+      "The dancer can execute the difficult turn flawlessly.",
+      "The state did not execute the prisoner.",
+      "Both parties must execute the contract today.",
+      "The program failed to execute on the old computer."
+    ],
+    "correct_index": 0,
+    "explanation": "Execute can mean to carry out an action, to put to death, to sign a legal document, or, of software, to run. In the prompt, a pilot who will 'execute the landing' means to carry out an action. Choice A, a dancer who can 'execute the difficult turn,' uses that same meaning. Choice B means to put to death, choice C means to sign a contract, and choice D means to run a program.",
+    "status": "verified"
+  }
+]

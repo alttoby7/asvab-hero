@@ -1,0 +1,578 @@
+[
+  {
+    "external_key": "MK-B23-OOP-1",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 1,
+    "stem": "Evaluate: 7 + 6 / 3",
+    "choices": [
+      "9",
+      "4",
+      "5",
+      "13"
+    ],
+    "correct_index": 0,
+    "explanation": "Division comes before addition: 6 / 3 = 2, then 7 + 2 = 9. The choice 4 comes from adding first (7 + 6 = 13, then 13 / 3 is not clean) or from dividing 6 by 3 after wrongly using 6 / 3 then subtracting; either way it ignores order. The choice 13 forgets to divide entirely and just adds 7 + 6. The correct value is 9.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-2",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 1,
+    "stem": "Evaluate: 20 - 4 x 3",
+    "choices": [
+      "8",
+      "48",
+      "16",
+      "12"
+    ],
+    "correct_index": 0,
+    "explanation": "Multiplication comes before subtraction: 4 x 3 = 12, then 20 - 12 = 8. The choice 48 comes from subtracting first (20 - 4 = 16, then 16 x 3 = 48), which ignores order of operations. The choice 12 stops at 4 x 3 and forgets to subtract from 20. The correct value is 8.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-3",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 1,
+    "stem": "Evaluate: (12 - 3) / 3",
+    "choices": [
+      "3",
+      "11",
+      "9",
+      "4"
+    ],
+    "correct_index": 0,
+    "explanation": "Parentheses first: 12 - 3 = 9, then 9 / 3 = 3. The choice 11 comes from dividing 3 by 3 first (12 - 1 = 11), which ignores the grouping. The choice 9 stops at the parentheses and forgets to divide. The correct value is 3.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-4",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 1,
+    "stem": "Evaluate: 4^2 - 6",
+    "choices": [
+      "10",
+      "2",
+      "26",
+      "14"
+    ],
+    "correct_index": 0,
+    "explanation": "Exponents come before subtraction: 4^2 = 16, then 16 - 6 = 10. The choice 2 comes from subtracting first (4 - 6 = -2) then misreading the exponent. The choice 26 comes from doing 4 x (something) or adding instead of subtracting. The correct value is 10.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-5",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 2,
+    "stem": "Evaluate: 36 / 6 / 3",
+    "choices": [
+      "2",
+      "18",
+      "12",
+      "6"
+    ],
+    "correct_index": 0,
+    "explanation": "Two divisions are equal rank, so go left to right: 36 / 6 = 6, then 6 / 3 = 2. The choice 18 comes from dividing 6 / 3 = 2 first, then 36 / 2 = 18, which breaks the left-to-right rule. The choice 6 stops after the first division. The correct value is 2.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-6",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 2,
+    "stem": "Evaluate: 3 x 2^2 + 1",
+    "choices": [
+      "13",
+      "37",
+      "49",
+      "25"
+    ],
+    "correct_index": 0,
+    "explanation": "Exponent first: 2^2 = 4. Then multiply: 3 x 4 = 12. Then add: 12 + 1 = 13. The choice 37 comes from multiplying before squaring (3 x 2 = 6, then 6^2 = 36, then + 1 = 37), which applies the exponent in the wrong order. The choice 49 squares the whole (3 x 2 + 1) = 7. The correct value is 13.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-7",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 2,
+    "stem": "Evaluate: 9 - (2 - 7)",
+    "choices": [
+      "14",
+      "4",
+      "0",
+      "-14"
+    ],
+    "correct_index": 0,
+    "explanation": "Parentheses first: 2 - 7 = -5, then 9 - (-5) = 9 + 5 = 14. The choice 4 comes from 9 - 5 without flipping the subtracted negative. The choice 0 comes from dropping the parentheses sign entirely (9 - 2 - 7 = 0). The correct value is 14.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-8",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 2,
+    "stem": "Evaluate: 10 + 12 / 4 - 5",
+    "choices": [
+      "8",
+      "0.5",
+      "10",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "Division first: 12 / 4 = 3. Then add and subtract left to right: 10 + 3 - 5 = 8. The choice 0.5 comes from adding before dividing (10 + 12 = 22, then 22 / 4 = 5.5, then - 5 = 0.5), which does addition before division. The choice 10 forgets to subtract the 5. The correct value is 8.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-9",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 2,
+    "stem": "Evaluate: -3(4 - 9)",
+    "choices": [
+      "15",
+      "-15",
+      "-21",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "Parentheses first: 4 - 9 = -5, then -3 x (-5) = 15. The choice -15 keeps the wrong sign, forgetting that a negative times a negative is positive. The choice -21 distributes only partly (-3 x 4 = -12, then -12 - 9), mishandling the negative distribution. The correct value is 15.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-10",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 3,
+    "stem": "Evaluate: 2 + 3[10 - (4 + 2)]",
+    "choices": [
+      "14",
+      "26",
+      "50",
+      "12"
+    ],
+    "correct_index": 0,
+    "explanation": "Work inside out: 4 + 2 = 6, then 10 - 6 = 4, then 3 x 4 = 12, then 2 + 12 = 14. The choice 26 comes from adding the 2 inside the bracket before multiplying ((2 + 3) misuse or 3 x (10 - 6 + 2)). The choice 50 comes from treating (2 + 3) = 5 and multiplying by 10, ignoring the nested parentheses. The correct value is 14.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-11",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 3,
+    "stem": "Evaluate: (8 - 3)^2 - 4 x 2",
+    "choices": [
+      "17",
+      "33",
+      "2",
+      "42"
+    ],
+    "correct_index": 0,
+    "explanation": "Parentheses first: 8 - 3 = 5. Exponent: 5^2 = 25. Multiplication: 4 x 2 = 8. Then subtract: 25 - 8 = 17. The choice 33 comes from adding instead of subtracting (25 + 8). The choice 2 comes from subtracting before multiplying (25 - 4 = 21, then x 2 wrong) or doing 25 - 4 x 2 as (25 - 4) x 2 then misstep. The correct value is 17.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-12",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 3,
+    "stem": "Evaluate: 48 / (2^2 x 3)",
+    "choices": [
+      "4",
+      "16",
+      "72",
+      "8"
+    ],
+    "correct_index": 0,
+    "explanation": "Inside the parentheses, exponent first: 2^2 = 4, then 4 x 3 = 12. Then divide: 48 / 12 = 4. The choice 16 comes from squaring then dividing before multiplying (48 / 4 = 12, then a misstep) or ignoring the grouping. The choice 72 divides 48 by 2 then multiplies (24 x 3), mishandling the parentheses and exponent. The correct value is 4.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-13",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 3,
+    "stem": "Evaluate: 5 - 2 x (3 - 8)",
+    "choices": [
+      "15",
+      "-15",
+      "5",
+      "11"
+    ],
+    "correct_index": 0,
+    "explanation": "Parentheses first: 3 - 8 = -5. Then multiply: 2 x (-5) = -10. Then subtract: 5 - (-10) = 5 + 10 = 15. The choice -15 comes from doing (5 - 2) x (3 - 8) = 3 x (-5) = -15, ignoring that multiplication binds before the leftmost subtraction. The choice 5 forgets to flip the subtracted negative (5 - 10 then mishandled). The correct value is 15.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-14",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 3,
+    "stem": "Evaluate: 100 / 5^2 x 2",
+    "choices": [
+      "8",
+      "2",
+      "200",
+      "10"
+    ],
+    "correct_index": 0,
+    "explanation": "Exponent first: 5^2 = 25. Then division and multiplication left to right: 100 / 25 = 4, then 4 x 2 = 8. The choice 2 comes from multiplying 25 x 2 = 50 before dividing (100 / 50), breaking the left-to-right rule. The choice 200 multiplies 100 x 2 then divides, mishandling order. The correct value is 8.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-15",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 2,
+    "stem": "Evaluate: 6 + 2[3^2 - (8 / 4)]",
+    "choices": [
+      "20",
+      "26",
+      "16",
+      "32"
+    ],
+    "correct_index": 0,
+    "explanation": "Inside the brackets: exponent 3^2 = 9, and the inner parentheses 8 / 4 = 2, so 9 - 2 = 7. Then 2 x 7 = 14, then 6 + 14 = 20. The choice 26 comes from adding the 6 inside the multiplier ((6 + 2) x ...) instead of multiplying first. The choice 16 mishandles the exponent as 3 x 2 = 6 (6 - 2 = 4, 2 x 4 = 8, 6 + 8 = 14, then off). The correct value is 20.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-16",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 4,
+    "stem": "Evaluate: (10 - 4)^2 / [2 x (1 + 2)]",
+    "choices": [
+      "6",
+      "3",
+      "18",
+      "12"
+    ],
+    "correct_index": 0,
+    "explanation": "Numerator group: 10 - 4 = 6, then 6^2 = 36. Denominator group inside out: 1 + 2 = 3, then 2 x 3 = 6. Then divide: 36 / 6 = 6. The choice 3 comes from squaring after dividing or dividing by only the 2 then mishandling. The choice 18 divides 36 by 2 first, ignoring that the full bracket is the divisor. The correct value is 6.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-17",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 4,
+    "stem": "Evaluate: 50 - 3[2 + (4^2 - 10)]",
+    "choices": [
+      "26",
+      "24",
+      "44",
+      "8"
+    ],
+    "correct_index": 0,
+    "explanation": "Innermost: 4^2 = 16, then 16 - 10 = 6. Brackets: 2 + 6 = 8. Multiply: 3 x 8 = 24. Subtract: 50 - 24 = 26. The choice 24 stops at the product and forgets to subtract from 50. The choice 44 comes from squaring as 4 x 2 = 8 inside (8 - 10 = -2, 2 + (-2) = 0, ... ) mishandling the exponent. The correct value is 26.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-OOP-18",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 4,
+    "stem": "Evaluate: 2^3 + 4 x [15 / (1 + 4)] - 6",
+    "choices": [
+      "14",
+      "20",
+      "10",
+      "26"
+    ],
+    "correct_index": 0,
+    "explanation": "Exponent: 2^3 = 8. Inner parentheses: 1 + 4 = 5, then 15 / 5 = 3, then 4 x 3 = 12. Now combine left to right: 8 + 12 - 6 = 14. The choice 20 forgets to subtract the 6. The choice 10 mishandles the exponent as 2 x 3 = 6 (6 + 12 - 6 = 12, then off) or subtracts before multiplying. The correct value is 14.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-1",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 1,
+    "stem": "Solve for x: x + 8 > 11",
+    "choices": [
+      "x > 3",
+      "x < 3",
+      "x > 19",
+      "x > 8"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 8 from both sides: x > 3. Subtraction never flips an inequality. The choice x < 3 wrongly flips the symbol. The choice x > 19 adds 8 instead of subtracting. The correct answer is x > 3.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-2",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 1,
+    "stem": "Solve for x: 4x <= 20",
+    "choices": [
+      "x <= 5",
+      "x >= 5",
+      "x <= 80",
+      "x <= 16"
+    ],
+    "correct_index": 0,
+    "explanation": "Divide both sides by 4, a positive number, so the symbol stays: x <= 5. The choice x >= 5 wrongly flips the symbol even though 4 is positive. The choice x <= 80 multiplies by 4 instead of dividing. The correct answer is x <= 5.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-3",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 1,
+    "stem": "Solve for x: x - 6 < 2",
+    "choices": [
+      "x < 8",
+      "x > 8",
+      "x < -4",
+      "x < 12"
+    ],
+    "correct_index": 0,
+    "explanation": "Add 6 to both sides: x < 8. Adding never flips the symbol. The choice x > 8 wrongly flips it. The choice x < -4 subtracts 6 instead of adding. The correct answer is x < 8.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-4",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 1,
+    "stem": "Which inequality means 'x is at least 9'?",
+    "choices": [
+      "x >= 9",
+      "x > 9",
+      "x <= 9",
+      "x < 9"
+    ],
+    "correct_index": 0,
+    "explanation": "'At least 9' means 9 is allowed and anything bigger, so x >= 9. The choice x > 9 excludes 9, which 'more than' would mean, not 'at least'. The choice x <= 9 reverses the direction. The correct answer is x >= 9.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-5",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "Solve for x: -5x < 15",
+    "choices": [
+      "x > -3",
+      "x < -3",
+      "x < 3",
+      "x > 3"
+    ],
+    "correct_index": 0,
+    "explanation": "Divide both sides by -5 and flip the symbol because the divisor is negative: x > -3. The choice x < -3 forgets to flip. The choice x < 3 drops the negative sign on the result as well. The correct answer is x > -3.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-6",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "Solve for x: 2x - 7 >= 3",
+    "choices": [
+      "x >= 5",
+      "x <= 5",
+      "x >= -2",
+      "x >= 10"
+    ],
+    "correct_index": 0,
+    "explanation": "Add 7: 2x >= 10. Divide by 2, a positive number, so no flip: x >= 5. The choice x <= 5 wrongly flips the symbol. The choice x >= -2 subtracts 7 instead of adding it. The correct answer is x >= 5.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-7",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "Solve for x: 8 - x > 1",
+    "choices": [
+      "x < 7",
+      "x > 7",
+      "x < 9",
+      "x > -7"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 8: -x > -7. Divide by -1 and flip the symbol: x < 7. The choice x > 7 forgets to flip when dividing by the negative. The choice x < 9 adds 8 instead of subtracting. The correct answer is x < 7.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-8",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "A student needs at least 360 points across 4 equally weighted tests to pass. She has 255 points after 3 tests. What score s on the last test passes?",
+    "choices": [
+      "s >= 105",
+      "s <= 105",
+      "s >= 615",
+      "s > 105"
+    ],
+    "correct_index": 0,
+    "explanation": "'At least 360' means the total must be >= 360, so 255 + s >= 360. Subtract 255: s >= 105. The choice s <= 105 reverses the constraint. The choice s >= 615 adds 255 instead of subtracting. 'At least' includes the endpoint, so s > 105 is wrong. The correct answer is s >= 105.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-9",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "The number line shows a closed dot at 4 with shading to the left. Which inequality matches?",
+    "choices": [
+      "x <= 4",
+      "x < 4",
+      "x >= 4",
+      "x > 4"
+    ],
+    "correct_index": 0,
+    "explanation": "Shading to the left means values less than 4, and a closed dot means 4 is included, so x <= 4. The choice x < 4 uses an open dot and excludes 4, which contradicts the closed dot. The choice x >= 4 shades the wrong direction. The correct answer is x <= 4.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-10",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "Solve for x: -4x + 6 < 18",
+    "choices": [
+      "x > -3",
+      "x < -3",
+      "x > 3",
+      "x < 3"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 6: -4x < 12. Divide by -4 and flip the symbol: x > -3. The choice x < -3 forgets to flip after dividing by the negative. The choice x > 3 drops the negative sign on the result. The correct answer is x > -3.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-11",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "Solve the compound inequality: 1 <= 3x + 4 < 16",
+    "choices": [
+      "-1 <= x < 4",
+      "-1 < x <= 4",
+      "1 <= x < 4",
+      "-3 <= x < 12"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 4 from all three parts: -3 <= 3x < 12. Divide all parts by 3: -1 <= x < 4. The choice -3 <= x < 12 forgets to divide by 3. The choice -1 < x <= 4 swaps which endpoints are included. The correct answer is -1 <= x < 4.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-12",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "Solve for x: 5x + 2 < 3x - 6",
+    "choices": [
+      "x < -4",
+      "x > -4",
+      "x < -2",
+      "x < 4"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 3x from both sides: 2x + 2 < -6. Subtract 2: 2x < -8. Divide by 2, a positive number, so no flip: x < -4. The choice x > -4 wrongly flips the symbol. The choice x < -2 forgets to divide by 2 after reaching 2x < -8 (or stops early). The correct answer is x < -4.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-13",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "Solve for x: 7 - 2x <= 13",
+    "choices": [
+      "x >= -3",
+      "x <= -3",
+      "x >= 3",
+      "x <= 10"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 7: -2x <= 6. Divide by -2 and flip the symbol: x >= -3. The choice x <= -3 forgets to flip when dividing by the negative. The choice x >= 3 drops the negative on the result. The correct answer is x >= -3.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-14",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "A parking garage charges a $3 entry fee plus $2 per hour. With $15, how many whole hours h can a driver park?",
+    "choices": [
+      "h <= 6",
+      "h >= 6",
+      "h <= 9",
+      "h <= 7.5"
+    ],
+    "correct_index": 0,
+    "explanation": "Total cost must be no more than 15: 3 + 2h <= 15. Subtract 3: 2h <= 12. Divide by 2: h <= 6. The choice h <= 9 forgets the per-hour rate and just does 15 - 3 - 3. The choice h <= 7.5 ignores the entry fee (15 / 2) and also is not a whole hour. The correct answer is h <= 6.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-15",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 4,
+    "stem": "Solve for x: 3(x - 2) > 5x + 4",
+    "choices": [
+      "x < -5",
+      "x > -5",
+      "x < 5",
+      "x > 5"
+    ],
+    "correct_index": 0,
+    "explanation": "Distribute: 3x - 6 > 5x + 4. Subtract 5x: -2x - 6 > 4. Add 6: -2x > 10. Divide by -2 and flip the symbol: x < -5. The choice x > -5 forgets to flip after dividing by the negative. The choice x < 5 drops the negative sign. The correct answer is x < -5.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-16",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "Solve for x: (2x + 1) / -3 >= 3",
+    "choices": [
+      "x <= -5",
+      "x >= -5",
+      "x <= 4",
+      "x >= 5"
+    ],
+    "correct_index": 0,
+    "explanation": "Multiply both sides by -3 and flip the symbol: 2x + 1 <= -9. Subtract 1: 2x <= -10. Divide by 2 (positive, no flip): x <= -5. The choice x >= -5 forgets to flip when multiplying by the negative. The choice x <= 4 mishandles the sign and arithmetic. The correct answer is x <= -5.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-17",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 4,
+    "stem": "Solve the compound inequality: -8 <= 2 - 2x < 6",
+    "choices": [
+      "-2 < x <= 5",
+      "-2 <= x < 5",
+      "5 < x <= -2",
+      "-5 < x <= 2"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 2 from all parts: -10 <= -2x < 4. Divide all parts by -2 and flip BOTH symbols, which also swaps the order: 5 >= x > -2, written as -2 < x <= 5. The choice -2 <= x < 5 forgets to flip the symbols when dividing by the negative. The choice -5 < x <= 2 divides only the wrong numbers. The correct answer is -2 < x <= 5.",
+    "status": "verified"
+  },
+  {
+    "external_key": "MK-B23-INEQ-18",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 4,
+    "stem": "A crate weighs 12 pounds empty. Books weigh 3 pounds each. To keep the loaded crate under 50 pounds, how many books b can it hold?",
+    "choices": [
+      "b < 12.67, so at most 12 books",
+      "b <= 12",
+      "b < 16.67, so at most 16 books",
+      "b > 12.67"
+    ],
+    "correct_index": 0,
+    "explanation": "'Under 50' means strictly less than: 12 + 3b < 50. Subtract 12: 3b < 38. Divide by 3: b < 12.67, so the most whole books is 12. The choice b <= 12 wrongly uses <= when 'under' excludes the endpoint; here 12 books gives 48 pounds which is fine, but the inequality itself should be strict. The choice b < 16.67 forgets the empty crate weight (50 / 3). The choice b > 12.67 reverses the direction. The correct answer is b < 12.67, so at most 12 books.",
+    "status": "verified"
+  }
+]
