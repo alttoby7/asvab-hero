@@ -160,6 +160,13 @@ export default function JobResults({
                             ))}
                           </div>
                         )}
+                        {result.compositesUnverifiable && (
+                          <p className="mt-1 text-[11px] leading-tight text-text-tertiary">
+                            Shown because you meet the AFQT minimum. We can&apos;t
+                            verify the MAGE percentile requirement; confirm with an
+                            Air Force recruiter.
+                          </p>
+                        )}
                       </td>
                       <td className="px-4 py-3 text-text-secondary">
                         {BRANCH_NAMES[result.job.branch]}
@@ -204,6 +211,13 @@ export default function JobResults({
                         <ScoreBadge key={b.label} badge={b} />
                       ))}
                     </div>
+                  )}
+                  {result.compositesUnverifiable && (
+                    <p className="mt-1.5 text-[11px] leading-tight text-text-tertiary">
+                      Shown because you meet the AFQT minimum. We can&apos;t verify
+                      the MAGE percentile requirement; confirm with an Air Force
+                      recruiter.
+                    </p>
                   )}
                 </div>
               );

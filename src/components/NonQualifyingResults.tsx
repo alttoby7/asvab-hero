@@ -82,6 +82,12 @@ function JobRow({ result }: { result: JobEligibilityResult }) {
             ))}
           </div>
         )}
+        {result.compositesUnverifiable && (
+          <p className="mt-1 text-[11px] leading-tight text-text-tertiary">
+            MAGE percentile requirement not verifiable; confirm with an Air Force
+            recruiter.
+          </p>
+        )}
       </td>
       <td className="px-4 py-3 text-text-secondary">{BRANCH_NAMES[result.job.branch]}</td>
       <td className="px-4 py-3 text-text-tertiary">{result.job.category}</td>
@@ -112,6 +118,12 @@ function JobCard({ result }: { result: JobEligibilityResult }) {
             <ScoreBadge key={b.label} badge={b} />
           ))}
         </div>
+      )}
+      {result.compositesUnverifiable && (
+        <p className="mt-1.5 text-[11px] leading-tight text-text-tertiary">
+          MAGE percentile requirement not verifiable; confirm with an Air Force
+          recruiter.
+        </p>
       )}
     </div>
   );
