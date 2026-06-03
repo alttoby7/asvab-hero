@@ -1,5 +1,7 @@
 # CONTINUITY — Official-score efficacy + email reconcile (2026-06-03)
 
+**Status: SHIPPED + committed + pushed.** asvab-hero `479c6c5` → origin/main; personal-dashboard `06df6c2` → origin/main. Migration applied to prod, dashboard deployed (winning.basecampdigital.pro), reconcile cron live on droplet. Nothing pending.
+
 Two shipped pieces this session: (1) an operator efficacy view of **official ASVAB score gains**, surfaced in the personal dashboard, and (2) a **signup → Listmonk reconcile** that closes the fire-and-forget gap so every account signup enters the marketing drip.
 
 ## 1. Official-score efficacy (asvabhero)
