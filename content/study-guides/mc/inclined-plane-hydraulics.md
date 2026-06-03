@@ -26,6 +26,8 @@ worked_examples:
 diagrams:
   - type: inclined-plane
     after: "Inclined planes: the long-cut principle"
+  - type: hydraulics
+    after: "Hydraulics: Pascal's law in practice"
 ---
 
 ## What the ASVAB is testing
