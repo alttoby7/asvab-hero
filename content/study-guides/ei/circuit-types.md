@@ -31,6 +31,8 @@ diagrams:
     after: "Parallel circuits: multiple branches"
     props:
       mode: parallel
+  - type: circuit-interactive
+    after: "How to attack circuit questions"
 ---
 
 ## What the ASVAB is actually testing

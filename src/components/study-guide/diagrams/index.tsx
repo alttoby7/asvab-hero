@@ -17,6 +17,7 @@ import RightTriangleInteractive from "./RightTriangleInteractive";
 import LeverInteractive from "./LeverInteractive";
 import NumberLineInteractive from "./NumberLineInteractive";
 import FractionBarInteractive from "./FractionBarInteractive";
+import CircuitInteractive from "./CircuitInteractive";
 
 const ORANGE = "#f97316";
 const ORANGE_DIM = "rgba(249,115,22,0.15)";
@@ -398,6 +399,7 @@ const REGISTRY: Record<string, (props: any) => ReactNode> = {
   "ohms-law-triangle": (p) => <OhmsLawTriangleInteractive {...p} />,
   "ohms-law-triangle-static": (p) => <OhmsLawTriangle {...p} />,
   circuit: (p) => <Circuit {...p} />,
+  "circuit-interactive": (p) => <CircuitInteractive {...p} />,
   lever: (p) => <LeverInteractive {...p} />,
   "lever-static": (p) => <Lever {...p} />,
   pulley: (p) => <Pulley {...p} />,
