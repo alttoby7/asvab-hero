@@ -23,6 +23,9 @@ worked_examples:
     solution: "MA = A₂ ÷ A₁ = 20 ÷ 2 = 10. Output force = 50 × 10 = 500 lb. Pressure at the input: P = 50 ÷ 2 = 25 psi. That same 25 psi acts on the output piston: 25 × 20 = 500 lb. Both routes confirm the answer."
   - prompt: "A wedge is 8 inches long and 2 inches thick at the wide end. What is its mechanical advantage?"
     solution: "A wedge is an inclined plane, MA = length ÷ thickness = 8 ÷ 2 = 4. The wedge multiplies the driving force by 4 in the splitting direction. Longer, thinner wedges have higher MA and split more easily but require more driving distance."
+diagrams:
+  - type: inclined-plane
+    after: "Inclined planes: the long-cut principle"
 ---
 
 ## What the ASVAB is testing
