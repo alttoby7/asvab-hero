@@ -9,6 +9,7 @@ import EmailCapture from "@/components/EmailCapture";
 import type { MilitaryJob } from "@/types";
 
 import airForceJobs from "@/data/air-force-jobs.json";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Air Force ASVAB Calculator: MAGE Scores + Every AFSC You Qualify For",
@@ -176,8 +177,14 @@ export default function AirForceCalculatorPage() {
           where you stand, not a guarantee of qualification: exact MAGE
           percentiles can&apos;t be reliably derived from a rounded score
           report, so always verify your actual qualifications with a recruiter.
-          Use it to see which fields are within reach and which would need a
-          retake.
+          Use it to see which fields are within reach and which would need a{" "}
+          <Link
+            href="/asvab-retake-calculator"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            retake
+          </Link>
+          .
         </p>
       </section>
 
@@ -242,6 +249,7 @@ export default function AirForceCalculatorPage() {
           .
         </p>
       </section>
+      <RelatedCalculators currentHref="/air-force-asvab-calculator" />
     </div>
   );
 }

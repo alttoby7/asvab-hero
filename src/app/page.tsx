@@ -6,6 +6,7 @@ import GapToGoalRail from "@/components/GapToGoalRail";
 import TestimonialWall from "@/components/TestimonialWall";
 import JsonLd from "@/components/JsonLd";
 import { QUESTIONS_PLUS, TOPIC_COUNT, SUBTEST_COUNT } from "@/lib/bank-stats";
+import { homepageFeatured } from "@/lib/calculator-links";
 
 // Entity anchor for search + AI engines: who we are (Organization) and what the
 // product is (WebApplication / SoftwareApplication with its free + paid offers).
@@ -314,41 +315,20 @@ export default function HomePage() {
               Jump to a specific calculator
             </h3>
             <div className="mt-4 grid gap-x-8 gap-y-2.5 text-sm sm:grid-cols-2">
+              {homepageFeatured().map((calc) => (
+                <Link
+                  key={calc.href}
+                  href={calc.href}
+                  className="text-accent no-underline transition-colors hover:text-accent-hover"
+                >
+                  {calc.label} &rarr;
+                </Link>
+              ))}
               <Link
-                href="/afqt-calculator"
-                className="text-accent no-underline transition-colors hover:text-accent-hover"
+                href="/calculator"
+                className="font-semibold text-accent no-underline transition-colors hover:text-accent-hover"
               >
-                AFQT Calculator &rarr;
-              </Link>
-              <Link
-                href="/gt-score-calculator"
-                className="text-accent no-underline transition-colors hover:text-accent-hover"
-              >
-                GT Score Calculator &rarr;
-              </Link>
-              <Link
-                href="/asvab-line-score-calculator"
-                className="text-accent no-underline transition-colors hover:text-accent-hover"
-              >
-                Line Score Calculator &rarr;
-              </Link>
-              <Link
-                href="/asvab-score-converter"
-                className="text-accent no-underline transition-colors hover:text-accent-hover"
-              >
-                ASVAB Score Converter &rarr;
-              </Link>
-              <Link
-                href="/army-asvab-calculator"
-                className="text-accent no-underline transition-colors hover:text-accent-hover"
-              >
-                Army ASVAB Calculator &rarr;
-              </Link>
-              <Link
-                href="/navy-asvab-score-calculator"
-                className="text-accent no-underline transition-colors hover:text-accent-hover"
-              >
-                Navy ASVAB Calculator &rarr;
+                See all calculators &rarr;
               </Link>
             </div>
             <p className="mt-5 text-sm leading-relaxed text-text-secondary">

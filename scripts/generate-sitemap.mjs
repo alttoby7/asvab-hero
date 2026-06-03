@@ -10,6 +10,7 @@ const pages = [
   { path: "/", priority: "1.0", changefreq: "weekly" },
   { path: "/calculator", priority: "0.9", changefreq: "weekly" },
   { path: "/practice-test", priority: "0.9", changefreq: "weekly" },
+  { path: "/counselor-resources", priority: "0.9", changefreq: "monthly" },
   { path: "/how-it-works", priority: "0.9", changefreq: "monthly" },
   { path: "/the-science", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-scores-explained", priority: "0.8", changefreq: "monthly" },

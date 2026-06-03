@@ -5,6 +5,7 @@ import AfqtCalculator from "@/components/AfqtCalculator";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Army AFQT Calculator 2026: Check If You Meet the 31 Minimum",
@@ -308,6 +309,7 @@ export default function ArmyAfqtCalculatorPage() {
           </li>
         </ul>
       </section>
+      <RelatedCalculators currentHref="/army-afqt-calculator" />
     </div>
   );
 }

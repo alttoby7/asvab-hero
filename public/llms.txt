@@ -37,6 +37,9 @@
 - [AFCT practice test](https://asvabhero.com/afct-practice-test)
 - [AFCT overview](https://asvabhero.com/afct)
 
+## For educators (counselors, librarians, JROTC)
+- [ASVAB counselor quick-start](https://asvabhero.com/counselor-resources): a plain, source-cited ASVAB reference (what the test is, how scores work, official prep resources, where to send students). Cites official sources only; no signup.
+
 ## About
 - [Pricing](https://asvabhero.com/pricing)
 - [About](https://asvabhero.com/about)

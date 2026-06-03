@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import EmailCapture from "@/components/EmailCapture";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "ASVAB Composite Score Calculator: All 6 Branches (2026)",
@@ -1318,6 +1319,7 @@ export default function ASVABCompositeScoreCalculatorPage() {
         </div>
 
       </article>
+      <RelatedCalculators currentHref="/asvab-composite-score-calculator" />
     </div>
   );
 }

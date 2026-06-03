@@ -5,6 +5,7 @@ import AfqtCalculator from "@/components/AfqtCalculator";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Navy AFQT Calculator 2026: Check If You Meet the 35 Minimum",
@@ -307,6 +308,7 @@ export default function NavyAfqtCalculatorPage() {
           </li>
         </ul>
       </section>
+      <RelatedCalculators currentHref="/navy-afqt-calculator" />
     </div>
   );
 }

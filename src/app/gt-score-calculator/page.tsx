@@ -4,6 +4,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import GTScoreCalculator from "@/components/GTScoreCalculator";
 import EmailCapture from "@/components/EmailCapture";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "GT Score Calculator (2026): Estimate Your Army GT Score",
@@ -795,6 +796,7 @@ export default function GTScoreCalculatorPage() {
           </Link>
         </div>
       </article>
+      <RelatedCalculators currentHref="/gt-score-calculator" />
     </div>
   );
 }

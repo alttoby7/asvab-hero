@@ -5,6 +5,7 @@ import AsvabScoreConverter from "@/components/AsvabScoreConverter";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "ASVAB Score Converter 2026: Subtests to AFQT, VE, GT in Seconds",
@@ -448,6 +449,7 @@ export default function AsvabScoreConverterPage() {
           </li>
         </ul>
       </section>
+      <RelatedCalculators currentHref="/asvab-score-converter" />
     </div>
   );
 }

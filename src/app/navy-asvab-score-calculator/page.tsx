@@ -9,6 +9,7 @@ import EmailCapture from "@/components/EmailCapture";
 import type { MilitaryJob } from "@/types";
 
 import navyJobs from "@/data/navy-jobs.json";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Navy ASVAB Score Calculator: See Every Rating You Qualify For",
@@ -184,6 +185,7 @@ export default function NavyCalculatorPage() {
           Marines, Coast Guard, and Space Force requirements.
         </p>
       </section>
+      <RelatedCalculators currentHref="/navy-asvab-score-calculator" />
     </div>
   );
 }

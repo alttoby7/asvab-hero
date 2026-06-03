@@ -4,6 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 import RetakeDateCalculator from "@/components/RetakeDateCalculator";
 import EmailCapture from "@/components/EmailCapture";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "ASVAB Retake Calculator: When Can You Retest? (2026)",
@@ -178,6 +179,7 @@ export default function AsvabRetakeCalculatorPage() {
           </li>
         </ul>
       </section>
+      <RelatedCalculators currentHref="/asvab-retake-calculator" />
     </div>
   );
 }

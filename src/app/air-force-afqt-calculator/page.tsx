@@ -5,6 +5,7 @@ import AfqtCalculator from "@/components/AfqtCalculator";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Air Force AFQT Calculator 2026: Check If You Meet the 36 Minimum",
@@ -404,6 +405,7 @@ export default function AirForceAfqtCalculatorPage() {
           </li>
         </ul>
       </section>
+      <RelatedCalculators currentHref="/air-force-afqt-calculator" />
     </div>
   );
 }

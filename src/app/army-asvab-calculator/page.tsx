@@ -9,6 +9,7 @@ import EmailCapture from "@/components/EmailCapture";
 import type { MilitaryJob } from "@/types";
 
 import armyJobs from "@/data/army-jobs.json";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "Army ASVAB Calculator: Line Scores + Every MOS You Qualify For",
@@ -229,6 +230,7 @@ export default function ArmyCalculatorPage() {
           Force results side by side.
         </p>
       </section>
+      <RelatedCalculators currentHref="/army-asvab-calculator" />
     </div>
   );
 }

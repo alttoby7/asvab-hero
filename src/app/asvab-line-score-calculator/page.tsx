@@ -12,6 +12,7 @@ import marinesJobs from "@/data/marines-jobs.json";
 import navyJobs from "@/data/navy-jobs.json";
 import coastGuardJobs from "@/data/coast-guard-jobs.json";
 import spaceForceJobs from "@/data/space-force-jobs.json";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 function addBranch(
   jobs: Record<string, unknown>[],
@@ -1107,6 +1108,7 @@ export default function ASVABLineScoreCalculatorPage() {
         </div>
 
       </article>
+      <RelatedCalculators currentHref="/asvab-line-score-calculator" />
     </div>
   );
 }

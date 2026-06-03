@@ -6,6 +6,7 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 import ArticleByline from "@/components/ArticleByline";
+import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
   title: "AFQT Score Calculator (2026): Estimate Your AFQT Percentile",
@@ -466,6 +467,7 @@ export default function AfqtCalculatorPage() {
           </li>
         </ul>
       </section>
+      <RelatedCalculators currentHref="/afqt-calculator" />
     </div>
   );
 }

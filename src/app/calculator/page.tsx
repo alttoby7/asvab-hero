@@ -5,6 +5,7 @@ import Calculator from "@/components/Calculator";
 import JobCatalog from "@/components/JobCatalog";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
+import { DIRECTORY_GROUPS, calculatorsInGroup } from "@/lib/calculator-links";
 import type { MilitaryJob } from "@/types";
 
 import armyJobs from "@/data/army-jobs.json";
@@ -113,6 +114,46 @@ export default function CalculatorPage() {
          + AI crawlers regardless of calculator state (the interactive results
          above only appear once all 9 subtests are entered). */}
       <JobCatalog jobs={allJobs} />
+
+      {/* ──────────────────────────────────────────────────────────────────────
+         CALCULATOR DIRECTORY, this hub is the only page that links every
+         variant. Grouped so crawlers reach every spoke from one authoritative
+         page (the homepage stays curated). Source of truth: calculator-links.ts.
+      ────────────────────────────────────────────────────────────────────── */}
+      <section className="mt-14 border-t border-navy-border pt-10">
+        <h2 className="font-display text-2xl font-bold text-text-primary">
+          All ASVAB calculators
+        </h2>
+        <p className="mt-2 text-text-secondary">
+          Every calculator on ASVAB Hero, grouped by what it scores. The
+          all-branch calculator above covers the full picture; these go deep on a
+          single score or branch.
+        </p>
+        <div className="mt-8 grid gap-8 sm:grid-cols-2">
+          {DIRECTORY_GROUPS.map(({ title, group }) => (
+            <div key={group}>
+              <h3 className="text-xs font-semibold uppercase tracking-wider text-text-tertiary">
+                {title}
+              </h3>
+              <ul className="mt-3 space-y-3 list-none p-0">
+                {calculatorsInGroup(group).map((calc) => (
+                  <li key={calc.href}>
+                    <Link
+                      href={calc.href}
+                      className="text-sm font-semibold text-accent no-underline transition-colors hover:text-accent-hover"
+                    >
+                      {calc.label} &rarr;
+                    </Link>
+                    <p className="mt-0.5 text-sm leading-relaxed text-text-secondary">
+                      {calc.blurb}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
