@@ -27,6 +27,8 @@ diagrams:
     after: "Lever calculation: the fulcrum trick"
   - type: pulley
     after: "Fixed vs. movable pulleys"
+  - type: pulley-system
+    after: "The work conservation rule"
 ---
 
 ## What the ASVAB is testing

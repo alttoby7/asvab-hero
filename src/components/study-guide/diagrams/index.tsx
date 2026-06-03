@@ -18,6 +18,7 @@ import LeverInteractive from "./LeverInteractive";
 import NumberLineInteractive from "./NumberLineInteractive";
 import FractionBarInteractive from "./FractionBarInteractive";
 import CircuitInteractive from "./CircuitInteractive";
+import PulleySystemInteractive from "./PulleySystemInteractive";
 
 const ORANGE = "#f97316";
 const ORANGE_DIM = "rgba(249,115,22,0.15)";
@@ -403,6 +404,7 @@ const REGISTRY: Record<string, (props: any) => ReactNode> = {
   lever: (p) => <LeverInteractive {...p} />,
   "lever-static": (p) => <Lever {...p} />,
   pulley: (p) => <Pulley {...p} />,
+  "pulley-system": (p) => <PulleySystemInteractive {...p} />,
   "gear-ratio": (p) => <GearRatioInteractive {...p} />,
   "gear-ratio-static": (p) => <GearRatio {...p} />,
   "right-triangle": (p) => <RightTriangleInteractive {...p} />,
