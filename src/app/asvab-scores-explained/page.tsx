@@ -3,6 +3,8 @@ import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import AffiliateBookBlock from "@/components/AffiliateBookBlock";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 import AFQTFormulaExplorer from "@/components/scores-explained/AFQTFormulaExplorer";
 import AFQTCategoryLadder from "@/components/scores-explained/AFQTCategoryLadder";
@@ -100,6 +102,13 @@ export default function ASVABScoresExplainedPage() {
             },
           })),
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Scores Explained", href: "/asvab-scores-explained" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -583,6 +592,19 @@ export default function ASVABScoresExplainedPage() {
             variant="inline"
           />
         </section>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Understand your ASVAB scores"
+            links={[
+              { href: "/asvab-score-requirements", label: "ASVAB Score Requirements by Branch", blurb: "Every branch minimum AFQT and the composite scores jobs need." },
+              { href: "/what-is-a-good-asvab-score", label: "What Is a Good ASVAB Score?", blurb: "How to judge your score against your goals." },
+              { href: "/afqt-score", label: "AFQT Score Explained", blurb: "The one number that decides if you can enlist." },
+              { href: "/gt-score", label: "GT Score Explained", blurb: "The line score that unlocks the most jobs and warrant tracks." },
+              { href: "/how-many-questions-on-the-asvab", label: "How Many Questions Are on the ASVAB?", blurb: "Question counts and timing for every subtest." },
+            ]}
+          />
+        </div>
       </article>
     </div>
   );

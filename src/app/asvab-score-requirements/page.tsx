@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "ASVAB Score Requirements by Branch (2026)",
@@ -101,6 +103,14 @@ export default function ASVABScoreRequirementsPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Scores Explained", href: "/asvab-scores-explained" },
+          { name: "ASVAB Score Requirements", href: "/asvab-score-requirements" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -1281,6 +1291,18 @@ export default function ASVABScoreRequirementsPage() {
             </li>
           </ul>
         </section>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Understand your ASVAB scores"
+            links={[
+              { href: "/asvab-scores-explained", label: "ASVAB Scores Explained", blurb: "How the AFQT, line scores, and composites fit together." },
+              { href: "/what-is-a-good-asvab-score", label: "What Is a Good ASVAB Score?", blurb: "Judge your score against the job you want." },
+              { href: "/afqt-score", label: "AFQT Score Explained", blurb: "The percentile that decides eligibility for every branch." },
+              { href: "/army-asvab-score", label: "Army ASVAB Score Requirements", blurb: "The Army specific minimums and line score cutoffs." },
+            ]}
+          />
+        </div>
       </article>
     </div>
   );

@@ -10,6 +10,8 @@ import type { MilitaryJob } from "@/types";
 
 import armyJobs from "@/data/army-jobs.json";
 import RelatedCalculators from "@/components/RelatedCalculators";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Army ASVAB Calculator: Line Scores + Every MOS You Qualify For",
@@ -40,6 +42,14 @@ export default function ArmyCalculatorPage() {
           description:
             "Calculate your AFQT, all 10 Army line scores, and see every Army MOS you qualify for.",
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Calculator", href: "/calculator" },
+          { name: "Army ASVAB Calculator", href: "/army-asvab-calculator" },
+        ]}
       />
 
       <div className="mb-6">
@@ -231,6 +241,16 @@ export default function ArmyCalculatorPage() {
         </p>
       </section>
       <RelatedCalculators currentHref="/army-asvab-calculator" />
+
+      <RelatedLinks
+        title="Army ASVAB guides"
+        links={[
+          { href: "/army-asvab-score", label: "Army ASVAB Score Requirements", blurb: "Minimum AFQT and the line scores enlistment needs." },
+          { href: "/army-afqt-calculator", label: "Army AFQT Calculator", blurb: "Get the percentile-only AFQT breakdown." },
+          { href: "/army-mos-list", label: "Army MOS List", blurb: "Every Army job and its line score cutoff." },
+          { href: "/army-ranks", label: "Army Ranks Guide", blurb: "How enlistment turns into rank and pay." },
+        ]}
+      />
     </div>
   );
 }

@@ -3,6 +3,13 @@ import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import BrandHero from "@/components/BrandHero";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
+import topics from "@/data/topics.seed.json";
+
+const eiGuides = topics
+  .filter((t) => t.subtest === "EI")
+  .map((t) => ({ href: t.study_guide_href, label: t.title }));
 
 export const metadata: Metadata = {
   title: "ASVAB Electronics Information: 10 Tips to Score Higher",
@@ -95,6 +102,16 @@ export default function ASVABElectronicsInformationTipsPage() {
       <JsonLd data={articleJsonLd} />
       <JsonLd data={faqJsonLd} />
       <article className="prose-asvab">
+        <Breadcrumb
+          items={[
+            { name: "Home", href: "/" },
+            { name: "ASVAB Study Guide", href: "/asvab-study-guide" },
+            {
+              name: "ASVAB Electronics Information Tips",
+              href: "/asvab-electronics-information-tips",
+            },
+          ]}
+        />
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           ASVAB Electronics Information Tips: 10 Strategies to Score Higher on
           the EI Subtest
@@ -996,6 +1013,11 @@ export default function ASVABElectronicsInformationTipsPage() {
             </p>
           </div>
         </div>
+
+        <RelatedLinks
+          title="Electronics Information study guides"
+          links={eiGuides}
+        />
 
         {/* CTA Box */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">

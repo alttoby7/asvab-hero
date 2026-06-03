@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "How Many Questions Are on the ASVAB? (2026)",
@@ -92,6 +94,14 @@ export default function HowManyQuestionsOnTheASVABPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Scores Explained", href: "/asvab-scores-explained" },
+          { name: "How Many Questions Are on the ASVAB?", href: "/how-many-questions-on-the-asvab" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -641,6 +651,18 @@ export default function HowManyQuestionsOnTheASVABPage() {
           >
             Try the Free Calculator
           </Link>
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Understand your ASVAB scores"
+            links={[
+              { href: "/asvab-scores-explained", label: "ASVAB Scores Explained", blurb: "How question counts turn into your AFQT and line scores." },
+              { href: "/afqt-score", label: "AFQT Score Explained", blurb: "The four subtests that build your AFQT." },
+              { href: "/asvab-score-requirements", label: "ASVAB Score Requirements by Branch", blurb: "The scores each branch needs to enlist." },
+              { href: "/how-to-retake-the-asvab", label: "How to Retake the ASVAB", blurb: "Retake rules if your first scores fall short." },
+            ]}
+          />
         </div>
       </article>
     </div>

@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
+import topics from "@/data/topics.seed.json";
+
+const wkGuides = topics
+  .filter((t) => t.subtest === "WK")
+  .map((t) => ({ href: t.study_guide_href, label: t.title }));
 
 export const metadata: Metadata = {
   title: "ASVAB Vocabulary: Word Knowledge Study Guide",
@@ -109,6 +116,16 @@ export default function ASVABVocabularyPage() {
       <JsonLd data={articleJsonLd} />
       <JsonLd data={faqJsonLd} />
       <article className="prose-asvab">
+        <Breadcrumb
+          items={[
+            { name: "Home", href: "/" },
+            { name: "ASVAB Study Guide", href: "/asvab-study-guide" },
+            {
+              name: "ASVAB Vocabulary: Word Knowledge Study Guide",
+              href: "/asvab-vocabulary",
+            },
+          ]}
+        />
         {/* ─── H1 + INTRO ─── */}
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           ASVAB Vocabulary: The Word Knowledge Study Guide That Doubles Your
@@ -1059,6 +1076,11 @@ export default function ASVABVocabularyPage() {
             </p>
           </div>
         </div>
+
+        <RelatedLinks
+          title="Word Knowledge study guides"
+          links={wkGuides}
+        />
 
         {/* ─── CTA ─── */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">

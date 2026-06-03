@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "AFQT Score: What It Is and How to Improve It",
@@ -92,6 +94,14 @@ export default function AFQTScorePage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Scores Explained", href: "/asvab-scores-explained" },
+          { name: "AFQT Score", href: "/afqt-score" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -1065,6 +1075,18 @@ export default function AFQTScorePage() {
             variant="inline"
           />
         </section>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Understand your ASVAB scores"
+            links={[
+              { href: "/asvab-scores-explained", label: "ASVAB Scores Explained", blurb: "Where the AFQT fits among line scores and composites." },
+              { href: "/what-is-a-good-asvab-score", label: "What Is a Good ASVAB Score?", blurb: "What AFQT percentile you should aim for." },
+              { href: "/asvab-score-requirements", label: "ASVAB Score Requirements by Branch", blurb: "Minimum AFQT for each branch." },
+              { href: "/how-many-questions-on-the-asvab", label: "How Many Questions Are on the ASVAB?", blurb: "Which four subtests build your AFQT." },
+            ]}
+          />
+        </div>
       </article>
     </div>
   );

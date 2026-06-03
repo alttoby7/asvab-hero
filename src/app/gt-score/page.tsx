@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "ASVAB GT Score Explained + GT Score Calculator (2026)",
@@ -125,6 +127,14 @@ export default function GTScorePage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Scores Explained", href: "/asvab-scores-explained" },
+          { name: "GT Score", href: "/gt-score" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -1742,6 +1752,18 @@ export default function GTScorePage() {
             </li>
           </ul>
         </section>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="GT score and ASVAB resources"
+            links={[
+              { href: "/gt-score-requirements", label: "GT Score Requirements", blurb: "The GT cutoffs for jobs and the 110 wall." },
+              { href: "/asvab-scores-explained", label: "ASVAB Scores Explained", blurb: "How GT fits among AFQT and other line scores." },
+              { href: "/afqt-score", label: "AFQT Score Explained", blurb: "The percentile that decides enlistment eligibility." },
+              { href: "/mos-reclassification", label: "MOS Reclassification", blurb: "Use a higher GT score to reclassify your job." },
+            ]}
+          />
+        </div>
       </article>
     </div>
   );

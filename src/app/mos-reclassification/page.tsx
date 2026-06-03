@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "MOS Reclassification: How to Reclass Army Jobs",
@@ -91,6 +93,14 @@ export default function MOSReclassificationPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "How to Retake the ASVAB", href: "/how-to-retake-the-asvab" },
+          { name: "MOS Reclassification", href: "/mos-reclassification" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -737,6 +747,18 @@ export default function MOSReclassificationPage() {
           >
             Try the Free Calculator
           </Link>
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Reclass and score resources"
+            links={[
+              { href: "/how-to-retake-the-asvab", label: "How to Retake the ASVAB", blurb: "Retest to raise the line score your new MOS needs." },
+              { href: "/asvab-retake-policy", label: "ASVAB Retake Policy", blurb: "Waiting periods and rules for a confirmation test." },
+              { href: "/army-asvab-score", label: "Army ASVAB Score Requirements", blurb: "The line score cutoffs every Army MOS uses." },
+              { href: "/gt-score", label: "GT Score Explained", blurb: "The score that unlocks the most reclass options." },
+            ]}
+          />
         </div>
       </article>
     </div>

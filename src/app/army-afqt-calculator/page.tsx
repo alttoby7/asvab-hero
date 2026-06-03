@@ -6,6 +6,8 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 import RelatedCalculators from "@/components/RelatedCalculators";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Army AFQT Calculator 2026: Check If You Meet the 31 Minimum",
@@ -71,6 +73,14 @@ export default function ArmyAfqtCalculatorPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Calculator", href: "/calculator" },
+          { name: "Army AFQT Calculator", href: "/army-afqt-calculator" },
+        ]}
       />
 
       <div className="mb-6">
@@ -310,6 +320,16 @@ export default function ArmyAfqtCalculatorPage() {
         </ul>
       </section>
       <RelatedCalculators currentHref="/army-afqt-calculator" />
+
+      <RelatedLinks
+        title="Army ASVAB guides"
+        links={[
+          { href: "/army-asvab-calculator", label: "Army ASVAB Calculator", blurb: "See your full line scores and qualifying MOS." },
+          { href: "/army-asvab-score", label: "Army ASVAB Score Requirements", blurb: "Minimum AFQT and line scores to enlist." },
+          { href: "/afqt-score", label: "AFQT Score Explained", blurb: "What the AFQT percentile means and how it is built." },
+          { href: "/army-ranks", label: "Army Ranks Guide", blurb: "How enlistment turns into rank and pay." },
+        ]}
+      />
     </div>
   );
 }

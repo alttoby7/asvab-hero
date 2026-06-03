@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import EmailCapture from "@/components/EmailCapture";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Coast Guard ASVAB Score: Requirements by Rating (2026)",
@@ -92,6 +94,14 @@ export default function CoastGuardASVABScorePage() {
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
       <JsonLd data={articleJsonLd} />
       <JsonLd data={faqJsonLd} />
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Score Requirements", href: "/asvab-score-requirements" },
+          { name: "Coast Guard ASVAB Score", href: "/coast-guard-asvab-score" },
+        ]}
+      />
+
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           Coast Guard ASVAB Score: What You Need to Qualify in 2026
@@ -1082,6 +1092,18 @@ export default function CoastGuardASVABScorePage() {
             </li>
           </ul>
         </section>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Understand your ASVAB scores"
+            links={[
+              { href: "/asvab-score-requirements", label: "ASVAB Score Requirements by Branch", blurb: "Compare the Coast Guard minimum to other branches." },
+              { href: "/what-is-a-good-asvab-score", label: "What Is a Good ASVAB Score?", blurb: "Judge your score against the rating you want." },
+              { href: "/asvab-scores-explained", label: "ASVAB Scores Explained", blurb: "How the AFQT and line scores fit together." },
+              { href: "/afqt-score", label: "AFQT Score Explained", blurb: "The percentile the Coast Guard uses to qualify you." },
+            ]}
+          />
+        </div>
       </article>
     </div>
   );

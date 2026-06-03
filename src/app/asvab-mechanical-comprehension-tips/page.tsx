@@ -3,6 +3,13 @@ import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import BrandHero from "@/components/BrandHero";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
+import topics from "@/data/topics.seed.json";
+
+const mcGuides = topics
+  .filter((t) => t.subtest === "MC")
+  .map((t) => ({ href: t.study_guide_href, label: t.title }));
 
 export const metadata: Metadata = {
   title: "ASVAB Mechanical Comprehension: 9 Tips to Score Higher",
@@ -97,6 +104,16 @@ export default function ASVABMechanicalComprehensionTipsPage() {
       />
 
       <article className="prose-asvab">
+        <Breadcrumb
+          items={[
+            { name: "Home", href: "/" },
+            { name: "ASVAB Study Guide", href: "/asvab-study-guide" },
+            {
+              name: "ASVAB Mechanical Comprehension Tips",
+              href: "/asvab-mechanical-comprehension-tips",
+            },
+          ]}
+        />
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           9 ASVAB Mechanical Comprehension Tips That Actually Work
         </h1>
@@ -919,6 +936,11 @@ export default function ASVABMechanicalComprehensionTipsPage() {
             </p>
           </div>
         </div>
+
+        <RelatedLinks
+          title="Mechanical Comprehension study guides"
+          links={mcGuides}
+        />
 
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">
           <h3 className="font-display text-xl font-bold text-text-primary">

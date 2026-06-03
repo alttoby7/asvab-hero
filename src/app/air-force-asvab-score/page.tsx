@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Air Force ASVAB Score: MAGE Requirements for Every AFSC (2026)",
@@ -15,26 +17,6 @@ export const metadata: Metadata = {
 export default function AirForceASVABScorePage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: "https://asvabhero.com",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Air Force ASVAB Score",
-              item: "https://asvabhero.com/air-force-asvab-score",
-            },
-          ],
-        }}
-      />
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -113,6 +95,14 @@ export default function AirForceASVABScorePage() {
           ],
         }}
       />
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Score Requirements", href: "/asvab-score-requirements" },
+          { name: "Air Force ASVAB Score", href: "/air-force-asvab-score" },
+        ]}
+      />
+
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           Air Force ASVAB Score: What You Need to Qualify and Which Jobs You Can
@@ -1611,6 +1601,18 @@ export default function AirForceASVABScorePage() {
             </li>
           </ul>
         </section>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Air Force ASVAB resources"
+            links={[
+              { href: "/air-force-asvab-calculator", label: "Air Force ASVAB Calculator", blurb: "Calculate your MAGE composites and qualifying jobs." },
+              { href: "/air-force-jobs", label: "Air Force Jobs by ASVAB Score", blurb: "Every AFSC and the scores it requires." },
+              { href: "/air-force-mage-score", label: "Air Force MAGE Score Explained", blurb: "How the four MAGE composites are built." },
+              { href: "/air-force-ranks", label: "Air Force Ranks Guide", blurb: "How enlistment turns into rank and pay." },
+            ]}
+          />
+        </div>
       </article>
     </div>
   );

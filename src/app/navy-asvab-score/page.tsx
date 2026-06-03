@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title:
@@ -134,6 +136,14 @@ export default function NavyASVABScorePage() {
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
       <JsonLd data={articleJsonLd} />
       <JsonLd data={faqJsonLd} />
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Score Requirements", href: "/asvab-score-requirements" },
+          { name: "Navy ASVAB Score", href: "/navy-asvab-score" },
+        ]}
+      />
+
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           Navy ASVAB Score: How Scoring Works and Requirements by Rating
@@ -1678,6 +1688,18 @@ export default function NavyASVABScorePage() {
           >
             Try the Free Calculator
           </Link>
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Navy ASVAB resources"
+            links={[
+              { href: "/navy-asvab-score-calculator", label: "Navy ASVAB Score Calculator", blurb: "Calculate your Navy line scores and AFQT." },
+              { href: "/navy-ratings-list", label: "Navy Ratings List", blurb: "Every rating and the scores it requires." },
+              { href: "/navy-ranks", label: "Navy Ranks Guide", blurb: "How your rate turns into rank and pay." },
+              { href: "/asvab-score-requirements", label: "ASVAB Score Requirements by Branch", blurb: "Compare the Navy minimum to other branches." },
+            ]}
+          />
         </div>
       </article>
     </div>

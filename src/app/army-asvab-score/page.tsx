@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Army ASVAB Scores: Line Scores, MOS Requirements, GT Guide (2026)",
@@ -101,6 +103,14 @@ export default function ArmyASVABScorePage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Score Requirements", href: "/asvab-score-requirements" },
+          { name: "Army ASVAB Score", href: "/army-asvab-score" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -957,6 +967,18 @@ export default function ArmyASVABScorePage() {
             </li>
           </ul>
         </section>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Army ASVAB resources"
+            links={[
+              { href: "/army-asvab-calculator", label: "Army ASVAB Calculator", blurb: "See your line scores and qualifying MOS instantly." },
+              { href: "/army-mos-list", label: "Army MOS List", blurb: "Every Army job and the line score it requires." },
+              { href: "/army-ranks", label: "Army Ranks Guide", blurb: "How your enlistment turns into rank and pay." },
+              { href: "/asvab-score-requirements", label: "ASVAB Score Requirements by Branch", blurb: "Compare the Army minimum to other branches." },
+            ]}
+          />
+        </div>
       </article>
     </div>
   );
