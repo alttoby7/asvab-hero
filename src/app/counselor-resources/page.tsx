@@ -61,9 +61,8 @@ export default function CounselorResourcesPage() {
       </h1>
       <p className="mt-4 text-text-secondary leading-relaxed">
         A plain, source-cited overview of the ASVAB for the adults who advise
-        students about it. Everything below links to an official source. No
-        signup, no email required, and nothing here is a sales page. Last
-        verified {LAST_VERIFIED}.
+        students about it. Every claim below links to an official source. No
+        signup, no email, no sales pitch. Last verified {LAST_VERIFIED}.
       </p>
       <p className="mt-3 text-sm text-text-tertiary leading-relaxed">
         ASVAB Hero is an independent test-prep site and is not affiliated with
@@ -80,10 +79,10 @@ export default function CounselorResourcesPage() {
           </h2>
           <p className="mt-3 text-text-secondary leading-relaxed">
             The Armed Services Vocational Aptitude Battery (ASVAB) is a
-            multiple-aptitude test used for two distinct purposes: to determine
+            multiple-aptitude test that serves two distinct purposes. It decides
             enlistment eligibility and job qualification for people joining the
-            military, and, separately, as a career-exploration tool offered in
-            many high schools. The two uses share a test name but serve different
+            military, and, separately, it is a career-exploration tool used in
+            many high schools. The two uses share a name but reach different
             students. See the{" "}
             <Source url="https://www.officialasvab.com/applicants/fact-sheet/">
               official fact sheet
@@ -98,7 +97,7 @@ export default function CounselorResourcesPage() {
             Enlistment testing vs. school testing
           </h2>
           <p className="mt-3 text-text-secondary leading-relaxed">
-            These are easy to confuse and worth separating for students:
+            Two things students often confuse, worth keeping separate:
           </p>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-text-secondary leading-relaxed">
             <li>
@@ -217,10 +216,11 @@ export default function CounselorResourcesPage() {
             </li>
             <li>
               <strong className="text-text-primary">The AFQT</strong> (Armed
-              Forces Qualification Test) is built from four subtests (Arithmetic
-              Reasoning, Math Knowledge, Word Knowledge, Paragraph Comprehension)
-              and reported as a percentile from 1 to 99. The AFQT determines
-              whether a student can enlist.
+              Forces Qualification Test) is built from four subtests (Word
+              Knowledge, Paragraph Comprehension, Arithmetic Reasoning, and
+              Mathematics Knowledge) and reported as a percentile from 1 to 99.
+              The AFQT decides
+              whether a student can enlist at all.
             </li>
             <li>
               <strong className="text-text-primary">Line / composite scores</strong>{" "}
@@ -289,7 +289,7 @@ export default function CounselorResourcesPage() {
               (free, U.S. Army sponsored study site)
             </li>
             <li>
-              As an additional, optional tool, ASVAB Hero offers a free{" "}
+              As an optional add-on, ASVAB Hero offers a free{" "}
               <Link
                 href="/calculator"
                 className="text-accent underline hover:text-accent-hover"
