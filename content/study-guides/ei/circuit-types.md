@@ -22,6 +22,15 @@ worked_examples:
     solution: "1/R_total = 1/6 + 1/4 = 2/12 + 3/12 = 5/12. R_total = 12/5 = 2.4 Ω"
   - prompt: "In a parallel circuit with two branches drawing 3 A and 5 A respectively, what is the total current from the battery?"
     solution: "Parallel: currents add. I_total = 3 + 5 = 8 A"
+diagrams:
+  - type: circuit
+    after: "Series circuits: everything in one loop"
+    props:
+      mode: series
+  - type: circuit
+    after: "Parallel circuits: multiple branches"
+    props:
+      mode: parallel
 ---
 
 ## What the ASVAB is actually testing

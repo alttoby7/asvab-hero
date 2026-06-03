@@ -5,6 +5,15 @@ import { marked } from "marked";
 
 const CONTENT_DIR = path.join(process.cwd(), "content", "study-guides");
 
+export interface DiagramSpec {
+  /** Registered diagram name, e.g. "fraction-bar" (see diagrams/index.tsx). */
+  type: string;
+  /** Heading text to render the diagram beneath; omit to append at the end. */
+  after?: string;
+  /** Props forwarded to the diagram component. */
+  props?: Record<string, unknown>;
+}
+
 export interface StudyGuideFrontmatter {
   topic_id: string;
   subtest: string;
@@ -13,6 +22,7 @@ export interface StudyGuideFrontmatter {
   formula_reference: string[];
   pitfalls: string[];
   worked_examples: { prompt: string; solution: string }[];
+  diagrams?: DiagramSpec[];
 }
 
 export interface StudyGuide {

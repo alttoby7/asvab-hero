@@ -24,6 +24,21 @@ worked_examples:
     solution: "P = V²/R → R = V²/P = (120)²/60 = 14400/60 = 240 Ω"
   - prompt: "If current through a resistor doubles, what happens to the power it dissipates?"
     solution: "P = I²R, current is squared, so doubling I multiplies power by 4. Power quadruples."
+diagrams:
+  - type: ohms-law-triangle
+    after: "Ohm's Law: the foundation"
+    props:
+      top: "V"
+      bottomLeft: "I"
+      bottomRight: "R"
+  - type: ohms-law-triangle
+    after: "Power: two forms you need"
+    props:
+      label: "Power triangle"
+      top: "P"
+      bottomLeft: "I"
+      bottomRight: "E"
+      caption: "Cover the unknown: P = I × E,  I = P/E,  E = P/I"
 ---
 
 ## What the ASVAB is actually testing

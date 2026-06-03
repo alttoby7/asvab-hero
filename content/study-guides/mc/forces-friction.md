@@ -23,6 +23,9 @@ worked_examples:
     solution: "P = F ÷ A = 200 ÷ 4 = 50 psi. That 50 psi acts equally in all directions throughout the fluid (Pascal's law), which is why hydraulic systems can multiply force at a larger output piston."
   - prompt: "A 5-kg object is pushed across a floor with a net force of 15 N (friction already subtracted). What is its acceleration?"
     solution: "F = ma → a = F ÷ m = 15 ÷ 5 = 3 m/s². The object accelerates at 3 meters per second squared in the direction of the net force."
+diagrams:
+  - type: force-diagram
+    after: "Net force"
 ---
 
 ## What the ASVAB is testing

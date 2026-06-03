@@ -1,6 +1,50 @@
+import { Fragment } from "react";
 import { SUBTEST_NAMES } from "@/types";
 import type { AsvabSubtest } from "@/types";
 import type { StudyGuide } from "@/lib/study-guides/loader";
+import { Diagram } from "./diagrams";
+
+const PROSE =
+  "prose prose-invert max-w-none prose-headings:font-display prose-headings:text-text-primary prose-p:text-text-secondary prose-li:text-text-secondary prose-strong:text-text-primary prose-code:text-accent prose-a:text-accent prose-blockquote:border-l-accent prose-blockquote:text-text-secondary prose-th:text-text-primary prose-td:text-text-secondary";
+
+/** Normalize heading text for matching frontmatter `after` values. Strips
+ *  tags and all punctuation so curly vs. straight apostrophes, colons, and
+ *  HTML entities can't break a match. */
+function normalizeHeading(s: string): string {
+  return s
+    .replace(/<[^>]+>/g, "")
+    .replace(/&[#\w]+;/g, "") // drop entities (marked escapes ' -> &#39;)
+    .toLowerCase()
+    .replace(/['’‘]/g, "") // drop apostrophes entirely (Ohm's -> Ohms)
+    .replace(/[^a-z0-9 ]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+interface BodySection {
+  headingHtml: string;
+  headingText: string | null;
+  bodyHtml: string;
+}
+
+/** Split marked-rendered HTML into sections at each <h2> so diagrams can be
+ *  injected beneath a named heading without losing prose styling. */
+function splitIntoSections(html: string): BodySection[] {
+  return html
+    .split(/(?=<h2[\s>])/g)
+    .filter((part) => part.trim().length > 0)
+    .map((part) => {
+      const m = part.match(/^<h2[^>]*>([\s\S]*?)<\/h2>/);
+      if (m) {
+        return {
+          headingHtml: m[0],
+          headingText: normalizeHeading(m[1]),
+          bodyHtml: part.slice(m[0].length),
+        };
+      }
+      return { headingHtml: "", headingText: null, bodyHtml: part };
+    });
+}
 
 /**
  * Presentational study-guide article body, shared by the public SEO page
@@ -42,11 +86,61 @@ export default function StudyGuideArticle({ guide }: { guide: StudyGuide }) {
         </section>
       )}
 
-      {/* Body content */}
-      <article
-        className="prose prose-invert mb-8 max-w-none prose-headings:font-display prose-headings:text-text-primary prose-p:text-text-secondary prose-li:text-text-secondary prose-strong:text-text-primary prose-code:text-accent prose-a:text-accent"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      {/* Body content, with frontmatter diagrams injected beneath their heading */}
+      {(() => {
+        const sections = splitIntoSections(html);
+        const diagrams = frontmatter.diagrams ?? [];
+        const matchedTexts = new Set(
+          sections.map((s) => s.headingText).filter(Boolean) as string[]
+        );
+        const renderGroup = (specs: typeof diagrams, key: string) =>
+          specs.length > 0 ? (
+            <div
+              key={key}
+              className={`my-6 ${
+                specs.length > 1
+                  ? "grid max-w-xl gap-4 sm:grid-cols-2"
+                  : "max-w-sm"
+              }`}
+            >
+              {specs.map((d, j) => (
+                <Diagram key={j} type={d.type} props={d.props} />
+              ))}
+            </div>
+          ) : null;
+
+        return (
+          // Single prose wrapper so typography spacing stays intact; inner
+          // fragments are plain divs (prose styles descendants via :where()).
+          <div className={`${PROSE} mb-8`}>
+            {sections.map((sec, i) => {
+              const matched = sec.headingText
+                ? diagrams.filter(
+                    (d) => d.after && normalizeHeading(d.after) === sec.headingText
+                  )
+                : [];
+              return (
+                <Fragment key={i}>
+                  {sec.headingHtml && (
+                    <div dangerouslySetInnerHTML={{ __html: sec.headingHtml }} />
+                  )}
+                  {renderGroup(matched, `dia-${i}`)}
+                  {sec.bodyHtml && (
+                    <div dangerouslySetInnerHTML={{ __html: sec.bodyHtml }} />
+                  )}
+                </Fragment>
+              );
+            })}
+            {/* Diagrams with no `after`, or whose heading wasn't found, go last */}
+            {renderGroup(
+              diagrams.filter(
+                (d) => !d.after || !matchedTexts.has(normalizeHeading(d.after))
+              ),
+              "dia-tail"
+            )}
+          </div>
+        );
+      })()}
 
       {/* Pitfalls */}
       {frontmatter.pitfalls?.length > 0 && (
