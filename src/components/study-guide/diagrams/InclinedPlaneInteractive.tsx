@@ -49,7 +49,7 @@ function RampDiagram({ l, h }: { l: number; h: number }) {
         <text x={0} y={-8} fill={INK} fontSize={9} fontWeight={700} textAnchor="middle">LOAD</text>
       </g>
       {/* dimension labels */}
-      <text x={(x0 + xMax) / 2} y={baseY - rise / 2 - 6} fill={MUTED} fontSize={11} fontWeight={700} textAnchor="middle" transform={`rotate(${(-angle * 180) / Math.PI} ${(x0 + xMax) / 2} ${(baseY + topY) / 2})`}>length L</text>
+      <text x={(x0 + xMax) / 2} y={baseY - rise / 2 + 16} fill={MUTED} fontSize={11} fontWeight={700} textAnchor="middle" transform={`rotate(${(-angle * 180) / Math.PI} ${(x0 + xMax) / 2} ${(baseY + topY) / 2})`}>length L</text>
       <text x={xMax + 4} y={(baseY + topY) / 2} fill={MUTED} fontSize={10} fontWeight={700} textAnchor="start">H</text>
     </svg>
   );
