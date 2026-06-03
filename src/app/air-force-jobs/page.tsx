@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Air Force Jobs and ASVAB Scores 2026: Popular Careers by Aptitude",
@@ -77,27 +79,6 @@ export default function AirForceJobsPage() {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "Home",
-              item: "https://asvabhero.com/",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Air Force Jobs",
-              item: "https://asvabhero.com/air-force-jobs",
-            },
-          ],
-        }}
-      />
-
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
           "@type": "FAQPage",
           mainEntity: [
             {
@@ -134,6 +115,14 @@ export default function AirForceJobsPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "Air Force ASVAB Score", href: "/air-force-asvab-score" },
+          { name: "Air Force Jobs", href: "/air-force-jobs" },
+        ]}
       />
 
       {/* ── Header + answer unit ── */}
@@ -510,6 +499,16 @@ export default function AirForceJobsPage() {
           Last verified: May 24, 2026
         </p>
       </section>
+
+      <RelatedLinks
+        title="Air Force ASVAB resources"
+        links={[
+          { href: "/air-force-asvab-score", label: "Air Force ASVAB Score Requirements", blurb: "AFQT minimums and MAGE composite thresholds." },
+          { href: "/air-force-asvab-calculator", label: "Air Force ASVAB Calculator", blurb: "Calculate your MAGE composites and qualifying jobs." },
+          { href: "/air-force-mage-score", label: "Air Force MAGE Score Explained", blurb: "How the Mechanical, Administrative, General, and Electronic areas work." },
+          { href: "/air-force-ranks", label: "Air Force Ranks Guide", blurb: "How your job turns into rank and pay over time." },
+        ]}
+      />
     </div>
   );
 }

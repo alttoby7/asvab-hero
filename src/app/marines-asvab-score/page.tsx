@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import EmailCapture from "@/components/EmailCapture";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "ASVAB Marines Score Explained: GT Formula & Line Scores (2026)",
@@ -108,6 +110,14 @@ export default function MarinesASVABScorePage() {
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
       <JsonLd data={articleJsonLd} />
       <JsonLd data={faqJsonLd} />
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Score Requirements", href: "/asvab-score-requirements" },
+          { name: "Marines ASVAB Score", href: "/marines-asvab-score" },
+        ]}
+      />
+
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           ASVAB Marines Score Explained: GT Formula and Line Scores (2026)
@@ -1988,6 +1998,18 @@ export default function MarinesASVABScorePage() {
             </li>
           </ul>
         </section>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Marine Corps ASVAB resources"
+            links={[
+              { href: "/marines-afqt-calculator", label: "Marines AFQT Calculator", blurb: "Calculate the AFQT score the Marine Corps uses." },
+              { href: "/marine-corps-ranks", label: "Marine Corps Ranks Guide", blurb: "How enlistment turns into rank and pay." },
+              { href: "/asvab-score-requirements", label: "ASVAB Score Requirements by Branch", blurb: "Compare the Marine minimum to other branches." },
+              { href: "/what-is-a-good-asvab-score", label: "What Is a Good ASVAB Score?", blurb: "Judge your score against the MOS you want." },
+            ]}
+          />
+        </div>
       </article>
     </div>
   );

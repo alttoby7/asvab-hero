@@ -6,6 +6,8 @@ import RankEquivalencyExplorer from "@/components/ranks/RankEquivalencyExplorer"
 import StartingRankEstimator from "@/components/ranks/StartingRankEstimator";
 import PromotionPathPlanner from "@/components/ranks/PromotionPathPlanner";
 import BranchJobUnlockExplorer from "@/components/ranks/BranchJobUnlockExplorer";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Army Ranks: Complete Guide to Every Grade (2026)",
@@ -84,6 +86,13 @@ export default function ArmyRanksPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "Army Ranks", href: "/army-ranks" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -732,6 +741,19 @@ export default function ArmyRanksPage() {
 
         <div className="mt-8 not-prose">
           <AffiliateBookBlock source="army-ranks-end" />
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Army ranks and ASVAB resources"
+            links={[
+              { href: "/army-asvab-score", label: "Army ASVAB Score Requirements", blurb: "Minimum AFQT and the scores enlistment needs." },
+              { href: "/army-asvab-calculator", label: "Army ASVAB Calculator", blurb: "See your line scores and which MOS you qualify for." },
+              { href: "/army-mos-list", label: "Army MOS List", blurb: "Every Army job and its line score cutoff." },
+              { href: "/warrant-officer-requirements", label: "Warrant Officer Requirements", blurb: "How to move from enlisted into the warrant officer ranks." },
+              { href: "/navy-ranks", label: "Navy Ranks Guide", blurb: "Compare Army grades to the Navy rate and rank system." },
+            ]}
+          />
         </div>
       </article>
     </div>

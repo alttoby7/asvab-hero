@@ -5,6 +5,7 @@ import { getAllTopicSlugs, getStudyGuide } from "@/lib/study-guides/loader";
 import MiniDrill from "@/components/study-guide/MiniDrill";
 import StudyGuideArticle from "@/components/study-guide/StudyGuideArticle";
 import StudyGuideViewBeacon from "@/components/study-guide/StudyGuideViewBeacon";
+import Breadcrumb from "@/components/Breadcrumb";
 import { SUBTEST_NAMES } from "@/types";
 import type { AsvabSubtest } from "@/types";
 
@@ -54,16 +55,18 @@ export default async function StudyGuidePage({ params }: PageProps) {
         subtest={subtestUpper}
         surface="public"
       />
-      {/* Breadcrumb */}
-      <nav className="mb-6 flex items-center gap-2 text-sm text-text-tertiary">
-        <Link href="/asvab-study-guide" className="transition-colors hover:text-text-secondary">
-          Study Guide
-        </Link>
-        <span>/</span>
-        <span className="text-text-secondary">{subtestName}</span>
-        <span>/</span>
-        <span className="text-text-primary">{frontmatter.title}</span>
-      </nav>
+      {/* Breadcrumb (server-rendered, with BreadcrumbList JSON-LD) */}
+      <Breadcrumb
+        items={[
+          { name: "Home", href: "/" },
+          { name: "ASVAB Study Guide", href: "/asvab-study-guide" },
+          { name: subtestName, href: `/study/${subtest}` },
+          {
+            name: frontmatter.title,
+            href: `/study/${subtest}/${topicSlug}`,
+          },
+        ]}
+      />
 
       <StudyGuideArticle guide={guide} />
 
@@ -87,6 +90,31 @@ export default async function StudyGuidePage({ params }: PageProps) {
           Take the diagnostic
         </Link>
       </div>
+
+      {/* Server-rendered up-links: keep the cluster multi-path back to the
+          subtest index and the study-guide hub. */}
+      <nav
+        aria-label="Study guide navigation"
+        className="mt-10 border-t border-navy-border pt-6 text-sm text-text-secondary"
+      >
+        <p>
+          Back to all{" "}
+          <Link
+            href={`/study/${subtest}`}
+            className="font-semibold text-accent transition-colors hover:text-accent-hover"
+          >
+            {subtestName} study guides
+          </Link>{" "}
+          or browse the full{" "}
+          <Link
+            href="/asvab-study-guide"
+            className="font-semibold text-accent transition-colors hover:text-accent-hover"
+          >
+            ASVAB study guide
+          </Link>
+          .
+        </p>
+      </nav>
     </main>
   );
 }

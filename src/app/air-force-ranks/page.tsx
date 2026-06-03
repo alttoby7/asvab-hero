@@ -5,6 +5,8 @@ import RankEquivalencyExplorer from "@/components/ranks/RankEquivalencyExplorer"
 import StartingRankEstimator from "@/components/ranks/StartingRankEstimator";
 import PromotionPathPlanner from "@/components/ranks/PromotionPathPlanner";
 import BranchJobUnlockExplorer from "@/components/ranks/BranchJobUnlockExplorer";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Air Force Ranks and Pay Grades (2026): Enlisted, Officer, Abbreviations",
@@ -37,27 +39,6 @@ export default function AirForceRanksPage() {
           },
           datePublished: "2026-03-17",
           dateModified: "2026-05-24",
-        }}
-      />
-
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: "ASVAB Hero",
-              item: "https://asvabhero.com",
-            },
-            {
-              "@type": "ListItem",
-              position: 2,
-              name: "Air Force Ranks and Pay Grades",
-              item: "https://asvabhero.com/air-force-ranks",
-            },
-          ],
         }}
       />
 
@@ -124,6 +105,13 @@ export default function AirForceRanksPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "Air Force Ranks", href: "/air-force-ranks" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -901,6 +889,19 @@ export default function AirForceRanksPage() {
           >
             Try the Free Calculator
           </Link>
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Air Force ranks and ASVAB resources"
+            links={[
+              { href: "/air-force-asvab-calculator", label: "Air Force ASVAB Calculator", blurb: "Calculate your MAGE composites and qualifying jobs." },
+              { href: "/air-force-jobs", label: "Air Force Jobs by ASVAB Score", blurb: "Every AFSC and the scores it requires." },
+              { href: "/air-force-mage-score", label: "Air Force MAGE Score Explained", blurb: "How the Mechanical, Administrative, General, and Electronic composites work." },
+              { href: "/army-ranks", label: "Army Ranks Guide", blurb: "Compare Air Force grades to the Army rank structure." },
+              { href: "/navy-ranks", label: "Navy Ranks Guide", blurb: "Compare Air Force grades to the Navy rate system." },
+            ]}
+          />
         </div>
       </article>
     </div>

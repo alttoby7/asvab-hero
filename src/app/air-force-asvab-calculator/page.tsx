@@ -10,6 +10,8 @@ import type { MilitaryJob } from "@/types";
 
 import airForceJobs from "@/data/air-force-jobs.json";
 import RelatedCalculators from "@/components/RelatedCalculators";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Air Force ASVAB Calculator: MAGE Scores + Every AFSC You Qualify For",
@@ -40,6 +42,14 @@ export default function AirForceCalculatorPage() {
           description:
             "Calculate your AFQT, Air Force MAGE composite scores, and see every AFSC you qualify for.",
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Calculator", href: "/calculator" },
+          { name: "Air Force ASVAB Calculator", href: "/air-force-asvab-calculator" },
+        ]}
       />
 
       <div className="mb-6">
@@ -250,6 +260,16 @@ export default function AirForceCalculatorPage() {
         </p>
       </section>
       <RelatedCalculators currentHref="/air-force-asvab-calculator" />
+
+      <RelatedLinks
+        title="Air Force ASVAB guides"
+        links={[
+          { href: "/air-force-asvab-score", label: "Air Force ASVAB Score Requirements", blurb: "AFQT minimums and MAGE composite thresholds." },
+          { href: "/air-force-afqt-calculator", label: "Air Force AFQT Calculator", blurb: "Get the percentile-only AFQT breakdown." },
+          { href: "/air-force-jobs", label: "Air Force Jobs by ASVAB Score", blurb: "Every AFSC and the scores it requires." },
+          { href: "/air-force-ranks", label: "Air Force Ranks Guide", blurb: "How enlistment turns into rank and pay." },
+        ]}
+      />
     </div>
   );
 }

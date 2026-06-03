@@ -6,6 +6,8 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 import RelatedCalculators from "@/components/RelatedCalculators";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Marines AFQT Calculator 2026: Check If You Meet the 32 / 50 Minimum",
@@ -71,6 +73,14 @@ export default function MarinesAfqtCalculatorPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Calculator", href: "/calculator" },
+          { name: "Marines AFQT Calculator", href: "/marines-afqt-calculator" },
+        ]}
       />
 
       <div className="mb-6">
@@ -313,6 +323,15 @@ export default function MarinesAfqtCalculatorPage() {
         </ul>
       </section>
       <RelatedCalculators currentHref="/marines-afqt-calculator" />
+
+      <RelatedLinks
+        title="Marine Corps ASVAB guides"
+        links={[
+          { href: "/marines-asvab-score", label: "Marine Corps ASVAB Score Requirements", blurb: "Minimum AFQT and the line scores MOS need." },
+          { href: "/marine-corps-ranks", label: "Marine Corps Ranks Guide", blurb: "How enlistment turns into rank and pay." },
+          { href: "/afqt-score", label: "AFQT Score Explained", blurb: "What the AFQT percentile means and how it is built." },
+        ]}
+      />
     </div>
   );
 }

@@ -5,6 +5,8 @@ import RankEquivalencyExplorer from "@/components/ranks/RankEquivalencyExplorer"
 import StartingRankEstimator from "@/components/ranks/StartingRankEstimator";
 import PromotionPathPlanner from "@/components/ranks/PromotionPathPlanner";
 import BranchJobUnlockExplorer from "@/components/ranks/BranchJobUnlockExplorer";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Navy Ranks: Complete Guide to Every Pay Grade (2026)",
@@ -83,6 +85,13 @@ export default function NavyRanksPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "Navy Ranks", href: "/navy-ranks" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -888,6 +897,19 @@ export default function NavyRanksPage() {
               John Perryman is the 17th Master Chief Petty Officer of the Navy (MCPON), serving since September 2025. He succeeded James Honea, the 16th MCPON, who served from September 2022 to September 2025. The MCPON is the senior enlisted advisor to the Chief of Naval Operations and represents the interests of all enlisted sailors across the fleet.
             </p>
           </div>
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Navy ranks and ASVAB resources"
+            links={[
+              { href: "/navy-asvab-score-calculator", label: "Navy ASVAB Score Calculator", blurb: "Calculate your Navy line scores and AFQT." },
+              { href: "/navy-ratings-list", label: "Navy Ratings List", blurb: "Every Navy rating and the ASVAB scores it needs." },
+              { href: "/navy-asvab-score", label: "Navy ASVAB Score Requirements", blurb: "Minimum scores to enlist in the Navy." },
+              { href: "/warrant-officer-requirements", label: "Warrant Officer Requirements", blurb: "How sailors become Navy warrant officers." },
+              { href: "/army-ranks", label: "Army Ranks Guide", blurb: "Compare Navy rates to the Army rank structure." },
+            ]}
+          />
         </div>
       </article>
     </div>

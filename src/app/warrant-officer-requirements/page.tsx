@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Warrant Officer Requirements by Branch (2026)",
@@ -100,6 +102,14 @@ export default function WarrantOfficerRequirementsPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "GT Score Requirements", href: "/gt-score-requirements" },
+          { name: "Warrant Officer Requirements", href: "/warrant-officer-requirements" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -811,6 +821,18 @@ export default function WarrantOfficerRequirementsPage() {
           >
             Try the Free Calculator
           </Link>
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Rank and qualifying score guides"
+            links={[
+              { href: "/army-ranks", label: "Army Ranks Guide", blurb: "Where warrant officers sit in the Army rank structure." },
+              { href: "/navy-ranks", label: "Navy Ranks Guide", blurb: "How the Navy uses Chief Warrant Officer grades." },
+              { href: "/air-force-ranks", label: "Air Force Ranks Guide", blurb: "The 2024 Air Force warrant officer restart explained." },
+              { href: "/mos-reclassification", label: "MOS Reclassification", blurb: "Reclassify your job to meet a warrant officer track." },
+            ]}
+          />
         </div>
       </article>
     </div>

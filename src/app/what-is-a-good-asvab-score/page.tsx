@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 import ArticleByline from "@/components/ArticleByline";
 
@@ -102,6 +104,14 @@ export default function WhatIsAGoodASVABScorePage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Scores Explained", href: "/asvab-scores-explained" },
+          { name: "What Is a Good ASVAB Score?", href: "/what-is-a-good-asvab-score" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -640,6 +650,18 @@ export default function WhatIsAGoodASVABScorePage() {
               <p>{a}</p>
             </div>
           ))}
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Understand your ASVAB scores"
+            links={[
+              { href: "/asvab-scores-explained", label: "ASVAB Scores Explained", blurb: "How the AFQT, line scores, and composites fit together." },
+              { href: "/asvab-score-requirements", label: "ASVAB Score Requirements by Branch", blurb: "Every branch minimum and the scores jobs need." },
+              { href: "/afqt-score", label: "AFQT Score Explained", blurb: "The percentile that controls your eligibility." },
+              { href: "/gt-score", label: "GT Score Explained", blurb: "The line score that opens the most jobs." },
+            ]}
+          />
         </div>
 
         <p className="mt-8 text-xs italic text-text-tertiary">

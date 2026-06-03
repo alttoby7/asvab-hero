@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "ASVAB Retake Policy 2026: Rules & Waiting Periods",
@@ -99,6 +101,14 @@ export default function AsvabRetakePolicyPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "How to Retake the ASVAB", href: "/how-to-retake-the-asvab" },
+          { name: "ASVAB Retake Policy", href: "/asvab-retake-policy" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -796,6 +806,17 @@ export default function AsvabRetakePolicyPage() {
           >
             Try the Free Calculator
           </Link>
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="ASVAB retake and score resources"
+            links={[
+              { href: "/how-to-retake-the-asvab", label: "How to Retake the ASVAB", blurb: "Step by step on scheduling and passing a retest." },
+              { href: "/mos-reclassification", label: "MOS Reclassification", blurb: "Retest to qualify for a different military job." },
+              { href: "/asvab-score-requirements", label: "ASVAB Score Requirements by Branch", blurb: "The scores you are aiming to beat on the retake." },
+            ]}
+          />
         </div>
       </article>
     </div>

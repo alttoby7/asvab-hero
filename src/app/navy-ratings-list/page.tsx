@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import AffiliateBookBlock from "@/components/AffiliateBookBlock";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Navy Ratings List (2026): Jobs and Required ASVAB Scores",
@@ -108,6 +110,14 @@ export default function NavyRatingsListPage() {
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
       <JsonLd data={articleSchema} />
       <JsonLd data={faqSchema} />
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "Navy ASVAB Score", href: "/navy-asvab-score" },
+          { name: "Navy Ratings List", href: "/navy-ratings-list" },
+        ]}
+      />
+
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           Navy Ratings List for 2026: All 89 Jobs and Their ASVAB Score Requirements
@@ -1639,6 +1649,17 @@ export default function NavyRatingsListPage() {
 
         <div className="mt-8 not-prose">
           <AffiliateBookBlock source="navy-ratings-list-end" />
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Navy ASVAB resources"
+            links={[
+              { href: "/navy-asvab-score", label: "Navy ASVAB Score Requirements", blurb: "Minimum AFQT and line scores to enlist in the Navy." },
+              { href: "/navy-asvab-score-calculator", label: "Navy ASVAB Score Calculator", blurb: "Calculate the line scores each rating needs." },
+              { href: "/navy-ranks", label: "Navy Ranks Guide", blurb: "How ratings map to rate, rank, and pay." },
+            ]}
+          />
         </div>
       </article>
     </div>

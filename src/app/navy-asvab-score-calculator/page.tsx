@@ -10,6 +10,8 @@ import type { MilitaryJob } from "@/types";
 
 import navyJobs from "@/data/navy-jobs.json";
 import RelatedCalculators from "@/components/RelatedCalculators";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Navy ASVAB Score Calculator: See Every Rating You Qualify For",
@@ -40,6 +42,14 @@ export default function NavyCalculatorPage() {
           description:
             "Calculate your AFQT, Navy composite scores, and see every Navy rating you qualify for.",
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "ASVAB Calculator", href: "/calculator" },
+          { name: "Navy ASVAB Score Calculator", href: "/navy-asvab-score-calculator" },
+        ]}
       />
 
       <div className="mb-6">
@@ -186,6 +196,16 @@ export default function NavyCalculatorPage() {
         </p>
       </section>
       <RelatedCalculators currentHref="/navy-asvab-score-calculator" />
+
+      <RelatedLinks
+        title="Navy ASVAB guides"
+        links={[
+          { href: "/navy-asvab-score", label: "Navy ASVAB Score Requirements", blurb: "Minimum AFQT and the scores ratings need." },
+          { href: "/navy-ratings-list", label: "Navy Ratings List", blurb: "Every Navy rating and its ASVAB requirement." },
+          { href: "/navy-afqt-calculator", label: "Navy AFQT Calculator", blurb: "Get the percentile-only AFQT breakdown." },
+          { href: "/navy-ranks", label: "Navy Ranks Guide", blurb: "How your rate turns into rank and pay." },
+        ]}
+      />
     </div>
   );
 }

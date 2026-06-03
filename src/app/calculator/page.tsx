@@ -1,7 +1,9 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
 import Calculator from "@/components/Calculator";
+import CalculatorExplore from "@/components/CalculatorExplore";
 import JobCatalog from "@/components/JobCatalog";
 import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
@@ -59,6 +61,12 @@ export default function CalculatorPage() {
           description:
             "Enter your 9 ASVAB subtest scores and instantly see your AFQT percentile, composite scores, and qualifying military jobs across all 6 branches.",
         }}
+      />
+      <Breadcrumb
+        items={[
+          { name: "Home", href: "/" },
+          { name: "ASVAB Score Calculator", href: "/calculator" },
+        ]}
       />
       <div className="mb-8">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
@@ -154,6 +162,8 @@ export default function CalculatorPage() {
           ))}
         </div>
       </section>
+
+      <CalculatorExplore />
     </div>
   );
 }

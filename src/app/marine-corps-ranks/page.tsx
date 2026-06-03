@@ -5,6 +5,8 @@ import RankEquivalencyExplorer from "@/components/ranks/RankEquivalencyExplorer"
 import StartingRankEstimator from "@/components/ranks/StartingRankEstimator";
 import PromotionPathPlanner from "@/components/ranks/PromotionPathPlanner";
 import BranchJobUnlockExplorer from "@/components/ranks/BranchJobUnlockExplorer";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "Marine Corps Ranks: USMC Enlisted, Officer & Pay Guide (2026)",
@@ -111,6 +113,13 @@ export default function MarineCorpsRanksPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "Marine Corps Ranks", href: "/marine-corps-ranks" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -1041,6 +1050,18 @@ export default function MarineCorpsRanksPage() {
           >
             Try the Free Calculator
           </Link>
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="Marine Corps ranks and ASVAB resources"
+            links={[
+              { href: "/marines-asvab-score", label: "Marine Corps ASVAB Score Requirements", blurb: "Minimum AFQT and line scores to enlist in the Marines." },
+              { href: "/marines-afqt-calculator", label: "Marines AFQT Calculator", blurb: "Calculate the AFQT score the Marine Corps uses." },
+              { href: "/army-ranks", label: "Army Ranks Guide", blurb: "Compare USMC grades to the Army rank structure." },
+              { href: "/navy-ranks", label: "Navy Ranks Guide", blurb: "How Marine ranks line up with the Navy." },
+            ]}
+          />
         </div>
       </article>
     </div>

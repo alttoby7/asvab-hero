@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
   title: "GT Score Military: Requirements & the 110 Wall",
@@ -100,6 +102,14 @@ export default function GTScoreRequirementsPage() {
             },
           ],
         }}
+      />
+
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "GT Score", href: "/gt-score" },
+          { name: "GT Score Requirements", href: "/gt-score-requirements" },
+        ]}
       />
 
       <article className="prose-asvab">
@@ -891,6 +901,18 @@ export default function GTScoreRequirementsPage() {
           >
             Try the Free Calculator
           </Link>
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks
+            title="GT score and ASVAB resources"
+            links={[
+              { href: "/gt-score", label: "GT Score Explained", blurb: "What the GT line score is and how it is built." },
+              { href: "/asvab-scores-explained", label: "ASVAB Scores Explained", blurb: "How GT relates to your AFQT and other line scores." },
+              { href: "/army-asvab-score", label: "Army ASVAB Score Requirements", blurb: "GT cutoffs for Army jobs and enlistment." },
+              { href: "/mos-reclassification", label: "MOS Reclassification", blurb: "Raise your GT score to qualify for a new job." },
+            ]}
+          />
         </div>
       </article>
     </div>
