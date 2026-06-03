@@ -12,6 +12,8 @@
  */
 import type { ReactNode } from "react";
 import OhmsLawTriangleInteractive from "./OhmsLawTriangleInteractive";
+import GearRatioInteractive from "./GearRatioInteractive";
+import RightTriangleInteractive from "./RightTriangleInteractive";
 
 const ORANGE = "#f97316";
 const ORANGE_DIM = "rgba(249,115,22,0.15)";
@@ -393,7 +395,9 @@ const REGISTRY: Record<string, (props: any) => ReactNode> = {
   circuit: (p) => <Circuit {...p} />,
   lever: (p) => <Lever {...p} />,
   pulley: (p) => <Pulley {...p} />,
-  "gear-ratio": (p) => <GearRatio {...p} />,
+  "gear-ratio": (p) => <GearRatioInteractive {...p} />,
+  "gear-ratio-static": (p) => <GearRatio {...p} />,
+  "right-triangle": (p) => <RightTriangleInteractive {...p} />,
   "force-diagram": (p) => <ForceDiagram {...p} />,
 };
 

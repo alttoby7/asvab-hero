@@ -25,10 +25,6 @@ worked_examples:
 diagrams:
   - type: gear-ratio
     after: "Gear ratio fundamentals"
-    props:
-      driverTeeth: 10
-      drivenTeeth: 30
-      caption: "10T driver, 30T driven → ratio 3:1 (driven turns 3× slower, 3× torque)"
 ---
 
 ## What the ASVAB is testing
