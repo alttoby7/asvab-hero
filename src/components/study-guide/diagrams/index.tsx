@@ -14,6 +14,9 @@ import type { ReactNode } from "react";
 import OhmsLawTriangleInteractive from "./OhmsLawTriangleInteractive";
 import GearRatioInteractive from "./GearRatioInteractive";
 import RightTriangleInteractive from "./RightTriangleInteractive";
+import LeverInteractive from "./LeverInteractive";
+import NumberLineInteractive from "./NumberLineInteractive";
+import FractionBarInteractive from "./FractionBarInteractive";
 
 const ORANGE = "#f97316";
 const ORANGE_DIM = "rgba(249,115,22,0.15)";
@@ -388,12 +391,15 @@ function ForceDiagram({ label }: { label?: string }) {
 /* ================================================================== */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const REGISTRY: Record<string, (props: any) => ReactNode> = {
-  "fraction-bar": (p) => <FractionBar {...p} />,
-  "number-line": (p) => <NumberLine {...p} />,
+  "fraction-bar": (p) => <FractionBarInteractive {...p} />,
+  "fraction-bar-static": (p) => <FractionBar {...p} />,
+  "number-line": (p) => <NumberLineInteractive {...p} />,
+  "number-line-static": (p) => <NumberLine {...p} />,
   "ohms-law-triangle": (p) => <OhmsLawTriangleInteractive {...p} />,
   "ohms-law-triangle-static": (p) => <OhmsLawTriangle {...p} />,
   circuit: (p) => <Circuit {...p} />,
-  lever: (p) => <Lever {...p} />,
+  lever: (p) => <LeverInteractive {...p} />,
+  "lever-static": (p) => <Lever {...p} />,
   pulley: (p) => <Pulley {...p} />,
   "gear-ratio": (p) => <GearRatioInteractive {...p} />,
   "gear-ratio-static": (p) => <GearRatio {...p} />,
