@@ -76,6 +76,8 @@ export const FunnelEvents = {
   TopicDrillComplete: "topic_drill_complete",
   StudyGuideView: "study_guide_view",
   StudyGuideMarkedStudied: "study_guide_marked_studied",
+  DiagramQuizAnswered: "diagram_quiz_answered",
+  DiagramPracticeClick: "diagram_practice_click",
   PaywallShown: "paywall_shown",
   UpgradePageView: "upgrade_page_view",
   CheckoutStart: "checkout_start",

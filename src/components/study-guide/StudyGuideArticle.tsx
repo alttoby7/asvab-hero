@@ -104,7 +104,13 @@ export default function StudyGuideArticle({ guide }: { guide: StudyGuide }) {
               }`}
             >
               {specs.map((d, j) => (
-                <Diagram key={j} type={d.type} props={d.props} />
+                <Diagram
+                  key={j}
+                  type={d.type}
+                  props={d.props}
+                  topicId={frontmatter.topic_id}
+                  subtest={subtestUpper}
+                />
               ))}
             </div>
           ) : null;

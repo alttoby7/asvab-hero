@@ -7,7 +7,7 @@
  * ways" skill Khan teaches generically and ASVAB sites skip.
  */
 import { useState } from "react";
-import { InteractiveCard, ModeToggle, NumField, CheckButton, NextButton, rnd, numOf, type Mode } from "./_kit";
+import { InteractiveCard, ModeToggle, NumField, CheckButton, QuizFooter, useScore, rnd, numOf, type Mode, type DiagramContext } from "./_kit";
 
 const ORANGE = "#f97316";
 const EMPTY = "#1a2942";
@@ -29,7 +29,7 @@ function Bar({ num, den }: { num: number; den: number }) {
   );
 }
 
-export default function FractionBarInteractive({ label = "Fraction bar" }: { label?: string }) {
+export default function FractionBarInteractive({ label = "Fraction bar", context }: { label?: string; context?: DiagramContext }) {
   const [mode, setMode] = useState<Mode>("explore");
   const [den, setDen] = useState(4);
   const [num, setNum] = useState(3);
@@ -37,6 +37,7 @@ export default function FractionBarInteractive({ label = "Fraction bar" }: { lab
   const [q, setQ] = useState<{ num: number; den: number } | null>(null);
   const [guess, setGuess] = useState("");
   const [checked, setChecked] = useState(false);
+  const { score, record, reset } = useScore();
 
   const pct = Math.round((num / den) * 1000) / 10;
   const dec = Math.round((num / den) * 1000) / 1000;
@@ -47,6 +48,7 @@ export default function FractionBarInteractive({ label = "Fraction bar" }: { lab
     setQ({ den: d, num: rnd(1, d - 1) });
     setGuess("");
     setChecked(false);
+    reset();
   };
   const next = () => {
     const d = DENOMS[rnd(0, DENOMS.length - 1)];
@@ -134,15 +136,16 @@ export default function FractionBarInteractive({ label = "Fraction bar" }: { lab
             </div>
           </div>
           {checked ? (
-            <div className="mt-3">
-              <p className={`text-center text-sm font-semibold ${correct ? "text-success" : "text-danger"}`}>
-                {correct ? "Correct ✓" : `Not quite — ${q.num} of ${q.den} shaded`}
-              </p>
-              <p className="mt-1 text-center text-xs text-text-tertiary"><span className="font-mono text-text-secondary">{q.num}/{q.den} = {Math.round((q.num / q.den) * 1000) / 1000}</span></p>
-              <NextButton onClick={next} />
-            </div>
+            <QuizFooter
+              correct={correct}
+              resultText={correct ? "Correct ✓" : `Not quite — ${q.num} of ${q.den} shaded`}
+              formula={`${q.num}/${q.den} = ${Math.round((q.num / q.den) * 1000) / 1000}`}
+              score={score}
+              context={context}
+              onNext={next}
+            />
           ) : (
-            <CheckButton onClick={() => setChecked(true)} disabled={gn == null} />
+            <CheckButton onClick={() => { record(correct); setChecked(true); }} disabled={gn == null} />
           )}
         </>
       ) : null}

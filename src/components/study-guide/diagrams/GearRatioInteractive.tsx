@@ -9,7 +9,7 @@
  * Follows the OhmsLawTriangleInteractive explore + predict→check template.
  */
 import { useMemo, useState } from "react";
-import { InteractiveCard, ModeToggle, NumField, CheckButton, NextButton, rnd, numOf, fmt, type Mode } from "./_kit";
+import { InteractiveCard, ModeToggle, NumField, CheckButton, QuizFooter, useScore, rnd, numOf, fmt, type Mode, type DiagramContext } from "./_kit";
 
 const ORANGE = "#f97316";
 const MUTED = "#94a3b8";
@@ -43,7 +43,7 @@ function genQuiz(): Quiz {
   return { driver, driven, inRpm, answer: (inRpm * driver) / driven };
 }
 
-export default function GearRatioInteractive({ label = "Gear ratio" }: { label?: string }) {
+export default function GearRatioInteractive({ label = "Gear ratio", context }: { label?: string; context?: DiagramContext }) {
   const [mode, setMode] = useState<Mode>("explore");
   const [driver, setDriver] = useState("12");
   const [driven, setDriven] = useState("24");
@@ -52,6 +52,7 @@ export default function GearRatioInteractive({ label = "Gear ratio" }: { label?:
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [guess, setGuess] = useState("");
   const [checked, setChecked] = useState(false);
+  const { score, record, reset } = useScore();
 
   const dv = numOf(driver);
   const dn = numOf(driven);
@@ -59,7 +60,7 @@ export default function GearRatioInteractive({ label = "Gear ratio" }: { label?:
   const ir = numOf(inRpm);
   const outRpm = useMemo(() => (dv && dn && ir != null && dn !== 0 ? (ir * dv) / dn : null), [dv, dn, ir]);
 
-  const startQuiz = () => { setMode("quiz"); setQuiz(genQuiz()); setGuess(""); setChecked(false); };
+  const startQuiz = () => { setMode("quiz"); setQuiz(genQuiz()); setGuess(""); setChecked(false); reset(); };
   const next = () => { setQuiz(genQuiz()); setGuess(""); setChecked(false); };
   const toExplore = () => { setMode("explore"); setQuiz(null); setChecked(false); };
 
@@ -141,17 +142,16 @@ export default function GearRatioInteractive({ label = "Gear ratio" }: { label?:
             )}
           </div>
           {checked ? (
-            <div className="mt-3">
-              <p className={`text-center text-sm font-semibold ${correct ? "text-success" : "text-danger"}`}>
-                {correct ? "Correct ✓" : `Not quite — ${fmt(quiz.answer)} RPM`}
-              </p>
-              <p className="mt-1 text-center text-xs text-text-tertiary">
-                <span className="font-mono text-text-secondary">{quiz.inRpm} × {quiz.driver} ÷ {quiz.driven} = {fmt(quiz.answer)}</span>
-              </p>
-              <NextButton onClick={next} />
-            </div>
+            <QuizFooter
+              correct={correct}
+              resultText={correct ? "Correct ✓" : `Not quite — ${fmt(quiz.answer)} RPM`}
+              formula={`${quiz.inRpm} × ${quiz.driver} ÷ ${quiz.driven} = ${fmt(quiz.answer)}`}
+              score={score}
+              context={context}
+              onNext={next}
+            />
           ) : (
-            <CheckButton onClick={() => setChecked(true)} disabled={gn == null} />
+            <CheckButton onClick={() => { record(correct); setChecked(true); }} disabled={gn == null} />
           )}
         </>
       ) : null}

@@ -7,7 +7,7 @@
  * Mechanical-advantage problems are pure text on competitor sites.
  */
 import { useMemo, useState } from "react";
-import { InteractiveCard, ModeToggle, NumField, CheckButton, NextButton, rnd, numOf, fmt, type Mode } from "./_kit";
+import { InteractiveCard, ModeToggle, NumField, CheckButton, QuizFooter, useScore, rnd, numOf, fmt, type Mode, type DiagramContext } from "./_kit";
 
 type Var = "effort" | "effortArm" | "load" | "loadArm";
 
@@ -45,7 +45,7 @@ function genQuiz(): Quiz {
   return { solveFor, given, answer: all[solveFor] };
 }
 
-export default function LeverInteractive({ label = "Lever" }: { label?: string }) {
+export default function LeverInteractive({ label = "Lever", context }: { label?: string; context?: DiagramContext }) {
   const [mode, setMode] = useState<Mode>("explore");
   const [solveFor, setSolveFor] = useState<Var>("effort");
   const [vals, setVals] = useState<Record<Var, string>>({ effort: "", effortArm: "", load: "", loadArm: "" });
@@ -53,6 +53,7 @@ export default function LeverInteractive({ label = "Lever" }: { label?: string }
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [guess, setGuess] = useState("");
   const [checked, setChecked] = useState(false);
+  const { score, record, reset } = useScore();
 
   const exploreResult = useMemo(() => {
     const e = numOf(vals.effort);
@@ -67,7 +68,7 @@ export default function LeverInteractive({ label = "Lever" }: { label?: string }
 
   const active = mode === "quiz" && quiz ? quiz.solveFor : solveFor;
 
-  const startQuiz = () => { setMode("quiz"); setQuiz(genQuiz()); setGuess(""); setChecked(false); };
+  const startQuiz = () => { setMode("quiz"); setQuiz(genQuiz()); setGuess(""); setChecked(false); reset(); };
   const next = () => { setQuiz(genQuiz()); setGuess(""); setChecked(false); };
   const toExplore = () => { setMode("explore"); setQuiz(null); setChecked(false); };
 
@@ -128,15 +129,16 @@ export default function LeverInteractive({ label = "Lever" }: { label?: string }
 
       {mode === "quiz" && quiz ? (
         checked ? (
-          <div className="mt-3">
-            <p className={`text-center text-sm font-semibold ${correct ? "text-success" : "text-danger"}`}>
-              {correct ? "Correct ✓" : `Not quite — ${LABEL[quiz.solveFor]} = ${fmt(quiz.answer)}`}
-            </p>
-            <p className="mt-1 text-center text-xs text-text-tertiary"><span className="font-mono text-text-secondary">Effort × effort arm = Load × load arm</span></p>
-            <NextButton onClick={next} />
-          </div>
+          <QuizFooter
+            correct={correct}
+            resultText={correct ? "Correct ✓" : `Not quite — ${LABEL[quiz.solveFor]} = ${fmt(quiz.answer)}`}
+            formula="Effort × effort arm = Load × load arm"
+            score={score}
+            context={context}
+            onNext={next}
+          />
         ) : (
-          <CheckButton onClick={() => setChecked(true)} disabled={gn == null} />
+          <CheckButton onClick={() => { record(correct); setChecked(true); }} disabled={gn == null} />
         )
       ) : (
         <p className="mt-2 text-center text-xs text-text-tertiary"><span className="font-mono text-text-secondary">Effort × effort arm = Load × load arm</span></p>

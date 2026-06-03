@@ -6,7 +6,7 @@
  * Khan's signature AR/MK interaction, framed for the ASVAB.
  */
 import { useState } from "react";
-import { InteractiveCard, ModeToggle, NumField, CheckButton, NextButton, rnd, numOf, fmt, type Mode } from "./_kit";
+import { InteractiveCard, ModeToggle, NumField, CheckButton, QuizFooter, useScore, rnd, numOf, fmt, type Mode, type DiagramContext } from "./_kit";
 
 const ORANGE = "#f97316";
 const EMPTY = "#1a2942";
@@ -18,10 +18,12 @@ export default function NumberLineInteractive({
   min = 0,
   max = 10,
   label = "Number line",
+  context,
 }: {
   min?: number;
   max?: number;
   label?: string;
+  context?: DiagramContext;
 }) {
   const [mode, setMode] = useState<Mode>("explore");
   const [value, setValue] = useState((min + max) / 2);
@@ -29,6 +31,7 @@ export default function NumberLineInteractive({
   const [target, setTarget] = useState<number | null>(null);
   const [guess, setGuess] = useState("");
   const [checked, setChecked] = useState(false);
+  const { score, record, reset } = useScore();
 
   const W = 280;
   const padX = 16;
@@ -44,6 +47,7 @@ export default function NumberLineInteractive({
     setTarget(rnd(min * 2 + 1, max * 2 - 1) / 2); // halves between min..max
     setGuess("");
     setChecked(false);
+    reset();
   };
   const next = () => {
     setTarget(rnd(min * 2 + 1, max * 2 - 1) / 2);
@@ -99,14 +103,15 @@ export default function NumberLineInteractive({
             )}
           </div>
           {checked ? (
-            <div>
-              <p className={`mt-2 text-center text-sm font-semibold ${correct ? "text-success" : "text-danger"}`}>
-                {correct ? "Correct ✓" : `Not quite — it's ${fmt(target!)}`}
-              </p>
-              <NextButton onClick={next} />
-            </div>
+            <QuizFooter
+              correct={correct}
+              resultText={correct ? "Correct ✓" : `Not quite — it's ${fmt(target!)}`}
+              score={score}
+              context={context}
+              onNext={next}
+            />
           ) : (
-            <CheckButton onClick={() => setChecked(true)} disabled={gn == null} />
+            <CheckButton onClick={() => { record(correct); setChecked(true); }} disabled={gn == null} />
           )}
         </div>
       )}

@@ -9,7 +9,7 @@
  * labeled triangle, but it doesn't compute). Follows the Ohm's template.
  */
 import { useMemo, useState } from "react";
-import { InteractiveCard, ModeToggle, NumField, CheckButton, NextButton, rnd, numOf, fmt, type Mode } from "./_kit";
+import { InteractiveCard, ModeToggle, NumField, CheckButton, QuizFooter, useScore, rnd, numOf, fmt, type Mode, type DiagramContext } from "./_kit";
 
 type Side = "a" | "b" | "c";
 
@@ -44,7 +44,7 @@ function genQuiz(): Quiz {
   return { solveFor: which, given, answer: map[which] };
 }
 
-export default function RightTriangleInteractive({ label = "Right triangle (Pythagorean)" }: { label?: string }) {
+export default function RightTriangleInteractive({ label = "Right triangle (Pythagorean)", context }: { label?: string; context?: DiagramContext }) {
   const [mode, setMode] = useState<Mode>("explore");
   const [solveFor, setSolveFor] = useState<Side>("c");
   const [vals, setVals] = useState<Record<Side, string>>({ a: "", b: "", c: "" });
@@ -52,6 +52,7 @@ export default function RightTriangleInteractive({ label = "Right triangle (Pyth
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [guess, setGuess] = useState("");
   const [checked, setChecked] = useState(false);
+  const { score, record, reset } = useScore();
 
   const exploreResult = useMemo(() => {
     const a = numOf(vals.a);
@@ -65,7 +66,7 @@ export default function RightTriangleInteractive({ label = "Right triangle (Pyth
   const active = mode === "quiz" && quiz ? quiz.solveFor : solveFor;
   const formula = active === "c" ? "c = √(a² + b²)" : active === "a" ? "a = √(c² − b²)" : "b = √(c² − a²)";
 
-  const startQuiz = () => { setMode("quiz"); setQuiz(genQuiz()); setGuess(""); setChecked(false); };
+  const startQuiz = () => { setMode("quiz"); setQuiz(genQuiz()); setGuess(""); setChecked(false); reset(); };
   const next = () => { setQuiz(genQuiz()); setGuess(""); setChecked(false); };
   const toExplore = () => { setMode("explore"); setQuiz(null); setChecked(false); };
 
@@ -139,15 +140,16 @@ export default function RightTriangleInteractive({ label = "Right triangle (Pyth
             })}
           </div>
           {checked ? (
-            <div className="mt-3">
-              <p className={`text-center text-sm font-semibold ${correct ? "text-success" : "text-danger"}`}>
-                {correct ? "Correct ✓" : `Not quite — ${sideName[quiz.solveFor]} = ${fmt(quiz.answer)}`}
-              </p>
-              <p className="mt-1 text-center text-xs text-text-tertiary"><span className="font-mono text-text-secondary">{formula}</span></p>
-              <NextButton onClick={next} />
-            </div>
+            <QuizFooter
+              correct={correct}
+              resultText={correct ? "Correct ✓" : `Not quite — ${sideName[quiz.solveFor]} = ${fmt(quiz.answer)}`}
+              formula={formula}
+              score={score}
+              context={context}
+              onNext={next}
+            />
           ) : (
-            <CheckButton onClick={() => setChecked(true)} disabled={gn == null} />
+            <CheckButton onClick={() => { record(correct); setChecked(true); }} disabled={gn == null} />
           )}
         </>
       ) : null}

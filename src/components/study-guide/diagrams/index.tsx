@@ -409,8 +409,19 @@ const REGISTRY: Record<string, (props: any) => ReactNode> = {
 
 export const DIAGRAM_TYPES = Object.keys(REGISTRY);
 
-export function Diagram({ type, props }: { type: string; props?: Record<string, unknown> }) {
+export function Diagram({
+  type,
+  props,
+  topicId,
+  subtest,
+}: {
+  type: string;
+  props?: Record<string, unknown>;
+  topicId?: string;
+  subtest?: string;
+}) {
   const render = REGISTRY[type];
   if (!render) return null;
-  return <>{render(props ?? {})}</>;
+  // topicId/subtest power the interactive quiz → practice-drill tie-in.
+  return <>{render({ ...(props ?? {}), context: { topicId, subtest } })}</>;
 }

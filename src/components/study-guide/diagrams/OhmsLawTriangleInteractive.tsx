@@ -14,6 +14,7 @@
  * It is the TEMPLATE the other interactive diagrams follow.
  */
 import { useMemo, useState } from "react";
+import { useScore, QuizFooter, type DiagramContext } from "./_kit";
 
 type Slot = "top" | "bl" | "br";
 type Mode = "explore" | "quiz";
@@ -24,6 +25,7 @@ interface Props {
   bottomRight?: string;
   units?: { top?: string; bottomLeft?: string; bottomRight?: string };
   label?: string;
+  context?: DiagramContext;
 }
 
 interface Quiz {
@@ -67,6 +69,7 @@ export default function OhmsLawTriangleInteractive({
   bottomRight = "R",
   units = {},
   label,
+  context,
 }: Props) {
   const [mode, setMode] = useState<Mode>("explore");
   const [solveFor, setSolveFor] = useState<Slot>("top");
@@ -76,6 +79,7 @@ export default function OhmsLawTriangleInteractive({
   const [quiz, setQuiz] = useState<Quiz | null>(null);
   const [guess, setGuess] = useState("");
   const [checked, setChecked] = useState(false);
+  const { score, record, reset } = useScore();
 
   const names: Record<Slot, string> = { top, bl: bottomLeft, br: bottomRight };
   const unit: Record<Slot, string> = {
@@ -113,6 +117,7 @@ export default function OhmsLawTriangleInteractive({
     setQuiz(genQuiz());
     setGuess("");
     setChecked(false);
+    reset();
   };
   const nextProblem = () => {
     setQuiz(genQuiz());
@@ -239,21 +244,18 @@ export default function OhmsLawTriangleInteractive({
           </div>
 
           {checked ? (
-            <div className="mt-3">
-              <p className={`text-center text-sm font-semibold ${correct ? "text-success" : "text-danger"}`}>
-                {correct ? "Correct ✓" : `Not quite — ${names[quiz.solveFor]} = ${fmt(quiz.answer)}${unit[quiz.solveFor]}`}
-              </p>
-              <p className="mt-1 text-center text-xs text-text-tertiary">
-                <span className="font-mono text-text-secondary">{formula}</span>
-              </p>
-              <button type="button" onClick={nextProblem} className="mx-auto mt-3 block rounded-lg bg-accent px-4 py-1.5 text-sm font-semibold text-navy hover:bg-accent-hover">
-                Next problem
-              </button>
-            </div>
+            <QuizFooter
+              correct={correct}
+              resultText={correct ? "Correct ✓" : `Not quite — ${names[quiz.solveFor]} = ${fmt(quiz.answer)}${unit[quiz.solveFor]}`}
+              formula={formula}
+              score={score}
+              context={context}
+              onNext={nextProblem}
+            />
           ) : (
             <button
               type="button"
-              onClick={() => setChecked(true)}
+              onClick={() => { record(correct); setChecked(true); }}
               disabled={guessNum == null}
               className="mx-auto mt-3 block rounded-lg bg-accent px-4 py-1.5 text-sm font-semibold text-navy hover:bg-accent-hover disabled:opacity-40"
             >

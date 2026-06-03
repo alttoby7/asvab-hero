@@ -6,9 +6,34 @@
  * across diagrams so they don't drift. See OhmsLawTriangleInteractive for the
  * canonical explore + predict→check pattern these support.
  */
-import type { ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
+import Link from "next/link";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
+import { SUBTEST_NAMES } from "@/types";
+import type { AsvabSubtest } from "@/types";
 
 export type Mode = "explore" | "quiz";
+
+/** Context StudyGuideArticle injects into every diagram so the quiz loop can
+ *  deep-link to the matching practice drill. */
+export interface DiagramContext {
+  topicId?: string;
+  subtest?: string;
+}
+
+export interface Score {
+  correct: number;
+  total: number;
+}
+
+/** Tracks the running quiz score within a single diagram session. */
+export function useScore() {
+  const [score, setScore] = useState<Score>({ correct: 0, total: 0 });
+  const record = (ok: boolean) =>
+    setScore((s) => ({ correct: s.correct + (ok ? 1 : 0), total: s.total + 1 }));
+  const reset = () => setScore({ correct: 0, total: 0 });
+  return { score, record, reset };
+}
 
 export const rnd = (min: number, max: number) =>
   min + Math.floor(Math.random() * (max - min + 1));
@@ -123,9 +148,81 @@ export function NextButton({ onClick }: { onClick: () => void }) {
     <button
       type="button"
       onClick={onClick}
-      className="mx-auto mt-3 block rounded-lg bg-accent px-4 py-1.5 text-sm font-semibold text-navy hover:bg-accent-hover"
+      className="rounded-lg bg-accent px-4 py-1.5 text-sm font-semibold text-navy hover:bg-accent-hover"
     >
       Next problem
     </button>
+  );
+}
+
+/**
+ * Shared result + practice-funnel footer for every diagram quiz (Phase 2).
+ * Shows the verdict + formula, the running session score, a "Next problem"
+ * button and — the tie-in — a deep link into the matching subtest drill.
+ * Fires diagram_quiz_answered on reveal and diagram_practice_click on the CTA
+ * so study→practice conversion is measurable in GA4.
+ */
+export function QuizFooter({
+  correct,
+  resultText,
+  formula,
+  score,
+  context,
+  onNext,
+}: {
+  correct: boolean;
+  resultText: string;
+  formula?: ReactNode;
+  score?: Score;
+  context?: DiagramContext;
+  onNext: () => void;
+}) {
+  const fired = useRef(false);
+  useEffect(() => {
+    if (fired.current) return;
+    fired.current = true;
+    trackEvent(FunnelEvents.DiagramQuizAnswered, {
+      topic_id: context?.topicId,
+      subtest: context?.subtest,
+      is_correct: correct,
+      source: "diagram_quiz",
+    });
+  }, [correct, context?.topicId, context?.subtest]);
+
+  const subtest = context?.subtest;
+  const subName = subtest ? (SUBTEST_NAMES[subtest as AsvabSubtest] ?? subtest) : null;
+
+  return (
+    <div className="mt-3">
+      <p className={`text-center text-sm font-semibold ${correct ? "text-success" : "text-danger"}`}>{resultText}</p>
+      {formula ? (
+        <p className="mt-1 text-center text-xs text-text-tertiary">
+          <span className="font-mono text-text-secondary">{formula}</span>
+        </p>
+      ) : null}
+      {score && score.total > 1 ? (
+        <p className="mt-1 text-center text-[11px] text-text-tertiary">
+          You: {score.correct}/{score.total} this session
+        </p>
+      ) : null}
+      <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+        <NextButton onClick={onNext} />
+        {subtest ? (
+          <Link
+            href={`/practice-test?variant=subtest_drill&subtest=${subtest}`}
+            onClick={() =>
+              trackEvent(FunnelEvents.DiagramPracticeClick, {
+                topic_id: context?.topicId,
+                subtest,
+                source: "diagram_quiz",
+              })
+            }
+            className="rounded-lg border border-navy-border px-4 py-1.5 text-sm font-semibold text-text-secondary no-underline transition-colors hover:border-accent hover:text-text-primary"
+          >
+            Drill {subName} for real →
+          </Link>
+        ) : null}
+      </div>
+    </div>
   );
 }
