@@ -11,6 +11,7 @@
  * To add one: build the component, then register it in REGISTRY.
  */
 import type { ReactNode } from "react";
+import OhmsLawTriangleInteractive from "./OhmsLawTriangleInteractive";
 
 const ORANGE = "#f97316";
 const ORANGE_DIM = "rgba(249,115,22,0.15)";
@@ -387,7 +388,8 @@ function ForceDiagram({ label }: { label?: string }) {
 const REGISTRY: Record<string, (props: any) => ReactNode> = {
   "fraction-bar": (p) => <FractionBar {...p} />,
   "number-line": (p) => <NumberLine {...p} />,
-  "ohms-law-triangle": (p) => <OhmsLawTriangle {...p} />,
+  "ohms-law-triangle": (p) => <OhmsLawTriangleInteractive {...p} />,
+  "ohms-law-triangle-static": (p) => <OhmsLawTriangle {...p} />,
   circuit: (p) => <Circuit {...p} />,
   lever: (p) => <Lever {...p} />,
   pulley: (p) => <Pulley {...p} />,

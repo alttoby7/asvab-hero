@@ -31,14 +31,15 @@ diagrams:
       top: "V"
       bottomLeft: "I"
       bottomRight: "R"
+      units: { top: "V", bottomLeft: "A", bottomRight: "Ω" }
   - type: ohms-law-triangle
     after: "Power: two forms you need"
     props:
-      label: "Power triangle"
+      label: "Power solver"
       top: "P"
       bottomLeft: "I"
       bottomRight: "E"
-      caption: "Cover the unknown: P = I × E,  I = P/E,  E = P/I"
+      units: { top: "W", bottomLeft: "A", bottomRight: "V" }
 ---
 
 ## What the ASVAB is actually testing
