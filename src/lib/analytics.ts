@@ -66,6 +66,7 @@ export function setAnalyticsUser(
 export const FunnelEvents = {
   PageViewTagged: "page_view_tagged",
   EmailCaptureShown: "email_capture_shown",
+  EmailCaptureSubmit: "email_capture_submit",
   EmailCaptureVisibleWithScore: "email_capture_visible_with_score",
   SignupComplete: "signup_complete",
   LoginComplete: "login_complete",

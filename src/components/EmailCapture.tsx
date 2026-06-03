@@ -80,6 +80,7 @@ export default function EmailCapture({
     }
     setStatus("submitting");
     setError(null);
+    trackEvent(FunnelEvents.EmailCaptureSubmit, { source: tag });
 
     try {
       const res = await fetch(ENDPOINT, {

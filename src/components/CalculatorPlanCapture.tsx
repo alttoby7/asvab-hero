@@ -9,8 +9,10 @@
  * page never gave away: the AFQT subtests holding the score back plus a path to
  * the next tier.
  *
- * Step 1: one-field email capture, result-aware copy. POST to /api/signup with
- *   the score payload so the emailed plan can personalize.
+ * Step 1: one-field email capture, result-aware copy. The reward is on-screen
+ *   (the top AFQT levers, revealed on submit) plus a saved plan to track the
+ *   climb, not a deferred inbox delivery. POST to /api/signup with the score
+ *   payload so the saved plan can personalize.
  * Step 2: success state shows the top AFQT levers instantly (felt reward), then
  *   nudges to a free account that carries the score context.
  *
@@ -266,11 +268,11 @@ export default function CalculatorPlanCapture({
       {status === "success" ? (
         <>
           <h3 className="mt-4 font-display text-xl font-bold text-text-primary sm:text-2xl">
-            Your plan is on the way to {email}.
+            Your plan is saved. Here are your biggest levers.
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-text-secondary">
-            Start with the subtests that move your AFQT the most. These are your
-            biggest levers right now:
+            Start with the subtests that move your AFQT the most. Create a free
+            account to drill them and track your climb:
           </p>
 
           <div className="mt-4 flex flex-wrap gap-2">
@@ -321,8 +323,7 @@ export default function CalculatorPlanCapture({
               </svg>
             </Link>
             <span className="text-xs text-text-tertiary">
-              Free account, no card. Track your climb and drill the exact
-              subtests above.
+              No card. Picks up right where your scores left off.
             </span>
           </div>
         </>
@@ -354,12 +355,10 @@ export default function CalculatorPlanCapture({
             {headline}
           </h3>
           <p className="mt-2 text-sm leading-relaxed text-text-secondary">
-            Get a free week-by-week plan built around the{" "}
-            <span className="text-text-primary">
-              {AFQT_SUBTESTS.length} subtests that actually move your AFQT
-            </span>
-            , starting with your two biggest levers, sent to your inbox. Built on
-            the methods cognitive science shows raise scores. No card.
+            See your{" "}
+            <span className="text-text-primary">two biggest AFQT levers</span> on
+            screen now, then save your plan to track your climb and drill those
+            exact subtests. Free, no card.
           </p>
 
           <form
@@ -379,7 +378,7 @@ export default function CalculatorPlanCapture({
               disabled={status === "submitting"}
               className="rounded-md bg-accent px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-accent-hover disabled:opacity-60"
             >
-              {status === "submitting" ? "Sending…" : "Email me my plan"}
+              {status === "submitting" ? "Saving…" : "Save my plan"}
             </button>
           </form>
           {error && <p className="mt-2 text-xs text-danger">{error}</p>}

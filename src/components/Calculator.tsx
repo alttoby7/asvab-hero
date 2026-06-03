@@ -263,13 +263,6 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
         />
       )}
 
-      {/* Disappointed-scorer path: free study guides for the two lowest AFQT
-         subtests the user typed. Renders alongside the plan capture once the
-         AFQT is known. */}
-      {afqtReady && (
-        <CalculatorWeakSubtestGuides scores={filledScores} afqt={afqt} />
-      )}
-
       {/* Composite Scores, full 9-subtest results only. */}
       {compositesReady && (
       <section className="rounded-xl border border-navy-border bg-navy-light p-6">
@@ -332,6 +325,12 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
 
           {/* Score Gap Engine, minimum-effort path to closest jobs */}
           <ScoreGapEngine snapshot={snapshot} afqt={afqt} />
+
+          {/* Disappointed-scorer fallback: free study guides for the two lowest
+             AFQT subtests the user typed. Placed low, after the plan gate and
+             jobs, so it serves the scrolled-past visitor without undercutting
+             the gate above. compositesReady implies the AFQT is known. */}
+          <CalculatorWeakSubtestGuides scores={filledScores} afqt={afqt} />
 
           {/* Share actions */}
           <ShareActions
