@@ -1,5 +1,10 @@
 ---
 topic_id: mc.motion-projectile
+diagrams:
+  - type: force-diagram
+    after: "Free fall and falling objects"
+    props:
+      label: "Free-body: falling object"
 subtest: MC
 title: Motion & Projectile Physics
 summary: Horizontal and vertical motion are independent, keep them separate and projectile questions become straightforward plug-and-solve problems.

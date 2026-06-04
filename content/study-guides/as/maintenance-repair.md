@@ -1,5 +1,10 @@
 ---
 topic_id: as.maintenance-repair
+diagrams:
+  - type: disc-brake
+    after: "Brake service"
+    props:
+      label: "Disc brake"
 subtest: AS
 title: Maintenance & Repair Practices
 summary: Routine maintenance is about intervals and sequences, know when to do it and in what order, and you'll answer these questions faster than anyone who's guessing.

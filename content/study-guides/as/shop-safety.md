@@ -1,5 +1,10 @@
 ---
 topic_id: as.shop-safety
+diagrams:
+  - type: shop-safety
+    after: "Personal protective equipment"
+    props:
+      label: "Shop safety: PPE"
 subtest: AS
 title: Shop Safety & Procedures
 summary: Safety questions have one right answer and no room for judgment calls, know the rule, pick the rule.

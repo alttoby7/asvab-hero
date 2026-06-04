@@ -1,5 +1,10 @@
 ---
 topic_id: gs.earth-space-science
+diagrams:
+  - type: earth-layers
+    after: "Geology: Earth's layers and the rock cycle"
+    props:
+      label: "Earth's layers"
 subtest: GS
 title: Earth & Space Science
 summary: Rock cycles, weather patterns, and solar system basics are the three pillars of Earth and Space Science on the ASVAB, know the vocabulary and the logic connects itself.

@@ -1,5 +1,10 @@
 ---
 topic_id: mk.exponents-polynomials
+diagrams:
+  - type: area-model
+    after: "The FOIL trap"
+    props:
+      label: "Area model: (a + b)²"
 subtest: MK
 title: Exponents & Polynomials
 summary: Exponents are shorthand for repeated multiplication, learn the six rules and ASVAB polynomial questions become mechanical.

@@ -1,5 +1,12 @@
 ---
 topic_id: mk.number-properties
+diagrams:
+  - type: number-line
+    after: "Absolute value: always non-negative"
+    props:
+      min: -6
+      max: 6
+      label: "Distance from zero"
 subtest: MK
 title: Number Properties & Absolute Value
 summary: Number properties questions test whether you know the rules integers follow, sign behavior, divisibility, absolute value, not whether you can do heavy arithmetic.

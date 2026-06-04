@@ -1,5 +1,10 @@
 ---
 topic_id: ar.ratio-proportion
+diagrams:
+  - type: fraction-bar
+    after: "The two patterns you'll see"
+    props:
+      label: "Part-to-whole bar"
 subtest: AR
 title: Ratios & Proportions
 summary: Set up equal fractions and cross-multiply to solve for an unknown, the bread-and-butter of ASVAB Arithmetic Reasoning.

@@ -1,5 +1,10 @@
 ---
 topic_id: ei.conductors-insulators
+diagrams:
+  - type: conductor-insulator
+    after: "Conductors: electrons flow freely"
+    props:
+      label: "Conductors vs. insulators"
 subtest: EI
 title: Conductors & Insulators
 summary: Whether electrons can flow freely through a material determines its job in any circuit, knowing the categories and why materials behave the way they do covers most EI material questions.

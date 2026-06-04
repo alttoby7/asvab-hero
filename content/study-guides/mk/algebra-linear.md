@@ -1,5 +1,10 @@
 ---
 topic_id: mk.algebra-linear
+diagrams:
+  - type: linear-graph
+    after: "Slope-intercept form"
+    props:
+      label: "Slope-intercept: y = mx + b"
 subtest: MK
 title: Linear Equations & Algebra
 summary: Isolate the variable, that's the entire job in linear algebra, and every ASVAB MK question in this category follows the same rules.

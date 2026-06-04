@@ -1,5 +1,10 @@
 ---
 topic_id: ao.paper-folding-nets
+diagrams:
+  - type: paper-folding-net
+    after: "Nets for a cube"
+    props:
+      label: "Paper folding: net → solid"
 subtest: AO
 title: Paper Folding & Nets
 summary: Paper-folding and cube-net drills build the fold/unfold spatial visualization that supports Assembling Objects. Trace each fold step by step, never jump ahead.

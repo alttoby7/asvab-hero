@@ -1,5 +1,12 @@
 ---
 topic_id: mk.inequalities
+diagrams:
+  - type: number-line
+    after: "Reading the number line"
+    props:
+      min: -5
+      max: 5
+      label: "Number line"
 subtest: MK
 title: Inequalities
 summary: Solve them exactly like equations, with one rule that trips up almost everyone, flip the sign when you multiply or divide by a negative.

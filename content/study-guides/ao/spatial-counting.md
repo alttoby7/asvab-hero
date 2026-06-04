@@ -1,5 +1,10 @@
 ---
 topic_id: ao.spatial-counting
+diagrams:
+  - type: cube-stack
+    after: "Counting cubes the right way"
+    props:
+      label: "Counting cubes"
 subtest: AO
 title: Spatial Counting & Orientation
 summary: Cube-counting and orientation drills sharpen the 3D tracking and left/right discipline that support Assembling Objects. Systematic layering beats eyeballing every time.

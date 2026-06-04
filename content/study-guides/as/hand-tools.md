@@ -1,5 +1,10 @@
 ---
 topic_id: as.hand-tools
+diagrams:
+  - type: hand-tools
+    after: "The tool families you need to know"
+    props:
+      label: "Common hand tools"
 subtest: AS
 title: Hand Tools & Measurement
 summary: Know which tool does what job and how to read a measurement, the Auto & Shop section rewards the person who's actually spent time in a garage.

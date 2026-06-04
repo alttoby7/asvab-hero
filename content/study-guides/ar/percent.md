@@ -1,5 +1,10 @@
 ---
 topic_id: ar.percent
+diagrams:
+  - type: fraction-bar
+    after: "The three percent question types"
+    props:
+      label: "Percent as parts of a whole"
 subtest: AR
 title: Percent & Markup
 summary: Percent problems on the ASVAB always come down to one equation, part = percent × whole, and knowing which of the three you're solving for.

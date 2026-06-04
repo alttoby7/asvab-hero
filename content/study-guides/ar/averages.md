@@ -1,5 +1,12 @@
 ---
 topic_id: ar.averages
+diagrams:
+  - type: number-line
+    after: "The core relationship and its three forms"
+    props:
+      min: 0
+      max: 10
+      label: "Mean on the number line"
 subtest: AR
 title: Averages & Mean
 summary: An average is just a total spread evenly, sum ÷ count, and most ASVAB average questions are really asking you to work backward from that one relationship to find a missing value or a target.
