@@ -432,6 +432,7 @@ export function Diagram({
 }) {
   const render = REGISTRY[type];
   if (!render) return null;
-  // topicId/subtest power the interactive quiz → practice-drill tie-in.
-  return <>{render({ ...(props ?? {}), context: { topicId, subtest } })}</>;
+  // topicId/subtest/diagramType power the interactive quiz → practice tie-in
+  // and end-to-end attribution from a diagram interaction to the funnel.
+  return <>{render({ ...(props ?? {}), context: { topicId, subtest, diagramType: type } })}</>;
 }

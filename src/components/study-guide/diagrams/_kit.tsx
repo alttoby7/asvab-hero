@@ -19,6 +19,7 @@ export type Mode = "explore" | "quiz";
 export interface DiagramContext {
   topicId?: string;
   subtest?: string;
+  diagramType?: string;
 }
 
 export interface Score {
@@ -56,9 +57,10 @@ export function ModeToggle({
   onQuiz: () => void;
 }) {
   return (
-    <span className="flex overflow-hidden rounded-md border border-navy-border text-[11px] font-semibold">
+    <span role="group" aria-label="diagram mode" className="flex overflow-hidden rounded-md border border-navy-border text-[11px] font-semibold">
       <button
         type="button"
+        aria-pressed={mode === "explore"}
         onClick={onExplore}
         className={mode === "explore" ? "bg-accent px-2 py-1 text-navy" : "px-2 py-1 text-text-tertiary hover:text-text-secondary"}
       >
@@ -66,6 +68,7 @@ export function ModeToggle({
       </button>
       <button
         type="button"
+        aria-pressed={mode === "quiz"}
         onClick={onQuiz}
         className={mode === "quiz" ? "bg-accent px-2 py-1 text-navy" : "px-2 py-1 text-text-tertiary hover:text-text-secondary"}
       >
@@ -156,11 +159,17 @@ export function NextButton({ onClick }: { onClick: () => void }) {
 }
 
 /**
- * Shared result + practice-funnel footer for every diagram quiz (Phase 2).
- * Shows the verdict + formula, the running session score, a "Next problem"
- * button and — the tie-in — a deep link into the matching subtest drill.
- * Fires diagram_quiz_answered on reveal and diagram_practice_click on the CTA
- * so study→practice conversion is measurable in GA4.
+ * Shared result + funnel footer for every diagram quiz.
+ *
+ * FREE-FIRST (Phase 2-deeper): the diagram's own quiz already IS the free
+ * targeted rep, so the footer leads with free next steps — keep practicing
+ * here (Next), or take the free diagnostic — and DEMOTES the Pro drill to a
+ * small secondary link. We gate depth/saved-progress, never the first rep.
+ *
+ * Attribution: a per-rep origin_session id is minted client-side and carried
+ * into every destination URL + every event (diagram_quiz_answered,
+ * diagram_next_step) so a diagram interaction can be tied to a downstream
+ * signup/paywall/upgrade in GA4.
  */
 export function QuizFooter({
   correct,
@@ -177,23 +186,37 @@ export function QuizFooter({
   context?: DiagramContext;
   onNext: () => void;
 }) {
+  const subtest = context?.subtest;
+  const subName = subtest ? (SUBTEST_NAMES[subtest as AsvabSubtest] ?? subtest) : null;
+
+  // per-rep origin id (client-only mount, so crypto is available + no hydration risk)
+  const originRef = useRef<string | null>(null);
+  if (originRef.current === null) {
+    originRef.current =
+      typeof crypto !== "undefined" && crypto.randomUUID ? crypto.randomUUID() : `o_${Date.now()}`;
+  }
+  const origin = originRef.current;
+
+  const base = {
+    topic_id: context?.topicId,
+    subtest,
+    diagram_type: context?.diagramType,
+    origin_session: origin,
+  };
+
   const fired = useRef(false);
   useEffect(() => {
     if (fired.current) return;
     fired.current = true;
-    trackEvent(FunnelEvents.DiagramQuizAnswered, {
-      topic_id: context?.topicId,
-      subtest: context?.subtest,
-      is_correct: correct,
-      source: "diagram_quiz",
-    });
-  }, [correct, context?.topicId, context?.subtest]);
+    trackEvent(FunnelEvents.DiagramQuizAnswered, { ...base, is_correct: correct, source: "diagram_quiz" });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  const subtest = context?.subtest;
-  const subName = subtest ? (SUBTEST_NAMES[subtest as AsvabSubtest] ?? subtest) : null;
+  const originQs = `origin=diagram&origin_topic=${encodeURIComponent(context?.topicId ?? "")}&origin_session=${origin}`;
+  const step = (which: string) => trackEvent(FunnelEvents.DiagramNextStep, { ...base, step: which });
 
   return (
-    <div className="mt-3">
+    <div className="mt-3" aria-live="polite">
       <p className={`text-center text-sm font-semibold ${correct ? "text-success" : "text-danger"}`}>{resultText}</p>
       {formula ? (
         <p className="mt-1 text-center text-xs text-text-tertiary">
@@ -201,28 +224,39 @@ export function QuizFooter({
         </p>
       ) : null}
       {score && score.total > 1 ? (
-        <p className="mt-1 text-center text-[11px] text-text-tertiary">
-          You: {score.correct}/{score.total} this session
+        <p className="mt-1 text-center text-[11px] text-text-tertiary">You: {score.correct}/{score.total} this session</p>
+      ) : null}
+
+      {/* free-first next steps */}
+      <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+        <button
+          type="button"
+          onClick={() => { step("next"); onNext(); }}
+          className="rounded-lg bg-accent px-4 py-1.5 text-sm font-semibold text-navy hover:bg-accent-hover"
+        >
+          Keep practicing
+        </button>
+        <Link
+          href={`/practice-test?variant=diagnostic&${originQs}`}
+          onClick={() => step("diagnostic")}
+          className="rounded-lg border border-navy-border px-4 py-1.5 text-sm font-semibold text-text-secondary no-underline transition-colors hover:border-accent hover:text-text-primary"
+        >
+          Take the free diagnostic →
+        </Link>
+      </div>
+
+      {/* demoted Pro */}
+      {subtest ? (
+        <p className="mt-2 text-center">
+          <Link
+            href={`/practice-test?variant=subtest_drill&subtest=${subtest}&${originQs}`}
+            onClick={() => step("pro_drill")}
+            className="text-xs text-text-tertiary underline-offset-2 hover:text-text-secondary hover:underline"
+          >
+            Or unlock unlimited {subName} drills with Pro
+          </Link>
         </p>
       ) : null}
-      <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
-        <NextButton onClick={onNext} />
-        {subtest ? (
-          <Link
-            href={`/practice-test?variant=subtest_drill&subtest=${subtest}`}
-            onClick={() =>
-              trackEvent(FunnelEvents.DiagramPracticeClick, {
-                topic_id: context?.topicId,
-                subtest,
-                source: "diagram_quiz",
-              })
-            }
-            className="rounded-lg border border-navy-border px-4 py-1.5 text-sm font-semibold text-text-secondary no-underline transition-colors hover:border-accent hover:text-text-primary"
-          >
-            Drill {subName} for real →
-          </Link>
-        ) : null}
-      </div>
     </div>
   );
 }
