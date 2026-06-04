@@ -1,5 +1,14 @@
 ---
 topic_id: ar.work-rate
+diagrams:
+  - type: ohms-law-triangle
+    after: "Output and pay rates: the plain multiplication form"
+    props:
+      top: "Out"
+      bottomLeft: "R"
+      bottomRight: "T"
+      units: { top: "units", bottomLeft: "/hr", bottomRight: "hr" }
+      label: "Output = Rate × Time"
 subtest: AR
 title: Work & Rate Problems
 summary: Work problems are rate problems in disguise, every worker, pump, or machine has a rate of "fraction of the job per unit of time," and you add those rates to find how fast they finish together.

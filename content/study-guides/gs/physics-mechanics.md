@@ -1,5 +1,10 @@
 ---
 topic_id: gs.physics-mechanics
+diagrams:
+  - type: force-diagram
+    after: "Newton's three laws"
+    props:
+      label: "Free-body diagram"
 subtest: GS
 title: Physics & Mechanics
 summary: Newton's laws, energy, waves, and heat transfer are the physics core of GS, the test rewards knowing the right formula and applying it cleanly.

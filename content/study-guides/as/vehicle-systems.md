@@ -1,5 +1,10 @@
 ---
 topic_id: as.vehicle-systems
+diagrams:
+  - type: four-stroke
+    after: "Engine fundamentals"
+    props:
+      label: "Four-stroke engine cycle"
 subtest: AS
 title: Vehicle Systems & Engine
 summary: Gasoline engines, cooling, brakes, and drivetrain, know what each system does and you can answer most ASVAB vehicle questions cold.

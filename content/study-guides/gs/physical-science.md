@@ -1,5 +1,10 @@
 ---
 topic_id: gs.physical-science
+diagrams:
+  - type: states-of-matter
+    after: "Matter and its states"
+    props:
+      label: "States of matter"
 subtest: GS
 title: Physical Science
 summary: States of matter, the periodic table, and basic chemical reactions are the chemistry-side of GS, understand the patterns and the memorization becomes minimal.

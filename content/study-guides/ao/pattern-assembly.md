@@ -1,5 +1,10 @@
 ---
 topic_id: ao.pattern-assembly
+diagrams:
+  - type: pattern-assembly
+    after: "Rotation vs. mirror image, the critical distinction"
+    props:
+      label: "Pattern assembly"
 subtest: AO
 title: Pattern Assembly & Rotation
 summary: The two real AO formats are connector items and puzzle assembly. Match edges first, mind rotation vs. mirror image, then confirm interior features.

@@ -1,5 +1,10 @@
 ---
 topic_id: ao.3d-visualization
+diagrams:
+  - type: orthographic-views
+    after: "The anchor-face method"
+    props:
+      label: "3-D object: three views"
 subtest: AO
 title: 3D Object Visualization
 summary: Mental rotation is the core spatial muscle behind Assembling Objects. Train it on simple 3D objects so the actual connector and puzzle items feel easier.

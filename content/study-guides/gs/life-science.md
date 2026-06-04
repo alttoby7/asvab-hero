@@ -1,5 +1,10 @@
 ---
 topic_id: gs.life-science
+diagrams:
+  - type: cell-diagram
+    after: "Cell biology: the core concepts"
+    props:
+      label: "Animal cell"
 subtest: GS
 title: Life Science
 summary: Cell structure, genetics, and body systems are the core of what the ASVAB General Science section tests, nail the vocabulary and the concepts follow.

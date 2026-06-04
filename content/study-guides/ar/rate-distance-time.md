@@ -1,5 +1,14 @@
 ---
 topic_id: ar.rate-distance-time
+diagrams:
+  - type: ohms-law-triangle
+    after: "D = R × T: know all three forms"
+    props:
+      top: "D"
+      bottomLeft: "R"
+      bottomRight: "T"
+      units: { top: "mi", bottomLeft: "mph", bottomRight: "hr" }
+      label: "Distance = Rate × Time"
 subtest: AR
 title: Rate, Distance & Time
 summary: One formula, D = R × T, handles every rate, distance, and time question on the ASVAB if you know which variable to isolate.
