@@ -204,11 +204,13 @@ export function QuizFooter({
     origin_session: origin,
   };
 
+  const verdictRef = useRef<HTMLParagraphElement>(null);
   const fired = useRef(false);
   useEffect(() => {
     if (fired.current) return;
     fired.current = true;
     trackEvent(FunnelEvents.DiagramQuizAnswered, { ...base, is_correct: correct, source: "diagram_quiz" });
+    verdictRef.current?.focus(); // land keyboard/SR users on the result
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -217,7 +219,7 @@ export function QuizFooter({
 
   return (
     <div className="mt-3" aria-live="polite">
-      <p className={`text-center text-sm font-semibold ${correct ? "text-success" : "text-danger"}`}>{resultText}</p>
+      <p ref={verdictRef} tabIndex={-1} className={`text-center text-sm font-semibold outline-none ${correct ? "text-success" : "text-danger"}`}>{resultText}</p>
       {formula ? (
         <p className="mt-1 text-center text-xs text-text-tertiary">
           <span className="font-mono text-text-secondary">{formula}</span>
