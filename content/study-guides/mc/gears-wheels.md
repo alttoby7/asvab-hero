@@ -22,6 +22,9 @@ worked_examples:
     solution: "Gear ratio = 5 ÷ 20 = 0.25. Gear B spins at 1/0.25 = 4× the driver speed, much faster, with less torque. Direction: opposite to Gear A (meshing gears counter-rotate)."
   - prompt: "A steering wheel (wheel and axle) has a wheel radius of 15 in and an axle (shaft) radius of 1.5 in. What is the mechanical advantage?"
     solution: "MA = wheel radius ÷ axle radius = 15 ÷ 1.5 = 10. For every 10 lb of force you apply to the wheel rim, 100 lb of force is delivered at the axle. The trade-off: the wheel rim travels 10× the distance the shaft rotates."
+diagrams:
+  - type: gear-ratio
+    after: "Gear ratio fundamentals"
 ---
 
 ## What the ASVAB is testing

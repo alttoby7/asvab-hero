@@ -25,6 +25,9 @@ worked_examples:
     solution: "Area = ½ × 8 × 6 = 24 sq meters"
   - prompt: "A rectangular box is 4 ft long, 3 ft wide, and 2 ft tall. What is its volume?"
     solution: "Volume = 4 × 3 × 2 = 24 cubic feet"
+diagrams:
+  - type: right-triangle
+    after: "When the height is not an obvious side"
 ---
 
 ## What the ASVAB is actually testing

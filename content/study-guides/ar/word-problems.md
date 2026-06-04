@@ -22,6 +22,9 @@ worked_examples:
     solution: "Step 1: Gallons needed = 270 ÷ 18 = 15 gallons. Step 2: Cost = 15 × $3.60 = $54"
   - prompt: "A recruit earns $2,400/month. After paying 20% in taxes and $350 in rent, how much is left?"
     solution: "Step 1: Taxes = 0.20 × 2,400 = $480. Step 2: After taxes = 2,400 − 480 = $1,920. Step 3: After rent = 1,920 − 350 = $1,570"
+diagrams:
+  - type: buzzword-map
+    after: "The four-step approach"
 ---
 
 ## What the ASVAB is actually testing

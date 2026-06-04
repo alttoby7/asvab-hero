@@ -25,6 +25,20 @@ worked_examples:
     solution: "Flip the divisor: 1/2 × 4/3 = 4/6 = 2/3"
   - prompt: "A coat costs $80 and is marked up 25%. What is the new price?"
     solution: "Markup = 0.25 × 80 = $20. New price = 80 + 20 = $100. Or: 80 × 1.25 = $100"
+diagrams:
+  - type: fraction-bar
+    after: "The big picture"
+    props:
+      numerator: 3
+      denominator: 4
+  - type: number-line
+    after: "Conversions you should know cold"
+    props:
+      value: 0.75
+      valueLabel: "0.75"
+      minLabel: "0"
+      maxLabel: "1"
+      label: "3/4 = 0.75 = 75%"
 ---
 
 ## The big picture

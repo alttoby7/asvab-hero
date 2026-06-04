@@ -22,6 +22,13 @@ worked_examples:
     solution: "A movable pulley gives MA = 2. Effort = 300 ÷ 2 = 150 lb. The worker pulls 150 lb but must pull 2 feet of rope for every 1 foot the engine rises."
   - prompt: "A block-and-tackle system has 4 rope segments supporting the lower (movable) block. A worker needs to lift a 480-lb load. What effort force is needed?"
     solution: "MA = 4. Effort = 480 ÷ 4 = 120 lb. The worker pulls 120 lb but hauls in 4 feet of rope for each foot of lift."
+diagrams:
+  - type: lever
+    after: "Lever calculation: the fulcrum trick"
+  - type: pulley
+    after: "Fixed vs. movable pulleys"
+  - type: pulley-system
+    after: "The work conservation rule"
 ---
 
 ## What the ASVAB is testing
