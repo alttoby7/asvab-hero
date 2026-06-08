@@ -5,8 +5,15 @@ import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const pathname = usePathname();
-  // Hide marketing chrome inside the member shells (/app and the account area).
-  if (pathname?.startsWith("/app") || pathname?.startsWith("/account")) return null;
+  // Hide marketing chrome inside the member shells (/app and the account area)
+  // and inside embeddable widget frames (/embed/<tool>; the /embed directory
+  // page keeps chrome, so the guard is on the trailing slash).
+  if (
+    pathname?.startsWith("/app") ||
+    pathname?.startsWith("/account") ||
+    pathname?.startsWith("/embed/")
+  )
+    return null;
 
   return (
     <footer className="border-t border-navy-border bg-navy-light">
@@ -150,6 +157,22 @@ export default function Footer() {
                   className="text-sm text-text-tertiary hover:text-text-primary no-underline"
                 >
                   For JROTC &amp; Schools
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/counselor-resources"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  ASVAB for Counselors
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/embed"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Embed our tools
                 </Link>
               </li>
               <li>

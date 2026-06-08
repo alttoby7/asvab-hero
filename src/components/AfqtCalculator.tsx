@@ -48,7 +48,7 @@ const BRANCH_MINIMUMS = [
   { branch: "Coast Guard", min: 32, gedNote: "50 + 15 college credits with GED" },
 ] as const;
 
-export default function AfqtCalculator() {
+export default function AfqtCalculator({ embedded = false }: { embedded?: boolean } = {}) {
   const [scores, setScores] = useState<DraftScores>(EMPTY_SCORES);
   const searchParams = useSearchParams();
 
@@ -277,12 +277,25 @@ export default function AfqtCalculator() {
         <p className="mt-2 text-sm text-text-secondary">
           The AFQT is only the enlistment gate. Each branch uses composite line
           scores to assign jobs. Run all 9 subtests through the{" "}
-          <Link
-            href="/calculator"
-            className="text-accent underline hover:text-accent-hover"
-          >
-            full ASVAB calculator
-          </Link>{" "}
+          {embedded ? (
+            // Inside an iframe a relative <Link> would navigate the frame to a
+            // chrome-bearing page. Break out to the full site in a new tab.
+            <a
+              href="https://asvabhero.com/calculator"
+              target="_blank"
+              rel="noopener"
+              className="text-accent underline hover:text-accent-hover"
+            >
+              full ASVAB calculator
+            </a>
+          ) : (
+            <Link
+              href="/calculator"
+              className="text-accent underline hover:text-accent-hover"
+            >
+              full ASVAB calculator
+            </Link>
+          )}{" "}
           to see every MOS, rate, and AFSC you qualify for.
         </p>
       </section>

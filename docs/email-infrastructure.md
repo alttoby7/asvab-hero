@@ -2,6 +2,35 @@
 
 Reference doc for the self-hosted email stack powering lead capture and the 30-day study plan drip sequence.
 
+> **⚠️ Updated 2026-06 — inbound + human mail moved to Google Workspace.**
+> Live DNS for `asvabhero.com` now shows **MX → Google** (`aspmx.l.google.com`),
+> **SPF → `v=spf1 include:_spf.google.com ~all`**, a **`google._domainkey`** DKIM
+> record (Workspace) *alongside* the existing **`resend._domainkey`**, and a
+> **DMARC** record (`p=quarantine; adkim=s; aspf=s`). The "Cloudflare Email
+> Routing (inbound)" section below is **SUPERSEDED** — info@/trish@ are now real
+> Google Workspace mailboxes. The Listmonk → Resend → SES path is still used for
+> **app/transactional + drip mail only** (welcome, drip, trial reminders), which
+> aligns to the From domain via `resend._domainkey`. See the verified table
+> below and **[`outreach-deliverability.md`](./outreach-deliverability.md)** for
+> the cold-outreach rules that this DMARC posture imposes.
+
+### Current DNS (verified 2026-06)
+
+| Type | Name | Content | Purpose |
+|------|------|---------|---------|
+| MX | asvabhero.com | `aspmx.l.google.com` (+ alt1–4) | Google Workspace inbound (info@/trish@) |
+| TXT (SPF) | asvabhero.com | `v=spf1 include:_spf.google.com ~all` | Authorizes Workspace sending |
+| TXT (DKIM) | google._domainkey | `v=DKIM1; k=rsa; p=…` | Google Workspace signing |
+| TXT (DKIM) | resend._domainkey | `p=MIGf…IDAQAB` | Resend/SES signing (app + drip mail) |
+| TXT (SPF) | send.asvabhero.com | `v=spf1 include:amazonses.com ~all` | Resend return-path (app/transactional only) |
+| TXT (DMARC) | _dmarc.asvabhero.com | `v=DMARC1; p=quarantine; pct=100; adkim=s; aspf=s; rua=mailto:trish@asvabhero.com` | **Strict** alignment, quarantine policy |
+
+Why both DKIM selectors matter: personal outreach from a Workspace mailbox passes
+via `google._domainkey`; automated drip/welcome from Listmonk→Resend passes via
+`resend._domainkey`. Both are aligned to the root From domain, so both satisfy
+`adkim=s`. Under `aspf=s`, the SES `send.` subdomain return-path does NOT align
+for app mail, so app mail relies on the DKIM leg of DMARC (which passes).
+
 ## Stack Overview
 
 ```
@@ -18,6 +47,12 @@ Visitor → [EmailCapture.tsx on asvabhero.com]
 
 ## DNS Records (Cloudflare, asvabhero.com zone)
 
+> **SUPERSEDED (see "Current DNS (verified 2026-06)" at the top).** The MX + SPF
+> rows below described the old Cloudflare Email Routing inbound path and are no
+> longer live — MX is now Google Workspace and root SPF is `_spf.google.com`.
+> The DKIM (`resend._domainkey`) and `send.` SES rows are still accurate for the
+> app/transactional path. Kept for history.
+
 Zone ID: `1589e9ac252d44ba0dadceb3ae7be88e`
 Account ID: `4e99280ddad67e4382b367daccf6c5e0` (Trisha.penrod@gmail.com)
 
@@ -33,6 +68,13 @@ Account ID: `4e99280ddad67e4382b367daccf6c5e0` (Trisha.penrod@gmail.com)
 CF SSL/TLS mode for this zone: **Flexible** (required — Caddy on droplet serves HTTP only).
 
 ## Cloudflare Email Routing (inbound)
+
+> **SUPERSEDED 2026-06 — inbound is now Google Workspace.** `info@` and `trish@`
+> are real Workspace mailboxes (MX → `aspmx.l.google.com`), not CF forwards to
+> `trish@dach.family`. ⚠️ **Operator to confirm** whether any legacy CF Email
+> Routing rule (`info@ → trish@dach.family`, the `*@` catch-all) still exists in
+> the CF dashboard and tear it down if so, since it can silently shadow Workspace
+> delivery. The section below is kept for history only.
 
 - **Enabled:** yes
 - **Destination:** `trish@dach.family` (verified)
@@ -73,9 +115,9 @@ Self-hosted on DigitalOcean droplet `64.23.194.109`.
 
 ### From Address
 
-Settings → General → From email: `ASVAB Hero <info@asvabhero.com>`
+Settings → General → From email: `ASVAB Hero <info@asvabhero.com>` (Listmonk drip/welcome; DKIM via `resend._domainkey`).
 
-Reply-to behavior: replies come into the inbox via Cloudflare Email Routing → forwarded to `trish@dach.family`.
+Reply-to behavior (2026-06): `info@asvabhero.com` is now a **Google Workspace** mailbox, so replies land directly in Workspace (no CF forward to `trish@dach.family`). Personal/cold outreach is sent from a Workspace mailbox (`info@`/`trish@`), which DKIM-signs via `google._domainkey` — see [`outreach-deliverability.md`](./outreach-deliverability.md).
 
 ## Lists
 
