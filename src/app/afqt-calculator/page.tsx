@@ -435,6 +435,16 @@ export default function AfqtCalculatorPage() {
             .
           </li>
           <li>
+            Run a school counseling page, library guide, or JROTC site?{" "}
+            <Link
+              href="/embed"
+              className="text-accent underline hover:text-accent-hover"
+            >
+              Embed this calculator
+            </Link>{" "}
+            on your own page for free, no account required.
+          </li>
+          <li>
             Targeting one branch? See the{" "}
             <Link
               href="/army-afqt-calculator"

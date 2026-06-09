@@ -1,0 +1,84 @@
+"use client";
+
+import { useCallback, useMemo, useState } from "react";
+import { trackEvent } from "@/lib/analytics";
+
+/**
+ * Read-only "copy this iframe" box for the /embed widgets directory. Schools,
+ * libraries, and JROTC pages paste the snippet to embed a free ASVAB Hero tool
+ * on their own site. Each embed carries a do-follow backlink to the canonical
+ * tool page, which is the entire point of the widget program.
+ *
+ * Clipboard handling mirrors ShareActions.tsx (Clipboard API + execCommand
+ * fallback + "Copied" state). No em-dash characters in copy (build guard).
+ */
+
+type EmbedSnippetProps = {
+  /** Absolute embed route, e.g. https://asvabhero.com/embed/afqt-calculator */
+  src: string;
+  /** iframe title attribute (accessibility) */
+  title: string;
+  /** Pixel height sized to the tool's tallest state. Defaults to 720. */
+  height?: number;
+  /** Max width of the embedded frame. Defaults to 560. */
+  maxWidth?: number;
+};
+
+export default function EmbedSnippet({
+  src,
+  title,
+  height = 720,
+  maxWidth = 560,
+}: EmbedSnippetProps) {
+  const [copied, setCopied] = useState(false);
+
+  const snippet = useMemo(
+    () =>
+      `<iframe src="${src}" width="100%" height="${height}" ` +
+      `style="border:1px solid #e5e7eb;border-radius:12px;max-width:${maxWidth}px" ` +
+      `title="${title}" loading="lazy"></iframe>`,
+    [src, title, height, maxWidth]
+  );
+
+  const handleCopy = useCallback(async () => {
+    trackEvent("embed_copy", { src });
+    try {
+      await navigator.clipboard.writeText(snippet);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    } catch {
+      const input = document.createElement("textarea");
+      input.value = snippet;
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand("copy");
+      document.body.removeChild(input);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    }
+  }, [snippet, src]);
+
+  return (
+    <div className="rounded-xl border border-navy-border bg-navy-light p-5">
+      <div className="mb-3 flex items-center justify-between gap-3">
+        <h3 className="font-display text-base font-bold text-text-primary">
+          Embed code
+        </h3>
+        <button
+          onClick={handleCopy}
+          className="rounded-md border border-navy-border bg-navy px-3 py-1.5 text-sm font-medium text-text-primary transition-colors hover:bg-navy-lighter"
+        >
+          {copied ? "Copied ✓" : "Copy embed code"}
+        </button>
+      </div>
+      <pre className="overflow-x-auto rounded-md border border-navy-border bg-navy px-3 py-2 text-xs font-mono text-text-tertiary whitespace-pre-wrap break-all">
+        {snippet}
+      </pre>
+      <p className="mt-2 text-xs text-text-tertiary">
+        Paste this into your page&apos;s HTML. The tool is free, needs no
+        account, and resizes to fit your layout. Adjust the height if your page
+        needs it.
+      </p>
+    </div>
+  );
+}
