@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ProgramInquiryForm from "@/components/ProgramInquiryForm";
+import RelatedLinks from "@/components/RelatedLinks";
 
 // Live Stripe payment links (one-time charges; manual provisioning within 1
 // business day). Created 2026-05-22. If you rotate these, update here.
@@ -459,6 +460,13 @@ export default function ProgramsPage() {
             </Link>
             .
           </p>
+          <RelatedLinks
+            title="Free resources for counselors and educators"
+            links={[
+              { href: "/counselor-resources", label: "ASVAB counselor reference", blurb: "Source-cited overview for advisors, plus free tools to link." },
+              { href: "/embed", label: "Embed a free calculator", blurb: "Put the AFQT calculator on your own school or library page." },
+            ]}
+          />
         </div>
       </section>
     </div>

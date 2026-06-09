@@ -1,14 +1,49 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import JsonLd from "@/components/JsonLd";
+import RelatedLinks from "@/components/RelatedLinks";
+import { TOPIC_COUNT } from "@/lib/bank-stats";
 
 export const metadata: Metadata = {
-  title: "ASVAB Counselor Quick-Start: Official Facts, Sources, and Links",
+  title: "ASVAB Counselor Quick-Start: Free Tools, Official Facts, and Sources",
   description:
-    "A plain, source-cited ASVAB reference for school counselors, librarians, and JROTC instructors: what the test is, how scores work, official prep resources, and where to send students. No signup.",
+    "A source-cited ASVAB reference for school counselors, librarians, and JROTC instructors, plus free tools you can link or embed for students: AFQT calculator, practice test, and study guides. No signup.",
   alternates: {
     canonical: "https://asvabhero.com/counselor-resources",
   },
 };
+
+// Free interactive tools ASVAB Hero offers that the official site does not.
+// These are the genuinely linkable/embeddable assets for resource pages.
+const FREE_TOOLS: { href: string; label: string; blurb: string }[] = [
+  {
+    href: "/calculator",
+    label: "Free ASVAB score calculator",
+    blurb:
+      "Students enter subtest scores and see their AFQT percentile plus every job they qualify for across all 6 branches.",
+  },
+  {
+    href: "/afqt-calculator",
+    label: "AFQT calculator",
+    blurb:
+      "The 4-subtest enlistment-eligibility percentile, with 2026 branch minimums. Embeddable on your page.",
+  },
+  {
+    href: "/practice-test",
+    label: "Free ASVAB practice test",
+    blurb: "A free diagnostic and per-subtest drills. No account required.",
+  },
+  {
+    href: "/asvab-score-requirements",
+    label: "Score requirements by branch",
+    blurb: "Current AFQT minimums and how diploma vs GED changes the bar.",
+  },
+  {
+    href: "/asvab-study-guide",
+    label: "Study guides",
+    blurb: `Free study guides covering all ${TOPIC_COUNT} ASVAB topics across the 9 subtests.`,
+  },
+];
 
 const LAST_VERIFIED = "May 2026";
 
@@ -52,6 +87,62 @@ function Source({ url, children }: { url: string; children: React.ReactNode }) {
 export default function CounselorResourcesPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: "Free ASVAB tools for counselors and educators",
+          description:
+            "Free, no-account ASVAB tools counselors, librarians, and JROTC instructors can link or embed for students.",
+          itemListElement: FREE_TOOLS.map((t, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: t.label,
+            url: `https://asvabhero.com${t.href}`,
+          })),
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Can I link or embed your ASVAB calculator on our school page?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. Every tool is free with no account required, so you are welcome to link any of them. You can also embed the AFQT calculator directly on your page with one line of HTML from asvabhero.com/embed.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is ASVAB Hero affiliated with the Department of Defense?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No. ASVAB Hero is an independent test-prep site and is not affiliated with the U.S. Department of Defense or any branch of the armed services. The official sources are linked throughout this page so you can verify any detail.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Do students need to create an account to use the tools?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No. The calculators, practice test, and study guides are free to use with no signup wall. An optional free account saves progress, but it is never required to use the core tools.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "What is the difference between the ASVAB CEP and the enlistment ASVAB?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "The ASVAB Career Exploration Program (CEP) is the school-based version that pairs results with an interest inventory and carries no service obligation. The enlistment ASVAB is taken at a MEPS or MET site through a recruiter, and those scores count toward joining.",
+              },
+            },
+          ],
+        }}
+      />
+
       {/* 1. Cover / intro */}
       <p className="font-mono text-xs uppercase tracking-[0.2em] text-text-tertiary">
         ASVAB Quick-Start for Educators
@@ -61,8 +152,10 @@ export default function CounselorResourcesPage() {
       </h1>
       <p className="mt-4 text-text-secondary leading-relaxed">
         A plain, source-cited overview of the ASVAB for the adults who advise
-        students about it. Every claim below links to an official source. No
-        signup, no email, no sales pitch. Last verified {LAST_VERIFIED}.
+        students about it. Below are free, interactive tools you can link or
+        embed for your students, plus the official sources to verify every
+        detail. No signup, no email, no sales pitch. Last verified{" "}
+        {LAST_VERIFIED}.
       </p>
       <p className="mt-3 text-sm text-text-tertiary leading-relaxed">
         ASVAB Hero is an independent test-prep site and is not affiliated with
@@ -72,6 +165,54 @@ export default function CounselorResourcesPage() {
       </p>
 
       <div className="mt-12 space-y-12">
+        {/* Free tools (the linkable assets) */}
+        <section>
+          <h2 className="font-display text-xl font-bold text-text-primary">
+            Free tools to link or embed for students
+          </h2>
+          <p className="mt-3 text-text-secondary leading-relaxed">
+            These are free, interactive, and have no signup wall, so counselors
+            and librarians are welcome to link any of them. Unlike the official
+            materials, they let a student translate a practice score into the
+            AFQT percentile and the actual jobs each branch opens.
+          </p>
+          <div className="mt-5 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+            {FREE_TOOLS.map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="group block no-underline"
+              >
+                <span className="text-sm font-semibold text-accent transition-colors group-hover:text-accent-hover">
+                  {tool.label} &rarr;
+                </span>
+                <span className="mt-0.5 block text-sm leading-relaxed text-text-secondary">
+                  {tool.blurb}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* Embed callout */}
+        <section className="rounded-2xl border border-accent/30 bg-navy-light p-6 sm:p-8">
+          <h2 className="font-display text-lg font-bold text-text-primary">
+            Embed a free calculator on your site
+          </h2>
+          <p className="mt-2 text-text-secondary leading-relaxed">
+            Drop our AFQT calculator straight into your counseling page or
+            LibGuide with one line of HTML. Students use it without leaving your
+            site and without an account.{" "}
+            <Link
+              href="/embed"
+              className="font-semibold text-accent underline hover:text-accent-hover"
+            >
+              Get the embed code
+            </Link>
+            .
+          </p>
+        </section>
+
         {/* 2. What the ASVAB is */}
         <section>
           <h2 className="font-display text-xl font-bold text-text-primary">
@@ -289,16 +430,29 @@ export default function CounselorResourcesPage() {
               (free, U.S. Army sponsored study site)
             </li>
             <li>
-              As an optional add-on, ASVAB Hero offers a free{" "}
+              Free interactive prep from ASVAB Hero: the{" "}
               <Link
                 href="/calculator"
                 className="text-accent underline hover:text-accent-hover"
               >
-                ASVAB score calculator
+                score calculator
+              </Link>
+              , a{" "}
+              <Link
+                href="/practice-test"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                free practice test
+              </Link>
+              , and{" "}
+              <Link
+                href="/asvab-study-guide"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                study guides
               </Link>{" "}
-              for students who already have subtest scores and want to see their
-              AFQT percentile and qualifying jobs. It is an estimate, not an
-              official score.
+              (all linked at the top of this page). The calculators give
+              estimates, not official scores.
             </li>
           </ul>
         </section>
@@ -327,18 +481,34 @@ export default function CounselorResourcesPage() {
               <strong className="text-text-primary">
                 Has scores already:
               </strong>{" "}
-              walk through the{" "}
-              <Source url="https://www.officialasvab.com/applicants/scores/">
-                scores guide
-              </Source>
-              , then optionally use the free{" "}
+              use the free{" "}
               <Link
                 href="/calculator"
                 className="text-accent underline hover:text-accent-hover"
               >
                 calculator
               </Link>{" "}
-              to translate subtest scores into AFQT and qualifying jobs.
+              to translate subtest scores into an AFQT percentile and qualifying
+              jobs, and walk through the official{" "}
+              <Source url="https://www.officialasvab.com/applicants/scores/">
+                scores guide
+              </Source>{" "}
+              alongside it.
+            </li>
+            <li>
+              <strong className="text-text-primary">Wants to practice:</strong>{" "}
+              point them to the free{" "}
+              <Link
+                href="/practice-test"
+                className="text-accent underline hover:text-accent-hover"
+              >
+                practice test
+              </Link>{" "}
+              and per-subtest drills, plus the official{" "}
+              <Source url="https://www.officialasvab.com/applicants/sample-questions/">
+                sample questions
+              </Source>
+              .
             </li>
             <li>
               <strong className="text-text-primary">
@@ -370,6 +540,18 @@ export default function CounselorResourcesPage() {
           </ul>
         </section>
       </div>
+
+      <RelatedLinks
+        title="Free tools for your students"
+        links={[
+          { href: "/calculator", label: "ASVAB score calculator", blurb: "Every job you qualify for, all 6 branches." },
+          { href: "/afqt-calculator", label: "AFQT calculator", blurb: "Enlistment-eligibility percentile from 4 subtests." },
+          { href: "/practice-test", label: "Free practice test", blurb: "Diagnostic plus per-subtest drills, no account." },
+          { href: "/asvab-score-requirements", label: "Score requirements by branch", blurb: "Current AFQT minimums, diploma vs GED." },
+          { href: "/asvab-study-guide", label: "Study guides", blurb: "Free guides for every ASVAB subtest." },
+          { href: "/embed", label: "Embed a calculator", blurb: "Put the AFQT calculator on your own page." },
+        ]}
+      />
     </div>
   );
 }
