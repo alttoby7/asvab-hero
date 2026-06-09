@@ -61,6 +61,35 @@ export default function EmbedDirectoryPage() {
             />
           </div>
         </section>
+
+        {/* Score-requirements widget */}
+        <section className="rounded-2xl border border-navy-border bg-navy-light/40 p-6 sm:p-8">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div>
+              <h2 className="font-display text-xl font-bold text-text-primary">
+                Score Requirements by Branch
+              </h2>
+              <p className="mt-2 max-w-prose text-sm text-text-secondary leading-relaxed">
+                A compact reference table of the minimum AFQT score to enlist in
+                each branch for 2026, with diploma vs GED. Good for a quick
+                &quot;what do I need?&quot; answer on a resource page.
+              </p>
+            </div>
+            <Link
+              href="/embed/score-requirements"
+              className="shrink-0 rounded-md border border-navy-border bg-navy px-3 py-2 text-sm font-medium text-text-primary transition-colors hover:bg-navy-lighter no-underline"
+            >
+              Preview &rarr;
+            </Link>
+          </div>
+          <div className="mt-5">
+            <EmbedSnippet
+              src="https://asvabhero.com/embed/score-requirements"
+              title="ASVAB Score Requirements by ASVAB Hero"
+              height={420}
+            />
+          </div>
+        </section>
       </div>
 
       {/* Cross-links */}

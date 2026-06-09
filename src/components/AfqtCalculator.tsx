@@ -10,6 +10,7 @@ import {
   getAFQTCategoryDescription,
 } from "@/lib/score-calculator";
 import { trackEvent } from "@/lib/analytics";
+import { BRANCH_MINIMUMS } from "@/lib/branch-minimums";
 import ScoreInput from "./ScoreInput";
 
 /**
@@ -37,16 +38,6 @@ const EMPTY_SCORES: DraftScores = {
   MC: null,
   AO: null,
 };
-
-// Diploma minimum AFQT per branch, 2026. GED minimums are higher and noted inline.
-const BRANCH_MINIMUMS = [
-  { branch: "Army", min: 31, gedNote: "50 with GED" },
-  { branch: "Marine Corps", min: 32, gedNote: "50 with GED" },
-  { branch: "Navy", min: 35, gedNote: "50 + 15 college credits with GED" },
-  { branch: "Air Force", min: 36, gedNote: "65 with GED" },
-  { branch: "Space Force", min: 36, gedNote: "65 with GED" },
-  { branch: "Coast Guard", min: 32, gedNote: "50 + 15 college credits with GED" },
-] as const;
 
 export default function AfqtCalculator({ embedded = false }: { embedded?: boolean } = {}) {
   const [scores, setScores] = useState<DraftScores>(EMPTY_SCORES);
