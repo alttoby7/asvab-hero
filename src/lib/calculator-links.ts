@@ -1,8 +1,8 @@
 // Single source of truth for the calculator cluster's internal-link graph.
 //
 // Powers three surfaces so they can't drift:
-//   1. The homepage "Jump to a specific calculator" block (curated 8 of 14).
-//   2. The /calculator hub's full grouped directory (all 14).
+//   1. The homepage "Jump to a specific calculator" block (curated 8 of 17).
+//   2. The /calculator hub's full grouped directory (all 17).
 //   3. The on-page <RelatedCalculators> block at the bottom of each spoke (4 links).
 //
 // Why this exists: the homepage out-ranks its own calculator spokes because the
@@ -12,7 +12,13 @@
 // scripts/generate-sitemap.mjs (no trailing slash).
 
 export type CalcGroup = "core" | "branch-full" | "branch-afqt" | "utility";
-export type Branch = "army" | "navy" | "air-force" | "marines";
+export type Branch =
+  | "army"
+  | "navy"
+  | "air-force"
+  | "marines"
+  | "coast-guard"
+  | "space-force";
 
 export type CalculatorEntry = {
   href: string;
@@ -25,7 +31,7 @@ export type CalculatorEntry = {
   related: string[];
 };
 
-// The 14 calculator spokes (the /calculator hub is the directory, not a spoke).
+// The 17 calculator spokes (the /calculator hub is the directory, not a spoke).
 export const CALCULATORS: CalculatorEntry[] = [
   // ── Core scoring ──────────────────────────────────────────────────────────
   {
@@ -112,7 +118,46 @@ export const CALCULATORS: CalculatorEntry[] = [
     related: [
       "/air-force-afqt-calculator",
       "/calculator",
+      "/space-force-asvab-calculator",
+      "/asvab-retake-calculator",
+    ],
+  },
+  {
+    href: "/marines-asvab-calculator",
+    label: "Marines ASVAB Calculator",
+    group: "branch-full",
+    branch: "marines",
+    blurb: "Your AFQT, the 3 Marine line scores, and every MOS you qualify for.",
+    related: [
+      "/marines-afqt-calculator",
+      "/calculator",
       "/army-asvab-calculator",
+      "/asvab-retake-calculator",
+    ],
+  },
+  {
+    href: "/coast-guard-asvab-calculator",
+    label: "Coast Guard ASVAB Calculator",
+    group: "branch-full",
+    branch: "coast-guard",
+    blurb: "Your AFQT, Coast Guard composites, and every rating you qualify for.",
+    related: [
+      "/navy-asvab-score-calculator",
+      "/calculator",
+      "/afqt-calculator",
+      "/asvab-retake-calculator",
+    ],
+  },
+  {
+    href: "/space-force-asvab-calculator",
+    label: "Space Force ASVAB Calculator",
+    group: "branch-full",
+    branch: "space-force",
+    blurb: "Your AFQT, the 4 MAGE composites, and every Guardian AFSC and its score.",
+    related: [
+      "/air-force-asvab-calculator",
+      "/calculator",
+      "/afqt-calculator",
       "/asvab-retake-calculator",
     ],
   },
@@ -244,7 +289,7 @@ export function calculatorsInGroup(group: CalcGroup): CalculatorEntry[] {
   return CALCULATORS.filter((c) => c.group === group);
 }
 
-// The 8 spokes featured on the homepage (curated, not all 14). The homepage
+// The 8 spokes featured on the homepage (curated, not all 17). The homepage
 // also links "See all calculators" → /calculator for the rest.
 export const HOMEPAGE_FEATURED: string[] = [
   "/afqt-calculator",
