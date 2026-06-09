@@ -10,5 +10,6 @@ supabase/.temp/
 
 # Claude Code — commit skills/commands, but never local config or installer artifacts
 .claude/temp/
+.claude/worktrees/
 .claude/settings.local.json
 .mcp.json
