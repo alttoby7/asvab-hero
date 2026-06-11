@@ -1,10 +1,13 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
+import Link from "next/link";
 import type { AsvabSubtest } from "@/types";
 import { SUBTEST_NAMES } from "@/types";
 import { useStudyGuide } from "./StudyGuideProvider";
 import EmailCapture from "../EmailCapture";
+import { useSession } from "@/hooks/useSession";
+import { useEntitlement } from "@/hooks/useEntitlement";
 import { trackEvent } from "@/lib/analytics";
 import {
   generateStudyPlan,
@@ -48,6 +51,84 @@ const PHASE_STYLES: Record<
     label: "Review Phase",
   },
 };
+
+/**
+ * Conversion bridge at the study-plan moment (mirrors CalculatorResultBridge):
+ * the visitor just invested in building a plan — the hook is executing it.
+ * Anon → free account (save the plan, daily adaptive block). Authed free →
+ * Pro (unlimited drills to run the plan). Pro → nothing.
+ */
+function StudyPlanCta({ weeks, branch }: { weeks: number; branch: string | null }) {
+  const { session } = useSession();
+  const { entitlement, loading } = useEntitlement();
+  const firedRef = useRef(false);
+
+  if (loading || (session && entitlement.isPro)) return null;
+
+  const authed = !!session;
+  const href = authed
+    ? "/upgrade?from=study_plan"
+    : `/signup?next=${encodeURIComponent("/app/plan")}`;
+
+  function onClick() {
+    if (firedRef.current) return;
+    firedRef.current = true;
+    trackEvent("study_plan_cta_click", {
+      weeks,
+      branch: branch ?? "unspecified",
+      authed,
+    });
+  }
+
+  return (
+    <section className="rounded-2xl border border-accent/30 bg-gradient-to-br from-accent/10 to-transparent p-6">
+      <p className="font-mono text-xs uppercase tracking-[0.2em] text-text-tertiary">
+        <span className="text-accent">●</span> Your plan is ready
+      </p>
+      <h3 className="mt-3 font-display text-xl font-bold text-text-primary">
+        {authed
+          ? "Unlock unlimited drills to execute this plan"
+          : "Save this plan and start it today, free"}
+      </h3>
+      <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+        {authed ? (
+          <>
+            Your {weeks}-week plan calls for repeated practice blocks across your
+            weak subtests. Pro removes the one-block-a-day limit and adds
+            full-length simulations and score tracking, so you can actually run
+            the schedule you just built.
+          </>
+        ) : (
+          <>
+            A plan only works if you run it. Create a free account to save this
+            plan, get one adaptive practice block a day matched to your weakest
+            subtests, and track your score climb week over week. No card.
+          </>
+        )}
+      </p>
+      <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <Link
+          href={href}
+          onClick={onClick}
+          className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-accent px-6 py-3 text-sm font-bold text-white no-underline shadow-[0_8px_30px_-4px_rgba(249,115,22,0.4)] transition-all hover:bg-accent-hover hover:shadow-[0_12px_40px_-4px_rgba(249,115,22,0.6)]"
+        >
+          {authed ? "See Pro" : "Start my free plan"}
+          <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </Link>
+        {!authed && (
+          <Link
+            href="/how-it-works"
+            className="inline-flex items-center justify-center rounded-xl border border-navy-border px-6 py-3 text-sm font-semibold text-text-secondary no-underline transition-colors hover:border-accent/40 hover:text-text-primary"
+          >
+            See how it works
+          </Link>
+        )}
+      </div>
+    </section>
+  );
+}
 
 export default function StudyPlanGenerator() {
   const { state, dispatch } = useStudyGuide();
@@ -192,12 +273,7 @@ export default function StudyPlanGenerator() {
       {/* Plan Output */}
       {plan && plan.length > 0 && (
         <div className="space-y-4" style={{ animation: "fadeIn 0.3s ease-out" }}>
-          <EmailCapture
-            headline="Email me this study plan"
-            subhead="Get this plan plus a 5-email crash course covering AFQT strategy, line scores, and retest tactics."
-            cta="Email my plan"
-            tag="asvab-study-plan"
-          />
+          <StudyPlanCta weeks={plan.length} branch={state.selectedBranch} />
           {/* Summary Bar */}
           <div className="flex flex-wrap items-center gap-3 rounded-xl border border-navy-border bg-navy-light px-4 py-3">
             <div className="flex items-center gap-2">
@@ -422,6 +498,13 @@ export default function StudyPlanGenerator() {
               );
             })}
           </div>
+
+          <EmailCapture
+            headline="Email me this study plan"
+            subhead="Get this plan plus a 5-email crash course covering AFQT strategy, line scores, and retest tactics."
+            cta="Email my plan"
+            tag="asvab-study-plan"
+          />
         </div>
       )}
     </div>

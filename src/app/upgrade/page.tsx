@@ -5,6 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import PricingPlans from "@/components/PricingPlans";
 import BrandHero from "@/components/BrandHero";
+import ProUpsellCard from "@/components/ProUpsellCard";
 import WhySurvey from "@/components/feedback/WhySurvey";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
@@ -143,6 +144,12 @@ function UpgradeContent() {
             Manage your subscription
           </Link>
         </div>
+      )}
+
+      {/* Personalized target-job context strip (fail-open: renders nothing
+         without a target job). Puts THEIR goal above the plan grid. */}
+      {!isLoading && !entitlement.isPro && session?.user?.id && (
+        <ProUpsellCard userId={session.user.id} from="upgrade" />
       )}
 
       {/* Not ready for Pro? The free plan already raises scores, route there,

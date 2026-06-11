@@ -27,6 +27,7 @@ import NextStepCard from "./NextStepCard";
 import GtPostBlockCard from "./GtPostBlockCard";
 import QuestionReviewList from "./QuestionReviewList";
 import DiagnosticResultsBridge from "./DiagnosticResultsBridge";
+import ProUpsellCard from "@/components/ProUpsellCard";
 import Link from "next/link";
 import { useEntitlement } from "@/hooks/useEntitlement";
 
@@ -362,26 +363,10 @@ export default function TestResults({
         </div>
       </section>
 
-      {/* ── Phase E: Pro upsell card for free authed users ────────────────── */}
-      {showProUpsell && (
-        <section className="rounded-2xl border-t-2 border-accent bg-navy-light p-6">
-          <h3 className="font-display text-lg font-bold text-text-primary">
-            Ready to go faster?
-          </h3>
-          <p className="mt-2 text-sm text-text-secondary">
-            Your free plan already drills these weak spots every day, one adaptive
-            AFQT block plus Mistake-Bank review. Pro adds unlimited practice,
-            full-length timed sims, and deeper analytics for the final push.
-            $9.99/mo or $49.99/yr.
-          </p>
-          <Link
-            href="/upgrade?from=results"
-            className="mt-4 inline-flex items-center gap-1.5 font-semibold text-accent no-underline transition-colors hover:text-accent-hover"
-          >
-            See Pro &rarr;
-          </Link>
-        </section>
-      )}
+      {/* ── Phase E: Pro upsell card for free authed users, personalized to
+            their primary target job when one is set (fail-open to the generic
+            copy inside ProUpsellCard) ────────────────────────────────────── */}
+      {showProUpsell && <ProUpsellCard userId={userId!} from="results" />}
       {/* ── End Phase E ───────────────────────────────────────────────────── */}
 
       {/* Per-question review (collapsed by default), gated to authed users;
