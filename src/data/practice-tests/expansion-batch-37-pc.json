@@ -1,0 +1,1022 @@
+[
+  {
+    "external_key": "PC-B37-001",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe greatest advantage of a submarine is its ability to hide. Running deep beneath the surface, a submarine becomes nearly invisible to ships and aircraft above. It can approach an enemy fleet undetected, gather information, or launch an attack before anyone knows it is near. Modern submarines run on quiet nuclear power and can stay submerged for months at a time. For navies around the world, this stealth makes the submarine one of the most feared vessels at sea.\n\nThe main idea of this passage is:",
+    "choices": [
+      "A submarine's chief strength is its ability to remain hidden.",
+      "Submarines can stay underwater for months.",
+      "Submarines run on nuclear power.",
+      "Aircraft cannot easily spot ships at sea."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states throughout that hiding is the submarine's greatest advantage and what makes it feared. The points about nuclear power and staying submerged are supporting details, not the central claim. The statement about aircraft spotting ships is not the focus of the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::submarine-stealth"
+  },
+  {
+    "external_key": "PC-B37-002",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nA public library offers far more than shelves of books. Many libraries now provide free internet access, quiet study rooms, job-search help, and programs for children and seniors. People who cannot afford a computer at home can apply for jobs or file taxes using library machines. In this way, the modern library has become a community center that serves nearly everyone, regardless of income.\n\nWhich statement best expresses the main idea?",
+    "choices": [
+      "Libraries lend books to readers.",
+      "The modern library serves the whole community in many ways.",
+      "Libraries have computers for job seekers.",
+      "Children enjoy library programs."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage repeatedly stresses that the library serves nearly everyone through a wide range of services. Lending books and offering computers are specific examples, not the overall point. The note about children is one detail among several.",
+    "status": "verified",
+    "item_family_id": "pc.passage::library-community"
+  },
+  {
+    "external_key": "PC-B37-003",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nGlaciers may move only inches a day, yet over thousands of years they reshape entire landscapes. As a glacier creeps downhill, its enormous weight grinds the rock beneath it and carries away soil and stone. When the ice finally melts, it leaves behind carved valleys, polished cliffs, and ridges of debris. Many of the lakes and rolling hills we admire today were sculpted by glaciers long ago.\n\nThe main idea of this passage is that glaciers:",
+    "choices": [
+      "move only a few inches each day.",
+      "melt and leave behind lakes.",
+      "slowly but powerfully reshape the land over time.",
+      "are made of ice and rock."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage centers on how glaciers, though slow, dramatically reshape landscapes over long periods. The detail about moving inches a day sets up that contrast rather than being the main point, and leaving lakes is just one example of the larger reshaping.",
+    "status": "verified",
+    "item_family_id": "pc.passage::glaciers-shaping"
+  },
+  {
+    "external_key": "PC-B37-004",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nMany people treat sleep as a luxury they can sacrifice when they are busy. Research tells a different story. During sleep, the brain stores memories, clears out waste, and repairs the body. People who regularly sleep too little are more likely to gain weight, get sick, and make poor decisions. Far from being wasted time, a full night's rest is one of the most productive things a person can do.\n\nWhich of the following best states the main idea?",
+    "choices": [
+      "People who sleep too little may gain weight.",
+      "Busy people often skip sleep.",
+      "The brain stores memories during sleep.",
+      "Sleep is essential to health and clear thinking, not wasted time."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage argues that sleep is productive and vital, correcting the idea that it is a luxury. That busy people skip sleep introduces the topic but is not the conclusion, and memory storage and weight gain are supporting details that build toward the main claim.",
+    "status": "verified",
+    "item_family_id": "pc.passage::sleep-importance"
+  },
+  {
+    "external_key": "PC-B37-005",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nRecycling works only when many people do their small part. A single household that sorts cans, paper, and plastic makes little difference by itself. But when a whole city recycles, the saved materials add up to thousands of tons each year, reducing the need to mine metals and cut trees. The success of any recycling program depends on the steady cooperation of ordinary residents.\n\nThe main idea of this passage is that recycling:",
+    "choices": [
+      "succeeds through the combined effort of many people.",
+      "saves trees and metals.",
+      "is done by sorting cans and paper.",
+      "is handled by city governments."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage stresses that recycling depends on the cooperation of many residents acting together. Saving trees and metals is the result, and sorting cans is just how individuals participate, not the central message.",
+    "status": "verified",
+    "item_family_id": "pc.passage::recycling-effort"
+  },
+  {
+    "external_key": "PC-B37-006",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nJazz did not appear from nowhere. It grew out of the blending of many musical traditions in early twentieth-century America. African rhythms, European harmonies, church spirituals, and the brass-band music of New Orleans all flowed together. Musicians borrowed freely from one another, improvising new melodies on the spot. What emerged was a wholly original art form, yet one whose roots reached deep into the cultures that fed it.\n\nThe passage is mainly about how jazz:",
+    "choices": [
+      "was invented in New Orleans brass bands.",
+      "emerged from the blending of several musical traditions.",
+      "relied on improvised melodies.",
+      "borrowed European harmonies."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage's controlling idea is that jazz arose from mixing many traditions. New Orleans brass music and European harmony are listed as ingredients, not the whole story, and improvisation is one feature rather than the central point.",
+    "status": "verified",
+    "item_family_id": "pc.passage::jazz-origins"
+  },
+  {
+    "external_key": "PC-B37-007",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nIn an emergency, the first job of a rescuer is to stay calm. A panicked person forgets training, overlooks dangers, and frightens the victim. By breathing slowly and thinking before acting, a rescuer can check the scene for hazards, call for help, and give aid in the right order. Training teaches the steps, but composure is what allows those steps to be carried out correctly.\n\nWhich sentence best captures the main idea?",
+    "choices": [
+      "Rescuers should call for help.",
+      "Panicked rescuers frighten victims.",
+      "Composure is the rescuer's most important asset in an emergency.",
+      "Training teaches first-aid steps."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage builds to the claim that staying calm is what makes correct action possible. The remarks about panicked rescuers and calling for help are supporting points, and training is mentioned only to contrast it with composure.",
+    "status": "verified",
+    "item_family_id": "pc.passage::first-aid-calm"
+  },
+  {
+    "external_key": "PC-B37-008",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nDeserts look empty, but they teem with life adapted to dryness. Cactuses store water in thick stems, and many animals stay in burrows by day and hunt at night when the air is cool. Some desert frogs sleep underground for months, waking only when rain arrives. Life in the desert has not failed to find a way; it has simply found unusual ways to survive.\n\nThe main idea of this passage is that desert life:",
+    "choices": [
+      "is mostly absent.",
+      "hides in burrows during the day.",
+      "consists of cactuses and frogs.",
+      "has developed special ways to survive harsh dryness."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states that desert life survives through unusual adaptations to dryness. Saying life is absent contradicts the passage, while cactuses, frogs, and burrowing are examples that illustrate the broader point.",
+    "status": "verified",
+    "item_family_id": "pc.passage::deserts-life"
+  },
+  {
+    "external_key": "PC-B37-009",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nPeople often grumble about paying taxes, yet taxes pay for things almost everyone uses. The roads commuters drive on, the schools their children attend, the firefighters who answer emergencies, and the courts that settle disputes are all funded through taxes. A person who never thinks about taxes still depends on them dozens of times a day. The real debate is not whether to have taxes, but how to spend them wisely.\n\nThe passage mainly argues that:",
+    "choices": [
+      "taxes fund services nearly everyone relies on daily.",
+      "taxes are unfairly high.",
+      "firefighters are paid by the government.",
+      "people should not complain about taxes."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage's main point is that taxes pay for widely used services people depend on constantly. Calling taxes unfairly high is never claimed, firefighting is one example, and the closing line shifts the debate to wise spending rather than telling people to stop complaining.",
+    "status": "verified",
+    "item_family_id": "pc.passage::taxes-roads"
+  },
+  {
+    "external_key": "PC-B37-010",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nA relay race shows why teamwork can beat raw talent. Even the fastest sprinter loses if a teammate fumbles the baton during a handoff. Winning relay teams practice their exchanges over and over until passing the baton becomes smooth and automatic. Often a team of solid runners with flawless handoffs defeats a team of stars who never learned to work together.\n\nThe main idea of this passage is that in a relay race:",
+    "choices": [
+      "the fastest runner always wins.",
+      "smooth teamwork can outperform individual talent.",
+      "baton handoffs are difficult.",
+      "practice makes runners faster."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage argues that coordinated teamwork can beat individual speed. The claim that the fastest runner always wins is contradicted, and the difficulty of handoffs and the value of practice are details supporting the teamwork point.",
+    "status": "verified",
+    "item_family_id": "pc.passage::teamwork-relay"
+  },
+  {
+    "external_key": "PC-B37-011",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nOn the night of April 18, 1775, Paul Revere set out on horseback to warn colonial militias that British troops were marching from Boston. He was not alone; other riders, including William Dawes, carried the same warning along different routes. Thanks to these riders, the militias at Lexington and Concord were ready when the soldiers arrived the next morning. Revere himself was briefly captured before the night was over.\n\nAccording to the passage, who rode along a different route to carry the same warning as Revere?",
+    "choices": [
+      "John Adams",
+      "The British troops",
+      "William Dawes",
+      "The Lexington militia"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage names William Dawes as another rider carrying the same warning by a different route. John Adams is never mentioned, the British troops were the ones being warned about, and the militia received the warning rather than spreading it.",
+    "status": "verified",
+    "item_family_id": "pc.passage::paul-revere"
+  },
+  {
+    "external_key": "PC-B37-012",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe water cycle moves water endlessly between the earth and the sky. Heat from the sun causes water in oceans and lakes to evaporate into vapor. The vapor rises, cools, and condenses into clouds. When the droplets grow heavy enough, they fall as rain or snow. Much of this water flows back into rivers and oceans, and the cycle begins again.\n\nAccording to the passage, what causes water to evaporate?",
+    "choices": [
+      "Cooling of the air",
+      "Flowing rivers",
+      "Heavy droplets",
+      "Heat from the sun"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states that heat from the sun causes evaporation. Cooling is what makes vapor condense, heavy droplets cause precipitation, and rivers carry water back rather than evaporating it.",
+    "status": "verified",
+    "item_family_id": "pc.passage::water-cycle"
+  },
+  {
+    "external_key": "PC-B37-013",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Great Wall of China was not built all at once. Different rulers added sections over many centuries to defend against invaders from the north. Much of the wall standing today dates from the Ming dynasty, which strengthened it with brick and stone. Although often described as a single structure, the Great Wall is really a network of walls, towers, and forts stretching thousands of miles.\n\nAccording to the passage, which dynasty built much of the wall that stands today?",
+    "choices": [
+      "The Ming dynasty",
+      "The Tang dynasty",
+      "The Han dynasty",
+      "The Qing dynasty"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage specifically credits the Ming dynasty with strengthening the wall with brick and stone. The Han, Tang, and Qing dynasties are not mentioned in the passage at all.",
+    "status": "verified",
+    "item_family_id": "pc.passage::great-wall"
+  },
+  {
+    "external_key": "PC-B37-014",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nEmperor penguins endure the harshest winter on Earth. To survive temperatures far below freezing, they huddle together in large groups, taking turns moving to the cold outer edge so no single bird stays exposed too long. The males balance a single egg on their feet, covering it with a flap of warm skin while the females travel to the sea to feed. When the females return, they bring food for the newly hatched chicks.\n\nAccording to the passage, what do the male penguins do with the egg?",
+    "choices": [
+      "Bury it in the snow",
+      "Balance it on their feet under a flap of skin",
+      "Carry it to the sea",
+      "Leave it in the huddle's center"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states the males balance the egg on their feet, covered by a flap of warm skin. Burying it, carrying it to the sea, and leaving it in the huddle are not described; the females are the ones who travel to the sea.",
+    "status": "verified",
+    "item_family_id": "pc.passage::penguin-cold"
+  },
+  {
+    "external_key": "PC-B37-015",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nA magnetic compass is a simple but powerful tool. Inside it, a small magnetized needle floats freely and lines up with the earth's magnetic field, pointing toward magnetic north. Sailors and hikers have relied on the compass for centuries to find their way when no landmarks are visible. Because it needs no batteries or signal, a compass still works when electronic devices fail.\n\nAccording to the passage, what does the compass needle point toward?",
+    "choices": [
+      "True north",
+      "The nearest landmark",
+      "Magnetic north",
+      "The sun"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage says the needle lines up with the earth's magnetic field and points toward magnetic north. True north, landmarks, and the sun are not what the passage says the needle indicates.",
+    "status": "verified",
+    "item_family_id": "pc.passage::compass-needle"
+  },
+  {
+    "external_key": "PC-B37-016",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nBefore voices could travel over wires, the telegraph carried messages as patterns of dots and dashes. Samuel Morse developed a code in which each letter of the alphabet was represented by a unique combination of short and long signals. Operators tapped out these signals, and a skilled listener could read the clicks as quickly as another person reads print. The telegraph allowed news to cross a continent in minutes rather than weeks.\n\nAccording to the passage, what did each letter of Morse's code represent?",
+    "choices": [
+      "A spoken sound",
+      "A printed symbol",
+      "A single tap",
+      "A unique combination of short and long signals"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states each letter was represented by a unique combination of short and long signals. The code did not use spoken sounds or printed symbols, and a single tap could not stand for a whole letter.",
+    "status": "verified",
+    "item_family_id": "pc.passage::morse-code"
+  },
+  {
+    "external_key": "PC-B37-017",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nIn 1796, an English doctor named Edward Jenner noticed that milkmaids who had caught a mild disease called cowpox rarely came down with deadly smallpox. He tested the idea by deliberately exposing a boy to cowpox and later to smallpox. The boy did not get sick. Jenner's experiment laid the foundation for vaccination, a practice that has since saved countless lives.\n\nAccording to the passage, what did Jenner notice about milkmaids who had cowpox?",
+    "choices": [
+      "They rarely caught smallpox",
+      "They never got sick at all",
+      "They spread cowpox to others",
+      "They recovered from smallpox quickly"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states milkmaids who had cowpox rarely came down with smallpox. It does not claim they never got sick at all, that they spread cowpox, or that they recovered from smallpox quickly.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vaccine-history"
+  },
+  {
+    "external_key": "PC-B37-018",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe camel is well suited to desert travel. Contrary to a common belief, a camel does not store water in its hump; the hump is actually a reserve of fat. By burning this fat for energy, a camel can go many days without eating. Its broad feet keep it from sinking into soft sand, and it can drink huge amounts of water quickly when it finds a source.\n\nAccording to the passage, what is stored in a camel's hump?",
+    "choices": [
+      "Water",
+      "Fat",
+      "Sand",
+      "Food it has eaten"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage directly states the hump stores fat, not water, correcting the common belief. Sand and undigested food are not what the hump contains.",
+    "status": "verified",
+    "item_family_id": "pc.passage::camel-water"
+  },
+  {
+    "external_key": "PC-B37-019",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nBefore automation, every lighthouse needed a keeper who lived nearby and tended the light each night. The keeper trimmed the wick, polished the lens, and wound the clockwork that turned the lamp. During storms, when ships were in the most danger, the keeper had to stay awake to be sure the light never went dark. It was lonely, demanding work that saved many lives.\n\nAccording to the passage, what did the keeper have to do during storms?",
+    "choices": [
+      "Repair the lens",
+      "Signal passing ships by radio",
+      "Stay awake to keep the light burning",
+      "Rescue stranded sailors"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage says during storms the keeper had to stay awake so the light never went dark. Repairing the lens, using radio, and rescuing sailors are not mentioned among the storm-night duties.",
+    "status": "verified",
+    "item_family_id": "pc.passage::lighthouse-keeper"
+  },
+  {
+    "external_key": "PC-B37-020",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nGiant sequoias are among the largest living things on Earth. Found only on the western slopes of California's Sierra Nevada, these trees can grow taller than a twenty-five-story building and live for more than three thousand years. Their thick, spongy bark resists fire, and in fact the heat of a passing fire helps their cones open and release seeds. Forest managers now set controlled fires to help young sequoias take root.\n\nAccording to the passage, how does fire help giant sequoias reproduce?",
+    "choices": [
+      "It clears away competing trees",
+      "It warms the soil for seedlings",
+      "It softens the bark",
+      "Its heat opens the cones to release seeds"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states the heat of a fire helps the cones open and release seeds. Clearing competitors, softening bark, and warming soil are not the reproduction mechanism the passage describes.",
+    "status": "verified",
+    "item_family_id": "pc.passage::sequoia-trees"
+  },
+  {
+    "external_key": "PC-B37-021",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nBy midafternoon the patrol had been marching under the desert sun for six hours. Private Ramos shook his canteen and heard nothing slosh inside. He glanced at the ridge ahead, still a long climb away, and licked his cracked lips. The sergeant called for a halt and ordered everyone to check their water before pressing on.\n\nFrom the passage, we can infer that Private Ramos:",
+    "choices": [
+      "is out of or nearly out of water",
+      "has plenty of water left",
+      "is about to reach the destination",
+      "wants to turn back"
+    ],
+    "correct_index": 0,
+    "explanation": "That the canteen makes no sound when shaken implies it is empty or nearly so, and his cracked lips reinforce this. The passage suggests the opposite of having plenty of water, and the ridge is described as a long climb away, not a near destination; nothing indicates he wants to turn back.",
+    "status": "verified",
+    "item_family_id": "pc.passage::empty-canteen"
+  },
+  {
+    "external_key": "PC-B37-022",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nWhen Maria came home from her trip, the porch light was off, the mail was piled high in the box, and a thin layer of dust covered the kitchen table. She called out her roommate's name, but only silence answered. On the counter sat a note in handwriting she did not recognize.\n\nFrom the passage, we can infer that:",
+    "choices": [
+      "Maria's roommate is in the kitchen",
+      "the roommate has been away for some time",
+      "the house was recently cleaned",
+      "Maria arrived in the morning"
+    ],
+    "correct_index": 1,
+    "explanation": "Piled-up mail and a layer of dust imply no one has been in the house for a while. The silence after she calls out suggests the roommate is not there, and the dust shows the house was not recently cleaned; the time of day is never stated.",
+    "status": "verified",
+    "item_family_id": "pc.passage::quiet-house"
+  },
+  {
+    "external_key": "PC-B37-023",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nAs the recruiter slid the enlistment papers across the desk, Daniel's hand hovered over the pen. He had talked about joining for years, but now his throat felt tight. He thought of his mother's face that morning and of the dorm room he had toured just last week. The recruiter waited without a word.\n\nThe passage suggests that Daniel:",
+    "choices": [
+      "has never considered enlisting before",
+      "is eager to sign immediately",
+      "feels torn between enlisting and another path",
+      "dislikes the recruiter"
+    ],
+    "correct_index": 2,
+    "explanation": "His hesitation, the tight throat, and thoughts of both his mother and the college dorm imply he is conflicted between options. The passage says he has talked of joining for years, so it is not new, and his hovering hand shows he is not eager to sign; nothing suggests he dislikes the recruiter.",
+    "status": "verified",
+    "item_family_id": "pc.passage::nervous-recruit"
+  },
+  {
+    "external_key": "PC-B37-024",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe fishing boat rolled hard as another wave broke over the bow. Crewmen clipped their safety lines to the rail and moved slowly, planting each boot before lifting the next. The captain ordered all loose gear lashed down and told the cook to keep everyone off the open deck unless their work required it.\n\nFrom the passage, we can infer that conditions at sea were:",
+    "choices": [
+      "calm and pleasant",
+      "unusually warm",
+      "foggy but still",
+      "dangerous and rough"
+    ],
+    "correct_index": 3,
+    "explanation": "Waves breaking over the bow, the use of safety lines, and orders to lash gear and clear the deck all point to rough, dangerous conditions. Calm or still conditions are contradicted, and nothing in the passage addresses temperature.",
+    "status": "verified",
+    "item_family_id": "pc.passage::slippery-deck"
+  },
+  {
+    "external_key": "PC-B37-025",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nEvery morning Mr. Okafor packed two sandwiches, though he ate only one at lunch. At the end of the workday he would walk past the bus stop where a thin young man sat with a cardboard sign and quietly leave the second sandwich beside him without a word. He never mentioned this to anyone at the office.\n\nThe passage suggests that Mr. Okafor is:",
+    "choices": [
+      "quietly generous toward a stranger in need",
+      "forgetful about his meals",
+      "trying to impress his coworkers",
+      "saving food for later"
+    ],
+    "correct_index": 0,
+    "explanation": "Packing a second sandwich on purpose and leaving it for a man with a cardboard sign, without telling anyone, implies quiet generosity. He clearly is not forgetful since he plans the extra sandwich, he tells no one so he is not seeking to impress, and he gives the food away rather than saving it.",
+    "status": "verified",
+    "item_family_id": "pc.passage::forgotten-lunch"
+  },
+  {
+    "external_key": "PC-B37-026",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe maples along Elm Street had turned gold and red, and a cold wind pulled the leaves loose by the handful. Children walked to school in heavier coats, and the sun set noticeably earlier than it had a month before. Storekeepers set out pumpkins and bundles of dried corn.\n\nFrom the passage, we can infer that the season is:",
+    "choices": [
+      "spring",
+      "autumn",
+      "summer",
+      "winter"
+    ],
+    "correct_index": 1,
+    "explanation": "Turning leaves, heavier coats, earlier sunsets, and pumpkins all indicate autumn. Spring and summer are inconsistent with falling leaves and shortening days, and the scene lacks the snow or bare trees that would point to deep winter.",
+    "status": "verified",
+    "item_family_id": "pc.passage::falling-leaves"
+  },
+  {
+    "external_key": "PC-B37-027",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nLena checked the platform clock for the third time. The 8:15 train still had not arrived, and the crowd around her had grown to twice its usual size, murmuring and craning their necks down the empty track. A station worker hurried past carrying a clipboard, avoiding eye contact with the waiting passengers.\n\nThe passage suggests that:",
+    "choices": [
+      "the train arrived early",
+      "Lena is the only person waiting",
+      "the train is delayed and passengers are anxious",
+      "the station is closed"
+    ],
+    "correct_index": 2,
+    "explanation": "A train that has not arrived, a swelling anxious crowd, and a worker avoiding eye contact imply a delay with frustrated passengers. An early arrival is contradicted, the growing crowd shows Lena is not alone, and the station is clearly open and operating.",
+    "status": "verified",
+    "item_family_id": "pc.passage::late-train"
+  },
+  {
+    "external_key": "PC-B37-028",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nWhen the Garcias got home, they found the couch cushions on the floor, a chewed shoe by the door, and shredded paper scattered across the hallway. From behind the kitchen table came a soft whimper and the thump of a wagging tail against the wall.\n\nFrom the passage, we can infer that the mess was caused by:",
+    "choices": [
+      "a burglar",
+      "one of the children",
+      "a strong wind",
+      "the new puppy"
+    ],
+    "correct_index": 3,
+    "explanation": "The chewed shoe, scattered mess, and especially the whimper and wagging tail behind the table point to a puppy. A burglar would not wag a tail, wind could not chew a shoe behind a closed door, and nothing points to a child.",
+    "status": "verified",
+    "item_family_id": "pc.passage::new-puppy"
+  },
+  {
+    "external_key": "PC-B37-029",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe teacher returned the graded exams face down and asked the students to look them over quietly. One by one they turned the papers, and the room, usually buzzing, went still. A few students slumped in their seats; others stared at the page with wide eyes. No one rushed to compare scores with a neighbor.\n\nThe passage implies that the exam results were:",
+    "choices": [
+      "disappointing for many students",
+      "better than expected for most students",
+      "identical for everyone",
+      "never actually graded"
+    ],
+    "correct_index": 0,
+    "explanation": "The sudden silence, slumping, wide eyes, and reluctance to compare scores imply many students did poorly. Results better than expected would more likely bring relief or chatter, the varied reactions show scores were not identical, and the papers were clearly graded since they were returned with marks.",
+    "status": "verified",
+    "item_family_id": "pc.passage::silent-classroom"
+  },
+  {
+    "external_key": "PC-B37-030",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nSuitcases stood by the front door, zipped and tagged. In the kitchen, the refrigerator had been emptied and unplugged, its door propped open. Mr. Lee set the thermostat low, drew the curtains, and asked a neighbor to collect the mail until the family returned.\n\nFrom the passage, we can infer that the family is:",
+    "choices": [
+      "moving to a new house permanently",
+      "about to leave on a trip",
+      "expecting guests",
+      "staying home for the weekend"
+    ],
+    "correct_index": 1,
+    "explanation": "Tagged suitcases, an emptied fridge, drawn curtains, and asking a neighbor to hold the mail until they return all point to a temporary trip. A permanent move would not plan a return, and expecting guests or staying home contradicts the closed-up house.",
+    "status": "verified",
+    "item_family_id": "pc.passage::packed-bags"
+  },
+  {
+    "external_key": "PC-B37-031",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nIt takes only a moment to carry your trash to a bin, yet every summer our shoreline is buried under bottles, wrappers, and broken toys left behind by careless visitors. The animals that live here do not get a vacation from our mess. If we want to keep this beach worth visiting, each of us must take responsibility for what we leave behind.\n\nThe author's main purpose in this passage is to:",
+    "choices": [
+      "describe the wildlife of the beach",
+      "explain how trash is collected",
+      "persuade readers to clean up after themselves",
+      "entertain readers with a beach story"
+    ],
+    "correct_index": 2,
+    "explanation": "The urging language and the closing call to take responsibility show the author means to persuade readers to clean up. The passage does not catalog wildlife or explain collection procedures, and its serious, pleading tone is not meant merely to entertain.",
+    "status": "verified",
+    "item_family_id": "pc.passage::litter-beach"
+  },
+  {
+    "external_key": "PC-B37-032",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nI still remember the weight of the diploma in my hands and the roar of the crowd. Four years of late nights, missed parties, and self-doubt had led to that single shining moment. As I walked off the stage, I knew that nothing worth having comes easily, and that I had earned every bit of what I held.\n\nThe tone of this passage can best be described as:",
+    "choices": [
+      "bitter and resentful",
+      "anxious and uncertain",
+      "calm and detached",
+      "proud and triumphant"
+    ],
+    "correct_index": 3,
+    "explanation": "References to a shining moment, earning every bit, and the roar of the crowd convey pride and triumph. There is no bitterness, the emotional language is far from detached, and the past doubts are described as overcome rather than ongoing anxiety.",
+    "status": "verified",
+    "item_family_id": "pc.passage::proud-graduate"
+  },
+  {
+    "external_key": "PC-B37-033",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nTo perform chest compressions, place the heel of one hand on the center of the victim's chest and your other hand on top. Keeping your arms straight, push down hard and fast, about two inches deep, at a steady rhythm. Allow the chest to rise fully between compressions. Continue until help arrives or the person begins to breathe.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "instruct the reader how to perform a task",
+      "argue that everyone should learn first aid",
+      "share a personal rescue story",
+      "describe the history of CPR"
+    ],
+    "correct_index": 0,
+    "explanation": "The step-by-step directions make the purpose clearly instructional. The passage offers no argument, no personal story, and no history; it simply tells the reader how to do chest compressions.",
+    "status": "verified",
+    "item_family_id": "pc.passage::how-to-cpr"
+  },
+  {
+    "external_key": "PC-B37-034",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nAnother two-hour meeting to decide the color of the break-room walls. Naturally, we couldn't reach a conclusion, so a committee was formed to schedule a future meeting about it. I can hardly wait to spend yet another afternoon watching adults debate paint swatches while the actual work piles up on our desks.\n\nThe tone of this passage is best described as:",
+    "choices": [
+      "sincere and admiring",
+      "sarcastic and frustrated",
+      "fearful and worried",
+      "neutral and factual"
+    ],
+    "correct_index": 1,
+    "explanation": "Phrases like naturally and I can hardly wait, paired with mocking the paint-swatch debate, signal sarcasm and frustration. The writer is clearly not admiring the meeting, shows annoyance rather than fear, and the loaded wording is anything but neutral.",
+    "status": "verified",
+    "item_family_id": "pc.passage::sarcastic-meeting"
+  },
+  {
+    "external_key": "PC-B37-035",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nOn a clear night far from city lights, the sky becomes a sea of stars too many to count. Looking up, I feel impossibly small and yet strangely connected to everything above me. The light reaching my eyes left those distant suns thousands of years ago. To gaze at the stars is to look back in time itself.\n\nThe author's tone in this passage is one of:",
+    "choices": [
+      "boredom and indifference",
+      "fear and dread",
+      "awe and wonder",
+      "anger and frustration"
+    ],
+    "correct_index": 2,
+    "explanation": "Describing the sky as a sea of stars and marveling at looking back in time conveys awe and wonder. The reflective delight rules out dread, the engaged language rules out boredom, and there is no trace of anger.",
+    "status": "verified",
+    "item_family_id": "pc.passage::wonder-stars"
+  },
+  {
+    "external_key": "PC-B37-036",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nSwitching off lights when you leave a room may seem like a tiny act, but multiplied across millions of homes it saves enormous amounts of energy. You will lower your own electric bill and reduce the strain on power plants at the same time. Small habits, repeated daily, add up to real change. Why not start tonight?\n\nThe author's main purpose is to:",
+    "choices": [
+      "explain how power plants work",
+      "describe a typical household",
+      "complain about high electric bills",
+      "encourage readers to save energy through small habits"
+    ],
+    "correct_index": 3,
+    "explanation": "The encouraging tone and the closing invitation to start tonight show the purpose is to motivate energy-saving habits. The passage does not explain power-plant operation, it mentions bills only as a benefit rather than to complain, and it does not aim to describe a household.",
+    "status": "verified",
+    "item_family_id": "pc.passage::save-energy"
+  },
+  {
+    "external_key": "PC-B37-037",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe names carved into the black granite stretch on far longer than any visitor expects. Families run their fingers over a single name among the thousands, and the quiet here is the quiet of remembrance, not of emptiness. We come not to celebrate but to remember the cost that others paid so that we might stand here at all.\n\nThe tone of this passage is best described as:",
+    "choices": [
+      "solemn and reflective",
+      "cheerful and celebratory",
+      "casual and lighthearted",
+      "tense and angry"
+    ],
+    "correct_index": 0,
+    "explanation": "The carved names, the quiet of remembrance, and the focus on cost paid create a solemn, reflective tone. The passage explicitly says it is not to celebrate, and it is far too grave to be casual or angry.",
+    "status": "verified",
+    "item_family_id": "pc.passage::somber-memorial"
+  },
+  {
+    "external_key": "PC-B37-038",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThis backpack looked sturdy in the store, but after only two weeks the zipper jammed and a strap tore loose. For the price, I expected far better. I would not recommend it to anyone planning to carry heavy books or hike with it. Save your money and look elsewhere.\n\nThe author's purpose is to:",
+    "choices": [
+      "advertise the backpack",
+      "warn readers against buying the product",
+      "explain how to repair a zipper",
+      "describe a hiking trip"
+    ],
+    "correct_index": 1,
+    "explanation": "The complaints about the broken zipper and torn strap, ending with a recommendation to look elsewhere, show the purpose is to warn buyers. The negative review is the opposite of advertising, offers no repair instructions, and only mentions hiking as a use case.",
+    "status": "verified",
+    "item_family_id": "pc.passage::product-review"
+  },
+  {
+    "external_key": "PC-B37-039",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nYes, we started in a cramped garage with secondhand computers and almost no money. But every great company starts somewhere, and we believe our idea can change how people work. The road ahead is long, but for the first time the future feels wide open. We are just getting started.\n\nThe tone of this passage is best described as:",
+    "choices": [
+      "discouraged and defeated",
+      "cold and businesslike",
+      "optimistic and hopeful",
+      "sad and nostalgic"
+    ],
+    "correct_index": 2,
+    "explanation": "Phrases like the future feels wide open and just getting started convey optimism and hope. The humble beginnings are framed positively rather than with defeat, and the warm, forward-looking voice is neither cold nor sad.",
+    "status": "verified",
+    "item_family_id": "pc.passage::hopeful-startup"
+  },
+  {
+    "external_key": "PC-B37-040",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nDo not be fooled by a frozen pond's calm surface. Ice that looks solid near the shore can be dangerously thin just a few steps out, and every winter careless skaters fall through. No game is worth a life. Before you step onto any ice, have it checked, and never go out alone.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "describe the beauty of a frozen pond",
+      "share a memory of winter",
+      "teach readers how to ice-skate",
+      "warn readers of the dangers of thin ice"
+    ],
+    "correct_index": 3,
+    "explanation": "The cautions about thin ice and the safety advice make the purpose a clear warning. The passage is not admiring the pond's beauty, does not teach skating technique, and shares no personal memory.",
+    "status": "verified",
+    "item_family_id": "pc.passage::warning-thin-ice"
+  },
+  {
+    "external_key": "PC-B37-041",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nGasoline and diesel engines both power trucks, but they work in different ways. A gasoline engine uses a spark plug to ignite its fuel, while a diesel engine relies on the heat of highly compressed air. Diesel engines usually get better mileage and last longer, yet they cost more to build and can be harder to start in cold weather. Each type has its place depending on the job.\n\nHow is this passage organized?",
+    "choices": [
+      "By comparing and contrasting two things",
+      "As a sequence of steps in time",
+      "By stating a problem and its solution",
+      "By listing events in the order they happened"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage sets gasoline and diesel engines side by side, noting how they differ, which is a compare-and-contrast structure. It does not follow a time sequence or chronology, and it presents no problem to be solved.",
+    "status": "verified",
+    "item_family_id": "pc.passage::compare-trucks"
+  },
+  {
+    "external_key": "PC-B37-042",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nChanging a flat tire follows a clear order. First, loosen the lug nuts while the tire is still on the ground. Next, raise the car with the jack until the flat tire clears the pavement. Then remove the nuts and the flat, mount the spare, and tighten the nuts by hand. Finally, lower the car and tighten the nuts fully.\n\nThe structure of this passage is best described as:",
+    "choices": [
+      "cause and effect",
+      "a step-by-step sequence",
+      "comparison of two methods",
+      "a list of reasons"
+    ],
+    "correct_index": 1,
+    "explanation": "Words like first, next, then, and finally signal a step-by-step sequence. The passage does not trace causes and effects, compare methods, or give reasons for a claim.",
+    "status": "verified",
+    "item_family_id": "pc.passage::flat-tire-steps"
+  },
+  {
+    "external_key": "PC-B37-043",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nFor decades, factories along the river dumped chemical waste directly into the water. As a result, fish populations collapsed, drinking water became unsafe, and the once-busy fishing town fell into poverty. The damage spread downstream for miles, harming communities that had never operated a single factory.\n\nThis passage is mainly organized by:",
+    "choices": [
+      "comparing two rivers",
+      "describing a problem and its solution",
+      "showing causes and their effects",
+      "listing items in order of importance"
+    ],
+    "correct_index": 2,
+    "explanation": "The dumping of waste is presented as a cause, followed by its effects on fish, water, and the town, making this a cause-and-effect structure. No second river is compared, and the passage stops at the effects without offering a solution.",
+    "status": "verified",
+    "item_family_id": "pc.passage::pollution-cause"
+  },
+  {
+    "external_key": "PC-B37-044",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nDowntown traffic had become unbearable, with commuters stuck in jams for an hour each morning. To fix this, the city added a new express bus line, built protected bike lanes, and adjusted the timing of traffic lights. Within a year, the average commute had dropped by fifteen minutes and downtown air quality had improved.\n\nThe structure of this passage is best described as:",
+    "choices": [
+      "definition of a term",
+      "chronological storytelling",
+      "comparison and contrast",
+      "problem and solution"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage first states the traffic problem, then lays out the city's solutions and their results, a clear problem-and-solution structure. It is not a personal story or a comparison, and it does not define any term.",
+    "status": "verified",
+    "item_family_id": "pc.passage::problem-traffic"
+  },
+  {
+    "external_key": "PC-B37-045",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe Wright brothers' path to flight unfolded over years. In the 1890s they ran a bicycle shop and read everything they could about gliding. By 1900 they were testing kites and gliders on the windy dunes of North Carolina. In 1903 they fitted an engine to their glider, and on December 17 of that year they made the first powered flight in history.\n\nHow is this passage organized?",
+    "choices": [
+      "In chronological order",
+      "By comparing gliders and airplanes",
+      "As a problem and its solution",
+      "By listing pros and cons"
+    ],
+    "correct_index": 0,
+    "explanation": "Dates moving from the 1890s to 1900 to 1903 show the passage is arranged in chronological order. It does not compare gliders with airplanes, frame a problem-solution, or weigh pros and cons.",
+    "status": "verified",
+    "item_family_id": "pc.passage::chronological-flight"
+  },
+  {
+    "external_key": "PC-B37-046",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nAn ecosystem is a community of living things together with the nonliving surroundings they depend on. This includes the plants and animals of an area as well as the soil, water, air, and sunlight around them. In an ecosystem, every part is linked: a change to one, such as the loss of a plant, can ripple out to affect many others.\n\nThe structure of this passage is best described as:",
+    "choices": [
+      "a comparison of two ecosystems",
+      "defining a term and explaining it",
+      "narrating events in time",
+      "listing solutions to a problem"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage names the term ecosystem and then explains what it includes and how its parts connect, a definition-and-explanation structure. It compares nothing, tells no time-ordered story, and proposes no solutions.",
+    "status": "verified",
+    "item_family_id": "pc.passage::definition-ecosystem"
+  },
+  {
+    "external_key": "PC-B37-047",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nWhen choosing a survival kit's contents, prioritize wisely. Most important is clean water, since a person cannot last more than a few days without it. Next comes shelter from extreme heat or cold, followed by a way to signal for rescue. Food, while necessary, ranks lower because the body can endure far longer without it.\n\nThis passage is organized by:",
+    "choices": [
+      "chronological sequence",
+      "cause and effect",
+      "order of importance",
+      "comparison of brands"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage ranks survival needs from most important to least, an order-of-importance structure. It does not trace causes and effects, follow a time sequence, or compare products.",
+    "status": "verified",
+    "item_family_id": "pc.passage::order-importance"
+  },
+  {
+    "external_key": "PC-B37-048",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nSpring and fall can look surprisingly alike, yet they move in opposite directions. Both bring mild temperatures and changing trees. In spring, however, days grow longer and life awakens, while in fall days shorten and plants prepare for dormancy. One season opens the year's growth; the other closes it.\n\nHow is this passage structured?",
+    "choices": [
+      "By listing events as they occurred",
+      "By describing steps in a process",
+      "By presenting a problem and solution",
+      "By comparing and contrasting two seasons"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage holds spring and fall side by side, noting both their likeness and their opposite directions, a compare-and-contrast structure. It outlines no process, raises no problem to solve, and follows no event timeline.",
+    "status": "verified",
+    "item_family_id": "pc.passage::compare-seasons"
+  },
+  {
+    "external_key": "PC-B37-049",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nSkipping sleep does more harm than many realize. When a person stays up too late night after night, the body produces more stress hormones. Because of this, concentration fades, the immune system weakens, and the risk of accidents climbs. Over time, chronic sleep loss can lead to serious health problems that are hard to reverse.\n\nThe main structure of this passage is:",
+    "choices": [
+      "cause and effect",
+      "chronological order",
+      "comparison and contrast",
+      "definition"
+    ],
+    "correct_index": 0,
+    "explanation": "Skipping sleep is the cause, and the resulting stress hormones, fading focus, and weakened immunity are the effects, marked by phrases like because of this. The passage is not arranged by time, does not compare two things, and defines no term.",
+    "status": "verified",
+    "item_family_id": "pc.passage::cause-effect-sleep"
+  },
+  {
+    "external_key": "PC-B37-050",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nBaking bread rewards patience. You begin by mixing flour, water, yeast, and salt into a rough dough. After kneading it smooth, you let it rest until it doubles in size. Then you shape the dough, let it rise a second time, and finally bake it in a hot oven until the crust turns golden.\n\nThis passage is organized as:",
+    "choices": [
+      "a comparison of recipes",
+      "a sequence of steps",
+      "a problem and its solution",
+      "a list of ingredients only"
+    ],
+    "correct_index": 1,
+    "explanation": "Signal words like begin, after, then, and finally lay out the bread-making steps in sequence. The passage compares no recipes, poses no problem, and goes well beyond simply listing ingredients.",
+    "status": "verified",
+    "item_family_id": "pc.passage::sequence-bread"
+  },
+  {
+    "external_key": "PC-B37-051",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe watchmaker was meticulous in her work. She inspected each tiny gear under a magnifying lens, wiped away the smallest speck of dust, and tested every spring twice before fitting it into place. A single careless step, she knew, could ruin hours of effort.\n\nAs used in the passage, the word \"meticulous\" most nearly means:",
+    "choices": [
+      "careless",
+      "slow",
+      "extremely careful",
+      "cheerful"
+    ],
+    "correct_index": 2,
+    "explanation": "The description of inspecting every gear and testing each spring twice shows that meticulous means extremely careful. The passage warns against careless steps, so careless is the opposite; being slow or cheerful is not what the word conveys here.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-meticulous"
+  },
+  {
+    "external_key": "PC-B37-052",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nAfter the rainy season, food was abundant in the valley. Fruit weighed down every branch, fish crowded the streams, and tall grass fed the grazing herds. The animals that had struggled through the dry months now found more than enough to eat.\n\nAs used in the passage, the word \"abundant\" most nearly means:",
+    "choices": [
+      "scarce",
+      "hidden",
+      "spoiled",
+      "plentiful"
+    ],
+    "correct_index": 3,
+    "explanation": "The images of loaded branches, crowded streams, and more than enough food show abundant means plentiful. Scarce is the opposite, and nothing suggests the food was spoiled or hidden.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-abundant"
+  },
+  {
+    "external_key": "PC-B37-053",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nDiego was reluctant to volunteer for the night patrol. He shifted in his seat, avoided the sergeant's gaze, and hoped someone else would raise a hand first. Only when no one else stepped forward did he slowly get to his feet.\n\nAs used in the passage, the word \"reluctant\" most nearly means:",
+    "choices": [
+      "unwilling",
+      "eager",
+      "confused",
+      "exhausted"
+    ],
+    "correct_index": 0,
+    "explanation": "His shifting, avoiding eye contact, and hoping someone else would go show reluctant means unwilling. Eager is the opposite of his behavior, and the passage points to hesitation rather than confusion or exhaustion.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-reluctant"
+  },
+  {
+    "external_key": "PC-B37-054",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nFrom the mountaintop, the plain below seemed vast, stretching unbroken to the horizon in every direction. No fence, road, or town interrupted the endless sweep of golden grass. The travelers realized it would take days to cross.\n\nAs used in the passage, the word \"vast\" most nearly means:",
+    "choices": [
+      "tiny",
+      "enormous",
+      "crowded",
+      "steep"
+    ],
+    "correct_index": 1,
+    "explanation": "The plain stretching unbroken to the horizon and taking days to cross shows vast means enormous. Tiny is the opposite, and the empty, level land is neither crowded nor steep.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-vast"
+  },
+  {
+    "external_key": "PC-B37-055",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nWithout regular maintenance, the old bridge began to deteriorate. Rust crept across its beams, chunks of concrete crumbled into the river, and inspectors warned that it grew weaker each year. Eventually the city had no choice but to close it.\n\nAs used in the passage, the word \"deteriorate\" most nearly means:",
+    "choices": [
+      "improve",
+      "stay the same",
+      "grow worse",
+      "shine"
+    ],
+    "correct_index": 2,
+    "explanation": "The rust, crumbling concrete, and growing weakness show deteriorate means to grow worse. Improve and stay the same both contradict the decay described, and shine is unrelated.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-deteriorate"
+  },
+  {
+    "external_key": "PC-B37-056",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nCounting every bolt in the warehouse was a tedious task. The clerk worked through row after identical row, the hours dragging by as the numbers blurred together. By afternoon he could barely keep his eyes open from the dull monotony.\n\nAs used in the passage, the word \"tedious\" most nearly means:",
+    "choices": [
+      "exciting",
+      "quick",
+      "dangerous",
+      "boring and tiresome"
+    ],
+    "correct_index": 3,
+    "explanation": "The dragging hours, blurring numbers, and dull monotony show tedious means boring and tiresome. Exciting is the opposite, and the task is described as long and dull rather than dangerous or quick.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-tedious"
+  },
+  {
+    "external_key": "PC-B37-057",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe package was marked fragile, so the movers handled it with extra care. Inside lay a set of thin glass figurines that could shatter at the slightest bump. They wrapped each piece in foam before setting it gently into the truck.\n\nAs used in the passage, the word \"fragile\" most nearly means:",
+    "choices": [
+      "easily broken",
+      "heavy",
+      "valuable",
+      "colorful"
+    ],
+    "correct_index": 0,
+    "explanation": "Glass figurines that could shatter at the slightest bump show fragile means easily broken. The careful handling is due to breakability, not weight, value, or color.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-fragile"
+  },
+  {
+    "external_key": "PC-B37-058",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe new barracks gave the recruits ample space to store their gear. Each had a wide locker, a footlocker at the end of the bunk, and shelves to spare. After the cramped tents of basic training, the extra room felt almost luxurious.\n\nAs used in the passage, the word \"ample\" most nearly means:",
+    "choices": [
+      "barely enough",
+      "more than enough",
+      "unfair",
+      "temporary"
+    ],
+    "correct_index": 1,
+    "explanation": "Wide lockers, shelves to spare, and room that feels luxurious after cramped tents show ample means more than enough. Barely enough is the opposite, and the word concerns quantity, not fairness or duration.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-ample"
+  },
+  {
+    "external_key": "PC-B37-059",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe soldiers worked quickly to conceal their position before dawn. They draped netting over the vehicles, covered fresh tracks with brush, and kept their voices to a whisper. By sunrise, an observer would have seen nothing but an empty hillside.\n\nAs used in the passage, the word \"conceal\" most nearly means:",
+    "choices": [
+      "reveal",
+      "abandon",
+      "hide",
+      "mark"
+    ],
+    "correct_index": 2,
+    "explanation": "Draping netting, covering tracks, and leaving nothing visible by sunrise show conceal means to hide. Reveal is the opposite of their goal, and they are hiding the position rather than abandoning or marking it.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-conceal"
+  },
+  {
+    "external_key": "PC-B37-060",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nDespite repeated failures, the inventor chose to persist. Each broken prototype taught him something new, and he refused to abandon the project even when others urged him to quit. Year after year he returned to his workbench, certain that success was near.\n\nAs used in the passage, the word \"persist\" most nearly means:",
+    "choices": [
+      "give up",
+      "argue",
+      "rest",
+      "keep trying"
+    ],
+    "correct_index": 3,
+    "explanation": "Refusing to abandon the project and returning to the bench year after year show persist means to keep trying. Give up is the opposite, and the word describes determined effort rather than resting or arguing.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-persist"
+  }
+]

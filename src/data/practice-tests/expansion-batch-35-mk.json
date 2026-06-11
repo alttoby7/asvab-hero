@@ -1,0 +1,1022 @@
+[
+  {
+    "external_key": "MK-B35-001",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "Which of the following is a prime number?",
+    "choices": [
+      "49",
+      "39",
+      "37",
+      "51"
+    ],
+    "correct_index": 2,
+    "explanation": "A prime has exactly two factors, 1 and itself. 39 = 3*13, 51 = 3*17, and 49 = 7*7, so each is composite. Only 37 has no divisors other than 1 and 37.",
+    "status": "verified",
+    "item_family_id": "mk.b35.identify-prime-37"
+  },
+  {
+    "external_key": "MK-B35-002",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "What is the value of |-23|?",
+    "choices": [
+      "0",
+      "46",
+      "-23",
+      "23"
+    ],
+    "correct_index": 3,
+    "explanation": "Absolute value is distance from zero and is never negative, so |-23| = 23. The choice -23 just repeats the original number, and 46 incorrectly doubles it.",
+    "status": "verified",
+    "item_family_id": "mk.b35.absolute-value-23"
+  },
+  {
+    "external_key": "MK-B35-003",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "What is the greatest common factor of 18 and 24?",
+    "choices": [
+      "3",
+      "6",
+      "72",
+      "12"
+    ],
+    "correct_index": 1,
+    "explanation": "List factors: 18 has 1,2,3,6,9,18 and 24 has 1,2,3,4,6,8,12,24. The largest shared factor is 6. The value 72 is the least common multiple, not the GCF, and 3 is a common factor but not the greatest.",
+    "status": "verified",
+    "item_family_id": "mk.b35.gcf-18-24"
+  },
+  {
+    "external_key": "MK-B35-004",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "Which number is divisible by both 3 and 5?",
+    "choices": [
+      "33",
+      "50",
+      "45",
+      "25"
+    ],
+    "correct_index": 2,
+    "explanation": "A number divisible by both 3 and 5 must be divisible by 15. 45 = 15*3, so it qualifies. 25 and 50 are divisible by 5 but not 3, and 33 is divisible by 3 but not 5.",
+    "status": "verified",
+    "item_family_id": "mk.b35.divisible-3-and-5"
+  },
+  {
+    "external_key": "MK-B35-005",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "What is the least common multiple of 6 and 8?",
+    "choices": [
+      "24",
+      "48",
+      "2",
+      "14"
+    ],
+    "correct_index": 0,
+    "explanation": "Multiples of 6 are 6,12,18,24 and multiples of 8 are 8,16,24; the smallest shared multiple is 24. The value 48 is a common multiple but not the least, and 2 is the GCF, not the LCM.",
+    "status": "verified",
+    "item_family_id": "mk.b35.lcm-6-8"
+  },
+  {
+    "external_key": "MK-B35-006",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "The prime factorization of 84 is which of the following?",
+    "choices": [
+      "2 * 3 * 14",
+      "2 * 42",
+      "4 * 21",
+      "2 * 2 * 3 * 7"
+    ],
+    "correct_index": 3,
+    "explanation": "84 = 2*42 = 2*2*21 = 2*2*3*7, all of which are primes. The other options include composite factors such as 14, 21, 4, and 42, so they are not prime factorizations.",
+    "status": "verified",
+    "item_family_id": "mk.b35.prime-factorization-84"
+  },
+  {
+    "external_key": "MK-B35-007",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "What is the sum of the first five positive odd integers?",
+    "choices": [
+      "25",
+      "20",
+      "30",
+      "24"
+    ],
+    "correct_index": 0,
+    "explanation": "The first five positive odd integers are 1, 3, 5, 7, 9, and their sum is 25. The value 30 mistakenly includes 11 as a sixth term, and 20 drops one of the terms.",
+    "status": "verified",
+    "item_family_id": "mk.b35.sum-first-five-odd"
+  },
+  {
+    "external_key": "MK-B35-008",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "If a whole number leaves a remainder of 2 when divided by 5 and a remainder of 1 when divided by 4, which of these could it be?",
+    "choices": [
+      "22",
+      "27",
+      "12",
+      "17"
+    ],
+    "correct_index": 3,
+    "explanation": "17 divided by 5 is 3 remainder 2, and 17 divided by 4 is 4 remainder 1, so it satisfies both. 12 gives remainder 2 only for 4, 22 gives remainder 2 for 4, and 27 gives remainder 2 for 5 but remainder 3 for 4.",
+    "status": "verified",
+    "item_family_id": "mk.b35.remainder-system"
+  },
+  {
+    "external_key": "MK-B35-009",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "How many positive factors does 36 have?",
+    "choices": [
+      "12",
+      "9",
+      "6",
+      "8"
+    ],
+    "correct_index": 1,
+    "explanation": "36 = 2^2 * 3^2, so the factor count is (2+1)(2+1) = 9. The factors are 1,2,3,4,6,9,12,18,36. The answer 6 counts only some of them, and 8 wrongly omits the perfect-square factor 6.",
+    "status": "verified",
+    "item_family_id": "mk.b35.factor-count-36"
+  },
+  {
+    "external_key": "MK-B35-010",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "What is 3/4 written as a decimal?",
+    "choices": [
+      "0.34",
+      "0.43",
+      "0.70",
+      "0.75"
+    ],
+    "correct_index": 3,
+    "explanation": "Divide 3 by 4 to get 0.75. The choice 0.34 just strings the digits together, and 0.43 reverses them; neither is the result of the division.",
+    "status": "verified",
+    "item_family_id": "mk.b35.three-fourths-decimal"
+  },
+  {
+    "external_key": "MK-B35-011",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "Add: 1/5 + 2/5",
+    "choices": [
+      "3/10",
+      "2/25",
+      "3/5",
+      "1/2"
+    ],
+    "correct_index": 2,
+    "explanation": "With a common denominator, add only the numerators: 1 + 2 = 3, giving 3/5. The choice 3/10 wrongly adds the denominators too, and 2/25 multiplies instead of adding.",
+    "status": "verified",
+    "item_family_id": "mk.b35.add-like-fractions"
+  },
+  {
+    "external_key": "MK-B35-012",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "What is 0.6 written as a fraction in lowest terms?",
+    "choices": [
+      "1/6",
+      "2/3",
+      "3/5",
+      "6/10"
+    ],
+    "correct_index": 2,
+    "explanation": "0.6 equals 6/10, and dividing top and bottom by 2 gives 3/5. The choice 6/10 is correct in value but not in lowest terms, and 1/6 confuses the digit with a denominator.",
+    "status": "verified",
+    "item_family_id": "mk.b35.decimal-to-fraction-06"
+  },
+  {
+    "external_key": "MK-B35-013",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "Multiply: 2/3 * 3/8",
+    "choices": [
+      "6/24",
+      "5/11",
+      "1/4",
+      "4/9"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply across to get 6/24, which reduces to 1/4. The choice 6/24 is the unreduced form, and 5/11 wrongly adds numerators and denominators instead of multiplying.",
+    "status": "verified",
+    "item_family_id": "mk.b35.multiply-fractions"
+  },
+  {
+    "external_key": "MK-B35-014",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "Divide: 3/4 / 1/2",
+    "choices": [
+      "3/2",
+      "2/3",
+      "3/8",
+      "1/2"
+    ],
+    "correct_index": 0,
+    "explanation": "Dividing by a fraction means multiplying by its reciprocal: 3/4 * 2/1 = 6/4 = 3/2. The choice 3/8 results from multiplying by 1/2 instead of flipping it.",
+    "status": "verified",
+    "item_family_id": "mk.b35.divide-fractions"
+  },
+  {
+    "external_key": "MK-B35-015",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "Subtract: 5/6 - 1/3",
+    "choices": [
+      "4/6",
+      "1/2",
+      "2/3",
+      "4/3"
+    ],
+    "correct_index": 1,
+    "explanation": "Rewrite 1/3 as 2/6, then 5/6 - 2/6 = 3/6 = 1/2. The choice 4/3 adds instead of subtracts, and 4/6 forgets to convert the second fraction to sixths.",
+    "status": "verified",
+    "item_family_id": "mk.b35.subtract-unlike-fractions"
+  },
+  {
+    "external_key": "MK-B35-016",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "What is 7/8 + 0.5 expressed as a decimal?",
+    "choices": [
+      "1.375",
+      "1.125",
+      "1.300",
+      "0.875"
+    ],
+    "correct_index": 0,
+    "explanation": "7/8 = 0.875, and 0.875 + 0.5 = 1.375. The choice 0.875 ignores the 0.5, and 1.125 comes from using 0.625 for 7/8 by mistake.",
+    "status": "verified",
+    "item_family_id": "mk.b35.mixed-fraction-decimal-sum"
+  },
+  {
+    "external_key": "MK-B35-017",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "A recipe uses 2/3 cup of sugar. To make 1 and 1/2 times the recipe, how much sugar is needed?",
+    "choices": [
+      "1 cup",
+      "3/4 cup",
+      "1 and 1/6 cup",
+      "4/3 cup"
+    ],
+    "correct_index": 0,
+    "explanation": "Multiply 2/3 by 3/2: (2*3)/(3*2) = 6/6 = 1 cup. The choice 4/3 cup comes from forgetting the 1/2 part of the multiplier, and 1 and 1/6 adds instead of multiplying.",
+    "status": "verified",
+    "item_family_id": "mk.b35.recipe-scale-sugar"
+  },
+  {
+    "external_key": "MK-B35-018",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Which fraction is largest: 3/5, 5/8, or 7/12?",
+    "choices": [
+      "3/5",
+      "7/12",
+      "5/8",
+      "they are equal"
+    ],
+    "correct_index": 2,
+    "explanation": "Convert to a common denominator of 120: 3/5 = 72/120, 5/8 = 75/120, and 7/12 = 70/120. The largest is 75/120, which is 5/8. They are not equal, so that option is wrong.",
+    "status": "verified",
+    "item_family_id": "mk.b35.compare-three-fractions"
+  },
+  {
+    "external_key": "MK-B35-019",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "What is 2^5?",
+    "choices": [
+      "16",
+      "10",
+      "32",
+      "25"
+    ],
+    "correct_index": 2,
+    "explanation": "2^5 means 2*2*2*2*2 = 32. The choice 10 multiplies the base by the exponent, and 16 is 2^4, one factor short.",
+    "status": "verified",
+    "item_family_id": "mk.b35.power-2-5"
+  },
+  {
+    "external_key": "MK-B35-020",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "Simplify: x^3 * x^4",
+    "choices": [
+      "x^7",
+      "2x^7",
+      "x^12",
+      "x^1"
+    ],
+    "correct_index": 0,
+    "explanation": "When multiplying like bases, add the exponents: 3 + 4 = 7, giving x^7. The choice x^12 multiplies the exponents, and 2x^7 wrongly introduces a coefficient of 2.",
+    "status": "verified",
+    "item_family_id": "mk.b35.multiply-powers-x"
+  },
+  {
+    "external_key": "MK-B35-021",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "What is the value of 4^0?",
+    "choices": [
+      "0",
+      "4",
+      "1",
+      "40"
+    ],
+    "correct_index": 2,
+    "explanation": "Any nonzero number raised to the 0 power equals 1, so 4^0 = 1. The choice 0 confuses the exponent with the result, and 4 ignores the exponent entirely.",
+    "status": "verified",
+    "item_family_id": "mk.b35.zero-exponent"
+  },
+  {
+    "external_key": "MK-B35-022",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Simplify: (x^4) / (x^2)",
+    "choices": [
+      "x^8",
+      "x^6",
+      "x^1",
+      "x^2"
+    ],
+    "correct_index": 3,
+    "explanation": "When dividing like bases, subtract exponents: 4 - 2 = 2, giving x^2. The choice x^6 adds the exponents, and x^8 multiplies them.",
+    "status": "verified",
+    "item_family_id": "mk.b35.divide-powers-x"
+  },
+  {
+    "external_key": "MK-B35-023",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Combine like terms: 5x + 3y - 2x + y",
+    "choices": [
+      "3x + 3y",
+      "6xy",
+      "7x + 4y",
+      "3x + 4y"
+    ],
+    "correct_index": 3,
+    "explanation": "Combine the x terms (5x - 2x = 3x) and the y terms (3y + y = 4y) to get 3x + 4y. The choice 7x + 4y adds the x terms instead of subtracting, and 6xy wrongly merges unlike variables.",
+    "status": "verified",
+    "item_family_id": "mk.b35.combine-like-terms"
+  },
+  {
+    "external_key": "MK-B35-024",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Expand: (x + 3)(x + 5)",
+    "choices": [
+      "x^2 + 15",
+      "x^2 + 8x + 15",
+      "x^2 + 8x + 8",
+      "x^2 + 15x + 8"
+    ],
+    "correct_index": 1,
+    "explanation": "Using FOIL: x*x = x^2, x*5 + 3*x = 8x, and 3*5 = 15, giving x^2 + 8x + 15. The choice x^2 + 15 drops the middle term, and x^2 + 15x + 8 swaps the sum and product of 3 and 5.",
+    "status": "verified",
+    "item_family_id": "mk.b35.foil-binomials"
+  },
+  {
+    "external_key": "MK-B35-025",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify: (3x^2)^3",
+    "choices": [
+      "3x^6",
+      "27x^6",
+      "27x^5",
+      "9x^6"
+    ],
+    "correct_index": 1,
+    "explanation": "Raise both factors to the third power: 3^3 = 27 and (x^2)^3 = x^6, giving 27x^6. The choice 9x^6 squares the 3 instead of cubing it, and 27x^5 adds the exponents rather than multiplying them.",
+    "status": "verified",
+    "item_family_id": "mk.b35.power-of-product"
+  },
+  {
+    "external_key": "MK-B35-026",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Factor completely: x^2 - 9",
+    "choices": [
+      "(x - 3)(x - 3)",
+      "(x - 3)(x + 3)",
+      "(x - 9)(x + 1)",
+      "(x + 3)(x + 3)"
+    ],
+    "correct_index": 1,
+    "explanation": "x^2 - 9 is a difference of squares, x^2 - 3^2, which factors as (x - 3)(x + 3). The choice (x - 3)(x - 3) would give x^2 - 6x + 9, and (x + 3)(x + 3) gives x^2 + 6x + 9, neither of which matches.",
+    "status": "verified",
+    "item_family_id": "mk.b35.difference-of-squares"
+  },
+  {
+    "external_key": "MK-B35-027",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "What is the value of 3^(-2)?",
+    "choices": [
+      "1/6",
+      "-6",
+      "-9",
+      "1/9"
+    ],
+    "correct_index": 3,
+    "explanation": "A negative exponent means the reciprocal: 3^(-2) = 1/3^2 = 1/9. The choice -9 treats the exponent as making the result negative, and 1/6 multiplies the base by the exponent instead of squaring.",
+    "status": "verified",
+    "item_family_id": "mk.b35.negative-exponent"
+  },
+  {
+    "external_key": "MK-B35-028",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "Solve for x: x + 7 = 15",
+    "choices": [
+      "22",
+      "8",
+      "105",
+      "7"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtract 7 from both sides: x = 15 - 7 = 8. The choice 22 adds 7 instead of subtracting, and 105 multiplies the two numbers.",
+    "status": "verified",
+    "item_family_id": "mk.b35.solve-add-7"
+  },
+  {
+    "external_key": "MK-B35-029",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "Solve for y: 4y = 28",
+    "choices": [
+      "7",
+      "112",
+      "32",
+      "24"
+    ],
+    "correct_index": 0,
+    "explanation": "Divide both sides by 4: y = 28 / 4 = 7. The choice 24 subtracts 4, and 112 multiplies 4 by 28 instead of dividing.",
+    "status": "verified",
+    "item_family_id": "mk.b35.solve-mult-4"
+  },
+  {
+    "external_key": "MK-B35-030",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "If x = 5, what is the value of 3x - 4?",
+    "choices": [
+      "15",
+      "19",
+      "7",
+      "11"
+    ],
+    "correct_index": 3,
+    "explanation": "Substitute x = 5: 3*5 - 4 = 15 - 4 = 11. The choice 15 forgets to subtract 4, and 7 subtracts 4 from 5 before multiplying.",
+    "status": "verified",
+    "item_family_id": "mk.b35.evaluate-3x-minus-4"
+  },
+  {
+    "external_key": "MK-B35-031",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "Solve for x: 2x + 3 = 17",
+    "choices": [
+      "10",
+      "8.5",
+      "5",
+      "7"
+    ],
+    "correct_index": 3,
+    "explanation": "Subtract 3 to get 2x = 14, then divide by 2 to get x = 7. The choice 10 forgets to subtract 3 first, and 8.5 divides 17 by 2 without removing the 3.",
+    "status": "verified",
+    "item_family_id": "mk.b35.solve-two-step"
+  },
+  {
+    "external_key": "MK-B35-032",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "Solve for x: 5x - 2 = 3x + 8",
+    "choices": [
+      "5",
+      "10",
+      "3",
+      "1.25"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 3x from both sides to get 2x - 2 = 8, then add 2 to get 2x = 10, so x = 5. The choice 3 results from subtracting instead of adding the 2, and 10 stops before dividing by 2.",
+    "status": "verified",
+    "item_family_id": "mk.b35.variable-both-sides"
+  },
+  {
+    "external_key": "MK-B35-033",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "Solve for x: (x / 3) + 4 = 10",
+    "choices": [
+      "2",
+      "6",
+      "42",
+      "18"
+    ],
+    "correct_index": 3,
+    "explanation": "Subtract 4 to get x/3 = 6, then multiply by 3 to get x = 18. The choice 2 divides 6 by 3 instead of multiplying, and 6 forgets the final multiplication step.",
+    "status": "verified",
+    "item_family_id": "mk.b35.solve-fraction-equation"
+  },
+  {
+    "external_key": "MK-B35-034",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "Solve for x: 3(x - 2) = 2x + 5",
+    "choices": [
+      "1",
+      "11",
+      "-1",
+      "7"
+    ],
+    "correct_index": 1,
+    "explanation": "Distribute to get 3x - 6 = 2x + 5, subtract 2x to get x - 6 = 5, then add 6 to get x = 11. The choice 1 comes from forgetting to distribute the 3 to the -2, and 7 mishandles the constant terms.",
+    "status": "verified",
+    "item_family_id": "mk.b35.distribute-solve"
+  },
+  {
+    "external_key": "MK-B35-035",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "The sum of two consecutive integers is 47. What is the larger integer?",
+    "choices": [
+      "25",
+      "22",
+      "23",
+      "24"
+    ],
+    "correct_index": 3,
+    "explanation": "Let the integers be n and n+1; then 2n + 1 = 47, so n = 23 and the larger is 24. The choice 23 is the smaller integer, and 25 overshoots the pair.",
+    "status": "verified",
+    "item_family_id": "mk.b35.consecutive-integers-sum"
+  },
+  {
+    "external_key": "MK-B35-036",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "A line passes through (0, 3) and (2, 11). What is its slope?",
+    "choices": [
+      "1/4",
+      "4",
+      "8",
+      "2"
+    ],
+    "correct_index": 1,
+    "explanation": "Slope is rise over run: (11 - 3)/(2 - 0) = 8/2 = 4. The choice 8 uses only the rise, and 1/4 inverts the ratio by dividing run by rise.",
+    "status": "verified",
+    "item_family_id": "mk.b35.slope-two-points"
+  },
+  {
+    "external_key": "MK-B35-037",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "What is the perimeter of a rectangle that is 8 cm long and 5 cm wide?",
+    "choices": [
+      "26 cm",
+      "13 cm",
+      "40 cm",
+      "18 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "Perimeter is 2(length + width) = 2(8 + 5) = 26 cm. The choice 40 cm is the area instead, and 13 cm adds the two sides only once.",
+    "status": "verified",
+    "item_family_id": "mk.b35.rectangle-perimeter"
+  },
+  {
+    "external_key": "MK-B35-038",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "What is the area of a triangle with base 10 in and height 6 in?",
+    "choices": [
+      "32 sq in",
+      "30 sq in",
+      "60 sq in",
+      "16 sq in"
+    ],
+    "correct_index": 1,
+    "explanation": "Area of a triangle is (1/2)*base*height = (1/2)*10*6 = 30 sq in. The choice 60 sq in forgets the 1/2 factor, and 16 sq in adds the base and height instead of multiplying.",
+    "status": "verified",
+    "item_family_id": "mk.b35.triangle-area"
+  },
+  {
+    "external_key": "MK-B35-039",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "How many degrees are in a straight angle?",
+    "choices": [
+      "45",
+      "90",
+      "180",
+      "360"
+    ],
+    "correct_index": 2,
+    "explanation": "A straight angle forms a straight line and measures 180 degrees. The choice 90 is a right angle, and 360 is a full circle.",
+    "status": "verified",
+    "item_family_id": "mk.b35.straight-angle"
+  },
+  {
+    "external_key": "MK-B35-040",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "What is the area of a circle with radius 4 (use 3.14 for pi)?",
+    "choices": [
+      "16",
+      "50.24",
+      "12.56",
+      "25.12"
+    ],
+    "correct_index": 1,
+    "explanation": "Area is pi*r^2 = 3.14*4^2 = 3.14*16 = 50.24. The choice 25.12 is the circumference, and 12.56 uses the radius without squaring it.",
+    "status": "verified",
+    "item_family_id": "mk.b35.circle-area"
+  },
+  {
+    "external_key": "MK-B35-041",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "The angles of a triangle measure 40 degrees and 75 degrees. What is the third angle?",
+    "choices": [
+      "180",
+      "115",
+      "65",
+      "75"
+    ],
+    "correct_index": 2,
+    "explanation": "The angles of a triangle sum to 180, so the third is 180 - 40 - 75 = 65 degrees. The choice 115 adds the two given angles instead of subtracting from 180.",
+    "status": "verified",
+    "item_family_id": "mk.b35.triangle-third-angle"
+  },
+  {
+    "external_key": "MK-B35-042",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "What is the volume of a rectangular box 3 ft by 4 ft by 5 ft?",
+    "choices": [
+      "60 cubic ft",
+      "12 cubic ft",
+      "47 cubic ft",
+      "120 cubic ft"
+    ],
+    "correct_index": 0,
+    "explanation": "Volume is length*width*height = 3*4*5 = 60 cubic ft. The choice 12 cubic ft multiplies only two dimensions, and 47 cubic ft is unrelated to the product.",
+    "status": "verified",
+    "item_family_id": "mk.b35.box-volume"
+  },
+  {
+    "external_key": "MK-B35-043",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A right triangle has legs of 6 and 8. What is the length of the hypotenuse?",
+    "choices": [
+      "12",
+      "48",
+      "14",
+      "10"
+    ],
+    "correct_index": 3,
+    "explanation": "By the Pythagorean theorem, c^2 = 6^2 + 8^2 = 36 + 64 = 100, so c = 10. The choice 14 adds the legs, and 48 multiplies them.",
+    "status": "verified",
+    "item_family_id": "mk.b35.pythagorean-6-8"
+  },
+  {
+    "external_key": "MK-B35-044",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "The circumference of a circle is 31.4. What is its radius (use 3.14 for pi)?",
+    "choices": [
+      "15.7",
+      "25",
+      "5",
+      "10"
+    ],
+    "correct_index": 2,
+    "explanation": "Circumference is 2*pi*r, so 31.4 = 6.28*r and r = 5. The choice 10 is the diameter, and 15.7 divides by pi only without the factor of 2.",
+    "status": "verified",
+    "item_family_id": "mk.b35.circle-radius-from-circumference"
+  },
+  {
+    "external_key": "MK-B35-045",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A square has an area of 49 square meters. What is its perimeter?",
+    "choices": [
+      "28 m",
+      "14 m",
+      "196 m",
+      "49 m"
+    ],
+    "correct_index": 0,
+    "explanation": "The side length is the square root of 49, which is 7 m, so the perimeter is 4*7 = 28 m. The choice 14 m doubles a side instead of taking four sides, and 196 m multiplies the area by 4.",
+    "status": "verified",
+    "item_family_id": "mk.b35.square-area-to-perimeter"
+  },
+  {
+    "external_key": "MK-B35-046",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 1,
+    "stem": "Which value of x makes x > 4 true?",
+    "choices": [
+      "3",
+      "6",
+      "4",
+      "0"
+    ],
+    "correct_index": 1,
+    "explanation": "Only a number greater than 4 satisfies x > 4, and 6 is greater than 4. The value 4 is not included because the inequality is strict, and 3 and 0 are both less than 4.",
+    "status": "verified",
+    "item_family_id": "mk.b35.satisfy-greater-than-4"
+  },
+  {
+    "external_key": "MK-B35-047",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 1,
+    "stem": "Solve for x: x + 5 < 9",
+    "choices": [
+      "x > 4",
+      "x < 4",
+      "x < 14",
+      "x > 14"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtract 5 from both sides to get x < 4; the inequality direction stays the same for addition or subtraction. The choice x < 14 adds 5 instead of subtracting, and x > 4 wrongly flips the sign.",
+    "status": "verified",
+    "item_family_id": "mk.b35.solve-add-inequality"
+  },
+  {
+    "external_key": "MK-B35-048",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 1,
+    "stem": "Which symbol means 'greater than or equal to'?",
+    "choices": [
+      ">",
+      "!=",
+      ">=",
+      "<="
+    ],
+    "correct_index": 2,
+    "explanation": "The symbol >= means greater than or equal to. The symbol <= means less than or equal to, > means strictly greater than, and != means not equal.",
+    "status": "verified",
+    "item_family_id": "mk.b35.inequality-symbol-meaning"
+  },
+  {
+    "external_key": "MK-B35-049",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "Solve for x: 3x <= 21",
+    "choices": [
+      "x <= 7",
+      "x <= 18",
+      "x <= 63",
+      "x >= 7"
+    ],
+    "correct_index": 0,
+    "explanation": "Divide both sides by 3 (a positive number, so the direction is unchanged) to get x <= 7. The choice x >= 7 wrongly flips the sign, and x <= 63 multiplies instead of dividing.",
+    "status": "verified",
+    "item_family_id": "mk.b35.solve-mult-inequality"
+  },
+  {
+    "external_key": "MK-B35-050",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "Solve for x: -2x < 10",
+    "choices": [
+      "x > 5",
+      "x < -5",
+      "x > -5",
+      "x < 5"
+    ],
+    "correct_index": 2,
+    "explanation": "Divide both sides by -2 and flip the inequality because the divisor is negative, giving x > -5. The choice x < -5 forgets to flip the sign, and x < 5 also ignores the sign rule and the negative.",
+    "status": "verified",
+    "item_family_id": "mk.b35.negative-coefficient-inequality"
+  },
+  {
+    "external_key": "MK-B35-051",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "Solve for x: 2x + 1 > 11",
+    "choices": [
+      "x > 6",
+      "x > 5",
+      "x < 5",
+      "x > 24"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtract 1 to get 2x > 10, then divide by 2 to get x > 5. The choice x > 6 forgets to subtract the 1 first, and x < 5 wrongly reverses the inequality.",
+    "status": "verified",
+    "item_family_id": "mk.b35.two-step-inequality"
+  },
+  {
+    "external_key": "MK-B35-052",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "Solve for x: 4 - 3x >= -5",
+    "choices": [
+      "x >= 3",
+      "x <= -3",
+      "x >= -3",
+      "x <= 3"
+    ],
+    "correct_index": 3,
+    "explanation": "Subtract 4 to get -3x >= -9, then divide by -3 and flip the sign to get x <= 3. The choice x >= 3 forgets to flip the inequality when dividing by a negative.",
+    "status": "verified",
+    "item_family_id": "mk.b35.solve-flip-inequality"
+  },
+  {
+    "external_key": "MK-B35-053",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "Which inequality describes 'a number n is at least 12'?",
+    "choices": [
+      "n >= 12",
+      "n > 12",
+      "n <= 12",
+      "n < 12"
+    ],
+    "correct_index": 0,
+    "explanation": "'At least 12' means 12 or more, which is n >= 12. The strict inequality n > 12 excludes 12 itself, and the 'less than' options describe values below 12.",
+    "status": "verified",
+    "item_family_id": "mk.b35.translate-at-least"
+  },
+  {
+    "external_key": "MK-B35-054",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "Solve for x: 5x - 3 < 2x + 9",
+    "choices": [
+      "x < 4",
+      "x > 4",
+      "x < 12",
+      "x < 2"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 2x to get 3x - 3 < 9, add 3 to get 3x < 12, then divide by 3 to get x < 4. The choice x < 12 stops before dividing, and x > 4 reverses the sign without cause.",
+    "status": "verified",
+    "item_family_id": "mk.b35.inequality-both-sides"
+  },
+  {
+    "external_key": "MK-B35-055",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 1,
+    "stem": "Evaluate: 8 + 2 * 3",
+    "choices": [
+      "13",
+      "30",
+      "14",
+      "10"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiplication comes before addition, so 2 * 3 = 6 and then 8 + 6 = 14. The choice 30 adds first to get 10 and then multiplies, which violates order of operations.",
+    "status": "verified",
+    "item_family_id": "mk.b35.ooo-add-mult"
+  },
+  {
+    "external_key": "MK-B35-056",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 1,
+    "stem": "Evaluate: (5 + 3) * 2",
+    "choices": [
+      "10",
+      "16",
+      "13",
+      "11"
+    ],
+    "correct_index": 1,
+    "explanation": "Do the parentheses first: 5 + 3 = 8, then 8 * 2 = 16. The choice 11 multiplies only the 3 by 2 before adding the 5, ignoring the grouping.",
+    "status": "verified",
+    "item_family_id": "mk.b35.ooo-parentheses"
+  },
+  {
+    "external_key": "MK-B35-057",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 2,
+    "stem": "Evaluate: 20 - 12 / 4 + 1",
+    "choices": [
+      "9",
+      "5",
+      "18",
+      "3"
+    ],
+    "correct_index": 2,
+    "explanation": "Divide first: 12 / 4 = 3, then work left to right: 20 - 3 + 1 = 18. The choice 3 wrongly subtracts and adds before dividing, and 5 mishandles the order of the final two operations.",
+    "status": "verified",
+    "item_family_id": "mk.b35.ooo-mixed-operations"
+  },
+  {
+    "external_key": "MK-B35-058",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 2,
+    "stem": "Evaluate: 3 + 4^2",
+    "choices": [
+      "11",
+      "49",
+      "14",
+      "19"
+    ],
+    "correct_index": 3,
+    "explanation": "Exponents come before addition, so 4^2 = 16 and then 3 + 16 = 19. The choice 49 adds first to get 7 and then squares it, and 14 multiplies 4 by 2 instead of squaring.",
+    "status": "verified",
+    "item_family_id": "mk.b35.ooo-exponent-add"
+  },
+  {
+    "external_key": "MK-B35-059",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 3,
+    "stem": "Evaluate: 2 * (6 - 1)^2 - 4",
+    "choices": [
+      "46",
+      "50",
+      "21",
+      "96"
+    ],
+    "correct_index": 0,
+    "explanation": "Parentheses first: 6 - 1 = 5, then the exponent: 5^2 = 25, then 2 * 25 = 50, and finally 50 - 4 = 46. The choice 50 forgets the final subtraction, and 96 squares 2*5 = 10 instead of squaring only the 5.",
+    "status": "verified",
+    "item_family_id": "mk.b35.ooo-nested-exponent"
+  },
+  {
+    "external_key": "MK-B35-060",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 3,
+    "stem": "Evaluate: (18 / 3 + 1) * 2 - 5",
+    "choices": [
+      "14",
+      "7",
+      "19",
+      "9"
+    ],
+    "correct_index": 3,
+    "explanation": "Inside the parentheses, divide first: 18 / 3 = 6, then 6 + 1 = 7; then 7 * 2 = 14 and 14 - 5 = 9. The choice 19 ignores the final subtraction order, and 7 stops inside the parentheses.",
+    "status": "verified",
+    "item_family_id": "mk.b35.ooo-grouped-division"
+  }
+]

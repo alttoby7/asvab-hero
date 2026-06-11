@@ -1,0 +1,1022 @@
+[
+  {
+    "external_key": "WK-B36-001",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "RAPID most nearly means:",
+    "choices": [
+      "fast",
+      "quiet",
+      "wide",
+      "heavy"
+    ],
+    "correct_index": 0,
+    "explanation": "RAPID means happening quickly or moving with great speed, so 'fast' is the closest synonym. 'Quiet' describes sound, not speed, and 'wide' describes width, neither of which relates to how quickly something moves.",
+    "status": "verified",
+    "item_family_id": "wk.headword::rapid"
+  },
+  {
+    "external_key": "WK-B36-002",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "WEARY most nearly means:",
+    "choices": [
+      "curious",
+      "excited",
+      "tired",
+      "angry"
+    ],
+    "correct_index": 2,
+    "explanation": "WEARY means feeling very tired or worn out, so 'tired' is the best match. 'Excited' is nearly the opposite feeling, and 'angry' describes a mood of irritation rather than fatigue.",
+    "status": "verified",
+    "item_family_id": "wk.headword::weary"
+  },
+  {
+    "external_key": "WK-B36-003",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "REPAIR most nearly means:",
+    "choices": [
+      "fix",
+      "hide",
+      "sell",
+      "destroy"
+    ],
+    "correct_index": 0,
+    "explanation": "REPAIR means to restore something to working order, so 'fix' is the correct synonym. 'Destroy' is the opposite action, and 'hide' simply means to conceal, not to mend.",
+    "status": "verified",
+    "item_family_id": "wk.headword::repair"
+  },
+  {
+    "external_key": "WK-B36-004",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "VIGILANT most nearly means:",
+    "choices": [
+      "careless",
+      "exhausted",
+      "cheerful",
+      "watchful"
+    ],
+    "correct_index": 3,
+    "explanation": "VIGILANT means alert and keenly watchful, so 'watchful' is the closest synonym. 'Careless' is the opposite of being alert, and 'cheerful' describes a happy mood rather than attentiveness.",
+    "status": "verified",
+    "item_family_id": "wk.headword::vigilant"
+  },
+  {
+    "external_key": "WK-B36-005",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "DILIGENT most nearly means:",
+    "choices": [
+      "hardworking",
+      "forgetful",
+      "wealthy",
+      "rude"
+    ],
+    "correct_index": 0,
+    "explanation": "DILIGENT means showing careful and persistent effort, so 'hardworking' fits best. 'Forgetful' suggests the opposite of careful attention, and 'wealthy' describes money rather than effort.",
+    "status": "verified",
+    "item_family_id": "wk.headword::diligent"
+  },
+  {
+    "external_key": "WK-B36-006",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "CANDID most nearly means:",
+    "choices": [
+      "delicate",
+      "frank",
+      "secretive",
+      "loud"
+    ],
+    "correct_index": 1,
+    "explanation": "CANDID means honest and straightforward in speech, so 'frank' is the best synonym. 'Secretive' is the opposite of being open, and 'delicate' refers to fragility, not honesty.",
+    "status": "verified",
+    "item_family_id": "wk.headword::candid"
+  },
+  {
+    "external_key": "WK-B36-007",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "LACONIC most nearly means:",
+    "choices": [
+      "lazy",
+      "talkative",
+      "brief",
+      "joyful"
+    ],
+    "correct_index": 2,
+    "explanation": "LACONIC describes using very few words, so 'brief' is the closest match. 'Talkative' is the direct opposite, and 'lazy' refers to a lack of effort rather than a sparing use of words.",
+    "status": "verified",
+    "item_family_id": "wk.headword::laconic"
+  },
+  {
+    "external_key": "WK-B36-008",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "PERFIDIOUS most nearly means:",
+    "choices": [
+      "generous",
+      "treacherous",
+      "timid",
+      "loyal"
+    ],
+    "correct_index": 1,
+    "explanation": "PERFIDIOUS means disloyal or deceitful, so 'treacherous' is the correct synonym. 'Loyal' is its opposite, and 'generous' describes giving freely, which has nothing to do with betrayal.",
+    "status": "verified",
+    "item_family_id": "wk.headword::perfidious"
+  },
+  {
+    "external_key": "WK-B36-009",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "EPHEMERAL most nearly means:",
+    "choices": [
+      "permanent",
+      "expensive",
+      "fleeting",
+      "enormous"
+    ],
+    "correct_index": 2,
+    "explanation": "EPHEMERAL means lasting only a very short time, so 'fleeting' is the best match. 'Permanent' is the opposite, and 'enormous' refers to size rather than duration.",
+    "status": "verified",
+    "item_family_id": "wk.headword::ephemeral"
+  },
+  {
+    "external_key": "WK-B36-010",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "AUSTERE most nearly means:",
+    "choices": [
+      "wealthy",
+      "colorful",
+      "playful",
+      "stern"
+    ],
+    "correct_index": 3,
+    "explanation": "AUSTERE means severe or plain in manner or appearance, so 'stern' is the closest synonym. 'Playful' suggests a light, fun manner that is the opposite, and 'colorful' describes vivid decoration rather than severity.",
+    "status": "verified",
+    "item_family_id": "wk.headword::austere"
+  },
+  {
+    "external_key": "WK-B36-011",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of ANCIENT is:",
+    "choices": [
+      "distant",
+      "broken",
+      "modern",
+      "dusty"
+    ],
+    "correct_index": 2,
+    "explanation": "ANCIENT means very old, so its opposite is 'modern,' meaning recent or current. 'Dusty' and 'broken' might describe an old object but are not opposites of being old.",
+    "status": "verified",
+    "item_family_id": "wk.headword::ancient"
+  },
+  {
+    "external_key": "WK-B36-012",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of EXPAND is:",
+    "choices": [
+      "shrink",
+      "repair",
+      "stretch",
+      "color"
+    ],
+    "correct_index": 0,
+    "explanation": "EXPAND means to grow larger, so its opposite is 'shrink,' meaning to grow smaller. 'Stretch' is a near synonym of expand, not an antonym, and 'repair' is unrelated to size.",
+    "status": "verified",
+    "item_family_id": "wk.headword::expand"
+  },
+  {
+    "external_key": "WK-B36-013",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of PERMIT is:",
+    "choices": [
+      "forbid",
+      "allow",
+      "request",
+      "delay"
+    ],
+    "correct_index": 0,
+    "explanation": "PERMIT means to allow, so its opposite is 'forbid,' meaning to refuse to allow. 'Allow' is a synonym, not an antonym, and 'delay' means to postpone, which is unrelated.",
+    "status": "verified",
+    "item_family_id": "wk.headword::permit"
+  },
+  {
+    "external_key": "WK-B36-014",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of GENEROUS is:",
+    "choices": [
+      "stingy",
+      "kind",
+      "wealthy",
+      "honest"
+    ],
+    "correct_index": 0,
+    "explanation": "GENEROUS means willing to give freely, so its opposite is 'stingy,' meaning unwilling to share. 'Kind' is related to generosity rather than opposed to it, and 'wealthy' describes having money, not how one shares it.",
+    "status": "verified",
+    "item_family_id": "wk.headword::generous"
+  },
+  {
+    "external_key": "WK-B36-015",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of TRANQUIL is:",
+    "choices": [
+      "agitated",
+      "wide",
+      "peaceful",
+      "clear"
+    ],
+    "correct_index": 0,
+    "explanation": "TRANQUIL means calm and peaceful, so its opposite is 'agitated,' meaning disturbed or upset. 'Peaceful' is a synonym, and 'clear' refers to visibility, not a state of calm.",
+    "status": "verified",
+    "item_family_id": "wk.headword::tranquil"
+  },
+  {
+    "external_key": "WK-B36-016",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of ABUNDANT is:",
+    "choices": [
+      "plentiful",
+      "fresh",
+      "scarce",
+      "heavy"
+    ],
+    "correct_index": 2,
+    "explanation": "ABUNDANT means existing in large quantities, so its opposite is 'scarce,' meaning in short supply. 'Plentiful' is a synonym, and 'fresh' describes newness rather than amount.",
+    "status": "verified",
+    "item_family_id": "wk.headword::abundant"
+  },
+  {
+    "external_key": "WK-B36-017",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of BENEVOLENT is:",
+    "choices": [
+      "malicious",
+      "wealthy",
+      "kindly",
+      "talkative"
+    ],
+    "correct_index": 0,
+    "explanation": "BENEVOLENT means kind and well-meaning, so its opposite is 'malicious,' meaning intending to do harm. 'Kindly' is a synonym, and 'wealthy' is unrelated to one's intentions toward others.",
+    "status": "verified",
+    "item_family_id": "wk.headword::benevolent"
+  },
+  {
+    "external_key": "WK-B36-018",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of FRUGAL is:",
+    "choices": [
+      "thrifty",
+      "tidy",
+      "quiet",
+      "wasteful"
+    ],
+    "correct_index": 3,
+    "explanation": "FRUGAL means careful and economical with resources, so its opposite is 'wasteful,' meaning using things carelessly. 'Thrifty' is a synonym of frugal, and 'tidy' refers to neatness, not spending habits.",
+    "status": "verified",
+    "item_family_id": "wk.headword::frugal"
+  },
+  {
+    "external_key": "WK-B36-019",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of OBSCURE is:",
+    "choices": [
+      "clear",
+      "hidden",
+      "narrow",
+      "ancient"
+    ],
+    "correct_index": 0,
+    "explanation": "OBSCURE means unclear or hard to understand, so its opposite is 'clear.' 'Hidden' is close in meaning to obscure rather than opposite, and 'ancient' describes age, not clarity.",
+    "status": "verified",
+    "item_family_id": "wk.headword::obscure"
+  },
+  {
+    "external_key": "WK-B36-020",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of VERBOSE is:",
+    "choices": [
+      "rapid",
+      "wordy",
+      "honest",
+      "concise"
+    ],
+    "correct_index": 3,
+    "explanation": "VERBOSE means using more words than needed, so its opposite is 'concise,' meaning brief and to the point. 'Wordy' is a synonym, and 'honest' refers to truthfulness, not length of speech.",
+    "status": "verified",
+    "item_family_id": "wk.headword::verbose"
+  },
+  {
+    "external_key": "WK-B36-021",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "Because the road was BARREN, no crops or trees grew along it. In this sentence, BARREN most nearly means:",
+    "choices": [
+      "curved",
+      "crowded",
+      "empty",
+      "muddy"
+    ],
+    "correct_index": 2,
+    "explanation": "The clue 'no crops or trees grew' shows that BARREN means lacking growth or empty. 'Crowded' is the opposite of empty, and 'muddy' describes wet soil that could still support plants.",
+    "status": "verified",
+    "item_family_id": "wk.headword::barren"
+  },
+  {
+    "external_key": "WK-B36-022",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The coach gave a BRIEF talk that lasted only a minute. In this sentence, BRIEF most nearly means:",
+    "choices": [
+      "serious",
+      "short",
+      "funny",
+      "loud"
+    ],
+    "correct_index": 1,
+    "explanation": "The clue 'lasted only a minute' tells you BRIEF means short in duration. 'Loud' describes volume, and 'serious' describes tone, neither of which matches the length cue.",
+    "status": "verified",
+    "item_family_id": "wk.headword::brief"
+  },
+  {
+    "external_key": "WK-B36-023",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The soup was so BLAND that we added salt and pepper for flavor. In this sentence, BLAND most nearly means:",
+    "choices": [
+      "tasteless",
+      "frozen",
+      "expensive",
+      "spicy"
+    ],
+    "correct_index": 0,
+    "explanation": "Adding salt and pepper 'for flavor' signals that BLAND means lacking flavor, or tasteless. 'Spicy' is the opposite, and 'frozen' describes temperature rather than taste.",
+    "status": "verified",
+    "item_family_id": "wk.headword::bland"
+  },
+  {
+    "external_key": "WK-B36-024",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The witness gave a CREDIBLE account, so the jury believed every word. In this sentence, CREDIBLE most nearly means:",
+    "choices": [
+      "angry",
+      "confusing",
+      "believable",
+      "lengthy"
+    ],
+    "correct_index": 2,
+    "explanation": "Because the jury 'believed every word,' CREDIBLE must mean believable or trustworthy. 'Confusing' would make the account hard to believe, the opposite of the cue, and 'lengthy' refers to length, not trustworthiness.",
+    "status": "verified",
+    "item_family_id": "wk.headword::credible"
+  },
+  {
+    "external_key": "WK-B36-025",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "Despite the storm, the captain remained COMPOSED and calmly steered the ship. In this sentence, COMPOSED most nearly means:",
+    "choices": [
+      "wet",
+      "tired",
+      "panicked",
+      "calm"
+    ],
+    "correct_index": 3,
+    "explanation": "The word 'calmly' right after COMPOSED shows it means calm and self-controlled. 'Panicked' is the opposite reaction, and 'wet' simply describes a condition from the storm, not the captain's state of mind.",
+    "status": "verified",
+    "item_family_id": "wk.headword::composed"
+  },
+  {
+    "external_key": "WK-B36-026",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The instructions were so AMBIGUOUS that no two students understood them the same way. In this sentence, AMBIGUOUS most nearly means:",
+    "choices": [
+      "unclear",
+      "brief",
+      "official",
+      "boring"
+    ],
+    "correct_index": 0,
+    "explanation": "If 'no two students understood them the same way,' the instructions had more than one possible meaning, so AMBIGUOUS means unclear or open to interpretation. 'Brief' refers to shortness, and 'official' refers to authority, neither matching the cue.",
+    "status": "verified",
+    "item_family_id": "wk.headword::ambiguous"
+  },
+  {
+    "external_key": "WK-B36-027",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The mechanic was METICULOUS, checking every bolt twice before approving the engine. In this sentence, METICULOUS most nearly means:",
+    "choices": [
+      "careless",
+      "extremely careful",
+      "friendly",
+      "impatient"
+    ],
+    "correct_index": 1,
+    "explanation": "Checking 'every bolt twice' shows that METICULOUS means extremely careful and precise about details. 'Careless' and 'impatient' both describe the opposite of that thorough behavior.",
+    "status": "verified",
+    "item_family_id": "wk.headword::meticulous"
+  },
+  {
+    "external_key": "WK-B36-028",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "Her PRUDENT decision to save money meant she had funds ready for the emergency. In this sentence, PRUDENT most nearly means:",
+    "choices": [
+      "reckless",
+      "sudden",
+      "wise",
+      "selfish"
+    ],
+    "correct_index": 2,
+    "explanation": "Saving money so funds were ready shows PRUDENT means showing good judgment, or wise. 'Reckless' would describe a careless choice, the opposite of the cue, and 'sudden' refers to timing, not judgment.",
+    "status": "verified",
+    "item_family_id": "wk.headword::prudent"
+  },
+  {
+    "external_key": "WK-B36-029",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The general's TENACIOUS troops refused to retreat even after days of fighting. In this sentence, TENACIOUS most nearly means:",
+    "choices": [
+      "well-rested",
+      "persistent",
+      "frightened",
+      "cheerful"
+    ],
+    "correct_index": 1,
+    "explanation": "Refusing to retreat after days of fighting shows TENACIOUS means holding firmly, or persistent. 'Frightened' would lead to retreat, the opposite of the cue, and 'well-rested' describes physical condition, not determination.",
+    "status": "verified",
+    "item_family_id": "wk.headword::tenacious"
+  },
+  {
+    "external_key": "WK-B36-030",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The speaker's ESOTERIC remarks made sense only to the few experts in the room. In this sentence, ESOTERIC most nearly means:",
+    "choices": [
+      "very loud",
+      "deeply funny",
+      "understood by few",
+      "perfectly clear"
+    ],
+    "correct_index": 2,
+    "explanation": "Making sense 'only to the few experts' shows ESOTERIC means understood by a small specialized group. 'Perfectly clear' is the opposite, since most listeners did not understand, and 'very loud' refers to volume, not difficulty.",
+    "status": "verified",
+    "item_family_id": "wk.headword::esoteric"
+  },
+  {
+    "external_key": "WK-B36-031",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word SPECTATOR most nearly means:",
+    "choices": [
+      "one who speaks",
+      "one who watches",
+      "one who builds",
+      "one who travels"
+    ],
+    "correct_index": 1,
+    "explanation": "SPECTATOR comes from the Latin root SPECT meaning 'to look' (same root as INSPECT and SPECTACLE), so a spectator is one who watches. 'One who speaks' relates to the root DICT, and 'one who builds' is unrelated to looking.",
+    "status": "verified",
+    "item_family_id": "wk.headword::spectator"
+  },
+  {
+    "external_key": "WK-B36-032",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word BENEFIT most nearly means:",
+    "choices": [
+      "a loud noise",
+      "a heavy weight",
+      "a harm",
+      "a good or helpful result"
+    ],
+    "correct_index": 3,
+    "explanation": "BENEFIT contains the Latin root BENE meaning 'good or well' (same root as BENEFICIAL and BENEVOLENT), so a benefit is a good or helpful result. 'A harm' is the opposite, tied to the root MAL meaning bad.",
+    "status": "verified",
+    "item_family_id": "wk.headword::benefit"
+  },
+  {
+    "external_key": "WK-B36-033",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word DICTATE most nearly means:",
+    "choices": [
+      "to build up",
+      "to carry away",
+      "to look closely",
+      "to speak or command"
+    ],
+    "correct_index": 3,
+    "explanation": "DICTATE comes from the Latin root DICT meaning 'to say or speak' (same root as PREDICT and CONTRADICT), so to dictate is to speak commands. 'To look closely' belongs to the root SPECT, not DICT.",
+    "status": "verified",
+    "item_family_id": "wk.headword::dictate"
+  },
+  {
+    "external_key": "WK-B36-034",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word CHRONICLE most nearly means:",
+    "choices": [
+      "a type of weapon",
+      "a musical instrument",
+      "a map of a region",
+      "a record of events in time order"
+    ],
+    "correct_index": 3,
+    "explanation": "CHRONICLE comes from the Greek root CHRON meaning 'time' (same root as CHRONOLOGY and SYNCHRONIZE), so a chronicle records events in the order they happened. 'A map of a region' relates to geography, not time.",
+    "status": "verified",
+    "item_family_id": "wk.headword::chronicle"
+  },
+  {
+    "external_key": "WK-B36-035",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word TERRAIN most nearly means:",
+    "choices": [
+      "a strong wind",
+      "a bright light",
+      "a stretch of land",
+      "a body of water"
+    ],
+    "correct_index": 2,
+    "explanation": "TERRAIN comes from the Latin root TERRA meaning 'earth or land' (same root as TERRITORY and TERRESTRIAL), so terrain is a stretch of land. 'A body of water' relates to the root AQUA, not TERRA.",
+    "status": "verified",
+    "item_family_id": "wk.headword::terrain"
+  },
+  {
+    "external_key": "WK-B36-036",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word BENEDICTION most nearly means:",
+    "choices": [
+      "a written law",
+      "a blessing",
+      "a curse",
+      "a long journey"
+    ],
+    "correct_index": 1,
+    "explanation": "BENEDICTION joins BENE 'good' with DICT 'to speak,' so it literally means good words spoken over someone, that is, a blessing. 'A curse' is the opposite, combining the 'bad' sense with speaking, as in MALEDICTION.",
+    "status": "verified",
+    "item_family_id": "wk.headword::benediction"
+  },
+  {
+    "external_key": "WK-B36-037",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word OMNISCIENT most nearly means:",
+    "choices": [
+      "always moving",
+      "knowing everything",
+      "easily broken",
+      "rarely seen"
+    ],
+    "correct_index": 1,
+    "explanation": "OMNISCIENT joins the root OMNI meaning 'all' with SCI meaning 'to know' (as in SCIENCE), so it means knowing everything. 'Always moving' confuses OMNI with motion, but the root here is about knowledge, not movement.",
+    "status": "verified",
+    "item_family_id": "wk.headword::omniscient"
+  },
+  {
+    "external_key": "WK-B36-038",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word MAGNANIMOUS most nearly means:",
+    "choices": [
+      "very small",
+      "generous and noble",
+      "filled with fear",
+      "easily angered"
+    ],
+    "correct_index": 1,
+    "explanation": "MAGNANIMOUS joins MAGN meaning 'great or large' with ANIM meaning 'spirit or mind,' giving the sense of a great spirit, that is, generous and noble. 'Very small' contradicts the MAGN root, which means large.",
+    "status": "verified",
+    "item_family_id": "wk.headword::magnanimous"
+  },
+  {
+    "external_key": "WK-B36-039",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word VERIFY most nearly means:",
+    "choices": [
+      "to confirm as true",
+      "to hide carefully",
+      "to make larger",
+      "to break apart"
+    ],
+    "correct_index": 0,
+    "explanation": "VERIFY comes from the Latin root VER meaning 'true' (same root as VERDICT and VERACITY), so to verify is to confirm something as true. 'To hide carefully' is unrelated to truth and would actually conceal facts.",
+    "status": "verified",
+    "item_family_id": "wk.headword::verify"
+  },
+  {
+    "external_key": "WK-B36-040",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word CORDIAL most nearly means:",
+    "choices": [
+      "cold and distant",
+      "loud and rough",
+      "weak and faint",
+      "warm and friendly"
+    ],
+    "correct_index": 3,
+    "explanation": "CORDIAL comes from the Latin root COR meaning 'heart' (same root as CORE), so something cordial is heartfelt, warm, and friendly. 'Cold and distant' is the opposite of a heartfelt manner.",
+    "status": "verified",
+    "item_family_id": "wk.headword::cordial"
+  },
+  {
+    "external_key": "WK-B36-041",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word PREVIEW most nearly means:",
+    "choices": [
+      "a view that is wrong",
+      "a view that is hidden",
+      "a view seen afterward",
+      "a view seen beforehand"
+    ],
+    "correct_index": 3,
+    "explanation": "The prefix PRE- means 'before,' so a PREVIEW is a viewing that happens beforehand. 'A view seen afterward' would use the prefix POST-, meaning after, which is the opposite.",
+    "status": "verified",
+    "item_family_id": "wk.headword::preview"
+  },
+  {
+    "external_key": "WK-B36-042",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word MISLEAD most nearly means:",
+    "choices": [
+      "to follow closely",
+      "to lead wrongly",
+      "to guide correctly",
+      "to stop moving"
+    ],
+    "correct_index": 1,
+    "explanation": "The prefix MIS- means 'wrongly or badly,' so to MISLEAD is to lead someone wrongly. 'To guide correctly' is the opposite, since the MIS- prefix signals error.",
+    "status": "verified",
+    "item_family_id": "wk.headword::mislead"
+  },
+  {
+    "external_key": "WK-B36-043",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word FEARLESS most nearly means:",
+    "choices": [
+      "without fear",
+      "easily afraid",
+      "full of fear",
+      "causing fear"
+    ],
+    "correct_index": 0,
+    "explanation": "The suffix -LESS means 'without,' so FEARLESS means without fear, or brave. 'Full of fear' would use the suffix -FUL, which means full of, the opposite of -less.",
+    "status": "verified",
+    "item_family_id": "wk.headword::fearless"
+  },
+  {
+    "external_key": "WK-B36-044",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word MALFUNCTION most nearly means:",
+    "choices": [
+      "to speed up",
+      "to work badly or fail",
+      "to start up",
+      "to work perfectly"
+    ],
+    "correct_index": 1,
+    "explanation": "The prefix MAL- means 'bad or badly,' so to MALFUNCTION is to work badly or fail. 'To work perfectly' is the opposite, since MAL- always signals something wrong.",
+    "status": "verified",
+    "item_family_id": "wk.headword::malfunction"
+  },
+  {
+    "external_key": "WK-B36-045",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word ANTEDATE most nearly means:",
+    "choices": [
+      "to mark the present day",
+      "to cancel a date",
+      "to come after in time",
+      "to come before in time"
+    ],
+    "correct_index": 3,
+    "explanation": "The prefix ANTE- means 'before,' so to ANTEDATE is to come before something in time. 'To come after in time' would use the prefix POST-, which is the opposite of ANTE-.",
+    "status": "verified",
+    "item_family_id": "wk.headword::antedate"
+  },
+  {
+    "external_key": "WK-B36-046",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word SUBMERGE most nearly means:",
+    "choices": [
+      "to lift above water",
+      "to sink below the surface",
+      "to float freely",
+      "to dry out"
+    ],
+    "correct_index": 1,
+    "explanation": "The prefix SUB- means 'under or below,' so to SUBMERGE is to put something below the surface. 'To lift above water' is the opposite, since SUB- always points downward or beneath.",
+    "status": "verified",
+    "item_family_id": "wk.headword::submerge"
+  },
+  {
+    "external_key": "WK-B36-047",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word INCREDULOUS most nearly means:",
+    "choices": [
+      "willing to believe",
+      "unwilling to believe",
+      "very generous",
+      "deeply confused"
+    ],
+    "correct_index": 1,
+    "explanation": "The prefix IN- means 'not,' attached to the root CRED meaning 'believe,' so INCREDULOUS means not willing to believe, or doubtful. 'Willing to believe' is the opposite, describing someone credulous.",
+    "status": "verified",
+    "item_family_id": "wk.headword::incredulous"
+  },
+  {
+    "external_key": "WK-B36-048",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word INTERVENE most nearly means:",
+    "choices": [
+      "to finish quickly",
+      "to stay completely away",
+      "to come between to take part",
+      "to repeat an action"
+    ],
+    "correct_index": 2,
+    "explanation": "The prefix INTER- means 'between or among,' combined with the root VEN meaning 'to come,' so to INTERVENE is to come between in a situation. 'To stay completely away' is the opposite of coming between parties.",
+    "status": "verified",
+    "item_family_id": "wk.headword::intervene"
+  },
+  {
+    "external_key": "WK-B36-049",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word CIRCUMVENT most nearly means:",
+    "choices": [
+      "to measure exactly",
+      "to repair fully",
+      "to go around or avoid",
+      "to drive straight through"
+    ],
+    "correct_index": 2,
+    "explanation": "The prefix CIRCUM- means 'around,' joined with the root VEN meaning 'to come or go,' so to CIRCUMVENT is to go around an obstacle and avoid it. 'To drive straight through' is the opposite of going around.",
+    "status": "verified",
+    "item_family_id": "wk.headword::circumvent"
+  },
+  {
+    "external_key": "WK-B36-050",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word RETROSPECT most nearly means:",
+    "choices": [
+      "a look back at the past",
+      "a sudden surprise",
+      "a careful measurement",
+      "a plan for the future"
+    ],
+    "correct_index": 0,
+    "explanation": "The prefix RETRO- means 'backward,' combined with the root SPECT meaning 'to look,' so RETROSPECT is a look back at the past. 'A plan for the future' is the opposite direction in time from looking backward.",
+    "status": "verified",
+    "item_family_id": "wk.headword::retrospect"
+  },
+  {
+    "external_key": "WK-B36-051",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In which sentence does TRUNK mean the main stem of a tree? She leaned the ladder against the TRUNK.",
+    "choices": [
+      "She packed her clothes in an old TRUNK.",
+      "An elephant lifted water with its TRUNK.",
+      "The thick TRUNK of the oak was rough with bark.",
+      "He stored the spare tire in the car's TRUNK."
+    ],
+    "correct_index": 2,
+    "explanation": "TRUNK has several meanings; here it means the woody main stem of a tree, shown by 'oak' and 'bark.' The storage chest, the elephant's nose, and the car compartment are other valid meanings of TRUNK that do not fit the tree sense.",
+    "status": "verified",
+    "item_family_id": "wk.headword::trunk"
+  },
+  {
+    "external_key": "WK-B36-052",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In which sentence does BARK mean the sound a dog makes?",
+    "choices": [
+      "They peeled the BARK to start the campfire.",
+      "Cinnamon comes from the BARK of a tree.",
+      "The puppy let out a sharp BARK at the mail carrier.",
+      "The rough BARK protected the tree from insects."
+    ],
+    "correct_index": 2,
+    "explanation": "BARK can mean a dog's sound or the outer covering of a tree; here 'puppy' and 'sharp' point to the animal sound. The other three sentences all use BARK as a tree's outer layer.",
+    "status": "verified",
+    "item_family_id": "wk.headword::bark"
+  },
+  {
+    "external_key": "WK-B36-053",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In which sentence does PITCH mean to throw a ball?",
+    "choices": [
+      "Workers spread tar and PITCH on the road.",
+      "The roof had a steep PITCH.",
+      "The singer hit a high PITCH.",
+      "She will PITCH the ball to the catcher."
+    ],
+    "correct_index": 3,
+    "explanation": "PITCH has many meanings; here it means to throw, shown by 'ball' and 'catcher.' The roof's slope, the musical tone, and the dark tar are separate meanings of PITCH that do not involve throwing.",
+    "status": "verified",
+    "item_family_id": "wk.headword::pitch"
+  },
+  {
+    "external_key": "WK-B36-054",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In which sentence does CURRENT mean a flow of water or air?",
+    "choices": [
+      "The CURRENT president gave a speech.",
+      "Her information was CURRENT and up to date.",
+      "Please read the CURRENT issue of the magazine.",
+      "The strong CURRENT pulled the swimmer downstream."
+    ],
+    "correct_index": 3,
+    "explanation": "CURRENT can mean a moving flow or 'present-day'; here 'pulled the swimmer downstream' shows it is a flow of water. The magazine issue, the up-to-date information, and the present president all use the 'present-day' meaning.",
+    "status": "verified",
+    "item_family_id": "wk.headword::current"
+  },
+  {
+    "external_key": "WK-B36-055",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In which sentence does TEMPER mean a tendency toward anger?",
+    "choices": [
+      "She tried to TEMPER her praise with caution.",
+      "The smith will TEMPER the blade over heat.",
+      "Workers TEMPER the steel to harden it.",
+      "He lost his TEMPER and shouted at the referee."
+    ],
+    "correct_index": 3,
+    "explanation": "TEMPER can mean an angry mood or the act of moderating or hardening; here 'shouted at the referee' shows the angry-mood meaning. Hardening steel, softening praise, and treating a blade all use the moderate-or-strengthen meaning.",
+    "status": "verified",
+    "item_family_id": "wk.headword::temper"
+  },
+  {
+    "external_key": "WK-B36-056",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In which sentence does STABLE mean steady and not likely to change?",
+    "choices": [
+      "The patient's condition is now STABLE.",
+      "The horses were led into the STABLE.",
+      "Hay was stored in the STABLE loft.",
+      "They cleaned the STABLE each morning."
+    ],
+    "correct_index": 0,
+    "explanation": "STABLE can be a building for horses or an adjective meaning steady; here 'condition is now' shows the steady meaning. The other three sentences all refer to the barn-like building that houses horses.",
+    "status": "verified",
+    "item_family_id": "wk.headword::stable"
+  },
+  {
+    "external_key": "WK-B36-057",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In which sentence does TENDER mean to formally offer something?",
+    "choices": [
+      "He spoke in a TENDER, caring voice.",
+      "The steak was juicy and TENDER.",
+      "The company will TENDER its resignation.",
+      "Her sunburned skin was TENDER to the touch."
+    ],
+    "correct_index": 2,
+    "explanation": "TENDER can mean soft, gentle, or, as a verb, to formally offer; here 'will TENDER its resignation' shows the formal-offer meaning. The juicy steak, the caring voice, and the sore skin all use the soft or gentle senses.",
+    "status": "verified",
+    "item_family_id": "wk.headword::tender"
+  },
+  {
+    "external_key": "WK-B36-058",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In which sentence does NOVEL mean new or unusual?",
+    "choices": [
+      "The author published her first NOVEL.",
+      "The engineers proposed a NOVEL solution.",
+      "She read a thrilling NOVEL on the train.",
+      "He borrowed a NOVEL from the library."
+    ],
+    "correct_index": 1,
+    "explanation": "NOVEL can be a long work of fiction or an adjective meaning new and original; here 'solution' with 'proposed' shows the new-or-unusual meaning. The other three sentences all use NOVEL as a book.",
+    "status": "verified",
+    "item_family_id": "wk.headword::novel"
+  },
+  {
+    "external_key": "WK-B36-059",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In which sentence does CHECK mean to slow or stop something?",
+    "choices": [
+      "He wrote a CHECK to pay the rent.",
+      "Please CHECK your answers before turning them in.",
+      "She wore a shirt with a red CHECK pattern.",
+      "The dam helped CHECK the flood waters."
+    ],
+    "correct_index": 3,
+    "explanation": "CHECK has several meanings; here 'the dam helped CHECK the flood waters' means to slow or hold back. The payment slip, the act of reviewing answers, and the cloth pattern are other distinct meanings of CHECK.",
+    "status": "verified",
+    "item_family_id": "wk.headword::check"
+  },
+  {
+    "external_key": "WK-B36-060",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In which sentence does TABLE mean to postpone discussion of something?",
+    "choices": [
+      "They set the dishes on the dining TABLE.",
+      "The committee voted to TABLE the proposal.",
+      "She wiped the kitchen TABLE clean.",
+      "He read the data from a TABLE of figures."
+    ],
+    "correct_index": 1,
+    "explanation": "TABLE can name a piece of furniture, a chart of data, or, as a verb, to set a matter aside for later; here 'TABLE the proposal' means to postpone it. The dining furniture, the chart of figures, and the kitchen surface are the other meanings.",
+    "status": "verified",
+    "item_family_id": "wk.headword::table"
+  }
+]

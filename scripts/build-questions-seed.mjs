@@ -41,6 +41,11 @@ const b30 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/
 const b31 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-31-ar.json'), 'utf8'));
 const b32 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-32-mk.json'), 'utf8'));
 const b33 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-33-pc.json'), 'utf8'));
+// AFQT depth from book practice-exam concept coverage (original items), 2026-06-10.
+const b34 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-34-ar.json'), 'utf8'));
+const b35 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-35-mk.json'), 'utf8'));
+const b36 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-36-wk.json'), 'utf8'));
+const b37 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-37-pc.json'), 'utf8'));
 const tags = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/question-tags.seed.json'), 'utf8'));
 const tagMap = new Map(tags.map(t => [t.external_key.toUpperCase(), t]));
 
@@ -186,6 +191,10 @@ const all = [
   ...normalize(b31, 'batch-31-ar'),
   ...normalize(b32, 'batch-32-mk'),
   ...normalize(b33, 'batch-33-pc'),
+  ...normalize(b34, 'batch-34-ar'),
+  ...normalize(b35, 'batch-35-mk'),
+  ...normalize(b36, 'batch-36-wk'),
+  ...normalize(b37, 'batch-37-pc'),
 ];
 
 const seen = new Set();

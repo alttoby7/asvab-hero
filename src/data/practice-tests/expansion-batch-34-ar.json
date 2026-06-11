@@ -1,0 +1,1022 @@
+[
+  {
+    "external_key": "AR-B34-001",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A supply room has 9 boxes, each holding 14 rations. How many rations are there in total?",
+    "choices": [
+      "135",
+      "126",
+      "112",
+      "121"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiply boxes by rations per box: 9 × 14 = 126. 112 uses 8 boxes, 135 uses 15 per box, and 121 is an arithmetic slip.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::single-step-multiplication"
+  },
+  {
+    "external_key": "AR-B34-002",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A recruiter drives 276 miles over 4 days, covering the same distance each day. How many miles did he drive per day?",
+    "choices": [
+      "69",
+      "72",
+      "66",
+      "70"
+    ],
+    "correct_index": 0,
+    "explanation": "Divide total by days: 276 ÷ 4 = 69 miles per day. 72 uses 288 miles, 66 uses 264, and 70 is a rounding error.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::single-step-division"
+  },
+  {
+    "external_key": "AR-B34-003",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "How many ounces are in 5 pounds?",
+    "choices": [
+      "60 ounces",
+      "96 ounces",
+      "80 ounces",
+      "75 ounces"
+    ],
+    "correct_index": 2,
+    "explanation": "1 pound = 16 ounces, so 5 × 16 = 80 ounces. 60 uses 12 oz/lb, 96 uses 6 pounds, and 75 uses 15 oz/lb.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::unit-conversion-weight"
+  },
+  {
+    "external_key": "AR-B34-004",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A canteen costs $8.75. How much do 4 canteens cost?",
+    "choices": [
+      "$36.00",
+      "$35.00",
+      "$34.00",
+      "$32.75"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiply price by quantity: 8.75 × 4 = $35.00. $34.00 uses $8.50 each, $36.00 uses $9.00 each, and $32.75 is a slip.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::money-multiplication"
+  },
+  {
+    "external_key": "AR-B34-005",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A barracks has 7 rooms with 6 bunks each and 1 room with 4 bunks. How many bunks are there in all?",
+    "choices": [
+      "44",
+      "48",
+      "46",
+      "42"
+    ],
+    "correct_index": 2,
+    "explanation": "Compute 7 × 6 = 42, then add 4: 42 + 4 = 46. 42 forgets the extra room, 48 adds 6 instead of 4, and 44 miscounts.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::two-step-add-multiply"
+  },
+  {
+    "external_key": "AR-B34-006",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A soldier buys gear totaling $164 and pays with two $100 bills. How much change does she receive?",
+    "choices": [
+      "$36",
+      "$46",
+      "$26",
+      "$34"
+    ],
+    "correct_index": 0,
+    "explanation": "She pays $200, so change is 200 − 164 = $36. $46 subtracts from $210, $26 subtracts from $190, and $34 is an arithmetic slip.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::making-change"
+  },
+  {
+    "external_key": "AR-B34-007",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A truck's tank holds 30 gallons. After a trip it has 3/5 of a tank left. How many gallons remain?",
+    "choices": [
+      "20 gallons",
+      "15 gallons",
+      "18 gallons",
+      "12 gallons"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply: 30 × 3/5 = 18 gallons. 12 finds the empty portion (2/5), 15 uses 1/2, and 20 uses 2/3.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::fraction-of-quantity"
+  },
+  {
+    "external_key": "AR-B34-008",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A warehouse received 1,248 helmets and shipped out 879. How many helmets remain in the warehouse?",
+    "choices": [
+      "359",
+      "431",
+      "379",
+      "369"
+    ],
+    "correct_index": 3,
+    "explanation": "Subtract: 1248 − 879 = 369. 379 and 359 are borrowing errors, and 431 results from subtracting incorrectly in the hundreds place.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::multi-digit-subtraction"
+  },
+  {
+    "external_key": "AR-B34-009",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A mess hall serves 3 meals a day to 220 troops. Each meal uses 2 rolls per troop. How many rolls are used in one day?",
+    "choices": [
+      "440",
+      "1,320",
+      "1,100",
+      "660"
+    ],
+    "correct_index": 1,
+    "explanation": "Rolls per day = 220 × 2 × 3 = 1,320. 660 multiplies 220 × 3 only, 440 multiplies 220 × 2 only, and 1,100 uses 5 instead of 6 total rolls per troop.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::three-factor-product"
+  },
+  {
+    "external_key": "AR-B34-010",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A field kit weighs 3 pounds 9 ounces. What is the total weight of 8 identical kits, in pounds and ounces?",
+    "choices": [
+      "29 lb 0 oz",
+      "28 lb 0 oz",
+      "28 lb 8 oz",
+      "27 lb 8 oz"
+    ],
+    "correct_index": 2,
+    "explanation": "Each kit is 3×16+9 = 57 ounces; 57 × 8 = 456 ounces = 28 lb 8 oz (456 ÷ 16 = 28 r 8). 28 lb 0 oz and 27 lb 8 oz drop or mishandle the ounce remainder, and 29 lb 0 oz over-rounds.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::mixed-unit-multiplication"
+  },
+  {
+    "external_key": "AR-B34-011",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A convoy travels at 50 miles per hour for 3 hours. How far does it travel?",
+    "choices": [
+      "150 miles",
+      "153 miles",
+      "120 miles",
+      "100 miles"
+    ],
+    "correct_index": 0,
+    "explanation": "Distance = rate × time = 50 × 3 = 150 miles. 100 uses 2 hours, 120 uses 40 mph, and 153 is a slip.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::basic-distance"
+  },
+  {
+    "external_key": "AR-B34-012",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A jet covers 600 miles in 2 hours. What is its average speed?",
+    "choices": [
+      "1,200 mph",
+      "300 mph",
+      "350 mph",
+      "250 mph"
+    ],
+    "correct_index": 1,
+    "explanation": "Speed = distance ÷ time = 600 ÷ 2 = 300 mph. 1,200 multiplies instead of divides, 250 and 350 are arithmetic errors.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::basic-rate"
+  },
+  {
+    "external_key": "AR-B34-013",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A marcher walks at 4 miles per hour. How long does it take to walk 18 miles?",
+    "choices": [
+      "5 hours",
+      "3.5 hours",
+      "4.5 hours",
+      "4 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Time = distance ÷ rate = 18 ÷ 4 = 4.5 hours. 4 hours rounds down, 5 hours rounds up, and 3.5 uses the wrong division.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::basic-time"
+  },
+  {
+    "external_key": "AR-B34-014",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A patrol boat travels 45 miles downriver in 1.5 hours. At the same speed, how far will it travel in 4 hours?",
+    "choices": [
+      "150 miles",
+      "120 miles",
+      "180 miles",
+      "135 miles"
+    ],
+    "correct_index": 1,
+    "explanation": "Speed is 45 ÷ 1.5 = 30 mph, so in 4 hours it goes 30 × 4 = 120 miles. 135 uses 3 hours, 150 uses 37.5 mph, and 180 uses 45 mph.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::rate-then-distance"
+  },
+  {
+    "external_key": "AR-B34-015",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "Two trucks leave the same base traveling in opposite directions, one at 55 mph and one at 65 mph. How far apart are they after 2 hours?",
+    "choices": [
+      "220 miles",
+      "120 miles",
+      "240 miles",
+      "130 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "Their combined speed is 55 + 65 = 120 mph, so after 2 hours they are 120 × 2 = 240 miles apart. 120 forgets to multiply by time, 130 doubles only one truck, and 220 uses 110 mph.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::opposite-directions"
+  },
+  {
+    "external_key": "AR-B34-016",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A soldier runs the first 6 miles at 6 mph and the next 4 miles at 8 mph. What is the total time for the run?",
+    "choices": [
+      "1.25 hours",
+      "2 hours",
+      "1.75 hours",
+      "1.5 hours"
+    ],
+    "correct_index": 3,
+    "explanation": "Time = 6/6 + 4/8 = 1 + 0.5 = 1.5 hours. 1.75 mis-divides the second leg, 2 hours uses equal slow pace, and 1.25 drops part of the first leg.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::two-leg-time"
+  },
+  {
+    "external_key": "AR-B34-017",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A helicopter flies 240 miles to a target at 120 mph and returns over the same route at 80 mph. What is its average speed for the entire round trip?",
+    "choices": [
+      "90 mph",
+      "104 mph",
+      "96 mph",
+      "100 mph"
+    ],
+    "correct_index": 2,
+    "explanation": "Total distance is 480 miles; time out is 2 hours and back is 3 hours, totaling 5 hours, so average is 480 ÷ 5 = 96 mph. 100 mph wrongly averages the two speeds, while 104 and 90 come from mistimed legs.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::harmonic-average-speed"
+  },
+  {
+    "external_key": "AR-B34-018",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A scout leaves camp at 8 mph. Two hours later a second scout follows the same path at 12 mph. How many hours after the second scout starts will she catch the first?",
+    "choices": [
+      "5 hours",
+      "4 hours",
+      "6 hours",
+      "3 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "The first scout has a 16-mile head start (8 × 2); the gap closes at 12 − 8 = 4 mph, so 16 ÷ 4 = 4 hours. 3 and 5 hours mis-estimate the head start, and 6 hours uses a 2 mph closing rate.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::catch-up"
+  },
+  {
+    "external_key": "AR-B34-019",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A train travels 90 miles in 1 hour 30 minutes. At this rate, how long will it take to travel 300 miles?",
+    "choices": [
+      "4.5 hours",
+      "6 hours",
+      "5 hours",
+      "3.75 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Speed is 90 ÷ 1.5 = 60 mph, so 300 ÷ 60 = 5 hours. 4.5 hours uses the wrong rate, 6 hours uses 50 mph, and 3.75 hours uses 80 mph.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::rate-then-time"
+  },
+  {
+    "external_key": "AR-B34-020",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A squad needs 96 sandbags. They have already filled 38. How many more must they fill?",
+    "choices": [
+      "62",
+      "58",
+      "48",
+      "54"
+    ],
+    "correct_index": 1,
+    "explanation": "Subtract: 96 − 38 = 58. 62 subtracts from 100, 48 is a borrowing error, and 54 miscounts the tens.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::remaining-count"
+  },
+  {
+    "external_key": "AR-B34-021",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A soldier earns $15 per hour and works 8 hours. How much does she earn that day?",
+    "choices": [
+      "$115",
+      "$130",
+      "$110",
+      "$120"
+    ],
+    "correct_index": 3,
+    "explanation": "Multiply: 15 × 8 = $120. $110 uses 7 hours plus extra, $130 uses 9 hours-ish, and $115 is a slip.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::pay-calculation"
+  },
+  {
+    "external_key": "AR-B34-022",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A locker holds 24 magazines, each with 30 rounds. How many rounds are in the locker?",
+    "choices": [
+      "700",
+      "540",
+      "640",
+      "720"
+    ],
+    "correct_index": 3,
+    "explanation": "Multiply: 24 × 30 = 720 rounds. 540 uses 18 magazines, 640 and 700 are multiplication errors.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::total-from-units"
+  },
+  {
+    "external_key": "AR-B34-023",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A unit buys 5 radios at $84 each and 3 chargers at $22 each. What is the total cost?",
+    "choices": [
+      "$506",
+      "$420",
+      "$486",
+      "$472"
+    ],
+    "correct_index": 2,
+    "explanation": "Radios cost 5 × 84 = 420 and chargers 3 × 22 = 66, totaling 420 + 66 = $486. $420 forgets the chargers, $506 over-adds, and $472 mis-multiplies the chargers.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::combined-purchase"
+  },
+  {
+    "external_key": "AR-B34-024",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A platoon of 60 splits into 4 equal teams. Then 3 soldiers from each team are sent on a detail. How many soldiers remain across all teams?",
+    "choices": [
+      "42",
+      "48",
+      "57",
+      "45"
+    ],
+    "correct_index": 1,
+    "explanation": "Each team has 60 ÷ 4 = 15; after removing 3, each has 12, so 4 × 12 = 48 remain. 45 removes 15 total but mis-distributes, 57 removes only 3 total, and 42 removes 18.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::divide-then-subtract"
+  },
+  {
+    "external_key": "AR-B34-025",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A box of MREs costs $48 and feeds 12 people. What is the cost to feed 30 people at the same per-person rate?",
+    "choices": [
+      "$144",
+      "$96",
+      "$108",
+      "$120"
+    ],
+    "correct_index": 3,
+    "explanation": "Per-person cost is 48 ÷ 12 = $4, so 30 × 4 = $120. $96 uses 24 people, $108 uses 27, and $144 uses $4.80 per person.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::unit-rate-scaling"
+  },
+  {
+    "external_key": "AR-B34-026",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A contractor charges $250 for the first day of work and $180 for each additional day. What is the total charge for a 6-day job?",
+    "choices": [
+      "$1,330",
+      "$1,080",
+      "$1,500",
+      "$1,150"
+    ],
+    "correct_index": 3,
+    "explanation": "First day is $250 and the other 5 days cost 5 × 180 = 900, totaling 250 + 900 = $1,150. $1,500 charges $250 for all 6 days, $1,080 forgets the first day, and $1,330 charges $180 for 6 days plus extra.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::tiered-pricing"
+  },
+  {
+    "external_key": "AR-B34-027",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "Three recruits share a $1,500 bonus in the ratio 2:3:5. How much does the recruit with the largest share receive?",
+    "choices": [
+      "$500",
+      "$750",
+      "$450",
+      "$600"
+    ],
+    "correct_index": 1,
+    "explanation": "The parts total 2 + 3 + 5 = 10, so each part is 1500 ÷ 10 = $150; the largest share (5 parts) is 5 × 150 = $750. $450 is the 3-part share, $300-style $500 splits evenly, and $600 mis-assigns 4 parts.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::ratio-share-largest"
+  },
+  {
+    "external_key": "AR-B34-028",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A fuel depot starts with 4,000 gallons. It dispenses 350 gallons each day for 5 days, then receives a delivery of 1,200 gallons. How many gallons are in the depot afterward?",
+    "choices": [
+      "3,950 gallons",
+      "2,250 gallons",
+      "3,450 gallons",
+      "4,450 gallons"
+    ],
+    "correct_index": 2,
+    "explanation": "It dispenses 350 × 5 = 1,750, leaving 4000 − 1750 = 2,250; adding the delivery gives 2250 + 1200 = 3,450 gallons. 2,250 stops before the delivery, 3,950 subtracts only one day, and 4,450 adds the delivery without subtracting enough.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::multi-step-inventory"
+  },
+  {
+    "external_key": "AR-B34-029",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "What is 25% of 160?",
+    "choices": [
+      "45",
+      "32",
+      "35",
+      "40"
+    ],
+    "correct_index": 3,
+    "explanation": "25% is one quarter, so 160 ÷ 4 = 40. 32 finds 20%, 45 over-estimates, and 35 is a slip.",
+    "status": "verified",
+    "item_family_id": "ar.percent::basic-percent-of"
+  },
+  {
+    "external_key": "AR-B34-030",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "A test has 50 questions and a recruit answers 40 correctly. What percent did she get right?",
+    "choices": [
+      "85%",
+      "80%",
+      "75%",
+      "70%"
+    ],
+    "correct_index": 1,
+    "explanation": "40 ÷ 50 = 0.80 = 80%. 75% uses 37 or 38 correct, 85% over-estimates, and 70% uses 35 correct.",
+    "status": "verified",
+    "item_family_id": "ar.percent::percent-correct"
+  },
+  {
+    "external_key": "AR-B34-031",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "What is 10% of 230?",
+    "choices": [
+      "32",
+      "13",
+      "2.3",
+      "23"
+    ],
+    "correct_index": 3,
+    "explanation": "10% means dividing by 10: 230 ÷ 10 = 23. 2.3 finds 1%, 32 reverses digits, and 13 is unrelated.",
+    "status": "verified",
+    "item_family_id": "ar.percent::ten-percent"
+  },
+  {
+    "external_key": "AR-B34-032",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A $90 pair of boots is marked down 30%. What is the sale price?",
+    "choices": [
+      "$60",
+      "$27",
+      "$57",
+      "$63"
+    ],
+    "correct_index": 3,
+    "explanation": "The discount is 90 × 0.30 = $27, so the sale price is 90 − 27 = $63. $27 gives the discount amount itself, $60 uses a $30 discount, and $57 over-subtracts.",
+    "status": "verified",
+    "item_family_id": "ar.percent::discount-price"
+  },
+  {
+    "external_key": "AR-B34-033",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A unit had 240 members and grew by 15%. How many members does it have now?",
+    "choices": [
+      "276",
+      "255",
+      "264",
+      "288"
+    ],
+    "correct_index": 0,
+    "explanation": "The increase is 240 × 0.15 = 36, so the total is 240 + 36 = 276. 255 adds only 15, 264 uses a 10% increase, and 288 uses a 20% increase.",
+    "status": "verified",
+    "item_family_id": "ar.percent::percent-increase"
+  },
+  {
+    "external_key": "AR-B34-034",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "On a $250 purchase, the sales tax is 6%. What is the total cost including tax?",
+    "choices": [
+      "$265",
+      "$262",
+      "$256",
+      "$275"
+    ],
+    "correct_index": 0,
+    "explanation": "Tax is 250 × 0.06 = $15, so the total is 250 + 15 = $265. $256 adds only $6, $262 uses about 5%, and $275 uses 10%.",
+    "status": "verified",
+    "item_family_id": "ar.percent::sales-tax-total"
+  },
+  {
+    "external_key": "AR-B34-035",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A jacket priced at $120 is first marked up 20%, then later discounted 25% off the new price. What is the final price?",
+    "choices": [
+      "$114",
+      "$120",
+      "$108",
+      "$96"
+    ],
+    "correct_index": 2,
+    "explanation": "The markup gives 120 × 1.20 = $144; a 25% discount leaves 144 × 0.75 = $108. $120 wrongly assumes the changes cancel, $114 averages the percents, and $96 discounts the original price only.",
+    "status": "verified",
+    "item_family_id": "ar.percent::markup-then-discount"
+  },
+  {
+    "external_key": "AR-B34-036",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "After a 20% discount, a generator sells for $480. What was its original price?",
+    "choices": [
+      "$500",
+      "$620",
+      "$576",
+      "$600"
+    ],
+    "correct_index": 3,
+    "explanation": "The sale price is 80% of the original, so original = 480 ÷ 0.80 = $600. $576 mistakenly adds 20% to $480, $500 mis-divides, and $620 is a guess.",
+    "status": "verified",
+    "item_family_id": "ar.percent::reverse-discount"
+  },
+  {
+    "external_key": "AR-B34-037",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "Of 800 recruits, 35% chose the Army and 20% chose the Navy. How many chose neither?",
+    "choices": [
+      "360",
+      "280",
+      "320",
+      "440"
+    ],
+    "correct_index": 0,
+    "explanation": "Army and Navy together are 55%, leaving 45%; 800 × 0.45 = 360. 440 finds the 55% who chose one of the two, 280 uses 35%, and 320 uses 40%.",
+    "status": "verified",
+    "item_family_id": "ar.percent::remaining-percent"
+  },
+  {
+    "external_key": "AR-B34-038",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A squad has 3 officers for every 12 enlisted members. What is the ratio of officers to enlisted in simplest form?",
+    "choices": [
+      "1:5",
+      "3:12",
+      "1:3",
+      "1:4"
+    ],
+    "correct_index": 3,
+    "explanation": "Divide both by 3: 3:12 simplifies to 1:4. 1:3 mis-simplifies, 3:12 is not reduced, and 1:5 is wrong.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::simplify-ratio"
+  },
+  {
+    "external_key": "AR-B34-039",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A recipe uses 2 cups of flour for every 3 cups of water. How much water is needed for 6 cups of flour?",
+    "choices": [
+      "12 cups",
+      "9 cups",
+      "6 cups",
+      "8 cups"
+    ],
+    "correct_index": 1,
+    "explanation": "Flour tripled from 2 to 6, so water triples from 3 to 9 cups. 6 cups keeps water unchanged, 12 uses a factor of 4, and 8 is unrelated.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::scale-up"
+  },
+  {
+    "external_key": "AR-B34-040",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "If 4 batteries cost $12, how much do 7 batteries cost at the same rate?",
+    "choices": [
+      "$21",
+      "$28",
+      "$18",
+      "$24"
+    ],
+    "correct_index": 0,
+    "explanation": "Each battery costs 12 ÷ 4 = $3, so 7 × 3 = $21. $18 uses 6 batteries, $24 uses 8, and $28 uses $4 each.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::unit-price"
+  },
+  {
+    "external_key": "AR-B34-041",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "On a map, 1 inch represents 25 miles. How many miles apart are two bases that are 4.5 inches apart on the map?",
+    "choices": [
+      "105 miles",
+      "112.5 miles",
+      "125 miles",
+      "100 miles"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiply: 4.5 × 25 = 112.5 miles. 100 uses 4 inches, 125 uses 5 inches, and 105 is a slip.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::map-scale"
+  },
+  {
+    "external_key": "AR-B34-042",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "A blend mixes fuel and additive in a 9:1 ratio. How much additive is needed to make 50 gallons of blend?",
+    "choices": [
+      "9 gallons",
+      "4.5 gallons",
+      "10 gallons",
+      "5 gallons"
+    ],
+    "correct_index": 3,
+    "explanation": "The ratio has 9 + 1 = 10 parts, so additive is 1/10 of 50 = 5 gallons. 9 gallons gives the fuel-style part, 10 mis-counts parts, and 4.5 uses the wrong fraction.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::part-of-mixture"
+  },
+  {
+    "external_key": "AR-B34-043",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "If 6 workers can paint 4 fences, how many fences can 15 workers paint at the same rate?",
+    "choices": [
+      "9 fences",
+      "10 fences",
+      "12 fences",
+      "8 fences"
+    ],
+    "correct_index": 1,
+    "explanation": "Each worker paints 4 ÷ 6 = 2/3 of a fence, so 15 × 2/3 = 10 fences. 8 uses 12 workers, 12 ignores the rate, and 9 is a slip.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::worker-output"
+  },
+  {
+    "external_key": "AR-B34-044",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A bag of coins holds nickels and dimes in a 5:3 ratio for a total of 64 coins. How many dimes are in the bag?",
+    "choices": [
+      "24",
+      "21",
+      "32",
+      "40"
+    ],
+    "correct_index": 0,
+    "explanation": "The ratio has 5 + 3 = 8 parts, so each part is 64 ÷ 8 = 8 coins; dimes are 3 parts, 3 × 8 = 24. 40 gives the nickels, 32 splits evenly, and 21 mis-divides.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::ratio-from-total"
+  },
+  {
+    "external_key": "AR-B34-045",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A motor pool has cars and trucks in a 7:4 ratio. If there are 12 more cars than trucks, how many vehicles are there in total?",
+    "choices": [
+      "44",
+      "55",
+      "33",
+      "48"
+    ],
+    "correct_index": 0,
+    "explanation": "The difference is 7 − 4 = 3 parts equal to 12 vehicles, so each part is 4; total parts are 11, giving 11 × 4 = 44. 33 uses 3 per part, 55 uses 5 per part, and 48 mis-counts the parts.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::ratio-from-difference"
+  },
+  {
+    "external_key": "AR-B34-046",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A scale model uses a ratio of 1:48. If the model wingspan is 9 inches, what is the actual wingspan in feet?",
+    "choices": [
+      "48 feet",
+      "32 feet",
+      "30 feet",
+      "36 feet"
+    ],
+    "correct_index": 3,
+    "explanation": "Actual length is 9 × 48 = 432 inches; dividing by 12 gives 432 ÷ 12 = 36 feet. 32 mis-divides, 48 ignores the wingspan, and 30 is a slip.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::model-scale-feet"
+  },
+  {
+    "external_key": "AR-B34-047",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 1,
+    "stem": "What is the average of 12, 18, and 30?",
+    "choices": [
+      "18",
+      "24",
+      "20",
+      "22"
+    ],
+    "correct_index": 2,
+    "explanation": "Sum is 12 + 18 + 30 = 60; divide by 3 to get 20. 18 mis-adds, 22 and 24 are division errors.",
+    "status": "verified",
+    "item_family_id": "ar.averages::basic-mean-three"
+  },
+  {
+    "external_key": "AR-B34-048",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 1,
+    "stem": "A recruit's run times for 4 days are 28, 26, 30, and 24 minutes. What is the average time?",
+    "choices": [
+      "27 minutes",
+      "26 minutes",
+      "25 minutes",
+      "28 minutes"
+    ],
+    "correct_index": 0,
+    "explanation": "Sum is 28 + 26 + 30 + 24 = 108; 108 ÷ 4 = 27 minutes. 26 and 28 are off, and 25 under-divides.",
+    "status": "verified",
+    "item_family_id": "ar.averages::basic-mean-four"
+  },
+  {
+    "external_key": "AR-B34-049",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 1,
+    "stem": "Five crates weigh a total of 200 pounds. What is the average weight per crate?",
+    "choices": [
+      "50 pounds",
+      "45 pounds",
+      "40 pounds",
+      "35 pounds"
+    ],
+    "correct_index": 2,
+    "explanation": "Average = 200 ÷ 5 = 40 pounds. 45 and 35 are division errors, and 50 uses 4 crates.",
+    "status": "verified",
+    "item_family_id": "ar.averages::average-from-total"
+  },
+  {
+    "external_key": "AR-B34-050",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "A soldier scored 85, 90, and 92 on three drills. What score does she need on a fourth drill to average 90?",
+    "choices": [
+      "95",
+      "89",
+      "91",
+      "93"
+    ],
+    "correct_index": 3,
+    "explanation": "To average 90 over 4 drills she needs 360 total; she has 85 + 90 + 92 = 267, so she needs 360 − 267 = 93. 91 and 89 use the wrong total, and 95 over-shoots.",
+    "status": "verified",
+    "item_family_id": "ar.averages::find-missing-score"
+  },
+  {
+    "external_key": "AR-B34-051",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "The average weight of 6 packs is 22 pounds. A seventh pack weighing 36 pounds is added. What is the new average weight?",
+    "choices": [
+      "29 pounds",
+      "26 pounds",
+      "24 pounds",
+      "22 pounds"
+    ],
+    "correct_index": 2,
+    "explanation": "The first 6 packs total 6 × 22 = 132; adding 36 gives 168, and 168 ÷ 7 = 24 pounds. 22 ignores the new pack, 26 mis-divides, and 29 averages just two numbers.",
+    "status": "verified",
+    "item_family_id": "ar.averages::new-average-after-add"
+  },
+  {
+    "external_key": "AR-B34-052",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "A class of 10 students averaged 78 on a test, and a class of 15 students averaged 88. What is the combined average for all 25 students?",
+    "choices": [
+      "83",
+      "85",
+      "82",
+      "84"
+    ],
+    "correct_index": 3,
+    "explanation": "Total points are 10 × 78 + 15 × 88 = 780 + 1,320 = 2,100; dividing by 25 gives 84. 83 averages the two means evenly, while 85 and 82 are arithmetic slips.",
+    "status": "verified",
+    "item_family_id": "ar.averages::weighted-average-two-groups"
+  },
+  {
+    "external_key": "AR-B34-053",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 3,
+    "stem": "The average of four numbers is 50. Three of the numbers are 42, 55, and 61. What is the fourth number?",
+    "choices": [
+      "40",
+      "44",
+      "42",
+      "46"
+    ],
+    "correct_index": 2,
+    "explanation": "The four numbers total 4 × 50 = 200; the three given sum to 158, so the fourth is 200 − 158 = 42. 44, 46, and 40 come from using the wrong total of 200.",
+    "status": "verified",
+    "item_family_id": "ar.averages::missing-value-from-mean"
+  },
+  {
+    "external_key": "AR-B34-054",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 3,
+    "stem": "A driver averages 40 mph for the first 100 miles and 60 mph for the next 120 miles. What is her average speed for the whole trip?",
+    "choices": [
+      "48 mph",
+      "50 mph",
+      "44 mph",
+      "55 mph"
+    ],
+    "correct_index": 0,
+    "explanation": "Time is 100/40 + 120/60 = 2.5 + 2 = 4.5 hours for 220 miles, so 220 ÷ 4.5 ≈ 48 mph. 50 mph wrongly averages 40 and 60, while 44 and 55 mistime a leg.",
+    "status": "verified",
+    "item_family_id": "ar.averages::average-speed-weighted"
+  },
+  {
+    "external_key": "AR-B34-055",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 1,
+    "stem": "A printer prints 20 pages per minute. How many pages does it print in 6 minutes?",
+    "choices": [
+      "120",
+      "110",
+      "26",
+      "100"
+    ],
+    "correct_index": 0,
+    "explanation": "Multiply rate by time: 20 × 6 = 120 pages. 100 uses 5 minutes, 26 adds instead of multiplies, and 110 is a slip.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::single-rate-output"
+  },
+  {
+    "external_key": "AR-B34-056",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 1,
+    "stem": "If 3 soldiers can stack 90 crates in an hour, how many can one soldier stack in an hour at the same rate?",
+    "choices": [
+      "45",
+      "30",
+      "27",
+      "60"
+    ],
+    "correct_index": 1,
+    "explanation": "Divide evenly: 90 ÷ 3 = 30 crates. 45 uses 2 soldiers, 27 is a slip, and 60 doubles incorrectly.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::per-person-rate"
+  },
+  {
+    "external_key": "AR-B34-057",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 2,
+    "stem": "One pump fills a tank in 6 hours and a second pump fills the same tank in 12 hours. Working together, how long do they take to fill it?",
+    "choices": [
+      "4 hours",
+      "5 hours",
+      "9 hours",
+      "3 hours"
+    ],
+    "correct_index": 0,
+    "explanation": "Their combined rate is 1/6 + 1/12 = 3/12 = 1/4 tank per hour, so it takes 4 hours. 9 hours averages the times, 3 hours over-counts, and 5 hours is a guess.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::combined-two-rates"
+  },
+  {
+    "external_key": "AR-B34-058",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 2,
+    "stem": "If 4 mechanics service 24 vehicles in a day, how many vehicles can 6 mechanics service in a day at the same rate?",
+    "choices": [
+      "48",
+      "36",
+      "30",
+      "32"
+    ],
+    "correct_index": 1,
+    "explanation": "Each mechanic services 24 ÷ 4 = 6 vehicles, so 6 × 6 = 36. 30 uses 5 mechanics, 32 is a slip, and 48 doubles the original.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::scale-workers"
+  },
+  {
+    "external_key": "AR-B34-059",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 3,
+    "stem": "A crew of 5 builds a wall in 12 days. How many days would 4 workers take to build the same wall at the same pace?",
+    "choices": [
+      "15 days",
+      "9.6 days",
+      "14 days",
+      "10 days"
+    ],
+    "correct_index": 0,
+    "explanation": "The job takes 5 × 12 = 60 worker-days, so 4 workers need 60 ÷ 4 = 15 days. 10 and 9.6 days wrongly assume more output with fewer workers, and 14 is a guess.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::inverse-worker-days"
+  },
+  {
+    "external_key": "AR-B34-060",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 3,
+    "stem": "A pipe fills a reservoir in 8 hours, but a drain empties a full reservoir in 12 hours. With both open on an empty reservoir, how long does it take to fill?",
+    "choices": [
+      "24 hours",
+      "16 hours",
+      "10 hours",
+      "20 hours"
+    ],
+    "correct_index": 0,
+    "explanation": "The net rate is 1/8 − 1/12 = 3/24 − 2/24 = 1/24 per hour, so it takes 24 hours. 20 hours mis-finds the common denominator, 16 ignores the drain partly, and 10 averages the two times.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::fill-and-drain"
+  }
+]
