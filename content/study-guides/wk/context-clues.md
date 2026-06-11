@@ -14,6 +14,8 @@ pitfalls:
   - "Picking an answer that fits the literal meaning of nearby words instead of the target word's actual meaning"
   - "Ignoring contrast signal words ('but', 'yet', 'despite') and choosing a synonym instead of an antonym"
   - "Stopping at a vague guess, always check your answer against the sentence to confirm it makes sense"
+  - "Falling for a trap answer that matches a secondary connotation of the word but not how the sentence uses it"
+  - "Letting an emotionally charged nearby word color your guess instead of letting the logic of the sentence decide"
 worked_examples:
   - prompt: "The soldier was TENACIOUS in his pursuit of the objective, refusing to stop despite three setbacks. TENACIOUS most nearly means: (A) reckless (B) persistent (C) cautious (D) confused"
     solution: "'Refusing to stop despite setbacks' is the context clue, it signals stubborn continuation. Tenacious means persistent. Answer: B"
@@ -21,6 +23,12 @@ worked_examples:
     solution: "'Unlike' signals contrast. Maria is brief, so her partner is the opposite, wordy. Answer: C"
   - prompt: "The sergeant's demeanor was AMIABLE, he greeted every recruit with a handshake and a smile. AMIABLE most nearly means: (A) strict (B) nervous (C) distracted (D) friendly"
     solution: "The comma introduces illustrating behaviors, a handshake and a smile, both friendly. Amiable means friendly. Answer: D"
+  - prompt: "The terrain was so DESOLATE that the patrol marched for hours without seeing a single tree, building, or living creature. DESOLATE most nearly means: (A) crowded (B) barren and empty (C) dangerous (D) beautiful"
+    solution: "The example clue lists what is absent, no trees, buildings, or creatures, which paints an empty landscape. Desolate means barren and deserted. 'Dangerous' is a trap that fits the patrol's mood but not the word. Answer: B"
+  - prompt: "Although the recruit seemed PLACID on the surface, inside he was churning with nerves. PLACID most nearly means: (A) tall (B) angry (C) calm (D) honest"
+    solution: "'Although' signals contrast with 'churning with nerves', so the surface appearance is the opposite of agitated, calm. Placid means calm. 'Angry' is the antonym trap. Answer: C"
+  - prompt: "The instructions were so CONVOLUTED that even the senior NCO had to read them three times to follow the steps. CONVOLUTED most nearly means: (A) simple (B) twisted and hard to follow (C) brief (D) printed"
+    solution: "The logic clue, needing three reads to follow, signals difficulty, not simplicity. Convoluted means complex and tangled. 'Simple' is the opposite trap answer. Answer: B"
 ---
 
 ## What context clues actually are

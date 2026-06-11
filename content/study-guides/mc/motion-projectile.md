@@ -21,6 +21,8 @@ pitfalls:
   - "Forgetting that horizontal velocity is constant during projectile flight, only vertical changes due to gravity"
   - "Using the wrong sign for gravity, in a downward-positive frame, g is +9.8 m/s²; in an upward-positive frame, it's −9.8 m/s²"
   - "Confusing speed (scalar, no direction) with velocity (vector, has direction)"
+  - "Forgetting to square the velocity in kinetic energy, KE = one-half x m x v^2 grows with the square of speed, so doubling speed quadruples KE"
+  - "Assuming maximum range comes from the steepest launch angle, on level ground the greatest horizontal range is at 45 degrees"
 worked_examples:
   - prompt: "A ball is dropped from rest off a 45-meter cliff. How long does it take to hit the ground? (g = 10 m/s²)"
     solution: "Use d = ½ × g × t². Rearrange: t² = 2d/g = 2 × 45 / 10 = 9. t = √9 = 3 seconds. The ball hits the ground in exactly 3 seconds."
@@ -28,6 +30,12 @@ worked_examples:
     solution: "Horizontal and vertical are independent. Horizontal distance = v_x × t = 20 × 3 = 60 meters. The 3-second fall time was determined by the vertical drop alone, gravity doesn't affect horizontal speed."
   - prompt: "A car accelerates from 0 to 30 m/s in 6 seconds. What is its acceleration?"
     solution: "a = (v_f - v_i) / t = (30 - 0) / 6 = 5 m/s². The car gains 5 meters per second of velocity every second. After 1 s it's at 5 m/s, after 2 s at 10 m/s, and so on to 30 m/s at 6 s."
+  - prompt: "An object is dropped from rest. What is its velocity after falling for 4 seconds? (use g = 9.8 m/s^2)"
+    solution: "In free fall from rest, v = g x t = 9.8 x 4 = 39.2 m/s downward. Velocity grows steadily by 9.8 m/s each second; the distance fallen would use d = one-half x g x t^2, a separate calculation."
+  - prompt: "A 2-kg ball moves at 10 m/s. What is its kinetic energy?"
+    solution: "KE = one-half x m x v^2 = 0.5 x 2 x (10)^2 = 0.5 x 2 x 100 = 100 joules. Because KE depends on v^2, if the ball sped up to 20 m/s its kinetic energy would jump to 400 joules, four times as much."
+  - prompt: "A 3-kg rock is lifted to a shelf 5 meters high. How much gravitational potential energy does it gain? (use g = 9.8 m/s^2)"
+    solution: "PE = m x g x h = 3 x 9.8 x 5 = 147 joules. If the rock were then dropped, that 147 joules would convert to kinetic energy, reaching the same value just before impact (ignoring air resistance)."
 ---
 
 ## What the ASVAB is testing

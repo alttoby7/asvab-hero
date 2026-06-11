@@ -16,6 +16,8 @@ pitfalls:
   - "Assuming more weight always means more friction, friction also depends on the surface roughness (μ)"
   - "Mixing up static and kinetic friction, the force needed to start movement is always greater than the force to sustain it"
   - "Ignoring net force, two forces in opposite directions partially cancel; you must subtract, not add"
+  - "Forgetting to spread force over the right area in pressure problems, a smaller area under the same force always means higher pressure"
+  - "Treating the normal force as the weight on an incline, on a slope the normal force is less than the full weight because part of gravity acts along the surface"
 worked_examples:
   - prompt: "A 10-kg crate sits on a flat surface with a coefficient of static friction of 0.4. What minimum force is needed to start sliding it? (use g = 10 m/s²)"
     solution: "Normal force N = mg = 10 × 10 = 100 N. Friction force f = μN = 0.4 × 100 = 40 N. You must apply at least 40 N horizontally to overcome static friction and begin moving the crate."
@@ -23,6 +25,12 @@ worked_examples:
     solution: "P = F ÷ A = 200 ÷ 4 = 50 psi. That 50 psi acts equally in all directions throughout the fluid (Pascal's law), which is why hydraulic systems can multiply force at a larger output piston."
   - prompt: "A 5-kg object is pushed across a floor with a net force of 15 N (friction already subtracted). What is its acceleration?"
     solution: "F = ma → a = F ÷ m = 15 ÷ 5 = 3 m/s². The object accelerates at 3 meters per second squared in the direction of the net force."
+  - prompt: "What is the weight, in Newtons, of a 12-kg toolbox on Earth? (use g = 9.8 m/s^2)"
+    solution: "W = mg = 12 x 9.8 = 117.6 N. Mass (12 kg) stays the same anywhere, but weight is the gravitational force and changes with g; on the Moon the same toolbox would weigh about one-sixth as much."
+  - prompt: "A 1,000-kg car accelerates at 2 m/s^2. What net force does the engine provide?"
+    solution: "F = ma = 1,000 x 2 = 2,000 N. This is the net force after friction and drag; the engine must produce more than 2,000 N of drive force to overcome those losses and still net 2,000 N."
+  - prompt: "A box weighs 150 N and rests on a floor with a coefficient of kinetic friction of 0.3. How much horizontal force keeps it sliding at constant speed?"
+    solution: "On a flat floor the normal force equals the weight, N = 150 N. Kinetic friction f = mu x N = 0.3 x 150 = 45 N. At constant speed the applied force equals friction, so 45 N keeps it moving. Starting it from rest would take more, because static friction is higher."
 diagrams:
   - type: force-diagram
     after: "Net force"

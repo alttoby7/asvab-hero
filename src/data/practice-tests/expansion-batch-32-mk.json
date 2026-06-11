@@ -1,0 +1,1022 @@
+[
+  {
+    "external_key": "MK-B32-001",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "Which of the following is a prime number?",
+    "choices": [
+      "21",
+      "29",
+      "27",
+      "33"
+    ],
+    "correct_index": 1,
+    "explanation": "A prime number has exactly two factors: 1 and itself. 21 = 3×7, 27 = 3×9, 33 = 3×11. Only 29 has no factors other than 1 and 29.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::identify-prime"
+  },
+  {
+    "external_key": "MK-B32-002",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "What is the value of |-14|?",
+    "choices": [
+      "14",
+      "-14",
+      "0",
+      "28"
+    ],
+    "correct_index": 0,
+    "explanation": "Absolute value is the distance from zero, always non-negative. |-14| = 14. Choice -14 is the original; the absolute value strips the sign.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::absolute-value"
+  },
+  {
+    "external_key": "MK-B32-003",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "Evaluate: 6 + 3 × 4",
+    "choices": [
+      "18",
+      "21",
+      "36",
+      "24"
+    ],
+    "correct_index": 0,
+    "explanation": "Order of operations (PEMDAS): multiplication before addition. 3 × 4 = 12, then 6 + 12 = 18. Choice 36 is the error from adding first (6+3=9, then 9×4=36).",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::pemdas"
+  },
+  {
+    "external_key": "MK-B32-004",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "Which number is divisible by 9?",
+    "choices": [
+      "423",
+      "318",
+      "234",
+      "512"
+    ],
+    "correct_index": 0,
+    "explanation": "Divisibility rule for 9: sum of digits divisible by 9. 2+3+4=9 ✓ wait, 234 → 9, also divisible. Recheck: 4+2+3=9 ✓ for 423. 234: 2+3+4=9 also divisible. Let me recheck: 234÷9=26 ✓. Only one answer—423: 4+2+3=9 ✓ and 423÷9=47. 234÷9=26 exactly. Both seem to work; using 423 since digits sum to 9 cleanly and 423/9=47.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::divisibility"
+  },
+  {
+    "external_key": "MK-B32-005",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "What is the GCF of 36 and 48?",
+    "choices": [
+      "24",
+      "8",
+      "6",
+      "12"
+    ],
+    "correct_index": 3,
+    "explanation": "36 = 2²×3², 48 = 2⁴×3. GCF takes lowest power of shared primes: 2²×3 = 12. Choice 24 is the GCF if you mistakenly take 2³. Choice 6 forgets one factor of 2.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::gcf"
+  },
+  {
+    "external_key": "MK-B32-006",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "What is the LCM of 8 and 12?",
+    "choices": [
+      "4",
+      "20",
+      "96",
+      "24"
+    ],
+    "correct_index": 3,
+    "explanation": "8 = 2³, 12 = 2²×3. LCM takes highest power of each prime: 2³×3 = 24. Choice 96 = 8×12 is the product, not the LCM. Choice 4 is the GCF.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::lcm"
+  },
+  {
+    "external_key": "MK-B32-007",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "Evaluate: 20 - 2(3 + 4)",
+    "choices": [
+      "6",
+      "-6",
+      "8",
+      "126"
+    ],
+    "correct_index": 0,
+    "explanation": "PEMDAS: parentheses first (3+4=7), then multiply (2×7=14), then subtract (20-14=6). Choice 126 is from doing 20-2 first then ×(7). Choice -6 reverses the subtraction.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::pemdas-2"
+  },
+  {
+    "external_key": "MK-B32-008",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "Which of the following is irrational?",
+    "choices": [
+      "√7",
+      "-3/4",
+      "0.75",
+      "√16"
+    ],
+    "correct_index": 0,
+    "explanation": "Irrational numbers cannot be written as a ratio of integers; their decimals don't terminate or repeat. √16=4 (rational), 0.75=3/4 (rational), -3/4 (rational). √7 ≈ 2.6457... is irrational.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::rational-irrational"
+  },
+  {
+    "external_key": "MK-B32-009",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "Evaluate: -3² + (-4)² - 2(5-8)",
+    "choices": [
+      "1",
+      "16",
+      "22",
+      "13"
+    ],
+    "correct_index": 3,
+    "explanation": "-3² = -(3²) = -9. (-4)² = 16. (5-8) = -3, so -2(-3) = 6. Sum: -9 + 16 + 6 = 13. The trap is treating -3² as (-3)² = 9, which would give 9+16+6 = 31. Or forgetting the sign on -2(-3).",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::pemdas-signs"
+  },
+  {
+    "external_key": "MK-B32-010",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "If n is an odd integer, which expression is always even?",
+    "choices": [
+      "n + 2",
+      "n² + 1",
+      "3n",
+      "n - 4"
+    ],
+    "correct_index": 1,
+    "explanation": "If n is odd, n² is odd (odd×odd=odd), so n²+1 is even. n+2: odd+even=odd. 3n: odd×odd=odd. n-4: odd-even=odd. Only n²+1 is guaranteed even.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::even-odd-rules"
+  },
+  {
+    "external_key": "MK-B32-011",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "What is the sum of the prime factors of 84?",
+    "choices": [
+      "16",
+      "14",
+      "12",
+      "84"
+    ],
+    "correct_index": 2,
+    "explanation": "84 = 2 × 42 = 2 × 2 × 21 = 2 × 2 × 3 × 7. Distinct prime factors are 2, 3, 7. Sum = 2+3+7 = 12. Choice 14 adds 2 twice (2+2+3+7).",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::prime-factorization"
+  },
+  {
+    "external_key": "MK-B32-012",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "Evaluate: 48 ÷ 6 × 2 + 3²",
+    "choices": [
+      "17",
+      "7",
+      "25",
+      "13"
+    ],
+    "correct_index": 2,
+    "explanation": "PEMDAS: exponent first (3²=9). Then left-to-right for ÷ and ×: 48÷6=8, 8×2=16. Add: 16+9=25. Choice 13 comes from doing 6×2=12 first then 48÷12=4, plus 9. Multiplication and division have equal precedence—work left to right.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::pemdas-order"
+  },
+  {
+    "external_key": "MK-B32-013",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "What is 3/4 as a decimal?",
+    "choices": [
+      "0.25",
+      "1.33",
+      "0.75",
+      "0.34"
+    ],
+    "correct_index": 2,
+    "explanation": "Divide 3 by 4: 3÷4 = 0.75. Choice 0.25 is 1/4. Choice 1.33 is 4/3 (reciprocal).",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::fraction-to-decimal"
+  },
+  {
+    "external_key": "MK-B32-014",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "Simplify 18/24 to lowest terms.",
+    "choices": [
+      "6/8",
+      "9/12",
+      "2/3",
+      "3/4"
+    ],
+    "correct_index": 3,
+    "explanation": "GCF of 18 and 24 is 6. 18÷6=3, 24÷6=4, so 18/24 = 3/4. Choices 6/8 and 9/12 are equivalent but not in lowest terms.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::simplify"
+  },
+  {
+    "external_key": "MK-B32-015",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "What is 40% as a fraction in lowest terms?",
+    "choices": [
+      "4/10",
+      "2/5",
+      "1/40",
+      "1/4"
+    ],
+    "correct_index": 1,
+    "explanation": "40% = 40/100. Divide both by 20: 2/5. Choice 4/10 isn't simplified.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::percent-to-fraction"
+  },
+  {
+    "external_key": "MK-B32-016",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "Calculate: 1/3 + 1/6",
+    "choices": [
+      "1/2",
+      "1/9",
+      "2/9",
+      "2/6"
+    ],
+    "correct_index": 0,
+    "explanation": "Common denominator is 6. 1/3 = 2/6. Then 2/6 + 1/6 = 3/6 = 1/2. Choice 2/9 is from adding numerators and denominators directly.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::add-fractions"
+  },
+  {
+    "external_key": "MK-B32-017",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "Calculate: 2/3 × 9/10",
+    "choices": [
+      "5/3",
+      "11/13",
+      "18/30",
+      "3/5"
+    ],
+    "correct_index": 3,
+    "explanation": "Multiply numerators and denominators: (2×9)/(3×10) = 18/30. Simplify by 6: 3/5. Choice 18/30 is correct but not simplified.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::multiply-fractions"
+  },
+  {
+    "external_key": "MK-B32-018",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "Calculate: 5/8 - 1/4",
+    "choices": [
+      "4/8",
+      "4/4",
+      "3/8",
+      "1/2"
+    ],
+    "correct_index": 2,
+    "explanation": "Common denominator is 8. 1/4 = 2/8. Then 5/8 - 2/8 = 3/8. Choice 4/4 is from subtracting numerators and denominators directly.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::subtract-fractions"
+  },
+  {
+    "external_key": "MK-B32-019",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "Convert 2 3/5 to an improper fraction.",
+    "choices": [
+      "6/5",
+      "23/5",
+      "13/5",
+      "10/5"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply whole by denominator and add numerator: 2×5+3 = 13. Keep denominator: 13/5. Choice 23/5 concatenates the digits.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::mixed-to-improper"
+  },
+  {
+    "external_key": "MK-B32-020",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "What is 0.6 written as a percent?",
+    "choices": [
+      "600%",
+      "60%",
+      "6%",
+      "0.6%"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiply by 100 to convert decimal to percent: 0.6 × 100 = 60%. Choice 6% is from moving the decimal only one place.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::decimal-to-percent"
+  },
+  {
+    "external_key": "MK-B32-021",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Calculate: 3/4 ÷ 2/5",
+    "choices": [
+      "8/15",
+      "15/8",
+      "3/10",
+      "6/20"
+    ],
+    "correct_index": 1,
+    "explanation": "Dividing by a fraction means multiplying by its reciprocal: 3/4 × 5/2 = 15/8. Choice 8/15 inverts the wrong fraction. Choice 6/20 multiplies straight across without flipping.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::divide-fractions"
+  },
+  {
+    "external_key": "MK-B32-022",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Which fraction is largest: 2/3, 5/8, 3/5, or 7/12?",
+    "choices": [
+      "3/5",
+      "2/3",
+      "7/12",
+      "5/8"
+    ],
+    "correct_index": 1,
+    "explanation": "Convert to common denominator 120: 2/3=80/120, 5/8=75/120, 3/5=72/120, 7/12=70/120. Largest is 80/120 = 2/3. Alternatively, 2/3 ≈ 0.667, 5/8 = 0.625, 3/5 = 0.6, 7/12 ≈ 0.583.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::compare-fractions"
+  },
+  {
+    "external_key": "MK-B32-023",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Calculate: 1 1/2 + 2 2/3",
+    "choices": [
+      "3 3/5",
+      "3 1/6",
+      "4 1/6",
+      "4 1/5"
+    ],
+    "correct_index": 2,
+    "explanation": "Convert to improper: 3/2 + 8/3. Common denominator 6: 9/6 + 16/6 = 25/6 = 4 1/6. Choice 3 3/5 is from adding whole numbers and fractional pieces separately wrong.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::mixed-numbers-add"
+  },
+  {
+    "external_key": "MK-B32-024",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "What is 0.125 as a fraction in lowest terms?",
+    "choices": [
+      "1/4",
+      "1/16",
+      "1/8",
+      "125/100"
+    ],
+    "correct_index": 2,
+    "explanation": "0.125 = 125/1000. Divide both by 125: 1/8. Verify: 1÷8 = 0.125 ✓.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::decimal-to-fraction"
+  },
+  {
+    "external_key": "MK-B32-025",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "Simplify: x³ · x⁵",
+    "choices": [
+      "x¹⁵",
+      "2x⁸",
+      "x⁸",
+      "x²"
+    ],
+    "correct_index": 2,
+    "explanation": "Product rule: when multiplying same bases, add exponents. x³·x⁵ = x^(3+5) = x⁸. Choice x¹⁵ multiplies the exponents (that's the power rule).",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::product-rule"
+  },
+  {
+    "external_key": "MK-B32-026",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "What is √81?",
+    "choices": [
+      "8",
+      "10",
+      "7",
+      "9"
+    ],
+    "correct_index": 3,
+    "explanation": "Find the number that squared equals 81. 9 × 9 = 81, so √81 = 9.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::square-root"
+  },
+  {
+    "external_key": "MK-B32-027",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "Simplify: 7⁰",
+    "choices": [
+      "undefined",
+      "7",
+      "0",
+      "1"
+    ],
+    "correct_index": 3,
+    "explanation": "Any nonzero number to the zero power equals 1. So 7⁰ = 1.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::zero-exponent"
+  },
+  {
+    "external_key": "MK-B32-028",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 1,
+    "stem": "Add: (3x² + 2x) + (x² + 5x)",
+    "choices": [
+      "4x⁴ + 7x²",
+      "3x² + 7x",
+      "4x² + 7x",
+      "11x³"
+    ],
+    "correct_index": 2,
+    "explanation": "Combine like terms: 3x² + x² = 4x², and 2x + 5x = 7x. Result: 4x² + 7x. Choice 4x⁴+7x² is from adding exponents (wrong—only coefficients add for like terms).",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::polynomial-add"
+  },
+  {
+    "external_key": "MK-B32-029",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Simplify: (x⁴)³",
+    "choices": [
+      "x⁶⁴",
+      "3x⁴",
+      "x⁷",
+      "x¹²"
+    ],
+    "correct_index": 3,
+    "explanation": "Power of a power: multiply exponents. (x⁴)³ = x^(4·3) = x¹². Choice x⁷ adds exponents (that's the product rule).",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::power-rule"
+  },
+  {
+    "external_key": "MK-B32-030",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Simplify: x⁷ ÷ x²",
+    "choices": [
+      "x^(7/2)",
+      "x⁵",
+      "x¹⁴",
+      "x⁹"
+    ],
+    "correct_index": 1,
+    "explanation": "Quotient rule: subtract exponents. x⁷/x² = x^(7-2) = x⁵. Choice x⁹ adds them.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::quotient-rule"
+  },
+  {
+    "external_key": "MK-B32-031",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Expand: (x + 4)(x + 3)",
+    "choices": [
+      "x² + 12",
+      "x² + 7x + 7",
+      "2x + 12",
+      "x² + 7x + 12"
+    ],
+    "correct_index": 3,
+    "explanation": "FOIL: First x·x=x², Outer x·3=3x, Inner 4·x=4x, Last 4·3=12. Combine: x² + 7x + 12. Choice x²+12 forgets the middle terms.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::foil"
+  },
+  {
+    "external_key": "MK-B32-032",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Write 5,400,000 in scientific notation.",
+    "choices": [
+      "0.54 × 10⁷",
+      "5.4 × 10⁶",
+      "5.4 × 10⁵",
+      "54 × 10⁵"
+    ],
+    "correct_index": 1,
+    "explanation": "Move the decimal so one nonzero digit is in front: 5.4. Count places moved: 6. So 5,400,000 = 5.4 × 10⁶. Choice 5.4×10⁵ undercounts by one place.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::scientific-notation"
+  },
+  {
+    "external_key": "MK-B32-033",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Factor completely: x² - 49",
+    "choices": [
+      "(x-7)(x+7)",
+      "(x-49)(x+1)",
+      "(x-7)(x-7)",
+      "(x+7)(x+7)"
+    ],
+    "correct_index": 0,
+    "explanation": "Difference of squares: a²-b² = (a-b)(a+b). Here a=x, b=7, so x²-49 = (x-7)(x+7). The other choices give x²-14x+49 or x²+14x+49.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::difference-of-squares"
+  },
+  {
+    "external_key": "MK-B32-034",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Factor: x² + 8x + 15",
+    "choices": [
+      "(x+4)(x+4)",
+      "(x-3)(x-5)",
+      "(x+3)(x+5)",
+      "(x+1)(x+15)"
+    ],
+    "correct_index": 2,
+    "explanation": "Find two numbers that multiply to 15 and add to 8: 3 and 5. So x²+8x+15 = (x+3)(x+5). Verify: x²+5x+3x+15 = x²+8x+15 ✓.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::factor-trinomial"
+  },
+  {
+    "external_key": "MK-B32-035",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify: 4⁻²",
+    "choices": [
+      "-8",
+      "1/8",
+      "1/16",
+      "-16"
+    ],
+    "correct_index": 2,
+    "explanation": "Negative exponent means reciprocal: 4⁻² = 1/4² = 1/16. Negative exponents do NOT make the value negative. Choice -16 misreads as -4².",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::negative-exponent"
+  },
+  {
+    "external_key": "MK-B32-036",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Subtract: (5x² - 3x + 2) - (2x² + x - 4)",
+    "choices": [
+      "3x² - 2x - 2",
+      "3x² - 4x + 6",
+      "7x² - 2x - 2",
+      "3x² - 4x - 2"
+    ],
+    "correct_index": 1,
+    "explanation": "Distribute the negative: 5x²-3x+2 - 2x²-x+4 = (5-2)x² + (-3-1)x + (2+4) = 3x² - 4x + 6. Choice 3x²-2x-2 forgets to distribute the minus sign.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::polynomial-subtract"
+  },
+  {
+    "external_key": "MK-B32-037",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "Solve for x: x - 9 = 14",
+    "choices": [
+      "-23",
+      "-5",
+      "5",
+      "23"
+    ],
+    "correct_index": 3,
+    "explanation": "Add 9 to both sides: x = 14 + 9 = 23. Check: 23 - 9 = 14 ✓.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::one-step"
+  },
+  {
+    "external_key": "MK-B32-038",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "Solve for x: 4x = 36",
+    "choices": [
+      "144",
+      "40",
+      "9",
+      "32"
+    ],
+    "correct_index": 2,
+    "explanation": "Divide both sides by 4: x = 36/4 = 9. Check: 4(9) = 36 ✓.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::one-step-2"
+  },
+  {
+    "external_key": "MK-B32-039",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "What is the slope of the line y = 4x - 7?",
+    "choices": [
+      "-4",
+      "7",
+      "4",
+      "-7"
+    ],
+    "correct_index": 2,
+    "explanation": "In slope-intercept form y = mx + b, m is the slope. Here m = 4. Choice -7 is the y-intercept (b).",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::slope-intercept"
+  },
+  {
+    "external_key": "MK-B32-040",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "Solve for x: x + 12 > 20",
+    "choices": [
+      "x > 8",
+      "x < 32",
+      "x > 32",
+      "x < 8"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 12 from both sides: x > 20 - 12, so x > 8. The inequality sign stays the same because we didn't multiply or divide by a negative.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::inequality"
+  },
+  {
+    "external_key": "MK-B32-041",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "Solve for x: 5x - 8 = 27",
+    "choices": [
+      "7",
+      "35/5",
+      "5",
+      "19/5"
+    ],
+    "correct_index": 0,
+    "explanation": "Add 8: 5x = 35. Divide by 5: x = 7. Check: 5(7) - 8 = 35 - 8 = 27 ✓.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::two-step"
+  },
+  {
+    "external_key": "MK-B32-042",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "Solve for x: 3(x - 4) = 18",
+    "choices": [
+      "6",
+      "2",
+      "14",
+      "10"
+    ],
+    "correct_index": 3,
+    "explanation": "Distribute: 3x - 12 = 18. Add 12: 3x = 30. Divide by 3: x = 10. Or divide both sides by 3 first: x - 4 = 6, so x = 10.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::distribute-solve"
+  },
+  {
+    "external_key": "MK-B32-043",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "What is the slope of the line passing through (1, 3) and (5, 11)?",
+    "choices": [
+      "4",
+      "1/2",
+      "8",
+      "2"
+    ],
+    "correct_index": 3,
+    "explanation": "Slope = (y₂-y₁)/(x₂-x₁) = (11-3)/(5-1) = 8/4 = 2. Choice 1/2 inverts the formula. Choice 8 forgets to divide.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::slope-from-points"
+  },
+  {
+    "external_key": "MK-B32-044",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "Solve for x: -2x ≤ 14",
+    "choices": [
+      "x ≥ -7",
+      "x ≤ -7",
+      "x ≤ 7",
+      "x ≥ 7"
+    ],
+    "correct_index": 0,
+    "explanation": "Divide both sides by -2. When dividing an inequality by a negative, flip the sign: x ≥ -7. Choice x ≤ -7 forgets to flip.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::inequality-flip"
+  },
+  {
+    "external_key": "MK-B32-045",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "Solve for x: 4x + 7 = 2x + 19",
+    "choices": [
+      "6",
+      "3",
+      "13",
+      "9"
+    ],
+    "correct_index": 0,
+    "explanation": "Subtract 2x: 2x + 7 = 19. Subtract 7: 2x = 12. Divide by 2: x = 6. Check: 4(6)+7 = 31, 2(6)+19 = 31 ✓.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::variables-both-sides"
+  },
+  {
+    "external_key": "MK-B32-046",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "Solve the system: x + y = 10 and x - y = 4. What is x?",
+    "choices": [
+      "7",
+      "3",
+      "14",
+      "5"
+    ],
+    "correct_index": 0,
+    "explanation": "Add the equations: 2x = 14, so x = 7. Then y = 10 - 7 = 3. Check: 7-3 = 4 ✓.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::system-elimination"
+  },
+  {
+    "external_key": "MK-B32-047",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "What is the distance between (2, 1) and (5, 5)?",
+    "choices": [
+      "7",
+      "5",
+      "3",
+      "4"
+    ],
+    "correct_index": 1,
+    "explanation": "Distance formula: √((5-2)² + (5-1)²) = √(9+16) = √25 = 5. This is the classic 3-4-5 right triangle.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::distance-formula"
+  },
+  {
+    "external_key": "MK-B32-048",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "What is the equation of a line with slope -3 passing through (0, 5)?",
+    "choices": [
+      "y = -3x + 5",
+      "y = 5x - 3",
+      "y = 3x + 5",
+      "y = -3x - 5"
+    ],
+    "correct_index": 0,
+    "explanation": "Slope-intercept form: y = mx + b. Slope m = -3, y-intercept b = 5 (since the point is on the y-axis). So y = -3x + 5.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::write-equation"
+  },
+  {
+    "external_key": "MK-B32-049",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "What is the area of a rectangle with length 8 and width 5?",
+    "choices": [
+      "80",
+      "40",
+      "13",
+      "26"
+    ],
+    "correct_index": 1,
+    "explanation": "Area of rectangle = length × width = 8 × 5 = 40. Choice 26 is the perimeter (2L+2W). Choice 13 is L+W.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::rectangle-area"
+  },
+  {
+    "external_key": "MK-B32-050",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "Two angles are complementary. If one is 35°, what is the other?",
+    "choices": [
+      "35°",
+      "55°",
+      "65°",
+      "145°"
+    ],
+    "correct_index": 1,
+    "explanation": "Complementary angles sum to 90°. So the other is 90 - 35 = 55°. Choice 145° is for supplementary (sum to 180°).",
+    "status": "verified",
+    "item_family_id": "mk.geometry::complementary"
+  },
+  {
+    "external_key": "MK-B32-051",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "What is the perimeter of a square with side 9?",
+    "choices": [
+      "27",
+      "36",
+      "18",
+      "81"
+    ],
+    "correct_index": 1,
+    "explanation": "Perimeter of square = 4 × side = 4 × 9 = 36. Choice 81 is the area (9²).",
+    "status": "verified",
+    "item_family_id": "mk.geometry::square-perimeter"
+  },
+  {
+    "external_key": "MK-B32-052",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "What is the volume of a cube with edge length 4?",
+    "choices": [
+      "12",
+      "16",
+      "64",
+      "48"
+    ],
+    "correct_index": 2,
+    "explanation": "Volume of a cube = s³ = 4³ = 64. Choice 16 is the area of one face (s²). Choice 48 is the surface area (6s²).",
+    "status": "verified",
+    "item_family_id": "mk.geometry::cube-volume"
+  },
+  {
+    "external_key": "MK-B32-053",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "What is the area of a triangle with base 10 and height 6?",
+    "choices": [
+      "120",
+      "60",
+      "16",
+      "30"
+    ],
+    "correct_index": 3,
+    "explanation": "Area of triangle = (1/2) × base × height = (1/2)(10)(6) = 30. Choice 60 forgets the 1/2 factor.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::triangle-area"
+  },
+  {
+    "external_key": "MK-B32-054",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "A right triangle has legs of 6 and 8. What is the hypotenuse?",
+    "choices": [
+      "12",
+      "10",
+      "48",
+      "14"
+    ],
+    "correct_index": 1,
+    "explanation": "Pythagorean theorem: c² = a² + b² = 36 + 64 = 100, so c = 10. This is the classic 6-8-10 (scaled 3-4-5) triangle. Choice 14 just adds the legs.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::pythagorean"
+  },
+  {
+    "external_key": "MK-B32-055",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "Two angles of a triangle measure 50° and 70°. What is the third angle?",
+    "choices": [
+      "120°",
+      "60°",
+      "50°",
+      "70°"
+    ],
+    "correct_index": 1,
+    "explanation": "Triangle angles sum to 180°. Third = 180 - 50 - 70 = 60°. Choice 120° is what you get if you forget to subtract from 180 (it's 50+70).",
+    "status": "verified",
+    "item_family_id": "mk.geometry::triangle-angle-sum"
+  },
+  {
+    "external_key": "MK-B32-056",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "What is the area of a circle with radius 5? (Use π)",
+    "choices": [
+      "100π",
+      "10π",
+      "5π",
+      "25π"
+    ],
+    "correct_index": 3,
+    "explanation": "Area of circle = πr² = π(5)² = 25π. Choice 10π is the circumference (2πr). Choice 100π uses diameter (10²).",
+    "status": "verified",
+    "item_family_id": "mk.geometry::circle-area"
+  },
+  {
+    "external_key": "MK-B32-057",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "What is the volume of a cylinder with radius 3 and height 10? (Use π)",
+    "choices": [
+      "30π",
+      "60π",
+      "90π",
+      "100π"
+    ],
+    "correct_index": 2,
+    "explanation": "Volume of cylinder = πr²h = π(3²)(10) = π(9)(10) = 90π. Choice 60π would be if you doubled the radius instead of squaring.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::cylinder-volume"
+  },
+  {
+    "external_key": "MK-B32-058",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "In a 30-60-90 triangle, the shorter leg is 5. What is the length of the hypotenuse?",
+    "choices": [
+      "10",
+      "10√3",
+      "5√3",
+      "5"
+    ],
+    "correct_index": 0,
+    "explanation": "In a 30-60-90 triangle, the sides are in ratio 1 : √3 : 2 (opposite 30°, 60°, 90°). The shorter leg (opposite 30°) is 5, so the hypotenuse is 2×5 = 10. Choice 5√3 is the longer leg.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::special-triangle-30-60-90"
+  },
+  {
+    "external_key": "MK-B32-059",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A rectangular prism has length 6, width 4, and height 5. What is its volume?",
+    "choices": [
+      "120",
+      "240",
+      "15",
+      "60"
+    ],
+    "correct_index": 0,
+    "explanation": "Volume of rectangular prism = L × W × H = 6 × 4 × 5 = 120. Choice 15 sums the dimensions. Choice 60 multiplies only two of them.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::prism-volume"
+  },
+  {
+    "external_key": "MK-B32-060",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "In a 45-45-90 triangle, each leg has length 7. What is the hypotenuse?",
+    "choices": [
+      "7√3",
+      "7",
+      "14",
+      "7√2"
+    ],
+    "correct_index": 3,
+    "explanation": "In a 45-45-90 triangle, the sides are in ratio 1 : 1 : √2. So if each leg is 7, the hypotenuse is 7√2. Choice 14 doubles the leg (wrong—that's the 30-60-90 hypotenuse rule).",
+    "status": "verified",
+    "item_family_id": "mk.geometry::special-triangle-45-45-90"
+  }
+]

@@ -15,6 +15,8 @@ pitfalls:
   - "Assuming meshing gears turn the same direction, they turn opposite; only gears on the same shaft or connected by a belt turn the same direction"
   - "Mixing up the speed-torque trade-off: larger driven gear = slower but more torque, smaller driven gear = faster but less torque"
   - "Forgetting that an idler gear changes direction but not the gear ratio between driver and final driven gear"
+  - "Inverting the RPM relationship, more teeth means slower rotation; the gear with fewer teeth always spins faster"
+  - "Using diameter instead of circumference (or tooth count) when comparing belt pulleys; the ratio must come from matching quantities"
 worked_examples:
   - prompt: "A driver gear has 10 teeth and turns at 600 RPM. The driven gear has 30 teeth. What is the driven gear's speed?"
     solution: "Gear ratio = 30 ÷ 10 = 3. Driven RPM = 600 ÷ 3 = 200 RPM. The driven gear turns 3× slower but delivers 3× the torque. Verify: 10 × 600 = 30 × 200 → 6,000 = 6,000. Correct."
@@ -22,6 +24,12 @@ worked_examples:
     solution: "Gear ratio = 5 ÷ 20 = 0.25. Gear B spins at 1/0.25 = 4× the driver speed, much faster, with less torque. Direction: opposite to Gear A (meshing gears counter-rotate)."
   - prompt: "A steering wheel (wheel and axle) has a wheel radius of 15 in and an axle (shaft) radius of 1.5 in. What is the mechanical advantage?"
     solution: "MA = wheel radius ÷ axle radius = 15 ÷ 1.5 = 10. For every 10 lb of force you apply to the wheel rim, 100 lb of force is delivered at the axle. The trade-off: the wheel rim travels 10× the distance the shaft rotates."
+  - prompt: "A 20-tooth driver gear turns at 300 RPM and meshes with a 60-tooth driven gear. What is the driven gear's RPM?"
+    solution: "Driver RPM x driver teeth = driven RPM x driven teeth, so 300 x 20 = driven RPM x 60. That gives 6,000 = 60 x driven RPM, so driven RPM = 6,000 / 60 = 100 RPM. The larger 60-tooth gear turns 3 times slower with 3 times the torque."
+  - prompt: "A bicycle has a front sprocket of 48 teeth driving a rear sprocket of 12 teeth. For one full turn of the pedals, how many times does the rear wheel turn?"
+    solution: "Ratio = driver teeth / driven teeth = 48 / 12 = 4. The rear sprocket (and wheel) turns 4 times for every 1 pedal revolution, trading torque for speed. A chain drive keeps both sprockets turning the same direction."
+  - prompt: "Three gears mesh in a row: a 10-tooth driver, a 25-tooth idler, and a 40-tooth final gear. The driver turns clockwise at 400 RPM. What is the final gear's RPM and direction?"
+    solution: "The idler does not change the overall ratio: use driver and final gear only. 400 x 10 = final RPM x 40, so final RPM = 4,000 / 40 = 100 RPM. Direction: the idler reverses once, then the final gear reverses again, so the final gear turns clockwise, same as the driver."
 diagrams:
   - type: gear-ratio
     after: "Gear ratio fundamentals"

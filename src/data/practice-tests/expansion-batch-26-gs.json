@@ -1,0 +1,1022 @@
+[
+  {
+    "external_key": "GS-B26-001",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which organelle is responsible for packaging and shipping proteins out of the cell?",
+    "choices": [
+      "Golgi apparatus",
+      "Ribosome",
+      "Vacuole",
+      "Lysosome"
+    ],
+    "correct_index": 0,
+    "explanation": "The Golgi apparatus (also called the Golgi body or Golgi complex) receives proteins from the endoplasmic reticulum, modifies them, and packages them into vesicles for secretion or delivery within the cell. Ribosomes are the sites of protein synthesis, not packaging. Lysosomes contain digestive enzymes for breaking down waste. Vacuoles are storage organelles, not involved in protein export.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::golgi-protein-export"
+  },
+  {
+    "external_key": "GS-B26-002",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "What is the primary function of ribosomes in a cell?",
+    "choices": [
+      "Digesting worn-out organelles",
+      "Producing ATP",
+      "Synthesizing proteins",
+      "Storing genetic information"
+    ],
+    "correct_index": 2,
+    "explanation": "Ribosomes are the molecular machines that translate messenger RNA into proteins — they are the sites of protein synthesis. Producing ATP is the role of mitochondria. Genetic information is stored in the nucleus (in DNA). Digesting worn-out organelles is performed by lysosomes through a process called autophagy.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::ribosome-function"
+  },
+  {
+    "external_key": "GS-B26-003",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which structure controls what enters and exits the cell in both animal and plant cells?",
+    "choices": [
+      "Endoplasmic reticulum",
+      "Nuclear envelope",
+      "Cell membrane",
+      "Cell wall"
+    ],
+    "correct_index": 2,
+    "explanation": "The cell membrane (plasma membrane) is a selectively permeable phospholipid bilayer found in all cells that regulates the passage of substances into and out of the cell. The cell wall provides structural support but is only found in plants and some other organisms, and it is not selectively permeable. The nuclear envelope controls what enters/exits the nucleus specifically, not the whole cell. The endoplasmic reticulum is involved in protein and lipid synthesis, not cell boundary control.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::cell-membrane-function"
+  },
+  {
+    "external_key": "GS-B26-004",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "In photosynthesis, which gas is released as a byproduct?",
+    "choices": [
+      "Carbon dioxide",
+      "Oxygen",
+      "Hydrogen",
+      "Nitrogen"
+    ],
+    "correct_index": 1,
+    "explanation": "During photosynthesis, plants use carbon dioxide and water as inputs to produce glucose and oxygen. The oxygen is released as a byproduct through the stomata. Carbon dioxide is actually consumed (it is a reactant, not a product). Nitrogen and hydrogen are not directly produced during photosynthesis.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::photosynthesis-inputs"
+  },
+  {
+    "external_key": "GS-B26-005",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which type of cell division produces gametes (sperm and egg cells)?",
+    "choices": [
+      "Budding",
+      "Mitosis",
+      "Binary fission",
+      "Meiosis"
+    ],
+    "correct_index": 3,
+    "explanation": "Meiosis is the specialized cell division that produces gametes — sperm and egg cells — and results in four haploid daughter cells, each with half the normal chromosome number. Mitosis produces two genetically identical diploid daughter cells used for growth and repair, not reproduction. Binary fission is how prokaryotes (bacteria) reproduce asexually. Budding is a form of asexual reproduction seen in organisms like yeast.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::meiosis-gametes"
+  },
+  {
+    "external_key": "GS-B26-006",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "A plant cell is placed in a solution with a very high sugar concentration. What will most likely happen to the cell?",
+    "choices": [
+      "The cell will produce more glucose to compensate",
+      "Water will enter the cell, causing it to swell",
+      "Water will leave the cell, causing it to shrink",
+      "The cell will remain unchanged"
+    ],
+    "correct_index": 2,
+    "explanation": "When a cell is placed in a hypertonic solution (higher solute concentration outside), water moves out of the cell by osmosis toward the area of lower water concentration, causing the cell to lose water and shrink (plasmolysis in plant cells). Water flows toward higher solute concentration, so the cell would not gain water. Cells do not actively regulate osmosis by producing glucose. The cell will change noticeably due to osmotic pressure.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::osmosis-concentration"
+  },
+  {
+    "external_key": "GS-B26-007",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "Two parents who are both carriers of a recessive disorder have a child. What is the probability the child will have the disorder?",
+    "choices": [
+      "100%",
+      "25%",
+      "75%",
+      "50%"
+    ],
+    "correct_index": 1,
+    "explanation": "When both parents are carriers (Aa × Aa), a Punnett square shows the possible offspring are AA (25%), Aa (50%), and aa (25%). Only the homozygous recessive genotype (aa) expresses the disorder, giving a 25% probability. A 50% probability would correspond to only one parent having the disorder. A 75% chance would mean three out of four offspring are affected, which is not the case here. A 100% chance would require both parents to be homozygous recessive.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::mendelian-recessive-carrier"
+  },
+  {
+    "external_key": "GS-B26-008",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "If a cell's mitochondria were destroyed, which process would be most directly impaired?",
+    "choices": [
+      "Aerobic cellular respiration",
+      "Photosynthesis",
+      "DNA replication",
+      "Protein synthesis"
+    ],
+    "correct_index": 0,
+    "explanation": "Mitochondria are the sites of aerobic cellular respiration, where the majority of ATP is produced through the Krebs cycle and the electron transport chain. Without mitochondria, a cell could only produce ATP through anaerobic processes, severely limiting energy production. Photosynthesis occurs in chloroplasts, not mitochondria. Protein synthesis occurs at ribosomes. DNA replication occurs in the nucleus.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::mitochondria-respiration"
+  },
+  {
+    "external_key": "GS-B26-009",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "A bacterium and a virus both cause illness. Which statement correctly distinguishes them?",
+    "choices": [
+      "Bacteria are living cells and can be killed by antibiotics; viruses are not cells and require antiviral drugs",
+      "Antibiotics are effective against both bacteria and viruses",
+      "Bacteria have no genetic material; viruses contain DNA or RNA",
+      "Viruses can reproduce independently; bacteria require a host cell"
+    ],
+    "correct_index": 0,
+    "explanation": "Bacteria are prokaryotic living cells with their own metabolism and can reproduce independently; antibiotics target bacterial structures like cell walls or ribosomes. Viruses are not living cells — they are genetic material wrapped in protein and must use a host cell's machinery to replicate; antivirals are required. Viruses cannot reproduce without a host. Antibiotics have no effect on viruses. Bacteria do contain genetic material (DNA).",
+    "status": "verified",
+    "item_family_id": "gs.life-science::bacteria-vs-virus"
+  },
+  {
+    "external_key": "GS-B26-010",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "In a food chain, which group converts dead organic matter back into nutrients that producers can use?",
+    "choices": [
+      "Herbivores",
+      "Tertiary consumers",
+      "Decomposers",
+      "Primary producers"
+    ],
+    "correct_index": 2,
+    "explanation": "Decomposers (bacteria and fungi) break down dead organic matter and return nutrients such as nitrogen and phosphorus to the soil and water, where producers (plants) can absorb them. Tertiary consumers are top predators that eat other consumers. Primary producers (plants) make their own food via photosynthesis and are the base of the food chain. Herbivores are primary consumers that eat plants.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::decomposers-nutrient-cycle"
+  },
+  {
+    "external_key": "GS-B26-011",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "During transcription, a DNA template strand reads 3'-TACGCA-5'. What will the resulting mRNA sequence be?",
+    "choices": [
+      "3'-AUGCGU-5'",
+      "5'-TACGCA-3'",
+      "5'-UACGCA-3'",
+      "5'-AUGCGU-3'"
+    ],
+    "correct_index": 3,
+    "explanation": "During transcription, RNA polymerase reads the DNA template strand 3' to 5' and synthesizes an mRNA strand 5' to 3' using complementary base pairing, with uracil (U) replacing thymine (T). Reading 3'-TACGCA-5', each base pairs as T→A, A→U, C→G, G→C, C→G, A→U, producing mRNA 5'-AUGCGU-3'. The direction matters — mRNA is always written 5' to 3'. The original DNA sequence is not directly copied into mRNA; the template strand's complement is. Uracil replaces thymine in RNA, so 'T' never appears in mRNA.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::transcription-mrna"
+  },
+  {
+    "external_key": "GS-B26-012",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "A population of rabbits reaches its carrying capacity. Which combination of factors is MOST likely responsible for halting further population growth?",
+    "choices": [
+      "Increased food supply and reduced disease",
+      "Decreased birth rate due to favorable climate",
+      "Increased competition for food and increased predation",
+      "Decreased mutation rate and reduced migration"
+    ],
+    "correct_index": 2,
+    "explanation": "Carrying capacity is the maximum population size an environment can support given available resources. When a population reaches carrying capacity, density-dependent limiting factors such as increased competition for limited food and higher predation rates (more prey available attracts more predators) act to stabilize growth. A decreased mutation rate does not directly limit population size. A favorable climate would tend to increase, not limit, population growth. An increased food supply would raise the carrying capacity rather than limit growth.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::carrying-capacity-limits"
+  },
+  {
+    "external_key": "GS-B26-013",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "A person with blood type AB receives a transfusion of type O blood. The most accurate statement about this transfusion is:",
+    "choices": [
+      "It is safe only if the Rh factor is positive for both",
+      "It will fail because type O has no antibodies to match AB antigens",
+      "It will cause a reaction because AB recipients reject all other blood types",
+      "It is safe because type O is the universal donor"
+    ],
+    "correct_index": 3,
+    "explanation": "Type O negative (O-) blood is the universal donor because red blood cells carry neither A nor B antigens, so there are no antigens for the recipient's antibodies to attack. A type AB recipient has both A and B antigens on their cells and carries no anti-A or anti-B antibodies in their plasma, meaning they can safely receive blood from any ABO type — making them the universal recipient. The statement that AB rejects all other types is false. While Rh compatibility matters for safety, the question concerns the ABO system. Type O has no A or B antigens, which is precisely why it is compatible, not incompatible.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::blood-type-transfusion"
+  },
+  {
+    "external_key": "GS-B26-014",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "Which taxonomic classification is the MOST specific when identifying a species?",
+    "choices": [
+      "Class",
+      "Family",
+      "Genus",
+      "Order"
+    ],
+    "correct_index": 2,
+    "explanation": "In the Linnaean classification hierarchy from broadest to most specific — Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species — genus is the most specific of the four options listed. A species is fully identified by its genus and species name together (binomial nomenclature), so genus is the last step before species. Order and Class are broader groupings that contain many more organisms. Family is more specific than Order or Class but less specific than Genus.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::taxonomy-hierarchy"
+  },
+  {
+    "external_key": "GS-B26-015",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "Mitosis results in two daughter cells, while meiosis results in four. Which additional difference correctly distinguishes the two processes?",
+    "choices": [
+      "Mitosis introduces genetic variation through crossing over; meiosis does not",
+      "Meiosis produces genetically identical cells; mitosis produces unique cells",
+      "Meiosis occurs in all body tissues; mitosis occurs only in gonads",
+      "Mitosis produces diploid cells; meiosis produces haploid cells"
+    ],
+    "correct_index": 3,
+    "explanation": "Mitosis produces two genetically identical diploid (2n) daughter cells used for growth, repair, and asexual reproduction. Meiosis produces four genetically unique haploid (n) daughter cells — gametes — because the chromosome number is halved. Meiosis, not mitosis, occurs in gonads (testes and ovaries). Crossing over (genetic recombination) occurs during meiosis (prophase I), not mitosis. Meiosis produces genetically varied cells due to independent assortment and crossing over; mitosis produces identical copies.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::mitosis-vs-meiosis"
+  },
+  {
+    "external_key": "GS-B26-016",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "Which type of rock forms when magma cools and solidifies?",
+    "choices": [
+      "Sedimentary rock",
+      "Igneous rock",
+      "Metamorphic rock",
+      "Fossil rock"
+    ],
+    "correct_index": 1,
+    "explanation": "Igneous rock forms when magma (underground) or lava (at the surface) cools and solidifies. Examples include granite and basalt. Sedimentary rock forms from compacted layers of sediment such as sand, silt, or shells. Metamorphic rock forms when existing rock is changed by intense heat and/or pressure. 'Fossil rock' is not a recognized rock type — fossils are typically found in sedimentary rock.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::igneous-rock-formation"
+  },
+  {
+    "external_key": "GS-B26-017",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "Which layer of Earth's atmosphere contains most of the planet's weather?",
+    "choices": [
+      "Mesosphere",
+      "Stratosphere",
+      "Thermosphere",
+      "Troposphere"
+    ],
+    "correct_index": 3,
+    "explanation": "The troposphere is the lowest layer of the atmosphere, extending from Earth's surface to about 12 km altitude, and it is where virtually all weather (clouds, rain, storms, wind) occurs. The stratosphere sits above the troposphere and contains the ozone layer; it has little weather. The mesosphere is where most meteors burn up. The thermosphere is the uppermost major layer and is very hot but extremely thin.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::atmosphere-troposphere"
+  },
+  {
+    "external_key": "GS-B26-018",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "What is the correct order of the planets from closest to farthest from the Sun?",
+    "choices": [
+      "Venus, Mercury, Earth, Mars, Jupiter, Saturn, Neptune, Uranus",
+      "Mercury, Earth, Venus, Mars, Jupiter, Saturn, Uranus, Neptune",
+      "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune",
+      "Mercury, Venus, Earth, Jupiter, Mars, Saturn, Uranus, Neptune"
+    ],
+    "correct_index": 2,
+    "explanation": "The correct order of the eight planets outward from the Sun is Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune. A common mnemonic is 'My Very Educated Mother Just Served Us Nachos.' Venus comes before Earth, not after. Jupiter is the fifth planet, not the fourth — Mars is fourth. Earth is the third planet; Venus is second, not Earth.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::planet-order"
+  },
+  {
+    "external_key": "GS-B26-019",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "What causes ocean tides on Earth?",
+    "choices": [
+      "The gravitational pull of the Moon",
+      "Convection currents in the ocean",
+      "The rotation of Earth on its axis",
+      "Solar wind from the Sun"
+    ],
+    "correct_index": 0,
+    "explanation": "Ocean tides are caused primarily by the gravitational attraction of the Moon pulling on Earth's oceans, creating bulges of water on the side facing the Moon and on the opposite side. Earth's rotation does produce day and night but does not cause tides. Solar wind is a stream of charged particles and does not significantly create tidal forces. Convection currents drive ocean circulation, not the rise and fall of tides.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::tides-moon-gravity"
+  },
+  {
+    "external_key": "GS-B26-020",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "What is Earth's innermost layer?",
+    "choices": [
+      "Outer core",
+      "Crust",
+      "Mantle",
+      "Inner core"
+    ],
+    "correct_index": 3,
+    "explanation": "Earth's layers from outermost to innermost are: crust, mantle, outer core, and inner core. The inner core is the deepest and innermost layer, consisting mostly of solid iron and nickel. The outer core is liquid and surrounds the inner core. The mantle is between the crust and core. The crust is the thin outermost layer on which we live.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::earth-layers"
+  },
+  {
+    "external_key": "GS-B26-021",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "At a divergent plate boundary, what feature is most likely to form on the ocean floor?",
+    "choices": [
+      "Volcanic island arc",
+      "Strike-slip fault",
+      "Deep ocean trench",
+      "Mid-ocean ridge"
+    ],
+    "correct_index": 3,
+    "explanation": "At a divergent boundary, tectonic plates move apart and magma rises to fill the gap, creating new oceanic crust and forming mid-ocean ridges — underwater mountain chains. Deep ocean trenches form at convergent boundaries where one plate subducts under another. Volcanic island arcs also form at convergent boundaries above subducting plates. Strike-slip faults (like the San Andreas) form at transform boundaries where plates slide horizontally past each other.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::divergent-boundary-features"
+  },
+  {
+    "external_key": "GS-B26-022",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "A cold front passes through a city. Which weather change is most likely to occur?",
+    "choices": [
+      "Humidity decreases and temperatures remain stable",
+      "Temperatures drop and there are brief but heavy thunderstorms",
+      "Temperatures rise gradually with light steady rain over many days",
+      "Clear skies develop with no precipitation"
+    ],
+    "correct_index": 1,
+    "explanation": "A cold front is the leading edge of a cold air mass pushing under a warmer air mass. The rapid lifting of warm, moist air causes temperatures to fall sharply and often produces brief, intense thunderstorms. A slow temperature rise with prolonged rain is characteristic of a warm front. Cold fronts typically bring stormy weather before clearing, not immediate clear skies. Cold fronts are associated with increased humidity before the storm, not a decrease.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::cold-front-weather"
+  },
+  {
+    "external_key": "GS-B26-023",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Uranium-238 decays into lead-206 with a half-life of 4.5 billion years. A rock sample contains equal amounts of uranium-238 and lead-206. Approximately how old is the rock?",
+    "choices": [
+      "4.5 billion years",
+      "9 billion years",
+      "2.25 billion years",
+      "13.5 billion years"
+    ],
+    "correct_index": 0,
+    "explanation": "If a rock started with all uranium-238 and now has equal amounts of uranium-238 and lead-206, then exactly half the original uranium has decayed — meaning exactly one half-life has elapsed. Since one half-life of uranium-238 is 4.5 billion years, the rock is approximately 4.5 billion years old. Two half-lives (9 billion years) would leave only 25% uranium. Half a half-life (2.25 billion years) would leave about 71% uranium. Three half-lives (13.5 billion years) would leave only about 12.5% uranium.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::absolute-dating-halflife"
+  },
+  {
+    "external_key": "GS-B26-024",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "During which phase of the Moon can a lunar eclipse occur?",
+    "choices": [
+      "First Quarter",
+      "Full Moon",
+      "New Moon",
+      "Waxing Gibbous"
+    ],
+    "correct_index": 1,
+    "explanation": "A lunar eclipse occurs when Earth passes directly between the Sun and the Moon, casting Earth's shadow on the Moon. This can only happen during a full moon, when the Moon is on the opposite side of Earth from the Sun. A solar eclipse — not lunar — occurs during a new moon. Quarter phases have the Moon at a 90-degree angle to the Sun-Earth line, so Earth's shadow cannot fall on the Moon. Waxing gibbous is between first quarter and full, so alignment is not precise enough for an eclipse.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::lunar-eclipse-phase"
+  },
+  {
+    "external_key": "GS-B26-025",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Which step in the water cycle involves water vapor cooling and turning into liquid water droplets in the atmosphere?",
+    "choices": [
+      "Transpiration",
+      "Evaporation",
+      "Condensation",
+      "Precipitation"
+    ],
+    "correct_index": 2,
+    "explanation": "Condensation is the process by which water vapor in the atmosphere cools and changes into liquid water droplets, forming clouds and fog. Evaporation is the opposite process — liquid water becomes water vapor. Precipitation is when condensed water falls from clouds as rain, snow, sleet, or hail. Transpiration is the release of water vapor from plant leaves into the atmosphere.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::water-cycle-condensation"
+  },
+  {
+    "external_key": "GS-B26-026",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Geologists find a layer of sedimentary rock containing marine fossils high in the Rocky Mountains. Which geological principle best explains this observation?",
+    "choices": [
+      "Plate tectonics caused the seafloor to be uplifted over millions of years",
+      "The fossils were carried there by ancient rivers during a flood",
+      "Fossil distribution is random and not related to past geological processes",
+      "Marine animals once lived at high elevations where there was formerly an ocean"
+    ],
+    "correct_index": 0,
+    "explanation": "The presence of marine fossils in high mountain sedimentary rock is explained by plate tectonics and uplift: the region was once a shallow sea, and convergent plate movement slowly pushed the seafloor upward over tens of millions of years to form the mountains. Rivers can transport sediment downstream, not fossils uphill into mountains. Marine animals require saltwater oceans — they did not evolve to live at high altitudes. Fossil distribution follows predictable geological principles and is not random.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::fossil-uplift-tectonics"
+  },
+  {
+    "external_key": "GS-B26-027",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "A star exhausts its hydrogen fuel, expands into a red giant, and then collapses. If the star's remaining core mass is less than 1.4 solar masses, what is the most likely end state?",
+    "choices": [
+      "Neutron star",
+      "White dwarf",
+      "Black hole",
+      "Supernova remnant only"
+    ],
+    "correct_index": 1,
+    "explanation": "For low-to-medium mass stars (like our Sun), after the red giant phase the outer layers are expelled as a planetary nebula and the remaining core — if less than 1.4 solar masses (the Chandrasekhar limit) — becomes a white dwarf, a hot, dense, Earth-sized stellar remnant. A neutron star forms from a core with mass roughly 1.4 to 3 solar masses after a supernova. A black hole forms when the remaining core exceeds about 3 solar masses. A supernova itself occurs in massive stars; lower-mass stars do not typically explode as supernovae.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::star-lifecycle-white-dwarf"
+  },
+  {
+    "external_key": "GS-B26-028",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Two cities at the same latitude — one on the coast and one inland — experience very different seasonal temperature swings. The coastal city has milder winters and cooler summers. What best explains this difference?",
+    "choices": [
+      "Coastal cities are always at lower elevation than inland cities",
+      "Ocean currents bring warm air that prevents temperature change year-round",
+      "The inland city receives more sunlight due to fewer clouds",
+      "Water has a high specific heat, so the ocean moderates temperature extremes"
+    ],
+    "correct_index": 3,
+    "explanation": "Water has a much higher specific heat than land, meaning it absorbs and releases heat more slowly. The ocean acts as a thermal buffer — warming slowly in summer (keeping coastal areas cooler) and releasing stored heat slowly in winter (keeping coastal areas warmer). Inland cities do not necessarily receive more sunlight; cloud cover varies regionally for many reasons. Coastal cities are not always at lower elevations. Ocean currents do influence climate but the primary explanation for this specific phenomenon is the thermal buffering capacity of water, not wind.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::maritime-continental-climate"
+  },
+  {
+    "external_key": "GS-B26-029",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Sediment layers in an undisturbed rock formation show the oldest rocks at the bottom and the youngest at the top. Which geologic principle does this illustrate?",
+    "choices": [
+      "Law of superposition",
+      "Principle of cross-cutting relationships",
+      "Law of faunal succession",
+      "Principle of original horizontality"
+    ],
+    "correct_index": 0,
+    "explanation": "The law of superposition states that in an undisturbed sequence of sedimentary rock layers, the oldest layers are at the bottom and progressively younger layers are found toward the top. The principle of original horizontality states that sediment is deposited in horizontal layers, useful when tilted layers are found. Cross-cutting relationships determine that a feature (such as a fault or intrusion) cutting through rock must be younger than the rock it cuts. Faunal succession explains that fossil assemblages succeed one another in a consistent order.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::superposition-law"
+  },
+  {
+    "external_key": "GS-B26-030",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "The ozone layer is important to life on Earth primarily because it:",
+    "choices": [
+      "Absorbs most of the Sun's ultraviolet radiation before it reaches the surface",
+      "Supplies oxygen for organisms in the upper atmosphere",
+      "Blocks solar wind particles from reaching Earth's surface",
+      "Reflects infrared radiation back to Earth to maintain temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "The ozone layer in the stratosphere absorbs the majority of the Sun's harmful ultraviolet (UV) radiation, particularly UV-B and UV-C, protecting surface life from DNA damage, skin cancer, and ecosystem disruption. Reflecting infrared radiation back to Earth (the greenhouse effect) is the role of greenhouse gases like CO₂ and water vapor, not ozone. The upper atmosphere has too little oxygen density for organisms to breathe. Earth's magnetic field — not the ozone layer — deflects solar wind particles.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::ozone-uv-protection"
+  },
+  {
+    "external_key": "GS-B26-031",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "On the periodic table, elements in the same vertical column (group) share which characteristic?",
+    "choices": [
+      "The same number of neutrons",
+      "The same number of valence electrons",
+      "The same atomic mass",
+      "The same number of electron shells"
+    ],
+    "correct_index": 1,
+    "explanation": "Elements in the same group (column) of the periodic table have the same number of valence electrons, which gives them similar chemical properties. The number of neutrons varies even within the same element (isotopes). Atomic mass increases down a group. The number of electron shells increases as you move down a group, so elements in the same group have different numbers of shells.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::periodic-table-groups"
+  },
+  {
+    "external_key": "GS-B26-032",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "Which subatomic particle defines the identity of an element?",
+    "choices": [
+      "Electron",
+      "Isotope",
+      "Proton",
+      "Neutron"
+    ],
+    "correct_index": 2,
+    "explanation": "The number of protons in an atom's nucleus — called the atomic number — uniquely defines what element it is. Carbon always has 6 protons; oxygen always has 8. Neutrons can vary (creating isotopes of the same element) without changing the element's identity. Electrons can be gained or lost to form ions, but the element's identity remains the same. An isotope is not a subatomic particle; it is a variant of an element with a different number of neutrons.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::atomic-structure-protons"
+  },
+  {
+    "external_key": "GS-B26-033",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "Which of the following is an example of a chemical change rather than a physical change?",
+    "choices": [
+      "Salt dissolving in water",
+      "Glass breaking into pieces",
+      "Ice melting into water",
+      "Iron rusting in moist air"
+    ],
+    "correct_index": 3,
+    "explanation": "Iron rusting is a chemical change because iron reacts with oxygen and water to form a new substance (iron oxide) with different chemical properties. Melting ice is a physical change — water changes state but remains H₂O. Breaking glass is a physical change; only the shape changes, not the composition. Dissolving salt in water is generally considered a physical change because the salt can be recovered by evaporation and no new substance is formed.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::chemical-vs-physical-change"
+  },
+  {
+    "external_key": "GS-B26-034",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "A substance with a pH of 2 is best described as:",
+    "choices": [
+      "A neutral substance",
+      "A strong acid",
+      "A weak acid",
+      "A strong base"
+    ],
+    "correct_index": 1,
+    "explanation": "The pH scale runs from 0 to 14, with 7 being neutral. Values below 7 are acidic, and the lower the pH, the stronger the acid. A pH of 2 is far below neutral, indicating a strong acid (similar to stomach acid or dilute hydrochloric acid). A weak acid would have a pH closer to 7, such as 5 or 6. A strong base has a pH above 10. Neutral substances have a pH of exactly 7.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::ph-scale-acids"
+  },
+  {
+    "external_key": "GS-B26-035",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "What is the term for the substance that is dissolved in a solution?",
+    "choices": [
+      "Mixture",
+      "Solute",
+      "Solvent",
+      "Solution"
+    ],
+    "correct_index": 1,
+    "explanation": "A solute is the substance that is dissolved in a solution (for example, sugar dissolved in water). The solvent is the substance doing the dissolving (water in the previous example). A solution is the homogeneous mixture that results from combining solute and solvent. A mixture is a broader term that includes both homogeneous (solutions) and heterogeneous combinations of substances.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::solution-solute-solvent"
+  },
+  {
+    "external_key": "GS-B26-036",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "An ionic bond is most likely to form between which pair of elements?",
+    "choices": [
+      "Nitrogen and oxygen (both nonmetals)",
+      "Sodium (a metal) and chlorine (a nonmetal)",
+      "Two oxygen atoms",
+      "Carbon and hydrogen (both nonmetals)"
+    ],
+    "correct_index": 1,
+    "explanation": "Ionic bonds form through the transfer of electrons between a metal and a nonmetal — the metal loses electrons to become a cation and the nonmetal gains them to become an anion. Sodium (Na) and chlorine (Cl) form sodium chloride (table salt) via ionic bonding. Carbon and hydrogen share electrons through covalent bonds, as do two oxygen atoms (O₂) and nitrogen and oxygen. Nonmetal pairs typically form covalent bonds, not ionic bonds.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::ionic-bond-formation"
+  },
+  {
+    "external_key": "GS-B26-037",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "A metal block and a wooden block of the same volume are placed in water. The metal sinks and the wood floats. Which statement best explains this observation?",
+    "choices": [
+      "The metal displaces less water than the wood",
+      "The metal is heavier than the wood regardless of volume",
+      "The metal is denser than water; the wood is less dense than water",
+      "Wood contains air pockets that give it extra buoyancy beyond Archimedes' principle"
+    ],
+    "correct_index": 2,
+    "explanation": "Whether an object floats or sinks depends on its density relative to the fluid. If an object is denser than water (density > 1 g/cm³), it sinks; if less dense, it floats. Metal has a density much greater than 1 g/cm³, so it sinks. Most woods have densities less than 1 g/cm³, so they float. The comparison should always be made on a density basis, not total mass. Since both blocks have the same volume, they displace the same amount of water — buoyancy force is equal — but the metal is denser, so its weight exceeds the buoyant force.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::density-buoyancy"
+  },
+  {
+    "external_key": "GS-B26-038",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "When a chemical reaction releases heat to its surroundings, it is classified as:",
+    "choices": [
+      "Exothermic",
+      "Endothermic",
+      "Oxidative",
+      "Catalytic"
+    ],
+    "correct_index": 0,
+    "explanation": "An exothermic reaction releases energy (usually as heat) to the surroundings, causing the surroundings to feel warmer. Combustion and respiration are common examples. An endothermic reaction absorbs heat from the surroundings, making the environment feel cooler (like a cold pack). A catalytic reaction is one sped up by a catalyst; it can be either exothermic or endothermic. Oxidative simply describes a type of reaction involving oxygen; oxidation can be exothermic (burning) or endothermic depending on conditions.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::exothermic-reactions"
+  },
+  {
+    "external_key": "GS-B26-039",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Which change would most increase the solubility of a gas in a liquid?",
+    "choices": [
+      "Stirring the liquid vigorously",
+      "Decreasing the temperature of the liquid",
+      "Decreasing the pressure above the liquid",
+      "Increasing the temperature of the liquid"
+    ],
+    "correct_index": 1,
+    "explanation": "Gas solubility in liquids increases as temperature decreases (cold soda holds more CO₂ than warm soda) and as pressure increases (Henry's Law). Decreasing temperature allows more gas molecules to remain dissolved. Increasing temperature causes dissolved gases to escape. Decreasing pressure reduces the amount of gas that can dissolve. Stirring can speed the rate of dissolving but does not increase the maximum solubility (saturation point) of the gas.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::gas-solubility-temperature"
+  },
+  {
+    "external_key": "GS-B26-040",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Which phase change describes a solid converting directly to a gas without passing through a liquid state?",
+    "choices": [
+      "Deposition",
+      "Sublimation",
+      "Evaporation",
+      "Condensation"
+    ],
+    "correct_index": 1,
+    "explanation": "Sublimation is the direct phase change from solid to gas, bypassing the liquid state. Dry ice (solid CO₂) sublimes at room temperature and pressure. Condensation is the change from gas to liquid. Deposition is the reverse of sublimation — gas turning directly into a solid (such as frost forming). Evaporation is the phase change from liquid to gas.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::sublimation-phase-change"
+  },
+  {
+    "external_key": "GS-B26-041",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "A solution has a pH of 3 and another has a pH of 5. How many times more acidic is the pH 3 solution compared to the pH 5 solution?",
+    "choices": [
+      "10 times",
+      "2 times",
+      "1,000 times",
+      "100 times"
+    ],
+    "correct_index": 3,
+    "explanation": "The pH scale is logarithmic, meaning each unit difference represents a tenfold change in hydrogen ion concentration. A difference of 2 pH units (from pH 5 to pH 3) means the pH 3 solution has 10² = 100 times higher H⁺ concentration, making it 100 times more acidic. A difference of 1 pH unit equals 10 times, not 2 times. Ten times would correspond to a difference of exactly 1 pH unit. One thousand times (10³) would require a difference of 3 pH units.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::ph-logarithmic-scale"
+  },
+  {
+    "external_key": "GS-B26-042",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "In a chemical reaction, the total mass of the reactants equals the total mass of the products. This illustrates:",
+    "choices": [
+      "The first law of thermodynamics",
+      "Avogadro's law",
+      "The law of definite proportions",
+      "The law of conservation of mass"
+    ],
+    "correct_index": 3,
+    "explanation": "The law of conservation of mass states that matter is neither created nor destroyed in a chemical reaction — atoms are rearranged, so the mass of reactants equals the mass of products. The law of definite proportions states that a compound always contains elements in the same ratio by mass. The first law of thermodynamics concerns conservation of energy, not mass. Avogadro's law relates gas volume to the number of moles at constant temperature and pressure.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::conservation-of-mass"
+  },
+  {
+    "external_key": "GS-B26-043",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "Carbon-12 and Carbon-14 are both forms of the element carbon. What makes them different from each other?",
+    "choices": [
+      "They have different numbers of electrons",
+      "They belong to different periods on the periodic table",
+      "They have different numbers of neutrons",
+      "They have different numbers of protons"
+    ],
+    "correct_index": 2,
+    "explanation": "Carbon-12 and Carbon-14 are isotopes of carbon — they have the same number of protons (6) but different mass numbers, meaning they differ in the number of neutrons (Carbon-12 has 6 neutrons; Carbon-14 has 8 neutrons). Proton number defines the element, so both isotopes have 6 protons — changing this would make a different element. In a neutral atom, electron count equals proton count, so both have 6 electrons. All carbon isotopes are in the same period (period 2) of the periodic table.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::isotopes-neutrons"
+  },
+  {
+    "external_key": "GS-B26-044",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "A metalloid is best described as an element that:",
+    "choices": [
+      "Has properties intermediate between metals and nonmetals",
+      "Is a metal that reacts with water to produce hydrogen gas",
+      "Is a nonmetal found in group 17 of the periodic table",
+      "Exists only as a gas at room temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "Metalloids (also called semimetals) — such as silicon, germanium, arsenic, and boron — have physical and chemical properties that fall between those of metals and nonmetals; for example, they may conduct electricity under some conditions (semiconductors) but not others. Metals that react with water to produce hydrogen gas are alkali metals (group 1). Group 17 elements are halogens, which are highly reactive nonmetals. Noble gases are the elements that exist as gases at room temperature, not metalloids.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::metalloids-periodic-table"
+  },
+  {
+    "external_key": "GS-B26-045",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "A 40 kg object has a volume of 8 liters (8,000 cm³). Will this object float or sink in water, and why?",
+    "choices": [
+      "It sinks, because its volume is too small to generate enough buoyant force",
+      "It sinks, because its density (5 g/cm³) is greater than water's density (1 g/cm³)",
+      "It floats, because heavy objects always float in large bodies of water",
+      "It floats, because its mass (40 kg) is less than the mass of water displaced"
+    ],
+    "correct_index": 1,
+    "explanation": "Density = mass / volume = 40,000 g / 8,000 cm³ = 5 g/cm³. Since this is greater than water's density of 1 g/cm³, the object sinks. The buoyant force equals the weight of displaced water: 8,000 cm³ × 1 g/cm³ = 8,000 g = 8 kg, which is much less than the object's 40 kg weight, confirming it sinks. Mass alone does not determine buoyancy — density does. Volume contributes to buoyancy but must be compared to density, not treated independently. Mass and size of the body of water are irrelevant.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::density-calculation-float-sink"
+  },
+  {
+    "external_key": "GS-B26-046",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "Newton's first law of motion states that an object at rest will remain at rest unless acted upon by what?",
+    "choices": [
+      "Gravity alone",
+      "An equal and opposite force",
+      "A net external force",
+      "Internal momentum"
+    ],
+    "correct_index": 2,
+    "explanation": "Newton's first law (the law of inertia) states that an object at rest stays at rest, and an object in motion stays in motion with the same velocity, unless acted upon by a net external (unbalanced) force. Gravity is a force but it is already in equilibrium with the normal force for a resting object on a surface; only an unbalanced net force changes the motion. An equal and opposite force results in no net force, so it would not change the state of motion. Internal momentum describes motion already present and is not an external cause of motion.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::newtons-first-law"
+  },
+  {
+    "external_key": "GS-B26-047",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "A car travels 150 kilometers in 3 hours. What is its average speed?",
+    "choices": [
+      "300 km/h",
+      "0.02 km/h",
+      "50 km/h",
+      "450 km/h"
+    ],
+    "correct_index": 2,
+    "explanation": "Average speed is calculated as distance divided by time: 150 km ÷ 3 h = 50 km/h. Multiplying distance by time (150 × 3 = 450) confuses the formula for speed. Dividing time by distance (3 ÷ 150 = 0.02) inverts the formula. Doubling distance (300 km/h) has no basis in the speed formula.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::speed-distance-time"
+  },
+  {
+    "external_key": "GS-B26-048",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "Which type of simple machine consists of a rigid bar that pivots around a fixed point called a fulcrum?",
+    "choices": [
+      "Lever",
+      "Wedge",
+      "Pulley",
+      "Inclined plane"
+    ],
+    "correct_index": 0,
+    "explanation": "A lever is a rigid bar that rotates around a fixed pivot point called the fulcrum. Levers are classified as first, second, or third class depending on the relative positions of the fulcrum, effort, and load. A pulley uses a grooved wheel and rope to change the direction or magnitude of a force. An inclined plane is a sloped surface used to raise a load. A wedge is a double inclined plane used to split or separate objects.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::lever-fulcrum"
+  },
+  {
+    "external_key": "GS-B26-049",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "Sound travels fastest through which medium?",
+    "choices": [
+      "Air",
+      "Liquid water",
+      "A vacuum",
+      "Solid steel"
+    ],
+    "correct_index": 3,
+    "explanation": "Sound is a mechanical wave that requires a medium and travels fastest through solids because the particles are closely packed and can transmit vibrations very efficiently. Steel conducts sound at about 5,960 m/s. Water carries sound at about 1,480 m/s, faster than air but slower than steel. Air transmits sound at only about 343 m/s. Sound cannot travel through a vacuum at all because there are no particles to vibrate.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::sound-medium-speed"
+  },
+  {
+    "external_key": "GS-B26-050",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "Which part of the electromagnetic spectrum has the highest frequency?",
+    "choices": [
+      "Gamma rays",
+      "Radio waves",
+      "Visible light",
+      "X-rays"
+    ],
+    "correct_index": 0,
+    "explanation": "The electromagnetic spectrum, ordered from lowest to highest frequency, is: radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, and gamma rays. Gamma rays have the highest frequency (and shortest wavelength) of all electromagnetic radiation. X-rays have high frequency but are below gamma rays. Visible light is in the middle of the spectrum. Radio waves have the lowest frequency and longest wavelength.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::electromagnetic-spectrum-frequency"
+  },
+  {
+    "external_key": "GS-B26-051",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "A 10 N force is applied to a 5 kg object. What is the resulting acceleration?",
+    "choices": [
+      "15 m/s²",
+      "50 m/s²",
+      "0.5 m/s²",
+      "2 m/s²"
+    ],
+    "correct_index": 3,
+    "explanation": "Newton's second law states that F = ma, so acceleration a = F/m = 10 N / 5 kg = 2 m/s². Multiplying force by mass (10 × 5 = 50) confuses the formula. Dividing mass by force (5 / 10 = 0.5) inverts the relationship. Adding force and mass (10 + 5 = 15) has no physical basis in Newton's second law.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::newtons-second-law-calculation"
+  },
+  {
+    "external_key": "GS-B26-052",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "A worker lifts a 200 N crate a vertical distance of 3 meters. How much work is done on the crate?",
+    "choices": [
+      "203 J",
+      "600 J",
+      "200 J",
+      "67 J"
+    ],
+    "correct_index": 1,
+    "explanation": "Work = force × distance = 200 N × 3 m = 600 joules. Only the force and the distance in the direction of the force are used; both values are provided directly. 200 J would only be the work if the distance were 1 meter. 67 J results from dividing force by distance (200/3), which is not the formula. Adding force and distance (200+3=203) has no physical meaning.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::work-calculation"
+  },
+  {
+    "external_key": "GS-B26-053",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "A circuit has a voltage of 12 V and a resistance of 4 ohms. What is the current flowing through the circuit?",
+    "choices": [
+      "3 A",
+      "8 A",
+      "0.33 A",
+      "48 A"
+    ],
+    "correct_index": 0,
+    "explanation": "Ohm's Law states V = IR, so current I = V/R = 12 V / 4 Ω = 3 amperes. Multiplying voltage by resistance (12 × 4 = 48) gives the wrong operation. Subtracting resistance from voltage (12 - 4 = 8) has no basis in Ohm's Law. Dividing resistance by voltage (4/12 ≈ 0.33) inverts the formula.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::ohms-law-current"
+  },
+  {
+    "external_key": "GS-B26-054",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "When you push against a wall and the wall pushes back on you with equal force, this illustrates which of Newton's laws?",
+    "choices": [
+      "Newton's first law (inertia)",
+      "The law of conservation of momentum",
+      "Newton's third law (action-reaction)",
+      "Newton's second law (F=ma)"
+    ],
+    "correct_index": 2,
+    "explanation": "Newton's third law states that for every action force, there is an equal and opposite reaction force. When you push on the wall (action), the wall pushes back on you with the same magnitude but opposite direction (reaction). Newton's first law concerns objects remaining at rest or in uniform motion without a net force. Newton's second law relates force, mass, and acceleration. The law of conservation of momentum applies to systems of interacting objects and their total momentum, not the paired forces described here.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::newtons-third-law"
+  },
+  {
+    "external_key": "GS-B26-055",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "A sound wave has a frequency of 500 Hz and a wavelength of 0.68 m. What is its speed?",
+    "choices": [
+      "340 m/s",
+      "0.00136 m/s",
+      "735 m/s",
+      "500.68 m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "Wave speed = frequency × wavelength = 500 Hz × 0.68 m = 340 m/s, which is approximately the speed of sound in air at room temperature — confirming the answer is reasonable. Dividing frequency by wavelength (500/0.68 ≈ 735) confuses the formula. Dividing wavelength by frequency (0.68/500 = 0.00136) also misapplies the formula. Adding frequency and wavelength has no physical meaning.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::wave-speed-calculation"
+  },
+  {
+    "external_key": "GS-B26-056",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "A pulley system uses 4 rope segments supporting a load. What is the mechanical advantage, and how much force is needed to lift a 400 N load?",
+    "choices": [
+      "MA = 400; 1 N of effort required",
+      "MA = 4; 400 N of effort required",
+      "MA = 2; 200 N of effort required",
+      "MA = 4; 100 N of effort required"
+    ],
+    "correct_index": 3,
+    "explanation": "In a pulley system, the mechanical advantage equals the number of rope segments supporting the load. With 4 rope segments, MA = 4, and the effort force required equals the load divided by the MA: 400 N / 4 = 100 N. An MA of 400 is not realistic for a 4-rope pulley. An MA of 2 would require only 2 supporting rope segments. An MA of 4 but still requiring 400 N of effort would mean no mechanical advantage was gained at all.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::pulley-mechanical-advantage"
+  },
+  {
+    "external_key": "GS-B26-057",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "An object is dropped from rest and falls freely for 3 seconds. Assuming g = 10 m/s², what is its speed just before hitting the ground?",
+    "choices": [
+      "45 m/s",
+      "30 m/s",
+      "90 m/s",
+      "10 m/s"
+    ],
+    "correct_index": 1,
+    "explanation": "For free-fall from rest, speed = g × t = 10 m/s² × 3 s = 30 m/s. This uses the kinematic equation v = v₀ + at with initial speed v₀ = 0. The distance fallen would be ½gt² = ½ × 10 × 9 = 45 meters, which is the displacement, not the speed. 90 m/s would result from using g × t² = 10 × 9, incorrectly applying the distance formula to velocity. 10 m/s is the speed after only 1 second, not 3.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::freefall-velocity"
+  },
+  {
+    "external_key": "GS-B26-058",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "Two lightbulbs are connected in a series circuit. If one bulb burns out and breaks the circuit, what happens to the other bulb?",
+    "choices": [
+      "It also goes out because the circuit is broken",
+      "Its brightness is unaffected because series circuits are independent",
+      "It remains on because electricity can reroute around the broken bulb",
+      "It glows brighter because all the voltage is now across it"
+    ],
+    "correct_index": 0,
+    "explanation": "In a series circuit, all components share the same single path for current to flow. If one bulb burns out and creates an open break, current cannot flow anywhere in the circuit, so the other bulb also goes out. Increased brightness would be expected if one bulb were removed in a series circuit while maintaining the circuit — but a burned-out bulb creates an open circuit. Rerouting current is a property of parallel circuits, not series circuits. In series circuits, the components are not independent; they all share the same current path.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::series-circuit-behavior"
+  },
+  {
+    "external_key": "GS-B26-059",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "A 60 W lightbulb operates for 5 hours. How much energy (in joules) does it consume?",
+    "choices": [
+      "12 J",
+      "1,080 J",
+      "1,080,000 J",
+      "300 J"
+    ],
+    "correct_index": 2,
+    "explanation": "Power (watts) = energy (joules) / time (seconds), so energy = power × time. First convert hours to seconds: 5 h × 3,600 s/h = 18,000 s. Then energy = 60 W × 18,000 s = 1,080,000 joules (1.08 MJ). Simply multiplying 60 W × 5 h = 300 gives watt-hours, not joules — the time must be in seconds. Dividing 60 by 5 gives 12, which is not meaningful here. 1,080 J would result from incorrectly multiplying 60 × 18 instead of 60 × 18,000.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::power-energy-calculation"
+  },
+  {
+    "external_key": "GS-B26-060",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "A roller coaster car at the top of a hill has maximum potential energy and minimum kinetic energy. As it descends, assuming no friction, which statement is correct?",
+    "choices": [
+      "Kinetic energy is created from nothing as the car speeds up",
+      "Total energy increases as the car gains speed",
+      "Potential energy and kinetic energy both increase during descent",
+      "Potential energy converts to kinetic energy; total mechanical energy remains constant"
+    ],
+    "correct_index": 3,
+    "explanation": "The law of conservation of energy states that energy cannot be created or destroyed — only converted from one form to another. As the roller coaster descends, gravitational potential energy (mgh) is converted into kinetic energy (½mv²), keeping total mechanical energy constant in the absence of friction. Energy is not created from nothing; the kinetic energy comes from converting potential energy. Total energy does not increase — it stays constant. Potential energy decreases as height drops; it does not increase simultaneously with kinetic energy.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::energy-conservation-roller-coaster"
+  }
+]

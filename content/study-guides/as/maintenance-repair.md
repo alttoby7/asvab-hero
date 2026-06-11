@@ -21,6 +21,8 @@ pitfalls:
   - "Tightening lug nuts in a circle rather than a star pattern, uneven clamping can warp brake rotors"
   - "Bleeding brakes starting at the wrong wheel, always start farthest from the master cylinder (typically right rear)"
   - "Jumping a battery with reversed polarity, positive to negative blows fuses and can destroy the alternator and ECU"
+  - "Diagnosing milky gray oil as just old oil and fixing it with an oil change, the milky look means coolant is mixing with the oil (often a blown head gasket), which must be repaired first"
+  - "Ignoring a brake squeal because the brakes still stop the car, the wear-indicator squeal is an early warning; waiting until grinding starts means the rotors are already being damaged"
 worked_examples:
   - prompt: "A mechanic pulls the engine oil dipstick and sees the level is correct but the oil looks milky gray. What does this indicate?"
     solution: "Coolant contamination, the milky appearance comes from water or antifreeze mixing with oil. The most common cause is a blown head gasket. The repair is not an oil change, it's diagnosing and fixing the gasket failure first, then flushing the engine."
@@ -28,6 +30,12 @@ worked_examples:
     solution: "Start at the caliper farthest from the master cylinder (right rear on most vehicles), then left rear, right front, left front. This pushes any air toward and out of each bleeder screw in sequence without trapping bubbles in shorter lines."
   - prompt: "A wheel with five lug nuts is being reinstalled. The first nut is tightened to 20 ft-lb. Describe the correct sequence for the remaining four."
     solution: "Tighten in a star (pentagonal) pattern, skip to the nut directly across from the first, then continue working across rather than around. This distributes clamping load evenly and prevents the rotor or drum from being pulled out of plane, which causes vibration and rotor warp."
+  - prompt: "A driver finds a puddle of bright green fluid under the front of the car. Which system is leaking?"
+    solution: "The cooling system. Green (or orange) fluid is engine coolant/antifreeze. Brown or amber points to engine oil, and bright red usually means automatic transmission fluid or power-steering fluid. Color is the fastest first clue to which system is losing fluid."
+  - prompt: "A car makes a high-pitched squeal that appears only while braking and disappears once the pedal is released. What does this most likely indicate?"
+    solution: "Worn brake pads. Many pads have a built-in metal wear indicator that scrapes the rotor and squeals when the friction material gets low, signaling it is time to replace the pads before the backing damages the rotor."
+  - prompt: "A mechanic is choosing a welding process to join thin automotive sheet metal cleanly with good control. Which process is best suited?"
+    solution: "MIG (or TIG) welding. MIG is fast and clean and handles thin sheet metal well; TIG offers even finer control for precision work. Stick (arc) welding is better for thick, heavy steel in structural work but tends to burn through thin sheet."
 ---
 
 ## What the ASVAB is testing

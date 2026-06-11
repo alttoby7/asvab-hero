@@ -21,6 +21,8 @@ pitfalls:
   - "Reading a micrometer without accounting for the thimble scale against the barrel datum line"
   - "Assuming a Phillips driver works in a Pozidriv head, the cross geometry is slightly different and causes cam-out"
   - "Using an adjustable wrench backward, the movable jaw should face the direction of pull"
+  - "Reaching for a ball-peen hammer on a carpentry job, the ball-peen is a machinist's hammer for metal work; carpenters use a claw hammer to drive and pull nails"
+  - "Picking a ratchet or breaker bar to set a final torque value, only a torque wrench measures applied foot-pounds; the others just turn the fastener"
 worked_examples:
   - prompt: "A mechanic needs to tighten a cylinder-head bolt to exactly 65 ft-lb. Which tool is required?"
     solution: "A torque wrench. A standard ratchet has no way to measure applied torque, you would either under-tighten (leak risk) or over-tighten (bolt stretch or thread damage). Set the torque wrench to 65 ft-lb and stop when the click sounds."
@@ -28,6 +30,12 @@ worked_examples:
     solution: "A feeler gauge. Select the 0.035-in blade; it should slide through the electrode gap with slight drag. Too loose means the gap is wide; the blade won't pass if the gap is too tight."
   - prompt: "A bolt hole has stripped threads and needs to be re-threaded for a 3/8-16 bolt. Which tool cuts those internal threads?"
     solution: "A tap, specifically a 3/8-16 tap. The 3/8 is the diameter in inches; 16 is the number of threads per inch. A die would be used if you were cutting threads on the bolt itself, not the hole."
+  - prompt: "A machinist needs to check the thickness of a disc brake rotor to a precise measurement. Which tool is correct?"
+    solution: "A micrometer. It reads to a thousandth of an inch, the precision required for rotor thickness and wall measurements. A feeler gauge only checks small gaps, and a torque wrench measures tightening force, not dimensions."
+  - prompt: "A plumber needs to grip and turn a round steel pipe that has no flats for a wrench to catch. Which tool is designed for this?"
+    solution: "A pipe wrench (Stilson wrench). Its serrated teeth and pivoting jaw bite harder into the round pipe as pressure is applied to the handle. A standard open-end or box-end wrench is made for hex nuts and bolts and would simply slip on a smooth pipe."
+  - prompt: "A wood file leaves the surface too rough. Looking at the grit options, which file produces the smoothest finish, a coarse one or a fine one?"
+    solution: "A fine file. Coarseness controls how much material is removed and how rough the result is: coarse files (like a rasp) cut fast and leave a rough surface for shaping, while fine-tooth files remove little material and leave a smooth, finished surface."
 ---
 
 ## What the ASVAB is actually testing

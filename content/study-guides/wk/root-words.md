@@ -15,6 +15,8 @@ pitfalls:
   - "Confusing roots that look similar: 'ped' (foot, Latin: pedal) vs. 'ped' (child, Greek: pediatric), check the full word"
   - "Forgetting that a root often changes spelling when combined: 'duc' becomes 'duct' or 'duce'"
   - "Relying on root alone without the prefix, 'benign' vs. 'malign' flip meaning entirely with prefix"
+  - "Seeing CRED in 'credible' and guessing 'creative', shared letters are not shared roots, CRED means believe, not create"
+  - "Confusing MAL (bad) words with magnitude words: 'malevolent' is hostile, while 'magnanimous' (magna = great) is generous"
 worked_examples:
   - prompt: "CHRONIC most nearly means: (A) sudden (B) long-lasting (C) painful (D) contagious"
     solution: "Chron = time. Chronic = persisting over a long period of time. Answer: B"
@@ -22,6 +24,20 @@ worked_examples:
     solution: "Porous derives from 'pore' (opening/passage). A porous material has many small openings, it allows passage. Answer: B"
   - prompt: "MAGNANIMOUS most nearly means: (A) powerful (B) large (C) generous in spirit (D) easily angered"
     solution: "Magnus = great. Animus = spirit/mind. Magnanimous = great-spirited, generous, forgiving. Answer: C"
+  - prompt: "TENACIOUS most nearly means: (A) hesitant (B) holding firmly (C) wealthy (D) flexible"
+    solution: "The root TEN/TAIN means hold (as in retain, contain, tenant). Tenacious describes someone who holds on firmly and will not let go, persistent. Answer: B"
+  - prompt: "PERSPICACIOUS most nearly means: (A) sweaty (B) confused (C) keenly perceptive (D) talkative"
+    solution: "The root SPEC/SPIC means see or look (as in inspect, spectator). Perspicacious means seeing through to the truth, having sharp insight. Answer: C"
+  - prompt: "VERACITY most nearly means: (A) speed (B) truthfulness (C) anger (D) greenness"
+    solution: "The root VER means truth (as in verify, verdict). Veracity is the quality of being truthful. Answer: B"
+  - prompt: "PACIFY most nearly means: (A) to calm (B) to attack (C) to package (D) to confuse"
+    solution: "The root PAC means peace (as in pact, Pacific). To pacify is to bring to peace, to calm or soothe. Answer: A"
+  - prompt: "LUCID most nearly means: (A) dark (B) clear (C) lucky (D) sleepy"
+    solution: "The root LUC/LUM means light (as in illuminate, translucent, lumen). Lucid means clear and easy to understand, as if well-lit. Answer: B"
+  - prompt: "CREDIBLE most nearly means: (A) believable (B) huge (C) creative (D) edible"
+    solution: "The root CRED means believe (as in credit, incredible, creed). Credible means worthy of belief, trustworthy. Answer: A"
+  - prompt: "VOCIFEROUS most nearly means: (A) silent (B) loud and forceful (C) hungry (D) honest"
+    solution: "VOC means voice and the root FER means carry (as in transfer, ferry). Vociferous describes a voice carried loudly and insistently. Answer: B"
 ---
 
 ## The case for learning roots

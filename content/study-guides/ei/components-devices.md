@@ -16,6 +16,8 @@ pitfalls:
   - "Mixing up a fuse (one-time protection, must be replaced) with a circuit breaker (reusable, can be reset)"
   - "Assuming a transformer works on DC, transformers require alternating current (AC) to function"
   - "Forgetting that a ground symbol (three horizontal lines, each shorter) indicates the reference 0 V point, not an actual physical connection to earth in all cases"
+  - "Confusing an inductor with a capacitor: an inductor stores energy in a magnetic field and opposes changes in current, while a capacitor stores energy in an electric field and opposes changes in voltage"
+  - "Wiring an LED backwards: an LED only emits light when forward-biased (longer leg, the anode, to the positive side); reverse-biased it stays dark and conducts no current"
 worked_examples:
   - prompt: "A component allows current to flow in only one direction. What is it?"
     solution: "A diode. It conducts when forward-biased (positive voltage at anode) and blocks current when reverse-biased."
@@ -23,6 +25,12 @@ worked_examples:
     solution: "A circuit breaker, it trips on overcurrent and can be manually or automatically reset. A fuse would require replacement."
   - prompt: "Which component would you use to temporarily store charge and release it quickly (as in a camera flash)?"
     solution: "A capacitor, it charges up and can discharge rapidly, making it ideal for pulsed loads like a flash unit."
+  - prompt: "A transformer has 200 turns on the primary and 50 turns on the secondary. If 120 V AC is applied to the primary, what is the secondary voltage?"
+    solution: "Vs/Vp = Ns/Np, so Vs = Vp × (Ns/Np) = 120 × (50/200) = 120 × 0.25 = 30 V. Fewer turns on the secondary means a step-down transformer; voltage drops and current rises."
+  - prompt: "A circuit needs to convert AC to DC so a device gets one-directional current. Which component performs this rectification, and why?"
+    solution: "A diode. It conducts only when forward-biased, so it passes the positive half of the AC wave and blocks the reverse half, turning alternating current into pulsing DC. This is the basis of a rectifier."
+  - prompt: "You want a small base current to switch a larger load like a lamp or relay on and off. Which three-terminal device does this, and which terminal controls it?"
+    solution: "A transistor. A small current at the base controls the much larger current flowing between collector and emitter, letting it act as a switch (fully on or off) or as an amplifier (proportional control)."
 ---
 
 ## What the ASVAB is actually testing

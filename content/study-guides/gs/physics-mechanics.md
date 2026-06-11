@@ -21,7 +21,8 @@ pitfalls:
   - "Forgetting that Newton's 1st Law applies to objects already moving, an object in motion stays in motion unless a net force acts on it"
   - "Confusing work (requires displacement) with force, pushing on an immovable wall does zero work"
   - "Thinking higher frequency = longer wavelength, they're inversely related at constant wave speed"
-  - "Mixing up conduction and convection, conduction is particle-to-particle contact; convection requires fluid (liquid or gas) movement"
+  - "Believing a machine multiplies energy, a simple machine trades force for distance; the work output never exceeds the work you put in"
+  - "Assuming all electromagnetic waves travel at different speeds, in a vacuum all EM waves (radio, light, X-rays) travel at the speed of light"
 worked_examples:
   - prompt: "A 10 kg object accelerates at 3 m/s². What net force is acting on it?"
     solution: "F = ma = 10 kg × 3 m/s² = 30 Newtons"
@@ -29,6 +30,14 @@ worked_examples:
     solution: "W = F × d → F = W/d = 600 J ÷ 12 m = 50 Newtons"
   - prompt: "A wave has a frequency of 200 Hz and a wavelength of 2 m. What is its speed?"
     solution: "v = f × λ = 200 Hz × 2 m = 400 m/s"
+  - prompt: "A motor does 1,200 J of work in 4 seconds. What is its power output?"
+    solution: "P = W/t = 1,200 J ÷ 4 s = 300 Watts"
+  - prompt: "A lever lifts a 200 N load using an input force of 50 N. What is the mechanical advantage of this lever?"
+    solution: "Mechanical advantage = load force ÷ effort force = 200 N ÷ 50 N = 4. The lever multiplies the input force four times. Answer: 4"
+  - prompt: "A 12-volt battery drives a current through a resistor of 4 ohms. Using Ohm's law, what current flows through the circuit?"
+    solution: "Ohm's law: V = I × R, so I = V/R = 12 V ÷ 4 ohms = 3 amperes. Answer: 3 A"
+  - prompt: "Order these electromagnetic waves from longest to shortest wavelength: X-rays, radio waves, visible light."
+    solution: "Radio waves have the longest wavelength, visible light is in the middle, and X-rays have the shortest. Answer: radio waves, visible light, X-rays"
 ---
 
 ## What the ASVAB is actually testing

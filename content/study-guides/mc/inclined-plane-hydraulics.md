@@ -16,6 +16,8 @@ pitfalls:
   - "Confusing piston area with piston diameter, if given diameter, area = π × (d/2)² before computing MA"
   - "Assuming higher hydraulic MA gives free energy, the input piston must travel farther to move the output piston less"
   - "Treating wedges and screws as different from inclined planes, they're inclined planes wrapped or stacked"
+  - "Forgetting buoyancy equals the weight of displaced fluid, a submerged object's apparent weight loss matches the fluid it pushes aside, not the object's own weight"
+  - "Misreading Hooke's law, the spring force grows in proportion to how far it is stretched (F = k x x); doubling the stretch doubles the force"
 worked_examples:
   - prompt: "A 600-lb engine is pushed up a ramp that is 12 feet long and 3 feet high. What is the ideal mechanical advantage, and how much force is required (ignore friction)?"
     solution: "MA = length ÷ height = 12 ÷ 3 = 4. Effort = Load ÷ MA = 600 ÷ 4 = 150 lb. The ramp multiplies force by 4, but the engine must travel 12 feet to rise just 3 feet."
@@ -23,6 +25,12 @@ worked_examples:
     solution: "MA = A₂ ÷ A₁ = 20 ÷ 2 = 10. Output force = 50 × 10 = 500 lb. Pressure at the input: P = 50 ÷ 2 = 25 psi. That same 25 psi acts on the output piston: 25 × 20 = 500 lb. Both routes confirm the answer."
   - prompt: "A wedge is 8 inches long and 2 inches thick at the wide end. What is its mechanical advantage?"
     solution: "A wedge is an inclined plane, MA = length ÷ thickness = 8 ÷ 2 = 4. The wedge multiplies the driving force by 4 in the splitting direction. Longer, thinner wedges have higher MA and split more easily but require more driving distance."
+  - prompt: "A hydraulic press has an input piston of 5 in^2 and an output piston of 50 in^2. If 30 lb is applied to the input, what force appears at the output, and how does Pascal's law confirm it?"
+    solution: "MA = A2 / A1 = 50 / 5 = 10, so output force = 30 x 10 = 300 lb. Check with pressure: P = F1 / A1 = 30 / 5 = 6 psi, and that 6 psi acts on the output, 6 x 50 = 300 lb. Both routes agree."
+  - prompt: "A spring stretches 4 inches when a 20-lb weight hangs from it. What is the spring constant, and how far will a 35-lb weight stretch it?"
+    solution: "Hooke's law: F = k x x, so k = F / x = 20 / 4 = 5 lb per inch. For 35 lb: x = F / k = 35 / 5 = 7 inches. The stretch stays proportional to the load as long as the spring is not overstretched."
+  - prompt: "A block displaces 3 cubic feet of water when fully submerged. Water weighs about 62.4 lb per cubic foot. What is the buoyant force on the block?"
+    solution: "By Archimedes' principle, buoyant force = weight of displaced water = 3 x 62.4 = 187.2 lb pushing upward. If the block weighs less than 187.2 lb it floats; if more, it sinks but feels 187.2 lb lighter underwater."
 diagrams:
   - type: inclined-plane
     after: "Inclined planes: the long-cut principle"

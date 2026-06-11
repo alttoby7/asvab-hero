@@ -1,0 +1,1022 @@
+[
+  {
+    "external_key": "AS-B28-001",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "During which stroke of a 4-stroke engine cycle does the spark plug fire to ignite the air-fuel mixture?",
+    "choices": [
+      "Exhaust",
+      "Compression",
+      "Power",
+      "Intake"
+    ],
+    "correct_index": 2,
+    "explanation": "The spark plug fires at the very end of the compression stroke, but ignition initiates the power (combustion) stroke, which is when the burning gases drive the piston down. The intake stroke draws air-fuel in; the exhaust stroke pushes spent gases out. Compression squeezes the mixture but the actual burn happens at the start of power.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::4-stroke-cycle"
+  },
+  {
+    "external_key": "AS-B28-002",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the primary job of the alternator in a vehicle's electrical system?",
+    "choices": [
+      "Recharge the battery and power electrical loads while the engine runs",
+      "Store electrical energy for ignition",
+      "Crank the engine on startup",
+      "Convert AC household current to DC"
+    ],
+    "correct_index": 0,
+    "explanation": "The alternator generates electricity while the engine runs, recharging the battery and powering accessories. The starter motor cranks the engine. The battery stores energy, it doesn't make it. Alternators produce AC internally but rectify it to DC for the vehicle; they don't convert household current.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::alternator"
+  },
+  {
+    "external_key": "AS-B28-003",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What component allows the two rear wheels to turn at different speeds when a rear-wheel-drive car goes around a corner?",
+    "choices": [
+      "Drive shaft",
+      "Differential",
+      "Transfer case",
+      "Transmission"
+    ],
+    "correct_index": 1,
+    "explanation": "The differential splits torque between the two drive wheels while letting them rotate at different speeds in a turn. The transmission changes gear ratios between engine and driveshaft. A transfer case splits power between front and rear axles in 4WD. The drive shaft simply transmits rotation from transmission to differential.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::differential"
+  },
+  {
+    "external_key": "AS-B28-004",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "Which cooling-system part opens once the engine reaches operating temperature, allowing coolant to flow to the radiator?",
+    "choices": [
+      "Heater core",
+      "Water pump",
+      "Thermostat",
+      "Radiator cap"
+    ],
+    "correct_index": 2,
+    "explanation": "The thermostat is a temperature-sensitive valve that stays closed during warm-up and opens at a set temperature to let coolant circulate to the radiator. The water pump moves coolant whenever the engine runs. The heater core warms the cabin. The radiator cap regulates pressure, not flow timing.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::cooling-system"
+  },
+  {
+    "external_key": "AS-B28-005",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What does the catalytic converter do in an exhaust system?",
+    "choices": [
+      "Cools exhaust gases before they exit",
+      "Increases fuel pressure to the injectors",
+      "Muffles engine noise",
+      "Reduces harmful emissions by converting them to less toxic substances"
+    ],
+    "correct_index": 3,
+    "explanation": "The catalytic converter uses precious-metal catalysts to convert CO, HC, and NOx into CO2, water, and nitrogen. The muffler handles noise. Exhaust cooling is a passive byproduct of distance from the engine. Fuel pressure is set by the fuel pump and regulator, nowhere near the exhaust.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::catalytic-converter"
+  },
+  {
+    "external_key": "AS-B28-006",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A driver hears a loud grinding noise from the front wheels every time the brakes are applied. The most likely cause is:",
+    "choices": [
+      "Loose lug nuts",
+      "Low power steering fluid",
+      "Brake pads worn down to the metal backing plate",
+      "A clogged catalytic converter"
+    ],
+    "correct_index": 2,
+    "explanation": "Once brake pad friction material is gone, the steel backing plate grinds directly against the rotor, producing a loud metallic grind whenever the brakes engage. Power steering issues cause whining when turning, not braking. A clogged cat causes power loss and rotten-egg smell. Loose lugs produce a clunk or wobble, not a brake-correlated grind.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::brakes-wear"
+  },
+  {
+    "external_key": "AS-B28-007",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "Anti-lock braking systems (ABS) prevent wheel lockup primarily by:",
+    "choices": [
+      "Switching to engine braking only",
+      "Rapidly modulating brake pressure at each wheel using sensors and a controller",
+      "Increasing brake fluid pressure continuously",
+      "Applying the parking brake automatically"
+    ],
+    "correct_index": 1,
+    "explanation": "ABS uses wheel-speed sensors and a hydraulic control unit to rapidly pulse brake pressure when a wheel starts to skid, keeping it rolling for steering control. Constantly raising pressure would worsen lockup. The parking brake is unrelated. Engine braking can't replace service brakes in a panic stop.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::abs"
+  },
+  {
+    "external_key": "AS-B28-008",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "Compared with drum brakes, disc brakes:",
+    "choices": [
+      "Require no hydraulic fluid",
+      "Use shoes that expand outward against a drum",
+      "Dissipate heat more efficiently and resist brake fade better",
+      "Generate less heat and trap it longer"
+    ],
+    "correct_index": 2,
+    "explanation": "Disc brakes have an exposed rotor that sheds heat into the airstream, resisting fade under heavy use. Drum brakes enclose the friction surfaces and trap heat. The expanding-shoe design is the drum brake, not the disc. Both designs are hydraulically actuated.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::disc-vs-drum"
+  },
+  {
+    "external_key": "AS-B28-009",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "In a front-wheel-drive (FWD) car, which wheels both steer and provide driving power?",
+    "choices": [
+      "All four wheels equally",
+      "Front wheels",
+      "Only the right-side wheels",
+      "Rear wheels"
+    ],
+    "correct_index": 1,
+    "explanation": "FWD routes engine power through the transaxle to the front wheels, which also do the steering. Rear wheels in a FWD car just roll. All-four power is AWD/4WD. Side-specific drive isn't a real configuration on production cars.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::fwd-rwd"
+  },
+  {
+    "external_key": "AS-B28-010",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "If a timing belt breaks on an interference engine, the most likely result is:",
+    "choices": [
+      "Pistons striking open valves, causing serious internal damage",
+      "Loud exhaust but normal operation",
+      "Loss of power steering",
+      "Reduced fuel economy only"
+    ],
+    "correct_index": 0,
+    "explanation": "On an interference engine, valves and pistons share space; if the timing belt snaps, the cams stop but the crank coasts, and pistons hit open valves, bending them and often damaging pistons. Fuel economy and exhaust aren't the issue; the engine won't run at all. Power steering is independently driven.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::timing-belt"
+  },
+  {
+    "external_key": "AS-B28-011",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "A technician finds that the starter cranks slowly, the headlights dim noticeably when the key is turned, and the battery tests at 11.8V at rest. The MOST likely problem is:",
+    "choices": [
+      "A weak or discharged battery",
+      "A faulty alternator only",
+      "A clogged fuel filter",
+      "A bad ignition coil"
+    ],
+    "correct_index": 0,
+    "explanation": "A healthy 12V battery sits near 12.6V at rest; 11.8V indicates significant discharge or a failing cell, which explains slow cranking and headlight dimming under load. A bad alternator would show up after running (battery not recharging), but the resting voltage points first to the battery. A bad coil wouldn't dim lights. A clogged fuel filter affects running, not cranking electrical load.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::battery-diagnosis"
+  },
+  {
+    "external_key": "AS-B28-012",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "An automatic transmission slips and shifts harshly, and the dipstick fluid is dark brown with a burnt smell. The most probable cause is:",
+    "choices": [
+      "Low coolant level",
+      "A weak alternator",
+      "Overheated, degraded transmission fluid and worn clutches",
+      "A bad oxygen sensor"
+    ],
+    "correct_index": 2,
+    "explanation": "Healthy ATF is bright red and sweet-smelling; dark brown and burnt indicates the fluid has overheated and the internal clutch packs are likely worn. Coolant level wouldn't affect transmission feel directly. An O2 sensor affects fuel trim, not shift quality. A weak alternator might cause electronic shift issues but not burnt fluid.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::trans-fluid-diagnosis"
+  },
+  {
+    "external_key": "AS-B28-013",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "A car wanders, the steering wheel is off-center, and the inner edges of both front tires are wearing rapidly. The most likely cause is:",
+    "choices": [
+      "Incorrect wheel alignment (excessive toe-out or negative camber)",
+      "A failing alternator",
+      "Over-inflated tires",
+      "Worn spark plugs"
+    ],
+    "correct_index": 0,
+    "explanation": "Inside-edge tire wear on both fronts plus wandering points to alignment - typically too much toe-out or excessive negative camber. Over-inflation wears the center, not the inner edges. Alternator and spark-plug issues don't cause directional or wear problems.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::suspension-alignment"
+  },
+  {
+    "external_key": "AS-B28-014",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "The power steering pump whines loudly and steering effort is high, especially when cold. Which check should be done FIRST?",
+    "choices": [
+      "Replace the steering rack",
+      "Flush the brake fluid",
+      "Replace the alternator belt",
+      "Inspect the power steering fluid level and condition"
+    ],
+    "correct_index": 3,
+    "explanation": "Whining and heavy steering are classic low-fluid or aerated-fluid symptoms; checking the reservoir is fast and free and usually pinpoints the problem. Replacing the rack is premature. The alternator belt is unrelated unless it also drives the PS pump and is slipping (but check fluid first). Brake fluid has nothing to do with steering effort.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::power-steering"
+  },
+  {
+    "external_key": "AS-B28-015",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "An engine cranks normally but will not start. There is fuel pressure and the plugs are dry. The most likely issue is:",
+    "choices": [
+      "Worn brake pads",
+      "No spark - ignition system failure",
+      "A blown head gasket",
+      "A clogged exhaust"
+    ],
+    "correct_index": 1,
+    "explanation": "Dry plugs with good fuel pressure mean fuel is not being ignited or injected; combined with a normal crank, the prime suspect is the ignition system (coil, crank sensor, ignition module) failing to deliver spark. A clogged exhaust causes power loss but not no-start with dry plugs. A head gasket usually causes overheating and misfire, not a clean no-start. Brakes are irrelevant.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::ignition-diagnosis"
+  },
+  {
+    "external_key": "AS-B28-016",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which tool is used to measure the gap between two close-fitting parts, such as a spark plug electrode gap?",
+    "choices": [
+      "Micrometer",
+      "Dial indicator",
+      "Feeler gauge",
+      "Vernier caliper"
+    ],
+    "correct_index": 2,
+    "explanation": "A feeler gauge is a set of thin metal blades of known thickness used to measure small clearances like spark plug gaps or valve lash. A vernier caliper measures outside/inside dimensions, not narrow gaps directly. A micrometer measures precise thicknesses but not the space between parts. A dial indicator measures movement, not static gap.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::feeler-gauge"
+  },
+  {
+    "external_key": "AS-B28-017",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which hammer has a soft, non-marring head designed to strike without bouncing or damaging the work surface?",
+    "choices": [
+      "Sledge hammer",
+      "Claw hammer",
+      "Ball-peen hammer",
+      "Dead-blow hammer"
+    ],
+    "correct_index": 3,
+    "explanation": "A dead-blow hammer has a polymer head filled with shot, so it strikes hard but does not rebound and won't mar surfaces. A ball-peen has a hardened steel head for shaping metal. A claw hammer is for nails and woodworking. A sledge is a heavy two-handed striking hammer.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::hammer-types"
+  },
+  {
+    "external_key": "AS-B28-018",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "A tap is used to cut:",
+    "choices": [
+      "External threads on a bolt",
+      "Internal threads inside a hole",
+      "A flat surface on a plate",
+      "A round groove on a shaft"
+    ],
+    "correct_index": 1,
+    "explanation": "A tap cuts internal threads inside a drilled hole so a bolt can thread into it. A die cuts external threads on rod or bolt blanks. Round grooves are cut by lathe or grooving tools. Flat surfaces are made by milling or filing.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::tap-die"
+  },
+  {
+    "external_key": "AS-B28-019",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which wrench fully surrounds a bolt head with a 6- or 12-point opening, giving better grip and less slippage than an open-end?",
+    "choices": [
+      "Allen wrench",
+      "Box-end wrench",
+      "Pipe wrench",
+      "Strap wrench"
+    ],
+    "correct_index": 1,
+    "explanation": "A box-end wrench wraps completely around the fastener, distributing force on all flats and minimizing rounding. A pipe wrench is for round pipe. A strap wrench grips with a flexible band, used on fragile or odd shapes. An Allen wrench fits hex-socket screws.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::box-end-wrench"
+  },
+  {
+    "external_key": "AS-B28-020",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which saw has a thin replaceable blade tensioned in a C-shaped frame and is used for cutting metal?",
+    "choices": [
+      "Rip saw",
+      "Hacksaw",
+      "Crosscut saw",
+      "Coping saw"
+    ],
+    "correct_index": 1,
+    "explanation": "A hacksaw uses a fine-tooth tensioned blade in a frame to cut metal stock. A coping saw is similar in shape but for fine wood curves. Crosscut and rip saws are wood-only handsaws with much coarser teeth.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::hacksaw"
+  },
+  {
+    "external_key": "AS-B28-021",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A mechanic needs to measure the outside diameter of a piston to within 0.001 inch. The best tool is:",
+    "choices": [
+      "Outside micrometer",
+      "Combination square",
+      "Tape measure",
+      "Steel rule"
+    ],
+    "correct_index": 0,
+    "explanation": "An outside micrometer reads to 0.001 inch (or finer) and is purpose-built for precise outside diameters. A steel rule and tape measure are accurate only to about 1/32 inch. A combination square checks squareness and rough length, not precision diameter.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::micrometer"
+  },
+  {
+    "external_key": "AS-B28-022",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "Which socket type is recommended when removing a fastener with an impact wrench?",
+    "choices": [
+      "12-point thin-wall socket",
+      "Chrome 6-point hand socket",
+      "Spark plug socket with rubber insert",
+      "Black impact socket"
+    ],
+    "correct_index": 3,
+    "explanation": "Impact sockets are made of thicker, more ductile steel with a black phosphate finish so they can absorb impact wrench hammer-blows without shattering. Chrome hand sockets can crack and throw shrapnel under impact use. Spark plug sockets are specialized for plugs. Thin-wall 12-points are even more fragile under impact.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::socket-types"
+  },
+  {
+    "external_key": "AS-B28-023",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A vernier caliper differs from a steel ruler primarily because it:",
+    "choices": [
+      "Can only measure round objects",
+      "Measures only inside dimensions",
+      "Is always digital",
+      "Provides finer resolution using a sliding scale, typically to 0.001 inch or 0.02 mm"
+    ],
+    "correct_index": 3,
+    "explanation": "A vernier caliper uses a main scale plus a vernier sliding scale to read between rule graduations, giving 0.001\" or 0.02 mm resolution. It measures inside, outside, and depth - not just one type. The mechanical vernier is not digital (digital calipers exist but the vernier itself isn't). It works on flat or round objects.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::vernier-caliper"
+  },
+  {
+    "external_key": "AS-B28-024",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "Which pliers grip and lock onto a workpiece with an over-center cam, freeing the user's hand?",
+    "choices": [
+      "Diagonal cutters",
+      "Needle-nose pliers",
+      "Locking (Vise-Grip) pliers",
+      "Slip-joint pliers"
+    ],
+    "correct_index": 2,
+    "explanation": "Locking pliers use an adjustable screw and over-center cam to clamp onto a part and stay closed. Slip-joint pliers must be held closed. Needle-nose are for reaching into tight spots, not clamping. Diagonal cutters are for cutting wire.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::locking-pliers"
+  },
+  {
+    "external_key": "AS-B28-025",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "Which file would be used for finish work, leaving the smoothest surface on metal?",
+    "choices": [
+      "Second cut",
+      "Smooth cut",
+      "Rasp",
+      "Bastard cut"
+    ],
+    "correct_index": 1,
+    "explanation": "Files are graded coarse-to-fine as bastard, second, and smooth. A smooth cut has the finest teeth and leaves the cleanest finish. A bastard cut is the coarsest, used for rapid stock removal. Second cut is in between. A rasp has very coarse, individual teeth for wood, not metal finishing.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::files"
+  },
+  {
+    "external_key": "AS-B28-026",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A torque wrench specification reads 80 ft-lb +/- 5 ft-lb. A mechanic clicks the wrench at 80 ft-lb but forgot to back the setting down to zero after the last job. What is the MOST important practice this illustrates?",
+    "choices": [
+      "Always store it at its maximum setting for accuracy",
+      "Calibration is unaffected by storage setting",
+      "Click wrenches don't need calibration",
+      "Always store a click-style torque wrench at its lowest setting to preserve calibration"
+    ],
+    "correct_index": 3,
+    "explanation": "Click-type torque wrenches use an internal spring; leaving them loaded compresses the spring and drifts calibration. They should be backed down to the low end (not zero) for storage. Storing at max is the worst option. Calibration is absolutely affected by storage and shock, and these wrenches require periodic recalibration.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::torque-wrench-care"
+  },
+  {
+    "external_key": "AS-B28-027",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A bolt head is slightly rounded. The technician needs to remove it without breaking it. The BEST first choice is:",
+    "choices": [
+      "A 6-point box-end or socket of the correct size for maximum grip on the remaining flats",
+      "An impact driver with the wrong-size socket",
+      "A 12-point open-end wrench one size larger",
+      "Locking pliers cranked down hard immediately"
+    ],
+    "correct_index": 0,
+    "explanation": "A 6-point box-end or socket contacts the flats (not corners) and gives the best grip on a partially rounded head. Going one size up with a 12-point loads the corners and rounds it further. Locking pliers can work as a last resort but tend to slip and damage further. Wrong-size impact sockets ruin both bolt and socket.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::rounded-bolt"
+  },
+  {
+    "external_key": "AS-B28-028",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A micrometer reads 0.250 inch on a known 0.2500 inch gauge block, but the same micrometer reads 0.252 inch on the same block the next day. The CORRECT action is to:",
+    "choices": [
+      "Use it anyway - 0.002 inch is acceptable",
+      "Trust the new reading and discard the gauge block",
+      "Apply a -0.002 correction in your head for every future reading",
+      "Re-zero or recalibrate the micrometer before using it"
+    ],
+    "correct_index": 3,
+    "explanation": "Drift against a known standard means the micrometer needs to be re-zeroed (anvil-spindle contact at 0) or sent for calibration. Discarding the standard is backwards - it's the reference. Mental corrections invite errors and don't fix the underlying problem. 0.002\" is huge for many fits (bearing clearances, ring end gaps).",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::micrometer-calibration"
+  },
+  {
+    "external_key": "AS-B28-029",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A mechanic needs to cut new internal threads in a hole drilled at 0.201 inch for a 1/4-20 bolt. Which sequence is correct?",
+    "choices": [
+      "Skip the tap and just force the bolt in",
+      "Drill larger first, then use a 1/4-20 tap, advancing and backing off to break chips",
+      "Use a reamer and then a hammer",
+      "Use a die to cut external threads, then run the bolt in"
+    ],
+    "correct_index": 1,
+    "explanation": "Internal threads are cut by a tap, and proper technique is to advance the tap a half-turn, back off a quarter-turn to break chips, and use cutting fluid. Dies cut external threads, not internal. Forcing a bolt cross-threads and ruins both. Reamers enlarge holes precisely but don't cut threads.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::tap-technique"
+  },
+  {
+    "external_key": "AS-B28-030",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A Phillips screw repeatedly cams out (the driver slips). The BEST corrective action is to:",
+    "choices": [
+      "Use a larger flathead in the cross slot",
+      "Verify the driver tip size matches the screw (e.g., #2 Phillips), press firmly straight down, and apply steady torque",
+      "Heat the screw red-hot first",
+      "Use a Torx driver in the Phillips head"
+    ],
+    "correct_index": 1,
+    "explanation": "Cam-out usually comes from a mismatched driver size or insufficient axial pressure; matching the correct number (most commonly #2) and pressing firmly while turning prevents slipping. A flathead in a Phillips chews the recess. Heating to red is destructive and unnecessary for cam-out. Torx tips don't fit Phillips cross recesses properly.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::screwdriver-technique"
+  },
+  {
+    "external_key": "AS-B28-031",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "What is the typical recommended interval for rotating tires on a passenger car?",
+    "choices": [
+      "Every 5,000 to 7,500 miles",
+      "Every 25,000 miles",
+      "Only when a tire goes flat",
+      "Every 1,000 miles"
+    ],
+    "correct_index": 0,
+    "explanation": "Most manufacturers recommend tire rotation every 5,000-7,500 miles to even out wear from drive, steer, and load differences. 1,000 miles is far too frequent. 25,000 miles is too late - uneven wear will already be set. Waiting for a flat ignores wear management entirely.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::tire-rotation"
+  },
+  {
+    "external_key": "AS-B28-032",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "Engine oil that appears milky or chocolate-colored on the dipstick most likely indicates:",
+    "choices": [
+      "Coolant contamination, possibly from a blown head gasket",
+      "Normal new oil",
+      "Too much fuel additive",
+      "Excess transmission fluid"
+    ],
+    "correct_index": 0,
+    "explanation": "Milky/chocolate oil is the classic sign of coolant mixing with oil, typically from a head gasket failure, cracked head, or bad oil cooler. Fresh oil is amber-to-brown. Fuel additives don't change oil to a milky color. Transmission fluid doesn't share oil galleries with the engine.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::fluid-diagnosis"
+  },
+  {
+    "external_key": "AS-B28-033",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "Which welding process uses a continuously fed wire electrode and shielding gas?",
+    "choices": [
+      "Oxy-acetylene",
+      "TIG (GTAW)",
+      "MIG (GMAW)",
+      "Stick (SMAW)"
+    ],
+    "correct_index": 2,
+    "explanation": "MIG (Metal Inert Gas) feeds a wire electrode continuously through a torch with shielding gas like argon/CO2. Stick uses a flux-coated consumable rod. TIG uses a non-consumable tungsten electrode and a separate filler rod. Oxy-acetylene is a gas-flame process, not arc welding.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::welding-types"
+  },
+  {
+    "external_key": "AS-B28-034",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "Why should you clean corrosion off battery terminals?",
+    "choices": [
+      "It increases fuel mileage directly",
+      "Corrosion increases electrical resistance and can cause poor starting and charging",
+      "It prevents the alternator from spinning",
+      "It improves the car's appearance only"
+    ],
+    "correct_index": 1,
+    "explanation": "Corrosion creates high resistance at the terminal, robbing current the starter needs and interfering with charging. Appearance is cosmetic. Fuel mileage isn't directly tied. The alternator spins via belt regardless of terminal cleanliness.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::battery-terminals"
+  },
+  {
+    "external_key": "AS-B28-035",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "A clogged engine air filter most directly causes:",
+    "choices": [
+      "Lower oil pressure",
+      "Increased tire wear",
+      "Reduced airflow, leading to a richer mixture and lost power",
+      "Brake fluid contamination"
+    ],
+    "correct_index": 2,
+    "explanation": "An air filter restricts incoming air; when clogged, less air reaches the cylinders, the mixture goes rich, fuel economy drops, and power suffers. Oil pressure isn't tied to intake airflow. Brake fluid lives in a sealed system. Tire wear is unrelated.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::air-filter"
+  },
+  {
+    "external_key": "AS-B28-036",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A mechanic spots a small puddle of red fluid under a parked car, near the middle. The most likely source is:",
+    "choices": [
+      "Brake fluid leak",
+      "Automatic transmission fluid leak",
+      "Engine oil leak",
+      "Coolant leak"
+    ],
+    "correct_index": 1,
+    "explanation": "Automatic transmission fluid is bright red and the transmission sits roughly mid-vehicle. Engine oil is brown/black. Coolant is green, orange, pink, or yellow depending on type. Brake fluid is clear-to-amber and usually appears near a wheel or under the master cylinder.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::fluid-color"
+  },
+  {
+    "external_key": "AS-B28-037",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A green or orange puddle of sweet-smelling fluid under a vehicle most likely indicates:",
+    "choices": [
+      "A transmission leak",
+      "A power steering leak",
+      "An engine coolant (antifreeze) leak",
+      "A fuel leak"
+    ],
+    "correct_index": 2,
+    "explanation": "Engine coolant is dyed green (traditional), orange (Dex-Cool/HOAT), or pink/yellow, and ethylene glycol is sweet-smelling. Power steering fluid is typically reddish or clear. Fuel is volatile, clear, and strong-smelling - not sweet. Transmission fluid is red.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::coolant-leak"
+  },
+  {
+    "external_key": "AS-B28-038",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "When changing engine oil, the oil filter should be:",
+    "choices": [
+      "Replaced at every oil change to ensure proper filtration",
+      "Reused if it still looks clean",
+      "Removed permanently for better flow",
+      "Replaced only every third oil change"
+    ],
+    "correct_index": 0,
+    "explanation": "The filter traps wear metals and combustion byproducts and saturates over a service interval; it should be changed with every oil change. Reusing or stretching intervals risks bypass mode where unfiltered oil circulates. Running without a filter destroys an engine quickly.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::oil-change"
+  },
+  {
+    "external_key": "AS-B28-039",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "Before painting a metal panel for proper paint adhesion, the technician should FIRST:",
+    "choices": [
+      "Apply color coat directly to bare metal",
+      "Spray clear coat first",
+      "Wax the surface",
+      "Clean, sand, and prime the surface to remove contamination and provide a key for the paint"
+    ],
+    "correct_index": 3,
+    "explanation": "Proper paint prep is degrease, sand for adhesion, and prime; this gives the topcoat something to grip and prevents fish-eyes and peeling. Spraying color on bare metal causes adhesion and corrosion failures. Wax repels paint. Clear coat is the final layer, not the first.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::paint-prep"
+  },
+  {
+    "external_key": "AS-B28-040",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "Soldering differs from welding in that soldering:",
+    "choices": [
+      "Melts the base metals together",
+      "Requires shielding gas like argon",
+      "Cannot conduct electricity through the joint",
+      "Joins parts using a lower-melting filler (solder) without melting the base metals"
+    ],
+    "correct_index": 3,
+    "explanation": "Soldering uses a filler alloy (typically tin-based) that melts at a much lower temperature than the base metal, bonding by wetting and adhesion rather than fusion. Welding melts and fuses the base metals. Shielding gas is a welding feature, not soldering. Solder joints conduct electricity well - that's why it's used in electronics.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::soldering"
+  },
+  {
+    "external_key": "AS-B28-041",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A vehicle owner notices brown oily fluid pooling near the right front of the engine, low oil level on the dipstick, and oil residue on the timing cover. The MOST likely source is:",
+    "choices": [
+      "Front crankshaft (timing cover) seal leak",
+      "Coolant hose leak",
+      "Brake caliper leak",
+      "Power steering line leak"
+    ],
+    "correct_index": 0,
+    "explanation": "Brown oil + low engine oil + residue on the front timing cover points to a front crank seal weep. PS fluid is red, not brown engine oil. Brake fluid is amber and would be near the wheel. Coolant is green/orange, not brown.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::leak-diagnosis"
+  },
+  {
+    "external_key": "AS-B28-042",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A technician is welding aluminum that must be clean, precise, and free of spatter for an aerospace part. The BEST process is:",
+    "choices": [
+      "Brazing with brass filler",
+      "Stick (SMAW) with general-purpose rod",
+      "Oxy-acetylene with mild steel rod",
+      "TIG (GTAW) with high-frequency AC and argon shielding"
+    ],
+    "correct_index": 3,
+    "explanation": "TIG with AC and argon is the standard for clean, controlled aluminum welds; AC breaks up the oxide layer and the non-consumable tungsten gives precise heat control with no spatter. Stick on thin aluminum is messy and rare. Oxy-acetylene struggles with aluminum's heat conductivity and oxide. Brazing doesn't fuse the base and isn't a structural aluminum weld.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::tig-aluminum"
+  },
+  {
+    "external_key": "AS-B28-043",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "After replacing front brake pads, a driver reports a soft, spongy brake pedal that goes nearly to the floor. The MOST likely cause is:",
+    "choices": [
+      "The master cylinder is oversized",
+      "The new pads need 100,000 miles to bed in",
+      "Air trapped in the hydraulic lines; the system needs to be bled",
+      "The rotors are too thick"
+    ],
+    "correct_index": 2,
+    "explanation": "Spongy pedal after a brake job almost always means air was introduced into the hydraulic lines when caliper pistons were pushed back or fittings were opened; bleeding restores a firm pedal. Pad bed-in takes a few hundred miles and affects bite, not pedal feel. Master cylinder size is fixed by the manufacturer. Thicker rotors don't cause sponginess.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::brake-bleed"
+  },
+  {
+    "external_key": "AS-B28-044",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A vehicle's coolant temperature climbs into the red on the highway but drops back to normal in town. The MOST likely cause is:",
+    "choices": [
+      "Restricted radiator (clogged fins or core) or failing fan/water pump under high-load airflow demands",
+      "Low brake fluid",
+      "Worn brake pads",
+      "Stuck-open thermostat"
+    ],
+    "correct_index": 0,
+    "explanation": "Highway heat soak (high engine load + sustained heat output) reveals marginal cooling capacity such as a clogged radiator or weak water pump; low-speed city driving has lower heat output and the fan can handle it. A stuck-open thermostat causes the opposite: slow warm-up and running cold. Brake fluid and pad wear don't affect coolant temperature.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::overheating-diagnosis"
+  },
+  {
+    "external_key": "AS-B28-045",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A spark plug pulled from cylinder 3 is wet with fuel and black with soot, while plugs from cylinders 1, 2, and 4 look normal tan. This indicates a problem with:",
+    "choices": [
+      "The thermostat",
+      "All four oxygen sensors",
+      "The entire fuel system",
+      "Cylinder 3 specifically - likely a fouled plug, bad coil/wire, or dead injector for that cylinder"
+    ],
+    "correct_index": 3,
+    "explanation": "When only one plug is fouled while the others are normal, the issue is cylinder-specific: the plug itself, that cylinder's coil/wire, or its injector is not firing properly so fuel piles up. A fuel-system-wide issue would affect all cylinders. The thermostat is cooling-side. There aren't four O2 sensors in most engines, and O2 issues affect global trim.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::spark-plug-diagnosis"
+  },
+  {
+    "external_key": "AS-B28-046",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Which class of fire extinguisher is designed for energized electrical equipment?",
+    "choices": [
+      "Class C",
+      "Class K",
+      "Class A",
+      "Class B"
+    ],
+    "correct_index": 0,
+    "explanation": "Class C extinguishers are rated for energized electrical fires - they use non-conductive agents. Class A is for ordinary combustibles (wood, paper). Class B is for flammable liquids. Class K is for kitchen cooking-oil fires. Never use water (Class A) on electrical or flammable-liquid fires.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::extinguisher-classes"
+  },
+  {
+    "external_key": "AS-B28-047",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Gasoline in the shop must be stored in:",
+    "choices": [
+      "An empty oil drum without a lid",
+      "An open glass jar on the bench",
+      "Any plastic milk jug",
+      "An approved, labeled safety can with a flame-arrestor and tight-sealing lid"
+    ],
+    "correct_index": 3,
+    "explanation": "Gasoline must be stored in approved (UL/FM-listed) safety cans designed to vent pressure safely, prevent flashback, and seal tightly. Glass shatters and vents vapors. Milk jugs aren't fuel-rated and degrade. Open drums leak vapors that can flash off a single spark.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::gasoline-storage"
+  },
+  {
+    "external_key": "AS-B28-048",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "When lifting a heavy part from the floor, the correct technique is to:",
+    "choices": [
+      "Lift with arms fully extended away from the body",
+      "Twist while lifting to save time",
+      "Bend at the waist and lift with the back",
+      "Keep the load close, bend the knees, and lift with the legs while keeping the back straight"
+    ],
+    "correct_index": 3,
+    "explanation": "Proper lifting keeps the back straight, uses leg muscles, and keeps the load close to the body's center of gravity. Bending at the waist concentrates load on lumbar discs. Twisting under load is a common cause of back injury. Holding the load away from the body multiplies the strain on the spine.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::lifting-technique"
+  },
+  {
+    "external_key": "AS-B28-049",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Carbon monoxide (CO) is dangerous in the shop because it is:",
+    "choices": [
+      "Only a problem above 200 degrees F",
+      "Bright green and easy to see",
+      "Heavier than air and pools harmlessly on the floor",
+      "Colorless, odorless, and binds to hemoglobin, causing oxygen starvation"
+    ],
+    "correct_index": 3,
+    "explanation": "CO is colorless and odorless, which is why shops require ventilation or exhaust extraction when engines run indoors; it bonds to hemoglobin 200+ times more readily than oxygen. It is not visible. It's roughly the same density as air and mixes throughout. It's lethal at room temperature in modest concentrations.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::co-hazard"
+  },
+  {
+    "external_key": "AS-B28-050",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Before performing any maintenance on a powered machine, the technician should:",
+    "choices": [
+      "Just unplug it and trust no one will plug it back in",
+      "Leave the power on for a quick check first",
+      "Apply lockout/tagout (LOTO) to isolate energy sources and prevent unexpected startup",
+      "Tell a coworker verbally and start work"
+    ],
+    "correct_index": 2,
+    "explanation": "LOTO physically locks the energy isolation device and tags it so the machine cannot be started while someone is working on it. Verbal communication alone is OSHA-non-compliant and unreliable. An unplugged cord can be re-plugged by someone unaware. Working on live equipment is the cause of many serious injuries.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::loto"
+  },
+  {
+    "external_key": "AS-B28-051",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A small fire breaks out in a tray of solvent under the bench. The CORRECT response is to use a:",
+    "choices": [
+      "Class A (water) extinguisher",
+      "Garden hose",
+      "Class B extinguisher",
+      "Class K extinguisher"
+    ],
+    "correct_index": 2,
+    "explanation": "Solvent is a flammable liquid, which is exactly what Class B (foam, CO2, dry chemical) is rated for. Water (Class A) on a flammable liquid spreads the fire and can cause violent splatter. Class K is for kitchen oils. A garden hose is just water - same problem.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::extinguisher-selection"
+  },
+  {
+    "external_key": "AS-B28-052",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Compressed air should NEVER be used to:",
+    "choices": [
+      "Inflate a tire to spec",
+      "Clean off a workbench (with proper PPE)",
+      "Operate an impact wrench",
+      "Blow dust off clothing or skin"
+    ],
+    "correct_index": 3,
+    "explanation": "Blowing compressed air on skin can drive air into the bloodstream (embolism) and on clothing can drive debris into eyes; OSHA prohibits using it for cleaning the body. Tire inflation, powering tools, and cleaning benches (with eye protection and reduced nozzle pressure under 30 psi) are accepted uses.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::compressed-air"
+  },
+  {
+    "external_key": "AS-B28-053",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Before mounting a new bench grinder wheel, the technician should:",
+    "choices": [
+      "Visually inspect for cracks and perform a ring test by lightly tapping the wheel",
+      "Spin it at double its rated RPM as a stress test",
+      "Wet the wheel down first",
+      "Drop the wheel on the floor to test it"
+    ],
+    "correct_index": 0,
+    "explanation": "A ring test - tapping the wheel with a non-metallic object while it's suspended - produces a clear ring if undamaged or a dull thud if cracked. Dropping the wheel risks creating new cracks. Over-speeding a grinding wheel causes catastrophic explosion. Wetting can damage vitrified bonds.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::grinding-wheel"
+  },
+  {
+    "external_key": "AS-B28-054",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A GFCI outlet in the shop is designed to:",
+    "choices": [
+      "Trip quickly when it detects a ground fault, protecting against electrocution",
+      "Filter electrical noise from sensitive electronics",
+      "Boost voltage to high-amperage tools",
+      "Convert AC to DC for battery chargers"
+    ],
+    "correct_index": 0,
+    "explanation": "A Ground Fault Circuit Interrupter senses tiny current imbalances between hot and neutral (indicating leakage to ground, often through a person) and trips in milliseconds, preventing electrocution. It doesn't change voltage. Rectification is done by power supplies. Noise filtering is done by line filters or surge protectors.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::gfci"
+  },
+  {
+    "external_key": "AS-B28-055",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "An SDS (Safety Data Sheet) tells a shop worker:",
+    "choices": [
+      "Hazards, handling, PPE, first aid, and spill/fire response for a specific chemical",
+      "How to use the product as a fuel additive",
+      "Only the manufacturer's marketing claims",
+      "The retail price of the chemical"
+    ],
+    "correct_index": 0,
+    "explanation": "An SDS is a standardized 16-section document covering identification, hazards, composition, first aid, firefighting, accidental release, handling/storage, exposure controls, and more for a specific chemical. It is not marketing material. It carries no pricing. It documents intended use, never improvised reuse.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::sds"
+  },
+  {
+    "external_key": "AS-B28-056",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A grease fire ignites in a parts-cleaning tank that uses an oil-based solvent. A worker grabs a Class A water extinguisher. The CORRECT decision is to:",
+    "choices": [
+      "Leave the lid off and let it burn out",
+      "Pour more solvent on to dilute the flames",
+      "Stop, get a Class B (or ABC) extinguisher because water on burning solvent spreads the fire and can flash-vaporize",
+      "Use the water extinguisher anyway - water cools everything"
+    ],
+    "correct_index": 2,
+    "explanation": "Water on a hydrocarbon fire floats the burning liquid away, spreads the fire, and can flash to steam violently. Class B (or multipurpose ABC dry chem) smothers the fuel. Adding more solvent feeds the fire. Letting it burn open risks the building.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::extinguisher-scenario"
+  },
+  {
+    "external_key": "AS-B28-057",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A welder is preparing to TIG-weld a galvanized steel bracket indoors. The MOST important precaution is:",
+    "choices": [
+      "Wear only a dust mask",
+      "Grind off the galvanizing in the weld area and use forced ventilation or supplied-air respirator because zinc fumes cause metal fume fever",
+      "Speed up the weld to minimize fume time",
+      "Weld with the shop door closed to keep gas shielding stable"
+    ],
+    "correct_index": 1,
+    "explanation": "Heated galvanizing releases zinc oxide fumes that cause metal fume fever and serious respiratory irritation; the standard practice is to remove the coating in the weld zone and use forced local ventilation or supplied-air respirator. A dust mask doesn't stop metal fumes. Going faster still releases fumes. Closing the door traps fumes; shielding gas works fine with proper ventilation.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::welding-fumes"
+  },
+  {
+    "external_key": "AS-B28-058",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "While running a vehicle indoors for diagnosis, a technician notices a slight headache and dizziness. The CORRECT action is to:",
+    "choices": [
+      "Push through the symptoms to finish the job",
+      "Immediately get into fresh air, ventilate the shop, and confirm exhaust extraction is working - symptoms suggest CO exposure",
+      "Drink coffee and continue",
+      "Open just one window and keep working"
+    ],
+    "correct_index": 1,
+    "explanation": "Headache and dizziness with an engine running indoors are classic early CO poisoning signs; the only safe response is fresh air immediately and verify ventilation/exhaust extraction. Pushing through risks loss of consciousness and death. Coffee does nothing for CO binding. Cracking one window is rarely enough airflow for engine exhaust.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::co-scenario"
+  },
+  {
+    "external_key": "AS-B28-059",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "When using a hydraulic floor jack to lift a car for under-vehicle work, the technician MUST:",
+    "choices": [
+      "Use cinder blocks as a budget substitute for jack stands",
+      "Trust the jack alone for the duration of the work",
+      "Place properly rated jack stands at manufacturer-specified lift points before going under the vehicle",
+      "Leave the wheels chocked but skip the stands"
+    ],
+    "correct_index": 2,
+    "explanation": "Hydraulic jacks can lose pressure and fail; jack stands rated for the load are required to support the vehicle whenever a person is underneath. Cinder blocks crumble under shear and are explicitly unsafe. Wheel chocks help prevent rolling but do nothing if the jack drops.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::jack-stands"
+  },
+  {
+    "external_key": "AS-B28-060",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A mechanic is grinding metal on a bench grinder. Sparks fly and a small chip pings off the face shield. This illustrates:",
+    "choices": [
+      "One pair of safety glasses alone is always enough at a grinder",
+      "Layered PPE matters - safety glasses UNDER a face shield protect against both impact and wraparound debris",
+      "Eye protection isn't needed if the work is small",
+      "Face shields are optional once you have experience"
+    ],
+    "correct_index": 1,
+    "explanation": "Best practice at a grinder is safety glasses plus a face shield because shields protect the face from larger ricochets while glasses catch debris that gets behind the shield. Skipping a shield is a common cause of eye and facial injuries. Small jobs still throw chips at high speed.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::ppe-layering"
+  }
+]

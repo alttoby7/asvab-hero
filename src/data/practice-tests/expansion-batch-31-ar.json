@@ -1,0 +1,1022 @@
+[
+  {
+    "external_key": "AR-B31-001",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A platoon of 48 soldiers is divided into 6 equal squads. How many soldiers are in each squad?",
+    "choices": [
+      "6",
+      "8",
+      "7",
+      "9"
+    ],
+    "correct_index": 1,
+    "explanation": "Divide 48 by 6: 48 / 6 = 8 soldiers per squad. 6 is the number of squads, not the size. 7 and 9 result from off-by-one errors.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::single-step-division"
+  },
+  {
+    "external_key": "AR-B31-002",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A hardware store sells screws at $0.12 each. How much do 25 screws cost?",
+    "choices": [
+      "$3.60",
+      "$3.25",
+      "$2.50",
+      "$3.00"
+    ],
+    "correct_index": 3,
+    "explanation": "Multiply price by quantity: 0.12 × 25 = $3.00. $2.50 uses $0.10/screw; $3.60 uses $0.144/screw; $3.25 is a rounding error.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::money-multiplication"
+  },
+  {
+    "external_key": "AR-B31-003",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "How many inches are in 7 feet?",
+    "choices": [
+      "84 inches",
+      "78 inches",
+      "96 inches",
+      "72 inches"
+    ],
+    "correct_index": 0,
+    "explanation": "1 foot = 12 inches, so 7 × 12 = 84 inches. 72 uses 6 feet; 96 uses 8 feet; 78 is a math slip.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::unit-conversion-length"
+  },
+  {
+    "external_key": "AR-B31-004",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A recruit scores 82, 76, 90, and 88 on four PT events. What is the mean score?",
+    "choices": [
+      "82",
+      "83",
+      "85",
+      "84"
+    ],
+    "correct_index": 3,
+    "explanation": "Sum: 82 + 76 + 90 + 88 = 336. Divide by 4: 336 / 4 = 84. Other choices result from arithmetic errors in the sum.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::mean"
+  },
+  {
+    "external_key": "AR-B31-005",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A contractor buys 3 sheets of plywood at $24 each and 5 boxes of nails at $7 each. What is the total cost?",
+    "choices": [
+      "$107",
+      "$112",
+      "$95",
+      "$100"
+    ],
+    "correct_index": 0,
+    "explanation": "Plywood: 3 × 24 = $72. Nails: 5 × 7 = $35. Total: 72 + 35 = $107. $95 forgets one nail box; $100 uses $20 plywood; $112 adds an extra $5.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::mixed-operations-money"
+  },
+  {
+    "external_key": "AR-B31-006",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A water tank holds 18 gallons. How many quarts does it hold?",
+    "choices": [
+      "144 quarts",
+      "64 quarts",
+      "72 quarts",
+      "54 quarts"
+    ],
+    "correct_index": 2,
+    "explanation": "1 gallon = 4 quarts, so 18 × 4 = 72 quarts. 144 uses 8 quarts/gallon (pints); 54 uses 3 quarts/gallon; 64 is unrelated.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::unit-conversion-volume"
+  },
+  {
+    "external_key": "AR-B31-007",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "Five test scores are 70, 85, 85, 90, and 95. What is the median?",
+    "choices": [
+      "85",
+      "84",
+      "90",
+      "86"
+    ],
+    "correct_index": 0,
+    "explanation": "When ordered, the middle (3rd) value is 85. The mean is 85, but the median is the middle value when sorted: 70, 85, 85, 90, 95.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::median"
+  },
+  {
+    "external_key": "AR-B31-008",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A soldier earns $18 an hour for the first 40 hours and time-and-a-half for any additional hours. If he works 46 hours in a week, what does he earn?",
+    "choices": [
+      "$828",
+      "$918",
+      "$891",
+      "$882"
+    ],
+    "correct_index": 3,
+    "explanation": "Regular: 40 × 18 = $720. Overtime rate: 18 × 1.5 = $27. Overtime pay: 6 × 27 = $162. Total: 720 + 162 = $882. $828 uses regular rate for all 46 hours; $918 uses double-time.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::overtime-wages"
+  },
+  {
+    "external_key": "AR-B31-009",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A box weighs 3 pounds 8 ounces. What is the total weight of 6 such boxes, in pounds and ounces?",
+    "choices": [
+      "20 lb 8 oz",
+      "21 lb",
+      "18 lb 8 oz",
+      "21 lb 8 oz"
+    ],
+    "correct_index": 1,
+    "explanation": "6 × 3 lb = 18 lb. 6 × 8 oz = 48 oz = 3 lb (since 48 / 16 = 3). Total: 18 + 3 = 21 lb 0 oz. 18 lb 8 oz forgets to multiply ounces.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::weight-conversion"
+  },
+  {
+    "external_key": "AR-B31-010",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A store buys 12 jackets for a total of $360 and sells each for $45. What is the total profit if all are sold?",
+    "choices": [
+      "$200",
+      "$180",
+      "$150",
+      "$120"
+    ],
+    "correct_index": 1,
+    "explanation": "Total revenue: 12 × 45 = $540. Total cost: $360. Profit: 540 − 360 = $180. $120 uses $40 each; $150 miscalculates revenue; $200 uses $50 each.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::profit-calculation"
+  },
+  {
+    "external_key": "AR-B31-011",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "On a 6-day mission, a unit consumes 28, 30, 28, 32, 26, and 30 MREs each day. What is the average daily consumption?",
+    "choices": [
+      "30",
+      "27",
+      "29",
+      "28"
+    ],
+    "correct_index": 2,
+    "explanation": "Add the six daily amounts: 28 + 30 + 28 + 32 + 26 + 30 = 174. Divide by the number of days: 174 / 6 = 29. The answer is 29. Choice 28 comes from a small addition slip; 27 and 30 are nearby values that don't match the exact total.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::mean-multi-day"
+  },
+  {
+    "external_key": "AR-B31-012",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A roll of rope is 144 feet long. If pieces of 18 feet are cut from it, how many full pieces can be made?",
+    "choices": [
+      "7",
+      "6",
+      "8",
+      "9"
+    ],
+    "correct_index": 2,
+    "explanation": "144 / 18 = 8 pieces exactly. 7 results from miscounting; 9 from using 16-foot pieces.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::division-word"
+  },
+  {
+    "external_key": "AR-B31-013",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A truck travels at 55 mph for 3 hours. How far does it go?",
+    "choices": [
+      "150 miles",
+      "155 miles",
+      "175 miles",
+      "165 miles"
+    ],
+    "correct_index": 3,
+    "explanation": "Distance = rate × time = 55 × 3 = 165 miles. 150 uses 50 mph; 175 uses 4 hours partial.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::basic-drt"
+  },
+  {
+    "external_key": "AR-B31-014",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A runner covers 12 miles in 2 hours. What is the average speed?",
+    "choices": [
+      "4 mph",
+      "6 mph",
+      "5 mph",
+      "8 mph"
+    ],
+    "correct_index": 1,
+    "explanation": "Rate = distance / time = 12 / 2 = 6 mph. 4 mph uses 3 hours; 8 mph uses 1.5 hours.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::find-rate"
+  },
+  {
+    "external_key": "AR-B31-015",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "How long does it take a car traveling at 60 mph to cover 180 miles?",
+    "choices": [
+      "2.5 hours",
+      "3 hours",
+      "3.5 hours",
+      "2 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Time = distance / rate = 180 / 60 = 3 hours. 2 hours covers only 120 miles at 60 mph.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::find-time"
+  },
+  {
+    "external_key": "AR-B31-016",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A jeep travels 90 miles in 1.5 hours. At this rate, how far will it travel in 4 hours?",
+    "choices": [
+      "240 miles",
+      "220 miles",
+      "200 miles",
+      "180 miles"
+    ],
+    "correct_index": 0,
+    "explanation": "Rate = 90 / 1.5 = 60 mph. Distance = 60 × 4 = 240 miles. 180 forgets the 1.5-hour scaling; 200 uses 50 mph.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::rate-then-distance"
+  },
+  {
+    "external_key": "AR-B31-017",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A driver travels 120 miles at 40 mph, then returns the same route at 60 mph. What is the average speed for the round trip?",
+    "choices": [
+      "55 mph",
+      "50 mph",
+      "48 mph",
+      "52 mph"
+    ],
+    "correct_index": 2,
+    "explanation": "Total distance = 240 miles. Time out: 120/40 = 3 hr. Time back: 120/60 = 2 hr. Total time: 5 hr. Average = 240/5 = 48 mph. 50 mph is the wrong simple-average answer.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::harmonic-average-speed"
+  },
+  {
+    "external_key": "AR-B31-018",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "Two cars start 300 miles apart and drive toward each other. One goes 55 mph, the other 65 mph. How long until they meet?",
+    "choices": [
+      "3.5 hours",
+      "3 hours",
+      "2 hours",
+      "2.5 hours"
+    ],
+    "correct_index": 3,
+    "explanation": "Combined closing rate: 55 + 65 = 120 mph. Time = 300 / 120 = 2.5 hours. 3 hours uses 100 mph closing.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::cars-meeting"
+  },
+  {
+    "external_key": "AR-B31-019",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A cyclist rides for 45 minutes at 16 mph. How far does she travel?",
+    "choices": [
+      "10 miles",
+      "14 miles",
+      "12 miles",
+      "11 miles"
+    ],
+    "correct_index": 2,
+    "explanation": "45 min = 0.75 hour. Distance = 16 × 0.75 = 12 miles. 10 uses 40 min; 14 uses 60 min partial.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::fractional-time"
+  },
+  {
+    "external_key": "AR-B31-020",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A train travels from Town A to Town B at 45 mph in 4 hours. How long would the same trip take at 60 mph?",
+    "choices": [
+      "2.5 hours",
+      "3.25 hours",
+      "3.5 hours",
+      "3 hours"
+    ],
+    "correct_index": 3,
+    "explanation": "Distance = 45 × 4 = 180 miles. New time = 180 / 60 = 3 hours. 2.5 hr uses 72 mph; 3.5 hr uses ~51 mph.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::same-distance-new-rate"
+  },
+  {
+    "external_key": "AR-B31-021",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A car leaves at 8:00 AM going 50 mph. A second car leaves the same point at 9:00 AM going 60 mph in the same direction. At what time does the second car catch the first?",
+    "choices": [
+      "4:00 PM",
+      "3:00 PM",
+      "2:00 PM",
+      "5:00 PM"
+    ],
+    "correct_index": 2,
+    "explanation": "At 9:00 AM the first car is 50 miles ahead. Closing rate: 60 − 50 = 10 mph. Catch-up time: 50/10 = 5 hours after 9 AM = 2:00 PM.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::catch-up"
+  },
+  {
+    "external_key": "AR-B31-022",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A jogger runs 3 miles at 6 mph, then walks 2 miles at 4 mph. What is the average speed for the entire 5 miles?",
+    "choices": [
+      "5.5 mph",
+      "5.0 mph",
+      "5.2 mph",
+      "5.8 mph"
+    ],
+    "correct_index": 1,
+    "explanation": "Run time: 3/6 = 0.5 hr. Walk time: 2/4 = 0.5 hr. Total time: 1 hr. Average = 5 miles / 1 hr = 5.0 mph.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::weighted-average-speed"
+  },
+  {
+    "external_key": "AR-B31-023",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "Two trains leave the same station traveling in opposite directions. One goes 70 mph, the other 80 mph. After how many hours are they 450 miles apart?",
+    "choices": [
+      "3.5 hours",
+      "3 hours",
+      "2.5 hours",
+      "4 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined separation rate: 70 + 80 = 150 mph. Time = 450 / 150 = 3 hours.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::opposite-directions"
+  },
+  {
+    "external_key": "AR-B31-024",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A pilot flies 600 miles in 2.5 hours with a tailwind, then returns the same distance in 3 hours against a headwind. What is the average speed for the round trip?",
+    "choices": [
+      "215 mph",
+      "218 mph",
+      "220 mph",
+      "210 mph"
+    ],
+    "correct_index": 1,
+    "explanation": "Total distance: 1,200 miles. Total time: 5.5 hours. Average = 1200/5.5 ≈ 218.2 mph, rounded to 218.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::round-trip-average"
+  },
+  {
+    "external_key": "AR-B31-025",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "Mark is 4 years older than his sister Jen. If Jen is 12, how old is Mark?",
+    "choices": [
+      "16",
+      "18",
+      "14",
+      "15"
+    ],
+    "correct_index": 0,
+    "explanation": "Mark = Jen + 4 = 12 + 4 = 16. 14 adds 2; 18 adds 6.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::age-basic"
+  },
+  {
+    "external_key": "AR-B31-026",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "The sum of three consecutive integers is 33. What is the smallest?",
+    "choices": [
+      "12",
+      "9",
+      "10",
+      "11"
+    ],
+    "correct_index": 2,
+    "explanation": "Let the integers be n, n+1, n+2. Sum = 3n + 3 = 33, so n = 10. Integers: 10, 11, 12.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::consecutive-integers"
+  },
+  {
+    "external_key": "AR-B31-027",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A worker can build 3 fences in 6 hours. How long does it take to build 1 fence?",
+    "choices": [
+      "1 hour",
+      "3 hours",
+      "2 hours",
+      "1.5 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "6 hours / 3 fences = 2 hours per fence.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::work-basic"
+  },
+  {
+    "external_key": "AR-B31-028",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "The sum of two numbers is 20 and their difference is 4. What is the larger number?",
+    "choices": [
+      "14",
+      "12",
+      "10",
+      "11"
+    ],
+    "correct_index": 1,
+    "explanation": "Larger = (sum + difference)/2 = (20 + 4)/2 = 12. Smaller = 8. Check: 12 + 8 = 20, 12 − 8 = 4.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::sum-difference"
+  },
+  {
+    "external_key": "AR-B31-029",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "Sarah is twice as old as her brother Tom. In 5 years their combined age will be 40. How old is Sarah now?",
+    "choices": [
+      "22",
+      "18",
+      "16",
+      "20"
+    ],
+    "correct_index": 3,
+    "explanation": "Let Tom = t, Sarah = 2t. In 5 years: (t+5) + (2t+5) = 40 → 3t + 10 = 40 → t = 10. Sarah = 2(10) = 20.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::age-future"
+  },
+  {
+    "external_key": "AR-B31-030",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "How many gallons of pure water must be added to 4 gallons of a 25% salt solution to dilute it to 10% salt?",
+    "choices": [
+      "6 gallons",
+      "5 gallons",
+      "8 gallons",
+      "4 gallons"
+    ],
+    "correct_index": 0,
+    "explanation": "Salt amount stays constant: 0.25 × 4 = 1 gallon of salt. Final: 1 / (4 + x) = 0.10 → 4 + x = 10 → x = 6 gallons.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::mixture-dilution"
+  },
+  {
+    "external_key": "AR-B31-031",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "Pump A fills a tank in 6 hours; Pump B fills it in 3 hours. Working together, how long to fill the tank?",
+    "choices": [
+      "2 hours",
+      "2.5 hours",
+      "1.5 hours",
+      "4.5 hours"
+    ],
+    "correct_index": 0,
+    "explanation": "Combined rate: 1/6 + 1/3 = 1/6 + 2/6 = 3/6 = 1/2 tank per hour. Time = 2 hours.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::combined-work"
+  },
+  {
+    "external_key": "AR-B31-032",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "The sum of three consecutive even integers is 72. What is the largest?",
+    "choices": [
+      "26",
+      "22",
+      "28",
+      "24"
+    ],
+    "correct_index": 0,
+    "explanation": "Let integers be n, n+2, n+4. Sum: 3n + 6 = 72 → n = 22. Largest = 26.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::consecutive-even"
+  },
+  {
+    "external_key": "AR-B31-033",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A father is 3 times as old as his son. In 12 years, he will be twice as old. How old is the father now?",
+    "choices": [
+      "32",
+      "30",
+      "36",
+      "40"
+    ],
+    "correct_index": 2,
+    "explanation": "Let son = s, father = 3s. In 12 years: 3s + 12 = 2(s + 12) → 3s + 12 = 2s + 24 → s = 12. Father = 36. Check: 48 = 2 × 24. ✓",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::age-multi-step"
+  },
+  {
+    "external_key": "AR-B31-034",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "How many liters of a 60% acid solution must be mixed with 10 liters of a 30% acid solution to get a 50% solution?",
+    "choices": [
+      "15 liters",
+      "25 liters",
+      "18 liters",
+      "20 liters"
+    ],
+    "correct_index": 3,
+    "explanation": "Acid balance: 0.60x + 0.30(10) = 0.50(x + 10) → 0.60x + 3 = 0.50x + 5 → 0.10x = 2 → x = 20 liters.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::mixture-concentration"
+  },
+  {
+    "external_key": "AR-B31-035",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "Joe can paint a room in 4 hours; Sue can paint it in 6 hours. If they work together, how long does it take?",
+    "choices": [
+      "2.5 hours",
+      "2.4 hours",
+      "2 hours",
+      "3 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined rate: 1/4 + 1/6 = 3/12 + 2/12 = 5/12 per hour. Time = 12/5 = 2.4 hours.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::combined-work-fraction"
+  },
+  {
+    "external_key": "AR-B31-036",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "The sum of four consecutive odd integers is 80. What is the second-smallest?",
+    "choices": [
+      "21",
+      "23",
+      "17",
+      "19"
+    ],
+    "correct_index": 3,
+    "explanation": "Let integers be n, n+2, n+4, n+6. Sum: 4n + 12 = 80 → n = 17. Integers: 17, 19, 21, 23. Second-smallest = 19.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::consecutive-odd"
+  },
+  {
+    "external_key": "AR-B31-037",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "What is 25% of 80?",
+    "choices": [
+      "20",
+      "25",
+      "15",
+      "18"
+    ],
+    "correct_index": 0,
+    "explanation": "0.25 × 80 = 20. 25% is the same as 1/4, and 80 / 4 = 20.",
+    "status": "verified",
+    "item_family_id": "ar.percent::basic-percent-of"
+  },
+  {
+    "external_key": "AR-B31-038",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "A jacket costs $60 and is on sale for 20% off. What is the sale price?",
+    "choices": [
+      "$50",
+      "$45",
+      "$48",
+      "$40"
+    ],
+    "correct_index": 2,
+    "explanation": "Discount: 0.20 × 60 = $12. Sale price: 60 − 12 = $48. $40 takes off $20; $50 takes off $10.",
+    "status": "verified",
+    "item_family_id": "ar.percent::discount"
+  },
+  {
+    "external_key": "AR-B31-039",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "15 is what percent of 60?",
+    "choices": [
+      "20%",
+      "30%",
+      "40%",
+      "25%"
+    ],
+    "correct_index": 3,
+    "explanation": "15 / 60 = 0.25 = 25%.",
+    "status": "verified",
+    "item_family_id": "ar.percent::find-percent"
+  },
+  {
+    "external_key": "AR-B31-040",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "A meal costs $40. A 15% tip is added. What is the tip amount?",
+    "choices": [
+      "$6",
+      "$5",
+      "$8",
+      "$4"
+    ],
+    "correct_index": 0,
+    "explanation": "0.15 × 40 = $6.",
+    "status": "verified",
+    "item_family_id": "ar.percent::tip"
+  },
+  {
+    "external_key": "AR-B31-041",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A laptop priced at $800 is discounted 25%, then 6% sales tax is added. What is the final price?",
+    "choices": [
+      "$624",
+      "$612",
+      "$648",
+      "$636"
+    ],
+    "correct_index": 3,
+    "explanation": "Discounted price: 800 × 0.75 = $600. With tax: 600 × 1.06 = $636.",
+    "status": "verified",
+    "item_family_id": "ar.percent::discount-then-tax"
+  },
+  {
+    "external_key": "AR-B31-042",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A stock price rose from $40 to $50. What was the percent increase?",
+    "choices": [
+      "20%",
+      "40%",
+      "30%",
+      "25%"
+    ],
+    "correct_index": 3,
+    "explanation": "Increase: 50 − 40 = 10. Percent change: 10/40 = 0.25 = 25%. Note: it is divided by the original.",
+    "status": "verified",
+    "item_family_id": "ar.percent::percent-increase"
+  },
+  {
+    "external_key": "AR-B31-043",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A $2,000 loan at 5% simple annual interest is held for 3 years. What is the total interest?",
+    "choices": [
+      "$300",
+      "$250",
+      "$350",
+      "$200"
+    ],
+    "correct_index": 0,
+    "explanation": "I = Prt = 2000 × 0.05 × 3 = $300.",
+    "status": "verified",
+    "item_family_id": "ar.percent::simple-interest"
+  },
+  {
+    "external_key": "AR-B31-044",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A population decreased from 1,200 to 900. What is the percent decrease?",
+    "choices": [
+      "20%",
+      "25%",
+      "30%",
+      "33%"
+    ],
+    "correct_index": 1,
+    "explanation": "Decrease: 1200 − 900 = 300. Percent: 300/1200 = 0.25 = 25%.",
+    "status": "verified",
+    "item_family_id": "ar.percent::percent-decrease"
+  },
+  {
+    "external_key": "AR-B31-045",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A store buys an item for $80 and wants a 25% profit margin on the selling price. What should the selling price be?",
+    "choices": [
+      "$104",
+      "$100",
+      "$106.67",
+      "$120"
+    ],
+    "correct_index": 2,
+    "explanation": "If profit is 25% of selling price S, then cost = 0.75S. So S = 80 / 0.75 ≈ $106.67. $100 uses 25% markup on cost, which gives a smaller margin.",
+    "status": "verified",
+    "item_family_id": "ar.percent::margin-on-selling-price"
+  },
+  {
+    "external_key": "AR-B31-046",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "$1,000 is invested at 10% interest compounded annually. What is the value after 2 years?",
+    "choices": [
+      "$1,221",
+      "$1,100",
+      "$1,210",
+      "$1,200"
+    ],
+    "correct_index": 2,
+    "explanation": "After year 1: 1000 × 1.10 = $1,100. After year 2: 1100 × 1.10 = $1,210. $1,200 uses simple interest.",
+    "status": "verified",
+    "item_family_id": "ar.percent::compound-interest"
+  },
+  {
+    "external_key": "AR-B31-047",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A price increased by 20% and then decreased by 20%. If the final price is $96, what was the original price?",
+    "choices": [
+      "$96",
+      "$104",
+      "$100",
+      "$110"
+    ],
+    "correct_index": 2,
+    "explanation": "Final factor: 1.20 × 0.80 = 0.96. Original × 0.96 = 96 → Original = $100.",
+    "status": "verified",
+    "item_family_id": "ar.percent::successive-percent-changes"
+  },
+  {
+    "external_key": "AR-B31-048",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A salesman earns a base salary of $1,500 per month plus 4% commission on sales over $10,000. If his sales were $35,000 in March, what was his total pay?",
+    "choices": [
+      "$2,400",
+      "$2,600",
+      "$2,900",
+      "$2,500"
+    ],
+    "correct_index": 3,
+    "explanation": "Commission applies to 35,000 − 10,000 = $25,000. Commission: 0.04 × 25,000 = $1,000. Total: 1,500 + 1,000 = $2,500.",
+    "status": "verified",
+    "item_family_id": "ar.percent::commission-tiered"
+  },
+  {
+    "external_key": "AR-B31-049",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "The ratio of officers to enlisted in a unit is 1:8. If there are 5 officers, how many enlisted are there?",
+    "choices": [
+      "40",
+      "36",
+      "48",
+      "32"
+    ],
+    "correct_index": 0,
+    "explanation": "1:8 = 5:x → x = 5 × 8 = 40.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::basic-ratio"
+  },
+  {
+    "external_key": "AR-B31-050",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "On a map, 1 inch represents 25 miles. How many miles do 4 inches represent?",
+    "choices": [
+      "120",
+      "100",
+      "125",
+      "75"
+    ],
+    "correct_index": 1,
+    "explanation": "4 × 25 = 100 miles.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::map-scale"
+  },
+  {
+    "external_key": "AR-B31-051",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "If 3 oranges cost $1.20, how much do 8 oranges cost?",
+    "choices": [
+      "$3.20",
+      "$3.60",
+      "$2.80",
+      "$3.00"
+    ],
+    "correct_index": 0,
+    "explanation": "Per orange: 1.20 / 3 = $0.40. For 8: 0.40 × 8 = $3.20.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::unit-rate"
+  },
+  {
+    "external_key": "AR-B31-052",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A recipe calls for 2 cups of flour for 12 cookies. How much flour for 30 cookies?",
+    "choices": [
+      "4 cups",
+      "6 cups",
+      "5 cups",
+      "3 cups"
+    ],
+    "correct_index": 2,
+    "explanation": "2/12 = x/30 → x = 60/12 = 5 cups.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::recipe-scaling"
+  },
+  {
+    "external_key": "AR-B31-053",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "A concrete mix uses sand, gravel, and cement in a 3:2:1 ratio. For 36 cubic feet of mix, how many cubic feet of gravel are needed?",
+    "choices": [
+      "12",
+      "9",
+      "6",
+      "18"
+    ],
+    "correct_index": 0,
+    "explanation": "Total parts: 3 + 2 + 1 = 6. Each part: 36/6 = 6 cubic feet. Gravel = 2 parts × 6 = 12 cubic feet.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::three-part-ratio"
+  },
+  {
+    "external_key": "AR-B31-054",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "If $1 US = 0.85 euros, how many euros do you get for $250?",
+    "choices": [
+      "225 euros",
+      "212.50 euros",
+      "200 euros",
+      "210.50 euros"
+    ],
+    "correct_index": 1,
+    "explanation": "250 × 0.85 = 212.50 euros.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::currency"
+  },
+  {
+    "external_key": "AR-B31-055",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "If 4 workers can complete a job in 9 days, how long would 6 workers take (same pace)?",
+    "choices": [
+      "6 days",
+      "5 days",
+      "8 days",
+      "7 days"
+    ],
+    "correct_index": 0,
+    "explanation": "Inverse proportion: 4 × 9 = 6 × d → d = 36/6 = 6 days.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::inverse-workers"
+  },
+  {
+    "external_key": "AR-B31-056",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "Two similar triangles have a side ratio of 2:5. If the smaller has a perimeter of 14 cm, what is the perimeter of the larger?",
+    "choices": [
+      "28 cm",
+      "35 cm",
+      "30 cm",
+      "42 cm"
+    ],
+    "correct_index": 1,
+    "explanation": "2/5 = 14/x → x = 70/2 = 35 cm.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::similar-figures"
+  },
+  {
+    "external_key": "AR-B31-057",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "In a class, the ratio of boys to girls is 5:3. If there are 24 girls, how many total students?",
+    "choices": [
+      "60",
+      "56",
+      "64",
+      "48"
+    ],
+    "correct_index": 2,
+    "explanation": "Each part: 24/3 = 8. Boys: 5 × 8 = 40. Total: 40 + 24 = 64.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::ratio-to-total"
+  },
+  {
+    "external_key": "AR-B31-058",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A recipe for 4 servings uses 3 cups of broth and 1.5 cups of rice. To make 10 servings, how many cups of broth are needed?",
+    "choices": [
+      "6 cups",
+      "7 cups",
+      "8 cups",
+      "7.5 cups"
+    ],
+    "correct_index": 3,
+    "explanation": "Per serving: 3/4 cup broth. For 10: 10 × 0.75 = 7.5 cups.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::recipe-scale-multi"
+  },
+  {
+    "external_key": "AR-B31-059",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A scale model car is built at 1:24. If the model is 7.5 inches long, what is the actual car length, in feet?",
+    "choices": [
+      "18 feet",
+      "14 feet",
+      "12 feet",
+      "15 feet"
+    ],
+    "correct_index": 3,
+    "explanation": "Actual length: 7.5 × 24 = 180 inches. Convert: 180 / 12 = 15 feet.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::scale-with-conversion"
+  },
+  {
+    "external_key": "AR-B31-060",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A 60-pound mixture of nuts contains peanuts and cashews in a 7:3 ratio. How many pounds of cashews must be added to make the ratio 1:1?",
+    "choices": [
+      "22 lb",
+      "24 lb",
+      "18 lb",
+      "20 lb"
+    ],
+    "correct_index": 1,
+    "explanation": "Each part: 60/10 = 6 lb. Peanuts: 42 lb. Cashews: 18 lb. To match 42 lb of peanuts, need 42 lb cashews. Add 42 − 18 = 24 lb.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::adjust-ratio"
+  }
+]

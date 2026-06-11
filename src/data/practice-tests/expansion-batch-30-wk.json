@@ -1,0 +1,1022 @@
+[
+  {
+    "external_key": "WK-B30-001",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word PORTABLE most nearly means:",
+    "choices": [
+      "easily broken",
+      "able to be carried",
+      "very heavy",
+      "permanently fixed"
+    ],
+    "correct_index": 1,
+    "explanation": "PORTABLE is built on the Latin root PORT- meaning 'to carry' (same root as TRANSPORT, IMPORT, EXPORT). The suffix -ABLE means 'capable of.' So PORTABLE = capable of being carried. The other choices have nothing to do with carrying.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::port-carry-portable"
+  },
+  {
+    "external_key": "WK-B30-002",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word VISIBLE most nearly means:",
+    "choices": [
+      "able to be seen",
+      "moving quickly",
+      "well-known",
+      "loud"
+    ],
+    "correct_index": 0,
+    "explanation": "VISIBLE comes from the Latin root VID/VIS meaning 'to see' (same root as VISION, VIDEO, EVIDENT). With suffix -IBLE meaning 'capable of,' VISIBLE = capable of being seen. 'Well-known' is a different sense (FAMOUS); 'loud' is auditory, not visual.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::vis-see-visible"
+  },
+  {
+    "external_key": "WK-B30-003",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word AUDIBLE most nearly means:",
+    "choices": [
+      "loud and angry",
+      "able to be touched",
+      "able to be heard",
+      "spoken clearly"
+    ],
+    "correct_index": 2,
+    "explanation": "AUDIBLE comes from the Latin root AUD- meaning 'to hear' (same root as AUDIO, AUDIENCE, AUDITORIUM). AUDIBLE means capable of being heard. 'Spoken clearly' is close but describes the speaker's action, not whether the sound reaches the ear.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::aud-hear-audible"
+  },
+  {
+    "external_key": "WK-B30-004",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word AQUATIC most nearly means:",
+    "choices": [
+      "relating to soil",
+      "relating to air",
+      "relating to water",
+      "relating to fire"
+    ],
+    "correct_index": 2,
+    "explanation": "AQUATIC comes from the Latin root AQUA meaning 'water' (same root as AQUARIUM, AQUEDUCT). AQUATIC describes things living in or relating to water. The other three name different elements.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::aqua-water-aquatic"
+  },
+  {
+    "external_key": "WK-B30-005",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word BENEFIT most nearly means:",
+    "choices": [
+      "a harmful effect",
+      "a helpful result",
+      "a sudden change",
+      "a careful plan"
+    ],
+    "correct_index": 1,
+    "explanation": "BENEFIT comes from the Latin root BENE- meaning 'good' or 'well' (same root as BENEFICIAL, BENEVOLENT, BENEDICTION). A benefit is a good or helpful result. 'Harmful effect' is the opposite (MAL- means bad).",
+    "status": "verified",
+    "item_family_id": "wk.root-words::bene-good-benefit"
+  },
+  {
+    "external_key": "WK-B30-006",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word TENACIOUS most nearly means:",
+    "choices": [
+      "holding firmly to a position",
+      "lacking direction",
+      "extremely cautious",
+      "easily discouraged"
+    ],
+    "correct_index": 0,
+    "explanation": "TENACIOUS comes from the Latin root TEN- meaning 'to hold' (same root as RETAIN, ABSTAIN, TENANT). To hold firmly = persistent. 'Easily discouraged' is the opposite.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::ten-hold-tenacious"
+  },
+  {
+    "external_key": "WK-B30-007",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word CREDIBLE most nearly means:",
+    "choices": [
+      "able to be spent",
+      "easily broken",
+      "made of metal",
+      "able to be believed"
+    ],
+    "correct_index": 3,
+    "explanation": "CREDIBLE comes from the Latin root CRED- meaning 'to believe' (same root as CREDIT, CREED, INCREDIBLE). CREDIBLE means worthy of belief. 'Able to be spent' confuses CREDIT (financial sense) with the underlying meaning.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::cred-believe-credible"
+  },
+  {
+    "external_key": "WK-B30-008",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word CHRONIC most nearly means:",
+    "choices": [
+      "rare and unusual",
+      "sudden and brief",
+      "extremely painful",
+      "lasting a long time"
+    ],
+    "correct_index": 3,
+    "explanation": "CHRONIC comes from the Greek root CHRON- meaning 'time' (same root as CHRONOLOGY, SYNCHRONIZE, CHRONOMETER). A chronic condition is one that persists over time. 'Sudden and brief' describes ACUTE, the medical opposite.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::chron-time-chronic"
+  },
+  {
+    "external_key": "WK-B30-009",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word DICTATE most nearly means:",
+    "choices": [
+      "to speak with authority",
+      "to read aloud",
+      "to write down silently",
+      "to listen carefully"
+    ],
+    "correct_index": 0,
+    "explanation": "DICTATE comes from the Latin root DICT- meaning 'to say' or 'to speak' (same root as PREDICT, CONTRADICT, VERDICT). To dictate is to speak words for another to record, or to issue commands.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::dict-say-dictate"
+  },
+  {
+    "external_key": "WK-B30-010",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word MALEVOLENT most nearly means:",
+    "choices": [
+      "extremely generous",
+      "wishing harm on others",
+      "deeply confused",
+      "physically weak"
+    ],
+    "correct_index": 1,
+    "explanation": "MALEVOLENT combines MAL- (bad, evil) with -VOL- (wish, will). Same roots appear in MALICE, MALIGNANT, and BENEVOLENT (the opposite, 'wishing well'). MALEVOLENT = wishing ill toward others.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::mal-bad-malevolent"
+  },
+  {
+    "external_key": "WK-B30-011",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word LUCID most nearly means:",
+    "choices": [
+      "deeply emotional",
+      "rough in texture",
+      "wildly imaginative",
+      "clear and easily understood"
+    ],
+    "correct_index": 3,
+    "explanation": "LUCID comes from the Latin root LUC/LUM meaning 'light' (same root as ILLUMINATE, TRANSLUCENT, LUMINARY). Something LUCID is mentally 'light' — clear, easy to see through. A lucid explanation is one that can be followed without effort.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::luc-light-lucid"
+  },
+  {
+    "external_key": "WK-B30-012",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word PERSPICACIOUS most nearly means:",
+    "choices": [
+      "easily fooled",
+      "long-winded",
+      "sharply perceptive",
+      "physically fit"
+    ],
+    "correct_index": 2,
+    "explanation": "PERSPICACIOUS uses the Latin root SPEC/SPIC meaning 'to see, look' (same root as INSPECT, SPECTACLE, CONSPICUOUS). The PER- intensifier means 'thoroughly,' so PERSPICACIOUS = seeing through things keenly. 'Easily fooled' is the opposite.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::spec-see-perspicacious"
+  },
+  {
+    "external_key": "WK-B30-013",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word PROGENITOR most nearly means:",
+    "choices": [
+      "a young apprentice",
+      "a harsh critic",
+      "an ancestor or originator",
+      "a careful manager"
+    ],
+    "correct_index": 2,
+    "explanation": "PROGENITOR combines PRO- ('forward, before') with the Latin root GEN- ('birth, origin'), same root as GENERATE, GENESIS, GENEALOGY. A progenitor is one who comes before and gives rise to descendants — an ancestor or founder.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::gen-birth-progenitor"
+  },
+  {
+    "external_key": "WK-B30-014",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word PACIFY most nearly means:",
+    "choices": [
+      "to delay deliberately",
+      "to stir up conflict",
+      "to investigate thoroughly",
+      "to calm or soothe"
+    ],
+    "correct_index": 3,
+    "explanation": "PACIFY comes from the Latin root PAC- meaning 'peace' (same root as PEACE itself, PACIFIC Ocean, and PACIFIST). The suffix -IFY means 'to make,' so PACIFY = to make peaceful. 'Stir up conflict' is the opposite.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::pac-peace-pacify"
+  },
+  {
+    "external_key": "WK-B30-015",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word BELLIGERENT most nearly means:",
+    "choices": [
+      "deeply thoughtful",
+      "eager to fight",
+      "physically large",
+      "openly cheerful"
+    ],
+    "correct_index": 1,
+    "explanation": "BELLIGERENT comes from the Latin root BELL- meaning 'war' (same root as REBEL, ANTEBELLUM, BELLICOSE). A belligerent person is warlike — hostile and eager for conflict. Note: don't confuse BELL- (war) with BELLE (beautiful).",
+    "status": "verified",
+    "item_family_id": "wk.root-words::bell-war-belligerent"
+  },
+  {
+    "external_key": "WK-B30-016",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word PREVIEW most nearly means:",
+    "choices": [
+      "a hidden flaw",
+      "a written summary",
+      "a final review",
+      "a viewing beforehand"
+    ],
+    "correct_index": 3,
+    "explanation": "The prefix PRE- means 'before.' Attached to VIEW, PREVIEW means a viewing that happens before the official release. Same PRE- appears in PREDICT (say before), PRECAUTION (care taken before), and PRECEDE.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::pre-before-preview"
+  },
+  {
+    "external_key": "WK-B30-017",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word SUBMARINE most nearly means:",
+    "choices": [
+      "a vessel that travels above water",
+      "a small fishing boat",
+      "a vessel that travels under water",
+      "a sunken shipwreck"
+    ],
+    "correct_index": 2,
+    "explanation": "The prefix SUB- means 'under' or 'below.' Combined with MARINE ('of the sea'), SUBMARINE = under the sea. Same SUB- appears in SUBTERRANEAN (underground), SUBMERGE, and SUBORDINATE.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::sub-under-submarine"
+  },
+  {
+    "external_key": "WK-B30-018",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word REWRITE most nearly means:",
+    "choices": [
+      "to write for the first time",
+      "to write again",
+      "to refuse to write",
+      "to write very quickly"
+    ],
+    "correct_index": 1,
+    "explanation": "The prefix RE- means 'again' or 'back.' REWRITE = write again. Same RE- appears in REPEAT, REVIEW, RETURN, and RECONSIDER.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::re-again-rewrite"
+  },
+  {
+    "external_key": "WK-B30-019",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word DISAGREE most nearly means:",
+    "choices": [
+      "to discuss calmly",
+      "to fail to agree",
+      "to agree strongly",
+      "to agree later"
+    ],
+    "correct_index": 1,
+    "explanation": "The prefix DIS- means 'not' or 'opposite of.' DISAGREE = not agree. Same DIS- appears in DISLIKE, DISCONNECT, DISCOMFORT, and DISHONEST.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::dis-not-disagree"
+  },
+  {
+    "external_key": "WK-B30-020",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word HOPELESS most nearly means:",
+    "choices": [
+      "newly hopeful",
+      "without hope",
+      "full of hope",
+      "secretly hopeful"
+    ],
+    "correct_index": 1,
+    "explanation": "The suffix -LESS means 'without.' HOPELESS = without hope. Same -LESS appears in FEARLESS (without fear), USELESS, ENDLESS, and CARELESS.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::less-without-hopeless"
+  },
+  {
+    "external_key": "WK-B30-021",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word CIRCUMNAVIGATE most nearly means:",
+    "choices": [
+      "to abandon a voyage",
+      "to sail directly toward",
+      "to sail around",
+      "to chart a coastline"
+    ],
+    "correct_index": 2,
+    "explanation": "The prefix CIRCUM- means 'around.' Combined with NAVIGATE, CIRCUMNAVIGATE = to sail around (typically the globe). Same CIRCUM- appears in CIRCUMFERENCE, CIRCUMSPECT (looking around = cautious), and CIRCUMVENT.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::circum-around-circumnavigate"
+  },
+  {
+    "external_key": "WK-B30-022",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word ANTECEDENT most nearly means:",
+    "choices": [
+      "something that opposes",
+      "something that comes before",
+      "something that comes after",
+      "something that hides"
+    ],
+    "correct_index": 1,
+    "explanation": "The prefix ANTE- means 'before' (not to be confused with ANTI-, which means 'against'). ANTECEDENT = that which goes before. Same ANTE- appears in ANTEBELLUM (before the war) and ANTERIOR.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::ante-before-antecedent"
+  },
+  {
+    "external_key": "WK-B30-023",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word MISCONSTRUE most nearly means:",
+    "choices": [
+      "to repeat exactly",
+      "to explain perfectly",
+      "to remember well",
+      "to interpret wrongly"
+    ],
+    "correct_index": 3,
+    "explanation": "The prefix MIS- means 'wrongly' or 'badly.' CONSTRUE means 'to interpret.' Together, MISCONSTRUE = to interpret wrongly. Same MIS- appears in MISUNDERSTAND, MISCALCULATE, and MISLEAD.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::mis-wrong-misconstrue"
+  },
+  {
+    "external_key": "WK-B30-024",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word HYPERACTIVE most nearly means:",
+    "choices": [
+      "moderately active",
+      "active only at night",
+      "unusually inactive",
+      "abnormally active"
+    ],
+    "correct_index": 3,
+    "explanation": "The prefix HYPER- means 'over' or 'excessive.' HYPERACTIVE = excessively active. Compare with HYPO- (meaning 'under'), as in HYPOTHERMIA (low body temperature). Same HYPER- appears in HYPERTENSION (high blood pressure).",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::hyper-over-hyperactive"
+  },
+  {
+    "external_key": "WK-B30-025",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word PERILOUS most nearly means:",
+    "choices": [
+      "full of danger",
+      "full of meaning",
+      "full of doubt",
+      "full of joy"
+    ],
+    "correct_index": 0,
+    "explanation": "The suffix -OUS means 'full of' or 'characterized by.' PERIL means danger, so PERILOUS = full of danger. Same -OUS appears in JOYOUS (full of joy), GLORIOUS, MOUNTAINOUS, and POROUS.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::ous-full-of-perilous"
+  },
+  {
+    "external_key": "WK-B30-026",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word OMNISCIENT most nearly means:",
+    "choices": [
+      "all-present",
+      "all-seeing",
+      "all-powerful",
+      "all-knowing"
+    ],
+    "correct_index": 3,
+    "explanation": "The prefix OMNI- means 'all,' and the root SCI- means 'to know' (as in SCIENCE, CONSCIENCE). OMNISCIENT = all-knowing. The traps: OMNIPOTENT = all-powerful, OMNIPRESENT = everywhere at once. Don't confuse seeing with knowing.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::omni-all-omniscient"
+  },
+  {
+    "external_key": "WK-B30-027",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word EXTRICATE most nearly means:",
+    "choices": [
+      "to study closely",
+      "to question harshly",
+      "to entangle further",
+      "to free from difficulty"
+    ],
+    "correct_index": 3,
+    "explanation": "The prefix EX- means 'out of.' EXTRICATE means to draw out of an entanglement — to free. Same EX- (out) appears in EXIT, EXPORT, EXHALE, and EXTRACT. 'Entangle further' is the opposite.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::ex-out-extricate"
+  },
+  {
+    "external_key": "WK-B30-028",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word INTRANSIGENT most nearly means:",
+    "choices": [
+      "refusing to compromise",
+      "moving from place to place",
+      "openly friendly",
+      "easily persuaded"
+    ],
+    "correct_index": 0,
+    "explanation": "The prefix IN- here means 'not.' TRANSIGENT comes from a Latin root meaning 'to come to an agreement' (relating to TRANSACT). INTRANSIGENT = unwilling to come to terms — uncompromising. 'Easily persuaded' is the opposite.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::in-not-intransigent"
+  },
+  {
+    "external_key": "WK-B30-029",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word AMBIVALENT most nearly means:",
+    "choices": [
+      "having mixed feelings",
+      "openly hostile",
+      "strongly opinionated",
+      "highly skilled"
+    ],
+    "correct_index": 0,
+    "explanation": "The prefix AMBI- means 'both.' VAL- relates to 'strength' or 'worth' (as in VALUE, VALIANT). AMBIVALENT literally means 'having both feelings/values' — pulled in both directions. Same AMBI- appears in AMBIDEXTROUS (using both hands).",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::ambi-both-ambivalent"
+  },
+  {
+    "external_key": "WK-B30-030",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word INNOCUOUS most nearly means:",
+    "choices": [
+      "loudly disruptive",
+      "completely harmless",
+      "highly dangerous",
+      "extremely rare"
+    ],
+    "correct_index": 1,
+    "explanation": "The prefix IN- means 'not,' and -NOC- comes from the Latin root meaning 'harm' (same root as NOXIOUS, OBNOXIOUS). INNOCUOUS = not harmful. The suffix -OUS ('full of') is present too, but the IN- flips it negative.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::in-not-innocuous"
+  },
+  {
+    "external_key": "WK-B30-031",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "FRUGAL most nearly means:",
+    "choices": [
+      "wealthy",
+      "generous",
+      "thrifty",
+      "wasteful"
+    ],
+    "correct_index": 2,
+    "explanation": "FRUGAL means careful with money or resources — thrifty. 'Wasteful' is the opposite. 'Wealthy' describes possessing money, not how one spends it. 'Generous' is unrelated.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::frugal"
+  },
+  {
+    "external_key": "WK-B30-032",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "VIGILANT most nearly means:",
+    "choices": [
+      "sleepy",
+      "joyful",
+      "watchful",
+      "harsh"
+    ],
+    "correct_index": 2,
+    "explanation": "VIGILANT means keeping careful watch (same root VIG- as VIGIL, INVIGORATE). 'Sleepy' is the opposite of being alert. The other choices describe unrelated traits.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::vigilant"
+  },
+  {
+    "external_key": "WK-B30-033",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "STEADFAST most nearly means:",
+    "choices": [
+      "unwavering",
+      "tired",
+      "hesitant",
+      "speedy"
+    ],
+    "correct_index": 0,
+    "explanation": "STEADFAST means firmly loyal or committed — unwavering. 'Hesitant' is essentially the opposite. 'Speedy' confuses 'fast' (the second part of the word) with rate of motion, but here -FAST means 'fixed' (as in 'hold fast').",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::steadfast"
+  },
+  {
+    "external_key": "WK-B30-034",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "PRUDENT most nearly means:",
+    "choices": [
+      "cautious",
+      "stubborn",
+      "reckless",
+      "showy"
+    ],
+    "correct_index": 0,
+    "explanation": "PRUDENT means showing careful thought about consequences — cautious and wise. 'Reckless' is the opposite. 'Stubborn' is a different trait. 'Showy' has no relation.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::prudent"
+  },
+  {
+    "external_key": "WK-B30-035",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "ELUSIVE most nearly means:",
+    "choices": [
+      "openly honest",
+      "easy to see",
+      "hard to catch",
+      "very heavy"
+    ],
+    "correct_index": 2,
+    "explanation": "ELUSIVE means difficult to find, catch, or pin down (from Latin ELUDERE, to escape). 'Easy to see' is the opposite. The other choices are unrelated physical or character traits.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::elusive"
+  },
+  {
+    "external_key": "WK-B30-036",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "GARRULOUS most nearly means:",
+    "choices": [
+      "talkative",
+      "stingy",
+      "fearful",
+      "silent"
+    ],
+    "correct_index": 0,
+    "explanation": "GARRULOUS describes someone who talks excessively, especially about trivial matters. 'Silent' is the opposite. Related synonyms include LOQUACIOUS and VERBOSE — all are common ASVAB targets.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::garrulous"
+  },
+  {
+    "external_key": "WK-B30-037",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "MITIGATE most nearly means:",
+    "choices": [
+      "to imitate",
+      "to investigate",
+      "to make worse",
+      "to make less severe"
+    ],
+    "correct_index": 3,
+    "explanation": "MITIGATE means to lessen the severity of something (often pain, damage, or punishment). 'Make worse' is the opposite — EXACERBATE. 'Imitate' is a similar-sounding trap but unrelated in meaning.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::mitigate"
+  },
+  {
+    "external_key": "WK-B30-038",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "CANDID most nearly means:",
+    "choices": [
+      "tasty",
+      "secretive",
+      "frank",
+      "elegant"
+    ],
+    "correct_index": 2,
+    "explanation": "CANDID means openly honest and straightforward in speech. 'Secretive' is the opposite. A 'candid photograph' captures someone naturally, without posing — same root idea of openness.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::candid"
+  },
+  {
+    "external_key": "WK-B30-039",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "RETICENT most nearly means:",
+    "choices": [
+      "deeply grateful",
+      "reserved in speech",
+      "physically restless",
+      "extremely angry"
+    ],
+    "correct_index": 1,
+    "explanation": "RETICENT means inclined to keep silent, holding back what one thinks. Don't confuse with RELUCTANT (unwilling), though both involve holding back. 'Physically restless' is unrelated.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::reticent"
+  },
+  {
+    "external_key": "WK-B30-040",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "METICULOUS most nearly means:",
+    "choices": [
+      "rapidly changing",
+      "openly aggressive",
+      "extremely careful about details",
+      "broadly generous"
+    ],
+    "correct_index": 2,
+    "explanation": "METICULOUS describes someone who pays great attention to small details — careful and precise. The other choices are unrelated character traits. A meticulous mechanic checks every connection.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::meticulous"
+  },
+  {
+    "external_key": "WK-B30-041",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "OBSEQUIOUS most nearly means:",
+    "choices": [
+      "openly hostile",
+      "excessively obedient",
+      "completely indifferent",
+      "highly intelligent"
+    ],
+    "correct_index": 1,
+    "explanation": "OBSEQUIOUS describes someone who is fawning and overly eager to please — servile to the point of being insincere. 'Openly hostile' is roughly the opposite. The word carries a negative tone even though obedience itself is neutral.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::obsequious"
+  },
+  {
+    "external_key": "WK-B30-042",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "EPHEMERAL most nearly means:",
+    "choices": [
+      "lasting only a short time",
+      "drawn from memory",
+      "having great weight",
+      "deeply mysterious"
+    ],
+    "correct_index": 0,
+    "explanation": "EPHEMERAL comes from Greek meaning 'lasting a day' — short-lived, fleeting. Mayflies and rainbows are classic ephemeral things. The other choices describe other qualities (weight, memory, mystery).",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::ephemeral"
+  },
+  {
+    "external_key": "WK-B30-043",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "SURREPTITIOUS most nearly means:",
+    "choices": [
+      "done secretly",
+      "done quickly",
+      "done openly",
+      "done unwillingly"
+    ],
+    "correct_index": 0,
+    "explanation": "SURREPTITIOUS means done in a secret or stealthy way, especially to avoid notice. 'Done openly' is the opposite — overt. Synonyms include CLANDESTINE and COVERT, all common ASVAB targets.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::surreptitious"
+  },
+  {
+    "external_key": "WK-B30-044",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "SAGACIOUS most nearly means:",
+    "choices": [
+      "physically agile",
+      "easily angered",
+      "showing keen judgment",
+      "outwardly cheerful"
+    ],
+    "correct_index": 2,
+    "explanation": "SAGACIOUS means having sound judgment and wisdom (related to SAGE, a wise person). The trap 'physically agile' confuses sagacious with a movement word. Sagacious advice is shrewd and well-considered.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::sagacious"
+  },
+  {
+    "external_key": "WK-B30-045",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "EXONERATE most nearly means:",
+    "choices": [
+      "to clear of blame",
+      "to find guilty",
+      "to praise highly",
+      "to remove from office"
+    ],
+    "correct_index": 0,
+    "explanation": "EXONERATE means to absolve from blame or free from accusation (literally 'to take off the burden,' from Latin ONUS = burden). 'Find guilty' is the opposite. 'Remove from office' confuses with a different legal action.",
+    "status": "verified",
+    "item_family_id": "wk.synonyms::exonerate"
+  },
+  {
+    "external_key": "WK-B30-046",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "After the long march, the soldiers were so WEARY that they could barely lift their packs onto the truck. WEARY most nearly means:",
+    "choices": [
+      "amused",
+      "exhausted",
+      "confused",
+      "energetic"
+    ],
+    "correct_index": 1,
+    "explanation": "The clue is 'so WEARY that they could barely lift their packs.' Difficulty lifting points to physical exhaustion, not energy or confusion. WEARY = tired.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::weary-march"
+  },
+  {
+    "external_key": "WK-B30-047",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The mechanic warned that ignoring the strange noise would only AGGRAVATE the engine problem. AGGRAVATE most nearly means:",
+    "choices": [
+      "make worse",
+      "discover",
+      "describe",
+      "fix"
+    ],
+    "correct_index": 0,
+    "explanation": "The mechanic is warning against ignoring a problem, which signals that the result would be negative. 'Make worse' fits the warning. 'Fix' would not require a warning; 'discover' and 'describe' don't match the threatening tone.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::aggravate-engine"
+  },
+  {
+    "external_key": "WK-B30-048",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "Because the recruit's uniform was IMMACULATE, the drill sergeant could find no fault during inspection. IMMACULATE most nearly means:",
+    "choices": [
+      "perfectly clean",
+      "wrinkled",
+      "barely worn",
+      "issued recently"
+    ],
+    "correct_index": 0,
+    "explanation": "The clue is 'could find no fault during inspection.' For an inspector to find no fault, the uniform must be spotless. 'Wrinkled' would invite criticism. 'Issued recently' and 'barely worn' don't guarantee cleanliness.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::immaculate-uniform"
+  },
+  {
+    "external_key": "WK-B30-049",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The instructions were so AMBIGUOUS that half the class assembled the model one way and half another. AMBIGUOUS most nearly means:",
+    "choices": [
+      "detailed",
+      "short",
+      "unclear",
+      "humorous"
+    ],
+    "correct_index": 2,
+    "explanation": "If half the class went one way and half went another following the same directions, the directions could be read more than one way — i.e., unclear. Detailed or short directions wouldn't necessarily produce a split.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::ambiguous-instructions"
+  },
+  {
+    "external_key": "WK-B30-050",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The hiker proceeded with CAUTION across the icy bridge, testing each plank before shifting her weight. CAUTION most nearly means:",
+    "choices": [
+      "amusement",
+      "speed",
+      "anger",
+      "carefulness"
+    ],
+    "correct_index": 3,
+    "explanation": "Testing each plank before shifting weight is the behavior of someone being careful. 'Speed' would be the opposite. The icy bridge sets up a danger context that rules out anger or amusement.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::caution-bridge"
+  },
+  {
+    "external_key": "WK-B30-051",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "Although the lieutenant disagreed with the order, she carried it out with ALACRITY, completing the task ahead of schedule. ALACRITY most nearly means:",
+    "choices": [
+      "reluctance",
+      "open anger",
+      "quiet sadness",
+      "brisk eagerness"
+    ],
+    "correct_index": 3,
+    "explanation": "The clue is 'completing the task ahead of schedule.' Despite her disagreement, she moved quickly and willingly. 'Reluctance' would slow her down. ALACRITY = cheerful promptness.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::alacrity-lieutenant"
+  },
+  {
+    "external_key": "WK-B30-052",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The chemist worked in a STERILE laboratory where even a single airborne particle could ruin the experiment. STERILE most nearly means:",
+    "choices": [
+      "tightly sealed",
+      "overheated",
+      "brightly lit",
+      "free of contaminants"
+    ],
+    "correct_index": 3,
+    "explanation": "The threat described is 'a single airborne particle,' so STERILE must mean free from such particles. 'Tightly sealed' is close but describes a method, not the state itself. STERILE = germ-free, uncontaminated.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::sterile-lab"
+  },
+  {
+    "external_key": "WK-B30-053",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The senator gave an EVASIVE answer, sidestepping the reporter's question without actually addressing it. EVASIVE most nearly means:",
+    "choices": [
+      "deeply emotional",
+      "tightly reasoned",
+      "direct",
+      "avoiding the issue"
+    ],
+    "correct_index": 3,
+    "explanation": "The clue 'sidestepping the reporter's question without actually addressing it' defines the word. 'Direct' would be the opposite. Same root as EVADE (escape from). An evasive answer dodges the question.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::evasive-senator"
+  },
+  {
+    "external_key": "WK-B30-054",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The engineer's REDUNDANT safety system included three backup pumps, any one of which could keep the reactor cool. REDUNDANT most nearly means:",
+    "choices": [
+      "duplicated for backup",
+      "faulty",
+      "unproven",
+      "outdated"
+    ],
+    "correct_index": 0,
+    "explanation": "The clue is 'three backup pumps, any one of which could keep the reactor cool' — multiple parts that each serve the same function. In engineering, REDUNDANT means deliberately duplicated for reliability, not 'unnecessary' as in casual speech.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::redundant-engineering"
+  },
+  {
+    "external_key": "WK-B30-055",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The general was renowned for his TACITURN nature; he ran an entire briefing with only a handful of words. TACITURN most nearly means:",
+    "choices": [
+      "uninformed",
+      "reserved in speech",
+      "openly cheerful",
+      "slow to act"
+    ],
+    "correct_index": 1,
+    "explanation": "Running a briefing 'with only a handful of words' shows someone who speaks little — reserved in speech. Don't confuse with 'uninformed'; the general clearly knows enough to brief. Same Latin root TAC- as in TACIT (unspoken).",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::taciturn-general"
+  },
+  {
+    "external_key": "WK-B30-056",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The commanding officer's RECALCITRANT subordinate ignored every order, requiring repeated discipline before complying. RECALCITRANT most nearly means:",
+    "choices": [
+      "highly skilled",
+      "stubbornly resistant",
+      "deeply loyal",
+      "newly assigned"
+    ],
+    "correct_index": 1,
+    "explanation": "Ignoring every order and requiring repeated discipline describes someone stubbornly defiant. 'Deeply loyal' is the opposite. 'Highly skilled' and 'newly assigned' don't follow from the behavior described. RECALCITRANT literally means 'kicking back.'",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::recalcitrant-subordinate"
+  },
+  {
+    "external_key": "WK-B30-057",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "Although the witness's story was PLAUSIBLE on the surface, the detective's investigation uncovered several contradictions. PLAUSIBLE most nearly means:",
+    "choices": [
+      "clearly false",
+      "tightly reasoned",
+      "seemingly believable",
+      "deeply rehearsed"
+    ],
+    "correct_index": 2,
+    "explanation": "'Although... on the surface' signals appearance versus reality. The story SEEMED believable until contradictions surfaced. 'Clearly false' contradicts 'on the surface.' PLAUSIBLE = appearing reasonable, without guaranteeing truth.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::plausible-witness"
+  },
+  {
+    "external_key": "WK-B30-058",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The diplomat's CONCILIATORY tone helped both delegations step back from the brink and resume negotiations. CONCILIATORY most nearly means:",
+    "choices": [
+      "intended to confuse",
+      "intended to provoke",
+      "intended to soothe",
+      "intended to delay"
+    ],
+    "correct_index": 2,
+    "explanation": "The clue 'step back from the brink and resume negotiations' shows the tone calmed tensions. 'Intended to provoke' is the opposite. CONCILIATORY shares a root with RECONCILE — bringing parties together.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::conciliatory-diplomat"
+  },
+  {
+    "external_key": "WK-B30-059",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "Despite the chaos of the firefight, the squad leader remained EQUANIMOUS, calmly directing fire and calling in support. EQUANIMOUS most nearly means:",
+    "choices": [
+      "physically still",
+      "mentally composed",
+      "easily startled",
+      "openly fearful"
+    ],
+    "correct_index": 1,
+    "explanation": "The contrast 'despite the chaos... calmly directing fire' points to composure under pressure. 'Easily startled' and 'openly fearful' are the opposite. EQUANIMOUS comes from EQUI- (even) + ANIM- (mind) — having an even mind.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::equanimous-firefight"
+  },
+  {
+    "external_key": "WK-B30-060",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The auditor's PERFUNCTORY review missed the obvious accounting errors that a careful examination would have caught. PERFUNCTORY most nearly means:",
+    "choices": [
+      "expensive",
+      "secretly biased",
+      "thorough",
+      "done with little care"
+    ],
+    "correct_index": 3,
+    "explanation": "The contrast 'missed the obvious errors that a careful examination would have caught' shows the review was the opposite of careful — done as a routine formality. 'Thorough' is the direct opposite. PERFUNCTORY = going through the motions.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::perfunctory-auditor"
+  }
+]

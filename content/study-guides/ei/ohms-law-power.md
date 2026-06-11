@@ -15,6 +15,8 @@ pitfalls:
   - "Mixing up units: Voltage (V, Volts), Current (I, Amperes/amps), Resistance (R, Ohms Ω), Power (P, Watts)"
   - "Using P = IV when you only have V and R, switch to P = V²/R to avoid an extra step"
   - "Forgetting that doubling current quadruples power dissipated in a resistor (P = I²R, current is squared)"
+  - "Mixing up energy and power: power (watts) is the instantaneous rate, while energy (watt-hours or kWh) is power multiplied by time; your electric bill charges for energy, not power"
+  - "Confusing peak and RMS voltage for AC: US outlets are 120 V RMS at 60 Hz, which corresponds to about 170 V peak; multiply peak by 0.707 to get RMS, not the other way around"
 worked_examples:
   - prompt: "A circuit has a voltage of 12 V and a resistance of 4 Ω. What is the current?"
     solution: "I = V/R = 12 V ÷ 4 Ω = 3 A"
@@ -24,6 +26,12 @@ worked_examples:
     solution: "P = V²/R → R = V²/P = (120)²/60 = 14400/60 = 240 Ω"
   - prompt: "If current through a resistor doubles, what happens to the power it dissipates?"
     solution: "P = I²R, current is squared, so doubling I multiplies power by 4. Power quadruples."
+  - prompt: "A household appliance is rated 1200 W and plugs into a 120 V outlet. How much current does it draw?"
+    solution: "P = IV, so I = P/V = 1200 W ÷ 120 V = 10 A. This is why a 1200 W device needs a circuit rated for at least 15 A."
+  - prompt: "A 1000 W (1 kW) space heater runs for 3 hours. At an electricity rate of 15 cents per kWh, what does it cost to run?"
+    solution: "Energy = P × t = 1 kW × 3 h = 3 kWh. Cost = 3 kWh × $0.15 = $0.45. Watt-hours are simply wattage multiplied by time in hours."
+  - prompt: "An AC outlet supplies 170 V peak. What is the RMS voltage, and why does AC use RMS instead of peak?"
+    solution: "RMS = peak × 0.707 = 170 × 0.707 ≈ 120 V. AC voltage constantly swings between positive and negative peaks, so RMS gives the equivalent steady (DC) value that delivers the same power. US household AC is 120 V RMS at 60 Hz."
 diagrams:
   - type: ohms-law-triangle
     after: "Ohm's Law: the foundation"

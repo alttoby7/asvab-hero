@@ -1,0 +1,1022 @@
+[
+  {
+    "external_key": "EI-B27-001",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "If one bulb burns out in a string of three bulbs wired in series and the rest of the string goes dark, what does that tell you about the circuit?",
+    "choices": [
+      "The remaining bulbs are receiving too much voltage",
+      "The bulbs share a single current path that the burned-out bulb broke",
+      "The bulbs were wired in parallel across the battery",
+      "Each bulb had its own separate path to the battery"
+    ],
+    "correct_index": 1,
+    "explanation": "In a series circuit there is only one path for current, so a single open (burned filament) stops all current and every bulb goes dark. If the bulbs had separate paths, that would describe a parallel circuit, in which the surviving bulbs would still light. Excess voltage would not make working bulbs go dark; it would make them burn brighter or fail. The single-path behavior is the defining test for a series connection.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-open-kills-string"
+  },
+  {
+    "external_key": "EI-B27-002",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Household outlets in a room are wired so that unplugging a lamp does not turn off a fan plugged into another outlet. This is an example of what circuit type?",
+    "choices": [
+      "Parallel",
+      "Open",
+      "Short",
+      "Series"
+    ],
+    "correct_index": 0,
+    "explanation": "Each outlet is on its own branch across the same 120 V supply, so loads operate independently — the defining feature of a parallel circuit. In a series circuit, unplugging one device would open the single current path and stop all of them. A short is an unintended low-resistance path, and an open is a broken path; neither describes normal outlet wiring.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::household-parallel-outlets"
+  },
+  {
+    "external_key": "EI-B27-003",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Which statement correctly describes total resistance in a series circuit?",
+    "choices": [
+      "It equals the smallest resistor's value",
+      "It is always less than any single resistor",
+      "It equals the sum of all the individual resistances",
+      "It equals the average of the resistances"
+    ],
+    "correct_index": 2,
+    "explanation": "Series resistors stack end-to-end on one current path, so total resistance is the simple sum R_total = R1 + R2 + R3. The smallest-value rule and the 'less than any single resistor' rule describe parallel combinations, where total resistance drops below the smallest branch. Averaging is not a valid combination rule for resistors in either configuration.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-resistance-sum"
+  },
+  {
+    "external_key": "EI-B27-004",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "A series-parallel circuit is best described as:",
+    "choices": [
+      "A circuit that has no closed loop",
+      "A circuit that has both series and parallel sections",
+      "A circuit with only branched current paths",
+      "A circuit with only one current path"
+    ],
+    "correct_index": 1,
+    "explanation": "A series-parallel (combination) circuit contains some components that are in series and others that are in parallel within the same network. A single-path circuit is purely series, while a fully branched one is purely parallel. A circuit with no closed loop is an open circuit and would carry no current.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-parallel-definition"
+  },
+  {
+    "external_key": "EI-B27-005",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "An open circuit is a circuit that:",
+    "choices": [
+      "Has an unintended low-resistance path",
+      "Always draws maximum current",
+      "Stores energy in a magnetic field",
+      "Has a break that stops current from flowing"
+    ],
+    "correct_index": 3,
+    "explanation": "An open circuit has a break — a switch, blown fuse, or broken wire — that interrupts the loop so no current flows. An unintended low-resistance path describes a short circuit, which causes excessive current. Energy storage in a magnetic field describes an inductor, not a circuit condition. Maximum current is associated with shorts, not opens.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::open-circuit-definition"
+  },
+  {
+    "external_key": "EI-B27-006",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Two resistors, 10 Ω and 30 Ω, are connected in series across a 12 V battery. What current flows in the circuit?",
+    "choices": [
+      "0.4 A",
+      "0.1 A",
+      "0.3 A",
+      "1.2 A"
+    ],
+    "correct_index": 2,
+    "explanation": "Series resistances add, so R_total = 10 + 30 = 40 Ω. Ohm's law gives I = V/R = 12/40 = 0.3 A. Choosing 0.1 A or 1.2 A drops or adds a decimal place; 0.4 A would result from using 30 Ω alone instead of the series sum.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-current-calc"
+  },
+  {
+    "external_key": "EI-B27-007",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Two 60 Ω resistors are connected in parallel. What is the total resistance?",
+    "choices": [
+      "30 Ω",
+      "15 Ω",
+      "60 Ω",
+      "120 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "For two equal resistors in parallel, R_total = R/2 = 60/2 = 30 Ω. Adding them (120 Ω) treats them as series. Keeping one value (60 Ω) ignores the second branch entirely. Quartering (15 Ω) would only be correct for four equal resistors in parallel.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-two-equal"
+  },
+  {
+    "external_key": "EI-B27-008",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Three resistors of 10 Ω, 20 Ω, and 30 Ω are connected in series to a 60 V source. What is the voltage drop across the 20 Ω resistor?",
+    "choices": [
+      "20 V",
+      "60 V",
+      "10 V",
+      "30 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Total resistance is 10 + 20 + 30 = 60 Ω, so current = 60 V / 60 Ω = 1 A. The drop across the 20 Ω resistor is V = IR = 1 × 20 = 20 V. 10 V and 30 V would be the drops across the 10 Ω and 30 Ω resistors. 60 V is the full source voltage, which is shared among all three resistors.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-voltage-divider"
+  },
+  {
+    "external_key": "EI-B27-009",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "In a parallel circuit, the total current drawn from the source equals:",
+    "choices": [
+      "The smallest branch current",
+      "The sum of the branch currents",
+      "The current in any one branch",
+      "The source voltage divided by the largest resistor"
+    ],
+    "correct_index": 1,
+    "explanation": "By Kirchhoff's current law, current entering a node equals current leaving it, so the source current equals the sum of all branch currents in a parallel circuit. Picking the smallest or any single branch ignores the others. Dividing source voltage by only the largest resistor gives just one branch's current, not the total.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-kcl-total"
+  },
+  {
+    "external_key": "EI-B27-010",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "A 4 Ω and a 12 Ω resistor are in parallel. Their combined resistance is closest to:",
+    "choices": [
+      "8 Ω",
+      "3 Ω",
+      "16 Ω",
+      "48 Ω"
+    ],
+    "correct_index": 1,
+    "explanation": "Using the product-over-sum rule, R = (4 × 12) / (4 + 12) = 48/16 = 3 Ω. Adding the resistors (16 Ω) treats them as series. 8 Ω is the simple average, which is not how parallel resistors combine. 48 Ω is only the numerator of the formula.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-product-over-sum"
+  },
+  {
+    "external_key": "EI-B27-011",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A 12 V source drives a 6 Ω resistor in series with a parallel combination of two 8 Ω resistors. What is the total current from the source?",
+    "choices": [
+      "1.2 A",
+      "2.0 A",
+      "1.5 A",
+      "0.8 A"
+    ],
+    "correct_index": 0,
+    "explanation": "Two 8 Ω resistors in parallel make 4 Ω. That 4 Ω is in series with the 6 Ω resistor, giving a total of 10 Ω. Current = 12 V / 10 Ω = 1.2 A. 0.8 A would come from using 15 Ω (wrongly adding the two 8 Ω in series). 2.0 A would come from forgetting the 6 Ω entirely.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-parallel-combo-current"
+  },
+  {
+    "external_key": "EI-B27-012",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "Three resistors — 20 Ω, 30 Ω, and 60 Ω — are connected in parallel across a 12 V battery. What is the total current the battery supplies?",
+    "choices": [
+      "2.4 A",
+      "1.5 A",
+      "1.2 A",
+      "0.6 A"
+    ],
+    "correct_index": 2,
+    "explanation": "Branch currents are 12/20 = 0.6 A, 12/30 = 0.4 A, and 12/60 = 0.2 A, totaling 1.2 A. Equivalently, 1/R = 1/20 + 1/30 + 1/60 = 6/60, so R = 10 Ω and I = 12/10 = 1.2 A. 0.6 A is only the largest branch; 2.4 A doubles the total mistakenly.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-three-branch-total"
+  },
+  {
+    "external_key": "EI-B27-013",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "In a series circuit with a 9 V source, R1 = 100 Ω, R2 = 200 Ω, and R3 = 600 Ω, what is the voltage across R3?",
+    "choices": [
+      "9.0 V",
+      "1.0 V",
+      "2.0 V",
+      "6.0 V"
+    ],
+    "correct_index": 3,
+    "explanation": "Total resistance is 900 Ω, so current = 9/900 = 0.01 A. V_R3 = 0.01 × 600 = 6 V. Equivalently, the voltage divider rule says V_R3 = 9 × (600/900) = 6 V. 1 V and 2 V are the drops across R1 and R2; 9 V is the entire source voltage.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::voltage-divider-rule"
+  },
+  {
+    "external_key": "EI-B27-014",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A short circuit across a battery typically causes:",
+    "choices": [
+      "Very low current and cool wires",
+      "Current to stop flowing entirely",
+      "Very high current and possible overheating",
+      "The battery voltage to rise sharply"
+    ],
+    "correct_index": 2,
+    "explanation": "A short bypasses the load with near-zero resistance, so by Ohm's law current spikes to a very high value, dissipating power as heat in the wires and battery. Voltage at the terminals typically sags under the heavy load, not rises. Current does not stop — that would describe an open circuit, the opposite condition.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::short-circuit-behavior"
+  },
+  {
+    "external_key": "EI-B27-015",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "Kirchhoff's voltage law states that around any closed loop in a circuit:",
+    "choices": [
+      "Power dissipated equals voltage times resistance",
+      "The sum of all voltage rises and drops equals zero",
+      "The source voltage equals the largest single drop",
+      "The current entering equals the current leaving"
+    ],
+    "correct_index": 1,
+    "explanation": "Kirchhoff's voltage law (KVL) says the algebraic sum of EMFs and voltage drops around any closed loop is zero — energy is conserved. The 'current in equals current out' statement is Kirchhoff's current law (KCL), not KVL. The largest-single-drop idea is false; voltage divides among all elements. Power is P = VI, not V × R.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::kvl-statement"
+  },
+  {
+    "external_key": "EI-B27-016",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "Which component stores energy in an electric field between two conductive plates?",
+    "choices": [
+      "Resistor",
+      "Diode",
+      "Inductor",
+      "Capacitor"
+    ],
+    "correct_index": 3,
+    "explanation": "A capacitor stores energy as an electric field between two plates separated by a dielectric. A resistor converts electrical energy to heat and stores no field energy. An inductor stores energy in a magnetic field around a coil, not an electric field. A diode is a one-way valve for current and is not an energy-storage device.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::capacitor-electric-field"
+  },
+  {
+    "external_key": "EI-B27-017",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "What is the primary purpose of a diode in a circuit?",
+    "choices": [
+      "To allow current to flow in only one direction",
+      "To store electric charge",
+      "To resist current equally in both directions",
+      "To increase voltage"
+    ],
+    "correct_index": 0,
+    "explanation": "A diode is a semiconductor device that conducts current in the forward direction and blocks it in the reverse direction — a one-way valve. Charge storage is a capacitor's job. Voltage step-up is what a transformer or boost converter does. A device that resists current equally in both directions is a resistor.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::diode-purpose"
+  },
+  {
+    "external_key": "EI-B27-018",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A fuse protects a circuit by:",
+    "choices": [
+      "Melting and opening the circuit when current is excessive",
+      "Cooling components below their operating temperature",
+      "Storing extra current for later use",
+      "Increasing the source voltage automatically"
+    ],
+    "correct_index": 0,
+    "explanation": "A fuse contains a thin metal element designed to melt when current exceeds its rating, opening the circuit before downstream components overheat. Fuses do not store current, change source voltage, or actively cool anything; they are simply sacrificial overcurrent protection.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::fuse-purpose"
+  },
+  {
+    "external_key": "EI-B27-019",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "What does a transformer do?",
+    "choices": [
+      "Steps voltage up or down between two AC circuits via magnetic coupling",
+      "Stores DC energy in a chemical cell",
+      "Filters out high-frequency noise from a signal",
+      "Converts AC to DC"
+    ],
+    "correct_index": 0,
+    "explanation": "A transformer uses two coils linked by a magnetic core; varying current in the primary induces a voltage in the secondary, stepping AC voltage up or down by the turns ratio. AC-to-DC conversion is done by a rectifier. Chemical DC storage is a battery's role. A low-pass filter — not a transformer — removes high-frequency noise.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transformer-function"
+  },
+  {
+    "external_key": "EI-B27-020",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "What unit is used to measure capacitance?",
+    "choices": [
+      "Farad",
+      "Henry",
+      "Ohm",
+      "Watt"
+    ],
+    "correct_index": 0,
+    "explanation": "Capacitance is measured in farads (F); one farad equals one coulomb of charge stored per volt. The henry is the unit of inductance, the ohm measures resistance, and the watt measures power. Practical capacitors are usually rated in microfarads or picofarads because one farad is enormous.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::farad-unit"
+  },
+  {
+    "external_key": "EI-B27-021",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A transformer has 100 turns on its primary and 500 turns on its secondary. If 120 V AC is applied to the primary, what voltage appears at the secondary (ignoring losses)?",
+    "choices": [
+      "24 V",
+      "120 V",
+      "600 V",
+      "240 V"
+    ],
+    "correct_index": 2,
+    "explanation": "Secondary voltage equals primary voltage times the turns ratio: V_s = V_p × (N_s/N_p) = 120 × (500/100) = 600 V. 24 V would be a step-down with the ratio inverted. 120 V assumes a 1:1 ratio. 240 V uses a 2:1 ratio instead of the 5:1 given.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transformer-turns-ratio"
+  },
+  {
+    "external_key": "EI-B27-022",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "Which device stores energy in a magnetic field when current flows through it?",
+    "choices": [
+      "Photodiode",
+      "Capacitor",
+      "Resistor",
+      "Inductor"
+    ],
+    "correct_index": 3,
+    "explanation": "An inductor (a coil of wire) stores energy in a magnetic field as current flows; it opposes changes in that current. A capacitor stores energy in an electric field. A resistor dissipates energy as heat. A photodiode converts light to current and is not an energy-storage element.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::inductor-magnetic-storage"
+  },
+  {
+    "external_key": "EI-B27-023",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A circuit that draws 8 A at 120 V should be protected by a fuse rated approximately:",
+    "choices": [
+      "10 A",
+      "30 A",
+      "5 A",
+      "1 A"
+    ],
+    "correct_index": 0,
+    "explanation": "A fuse should sit just above the normal operating current — typically about 125% — so it tolerates startup but opens on a real fault. For an 8 A load, a 10 A fuse is appropriate. 1 A and 5 A would blow during normal operation. A 30 A fuse is far too large and would allow dangerous overcurrent before tripping.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::fuse-rating-selection"
+  },
+  {
+    "external_key": "EI-B27-024",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "Two 10 µF capacitors are connected in parallel. The total capacitance is:",
+    "choices": [
+      "10 µF",
+      "5 µF",
+      "100 µF",
+      "20 µF"
+    ],
+    "correct_index": 3,
+    "explanation": "Capacitors in parallel add directly: C_total = C1 + C2 = 10 + 10 = 20 µF. This is the opposite of resistors. 5 µF would be the result for capacitors in series (where 1/C adds). 10 µF ignores one capacitor. 100 µF would be the product, not the parallel combination.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::capacitors-parallel-add"
+  },
+  {
+    "external_key": "EI-B27-025",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A transistor in a circuit is primarily used as:",
+    "choices": [
+      "An amplifier or electronic switch",
+      "A passive resistor",
+      "A magnetic energy storage device",
+      "A chemical energy source"
+    ],
+    "correct_index": 0,
+    "explanation": "Transistors are semiconductor devices that amplify signals or act as fast electronic switches; a small base/gate current or voltage controls a much larger collector/drain current. Resistors are passive and do not amplify. Magnetic storage describes an inductor. Chemical energy production describes a battery, not a transistor.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transistor-role"
+  },
+  {
+    "external_key": "EI-B27-026",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A step-down transformer reduces 240 V AC to 24 V AC. If the secondary supplies 10 A to its load, the primary current (ignoring losses) is approximately:",
+    "choices": [
+      "10 A",
+      "100 A",
+      "1 A",
+      "2.4 A"
+    ],
+    "correct_index": 2,
+    "explanation": "In an ideal transformer, power in equals power out, so V_p × I_p = V_s × I_s. Solving: I_p = (24 × 10) / 240 = 1 A. 10 A ignores the voltage transformation. 100 A reverses the ratio — that mistake assumes a step-up instead of step-down. 2.4 A misuses the 1/10 voltage ratio.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transformer-current-ratio"
+  },
+  {
+    "external_key": "EI-B27-027",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "What component is most commonly used to convert AC to pulsating DC at the output of a power supply?",
+    "choices": [
+      "An incandescent bulb",
+      "A capacitor used alone",
+      "A coil of copper wire",
+      "A rectifier built from diodes"
+    ],
+    "correct_index": 3,
+    "explanation": "A rectifier — typically a half-wave or bridge diode arrangement — passes only one polarity of the AC waveform, producing pulsating DC that a capacitor then smooths. A capacitor alone cannot convert AC to DC; it merely stores charge. A coil is an inductor and does not rectify. An incandescent bulb is just a resistive load and conducts both directions of current.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::rectifier-ac-to-dc"
+  },
+  {
+    "external_key": "EI-B27-028",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "Two capacitors of 6 µF and 3 µF are connected in series. The total capacitance is:",
+    "choices": [
+      "4.5 µF",
+      "9 µF",
+      "2 µF",
+      "3 µF"
+    ],
+    "correct_index": 2,
+    "explanation": "Series capacitors combine like parallel resistors: 1/C = 1/6 + 1/3 = 1/6 + 2/6 = 3/6, so C = 2 µF. Adding (9 µF) would be the parallel rule. 4.5 µF averages them, which is not the correct rule. 3 µF picks the smaller value alone and is a common trap.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::capacitors-series-combine"
+  },
+  {
+    "external_key": "EI-B27-029",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "In a DC circuit at steady state, an ideal inductor behaves like:",
+    "choices": [
+      "A capacitor",
+      "A short circuit (zero voltage drop)",
+      "A constant 1 Ω resistor",
+      "An open circuit (no current)"
+    ],
+    "correct_index": 1,
+    "explanation": "At steady-state DC the current through an ideal inductor is constant, so dI/dt = 0 and the induced voltage V = L(dI/dt) = 0 — it acts like a wire (short). An open circuit at steady-state DC describes a capacitor, which blocks DC once fully charged. An inductor is not a resistor and has no fixed ohmic value beyond its small winding resistance.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::inductor-dc-steady-state"
+  },
+  {
+    "external_key": "EI-B27-030",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A circuit breaker differs from a fuse mainly because it:",
+    "choices": [
+      "Trips and can be reset, while a fuse must be replaced",
+      "Reduces line voltage to safer levels",
+      "Stores energy to power loads during outages",
+      "Detects only voltage spikes, not overcurrent"
+    ],
+    "correct_index": 0,
+    "explanation": "Both devices protect against overcurrent, but a circuit breaker uses a thermal or magnetic trip mechanism that can be reset after a fault, while a fuse contains a one-time meltable element. Breakers respond to current, not just voltage. They do not store energy (that is a battery or UPS) or step down voltage (a transformer's job).",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::breaker-vs-fuse"
+  },
+  {
+    "external_key": "EI-B27-031",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Which of the following is the best electrical conductor of those listed?",
+    "choices": [
+      "Rubber",
+      "Glass",
+      "Dry wood",
+      "Copper"
+    ],
+    "correct_index": 3,
+    "explanation": "Copper is a metal with a large supply of free electrons, making it an excellent conductor — which is why it dominates household wiring. Rubber, glass, and dry wood have very few free electrons and are used as insulators. Silver conducts slightly better than copper but is far more expensive, so copper is the workhorse.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::best-conductor-pick"
+  },
+  {
+    "external_key": "EI-B27-032",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Why is rubber commonly used as insulation around electrical wires?",
+    "choices": [
+      "It is denser than the copper inside",
+      "It conducts heat away from the wire",
+      "It has very few free electrons and resists current flow",
+      "It magnetizes easily"
+    ],
+    "correct_index": 2,
+    "explanation": "Rubber's atoms hold their electrons tightly, leaving almost no free charge carriers, so it strongly resists current flow — the definition of an insulator. Heat conduction is a thermal, not electrical, property and is not why it's chosen. Density is irrelevant for insulation. Rubber is non-magnetic, so easy magnetization is false.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::rubber-insulator-why"
+  },
+  {
+    "external_key": "EI-B27-033",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Which property of a metal makes it a good conductor of electricity?",
+    "choices": [
+      "A shiny silver color",
+      "Many loosely bound free electrons",
+      "A high melting point",
+      "A large atomic mass"
+    ],
+    "correct_index": 1,
+    "explanation": "Metals have a 'sea' of loosely bound electrons that move freely in response to an applied voltage, which is what enables conduction. Melting point, color, and atomic mass do not determine conductivity — lead has a high atomic mass yet conducts poorly compared with copper or silver.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::free-electrons"
+  },
+  {
+    "external_key": "EI-B27-034",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Materials with conductivity between that of a conductor and an insulator are called:",
+    "choices": [
+      "Superconductors",
+      "Semiconductors",
+      "Dielectrics",
+      "Ferromagnets"
+    ],
+    "correct_index": 1,
+    "explanation": "Semiconductors such as silicon and germanium have moderate conductivity that can be controlled by doping, temperature, or applied voltage; they are the basis of diodes and transistors. Superconductors have essentially zero resistance below a critical temperature. Dielectrics are insulators used between capacitor plates. Ferromagnets are materials with strong magnetic ordering.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::semiconductor-definition"
+  },
+  {
+    "external_key": "EI-B27-035",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "In the American Wire Gauge (AWG) system, as the gauge number gets larger, the wire:",
+    "choices": [
+      "Gets thinner and carries less current",
+      "Becomes more magnetic",
+      "Gets thicker and carries more current",
+      "Stays the same size but changes color"
+    ],
+    "correct_index": 0,
+    "explanation": "AWG is an inverse scale: a higher gauge number indicates a thinner wire with smaller cross-section, which means more resistance per foot and a lower safe current rating. Thicker wires (more current capacity) carry lower AWG numbers — for example, 10 AWG is much heavier than 18 AWG. Color coding and magnetism are unrelated to the gauge number.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::awg-inverse-scale"
+  },
+  {
+    "external_key": "EI-B27-036",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Which set of materials is listed entirely as insulators?",
+    "choices": [
+      "Iron, nickel, steel",
+      "Copper, aluminum, silver",
+      "Saltwater, graphite, mercury",
+      "Glass, porcelain, dry wood"
+    ],
+    "correct_index": 3,
+    "explanation": "Glass, porcelain, and dry wood all have very few free electrons and are standard insulators (porcelain insulators top utility poles). The first set is metals — good conductors. The third set lists ferromagnetic metals, also conductors. The fourth set are conductors of various types: saltwater is an electrolyte, graphite conducts along its planes, and mercury is a liquid metal.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::all-insulators-set"
+  },
+  {
+    "external_key": "EI-B27-037",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Two copper wires are identical except that one is twice as long as the other. Compared with the shorter wire, the longer wire has:",
+    "choices": [
+      "The same resistance",
+      "Four times the resistance",
+      "Half the resistance",
+      "Twice the resistance"
+    ],
+    "correct_index": 3,
+    "explanation": "Resistance is proportional to length (R = ρL/A), so doubling the length doubles the resistance when the material and cross-section are unchanged. Halving would require a wider cross-section, not a longer one. Four times the resistance would require both doubled length and halved area.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::resistance-length-proportional"
+  },
+  {
+    "external_key": "EI-B27-038",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "For most metallic conductors, what happens to resistance as temperature rises?",
+    "choices": [
+      "Resistance drops to zero",
+      "Resistance decreases",
+      "Resistance stays exactly the same",
+      "Resistance increases"
+    ],
+    "correct_index": 3,
+    "explanation": "In metals, hotter atoms vibrate more and scatter conduction electrons more often, so resistance increases with temperature — this is the positive temperature coefficient of resistance. Semiconductors behave oppositely (resistance falls with temperature). Resistance dropping to zero describes superconductors, which require cryogenic cooling.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::metal-resistance-temperature"
+  },
+  {
+    "external_key": "EI-B27-039",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Of these wires of the same length and material, which has the LOWEST resistance?",
+    "choices": [
+      "22 AWG",
+      "10 AWG",
+      "18 AWG",
+      "14 AWG"
+    ],
+    "correct_index": 1,
+    "explanation": "A lower AWG number means a thicker wire with a larger cross-section, and resistance is inversely proportional to area (R = ρL/A). So 10 AWG, the thickest of the four, has the lowest resistance. 22 AWG is the thinnest and has the highest resistance, with 18 and 14 in between.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::awg-lowest-resistance"
+  },
+  {
+    "external_key": "EI-B27-040",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Which of the following is a typical use of a dielectric material?",
+    "choices": [
+      "Carrying current along a power line",
+      "Separating the plates inside a capacitor",
+      "Acting as a low-resistance ground",
+      "Forming the windings of a motor"
+    ],
+    "correct_index": 1,
+    "explanation": "A dielectric is an insulator placed between the plates of a capacitor; it prevents current flow while allowing an electric field to form, increasing capacitance. Power-line conductors and motor windings are made of conductors like copper or aluminum. A ground path must be a low-resistance conductor, the opposite of a dielectric.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::dielectric-use"
+  },
+  {
+    "external_key": "EI-B27-041",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A copper wire has a resistance of 4 Ω. A second copper wire of the same length but with twice the cross-sectional area will have a resistance of:",
+    "choices": [
+      "8 Ω",
+      "1 Ω",
+      "4 Ω",
+      "2 Ω"
+    ],
+    "correct_index": 3,
+    "explanation": "Resistance is inversely proportional to cross-sectional area (R = ρL/A), so doubling the area halves the resistance: 4 / 2 = 2 Ω. 1 Ω would require quadrupling the area. 4 Ω ignores the change. 8 Ω is what you would get if area were halved, not doubled.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::resistance-area-inverse"
+  },
+  {
+    "external_key": "EI-B27-042",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A semiconductor differs from an ordinary insulator because:",
+    "choices": [
+      "It is naturally magnetic",
+      "Its conductivity can be controlled by doping or applied voltage",
+      "It always has zero resistance",
+      "It conducts only when extremely cold"
+    ],
+    "correct_index": 1,
+    "explanation": "Semiconductors such as silicon have a moderate band gap, and adding small amounts of impurities (doping) or applying a voltage to a junction can dramatically change how well they conduct — the foundation of diodes, transistors, and ICs. Zero resistance describes superconductors. Magnetism is unrelated. Conducting only when cold also describes superconductors, not semiconductors.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::semiconductor-vs-insulator"
+  },
+  {
+    "external_key": "EI-B27-043",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "Which best explains why power companies transmit electricity over long distances at very high voltage?",
+    "choices": [
+      "High voltage makes the wires thicker",
+      "Higher voltage means higher current, which heats wires less",
+      "Higher voltage means lower current for the same power, reducing I²R losses in the lines",
+      "It eliminates the need for transformers at the destination"
+    ],
+    "correct_index": 2,
+    "explanation": "Since P = VI, raising voltage lets utilities carry the same power with much less current, and line losses (P_loss = I²R) drop with the square of current — a huge efficiency win over long distances. Higher voltage actually allows lower current, not higher. Voltage does not change wire gauge. Transformers are still needed at the destination to step the voltage back down for customers.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::high-voltage-transmission"
+  },
+  {
+    "external_key": "EI-B27-044",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "Saltwater conducts electricity, but pure distilled water is a very poor conductor. The best explanation is:",
+    "choices": [
+      "Salt magnetizes the water molecules",
+      "Distilled water repels electrons by chemical means",
+      "Dissolved salt ions act as mobile charge carriers in the water",
+      "Salt makes the water heavier so electrons sink to the bottom"
+    ],
+    "correct_index": 2,
+    "explanation": "When salt dissolves, it dissociates into mobile Na+ and Cl- ions that carry charge through the solution, making it conductive. Pure water has very few ions, so it conducts poorly. Density does not separate electrons by sinking. Distilled water does not actively repel electrons, and salt does not magnetize water molecules.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::saltwater-ions"
+  },
+  {
+    "external_key": "EI-B27-045",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "Standard U.S. household AC power is delivered at a frequency of:",
+    "choices": [
+      "50 Hz",
+      "120 Hz",
+      "12 Hz",
+      "60 Hz"
+    ],
+    "correct_index": 3,
+    "explanation": "In the United States, residential AC alternates at 60 cycles per second (60 Hz). 50 Hz is the standard in much of Europe and many other countries. 12 Hz is far too slow for power distribution, and 120 Hz is twice the U.S. line frequency — a value that shows up in full-wave rectifier ripple, not the line itself.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::us-line-frequency"
+  },
+  {
+    "external_key": "EI-B27-046",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "Ohm's law states that voltage equals:",
+    "choices": [
+      "Current divided by resistance",
+      "Power times resistance",
+      "Current times resistance",
+      "Resistance divided by current"
+    ],
+    "correct_index": 2,
+    "explanation": "Ohm's law is V = I × R: voltage equals current multiplied by resistance. Dividing current by resistance or resistance by current produces incorrect units and meaning. Power times resistance has units of V², not volts; it is part of the power formulas, not Ohm's law itself.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::ohms-law-statement"
+  },
+  {
+    "external_key": "EI-B27-047",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "Electrical power is measured in:",
+    "choices": [
+      "Watts",
+      "Ohms",
+      "Amperes",
+      "Volts"
+    ],
+    "correct_index": 0,
+    "explanation": "Power — the rate at which electrical energy is converted to another form — is measured in watts (W). Volts measure potential difference, amperes measure current, and ohms measure resistance. One watt equals one joule of energy delivered per second.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::watt-unit"
+  },
+  {
+    "external_key": "EI-B27-048",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "Which formula gives electrical power directly from voltage and current?",
+    "choices": [
+      "P = V + I",
+      "P = V / I",
+      "P = V × I",
+      "P = I / V"
+    ],
+    "correct_index": 2,
+    "explanation": "Power equals voltage times current: P = V × I, with units volts × amperes = watts. Division forms (V/I or I/V) instead give resistance or conductance, not power. Adding V and I has no physical meaning because the two quantities have different units.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::p-equals-vi"
+  },
+  {
+    "external_key": "EI-B27-049",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "If a circuit's resistance increases while the source voltage stays the same, the current will:",
+    "choices": [
+      "Increase",
+      "Stay the same",
+      "Decrease",
+      "Reverse direction"
+    ],
+    "correct_index": 2,
+    "explanation": "From I = V/R, holding voltage constant and raising resistance lowers the current — they are inversely related. Current cannot increase under those conditions. It stays the same only if V and R change in proportion. Resistance does not change current direction; that requires reversing the source polarity.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::v-fixed-r-up-i-down"
+  },
+  {
+    "external_key": "EI-B27-050",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "An RMS value of an AC voltage is used because it:",
+    "choices": [
+      "Is always larger than the peak value",
+      "Is the value at the moment the waveform crosses zero",
+      "Represents the peak value of the waveform",
+      "Equals the DC voltage that would deliver the same power to a resistive load"
+    ],
+    "correct_index": 3,
+    "explanation": "Root-mean-square (RMS) voltage is the DC-equivalent value — the steady DC voltage that would deliver the same average power to a resistor as the AC waveform does. The peak value is larger than RMS (for a sine wave, V_peak = V_RMS × √2). RMS is never bigger than peak, and it is not defined at the zero crossing.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::rms-definition"
+  },
+  {
+    "external_key": "EI-B27-051",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 24 V source drives a 6 Ω resistor. What current flows through the resistor?",
+    "choices": [
+      "0.25 A",
+      "144 A",
+      "18 A",
+      "4 A"
+    ],
+    "correct_index": 3,
+    "explanation": "Ohm's law: I = V/R = 24/6 = 4 A. 0.25 A inverts the ratio (R/V). 18 A would come from subtracting (24 − 6), which is meaningless dimensionally. 144 A multiplies V × R, which gives a quantity with units of V·Ω, not amperes.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::basic-ohms-current"
+  },
+  {
+    "external_key": "EI-B27-052",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 120 V appliance draws 5 A. How much power does it consume?",
+    "choices": [
+      "600 W",
+      "115 W",
+      "24 W",
+      "3000 W"
+    ],
+    "correct_index": 0,
+    "explanation": "P = V × I = 120 × 5 = 600 W. 24 W divides instead of multiplying. 115 W subtracts the numbers — not a valid formula. 3000 W comes from misreading the current as 25 A, an order-of-magnitude error.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::p-vi-appliance"
+  },
+  {
+    "external_key": "EI-B27-053",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A heater dissipates 1200 W when connected to a 120 V outlet. What is its resistance?",
+    "choices": [
+      "0.1 Ω",
+      "12 Ω",
+      "100 Ω",
+      "10 Ω"
+    ],
+    "correct_index": 1,
+    "explanation": "First find current: I = P/V = 1200/120 = 10 A. Then R = V/I = 120/10 = 12 Ω. Equivalently, R = V²/P = 14400/1200 = 12 Ω. 10 Ω forgets the last division step. 0.1 Ω and 100 Ω are off by powers of ten.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::r-from-power-voltage"
+  },
+  {
+    "external_key": "EI-B27-054",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 9 V battery is connected to a 3 Ω resistor. How much power is dissipated in the resistor?",
+    "choices": [
+      "27 W",
+      "12 W",
+      "81 W",
+      "3 W"
+    ],
+    "correct_index": 0,
+    "explanation": "Current = V/R = 9/3 = 3 A, and P = V × I = 9 × 3 = 27 W. Equivalently, P = V²/R = 81/3 = 27 W. 3 W and 12 W come from dropping a factor in the formula. 81 W skips the division by R.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::p-equals-v2-over-r"
+  },
+  {
+    "external_key": "EI-B27-055",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "What is the peak voltage of a sinusoidal AC signal whose RMS value is 120 V?",
+    "choices": [
+      "Approximately 120 V",
+      "Approximately 85 V",
+      "Approximately 170 V",
+      "Approximately 240 V"
+    ],
+    "correct_index": 2,
+    "explanation": "For a sine wave, V_peak = V_RMS × √2 ≈ 120 × 1.414 ≈ 170 V. 85 V divides by √2 instead, giving a value below the RMS. 120 V ignores the conversion. 240 V doubles the RMS — that's the U.S. peak-to-peak figure, not the peak.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::rms-to-peak"
+  },
+  {
+    "external_key": "EI-B27-056",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A 100 W lamp and a 60 W lamp, each rated for 120 V, are connected in parallel across a 120 V source. The total power drawn is:",
+    "choices": [
+      "6000 W",
+      "160 W",
+      "60 W",
+      "100 W"
+    ],
+    "correct_index": 1,
+    "explanation": "In parallel, both lamps see their rated 120 V, so each dissipates its rated wattage. Total power is simply 100 + 60 = 160 W. 60 W or 100 W ignores one of the lamps. 6000 W comes from multiplying the wattages, which has no physical basis.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::parallel-lamps-total-power"
+  },
+  {
+    "external_key": "EI-B27-057",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A circuit carries 2 A through a 25 Ω resistor. Using P = I²R, how much power is dissipated?",
+    "choices": [
+      "1250 W",
+      "12.5 W",
+      "50 W",
+      "100 W"
+    ],
+    "correct_index": 3,
+    "explanation": "P = I²R = (2)² × 25 = 4 × 25 = 100 W. 50 W forgets to square the current. 12.5 W divides instead of multiplying. 1250 W comes from using 25² instead of 2².",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::p-i-squared-r"
+  },
+  {
+    "external_key": "EI-B27-058",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A 240 V circuit must deliver 4800 W to a heater. What is the minimum current rating the breaker for that circuit must support?",
+    "choices": [
+      "48 A",
+      "20 A",
+      "12 A",
+      "10 A"
+    ],
+    "correct_index": 1,
+    "explanation": "From P = V × I, I = P/V = 4800/240 = 20 A. The breaker must handle at least this normal operating current (with some margin in real practice). 10 A and 12 A would trip under normal load. 48 A doubles the answer by mistakenly using 120 V instead of 240 V.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::breaker-current-sizing"
+  },
+  {
+    "external_key": "EI-B27-059",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "If you double the voltage across a fixed resistor, the power dissipated in the resistor:",
+    "choices": [
+      "Stays the same",
+      "Quadruples",
+      "Is cut in half",
+      "Doubles"
+    ],
+    "correct_index": 1,
+    "explanation": "With R fixed, P = V²/R, so doubling V multiplies the power by 2² = 4 — it quadruples. It cannot stay the same since power depends on V. Merely doubling would be true only if current were held fixed (P = VI with constant I), but here resistance is fixed, so current also doubles. The power is cut in half only if voltage is halved.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::power-voltage-squared"
+  },
+  {
+    "external_key": "EI-B27-060",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A motor runs for 5 hours and draws 8 A from a 120 V supply. About how much energy in kilowatt-hours does it consume?",
+    "choices": [
+      "48 kWh",
+      "0.48 kWh",
+      "4.8 kWh",
+      "480 kWh"
+    ],
+    "correct_index": 2,
+    "explanation": "Power = V × I = 120 × 8 = 960 W = 0.96 kW. Energy = power × time = 0.96 × 5 = 4.8 kWh. The other options are off by factors of ten — common decimal-placement errors when converting between watts and kilowatts.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::energy-kwh-calc"
+  }
+]

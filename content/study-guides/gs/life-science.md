@@ -21,6 +21,8 @@ pitfalls:
   - "Thinking dominant means 'more common', a dominant allele just masks the recessive one, it can actually be rare in a population"
   - "Forgetting that arteries carry blood away from the heart (not always oxygenated, the pulmonary artery carries deoxygenated blood)"
   - "Confusing meiosis (produces 4 sex cells, half the chromosomes) with mitosis (produces 2 identical body cells)"
+  - "Calling a virus a living cell, viruses have no cells and cannot reproduce on their own; they must hijack a host cell"
+  - "Thinking enzymes are used up in a reaction, an enzyme is a catalyst that speeds up a reaction without being consumed"
 worked_examples:
   - prompt: "A cell has a cell wall, chloroplasts, and a large central vacuole. It is most likely: (A) an animal cell (B) a bacterial cell (C) a plant cell (D) a fungal cell"
     solution: "Cell walls exist in plants and bacteria, but chloroplasts are exclusive to plants. Large central vacuoles are a plant-cell hallmark. Answer: C"
@@ -28,6 +30,12 @@ worked_examples:
     solution: "Punnett square gives AA, Aa, Aa, aa. Only aa shows the recessive phenotype: 1 out of 4 = 25%"
   - prompt: "Which organ system is primarily responsible for filtering waste from the blood?"
     solution: "The excretory (urinary) system, specifically the kidneys, filters blood and produces urine. Answer: kidneys/excretory system"
+  - prompt: "In which organ does the bulk of nutrient absorption into the bloodstream occur? (A) stomach (B) small intestine (C) large intestine (D) esophagus"
+    solution: "The small intestine, lined with finger-like villi that maximize surface area, absorbs most nutrients. The stomach mainly digests; the large intestine reabsorbs water. Answer: B"
+  - prompt: "During gas exchange in the lungs, oxygen moves into the blood and carbon dioxide moves out. In which tiny structures does this exchange take place?"
+    solution: "The alveoli, microscopic air sacs surrounded by capillaries. Their thin walls let O2 diffuse into the blood and CO2 diffuse out. Answer: alveoli"
+  - prompt: "A strand of DNA reads A-T-G-C. Following the base-pairing rule, what is the complementary DNA strand?"
+    solution: "Adenine pairs with thymine and guanine pairs with cytosine. The complement of A-T-G-C is T-A-C-G. Answer: T-A-C-G"
 ---
 
 ## What the ASVAB is actually testing

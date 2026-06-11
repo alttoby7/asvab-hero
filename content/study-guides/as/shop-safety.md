@@ -21,6 +21,8 @@ pitfalls:
   - "Running an engine indoors without ventilation, carbon monoxide buildup is odorless and lethal"
   - "Wearing gloves on a drill press or lathe, rotating equipment can grab loose gloves and pull hands in"
   - "Using an air compressor line to blow dust off clothing, high-pressure air can penetrate skin"
+  - "Storing gasoline in an open or non-approved container near ignition sources, it must go in an approved sealed safety can in a ventilated flammable-storage cabinet away from heat and sparks"
+  - "Spraying water on a Class C electrical fire, water conducts electricity; use a Class C (or ABC) extinguisher instead and de-energize the equipment if possible"
 worked_examples:
   - prompt: "A small fire breaks out in a shop when gasoline spills on a hot surface. Which fire extinguisher class is correct?"
     solution: "Class B, flammable liquids. A Class A extinguisher uses water, which would spread the burning gasoline. CO2 or dry chemical extinguishers rated for Class B smother the fire by cutting off oxygen or breaking the combustion chain."
@@ -28,6 +30,12 @@ worked_examples:
     solution: "The negative (ground) cable first. Removing positive first risks a wrench accidentally bridging from the positive terminal to a grounded part of the body, completing the circuit and causing a spark or short. With negative disconnected first, the circuit is already broken."
   - prompt: "A worker needs to use a bench grinder to smooth a metal edge. Which PPE items are mandatory before starting?"
     solution: "Safety glasses or a face shield at minimum, sparks and metal fragments travel at high velocity. A leather apron is recommended. Gloves are debated: some shops require them, others prohibit them near rotating equipment. On the ASVAB, eye protection is always the non-negotiable answer for grinding."
+  - prompt: "An electrical panel catches fire while energized. Which class of fire extinguisher should be used?"
+    solution: "Class C, for live electrical equipment. Never use water (Class A) on an energized electrical fire because water conducts electricity and risks electrocution. A CO2 or dry-chemical extinguisher rated Class C is correct; an ABC extinguisher covers it too."
+  - prompt: "A worker needs to repair a machine and wants to make sure no one can power it on while their hands are inside. What procedure applies?"
+    solution: "Lockout/tagout (LOTO). The worker disconnects the energy source, applies a lock and tag so it cannot be re-energized, and is the only one who removes them. This prevents the machine from being accidentally started during service."
+  - prompt: "Before mounting and using a new grinding wheel on a bench grinder, what safety check should be performed first?"
+    solution: "Inspect the wheel for cracks or chips (a ring test can confirm it is sound) and confirm its rated speed matches the grinder. A cracked wheel can shatter at high RPM and throw fragments, so a damaged wheel is discarded, never used."
 ---
 
 ## What the ASVAB is testing

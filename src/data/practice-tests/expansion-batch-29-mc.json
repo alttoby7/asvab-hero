@@ -1,0 +1,852 @@
+[
+  {
+    "external_key": "MC-B29-001",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "In a first-class lever, where is the fulcrum located?",
+    "choices": [
+      "At the end nearest the effort",
+      "Between the effort and the load",
+      "At the end nearest the load",
+      "Outside both the effort and the load"
+    ],
+    "correct_index": 1,
+    "explanation": "First-class levers (like a seesaw or crowbar) have the fulcrum positioned between the effort and the load.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::class-1-lever"
+  },
+  {
+    "external_key": "MC-B29-002",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "A single fixed pulley provides what mechanical advantage?",
+    "choices": [
+      "0",
+      "4",
+      "1",
+      "2"
+    ],
+    "correct_index": 2,
+    "explanation": "A single fixed pulley only changes the direction of the applied force; it does not multiply force, so MA = 1.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::fixed-pulley"
+  },
+  {
+    "external_key": "MC-B29-003",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A lever has an effort arm of 8 feet and a load arm of 2 feet. What is its mechanical advantage?",
+    "choices": [
+      "4",
+      "6",
+      "16",
+      "2"
+    ],
+    "correct_index": 0,
+    "explanation": "MA = effort arm / load arm = 8 / 2 = 4.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::lever-ma-calc"
+  },
+  {
+    "external_key": "MC-B29-004",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A wheelbarrow is an example of which class of lever?",
+    "choices": [
+      "Third-class",
+      "Fourth-class",
+      "First-class",
+      "Second-class"
+    ],
+    "correct_index": 3,
+    "explanation": "A wheelbarrow has the load (in the bucket) between the fulcrum (wheel) and the effort (handles), making it a second-class lever.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::lever-class-id"
+  },
+  {
+    "external_key": "MC-B29-005",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A block-and-tackle has 4 rope segments supporting the load. Ignoring friction, how much effort is needed to lift a 200-lb load?",
+    "choices": [
+      "50 lb",
+      "100 lb",
+      "200 lb",
+      "25 lb"
+    ],
+    "correct_index": 0,
+    "explanation": "MA equals the number of supporting rope segments (4). Effort = Load / MA = 200 / 4 = 50 lb.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::block-tackle"
+  },
+  {
+    "external_key": "MC-B29-006",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "A third-class lever (like a fishing rod) always has which characteristic?",
+    "choices": [
+      "MA less than 1",
+      "MA greater than 1",
+      "No mechanical advantage at all",
+      "MA equal to 1"
+    ],
+    "correct_index": 0,
+    "explanation": "In third-class levers, the effort is between the fulcrum and load, so the effort arm is shorter than the load arm, giving MA < 1. They trade force for speed/distance.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::class-3-ma"
+  },
+  {
+    "external_key": "MC-B29-007",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "A 6-foot wrench is used to turn a bolt. If 30 lb of force is applied perpendicular to the handle at the end, what torque is produced?",
+    "choices": [
+      "180 ft-lb",
+      "36 ft-lb",
+      "300 ft-lb",
+      "5 ft-lb"
+    ],
+    "correct_index": 0,
+    "explanation": "Torque = force x lever arm = 30 lb x 6 ft = 180 ft-lb.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::torque-calc"
+  },
+  {
+    "external_key": "MC-B29-008",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "On a seesaw, a 120-lb child sits 4 feet from the fulcrum. How far on the other side must a 60-lb child sit to balance it?",
+    "choices": [
+      "6 ft",
+      "2 ft",
+      "4 ft",
+      "8 ft"
+    ],
+    "correct_index": 3,
+    "explanation": "For balance, W1 x d1 = W2 x d2. So 120 x 4 = 60 x d, giving d = 480 / 60 = 8 ft.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::seesaw-balance"
+  },
+  {
+    "external_key": "MC-B29-009",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A single movable pulley (with the rope anchored at the top) provides what theoretical mechanical advantage?",
+    "choices": [
+      "1",
+      "4",
+      "3",
+      "2"
+    ],
+    "correct_index": 3,
+    "explanation": "A single movable pulley has two rope segments supporting the load, giving MA = 2.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::movable-pulley"
+  },
+  {
+    "external_key": "MC-B29-010",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "When using a pulley system with MA = 3 to lift a load 2 feet, how much rope must be pulled?",
+    "choices": [
+      "2/3 ft",
+      "6 ft",
+      "5 ft",
+      "2 ft"
+    ],
+    "correct_index": 1,
+    "explanation": "Distance traded for force: rope pulled = MA x lift distance = 3 x 2 = 6 ft.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::pulley-distance"
+  },
+  {
+    "external_key": "MC-B29-011",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "When two gears mesh directly together, how do they rotate relative to each other?",
+    "choices": [
+      "At the same speed",
+      "In opposite directions",
+      "In the same direction",
+      "Both stop"
+    ],
+    "correct_index": 1,
+    "explanation": "Meshing gears always rotate in opposite directions because their teeth push against each other.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::meshed-direction"
+  },
+  {
+    "external_key": "MC-B29-012",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "Two pulleys connected by an uncrossed (straight) belt will rotate:",
+    "choices": [
+      "Both will stop",
+      "In opposite directions",
+      "At different speeds in opposite directions",
+      "In the same direction"
+    ],
+    "correct_index": 3,
+    "explanation": "A straight (uncrossed) belt makes the two pulleys spin in the same direction. A crossed belt reverses one.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::belt-direction"
+  },
+  {
+    "external_key": "MC-B29-013",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "Gear A has 15 teeth and drives Gear B, which has 45 teeth. If Gear A turns at 600 RPM, how fast does Gear B turn?",
+    "choices": [
+      "200 RPM",
+      "1,800 RPM",
+      "300 RPM",
+      "100 RPM"
+    ],
+    "correct_index": 0,
+    "explanation": "RPM_B = RPM_A x (teeth_A / teeth_B) = 600 x (15/45) = 600 x (1/3) = 200 RPM.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::gear-rpm"
+  },
+  {
+    "external_key": "MC-B29-014",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "Which gear configuration produces the MOST torque at the output?",
+    "choices": [
+      "Two small gears",
+      "Small driver gear, large driven gear",
+      "Large driver gear, small driven gear",
+      "Two equal-sized gears"
+    ],
+    "correct_index": 1,
+    "explanation": "A small driver turning a large driven gear reduces speed and multiplies torque at the output.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::torque-multiplier"
+  },
+  {
+    "external_key": "MC-B29-015",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "Three gears mesh in a row: A drives B, and B drives C. If A turns clockwise, what does C do?",
+    "choices": [
+      "Turns counterclockwise",
+      "Turns clockwise",
+      "Stops",
+      "Reverses each rotation"
+    ],
+    "correct_index": 1,
+    "explanation": "Each meshing reverses direction. A clockwise → B counterclockwise → C clockwise. An odd-numbered gear (1st, 3rd, 5th) spins the same way as the driver.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::gear-train-direction"
+  },
+  {
+    "external_key": "MC-B29-016",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "A worm gear drives a 40-tooth spur gear. The worm has a single thread (start). How many rotations of the worm produce one full rotation of the spur gear?",
+    "choices": [
+      "10",
+      "1",
+      "40",
+      "4"
+    ],
+    "correct_index": 2,
+    "explanation": "A single-start worm advances the spur gear by one tooth per worm rotation. 40 teeth requires 40 worm rotations for one full output rotation. Worm gears give large reductions and high torque.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::worm-gear"
+  },
+  {
+    "external_key": "MC-B29-017",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "A driver pulley with a 2-inch diameter is belted to a driven pulley with a 10-inch diameter. If the driver spins at 1,000 RPM, the driven pulley spins at:",
+    "choices": [
+      "100 RPM",
+      "5,000 RPM",
+      "500 RPM",
+      "200 RPM"
+    ],
+    "correct_index": 3,
+    "explanation": "For belt-driven pulleys, RPM_driven = RPM_driver x (D_driver / D_driven) = 1000 x (2/10) = 200 RPM.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::pulley-rpm"
+  },
+  {
+    "external_key": "MC-B29-018",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "A rack-and-pinion gear system converts:",
+    "choices": [
+      "Linear motion only",
+      "Rotational motion only",
+      "Rotational motion into linear motion",
+      "Friction into heat"
+    ],
+    "correct_index": 2,
+    "explanation": "A rack-and-pinion converts rotational motion of the pinion (round gear) into linear motion of the rack (straight toothed bar), and vice versa. Used in car steering.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::rack-pinion"
+  },
+  {
+    "external_key": "MC-B29-019",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "Gear A (driver) has 24 teeth; Gear B (driven) has 8 teeth. What is the gear ratio (driven:driver) and what effect does this have?",
+    "choices": [
+      "1:3, faster output with less torque",
+      "1:1, no change",
+      "3:1, slower output with more torque",
+      "3:1, faster output with more torque"
+    ],
+    "correct_index": 0,
+    "explanation": "Ratio driven:driver = 8:24 = 1:3. The smaller driven gear spins 3x faster but with 1/3 the torque.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::gear-ratio"
+  },
+  {
+    "external_key": "MC-B29-020",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "On a bicycle, shifting to a LARGER rear sprocket (more teeth) makes pedaling:",
+    "choices": [
+      "Easier and faster",
+      "Harder but faster",
+      "Easier but slower",
+      "Unchanged"
+    ],
+    "correct_index": 2,
+    "explanation": "A larger rear sprocket increases mechanical advantage, making pedaling easier but reducing wheel speed per pedal rotation.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::bike-gearing"
+  },
+  {
+    "external_key": "MC-B29-021",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Newton's Second Law is expressed as:",
+    "choices": [
+      "F = ma",
+      "F = m/a",
+      "F = m + a",
+      "F = a/m"
+    ],
+    "correct_index": 0,
+    "explanation": "Newton's Second Law: Force equals mass times acceleration (F = ma).",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::newton-2nd"
+  },
+  {
+    "external_key": "MC-B29-022",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Which type of friction is generally GREATEST?",
+    "choices": [
+      "Kinetic (sliding) friction",
+      "Rolling friction",
+      "Fluid friction",
+      "Static friction"
+    ],
+    "correct_index": 3,
+    "explanation": "Static friction (between surfaces not yet moving) is greater than kinetic friction. That's why it takes more force to start an object moving than to keep it moving.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::static-vs-kinetic"
+  },
+  {
+    "external_key": "MC-B29-023",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "What net force is needed to accelerate a 20-kg cart at 3 m/s²?",
+    "choices": [
+      "17 N",
+      "60 N",
+      "6 N",
+      "23 N"
+    ],
+    "correct_index": 1,
+    "explanation": "F = ma = 20 kg x 3 m/s² = 60 N.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::f-ma-calc"
+  },
+  {
+    "external_key": "MC-B29-024",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A 50-kg object on Earth weighs approximately (g = 9.8 m/s²):",
+    "choices": [
+      "5.1 N",
+      "980 N",
+      "50 N",
+      "490 N"
+    ],
+    "correct_index": 3,
+    "explanation": "Weight = mg = 50 kg x 9.8 m/s² = 490 N.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::weight-calc"
+  },
+  {
+    "external_key": "MC-B29-025",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A 100-lb crate sits on a floor with coefficient of kinetic friction 0.2. What horizontal force is required to keep it sliding at constant speed?",
+    "choices": [
+      "20 lb",
+      "5 lb",
+      "100 lb",
+      "50 lb"
+    ],
+    "correct_index": 0,
+    "explanation": "Friction force = μ x Normal = 0.2 x 100 lb = 20 lb. Constant speed means applied force equals friction.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::friction-calc"
+  },
+  {
+    "external_key": "MC-B29-026",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "A rocket pushes exhaust gases downward, and the rocket rises upward. This best illustrates:",
+    "choices": [
+      "Newton's First Law",
+      "Newton's Second Law",
+      "Newton's Third Law",
+      "Conservation of mass"
+    ],
+    "correct_index": 2,
+    "explanation": "Newton's Third Law: for every action, there is an equal and opposite reaction. Exhaust down → rocket up.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::newton-3rd"
+  },
+  {
+    "external_key": "MC-B29-027",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "A 200-N force is applied to a 1-square-meter plate pressed against a wall. What is the pressure?",
+    "choices": [
+      "50 Pa",
+      "200 Pa",
+      "400 Pa",
+      "100 Pa"
+    ],
+    "correct_index": 1,
+    "explanation": "Pressure = Force / Area = 200 N / 1 m² = 200 Pa.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::pressure-calc"
+  },
+  {
+    "external_key": "MC-B29-028",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "Two identical boxes rest on a floor. Box X has a small base; Box Y has a large base. Which has GREATER friction force when pushed across the floor?",
+    "choices": [
+      "Box X (small base)",
+      "Box Y (large base)",
+      "Cannot be determined",
+      "Both have the same friction force"
+    ],
+    "correct_index": 3,
+    "explanation": "Sliding friction depends on normal force (weight) and the coefficient of friction, NOT on surface area. Both have equal friction.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::friction-area"
+  },
+  {
+    "external_key": "MC-B29-029",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "An object at rest tends to stay at rest unless acted on by an outside force. This is:",
+    "choices": [
+      "Newton's Third Law",
+      "Newton's First Law (inertia)",
+      "Newton's Second Law",
+      "The law of friction"
+    ],
+    "correct_index": 1,
+    "explanation": "Newton's First Law (the Law of Inertia) states that objects resist changes in motion.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::newton-1st"
+  },
+  {
+    "external_key": "MC-B29-030",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "Which surface combination would typically have the LOWEST coefficient of friction?",
+    "choices": [
+      "Steel on ice",
+      "Wood on wood",
+      "Leather on concrete",
+      "Rubber on dry asphalt"
+    ],
+    "correct_index": 0,
+    "explanation": "Steel sliding on ice has very low friction. Ice provides a slick surface, especially under pressure.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::friction-coeff"
+  },
+  {
+    "external_key": "MC-B29-031",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "If a car travels 240 miles in 4 hours, what is its average speed?",
+    "choices": [
+      "80 mph",
+      "40 mph",
+      "60 mph",
+      "120 mph"
+    ],
+    "correct_index": 2,
+    "explanation": "Speed = distance / time = 240 / 4 = 60 mph.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::avg-speed"
+  },
+  {
+    "external_key": "MC-B29-032",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "Ignoring air resistance, an object in free fall accelerates downward at approximately:",
+    "choices": [
+      "9.8 m/s²",
+      "60 m/s²",
+      "32 m/s²",
+      "100 m/s²"
+    ],
+    "correct_index": 0,
+    "explanation": "Near Earth's surface, gravitational acceleration is about 9.8 m/s² (or 32 ft/s²) downward, ignoring air resistance.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::free-fall-g"
+  },
+  {
+    "external_key": "MC-B29-033",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "A projectile is launched at an angle. To maximize horizontal range (no air resistance, level ground), the launch angle should be:",
+    "choices": [
+      "90°",
+      "15°",
+      "30°",
+      "45°"
+    ],
+    "correct_index": 3,
+    "explanation": "Maximum projectile range on level ground occurs at a launch angle of 45°.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::max-range-angle"
+  },
+  {
+    "external_key": "MC-B29-034",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "A 2-kg object moves at 10 m/s. What is its kinetic energy?",
+    "choices": [
+      "20 J",
+      "200 J",
+      "10 J",
+      "100 J"
+    ],
+    "correct_index": 3,
+    "explanation": "KE = ½mv² = ½ x 2 x (10)² = ½ x 2 x 100 = 100 J.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::ke-calc"
+  },
+  {
+    "external_key": "MC-B29-035",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "A 5-kg book sits on a shelf 3 meters above the floor. What is its potential energy (g = 9.8 m/s²)?",
+    "choices": [
+      "98 J",
+      "15 J",
+      "147 J",
+      "49 J"
+    ],
+    "correct_index": 2,
+    "explanation": "PE = mgh = 5 x 9.8 x 3 = 147 J.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::pe-calc"
+  },
+  {
+    "external_key": "MC-B29-036",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "A bullet is fired horizontally from a gun at the same moment an identical bullet is dropped from the same height. Which hits the ground first (ignore air resistance)?",
+    "choices": [
+      "The dropped bullet",
+      "Impossible to determine",
+      "The fired bullet",
+      "Both hit at the same time"
+    ],
+    "correct_index": 3,
+    "explanation": "Horizontal and vertical motions are independent. Both bullets have the same vertical acceleration (g) and start from the same height, so they hit the ground simultaneously.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::projectile-independence"
+  },
+  {
+    "external_key": "MC-B29-037",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "A 1,500-kg car moves at 20 m/s. What is its momentum?",
+    "choices": [
+      "1,500 kg·m/s",
+      "30,000 kg·m/s",
+      "15,000 kg·m/s",
+      "75 kg·m/s"
+    ],
+    "correct_index": 1,
+    "explanation": "Momentum = mass x velocity = 1,500 x 20 = 30,000 kg·m/s.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::momentum"
+  },
+  {
+    "external_key": "MC-B29-038",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "A ball is swung in a horizontal circle on a string. What provides the centripetal force?",
+    "choices": [
+      "The ball's weight",
+      "Air resistance",
+      "The tension in the string",
+      "Gravity"
+    ],
+    "correct_index": 2,
+    "explanation": "The string tension pulls the ball toward the center of the circle, providing the centripetal force that keeps it moving in a circular path.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::centripetal"
+  },
+  {
+    "external_key": "MC-B29-039",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "An object accelerates uniformly from rest to 30 m/s in 6 seconds. What is its acceleration?",
+    "choices": [
+      "5 m/s²",
+      "3 m/s²",
+      "30 m/s²",
+      "6 m/s²"
+    ],
+    "correct_index": 0,
+    "explanation": "a = Δv / t = (30 - 0) / 6 = 5 m/s².",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::accel-calc"
+  },
+  {
+    "external_key": "MC-B29-040",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "For a projectile in flight (ignoring air resistance), which component of velocity stays CONSTANT?",
+    "choices": [
+      "Neither stays constant",
+      "Both stay constant",
+      "Horizontal component",
+      "Vertical component"
+    ],
+    "correct_index": 2,
+    "explanation": "Without air resistance, horizontal velocity is constant. Vertical velocity changes because gravity accelerates the projectile downward.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::projectile-components"
+  },
+  {
+    "external_key": "MC-B29-041",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "A ramp is 12 feet long and rises to a height of 3 feet. What is its mechanical advantage?",
+    "choices": [
+      "4",
+      "9",
+      "36",
+      "0.25"
+    ],
+    "correct_index": 0,
+    "explanation": "MA of an inclined plane = length / height = 12 / 3 = 4.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::ramp-ma"
+  },
+  {
+    "external_key": "MC-B29-042",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "Pascal's Law states that pressure applied to an enclosed fluid is transmitted:",
+    "choices": [
+      "Only downward",
+      "Equally in all directions",
+      "Mostly upward due to buoyancy",
+      "Only in the direction applied"
+    ],
+    "correct_index": 1,
+    "explanation": "Pascal's Law: pressure applied to an enclosed, confined fluid is transmitted equally and undiminished in every direction.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::pascal-law"
+  },
+  {
+    "external_key": "MC-B29-043",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "In a hydraulic press, the small piston has area 2 sq in and the large piston has area 20 sq in. If 50 lb is applied to the small piston, what force can the large piston exert?",
+    "choices": [
+      "50 lb",
+      "500 lb",
+      "250 lb",
+      "100 lb"
+    ],
+    "correct_index": 1,
+    "explanation": "Pascal: F1/A1 = F2/A2. So F2 = F1 x (A2/A1) = 50 x (20/2) = 500 lb.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::hydraulic-press"
+  },
+  {
+    "external_key": "MC-B29-044",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "A screw has 8 threads per inch. How far does it advance with one complete turn?",
+    "choices": [
+      "1/16 inch",
+      "1/8 inch",
+      "8 inches",
+      "1/4 inch"
+    ],
+    "correct_index": 1,
+    "explanation": "Pitch = 1 / threads per inch = 1/8 inch advanced per full turn.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::screw-pitch"
+  },
+  {
+    "external_key": "MC-B29-045",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "An object submerged in water experiences an upward buoyant force equal to:",
+    "choices": [
+      "Its own weight",
+      "The weight of the water it displaces",
+      "The atmospheric pressure",
+      "Zero, if it sinks"
+    ],
+    "correct_index": 1,
+    "explanation": "Archimedes' Principle: buoyant force on an immersed object equals the weight of the fluid the object displaces.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::archimedes"
+  },
+  {
+    "external_key": "MC-B29-046",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "A spring with a constant of 40 N/m is stretched 0.5 meters. What force does it exert (Hooke's Law)?",
+    "choices": [
+      "80 N",
+      "8 N",
+      "20 N",
+      "40 N"
+    ],
+    "correct_index": 2,
+    "explanation": "Hooke's Law: F = kx = 40 N/m x 0.5 m = 20 N.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::hookes-law"
+  },
+  {
+    "external_key": "MC-B29-047",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "Water pressure at the bottom of a tank depends primarily on:",
+    "choices": [
+      "The shape of the tank",
+      "The volume of water",
+      "The depth of the water",
+      "The width of the tank"
+    ],
+    "correct_index": 2,
+    "explanation": "Hydrostatic pressure P = ρgh depends only on fluid density, gravity, and depth — not on container width, shape, or total volume.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::water-pressure"
+  },
+  {
+    "external_key": "MC-B29-048",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "A wedge is essentially:",
+    "choices": [
+      "A modified pulley",
+      "A type of lever",
+      "A short screw",
+      "Two inclined planes placed back-to-back"
+    ],
+    "correct_index": 3,
+    "explanation": "A wedge is two inclined planes placed back to back. Axes, knives, and chisels are common wedges.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::wedge"
+  },
+  {
+    "external_key": "MC-B29-049",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "A 600-lb crate is pushed up a 20-ft ramp to a platform 5 ft high. Ignoring friction, what force is required?",
+    "choices": [
+      "150 lb",
+      "300 lb",
+      "200 lb",
+      "100 lb"
+    ],
+    "correct_index": 0,
+    "explanation": "MA = length/height = 20/5 = 4. Effort = Load/MA = 600/4 = 150 lb.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::ramp-force"
+  },
+  {
+    "external_key": "MC-B29-050",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "An object floats in water when its average density is:",
+    "choices": [
+      "Equal to zero",
+      "Greater than the density of water",
+      "Less than the density of water",
+      "Equal to the density of water"
+    ],
+    "correct_index": 2,
+    "explanation": "An object floats when its average density is less than the fluid's density, because the displaced fluid weighs more than the object.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::floating"
+  }
+]

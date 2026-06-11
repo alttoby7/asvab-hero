@@ -14,6 +14,8 @@ pitfalls:
   - "Stripping the prefix and not recognizing the root, break 'mal-odor-ous' into all three parts"
   - "Confusing -ible and -able, both mean 'capable of' and the distinction is spelling, not meaning"
   - "Stopping after identifying the prefix without checking whether the answer actually fits the sentence"
+  - "Forgetting that OMNI- means 'all', not 'big', omnipotent is all-powerful and omniscient is all-knowing"
+  - "Treating the suffix -IFY as decorative, it actively means 'to make', so 'clarify' is to make clear, not just to clear up"
 worked_examples:
   - prompt: "MALEVOLENT most nearly means: (A) powerful (B) wishing harm (C) easily fooled (D) widely known"
     solution: "Mal- = bad/evil. Volent comes from Latin 'velle' (to wish). Malevolent = wishing evil toward others. Answer: B"
@@ -21,6 +23,20 @@ worked_examples:
     solution: "Pre- = before. Clude comes from Latin 'claudere' (to close). To preclude = to close off before it happens, i.e., prevent. Answer: C"
   - prompt: "INDEFATIGABLE most nearly means: (A) lazy (B) tireless (C) forgetful (D) unreliable"
     solution: "In- = not. De-fatigable = capable of being fatigued. Indefatigable = not capable of being fatigued, tireless. Answer: B"
+  - prompt: "OMNIPOTENT most nearly means: (A) all-powerful (B) harmless (C) ancient (D) invisible"
+    solution: "The prefix OMNI- = all, and POTENT = powerful. Omnipotent = all-powerful. Compare omniscient (all-knowing) and omnipresent (everywhere). Answer: A"
+  - prompt: "CIRCUMVENT most nearly means: (A) to repair (B) to go around (C) to celebrate (D) to inflate"
+    solution: "The prefix CIRCUM- = around (as in circumference), and VENT comes from 'venire' (to come/go). To circumvent is to go around an obstacle or rule. Answer: B"
+  - prompt: "ANONYMOUS most nearly means: (A) famous (B) without a name (C) angry (D) frequent"
+    solution: "The prefix AN- = not or without, and ONYM = name (as in synonym). Anonymous = without a name, unidentified. Answer: B"
+  - prompt: "CONTRABAND most nearly means: (A) a musical group (B) prohibited goods (C) a peace treaty (D) loud noise"
+    solution: "The prefix CONTRA- = against. Contraband is goods traded against the law, smuggled or prohibited items. Answer: B"
+  - prompt: "TENACITY most nearly means: (A) softness (B) the state of holding firm (C) wealth (D) fear"
+    solution: "The suffix -ITY = state or quality of. Built on TEN (hold), tenacity is the state of holding on firmly, persistence. Answer: B"
+  - prompt: "PERMEATE most nearly means: (A) to spread thoroughly through (B) to stop (C) to question (D) to lighten"
+    solution: "The prefix PER- = thoroughly or through (as in perforate, persist). To permeate is to spread all the way through something. Answer: A"
+  - prompt: "MUTABLE most nearly means: (A) silent (B) capable of changing (C) fixed (D) friendly"
+    solution: "The suffix -ABLE = able to be. Built on MUT (change, as in mutation), mutable means able to be changed, changeable. Answer: B"
 ---
 
 ## What the ASVAB is actually testing

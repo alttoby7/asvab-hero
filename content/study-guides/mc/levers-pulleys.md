@@ -15,6 +15,8 @@ pitfalls:
   - "Assuming a fixed pulley reduces the effort force, it only redirects it"
   - "Counting the wrong rope segments in a block-and-tackle, count only the segments supporting the moving block"
   - "Forgetting that mechanical advantage doesn't reduce the total work, it trades force for distance"
+  - "Reading mechanical advantage as a force amount, MA is a ratio with no units; you still divide the load by it to get the effort"
+  - "Adding pulleys but forgetting the rope-pull penalty, every increase in MA means proportionally more rope to haul in"
 worked_examples:
   - prompt: "A first-class lever has its fulcrum 1 ft from the load and 4 ft from where the effort is applied. A 200-lb load sits on the short end. How much effort is required to lift it?"
     solution: "MA = effort arm ÷ load arm = 4 ÷ 1 = 4. Effort = Load ÷ MA = 200 ÷ 4 = 50 lb. You push 50 lb on the long end to lift 200 lb on the short end, but your end moves 4 inches for every 1 inch the load rises."
@@ -22,6 +24,12 @@ worked_examples:
     solution: "A movable pulley gives MA = 2. Effort = 300 ÷ 2 = 150 lb. The worker pulls 150 lb but must pull 2 feet of rope for every 1 foot the engine rises."
   - prompt: "A block-and-tackle system has 4 rope segments supporting the lower (movable) block. A worker needs to lift a 480-lb load. What effort force is needed?"
     solution: "MA = 4. Effort = 480 ÷ 4 = 120 lb. The worker pulls 120 lb but hauls in 4 feet of rope for each foot of lift."
+  - prompt: "A seesaw (class 1 lever) balances on its center fulcrum. A 60-lb child sits 4 ft from the fulcrum. How far from the fulcrum must a 40-lb child sit to balance it?"
+    solution: "Moments balance: Load1 x arm1 = Load2 x arm2. So 60 x 4 = 40 x d, giving 240 = 40 x d, so d = 240 / 40 = 6 ft. The lighter child must sit farther out (6 ft vs 4 ft) to produce an equal turning moment."
+  - prompt: "A crowbar is used as a class 1 lever with the fulcrum 6 inches from the load and 30 inches from the hands. If you push with 25 lb, how much load can you lift?"
+    solution: "MA = effort arm / load arm = 30 / 6 = 5. Load = Effort x MA = 25 x 5 = 125 lb. Your hands move 5 inches for every 1 inch the load rises."
+  - prompt: "A worker can pull with a maximum of 80 lb of force. What is the lightest mechanical advantage of a block-and-tackle needed to lift a 320-lb load?"
+    solution: "MA = Load / Effort = 320 / 80 = 4. A block-and-tackle with 4 rope segments supporting the movable block does the job; the worker pulls 80 lb through 4 feet of rope per foot of lift."
 diagrams:
   - type: lever
     after: "Lever calculation: the fulcrum trick"

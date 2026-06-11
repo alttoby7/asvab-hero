@@ -19,7 +19,8 @@ pitfalls:
   - "Thinking seasons are caused by Earth's distance from the Sun, they're caused by axial tilt (Earth is actually closer to the Sun in Northern Hemisphere winter)"
   - "Confusing metamorphic rock (changed by heat/pressure without melting) with igneous rock (solidified from full melt)"
   - "Mixing up lunar and solar eclipses, solar: Moon blocks Sun; lunar: Earth's shadow falls on Moon"
-  - "Forgetting that the outer core is liquid (convection there generates Earth's magnetic field) while the inner core is solid"
+  - "Assuming earthquakes and volcanoes happen randomly, most occur along plate boundaries where tectonic plates interact"
+  - "Believing the Moon makes its own light, the Moon is not luminous; it only reflects sunlight, which is why we see phases"
 worked_examples:
   - prompt: "Granite forms when magma cools slowly underground. What type of rock is granite?"
     solution: "Granite is an igneous rock, it formed from cooled magma. Slow cooling underground produces large crystals (intrusive/plutonic rock)."
@@ -27,6 +28,12 @@ worked_examples:
     solution: "Seasons result from axial tilt. Summer occurs when the hemisphere is tilted toward the Sun, receiving more direct sunlight. Answer: B"
   - prompt: "Which layer of the atmosphere contains the ozone layer?"
     solution: "The stratosphere, it sits above the troposphere (where weather occurs) and contains the ozone layer that absorbs UV radiation. Answer: stratosphere"
+  - prompt: "Two tectonic plates slide horizontally past each other, building up stress that releases as earthquakes. What type of boundary is this? (A) convergent (B) divergent (C) transform (D) subduction"
+    solution: "A transform boundary is where plates grind past one another sideways, like the San Andreas Fault. Convergent plates collide and divergent plates pull apart. Answer: C"
+  - prompt: "A cold front moves into a region. As the dense cold air wedges under the warmer air, what weather typically results?"
+    solution: "The warm air is forced up rapidly, often producing tall clouds, thunderstorms, and brief heavy precipitation, followed by cooler, drier air. Answer: storms then cooler, drier weather"
+  - prompt: "A lunar eclipse can only occur during which moon phase?"
+    solution: "A full moon. Earth must sit directly between the Sun and Moon to cast its shadow on the Moon, which is the full-moon alignment. Answer: full moon"
 ---
 
 ## What the ASVAB is actually testing

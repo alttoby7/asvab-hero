@@ -19,7 +19,8 @@ pitfalls:
   - "Confusing atomic number (protons only) with mass number (protons + neutrons)"
   - "Thinking electrons have significant mass, they're negligible compared to protons and neutrons"
   - "Mixing up physical change (no new substance, e.g. melting ice) with chemical change (new substance formed, e.g. burning wood)"
-  - "Assuming all metals are on the left, metalloids sit along a staircase in the middle of the periodic table"
+  - "Confusing an ionic bond (metal transfers electrons to a nonmetal) with a covalent bond (two nonmetals share electrons)"
+  - "Reading the pH scale backward, a lower pH is more acidic and a higher pH is more basic; pH 7 is neutral"
 worked_examples:
   - prompt: "An element has 17 protons and 18 neutrons. What is its mass number?"
     solution: "Mass number = protons + neutrons = 17 + 18 = 35. (This is chlorine-35.)"
@@ -27,6 +28,12 @@ worked_examples:
     solution: "D = m/v = 50 g ÷ 25 cm³ = 2.0 g/cm³"
   - prompt: "Ice melting in a glass is best described as a: (A) chemical change (B) physical change (C) nuclear reaction (D) combustion reaction"
     solution: "Melting changes the state but not the chemical composition of water, no new substance forms. Answer: B"
+  - prompt: "Two atoms of the same element have the same number of protons but different numbers of neutrons. These atoms are called: (A) ions (B) isotopes (C) molecules (D) compounds"
+    solution: "Isotopes share an atomic number (protons) but differ in neutrons, giving them different mass numbers. Ions differ in electrons, not neutrons. Answer: B"
+  - prompt: "Sodium (a metal) reacts with chlorine (a nonmetal) to form table salt. What kind of chemical bond holds the sodium and chlorine together?"
+    solution: "An ionic bond. The metal sodium donates an electron to chlorine, creating oppositely charged ions that attract. Answer: ionic bond"
+  - prompt: "A solution has a pH of 3. Is it acidic, basic, or neutral, and is it more or less acidic than a solution with a pH of 5?"
+    solution: "pH 3 is acidic (below 7). Because the pH scale is reversed, a lower number is more acidic, so pH 3 is more acidic than pH 5. Answer: acidic, and more acidic than pH 5"
 ---
 
 ## What the ASVAB is actually testing

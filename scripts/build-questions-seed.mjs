@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const freeRaw = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/free-test.json'), 'utf8'));
 const free = freeRaw.questions;
 const b1 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-1.json'), 'utf8'));
@@ -31,6 +32,15 @@ const b22 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/
 const b23 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-23-mk-deepen.json'), 'utf8'));
 const b24 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-24-wk-deepen.json'), 'utf8'));
 const b25 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-25-pc-deepen.json'), 'utf8'));
+// Book-sourced depth batches (concepts drawn from Duran/Dummies/1001/AFQT study guides), 2026-06-10.
+const b26 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-26-gs.json'), 'utf8'));
+const b27 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-27-ei.json'), 'utf8'));
+const b28 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-28-as.json'), 'utf8'));
+const b29 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-29-mc.json'), 'utf8'));
+const b30 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-30-wk.json'), 'utf8'));
+const b31 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-31-ar.json'), 'utf8'));
+const b32 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-32-mk.json'), 'utf8'));
+const b33 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-33-pc.json'), 'utf8'));
 const tags = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/question-tags.seed.json'), 'utf8'));
 const tagMap = new Map(tags.map(t => [t.external_key.toUpperCase(), t]));
 
@@ -168,6 +178,14 @@ const all = [
   ...normalize(b23, 'batch-23-mk-deepen'),
   ...normalize(b24, 'batch-24-wk-deepen'),
   ...normalize(b25, 'batch-25-pc-deepen'),
+  ...normalize(b26, 'batch-26-gs'),
+  ...normalize(b27, 'batch-27-ei'),
+  ...normalize(b28, 'batch-28-as'),
+  ...normalize(b29, 'batch-29-mc'),
+  ...normalize(b30, 'batch-30-wk'),
+  ...normalize(b31, 'batch-31-ar'),
+  ...normalize(b32, 'batch-32-mk'),
+  ...normalize(b33, 'batch-33-pc'),
 ];
 
 const seen = new Set();

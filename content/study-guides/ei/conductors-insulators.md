@@ -19,6 +19,8 @@ pitfalls:
   - "Assuming a thicker wire has more resistance, it has less (larger cross-section means more paths for electrons)"
   - "Confusing semiconductors with insulators, semiconductors can be doped to control conductivity, making them the basis of transistors and diodes"
   - "Thinking all metals are equally good conductors, copper is used in wiring because it balances conductivity and cost; silver is better but expensive"
+  - "Reading wire gauge backwards: a HIGHER gauge number means a THINNER wire (less current), and a LOWER gauge number means a thicker wire (more current)"
+  - "Assuming resistance is fixed: for most metals resistance rises as temperature increases, which is why long or overloaded wires heat up and lose voltage"
 worked_examples:
   - prompt: "Wire A is 2 meters long and 2 mm in diameter. Wire B is 4 meters long and 2 mm in diameter, same material. How does their resistance compare?"
     solution: "R = ρ × (L/A). Same ρ and A, but Wire B is twice as long. Wire B has twice the resistance of Wire A."
@@ -26,6 +28,12 @@ worked_examples:
     solution: "Copper is a metal with low resistivity, standard wiring material. Rubber and glass are insulators; silicon is a semiconductor. Answer: C"
   - prompt: "A technician needs to insulate a wire that will carry 120 V in a household circuit. Which material is appropriate?"
     solution: "PVC plastic or rubber, both are high-resistivity insulators rated for household voltages and flexible enough for wire jacketing."
+  - prompt: "Wire A is 12-gauge (AWG) and Wire B is 18-gauge, same material and length. Which wire is thicker and which can safely carry more current?"
+    solution: "In AWG, a lower gauge number means a thicker wire. So 12-gauge is thicker than 18-gauge, has less resistance, and can safely carry more current. As the diameter decreases, the gauge number goes up."
+  - prompt: "Why is silicon used to build transistors and diodes instead of copper or rubber?"
+    solution: "Silicon is a semiconductor, midway between conductor and insulator. By adding tiny amounts of impurities (doping), its conductivity can be precisely controlled. Copper conducts no matter what and rubber blocks current, so neither can be switched the way a doped semiconductor can."
+  - prompt: "A copper wire's resistance is measured cold, then again after it heats up under load. What happens to its resistance, and why does grounding matter here?"
+    solution: "For most metals like copper, resistance increases as temperature rises. Grounding is separate from this: a ground wire gives stray current a safe 0 V path to earth so a fault discharges harmlessly instead of shocking someone or starting a fire."
 ---
 
 ## What the ASVAB is actually testing

@@ -1,0 +1,1022 @@
+[
+  {
+    "external_key": "PC-B33-001",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Coast Guard is the smallest of the United States armed services, but it carries out a remarkably broad mission. Its members patrol coastal waters to intercept drug smugglers, rescue stranded boaters, enforce fishing regulations, and inspect commercial vessels for safety violations. Unlike the other branches, the Coast Guard operates under the Department of Homeland Security during peacetime and shifts to the Department of the Navy in wartime. This dual identity reflects the wide range of duties Coast Guard personnel are expected to perform every day.\n\nThe main idea of this passage is:",
+    "choices": [
+      "The Coast Guard performs many different duties despite being the smallest branch.",
+      "The Coast Guard is smaller than the Navy or the Army.",
+      "The Coast Guard reports to the Department of Homeland Security.",
+      "The Coast Guard rescues stranded boaters along the coast."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage repeatedly emphasizes the broad range of Coast Guard duties despite its small size. Choice D and C are supporting details. Choice B is true but not the central point.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::coast-guard-broad-mission"
+  },
+  {
+    "external_key": "PC-B33-002",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nHoney bees play a critical role in modern agriculture. As they move from flower to flower collecting nectar, they transfer pollen between plants, enabling fruit and seed production. Farmers of crops such as almonds, apples, and blueberries often rent hives during the growing season to ensure adequate pollination. Without bees, yields for many of these crops would drop sharply, and grocery prices for consumers would rise.\n\nThe main idea of this passage is:",
+    "choices": [
+      "Almonds are pollinated by honey bees.",
+      "Honey bees are essential pollinators for many important crops.",
+      "Farmers rent beehives in the spring.",
+      "Grocery prices change with each growing season."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage focuses on bees' essential role in pollinating crops. Choices B and C are specific examples; choice D distorts a passing comment.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::honey-bees-pollination"
+  },
+  {
+    "external_key": "PC-B33-003",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nRegular physical training is a cornerstone of military readiness. Service members are expected to maintain a level of fitness that allows them to march long distances with heavy loads, perform under stress, and recover quickly from injury. Most units schedule physical training several mornings each week, combining running, calisthenics, and strength work. Leaders emphasize that fitness is not optional but a basic requirement of the job.\n\nWhich of the following best summarizes the passage?",
+    "choices": [
+      "Physical fitness is a fundamental requirement of military service.",
+      "Leaders schedule physical training sessions.",
+      "Soldiers must run several mornings each week.",
+      "Strength training prevents injuries in the military."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage's repeated theme is that fitness is a basic requirement. Other choices restate details.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::military-fitness-requirement"
+  },
+  {
+    "external_key": "PC-B33-004",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe invention of the printing press in the fifteenth century transformed Europe. Before Johannes Gutenberg developed his movable-type press, books were copied by hand, making them expensive and rare. Once printed books became affordable, literacy spread, new ideas circulated quickly, and reform movements gained momentum. Historians often point to the printing press as one of the most important technologies of the past thousand years.\n\nThe main idea of this passage is:",
+    "choices": [
+      "Hand-copied books were expensive.",
+      "Gutenberg invented movable type in the fifteenth century.",
+      "Reform movements depended on cheap books.",
+      "The printing press dramatically changed European society."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage's central claim is the press's transformative impact. Other choices are supporting details.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::printing-press-impact"
+  },
+  {
+    "external_key": "PC-B33-005",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nTornado safety begins with paying attention to weather alerts. When the National Weather Service issues a tornado warning, residents should move immediately to a basement or an interior room on the lowest floor of their home. Mobile homes offer little protection and should be evacuated in favor of sturdier structures. Even after a tornado appears to have passed, people should remain sheltered until officials confirm the threat has ended.\n\nThe author primarily wants to:",
+    "choices": [
+      "Criticize mobile home construction.",
+      "Describe how tornadoes form.",
+      "Explain how to stay safe during a tornado.",
+      "Discuss the National Weather Service's role."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage gives practical safety guidance. Other choices distort the focus.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::tornado-safety"
+  },
+  {
+    "external_key": "PC-B33-006",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nAlthough electric vehicles produce no tailpipe emissions, their overall environmental footprint depends heavily on how the electricity that charges them is generated. In regions powered largely by coal-fired plants, an electric car can have nearly the same lifetime carbon impact as an efficient gasoline model. In regions with abundant wind, solar, or hydroelectric power, the same vehicle becomes substantially cleaner. Buyers who care about emissions should therefore consider both the car and the grid that fuels it.\n\nThe main idea of this passage is:",
+    "choices": [
+      "Coal-fired plants are bad for the environment.",
+      "Electric vehicles never produce any pollution.",
+      "Buyers should always choose electric cars over gasoline cars.",
+      "An electric car's environmental benefit depends on the local power source."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage's nuanced point is that the grid matters as much as the vehicle. Choice B contradicts the passage; C and D are too narrow or overstated.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::ev-grid-dependence"
+  },
+  {
+    "external_key": "PC-B33-007",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nHarriet Tubman is remembered today mostly for her work guiding enslaved people to freedom along the Underground Railroad. Far fewer people know that during the Civil War she served as a scout and spy for the Union Army, leading an armed raid along the Combahee River in South Carolina that freed more than seven hundred enslaved people in a single night. Her wartime service has only recently begun to receive the attention it deserves from historians and the public.\n\nWhich statement best captures the main idea?",
+    "choices": [
+      "Tubman's Civil War military service is underappreciated relative to her Underground Railroad work.",
+      "Tubman led an armed raid along the Combahee River.",
+      "Historians often overlook women's contributions to wars.",
+      "The Underground Railroad freed many enslaved people."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage contrasts her famous and lesser-known work to argue her wartime service deserves more recognition. B is a detail; C and D overgeneralize.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::tubman-underappreciated"
+  },
+  {
+    "external_key": "PC-B33-008",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nMany people assume that sharks are mindless predators, but research over the past several decades tells a different story. Sharks display problem-solving behavior, recognize individual humans who feed them regularly, and use complex social hierarchies when hunting in groups. Some species even appear to learn from one another. While caution near sharks is always wise, the image of the brainless killer popularized by movies bears little resemblance to the animals scientists actually observe.\n\nThe main idea of this passage is:",
+    "choices": [
+      "Sharks form social hierarchies when they hunt.",
+      "People should not fear sharks at all.",
+      "Movies have exaggerated the danger of sharks.",
+      "Sharks are more intelligent and complex than their popular image suggests."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage corrects a misconception about shark intelligence. B is a detail; C is partial; D overstates (the passage still recommends caution).",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::shark-intelligence"
+  },
+  {
+    "external_key": "PC-B33-009",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Federal Reserve sets short-term interest rates to manage the pace of the American economy. When prices rise too quickly, the Fed raises rates, making borrowing more expensive and slowing spending. When the economy slows and unemployment climbs, the Fed lowers rates to encourage borrowing and investment. Each decision involves balancing the risk of inflation against the risk of recession, and members of the Fed often disagree about which threat is greater at any given moment.\n\nThe main idea of this passage is:",
+    "choices": [
+      "Lower interest rates encourage borrowing.",
+      "The Federal Reserve adjusts interest rates to balance inflation and recession risks.",
+      "The Federal Reserve raises rates when prices rise.",
+      "Members of the Federal Reserve often disagree."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage's overall point is the balancing act. Other choices are pieces of that picture.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::fed-balancing-act"
+  },
+  {
+    "external_key": "PC-B33-010",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nIn the early days of aviation, pilots navigated by following railroad tracks, rivers, and highways. As flights grew longer and weather more unpredictable, this method became dangerous. The development of radio beacons in the 1920s allowed pilots to follow invisible signals between airports, and by the 1970s satellite-based systems made precise navigation possible almost anywhere on Earth. Each step expanded where and when planes could fly safely.\n\nThe author's main point is that:",
+    "choices": [
+      "Radio beacons were invented in the 1920s.",
+      "Early pilots followed railroad tracks.",
+      "Aviation navigation has steadily advanced to permit safer and broader flight.",
+      "Satellite navigation works almost everywhere."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage traces progressive advances in navigation. Other choices are individual stages of that story.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::aviation-navigation-history"
+  },
+  {
+    "external_key": "PC-B33-011",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nReaders often picture medieval castles as cold, dark fortresses built only for war. Surviving records suggest a more complicated picture. Castles served as administrative centers where taxes were collected and disputes settled, as social hubs where lords entertained guests with music and feasts, and as symbols of authority meant to impress travelers passing through. Their thick walls and towers certainly made defense possible, but defense was only one function among many in the daily life of these complex buildings.\n\nThe main idea of this passage is:",
+    "choices": [
+      "Medieval castles were used to collect taxes.",
+      "Lords often entertained guests at their castles.",
+      "Medieval castles served many social and political functions beyond defense.",
+      "Castles had thick walls and towers for defense."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage corrects the war-only image by emphasizing multiple roles. The other choices each capture only one of those roles.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::medieval-castles-functions"
+  },
+  {
+    "external_key": "PC-B33-012",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nFor decades, the standard advice was that a low-fat diet would protect the heart. More recent research complicates that picture. The type of fat consumed appears to matter more than the total amount, and replacing fats with refined carbohydrates may carry its own risks. At the same time, some dietary patterns once considered indulgent, such as the Mediterranean diet rich in olive oil and nuts, are now associated with better cardiovascular outcomes. Nutrition science continues to evolve, and yesterday's certainties often look different in light of new evidence.\n\nThe author's central point is that:",
+    "choices": [
+      "Nutrition advice changes as new evidence reshapes what we know about diet and health.",
+      "Olive oil is good for the heart.",
+      "Low-fat diets cause heart problems.",
+      "Refined carbohydrates are worse than fats."
+    ],
+    "correct_index": 0,
+    "explanation": "The closing sentences signal the overall theme: evolving evidence. Other choices are individual claims used to illustrate that theme.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::nutrition-science-evolves"
+  },
+  {
+    "external_key": "PC-B33-013",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nSeveral cities have begun experimenting with four-day workweeks, and the early results have surprised many skeptics. Productivity has generally held steady or even improved, and employees report better sleep, lower stress, and higher job satisfaction. Critics warn that the model may not translate to industries with shift-based or customer-facing work, and that long-term effects remain unclear. Still, enough pilot programs have produced positive results that the idea is no longer dismissed as fanciful.\n\nWhich choice best states the main idea?",
+    "choices": [
+      "Employees in four-day workweeks report less stress.",
+      "Four-day workweeks will not work in customer-facing industries.",
+      "All companies should adopt a four-day workweek.",
+      "Early experiments suggest the four-day workweek deserves serious consideration despite open questions."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage presents evidence and reservations to argue the idea merits serious attention. B and C are partial; D overreaches.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::four-day-workweek"
+  },
+  {
+    "external_key": "PC-B33-014",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nMany people view national parks as untouched wilderness, but most were shaped by human hands long before they were designated parks. Indigenous peoples managed forests with controlled burns, hunted game in ways that influenced animal populations, and cultivated plants near streams. When parks were created in the nineteenth and twentieth centuries, these inhabitants were often forced out, and the landscapes were presented as if they had always been empty. Recent scholarship encourages visitors to see parks not as pristine but as living places with deep human histories.\n\nThe main idea of this passage is:",
+    "choices": [
+      "Visitors should learn more about national park history.",
+      "Indigenous peoples used controlled burns to manage forests.",
+      "National parks reflect long histories of human presence rather than untouched wilderness.",
+      "National parks were created in the nineteenth and twentieth centuries."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage challenges the pristine-wilderness image. B is a supporting detail; C is background; D is a minor inference.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::national-parks-history"
+  },
+  {
+    "external_key": "PC-B33-015",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe rise of remote work during the early 2020s upended assumptions about how and where Americans live. Workers freed from daily commutes moved away from expensive coastal cities to smaller towns, driving up home prices in places that had seen little growth for decades. Local businesses welcomed the influx of new spending, but long-time residents complained about rising rents and crowded schools. Whether these shifts prove permanent remains to be seen, but the geography of American work has clearly changed.\n\nThe author's main point is that:",
+    "choices": [
+      "Remote work will permanently change the country.",
+      "Remote work has reshaped where Americans live, with mixed effects on receiving communities.",
+      "Home prices rose in small towns during the early 2020s.",
+      "Long-time residents resent newcomers."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes a geographic shift with both benefits and costs. Other choices isolate single details or overstate the final claim.",
+    "status": "verified",
+    "item_family_id": "pc.main-idea::remote-work-geography"
+  },
+  {
+    "external_key": "PC-B33-016",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Marine Corps was founded on November 10, 1775, at Tun Tavern in Philadelphia. Two battalions of Marines were authorized by the Continental Congress to serve aboard naval ships during the Revolutionary War. Today, Marines still celebrate November 10 each year with a formal birthday ball that includes a cake-cutting ceremony, a reading of the commandant's message, and the recognition of the oldest and youngest Marines present.\n\nAccording to the passage, where was the Marine Corps founded?",
+    "choices": [
+      "Aboard a naval ship",
+      "At the Continental Congress",
+      "Tun Tavern in Philadelphia",
+      "At a birthday ball"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states directly that the Corps was founded at Tun Tavern in Philadelphia. The other choices are mentioned but are not the founding location.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::marine-corps-founding"
+  },
+  {
+    "external_key": "PC-B33-017",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nMount Everest, the highest mountain on Earth, rises 29,032 feet above sea level on the border between Nepal and Tibet. The first confirmed summit took place in 1953, when Edmund Hillary of New Zealand and Tenzing Norgay, a Sherpa from Nepal, reached the top together. Since then, thousands of climbers have made the ascent, though dozens die on the mountain every decade.\n\nAccording to the passage, in what year was the first confirmed summit of Mount Everest?",
+    "choices": [
+      "1953",
+      "1932",
+      "1929",
+      "1975"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states directly that the first confirmed summit was in 1953.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::everest-first-summit-year"
+  },
+  {
+    "external_key": "PC-B33-018",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe human heart pumps about 2,000 gallons of blood through the body each day. It beats roughly 100,000 times in 24 hours, supplying oxygen and nutrients to every tissue. The heart sits slightly to the left of the center of the chest and is protected by the rib cage. Although roughly the size of a clenched fist, it does more physical work than any other muscle in the body.\n\nAccording to the passage, about how many times does the heart beat in a day?",
+    "choices": [
+      "1,000,000",
+      "2,000",
+      "100,000",
+      "29,000"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage gives the figure 100,000 beats in 24 hours.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::heart-beats-per-day"
+  },
+  {
+    "external_key": "PC-B33-019",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Erie Canal, completed in 1825, connected the Hudson River to Lake Erie. The 363-mile waterway allowed goods to move cheaply between the Atlantic coast and the Great Lakes region, fueling the growth of New York City as a commercial hub. Towns along the canal flourished, and farmers in the western interior gained access to eastern markets for the first time.\n\nAccording to the passage, the Erie Canal connected the Hudson River to which body of water?",
+    "choices": [
+      "Lake Erie",
+      "The Mississippi River",
+      "Lake Ontario",
+      "The Atlantic Ocean"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states the canal connected the Hudson River to Lake Erie.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::erie-canal-connection"
+  },
+  {
+    "external_key": "PC-B33-020",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nBasic training for new Army soldiers lasts approximately ten weeks. Recruits spend the first phase learning customs, courtesies, and basic drill movements. The second phase focuses on marksmanship with the M4 rifle, while the final phase emphasizes tactical field exercises and a culminating event called the Forge. Graduation typically takes place on a Thursday or Friday, with families invited to attend.\n\nAccording to the passage, what is the culminating event of Army basic training called?",
+    "choices": [
+      "Marksmanship Phase",
+      "Graduation",
+      "The Drill",
+      "The Forge"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage names the culminating event the Forge.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::army-basic-forge"
+  },
+  {
+    "external_key": "PC-B33-021",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Wright brothers conducted their first successful powered flight on December 17, 1903, near Kitty Hawk, North Carolina. The aircraft, which they called the Flyer, traveled 120 feet in 12 seconds with Orville at the controls. Later that same day, the brothers took turns flying three more times, with the longest flight covering 852 feet. Although the Flyer was damaged after the final attempt and never flew again, the four short flights demonstrated that powered, controlled, sustained flight was possible.\n\nAccording to the passage, how long did the first flight last?",
+    "choices": [
+      "852 seconds",
+      "Several minutes",
+      "120 seconds",
+      "12 seconds"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states the first flight lasted 12 seconds and covered 120 feet. 120 refers to feet, not seconds.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::wright-first-flight-duration"
+  },
+  {
+    "external_key": "PC-B33-022",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nPenguins are flightless birds found almost entirely in the Southern Hemisphere. Of the eighteen recognized species, the emperor penguin is the largest, reaching nearly four feet tall, while the little blue penguin of Australia and New Zealand stands barely over a foot. Despite popular images of penguins waddling across ice, only a few species actually live in Antarctica. Most prefer the rocky coasts of South America, Africa, and Australia, where temperatures are far milder.\n\nAccording to the passage, which penguin species is the smallest?",
+    "choices": [
+      "The South American penguin",
+      "The little blue penguin",
+      "The Antarctic penguin",
+      "The emperor penguin"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage identifies the little blue penguin as standing barely over a foot — the smallest mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::penguin-smallest-species"
+  },
+  {
+    "external_key": "PC-B33-023",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe G.I. Bill, signed into law in 1944, provided returning World War II veterans with funds for college tuition, low-interest home loans, and unemployment payments while they searched for work. By 1956, nearly half of all returning veterans had used the education benefit, and millions had purchased homes with the help of guaranteed mortgages. Historians credit the program with helping to build the postwar American middle class.\n\nAccording to the passage, the G.I. Bill provided all of the following EXCEPT:",
+    "choices": [
+      "Low-interest home loans",
+      "Free medical care for life",
+      "College tuition funds",
+      "Unemployment payments"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage lists tuition, home loans, and unemployment payments — not lifetime medical care.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::gi-bill-benefits"
+  },
+  {
+    "external_key": "PC-B33-024",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Mariana Trench, in the western Pacific Ocean, is the deepest place on Earth. Its lowest point, called the Challenger Deep, lies nearly 36,000 feet below the surface — deeper than Mount Everest is tall. Only a handful of crewed expeditions have reached the bottom, beginning with the bathyscaphe Trieste in 1960. The water pressure there is more than a thousand times that at sea level, yet specialized creatures still manage to survive in the darkness.\n\nAccording to the passage, what was the name of the vessel that first reached the bottom of the Challenger Deep?",
+    "choices": [
+      "Mariana",
+      "Challenger",
+      "Trieste",
+      "Bathyscaphe"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage names the bathyscaphe Trieste as the 1960 vessel. \"Bathyscaphe\" is the type of vessel, not its name.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::trieste-mariana-trench"
+  },
+  {
+    "external_key": "PC-B33-025",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Panama Canal opened in 1914 after a decade of American construction work that followed an earlier, unsuccessful French attempt. The canal cut roughly 8,000 nautical miles off the voyage between New York and San Francisco by eliminating the need to sail around the southern tip of South America. Engineers used a system of locks to lift ships about 85 feet above sea level to cross the continental divide before lowering them again on the other side.\n\nAccording to the passage, about how much shorter is the New York to San Francisco voyage thanks to the canal?",
+    "choices": [
+      "About 85 nautical miles",
+      "About 800 nautical miles",
+      "About 8,000 nautical miles",
+      "About 1,914 nautical miles"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states 8,000 nautical miles. 85 refers to the lock height; 1914 to the year.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::panama-canal-distance-saved"
+  },
+  {
+    "external_key": "PC-B33-026",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe Cuban Missile Crisis of October 1962 brought the United States and the Soviet Union to the brink of nuclear war. American reconnaissance flights detected Soviet missile sites under construction in Cuba, less than 100 miles from Florida. After thirteen tense days of negotiation, President Kennedy and Premier Khrushchev reached a public agreement: the Soviets would remove the missiles in exchange for an American promise not to invade Cuba. Less widely known at the time, the United States also secretly agreed to remove its own missiles from Turkey.\n\nAccording to the passage, what did the United States publicly agree to as part of the resolution?",
+    "choices": [
+      "To remove missiles from Turkey",
+      "To recognize the Soviet government in Cuba",
+      "Not to invade Cuba",
+      "To withdraw reconnaissance flights"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage distinguishes the public agreement (no Cuba invasion) from the secret one (Turkey missiles).",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::cuban-missile-public-deal"
+  },
+  {
+    "external_key": "PC-B33-027",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nGreen sea turtles spend most of their lives in warm coastal waters, grazing on seagrass and algae. Females return to the same beach where they hatched to lay their eggs, sometimes swimming more than a thousand miles to do so. After burying roughly 100 eggs in the sand, they return to the sea, and the eggs incubate without parental care for about two months. The hatchlings emerge at night and crawl toward the brightest horizon, which is typically the reflection of moonlight on the water.\n\nAccording to the passage, why do hatchlings crawl toward the brightest horizon?",
+    "choices": [
+      "Because the sand is firmer in that direction",
+      "Because that horizon is usually moonlight on the water leading them to the sea",
+      "Because they are attracted to warmth",
+      "Because their mothers guide them there"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage explains the brightest horizon is moonlight on the water, guiding them seaward. Other choices are not stated.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::sea-turtle-hatchling-light"
+  },
+  {
+    "external_key": "PC-B33-028",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nAntibiotics are powerful drugs, but they work only against bacterial infections. They have no effect on viruses such as those that cause the common cold or seasonal flu. Overuse of antibiotics, including for viral illnesses they cannot treat, contributes to the rise of resistant bacteria. Health officials therefore urge patients not to pressure doctors for antibiotics when their illness is likely viral, and to finish any prescribed course exactly as directed to reduce the chance that surviving bacteria develop resistance.\n\nAccording to the passage, why do officials urge patients to finish a prescribed antibiotic course exactly as directed?",
+    "choices": [
+      "To prevent viral infections",
+      "To stop the spread of the common cold",
+      "To reduce the chance that surviving bacteria develop resistance",
+      "To allow doctors to prescribe more antibiotics later"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states this reason directly. Antibiotics don't affect viruses, ruling out B and C.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::antibiotic-finish-course"
+  },
+  {
+    "external_key": "PC-B33-029",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe Battle of Midway in June 1942 is widely regarded as the turning point of the Pacific war. American code-breakers had cracked enough of Japan's naval cipher to learn the target and approximate date of the planned attack. Acting on this intelligence, Admiral Chester Nimitz positioned three aircraft carriers to ambush the Japanese strike force. In a single day of fighting, American dive bombers sank four Japanese carriers, crippling Japan's ability to project power across the Pacific for the rest of the war.\n\nAccording to the passage, how were American forces able to anticipate the Japanese attack?",
+    "choices": [
+      "A Japanese officer defected",
+      "Aerial reconnaissance spotted the fleet",
+      "American code-breakers had partially broken Japan's naval cipher",
+      "British intelligence shared a tip"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage credits codebreaking. Other explanations are not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::midway-codebreaking"
+  },
+  {
+    "external_key": "PC-B33-030",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe American Red Cross was founded in 1881 by Clara Barton, a former Civil War nurse who had observed European Red Cross societies during a trip abroad. The organization initially focused on disaster relief during peacetime, providing food, shelter, and medical care after floods and fires. By the early twentieth century, the Red Cross had expanded into blood collection, water safety instruction, and support for the families of military personnel. Today it remains one of the largest volunteer-driven humanitarian organizations in the country.\n\nAccording to the passage, what initial focus did the American Red Cross have when it was founded?",
+    "choices": [
+      "Wartime military support",
+      "Blood collection",
+      "Peacetime disaster relief",
+      "Water safety instruction"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states the initial focus was peacetime disaster relief; the other activities came later.",
+    "status": "verified",
+    "item_family_id": "pc.detail-recall::red-cross-initial-focus"
+  },
+  {
+    "external_key": "PC-B33-031",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nMaya checked her packing list one more time before zipping the duffel bag. Boots, uniforms, hygiene kit, and the small notebook her grandfather had given her — everything was accounted for. Her mother stood in the doorway, smiling but not quite hiding the tears. The bus to the reception station left in less than an hour, and Maya did not want to be late on her very first day.\n\nBased on the passage, it can be concluded that Maya is:",
+    "choices": [
+      "Leaving for military basic training",
+      "Moving to a new college",
+      "Starting a new civilian job",
+      "Going on a family vacation"
+    ],
+    "correct_index": 0,
+    "explanation": "Boots, uniforms, a hygiene kit, and a bus to the reception station strongly imply basic training. The other choices don't fit those clues.",
+    "status": "verified",
+    "item_family_id": "pc.inference::maya-basic-training"
+  },
+  {
+    "external_key": "PC-B33-032",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nSolar panels work best when sunlight hits them directly. Homeowners in regions with frequent cloud cover or short winter days produce less electricity from a rooftop system than homeowners in sunnier areas. Even within the same neighborhood, a house shaded by tall trees may generate far less power than its neighbor across the street.\n\nThe passage implies that:",
+    "choices": [
+      "Solar panels do not work in winter.",
+      "Geography and shade can significantly affect a solar system's output.",
+      "Solar panels are useless in cloudy regions.",
+      "Trees should be cut down to maximize solar output."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage's examples suggest location and shade matter. It does not claim panels fail entirely in winter or cloudy areas, or recommend removing trees.",
+    "status": "verified",
+    "item_family_id": "pc.inference::solar-shade-geography"
+  },
+  {
+    "external_key": "PC-B33-033",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nWhen Sergeant Diaz inspected the barracks, every bunk was made tight enough to bounce a quarter, every footlocker was squared away, and every floor tile gleamed. He walked the length of the room without speaking, then turned to face the recruits, nodded once, and walked out. The recruits exhaled.\n\nBased on the passage, it can be inferred that:",
+    "choices": [
+      "The recruits passed the inspection.",
+      "Sergeant Diaz was angry.",
+      "The recruits were dismissed from training.",
+      "The recruits will be punished."
+    ],
+    "correct_index": 0,
+    "explanation": "The clean barracks, the silent nod, and the recruits' exhale all suggest a successful inspection.",
+    "status": "verified",
+    "item_family_id": "pc.inference::barracks-inspection-passed"
+  },
+  {
+    "external_key": "PC-B33-034",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nMany small businesses survived the recession only because their owners cut their own salaries to zero for months at a time. They covered rent and payroll out of personal savings, hoping that customer traffic would return before the savings ran out. Some succeeded; many did not.\n\nThe passage suggests that small business owners during the recession:",
+    "choices": [
+      "Received generous government support",
+      "Made significant personal sacrifices to keep their businesses afloat",
+      "Did not care about their employees",
+      "Always succeeded in saving their businesses"
+    ],
+    "correct_index": 1,
+    "explanation": "Zeroing out their salaries and tapping savings indicate personal sacrifice. B is contradicted by 'many did not'; C and D are unsupported.",
+    "status": "verified",
+    "item_family_id": "pc.inference::small-business-sacrifice"
+  },
+  {
+    "external_key": "PC-B33-035",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe community garden plot, once an empty lot strewn with broken glass and weeds, now produced tomatoes, peppers, and beans every summer. Neighbors who had barely spoken to one another before now traded recipes across the chain-link fence. Children who had never seen a vegetable grow learned which plants needed water and which preferred dry soil.\n\nThe passage implies that the community garden:",
+    "choices": [
+      "Brought social as well as agricultural benefits to the neighborhood",
+      "Was created by the city government",
+      "Produced only tomatoes",
+      "Was difficult for children to understand"
+    ],
+    "correct_index": 0,
+    "explanation": "Neighbors connecting and children learning point to social benefits beyond food. Other choices contradict or go beyond the passage.",
+    "status": "verified",
+    "item_family_id": "pc.inference::community-garden-social"
+  },
+  {
+    "external_key": "PC-B33-036",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nResearchers studying memory have found that people who get a full night's sleep after learning new material remember it significantly better than those who pull all-nighters to cram. During sleep, the brain appears to consolidate information learned during the day, strengthening some connections and pruning others. Students who skip sleep to study longer may feel more prepared at dawn, but their actual recall on exams often suffers.\n\nBased on the passage, it can be inferred that:",
+    "choices": [
+      "Memory cannot be improved by any method.",
+      "Feeling prepared and being prepared are not always the same thing.",
+      "Sleep is more important than studying.",
+      "Students should never study at night."
+    ],
+    "correct_index": 1,
+    "explanation": "The contrast between dawn confidence and lower recall implies a gap between feeling and being prepared. Other choices overreach or contradict.",
+    "status": "verified",
+    "item_family_id": "pc.inference::sleep-and-memory"
+  },
+  {
+    "external_key": "PC-B33-037",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nMost American cities were designed around the automobile during the twentieth century. Wide streets, abundant parking, and zoning that separated houses from shops and offices made driving the default option for nearly every errand. Cities that grew rapidly after the Second World War, especially in the South and West, contain few neighborhoods where daily life can be conducted on foot.\n\nThe passage implies that:",
+    "choices": [
+      "Most Americans prefer to drive everywhere.",
+      "Zoning laws have no effect on transportation choices.",
+      "All American cities are equally walkable.",
+      "Walkable neighborhoods are more common in older cities than in cities that grew after World War II."
+    ],
+    "correct_index": 3,
+    "explanation": "Saying postwar Sun Belt cities have few walkable neighborhoods implies older cities have more. Other choices contradict or overreach.",
+    "status": "verified",
+    "item_family_id": "pc.inference::walkable-cities-age"
+  },
+  {
+    "external_key": "PC-B33-038",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nWhen the new commanding officer arrived, she did not give a long speech. She introduced herself, asked each section leader to brief her on current operations, and listened without interrupting. Afterward she thanked them and said she would have questions once she had read the unit's records. Several leaders later told their teams that the new boss seemed different from the last one.\n\nBased on the passage, it can be inferred that the previous commanding officer:",
+    "choices": [
+      "Had been promoted recently",
+      "Was more popular with the troops",
+      "Did not read unit records",
+      "Was less inclined to listen before acting"
+    ],
+    "correct_index": 3,
+    "explanation": "Calling the new boss 'different' after she listened carefully implies the previous one did not. Other choices are not supported.",
+    "status": "verified",
+    "item_family_id": "pc.inference::new-co-listening"
+  },
+  {
+    "external_key": "PC-B33-039",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nIce caps at the poles reflect a large share of incoming sunlight back into space, helping to keep Earth cool. As polar ice shrinks, more dark ocean water is exposed, which absorbs sunlight rather than reflecting it. The warmer water then melts more ice nearby, exposing still more dark water. Scientists describe this kind of self-reinforcing cycle as a feedback loop.\n\nThe passage implies that:",
+    "choices": [
+      "Polar ice will recover on its own each winter.",
+      "Feedback loops always benefit the environment.",
+      "Dark ocean water reflects more sunlight than ice.",
+      "Once polar ice loss begins, it can accelerate itself."
+    ],
+    "correct_index": 3,
+    "explanation": "The described loop implies self-acceleration. B and D are not supported; C reverses the passage.",
+    "status": "verified",
+    "item_family_id": "pc.inference::ice-feedback-loop"
+  },
+  {
+    "external_key": "PC-B33-040",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nWhen Diego received his enlistment bonus, he did not buy the new truck his friends expected. Instead, he opened a high-yield savings account, paid off the credit card he had carried since high school, and tucked the rest into an index fund his recruiter had mentioned. His friends teased him, but Diego said he was thinking about ten years from now, not ten weeks.\n\nBased on the passage, Diego can best be described as:",
+    "choices": [
+      "Financially disciplined",
+      "Impulsive",
+      "Frivolous",
+      "Selfish"
+    ],
+    "correct_index": 0,
+    "explanation": "Paying off debt and saving for the long term reflect discipline, not impulse or frivolity.",
+    "status": "verified",
+    "item_family_id": "pc.inference::diego-financial-discipline"
+  },
+  {
+    "external_key": "PC-B33-041",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nFor years, the company published glossy reports describing its commitment to reducing pollution. The figures inside the reports looked impressive, but a recent investigation found that the most flattering numbers excluded emissions from the company's overseas suppliers, which produced the majority of its products. Once those emissions were included, the company's total footprint was roughly four times higher than its public reports suggested.\n\nThe passage most strongly suggests that:",
+    "choices": [
+      "Glossy reports are always dishonest.",
+      "The company had no real environmental program.",
+      "Overseas suppliers should not be regulated.",
+      "The company's reporting was technically accurate but misleading in practice."
+    ],
+    "correct_index": 3,
+    "explanation": "The figures weren't fabricated, just selectively scoped — accurate yet misleading. B, C, and D overgeneralize or go beyond the passage.",
+    "status": "verified",
+    "item_family_id": "pc.inference::greenwashing-misleading"
+  },
+  {
+    "external_key": "PC-B33-042",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe small bakery had operated on Main Street for forty years without ever advertising. Customers came because their parents had brought them, and they brought their own children in turn. When the owner's granddaughter took over, she resisted suggestions to expand or open a second location. She said the bakery's value was not just the bread; it was the fact that every loaf came from the same oven her grandfather had installed in 1962.\n\nBased on the passage, the granddaughter most likely believes that:",
+    "choices": [
+      "Family businesses should never have more than one location.",
+      "Some qualities of a business cannot survive rapid growth.",
+      "Advertising would ruin the bakery's reputation.",
+      "The original oven produces better bread than any modern oven."
+    ],
+    "correct_index": 1,
+    "explanation": "Her resistance to expansion centered on preserving the bakery's distinctive character. B, C, and D each overstate or invent a claim.",
+    "status": "verified",
+    "item_family_id": "pc.inference::bakery-no-growth"
+  },
+  {
+    "external_key": "PC-B33-043",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe new traffic light at the intersection had been requested for nearly a decade. Residents had attended council meetings, signed petitions, and collected data on near-misses at the crossing. The city engineer always replied that the intersection did not yet meet the official threshold for a signal. Then a school bus was struck by a delivery truck on a Tuesday morning, and the light was approved by Friday.\n\nThe passage implies that:",
+    "choices": [
+      "City engineers do not care about safety.",
+      "Tragedy sometimes accomplishes what years of advocacy cannot.",
+      "The intersection had no real safety problem.",
+      "Petitions are the most effective form of advocacy."
+    ],
+    "correct_index": 1,
+    "explanation": "The sudden approval after the crash, despite years of denied requests, points to the implication in A. Others are unsupported or contradicted.",
+    "status": "verified",
+    "item_family_id": "pc.inference::traffic-light-tragedy"
+  },
+  {
+    "external_key": "PC-B33-044",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nWhen a young grizzly bear was spotted near the campground, rangers did not chase it away. They closed the campground for a day, removed every food source within reach, and let the bear discover for itself that there was nothing to eat. The hope was that the bear would associate the area with disappointment rather than reward. Rangers explained that a bear that learns to seek out human food becomes a danger to people and, eventually, to itself.\n\nBased on the passage, it can be inferred that:",
+    "choices": [
+      "Rangers usually kill bears that visit campgrounds.",
+      "Wildlife management often relies on shaping animal behavior over the long term rather than removing animals.",
+      "Closing campgrounds is the only way to protect bears.",
+      "Grizzly bears cannot be relocated."
+    ],
+    "correct_index": 1,
+    "explanation": "The strategy described focuses on behavior change rather than removal — the broader inference. The other choices overgeneralize.",
+    "status": "verified",
+    "item_family_id": "pc.inference::bear-management-strategy"
+  },
+  {
+    "external_key": "PC-B33-045",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe veteran sat at the kitchen table with his grandson's homework spread out in front of him. The boy had written a school report claiming the Vietnam War ended in a clear American victory. The grandfather, who had served two tours there, did not correct him out loud. Instead, he asked the boy to look up several specific dates and read aloud what he found. By the end of the evening, the boy had quietly rewritten the report.\n\nThe passage implies that the grandfather:",
+    "choices": [
+      "Preferred to let his grandson discover the truth through his own research",
+      "Was angry at the boy's teacher",
+      "Did not actually know much about the war",
+      "Wanted his grandson to fail the assignment"
+    ],
+    "correct_index": 0,
+    "explanation": "Guiding the boy to look up dates rather than correcting him implies a preference for self-discovery. Others contradict the passage.",
+    "status": "verified",
+    "item_family_id": "pc.inference::grandfather-vietnam-teaching"
+  },
+  {
+    "external_key": "PC-B33-046",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nTo change a flat tire, first pull off the road onto a level surface and engage the parking brake. Remove the spare tire and jack from the trunk. Loosen the lug nuts slightly before raising the vehicle with the jack. Once the wheel is off the ground, remove the lug nuts completely, take off the flat tire, and place the spare on the hub. Tighten the lug nuts by hand, lower the vehicle, then tighten the nuts fully in a star pattern.\n\nThe primary purpose of this passage is to:",
+    "choices": [
+      "Persuade the reader to buy a new car",
+      "Entertain the reader with a story",
+      "Warn the reader about dangerous roads",
+      "Instruct the reader on how to perform a task"
+    ],
+    "correct_index": 3,
+    "explanation": "The step-by-step format makes the purpose clearly instructional.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::flat-tire-instructional"
+  },
+  {
+    "external_key": "PC-B33-047",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nWashing your hands for at least twenty seconds with soap and warm water is one of the simplest and most effective ways to prevent illness. Doing so removes germs that cause everything from the common cold to serious foodborne infections. Public health officials urge everyone to wash before meals, after using the restroom, and after coughing or sneezing.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Inform readers about a basic health practice",
+      "Sell a brand of soap",
+      "Entertain readers with a personal story",
+      "Criticize public health officials"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage explains hand-washing benefits and guidance — informational.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::handwashing-informative"
+  },
+  {
+    "external_key": "PC-B33-048",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nNo serious investor should ignore the warning signs flashing across the housing market today. Prices have risen far faster than incomes for three straight years. Loan standards have weakened, and the same risky products that led to the last crash are creeping back into common use. Anyone considering a major purchase needs to think carefully before signing.\n\nThe tone of this passage is best described as:",
+    "choices": [
+      "Indifferent",
+      "Cheerful",
+      "Cautionary",
+      "Neutral"
+    ],
+    "correct_index": 2,
+    "explanation": "Warning signs, risky products, and 'think carefully' establish a cautionary tone.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::housing-cautionary"
+  },
+  {
+    "external_key": "PC-B33-049",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Grand Canyon stretches for 277 miles along the Colorado River in northern Arizona. At its widest, it spans 18 miles; at its deepest, it drops more than a mile from the rim to the river below. Layers of rock visible in the canyon walls record nearly two billion years of geological history.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Persuade readers to visit Arizona",
+      "Entertain readers with a humorous travel story",
+      "Provide factual information about the Grand Canyon",
+      "Argue that the Grand Canyon is the world's best landmark"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage is purely factual — distances, depths, and geological history.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::grand-canyon-informative"
+  },
+  {
+    "external_key": "PC-B33-050",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nLocal voters have a chance this November to do something genuinely important: pass the school bond. Our classrooms are overcrowded, our roofs are leaking, and our teachers are paying for basic supplies out of their own pockets. A small increase in property taxes is a modest price to ensure that the next generation has a fair shot.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Inform readers about election procedures",
+      "Criticize the local government in general",
+      "Entertain readers with a story",
+      "Persuade readers to vote for the school bond"
+    ],
+    "correct_index": 3,
+    "explanation": "The author is openly advocating a yes vote — persuasive purpose.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::school-bond-persuasive"
+  },
+  {
+    "external_key": "PC-B33-051",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nDespite enormous investment, the much-hyped technology has delivered only modest results so far. Companies that promised driverless taxis on every corner by this year now quietly extend their timelines. The cars perform reasonably well in sunny weather on familiar roads, but rain, snow, and construction zones still challenge them. Investors who expected a transformed transportation system may need to revise their expectations downward.\n\nThe author's tone in this passage is best described as:",
+    "choices": [
+      "Mournful",
+      "Confused",
+      "Skeptical",
+      "Enthusiastic"
+    ],
+    "correct_index": 2,
+    "explanation": "Phrases like 'much-hyped,' 'only modest results,' and 'revise expectations downward' signal skepticism.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::autonomous-vehicles-skeptical"
+  },
+  {
+    "external_key": "PC-B33-052",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nWalking into the workshop felt like walking back in time. Hand-forged hinges hung from pegs above the workbench, and the smell of oiled wood mixed with woodsmoke from the small stove in the corner. The blacksmith, now in her seventies, still worked six days a week, hammering steel into shape with the same easy rhythm she had used for fifty years.\n\nThe author's tone is best described as:",
+    "choices": [
+      "Indifferent",
+      "Admiring",
+      "Sarcastic",
+      "Alarmed"
+    ],
+    "correct_index": 1,
+    "explanation": "Warm sensory detail and respectful description of the blacksmith's craft convey admiration.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::blacksmith-admiring"
+  },
+  {
+    "external_key": "PC-B33-053",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nIt would be easy to dismiss the proposal as another bureaucratic boondoggle, and many readers will probably do exactly that. But before tossing the report aside, consider the numbers: the program has cut emergency room visits by a third in pilot cities, saved hospitals millions of dollars, and produced measurable improvements in patient health. Maybe this time the bureaucrats actually got something right.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Mock bureaucrats",
+      "Persuade skeptical readers to take the proposal seriously",
+      "Inform readers about emergency room procedures",
+      "Warn readers about wasteful spending"
+    ],
+    "correct_index": 1,
+    "explanation": "The author anticipates skepticism and argues against it using evidence — persuasion aimed at doubters.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::bureaucratic-proposal-persuasive"
+  },
+  {
+    "external_key": "PC-B33-054",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Department of Transportation announced today that average commute times in the metropolitan area rose by two minutes last year, reaching 31 minutes one way. The increase, the third consecutive annual rise, was attributed primarily to population growth and ongoing highway construction. Officials said they expect commute times to stabilize once the largest construction project finishes next summer.\n\nThe tone of this passage is best described as:",
+    "choices": [
+      "Celebratory",
+      "Neutral",
+      "Outraged",
+      "Mournful"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage simply reports figures and attributions without emotion — neutral.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::commute-times-neutral"
+  },
+  {
+    "external_key": "PC-B33-055",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nBefore swimming in unfamiliar waters, always check for posted warnings and ask local lifeguards about currents. Rip currents can pull even strong swimmers away from shore in seconds. If caught in one, do not fight directly against the pull. Swim parallel to the beach until you are free of the current, then turn toward shore. Knowing these steps in advance can be the difference between a safe day at the beach and a tragedy.\n\nThe primary purpose of this passage is to:",
+    "choices": [
+      "Warn readers and provide safety guidance",
+      "Persuade readers to avoid the beach",
+      "Critique lifeguards",
+      "Entertain readers with a beach story"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage warns about rip currents and gives steps to respond — a warning with safety guidance.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::rip-current-warning"
+  },
+  {
+    "external_key": "PC-B33-056",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nProponents of the proposed stadium tell us it will create thousands of jobs and revitalize the downtown. They have said the same thing about the convention center, the riverfront mall, and the failed amusement park, each of which absorbed enormous public subsidies and produced disappointing returns. One might be forgiven for asking whether the city has learned anything from the past, or whether memory simply resets each time a developer arrives with a glossy rendering.\n\nThe author's tone is best described as:",
+    "choices": [
+      "Apologetic",
+      "Detached and neutral",
+      "Hopeful and supportive",
+      "Critical and ironic"
+    ],
+    "correct_index": 3,
+    "explanation": "Listing failed projects and asking pointed rhetorical questions create a critical, ironic tone.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::stadium-subsidies-critical"
+  },
+  {
+    "external_key": "PC-B33-057",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThere is something extraordinary about watching a thunderstorm build over open prairie. The light shifts from gold to bruise-purple in minutes. Wind that smelled like cut grass an hour ago carries the sharp metallic scent of rain. When the first heavy drops finally fall, the relief is almost physical, as if the land itself had been holding its breath. No other landscape stages weather quite like this.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Persuade readers to move to the prairie",
+      "Warn readers about dangerous weather",
+      "Provide factual information about storm formation",
+      "Convey personal appreciation for prairie thunderstorms"
+    ],
+    "correct_index": 3,
+    "explanation": "The sensory language and declaration that 'no other landscape stages weather quite like this' express personal appreciation.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::prairie-storm-appreciation"
+  },
+  {
+    "external_key": "PC-B33-058",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nIt is fashionable to claim that artificial intelligence will soon replace nearly every human job. The truth, as usual, is messier. Some tasks will be automated; many others will be transformed but still require human judgment; new roles no one has yet imagined will appear. Predicting which roles fall into which category is genuinely difficult, and confident forecasts in either direction deserve to be taken with a grain of salt.\n\nThe author's tone is best described as:",
+    "choices": [
+      "Measured and analytical",
+      "Dismissive",
+      "Alarmed",
+      "Enthusiastic"
+    ],
+    "correct_index": 0,
+    "explanation": "The author resists both alarm and enthusiasm, weighing possibilities and counseling caution — measured and analytical.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::ai-jobs-measured"
+  },
+  {
+    "external_key": "PC-B33-059",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nWe were told the new software would simplify our work. Instead, every routine task now requires three additional clicks, the help menu redirects to a chatbot that does not understand basic questions, and the training video features a cheerful narrator who has clearly never tried to use the product. If this is simplification, one shudders to think what complication would look like.\n\nThe author's tone is best described as:",
+    "choices": [
+      "Sarcastic and frustrated",
+      "Confused",
+      "Indifferent",
+      "Grateful"
+    ],
+    "correct_index": 0,
+    "explanation": "The ironic closing line and litany of complaints express sarcasm and frustration.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::software-sarcastic"
+  },
+  {
+    "external_key": "PC-B33-060",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nAt first glance, the program looks generous: thousands of dollars in tuition assistance for any service member who applies. Read the fine print, however, and the picture changes. Funds may only be used at approved schools, only for approved degrees, and only when the service member is not deployed, mobilized, or attending other required training. Eligible candidates often discover that the practical value of the benefit is a fraction of the advertised amount.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Celebrate the generosity of the program",
+      "Provide neutral statistical information",
+      "Persuade readers to enlist",
+      "Caution readers that the program is less valuable than it appears"
+    ],
+    "correct_index": 3,
+    "explanation": "The author contrasts the appearance and reality of the benefit to caution readers about overestimating it.",
+    "status": "verified",
+    "item_family_id": "pc.author-tone-purpose::tuition-benefit-cautionary"
+  }
+]

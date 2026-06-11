@@ -13,3 +13,8 @@ supabase/.temp/
 .claude/worktrees/
 .claude/settings.local.json
 .mcp.json
+
+# Extracted copyrighted book text (local reference only, never commit)
+docs/book-content/
+# Temp SQL seed chunks
+supabase/seed-chunks/

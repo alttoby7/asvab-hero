@@ -21,6 +21,8 @@ pitfalls:
   - "Assuming diesel engines use spark plugs, diesels use compression ignition, not spark ignition"
   - "Forgetting that an automatic transmission uses a torque converter where a manual uses a clutch"
   - "Confusing front-wheel drive (engine drives front axle) with rear-wheel drive (engine drives rear axle)"
+  - "Thinking the catalytic converter produces power, it only cleans exhaust by oxidizing hydrocarbons and carbon monoxide, and has nothing to do with making the engine run"
+  - "Confusing the firing order with the four-stroke order, the four strokes are intake, compression, power (combustion), exhaust, regardless of how many cylinders fire and in what sequence"
 worked_examples:
   - prompt: "A vehicle's temperature gauge spikes suddenly to the red zone. The thermostat is likely stuck in which position, and what does that cause?"
     solution: "Stuck closed. When the thermostat stays closed, coolant cannot circulate to the radiator to shed heat. The engine overheats. A thermostat stuck open causes slow warm-up but rarely overheating."
@@ -28,6 +30,12 @@ worked_examples:
     solution: "A seized caliper on one side. When one caliper applies more or less force than the other, braking force is unequal and the vehicle pulls toward the side with more friction. Replacing or rebuilding the stuck caliper corrects it."
   - prompt: "A gasoline engine with a compression ratio of 10:1 is modified to 12:1. What change is now required in fuel?"
     solution: "Higher-octane fuel. Higher compression ratios raise combustion temperatures, increasing the risk of pre-ignition (knock). Higher-octane fuel resists knock by burning more slowly and consistently."
+  - prompt: "A car's battery is fully charged, but the engine still won't crank when the key is turned. Which component is the most likely culprit?"
+    solution: "The starter motor. The starter is the electric motor that spins the flywheel to turn the engine over. With a good battery and no cranking, a failed starter (or its solenoid) is the prime suspect, not the alternator, which only charges the battery while the engine is already running."
+  - prompt: "After pressing the brake pedal, a driver notices it feels spongy and sinks toward the floor. The hydraulic system has what problem?"
+    solution: "Air trapped in the brake lines. Air is compressible while brake fluid is not, so a spongy or soft pedal points to air in the system. The fix is to bleed the brakes to purge the trapped air and restore a firm pedal."
+  - prompt: "On a rear-wheel-drive car, which component lets the outside wheel turn faster than the inside wheel when rounding a corner?"
+    solution: "The differential. Its bevel gears allow the two drive wheels to rotate at different speeds while still receiving power, which is necessary because the outer wheel travels a longer path through a turn than the inner wheel."
 ---
 
 ## What the ASVAB is testing

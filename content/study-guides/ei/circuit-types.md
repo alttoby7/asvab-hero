@@ -15,6 +15,8 @@ pitfalls:
   - "Applying series voltage rules to a parallel circuit or vice versa, identify the circuit type first"
   - "Forgetting that in a series circuit, one open component breaks the entire circuit; in parallel, other branches still function"
   - "Using 1/R_total = 1/R1 + 1/R2 and stopping there, you must take the reciprocal of that sum to get R_total"
+  - "Confusing an open with a short: an open (broken path) stops all current, while a short (near-zero resistance path) causes maximum current and can damage the circuit or blow a fuse"
+  - "Forgetting Kirchhoff's laws as a check: in series the individual voltage drops must add up to the source voltage (KVL), and in parallel the branch currents must add up to the total current (KCL)"
 worked_examples:
   - prompt: "Two resistors, 6 Ω and 4 Ω, are connected in series to a 20 V battery. What is the total current?"
     solution: "Series: R_total = 6 + 4 = 10 Ω. I = V/R = 20 V ÷ 10 Ω = 2 A"
@@ -22,6 +24,12 @@ worked_examples:
     solution: "1/R_total = 1/6 + 1/4 = 2/12 + 3/12 = 5/12. R_total = 12/5 = 2.4 Ω"
   - prompt: "In a parallel circuit with two branches drawing 3 A and 5 A respectively, what is the total current from the battery?"
     solution: "Parallel: currents add. I_total = 3 + 5 = 8 A"
+  - prompt: "Three resistors of 5 Ω, 10 Ω, and 15 Ω are in series with a 30 V source. What is the voltage drop across the 10 Ω resistor?"
+    solution: "Series R_total = 5 + 10 + 15 = 30 Ω. I = 30 V ÷ 30 Ω = 1 A. Drop across 10 Ω is V = IR = 1 A × 10 Ω = 10 V. The three drops (5 V, 10 V, 15 V) add to the 30 V source, which is Kirchhoff's voltage law."
+  - prompt: "A series-parallel circuit has a 10 Ω resistor in series with two 10 Ω resistors that are in parallel with each other. What is the total resistance?"
+    solution: "Reduce the parallel pair first: two equal 10 Ω in parallel = 10 ÷ 2 = 5 Ω. Then add the series resistor: 5 + 10 = 15 Ω total. Always collapse the parallel section to one value before adding the series part."
+  - prompt: "A series circuit of three bulbs is lit. One bulb burns out (opens). What happens, and how would the result differ if the bulbs were wired in parallel?"
+    solution: "In series there is one path, so an open bulb breaks the loop and all three go dark (old-style holiday lights). In parallel each bulb has its own path, so one open bulb goes dark but the other two stay lit because their branches are unaffected."
 diagrams:
   - type: circuit
     after: "Series circuits: everything in one loop"

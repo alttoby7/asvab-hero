@@ -11,6 +11,8 @@ pitfalls:
   - "Picking an answer that sounds like the stem word but means something different (e.g. 'ingenious' vs 'ingenuous')"
   - "Choosing the first word that feels vaguely right, always compare all four options"
   - "Ignoring register: 'commence' and 'start' both mean begin, but they're used in different contexts"
+  - "Choosing an antonym because it is the 'most related' word, the closest synonym is the goal, and the opposite is a classic trap"
+  - "Settling for a word that is only loosely related when a tighter synonym is also in the choices, compare all four before locking in"
 worked_examples:
   - prompt: "COVERT most nearly means: (A) hidden (B) surface (C) noisy (D) expensive"
     solution: "Covert means secret or hidden. 'Surface' is the opposite. Answer: A"
@@ -18,6 +20,14 @@ worked_examples:
     solution: "Arduous means requiring great effort, difficult. Eliminate creative, boring, and colorful as unrelated. Answer: B"
   - prompt: "BREVITY most nearly means: (A) courage (B) sadness (C) shortness (D) cleverness"
     solution: "Brevity means brief duration or expression, shortness. 'Brave' sounds related, but that's 'bravery'. Answer: C"
+  - prompt: "FRUGAL most nearly means: (A) wasteful (B) thrifty (C) cheerful (D) fragile"
+    solution: "Frugal means economical and sparing with money, thrifty. 'Wasteful' is the antonym trap, and 'fragile' just sounds similar. Answer: B"
+  - prompt: "GREGARIOUS most nearly means: (A) sociable (B) gloomy (C) enormous (D) dishonest"
+    solution: "Gregarious describes someone who enjoys the company of others, sociable. Picture a 'gregg' who loves a crowd. None of the other options touch sociability. Answer: A"
+  - prompt: "METICULOUS most nearly means: (A) careless (B) extremely careful about detail (C) quick (D) generous"
+    solution: "Meticulous means showing great attention to detail, painstaking. 'Careless' is the direct antonym trap, so eliminate it first. Answer: B"
+  - prompt: "OBSTINATE most nearly means: (A) agreeable (B) stubborn (C) talkative (D) sleepy"
+    solution: "Obstinate means refusing to change one's mind, stubborn. 'Agreeable' is the opposite, a tempting antonym trap. Answer: B"
 ---
 
 ## What the test format looks like
