@@ -7,7 +7,7 @@ import { ALL_SUBTESTS, SUBTEST_NAMES, type Branch } from "@/types";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { useSession } from "@/hooks/useSession";
 import { checkAnonDiagnosticUsed } from "@/lib/practice/gate";
-import { isAdaptiveEnabled } from "@/lib/practice/sampler";
+import { isAdaptiveEnabled, loadActiveVariants } from "@/lib/practice/sampler";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import {
   getPrepMode,
@@ -41,6 +41,20 @@ export default function VariantPicker() {
   // Adaptive practice is the FREE score-moving core (one block/day for free
   // users; unlimited for Pro). Anon users need an account first.
   const adaptiveAvailable = isAdaptiveEnabled();
+
+  // Pro training modes (sprint / loop / retake) only render when their variant
+  // row is active in the DB, so code deploys and variant activation can ship in
+  // either order without dead cards.
+  const [activeCodes, setActiveCodes] = useState<Set<string>>(new Set());
+  useEffect(() => {
+    let cancelled = false;
+    loadActiveVariants().then((vs) => {
+      if (!cancelled) setActiveCodes(new Set(vs.map((v) => v.code)));
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   // Profile-aware adaptive variant (GT for Army/Marines AFCT, General for AF/SF,
   // AFQT otherwise). Best-effort fetch; default to AFQT until it settles so we
@@ -337,6 +351,51 @@ export default function VariantPicker() {
         )}
       </div>
 
+      {/* Weakness Loop (Pro), short daily strike on the weakest topics */}
+      {activeCodes.has("weakness_loop") && (
+      <ProVariantCard
+        variant="weakness_loop"
+        title="Weakness Loop"
+        meta="12 questions · 10 minutes · auto-targeted"
+        body="A fast strike on your weakest topics: 8 questions where you miss most, plus 4 from neighboring skills so the fix sticks in context."
+        locked={!isPro}
+        loading={loading}
+        isAuthed={isAuthed}
+        router={router}
+        iconPath="M13 10V3L4 14h7v7l9-11h-7z M19 19l-2-2m2 2l2 2m-2-2l2-2m-2 2l-2 2"
+      />
+      )}
+
+      {/* AFQT Sprint (Pro), timed AFQT-only block */}
+      {activeCodes.has("afqt_sprint") && (
+      <ProVariantCard
+        variant="afqt_sprint"
+        title="AFQT Sprint"
+        meta="59 questions · 45 minutes · AR / MK / WK / PC"
+        body="A timed run of only the four subtests that decide your AFQT score. The pacing rehearsal between daily adaptive blocks and a full simulation."
+        locked={!isPro}
+        loading={loading}
+        isAuthed={isAuthed}
+        router={router}
+        iconPath="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+      )}
+
+      {/* Retake Readiness (Pro), pre-test spot check */}
+      {activeCodes.has("retake_readiness") && (
+      <ProVariantCard
+        variant="retake_readiness"
+        title="Retake Readiness Check"
+        meta="20 questions · 15 minutes · weak areas + fresh material"
+        body="Scheduled a retake? 12 questions anchored in your prior weak topics plus 8 you haven't seen, so you know the gaps actually closed."
+        locked={!isPro}
+        loading={loading}
+        isAuthed={isAuthed}
+        router={router}
+        iconPath="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+      )}
+
       {/* Full-length simulation (Pro), final-stretch rehearsal */}
       <Link
         href={practiceHref("full_sim", { authed: isAuthed })}
@@ -406,5 +465,80 @@ export default function VariantPicker() {
       </p>
       {/* ── End Phase E ───────────────────────────────────────────────────── */}
     </div>
+  );
+}
+
+/** Shared card for the Pro training modes (sprint / loop / retake). Mirrors the
+ *  full_sim card: Pro badge + lock redirect for non-Pro, plain Link for Pro. */
+function ProVariantCard({
+  variant,
+  title,
+  meta,
+  body,
+  locked,
+  loading,
+  isAuthed,
+  router,
+  iconPath,
+}: {
+  variant: "afqt_sprint" | "weakness_loop" | "retake_readiness";
+  title: string;
+  meta: string;
+  body: string;
+  locked: boolean;
+  loading: boolean;
+  isAuthed: boolean;
+  router: ReturnType<typeof useRouter>;
+  iconPath: string;
+}) {
+  return (
+    <Link
+      href={practiceHref(variant, { authed: isAuthed })}
+      onClick={(e) => {
+        if (loading) return;
+        if (locked) {
+          e.preventDefault();
+          router.push(`/upgrade?from=variant_picker&variant=${variant}`);
+        }
+      }}
+      className="block rounded-2xl border border-navy-border bg-navy-light p-6 no-underline transition-colors hover:border-accent/40 hover:bg-navy-lighter sm:p-7"
+    >
+      <div className="flex items-start gap-4">
+        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy-lighter">
+          <svg
+            className="h-6 w-6 text-text-secondary"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1.75}
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" d={iconPath} />
+          </svg>
+        </div>
+        <div className="flex-1">
+          <div className="flex items-center gap-2">
+            <h2 className="font-display text-lg font-bold text-text-primary sm:text-xl">
+              {title}
+            </h2>
+            {locked && !loading && (
+              <span className="inline-flex items-center rounded-md bg-accent/20 px-2 py-0.5 text-xs font-semibold text-accent">
+                Pro
+              </span>
+            )}
+          </div>
+          <p className="mt-1 text-sm text-text-secondary">{meta}</p>
+          <p className="mt-2 text-sm text-text-tertiary">{body}</p>
+        </div>
+        <svg
+          className="hidden h-5 w-5 shrink-0 text-text-tertiary sm:block"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path d="M9 5l7 7-7 7" />
+        </svg>
+      </div>
+    </Link>
   );
 }

@@ -16,6 +16,9 @@ export type PracticeVariant =
   | "gt_adaptive"
   | "rating_adaptive"
   | "full_sim"
+  | "afqt_sprint"
+  | "weakness_loop"
+  | "retake_readiness"
   | "subtest_drill";
 
 /** Practice hub (variant picker), `/app/practice` for members, public otherwise. */

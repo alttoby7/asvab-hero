@@ -38,7 +38,7 @@
 - **Stripe API gotcha:** `current_period_end` lives on `sub.items.data[0]`, not the subscription object (API `2025-03-31.basil`). Migration files are NOT evidence of runtime state — verify `pg_proc`/`pg_trigger` after migrating a function.
 
 ## Active Open Issues
-- **MAGE normalization bug:** AF job thresholds are 1–99 percentile but `calculateAirForceComposites()` returns raw sums → AF job matching unreliable. Needs a normalization table (like PAY97). Deferred.
+- **MAGE normalization:** RESOLVED as permanent beta (2026-05-21 research pass) — the official AF raw→percentile norming table is not public, and a z-score approximation is statistically indefensible (see `docs/scoring-model.md` "MAGE" section). AF/SF checks render as "unverifiable", jobs stamped `support_status='beta'`. Do NOT implement an approximation; unblocking requires official DMDC/AF norms.
 - **Missing calculator pages:** `/marines-asvab-calculator`, `/coast-guard-asvab-calculator`, `/space-force-asvab-calculator` — follow `/army-asvab-calculator` pattern.
 - **Pending operator step:** enable `invoice.payment_failed` in Stripe Dashboard for `we_1TRQ39DjRScowBLlbLoSKKXX`.
 - **Mistake Bank (Closed-Loop v0) — LIVE 2026-05-21.** `NEXT_PUBLIC_CLOSED_LOOP_ENABLED=true` in CF prod; `/app/mistakes` + home entry points live for all (free). Migrations 0017–0019; single-source SM-2 in PL/pgSQL (`sm2_next`); flashcards + missed questions grade via RPC. Residual: a logged-in browser smoke.

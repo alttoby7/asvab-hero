@@ -16,6 +16,8 @@ import {
   sampleForVariant,
   sampleAdaptive,
   shouldUseAdaptive,
+  samplePersonalized,
+  shouldUsePersonalized,
 } from "@/lib/practice/sampler";
 import {
   saveAttempt,
@@ -258,6 +260,16 @@ export default function PracticeTestEngine({
           userId,
           blueprintOverride,
         });
+        beginWith(sampled);
+      })();
+      return;
+    }
+
+    // Personalized history-driven variants (weakness_loop / retake_readiness):
+    // topic_stats-aware sampling with a robust random fallback inside.
+    if (shouldUsePersonalized(variant)) {
+      (async () => {
+        const sampled = await samplePersonalized(variant, pool, { userId });
         beginWith(sampled);
       })();
       return;

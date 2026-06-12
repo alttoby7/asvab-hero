@@ -34,6 +34,9 @@ const ALLOWED_VARIANTS = new Set([
   "diagnostic",
   "subtest_drill",
   "full_sim",
+  "afqt_sprint",
+  "weakness_loop",
+  "retake_readiness",
   ...(isAdaptiveEnabled() ? [...ADAPTIVE_VARIANT_CODES] : []),
 ]);
 

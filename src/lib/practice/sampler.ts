@@ -274,6 +274,126 @@ export function sampleForVariant(
   return shuffle(pool).slice(0, Math.min(rules.length, pool.length));
 }
 
+// ─── Personalized history-driven variants (weakness_loop / retake_readiness) ─
+//
+// These two variants use string mix sentinels ("8_weakest_topic_4_adjacent",
+// "12_prior_weak_8_fresh") that the pure sampler can't satisfy — they need the
+// user's topic_stats. Callers gate on `shouldUsePersonalized` and fall back to
+// `sampleForVariant` (random interleaved at rules.length) on any failure, so an
+// anonymous or history-less user still gets a working test.
+
+export const PERSONALIZED_VARIANT_CODES = [
+  "weakness_loop",
+  "retake_readiness",
+] as const;
+
+export function shouldUsePersonalized(variant: TestVariant): boolean {
+  return (
+    (PERSONALIZED_VARIANT_CODES as readonly string[]).includes(variant.code) &&
+    variant.active === true
+  );
+}
+
+/** Pull n random questions from `pool` whose topic is in `topicIds`, excluding already-picked ids. */
+function takeFromTopics(
+  pool: PracticeQuestion[],
+  topicIds: Set<string>,
+  n: number,
+  exclude: Set<string>
+): PracticeQuestion[] {
+  return shuffle(
+    pool.filter((q) => !!q.topicId && topicIds.has(q.topicId) && !exclude.has(q.id))
+  ).slice(0, n);
+}
+
+/**
+ * Weakness Loop (12q): 8 from the user's weakest topics + 4 from adjacent
+ * topics (same subtests, different topics) so the weak skill is practiced in
+ * context, not isolation. Retake Readiness (20q): 12 anchored in prior weak
+ * topics + 8 fresh from topics the user has barely seen, a spot-check that
+ * prior gaps closed AND new material doesn't surprise them.
+ */
+export async function samplePersonalized(
+  variant: TestVariant,
+  pool: PracticeQuestion[],
+  opts: { userId: string | null }
+): Promise<PracticeQuestion[]> {
+  try {
+    if (!opts.userId) throw new Error("personalized_needs_user");
+    const stats = await loadAdaptiveTopicStats(opts.userId);
+    const seen = stats.filter((s) => s.seen > 0);
+    if (seen.length === 0) throw new Error("no_history");
+
+    // Weakest topics first: low posterior breaks ties toward low confidence
+    // (uncertain weakness still counts as weakness).
+    const ranked = [...seen].sort(
+      (a, b) => a.posterior - b.posterior || a.confidence - b.confidence
+    );
+
+    const picked: PracticeQuestion[] = [];
+    const pickedIds = new Set<string>();
+    const add = (qs: PracticeQuestion[]) => {
+      for (const q of qs) {
+        if (!pickedIds.has(q.id)) {
+          picked.push(q);
+          pickedIds.add(q.id);
+        }
+      }
+    };
+
+    if (variant.code === "weakness_loop") {
+      // 8 from the weakest topics (walk down the ranking until filled)…
+      const weakTopics = new Set<string>();
+      for (const s of ranked) {
+        weakTopics.add(s.topicId);
+        add(takeFromTopics(pool, new Set([s.topicId]), 8 - picked.length, pickedIds));
+        if (picked.length >= 8) break;
+      }
+      // …+ 4 adjacent: same subtest(s) as the weak topics, different topic.
+      const weakSubtests = new Set(
+        [...weakTopics].map((t) => t.split(".")[0].toUpperCase())
+      );
+      const adjacentTopics = new Set(
+        pool
+          .filter(
+            (q) =>
+              !!q.topicId &&
+              weakSubtests.has(q.subtest) &&
+              !weakTopics.has(q.topicId)
+          )
+          .map((q) => q.topicId as string)
+      );
+      add(takeFromTopics(pool, adjacentTopics, 12 - picked.length, pickedIds));
+    } else {
+      // retake_readiness: 12 anchored in prior weak topics…
+      const weakHalf = ranked.slice(0, Math.max(1, Math.ceil(ranked.length / 2)));
+      const weakTopics = new Set(weakHalf.map((s) => s.topicId));
+      add(takeFromTopics(pool, weakTopics, 12, pickedIds));
+      // …+ 8 fresh: topics with no (or barely any) history.
+      const seenTopics = new Set(seen.map((s) => s.topicId));
+      const freshTopics = new Set(
+        pool
+          .filter((q) => !!q.topicId && !seenTopics.has(q.topicId))
+          .map((q) => q.topicId as string)
+      );
+      add(takeFromTopics(pool, freshTopics, 20 - picked.length, pickedIds));
+    }
+
+    // Top up to the variant length from anywhere if bins ran dry.
+    if (picked.length < variant.rules.length) {
+      add(shuffle(pool.filter((q) => !pickedIds.has(q.id))).slice(
+        0,
+        variant.rules.length - picked.length
+      ));
+    }
+    if (picked.length === 0) throw new Error("personalized_empty");
+    return shuffle(picked).slice(0, variant.rules.length);
+  } catch {
+    // Honest fallback: random interleaved at the variant's length.
+    return sampleForVariant(variant, pool);
+  }
+}
+
 // ─── Adaptive AFQT path (WS6) ────────────────────────────────────────────────
 //
 // All of the below is inert unless `shouldUseAdaptive(variant)` is true (flag on
