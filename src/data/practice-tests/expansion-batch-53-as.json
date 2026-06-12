@@ -1,0 +1,954 @@
+[
+  {
+    "external_key": "AS-B53-001",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the primary difference between a turbocharger and a supercharger?",
+    "choices": [
+      "A turbocharger is driven by exhaust gases spinning a turbine, while a supercharger is driven mechanically by the engine's crankshaft",
+      "A supercharger is driven by exhaust gases, while a turbocharger is belt-driven from the crankshaft",
+      "A turbocharger increases fuel pressure, while a supercharger increases coolant flow",
+      "Both are exhaust-driven but a supercharger uses a second turbine stage"
+    ],
+    "correct_index": 0,
+    "explanation": "A turbocharger uses exhaust flow to spin a turbine that drives a compressor wheel, so it is exhaust-powered and adds no direct parasitic drag to the crankshaft. A supercharger is mechanically coupled to the crankshaft via a belt, chain, or gears, so it produces boost at low RPM but draws power from the engine directly. Neither device handles fuel pressure or coolant.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::turbocharger-vs-supercharger"
+  },
+  {
+    "external_key": "AS-B53-002",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What does a Mass Air Flow (MAF) sensor measure, and how does it differ from a MAP sensor?",
+    "choices": [
+      "MAF measures intake air temperature; MAP measures barometric pressure at sea level",
+      "MAF measures the actual mass of air entering the engine; MAP measures manifold absolute pressure and infers air mass from that",
+      "MAF measures exhaust oxygen content; MAP measures fuel rail pressure",
+      "Both sensors measure the same thing but MAF is used on diesel engines and MAP on gasoline engines"
+    ],
+    "correct_index": 1,
+    "explanation": "A MAF sensor directly measures the mass of air flowing into the intake, using a hot-wire or film element that cools in proportion to airflow. A MAP sensor measures the absolute pressure in the intake manifold; the ECM combines that pressure reading with engine speed and temperature to calculate air mass indirectly. Neither sensor measures exhaust oxygen or fuel pressure; those are separate sensors.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::maf-vs-map-sensor"
+  },
+  {
+    "external_key": "AS-B53-003",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the purpose of the crankshaft position sensor (CKP)?",
+    "choices": [
+      "It monitors engine oil pressure and signals the ECM to shut down if pressure is too low",
+      "It tells the ECM the exact rotational position and speed of the crankshaft so it can time ignition and fuel injection",
+      "It measures crankshaft bearing clearance during operation",
+      "It controls variable valve timing by signaling the camshaft actuator"
+    ],
+    "correct_index": 1,
+    "explanation": "The crankshaft position sensor reads a toothed reluctor wheel on the crankshaft, providing the ECM with precise crank angle and RPM data used to time ignition spark and fuel injection events. Without it, most engines will not start or will stall. Oil pressure monitoring is handled by a dedicated oil pressure sensor. Bearing clearance is a static mechanical measurement. Camshaft timing is managed by the camshaft position sensor working alongside the CKP.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::crankshaft-position-sensor"
+  },
+  {
+    "external_key": "AS-B53-004",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the function of a glow plug in a diesel engine?",
+    "choices": [
+      "It ignites the diesel fuel like a spark plug does in a gasoline engine",
+      "It heats the combustion chamber before and during cold starts so the compressed air is hot enough to ignite diesel fuel",
+      "It warms the engine coolant in cold weather to reduce warm-up time",
+      "It monitors cylinder pressure and adjusts injection timing"
+    ],
+    "correct_index": 1,
+    "explanation": "Diesel engines rely on the heat of compression to ignite fuel; in cold weather the combustion chamber walls are too cold to sustain ignition. Glow plugs are electrically heated rods that warm the prechamber or direct-injection chamber before and during cold starts so compression heat is sufficient. Glow plugs do not produce a spark; diesel ignition is entirely compression-based. Coolant heating is done by the block heater, not glow plugs. Injection timing is managed by the ECM.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::glow-plug-diesel"
+  },
+  {
+    "external_key": "AS-B53-005",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "How does the PCV (Positive Crankcase Ventilation) valve protect an engine?",
+    "choices": [
+      "It prevents oil from entering the fuel tank by sealing the crankcase vent",
+      "It routes combustion blow-by gases from the crankcase back into the intake manifold for reburning, preventing pressure buildup and reducing emissions",
+      "It controls crankcase oil temperature by cycling coolant through the oil pan",
+      "It monitors blow-by volume and triggers a check engine light when wear is detected"
+    ],
+    "correct_index": 1,
+    "explanation": "Combustion gases that blow past piston rings into the crankcase (blow-by) contain unburned hydrocarbons and water vapor that can sludge the oil. The PCV valve uses intake manifold vacuum to draw these gases back into the intake to be burned, relieving crankcase pressure and reducing hydrocarbon emissions. It does not seal vents from the fuel tank, control oil temperature, or generate diagnostic codes.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::pcv-valve"
+  },
+  {
+    "external_key": "AS-B53-006",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "In a hybrid vehicle, what does regenerative braking do?",
+    "choices": [
+      "It uses brake fluid pressure to charge the battery through a hydraulic pump",
+      "It converts the vehicle's kinetic energy into electrical energy by using the electric motor as a generator during deceleration",
+      "It automatically applies the brakes when the vehicle senses an obstacle",
+      "It recirculates exhaust heat through the braking system to reduce wear"
+    ],
+    "correct_index": 1,
+    "explanation": "When a hybrid decelerates, the electric motor/generator switches into generator mode, converting kinetic energy into electricity that charges the high-voltage battery pack. This both slows the vehicle and recovers energy that would otherwise be wasted as heat in the friction brakes. Hydraulic fluid does not charge batteries. Regenerative braking is a driver-initiated deceleration process, not a collision-avoidance system. Exhaust heat recovery is a separate system not related to braking.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::hybrid-regenerative-braking"
+  },
+  {
+    "external_key": "AS-B53-007",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A driver complains the engine knocks lightly under load when accelerating uphill but not at light throttle. The technician suspects the knock sensor. What does the knock sensor do, and why would its failure cause this symptom?",
+    "choices": [
+      "The knock sensor measures exhaust temperature; failure causes the ECM to over-advance timing under load, producing a mechanical rattle",
+      "The knock sensor detects engine vibration from detonation; a faulty sensor may fail to retard ignition timing when knock occurs, allowing damaging detonation under high load",
+      "The knock sensor controls fuel injector pulse width; failure causes a lean condition that sounds like knock",
+      "The knock sensor monitors oil pressure; a failing sensor causes the valvetrain to rattle under load"
+    ],
+    "correct_index": 1,
+    "explanation": "The knock sensor is a piezoelectric device that detects the high-frequency vibration signature of detonation (abnormal combustion). When the ECM receives a knock signal, it retards ignition timing to stop the knock. A faulty sensor that cannot signal the ECM allows detonation to continue, which is heard as a knock under load where cylinder pressures are highest. It does not measure exhaust temperature, control injector pulse width, or monitor oil pressure.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::knock-sensor"
+  },
+  {
+    "external_key": "AS-B53-008",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A vehicle with ABS applies the brakes hard and the pedal pulses rapidly under the driver's foot. The driver has never experienced this before and is alarmed. The technician should explain:",
+    "choices": [
+      "The brake master cylinder is failing and the pulsing indicates internal bypass",
+      "This is normal ABS operation; the modulator rapidly cycles brake pressure to prevent wheel lockup and maintain steering control",
+      "A caliper is sticking and releasing alternately, causing the pulsation",
+      "The brake booster has lost vacuum and the pedal pulse is the driver's foot oscillating from fatigue"
+    ],
+    "correct_index": 1,
+    "explanation": "When ABS senses a wheel approaching lockup, the ABS modulator rapidly applies and releases hydraulic pressure at that wheel, which the driver feels as pedal pulsation. This is intentional and normal; it keeps each wheel just below lockup so the driver can steer. A failing master cylinder typically causes a sinking pedal, not rapid pulsation. A sticking caliper causes a pull and dragging brake smell. A failing booster causes a hard pedal, not pulsation.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::abs-modulator"
+  },
+  {
+    "external_key": "AS-B53-009",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A vehicle's traction control light comes on and the system cuts power during a hard launch on a dry road with new tires. How does traction control differ from ABS in its method of reducing wheel slip?",
+    "choices": [
+      "Traction control reduces engine torque and can apply individual brakes to spinning drive wheels; ABS modulates brake pressure to prevent lockup during braking",
+      "ABS and traction control are the same system with different names",
+      "Traction control increases throttle to regain grip; ABS does the same during braking",
+      "Traction control retards ignition timing on all cylinders; ABS adjusts steering angle"
+    ],
+    "correct_index": 0,
+    "explanation": "ABS prevents wheel lockup during braking by modulating hydraulic pressure. Traction control prevents drive-wheel spin during acceleration by reducing engine output (throttle cut, fuel cut, or ignition retard) and sometimes applying the brake on a spinning wheel to transfer torque to the wheel with more grip. They use shared hardware but operate in opposite scenarios. Neither system increases throttle or adjusts steering angle.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::traction-control-vs-abs"
+  },
+  {
+    "external_key": "AS-B53-010",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A technician checks an engine that runs rough at idle and notices the EGR cooler is leaking coolant into the EGR passage. What is the function of an EGR cooler, and why is a coolant leak into the passage a problem?",
+    "choices": [
+      "The EGR cooler heats exhaust gases to improve recirculation efficiency; a leak sends steam into the intake, which is harmless",
+      "The EGR cooler lowers the temperature of recirculated exhaust gases before they enter the intake; a coolant leak introduces water into the combustion chamber and can cause hydrolocking or misfire",
+      "The EGR cooler filters particulates from exhaust gases; a leak bypasses filtration and causes the DPF to clog",
+      "The EGR cooler controls EGR valve position; a leak causes the valve to stay open, flooding the intake with exhaust"
+    ],
+    "correct_index": 1,
+    "explanation": "The EGR cooler uses engine coolant to reduce exhaust gas temperature before the gases re-enter the intake, which improves NOx reduction efficiency. If the cooler cracks, coolant enters the exhaust passage and is drawn into the intake manifold as steam or liquid, which can cause misfires, rough idle, white exhaust smoke, and in severe cases hydrolocking if liquid water accumulates in a cylinder. The cooler does not heat gases, filter particulates, or control valve position.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::egr-cooler"
+  },
+  {
+    "external_key": "AS-B53-011",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "An engine with variable valve timing (VVT) runs normally at idle but loses power above 4,000 RPM and sets a camshaft position code. The VVT solenoid tests good. The MOST likely next cause to investigate is:",
+    "choices": [
+      "A worn serpentine belt slipping and causing the cam to run retarded at high RPM",
+      "Low or contaminated engine oil reducing oil pressure to the VVT cam phaser, preventing it from advancing",
+      "A failed MAP sensor causing the ECM to disable VVT above a certain load threshold",
+      "A clogged air filter increasing intake restriction and limiting high-RPM airflow"
+    ],
+    "correct_index": 1,
+    "explanation": "VVT cam phasers are hydraulically actuated by engine oil pressure directed by the solenoid. If oil is low, contaminated, or sludged, the phaser cannot move to the commanded position at high RPM where oil demand is greatest. With a confirmed good solenoid, the next suspects are oil condition and pressure at the phaser. A serpentine belt drives accessories, not the cam sprocket. A MAP sensor failure affects fuel delivery, not directly VVT mechanical response. An air filter restriction causes a broad power loss, not a code-setting cam phaser fault.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::variable-valve-timing"
+  },
+  {
+    "external_key": "AS-B53-012",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "A vehicle equipped with Electronic Stability Control (ESC) begins to oversteer on a wet curve. The driver does not input any correction. Describe how ESC intervenes.",
+    "choices": [
+      "ESC applies all four brakes equally to slow the vehicle and prevent any further yaw",
+      "ESC selectively brakes the outside front wheel to generate a corrective yaw moment that counters the oversteer, and may also reduce engine torque",
+      "ESC increases throttle to the spinning rear wheels to restore traction",
+      "ESC locks the rear differential so rear wheel speeds are equal, stopping the oversteer"
+    ],
+    "correct_index": 1,
+    "explanation": "During oversteer (rear stepping out), ESC detects the difference between intended steering angle and actual yaw rate using a yaw rate sensor and lateral accelerometer. To correct oversteer, the system applies a braking force at the outside front wheel; that brake force creates a yaw moment that rotates the front of the vehicle back in line. It also reduces engine torque to prevent further spin. Braking all four wheels equally would just slow the vehicle without addressing the yaw direction. Adding throttle to spinning rear wheels worsens oversteer. Locking the rear differential does not address yaw dynamics.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::electronic-stability-control"
+  },
+  {
+    "external_key": "AS-B53-013",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "An engine emits white smoke continuously from the exhaust, the coolant reservoir slowly empties, and the oil dipstick shows a milky, frothy film. Compression testing shows cylinder 4 has 60 psi versus 160 psi on all others. The MOST likely diagnosis is:",
+    "choices": [
+      "Stuck-open thermostat allowing coolant to overflow into the exhaust",
+      "Worn piston rings on cylinder 4 allowing oil to enter and burn, producing white smoke",
+      "A blown head gasket on cylinder 4 allowing coolant to enter the combustion chamber and oil passages",
+      "A cracked EGR cooler routing coolant into the intake manifold of cylinder 4"
+    ],
+    "correct_index": 2,
+    "explanation": "The symptom cluster, white steam-like exhaust, declining coolant, milky oil from water contamination, and a single cylinder with dramatically low compression, is the classic presentation of a head gasket failure between the coolant jacket, the oil gallery, and cylinder 4. Coolant entering the combustion chamber burns to produce white steam. Coolant mixing with oil causes the milky emulsion. A stuck thermostat does not breach the combustion chamber. Worn rings produce blue-gray oil smoke, not white steam, and do not cause coolant loss. An EGR cooler crack would show on multiple cylinders and not explain the low compression.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::head-gasket-failure"
+  },
+  {
+    "external_key": "AS-B53-014",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "After an alignment, a vehicle still pulls left under hard braking but tracks straight during normal driving. The MOST likely cause is:",
+    "choices": [
+      "Excessive negative camber on the left front tire causing pull during acceleration",
+      "A right-front brake caliper that is not releasing fully, creating drag that pulls right during deceleration and masks itself during straight driving",
+      "A frozen left-front caliper that applies brake force before the right front under hard braking, pulling the vehicle left",
+      "Incorrect toe-in setting causing the pull only under braking load"
+    ],
+    "correct_index": 2,
+    "explanation": "Pull under braking only, not during normal driving, points to unequal brake force side-to-side. A seized or sticky left-front caliper applies pressure sooner or with more force than the right, creating more deceleration on that side and pulling the car left. During normal driving the caliper releases and the asymmetry is not felt. A non-releasing right caliper would pull right, not left. Camber affects cornering pull, not braking pull. Toe causes tire scrub and straight-line wander, not braking-specific pull.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::brake-pull-diagnosis"
+  },
+  {
+    "external_key": "AS-B53-015",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "What is the purpose of a tap-and-die set?",
+    "choices": [
+      "To cut, shape, and bend sheet metal using hardened punches",
+      "To cut internal threads inside a hole (tap) and external threads on a rod or bolt (die)",
+      "To measure thread pitch and count threads per inch on fasteners",
+      "To press out and install press-fit bearings and bushings"
+    ],
+    "correct_index": 1,
+    "explanation": "A tap is a hardened cutting tool that machines internal (female) threads inside a drilled hole; a die cuts external (male) threads onto a round rod or the shank of a fastener. Together they allow a technician to create new threads or chase (clean up) damaged ones. Thread measurement is done with a thread pitch gauge, a separate tool. Bearing and bushing work requires a press or a dedicated driver set.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::tap-and-die-purpose"
+  },
+  {
+    "external_key": "AS-B53-016",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "A Torx driver bit is identifiable by which shape?",
+    "choices": [
+      "A six-pointed star shape with rounded lobes that engages the fastener at the lobe faces",
+      "A square recess that accepts a Robertson driver",
+      "A cross shape with tapered flanks designed to cam out at high torque",
+      "A hexagonal recess that accepts an Allen (hex) key"
+    ],
+    "correct_index": 0,
+    "explanation": "Torx fasteners have a six-pointed star-shaped recess with rounded lobes; the driver engages the lobes and resists cam-out because the drive surfaces are perpendicular, not angled. A Robertson (square) recess looks like a square socket. A cross with tapered flanks describes a Phillips head. A hexagonal recess accepts an Allen (hex) key. The different drive profiles serve different torque and cam-out requirements.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::torx-bit-profile"
+  },
+  {
+    "external_key": "AS-B53-017",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "What is a telescoping gauge used for?",
+    "choices": [
+      "Measuring the length of bolts before installation",
+      "Checking the tension of a drive belt by measuring deflection",
+      "Transferring an inside bore or hole diameter to an outside micrometer for measurement",
+      "Setting the gap on spark plugs by adjusting the gauge pin"
+    ],
+    "correct_index": 2,
+    "explanation": "A telescoping gauge has spring-loaded plungers that expand to contact both walls of a bore; once locked, the gauge is removed and measured with an outside micrometer to obtain the bore diameter. It is a transfer tool, not a direct-reading instrument. Bolt length is measured with a ruler or caliper. Belt tension requires a belt tension gauge or the deflection method with a straightedge. Spark plug gaps are set with a wire-type or blade-type feeler gauge.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::telescoping-gauge"
+  },
+  {
+    "external_key": "AS-B53-018",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "What is a thread pitch gauge used to determine?",
+    "choices": [
+      "The diameter of a bolt shank using calibrated blades",
+      "The number of threads per inch (or millimeter pitch) on a fastener",
+      "The torque value required to seat a fastener flush",
+      "The hardness grade of a bolt by comparing blade thickness"
+    ],
+    "correct_index": 1,
+    "explanation": "A thread pitch gauge consists of a fan of thin blades each machined with a different thread profile; you match blades to the fastener until one fits snugly without gaps, revealing the thread pitch (threads per inch for SAE or mm pitch for metric). It does not measure diameter, torque specifications, or material hardness; those require other instruments.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::thread-pitch-gauge"
+  },
+  {
+    "external_key": "AS-B53-019",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A technician needs to find a small steel bolt that fell into a tight engine recess that fingers cannot reach. The BEST tool for this task is:",
+    "choices": [
+      "A telescoping magnet (magnetic pickup tool)",
+      "A pair of needle-nose pliers extended to their full length",
+      "A drift punch used to push the bolt to a reachable area",
+      "A rubber-tipped parts grabber that works on non-ferrous materials"
+    ],
+    "correct_index": 0,
+    "explanation": "A magnetic pickup tool extends on a telescoping shaft and retrieves ferrous metal objects from gaps too small for hands or tools. Steel bolts are ferrous and respond to the magnet. Needle-nose pliers lack the reach and cannot grip an unseen part reliably. A drift punch risks pushing the bolt deeper or damaging surrounding components. A rubber-tipped grabber is for non-magnetic parts; a steel bolt is better served by the magnetic tool.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::magnetic-pickup"
+  },
+  {
+    "external_key": "AS-B53-020",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A technician uses a dial caliper set to zero, measures a shaft, and reads 1.375 inches. The same shaft measured with a calibrated outside micrometer reads 1.372 inches. What is the MOST likely reason for the discrepancy?",
+    "choices": [
+      "The dial caliper is reading correctly; micrometers are less accurate than calipers for this diameter",
+      "The dial caliper jaws are measuring at a slight angle to the shaft, introducing a cosine error, or the caliper has not been zeroed properly",
+      "The micrometer anvils are worn, making it read low on all measurements",
+      "The shaft diameter changed between the two measurements due to thermal expansion"
+    ],
+    "correct_index": 1,
+    "explanation": "A dial caliper is faster to use than a micrometer but is more susceptible to user error from tilting the jaws (cosine error, where a slight angle makes the reading larger than true diameter) or an improperly zeroed reference. A calibrated outside micrometer, measured perpendicular to the shaft, is the more accurate reference instrument for this dimension. Micrometer anvils are hardened and rarely wear enough to cause a 0.003-inch error without obvious damage. Thermal expansion of 0.003 inches on a steel shaft requires a significant temperature change and would not occur in the seconds between measurements.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::dial-caliper-vs-micrometer"
+  },
+  {
+    "external_key": "AS-B53-021",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "When using a sheet-metal nibbler on a steel panel, what advantage does it have over aviation snips for cutting a long curved line?",
+    "choices": [
+      "A nibbler applies no lateral force to the panel, so it does not distort the metal along the cut line",
+      "A nibbler is faster than snips on straight cuts",
+      "A nibbler can cut metal up to one inch thick",
+      "A nibbler leaves a smoother edge than snips and requires no deburring"
+    ],
+    "correct_index": 0,
+    "explanation": "Aviation snips work by shearing, which pushes and deforms the metal on either side of the cut; on long curved cuts this can bow and work-harden the panel edge. A nibbler punches out a series of tiny chips without applying sideways pressure to the remaining material, so the panel stays flat and undistorted. Nibblers are generally slower than snips on straight runs. The maximum cut thickness depends on the tool model but typical sheet nibblers handle 16-18 gauge, not one inch. Both tools leave an edge that benefits from deburring.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::sheet-metal-nibbler"
+  },
+  {
+    "external_key": "AS-B53-022",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A technician needs to remove a burr from the inside of a freshly drilled 3/8-inch hole in aluminum. The correct tool for this task is:",
+    "choices": [
+      "A center punch pressed into the hole to compress the burr",
+      "A hand deburring tool with a rotating blade that fits into the hole and shaves the burr away",
+      "A file laid flat against the top surface of the hole",
+      "A larger drill bit hand-twisted in the hole to enlarge it until the burr clears"
+    ],
+    "correct_index": 1,
+    "explanation": "A deburring tool (also called a burr remover or countersink deburrer) has a hardened rotating or pivoting blade that enters the hole and shaves the raised edge cleanly with light hand pressure. A center punch would compress material but leave an irregular edge. A file on the surface addresses the top face, not the inside of the hole. Using a larger drill bit deliberately enlarges the hole, which changes its dimension and is not a controlled deburring method.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::deburring-tool"
+  },
+  {
+    "external_key": "AS-B53-023",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A technician is cutting mild steel plate with an oxy-fuel cutting torch. The cut starts cleanly but after about six inches the cut closes up and the flame extinguishes. What is the MOST likely cause?",
+    "choices": [
+      "The acetylene pressure is too high, causing turbulent flow that blows out the flame",
+      "The cutting oxygen lever is being released too soon, and the torch tip is partially clogged, reducing oxygen flow and allowing the cut to cool and reseal",
+      "The plate is too cold; heating it to red-hot before cutting would prevent this",
+      "The fuel gas is switched to propane, which cannot cut steel"
+    ],
+    "correct_index": 1,
+    "explanation": "Oxy-fuel cutting works by preheating steel to ignition temperature and then directing high-pressure oxygen to oxidize (burn) through it. If the cutting oxygen flow drops due to a clogged tip orifice or if the operator releases the oxygen lever intermittently, the oxidation reaction stops and the molten slag solidifies, closing the kerf. A clogged tip is a common cause of interrupted cuts. High acetylene pressure causes a sputtering preheating flame but does not cause a cut to start and then close. Steel must be preheated to red-hot to ignite, but the scenario states the cut starts cleanly, so preheat is adequate. Propane can be used as a fuel gas for oxy-fuel cutting of steel with appropriate tips.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::oxy-fuel-cutting-torch"
+  },
+  {
+    "external_key": "AS-B53-024",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A vernier caliper reads 2.350 inches on the main scale and the vernier scale shows the 7th line aligned. The vernier scale has 25 divisions representing 0.025 inches total (each division = 0.001 inch). What is the correct reading?",
+    "choices": [
+      "2.357 inches",
+      "2.375 inches",
+      "2.350 inches",
+      "2.307 inches"
+    ],
+    "correct_index": 0,
+    "explanation": "On this vernier scale each division is 0.001 inch. The main scale reads 2.350 inches and the 7th vernier line is aligned, adding 7 times 0.001 = 0.007 inches. The total reading is 2.350 + 0.007 = 2.357 inches. Adding the vernier scale value to the tenths position rather than the thousandths position gives the incorrect 2.375. Reading only the main scale omits the vernier correction. Subtracting instead of adding the vernier value gives 2.307, which is also wrong.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::vernier-caliper-reading"
+  },
+  {
+    "external_key": "AS-B53-025",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A technician needs to lay out a perfectly vertical reference line on a shop wall before installing a new equipment panel. Which tool combination is BEST for this task?",
+    "choices": [
+      "A combination square held against a level surface to project a horizontal line, then rotated 90 degrees",
+      "A plumb bob suspended from a nail at the desired line location, allowed to stop swinging, then a chalk line snapped along the string",
+      "A tape measure stretched from floor to ceiling and marked every foot",
+      "A laser level set on its horizontal mode and projected at the wall"
+    ],
+    "correct_index": 1,
+    "explanation": "A plumb bob uses gravity to establish a perfect vertical reference; once the weight stops swinging the string is a true plumb line. Snapping a chalk line along it transfers that vertical to the wall surface quickly and accurately. A combination square projects a line perpendicular to a reference surface but requires a known vertical or horizontal starting edge. A tape measure gives distance, not a vertical reference line. A laser set to horizontal mode projects a horizontal plane, not a vertical line; the vertical laser mode would be needed, but a plumb bob is the classic non-powered method for a wall layout.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::plumb-bob-chalk-line"
+  },
+  {
+    "external_key": "AS-B53-026",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A technician uses a framing square to check whether a door opening is square. The square is placed in one corner with one leg along the stud and one leg along the plate. The gap between the square and the corner is 3/8 inch over 24 inches of leg length. What does this indicate, and what is the practical significance?",
+    "choices": [
+      "The opening is square; the gap is a normal manufacturing tolerance in rough framing",
+      "The opening is out-of-square by approximately 3/8 inch over 24 inches, which will cause a pre-hung door to bind or show unequal gaps around the jamb",
+      "The gap means the framing square itself is bent and must be replaced before making any measurement",
+      "A 3/8-inch gap over 24 inches is within the OSHA allowable tolerance for door rough openings"
+    ],
+    "correct_index": 1,
+    "explanation": "A framing square has two perfectly perpendicular legs; any gap between the square and the corner reveals that the corner is not at 90 degrees. A 3/8-inch error over 24 inches is a significant out-of-square condition that will cause a pre-hung door unit to rack, bind in the frame, or show a tapered gap around the jamb. This is not a tolerance, it is a defect that must be corrected by shimming or trimming the framing before the door is hung. Framing squares should be checked for square, but a corner gap is a measurement of the opening, not proof of a bent square.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::framing-square"
+  },
+  {
+    "external_key": "AS-B53-027",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "When cutting metric threads with an M10 x 1.5 die, a technician notices the die is cutting and then binding after a few turns. After reversing to clear the chip, the die binds again at the same point. What is the MOST likely cause?",
+    "choices": [
+      "The die is a right-hand die being used on a left-hand threaded rod",
+      "The rod diameter is at the upper limit of tolerance for M10; the die is cutting but the material is slightly oversized for easy clearing",
+      "The cutting fluid used is too viscous for metric thread cutting",
+      "The die is a taper die and cannot cut M10 threads; a plug die is required"
+    ],
+    "correct_index": 1,
+    "explanation": "M10 x 1.5 external threads require the rod blank to be close to 10 mm in diameter; if the rod is at the very top of its diameter tolerance, the die teeth have more material to remove and chip clearance is reduced, causing binding after each chip-breaking reversal. The correct fix is to check the rod diameter with a micrometer and reduce it slightly if oversized. A right-hand die on a right-hand rod would not bind at a repeating point; it simply would not cut. Cutting fluid viscosity affects surface finish but does not cause repeatable binding. Dies are not categorized as taper or plug the same way taps are; the analogy does not apply.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::die-binding-diagnosis"
+  },
+  {
+    "external_key": "AS-B53-028",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "What does it mean when a timing belt tensioner fails on an interference engine?",
+    "choices": [
+      "The engine will idle roughly but can still be driven until the tensioner is replaced at the next service",
+      "The timing belt loses tension, can jump teeth or snap, and on an interference engine the pistons and valves will collide, causing catastrophic internal damage",
+      "The alternator belt will slip, causing a charging system fault",
+      "The power steering pump will lose drive pressure when the tensioner fails"
+    ],
+    "correct_index": 1,
+    "explanation": "The timing belt tensioner keeps the belt taut so the camshaft and crankshaft stay synchronized. If it fails on an interference engine (one where the piston and valve paths overlap), a skipped or snapped timing belt allows pistons to strike open valves, bending them and usually destroying the engine. A non-interference engine would simply stall. The timing belt is completely separate from the alternator belt and the power steering pump drive. Driving an interference engine with a failed tensioner risks immediate and total engine failure.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::timing-belt-tensioner"
+  },
+  {
+    "external_key": "AS-B53-029",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "When evacuating an automotive A/C system before recharging, why must the refrigerant be recovered rather than simply vented to the atmosphere?",
+    "choices": [
+      "Venting refrigerant is loud and can alarm customers in the service bay",
+      "Refrigerants such as R-134a and R-1234yf are regulated under EPA Section 609 because they are greenhouse gases; venting is illegal and subject to fines",
+      "Refrigerant must be recovered so it can be reused in the same vehicle at no cost",
+      "Venting would create a fire hazard because refrigerant is flammable"
+    ],
+    "correct_index": 1,
+    "explanation": "EPA Section 609 of the Clean Air Act prohibits knowingly venting refrigerants used in motor vehicle A/C systems because they are potent greenhouse gases. Technicians must use certified recovery equipment to capture refrigerant before opening the system. Recovered refrigerant can be recycled, but cost savings is not the regulatory reason. R-134a is non-flammable; R-1234yf has a very low flammability rating but the regulatory driver is environmental, not fire safety. Noise is irrelevant to the legal requirement.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::ac-system-evacuation"
+  },
+  {
+    "external_key": "AS-B53-030",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "How can a technician identify whether a vehicle's A/C system uses R-134a or R-1234yf refrigerant?",
+    "choices": [
+      "By smell; R-134a has a sharp chemical odor while R-1234yf is odorless",
+      "By the service port fitting size and label; R-1234yf uses different sized fittings from R-134a and is labeled on the underhood decal",
+      "By checking the color of the refrigerant oil; R-134a uses red oil and R-1234yf uses blue oil",
+      "Both refrigerants use identical fittings; identification requires a refrigerant identifier machine only"
+    ],
+    "correct_index": 1,
+    "explanation": "R-1234yf uses different (larger) quick-connect service port fittings than R-134a specifically to prevent cross-contamination, since mixing them damages the system. An underhood refrigerant identification label (required by the EPA for new vehicles) also states which refrigerant and oil type are used. A refrigerant identifier can confirm identity but the fittings and label provide the first and most reliable visual identification. Refrigerant oils are not color-coded by refrigerant type in this way.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::refrigerant-identification"
+  },
+  {
+    "external_key": "AS-B53-031",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "A technician hears a rhythmic ticking noise from under the vehicle that increases in pitch with vehicle speed but is not affected by pressing the brake pedal. Where is this noise MOST likely coming from?",
+    "choices": [
+      "A loose heat shield on the exhaust system vibrating against the pipe",
+      "A worn wheel bearing producing a rhythmic noise proportional to wheel rotation speed",
+      "A brake pad wear indicator tab scraping the rotor",
+      "A loose lug nut causing the wheel to wobble and click"
+    ],
+    "correct_index": 1,
+    "explanation": "A noise that increases with vehicle speed but is unchanged when the brakes are applied is a strong indicator of a wheel bearing. Bearing noise is tied to wheel rotation speed, not braking. A brake pad wear indicator tab produces a squeal or scrape that typically changes when the brakes are applied because pressing the brakes changes clamping force on the squealer. A loose heat shield produces a rattle at specific frequencies or over bumps, not a steady speed-proportional tick. A loose lug nut causes a rhythmic wobble and clunking, which is felt and heard differently.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::wheel-bearing-noise"
+  },
+  {
+    "external_key": "AS-B53-032",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A technician installs a new OHC (overhead camshaft) engine's timing belt. Two weeks later the engine has a rough idle, misfires on cylinders 1 and 2, and the scan tool shows camshaft position retarded from target. The MOST likely cause is:",
+    "choices": [
+      "The timing belt tensioner spring is too stiff, advancing the cam beyond specification",
+      "The timing belt was installed one tooth retarded on the camshaft sprocket, and the tensioner has now settled, allowing a small additional slip",
+      "The valve adjustment on cylinders 1 and 2 was disturbed when the cam cover was reinstalled",
+      "A vacuum leak at the intake manifold on the bank containing cylinders 1 and 2"
+    ],
+    "correct_index": 1,
+    "explanation": "A cam position retarded fault after recent timing belt service almost always means the belt was installed one or more teeth off on the cam sprocket, placing the cam behind the correct position. After initial running, belt stretch and tensioner settling can allow additional retard. Cylinders 1 and 2 misfiring with a retarded cam confirms the cam's intake and exhaust events are opening and closing too late for proper combustion. A stiff tensioner would cause the opposite (advance). Valve adjustment would produce a misfire but not a scan tool cam position error. A vacuum leak causes a lean misfire without a cam timing code.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::timing-belt-tooth-offset"
+  },
+  {
+    "external_key": "AS-B53-033",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "During a valve adjustment on a DOHC engine using shim-and-bucket followers, the technician measures an intake valve clearance of 0.004 inches. The specification is 0.006 to 0.010 inches. What is the correct repair?",
+    "choices": [
+      "Add a thicker shim to increase clearance to within specification",
+      "Add a thinner shim to reduce clearance further",
+      "Lap the valve seat to increase clearance",
+      "Replace the camshaft because the lobe is worn"
+    ],
+    "correct_index": 0,
+    "explanation": "In a shim-and-bucket valvetrain, the shim sits between the cam lobe and the bucket (follower). A thicker shim pushes the bucket down relative to the cam baseline, increasing the clearance. The current 0.004-inch clearance is below the minimum 0.006-inch specification, so a thicker shim is needed. A thinner shim would decrease clearance further, worsening the condition. Lapping the valve seat reduces valve recession and can change clearance, but the correct tooling-based adjustment is shim selection. A worn cam lobe typically produces zero or near-zero clearance; the first-line repair is shim selection before considering camshaft replacement.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::valve-shim-adjustment"
+  },
+  {
+    "external_key": "AS-B53-034",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "When pressing a bearing race into an aluminum housing, a technician should apply pressing force to:",
+    "choices": [
+      "The inner race, using a socket that contacts the inner diameter of the bearing",
+      "The outer race only, using a driver or press that contacts the full outer diameter of the race being installed",
+      "Both the inner and outer races simultaneously using a flat plate",
+      "The bearing cage, which distributes the force evenly to all rolling elements"
+    ],
+    "correct_index": 1,
+    "explanation": "When pressing a bearing into a housing, force must be applied to the race that is being moved, which in this case is the outer race contacting the housing bore. Applying force to the inner race loads the rolling elements and can crack the race or deform the balls or rollers. Using a flat plate on both races transmits force through the rolling elements, which is equally harmful. The bearing cage is not a structural pressing surface and would be crushed under press force.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::bearing-race-press"
+  },
+  {
+    "external_key": "AS-B53-035",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A vehicle returns to the shop three days after a wheel alignment with a complaint that it still pulls right. The technician confirms toe, camber, and caster are all within spec. The MOST likely overlooked condition is:",
+    "choices": [
+      "The steering wheel is not centered because the tie rods were not adjusted symmetrically",
+      "Unequal tire pressure or a significantly different tread depth between the front tires causing one side to roll faster",
+      "The alignment rack was not calibrated before the alignment was performed",
+      "The power steering pump is producing unequal assist in both directions"
+    ],
+    "correct_index": 1,
+    "explanation": "When alignment angles are confirmed correct but a pull persists, the most common non-alignment cause is a tire issue: significantly different inflation pressures side to side create different rolling circumferences that pull toward the lower-pressure tire, and a tire with much more wear on one side rolls with a different diameter. Swapping the front tires side to side will confirm this if the pull reverses. A non-centered steering wheel would not cause a pull during straight-line driving. An uncalibrated rack would produce incorrect angle readings, not a pull after confirmed angles. Power steering produces equal assist in both directions under normal conditions and a pump problem would be felt as heavy steering, not a consistent pull.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::alignment-pull-tire"
+  },
+  {
+    "external_key": "AS-B53-036",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "An engine requires the head gasket replaced. Before installing the new gasket, what surface checks and preparations are required on the cylinder head and block deck?",
+    "choices": [
+      "Wash both surfaces with brake cleaner and install the new gasket immediately",
+      "Check both surfaces for flatness with a straightedge and feeler gauges, measure head thickness to confirm it is within minimum spec, clean all surfaces to bare metal removing old gasket material, and resurface if warpage exceeds the manufacturer's limit",
+      "Apply a thin bead of silicone sealant to both mating surfaces before placing the new multi-layer steel gasket",
+      "Only the head surface needs checking; the block deck warps much less frequently"
+    ],
+    "correct_index": 1,
+    "explanation": "A proper head gasket job requires verifying both surfaces are flat (straightedge and feeler gauges across multiple directions), removing all old gasket material with appropriate scrapers without gouging aluminum, confirming the head has not been resurfaced below minimum thickness, and having the head resurfaced if warpage exceeds spec. Silicone sealant is not used on multi-layer steel (MLS) gaskets, which require clean, smooth, bare metal surfaces. Brake cleaner alone does not remove warpage or confirm surface quality. Block decks do warp, especially on aluminum blocks, so both surfaces must be checked.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::head-gasket-resurfacing"
+  },
+  {
+    "external_key": "AS-B53-037",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A front-end alignment on a strut-equipped vehicle shows excessive negative camber on the left front that cannot be corrected with the existing adjustment range. The technician finds no bent components. The MOST likely cause and correction is:",
+    "choices": [
+      "The strut tower has shifted inward from a prior impact; correction requires an aftermarket eccentric camber bolt or strut top plate with adjustment range, or strut tower repair",
+      "The front sway bar end link is too short, pulling the lower control arm inward; replace the end link",
+      "The tie rod is bent, pulling the hub inward; replace the tie rod",
+      "The wheel hub flange is cracked, allowing the hub to tilt; replace the hub assembly"
+    ],
+    "correct_index": 0,
+    "explanation": "Negative camber beyond the factory adjustment range with no bent components typically means the strut tower mounting geometry has moved, usually from a prior collision that pushed the tower inward. The fix is either an eccentric camber bolt at the lower strut-to-knuckle pinch bolt, an adjustable strut top mount, or structural repair of the strut tower. A sway bar end link controls body roll, not static camber. A bent tie rod changes toe, not camber. A cracked hub flange would cause a severe wobble and unsafe bearing condition, and camber change would be accompanied by obvious damage.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::camber-correction"
+  },
+  {
+    "external_key": "AS-B53-038",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "After replacing the front struts and a four-wheel alignment, a customer returns with a complaint that the car wanders on the highway and the steering feels vague. The alignment sheet shows all angles within spec. The NEXT most likely cause is:",
+    "choices": [
+      "The new strut mounts were installed without the bearing plate, preventing the steering knuckle from pivoting freely",
+      "The alignment was performed without the fuel tank full, so the vehicle's ride height was incorrect",
+      "The new struts are too stiff for highway driving",
+      "The front tires have too much positive toe, which creates understeer at high speed"
+    ],
+    "correct_index": 0,
+    "explanation": "Strut top bearing plates allow the strut cartridge to rotate when the steering wheel is turned; if installed backward or omitted, the strut binds when steering input is given, producing a vague, off-center steering feel and a tendency to wander because the caster and steering return-to-center are compromised. Alignment with a low fuel tank affects ride height slightly but is not a cause of vague steering. Strut stiffness affects ride quality, not steering precision. Positive toe causes tire scrub and a tracking pull but not the classic vague-center wander described.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::strut-bearing-plate"
+  },
+  {
+    "external_key": "AS-B53-039",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A technician confirms an exhaust leak by hearing a rhythmic ticking that speeds up with RPM. To locate the exact leak point without visual access, the BEST low-cost diagnostic method is:",
+    "choices": [
+      "Apply carburetor cleaner spray around exhaust flanges while the engine runs and watch for RPM changes",
+      "Pressurize the exhaust from the tailpipe with compressed air and listen for hissing",
+      "With the engine at idle and cold, run a hand or a smoke source near suspected flanges and manifold joints; an exhaust leak will deflect the smoke or push air outward with each pulse",
+      "Use an infrared thermometer to find the area of highest exhaust temperature, then mark it as the leak"
+    ],
+    "correct_index": 2,
+    "explanation": "Exhaust gases pulse outward at each cylinder firing; holding a smoke source or even a hand near suspected joints reveals the leak as a puff of gases that deflects the smoke or is felt as pressure on the hand. This is safe, quick, and requires no special equipment. Carburetor cleaner near a hot exhaust manifold creates a significant fire hazard. Pressurizing the exhaust from the tailpipe with a running engine is not feasible; with the engine off you can do a pressurized smoke test using an EVAP-style machine, which is more accurate but requires equipment. An infrared thermometer shows temperature gradients but cannot pinpoint a small leak precisely.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::exhaust-leak-diagnosis"
+  },
+  {
+    "external_key": "AS-B53-040",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A technician performing a suspension knock diagnosis on a front suspension finds the noise occurs only when the wheel is pushed and pulled fore-and-aft, but not when pushed up and down. Which component is MOST likely worn?",
+    "choices": [
+      "The strut bearing plate, worn from steering inputs",
+      "A worn lower ball joint, which allows vertical play",
+      "A worn or loose front lower control arm bushing, which allows fore-aft movement of the control arm",
+      "A worn front wheel bearing, which allows lateral play"
+    ],
+    "correct_index": 2,
+    "explanation": "Control arm bushings allow controlled movement of the arm in its designed arc. When the forward or rearward bushing wears, the arm can move fore and aft under braking and acceleration loads, producing a knock. Pushing the wheel fore-and-aft specifically loads these bushings. Pushing the wheel up and down loads the ball joint and spring; no knock there rules out significant ball joint wear. A worn strut bearing produces noise during steering rotation. Wheel bearing play is typically felt as lateral (side-to-side) looseness and a bearing rumble at speed.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::control-arm-bushing-knock"
+  },
+  {
+    "external_key": "AS-B53-041",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What is the purpose of an eye-wash station in an automotive or machine shop?",
+    "choices": [
+      "To rinse cutting fluid off finished metal parts before measurement",
+      "To provide an immediate source of flowing water to flush chemical or particulate contaminants from the eyes",
+      "To supply distilled water for topping off battery cells",
+      "To cool overheated grinding wheels before they are stored"
+    ],
+    "correct_index": 1,
+    "explanation": "Eye-wash stations deliver a continuous low-pressure stream of water to both eyes simultaneously so a worker can flush out chemicals, metal chips, or other contaminants immediately after exposure. OSHA 29 CFR 1910.151 requires eye-wash facilities within 10 seconds of travel from any area where corrosive or splash hazards exist. The station is not for part cleaning, battery maintenance, or equipment cooling.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::eye-wash-station"
+  },
+  {
+    "external_key": "AS-B53-042",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What information is contained in a Safety Data Sheet (SDS) for a shop chemical?",
+    "choices": [
+      "Only the chemical's mixing ratios and storage container color codes",
+      "The price per unit and supplier contact information for reordering",
+      "Hazard identification, first-aid measures, fire-fighting data, exposure limits, PPE requirements, spill handling, and disposal procedures",
+      "The chemical's patent number and manufacturing process"
+    ],
+    "correct_index": 2,
+    "explanation": "An SDS (formerly MSDS) is a standardized document required by OSHA's Hazard Communication Standard (29 CFR 1910.1200) that covers 16 sections including: chemical identity, hazard classification, first-aid, fire-fighting, accidental release measures, handling and storage, exposure limits and PPE, physical and chemical properties, and disposal. It is the primary reference for safely working with, storing, and disposing of a chemical. Supplier pricing and patent data are commercial, not safety information.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::sds-content"
+  },
+  {
+    "external_key": "AS-B53-043",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What does the Noise Reduction Rating (NRR) on hearing protection indicate?",
+    "choices": [
+      "The maximum sound frequency the hearing protection blocks",
+      "The number of hours the protection can be worn before it must be replaced",
+      "A laboratory-measured value indicating how many decibels of noise the protection reduces under ideal conditions",
+      "The protection's OSHA classification number for high-noise environments"
+    ],
+    "correct_index": 2,
+    "explanation": "The NRR is a single-number dB rating derived from standardized laboratory tests (ANSI S3.19) that estimates how many decibels of noise reduction the hearing protector provides under ideal fit conditions. In real-world use, OSHA recommends derating the NRR (dividing by 2) to estimate actual field attenuation. It does not describe frequency range, usage duration limits, or an OSHA classification number.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::hearing-protection-nrr"
+  },
+  {
+    "external_key": "AS-B53-044",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What is the correct ergonomic technique for lifting a heavy object from the floor?",
+    "choices": [
+      "Bend at the waist with legs straight to keep the back muscles engaged",
+      "Squat close to the load, keep the back straight, grip the load firmly, and lift by straightening the legs while keeping the load close to the body",
+      "Twist the torso and swing the object up in one smooth motion to use momentum",
+      "Lean back and pull the object toward yourself using body weight"
+    ],
+    "correct_index": 1,
+    "explanation": "Safe lifting mechanics use the large leg muscles rather than the spine's erector muscles: squat to the load, keep the spine neutral (straight), get a firm grip, and stand by extending the knees and hips with the load held close to the center of gravity. Bending at the waist places enormous compressive and shear forces on lumbar discs. Twisting while lifting multiplies spinal stress and is a leading cause of back injury. Pulling with body weight backward loads the low back in an unsafe posture.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::ergonomic-lifting"
+  },
+  {
+    "external_key": "AS-B53-045",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A shop plans to send two workers into an underground utility vault to inspect stored chemical drums. Before they enter, what confined-space safety steps are required by OSHA?",
+    "choices": [
+      "No special steps; the vault is large enough to stand in and therefore is not a confined space",
+      "Workers must test the atmosphere for oxygen level, flammable gases, and toxic vapors; a trained attendant must remain outside; the space must be reclassified or a permit issued if hazards are found",
+      "Workers should prop the lid open for ventilation and proceed immediately since chemicals are stored, not used, in the space",
+      "A fire extinguisher placed at the entrance is the only additional requirement for drum inspection"
+    ],
+    "correct_index": 1,
+    "explanation": "OSHA 29 CFR 1910.146 defines a permit-required confined space as any space large enough to bodily enter, with limited means of entry or exit, and that is not designed for continuous occupancy. An underground vault containing chemical drums meets these criteria. Entry requires atmospheric testing (oxygen: 19.5-23.5%; LEL below 10%; toxic contaminants below PEL), a trained non-entering attendant, a rescue plan, and a written permit if hazardous conditions are present. Propping the lid does not guarantee adequate air exchange. A fire extinguisher does not address oxygen deficiency or toxic vapor.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::confined-space-entry"
+  },
+  {
+    "external_key": "AS-B53-046",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A hot-work permit is required before welding or grinding near flammable materials. Which action is NOT part of a standard hot-work permit checklist?",
+    "choices": [
+      "Moving or covering all combustibles within 35 feet of the work area",
+      "Confirming a fire watch will remain in place for at least 30 minutes after work stops",
+      "Verifying the welder's current lens shade setting is correct for the welding process",
+      "Posting the permit at the work site for the duration of the job"
+    ],
+    "correct_index": 2,
+    "explanation": "A standard hot-work permit addresses fire prevention: clearing or shielding combustibles (NFPA 51B specifies 35 feet), assigning a fire watch that continues 30-60 minutes after work ends, posting the permit at the work location, confirming extinguisher availability, and checking for hidden combustibles on the other side of walls or decks. Lens shade selection is a welding PPE requirement and a matter of safety training, but it is not a fire-prevention item checked on the hot-work permit itself.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::hot-work-permit"
+  },
+  {
+    "external_key": "AS-B53-047",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Before connecting an air hose to a pneumatic impact wrench in the shop, a technician should perform a whip check by:",
+    "choices": [
+      "Briefly pressurizing the hose while holding the end free to see how far it whips",
+      "Inspecting the hose coupling for cracks and attaching a safety cable (whip check cable) between the hose and the tool fitting so that if the coupling fails the hose cannot flail violently",
+      "Wrapping duct tape around the hose-to-tool coupling to prevent the fitting from separating",
+      "Reducing air pressure to 60 psi to limit whip energy if the hose disconnects"
+    ],
+    "correct_index": 1,
+    "explanation": "A whip check is a short safety cable clipped across the hose-to-tool or hose-to-hose coupling. If the fitting fails under pressure, the cable restrains the hose so it cannot whip and strike workers. OSHA and ASME standards recommend or require whip checks on air lines above a certain pressure. Pressurizing a free hose end to test whip is extremely dangerous and is the hazard being prevented, not a test method. Duct tape does not meet pressure-rated coupling requirements. Reducing pressure changes operating performance; it does not make an unrestrained hose safe if it disconnects.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::pneumatic-whip-check"
+  },
+  {
+    "external_key": "AS-B53-048",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A shop installs a new 240-volt compressor circuit in a location near a wash bay with occasional floor water. Which electrical protection device is required by the NEC for that outlet?",
+    "choices": [
+      "A standard 240-volt circuit breaker rated for the compressor load",
+      "A GFCI (Ground Fault Circuit Interrupter) breaker or receptacle to protect against ground faults in wet areas",
+      "A surge protector power strip rated for the compressor's starting current",
+      "A fused disconnect switch mounted within six inches of the floor"
+    ],
+    "correct_index": 1,
+    "explanation": "The National Electrical Code (NEC Article 210.8) requires GFCI protection for 240-volt receptacles in areas where water is present, such as wash bays, because a ground fault in a wet environment can cause electrocution before a standard breaker trips. A GFCI detects a current imbalance as small as 5 mA and opens the circuit within milliseconds. A standard breaker protects the wire from overload but does not protect against small ground faults. Surge protectors address voltage spikes, not ground faults. Disconnect switch height is not the governing NEC requirement for wet-area protection.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::gfci-wet-area"
+  },
+  {
+    "external_key": "AS-B53-049",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A shop worker complains of headache, dizziness, and nausea after running a gasoline engine on a closed dynamometer for an extended test session. The shop has overhead doors that were partially open. What is the MOST likely hazard and the correct immediate response?",
+    "choices": [
+      "The worker is experiencing solvent overexposure from the nearby paint booth; move them outside and call the paint booth manufacturer",
+      "The symptoms indicate carbon monoxide (CO) poisoning from exhaust fumes that accumulated despite partial door opening; move the person immediately to fresh air, do not re-enter until CO levels are confirmed safe, and seek medical evaluation",
+      "The worker is dehydrated from working near a hot engine; provide water and have them rest in the break room",
+      "Gasoline vapor is the cause; ventilate the shop with fans and have the worker rest for 15 minutes before resuming"
+    ],
+    "correct_index": 1,
+    "explanation": "Headache, dizziness, and nausea are the classic early symptoms of carbon monoxide poisoning. CO is produced by incomplete combustion in any gasoline engine and is colorless, odorless, and immediately dangerous to life and health (IDLH: 1,200 ppm). Partial ventilation may not be adequate during a sustained test. The correct response is immediate removal to fresh air, prohibiting re-entry until a CO monitor confirms safe levels, and medical evaluation because CO exposure can cause delayed cardiac and neurological effects. Dehydration and solvent exposure cause different symptom profiles and do not match the dyno-room scenario.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::co-poisoning-dyno"
+  },
+  {
+    "external_key": "AS-B53-050",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A technician is using a 4.5-inch angle grinder with a cutting wheel to trim a bracket. Which combination of PPE and work practices is required?",
+    "choices": [
+      "Safety glasses alone are sufficient because the cut is small and brief",
+      "A full face shield over safety glasses, hearing protection rated for the grinder noise, leather or cut-resistant gloves, and no loose clothing; the work piece must be secured and the wheel guard in place",
+      "Welding goggles replace the face shield since sparks are involved",
+      "A dust respirator and earmuffs are required but eye protection is optional for non-sparking operations"
+    ],
+    "correct_index": 1,
+    "explanation": "An angle grinder with a cutting wheel can eject fragments at over 200 mph if the wheel disintegrates; OSHA and ANSI require a face shield (ANSI Z87.1) over safety glasses (not instead of), because the shield protects the face while glasses provide an additional layer of eye protection. Grinders exceed 90 dB requiring hearing protection. Gloves protect against abrasion and hot metal. The wheel guard must remain in place because it redirects fragments away from the operator. Welding goggles are not rated for high-velocity fragments. Dust respirators protect against particulates but do not address fragment or noise hazards. Cutting operations always produce sparks, making eye protection mandatory.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::angle-grinder-ppe"
+  },
+  {
+    "external_key": "AS-B53-051",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A technician reviews the SDS for a brake cleaner product before use in a poorly ventilated area. The SDS lists an 8-hour TWA permissible exposure limit (PEL) of 350 ppm for the primary solvent. The technician plans to work with it for only 20 minutes. Why might this PEL still be relevant even for a short task?",
+    "choices": [
+      "The PEL applies only to the first 8 hours; exposures shorter than 8 hours are always safe regardless of concentration",
+      "The 8-hour TWA PEL represents an average; a very high concentration over 20 minutes can exceed the same total dose and a separate short-term exposure limit (STEL) or ceiling value may apply for brief peaks",
+      "The PEL is not relevant unless the technician has a known sensitivity to solvents",
+      "PELs are set for outdoor environments and do not apply to enclosed shop spaces"
+    ],
+    "correct_index": 1,
+    "explanation": "An 8-hour TWA PEL represents the average concentration over a full shift; it does not mean any concentration is safe for 20 minutes. A short task with a high concentration can exceed the same total exposure dose and may also exceed the STEL (typically a 15-minute ceiling) or an absolute ceiling value listed separately on the SDS. Poorly ventilated spaces can produce concentrations far above the PEL within minutes of starting spray application. The PEL applies to any occupational setting including enclosed shops, and prior sensitivity is not required for chemical toxicity to occur.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::pel-stel-exposure"
+  },
+  {
+    "external_key": "AS-B53-052",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "A scan tool shows a cylinder 3 misfire count increasing rapidly at idle. A cylinder contribution test shows cylinder 3 produces no RPM drop when disabled. A fuel injector swap between cylinder 3 and cylinder 1 does not move the misfire to cylinder 1. A compression test shows 165 psi on cylinder 3. What is the MOST likely remaining cause?",
+    "choices": [
+      "A leaking injector on cylinder 3 flooding the cylinder with fuel",
+      "A faulty ignition coil on cylinder 3 not firing the spark plug",
+      "A vacuum leak on the intake runner to cylinder 3 leaning out that cylinder",
+      "A broken valve spring on cylinder 3 preventing the exhaust valve from closing"
+    ],
+    "correct_index": 1,
+    "explanation": "Systematically eliminating causes: good compression rules out a mechanical issue (rings, valves). The injector swap not moving the misfire rules out the injector. That leaves the ignition coil (COP systems are common on modern engines) as the likely culprit. A vacuum leak would cause a lean misfire but would not explain 165 psi compression being perfectly normal while misfiring; vacuum leaks also tend to affect idle across multiple cylinders. A broken valve spring would reduce compression and show up in the compression test.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::misfire-cop-diagnosis"
+  },
+  {
+    "external_key": "AS-B53-053",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the primary function of the wheel speed sensors in an ABS-equipped vehicle?",
+    "choices": [
+      "They measure tire tread depth and send a warning when tires need replacement",
+      "They monitor individual wheel rotational speed and send that data to the ABS control module to detect impending wheel lockup",
+      "They control the brake fluid pressure proportioning valve for front-to-rear balance",
+      "They measure lateral g-force to activate the traction control system"
+    ],
+    "correct_index": 1,
+    "explanation": "Wheel speed sensors (typically Hall-effect or variable reluctance type) read the rotational speed of each wheel by detecting teeth on a reluctor ring. The ABS module compares the four wheel speeds; if one wheel decelerates much faster than the others it is about to lock up, triggering ABS intervention. They do not measure tread depth, directly control proportioning, or measure lateral acceleration (that is the job of a lateral accelerometer used by stability control systems).",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::wheel-speed-sensor"
+  },
+  {
+    "external_key": "AS-B53-054",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "Which type of refrigerant is commonly used in automotive A/C systems built after approximately 2017, replacing R-134a due to lower global warming potential?",
+    "choices": [
+      "R-12 (Freon), which was phased out in 1994",
+      "R-22, used in residential HVAC systems",
+      "R-1234yf, which has a global warming potential (GWP) of less than 1 compared to R-134a's GWP of 1,430",
+      "R-410A, the refrigerant used in modern residential heat pumps"
+    ],
+    "correct_index": 2,
+    "explanation": "R-1234yf was adopted for automotive A/C systems in response to European and US regulations targeting high-GWP refrigerants; its GWP is less than 1, compared to R-134a's GWP of 1,430. R-12 (chlorofluorocarbon) was banned under the Montreal Protocol. R-22 is a hydrochlorofluorocarbon used in older residential systems and is also being phased out. R-410A is a residential HVAC refrigerant not used in automotive applications.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::r1234yf-refrigerant"
+  },
+  {
+    "external_key": "AS-B53-055",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A technician needs to check whether a 5/16-18 bolt and a metric M8 x 1.25 bolt are interchangeable for a repair. The best way to confirm they are NOT the same is to:",
+    "choices": [
+      "Weigh both bolts; metric bolts are always heavier than SAE bolts of similar size",
+      "Use a thread pitch gauge to confirm thread pitch and a caliper to compare shank diameter; 5/16-18 is 0.3125 inch diameter with 18 TPI, while M8 x 1.25 is 8 mm (0.315 inch) diameter with 1.25 mm pitch, making them very close in diameter but with incompatible thread pitches",
+      "Try threading each bolt into the other's nut by hand; if they start to thread, they are compatible",
+      "Compare bolt head markings; SAE bolts have lines while metric bolts have a dot pattern"
+    ],
+    "correct_index": 1,
+    "explanation": "5/16-18 (0.3125 in, 18 TPI) and M8 x 1.25 (8 mm = 0.3150 in, 1.25 mm pitch = approximately 20.3 TPI) are extremely close in shank diameter and can be confused visually or even start threading together for a few turns before galling or cross-threading. The definitive test is a thread pitch gauge confirming the TPI or pitch and a caliper confirming the exact diameter. Bolt weight is not a reliable differentiator. Hand-threading them together risks damaging threads. Head markings indicate grade (tensile strength), not the thread system.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::sae-vs-metric-thread-compare"
+  },
+  {
+    "external_key": "AS-B53-056",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A shop worker is about to pour waste solvent into a steel drum for disposal. The drum is sitting on a rubber mat and is not bonded to any metal surface. A plastic funnel is used. Why is this setup a static discharge hazard, and what is the correct precaution?",
+    "choices": [
+      "The rubber mat and plastic funnel are conductive and will create a short circuit if the drum is not grounded",
+      "Pouring a non-conductive solvent through a plastic funnel into an ungrounded metal drum builds up static charge that can spark and ignite solvent vapors; bond the drum to a grounded metal surface with a bonding cable before pouring",
+      "Waste solvents contain dissolved salts that make them conductive and prone to spontaneous combustion without grounding",
+      "The only hazard is splash; gloves and a face shield are all that is needed"
+    ],
+    "correct_index": 1,
+    "explanation": "When a non-conductive liquid is poured through a plastic funnel into a metal container that is insulated from ground (by the rubber mat), static charge generated by the liquid flow accumulates on the drum with no discharge path. A spark from accumulated static can ignite solvent vapors at the drum opening. NFPA 77 and safe solvent-handling practices require bonding (a conductive cable connecting the drum to a grounded point) to equalize potential before pouring. A plastic funnel is non-conductive and worsens charge isolation. Solvents do not spontaneously combust from dissolved salts. Splash PPE is necessary but does not address the static ignition hazard.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::static-bonding-solvent"
+  }
+]

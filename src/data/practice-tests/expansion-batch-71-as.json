@@ -1,0 +1,1107 @@
+[
+  {
+    "external_key": "AS-B71-001",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "When comparing a limited-slip differential to an open differential, what is the primary advantage of the limited-slip design?",
+    "choices": [
+      "It provides better traction by limiting wheel spin when one wheel loses grip",
+      "It eliminates the need for a transmission fluid",
+      "It reduces fuel consumption by 30 percent",
+      "It prevents the vehicle from ever getting stuck"
+    ],
+    "correct_index": 0,
+    "explanation": "A limited-slip differential allows power to be distributed more evenly to both wheels, reducing wheel spin and improving traction in low-grip conditions. An open differential sends all power to the wheel with the least resistance, which causes excessive spinning on slippery surfaces. The limited-slip design does not eliminate fluid, significantly reduce fuel use, or guarantee the vehicle won't get stuck.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::limited-slip-vs-open-differential"
+  },
+  {
+    "external_key": "AS-B71-002",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What does the DPF (diesel particulate filter) do in a diesel engine exhaust system?",
+    "choices": [
+      "It amplifies the engine noise for safety",
+      "It cools the exhaust gas before it enters the muffler",
+      "It separates water from the diesel fuel",
+      "It traps and burns soot particles to reduce emissions"
+    ],
+    "correct_index": 3,
+    "explanation": "The DPF captures diesel particulates and soot, then burns them off at high temperatures in a regeneration process. This reduces harmful particulate emissions to meet environmental standards. The DPF does not cool exhaust, filter fuel, or affect engine noise.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::dpf-scr-diesel-emissions"
+  },
+  {
+    "external_key": "AS-B71-003",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "In a four-wheel-drive system, what is the primary function of a transfer case?",
+    "choices": [
+      "It distributes engine power to both the front and rear axles when 4WD is selected",
+      "It prevents the transmission from overheating during off-road use",
+      "It changes the viscosity of the differential oil",
+      "It engages the parking brake automatically"
+    ],
+    "correct_index": 0,
+    "explanation": "The transfer case is a gearbox that splits engine power between the front and rear differentials when 4WD mode is engaged. In 2WD mode, power goes only to the rear axle. The transfer case does not control transmission cooling, alter oil properties, or manage the parking brake.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::4wd-awl-transfer-case"
+  },
+  {
+    "external_key": "AS-B71-004",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "How does axle ratio affect vehicle acceleration and fuel economy?",
+    "choices": [
+      "A higher ratio always improves fuel economy regardless of driving conditions",
+      "A lower ratio (higher numerator) provides faster acceleration but reduced fuel economy",
+      "Axle ratio only affects vehicles with manual transmissions",
+      "Changing the axle ratio has no effect on performance or efficiency"
+    ],
+    "correct_index": 1,
+    "explanation": "A lower axle ratio (such as 3.73:1 versus 2.73:1) provides mechanical advantage, enabling quicker acceleration at the cost of higher engine RPM and reduced fuel economy. A higher ratio requires the engine to work harder to achieve the same speed. Axle ratio affects all transmission types and significantly impacts both acceleration and efficiency.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::axle-ratio-effects"
+  },
+  {
+    "external_key": "AS-B71-005",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What information does a tire's load index provide?",
+    "choices": [
+      "The number of sidewall layers in the tire",
+      "How long the tire will last in months",
+      "The maximum weight the tire can safely support",
+      "The recommended tire pressure in PSI"
+    ],
+    "correct_index": 2,
+    "explanation": "The load index is a number (typically 70-110) that corresponds to the maximum safe weight each tire can carry. A load index of 100 equals 1,600 pounds per tire. The load index does not indicate tire lifespan, ply count, or pressure recommendations.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::tire-load-index-speed-rating"
+  },
+  {
+    "external_key": "AS-B71-006",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "In a direct injection fuel system, where are fuel injectors located compared to a port injection system?",
+    "choices": [
+      "In the fuel tank to reduce pressure requirements",
+      "Directly in the engine cylinders rather than in the intake manifold",
+      "In the air filter housing to improve atomization",
+      "Upstream of the catalytic converter"
+    ],
+    "correct_index": 1,
+    "explanation": "Direct injection sprays fuel directly into the combustion chamber, while port injection sprays it into the intake manifold. This allows direct injection to achieve higher pressures and finer atomization, improving combustion efficiency and emissions. The other locations would not achieve the performance benefits of direct injection.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::direct-vs-port-injection"
+  },
+  {
+    "external_key": "AS-B71-007",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What is the purpose of an immobilizer transponder system in a modern vehicle?",
+    "choices": [
+      "To reduce engine idle speed during cold starts",
+      "To automatically lock the doors when the vehicle exceeds 55 mph",
+      "To prevent vehicle theft by disabling the starter unless the correct key is present",
+      "To communicate with traffic lights for automatic green cycles"
+    ],
+    "correct_index": 2,
+    "explanation": "The immobilizer is a security feature that prevents the engine from starting unless the vehicle's electronic control unit recognizes the correct key transponder code. If the wrong key is used, the fuel pump and ignition systems are disabled. Immobilizers do not control door locks, idle speed, or traffic light coordination.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::immobilizer-transponder"
+  },
+  {
+    "external_key": "AS-B71-008",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "How does a variable displacement engine differ from a fixed displacement engine?",
+    "choices": [
+      "It automatically shifts to a higher gear to save fuel",
+      "It uses less oil but requires more frequent oil changes",
+      "It can deactivate some cylinders under light load to improve fuel economy",
+      "It eliminates the need for a transmission"
+    ],
+    "correct_index": 2,
+    "explanation": "Variable displacement engines selectively deactivate cylinders when full power is not needed, reducing fuel consumption during highway driving or light acceleration. This technology maintains performance while improving efficiency. The system does not affect oil consumption, transmission shifting, or eliminate the transmission.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::variable-displacement-engine"
+  },
+  {
+    "external_key": "AS-B71-009",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What advantage does a dual-clutch transmission provide over a traditional automatic transmission?",
+    "choices": [
+      "It eliminates the need for engine oil changes",
+      "It allows seamless gear changes without power interruption",
+      "It automatically adjusts tire pressure based on load",
+      "It prevents the vehicle from ever stalling"
+    ],
+    "correct_index": 1,
+    "explanation": "A dual-clutch transmission uses two separate clutches to pre-select the next gear while still in the current gear, enabling nearly instantaneous shifts without losing power delivery. This results in improved acceleration and driving feel compared to traditional automatics. Dual-clutch systems do not affect maintenance, tire pressure, or prevent stalling.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::dual-clutch-transmission"
+  },
+  {
+    "external_key": "AS-B71-010",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "In an electric power steering system, what replaces the traditional hydraulic pump?",
+    "choices": [
+      "A secondary transmission fluid pump",
+      "A pneumatic compressor powered by exhaust gas",
+      "An electric motor that provides assist force when needed",
+      "A regenerative spring mechanism"
+    ],
+    "correct_index": 2,
+    "explanation": "Electric power steering uses an electric motor mounted on or integrated into the steering rack to provide assistance, eliminating the need for a hydraulic pump and fluid circulation. This improves fuel economy and allows for advanced steering features. The other options do not provide steering assist in electric systems.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::electric-power-steering-rack"
+  },
+  {
+    "external_key": "AS-B71-011",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What is the primary difference between AWD and 4WD systems?",
+    "choices": [
+      "AWD is only for luxury vehicles, while 4WD is for trucks",
+      "AWD continuously powers all four wheels; 4WD is selectively engaged and typically includes a transfer case",
+      "4WD is more fuel efficient than AWD because it uses less power",
+      "AWD cannot be disengaged, while 4WD can only be used in snow"
+    ],
+    "correct_index": 1,
+    "explanation": "All-wheel-drive continuously distributes power to all four wheels automatically, while four-wheel-drive is a system that can be engaged or disengaged via a transfer case and is typically used for off-road or severe conditions. AWD systems consume more fuel due to constant engagement. Both systems can be used in various driving conditions.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::4wd-vs-awd-transfer-case"
+  },
+  {
+    "external_key": "AS-B71-012",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "How does an engine's compression ratio affect its susceptibility to detonation?",
+    "choices": [
+      "Higher compression ratios increase detonation risk and require higher octane fuel",
+      "Compression ratio has no effect on detonation or fuel octane requirements",
+      "Lower compression ratios increase detonation risk",
+      "Compression ratio only affects diesel engines"
+    ],
+    "correct_index": 0,
+    "explanation": "A higher compression ratio compresses the air-fuel mixture more, increasing combustion temperature and pressure, which makes detonation more likely. High-octane fuel resists premature combustion and is necessary for high-compression engines. Lower compression ratios reduce detonation risk. Compression ratio applies to both gasoline and diesel engines.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::compression-ratio-detonation-risk"
+  },
+  {
+    "external_key": "AS-B71-013",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What does the SCR system in diesel engines do?",
+    "choices": [
+      "It cools the engine coolant by 50 degrees",
+      "It removes diesel fuel from the tank before it enters the engine",
+      "It increases fuel injection pressure for better atomization",
+      "It converts nitrogen oxides into harmless nitrogen and water using a reducing agent"
+    ],
+    "correct_index": 3,
+    "explanation": "Selective Catalytic Reduction injects a reducing agent (typically urea) into the exhaust stream to convert harmful NOx emissions into nitrogen gas and water. This technology helps diesel engines meet strict emission standards. The SCR system does not filter fuel, increase injection pressure, or cool engine coolant.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::scr-diesel-emissions-system"
+  },
+  {
+    "external_key": "AS-B71-014",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What is the function of a timing belt in an overhead cam engine?",
+    "choices": [
+      "It connects the fuel pump to the injection manifold",
+      "It synchronizes the rotation of the camshaft with the crankshaft to control valve timing",
+      "It regulates transmission fluid pressure",
+      "It prevents the alternator from overcharging the battery"
+    ],
+    "correct_index": 1,
+    "explanation": "The timing belt is a toothed belt that maintains precise synchronization between the crankshaft and camshaft rotations, ensuring valves open and close at the correct times relative to piston position. Proper timing is critical for engine performance and efficiency. The timing belt does not involve the fuel system, transmission, or charging system.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::timing-belt-cam-sync"
+  },
+  {
+    "external_key": "AS-B71-015",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "When should the engine coolant be changed according to most manufacturers?",
+    "choices": [
+      "Once per year regardless of mileage",
+      "Every 1,000 miles like engine oil",
+      "Every 30,000 to 50,000 miles or as specified in the owner's manual",
+      "Only when the coolant turns brown"
+    ],
+    "correct_index": 2,
+    "explanation": "Most manufacturers recommend coolant replacement intervals ranging from 30,000 to 50,000 miles, though some extended-life coolants can last longer. The owner's manual provides the specific interval for each vehicle. Coolant does not need changing as frequently as oil, and waiting for discoloration may allow corrosion damage to occur.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::coolant-change-interval"
+  },
+  {
+    "external_key": "AS-B71-016",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "How does a variable valve timing system improve engine performance?",
+    "choices": [
+      "By replacing mechanical valves with electronic solenoids",
+      "By adjusting camshaft phase to optimize valve overlap for current driving conditions",
+      "By permanently delaying valve opening during acceleration",
+      "By eliminating the need for spark plugs"
+    ],
+    "correct_index": 1,
+    "explanation": "Variable valve timing adjusts when the intake and exhaust valves open and close relative to piston position, optimizing valve overlap for current engine speed and load conditions. This improves efficiency at low RPM and power at high RPM. VVT systems retain mechanical valve actuation and spark plugs.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::variable-valve-timing-vvt"
+  },
+  {
+    "external_key": "AS-B71-017",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What is the purpose of the torque converter in an automatic transmission?",
+    "choices": [
+      "It reduces transmission fluid temperature by 30 degrees",
+      "It measures engine RPM and controls fuel injection",
+      "It stores energy for electric power steering assist",
+      "It transfers power from the engine to the transmission and allows smooth engagement from a stop"
+    ],
+    "correct_index": 3,
+    "explanation": "The torque converter is a fluid coupling that transmits engine torque to the transmission while allowing engine speed to differ from transmission input speed. This enables smooth acceleration from a standstill without a clutch. The torque converter does not control fuel injection, assist steering, or significantly affect fluid temperature.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::torque-converter-auto-transmission"
+  },
+  {
+    "external_key": "AS-B71-018",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "What is the primary difference between internal and external snap-ring pliers?",
+    "choices": [
+      "Internal pliers have inward-facing tips for removing ring grooves; external pliers have outward-facing tips",
+      "External pliers can only be used on aluminum rings",
+      "Internal pliers are magnetic while external pliers are not",
+      "The tips point in opposite directions but are functionally identical"
+    ],
+    "correct_index": 0,
+    "explanation": "Internal snap-ring pliers have tips that curve inward to release snap rings seated in grooves, while external snap-ring pliers have tips that curve outward to spread and remove rings sitting on shafts. Using the correct type prevents deformation or loss of the ring. The two types are not interchangeable and have distinct purposes.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::snap-ring-pliers-internal-external"
+  },
+  {
+    "external_key": "AS-B71-019",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "What does a torque-angle gauge measure in addition to torque?",
+    "choices": [
+      "The rotational angle of a fastener beyond its initial torque value",
+      "The hardness rating of a bolt",
+      "The depth of a hole before driving a screw",
+      "The electrical conductivity of a nut"
+    ],
+    "correct_index": 0,
+    "explanation": "A torque-angle gauge measures both the torque applied to a fastener and the subsequent angular rotation, allowing precise tightening of yield-type bolts that rely on both torque and angle specifications. This is critical for fasteners where stretch is controlled rather than just torque. The other measurements are not functions of a torque-angle gauge.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::torque-angle-gauge"
+  },
+  {
+    "external_key": "AS-B71-020",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "How does a thread chaser differ from a standard tap?",
+    "choices": [
+      "A thread chaser requires power tools while a tap does not",
+      "A thread chaser is only for metric threads",
+      "A thread chaser cuts threads twice as fast as a tap",
+      "A thread chaser cleans and restores partially damaged threads without removing material; a tap cuts new threads"
+    ],
+    "correct_index": 3,
+    "explanation": "Thread chasers are designed to repair partially stripped or dirty threads by rolling through the existing thread profile without cutting away material, while taps cut new threads by removing material. Thread chasers are valuable for salvaging slightly damaged threads and are used manually. Both can work with metric or standard threads.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::thread-chaser-vs-tap"
+  },
+  {
+    "external_key": "AS-B71-021",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "What types of mechanical puller does a gear puller set typically include?",
+    "choices": [
+      "Plastic-handle only pullers to prevent marring soft metals",
+      "Only electric-powered pullers for removing large components",
+      "Two-jaw and three-jaw pullers for removing gears, bearings, and pulleys",
+      "Permanent magnet pullers that work without physical contact"
+    ],
+    "correct_index": 2,
+    "explanation": "Gear puller sets typically include two-jaw and three-jaw mechanical pullers that use a threaded center bolt to gradually extract gears, bearings, and pulleys without damage. The jaws wrap around or grip the component while the center screw applies force. These are manual tools available in various sizes. The other options do not represent typical gear puller configurations.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::gear-puller-types"
+  },
+  {
+    "external_key": "AS-B71-022",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "What is a bushing driver used for in automotive assembly?",
+    "choices": [
+      "Removing paint from engine blocks",
+      "Measuring the inside diameter of drilled holes",
+      "Cutting threads in cast iron blocks",
+      "Installing rubber bushings into suspension components without damaging them"
+    ],
+    "correct_index": 3,
+    "explanation": "A bushing driver is a specialized tool that allows technicians to press rubber or polyurethane bushings into suspension arms, control arms, and other components with even pressure and without damage. The driver's precisely shaped end matches the bushing and distributes force evenly. Bushing drivers do not measure, cut threads, or remove paint.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::bushing-driver"
+  },
+  {
+    "external_key": "AS-B71-023",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "What is a pickle fork tool primarily used for in automotive suspension work?",
+    "choices": [
+      "Cleaning the fuel injector ports",
+      "Removing the transmission pan from an automatic transmission",
+      "Tightening the lug nuts on wheel rims",
+      "Separating ball joints and tie rod ends from steering knuckles"
+    ],
+    "correct_index": 3,
+    "explanation": "A pickle fork, or ball joint separator, is a two-pronged tool that fits between the ball joint stud and the knuckle to apply spreading force and separate the taper connection. This prevents damage to the ball joint and allows safe removal. The tool is specific to suspension work and does not apply to transmission, wheel assembly, or fuel systems.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::pickle-fork-suspension"
+  },
+  {
+    "external_key": "AS-B71-024",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "How does an ignition timing light help during engine tuning?",
+    "choices": [
+      "It tests the condition of the alternator belt",
+      "It measures the voltage of the ignition coil",
+      "It determines the exact compression ratio of the engine",
+      "It flashes in synchronization with spark plug firing to view timing marks on the crankshaft pulley"
+    ],
+    "correct_index": 3,
+    "explanation": "An ignition timing light flashes each time the number one cylinder fires, creating a stroboscopic effect that appears to freeze the movement of the crankshaft pulley timing marks. This allows the technician to visually confirm that ignition timing is correct by comparing the mark position to the timing scale. The timing light does not measure voltage, determine compression, or test belts.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::ignition-timing-light"
+  },
+  {
+    "external_key": "AS-B71-025",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "What is the function of a spark plug gap gauge?",
+    "choices": [
+      "It measures the electrode gap distance in a spark plug to ensure proper spark formation",
+      "It tests whether a spark plug is still functional",
+      "It measures the thread size of spark plug holes",
+      "It determines the ignition coil output voltage"
+    ],
+    "correct_index": 0,
+    "explanation": "A spark plug gap gauge (or wire feeler gauge) measures the spacing between the center and ground electrodes of a spark plug. Correct gap distance is critical for proper spark formation and combustion. The gauge does not test functionality, measure threads, or determine coil output.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::spark-plug-gap-gauge"
+  },
+  {
+    "external_key": "AS-B71-026",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "What does a brake spring tool accomplish in drum brake service?",
+    "choices": [
+      "It tests brake fluid pressure before bleeding",
+      "It automatically adjusts brake shoe position during installation",
+      "It measures the thickness of brake lining material",
+      "It safely removes and installs return springs and hold-down springs without damage"
+    ],
+    "correct_index": 3,
+    "explanation": "A brake spring tool has hooked ends that allow technicians to safely remove and reinstall the small, highly tensioned return and hold-down springs in drum brake assemblies without pinching fingers or damaging components. The tool prevents injury and component damage. It does not adjust shoes, measure lining, or test fluid pressure.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::brake-spring-tool"
+  },
+  {
+    "external_key": "AS-B71-027",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "What is a ring expander used for in engine rebuilding?",
+    "choices": [
+      "Measuring the inside diameter of engine cylinders",
+      "Safely expanding piston rings to install them on a piston without damage",
+      "Tightening the retaining bolts on connecting rods",
+      "Cleaning carbon deposits from ring grooves"
+    ],
+    "correct_index": 1,
+    "explanation": "A ring expander is a tool that safely spreads piston rings to the proper gap width, allowing them to be placed on the piston grooves without breaking. This is essential during engine assembly to prevent damage to the hardened rings. The tool does not measure cylinders, tighten bolts, or clean carbon.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::ring-expander"
+  },
+  {
+    "external_key": "AS-B71-028",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "What advantage does a gasket scraper provide over a flat-head screwdriver when removing dried gaskets?",
+    "choices": [
+      "A gasket scraper heats the gasket to soften it automatically",
+      "The scraper's wider blade distributes force over a larger area, reducing gouging of the sealing surface",
+      "The scraper can cut gasket material three times faster than a screwdriver",
+      "A gasket scraper prevents the need for chemical gasket removers"
+    ],
+    "correct_index": 1,
+    "explanation": "Gasket scrapers have wide, flat blades that distribute removal force across a large area, minimizing the risk of gouging, scratching, or damaging the precision machined sealing surfaces underneath. A screwdriver's pointed tip concentrates force in one spot and easily damages surfaces. The scraper does not generate heat, work faster than screwdrivers, or replace chemical removers.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::gasket-scraper-design"
+  },
+  {
+    "external_key": "AS-B71-029",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "How are internal and external snap rings used differently in automotive assemblies?",
+    "choices": [
+      "External rings are for metal components; internal rings are for plastic",
+      "Both types sit in the same groove but are installed at different angles",
+      "Internal rings seat in grooves inside bores; external rings seat in grooves on shaft shoulders",
+      "They are interchangeable and function identically regardless of orientation"
+    ],
+    "correct_index": 2,
+    "explanation": "Internal snap rings fit inside grooves in bores and retain shafts or components within housings, while external snap rings fit over shaft diameters and rest in grooves machined into the shaft shoulder. Each type is designed for its specific application. The two are not interchangeable as they work on opposite surfaces.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::snap-ring-application-bore-shaft"
+  },
+  {
+    "external_key": "AS-B71-030",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "What does a torque wrench measure?",
+    "choices": [
+      "The hardness rating of steel fasteners",
+      "The length of a bolt in millimeters",
+      "The rotational force applied to a fastener to tighten it to specification",
+      "The electrical resistance of a bolt"
+    ],
+    "correct_index": 2,
+    "explanation": "A torque wrench applies and measures rotational force (torque) in foot-pounds or Newton-meters, ensuring fasteners are tightened to the manufacturer's specification. Proper torque prevents under-tightening that causes leaks and over-tightening that strips threads. The wrench does not measure length, hardness, or electrical properties.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::torque-wrench-function"
+  },
+  {
+    "external_key": "AS-B71-031",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "What is the primary purpose of a three-jaw puller compared to a two-jaw puller?",
+    "choices": [
+      "A three-jaw puller can only remove gears from aluminum",
+      "A three-jaw puller distributes force more evenly and centers components more reliably",
+      "A three-jaw puller is twice as powerful as a two-jaw puller",
+      "Three-jaw pullers operate with electric motors while two-jaw are manual"
+    ],
+    "correct_index": 1,
+    "explanation": "Three-jaw pullers use three jaws positioned 120 degrees apart, which distributes extraction force evenly around the component and helps keep it centered during removal. Two-jaw pullers use only two jaws and may pull unevenly, causing tilt or damage. Three-jaw pullers are manual tools like two-jaw pullers and work on various materials.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::three-jaw-puller-centering"
+  },
+  {
+    "external_key": "AS-B71-032",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "When would you use a wire feeler gauge instead of a spark plug gap gauge?",
+    "choices": [
+      "Wire gauges measure both gap and thread depth simultaneously",
+      "Wire feeler gauges are stronger and last longer than spark plug gauges",
+      "To check gap on multiple plugs quickly, as wire gauges work faster than adjustable gauges",
+      "Feeler gauges are only used on diesel engines"
+    ],
+    "correct_index": 2,
+    "explanation": "Wire feeler gauges consist of individual wires of specific thicknesses and allow quick gap checking on multiple plugs by selecting the wire matching the desired gap specification. Wire sets are efficient for checking many plugs in sequence. Adjustable gauges are better for setting precise gaps. Both have appropriate uses depending on the task.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::wire-feeler-gauge-selection"
+  },
+  {
+    "external_key": "AS-B71-033",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "How is a drum brake adjusted for proper shoe-to-drum clearance?",
+    "choices": [
+      "By replacing the wheel cylinder every time shoes are installed",
+      "By adding brake fluid until the pedal becomes firm",
+      "By rotating an adjuster screw or star wheel until the drum is snug, then backing off slightly",
+      "By heating the drum with a torch until it expands"
+    ],
+    "correct_index": 2,
+    "explanation": "Drum brake adjusters are rotated until the drum fits snugly on the shoes without binding, then backed off slightly to allow free rotation and heat dissipation. Proper adjustment ensures even contact and optimal braking. Adding fluid, replacing cylinders, and heating are not adjustment methods.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::drum-brake-adjustment"
+  },
+  {
+    "external_key": "AS-B71-034",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "What is the function of a parking brake cable in a vehicle's braking system?",
+    "choices": [
+      "It prevents the brake fluid from overheating",
+      "It controls the pressure in the master cylinder",
+      "It mechanically locks the rear brake shoes or pads to prevent vehicle movement when parked",
+      "It automatically engages during panic braking"
+    ],
+    "correct_index": 2,
+    "explanation": "The parking brake cable is a mechanical link that, when pulled, locks either the rear drum brake shoes or brake calipers to prevent vehicle movement on slopes and during parking. It operates independently of hydraulic pressure. The parking brake does not control master cylinder pressure, prevent fluid overheating, or engage automatically.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::parking-brake-cable"
+  },
+  {
+    "external_key": "AS-B71-035",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "What are the signs that an intake manifold gasket is failing?",
+    "choices": [
+      "Engine vacuum leaks, rough idle, coolant in oil, and external coolant leaks near the manifold",
+      "Only a loud knocking sound from the engine block",
+      "Excessive brake fluid consumption",
+      "Inability to shift gears smoothly"
+    ],
+    "correct_index": 0,
+    "explanation": "A failing intake manifold gasket allows vacuum leaks that cause rough idle and hesitation, permits coolant to seep into the oil creating a milky sludge, and may allow visible coolant weeping around the gasket. These symptoms indicate the gasket has compromised the seal. The other symptoms are unrelated to the intake manifold gasket.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::intake-manifold-gasket-failure"
+  },
+  {
+    "external_key": "AS-B71-036",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "How is a vacuum leak detected using smoke test equipment?",
+    "choices": [
+      "A light is shined through the fuel tank to find holes",
+      "The engine is run at high RPM while watching for black smoke in the exhaust",
+      "Smoke machines measure coolant temperature changes",
+      "Smoke is introduced into the intake system; visible smoke leaks reveal breach points"
+    ],
+    "correct_index": 3,
+    "explanation": "A smoke leak detector produces controlled white or blue smoke that is fed into the intake system. Any vacuum leaks cause the smoke to exit at those locations, making them visible for repair. This is a non-destructive diagnostic method. Running at high RPM and other methods do not detect vacuum leaks.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::vacuum-leak-smoke-test"
+  },
+  {
+    "external_key": "AS-B71-037",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "What is the proper procedure for cleaning a throttle body?",
+    "choices": [
+      "Pour water into the air intake while the engine is running",
+      "Remove the throttle body and soak or spray clean with carburetor cleaner, then reinstall carefully",
+      "Replace the entire throttle body without cleaning",
+      "Apply WD-40 to the throttle plates and rotate manually"
+    ],
+    "correct_index": 1,
+    "explanation": "Proper throttle body cleaning involves removal of the body from the intake manifold, soaking or carefully spraying with carburetor cleaner to dissolve carbon deposits, and reinstallation with new gaskets. The components must be completely dry before reinstalling. Pouring water, avoiding cleaning, or applying solvents while installed can damage the fuel injection system.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::throttle-body-cleaning"
+  },
+  {
+    "external_key": "AS-B71-038",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "Why should transmission cooler lines be flushed or replaced if internal transmission damage is suspected?",
+    "choices": [
+      "Because cooler lines must be replaced every 30,000 miles",
+      "Because cooler lines contain harmful chemicals that must be disposed of",
+      "To increase fuel economy by 10 percent",
+      "To remove debris and metal particles that could block cooler passages and contaminate new transmission fluid"
+    ],
+    "correct_index": 3,
+    "explanation": "When internal transmission damage occurs, metal particles and debris circulate through the cooling lines. These particles must be flushed out before installing a rebuilt transmission to prevent the new unit from being contaminated and failing prematurely. Replacing or flushing cooler lines protects the investment in transmission repair. The other reasons do not apply.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::transmission-cooler-line-flush"
+  },
+  {
+    "external_key": "AS-B71-039",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "What is the purpose of an exhaust hanger in a vehicle's exhaust system?",
+    "choices": [
+      "To prevent water from entering the fuel tank",
+      "To increase exhaust gas velocity and improve engine performance",
+      "To heat the transmission cooler during cold starts",
+      "To support the exhaust pipes and muffler, reducing vibration and preventing contact with the vehicle body"
+    ],
+    "correct_index": 3,
+    "explanation": "Exhaust hangers are rubber-cushioned brackets that suspend the exhaust system from the vehicle frame, absorbing vibration and preventing metal-to-metal contact that causes rattles and damage. Worn hangers allow the system to sag and potentially strike the body or fuel tank. Hangers do not affect exhaust velocity, transmission cooling, or fuel tank sealing.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::exhaust-hanger-replacement"
+  },
+  {
+    "external_key": "AS-B71-040",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "What are the differences between clip-on wheel weights and adhesive-backed wheel weights?",
+    "choices": [
+      "Both types work identically and are completely interchangeable",
+      "Clip weights attach to the rim flange; adhesive weights stick to the wheel rim surface for alloy wheel compatibility",
+      "Clip weights are only for light trucks",
+      "Adhesive weights are inferior and fall off easily"
+    ],
+    "correct_index": 1,
+    "explanation": "Clip-on weights hook over the rim flange of steel wheels, while adhesive-backed weights stick to the flat rim surface, making them ideal for alloy wheels where clipping would damage the finish. Adhesive weights are designed to resist vibration and retain their position effectively. The two serve different wheel types and are not interchangeable.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::wheel-weight-types-clip-adhesive"
+  },
+  {
+    "external_key": "AS-B71-041",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "What does spark plug heat range determine?",
+    "choices": [
+      "How quickly the plug dissipates combustion heat to prevent fouling or preignition",
+      "The color of the spark that the plug produces",
+      "The maximum RPM the engine can achieve",
+      "The gap width of the plug electrodes"
+    ],
+    "correct_index": 0,
+    "explanation": "Heat range indicates how fast a spark plug dissipates combustion heat; a hotter plug stays hot to resist fouling, while a cooler plug dissipates faster to prevent preignition. The correct heat range for an engine is specified by the manufacturer. Heat range does not determine spark color, maximum RPM, or electrode gap.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::spark-plug-heat-range"
+  },
+  {
+    "external_key": "AS-B71-042",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "What does an oil filter relief valve do?",
+    "choices": [
+      "It increases oil pressure during acceleration",
+      "It allows oil to bypass the filter media when the filter is cold or clogged, protecting the engine",
+      "It prevents oil from leaking at the drain plug",
+      "It circulates oil between the transmission and engine"
+    ],
+    "correct_index": 1,
+    "explanation": "An oil filter's bypass valve opens when pressure becomes too high, allowing unfiltered oil to reach the engine rather than starving it of lubrication. This protects the engine if the filter becomes clogged or if thick cold oil restricts flow. The bypass valve does not control pressure, prevent leaks, or transfer oil between systems.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::oil-filter-relief-valve"
+  },
+  {
+    "external_key": "AS-B71-043",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "Why is it important to follow the correct torque sequence when installing a cylinder head gasket?",
+    "choices": [
+      "The sequence prevents paint from chipping on the cylinder head",
+      "Sequential tightening distributes clamping force evenly, preventing warping and ensuring a proper seal across all bolt holes",
+      "Different sequence reduces the need for liquid gasket sealant",
+      "The order of tightening determines cylinder compression ratio"
+    ],
+    "correct_index": 1,
+    "explanation": "Tightening bolts in a specific sequence from center outward ensures even pressure distribution across the gasket, preventing uneven warping that would break the seal. Improper sequencing creates high-stress areas and low-pressure zones. Sequence does not affect paint, eliminate sealant needs, or change compression ratio.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::gasket-torque-sequence-importance"
+  },
+  {
+    "external_key": "AS-B71-044",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "What is the function of a PCV breather hose in an engine?",
+    "choices": [
+      "It equalizes pressure between the fuel tank and engine",
+      "It carries transmission fluid to the engine",
+      "It cools the engine oil before it returns to the pan",
+      "It allows blow-by gases to exit the crankcase while routing them back into the intake system"
+    ],
+    "correct_index": 3,
+    "explanation": "The PCV (positive crankcase ventilation) breather hose vents blow-by gases that accumulate in the crankcase back into the intake manifold for combustion, reducing pressure buildup and preventing seal failure. This maintains a small vacuum in the crankcase. The breather hose does not carry transmission fluid, cool oil, or balance fuel tank pressure.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::pcv-breather-hose-function"
+  },
+  {
+    "external_key": "AS-B71-045",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "How should accessory belt routing be verified after installation?",
+    "choices": [
+      "Check the routing diagram on the fan shroud or engine cover, ensure the belt doesn't cross itself, and verify all pulleys are contacted",
+      "Simply wrap the belt around the largest pulleys",
+      "Mark the belt with spray paint to ensure it doesn't slip",
+      "Rotate the engine by hand to see if the belt moves smoothly"
+    ],
+    "correct_index": 0,
+    "explanation": "Most vehicles have a belt routing diagram printed on the fan shroud or engine cover that must be followed exactly. The belt should not cross itself, twist, or skip pulleys. Verification involves visual inspection against this diagram. The other methods do not ensure proper routing.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::accessory-belt-routing-verification"
+  },
+  {
+    "external_key": "AS-B71-046",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "What is the purpose of a fuel filter in an engine?",
+    "choices": [
+      "To eliminate vapor from the fuel tank",
+      "To reduce fuel pressure when the engine is accelerating",
+      "To heat fuel during cold starts",
+      "To remove water, dirt, and contaminants from fuel before it reaches the fuel injectors"
+    ],
+    "correct_index": 3,
+    "explanation": "The fuel filter traps sediment, water, and other contaminants that could damage fuel injectors and clog fuel nozzles, protecting the entire fuel injection system. A clogged filter restricts fuel flow and causes poor engine performance. The fuel filter does not control pressure, heat fuel, or remove vapor.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::fuel-filter-function"
+  },
+  {
+    "external_key": "AS-B71-047",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "What precautions should be taken when working with brake lines that contain mineral oil-based brake fluid?",
+    "choices": [
+      "Wear rubber gloves, use glass or metal containers, avoid skin contact, and keep fluid away from painted surfaces",
+      "No special precautions are needed as brake fluid is non-toxic",
+      "Use plastic bags to collect waste fluid",
+      "Brake fluid should be poured down the drain for disposal"
+    ],
+    "correct_index": 0,
+    "explanation": "Mineral oil-based brake fluid damages paint and rubber seals, so protective gloves must be worn and metal or glass containers used for collection. Spilled fluid must be cleaned immediately from painted surfaces to prevent etching. Brake fluid is toxic and must be properly disposed of, not poured down drains.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::brake-line-fluid-precautions"
+  },
+  {
+    "external_key": "AS-B71-048",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "When should wheel bearing repack maintenance be performed?",
+    "choices": [
+      "Every 30,000 to 50,000 miles or when repacking the bearing during brake service",
+      "Once per year regardless of mileage",
+      "Only when the wheel makes a squeaking noise",
+      "Never, as bearings are sealed and cannot be repacked"
+    ],
+    "correct_index": 0,
+    "explanation": "Front wheel bearings on vehicles with drum brakes are repacked with grease every 30,000 to 50,000 miles during brake maintenance. Many modern vehicles use sealed wheel bearings that cannot be serviced and must be replaced when worn. The owner's manual specifies the maintenance interval for specific vehicles.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::wheel-bearing-repack-interval"
+  },
+  {
+    "external_key": "AS-B71-049",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Why can oily rags spontaneously combust if left in a pile?",
+    "choices": [
+      "Microorganisms in the oil produce hydrogen gas that ignites",
+      "Oily rags absorb moisture from the air and create an electrical charge",
+      "Oils in the rags are radioactive and emit heat",
+      "The oxidation of oil in the rags generates heat; when trapped in a pile, heat accumulates until ignition temperature is reached"
+    ],
+    "correct_index": 3,
+    "explanation": "Certain oils undergo oxidation, a chemical process that releases heat. When oily rags are bunched together, this heat cannot dissipate and accumulates until the rags reach their ignition temperature. Spontaneous combustion typically occurs between 24 and 48 hours. Moisture, radioactivity, and microbial processes are not factors.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::oily-rag-spontaneous-combustion"
+  },
+  {
+    "external_key": "AS-B71-050",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "What is the proper response to battery acid splash on skin or clothing?",
+    "choices": [
+      "Wipe the area dry and apply butter to soothe the burn",
+      "Apply baking soda immediately to neutralize the acid",
+      "Immediately flush with copious amounts of water for at least 15 minutes, then seek medical attention",
+      "Apply vinegar to neutralize the battery acid"
+    ],
+    "correct_index": 2,
+    "explanation": "Sulfuric acid in batteries causes severe chemical burns. Immediate flushing with large quantities of water for at least 15 minutes is the correct response, followed by medical evaluation. Baking soda, butter, or vinegar should not be applied as they interfere with the flushing process and may cause additional damage.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::battery-acid-neutralization"
+  },
+  {
+    "external_key": "AS-B71-051",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "What is a hydraulic injection injury and why is it dangerous?",
+    "choices": [
+      "It occurs when high-pressure hydraulic fluid is forced through the skin; it can cause tissue death and infection even from small puncture wounds",
+      "It results when hydraulic fluid drips slowly onto the hand over several hours",
+      "It is harmless because hydraulic fluid is not toxic",
+      "It only affects workers who are allergic to petroleum products"
+    ],
+    "correct_index": 0,
+    "explanation": "High-pressure hydraulic systems can force fluid through small cuts or puncture wounds deep into tissues, causing severe damage, necrosis, and infection that may require amputation if untreated. The small size of the injection site masks the severity of internal damage. Hydraulic fluid is not harmless, and these injuries require immediate medical attention.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::hydraulic-injection-injury"
+  },
+  {
+    "external_key": "AS-B71-052",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What is the function of lift adapter pads in a vehicle lift system?",
+    "choices": [
+      "They provide electrical grounding for the vehicle during service",
+      "They increase the lifting capacity of the lift by 500 pounds",
+      "They distribute the lift's force over a wider area to prevent damage to the vehicle's frame or unibody",
+      "They prevent the vehicle from rolling backward after lifting"
+    ],
+    "correct_index": 2,
+    "explanation": "Lift adapter pads are cushioned platforms placed on the lift arms that distribute concentrated lifting force across the vehicle's structural points, preventing crushing, denting, or warping. Using incorrect pads or no pads can damage frames and unibodies. Pads do not increase capacity, ground the vehicle, or prevent rolling.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::lift-adapter-pads"
+  },
+  {
+    "external_key": "AS-B71-053",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Why must an A/C refrigerant recovery machine be used before opening the air conditioning system?",
+    "choices": [
+      "To remove moisture and extend the lifespan of the compressor",
+      "Because the recovery machine heats the refrigerant and makes it less corrosive",
+      "To legally capture and contain refrigerant, complying with EPA regulations that protect the ozone layer",
+      "The recovery machine is not required if a technician has proper training"
+    ],
+    "correct_index": 2,
+    "explanation": "The Clean Air Act and EPA regulations require technicians to recover refrigerants before servicing air conditioning systems. Releasing refrigerant into the atmosphere damages the ozone layer. Proper recovery machines contain and recycle the refrigerant safely. Only certified technicians with proper equipment can legally perform this service.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::ac-refrigerant-recovery-requirement"
+  },
+  {
+    "external_key": "AS-B71-054",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What hazard does brake dust pose to shop technicians?",
+    "choices": [
+      "Asbestos fibers in some brake materials can cause mesothelioma and lung disease if inhaled",
+      "Brake dust causes immediate chemical burns on contact",
+      "Brake dust is electrically conductive and causes electrical shock",
+      "Brake dust increases friction in the lungs and impairs breathing"
+    ],
+    "correct_index": 0,
+    "explanation": "Older brake pads and shoes may contain asbestos fibers. When brakes are serviced, dust is released that can be inhaled, leading to serious lung disease years later. Technicians should use HEPA vacuums and respiratory protection when servicing brakes. Brake dust is not corrosive, conductive, or mechanically restrictive in the lungs.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::brake-dust-asbestos-hazard"
+  },
+  {
+    "external_key": "AS-B71-055",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "What is a Class D fire extinguisher and when should it be used?",
+    "choices": [
+      "It is for common combustibles like paper and wood",
+      "It is used for electrical fires and contains non-conductive water-based extinguishing agents",
+      "It contains dry powder agents that suppress fires involving combustible metals like magnesium or titanium",
+      "It is used for pressurized gas fires and contains carbon dioxide"
+    ],
+    "correct_index": 2,
+    "explanation": "Class D fire extinguishers contain dry powder agents such as sodium chloride or graphite that suppress fires from combustible metals. Water and standard foam extinguishers are ineffective on metal fires and may cause violent reactions. Class D extinguishers are specialized and essential in shops handling welding or exotic metals.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::class-d-fire-extinguisher"
+  },
+  {
+    "external_key": "AS-B71-056",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What is the purpose of a confined space entry permit?",
+    "choices": [
+      "To waive the need for ventilation in enclosed areas",
+      "To allow workers to ignore normal safety equipment when entering confined spaces",
+      "To give workers permission to work alone in hazardous areas",
+      "To ensure that only trained personnel enter spaces like fuel tanks or sealed enclosures, with required safety precautions and rescue procedures in place"
+    ],
+    "correct_index": 3,
+    "explanation": "Confined space entry permits document that a space has been tested for hazardous atmospheres, that trained personnel will enter with proper equipment, and that rescue procedures are established. Permits ensure multiple layers of protection. They do not waive safety requirements, allow solo entry, or eliminate ventilation needs.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::confined-space-entry"
+  },
+  {
+    "external_key": "AS-B71-057",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Why is fall protection equipment required when working at heights above 6 feet in a shop environment?",
+    "choices": [
+      "To prevent serious injury or death from falls; harnesses distribute impact forces and limit fall distance",
+      "Falls are not dangerous if the technician is in good physical condition",
+      "Fall protection is only required for construction sites, not automotive shops",
+      "Fall protection equipment adds so much weight that it prevents climbing"
+    ],
+    "correct_index": 0,
+    "explanation": "Falls from 6 feet or higher can cause fatal injuries. Safety harnesses and lanyards are designed to arrest falls by distributing deceleration forces across the body and limiting the distance of the fall. OSHA requires fall protection in shops for work at heights. Physical conditioning does not prevent serious fall injuries.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::fall-protection-anchor"
+  },
+  {
+    "external_key": "AS-B71-058",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What should be done if a chemical spill occurs in the shop?",
+    "choices": [
+      "Sweep the spill into a floor drain",
+      "Pour water on the spill to dilute it",
+      "Leave the spill for later cleanup and continue working",
+      "Immediately contain the spill, alert others, consult the SDS for cleanup, use appropriate absorbent material, and report the incident"
+    ],
+    "correct_index": 3,
+    "explanation": "The proper procedure is to contain the spill using absorbent material appropriate to the chemical, alert others to the hazard, review the Safety Data Sheet for specific cleanup instructions, dispose of waste properly, and document the incident. Water and drains may react dangerously with some chemicals and contaminate the environment.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::chemical-spill-cleanup-procedure"
+  },
+  {
+    "external_key": "AS-B71-059",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "What information must be provided on a Safety Data Sheet (SDS)?",
+    "choices": [
+      "Only the product name and manufacturer phone number",
+      "Chemical composition, hazards, handling procedures, emergency measures, and disposal information for the substance",
+      "Only the price and purchasing information",
+      "Only the physical appearance of the chemical"
+    ],
+    "correct_index": 1,
+    "explanation": "An SDS includes sections on chemical identity, hazards (health and physical), handling and storage, emergency first aid, disposal, and regulatory information. Every hazardous chemical in the shop must have an accessible SDS. This document is essential for safe chemical handling. SDS sheets contain far more than basic product information.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::sds-required-information"
+  },
+  {
+    "external_key": "AS-B71-060",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What type of eye protection should be worn when working with grinding wheels or high-speed rotary tools?",
+    "choices": [
+      "Safety glasses with side shields or a full-face shield to protect against projectiles and particles",
+      "Regular prescription eyeglasses are sufficient protection",
+      "No eye protection is needed if you wear a hat",
+      "Sunglasses provide adequate protection"
+    ],
+    "correct_index": 0,
+    "explanation": "Grinding wheels and rotary tools can eject particles at high speed. Safety glasses with side shields or a full-face shield are required to prevent serious eye injury. Regular eyeglasses are not impact-rated and offer inadequate protection. Hats and sunglasses do not provide proper eye protection.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::grinding-eye-protection"
+  },
+  {
+    "external_key": "AS-B71-061",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "Why is shop ventilation important when welding or using solvents?",
+    "choices": [
+      "To remove hazardous fumes and prevent inhalation of toxic gases and metal oxides",
+      "To cool the shop and reduce discomfort for workers",
+      "To reduce the sound of loud tools",
+      "To eliminate all odors from the facility"
+    ],
+    "correct_index": 0,
+    "explanation": "Welding produces metal fumes and toxic gases; solvents release volatile organic compounds. Proper ventilation or breathing apparatus removes these hazards and protects lungs from serious damage. Inadequate ventilation leads to chronic respiratory disease and acute poisoning. Ventilation provides safety benefits beyond cooling or noise reduction.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::shop-ventilation-hazard-control"
+  },
+  {
+    "external_key": "AS-B71-062",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What is the primary purpose of an emergency stop button in a shop?",
+    "choices": [
+      "To signal the end of the work day",
+      "To pause work so technicians can take scheduled breaks",
+      "To immediately shut down a machine or system in case of danger or injury",
+      "To alert the shop manager that a technician is leaving"
+    ],
+    "correct_index": 2,
+    "explanation": "An emergency stop button (E-stop) cuts power to a machine instantly, halting all motion and operations to prevent injury from continuing movement. These bright red buttons are positioned for quick access by anyone in danger. They are safety devices, not control elements for breaks or scheduling.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::emergency-stop-function"
+  },
+  {
+    "external_key": "AS-B71-063",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "What does GFCI (ground fault circuit interrupter) protection do in a shop environment?",
+    "choices": [
+      "It detects leakage current and instantly cuts power to prevent electrical shock from damaged tools or wet conditions",
+      "It increases the electrical current to tools for faster operation",
+      "It prevents the workshop from losing power during a blackout",
+      "It converts AC current to DC current for safety"
+    ],
+    "correct_index": 0,
+    "explanation": "A GFCI monitors electrical current flow and cuts power within milliseconds if it detects an imbalance, as would occur if someone contacts a live conductor. This is essential in damp shop environments where water increases shock risk. GFCI devices do not increase current, prevent blackouts, or convert current types.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::gfci-protection-electrical"
+  },
+  {
+    "external_key": "AS-B71-064",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "What is proper procedure for storing compressed gases in a shop?",
+    "choices": [
+      "Store cylinders lying on their sides to save space",
+      "Secure cylinders upright in a designated area, away from heat and incompatible materials, with pressure-relief devices intact",
+      "Keep cylinders near heat sources to prevent freezing",
+      "Cylinders can be stored in any location as long as they are indoors"
+    ],
+    "correct_index": 1,
+    "explanation": "Compressed gas cylinders must be stored upright and secured to prevent falling, away from heat sources and incompatible chemicals. Safety caps and pressure-relief valves must be intact. Horizontal storage or proximity to heat increases the risk of dangerous pressure release or accidental mixing of incompatible gases.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::compressed-gas-storage"
+  },
+  {
+    "external_key": "AS-B71-065",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What should be inspected on hand tools before each use?",
+    "choices": [
+      "Only the color of the tool to ensure it matches the brand",
+      "Handles for cracks or damage, heads for looseness or damage, and overall condition for safe operation",
+      "Hand tools do not require inspection if they are stored indoors",
+      "Only the sharpness of cutting tools matters"
+    ],
+    "correct_index": 1,
+    "explanation": "Before each use, tools should be visually inspected for loose or bent handles, cracked or chipped heads, bent or broken tips, and signs of damage that could cause failure during use. A tool failure during use can cause serious injury. Regular inspection prevents accidents and extends tool life. Storage location and appearance alone do not ensure safety.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::hand-tool-inspection"
+  }
+]

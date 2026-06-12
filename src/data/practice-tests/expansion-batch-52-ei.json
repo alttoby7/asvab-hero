@@ -1,0 +1,920 @@
+[
+  {
+    "external_key": "EI-B52-001",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "In a parallel circuit, what happens to the remaining branches when one branch is opened (disconnected)?",
+    "choices": [
+      "All remaining branches lose power immediately",
+      "The remaining branches continue to operate normally",
+      "Current in the remaining branches drops to zero",
+      "Voltage across the remaining branches drops proportionally"
+    ],
+    "correct_index": 1,
+    "explanation": "Parallel branches are independent; each connects directly across the source voltage. Opening one branch removes only that current path, while the other branches retain full source voltage and continue operating. This is why homes are wired in parallel: one failed device does not cut power to others. The source voltage does not change when a single branch opens.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-one-branch-open-others-continue"
+  },
+  {
+    "external_key": "EI-B52-002",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Which characteristic is UNIQUE to a series circuit and not shared by parallel circuits?",
+    "choices": [
+      "All components share the same source voltage",
+      "Opening any single element breaks the entire current path",
+      "Total resistance is always less than the smallest individual resistor",
+      "Current divides among multiple paths"
+    ],
+    "correct_index": 1,
+    "explanation": "In a series circuit, all components form one single loop, so an open anywhere in that loop stops current everywhere. A parallel circuit has multiple paths, so opening one branch does not stop current in others. Sharing the same voltage across all branches is a parallel trait. Total resistance less than any single branch is also a parallel trait. Divided current is exclusive to parallel circuits.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-open-kills-all"
+  },
+  {
+    "external_key": "EI-B52-003",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "A short circuit occurs when:",
+    "choices": [
+      "A high-resistance path is added between two nodes",
+      "A switch is opened in a series loop",
+      "A very low-resistance path connects two nodes, allowing extremely high current",
+      "A capacitor is placed in parallel with a resistor"
+    ],
+    "correct_index": 2,
+    "explanation": "A short circuit is an unintended very-low-resistance connection between two points, causing current to bypass the normal load and reach dangerously high levels (I = V/R; as R approaches zero, I approaches infinity). A high-resistance path is a near-open, the opposite of a short. Opening a switch stops current rather than creating excess current. A capacitor in parallel changes reactance but does not create a short.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::short-circuit-low-resistance-high-current"
+  },
+  {
+    "external_key": "EI-B52-004",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Two resistors, 22 Ω and 33 Ω, are connected in series across a 110 V source. What is the voltage drop across the 22 Ω resistor?",
+    "choices": [
+      "44 V",
+      "66 V",
+      "22 V",
+      "55 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Total resistance = 22 + 33 = 55 Ω. Current = 110/55 = 2 A. Voltage across 22 Ω = 2 * 22 = 44 V. The 66 V choice is the drop across the 33 Ω resistor (2 * 33 = 66 V). 22 V confuses the ohm value with the volt drop without calculating current. 55 V is the total resistance value in ohms, not a voltage drop.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-voltage-divider-22-33-ohm"
+  },
+  {
+    "external_key": "EI-B52-006",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "A voltage divider uses two resistors in series: R1 = 47 Ω and R2 = 47 Ω, connected across a 24 V supply. What is the output voltage measured across R2?",
+    "choices": [
+      "24 V",
+      "6 V",
+      "8 V",
+      "12 V"
+    ],
+    "correct_index": 3,
+    "explanation": "With two equal resistors in series, each drops half the supply voltage. V_R2 = 24 * (47 / (47 + 47)) = 24 * 0.5 = 12 V. 24 V is the full source voltage before division. 6 V would result from a 4:1 divider ratio, not a 1:1 ratio. 8 V would require a 3:1 ratio (R1 = 2 * R2), which is not the case here.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::voltage-divider-two-equal-47-ohm"
+  },
+  {
+    "external_key": "EI-B52-007",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "In a series-parallel circuit, R1 = 10 Ω is in series with a parallel pair of R2 = 20 Ω and R3 = 20 Ω. What is the total circuit resistance?",
+    "choices": [
+      "50 Ω",
+      "30 Ω",
+      "10 Ω",
+      "20 Ω"
+    ],
+    "correct_index": 3,
+    "explanation": "Parallel combination of two 20 Ω resistors: R_p = 20/2 = 10 Ω. Total = R1 + R_p = 10 + 10 = 20 Ω. 50 Ω adds all three in series (10 + 20 + 20), ignoring that R2 and R3 are in parallel. 30 Ω adds R1 to only one branch (10 + 20), ignoring the second parallel branch. 10 Ω is only the series resistor alone, omitting the parallel combination.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-parallel-R1-plus-pair"
+  },
+  {
+    "external_key": "EI-B52-008",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A 120 V source feeds R1 = 15 Ω in series with two parallel branches: R2 = 60 Ω and R3 = 20 Ω. What current flows through R3?",
+    "choices": [
+      "2 A",
+      "3 A",
+      "6 A",
+      "4 A"
+    ],
+    "correct_index": 1,
+    "explanation": "Parallel combination of R2 and R3: R_p = (60 * 20)/(60 + 20) = 1200/80 = 15 Ω. Total R = 15 + 15 = 30 Ω. Source current I_total = 120/30 = 4 A. Voltage across parallel section = 4 * 15 = 60 V. Current through R3 = 60/20 = 3 A. The 4 A distractor is the total source current, not the R3 branch current. R2 current = 60/60 = 1 A, not 2 A. 6 A would incorrectly omit the series R1 from the calculation.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-parallel-branch-current-R3"
+  },
+  {
+    "external_key": "EI-B52-009",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "Three parallel branches carry 4 A, 6 A, and 2 A respectively from a 24 V source. What is the equivalent resistance of the entire parallel network?",
+    "choices": [
+      "1 Ω",
+      "3 Ω",
+      "4 Ω",
+      "2 Ω"
+    ],
+    "correct_index": 3,
+    "explanation": "Total current by KCL = 4 + 6 + 2 = 12 A. R_eq = V / I_total = 24 / 12 = 2 Ω. 1 Ω would require 24 A total current. 3 Ω corresponds to only 8 A total (24/3 = 8). 4 Ω would need only 6 A total (24/4 = 6), counting just one branch.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-eq-resistance-from-branch-currents"
+  },
+  {
+    "external_key": "EI-B52-010",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A voltage divider has three resistors in series: R1 = 10 Ω, R2 = 20 Ω, R3 = 30 Ω across a 120 V source. What is the voltage across R3?",
+    "choices": [
+      "60 V",
+      "40 V",
+      "30 V",
+      "20 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Total R = 10 + 20 + 30 = 60 Ω. Current = 120/60 = 2 A. Voltage across R3 = 2 * 30 = 60 V. 40 V is the drop across R2 (2 * 20 = 40 V). 30 V confuses the resistor's ohm value with the voltage drop across it. 20 V is the drop across R1 (2 * 10 = 20 V).",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::three-resistor-divider-voltage-R3"
+  },
+  {
+    "external_key": "EI-B52-011",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "KVL is applied to a series loop with a 12 V battery and three resistors. The drops across R1 and R2 are 3 V and 5 V respectively. What is the voltage drop across R3?",
+    "choices": [
+      "12 V",
+      "8 V",
+      "2 V",
+      "4 V"
+    ],
+    "correct_index": 3,
+    "explanation": "By KVL, all voltage drops must sum to the source: V_R3 = 12 - 3 - 5 = 4 V. 12 V is the entire source voltage, not just R3's share. 8 V is 3 + 5, the sum of the other two drops rather than the remainder. 2 V has no mathematical basis from the given values.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::kvl-three-resistor-find-third-drop"
+  },
+  {
+    "external_key": "EI-B52-012",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "In a series circuit, the total resistance is always:",
+    "choices": [
+      "Less than the smallest individual resistor",
+      "The sum of all individual resistances",
+      "Equal to the largest individual resistor",
+      "The product of all individual resistances"
+    ],
+    "correct_index": 1,
+    "explanation": "Series resistances add directly: R_total = R1 + R2 + ... + Rn. Adding resistors in series always increases total resistance beyond the value of any single resistor. Total resistance less than the smallest resistor is the hallmark of a parallel combination. Using only the largest resistor value ignores all the others. The product of resistances is not a valid circuit formula.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-total-resistance-sum-rule"
+  },
+  {
+    "external_key": "EI-B52-013",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Two resistors in parallel, 12 Ω and 6 Ω, are across a 24 V supply. What is the current through the 12 Ω resistor?",
+    "choices": [
+      "4 A",
+      "6 A",
+      "3 A",
+      "2 A"
+    ],
+    "correct_index": 3,
+    "explanation": "In a parallel circuit each branch sees the full supply voltage. Current through 12 Ω = 24/12 = 2 A. 4 A is the current through the 6 Ω branch (24/6 = 4 A). 6 A would require 4 Ω, not 12 Ω. 3 A would require an 8 Ω branch, which is not present.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-branch-current-12-6-ohm"
+  },
+  {
+    "external_key": "EI-B52-014",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A 120 V source powers R_series = 6 Ω in series with a parallel pair of R_A = 12 Ω and R_B = 12 Ω. What is the power dissipated in R_series?",
+    "choices": [
+      "150 W",
+      "600 W",
+      "75 W",
+      "300 W"
+    ],
+    "correct_index": 1,
+    "explanation": "Parallel pair: R_p = 12/2 = 6 Ω. Total R = 6 + 6 = 12 Ω. Current = 120/12 = 10 A. Power in R_series = I^2 * R = 10^2 * 6 = 100 * 6 = 600 W. 150 W would apply if the source were only 60 V (I = 5 A, P = 25 * 6). 75 W is half of 150 W, arising from a halved resistance estimate with 60 V. 300 W uses I = 10 A but incorrectly assigns R = 3 Ω to the series element.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::series-parallel-power-in-series-element"
+  },
+  {
+    "external_key": "EI-B52-015",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Compared to a series circuit, a parallel circuit has the advantage that:",
+    "choices": [
+      "The failure of one component does not interrupt power to the others",
+      "It limits current to a lower value for safety",
+      "All components share the same current",
+      "Total resistance is higher, protecting devices from overcurrent"
+    ],
+    "correct_index": 0,
+    "explanation": "Each parallel branch operates independently across the source voltage, so a fault or open in one branch does not affect the others. This is the key reason household wiring uses parallel connections. Series circuits have identical current flowing through all elements; parallel circuits have identical voltage across all branches. Adding parallel branches lowers total resistance, it does not raise it.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-advantage-independence"
+  },
+  {
+    "external_key": "EI-B52-016",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A Zener diode is specifically designed to:",
+    "choices": [
+      "Amplify small AC signals into larger ones",
+      "Emit light when forward biased",
+      "Store charge between two conductive plates",
+      "Maintain a nearly constant voltage across its terminals when reverse biased beyond its breakdown voltage"
+    ],
+    "correct_index": 3,
+    "explanation": "A Zener diode is engineered with a precise reverse breakdown voltage. When reverse-biased beyond that value, it clamps the voltage at a stable level, making it ideal for voltage regulation. Amplifying signals is the role of a transistor. Light emission when forward biased describes an LED. Charge storage between plates describes a capacitor.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::zener-diode-voltage-regulation"
+  },
+  {
+    "external_key": "EI-B52-017",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A photodiode generates current when:",
+    "choices": [
+      "A forward voltage above its threshold is applied in darkness",
+      "It is reverse biased and shielded from all light",
+      "It is connected in series with an inductor",
+      "Light strikes its junction and creates electron-hole pairs"
+    ],
+    "correct_index": 3,
+    "explanation": "A photodiode uses the photovoltaic effect: photons striking the semiconductor junction dislodge electrons, creating electron-hole pairs and a photocurrent proportional to light intensity. Forward biasing beyond the threshold describes standard diode conduction, not the photodiode's light-sensing mode. A reverse-biased photodiode with no light has only a tiny dark current, not useful output. The inductor connection has no bearing on photodiode function.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::photodiode-light-to-current"
+  },
+  {
+    "external_key": "EI-B52-018",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "How does a JFET differ from a BJT in the way it is controlled?",
+    "choices": [
+      "A JFET is controlled by a base current; a BJT is controlled by a gate voltage",
+      "A JFET is controlled by a gate voltage; a BJT is controlled by a base current",
+      "Both are controlled by gate voltage, but the JFET requires more input power",
+      "Both are controlled by a base current, but the JFET has three PN junctions"
+    ],
+    "correct_index": 1,
+    "explanation": "A JFET is a voltage-controlled device: applying a voltage to the gate (with essentially no gate current) modulates the channel width and controls drain-to-source current. A BJT is current-controlled: a base current controls a much larger collector current through the beta gain relationship. This fundamental difference between field-effect and bipolar technologies drives their different application areas.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::jfet-vs-bjt-control-mechanism"
+  },
+  {
+    "external_key": "EI-B52-019",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A full-wave bridge rectifier converts AC to pulsating DC. How many diodes does a bridge rectifier use?",
+    "choices": [
+      "1",
+      "2",
+      "4",
+      "6"
+    ],
+    "correct_index": 2,
+    "explanation": "A full-wave bridge rectifier uses four diodes arranged so that both the positive and negative half-cycles of the AC input are steered in the same direction through the load, producing pulsating DC. One diode gives half-wave rectification, using only one half-cycle. Two diodes can form a full-wave center-tap rectifier but require a center-tapped transformer. Six diodes are used in a three-phase bridge rectifier.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::bridge-rectifier-four-diodes"
+  },
+  {
+    "external_key": "EI-B52-020",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A transformer has a center-tapped secondary. Each half of the secondary measures 24 V AC to the center tap. What is the total secondary voltage from one end to the other?",
+    "choices": [
+      "12 V",
+      "24 V",
+      "36 V",
+      "48 V"
+    ],
+    "correct_index": 3,
+    "explanation": "A center-tapped secondary divides the winding at its electrical midpoint. If each half measures 24 V to the center tap, the full end-to-end voltage is 24 + 24 = 48 V. 12 V would be half of one section, not the full winding. 24 V is only one half of the secondary. 36 V has no basis when both halves are equal at 24 V each.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transformer-center-tap-total-secondary"
+  },
+  {
+    "external_key": "EI-B52-022",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "Inductive reactance X_L is calculated as:",
+    "choices": [
+      "X_L = L / (2 * pi * f)",
+      "X_L = 1 / (2 * pi * f * L)",
+      "X_L = f / L",
+      "X_L = 2 * pi * f * L"
+    ],
+    "correct_index": 3,
+    "explanation": "Inductive reactance X_L = 2 * pi * f * L, where f is frequency in hertz and L is inductance in henries. X_L increases with both higher frequency and higher inductance, which is why inductors block high-frequency signals more than low-frequency ones. 1/(2*pi*f*L) is capacitive reactance X_C. L/(2*pi*f) has the ratio inverted. f/L has incorrect dimensions (Hz/H cannot equal ohms).",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::inductive-reactance-formula-XL"
+  },
+  {
+    "external_key": "EI-B52-023",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "An inductor with L = 0.5 H is connected to a 60 Hz AC source. What is its inductive reactance?",
+    "choices": [
+      "30 Ω",
+      "120 Ω",
+      "188 Ω",
+      "377 Ω"
+    ],
+    "correct_index": 2,
+    "explanation": "X_L = 2 * pi * f * L = 2 * 3.14159 * 60 * 0.5 = 376.99 * 0.5 = 188.5 Ω, approximately 188 Ω. 30 Ω results from omitting the 2*pi factor and using only f * L = 60 * 0.5 = 30. 120 Ω uses 2 * f * L without pi (2 * 60 * 0.5 * (1/pi) error). 377 Ω is 2*pi*60*1 H, the reactance for a 1 H inductor, not 0.5 H.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::inductive-reactance-calc-0p5H-60hz"
+  },
+  {
+    "external_key": "EI-B52-024",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "An LED requires a forward voltage of 2 V and a forward current of 20 mA. It is powered from a 12 V supply. What series resistor limits the current correctly?",
+    "choices": [
+      "100 Ω",
+      "500 Ω",
+      "600 Ω",
+      "200 Ω"
+    ],
+    "correct_index": 1,
+    "explanation": "The resistor drops the excess voltage: V_R = 12 - 2 = 10 V. R = V_R / I = 10 / 0.020 = 500 Ω. 100 Ω would pass 10/100 = 0.1 A = 100 mA, five times the rated current and damaging to the LED. 600 Ω would limit current to 10/600 = 16.7 mA, slightly below spec. 200 Ω would allow 10/200 = 50 mA, well above the 20 mA safe rating.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::led-series-resistor-12v-2v-20ma"
+  },
+  {
+    "external_key": "EI-B52-025",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A Zener diode with a 5.1 V breakdown voltage is used in a shunt regulator. The supply is 10 V and the series resistor is 470 Ω. What current flows through the series resistor when the Zener is regulating?",
+    "choices": [
+      "10.4 mA",
+      "21.3 mA",
+      "10 mA",
+      "5.1 mA"
+    ],
+    "correct_index": 0,
+    "explanation": "Voltage across the series resistor = 10 - 5.1 = 4.9 V. Current = 4.9 / 470 = 0.01043 A = 10.4 mA. 21.3 mA results from using the full 10 V supply across the resistor (10/470), ignoring the Zener clamping voltage. 10 mA approximates 5 V / 500 Ω by rounding both the Zener voltage and resistor value. 5.1 mA confuses the Zener voltage in volts with the milliamp current value.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::zener-shunt-series-current"
+  },
+  {
+    "external_key": "EI-B52-026",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "The RC time constant for a 22 kΩ resistor and a 10 µF capacitor is:",
+    "choices": [
+      "0.22 s",
+      "2.2 s",
+      "0.022 s",
+      "22 s"
+    ],
+    "correct_index": 0,
+    "explanation": "RC time constant tau = R * C = 22,000 Ω * 10 * 10^-6 F = 22,000 * 0.00001 = 0.22 s. After one time constant the capacitor reaches about 63% of the supply voltage. 2.2 s results from a unit error, treating 22 kΩ as 22 Ω and using 10 F instead of 10 µF. 0.022 s would require R = 2.2 kΩ, not 22 kΩ. 22 s overestimates by a factor of 100.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::rc-time-constant-22k-10uf"
+  },
+  {
+    "external_key": "EI-B52-027",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "What is the primary structural difference between an NPN and a PNP bipolar junction transistor?",
+    "choices": [
+      "An NPN has two P-type regions sandwiching an N-type; a PNP has two N-type regions sandwiching a P-type",
+      "NPN transistors operate only on AC; PNP transistors operate only on DC",
+      "NPN transistors store charge; PNP transistors amplify current",
+      "An NPN has two N-type regions sandwiching a P-type base; a PNP has two P-type regions sandwiching an N-type base"
+    ],
+    "correct_index": 3,
+    "explanation": "An NPN transistor is structured N-P-N: two N-doped regions (collector and emitter) separated by a thin P-type base. A PNP is structured P-N-P: two P-type regions separated by an N-type base. The doping arrangement determines which supply polarities are needed to bias each type. Both NPN and PNP transistors work with AC and DC, and both can amplify current.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::npn-pnp-structure-difference"
+  },
+  {
+    "external_key": "EI-B52-028",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "An ideal step-up transformer has 100 primary turns and 500 secondary turns. The primary carries 2 A at 120 V AC. What is the secondary current?",
+    "choices": [
+      "0.4 A",
+      "10 A",
+      "2 A",
+      "1 A"
+    ],
+    "correct_index": 0,
+    "explanation": "Turns ratio N_s/N_p = 500/100 = 5. Voltage steps up by 5: V_s = 600 V. By power conservation I_s = I_p * (N_p/N_s) = 2 * (100/500) = 0.4 A. Alternatively, P = 120 * 2 = 240 W, so I_s = 240/600 = 0.4 A. 10 A inverts the turns ratio for current (2 * 5 instead of 2 / 5). 2 A ignores the voltage transformation and treats primary and secondary currents as equal. 1 A uses a 2:1 current ratio instead of the correct 5:1.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transformer-100-500-turns-current-step"
+  },
+  {
+    "external_key": "EI-B52-029",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A relay is best described as:",
+    "choices": [
+      "A semiconductor device that amplifies current",
+      "A passive component that stores magnetic energy",
+      "A protective device that melts to break a circuit under overcurrent",
+      "An electromechanical switch controlled by an electromagnet"
+    ],
+    "correct_index": 3,
+    "explanation": "A relay uses an electromagnet coil: when current flows through the coil, it attracts an armature that opens or closes switch contacts, allowing a low-power signal to control a high-power circuit. Amplifying current describes a transistor. Storing magnetic energy describes an inductor. Melting under overcurrent to open a circuit describes a fuse.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::relay-electromagnet-switch"
+  },
+  {
+    "external_key": "EI-B52-030",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "A GFCI (ground fault circuit interrupter) outlet is required in bathrooms and kitchens primarily to:",
+    "choices": [
+      "Prevent power surges from damaging appliances",
+      "Increase the maximum current the circuit can supply",
+      "Detect small current imbalances between hot and neutral that indicate a ground fault and trip before electrocution can occur",
+      "Replace the need for a circuit breaker in the electrical panel"
+    ],
+    "correct_index": 2,
+    "explanation": "A GFCI continuously monitors the difference between current leaving on the hot wire and returning on the neutral. If that difference exceeds about 5 mA (indicating current is leaking through a person or to ground), the GFCI trips within milliseconds. It protects against shock in wet locations. Surge protectors, not GFCIs, guard against power surges. GFCIs do not increase circuit capacity. They supplement, rather than replace, panel breakers.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::gfci-ground-fault-protection"
+  },
+  {
+    "external_key": "EI-B52-031",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "An AFCI (arc fault circuit interrupter) breaker is designed to:",
+    "choices": [
+      "Detect the electrical signature of arcing caused by damaged wiring and trip before a fire starts",
+      "Limit voltage spikes from lightning strikes",
+      "Measure ground resistance and disconnect if it exceeds a safe level",
+      "Respond to sustained overcurrent exactly as a standard thermal-magnetic breaker does"
+    ],
+    "correct_index": 0,
+    "explanation": "Arc faults occur when current jumps through damaged or pinched insulation, creating high-temperature sparks that can ignite surrounding materials. An AFCI monitors the waveform for the distinctive high-frequency signature of arcing and trips before a fire develops. Lightning protection uses surge arresters, not AFCIs. Ground resistance monitoring is done by insulation resistance testers, not AFCIs. Standard thermal-magnetic breakers respond to sustained overcurrent and bolted short circuits, not low-energy arcing.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::afci-arc-fault-fire-prevention"
+  },
+  {
+    "external_key": "EI-B52-032",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "A 12 AWG copper wire is rated for 20 A in typical residential wiring. A 14 AWG wire in the same conditions is rated for:",
+    "choices": [
+      "30 A",
+      "20 A",
+      "15 A",
+      "10 A"
+    ],
+    "correct_index": 2,
+    "explanation": "14 AWG copper wire is rated for 15 A in standard residential wiring under NEC guidelines. The smaller 14 AWG conductor has more resistance per foot than 12 AWG, so it reaches its safe temperature limit at a lower current. 30 A corresponds to 10 AWG wire. 20 A is the rating for 12 AWG, not 14 AWG. 10 A would apply to 18 AWG or smaller wire.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::awg-14-15-amp-rating"
+  },
+  {
+    "external_key": "EI-B52-033",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "The dielectric material in a capacitor is:",
+    "choices": [
+      "The conductive plate that accumulates charge",
+      "The wire lead connecting the capacitor to the circuit",
+      "The insulating material between the capacitor's conductive plates",
+      "The magnetic core that enhances capacitance"
+    ],
+    "correct_index": 2,
+    "explanation": "The dielectric is the non-conducting material (such as air, ceramic, paper, or plastic film) sandwiched between the two conductive plates. Its permittivity determines how much charge is stored per volt: a higher permittivity dielectric increases capacitance. The conductive plates are separate components, not the dielectric. Capacitors do not use magnetic cores; that is a transformer or inductor feature.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::dielectric-capacitor-insulator"
+  },
+  {
+    "external_key": "EI-B52-034",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Mica is commonly used as an insulator in high-frequency capacitors and spark plugs because it:",
+    "choices": [
+      "Has high electrical conductivity that stabilizes voltage",
+      "Is a semiconductor that switches between insulating and conducting states",
+      "Has very high dielectric strength, thermal stability, and low loss at high frequencies",
+      "Is inexpensive and easy to dissolve into a liquid coating"
+    ],
+    "correct_index": 2,
+    "explanation": "Mica is a naturally layered mineral with excellent dielectric strength (it resists voltage breakdown), withstands high temperatures without degrading, and exhibits very low dielectric losses at radio frequencies. These properties make it ideal for precision RF capacitors and spark plug insulators. Mica is an insulator, not a conductor or semiconductor. It is neither inexpensive compared to plastic film nor water-soluble.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::mica-insulator-properties"
+  },
+  {
+    "external_key": "EI-B52-035",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "A 100 ft run of 12 AWG copper wire has a resistance of 0.16 Ω. A circuit requires a 250 ft round-trip run of the same wire. What is the total wire resistance?",
+    "choices": [
+      "0.4 Ω",
+      "0.16 Ω",
+      "0.8 Ω",
+      "1.6 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "Total wire length = 250 ft. Resistance = 0.16 Ω per 100 ft * (250/100) = 0.16 * 2.5 = 0.40 Ω. 0.16 Ω is only the resistance of one 100 ft segment. 0.8 Ω would require 500 ft of wire at this rate. 1.6 Ω would require 1000 ft.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::wire-resistance-250ft-12awg"
+  },
+  {
+    "external_key": "EI-B52-036",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Three wires of the same material and diameter are 1 m, 2 m, and 3 m long. Their resistances are in the ratio:",
+    "choices": [
+      "1 : 2 : 3",
+      "3 : 2 : 1",
+      "1 : 4 : 9",
+      "1 : 1 : 1"
+    ],
+    "correct_index": 0,
+    "explanation": "Resistance is directly proportional to length when material and cross-section are constant (R = rho * L / A). Doubling length doubles resistance. Therefore R_1m : R_2m : R_3m = 1 : 2 : 3. The reversed ratio 3:2:1 would mean longer wires have lower resistance, contradicting the formula. The 1:4:9 ratio would describe resistance proportional to L^2, which only arises if cross-section also changes with length. Equal ratios 1:1:1 would require equal lengths.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::resistance-proportional-to-length-ratio"
+  },
+  {
+    "external_key": "EI-B52-037",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "The correct soldering technique when attaching a wire to a connector is to:",
+    "choices": [
+      "Load the iron tip with solder first, then touch the loaded tip to the wire-connector joint",
+      "Apply as much heat as possible to melt solder quickly, producing a shiny cold joint",
+      "Heat the joint with the iron, then apply solder directly to the joint so it flows in by capillary action",
+      "Use acid flux on all electrical connections to ensure a strong mechanical bond"
+    ],
+    "correct_index": 2,
+    "explanation": "Correct soldering technique heats the work (the joint itself) with the iron, then feeds solder to the joint where the heat draws it in by capillary action, forming a reliable low-resistance bond. Applying solder to the iron tip first and transferring it creates a cold joint that can crack and fail. Excessive heat burns flux and damages components without improving the joint. Acid flux is used for plumbing and corrodes electrical contacts; rosin flux is correct for electronics.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::soldering-technique-heat-joint-first"
+  },
+  {
+    "external_key": "EI-B52-038",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "A conductor's resistance increases when its temperature rises. This behavior is described by a:",
+    "choices": [
+      "Negative temperature coefficient (NTC)",
+      "Zero temperature coefficient",
+      "Positive temperature coefficient (PTC)",
+      "Semiconductor temperature coefficient"
+    ],
+    "correct_index": 2,
+    "explanation": "A positive temperature coefficient (PTC) means resistance increases with temperature. Most pure metals and alloys used for wiring (copper, aluminum) exhibit PTC behavior because rising temperature intensifies lattice vibration, impeding electron flow. An NTC describes semiconductors and certain thermistors whose resistance falls with rising temperature. A zero temperature coefficient describes special alloys like Manganin, engineered for temperature-stable resistance in precision resistors.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::ptc-conductor-resistance-rise"
+  },
+  {
+    "external_key": "EI-B52-039",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A 15 A circuit uses 14 AWG copper wire rated at 0.25 Ω per 100 ft. The round-trip wire run is 120 ft total. What is the total voltage dropped across the wiring?",
+    "choices": [
+      "0.45 V",
+      "0.9 V",
+      "4.5 V",
+      "9 V"
+    ],
+    "correct_index": 2,
+    "explanation": "Wire resistance = 0.25 Ω per 100 ft * (120 ft / 100) = 0.25 * 1.2 = 0.3 Ω. Voltage drop = I * R = 15 * 0.3 = 4.5 V. 0.45 V results from an order-of-magnitude error in resistance (using 0.03 Ω instead of 0.3 Ω). 0.9 V would arise from using 0.06 Ω, another scaling error. 9 V would require 0.6 Ω of wire, corresponding to a 240 ft run rather than 120 ft.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::voltage-drop-14awg-120ft-15a"
+  },
+  {
+    "external_key": "EI-B52-040",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A copper rod has resistance R. Its length is tripled and its diameter is doubled (cross-sectional area quadruples). What is the new resistance?",
+    "choices": [
+      "3R/4",
+      "12R",
+      "3R",
+      "R/4"
+    ],
+    "correct_index": 0,
+    "explanation": "R = rho * L / A. Tripling L multiplies resistance by 3. Quadrupling A divides resistance by 4. Net factor: 3/4. New R = (3/4) * R. 12R would result from multiplying both factors instead of one dividing (3 * 4 * R). 3R accounts for only the length tripling while ignoring the area increase. R/4 accounts for only the area quadrupling while ignoring the length increase.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::resistance-triple-L-quadruple-A"
+  },
+  {
+    "external_key": "EI-B52-041",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "An aluminum transmission line carries 200 A. Its resistance is 0.05 Ω per km. Over a 10 km run, what is the power lost in the line?",
+    "choices": [
+      "100 W",
+      "1000 W",
+      "20000 W",
+      "200000 W"
+    ],
+    "correct_index": 2,
+    "explanation": "Line resistance = 0.05 Ω/km * 10 km = 0.5 Ω. Line loss P = I^2 * R = 200^2 * 0.5 = 40000 * 0.5 = 20000 W. 100 W uses P = I * R = 200 * 0.5, forgetting to square the current. 1000 W uses P = I * R * 10, an incorrect tenfold factor. 200000 W uses I^2 without the 0.5 Ω factor (200^2 = 40000, then incorrectly multiplying by 5 instead of 0.5).",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::transmission-line-loss-200a-10km"
+  },
+  {
+    "external_key": "EI-B52-042",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A 50-meter copper wire has a resistance of 1.5 Ω. A second wire of the same material is 25 meters long and has twice the cross-sectional area. What is the resistance of the second wire?",
+    "choices": [
+      "0.375 Ω",
+      "0.75 Ω",
+      "1.5 Ω",
+      "3 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "Resistance per meter of the original wire = 1.5 / 50 = 0.03 Ω/m. At the same cross-section, 25 m would give 25 * 0.03 = 0.75 Ω. Doubling cross-sectional area halves resistance: 0.75 / 2 = 0.375 Ω. 0.75 Ω accounts only for the shorter length without applying the doubled area. 1.5 Ω treats the second wire as identical to the first. 3 Ω doubles instead of halves, inverting the area effect.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::resistance-half-length-double-area-calc"
+  },
+  {
+    "external_key": "EI-B52-043",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Glass, rubber, and dry wood are all examples of:",
+    "choices": [
+      "Semiconductors",
+      "Electrical conductors",
+      "Electrical insulators",
+      "Superconductors"
+    ],
+    "correct_index": 2,
+    "explanation": "Glass, rubber, and dry wood all have very few free charge carriers and very high resistivity, making them good electrical insulators used to prevent unintended current flow and to protect people from shock. Semiconductors such as silicon have controllable conductivity between that of insulators and conductors. Conductors such as copper and silver have abundant free electrons. Superconductors exhibit zero resistance only at extremely low temperatures.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::glass-rubber-wood-insulators"
+  },
+  {
+    "external_key": "EI-B52-044",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "If 3 A flows through a 22 Ω resistor, what is the voltage across it?",
+    "choices": [
+      "7.3 V",
+      "66 V",
+      "22 V",
+      "19 V"
+    ],
+    "correct_index": 1,
+    "explanation": "V = I * R = 3 * 22 = 66 V. 7.3 V inverts the formula (R / I = 22/3 = 7.3). 22 V confuses the ohm value of the resistor with the voltage drop. 19 V subtracts current from resistance (22 - 3), which is dimensionally invalid.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::voltage-from-I-and-R-basic"
+  },
+  {
+    "external_key": "EI-B52-045",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "A circuit has 120 V across it and 6 A flowing through it. What is the resistance?",
+    "choices": [
+      "720 Ω",
+      "20 Ω",
+      "126 Ω",
+      "0.05 Ω"
+    ],
+    "correct_index": 1,
+    "explanation": "R = V / I = 120 / 6 = 20 Ω. 720 Ω multiplies V * I instead of dividing (120 * 6). 126 Ω adds V + I, which is dimensionally invalid. 0.05 Ω inverts the formula (I / V = 6/120), giving conductance, not resistance.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::resistance-from-V-and-I-basic"
+  },
+  {
+    "external_key": "EI-B52-046",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "The unit of electrical power is the:",
+    "choices": [
+      "Volt",
+      "Ampere",
+      "Watt",
+      "Ohm"
+    ],
+    "correct_index": 2,
+    "explanation": "Electrical power is measured in watts (W), where 1 W = 1 V * 1 A. Power describes the rate at which energy is transferred or consumed. The volt measures electric potential. The ampere measures the rate of charge flow (current). The ohm measures electrical resistance.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::watt-unit-of-power"
+  },
+  {
+    "external_key": "EI-B52-047",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "A device draws 5 A from a 24 V DC supply. What power does it consume?",
+    "choices": [
+      "4.8 W",
+      "29 W",
+      "19 W",
+      "120 W"
+    ],
+    "correct_index": 3,
+    "explanation": "P = V * I = 24 * 5 = 120 W. 4.8 W inverts the formula (V / I = 24/5). 29 W adds V + I, which is dimensionally incorrect. 19 W subtracts I from V, which is also not a valid power formula.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::power-p-vi-24v-5a"
+  },
+  {
+    "external_key": "EI-B52-048",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "Three 100 Ω resistors are connected in series across a 120 V supply. What is the power dissipated by each individual resistor?",
+    "choices": [
+      "144 W",
+      "48 W",
+      "16 W",
+      "432 W"
+    ],
+    "correct_index": 2,
+    "explanation": "Total R = 300 Ω. Current I = 120/300 = 0.4 A. Power per resistor = I^2 * R = 0.4^2 * 100 = 0.16 * 100 = 16 W. Equivalently, each resistor drops 120/3 = 40 V, and P = V^2/R = 40^2/100 = 1600/100 = 16 W. 144 W mistakenly applies the full 120 V to a single 100 Ω resistor (120^2/100). 48 W uses an incorrect per-resistor voltage. 432 W is three times the per-resistor value at full voltage (3 * 144), ignoring the series voltage division.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::series-three-100-ohm-power-each"
+  },
+  {
+    "external_key": "EI-B52-049",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 47 Ω resistor must dissipate no more than 2 W. What is the maximum safe voltage that can be applied across it?",
+    "choices": [
+      "9.7 V",
+      "94 V",
+      "4.3 V",
+      "22 V"
+    ],
+    "correct_index": 0,
+    "explanation": "From P = V^2 / R: V = sqrt(P * R) = sqrt(2 * 47) = sqrt(94) = 9.70 V. 94 V results from forgetting the square root and reading V^2 = 94 as V = 94. 4.3 V comes from using V = P / R = 2/47, mixing up the power formula. 22 V has no valid derivation from these values.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::max-voltage-from-power-rating"
+  },
+  {
+    "external_key": "EI-B52-050",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 240 V electric oven draws 8000 W. What are its operating current and resistance?",
+    "choices": [
+      "I = 33.3 A, R = 7.2 Ω",
+      "I = 33.3 A, R = 72 Ω",
+      "I = 3.33 A, R = 72 Ω",
+      "I = 40 A, R = 6 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "I = P / V = 8000 / 240 = 33.3 A. R = V^2 / P = 57600 / 8000 = 7.2 Ω. 72 Ω places a decimal error in the resistance (off by 10x). 3.33 A is a factor-of-10 error in the current (8000/2400 instead of 8000/240). 40 A with 6 Ω corresponds to P = 40 * 240 = 9600 W, not 8000 W.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::oven-current-resistance-240v-8kw"
+  },
+  {
+    "external_key": "EI-B52-051",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "Two 60 W lamps and one 100 W lamp are all connected in parallel on a 120 V circuit. What is the total current drawn from the source?",
+    "choices": [
+      "1.0 A",
+      "1.83 A",
+      "2.67 A",
+      "3.0 A"
+    ],
+    "correct_index": 1,
+    "explanation": "Current per 60 W lamp = 60/120 = 0.5 A. Two 60 W lamps draw 1.0 A. Current for 100 W lamp = 100/120 = 0.833 A. Total = 1.0 + 0.833 = 1.833 A, approximately 1.83 A. 1.0 A counts only the two 60 W lamps, ignoring the 100 W lamp. 2.67 A = (60+60+100)/90, using an incorrect base voltage. 3.0 A assumes all three lamps draw 120 W each, which is incorrect.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::parallel-lamps-60-60-100w-total-current"
+  },
+  {
+    "external_key": "EI-B52-052",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "An electric motor with 85% efficiency draws 15 A from a 240 V source. What is the useful mechanical power output?",
+    "choices": [
+      "3060 W",
+      "2601 W",
+      "3600 W",
+      "1800 W"
+    ],
+    "correct_index": 0,
+    "explanation": "Input power = V * I = 240 * 15 = 3600 W. Useful output = input * efficiency = 3600 * 0.85 = 3060 W. 2601 W would be 85% of 3060 W, applying the efficiency factor twice. 3600 W is the full input power with no losses subtracted. 1800 W is exactly half the input power, which would correspond to only 50% efficiency.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::motor-efficiency-output-power"
+  },
+  {
+    "external_key": "EI-B52-053",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A 120 V circuit breaker is rated for 20 A. A 1500 W hair dryer and a 1200 W space heater are both running on the same circuit. Will the breaker trip?",
+    "choices": [
+      "No, because 2700 W is below the 2400 W breaker limit",
+      "Yes, because 2700 W / 120 V = 22.5 A, which exceeds 20 A",
+      "No, because parallel devices reduce total current below 20 A",
+      "Yes, because 120 V exceeds the equipment voltage ratings"
+    ],
+    "correct_index": 1,
+    "explanation": "Total load = 1500 + 1200 = 2700 W. Total current = P / V = 2700 / 120 = 22.5 A. This exceeds the 20 A breaker rating, so the breaker will trip. The maximum safe load is 20 A * 120 V = 2400 W; 2700 W exceeds that by 12.5%. Parallel devices do not reduce total current; each device draws its own current and the currents add. Both appliances are designed for 120 V.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::breaker-trip-1500w-1200w-load"
+  },
+  {
+    "external_key": "EI-B52-054",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A resistor dissipates 50 W when connected to a 100 V source. What power does it dissipate if the source voltage is reduced to 50 V?",
+    "choices": [
+      "25 W",
+      "12.5 W",
+      "50 W",
+      "100 W"
+    ],
+    "correct_index": 1,
+    "explanation": "P = V^2 / R, so power is proportional to V^2. Halving the voltage (from 100 V to 50 V) reduces power by a factor of (1/2)^2 = 1/4: P_new = 50 * 0.25 = 12.5 W. 25 W would result if power were proportional to V (linear), halving power with half the voltage. 50 W assumes power is unchanged regardless of voltage. 100 W would require doubling the original voltage.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::power-vs-voltage-squared-halved"
+  },
+  {
+    "external_key": "EI-B52-055",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A 12 V battery with an internal resistance of 1 Ω is connected to an external load of 5 Ω. What is the terminal voltage of the battery under load?",
+    "choices": [
+      "12 V",
+      "10 V",
+      "2 V",
+      "7.2 V"
+    ],
+    "correct_index": 1,
+    "explanation": "Total circuit resistance = 1 + 5 = 6 Ω. Current = 12/6 = 2 A. Voltage drop across internal resistance = 2 * 1 = 2 V. Terminal voltage = 12 - 2 = 10 V. 12 V is the open-circuit EMF with no current flowing, before internal voltage drop occurs. 2 V is only the internal drop, not the terminal voltage available to the load. 7.2 V corresponds to a different resistance ratio and does not arise from these values.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::battery-internal-resistance-terminal-voltage"
+  },
+  {
+    "external_key": "EI-B52-056",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A 120 V heating element has a resistance of 6 Ω. How many minutes must it run to deliver 1080 Wh of heat energy?",
+    "choices": [
+      "60 min",
+      "27 min",
+      "45 min",
+      "90 min"
+    ],
+    "correct_index": 1,
+    "explanation": "Power = V^2 / R = 120^2 / 6 = 14400 / 6 = 2400 W = 2.4 kW. Time = Energy / Power = 1080 Wh / 2400 W = 0.45 h = 27 minutes. 60 min assumes 1080 W power (treating Wh as W). 45 min corresponds to 1080 Wh / 1440 W, using an incorrect power figure. 90 min corresponds to 1080 Wh / 720 W, again an incorrect power calculation.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::heater-runtime-for-energy-goal"
+  }
+]

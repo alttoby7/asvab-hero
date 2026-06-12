@@ -46,6 +46,16 @@ const b34 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/
 const b35 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-35-mk.json'), 'utf8'));
 const b36 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-36-wk.json'), 'utf8'));
 const b37 = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/practice-tests/expansion-batch-37-pc.json'), 'utf8'));
+// Bulk expansion batches 38-73 (dedup-gated waves 1-4), 2026-06-11.
+const expansionBatches = [];
+const TESTS_DIR = path.join(ROOT, 'src/data/practice-tests');
+for (const f of fs.readdirSync(TESTS_DIR).sort()) {
+  const m = f.match(/^expansion-batch-(\d+)-(.+)\.json$/);
+  if (!m || Number(m[1]) < 38) continue;
+  const raw = JSON.parse(fs.readFileSync(path.join(TESTS_DIR, f), 'utf8'));
+  const items = Array.isArray(raw) ? raw : raw.questions;
+  expansionBatches.push({ name: f.replace('.json', ''), items });
+}
 const tags = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/question-tags.seed.json'), 'utf8'));
 const tagMap = new Map(tags.map(t => [t.external_key.toUpperCase(), t]));
 
@@ -195,6 +205,7 @@ const all = [
   ...normalize(b35, 'batch-35-mk'),
   ...normalize(b36, 'batch-36-wk'),
   ...normalize(b37, 'batch-37-pc'),
+  ...expansionBatches.flatMap(eb => normalize(eb.items, eb.name)),
 ];
 
 const seen = new Set();

@@ -1,0 +1,937 @@
+[
+  {
+    "external_key": "PC-B50-001",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Civilian Conservation Corps, established in 1933, put unemployed young men to work planting trees, building trails, and constructing fire lookout towers across the country. Over nine years, more than three million men served in the program. They planted roughly three billion trees and developed facilities still used in national parks today. The corps provided income during the Depression while creating infrastructure that benefited the public for decades.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "The CCC planted three billion trees during the Great Depression.",
+      "The Great Depression left millions of Americans without income.",
+      "National parks depend on trails and towers built long ago.",
+      "The CCC gave unemployed young men jobs while producing lasting public benefits."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage emphasizes two parallel outcomes: employment relief and durable public infrastructure. The detail about three billion trees is a supporting statistic, not the central point. The statement about the Depression lacking income is background context. The comment about national parks is a consequence, not a summary of the whole passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::ccc-depression-public-works"
+  },
+  {
+    "external_key": "PC-B50-002",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe GPS satellites orbiting Earth each carry multiple atomic clocks accurate to within one nanosecond per day. Without this precision, small timing errors would translate into large positional errors on the ground. A receiver calculates its location by measuring how long signals take to arrive from several satellites simultaneously. Civilian navigation, military targeting, and financial transaction networks all rely on GPS time signals to function correctly.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Atomic clocks on GPS satellites enable precise timing that supports many critical systems.",
+      "GPS satellites orbit Earth at a fixed altitude to maintain coverage.",
+      "GPS works by measuring the travel time of signals from multiple satellites.",
+      "Financial networks need accurate time signals to process transactions."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage centers on atomic clock precision as the foundation that makes GPS useful across military, civilian, and financial applications. The option about signal travel time describes a mechanism but not the main point about what enables it. Financial networks are a single example, not the central idea. Satellite altitude is not discussed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::gps-atomic-clocks"
+  },
+  {
+    "external_key": "PC-B50-003",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Triangle Shirtwaist Factory fire of 1911 killed 146 garment workers, most of them young immigrant women. Investigators found that exit doors had been locked, fire escapes were inadequate, and no sprinkler system existed. Public outrage following the disaster drove New York to pass sweeping factory-safety laws within two years. The tragedy is credited with establishing the foundation of American workplace safety regulation.\n\nWhich statement best expresses the main idea of this passage?",
+    "choices": [
+      "The Triangle fire killed workers because managers locked exit doors.",
+      "Immigrant workers in 1911 faced discrimination in New York factories.",
+      "Sprinkler systems are the most important fire-safety feature in a building.",
+      "The Triangle fire exposed dangerous conditions and sparked the workplace safety laws that followed."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage traces the fire's causes to its legislative consequence, making the link between the tragedy and resulting safety reform the central idea. Locked doors are one contributing cause, not a summary of the whole passage. Immigrant discrimination is implied but never stated as the main argument. Sprinkler systems are a detail used to illustrate deficiencies, not the passage's focus.",
+    "status": "verified",
+    "item_family_id": "pc.passage::triangle-shirtwaist-fire"
+  },
+  {
+    "external_key": "PC-B50-004",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nHydrothermal vents on the deep ocean floor were discovered in 1977 and overturned a long-held assumption that life required sunlight to survive. Superheated water rich in minerals erupts from cracks in the seafloor, and chemosynthetic bacteria convert those minerals into energy. Tube worms, crabs, and shrimp cluster around the vents in complete darkness, sustained entirely by this chemical energy chain. The discovery expanded scientists' understanding of where life can exist.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "The discovery of hydrothermal vent ecosystems proved that life can thrive without sunlight.",
+      "Hydrothermal vents were discovered in 1977 during a deep-ocean expedition.",
+      "Bacteria near hydrothermal vents convert minerals into energy through chemosynthesis.",
+      "Deep-ocean creatures such as tube worms survive in extreme conditions."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage builds toward the conclusion that life does not require sunlight, which overturned a foundational assumption. The 1977 discovery date is a detail that sets context. Chemosynthesis is a mechanism that supports the main point but is not itself the point. The specific animals listed are examples of the broader claim about life without sunlight.",
+    "status": "verified",
+    "item_family_id": "pc.passage::hydrothermal-vent-life"
+  },
+  {
+    "external_key": "PC-B50-005",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nCarbon fiber is made by heating strands of organic polymer until most atoms except carbon burn away, leaving a stiff, lightweight lattice. Manufacturers then layer these strands in a resin matrix, creating a composite that is stronger than steel by weight. Carbon fiber is now used in aircraft frames, racing cars, and prosthetic limbs, replacing heavier materials without sacrificing strength.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Carbon fiber is produced through a heating process that removes non-carbon atoms.",
+      "Aircraft and racing cars require materials that are both light and strong.",
+      "Prosthetic limbs made from carbon fiber are more durable than older designs.",
+      "Carbon fiber is a strong, lightweight material with wide applications."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage introduces what carbon fiber is, how it gets its properties, and where it is applied, with the unifying point being its combination of strength and lightness. The heating process is a background detail. Aircraft and racing cars are applications, not the main idea. Prosthetics are one example, too narrow to represent the whole passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::carbon-fiber-composite"
+  },
+  {
+    "external_key": "PC-B50-006",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nFreedom of Information Act requests allow citizens to obtain federal agency records, but the process is slower and less transparent than the law's framers intended. Agencies routinely take years to respond and may redact so heavily that disclosed documents are nearly useless. Fee waivers meant for journalists and researchers are frequently denied. Critics argue that without meaningful enforcement and deadlines with penalties, the right of access exists mainly on paper.\n\nWhich statement best expresses the main idea of this passage?",
+    "choices": [
+      "Although FOIA grants access to federal records, delays and weak enforcement make that access largely ineffective.",
+      "FOIA gives the public a legal right to federal records, which is an important democratic safeguard.",
+      "Agencies redact documents so heavily that FOIA requests rarely yield useful information.",
+      "Journalists and researchers rely on fee waivers to obtain government documents at no cost."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage acknowledges FOIA's stated purpose but focuses on how slow responses, heavy redaction, and unenforced deadlines undermine it in practice. The option about FOIA as a democratic safeguard ignores the critical argument. Heavy redaction is one of several problems described, not the central claim. Fee waivers are a supporting example, not the main idea.",
+    "status": "verified",
+    "item_family_id": "pc.passage::foia-enforcement-gap"
+  },
+  {
+    "external_key": "PC-B50-007",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe GI Bill of 1944 allowed millions of returning veterans to attend college, purchase homes, and start businesses with federal support. Economists later estimated that the law returned seven dollars in tax revenue for every dollar spent, as the better-educated workforce generated higher incomes and broader prosperity. Historians often describe the GI Bill as the single policy most responsible for building the American middle class of the 1950s.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "The GI Bill offered veterans college tuition, home loans, and business support after World War II.",
+      "Veterans who attended college after 1944 earned higher incomes than those who did not.",
+      "Government spending on education typically produces positive economic returns.",
+      "The GI Bill was a highly effective investment that helped create a prosperous middle class."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage moves from what the GI Bill offered to its economic return and its broader historical significance, centering on the conclusion that it was transformative for the middle class. Listing the bill's benefits is background information. The claim about college-educated veterans earning more is an implied supporting detail, not the main point. The general statement about government education spending is too broad and not what the passage argues.",
+    "status": "verified",
+    "item_family_id": "pc.passage::gi-bill-middle-class"
+  },
+  {
+    "external_key": "PC-B50-008",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nOctopuses demonstrate problem-solving abilities that surprised researchers who once believed complex cognition required a vertebrate brain. They open childproof jars, navigate mazes, and recognize individual human faces. Because their neurons are distributed throughout their arms rather than concentrated in a central brain, they appear to process some information locally, in the limb itself. Studying octopus intelligence is reshaping theories of how and where cognition can arise.\n\nThe main idea of this passage is that:",
+    "choices": [
+      "octopuses can open childproof jars, which shows physical dexterity.",
+      "octopus neurons are distributed across their arms rather than in a single brain.",
+      "marine biologists are now more interested in invertebrate behavior than in fish.",
+      "vertebrate brains are not the only structure capable of supporting complex cognition."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage builds toward the conclusion that octopus intelligence challenges the assumption that complex thought requires a vertebrate brain. Opening jars is one example of problem-solving, not the main argument. Distributed neurons are an interesting detail that supports the argument but is not itself the central claim. Marine biologist preferences are not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::octopus-cognition"
+  },
+  {
+    "external_key": "PC-B50-009",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe Doolittle Raid of April 1942 launched sixteen B-25 bombers from the deck of a carrier, a maneuver the planes were never designed to perform. The military value of the damage inflicted on Tokyo was minimal. What mattered was the psychological impact: it shattered Japanese confidence in homeland invulnerability and forced Tokyo to divert resources to home-island defense, indirectly weakening forces elsewhere. The raid's significance lay not in destruction but in what it forced the enemy to believe.\n\nWhich statement best captures the main idea of this passage?",
+    "choices": [
+      "The B-25 bombers used in the Doolittle Raid were modified to take off from a carrier deck.",
+      "Japan shifted defensive resources away from Pacific island campaigns after the Doolittle Raid.",
+      "U.S. forces in 1942 lacked the ability to inflict serious military damage on the Japanese mainland.",
+      "The Doolittle Raid achieved its greatest impact through its psychological and strategic effect rather than physical damage."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage explicitly states that the raid's significance was psychological and strategic, not destructive. Carrier takeoff logistics are a vivid detail in the opening, not the main argument. Diverting Japanese resources is the mechanism of the strategic effect, a supporting point rather than the central claim. The idea that the U.S. lacked destructive capability misreads the passage's argument.",
+    "status": "verified",
+    "item_family_id": "pc.passage::doolittle-raid-impact"
+  },
+  {
+    "external_key": "PC-B50-010",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nMonarch butterflies migrate up to 3,000 miles between Canada and central Mexico each year. Scientists recently discovered that this ability is partly encoded in the butterflies' genes: certain gene variants regulate both a time-compensated sun compass and the urge to fly southwest in autumn. Because the information is inherited rather than learned, monarchs born in captivity with no experience of migration will still orient correctly when released during the fall migration period.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Monarch butterflies can travel up to 3,000 miles in a single migration season.",
+      "Scientists have been studying monarch migration for many decades.",
+      "Captive-raised butterflies cannot successfully complete a long migration.",
+      "The monarch butterfly's migration route is controlled largely by inherited genetic information."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage focuses on the genetic basis of monarch navigation, using the captive butterfly example to confirm that the ability is inherited, not learned. The distance figure is a supporting detail. Scientists studying the monarchs is background context. The statement about captive butterflies contradicts the passage, which says they do orient correctly.",
+    "status": "verified",
+    "item_family_id": "pc.passage::monarch-migration-genes"
+  },
+  {
+    "external_key": "PC-B50-011",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe USS Constitution was launched in 1797 and earned the nickname 'Old Ironsides' during the War of 1812 when cannonballs appeared to bounce off her thick oak hull. She defeated four British frigates without a single loss. The ship has undergone major structural refits roughly every twenty years; the most recent was completed in 2017 after a four-year restoration. She remains the world's oldest commissioned naval warship still afloat.\n\nAccording to the passage, what is the USS Constitution's nickname?",
+    "choices": [
+      "Old Glory",
+      "Iron Frigate",
+      "The Oak Hull",
+      "Old Ironsides"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states directly that the ship 'earned the nickname Old Ironsides.' Old Glory is a nickname for the American flag. Iron Frigate and The Oak Hull are not mentioned and are plausible-sounding distractors based on the passage's content.",
+    "status": "verified",
+    "item_family_id": "pc.passage::uss-constitution-history"
+  },
+  {
+    "external_key": "PC-B50-012",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nOperation Pluto, short for 'Pipe Line Under The Ocean,' was a World War II engineering project that laid fuel pipelines under the English Channel to supply Allied forces after D-Day. The system eventually included multiple pipelines running from England to France. At its peak, it delivered one million gallons of fuel per day. The project required custom pumping stations disguised as seaside buildings to avoid detection by enemy aircraft.\n\nAccording to the passage, how much fuel did the Operation Pluto pipeline deliver at its peak?",
+    "choices": [
+      "One million gallons per day",
+      "One hundred thousand gallons per day",
+      "Ten million gallons per day",
+      "Five hundred thousand gallons per week"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states the pipeline 'delivered one million gallons of fuel per day' at peak capacity. One hundred thousand and five hundred thousand are plausible-sounding numbers not stated in the passage. Ten million is a tenfold exaggeration of the stated figure.",
+    "status": "verified",
+    "item_family_id": "pc.passage::operation-pluto-pipeline"
+  },
+  {
+    "external_key": "PC-B50-013",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Tuskegee Airmen were the first African American military aviators in the U.S. Armed Forces. They trained at Moton Field and Tuskegee Army Air Field in Alabama beginning in 1941. The 332nd Fighter Group, which was part of this program, flew more than 15,000 sorties in the Mediterranean theater and escorted heavy bombers to targets in Germany. They did not lose a single bomber to enemy fighters on the missions they escorted.\n\nWhere did the Tuskegee Airmen begin their flight training?",
+    "choices": [
+      "Moton Field and Tuskegee Army Air Field in Alabama",
+      "Maxwell Air Force Base in Montgomery, Alabama",
+      "Langley Field in Hampton, Virginia",
+      "Keesler Field in Biloxi, Mississippi"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage explicitly names 'Moton Field and Tuskegee Army Air Field in Alabama' as training locations. The other options name real military bases but none are mentioned in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::tuskegee-airmen-training"
+  },
+  {
+    "external_key": "PC-B50-014",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nSubsea fiber-optic cables carry about 95 percent of international internet traffic. A typical transoceanic cable is roughly the diameter of a garden hose in deep water, though it is heavily armored with steel wire near shore where it is most vulnerable to anchor damage and trawling nets. The cables are laid by specialized ships and can last 25 years or more before requiring replacement.\n\nAccording to the passage, why are subsea cables more heavily armored near shore than in deep water?",
+    "choices": [
+      "Shore sections carry more data and need greater protection.",
+      "Deep-water cables are kept thin to reduce the weight ships must carry.",
+      "Shallow water has stronger currents that wear down unarmored cables.",
+      "Near-shore cables are more vulnerable to anchor damage and fishing nets."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states directly that cables are 'heavily armored with steel wire near shore where it is most vulnerable to anchor damage and trawling nets.' The passage does not say shore sections carry more data. Deep-water cable diameter is described but without a weight-reduction explanation. Current strength is not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::subsea-cable-armor"
+  },
+  {
+    "external_key": "PC-B50-015",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Electoral College consists of 538 electors, one for each member of Congress plus three for the District of Columbia. A presidential candidate must win at least 270 electoral votes to be elected. Each state's electoral vote total equals its number of senators plus its number of representatives. The smallest states and D.C. each receive three electoral votes.\n\nAccording to the passage, how many electoral votes are needed to win the presidency?",
+    "choices": [
+      "538",
+      "435",
+      "300",
+      "270"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states that 'a presidential candidate must win at least 270 electoral votes to be elected.' 538 is the total number of electors, not the winning threshold. 435 is the number of House members. 300 is not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::electoral-college-threshold"
+  },
+  {
+    "external_key": "PC-B50-016",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nDamascus steel blades, produced in the Middle East from roughly the third through eighteenth centuries, were prized for holding a sharp edge while remaining flexible enough not to shatter. Modern metallurgists have identified the secret as carbon nanotubes and cementite nanowires that form naturally during the smelting of wootz steel ingots imported from India. The technique was lost when the trade routes supplying the specific ore were disrupted, possibly in the late 1700s.\n\nAccording to the passage, what caused the technique for making Damascus steel to be lost?",
+    "choices": [
+      "The recipe was a closely guarded secret that died with its last practitioners.",
+      "European conquest of the Middle East destroyed most production centers.",
+      "Mass production of cheaper iron made the labor-intensive process unprofitable.",
+      "Interruption of trade routes that supplied the specific ore used in the process."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states the technique was lost 'when the trade routes supplying the specific ore were disrupted.' Secret recipes are not mentioned. European conquest and cheaper iron production are plausible historical explanations but are not found in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::damascus-steel-lost"
+  },
+  {
+    "external_key": "PC-B50-017",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe power grid in the continental United States operates at a frequency of 60 hertz, meaning the alternating current reverses direction 60 times per second. Grid operators must continuously match electricity generation to demand so frequency stays within a narrow band. If generation exceeds demand, frequency rises; if demand exceeds generation, frequency drops. A sustained deviation of even a fraction of a hertz can cause protective equipment to disconnect generators, potentially triggering a cascading blackout.\n\nAccording to the passage, what happens to grid frequency when demand exceeds generation?",
+    "choices": [
+      "Frequency drops below the target level.",
+      "Frequency rises above 60 hertz.",
+      "Generators automatically switch off to reset the system.",
+      "Grid operators manually reduce the voltage to compensate."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states explicitly that 'if demand exceeds generation, frequency drops.' Frequency rising is the opposite scenario described for excess generation. Generators switching off is what happens after a sustained deviation, not immediately when demand exceeds supply. Voltage reduction is not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::power-grid-frequency"
+  },
+  {
+    "external_key": "PC-B50-018",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nConcrete is made by mixing cement, water, sand, and coarse aggregate such as gravel. The cement and water undergo a chemical reaction called hydration that produces calcium silicate hydrate crystals, which bind everything together as the mixture hardens. Concrete gains much of its strength in the first 28 days but continues curing for years. Adding steel reinforcement bars converts it into reinforced concrete, capable of withstanding both compression and tension forces.\n\nAccording to the passage, what chemical process causes concrete to harden?",
+    "choices": [
+      "Oxidation of calcium compounds when exposed to air",
+      "Evaporation of water from the wet mixture",
+      "Hydration, in which cement and water form binding crystals",
+      "Carbonation caused by carbon dioxide reacting with the cement"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage names 'hydration' as the reaction between cement and water that produces calcium silicate hydrate crystals. Oxidation and carbonation are real chemistry processes but are not mentioned. Evaporation of water is a common misconception; the passage describes a chemical reaction, not drying.",
+    "status": "verified",
+    "item_family_id": "pc.passage::concrete-hydration"
+  },
+  {
+    "external_key": "PC-B50-019",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe manatee, sometimes called a sea cow, navigates primarily through hearing and touch rather than vision. Their small eyes provide limited underwater sight, but dense sensory hairs covering their bodies detect water movement, helping them avoid obstacles and locate food. Manatees can hear frequencies across a wider range than humans, which lets them detect boat engine noise from a significant distance.\n\nAccording to the passage, what do manatees use to detect water movement?",
+    "choices": [
+      "A lateral line organ similar to those found in fish",
+      "Sensitive whiskers around the nose and mouth only",
+      "Enlarged inner ears adapted to underwater sound",
+      "Dense sensory hairs covering their bodies"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states directly that 'dense sensory hairs covering their bodies detect water movement.' A lateral line is a fish structure not mentioned in the passage. Whiskers around the nose and mouth is too narrow; the passage specifies hairs covering their bodies broadly. Enlarged inner ears relate to hearing, a separate sense discussed in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::manatee-sensory-hairs"
+  },
+  {
+    "external_key": "PC-B50-020",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nAdministrative law judges (ALJs) are federal officials who conduct hearings in agencies such as the Social Security Administration and the Securities and Exchange Commission. Unlike Article III judges appointed by the president and confirmed by the Senate, ALJs are hired through a merit-based process administered by the Office of Personnel Management. They issue decisions that carry the force of law within their agency but can be appealed to the courts. The Supreme Court has ruled that ALJs are 'inferior officers' under the Constitution.\n\nAccording to the passage, how are administrative law judges selected?",
+    "choices": [
+      "They are appointed by the president and confirmed by the Senate.",
+      "They are elected by agency staff in a merit review process.",
+      "They are hired through a merit-based process run by the Office of Personnel Management.",
+      "They are nominated by the agency head and approved by Congress."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states ALJs are 'hired through a merit-based process administered by the Office of Personnel Management.' Presidential appointment confirmed by the Senate is how Article III judges are selected, which the passage contrasts with ALJs. Election by agency staff and congressional approval are not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::administrative-law-judges"
+  },
+  {
+    "external_key": "PC-B50-022",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nCuttlefish can change the color, pattern, and texture of their skin in under a second. They are colorblind, yet they match their surroundings with stunning accuracy. Researchers believe they may detect color through photoreceptors in their skin rather than their eyes, absorbing light across their entire body surface and adjusting their pigment accordingly.\n\nWhat can be inferred from this passage?",
+    "choices": [
+      "Skin-based color sensing, if confirmed, would represent a form of vision outside the eyes.",
+      "Cuttlefish developed colorblindness as an evolutionary trade-off for stronger camouflage.",
+      "Cuttlefish use camouflage mainly to attract mates rather than to avoid predators.",
+      "All cephalopods share the ability to change skin color rapidly."
+    ],
+    "correct_index": 0,
+    "explanation": "If cuttlefish detect color through photoreceptors in their skin, that would mean they process light information through a non-eye organ, implying a form of distributed vision. The trade-off idea is speculative and not implied. Mate attraction is not mentioned. The passage focuses on cuttlefish specifically and does not generalize to all cephalopods.",
+    "status": "verified",
+    "item_family_id": "pc.passage::cuttlefish-skin-vision"
+  },
+  {
+    "external_key": "PC-B50-023",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Tuskegee Airmen applied to Army Air Corps flight programs for years before being accepted in 1941, only after the National Association for the Advancement of Colored People and the federal courts applied sustained pressure. Once admitted, the airmen completed the same rigorous training as white pilots. Their combat record became one of the most decorated of the war.\n\nWhat can be most reasonably inferred from this passage?",
+    "choices": [
+      "The Army Air Corps believed African American men lacked the aptitude for aviation.",
+      "Legal and political pressure, not military need, was the primary reason Black pilots were admitted.",
+      "Combat success by the Tuskegee Airmen helped undermine arguments for racial exclusion in the military.",
+      "The NAACP was more effective than federal courts in ending segregation in the military."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage implies that once admitted and trained equally, the Tuskegee Airmen performed exceptionally, which would logically challenge justifications for keeping them out. The passage mentions legal and organizational pressure but does not say whether military need was a factor. The relative effectiveness of the NAACP versus courts is not addressed. The Army's beliefs about aptitude are not stated, only implied.",
+    "status": "verified",
+    "item_family_id": "pc.passage::tuskegee-inference-record"
+  },
+  {
+    "external_key": "PC-B50-024",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nJoshua trees grow only in the Mojave Desert and depend almost entirely on the yucca moth for pollination. The moth lays its eggs in the Joshua tree's flower and pollinates it in the same visit. Scientists have documented a northward shift in Joshua tree range as the Mojave warms, but yucca moth populations are not expanding as quickly.\n\nWhat can be inferred from this passage?",
+    "choices": [
+      "Joshua trees and yucca moths evolved together and are genetically identical.",
+      "The northward range shift will eventually allow Joshua trees to colonize cooler climates.",
+      "A growing mismatch between Joshua tree distribution and moth range could threaten tree reproduction.",
+      "Yucca moths pollinate several desert plant species and are not at risk from range changes."
+    ],
+    "correct_index": 2,
+    "explanation": "Because Joshua trees depend almost entirely on the yucca moth for pollination, the slower expansion of moth populations relative to tree range implies trees may reach areas where pollinators are absent, threatening reproduction. The passage does not address genetic relationships. Colonizing cooler climates is not discussed as a goal. The passage specifically says Joshua trees depend almost entirely on this moth, making the claim about other plant species unsupported.",
+    "status": "verified",
+    "item_family_id": "pc.passage::joshua-tree-moth-mismatch"
+  },
+  {
+    "external_key": "PC-B50-025",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe postwar housing boom of the late 1940s and 1950s was shaped significantly by federal mortgage guarantees that made homeownership affordable for millions of veterans. However, these programs were administered in ways that largely excluded Black families. Appraisal guidelines formally designated racially mixed or Black neighborhoods as high risk, and lenders rarely approved insured loans in those areas. As a result, the wealth accumulated through rising home values flowed almost entirely to white households.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "Housing discrimination in the postwar period contributed to long-term racial wealth gaps.",
+      "Veterans who were Black were ineligible for GI Bill benefits on paper.",
+      "Federal mortgage programs were designed specifically to exclude minority buyers.",
+      "Rising home values in the postwar era were concentrated in urban rather than suburban areas."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage argues that wealth from homeownership flowed 'almost entirely to white households' because of discriminatory lending practices, which strongly implies a contribution to lasting wealth disparities. Black veterans were not excluded on paper; the exclusion was in administration and practice. Whether the programs were intentionally designed to exclude is not stated; the passage describes how they were administered. Urban versus suburban concentration is not addressed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::postwar-housing-redlining"
+  },
+  {
+    "external_key": "PC-B50-026",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nWhen the power grid loses a large generator unexpectedly, other generators must accelerate within seconds to cover the shortfall. These governors respond automatically to the frequency drop, no human intervention is required. Systems with many distributed generators handle sudden losses more gracefully than systems dominated by a few very large plants, because the response is spread across more units.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "Human operators are not needed to manage the power grid during normal conditions.",
+      "Large power plants are more efficient than distributed generators but less stable.",
+      "Governors were originally designed for frequency control in railroad engines, not power plants.",
+      "A grid with many small generators is more resilient to the sudden loss of any single generator."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states directly that systems with many distributed generators handle sudden losses 'more gracefully,' allowing a clear inference about resilience. The statement about human operators not being needed goes beyond the passage, which only says governors respond automatically to frequency drops. Efficiency comparisons are not made. The history of governors is not discussed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::grid-distributed-resilience"
+  },
+  {
+    "external_key": "PC-B50-027",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Civilian Conservation Corps paid enrollees thirty dollars per month, of which twenty-five was sent directly to their families back home. By 1935, 500,000 men were enrolled. Commanders were Army officers, and the program operated under military discipline. Enrollees rose at fixed times, ate in mess halls, and lived in barracks-style camps.\n\nWhat can be inferred about the CCC from this passage?",
+    "choices": [
+      "The program served as an informal introduction to military life for many young men.",
+      "Enrollees typically came from families with no other source of income.",
+      "Army officers chose the CCC over combat assignments to avoid deployment abroad.",
+      "The twenty-five dollar family allotment was voluntary."
+    ],
+    "correct_index": 0,
+    "explanation": "With Army officers in command, military discipline, barracks housing, and mess halls, the passage strongly implies the CCC resembled military service in organization and daily life. That enrollees came from impoverished families is a reasonable inference but not clearly supported; the passage states where the money went, not why. Officers' motivations for participating are not discussed. The passage says the allotment 'was sent,' implying it was automatic, not voluntary.",
+    "status": "verified",
+    "item_family_id": "pc.passage::ccc-military-character"
+  },
+  {
+    "external_key": "PC-B50-028",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nA recruiter told the applicant that the next available processing date was six months away and that the paperwork had to be submitted no later than four months before that date. The applicant called back three months later to start the application.\n\nWhat can be inferred about the applicant's situation?",
+    "choices": [
+      "The applicant will be unable to meet the paperwork deadline for the next available date.",
+      "The applicant will need to complete additional medical tests before applying.",
+      "The recruiter will make an exception because the delay was only one month.",
+      "The applicant should resubmit the paperwork within two weeks."
+    ],
+    "correct_index": 0,
+    "explanation": "The paperwork had to be submitted four months before the processing date, but the applicant waited three months to call, leaving only three months before the processing date, which is too late. The passage mentions no medical tests or exceptions. There is no instruction about a two-week resubmission window.",
+    "status": "verified",
+    "item_family_id": "pc.passage::recruiter-deadline-missed"
+  },
+  {
+    "external_key": "PC-B50-029",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nDeep-sea fish that live below 3,000 feet rarely survive being brought to the surface. Their bodies are adapted to crushing pressure, and rapid decompression causes dissolved gases to expand in their tissues. Marine biologists studying these species must often rely on remotely operated vehicles and in-situ cameras rather than bringing live specimens aboard.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "Deep-sea fish are not suitable for aquarium display under any circumstances.",
+      "The behaviors and biology of deep-sea fish are likely less well understood than those of shallow-water species.",
+      "Remotely operated vehicles are too expensive for most marine research programs.",
+      "Deep-sea fish evolved high-pressure adaptations to outcompete shallow-water species."
+    ],
+    "correct_index": 1,
+    "explanation": "Because specimens cannot be brought to the surface alive, researchers must study these fish through indirect means such as cameras, limiting what can be learned about their biology and behavior compared with fish that can be captured and examined. The passage does not say aquarium display is impossible under all circumstances, only that standard capture is problematic. ROV costs are not discussed. Competitive evolution against shallow-water species is not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::deep-sea-fish-study-limits"
+  },
+  {
+    "external_key": "PC-B50-030",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nIn 1945, Congress passed the Administrative Procedure Act to standardize how federal agencies issue regulations and conduct hearings. Before the act, each agency operated under its own informal rules, creating inconsistency. The APA required agencies to publish proposed rules, accept public comments, and provide written explanations for final decisions.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "Before 1945, citizens had little consistent ability to challenge or comment on proposed federal regulations.",
+      "Congress passed the APA because agencies were too slow to issue new regulations.",
+      "The APA eliminated the need for administrative law judges.",
+      "Federal agencies today no longer need to explain their regulatory decisions."
+    ],
+    "correct_index": 0,
+    "explanation": "Since the APA introduced requirements for public comment and written explanations that did not exist before, it follows that citizens previously lacked these formal channels for input. The passage does not suggest agencies were too slow; the problem was inconsistency. ALJs are not mentioned in relation to the APA in this passage. The APA requiring written explanations means agencies still must provide them, making the last option directly contradicted.",
+    "status": "verified",
+    "item_family_id": "pc.passage::apa-public-comment"
+  },
+  {
+    "external_key": "PC-B50-031",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe USS Constitution has survived more than two centuries of war, weather, and time. Her hull was built from live oak, a wood so dense that early sailors said it refused to be cut. She has been refitted and restored many times, yet the spirit of those first timbers seems to persist. Watching her under sail is less like seeing a ship and more like watching history breathe.\n\nThe author's tone toward the USS Constitution is best described as:",
+    "choices": [
+      "skeptical and analytical",
+      "admiring and reverential",
+      "cautious and detached",
+      "amused and ironic"
+    ],
+    "correct_index": 1,
+    "explanation": "Phrases such as 'the spirit of those first timbers seems to persist' and 'watching history breathe' convey deep respect and awe. Skeptical and analytical would require questioning or measuring; the tone is celebratory rather than critical. Cautious and detached describe a neutral or reserved stance opposite to what the passage expresses. Amused and ironic would signal humor or mockery, neither of which is present.",
+    "status": "verified",
+    "item_family_id": "pc.passage::constitution-admiring-tone"
+  },
+  {
+    "external_key": "PC-B50-032",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nTo apply for a fee waiver under FOIA, the requester must submit a written statement explaining how the requested records primarily benefit the public rather than the requester's private interest. The agency has twenty business days to grant or deny the waiver. If denied, the requester may appeal within thirty days. All appeals must be in writing and addressed to the agency's FOIA appeals officer.\n\nThe author's primary purpose in this passage is to:",
+    "choices": [
+      "criticize agencies that deny fee waivers unfairly",
+      "persuade readers to submit FOIA requests",
+      "provide step-by-step instructions for requesting a fee waiver",
+      "explain why FOIA was created"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage lists specific steps, timelines, and requirements in a procedural sequence, which is characteristic of instructional writing. There is no criticism of agencies or persuasive language. The origins or purpose of FOIA are not discussed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::foia-waiver-instructional"
+  },
+  {
+    "external_key": "PC-B50-033",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Triangle Shirtwaist fire could not have been an accident in any meaningful sense of the word. Every failure had a name: the locked door, the absent fire escapes, the indifferent inspector. What burned that day was not merely a building. It was the fiction that market forces alone protect workers from the consequences of employer greed.\n\nThe author's tone in this passage is best described as:",
+    "choices": [
+      "neutral and informative",
+      "sorrowful and nostalgic",
+      "indignant and accusatory",
+      "hopeful and encouraging"
+    ],
+    "correct_index": 2,
+    "explanation": "The phrase 'every failure had a name' assigns blame deliberately, and 'employer greed' is openly condemnatory language. This is indignant and accusatory, not neutral. There is no nostalgia or grief for a lost past; the tone is angry. Hope and encouragement are entirely absent from the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::triangle-fire-indignant"
+  },
+  {
+    "external_key": "PC-B50-034",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nResearchers studying octopus behavior note that the animals show consistent individual personalities across repeated tests. Some are bold, approaching novel objects quickly; others are cautious, hanging back until the object has been present for several minutes. The variation persists even when environmental conditions are held constant, suggesting personality differences reflect something internal rather than external stimulation.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "argue that octopuses should have legal protection as sentient animals",
+      "entertain readers with surprising anecdotes about unusual sea creatures",
+      "report research findings suggesting that individual personality exists in octopuses",
+      "warn scientists against projecting human traits onto non-human animals"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage describes test methodology and findings in an objective, reporting style. No argument for legal protection is made. While the content may surprise readers, the tone is not anecdotal or entertaining. The passage does not caution against anthropomorphism; it presents behavioral evidence straightforwardly.",
+    "status": "verified",
+    "item_family_id": "pc.passage::octopus-personality-reporting"
+  },
+  {
+    "external_key": "PC-B50-035",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe concrete poured into the bases of those towers will outlast every person alive today. Cities argue about whether the buildings are beautiful; engineers argue about whether the foundations are efficient. But the concrete itself does not argue. It simply endures, indifferent to opinion, holding up what was placed on top of it as if that is all that ever mattered.\n\nThe author's tone toward concrete is best described as:",
+    "choices": [
+      "dismissive, suggesting concrete is a boring and unimportant material",
+      "quietly appreciative, treating concrete's durability as a kind of understated virtue",
+      "scientific, analyzing the chemical properties that give concrete its longevity",
+      "mournful, lamenting that structures outlast the humans who built them"
+    ],
+    "correct_index": 1,
+    "explanation": "The author personifies concrete as patient, enduring, and unbothered by debate, framing these as admirable qualities in a subdued way. Dismissive would mean the author finds concrete unworthy of attention; the passage gives it careful, respectful attention. Scientific analysis of chemistry is not present. Mournful implies grief, which the tone does not convey; the mood is contemplative rather than sad.",
+    "status": "verified",
+    "item_family_id": "pc.passage::concrete-endurance-appreciative"
+  },
+  {
+    "external_key": "PC-B50-036",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe agency reviewed the environmental impact statement, noted fifteen significant concerns, and then approved the project anyway, attaching a footnote stating that the concerns had been 'considered.' One wonders what it means to consider something if consideration produces no change in outcome. Perhaps in this context it means the agency read the words, set them on the table, and walked away.\n\nThe author's attitude toward the agency's approval process is best described as:",
+    "choices": [
+      "supportive, believing the agency followed proper review procedures",
+      "confused, unable to understand the agency's legal authority to approve the project",
+      "sarcastic and critical, implying the agency's review was superficial",
+      "sympathetic, acknowledging the difficult position the agency was in"
+    ],
+    "correct_index": 2,
+    "explanation": "Phrases like 'one wonders what it means to consider something' and the image of reading words and walking away are ironic, mocking the agency's claim that concerns were considered. The author is clearly critical, not supportive. There is no confusion about legal authority; the tone is knowing and pointed. Sympathy for the agency is entirely absent.",
+    "status": "verified",
+    "item_family_id": "pc.passage::agency-review-sarcastic"
+  },
+  {
+    "external_key": "PC-B50-037",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nCarbon fiber components must be inspected carefully after any impact, however minor, because internal delamination can occur without visible surface damage. Technicians use ultrasonic testing or tapping to detect voids between layers. Any panel showing internal separation must be replaced, not repaired. Skipping inspection after even a low-speed collision can lead to catastrophic structural failure during later use.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "persuade readers to choose carbon fiber over aluminum for structural components",
+      "warn technicians about the safety risks of skipping post-impact inspection of carbon fiber",
+      "explain the manufacturing process used to make carbon fiber panels",
+      "compare the durability of carbon fiber with traditional metals"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage focuses on the need for inspection after impact and the danger of skipping it, with the conclusion that failure to inspect can cause structural failure. There is no comparison with aluminum or other metals. Manufacturing is not described. The passage is cautionary, not promotional for carbon fiber.",
+    "status": "verified",
+    "item_family_id": "pc.passage::carbon-fiber-inspection-warning"
+  },
+  {
+    "external_key": "PC-B50-038",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe yucca moth does not simply happen to pollinate the Joshua tree. It packs pollen into a ball with its specialized mouthparts and deliberately deposits it on the stigma before laying its eggs. It is among the clearest known examples of a mutualistic relationship in nature, each species depending on the other for survival, each contributing exactly what the other requires.\n\nThe author's tone in this passage is best described as:",
+    "choices": [
+      "neutral and informative, but with a tone of quiet admiration for the relationship",
+      "alarmed, warning that the yucca moth is at risk of extinction",
+      "humorous, using the moth's behavior as a metaphor for human cooperation",
+      "skeptical, questioning whether the relationship truly benefits both species"
+    ],
+    "correct_index": 0,
+    "explanation": "Words like 'clearest known examples' and 'exactly what the other requires' convey scientific accuracy alongside understated appreciation. There is no alarm about extinction. No humor or metaphor for humans is present. The author presents the mutualism as established, showing no skepticism.",
+    "status": "verified",
+    "item_family_id": "pc.passage::yucca-moth-admiring"
+  },
+  {
+    "external_key": "PC-B50-039",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe report was twelve hundred pages long, and the executive summary declared the water supply safe. Few reporters read past page three. The regulator who signed the summary had previously worked for the company whose discharge was under review and would return to that company eighteen months later. These are simply facts. The reader may draw whatever conclusions seem appropriate.\n\nWhat is the author's purpose in this passage?",
+    "choices": [
+      "to present balanced information so readers can fairly evaluate the regulator's decision",
+      "to expose corruption by directly accusing the regulator of breaking the law",
+      "to imply wrongdoing through factual juxtaposition while maintaining plausible neutrality",
+      "to criticize reporters for failing to cover environmental issues thoroughly"
+    ],
+    "correct_index": 2,
+    "explanation": "The phrase 'these are simply facts' and the invitation for the reader to draw conclusions are deliberate rhetorical moves that suggest impropriety without making an explicit accusation. The author is not balanced; the facts are curated to imply a conflict of interest. No laws are explicitly alleged to have been broken. The observation about reporters is incidental, not the primary purpose.",
+    "status": "verified",
+    "item_family_id": "pc.passage::regulator-conflict-implied"
+  },
+  {
+    "external_key": "PC-B50-040",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nTo fill a sandbag properly, open the bag and fold the top third down to form a cuff. Scoop sand until the bag is about two-thirds full. Remove the cuff and tie the bag securely. Place the filled bag seam-side down when stacking.\n\nAccording to the passage, what is the correct order of steps?",
+    "choices": [
+      "Scoop sand, fold the cuff, tie the bag, place seam-side down",
+      "Open and cuff the bag, scoop sand, remove cuff and tie, place seam-side down",
+      "Tie the bag, scoop sand, fold the cuff, place seam-side down",
+      "Fold the cuff, place seam-side down, scoop sand, tie the bag"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage lists four steps in order: cuff the bag, fill it two-thirds, remove cuff and tie, then place seam-side down. Scooping first contradicts the instruction to cuff before filling. Tying before filling is impossible. Placing before filling reverses the sequence entirely.",
+    "status": "verified",
+    "item_family_id": "pc.passage::sandbag-filling-steps"
+  },
+  {
+    "external_key": "PC-B50-041",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Mississippi River drains a basin covering 40 percent of the continental United States, carrying water from as far as Montana in the west and New York in the east. The Missouri River, its longest tributary, flows more than 2,300 miles before joining the Mississippi north of St. Louis. The combined system empties into the Gulf of Mexico near New Orleans.\n\nHow is this passage organized?",
+    "choices": [
+      "By comparing the Mississippi and Missouri rivers to other North American rivers",
+      "By describing a water system from its sources inward to its outlet",
+      "By explaining the economic importance of rivers to the United States",
+      "By listing the states the Mississippi River passes through in order"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage moves from the broad drainage basin to the tributary and then to the final outlet, tracing water flow from sources toward the Gulf. No comparison with other river systems is made. Economic importance is not discussed. The passage does not list states in sequence.",
+    "status": "verified",
+    "item_family_id": "pc.passage::mississippi-basin-source-to-outlet"
+  },
+  {
+    "external_key": "PC-B50-042",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nMonarch butterflies that emerge in late summer differ from those born earlier in the year in one crucial way: they do not reproduce immediately. Instead, they enter a state of reproductive dormancy and fly south to overwinter in Mexican forests. Spring warmth triggers the end of dormancy, and they begin moving north again, laying eggs along the way before dying. Their offspring complete the northern migration in stages, with up to four generations making the return trip.\n\nThe passage is primarily organized by:",
+    "choices": [
+      "comparing the migrating generation of monarchs with the non-migrating generations",
+      "listing the habitats monarchs use at different points in their life cycle",
+      "explaining a sequence of seasonal biological events in the monarch life cycle",
+      "arguing that monarch migration should be studied more closely by scientists"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage follows a chronological structure from late-summer emergence to southward flight, overwintering, the trigger of spring warmth, and the northward return by successive generations. While there is contrast between the migrating and non-migrating generations, the dominant structure is the seasonal sequence. No specific habitats are listed as a separate category. No argument is made; the passage is descriptive.",
+    "status": "verified",
+    "item_family_id": "pc.passage::monarch-lifecycle-sequence"
+  },
+  {
+    "external_key": "PC-B50-043",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nReinforced concrete is stronger in compression than in tension, meaning it resists being squeezed well but cracks under bending or pulling forces. Steel, by contrast, handles tension well but is expensive and vulnerable to corrosion. Engineers combine the two materials, placing steel rebar where tension is expected and relying on concrete to handle compression, creating a composite that outperforms either material used alone.\n\nHow is this passage organized?",
+    "choices": [
+      "A sequence of steps engineers follow to design a reinforced concrete structure",
+      "A comparison of concrete and steel leading to the solution of combining them",
+      "A cause-and-effect explanation of how concrete cracks under load",
+      "A definition of reinforced concrete followed by examples of its uses"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage first characterizes concrete's weakness in tension, then contrasts it with steel's weakness in compression, and concludes that combining them overcomes both limitations. This is a compare-and-contrast leading to a solution structure. No step-by-step design process is described. Cause and effect is not the primary structure. No uses of reinforced concrete are listed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::rebar-compare-contrast"
+  },
+  {
+    "external_key": "PC-B50-044",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe Triangle Shirtwaist Factory occupied the top three floors of a ten-story building. On the afternoon of March 25, 1911, a scrap bin of fabric scraps caught fire. Within minutes, flames had spread across the cutting tables. Workers rushed to the stairwells, only to find most doors locked. By the time firefighters arrived, the fire had burned through two floors. The blaze was extinguished within eighteen minutes of the first alarm.\n\nWhich organizational pattern does this passage follow?",
+    "choices": [
+      "Cause and effect, tracing how management decisions led to the fire",
+      "Chronological order, narrating events from the fire's start to its end",
+      "Spatial order, describing the layout of the factory floor by floor",
+      "Problem and solution, identifying the fire hazard and the response that resolved it"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage traces events in time: where the fire started, how it spread, workers' attempts to escape, the firefighters' arrival, and the fire being extinguished. Cause and effect would require the passage to trace management decisions as causes; it narrates physical events in order. Spatial order would move through locations systematically without the time dimension. Problem-solution would require a proposed remedy, which is not present.",
+    "status": "verified",
+    "item_family_id": "pc.passage::triangle-fire-chronological"
+  },
+  {
+    "external_key": "PC-B50-045",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nTo request federal records under FOIA, first identify the specific agency that holds the records. Next, submit a written request to that agency's FOIA office describing the records you want. The agency has twenty business days to acknowledge the request. If you are not satisfied with the response, you may file an administrative appeal before going to court.\n\nAccording to the passage, what step comes immediately after submitting the written request?",
+    "choices": [
+      "Filing an administrative appeal",
+      "Identifying the agency that holds the records",
+      "Waiting for the agency to acknowledge the request within twenty business days",
+      "Taking the agency to court"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage orders steps as: identify the agency, submit the request, wait for acknowledgment within twenty days, and then pursue appeal if unsatisfied. Filing an appeal comes later in the process. Identifying the agency is the first step, before submitting. Going to court is the last resort, after an appeal.",
+    "status": "verified",
+    "item_family_id": "pc.passage::foia-request-sequence"
+  },
+  {
+    "external_key": "PC-B50-046",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nGrid operators keep backup generation capacity available for emergencies, but that reserve carries a cost: every megawatt held in reserve is a megawatt not sold. Larger grids can share reserves across broader areas, reducing the total reserve margin needed. When grids are interconnected, a shortfall in one region can be covered by surplus in another. The economic case for grid interconnection therefore rests on the reduced cost of shared reserves.\n\nHow is this passage organized?",
+    "choices": [
+      "Sequence of events leading to the adoption of interconnected power grids",
+      "Comparison of reserve costs in large and small grids",
+      "Chain of reasoning from a problem to its cause to the solution",
+      "Definition of grid reserves followed by a debate about their value"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage identifies the problem of costly reserve capacity, introduces the insight that larger interconnected grids need less reserve, and concludes with an economic rationale for interconnection as the solution. While the passage compares large and small grids, the comparison is a step in the reasoning chain, not the dominant structure. The passage is not sequential in time and involves no debate.",
+    "status": "verified",
+    "item_family_id": "pc.passage::grid-reserve-reasoning-chain"
+  },
+  {
+    "external_key": "PC-B50-047",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nSmall-arms fire could not sink a battleship; a sustained torpedo attack from multiple vessels could. Multiple torpedo hits could not stop an aircraft carrier if her damage-control teams were well trained; but flooding in multiple compartments simultaneously could overwhelm even the best crew. By 1945, naval planners understood that no single threat was decisive in isolation.\n\nHow is this passage structured?",
+    "choices": [
+      "Alternating claims and counterclaims that ultimately reach no conclusion",
+      "A series of escalating cause-and-effect statements building toward a conclusion",
+      "A timeline of naval weapons developments from 1900 to 1945",
+      "A list of threats to naval vessels ranked from least to most dangerous"
+    ],
+    "correct_index": 1,
+    "explanation": "Each sentence introduces a scenario and its limitation, then the next raises the threshold of what it would take to overcome that defense, building toward the conclusion that no single threat alone is decisive. There are no counterclaims debated back and forth. No timeline of weapons history is presented. The threats are not ranked; they are used to build a cumulative argument.",
+    "status": "verified",
+    "item_family_id": "pc.passage::naval-threats-escalating"
+  },
+  {
+    "external_key": "PC-B50-048",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe first subsea telegraph cable across the Atlantic was laid in 1858 and failed after just a few weeks. Engineers spent the next eight years improving cable insulation and signal amplification. A more durable cable succeeded in 1866 and remained in service for years. Today's fiber-optic cables transmit billions of times more data than the original copper wire, but the fundamental challenge, keeping a signal intact across thousands of miles of ocean, remains the same.\n\nWhich organizational pattern best describes this passage?",
+    "choices": [
+      "Spatial, moving from the American coast to the European coast along the cable route",
+      "Chronological, tracing the development of transatlantic cable technology over time",
+      "Compare and contrast, showing differences between copper and fiber-optic cables",
+      "Problem and solution, presenting the 1858 failure and the 1866 cable as the fix"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage moves through time: 1858 failure, eight years of improvement, 1866 success, and present-day fiber optics, making chronological order the dominant structure. While the first and last sentences create an implicit comparison between old copper and modern fiber, this is embedded within the timeline rather than being the primary structure. The 1866 cable is presented as progress, not a final solution, since the challenge still exists, making problem-solution too simple a label.",
+    "status": "verified",
+    "item_family_id": "pc.passage::transatlantic-cable-chronological"
+  },
+  {
+    "external_key": "PC-B50-049",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe ship's hull showed signs of fatigue after two decades of service. Engineers discovered hairline cracks near the keel that, left unaddressed, could compromise the vessel's structural integrity.\n\nAs used in the passage, the word 'fatigue' most nearly means:",
+    "choices": [
+      "exhaustion from physical effort",
+      "weakness caused by repeated stress",
+      "a type of camouflage uniform",
+      "loss of appetite common in aging"
+    ],
+    "correct_index": 1,
+    "explanation": "In an engineering context, fatigue refers to material weakness or cracking caused by repeated stress cycles, which aligns with the discovery of hairline cracks. Physical exhaustion is the common everyday meaning but does not fit a ship's hull. Camouflage uniform is another meaning of 'fatigue' but is unrelated to engineering and structures. Loss of appetite is unrelated to the context.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-fatigue-hull"
+  },
+  {
+    "external_key": "PC-B50-050",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe fire investigator's report was meticulous: it catalogued every scrap of physical evidence, documented the position of each body, and noted which exit handles showed heat damage. The prosecutor said the report was the most thorough she had seen in fifteen years.\n\nAs used in the passage, the word 'catalogued' most nearly means:",
+    "choices": [
+      "destroyed",
+      "questioned",
+      "organized and recorded systematically",
+      "photographed and removed"
+    ],
+    "correct_index": 2,
+    "explanation": "The context describes a meticulous report listing and documenting physical evidence, making 'organized and recorded systematically' the best fit. Destroyed is the opposite of documenting evidence. Questioned implies doubt, which contradicts the prosecutor's praise. Photographed and removed describes a physical action, while catalogued is about the act of recording and organizing.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-catalogued-evidence"
+  },
+  {
+    "external_key": "PC-B50-051",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe commanding officer had an acute sense of when morale was slipping. Long before troops began complaining openly, she sensed the tension and addressed it.\n\nAs used in the passage, 'acute' most nearly means:",
+    "choices": [
+      "severe and painful",
+      "sharp and finely developed",
+      "brief and temporary",
+      "medical and clinical"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes the officer detecting subtle signals before others noticed, which fits 'acute' meaning keen or highly sensitive. Severe and painful is a common medical use of acute, but the passage discusses a perceptual ability, not an injury. Brief and temporary is another medical sense of acute, unrelated to a sensing ability. Medical and clinical imports a meaning not suggested by the context.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-acute-sense"
+  },
+  {
+    "external_key": "PC-B50-052",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe CCC camps were austere: wooden barracks, basic meals, no radios or personal amenities. Enrollees were told that the work, not the comfort, was the point.\n\nAs used in the passage, 'austere' most nearly means:",
+    "choices": [
+      "dangerous and poorly maintained",
+      "strict in moral standards",
+      "plain and without comforts",
+      "located in remote wilderness areas"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage lists wooden barracks, basic meals, and absence of amenities as examples of what made the camps austere, making 'plain and without comforts' the best fit. Dangerous and poorly maintained is not implied; basic is not the same as unsafe. Strict moral standards is another meaning of austere but does not match the physical description of the camps. Remote location is mentioned elsewhere but not what 'austere' describes here.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-austere-camps"
+  },
+  {
+    "external_key": "PC-B50-053",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe bridge inspection revealed that the corrosion was not superficial. What looked like surface rust extended through the entire cross-section of three support beams, rendering them structurally compromised.\n\nAs used in the passage, 'superficial' most nearly means:",
+    "choices": [
+      "unexpected or surprising",
+      "limited to the outer surface without going deeper",
+      "caused by exposure to salt air",
+      "visible only under magnification"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage contrasts superficial with corrosion that extended 'through the entire cross-section,' making 'limited to the outer surface' the clear opposite the text establishes. Unexpected is not the meaning; the inspection was looking for exactly this. Salt air is a cause of corrosion, not a definition of superficial. Visible only under magnification contradicts the passage, which implies the rust was visible on the surface.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-superficial-corrosion"
+  },
+  {
+    "external_key": "PC-B50-054",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe new policy was intended to rationalize the agency's procurement process, eliminating redundant approvals and consolidating purchasing authority in a single office.\n\nAs used in the passage, 'rationalize' most nearly means:",
+    "choices": [
+      "justify or make excuses for",
+      "make more logical and efficient by removing waste",
+      "return to a previous system that worked better",
+      "assign numerical values to procurement decisions"
+    ],
+    "correct_index": 1,
+    "explanation": "The context describes eliminating redundant approvals and consolidating authority, both of which point to making a process more efficient and logical, the primary meaning of rationalize in an organizational context. Justify or make excuses for is a common personal use of rationalize but does not fit a policy designed to improve a system. Return to a previous system is the opposite of the reform described. Assigning numerical values is unrelated.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-rationalize-process"
+  },
+  {
+    "external_key": "PC-B50-055",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe chemosynthetic bacteria at hydrothermal vents are prolific, forming thick mats that cover the seafloor and supporting entire communities of larger organisms. A single vent field can sustain thousands of animals per square meter.\n\nAs used in the passage, 'prolific' most nearly means:",
+    "choices": [
+      "producing in large quantities",
+      "brightly colored and visible",
+      "ancient and long-established",
+      "resistant to extreme heat"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage describes bacteria forming thick mats and supporting large communities, showing they produce abundantly, which is the meaning of prolific. Brightly colored is contradicted by the deep-sea, lightless environment. Ancient is plausible but not what the word means in this context. Heat resistance describes an adaptation, not the quantity produced.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-prolific-bacteria"
+  },
+  {
+    "external_key": "PC-B50-056",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe official response to the flooding was largely perfunctory: a press release was issued, an inspection team visited briefly, and a report was filed. Six months later, the same streets flooded again under identical conditions.\n\nAs used in the passage, 'perfunctory' most nearly means:",
+    "choices": [
+      "carried out as routine with little genuine care or effort",
+      "swift and decisive, arriving faster than expected",
+      "thorough but ultimately unsuccessful",
+      "subject to review by a higher authority"
+    ],
+    "correct_index": 0,
+    "explanation": "The actions described, a press release, a brief visit, a filed report, all accomplished the minimum without solving the problem, which matches perfunctory meaning done as a formality with little real engagement. Swift and decisive is the opposite; the response was minimal, not urgent. Thorough but unsuccessful contradicts the passage, which implies the response lacked depth. Subject to review describes a procedural status, not the quality of the effort.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-perfunctory-response"
+  }
+]

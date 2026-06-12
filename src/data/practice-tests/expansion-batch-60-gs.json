@@ -1,0 +1,954 @@
+[
+  {
+    "external_key": "GS-B60-001",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which node in the heart generates the electrical impulse that triggers each heartbeat?",
+    "choices": [
+      "Sinoatrial (SA) node",
+      "Atrioventricular (AV) node",
+      "Bundle of His",
+      "Purkinje fibers"
+    ],
+    "correct_index": 0,
+    "explanation": "The sinoatrial (SA) node, located in the right atrium, is the heart's natural pacemaker. It fires spontaneously about 60-100 times per minute and sends the electrical signal across the atria before passing it to the AV node. The AV node delays the signal slightly to allow the atria to contract before the ventricles do; the Bundle of His and Purkinje fibers then carry the impulse into the ventricular walls.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::sa-node-cardiac-pacemaker"
+  },
+  {
+    "external_key": "GS-B60-002",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which digestive enzyme, produced by the pancreas, breaks down fats into fatty acids and glycerol?",
+    "choices": [
+      "Amylase",
+      "Pepsin",
+      "Lipase",
+      "Trypsin"
+    ],
+    "correct_index": 2,
+    "explanation": "Pancreatic lipase cleaves triglycerides (dietary fats) into fatty acids and monoglycerides that can be absorbed by the small intestine. Amylase breaks down starch into sugars. Pepsin is a stomach enzyme that digests proteins, and trypsin is a pancreatic protease that further digests proteins in the small intestine.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::lipase-fat-digestion"
+  },
+  {
+    "external_key": "GS-B60-003",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which branch of the autonomic nervous system slows heart rate, stimulates digestion, and promotes the 'rest-and-digest' state?",
+    "choices": [
+      "Somatic nervous system",
+      "Sympathetic nervous system",
+      "Central nervous system",
+      "Parasympathetic nervous system"
+    ],
+    "correct_index": 3,
+    "explanation": "The parasympathetic nervous system, often summarized as 'rest and digest,' uses acetylcholine to slow the heart, stimulate gut motility, and promote glandular secretion. The sympathetic nervous system does the opposite, triggering fight-or-flight responses such as increased heart rate and dilated pupils. The somatic system controls voluntary skeletal muscles and is not part of the autonomic division.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::parasympathetic-rest-digest"
+  },
+  {
+    "external_key": "GS-B60-004",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Insect-pollinated flowers attract pollinators primarily through which of the following?",
+    "choices": [
+      "Brightly colored petals and sweet nectar",
+      "Extremely light, smooth pollen grains released in clouds",
+      "Lack of fragrance to avoid wasting energy",
+      "Pollen produced in quantities thousands of times greater than needed"
+    ],
+    "correct_index": 0,
+    "explanation": "Insect-pollinated flowers typically have showy, brightly colored petals and produce nectar to attract insects such as bees and butterflies, which carry sticky pollen from flower to flower. Wind-pollinated flowers produce enormous quantities of light, smooth pollen and generally have small, inconspicuous petals. Heavy, sticky pollen is a hallmark of animal-pollinated species and would be ineffective for wind dispersal.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::entomophily-insect-pollination-traits"
+  },
+  {
+    "external_key": "GS-B60-005",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which key function does the liver perform that helps eliminate toxic nitrogen-containing waste from amino acid breakdown?",
+    "choices": [
+      "Converting ammonia into urea, which the kidneys then excrete",
+      "Converting urea into ammonia for kidney excretion",
+      "Producing red blood cells to carry nitrogen away",
+      "Absorbing ammonium ions directly from the large intestine"
+    ],
+    "correct_index": 0,
+    "explanation": "The liver converts toxic ammonia, produced from amino acid breakdown, into far less toxic urea through the urea cycle. The kidneys then filter urea from the blood and excrete it in urine. Insulin is produced by the pancreas; adult red blood cell production occurs mainly in bone marrow; and water absorption is primarily a function of the large intestine.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::liver-urea-detoxification"
+  },
+  {
+    "external_key": "GS-B60-006",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "Which part of the nephron is primarily responsible for creating the concentration gradient in the kidney medulla that allows water to be reabsorbed from the collecting duct?",
+    "choices": [
+      "Bowman's capsule",
+      "Proximal convoluted tubule",
+      "Glomerulus",
+      "Loop of Henle"
+    ],
+    "correct_index": 3,
+    "explanation": "The loop of Henle, which dips deep into the kidney medulla, establishes a high-solute concentration gradient through countercurrent multiplication. The descending limb is permeable to water and loses water by osmosis; the ascending limb actively pumps out sodium and chloride, concentrating the medulla. This gradient is what allows antidiuretic hormone (ADH) to drive water reabsorption in the collecting duct. The glomerulus and Bowman's capsule are involved in initial filtration, not concentration.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::loop-of-henle-concentration-gradient"
+  },
+  {
+    "external_key": "GS-B60-007",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "A plant's roots grow downward in response to gravity. What term describes this growth response?",
+    "choices": [
+      "Hydrotropism",
+      "Phototropism",
+      "Thigmotropism",
+      "Gravitropism"
+    ],
+    "correct_index": 3,
+    "explanation": "Gravitropism (also called geotropism) is growth directed by gravity. Roots exhibit positive gravitropism by growing in the direction of gravitational pull; shoots exhibit negative gravitropism by growing upward. Phototropism is growth toward or away from light. Hydrotropism is growth toward moisture, and thigmotropism is growth in response to touch, as seen in climbing plants.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::gravitropism-root-growth-downward"
+  },
+  {
+    "external_key": "GS-B60-008",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "Retroviruses such as HIV carry their genetic information as RNA. What enzyme do they use to copy that RNA into DNA inside the host cell?",
+    "choices": [
+      "DNA polymerase",
+      "RNA polymerase",
+      "Reverse transcriptase",
+      "Helicase"
+    ],
+    "correct_index": 2,
+    "explanation": "Retroviruses use the enzyme reverse transcriptase to convert their single-stranded RNA genome into double-stranded DNA, which can then be integrated into the host cell's chromosomes as a provirus. This reverses the usual flow of genetic information (DNA to RNA). DNA polymerase copies DNA to DNA; RNA polymerase copies DNA to RNA; helicase unwinds the double helix during replication.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::retrovirus-reverse-transcriptase-rna-to-dna"
+  },
+  {
+    "external_key": "GS-B60-009",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "Which of the following best describes how a viral particle differs structurally from a bacterial cell?",
+    "choices": [
+      "Viruses lack ribosomes and a cell membrane of their own",
+      "Viruses have a cell wall; bacteria do not",
+      "Bacteria contain only RNA; viruses contain only DNA",
+      "Viruses are larger than most bacteria"
+    ],
+    "correct_index": 0,
+    "explanation": "Viruses are not cells at all. They consist only of a nucleic acid core (DNA or RNA) surrounded by a protein coat (capsid), and some have a lipid envelope derived from the host cell. They have no ribosomes, no cytoplasm, and no cell membrane of their own, so they cannot replicate without hijacking a host cell's machinery. Bacteria are fully living cells with ribosomes, a cell membrane, and often a cell wall.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::virus-vs-bacteria-structure-no-ribosomes"
+  },
+  {
+    "external_key": "GS-B60-010",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "The AV node delays the electrical impulse of the heart before passing it to the ventricles. Why is this delay physiologically important?",
+    "choices": [
+      "It allows the SA node time to reset and fire again",
+      "It prevents the signal from reaching the Purkinje fibers",
+      "It increases the force of ventricular contraction by reducing heart rate",
+      "It gives the atria time to finish contracting before the ventricles contract"
+    ],
+    "correct_index": 3,
+    "explanation": "The AV node introduces a brief delay of roughly 0.1 seconds between atrial and ventricular depolarization. This ensures that the atria complete their contraction and fully eject blood into the ventricles before the ventricles contract. Without this delay, the atria and ventricles might contract simultaneously, reducing cardiac efficiency. The delay is not for the SA node to reset; the SA node operates on its own cycle independently.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::av-node-delay-atria-ventricles"
+  },
+  {
+    "external_key": "GS-B60-011",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "Cancer cells frequently exhibit uncontrolled division because they bypass normal cell-cycle checkpoints. Which protein, often called the 'guardian of the genome,' normally halts cell division when DNA damage is detected?",
+    "choices": [
+      "p53 tumor suppressor protein",
+      "Insulin-like growth factor 1 (IGF-1)",
+      "Myosin heavy chain",
+      "Telomerase"
+    ],
+    "correct_index": 0,
+    "explanation": "The p53 protein monitors DNA integrity at the G1/S checkpoint. When it detects significant DNA damage, it halts the cell cycle to allow repair or triggers apoptosis to prevent propagation of mutations. Mutations in the TP53 gene are found in roughly half of all human cancers. Telomerase extends chromosome ends and is associated with cellular immortality in cancer, but it does not serve as a checkpoint guardian. IGF-1 promotes growth rather than halting it.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::p53-tumor-suppressor-dna-checkpoint"
+  },
+  {
+    "external_key": "GS-B60-012",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "Which salivary enzyme begins the chemical digestion of starch in the mouth?",
+    "choices": [
+      "Pepsin",
+      "Salivary amylase",
+      "Lactase",
+      "Bile salts"
+    ],
+    "correct_index": 1,
+    "explanation": "Salivary amylase (also called ptyalin) is secreted by the salivary glands and begins breaking the glycosidic bonds in starch, converting it to shorter chains and maltose. Pepsin is a protease activated in the stomach's acidic environment and has no starch-digesting function. Lactase is an intestinal enzyme that breaks down lactose. Bile salts emulsify fats but are not enzymes and have no effect on starch.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::salivary-amylase-starch-mouth"
+  },
+  {
+    "external_key": "GS-B60-013",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "The sympathetic nervous system releases norepinephrine at most of its effector synapses. Which of the following responses would you expect norepinephrine to produce?",
+    "choices": [
+      "Decreased heart rate and constricted pupils",
+      "Increased digestive enzyme secretion and relaxed bronchioles",
+      "Dilated pupils, elevated heart rate, and reduced gut motility",
+      "Increased salivation and slowed respiratory rate"
+    ],
+    "correct_index": 2,
+    "explanation": "Norepinephrine activates the fight-or-flight response: pupils dilate for enhanced vision, heart rate rises to deliver more oxygen to muscles, and digestion is suppressed to redirect blood flow. Decreased heart rate and increased digestion are parasympathetic effects mediated by acetylcholine. Increased salivation is also a parasympathetic action. The sympathetic system reduces gut motility, not stimulates it.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::sympathetic-norepinephrine-fight-flight-effects"
+  },
+  {
+    "external_key": "GS-B60-014",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "A plant responds to the touch of a support structure by coiling its tendrils around it. This is an example of which tropism?",
+    "choices": [
+      "Phototropism",
+      "Hydrotropism",
+      "Thigmotropism",
+      "Chemotropism"
+    ],
+    "correct_index": 2,
+    "explanation": "Thigmotropism is a plant growth response triggered by mechanical contact. Tendrils of climbing plants such as peas and cucumbers detect touch and coil around the contacted surface, providing structural support. Phototropism is a response to light; hydrotropism is growth toward water; chemotropism is growth directed by chemical gradients, as seen in pollen tube growth toward the ovule.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::thigmotropism-tendril-coiling"
+  },
+  {
+    "external_key": "GS-B60-015",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "In the compound H2SO4 (sulfuric acid), what is the oxidation number of sulfur?",
+    "choices": [
+      "+6",
+      "+4",
+      "+2",
+      "-2"
+    ],
+    "correct_index": 0,
+    "explanation": "Each hydrogen is +1 and each oxygen is -2. With 2 hydrogens (+2 total) and 4 oxygens (-8 total), the compound must sum to zero: +2 + S + (-8) = 0, so S = +6. An oxidation number of -2 would be that of oxygen, not sulfur, in this compound. Sulfur can exhibit multiple oxidation states (+2 in SO, +4 in SO2, +6 in SO3 and H2SO4), and +6 is its highest common state.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::oxidation-number-sulfur-h2so4"
+  },
+  {
+    "external_key": "GS-B60-016",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "Adding a non-volatile solute such as salt to water raises its boiling point above 100 degrees Celsius. This phenomenon is called:",
+    "choices": [
+      "Boiling point elevation",
+      "Osmotic pressure",
+      "Freezing point depression",
+      "Vapor pressure equilibrium"
+    ],
+    "correct_index": 0,
+    "explanation": "Boiling point elevation is a colligative property: dissolving a solute lowers the vapor pressure of the solvent, so a higher temperature is required to make vapor pressure equal atmospheric pressure. This is why salted water boils above 100 degrees Celsius. Freezing point depression is the related phenomenon where dissolved solutes lower the freezing point. Osmotic pressure is the pressure that opposes movement of water across a semipermeable membrane.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::boiling-point-elevation-colligative"
+  },
+  {
+    "external_key": "GS-B60-017",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "Which organic functional group is characterized by a hydroxyl (-OH) group bonded directly to a carbon chain, making the molecule an alcohol?",
+    "choices": [
+      "Carboxyl group (-COOH)",
+      "Amine group (-NH2)",
+      "Hydroxyl group (-OH)",
+      "Ester group (-COO-)"
+    ],
+    "correct_index": 2,
+    "explanation": "Alcohols are defined by the presence of one or more hydroxyl (-OH) groups attached to a carbon atom. Ethanol (C2H5OH), the alcohol in beverages, is a simple example. A carboxyl group (-COOH) defines carboxylic acids. An amine group (-NH2) defines amines. An ester linkage (-COO-) forms when a carboxylic acid reacts with an alcohol, releasing water.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::hydroxyl-group-alcohol-definition"
+  },
+  {
+    "external_key": "GS-B60-018",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "According to Le Chatelier's principle, what happens to the equilibrium position of an exothermic reaction when the temperature is increased?",
+    "choices": [
+      "It shifts toward the products, increasing yield",
+      "The equilibrium constant (K) stays the same and the position is unchanged",
+      "The reaction stops completely until temperature returns to normal",
+      "It shifts toward the reactants, decreasing product yield"
+    ],
+    "correct_index": 3,
+    "explanation": "Le Chatelier's principle states that a system at equilibrium will shift to oppose any imposed change. For an exothermic reaction, heat is a product. Raising the temperature is like adding more product, so the equilibrium shifts toward the reactants, reducing product yield and lowering the equilibrium constant K. For an endothermic reaction the opposite is true: higher temperature favors the products. The equilibrium does not stop; it readjusts to a new balance.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::le-chatelier-exothermic-temperature-shift"
+  },
+  {
+    "external_key": "GS-B60-019",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "A Lewis structure for a water molecule (H2O) shows the oxygen atom with two bonding pairs and two lone pairs of electrons. According to VSEPR theory, what shape does this give the water molecule?",
+    "choices": [
+      "Linear",
+      "Trigonal planar",
+      "Tetrahedral",
+      "Bent (V-shaped)"
+    ],
+    "correct_index": 3,
+    "explanation": "VSEPR theory predicts molecular geometry based on electron pair repulsion. Oxygen in water has four electron groups (two bonds and two lone pairs), which arranges them tetrahedrally around the oxygen. Because molecular shape describes only atom positions, the two lone pairs push the two hydrogen atoms into a bent arrangement with a bond angle of about 104.5 degrees. A linear shape would require two electron groups with no lone pairs. Trigonal planar requires three electron groups.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::vsepr-water-bent-shape"
+  },
+  {
+    "external_key": "GS-B60-020",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "In a redox reaction, the species that is oxidized loses electrons. Which of the following half-reactions represents oxidation?",
+    "choices": [
+      "Fe3+ + e- → Fe2+",
+      "Cu2+ + 2e- → Cu",
+      "Zn → Zn2+ + 2e-",
+      "2H+ + 2e- → H2"
+    ],
+    "correct_index": 2,
+    "explanation": "Oxidation is the loss of electrons (remember OIL RIG: Oxidation Is Loss, Reduction Is Gain). In Zn → Zn2+ + 2e-, zinc loses two electrons and its oxidation state increases from 0 to +2, making this an oxidation half-reaction. The other three options show species gaining electrons, which is reduction. Fe3+ + e- → Fe2+ shows iron being reduced from +3 to +2.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::oxidation-half-reaction-zinc-electron-loss"
+  },
+  {
+    "external_key": "GS-B60-021",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "In addition polymerization, many small monomer units link together to form a long polymer chain. Which of the following is an example of an addition polymer?",
+    "choices": [
+      "Polyethylene",
+      "Nylon",
+      "Polyester",
+      "Proteins"
+    ],
+    "correct_index": 0,
+    "explanation": "Polyethylene is made by addition polymerization of ethylene (CH2=CH2) monomers: the double bond opens and units add directly to each other without releasing any byproduct. Nylon and polyester are condensation polymers, formed when monomers with two reactive groups join and release small molecules (usually water). Proteins are biological condensation polymers assembled from amino acids via peptide bonds with loss of water.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::addition-polymerization-polyethylene"
+  },
+  {
+    "external_key": "GS-B60-022",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "A catalyst speeds up a chemical reaction. Which statement best explains how a catalyst works without being consumed?",
+    "choices": [
+      "It raises the temperature of the reaction mixture",
+      "It increases the concentration of reactants",
+      "It shifts the equilibrium position toward products",
+      "It provides an alternative reaction pathway with a lower activation energy"
+    ],
+    "correct_index": 3,
+    "explanation": "A catalyst works by providing a different reaction mechanism that has a lower activation energy, allowing more reactant molecules to have enough energy to react at a given temperature. The catalyst participates in intermediate steps but is regenerated by the end of the reaction, so it is not consumed. Catalysts do not change the thermodynamics (equilibrium position or enthalpy change) of a reaction; they only affect the rate at which equilibrium is reached.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::catalyst-lower-activation-energy-mechanism"
+  },
+  {
+    "external_key": "GS-B60-023",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "When an ester forms, a carboxylic acid reacts with an alcohol. What small molecule is released as a byproduct of this condensation reaction?",
+    "choices": [
+      "Carbon dioxide",
+      "Ammonia",
+      "Hydrogen gas",
+      "Water"
+    ],
+    "correct_index": 3,
+    "explanation": "Esterification is a condensation reaction: the -OH of the carboxylic acid and the -H of the alcohol's hydroxyl group combine and leave as a water molecule, while the remaining fragments bond to form the ester linkage (-COO-). This is why the reaction is reversible (hydrolysis re-adds water to break the ester bond). Carbon dioxide is released in decarboxylation reactions; ammonia is not a byproduct here.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::esterification-condensation-water-byproduct"
+  },
+  {
+    "external_key": "GS-B60-024",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "An enzyme inhibitor molecule binds to a site on an enzyme away from the active site, changing the active site's shape so the substrate can no longer bind. This type of inhibition is called:",
+    "choices": [
+      "Competitive inhibition",
+      "Feedback activation",
+      "Allosteric inhibition",
+      "Denaturation"
+    ],
+    "correct_index": 2,
+    "explanation": "Allosteric inhibition occurs when an inhibitor binds to a regulatory site (allosteric site) other than the active site, inducing a conformational change that reduces or eliminates enzyme activity. Competitive inhibitors bind directly to the active site and compete with the substrate; they can be overcome by increasing substrate concentration. Denaturation permanently disrupts protein structure and is not a specific, reversible regulatory mechanism. Feedback activation would stimulate rather than inhibit the enzyme.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::allosteric-inhibition-enzyme-regulation"
+  },
+  {
+    "external_key": "GS-B60-025",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "When a simple amine dissolves in water, what type of solution does it produce and why?",
+    "choices": [
+      "Acidic, because nitrogen donates protons to water",
+      "Basic, because the amine's nitrogen accepts a proton from water, releasing hydroxide ions",
+      "Neutral, because amines do not react with water",
+      "Strongly acidic, with a pH well below 7"
+    ],
+    "correct_index": 1,
+    "explanation": "Amines act as Bronsted-Lowry bases: the lone pair on nitrogen accepts a proton (H+) from water, forming an ammonium ion (RNH3+) and a hydroxide ion (OH-). This raises the pH above 7, making the solution basic. Amines do not donate protons the way acids do. The basicity of amines varies (ammonia pKb is 4.7), but all simple amines in water produce basic, not acidic, solutions.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::amine-basic-proton-acceptor-water"
+  },
+  {
+    "external_key": "GS-B60-026",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "In a galvanic (voltaic) cell, in which direction do electrons flow through the external circuit?",
+    "choices": [
+      "From cathode to anode",
+      "From anode to cathode",
+      "Electrons do not flow; only ions move",
+      "In both directions simultaneously"
+    ],
+    "correct_index": 1,
+    "explanation": "At the anode, the oxidized species releases electrons into the external circuit. Electrons flow from the anode (negative electrode in a galvanic cell) through the wire to the cathode (positive electrode), where they are consumed by the reduction half-reaction. This electron flow through the wire constitutes the electric current the cell produces. Ion flow through the salt bridge maintains charge neutrality inside the cell but does not carry electrons in the external circuit.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::galvanic-cell-electron-flow-anode-to-cathode"
+  },
+  {
+    "external_key": "GS-B60-027",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "Which of the following best describes a Lewis structure?",
+    "choices": [
+      "A diagram showing the three-dimensional shape of a molecule",
+      "A drawing that shows how many neutrons each atom contains",
+      "A chart of the electron energy levels within a single atom",
+      "A representation of atoms in a molecule with bonds shown as lines and lone pairs shown as dots"
+    ],
+    "correct_index": 3,
+    "explanation": "Lewis structures (electron dot diagrams) show all valence electrons in a molecule, representing bonding pairs as lines between atoms and non-bonding (lone) pairs as dots. They are two-dimensional and do not directly show three-dimensional shape; VSEPR theory is applied afterward to predict shape from a Lewis structure. They do not depict neutrons, and energy-level diagrams are different tools for showing electron configuration within a single atom.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::lewis-structure-definition-bonds-lone-pairs"
+  },
+  {
+    "external_key": "GS-B60-028",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "The Mid-Atlantic Ridge is a continuous underwater mountain range. Which geological process creates it?",
+    "choices": [
+      "Seafloor spreading at a divergent plate boundary",
+      "Subduction of one oceanic plate beneath another",
+      "A continental collision forming fold mountains",
+      "A hotspot plume melting through the ocean floor"
+    ],
+    "correct_index": 0,
+    "explanation": "The Mid-Atlantic Ridge forms where the North American and Eurasian plates (and the South American and African plates in the south) diverge. Magma wells up through the gap, cools to form new oceanic crust, and pushes the existing plates apart at a rate of a few centimeters per year. Subduction creates ocean trenches, not ridges. Continental collisions produce fold mountain ranges on land. A hotspot creates volcanic island chains, not a continuous ridge along a plate boundary.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::mid-atlantic-ridge-seafloor-spreading"
+  },
+  {
+    "external_key": "GS-B60-029",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "The Hawaiian Islands were formed by a volcanic hotspot. Which statement best describes how a hotspot creates a chain of islands?",
+    "choices": [
+      "A stationary mantle plume melts through the moving tectonic plate, creating a trail of volcanoes",
+      "Two oceanic plates collide, pushing magma upward in a line",
+      "Frequent earthquakes along a transform fault release pressure as eruptions",
+      "The islands form at the rim of a subduction zone where oceanic crust sinks"
+    ],
+    "correct_index": 0,
+    "explanation": "A hotspot is a fixed column of exceptionally hot mantle material (a plume) that melts through the tectonic plate above it. As the Pacific plate moves northwest over the stationary plume, new volcanic islands form over the hotspot while older ones move away and cool, eventually eroding below sea level. This produces the age-progressive chain from the Big Island (active) to the older, eroded northwestern islands. Hotspot volcanism is not related to plate boundaries directly.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::hotspot-volcanism-hawaii-chain"
+  },
+  {
+    "external_key": "GS-B60-030",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "The Mariana Trench is the deepest known point in the ocean. What geological process formed it?",
+    "choices": [
+      "Divergent plate boundaries spreading apart",
+      "A hotspot melting through the Pacific plate",
+      "Erosion of the ocean floor by deep-sea currents",
+      "Subduction of the Pacific plate beneath the Mariana plate"
+    ],
+    "correct_index": 3,
+    "explanation": "Ocean trenches form where one tectonic plate is subducted (forced beneath) another. At the Mariana Trench, the old, dense Pacific plate dives beneath the smaller Mariana plate, creating a deep furrow reaching about 11 kilometers below sea level. Divergent boundaries create ridges, not trenches. Hotspots create volcanic islands. Deep-sea currents do not have enough erosive power to form a trench of this depth.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::mariana-trench-subduction-pacific"
+  },
+  {
+    "external_key": "GS-B60-031",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "Milankovitch cycles describe periodic changes in Earth's orbit and axial tilt. What major climate phenomenon are these cycles believed to drive?",
+    "choices": [
+      "Long-term ice ages and interglacial periods",
+      "Daily temperature fluctuations between day and night",
+      "El Nino and La Nina events in the Pacific Ocean",
+      "Year-to-year variation in hurricane intensity"
+    ],
+    "correct_index": 0,
+    "explanation": "Milankovitch cycles describe three orbital variations: the ellipticity of Earth's orbit (eccentricity, about 100,000-year cycle), the tilt of Earth's axis (obliquity, about 41,000-year cycle), and the wobble of Earth's axis (precession, about 26,000-year cycle). Together they modulate the amount and distribution of solar radiation reaching Earth, driving the advance and retreat of ice ages on timescales of tens of thousands of years. El Nino events occur on 2-7 year cycles driven by ocean-atmosphere interaction, not orbital mechanics.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::milankovitch-cycles-ice-ages"
+  },
+  {
+    "external_key": "GS-B60-032",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "What generates Earth's magnetic field?",
+    "choices": [
+      "Radioactive decay in the Earth's solid inner core",
+      "The Moon's gravitational pull on the liquid outer core",
+      "Convection of liquid iron in the outer core generating electric currents",
+      "Solar wind interacting with the upper atmosphere"
+    ],
+    "correct_index": 2,
+    "explanation": "Earth's magnetic field is generated by the geodynamo: convective motion of liquid iron and nickel in the outer core creates electric currents that in turn produce a magnetic field. This field is not static; the magnetic poles wander and even reverse over geologic time. The solid inner core does not generate significant magnetism through radioactive decay. Solar wind interacts with the pre-existing magnetic field but does not create it.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::geomagnetic-field-outer-core-convection"
+  },
+  {
+    "external_key": "GS-B60-033",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Astronomers use the transit method to discover exoplanets. How does this technique work?",
+    "choices": [
+      "Measuring the Doppler shift in starlight caused by a planet's gravitational tug",
+      "Detecting the slight dimming of a star's light as a planet passes in front of it",
+      "Photographing the planet directly with infrared telescopes",
+      "Observing gravitational lensing as the planet bends light from a background star"
+    ],
+    "correct_index": 1,
+    "explanation": "In the transit method, astronomers monitor a star's brightness over time. When an orbiting planet crosses (transits) the face of the star from our line of sight, it blocks a tiny fraction of the starlight, causing a measurable, periodic dip in brightness. The size of the dip indicates the planet's diameter relative to the star. The Doppler (radial velocity) method uses frequency shifts, not brightness dips; direct imaging requires the planet to be very large and far from its star; gravitational microlensing uses background stars.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::exoplanet-transit-method-brightness-dip"
+  },
+  {
+    "external_key": "GS-B60-034",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "The Hubble constant (H0) relates a galaxy's recession speed to its distance from us. What does the Hubble constant allow astronomers to estimate?",
+    "choices": [
+      "The surface temperature of distant stars",
+      "The age and expansion rate of the universe",
+      "The composition of a galaxy's interstellar gas",
+      "The mass of a galaxy based on its luminosity"
+    ],
+    "correct_index": 1,
+    "explanation": "Because the universe has been expanding since the Big Bang, the recession velocity of galaxies increases with distance (Hubble's Law: v = H0 times d). By measuring H0, astronomers can estimate how long the universe has been expanding, yielding an estimate of its age (roughly 13.8 billion years). It does not directly measure stellar temperatures (which requires spectral analysis) or galactic mass (which requires rotational velocity data).",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::hubble-constant-expansion-rate-age"
+  },
+  {
+    "external_key": "GS-B60-035",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "What makes neutron stars extraordinarily dense compared to ordinary matter?",
+    "choices": [
+      "They are composed entirely of neutrons packed together after gravitational collapse crushes protons and electrons",
+      "They are made of metallic hydrogen compressed to a liquid state",
+      "They are the remnants of white dwarf stars that have cooled completely",
+      "They contain a black hole at their center that adds gravitational compression"
+    ],
+    "correct_index": 0,
+    "explanation": "When a star with sufficient mass undergoes a supernova, the core collapses under extreme gravity. Protons and electrons are forced together to form neutrons, producing a neutron star with a radius of only about 10-13 kilometers but a mass typically 1.4-2 times that of the Sun. A teaspoon of neutron star material would weigh billions of tons. White dwarf stars are the remnants of lower-mass stars and are composed of electron-degenerate matter, not neutrons.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::neutron-star-density-neutron-degenerate-matter"
+  },
+  {
+    "external_key": "GS-B60-036",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "The Mercator projection preserves shape (angles) but severely distorts the size of land masses near the poles. What type of projection minimizes area distortion?",
+    "choices": [
+      "Mercator projection",
+      "Stereographic projection",
+      "Equal-area (such as the Peters or Albers) projection",
+      "Azimuthal equidistant projection"
+    ],
+    "correct_index": 2,
+    "explanation": "Equal-area projections such as the Peters (Gall-Peters) or Albers conic projection maintain correct relative sizes of land areas, making them useful for comparing the extent of countries and continents. The Mercator projection distorts size dramatically at high latitudes (Greenland appears similar in size to Africa, though Africa is about 14 times larger). Stereographic and azimuthal equidistant projections preserve different properties (angles and distances from a center point, respectively) and still distort area.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::equal-area-projection-vs-mercator"
+  },
+  {
+    "external_key": "GS-B60-037",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Which of the following statements about Mars makes terraforming it a major challenge compared to Earth?",
+    "choices": [
+      "Mars has no iron core, so there is no possibility of generating a magnetic field",
+      "Mars has a stronger gravitational field than Earth, requiring enormous energy to lift materials off the surface",
+      "Mars rotates too slowly, creating temperature extremes that would vaporize any introduced water",
+      "Mars lacks a strong global magnetic field, leaving its surface exposed to solar wind that strips away any added atmosphere"
+    ],
+    "correct_index": 3,
+    "explanation": "Mars lost most of its magnetic field billions of years ago when its core solidified and convection stopped. Without a magnetic field, the solar wind continuously strips away atmospheric gases through sputtering. Any thick atmosphere introduced for terraforming would gradually be eroded. Mars does have an iron-rich core but it is largely solid. Mars's gravity is about 38% of Earth's, not stronger. A Martian day (sol) is about 24.6 hours, similar to Earth's.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::mars-terraforming-no-magnetic-field-atmosphere"
+  },
+  {
+    "external_key": "GS-B60-038",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Hotspot volcanoes such as those in Hawaii differ from subduction-zone volcanoes such as those in the Cascades. Which type of lava is typical of Hawaiian shield volcanoes and why?",
+    "choices": [
+      "Thick, viscous rhyolitic lava that builds steep cones and produces explosive eruptions",
+      "Thin, fluid basaltic lava that spreads widely and builds broad, gentle slopes",
+      "Andesitic lava that forms stratovolcanoes identical to those at subduction zones",
+      "Carbonatite lava that is uniquely cold and does not flow far from the vent"
+    ],
+    "correct_index": 1,
+    "explanation": "Hawaiian shield volcanoes produce basaltic lava, which is low in silica and therefore low in viscosity. It flows freely across large distances, building broad, gently sloping shield shapes. Subduction-zone volcanoes in the Cascades produce more silica-rich andesitic or rhyolitic magmas that are viscous, trap gases, and erupt explosively, building steep stratovolcanoes. The difference in lava type reflects where and how the magma is generated.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::hawaii-basaltic-shield-volcano-low-viscosity"
+  },
+  {
+    "external_key": "GS-B60-039",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Milankovitch cycles include changes in Earth's orbital eccentricity, axial tilt (obliquity), and axial precession. Which cycle has the LONGEST period?",
+    "choices": [
+      "Precession, approximately 26,000 years",
+      "Eccentricity, approximately 100,000 years",
+      "Obliquity, approximately 41,000 years",
+      "All three cycles have the same period"
+    ],
+    "correct_index": 1,
+    "explanation": "The eccentricity cycle, which describes how elliptical Earth's orbit is, has a period of roughly 100,000 years and is the longest of the three Milankovitch cycles. Obliquity (variation in axial tilt between about 22.1 and 24.5 degrees) cycles over approximately 41,000 years. Precession (wobble of the rotational axis) has a period of about 26,000 years. The 100,000-year eccentricity cycle correlates most strongly with the timing of major glacial advances.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::milankovitch-eccentricity-longest-cycle"
+  },
+  {
+    "external_key": "GS-B60-040",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "Which type of seismic wave causes the ground to move side to side perpendicular to the direction the wave travels, and cannot pass through Earth's liquid outer core?",
+    "choices": [
+      "P-wave (primary wave)",
+      "S-wave (secondary wave)",
+      "Love wave",
+      "Rayleigh wave"
+    ],
+    "correct_index": 1,
+    "explanation": "S-waves (shear waves) are body waves in which particle motion is perpendicular to the direction of wave propagation, producing side-to-side shaking. They cannot pass through liquids, which is why they do not travel through Earth's liquid outer core -- a key clue that helped seismologists identify the outer core's liquid state. P-waves are compressional waves where particles move in the same direction as wave travel and can pass through all materials. Love and Rayleigh waves are surface waves.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::s-wave-shear-perpendicular-motion"
+  },
+  {
+    "external_key": "GS-B60-041",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "A wrench applies a force of 20 N at a distance of 0.3 m from a bolt. What is the torque applied to the bolt?",
+    "choices": [
+      "0.015 N*m",
+      "6 N*m",
+      "66.7 N*m",
+      "60 N*m"
+    ],
+    "correct_index": 1,
+    "explanation": "Torque equals force multiplied by the perpendicular distance from the pivot point (moment arm): T = F times r = 20 N times 0.3 m = 6 N*m. Torque measures the rotational effect of a force. Dividing (20 / 0.3 = 66.7) gives the wrong operation; multiplying 20 times 3 (ignoring the decimal) gives 60, another common error. The unit is newton-meters (N*m), not joules, even though the dimensions are the same.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::torque-calculation-force-moment-arm"
+  },
+  {
+    "external_key": "GS-B60-042",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "A step-up transformer increases voltage from 120 V to 1,200 V. If the primary coil has 100 turns, how many turns does the secondary coil have?",
+    "choices": [
+      "10 turns",
+      "100 turns",
+      "1,000 turns",
+      "12,000 turns"
+    ],
+    "correct_index": 2,
+    "explanation": "The transformer equation states that the ratio of voltages equals the ratio of turns: Vs/Vp = Ns/Np. Solving for secondary turns: Ns = Np times (Vs/Vp) = 100 times (1200/120) = 100 times 10 = 1,000 turns. A step-up transformer has more secondary turns than primary turns to increase voltage. Having fewer secondary turns (10 or 100) would step the voltage down, not up.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::transformer-turns-ratio-step-up"
+  },
+  {
+    "external_key": "GS-B60-043",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "The photoelectric effect demonstrates that light can eject electrons from a metal surface. What property of light determines whether electrons are ejected at all?",
+    "choices": [
+      "Intensity (brightness) of the light",
+      "Duration (how long the light shines on the surface)",
+      "Frequency (color) of the light",
+      "Angle at which the light strikes the surface"
+    ],
+    "correct_index": 2,
+    "explanation": "Einstein showed that electrons are ejected only if the light's frequency is above a threshold value specific to the metal. Each photon carries energy proportional to its frequency (E = hf), and a photon must have enough energy to overcome the metal's work function. No matter how bright (intense) the light is, low-frequency light cannot eject electrons. Above the threshold, increasing intensity increases the number of ejected electrons but not whether they are ejected at all.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::photoelectric-effect-frequency-threshold"
+  },
+  {
+    "external_key": "GS-B60-044",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "A capacitor stores energy in its electric field. If a capacitor has capacitance C and is charged to voltage V, which formula gives the energy stored?",
+    "choices": [
+      "E = C times V",
+      "E = 2 times C times V",
+      "E = C times V^2",
+      "E = 0.5 times C times V^2"
+    ],
+    "correct_index": 3,
+    "explanation": "The energy stored in a capacitor is E = (1/2)CV^2. Because voltage builds gradually as charge accumulates (not all charge is stored at full voltage), the average voltage during charging is V/2, giving the factor of one-half. Simply multiplying C times V gives units of coulombs, not joules (energy). Using CV^2 without the half-factor overestimates the energy by a factor of two.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::capacitor-energy-storage-half-cv-squared"
+  },
+  {
+    "external_key": "GS-B60-045",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "The period of a mass on a spring is T = 2*pi*sqrt(m/k). If the mass is quadrupled while the spring constant stays the same, what happens to the period?",
+    "choices": [
+      "The period is halved",
+      "The period is doubled",
+      "The period is quadrupled",
+      "The period remains the same"
+    ],
+    "correct_index": 1,
+    "explanation": "Because T is proportional to the square root of mass, quadrupling the mass gives sqrt(4) = 2, so the period doubles. If mass increases by a factor of 4 but period increases by only sqrt(4) = 2, the relationship is sublinear. The period would be quadrupled only if T were directly proportional to m rather than to its square root. The spring constant k is unchanged here, so it does not affect the result.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::spring-mass-period-quadruple-mass-effect"
+  },
+  {
+    "external_key": "GS-B60-046",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "When light passes from air into glass, it slows down and bends toward the normal. This bending of light due to a change in speed is called:",
+    "choices": [
+      "Reflection",
+      "Diffraction",
+      "Refraction",
+      "Polarization"
+    ],
+    "correct_index": 2,
+    "explanation": "Refraction is the bending of a wave (including light) when it crosses a boundary between two media with different wave speeds, governed by Snell's Law (n1 sin theta1 = n2 sin theta2). When light enters a denser medium such as glass, it slows and bends toward the normal. Reflection involves light bouncing off a surface; diffraction is the spreading of waves around obstacles; polarization involves filtering the orientation of the electric field of light.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::refraction-bending-speed-change-definition"
+  },
+  {
+    "external_key": "GS-B60-047",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "As an object's temperature increases, what happens to the peak wavelength of the electromagnetic radiation it emits (blackbody radiation)?",
+    "choices": [
+      "The peak wavelength increases, shifting toward the infrared",
+      "The peak wavelength decreases, shifting toward shorter wavelengths (higher energy)",
+      "The peak wavelength is unaffected; only total intensity changes",
+      "The peak shifts to longer wavelengths only if the object is a perfect reflector"
+    ],
+    "correct_index": 1,
+    "explanation": "Wien's displacement law states that the peak wavelength of blackbody radiation is inversely proportional to temperature: lambda_max times T = 2.898 x 10^-3 m*K. Hotter objects emit at shorter peak wavelengths. A star at 10,000 K peaks in the UV range, while the Sun (about 5,778 K) peaks in visible yellow-green, and a warm object at room temperature peaks in the infrared. Total intensity also increases with temperature (Stefan-Boltzmann law), but the wavelength shift is a separate relationship.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::blackbody-radiation-peak-wavelength-temperature"
+  },
+  {
+    "external_key": "GS-B60-048",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Mixing red light and green light together produces yellow light. This is an example of:",
+    "choices": [
+      "Subtractive color mixing, used with pigments and paints",
+      "Additive color mixing, used with light sources",
+      "Polarization of the two wavelengths into a single beam",
+      "Dispersion of white light into component colors"
+    ],
+    "correct_index": 1,
+    "explanation": "Additive color mixing combines light of different wavelengths. The three additive primaries are red, green, and blue (RGB). Red plus green = yellow; red plus blue = magenta; green plus blue = cyan; all three together = white. Subtractive mixing applies to pigments and inks: pigments absorb (subtract) certain wavelengths from white light and the remaining wavelengths reflect to the eye. Dispersion separates colors rather than combining them.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::additive-color-mixing-light-rgb"
+  },
+  {
+    "external_key": "GS-B60-049",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "The linear thermal expansion of a material is described by delta_L = alpha x L0 x delta_T, where alpha is the coefficient of linear expansion. If alpha for steel is 12 x 10^-6 per degree Celsius and a 100 m rail heats from 10 degrees Celsius to 60 degrees Celsius, what is the expansion?",
+    "choices": [
+      "0.006 m",
+      "0.06 m",
+      "0.6 m",
+      "6.0 m"
+    ],
+    "correct_index": 1,
+    "explanation": "delta_L = alpha times L0 times delta_T = (12 x 10^-6) times 100 m times (60 - 10) = 12 x 10^-6 times 100 times 50 = 0.06 m. A 6 cm expansion in a 100 m rail is realistic and is why railroad tracks have expansion gaps. Multiplying without the 10^-6 factor gives 60, far too large. Using 60 instead of 50 for the temperature difference (forgetting to subtract 10) gives 0.072 m.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::thermal-expansion-linear-coefficient-calculation"
+  },
+  {
+    "external_key": "GS-B60-050",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "A pendulum has period T on Earth. What period would an identical pendulum have on the Moon, where gravitational acceleration is 1/6 that of Earth?",
+    "choices": [
+      "T/6 (shorter period, faster swing)",
+      "T/sqrt(6) (slightly shorter period)",
+      "T times 6 (much longer period)",
+      "T times sqrt(6) (longer period)"
+    ],
+    "correct_index": 3,
+    "explanation": "The period of a simple pendulum is T = 2*pi*sqrt(L/g). If g_moon = g_earth / 6, then T_moon = 2*pi*sqrt(L / (g/6)) = 2*pi*sqrt(6L/g) = sqrt(6) times T_earth. The period is longer on the Moon because weaker gravity slows the restoring force. A period of T/6 would imply faster swinging with weaker gravity, which reverses the physics. T times 6 would result only if period were inversely proportional to g, not to its square root.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::pendulum-period-moon-gravity-sqrt-relation"
+  },
+  {
+    "external_key": "GS-B60-051",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "Two polarizing filters are oriented at 90 degrees to each other (crossed polars). How much light passes through both filters?",
+    "choices": [
+      "Half the original intensity",
+      "One quarter of the original intensity",
+      "Essentially no light",
+      "All the light, because the second filter rotates the polarization axis"
+    ],
+    "correct_index": 2,
+    "explanation": "The first polarizing filter transmits about half the intensity of unpolarized light, selecting only one plane of polarization. When that plane-polarized beam reaches a second filter rotated 90 degrees (orthogonal) to the first, Malus's Law (I = I0 times cos^2 theta) gives cos^2(90) = 0, so essentially no light is transmitted. In practice a tiny residual amount may pass due to imperfections. Polarizers do not rotate the plane of polarization; they absorb the orthogonal component.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::polarization-crossed-filters-zero-transmission"
+  },
+  {
+    "external_key": "GS-B60-052",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "A step-down transformer reduces voltage from 10,000 V to 200 V. Assuming 100% efficiency, if the secondary coil carries a current of 50 A, what current flows in the primary coil?",
+    "choices": [
+      "1 A",
+      "2 A",
+      "50 A",
+      "2,500 A"
+    ],
+    "correct_index": 0,
+    "explanation": "Conservation of power in an ideal transformer: Pp = Ps, so Vp times Ip = Vs times Is. Solving for primary current: Ip = (Vs times Is) / Vp = (200 V times 50 A) / 10,000 V = 10,000 / 10,000 = 1 A. A step-down transformer decreases voltage and increases current proportionally; the primary side has the higher voltage and therefore the lower current. Reversing the ratio would incorrectly give 2,500 A.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::transformer-step-down-current-calculation"
+  },
+  {
+    "external_key": "GS-B60-053",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "When subtractive color mixing is used with pigments, which combination of the three subtractive primary colors (cyan, magenta, yellow) absorbs all visible light and theoretically produces black?",
+    "choices": [
+      "Red, green, and blue pigments mixed together",
+      "Cyan and yellow only",
+      "Magenta and blue only",
+      "Cyan, magenta, and yellow pigments mixed together"
+    ],
+    "correct_index": 3,
+    "explanation": "In subtractive color mixing, pigments absorb certain wavelengths from white light. Cyan absorbs red, magenta absorbs green, and yellow absorbs blue. Mixing all three subtracts all three primary colors of light, leaving no wavelengths reflected and producing black (in practice a very dark brown due to pigment impurities). Red, green, and blue are the additive primaries used with light, not the subtractive primaries used with pigments.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::subtractive-color-mixing-pigments-cmy-black"
+  },
+  {
+    "external_key": "GS-B60-054",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "When table salt (NaCl) dissolves in water, what process occurs at the molecular level?",
+    "choices": [
+      "Ionic lattice dissociates into hydrated Na+ and Cl- ions stabilized by polar water molecules",
+      "A covalent lattice dissolves through dispersion forces",
+      "NaCl melts into the solvent by absorbing heat",
+      "Undissolved NaCl particles form a suspension in water"
+    ],
+    "correct_index": 0,
+    "explanation": "NaCl is an ionic compound held together by electrostatic forces. When dissolved in water, the polar water molecules surround and stabilize the individual Na+ and Cl- ions through ion-dipole interactions, separating them from the crystal lattice in a process called dissociation and hydration. Covalent lattice solids like diamond do not dissolve in water. A suspension contains undissolved particles; NaCl forms a true solution. The process is not melting; the ions separate at room temperature.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::ionic-dissolution-hydration-nacl"
+  },
+  {
+    "external_key": "GS-B60-055",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Torque is the rotational equivalent of force. What is the SI unit of torque?",
+    "choices": [
+      "Joule (J)",
+      "Watt (W)",
+      "Pascal (Pa)",
+      "Newton-meter (N*m)"
+    ],
+    "correct_index": 3,
+    "explanation": "Torque is calculated as force times perpendicular distance (moment arm), giving units of newtons times meters (N*m). Although the numerical unit is dimensionally equivalent to the joule (also N*m), torque and energy are different physical quantities and convention reserves 'joule' for energy. Watts measure power (energy per unit time) and pascals measure pressure (force per unit area). Confusing joules and N*m is a common error, but they describe fundamentally different quantities.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::torque-unit-newton-meter"
+  },
+  {
+    "external_key": "GS-B60-056",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Geomagnetic north (where a compass points) differs from geographic north (the rotational pole). Which of the following best explains this difference?",
+    "choices": [
+      "The Sun's gravity pulls compass needles slightly off-axis",
+      "Earth's magnetic field axis is tilted relative to its rotational axis, and the magnetic poles wander over time",
+      "Compasses always align with the nearest iron ore deposit, creating local variation",
+      "Geographic north is defined by the equator, which is perpendicular to the magnetic field"
+    ],
+    "correct_index": 1,
+    "explanation": "Earth's magnetic field is generated by fluid motion in the outer core, and the axis of this magnetic field is currently tilted about 11 degrees relative to Earth's rotational axis. The magnetic north pole also drifts gradually over years (it has been moving toward Siberia at an accelerating pace). A compass points toward magnetic north, not geographic (true) north, and the difference (magnetic declination) varies by location and time. Compasses respond to Earth's global magnetic field, not local iron deposits.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::geomagnetic-vs-geographic-north-declination"
+  }
+]

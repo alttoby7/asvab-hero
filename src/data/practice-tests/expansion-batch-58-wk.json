@@ -1,0 +1,954 @@
+[
+  {
+    "external_key": "WK-B58-001",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "LAVISH most nearly means:",
+    "choices": [
+      "thrifty",
+      "plain",
+      "scarce",
+      "extravagant"
+    ],
+    "correct_index": 3,
+    "explanation": "LAVISH means sumptuously rich or given in generous amounts, so 'extravagant' is the best match. 'Thrifty' describes careful spending, the opposite of lavish generosity. 'Plain' suggests simplicity rather than luxury, and 'scarce' means rare or limited, also the opposite of lavish abundance.",
+    "status": "verified",
+    "item_family_id": "wk.headword::lavish"
+  },
+  {
+    "external_key": "WK-B58-002",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "WARY most nearly means:",
+    "choices": [
+      "bold",
+      "cautious",
+      "cheerful",
+      "tired"
+    ],
+    "correct_index": 1,
+    "explanation": "WARY means watchful and cautious, especially of danger or difficulty, so 'cautious' is the best synonym. 'Bold' describes the opposite quality, a willingness to take risks without hesitation. 'Cheerful' refers to mood, not alertness, and 'tired' describes a state of fatigue unrelated to watchfulness.",
+    "status": "verified",
+    "item_family_id": "wk.headword::wary"
+  },
+  {
+    "external_key": "WK-B58-003",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "BRASH most nearly means:",
+    "choices": [
+      "timid",
+      "polite",
+      "recklessly bold",
+      "quiet"
+    ],
+    "correct_index": 2,
+    "explanation": "BRASH means assertively rude or bold in a way that shows disregard for caution or convention, making 'recklessly bold' the best match. 'Timid' and 'quiet' both describe restrained, cautious behavior, the opposite of brash. 'Polite' implies consideration for others, which also contrasts with the pushy quality of brash.",
+    "status": "verified",
+    "item_family_id": "wk.headword::brash"
+  },
+  {
+    "external_key": "WK-B58-004",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "PENSIVE most nearly means:",
+    "choices": [
+      "joyful",
+      "angry",
+      "deeply thoughtful",
+      "easily confused"
+    ],
+    "correct_index": 2,
+    "explanation": "PENSIVE means engaged in, involving, or reflecting deep or serious thought, so 'deeply thoughtful' is the best match. 'Joyful' describes a light, happy mood rather than reflective seriousness. 'Angry' implies an emotional reaction, not calm reflection. 'Easily confused' suggests a lack of clarity of thought, the opposite of the focused contemplation pensive describes.",
+    "status": "verified",
+    "item_family_id": "wk.headword::pensive"
+  },
+  {
+    "external_key": "WK-B58-005",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "TERSE most nearly means:",
+    "choices": [
+      "long-winded",
+      "unclear",
+      "friendly",
+      "brief and abrupt"
+    ],
+    "correct_index": 3,
+    "explanation": "TERSE means sparing in the use of words; brief and abrupt, so 'brief and abrupt' is the closest match. 'Long-winded' is the direct opposite, describing someone who uses too many words. 'Unclear' focuses on comprehensibility rather than brevity, and 'friendly' describes tone rather than length of expression.",
+    "status": "verified",
+    "item_family_id": "wk.headword::terse"
+  },
+  {
+    "external_key": "WK-B58-006",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "AVID most nearly means:",
+    "choices": [
+      "indifferent",
+      "lazy",
+      "enthusiastic",
+      "reluctant"
+    ],
+    "correct_index": 2,
+    "explanation": "AVID means having an eager desire or enthusiasm for something, so 'enthusiastic' is the best synonym. 'Indifferent' and 'reluctant' both describe a lack of interest or willingness, the opposite of avid eagerness. 'Lazy' suggests unwillingness to exert effort, which also contradicts the intense enthusiasm avid conveys.",
+    "status": "verified",
+    "item_family_id": "wk.headword::avid"
+  },
+  {
+    "external_key": "WK-B58-007",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "STOLID most nearly means:",
+    "choices": [
+      "expressive",
+      "easily startled",
+      "cheerfully talkative",
+      "calm and unemotional"
+    ],
+    "correct_index": 3,
+    "explanation": "STOLID means calm, dependable, and showing little emotion or animation, so 'calm and unemotional' is the best match. 'Expressive' describes the opposite, someone who shows feelings openly. 'Easily startled' implies nervousness rather than steady calm. 'Cheerfully talkative' describes animation and warmth, both opposite to stolid restraint.",
+    "status": "verified",
+    "item_family_id": "wk.headword::stolid"
+  },
+  {
+    "external_key": "WK-B58-008",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "ADROIT most nearly means:",
+    "choices": [
+      "clumsy",
+      "skillful",
+      "cautious",
+      "stubborn"
+    ],
+    "correct_index": 1,
+    "explanation": "ADROIT means clever or skillful in using the hands or mind, making 'skillful' the best synonym. 'Clumsy' is the direct opposite, describing a lack of coordination or skill. 'Cautious' describes a careful approach but says nothing about ability. 'Stubborn' refers to unwillingness to change, which is unrelated to competence or dexterity.",
+    "status": "verified",
+    "item_family_id": "wk.headword::adroit"
+  },
+  {
+    "external_key": "WK-B58-009",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "ZEALOUS most nearly means:",
+    "choices": [
+      "apathetic",
+      "mildly interested",
+      "openly hostile",
+      "fervidly devoted"
+    ],
+    "correct_index": 3,
+    "explanation": "ZEALOUS means having or showing great energy or enthusiasm in pursuit of a cause or goal, so 'fervidly devoted' is the best match. 'Apathetic' describes a total lack of interest, the direct opposite. 'Mildly interested' suggests weak engagement, far short of zealous commitment. 'Openly hostile' describes antagonism, not devoted enthusiasm.",
+    "status": "verified",
+    "item_family_id": "wk.headword::zealous"
+  },
+  {
+    "external_key": "WK-B58-010",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "ELOQUENT most nearly means:",
+    "choices": [
+      "fluent and persuasive",
+      "rambling and unclear",
+      "blunt and rude",
+      "quiet and withdrawn"
+    ],
+    "correct_index": 0,
+    "explanation": "ELOQUENT means fluent or persuasive in speaking or writing, so 'fluent and persuasive' is the best synonym. 'Rambling and unclear' describes disorganized speech, the opposite of polished expression. 'Blunt and rude' describes harsh directness without skill. 'Quiet and withdrawn' implies little communication at all, which contradicts eloquence.",
+    "status": "verified",
+    "item_family_id": "wk.headword::eloquent"
+  },
+  {
+    "external_key": "WK-B58-011",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of GRIM is:",
+    "choices": [
+      "dark",
+      "stern",
+      "threatening",
+      "cheerful"
+    ],
+    "correct_index": 3,
+    "explanation": "GRIM means stern, forbidding, or depressing in appearance or character, so its opposite is 'cheerful,' meaning noticeably happy and optimistic. 'Dark,' 'stern,' and 'threatening' are all synonyms or near-synonyms of grim rather than its opposite.",
+    "status": "verified",
+    "item_family_id": "wk.headword::grim"
+  },
+  {
+    "external_key": "WK-B58-012",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of SCANT is:",
+    "choices": [
+      "scarce",
+      "limited",
+      "plentiful",
+      "thin"
+    ],
+    "correct_index": 2,
+    "explanation": "SCANT means barely sufficient; very little, so its opposite is 'plentiful,' meaning existing in large amounts. 'Scarce' and 'limited' are both near-synonyms of scant, not its opposite. 'Thin' relates to physical width, not quantity.",
+    "status": "verified",
+    "item_family_id": "wk.headword::scant"
+  },
+  {
+    "external_key": "WK-B58-013",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of DORMANT is:",
+    "choices": [
+      "sleeping",
+      "inactive",
+      "hidden",
+      "active"
+    ],
+    "correct_index": 3,
+    "explanation": "DORMANT means temporarily inactive or in a state of rest, so its opposite is 'active,' meaning in operation or use. 'Sleeping' and 'inactive' are near-synonyms of dormant. 'Hidden' relates to visibility, not activity level.",
+    "status": "verified",
+    "item_family_id": "wk.headword::dormant"
+  },
+  {
+    "external_key": "WK-B58-014",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of MURKY is:",
+    "choices": [
+      "cloudy",
+      "dark",
+      "clear",
+      "dense"
+    ],
+    "correct_index": 2,
+    "explanation": "MURKY means dark and gloomy or not clear because full of sediment or fog, so its opposite is 'clear,' meaning free from obstruction, cloudiness, or confusion. 'Cloudy' and 'dark' are both synonyms of murky. 'Dense' describes thickness rather than clarity.",
+    "status": "verified",
+    "item_family_id": "wk.headword::murky"
+  },
+  {
+    "external_key": "WK-B58-015",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of GAUNT is:",
+    "choices": [
+      "hollow",
+      "wasted",
+      "well-fed",
+      "bony"
+    ],
+    "correct_index": 2,
+    "explanation": "GAUNT means lean and haggard, especially because of suffering or age, so its opposite is 'well-fed,' meaning nourished and healthy in appearance. 'Hollow,' 'wasted,' and 'bony' are all near-synonyms of gaunt describing thinness or emaciation rather than its opposite.",
+    "status": "verified",
+    "item_family_id": "wk.headword::gaunt"
+  },
+  {
+    "external_key": "WK-B58-016",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of PLIANT is:",
+    "choices": [
+      "flexible",
+      "yielding",
+      "soft",
+      "rigid"
+    ],
+    "correct_index": 3,
+    "explanation": "PLIANT means easily bent or easily influenced; flexible, so its opposite is 'rigid,' meaning stiff and unable to bend or be changed. 'Flexible' and 'yielding' are synonyms of pliant. 'Soft' describes texture but does not capture the structural inflexibility of rigid.",
+    "status": "verified",
+    "item_family_id": "wk.headword::pliant"
+  },
+  {
+    "external_key": "WK-B58-017",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of BENIGN is:",
+    "choices": [
+      "gentle",
+      "harmless",
+      "harmful",
+      "pleasant"
+    ],
+    "correct_index": 2,
+    "explanation": "BENIGN means gentle and not harmful, so its opposite is 'harmful,' meaning causing or capable of causing injury or damage. 'Gentle,' 'harmless,' and 'pleasant' are all synonyms or near-synonyms of benign that describe a safe and favorable quality.",
+    "status": "verified",
+    "item_family_id": "wk.headword::benign"
+  },
+  {
+    "external_key": "WK-B58-018",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of VALOR is:",
+    "choices": [
+      "bravery",
+      "courage",
+      "strength",
+      "cowardice"
+    ],
+    "correct_index": 3,
+    "explanation": "VALOR means great courage in the face of danger, especially in battle, so its opposite is 'cowardice,' meaning a lack of bravery when facing danger. 'Bravery' and 'courage' are synonyms of valor. 'Strength' describes physical power, which is separate from the moral quality of bravery that valor specifically names.",
+    "status": "verified",
+    "item_family_id": "wk.headword::valor"
+  },
+  {
+    "external_key": "WK-B58-019",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of SHREWD is:",
+    "choices": [
+      "clever",
+      "calculating",
+      "naive",
+      "alert"
+    ],
+    "correct_index": 2,
+    "explanation": "SHREWD means having sharp powers of judgment; astute, so its opposite is 'naive,' meaning lacking experience or judgment and too ready to trust. 'Clever' and 'calculating' are synonyms of shrewd describing sharp, strategic thinking. 'Alert' means watchful, which is a related quality but not the opposite of shrewdness.",
+    "status": "verified",
+    "item_family_id": "wk.headword::shrewd"
+  },
+  {
+    "external_key": "WK-B58-020",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of POTENT is:",
+    "choices": [
+      "powerful",
+      "strong",
+      "effective",
+      "feeble"
+    ],
+    "correct_index": 3,
+    "explanation": "POTENT means having great power, influence, or effect, so its opposite is 'feeble,' meaning lacking strength, power, or effectiveness. 'Powerful,' 'strong,' and 'effective' are all synonyms of potent and describe the same quality rather than its opposite.",
+    "status": "verified",
+    "item_family_id": "wk.headword::potent"
+  },
+  {
+    "external_key": "WK-B58-021",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The council voted to RESCIND the curfew order after residents complained it was unnecessary. In this sentence, RESCIND most nearly means:",
+    "choices": [
+      "enforce",
+      "cancel",
+      "extend",
+      "explain"
+    ],
+    "correct_index": 1,
+    "explanation": "The context shows the council removing a rule after complaints, meaning they took it back. RESCIND means to officially cancel or revoke a law, order, or agreement, so 'cancel' is the best match. 'Enforce' and 'extend' both keep the order in place, the opposite of what the sentence describes. 'Explain' relates to communication, not the removal of a rule.",
+    "status": "verified",
+    "item_family_id": "wk.headword::rescind"
+  },
+  {
+    "external_key": "WK-B58-022",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The abandoned warehouse was truly SQUALID, with standing water, broken glass, and piles of rotting waste. In this sentence, SQUALID most nearly means:",
+    "choices": [
+      "spacious",
+      "dimly lit",
+      "dangerous",
+      "extremely dirty"
+    ],
+    "correct_index": 3,
+    "explanation": "Standing water, broken glass, and rotting waste all describe conditions of severe filth. SQUALID means extremely dirty and unpleasant, especially as a result of neglect, so 'extremely dirty' is the best match. 'Spacious' and 'dimly lit' describe physical characteristics of a space, not its cleanliness. 'Dangerous' may be implied by the details but is not the specific meaning of squalid.",
+    "status": "verified",
+    "item_family_id": "wk.headword::squalid"
+  },
+  {
+    "external_key": "WK-B58-023",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The marathon runner described the final five miles as GRUELING, saying her legs felt like concrete and each step required total concentration. In this sentence, GRUELING most nearly means:",
+    "choices": [
+      "enjoyable",
+      "exhausting",
+      "competitive",
+      "unpredictable"
+    ],
+    "correct_index": 1,
+    "explanation": "Legs that feel like concrete and requiring total concentration for each step show extreme physical strain. GRUELING means extremely tiring and demanding, so 'exhausting' is the best match. 'Enjoyable' contradicts the described suffering. 'Competitive' describes the nature of a race, not its physical toll. 'Unpredictable' relates to uncertainty, not difficulty.",
+    "status": "verified",
+    "item_family_id": "wk.headword::grueling"
+  },
+  {
+    "external_key": "WK-B58-024",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The trainer had to CAJOLE the new recruit for twenty minutes before the recruit finally agreed to attempt the obstacle course. In this sentence, CAJOLE most nearly means:",
+    "choices": [
+      "threaten",
+      "order",
+      "coax persuasively",
+      "physically push"
+    ],
+    "correct_index": 2,
+    "explanation": "Taking twenty minutes to convince someone to attempt a task suggests gentle, persistent persuasion rather than force or commands. CAJOLE means to persuade someone to do something by sustained coaxing or flattery, making 'coax persuasively' the best match. 'Threaten' implies force, and 'order' implies authority that was not working here. 'Physically push' describes an action, not a form of persuasion.",
+    "status": "verified",
+    "item_family_id": "wk.headword::cajole"
+  },
+  {
+    "external_key": "WK-B58-025",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The child's PETULANT behavior after being told she could not have dessert included pouting, stomping, and refusing to speak to anyone. In this sentence, PETULANT most nearly means:",
+    "choices": [
+      "cheerfully excited",
+      "deeply sorry",
+      "quietly determined",
+      "sulkily childish"
+    ],
+    "correct_index": 3,
+    "explanation": "Pouting, stomping, and refusing to speak describe typical childish bad temper after not getting one's way. PETULANT means childishly sulky or bad-tempered, so 'sulkily childish' is the best match. 'Cheerfully excited' is the opposite of the mood described. 'Deeply sorry' implies remorse, not resentful protest. 'Quietly determined' suggests controlled focus, not the dramatic reaction petulant describes.",
+    "status": "verified",
+    "item_family_id": "wk.headword::petulant"
+  },
+  {
+    "external_key": "WK-B58-026",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The sergeant paused to CHIDE the private for leaving his weapon unsecured, reminding him firmly that such carelessness was unacceptable. In this sentence, CHIDE most nearly means:",
+    "choices": [
+      "praise",
+      "question",
+      "scold",
+      "ignore"
+    ],
+    "correct_index": 2,
+    "explanation": "Reminding someone firmly that carelessness is unacceptable shows a sharp, corrective reaction to a mistake. CHIDE means to scold or rebuke mildly, so 'scold' is the best match. 'Praise' is the direct opposite of chiding someone for carelessness. 'Question' implies inquiry rather than correction. 'Ignore' means taking no action, which contradicts the sergeant's firm response.",
+    "status": "verified",
+    "item_family_id": "wk.headword::chide"
+  },
+  {
+    "external_key": "WK-B58-027",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "Faced with growing protests, the governor chose to ADMONISH the demonstrators rather than arrest them, warning that continued disruption would have serious consequences. In this sentence, ADMONISH most nearly means:",
+    "choices": [
+      "applaud",
+      "negotiate with",
+      "arrest",
+      "warn firmly"
+    ],
+    "correct_index": 3,
+    "explanation": "Issuing a warning about serious consequences without making arrests shows a serious but non-punitive response. ADMONISH means to warn or reprimand someone earnestly, so 'warn firmly' is the best match. 'Applaud' is the direct opposite. 'Negotiate with' implies compromise and dialogue, not the one-directional warning admonish describes. 'Arrest' is explicitly ruled out by the sentence.",
+    "status": "verified",
+    "item_family_id": "wk.headword::admonish"
+  },
+  {
+    "external_key": "WK-B58-028",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "When rioters began to overwhelm the police line, commanders ordered officers to QUELL the disturbance before it spread to neighboring blocks. In this sentence, QUELL most nearly means:",
+    "choices": [
+      "observe",
+      "join",
+      "put down or suppress",
+      "document"
+    ],
+    "correct_index": 2,
+    "explanation": "Ordering officers to act before a disturbance spreads shows the goal of stopping and controlling it. QUELL means to put an end to a rebellion or other disorder, typically by the use of force, so 'put down or suppress' is the best match. 'Observe' and 'document' involve watching, not intervening. 'Join' is the opposite of stopping a disturbance.",
+    "status": "verified",
+    "item_family_id": "wk.headword::quell"
+  },
+  {
+    "external_key": "WK-B58-029",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The veteran journalist was known to PIQUE the curiosity of readers by opening articles with startling facts that seemed impossible at first glance. In this sentence, PIQUE most nearly means:",
+    "choices": [
+      "satisfy completely",
+      "diminish or reduce",
+      "stimulate or arouse",
+      "confuse and mislead"
+    ],
+    "correct_index": 2,
+    "explanation": "Using startling facts to make readers want to read further shows the writer is triggering interest, not satisfying or reducing it. PIQUE means to stimulate or arouse interest or curiosity, so 'stimulate or arouse' is the best match. 'Satisfy completely' is close to the opposite; piquing curiosity opens a desire rather than fulfilling it. 'Diminish or reduce' is the opposite of arousing. 'Confuse and mislead' implies deception, not deliberate engagement.",
+    "status": "verified",
+    "item_family_id": "wk.headword::pique"
+  },
+  {
+    "external_key": "WK-B58-030",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The article HERALDED the new medical treatment as a breakthrough that could change how millions of patients were cared for. In this sentence, HERALDED most nearly means:",
+    "choices": [
+      "criticized sharply",
+      "tested cautiously",
+      "quietly recorded",
+      "announced enthusiastically"
+    ],
+    "correct_index": 3,
+    "explanation": "Describing something as a breakthrough that changes millions of lives shows strong positive proclamation. HERALD means to signal the approach of something or to proclaim its worth enthusiastically, so 'announced enthusiastically' is the best match. 'Criticized sharply' is the opposite of a breakthrough announcement. 'Tested cautiously' and 'quietly recorded' both suggest restrained responses rather than enthusiastic proclamation.",
+    "status": "verified",
+    "item_family_id": "wk.headword::herald"
+  },
+  {
+    "external_key": "WK-B58-031",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word MORTAL most nearly means:",
+    "choices": [
+      "impossible to injure",
+      "living forever",
+      "resistant to pain",
+      "subject to death"
+    ],
+    "correct_index": 3,
+    "explanation": "MORTAL comes from the Latin root MORT, meaning death. A mortal being is one that is subject to death, which distinguishes it from an immortal. 'Impossible to injure' and 'living forever' both describe the opposite of mortality. 'Resistant to pain' describes physical toughness, which is unrelated to the mort root's meaning of death.",
+    "status": "verified",
+    "item_family_id": "wk.headword::mortal"
+  },
+  {
+    "external_key": "WK-B58-032",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word MIGRATE most nearly means:",
+    "choices": [
+      "to move from one region to another",
+      "to stay permanently in one place",
+      "to dig underground tunnels",
+      "to carry a heavy load"
+    ],
+    "correct_index": 0,
+    "explanation": "MIGRATE comes from the Latin root MIGR, meaning to move or to wander. To migrate is to move from one region or habitat to another, often seasonally or in search of better conditions. 'To stay permanently in one place' is the opposite. 'To dig underground tunnels' and 'to carry a heavy load' describe unrelated physical actions with no connection to the root's meaning.",
+    "status": "verified",
+    "item_family_id": "wk.headword::migrate"
+  },
+  {
+    "external_key": "WK-B58-033",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word NEGATE most nearly means:",
+    "choices": [
+      "to make larger",
+      "to deny or nullify",
+      "to support strongly",
+      "to delay indefinitely"
+    ],
+    "correct_index": 1,
+    "explanation": "NEGATE comes from the Latin root NEG, meaning to deny or say no. To negate something is to deny its truth or to cancel its effect. 'To make larger' and 'to support strongly' are the opposites of negating something. 'To delay indefinitely' describes postponing rather than canceling, which is a different action.",
+    "status": "verified",
+    "item_family_id": "wk.headword::negate"
+  },
+  {
+    "external_key": "WK-B58-034",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word GRATITUDE most nearly means:",
+    "choices": [
+      "bitterness over a loss",
+      "a large financial reward",
+      "an official announcement",
+      "a feeling of thankfulness"
+    ],
+    "correct_index": 3,
+    "explanation": "GRATITUDE comes from the Latin root GRAT, meaning pleasing or thankful. Gratitude is the quality of being thankful and the readiness to show appreciation. 'Bitterness over a loss' is the emotional opposite of thankfulness. 'A large financial reward' and 'an official announcement' both describe actions or objects, not the internal feeling that gratitude names.",
+    "status": "verified",
+    "item_family_id": "wk.headword::gratitude"
+  },
+  {
+    "external_key": "WK-B58-035",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word LIBERATE most nearly means:",
+    "choices": [
+      "to imprison",
+      "to set free",
+      "to punish severely",
+      "to debate openly"
+    ],
+    "correct_index": 1,
+    "explanation": "LIBERATE comes from the Latin root LIBER, meaning free. To liberate is to set someone free from imprisonment, oppression, or constraint. 'To imprison' is the direct opposite. 'To punish severely' describes the opposite of freeing. 'To debate openly' shares no connection with the LIBER root's meaning of freedom.",
+    "status": "verified",
+    "item_family_id": "wk.headword::liberate"
+  },
+  {
+    "external_key": "WK-B58-036",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word MUTATE most nearly means:",
+    "choices": [
+      "to remain unchanged",
+      "to copy exactly",
+      "to slow down gradually",
+      "to undergo a change in form"
+    ],
+    "correct_index": 3,
+    "explanation": "MUTATE comes from the Latin root MUT, meaning to change. To mutate is to change in form, nature, or character; the word is especially common in biology to describe a change in genetic material. 'To remain unchanged' is the direct opposite. 'To copy exactly' preserves rather than changes something. 'To slow down gradually' describes pace, not transformation.",
+    "status": "verified",
+    "item_family_id": "wk.headword::mutate"
+  },
+  {
+    "external_key": "WK-B58-037",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word GRADIENT most nearly means:",
+    "choices": [
+      "a flat, level surface",
+      "an abrupt stopping point",
+      "a gradual slope or change",
+      "a fixed color pattern"
+    ],
+    "correct_index": 2,
+    "explanation": "GRADIENT comes from the Latin root GRAD, meaning step or degree. A gradient is an incline or a gradual change in a value such as temperature, pressure, or color across a distance. 'A flat, level surface' has no gradient because there is no change. 'An abrupt stopping point' describes an end rather than a gradual transition. 'A fixed color pattern' implies no change, the opposite of a gradient.",
+    "status": "verified",
+    "item_family_id": "wk.headword::gradient"
+  },
+  {
+    "external_key": "WK-B58-038",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word CLARIFY most nearly means:",
+    "choices": [
+      "to confuse further",
+      "to make clear or understandable",
+      "to reduce in size",
+      "to combine two substances"
+    ],
+    "correct_index": 1,
+    "explanation": "CLARIFY comes from the Latin root CLAR, meaning clear or bright. To clarify is to make a statement or situation less confused and more clearly understandable. 'To confuse further' is the direct opposite. 'To reduce in size' describes a physical change unrelated to clarity. 'To combine two substances' describes a mixing process, not the act of clearing up confusion.",
+    "status": "verified",
+    "item_family_id": "wk.headword::clarify"
+  },
+  {
+    "external_key": "WK-B58-039",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word FORESIGHT most nearly means:",
+    "choices": [
+      "a review of past events",
+      "a sudden fear of the future",
+      "an unclear memory",
+      "the ability to plan ahead"
+    ],
+    "correct_index": 3,
+    "explanation": "FORESIGHT contains the prefix FORE-, meaning before or in advance, combined with 'sight,' meaning the ability to see or understand. Foresight is the ability to anticipate and plan for the future. 'A review of past events' describes hindsight or retrospect, not foresight. 'A sudden fear of the future' describes anxiety, not planning ability. 'An unclear memory' relates to the past, not the future.",
+    "status": "verified",
+    "item_family_id": "wk.headword::foresight"
+  },
+  {
+    "external_key": "WK-B58-040",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word MULTITUDE most nearly means:",
+    "choices": [
+      "a great number or crowd",
+      "a single unit",
+      "a small selection",
+      "a mixed result"
+    ],
+    "correct_index": 0,
+    "explanation": "MULTITUDE contains the prefix MULTI-, meaning many, combined with the suffix -TUDE, which forms nouns indicating a state or condition. A multitude is a large number of people or things. 'A single unit' and 'a small selection' both describe small or individual quantities, the opposite of a multitude. 'A mixed result' describes an outcome, not a quantity.",
+    "status": "verified",
+    "item_family_id": "wk.headword::multitude"
+  },
+  {
+    "external_key": "WK-B58-041",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word PSEUDONYM most nearly means:",
+    "choices": [
+      "a famous original author",
+      "an official signature",
+      "a translated title",
+      "a false or assumed name"
+    ],
+    "correct_index": 3,
+    "explanation": "PSEUDONYM contains the prefix PSEUDO-, meaning false or pretended, and the root NYM, from the Greek onoma, meaning name. A pseudonym is a fictitious name used by a writer instead of their real name. 'A famous original author' describes a real person, the opposite of a false identity. 'An official signature' and 'a translated title' both involve authentic or converted names, not invented ones.",
+    "status": "verified",
+    "item_family_id": "wk.headword::pseudonym"
+  },
+  {
+    "external_key": "WK-B58-042",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word UNDERMINE most nearly means:",
+    "choices": [
+      "to strengthen from below",
+      "to weaken or sabotage",
+      "to survey underground",
+      "to reinforce a structure"
+    ],
+    "correct_index": 1,
+    "explanation": "UNDERMINE contains the prefix UNDER-, meaning beneath or below, combined with 'mine,' historically meaning to dig beneath an enemy's walls to cause collapse. Today, to undermine means to weaken or damage something gradually or secretly. 'To strengthen from below' and 'to reinforce a structure' are the opposite of undermining. 'To survey underground' relates to the literal root but is not the word's current meaning.",
+    "status": "verified",
+    "item_family_id": "wk.headword::undermine"
+  },
+  {
+    "external_key": "WK-B58-043",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word PROTOTYPE most nearly means:",
+    "choices": [
+      "a final product ready for sale",
+      "a rejected design",
+      "a copy made from an existing product",
+      "an original model on which others are based"
+    ],
+    "correct_index": 3,
+    "explanation": "PROTOTYPE contains the prefix PROTO-, meaning first or original, and the root TYPE, meaning model or form. A prototype is the first or original model of something from which other forms are developed. 'A final product ready for sale' comes after the prototype stage, not before it. 'A rejected design' implies failure, and 'a copy made from an existing product' reverses the direction; prototypes come first.",
+    "status": "verified",
+    "item_family_id": "wk.headword::prototype"
+  },
+  {
+    "external_key": "WK-B58-044",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word RETROGRADE most nearly means:",
+    "choices": [
+      "moving forward rapidly",
+      "moving backward or declining",
+      "remaining in a fixed position",
+      "advancing in a spiral pattern"
+    ],
+    "correct_index": 1,
+    "explanation": "RETROGRADE contains the prefix RETRO-, meaning backward or behind, and the root GRAD, meaning step. Retrograde means directed or moving backward, or reverting to an earlier and less developed condition. 'Moving forward rapidly' is the direct opposite. 'Remaining in a fixed position' implies no movement at all. 'Advancing in a spiral pattern' describes a specific forward direction, not a reversal.",
+    "status": "verified",
+    "item_family_id": "wk.headword::retrograde"
+  },
+  {
+    "external_key": "WK-B58-045",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word POLYGON most nearly means:",
+    "choices": [
+      "a shape with many sides",
+      "a line with no endpoints",
+      "a solid three-dimensional object",
+      "a circle divided into sections"
+    ],
+    "correct_index": 0,
+    "explanation": "POLYGON contains the prefix POLY-, meaning many, and the root GON, from the Greek gonia, meaning angle or corner. A polygon is a plane figure with many straight sides and angles. 'A line with no endpoints' describes a different geometric concept with no angles. 'A solid three-dimensional object' is a polyhedron, not a polygon. 'A circle divided into sections' has curves rather than straight sides.",
+    "status": "verified",
+    "item_family_id": "wk.headword::polygon"
+  },
+  {
+    "external_key": "WK-B58-046",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word MACROSCOPIC most nearly means:",
+    "choices": [
+      "visible only under a microscope",
+      "large enough to be seen without magnification",
+      "related to invisible particles",
+      "existing only in theory"
+    ],
+    "correct_index": 1,
+    "explanation": "MACROSCOPIC contains the prefix MACRO-, meaning large, and the root SCOP, from the Greek skopein, meaning to look at or examine. Something macroscopic is large enough to be visible to the naked eye without any magnifying instrument. 'Visible only under a microscope' describes the microscopic, the direct opposite. 'Related to invisible particles' describes subatomic phenomena. 'Existing only in theory' implies the thing cannot be observed at all.",
+    "status": "verified",
+    "item_family_id": "wk.headword::macroscopic"
+  },
+  {
+    "external_key": "WK-B58-047",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word NEOCLASSICAL most nearly means:",
+    "choices": [
+      "belonging to the ancient world",
+      "reviving or imitating classical styles",
+      "completely modern and original",
+      "opposed to traditional art forms"
+    ],
+    "correct_index": 1,
+    "explanation": "NEOCLASSICAL contains the prefix NEO-, meaning new or revived, combined with 'classical,' referring to ancient Greek and Roman styles. Neoclassical describes a revival or imitation of classical styles in art, literature, or architecture during a later period. 'Belonging to the ancient world' describes the original classical period, not a revival of it. 'Completely modern and original' ignores the classical element entirely. 'Opposed to traditional art forms' contradicts the embrace of classical tradition that neoclassical implies.",
+    "status": "verified",
+    "item_family_id": "wk.headword::neoclassical"
+  },
+  {
+    "external_key": "WK-B58-048",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word MICROSCOPE most nearly means:",
+    "choices": [
+      "a device that measures distances",
+      "a tool for projecting large images",
+      "a lens that filters sunlight",
+      "an instrument for viewing very small objects"
+    ],
+    "correct_index": 3,
+    "explanation": "MICROSCOPE contains the prefix MICRO-, meaning very small, and the root SCOP, meaning to look at or examine. A microscope is an instrument used to view objects that are too small to be seen by the naked eye. 'A device that measures distances' describes a rangefinder, not a microscope. 'A tool for projecting large images' is closer to a projector; the MICRO- prefix indicates small-scale viewing, not enlargement onto a screen. 'A lens that filters sunlight' describes a filter, unrelated to magnification.",
+    "status": "verified",
+    "item_family_id": "wk.headword::microscope"
+  },
+  {
+    "external_key": "WK-B58-049",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In which sentence does SCALE mean a device for measuring weight?",
+    "choices": [
+      "The fish's SCALE caught the light and shimmered silver.",
+      "He placed the package on the SCALE at the post office.",
+      "The climbers began to SCALE the steep rock face at dawn.",
+      "The architect drew the building at a one-to-fifty SCALE."
+    ],
+    "correct_index": 1,
+    "explanation": "In choice B, SCALE is used as a noun meaning an instrument for weighing. In choice A, scale means a small flat plate forming part of a fish's skin. In choice C, scale is used as a verb meaning to climb. In choice D, scale refers to a ratio used in technical drawings. Only choice B uses scale to mean a weight-measuring device.",
+    "status": "verified",
+    "item_family_id": "wk.headword::scale"
+  },
+  {
+    "external_key": "WK-B58-050",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In which sentence does MATCH mean a formal contest between opponents?",
+    "choices": [
+      "The fabric colors did not MATCH, so she returned the curtains.",
+      "The chess MATCH lasted four hours and ended in a draw.",
+      "She lit the candle using a MATCH from the emergency kit.",
+      "The recruiter said no one could MATCH his record for pull-ups."
+    ],
+    "correct_index": 1,
+    "explanation": "In choice B, MATCH is used as a noun meaning a formal competition between two opponents or teams. In choice A, match is used as a verb meaning to correspond or look the same. In choice C, match means a small stick used to produce fire. In choice D, match is used as a verb meaning to equal or surpass. Only choice B uses match to mean a competitive contest.",
+    "status": "verified",
+    "item_family_id": "wk.headword::match"
+  },
+  {
+    "external_key": "WK-B58-051",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In which sentence does HARBOR mean to give shelter or refuge to someone?",
+    "choices": [
+      "The fishing vessels returned to the HARBOR before the storm hit.",
+      "The Navy stationed three destroyers in the protected HARBOR.",
+      "She was suspected of harboring a fugitive in her home.",
+      "Cargo ships waited outside the HARBOR for a berth to open."
+    ],
+    "correct_index": 2,
+    "explanation": "In choice C, HARBOR is used as a verb meaning to shelter or give refuge to someone, especially someone considered a criminal. In choices A, B, and D, harbor is used as a noun meaning a sheltered body of water where ships can anchor. Only choice C uses harbor as a verb meaning to give shelter or refuge.",
+    "status": "verified",
+    "item_family_id": "wk.headword::harbor"
+  },
+  {
+    "external_key": "WK-B58-052",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In which sentence does FILE mean to submit an official document?",
+    "choices": [
+      "The platoon marched in single FILE down the narrow path.",
+      "She used a metal FILE to smooth the rough edge of the bolt.",
+      "The attorney needed to FILE the paperwork before the deadline.",
+      "He kept each report in a separate FILE on his desk."
+    ],
+    "correct_index": 2,
+    "explanation": "In choice C, FILE is used as a verb meaning to formally submit a document to an official body. In choice A, file means a line of people one behind another. In choice B, file is a noun meaning a tool with a rough surface used for smoothing. In choice D, file is a noun meaning a folder for holding documents. Only choice C uses file as a verb meaning to submit an official document.",
+    "status": "verified",
+    "item_family_id": "wk.headword::file"
+  },
+  {
+    "external_key": "WK-B58-053",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In which sentence does GROUND mean to base or establish firmly?",
+    "choices": [
+      "The pilot was GROUNDED because of the dense fog.",
+      "The soldiers dug foxholes in the rocky GROUND.",
+      "Her argument was GROUNDED in solid research and facts.",
+      "The GROUND beneath the bridge had eroded after the flood."
+    ],
+    "correct_index": 2,
+    "explanation": "In choice C, GROUNDED is used as an adjective meaning well-founded and based on reliable information. In choice A, grounded means prevented from flying, typically because of bad weather or misconduct. In choices B and D, ground is used as a noun meaning the surface of the earth or soil. Only choice C uses ground to mean firmly based or established.",
+    "status": "verified",
+    "item_family_id": "wk.headword::ground"
+  },
+  {
+    "external_key": "WK-B58-054",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In which sentence does SCORE mean to achieve or obtain something?",
+    "choices": [
+      "The final SCORE of the championship game was 24 to 17.",
+      "The composer finished writing the SCORE for the film.",
+      "She managed to SCORE tickets to the sold-out concert.",
+      "He held a SCORE of grievances that he refused to let go."
+    ],
+    "correct_index": 2,
+    "explanation": "In choice C, SCORE is used as a verb meaning to succeed in obtaining or achieving something. In choice A, score is a noun meaning the number of points earned in a game. In choice B, score is a noun meaning a written musical composition. In choice D, score is a noun meaning a large number or a collection; 'a score of grievances' uses this sense. Only choice C uses score as a verb meaning to obtain or achieve.",
+    "status": "verified",
+    "item_family_id": "wk.headword::score"
+  },
+  {
+    "external_key": "WK-B58-055",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In which sentence does POST mean to assign to a position or station?",
+    "choices": [
+      "The guard was POSTED at the main gate throughout the night.",
+      "She nailed the notice to the wooden POST at the entrance.",
+      "He sent the package by POST and it arrived within two days.",
+      "The company announced the job POST in the morning bulletin."
+    ],
+    "correct_index": 0,
+    "explanation": "In choice A, POSTED is used as a verb meaning to station someone at a particular place for a specific duty. In choice B, post is a noun meaning an upright pole or stake fixed into the ground. In choice C, post refers to the mail service. In choice D, post is a noun meaning a job or position. Only choice A uses post as a verb meaning to assign someone to a specific duty station.",
+    "status": "verified",
+    "item_family_id": "wk.headword::post"
+  },
+  {
+    "external_key": "WK-B58-056",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In which sentence does GRADE mean to evaluate or rank by quality?",
+    "choices": [
+      "The truck struggled to climb the steep GRADE on the mountain road.",
+      "The inspector had to GRADE each batch of produce before shipment.",
+      "She needed a passing GRADE in chemistry to graduate on time.",
+      "The road crew worked to GRADE the gravel surface before paving."
+    ],
+    "correct_index": 1,
+    "explanation": "In choice B, GRADE is used as a verb meaning to assess or rank something according to quality or standard. In choice A, grade is a noun meaning a slope or incline. In choice C, grade is a noun meaning a mark indicating academic performance. In choice D, grade is used as a verb meaning to level or smooth a surface with a grader machine, a different sense entirely. Only choice B uses grade to mean to evaluate or rank by quality.",
+    "status": "verified",
+    "item_family_id": "wk.headword::grade"
+  }
+]

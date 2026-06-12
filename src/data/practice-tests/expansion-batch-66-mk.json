@@ -1,0 +1,920 @@
+[
+  {
+    "external_key": "MK-B66-001",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "What is 47 mod 12 (the remainder when 47 is divided by 12)?",
+    "choices": [
+      "3",
+      "5",
+      "11",
+      "7"
+    ],
+    "correct_index": 2,
+    "explanation": "Divide 47 by 12: 12 * 3 = 36, and 12 * 4 = 48 is too large, so the quotient is 3. The remainder is 47 - 36 = 11. Choosing 5 comes from mistakenly using 47 - 42 = 5 (the 42 has no basis here); choosing 3 is the quotient, not the remainder; choosing 7 confuses 47 mod 8 = 7 with 47 mod 12.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::modular-arithmetic-mod12-remainder-47"
+  },
+  {
+    "external_key": "MK-B66-002",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "What is (85 mod 7) + (50 mod 7)?",
+    "choices": [
+      "9",
+      "7",
+      "2",
+      "5"
+    ],
+    "correct_index": 2,
+    "explanation": "85 divided by 7: 7 * 12 = 84, so 85 mod 7 = 1. 50 divided by 7: 7 * 7 = 49, so 50 mod 7 = 1. Sum = 1 + 1 = 2. Choosing 9 adds the two REMAINDERS before reducing and gets 1+8=9 (wrong division for 50); choosing 7 treats the final sum as if it must be reduced mod 7 giving 2 mod 7 = 2, not 7; choosing 5 uses 50 mod 7 = 50 - 45 = 5 (divides by 9 instead of 7).",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::modular-arithmetic-mod7-sum-85-50"
+  },
+  {
+    "external_key": "MK-B66-003",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "A number leaves remainder 3 when divided by 7 AND remainder 3 when divided by 5. Which of these numbers satisfies both conditions?",
+    "choices": [
+      "38",
+      "33",
+      "28",
+      "43"
+    ],
+    "correct_index": 0,
+    "explanation": "Test 38: 38 / 7 = 5 remainder 3 (7 * 5 = 35, 38 - 35 = 3); 38 / 5 = 7 remainder 3 (5 * 7 = 35, 38 - 35 = 3). Both remainders equal 3, so 38 works. 28 divided by 7 gives remainder 0, not 3. 33 divided by 7 gives remainder 5, not 3. 43 divided by 7 gives remainder 1, not 3. Only 38 satisfies both conditions.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::modular-arithmetic-simultaneous-rem3-mod7-mod5"
+  },
+  {
+    "external_key": "MK-B66-004",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "By the divisibility rule for 11, is 918082 divisible by 11?",
+    "choices": [
+      "No, the alternating digit sum is 6",
+      "Yes, the alternating digit sum is 11",
+      "No, the alternating digit sum is 2",
+      "Yes, the alternating digit sum is 22"
+    ],
+    "correct_index": 3,
+    "explanation": "The rule for 11: compute the alternating sum of digits from left to right. Digits: 9, 1, 8, 0, 8, 2. Alternating sum = 9 - 1 + 8 - 0 + 8 - 2 = 22. Since 22 is divisible by 11, the number is divisible by 11. A sum of 6 results from adding all digits without alternating signs; a sum of 11 confuses the rule with divisibility by 3; a sum of 2 skips alternate digits entirely.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::divisibility-rule-11-alternating-sum-918082"
+  },
+  {
+    "external_key": "MK-B66-005",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "A sequence is defined by a_1 = 3 and a_n = a_(n-1) + 2n for n >= 2. What is a_4?",
+    "choices": [
+      "23",
+      "27",
+      "21",
+      "25"
+    ],
+    "correct_index": 2,
+    "explanation": "Build term by term: a_1 = 3. a_2 = 3 + 2*2 = 7. a_3 = 7 + 2*3 = 13. a_4 = 13 + 2*4 = 21. Choosing 27 adds 2*7 = 14 to 13, using n = 7 instead of n = 4; choosing 23 adds 2*5 = 10 to 13, using n = 5; choosing 25 adds 12 to 13 by doubling the step index incorrectly.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::recursive-sequence-a1-3-an-prev-plus-2n"
+  },
+  {
+    "external_key": "MK-B66-006",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "In a Fibonacci-style sequence each term equals the sum of the two before it. The sequence starts 2, 3, 5, 8, 13, 21, ... What is the 7th term?",
+    "choices": [
+      "29",
+      "55",
+      "34",
+      "21"
+    ],
+    "correct_index": 2,
+    "explanation": "List the terms: 1st=2, 2nd=3, 3rd=5, 4th=8, 5th=13, 6th=21, 7th = 13 + 21 = 34. Choosing 29 adds 8 + 21 = 29, skipping the correct pair; choosing 55 is the 8th term (21 + 34); choosing 21 is the 6th term, off by one.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::fibonacci-style-seq-start-2-3-seventh-term"
+  },
+  {
+    "external_key": "MK-B66-007",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "A telescoping sum is written as the sum from k = 1 to 4 of [1/k - 1/(k+1)]. What is the value of this sum?",
+    "choices": [
+      "4/5",
+      "3/4",
+      "1/5",
+      "1/4"
+    ],
+    "correct_index": 0,
+    "explanation": "Write out all four terms: (1/1 - 1/2) + (1/2 - 1/3) + (1/3 - 1/4) + (1/4 - 1/5). Every interior fraction cancels, leaving 1 - 1/5 = 4/5. Choosing 1/5 keeps only the last subtracted piece and forgets to subtract from 1; choosing 3/4 is 1 - 1/4, which is the sum of only 3 terms; choosing 1/4 is just the last positive piece before it cancels.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::telescoping-sum-1overk-minus-1overk1-k1to4"
+  },
+  {
+    "external_key": "MK-B66-008",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "How many distinct arrangements of 5 people are there around a circular table if rotations are considered identical?",
+    "choices": [
+      "24",
+      "60",
+      "20",
+      "120"
+    ],
+    "correct_index": 0,
+    "explanation": "For circular arrangements of n people, fix one person's seat to eliminate identical rotations: the count is (n - 1)! = 4! = 24. Choosing 120 is 5!, which counts each distinct arrangement 5 times (once per rotation); choosing 60 divides 5! by 2, incorrectly treating reflections as identical; choosing 20 is 5 * 4, only two variable positions rather than all four.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::circular-permutation-5-people"
+  },
+  {
+    "external_key": "MK-B66-009",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "A bag has 4 red, 3 blue, and 2 green marbles. One marble is drawn and NOT replaced. A second marble is then drawn. What is the probability both marbles are red?",
+    "choices": [
+      "1/3",
+      "2/9",
+      "16/81",
+      "1/6"
+    ],
+    "correct_index": 3,
+    "explanation": "P(first red) = 4/9. With one red removed, 3 reds remain among 8 marbles: P(second red | first red) = 3/8. Joint probability = (4/9) * (3/8) = 12/72 = 1/6. Choosing 2/9 incorrectly uses 4/9 * 2/4 = 8/36; choosing 16/81 squares 4/9 as if sampling with replacement; choosing 1/3 is just P(first red) with the denominator reduced to 12, ignoring the draw without replacement.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::conditional-prob-dependent-draws-4red-3blue-2green"
+  },
+  {
+    "external_key": "MK-B66-010",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "In a class of 30 students, 18 play soccer and 12 play basketball. 5 students play both sports. How many students play at least one sport?",
+    "choices": [
+      "35",
+      "25",
+      "30",
+      "20"
+    ],
+    "correct_index": 1,
+    "explanation": "Use inclusion-exclusion: |soccer U basketball| = 18 + 12 - 5 = 25. Choosing 35 adds all three numbers instead of subtracting the overlap: 18 + 12 + 5 = 35; choosing 30 is the class size, not the count of sport-players; choosing 20 subtracts the total of both groups from 30, giving 30 - 10 = 20 in an unsupported step.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::inclusion-exclusion-soccer-basketball-30-students"
+  },
+  {
+    "external_key": "MK-B66-011",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "A worker completes 2/5 of a job on day 1 and 1/4 of the REMAINING job on day 2. What fraction of the whole job is still unfinished after day 2?",
+    "choices": [
+      "7/20",
+      "9/20",
+      "3/10",
+      "11/20"
+    ],
+    "correct_index": 1,
+    "explanation": "After day 1, the unfinished portion is 1 - 2/5 = 3/5. Day 2 completes (1/4)*(3/5) = 3/20 of the whole job. Total completed = 2/5 + 3/20 = 8/20 + 3/20 = 11/20. Still unfinished = 1 - 11/20 = 9/20. Choosing 7/20 adds 3/20 to 4/20 without subtracting from 1; choosing 3/10 treats the day 2 fraction as 1/4 of the whole job rather than of the remaining portion; choosing 11/20 is the completed fraction, not the unfinished one.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::two-day-job-fraction-remaining-2over5-then-1over4"
+  },
+  {
+    "external_key": "MK-B66-012",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "What is 5 / (3 + sqrt(2)) after rationalizing the denominator? (Leave answer in exact form.)",
+    "choices": [
+      "(15 + 5*sqrt(2)) / 7",
+      "(15 - 5*sqrt(2)) / 11",
+      "5 / (3 + sqrt(2))",
+      "(15 - 5*sqrt(2)) / 7"
+    ],
+    "correct_index": 3,
+    "explanation": "Multiply numerator and denominator by the conjugate (3 - sqrt(2)). Numerator: 5*(3 - sqrt(2)) = 15 - 5*sqrt(2). Denominator: 3^2 - (sqrt(2))^2 = 9 - 2 = 7. Result: (15 - 5*sqrt(2)) / 7. The plus-sign form uses the wrong conjugate, keeping a radical in the denominator; choosing /11 adds instead of subtracts in the denominator: 9 + 2 = 11; leaving the expression unrationalised is not simplified.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::rationalize-conjugate-3-plus-sqrt2-denominator"
+  },
+  {
+    "external_key": "MK-B66-013",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Pipe A fills a tank in 6 hours, pipe B in 8 hours, and pipe C in 12 hours. How long do all three pipes together take to fill the tank?",
+    "choices": [
+      "26/3 hours",
+      "3 hours",
+      "8/3 hours",
+      "2 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Combined fill rate = 1/6 + 1/8 + 1/12. With common denominator 24: 4/24 + 3/24 + 2/24 = 9/24 = 3/8 tanks per hour. Time = 1 / (3/8) = 8/3 hours (about 2 hr 40 min). Choosing 3 hours assumes a combined rate of 1/3 instead of 3/8; choosing 26/3 adds the times (6 + 8 + 12 = 26) and divides by 3, which is not how rates combine; choosing 2 hours under-estimates by ignoring the slower pipe C.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::work-rate-three-pipes-6hr-8hr-12hr-combined"
+  },
+  {
+    "external_key": "MK-B66-015",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Class A has 20 students with a mean score of 78. Class B has 30 students with a mean score of 88. What is the combined mean score of all 50 students?",
+    "choices": [
+      "83",
+      "85",
+      "84",
+      "82"
+    ],
+    "correct_index": 2,
+    "explanation": "Total points: Class A contributes 20 * 78 = 1560; Class B contributes 30 * 88 = 2640. Combined sum = 4200. Combined mean = 4200 / 50 = 84. Choosing 83 is the unweighted average (78 + 88) / 2 = 83, ignoring different class sizes; choosing 85 over-weights Class B; choosing 82 under-weights Class B by using incorrect multiplication.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::weighted-average-two-classes-20-78-30-88"
+  },
+  {
+    "external_key": "MK-B66-016",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "Express 0.0045 as a fraction in simplest form.",
+    "choices": [
+      "45/1000",
+      "9/200",
+      "1/222",
+      "9/2000"
+    ],
+    "correct_index": 3,
+    "explanation": "0.0045 = 45/10000. The GCF of 45 and 10000 is 5, so simplify: 9/2000. Choosing 45/1000 = 0.045, which is ten times too large; choosing 9/200 = 0.045, the same tenfold error; 1/222 is approximately 0.0045 but is not an exact equivalent (1/222 = 0.004504...).",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::decimal-0point0045-to-fraction-simplest"
+  },
+  {
+    "external_key": "MK-B66-017",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "A store marks up a product 40% above cost, then offers a 25% discount off the marked-up price. What is the net percent change from the original cost?",
+    "choices": [
+      "5% decrease",
+      "15% decrease",
+      "5% increase",
+      "10% increase"
+    ],
+    "correct_index": 2,
+    "explanation": "Let original cost = 100. After 40% markup: 100 * 1.40 = 140. After 25% discount off 140: 140 * 0.75 = 105. Net change = (105 - 100) / 100 = 5% increase. Choosing 15% decrease directly subtracts the two percentages (40 - 25 = 15), ignoring that the discount applies to the marked-up price; choosing 5% decrease applies the discount to the original cost instead of the inflated price; choosing 10% increase adds partial amounts incorrectly.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::markup-40pct-then-discount-25pct-net-change"
+  },
+  {
+    "external_key": "MK-B66-018",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "What is the median of the data set {5, 9, 3, 12, 7, 15, 2}?",
+    "choices": [
+      "9",
+      "7",
+      "8",
+      "6"
+    ],
+    "correct_index": 1,
+    "explanation": "Sort the data: 2, 3, 5, 7, 9, 12, 15. With seven values, the median is the 4th value = 7. Choosing 9 is the 5th value, off by one position; choosing 8 is the mean of the two middle values, which applies only to an even-count set; choosing 6 incorrectly averages the 3rd and 4th values.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::median-7-values-sorted-position4"
+  },
+  {
+    "external_key": "MK-B66-019",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "The data set is: 4, 4, 5, 6, 7, 50. Which measure changes the most if the outlier 50 is removed?",
+    "choices": [
+      "Median",
+      "Mode",
+      "Mean and median change equally",
+      "Mean"
+    ],
+    "correct_index": 3,
+    "explanation": "With 50: mean = 76/6 = 12.67; median = (5+6)/2 = 5.5; mode = 4. Without 50: mean = 26/5 = 5.2; median = 5; mode = 4. The mean shifts by about 7.47 while the median shifts by only 0.5. The mean is most sensitive because every value contributes directly to its calculation, so a single extreme value distorts it far more than the median or mode.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::outlier-effect-mean-vs-median-mode-data6"
+  },
+  {
+    "external_key": "MK-B66-020",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "What is sqrt(180) in simplest radical form?",
+    "choices": [
+      "9*sqrt(2)",
+      "3*sqrt(20)",
+      "6*sqrt(5)",
+      "12*sqrt(5)"
+    ],
+    "correct_index": 2,
+    "explanation": "Factor: 180 = 36 * 5. So sqrt(180) = sqrt(36) * sqrt(5) = 6*sqrt(5). Choosing 9*sqrt(2) would require 180 = 81 * 2, but 81 * 2 = 162, not 180; choosing 3*sqrt(20) equals 3 * 2*sqrt(5) = 6*sqrt(5), which is correct in value but sqrt(20) is not simplified, so this form is not in simplest form; choosing 12*sqrt(5) would correspond to sqrt(720), not sqrt(180).",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::simplify-radical-sqrt180-simplest-form"
+  },
+  {
+    "external_key": "MK-B66-022",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify: (32a^10)^(2/5).",
+    "choices": [
+      "4a^5",
+      "2a^4",
+      "8a^4",
+      "4a^4"
+    ],
+    "correct_index": 3,
+    "explanation": "32 = 2^5, so (2^5)^(2/5) = 2^2 = 4. (a^10)^(2/5) = a^(10 * 2/5) = a^4. Result: 4a^4. Choosing 4a^5 multiplies the exponent incorrectly as 10 * (1/5) = 2, then adds 2+3 without basis; choosing 8a^4 computes the coefficient as 32^(1/5) * 2 = 2*2 = 4... or treats the 2/5 as 2 times the 5th power of 2 = 8; choosing 2a^4 takes only the fifth root of 32 without squaring.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::fractional-exponent-32a10-to-2over5"
+  },
+  {
+    "external_key": "MK-B66-023",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Simplify: sqrt(50x^3) / sqrt(2x), assuming x > 0.",
+    "choices": [
+      "5x",
+      "25x",
+      "5*sqrt(x)",
+      "5x^2"
+    ],
+    "correct_index": 0,
+    "explanation": "Combine under one radical: sqrt(50x^3 / 2x) = sqrt(25x^2) = 5x (positive since x > 0). Alternatively, sqrt(50x^3) = 5x*sqrt(2x); dividing by sqrt(2x) leaves 5x. Choosing 5*sqrt(x) leaves an extra factor of sqrt(x) because the student simplified x^(3/2) / x^(1/2) = x^1 but then wrote sqrt(x); choosing 25x squares the coefficient 5; choosing 5x^2 computes the exponent as 3/2 - 1/2 = 2 instead of 1.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::simplify-radical-division-sqrt50x3-over-sqrt2x"
+  },
+  {
+    "external_key": "MK-B66-024",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Factor completely: 6x^2 + 11x - 10.",
+    "choices": [
+      "(6x - 5)(x + 2)",
+      "(2x - 5)(3x + 2)",
+      "(3x + 5)(2x - 2)",
+      "(2x + 5)(3x - 2)"
+    ],
+    "correct_index": 3,
+    "explanation": "Find two integers that multiply to 6 * (-10) = -60 and add to 11: those are 15 and -4. Rewrite: 6x^2 + 15x - 4x - 10 = 3x(2x + 5) - 2(2x + 5) = (3x - 2)(2x + 5). Check: (2x+5)(3x-2) = 6x^2 - 4x + 15x - 10 = 6x^2 + 11x - 10 (correct). Choosing (6x-5)(x+2) gives 6x^2 + 7x - 10; choosing (2x-5)(3x+2) gives 6x^2 - 11x - 10 (wrong sign on middle term); choosing (3x+5)(2x-2) gives 6x^2 + 4x - 10 (both wrong middle and constant).",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::factor-trinomial-6x2-plus-11x-minus10"
+  },
+  {
+    "external_key": "MK-B66-025",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "What is the sum of all roots of x^3 - 4x^2 + x + 6 = 0?",
+    "choices": [
+      "4",
+      "-4",
+      "6",
+      "1"
+    ],
+    "correct_index": 0,
+    "explanation": "By Vieta's formulas, for a monic cubic x^3 + bx^2 + cx + d = 0 the sum of the roots is -b. Here the x^2 coefficient is -4, so the sum = -(-4) = 4. Choosing -4 takes the coefficient directly without negating it; choosing 6 is the constant term, which equals the product of roots (with sign) by Vieta's, not the sum; choosing 1 is the coefficient of x, unrelated to the sum of roots.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::vieta-sum-roots-cubic-x3-minus4x2-px-p6"
+  },
+  {
+    "external_key": "MK-B66-026",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Evaluate: log base 4 of (1/16).",
+    "choices": [
+      "2",
+      "-4",
+      "-2",
+      "1/2"
+    ],
+    "correct_index": 2,
+    "explanation": "Set log_4(1/16) = x, so 4^x = 1/16. Since 1/16 = 4^(-2), we get x = -2. Choosing 2 gives 4^2 = 16, not 1/16 (ignores the reciprocal); choosing -4 would give 4^(-4) = 1/256, confusing base 4 with base 2 where 2^(-4) = 1/16; choosing 1/2 is log_16(4) = 1/2, reversing the base and argument.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::log-base4-of-1over16-negative-exponent"
+  },
+  {
+    "external_key": "MK-B66-029",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "The equation 2x^2 - 8x + k = 0 has exactly one real solution. What is the value of k?",
+    "choices": [
+      "2",
+      "4",
+      "16",
+      "8"
+    ],
+    "correct_index": 3,
+    "explanation": "For exactly one real solution the discriminant equals zero: b^2 - 4ac = 0. With a = 2, b = -8, c = k: (-8)^2 - 4(2)(k) = 0 => 64 - 8k = 0 => k = 8. Choosing 4 computes 64 / (4 * 4) = 4, dividing by 4a rather than 4a alone; choosing 16 uses 64 / 4 = 16, ignoring the factor a = 2; choosing 2 takes a directly as the answer rather than solving the discriminant equation.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::discriminant-zero-one-solution-2x2-m8x-k"
+  },
+  {
+    "external_key": "MK-B66-031",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "What is the inverse of f(x) = (x + 4) / (2x - 1)?",
+    "choices": [
+      "(x + 4) / (2x - 1)",
+      "(x + 1) / (2x - 4)",
+      "(4 - x) / (2x + 1)",
+      "(x - 4) / (2x + 1)"
+    ],
+    "correct_index": 0,
+    "explanation": "Swap x and y in y = (x+4)/(2x-1) and solve for y: x(2y-1) = y+4 => 2xy - x = y + 4 => y(2x-1) = x+4 => y = (x+4)/(2x-1). This function is its own inverse (an involution). Choosing (4-x)/(2x+1) results from a sign error when rearranging; choosing (x+1)/(2x-4) comes from adding instead of subtracting 4 in the numerator step; choosing (x-4)/(2x+1) negates the numerator constant incorrectly.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::inverse-fn-self-inverse-xp4-over-2xm1"
+  },
+  {
+    "external_key": "MK-B66-032",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "A rectangular garden has a perimeter of 54 feet. The length is 3 feet more than twice the width. What is the width in feet?",
+    "choices": [
+      "12",
+      "8",
+      "15",
+      "9"
+    ],
+    "correct_index": 1,
+    "explanation": "Let w = width and length = 2w + 3. Perimeter: 2(w + 2w + 3) = 54 => 2(3w + 3) = 54 => 6w + 6 = 54 => 6w = 48 => w = 8. Choosing 12 solves 3w = 36 but sets up the equation without the +3 term; choosing 9 uses only one side instead of the perimeter formula; choosing 15 gives a perimeter well over 54 feet.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::perimeter-length-twice-width-plus3-total54"
+  },
+  {
+    "external_key": "MK-B66-033",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "A company sells q = 200 - 5p units at price $p each. Revenue R = p * q. What price maximizes revenue?",
+    "choices": [
+      "$10",
+      "$40",
+      "$20",
+      "$25"
+    ],
+    "correct_index": 2,
+    "explanation": "R = p(200 - 5p) = 200p - 5p^2. This downward parabola is maximized at its vertex: p = -b/(2a) = -200 / (2 * (-5)) = 200/10 = 20. At p = 20: R = 20 * 100 = $2000. Choosing $40 is where R = 40 * 0 = 0 (the demand reaches zero); choosing $10 is half the optimal price; choosing $25 results from applying the vertex formula incorrectly as p = b/a = 200/5 = 40 then halving.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::quadratic-revenue-model-max-price-200minus5p"
+  },
+  {
+    "external_key": "MK-B66-034",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "The sum of two numbers is 41 and their difference is 13. What is the larger number?",
+    "choices": [
+      "14",
+      "26",
+      "28",
+      "27"
+    ],
+    "correct_index": 3,
+    "explanation": "Let x + y = 41 and x - y = 13. Add the equations: 2x = 54, so x = 27 (the larger). Then y = 41 - 27 = 14. Choosing 14 is the smaller number; choosing 28 adds 1 without justification; choosing 26 uses (41 - 13) / 2 = 14, confusing the sum and difference formula.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::sum-41-difference-13-find-larger"
+  },
+  {
+    "external_key": "MK-B66-035",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "Profit is P = 5x - 2x^2 - 4 where x is units (hundreds) produced. For what positive integer x is profit greatest?",
+    "choices": [
+      "2",
+      "1",
+      "3",
+      "5"
+    ],
+    "correct_index": 1,
+    "explanation": "The vertex of P = -2x^2 + 5x - 4 is at x = -b/(2a) = -5/(2*(-2)) = 5/4 = 1.25. Test integer neighbors: x=1 gives P = 5 - 2 - 4 = -1; x=2 gives P = 10 - 8 - 4 = -2. Since -1 > -2, x = 1 gives the greater profit. Choosing 2 gives a lower profit of -2; choosing 3 gives P = 15 - 18 - 4 = -7; choosing 5 gives P = 25 - 50 - 4 = -29.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::profit-model-5x-minus-2x2-minus4-max-integer"
+  },
+  {
+    "external_key": "MK-B66-036",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "An investor puts $3000 at 4% annual simple interest and $5000 at 6% annual simple interest. What is the total interest earned after 2 years?",
+    "choices": [
+      "$420",
+      "$840",
+      "$760",
+      "$960"
+    ],
+    "correct_index": 1,
+    "explanation": "Interest from first account: 3000 * 0.04 * 2 = $240. Interest from second: 5000 * 0.06 * 2 = $600. Total: $840. Choosing $420 uses only 1 year instead of 2; choosing $960 applies an incorrect rate of 7% to the second account; choosing $760 uses different rates or mishandles the 2-year multiplier on one account.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::simple-interest-two-investments-4pct-6pct-2yr"
+  },
+  {
+    "external_key": "MK-B66-037",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "Two cars leave the same point simultaneously. Car A travels north at 60 mph and Car B travels east at 80 mph. How many miles apart are they after 1.5 hours?",
+    "choices": [
+      "210",
+      "120",
+      "100",
+      "150"
+    ],
+    "correct_index": 3,
+    "explanation": "Distance north: 60 * 1.5 = 90 miles. Distance east: 80 * 1.5 = 120 miles. They travel at right angles, so distance = sqrt(90^2 + 120^2) = sqrt(8100 + 14400) = sqrt(22500) = 150 miles. Choosing 120 is only the eastward distance; choosing 100 applies the 3-4-5 ratio to the original speeds (60 and 80) but ignores the 1.5 multiplier; choosing 210 adds the two distances linearly: 90 + 120 = 210.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::two-cars-perpendicular-pythagorean-60mph-80mph-1pt5hr"
+  },
+  {
+    "external_key": "MK-B66-039",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "A 30-lb coffee blend sells for $6.40/lb. Type A costs $8/lb and type B costs $5/lb. How many pounds of type A are in the blend?",
+    "choices": [
+      "16",
+      "12",
+      "18",
+      "14"
+    ],
+    "correct_index": 3,
+    "explanation": "Let a = pounds of type A. Then 30 - a = pounds of type B. Revenue equation: 8a + 5(30 - a) = 6.40 * 30 => 8a + 150 - 5a = 192 => 3a = 42 => a = 14. Check: 8(14) + 5(16) = 112 + 80 = 192 = 6.40 * 30. Choosing 16 gives 128 + 70 = 198, not 192; choosing 12 gives 96 + 90 = 186, not 192; choosing 18 gives 144 + 60 = 204, not 192.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::coffee-blend-typeA-8-typeB-5-30lb-target-6pt40"
+  },
+  {
+    "external_key": "MK-B66-040",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "The line y = 3x + b passes through the point (2, 11). What is the value of b?",
+    "choices": [
+      "17",
+      "8",
+      "5",
+      "3"
+    ],
+    "correct_index": 2,
+    "explanation": "Substitute x = 2, y = 11: 11 = 3(2) + b => 11 = 6 + b => b = 5. Choosing 17 adds rather than subtracts: 11 + 6 = 17; choosing 8 applies b = y - x = 11 - 3 = 8, dropping the multiplier; choosing 3 reads b as the slope coefficient instead of the y-intercept.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::y-intercept-line-y3xpb-through-2-11"
+  },
+  {
+    "external_key": "MK-B66-041",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "A rectangle has area 91 sq ft. Its length is 6 ft more than its width. What is the width?",
+    "choices": [
+      "11",
+      "13",
+      "7",
+      "9"
+    ],
+    "correct_index": 2,
+    "explanation": "Let width = w and length = w + 6. Area: w(w + 6) = 91 => w^2 + 6w - 91 = 0. Factor: (w + 13)(w - 7) = 0, giving w = 7 (taking the positive root). Check: 7 * 13 = 91. Choosing 13 is the length, not the width; choosing 11 would give area 11 * 17 = 187, far too large; choosing 9 gives 9 * 15 = 135, not 91.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::quadratic-word-problem-area-91-length-width-plus6"
+  },
+  {
+    "external_key": "MK-B66-042",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "A sphere is inscribed in a cube with side length 10 cm (the sphere touches every face). What is the volume of the sphere? (Use pi = 3.14)",
+    "choices": [
+      "4186.7 cm^3",
+      "523.3 cm^3",
+      "314 cm^3",
+      "1570 cm^3"
+    ],
+    "correct_index": 1,
+    "explanation": "An inscribed sphere has diameter equal to the side length, so radius = 5. Volume = (4/3) * pi * r^3 = (4/3) * 3.14 * 125 = 1570/3 = 523.3 cm^3. Choosing 4186.7 uses radius = 10 (diameter instead of radius): (4/3)*3.14*1000 = 4186.7; choosing 314 is pi * r^2 * h for a cylinder; choosing 1570 is the numerator 4 * pi * r^3 without dividing by 3.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::sphere-inscribed-in-cube-side10-volume"
+  },
+  {
+    "external_key": "MK-B66-043",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A regular tetrahedron (4 equilateral triangular faces) has edge length 6. Its volume formula is V = e^3 / (6*sqrt(2)). What is the volume?",
+    "choices": [
+      "36",
+      "18*sqrt(2)",
+      "12*sqrt(3)",
+      "36*sqrt(2)"
+    ],
+    "correct_index": 1,
+    "explanation": "V = 6^3 / (6*sqrt(2)) = 216 / (6*sqrt(2)) = 36/sqrt(2) = 36*sqrt(2)/2 = 18*sqrt(2). Choosing 36 is 36/sqrt(2) without rationalizing the denominator; choosing 12*sqrt(3) uses the equilateral triangle area formula instead of the tetrahedral volume formula; choosing 36*sqrt(2) skips the final division by 2 when rationalizing.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::tetrahedron-volume-edge6-regular"
+  },
+  {
+    "external_key": "MK-B66-044",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A regular hexagon is inscribed in a circle of radius 8. What is the area of the hexagon?",
+    "choices": [
+      "96*sqrt(3)",
+      "64*sqrt(3)",
+      "128*sqrt(3)",
+      "192"
+    ],
+    "correct_index": 0,
+    "explanation": "A regular hexagon inscribed in a circle of radius r consists of 6 equilateral triangles each with side r. Area of one equilateral triangle with side 8 = (sqrt(3)/4) * 8^2 = 16*sqrt(3). Total: 6 * 16*sqrt(3) = 96*sqrt(3). Choosing 192 applies A = 6*(1/2)*r^2 = 192 without the sqrt(3) factor; choosing 64*sqrt(3) uses only 4 triangles; choosing 128*sqrt(3) doubles the correct answer.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::hexagon-inscribed-circle-radius8-area"
+  },
+  {
+    "external_key": "MK-B66-045",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "Two similar triangles have corresponding sides in ratio 3:5. What is the ratio of their areas?",
+    "choices": [
+      "9:25",
+      "3:5",
+      "6:10",
+      "27:125"
+    ],
+    "correct_index": 0,
+    "explanation": "For similar figures, the area ratio equals the square of the linear scale factor. With scale factor 3:5, area ratio = 3^2 : 5^2 = 9:25. Choosing 3:5 confuses the linear ratio with the area ratio (a very common error); choosing 6:10 doubles the linear ratio; choosing 27:125 is the volume ratio (scale factor cubed), applicable to 3-D solids, not areas.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::similar-triangles-area-ratio-3to5-squared"
+  },
+  {
+    "external_key": "MK-B66-046",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "Two similar prisms have corresponding edge lengths in ratio 2:3. What is the ratio of their volumes?",
+    "choices": [
+      "8:27",
+      "4:9",
+      "2:3",
+      "6:9"
+    ],
+    "correct_index": 0,
+    "explanation": "For similar 3-D solids, the volume ratio equals the cube of the linear scale factor: 2^3 : 3^3 = 8:27. Choosing 4:9 is the surface area ratio (scale factor squared); choosing 2:3 is the linear ratio itself; choosing 6:9 doubles the linear ratio without cubing.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::similar-prisms-volume-ratio-2to3-cubed"
+  },
+  {
+    "external_key": "MK-B66-048",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "In triangle ABC, a = 7, b = 9, and angle C = 60 degrees. Using the law of cosines, what is c? (sqrt(67) is approximately 8.19)",
+    "choices": [
+      "sqrt(130)",
+      "sqrt(67)",
+      "sqrt(85)",
+      "sqrt(4)"
+    ],
+    "correct_index": 1,
+    "explanation": "Law of cosines: c^2 = a^2 + b^2 - 2ab*cos(C) = 49 + 81 - 2(7)(9)(0.5) = 130 - 63 = 67, so c = sqrt(67). Choosing sqrt(130) omits the cosine term and gives only a^2 + b^2; choosing sqrt(4) = 2 uses cos(60) = 1 instead of 0.5, making 2ab*cos(C) = 126 and c^2 = 130 - 126 = 4; choosing sqrt(85) results from using cos(60) = 2/3 instead of the correct 1/2.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::law-of-cosines-a7-b9-angleC60-find-c"
+  },
+  {
+    "external_key": "MK-B66-049",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "In triangle ABC, angle A = 30 degrees, angle B = 45 degrees, and side a (opposite A) = 5. Using the law of sines, what is side b?",
+    "choices": [
+      "5*sqrt(3)",
+      "5*sqrt(2)",
+      "5",
+      "10"
+    ],
+    "correct_index": 1,
+    "explanation": "Law of sines: b / sin(B) = a / sin(A), so b = a * sin(B) / sin(A) = 5 * sin(45) / sin(30) = 5 * (sqrt(2)/2) / (1/2) = 5*sqrt(2). Choosing 5*sqrt(3) uses sin(60) = sqrt(3)/2 instead of sin(45) in the numerator; choosing 5 assumes b = a when the angles differ; choosing 10 applies b = 2a, doubling without the correct ratio.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::law-of-sines-angleA30-angleB45-a5-find-b"
+  },
+  {
+    "external_key": "MK-B66-050",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "The equation of a circle is (x - 3)^2 + (y + 2)^2 = 49. What are its center and radius?",
+    "choices": [
+      "Center (3, -2), radius 7",
+      "Center (-3, 2), radius 7",
+      "Center (3, -2), radius 49",
+      "Center (3, 2), radius 7"
+    ],
+    "correct_index": 0,
+    "explanation": "In standard form (x - h)^2 + (y - k)^2 = r^2, the center is (h, k) and radius is r. Here h = 3, k = -2, r^2 = 49 so r = 7: center (3, -2), radius 7. Choosing (-3, 2) negates both h and k instead of reading them directly; choosing radius 49 confuses r^2 = 49 with r = 49; choosing center (3, 2) reads k = +2 instead of -2 from (y + 2).",
+    "status": "verified",
+    "item_family_id": "mk.geometry::circle-standard-form-xm3-sq-yp2-sq-eq49"
+  },
+  {
+    "external_key": "MK-B66-052",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "A square is inscribed in a circle of radius 6 (each vertex of the square touches the circle). What is the area of the square?",
+    "choices": [
+      "36",
+      "144",
+      "48",
+      "72"
+    ],
+    "correct_index": 3,
+    "explanation": "The square's diagonal equals the circle's diameter = 12. For a square with diagonal d: side = d / sqrt(2) = 12 / sqrt(2) = 6*sqrt(2). Area = (6*sqrt(2))^2 = 72. Choosing 36 uses the radius (6) as the side length, ignoring the diagonal relationship; choosing 144 uses the diameter (12) as the side; choosing 48 halves the correct area without justification.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::square-inscribed-circle-radius6-area"
+  },
+  {
+    "external_key": "MK-B66-055",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "A student needs an average of at least 80 across five tests. Scores so far: 72, 85, 90, 78. What is the minimum score needed on the fifth test?",
+    "choices": [
+      "80",
+      "75",
+      "85",
+      "70"
+    ],
+    "correct_index": 1,
+    "explanation": "Required total: 5 * 80 = 400. Sum of four scores: 72 + 85 + 90 + 78 = 325. Minimum fifth score: 400 - 325 = 75. Choosing 80 assumes the current average equals 80; choosing 85 adds unnecessary padding; choosing 70 gives a total of 395 and a mean of 79, which falls below the 80 minimum.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::minimum-score-five-tests-average80-four-given"
+  },
+  {
+    "external_key": "MK-B66-057",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "A truck can hold at most 2,400 pounds. Each box weighs 350 pounds. What is the maximum number of boxes the truck can carry?",
+    "choices": [
+      "6",
+      "7",
+      "8",
+      "5"
+    ],
+    "correct_index": 0,
+    "explanation": "Solve 350n <= 2400: n <= 2400 / 350 = 6.857. Since n must be a whole number, the maximum is 6. At 6 boxes: 2100 pounds (within limit). At 7 boxes: 2450 pounds (exceeds 2400). Choosing 7 ignores that it exceeds the weight limit; choosing 8 is even further over; choosing 5 is within limit but is not the maximum.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::max-boxes-truck-2400lb-each-350lb"
+  },
+  {
+    "external_key": "MK-B66-058",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "What values of x satisfy both x^2 < 25 AND x > -3?",
+    "choices": [
+      "-5 < x < 5",
+      "x > -3",
+      "-3 < x < 5",
+      "-3 < x < 25"
+    ],
+    "correct_index": 2,
+    "explanation": "x^2 < 25 gives -5 < x < 5. Intersect with x > -3: the overlapping region is -3 < x < 5. Choosing -5 < x < 5 ignores the second condition, leaving the left boundary too wide; choosing x > -3 ignores the upper bound imposed by x^2 < 25; choosing -3 < x < 25 incorrectly uses 25 (not sqrt(25) = 5) as the upper bound.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::system-x-sq-lt25-and-x-gt-neg3-intersection"
+  },
+  {
+    "external_key": "MK-B66-059",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "Which value of x satisfies BOTH 2x + 3 > 5 AND x - 4 < 1?",
+    "choices": [
+      "x = 1",
+      "x = 6",
+      "x = 0",
+      "x = 4"
+    ],
+    "correct_index": 3,
+    "explanation": "Condition 1: 2x + 3 > 5 => x > 1. Condition 2: x - 4 < 1 => x < 5. Together: 1 < x < 5. Only x = 4 lies in (1, 5). x = 1 fails because the inequality is strict (x must be strictly greater than 1); x = 6 fails x < 5; x = 0 fails x > 1.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::compound-and-2xp3-gt5-xm4-lt1-which-satisfies"
+  },
+  {
+    "external_key": "MK-B66-060",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "A project needs at least 120 work-hours. Four workers have at most 8 days. Which inequality gives the minimum average hours h per worker per day?",
+    "choices": [
+      "4 + 8 + h >= 120",
+      "4 * 8 * h >= 120",
+      "4h >= 120",
+      "8h >= 120"
+    ],
+    "correct_index": 1,
+    "explanation": "Total work = workers * days * hours per worker per day = 4 * 8 * h. This must be at least 120: 32h >= 120, so h >= 3.75 hours per day. The additive form makes no dimensional sense; 8h >= 120 ignores the 4 workers; 4h >= 120 ignores the 8 days.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::work-hours-4workers-8days-min-120-per-day"
+  },
+  {
+    "external_key": "MK-B66-067",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 2,
+    "stem": "Evaluate: 4! - 3! + 2! (where n! = n factorial).",
+    "choices": [
+      "18",
+      "24",
+      "20",
+      "14"
+    ],
+    "correct_index": 2,
+    "explanation": "4! = 24, 3! = 6, 2! = 2. Evaluate left to right: 24 - 6 + 2 = 20. Choosing 18 stops at 24 - 6 = 18 and forgets to add 2!; choosing 24 is just 4! alone; choosing 14 subtracts 2! instead of adding: 24 - 6 - 2 - 2 = 14.",
+    "status": "verified",
+    "item_family_id": "mk.order-of-operations::factorial-expression-4fact-minus-3fact-plus-2fact"
+  },
+  {
+    "external_key": "MK-B66-072",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "What is C(10, 3) * C(3, 1)?",
+    "choices": [
+      "120",
+      "720",
+      "360",
+      "240"
+    ],
+    "correct_index": 2,
+    "explanation": "C(10, 3) = 10! / (3! * 7!) = (10 * 9 * 8) / 6 = 120. C(3, 1) = 3. Product: 120 * 3 = 360. Choosing 120 is only C(10, 3) without multiplying by C(3, 1); choosing 720 uses C(3, 1) = 6 = 3! instead of 3; choosing 240 treats C(3, 1) = 2 instead of 3.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::binomial-coefficient-product-C10-3-times-C3-1"
+  },
+  {
+    "external_key": "MK-B66-073",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "A bag has 5 red and 3 blue marbles. One marble is drawn at random. What is the probability it is red OR blue?",
+    "choices": [
+      "5/8",
+      "1",
+      "3/8",
+      "8/3"
+    ],
+    "correct_index": 1,
+    "explanation": "The bag contains only red and blue marbles, so drawing any marble gives red or blue with certainty. P(red or blue) = 8/8 = 1. Choosing 5/8 is P(red) alone; choosing 3/8 is P(blue) alone; choosing 8/3 inverts the fraction to give a value greater than 1, which cannot be a probability.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::probability-certain-event-all-outcomes-red-blue"
+  },
+  {
+    "external_key": "MK-B66-074",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Pipe X fills a pool in 4 hours and pipe Y drains it in 6 hours. Both pipes are open on an empty pool. How long does it take to fill the pool?",
+    "choices": [
+      "12 hours",
+      "10 hours",
+      "5 hours",
+      "2 hours"
+    ],
+    "correct_index": 0,
+    "explanation": "Net fill rate = 1/4 - 1/6 = 3/12 - 2/12 = 1/12 pool per hour. Time to fill = 1 / (1/12) = 12 hours. Choosing 10 results from a common-denominator error: 1/4 - 1/6 = 5/24 - 4/24 = 1/24 is wrong (correct LCD is 12, not 24 with those numerators); choosing 5 averages the two times (4 + 6) / 2 = 5; choosing 2 subtracts the times: 6 - 4 = 2.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::work-rate-fill-and-drain-4hr-6hr-net"
+  },
+  {
+    "external_key": "MK-B66-075",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A cylinder with radius 3 cm and height 4 cm is melted and recast as a sphere of equal volume. What is the radius of the sphere? (Use pi = 3.14 where needed.)",
+    "choices": [
+      "approximately 2.08 cm",
+      "3 cm",
+      "4 cm",
+      "approximately 1.5 cm"
+    ],
+    "correct_index": 1,
+    "explanation": "Cylinder volume = pi * 3^2 * 4 = 36pi. Set equal to sphere volume: (4/3) * pi * R^3 = 36pi => R^3 = 36 * (3/4) = 27 => R = 3 cm. Choosing 2.08 cm solves R^3 = 9 instead of 27 (divides by 4 instead of multiplying by 3/4); choosing 4 cm is the cylinder height; choosing 1.5 cm halves the cylinder radius without calculation.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::cylinder-recast-as-sphere-equal-volume-r3-h4"
+  }
+]

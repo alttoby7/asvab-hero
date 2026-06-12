@@ -1,0 +1,954 @@
+[
+  {
+    "external_key": "WK-B49-001",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "JOVIAL most nearly means:",
+    "choices": [
+      "cheerful",
+      "serious",
+      "bitter",
+      "nervous"
+    ],
+    "correct_index": 0,
+    "explanation": "JOVIAL means full of hearty good humor and friendliness, making 'cheerful' the closest synonym. 'Serious' describes a sober manner that is the opposite of jovial. 'Bitter' implies resentment, and 'nervous' implies anxiety; neither matches the warm, merry quality jovial describes.",
+    "status": "verified",
+    "item_family_id": "wk.headword::jovial"
+  },
+  {
+    "external_key": "WK-B49-002",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "NIMBLE most nearly means:",
+    "choices": [
+      "slow",
+      "heavy",
+      "agile",
+      "loud"
+    ],
+    "correct_index": 2,
+    "explanation": "NIMBLE means quick and light in movement or thought, so 'agile' is the best match. 'Slow' and 'heavy' both describe the opposite of the quick, light quality nimble conveys. 'Loud' relates to sound, not movement, and is unrelated to nimble.",
+    "status": "verified",
+    "item_family_id": "wk.headword::nimble"
+  },
+  {
+    "external_key": "WK-B49-003",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "STOUT most nearly means:",
+    "choices": [
+      "frail",
+      "sturdy",
+      "slender",
+      "quick"
+    ],
+    "correct_index": 1,
+    "explanation": "STOUT means strongly built or thick and solid, making 'sturdy' the best synonym. 'Frail' and 'slender' both describe a thin, weak build, the opposite of stout. 'Quick' refers to speed, which has nothing to do with build or strength.",
+    "status": "verified",
+    "item_family_id": "wk.headword::stout"
+  },
+  {
+    "external_key": "WK-B49-004",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "FERVENT most nearly means:",
+    "choices": [
+      "cold",
+      "careless",
+      "passionate",
+      "doubtful"
+    ],
+    "correct_index": 2,
+    "explanation": "FERVENT means having or showing great warmth or intensity of feeling, so 'passionate' is the closest match. 'Cold' and 'careless' both describe a lack of feeling or effort, which is the opposite of fervent. 'Doubtful' relates to uncertainty, not emotional intensity.",
+    "status": "verified",
+    "item_family_id": "wk.headword::fervent"
+  },
+  {
+    "external_key": "WK-B49-005",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "CUNNING most nearly means:",
+    "choices": [
+      "clever",
+      "honest",
+      "reckless",
+      "generous"
+    ],
+    "correct_index": 0,
+    "explanation": "CUNNING means having or showing skill in achieving one's ends by deceit or evasion, so 'clever' is the closest match. 'Honest' is the opposite because cunning often implies a degree of deceptiveness. 'Reckless' suggests acting without caution, and 'generous' means giving freely; neither captures the shrewd, calculating quality cunning conveys.",
+    "status": "verified",
+    "item_family_id": "wk.headword::cunning"
+  },
+  {
+    "external_key": "WK-B49-006",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "DESOLATE most nearly means:",
+    "choices": [
+      "crowded",
+      "joyful",
+      "barren",
+      "colorful"
+    ],
+    "correct_index": 2,
+    "explanation": "DESOLATE means empty of people and devoid of life or warmth, so 'barren' is the closest match. 'Crowded' is the opposite, implying many people. 'Joyful' describes an emotional state of happiness, and 'colorful' describes visual richness; neither reflects the bleak emptiness desolate conveys.",
+    "status": "verified",
+    "item_family_id": "wk.headword::desolate"
+  },
+  {
+    "external_key": "WK-B49-007",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "HAUGHTY most nearly means:",
+    "choices": [
+      "humble",
+      "arrogant",
+      "curious",
+      "nervous"
+    ],
+    "correct_index": 1,
+    "explanation": "HAUGHTY means having an attitude of superiority and contempt for others, making 'arrogant' the best synonym. 'Humble' is the direct opposite of haughty. 'Curious' describes a desire to learn, and 'nervous' describes anxiety; neither captures the proud, dismissive quality of haughtiness.",
+    "status": "verified",
+    "item_family_id": "wk.headword::haughty"
+  },
+  {
+    "external_key": "WK-B49-008",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "TRUCULENT most nearly means:",
+    "choices": [
+      "submissive",
+      "aggressive",
+      "indifferent",
+      "generous"
+    ],
+    "correct_index": 1,
+    "explanation": "TRUCULENT means eager to argue or fight; aggressively defiant, so 'aggressive' is the closest match. 'Submissive' is the opposite, describing someone who yields rather than fights. 'Indifferent' means showing no interest or concern, and 'generous' means giving freely; neither captures the combative hostility truculent describes.",
+    "status": "verified",
+    "item_family_id": "wk.headword::truculent"
+  },
+  {
+    "external_key": "WK-B49-009",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "ACRIMONIOUS most nearly means:",
+    "choices": [
+      "pleasant",
+      "bitter",
+      "apologetic",
+      "vague"
+    ],
+    "correct_index": 1,
+    "explanation": "ACRIMONIOUS means angry and bitter, especially in speech or manner, making 'bitter' the best synonym. 'Pleasant' is the direct opposite. 'Apologetic' implies regret and conciliation, and 'vague' refers to a lack of clarity; neither reflects the sharp, bitter anger that acrimonious describes.",
+    "status": "verified",
+    "item_family_id": "wk.headword::acrimonious"
+  },
+  {
+    "external_key": "WK-B49-010",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "PRODIGIOUS most nearly means:",
+    "choices": [
+      "ordinary",
+      "minimal",
+      "enormous",
+      "careless"
+    ],
+    "correct_index": 2,
+    "explanation": "PRODIGIOUS means remarkably great in extent, size, or degree, so 'enormous' is the best synonym. 'Ordinary' and 'minimal' both suggest something small or unremarkable, which is the opposite of prodigious. 'Careless' describes a manner of doing things, not a quantity or scale.",
+    "status": "verified",
+    "item_family_id": "wk.headword::prodigious"
+  },
+  {
+    "external_key": "WK-B49-011",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of TAME is:",
+    "choices": [
+      "wild",
+      "calm",
+      "gentle",
+      "trained"
+    ],
+    "correct_index": 0,
+    "explanation": "TAME means domesticated or not wild, so its opposite is 'wild,' meaning living in a natural, undomesticated state. 'Calm' and 'gentle' are qualities often found in tame animals, not opposites of tame. 'Trained' is similar to tame in meaning, not opposite.",
+    "status": "verified",
+    "item_family_id": "wk.headword::tame"
+  },
+  {
+    "external_key": "WK-B49-012",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of DULL is:",
+    "choices": [
+      "pale",
+      "flat",
+      "boring",
+      "vivid"
+    ],
+    "correct_index": 3,
+    "explanation": "DULL means lacking brightness or interest, so its opposite is 'vivid,' meaning strikingly bright or intense. 'Pale' actually describes something similar to dull in terms of brightness. 'Flat' and 'boring' are near-synonyms of dull, not antonyms.",
+    "status": "verified",
+    "item_family_id": "wk.headword::dull"
+  },
+  {
+    "external_key": "WK-B49-013",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of FAINT is:",
+    "choices": [
+      "weak",
+      "dim",
+      "strong",
+      "distant"
+    ],
+    "correct_index": 2,
+    "explanation": "FAINT means lacking strength or clarity, so its opposite is 'strong,' meaning powerful or intense. 'Weak' and 'dim' are near-synonyms of faint in different contexts. 'Distant' describes location, not intensity or strength.",
+    "status": "verified",
+    "item_family_id": "wk.headword::faint"
+  },
+  {
+    "external_key": "WK-B49-014",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of COVERT is:",
+    "choices": [
+      "hidden",
+      "secret",
+      "open",
+      "military"
+    ],
+    "correct_index": 2,
+    "explanation": "COVERT means not openly acknowledged or displayed; secret, so its opposite is 'open,' meaning done without concealment. 'Hidden' and 'secret' are near-synonyms of covert. 'Military' describes a type of covert operation but says nothing about secrecy or openness.",
+    "status": "verified",
+    "item_family_id": "wk.headword::covert"
+  },
+  {
+    "external_key": "WK-B49-015",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of FUTILE is:",
+    "choices": [
+      "hopeless",
+      "pointless",
+      "effective",
+      "difficult"
+    ],
+    "correct_index": 2,
+    "explanation": "FUTILE means producing no useful result; pointless, so its opposite is 'effective,' meaning producing the desired result. 'Hopeless' and 'pointless' are synonyms of futile. 'Difficult' describes effort required, not whether the effort produces results.",
+    "status": "verified",
+    "item_family_id": "wk.headword::futile"
+  },
+  {
+    "external_key": "WK-B49-016",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of DAUNT is:",
+    "choices": [
+      "frighten",
+      "discourage",
+      "encourage",
+      "threaten"
+    ],
+    "correct_index": 2,
+    "explanation": "DAUNT means to make someone feel intimidated or apprehensive, so its opposite is 'encourage,' meaning to give someone confidence or support. 'Frighten' and 'discourage' are synonyms of daunt. 'Threaten' intensifies the intimidation rather than reversing it.",
+    "status": "verified",
+    "item_family_id": "wk.headword::daunt"
+  },
+  {
+    "external_key": "WK-B49-017",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of SPARSE is:",
+    "choices": [
+      "scarce",
+      "empty",
+      "dense",
+      "thin"
+    ],
+    "correct_index": 2,
+    "explanation": "SPARSE means thinly dispersed or scattered; not thick or dense, so its opposite is 'dense,' meaning closely packed together. 'Scarce' and 'thin' are similar in meaning to sparse, not opposite. 'Empty' goes even further than sparse, meaning nothing at all, which is not the antonym.",
+    "status": "verified",
+    "item_family_id": "wk.headword::sparse"
+  },
+  {
+    "external_key": "WK-B49-018",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of REMORSE is:",
+    "choices": [
+      "guilt",
+      "regret",
+      "indifference",
+      "sorrow"
+    ],
+    "correct_index": 2,
+    "explanation": "REMORSE means deep regret or guilt for wrongdoing, so its opposite is 'indifference,' meaning a complete lack of feeling or concern. 'Guilt' and 'regret' are synonyms of remorse. 'Sorrow' describes sadness, which is closer to remorse than to its opposite.",
+    "status": "verified",
+    "item_family_id": "wk.headword::remorse"
+  },
+  {
+    "external_key": "WK-B49-019",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of AUDACIOUS is:",
+    "choices": [
+      "brave",
+      "bold",
+      "timid",
+      "reckless"
+    ],
+    "correct_index": 2,
+    "explanation": "AUDACIOUS means showing a willingness to take bold risks; daring, so its opposite is 'timid,' meaning lacking courage or confidence. 'Brave,' 'bold,' and 'reckless' are all near-synonyms of audacious that describe fearless or impulsive action, not the opposite of it.",
+    "status": "verified",
+    "item_family_id": "wk.headword::audacious"
+  },
+  {
+    "external_key": "WK-B49-020",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of LUCRATIVE is:",
+    "choices": [
+      "profitable",
+      "rewarding",
+      "unprofitable",
+      "costly"
+    ],
+    "correct_index": 2,
+    "explanation": "LUCRATIVE means producing a great deal of profit, so its opposite is 'unprofitable,' meaning not generating a gain. 'Profitable' and 'rewarding' are synonyms of lucrative. 'Costly' describes high expense but does not necessarily mean the activity loses money overall.",
+    "status": "verified",
+    "item_family_id": "wk.headword::lucrative"
+  },
+  {
+    "external_key": "WK-B49-021",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The mechanic told us the engine problem was TRIVIAL and would only take ten minutes to fix. In this sentence, TRIVIAL most nearly means:",
+    "choices": [
+      "serious",
+      "complicated",
+      "minor",
+      "expensive"
+    ],
+    "correct_index": 2,
+    "explanation": "The clue is that the repair would only take ten minutes, showing the problem was not serious. TRIVIAL means of little importance or seriousness, so 'minor' is the best match. 'Serious' and 'complicated' both suggest a bigger problem, which contradicts the quick repair time. 'Expensive' describes cost, not severity.",
+    "status": "verified",
+    "item_family_id": "wk.headword::trivial"
+  },
+  {
+    "external_key": "WK-B49-022",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The soldier moved with such STEALTH through the enemy camp that not a single guard noticed him. In this sentence, STEALTH most nearly means:",
+    "choices": [
+      "speed",
+      "silence",
+      "secrecy",
+      "strength"
+    ],
+    "correct_index": 2,
+    "explanation": "The clue is that no guard noticed the soldier, meaning he avoided detection entirely. STEALTH means the action of moving carefully and quietly so as to avoid detection, so 'secrecy' is the closest match. 'Speed' could make noise and draw attention. 'Silence' is close but narrower; 'secrecy' captures the full sense of avoiding notice.",
+    "status": "verified",
+    "item_family_id": "wk.headword::stealth"
+  },
+  {
+    "external_key": "WK-B49-023",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "After months at sea, the crew was FAMISHED and ate every bit of food the port had to offer. In this sentence, FAMISHED most nearly means:",
+    "choices": [
+      "exhausted",
+      "extremely hungry",
+      "grateful",
+      "impatient"
+    ],
+    "correct_index": 1,
+    "explanation": "The context of months at sea and eating every bit of food available shows the crew had been deprived of food. FAMISHED means extremely hungry, so 'extremely hungry' is the correct match. 'Exhausted' relates to tiredness, not hunger. 'Grateful' and 'impatient' describe attitudes, not the physical need for food.",
+    "status": "verified",
+    "item_family_id": "wk.headword::famished"
+  },
+  {
+    "external_key": "WK-B49-024",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The recruits were APPREHENSIVE before their first parachute jump, triple-checking their gear and asking the jump master the same questions repeatedly. In this sentence, APPREHENSIVE most nearly means:",
+    "choices": [
+      "excited",
+      "eager",
+      "anxious",
+      "confident"
+    ],
+    "correct_index": 2,
+    "explanation": "Triple-checking gear and repeating questions shows nervousness about something uncertain and risky. APPREHENSIVE means worried or nervous about a future event, making 'anxious' the best match. 'Excited' and 'eager' describe positive anticipation, which conflicts with the nervous behavior described. 'Confident' is the opposite of apprehensive.",
+    "status": "verified",
+    "item_family_id": "wk.headword::apprehensive"
+  },
+  {
+    "external_key": "WK-B49-025",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The engineer's ASTUTE analysis identified a flaw that three other teams had missed entirely. In this sentence, ASTUTE most nearly means:",
+    "choices": [
+      "thorough",
+      "shrewdly perceptive",
+      "slow and careful",
+      "overly critical"
+    ],
+    "correct_index": 1,
+    "explanation": "Finding a flaw that three other teams missed shows unusually sharp judgment. ASTUTE means having the ability to assess situations or people accurately; shrewd, so 'shrewdly perceptive' is the best match. 'Thorough' describes completeness, not sharpness of insight. 'Slow and careful' implies effort rather than innate perception. 'Overly critical' suggests fault-finding as a negative trait rather than accurate insight.",
+    "status": "verified",
+    "item_family_id": "wk.headword::astute"
+  },
+  {
+    "external_key": "WK-B49-026",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The abandoned base had a FORLORN look: broken windows, overgrown paths, and equipment left to rust for decades. In this sentence, FORLORN most nearly means:",
+    "choices": [
+      "busy and crowded",
+      "pitifully sad and neglected",
+      "well-hidden from view",
+      "recently condemned"
+    ],
+    "correct_index": 1,
+    "explanation": "Broken windows, overgrown paths, and rusting equipment all paint a picture of neglect and sadness. FORLORN means pitifully sad and abandoned, making 'pitifully sad and neglected' the best match. 'Busy and crowded' is the opposite. 'Well-hidden from view' describes concealment, not sadness. 'Recently condemned' describes a legal action, not the emotional quality of the scene.",
+    "status": "verified",
+    "item_family_id": "wk.headword::forlorn"
+  },
+  {
+    "external_key": "WK-B49-027",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The new policy was so DRACONIAN that even senior officers who supported strict discipline called it excessive and unfair. In this sentence, DRACONIAN most nearly means:",
+    "choices": [
+      "effective",
+      "confusing",
+      "harshly severe",
+      "widely misunderstood"
+    ],
+    "correct_index": 2,
+    "explanation": "Even supporters of strict discipline calling the policy excessive shows it went far beyond normal severity. DRACONIAN means excessively harsh and severe, making 'harshly severe' the best match. 'Effective' implies the policy worked, not that it was too harsh. 'Confusing' and 'widely misunderstood' address clarity, not severity.",
+    "status": "verified",
+    "item_family_id": "wk.headword::draconian"
+  },
+  {
+    "external_key": "WK-B49-028",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "Though the evidence against the sergeant was CIRCUMSTANTIAL, the investigator believed it pointed convincingly toward his guilt. In this sentence, CIRCUMSTANTIAL most nearly means:",
+    "choices": [
+      "direct and conclusive",
+      "false and fabricated",
+      "based on indirect evidence",
+      "gathered from witnesses"
+    ],
+    "correct_index": 2,
+    "explanation": "The investigator 'believed' the evidence pointed toward guilt rather than stating it proved guilt, showing the evidence was suggestive but not definitive. CIRCUMSTANTIAL means based on indirect evidence rather than direct proof, making 'based on indirect evidence' the correct match. 'Direct and conclusive' is the opposite. 'False and fabricated' implies dishonesty, which is not suggested. 'Gathered from witnesses' describes a source, not a quality of evidence.",
+    "status": "verified",
+    "item_family_id": "wk.headword::circumstantial"
+  },
+  {
+    "external_key": "WK-B49-029",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The scientist warned that the reactor readings were ANOMALOUS and did not match any pattern recorded in previous experiments. In this sentence, ANOMALOUS most nearly means:",
+    "choices": [
+      "predictable",
+      "dangerous",
+      "irregular",
+      "accurate"
+    ],
+    "correct_index": 2,
+    "explanation": "Not matching any previously recorded pattern shows the readings deviated from what was expected. ANOMALOUS means deviating from what is standard or expected, making 'irregular' the best match. 'Predictable' and 'accurate' both suggest normal, expected results, the opposite of anomalous. 'Dangerous' may be implied by the warning, but the word itself means irregular, not dangerous.",
+    "status": "verified",
+    "item_family_id": "wk.headword::anomalous"
+  },
+  {
+    "external_key": "WK-B49-030",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The crowd grew BOISTEROUS after the home team scored, drowning out the announcer with cheering, chanting, and stomping. In this sentence, BOISTEROUS most nearly means:",
+    "choices": [
+      "quietly happy",
+      "noisy and energetic",
+      "angry and violent",
+      "orderly and organized"
+    ],
+    "correct_index": 1,
+    "explanation": "Cheering, chanting, and stomping all show loud, energetic behavior. BOISTEROUS means noisy, energetic, and cheerfully rough, making 'noisy and energetic' the best match. 'Quietly happy' contradicts the described noise. 'Angry and violent' implies destructive intent, which is not suggested. 'Orderly and organized' is the opposite of the lively chaos described.",
+    "status": "verified",
+    "item_family_id": "wk.headword::boisterous"
+  },
+  {
+    "external_key": "WK-B49-031",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word RUPTURE most nearly means:",
+    "choices": [
+      "a sudden break or burst",
+      "a slow healing process",
+      "a strong connection",
+      "a rigid structure"
+    ],
+    "correct_index": 0,
+    "explanation": "RUPTURE comes from the Latin root RUPT, meaning to break or burst. A rupture is a break or tear, especially a sudden one, so 'a sudden break or burst' is correct. 'A slow healing process' and 'a strong connection' both suggest wholeness rather than breaking. 'A rigid structure' describes stiffness, not breaking.",
+    "status": "verified",
+    "item_family_id": "wk.headword::rupture"
+  },
+  {
+    "external_key": "WK-B49-032",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word MANUSCRIPT most nearly means:",
+    "choices": [
+      "a handwritten or typed document",
+      "a published book",
+      "a spoken lecture",
+      "a printed map"
+    ],
+    "correct_index": 0,
+    "explanation": "MANUSCRIPT contains the Latin roots MANU (hand) and SCRIPT (written), literally meaning written by hand. Today it refers more broadly to an author's written or typed document before publication. 'A published book' is what a manuscript may become after printing. 'A spoken lecture' involves no writing, and 'a printed map' is a different type of document entirely.",
+    "status": "verified",
+    "item_family_id": "wk.headword::manuscript"
+  },
+  {
+    "external_key": "WK-B49-033",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word CHRONOLOGICAL most nearly means:",
+    "choices": [
+      "arranged by importance",
+      "arranged by time order",
+      "arranged by size",
+      "arranged by subject"
+    ],
+    "correct_index": 1,
+    "explanation": "CHRONOLOGICAL contains the Greek root CHRON, meaning time, combined with the suffix -LOGICAL. A chronological arrangement orders events by when they occurred. 'Arranged by importance' describes priority ordering, and 'arranged by size' and 'by subject' describe other types of organization, none involving time.",
+    "status": "verified",
+    "item_family_id": "wk.headword::chronological"
+  },
+  {
+    "external_key": "WK-B49-034",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word PROPEL most nearly means:",
+    "choices": [
+      "to stop or slow down",
+      "to drive or push forward",
+      "to spin in place",
+      "to measure distance"
+    ],
+    "correct_index": 1,
+    "explanation": "PROPEL contains the Latin prefix PRO-, meaning forward, and the root PEL, from pellere, meaning to push or drive. To propel something is to drive it forward. 'To stop or slow down' is the opposite. 'To spin in place' and 'to measure distance' both describe other actions unrelated to forward motion.",
+    "status": "verified",
+    "item_family_id": "wk.headword::propel"
+  },
+  {
+    "external_key": "WK-B49-035",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word CREDULOUS most nearly means:",
+    "choices": [
+      "too ready to believe things",
+      "deeply suspicious of others",
+      "careful before making decisions",
+      "unable to speak clearly"
+    ],
+    "correct_index": 0,
+    "explanation": "CREDULOUS comes from the Latin root CRED, meaning to believe or trust. A credulous person believes things too easily without questioning them. 'Deeply suspicious of others' is nearly the opposite of credulous. 'Careful before making decisions' implies a questioning mind, also opposite. 'Unable to speak clearly' relates to communication, not belief.",
+    "status": "verified",
+    "item_family_id": "wk.headword::credulous"
+  },
+  {
+    "external_key": "WK-B49-036",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word VIVACIOUS most nearly means:",
+    "choices": [
+      "lively and spirited",
+      "cautious and reserved",
+      "pale and sickly",
+      "slow and methodical"
+    ],
+    "correct_index": 0,
+    "explanation": "VIVACIOUS comes from the Latin root VIV, meaning to live or be alive. A vivacious person is attractively lively and animated. 'Cautious and reserved' describes the opposite quality, restraint rather than liveliness. 'Pale and sickly' relates the root ironically, suggesting lack of vitality rather than fullness of it. 'Slow and methodical' describes pace, not energy.",
+    "status": "verified",
+    "item_family_id": "wk.headword::vivacious"
+  },
+  {
+    "external_key": "WK-B49-037",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word CULPABLE most nearly means:",
+    "choices": [
+      "deserving blame",
+      "worthy of praise",
+      "difficult to judge",
+      "beyond all doubt"
+    ],
+    "correct_index": 0,
+    "explanation": "CULPABLE comes from the Latin root CULP, meaning fault or blame. A culpable person deserves blame for an error or wrongdoing. 'Worthy of praise' is the direct opposite. 'Difficult to judge' suggests ambiguity rather than clear fault. 'Beyond all doubt' describes certainty, not responsibility for wrongdoing.",
+    "status": "verified",
+    "item_family_id": "wk.headword::culpable"
+  },
+  {
+    "external_key": "WK-B49-038",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word INSOLVENT most nearly means:",
+    "choices": [
+      "unable to pay debts",
+      "unwilling to negotiate",
+      "too proud to ask for help",
+      "free of all obligations"
+    ],
+    "correct_index": 0,
+    "explanation": "INSOLVENT contains the prefix IN-, meaning not, and the root SOLV, from the Latin solvere, meaning to pay or loosen. An insolvent person or company cannot pay its debts. 'Unwilling to negotiate' and 'too proud to ask for help' describe attitude, not financial condition. 'Free of all obligations' is the opposite, implying debts have been resolved.",
+    "status": "verified",
+    "item_family_id": "wk.headword::insolvent"
+  },
+  {
+    "external_key": "WK-B49-039",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word UNBREAKABLE most nearly means:",
+    "choices": [
+      "impossible to damage",
+      "easy to repair",
+      "made of glass",
+      "recently repaired"
+    ],
+    "correct_index": 0,
+    "explanation": "UNBREAKABLE contains the prefix UN-, meaning not, and the suffix -ABLE, meaning capable of. Combined with 'break,' the word means not capable of being broken. 'Easy to repair' means the object can break but be fixed, which is different. 'Made of glass' describes a material that breaks easily, the opposite. 'Recently repaired' describes history, not a property of the object.",
+    "status": "verified",
+    "item_family_id": "wk.headword::unbreakable"
+  },
+  {
+    "external_key": "WK-B49-040",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word MIDPOINT most nearly means:",
+    "choices": [
+      "the center or halfway mark",
+      "the beginning of something",
+      "the final goal",
+      "a sharp corner"
+    ],
+    "correct_index": 0,
+    "explanation": "MIDPOINT contains the prefix MID-, meaning middle, combined with 'point,' meaning a location. The midpoint is the exact center between two ends. 'The beginning of something' describes a starting point, not the middle. 'The final goal' describes an endpoint, not a midpoint. 'A sharp corner' is unrelated to the prefix or the concept of position.",
+    "status": "verified",
+    "item_family_id": "wk.headword::midpoint"
+  },
+  {
+    "external_key": "WK-B49-041",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word INTERJECT most nearly means:",
+    "choices": [
+      "to insert a remark into a conversation",
+      "to agree with a speaker",
+      "to summarize a discussion",
+      "to end a meeting"
+    ],
+    "correct_index": 0,
+    "explanation": "INTERJECT contains the prefix INTER-, meaning between or among, and the root JECT, meaning to throw. To interject is to throw a comment into the middle of a conversation. 'To agree with a speaker' involves listening, not inserting. 'To summarize' and 'to end a meeting' both occur at the close of a discussion, not in the middle.",
+    "status": "verified",
+    "item_family_id": "wk.headword::interject"
+  },
+  {
+    "external_key": "WK-B49-042",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word ELUCIDATE most nearly means:",
+    "choices": [
+      "to make clear or explain",
+      "to hide or conceal",
+      "to argue against",
+      "to memorize and repeat"
+    ],
+    "correct_index": 0,
+    "explanation": "ELUCIDATE contains the prefix E- (out) and the root LUC, from the Latin lux, meaning light. To elucidate is to bring something to light; to make it clear or understandable. 'To hide or conceal' is the direct opposite, keeping things in the dark. 'To argue against' is closer to 'refute,' and 'to memorize and repeat' involves recall, not explanation.",
+    "status": "verified",
+    "item_family_id": "wk.headword::elucidate"
+  },
+  {
+    "external_key": "WK-B49-043",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word EXUBERANT most nearly means:",
+    "choices": [
+      "full of energy and enthusiasm",
+      "empty of feeling or hope",
+      "exhausted after hard work",
+      "well-organized and efficient"
+    ],
+    "correct_index": 0,
+    "explanation": "EXUBERANT contains the prefix EX-, meaning out, and the root UBER, from Latin, meaning abundance or fruitfulness. The suffix -ANT marks it as an adjective meaning overflowing with energy or joy. 'Empty of feeling or hope' is the opposite. 'Exhausted after hard work' relates to a lack of energy, not abundance. 'Well-organized and efficient' describes method, not emotional vitality.",
+    "status": "verified",
+    "item_family_id": "wk.headword::exuberant"
+  },
+  {
+    "external_key": "WK-B49-044",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word SUPERFLUOUS most nearly means:",
+    "choices": [
+      "more than what is needed",
+      "of the highest quality",
+      "placed above everything else",
+      "carefully selected"
+    ],
+    "correct_index": 0,
+    "explanation": "SUPERFLUOUS contains the prefix SUPER-, meaning over or above, and the root FLU, meaning to flow. The word literally means overflowing and today means exceeding what is necessary. 'Of the highest quality' is a sense many associate with 'super-' words, but superfluous specifically means unnecessary excess. 'Placed above everything else' would suit 'superior,' not superfluous. 'Carefully selected' implies value, the opposite of unnecessary excess.",
+    "status": "verified",
+    "item_family_id": "wk.headword::superfluous"
+  },
+  {
+    "external_key": "WK-B49-045",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word INFALLIBLE most nearly means:",
+    "choices": [
+      "incapable of making mistakes",
+      "difficult to understand",
+      "prone to frequent errors",
+      "not yet tested"
+    ],
+    "correct_index": 0,
+    "explanation": "INFALLIBLE contains the prefix IN-, meaning not, and the root FALL (from Latin fallere, to deceive or err), combined with -IBLE, meaning capable of. Together the word means not capable of failing or making errors. 'Difficult to understand' fits 'inscrutable,' not infallible. 'Prone to frequent errors' is the direct opposite. 'Not yet tested' describes something unproven, not something guaranteed to be correct.",
+    "status": "verified",
+    "item_family_id": "wk.headword::infallible"
+  },
+  {
+    "external_key": "WK-B49-046",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word CIRCUMSCRIBE most nearly means:",
+    "choices": [
+      "to limit or restrict",
+      "to write in detail",
+      "to travel in a circle",
+      "to copy from a source"
+    ],
+    "correct_index": 0,
+    "explanation": "CIRCUMSCRIBE contains the prefix CIRCUM-, meaning around, and the root SCRIBE, meaning to write or draw. Literally to draw a line around something, the word now means to restrict something within limits. 'To write in detail' confuses the SCRIB root with a plain writing meaning; the prefix changes the sense to drawing a boundary. 'To travel in a circle' captures CIRCUM- but ignores SCRIBE. 'To copy from a source' is closer to 'transcribe.'",
+    "status": "verified",
+    "item_family_id": "wk.headword::circumscribe"
+  },
+  {
+    "external_key": "WK-B49-047",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word EXTRAPOLATE most nearly means:",
+    "choices": [
+      "to extend a conclusion beyond known data",
+      "to copy information exactly",
+      "to remove unnecessary details",
+      "to translate between languages"
+    ],
+    "correct_index": 0,
+    "explanation": "EXTRAPOLATE contains the prefix EXTRA-, meaning outside or beyond, combined with a root related to extending. To extrapolate is to extend known information beyond available data to estimate unknown values. 'To copy information exactly' means transcribing, not extending. 'To remove unnecessary details' means to simplify. 'To translate between languages' is the job of an interpreter, not extrapolation.",
+    "status": "verified",
+    "item_family_id": "wk.headword::extrapolate"
+  },
+  {
+    "external_key": "WK-B49-048",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word ERADICATE most nearly means:",
+    "choices": [
+      "to remove completely",
+      "to study carefully",
+      "to grow rapidly",
+      "to decorate with patterns"
+    ],
+    "correct_index": 0,
+    "explanation": "ERADICATE contains the prefix E-, meaning out, and the root RADIC, from the Latin radix, meaning root. To eradicate is to pull out by the roots; to destroy completely. 'To study carefully' describes analysis, not destruction. 'To grow rapidly' is effectively the opposite, describing increase rather than elimination. 'To decorate with patterns' is unrelated to the root radix.",
+    "status": "verified",
+    "item_family_id": "wk.headword::eradicate"
+  },
+  {
+    "external_key": "WK-B49-049",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In which sentence does GRAVE mean a burial site?",
+    "choices": [
+      "The situation was so GRAVE that the president called an emergency meeting.",
+      "A heavy GRAVE silence settled over the courtroom after the verdict.",
+      "Workers dug a GRAVE in the hillside cemetery for the fallen soldier.",
+      "The doctor's GRAVE expression told the family the news was not good."
+    ],
+    "correct_index": 2,
+    "explanation": "In choice C, GRAVE is used as a noun meaning an excavation in the ground for burying a body. In choices A, B, and D, grave is used as an adjective meaning serious or solemn. Only choice C uses grave to mean a burial site.",
+    "status": "verified",
+    "item_family_id": "wk.headword::grave"
+  },
+  {
+    "external_key": "WK-B49-050",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In which sentence does FIRM mean not changing or giving way?",
+    "choices": [
+      "She joined a law FIRM after graduating from law school.",
+      "The mattress was too FIRM for a good night of sleep.",
+      "He worked for an accounting FIRM for twenty years.",
+      "The marketing FIRM won three new contracts in January."
+    ],
+    "correct_index": 1,
+    "explanation": "In choice B, FIRM is used as an adjective meaning solid, hard, or resistant to pressure. In choices A, C, and D, firm is used as a noun meaning a business or company. Only choice B uses firm as an adjective meaning not yielding or not changing.",
+    "status": "verified",
+    "item_family_id": "wk.headword::firm"
+  },
+  {
+    "external_key": "WK-B49-051",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In which sentence does ARRAY mean an impressive display or collection?",
+    "choices": [
+      "The troops were arranged in a battle ARRAY before the advance.",
+      "The store offered a dazzling ARRAY of equipment for hiking.",
+      "The general ordered the soldiers to ARRAY themselves in formation.",
+      "The satellite's solar ARRAY powered all the onboard instruments."
+    ],
+    "correct_index": 1,
+    "explanation": "In choice B, ARRAY is used as a noun meaning an impressive collection or range of things. In choice A, array means a formation or arrangement, especially military. In choice C, array is used as a verb meaning to arrange in order. In choice D, array refers to a structured set of panels or components. Only choice B uses array to mean an impressive display or collection.",
+    "status": "verified",
+    "item_family_id": "wk.headword::array"
+  },
+  {
+    "external_key": "WK-B49-052",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In which sentence does WIELD mean to hold and use a weapon or tool?",
+    "choices": [
+      "The senator continued to WIELD enormous political influence in the region.",
+      "The chef expertly WIELDED his knife to slice the vegetables.",
+      "The CEO WIELDED her authority to approve the budget immediately.",
+      "The organization WIELDED its power to block the proposed legislation."
+    ],
+    "correct_index": 1,
+    "explanation": "In choice B, WIELD is used in its most literal sense: to hold and use a tool or instrument with skill, referring to a knife. In choices A, C, and D, wield is used figuratively to mean exercising power or influence. Only choice B uses wield in the physical sense of handling a tool or weapon.",
+    "status": "verified",
+    "item_family_id": "wk.headword::wield"
+  },
+  {
+    "external_key": "WK-B49-053",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In which sentence does MANIFEST mean to display or show clearly?",
+    "choices": [
+      "The cargo MANIFEST listed every item loaded onto the ship.",
+      "The airline provided passengers with a flight MANIFEST before boarding.",
+      "Her talent began to MANIFEST itself during her first year of training.",
+      "The captain checked the MANIFEST to confirm all supplies were aboard."
+    ],
+    "correct_index": 2,
+    "explanation": "In choice C, MANIFEST is used as a verb meaning to show or demonstrate a quality or feeling; to become apparent. In choices A, C of the other options, and D, manifest is a noun meaning an official list of cargo, passengers, or contents. Only choice C uses manifest as a verb meaning to display or make evident.",
+    "status": "verified",
+    "item_family_id": "wk.headword::manifest"
+  },
+  {
+    "external_key": "WK-B49-054",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In which sentence does DEFER mean to put off until a later time?",
+    "choices": [
+      "Junior officers are trained to DEFER to the judgment of senior commanders.",
+      "She chose to DEFER her enrollment until the following academic year.",
+      "Soldiers learn to DEFER to the chain of command in all situations.",
+      "The new recruit was expected to DEFER to every decision made by the sergeant."
+    ],
+    "correct_index": 1,
+    "explanation": "In choice B, DEFER means to postpone or delay something to a later time. In choices A, C, and D, defer means to yield or submit to the opinion or authority of another person. Only choice B uses defer in the sense of delaying or putting something off.",
+    "status": "verified",
+    "item_family_id": "wk.headword::defer"
+  },
+  {
+    "external_key": "WK-B49-055",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In which sentence does PROMPT mean to cause or inspire an action?",
+    "choices": [
+      "The stage manager whispered the line to PROMPT the actor who had forgotten it.",
+      "Emergency responders must act with PROMPT attention when a call comes in.",
+      "The news coverage did PROMPT the city council to schedule an urgent meeting.",
+      "The actor needed a PROMPT when he lost his place in the second act."
+    ],
+    "correct_index": 2,
+    "explanation": "In choice C, PROMPT is used as a verb meaning to cause or inspire someone to take action. In choices A and D, prompt is used as a verb or noun related to supplying a forgotten line to a performer. In choice B, prompt is used as an adjective meaning done without delay. Only choice C uses prompt to mean to cause or inspire an action.",
+    "status": "verified",
+    "item_family_id": "wk.headword::prompt"
+  },
+  {
+    "external_key": "WK-B49-056",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In which sentence does COERCE mean to persuade someone by force or threats?",
+    "choices": [
+      "A good leader does not need to COERCE troops; they follow out of respect.",
+      "He managed to COERCE a confession from the suspect through hours of questioning.",
+      "The union refused to allow management to COERCE workers into longer hours.",
+      "All three choices above use COERCE to mean persuasion through force."
+    ],
+    "correct_index": 3,
+    "explanation": "COERCE consistently means to compel someone to act by use of force or threats in all three usage examples in choices A, B, and C. Choice D correctly identifies that all three sentences use COERCE in the same sense. The question tests whether students recognize consistent versus shifted meaning; here the meaning does not shift across the sentences.",
+    "status": "verified",
+    "item_family_id": "wk.headword::coerce"
+  }
+]

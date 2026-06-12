@@ -1,0 +1,954 @@
+[
+  {
+    "external_key": "AR-B47-001",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A field artillery crew fires 9 rounds per sortie. The battery conducts 14 sorties in a training week. How many rounds does the battery fire in total?",
+    "choices": [
+      "112",
+      "117",
+      "126",
+      "135"
+    ],
+    "correct_index": 2,
+    "explanation": "Total rounds = 9 rounds per sortie x 14 sorties = 126 rounds. The answer 112 comes from using 8 rounds per sortie instead of 9. 117 treats the sortie count as 13, and 135 inflates to 15 sorties.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::artillery-sortie-round-count"
+  },
+  {
+    "external_key": "AR-B47-002",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A sheet metal apprentice cuts a 144-inch bar into pieces that are 9 inches each. How many pieces does the apprentice get?",
+    "choices": [
+      "18",
+      "14",
+      "15",
+      "16"
+    ],
+    "correct_index": 3,
+    "explanation": "Number of pieces = 144 / 9 = 16. The answer 18 divides 144 by 8 rather than 9. 14 would require a bar length of only 126 inches, and 15 pieces would need exactly 135 inches of material.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::sheet-metal-bar-cut-count"
+  },
+  {
+    "external_key": "AR-B47-003",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A base exchanges uniforms in boxes of 24. A supply clerk receives 17 boxes and must set aside 3 uniforms from each box for quality inspection. How many uniforms are available after the inspections are pulled?",
+    "choices": [
+      "336",
+      "357",
+      "341",
+      "324"
+    ],
+    "correct_index": 1,
+    "explanation": "Total uniforms = 17 x 24 = 408. Inspections pulled = 17 x 3 = 51. Available = 408 - 51 = 357. The answer 336 assumes only 16 boxes were received. 341 misapplies the inspection count, and 324 subtracts an inflated inspection pull of 84.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::base-exchange-uniform-inspection-pull"
+  },
+  {
+    "external_key": "AR-B47-004",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "An HVAC technician earns a base pay of $28 per hour and an overtime rate of $42 per hour for any hours over 40 per week. In a 47-hour workweek, what is the technician's total pay?",
+    "choices": [
+      "$1,414",
+      "$1,456",
+      "$1,334",
+      "$1,484"
+    ],
+    "correct_index": 0,
+    "explanation": "Regular pay = 40 x $28 = $1,120. Overtime hours = 47 - 40 = 7. Overtime pay = 7 x $42 = $294. Total = $1,120 + $294 = $1,414. The answer $1,456 applies the overtime rate starting at hour 44 instead of hour 41. $1,334 uses only 4 overtime hours, and $1,484 inflates the overtime block to 8 hours.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::hvac-tech-overtime-weekly-pay"
+  },
+  {
+    "external_key": "AR-B47-005",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A motor pool inventory lists 8 light trucks, 5 medium trucks, and 3 heavy trucks. What is the total number of vehicles in the motor pool?",
+    "choices": [
+      "15",
+      "16",
+      "14",
+      "17"
+    ],
+    "correct_index": 1,
+    "explanation": "Total = 8 + 5 + 3 = 16 vehicles. The answer 15 omits one light truck. 14 would require one fewer medium truck than stated, and 17 overcounts by adding an extra heavy truck.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::motor-pool-vehicle-type-total"
+  },
+  {
+    "external_key": "AR-B47-006",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A BAH (Basic Allowance for Housing) rate is $1,860 per month. A soldier is authorized only 19 days of BAH for the month of April (30 days). How much BAH does the soldier receive, rounded to the nearest dollar?",
+    "choices": [
+      "$1,178",
+      "$1,162",
+      "$1,240",
+      "$1,116"
+    ],
+    "correct_index": 0,
+    "explanation": "Daily BAH rate = $1,860 / 30 = $62.00 per day. Pay for 19 days = 19 x $62.00 = $1,178. The answer $1,162 uses a daily rate of $61.16 based on 31 days instead of 30. $1,240 applies 20 days rather than 19, and $1,116 uses only 18 days.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::bah-prorated-partial-month"
+  },
+  {
+    "external_key": "AR-B47-007",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A plumbing contractor charges a $95 service call fee plus $67 per hour. A customer's invoice shows 3.5 hours of labor. What is the total invoice amount?",
+    "choices": [
+      "$326.50",
+      "$329.50",
+      "$334.50",
+      "$319.00"
+    ],
+    "correct_index": 1,
+    "explanation": "Labor cost = 3.5 x $67 = $234.50. Total = $95 + $234.50 = $329.50. The answer $326.50 subtracts $3 from the correct total, reflecting a small multiplication error. $334.50 adds $5 too much in labor, and $319.00 uses only 3 full hours of labor rather than 3.5.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::plumbing-service-call-invoice"
+  },
+  {
+    "external_key": "AR-B47-008",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A PT test scores a soldier as follows: 23 push-ups at 3 points each, 18 sit-ups at 2 points each, and a 2-mile run with a base score of 45 points. What is the total PT score?",
+    "choices": [
+      "150",
+      "141",
+      "135",
+      "126"
+    ],
+    "correct_index": 0,
+    "explanation": "Push-up points = 23 x 3 = 69. Sit-up points = 18 x 2 = 36. Run base = 45. Total = 69 + 36 + 45 = 150. The answer 141 uses a run base of 36 points instead of 45. 135 counts only 15 sit-ups rather than 18, and 126 omits the run base entirely.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::pt-test-composite-score"
+  },
+  {
+    "external_key": "AR-B47-009",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A fighter jet burns fuel at 1,400 gallons per hour. How many gallons does it burn during a 2.5-hour sortie?",
+    "choices": [
+      "2,800",
+      "4,000",
+      "3,200",
+      "3,500"
+    ],
+    "correct_index": 3,
+    "explanation": "Fuel burned = 1,400 x 2.5 = 3,500 gallons. The answer 2,800 corresponds to only 2 hours of flight. 4,000 would require a 2.857-hour sortie, longer than stated, and 3,200 uses a burn rate of 1,280 gallons per hour rather than 1,400.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::fighter-jet-fuel-burn-sortie"
+  },
+  {
+    "external_key": "AR-B47-010",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A convoy of trucks must travel 312 miles to a supply depot. If the convoy maintains a steady 52 mph, how long does the trip take?",
+    "choices": [
+      "5.0 hours",
+      "5.5 hours",
+      "6.5 hours",
+      "6.0 hours"
+    ],
+    "correct_index": 3,
+    "explanation": "Time = 312 / 52 = 6.0 hours. The answer 5.0 hours would need a speed of 62.4 mph, faster than stated. 5.5 hours would require about 56.7 mph, and 6.5 hours implies only 48 mph, all inconsistent with the given rate.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::convoy-depot-trip-time"
+  },
+  {
+    "external_key": "AR-B47-011",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A troop transport ship travels from port at 22 knots for the first 4 hours, then slows to 16 knots for the next 3 hours. What is the total distance covered?",
+    "choices": [
+      "136 nautical miles",
+      "140 nautical miles",
+      "148 nautical miles",
+      "156 nautical miles"
+    ],
+    "correct_index": 0,
+    "explanation": "First leg = 22 x 4 = 88 nautical miles. Second leg = 16 x 3 = 48 nautical miles. Total = 88 + 48 = 136 nautical miles. The answer 140 adds a small arithmetic error on the second leg, using 52 miles instead of 48. 148 applies 20 knots for the second leg instead of 16, and 156 uses both legs at the higher 22-knot speed.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::troop-ship-two-leg-distance"
+  },
+  {
+    "external_key": "AR-B47-012",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A soldier runs from checkpoint Alpha to checkpoint Bravo and back. The outbound leg is 8 miles at 6 mph. The return leg is also 8 miles but at 4 mph. What is the average speed for the entire round trip?",
+    "choices": [
+      "4.6 mph",
+      "4.8 mph",
+      "5.0 mph",
+      "5.2 mph"
+    ],
+    "correct_index": 1,
+    "explanation": "For equal distances, average speed = 2 x (r1 x r2) / (r1 + r2) = 2 x (6 x 4) / (6 + 4) = 48 / 10 = 4.8 mph. The simple arithmetic mean of 5.0 mph incorrectly gives equal weight to each speed rather than each unit of time. 4.6 mph understates the harmonic mean, and 5.2 mph overstates it.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::soldier-run-round-trip-harmonic"
+  },
+  {
+    "external_key": "AR-B47-013",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A surveillance drone is launched from a base. It flies due north at 85 mph while a second drone is simultaneously launched and flies due south at 65 mph. How far apart are the two drones after 3 hours?",
+    "choices": [
+      "450 miles",
+      "390 miles",
+      "420 miles",
+      "480 miles"
+    ],
+    "correct_index": 0,
+    "explanation": "Combined separation rate = 85 + 65 = 150 mph. Distance apart after 3 hours = 150 x 3 = 450 miles. The answer 390 miles uses a combined rate of only 130 mph. 420 miles corresponds to a combined rate of 140 mph, and 480 miles would require a combined rate of 160 mph.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::surveillance-drone-opposite-launch"
+  },
+  {
+    "external_key": "AR-B47-014",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A military transport plane needs to cover 2,040 miles to a forward base. Flying at 340 mph, how many hours does the flight take?",
+    "choices": [
+      "7 hours",
+      "8 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "correct_index": 3,
+    "explanation": "Time = 2,040 / 340 = 6 hours. The answer 7 hours implies a speed of about 291 mph, below the given rate. 8 hours would require only 255 mph, and 5 hours would need 408 mph, faster than the plane actually travels.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::transport-plane-forward-base-time"
+  },
+  {
+    "external_key": "AR-B47-015",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A resupply vehicle leaves base at 7:00 AM at 36 mph. A faster courier vehicle leaves base at 8:30 AM at 54 mph along the same route. At what time does the courier overtake the resupply vehicle?",
+    "choices": [
+      "10:30 AM",
+      "11:00 AM",
+      "11:30 AM",
+      "12:00 PM"
+    ],
+    "correct_index": 2,
+    "explanation": "The resupply vehicle's 1.5-hour head start covers 36 x 1.5 = 54 miles. The courier closes the gap at 54 - 36 = 18 mph, so closing time = 54 / 18 = 3 hours after 8:30 AM, giving 11:30 AM. The answer 10:30 AM assumes only a 2-hour closing time. 11:00 AM implies the courier needed only 2.5 hours to close a 45-mile gap, and 12:00 PM adds an extra half-hour beyond what the math requires.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::resupply-courier-overtake-time"
+  },
+  {
+    "external_key": "AR-B47-016",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A pilot must fly 480 miles to a rendezvous point. She covers the first 280 miles in 1.75 hours, then the final 200 miles at 160 mph. What is the total flight time?",
+    "choices": [
+      "3.00 hours",
+      "2.75 hours",
+      "3.25 hours",
+      "3.50 hours"
+    ],
+    "correct_index": 0,
+    "explanation": "First leg time = 1.75 hours. Second leg time = 200 / 160 = 1.25 hours. Total = 1.75 + 1.25 = 3.00 hours. The answer 2.75 hours applies only 1.0 hour for the second leg. 3.25 hours adds an extra 15 minutes with no mathematical basis, and 3.50 hours uses a 1.75-hour second leg, identical to the first.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::pilot-rendezvous-two-leg-flight"
+  },
+  {
+    "external_key": "AR-B47-017",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A recruiter signs up 4 new enlistees on Monday, 7 on Tuesday, and 5 on Wednesday. The weekly target is 20. How many more enlistees are needed to meet the target?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct_index": 1,
+    "explanation": "Total so far = 4 + 7 + 5 = 16 enlistees. Remaining = 20 - 16 = 4. The answer 3 would mean 17 are already signed up, one more than the actual total. 5 understates the current total, and 6 implies only 14 enlistees so far.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::recruiter-weekly-enlistee-target"
+  },
+  {
+    "external_key": "AR-B47-018",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A contractor submits an invoice with 3 line items: $840, $1,175, and $635. What is the total invoice amount?",
+    "choices": [
+      "$2,550",
+      "$2,600",
+      "$2,700",
+      "$2,650"
+    ],
+    "correct_index": 3,
+    "explanation": "Total = $840 + $1,175 + $635 = $2,650. The answer $2,550 results from using $535 for the last line item instead of $635. $2,600 misadds the first two items as $1,165, and $2,700 inflates the total by $50, suggesting a rounding error on one of the items.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::contractor-invoice-three-line-items"
+  },
+  {
+    "external_key": "AR-B47-019",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "An Army MOS pay table shows three soldiers at E-4 rank. Private Carter earns the base pay of $2,393 per month, Private Hall earns $2,393 plus a $450 skill bonus, and Private Reed earns $2,393 plus a $620 hazard pay. What is the combined monthly pay for all three?",
+    "choices": [
+      "$7,849",
+      "$7,922",
+      "$8,249",
+      "$8,179"
+    ],
+    "correct_index": 2,
+    "explanation": "Carter = $2,393. Hall = $2,393 + $450 = $2,843. Reed = $2,393 + $620 = $3,013. Combined = $2,393 + $2,843 + $3,013 = $8,249. The answer $7,849 omits Reed's hazard pay entirely, adding only three base salaries plus the skill bonus. $7,922 miscalculates Hall's bonus as $336 rather than $450. $8,179 credits Reed with only $570 in hazard pay instead of $620.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::mos-pay-table-combined-three-soldiers"
+  },
+  {
+    "external_key": "AR-B47-020",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A retainer contract pays a firm $4,200 per month for the first 6 months, then drops to $3,100 per month for the next 4 months. What is the total contract value?",
+    "choices": [
+      "$37,600",
+      "$40,200",
+      "$36,900",
+      "$37,200"
+    ],
+    "correct_index": 0,
+    "explanation": "First period = $4,200 x 6 = $25,200. Second period = $3,100 x 4 = $12,400. Total = $25,200 + $12,400 = $37,600. The answer $40,200 applies the higher rate to all 10 months. $36,900 uses a second-period rate of $2,925 per month, and $37,200 undercounts the first period by $400.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::retainer-contract-two-period-value"
+  },
+  {
+    "external_key": "AR-B47-021",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A troop rotation schedule assigns 5 soldiers to night duty for every 8 on day duty. If a battalion post has 104 soldiers on day duty, how many are assigned to night duty?",
+    "choices": [
+      "65",
+      "55",
+      "60",
+      "70"
+    ],
+    "correct_index": 0,
+    "explanation": "Night duty soldiers = (5/8) x 104 = 65. The answer 55 applies a ratio closer to 1:1.9 rather than the stated 5:8. 60 uses a ratio of 60:104 = 15:26, not 5:8, and 70 overcounts by applying a ratio of 7:11.89.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::troop-rotation-night-day-duty-ratio"
+  },
+  {
+    "external_key": "AR-B47-022",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A platoon purchases 3 types of field gear. Packs cost $87 each, sleeping bags cost $54 each, and canteens cost $18 each. The platoon buys 12 packs, 12 sleeping bags, and 24 canteens. What is the total cost?",
+    "choices": [
+      "$1,944",
+      "$2,016",
+      "$2,088",
+      "$2,124"
+    ],
+    "correct_index": 3,
+    "explanation": "Packs = 12 x $87 = $1,044. Sleeping bags = 12 x $54 = $648. Canteens = 24 x $18 = $432. Total = $1,044 + $648 + $432 = $2,124. The answer $1,944 uses only 20 canteens ($360) instead of 24, and $2,016 applies only 22 canteens ($396). $2,088 correctly handles packs and sleeping bags but uses only 20 canteens, producing a canteen subtotal of $360 rather than $432.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::platoon-field-gear-three-item-purchase"
+  },
+  {
+    "external_key": "AR-B47-023",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A batch recipe for military rations yields 36 servings. A cook needs to prepare 180 servings for a company dinner. How many times must the cook make the batch?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correct_index": 1,
+    "explanation": "Number of batches = 180 / 36 = 5. The answer 4 batches produces only 144 servings, 36 short of the goal. 6 batches would yield 216 servings, more than needed. 7 batches produces 252 servings, even further above the requirement.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::batch-recipe-yield-servings-scaling"
+  },
+  {
+    "external_key": "AR-B47-024",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "Two soldiers share a $1,260 equipment damage bill. The first soldier is responsible for twice the amount of the second. How much does the first soldier owe?",
+    "choices": [
+      "$840",
+      "$740",
+      "$800",
+      "$900"
+    ],
+    "correct_index": 0,
+    "explanation": "Let the second soldier's share = x; first soldier's share = 2x. Then x + 2x = 3x = $1,260, so x = $420 and 2x = $840. The answer $800 would leave $460 for the second soldier, a ratio of 40:23, not 2:1. $740 paired with $370 totals only $1,110, short of the bill. $900 paired with $360 would total $1,260 but uses a 2.5:1 ratio, not 2:1.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::equipment-damage-two-soldier-share"
+  },
+  {
+    "external_key": "AR-B47-025",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "A MOS qualification exam has 80 questions. A soldier answers 68 correctly. What percent did the soldier answer correctly?",
+    "choices": [
+      "80%",
+      "82%",
+      "87%",
+      "85%"
+    ],
+    "correct_index": 3,
+    "explanation": "Percent correct = (68 / 80) x 100 = 85%. The answer 80% treats the denominator as 85 questions rather than 80. 82% would require about 65.6 correct answers, not a clean whole number. 87% would need about 69.6 correct answers, also not consistent with the given data.",
+    "status": "verified",
+    "item_family_id": "ar.percent::mos-exam-percent-correct"
+  },
+  {
+    "external_key": "AR-B47-026",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "An inventory of 3,400 parts is inspected. Technicians find that 17% are defective. How many parts are NOT defective?",
+    "choices": [
+      "2,754",
+      "2,822",
+      "2,788",
+      "2,844"
+    ],
+    "correct_index": 1,
+    "explanation": "Defective parts = 17% x 3,400 = 578. Non-defective = 3,400 - 578 = 2,822. The answer 2,754 subtracts 646 parts, implying a 19% defect rate. 2,788 uses an 18% defect rate (612 parts), and 2,844 applies only a 16% defect rate (556 parts).",
+    "status": "verified",
+    "item_family_id": "ar.percent::parts-inventory-defect-non-defective-count"
+  },
+  {
+    "external_key": "AR-B47-027",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "A soldier's monthly food allowance is $480. She spends $312 of it. What percent of the allowance did she spend?",
+    "choices": [
+      "62%",
+      "65%",
+      "68%",
+      "72%"
+    ],
+    "correct_index": 1,
+    "explanation": "Percent spent = (312 / 480) x 100 = 65%. The answer 62% would correspond to spending $297.60, not $312. 68% implies spending $326.40, and 72% would mean $345.60 spent, both higher than the given amount.",
+    "status": "verified",
+    "item_family_id": "ar.percent::food-allowance-percent-spent"
+  },
+  {
+    "external_key": "AR-B47-028",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A defense contractor raises equipment prices by 12%, then applies an additional 5% surcharge on the already-raised price. If the original price was $4,500, what is the final price?",
+    "choices": [
+      "$5,292",
+      "$5,265",
+      "$5,346",
+      "$5,427"
+    ],
+    "correct_index": 0,
+    "explanation": "Price after 12% increase = $4,500 x 1.12 = $5,040. Price after 5% surcharge = $5,040 x 1.05 = $5,292. The answer $5,265 adds both percentages as a single flat 17% ($4,500 x 1.17 = $5,265), the common error of not compounding. $5,346 applies the 5% surcharge to the original $4,500 instead of the raised price. $5,427 uses an inflated combined rate.",
+    "status": "verified",
+    "item_family_id": "ar.percent::defense-price-successive-increases"
+  },
+  {
+    "external_key": "AR-B47-029",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A base gym membership that cost $240 per year is raised to $288 per year. What is the percent increase in price?",
+    "choices": [
+      "16%",
+      "18%",
+      "20%",
+      "22%"
+    ],
+    "correct_index": 2,
+    "explanation": "Increase = $288 - $240 = $48. Percent increase = ($48 / $240) x 100 = 20%. The answer 16% corresponds to an $38.40 increase, not $48. 18% would mean a $43.20 rise, and 22% implies a $52.80 increase, each inconsistent with the actual $48 difference.",
+    "status": "verified",
+    "item_family_id": "ar.percent::gym-membership-annual-price-increase"
+  },
+  {
+    "external_key": "AR-B47-030",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A defense worker's salary after a 15% raise is $69,000. What was the original salary before the raise?",
+    "choices": [
+      "$58,650",
+      "$59,130",
+      "$60,000",
+      "$61,200"
+    ],
+    "correct_index": 2,
+    "explanation": "After a 15% raise the salary is 115% of the original: 1.15 x original = $69,000, so original = $69,000 / 1.15 = $60,000. The common error of $58,650 subtracts 15% directly from $69,000 ($69,000 x 0.85 = $58,650) rather than dividing by 1.15. $59,130 results from an off-by-one divisor. $61,200 adds 15% to $69,000 instead of working backward.",
+    "status": "verified",
+    "item_family_id": "ar.percent::reverse-salary-raise-original"
+  },
+  {
+    "external_key": "AR-B47-031",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "A soldier scores 57 out of 75 on a skills assessment. What is the score as a percent, rounded to the nearest whole percent?",
+    "choices": [
+      "72%",
+      "78%",
+      "74%",
+      "76%"
+    ],
+    "correct_index": 3,
+    "explanation": "Percent = (57 / 75) x 100 = 76%. The answer 72% would require 54 correct out of 75. 78% would need 58.5 correct, not a whole number, and 74% corresponds to 55.5 correct, also not a clean whole number match for this assessment.",
+    "status": "verified",
+    "item_family_id": "ar.percent::skills-assessment-score-to-percent"
+  },
+  {
+    "external_key": "AR-B47-032",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A battalion's supply budget for the quarter is $54,000. The battalion spends 38% on transportation, 24% on equipment, and puts the remainder into training funds. How much goes to training?",
+    "choices": [
+      "$18,360",
+      "$21,600",
+      "$20,520",
+      "$16,200"
+    ],
+    "correct_index": 2,
+    "explanation": "The remaining fraction for training = 100% - 38% - 24% = 38%. Training funds = 38% x $54,000 = $20,520. Alternatively: transportation = $20,520, equipment = $12,960, total spent = $33,480, remainder = $54,000 - $33,480 = $20,520. The answer $18,360 applies only 34% to the total rather than 38%. $21,600 uses 40% for the remainder, and $16,200 mistakenly uses only 30%.",
+    "status": "verified",
+    "item_family_id": "ar.percent::battalion-budget-remainder-training-funds"
+  },
+  {
+    "external_key": "AR-B47-033",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A field generator consumes diesel fuel at a rate of 3 gallons per 4 hours of operation. How many gallons are needed for 28 hours of continuous operation?",
+    "choices": [
+      "18",
+      "20",
+      "21",
+      "24"
+    ],
+    "correct_index": 2,
+    "explanation": "Proportion: 3/4 = x/28. Solving: x = (3 x 28) / 4 = 84 / 4 = 21 gallons. The answer 18 gallons treats the rate as 3 gallons per 4.67 hours. 20 gallons applies a rate of 5 gallons per 7 hours rather than 3 per 4, and 24 gallons uses a ratio of 6:7, not 3:4.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::field-generator-diesel-consumption-rate"
+  },
+  {
+    "external_key": "AR-B47-034",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "A topographic map uses a scale of 1 inch = 6.5 miles. Two forward operating bases are 11 inches apart on the map. What is the actual ground distance between them?",
+    "choices": [
+      "65.0 miles",
+      "71.5 miles",
+      "68.5 miles",
+      "74.0 miles"
+    ],
+    "correct_index": 1,
+    "explanation": "Actual distance = 11 x 6.5 = 71.5 miles. The answer 65.0 miles uses exactly 10 map inches instead of 11. 68.5 miles corresponds to about 10.54 map inches at this scale, and 74.0 miles would require 11.38 inches, more than shown on the map.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::topo-map-fob-distance-scale"
+  },
+  {
+    "external_key": "AR-B47-035",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A mortar crew must maintain a ratio of 4 rounds on hand per 1 round fired during training. If the crew fires 35 rounds during a training day, how many rounds must remain on hand?",
+    "choices": [
+      "130",
+      "140",
+      "120",
+      "150"
+    ],
+    "correct_index": 1,
+    "explanation": "Rounds on hand = 4 x 35 = 140. The answer 130 applies a multiplier of 3.71 rather than 4, and 120 uses only a 3.43:1 ratio. 150 would require a 4.29:1 ratio, higher than the specified 4:1.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::mortar-crew-on-hand-to-fired-ratio"
+  },
+  {
+    "external_key": "AR-B47-036",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "A supply pallet ships tools and hardware in a 5:3 ratio by count. A shipment contains 240 total items. How many hardware items are in the shipment?",
+    "choices": [
+      "90",
+      "72",
+      "80",
+      "96"
+    ],
+    "correct_index": 0,
+    "explanation": "Total ratio parts = 5 + 3 = 8. Hardware (3 parts) = (3/8) x 240 = 90. The answer 72 applies the fraction 3/10 instead of 3/8. 80 splits the 240 items evenly by halving rather than following the 5:3 ratio, and 96 does not correspond to either the tools or hardware fraction of the stated ratio.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::supply-pallet-tools-hardware-count-ratio"
+  },
+  {
+    "external_key": "AR-B47-037",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A scaled training model of a vehicle is built at 1:48 scale. The model is 7.5 inches long. What is the actual vehicle length in feet?",
+    "choices": [
+      "28 feet",
+      "30 feet",
+      "32 feet",
+      "36 feet"
+    ],
+    "correct_index": 1,
+    "explanation": "Actual length in inches = 7.5 x 48 = 360 inches. Converting to feet: 360 / 12 = 30 feet. The answer 28 feet requires an actual length of 336 inches, meaning the model would be 7.0 inches, not 7.5. 32 feet equals 384 inches (model length 8 inches), and 36 feet equals 432 inches (model length 9 inches), both incorrect.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::training-vehicle-model-scale-length"
+  },
+  {
+    "external_key": "AR-B47-038",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "An infantry unit deploys officers and enlisted personnel in a 2:9 ratio. The unit has 22 officers. How many enlisted personnel are in the unit?",
+    "choices": [
+      "108",
+      "88",
+      "90",
+      "99"
+    ],
+    "correct_index": 3,
+    "explanation": "Proportion: 2/9 = 22/x. Solving: x = (22 x 9) / 2 = 198 / 2 = 99 enlisted. The answer 108 applies the ratio 2:9 with a base of 24 officers instead of 22. 88 uses a ratio of 1:4 rather than 2:9, and 90 yields a ratio of 22:90 = 11:45, not 2:9.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::infantry-officer-enlisted-deploy-ratio"
+  },
+  {
+    "external_key": "AR-B47-039",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A field hospital mixes saline solution by combining 2 parts salt to 98 parts distilled water by volume. A medic needs to prepare 250 milliliters of solution. How many milliliters of salt are required?",
+    "choices": [
+      "4 mL",
+      "6 mL",
+      "8 mL",
+      "5 mL"
+    ],
+    "correct_index": 3,
+    "explanation": "Salt fraction = 2 / (2 + 98) = 2/100 = 0.02. Salt needed = 0.02 x 250 = 5 mL. The answer 4 mL treats the fraction as 1.6%, not 2%. 6 mL applies a 2.4% concentration, and 8 mL uses a 3.2% fraction, each above the stated 2% concentration.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::saline-solution-salt-water-concentration"
+  },
+  {
+    "external_key": "AR-B47-040",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "An inventory turnover report shows that a warehouse ships 5 units of a part for every 2 units it keeps in reserve. The warehouse currently holds 46 reserve units. How many units were shipped in that period?",
+    "choices": [
+      "115",
+      "100",
+      "110",
+      "120"
+    ],
+    "correct_index": 0,
+    "explanation": "Proportion: 5/2 = x/46. Solving: x = (5 x 46) / 2 = 230 / 2 = 115 units shipped. The answer 100 uses a ratio of 100:46 = 50:23, not 5:2. 110 implies 110:46 = 55:23, also not 5:2. 120 gives 120:46 = 60:23, all inconsistent with the stated 5:2 ratio.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::warehouse-turnover-shipped-to-reserve"
+  },
+  {
+    "external_key": "AR-B47-041",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 1,
+    "stem": "A soldier's five PT run times in minutes are: 28, 31, 27, 33, and 26. What is the average run time?",
+    "choices": [
+      "29 min",
+      "27 min",
+      "28 min",
+      "30 min"
+    ],
+    "correct_index": 0,
+    "explanation": "Sum = 28 + 31 + 27 + 33 + 26 = 145 minutes. Average = 145 / 5 = 29 minutes. The answer 27 minutes would require a total of only 135 minutes. 28 minutes corresponds to a total of 140, and 30 minutes needs a sum of 150, all inconsistent with the actual total.",
+    "status": "verified",
+    "item_family_id": "ar.averages::soldier-pt-run-time-five-sessions"
+  },
+  {
+    "external_key": "AR-B47-042",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "A helicopter pilot's average flight hours over 4 months were 62 hours per month. In the fifth month she flew 74 hours. What is the new 5-month average?",
+    "choices": [
+      "63 hours",
+      "64 hours",
+      "65 hours",
+      "66 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "Sum of first 4 months = 62 x 4 = 248 hours. Total for 5 months = 248 + 74 = 322 hours. New average = 322 / 5 = 64.4, which rounds to 64. The answer 63 hours requires a 5-month total of 315, implying only 67 hours in month 5. 65 hours needs a total of 325, and 66 hours needs 330, both higher than the actual 322.",
+    "status": "verified",
+    "item_family_id": "ar.averages::pilot-flight-hours-five-month-new-average"
+  },
+  {
+    "external_key": "AR-B47-043",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 1,
+    "stem": "A mess hall records daily meal counts for a week: 412, 389, 421, 408, 396, 415, and 403. What is the average daily meal count?",
+    "choices": [
+      "398",
+      "403",
+      "406",
+      "412"
+    ],
+    "correct_index": 2,
+    "explanation": "Sum = 412 + 389 + 421 + 408 + 396 + 415 + 403 = 2,844. Average = 2,844 / 7 = 406.3, rounding to 406. The answer 398 requires a total of only 2,786, and 403 implies a sum of 2,821, both below the actual 2,844. 412 would need a sum of 2,884, higher than the week's actual total.",
+    "status": "verified",
+    "item_family_id": "ar.averages::mess-hall-weekly-meal-count-average"
+  },
+  {
+    "external_key": "AR-B47-044",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 3,
+    "stem": "Unit A has 15 soldiers with an average marksmanship score of 74. Unit B has 25 soldiers with an average score of 82. What is the combined weighted average score for all 40 soldiers?",
+    "choices": [
+      "78.0",
+      "78.5",
+      "79.0",
+      "79.5"
+    ],
+    "correct_index": 2,
+    "explanation": "Unit A total = 15 x 74 = 1,110. Unit B total = 25 x 82 = 2,050. Combined total = 3,160. Weighted average = 3,160 / 40 = 79.0. The simple average of 74 and 82 is 78.0, which incorrectly gives equal weight to both units. 78.5 applies a slightly off weighting, and 79.5 overstates the influence of the higher-scoring unit.",
+    "status": "verified",
+    "item_family_id": "ar.averages::marksmanship-weighted-two-units"
+  },
+  {
+    "external_key": "AR-B47-045",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "A machinist's hourly output over 6 days is: 47, 51, 44, 53, 49, and 56 parts. What is the average daily output?",
+    "choices": [
+      "48",
+      "50",
+      "51",
+      "53"
+    ],
+    "correct_index": 1,
+    "explanation": "Sum = 47 + 51 + 44 + 53 + 49 + 56 = 300. Average = 300 / 6 = 50. The answer 48 would require a total of 288. 51 needs a total of 306, and 53 needs 318, all inconsistent with the actual sum of 300.",
+    "status": "verified",
+    "item_family_id": "ar.averages::machinist-daily-output-six-day-average"
+  },
+  {
+    "external_key": "AR-B47-046",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 3,
+    "stem": "A cadet's test average after 6 tests is 79. After a 7th test, the average falls to 77. What did the cadet score on the 7th test?",
+    "choices": [
+      "63",
+      "67",
+      "69",
+      "65"
+    ],
+    "correct_index": 3,
+    "explanation": "Sum of first 6 tests = 79 x 6 = 474. Target sum for 7 tests at average 77 = 77 x 7 = 539. 7th test score = 539 - 474 = 65. The answer 63 gives a 7-test sum of 537, an average of 76.71, not exactly 77. A score of 67 produces a sum of 541 and an average of 77.29, and 69 gives 543 and an average of 77.57, both above 77.",
+    "status": "verified",
+    "item_family_id": "ar.averages::cadet-average-drops-seventh-test"
+  },
+  {
+    "external_key": "AR-B47-047",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 1,
+    "stem": "A supply clerk records 5 daily shipment weights in pounds: 320, 285, 340, 295, and 310. What is the average shipment weight?",
+    "choices": [
+      "298 lbs",
+      "304 lbs",
+      "316 lbs",
+      "310 lbs"
+    ],
+    "correct_index": 3,
+    "explanation": "Sum = 320 + 285 + 340 + 295 + 310 = 1,550. Average = 1,550 / 5 = 310 lbs. The answer 298 lbs would require a total of only 1,490 pounds, and 304 lbs needs 1,520, both below the actual sum. 316 lbs implies a sum of 1,580, higher than the five weights actually total.",
+    "status": "verified",
+    "item_family_id": "ar.averages::supply-shipment-weight-five-day-average"
+  },
+  {
+    "external_key": "AR-B47-048",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "A soldier needs an average score of at least 80 across 5 tests to qualify for a MOS. Her scores on the first 4 tests are 76, 83, 72, and 85. What is the minimum score she must earn on the 5th test?",
+    "choices": [
+      "80",
+      "82",
+      "84",
+      "86"
+    ],
+    "correct_index": 2,
+    "explanation": "Sum of first 4 tests = 76 + 83 + 72 + 85 = 316. Target 5-test sum for an average of 80 = 80 x 5 = 400. Minimum 5th test score = 400 - 316 = 84. A score of 80 gives a total of 396 and an average of 79.2, just below 80. 82 produces a total of 398 and an average of 79.6, still short. 86 earns a total of 402 and an average of 80.4, which qualifies but is more than the minimum required.",
+    "status": "verified",
+    "item_family_id": "ar.averages::mos-qualification-minimum-fifth-test"
+  },
+  {
+    "external_key": "AR-B47-049",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 1,
+    "stem": "A diesel mechanic can complete a full vehicle service in 5 hours. Working at the same rate, how many full vehicle services can the mechanic complete in a 40-hour workweek?",
+    "choices": [
+      "9",
+      "6",
+      "8",
+      "7"
+    ],
+    "correct_index": 2,
+    "explanation": "Services per week = 40 / 5 = 8. The answer 9 would require each service to take only 4.44 hours, faster than the given rate. 6 uses a service time of about 6.67 hours, and 7 implies each service takes about 5.71 hours, both longer than stated.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::diesel-mechanic-weekly-service-count"
+  },
+  {
+    "external_key": "AR-B47-050",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 2,
+    "stem": "A construction crew can erect a modular barracks unit in 10 days. A second crew can erect the same unit in 15 days. Working together, how many days will it take them to complete one unit?",
+    "choices": [
+      "5 days",
+      "6 days",
+      "7 days",
+      "8 days"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined rate = 1/10 + 1/15 = 3/30 + 2/30 = 5/30 = 1/6 per day. Time = 6 days. The answer 5 days implies a combined rate of 1/5, which overstates what two crews with rates 1/10 and 1/15 can achieve. 7 days corresponds to a rate of about 1/7, and 8 days to 1/8, both slower than the actual 1/6.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::barracks-two-crew-combined-days"
+  },
+  {
+    "external_key": "AR-B47-051",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 3,
+    "stem": "A fuel bowser pumps jet fuel into a tanker at 240 gallons per minute. A second pump simultaneously drains fuel at 90 gallons per minute for sampling. If the tanker starts empty and holds 37,500 gallons, how long does it take to fill?",
+    "choices": [
+      "200 minutes",
+      "225 minutes",
+      "250 minutes",
+      "275 minutes"
+    ],
+    "correct_index": 2,
+    "explanation": "Net fill rate = 240 - 90 = 150 gallons per minute. Time = 37,500 / 150 = 250 minutes. The answer 200 minutes would require a net rate of 187.5 gal/min. 225 minutes implies a net rate of 166.7 gal/min, and 275 minutes needs only 136.4 gal/min, all inconsistent with the given rates.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::jet-fuel-fill-sample-drain-net-rate"
+  },
+  {
+    "external_key": "AR-B47-052",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 1,
+    "stem": "A rifle cleaning station can process 12 weapons per hour. How many weapons can it process in a 9-hour day?",
+    "choices": [
+      "96",
+      "100",
+      "104",
+      "108"
+    ],
+    "correct_index": 3,
+    "explanation": "Total weapons = 12 x 9 = 108. The answer 96 uses only 8 hours at the same rate. 100 assumes a slightly higher rate of 11.11 weapons per hour, and 104 implies a rate of 11.56 per hour, neither matching the stated 12 per hour.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::rifle-cleaning-station-daily-throughput"
+  },
+  {
+    "external_key": "AR-B47-053",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 2,
+    "stem": "Five identical generators can power a temporary base for 18 days before exhausting their fuel supply. With the same total fuel supply, how many days would 9 generators power the same base?",
+    "choices": [
+      "8 days",
+      "10 days",
+      "12 days",
+      "14 days"
+    ],
+    "correct_index": 1,
+    "explanation": "Total generator-days of fuel = 5 x 18 = 90. With 9 generators: days = 90 / 9 = 10 days. The answer 8 days would require only 72 generator-days of supply, less than the actual 90. 12 days needs 108 generator-days, and 14 days needs 126, both more fuel than available.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::generator-fuel-days-inverse-scaling"
+  },
+  {
+    "external_key": "AR-B47-054",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 3,
+    "stem": "Technician A can calibrate a radar unit in 4 hours. Technician B can calibrate the same unit in 6 hours. Technician A works alone for 1 hour, then B joins. How many additional hours do they need to finish together?",
+    "choices": [
+      "1.5 hours",
+      "1.8 hours",
+      "2.0 hours",
+      "2.4 hours"
+    ],
+    "correct_index": 1,
+    "explanation": "After 1 hour, A completes 1/4 of the job. Remaining fraction = 1 - 1/4 = 3/4. Combined rate = 1/4 + 1/6 = 3/12 + 2/12 = 5/12 per hour. Additional time = (3/4) / (5/12) = (3/4) x (12/5) = 36/20 = 1.8 hours. The answer 1.5 hours overestimates the combined rate. 2.0 hours uses only A's individual rate for the remainder, ignoring B. 2.4 hours applies an even lower combined rate of 5/14.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::radar-calibration-sequential-join"
+  },
+  {
+    "external_key": "AR-B47-055",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 2,
+    "stem": "A batch processing line of 8 workers packages 1,920 ration kits per hour. At the same per-worker rate, how many kits per hour would a line of 11 workers package?",
+    "choices": [
+      "2,520",
+      "2,640",
+      "2,760",
+      "2,880"
+    ],
+    "correct_index": 1,
+    "explanation": "Rate per worker = 1,920 / 8 = 240 kits per hour. For 11 workers = 11 x 240 = 2,640 kits per hour. The answer 2,520 applies a per-worker rate of about 229, and 2,760 assumes 251 kits per worker. 2,880 uses a rate of about 262 per worker, all departing from the actual 240.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::ration-kit-packaging-line-scaling"
+  },
+  {
+    "external_key": "AR-B47-056",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 3,
+    "stem": "Inspector X can audit a supply manifest in 3 hours. Inspector Y can audit the same manifest in 7 hours. Working together, how many minutes does it take them to complete the audit?",
+    "choices": [
+      "108 minutes",
+      "114 minutes",
+      "120 minutes",
+      "126 minutes"
+    ],
+    "correct_index": 3,
+    "explanation": "Combined rate = 1/3 + 1/7 = 7/21 + 3/21 = 10/21 per hour. Time = 21/10 = 2.1 hours = 2.1 x 60 = 126 minutes. The answer 108 minutes (1.8 hours) overstates the combined rate. 114 minutes (1.9 hours) implies a rate of 10/19, and 120 minutes (2.0 hours) uses a combined rate of 1/2, both faster than the actual 10/21.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::supply-manifest-audit-combined-minutes"
+  }
+]

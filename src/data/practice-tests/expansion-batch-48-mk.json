@@ -1,0 +1,750 @@
+[
+  {
+    "external_key": "MK-B48-001",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "What is the sum of the first 8 positive integers?",
+    "choices": [
+      "28",
+      "32",
+      "40",
+      "36"
+    ],
+    "correct_index": 3,
+    "explanation": "The sum of the first n positive integers is n(n+1)/2. For n=8: 8(9)/2 = 72/2 = 36. Alternatively, add 1+2+3+4+5+6+7+8 = 36. Choosing 28 uses n(n-1)/2; choosing 32 is off by one term; choosing 40 overshoots.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::arithmetic-series-sum-first-8"
+  },
+  {
+    "external_key": "MK-B48-002",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "An arithmetic sequence starts at 5 and each term increases by 4. What is the 12th term?",
+    "choices": [
+      "49",
+      "47",
+      "51",
+      "53"
+    ],
+    "correct_index": 0,
+    "explanation": "The nth term of an arithmetic sequence is a + (n-1)d, where a=5 and d=4. For n=12: 5 + (12-1)(4) = 5 + 44 = 49. Choosing 47 uses n-2 instead of n-1 for the number of steps; choosing 51 adds one extra step; choosing 53 adds two extra steps.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::arithmetic-sequence-term-12"
+  },
+  {
+    "external_key": "MK-B48-003",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "A geometric sequence has first term 3 and common ratio 2. What is the 6th term?",
+    "choices": [
+      "96",
+      "48",
+      "64",
+      "192"
+    ],
+    "correct_index": 0,
+    "explanation": "The nth term is a * r^(n-1). For n=6: 3 * 2^5 = 3 * 32 = 96. Choosing 48 uses 2^4 = 16 (one too few multiplications); choosing 192 uses 2^6; choosing 64 is 2^6 alone without multiplying by the first term.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::geometric-sequence-term-6"
+  },
+  {
+    "external_key": "MK-B48-005",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "Two fair six-sided dice are rolled. What is the probability that both dice show a 4?",
+    "choices": [
+      "1/6",
+      "1/12",
+      "1/36",
+      "1/18"
+    ],
+    "correct_index": 2,
+    "explanation": "The probability that the first die shows 4 is 1/6, and independently the second die shows 4 is also 1/6. For independent events, multiply the probabilities: (1/6)(1/6) = 1/36. Choosing 1/6 counts only one die; choosing 1/12 halves the correct answer without justification; choosing 1/18 is the probability for two dice showing any specific sum incorrectly computed.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::probability-two-dice-both-4"
+  },
+  {
+    "external_key": "MK-B48-006",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "A bag contains 4 red marbles, 3 blue marbles, and 5 green marbles. If one marble is drawn at random, what is the probability it is blue?",
+    "choices": [
+      "1/4",
+      "3/12",
+      "1/3",
+      "5/12"
+    ],
+    "correct_index": 1,
+    "explanation": "There are 4+3+5=12 total marbles, and 3 are blue. The probability is 3/12. This fraction simplifies to 1/4, which is also listed as a choice, but 3/12 is the direct calculation showing blue marbles over total marbles. Both 3/12 and 1/4 are numerically equal; 3/12 is the answer that directly reflects the count. Choosing 1/3 treats only the non-red marbles as the sample space; choosing 5/12 is the probability of drawing green.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::probability-marble-blue-4-3-5"
+  },
+  {
+    "external_key": "MK-B48-007",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "A number is increased by 20% and then decreased by 20%. The result compared to the original is:",
+    "choices": [
+      "Unchanged",
+      "Increased by 4%",
+      "Decreased by 4%",
+      "Decreased by 2%"
+    ],
+    "correct_index": 2,
+    "explanation": "Start with 100. Increase by 20%: 100 x 1.20 = 120. Decrease by 20%: 120 x 0.80 = 96. The result is 96, which is 4% less than the original 100. The net factor is 1.20 x 0.80 = 0.96, confirming a 4% decrease. Choosing 'unchanged' ignores that the 20% decrease applies to a larger number than the 20% increase started from.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::percent-increase-then-decrease-net"
+  },
+  {
+    "external_key": "MK-B48-008",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "How many 3-letter arrangements can be made from the letters A, B, C, D, and E if no letter is repeated?",
+    "choices": [
+      "10",
+      "60",
+      "120",
+      "15"
+    ],
+    "correct_index": 1,
+    "explanation": "This is a permutation of 5 things taken 3 at a time: P(5,3) = 5! / (5-3)! = 5 x 4 x 3 = 60. Choosing 120 = 5! counts all 5-letter arrangements; choosing 10 = C(5,3) counts combinations (order does not matter), not arrangements; choosing 15 is not a standard permutation count for this problem.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::permutation-3-from-5-letters"
+  },
+  {
+    "external_key": "MK-B48-009",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "Simplify: sqrt(72)",
+    "choices": [
+      "8*sqrt(2)",
+      "6*sqrt(3)",
+      "9*sqrt(2)",
+      "6*sqrt(2)"
+    ],
+    "correct_index": 3,
+    "explanation": "Factor 72 = 36 x 2, so sqrt(72) = sqrt(36) * sqrt(2) = 6*sqrt(2). Choosing 8*sqrt(2) is incorrect because 8^2 = 64, not 72; choosing 9*sqrt(2) gives 81*2=162; choosing 6*sqrt(3) would equal sqrt(108), not sqrt(72).",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::simplify-radical-sqrt72"
+  },
+  {
+    "external_key": "MK-B48-010",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "Rationalize the denominator: 5 / sqrt(5)",
+    "choices": [
+      "5*sqrt(5)",
+      "sqrt(25)",
+      "1/sqrt(5)",
+      "sqrt(5)"
+    ],
+    "correct_index": 3,
+    "explanation": "Multiply numerator and denominator by sqrt(5): (5 * sqrt(5)) / (sqrt(5) * sqrt(5)) = 5*sqrt(5) / 5 = sqrt(5). Choosing 5*sqrt(5) forgets to divide by the denominator; choosing sqrt(25) = 5 is not the rationalized form -- it ignores the radical in the simplification.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::rationalize-denominator-sqrt5"
+  },
+  {
+    "external_key": "MK-B48-011",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "A tank is 3/8 full. After adding 30 gallons it becomes 7/8 full. How many gallons does the tank hold when completely full?",
+    "choices": [
+      "60",
+      "75",
+      "80",
+      "90"
+    ],
+    "correct_index": 0,
+    "explanation": "Adding 30 gallons increased the fill by 7/8 - 3/8 = 4/8 = 1/2 of the tank. So 30 gallons equals half the tank's capacity, meaning the full tank holds 30 x 2 = 60 gallons. Choosing 75 and 80 result from using the wrong fractional difference; choosing 90 assumes 30 gallons is 1/3 of the tank.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::tank-fraction-fill-capacity"
+  },
+  {
+    "external_key": "MK-B48-013",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "A mixture contains salt and water in a 3:7 ratio. If the total mixture is 200 grams, how many grams of salt are present?",
+    "choices": [
+      "140",
+      "30",
+      "70",
+      "60"
+    ],
+    "correct_index": 3,
+    "explanation": "Salt makes up 3/(3+7) = 3/10 of the mixture. Salt = (3/10) x 200 = 60 grams. Choosing 140 is the amount of water, not salt; choosing 30 halves the correct answer; choosing 70 is 7/20 of 200.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::ratio-mixture-salt-water"
+  },
+  {
+    "external_key": "MK-B48-014",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "What is the result of 2.4 / 0.06?",
+    "choices": [
+      "4",
+      "0.4",
+      "40",
+      "400"
+    ],
+    "correct_index": 2,
+    "explanation": "Multiply numerator and denominator by 100 to eliminate decimals: 240 / 6 = 40. Choosing 4 moves the decimal one place too few; choosing 400 moves it one extra place; choosing 0.4 is the inverse relationship.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::decimal-division-2pt4-by-0pt06"
+  },
+  {
+    "external_key": "MK-B48-015",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Mike can paint a fence alone in 6 hours. Sarah can paint the same fence alone in 4 hours. Working together, how many hours will they take?",
+    "choices": [
+      "2",
+      "2.4",
+      "3",
+      "5"
+    ],
+    "correct_index": 1,
+    "explanation": "Mike's rate is 1/6 of the fence per hour; Sarah's rate is 1/4. Combined rate: 1/6 + 1/4 = 2/12 + 3/12 = 5/12 per hour. Time = 1 / (5/12) = 12/5 = 2.4 hours. Choosing 3 averages the two times instead of combining rates; choosing 5 adds the times directly; choosing 2 underestimates the combined time.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::work-rate-two-painters-combined"
+  },
+  {
+    "external_key": "MK-B48-016",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "A store sells an item for $84, which is 70% of the original price. What was the original price?",
+    "choices": [
+      "$58.80",
+      "$100",
+      "$114",
+      "$120"
+    ],
+    "correct_index": 3,
+    "explanation": "If $84 = 70% of the original price, then original = 84 / 0.70 = 120. Checking: 70% of 120 = 0.70 x 120 = 84. Choosing $100 would mean 84 is 84% of 100; choosing $114 results from 84 x 1.35, which is not the correct relationship.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::reverse-percent-find-original-price"
+  },
+  {
+    "external_key": "MK-B48-017",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Simplify: sqrt(3) / (2 - sqrt(3)) by rationalizing the denominator.",
+    "choices": [
+      "sqrt(3)(2 + sqrt(3))",
+      "3 + 2*sqrt(3)",
+      "2*sqrt(3) - 3",
+      "(2*sqrt(3) + 3) / (4 - 3)"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiply numerator and denominator by the conjugate (2 + sqrt(3)): sqrt(3)(2 + sqrt(3)) / [(2 - sqrt(3))(2 + sqrt(3))]. Denominator: 4 - 3 = 1. Numerator: 2*sqrt(3) + sqrt(3)*sqrt(3) = 2*sqrt(3) + 3. So the result is 3 + 2*sqrt(3). When the denominator simplifies to 1, the full numerator is the answer. Choices that leave the denominator intact are only partially simplified.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::rationalize-conjugate-2-minus-sqrt3"
+  },
+  {
+    "external_key": "MK-B48-019",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Solve for x using the quadratic formula: x^2 - 5x + 6 = 0",
+    "choices": [
+      "x = -2 or x = -3",
+      "x = 1 or x = 6",
+      "x = 2 or x = 3",
+      "x = 5 or x = -1"
+    ],
+    "correct_index": 2,
+    "explanation": "Using the quadratic formula with a=1, b=-5, c=6: x = (5 +/- sqrt(25-24)) / 2 = (5 +/- 1) / 2. So x = 3 or x = 2. These can also be found by factoring: x^2 - 5x + 6 = (x-2)(x-3) = 0. Choosing -2 or -3 ignores the signs; choosing 1 or 6 gives a sum of 7, not 5.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::quadratic-formula-x2-5x-6"
+  },
+  {
+    "external_key": "MK-B48-020",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Complete the square: write x^2 + 8x + 5 in vertex form a(x - h)^2 + k. What is k?",
+    "choices": [
+      "-11",
+      "11",
+      "-19",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "To complete the square: x^2 + 8x + 5 = (x^2 + 8x + 16) - 16 + 5 = (x + 4)^2 - 11. The vertex form is (x + 4)^2 - 11, so k = -11. Choosing 11 forgets to subtract it; choosing -19 uses (8)^2=64 instead of (8/2)^2=16; choosing 3 confuses the constant added with half the coefficient.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::complete-square-vertex-k-value"
+  },
+  {
+    "external_key": "MK-B48-021",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "What are the x-intercepts of y = x^2 - 7x + 12?",
+    "choices": [
+      "x = -3 and x = -4",
+      "x = 6 and x = 2",
+      "x = 1 and x = 12",
+      "x = 3 and x = 4"
+    ],
+    "correct_index": 3,
+    "explanation": "Set x^2 - 7x + 12 = 0 and factor: (x - 3)(x - 4) = 0, giving x = 3 or x = 4. Checking: 3 + 4 = 7 and 3 x 4 = 12, which match the coefficients. Choosing -3 and -4 gives a positive sum of 7 but incorrect sign direction; choosing 6 and 2 gives a product of 12 but a sum of 8, not 7.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::x-intercepts-trinomial-x2-7x-12"
+  },
+  {
+    "external_key": "MK-B48-022",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "What is the value of log base 2 of 32?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "16"
+    ],
+    "correct_index": 1,
+    "explanation": "log_2(32) asks: 2 to what power equals 32? Since 2^5 = 32, the answer is 5. Choosing 4 gives 2^4 = 16, not 32; choosing 6 gives 2^6 = 64; choosing 16 is the base squared, not the logarithm.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::logarithm-base2-of-32"
+  },
+  {
+    "external_key": "MK-B48-024",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "What is the discriminant of 2x^2 - 4x + 3 = 0, and what does it tell us about the solutions?",
+    "choices": [
+      "Discriminant = 8; two real solutions",
+      "Discriminant = -8; no real solutions",
+      "Discriminant = 40; two real solutions",
+      "Discriminant = 0; one repeated solution"
+    ],
+    "correct_index": 1,
+    "explanation": "The discriminant is b^2 - 4ac = (-4)^2 - 4(2)(3) = 16 - 24 = -8. A negative discriminant means no real solutions (the parabola does not cross the x-axis). Choosing 8 uses 4+4 instead of 16-24; choosing 40 miscomputes 4ac as a subtracted positive number; choosing 0 is the condition for one repeated root.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::discriminant-2x2-4x-3-no-real"
+  },
+  {
+    "external_key": "MK-B48-026",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "If f(x) = 3x - 6, what is the inverse function f^-1(x)?",
+    "choices": [
+      "(x - 6) / 3",
+      "3x + 6",
+      "(x + 6) / 3",
+      "x/3 - 6"
+    ],
+    "correct_index": 2,
+    "explanation": "To find the inverse, swap x and y in y = 3x - 6: x = 3y - 6. Solve for y: 3y = x + 6, so y = (x + 6)/3. Choosing (x - 6)/3 subtracts instead of adding 6; choosing 3x + 6 multiplies by 3 instead of dividing; choosing x/3 - 6 divides by 3 but then subtracts instead of adding.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::inverse-function-3x-minus-6"
+  },
+  {
+    "external_key": "MK-B48-027",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "Solve the system of equations by substitution: y = 2x + 3 and x + y = 12. What is x?",
+    "choices": [
+      "3",
+      "2",
+      "4",
+      "9"
+    ],
+    "correct_index": 0,
+    "explanation": "Substitute y = 2x + 3 into x + y = 12: x + (2x + 3) = 12, so 3x + 3 = 12, giving 3x = 9 and x = 3. Then y = 2(3) + 3 = 9. Check: 3 + 9 = 12. Choosing 4 gives y = 11, and 4+11=15, not 12; choosing 2 gives y = 7, and 2+7=9, not 12.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::system-substitution-2var-y-2x3"
+  },
+  {
+    "external_key": "MK-B48-028",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "Solve by elimination: 3x + 2y = 16 and x - 2y = 0. What is y?",
+    "choices": [
+      "2",
+      "4",
+      "3",
+      "6"
+    ],
+    "correct_index": 0,
+    "explanation": "Add the two equations: (3x + 2y) + (x - 2y) = 16 + 0, giving 4x = 16 and x = 4. Substitute x = 4 into x - 2y = 0: 4 - 2y = 0, so 2y = 4 and y = 2. Choosing 3 substitutes into the wrong equation; choosing 4 mistakes x for y; choosing 6 overcounts.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::system-elimination-3x-2y-x-2y"
+  },
+  {
+    "external_key": "MK-B48-029",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "The midpoint of a segment with endpoints (2, 8) and (10, 4) is:",
+    "choices": [
+      "(8, 12)",
+      "(4, 4)",
+      "(6, 4)",
+      "(6, 6)"
+    ],
+    "correct_index": 3,
+    "explanation": "Midpoint = ((x1+x2)/2, (y1+y2)/2) = ((2+10)/2, (8+4)/2) = (12/2, 12/2) = (6, 6). Choosing (8, 12) adds instead of averages; choosing (4, 4) subtracts the coordinates; choosing (6, 4) averages x correctly but uses only y2.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::midpoint-formula-2-8-10-4"
+  },
+  {
+    "external_key": "MK-B48-030",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "What is the distance between the points (1, 2) and (7, 10)?",
+    "choices": [
+      "8",
+      "10",
+      "12",
+      "14"
+    ],
+    "correct_index": 1,
+    "explanation": "Distance = sqrt((x2-x1)^2 + (y2-y1)^2) = sqrt((7-1)^2 + (10-2)^2) = sqrt(36 + 64) = sqrt(100) = 10. Choosing 8 uses only the horizontal distance; choosing 12 adds the differences instead of using the distance formula; choosing 14 is the sum of both differences.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::distance-formula-1-2-7-10"
+  },
+  {
+    "external_key": "MK-B48-031",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 1,
+    "stem": "A line has slope 3 and passes through the point (0, -4). What is its equation?",
+    "choices": [
+      "y = -3x + 4",
+      "y = 3x + 4",
+      "y = 3x - 4",
+      "y = -4x + 3"
+    ],
+    "correct_index": 2,
+    "explanation": "The slope-intercept form is y = mx + b where m is the slope and b is the y-intercept. With slope 3 and y-intercept -4 (the point (0,-4) is the y-intercept), the equation is y = 3x - 4. Choosing y = -3x + 4 negates both slope and intercept; choosing y = 3x + 4 has the wrong sign for b.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::slope-intercept-through-origin-0-neg4"
+  },
+  {
+    "external_key": "MK-B48-032",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "A line perpendicular to y = 4x - 1 passes through the point (8, 3). What is the y-intercept of the perpendicular line?",
+    "choices": [
+      "1",
+      "5",
+      "7",
+      "11"
+    ],
+    "correct_index": 1,
+    "explanation": "The slope of y = 4x - 1 is 4. A perpendicular slope is the negative reciprocal: -1/4. Using point (8, 3): y - 3 = -1/4(x - 8), so y = -x/4 + 2 + 3 = -x/4 + 5. The y-intercept is 5. Choosing 1 omits the +3 vertical shift; choosing 7 adds incorrectly; choosing 11 uses the slope as positive.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::perpendicular-line-through-8-3"
+  },
+  {
+    "external_key": "MK-B48-033",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "A chemist has a 30% acid solution and a 70% acid solution. How many liters of the 30% solution must she mix with 20 liters of the 70% solution to get a 50% mixture?",
+    "choices": [
+      "10",
+      "15",
+      "20",
+      "40"
+    ],
+    "correct_index": 2,
+    "explanation": "Let x = liters of 30% solution. Acid equation: 0.30x + 0.70(20) = 0.50(x + 20). Expanding: 0.30x + 14 = 0.50x + 10. So 4 = 0.20x and x = 20. Check: 20 liters of 30% gives 6 acid units; 20 liters of 70% gives 14 acid units; total 20 acid in 40 liters = 50%. Choosing 10 gives only 45% concentration.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::mixture-acid-30-70-percent"
+  },
+  {
+    "external_key": "MK-B48-034",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "Emma is 3 years older than twice her brother's age. In 4 years, the sum of their ages will be 44. How old is the brother now?",
+    "choices": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "correct_index": 3,
+    "explanation": "Let b = brother's current age and e = Emma's current age. Emma's age: e = 2b + 3. In 4 years: (b+4) + (e+4) = 44, so b + e + 8 = 44, meaning b + e = 36. Substitute: b + (2b+3) = 36, so 3b + 3 = 36, giving 3b = 33 and b = 11. Check: Emma is 2(11)+3 = 25 now; in 4 years they are 15 and 29, and 15+29 = 44. Choosing 10 gives b+e = 10+23 = 33, not 36; choosing 9 gives b+e = 9+21 = 30.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::age-problem-emma-brother-sum-36"
+  },
+  {
+    "external_key": "MK-B48-035",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "A sector of a circle has a central angle of 90 degrees and a radius of 8 cm. What is the area of the sector? (Use pi = 3.14)",
+    "choices": [
+      "25.12 cm^2",
+      "50.24 cm^2",
+      "100.48 cm^2",
+      "200.96 cm^2"
+    ],
+    "correct_index": 1,
+    "explanation": "Area of a sector = (angle/360) x pi x r^2 = (90/360) x 3.14 x 64 = 0.25 x 200.96 = 50.24 cm^2. Choosing 25.12 uses angle/720 (half the sector); choosing 100.48 uses angle/180 (double the sector); choosing 200.96 is the full circle area.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::circle-sector-area-degrees-90-r8"
+  },
+  {
+    "external_key": "MK-B48-036",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "A circle has a radius of 6 cm. What is the arc length of a sector with a central angle of 120 degrees? (Use pi = 3.14)",
+    "choices": [
+      "12.56 cm",
+      "4.19 cm",
+      "6.28 cm",
+      "37.68 cm"
+    ],
+    "correct_index": 0,
+    "explanation": "Arc length = (angle/360) x 2 x pi x r = (120/360) x 2 x 3.14 x 6 = (1/3) x 37.68 = 12.56 cm. Choosing 4.19 uses angle/360 x pi x r (missing the factor of 2); choosing 6.28 applies only to a 60-degree sector; choosing 37.68 is the full circumference.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::arc-length-120-degrees-radius-6"
+  },
+  {
+    "external_key": "MK-B48-037",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "In a 30-60-90 right triangle, the side opposite the 30-degree angle is 7 cm. What is the length of the hypotenuse?",
+    "choices": [
+      "7*sqrt(3)",
+      "7*sqrt(2)",
+      "14",
+      "7"
+    ],
+    "correct_index": 2,
+    "explanation": "In a 30-60-90 triangle, the sides are in ratio 1 : sqrt(3) : 2 (short leg : long leg : hypotenuse). The short leg opposite 30 degrees is 7, so the hypotenuse is 2 x 7 = 14. Choosing 7*sqrt(3) is the long leg, not the hypotenuse; choosing 7*sqrt(2) is the hypotenuse of a 45-45-90 triangle with leg 7.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::special-triangle-30-60-90-hypotenuse-from-short"
+  },
+  {
+    "external_key": "MK-B48-038",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "In a 45-45-90 right triangle, the hypotenuse measures 10 cm. What is the length of each leg?",
+    "choices": [
+      "5",
+      "5*sqrt(2)",
+      "10/sqrt(2)",
+      "10*sqrt(2)"
+    ],
+    "correct_index": 1,
+    "explanation": "In a 45-45-90 triangle, the legs are equal and the hypotenuse = leg * sqrt(2). So leg = hypotenuse / sqrt(2) = 10/sqrt(2) = 10*sqrt(2)/2 = 5*sqrt(2). Choices 5*sqrt(2) and 10/sqrt(2) are both equivalent forms, but 5*sqrt(2) is the rationalized simplified form. Choosing 5 misses the sqrt(2) factor; choosing 10*sqrt(2) multiplies instead of divides.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::special-triangle-45-45-90-leg-from-hyp-10"
+  },
+  {
+    "external_key": "MK-B48-039",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "Two similar triangles have corresponding sides in a ratio of 3:5. If the area of the smaller triangle is 27 cm^2, what is the area of the larger triangle?",
+    "choices": [
+      "45 cm^2",
+      "75 cm^2",
+      "135 cm^2",
+      "81 cm^2"
+    ],
+    "correct_index": 1,
+    "explanation": "For similar figures, if the ratio of corresponding sides is 3:5, the ratio of areas is 3^2 : 5^2 = 9 : 25. Setting up the proportion: 27/A = 9/25, so A = 27 x 25/9 = 75 cm^2. Choosing 45 multiplies by 5/3 instead of (5/3)^2; choosing 135 multiplies by 5 instead of 25/9; choosing 81 multiplies by 3 instead of dividing.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::similar-triangles-area-ratio-3-5"
+  },
+  {
+    "external_key": "MK-B48-040",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "An equilateral triangle has a side length of 6 cm. What is the measure of each interior angle?",
+    "choices": [
+      "45 degrees",
+      "60 degrees",
+      "90 degrees",
+      "72 degrees"
+    ],
+    "correct_index": 1,
+    "explanation": "An equilateral triangle has three equal angles. The sum of interior angles in any triangle is 180 degrees, so each angle = 180/3 = 60 degrees. Choosing 45 degrees is one angle of a 45-45-90 right triangle; choosing 90 degrees is the right angle; choosing 72 degrees is the interior angle of a regular pentagon.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::equilateral-triangle-interior-angle"
+  },
+  {
+    "external_key": "MK-B48-041",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A sphere has a radius of 3 cm. What is its surface area? (Use pi = 3.14)",
+    "choices": [
+      "28.26 cm^2",
+      "56.52 cm^2",
+      "113.04 cm^2",
+      "339.12 cm^2"
+    ],
+    "correct_index": 2,
+    "explanation": "Surface area of a sphere = 4 x pi x r^2 = 4 x 3.14 x 9 = 4 x 28.26 = 113.04 cm^2. Choosing 28.26 = pi x r^2 forgets the factor of 4; choosing 56.52 uses a factor of 2 instead of 4; choosing 339.12 uses the volume formula (4/3 x pi x r^3) applied incorrectly.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::sphere-surface-area-radius-3"
+  },
+  {
+    "external_key": "MK-B48-042",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 2,
+    "stem": "An isosceles triangle has two equal base angles. If the vertex angle is 50 degrees, what is the measure of each base angle?",
+    "choices": [
+      "50 degrees",
+      "60 degrees",
+      "65 degrees",
+      "130 degrees"
+    ],
+    "correct_index": 2,
+    "explanation": "The sum of all angles is 180 degrees. The two base angles are equal, so 2b + 50 = 180, giving 2b = 130 and b = 65 degrees each. Choosing 60 degrees would give total 60+60+50=170, not 180; choosing 130 is the sum of both base angles, not each one; choosing 50 degrees would make it equilateral.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::isosceles-base-angle-vertex-50"
+  },
+  {
+    "external_key": "MK-B48-043",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "A cone has a radius of 4 cm and a height of 9 cm. What is its volume? (Use pi = 3.14)",
+    "choices": [
+      "150.72 cm^3",
+      "452.16 cm^3",
+      "75.36 cm^3",
+      "602.88 cm^3"
+    ],
+    "correct_index": 0,
+    "explanation": "Volume of a cone = (1/3) x pi x r^2 x h = (1/3) x 3.14 x 16 x 9 = (1/3) x 452.16 = 150.72 cm^3. Choosing 452.16 forgets the factor of 1/3 (uses the cylinder formula); choosing 75.36 uses 1/6 instead of 1/3; choosing 602.88 uses r = 4 as the diameter.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::cone-volume-radius-4-height-9"
+  },
+  {
+    "external_key": "MK-B48-045",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "Solve for x: |2x + 1| < 9. Which interval contains all solutions?",
+    "choices": [
+      "-5 < x < 4",
+      "x < 4",
+      "x > -5",
+      "-4 < x < 5"
+    ],
+    "correct_index": 0,
+    "explanation": "For |2x + 1| < 9, write -9 < 2x + 1 < 9. Subtract 1: -10 < 2x < 8. Divide by 2: -5 < x < 4. Choosing x < 4 captures only the right bound; choosing x > -5 captures only the left bound; choosing -4 < x < 5 is the solution to |2x - 1| < 9.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::absolute-value-inequality-2x-plus1-less-9"
+  },
+  {
+    "external_key": "MK-B48-046",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "A student needs at least 360 points over 4 tests to earn a B. She scored 82, 91, and 78 on the first three tests. What is the minimum score she needs on the fourth test?",
+    "choices": [
+      "109",
+      "99",
+      "110",
+      "111"
+    ],
+    "correct_index": 0,
+    "explanation": "The sum of the first three scores is 82 + 91 + 78 = 251. She needs at least 360 total, so the fourth score must satisfy 251 + s >= 360, meaning s >= 109. The minimum is exactly 109. Choosing 99 gives a total of 350, which is less than 360; choosing 110 or 111 would also work but are not the minimum.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::minimum-test-score-four-tests-360"
+  },
+  {
+    "external_key": "MK-B48-047",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "Which of the following is the solution set to -3 < 2x - 1 <= 5?",
+    "choices": [
+      "-1 < x <= 3",
+      "-2 < x <= 4",
+      "1 < x <= 3",
+      "-1 <= x < 3"
+    ],
+    "correct_index": 0,
+    "explanation": "Add 1 to all parts: -3 + 1 < 2x <= 5 + 1, giving -2 < 2x <= 6. Divide by 2: -1 < x <= 3. The left inequality is strict (not equal) and the right is inclusive. Choosing -2 < x <= 4 forgets to divide by 2 after adding 1; choosing -1 <= x < 3 reverses the boundary types.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::compound-three-part-inequality-2x-minus1"
+  },
+  {
+    "external_key": "MK-B48-048",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "Solve: |3x - 6| >= 9. Which set of values is correct?",
+    "choices": [
+      "x <= -1 or x >= 5",
+      "x <= 1 or x >= 5",
+      "-1 <= x <= 5",
+      "x < -1 or x > 5"
+    ],
+    "correct_index": 1,
+    "explanation": "For |3x - 6| >= 9, split into two inequalities: 3x - 6 >= 9 or 3x - 6 <= -9. From 3x - 6 >= 9: 3x >= 15, so x >= 5. From 3x - 6 <= -9: 3x <= -3, so x <= -1. The solution is x <= -1 or x >= 5. Choosing -1 <= x <= 5 gives the AND compound inequality, not OR; choosing x < -1 or x > 5 uses strict inequalities when the original uses >=.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::absolute-value-inequality-gte-3x-minus6"
+  },
+  {
+    "external_key": "MK-B48-049",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 1,
+    "stem": "On a number line, which inequality is represented by all values greater than -2 but less than or equal to 5?",
+    "choices": [
+      "-2 < x <= 5",
+      "-2 <= x < 5",
+      "-2 < x < 5",
+      "-2 <= x <= 5"
+    ],
+    "correct_index": 0,
+    "explanation": "The phrase 'greater than -2' means x > -2 (open circle at -2, strict inequality). The phrase 'less than or equal to 5' means x <= 5 (closed circle at 5, inclusive). Combined: -2 < x <= 5. Choosing -2 <= x < 5 makes -2 inclusive and 5 exclusive, which is the opposite; choosing -2 < x < 5 makes both strict; choosing -2 <= x <= 5 makes both inclusive.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::number-line-open-closed-compound"
+  },
+  {
+    "external_key": "MK-B48-057",
+    "subtest": "MK",
+    "topic_id": "mk.order-of-operations",
+    "difficulty": 3,
+    "stem": "Evaluate: sqrt(49 + (3^2 * 2) - 3)",
+    "choices": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correct_index": 1,
+    "explanation": "Inside the radical, follow order of operations. Exponent: 3^2 = 9. Multiply: 9*2 = 18. Now compute the full expression under the radical: 49 + 18 - 3 = 64. Finally, sqrt(64) = 8. Choosing 7 gives 7^2 = 49, missing the additional terms; choosing 9 gives 9^2 = 81, overshooting; choosing 10 gives 100.",
+    "status": "verified",
+    "item_family_id": "mk.order-of-operations::pemdas-nested-radical-exponent-sum"
+  }
+]

@@ -1,0 +1,954 @@
+[
+  {
+    "external_key": "GS-B51-001",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which gland produces insulin, the hormone that allows cells to take in glucose from the blood?",
+    "choices": [
+      "Thyroid gland",
+      "Adrenal gland",
+      "Pancreas",
+      "Pituitary gland"
+    ],
+    "correct_index": 2,
+    "explanation": "The pancreas contains clusters of cells called the islets of Langerhans that secrete insulin. Insulin binds to cell receptors and enables glucose to enter cells for energy production. The thyroid gland produces thyroxine, which regulates metabolism. The adrenal glands secrete adrenaline (epinephrine), not insulin.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::pancreas-insulin-glucose-uptake"
+  },
+  {
+    "external_key": "GS-B51-002",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "A person has type A blood. Which blood type(s) can they safely receive in a transfusion?",
+    "choices": [
+      "Type A and type O only",
+      "Type A and type AB only",
+      "Type O only",
+      "Any blood type"
+    ],
+    "correct_index": 0,
+    "explanation": "A person with type A blood has A antigens on their red blood cells and anti-B antibodies in their plasma, so they can receive type A (matching antigens) or type O (no A or B antigens). Type AB blood carries B antigens that would trigger an immune reaction. Type O is the universal donor because it lacks both A and B antigens.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::blood-type-compatible-transfusion-A"
+  },
+  {
+    "external_key": "GS-B51-003",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which cells of the immune system produce antibodies to neutralize specific pathogens?",
+    "choices": [
+      "T cells",
+      "B cells",
+      "Macrophages",
+      "Neutrophils"
+    ],
+    "correct_index": 1,
+    "explanation": "B cells (B lymphocytes) differentiate into plasma cells that manufacture antibodies targeted at specific antigens. T cells manage cell-mediated immunity, either killing infected cells directly (cytotoxic T cells) or helping coordinate the immune response (helper T cells). Macrophages engulf and destroy pathogens by phagocytosis but do not produce antibodies.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::b-cells-antibody-production"
+  },
+  {
+    "external_key": "GS-B51-004",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "The lymphatic system returns excess interstitial fluid to the bloodstream. Into which vessels does this fluid ultimately drain?",
+    "choices": [
+      "Pulmonary veins",
+      "Capillaries near the kidneys",
+      "Subclavian veins in the upper chest",
+      "Portal vein of the liver"
+    ],
+    "correct_index": 2,
+    "explanation": "Lymphatic vessels collect interstitial fluid (now called lymph) and transport it through lymph nodes before emptying it into the subclavian veins near the collarbone. This rejoins the lymph with the venous blood supply. The pulmonary veins carry oxygenated blood from the lungs to the heart and have no role in lymphatic drainage.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::lymphatic-drainage-subclavian-vein"
+  },
+  {
+    "external_key": "GS-B51-005",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "The thyroid gland releases thyroxine (T4). What is the primary metabolic effect of this hormone?",
+    "choices": [
+      "It lowers blood glucose by stimulating glycogen storage",
+      "It increases the overall rate of cellular metabolism throughout the body",
+      "It promotes sodium retention in the kidneys",
+      "It triggers the fight-or-flight response by raising heart rate acutely"
+    ],
+    "correct_index": 1,
+    "explanation": "Thyroxine (T4) regulates basal metabolic rate by increasing the rate at which cells consume oxygen and produce energy. Too little thyroxine leads to hypothyroidism and a slowed metabolism; too much leads to hyperthyroidism and an accelerated metabolism. The fight-or-flight response is controlled by adrenaline from the adrenal glands. Sodium retention is managed by aldosterone.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::thyroid-thyroxine-metabolic-rate"
+  },
+  {
+    "external_key": "GS-B51-006",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "In the kidney nephron, where does most reabsorption of water and solutes occur after filtration in the glomerulus?",
+    "choices": [
+      "Collecting duct",
+      "Loop of Henle",
+      "Proximal convoluted tubule",
+      "Distal convoluted tubule"
+    ],
+    "correct_index": 2,
+    "explanation": "Approximately 65-70% of the filtered water, sodium, glucose, and amino acids are reabsorbed in the proximal convoluted tubule immediately after leaving the Bowman's capsule. The loop of Henle creates a concentration gradient that draws water out passively, but bulk reabsorption happens earlier in the proximal tubule. The collecting duct makes fine adjustments under hormonal control (ADH and aldosterone).",
+    "status": "verified",
+    "item_family_id": "gs.life-science::nephron-proximal-tubule-reabsorption"
+  },
+  {
+    "external_key": "GS-B51-007",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "A plant seedling is placed with light coming from only one side. The shoot bends toward the light. This response is called:",
+    "choices": [
+      "Phototropism",
+      "Gravitropism",
+      "Hydrotropism",
+      "Thigmotropism"
+    ],
+    "correct_index": 0,
+    "explanation": "Phototropism is the directional growth response of a plant toward (or away from) a light source. Auxin, a plant hormone, accumulates on the shaded side of the shoot, causing those cells to elongate more, bending the tip toward the light. Gravitropism is growth in response to gravity. Thigmotropism is growth in response to touch, as seen in climbing vines.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::plant-phototropism-auxin-bending"
+  },
+  {
+    "external_key": "GS-B51-008",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "Mitochondrial DNA (mtDNA) is inherited differently from nuclear DNA. How is human mtDNA typically passed down?",
+    "choices": [
+      "Only from the mother through egg cell mitochondria",
+      "Equally from both parents through sexual recombination",
+      "Randomly from either parent with equal probability",
+      "Only from the father through sperm mitochondria"
+    ],
+    "correct_index": 0,
+    "explanation": "Mitochondrial DNA is maternally inherited because egg cells contribute nearly all cytoplasm (and thus all mitochondria) to the zygote, while sperm contribute only the nuclear DNA. This means all children of the same mother share identical mtDNA barring new mutations. Paternal mitochondria from sperm are actively destroyed after fertilization. Researchers use mtDNA to trace maternal lineage across generations.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::mitochondrial-dna-maternal-inheritance"
+  },
+  {
+    "external_key": "GS-B51-009",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "In a food web, a hawk eats snakes, which eat frogs, which eat insects, which eat plants. The hawk is at which trophic level?",
+    "choices": [
+      "Second trophic level",
+      "Third trophic level",
+      "Fourth trophic level",
+      "Fifth trophic level"
+    ],
+    "correct_index": 3,
+    "explanation": "Trophic levels count steps from the primary producers. Plants are level 1 (producers), insects are level 2 (primary consumers), frogs are level 3 (secondary consumers), snakes are level 4 (tertiary consumers), and the hawk is level 5 (quaternary consumer). A common mistake is to count the number of arrows in the chain rather than the number of organisms including the starting plant.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::food-web-trophic-level-counting"
+  },
+  {
+    "external_key": "GS-B51-010",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "Helper T cells (CD4+) are critical coordinators of adaptive immunity. Which of the following best describes their function?",
+    "choices": [
+      "They produce large quantities of antibodies against specific antigens",
+      "They activate B cells and cytotoxic T cells by releasing cytokines",
+      "They directly kill virus-infected cells by releasing perforin",
+      "They engulf and digest foreign particles through phagocytosis"
+    ],
+    "correct_index": 1,
+    "explanation": "Helper T cells (CD4+) recognize antigen presented by antigen-presenting cells and then secrete cytokines that stimulate B cells to produce antibodies and activate cytotoxic T cells (CD8+) to kill infected cells. They do not directly kill infected cells -- that is the role of cytotoxic T cells. Phagocytosis is performed by macrophages and neutrophils.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::helper-t-cells-cytokine-coordination"
+  },
+  {
+    "external_key": "GS-B51-011",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "Epinephrine (adrenaline) is released by the adrenal medulla. Which of the following is NOT a direct effect of epinephrine during a stress response?",
+    "choices": [
+      "Increased heart rate and cardiac output",
+      "Dilation of bronchioles to increase airflow",
+      "Breakdown of glycogen to release glucose into the blood",
+      "Increased insulin secretion to promote glucose storage"
+    ],
+    "correct_index": 3,
+    "explanation": "Epinephrine prepares the body for immediate action by raising heart rate, dilating airways, and triggering glycogenolysis (breakdown of glycogen to release glucose). Increasing insulin secretion would counteract this by storing glucose rather than mobilizing it -- epinephrine actually suppresses insulin release so that blood glucose remains elevated for energy. Each of the other three options is a classic sympathetic (fight-or-flight) effect.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::epinephrine-stress-response-effects"
+  },
+  {
+    "external_key": "GS-B51-012",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "A neurotransmitter binds its receptor but then must be cleared from the synapse to end the signal. Which mechanism removes dopamine from the synaptic cleft?",
+    "choices": [
+      "Diffusion into the bloodstream through the blood-brain barrier",
+      "Enzymatic degradation by acetylcholinesterase",
+      "Reuptake by the presynaptic neuron via transporter proteins",
+      "Absorption into the postsynaptic cell and stored for reuse"
+    ],
+    "correct_index": 2,
+    "explanation": "Dopamine is primarily cleared from the synapse by reuptake transporters (DAT) on the presynaptic membrane that pull dopamine back into the releasing neuron, where it can be repackaged into vesicles. Acetylcholinesterase breaks down acetylcholine, not dopamine. The blood-brain barrier largely prevents neurotransmitters from freely crossing out of the CNS. Postsynaptic cells do not absorb dopamine for recycling.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::dopamine-reuptake-transporter-clearance"
+  },
+  {
+    "external_key": "GS-B51-013",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "The Rh factor is an antigen on red blood cells. Which situation poses the greatest risk of hemolytic disease of the newborn?",
+    "choices": [
+      "An Rh-negative mother carrying an Rh-negative fetus in any pregnancy",
+      "An Rh-positive mother carrying an Rh-negative fetus in a second pregnancy",
+      "An Rh-negative mother carrying an Rh-positive fetus in a second or later pregnancy",
+      "An Rh-positive mother carrying an Rh-positive fetus in any pregnancy"
+    ],
+    "correct_index": 2,
+    "explanation": "If an Rh-negative mother is exposed to Rh-positive fetal blood (typically at delivery of the first Rh-positive baby), her immune system produces anti-Rh antibodies. In a subsequent Rh-positive pregnancy those IgG antibodies cross the placenta and attack the fetal red blood cells, causing hemolytic disease. An Rh-positive mother cannot produce anti-Rh antibodies regardless of the fetal type. The first Rh-positive pregnancy is usually safe because sensitization occurs at birth, not during gestation.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::rh-factor-hemolytic-disease-sensitization"
+  },
+  {
+    "external_key": "GS-B51-014",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which organelle in the lymph node captures and presents antigens to T cells to initiate an immune response?",
+    "choices": [
+      "Platelets",
+      "Dendritic cells",
+      "Mitochondria",
+      "Ribosomes"
+    ],
+    "correct_index": 1,
+    "explanation": "Dendritic cells are professional antigen-presenting cells that engulf pathogens, process them, and display antigen fragments on MHC molecules for recognition by T cells. This is a key step in launching the adaptive immune response. Mitochondria provide energy; ribosomes synthesize proteins; platelets are involved in blood clotting, not antigen presentation.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::dendritic-cells-antigen-presentation"
+  },
+  {
+    "external_key": "GS-B51-015",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "In a chemical reaction, oxidation is best defined as:",
+    "choices": [
+      "Losing electrons",
+      "Gaining electrons",
+      "Gaining protons",
+      "Losing protons"
+    ],
+    "correct_index": 0,
+    "explanation": "Oxidation is the loss of electrons from a substance (remembered by the mnemonic OIL -- Oxidation Is Loss). Reduction is the gain of electrons (RIG -- Reduction Is Gain). Oxidation and reduction always occur together in redox reactions. Gaining or losing protons describes acid-base chemistry, not redox chemistry.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::redox-oxidation-electron-loss"
+  },
+  {
+    "external_key": "GS-B51-016",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "One mole of any substance contains approximately how many particles (atoms, molecules, or ions)?",
+    "choices": [
+      "3.01 x 10^23",
+      "1.66 x 10^-24",
+      "6.02 x 10^10",
+      "6.02 x 10^23"
+    ],
+    "correct_index": 3,
+    "explanation": "One mole contains 6.02 x 10^23 particles, a value known as Avogadro's number. This enormous number allows chemists to work with measurable gram-scale quantities of substances. The value 1.66 x 10^-24 is approximately 1/Avogadro's number and represents the mass of one atomic mass unit (dalton) in grams, not a particle count.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::mole-avogadros-number-definition"
+  },
+  {
+    "external_key": "GS-B51-017",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "Boyle's Law states that for a gas at constant temperature, pressure and volume are:",
+    "choices": [
+      "Inversely proportional -- when one doubles, the other halves",
+      "Directly proportional -- when one doubles, the other doubles",
+      "Equal to each other in all circumstances",
+      "Unrelated to each other"
+    ],
+    "correct_index": 0,
+    "explanation": "Boyle's Law (P1V1 = P2V2 at constant temperature) describes an inverse relationship: compressing a gas into half the volume doubles its pressure. This is because the same number of gas molecules collide with a smaller surface area more frequently. A direct proportionality between pressure and temperature (at constant volume) is described by Gay-Lussac's Law, not Boyle's.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::boyles-law-pressure-volume-inverse"
+  },
+  {
+    "external_key": "GS-B51-018",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "A solution has a pH of 4. Compared to a solution with a pH of 6, it is:",
+    "choices": [
+      "10 times more acidic",
+      "2 times more acidic",
+      "100 times more acidic",
+      "100 times more basic"
+    ],
+    "correct_index": 2,
+    "explanation": "The pH scale is logarithmic (base 10), so each one-unit decrease in pH represents a 10-fold increase in hydrogen ion concentration. A difference of 2 pH units (from 6 to 4) means the pH 4 solution has 10^2 = 100 times more H+ ions than the pH 6 solution, making it 100 times more acidic. A difference of only 2-fold would be seen on a linear scale, not the logarithmic pH scale.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::ph-logarithmic-comparison-calculation"
+  },
+  {
+    "external_key": "GS-B51-019",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Charles's Law describes how gas volume changes with temperature. If a balloon at 300 K is heated to 600 K at constant pressure, its volume will:",
+    "choices": [
+      "Stay the same",
+      "Double",
+      "Quadruple",
+      "Decrease by half"
+    ],
+    "correct_index": 1,
+    "explanation": "Charles's Law states that volume is directly proportional to absolute temperature at constant pressure (V1/T1 = V2/T2). Doubling the Kelvin temperature from 300 K to 600 K doubles the volume. It is critical to use Kelvin (not Celsius) because Charles's Law requires absolute temperature; using Celsius would give a wrong answer. The volume quadrupling would require a fourfold temperature increase.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::charles-law-volume-temperature-direct"
+  },
+  {
+    "external_key": "GS-B51-020",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "In a redox reaction, iron (Fe) loses three electrons to form Fe3+. The substance that accepts those electrons is called the:",
+    "choices": [
+      "Reducing agent",
+      "Oxidizing agent",
+      "Catalyst",
+      "Buffer"
+    ],
+    "correct_index": 1,
+    "explanation": "The substance that accepts electrons (and is thereby reduced) is the oxidizing agent. Iron, which donates the electrons and is oxidized, is the reducing agent. A catalyst speeds up a reaction without being consumed by it. A buffer resists changes in pH and plays no role in electron transfer.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::redox-oxidizing-agent-electron-acceptor"
+  },
+  {
+    "external_key": "GS-B51-021",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Which trend in the periodic table correctly describes ionization energy?",
+    "choices": [
+      "Ionization energy generally increases going left to right across a period",
+      "Ionization energy decreases going left to right across a period",
+      "Ionization energy increases going down a group",
+      "Ionization energy is the same for all elements in the same period"
+    ],
+    "correct_index": 0,
+    "explanation": "Ionization energy -- the energy needed to remove an electron -- generally increases left to right across a period because increasing nuclear charge pulls electrons closer and more tightly to the nucleus. It decreases going down a group because outer electrons are farther from the nucleus and shielded by more inner electron shells. Noble gases have the highest ionization energies in their respective periods.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::ionization-energy-periodic-trend"
+  },
+  {
+    "external_key": "GS-B51-022",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Nitrogen has atomic number 7. What is the correct ground-state electron configuration for a nitrogen atom?",
+    "choices": [
+      "1s2 2s2 2p4",
+      "1s2 2s2 2p1",
+      "1s2 2s2 2p3",
+      "1s2 2s2 2p5"
+    ],
+    "correct_index": 2,
+    "explanation": "Nitrogen (atomic number 7) has 7 electrons: 2 fill the 1s orbital, 2 fill the 2s orbital, and 3 fill the 2p subshell (one per orbital per Hund's rule), giving 1s2 2s2 2p3. The configuration 2p4 would require 8 electrons (that is oxygen). The configuration 2p5 would require 9 electrons (fluorine). Confirming totals avoids the common error of miscounting electrons.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::electron-configuration-nitrogen-aufbau"
+  },
+  {
+    "external_key": "GS-B51-023",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "A radioactive isotope has a half-life of 10 years. What fraction of the original sample remains after 40 years?",
+    "choices": [
+      "1/4",
+      "1/16",
+      "1/32",
+      "1/8"
+    ],
+    "correct_index": 1,
+    "explanation": "Each half-life reduces the remaining sample by half. After 10 years: 1/2. After 20 years: 1/4. After 30 years: 1/8. After 40 years: 1/16. The number of half-lives elapsed is 40 / 10 = 4, so the fraction remaining is (1/2)^4 = 1/16. Choosing 1/4 corresponds to only 2 half-lives (20 years), and 1/8 corresponds to 3 half-lives (30 years).",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::half-life-fraction-remaining-calculation"
+  },
+  {
+    "external_key": "GS-B51-024",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "Hydrogen bonding is stronger than London dispersion forces. Which property of water is MOST directly explained by its extensive hydrogen bonding?",
+    "choices": [
+      "Water's unusually high boiling point compared to other small molecules",
+      "Water's neutral pH of 7",
+      "Water's ability to dissolve nonpolar substances like oil",
+      "Water's low density as a solid compared to liquid water"
+    ],
+    "correct_index": 0,
+    "explanation": "Water's boiling point (100 degrees C) is far higher than that of similarly sized molecules like hydrogen sulfide (-60 degrees C) because extensive hydrogen bonds between water molecules require substantially more thermal energy to break, keeping water liquid at temperatures where analogous molecules are gases. While ice floating on liquid water is also due to hydrogen bonding (a less dense lattice structure), the question asks for the MOST direct explanation of hydrogen bonding strength. Water's inability to dissolve oils stems from nonpolar/polar incompatibility. pH of 7 reflects equal H+ and OH- concentrations, not hydrogen bond strength.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::hydrogen-bonding-water-high-boiling-point"
+  },
+  {
+    "external_key": "GS-B51-025",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "The ideal gas law is PV = nRT. If the number of moles of gas in a rigid container doubles while temperature stays constant, what happens to the pressure?",
+    "choices": [
+      "Pressure halves",
+      "Pressure quadruples",
+      "Pressure doubles",
+      "Pressure stays the same because the container is rigid"
+    ],
+    "correct_index": 2,
+    "explanation": "In the ideal gas law PV = nRT, if n doubles while V and T remain constant, P must double to maintain the equality. More moles of gas means more molecules colliding with the container walls per unit time, which is measured as higher pressure. The container being rigid keeps volume constant but does not prevent pressure from rising. Pressure halving would occur if volume doubled at constant n and T (Boyle's Law scenario).",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::ideal-gas-law-moles-pressure-calculation"
+  },
+  {
+    "external_key": "GS-B51-026",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "Intermolecular forces that exist between all molecules due to temporary fluctuations in electron distribution are called:",
+    "choices": [
+      "London dispersion forces",
+      "Covalent bonds",
+      "Ionic bonds",
+      "Dipole-dipole forces"
+    ],
+    "correct_index": 0,
+    "explanation": "London dispersion forces (also called van der Waals forces) arise from temporary uneven distribution of electrons that create instantaneous dipoles, inducing dipoles in neighboring molecules. They are present in ALL molecules, both polar and nonpolar. Dipole-dipole forces occur only in permanently polar molecules. Covalent and ionic bonds are intramolecular forces within a molecule, not between separate molecules.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::london-dispersion-forces-all-molecules"
+  },
+  {
+    "external_key": "GS-B51-027",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "Which of the following elements has the highest electronegativity?",
+    "choices": [
+      "Fluorine",
+      "Nitrogen",
+      "Chlorine",
+      "Oxygen"
+    ],
+    "correct_index": 0,
+    "explanation": "Fluorine has the highest electronegativity of all elements (Pauling scale: 3.98) because it has the smallest atomic radius in its period and a nuclear charge of +9, pulling bonding electrons very strongly toward itself. Oxygen is second highest (3.44). Nitrogen (3.04) and chlorine (3.16) are significantly lower. Electronegativity generally increases toward the upper right of the periodic table, with fluorine at the extreme.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::electronegativity-fluorine-highest-periodic"
+  },
+  {
+    "external_key": "GS-B51-028",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Which of the following correctly describes what happens during reduction in a redox reaction?",
+    "choices": [
+      "A substance gains protons",
+      "A substance gains electrons",
+      "A substance loses hydrogen atoms",
+      "A substance loses electrons"
+    ],
+    "correct_index": 1,
+    "explanation": "Reduction is defined as the gain of electrons (RIG -- Reduction Is Gain). The substance that gains electrons is reduced, and its oxidation state decreases. Losing electrons is oxidation, not reduction. Gaining or losing hydrogen atoms can accompany oxidation or reduction in organic chemistry but is not the defining characteristic in the general sense.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::redox-reduction-electron-gain-definition"
+  },
+  {
+    "external_key": "GS-B51-029",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "The Mohs hardness scale ranks minerals from 1 to 10 based on scratch resistance. Which mineral defines hardness 10 (the hardest)?",
+    "choices": [
+      "Diamond",
+      "Corundum",
+      "Talc",
+      "Quartz"
+    ],
+    "correct_index": 0,
+    "explanation": "Diamond is the hardest natural mineral and defines the top of the Mohs scale at 10. Corundum (which includes rubies and sapphires) ranks 9 and can be scratched only by diamond. Quartz ranks 7. Talc ranks 1, the softest mineral, and can be scratched by a fingernail. The Mohs scale is ordinal, not linear -- diamond is only slightly harder than corundum in absolute terms.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::mohs-hardness-scale-diamond-ten"
+  },
+  {
+    "external_key": "GS-B51-030",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "The atmospheric layer that contains the ozone layer and is characterized by temperature increasing with altitude is the:",
+    "choices": [
+      "Thermosphere",
+      "Stratosphere",
+      "Troposphere",
+      "Mesosphere"
+    ],
+    "correct_index": 1,
+    "explanation": "The stratosphere extends from about 12 to 50 km altitude and contains the ozone layer (around 15-35 km). Temperatures increase with altitude in the stratosphere because ozone absorbs ultraviolet radiation, converting it to heat. In contrast, the troposphere (where weather occurs) gets colder with increasing altitude. The mesosphere lies above the stratosphere and temperatures decrease with altitude there.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::stratosphere-ozone-temperature-inversion"
+  },
+  {
+    "external_key": "GS-B51-031",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "El Nino events are characterized by unusually warm sea surface temperatures in which ocean region?",
+    "choices": [
+      "Southern Indian Ocean",
+      "Arctic Ocean near Alaska",
+      "North Atlantic near Greenland",
+      "Central and eastern tropical Pacific Ocean"
+    ],
+    "correct_index": 3,
+    "explanation": "El Nino occurs when trade winds weaken, allowing warm water that is normally pushed westward to spread east across the tropical Pacific. This warming disrupts normal atmospheric circulation, causing droughts in Australia and flooding in parts of South America. The opposite phase, La Nina, brings cooler-than-normal sea surface temperatures to the same region.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::el-nino-tropical-pacific-warming"
+  },
+  {
+    "external_key": "GS-B51-032",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "The aurora borealis (northern lights) is produced when charged particles from the sun interact with Earth's:",
+    "choices": [
+      "Magnetosphere and upper atmosphere",
+      "Stratospheric ozone layer",
+      "Tropospheric jet stream",
+      "Ocean currents in the North Atlantic"
+    ],
+    "correct_index": 0,
+    "explanation": "The aurora borealis forms when solar wind particles (electrons and protons) are channeled by Earth's magnetosphere toward the polar regions, where they collide with nitrogen and oxygen atoms in the upper atmosphere (thermosphere), exciting those atoms into higher energy states and releasing light as they return to ground state. The ozone layer absorbs UV radiation but has nothing to do with aurora formation. Ocean currents and the jet stream are tropospheric phenomena unrelated to auroras.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::aurora-borealis-magnetosphere-solar-wind"
+  },
+  {
+    "external_key": "GS-B51-033",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Parallax is used by astronomers to measure stellar distances. The parallax angle of a star is measured by:",
+    "choices": [
+      "Counting the number of spectra absorption lines in starlight",
+      "Measuring the time it takes starlight to reach Earth",
+      "Observing the apparent shift in a star's position as Earth moves around the sun",
+      "Comparing the star's color to that of the sun"
+    ],
+    "correct_index": 2,
+    "explanation": "Stellar parallax is the apparent angular shift in a star's position relative to more distant background stars when observed from opposite sides of Earth's orbit (six months apart). A larger parallax angle indicates a closer star. The distance in parsecs equals 1 divided by the parallax angle in arcseconds. This method works well only for stars within a few thousand light-years; more distant stars show shifts too small to measure accurately.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::parallax-stellar-distance-earth-orbit"
+  },
+  {
+    "external_key": "GS-B51-034",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Light from a galaxy shows a redshift in its spectral lines. This indicates the galaxy is:",
+    "choices": [
+      "Moving away from Earth",
+      "Moving toward Earth at high speed",
+      "Hotter than average stars in our galaxy",
+      "Rotating faster than the Milky Way"
+    ],
+    "correct_index": 0,
+    "explanation": "Redshift occurs when a light source is moving away from the observer, stretching the wavelength of light toward the red end of the spectrum (the Doppler effect for light). Hubble's observation that nearly all distant galaxies are redshifted provided the key evidence for the expansion of the universe. A galaxy moving toward us would show a blueshift (compressed wavelengths). Rotational speed and stellar temperature are not indicated by an overall redshift of spectral lines.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::redshift-galaxy-moving-away-doppler"
+  },
+  {
+    "external_key": "GS-B51-035",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "The Kuiper Belt differs from the Oort Cloud primarily in that the Kuiper Belt:",
+    "choices": [
+      "Is located between Mars and Jupiter",
+      "Contains only gas giant planets, not icy bodies",
+      "Is spherically distributed and lies farther from the sun than the Oort Cloud",
+      "Is a flattened disk extending just beyond Neptune's orbit"
+    ],
+    "correct_index": 3,
+    "explanation": "The Kuiper Belt is a flattened, disk-shaped region of icy bodies and dwarf planets (including Pluto) extending roughly from 30 to 50 AU, just beyond Neptune's orbit. The Oort Cloud is a vast, roughly spherical shell of icy objects that extends much farther (roughly 2,000 to 100,000 AU). Short-period comets originate mainly from the Kuiper Belt, while long-period comets come from the Oort Cloud. The asteroid belt between Mars and Jupiter is a separate structure composed largely of rocky bodies.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::kuiper-belt-vs-oort-cloud-location"
+  },
+  {
+    "external_key": "GS-B51-036",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Karst topography forms in regions underlain by which type of rock?",
+    "choices": [
+      "Basalt",
+      "Limestone",
+      "Shale",
+      "Granite"
+    ],
+    "correct_index": 1,
+    "explanation": "Karst topography -- characterized by sinkholes, caves, disappearing streams, and springs -- develops where acidic groundwater dissolves soluble rock, most commonly limestone (calcium carbonate). Over time the dissolution creates underground caverns that can collapse to form sinkholes. Granite and basalt are igneous rocks that resist chemical dissolution. Shale is a fine-grained sedimentary rock that does not dissolve readily in water.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::karst-topography-limestone-dissolution"
+  },
+  {
+    "external_key": "GS-B51-037",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Mineral hardness can be tested in the field without instruments. Which field test best identifies a mineral with a Mohs hardness of approximately 5.5?",
+    "choices": [
+      "It cannot scratch glass but can scratch a copper coin",
+      "It can be scratched by glass and can scratch a steel knife",
+      "It can scratch glass but cannot be scratched by a copper coin (hardness ~3.5)",
+      "It can be scratched by a fingernail (hardness ~2.5)"
+    ],
+    "correct_index": 2,
+    "explanation": "A mineral of Mohs hardness ~5.5 will scratch glass (hardness ~5.5) and cannot itself be scratched by a copper coin (hardness ~3.5). Glass serves as a benchmark: a mineral that can scratch glass has a hardness of at least 5.5. A fingernail (hardness ~2.5) would not scratch a mineral at 5.5. Steel knives have hardness ~6.5, so they would scratch a mineral at 5.5 rather than being scratched by it.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::mohs-field-test-hardness-55-glass"
+  },
+  {
+    "external_key": "GS-B51-038",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Glacial till differs from alluvial (river) deposits primarily because glacial till:",
+    "choices": [
+      "Is unsorted, containing a mixture of grain sizes from boulders to clay",
+      "Is found only at high elevations near mountain peaks",
+      "Is always deposited in horizontal layers sorted by particle size",
+      "Contains only materials formed from volcanic rock"
+    ],
+    "correct_index": 0,
+    "explanation": "Glacial till is deposited directly from ice without the sorting action of flowing water, resulting in a chaotic mixture of particle sizes (boulders, gravel, sand, silt, and clay all intermixed). Alluvial deposits are laid down by rivers, which sort materials by size based on water velocity -- larger particles settle first, creating stratified, size-graded layers. Glacial till can be found at any elevation in formerly glaciated regions, including low plains far from mountains.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::glacial-till-vs-alluvial-sorting"
+  },
+  {
+    "external_key": "GS-B51-039",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "The magnetosphere deflects most solar wind, but some charged particles enter near the poles. What structure channels these particles inward?",
+    "choices": [
+      "The Van Allen radiation belts at the equator",
+      "The stratospheric ozone layer at high latitudes",
+      "Open magnetic field lines near the polar cusps",
+      "Ocean-atmosphere heat exchange at polar regions"
+    ],
+    "correct_index": 2,
+    "explanation": "Earth's magnetosphere has two funnel-shaped regions near the poles called polar cusps where magnetic field lines are open (they connect to the interplanetary magnetic field rather than looping back to Earth). Solar wind particles can flow along these open field lines down into the upper atmosphere, producing auroras. The Van Allen belts trap high-energy particles in toroidal zones around Earth's equatorial region, not at the poles. The ozone layer and ocean-atmosphere exchange do not channel charged particles.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::polar-cusps-magnetosphere-solar-particles"
+  },
+  {
+    "external_key": "GS-B51-040",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "Which property is most useful for identifying a mineral independent of sample size or surface condition?",
+    "choices": [
+      "Mass",
+      "Volume",
+      "Streak",
+      "Color"
+    ],
+    "correct_index": 2,
+    "explanation": "Streak -- the color of a mineral's powder when rubbed against an unglazed porcelain plate -- is a more reliable identifier than surface color because it remains consistent even when weathering or impurities alter the outer appearance. For example, pyrite (fool's gold) appears gold on its surface but leaves a black streak, distinguishing it from real gold which leaves a gold streak. Mass and volume are not intrinsic mineral properties; they vary with sample size.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::mineral-streak-identification-consistent"
+  },
+  {
+    "external_key": "GS-B51-041",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "A moraine is a landform deposited by glaciers. Which type of moraine is found at the farthest point a glacier has advanced?",
+    "choices": [
+      "Terminal moraine",
+      "Lateral moraine",
+      "Ground moraine",
+      "Medial moraine"
+    ],
+    "correct_index": 0,
+    "explanation": "A terminal (or end) moraine forms at the leading edge of a glacier where ice melts as fast as it advances, causing the glacier to stall and deposit accumulated sediment in a ridge. It marks the maximum extent of the glacier's advance. Lateral moraines form along the sides of a glacier. Medial moraines form in the center where two glaciers merge. Ground moraines are sheets of till left beneath a retreating glacier.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::terminal-moraine-glacial-maximum-extent"
+  },
+  {
+    "external_key": "GS-B51-042",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Stars are classified by their spectral type (OBAFGKM). Which spectral type has the hottest surface temperature?",
+    "choices": [
+      "K-type stars",
+      "O-type stars",
+      "M-type stars",
+      "G-type stars"
+    ],
+    "correct_index": 1,
+    "explanation": "O-type stars are the hottest, with surface temperatures above 30,000 K. They appear blue-white and are extremely luminous but rare. The sequence O, B, A, F, G, K, M runs from hottest to coolest. G-type stars like our sun have surface temperatures around 5,500 K. M-type stars (red dwarfs) are the coolest, around 2,400-3,700 K, and are by far the most common stars in the galaxy.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::spectral-type-o-star-hottest"
+  },
+  {
+    "external_key": "GS-B51-043",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "When light travels from air into water, it slows down and bends. This bending of light at a boundary between two media is called:",
+    "choices": [
+      "Refraction",
+      "Diffraction",
+      "Dispersion",
+      "Reflection"
+    ],
+    "correct_index": 0,
+    "explanation": "Refraction is the bending of a wave (including light) as it passes from one medium into another due to a change in speed. Snell's Law (n1 sin theta1 = n2 sin theta2) quantifies this bending. Reflection is the bouncing of light off a surface. Diffraction is the spreading of waves around obstacles or through openings. Dispersion is the separation of white light into colors, which is a consequence of refraction but not refraction itself.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::refraction-light-speed-change-medium"
+  },
+  {
+    "external_key": "GS-B51-044",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "The Doppler effect describes how the observed frequency of a wave changes when the source and observer move relative to each other. When an ambulance approaches you with its siren on, the pitch you hear is:",
+    "choices": [
+      "Zero until the ambulance reaches you",
+      "The same as the actual siren frequency",
+      "Lower than the actual siren frequency",
+      "Higher than the actual siren frequency"
+    ],
+    "correct_index": 3,
+    "explanation": "When a sound source approaches an observer, successive sound waves are compressed, shortening the wavelength and increasing the perceived frequency (higher pitch). As the ambulance passes and moves away, the waves are stretched, reducing the perceived frequency (lower pitch). The actual frequency of the siren does not change -- only the observer's perception changes due to relative motion.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::doppler-effect-approaching-higher-pitch"
+  },
+  {
+    "external_key": "GS-B51-045",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "The amount of heat required to raise the temperature of 1 gram of a substance by 1 degree Celsius is called its:",
+    "choices": [
+      "Thermal conductivity",
+      "Caloric density",
+      "Specific heat capacity",
+      "Latent heat"
+    ],
+    "correct_index": 2,
+    "explanation": "Specific heat capacity (often just called specific heat) is the quantity of heat energy needed to raise the temperature of one gram of a substance by one degree Celsius (or one Kelvin). Water has a very high specific heat (4.18 J/g*C), which moderates climate near large bodies of water. Latent heat is the energy absorbed or released during a phase change (melting or boiling) at constant temperature.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::specific-heat-capacity-definition"
+  },
+  {
+    "external_key": "GS-B51-046",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "A convex (converging) lens brings parallel light rays to a focus at the focal point. If an object is placed beyond the focal length, the image formed is:",
+    "choices": [
+      "Real, inverted, and can be larger or smaller depending on object distance",
+      "Always the same size as the object",
+      "Virtual, upright, and enlarged",
+      "Virtual, inverted, and reduced in size"
+    ],
+    "correct_index": 0,
+    "explanation": "When an object is placed beyond the focal length of a converging lens, the refracted rays converge on the opposite side of the lens, forming a real, inverted image. The image size depends on how far beyond the focal point the object is: between F and 2F the image is magnified, exactly at 2F the image is the same size, and beyond 2F the image is reduced. A virtual, upright, enlarged image only forms when the object is placed inside the focal length (as in a magnifying glass).",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::convex-lens-real-inverted-image-formation"
+  },
+  {
+    "external_key": "GS-B51-047",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "A simple pendulum of length L has a period T on Earth. If the length is quadrupled to 4L (without changing gravity), the new period is:",
+    "choices": [
+      "T/4",
+      "T/2",
+      "4T",
+      "2T"
+    ],
+    "correct_index": 3,
+    "explanation": "The period of a simple pendulum is T = 2*pi*sqrt(L/g). Since T is proportional to the square root of L, quadrupling L increases the period by a factor of sqrt(4) = 2, giving a new period of 2T. Quadrupling the period would require increasing L by a factor of 16. Halving or quartering the period would require decreasing L, not increasing it.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::pendulum-period-length-square-root"
+  },
+  {
+    "external_key": "GS-B51-048",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Sound intensity is measured in decibels (dB) on a logarithmic scale. If one sound is 10 dB louder than another, its intensity (power per area) is:",
+    "choices": [
+      "10 times greater",
+      "2 times greater",
+      "100 times greater",
+      "20 times greater"
+    ],
+    "correct_index": 0,
+    "explanation": "The decibel scale is logarithmic: each 10 dB increase corresponds to a 10-fold increase in sound intensity (power per unit area). A sound at 70 dB is 10 times more intense than a sound at 60 dB, even though it sounds roughly twice as loud to human ears. A 20 dB difference corresponds to 100 times the intensity (10 squared). This logarithmic relationship means a 3 dB increase roughly doubles intensity.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::decibel-scale-10db-tenfold-intensity"
+  },
+  {
+    "external_key": "GS-B51-049",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Latent heat of vaporization is the energy required to convert a liquid to a gas at constant temperature. When water at 100 degrees C boils, the added heat energy is used to:",
+    "choices": [
+      "Decrease the pressure above the liquid",
+      "Reduce the density of the water",
+      "Increase the kinetic energy and temperature of the liquid",
+      "Break the intermolecular attractions between water molecules"
+    ],
+    "correct_index": 3,
+    "explanation": "During a phase change like boiling, the temperature does not rise even as heat is added. Instead, the energy goes into breaking the intermolecular hydrogen bonds that hold liquid water molecules together, allowing them to escape into the gas phase. Once all the liquid has vaporized, additional heat increases the temperature of the steam. The latent heat is stored as potential energy in the separated molecules, not as kinetic energy.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::latent-heat-vaporization-intermolecular-bonds"
+  },
+  {
+    "external_key": "GS-B51-050",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "Snell's Law states n1 sin(theta1) = n2 sin(theta2). Light travels from glass (n = 1.5) into air (n = 1.0) at an angle of incidence of 30 degrees. The angle of refraction in air is:",
+    "choices": [
+      "Exactly 30 degrees because light enters air",
+      "90 degrees because total internal reflection occurs",
+      "Less than 30 degrees because light slows down in air",
+      "Greater than 30 degrees because light speeds up in air"
+    ],
+    "correct_index": 3,
+    "explanation": "Using Snell's Law: 1.5 x sin(30) = 1.0 x sin(theta2). Sin(30) = 0.5, so sin(theta2) = 0.75, giving theta2 = approximately 48.6 degrees, which is greater than 30 degrees. Light bends away from the normal when it enters a less optically dense medium (lower n), and the refracted angle is always larger than the incident angle in this direction. Total internal reflection would only occur at or above the critical angle (sin(theta_c) = n2/n1 = 1/1.5, giving theta_c = 41.8 degrees), which 30 degrees is below.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::snells-law-refraction-angle-calculation"
+  },
+  {
+    "external_key": "GS-B51-051",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "A spring-mass system oscillates with simple harmonic motion. If the mass is doubled while the spring constant stays the same, the period of oscillation will:",
+    "choices": [
+      "Double because period is directly proportional to mass",
+      "Increase by a factor of sqrt(2) because a heavier mass is harder to accelerate",
+      "Decrease by a factor of sqrt(2) because a heavier mass moves faster",
+      "Stay the same because period depends only on spring constant"
+    ],
+    "correct_index": 1,
+    "explanation": "The period of a spring-mass system is T = 2*pi*sqrt(m/k). Doubling the mass (m to 2m) changes the period to 2*pi*sqrt(2m/k) = sqrt(2) times the original period -- an increase by a factor of approximately 1.41. A heavier mass has more inertia, so the spring takes longer to complete each oscillation. The period does NOT double because mass appears under a square root, not as a simple multiplier.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::spring-mass-period-sqrt-mass-relation"
+  },
+  {
+    "external_key": "GS-B51-052",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "An electric field points from a positive charge outward. A positive test charge placed in that field will experience a force in which direction?",
+    "choices": [
+      "The force is zero because like charges repel equally in all directions",
+      "Perpendicular to the electric field at all times",
+      "Opposite to the electric field direction (toward the source charge)",
+      "In the same direction as the electric field"
+    ],
+    "correct_index": 3,
+    "explanation": "The electric force on a positive test charge is F = qE, directed in the same direction as the electric field vector E. Electric field lines point in the direction a positive charge would be pushed. A negative charge placed in the same field would feel a force opposite to the field direction. The force is not perpendicular to the field; that would describe circular motion in a magnetic field.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::electric-field-force-positive-charge-direction"
+  },
+  {
+    "external_key": "GS-B51-053",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "A material absorbs 500 joules of heat and its temperature rises by 5 degrees Celsius. If the mass is 100 grams, what is its specific heat capacity?",
+    "choices": [
+      "5.0 J/(g*C)",
+      "2.5 J/(g*C)",
+      "0.5 J/(g*C)",
+      "1.0 J/(g*C)"
+    ],
+    "correct_index": 3,
+    "explanation": "Specific heat capacity c = Q / (m x delta T) = 500 J / (100 g x 5 C) = 500 / 500 = 1.0 J/(g*C). This is close to the specific heat of aluminum (0.90 J/g*C) and much less than water (4.18 J/g*C). The value 0.5 would result from dividing only by mass without the temperature change. Multiplying rather than dividing m and delta T gives 5.0, which is a common arithmetic error.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::specific-heat-calculation-q-mdeltaT"
+  },
+  {
+    "external_key": "GS-B51-054",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "Electric potential (voltage) and electric field are related but distinct concepts. A positive charge released from rest in a uniform electric field will move:",
+    "choices": [
+      "Opposite to the field direction, since positive charges move against fields",
+      "From low potential to high potential, gaining potential energy",
+      "From high potential to low potential, losing potential energy and gaining kinetic energy",
+      "Perpendicular to the field lines toward neutral regions"
+    ],
+    "correct_index": 2,
+    "explanation": "A positive charge in an electric field experiences a force in the direction of the field, which points from high to low electric potential (just as a ball rolls downhill). As the charge moves from high to low potential, its electric potential energy decreases and its kinetic energy increases (conservation of energy). Negative charges move opposite to the field direction, from low to high potential. Charges do not move perpendicular to field lines -- that is the direction of constant potential (equipotential surfaces).",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::electric-potential-positive-charge-motion-high-to-low"
+  },
+  {
+    "external_key": "GS-B51-055",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Which best describes the relationship between the frequency and wavelength of light in a vacuum, given that the speed of light is constant?",
+    "choices": [
+      "All visible light frequencies have the same wavelength",
+      "Frequency and wavelength are independent of each other",
+      "Higher frequency light has a longer wavelength",
+      "Higher frequency light has a shorter wavelength"
+    ],
+    "correct_index": 3,
+    "explanation": "The wave equation c = f x lambda applies to light in a vacuum, where c (speed of light) is constant at approximately 3 x 10^8 m/s. Since c is fixed, frequency and wavelength must be inversely related: if frequency increases, wavelength must decrease proportionally. Violet light has a higher frequency and shorter wavelength than red light, even though both travel at the same speed in a vacuum.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::light-frequency-wavelength-inverse-vacuum"
+  },
+  {
+    "external_key": "GS-B51-056",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "A concave (diverging) lens always produces what type of image for a real object?",
+    "choices": [
+      "Real, inverted, and magnified",
+      "Virtual, inverted, and magnified",
+      "Real, upright, and reduced",
+      "Virtual, upright, and reduced"
+    ],
+    "correct_index": 3,
+    "explanation": "A concave (diverging) lens spreads light rays outward so that they never actually converge; the refracted rays only appear to diverge from a point on the same side as the object. This always produces a virtual, upright, and smaller image regardless of object position. A real, inverted image requires a converging (convex) lens with the object beyond the focal length. Diverging lenses are used in corrective lenses for nearsightedness.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::concave-lens-virtual-upright-reduced-image"
+  }
+]

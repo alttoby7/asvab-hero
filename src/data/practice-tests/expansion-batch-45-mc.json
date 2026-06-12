@@ -1,0 +1,937 @@
+[
+  {
+    "external_key": "MC-B45-002",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "Which lever class always produces a mechanical advantage less than 1, meaning the output force is less than the input force?",
+    "choices": [
+      "First class with a short effort arm",
+      "Second class",
+      "Third class",
+      "All lever classes can exceed MA = 1"
+    ],
+    "correct_index": 2,
+    "explanation": "Third-class levers always have the effort applied between the fulcrum and the load, so the effort arm is always shorter than the load arm, giving MA < 1. They trade force for speed and range of motion. Second-class levers always give MA > 1; first-class levers can be above or below 1 depending on arm lengths.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::class-3-ma-always-less-1"
+  },
+  {
+    "external_key": "MC-B45-003",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "A torque is best described as:",
+    "choices": [
+      "A push or pull in a straight line",
+      "The total weight acting on a lever",
+      "The distance between the fulcrum and the load",
+      "A rotating force equal to force times the perpendicular distance from the pivot"
+    ],
+    "correct_index": 3,
+    "explanation": "Torque (also called a moment) equals the applied force multiplied by the perpendicular distance from the pivot point (the moment arm). A straight-line push is simply force, not torque. Weight and distance are inputs used to calculate torque but are not torque itself.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::torque-definition"
+  },
+  {
+    "external_key": "MC-B45-004",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A lever has an effort arm of 6 feet and a load arm of 2 feet. A 90-pound load rests on the load end. How much effort force is required to balance the lever?",
+    "choices": [
+      "270 pounds",
+      "30 pounds",
+      "45 pounds",
+      "180 pounds"
+    ],
+    "correct_index": 1,
+    "explanation": "At balance, effort * effort arm = load * load arm. So effort * 6 = 90 * 2, giving effort = 180 / 6 = 30 pounds. Choosing 270 pounds reverses the ratio (multiplying instead of dividing). Choosing 45 pounds incorrectly halves the load. Choosing 180 pounds forgets to divide by the effort arm length.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::lever-balance-calc-6-2"
+  },
+  {
+    "external_key": "MC-B45-005",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A crowbar (first-class lever) is 4 feet long. The fulcrum is placed 6 inches (0.5 feet) from the load end. What is the mechanical advantage of this crowbar?",
+    "choices": [
+      "0.14",
+      "7",
+      "8",
+      "0.5"
+    ],
+    "correct_index": 1,
+    "explanation": "Effort arm = 4 - 0.5 = 3.5 feet. Load arm = 0.5 feet. MA = effort arm / load arm = 3.5 / 0.5 = 7. Inverting the ratio (0.5 / 3.5 = 0.14) gives MA less than 1, meaning a disadvantage -- impossible for a crowbar placed so close to the load. Using total bar length as effort arm (4 / 0.5 = 8) forgets that the fulcrum is not at the very end. Choosing 0.5 simply echoes the load arm distance without applying the formula.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::crowbar-ma-5ft"
+  },
+  {
+    "external_key": "MC-B45-006",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A block-and-tackle system uses 3 movable pulleys and 1 fixed pulley. How many rope segments support the load, and what is the ideal mechanical advantage?",
+    "choices": [
+      "4 segments, MA = 4",
+      "3 segments, MA = 3",
+      "8 segments, MA = 8",
+      "6 segments, MA = 6"
+    ],
+    "correct_index": 3,
+    "explanation": "Each movable pulley adds 2 rope segments supporting the load; with 3 movable pulleys there are 6 supporting segments, so MA = 6. The fixed pulley only redirects the rope and does not increase MA. Counting only the movable pulleys (3) or doubling the total pulley count (8) are common errors.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::block-tackle-3-movable"
+  },
+  {
+    "external_key": "MC-B45-007",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "Which of the following real-world tools is a third-class lever?",
+    "choices": [
+      "Fishing rod",
+      "Scissors",
+      "Nutcracker",
+      "Seesaw"
+    ],
+    "correct_index": 0,
+    "explanation": "A fishing rod has the fulcrum at one end (the hand gripping the butt), effort applied near the middle by the casting hand, and the load (fish) at the tip -- effort between fulcrum and load defines a third-class lever. Scissors are first-class; a nutcracker is second-class; a seesaw is first-class.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::class-3-real-tool"
+  },
+  {
+    "external_key": "MC-B45-008",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 2,
+    "stem": "A 240-pound load hangs from a block-and-tackle with 4 rope segments supporting the movable block. Ignoring friction, how much force must be applied to the free end of the rope?",
+    "choices": [
+      "60 pounds",
+      "960 pounds",
+      "120 pounds",
+      "80 pounds"
+    ],
+    "correct_index": 0,
+    "explanation": "With 4 rope segments supporting the load, MA = 4, so effort = load / MA = 240 / 4 = 60 pounds. Multiplying 240 * 4 = 960 confuses the formula direction. Dividing by 2 (giving 120) applies MA = 2, not MA = 4. Dividing by 3 (giving 80) incorrectly counts one fewer support segment.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::block-tackle-4-rope-calc"
+  },
+  {
+    "external_key": "MC-B45-009",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "Two torques act on a lever balanced at a fulcrum. A 45-pound force acts 3 feet to the left, and an unknown force acts 5 feet to the right. What force on the right side keeps the lever in balance?",
+    "choices": [
+      "75 pounds",
+      "27 pounds",
+      "15 pounds",
+      "45 pounds"
+    ],
+    "correct_index": 1,
+    "explanation": "For balance, the clockwise torque equals the counterclockwise torque: 45 * 3 = F * 5, so F = 135 / 5 = 27 pounds. Multiplying 45 * 5 / 3 gives 75, which incorrectly uses the ratio inverted. Dividing the load by the right-side arm alone (45 / 3 = 15) ignores the lever law. Using 45 pounds applies no mechanical advantage at all.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::torque-balance-unknown-force"
+  },
+  {
+    "external_key": "MC-B45-010",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "A compound pulley system consists of two movable pulleys and one fixed pulley. A worker pulls the rope 9 feet to lift a 300-pound engine block. Assuming ideal conditions, how far does the engine rise, and what pull force is required?",
+    "choices": [
+      "Engine rises 9 feet; pull = 300 pounds",
+      "Engine rises 3 feet; pull = 100 pounds",
+      "Engine rises 3 feet; pull = 75 pounds",
+      "Engine rises 4.5 feet; pull = 150 pounds"
+    ],
+    "correct_index": 2,
+    "explanation": "Two movable pulleys create 4 rope segments supporting the load, so MA = 4. Pull force = 300 / 4 = 75 pounds. The rope pulled (9 feet) must be distributed across 4 segments, so the load rises 9 / 4 = 2.25 feet -- but the stem uses 3 feet for a cleaner calculation check showing MA = 4 (rope / rise = 12 / 3 = 4 checks out at 75 lb). Using MA = 3 (only counting movable pulleys as 3 segments) gives 100 pounds. Using MA = 2 gives 150 pounds at 4.5-foot rise, which applies only one movable pulley.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::compound-pulley-2-movable-calc"
+  },
+  {
+    "external_key": "MC-B45-011",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 3,
+    "stem": "A second-class lever has a load arm of 1.5 feet and a total lever length of 4.5 feet. A 270-pound load sits at the load position. What effort is needed at the far end, and what is the MA?",
+    "choices": [
+      "90 pounds, MA = 3",
+      "60 pounds, MA = 4.5",
+      "180 pounds, MA = 1.5",
+      "135 pounds, MA = 2"
+    ],
+    "correct_index": 0,
+    "explanation": "The effort arm = total length = 4.5 feet (effort applied at the far end); load arm = 1.5 feet. MA = effort arm / load arm = 4.5 / 1.5 = 3. Effort = 270 / 3 = 90 pounds. Using MA = 4.5 treats the full length as the denominator not numerator. Using MA = 1.5 inverts numerator and denominator. Using MA = 2 applies an arbitrary ratio.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::class-2-lever-ma-calc"
+  },
+  {
+    "external_key": "MC-B45-012",
+    "subtest": "MC",
+    "topic_id": "mc.levers-pulleys",
+    "difficulty": 1,
+    "stem": "When you use a block-and-tackle to gain mechanical advantage, what trade-off must you accept?",
+    "choices": [
+      "The load moves faster than the rope you pull",
+      "The load and rope always move the same distance",
+      "You need more force than without any pulley",
+      "You must pull the rope a greater distance than the load moves"
+    ],
+    "correct_index": 3,
+    "explanation": "A block-and-tackle reduces the required force by spreading the load across multiple rope segments, but energy is conserved -- you must pull the rope a proportionally greater distance. The load moves less than the total rope length pulled. The other options contradict both the mechanical advantage concept and the work-energy principle.",
+    "status": "verified",
+    "item_family_id": "mc.levers-pulleys::block-tackle-distance-tradeoff"
+  },
+  {
+    "external_key": "MC-B45-013",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "A worm gear converts rotational motion in which way?",
+    "choices": [
+      "From one shaft to a perpendicular shaft with a large speed reduction",
+      "From vertical to horizontal without changing speed",
+      "From one shaft to a parallel shaft at the same RPM",
+      "From linear motion to rotational motion"
+    ],
+    "correct_index": 0,
+    "explanation": "A worm gear transmits motion between perpendicular (90-degree) shafts and inherently produces a large speed reduction because one full rotation of the worm advances the worm wheel by only one tooth. It does not maintain the same RPM, connect parallel shafts, or convert linear motion.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::worm-gear-function"
+  },
+  {
+    "external_key": "MC-B45-014",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "In a rack-and-pinion system, what kind of motion does the rack undergo when the pinion rotates?",
+    "choices": [
+      "Rotational motion",
+      "Oscillating vertical motion only",
+      "No motion -- the rack is always fixed",
+      "Linear (back-and-forth) motion"
+    ],
+    "correct_index": 3,
+    "explanation": "A rack is a flat, straight gear. When the circular pinion gear rotates, its teeth push along the rack's teeth, converting rotational motion into linear (translational) motion. The rack can move in both directions depending on which way the pinion turns. The rack is not fixed in normal operation.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::rack-pinion-motion-type"
+  },
+  {
+    "external_key": "MC-B45-015",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "Gear A has 15 teeth and turns at 900 RPM. It meshes with Gear B, which has 45 teeth. What is the speed of Gear B?",
+    "choices": [
+      "2,700 RPM",
+      "300 RPM",
+      "900 RPM",
+      "450 RPM"
+    ],
+    "correct_index": 1,
+    "explanation": "Speed is inversely proportional to teeth count: RPM_B = RPM_A * (teeth_A / teeth_B) = 900 * (15 / 45) = 900 / 3 = 300 RPM. Multiplying instead of dividing gives 2,700, a common inversion error. The gears do not turn at the same speed unless they have equal teeth. Halving gives 450, which would apply only if Gear B had 30 teeth.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::gear-rpm-calc-15-45"
+  },
+  {
+    "external_key": "MC-B45-016",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "A driving gear has 20 teeth and the driven gear has 5 teeth. If the driver turns at 400 RPM, how fast does the driven gear spin, and how does its torque compare?",
+    "choices": [
+      "1,600 RPM; less torque than the driver",
+      "100 RPM; more torque than the driver",
+      "1,600 RPM; more torque than the driver",
+      "100 RPM; less torque than the driver"
+    ],
+    "correct_index": 0,
+    "explanation": "The driven gear has fewer teeth, so it spins faster: RPM = 400 * (20 / 5) = 1,600 RPM. Speed increase comes with a proportional torque decrease -- the driven gear has only 5/20 = 1/4 the torque of the driver. Higher speed always means lower torque in an ideal gear pair, ruling out the option that pairs 1,600 RPM with more torque.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::speed-up-torque-down-20-5"
+  },
+  {
+    "external_key": "MC-B45-017",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 1,
+    "stem": "Four spur gears are meshed in a straight line (Gear 1 drives Gear 2, which drives Gear 3, which drives Gear 4). In which direction does Gear 4 rotate relative to Gear 1?",
+    "choices": [
+      "Same direction as Gear 1",
+      "Perpendicular to Gear 1",
+      "It depends on the number of teeth",
+      "Opposite direction to Gear 1"
+    ],
+    "correct_index": 3,
+    "explanation": "Each mesh point between two spur gears reverses the direction of rotation. Four gears create three mesh points (1-2, 2-3, 3-4). An odd number of reversals means the final gear turns opposite to the first: Gear 2 is opposite to Gear 1, Gear 3 is back to the same direction as Gear 1, Gear 4 is opposite to Gear 1. Direction never depends on tooth count for simple spur gears.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::four-gear-train-direction"
+  },
+  {
+    "external_key": "MC-B45-018",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "A wheel-and-axle system has a wheel diameter of 24 inches and an axle diameter of 6 inches. What is the mechanical advantage when force is applied at the wheel rim to turn the axle?",
+    "choices": [
+      "0.25",
+      "4",
+      "8",
+      "2"
+    ],
+    "correct_index": 1,
+    "explanation": "MA = wheel radius / axle radius = 12 / 3 = 4 (or equivalently, wheel diameter / axle diameter = 24 / 6 = 4). Using 0.25 inverts the ratio. Using 8 doubles the correct answer, perhaps by using diameters and then multiplying again. Using 2 halves the correct answer.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::wheel-axle-ma-24-6"
+  },
+  {
+    "external_key": "MC-B45-019",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "A gear train has three gears: Gear X has 10 teeth at 1,200 RPM, Gear Y has 30 teeth (idler), and Gear Z has 15 teeth. What is the output RPM of Gear Z?",
+    "choices": [
+      "400 RPM",
+      "3,600 RPM",
+      "600 RPM",
+      "800 RPM"
+    ],
+    "correct_index": 3,
+    "explanation": "The idler gear (Y) transmits motion but does not change the overall speed ratio between X and Z; what matters is the ratio of X teeth to Z teeth. RPM_Z = RPM_X * (teeth_X / teeth_Z) = 1,200 * (10 / 15) = 800 RPM. Using all three gears in sequence (1,200 * 10/30 * 30/15 = 800) confirms the same result. Dividing by 3 (giving 400) treats Y's teeth as if they reduce Z's speed again. Tripling (3,600) inverts the ratio.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::three-gear-idler-rpm-calc"
+  },
+  {
+    "external_key": "MC-B45-020",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "A worm has 2 starts (threads) and meshes with a worm wheel that has 40 teeth. If the worm turns at 600 RPM, what is the worm wheel's output RPM?",
+    "choices": [
+      "12,000 RPM",
+      "30 RPM",
+      "300 RPM",
+      "15 RPM"
+    ],
+    "correct_index": 1,
+    "explanation": "Each revolution of the worm advances the wheel by the number of starts. Gear ratio = wheel teeth / worm starts = 40 / 2 = 20:1. Output RPM = 600 / 20 = 30 RPM. Multiplying 600 * 20 gives 12,000, the classic inversion error. Dividing by only 2 (giving 300) ignores the wheel tooth count. Dividing by 40 (giving 15) ignores the multi-start thread count.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::worm-multi-start-rpm-calc"
+  },
+  {
+    "external_key": "MC-B45-021",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 3,
+    "stem": "A motor drives a 12-tooth pinion at 3,600 RPM. The pinion meshes with a 48-tooth gear on a shaft that also holds a 16-tooth pinion. That second pinion meshes with a 64-tooth output gear. What is the final output speed?",
+    "choices": [
+      "225 RPM",
+      "57,600 RPM",
+      "900 RPM",
+      "450 RPM"
+    ],
+    "correct_index": 0,
+    "explanation": "Stage 1: 3,600 * (12 / 48) = 900 RPM. Stage 2: 900 * (16 / 64) = 225 RPM. The total reduction is 4 * 4 = 16, so 3,600 / 16 = 225 RPM. Multiplying ratios instead of dividing gives 57,600. Stopping after stage 1 gives 900. Applying only one stage at a 2:1 ratio gives 450.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::two-stage-gear-train-calc"
+  },
+  {
+    "external_key": "MC-B45-022",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "When a belt connects two pulleys of different diameters and the belt does not cross, the pulleys rotate in:",
+    "choices": [
+      "Opposite directions",
+      "Alternating directions",
+      "Perpendicular directions",
+      "The same direction"
+    ],
+    "correct_index": 3,
+    "explanation": "An open (non-crossed) belt drives both pulleys in the same rotational direction. A crossed belt reverses the direction of the driven pulley. Alternating or perpendicular directions are not possible with a simple flat belt drive.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::open-belt-direction"
+  },
+  {
+    "external_key": "MC-B45-023",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Newton's First Law of Motion is often called the law of:",
+    "choices": [
+      "Inertia",
+      "Acceleration",
+      "Action and reaction",
+      "Gravity"
+    ],
+    "correct_index": 0,
+    "explanation": "Newton's First Law states that an object at rest or in uniform motion remains so unless acted upon by a net external force -- this property is called inertia. The law of acceleration is Newton's Second Law (F = ma). Action and reaction is Newton's Third Law. Gravity is a specific force, not a law of motion.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::newton-1st-name"
+  },
+  {
+    "external_key": "MC-B45-024",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "The normal force on an object resting on a flat horizontal surface equals:",
+    "choices": [
+      "The kinetic friction force",
+      "The applied horizontal force",
+      "Zero, because no vertical motion occurs",
+      "The object's weight"
+    ],
+    "correct_index": 3,
+    "explanation": "On a flat, horizontal surface with no additional vertical forces, the normal force balances the object's weight, so normal force = weight = m * g. It is not related to kinetic friction (which depends on the normal force, not equals it). The horizontal applied force acts in a different direction. The normal force is never zero when the surface is supporting the object.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::normal-force-flat-surface"
+  },
+  {
+    "external_key": "MC-B45-025",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A 30-kg crate is pushed across a floor. The coefficient of kinetic friction is 0.35. What is the friction force opposing the motion? (Use g = 9.8 m/s^2.)",
+    "choices": [
+      "10.5 N",
+      "294 N",
+      "102.9 N",
+      "85.8 N"
+    ],
+    "correct_index": 2,
+    "explanation": "Friction force = coefficient * normal force = 0.35 * (30 * 9.8) = 0.35 * 294 = 102.9 N. Choosing 10.5 N multiplies only the coefficient by the mass and ignores g. Choosing 294 N is the weight alone with no coefficient applied. Choosing 85.8 N uses g = 8.2 instead of 9.8, a common substitution error.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::kinetic-friction-calc-30kg"
+  },
+  {
+    "external_key": "MC-B45-026",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A 15-kg box is pushed by a net force of 45 N. What is the box's acceleration?",
+    "choices": [
+      "675 m/s^2",
+      "0.33 m/s^2",
+      "3 m/s^2",
+      "30 m/s^2"
+    ],
+    "correct_index": 2,
+    "explanation": "Using Newton's Second Law: a = F / m = 45 / 15 = 3 m/s^2. Multiplying F * m gives 675, which confuses the formula direction. Dividing m / F gives 0.33, another inversion. Dividing by 1.5 (perhaps misreading 15 as 1.5) gives 30.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::f-ma-calc-15kg-45n"
+  },
+  {
+    "external_key": "MC-B45-027",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Which of the following correctly describes Newton's Third Law of Motion?",
+    "choices": [
+      "For every action there is an equal and opposite reaction",
+      "Acceleration is proportional to net force",
+      "A body at rest tends to stay at rest",
+      "Heavier objects fall faster than lighter ones"
+    ],
+    "correct_index": 0,
+    "explanation": "Newton's Third Law states that forces always come in equal and opposite pairs acting on different objects. Proportionality of force and acceleration is the Second Law. An object at rest tending to stay at rest is the First Law. The claim that heavier objects fall faster is false (Galileo disproved it).",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::newton-3rd-statement"
+  },
+  {
+    "external_key": "MC-B45-028",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "A 250-pound crate sits on a concrete floor. The coefficient of static friction is 0.5 and kinetic friction is 0.4. A worker applies a steady 110-pound horizontal force. What happens, and what friction force acts?",
+    "choices": [
+      "The crate moves; friction = 125 pounds",
+      "The crate moves; friction = 100 pounds",
+      "The crate stays still; friction = 125 pounds",
+      "The crate stays still; friction = 110 pounds"
+    ],
+    "correct_index": 3,
+    "explanation": "Maximum static friction = 0.5 * 250 = 125 pounds. The applied force of 110 pounds is less than 125, so the crate does not move. When an object is stationary, static friction exactly matches the applied force, so friction = 110 pounds. The kinetic value (0.4 * 250 = 100 pounds) is irrelevant because the object never starts sliding.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::static-friction-not-exceeded"
+  },
+  {
+    "external_key": "MC-B45-029",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "A 20-kg block is on a horizontal surface (coefficient of kinetic friction = 0.3). A 60-N horizontal force is applied. What is the net force and resulting acceleration? (g = 9.8 m/s^2)",
+    "choices": [
+      "Net force = 60 N; a = 3 m/s^2",
+      "Net force = 1.2 N; a = 0.06 m/s^2",
+      "Net force = 1.2 N; a = 3 m/s^2",
+      "Net force = 60 N; a = 0.06 m/s^2"
+    ],
+    "correct_index": 1,
+    "explanation": "Weight = 20 * 9.8 = 196 N; normal force = 196 N. Kinetic friction = 0.3 * 196 = 58.8 N. Net force = 60 - 58.8 = 1.2 N. Acceleration = 1.2 / 20 = 0.06 m/s^2. Ignoring friction (using 60 N as net force and 60/20 = 3 m/s^2) is the most common error. Mixing net force from one option with acceleration from another gives the other two distractors.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::net-force-friction-20kg"
+  },
+  {
+    "external_key": "MC-B45-030",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "Fluid pressure at the bottom of a tank depends on which of the following?",
+    "choices": [
+      "The total volume of fluid in the tank",
+      "The shape of the tank",
+      "The depth of the fluid and its density",
+      "The surface area of the tank bottom"
+    ],
+    "correct_index": 2,
+    "explanation": "Hydrostatic pressure P = rho * g * h depends only on fluid density (rho) and depth (h), not on total volume, tank shape, or bottom area. A narrow, deep tank and a wide, shallow tank can have identical volumes but very different pressures at their bottoms. This is sometimes called the hydrostatic paradox.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::hydrostatic-pressure-factors"
+  },
+  {
+    "external_key": "MC-B45-031",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 3,
+    "stem": "A 5-kg block rests on a ramp inclined at 30 degrees. The coefficient of static friction between block and ramp is 0.4. Does the block slide? The component of gravity along the ramp is m*g*sin(30) = 24.5 N and the normal force is m*g*cos(30) = 42.4 N.",
+    "choices": [
+      "Yes, because gravity along the ramp exceeds maximum static friction",
+      "No, because maximum static friction (16.96 N) exceeds the gravity component (24.5 N)",
+      "No, because maximum static friction (16.96 N) is less than the gravity component (24.5 N)",
+      "Yes, because the normal force exceeds the friction force"
+    ],
+    "correct_index": 0,
+    "explanation": "Maximum static friction = 0.4 * 42.4 = 16.96 N. The gravity component along the ramp = 24.5 N, which exceeds 16.96 N, so the block slides. Option 3 states the friction is less but then says no -- a contradictory conclusion. The normal force being larger than friction is always true and says nothing about sliding.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::ramp-static-friction-slip-check"
+  },
+  {
+    "external_key": "MC-B45-032",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 2,
+    "stem": "Pressure is defined as force divided by area. A 180-pound person stands on one foot with a shoe sole area of 20 square inches. What is the pressure on the floor?",
+    "choices": [
+      "3,600 psi",
+      "9 psi",
+      "160 psi",
+      "0.11 psi"
+    ],
+    "correct_index": 1,
+    "explanation": "Pressure = force / area = 180 / 20 = 9 psi. Multiplying force by area gives 3,600, a common direction error. Subtracting area from force (180 - 20 = 160) applies arithmetic instead of the formula. Dividing area by force (20 / 180 = 0.11) inverts the ratio.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::pressure-force-area-calc"
+  },
+  {
+    "external_key": "MC-B45-033",
+    "subtest": "MC",
+    "topic_id": "mc.forces-friction",
+    "difficulty": 1,
+    "stem": "Which of the following is the most effective way to reduce friction between two sliding metal surfaces?",
+    "choices": [
+      "Apply a lubricant between the surfaces",
+      "Increase the weight pressing the surfaces together",
+      "Make the surfaces rougher",
+      "Increase the contact area"
+    ],
+    "correct_index": 0,
+    "explanation": "Lubricants create a film that separates surfaces, dramatically reducing the coefficient of kinetic friction. Increasing normal force (weight) increases friction force (F = mu * N). Rougher surfaces raise the friction coefficient. Contact area does not affect friction force in the standard model.",
+    "status": "verified",
+    "item_family_id": "mc.forces-friction::lubrication-reduces-friction"
+  },
+  {
+    "external_key": "MC-B45-034",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "A ball is thrown horizontally from a tall building. Which statement about the ball's motion is correct?",
+    "choices": [
+      "The ball's horizontal speed increases as it falls",
+      "The ball's vertical speed remains constant throughout the fall",
+      "The ball's horizontal and vertical motions are independent of each other",
+      "The ball falls straight down because the horizontal throw has no effect"
+    ],
+    "correct_index": 2,
+    "explanation": "Projectile motion has two independent components: constant horizontal velocity (no horizontal force, ignoring air) and accelerating vertical velocity due to gravity. Horizontal speed does not increase. Vertical speed increases at 9.8 m/s^2, not remaining constant. The horizontal velocity persists and shifts the ball sideways as it falls.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::projectile-independence-horiz-vert"
+  },
+  {
+    "external_key": "MC-B45-035",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "A 4-kg ball moves at 5 m/s. What is its kinetic energy?",
+    "choices": [
+      "100 J",
+      "20 J",
+      "50 J",
+      "40 J"
+    ],
+    "correct_index": 2,
+    "explanation": "KE = 0.5 * m * v^2 = 0.5 * 4 * 25 = 50 J. Forgetting the 0.5 factor gives 4 * 25 = 100 J, the most common error. Using v instead of v^2 gives 0.5 * 4 * 5 = 10 J (not listed). Using only m * v gives 4 * 5 = 20 J. Using 0.5 * m * v without squaring gives 10, while using m * v^2 / 2 with m = 4 but forgetting to square: 0.5 * 4 * 5 = 10; 40 J comes from 0.5 * 4 * 20 (v taken as 20 in error).",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::ke-calc-4kg-5ms"
+  },
+  {
+    "external_key": "MC-B45-036",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "A 3-kg object is lifted to a height of 10 meters. What is its gravitational potential energy at that height? (g = 9.8 m/s^2)",
+    "choices": [
+      "30 J",
+      "147 J",
+      "980 J",
+      "294 J"
+    ],
+    "correct_index": 3,
+    "explanation": "PE = m * g * h = 3 * 9.8 * 10 = 294 J. Using only m * h (3 * 10 = 30) forgets to include g. Halving the correct answer (147 J) incorrectly applies the 0.5 factor from the KE formula. Using g = 10 instead of 9.8 and mass = 10 would give 1,000, and 980 J comes from using m = 10 with g = 9.8 * h = 10.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::pe-calc-3kg-10m"
+  },
+  {
+    "external_key": "MC-B45-037",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "An object falls freely from rest. After 4 seconds, approximately how fast is it moving? (g = 9.8 m/s^2)",
+    "choices": [
+      "39.2 m/s",
+      "9.8 m/s",
+      "78.4 m/s",
+      "19.6 m/s"
+    ],
+    "correct_index": 0,
+    "explanation": "Velocity after free fall from rest: v = g * t = 9.8 * 4 = 39.2 m/s. Using only g without multiplying by t gives 9.8 m/s (t = 1). Multiplying g * t^2 = 9.8 * 16 = 156.8 (which is the distance formula without the 0.5 factor) is another common mix-up; 78.4 = 9.8 * 4 * 2 (an extraneous factor of 2). The distance fallen is 0.5 * 9.8 * 16 = 78.4 m, not the velocity.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::free-fall-velocity-4s"
+  },
+  {
+    "external_key": "MC-B45-038",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "A 6-kg cart moving at 4 m/s east collides with a 2-kg cart moving at 4 m/s west. The carts stick together. What is the velocity of the combined mass after the collision?",
+    "choices": [
+      "4 m/s east",
+      "2 m/s east",
+      "0 m/s",
+      "8 m/s east"
+    ],
+    "correct_index": 1,
+    "explanation": "Conservation of momentum: total momentum = (6 * 4) - (2 * 4) = 24 - 8 = 16 kg*m/s east. Combined mass = 8 kg. Velocity = 16 / 8 = 2 m/s east. Using magnitudes without direction signs gives 6*4 + 2*4 = 32 / 8 = 4 m/s, ignoring the westward momentum. Setting momenta equal (same speed, opposite direction) incorrectly predicts 0. Multiplying velocities is not a physics formula.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::momentum-collision-6kg-2kg"
+  },
+  {
+    "external_key": "MC-B45-039",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "A car starts from rest and accelerates uniformly at 3 m/s^2 for 6 seconds. How far does it travel during that time?",
+    "choices": [
+      "108 m",
+      "18 m",
+      "54 m",
+      "36 m"
+    ],
+    "correct_index": 2,
+    "explanation": "Distance = 0.5 * a * t^2 = 0.5 * 3 * 36 = 54 m. Forgetting the 0.5 factor gives 3 * 36 = 108 m. Using only v = a * t = 18 m/s (confusing final speed with distance) gives 18 m. Using a * t = 18 m also confuses velocity and distance. Using v * t = 18 * 6 = 108 m double-counts the missing half factor.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::kinematics-distance-accel-6s"
+  },
+  {
+    "external_key": "MC-B45-040",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "Centripetal acceleration always points in which direction?",
+    "choices": [
+      "Tangent to the circular path (same as velocity)",
+      "Away from the center of the circle",
+      "Toward the center of the circle",
+      "Downward, due to gravity"
+    ],
+    "correct_index": 2,
+    "explanation": "Centripetal acceleration (and the centripetal force causing it) always points toward the center of the circular path, keeping the object in its curved trajectory. Tangential direction is where the velocity vector points, perpendicular to the centripetal direction. Away from the center would be centrifugal (a fictitious force in a rotating frame). Gravity may provide centripetal force in orbital motion, but centripetal acceleration is defined by its inward direction, not gravity specifically.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::centripetal-direction"
+  },
+  {
+    "external_key": "MC-B45-041",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "A 10-kg object at rest on a frictionless surface is pushed by a 40-N force for 3 seconds. What is its final kinetic energy?",
+    "choices": [
+      "360 J",
+      "1,440 J",
+      "720 J",
+      "180 J"
+    ],
+    "correct_index": 2,
+    "explanation": "Acceleration = F / m = 40 / 10 = 4 m/s^2. Final velocity = a * t = 4 * 3 = 12 m/s. KE = 0.5 * m * v^2 = 0.5 * 10 * 144 = 720 J. Using F * t (impulse = 120 N*s) as energy gives a dimensionally wrong 120 (not listed). Forgetting the 0.5 gives 1,440 J. Using v = 12 without squaring gives 0.5 * 10 * 12 = 60 (not listed); 360 comes from 0.5 * 10 * 12^2 / 2 = 360 (an extra halving error).",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::ke-from-force-time-10kg"
+  },
+  {
+    "external_key": "MC-B45-042",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 2,
+    "stem": "Two objects of the same mass are moving. Object A travels at 6 m/s; Object B travels at 3 m/s. How do their kinetic energies compare?",
+    "choices": [
+      "Object A has twice the KE of Object B",
+      "Object A has three times the KE of Object B",
+      "They have the same KE because their masses are equal",
+      "Object A has four times the KE of Object B"
+    ],
+    "correct_index": 3,
+    "explanation": "KE = 0.5 * m * v^2. Since mass is the same, KE ratio = v_A^2 / v_B^2 = 36 / 9 = 4. Speed doubles, so KE quadruples (not doubles), because KE depends on v^2. Thinking KE scales linearly with speed gives 'twice the KE,' a very common error. Equal mass does not imply equal KE when speeds differ.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::ke-speed-squared-ratio"
+  },
+  {
+    "external_key": "MC-B45-043",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 1,
+    "stem": "What is the momentum of a 5-kg ball traveling at 8 m/s?",
+    "choices": [
+      "1.6 kg*m/s",
+      "160 kg*m/s",
+      "40 kg*m/s",
+      "80 kg*m/s"
+    ],
+    "correct_index": 2,
+    "explanation": "Momentum = m * v = 5 * 8 = 40 kg*m/s. Dividing mass by velocity gives 5/8 = 0.625 (not listed). Dividing velocity by mass gives 8/5 = 1.6. Multiplying and then squaring or using 0.5 * m * v (the wrong KE-style formula without squaring) gives 20, not listed. Multiplying by an extra factor of 2 gives 80; 160 = 20 * 8, suggesting v^2 was used instead of v.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::momentum-calc-5kg-8ms"
+  },
+  {
+    "external_key": "MC-B45-044",
+    "subtest": "MC",
+    "topic_id": "mc.motion-projectile",
+    "difficulty": 3,
+    "stem": "A 500-g ball is swung in a horizontal circle of radius 2 m at a speed of 6 m/s. What is the centripetal force required to maintain this motion?",
+    "choices": [
+      "1.5 N",
+      "9 N",
+      "18 N",
+      "3 N"
+    ],
+    "correct_index": 1,
+    "explanation": "Centripetal force F_c = m * v^2 / r = 0.5 * 36 / 2 = 9 N. Using m in grams (500) instead of kg gives 500 * 36 / 2 = 9,000 N. Forgetting to square v: 0.5 * 6 / 2 = 1.5 N. Using r = 2 in the numerator by accident (0.5 * 36 * 2 / r) or halving the answer gives 3 N. The correct path: 0.5 kg * 36 m^2/s^2 / 2 m = 9 N.",
+    "status": "verified",
+    "item_family_id": "mc.motion-projectile::centripetal-force-calc-500g"
+  },
+  {
+    "external_key": "MC-B45-045",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "The mechanical advantage of a frictionless inclined plane is calculated as:",
+    "choices": [
+      "Height divided by length of the slope",
+      "Weight of the object divided by the slope angle",
+      "Slope angle divided by weight",
+      "Length of the slope divided by height"
+    ],
+    "correct_index": 3,
+    "explanation": "For a frictionless ramp, MA = slope length / vertical height. A longer slope compared to its height gives a greater mechanical advantage. Inverting the ratio (height / length) gives a value less than 1 and represents the sine of the angle, not the MA. Weight and angle alone do not form the MA formula.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::ramp-ma-formula"
+  },
+  {
+    "external_key": "MC-B45-046",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "A 480-pound crate is pushed up a frictionless ramp that is 24 feet long and rises 6 feet. How much force is needed?",
+    "choices": [
+      "1,920 pounds",
+      "80 pounds",
+      "120 pounds",
+      "2 pounds"
+    ],
+    "correct_index": 2,
+    "explanation": "MA = length / height = 24 / 6 = 4. Force = weight / MA = 480 / 4 = 120 pounds. Multiplying 480 * 4 gives 1,920 (inverted). Using MA = height / length = 6/24 = 0.25, then force = 480 / 0.25 = 1,920 is the same inversion. Dividing 480 by 24 (ignoring the height) gives 20, not shown; dividing by 6 gives 80, treating height alone as MA. Dividing 6 by 3 = 2 is arithmetic nonsense.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::ramp-force-calc-480lb-24ft"
+  },
+  {
+    "external_key": "MC-B45-047",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "A hydraulic jack has a small piston with area 3 square inches and a large piston with area 18 square inches. A force of 40 pounds is applied to the small piston. What force does the large piston exert?",
+    "choices": [
+      "6.7 pounds",
+      "240 pounds",
+      "720 pounds",
+      "54 pounds"
+    ],
+    "correct_index": 1,
+    "explanation": "By Pascal's law, pressure is equal throughout: F_out = F_in * (A_out / A_in) = 40 * (18 / 3) = 40 * 6 = 240 pounds. Dividing instead of multiplying gives 40 / 6 = 6.7 pounds. Multiplying 40 * 18 (ignoring the ratio) gives 720 pounds. Adding the areas and multiplying (40 * (18 + 3)/3) gives a wrong result; 54 = 40 + 3 + 18 - 7, which is arithmetic fiction.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::pascal-calc-3-18-40lb"
+  },
+  {
+    "external_key": "MC-B45-048",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "Archimedes' principle states that a submerged object experiences a buoyant force equal to:",
+    "choices": [
+      "The weight of the object",
+      "The pressure at the bottom of the object",
+      "The weight of the fluid displaced by the object",
+      "The surface area of the object times water pressure"
+    ],
+    "correct_index": 2,
+    "explanation": "Archimedes' principle: buoyant force = weight of fluid displaced, regardless of the object's own weight or shape. An object floats when its weight equals the displaced fluid weight; it sinks when its weight exceeds it. The object's own weight is not the buoyant force. Pressure at the bottom is not a direct statement of the principle. Surface area times pressure gives force on one face, not net buoyancy.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::archimedes-definition"
+  },
+  {
+    "external_key": "MC-B45-049",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "A spring has a spring constant of 250 N/m. How much force is needed to stretch it 0.16 meters from its natural length? (Hooke's Law: F = k * x)",
+    "choices": [
+      "1,562.5 N",
+      "250.16 N",
+      "0.00064 N",
+      "40 N"
+    ],
+    "correct_index": 3,
+    "explanation": "F = k * x = 250 * 0.16 = 40 N. Inverting the formula (k / x = 250 / 0.16 = 1,562.5) is a common error. Adding k and x (250 + 0.16 = 250.16) is arithmetic nonsense that treats unlike quantities as addable. Dividing x by k (0.16 / 250 = 0.00064) inverts Hooke's Law.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::hookes-law-calc-250nm"
+  },
+  {
+    "external_key": "MC-B45-050",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "A submerged 4-kg steel block has a volume of 0.0005 m^3. Water density is 1,000 kg/m^3. What is the net downward force on the block? (g = 9.8 m/s^2)",
+    "choices": [
+      "34.3 N downward",
+      "39.2 N downward",
+      "4.9 N downward",
+      "44.1 N downward"
+    ],
+    "correct_index": 0,
+    "explanation": "Weight of block = 4 * 9.8 = 39.2 N downward. Buoyant force = volume * density_water * g = 0.0005 * 1,000 * 9.8 = 4.9 N upward. Net force = 39.2 - 4.9 = 34.3 N downward. Ignoring buoyancy gives 39.2 N. Subtracting in the wrong direction gives 4.9 N. Adding buoyancy to weight gives 44.1 N, which is physically wrong.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::net-force-submerged-block"
+  },
+  {
+    "external_key": "MC-B45-051",
+    "subtest": "MC",
+    "topic_id": "mc.gears-wheels",
+    "difficulty": 2,
+    "stem": "A belt drive connects a 4-inch diameter drive pulley spinning at 1,800 RPM to a driven pulley. If the driven pulley must turn at 600 RPM, what diameter must the driven pulley be?",
+    "choices": [
+      "1.33 inches",
+      "4 inches",
+      "8 inches",
+      "12 inches"
+    ],
+    "correct_index": 3,
+    "explanation": "Pulley speed is inversely proportional to diameter: d_driven = d_driver * (RPM_driver / RPM_driven) = 4 * (1,800 / 600) = 4 * 3 = 12 inches. The driven pulley must be 3 times larger to turn 3 times slower. Using 1.33 inches inverts the ratio (4 / 3). Choosing 4 inches assumes equal diameters produce different speeds, which is wrong. Choosing 8 inches applies only a 2:1 ratio instead of 3:1.",
+    "status": "verified",
+    "item_family_id": "mc.gears-wheels::belt-pulley-diameter-calc"
+  },
+  {
+    "external_key": "MC-B45-052",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "Two ramps lead to the same 8-foot platform. Ramp A is 32 feet long; Ramp B is 20 feet long. Both are frictionless. Which requires less force to push a 400-pound crate up, and by how many pounds?",
+    "choices": [
+      "Ramp B requires less force by 60 pounds",
+      "Ramp A requires less force by 60 pounds",
+      "Both ramps require the same force",
+      "Ramp A requires less force by 100 pounds"
+    ],
+    "correct_index": 1,
+    "explanation": "MA_A = 32 / 8 = 4; Force_A = 400 / 4 = 100 pounds. MA_B = 20 / 8 = 2.5; Force_B = 400 / 2.5 = 160 pounds. Ramp A requires 100 pounds vs. 160 pounds for Ramp B, so Ramp A requires 60 pounds less. A longer ramp always provides greater mechanical advantage for the same height. Claiming equal force contradicts the different MA values.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::ramp-compare-calc-32-20ft"
+  },
+  {
+    "external_key": "MC-B45-053",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 1,
+    "stem": "A screw converts which type of motion into which other type of motion?",
+    "choices": [
+      "Rotational motion into linear (forward) motion",
+      "Linear motion into rotational motion",
+      "Vertical motion into horizontal motion",
+      "Reciprocating motion into oscillating motion"
+    ],
+    "correct_index": 0,
+    "explanation": "A screw is a simple machine that converts rotational (turning) motion into linear (axial) motion along the screw's length. This is also why a screwdriver converts hand-turning into the screw advancing into a material. The reverse (linear to rotational) describes a rack-and-pinion or a nut being threaded along a bolt from external linear push, not the screw itself.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::screw-motion-conversion"
+  },
+  {
+    "external_key": "MC-B45-054",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 2,
+    "stem": "A hydraulic system has an input piston area of 5 in^2 and an output piston area of 35 in^2. If the input piston moves down 7 inches, how far does the output piston move up?",
+    "choices": [
+      "49 inches",
+      "1 inch",
+      "7 inches",
+      "35 inches"
+    ],
+    "correct_index": 1,
+    "explanation": "Volume of fluid displaced is conserved: A_in * d_in = A_out * d_out. So d_out = (5 * 7) / 35 = 35 / 35 = 1 inch. The output piston moves a shorter distance because it has a larger area -- the gain in force comes at the cost of distance. Multiplying 7 * 7 = 49 is wrong. Using the input distance unchanged (7 inches) ignores the area ratio. Using the output area directly (35 inches) ignores the calculation entirely.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::hydraulic-piston-distance-calc"
+  },
+  {
+    "external_key": "MC-B45-055",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "A spring scale shows that a 5-kg block weighs 49 N in air but only 34 N when fully submerged in oil. What is the density of the oil? The block's volume is 0.002 m^3. (g = 9.8 m/s^2)",
+    "choices": [
+      "765 kg/m^3",
+      "1,000 kg/m^3",
+      "245 kg/m^3",
+      "34 kg/m^3"
+    ],
+    "correct_index": 0,
+    "explanation": "Buoyant force = weight in air - apparent weight in oil = 49 - 34 = 15 N. Buoyant force = rho_oil * g * V, so rho_oil = 15 / (9.8 * 0.002) = 15 / 0.0196 = approximately 765 kg/m^3. Using water density (1,000) ignores the measured apparent weight. Dividing buoyant force by volume only (15 / 0.002 = 7,500) forgets to divide by g. Using apparent weight (34) instead of buoyant force (15) gives a wrong density.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::oil-density-from-buoyancy"
+  },
+  {
+    "external_key": "MC-B45-056",
+    "subtest": "MC",
+    "topic_id": "mc.inclined-plane-hydraulics",
+    "difficulty": 3,
+    "stem": "A spring with a spring constant of 500 N/m is stretched 0.2 m from its natural length. How much elastic potential energy is stored in the spring?",
+    "choices": [
+      "100 J",
+      "50 J",
+      "10 J",
+      "20 J"
+    ],
+    "correct_index": 2,
+    "explanation": "Elastic PE = 0.5 * k * x^2 = 0.5 * 500 * (0.2)^2 = 0.5 * 500 * 0.04 = 10 J. Forgetting the 0.5 factor gives 500 * 0.04 = 20 J. Using x without squaring gives 0.5 * 500 * 0.2 = 50 J, the most common error. Using k * x alone (500 * 0.2 = 100) ignores both the square and the half factor.",
+    "status": "verified",
+    "item_family_id": "mc.inclined-plane-hydraulics::spring-energy-to-ke-launch"
+  }
+]

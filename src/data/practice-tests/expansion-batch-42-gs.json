@@ -1,0 +1,954 @@
+[
+  {
+    "external_key": "GS-B42-001",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which type of cell division produces cells with half the normal number of chromosomes?",
+    "choices": [
+      "Meiosis",
+      "Mitosis",
+      "Binary fission",
+      "Budding"
+    ],
+    "correct_index": 0,
+    "explanation": "Meiosis is the specialized cell division that produces gametes (sperm and egg cells) with half the chromosome number (haploid). Mitosis produces two genetically identical diploid daughter cells for growth and repair. Binary fission is used by prokaryotes like bacteria. Budding is an asexual reproduction method used by yeast and some animals.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::meiosis-haploid-production"
+  },
+  {
+    "external_key": "GS-B42-002",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which part of the human digestive system is primarily responsible for absorbing nutrients into the bloodstream?",
+    "choices": [
+      "Stomach",
+      "Large intestine",
+      "Esophagus",
+      "Small intestine"
+    ],
+    "correct_index": 3,
+    "explanation": "The small intestine is the primary site of nutrient absorption; its inner lining is covered with villi and microvilli that dramatically increase surface area for absorbing digested food into the blood. The stomach mainly breaks down food mechanically and chemically with acid and enzymes. The large intestine absorbs water and forms solid waste. The esophagus is simply a muscular tube that moves food from the mouth to the stomach.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::small-intestine-nutrient-absorption"
+  },
+  {
+    "external_key": "GS-B42-003",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "What is the term for an organism's full set of genetic instructions contained in its DNA?",
+    "choices": [
+      "Proteome",
+      "Phenotype",
+      "Genome",
+      "Karyotype"
+    ],
+    "correct_index": 2,
+    "explanation": "The genome refers to the complete set of DNA, including all genes, in an organism. The proteome is the full set of proteins an organism can produce. The phenotype is the set of observable physical characteristics resulting from genes plus environment. A karyotype is a visual display of an organism's chromosomes arranged by size and shape, not the entire genetic instruction set.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::genome-definition"
+  },
+  {
+    "external_key": "GS-B42-004",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which kingdom includes multicellular organisms that obtain nutrients by decomposing dead organic matter externally?",
+    "choices": [
+      "Animalia",
+      "Plantae",
+      "Protista",
+      "Fungi"
+    ],
+    "correct_index": 3,
+    "explanation": "Fungi (mushrooms, molds, yeasts) are heterotrophic decomposers that secrete enzymes to break down organic matter externally and then absorb the nutrients, a process called absorptive heterotrophy. Animals are also heterotrophs but ingest food rather than absorbing it externally. Plants are autotrophs that make their own food via photosynthesis. Protists are a diverse kingdom that includes both autotrophic and heterotrophic unicellular organisms.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::fungi-decomposer-kingdom"
+  },
+  {
+    "external_key": "GS-B42-005",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which blood vessel carries oxygenated blood away from the heart to the body?",
+    "choices": [
+      "Aorta",
+      "Vein",
+      "Capillary",
+      "Pulmonary artery"
+    ],
+    "correct_index": 0,
+    "explanation": "The aorta is the largest artery in the body and carries oxygenated blood from the left ventricle of the heart to the rest of the body. Veins carry blood back toward the heart and are usually deoxygenated. The pulmonary artery carries deoxygenated blood from the right ventricle to the lungs. Capillaries are the tiny vessels where gas and nutrient exchange occurs between blood and tissues.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::aorta-oxygenated-blood"
+  },
+  {
+    "external_key": "GS-B42-006",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "A plant cell placed in a solution more concentrated than the cell's interior would most likely:",
+    "choices": [
+      "Swell and burst",
+      "Remain unchanged",
+      "Lose water and shrink away from its cell wall",
+      "Absorb solutes through the membrane"
+    ],
+    "correct_index": 2,
+    "explanation": "When a plant cell is placed in a hypertonic solution (higher solute concentration outside), water moves out of the cell by osmosis, causing the cell membrane to pull away from the rigid cell wall, a condition called plasmolysis. A cell placed in a hypotonic solution (lower solute concentration outside) would swell and become turgid. The cell membrane is selectively permeable to water but not freely permeable to most dissolved solutes, so solutes are not absorbed to equalize concentration.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::plasmolysis-hypertonic"
+  },
+  {
+    "external_key": "GS-B42-007",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "In a Punnett square cross between two carriers of a recessive disorder (Aa x Aa), what fraction of offspring are expected to be carriers but phenotypically unaffected?",
+    "choices": [
+      "1/4",
+      "3/4",
+      "1/2",
+      "All of them"
+    ],
+    "correct_index": 2,
+    "explanation": "A cross between two carriers (Aa x Aa) yields offspring in the ratio 1 AA : 2 Aa : 1 aa. The two Aa offspring represent 2 out of 4, or 1/2, of the expected offspring; they carry one recessive allele but are phenotypically unaffected. One quarter (1 AA) are unaffected non-carriers, and one quarter (1 aa) are affected with the disorder.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::carrier-ratio-punnett"
+  },
+  {
+    "external_key": "GS-B42-008",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "Which process transfers genetic information from DNA to messenger RNA inside the nucleus?",
+    "choices": [
+      "Translation",
+      "Replication",
+      "Transduction",
+      "Transcription"
+    ],
+    "correct_index": 3,
+    "explanation": "Transcription is the process by which RNA polymerase reads a DNA template strand and synthesizes a complementary strand of messenger RNA (mRNA) in the nucleus. Translation is the subsequent process where ribosomes read the mRNA and assemble a protein. DNA replication copies the entire DNA molecule before cell division. Transduction is a process by which bacteriophages transfer genetic material between bacteria, not a step in normal gene expression.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::transcription-dna-to-mrna"
+  },
+  {
+    "external_key": "GS-B42-009",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "Which relationship describes two species where one benefits and the other is neither helped nor harmed?",
+    "choices": [
+      "Mutualism",
+      "Commensalism",
+      "Parasitism",
+      "Competition"
+    ],
+    "correct_index": 1,
+    "explanation": "Commensalism is a symbiotic relationship in which one organism benefits and the other is unaffected, such as a remora fish that attaches to a shark and feeds on scraps without harming the shark. Mutualism benefits both species (e.g., bees and flowers). Parasitism benefits one species at the direct expense of the other. Competition occurs when two species vie for the same limited resource, which can negatively affect both.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::commensalism-symbiosis"
+  },
+  {
+    "external_key": "GS-B42-010",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "The smooth endoplasmic reticulum (SER) differs from the rough endoplasmic reticulum (RER) primarily because the SER:",
+    "choices": [
+      "Lacks ribosomes and is involved in lipid synthesis and detoxification",
+      "Contains ribosomes on its surface",
+      "Is involved in synthesizing proteins for export",
+      "Is found only in plant cells"
+    ],
+    "correct_index": 0,
+    "explanation": "The smooth ER lacks ribosomes on its membrane surface and is specialized for synthesizing lipids (including phospholipids and steroid hormones) and detoxifying drugs and poisons in liver cells. The rough ER has ribosomes embedded on its surface and is the primary site for synthesizing proteins destined for export or membrane insertion. Both types of ER are found in most eukaryotic cells, both animal and plant.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::smooth-er-lipid-function"
+  },
+  {
+    "external_key": "GS-B42-011",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "A mutation occurs in a somatic (body) cell but not in any germ (reproductive) cells. Which statement about this mutation is correct?",
+    "choices": [
+      "It will be passed to all of the organism's offspring",
+      "It affects only the individual organism and cannot be inherited by offspring",
+      "It will appear in half the offspring due to dominant inheritance",
+      "It will be incorporated into the organism's gametes through mitosis"
+    ],
+    "correct_index": 1,
+    "explanation": "Somatic mutations occur in non-reproductive body cells and affect only the individual in whom they arise; they are not transmitted to offspring because germ cells are unaffected. Only mutations in germ cells (sperm or eggs) can be inherited by the next generation. Mitosis replicates somatic cells but has no mechanism to move somatic mutations into gametes.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::somatic-mutation-non-heritable"
+  },
+  {
+    "external_key": "GS-B42-012",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "In the nitrogen cycle, which group of organisms converts atmospheric nitrogen (N2) into ammonia that plants can use?",
+    "choices": [
+      "Denitrifying bacteria",
+      "Decomposers such as fungi",
+      "Nitrogen-fixing bacteria such as Rhizobium",
+      "Nitrifying bacteria such as Nitrosomonas"
+    ],
+    "correct_index": 2,
+    "explanation": "Nitrogen-fixing bacteria, including Rhizobium species found in root nodules of legumes, use the enzyme nitrogenase to convert atmospheric N2 into ammonia (NH3), making nitrogen available to plants. Denitrifying bacteria do the opposite and convert nitrates back into N2 gas. Nitrifying bacteria convert ammonia into nitrites and nitrates but cannot fix atmospheric nitrogen. Decomposers break down organic matter and release ammonium but do not fix N2.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::nitrogen-fixation-rhizobium"
+  },
+  {
+    "external_key": "GS-B42-013",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "Which type of RNA carries amino acids to the ribosome during protein synthesis?",
+    "choices": [
+      "Messenger RNA (mRNA)",
+      "Transfer RNA (tRNA)",
+      "Ribosomal RNA (rRNA)",
+      "Small nuclear RNA (snRNA)"
+    ],
+    "correct_index": 1,
+    "explanation": "Transfer RNA (tRNA) has an anticodon loop that pairs with the mRNA codon and an amino acid attachment site at its 3' end; it physically delivers each amino acid to the ribosome in the correct sequence during translation. Messenger RNA carries the genetic code from the nucleus to the ribosome. Ribosomal RNA is a structural and catalytic component of the ribosome itself. Small nuclear RNA is involved in processing pre-mRNA (splicing) in the nucleus, not in amino acid delivery.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::trna-amino-acid-delivery"
+  },
+  {
+    "external_key": "GS-B42-014",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "Which ecological principle states that two species competing for the same limited resource cannot stably coexist in the same niche?",
+    "choices": [
+      "The trophic cascade principle",
+      "The competitive exclusion principle",
+      "Resource partitioning",
+      "Niche complementarity"
+    ],
+    "correct_index": 1,
+    "explanation": "The competitive exclusion principle (Gause's law) states that two species occupying the exact same ecological niche and competing for the same resources cannot coexist indefinitely; one will eventually outcompete and displace the other. Resource partitioning is the adaptation by which similar species reduce direct competition by using different portions of a resource. Trophic cascade describes how changes in one trophic level affect others through predator-prey relationships, not niche overlap.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::competitive-exclusion-principle"
+  },
+  {
+    "external_key": "GS-B42-015",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "Which subatomic particle determines the identity (atomic number) of an element?",
+    "choices": [
+      "Neutron",
+      "Electron",
+      "Positron",
+      "Proton"
+    ],
+    "correct_index": 3,
+    "explanation": "The atomic number of an element equals the number of protons in its nucleus, and this proton count uniquely identifies each element on the periodic table. Neutrons contribute to atomic mass and determine isotopes but do not change the element's identity. Electrons occupy orbitals around the nucleus and can be gained or lost (forming ions) without changing which element it is. A positron is an antimatter particle not found in normal atomic structure.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::proton-element-identity"
+  },
+  {
+    "external_key": "GS-B42-016",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "What type of combination can be separated by physical means and retains the properties of its individual components?",
+    "choices": [
+      "Compound",
+      "Element",
+      "Mixture",
+      "Alloy"
+    ],
+    "correct_index": 2,
+    "explanation": "A mixture is a combination of two or more substances that are physically combined but not chemically bonded; the components retain their individual properties and can be separated by physical means such as filtration, evaporation, or magnetism. A compound is a chemical combination of elements in fixed ratios, requiring a chemical reaction to separate. An element consists of only one type of atom. An alloy is a specific type of mixture (of metals) but is not the general term.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::mixture-separable-components"
+  },
+  {
+    "external_key": "GS-B42-017",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "On the periodic table, elements in the same row (period) share the same number of:",
+    "choices": [
+      "Valence electrons",
+      "Neutrons",
+      "Electron energy levels (shells)",
+      "Chemical properties"
+    ],
+    "correct_index": 2,
+    "explanation": "Elements in the same period (horizontal row) of the periodic table have the same number of principal electron energy levels (electron shells). For example, all elements in Period 2 (Li through Ne) have electrons in two energy levels. Elements in the same group (column) share the same number of valence electrons and similar chemical properties. Neutrons vary even among atoms of the same element (isotopes), so they do not define period membership.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::periodic-table-periods-shells"
+  },
+  {
+    "external_key": "GS-B42-018",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "Which type of chemical reaction involves a substance combining with oxygen to release energy as heat and light?",
+    "choices": [
+      "Combustion",
+      "Decomposition",
+      "Synthesis",
+      "Precipitation"
+    ],
+    "correct_index": 0,
+    "explanation": "Combustion is a rapid chemical reaction between a fuel and oxygen that releases energy as heat and light (burning). Decomposition reactions break a single compound into simpler substances. Synthesis reactions combine two or more reactants to form one product. Precipitation reactions involve two solutions forming an insoluble solid and do not require oxygen or produce flames.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::combustion-reaction-oxygen"
+  },
+  {
+    "external_key": "GS-B42-019",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "What is the term for the minimum energy required to start a chemical reaction?",
+    "choices": [
+      "Activation energy",
+      "Bond energy",
+      "Enthalpy",
+      "Kinetic energy"
+    ],
+    "correct_index": 0,
+    "explanation": "Activation energy is the minimum energy that reactant molecules must have to break existing bonds and begin forming products. Catalysts lower activation energy but do not change overall enthalpy. Bond energy is the energy needed to break a specific chemical bond in isolation. Enthalpy refers to the overall heat content of a system, and kinetic energy is the energy of motion; neither represents the energy barrier to initiate a reaction.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::activation-energy-reaction"
+  },
+  {
+    "external_key": "GS-B42-020",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "A solution contains 0.5 moles of salt dissolved in 1 liter of water. What is the molarity of this solution?",
+    "choices": [
+      "0.5 M",
+      "1.0 M",
+      "2.0 M",
+      "5.0 M"
+    ],
+    "correct_index": 0,
+    "explanation": "Molarity (M) is defined as moles of solute divided by liters of solution. Here, 0.5 mol / 1.0 L = 0.5 M. A 1.0 M solution would require 1.0 mol in 1 liter. The 2.0 M and 5.0 M options would require 2.0 or 5.0 moles in the same volume, far more than described.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::molarity-calculation"
+  },
+  {
+    "external_key": "GS-B42-021",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Which type of bond forms when two atoms share electrons unequally because one atom is more electronegative?",
+    "choices": [
+      "Nonpolar covalent bond",
+      "Ionic bond",
+      "Metallic bond",
+      "Polar covalent bond"
+    ],
+    "correct_index": 3,
+    "explanation": "A polar covalent bond forms when two atoms share electrons but one atom attracts the shared electrons more strongly due to a difference in electronegativity, creating partial positive and negative charges on the molecule (as in water, H2O). A nonpolar covalent bond involves equal sharing between atoms of similar electronegativity (as in O2). An ionic bond involves complete electron transfer, not sharing. A metallic bond is found among metal atoms where electrons form a shared 'sea.'",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::polar-covalent-bond-electronegativity"
+  },
+  {
+    "external_key": "GS-B42-022",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Which of the following best describes an endothermic reaction?",
+    "choices": [
+      "It absorbs energy from its surroundings, making them feel cooler",
+      "It releases more energy than it absorbs",
+      "It produces a precipitate as the main indicator",
+      "It requires no activation energy to proceed"
+    ],
+    "correct_index": 0,
+    "explanation": "An endothermic reaction absorbs thermal energy from the surroundings, so the reaction vessel or environment feels cooler during the reaction (e.g., dissolving ammonium nitrate in water creates a cold pack). Exothermic reactions release energy to the surroundings. All reactions require some activation energy. Producing a precipitate describes a precipitation reaction, which may be either endothermic or exothermic.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::endothermic-reaction-heat-absorption"
+  },
+  {
+    "external_key": "GS-B42-023",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Two atoms of the same element have different atomic masses. What accounts for this difference?",
+    "choices": [
+      "They have different numbers of protons",
+      "They have different numbers of electrons in their outer shells",
+      "They have different numbers of neutrons",
+      "One is ionized and carries a charge"
+    ],
+    "correct_index": 2,
+    "explanation": "Atoms of the same element always have the same number of protons (which defines the element) but can have different numbers of neutrons; these variants are called isotopes. The extra neutrons add to the atomic mass without changing the element's identity or chemical behavior. Different numbers of protons would make them different elements entirely. Differences in outer-shell electrons create ions that differ in charge, not in atomic mass.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::isotopes-different-mass-neutrons"
+  },
+  {
+    "external_key": "GS-B42-024",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "In a neutralization reaction, a strong acid reacts with a strong base. What are the products?",
+    "choices": [
+      "Two new acids",
+      "Water and a salt",
+      "An oxide and hydrogen gas",
+      "Carbon dioxide and water"
+    ],
+    "correct_index": 1,
+    "explanation": "When a strong acid (such as HCl) reacts with a strong base (such as NaOH), the hydrogen ions (H+) from the acid combine with the hydroxide ions (OH-) from the base to form water, while the remaining ions form a salt (e.g., NaCl). Carbon dioxide and water are products of combustion of organic compounds, not acid-base neutralization. An oxide and hydrogen gas are not typical neutralization products.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::neutralization-salt-water"
+  },
+  {
+    "external_key": "GS-B42-025",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "Which property of a catalyst explains why it is not consumed in a chemical reaction?",
+    "choices": [
+      "It increases the overall energy released by the reaction",
+      "It raises the activation energy so fewer reactant molecules are needed",
+      "It permanently changes the chemical identity of the reactants",
+      "It provides an alternative reaction pathway with lower activation energy and is regenerated"
+    ],
+    "correct_index": 3,
+    "explanation": "A catalyst works by providing an alternative reaction pathway that has a lower activation energy, allowing more reactant molecules to reach the transition state. Crucially, the catalyst participates in intermediate steps but is regenerated in its original form by the end of the reaction, so it is not consumed. Catalysts do not change the net energy released or absorbed (enthalpy) of the reaction, and they do not permanently alter reactant identity.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::catalyst-mechanism-regenerated"
+  },
+  {
+    "external_key": "GS-B42-026",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "The radioactive decay series of uranium-238 eventually ends with which stable element?",
+    "choices": [
+      "Lead",
+      "Radon",
+      "Radium",
+      "Thorium"
+    ],
+    "correct_index": 0,
+    "explanation": "Uranium-238 undergoes a long series of alpha and beta decay steps, eventually producing stable lead-206 as the final, non-radioactive end product. Radon, radium, and thorium are all intermediate products in the decay series; they are radioactive and will continue to decay further until lead-206 is reached.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::uranium-decay-series-lead"
+  },
+  {
+    "external_key": "GS-B42-027",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "Which statement correctly describes the difference between RNA and DNA?",
+    "choices": [
+      "RNA contains deoxyribose sugar; DNA contains ribose sugar",
+      "RNA is double-stranded; DNA is single-stranded",
+      "RNA contains the base uracil instead of thymine and uses ribose sugar",
+      "DNA uses adenine; RNA uses guanine in place of adenine"
+    ],
+    "correct_index": 2,
+    "explanation": "RNA (ribonucleic acid) differs from DNA in two key structural ways: it contains ribose sugar (with a 2'-OH group) instead of deoxyribose, and it uses the base uracil (U) instead of thymine (T). DNA is double-stranded under normal conditions, while most functional RNA molecules are single-stranded. Both RNA and DNA use adenine and guanine; the distinction is thymine (DNA only) versus uracil (RNA only).",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::rna-vs-dna-structure"
+  },
+  {
+    "external_key": "GS-B42-028",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "What is the name of the boundary between Earth's crust and the mantle?",
+    "choices": [
+      "The Gutenberg discontinuity",
+      "The Mohorovicic discontinuity (Moho)",
+      "The asthenosphere",
+      "The lithosphere base"
+    ],
+    "correct_index": 1,
+    "explanation": "The Mohorovicic discontinuity, commonly called the Moho, is the boundary between Earth's crust and the underlying mantle, identified by a sharp increase in seismic wave velocity. The Gutenberg discontinuity marks the boundary between the mantle and the outer core, much deeper in Earth. The asthenosphere is a layer within the upper mantle below the lithosphere, not the crust-mantle boundary itself.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::moho-crust-mantle-boundary"
+  },
+  {
+    "external_key": "GS-B42-029",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "Which force is primarily responsible for causing ocean tides?",
+    "choices": [
+      "The gravitational pull of the Moon and, to a lesser extent, the Sun",
+      "Earth's rotation speed",
+      "Wind patterns over the ocean surface",
+      "Differences in ocean water temperature"
+    ],
+    "correct_index": 0,
+    "explanation": "Ocean tides are primarily caused by the gravitational attraction of the Moon pulling on Earth's oceans; the Sun also exerts a tidal force but is less significant due to its much greater distance. Earth's rotation influences the timing of high and low tides but is not the cause of tidal bulges. Wind creates surface waves and currents, not the rhythmic rise and fall of tides. Temperature differences drive ocean circulation but not tidal patterns.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::tidal-force-moon-gravity"
+  },
+  {
+    "external_key": "GS-B42-030",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "Which type of rock forms when magma cools and solidifies on Earth's surface after erupting from a volcano?",
+    "choices": [
+      "Metamorphic rock",
+      "Sedimentary rock",
+      "Intrusive igneous rock",
+      "Extrusive igneous rock"
+    ],
+    "correct_index": 3,
+    "explanation": "Extrusive (or volcanic) igneous rock forms when lava cools and solidifies quickly above ground, producing fine-grained rocks like basalt and obsidian. Intrusive (or plutonic) igneous rock forms when magma cools slowly deep underground, producing coarse-grained rocks like granite. Metamorphic rock forms from existing rock altered by heat and pressure. Sedimentary rock forms from compacted and cemented sediment particles.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::extrusive-igneous-surface-cooling"
+  },
+  {
+    "external_key": "GS-B42-031",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "What type of celestial object is our Sun classified as?",
+    "choices": [
+      "Red giant",
+      "Yellow dwarf main-sequence star",
+      "White dwarf",
+      "Neutron star"
+    ],
+    "correct_index": 1,
+    "explanation": "The Sun is classified as a G-type main-sequence star, commonly called a yellow dwarf, currently fusing hydrogen into helium in its core. Red giants are stars that have expanded after exhausting their core hydrogen; the Sun will become one in about 5 billion years. White dwarfs are the remnant cores of stars after they shed their outer layers. Neutron stars are the dense remnants of massive stars that have exploded as supernovae.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::sun-classification-yellow-dwarf"
+  },
+  {
+    "external_key": "GS-B42-032",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Which weather phenomenon is a rapidly rotating column of air extending from a thunderstorm to the ground?",
+    "choices": [
+      "Hurricane",
+      "Tornado",
+      "Blizzard",
+      "Typhoon"
+    ],
+    "correct_index": 1,
+    "explanation": "A tornado is a violently rotating column of air that extends from a cumulonimbus (thunderstorm) cloud to Earth's surface. Hurricanes and typhoons are large tropical cyclone systems that form over warm ocean water; they are not columns extending from individual thunderstorms to the ground. A blizzard is a severe snowstorm with high winds and low visibility, not a rotating column of air.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::tornado-rotating-column"
+  },
+  {
+    "external_key": "GS-B42-033",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Oceanic trenches, the deepest parts of the ocean, form at which type of plate boundary?",
+    "choices": [
+      "Subduction (convergent) boundary",
+      "Divergent boundary",
+      "Transform boundary",
+      "Mid-ocean ridge"
+    ],
+    "correct_index": 0,
+    "explanation": "Oceanic trenches form at subduction zones, which are convergent plate boundaries where one oceanic plate dives beneath another plate, pulling the seafloor downward to create deep trenches such as the Mariana Trench. Divergent boundaries are where plates pull apart, creating mid-ocean ridges and new seafloor. Transform boundaries are where plates slide horizontally past each other, creating faults rather than trenches.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::oceanic-trench-subduction"
+  },
+  {
+    "external_key": "GS-B42-034",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "What primarily determines whether a star will end its life as a white dwarf or as a neutron star/black hole?",
+    "choices": [
+      "The star's distance from its parent galaxy",
+      "The temperature of the star's surface",
+      "The composition of any planetary bodies orbiting the star",
+      "The initial mass of the star"
+    ],
+    "correct_index": 3,
+    "explanation": "The mass of a star at birth is the primary factor determining its final fate. Stars with a mass similar to or less than about 8 solar masses end as white dwarfs after shedding their outer layers as planetary nebulae. More massive stars end in supernova explosions, leaving behind neutron stars (for moderate-mass stars) or black holes (for the most massive stars). Surface temperature is a consequence of mass and age, and orbiting planets have negligible influence on stellar evolution.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::stellar-mass-final-fate"
+  },
+  {
+    "external_key": "GS-B42-035",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Which layer of the atmosphere contains the jet stream, most weather patterns, and nearly all of the atmosphere's water vapor?",
+    "choices": [
+      "Stratosphere",
+      "Mesosphere",
+      "Troposphere",
+      "Thermosphere"
+    ],
+    "correct_index": 2,
+    "explanation": "The troposphere is the lowest layer of the atmosphere (surface to about 12 km) and contains nearly all of the atmosphere's water vapor, clouds, weather systems, and the jet stream. The stratosphere directly above contains the ozone layer and is very dry with no significant weather. The mesosphere is where most meteors burn up. The thermosphere is the outermost layer and contains the aurora.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::troposphere-weather-jetstream"
+  },
+  {
+    "external_key": "GS-B42-036",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Convection currents in Earth's mantle are the driving mechanism behind which geologic process?",
+    "choices": [
+      "Chemical weathering of surface rocks",
+      "The formation of sedimentary rock layers",
+      "The formation of the ozone layer in the stratosphere",
+      "The movement of tectonic plates"
+    ],
+    "correct_index": 3,
+    "explanation": "Convection currents in the semi-solid asthenosphere carry heat from deep in Earth toward the surface; this slow circulation drags the rigid tectonic plates above, driving their movement, the opening and closing of ocean basins, mountain building, and seismic activity. Chemical weathering is driven by water and gases at the surface. Sedimentary rock formation involves accumulation and lithification of eroded material. The ozone layer is formed by ultraviolet photochemistry in the stratosphere.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::mantle-convection-plate-movement"
+  },
+  {
+    "external_key": "GS-B42-037",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Which process would INCREASE the salinity of a body of seawater?",
+    "choices": [
+      "Heavy rainfall directly on the water surface",
+      "A large river emptying freshwater into the sea",
+      "Melting of sea ice",
+      "Evaporation of surface water"
+    ],
+    "correct_index": 3,
+    "explanation": "Evaporation removes pure water (H2O) from the surface while leaving dissolved salts behind, thereby increasing the concentration (salinity) of the remaining water. Heavy rainfall, river inflow, and melting sea ice all add freshwater to the ocean, diluting the salt concentration and decreasing salinity. Areas of high evaporation such as the subtropics and enclosed seas like the Red Sea have noticeably higher salinity.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::ocean-salinity-evaporation"
+  },
+  {
+    "external_key": "GS-B42-038",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "A geologist finds two rock units separated by an irregular eroded surface where millions of years of rock record are missing. This feature is called:",
+    "choices": [
+      "An unconformity",
+      "A fault",
+      "A syncline",
+      "A dike"
+    ],
+    "correct_index": 0,
+    "explanation": "An unconformity is a buried erosional surface that represents a gap in the rock record -- a period when sediment was not deposited or when existing rock was eroded away before new sediment was laid on top. A fault is a fracture in rock along which movement has occurred. A syncline is a downward-folding (bowl-shaped) arrangement of rock layers. A dike is an intrusive igneous body that cuts across existing rock layers.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::unconformity-gap-rock-record"
+  },
+  {
+    "external_key": "GS-B42-039",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "How does the Coriolis effect influence large-scale wind patterns in the Northern Hemisphere?",
+    "choices": [
+      "Solar heating causes winds to blow straight from the equator toward the poles",
+      "Earth's rotation deflects moving air to the right in the Northern Hemisphere",
+      "The Moon's gravity steers hurricanes westward",
+      "Pressure differences between cells drive straight-line winds"
+    ],
+    "correct_index": 1,
+    "explanation": "The Coriolis effect is caused by Earth's rotation, which deflects the path of moving air to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. This deflection curves large-scale wind systems (trade winds, westerlies) and drives the counterclockwise rotation of low-pressure systems in the Northern Hemisphere. It is not caused by the Moon's gravity or by simple pressure differences alone, which would produce straight-line flow without Earth's rotation.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::coriolis-effect-wind-deflection"
+  },
+  {
+    "external_key": "GS-B42-040",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "Which type of seismic wave can travel through both solid rock and liquid and is detected first at seismograph stations after an earthquake?",
+    "choices": [
+      "Surface waves (Rayleigh waves)",
+      "Secondary (S) waves",
+      "Love waves",
+      "Primary (P) waves"
+    ],
+    "correct_index": 3,
+    "explanation": "Primary (P) waves are compressional waves that travel through solids, liquids, and gases, and they move faster than any other seismic wave, arriving first at seismographs. Secondary (S) waves are shear waves that travel only through solids and arrive after P waves; their absence through the outer core helped scientists determine it is liquid. Surface waves (Rayleigh and Love waves) travel along Earth's surface, arrive last, and cause most earthquake damage.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::p-waves-seismic-fastest"
+  },
+  {
+    "external_key": "GS-B42-041",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Which type of cloud is characterized by a flat, dark, layered sheet that typically produces continuous rain or drizzle over a wide area?",
+    "choices": [
+      "Nimbostratus",
+      "Cirrus",
+      "Cumulus",
+      "Cumulonimbus"
+    ],
+    "correct_index": 0,
+    "explanation": "Nimbostratus clouds are thick, dark, layered clouds that cover the sky and produce widespread, steady precipitation (rain, snow, or drizzle) over large areas. Cirrus clouds are thin, wispy, high-altitude clouds made of ice crystals that rarely produce precipitation. Cumulus clouds are puffy, fair-weather clouds. Cumulonimbus clouds are the towering thunderstorm clouds associated with heavy rain, lightning, and hail -- not the steady, widespread drizzle of nimbostratus.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::nimbostratus-cloud-rain"
+  },
+  {
+    "external_key": "GS-B42-042",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "An object moving at constant velocity has a net force acting on it of:",
+    "choices": [
+      "Zero",
+      "Equal to its weight",
+      "Equal to its mass times gravity",
+      "Greater than zero in the direction of motion"
+    ],
+    "correct_index": 0,
+    "explanation": "Newton's First Law states that an object moving at constant velocity (constant speed in a constant direction) has no net (unbalanced) force acting on it; the forces are balanced and sum to zero. A net force would cause acceleration (a change in speed or direction). Weight (mg) acts downward, but if the object moves horizontally at constant speed, other forces balance gravity so the net force is still zero.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::constant-velocity-zero-net-force"
+  },
+  {
+    "external_key": "GS-B42-043",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "Which simple machine changes the direction of a force by using a rope over a grooved wheel?",
+    "choices": [
+      "Lever",
+      "Inclined plane",
+      "Wedge",
+      "Pulley"
+    ],
+    "correct_index": 3,
+    "explanation": "A pulley is a simple machine consisting of a wheel with a grooved rim over which a rope or cable runs; it can change the direction of a force (fixed pulley) or multiply the force (movable pulley). A lever amplifies force by rotating about a fulcrum. An inclined plane reduces the force needed to raise an object by spreading the work over a longer distance. A wedge is a double inclined plane used to split or fasten objects.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::pulley-direction-force"
+  },
+  {
+    "external_key": "GS-B42-044",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "What is the SI unit of electrical resistance?",
+    "choices": [
+      "Volt",
+      "Ampere",
+      "Watt",
+      "Ohm"
+    ],
+    "correct_index": 3,
+    "explanation": "The ohm is the SI unit of electrical resistance, named after physicist Georg Simon Ohm. Resistance measures how much a material opposes the flow of electric current. The volt is the unit of electric potential (voltage). The ampere is the unit of electric current. The watt is the unit of power (energy per unit time).",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::ohm-resistance-unit"
+  },
+  {
+    "external_key": "GS-B42-045",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "A ball is thrown horizontally from a cliff and another ball is dropped from the same height at the same instant. Ignoring air resistance, which ball hits the ground first?",
+    "choices": [
+      "The thrown ball, because it has greater speed",
+      "The dropped ball, because it travels a shorter horizontal distance",
+      "The result depends on the mass of the balls",
+      "They hit the ground at the same time"
+    ],
+    "correct_index": 3,
+    "explanation": "Both balls experience the same gravitational acceleration downward (9.8 m/s2). The horizontal velocity of the thrown ball has no effect on its vertical free-fall motion because horizontal and vertical motions are independent. Both balls fall through the same vertical height in the same time and hit the ground simultaneously. Mass does not affect the rate of free fall in the absence of air resistance.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::projectile-vertical-time-same"
+  },
+  {
+    "external_key": "GS-B42-046",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "A car traveling at 20 m/s brakes to a complete stop in 4 seconds. What is the car's acceleration during braking?",
+    "choices": [
+      "5 m/s2 forward",
+      "-80 m/s2 (deceleration)",
+      "-5 m/s2 (deceleration)",
+      "80 m/s2 forward"
+    ],
+    "correct_index": 2,
+    "explanation": "Acceleration = change in velocity / time = (0 - 20 m/s) / 4 s = -5 m/s2. The negative sign indicates deceleration (velocity is decreasing). Choosing -80 m/s2 would result from dividing velocity by distance incorrectly instead of by time. Positive values indicate forward (speeding-up) acceleration, which is opposite to what braking produces.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::deceleration-braking-calculation"
+  },
+  {
+    "external_key": "GS-B42-047",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "In a parallel circuit with two resistors, what happens to the total current drawn from the source if one branch is disconnected?",
+    "choices": [
+      "Total current remains the same because the source voltage is unchanged",
+      "Total current decreases because there are fewer paths for current to flow",
+      "Total current increases because the remaining resistor handles all the load",
+      "Total current drops to zero because the circuit is broken"
+    ],
+    "correct_index": 1,
+    "explanation": "In a parallel circuit, each branch provides an independent path for current. Removing one branch increases the total resistance (fewer parallel paths equals higher equivalent resistance), so by Ohm's Law (I = V/R), the total current drawn from the source decreases. The remaining branch continues to operate at the same voltage, but the total source current is reduced. The circuit is not broken; the remaining branch still completes a current path.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::parallel-circuit-current-branch-removed"
+  },
+  {
+    "external_key": "GS-B42-048",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "A 5 kg object is lifted 3 meters and held stationary. How much gravitational potential energy has it gained? (Use g = 10 m/s2)",
+    "choices": [
+      "15 J",
+      "150 J",
+      "50 J",
+      "1.5 J"
+    ],
+    "correct_index": 1,
+    "explanation": "Gravitational potential energy = mass x g x height = 5 kg x 10 m/s2 x 3 m = 150 J. Choosing 15 J results from multiplying mass by height only (ignoring g). Choosing 50 J results from multiplying mass by g only (ignoring height). The 1.5 J result could come from dividing values rather than multiplying all three together.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::gravitational-pe-calculation"
+  },
+  {
+    "external_key": "GS-B42-049",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Which property of a wave describes the number of complete wave cycles that pass a fixed point per second?",
+    "choices": [
+      "Frequency",
+      "Wavelength",
+      "Amplitude",
+      "Wave speed"
+    ],
+    "correct_index": 0,
+    "explanation": "Frequency is the number of complete wave cycles (oscillations) passing a given point per second, measured in hertz (Hz). Wavelength is the distance between two consecutive identical points on a wave (e.g., crest to crest). Amplitude is the maximum displacement of the wave from its rest position and is related to the wave's energy. Wave speed is the rate at which the wave pattern travels through the medium, related to frequency and wavelength by v = f x wavelength.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::frequency-cycles-per-second"
+  },
+  {
+    "external_key": "GS-B42-050",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "A 10 kg box rests on a frictionless surface. A horizontal force of 30 N is applied for 3 seconds starting from rest. What is the box's final speed?",
+    "choices": [
+      "1 m/s",
+      "3 m/s",
+      "9 m/s",
+      "90 m/s"
+    ],
+    "correct_index": 2,
+    "explanation": "Using Newton's Second Law: acceleration a = F/m = 30 N / 10 kg = 3 m/s2. Starting from rest, final speed v = a x t = 3 m/s2 x 3 s = 9 m/s. Choosing 3 m/s confuses the acceleration (3 m/s2) with the final speed. Choosing 1 m/s reverses the F/m ratio. Choosing 90 m/s results from using 30 N x 3 s directly without first dividing by mass.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::force-mass-acceleration-speed"
+  },
+  {
+    "external_key": "GS-B42-051",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "A 4 kg cart moving at 3 m/s collides with a stationary 2 kg cart and they stick together. What is their combined speed after the collision?",
+    "choices": [
+      "1 m/s",
+      "3 m/s",
+      "2 m/s",
+      "6 m/s"
+    ],
+    "correct_index": 2,
+    "explanation": "By conservation of momentum: total momentum before = (4 kg x 3 m/s) + (2 kg x 0) = 12 kg*m/s. After the perfectly inelastic collision the combined mass is 6 kg, so final speed = 12 / 6 = 2 m/s. Choosing 3 m/s ignores the added mass and assumes speed is unchanged. Choosing 1 m/s results from dividing the speed by the total number of objects rather than by mass. Choosing 6 m/s comes from adding the masses together and equating that to the speed.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::momentum-conservation-collision"
+  },
+  {
+    "external_key": "GS-B42-052",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "Which statement correctly describes the relationship between the wavelength and frequency of electromagnetic waves traveling through a vacuum?",
+    "choices": [
+      "Wavelength and frequency are directly proportional; as frequency increases, wavelength increases",
+      "Wavelength and frequency are inversely proportional; as frequency increases, wavelength decreases",
+      "Wavelength and frequency are independent; changing one has no effect on the other",
+      "Wavelength and frequency are numerically equal for all electromagnetic waves in a vacuum"
+    ],
+    "correct_index": 1,
+    "explanation": "All electromagnetic waves travel at the same speed in a vacuum (c = 3 x 108 m/s). Because c = frequency x wavelength, frequency and wavelength are inversely proportional; as frequency increases, wavelength must decrease proportionally to maintain constant wave speed. Radio waves have low frequency and long wavelength; gamma rays have extremely high frequency and very short wavelength. They are not independent, and they are not numerically equal.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::em-wave-frequency-wavelength-inverse"
+  },
+  {
+    "external_key": "GS-B42-053",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "A machine with a mechanical advantage of 4 is used to lift a 200 N load. How much input force is required, ignoring friction?",
+    "choices": [
+      "800 N",
+      "50 N",
+      "200 N",
+      "25 N"
+    ],
+    "correct_index": 1,
+    "explanation": "Mechanical advantage (MA) = output force / input force. Rearranging: input force = output force / MA = 200 N / 4 = 50 N. Choosing 800 N results from multiplying rather than dividing (200 x 4). Choosing 200 N ignores the mechanical advantage entirely. Choosing 25 N would result from dividing by 8, not 4.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::mechanical-advantage-input-force"
+  },
+  {
+    "external_key": "GS-B42-054",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "When a longitudinal (compression) wave travels through air, what do the air molecules actually do?",
+    "choices": [
+      "They move permanently in the direction of wave travel",
+      "They move perpendicular to the direction of wave travel",
+      "They oscillate back and forth parallel to the direction of wave travel",
+      "They are carried as a group from the source to the receiver"
+    ],
+    "correct_index": 2,
+    "explanation": "In a longitudinal wave such as sound, energy is transferred through the medium by compressions and rarefactions. The air molecules do not travel with the wave; they oscillate (vibrate) back and forth in the same direction as wave propagation but return to their original positions. Transverse waves (such as light or waves on a string) involve particle motion perpendicular to the wave direction. Waves transfer energy, not matter.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::longitudinal-wave-particle-motion"
+  },
+  {
+    "external_key": "GS-B42-055",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Which of the following is an example of work being done in the physics sense?",
+    "choices": [
+      "A student holds a heavy textbook stationary at arm's length",
+      "A wall supports a building without moving",
+      "A magnet holds a paper clip without any motion",
+      "A person pushes a cart 5 meters across a floor"
+    ],
+    "correct_index": 3,
+    "explanation": "In physics, work is defined as force applied in the direction of displacement multiplied by the distance moved (W = F x d). Pushing a cart across the floor applies a force that causes displacement, so work is done. Holding a textbook stationary applies force but there is zero displacement, so zero work is done. A stationary wall exerts force but does not move. A magnet holding a stationary paper clip also involves no displacement, hence no work.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::work-definition-displacement-required"
+  },
+  {
+    "external_key": "GS-B42-056",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "Which term describes a pure substance made of two or more different elements chemically bonded together in fixed ratios?",
+    "choices": [
+      "Compound",
+      "Element",
+      "Mixture",
+      "Solution"
+    ],
+    "correct_index": 0,
+    "explanation": "A compound is a pure substance made of two or more different elements that are chemically bonded together in a fixed ratio by mass (e.g., water, H2O, is always two hydrogen atoms for every one oxygen atom). An element consists of only one type of atom and cannot be broken down into simpler substances by chemical means. A mixture is a physical combination of substances that are not chemically bonded and can be separated by physical means. A solution is a type of homogeneous mixture, not a chemically bonded pure substance.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::compound-fixed-ratio-definition"
+  }
+]

@@ -1,0 +1,920 @@
+[
+  {
+    "external_key": "EI-B61-001",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "A Wheatstone bridge is balanced when which condition is met?",
+    "choices": [
+      "The total supply voltage equals the sum of all four resistor values",
+      "The ratio of the two resistors on the left branch equals the ratio of the two resistors on the right branch",
+      "All four resistors have the same individual resistance value",
+      "The galvanometer reads the full supply voltage"
+    ],
+    "correct_index": 1,
+    "explanation": "A Wheatstone bridge is balanced when R1/R2 = R3/R4, meaning the voltage ratios of both divider branches are equal and no current flows through the galvanometer. The supply voltage value and individual resistor magnitudes do not need to match, only the ratios. All four equal is a special case of the balance condition but not the general rule. A balanced galvanometer reads zero, not the full supply voltage.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::wheatstone-bridge-balance-condition"
+  },
+  {
+    "external_key": "EI-B61-002",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "In a Wheatstone bridge with R1 = 100 ohms, R2 = 200 ohms, and R3 = 150 ohms, what value of R4 balances the bridge?",
+    "choices": [
+      "300 ohms",
+      "75 ohms",
+      "450 ohms",
+      "250 ohms"
+    ],
+    "correct_index": 0,
+    "explanation": "Balance requires R1/R2 = R3/R4, so R4 = R3 * R2 / R1 = 150 * 200 / 100 = 300 ohms. 75 ohms results from R1 * R3 / R2 = 100 * 150 / 200, inverting the correct ratio. 450 ohms adds R1 + R2 + R3 which has no relevance to bridge balance. 250 ohms averages two of the resistors, which is also invalid.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::wheatstone-bridge-solve-R4"
+  },
+  {
+    "external_key": "EI-B61-003",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "The Thevenin equivalent of a circuit seen from two terminals consists of:",
+    "choices": [
+      "A single current source in series with a Thevenin resistance",
+      "A single voltage source in series with a resistance representing the circuit's impedance as seen from those terminals",
+      "Two voltage sources in parallel with the total circuit resistance",
+      "A short circuit with the Norton current flowing through it"
+    ],
+    "correct_index": 1,
+    "explanation": "Thevenin's theorem replaces any linear network with one ideal voltage source (V_th = open-circuit voltage at the terminals) in series with one resistance (R_th = resistance seen looking back into the network with independent sources zeroed). A current source in series with a resistance is the Norton equivalent, not Thevenin. Two parallel voltage sources describe an invalid configuration. A short circuit with Norton current is Norton form, not Thevenin.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::thevenin-equivalent-definition"
+  },
+  {
+    "external_key": "EI-B61-004",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "A voltage divider has R1 = 1000 ohms (top) and R2 = 1000 ohms (bottom) across a 10 V supply. A 1000 ohm load is connected across R2. What is the loaded output voltage?",
+    "choices": [
+      "5 V",
+      "10 V",
+      "2 V",
+      "3.33 V"
+    ],
+    "correct_index": 3,
+    "explanation": "With the load in parallel with R2: R2_parallel = (1000 * 1000) / (1000 + 1000) = 500 ohms. Loaded output = 10 * 500 / (1000 + 500) = 5000 / 1500 = 3.33 V. The unloaded output would be 5 V (equal resistors), but the load drops it to 3.33 V because the parallel combination lowers effective bottom resistance. 10 V is the full supply, which appears only with no current drawn. 2 V would require a 333-ohm load, not a 1000-ohm load.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::loaded-voltage-divider-1k-1k-1k-load"
+  },
+  {
+    "external_key": "EI-B61-005",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Compared to an unloaded voltage divider, connecting a load resistance across the output always:",
+    "choices": [
+      "Raises the output voltage closer to the supply rail",
+      "Keeps the output voltage unchanged if the load equals R2",
+      "Lowers the output voltage because the load parallels the bottom resistor and reduces its effective resistance",
+      "Has no effect as long as the load is greater than R1"
+    ],
+    "correct_index": 2,
+    "explanation": "A load placed across R2 creates a parallel combination with smaller resistance than R2 alone, reducing the voltage ratio and pulling the output voltage down from its unloaded value. The output drops regardless of load value; even a very large load resistance reduces effective R2 by some amount. No finite load leaves the output unchanged because any parallel combination reduces the net resistance. A load cannot raise the output above the unloaded value.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::loaded-divider-output-drops"
+  },
+  {
+    "external_key": "EI-B61-006",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A series RLC circuit resonates when f = 1 / (2 * pi * sqrt(L * C)). With L = 25 mH and C = 100 uF, what is the resonant frequency? (Use pi = 3.14159)",
+    "choices": [
+      "100.7 Hz",
+      "10.07 Hz",
+      "31.8 Hz",
+      "318 Hz"
+    ],
+    "correct_index": 0,
+    "explanation": "LC = 0.025 * 0.0001 = 2.5e-6. sqrt(LC) = 0.001581 s. 2 * pi * 0.001581 = 0.009934 s. f = 1 / 0.009934 = 100.7 Hz. 10.07 Hz results from an extra factor-of-10 unit error. 31.8 Hz comes from using L = 25 H (dropping the milli prefix). 318 Hz applies a decimal-place shift in the final division.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::rlc-resonance-25mH-100uF"
+  },
+  {
+    "external_key": "EI-B61-007",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "At resonance in a series RLC circuit, what is true about inductive reactance and capacitive reactance?",
+    "choices": [
+      "X_L = 0 and X_C = 0",
+      "X_L equals X_C, so they cancel and the circuit impedance equals only the resistance R",
+      "X_L is twice X_C",
+      "X_C dominates and the circuit becomes purely capacitive"
+    ],
+    "correct_index": 1,
+    "explanation": "At resonance, X_L = 2 * pi * f * L equals X_C = 1 / (2 * pi * f * C). Their effects cancel in the series circuit because they produce equal and opposite voltage drops, leaving total impedance Z = R. Neither reactance goes to zero individually; they are both finite but equal. Doubling one over the other would be an off-resonance condition. The circuit is purely resistive at resonance, not capacitive or inductive.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::rlc-resonance-reactances-cancel"
+  },
+  {
+    "external_key": "EI-B61-008",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "Thevenin resistance R_th is determined (for a circuit with only independent sources) by:",
+    "choices": [
+      "Measuring the short-circuit current at the terminals",
+      "Dividing the short-circuit current by the open-circuit voltage",
+      "Adding all resistances in the network in series",
+      "Turning off all independent sources and measuring the resistance looking into the terminals"
+    ],
+    "correct_index": 3,
+    "explanation": "R_th equals the resistance seen looking back into the deactivated network: voltage sources are replaced by short circuits and current sources by open circuits, then resistance is measured at the terminals. Short-circuit current alone gives Norton current, not R_th. Dividing I_sc by V_oc gives 1/R_th (conductance), not R_th itself. Adding all resistors in series ignores the actual network topology, which may include parallel combinations.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::thevenin-resistance-method"
+  },
+  {
+    "external_key": "EI-B61-009",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "In a three-phase WYE (Y) connected load, each phase voltage V_phase relates to the line voltage V_line by:",
+    "choices": [
+      "V_phase = V_line * sqrt(3)",
+      "V_phase = V_line",
+      "V_phase = V_line / sqrt(3)",
+      "V_phase = V_line / 3"
+    ],
+    "correct_index": 2,
+    "explanation": "In a WYE connection, V_line = sqrt(3) * V_phase, so V_phase = V_line / sqrt(3) = V_line / 1.732. For a 480 V WYE system, each phase sees 480 / 1.732 = 277 V. V_phase = V_line applies to DELTA connections where phase voltage equals line voltage. V_phase = V_line * sqrt(3) has the ratio inverted. V_line / 3 mistakenly uses the phase count 3 rather than the geometric factor sqrt(3).",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::three-phase-wye-phase-line-voltage"
+  },
+  {
+    "external_key": "EI-B61-010",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A 480 V three-phase WYE system supplies a balanced load. What is the phase voltage across each load element? (Use sqrt(3) = 1.732)",
+    "choices": [
+      "480 V",
+      "277 V",
+      "160 V",
+      "831 V"
+    ],
+    "correct_index": 1,
+    "explanation": "V_phase = V_line / sqrt(3) = 480 / 1.732 = 277 V. 480 V is the line-to-line voltage, not the phase voltage; that figure applies to DELTA-connected loads. 160 V = 480 / 3, dividing by the phase count instead of sqrt(3). 831 V = 480 * sqrt(3) inverts the relationship, giving the line voltage that would result from a 480 V phase voltage rather than the other way around.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::three-phase-wye-480v-phase-voltage-calc"
+  },
+  {
+    "external_key": "EI-B61-011",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "In a three-phase DELTA connection, each load element is connected:",
+    "choices": [
+      "From one line to the neutral point",
+      "In series with all three phases end-to-end",
+      "From each phase to a common ground",
+      "Between two line conductors, seeing the full line-to-line voltage"
+    ],
+    "correct_index": 3,
+    "explanation": "In a DELTA connection, each of the three load elements bridges two line conductors, so the voltage across each element equals the line-to-line voltage. There is no neutral in a standard DELTA configuration. In a WYE system, each load runs from a line to the neutral. DELTA elements are connected in parallel across line pairs, not in series end-to-end.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::delta-connection-load-topology"
+  },
+  {
+    "external_key": "EI-B61-012",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Power factor is defined as:",
+    "choices": [
+      "The cosine of the phase angle between voltage and current",
+      "The ratio of reactive power to apparent power",
+      "The sine of the impedance angle",
+      "Total watts divided by total volt-amperes-reactive"
+    ],
+    "correct_index": 0,
+    "explanation": "Power factor = cos(phi), where phi is the angle between the voltage and current phasors, and it equals real power (W) divided by apparent power (VA). A power factor of 1 means voltage and current are in phase (purely resistive), while 0 means they are 90 degrees apart (purely reactive). Reactive power divided by apparent power is sin(phi), the reactive factor, not power factor. Watts divided by VAR is the tangent of the angle, which has no standard power-factor name.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::power-factor-cos-phi-definition"
+  },
+  {
+    "external_key": "EI-B61-013",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "A motor draws 10 A from a 240 V source and has a power factor of 0.8. What is the real (true) power consumed?",
+    "choices": [
+      "2400 W",
+      "3000 W",
+      "1920 W",
+      "1500 W"
+    ],
+    "correct_index": 2,
+    "explanation": "Apparent power S = V * I = 240 * 10 = 2400 VA. Real power P = S * power factor = 2400 * 0.8 = 1920 W. 2400 W is the apparent power, which equals real power only when the power factor is 1.0. 3000 W = 2400 / 0.8, which exceeds apparent power and is physically impossible for real power. 1500 W = 2400 * 0.625, using an incorrect factor.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::power-factor-real-power-240v-10a-pf0p8"
+  },
+  {
+    "external_key": "EI-B61-014",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A 120 V AC circuit supplies an inductive load with a measured current of 5 A and a measured real power of 480 W. What is the power factor of this load?",
+    "choices": [
+      "0.96",
+      "0.80",
+      "0.60",
+      "1.0"
+    ],
+    "correct_index": 1,
+    "explanation": "Apparent power S = V * I = 120 * 5 = 600 VA. Power factor = P / S = 480 / 600 = 0.80. 0.96 = 480/500, which would require 4.17 A at 120 V, not 5 A. 0.60 = 360/600, the power factor if only 360 W were consumed. 1.0 would require real power to equal apparent power (600 W), but only 480 W is consumed here.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::power-factor-calc-from-P-S"
+  },
+  {
+    "external_key": "EI-B61-015",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "An isolation transformer with a 1:1 turns ratio is used primarily to:",
+    "choices": [
+      "Step up the voltage for long-distance transmission",
+      "Electrically separate the primary circuit from the secondary while keeping the same voltage level",
+      "Convert AC to pulsating DC",
+      "Store magnetic energy for later release"
+    ],
+    "correct_index": 1,
+    "explanation": "An isolation transformer separates primary and secondary circuits magnetically with no direct electrical path between them, breaking ground loops, preventing shock hazards from floating faults, and isolating equipment for safety or noise reduction, all while passing the same voltage level. Voltage step-up requires a turns ratio greater than 1:1. AC-to-DC conversion is rectification, not transformation. Energy storage describes an inductor or battery, not a transformer.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::isolation-transformer-function"
+  },
+  {
+    "external_key": "EI-B61-016",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A multi-winding transformer has a 240 V primary with 200 turns and two secondaries: winding A (100 turns) and winding B (25 turns). What are the secondary voltages?",
+    "choices": [
+      "Winding A = 120 V, Winding B = 30 V",
+      "Winding A = 120 V, Winding B = 120 V",
+      "Winding A = 480 V, Winding B = 120 V",
+      "Winding A = 24 V, Winding B = 6 V"
+    ],
+    "correct_index": 0,
+    "explanation": "V_A = 240 * (100/200) = 120 V. V_B = 240 * (25/200) = 30 V. Each winding voltage scales by its own turns ratio relative to the primary. 480 V for winding A would require 400 turns (step-up), not 100 turns (step-down). Equal voltages on both secondaries ignores that their turn counts differ by 4:1. 24 V and 6 V result from dividing by 10 instead of applying the correct ratio.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::multi-winding-transformer-two-secondaries"
+  },
+  {
+    "external_key": "EI-B61-017",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "In a common-emitter BJT amplifier configuration, the input signal is applied to the:",
+    "choices": [
+      "Collector terminal",
+      "Emitter terminal",
+      "Base terminal",
+      "Drain terminal"
+    ],
+    "correct_index": 2,
+    "explanation": "In a common-emitter configuration the emitter is the shared (common) terminal for both input and output, the base is the input terminal, and the collector is the output terminal. This gives the highest voltage gain of the three BJT configurations. The collector is the output, not the input. The emitter is common (AC-grounded), not the input. The drain is a MOSFET or JFET terminal, not a BJT terminal.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::common-emitter-input-terminal"
+  },
+  {
+    "external_key": "EI-B61-018",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A common-collector BJT amplifier (emitter follower) is most recognized by which characteristic?",
+    "choices": [
+      "Very high voltage gain greater than 100",
+      "Inverted output signal relative to the input",
+      "Voltage gain approximately equal to 1 with high current gain and low output impedance",
+      "Input applied at the collector, output taken at the base"
+    ],
+    "correct_index": 2,
+    "explanation": "The common-collector (emitter follower) produces a voltage gain slightly less than 1, a non-inverted output, very high input impedance, and low output impedance, making it ideal as a buffer between stages. High voltage gain is a common-emitter trait. Signal inversion is produced by common-emitter, not common-collector. In a common-collector the input is at the base and the output is taken from the emitter, not the other way around.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::common-collector-emitter-follower-traits"
+  },
+  {
+    "external_key": "EI-B61-019",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "An inverting op-amp amplifier has a feedback resistor R_f = 100 kohms and an input resistor R_in = 10 kohms. What is the voltage gain?",
+    "choices": [
+      "-10",
+      "+10",
+      "-100",
+      "+100"
+    ],
+    "correct_index": 0,
+    "explanation": "Inverting op-amp gain = -(R_f / R_in) = -(100,000 / 10,000) = -10. The negative sign indicates the output is inverted relative to the input. +10 describes a non-inverting configuration with the same resistor ratio but wrong sign. -100 results from a factor-of-10 error, as if R_f = 1 Mohm or R_in = 1 kohm. +100 has both the sign and magnitude wrong.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::inverting-opamp-gain-100k-10k"
+  },
+  {
+    "external_key": "EI-B61-020",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A non-inverting op-amp amplifier has R_f = 47 kohms and R1 = 10 kohms from the inverting input to ground. What is the closed-loop voltage gain?",
+    "choices": [
+      "5.7",
+      "4.7",
+      "47",
+      "0.18"
+    ],
+    "correct_index": 0,
+    "explanation": "Non-inverting gain = 1 + (R_f / R1) = 1 + (47,000 / 10,000) = 1 + 4.7 = 5.7. The +1 term arises because the full output feeds the divider and the amplifier forces the inverting input to equal the non-inverting input. 4.7 forgets the +1 term, giving the inverting magnitude rather than the non-inverting gain. 47 treats R_f alone as the gain without dividing by R1. 0.18 inverts the resistor ratio, computing R1/R_f instead of R_f/R1.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::non-inverting-opamp-gain-47k-10k"
+  },
+  {
+    "external_key": "EI-B61-021",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "The output of a NAND gate is LOW (0) only when:",
+    "choices": [
+      "Both inputs are LOW",
+      "At least one input is LOW",
+      "Both inputs are the same logic level",
+      "Both inputs are HIGH"
+    ],
+    "correct_index": 3,
+    "explanation": "A NAND gate is an inverted AND: its output is LOW only when all inputs are HIGH, and HIGH for all other input combinations. When both inputs are LOW the output is HIGH. When one input is LOW the output is HIGH regardless of the other. The output is not determined solely by both inputs being equal; NAND(0,0) = 1 and NAND(1,1) = 0, so equal inputs give different outputs depending on the logic level.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::nand-gate-output-low-when"
+  },
+  {
+    "external_key": "EI-B61-022",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A NOR gate output is HIGH (1) only when:",
+    "choices": [
+      "Both inputs are HIGH",
+      "Exactly one input is HIGH",
+      "At least one input is HIGH",
+      "Both inputs are LOW"
+    ],
+    "correct_index": 3,
+    "explanation": "A NOR gate is an inverted OR: the output is HIGH only when all inputs are LOW (NOT of OR being true). Any HIGH input drives the OR output HIGH, which NOR then inverts to LOW. When both inputs are HIGH the output is LOW. With one input HIGH the output is still LOW. The only combination producing a HIGH output is all inputs LOW.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::nor-gate-output-high-when"
+  },
+  {
+    "external_key": "EI-B61-023",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "What is the purpose of a decoupling (bypass) capacitor placed close to an IC's power supply pin?",
+    "choices": [
+      "To increase the DC supply voltage reaching the IC",
+      "To block DC current from reaching the IC",
+      "To provide a local reservoir of charge that suppresses high-frequency voltage spikes on the supply rail",
+      "To convert the AC supply to DC before it reaches the IC"
+    ],
+    "correct_index": 2,
+    "explanation": "Decoupling capacitors charge to the supply voltage and discharge quickly when the IC switches, absorbing the current demand locally and preventing voltage dips from propagating along the power rail. High-frequency transients are shunted to ground through the capacitor's low impedance at those frequencies. The capacitor does not increase the DC voltage; it stabilizes it. Blocking DC would starve the IC of power, the opposite of its purpose. Rectification requires diodes, not a single capacitor.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::decoupling-bypass-capacitor-purpose"
+  },
+  {
+    "external_key": "EI-B61-024",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A heat sink is attached to a power transistor primarily to:",
+    "choices": [
+      "Reduce the thermal resistance between the junction and the surrounding air, allowing higher power dissipation",
+      "Increase the transistor's gain by warming the junction",
+      "Prevent current from flowing through the transistor at high temperatures",
+      "Store energy released during switching transients"
+    ],
+    "correct_index": 0,
+    "explanation": "A heat sink increases the surface area and thermal conductivity path from the device's case to the ambient air, lowering overall thermal resistance (degrees C per watt) and keeping the junction temperature within safe limits at higher power levels. Heating the junction raises leakage current, does not improve gain, and can destroy the device. Heat sinks do not block current or store electrical energy; they are purely thermal management components.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::heat-sink-thermal-resistance-purpose"
+  },
+  {
+    "external_key": "EI-B61-025",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A power transistor dissipates 20 W. Junction-to-case thermal resistance is 2 deg-C/W and case-to-ambient (with heat sink) is 3 deg-C/W. With ambient at 25 deg-C, what is the junction temperature?",
+    "choices": [
+      "125 deg-C",
+      "65 deg-C",
+      "145 deg-C",
+      "45 deg-C"
+    ],
+    "correct_index": 0,
+    "explanation": "Total thermal resistance = 2 + 3 = 5 deg-C/W. Temperature rise above ambient = 20 W * 5 deg-C/W = 100 deg-C. Junction temperature T_j = 25 + 100 = 125 deg-C. 65 deg-C applies only a 40 deg-C rise, corresponding to 8 W at 5 deg-C/W, not 20 W. 145 deg-C uses 6 deg-C/W total (adding an extra 1 deg-C/W not given). 45 deg-C results from 20 W * 1 deg-C/W + 25, using only one deg-C/W instead of the total 5.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::thermal-resistance-junction-temp-calc"
+  },
+  {
+    "external_key": "EI-B61-026",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A common-base BJT amplifier is most often chosen because it provides:",
+    "choices": [
+      "The highest voltage gain of all three BJT configurations",
+      "A non-inverting output with gain near unity",
+      "Low input impedance and good high-frequency performance useful in RF amplifiers",
+      "The highest current gain of all three BJT configurations"
+    ],
+    "correct_index": 2,
+    "explanation": "In common-base the emitter is the input and the collector is the output; the base is AC-grounded. Input impedance is very low (~1/g_m) and high-frequency response is excellent because the base-collector capacitance does not multiply through the Miller effect as in common-emitter stages. High voltage gain is a common-emitter trait. Unity non-inverting gain describes common-collector. Common-base current gain is alpha (less than 1), the lowest of the three configurations, not the highest.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::common-base-low-Z-RF-use"
+  },
+  {
+    "external_key": "EI-B61-027",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "An op-amp is configured as a voltage follower (unity-gain buffer) by connecting:",
+    "choices": [
+      "A large feedback resistor from output to non-inverting input",
+      "A resistor voltage divider from the output back to both inputs",
+      "The output to the non-inverting input and grounding the inverting input",
+      "The output directly to the inverting input with the signal at the non-inverting input"
+    ],
+    "correct_index": 3,
+    "explanation": "A voltage follower connects the output pin directly to the inverting (-) input, providing 100% negative feedback, while the signal drives the non-inverting (+) input. The gain is exactly 1, input impedance is very high, and output impedance is very low, making it ideal as a buffer. Connecting feedback to the non-inverting input creates positive feedback (unstable). A voltage divider changes the gain away from unity. Grounding the inverting input produces a comparator, not a follower.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::opamp-voltage-follower-connection"
+  },
+  {
+    "external_key": "EI-B61-028",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "An AND gate with inputs A = 1 and B = 0 produces an output of:",
+    "choices": [
+      "1",
+      "0",
+      "Depends on the supply voltage",
+      "The average of the two inputs"
+    ],
+    "correct_index": 1,
+    "explanation": "An AND gate outputs HIGH (1) only when ALL inputs are HIGH. With A = 1 and B = 0, the AND condition is not met, so the output is 0. Logic gates produce a defined logic level (0 or 1) independent of supply voltage within the rated range. Logic gates do not average inputs; they implement Boolean functions where any zero input keeps an AND output LOW.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::and-gate-1-0-output"
+  },
+  {
+    "external_key": "EI-B61-029",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "A stranded copper wire bundle has 19 strands each with a diameter of 0.5 mm. Compared to a solid copper wire of the same total cross-sectional area, which statement is true at DC?",
+    "choices": [
+      "The stranded wire has much lower DC resistance because the strands are in parallel",
+      "The solid wire has lower DC resistance because it has no insulating gaps between strands",
+      "The stranded wire has higher DC resistance because the strands touch and create additional contact resistance",
+      "Both wires have the same DC resistance because total conducting area is equal"
+    ],
+    "correct_index": 3,
+    "explanation": "DC resistance depends only on total cross-sectional area, length, and resistivity (R = rho * L / A). If stranded and solid wires have the same total copper area, their DC resistances are equal. The strands are not insulated from each other in a basic bundle, so contact resistance between touching strands is negligible; the wire acts as a single conductor at DC. The advantage of stranding only appears at high frequencies where skin effect limits current to the surface.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::stranded-vs-solid-dc-resistance-equal"
+  },
+  {
+    "external_key": "EI-B61-030",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "In the NEC standard residential color code, which wire color identifies the grounding conductor?",
+    "choices": [
+      "White or gray",
+      "Black",
+      "Green or bare copper",
+      "Red"
+    ],
+    "correct_index": 2,
+    "explanation": "NEC Article 250 designates green insulation or bare (uninsulated) copper as the equipment grounding conductor. White or gray identifies the neutral (grounded) conductor. Black identifies the hot (ungrounded) conductor. Red is used as a second hot conductor in 240 V and multi-wire branch circuits, not as the ground.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::nec-color-code-ground-green-bare"
+  },
+  {
+    "external_key": "EI-B61-031",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "In NEC standard residential wiring, a white or gray wire is used for the:",
+    "choices": [
+      "Hot (ungrounded) conductor",
+      "Equipment grounding conductor",
+      "Neutral (grounded) conductor",
+      "Three-phase phase conductor"
+    ],
+    "correct_index": 2,
+    "explanation": "NEC identifies white or gray as the neutral (grounded) conductor that carries return current back to the source and is bonded to ground at the service panel. Black (or other colors except white, gray, and green) identifies hot conductors. Green or bare copper is the grounding conductor. Three-phase phase conductors in commercial 208Y/120 V systems use black, red, and blue, none of which are white.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::nec-color-code-neutral-white"
+  },
+  {
+    "external_key": "EI-B61-032",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "A sine wave AC supply has a peak voltage of 170 V. What is its RMS voltage? (Use sqrt(2) = 1.414)",
+    "choices": [
+      "170 V",
+      "120 V",
+      "240 V",
+      "85 V"
+    ],
+    "correct_index": 1,
+    "explanation": "RMS voltage = peak / sqrt(2) = 170 / 1.414 = 120.2 V, approximately 120 V. This is why standard US outlets measure 120 V RMS even though the peak is about 170 V. 170 V is the peak, not RMS. 240 V = 170 * sqrt(2) inverts the relationship (it is the peak for a 240 V RMS supply). 85 V = 170 / 2, confusing the RMS conversion factor with simple halving.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::sine-rms-from-peak-170v"
+  },
+  {
+    "external_key": "EI-B61-033",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "A square wave that alternates between +10 V and -10 V has an RMS value of:",
+    "choices": [
+      "7.07 V",
+      "5 V",
+      "14.14 V",
+      "10 V"
+    ],
+    "correct_index": 3,
+    "explanation": "The RMS of a square wave with peak amplitude A equals A exactly, because the waveform spends equal time at +A and -A, and the squared value of each half is A^2. For +/-10 V: RMS = 10 V. For a sine wave with the same peak the RMS would be 10 / sqrt(2) = 7.07 V, the distractor for test-takers applying the sine formula to all waveforms. 5 V is the average of the absolute values (half-wave average), not RMS. 14.14 = 10 * sqrt(2) inverts the sine conversion and misapplies it.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::square-wave-rms-equals-peak"
+  },
+  {
+    "external_key": "EI-B61-034",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Skin effect in a conductor at high frequencies causes:",
+    "choices": [
+      "Current to flow uniformly across the entire cross-section, reducing resistance",
+      "Current to flow only through the center of the conductor",
+      "No change in resistance because the total conductor area remains constant",
+      "Current to concentrate near the outer surface, increasing the effective resistance"
+    ],
+    "correct_index": 3,
+    "explanation": "At high frequencies, eddy currents induced by the alternating magnetic field inside the conductor oppose current flow in the interior. Current is forced to flow within a thin surface layer called the skin depth, which decreases with higher frequency. Less cross-sectional area carries the current, so effective resistance rises. Current flowing only through the center is the opposite of what skin effect produces. The total physical area does not change, but the effective conducting area shrinks, so resistance increases.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::skin-effect-high-frequency-resistance"
+  },
+  {
+    "external_key": "EI-B61-035",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Skin depth in a conductor decreases as frequency:",
+    "choices": [
+      "Decreases, because lower frequencies penetrate less",
+      "Remains constant because skin depth depends only on resistivity",
+      "Increases, because current spreads out at high frequency",
+      "Increases, because higher frequencies force current to the surface"
+    ],
+    "correct_index": 3,
+    "explanation": "Skin depth delta = sqrt(2 * rho / (omega * mu)), where omega = 2 * pi * f. As frequency increases, the denominator grows, so skin depth shrinks and current is squeezed into an ever-thinner surface layer. Lower frequencies have larger skin depth, allowing more of the conductor interior to carry current, not less. Skin depth depends on both resistivity and frequency, not on resistivity alone.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::skin-depth-decreases-with-frequency"
+  },
+  {
+    "external_key": "EI-B61-036",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A sawtooth wave that rises linearly from 0 V to a peak of 10 V has an RMS value of approximately:",
+    "choices": [
+      "10 V",
+      "7.07 V",
+      "5 V",
+      "5.77 V"
+    ],
+    "correct_index": 3,
+    "explanation": "The RMS of a sawtooth wave that rises linearly from 0 to A is A / sqrt(3). For A = 10 V: RMS = 10 / sqrt(3) = 10 / 1.732 = 5.77 V. 10 V is the peak value, not RMS. 7.07 V = 10 / sqrt(2) is the sine wave RMS for the same peak, not the sawtooth formula. 5 V is the average value of the waveform (A/2 for a rising sawtooth), not the RMS; squaring before averaging raises the result above the simple average.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::sawtooth-rms-peak-over-sqrt3"
+  },
+  {
+    "external_key": "EI-B61-037",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "At high frequencies, stranded wire is preferred over solid wire of the same total cross-section because:",
+    "choices": [
+      "Stranded wire has a lower resistance at DC",
+      "Each thin strand individually has a small skin depth boundary, so strands collectively use their cross-section more efficiently than one thick conductor",
+      "Stranded wire eliminates inductance entirely at high frequencies",
+      "Solid wire develops a higher dielectric constant at high frequency"
+    ],
+    "correct_index": 1,
+    "explanation": "Because skin depth shrinks with frequency, a large-diameter solid conductor has most of its interior carrying little current at high frequencies, wasting material and raising effective resistance. Stranded wire subdivides the conductor into many thin strands, each small enough that current flows through most of the strand cross-section, reducing effective AC resistance. At DC the two have the same resistance for the same total area. Stranded wire does not eliminate inductance; that depends on geometry. Dielectric constant applies to insulating materials, not solid vs. stranded conductor construction.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::stranded-vs-solid-high-frequency"
+  },
+  {
+    "external_key": "EI-B61-038",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A 10 AWG copper conductor has a resistance of 1.24 ohms per 1000 ft. A circuit requires 200 ft of conductor each way (400 ft round trip). What voltage drop occurs at 30 A?",
+    "choices": [
+      "14.9 V",
+      "7.44 V",
+      "37.2 V",
+      "4.96 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Total resistance = 1.24 ohms/1000 ft * 400 ft = 0.496 ohms. Voltage drop = I * R = 30 * 0.496 = 14.88 V, approximately 14.9 V. 7.44 V uses only 200 ft (one-way) instead of the 400 ft round-trip. 37.2 V = 30 * 1.24, treating the full 1000-ft resistance figure as if the run were 1000 ft. 4.96 V divides by 30 instead of multiplying, confusing current with conductance.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::voltage-drop-10awg-400ft-30a"
+  },
+  {
+    "external_key": "EI-B61-039",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Which best describes the purpose of an equipment grounding conductor (green or bare wire) in a branch circuit?",
+    "choices": [
+      "To carry normal operating current back to the panel",
+      "To increase the circuit's current capacity",
+      "To provide a low-impedance fault path so an overcurrent device trips quickly if the enclosure becomes energized",
+      "To reduce electromagnetic interference in nearby circuits"
+    ],
+    "correct_index": 2,
+    "explanation": "The equipment grounding conductor bonds metal enclosures and device frames to the service ground. If a hot wire contacts the metal, fault current flows through the low-impedance ground path and causes the overcurrent device to trip rapidly, removing the shock hazard. It carries no normal load current; the neutral does that. It does not increase circuit capacity. EMI reduction is the role of shielding or filtering, not equipment grounding.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::equipment-ground-fault-path-purpose"
+  },
+  {
+    "external_key": "EI-B61-041",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A transmission line operates at 100 MHz where skin depth in copper is approximately 6.6 micrometers. Why does this matter for coaxial cable design?",
+    "choices": [
+      "At 100 MHz the entire copper conductor carries current uniformly, so wire thickness is irrelevant",
+      "Only the outermost 6.6 micrometers effectively carry current, so adding copper beyond several skin depths does not reduce resistance",
+      "Skin depth at 100 MHz is too large to affect conductor dimensions",
+      "Higher frequency increases skin depth, so thick conductors are needed at 100 MHz"
+    ],
+    "correct_index": 1,
+    "explanation": "At 100 MHz a skin depth of 6.6 micrometers means current is essentially confined to a surface layer about that thick. Making the conductor more than 3-4 skin depths thick adds negligible conducting area and negligible reduction in AC resistance. Skin effect concentrates current at the surface, not uniformly. 6.6 micrometers is very small, not too large to matter for typical conductor dimensions. Higher frequency decreases skin depth, not increases it.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::skin-depth-coax-design-100mhz"
+  },
+  {
+    "external_key": "EI-B61-042",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "NEC color code for a 480Y/277 V three-phase system uses which colors for the three hot phase conductors?",
+    "choices": [
+      "Black, red, and blue",
+      "White, gray, and green",
+      "Brown, orange, and yellow",
+      "Black, white, and red"
+    ],
+    "correct_index": 2,
+    "explanation": "NEC practice for 480Y/277 V three-phase systems identifies the phase conductors as brown, orange, and yellow. Black, red, and blue are used for 208Y/120 V systems, not 480 V systems. White or gray is always the neutral and is never a phase conductor. Black, white, and red combines a neutral (white) with phase designations, which violates NEC color conventions.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::nec-color-code-480v-three-phase"
+  },
+  {
+    "external_key": "EI-B61-044",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "An electric water heater operates at 240 V and consumes 4500 W. What is the heater element's resistance?",
+    "choices": [
+      "12.8 ohms",
+      "18.75 ohms",
+      "53.3 ohms",
+      "1080 ohms"
+    ],
+    "correct_index": 0,
+    "explanation": "R = V^2 / P = 240^2 / 4500 = 57600 / 4500 = 12.8 ohms. 18.75 ohms uses P / V = 4500 / 240, which gives current in amperes, not resistance in ohms. 53.3 ohms applies V / P = 240 / 4500, which gives units of ohms/watt rather than ohms. 1080 ohms has no valid derivation from these numbers and overestimates by a factor of 84.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::heater-element-resistance-240v-4500w"
+  },
+  {
+    "external_key": "EI-B61-045",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 9 V battery powers a circuit drawing 180 mA. How much energy (in joules) is consumed in 5 minutes?",
+    "choices": [
+      "486 J",
+      "8.1 J",
+      "81 J",
+      "4860 J"
+    ],
+    "correct_index": 0,
+    "explanation": "Power P = V * I = 9 * 0.180 = 1.62 W. Time = 5 * 60 = 300 s. Energy = P * t = 1.62 * 300 = 486 J. 8.1 J uses only 5 s instead of 300 s (treats minutes as seconds). 81 J corresponds to t = 50 s, off by a factor of 6 from the correct 300 s. 4860 J multiplies by 3000 s (50 minutes), not 300 s.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::energy-joules-9v-180ma-5min"
+  },
+  {
+    "external_key": "EI-B61-046",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "An appliance rated at 800 W runs for 3 hours every day for 30 days. How many kilowatt-hours does it consume in 30 days?",
+    "choices": [
+      "72 kWh",
+      "7.2 kWh",
+      "2.4 kWh",
+      "24 kWh"
+    ],
+    "correct_index": 0,
+    "explanation": "Daily energy = 800 W * 3 h = 2400 Wh = 2.4 kWh. Over 30 days: 2.4 * 30 = 72 kWh. 7.2 kWh multiplies 2.4 kWh by 3 rather than 30, using days = 3. 2.4 kWh is only one day's consumption, not 30 days. 24 kWh is 10 days' consumption (2.4 * 10), not 30.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::kwh-30day-800w-3hr-daily"
+  },
+  {
+    "external_key": "EI-B61-047",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "The formula for power expressed using only current and resistance (without voltage) is:",
+    "choices": [
+      "P = V^2 / R",
+      "P = I * R",
+      "P = I^2 * R",
+      "P = V / R"
+    ],
+    "correct_index": 2,
+    "explanation": "Substituting V = I * R into P = V * I gives P = (I * R) * I = I^2 * R. This form is useful when current and resistance are known but voltage is not. P = V^2 / R is the voltage-and-resistance form, not the current-and-resistance form. P = I * R has units of amperes times ohms, which equals volts, not watts; it gives voltage, not power. P = V / R is Ohm's Law (current), not a power formula.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::power-formula-I-squared-R-form"
+  },
+  {
+    "external_key": "EI-B61-048",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A 24 V DC supply with internal resistance r = 2 ohms drives a variable external load R_L. For what value of R_L is maximum power transferred to the load?",
+    "choices": [
+      "4 ohms",
+      "1 ohm",
+      "2 ohms",
+      "0 ohms (short circuit)"
+    ],
+    "correct_index": 2,
+    "explanation": "Maximum power transfer requires R_L = r = 2 ohms. At R_L = 2 ohms: I = 24 / (2 + 2) = 6 A, P_L = 6^2 * 2 = 72 W. At R_L = 4 ohms: I = 4 A, P_L = 4^2 * 4 = 64 W (less). At R_L = 1 ohm: I = 8 A, P_L = 8^2 * 1 = 64 W (also less). A short circuit (R_L = 0) delivers zero power to the load because there is no load voltage, even though current is maximum.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::maximum-power-transfer-match-source-R"
+  },
+  {
+    "external_key": "EI-B61-049",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A series circuit has R = 10 ohms and L = 50 mH driven at 200 Hz. What is the total impedance? (Use pi = 3.14159)",
+    "choices": [
+      "10 ohms",
+      "62.8 ohms",
+      "63.6 ohms",
+      "72.8 ohms"
+    ],
+    "correct_index": 2,
+    "explanation": "X_L = 2 * pi * f * L = 2 * 3.14159 * 200 * 0.050 = 62.83 ohms. Impedance Z = sqrt(R^2 + X_L^2) = sqrt(10^2 + 62.83^2) = sqrt(100 + 3947.6) = sqrt(4047.6) = 63.62 ohms, approximately 63.6 ohms. 10 ohms ignores the inductive reactance entirely. 62.8 ohms is X_L alone, omitting the resistance. 72.8 ohms = X_L + R = 62.8 + 10, incorrectly adding rather than using the Pythagorean sum.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::rl-impedance-10ohm-50mH-200hz"
+  },
+  {
+    "external_key": "EI-B61-050",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A 120 V RMS source drives a series RC circuit where R = 60 ohms and X_C = 80 ohms. What current flows?",
+    "choices": [
+      "0.86 A",
+      "1.71 A",
+      "2 A",
+      "1.2 A"
+    ],
+    "correct_index": 3,
+    "explanation": "Impedance Z = sqrt(R^2 + X_C^2) = sqrt(60^2 + 80^2) = sqrt(3600 + 6400) = sqrt(10000) = 100 ohms. Current I = V / Z = 120 / 100 = 1.2 A. 0.86 A = 120 / 140, using Z = R + X_C = 60 + 80 = 140 ohms added arithmetically instead of as the hypotenuse. 1.71 A = 120 / 70, using only part of the impedance calculation. 2 A = 120 / 60, applying only the resistive component and ignoring X_C entirely.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::rc-series-current-60r-80xc-120v"
+  },
+  {
+    "external_key": "EI-B61-051",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 120 V, 60 Hz circuit feeds a purely inductive coil with X_L = 40 ohms. What current flows and what is the real power consumed?",
+    "choices": [
+      "I = 3 A, P = 360 W",
+      "I = 0.33 A, P = 40 W",
+      "I = 3 A, P = 120 W",
+      "I = 3 A, P = 0 W"
+    ],
+    "correct_index": 3,
+    "explanation": "Current I = V / X_L = 120 / 40 = 3 A. A purely ideal inductor stores and returns energy each half-cycle without dissipating any real power; its power factor is zero and P = 0 W. 360 W = V * I uses the apparent power formula valid for resistors but not ideal inductors, which have a 90-degree phase shift. 0.33 A inverts the formula (X_L / V = 40/120). 120 W = V * I / 3 has no valid derivation from these values.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::inductive-circuit-current-zero-real-power"
+  },
+  {
+    "external_key": "EI-B61-052",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A motor runs at 80% power factor and draws 10 A from a 240 V source. What are the real power (W) and the apparent power (VA)?",
+    "choices": [
+      "Real = 2400 W, Apparent = 2400 VA",
+      "Real = 2400 W, Apparent = 3000 VA",
+      "Real = 1600 W, Apparent = 2000 VA",
+      "Real = 1920 W, Apparent = 2400 VA"
+    ],
+    "correct_index": 3,
+    "explanation": "Apparent power S = V * I = 240 * 10 = 2400 VA. Real power P = S * PF = 2400 * 0.80 = 1920 W. The utility sees 2400 VA flowing through distribution equipment, but the motor performs useful work of only 1920 W. 2400 W real power would require PF = 1.0, not 0.80. 3000 VA apparent power would require 12.5 A at 240 V. 2000 VA apparent power would require only 8.33 A at 240 V, not the 10 A given.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::motor-real-apparent-power-pf080"
+  },
+  {
+    "external_key": "EI-B61-053",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A resistor dissipates 100 W at 200 V. If the voltage is increased to 300 V across the same resistor, what power does it now dissipate?",
+    "choices": [
+      "150 W",
+      "225 W",
+      "200 W",
+      "300 W"
+    ],
+    "correct_index": 1,
+    "explanation": "R = V^2 / P = 200^2 / 100 = 400 ohms. New power = 300^2 / 400 = 90000 / 400 = 225 W. Alternatively, P scales as V^2: (300/200)^2 * 100 = 1.5^2 * 100 = 2.25 * 100 = 225 W. 150 W applies linear scaling (1.5 * 100), incorrectly treating power as proportional to V. 200 W keeps power constant, ignoring the voltage change. 300 W scales by the ratio 300/100 = 3, confusing voltage magnitude with a power multiplier.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::power-scales-V-squared-100w-200-to-300v"
+  },
+  {
+    "external_key": "EI-B61-054",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "A sine wave AC voltage has an RMS value of 240 V. What is its peak voltage? (Use sqrt(2) = 1.414)",
+    "choices": [
+      "120 V",
+      "169.7 V",
+      "339.4 V",
+      "480 V"
+    ],
+    "correct_index": 2,
+    "explanation": "Peak voltage V_peak = V_rms * sqrt(2) = 240 * 1.414 = 339.4 V. This is why 240 V RMS service actually swings to about 339 V at its peak. 120 V = 240 / 2, incorrectly halving rather than multiplying by sqrt(2). 169.7 V = 120 * sqrt(2), using 120 V RMS instead of the given 240 V RMS. 480 V = 240 * 2, doubling instead of multiplying by sqrt(2) = 1.414.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::peak-voltage-from-240v-rms"
+  },
+  {
+    "external_key": "EI-B61-055",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A load draws 15 A at a power factor of 0.6 from a 120 V AC source. What reactive power (VAR) does the load consume?",
+    "choices": [
+      "1080 VAR",
+      "1440 VAR",
+      "720 VAR",
+      "900 VAR"
+    ],
+    "correct_index": 1,
+    "explanation": "Apparent power S = 120 * 15 = 1800 VA. Real power P = 1800 * 0.6 = 1080 W. sin(phi) = sqrt(1 - PF^2) = sqrt(1 - 0.36) = sqrt(0.64) = 0.8. Reactive power Q = S * sin(phi) = 1800 * 0.8 = 1440 VAR. Verify: sqrt(1080^2 + 1440^2) = sqrt(1166400 + 2073600) = sqrt(3240000) = 1800 VA correct. 1080 VAR is the real power, not reactive. 720 VAR = 1800 * 0.4 uses (1 - PF) = 0.4 instead of sin(phi) = 0.8. 900 VAR = 1800 / 2, a division with no valid basis.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::reactive-power-VAR-pf060-120v-15a"
+  },
+  {
+    "external_key": "EI-B61-056",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A generator has an EMF of 240 V and internal resistance of 0.5 ohms. It supplies a 23.5 ohm load. What is the efficiency of power transfer to the load?",
+    "choices": [
+      "50%",
+      "97.9%",
+      "79%",
+      "95%"
+    ],
+    "correct_index": 1,
+    "explanation": "Total resistance = 0.5 + 23.5 = 24 ohms. Current I = 240 / 24 = 10 A. Power to load P_L = I^2 * R_L = 100 * 23.5 = 2350 W. Total generated power P_total = I^2 * 24 = 2400 W. Efficiency = 2350 / 2400 = 97.9%. 50% efficiency occurs only at maximum power transfer (R_L = R_int = 0.5 ohms), not at R_L = 23.5 ohms. 79% would require internal losses of 504 W, implying a much larger internal resistance. 95% = 23.5/24.7 uses an incorrect denominator.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::generator-efficiency-23p5-load-0p5-internal"
+  }
+]

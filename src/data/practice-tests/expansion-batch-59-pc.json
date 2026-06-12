@@ -1,0 +1,920 @@
+[
+  {
+    "external_key": "PC-B59-001",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Hindenburg disaster of 1937 is often cited as the event that ended the age of commercial airships. In reality, zeppelin travel was already declining before the crash. Rising costs, slower speeds compared to fixed-wing aircraft, and dependence on helium -- which the United States refused to export -- had already made the business model fragile. The fire accelerated a trend already well underway.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "The Hindenburg fire was caused by the use of flammable hydrogen instead of helium.",
+      "Commercial airships were already struggling before the Hindenburg disaster ended them.",
+      "The United States controlled the global supply of helium during the 1930s.",
+      "Fixed-wing aircraft were faster and cheaper than airships by the 1930s."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage argues that zeppelin travel was already in decline due to cost, speed, and helium supply issues before the crash occurred. The cause of the fire is not discussed. Helium export policy is mentioned only as one of several factors. The comparison to fixed-wing aircraft is supporting detail, not the central argument.",
+    "status": "verified",
+    "item_family_id": "pc.passage::zeppelin-decline-pre-hindenburg"
+  },
+  {
+    "external_key": "PC-B59-002",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nPasteurization, developed by Louis Pasteur in the 1860s, uses brief heat treatment to kill harmful bacteria in food without cooking it. Milk, juice, and eggs are among the products commonly pasteurized today. The process does not sterilize food completely but reduces pathogen levels enough to make products safe for typical shelf life. Pasteurization has prevented countless cases of foodborne illness worldwide.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Louis Pasteur invented a process that fully sterilizes food products.",
+      "Milk must be refrigerated after pasteurization to remain safe.",
+      "Pasteurization is a heat treatment that reduces harmful bacteria and has improved food safety globally.",
+      "Many foods besides milk can be treated with heat to extend their shelf life."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage introduces pasteurization, explains how it works, lists products it is applied to, and states its global health impact -- making choice C the comprehensive main idea. Choice A is incorrect because the passage explicitly says pasteurization does not fully sterilize food. Refrigeration is not discussed. Choice D is a minor detail, not the central point.",
+    "status": "verified",
+    "item_family_id": "pc.passage::pasteurization-food-safety"
+  },
+  {
+    "external_key": "PC-B59-003",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Berlin Airlift began in June 1948 after the Soviet Union blockaded all road, rail, and canal routes into West Berlin. For eleven months, British and American aircraft flew round-the-clock missions to deliver food, coal, and medicine. At its peak, a plane landed every 90 seconds at Tempelhof Airport. The Soviets lifted the blockade in May 1949, having failed to force the Western Allies out of the city.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "The Berlin Airlift succeeded in defeating the Soviet blockade by supplying the city from the air.",
+      "Tempelhof Airport was the central hub for all Allied operations in postwar Germany.",
+      "The Soviet blockade of West Berlin lasted from 1948 through 1953.",
+      "British and American pilots flew dangerous nighttime missions to avoid Soviet fighters."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage describes a successful Allied air campaign that ultimately forced the Soviets to lift their blockade, making choice A the main idea. Tempelhof is mentioned only as an operational detail. The blockade lasted eleven months ending in 1949, not 1953. The passage does not mention Soviet fighters or nighttime-only missions.",
+    "status": "verified",
+    "item_family_id": "pc.passage::berlin-airlift-success"
+  },
+  {
+    "external_key": "PC-B59-004",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nTidal energy harnesses the movement of ocean tides to generate electricity. Unlike solar and wind power, tides follow predictable lunar cycles, making tidal generation highly reliable. Tidal turbines are typically placed on the seafloor in coastal channels where water flows rapidly. The technology remains expensive to install and maintain, but its consistency makes it attractive for regions with strong tidal patterns.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Tidal energy plants are most productive during high tide and shut down at low tide.",
+      "Tidal energy is a reliable but costly renewable energy source that suits certain coastal locations.",
+      "Lunar cycles determine when renewable energy can be generated most efficiently.",
+      "Tidal turbines use the same technology as wind turbines adapted for underwater use."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage discusses tidal energy's reliability, mechanism, cost, and geographic suitability, making choice B the best summary. The passage does not describe shutdown cycles between high and low tides. Lunar cycles are mentioned only to explain predictability. The passage does not compare tidal turbines to wind turbines in design.",
+    "status": "verified",
+    "item_family_id": "pc.passage::tidal-energy-reliable-costly"
+  },
+  {
+    "external_key": "PC-B59-006",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nHerd immunity slows the spread of infectious disease by reducing the number of people susceptible to infection. When enough individuals in a population are immune -- through vaccination or prior infection -- a pathogen has fewer hosts and transmission chains break down. The threshold for herd immunity varies by disease; measles requires roughly 95 percent immunity, while polio requires closer to 80 percent. Communities with lower vaccination rates remain vulnerable even if most of their members are individually protected.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Herd immunity eliminates the need for individual vaccination once a threshold is reached.",
+      "Measles is more contagious than polio and therefore requires a higher immunity threshold.",
+      "Herd immunity protects communities by limiting pathogen transmission when enough people are immune.",
+      "Vaccination rates must reach 95 percent in every community to prevent disease outbreaks."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage explains how herd immunity works and why community-level protection matters, making choice C the main idea. Choice A is wrong because the passage warns that communities with low vaccination rates remain vulnerable. Choice B is a supporting comparison, not the central point. Choice D incorrectly applies the measles threshold universally when the passage notes thresholds vary by disease.",
+    "status": "verified",
+    "item_family_id": "pc.passage::herd-immunity-threshold-explained"
+  },
+  {
+    "external_key": "PC-B59-007",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nDrug-resistant bacteria pose a growing threat to public health. Overuse of antibiotics in medicine and agriculture has accelerated bacterial evolution, producing strains that standard treatments cannot defeat. Infections once cured with a single course of pills now require longer hospital stays, stronger drugs, or sometimes cannot be treated at all. The World Health Organization has described antimicrobial resistance as one of the greatest threats to global health in the coming decades.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Farmers who use antibiotics in livestock are primarily responsible for drug-resistant infections.",
+      "Antibiotic overuse has created bacteria that resist treatment, threatening global health.",
+      "Hospital stays have increased because patients now require multiple rounds of antibiotics.",
+      "The World Health Organization sets global standards for antibiotic prescribing."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes the cause (antibiotic overuse), the effect (resistant strains), and the scale of the threat, making choice B the main idea. Choice A singles out agriculture when the passage cites both medicine and agriculture equally. Longer hospital stays are mentioned as one consequence, not the central topic. Choice D misrepresents the WHO's role; the passage only quotes them on the scope of the threat.",
+    "status": "verified",
+    "item_family_id": "pc.passage::antibiotic-resistance-global-threat"
+  },
+  {
+    "external_key": "PC-B59-008",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nSleep plays a critical role in athletic recovery. During deep sleep, the body releases growth hormone, which repairs muscle tissue damaged during exercise. Sleep deprivation reduces reaction time, impairs coordination, and increases the risk of injury. Elite athletes increasingly treat sleep as a training variable as important as diet or conditioning.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Growth hormone is produced only during deep sleep and not at other times.",
+      "Adequate sleep is essential to athletic performance and recovery.",
+      "Sleep deprivation is the leading cause of sports injuries in professional athletes.",
+      "Elite athletes sleep more hours per night than recreational athletes."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage argues that sleep matters for repair, performance, and injury prevention -- making choice B the best overall summary. Choice A overstates the claim; the passage says growth hormone is released during deep sleep but does not say it is never produced otherwise. Choice C uses 'leading cause,' which goes beyond what the passage states. Choice D compares elite and recreational athletes, a point the passage does not make.",
+    "status": "verified",
+    "item_family_id": "pc.passage::sleep-athletic-recovery"
+  },
+  {
+    "external_key": "PC-B59-009",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nVocational Rehabilitation and Employment, known as VR&E or Chapter 31, helps veterans with service-connected disabilities prepare for, find, and maintain suitable employment. Unlike the GI Bill, VR&E covers not just tuition but also fees, books, supplies, and in some cases living expenses. Veterans may also use the benefit to start a business or receive independent-living services if employment is not a feasible goal. Eligibility depends on disability rating and the nature of the employment barrier.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "VR&E and the GI Bill provide identical education benefits to disabled veterans.",
+      "VR&E is a comprehensive program that helps veterans with disabilities enter or return to the workforce.",
+      "Veterans must have at least a 50 percent disability rating to qualify for VR&E benefits.",
+      "The primary purpose of VR&E is to help veterans start small businesses after separation."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes VR&E's broad scope -- employment preparation, education support, business start-up, and independent living -- unified by the goal of helping disabled veterans. Choice A is contradicted by the passage, which explicitly distinguishes VR&E from the GI Bill. Choice C invents a specific rating requirement not stated in the passage. Choice D misrepresents the program by focusing on one minor use case.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vre-chapter31-overview"
+  },
+  {
+    "external_key": "PC-B59-010",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nUrban canopy -- the layer of tree cover above city streets and properties -- reduces the urban heat island effect by providing shade and releasing water vapor through a process called transpiration. Studies show that neighborhoods with 30 percent or more tree cover can be several degrees cooler in summer than nearby neighborhoods with little vegetation. Cities increasingly view tree planting as a low-cost, high-impact climate adaptation strategy.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Tree transpiration is the most effective way to cool urban environments.",
+      "City tree planting programs have reduced summer temperatures by 30 percent.",
+      "Urban tree cover lowers temperatures and is seen as a practical climate strategy for cities.",
+      "Neighborhoods with dense vegetation also tend to have lower crime rates."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage explains how urban trees reduce heat and why cities view them as a climate strategy, making choice C the main idea. Choice A singles out transpiration as the top mechanism when shade is equally mentioned. Choice B confuses the 30 percent figure; it refers to tree cover percentage, not temperature reduction. Choice D introduces crime rates, a topic not addressed in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::urban-canopy-cooling"
+  },
+  {
+    "external_key": "PC-B59-011",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Women Airforce Service Pilots, known as the WASP, were a group of civilian women pilots who flew military aircraft during World War II. They ferried planes from factories to air bases, towed targets for anti-aircraft training, and tested aircraft after repairs. More than 1,000 women completed WASP training, and 38 died in service. The program ended in December 1944 when male pilots returning from combat needed reassignment to domestic duties.\n\nAccording to the passage, why did the WASP program end?",
+    "choices": [
+      "Congress decided women should not fly military aircraft.",
+      "The war ended and the military no longer needed pilots.",
+      "Returning male combat pilots needed domestic assignments.",
+      "The WASP had fulfilled their contract after flying a set number of hours."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states directly that the program ended because male pilots returning from combat needed reassignment to domestic duties. Congress is not mentioned in the passage. The war ended in 1945, but the WASP was disbanded in December 1944. The passage mentions no hour-based contract.",
+    "status": "verified",
+    "item_family_id": "pc.passage::wasp-pilots-wwii"
+  },
+  {
+    "external_key": "PC-B59-012",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nFluoridation of public water supplies began in the United States in 1945 in Grand Rapids, Michigan, making it the first city in the world to add fluoride to its municipal water. Studies over the following decades showed significant reductions in tooth decay among residents compared to neighboring communities without fluoridation. The Centers for Disease Control later named community water fluoridation one of the ten great public health achievements of the twentieth century.\n\nAccording to the passage, which city first added fluoride to its public water supply?",
+    "choices": [
+      "Chicago, Illinois",
+      "Atlanta, Georgia",
+      "Grand Rapids, Michigan",
+      "Seattle, Washington"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage explicitly names Grand Rapids, Michigan, as the first city in the world to fluoridate its municipal water supply in 1945. The other cities are not mentioned in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::fluoridation-history-grand-rapids"
+  },
+  {
+    "external_key": "PC-B59-013",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Montgomery GI Bill, known as MGIB, requires service members to contribute $100 per month for their first twelve months of active duty in exchange for education benefits. Benefits are paid directly to the veteran, who then pays tuition to the school. The Post-9/11 GI Bill, by contrast, pays tuition directly to the school, provides a monthly housing allowance, and does not require an upfront contribution from the service member.\n\nAccording to the passage, how does the MGIB differ from the Post-9/11 GI Bill regarding payment?",
+    "choices": [
+      "The MGIB pays tuition directly to the school while the Post-9/11 GI Bill pays the veteran.",
+      "The MGIB pays benefits to the veteran who then pays the school; the Post-9/11 GI Bill pays the school directly.",
+      "Both programs require service members to contribute money before receiving benefits.",
+      "The Post-9/11 GI Bill requires a $100 monthly contribution; the MGIB does not."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states the MGIB pays benefits to the veteran who pays the school, while the Post-9/11 GI Bill pays tuition directly to the institution. Choice A reverses the two programs. Choice C is wrong because only the MGIB requires an upfront contribution. Choice D inverts which program requires the contribution.",
+    "status": "verified",
+    "item_family_id": "pc.passage::mgib-vs-post911-payment"
+  },
+  {
+    "external_key": "PC-B59-014",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe VA home loan program, established by the Servicemen's Readjustment Act of 1944, allows eligible veterans, active-duty service members, and surviving spouses to purchase homes without a down payment in most cases. Unlike conventional loans, VA loans do not require private mortgage insurance. Borrowers pay a one-time funding fee that can be rolled into the loan, and the interest rates offered are typically lower than conventional market rates.\n\nAccording to the passage, which of the following is NOT a feature of the VA home loan?",
+    "choices": [
+      "No required down payment in most cases",
+      "No private mortgage insurance requirement",
+      "A one-time funding fee",
+      "No funding fee for any eligible borrower"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states that borrowers pay a one-time funding fee, so the claim that no borrower pays a funding fee is false and therefore not a feature described in the passage. No down payment and no private mortgage insurance are both explicitly named as features. The one-time funding fee is also specifically mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::va-home-loan-features"
+  },
+  {
+    "external_key": "PC-B59-015",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nGeothermal heat pumps use the stable temperature of the ground below the frost line -- typically between 50 and 60 degrees Fahrenheit year-round -- to heat buildings in winter and cool them in summer. The system moves heat rather than generating it, making it two to five times more efficient than conventional heating and cooling systems. Installation costs are high, but operating costs are substantially lower over time.\n\nAccording to the passage, what temperature range does the ground below the frost line maintain year-round?",
+    "choices": [
+      "32 to 45 degrees Fahrenheit",
+      "50 to 60 degrees Fahrenheit",
+      "65 to 75 degrees Fahrenheit",
+      "The passage does not give a specific temperature range."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage explicitly states the ground below the frost line stays between 50 and 60 degrees Fahrenheit year-round. The other numeric ranges do not appear in the passage. Choice D is incorrect because the passage does provide this specific range.",
+    "status": "verified",
+    "item_family_id": "pc.passage::geothermal-heat-pump-temps"
+  },
+  {
+    "external_key": "PC-B59-016",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe first successful supersonic commercial flight took place on January 21, 1976, when British Airways and Air France each launched service on the Concorde. The aircraft cruised at roughly twice the speed of sound -- about 1,350 miles per hour -- at altitudes near 60,000 feet. Concorde flights between London and New York took approximately three and a half hours compared to the eight hours required by subsonic jets. Service ended in 2003 following declining passenger numbers after the fatal crash of Air France Flight 4590 in 2000.\n\nAccording to the passage, approximately how long did a Concorde flight take between London and New York?",
+    "choices": [
+      "Two hours",
+      "Three and a half hours",
+      "Five hours",
+      "Eight hours"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states Concorde flights between London and New York took approximately three and a half hours. Two hours and five hours are not mentioned. Eight hours is given as the travel time for subsonic jets, not the Concorde.",
+    "status": "verified",
+    "item_family_id": "pc.passage::concorde-flight-time"
+  },
+  {
+    "external_key": "PC-B59-017",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe DOD SkillBridge program allows active-duty service members to work with civilian employers during their last 180 days of military service. Participants continue to receive military pay and benefits while gaining civilian work experience. Employers bear none of the compensation cost. The program is designed to reduce the employment gap that many veterans face in the first year after separation.\n\nAccording to the passage, who pays the compensation for SkillBridge participants?",
+    "choices": [
+      "The civilian employer pays the service member a competitive salary.",
+      "The military continues to pay the service member's pay and benefits.",
+      "SkillBridge participants are unpaid interns for the duration of the program.",
+      "The Department of Veterans Affairs reimburses civilian employers."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states that participants continue to receive military pay and benefits and that employers bear none of the compensation cost. Choice A is the opposite of what the passage says. Choice C is wrong because participants are paid by the military. Choice D is not supported; the passage does not mention the VA reimbursing employers.",
+    "status": "verified",
+    "item_family_id": "pc.passage::dod-skillbridge-pay"
+  },
+  {
+    "external_key": "PC-B59-018",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nGluten forms when two proteins found in wheat flour -- glutenin and gliadin -- absorb water and bond together during mixing. The resulting network of gluten strands gives dough its elasticity and allows it to trap gas bubbles released by yeast, enabling bread to rise. Over-mixing strengthens gluten too much, producing a tough texture; under-mixing leaves the network underdeveloped and the bread dense.\n\nAccording to the passage, what happens when dough is over-mixed?",
+    "choices": [
+      "Gluten breaks down and the bread becomes dense.",
+      "Yeast cannot release gas bubbles and the bread fails to rise.",
+      "Gluten becomes too strong, resulting in a tough texture.",
+      "The gliadin and glutenin proteins separate and weaken the dough."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states that over-mixing strengthens gluten too much and produces a tough texture. Choice A confuses over-mixing with under-mixing; it is under-mixing that leads to density. Choice B is not stated; gas production by yeast is separate from mixing degree. Choice D is not supported; the passage does not describe the proteins separating.",
+    "status": "verified",
+    "item_family_id": "pc.passage::gluten-formation-mixing"
+  },
+  {
+    "external_key": "PC-B59-019",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nAltitude training is used by endurance athletes to improve performance at sea level. At elevations above 8,000 feet, reduced oxygen levels stimulate the body to produce more red blood cells. When athletes return to lower elevations, the extra red blood cells boost oxygen delivery to muscles. The benefit typically peaks two to four weeks after returning from altitude.\n\nAccording to the passage, when does the performance benefit of altitude training typically peak?",
+    "choices": [
+      "While the athlete is still training at high altitude",
+      "Immediately upon returning to sea level",
+      "Two to four weeks after returning from altitude",
+      "Three months after completing altitude training"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage directly states that the benefit typically peaks two to four weeks after returning from altitude. It says nothing about peak performance occurring while still at altitude or immediately upon return. Three months is not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::altitude-training-peak-benefit"
+  },
+  {
+    "external_key": "PC-B59-020",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nVacuum sealing removes air from packaging before sealing it shut. Because oxidation and aerobic bacteria both require oxygen, the absence of air dramatically slows spoilage. Vacuum-sealed meat can last two to three weeks in the refrigerator compared to three to five days in conventional packaging. The process does not kill existing bacteria but creates conditions unfavorable to their growth.\n\nAccording to the passage, what does vacuum sealing do to bacteria already present in the food?",
+    "choices": [
+      "It kills all existing bacteria through the pressure change.",
+      "It removes bacteria along with the air during the sealing process.",
+      "It does not kill existing bacteria but slows their growth by removing oxygen.",
+      "It converts aerobic bacteria into anaerobic bacteria that are harmless."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage explicitly states that the process does not kill existing bacteria but creates conditions unfavorable to their growth. Choice A contradicts the passage. Choice B is not supported; the passage does not say bacteria are extracted with air. Choice D is not mentioned anywhere in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vacuum-sealing-bacteria"
+  },
+  {
+    "external_key": "PC-B59-021",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe transition assistance program requires separating service members to attend a week-long workshop covering resume writing, job search strategies, and benefit enrollment. Attendance is mandatory. Soldiers who skip sessions without approval receive a flag on their separation paperwork that must be cleared before discharge orders can be finalized.\n\nWhat can be most reasonably inferred from this passage?",
+    "choices": [
+      "Transition assistance workshops are optional for officers but mandatory for enlisted members.",
+      "A soldier who misses sessions without approval may face delays in receiving discharge orders.",
+      "The program was created because veterans historically struggled with resume writing.",
+      "Discharge orders are issued by the transition assistance office, not the unit."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states that unapproved absences result in a flag that must be cleared before discharge orders are finalized, so delays are a reasonable inference. The passage does not distinguish between officers and enlisted. The passage gives no history of the program's creation. The passage does not identify who issues discharge orders.",
+    "status": "verified",
+    "item_family_id": "pc.passage::tap-workshop-mandatory-consequences"
+  },
+  {
+    "external_key": "PC-B59-022",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nPhishing attacks trick users into revealing passwords or clicking malicious links by mimicking trusted organizations. Modern phishing emails often include the target's name, employer, and recent activity details gathered from social media profiles. Security researchers have found that personalized phishing emails have a click-through rate three to five times higher than generic ones.\n\nWhat can be most reasonably inferred from this passage?",
+    "choices": [
+      "Phishing attacks are most effective against people who do not use email regularly.",
+      "Limiting publicly visible personal information on social media may reduce phishing risk.",
+      "Generic phishing emails are now illegal in most countries.",
+      "Two-factor authentication fully prevents phishing attacks from succeeding."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage explains that attackers use publicly available social media details to personalize phishing emails, which are far more effective. It follows that reducing publicly visible information would reduce attackers' ability to craft effective lures. Choice A is not supported; frequent email users are targeted too. Choice C is not mentioned. Choice D is not stated in the passage, which only discusses click-through rates, not countermeasures.",
+    "status": "verified",
+    "item_family_id": "pc.passage::phishing-personalization-social-media"
+  },
+  {
+    "external_key": "PC-B59-023",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nCorporal Reyes submitted her retraining application three weeks before the deadline. She had checked the eligibility requirements twice, gathered every required document, and asked her career manager to review the packet before submission.\n\nWhat can be most reasonably inferred about Corporal Reyes?",
+    "choices": [
+      "Corporal Reyes was required to retrain because her current job was being eliminated.",
+      "Corporal Reyes wanted her retraining application to be approved and prepared carefully.",
+      "The career manager found errors and asked her to resubmit the application.",
+      "Corporal Reyes planned to leave the military after retraining."
+    ],
+    "correct_index": 1,
+    "explanation": "Reyes submitted early, verified eligibility twice, gathered all documents, and had the packet reviewed -- actions consistent with someone motivated to have the application succeed. The passage gives no reason for the retraining request. No errors or resubmission are mentioned. Her post-retraining plans are not discussed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::reyes-retraining-prepared"
+  },
+  {
+    "external_key": "PC-B59-024",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nA city installed smart-grid demand-response technology that automatically reduces power to non-essential systems during peak demand periods. In the first summer after installation, the city avoided three rolling blackouts that neighboring communities experienced. The utility reported a 12 percent reduction in peak-hour energy consumption.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "The neighboring communities had older infrastructure that would have prevented smart-grid installation.",
+      "Smart-grid technology likely helped the city avoid the service disruptions its neighbors experienced.",
+      "Rolling blackouts are caused primarily by insufficient solar and wind power capacity.",
+      "A 12 percent reduction in energy use lowers a city's annual electricity bill by 12 percent."
+    ],
+    "correct_index": 1,
+    "explanation": "The city installed smart-grid technology and then avoided the blackouts its neighbors suffered during the same summer, making it reasonable to infer the technology contributed to that outcome. The passage says nothing about why neighbors did not install the technology. Causes of rolling blackouts are not explained. Annual billing is distinct from peak-hour consumption, so the 12 percent figure cannot be applied that way.",
+    "status": "verified",
+    "item_family_id": "pc.passage::smart-grid-averted-blackout"
+  },
+  {
+    "external_key": "PC-B59-025",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nGPS spoofing involves broadcasting false GPS signals that overpower authentic satellite signals, causing receivers to display incorrect positions. Commercial ships and drones have reported spoofing incidents near conflict zones and in waters near countries known to operate advanced electronic-warfare systems. Maritime authorities now recommend that vessels cross-check GPS against other navigation aids whenever position data seems inconsistent.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "GPS spoofing requires physical access to a vessel's navigation equipment.",
+      "GPS signals alone may not be reliable enough for navigation in certain high-risk areas.",
+      "Commercial ships now use radar instead of GPS as their primary navigation tool.",
+      "GPS spoofing is only possible against military-grade receivers."
+    ],
+    "correct_index": 1,
+    "explanation": "The recommendation to cross-check GPS against other navigation aids implies that GPS alone may be unreliable in areas where spoofing has occurred. Choice A contradicts the passage, which describes spoofing as broadcasting false signals remotely. Choice C is not stated; the passage recommends cross-checking, not replacing GPS with radar. Choice D contradicts the passage, which cites incidents involving commercial ships and drones.",
+    "status": "verified",
+    "item_family_id": "pc.passage::gps-spoofing-navigation-risk"
+  },
+  {
+    "external_key": "PC-B59-026",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nA panel convened to investigate an outbreak of foodborne illness at a large cafeteria found that one food handler had continued working for two days after developing symptoms. Kitchen supervisors later said they had received no training on illness reporting protocols and did not know employees were required to notify management before their shift when they felt unwell.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "The food handler deliberately chose to spread illness to coworkers.",
+      "The cafeteria's failure to train supervisors contributed to the outbreak.",
+      "Foodborne illness outbreaks only occur in large institutional cafeterias.",
+      "The panel recommended firing all supervisors who lacked protocol training."
+    ],
+    "correct_index": 1,
+    "explanation": "The panel's finding that supervisors lacked training on illness reporting strongly implies this gap allowed the sick employee to keep working and contributed to the outbreak. No evidence of deliberate action is given. Cafeteria size is incidental, not a stated cause. The panel's specific recommendations beyond the finding are not described in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::foodborne-outbreak-supervisor-training"
+  },
+  {
+    "external_key": "PC-B59-028",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nPrivate Rodriguez completed every optional study session before the written board exam. She stayed after hours twice to review regulations with the first sergeant and arrived at the exam room thirty minutes early. She was the first soldier from her unit to score above 90 percent on the exam in three years.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "The first sergeant required all soldiers in the unit to attend after-hours review sessions.",
+      "Private Rodriguez's preparation likely contributed to her high exam score.",
+      "Soldiers in the unit had never been allowed to take optional study sessions before.",
+      "Scoring above 90 percent automatically earns a soldier a promotion to specialist."
+    ],
+    "correct_index": 1,
+    "explanation": "Rodriguez's extensive preparation -- optional study sessions, after-hours review, and arriving early -- aligns directly with her exceptional score, making preparation the reasonable explanation. The passage says sessions were optional, not required by the first sergeant. No restriction on study sessions is described. Promotions based on exam scores are not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::rodriguez-board-prep-score"
+  },
+  {
+    "external_key": "PC-B59-029",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nA city planning report noted that EV battery recycling infrastructure has not kept pace with the rapid growth in electric vehicle sales. Lithium, cobalt, and nickel from used batteries can be recovered and reused, reducing demand for raw materials. However, the report found that fewer than 5 percent of batteries reaching end of life in the region were being processed by certified recyclers.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "Electric vehicles are not significantly more environmentally friendly than gasoline vehicles.",
+      "The remaining 95 percent of end-of-life batteries are being illegally dumped.",
+      "The environmental benefits of EV batteries are not being fully realized due to inadequate recycling.",
+      "Lithium and cobalt are readily available and do not need to be recovered from used batteries."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage notes that recyclable materials from batteries could reduce raw material demand but that very few batteries are actually being recycled, implying the environmental potential is not being realized. Choice A makes a broad comparison the passage does not support. Choice B is speculative; the passage does not say where the other 95 percent end up. Choice D contradicts the passage's premise that recovering these materials matters.",
+    "status": "verified",
+    "item_family_id": "pc.passage::ev-battery-recycling-gap"
+  },
+  {
+    "external_key": "PC-B59-030",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nVO2 max measures the maximum rate at which the body can consume oxygen during intense exercise and is widely considered the best single indicator of aerobic fitness. Training consistently over months raises VO2 max; one study found that high-intensity interval training increased it by an average of 8 to 10 percent in previously sedentary adults over twelve weeks.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "A person with a higher VO2 max will always outperform someone with a lower VO2 max in any sport.",
+      "Sedentary individuals who begin high-intensity interval training are likely to see aerobic fitness gains.",
+      "VO2 max cannot be improved through training in people older than 40.",
+      "High-intensity interval training is the only form of exercise that raises VO2 max."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states that training raises VO2 max and cites a study showing gains in previously sedentary adults, making it reasonable to infer that sedentary people who begin this training are likely to improve. Choice A overgeneralizes; the passage notes VO2 max is an aerobic indicator, not a predictor across all sports. Age restrictions are not mentioned. Choice D overstates the claim; the passage presents interval training as one effective method, not the only one.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vo2max-hiit-gains"
+  },
+  {
+    "external_key": "PC-B59-031",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe autoland system on a modern airliner can land the aircraft in near-zero visibility without pilot input. Sensors feed data to flight computers that adjust thrust, pitch, and flap position dozens of times per second. The technology has been in routine commercial use since the 1960s and has an exceptional safety record. Pilots train extensively on manual landings precisely because the system is so reliable that some worry about skill erosion.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Argue that pilots are becoming unnecessary as automation improves.",
+      "Explain how autoland systems work and raise a concern about their effect on pilot skills.",
+      "Criticize airlines for relying on automation rather than experienced pilots.",
+      "Describe the history of instrument landing systems from World War II to the present."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage explains the technology and how it works, then surfaces a concern about pilot skill erosion -- suggesting an informative-but-reflective purpose. Choice A is too strong; the passage does not argue pilots are unnecessary. Choice C is not supported; the tone is not critical of airlines. Choice D focuses on history, but the passage's history reference is minimal and secondary to explaining function.",
+    "status": "verified",
+    "item_family_id": "pc.passage::autoland-system-skill-erosion"
+  },
+  {
+    "external_key": "PC-B59-032",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nAnti-vaccine misinformation spreads faster on social media than corrections do. Studies show false health claims travel six times farther on some platforms than accurate ones, driven partly by the emotional language that misinformation often uses. The cost is measurable: measles outbreaks that had been controlled for decades returned to countries where vaccine hesitancy, fueled by social media falsehoods, reduced coverage below herd immunity thresholds.\n\nThe author's tone in this passage is best described as:",
+    "choices": [
+      "Neutral and procedural, describing platform policies",
+      "Alarmed and evidence-based, warning of real-world consequences",
+      "Sarcastic toward social media companies for ignoring the problem",
+      "Optimistic that corrections will eventually outpace misinformation"
+    ],
+    "correct_index": 1,
+    "explanation": "The author cites specific data on misinformation spread and links it to measles outbreaks, creating an urgent, evidence-driven warning tone. The passage is not procedural or neutral; it makes a case for concern. No sarcasm is directed at social media companies -- the companies are not even named. The passage contains no optimism about corrections winning out.",
+    "status": "verified",
+    "item_family_id": "pc.passage::anti-vaccine-misinformation-consequences"
+  },
+  {
+    "external_key": "PC-B59-033",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe VA home loan program has helped millions of veterans buy homes since 1944. It offers no-down-payment options, competitive rates, and no private mortgage insurance. For servicemembers who qualify, it is one of the most powerful financial tools available. Veterans who overlook it often later wish they had used it sooner.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Compare the VA home loan to conventional mortgage products in detail",
+      "Encourage veterans to take advantage of the VA home loan benefit",
+      "Explain the eligibility requirements for obtaining a VA home loan",
+      "Warn veterans about hidden fees in the VA home loan program"
+    ],
+    "correct_index": 1,
+    "explanation": "The author highlights benefits and closes with a note that veterans who skip the program regret it, signaling a persuasive purpose aimed at encouraging use of the benefit. Detailed comparisons with conventional products are not provided. Eligibility requirements are not listed. The passage does not warn about hidden fees.",
+    "status": "verified",
+    "item_family_id": "pc.passage::va-home-loan-encouragement"
+  },
+  {
+    "external_key": "PC-B59-034",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nPandemic surveillance systems that track hospital admissions, wastewater pathogen levels, and rapid-test sales can detect outbreaks days or weeks before traditional case reporting does. Several countries that invested in such early-warning infrastructure during the 2010s were able to respond faster to the COVID-19 pandemic. Budget pressures, however, have led many governments to dismantle these systems between health emergencies, leaving gaps precisely when the next outbreak may be building undetected.\n\nThe author's attitude toward dismantling pandemic surveillance systems is best described as:",
+    "choices": [
+      "Supportive, because the savings free up resources for other health priorities",
+      "Indifferent, presenting both advantages and disadvantages without preference",
+      "Critical, because doing so removes protection needed most between emergencies",
+      "Confused, because the passage cannot explain why governments make this choice"
+    ],
+    "correct_index": 2,
+    "explanation": "The phrase 'leaving gaps precisely when the next outbreak may be building undetected' conveys concern and criticism of the decision to dismantle systems. The author presents no support for the dismantling. The passage clearly takes a position, not an indifferent stance. No confusion is expressed; the passage identifies budget pressure as the reason.",
+    "status": "verified",
+    "item_family_id": "pc.passage::pandemic-surveillance-dismantled"
+  },
+  {
+    "external_key": "PC-B59-035",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nPassword hashing converts plain-text passwords into fixed-length strings using mathematical functions that cannot be reversed. When a user logs in, the system hashes the entered password and compares it to the stored hash. A properly implemented hashing algorithm means that even if a database is stolen, attackers cannot read the original passwords. Unfortunately, some companies still store passwords in plain text -- a practice security professionals describe as indefensible.\n\nThe author's tone toward companies that store passwords in plain text is best described as:",
+    "choices": [
+      "Understanding, noting that secure storage is technically complex",
+      "Dismissive, suggesting the practice is not worth discussing",
+      "Condemnatory, reflecting strong professional consensus against the practice",
+      "Neutral, presenting both secure and insecure storage as valid options"
+    ],
+    "correct_index": 2,
+    "explanation": "The author uses the word 'indefensible' -- attributed to security professionals but clearly endorsed by the author's framing -- indicating strong condemnation. The passage shows no sympathy for complexity or understanding. The passage discusses the practice at length rather than dismissing it. No neutral balance is offered; storing passwords in plain text is presented as wrong.",
+    "status": "verified",
+    "item_family_id": "pc.passage::password-hashing-plaintext-condemned"
+  },
+  {
+    "external_key": "PC-B59-036",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe lactate threshold, not VO2 max, may be the most practical predictor of endurance race performance. An athlete can sustain effort below the lactate threshold for hours; above it, lactic acid accumulates faster than it can be cleared, and fatigue sets in rapidly. Experienced coaches argue that training programs focused on raising the lactate threshold rather than simply building mileage produce faster racers more efficiently.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Challenge the view that VO2 max is the best predictor of endurance performance",
+      "Explain why lactic acid buildup causes muscle soreness the day after a race",
+      "Describe how coaches design training plans for beginning runners",
+      "Argue that endurance athletes should avoid training above the lactate threshold"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage opens by positioning lactate threshold above VO2 max as a performance predictor and supports this with mechanistic explanation and coaching experience, making A the correct purpose. Day-after muscle soreness is not discussed. The passage addresses experienced coaches and does not target beginning runners. The passage does not advise avoiding above-threshold training; it discusses the threshold's role in training design.",
+    "status": "verified",
+    "item_family_id": "pc.passage::lactate-threshold-vs-vo2max"
+  },
+  {
+    "external_key": "PC-B59-037",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Transition Assistance Program has existed for decades, yet surveys consistently show that separating service members find civilian job searches harder than expected. Interview skills, salary negotiation, and translating military experience into civilian language remain stumbling blocks. A week-long workshop, no matter how well designed, cannot replace the sustained career coaching that veterans actually need.\n\nThe author's attitude toward the Transition Assistance Program is best described as:",
+    "choices": [
+      "Admiring of the program's comprehensive curriculum",
+      "Critical, suggesting the program is insufficient for veterans' needs",
+      "Optimistic that the program will improve with more funding",
+      "Neutral, presenting both the strengths and limitations of the program"
+    ],
+    "correct_index": 1,
+    "explanation": "The author states that a week-long workshop 'cannot replace the sustained career coaching that veterans actually need,' a direct criticism of the program's adequacy. No admiration is expressed. The passage offers no optimism about improvement. It presents only limitations without balancing them with strengths.",
+    "status": "verified",
+    "item_family_id": "pc.passage::tap-program-insufficient"
+  },
+  {
+    "external_key": "PC-B59-038",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nFermentation has preserved food for thousands of years. Bacteria and yeast convert sugars into acids, alcohols, or gases that inhibit the growth of harmful organisms. Yogurt, cheese, sauerkraut, and beer are all products of fermentation. Beyond preservation, the process creates complex flavors and, in some cases, beneficial microorganisms linked to digestive health.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Warn consumers about the risks of eating fermented foods",
+      "Inform readers about how fermentation works and what it produces",
+      "Argue that fermented foods should replace processed foods in modern diets",
+      "Explain why beer and cheese are the most common fermented products worldwide"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes the mechanism, history, products, and benefits of fermentation in a straightforward, informative way. No warnings about risk are given. No dietary recommendation is made. The passage does not rank beer and cheese as the most common fermented products.",
+    "status": "verified",
+    "item_family_id": "pc.passage::fermentation-informative"
+  },
+  {
+    "external_key": "PC-B59-039",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nTwo-factor authentication adds a second verification step beyond a password, typically a code sent to a registered device. Critics point out that codes sent by text message can be intercepted if an attacker controls or clones the victim's phone number -- a technique called SIM swapping. Authentication apps generate codes locally and are harder to intercept, but fewer users adopt them because they require an extra setup step. The tradeoff between security and convenience rarely resolves cleanly.\n\nThe author's purpose is best described as:",
+    "choices": [
+      "Persuading readers to stop using text message codes immediately",
+      "Examining the security tradeoffs between different forms of two-factor authentication",
+      "Explaining why most users choose authentication apps over text message codes",
+      "Defending SIM swapping as a legitimate network security testing technique"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes the vulnerabilities and adoption tradeoffs of two types of 2FA without advocating a single answer, reflecting an analytical rather than persuasive purpose. Choice A is too strong; the author notes the tradeoff without telling readers to stop using SMS. Choice C is opposite to what the passage says -- fewer users adopt apps. SIM swapping is described as an attack, not a legitimate technique.",
+    "status": "verified",
+    "item_family_id": "pc.passage::2fa-tradeoffs-sms-vs-app"
+  },
+  {
+    "external_key": "PC-B59-040",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nTo install a new air filter, first locate the filter housing under the hood and unlatch the cover. Next, remove the old filter and note which direction it faces. Then insert the new filter in the same orientation. Finally, close and latch the cover securely before starting the engine.\n\nAccording to the passage, what should you do immediately after removing the old filter?",
+    "choices": [
+      "Close and latch the cover",
+      "Start the engine to confirm the filter is working",
+      "Note which direction the old filter faces",
+      "Locate the filter housing under the hood"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage presents a sequence: locate housing, remove old filter, note orientation, insert new filter, close cover. Noting the orientation is the step immediately following removal. Closing the cover is the final step. Starting the engine comes after closing the cover. Locating the housing is the first step.",
+    "status": "verified",
+    "item_family_id": "pc.passage::air-filter-installation-steps"
+  },
+  {
+    "external_key": "PC-B59-041",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nSolid rockets and liquid-fueled rockets both generate thrust by expelling combustion gases, but they differ in important ways. Solid rockets are simpler to store and ready to launch immediately; liquid-fueled rockets are more complex and require fueling before launch but can be throttled and shut down during flight. Military missiles often use solid fuel for rapid deployment; space launch vehicles more commonly use liquid fuel for precise control.\n\nHow is this passage organized?",
+    "choices": [
+      "By listing the steps needed to launch each type of rocket",
+      "By comparing solid and liquid rockets on several characteristics",
+      "By explaining the history of rocket development from solid to liquid fuel",
+      "By arguing that liquid-fueled rockets are superior to solid rockets"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage systematically compares the two types across storage, launch readiness, throttle control, and common uses -- a clear compare-and-contrast structure. No step-by-step launch procedure is presented. No historical sequence is traced. The passage does not advocate for one type over the other.",
+    "status": "verified",
+    "item_family_id": "pc.passage::solid-vs-liquid-rocket-compare"
+  },
+  {
+    "external_key": "PC-B59-042",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Army introduced the improved body armor system in 2005. Because the new plates covered more of the torso, soldiers who wore them were more likely to survive improvised explosive device blasts. Survival rates in blast injuries improved, but more soldiers required intensive rehabilitation for limb injuries that the older armor had not protected well enough to allow them to survive in the first place.\n\nHow is this passage primarily organized?",
+    "choices": [
+      "By describing a sequence of military procurement decisions",
+      "By presenting a cause and its intended and unintended effects",
+      "By comparing body armor performance across different conflicts",
+      "By arguing that the new armor was ultimately ineffective"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes how improved armor (cause) led to higher survival rates (intended effect) and more intensive rehabilitation needs (unintended consequence of surviving injuries that previously would have been fatal). No procurement sequence is traced. No cross-conflict comparison is made. The passage does not call the armor ineffective.",
+    "status": "verified",
+    "item_family_id": "pc.passage::body-armor-cause-effect"
+  },
+  {
+    "external_key": "PC-B59-043",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nWastewater treatment follows a defined sequence. Raw sewage first passes through screens that remove large solids. The liquid then flows into settling tanks where heavier particles sink. Bacteria in aeration tanks break down dissolved organic matter next. Finally, the treated water is disinfected with chlorine or ultraviolet light before being released into waterways.\n\nAccording to the passage, which step happens immediately before disinfection?",
+    "choices": [
+      "Screening to remove large solids",
+      "Settling in tanks where heavy particles sink",
+      "Bacterial breakdown of dissolved organic matter in aeration tanks",
+      "Release of treated water into waterways"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage describes: screening, settling, bacterial breakdown in aeration tanks, then disinfection. Bacterial treatment is the step immediately before disinfection. Screening is the first step. Settling is the second step. Release into waterways follows disinfection, not precedes it.",
+    "status": "verified",
+    "item_family_id": "pc.passage::wastewater-treatment-sequence"
+  },
+  {
+    "external_key": "PC-B59-044",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nFor decades, lead pipes carried drinking water to homes in many American cities. Because the pipes corroded slowly, the problem went unnoticed. When water chemistry changed in older systems, corrosion accelerated, releasing lead into tap water. Elevated blood-lead levels in children followed, impairing neurological development. The downstream effects of a plumbing decision made generations earlier were still accumulating.\n\nWhich structure best describes this passage?",
+    "choices": [
+      "A list of solutions to the lead pipe contamination problem",
+      "A comparison of lead pipes and copper pipes in urban water systems",
+      "A chain of causes and effects tracing harm from infrastructure to child health",
+      "A chronological history of plumbing regulations in American cities"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage traces a causal chain: lead pipes corrode, chemistry change accelerates corrosion, lead enters water, children develop elevated blood-lead levels, neurological impairment follows. Each event causes the next. No solutions are listed. No pipe comparison is made. While events are roughly chronological, the structure is driven by causation, not a timeline of regulations.",
+    "status": "verified",
+    "item_family_id": "pc.passage::lead-pipes-causal-chain"
+  },
+  {
+    "external_key": "PC-B59-045",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nBefore the development of refrigeration, sodium was used to extend the shelf life of meat, fish, and vegetables. High salt concentrations draw moisture out of food through osmosis, and without sufficient water, bacteria cannot reproduce. Salt also directly inhibits certain bacterial enzymes. Modern food manufacturers continue to use sodium as a preservative, though public health concerns about sodium and cardiovascular disease have prompted reformulation efforts to reduce it.\n\nHow is this passage organized?",
+    "choices": [
+      "By listing the types of food that benefit most from sodium preservation",
+      "By arguing that sodium should be removed from all processed foods",
+      "By explaining how sodium preserves food and then acknowledging a current tension around its use",
+      "By comparing salt preservation to refrigeration as competing technologies"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage first explains the mechanism of sodium preservation (osmosis, bacterial inhibition), notes its continued use, and then acknowledges health-driven reformulation efforts -- a structure that presents the mechanism and then a tension. It does not rank which foods benefit most. It does not call for removing sodium. The comparison to refrigeration is brief background, not the organizing framework.",
+    "status": "verified",
+    "item_family_id": "pc.passage::sodium-preservation-mechanism-tension"
+  },
+  {
+    "external_key": "PC-B59-046",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nTo submit a VA disability claim online, first create an account on VA.gov. Then gather supporting documents, including service records and medical evidence. Next, complete the claim form and upload the documents. After submitting, you will receive a confirmation number and should expect a decision letter within several months.\n\nAccording to the passage, what should you do right after completing the claim form?",
+    "choices": [
+      "Create an account on VA.gov",
+      "Wait for a decision letter",
+      "Gather service records and medical evidence",
+      "Upload the documents"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage sequences: create account, gather documents, complete the form, upload documents, submit and receive confirmation. Uploading documents follows immediately after completing the form. Creating an account is the first step. Waiting for a decision letter comes after submission. Gathering documents is the second step.",
+    "status": "verified",
+    "item_family_id": "pc.passage::va-claim-submission-steps"
+  },
+  {
+    "external_key": "PC-B59-047",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nUrban environments absorb more heat than rural areas because asphalt and concrete store solar energy rather than reflecting it. This stored heat raises nighttime temperatures in cities. Higher overnight temperatures increase air-conditioning use, which burns more electricity, which generates more heat. The problem compounds itself.\n\nThe passage is organized primarily by:",
+    "choices": [
+      "Listing solutions to urban overheating",
+      "Comparing rural and urban temperature data from specific cities",
+      "Describing a chain of causes and effects that reinforce each other",
+      "Presenting the history of heat island research from the 1950s to today"
+    ],
+    "correct_index": 2,
+    "explanation": "Each sentence in the passage is a consequence of the previous one, creating a reinforcing causal loop -- stored heat raises temperatures, which raises AC use, which generates more heat. No solutions are listed. No specific city data is compared. No historical timeline is presented.",
+    "status": "verified",
+    "item_family_id": "pc.passage::heat-island-causal-loop"
+  },
+  {
+    "external_key": "PC-B59-048",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe first transatlantic wireless message was sent in 1901. A decade later, wireless radio was credited with saving over 700 lives when the Titanic sank. By World War I, military forces depended on wireless communication for battlefield coordination. Each advance in capability was met by adversaries seeking to intercept or jam the signals, driving further improvements in encryption and frequency management.\n\nHow is this passage organized?",
+    "choices": [
+      "By comparing military and civilian uses of wireless communication",
+      "By presenting wireless radio development as a chronological sequence of advances driven by need",
+      "By arguing that the Titanic disaster was the key event in wireless history",
+      "By listing the technical requirements for building a transatlantic wireless station"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage moves from 1901 to the Titanic era to World War I, linking each period to a capability advance driven by a new need or challenge -- a chronological cause-and-effect structure. The passage does not compare civilian and military uses in a structured way. The Titanic is one example, not the argument's focus. No construction requirements are listed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::wireless-radio-chronological-advance"
+  },
+  {
+    "external_key": "PC-B59-049",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe medic worked in a methodical way, checking each patient from head to toe before moving to the next. Nothing was skipped and nothing was repeated. Her supervisor later praised the approach as a model for the entire battalion.\n\nAs used in the passage, the word \"methodical\" most nearly means:",
+    "choices": [
+      "Rushed",
+      "Orderly and systematic",
+      "Overly cautious",
+      "Improvised"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes a precise, structured approach -- nothing skipped, nothing repeated -- which aligns with orderly and systematic. Rushed contradicts the careful, thorough description. Overly cautious implies hesitation that the passage does not suggest. Improvised implies unplanned action, which is the opposite of the described method.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-methodical-medic"
+  },
+  {
+    "external_key": "PC-B59-050",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe sergeant's explanation was concise: three sentences, no examples, no repetition. Soldiers who had struggled with the concept in training understood it immediately.\n\nAs used in the passage, the word \"concise\" most nearly means:",
+    "choices": [
+      "Brief and to the point",
+      "Loud and clearly spoken",
+      "Detailed and thorough",
+      "Confusing but accurate"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage illustrates conciseness through three sentences with no extras, making brief and to the point the correct meaning. Loud and clearly spoken describes delivery, not length. Detailed and thorough contradicts the absence of examples. Confusing but accurate contradicts the soldiers' immediate understanding.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-concise-explanation"
+  },
+  {
+    "external_key": "PC-B59-051",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe new policy was designed to streamline the application process by cutting unnecessary steps and eliminating duplicate forms. Applicants reported that the revised procedure took half as long to complete.\n\nAs used in the passage, the word \"streamline\" most nearly means:",
+    "choices": [
+      "Make more complicated",
+      "Decorate with official graphics",
+      "Make more efficient by removing what is unnecessary",
+      "Translate into simpler language"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage explains that streamlining involved cutting steps and eliminating duplicates, resulting in a faster process -- consistent with making more efficient by removing the unnecessary. Making more complicated is the opposite effect. Official graphics are not mentioned. Translating language is unrelated to what the passage describes.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-streamline-process"
+  },
+  {
+    "external_key": "PC-B59-052",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nAfter months of negotiations, both sides reached an accord on the terms of the ceasefire. Officials from each country signed the document at a ceremony attended by international observers.\n\nAs used in the passage, the word \"accord\" most nearly means:",
+    "choices": [
+      "Disagreement",
+      "Demand",
+      "Agreement",
+      "Apology"
+    ],
+    "correct_index": 2,
+    "explanation": "An accord is reached after negotiations and is signed -- context that clearly points to a formal agreement. Disagreement is the opposite outcome of successful negotiations. A demand is issued, not reached together. An apology is not what a ceasefire document represents.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-accord-ceasefire"
+  },
+  {
+    "external_key": "PC-B59-053",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe commander's approach to discipline was even-handed: she applied the same standards to officers and enlisted soldiers alike. Veterans in the unit noted that this impartiality was unusual and that it had quickly earned her the respect of the entire formation.\n\nAs used in the passage, the word \"impartiality\" most nearly means:",
+    "choices": [
+      "Unfair treatment of lower-ranking soldiers",
+      "Applying rules without favoritism toward any group",
+      "Willingness to overlook minor violations",
+      "Strict enforcement only for enlisted personnel"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage uses even-handed and the same standards for all ranks to define impartiality. Applying rules without favoritism captures this exactly. Unfair treatment of lower-ranking soldiers directly contradicts the passage. Overlooking violations is not what equal enforcement means. Strict enforcement only for enlisted is the opposite of the impartial approach described.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-impartiality-commander"
+  },
+  {
+    "external_key": "PC-B59-054",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe engineer called the equipment failure a transient problem, explaining that it had occurred only once, lasted less than a minute, and had not repeated over three weeks of monitoring. Management, initially alarmed, relaxed after hearing the assessment.\n\nAs used in the passage, the word \"transient\" most nearly means:",
+    "choices": [
+      "Permanent and structural",
+      "Brief and not recurring",
+      "Caused by human error",
+      "Dangerous and unpredictable"
+    ],
+    "correct_index": 1,
+    "explanation": "The engineer's supporting description -- occurred once, lasted less than a minute, not repeated -- defines transient as brief and not recurring. Permanent and structural is the opposite of what the engineer describes. Human error is not addressed. Dangerous and unpredictable contradicts management's relaxed reaction after the assessment.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-transient-equipment-failure"
+  },
+  {
+    "external_key": "PC-B59-055",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe cooling vest worked by absorbing heat from the athlete's body core, helping to mitigate the performance loss that typically occurs when core temperature rises above 38.5 degrees Celsius. Runners wearing the vests in trials maintained pace for longer during heat-stress conditions.\n\nAs used in the passage, the word \"mitigate\" most nearly means:",
+    "choices": [
+      "Eliminate completely",
+      "Measure precisely",
+      "Reduce or lessen",
+      "Cause to worsen"
+    ],
+    "correct_index": 2,
+    "explanation": "The vest reduces but does not eliminate the performance loss; mitigate means to lessen or moderate a negative effect. Eliminate completely overstates the effect; the passage describes a partial remedy. Measuring is not what the vest does. Causing to worsen is the opposite of the vest's purpose.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-mitigate-cooling-vest"
+  },
+  {
+    "external_key": "PC-B59-056",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nTLS, the protocol that encrypts data sent between a browser and a server, relies on asymmetric encryption to establish a shared secret key, then switches to faster symmetric encryption for the actual data transfer. The initial exchange is computationally intensive but is done only once per session, making it a pragmatic solution to the speed-versus-security tradeoff.\n\nAs used in the passage, the word \"pragmatic\" most nearly means:",
+    "choices": [
+      "Experimental and unproven",
+      "Theoretical and difficult to implement",
+      "Practical and focused on what works",
+      "Elegant and mathematically perfect"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage describes a solution that trades some complexity at the start for speed during the session -- a trade-off chosen because it works efficiently in practice, which is the definition of pragmatic. Experimental and unproven contradicts the description of TLS as a working protocol. Theoretical and difficult to implement contradicts its routine use. Elegant and mathematically perfect is not implied by a practical compromise.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-pragmatic-tls"
+  }
+]

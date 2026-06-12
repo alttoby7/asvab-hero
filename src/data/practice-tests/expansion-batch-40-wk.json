@@ -1,0 +1,954 @@
+[
+  {
+    "external_key": "WK-B40-001",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "BLUNT most nearly means:",
+    "choices": [
+      "dull",
+      "sharp",
+      "polished",
+      "curved"
+    ],
+    "correct_index": 0,
+    "explanation": "BLUNT describes something that lacks a sharp edge or point, so 'dull' is the best match. 'Sharp' is the direct opposite of blunt. 'Polished' refers to a smooth surface finish, and 'curved' describes shape, neither of which captures the meaning of lacking a keen edge.",
+    "status": "verified",
+    "item_family_id": "wk.headword::blunt"
+  },
+  {
+    "external_key": "WK-B40-002",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "SOMBER most nearly means:",
+    "choices": [
+      "colorful",
+      "gloomy",
+      "cheerful",
+      "noisy"
+    ],
+    "correct_index": 1,
+    "explanation": "SOMBER means dark, dull, or having a serious and gloomy quality, so 'gloomy' is the closest match. 'Cheerful' is the opposite of somber. 'Colorful' and 'noisy' describe appearance and sound respectively, and neither relates to the sense of darkness or seriousness.",
+    "status": "verified",
+    "item_family_id": "wk.headword::somber"
+  },
+  {
+    "external_key": "WK-B40-003",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "COMPLY most nearly means:",
+    "choices": [
+      "resist",
+      "obey",
+      "demand",
+      "ignore"
+    ],
+    "correct_index": 1,
+    "explanation": "COMPLY means to act in accordance with a request, rule, or order, making 'obey' the closest synonym. 'Resist' and 'ignore' both involve refusing to follow instructions, which is the opposite of complying. 'Demand' means to require something of someone else, not to follow a requirement yourself.",
+    "status": "verified",
+    "item_family_id": "wk.headword::comply"
+  },
+  {
+    "external_key": "WK-B40-004",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "PLACID most nearly means:",
+    "choices": [
+      "turbulent",
+      "calm",
+      "anxious",
+      "fierce"
+    ],
+    "correct_index": 1,
+    "explanation": "PLACID means calm, peaceful, and undisturbed, so 'calm' is the best synonym. 'Turbulent' and 'fierce' both suggest agitation or violence, which are opposites of placid. 'Anxious' implies worry and mental unease, not the serene stillness that placid describes.",
+    "status": "verified",
+    "item_family_id": "wk.headword::placid"
+  },
+  {
+    "external_key": "WK-B40-005",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "ADEPT most nearly means:",
+    "choices": [
+      "skilled",
+      "clumsy",
+      "eager",
+      "reluctant"
+    ],
+    "correct_index": 0,
+    "explanation": "ADEPT means highly skilled or proficient at something, making 'skilled' the closest match. 'Clumsy' is nearly the opposite of adept. 'Eager' describes enthusiasm or desire, and 'reluctant' describes unwillingness; neither has anything to do with level of skill.",
+    "status": "verified",
+    "item_family_id": "wk.headword::adept"
+  },
+  {
+    "external_key": "WK-B40-006",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "WANE most nearly means:",
+    "choices": [
+      "increase",
+      "brighten",
+      "strengthen",
+      "diminish"
+    ],
+    "correct_index": 3,
+    "explanation": "WANE means to gradually decrease or decline in size, strength, or intensity, so 'diminish' is the closest match. 'Increase,' 'brighten,' and 'strengthen' all describe growth or improvement, which is the opposite of what wane means.",
+    "status": "verified",
+    "item_family_id": "wk.headword::wane"
+  },
+  {
+    "external_key": "WK-B40-007",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "LAMENT most nearly means:",
+    "choices": [
+      "grieve",
+      "celebrate",
+      "ignore",
+      "mock"
+    ],
+    "correct_index": 0,
+    "explanation": "LAMENT means to feel or express deep sorrow or regret, making 'grieve' the best synonym. 'Celebrate' is the emotional opposite of lamenting. 'Ignore' means to pay no attention, and 'mock' means to ridicule, neither of which reflects the grief and mourning that lament conveys.",
+    "status": "verified",
+    "item_family_id": "wk.headword::lament"
+  },
+  {
+    "external_key": "WK-B40-008",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "FLORID most nearly means:",
+    "choices": [
+      "spare",
+      "subdued",
+      "logical",
+      "elaborate"
+    ],
+    "correct_index": 3,
+    "explanation": "FLORID means excessively decorated or showy, especially in language or style, so 'elaborate' is the best match. 'Spare' and 'subdued' both describe minimalism or restraint, which is the opposite of florid. 'Logical' describes reasoning, not decorative quality.",
+    "status": "verified",
+    "item_family_id": "wk.headword::florid"
+  },
+  {
+    "external_key": "WK-B40-009",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "EQUIVOCATE most nearly means:",
+    "choices": [
+      "mislead with vague language",
+      "state clearly",
+      "argue persuasively",
+      "acknowledge fault"
+    ],
+    "correct_index": 0,
+    "explanation": "EQUIVOCATE means to use ambiguous or unclear expressions to avoid committing to a position, so 'mislead with vague language' is the closest match. 'State clearly' is the direct opposite. 'Argue persuasively' involves taking a firm stance, and 'acknowledge fault' involves honesty, both of which are contrary to equivocation.",
+    "status": "verified",
+    "item_family_id": "wk.headword::equivocate"
+  },
+  {
+    "external_key": "WK-B40-010",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "BRAZEN most nearly means:",
+    "choices": [
+      "timid",
+      "secretive",
+      "bold and shameless",
+      "cautious"
+    ],
+    "correct_index": 2,
+    "explanation": "BRAZEN means bold to the point of being shamelessly obvious, making 'bold and shameless' the closest match. 'Timid' and 'cautious' are opposites of brazen, as they describe holding back rather than acting with open defiance. 'Secretive' implies hiding one's actions, which contradicts the openly defiant quality of brazen behavior.",
+    "status": "verified",
+    "item_family_id": "wk.headword::brazen"
+  },
+  {
+    "external_key": "WK-B40-011",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of HARSH is:",
+    "choices": [
+      "gentle",
+      "loud",
+      "strict",
+      "rough"
+    ],
+    "correct_index": 0,
+    "explanation": "HARSH means severe, rough, or unpleasant, so its opposite is 'gentle,' which means mild and kind. 'Loud' describes volume, not severity. 'Strict' and 'rough' are close in meaning to harsh, not opposite to it.",
+    "status": "verified",
+    "item_family_id": "wk.headword::harsh"
+  },
+  {
+    "external_key": "WK-B40-012",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of OBTAIN is:",
+    "choices": [
+      "acquire",
+      "relinquish",
+      "discover",
+      "gather"
+    ],
+    "correct_index": 1,
+    "explanation": "OBTAIN means to get or acquire something, so its opposite is 'relinquish,' which means to give up or release something. 'Acquire,' 'discover,' and 'gather' all involve getting or collecting things, which is the same direction as obtain, not opposite.",
+    "status": "verified",
+    "item_family_id": "wk.headword::obtain"
+  },
+  {
+    "external_key": "WK-B40-013",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of SERENE is:",
+    "choices": [
+      "calm",
+      "agitated",
+      "peaceful",
+      "quiet"
+    ],
+    "correct_index": 1,
+    "explanation": "SERENE means calm and untroubled, so its opposite is 'agitated,' which means disturbed or excited. 'Calm,' 'peaceful,' and 'quiet' all describe states similar to serene, making them synonyms rather than antonyms.",
+    "status": "verified",
+    "item_family_id": "wk.headword::serene"
+  },
+  {
+    "external_key": "WK-B40-014",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "The opposite of LAX is:",
+    "choices": [
+      "lenient",
+      "loose",
+      "strict",
+      "flexible"
+    ],
+    "correct_index": 2,
+    "explanation": "LAX means not sufficiently strict or careful, so its opposite is 'strict,' which means demanding close adherence to rules. 'Lenient' and 'loose' are close in meaning to lax, not opposite. 'Flexible' suggests adaptability, which is not the same as the firm enforcement that 'strict' implies.",
+    "status": "verified",
+    "item_family_id": "wk.headword::lax"
+  },
+  {
+    "external_key": "WK-B40-015",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of DETER is:",
+    "choices": [
+      "encourage",
+      "discourage",
+      "prevent",
+      "restrain"
+    ],
+    "correct_index": 0,
+    "explanation": "DETER means to discourage or prevent someone from doing something through fear or doubt, so its opposite is 'encourage,' which means to motivate or promote action. 'Discourage,' 'prevent,' and 'restrain' are all synonyms of deter, not antonyms.",
+    "status": "verified",
+    "item_family_id": "wk.headword::deter"
+  },
+  {
+    "external_key": "WK-B40-016",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of OPAQUE is:",
+    "choices": [
+      "dark",
+      "murky",
+      "translucent",
+      "solid"
+    ],
+    "correct_index": 2,
+    "explanation": "OPAQUE means not able to be seen through, so its opposite is 'translucent,' which means allowing light to pass through. 'Dark' and 'murky' both describe poor visibility, which is closer in meaning to opaque rather than opposite. 'Solid' describes physical state, not light transmission.",
+    "status": "verified",
+    "item_family_id": "wk.headword::opaque"
+  },
+  {
+    "external_key": "WK-B40-017",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "The opposite of VINDICATE is:",
+    "choices": [
+      "acquit",
+      "accuse",
+      "clear",
+      "defend"
+    ],
+    "correct_index": 1,
+    "explanation": "VINDICATE means to clear someone of blame or suspicion, so its opposite is 'accuse,' which means to charge someone with wrongdoing. 'Acquit' and 'clear' are both synonyms of vindicate. 'Defend' is similar to vindicate in that it supports rather than opposes someone.",
+    "status": "verified",
+    "item_family_id": "wk.headword::vindicate"
+  },
+  {
+    "external_key": "WK-B40-018",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of TURBULENT is:",
+    "choices": [
+      "violent",
+      "tranquil",
+      "choppy",
+      "stormy"
+    ],
+    "correct_index": 1,
+    "explanation": "TURBULENT means characterized by conflict, confusion, or disorder, so its opposite is 'tranquil,' which means free from disturbance or agitation. 'Violent,' 'choppy,' and 'stormy' all describe conditions of chaos or disruption, making them synonyms of turbulent rather than antonyms.",
+    "status": "verified",
+    "item_family_id": "wk.headword::turbulent"
+  },
+  {
+    "external_key": "WK-B40-019",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of FICKLE is:",
+    "choices": [
+      "capricious",
+      "unstable",
+      "constant",
+      "changeable"
+    ],
+    "correct_index": 2,
+    "explanation": "FICKLE means frequently changing, especially in loyalties or affections, so its opposite is 'constant,' which means remaining the same and not changing. 'Capricious,' 'unstable,' and 'changeable' are all close in meaning to fickle, each describing a lack of reliability or steadiness.",
+    "status": "verified",
+    "item_family_id": "wk.headword::fickle"
+  },
+  {
+    "external_key": "WK-B40-020",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "The opposite of DIMINISH is:",
+    "choices": [
+      "reduce",
+      "lessen",
+      "weaken",
+      "amplify"
+    ],
+    "correct_index": 3,
+    "explanation": "DIMINISH means to make or become smaller or less, so its opposite is 'amplify,' which means to increase or enlarge. 'Reduce,' 'lessen,' and 'weaken' are all synonyms of diminish, each describing a decrease in size, amount, or strength.",
+    "status": "verified",
+    "item_family_id": "wk.headword::diminish"
+  },
+  {
+    "external_key": "WK-B40-021",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The soldier was INSOLENT toward his commanding officer, rolling his eyes and interrupting during the briefing. In this sentence, INSOLENT most nearly means:",
+    "choices": [
+      "disrespectful",
+      "respectful",
+      "nervous",
+      "confused"
+    ],
+    "correct_index": 0,
+    "explanation": "The context shows the soldier acting rudely by rolling his eyes and interrupting, which are behaviors showing a lack of respect. INSOLENT means rude and disrespectful, especially toward someone in authority. 'Respectful' is the opposite of what the sentence describes, and 'nervous' or 'confused' do not account for the defiant quality of the behavior.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::insolent-briefing"
+  },
+  {
+    "external_key": "WK-B40-022",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The package arrived BELATED, reaching the customer two weeks after the promised delivery date. In this sentence, BELATED most nearly means:",
+    "choices": [
+      "early",
+      "delayed",
+      "damaged",
+      "unexpected"
+    ],
+    "correct_index": 1,
+    "explanation": "The context states the package arrived two weeks after the promised date, which indicates it came late. BELATED means coming or happening later than expected. 'Early' is the direct opposite. 'Damaged' and 'unexpected' are not supported by the sentence, which focuses entirely on timing.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::belated-package"
+  },
+  {
+    "external_key": "WK-B40-023",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "The sergeant gave a CURT reply, answering the question with a single word and walking away. In this sentence, CURT most nearly means:",
+    "choices": [
+      "lengthy",
+      "polite",
+      "brief and abrupt",
+      "enthusiastic"
+    ],
+    "correct_index": 2,
+    "explanation": "The context shows a one-word answer followed by walking away, indicating a reply that was both short and dismissive. CURT means brief to the point of being rude. 'Lengthy' is the opposite of a one-word reply. 'Polite' and 'enthusiastic' both suggest positive engagement, which contradicts the coldness the sentence describes.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::curt-sergeant"
+  },
+  {
+    "external_key": "WK-B40-024",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The witness gave a DUBIOUS account of the accident, contradicting herself three times and refusing to answer direct questions. In this sentence, DUBIOUS most nearly means:",
+    "choices": [
+      "reliable",
+      "doubtful",
+      "detailed",
+      "accurate"
+    ],
+    "correct_index": 1,
+    "explanation": "The context shows contradictions and evasion, which are signs the account cannot be trusted. DUBIOUS means uncertain or suspect, so 'doubtful' is the best match. 'Reliable' and 'accurate' describe the opposite of a contradictory account. 'Detailed' describes thoroughness, not trustworthiness.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::dubious-witness"
+  },
+  {
+    "external_key": "WK-B40-025",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "After the long march, the troops became LANGUID, moving slowly and requiring frequent rest breaks even when water was available. In this sentence, LANGUID most nearly means:",
+    "choices": [
+      "energetic",
+      "alert",
+      "frustrated",
+      "sluggish"
+    ],
+    "correct_index": 3,
+    "explanation": "The context describes slow movement and frequent rest stops, indicating a lack of energy. LANGUID means slow and lacking vitality, making 'sluggish' the best match. 'Energetic' and 'alert' describe the opposite state of physical readiness. 'Frustrated' is an emotional state and does not match the physical exhaustion shown in the sentence.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::languid-march"
+  },
+  {
+    "external_key": "WK-B40-026",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The medic remained STOIC throughout the field surgery, showing no emotion even as conditions worsened around her. In this sentence, STOIC most nearly means:",
+    "choices": [
+      "panicked",
+      "compassionate",
+      "indifferent to pain or difficulty",
+      "distracted"
+    ],
+    "correct_index": 2,
+    "explanation": "The context emphasizes that the medic showed no emotion despite worsening conditions, which points to emotional endurance and self-control. STOIC means enduring hardship without showing feelings, making 'indifferent to pain or difficulty' the best match. 'Panicked' and 'distracted' describe a loss of composure, and 'compassionate' describes emotional expression, all of which contrast with stoic restraint.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::stoic-medic"
+  },
+  {
+    "external_key": "WK-B40-027",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "The city's TACIT agreement to overlook minor code violations meant that inspectors never formally approved the building, yet no one raised an objection. In this sentence, TACIT most nearly means:",
+    "choices": [
+      "written",
+      "angry",
+      "disputed",
+      "unspoken"
+    ],
+    "correct_index": 3,
+    "explanation": "The context shows an agreement that was never formally stated or approved, yet existed through inaction. TACIT means understood or implied without being stated directly, so 'unspoken' is the best match. 'Written' is the opposite of something tacit. 'Angry' describes an emotion not mentioned, and 'disputed' suggests conflict, whereas the sentence shows silent acceptance.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::tacit-agreement"
+  },
+  {
+    "external_key": "WK-B40-028",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The crime boss operated through NEFARIOUS means, bribing officials, threatening witnesses, and laundering money through a chain of restaurants. In this sentence, NEFARIOUS most nearly means:",
+    "choices": [
+      "wicked",
+      "clever",
+      "secretive",
+      "profitable"
+    ],
+    "correct_index": 0,
+    "explanation": "The context lists bribery, threats, and money laundering, all of which are criminal and immoral acts. NEFARIOUS means wicked and criminal in nature, making 'wicked' the best match. 'Clever' might describe the methods superficially but does not capture the moral character. 'Secretive' and 'profitable' address concealment and financial gain but miss the core meaning of moral wrongdoing.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::nefarious-operations"
+  },
+  {
+    "external_key": "WK-B40-029",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "The general's OSTENTATIOUS uniform, covered in medals he had not earned and gold trim on every seam, drew ridicule from veteran officers. In this sentence, OSTENTATIOUS most nearly means:",
+    "choices": [
+      "showy",
+      "worn",
+      "official",
+      "modest"
+    ],
+    "correct_index": 0,
+    "explanation": "The context describes a uniform loaded with unearned medals and excessive decoration intended to impress, which defines ostentatious display. OSTENTATIOUS means designed to attract notice and impress others. 'Modest' is the direct opposite, describing understatement. 'Worn' describes condition, and 'official' describes authorization, neither of which fits the sense of deliberate showiness.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::ostentatious-uniform"
+  },
+  {
+    "external_key": "WK-B40-030",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "After aggressive treatment, the patient's fever began to ABATE, dropping two degrees over the course of the evening. In this sentence, ABATE most nearly means:",
+    "choices": [
+      "worsen",
+      "subside",
+      "spread",
+      "stabilize"
+    ],
+    "correct_index": 1,
+    "explanation": "The context shows the fever dropping in temperature after treatment, indicating it was getting less severe. ABATE means to decrease in intensity or subside. 'Worsen' and 'spread' both describe the fever getting worse, which contradicts the two-degree drop mentioned. 'Stabilize' means remaining unchanged rather than declining, so it does not match the downward trend described.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::abate-fever"
+  },
+  {
+    "external_key": "WK-B40-031",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word NOCTURNAL most nearly means:",
+    "choices": [
+      "living underground",
+      "active at night",
+      "preferring cold climates",
+      "moving in groups"
+    ],
+    "correct_index": 1,
+    "explanation": "NOCTURNAL comes from the Latin root NOCT-, meaning night. Animals described as nocturnal are active during the night and rest during the day. 'Living underground' relates to habitat, not time of activity. 'Preferring cold climates' and 'moving in groups' describe temperature preference and social behavior, neither of which connects to the night-focused meaning of NOCT-.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::noct-night-nocturnal"
+  },
+  {
+    "external_key": "WK-B40-032",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The word FORTITUDE most nearly means:",
+    "choices": [
+      "military rank",
+      "physical strength",
+      "protective wall",
+      "courage in hardship"
+    ],
+    "correct_index": 3,
+    "explanation": "FORTITUDE comes from the Latin root FORT-, meaning strong. The word describes mental and emotional strength, specifically the courage to endure pain or difficulty. 'Physical strength' relates to the body, but fortitude is about moral and emotional resilience. 'Military rank' and 'protective wall' (like a fortification) connect to the same root but describe different concepts entirely.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::fort-strong-fortitude"
+  },
+  {
+    "external_key": "WK-B40-033",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word VIVID most nearly means:",
+    "choices": [
+      "faded",
+      "carefully detailed",
+      "intensely bright or lifelike",
+      "barely visible"
+    ],
+    "correct_index": 2,
+    "explanation": "VIVID comes from the Latin root VIV-, meaning alive or lively. Something vivid is strikingly bright, intense, or producing a strong mental image, as if full of life. 'Faded' and 'barely visible' describe the absence of intensity, which is the opposite of vivid. 'Carefully detailed' might describe a vivid image incidentally, but the root meaning is about liveliness and intensity, not precision.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::viv-live-vivid"
+  },
+  {
+    "external_key": "WK-B40-034",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word SENTIMENT most nearly means:",
+    "choices": [
+      "a feeling or emotional opinion",
+      "a logical argument",
+      "a written agreement",
+      "a military signal"
+    ],
+    "correct_index": 0,
+    "explanation": "SENTIMENT comes from the Latin root SENT-, meaning to feel. A sentiment is a view or opinion shaped by emotion rather than pure reason. 'A logical argument' focuses on reasoning, which is the opposite of what sentiment emphasizes. 'A written agreement' and 'a military signal' do not connect to the emotional and feeling-based meaning of the SENT- root.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::sent-feel-sentiment"
+  },
+  {
+    "external_key": "WK-B40-035",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The word REVOKE most nearly means:",
+    "choices": [
+      "to grant permission",
+      "to speak publicly",
+      "to call for assistance",
+      "to cancel or take back"
+    ],
+    "correct_index": 3,
+    "explanation": "REVOKE comes from the Latin root VOC-, meaning to call, and the prefix RE-, meaning back. To revoke is to officially cancel or take back something previously granted, such as a license or privilege. 'To grant permission' is the opposite action. 'To speak publicly' and 'to call for assistance' use the calling sense of VOC- but do not fit the meaning of formally withdrawing something.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::voc-call-revoke"
+  },
+  {
+    "external_key": "WK-B40-036",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word PERJURE most nearly means:",
+    "choices": [
+      "to delay a legal proceeding",
+      "to serve on a jury",
+      "to lie under oath",
+      "to appeal a court decision"
+    ],
+    "correct_index": 2,
+    "explanation": "PERJURE comes from the Latin root JUR-, meaning to swear an oath, and the prefix PER-, meaning wrongly or through. To perjure oneself means to give a false statement after swearing to tell the truth, typically in court. 'To serve on a jury' uses the same JUR- root but describes a different legal role. 'To delay a legal proceeding' and 'to appeal a court decision' are legal actions unrelated to the act of lying under oath.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::jur-oath-perjure"
+  },
+  {
+    "external_key": "WK-B40-037",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word VERDICT most nearly means:",
+    "choices": [
+      "an official decision or judgment",
+      "a formal accusation",
+      "a witness statement",
+      "a sentencing guideline"
+    ],
+    "correct_index": 0,
+    "explanation": "VERDICT comes from the Latin roots VER-, meaning true, and DICT-, meaning to say or speak. A verdict is the formal decision spoken at the conclusion of a legal proceeding, literally a 'true saying.' 'A formal accusation' starts the legal process rather than concluding it. 'A witness statement' is testimony, and 'a sentencing guideline' is a rule, not a final decision.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::ver-true-verdict"
+  },
+  {
+    "external_key": "WK-B40-038",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The word CONDUCIVE most nearly means:",
+    "choices": [
+      "harmful to progress",
+      "requiring direct supervision",
+      "relating to electrical wiring",
+      "making something likely to occur"
+    ],
+    "correct_index": 3,
+    "explanation": "CONDUCIVE comes from the Latin root DUC-, meaning to lead or bring, combined with the prefix CON-, meaning together. Something conducive leads toward or brings about a favorable result, making 'making something likely to occur' the best match. 'Harmful to progress' is the opposite of conducive. 'Requiring direct supervision' and 'relating to electrical wiring' both misapply the conduction sense of the root to unrelated contexts.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::duc-lead-conducive"
+  },
+  {
+    "external_key": "WK-B40-039",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word UNIFORM contains the prefix UNI-, meaning one. UNIFORM most nearly means:",
+    "choices": [
+      "varying in appearance",
+      "separated into parts",
+      "always the same throughout",
+      "randomly arranged"
+    ],
+    "correct_index": 2,
+    "explanation": "The prefix UNI- means one, and FORM means shape or appearance. UNIFORM means having one consistent form or appearance throughout. 'Varying in appearance' and 'randomly arranged' are the opposite of what UNI- conveys. 'Separated into parts' contradicts the idea of oneness that the prefix establishes.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::uni-one-uniform"
+  },
+  {
+    "external_key": "WK-B40-040",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word COOPERATE contains the prefix CO-, meaning together. COOPERATE most nearly means:",
+    "choices": [
+      "to act alone",
+      "to compete against",
+      "to work together",
+      "to take over"
+    ],
+    "correct_index": 2,
+    "explanation": "CO- means together or jointly, and OPERATE means to work or function. COOPERATE therefore means to work together toward a shared goal. 'To act alone' directly contradicts the CO- prefix meaning of togetherness. 'To compete against' and 'to take over' both involve conflict rather than the joint effort that cooperate describes.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::co-together-cooperate"
+  },
+  {
+    "external_key": "WK-B40-041",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The word POSTPONE contains the prefix POST-, meaning after. POSTPONE most nearly means:",
+    "choices": [
+      "to cancel permanently",
+      "to move to an earlier time",
+      "to delay until a later time",
+      "to complete ahead of schedule"
+    ],
+    "correct_index": 2,
+    "explanation": "POST- means after or later, and PONE comes from Latin meaning to place. POSTPONE means to place something after its original time, that is, to delay it. 'To cancel permanently' goes beyond delay to elimination. 'To move to an earlier time' and 'to complete ahead of schedule' both contradict the POST- meaning of placing something later.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::post-after-postpone"
+  },
+  {
+    "external_key": "WK-B40-042",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word SUPERFICIAL contains the prefix SUPER-, meaning above or on top. SUPERFICIAL most nearly means:",
+    "choices": [
+      "extremely thorough",
+      "located deep inside",
+      "highly significant",
+      "existing only on the surface"
+    ],
+    "correct_index": 3,
+    "explanation": "SUPER- means above or on top, and FACIAL relates to face or surface. SUPERFICIAL literally means on the surface, and by extension, dealing only with surface-level concerns without depth. 'Extremely thorough' and 'highly significant' describe the opposite of a surface-level quality. 'Located deep inside' directly contradicts the on-top meaning of SUPER-.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::super-above-superficial"
+  },
+  {
+    "external_key": "WK-B40-043",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word BINOCULAR contains the prefix BI-, meaning two. BINOCULAR most nearly means:",
+    "choices": [
+      "using both eyes",
+      "using one eye",
+      "requiring magnification",
+      "designed for night use"
+    ],
+    "correct_index": 0,
+    "explanation": "BI- means two, and OCULAR relates to the eye. BINOCULAR means involving both eyes simultaneously. 'Using one eye' contradicts the BI- prefix meaning of two. 'Requiring magnification' and 'designed for night use' describe optional features of binocular devices but are not part of the word's core meaning, which focuses on the two-eye structure.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::bi-two-binocular"
+  },
+  {
+    "external_key": "WK-B40-044",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word INAUDIBLE contains the prefix IN-, meaning not, and the root AUD-, meaning hear. INAUDIBLE most nearly means:",
+    "choices": [
+      "too loud to bear",
+      "impossible to hear",
+      "heard from a great distance",
+      "clearly understood"
+    ],
+    "correct_index": 1,
+    "explanation": "IN- negates what follows, and AUDIBLE means capable of being heard. INAUDIBLE therefore means not capable of being heard. 'Too loud to bear' describes the opposite problem of excessive volume rather than insufficient volume. 'Heard from a great distance' and 'clearly understood' both describe successful hearing, which contradicts the IN- prefix negation.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::in-not-inaudible"
+  },
+  {
+    "external_key": "WK-B40-045",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The word CONTRADICT contains the prefix CONTRA-, meaning against. CONTRADICT most nearly means:",
+    "choices": [
+      "to agree with",
+      "to explain clearly",
+      "to assert the opposite of",
+      "to repeat word for word"
+    ],
+    "correct_index": 2,
+    "explanation": "CONTRA- means against, and DICT means to say. CONTRADICT means to say something against what has already been stated, that is, to assert the opposite. 'To agree with' is the opposite of contradicting. 'To explain clearly' and 'to repeat word for word' are forms of communication that do not involve opposition or denial.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::contra-against-contradict"
+  },
+  {
+    "external_key": "WK-B40-046",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word IMMORTAL contains the prefix IM-, meaning not, and the root MORT-, meaning death. IMMORTAL most nearly means:",
+    "choices": [
+      "not subject to death",
+      "subject to disease",
+      "highly respected",
+      "remembered after death"
+    ],
+    "correct_index": 0,
+    "explanation": "IM- negates the following word, and MORTAL means subject to death. IMMORTAL therefore means not subject to death, or living forever. 'Subject to disease' misapplies the root to physical illness rather than death. 'Highly respected' and 'remembered after death' are qualities that can follow from fame but are not what the prefix-root combination literally means.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::im-not-immortal"
+  },
+  {
+    "external_key": "WK-B40-047",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word SEMICIRCLE contains the prefix SEMI-, meaning half. SEMICIRCLE most nearly means:",
+    "choices": [
+      "a complete circle",
+      "a half circle",
+      "a very small circle",
+      "an oval shape"
+    ],
+    "correct_index": 1,
+    "explanation": "SEMI- means half, and CIRCLE refers to a round shape. A SEMICIRCLE is literally half of a circle. 'A complete circle' ignores the SEMI- prefix entirely. 'A very small circle' confuses the prefix meaning of half with a size reduction. 'An oval shape' is a different geometric form that does not result from bisecting a circle.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::semi-half-semicircle"
+  },
+  {
+    "external_key": "WK-B40-048",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The word FORTIFY contains the root FORT-, meaning strong, and the suffix -IFY, meaning to make. FORTIFY most nearly means:",
+    "choices": [
+      "to weaken defenses",
+      "to retreat from a position",
+      "to make stronger or more secure",
+      "to document a location"
+    ],
+    "correct_index": 2,
+    "explanation": "FORT- means strong and -IFY means to make, so FORTIFY literally means to make strong. In military and general contexts it means to strengthen a position or structure against attack. 'To weaken defenses' is the exact opposite. 'To retreat from a position' and 'to document a location' are actions related to military activity but do not connect to the meaning of making something strong.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::ify-make-fortify"
+  },
+  {
+    "external_key": "WK-B40-049",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In which sentence does DRAFT mean a preliminary version of a document?",
+    "choices": [
+      "The team submitted the first DRAFT of the report for review.",
+      "The DRAFT from the open window made the room cold.",
+      "The military DRAFT required all eligible men to register.",
+      "He ordered a DRAFT beer at the pub."
+    ],
+    "correct_index": 0,
+    "explanation": "In choice A, DRAFT refers to an early or unfinished version of a written document submitted for review. In choice B, DRAFT means a current of cold air. In choice C, DRAFT refers to compulsory military service. In choice D, DRAFT beer is beer drawn from a keg rather than a bottle, using an entirely different sense of the word.",
+    "status": "verified",
+    "item_family_id": "wk.headword::draft"
+  },
+  {
+    "external_key": "WK-B40-050",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In which sentence does STRIKE mean to hit with force?",
+    "choices": [
+      "The workers went on STRIKE to demand higher wages.",
+      "The STRIKE zone in baseball is above the knees.",
+      "Lightning can STRIKE the same place twice.",
+      "She bowled a perfect STRIKE in the first frame."
+    ],
+    "correct_index": 2,
+    "explanation": "In choice C, STRIKE means to hit something with force, which is what lightning does when it makes contact with the ground. In choice A, STRIKE means a work stoppage. In choice B, STRIKE zone is a defined area in baseball, not an act of hitting. In choice D, a STRIKE is a bowling term for knocking down all ten pins, a specific sports sense.",
+    "status": "verified",
+    "item_family_id": "wk.headword::strike"
+  },
+  {
+    "external_key": "WK-B40-051",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In which sentence does PLOT mean a scheme or plan?",
+    "choices": [
+      "They buried the time capsule in the back PLOT of the yard.",
+      "The farmer cleared a PLOT of land for the new barn.",
+      "The PLOT of the novel takes place in World War II.",
+      "The rebels PLOT to overthrow the government in secret."
+    ],
+    "correct_index": 3,
+    "explanation": "In choice D, PLOT means to secretly plan or scheme to achieve something, especially something harmful. In choices A and B, PLOT refers to a piece of ground. In choice C, PLOT means the storyline or sequence of events in a narrative, not a secret scheme.",
+    "status": "verified",
+    "item_family_id": "wk.headword::plot"
+  },
+  {
+    "external_key": "WK-B40-052",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In which sentence does CAST mean to throw or project?",
+    "choices": [
+      "The doctor put a CAST on the broken wrist.",
+      "The fisherman CAST his line into the river.",
+      "The director announced the CAST of the new film.",
+      "The bronze sculpture was made using a CAST."
+    ],
+    "correct_index": 1,
+    "explanation": "In choice B, CAST means to throw something through the air, specifically to throw a fishing line. In choice A, CAST means a rigid covering used to immobilize a broken bone. In choice C, CAST refers to the group of performers in a production. In choice D, CAST is a mold used to shape metal.",
+    "status": "verified",
+    "item_family_id": "wk.headword::cast"
+  },
+  {
+    "external_key": "WK-B40-053",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In which sentence does LEAD mean to guide or direct?",
+    "choices": [
+      "The old pipes were made of LEAD, which is toxic.",
+      "She took the LEAD in the race after the first turn.",
+      "The detective followed every LEAD in the case.",
+      "The captain was chosen to LEAD the battalion."
+    ],
+    "correct_index": 3,
+    "explanation": "In choice D, LEAD means to guide, command, or be in charge of a group, which is the verb meaning of directing others. In choice A, LEAD is the heavy metallic element. In choice B, LEAD means the first position in a competition. In choice C, a LEAD is a clue or piece of information in an investigation.",
+    "status": "verified",
+    "item_family_id": "wk.headword::lead"
+  },
+  {
+    "external_key": "WK-B40-054",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In which sentence does COURSE mean the path or direction of movement?",
+    "choices": [
+      "She enrolled in an online COURSE about nutrition.",
+      "The river changed COURSE after the heavy rains.",
+      "The dinner included a three-COURSE meal.",
+      "Of COURSE you are welcome to stay."
+    ],
+    "correct_index": 1,
+    "explanation": "In choice B, COURSE means the route or direction that something follows, which applies to the path a river takes. In choice A, COURSE means a unit of study. In choice C, COURSE refers to a separate part of a meal served in sequence. In choice D, 'of course' is a fixed phrase meaning certainly or naturally, with no directional meaning.",
+    "status": "verified",
+    "item_family_id": "wk.headword::course"
+  },
+  {
+    "external_key": "WK-B40-055",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In which sentence does PRESS mean to apply physical pressure?",
+    "choices": [
+      "Freedom of the PRESS is protected by the First Amendment.",
+      "The PRESS conference drew dozens of reporters.",
+      "She ironed her uniform with a hot PRESS.",
+      "The officer used a hydraulic PRESS to compact the material."
+    ],
+    "correct_index": 3,
+    "explanation": "In choice D, PRESS refers to a machine that applies force or compression to compact or shape materials. This matches the meaning of applying physical pressure. In choice A, 'the press' refers to news media collectively. In choice B, a press conference is a meeting with journalists, again using the media sense. In choice C, a 'press' in garment care describes the act of ironing, which is the closest distractor but uses PRESS as a noun for the ironing action rather than describing applied mechanical pressure.",
+    "status": "verified",
+    "item_family_id": "wk.headword::press"
+  },
+  {
+    "external_key": "WK-B40-056",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In which sentence does MINOR mean less important or of smaller significance?",
+    "choices": [
+      "The child was still a MINOR and could not sign the contract.",
+      "She decided to MINOR in history alongside her business degree.",
+      "The repairman fixed a MINOR crack in the wall.",
+      "The song was written in a MINOR key, giving it a somber tone."
+    ],
+    "correct_index": 2,
+    "explanation": "In choice C, MINOR means small in degree or not very serious, which reflects the meaning of being less important or significant. In choice A, MINOR refers to a person who has not yet reached the age of legal adulthood. In choice B, MINOR used as a verb means to study a secondary academic subject. In choice D, a MINOR key is a musical mode with a characteristic sound, not a statement about significance.",
+    "status": "verified",
+    "item_family_id": "wk.headword::minor"
+  }
+]

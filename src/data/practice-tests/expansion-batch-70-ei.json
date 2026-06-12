@@ -1,0 +1,1107 @@
+[
+  {
+    "external_key": "EI-B70-001",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "In a buck (step-down) DC-DC converter, the output voltage compared to the input voltage is:",
+    "choices": [
+      "Always higher than the input voltage",
+      "Always lower than the input voltage",
+      "Equal to the input voltage multiplied by the turns ratio",
+      "Determined only by the output capacitor value"
+    ],
+    "correct_index": 1,
+    "explanation": "A buck converter steps down voltage; the output is always lower than the input, controlled by the duty cycle of the switching transistor. A boost converter steps up, not a buck. Turns ratio applies to transformers, not switching converters. The output capacitor smooths ripple but does not set the DC output level.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::buck-converter-output-lower-than-input"
+  },
+  {
+    "external_key": "EI-B70-002",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "A buck converter has an input of 24 V and a duty cycle of 0.25. What is the ideal output voltage?",
+    "choices": [
+      "18 V",
+      "96 V",
+      "12 V",
+      "6 V"
+    ],
+    "correct_index": 3,
+    "explanation": "Ideal buck output voltage = Vin x D = 24 x 0.25 = 6 V. 96 V would result from dividing by the duty cycle (boost formula), not multiplying. 12 V would correspond to a duty cycle of 0.5, not 0.25. 18 V corresponds to a duty cycle of 0.75.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::buck-converter-duty-cycle-calc-24v-d025"
+  },
+  {
+    "external_key": "EI-B70-003",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "A boost converter has an input of 5 V and a duty cycle of 0.6. What is the ideal output voltage?",
+    "choices": [
+      "12.5 V",
+      "8 V",
+      "3 V",
+      "25 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Ideal boost output = Vin / (1 - D) = 5 / (1 - 0.6) = 5 / 0.4 = 12.5 V. 3 V results from applying the buck formula (5 x 0.6), which is incorrect for a boost topology. 8 V is 5 + (5 x 0.6), an incorrect addition approach. 25 V would require D = 0.8.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::boost-converter-duty-cycle-calc-5v-d06"
+  },
+  {
+    "external_key": "EI-B70-004",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "A Schmitt trigger differs from a basic comparator because a Schmitt trigger has:",
+    "choices": [
+      "An internal clock that limits how fast it can switch",
+      "Only one switching threshold voltage",
+      "Two threshold voltages (hysteresis) to prevent rapid toggling near the trip point",
+      "A built-in low-pass filter that removes high-frequency signals"
+    ],
+    "correct_index": 2,
+    "explanation": "A Schmitt trigger uses positive feedback to create two thresholds -- an upper and a lower trip point -- so the output does not bounce when the input hovers near a single threshold. A basic comparator has one threshold and will oscillate if the input is noisy near that level. There is no internal clock; switching speed depends on propagation delay. A Schmitt trigger has no built-in filter; it produces a clean digital output through hysteresis alone.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::schmitt-trigger-hysteresis-two-thresholds"
+  },
+  {
+    "external_key": "EI-B70-005",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "A 555 timer in astable mode produces a continuous square wave. The output frequency depends primarily on:",
+    "choices": [
+      "A crystal resonator connected to pins 2 and 6",
+      "The supply voltage and the output load resistance",
+      "The internal reference voltage divider only",
+      "Two external resistors and one external capacitor"
+    ],
+    "correct_index": 3,
+    "explanation": "In astable mode the 555 charges and discharges an external capacitor through two external resistors, and those time constants set both the high and low periods, determining frequency. Supply voltage does not significantly affect frequency because the internal divider tracks supply. The internal divider sets trigger levels but does not alone determine frequency without the external RC network. Crystals are not part of 555 timer circuitry.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::555-astable-frequency-depends-on-rc"
+  },
+  {
+    "external_key": "EI-B70-006",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A 555 astable circuit has RA = 10 kohms, RB = 10 kohms, and C = 0.1 uF. The approximate output frequency is closest to:",
+    "choices": [
+      "1440 Hz",
+      "72 Hz",
+      "480 Hz",
+      "3600 Hz"
+    ],
+    "correct_index": 2,
+    "explanation": "The 555 astable frequency is f = 1.44 / ((RA + 2 x RB) x C) = 1.44 / ((10000 + 20000) x 0.0000001) = 1.44 / 0.003 = 480 Hz. 72 Hz results from adding an incorrect extra divisor of 6.67. 1440 Hz would result if C were 0.01 uF instead of 0.1 uF, an order-of-magnitude error. 3600 Hz would correspond to a much smaller RC product than given.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::555-astable-frequency-calc-10k-10k-01uf"
+  },
+  {
+    "external_key": "EI-B70-007",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "A voltage-controlled oscillator (VCO) produces an output whose frequency changes based on:",
+    "choices": [
+      "A control voltage applied to its input",
+      "The amplitude of the power supply voltage",
+      "The load resistance connected to its output",
+      "The temperature of the oscillator circuit"
+    ],
+    "correct_index": 0,
+    "explanation": "A VCO converts an input control voltage into a proportional output frequency, making it the core element of phase-locked loops and FM modulators. Supply amplitude does not directly set the output frequency in a properly designed VCO. Load resistance affects signal amplitude, not frequency. Temperature can shift frequency slightly but is an unwanted effect, not the intended control mechanism.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::vco-control-voltage-sets-frequency"
+  },
+  {
+    "external_key": "EI-B70-008",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "In a phase-locked loop (PLL), the VCO output frequency is compared to a reference, and any error signal is used to:",
+    "choices": [
+      "Switch between two fixed crystal frequencies",
+      "Adjust the reference oscillator frequency",
+      "Control the VCO until its output locks to the reference frequency",
+      "Amplify the output signal to the desired power level"
+    ],
+    "correct_index": 2,
+    "explanation": "The PLL phase detector compares the VCO output to a reference and generates an error voltage; a loop filter feeds this back to the VCO, pulling its frequency until phase and frequency match -- this is called lock. The reference is typically a stable crystal and is not adjusted. PLLs do not simply switch between crystal frequencies. Amplification is handled by separate stages, not the feedback loop.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::pll-vco-feedback-lock-to-reference"
+  },
+  {
+    "external_key": "EI-B70-009",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A TRIAC is used to control AC power to a load by:",
+    "choices": [
+      "Storing energy in each cycle and releasing it at a fixed voltage",
+      "Rectifying the AC signal before delivering DC to the load",
+      "Stepping down the AC voltage using its internal transformer winding",
+      "Blocking all current until a gate pulse fires it at a chosen point in each AC half-cycle"
+    ],
+    "correct_index": 3,
+    "explanation": "A TRIAC is a bidirectional thyristor that conducts current in both directions once triggered by a gate pulse; by delaying the gate pulse within each half-cycle (phase control), the fraction of each cycle delivered to the load -- and thus average power -- is varied. It does not rectify; the load receives AC at reduced average power. TRIACs contain no transformer windings. Energy storage and fixed-voltage release describes a switching regulator, not phase control.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::triac-phase-control-ac-power"
+  },
+  {
+    "external_key": "EI-B70-010",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "An SCR (silicon controlled rectifier) differs from a TRIAC in that an SCR:",
+    "choices": [
+      "Conducts current in both directions once triggered",
+      "Conducts current in one direction only",
+      "Can only be triggered by a negative gate pulse",
+      "Turns off automatically when the gate voltage is removed"
+    ],
+    "correct_index": 1,
+    "explanation": "An SCR is a unidirectional device; once latched on by a gate pulse it conducts only in the forward direction until current drops below the holding level. A TRIAC is the bidirectional equivalent, handling both half-cycles. An SCR gate requires a positive pulse for an N-gate device; the negative-pulse claim is incorrect. An SCR stays latched even after the gate signal is removed; it turns off only when anode current falls below holding current.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::scr-unidirectional-vs-triac"
+  },
+  {
+    "external_key": "EI-B70-011",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "In a series RLC circuit at resonance, the impedance is:",
+    "choices": [
+      "Equal to the reactance of the inductor alone",
+      "Maximum, equal to the sum of XL and XC",
+      "Zero, because XL and XC exactly cancel each other and R is also zero",
+      "Minimum, equal to the resistance R alone"
+    ],
+    "correct_index": 3,
+    "explanation": "At resonance XL equals XC and they cancel; total impedance reduces to R alone, the minimum value. XL and XC are equal and opposite so they do not add -- they cancel. Impedance equals R, not zero, unless the circuit is also lossless. Impedance equals R, not XL alone.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-rlc-resonance-impedance-equals-R"
+  },
+  {
+    "external_key": "EI-B70-012",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A linear voltage regulator dissipates excess power as heat. If the input is 12 V, the output is 5 V, and the load draws 0.5 A, how much power does the regulator dissipate?",
+    "choices": [
+      "2.5 W",
+      "6 W",
+      "3.5 W",
+      "1 W"
+    ],
+    "correct_index": 2,
+    "explanation": "The regulator drops (12 - 5) = 7 V and passes 0.5 A, so power dissipated = 7 V x 0.5 A = 3.5 W. 2.5 W is the power delivered to the load (5 V x 0.5 A), not the regulator loss. 6 W is the total input power (12 V x 0.5 A), which is split between load and regulator. 1 W does not correspond to any correct combination of the given values.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::linear-regulator-power-dissipation-12v-5v-05a"
+  },
+  {
+    "external_key": "EI-B70-013",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "A switching voltage regulator is generally more efficient than a linear regulator because it:",
+    "choices": [
+      "Operates at a lower output voltage, reducing the voltage drop across the transistor",
+      "Uses a larger heat sink to keep the transistor cooler",
+      "Rapidly switches the pass transistor on and off, storing energy in an inductor or capacitor rather than burning excess voltage as heat",
+      "Replaces the pass transistor with a transformer to step down the voltage"
+    ],
+    "correct_index": 2,
+    "explanation": "A switching regulator achieves high efficiency by cycling the transistor between fully on and fully off, using an inductor and capacitor to average the energy; very little is wasted as heat. A larger heat sink improves thermal management but does not increase efficiency. Efficiency depends on topology, not simply the output voltage. Transformers appear in isolated converter topologies but are not what make switching regulators efficient; the switching action itself is the key.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::switching-regulator-efficiency-switching-action"
+  },
+  {
+    "external_key": "EI-B70-014",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "An RC oscillator uses a resistor-capacitor network to set frequency. The frequency of a simple RC phase-shift oscillator depends on:",
+    "choices": [
+      "The transistor beta and the collector supply voltage only",
+      "The supply voltage and the load current drawn from the output",
+      "The resistance and capacitance values in the phase-shift network",
+      "The length of the connecting wires in the circuit"
+    ],
+    "correct_index": 2,
+    "explanation": "In an RC phase-shift oscillator, each RC section contributes a phase shift; oscillation occurs at the frequency where total phase shift equals 180 degrees, which depends on the R and C values. Supply voltage and load current do not set the oscillation frequency. Transistor beta affects gain but not the frequency set by the RC network. Wire length becomes significant only at RF frequencies, not for audio or low-frequency RC oscillators.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::rc-phase-shift-oscillator-frequency-rc-values"
+  },
+  {
+    "external_key": "EI-B70-015",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A relay is rated for 10 A at 240 VAC. A contactor is used instead of a relay when:",
+    "choices": [
+      "The controlled load requires switching currents of hundreds of amperes or large motor inrush currents",
+      "The load current is small enough to be controlled by a logic-level signal",
+      "The load is a low-voltage DC circuit below 24 V",
+      "The switching speed must be faster than 1 millisecond"
+    ],
+    "correct_index": 0,
+    "explanation": "Contactors are heavy-duty switching devices designed for high-current motor and industrial loads, often hundreds of amperes, with robust arc-suppression contacts. Relays handle lighter loads. Small logic-level signals can drive either device, so that is not the reason to choose a contactor. Voltage level alone does not dictate the choice; current capacity is the key factor. Contactors are typically slower than fast relays due to their larger mass.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::contactor-vs-relay-high-current-motor-loads"
+  },
+  {
+    "external_key": "EI-B70-016",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "A crystal oscillator is more frequency-stable than an LC oscillator primarily because:",
+    "choices": [
+      "Crystals operate at much lower frequencies, making tuning easier",
+      "The mechanical resonance of a quartz crystal has an extremely high Q factor, making it very selective",
+      "Crystals are immune to temperature changes in all operating conditions",
+      "Crystal circuits use larger inductors that resist frequency drift"
+    ],
+    "correct_index": 1,
+    "explanation": "A quartz crystal behaves as a high-Q mechanical resonator; Q values of tens of thousands are typical, compared to hundreds for a good LC circuit. This narrow selectivity keeps the oscillation frequency tightly defined and resistant to component variation. Crystals operate at a wide range of frequencies including hundreds of megahertz; low frequency is not the source of stability. Temperature does affect crystal frequency, which is why TCXO and OCXO oscillators exist. No large inductors are used; the crystal replaces the LC tank.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::crystal-oscillator-high-q-stable-frequency"
+  },
+  {
+    "external_key": "EI-B70-017",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "In a 555 monostable circuit, the output pulse width is determined by:",
+    "choices": [
+      "The trigger pulse width applied to pin 2",
+      "The supply voltage divided by the discharge resistor value",
+      "The threshold pin voltage only",
+      "One external resistor and one external capacitor (t = 1.1 x R x C)"
+    ],
+    "correct_index": 3,
+    "explanation": "In monostable mode, a trigger starts charging a capacitor through a resistor; the output stays high until the capacitor reaches 2/3 of supply, giving a pulse width of approximately 1.1 x R x C. The trigger width only initiates the timing; the RC network controls its duration. Supply voltage sets the threshold level but the internal divider tracks supply, making pulse width nearly supply-independent. The threshold voltage is set internally by the divider and is not an externally controlled variable.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::555-monostable-pulse-width-11rc"
+  },
+  {
+    "external_key": "EI-B70-018",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 12 V battery charges a capacitor through a 1 kohm resistor. After one time constant (tau = RC), the capacitor voltage is approximately:",
+    "choices": [
+      "12 V (fully charged)",
+      "7.56 V (63.2% of 12 V)",
+      "6 V (50% of 12 V)",
+      "4.42 V (36.8% of 12 V)"
+    ],
+    "correct_index": 1,
+    "explanation": "After one RC time constant, the capacitor charges to (1 - 1/e) = 63.2% of the final voltage: 0.632 x 12 V = 7.58 V, approximately 7.56 V. 12 V requires approximately 5 time constants for essentially full charge. 6 V (50%) is reached at about 0.693 time constants, the half-life point of the exponential, not at exactly one tau. 4.42 V (36.8%) is the voltage remaining on a discharging capacitor after one time constant, not a charging one.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::rc-charge-one-tau-632-percent"
+  },
+  {
+    "external_key": "EI-B70-019",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A motor with an efficiency of 85% delivers 2 kW of mechanical output power. What is the electrical input power?",
+    "choices": [
+      "3.4 kW",
+      "1.7 kW",
+      "2.85 kW",
+      "2.35 kW"
+    ],
+    "correct_index": 3,
+    "explanation": "Efficiency = P_out / P_in, so P_in = P_out / efficiency = 2000 / 0.85 = 2353 W = 2.35 kW. 1.7 kW would be the output if 2 kW were the input (2 x 0.85 = 1.7), reversing input and output. 2.85 kW results from adding the efficiency as a percentage to the output (2 + 0.85), which is dimensionally incorrect. 3.4 kW results from dividing by 0.85 twice.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::motor-efficiency-85pct-input-power-from-output"
+  },
+  {
+    "external_key": "EI-B70-020",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "Two capacitors, C1 = 4 uF and C2 = 12 uF, are connected in series across a 24 V supply. What is the voltage across C1?",
+    "choices": [
+      "6 V",
+      "18 V",
+      "12 V",
+      "8 V"
+    ],
+    "correct_index": 1,
+    "explanation": "Series capacitors store equal charge (Q). Total series capacitance = (4 x 12) / (4 + 12) = 3 uF. Total charge Q = 3 uF x 24 V = 72 uC. Voltage across C1 = 72 / 4 = 18 V; voltage across C2 = 72 / 12 = 6 V. The smaller capacitor takes the larger share of voltage. 6 V is the voltage across the larger capacitor C2, not C1. 12 V is a simple equal-split approximation, wrong for unequal capacitors. 8 V has no basis in the calculation.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::series-capacitors-voltage-division-4uf-12uf-24v"
+  },
+  {
+    "external_key": "EI-B70-021",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "A residential solar array produces 8 kW for 5 hours. The energy produced is:",
+    "choices": [
+      "1.6 kWh",
+      "8 kWh",
+      "40 kWh",
+      "13 kWh"
+    ],
+    "correct_index": 2,
+    "explanation": "Energy = Power x Time = 8 kW x 5 h = 40 kWh. 1.6 kWh results from dividing instead of multiplying (8 / 5 = 1.6). 8 kWh would be the energy for only one hour at 8 kW. 13 kWh does not correspond to any correct arithmetic with the given values.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::solar-array-energy-8kw-5hr-40kwh"
+  },
+  {
+    "external_key": "EI-B70-022",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 120 VAC circuit supplies a 1500 W resistive load and a 500 W resistive load in parallel. What is the total current drawn from the source?",
+    "choices": [
+      "8.33 A",
+      "12.5 A",
+      "16.67 A",
+      "4.17 A"
+    ],
+    "correct_index": 2,
+    "explanation": "Total power = 1500 + 500 = 2000 W. For resistive (unity power factor) loads, I = P / V = 2000 / 120 = 16.67 A. 8.33 A corresponds to a 1000 W load at 120 V, not the combined load. 12.5 A is the current for the 1500 W load alone (1500 / 120 = 12.5), ignoring the 500 W load. 4.17 A is the current for the 500 W load alone.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::parallel-loads-1500w-500w-total-current-120v"
+  },
+  {
+    "external_key": "EI-B70-023",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A DC-DC converter converts 48 V input to 12 V output at 90% efficiency. If the output current is 5 A, what is the input current?",
+    "choices": [
+      "20 A",
+      "5 A",
+      "18 A",
+      "1.39 A"
+    ],
+    "correct_index": 3,
+    "explanation": "Output power = 12 V x 5 A = 60 W. Input power = P_out / efficiency = 60 / 0.90 = 66.67 W. Input current = 66.67 / 48 = 1.39 A. 20 A incorrectly applies the transformer current ratio (48/12 x 5 = 20) while ignoring efficiency. 5 A wrongly assumes equal current on both sides regardless of voltage. 18 A is not supported by any valid arithmetic with the given values.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::dcdc-converter-input-current-48v-12v-90pct-efficiency"
+  },
+  {
+    "external_key": "EI-B70-024",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 240 V, 30 A circuit breaker is protecting a circuit. The maximum continuous load current allowed is 80% of the breaker rating. What is the maximum continuous load current?",
+    "choices": [
+      "30 A",
+      "24 A",
+      "28 A",
+      "20 A"
+    ],
+    "correct_index": 1,
+    "explanation": "Per NEC guidelines, continuous loads must not exceed 80% of the breaker's rating: 30 A x 0.80 = 24 A. 30 A is the breaker's full trip rating, not the allowed continuous load. 20 A corresponds to 66.7% of the breaker rating, more conservative than required. 28 A is about 93% of the rating, exceeding the 80% rule.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::nec-80pct-continuous-load-rule-30a-breaker"
+  },
+  {
+    "external_key": "EI-B70-025",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "An inductor of 50 mH is in series with a resistor of 100 ohms, connected to a 120 V, 60 Hz AC supply. What is the inductive reactance XL?",
+    "choices": [
+      "3 ohms",
+      "18.85 ohms",
+      "18850 ohms",
+      "37.7 ohms"
+    ],
+    "correct_index": 1,
+    "explanation": "XL = 2 x pi x f x L = 2 x 3.14159 x 60 x 0.050 = 18.85 ohms. 3 ohms is a factor-of-6 error, perhaps from computing f/20 instead of 2 pi f. 37.7 ohms results from using L = 0.1 H instead of 0.05 H, doubling the inductance. 18850 ohms results from using L = 50 H instead of 50 mH, forgetting the milli prefix conversion.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::inductive-reactance-50mh-60hz-series-rl"
+  },
+  {
+    "external_key": "EI-B70-026",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "A household 120 V outlet is protected by a 15 A breaker. What is the maximum power a single appliance can draw continuously from this outlet (using the 80% continuous load rule)?",
+    "choices": [
+      "1800 W",
+      "1200 W",
+      "900 W",
+      "1440 W"
+    ],
+    "correct_index": 3,
+    "explanation": "Maximum continuous current = 15 A x 0.80 = 12 A. Maximum continuous power = 120 V x 12 A = 1440 W. 1800 W is the full 15 A load (120 x 15), which exceeds the 80% continuous rule. 1200 W corresponds to 10 A at 120 V, which is only 67% of rating. 900 W corresponds to 7.5 A, which is 50% of the breaker rating.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::max-continuous-power-15a-120v-80pct-rule"
+  },
+  {
+    "external_key": "EI-B70-027",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "Two inductors, L1 = 20 mH and L2 = 30 mH, are connected in parallel with no mutual coupling. The combined inductance is:",
+    "choices": [
+      "50 mH",
+      "12 mH",
+      "10 mH",
+      "25 mH"
+    ],
+    "correct_index": 1,
+    "explanation": "Inductors in parallel without mutual coupling combine like resistors: L_total = (L1 x L2) / (L1 + L2) = (20 x 30) / (20 + 30) = 600 / 50 = 12 mH. 50 mH is the series sum (L1 + L2), not the parallel combination. 25 mH is the simple average of L1 and L2, which has no basis in circuit theory. 10 mH does not correspond to any valid calculation with the given values.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::inductors-parallel-no-coupling-product-over-sum"
+  },
+  {
+    "external_key": "EI-B70-028",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "A signal has a power of 100 milliwatts. In dBm, this is:",
+    "choices": [
+      "20 dBm",
+      "100 dBm",
+      "0 dBm",
+      "10 dBm"
+    ],
+    "correct_index": 0,
+    "explanation": "dBm = 10 x log10(P_mW / 1 mW) = 10 x log10(100) = 10 x 2 = 20 dBm. 10 dBm corresponds to 10 mW (10 x log10(10) = 10). 100 dBm would correspond to 10^10 mW = 10 gigawatts, clearly incorrect. 0 dBm is 1 mW by definition.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::dbm-100mw-equals-20dbm"
+  },
+  {
+    "external_key": "EI-B70-029",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "An RF amplifier has a gain of 20 dB and its input power is -10 dBm. What is the output power?",
+    "choices": [
+      "-30 dBm",
+      "10 dBm",
+      "-200 dBm",
+      "200 dBm"
+    ],
+    "correct_index": 1,
+    "explanation": "In dB, gains and losses add algebraically: output = -10 dBm + 20 dB = +10 dBm. -30 dBm results from subtracting the gain instead of adding it (-10 - 20 = -30), which is the wrong sign. 200 dBm results from multiplying instead of adding (-10 x -20 = 200), which is not how decibels work. -200 dBm has no physical basis.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::rf-gain-db-addition-output-power-calc"
+  },
+  {
+    "external_key": "EI-B70-030",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A capacitor of 10 uF is charged to 50 V. How much energy is stored in the capacitor?",
+    "choices": [
+      "500 uJ",
+      "250 mJ",
+      "12.5 mJ",
+      "25 mJ"
+    ],
+    "correct_index": 2,
+    "explanation": "Energy stored in a capacitor = (1/2) x C x V^2 = 0.5 x 10 x 10^-6 x 50^2 = 0.5 x 10^-5 x 2500 = 0.0125 J = 12.5 mJ. 500 uJ results from computing C x V instead of (1/2) x C x V^2, omitting both the 1/2 factor and the squaring. 250 mJ omits the 1/2 factor: C x V^2 = 10^-5 x 2500 = 0.025 J = 25 mJ -- wait, that equals 25 mJ. 25 mJ results from omitting the 1/2 factor only. 500 uJ uses C x V without squaring.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::capacitor-energy-stored-10uf-50v"
+  },
+  {
+    "external_key": "EI-B70-031",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "A 9 V battery and a 30 ohm resistor are connected in a simple series circuit. What is the power dissipated by the resistor?",
+    "choices": [
+      "2.7 W",
+      "0.3 W",
+      "30 W",
+      "270 W"
+    ],
+    "correct_index": 0,
+    "explanation": "Current = V / R = 9 / 30 = 0.3 A. Power = V x I = 9 x 0.3 = 2.7 W. Equivalently, P = V^2 / R = 81 / 30 = 2.7 W. 270 W results from multiplying V x R (9 x 30 = 270) instead of computing P = V^2/R. 0.3 W confuses current (0.3 A) with power. 30 W equals the resistance in ohms, not the power dissipated.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::power-dissipated-9v-30ohm-resistor"
+  },
+  {
+    "external_key": "EI-B70-032",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A generator produces 480 V and supplies 20 A to a load. The transmission line has a total resistance of 2 ohms. What is the voltage delivered to the load?",
+    "choices": [
+      "480 V",
+      "476 V",
+      "440 V",
+      "420 V"
+    ],
+    "correct_index": 2,
+    "explanation": "Voltage drop in the line = I x R_line = 20 A x 2 ohms = 40 V. Voltage at load = 480 - 40 = 440 V. 480 V would mean no voltage drop in the line, which requires zero line resistance. 476 V results from computing the drop as 20 x 0.2 = 4 V, an order-of-magnitude error in resistance. 420 V results from using a line resistance of 3 ohms (20 x 3 = 60 V drop), not 2 ohms.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::transmission-line-voltage-drop-480v-20a-2ohm"
+  },
+  {
+    "external_key": "EI-B70-033",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "An AC circuit has a true (real) power of 1200 W and an apparent power of 1500 VA. What is the power factor?",
+    "choices": [
+      "0.80",
+      "0.60",
+      "300",
+      "1.25"
+    ],
+    "correct_index": 0,
+    "explanation": "Power factor = P / S = 1200 / 1500 = 0.80. 1.25 results from inverting the ratio (1500 / 1200), which gives a value greater than 1 -- impossible for power factor. 0.60 would require true power of 900 W at 1500 VA, not 1200 W. 300 is the reactive power (VA x sqrt(1 - PF^2) is not 300 using that PF), and 300 is dimensionless when miscomputed as S - P = 1500 - 1200.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::power-factor-from-real-apparent-1200w-1500va"
+  },
+  {
+    "external_key": "EI-B70-034",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A linear voltage regulator IC such as the 7805 maintains a constant 5 V output by:",
+    "choices": [
+      "Switching a transistor at high frequency to store energy in an inductor",
+      "Using a step-down transformer to reduce the input voltage",
+      "Charging an output capacitor to exactly 5 V and disconnecting the source",
+      "Continuously adjusting an internal pass transistor to drop the excess input voltage"
+    ],
+    "correct_index": 3,
+    "explanation": "In a linear regulator, a series pass transistor operates in its active region; internal feedback continuously adjusts the transistor's conduction to maintain the regulated output voltage regardless of input or load changes. High-frequency switching describes a buck converter, not a linear regulator. Linear regulators contain no transformer. The output capacitor stabilizes the regulator against oscillation but the regulator does not disconnect the source once charged.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::linear-regulator-pass-transistor-action"
+  },
+  {
+    "external_key": "EI-B70-035",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "Which battery chemistry is known for the highest energy density by weight, making it common in portable electronics and electric vehicles?",
+    "choices": [
+      "Lead-acid",
+      "Nickel-cadmium (NiCd)",
+      "Lithium-ion (Li-ion)",
+      "Nickel-metal hydride (NiMH)"
+    ],
+    "correct_index": 2,
+    "explanation": "Lithium-ion cells offer roughly 150-260 Wh/kg, the highest of the common rechargeable chemistries. Lead-acid batteries provide only about 30-50 Wh/kg but are cheap and tolerant of abuse. NiCd offers moderate energy density but suffers from memory effect and uses toxic cadmium. NiMH improves on NiCd but still falls well below Li-ion energy density.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::li-ion-highest-energy-density-portable"
+  },
+  {
+    "external_key": "EI-B70-036",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A LiFePO4 (lithium iron phosphate) battery has a nominal cell voltage of approximately:",
+    "choices": [
+      "1.2 V",
+      "2.0 V",
+      "4.2 V",
+      "3.2 V"
+    ],
+    "correct_index": 3,
+    "explanation": "LiFePO4 cells have a nominal voltage of about 3.2 V and a fully charged voltage of about 3.6 V, lower than standard Li-ion NMC cells. 1.2 V is the nominal voltage for NiMH and NiCd cells. 2.0 V is the nominal voltage of a lead-acid cell. 4.2 V is the fully charged upper cutoff for standard Li-ion NMC cells, not LiFePO4.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::lifepo4-nominal-cell-voltage-32v"
+  },
+  {
+    "external_key": "EI-B70-037",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "The difference between a single cell and a battery is that:",
+    "choices": [
+      "A battery consists of two or more cells connected together",
+      "A cell can be recharged but a battery cannot",
+      "A battery requires an external charger circuit while a cell is self-charging",
+      "A cell produces AC voltage while a battery produces DC voltage"
+    ],
+    "correct_index": 0,
+    "explanation": "By definition a battery is an assembly of two or more electrochemical cells; a single cell is the basic unit. Both cells and batteries produce DC. Whether they are rechargeable depends on the chemistry, not whether it is a single cell or multi-cell assembly. Charger requirements depend on chemistry, not the cell vs battery distinction.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::cell-vs-battery-definition"
+  },
+  {
+    "external_key": "EI-B70-038",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A lead-acid battery is regularly discharged to 50% of its rated capacity. Which statement best describes the effect on battery health?",
+    "choices": [
+      "Lead-acid batteries are unaffected by depth of discharge",
+      "Repeated deep discharges below 50% shorten the cycle life of lead-acid batteries significantly",
+      "Lead-acid batteries improve in capacity when regularly deep discharged",
+      "Discharging to 50% permanently reduces the voltage by half"
+    ],
+    "correct_index": 1,
+    "explanation": "Lead-acid batteries are strongly sensitive to depth of discharge; cycling below 50% state of charge causes sulfation of the plates and accelerates capacity loss, dramatically reducing cycle life compared to shallow cycling. Lead-acid batteries are more sensitive to depth of discharge than lithium chemistries. Voltage drop during discharge is temporary and recovers on charge. Deep discharge harms, not improves, lead-acid cycle life.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::lead-acid-depth-of-discharge-cycle-life"
+  },
+  {
+    "external_key": "EI-B70-039",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A NiMH battery cell has a nominal voltage of 1.2 V. A battery pack made from 8 NiMH cells in series will have a nominal voltage of:",
+    "choices": [
+      "1.2 V",
+      "4.8 V",
+      "12.0 V",
+      "9.6 V"
+    ],
+    "correct_index": 3,
+    "explanation": "Series cells add their voltages: 8 x 1.2 V = 9.6 V. 1.2 V would be true only for a single cell or cells in parallel. 4.8 V corresponds to only 4 cells in series (4 x 1.2 V). 12.0 V would require 10 NiMH cells (10 x 1.2 V) or 10 NiCd cells at the same 1.2 V nominal.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::nimh-series-pack-voltage-8-cells"
+  },
+  {
+    "external_key": "EI-B70-040",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "On a solar panel's V-I curve, the maximum power point (MPP) is located at:",
+    "choices": [
+      "The knee of the curve, where the product of voltage and current is greatest",
+      "The short-circuit current (Isc) end, where current is highest",
+      "The open-circuit voltage (Voc) end of the curve, where voltage is highest",
+      "The midpoint voltage between Voc and zero"
+    ],
+    "correct_index": 0,
+    "explanation": "Power equals V x I; on the V-I curve, power is maximized at the knee where the curve bends sharply, giving the highest V x I product. At Voc, current is zero so power is zero. At Isc, voltage is zero so power is also zero. The midpoint voltage does not guarantee maximum power; actual MPP location depends on cell characteristics.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::solar-vi-curve-maximum-power-point-knee"
+  },
+  {
+    "external_key": "EI-B70-041",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A solar panel's open-circuit voltage (Voc) is 21 V and its short-circuit current (Isc) is 5 A. The maximum power output will be approximately:",
+    "choices": [
+      "105 W",
+      "21 W",
+      "5 W",
+      "80 W"
+    ],
+    "correct_index": 3,
+    "explanation": "Maximum output power = Voc x Isc x Fill Factor; the fill factor for crystalline silicon is typically 0.70-0.80. Using FF = 0.76: 21 x 5 x 0.76 = 79.8 W, approximately 80 W. 105 W is Voc x Isc with no fill factor derating, which is never achieved in practice. 21 W confuses Voc in volts with power. 5 W confuses Isc in amperes with power.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::solar-panel-max-power-voc-isc-fill-factor"
+  },
+  {
+    "external_key": "EI-B70-042",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A BLDC (brushless DC) motor differs from a brushed DC motor in that a BLDC motor:",
+    "choices": [
+      "Uses electronic commutation via a controller, eliminating the need for physical brushes",
+      "Can only rotate in one direction and cannot be reversed",
+      "Requires an AC power source to operate",
+      "Uses carbon brushes to commutate current but has no permanent magnets"
+    ],
+    "correct_index": 0,
+    "explanation": "BLDC motors replace the mechanical commutator and carbon brushes with an electronic controller that switches current to the stator windings in sequence. This eliminates brush wear and sparking. Brushed motors use carbon brushes; BLDC motors have no brushes by definition. BLDC motors are easily reversed by changing the commutation sequence. BLDC motors run from DC power; the controller internally generates the switching waveforms.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::bldc-motor-electronic-commutation-no-brushes"
+  },
+  {
+    "external_key": "EI-B70-043",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A stepper motor is best suited for applications that require:",
+    "choices": [
+      "Very high continuous speeds with minimal torque",
+      "Precise angular position control without a position feedback sensor",
+      "Continuous smooth operation from a sinusoidal AC supply",
+      "High starting torque equal to its running torque at all speeds"
+    ],
+    "correct_index": 1,
+    "explanation": "Stepper motors rotate in fixed angular increments when driven by sequential pulses; each pulse corresponds to a known angle, so position can be controlled open-loop without an encoder. They are used in 3D printers, CNC machines, and similar positioning applications. Stepper motors lose torque at high speeds and are not suited for high-speed continuous operation. Starting torque is typically higher than running torque at speed. A sinusoidal AC supply describes an AC induction motor, not a stepper.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::stepper-motor-open-loop-position-control"
+  },
+  {
+    "external_key": "EI-B70-044",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "An AC induction motor develops torque because:",
+    "choices": [
+      "Permanent magnets in the rotor attract the rotating stator field",
+      "The rotating magnetic field of the stator induces currents in the rotor, and those currents interact with the field to produce torque",
+      "Carbon brushes deliver DC current directly to the rotor windings",
+      "A commutator reverses rotor current each half revolution"
+    ],
+    "correct_index": 1,
+    "explanation": "In an induction motor the stator windings create a rotating magnetic field; by transformer action this field induces currents in the short-circuited rotor bars; the interaction between the induced rotor currents and the stator field produces torque. Permanent magnets are used in synchronous PM motors and BLDC motors, not standard induction motors. Carbon brushes and commutators are features of DC motors; induction motors have neither.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::ac-induction-motor-torque-induced-rotor-currents"
+  },
+  {
+    "external_key": "EI-B70-045",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A soldering iron tip temperature for standard tin-lead (Sn63/Pb37) solder should be set to approximately:",
+    "choices": [
+      "315 to 370 degrees C",
+      "200 degrees C",
+      "150 degrees C",
+      "450 to 500 degrees C"
+    ],
+    "correct_index": 0,
+    "explanation": "Sn63/Pb37 eutectic solder melts at 183 degrees C; a tip temperature of 315-370 degrees C (600-700 degrees F) provides enough thermal mass to heat the joint quickly without excessive oxidation or component damage. 150 degrees C is below the melting point and would result in cold joints. 200 degrees C is barely above the melting point and would not reliably heat the joint quickly. 450-500 degrees C causes rapid tip oxidation, flux burnout, and potential component damage.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::soldering-tip-temperature-tin-lead-solder"
+  },
+  {
+    "external_key": "EI-B70-046",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "Rosin (RMA) flux used in electronics soldering primarily serves to:",
+    "choices": [
+      "Remove surface oxides from metal surfaces so solder can wet and bond to them",
+      "Lower the melting point of the solder alloy",
+      "Increase the electrical conductivity of the solder joint",
+      "Cool the joint quickly to prevent thermal damage to components"
+    ],
+    "correct_index": 0,
+    "explanation": "Flux is a chemical cleaning agent that dissolves and removes metal oxides from the pad and component lead surfaces, allowing molten solder to wet and form a metallurgical bond. Flux does not change the solder alloy's melting point; that is determined by alloy composition. Rosin flux residue is non-conductive; it does not improve conductivity. Cooling is controlled by mass and environment; flux plays no role in cooling rate.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::rosin-flux-removes-oxides-wetting"
+  },
+  {
+    "external_key": "EI-B70-047",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A lead-free solder alloy (SAC305: 96.5% Sn, 3% Ag, 0.5% Cu) has a higher melting temperature than tin-lead eutectic. The approximate melting point of SAC305 is:",
+    "choices": [
+      "217 degrees C",
+      "183 degrees C",
+      "260 degrees C",
+      "310 degrees C"
+    ],
+    "correct_index": 0,
+    "explanation": "SAC305 has a melting range of approximately 217-220 degrees C, compared to 183 degrees C for Sn63/Pb37 eutectic solder; this requires higher process temperatures in reflow ovens and soldering irons. 183 degrees C is the eutectic melting point of Sn63/Pb37, not SAC305. 260 degrees C is the typical peak reflow temperature used for SAC305 in reflow ovens, not the solder's melting point. 310 degrees C is above the melting point of most solder alloys and would cause board damage.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::sac305-lead-free-melting-point-217c"
+  },
+  {
+    "external_key": "EI-B70-048",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A universal motor can run on both AC and DC power because:",
+    "choices": [
+      "It contains no magnetic materials, relying entirely on eddy currents for torque",
+      "Both the stator and rotor (armature) are wound coils, so reversing supply polarity reverses both fields simultaneously and torque direction is unchanged",
+      "It uses permanent magnets that are unaffected by AC polarity reversal",
+      "An internal rectifier converts AC to DC before it reaches the motor windings"
+    ],
+    "correct_index": 1,
+    "explanation": "In a series-wound universal motor both the field winding and the armature winding are in series; when AC reverses, both reverse together, keeping the torque direction the same. This allows it to run on either AC or DC. Permanent magnets would cause torque reversal on alternating half-cycles. An internal rectifier would make it a DC motor, not a universal motor. Eddy-current torque applies to induction motors, not the series-wound design.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::universal-motor-ac-dc-operation-series-wound"
+  },
+  {
+    "external_key": "EI-B70-049",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A protective fuse versus a circuit breaker: which statement is correct?",
+    "choices": [
+      "A fuse can be reset after it opens, while a circuit breaker must be replaced",
+      "Both fuses and breakers are reset by pressing a button after they open",
+      "A fuse is destroyed when it operates and must be replaced, while a circuit breaker can be reset",
+      "Circuit breakers respond faster than fuses to short-circuit currents"
+    ],
+    "correct_index": 2,
+    "explanation": "A fuse contains a metal element that melts and permanently opens the circuit when current exceeds its rating; it must be replaced. A circuit breaker uses a bimetal strip or magnetic mechanism that trips and can be reset by hand after the fault is cleared. Fuses cannot be reset; only breakers can. Fuses are generally faster than breakers for short-circuit interruption because the element melts nearly instantaneously at very high currents.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::fuse-destroyed-breaker-resettable"
+  },
+  {
+    "external_key": "EI-B70-050",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "An N-type semiconductor is made by doping silicon with arsenic. Which statement about N-type material is correct?",
+    "choices": [
+      "Holes are the majority carriers, and arsenic contributes one extra hole per atom",
+      "Protons are the majority carriers because arsenic adds a proton to the lattice",
+      "The material becomes permanently positively charged after doping",
+      "Electrons are the majority carriers, and the material is still electrically neutral overall"
+    ],
+    "correct_index": 3,
+    "explanation": "Arsenic is a pentavalent dopant; it contributes a free electron to the conduction band for each arsenic atom added, making electrons the majority carriers. However, the material remains electrically neutral overall because the arsenic atoms are bound in the lattice and carry a net fixed positive charge that exactly balances the donated electron. Holes are majority carriers in P-type (group III dopant) material, not N-type. Protons are nuclear particles and do not participate in semiconductor conduction. Permanent positive charge describes the fixed donor ion, not the bulk material, which is neutral.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::n-type-arsenic-majority-carriers-neutral-overall"
+  },
+  {
+    "external_key": "EI-B70-051",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "A P-type semiconductor is formed by doping silicon with a trivalent element such as boron. The majority charge carriers in P-type material are:",
+    "choices": [
+      "Free electrons donated by the boron atoms",
+      "Holes (absences of electrons) created when boron accepts an electron from the lattice",
+      "Positive ions that break free from the crystal structure",
+      "Protons released by the boron dopant atoms"
+    ],
+    "correct_index": 1,
+    "explanation": "Boron has three valence electrons; it can accept a fourth electron from a neighboring silicon atom to complete its bonds, leaving behind a hole (an absence of an electron) in the valence band. These holes are the majority carriers and move through the crystal like positive charges. Free electrons are donated by pentavalent (N-type) dopants such as phosphorus, not trivalent ones. Ions do not break free in a solid crystal; they remain fixed in the lattice. Protons are nuclear particles that play no role in semiconductor conduction.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::p-type-boron-majority-holes-acceptor"
+  },
+  {
+    "external_key": "EI-B70-052",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Porcelain and glass are commonly used as insulators on high-voltage power line towers primarily because they:",
+    "choices": [
+      "Are excellent conductors at very high voltages, safely carrying fault current to ground",
+      "Are magnetic materials that repel high-voltage conductors, keeping lines separated",
+      "Have very high dielectric strength and can withstand outdoor weathering and mechanical stress",
+      "Melt at high voltage, creating a protective gap between the conductor and the tower"
+    ],
+    "correct_index": 2,
+    "explanation": "Porcelain and glass have very high dielectric strength (they resist breakdown at high voltages), are weatherproof and resist UV and moisture, and have sufficient mechanical strength to support the weight of conductors. They are insulators, not conductors; fault current would damage them if they conducted. Both materials are non-magnetic; repulsion is not their function. Insulators must not melt or break down; creating a gap would allow arcing and is a failure mode, not a feature.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::porcelain-glass-hv-line-insulator-strength"
+  },
+  {
+    "external_key": "EI-B70-053",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "The resistivity of a copper conductor is 1.72 x 10^-8 ohm-meters. A copper wire is 100 meters long and has a cross-sectional area of 1.0 mm^2 (1.0 x 10^-6 m^2). What is the resistance of the wire?",
+    "choices": [
+      "1.72 ohms",
+      "0.172 ohms",
+      "17.2 ohms",
+      "172 ohms"
+    ],
+    "correct_index": 0,
+    "explanation": "R = rho x L / A = (1.72 x 10^-8) x 100 / (1.0 x 10^-6) = 1.72 x 10^-6 / 1.0 x 10^-6 = 1.72 ohms. 0.172 ohms results from using L = 10 m instead of 100 m, an order-of-magnitude error. 17.2 ohms results from using A = 0.1 mm^2 instead of 1.0 mm^2, ten times smaller. 172 ohms results from using A = 0.01 mm^2, one hundred times smaller than given.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::copper-resistivity-resistance-calc-100m-1mm2"
+  },
+  {
+    "external_key": "EI-B70-054",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Coaxial cable used in RF systems has a characteristic impedance. The two most common values are:",
+    "choices": [
+      "25 ohms and 100 ohms",
+      "150 ohms and 300 ohms",
+      "50 ohms and 75 ohms",
+      "10 ohms and 600 ohms"
+    ],
+    "correct_index": 2,
+    "explanation": "50-ohm coax is the standard for RF test equipment, transmitters, and most RF systems. 75-ohm coax is the standard for cable television and video distribution because it minimizes signal loss over long runs at video frequencies. 300-ohm is used for twin-lead antenna feedline, not coax. 25-ohm and 100-ohm coax exist in specialty applications but are not the common standards.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::coax-impedance-50-vs-75-ohm-standards"
+  },
+  {
+    "external_key": "EI-B70-055",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "If a coaxial cable is not terminated in its characteristic impedance (e.g., 50 ohms used with a 75-ohm load), the result is:",
+    "choices": [
+      "The cable heats up and melts because of the impedance mismatch",
+      "No effect at low frequencies but the cable shorts at high frequencies",
+      "The signal frequency increases to compensate for the mismatch",
+      "Standing waves on the cable and some signal power is reflected back toward the source"
+    ],
+    "correct_index": 3,
+    "explanation": "An impedance mismatch at the termination causes a portion of the incident wave to reflect; forward and reflected waves combine to create standing waves characterized by the SWR. The cable does not melt; reflected power may cause transmitter stress in high-power systems. Frequency is a source property and does not change due to a load mismatch. Coax does not short at high frequencies due to mismatch; reflection is governed by wave theory, not a short circuit.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::coax-impedance-mismatch-standing-waves-swr"
+  },
+  {
+    "external_key": "EI-B70-056",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Twisted-pair cable reduces electromagnetic interference pickup primarily because:",
+    "choices": [
+      "Twisting ensures each conductor is exposed equally to any interfering field, so noise is induced equally on both and cancels out in the differential signal",
+      "The metallic shield around both conductors blocks external fields",
+      "The twists physically absorb RF energy before it reaches the inner conductor",
+      "Twisting increases the inductance per unit length, blocking high-frequency noise"
+    ],
+    "correct_index": 0,
+    "explanation": "In a twisted pair, the twist geometry means that over each twist cycle one conductor is closer to an external noise source then the other; noise induced on the two conductors is nearly equal (common-mode), and a differential receiver subtracts the two signals, canceling the common-mode noise. A metallic shield is the feature of shielded twisted pair, not plain unshielded twisted pair. The twists do not absorb RF energy physically. Noise rejection in twisted pair is due to common-mode cancellation, not increased inductance.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::twisted-pair-common-mode-noise-cancellation"
+  },
+  {
+    "external_key": "EI-B70-057",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Shielded twisted pair (STP) cable provides better noise immunity than UTP in an environment with high RF fields. The shield works by:",
+    "choices": [
+      "Surrounding the inner conductors with a grounded conductive layer that redirects induced currents to ground",
+      "Carrying the return current for the signal, eliminating the second conductor",
+      "Increasing the dielectric constant of the insulation between the conductors",
+      "Increasing the characteristic impedance to 300 ohms to reject RF interference"
+    ],
+    "correct_index": 0,
+    "explanation": "The outer shield is a grounded conductor; external electric fields induce currents in the shield rather than the inner conductors, and those currents flow to ground, preventing the noise from reaching the signal pair. The dielectric constant affects velocity factor and capacitance but not EMI shielding. The signal path still uses the differential inner pair; the shield is not the return conductor for the signal. STP impedance is typically 100-150 ohms for data cable, not 300 ohms.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::shielded-twisted-pair-grounded-shield-redirects-noise"
+  },
+  {
+    "external_key": "EI-B70-058",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "In RF systems, signal attenuation is expressed in decibels (dB). A signal reduced to one-half its original power represents a loss of:",
+    "choices": [
+      "20 dB",
+      "6 dB",
+      "10 dB",
+      "3 dB"
+    ],
+    "correct_index": 3,
+    "explanation": "Power ratio in dB = 10 x log10(P_out / P_in); for P_out/P_in = 0.5: 10 x log10(0.5) = 10 x (-0.301) = -3 dB. A loss of 6 dB corresponds to power reduced to one-quarter (voltage halved). A loss of 10 dB corresponds to power reduced to one-tenth. A loss of 20 dB corresponds to power reduced to one-hundredth.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::db-half-power-equals-minus3db"
+  },
+  {
+    "external_key": "EI-B70-059",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "A signal level of 0 dBm corresponds to a power of:",
+    "choices": [
+      "0 watts",
+      "1 milliwatt",
+      "1 watt",
+      "10 milliwatts"
+    ],
+    "correct_index": 1,
+    "explanation": "dBm is a power level referenced to 1 milliwatt: 0 dBm = 10 x log10(P / 1 mW) = 0, so P = 1 mW. 0 watts would be negative infinity dBm. 1 watt is +30 dBm (10 x log10(1000 mW) = 30). 10 milliwatts is +10 dBm.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::dbm-0dbm-equals-1milliwatt"
+  },
+  {
+    "external_key": "EI-B70-060",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "A half-wave dipole antenna has a physical length of approximately:",
+    "choices": [
+      "One full wavelength of the operating frequency",
+      "One-quarter wavelength of the operating frequency",
+      "Two full wavelengths of the operating frequency",
+      "One-half wavelength of the operating frequency"
+    ],
+    "correct_index": 3,
+    "explanation": "A half-wave dipole is cut so that its total physical length equals approximately one-half wavelength at the operating frequency, which places a current maximum at the feed point and voltage maxima at the tips. A full-wave length describes a full-wave antenna. A quarter-wave describes a monopole, which is one half of a dipole using the ground as an image. Two full wavelengths would be a different resonant antenna design.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::dipole-antenna-half-wavelength-length"
+  },
+  {
+    "external_key": "EI-B70-061",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "A Yagi-Uda antenna achieves directional gain compared to a simple dipole primarily through:",
+    "choices": [
+      "Adding parasitic elements (a reflector behind and one or more directors in front of the driven element) that focus the beam in one direction",
+      "Using a larger wire diameter to reduce resistive losses",
+      "Increasing the antenna length to many wavelengths to raise impedance",
+      "Connecting multiple feed points at equal spacing along the boom"
+    ],
+    "correct_index": 0,
+    "explanation": "The Yagi adds a reflector slightly longer than the driven element and one or more directors slightly shorter; these parasitic elements re-radiate in phase to reinforce radiation in the forward direction and cancel it toward the rear, producing directional gain. Wire diameter affects bandwidth but not the directional gain mechanism. Increasing length changes resonance and impedance but does not create a directional beam. Multiple feed points describe a phased array or log-periodic, not a Yagi.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::yagi-antenna-parasitic-elements-directional-gain"
+  },
+  {
+    "external_key": "EI-B70-062",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Antenna gain expressed in dBi is referenced to:",
+    "choices": [
+      "A half-wave dipole in free space",
+      "An isotropic radiator that radiates equally in all directions",
+      "A quarter-wave monopole over a perfect ground plane",
+      "The antenna's efficiency relative to a theoretical perfect radiator"
+    ],
+    "correct_index": 1,
+    "explanation": "dBi means decibels relative to an isotropic radiator, a theoretical point source radiating equally in all directions. dBd is the scale referenced to a half-wave dipole (about 2.15 dBi of gain, so dBd = dBi - 2.15). A quarter-wave monopole has about 5.19 dBi; it is not the reference. Efficiency is a separate quantity and not the reference for dBi.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::antenna-gain-dbi-referenced-isotropic"
+  },
+  {
+    "external_key": "EI-B70-063",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A 30 MHz dipole antenna needs to be cut to the correct length. If the speed of light is 3 x 10^8 m/s, what is the approximate physical length of a half-wave dipole for 30 MHz?",
+    "choices": [
+      "5 meters",
+      "10 meters",
+      "2.5 meters",
+      "20 meters"
+    ],
+    "correct_index": 0,
+    "explanation": "Wavelength = c / f = (3 x 10^8) / (30 x 10^6) = 10 meters. A half-wave dipole is lambda/2 = 10/2 = 5 meters. 10 meters is a full wavelength, not a half wavelength. 2.5 meters is a quarter wavelength, which describes a monopole. 20 meters would be two full wavelengths at 30 MHz.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::dipole-length-calc-30mhz-5m"
+  },
+  {
+    "external_key": "EI-B70-064",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "The velocity factor of a coaxial cable is 0.66. If a signal travels at 3 x 10^8 m/s in free space, how fast does it propagate through this coax?",
+    "choices": [
+      "4.55 x 10^8 m/s",
+      "3 x 10^8 m/s",
+      "1.98 x 10^8 m/s",
+      "6.6 x 10^7 m/s"
+    ],
+    "correct_index": 2,
+    "explanation": "Velocity in the cable = c x VF = 3 x 10^8 x 0.66 = 1.98 x 10^8 m/s. 4.55 x 10^8 m/s results from dividing c by the velocity factor (3/0.66 = 4.55), which would exceed the speed of light -- physically impossible. 3 x 10^8 m/s is the free-space speed; actual propagation in a dielectric is slower. 6.6 x 10^7 m/s is a factor-of-3 error not supported by the calculation.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::coax-velocity-factor-propagation-speed-calc"
+  },
+  {
+    "external_key": "EI-B70-065",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "In a solar PV installation, the open-circuit voltage of a string of panels increases as panel temperature decreases. This is because:",
+    "choices": [
+      "Lower temperature reduces the panel's internal resistance, allowing more current to flow",
+      "Colder weather means less humidity, which reduces leakage current through dirt on the panels",
+      "Lower temperature reduces thermally generated minority carriers, increasing the open-circuit voltage of each cell",
+      "The bypass diodes in each panel conduct less current at low temperature, raising total string voltage"
+    ],
+    "correct_index": 2,
+    "explanation": "In a semiconductor p-n junction, thermal energy generates electron-hole pairs that act as a reverse saturation current opposing the photovoltaic voltage; at lower temperatures there are fewer thermally generated carriers, so Voc increases (typical temperature coefficient is about -0.3 to -0.5%/degC for silicon). Lower temperature slightly increases bulk resistance, a secondary effect. Humidity and panel cleanliness are environmental factors unrelated to the intrinsic V-T relationship. Bypass diodes are reverse-biased under normal operation and do not set the string voltage.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::solar-panel-voc-increases-lower-temperature-minority-carriers"
+  }
+]

@@ -1,0 +1,852 @@
+[
+  {
+    "external_key": "WK-B67-001",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "ALOOF most nearly means:",
+    "choices": [
+      "distant and detached",
+      "friendly",
+      "curious",
+      "generous"
+    ],
+    "correct_index": 0,
+    "explanation": "ALOOF means not friendly or forthcoming; showing a coolly detached manner toward others. 'Distant and detached' captures both the emotional and physical sense of the word. 'Friendly' and 'generous' describe warm, engaged behavior that is the direct opposite of aloofness. 'Curious' implies active interest in others, which also contradicts the standoffish quality aloof conveys.",
+    "status": "verified",
+    "item_family_id": "wk.headword::aloof"
+  },
+  {
+    "external_key": "WK-B67-002",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "COPIOUS most nearly means:",
+    "choices": [
+      "abundant in supply",
+      "brief",
+      "carefully organized",
+      "scarce"
+    ],
+    "correct_index": 0,
+    "explanation": "COPIOUS means large in quantity or amount, so 'abundant in supply' is the best match. 'Scarce' is the direct opposite, meaning insufficient in amount. 'Brief' refers to duration or length, not quantity. 'Carefully organized' describes arrangement rather than volume and does not capture the sense of plentiful supply.",
+    "status": "verified",
+    "item_family_id": "wk.headword::copious"
+  },
+  {
+    "external_key": "WK-B67-003",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "DEFT most nearly means:",
+    "choices": [
+      "clumsy",
+      "slow",
+      "careless",
+      "neatly skillful and quick"
+    ],
+    "correct_index": 3,
+    "explanation": "DEFT means neatly skillful and quick in one's movements or actions, making 'neatly skillful and quick' the strongest match. 'Clumsy' and 'careless' both describe a lack of skill or attention, the opposite of the precise coordination deft implies. 'Slow' contradicts the quickness that is central to the word's meaning.",
+    "status": "verified",
+    "item_family_id": "wk.headword::deft"
+  },
+  {
+    "external_key": "WK-B67-004",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "FLAGRANT most nearly means:",
+    "choices": [
+      "minor",
+      "justified",
+      "blatantly obvious and offensive",
+      "deliberate but hidden"
+    ],
+    "correct_index": 2,
+    "explanation": "FLAGRANT means conspicuously offensive or scandalous in a way that cannot be overlooked, making 'blatantly obvious and offensive' the best match. 'Minor' describes something of little consequence, the opposite of flagrant severity. 'Deliberate but hidden' contradicts the openly visible quality flagrant requires. 'Justified' implies the act is acceptable, while flagrant carries a strong note of wrongdoing.",
+    "status": "verified",
+    "item_family_id": "wk.headword::flagrant"
+  },
+  {
+    "external_key": "WK-B67-005",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "INCESSANT most nearly means:",
+    "choices": [
+      "occasional",
+      "continuous and unrelenting",
+      "sudden",
+      "predictable"
+    ],
+    "correct_index": 1,
+    "explanation": "INCESSANT means continuing without pause or interruption, so 'continuous and unrelenting' is the closest match. 'Occasional' describes something that happens only at intervals, the direct opposite. 'Sudden' refers to unexpectedness rather than duration. 'Predictable' describes consistency of pattern but not the unbroken continuity that incessant emphasizes.",
+    "status": "verified",
+    "item_family_id": "wk.headword::incessant"
+  },
+  {
+    "external_key": "WK-B67-006",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "QUERULOUS most nearly means:",
+    "choices": [
+      "constantly complaining",
+      "loud and boisterous",
+      "calm and accepting",
+      "inquisitive"
+    ],
+    "correct_index": 0,
+    "explanation": "QUERULOUS means complaining in a petulant or whining manner, so 'constantly complaining' is the best match. 'Inquisitive' describes a desire to learn and ask questions, which sounds similar but focuses on curiosity rather than complaint. 'Calm and accepting' is the opposite disposition. 'Loud and boisterous' describes noise and energy but not the fretful dissatisfaction querulous conveys.",
+    "status": "verified",
+    "item_family_id": "wk.headword::querulous"
+  },
+  {
+    "external_key": "WK-B67-007",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 1,
+    "stem": "SUPPLE most nearly means:",
+    "choices": [
+      "rigid",
+      "fragile",
+      "easily bent and flexible",
+      "durable"
+    ],
+    "correct_index": 2,
+    "explanation": "SUPPLE means bending and moving easily and gracefully, making 'easily bent and flexible' the best synonym. 'Rigid' is the direct opposite, describing something that resists bending. 'Fragile' implies that something breaks easily, which is different from being pliable. 'Durable' describes long-lasting strength, not flexibility of movement.",
+    "status": "verified",
+    "item_family_id": "wk.headword::supple"
+  },
+  {
+    "external_key": "WK-B67-008",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "WISTFUL most nearly means:",
+    "choices": [
+      "cheerfully optimistic",
+      "longingly thoughtful",
+      "bitterly resentful",
+      "sharply critical"
+    ],
+    "correct_index": 1,
+    "explanation": "WISTFUL means having or showing a feeling of vague or regretful longing, so 'longingly thoughtful' best captures its meaning. 'Cheerfully optimistic' describes a forward-looking brightness that wistful lacks. 'Bitterly resentful' is far harsher in tone; wistful is gentle and melancholy, not angry. 'Sharply critical' implies judgment, which is absent from wistful reflection.",
+    "status": "verified",
+    "item_family_id": "wk.headword::wistful"
+  },
+  {
+    "external_key": "WK-B67-009",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "EMINENT most nearly means:",
+    "choices": [
+      "ordinary",
+      "recently promoted",
+      "distinguished and respected",
+      "controversial"
+    ],
+    "correct_index": 2,
+    "explanation": "EMINENT means famous and respected, especially in a particular field, making 'distinguished and respected' the best match. 'Ordinary' is the opposite, describing someone unremarkable. 'Recently promoted' confuses eminent with a career event but says nothing about standing or reputation. 'Controversial' implies disagreement about a person's worth, which contradicts the widespread respect eminent carries.",
+    "status": "verified",
+    "item_family_id": "wk.headword::eminent"
+  },
+  {
+    "external_key": "WK-B67-010",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 3,
+    "stem": "PALLIATE most nearly means:",
+    "choices": [
+      "worsen",
+      "eliminate completely",
+      "diagnose accurately",
+      "make less severe without curing"
+    ],
+    "correct_index": 3,
+    "explanation": "PALLIATE means to make the effects of something less severe or unpleasant without actually solving the underlying problem. 'Make less severe without curing' captures this nuance precisely. 'Worsen' is the opposite. 'Eliminate completely' goes too far; palliation eases but does not remove the problem. 'Diagnose accurately' relates to identifying a condition, not to easing its effects.",
+    "status": "verified",
+    "item_family_id": "wk.headword::palliate"
+  },
+  {
+    "external_key": "WK-B67-011",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "BEGUILE most nearly means:",
+    "choices": [
+      "charm or deceive",
+      "confuse",
+      "accuse",
+      "warn"
+    ],
+    "correct_index": 0,
+    "explanation": "BEGUILE means to charm or enchant someone, often in a deceptive way, so 'charm or deceive' is the best match. 'Warn' and 'accuse' involve alerting or challenging someone directly, which is opposite to the subtle seduction beguile implies. 'Confuse' suggests creating mental disorder rather than the pleasant but misleading appeal beguile carries.",
+    "status": "verified",
+    "item_family_id": "wk.headword::beguile"
+  },
+  {
+    "external_key": "WK-B67-012",
+    "subtest": "WK",
+    "topic_id": "wk.synonyms",
+    "difficulty": 2,
+    "stem": "LOQUACIOUS most nearly means:",
+    "choices": [
+      "unusually talkative",
+      "wisely silent",
+      "highly intelligent",
+      "easily angered"
+    ],
+    "correct_index": 0,
+    "explanation": "LOQUACIOUS comes from the Latin loqui, meaning to speak, and describes someone who talks a great deal. 'Unusually talkative' is the best match. 'Wisely silent' is the opposite quality. 'Highly intelligent' is unrelated to speaking habits. 'Easily angered' describes temperament, not the volume of speech that loquacious specifically marks.",
+    "status": "verified",
+    "item_family_id": "wk.headword::loquacious"
+  },
+  {
+    "external_key": "WK-B67-013",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "FLIPPANT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "sincere and respectful",
+      "quick-witted",
+      "cheerful",
+      "talkative"
+    ],
+    "correct_index": 0,
+    "explanation": "FLIPPANT means treating serious issues with disrespectful casualness. 'Sincere and respectful' is its direct opposite, describing someone who takes matters seriously and treats others with appropriate regard. 'Talkative' and 'quick-witted' relate to speech habits but do not capture the seriousness that contrasts with flippancy. 'Cheerful' describes mood and is not an antonym.",
+    "status": "verified",
+    "item_family_id": "wk.headword::flippant"
+  },
+  {
+    "external_key": "WK-B67-014",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "INERT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "harmless",
+      "active",
+      "motionless",
+      "still"
+    ],
+    "correct_index": 1,
+    "explanation": "INERT means lacking the ability to move or react; inactive. 'Active' is its direct opposite, describing motion and engagement. 'Still' and 'motionless' are near-synonyms of inert rather than antonyms. 'Harmless' relates to safety rather than to motion or reactivity, so it does not serve as the true antonym.",
+    "status": "verified",
+    "item_family_id": "wk.headword::inert"
+  },
+  {
+    "external_key": "WK-B67-015",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "GENIAL is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "warm",
+      "cold and unfriendly",
+      "polite",
+      "cheerful"
+    ],
+    "correct_index": 1,
+    "explanation": "GENIAL means friendly and cheerful in manner. 'Cold and unfriendly' is its direct opposite, describing someone distant and unwelcoming. 'Warm,' 'cheerful,' and 'polite' are all synonyms or near-synonyms of genial, each capturing a quality of pleasantness rather than contrasting with it.",
+    "status": "verified",
+    "item_family_id": "wk.headword::genial"
+  },
+  {
+    "external_key": "WK-B67-016",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "TEPID is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "lukewarm",
+      "cautious",
+      "scalding",
+      "slow"
+    ],
+    "correct_index": 2,
+    "explanation": "TEPID means only slightly warm, neither hot nor cold. 'Scalding' means extremely hot and is therefore the best antonym. 'Lukewarm' is essentially a synonym of tepid. 'Cautious' and 'slow' describe temperament or pace and have no direct bearing on temperature, so they do not serve as true opposites.",
+    "status": "verified",
+    "item_family_id": "wk.headword::tepid"
+  },
+  {
+    "external_key": "WK-B67-017",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "OPULENT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "wealthy",
+      "modest and plain",
+      "extravagant",
+      "well-furnished"
+    ],
+    "correct_index": 1,
+    "explanation": "OPULENT means ostentatiously rich and luxurious. 'Modest and plain' is its direct opposite, describing simplicity and restraint rather than wealth and display. 'Wealthy' and 'extravagant' are near-synonyms of opulent. 'Well-furnished' describes a specific aspect of opulence and does not serve as a true antonym.",
+    "status": "verified",
+    "item_family_id": "wk.headword::opulent"
+  },
+  {
+    "external_key": "WK-B67-018",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "APATHETIC is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "indifferent",
+      "unconcerned",
+      "politely reserved",
+      "energetically engaged"
+    ],
+    "correct_index": 3,
+    "explanation": "APATHETIC means having or showing little or no emotion or interest. 'Energetically engaged' is its direct opposite, describing someone actively invested and motivated. 'Indifferent' and 'unconcerned' are synonyms of apathetic. 'Politely reserved' describes social restraint rather than the emotional investment that contrasts with apathy.",
+    "status": "verified",
+    "item_family_id": "wk.headword::apathetic"
+  },
+  {
+    "external_key": "WK-B67-019",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 1,
+    "stem": "COARSE is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "rough",
+      "thick",
+      "grainy",
+      "refined and smooth"
+    ],
+    "correct_index": 3,
+    "explanation": "COARSE means rough or harsh in texture, or crude in manner. 'Refined and smooth' is its direct opposite, describing a polished, fine-grained quality. 'Rough' and 'grainy' are synonyms of coarse in the physical sense. 'Thick' describes dimension rather than texture and does not function as the antonym.",
+    "status": "verified",
+    "item_family_id": "wk.headword::coarse"
+  },
+  {
+    "external_key": "WK-B67-020",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "STALWART is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "strong",
+      "reliable",
+      "imposing",
+      "feeble and wavering"
+    ],
+    "correct_index": 3,
+    "explanation": "STALWART means loyal, reliable, and hard-working; physically strong and sturdy. 'Feeble and wavering' is its direct opposite, combining weakness of body with lack of commitment. 'Strong,' 'reliable,' and 'imposing' are all qualities consistent with or synonymous to stalwart, not antonyms.",
+    "status": "verified",
+    "item_family_id": "wk.headword::stalwart"
+  },
+  {
+    "external_key": "WK-B67-021",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "LISTLESS is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "tired",
+      "dull",
+      "vivacious and eager",
+      "calm"
+    ],
+    "correct_index": 2,
+    "explanation": "LISTLESS means lacking energy or enthusiasm and showing no interest in anything. 'Vivacious and eager' is its direct opposite, describing spirited energy and keen interest. 'Tired' and 'dull' are near-synonyms of listless. 'Calm' describes tranquility rather than engagement and does not capture the active enthusiasm that contrasts with listlessness.",
+    "status": "verified",
+    "item_family_id": "wk.headword::listless"
+  },
+  {
+    "external_key": "WK-B67-022",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 2,
+    "stem": "PLACATE is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "agitate",
+      "calm",
+      "soothe",
+      "satisfy"
+    ],
+    "correct_index": 0,
+    "explanation": "PLACATE means to make someone less angry or upset by concessions or flattery. 'Agitate' means to disturb or upset someone, making it the direct opposite. 'Soothe' and 'calm' are synonyms of placate. 'Satisfy' describes meeting someone's needs fully, which overlaps with placating but does not serve as an antonym.",
+    "status": "verified",
+    "item_family_id": "wk.headword::placate"
+  },
+  {
+    "external_key": "WK-B67-023",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "TRANSIENT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "brief",
+      "passing",
+      "lasting",
+      "moving"
+    ],
+    "correct_index": 2,
+    "explanation": "TRANSIENT means lasting only for a short time; temporary. 'Lasting' describes something that continues for a long period, making it the best antonym. 'Brief' and 'passing' are synonyms of transient. 'Moving' plays on a secondary sense of transit or movement, but in context 'lasting' captures the true opposition to short-lived duration.",
+    "status": "verified",
+    "item_family_id": "wk.headword::transient"
+  },
+  {
+    "external_key": "WK-B67-024",
+    "subtest": "WK",
+    "topic_id": "wk.antonyms",
+    "difficulty": 3,
+    "stem": "INDULGENT is most nearly OPPOSITE in meaning to:",
+    "choices": [
+      "strict",
+      "lenient",
+      "permissive",
+      "tolerant"
+    ],
+    "correct_index": 0,
+    "explanation": "INDULGENT means lenient or tolerant toward someone's wishes or behavior, especially when it is not deserved. 'Strict' describes firm enforcement of rules and is the direct opposite. 'Lenient,' 'permissive,' and 'tolerant' are all synonyms of indulgent, each capturing the quality of allowing latitude rather than imposing discipline.",
+    "status": "verified",
+    "item_family_id": "wk.headword::indulgent"
+  },
+  {
+    "external_key": "WK-B67-026",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 1,
+    "stem": "In the sentence 'The recruits were RAVENOUS after the twelve-mile forced march, consuming three full rations each before the mess hall closed,' the word RAVENOUS most nearly means:",
+    "choices": [
+      "eager and competitive",
+      "tired and sore",
+      "grateful and polite",
+      "extremely hungry"
+    ],
+    "correct_index": 3,
+    "explanation": "The context indicates the recruits ate three full rations each after a twelve-mile march, a detail that strongly signals extraordinary hunger. RAVENOUS means extremely hungry; devouring things in great quantities. 'Tired and sore' describes physical fatigue, which the march would cause, but does not explain the eating behavior. 'Grateful' and 'eager and competitive' relate to mood and do not account for consuming multiple rations.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::ravenous-march"
+  },
+  {
+    "external_key": "WK-B67-031",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'The veteran sergeant remained IMPERTURBABLE throughout the ambush, issuing calm, clear orders while younger soldiers scrambled in panic,' the word IMPERTURBABLE most nearly means:",
+    "choices": [
+      "unable to communicate",
+      "not easily upset or excited",
+      "dangerously overconfident",
+      "highly trained"
+    ],
+    "correct_index": 1,
+    "explanation": "The contrast with soldiers 'scrambling in panic' highlights that the sergeant was unaffected by the chaos. IMPERTURBABLE means unable to be upset or excited; remaining calm. 'Not easily upset or excited' is the best match. 'Unable to communicate' contradicts 'issuing clear orders.' 'Dangerously overconfident' has a negative reckless quality not present in the calm leadership described. 'Highly trained' may explain the calm but is not what imperturbable means.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::imperturbable-ambush"
+  },
+  {
+    "external_key": "WK-B67-032",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'The engineer presented a VIABLE alternative to the expensive redesign, one that met all safety specifications at a fraction of the cost,' the word VIABLE most nearly means:",
+    "choices": [
+      "workable and practical",
+      "untested",
+      "complicated",
+      "controversial"
+    ],
+    "correct_index": 0,
+    "explanation": "The alternative 'met all safety specifications' and reduced cost, indicating it was a real, usable solution. VIABLE means capable of working successfully; feasible. 'Workable and practical' is the best match. 'Complicated' and 'controversial' carry negative connotations that contradict the solution's clear effectiveness. 'Untested' would raise doubts, but the sentence presents the option positively as meeting specifications.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::viable-engineering"
+  },
+  {
+    "external_key": "WK-B67-034",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 3,
+    "stem": "In the sentence 'Despite pressure from headquarters, the colonel refused to CAPITULATE and maintained her original defensive position,' the word CAPITULATE most nearly means:",
+    "choices": [
+      "advance aggressively",
+      "request reinforcements",
+      "give in or surrender",
+      "explain her reasoning"
+    ],
+    "correct_index": 2,
+    "explanation": "The colonel 'refused to' do something under pressure and instead 'maintained her position,' signaling that capitulating would mean yielding that position. CAPITULATE means to cease resisting and give in. 'Give in or surrender' is the best match. 'Advance aggressively' is the opposite of defensive maintenance. 'Request reinforcements' and 'explain her reasoning' are neutral actions that do not capture the surrender dynamic the sentence implies.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::capitulate-colonel"
+  },
+  {
+    "external_key": "WK-B67-036",
+    "subtest": "WK",
+    "topic_id": "wk.context-clues",
+    "difficulty": 2,
+    "stem": "In the sentence 'The sergeant ADMONISHED the recruit for leaving his gear unsecured, warning that a repeat offense would result in formal discipline,' the word ADMONISHED most nearly means:",
+    "choices": [
+      "praised",
+      "excused",
+      "firmly warned or reprimanded",
+      "promoted"
+    ],
+    "correct_index": 2,
+    "explanation": "The sergeant's response included a warning about future punishment, indicating a scolding rather than praise. ADMONISHED means warned or reprimanded someone sternly, so 'firmly warned or reprimanded' is correct. 'Praised' and 'promoted' suggest positive reactions, the opposite of what the situation warrants. 'Excused' means to overlook the fault, which contradicts the threat of formal discipline.",
+    "status": "verified",
+    "item_family_id": "wk.context-clues::admonished-recruit"
+  },
+  {
+    "external_key": "WK-B67-038",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 1,
+    "stem": "The root MORT appears in MORTAL, IMMORTAL, MORTIFY, and MORTUARY. MORT most nearly means:",
+    "choices": [
+      "war",
+      "death",
+      "sleep",
+      "sorrow"
+    ],
+    "correct_index": 1,
+    "explanation": "The Latin root MORT means death, which runs through all four example words: mortal (subject to death), immortal (not subject to death), mortify (originally meaning to cause spiritual death to desires), and mortuary (a place for the dead). 'War' is the meaning of BELL. 'Sleep' comes from the root SOMN. 'Sorrow' is associated with roots like DOLE but is not the meaning of mort.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::mort-death-mortal"
+  },
+  {
+    "external_key": "WK-B67-041",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The root ANTHROP appears in ANTHROPOLOGY, MISANTHROPE, PHILANTHROPY, and ANTHROPOMORPHIC. ANTHROP most nearly means:",
+    "choices": [
+      "animal",
+      "society",
+      "earth",
+      "human being"
+    ],
+    "correct_index": 3,
+    "explanation": "The Greek root ANTHROP means human being, present in anthropology (the study of humans), misanthrope (one who hates humans), philanthropy (love of humankind), and anthropomorphic (having human form). 'Animal' relates to roots like ZOO or ANIM. 'Society' is associated with SOC. 'Earth' belongs to the root GEO or TERRA.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::anthrop-human-anthropology"
+  },
+  {
+    "external_key": "WK-B67-042",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root FRACT/FRAG appears in FRACTURE, FRAGMENT, INFRACTION, and REFRACT. This root most nearly means:",
+    "choices": [
+      "to bend",
+      "to join",
+      "to break",
+      "to cross"
+    ],
+    "correct_index": 2,
+    "explanation": "The Latin root FRACT/FRAG means to break, visible in fracture (a break), fragment (a broken piece), infraction (a breaking of a rule), and refract (the bending of light, which involves breaking its straight path at a boundary). 'To bend' describes the observable effect of refraction but is not the core root meaning. 'To join' is the meaning of JUNCT. 'To cross' relates to TRANS.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::fract-break-fracture"
+  },
+  {
+    "external_key": "WK-B67-043",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root FLECT/FLEX appears in REFLECT, DEFLECT, FLEXIBLE, and INFLECTION. This root most nearly means:",
+    "choices": [
+      "to lift",
+      "to bend or curve",
+      "to flow",
+      "to shine"
+    ],
+    "correct_index": 1,
+    "explanation": "The Latin root FLECT/FLEX means to bend or curve, present in reflect (to bend back light or thought), deflect (to bend aside), flexible (able to bend), and inflection (a bending of voice pitch or grammatical form). 'To lift' belongs to roots like LEV. 'To flow' connects to FLU. 'To shine' is the meaning of LUC or LUMIN.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::flect-bend-flexible"
+  },
+  {
+    "external_key": "WK-B67-044",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 3,
+    "stem": "The root VERT/VERS appears in DIVERT, REVERT, CONVERT, and ADVERSARY. This root most nearly means:",
+    "choices": [
+      "to know",
+      "to hold",
+      "to trust",
+      "to turn"
+    ],
+    "correct_index": 3,
+    "explanation": "The Latin root VERT/VERS means to turn, seen in divert (to turn aside), revert (to turn back), convert (to turn completely), and adversary (one who turns against you; from ad- meaning toward + vers). 'To know' connects to roots like COGN or SCI. 'To trust' relates to CRED or FID. 'To hold' is the meaning of TEN.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::vert-turn-divert"
+  },
+  {
+    "external_key": "WK-B67-045",
+    "subtest": "WK",
+    "topic_id": "wk.root-words",
+    "difficulty": 2,
+    "stem": "The root CEDE/CEED/CESS appears in RECEDE, PROCEED, CONCEDE, and SUCCESSION. This root most nearly means:",
+    "choices": [
+      "to fall",
+      "to cut",
+      "to go or yield",
+      "to grow"
+    ],
+    "correct_index": 2,
+    "explanation": "The Latin root CEDE/CEED/CESS means to go or yield, which threads through recede (to go back), proceed (to go forward), concede (to yield a point), and succession (a going one after another). 'To fall' relates to CAD or CAS. 'To cut' belongs to SECT or CIS. 'To grow' is the meaning of CRESC.",
+    "status": "verified",
+    "item_family_id": "wk.root-words::cede-go-recede"
+  },
+  {
+    "external_key": "WK-B67-047",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The suffix -FUL means full of or characterized by. RESOURCEFUL therefore means:",
+    "choices": [
+      "able to find clever solutions",
+      "requiring many resources",
+      "lacking resources",
+      "providing resources to others"
+    ],
+    "correct_index": 0,
+    "explanation": "RESOURCEFUL means having the ability to find quick and clever ways to overcome difficulties, literally being 'full of resources' for solving problems. 'Able to find clever solutions' best captures this. 'Lacking resources' is the opposite. 'Requiring many resources' describes consumption, not the self-sufficiency resourceful implies. 'Providing resources to others' describes generosity but misses the personal problem-solving quality.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::ful-full-resourceful"
+  },
+  {
+    "external_key": "WK-B67-048",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The prefix OVER- means excessively or above. OVERCONFIDENT therefore most nearly means:",
+    "choices": [
+      "completely confident",
+      "lacking confidence",
+      "confident after careful review",
+      "excessively sure of oneself"
+    ],
+    "correct_index": 3,
+    "explanation": "OVER- signals excess, so overconfident means having more confidence than the situation warrants. 'Excessively sure of oneself' is correct. 'Completely confident' uses a different intensifier and does not carry the negative connotation of excess that over- adds. 'Lacking confidence' is the opposite. 'Confident after careful review' adds a condition unrelated to the prefix meaning.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::over-excess-overconfident"
+  },
+  {
+    "external_key": "WK-B67-049",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The prefix FORE- means before in time or position. FOREMOST therefore most nearly means:",
+    "choices": [
+      "located at the rear",
+      "following immediately after",
+      "first in rank or importance",
+      "hidden from view"
+    ],
+    "correct_index": 2,
+    "explanation": "FORE- means before or first, so foremost means most advanced in position or most important. 'First in rank or importance' is the best match. 'Located at the rear' is the opposite, suggesting a position behind rather than in front. 'Following immediately after' also places something behind, not in the lead. 'Hidden from view' has no connection to the fore- prefix.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::fore-before-foremost"
+  },
+  {
+    "external_key": "WK-B67-050",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The suffix -ABLE means capable of or worthy of. RELIABLE therefore most nearly means:",
+    "choices": [
+      "requiring constant attention",
+      "in need of improvement",
+      "often failing to perform",
+      "that can be depended on"
+    ],
+    "correct_index": 3,
+    "explanation": "RELIABLE combines the verb 'rely' with -ABLE, meaning capable of being relied upon. 'That can be depended on' is the best match. 'Requiring constant attention' suggests instability, the opposite of reliability. 'Often failing to perform' describes unreliability. 'In need of improvement' is neutral about dependability and does not reflect the positive meaning -ABLE adds.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::able-capable-reliable"
+  },
+  {
+    "external_key": "WK-B67-051",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 2,
+    "stem": "The prefix ULTRA- means beyond or extremely. ULTRAVIOLET light is therefore light that is:",
+    "choices": [
+      "visible to the naked eye",
+      "the brightest form of visible light",
+      "beyond the violet end of the visible spectrum",
+      "produced only by artificial sources"
+    ],
+    "correct_index": 2,
+    "explanation": "ULTRA- means beyond or exceeding, so ultraviolet means beyond violet in the electromagnetic spectrum, where human vision ends. 'Beyond the violet end of the visible spectrum' is the correct interpretation. 'Visible to the naked eye' contradicts the beyond-visible nature of ultraviolet. 'Brightest form of visible light' is factually incorrect and misuses the prefix. 'Produced only by artificial sources' adds a false restriction unrelated to ultra-.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::ultra-beyond-ultraviolet"
+  },
+  {
+    "external_key": "WK-B67-052",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The prefix RETRO- means backward or behind. RETROACTIVE legislation is therefore legislation that:",
+    "choices": [
+      "applies to events that occurred before its passage",
+      "has been voted down",
+      "takes effect in the future",
+      "is renewed each year"
+    ],
+    "correct_index": 0,
+    "explanation": "RETRO- means backward, so retroactive means applying to things that already happened, going backward in time. 'Applies to events that occurred before its passage' is correct. 'Takes effect in the future' is the opposite, describing prospective legislation. 'Has been voted down' describes the outcome of a vote, not a timing relationship. 'Renewed each year' describes duration unrelated to the retro- prefix.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::retro-back-retroactive"
+  },
+  {
+    "external_key": "WK-B67-053",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The suffix -TION/-SION converts a verb into a noun meaning the act or result of. COERCION is therefore best defined as:",
+    "choices": [
+      "the act of persuading someone kindly",
+      "a law prohibiting certain behavior",
+      "a person who forces others",
+      "the act of forcing someone to act against their will"
+    ],
+    "correct_index": 3,
+    "explanation": "COERCE means to force someone to do something through threats or pressure, and the suffix -ION turns it into a noun meaning the act of coercing. 'The act of forcing someone to act against their will' is correct. 'Persuading someone kindly' describes influence without force, the opposite of coercion. 'A person who forces others' would need the suffix -ER or -OR, not -ION. 'A law prohibiting certain behavior' describes legislation, not the act of applying force.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::tion-noun-coercion"
+  },
+  {
+    "external_key": "WK-B67-054",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 3,
+    "stem": "The prefix EXTRA- means outside or beyond. EXTRANEOUS information in a report is information that is:",
+    "choices": [
+      "outside the main topic; irrelevant",
+      "clearly organized",
+      "especially important",
+      "added at the end"
+    ],
+    "correct_index": 0,
+    "explanation": "EXTRA- means outside, so extraneous means outside the essential matter; not relevant to the subject. 'Outside the main topic; irrelevant' is correct. 'Especially important' would be the opposite of information deemed outside the scope. 'Clearly organized' describes structure, not relevance. 'Added at the end' describes position, not the beyond-the-boundary quality that extra- conveys.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::extra-outside-extraneous"
+  },
+  {
+    "external_key": "WK-B67-056",
+    "subtest": "WK",
+    "topic_id": "wk.prefixes-suffixes",
+    "difficulty": 1,
+    "stem": "The prefix NON- means not. A NONCHALANT attitude is an attitude that is:",
+    "choices": [
+      "aggressively confident",
+      "carefully prepared",
+      "deeply anxious",
+      "casually unconcerned"
+    ],
+    "correct_index": 3,
+    "explanation": "NON- means not, and chalant comes from French meaning concerned or warm. NONCHALANT therefore means not showing concern; casually unconcerned. 'Casually unconcerned' is correct. 'Aggressively confident' adds an intensity that nonchalant lacks; the word implies indifference, not dominance. 'Deeply anxious' is the opposite. 'Carefully prepared' describes diligence, which also contradicts the effortless ease nonchalant conveys.",
+    "status": "verified",
+    "item_family_id": "wk.prefixes-suffixes::non-not-nonchalant"
+  },
+  {
+    "external_key": "WK-B67-057",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In the sentence 'The soldiers dug in on the rocky BLUFF overlooking the valley,' the word BLUFF most nearly means:",
+    "choices": [
+      "a lie or deception",
+      "a high steep cliff or bank",
+      "a bold or confident manner",
+      "a card-game strategy"
+    ],
+    "correct_index": 1,
+    "explanation": "In this sentence soldiers are positioned on elevated terrain overlooking a valley, so BLUFF refers to a high steep cliff or bank, a geographic feature. 'A lie or deception' is the most common everyday use of bluff but does not fit the terrain context. 'A bold or confident manner' describes personality. 'A card-game strategy' is the gambling sense of calling someone's bluff, irrelevant to the geographical description.",
+    "status": "verified",
+    "item_family_id": "wk.headword::bluff"
+  },
+  {
+    "external_key": "WK-B67-058",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 1,
+    "stem": "In the sentence 'The crane lifted the steel beam into place with precision,' the word CRANE most nearly means:",
+    "choices": [
+      "a long-necked bird",
+      "a large machine for lifting heavy loads",
+      "to stretch one's neck to see",
+      "a type of military rank"
+    ],
+    "correct_index": 1,
+    "explanation": "The sentence describes lifting a steel beam with precision, a clearly mechanical operation. CRANE in this context refers to a large machine equipped with a hoist used to lift and move heavy loads. 'A long-necked bird' is the animal meaning of crane. 'To stretch one's neck to see' is the verb sense. 'A type of military rank' is not a recognized meaning of crane.",
+    "status": "verified",
+    "item_family_id": "wk.headword::crane"
+  },
+  {
+    "external_key": "WK-B67-059",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 2,
+    "stem": "In the sentence 'The general's RESERVE during the press conference impressed journalists accustomed to emotional outbursts,' the word RESERVE most nearly means:",
+    "choices": [
+      "a supply kept for future use",
+      "a quality of self-restraint in expression",
+      "military personnel not on active duty",
+      "an area of land set aside for a special purpose"
+    ],
+    "correct_index": 1,
+    "explanation": "The sentence contrasts the general's RESERVE with 'emotional outbursts,' pointing to self-control as the intended meaning. 'A quality of self-restraint in expression' is correct. 'A supply kept for future use' is the storage meaning. 'Military personnel not on active duty' is the armed-forces meaning. 'An area of land set aside for a special purpose' is the nature-reserve meaning. All three wrong answers are valid meanings of reserve in different contexts but do not fit the emotional-behavior framing here.",
+    "status": "verified",
+    "item_family_id": "wk.headword::reserve"
+  },
+  {
+    "external_key": "WK-B67-063",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In the sentence 'The company decided to YIELD that market segment to a larger competitor,' the word YIELD most nearly means:",
+    "choices": [
+      "to give way or surrender",
+      "to produce a crop or result",
+      "the total output of a process",
+      "a road sign requiring a pause"
+    ],
+    "correct_index": 0,
+    "explanation": "The company is surrendering a market position to a stronger competitor. YIELD here means to give way or relinquish something to another. 'To produce a crop or result' is the agricultural or financial sense. 'The total output of a process' is the noun form used in manufacturing. 'A road sign requiring a pause' is the traffic sense. The competitive-market context aligns only with surrender, not production or traffic.",
+    "status": "verified",
+    "item_family_id": "wk.headword::yield"
+  },
+  {
+    "external_key": "WK-B67-064",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In the sentence 'The recruit had a DEFAULT tendency to freeze under pressure, a habit the training was designed to correct,' the word DEFAULT most nearly means:",
+    "choices": [
+      "a failure to meet an obligation",
+      "a setting chosen automatically when no alternative is specified",
+      "a legal term for nonpayment",
+      "habitual or automatic"
+    ],
+    "correct_index": 3,
+    "explanation": "The sentence describes a habitual, automatic reaction rather than a conscious choice, pointing to DEFAULT in the sense of a built-in, automatic tendency. 'Habitual or automatic' is the best fit for this context. 'A failure to meet an obligation' is the legal or financial sense. 'A setting chosen automatically' is the computing sense, closer but less natural in a human behavioral description. 'A legal term for nonpayment' is too specific and does not address the behavioral pattern in the sentence.",
+    "status": "verified",
+    "item_family_id": "wk.headword::default"
+  },
+  {
+    "external_key": "WK-B67-065",
+    "subtest": "WK",
+    "topic_id": "wk.multiple-meaning-words",
+    "difficulty": 3,
+    "stem": "In the sentence 'The panel asked the candidate to QUALIFY her statement about the budget,' the word QUALIFY most nearly means:",
+    "choices": [
+      "to add conditions or limitations to a statement",
+      "to meet the requirements for something",
+      "to earn a professional certification",
+      "to remove a statement entirely"
+    ],
+    "correct_index": 0,
+    "explanation": "The panel is asking the candidate to modify or limit her statement, not to prove eligibility. QUALIFY in this context means to make a statement less absolute by adding conditions, exceptions, or nuances. 'To meet the requirements for something' is the eligibility sense, common in phrases like 'qualify for a loan.' 'To earn a professional certification' is the credentialing sense. 'To remove a statement entirely' would be to retract it, a different action entirely.",
+    "status": "verified",
+    "item_family_id": "wk.headword::qualify"
+  }
+]

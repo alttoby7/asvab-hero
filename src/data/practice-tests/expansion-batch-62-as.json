@@ -1,0 +1,954 @@
+[
+  {
+    "external_key": "AS-B62-001",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the main difference between a MacPherson strut suspension and a double-wishbone suspension?",
+    "choices": [
+      "A double-wishbone suspension has no coil spring, while a MacPherson strut uses a torsion bar",
+      "A MacPherson strut is used only on rear axles and a double-wishbone only on front axles",
+      "A MacPherson strut combines the shock absorber and upper control arm into a single unit mounted to the body, while a double-wishbone uses two separate control arms with a standalone shock",
+      "Both designs are identical except that double-wishbone is made from aluminum"
+    ],
+    "correct_index": 2,
+    "explanation": "A MacPherson strut integrates the shock absorber into a structural strut that also serves as the upper suspension link, reducing parts and space. A double-wishbone design uses an upper and lower control arm, each pivoting independently, which allows more precise camber control through suspension travel. MacPherson struts are common on front axles but do use coil springs; torsion bars are a separate design. Both designs appear on front and rear axles on various vehicles.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::macpherson-strut-vs-double-wishbone"
+  },
+  {
+    "external_key": "AS-B62-002",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the purpose of a sway bar (stabilizer bar) end-link?",
+    "choices": [
+      "It connects the sway bar to the steering rack to improve steering response",
+      "It adjusts the preload on the main coil spring to change ride height",
+      "It locks the sway bar solid during cornering to prevent any suspension movement",
+      "It links the sway bar to the control arm or strut so that body roll force is transferred from one side of the vehicle to the other"
+    ],
+    "correct_index": 3,
+    "explanation": "A sway bar (stabilizer bar) resists body roll by twisting when one wheel rises more than the other. The end-links are the connecting rods between the bar's ends and the suspension strut or control arm on each side. A worn or broken end-link allows the bar to move freely and reduces its anti-roll effect, often producing a clunking noise over bumps. End-links do not connect to the steering rack, do not adjust spring preload, and do not lock the suspension solid.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::sway-bar-end-link"
+  },
+  {
+    "external_key": "AS-B62-003",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "How does a solid rear axle (live axle) differ from an independent rear suspension in terms of how wheels react to road bumps?",
+    "choices": [
+      "On a solid axle, when one wheel hits a bump both wheels move together because they share a rigid housing; on independent suspension each wheel can move up and down without affecting the other",
+      "A solid axle allows more camber adjustment than independent suspension",
+      "Independent suspension is only used on trucks because it is stronger under heavy loads",
+      "On a solid axle each wheel moves independently; on independent suspension both wheels are linked"
+    ],
+    "correct_index": 0,
+    "explanation": "A solid axle connects both rear wheels through a common housing, so a bump under one wheel partially lifts both. Independent rear suspension attaches each wheel to the body through its own control arms and joints, allowing each wheel to react to bumps without disturbing the other. Solid axles offer greater load capacity and are common on trucks, while independent suspension is common on passenger cars for better ride quality. The statement about camber adjustment has it backwards; independent suspension generally allows more camber adjustment.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::solid-axle-vs-independent-suspension"
+  },
+  {
+    "external_key": "AS-B62-004",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A technician is diagnosing a front-end shimmy. She finds the ball joints are tight but there is play in a component that connects the steering knuckle to the tie rod. What component is most likely worn?",
+    "choices": [
+      "The ball joint boot",
+      "The outer tie rod end",
+      "The MacPherson strut bearing plate",
+      "The wheel bearing race"
+    ],
+    "correct_index": 1,
+    "explanation": "The outer tie rod end contains a ball-and-socket joint that connects the tie rod to the steering knuckle. Wear in this joint creates looseness that allows the knuckle to move relative to the tie rod, producing shimmy or wandering. The MacPherson strut bearing plate allows the strut to rotate during steering but would not create fore-aft steering play. The ball joint boot is just a rubber seal over the ball joint, not a structural part. A worn wheel bearing race causes a rumbling noise during driving, not play in the steering linkage.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::ball-joint-vs-tie-rod-end"
+  },
+  {
+    "external_key": "AS-B62-005",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What does the EVAP (evaporative emission control) system do, and which component purges stored fuel vapors into the intake?",
+    "choices": [
+      "It recirculates exhaust gases back into the fuel tank to prevent vapor buildup",
+      "It pressurizes the fuel tank to prevent vapor formation; the fuel cap is the only purge point",
+      "It cools intake air to prevent heat soak; the intercooler purges vapors",
+      "It captures fuel tank vapors in a charcoal canister and purges them into the intake manifold through the purge valve when conditions allow"
+    ],
+    "correct_index": 3,
+    "explanation": "Fuel vapors from the tank and fuel system are routed to a charcoal-filled canister that adsorbs the hydrocarbons. When the engine is warm and at cruise, the ECM opens the EVAP purge valve, allowing intake manifold vacuum to draw the stored vapors through the canister into the engine to be burned. EGR systems handle exhaust gas, not fuel vapors. An intercooler cools compressed intake air from a turbo and has no role in EVAP. The fuel cap seals the tank but is not a purge control device.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::evap-system-purge"
+  },
+  {
+    "external_key": "AS-B62-006",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What is exhaust scavenging, and how do engine builders use it to improve cylinder filling?",
+    "choices": [
+      "Exhaust scavenging is the process of using a vacuum pump to pull exhaust gases out of the cylinder after the power stroke",
+      "It is a cooling process where exhaust gases are routed over the intake ports to warm incoming air",
+      "It is the use of exhaust pulse energy and tuned header length to create a low-pressure wave at the exhaust valve that helps pull fresh charge into the cylinder while both valves are briefly open",
+      "Scavenging refers to burning residual fuel in the catalytic converter to lower emissions"
+    ],
+    "correct_index": 2,
+    "explanation": "When an exhaust valve opens, the high-pressure gas rushes out and creates a pressure wave in the exhaust header. Tuning header tube length so a low-pressure (rarefaction) wave arrives back at the exhaust port during the valve overlap period creates suction that helps scavenge residual exhaust from the cylinder and pull fresh mixture in. This improves volumetric efficiency without a mechanical pump. Vacuum pumps are not used for scavenging in production engines. Catalytic converters do not burn fuel intentionally, and routing hot exhaust over intakes would reduce air density.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::exhaust-scavenging"
+  },
+  {
+    "external_key": "AS-B62-007",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What is the difference between an intercooler and an aftercooler on a turbocharged engine?",
+    "choices": [
+      "An aftercooler uses liquid coolant while an intercooler always uses ambient air",
+      "An intercooler cools air between two compression stages; an aftercooler cools compressed air after the final compression stage before it enters the engine",
+      "An intercooler is placed between the turbocharger and the engine to cool compressed air; an aftercooler is placed after the engine to cool exhaust",
+      "Both terms refer to the same device; intercooler is the American term and aftercooler is the British term"
+    ],
+    "correct_index": 1,
+    "explanation": "In precise terminology, an intercooler sits between two stages of compression (for example, between a low-pressure and a high-pressure turbo stage) to cool air mid-compression. An aftercooler cools compressed air after the final stage before it enters the intake manifold. In common automotive usage the terms are often used interchangeably, but technically they describe position relative to the compression sequence. The cooling medium (air-to-air or air-to-water) is independent of whether a device is called an intercooler or aftercooler. An aftercooler does not process exhaust.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::intercooler-vs-aftercooler"
+  },
+  {
+    "external_key": "AS-B62-008",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "A vehicle with a heated oxygen sensor shows a slow downstream O2 sensor response on a scan tool. Why are O2 sensors heated, and what would a slow response indicate?",
+    "choices": [
+      "Heated sensors reach operating temperature faster so closed-loop fueling can begin sooner; a slow response after warm-up suggests sensor contamination or aging degrading the sensor's switching speed",
+      "Heating prevents the sensor from freezing; a slow response means the heater circuit is drawing too much current",
+      "O2 sensors are heated to burn off carbon deposits continuously; a slow response means the catalytic converter is functioning normally",
+      "The heater prevents fuel condensation inside the sensor; slow response is caused by high exhaust back-pressure alone"
+    ],
+    "correct_index": 0,
+    "explanation": "Zirconia and titania oxygen sensors must reach roughly 300-600 degrees Celsius before they produce accurate voltage signals. An internal heater circuit gets the sensor to operating temperature within 30-60 seconds of startup, enabling closed-loop fuel control before the exhaust is hot enough to heat the sensor naturally. After full warm-up, a sluggish switching speed between rich and lean indicates the sensing element is contaminated (silicone, phosphorus) or has aged, reducing its ability to respond to rapid composition changes. High back-pressure affects flow but typically does not cause the slow switching seen on a scope.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::heated-o2-sensor"
+  },
+  {
+    "external_key": "AS-B62-009",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "A speed-density fuel injection system calculates injector pulse width without a mass air flow sensor. What two primary inputs does it use instead?",
+    "choices": [
+      "Exhaust oxygen content and coolant temperature",
+      "Manifold absolute pressure (MAP) and engine RPM, combined with intake air temperature, to calculate air mass from the ideal gas law",
+      "Fuel rail pressure and injector duty cycle feedback",
+      "Throttle position and crankshaft speed only"
+    ],
+    "correct_index": 1,
+    "explanation": "A speed-density system uses manifold absolute pressure (MAP), engine RPM, and intake air temperature (IAT) to calculate air mass mathematically using a form of the ideal gas law and a volumetric efficiency table stored in the ECM. This eliminates the MAF sensor, reducing cost and eliminating a potential failure point, but requires accurate MAP and IAT readings and a well-calibrated VE table. Throttle position is used for acceleration enrichment but is not the primary load input. Exhaust oxygen sensors manage fuel trim corrections but are not the primary fueling calculation inputs in speed-density systems.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::speed-density-fuel-injection"
+  },
+  {
+    "external_key": "AS-B62-010",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the purpose of an electric parking brake (EPB) compared to a conventional cable-actuated parking brake?",
+    "choices": [
+      "An EPB uses a separate drum-in-hat mechanism that is actuated by a dedicated electric pump",
+      "An EPB applies the parking brake using hydraulic pressure from the ABS pump instead of a cable",
+      "An EPB is the same hardware as a cable brake but adds an electronic warning light",
+      "An EPB uses electric motors at the rear calipers to apply and release the parking brake, replacing the manual cable and lever mechanism"
+    ],
+    "correct_index": 3,
+    "explanation": "An electric parking brake replaces the mechanical cable, lever, and often the separate parking brake shoe or caliper mechanism with small electric actuator motors built into the rear brake calipers. When the driver presses the EPB switch, the ECU commands the motors to rotate a screw mechanism that pushes the caliper piston against the rotor. The system can also apply automatically in auto-hold mode. It does not use hydraulic pressure from the ABS pump for clamping force, and it is not simply a warning-light upgrade over conventional hardware.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::electric-parking-brake"
+  },
+  {
+    "external_key": "AS-B62-011",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A vehicle's automatic transmission is equipped with a hill-hold control system. What does this system do when the driver releases the brake on an uphill incline?",
+    "choices": [
+      "It increases throttle to match engine torque to the grade so the vehicle does not roll back",
+      "It engages the parking brake automatically whenever the vehicle stops on a grade",
+      "It briefly maintains brake pressure on the service brakes for a short period after the brake pedal is released, preventing rollback while the driver moves their foot to the accelerator",
+      "It shifts the transmission into a lower gear automatically to increase engine braking"
+    ],
+    "correct_index": 2,
+    "explanation": "Hill-hold (also called hill-start assist) uses the ABS/ESP hydraulic unit to hold brake pressure at the wheel calipers for approximately 1-2 seconds after the driver lifts off the brake pedal on an uphill grade. This prevents the vehicle from rolling backward during the transition from brake to throttle. It does not permanently engage the parking brake, it does not automatically downshift, and it does not add throttle -- engine torque management is a separate function. The system releases automatically once drive torque is detected.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::hill-hold-control"
+  },
+  {
+    "external_key": "AS-B62-012",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "What is the purpose of a dual-mass flywheel (DMF), and what failure symptom is most associated with a worn DMF?",
+    "choices": [
+      "A DMF uses two inertia masses connected by springs to filter torsional vibration from the engine; a worn DMF causes rattling or shuddering, especially at low RPM when the spring system is overloaded",
+      "A DMF increases engine power by storing rotational energy; a worn DMF causes the engine to rev higher than normal",
+      "A DMF is a flywheel with two friction surfaces to extend clutch life; wear is indicated by clutch slippage only",
+      "A DMF replaces the torque converter in automatic transmissions to improve efficiency; its failure causes harsh upshifts"
+    ],
+    "correct_index": 0,
+    "explanation": "A dual-mass flywheel consists of a primary mass bolted to the crankshaft and a secondary mass that drives the clutch, connected by arc springs and dampers. This spring-damper system absorbs torsional pulses from the engine's power strokes before they reach the transmission, reducing noise and vibration especially in diesel and downsized turbo engines. When the spring mechanism wears or the springs break, the DMF rattles at idle or during engagement -- sometimes described as a diesel clatter in otherwise gasoline vehicles -- and the shudder worsens at low RPM under load. A DMF is a manual transmission component and does not replace a torque converter. Clutch slippage is a separate clutch disc issue.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::dual-mass-flywheel"
+  },
+  {
+    "external_key": "AS-B62-013",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "A technician is performing a fuel injector balance test. She measures the injector pulse width at idle and compares it to other cylinders. Why does a longer-than-average pulse width on one injector indicate a problem with that cylinder?",
+    "choices": [
+      "Pulse width is controlled solely by engine speed, not by cylinder-specific feedback",
+      "A longer pulse width means the injector is stuck open and fuel is being dumped into the cylinder continuously",
+      "A longer pulse width on one injector indicates excessive fuel pressure in that cylinder's rail",
+      "A longer pulse width means the injector is flowing less fuel per pulse, so the ECM is compensating by opening it longer because of a lean condition in that cylinder"
+    ],
+    "correct_index": 3,
+    "explanation": "The ECM trims individual injector pulse widths based on fuel trim and misfire data. If one cylinder runs lean due to a partially clogged injector orifice, the injector must stay open longer to deliver the same mass of fuel. Conversely, a shorter-than-average pulse width on one cylinder can suggest a leaking or over-delivering injector. Fuel rail pressure affects all injectors equally and does not explain a single-cylinder discrepancy. A stuck-open injector would produce a rich condition and cause a misfire from flooding, which would typically appear as a shorter commanded pulse width from the ECM's perspective or a flood-related misfire code.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::fuel-injector-pulse-width"
+  },
+  {
+    "external_key": "AS-B62-014",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A technician notices the engine cooling fan continues running for several minutes after the engine is shut off. This behavior is MOST likely:",
+    "choices": [
+      "A sign that the coolant temperature sensor is failed open, causing the ECM to assume the engine is overheating",
+      "Normal operation on many modern vehicles, where the ECM or a separate controller keeps the fan running briefly to dissipate heat from the underhood and turbocharger after shutdown",
+      "Normal only on diesel engines, not on gasoline engines",
+      "A wiring fault causing the fan relay to stick closed permanently"
+    ],
+    "correct_index": 1,
+    "explanation": "Many turbocharged and high-output gasoline engines run the cooling fan after shutdown as a heat-soak protection strategy. Heat trapped under the hood can raise coolant and oil temperatures (turbo heat soak is a primary concern) even after the engine stops. The post-run cooling fan cycles on a timer or temperature threshold managed by the ECM or a separate fan control module. This is a designed behavior, not a fault. A stuck relay would keep the fan on indefinitely; an ECM commanding timed post-run cooling is the more probable and designed cause.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::post-run-cooling-fan"
+  },
+  {
+    "external_key": "AS-B62-015",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "A technician needs to drive a roll pin (spring pin) out of a hole without damaging the surrounding metal. Which punch is designed for this task?",
+    "choices": [
+      "A center punch, because its point seats inside the hollow pin",
+      "A pin punch, which has a flat tip sized to match the pin diameter and drive it through without spreading the surrounding bore",
+      "A drift punch, which tapers to a point so it can enter the pin from the side",
+      "A chisel, held at an angle to pry the pin sideways out of the hole"
+    ],
+    "correct_index": 1,
+    "explanation": "A pin punch has a straight, flat-tipped shank sized to match the diameter of roll pins and solid dowel pins. It allows the technician to drive the pin cleanly through the bore without damaging the bore walls. A center punch has a sharp conical point used to dimple metal before drilling -- its tip would not center in a hollow roll pin properly. A drift punch tapers down to a smaller diameter and is used to start a pin but not to drive it fully through, as the taper can damage the bore. A chisel would damage both the pin and the surrounding bore.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::pin-punch-roll-pin"
+  },
+  {
+    "external_key": "AS-B62-016",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "What is the correct way to dress a bench grinder wheel, and what tool is used?",
+    "choices": [
+      "Use a diamond or star-wheel dresser held against the spinning wheel to fracture away the glazed outer surface and restore a fresh, sharp cutting face",
+      "Apply grinding wheel dressing compound with a brush while the wheel spins, then wipe off with a dry cloth",
+      "Remove the wheel and sand the face on a flat plate with 80-grit sandpaper to expose fresh abrasive",
+      "Turn the wheel by hand and file the surface flat with a coarse mill bastard file"
+    ],
+    "correct_index": 0,
+    "explanation": "Grinding wheels become glazed and loaded with metal particles over time, reducing their cutting efficiency and increasing heat buildup. A wheel dresser -- either a diamond-tip stick or a multi-pointed star-wheel dresser -- is held against the rotating wheel surface to fracture away the outer glazed layer and expose fresh abrasive grains. The dresser must be used with the wheel spinning at full speed and the tool firmly braced against the tool rest. Filing or sanding a spinning grinding wheel is hazardous and ineffective; using dressing compound is a practice for honing stones, not bench grinder wheels.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::bench-grinder-dressing"
+  },
+  {
+    "external_key": "AS-B62-017",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "A worker needs to remove the burr from the inside edge of a freshly drilled hole in sheet metal before assembling parts. Which tool is most appropriate?",
+    "choices": [
+      "A hollow punch, pressed over the hole to shear off the raised burr",
+      "A center punch, tapped lightly around the hole to flatten the burr by peening",
+      "A countersink deburring tool or hand deburring tool, rotated by hand in the hole to shave off the raised edge",
+      "A round file drawn through the hole in one direction to remove the raised edge"
+    ],
+    "correct_index": 2,
+    "explanation": "A hand deburring tool has a rotating carbide or high-speed steel blade that swivels to follow the edge of a hole, shaving off the burr cleanly as you rotate the tool. A countersink bit used lightly by hand achieves the same result. A hollow punch is a sheet metal tool for cutting holes, not removing burrs. Center-punching around a burr would peen the metal and create an uneven surface rather than removing material cleanly. A round file can work but risks enlarging the hole and is slower than a dedicated deburring tool.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::deburring-countersink-hole"
+  },
+  {
+    "external_key": "AS-B62-018",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A machinist uses a magnetic base mounted on a surface plate with a dial indicator to measure runout on a shaft. What does 'total indicated runout' (TIR) represent?",
+    "choices": [
+      "The distance from the shaft centerline to the outside surface of the shaft",
+      "The maximum single reading above zero that the indicator records during rotation",
+      "The average of all dial readings taken around the shaft circumference",
+      "The difference between the highest and lowest dial indicator readings as the shaft rotates one full revolution, representing the total variation from true round"
+    ],
+    "correct_index": 3,
+    "explanation": "Total indicated runout is the full range of indicator travel -- the algebraic difference between the maximum and minimum needle positions -- recorded over one complete revolution of the part. If the indicator swings from +0.003 in to -0.002 in, the TIR is 0.005 in. The magnetic base clamps the indicator to the surface plate or machine bed and allows precise positioning without a dedicated fixture. TIR is not an average, not the shaft radius, and not just the peak reading above zero; it captures the total deviation in both directions.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::magnetic-base-total-indicated-runout"
+  },
+  {
+    "external_key": "AS-B62-019",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "When comparing a flap disc to a grinding wheel on an angle grinder, which statement is most accurate?",
+    "choices": [
+      "A flap disc consists of overlapping abrasive cloth segments and is better suited for blending and finishing welds, while a grinding wheel removes metal more aggressively",
+      "A flap disc removes metal faster than a grinding wheel and is preferred for all metal removal tasks",
+      "A grinding wheel is safer than a flap disc because it cannot shatter, unlike flap discs which can disintegrate at speed",
+      "A flap disc must never be used on steel; it is designed only for aluminum and wood"
+    ],
+    "correct_index": 0,
+    "explanation": "A flap disc is built from stacked, overlapping strips of coated abrasive cloth arranged in a fan pattern. It cuts more smoothly and produces a finer finish than a hard grinding wheel, making it ideal for blending welds, cleaning weld spatter, and surface prep before painting. A Type 27 or Type 29 grinding wheel is a bonded abrasive disc designed for heavier material removal and is more aggressive. Both tools work on steel and other metals. Grinding wheels can actually shatter if damaged, cracked, or over-sped, which is why the ring test is required before use.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::flap-disc-vs-grinding-wheel"
+  },
+  {
+    "external_key": "AS-B62-020",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A technician is forming a flare on a hydraulic line and must choose between a 37-degree (JIC) flare and a 45-degree (SAE) flare. Why does mixing these two flare types cause a leak?",
+    "choices": [
+      "Mixing them changes the thread pitch of the fitting and causes cross-threading",
+      "A 37-degree tube end seated in a 45-degree fitting (or vice versa) makes line contact instead of full cone contact, leaving a gap that leaks under pressure",
+      "The degree refers to the thread angle, not the flare cone angle; both can be used with any standard AN fitting",
+      "The two flare angles are fully interchangeable because both seal at the cone face; no leak occurs"
+    ],
+    "correct_index": 1,
+    "explanation": "The flare angle determines the mating geometry of the cone seal. A 37-degree JIC flare and a 45-degree SAE flare have different cone angles; when a mismatched tube end is seated in a fitting, the cones touch only at one circular line rather than mating fully across the cone surface. This line contact cannot seal against hydraulic pressure and will leak. A 37-degree double flare is required for high-pressure hydraulic and fuel injection lines; a 45-degree flare is specified for most automotive brake and low-pressure fuel lines per SAE J533. The degree refers to the cone angle, not the thread angle.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::tubing-flare-37-vs-45-degree"
+  },
+  {
+    "external_key": "AS-B62-021",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A machinist needs to locate the exact center of a round bar held in a lathe chuck before beginning a precision boring operation. Which instrument is used for this purpose, and how does it work?",
+    "choices": [
+      "A dial indicator set in a boring bar to measure the bore diameter during cutting",
+      "An edge finder mounted in the lathe spindle; when spinning, it deflects when it touches the workpiece surface, and the operator records that X or Y coordinate to calculate center",
+      "A telescoping gauge inserted into the bore to measure the inner diameter before centering",
+      "A test indicator (also called a lever indicator or last-word indicator) mounted to the spindle and swept around the OD of the bar; the operator adjusts the chuck until the needle reads zero deviation around the full circumference"
+    ],
+    "correct_index": 3,
+    "explanation": "Centering a round workpiece in a lathe chuck is done by mounting a test indicator (lever-style indicator with a swinging contact arm) in the spindle and touching it to the OD of the part. As the spindle is turned slowly by hand, any eccentricity shows as needle deflection. The operator taps the chuck jaws to shift the part until the indicator reads zero runout through a full rotation, confirming the part is on-center. An edge finder is used on milling machines to find the edge of a workpiece, not to center a round bar in a lathe. A dial indicator in a boring bar measures bore progress, not initial centering. Telescoping gauges measure bore diameter, not concentricity.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::test-indicator-centering-lathe"
+  },
+  {
+    "external_key": "AS-B62-022",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A hollow punch is used to cut a clean disc or hole from soft material such as leather, rubber, or gasket sheet. How does its cutting action differ from a solid punch?",
+    "choices": [
+      "A hollow punch is sharpened on the outer rim and cuts a circular plug by shearing the material along a cylindrical edge, leaving a clean hole; a solid punch displaces material by forcing it sideways",
+      "A hollow punch uses a spring-loaded mechanism to retract the cutting edge after each strike, while a solid punch relies on hand retraction",
+      "A hollow punch is used only with an arbor press; a solid punch is the hand-struck version",
+      "Both punches cut in the same way; the difference is only in whether the hole or the disc is the desired part"
+    ],
+    "correct_index": 0,
+    "explanation": "A hollow punch (also called a drive punch or gasket punch) has a circular cutting edge around its rim. When struck with a hammer on a firm backing surface, it shears a clean disc from soft material and the disc ejects through the hollow center. A solid punch displaces material rather than removing it -- it is used for driving pins, marking metal, or aligning holes, not for cutting circular shapes from sheet material. Neither punch requires a spring retraction mechanism, and hollow punches can be hand-struck; they do not require an arbor press for soft materials.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::hollow-punch-cutting-action"
+  },
+  {
+    "external_key": "AS-B62-023",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "An alignment dowel pin is used when assembling two machined housings. What is its primary purpose?",
+    "choices": [
+      "It seals the joint between the housings by filling the gap around the bolt holes",
+      "It allows the housings to rotate relative to each other when torque is applied",
+      "It precisely locates two mating parts in the correct relative position so bolt holes align and machined bores register accurately",
+      "It provides an extra clamping force between the housings by acting as an additional fastener"
+    ],
+    "correct_index": 2,
+    "explanation": "Dowel pins are precision-ground cylinders pressed into reamed holes in mating parts. Their purpose is positional -- they ensure that when two housings are assembled, every machined bore, bolt hole, and mating surface lines up to the design specification. Bolts alone can shift parts within the clearance of the bolt holes before they are tightened. Dowel pins have no sealing function (that is done by gaskets or sealants), do not add meaningful clamping force, and are not intended to allow rotation.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::alignment-dowel-pin"
+  },
+  {
+    "external_key": "AS-B62-024",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A dial indicator and a test indicator (lever indicator) are both used for precision measurement. Which statement best distinguishes the two?",
+    "choices": [
+      "They are identical instruments; the names are interchangeable",
+      "A dial indicator measures linear displacement along its plunger axis with high travel range; a test indicator uses a pivoting contact arm and measures very small deflections perpendicular to the arm with high sensitivity",
+      "A test indicator requires a magnetic base while a dial indicator does not",
+      "A dial indicator is only for measuring shaft length; a test indicator is only for bore diameters"
+    ],
+    "correct_index": 1,
+    "explanation": "A dial indicator (plunger-type indicator) measures linear displacement directly along the axis of its spring-loaded plunger, typically offering travel of 0.5 to 1 inch in 0.001-inch increments. A test indicator (lever or last-word indicator) has a pivoting contact probe that deflects left and right; it measures very small lateral deviations with resolutions of 0.0001 inch but has limited travel, usually 0.030 inch or less. Test indicators excel at zeroing runout measurements and surface plate work where contact angle to the workpiece varies. Either instrument can be used with a magnetic base; that is not a distinguishing feature.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::dial-indicator-vs-test-indicator"
+  },
+  {
+    "external_key": "AS-B62-025",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A technician uses an edge finder in a milling machine spindle to locate the edge of a steel block. The edge finder shaft deflects suddenly to one side after running true. What does that deflection indicate, and what step comes next?",
+    "choices": [
+      "The deflection means the spindle is not centered over the block; the operator must move the table away from the block until the deflection stops",
+      "The deflection is caused by runout in the spindle; the operator must re-indicate the spindle before proceeding",
+      "The sudden deflection indicates the rotating tip has contacted the workpiece edge; the operator records that coordinate and offsets by half the edge finder tip diameter to find the true edge position",
+      "The deflection means the spindle speed is too high; reduce RPM until the edge finder runs true again"
+    ],
+    "correct_index": 2,
+    "explanation": "An edge finder has a spring-loaded two-piece body. While rotating, both pieces spin concentrically. When the tip contacts the workpiece edge, friction deflects the lower piece off-axis -- a sudden kick. At that moment, the center of the spindle is positioned at a distance equal to half the tip diameter from the true edge of the work. The machinist notes the machine coordinate display and adds or subtracts the tip radius (typically 0.100 in for a 0.200-in-diameter tip) to set the datum. Runout affects accuracy but does not cause the characteristic kick. Spindle speed affects whether the deflection is visible but a kick at the right position is expected behavior, not an error.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::edge-finder-technique"
+  },
+  {
+    "external_key": "AS-B62-026",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "A technician needs to cut a precise-diameter hole through a rubber gasket material to fit a pipe fitting. Which tool is most appropriate?",
+    "choices": [
+      "A center punch to mark the location, then drill out the material in overlapping holes",
+      "A hole saw in a drill press, providing a clean, sized circular cut through the rubber",
+      "A cold chisel held at an angle and struck with a hammer to cut a circle freehand",
+      "A hack saw blade bent into a circle and pulled through the material"
+    ],
+    "correct_index": 1,
+    "explanation": "A hole saw is a cylindrical saw with teeth on the rim, used in a drill press or hand drill to cut precise-diameter holes. It produces a clean circular opening matching the nominal size of the saw, which is critical for gaskets and fittings. Chiseling freehand cannot produce a round, precise hole. A bent hacksaw blade is not a real cutting method. Drilling overlapping holes (trepanning freehand) leaves a ragged edge that will not seal properly. For very thin soft materials a hollow punch could also work, but a hole saw is the standard choice for precision-diameter holes in gasket material.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::hole-saw-gasket"
+  },
+  {
+    "external_key": "AS-B62-027",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A technician is creating threads on a steel rod using a die and notices the die is cutting very hard and producing a rough thread surface. What is the most likely cause and correct action?",
+    "choices": [
+      "The die is the wrong thread pitch for the rod diameter; replace with the correct die",
+      "The die is being turned too slowly; increase rotation speed to generate heat that softens the metal",
+      "The rod is too hard; anneal the entire rod in a furnace before threading",
+      "The rod diameter is too large, the die has become glazed, or no cutting oil was applied; reduce the rod diameter to the correct major diameter, apply cutting oil, and ensure the die is sharp"
+    ],
+    "correct_index": 3,
+    "explanation": "Excessive cutting force and rough threads when using a die typically result from one or more of these: the rod is at or above the correct major diameter leaving no chip clearance, the die is worn or loaded with chips, or no cutting oil was used. Cutting oil lubricates and cools the cutting edges and aids chip evacuation. The correct rod diameter for threading is typically the nominal diameter or a few thousandths smaller. Running the die too fast increases heat and friction. Annealing the entire rod is appropriate only if the steel is truly too hard, which would be confirmed by hardness testing, not by thread-cutting difficulty alone.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::die-thread-cutting-rough"
+  },
+  {
+    "external_key": "AS-B62-028",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "What is the correct brake bleeding sequence for a typical four-wheel vehicle to ensure all old fluid and air bubbles are removed?",
+    "choices": [
+      "Bleed in a cross-pattern starting at the farthest wheel from the master cylinder: right rear, left rear, right front, left front",
+      "Start at the wheel closest to the master cylinder and work outward in any order",
+      "Bleed all four wheels simultaneously by opening all bleeder screws at the same time",
+      "Bleed only the wheel that had the caliper or wheel cylinder replaced; the other wheels do not need attention"
+    ],
+    "correct_index": 0,
+    "explanation": "The standard bleeding sequence starts at the wheel farthest from the master cylinder -- typically the right rear on most vehicles -- and proceeds in a cross-pattern: right rear, left rear (or right rear, left front, right front, left rear depending on manufacturer). This ensures fluid and air move progressively from the longest, most air-prone lines toward the master cylinder. Opening all bleeders simultaneously drops system pressure and cannot flush air effectively. Bleeding only the replaced component often leaves air in the rest of the system. Manufacturer sequences vary, so always check the service manual.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::brake-bleed-sequence"
+  },
+  {
+    "external_key": "AS-B62-029",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "A technician is replacing a tapered roller wheel bearing and must set the proper bearing preload. What does 'bearing preload' mean?",
+    "choices": [
+      "The maximum load the bearing is rated to carry in service",
+      "The number of torque cycles applied to the bearing during break-in",
+      "The amount of grease packed into the bearing before installation",
+      "The intentional axial load applied to the bearing assembly by tightening the spindle nut, which removes all internal clearance and places the rolling elements under slight compression to extend bearing life and reduce play"
+    ],
+    "correct_index": 3,
+    "explanation": "Bearing preload is a controlled axial (end-play) load applied during installation by tightening a spindle nut to a specified torque or by measuring end-play with a dial indicator. The goal is to eliminate internal clearance (end-play) and create slight compression on the rolling elements so the bearing runs without looseness or wobble. Too little preload leaves end-play that causes vibration and uneven wear; too much preload generates heat and accelerates fatigue. Preload is not about grease quantity, rated load capacity, or break-in cycles.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::wheel-bearing-preload"
+  },
+  {
+    "external_key": "AS-B62-030",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A technician drains the automatic transmission fluid and finds a reddish-brown color with a slightly burnt smell but no metallic particles. The service interval is overdue. Which automatic transmission fluid type specification must be verified before refilling?",
+    "choices": [
+      "The specific OEM-required fluid type (such as Dexron VI, Mercon V, or ATF+4) must be confirmed in the service manual, because different formulations have different friction modifier chemistry that affects shift feel and clutch durability",
+      "Reddish-brown fluid with a burnt smell means the fluid is still serviceable; no refill is needed",
+      "Any ATF can be used because all modern transmissions are cross-compatible under the universal Dexron IV standard",
+      "Only the viscosity grade matters (such as 5W-30); the brand and additive package are irrelevant for automatic transmissions"
+    ],
+    "correct_index": 0,
+    "explanation": "Automatic transmissions use clutch packs and bands that are engineered to slip at specific friction levels controlled by the ATF's friction modifier chemistry. Using the wrong fluid type -- for example, Dexron VI in a Chrysler unit that requires ATF+4 -- alters shift quality and can cause clutch pack wear or harsh shifting. GM's Dexron, Ford's Mercon, and Chrysler's ATF+4 are different specifications that are not fully interchangeable despite all being red ATF. Reddish-brown fluid with a burnt smell is a sign of overheating or overdue service and must be replaced. Viscosity alone does not determine ATF suitability.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::atf-type-dexron-mercon-atf4"
+  },
+  {
+    "external_key": "AS-B62-031",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A rear axle differential is disassembled for inspection. The technician measures ring and pinion backlash with a dial indicator mounted on the ring gear. What is backlash, and why must it be set correctly?",
+    "choices": [
+      "Backlash is the amount of torque the ring gear can absorb before slipping; if too high, the differential will not engage",
+      "Backlash measures how far the pinion gear can be pressed in axially before it contacts the ring gear",
+      "Backlash is the gear ratio between the ring and pinion; adjusting it changes the vehicle's final drive ratio",
+      "Backlash is the small clearance between meshing gear teeth; too little causes heat from metal-to-metal contact, while too much causes noise and impact loading that damages gear teeth"
+    ],
+    "correct_index": 3,
+    "explanation": "Backlash is the freeplay between mating gear teeth measured tangentially at the ring gear face. The correct specification (typically 0.005-0.009 in for most automotive differentials) provides a thin oil film space between teeth and allows for thermal expansion. Excessive backlash causes a clunk during throttle lift-on transitions and accelerates tooth wear. Insufficient backlash causes heat, scoring, and tooth failure because the oil film is wiped out. Backlash is measured with a dial indicator mounted perpendicular to the ring gear face while the pinion is held stationary. It does not affect the gear ratio or indicate torque capacity.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::differential-ring-pinion-backlash"
+  },
+  {
+    "external_key": "AS-B62-032",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "During an engine rebuild, a technician finds that the cylinder head mating surface (deck) is warped. How is warpage measured and what is used to correct it?",
+    "choices": [
+      "Warpage is checked by bolting the head onto a reference block and measuring bolt torque; high torque indicates a warped surface",
+      "Warpage is detected by pressurizing the water jackets; any leakage indicates the deck is too warped to reuse",
+      "Warpage is measured with a precision straightedge and feeler gauges laid diagonally and longitudinally across the deck; if it exceeds specification, the deck is resurfaced on a milling machine or surface grinder",
+      "Warpage is measured with a dial caliper across the head width; it is corrected by heating the head with a torch to relieve stress"
+    ],
+    "correct_index": 2,
+    "explanation": "A precision straightedge is placed in multiple directions across the head deck surface and feeler gauges are slid under it to measure the gap. Maximum allowable warpage is typically 0.002-0.004 in for most gasoline engines. If the measurement exceeds spec, the head is resurfaced by milling (taking a thin cut with a precision cutting head) or by grinding on a surface grinder to restore flatness. Torch heating addresses warpage from stress in aluminum castings only in controlled oven annealing -- spot heating makes warpage worse. Pressure testing checks for cracks and porosity, not deck flatness. Bolt torque does not reveal surface warpage.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::engine-deck-warpage"
+  },
+  {
+    "external_key": "AS-B62-033",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "An engine uses torque-to-yield (TTY) head bolts. A technician asks why these bolts cannot be reused after removal. What is the correct explanation?",
+    "choices": [
+      "TTY bolts have a left-hand thread that strips on first removal, making reinstallation impossible",
+      "TTY bolts are coated with a one-time-use adhesive that cannot be reactivated after removal",
+      "TTY bolts are tightened past their yield point during installation, causing permanent plastic deformation; reuse risks failure because the stretched bolt cannot develop proper clamp load in its yielded state",
+      "TTY bolts are made from a special alloy that work-hardens permanently after torquing, making them too brittle to retorque"
+    ],
+    "correct_index": 2,
+    "explanation": "Torque-to-yield head bolts are intentionally tightened past their elastic limit into the plastic deformation range. This stretching technique provides very consistent clamp load across all bolts because small variations in friction have less effect once the bolt yields. However, because the bolt has permanently stretched, it cannot develop full clamp load again if reused; it may also break during the angle-torquing step of a second installation. Most manufacturers require replacement of TTY bolts after any removal. Right-hand threads are standard. No adhesive is involved. Work hardening is not the mechanism; the issue is plastic elongation reducing tension capacity.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::torque-to-yield-head-bolts"
+  },
+  {
+    "external_key": "AS-B62-034",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A technician is MIG welding mild steel and selecting the shielding gas. Which gas mixture is MOST commonly recommended for MIG welding mild steel to balance penetration, spatter, and arc stability?",
+    "choices": [
+      "100% helium, which increases travel speed and is the best overall choice for thin mild steel",
+      "75% argon / 25% carbon dioxide (C25), which provides a stable arc, moderate penetration, and low spatter for general mild steel MIG welding",
+      "Pure argon (100% Ar), which provides maximum penetration and is the standard for steel MIG welding",
+      "Pure oxygen (100% O2), which enhances fusion and reduces porosity in the weld puddle"
+    ],
+    "correct_index": 1,
+    "explanation": "C25 (75% Ar / 25% CO2) is the most widely used shielding gas for MIG welding mild steel. Argon stabilizes the arc and reduces spatter, while CO2 improves penetration and bead wetting. Pure argon is used for MIG welding aluminum and stainless with special processes but produces an erratic arc and poor penetration on mild steel. Pure oxygen is not used as a shielding gas; it would cause severe oxidation of the molten puddle. Helium increases heat input and is used for non-ferrous metals and specialized applications, not as a general mild-steel MIG gas.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::mig-shielding-gas-c25"
+  },
+  {
+    "external_key": "AS-B62-035",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "A vehicle's brake system uses both brake lines and brake hoses. What is the functional difference between the two?",
+    "choices": [
+      "Brake lines are rigid steel or nylon tubing that run fixed routes along the chassis; brake hoses are flexible rubber or PTFE-lined hoses that bridge the gap between the fixed chassis and the moving suspension or caliper",
+      "Brake lines carry fluid only to the rear brakes; brake hoses supply the front calipers",
+      "There is no functional difference; the terms are used interchangeably by manufacturers",
+      "Brake lines are flexible rubber hoses; brake hoses are rigid steel tubes"
+    ],
+    "correct_index": 0,
+    "explanation": "Brake lines (hard lines) are rigid steel, copper-nickel, or nylon tubes routed along the frame and body where there is no relative movement. Brake hoses are flexible hydraulic hoses that span the gap between the chassis-mounted hard line and the wheel assembly, which moves through the full suspension travel range. A faulty brake hose can bulge internally under pressure (acting as a one-way check valve) causing a dragging brake or poor pedal feel, even though no external leak is visible. The terms are not interchangeable, and both front and rear brakes use a combination of hard lines and flexible hoses.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::brake-hose-vs-brake-line"
+  },
+  {
+    "external_key": "AS-B62-036",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "An engine with mechanical (solid) valve lifters requires periodic valve lash adjustment. Why do mechanical lifters require adjustment while hydraulic lifters typically do not?",
+    "choices": [
+      "Mechanical lifters use grease lubrication that must be refreshed; hydraulic lifters use engine oil and self-lubricate",
+      "Hydraulic lifters require more frequent adjustment than mechanical lifters because oil pressure fluctuates with engine speed",
+      "Mechanical lifters have a larger contact patch and are only used on diesel engines that require adjustment",
+      "Mechanical lifters are a fixed-height solid component and develop clearance as the valve train wears; hydraulic lifters use engine oil pressure to self-adjust and maintain zero lash automatically"
+    ],
+    "correct_index": 3,
+    "explanation": "A mechanical (solid) lifter is a solid cylinder with no internal adjustment mechanism. As camshaft lobes, lifter faces, rocker arms, and valve stems wear, the clearance (lash) in the valve train increases. Without the specified clearance the valve may not close fully; with too much clearance the train chatters. Lash must be checked and reset with feeler gauges at the specified cold or hot interval. A hydraulic lifter contains a small oil reservoir and a check valve that allows engine oil to flow in and maintain the lifter at zero lash automatically, self-correcting for wear. Hydraulic lifters require no periodic adjustment under normal conditions.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::valve-lash-mechanical-vs-hydraulic"
+  },
+  {
+    "external_key": "AS-B62-037",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A technician is about to brake-bleed a vehicle and realizes the brake fluid reservoir is contaminated with power steering fluid. What is the primary danger of this contamination?",
+    "choices": [
+      "Power steering fluid reduces brake fluid viscosity, which lowers hydraulic pressure and reduces braking force",
+      "Power steering fluid is incompatible with brake fluid and will swell and destroy the rubber seals and hoses throughout the entire brake system, requiring replacement of all rubber components",
+      "Power steering fluid has a lower boiling point and will cause vapor lock in the brake lines under normal braking",
+      "The two fluids are chemically similar; the main issue is a change in fluid color making level checks harder"
+    ],
+    "correct_index": 1,
+    "explanation": "Petroleum-based power steering fluid (and any petroleum product) is chemically incompatible with DOT brake fluid, which uses a glycol ether base. Petroleum compounds cause the EPDM rubber seals used throughout the brake system -- master cylinder cups, caliper piston seals, wheel cylinder cups, and flexible hoses -- to swell and degrade. Even small amounts of contamination can cause catastrophic seal failure. All rubber components must be replaced and the entire system flushed. The boiling point and viscosity differences are secondary concerns; the seal destruction is the primary safety hazard.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::brake-fluid-petroleum-contamination"
+  },
+  {
+    "external_key": "AS-B62-038",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A MIG weld on a steel chassis exhibits heavy spatter and porosity. The technician checks the wire and base metal, which appear clean. What is the MOST likely cause?",
+    "choices": [
+      "Insufficient or absent shielding gas coverage -- either the flow rate is too low, the nozzle is blocked with spatter, the gas hose has a leak, or the solenoid failed -- allowing atmospheric oxygen and nitrogen to contaminate the puddle",
+      "The wire feed speed is set too low, causing the arc to extinguish and create pores from insufficient deposition",
+      "The shielding gas flow rate is too high, creating turbulence that pulls atmospheric air into the weld puddle",
+      "The base metal is too thin for MIG welding; only TIG welding prevents porosity on thin steel"
+    ],
+    "correct_index": 0,
+    "explanation": "Porosity in MIG welds is almost always caused by gas contamination of the molten puddle. When shielding gas flow is inadequate (blocked nozzle, kinked hose, empty cylinder, failed solenoid, or flow rate set too low), atmospheric nitrogen and oxygen enter the arc zone. Nitrogen dissolves in the molten steel and forms gas pockets as the weld solidifies; oxygen causes oxidation inclusions. Excess flow rate can cause turbulence at very high rates but rarely causes porosity at typical shop settings. Low wire feed speed causes burn-back and arc instability but not the same porosity pattern. MIG welding is appropriate for thin steel when the process is set up correctly.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::mig-porosity-shielding-gas"
+  },
+  {
+    "external_key": "AS-B62-039",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "When checking the fluid level in an open differential, the technician removes the fill plug and finds the fluid just at the bottom edge of the fill plug hole. This means:",
+    "choices": [
+      "The differential is overfilled and fluid must be drained until it stops flowing",
+      "The unit is low; the correct level is two inches above the fill plug hole",
+      "The fluid level is correct; on most differentials the fill plug is located so that fluid just reaching the hole means the unit is properly filled",
+      "The differential is empty; fluid at the fill hole is just residual from the last drain"
+    ],
+    "correct_index": 2,
+    "explanation": "On most automotive rear differentials (and many transfer cases), the fill plug is positioned at the correct full level. When you remove the plug and fluid just begins to seep out or is at the very edge of the hole, the unit is at the correct capacity. If no fluid reaches the plug hole, the unit is low and fluid should be added until it just reaches the bottom of the fill hole. Checking and topping up gear oil this way is the standard fill-level method for these units.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::differential-fluid-level-check"
+  },
+  {
+    "external_key": "AS-B62-040",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A technician is rebuilding an engine and must torque the connecting rod bolts, which are specified as torque-to-yield. She does not have replacement rod bolts on hand and the existing bolts were previously installed once. What is the safest decision?",
+    "choices": [
+      "Reuse the bolts and add 10% to the specified torque to compensate for any stretch that already occurred",
+      "Order new rod bolts before completing the build, because TTY bolts that have already been yielded cannot reliably reach the design clamp load and may fail under the high cyclic loads of a running engine",
+      "Replace only the bolts from the cylinders that were disassembled; bolts that were not removed can be reused",
+      "Reuse the bolts at the same torque; TTY designation applies only to head bolts, not rod bolts"
+    ],
+    "correct_index": 1,
+    "explanation": "Connecting rod TTY bolts, like head TTY bolts, are designed to be torqued once into the plastic deformation range. After yielding, the bolt's elastic range is exhausted and it cannot develop the same clamp load on a second torquing. Under the high cyclic tension loads in a running engine, an under-clamped or weakened rod bolt risks fatigue failure, which is a catastrophic engine failure mode. Adding extra torque is equally dangerous -- it risks breaking the bolt. The correct practice is to install new TTY rod bolts for every engine build.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::connecting-rod-tty-bolts"
+  },
+  {
+    "external_key": "AS-B62-041",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "During a valve adjustment on a 4-cylinder engine, the technician is told to adjust each cylinder's valves with the piston at TDC of the compression stroke, not exhaust stroke TDC. Why is this distinction critical?",
+    "choices": [
+      "Compression TDC generates higher oil pressure that pushes the lifter up, making adjustment easier",
+      "The camshaft lobe position is the same at both TDC events, so there is no functional difference",
+      "Exhaust TDC is safer because both valves are open and cannot be bent by the adjustment tool",
+      "On compression TDC both the intake and exhaust valves for that cylinder are fully closed, making lash measurement accurate; on exhaust stroke TDC (overlap TDC) both valves may be partially open"
+    ],
+    "correct_index": 3,
+    "explanation": "A 4-stroke engine has two TDC events per cycle for each cylinder: compression TDC (end of compression stroke, both valves closed, firing is about to occur) and overlap TDC or exhaust TDC (end of exhaust stroke, where the intake valve is beginning to open and the exhaust valve is finishing its closure). At compression TDC, both valves for that cylinder are fully closed and the camshaft lobes are on their base circles, making this the only correct position to measure and set lash with a feeler gauge. At exhaust stroke TDC, one or both valves are still in motion and the lobes are not on the base circle, giving a false (too-tight) lash reading.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::valve-adjustment-compression-tdc"
+  },
+  {
+    "external_key": "AS-B62-042",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Before entering a confined space such as a vehicle service pit or large storage tank, a technician must use an atmospheric monitor. What three conditions does the monitor primarily check?",
+    "choices": [
+      "Carbon monoxide, carbon dioxide, and nitrogen oxide levels only",
+      "Only carbon monoxide, because it is the primary hazard in automotive service environments",
+      "Humidity, temperature, and ambient noise level",
+      "Oxygen level, flammable/combustible gas concentration (as percent of lower explosive limit), and toxic gas concentration such as CO or H2S"
+    ],
+    "correct_index": 3,
+    "explanation": "A four-gas confined-space monitor (the most common type) measures: oxygen percentage (safe range 19.5-23.5%; below 19.5% is oxygen deficient, above 23.5% is oxygen enriched and fire-dangerous), combustible gas as a percent of its lower explosive limit (LEL), carbon monoxide in parts per million, and hydrogen sulfide in parts per million. Low oxygen, flammable vapors, and toxic gases can all kill a confined-space entrant. Humidity and temperature are not atmospheric hazards in the regulatory sense. CO is one hazard but not the only one; H2S from battery gases or organic decay can also be present.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::confined-space-gas-monitor"
+  },
+  {
+    "external_key": "AS-B62-043",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "A worker is using a fall-protection personal fall arrest system (PFAS) while working on top of a vehicle lift. The self-retracting lifeline (SRL) is rated to 310 lbs. The technician weighs 240 lbs and is carrying 20 lbs of tools. Is the system within its rated capacity?",
+    "choices": [
+      "No; OSHA requires a 400-lb minimum rating for all automotive shop fall arrest systems",
+      "Yes; only the worker's body weight (240 lbs) counts toward the rating, not tools",
+      "Yes; the total arrested load including worker body weight plus tools and clothing is 260 lbs, which is within the 310-lb SRL rating",
+      "No; the 310-lb rating applies only to the anchorage connector, not the SRL itself"
+    ],
+    "correct_index": 2,
+    "explanation": "A personal fall arrest system rating covers the total dynamic load during a fall, which includes the worker's body weight plus tools, materials, and clothing. In this case 240 + 20 = 260 lbs, which is within the 310-lb SRL rating, so the system is acceptable. However, the technician should also verify that the anchorage point, body harness, and all connectors in the system are rated to handle the same load. The rating applies to the entire system, not individual components separately. OSHA 29 CFR 1926.502 requires anchorage points to support 5,000 lbs per worker or be designed by a qualified person, but there is no universal 400-lb requirement for SRLs.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::fall-protection-srl-rating"
+  },
+  {
+    "external_key": "AS-B62-044",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "A worker gets a chemical splash in both eyes from battery acid. What is the immediate correct response, and how long should the eyes be flushed?",
+    "choices": [
+      "Immediately flush both eyes continuously with large amounts of clean water or saline at an eyewash station for a minimum of 15 minutes, then seek medical attention",
+      "Cover the eyes with sterile gauze and go directly to the emergency room without flushing to avoid spreading the chemical",
+      "Flush for 2 minutes; if pain subsides the exposure was minor and no further treatment is required",
+      "Immediately apply a neutralizing baking soda solution to the eyes for 2 minutes, then seek medical attention"
+    ],
+    "correct_index": 0,
+    "explanation": "The standard first-aid protocol for chemical eye exposure, including battery acid (sulfuric acid), is immediate and continuous flushing with water or eyewash solution at a dedicated eyewash station for a minimum of 15 minutes. Flushing dilutes and physically removes the chemical before it can cause deeper tissue damage. Neutralizing agents (such as baking soda) are not applied directly to eyes because they can cause additional injury. Delaying flush to travel to an ER without irrigating first allows the acid to continue burning. Two minutes of flushing is insufficient for strong acids or alkalis. Medical evaluation is required after the full flush.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::eyewash-15-minute-flush"
+  },
+  {
+    "external_key": "AS-B62-045",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A technician is about to use a bench grinder and wants to verify the wheel is safe. What is the grinding wheel 'ring test,' and what does a dull thud versus a clear ring indicate?",
+    "choices": [
+      "The ring test involves spinning the wheel at full speed for 60 seconds; if no visible cracks appear the wheel passes",
+      "The ring test means checking the ring (flange) bolts for proper torque; a loose ring produces a clunking sound",
+      "The wheel is tapped lightly with a light non-metallic object while suspended; a clear metallic ring indicates an intact wheel, while a dull thud indicates an internal crack or fracture and the wheel must be discarded",
+      "The ring test is performed by placing the wheel on a flat plate and tapping the center; resonance frequency is compared to manufacturer specifications"
+    ],
+    "correct_index": 2,
+    "explanation": "ANSI and OSHA require a ring test (also called a tap test or sound test) before mounting a vitrified or resinoid grinding wheel. The wheel is suspended on a finger or on a shaft through the arbor hole and tapped lightly with a wooden mallet or the handle of a screwdriver. A sound, undamaged wheel produces a clear metallic ringing tone. A cracked wheel produces a dull, flat thud because the crack damps the resonance. Any wheel that fails the ring test must be destroyed and discarded -- do not attempt to grind with it, as centrifugal forces can cause it to shatter at speed.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::grinding-wheel-ring-test"
+  },
+  {
+    "external_key": "AS-B62-046",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A welder needs to set up a welding curtain (screen) to protect nearby workers from the welding arc. What property of the curtain specifically protects against arc flash injury?",
+    "choices": [
+      "The curtain reflects the arc light back toward the welder to increase arc intensity and improve fusion",
+      "The curtain is grounded to redirect stray welding current away from bystanders",
+      "The curtain is fire-rated and stops sparks from igniting nearby materials",
+      "The curtain is made from materials that block ultraviolet and infrared radiation from the welding arc, protecting bystanders from arc eye (photokeratitis) and skin burns"
+    ],
+    "correct_index": 3,
+    "explanation": "Welding arcs emit intense ultraviolet and infrared radiation. UV causes photokeratitis (arc eye or welder's flash) and sunburn-like skin damage after even a few seconds of unprotected exposure. Welding curtains are made from materials such as PVC-coated fiberglass or rubber that absorb or block UV and IR radiation, protecting workers outside the welding area who are not wearing welding helmets. Fire resistance is a secondary benefit, but UV/IR blocking is the primary safety purpose. Curtains are not grounded and do not affect arc characteristics.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::welding-curtain-uv-protection"
+  },
+  {
+    "external_key": "AS-B62-047",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A worker is performing abrasive blasting (sandblasting) in a shop. Which type of respiratory protection is required for this task?",
+    "choices": [
+      "A half-face air-purifying respirator with P100 filters is the OSHA-required minimum for all sandblasting",
+      "A supplied-air respirator (Type CE abrasive blasting respirator) that provides clean breathing air from a separate source, because abrasive dust concentrations and silica content from typical blast media can exceed what a filter respirator can handle",
+      "No respiratory protection is needed if the blasting is done outdoors with the wind at the worker's back",
+      "A standard N95 filtering facepiece respirator is sufficient for all abrasive blasting operations"
+    ],
+    "correct_index": 1,
+    "explanation": "OSHA 29 CFR 1910.94 specifically requires a Type CE abrasive blasting respirator -- a supplied-air helmet or hood that delivers clean compressed air to the worker -- for abrasive blasting operations, particularly when silica-containing media (sand, some glass beads) are used. Silica dust causes silicosis, an incurable and progressive lung disease. Air-purifying respirators cannot provide sufficient protection in high-concentration blasting environments. An N95 has no resistance to the volume of fine crystalline silica produced. Outdoor blasting with favorable wind reduces exposure but does not eliminate it and does not satisfy the regulatory requirement.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::abrasive-blasting-respirator"
+  },
+  {
+    "external_key": "AS-B62-048",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A technician needs to move an oxygen cylinder from storage to the welding area. Which handling requirement MUST be observed?",
+    "choices": [
+      "Full oxygen cylinders should be transported lying on their side to lower the center of gravity and reduce tipping risk",
+      "Oxygen cylinders can be moved by hand without a cart if the distance is less than 10 feet",
+      "Oxygen cylinders may be rolled on their bottom rim for short distances; this is the approved transport method for full cylinders",
+      "The cylinder must be transported upright with the valve protection cap secured, using an approved cylinder cart; cylinders must never be dragged, rolled on their side, or carried by the valve"
+    ],
+    "correct_index": 3,
+    "explanation": "High-pressure gas cylinders, including oxygen, must be transported upright with the valve protection cap installed to guard against valve damage. An approved cylinder hand truck (dolly) with a chain or strap must be used to secure the cylinder during transport. If a cylinder falls and the valve shears off, the escaping high-pressure gas can propel the cylinder like a rocket, causing severe injury. Oxygen cylinders must never be rolled on their side, dragged, or moved by lifting the valve -- the valve is the highest-pressure point and most vulnerable component. There is no distance exemption that allows carrying a full high-pressure cylinder by hand without proper equipment.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::oxy-cylinder-transport-upright"
+  },
+  {
+    "external_key": "AS-B62-049",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A shop stores propane cylinders used for a torch. Where must these cylinders be stored, and why?",
+    "choices": [
+      "Propane cylinders should be stored inside the shop near the point of use to minimize transport distance and accident risk from moving full cylinders",
+      "Propane cylinders can be stored indoors if a CO detector is installed, because the main hazard from propane is carbon monoxide from incomplete combustion",
+      "Propane cylinders must be stored outdoors or in a well-ventilated area away from ignition sources and building openings, because propane is heavier than air and will accumulate at floor level indoors, creating an explosion hazard",
+      "Propane cylinders should be stored in a locked metal cabinet inside the shop, similar to flammable liquid storage cabinets"
+    ],
+    "correct_index": 2,
+    "explanation": "Propane (LPG) has a specific gravity greater than 1.0, meaning it is heavier than air. Any leak from an indoor cylinder will cause propane to settle to the floor and accumulate in low areas, creating a potentially explosive mixture throughout the shop before the odor is detected at breathing height. NFPA 58 (Liquefied Petroleum Gas Code) requires propane cylinders in excess of a small threshold to be stored outdoors or in a separate structure with no basement, away from ignition sources, combustibles, and building openings. A flammable storage cabinet is designed for liquids and does not provide ventilation for gas leaks. CO detectors do not detect propane or explosive gas concentrations.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::propane-cylinder-outdoor-storage"
+  },
+  {
+    "external_key": "AS-B62-050",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "A technician plans to raise a vehicle on a floor jack and work underneath it. Using the floor jack alone to support the vehicle while working beneath it is:",
+    "choices": [
+      "Acceptable as long as the jack is a high-capacity hydraulic floor jack rated for the vehicle's weight",
+      "Never acceptable; a hydraulic floor jack can lose pressure and drop the vehicle; jack stands must always be placed under the vehicle before work begins underneath it",
+      "Acceptable if the vehicle is raised only a few inches to access the drain plug",
+      "Acceptable only on level concrete; avoid on asphalt surfaces"
+    ],
+    "correct_index": 1,
+    "explanation": "A hydraulic floor jack is a lifting device, not a support device. Hydraulic seals can leak, the release valve can be accidentally bumped, or the jack can tip on an uneven surface -- any of these will drop the vehicle onto the technician working beneath it. Jack stands are rigid mechanical supports that do not rely on hydraulic pressure. OSHA and all automotive safety guidelines require that vehicle weight be transferred to approved jack stands before any technician works under a raised vehicle. The height of work and the rating of the jack do not change this requirement.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::jack-stands-required-under-vehicle"
+  },
+  {
+    "external_key": "AS-B62-051",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A shop worker notices a coworker using a 4.5-inch angle grinder with a cutting disc that is mounted without the blade guard. The guard was removed because it was 'in the way.' What is the correct response?",
+    "choices": [
+      "Allow the work to continue if the coworker is wearing a face shield; the guard is optional when a face shield is used",
+      "The guard is optional on cutting discs but required only on grinding wheels; advise the coworker to switch to a grinding wheel if guards are required",
+      "Stop the operation immediately; grinding wheel and cutting disc guards are required safety devices that protect against disc fragmentation and debris, and must not be removed",
+      "Reduce the grinder speed to the minimum setting as a compromise; lower speed makes guard removal safer"
+    ],
+    "correct_index": 2,
+    "explanation": "Angle grinder guards are required by OSHA 29 CFR 1910.243(c) and must remain installed during operation. The guard serves two critical functions: it contains fragments if the disc shatters (a significant risk at high RPM), and it deflects sparks and debris away from the operator. A cutting disc rotating at 10,000-12,000 RPM stores enormous energy; a fractured disc can penetrate the body at velocities comparable to a bullet. A face shield protects the face but does not protect the body from disc fragments. Guards are required for all disc types on angle grinders. Reducing speed does not satisfy the guarding requirement.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::angle-grinder-guard-required"
+  },
+  {
+    "external_key": "AS-B62-052",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A technician discovers a hydraulic floor jack that is sinking slowly under a loaded vehicle over the course of 10 minutes. The vehicle is supported by a jack stand on the opposite side. What is the safest IMMEDIATE action regarding the jack?",
+    "choices": [
+      "Weld the release valve closed to prevent further pressure loss",
+      "Lower the vehicle fully onto the jack stand, inspect the jack for seal failure, and do not use the jack to support any load until it is repaired or replaced",
+      "Block the descending side with a wood block while re-pumping the jack to maintain height",
+      "Pump the jack handle rapidly to restore pressure and continue work; slow descent is normal for older jacks"
+    ],
+    "correct_index": 1,
+    "explanation": "A jack that sinks under load has an internal seal leak or a faulty release valve. This jack cannot be trusted to maintain a load for the duration of a repair job. The correct action is to safely lower any load onto the properly rated jack stand already in place, then remove the defective jack from service until it is repaired by a qualified person or replaced. Pumping a leaking jack to temporarily restore height is not a safe solution -- the leak will continue and the jack will drop again, potentially when the technician is underneath. Blocking with wood is not a rated support. Welding valves is not a repair procedure and would create additional hazards.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::sinking-floor-jack-seal-failure"
+  },
+  {
+    "external_key": "AS-B62-053",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "A technician performing a fuel trim analysis finds that the long-term fuel trim (LTFT) is +18% on both banks of a V8 engine at idle, but the trim returns to near 0% at cruise RPM. What does this pattern most likely indicate?",
+    "choices": [
+      "A vacuum leak that adds unmetered air at idle (where manifold vacuum is high and the leak has a significant effect) but has less relative effect at higher load where throttle is more open",
+      "A fuel pressure regulator failure causing low rail pressure at all operating conditions equally",
+      "Dirty fuel injectors that reduce fuel delivery only at idle duty cycles",
+      "A failing MAF sensor that over-reports air mass at idle but reads accurately at high RPM"
+    ],
+    "correct_index": 0,
+    "explanation": "Long-term fuel trim at +18% at idle on both banks means the ECM is adding 18% more fuel than its base map expects, indicating a lean condition. The fact that the trim normalizes at cruise is the diagnostic key: at idle, manifold vacuum is highest (15-20 in-Hg), so any vacuum leak draws a large unmetered air flow relative to the small throttle opening. At part-throttle cruise, the throttle plate opens wider and the manifold pressure rises; the leak's fixed orifice contributes a smaller percentage of total airflow and the trim effect disappears. Fuel pressure or injector problems typically show lean trim at all RPMs or worsen at cruise. A MAF over-reporting at idle would cause rich trim, not lean.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::long-term-fuel-trim-vacuum-leak"
+  },
+  {
+    "external_key": "AS-B62-054",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the function of the EGR (Exhaust Gas Recirculation) valve in a gasoline engine?",
+    "choices": [
+      "It controls the amount of exhaust gas that flows through the catalytic converter to optimize its efficiency",
+      "It routes fresh air from the intake into the exhaust manifold to help oxidize unburned hydrocarbons in the exhaust",
+      "It recirculates a portion of exhaust gas back into the intake manifold to dilute the intake charge, lowering peak combustion temperatures and reducing oxides of nitrogen (NOx) emissions",
+      "It opens during deceleration to use exhaust pressure for engine braking"
+    ],
+    "correct_index": 2,
+    "explanation": "EGR reduces NOx emissions by introducing inert exhaust gas into the intake charge. The exhaust gas displaces oxygen and acts as a heat sink, lowering peak combustion temperatures. NOx forms at very high temperatures when nitrogen and oxygen combine; keeping peak temperatures below approximately 2500 degrees Fahrenheit reduces NOx formation significantly. EGR does not route fresh air into the exhaust -- that is secondary air injection, a different system. EGR gas flows to the intake, not past the catalytic converter. Engine braking in diesel trucks is done by compression release brakes, not EGR.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::egr-function-nox"
+  },
+  {
+    "external_key": "AS-B62-055",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A technician is rebuilding a carburetor-equipped engine and sets valve timing by aligning the camshaft and crankshaft timing marks. After assembly the engine runs but has significantly reduced power and pops back through the carburetor. What error in timing most likely causes this symptom?",
+    "choices": [
+      "The cam timing is one full revolution off, so the valves are firing on the wrong stroke, producing greatly retarded ignition timing",
+      "The camshaft is installed one tooth advanced, causing the intake valves to open too early and drawing in mixture before the piston creates adequate suction",
+      "A tooth off on the cam drive retards both intake and exhaust events, causing the exhaust valve to open before combustion is complete; the resulting pressure wave pushes mixture back through the open intake valve into the carburetor",
+      "The camshaft is installed one tooth retarded, which only delays intake valve opening so the engine cannot breathe at high RPM; popping back through the carb indicates a lean condition from late intake opening alone"
+    ],
+    "correct_index": 2,
+    "explanation": "One tooth retarded on a cam drive shifts all valve events late. The exhaust valve opens earlier relative to the power stroke (because the cam is late, the lobe arrives at the exhaust rocker sooner in crankshaft degrees), releasing cylinder pressure while the piston is still well into the power stroke and reducing power. The intake valve also opens later, but the most telling symptom -- popping back through the carburetor -- occurs because the retarded exhaust event and altered overlap cause exhaust pressure to push combustion gases back through the still-open intake valve. This reverse pressure wave carries burning gases into the carburetor, producing a backfire. One full revolution off would likely prevent the engine from starting at all.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::cam-timing-one-tooth-retarded"
+  },
+  {
+    "external_key": "AS-B62-056",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A worker is grinding cast iron on a pedestal grinder without respiratory protection, believing the dust is harmless because 'it is just metal.' What is the actual health risk, and what respiratory protection is required?",
+    "choices": [
+      "The risk is carbon monoxide from the grinding wheel, not the metal dust; ventilation alone is sufficient protection",
+      "Cast iron dust is combustible and the respirator prevents ingestion of sparks; any dust mask rated for construction use is sufficient",
+      "Cast iron dust is inert and poses no respiratory hazard; no respirator is required for grinding cast iron",
+      "Cast iron dust contains free crystalline silica from the graphite matrix; inhaling fine particles causes silicosis and pulmonary fibrosis; at minimum a NIOSH-approved N95 or higher-rated particulate respirator is required, and P100 filtration is preferred"
+    ],
+    "correct_index": 3,
+    "explanation": "Cast iron contains free crystalline silica (typically 1-3% by weight in gray iron), which is a known human carcinogen (IARC Group 1) and the cause of silicosis. When grinding or machining cast iron, the silica-containing dust generated includes respirable-size particles that can reach the alveoli. OSHA's permissible exposure limit for crystalline silica is 50 micrograms per cubic meter as an 8-hour TWA. A minimum N95 filtering facepiece respirator is required for incidental exposure; P100 half-face respirators are standard for sustained grinding of cast iron. Grinding wheels do not produce CO. Cast iron dust is not meaningfully combustible at the concentrations produced by grinding.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::cast-iron-grinding-silica-respirator"
+  }
+]

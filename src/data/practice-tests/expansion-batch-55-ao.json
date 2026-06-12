@@ -1,0 +1,869 @@
+[
+  {
+    "external_key": "AO-B55-001",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A pentagonal prism rests on one of its rectangular faces on a table. The prism has two pentagonal faces (the top and bottom caps) and five rectangular side faces. You stand directly in front of the prism and look straight at it. What shape is the outline you see?",
+    "choices": [
+      "A pentagon",
+      "A rectangle",
+      "A triangle",
+      "A circle"
+    ],
+    "correct_index": 1,
+    "explanation": "Standing in front of the prism and looking straight at it, you are face to face with one of the five rectangular side faces. That rectangle is your entire outline. A pentagon is what you would see from the end of the prism, looking directly at a pentagonal cap. A triangle is not a face of a pentagonal prism at all. A circle is impossible for a flat-faced prism.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::pentagonal-prism-side-view"
+  },
+  {
+    "external_key": "AO-B55-002",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A regular tetrahedron (four equilateral triangular faces) sits on one of its triangular faces on a table. You view it from directly above, looking straight down at the apex. What shape is the overhead outline?",
+    "choices": [
+      "A square",
+      "A circle",
+      "A triangle",
+      "A rectangle"
+    ],
+    "correct_index": 2,
+    "explanation": "A tetrahedron resting on a triangular face has a single apex pointing straight up. Looking from directly above, the three base edges form the outer boundary and the boundary is a triangle. A square has four equal sides, which a tetrahedron outline cannot produce. A circle would require a curved profile. A rectangle requires two pairs of parallel sides of differing lengths, which this triangular silhouette does not have.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::tetrahedron-overhead-view"
+  },
+  {
+    "external_key": "AO-B55-003",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A hexagonal prism stands upright on a table with its hexagonal face as the base. You view it from directly above. What shape is the outline you see?",
+    "choices": [
+      "A rectangle",
+      "A hexagon",
+      "A circle",
+      "A triangle"
+    ],
+    "correct_index": 1,
+    "explanation": "Looking straight down at a hexagonal prism standing on its hexagonal base, the top face is also a hexagon and that hexagonal boundary is exactly what you see from above. A rectangle is the outline when you look at a rectangular side face of the prism. A circle would appear only with a curved surface. A triangle is not a face of a hexagonal prism.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::hexagonal-prism-overhead"
+  },
+  {
+    "external_key": "AO-B55-004",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A cube has faces labeled: top = A, bottom = B, front = C, back = D, left = E, right = F. The cube is placed in front of a mirror so the front face (C) faces the mirror. Which face of the cube does the mirror image show as the new 'front' (facing you, the viewer)?",
+    "choices": [
+      "Face D",
+      "Face A",
+      "Face C",
+      "Face E"
+    ],
+    "correct_index": 0,
+    "explanation": "A mirror parallel to the front face reflects the cube so that front and back are swapped in the image. The front face (C) in the mirror image is replaced by the back face (D) of the real cube appearing where C was. Face D is what the mirror shows at the position facing you. Face A (top) and Face E (left) are unchanged in a front-facing mirror. Face C (the real front) is pointing into the mirror and is replaced by D in the reflection.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::mirror-reflection-front-back"
+  },
+  {
+    "external_key": "AO-B55-005",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A square pyramid (square base, four triangular sides) sits on its square base. You view it from directly in front, looking at the center of the pyramid at eye level. What shape is the outline you see?",
+    "choices": [
+      "A square",
+      "A pentagon",
+      "A triangle",
+      "A circle"
+    ],
+    "correct_index": 2,
+    "explanation": "Viewed from directly in front at eye level, a square pyramid presents a triangular silhouette: the two slanting side edges converge at the apex and the base edge runs across the bottom, forming a triangle. A square is the overhead silhouette from directly above. A pentagon has five sides and is not an outline of this pyramid at any standard viewing angle. A circle is impossible for flat-faced solids.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::square-pyramid-front-view"
+  },
+  {
+    "external_key": "AO-B55-006",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 1,
+    "stem": "A cube has faces: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. The cube is tipped forward 90 degrees, rotating around its front-bottom edge so the front face descends to the floor and the top face tilts toward you. What color is now on the front (facing you)?",
+    "choices": [
+      "Red",
+      "Green",
+      "Black",
+      "White"
+    ],
+    "correct_index": 3,
+    "explanation": "A 90-degree forward tip around the front-bottom edge cycles the ring top-front-bottom-back: the top goes to the front, the front goes to the bottom, the bottom goes to the back, and the back rises to the top. The original top face (white) becomes the new front face. Red (the old front) is now on the bottom. Black (the old bottom) is now facing the back. Green (the old back) is now on top.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::forward-tip-face-tracking"
+  },
+  {
+    "external_key": "AO-B55-007",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A hexagonal prism stands upright on its hexagonal base. A plane cuts straight through the prism parallel to the hexagonal bases. What shape is the cross-section?",
+    "choices": [
+      "A rectangle",
+      "A hexagon",
+      "A triangle",
+      "An octagon"
+    ],
+    "correct_index": 1,
+    "explanation": "A horizontal cut parallel to the hexagonal bases of an upright hexagonal prism slices through all six rectangular side faces simultaneously and produces a cross-section congruent to the bases, a regular hexagon. A rectangle would result from a vertical cut through two opposite side faces. A triangle cannot appear from a flat cut through a prism of this shape. An octagon has eight sides, which this six-sided prism cannot produce with a horizontal cut.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::hexagonal-prism-horizontal-cut"
+  },
+  {
+    "external_key": "AO-B55-009",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A square pyramid (square base, apex directly above the center) is tilted so it rests on one of its triangular faces with that face flat on the table. How many faces does this pyramid have in total, and how many are now in a vertical or angled position (not lying flat on the table)?",
+    "choices": [
+      "5 faces total, 4 faces angled or vertical",
+      "5 faces total, 3 faces angled or vertical",
+      "4 faces total, 3 faces angled or vertical",
+      "6 faces total, 5 faces angled or vertical"
+    ],
+    "correct_index": 0,
+    "explanation": "A square pyramid has 1 square base plus 4 triangular side faces, totaling 5 faces. When the pyramid rests on one of its triangular faces, that one triangle is flat on the table and the remaining 4 faces (the square base and the other 3 triangles) are all either angled or vertical. So the answer is 5 faces total with 4 faces in non-flat positions. 3 faces angled would leave 2 flat, but only 1 face rests on the table. A pyramid never has 4 or 6 total faces.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::pyramid-resting-on-triangle"
+  },
+  {
+    "external_key": "AO-B55-010",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A pentagonal prism has vertices labeled with coordinates. One cap has vertices A1(0,0,0), B1(2,0,0), C1(3,1,0), D1(1,2,0), E1(-1,1,0). The other cap has every vertex shifted directly upward by 4 units to A2(0,0,4) through E2(-1,1,4). A flat cut is made at height z=2, halfway between the caps. What shape is the cross-section?",
+    "choices": [
+      "A pentagon congruent to the base",
+      "A rectangle",
+      "A triangle",
+      "A decagon (10-sided polygon)"
+    ],
+    "correct_index": 0,
+    "explanation": "A horizontal cut through a right prism at any height parallel to the bases always produces a cross-section congruent to the bases. At z=2, the cut passes through the midpoint of each of the five rectangular side faces and maps to the same pentagon shape as the caps. A rectangle would require cutting through only two opposite faces. A triangle cannot result from a flat cut through a prism with five sides. A decagon would require an angled cut intersecting every face twice, not a flat horizontal cut.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::pentagonal-prism-cross-section"
+  },
+  {
+    "external_key": "AO-B55-011",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A cube has faces: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. The cube is placed in front of a vertical mirror standing to its left (the mirror is parallel to the front and back faces). In the mirror reflection, what color appears on the right side of the reflected cube?",
+    "choices": [
+      "Yellow",
+      "White",
+      "Green",
+      "Blue"
+    ],
+    "correct_index": 3,
+    "explanation": "A vertical mirror placed to the left of the cube (parallel to front and back faces) swaps left and right in the reflection. The real cube's left face (blue) appears on the right side of the mirror image, and the real cube's right face (yellow) appears on the left side of the mirror image. Top, bottom, front, and back are all unchanged. So the reflection shows blue on the right side. Yellow is on the right of the real cube but appears on the left in the reflection.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::mirror-left-right-swap"
+  },
+  {
+    "external_key": "AO-B55-012",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 2,
+    "stem": "A cube has faces: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. Which pair of faces can NEVER share an edge with each other?",
+    "choices": [
+      "Top (white) and right (yellow)",
+      "Front (red) and back (green)",
+      "Left (blue) and top (white)",
+      "Front (red) and left (blue)"
+    ],
+    "correct_index": 1,
+    "explanation": "On a cube, opposite faces are the only pairs that share no edge and no vertex. Front (red) and back (green) are directly opposite each other and never share an edge. Top (white) and right (yellow) share an edge where the top meets the right side. Left (blue) and top (white) also share an edge at the upper-left. Front (red) and left (blue) share a vertical edge on the left side of the front face.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::opposite-faces-never-share-edge"
+  },
+  {
+    "external_key": "AO-B55-013",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 3,
+    "stem": "A cube has faces: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. The cube is placed on a glass table and you look straight up through the glass from directly below. What color do you see?",
+    "choices": [
+      "White",
+      "Black",
+      "Red",
+      "Green"
+    ],
+    "correct_index": 1,
+    "explanation": "Looking straight up at the cube through the glass from directly below, you see the bottom face of the cube, which is black. White is the top face, which faces away from you. Red is the front face, which is vertical and not in line with your upward line of sight. Green is the back face, also vertical. The direct upward line of sight intersects only the bottom face.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::view-from-below"
+  },
+  {
+    "external_key": "AO-B55-015",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 3,
+    "stem": "A cube has faces: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. The cube is rotated 180 degrees to the left around the vertical axis (front and back swap, left and right swap). Then it is tipped to the right 90 degrees around the bottom-right edge. What color is now on top?",
+    "choices": [
+      "Green",
+      "Red",
+      "Blue",
+      "Yellow"
+    ],
+    "correct_index": 3,
+    "explanation": "After 180 degrees left rotation: front=green (was back), back=red (was front), left=yellow (was right), right=blue (was left). Top=white and bottom=black are unchanged. Now tip right 90 degrees (ring top-right-bottom-left): old top(white) goes to right, old right(blue) goes to bottom, old bottom(black) goes to left, old left(yellow) rises to top. State: top=yellow, right=white, bottom=blue, left=black, front=green, back=red. Yellow is now on top. White moved to the right side. Blue is on the bottom. Black is on the left side.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::half-turn-left-then-tip-right"
+  },
+  {
+    "external_key": "AO-B55-016",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 3,
+    "stem": "A regular tetrahedron has four equilateral triangular faces labeled 1, 2, 3, and 4. How many edges does a regular tetrahedron have, and what does Euler's formula (F + V = E + 2) confirm?",
+    "choices": [
+      "4 edges; Euler gives 4+4=8 and 4+2=6, which does not check out",
+      "6 edges; Euler gives 4+4=8 and 6+2=8, which confirms the count",
+      "8 edges; Euler gives 4+4=8 and 8+2=10, which does not check out",
+      "5 edges; Euler gives 4+4=8 and 5+2=7, which does not check out"
+    ],
+    "correct_index": 1,
+    "explanation": "A tetrahedron has 4 triangular faces and 4 vertices. Each face contributes 3 edges and every edge is shared by exactly 2 faces, so total edges = 4 times 3 divided by 2 = 6. Euler's formula: F + V = E + 2 gives 4 + 4 = 8 and 6 + 2 = 8, confirming the count. Four edges would leave a face detached. Eight edges would require more vertices. Five edges would violate the formula with 4 + 4 = 8 not equal to 5 + 2 = 7.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::tetrahedron-euler-verify"
+  },
+  {
+    "external_key": "AO-B55-017",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 3,
+    "stem": "A cube with side length 1 is balanced on one of its vertices (corners), with that vertex touching the table and the opposite vertex pointing straight up. How many faces of the cube are in a purely horizontal position?",
+    "choices": [
+      "0",
+      "2",
+      "1",
+      "3"
+    ],
+    "correct_index": 0,
+    "explanation": "When a cube is balanced on a vertex, the body diagonal is vertical. In this orientation every face is tilted at the same angle relative to the horizontal; none of the six faces is perfectly level. Each face of a cube is perpendicular to one of the three edge directions, and when the body diagonal is vertical all three edge directions are equally inclined away from vertical. Zero faces are horizontal. Resting on an edge would produce two tilted faces; resting on a face would produce one horizontal face.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::cube-balanced-on-vertex"
+  },
+  {
+    "external_key": "AO-B55-018",
+    "subtest": "AO",
+    "topic_id": "ao.3d-visualization",
+    "difficulty": 3,
+    "stem": "A cube has faces: top = white, bottom = black, front = red, back = green, left = blue, right = yellow. Perform two moves: (1) tip forward 90 degrees around the front-bottom edge (the front descends, the top tilts toward you); (2) rotate 180 degrees around the vertical axis (front and back swap, left and right swap). What color is now on the back?",
+    "choices": [
+      "Green",
+      "Black",
+      "White",
+      "Red"
+    ],
+    "correct_index": 2,
+    "explanation": "Move 1 (tip forward, ring top-front-bottom-back): old top(white) swings to the front, old front(red) descends to the bottom, old bottom(black) shifts to the back, old back(green) rises to the top. State after move 1: top=green, front=white, bottom=red, back=black, left=blue, right=yellow. Move 2 (rotate 180 degrees around vertical): front and back swap, left and right swap. New front=black (old back), new back=white (old front), new left=yellow (old right), new right=blue (old left). Top=green and bottom=red are unaffected. White is now on the back. Black came to the front. Yellow and blue swapped sides. Green stayed on top.",
+    "status": "verified",
+    "item_family_id": "ao.3d-visualization::forward-tip-then-half-spin"
+  },
+  {
+    "external_key": "AO-B55-019",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A net is drawn as a cross (plus sign) with one square in the center and four squares attached to each of the four edges of the center square, then a sixth square is attached to the top edge of the top-arm square. What 3D shape does this net fold into?",
+    "choices": [
+      "An open-top box",
+      "A triangular prism",
+      "A cube",
+      "A rectangular prism with unequal sides"
+    ],
+    "correct_index": 2,
+    "explanation": "A cross of five squares plus one extra square on an arm gives six identical squares total. Six identical squares fold into a closed cube. The center becomes one face, the four arms fold up to become four side walls, and the extra square on the arm folds over to close the top, giving all six faces. An open-top box needs only five squares. A triangular prism requires triangular faces. A rectangular prism with unequal sides would require differently sized rectangles.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::cross-plus-one-tab-cube"
+  },
+  {
+    "external_key": "AO-B55-020",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A net for a triangular prism is laid out as follows: three rectangles in a row (left to right, labeled R1, R2, R3), with an equilateral triangle labeled T1 attached to the top edge of R1 and another equilateral triangle labeled T2 attached to the bottom edge of R3. When folded, which two faces end up opposite each other with no shared edge?",
+    "choices": [
+      "R1 and R2",
+      "R2 and R3",
+      "T1 and R2",
+      "T1 and T2"
+    ],
+    "correct_index": 3,
+    "explanation": "A triangular prism has two triangular caps (T1 and T2) that are opposite each other at the two ends of the prism. They share no edge; each closes one end. The three rectangles (R1, R2, R3) wrap around to form the three lateral faces. R1 and R2 are adjacent lateral faces sharing a long edge. R2 and R3 are also adjacent. T1 and R2 share a long lateral edge when folded. Only the two triangular caps face each other across the prism interior without any shared edge.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::triangular-prism-opposite-caps"
+  },
+  {
+    "external_key": "AO-B55-021",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A net for a square pyramid consists of one square face and four isosceles triangles, one attached to each edge of the square. When folded, the four triangle tips all meet at a single point. How many vertices does the completed pyramid have?",
+    "choices": [
+      "4",
+      "8",
+      "6",
+      "5"
+    ],
+    "correct_index": 3,
+    "explanation": "A square pyramid has 4 corners on its square base plus 1 apex where all four triangular tips meet, giving 5 vertices total. Euler's formula confirms: F=5 (1 square + 4 triangles), E=8, so V = 2 + E - F = 2 + 8 - 5 = 5. Eight vertices would be a cube. Six vertices belong to a triangular prism. Four vertices describe a tetrahedron, not a square pyramid.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::square-pyramid-vertex-count"
+  },
+  {
+    "external_key": "AO-B55-022",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A net for a rectangular box (closed on all six sides) is laid out as a row of four rectangles labeled A, B, C, D (each 3 by 2 units), with one rectangle E (3 by 2 units) above B and one rectangle F (3 by 2 units) below C. Is this a valid net for a rectangular prism?",
+    "choices": [
+      "Yes, it folds into a closed rectangular prism",
+      "No, it folds into a cube instead",
+      "No, two faces overlap when folded",
+      "No, it is missing one face"
+    ],
+    "correct_index": 0,
+    "explanation": "This net has the same layout as a standard cube cross-net but with 3-by-2 rectangles instead of squares. The four rectangles in the row form the four long sides, and E and F become the two end caps. It folds without overlap because E and F are offset (above B and below C), which is the same arrangement that avoids collision. A cube would require all faces to be square. No face overlaps and no face is missing.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::rectangular-prism-valid-net"
+  },
+  {
+    "external_key": "AO-B55-023",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 1,
+    "stem": "A flat net has the shape of a capital T: a row of three squares across the top (labeled L, M, R) and one square hanging down from the bottom edge of M (labeled D), giving 4 squares total. When folded, what 3D shape results?",
+    "choices": [
+      "A tetrahedron",
+      "A cube",
+      "An open-sided shape with 4 faces",
+      "A square pyramid"
+    ],
+    "correct_index": 2,
+    "explanation": "Four squares fold into an open shape with 4 faces, not a closed polyhedron. A cube needs 6 faces and a tetrahedron needs 4 triangular faces, not squares. The T-arrangement gives a flat bottom (M), two side walls (L and R folding up), and a front wall (D folding down from M), leaving the back and top open. This is an open-sided box with 4 faces. A square pyramid requires triangular lateral faces.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::four-square-open-shape"
+  },
+  {
+    "external_key": "AO-B55-025",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A net for an open box (5 faces, no lid) is a plus-sign with 5 squares: one center square and one square on each of the four edges of the center. The center square has a star drawn on it (on the top surface of the flat net). After folding, where is the star?",
+    "choices": [
+      "On the bottom face, facing down (or inward)",
+      "On a side wall",
+      "Open to the air at the top",
+      "On the outside of a wall"
+    ],
+    "correct_index": 0,
+    "explanation": "In the plus-sign net the center square becomes the bottom face of the open box. The star drawn on the top surface of the center square in the flat net faces downward when the walls fold up around it. The four arm squares become the four side walls; none of them carries the star. The top is open so nothing is there. The star ends up on the floor of the box, facing down.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::open-box-center-mark"
+  },
+  {
+    "external_key": "AO-B55-026",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A triangular prism has two equilateral triangular faces and three rectangular faces. Using Euler's formula (F + V - E = 2), how many edges does the completed prism have?",
+    "choices": [
+      "6",
+      "12",
+      "9",
+      "8"
+    ],
+    "correct_index": 2,
+    "explanation": "A triangular prism has F=5 (2 triangles + 3 rectangles) and V=6 (3 on each triangular cap). Euler: E = F + V - 2 = 5 + 6 - 2 = 9. You can count directly: 3 edges on the top triangle + 3 on the bottom triangle + 3 lateral edges = 9. Six edges belong to a tetrahedron. Twelve edges belong to a cube. Eight edges belong to a square pyramid.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::triangular-prism-edge-count-verified"
+  },
+  {
+    "external_key": "AO-B55-027",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A cube net is shaped as a diagonal staircase: square 1 at top-left, square 2 to the right of 1, square 3 below 2, square 4 to the right of 3, square 5 below 4, and square 6 to the right of 5. Can this net fold into a closed cube?",
+    "choices": [
+      "Yes, it is a valid cube net",
+      "No, one square is left dangling",
+      "No, two squares overlap when folded",
+      "No, the net is missing a square"
+    ],
+    "correct_index": 2,
+    "explanation": "The diagonal staircase arrangement is not one of the 11 valid cube nets. When folded, the end squares arrive at the same face position as squares earlier in the chain, causing an overlap. The net has all 6 required squares, so nothing is missing or dangling; the problem is strictly the collision between two squares that both try to occupy the same face location. A valid cube net must allow all six squares to land on distinct face positions.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::staircase-invalid-cube-net"
+  },
+  {
+    "external_key": "AO-B55-028",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A net for a cube has squares labeled 1 through 6. Square 1 is in the center. Square 2 is above 1, square 3 is below 1, square 4 is to the left of 1, square 5 is to the right of 1, and square 6 is above square 2. When folded, square 1 becomes the bottom face. Which square becomes the top face?",
+    "choices": [
+      "Square 2",
+      "Square 3",
+      "Square 6",
+      "Square 4"
+    ],
+    "correct_index": 2,
+    "explanation": "Square 1 is the bottom. Square 2 (above 1) folds upward to become the front face. Square 6 (above 2) folds over the front and lands on top, directly opposite the bottom (square 1). Square 3 (below 1) becomes the back face. Squares 4 and 5 become the left and right side faces. So square 6 is the top. Square 2 is the front, adjacent to square 1, not opposite it.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::center-cross-top-face-id"
+  },
+  {
+    "external_key": "AO-B55-029",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A net for a rectangular prism has two 4-by-6 rectangles (top and bottom), two 4-by-3 rectangles (left and right sides), and two 6-by-3 rectangles (front and back). What is the total surface area of the prism?",
+    "choices": [
+      "72 square units",
+      "108 square units",
+      "144 square units",
+      "36 square units"
+    ],
+    "correct_index": 1,
+    "explanation": "Sum all six face areas: two 4-by-6 faces = 2 times 24 = 48 square units; two 4-by-3 faces = 2 times 12 = 24 square units; two 6-by-3 faces = 2 times 18 = 36 square units. Total = 48 + 24 + 36 = 108 square units. 72 omits one pair of faces. 144 double-counts one pair. 36 is just the area of one pair of the smallest faces.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::rectangular-prism-surface-area"
+  },
+  {
+    "external_key": "AO-B55-030",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 3,
+    "stem": "A cube net is arranged as an L-shape: a column of four squares (top to bottom: A, B, C, D), with squares E and F extending to the right of A (E is right of A, F is right of E). When folded into a cube, which pairing of opposite faces is correct?",
+    "choices": [
+      "A opposite C; B opposite D; E opposite F",
+      "A opposite D; B opposite C; E opposite F",
+      "A opposite C; B opposite D; E opposite C",
+      "B opposite F; A opposite D; C opposite E"
+    ],
+    "correct_index": 0,
+    "explanation": "In the column A-B-C-D, faces two steps apart in the chain are opposite each other: A is opposite C, and B is opposite D. The two arm squares E and F extending off square A land on the remaining two face positions, which are always opposite each other (top and bottom). So all three pairs are correct: A opposite C, B opposite D, and E opposite F. A-opposite-D would require them to be separated by two steps in the column, but A and D are three steps apart and thus adjacent after wrapping. E cannot be opposite C because C is already paired with A.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::l-net-all-opposite-pairs"
+  },
+  {
+    "external_key": "AO-B55-031",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 3,
+    "stem": "A net for a pyramid with a regular pentagonal base consists of one regular pentagon plus five congruent isosceles triangles, one attached to each edge of the pentagon. Using Euler's formula (F + V = E + 2), how many edges does the completed pentagonal pyramid have?",
+    "choices": [
+      "8",
+      "10",
+      "12",
+      "15"
+    ],
+    "correct_index": 1,
+    "explanation": "A pentagonal pyramid has F=6 (1 pentagon + 5 triangles) and V=6 (5 base corners + 1 apex). Euler: E = F + V - 2 = 6 + 6 - 2 = 10 edges. Count directly: 5 base edges + 5 lateral edges = 10. Eight edges belong to a square pyramid (4+4). Twelve is the edge count of a rectangular prism. Fifteen would require more faces or vertices than this solid has.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::pentagonal-pyramid-euler"
+  },
+  {
+    "external_key": "AO-B55-032",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 3,
+    "stem": "A cube net is a T-shape: a row of four squares labeled 1, 2, 3, 4 (left to right) and two squares labeled 5 and 6 attached to the top and bottom of square 3 respectively. Square 1 has an arrow on it. Which square is directly opposite the arrow face (square 1)?",
+    "choices": [
+      "Square 2",
+      "Square 4",
+      "Square 6",
+      "Square 3"
+    ],
+    "correct_index": 3,
+    "explanation": "In the row 1-2-3-4, faces two steps apart are opposite each other: square 1 is opposite square 3, and square 2 is opposite square 4. Squares 5 and 6 (above and below square 3) become the top and bottom and are opposite each other. So the face directly opposite the arrow face (square 1) is square 3. Square 2 is adjacent to square 1, sharing an edge. Square 4 is opposite square 2. Square 6 is opposite square 5.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::t-net-row-of-4-opposite-from-end"
+  },
+  {
+    "external_key": "AO-B55-033",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 3,
+    "stem": "A net for a hexagonal prism (two hexagonal caps and six rectangular sides) is laid out with the six rectangles in a row and the two hexagons attached to the top edge of rectangle 1 and the bottom edge of rectangle 6. How many total vertices does the assembled hexagonal prism have?",
+    "choices": [
+      "8",
+      "12",
+      "18",
+      "24"
+    ],
+    "correct_index": 1,
+    "explanation": "A hexagonal prism has two hexagonal caps, each with 6 vertices, giving 12 vertices total. The six rectangular side faces share these 12 vertices and add none. Euler's formula confirms: F=8 (2 hexagons + 6 rectangles), E=18, so V = 2 + 18 - 8 = 12. Eight is the vertex count of a cube. Eighteen is the edge count of this prism, not the vertex count. Twenty-four over-counts by treating each cap's vertices separately.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::hexagonal-prism-vertices"
+  },
+  {
+    "external_key": "AO-B55-034",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 3,
+    "stem": "A cube net is arranged as follows: square A at top-left; square B to the right of A; square C to the right of B; square D below B; square E below D; square F to the right of D. When folded, square A becomes the front face and square B becomes the right face. Which square is the top face?",
+    "choices": [
+      "Square C",
+      "Square D",
+      "Square F",
+      "Square E"
+    ],
+    "correct_index": 3,
+    "explanation": "Assign positions: A=front, B=right. C (right of B, one step further in the side ring) = back. D (below B, attached to the right face) folds to become the bottom face. E (below D, attached to the bottom face) folds upward from the bottom to become the top face, directly opposite D. F (right of D) folds from the right edge of the bottom face to become the left face, opposite B. Assignments: A=front, B=right, C=back, D=bottom, E=top, F=left. The top face is E. Square C is the back. Square D is the bottom. Square F is the left face.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::net-with-branching-assignment"
+  },
+  {
+    "external_key": "AO-B55-035",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 3,
+    "stem": "A cube net has six squares: CENTER (labeled 1) in the middle; TOP (labeled 2) above it; BOT (labeled 3) below it; LEFT (labeled 4) to its left; RIGHT (labeled 5) to its right; APEX (labeled 6) above TOP. When folded, CENTER becomes the bottom. Which number is on the face opposite LEFT (face 4)?",
+    "choices": [
+      "5",
+      "2",
+      "1",
+      "6"
+    ],
+    "correct_index": 0,
+    "explanation": "When CENTER (1) is the bottom, TOP (2) folds to become the front, BOT (3) folds to become the back, LEFT (4) folds to become the left side, RIGHT (5) folds to become the right side, and APEX (6) folds over from TOP's top edge to become the top face. Left (4) and Right (5) are directly opposite each other. So the face opposite 4 is 5. Number 2 (front) is adjacent to LEFT, sharing an edge. Number 1 (bottom) is also adjacent to LEFT. Number 6 (top) is directly opposite 1 (bottom), not opposite LEFT.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::cross-net-opposite-numbered-faces"
+  },
+  {
+    "external_key": "AO-B55-036",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A hexagonal prism stands upright. How many vertices (corners) does it have?",
+    "choices": [
+      "6",
+      "8",
+      "18",
+      "12"
+    ],
+    "correct_index": 3,
+    "explanation": "A hexagonal prism has two hexagonal caps. Each hexagon has 6 corners, giving 6 + 6 = 12 vertices total. The six rectangular side faces share these 12 vertices and contribute none. Euler's formula confirms: F=8, E=18, V = 2 + 18 - 8 = 12. Six is only one cap's corners. Eight is the vertex count of a cube. Eighteen is the edge count, not the vertex count.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::hexagonal-prism-vertices"
+  },
+  {
+    "external_key": "AO-B55-037",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A staircase of unit cubes is built so that column 1 is 1 cube tall, column 2 is 2 cubes tall, column 3 is 3 cubes tall, column 4 is 2 cubes tall, and column 5 is 1 cube tall. Each column is 1 cube wide and 1 cube deep. How many cubes are there in total?",
+    "choices": [
+      "9",
+      "10",
+      "15",
+      "12"
+    ],
+    "correct_index": 0,
+    "explanation": "Add the column heights: 1 + 2 + 3 + 2 + 1 = 9 cubes. Each column is 1 by 1 in cross-section, so height equals the cube count per column. 10 would mean one extra cube. 15 would require all columns to be 3 cubes tall. 12 would require an extra cube somewhere in the tally.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::pyramid-staircase-five-columns"
+  },
+  {
+    "external_key": "AO-B55-038",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A regular tetrahedron has how many faces?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "5"
+    ],
+    "correct_index": 0,
+    "explanation": "A regular tetrahedron is made of four equilateral triangular faces, all congruent. Euler's formula: F=4, V=4, E=6, and 4+4-6=2, confirming the count. Six faces belong to a cube. Eight triangular faces belong to a regular octahedron. Five faces belong to a square pyramid or triangular prism.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::tetrahedron-face-count"
+  },
+  {
+    "external_key": "AO-B55-039",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A solid rectangular prism is built from unit cubes: 2 cubes long, 2 cubes wide, and 3 cubes tall. How many unit cubes make up the prism?",
+    "choices": [
+      "7",
+      "12",
+      "8",
+      "18"
+    ],
+    "correct_index": 1,
+    "explanation": "Multiply the three dimensions: 2 times 2 times 3 equals 12 cubes. Seven is the sum (2+2+3) rather than the product. Eight equals 2 times 2 times 2, using the wrong height. Eighteen equals 2 times 3 times 3, using the wrong width.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::block-volume-2x2x3"
+  },
+  {
+    "external_key": "AO-B55-040",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A pentagonal prism has two pentagonal faces and five rectangular faces. How many edges does it have in total?",
+    "choices": [
+      "10",
+      "12",
+      "15",
+      "18"
+    ],
+    "correct_index": 2,
+    "explanation": "A pentagonal prism has 5 edges on the top pentagon, 5 on the bottom pentagon, and 5 lateral edges connecting the two caps, giving 5+5+5=15 edges. Euler's formula: F=7 (2 pentagons + 5 rectangles), V=10 (5 on each cap), E = F+V-2 = 7+10-2 = 15. Ten is the edge count of only the two pentagons. Twelve is the edge count of a cube. Eighteen is the edge count of a hexagonal prism.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::pentagonal-prism-edge-count"
+  },
+  {
+    "external_key": "AO-B55-041",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 1,
+    "stem": "A structure is built by placing unit cubes in an L-shape in a single layer: 3 cubes in a row going right, then 2 more cubes going forward from the leftmost cube of that row (the corner cube is already counted in the row). How many cubes are in the L-shaped layer?",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "3"
+    ],
+    "correct_index": 1,
+    "explanation": "The L-shape has 3 cubes in the horizontal row plus 2 additional cubes extending forward from the left end (the corner cube is already included in the row of 3). Total = 3 + 2 = 5 cubes. Four would be a short L missing one arm cube. Six adds an extra cube beyond the described shape. Three is only the horizontal row with no extension.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::l-shape-layer-5"
+  },
+  {
+    "external_key": "AO-B55-042",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 2,
+    "stem": "A staircase of unit cubes is built with 3 columns against a back wall: column 1 is 1 cube tall, column 2 is 2 cubes tall, column 3 is 3 cubes tall. Each column is 1 cube wide and 2 cubes deep. How many cubes are in the structure?",
+    "choices": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "correct_index": 3,
+    "explanation": "Each column is 2 cubes deep, so multiply height by depth for each: column 1 = 1 times 2 = 2, column 2 = 2 times 2 = 4, column 3 = 3 times 2 = 6. Total = 2 + 4 + 6 = 12 cubes. Six counts only the front visible layer at depth 1. Eight is the count if column 3 is mistakenly given depth 1. Ten undercounts one column.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::staircase-two-deep"
+  },
+  {
+    "external_key": "AO-B55-043",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 2,
+    "stem": "A 3-by-3-by-3 cube is built from unit cubes and the outside is painted. How many unit cubes have exactly ONE painted face?",
+    "choices": [
+      "8",
+      "12",
+      "6",
+      "1"
+    ],
+    "correct_index": 2,
+    "explanation": "Unit cubes with exactly one painted face sit in the center of each outer face, surrounded on all five other sides by more cubes. A 3x3x3 cube has 6 outer faces and each face has exactly one center cube, so there are 6 such cubes. Eight is the corner cube count (three painted faces each). Twelve is the edge-center cube count (two painted faces each). One is the single fully interior cube (zero painted faces).",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::painted-one-face-3x3x3"
+  },
+  {
+    "external_key": "AO-B55-044",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 2,
+    "stem": "A structure is built as follows: the base is a 3-by-2 grid of unit cubes (6 cubes). On top of the base, only the 3 cubes in the left column get a second layer (3 more cubes). On top of those 3, only the middle cube of the left column gets a third cube. How many cubes are in the structure?",
+    "choices": [
+      "8",
+      "10",
+      "9",
+      "12"
+    ],
+    "correct_index": 1,
+    "explanation": "Count layer by layer: base = 6 cubes, second layer (left column of 3) = 3 cubes, third layer (one cube on the middle position) = 1 cube. Total = 6 + 3 + 1 = 10 cubes. Eight undercounts by missing the single top cube. Nine would require the second or third layer to be different. Twelve overcounts one of the layers.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::asymmetric-layer-stack"
+  },
+  {
+    "external_key": "AO-B55-045",
+    "subtest": "AO",
+    "topic_id": "ao.paper-folding-nets",
+    "difficulty": 2,
+    "stem": "A net for a pentagonal prism has 7 faces: two regular pentagons and five rectangles. A student claims the assembled prism has 10 vertices. Verify this using Euler's formula (F + V - E = 2) with the known edge count of 15.",
+    "choices": [
+      "F + V - E = 7 + 10 - 15 = 2, so 10 vertices is correct",
+      "The vertex count must be 12 because 7 + 12 - 15 = 4, not 2",
+      "The edge count must be 18 because 7 + 10 - 18 = -1, not 2",
+      "The face count must be 8 because 8 + 10 - 15 = 3, not 2"
+    ],
+    "correct_index": 0,
+    "explanation": "Euler's formula: F + V - E = 2. With F=7 and E=15: 7 + V - 15 = 2, so V = 10. The student's claim of 10 vertices is correct. Each pentagonal cap has 5 corners and the prism has two caps, giving 5 + 5 = 10 vertices. Vertex count 12 would make F + V - E = 7 + 12 - 15 = 4, which violates Euler's formula. Edge count 18 and face count 8 both describe a hexagonal prism, not a pentagonal one.",
+    "status": "verified",
+    "item_family_id": "ao.paper-folding-nets::pentagonal-prism-euler-verify"
+  },
+  {
+    "external_key": "AO-B55-046",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 2,
+    "stem": "A hollow cube shell is made by starting with a 4-by-4-by-4 block and removing the inner 2-by-2-by-2 region, leaving a shell one unit cube thick on all sides. How many unit cubes remain in the shell?",
+    "choices": [
+      "48",
+      "32",
+      "64",
+      "56"
+    ],
+    "correct_index": 3,
+    "explanation": "The full 4-by-4-by-4 block contains 64 unit cubes. The hollow interior is a 2-by-2-by-2 cube (removing one shell layer from each side: 4 - 2 = 2 in each dimension). The interior has 2 times 2 times 2 = 8 cubes. Remaining shell = 64 - 8 = 56 unit cubes. Forty-eight removes too many cubes. Thirty-two is half the full block without the proper interior calculation. Sixty-four is the full solid before removal.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::hollow-cube-shell-4x4x4"
+  },
+  {
+    "external_key": "AO-B55-047",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "A staircase structure is built with unit cubes. Viewed from the side it has 5 steps going up from left to right: step 1 is 1 cube tall, step 2 is 2 cubes tall, step 3 is 3 cubes tall, step 4 is 4 cubes tall, step 5 is 5 cubes tall. Each step is 1 cube wide. The structure is 3 cubes deep from front to back. How many unit cubes are in the structure?",
+    "choices": [
+      "15",
+      "45",
+      "30",
+      "25"
+    ],
+    "correct_index": 1,
+    "explanation": "The front face has column heights 1+2+3+4+5 = 15 cubes. With depth 3, every cube in the front face has 2 more cubes behind it. Total = 15 times 3 = 45 cubes. Fifteen is the front-face count at depth 1. Thirty uses depth 2 instead of 3. Twenty-five is an irrelevant calculation.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::five-step-staircase-3-deep"
+  },
+  {
+    "external_key": "AO-B55-048",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "A solid 5-by-5-by-5 cube is built from unit cubes and all outer faces are painted. How many unit cubes have exactly zero painted faces?",
+    "choices": [
+      "1",
+      "8",
+      "64",
+      "27"
+    ],
+    "correct_index": 3,
+    "explanation": "Interior cubes with no painted face form a (5-2)-by-(5-2)-by-(5-2) = 3-by-3-by-3 inner cube. That inner cube has 3 times 3 times 3 = 27 unit cubes. Each is completely surrounded by other cubes on all six sides. One is the interior count of a 3x3x3 cube (a single center cube). Eight is the interior count of a 4x4x4 cube. Sixty-four would be the interior of a 6x6x6 cube.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::hidden-cubes-5x5x5"
+  },
+  {
+    "external_key": "AO-B55-049",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "A cube-stacking arrangement has 4 cubes on the floor in an L-shape (3 in a row plus 1 beside the left end of the row). On top of the 3-in-a-row section, 2 additional cubes are placed at the leftmost and rightmost positions only (not the middle). On top of those 2 second-layer cubes, 1 cube is placed over the leftmost position. Assuming no gaps (each column is solid from the floor up), how many unit cubes are in the structure?",
+    "choices": [
+      "8",
+      "7",
+      "9",
+      "10"
+    ],
+    "correct_index": 1,
+    "explanation": "Count by column. The leftmost column of the row: layer 1 + layer 2 + layer 3 = 3 cubes. The middle of the row: layer 1 only = 1 cube. The rightmost of the row: layer 1 + layer 2 = 2 cubes. The extra L-extension cube beside the left end: layer 1 only = 1 cube. Total = 3 + 1 + 2 + 1 = 7 cubes. Eight over-counts by adding a phantom middle second-layer cube. Nine and ten both add cubes not described in the structure.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::l-stack-with-layered-columns"
+  },
+  {
+    "external_key": "AO-B55-050",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "A regular octahedron has 8 equilateral triangular faces and 6 vertices. Using Euler's formula (F + V = E + 2), how many edges does it have, and how many triangular faces meet at each vertex?",
+    "choices": [
+      "12 edges; 4 faces meet at each vertex",
+      "12 edges; 3 faces meet at each vertex",
+      "8 edges; 4 faces meet at each vertex",
+      "16 edges; 5 faces meet at each vertex"
+    ],
+    "correct_index": 0,
+    "explanation": "Euler's formula: F + V = E + 2 gives 8 + 6 = E + 2, so E = 12. Verify: each of the 8 triangular faces has 3 edges and each edge is shared by 2 faces, so edges = 8 times 3 divided by 2 = 12. For faces per vertex: each triangle has 3 vertices, total face-vertex incidences = 8 times 3 = 24, distributed among 6 vertices = 24 divided by 6 = 4 faces per vertex. Three faces per vertex would describe a different solid. Eight edges is far too few. Sixteen edges would require more faces or vertices.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::octahedron-euler-faces-per-vertex"
+  },
+  {
+    "external_key": "AO-B55-051",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "A solid 4-by-4-by-4 cube is painted on the outside and cut into 64 unit cubes. How many unit cubes have exactly THREE painted faces?",
+    "choices": [
+      "4",
+      "16",
+      "8",
+      "24"
+    ],
+    "correct_index": 2,
+    "explanation": "Unit cubes with exactly three painted faces sit at the corners of the large cube, where three outer faces meet. Any cube of side length at least 2 has exactly 8 corners, so 8 unit cubes have three painted faces regardless of whether it is 3x3x3 or 4x4x4. Four would be the corner count of a square, not a cube. Sixteen is unrelated to corner counts. Twenty-four is the count of two-painted-face (edge) cubes in a 4x4x4 cube, not the corner count.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::painted-three-faces-4x4x4"
+  },
+  {
+    "external_key": "AO-B55-052",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "How many distinct axes of rotational symmetry does a cube have in total, counting axes through opposite face centers, axes through opposite edge midpoints, and axes through opposite vertices?",
+    "choices": [
+      "3",
+      "6",
+      "13",
+      "9"
+    ],
+    "correct_index": 2,
+    "explanation": "A cube has three types of rotational axes. Through opposite face centers: 3 pairs of opposite faces give 3 axes (90, 180, 270 degree rotations each). Through opposite edge midpoints: 12 edges form 6 pairs, giving 6 axes (180 degree rotations each). Through opposite vertices: 8 vertices form 4 pairs, giving 4 axes (120 and 240 degree rotations each). Total = 3 + 6 + 4 = 13 distinct axes. Three counts only face-center axes. Six counts face and vertex axes but misses edge-midpoint axes. Nine counts face and edge axes but misses vertex axes.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::cube-symmetry-axes"
+  },
+  {
+    "external_key": "AO-B55-053",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "A 3-by-3-by-3 cube is assembled from unit cubes. Three unit cubes are removed from the same outer face: the corner cube at position (1,1,1), the edge-center cube at (2,1,1), and the face-center cube at (2,2,1). The outside of the remaining 24-cube structure is painted. How many of the remaining unit cubes have exactly zero painted faces?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correct_index": 1,
+    "explanation": "Before removal, the 3x3x3 cube has exactly 1 fully interior cube at position (2,2,2). All three removed cubes are on the outer surface of the large cube and do not include (2,2,2). The cube at (2,2,2) remains fully surrounded on all six sides by other unit cubes; no removal exposed any of its faces. When the exterior is painted, (2,2,2) still has zero painted faces. Exactly 1 unit cube has zero painted faces. Zero would require the interior cube to have been removed, which it was not. Two or three interior cubes cannot exist in a 3x3x3 block.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::partial-removal-interior-cube"
+  },
+  {
+    "external_key": "AO-B55-054",
+    "subtest": "AO",
+    "topic_id": "ao.spatial-counting",
+    "difficulty": 3,
+    "stem": "A plane cuts through a cube, passing through the midpoints of 6 edges: one midpoint on each of the 3 edges meeting at vertex V1 and one midpoint on each of the 3 edges meeting at the vertex V2 directly opposite V1. What shape is the cross-section?",
+    "choices": [
+      "A square",
+      "A regular hexagon",
+      "A rectangle (non-square)",
+      "An equilateral triangle"
+    ],
+    "correct_index": 1,
+    "explanation": "A cut through the 6 edge midpoints connecting the neighborhoods of two opposite vertices of a cube produces a regular hexagon. The six midpoints are pairwise connected by equal-length segments because of the cube's symmetry: each segment runs across one face of the cube diagonally from one edge midpoint to another, and all six segments are equal. This is the largest cross-section of a cube by a plane perpendicular to a body diagonal. A square results from a cut parallel to a face. A rectangle appears from a cut parallel to one pair of faces but not the other. An equilateral triangle results from a cut through 3 edges at one vertex only.",
+    "status": "verified",
+    "item_family_id": "ao.spatial-counting::cube-hexagonal-cross-section"
+  }
+]

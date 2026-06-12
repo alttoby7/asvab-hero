@@ -1,0 +1,937 @@
+[
+  {
+    "external_key": "PC-B41-001",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nIcebreaker ships are built to force open frozen sea routes that ordinary vessels cannot navigate. Their hulls are specially reinforced, and their engines generate enormous thrust to crack and push aside thick ice. Without icebreakers, Arctic supply runs to remote communities would become impossible during winter months. These ships keep trade routes open and allow research stations to receive fuel, food, and equipment year-round.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Icebreakers are essential vessels that keep frozen sea routes open for ships and communities.",
+      "Icebreaker hulls are made from reinforced steel.",
+      "Arctic winters are extremely cold and dangerous.",
+      "Research stations need food and fuel to operate."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage consistently emphasizes that icebreakers enable navigation and supply on frozen routes that would otherwise be impassable. The detail about reinforced hulls is a supporting fact, not the central point. The options about arctic cold and research-station supplies are narrow details that support the broader claim.",
+    "status": "verified",
+    "item_family_id": "pc.passage::icebreaker-sea-routes"
+  },
+  {
+    "external_key": "PC-B41-002",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Dust Bowl of the 1930s was not simply a natural disaster; it was largely the result of poor farming practices. After World War I, farmers plowed millions of acres of Great Plains grassland to plant wheat, stripping away the native grasses that held soil in place. When a prolonged drought arrived, there was nothing to anchor the topsoil. Wind carried it away in massive black storms that buried farms, darkened skies as far as Washington, D.C., and forced hundreds of thousands of families to abandon their land.\n\nWhich statement best expresses the main idea of this passage?",
+    "choices": [
+      "The Dust Bowl resulted from a combination of harmful farming practices and drought.",
+      "The 1930s drought brought unusually strong winds to the Great Plains.",
+      "Farmers planted too much wheat after World War I.",
+      "Dust storms can travel as far as Washington, D.C."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage makes clear that the Dust Bowl required both the removal of stabilizing grasses through poor farming and the arrival of drought. The option about wheat planting after World War I is only a partial cause. The fact about storms reaching Washington is a vivid detail, not the central argument. Drought alone as a cause is not what the passage argues.",
+    "status": "verified",
+    "item_family_id": "pc.passage::dust-bowl-farming"
+  },
+  {
+    "external_key": "PC-B41-004",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nBees do more than produce honey. As they move from flower to flower collecting nectar, bees transfer pollen that allows plants to reproduce. About one-third of the food humans eat depends on this pollination service. Without bees and other pollinators, crops such as almonds, apples, and blueberries would fail. Protecting bee populations is therefore not just an environmental concern but a matter of food security.\n\nThe main idea of this passage is that:",
+    "choices": [
+      "bees are primarily important because they produce honey.",
+      "almonds, apples, and blueberries are popular crops around the world.",
+      "one-third of flowers cannot reproduce without human intervention.",
+      "protecting bees is crucial because pollination underpins much of the human food supply."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage argues throughout that bees matter most because of pollination and food security, explicitly correcting the honey-only view. The option about bees producing honey is contradicted by the opening sentence. The crops listed are examples, not the main point. The option about human intervention misreads the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::bee-pollination-food"
+  },
+  {
+    "external_key": "PC-B41-005",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Roman aqueduct system was one of antiquity's greatest engineering achievements. At its height, eleven major aqueducts supplied Rome with roughly one million cubic meters of water every day, feeding public baths, fountains, and private homes. Engineers carved tunnels through mountains and built elevated stone arches across valleys to maintain the gentle downhill gradient that kept water flowing by gravity alone. This network remained largely functional for centuries after the empire's fall.\n\nWhich statement best captures the main idea?",
+    "choices": [
+      "Rome had eleven major aqueducts during the height of its empire.",
+      "Roman aqueducts were a remarkable engineering system that supplied the city with vast amounts of water.",
+      "Gravity was the only force that moved water through ancient Roman pipes.",
+      "Roman engineers preferred tunnels through mountains to arches across valleys."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage emphasizes the scale and ingenuity of the entire aqueduct system as its central point. The fact about eleven aqueducts is a supporting detail, not the main idea. Gravity is mentioned as a design feature, not the passage's focus. The preference for tunnels versus arches is not stated in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::roman-aqueducts"
+  },
+  {
+    "external_key": "PC-B41-006",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nConventional wisdom holds that multitasking makes people more productive. Research consistently finds the opposite. When people switch rapidly between tasks, the brain incurs a switching cost, a brief delay while it reconfigures its focus. Over the course of a workday, these delays accumulate into significant lost time. Studies also show that work completed while multitasking contains more errors than work completed with sustained attention. True productivity, it turns out, requires doing one thing at a time.\n\nThe main idea of this passage is that:",
+    "choices": [
+      "multitasking increases productivity when tasks are simple.",
+      "the brain operates most efficiently when switching between tasks frequently.",
+      "switching costs are only a problem for people who are easily distracted.",
+      "research shows that multitasking actually reduces productivity and quality of work."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage directly refutes the idea that multitasking helps and provides two mechanisms, time loss and errors, to argue it hurts productivity. The option suggesting multitasking works for simple tasks is not supported by the passage. The passage says the brain incurs a cost from switching, not that it becomes more efficient. No claim about distracted individuals specifically appears in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::multitasking-myth"
+  },
+  {
+    "external_key": "PC-B41-007",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nFlood plains are flat areas adjacent to rivers that fill with water when rivers overflow their banks during heavy rains or snowmelt. Although flooding can destroy crops and buildings, flood plains are also among the most fertile land on Earth. The periodic flooding deposits nutrient-rich silt across the plain. Ancient civilizations along the Nile, Tigris, and Euphrates built their societies largely because of the reliable agricultural bounty that these flood plains provided every year.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Flood plains have both destructive and highly productive qualities.",
+      "Flooding always causes serious damage to crops and buildings.",
+      "Ancient civilizations were careless about choosing where to settle.",
+      "The Nile River floods more often than the Tigris and Euphrates."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage presents both the damage flooding causes and the fertility it creates, making the dual nature of flood plains the central idea. The option that flooding always causes damage ignores the positive half of the passage. Ancient civilizations are cited as evidence of productivity, not carelessness. No comparison of river flood frequency appears in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::floodplain-fertility"
+  },
+  {
+    "external_key": "PC-B41-008",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nWhen astronauts return from long missions aboard the International Space Station, they often cannot walk without assistance. Months of weightlessness cause muscles to weaken and bones to lose density at an accelerated rate. To counter these effects, astronauts aboard the station are required to exercise two hours each day using specialized resistance equipment. Even so, full recovery on the ground can take weeks or months, depending on how long the mission lasted.\n\nWhat is the main idea?",
+    "choices": [
+      "The International Space Station requires astronauts to exercise every day.",
+      "Bone density loss in space cannot be reversed with exercise.",
+      "Astronauts enjoy working out for two hours each day in orbit.",
+      "Extended spaceflight weakens the body significantly, making recovery necessary after return."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage focuses on how weightlessness degrades the body and the recovery needed afterward. The two-hour exercise requirement is a countermeasure mentioned as a supporting detail, not the central point. The passage does not say bone loss is irreversible. There is no mention of astronauts enjoying exercise.",
+    "status": "verified",
+    "item_family_id": "pc.passage::spaceflight-body-effects"
+  },
+  {
+    "external_key": "PC-B41-009",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nMicroplastics, tiny fragments of plastic less than five millimeters in size, have been found in the deepest ocean trenches, on the peaks of remote mountains, and in human blood. They enter the environment from broken-down plastic waste, synthetic clothing fibers, and industrial processes. Scientists are still studying their effects on living organisms, but early research suggests microplastics can disrupt hormone function and accumulate in tissue. The problem cannot be addressed simply by picking up litter; it requires changes at every level of plastic production and use.\n\nWhich statement best expresses the main idea?",
+    "choices": [
+      "Microplastics are a widespread and serious problem that requires systemic solutions.",
+      "Scientists have not yet begun studying the health effects of microplastics.",
+      "Microplastics come only from single-use plastic bottles thrown into the ocean.",
+      "Picking up litter is the most effective way to reduce plastic pollution."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage establishes both the ubiquity of microplastics and the complexity of the solution needed, which together form the main idea. The option about scientists not studying effects contradicts the passage, which says early research is underway. The sources listed include clothing fibers and industrial processes, not only bottles. The passage explicitly says litter cleanup alone is insufficient.",
+    "status": "verified",
+    "item_family_id": "pc.passage::microplastics-systemic"
+  },
+  {
+    "external_key": "PC-B41-010",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Pony Express operated for only about eighteen months, from April 1860 to October 1861, yet it captured the American imagination in a way few enterprises ever have. Relay riders carried mail across nearly two thousand miles of wilderness between Missouri and California in about ten days, cutting the previous delivery time nearly in half. The service ended when the transcontinental telegraph connected the coasts, making fast written messages nearly instantaneous. Though brief, the Pony Express remains a symbol of American daring and ingenuity.\n\nWhat is the main idea?",
+    "choices": [
+      "The Pony Express employed hundreds of riders across the western frontier.",
+      "The transcontinental telegraph was slower than the Pony Express.",
+      "Mail delivery before 1860 was impossible west of Missouri.",
+      "Despite its short life, the Pony Express became a lasting symbol of American spirit and innovation."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage emphasizes the lasting cultural impact of the Pony Express despite its brief operation. The number of riders is not mentioned in the passage. The telegraph made communication faster, not slower, which is why the Pony Express ended. The passage says delivery time was cut in half, implying mail did reach California before the Pony Express existed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::pony-express-legacy"
+  },
+  {
+    "external_key": "PC-B41-011",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Battle of Midway, fought in June 1942, is widely considered the turning point of the Pacific War. American code breakers had cracked enough of Japan's naval code to reveal the date and target of the planned attack. Admiral Chester Nimitz used that intelligence to position three aircraft carriers in ambush. In a matter of minutes on the morning of June 4, dive bombers sank three Japanese carriers. A fourth was sunk later that afternoon. Japan never fully recovered its carrier advantage.\n\nAccording to the passage, how many Japanese carriers were sunk during the Battle of Midway?",
+    "choices": [
+      "Four",
+      "Two",
+      "Three",
+      "Five"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states that three carriers were sunk in the morning and a fourth was sunk that afternoon, for a total of four. Three refers only to those lost in the first attack. Two and five are not stated in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::battle-of-midway-carriers"
+  },
+  {
+    "external_key": "PC-B41-012",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe bald eagle was removed from the U.S. Endangered Species List in 2007, after populations recovered from historic lows caused by hunting and the widespread use of the pesticide DDT. At its lowest point in the 1960s, only about 417 nesting pairs remained in the contiguous United States. By the time of delisting, that number had grown to nearly 10,000 nesting pairs. The recovery is credited to the 1972 ban on DDT, habitat protection, and strict hunting prohibitions.\n\nAccording to the passage, approximately how many nesting pairs of bald eagles remained at the species' lowest point?",
+    "choices": [
+      "About 100",
+      "About 417",
+      "About 2,000",
+      "About 10,000"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states explicitly that only about 417 nesting pairs remained in the 1960s at the lowest point. Ten thousand is the recovered population at the time of delisting, not the low point. One hundred and two thousand are not mentioned in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::bald-eagle-recovery"
+  },
+  {
+    "external_key": "PC-B41-013",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Berlin Wall was built in August 1961 by East Germany to prevent its citizens from fleeing to West Berlin. At its peak, the barrier stretched for about 96 miles and included guard towers, a no-man's-land called the death strip, and automatic tripwires. Over the years, roughly 5,000 people successfully escaped across or under the wall, while at least 140 died attempting to do so. The wall stood until November 1989, when East Germany opened its borders and crowds began tearing it down.\n\nAccording to the passage, why did East Germany build the Berlin Wall?",
+    "choices": [
+      "To stop East German citizens from escaping to West Berlin",
+      "To protect East Berlin from military attack by West Germany",
+      "To create a buffer zone between the Soviet Union and NATO forces",
+      "To mark the official border between East and West Germany"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage directly states the wall was built to prevent East German citizens from fleeing to West Berlin. The options about military attack and NATO buffer zones are not mentioned in the passage. While the wall did mark a boundary, the passage identifies preventing escape as the explicit reason for its construction.",
+    "status": "verified",
+    "item_family_id": "pc.passage::berlin-wall-purpose"
+  },
+  {
+    "external_key": "PC-B41-014",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Hubble Space Telescope was launched in April 1990, but shortly after launch scientists discovered a flaw in its primary mirror that blurred its images. In December 1993, astronauts aboard the Space Shuttle Endeavour conducted a repair mission, installing corrective optics that functioned like contact lenses for the telescope. After the fix, Hubble began producing sharp images that transformed astronomy and contributed to discoveries about the expansion rate of the universe.\n\nAccording to the passage, what was used to fix the Hubble telescope's mirror problem?",
+    "choices": [
+      "A replacement primary mirror installed by robotic arms",
+      "A software patch uploaded from a ground station",
+      "Corrective optics that functioned like contact lenses",
+      "A new secondary mirror fitted by the Endeavour crew"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage specifically states that astronauts installed corrective optics described as functioning like contact lenses. No replacement mirror or robotic arms are mentioned. A software patch is not described anywhere in the passage. The secondary mirror option is not what the passage describes.",
+    "status": "verified",
+    "item_family_id": "pc.passage::hubble-repair-mission"
+  },
+  {
+    "external_key": "PC-B41-015",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe Black Death, caused by the bacterium Yersinia pestis, reached Europe in 1347 and killed an estimated 30 to 60 percent of the continent's population within a few years. The disease spread primarily through fleas carried by rats, though infected droplets from coughing also transmitted the pneumonic form. Medieval physicians, lacking knowledge of germ theory, attributed the plague to miasmas, or bad air, and to astrological alignments. Some recommended carrying bouquets of flowers to ward off the foul smell they believed caused infection.\n\nAccording to the passage, what did medieval physicians believe caused the Black Death?",
+    "choices": [
+      "Bad air and astrological alignments",
+      "Fleas carried by rats moving through city sewers",
+      "The bacterium Yersinia pestis spreading through contaminated water",
+      "Contact with infected individuals who were coughing"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states that medieval physicians attributed the plague to miasmas (bad air) and astrological alignments. The actual cause involving fleas and rats is presented as modern knowledge, not what physicians believed at the time. The bacterium Yersinia pestis was unknown to medieval medicine. Infected droplets are mentioned as an actual transmission route, not a medieval belief.",
+    "status": "verified",
+    "item_family_id": "pc.passage::black-death-beliefs"
+  },
+  {
+    "external_key": "PC-B41-016",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nLightning rods were invented by Benjamin Franklin in 1752 after he conducted experiments demonstrating that lightning is electrical in nature. A lightning rod is a metal spike mounted at the top of a building and connected by a conductor wire to the ground. When lightning strikes, the electrical charge travels down the wire safely into the earth rather than passing through the building. Franklin's invention saved countless structures from fire and destruction caused by lightning strikes.\n\nAccording to the passage, what happens when lightning strikes a building equipped with a lightning rod?",
+    "choices": [
+      "The lightning rod absorbs and stores the electrical charge for later use.",
+      "The charge is reflected away from the building into the surrounding air.",
+      "The electrical charge travels down a wire into the ground.",
+      "An alarm sounds to warn occupants of the building to evacuate."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states clearly that the electrical charge travels down the conductor wire into the earth. No mention is made of storing, reflecting, or alarming. These options are not supported by anything in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::lightning-rod-function"
+  },
+  {
+    "external_key": "PC-B41-017",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Trans-Siberian Railway, completed in 1916, spans approximately 5,772 miles from Moscow to Vladivostok on the Pacific coast. It is the longest single continuous railway line in the world. The full journey takes about six days by express train and passes through eight time zones. Construction began in 1891 and required the labor of tens of thousands of workers, including convicts and soldiers, to cut through the Siberian wilderness.\n\nAccording to the passage, how long does the full journey from Moscow to Vladivostok take by express train?",
+    "choices": [
+      "About six days",
+      "About two days",
+      "About four days",
+      "About ten days"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage explicitly states the full journey takes about six days by express train. Two, four, and ten days are not mentioned in the passage and are therefore unsupported.",
+    "status": "verified",
+    "item_family_id": "pc.passage::trans-siberian-railway"
+  },
+  {
+    "external_key": "PC-B41-018",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe human liver performs more than 500 distinct functions. Among its most critical roles are filtering toxins from the blood, producing bile to aid fat digestion, synthesizing proteins needed for blood clotting, and storing glycogen as a reserve energy source. The liver is also unusual in that it can regenerate; if up to 70 percent of liver tissue is removed, the organ can regrow to its original mass within a few months under healthy conditions.\n\nAccording to the passage, up to what percentage of the liver can be removed and still allow the organ to regrow?",
+    "choices": [
+      "30 percent",
+      "50 percent",
+      "70 percent",
+      "90 percent"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states that up to 70 percent of liver tissue can be removed while still allowing regeneration. Thirty, fifty, and ninety percent are not stated in the passage and represent inaccurate figures.",
+    "status": "verified",
+    "item_family_id": "pc.passage::liver-regeneration"
+  },
+  {
+    "external_key": "PC-B41-019",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nMorse code was developed in the 1830s by Samuel Morse and Alfred Vail as a way to send messages over electric telegraph wires. Each letter of the alphabet is represented by a unique pattern of short signals called dots and long signals called dashes. The simplicity of the system allowed trained operators to send and receive dozens of words per minute. Morse code remained the primary method of long-distance electrical communication for nearly a century.\n\nAccording to the passage, what are the two types of signals used in Morse code?",
+    "choices": [
+      "Dots and dashes",
+      "High tones and low tones",
+      "Letters and numbers",
+      "Short beeps and long silences"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage explicitly identifies short signals called dots and long signals called dashes as the two building blocks of Morse code. High and low tones are not mentioned in the passage. Letters and numbers are what the code represents, not the signal types. Short beeps and long silences is a mischaracterization not found in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::morse-code-signals"
+  },
+  {
+    "external_key": "PC-B41-020",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe U.S. Constitution establishes three branches of the federal government: the legislative branch (Congress), the executive branch (the President), and the judicial branch (the federal courts). Each branch has distinct powers, and a system of checks and balances prevents any single branch from accumulating too much authority. For example, Congress passes laws, but the President can veto them, and the Supreme Court can strike down laws it finds unconstitutional.\n\nAccording to the passage, what can the Supreme Court do to a law passed by Congress?",
+    "choices": [
+      "Strike down the law if it is found unconstitutional",
+      "Rewrite the law to correct any constitutional problems",
+      "Send the law back to Congress for a second vote",
+      "Veto the law before the President signs it"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states that the Supreme Court can strike down laws it finds unconstitutional. Rewriting laws or sending them back for a second vote are not powers described in the passage. The veto power belongs to the President, not the Supreme Court.",
+    "status": "verified",
+    "item_family_id": "pc.passage::checks-and-balances"
+  },
+  {
+    "external_key": "PC-B41-021",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nFor three consecutive winters, the small fishing village had pulled in record catches. The harbor was crowded with new boats, and several families built larger homes on the hillside. In the fourth year, the water stayed unusually warm through autumn, and by spring the fish simply did not come. The nets came up empty week after week. By summer, two of the new boats were for sale and the hillside construction had stopped.\n\nWhat can be most reasonably inferred from this passage?",
+    "choices": [
+      "The villagers had saved enough money to retire and no longer needed to fish.",
+      "The fishing decline was caused by competing boats from a neighboring village.",
+      "The prosperity the village had built depended heavily on conditions it could not control.",
+      "Warmer water temperatures always permanently end fish migrations."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage shows the village flourishing during good catches and struggling quickly when conditions changed, supporting the inference that its prosperity depended on factors outside its control. Retirement is contradicted by the distress signals of boats for sale. Competing boats are never mentioned. The passage describes one event, not a permanent biological rule.",
+    "status": "verified",
+    "item_family_id": "pc.passage::fishing-village-reliance"
+  },
+  {
+    "external_key": "PC-B41-022",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe new hospital wing opened with 40 patient rooms, a modern imaging suite, and a trauma center. The groundbreaking ceremony had been attended by the mayor and three city council members, who praised the project as a sign of the city's commitment to health care. The hospital director noted that the project was completed a year ahead of schedule and four million dollars under budget.\n\nWhat can be most reasonably inferred from this passage?",
+    "choices": [
+      "The hospital expects the new wing to be unprofitable in its first year.",
+      "The trauma center was the main reason the project came in under budget.",
+      "The new wing replaced an older section of the hospital that had been demolished.",
+      "City officials and hospital leadership view the project as a success."
+    ],
+    "correct_index": 3,
+    "explanation": "The presence of the mayor and council members offering praise, combined with the director's remarks about being ahead of schedule and under budget, strongly implies all parties view the project favorably. Nothing in the passage suggests financial concerns about profitability. No cause for the budget savings is identified. Whether the wing replaced demolished space is not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::hospital-wing-success"
+  },
+  {
+    "external_key": "PC-B41-023",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nPrivate Chen had run the obstacle course seventeen times in the past month, always finishing in the top five. On evaluation day, she arrived early, checked her bootlaces twice, and stood at the starting line with her eyes closed for a moment before the whistle blew.\n\nWhat can most reasonably be inferred about Private Chen?",
+    "choices": [
+      "Private Chen was nervous about the course because she had failed it before.",
+      "Private Chen preferred obstacle courses to all other training exercises.",
+      "Private Chen was closing her eyes because the sun was in them.",
+      "Private Chen had prepared thoroughly and was focused on performing well."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage describes consistent top-five finishes and deliberate pre-evaluation rituals, both of which point toward thorough preparation and focus. Prior failure is not mentioned and contradicts her strong record. A preference for obstacle courses is never stated. The reason she closed her eyes is not given, and attributing it to sunlight is speculation not supported by the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::private-chen-preparation"
+  },
+  {
+    "external_key": "PC-B41-024",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nA study of 500 urban neighborhoods found that areas with the highest density of fast-food restaurants also had the highest rates of diet-related illness. Areas with the most grocery stores had significantly lower rates of the same conditions. Researchers noted that residents in the high-illness neighborhoods had average household incomes 40 percent lower than those in the low-illness areas.\n\nWhat can be most reasonably inferred from this passage?",
+    "choices": [
+      "Fast-food restaurants are the sole cause of diet-related illness in urban areas.",
+      "Grocery stores actively promote healthier eating habits through advertising campaigns.",
+      "Residents in low-illness neighborhoods never eat at fast-food restaurants.",
+      "Low income, limited grocery access, and greater fast-food availability may all contribute to diet-related illness."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage links fast-food density, low grocery access, and low income to higher illness rates without identifying a single cause, which supports the inference that multiple factors are likely at work. Calling fast food the sole cause overstates the evidence. Advertising campaigns by grocery stores are not mentioned. The passage does not claim residents in healthier areas never eat fast food.",
+    "status": "verified",
+    "item_family_id": "pc.passage::food-access-income-health"
+  },
+  {
+    "external_key": "PC-B41-025",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nAfter the bridge was closed for inspection, city engineers spent three days examining every support beam, cable anchor, and expansion joint. They submitted their report on a Friday afternoon. By Monday morning, the bridge had been reopened to traffic without any public announcement of what the inspection found.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "The engineers discovered serious structural damage that required immediate repair.",
+      "City officials deliberately hid safety concerns from the public.",
+      "The bridge reopened because the city needed the tax revenue from traffic.",
+      "The engineers likely found no problems serious enough to keep the bridge closed."
+    ],
+    "correct_index": 3,
+    "explanation": "A bridge that reopens to traffic three days after inspection most reasonably implies the inspection did not reveal problems that warranted keeping it closed. The passage does not state that damage was found. Deliberately hiding safety concerns requires assuming intent that is not supported by the passage. Tax revenue is never mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::bridge-inspection-reopen"
+  },
+  {
+    "external_key": "PC-B41-026",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe veteran kindergarten teacher had thirty-two children in her class, no classroom aide, and a budget that covered only basic supplies. Each year she requested additional materials and staffing. Each year the requests were filed, acknowledged, and denied. At the end of the school year, her students consistently scored among the top third in literacy assessments for the district.\n\nWhat can be most reasonably inferred from this passage?",
+    "choices": [
+      "The school district provided generous resources that helped students succeed.",
+      "Large class sizes always lead to better academic performance.",
+      "The teacher's students succeeded because literacy tests are too easy.",
+      "The teacher achieved strong student outcomes despite inadequate support from the district."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage establishes that the teacher worked with large class sizes, no aide, and denied resource requests, yet produced students in the top third of literacy scores. This contrast strongly supports the inference that she achieved results despite, not because of, her conditions. The option about generous resources directly contradicts the passage. Large class sizes as a general benefit is not a claim the passage makes. Test difficulty is not addressed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::teacher-resource-constraint"
+  },
+  {
+    "external_key": "PC-B41-027",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe supply convoy departed at 0400 with enough fuel for a forty-hour journey. After twelve hours on the road, the lead driver radioed that two of the four trucks had developed mechanical problems and had to be left behind with the repair team. The convoy pressed on with its remaining vehicles.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "The remaining trucks will now be carrying a heavier load per vehicle.",
+      "The convoy will arrive at its destination faster with fewer trucks.",
+      "The repair team will have the broken trucks fixed within an hour.",
+      "The convoy turned back because the mission could not be completed with two trucks."
+    ],
+    "correct_index": 0,
+    "explanation": "The convoy started with four trucks carrying cargo and continued with two, which logically means each remaining truck must carry more of the original load. Nothing in the passage suggests the convoy became faster. The repair timeline is not stated. The convoy pressed on rather than turning back, which directly contradicts the last option.",
+    "status": "verified",
+    "item_family_id": "pc.passage::convoy-truck-breakdown"
+  },
+  {
+    "external_key": "PC-B41-028",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nA small coastal town relied on its annual summer festival to generate a significant portion of its year-round operating revenue. The festival drew tens of thousands of visitors, filling hotels and restaurants. Two weeks before one year's event, a major storm struck and caused flooding that closed three of the four roads into town. The festival was not officially cancelled.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "The festival went on as planned with its usual attendance.",
+      "The storm destroyed the festival grounds, making the event impossible.",
+      "Visitors found alternate routes and arrived in higher numbers than usual.",
+      "The town's revenue for that year was likely well below normal."
+    ],
+    "correct_index": 3,
+    "explanation": "With three of four roads closed and the festival dependent on tens of thousands of out-of-town visitors, it is reasonable to infer that attendance and therefore revenue fell significantly. The passage does not say the festival was cancelled or the grounds destroyed, so those options overstate what is stated. Higher-than-usual attendance with most roads closed is not a reasonable inference given the context.",
+    "status": "verified",
+    "item_family_id": "pc.passage::festival-road-closure"
+  },
+  {
+    "external_key": "PC-B41-029",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nIn 1854, Dr. John Snow mapped cases of cholera in a London neighborhood and found that they clustered around a single water pump on Broad Street. At the time, the prevailing theory held that cholera spread through bad air. Snow's evidence pointed to contaminated water instead. He convinced local authorities to remove the handle from the pump. New cases in the neighborhood dropped sharply within days.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "Snow's discovery proved that bad air is never a factor in spreading disease.",
+      "Snow was the first physician to use maps for any purpose in medicine.",
+      "Snow's data-driven approach helped demonstrate a waterborne cause for the outbreak.",
+      "Removing the pump handle permanently ended cholera in London."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage shows Snow gathering geographic evidence, proposing a waterborne explanation that contradicted the accepted theory, and seeing the outbreak decline after the pump was disabled. This supports the inference that his method helped link the water supply to the disease. The passage does not say bad air never matters, only that it was not the cause here. No claim is made that Snow was the first to use maps in medicine. Ending cholera in London permanently is far broader than what the passage describes.",
+    "status": "verified",
+    "item_family_id": "pc.passage::john-snow-cholera-map"
+  },
+  {
+    "external_key": "PC-B41-030",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe factory floor had been loud with machinery for thirty years. When the plant switched to automated production in the spring, nearly 200 workers received layoff notices. The company announced that overall output would increase by 30 percent. A union spokesperson said the workers had been given two weeks' notice.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "The laid-off workers were given enough time to find comparable jobs.",
+      "The workers supported the switch to automation because production would increase.",
+      "The company planned to retrain all laid-off workers for technical roles.",
+      "The transition to automation benefited the company financially while creating hardship for the workforce."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage presents a company gaining in output while 200 workers lose their jobs with only two weeks' notice, a contrast that supports the inference of a company benefit and worker hardship. Whether two weeks is enough time is a judgment the passage does not make. Worker support for automation is not stated and is contrary to the union's implicit concern. Retraining is not mentioned anywhere in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::factory-automation-layoffs"
+  },
+  {
+    "external_key": "PC-B41-031",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe old soldier stood at the monument for a long time, his hand resting on the engraved names. He had served alongside men whose names appeared in the first column. He said nothing; there was nothing left to say. The pigeons around him scattered and settled as visitors came and went, but he stayed, a still figure against the marble, until the afternoon light began to fade.\n\nThe author's tone in this passage is best described as:",
+    "choices": [
+      "Celebratory and triumphant",
+      "Quietly mournful and reverent",
+      "Humorous and lighthearted",
+      "Angry and accusatory"
+    ],
+    "correct_index": 1,
+    "explanation": "The imagery of a silent soldier resting his hand on the names of fallen comrades until near dark conveys deep and restrained grief. Nothing in the passage is celebratory, humorous, or angry. The tone is one of solemn, private mourning.",
+    "status": "verified",
+    "item_family_id": "pc.passage::veteran-monument-mourning"
+  },
+  {
+    "external_key": "PC-B41-032",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe city council approved a plan to convert three downtown parking lots into a mixed-use development with affordable housing units, retail space, and a small park. Supporters say the project will ease the housing shortage and activate a neglected part of the city center. Critics argue that removing parking will drive away shoppers and hurt local businesses. The council will begin accepting public comment next month.\n\nThe author's primary purpose in this passage is to:",
+    "choices": [
+      "persuade readers to support the redevelopment project",
+      "warn readers about the risks of removing downtown parking",
+      "inform readers about a local development decision and the debate surrounding it",
+      "criticize the city council for failing to listen to business owners"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage presents both supporting and opposing views without taking a side and ends with a procedural note about public comment, indicating a neutral, informational purpose. The passage does not advocate for the project or argue against parking removal. No criticism of the council is expressed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::downtown-redevelopment-neutral"
+  },
+  {
+    "external_key": "PC-B41-033",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nEvery spring, volunteers gather before dawn at the river's edge to count returning migratory birds. They record each species on printed sheets, binoculars fogging in the cold air, hands stiff. No one pays them. No one has to. The river draws them back the same way it draws the birds, and they would not miss it for anything.\n\nThe author's tone toward the volunteers can best be described as:",
+    "choices": [
+      "Skeptical that unpaid volunteers can produce accurate data",
+      "Admiring of their dedication and love of the work",
+      "Critical of the inconvenience the early-morning schedule creates",
+      "Neutral and strictly factual"
+    ],
+    "correct_index": 1,
+    "explanation": "The author emphasizes that the volunteers return year after year without pay and that the experience draws them like the birds themselves, which conveys clear admiration for their commitment. No skepticism about data quality, criticism of scheduling, or purely neutral tone appears in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::bird-count-volunteers"
+  },
+  {
+    "external_key": "PC-B41-034",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe policy memo ran to forty-seven pages, including eleven pages of definitions, a six-page glossary, and an appendix listing all prior memos the new memo superseded. The actual guidance, buried on page thirty-one, could have been stated in two sentences. Stakeholders were given seventy-two hours to submit comments. Presumably, the authors of the memo expected those stakeholders to have read it first.\n\nThe author's attitude toward the memo is best described as:",
+    "choices": [
+      "Impressed by the thoroughness and attention to detail",
+      "Sympathetic to the difficulty of writing complex policy documents",
+      "Sarcastically critical of the memo's unnecessary complexity",
+      "Neutral and objective about the document's structure"
+    ],
+    "correct_index": 2,
+    "explanation": "The author details absurd excess, forty-seven pages for two sentences of guidance, and ends with a wry remark about stakeholders being expected to read it in seventy-two hours, signaling sarcasm. The tone is clearly critical, not impressed or sympathetic. The final line's irony rules out a neutral stance.",
+    "status": "verified",
+    "item_family_id": "pc.passage::policy-memo-sarcasm"
+  },
+  {
+    "external_key": "PC-B41-035",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nStep one: locate the main water shutoff valve, usually found near the foundation where the water line enters the building. Step two: turn the valve clockwise until it stops. Step three: open a faucet on the lowest floor to release pressure in the pipes. Step four: confirm no water flows from any faucet before starting repairs.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "persuade homeowners to hire licensed plumbers",
+      "entertain readers with a story about a plumbing emergency",
+      "explain in sequence how to shut off a building's water supply",
+      "compare different types of water shutoff valves"
+    ],
+    "correct_index": 2,
+    "explanation": "The numbered steps and action-oriented language show this is instructional writing designed to guide someone through a process. The passage does not recommend hiring professionals or compare valve types. There is no narrative or entertainment element.",
+    "status": "verified",
+    "item_family_id": "pc.passage::water-shutoff-instructions"
+  },
+  {
+    "external_key": "PC-B41-036",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nA single acre of restored prairie can store more carbon than an acre of corn, support hundreds of insect species, prevent topsoil erosion, and filter rainwater before it reaches the aquifer. Yet prairie restoration receives a fraction of the agricultural subsidies directed at row crops. Policymakers have access to this evidence. One wonders what they are waiting for.\n\nThe author's attitude toward current agricultural policy is best described as:",
+    "choices": [
+      "Accepting, since subsidies reflect what farmers prefer to grow",
+      "Uncertain, because the evidence on prairie restoration is still unclear",
+      "Frustrated and critical of the gap between available evidence and policy",
+      "Enthusiastic about recent increases in prairie restoration funding"
+    ],
+    "correct_index": 2,
+    "explanation": "The closing rhetorical question implies impatience and criticism toward policymakers who have the evidence but have not acted. The passage does not accept the status quo or express uncertainty about the evidence. No recent funding increases are mentioned in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::prairie-restoration-policy-frustration"
+  },
+  {
+    "external_key": "PC-B41-037",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nCoral reefs are often called the rainforests of the sea. A healthy reef teems with fish of every shape and color, sea turtles gliding overhead, and gardens of branching coral that took centuries to grow. These ecosystems protect coastlines from storm surge, support commercial fisheries, and draw millions of tourists each year. A world without coral reefs would be immeasurably poorer.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "compare coral reefs with tropical rainforests in terms of species count",
+      "warn readers about the specific threats currently damaging coral reefs",
+      "inform and persuade readers of the importance and value of coral reefs",
+      "describe the scientific process by which coral reefs grow over centuries"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage catalogs the beauty, ecological services, and economic value of reefs and ends with a statement of their irreplaceable worth, combining information with an appeal to value them. The comparison to rainforests is a brief metaphor, not a sustained analysis. Specific threats are not named. The growth process is not described in scientific detail.",
+    "status": "verified",
+    "item_family_id": "pc.passage::coral-reef-value"
+  },
+  {
+    "external_key": "PC-B41-038",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe convoy of aid trucks sat at the border crossing for eleven days while officials reviewed documentation. Inside each truck were boxes of vaccines that required refrigeration. The temperature in the trucks' compartments rose each afternoon as the generator fuel ran low. By the time the convoy was cleared, health workers determined that a significant portion of the vaccines had been rendered ineffective.\n\nThe author's implied attitude toward the delay at the border is:",
+    "choices": [
+      "Understanding, since border officials must carefully verify all shipments",
+      "Indifferent, presenting the event as a routine administrative matter",
+      "Critical of a bureaucratic delay that had serious humanitarian consequences",
+      "Optimistic that future aid convoys will face fewer delays"
+    ],
+    "correct_index": 2,
+    "explanation": "The careful detail about rising temperatures, depleting fuel, and spoiled vaccines creates an implicit condemnation of the delay without using overtly emotional language. The passage presents no defense of the officials' caution, offers no optimism, and the outcome, wasted vaccines meant for human health, signals the author's critical stance. Indifference is contradicted by the specificity of the harm described.",
+    "status": "verified",
+    "item_family_id": "pc.passage::aid-convoy-vaccine-delay"
+  },
+  {
+    "external_key": "PC-B41-039",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe application asked for a brief biography, defined as no more than 200 words. The candidate submitted 847 words accompanied by four photographs, a link to a personal website, and a request that the committee consider the attached recommendation letters, which were not requested. The committee chair noted that instructions had been provided twice.\n\nThe author's tone is best described as:",
+    "choices": [
+      "Sympathetic toward a candidate who was eager to make a strong impression",
+      "Angry at the candidate for wasting the committee's time",
+      "Neutral and factual, presenting the situation without any editorial tone",
+      "Wryly amused at a candidate's conspicuous failure to follow simple instructions"
+    ],
+    "correct_index": 3,
+    "explanation": "The accumulation of specific excess details, nearly four times the word limit, photographs, an unsolicited website, and unasked-for recommendation letters, combined with the dry final line about instructions given twice, creates a tone of dry, restrained amusement rather than anger or sympathy. The editorial selection of details rules out neutrality.",
+    "status": "verified",
+    "item_family_id": "pc.passage::application-oversubmission"
+  },
+  {
+    "external_key": "PC-B41-040",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nTo purify water in the field without a filter, begin by filling a metal container with the water you have collected. Next, place the container over a heat source and bring the water to a rolling boil. Maintain the boil for at least one full minute (or three minutes at elevations above 6,500 feet). Finally, remove the container from the heat and allow the water to cool before drinking.\n\nAccording to the passage, what should be done immediately after the water reaches a rolling boil?",
+    "choices": [
+      "Remove the container from the heat and let it cool.",
+      "Add purification tablets to the boiling water.",
+      "Maintain the boil for at least one full minute.",
+      "Pour the water through a cloth to remove debris."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states the next step after bringing water to a rolling boil is to maintain that boil for at least one minute. Removing and cooling comes after the boiling period, not immediately after reaching a boil. Purification tablets and cloth filtering are not mentioned in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::water-boil-field-steps"
+  },
+  {
+    "external_key": "PC-B41-041",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe original railroad bridge was a narrow wooden trestle that shook under heavy freight. Because engineers worried it would fail under increasing train weights, the railroad commissioned an iron replacement in 1887. The new bridge held far more weight and withstood floods and ice that would have destroyed its predecessor. As a result, freight volume on the line doubled within a decade.\n\nHow is this passage primarily organized?",
+    "choices": [
+      "By comparing the costs of wooden versus iron construction",
+      "In chronological order, following the sequence of the bridge's history",
+      "By presenting a problem and then showing how solving it led to further results",
+      "By listing the engineering advantages of iron over wood"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage presents a problem (wooden bridge at risk), a solution (iron replacement), and a result (doubled freight volume), which is a classic problem-solution-outcome structure. Although the passage has a chronological element, that is secondary to the cause-and-effect logic. The passage does not compare costs or systematically list material advantages.",
+    "status": "verified",
+    "item_family_id": "pc.passage::railroad-bridge-replacement"
+  },
+  {
+    "external_key": "PC-B41-042",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nFirst, the paramedic secured the patient's airway. After that, she checked for a pulse and found one, faint but steady. She then radioed the hospital with the patient's condition. Once confirmation came back, she started an IV line and prepared the stretcher for transport.\n\nWhich action did the paramedic take third?",
+    "choices": [
+      "She started an IV line.",
+      "She secured the patient's airway.",
+      "She radioed the hospital.",
+      "She checked for a pulse."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage lists four actions in sequence: securing the airway (first), checking for a pulse (second), radioing the hospital (third), and starting an IV (fourth). Radioing the hospital is explicitly the third step.",
+    "status": "verified",
+    "item_family_id": "pc.passage::paramedic-sequence"
+  },
+  {
+    "external_key": "PC-B41-043",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nRainwater falling on a hillside follows one of two paths. If the soil is loose and porous, the water seeps downward into the groundwater table, replenishing aquifers. If the soil is packed or covered with impervious surfaces such as pavement, the water cannot penetrate and instead runs off across the surface, picking up pollutants as it moves toward streams and rivers. Urban expansion typically increases impervious surfaces, which shifts more and more rainfall from the groundwater path to the runoff path.\n\nHow is the passage primarily organized?",
+    "choices": [
+      "In time order, tracing the history of urban water management",
+      "By contrasting two possible paths rainwater takes depending on ground conditions",
+      "By arguing that urban expansion should be limited to protect aquifers",
+      "By listing the pollutants that surface runoff carries into streams"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage explicitly sets up two conditions (porous vs. impervious soil) and traces where rain goes under each condition, which is a compare-and-contrast structure. No historical timeline is presented. The passage describes what urban expansion does rather than arguing it should stop. Specific pollutants are not listed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::rainwater-paths-contrast"
+  },
+  {
+    "external_key": "PC-B41-044",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe supply of affordable housing in the city shrank steadily for fifteen years. In response, the city council passed an inclusionary zoning ordinance requiring developers to set aside 15 percent of new units at below-market rents. Within three years, the number of affordable units added annually had tripled. Advocates called the ordinance a partial but meaningful success.\n\nWhich organizational pattern best describes this passage?",
+    "choices": [
+      "Cause and effect: a housing shortage prompted a policy change that produced measurable results",
+      "Chronological: a timeline of the city's housing decisions from founding to present",
+      "Compare and contrast: two different approaches to affordable housing policy",
+      "Problem and definition: the passage defines what affordable housing means"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage shows a housing shortage causing a policy response that caused a specific outcome, a clear cause-and-effect chain. It does not cover the city's full history, compare two policies, or define affordable housing.",
+    "status": "verified",
+    "item_family_id": "pc.passage::zoning-ordinance-effect"
+  },
+  {
+    "external_key": "PC-B41-045",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nMale and female emperor penguins share parenting duties quite differently from most birds. The female lays a single egg and then travels up to 50 miles to the sea to feed, a journey that takes weeks. The male stays behind, balancing the egg on his feet and covering it with a warm flap of skin called a brood pouch. He fasts the entire time, living off stored fat until the female returns.\n\nHow is this passage primarily organized?",
+    "choices": [
+      "By describing the sequence of steps in emperor penguin parenting",
+      "By comparing male and female emperor penguin behaviors during egg incubation",
+      "By explaining the problem of food scarcity in Antarctic environments",
+      "By listing the physical characteristics that help penguins survive cold weather"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage contrasts what the female does (lays egg, travels to sea) with what the male does (incubates egg, fasts), making comparison the primary structure. While the roles follow an implied sequence, the passage emphasizes the different duties of each parent. Food scarcity and physical characteristics are not the focus.",
+    "status": "verified",
+    "item_family_id": "pc.passage::penguin-parenting-contrast"
+  },
+  {
+    "external_key": "PC-B41-046",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nWhen the dam upstream failed in the spring of 1889, a wall of water thirty feet high raced down the valley toward Johnstown, Pennsylvania. Because the warning telegraph lines had already washed out, most residents received no alert. The flood killed more than 2,200 people, making it one of the deadliest disasters in U.S. history. In the years that followed, the event prompted new discussions about dam safety standards and the legal liability of private reservoir owners.\n\nWhich event in the passage occurred last?",
+    "choices": [
+      "The dam upstream failed.",
+      "A flood wall of water reached Johnstown.",
+      "Warning telegraph lines washed out.",
+      "Public discussions arose about dam safety standards."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage describes telegraph lines washing out before or during the flood, the dam failing at the start, the flood wall reaching Johnstown shortly after, and discussions about safety occurring in the years that followed, which places the safety discussions last. The dam failure was the first event described.",
+    "status": "verified",
+    "item_family_id": "pc.passage::johnstown-flood-sequence"
+  },
+  {
+    "external_key": "PC-B41-047",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe sailing ship and the steamship were both capable of crossing the Atlantic, but they differed in almost every other respect. A sailing ship depended entirely on wind, making voyage times unpredictable and routes constrained by prevailing winds. A steamship burned coal to drive a paddle wheel or propeller, allowing it to maintain a schedule regardless of wind conditions. Steamships also required far fewer crew members than sailing ships of comparable size.\n\nHow is this passage organized?",
+    "choices": [
+      "As a sequence of steps describing how a steamship engine works",
+      "By contrasting sailing ships and steamships on several key characteristics",
+      "As an argument that steamships were superior in every way to sailing ships",
+      "By tracing the chronological history of transatlantic travel"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage sets up explicit side-by-side differences between the two vessel types on dependability, scheduling, and crew size, which is a compare-and-contrast structure. No procedural steps, historical timeline, or explicit argument for superiority are present; the passage describes differences without declaring one type outright superior in all respects.",
+    "status": "verified",
+    "item_family_id": "pc.passage::sail-vs-steam-contrast"
+  },
+  {
+    "external_key": "PC-B41-048",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nA wildfire's behavior depends on three factors that fire managers call the fire triangle: fuel, oxygen, and heat. Remove any one of the three, and the fire cannot continue. Firefighters create firebreaks by clearing or burning fuel ahead of the advancing flame. Foam and water reduce heat at the fire's edge. Backfires consume fuel before the main fire arrives, starving it of what it needs to spread.\n\nHow is this passage primarily organized?",
+    "choices": [
+      "By presenting a central concept and then illustrating how each of its components is addressed",
+      "In time order, tracing the sequence of steps a fire crew takes during a wildfire",
+      "By comparing wildfires in different climates and terrain types",
+      "By listing the dangers firefighters face in descending order of severity"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage introduces the fire triangle concept and then explains how each of its three elements (fuel, heat, oxygen implicitly) is targeted by specific firefighting techniques. The structure is concept-plus-application, not a timeline, comparison of climates, or ranked danger list.",
+    "status": "verified",
+    "item_family_id": "pc.passage::fire-triangle-firefighting"
+  },
+  {
+    "external_key": "PC-B41-049",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe sergeant's commands were crisp and unwavering. Every soldier knew exactly what was expected, and no one dared to deviate from the plan. The clarity of his orders made the mission run like clockwork.\n\nAs used in the passage, the word \"deviate\" most nearly means:",
+    "choices": [
+      "Excel",
+      "Depart or stray",
+      "Argue",
+      "Retreat"
+    ],
+    "correct_index": 1,
+    "explanation": "The context shows soldiers following clear orders exactly, so deviate means to stray or depart from the established plan. Excelling and retreating describe performance outcomes unrelated to the idea of staying on course. Arguing refers to a verbal conflict, which is not what the passage describes.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-deviate"
+  },
+  {
+    "external_key": "PC-B41-050",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe committee found the proposal to be feasible, given the available budget and timeline. No technical barriers stood in the way, and the required materials were already on hand. They voted unanimously to move forward.\n\nIn this passage, the word \"feasible\" most nearly means:",
+    "choices": [
+      "Expensive but worth the cost",
+      "Capable of being done; practical",
+      "Dangerous and requiring caution",
+      "Controversial among members"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes a proposal with no technical barriers, adequate budget, and available materials, all supporting that it can realistically be carried out. This context points to feasible meaning practical or achievable. Nothing in the passage suggests high cost, danger, or controversy.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-feasible"
+  },
+  {
+    "external_key": "PC-B41-051",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nAfter weeks of delay, the team finally reached a consensus on the design. Each member had expressed reservations earlier, but by the final meeting they were all in agreement and ready to proceed.\n\nIn this passage, the word \"consensus\" most nearly means:",
+    "choices": [
+      "A general agreement reached by the whole group",
+      "A written document signed by all members",
+      "A vote in which one person's opinion wins out",
+      "A temporary pause before further discussion"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states all members were in agreement after earlier reservations, which fits consensus meaning a shared agreement. A signed document and a winning vote are not described. A temporary pause is the opposite of what the passage describes, since the team was ready to proceed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-consensus"
+  },
+  {
+    "external_key": "PC-B41-052",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe general's strategy was audacious, relying on a surprise flanking maneuver that no one in the enemy's command had anticipated. Most advisers had urged a more cautious approach, but the general believed that boldness was the only path to a decisive victory.\n\nAs used in the passage, the word \"audacious\" most nearly means:",
+    "choices": [
+      "Reckless and poorly planned",
+      "Daring and bold",
+      "Secretive and hidden from allies",
+      "Slow and methodical"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage contrasts the general's approach with a cautious one and links audacious to boldness explicitly in the final sentence, confirming it means daring or bold. The option about recklessness implies poor planning, which the passage does not state. Secretive is a different quality than bold. Slow and methodical is the opposite of bold.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-audacious"
+  },
+  {
+    "external_key": "PC-B41-053",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe senator's statement was deliberately ambiguous, allowing her to appeal to voters on both sides of the issue without committing to a specific position. Her opponents criticized this as evasion; her supporters called it pragmatism.\n\nAs used in the passage, the word \"ambiguous\" most nearly means:",
+    "choices": [
+      "Strongly worded and difficult to challenge",
+      "Open to more than one interpretation",
+      "Factually incorrect and misleading",
+      "Clear and precisely defined"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage explains that the statement allowed appeal to both sides without committing to a position, which means it could be interpreted in multiple ways. Strongly worded is the opposite quality. Factually incorrect is not what the passage implies; the statement could be accurate but vague. Clear and precisely defined is the antonym of ambiguous.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-ambiguous"
+  },
+  {
+    "external_key": "PC-B41-054",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe investigation revealed that the contractor had been negligent in inspecting the structural supports. Warning signs had appeared months before the collapse, yet no action was taken. The court found the company liable for the resulting damage.\n\nIn this passage, the word \"negligent\" most nearly means:",
+    "choices": [
+      "Deliberately deceptive in submitting false reports",
+      "Failing to take proper care or precaution",
+      "Overly cautious and slow to make decisions",
+      "Financially unable to afford the required inspections"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes warning signs that were ignored and no action taken, which is consistent with negligent meaning a failure to exercise proper care. Deliberately deceptive implies intent to deceive, which the passage does not state. Overly cautious is the opposite of careless. Financial inability is not mentioned as the reason for inaction.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-negligent"
+  },
+  {
+    "external_key": "PC-B41-055",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe drought made the river so shallow that the cargo barges could no longer navigate it. Shipping companies had to divert freight to overland routes that were slower and far more expensive. The economic impact on river towns was swift and substantial.\n\nAs used in the passage, the word \"divert\" most nearly means:",
+    "choices": [
+      "Speed up to compensate for lost time",
+      "Redirect to a different route or path",
+      "Cancel permanently",
+      "Reduce the size of shipments"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage shows freight being sent overland instead of by river, which means it was redirected to a different path. Speeding up, canceling permanently, and reducing shipment size are not described or implied by the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-divert"
+  },
+  {
+    "external_key": "PC-B41-056",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe recruits were told that punctuality was non-negotiable. Arriving even one minute late to formation would result in extra duty. By the end of the first week, everyone showed up five minutes early just to be safe.\n\nAs used in the passage, the word \"punctuality\" most nearly means:",
+    "choices": [
+      "Physical fitness and endurance",
+      "Arriving or completing tasks at the required time",
+      "Obedience to orders in combat",
+      "Accuracy in following written instructions"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage is entirely about the consequences of arriving late and the recruits' response of arriving early to avoid those consequences. This context points directly to punctuality meaning timeliness. Physical fitness, combat obedience, and following written instructions are unrelated to the passage's focus on arrival time.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-punctuality"
+  }
+]

@@ -1,0 +1,1107 @@
+[
+  {
+    "external_key": "AR-B65-001",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A tool crib issues 7 wrenches, 4 torque sockets, and 3 calipers to each of 8 mechanics at the start of a shift. How many total tools are checked out?",
+    "choices": [
+      "128",
+      "96",
+      "104",
+      "112"
+    ],
+    "correct_index": 3,
+    "explanation": "Items per mechanic = 7 + 4 + 3 = 14. Total = 14 x 8 = 112. The answer 96 uses only 12 items per mechanic, omitting the 3 calipers. 104 multiplies 13 items by 8, undercounting by one item per kit. 128 assumes 16 items per mechanic rather than the actual 14.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::tool-crib-multi-item-checkout-total"
+  },
+  {
+    "external_key": "AR-B65-002",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A packaging line produces 960 boxes per hour and runs for 5 hours. Supervisors then pull 240 defective boxes before shipping. How many boxes are shipped?",
+    "choices": [
+      "4,560",
+      "4,320",
+      "5,040",
+      "4,800"
+    ],
+    "correct_index": 0,
+    "explanation": "Total produced = 960 x 5 = 4,800. After removing defects: 4,800 - 240 = 4,560. The answer 4,800 ignores the defect pull entirely. 4,320 subtracts 480 instead of 240, doubling the defect count. 5,040 adds the defects to the total instead of subtracting them.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::packaging-line-defect-pull-shipped-count"
+  },
+  {
+    "external_key": "AR-B65-003",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 1,
+    "stem": "A night-vision goggle inventory contains 144 units stored in cases of 12. A supply sergeant signs out 5 complete cases. How many goggles remain in the inventory?",
+    "choices": [
+      "96",
+      "72",
+      "84",
+      "60"
+    ],
+    "correct_index": 2,
+    "explanation": "Goggles signed out = 5 x 12 = 60. Remaining = 144 - 60 = 84. The answer 72 subtracts 72 units as if 6 cases were pulled rather than 5. 96 subtracts only 48 units, equivalent to 4 cases, one case short. 60 is the number signed out, not the number remaining.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::nvg-case-checkout-remainder"
+  },
+  {
+    "external_key": "AR-B65-004",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A welder completes 18 inches of weld per hour. Working an 8-hour shift with a 30-minute unpaid break, how many total inches of weld does the welder finish?",
+    "choices": [
+      "144",
+      "153",
+      "126",
+      "135"
+    ],
+    "correct_index": 3,
+    "explanation": "Productive time = 8 - 0.5 = 7.5 hours. Total inches = 18 x 7.5 = 135. The answer 144 multiplies by the full 8 hours, ignoring the unpaid break. 153 adds the break time instead of subtracting it, computing 18 x 8.5. 126 treats the break as a full hour, using only 7 hours.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::welder-shift-inches-with-break"
+  },
+  {
+    "external_key": "AR-B65-005",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "An HOA charges each of its 36 households $85 per month in dues collected one month in advance. How much does the HOA collect?",
+    "choices": [
+      "$2,880",
+      "$3,060",
+      "$3,240",
+      "$2,970"
+    ],
+    "correct_index": 1,
+    "explanation": "Total = 36 x $85 = $3,060. The answer $2,880 multiplies 36 by $80, undervaluing each due by $5. $3,240 uses $90 per household, overvaluing by $5 each. $2,970 uses 35 households instead of 36, missing one household's dues.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::hoa-dues-monthly-collection"
+  },
+  {
+    "external_key": "AR-B65-006",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 2,
+    "stem": "A forward-arming-and-refuel point processes helicopters at 4 per hour over a 9-hour operating window. Six helicopters are turned away for mechanical issues. How many helicopters are actually refueled?",
+    "choices": [
+      "24",
+      "36",
+      "42",
+      "30"
+    ],
+    "correct_index": 3,
+    "explanation": "Helicopters arriving = 4 x 9 = 36. Helicopters refueled = 36 - 6 = 30. The answer 36 ignores the 6 turned away and counts all arrivals. 42 adds the 6 turned-away aircraft to the total instead of subtracting. 24 subtracts 12 instead of 6, doubling the number turned away.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::farp-helicopter-throughput-with-turnaways"
+  },
+  {
+    "external_key": "AR-B65-007",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A library circulates 48 books per day and operates 6 days per week. In a 4-week month, exactly 1 in every 8 books returned incurs an overdue fine. How many books incur fines that month?",
+    "choices": [
+      "192",
+      "128",
+      "162",
+      "144"
+    ],
+    "correct_index": 3,
+    "explanation": "Total circulation = 48 x 6 x 4 = 1,152 books. Books with fines = 1,152 / 8 = 144. The answer 192 divides by 6 (days per week) instead of 8, treating the fine rate as 1-in-6. 128 computes 48 x 24 days then divides by 9 instead of 8. 162 uses 27 operating days instead of 24, as if each week had 6.75 days.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::library-book-overdue-fine-fraction"
+  },
+  {
+    "external_key": "AR-B65-008",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A conveyor belt moves 540 pieces per hour. A quality inspector pulls every 9th piece for testing. Over a 6-hour shift, how many pieces are pulled for testing?",
+    "choices": [
+      "324",
+      "400",
+      "360",
+      "540"
+    ],
+    "correct_index": 2,
+    "explanation": "Total pieces = 540 x 6 = 3,240. Pieces pulled = 3,240 / 9 = 360. The answer 324 divides by 10 instead of 9, using a 1-in-10 pull rate. 400 incorrectly rounds 3,240 / 9 up to 400 instead of 360. 540 gives only the hourly production count and ignores the 6-hour multiplier and the pull fraction.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::conveyor-belt-testing-pull-fraction"
+  },
+  {
+    "external_key": "AR-B65-009",
+    "subtest": "AR",
+    "topic_id": "ar.arithmetic-fundamentals",
+    "difficulty": 3,
+    "stem": "A summer camp orders 75 small t-shirts at $8 each, 120 medium at $9 each, and 60 large at $10 each. What is the total cost of the order?",
+    "choices": [
+      "$2,115",
+      "$2,340",
+      "$2,280",
+      "$2,430"
+    ],
+    "correct_index": 2,
+    "explanation": "Small: 75 x $8 = $600. Medium: 120 x $9 = $1,080. Large: 60 x $10 = $600. Total = $600 + $1,080 + $600 = $2,280. The answer $2,115 prices smalls at $7 each, reducing that subtotal by $75. $2,340 prices medium shirts at $9.50 each, adding $60 extra. $2,430 uses 75 large shirts instead of 60, adding $150 too much.",
+    "status": "verified",
+    "item_family_id": "ar.arithmetic-fundamentals::summer-camp-tshirt-three-size-order-cost"
+  },
+  {
+    "external_key": "AR-B65-010",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A MEDEVAC helicopter flies from a combat outpost to a field hospital at 120 miles per hour. The distance is 90 miles. How many minutes does the flight take?",
+    "choices": [
+      "60",
+      "45",
+      "30",
+      "75"
+    ],
+    "correct_index": 1,
+    "explanation": "Time = 90 / 120 = 0.75 hours. Converting: 0.75 x 60 = 45 minutes. The answer 60 minutes reads 0.75 hours as a whole-hour value. 30 minutes would require a speed of 180 mph, double what is given. 75 minutes corresponds to 1.25 hours, which at 120 mph covers 150 miles, not 90.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::medevac-helicopter-flight-minutes"
+  },
+  {
+    "external_key": "AR-B65-011",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A swimmer competes in a 200-meter relay leg at a constant speed of 2 meters per second. How many seconds does it take her to complete the leg?",
+    "choices": [
+      "120",
+      "80",
+      "100",
+      "400"
+    ],
+    "correct_index": 2,
+    "explanation": "Time = 200 / 2 = 100 seconds. The answer 80 results from using a rate of 2.5 m/s instead of 2. 120 seconds corresponds to a rate of roughly 1.67 m/s. 400 multiplies distance by rate instead of dividing, reversing the operation.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::swim-relay-leg-seconds"
+  },
+  {
+    "external_key": "AR-B65-012",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A supply convoy departs a base at 40 mph. A second convoy leaves the same base 1 hour later, traveling the same direction at 55 mph. How many hours after the second convoy departs does it catch the first?",
+    "choices": [
+      "3.5",
+      "4.0",
+      "2.0",
+      "2.67"
+    ],
+    "correct_index": 3,
+    "explanation": "When the second convoy departs, the first has a 40-mile head start (40 mph x 1 hour). The second gains 55 - 40 = 15 mph. Time to close the gap = 40 / 15 = 2.67 hours. The answer 3.5 hours divides the head start by the slower convoy's speed instead of the speed difference. 2.0 hours uses a closing rate of 20 mph, overestimating the speed gap. 4.0 hours divides 40 miles by 10 mph, underestimating the differential.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::convoy-same-direction-catch-up-fractional"
+  },
+  {
+    "external_key": "AR-B65-013",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "Two patrol boats leave the same dock traveling in opposite directions. Boat A travels at 22 knots and Boat B at 18 knots. How many nautical miles apart are they after 3 hours?",
+    "choices": [
+      "66",
+      "120",
+      "54",
+      "108"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined separation rate = 22 + 18 = 40 knots. Distance apart = 40 x 3 = 120 nautical miles. The answer 66 gives only Boat A's distance (22 x 3). 54 gives only Boat B's distance (18 x 3). 108 uses a combined rate of 36 instead of 40, undervaluing each boat's speed by 2 knots.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::patrol-boat-dock-opposite-direction-separation"
+  },
+  {
+    "external_key": "AR-B65-014",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A basketball player sprints the full length of the court (94 feet) in 4.7 seconds. What is her speed in feet per second, rounded to the nearest whole number?",
+    "choices": [
+      "18",
+      "20",
+      "24",
+      "22"
+    ],
+    "correct_index": 1,
+    "explanation": "Speed = 94 / 4.7 = 20 feet per second. The answer 18 results from dividing 94 by about 5.2 seconds. 22 results from dividing 94 by 4.3 seconds. 24 would require covering 94 feet in about 3.9 seconds, well under the stated 4.7.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::basketball-sprint-feet-per-second"
+  },
+  {
+    "external_key": "AR-B65-015",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 2,
+    "stem": "A security team walks a 3-mile perimeter at 2.5 mph to verify claymore placement, then returns along the same route at 5 mph. What is the team's average speed for the full round trip?",
+    "choices": [
+      "3.33 mph",
+      "3.75 mph",
+      "3.50 mph",
+      "2.75 mph"
+    ],
+    "correct_index": 0,
+    "explanation": "Round-trip harmonic mean = 2 x (2.5 x 5) / (2.5 + 5) = 25 / 7.5 = 3.33 mph. The answer 3.75 mph is the arithmetic mean of the two speeds, which is wrong when both legs cover the same distance. 3.50 splits the difference without applying harmonic averaging. 2.75 mph averages the outbound speed with a portion of the return speed using an incorrect formula.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::claymore-check-round-trip-harmonic-speed"
+  },
+  {
+    "external_key": "AR-B65-016",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A resupply truck drives 180 miles to a forward base at 60 mph, stays 45 minutes to unload, then drives back at 45 mph. What is the total trip time in hours?",
+    "choices": [
+      "6.75",
+      "7.00",
+      "8.00",
+      "7.75"
+    ],
+    "correct_index": 3,
+    "explanation": "Outbound = 180 / 60 = 3 hours. Unload stop = 45 / 60 = 0.75 hours. Return = 180 / 45 = 4 hours. Total = 3 + 0.75 + 4 = 7.75 hours. The answer 7.00 ignores the 45-minute unload stop. 8.00 hours would require a return speed of 36 mph rather than the stated 45 mph. 6.75 omits a full hour, perhaps using the outbound speed for the return leg.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::resupply-truck-round-trip-with-unload-stop"
+  },
+  {
+    "external_key": "AR-B65-017",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A courier drives three legs: 90 miles at 60 mph, then 120 miles at 80 mph, then 70 miles at 35 mph. What is the total driving time in hours?",
+    "choices": [
+      "5.00",
+      "5.50",
+      "4.00",
+      "4.50"
+    ],
+    "correct_index": 0,
+    "explanation": "Leg 1: 90 / 60 = 1.5 h. Leg 2: 120 / 80 = 1.5 h. Leg 3: 70 / 35 = 2.0 h. Total = 1.5 + 1.5 + 2.0 = 5.0 hours. The answer 4.50 drops the Leg 3 time, adding only 0.5 hours for that segment. 5.50 uses 2.5 hours for Leg 3, as if the speed were 28 mph instead of 35. 4.00 sums only the first two legs, ignoring the third leg entirely.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::courier-three-leg-total-drive-time"
+  },
+  {
+    "external_key": "AR-B65-018",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 3,
+    "stem": "A dust-off helicopter flies 240 miles to a hospital at 160 mph and immediately returns at 120 mph. What is the average speed for the full round trip in mph?",
+    "choices": [
+      "140.0",
+      "137.1",
+      "144.0",
+      "128.0"
+    ],
+    "correct_index": 1,
+    "explanation": "Round-trip harmonic mean = 2 x (160 x 120) / (160 + 120) = 38,400 / 280 = 137.1 mph. The answer 140.0 is the arithmetic mean of 160 and 120, incorrect when both legs cover the same distance. 144.0 introduces an arithmetic error in the numerator or denominator of the harmonic formula. 128.0 applies a weighted-time average that overcorrects toward the slower leg.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::dustoff-round-trip-harmonic-avg-speed"
+  },
+  {
+    "external_key": "AR-B65-019",
+    "subtest": "AR",
+    "topic_id": "ar.rate-distance-time",
+    "difficulty": 1,
+    "stem": "A runner finishes a 5-kilometer race in 25 minutes. What is her average speed in kilometers per minute?",
+    "choices": [
+      "0.20",
+      "0.25",
+      "5.00",
+      "0.15"
+    ],
+    "correct_index": 0,
+    "explanation": "Speed = 5 / 25 = 0.20 km per minute. The answer 0.25 divides 5 by 20 minutes, a time 5 minutes shorter than actual. 5.00 inverts the division, giving minutes per kilometer rather than kilometers per minute. 0.15 divides 5 by about 33 minutes, a significantly longer time than the stated 25.",
+    "status": "verified",
+    "item_family_id": "ar.rate-distance-time::race-avg-speed-km-per-minute"
+  },
+  {
+    "external_key": "AR-B65-020",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "Three friends split a $96 restaurant bill. One friend pays half the bill; the other two split the remaining half equally. How much does each of the two friends pay?",
+    "choices": [
+      "$32",
+      "$48",
+      "$16",
+      "$24"
+    ],
+    "correct_index": 3,
+    "explanation": "One friend pays $96 / 2 = $48. The remaining $48 is split two ways: $48 / 2 = $24 each. The answer $32 divides the full $96 by 3 equally, ignoring the half-payment arrangement. $48 is what the single heavy-payer owes, not each of the other two. $16 divides the remaining half by 3 people instead of 2.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::restaurant-bill-split-one-pays-half"
+  },
+  {
+    "external_key": "AR-B65-021",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A soldier packs a rucksack with 3 days of MREs at 2.8 pounds each, a first-aid kit at 4.5 pounds, and a radio at 6.2 pounds. What is the total weight of the rucksack contents in pounds?",
+    "choices": [
+      "19.1",
+      "17.9",
+      "20.3",
+      "18.5"
+    ],
+    "correct_index": 0,
+    "explanation": "MRE total = 3 x 2.8 = 8.4 lb. Total = 8.4 + 4.5 + 6.2 = 19.1 lb. The answer 17.9 packs only 2 days of MREs (5.6 lb) instead of 3. 20.3 uses 3.5 lb per MRE instead of 2.8. 18.5 uses a radio weight of 5.9 lb instead of 6.2 lb.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::rucksack-three-item-weight-total"
+  },
+  {
+    "external_key": "AR-B65-022",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A basketball team made 18 two-point field goals, 7 three-point field goals, and 11 free throws worth 1 point each. What was the team's total score?",
+    "choices": [
+      "72",
+      "64",
+      "68",
+      "75"
+    ],
+    "correct_index": 2,
+    "explanation": "Two-point total = 18 x 2 = 36. Three-point total = 7 x 3 = 21. Free throws = 11 x 1 = 11. Total = 36 + 21 + 11 = 68. The answer 72 values each three-pointer at 4 points, adding 7 extra points. 64 adds the free throws at their shot count (7) instead of their point value (11), giving 36 + 21 + 7 = 64. 75 sums the raw shot counts (18 + 7 + 11 = 36) and adds it to the field goal totals using incorrect arithmetic.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::basketball-fg-plus-free-throw-total-score"
+  },
+  {
+    "external_key": "AR-B65-023",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A MEDEVAC helicopter carries 4 litter patients per trip. A mass casualty event requires 31 patients transported. How many helicopter trips are needed to move all patients?",
+    "choices": [
+      "6",
+      "8",
+      "10",
+      "4"
+    ],
+    "correct_index": 1,
+    "explanation": "Full trips = 31 / 4 = 7 remainder 3. Seven trips carry 28 patients; one more trip is needed for the remaining 3. Total trips = 7 + 1 = 8. The answer 6 divides 31 by 5 instead of 4, underestimating the load per trip. 10 rounds 31/4 = 7.75 up to 10 rather than the correct ceiling of 8. 4 is the patient capacity per trip, not the number of trips required.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::medevac-litter-patient-trip-count"
+  },
+  {
+    "external_key": "AR-B65-024",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 2,
+    "stem": "A contractor invoices labor and materials. Labor: 20 hours at $50 per hour. Materials: $340. A 10% project management fee is added to the entire subtotal. What is the total invoice amount?",
+    "choices": [
+      "$1,340",
+      "$1,474",
+      "$1,650",
+      "$1,210"
+    ],
+    "correct_index": 1,
+    "explanation": "Labor = 20 x $50 = $1,000. Subtotal = $1,000 + $340 = $1,340. Management fee = 10% x $1,340 = $134. Total = $1,340 + $134 = $1,474. The answer $1,340 gives the pre-fee subtotal before the management fee is added. $1,650 applies the 10% fee only to the labor portion and adds the full materials price again, double-counting. $1,210 deducts 10% instead of adding it, treating the fee as a discount.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::contractor-labor-materials-mgmt-fee-invoice"
+  },
+  {
+    "external_key": "AR-B65-025",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "Four co-workers share a $180 monthly gym membership. One member uses the gym twice as often as each of the other three and agrees to pay a proportional share. How much does the heavy user pay each month?",
+    "choices": [
+      "$60",
+      "$45",
+      "$72",
+      "$90"
+    ],
+    "correct_index": 2,
+    "explanation": "Let each regular user's share = x. The heavy user pays 2x. Total = x + x + x + 2x = 5x = $180, so x = $36. Heavy user pays 2 x $36 = $72. The answer $60 divides $180 by 3, treating the group as three equal payers. $45 divides $180 by 4 equally. $90 treats the heavy user as paying half the total bill, equivalent to all three others combined.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::gym-membership-weighted-share-heavy-user"
+  },
+  {
+    "external_key": "AR-B65-026",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A soldier's monthly base pay is $2,400. Taxes take 18% and a retirement contribution takes 5%. After these deductions, the soldier pays $600 in rent and saves the rest. How much does the soldier save per month?",
+    "choices": [
+      "$1,368",
+      "$1,248",
+      "$1,800",
+      "$1,128"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined deductions = 18% + 5% = 23%. Take-home = $2,400 x 0.77 = $1,848. Savings = $1,848 - $600 = $1,248. The answer $1,368 deducts only the 18% tax and ignores the retirement contribution: $2,400 x 0.82 = $1,968 - $600 = $1,368. $1,800 subtracts only rent from gross pay with no deductions: $2,400 - $600. $1,128 uses a 28% combined deduction instead of 23%: $2,400 x 0.72 = $1,728 - $600 = $1,128.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::soldier-pay-tax-retirement-rent-savings"
+  },
+  {
+    "external_key": "AR-B65-027",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 3,
+    "stem": "A field supply sergeant has 540 ration packs. She issues 2/5 to Company A and 1/4 to Company B, then holds the rest in reserve. How many packs are held in reserve?",
+    "choices": [
+      "135",
+      "216",
+      "189",
+      "162"
+    ],
+    "correct_index": 2,
+    "explanation": "Company A receives (2/5) x 540 = 216 packs. Company B receives (1/4) x 540 = 135 packs. Total issued = 216 + 135 = 351. Reserve = 540 - 351 = 189 packs. The answer 216 gives Company A's allocation, not the reserve. 135 gives Company B's allocation. 162 treats the remainder fraction as 3/10 of 540, a common error when students subtract the given fractions without finding a common denominator.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::ration-pack-two-fraction-issue-reserve"
+  },
+  {
+    "external_key": "AR-B65-028",
+    "subtest": "AR",
+    "topic_id": "ar.word-problems",
+    "difficulty": 1,
+    "stem": "A library system has three branches with 12,400, 9,750, and 11,200 books respectively. How many books does the library system have in total?",
+    "choices": [
+      "33,350",
+      "34,100",
+      "33,900",
+      "32,150"
+    ],
+    "correct_index": 0,
+    "explanation": "Total = 12,400 + 9,750 + 11,200 = 33,350. The answer 32,150 uses 8,550 for Branch 2 instead of 9,750, a shortfall of 1,200. 34,100 inflates one branch count by 750 books. 33,900 adds 550 to the true total, likely from a column-addition error.",
+    "status": "verified",
+    "item_family_id": "ar.word-problems::library-three-branch-book-total"
+  },
+  {
+    "external_key": "AR-B65-029",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "A $600 clothing allowance is issued to a recruit. She spends 45% on boots and 30% on uniforms. How much of the allowance remains?",
+    "choices": [
+      "$150",
+      "$120",
+      "$270",
+      "$180"
+    ],
+    "correct_index": 0,
+    "explanation": "Boots = 45% x $600 = $270. Uniforms = 30% x $600 = $180. Total spent = $450. Remaining = $600 - $450 = $150. The answer $270 gives only the boots expenditure. $120 computes 20% of $600, treating the remainder fraction as 20% instead of the actual 25%. $180 gives only the uniforms expenditure.",
+    "status": "verified",
+    "item_family_id": "ar.percent::recruit-clothing-allowance-two-category-remainder"
+  },
+  {
+    "external_key": "AR-B65-030",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "A cafeteria makes $4,500 in sales on Friday. Saturday sales drop 20% from Friday. What are Saturday's total sales?",
+    "choices": [
+      "$4,050",
+      "$3,400",
+      "$3,780",
+      "$3,600"
+    ],
+    "correct_index": 3,
+    "explanation": "Saturday = $4,500 x 0.80 = $3,600. The answer $3,400 applies a roughly 24% decrease instead of 20%. $3,780 applies only a 16% decrease. $4,050 subtracts only 10% of Friday's sales, halving the intended rate of decrease.",
+    "status": "verified",
+    "item_family_id": "ar.percent::cafeteria-sales-day-to-day-percent-decrease"
+  },
+  {
+    "external_key": "AR-B65-031",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A manufacturer discounts a $480 component by 15%, then charges 6% sales tax on the discounted price. What is the final price paid?",
+    "choices": [
+      "$432.48",
+      "$408.00",
+      "$436.80",
+      "$453.12"
+    ],
+    "correct_index": 0,
+    "explanation": "Discounted price = $480 x 0.85 = $408.00. Tax = $408.00 x 0.06 = $24.48. Final price = $408.00 + $24.48 = $432.48. The answer $436.80 applies the 6% tax to the original $480 price instead of the discounted price. $408.00 is the after-discount subtotal before tax. $453.12 uses a 12% tax rate instead of 6%, doubling the tax amount.",
+    "status": "verified",
+    "item_family_id": "ar.percent::parts-discount-then-sales-tax-final-price"
+  },
+  {
+    "external_key": "AR-B65-032",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A unit's training budget was $12,000 last year. This year it increased 25%. Next year it will decrease 20% from this year's amount. What will next year's budget be?",
+    "choices": [
+      "$9,600",
+      "$11,400",
+      "$12,000",
+      "$14,400"
+    ],
+    "correct_index": 2,
+    "explanation": "This year = $12,000 x 1.25 = $15,000. Next year = $15,000 x 0.80 = $12,000. The answer $11,400 applies the 20% decrease to the original $12,000 and subtracts extra. $9,600 applies a 20% decrease directly to the original amount, ignoring this year's increase. $14,400 gives this year's budget without applying next year's decrease.",
+    "status": "verified",
+    "item_family_id": "ar.percent::training-budget-successive-increase-decrease"
+  },
+  {
+    "external_key": "AR-B65-033",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A drill instructor passes 78 of 120 candidates in a physical assessment. What percent of candidates passed, rounded to the nearest whole percent?",
+    "choices": [
+      "65%",
+      "70%",
+      "60%",
+      "75%"
+    ],
+    "correct_index": 0,
+    "explanation": "Pass rate = 78 / 120 = 0.65 = 65%. The answer 60% would mean 72 of 120 passed, which is 6 fewer than the actual 78. 70% would require 84 of 120 to pass. 75% would need 90 of 120 passing, 12 more than the stated count.",
+    "status": "verified",
+    "item_family_id": "ar.percent::candidate-physical-assessment-pass-rate"
+  },
+  {
+    "external_key": "AR-B65-034",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A fuel depot starts the week with a full reserve tank. On Monday, 35% of the fuel is used. On Tuesday, 40% of the remaining fuel is used. What percent of the original capacity remains after Tuesday?",
+    "choices": [
+      "25%",
+      "45%",
+      "39%",
+      "65%"
+    ],
+    "correct_index": 2,
+    "explanation": "After Monday: 100% - 35% = 65% remains. After Tuesday: 65% x 0.60 = 39% remains. The answer 25% subtracts both percentages from 100% as simple deductions: 100 - 35 - 40 = 25, ignoring that Tuesday's reduction applies to Monday's remainder. 45% subtracts only half of Tuesday's percentage: 65% - 20% = 45%. 65% is the amount remaining after Monday only, before Tuesday's usage.",
+    "status": "verified",
+    "item_family_id": "ar.percent::fuel-depot-successive-daily-depletion"
+  },
+  {
+    "external_key": "AR-B65-035",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 3,
+    "stem": "A technician now earns $56,000 per year after receiving a 12% raise. What was the technician's salary before the raise?",
+    "choices": [
+      "$49,280",
+      "$47,040",
+      "$50,000",
+      "$52,000"
+    ],
+    "correct_index": 2,
+    "explanation": "Original x 1.12 = $56,000, so original = $56,000 / 1.12 = $50,000. The answer $49,280 subtracts 12% of $56,000 from $56,000, incorrectly applying the percentage to the post-raise salary. $47,040 multiplies $56,000 by 0.84, subtracting 16% instead of the correct factor. $52,000 implies a raise of only about 7.7%, not 12%.",
+    "status": "verified",
+    "item_family_id": "ar.percent::technician-reverse-salary-raise-original"
+  },
+  {
+    "external_key": "AR-B65-036",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 1,
+    "stem": "A mess hall survey shows that 240 of 400 soldiers prefer the hot entree. What percent prefer the hot entree?",
+    "choices": [
+      "60%",
+      "65%",
+      "50%",
+      "55%"
+    ],
+    "correct_index": 0,
+    "explanation": "Percent = 240 / 400 x 100 = 60%. The answer 55% would require 220 of 400 to prefer hot, which is 20 fewer than the actual count. 65% would need 260 of 400. 50% corresponds to exactly 200 soldiers, 40 fewer than the stated 240.",
+    "status": "verified",
+    "item_family_id": "ar.percent::mess-hall-hot-entree-preference-percent"
+  },
+  {
+    "external_key": "AR-B65-037",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A cleaning concentrate is mixed with water in a ratio of 1:7. How many ounces of concentrate are needed to make 64 ounces of total solution?",
+    "choices": [
+      "7",
+      "8",
+      "9",
+      "6"
+    ],
+    "correct_index": 1,
+    "explanation": "Total parts = 1 + 7 = 8. Each part = 64 / 8 = 8 ounces. Concentrate = 1 x 8 = 8 ounces. The answer 7 confuses the number of water parts with the ounces of concentrate. 9 divides 64 by 7 (the water-part count alone) and rounds up. 6 assumes a 1:9 ratio, giving 64 / 10 = 6.4.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::cleaning-concentrate-one-to-seven-mix"
+  },
+  {
+    "external_key": "AR-B65-038",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A motor pool staffs mechanics and vehicles in a ratio of 2:9. If there are 54 vehicles, how many mechanics are on staff?",
+    "choices": [
+      "9",
+      "18",
+      "12",
+      "27"
+    ],
+    "correct_index": 2,
+    "explanation": "Mechanics = (2/9) x 54 = 12. The answer 9 gives the vehicle-group count (54 / 9 = 6 groups) without multiplying by the mechanic ratio value of 2. 18 applies a 1:3 mechanic-to-vehicle ratio instead of 2:9. 27 gives half the vehicle count, applying a 1:2 relationship.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::motor-pool-mechanic-vehicle-staff-count"
+  },
+  {
+    "external_key": "AR-B65-039",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "A field bread recipe calls for 3 cups of whole wheat flour for every 5 cups of white flour. A cook wants to use 24 cups of white flour. How many cups of whole wheat flour are needed?",
+    "choices": [
+      "14.4",
+      "12.0",
+      "16.0",
+      "18.0"
+    ],
+    "correct_index": 0,
+    "explanation": "Whole wheat = (3/5) x 24 = 14.4 cups. The answer 12.0 treats the ratio as 1:2, giving (1/2) x 24 = 12. 16.0 applies a 2:3 whole-wheat-to-white ratio instead of 3:5. 18.0 assumes the ratio is 3:4, giving (3/4) x 24 = 18.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::field-bread-flour-recipe-scale"
+  },
+  {
+    "external_key": "AR-B65-040",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "On a satellite imagery printout, 1 centimeter represents 3.5 kilometers on the ground. Two observation posts appear 8 centimeters apart on the printout. What is the actual distance between them?",
+    "choices": [
+      "28 km",
+      "32 km",
+      "11.5 km",
+      "24.5 km"
+    ],
+    "correct_index": 0,
+    "explanation": "Distance = 8 x 3.5 = 28 km. The answer 24.5 km multiplies 7 centimeters (not 8) by 3.5. 32 km uses a scale of 4 km per centimeter instead of 3.5. 11.5 km adds 8 and 3.5 instead of multiplying.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::satellite-printout-observation-post-distance"
+  },
+  {
+    "external_key": "AR-B65-041",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 2,
+    "stem": "A shipyard crate contains 560 fasteners packed in a bolt-to-nut ratio of 4:3. How many bolts are in the crate?",
+    "choices": [
+      "240",
+      "320",
+      "360",
+      "280"
+    ],
+    "correct_index": 1,
+    "explanation": "Total parts = 4 + 3 = 7. Each part = 560 / 7 = 80. Bolts = 4 x 80 = 320. The answer 240 gives the nut count (3 x 80) instead of the bolt count. 280 divides 560 by 2, assuming a 1:1 ratio. 360 results from an arithmetic slip in the proportion calculation.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::shipyard-bolt-nut-ratio-crate-count"
+  },
+  {
+    "external_key": "AR-B65-042",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "A logistics team packs supply A and supply B boxes in a 5:2 ratio by weight. Supply A weighs 12 pounds per box. If the team packs 20 boxes of supply A, how many pounds of supply B are packed?",
+    "choices": [
+      "96",
+      "64",
+      "128",
+      "160"
+    ],
+    "correct_index": 0,
+    "explanation": "Weight of supply A = 20 x 12 = 240 lb. Supply B weight = (2/5) x 240 = 96 lb. The answer 64 applies the ratio to box count (2/5 x 20 = 8 boxes) then multiplies by an incorrect weight of 8 lb per box. 128 applies the ratio to box count (8 boxes) but uses 16 lb per box. 160 gives the weight of supply A itself, not supply B.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::supply-weight-ratio-box-count-to-total-weight"
+  },
+  {
+    "external_key": "AR-B65-043",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 3,
+    "stem": "An infantry platoon of 40 soldiers deploys with a junior-to-senior enlisted ratio of 7:3. How many junior enlisted soldiers are in the platoon?",
+    "choices": [
+      "28",
+      "24",
+      "12",
+      "30"
+    ],
+    "correct_index": 0,
+    "explanation": "Total parts = 7 + 3 = 10. Each part = 40 / 10 = 4. Junior enlisted = 7 x 4 = 28. The answer 12 gives the senior enlisted count (3 x 4 = 12). 24 applies a 3:2 ratio instead of 7:3. 30 uses a 3:1 ratio, giving (3/4) x 40 = 30.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::infantry-platoon-junior-senior-ratio-count"
+  },
+  {
+    "external_key": "AR-B65-044",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A scale model of a tank is built at 1:48 scale. The real tank is 336 inches long. How many inches long is the model?",
+    "choices": [
+      "6",
+      "8",
+      "7",
+      "9"
+    ],
+    "correct_index": 2,
+    "explanation": "Model length = 336 / 48 = 7 inches. The answer 6 uses a denominator of 56 instead of 48. 8 divides 336 by 42, a smaller scale denominator. 9 divides 336 by about 37, which does not correspond to the stated scale.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::tank-model-scale-inch-length"
+  },
+  {
+    "external_key": "AR-B65-045",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 1,
+    "stem": "A swimmer records lap times of 52, 48, 55, 49, and 51 seconds over five laps. What is her average lap time in seconds?",
+    "choices": [
+      "49",
+      "52",
+      "51",
+      "53"
+    ],
+    "correct_index": 2,
+    "explanation": "Sum = 52 + 48 + 55 + 49 + 51 = 255. Average = 255 / 5 = 51 seconds. The answer 49 would require a total of 245 seconds, 10 less than actual. 52 requires a sum of 260. 53 requires a sum of 265, 10 more than the actual total.",
+    "status": "verified",
+    "item_family_id": "ar.averages::swimmer-five-lap-time-mean"
+  },
+  {
+    "external_key": "AR-B65-046",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 1,
+    "stem": "A soldier scores 82, 79, 91, and 88 on four qualification events. What is the average score?",
+    "choices": [
+      "85",
+      "83",
+      "87",
+      "84"
+    ],
+    "correct_index": 0,
+    "explanation": "Sum = 82 + 79 + 91 + 88 = 340. Average = 340 / 4 = 85. The answer 83 results from a sum of 332, which misreads 91 as 83 or makes a similar addition error. 87 requires a sum of 348, overcounting by 8 points. 84 results from a sum of 336, 4 fewer than the actual total.",
+    "status": "verified",
+    "item_family_id": "ar.averages::soldier-four-event-qualification-mean"
+  },
+  {
+    "external_key": "AR-B65-047",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "A basketball player scores 24, 18, 31, and 27 points in four games. What score must she achieve in the fifth game to average exactly 25 points per game over all five games?",
+    "choices": [
+      "20",
+      "30",
+      "22",
+      "25"
+    ],
+    "correct_index": 3,
+    "explanation": "Required total for 5 games = 25 x 5 = 125. Current total = 24 + 18 + 31 + 27 = 100. Fifth game needed = 125 - 100 = 25 points. The answer 20 would bring the total to 120, yielding an average of 24.0. 30 points in game 5 would give a total of 130 and an average of 26.0. 22 points would produce a total of 122 and an average of 24.4.",
+    "status": "verified",
+    "item_family_id": "ar.averages::basketball-fifth-game-target-average"
+  },
+  {
+    "external_key": "AR-B65-048",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "A shipment of six pallets weighs 420, 385, 440, 395, 410, and 350 pounds. What is the average pallet weight in pounds?",
+    "choices": [
+      "400",
+      "390",
+      "408",
+      "415"
+    ],
+    "correct_index": 0,
+    "explanation": "Sum = 420 + 385 + 440 + 395 + 410 + 350 = 2,400. Average = 2,400 / 6 = 400 lb. The answer 390 results from a sum of 2,340, which is 60 below actual. 408 requires a sum of 2,448. 415 requires a sum of 2,490, exceeding actual by 90 pounds.",
+    "status": "verified",
+    "item_family_id": "ar.averages::pallet-shipment-six-unit-weight-mean"
+  },
+  {
+    "external_key": "AR-B65-049",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "A platoon completes ruck marches on five consecutive days, covering 8, 11, 9, 12, and 10 miles. What is the median daily distance marched?",
+    "choices": [
+      "9",
+      "11",
+      "10",
+      "8"
+    ],
+    "correct_index": 2,
+    "explanation": "Sorted distances: 8, 9, 10, 11, 12. The median of five values is the middle (third) value: 10 miles. The answer 9 is the second value in sorted order, not the middle. 11 is the fourth value. 8 is the minimum value and the median only if the set were entirely below that point.",
+    "status": "verified",
+    "item_family_id": "ar.averages::ruck-march-five-day-median-distance"
+  },
+  {
+    "external_key": "AR-B65-050",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 3,
+    "stem": "A machinist produces parts over three shifts: 95 in shift 1, 110 in shift 2, and 87 in shift 3. In shift 4, a second machinist joins and produces at 1.5 times the first machinist's shift-1 rate. What is the combined output for shift 4?",
+    "choices": [
+      "190",
+      "205",
+      "142.5",
+      "237.5"
+    ],
+    "correct_index": 3,
+    "explanation": "First machinist shift 4 output = shift-1 rate = 95 parts. Second machinist = 1.5 x 95 = 142.5 parts. Combined = 95 + 142.5 = 237.5 parts. The answer 190 simply doubles shift 1 (2 x 95), as if the second machinist matched rather than exceeded the first. 142.5 gives only the second machinist's output, omitting the first. 205 uses the shift-2 output as the base for the second machinist's rate calculation.",
+    "status": "verified",
+    "item_family_id": "ar.averages::machinist-shift4-combined-output-second-worker"
+  },
+  {
+    "external_key": "AR-B65-051",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 3,
+    "stem": "A pilot logs 42, 38, 45, 40, 36, and 47 flight hours over six months. How many hours must the pilot log in month 7 to achieve a 7-month average of exactly 42 hours?",
+    "choices": [
+      "42",
+      "52",
+      "46",
+      "38"
+    ],
+    "correct_index": 2,
+    "explanation": "Sum of months 1-6 = 42 + 38 + 45 + 40 + 36 + 47 = 248 hours. Required 7-month total = 42 x 7 = 294. Hours needed in month 7 = 294 - 248 = 46. The answer 42 assumes the pilot logs the target average in month 7, without accounting for the cumulative shortfall. 52 adds 10 extra hours to the correct answer, as if the shortfall were larger than it is. 38 is the minimum value from the first six months and falls short of what is needed.",
+    "status": "verified",
+    "item_family_id": "ar.averages::pilot-flight-hours-seventh-month-target"
+  },
+  {
+    "external_key": "AR-B65-052",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 1,
+    "stem": "A depot receives daily shipments of 312, 298, 340, and 250 pounds over four days. What is the average daily shipment weight in pounds?",
+    "choices": [
+      "300",
+      "290",
+      "325",
+      "312"
+    ],
+    "correct_index": 0,
+    "explanation": "Sum = 312 + 298 + 340 + 250 = 1,200. Average = 1,200 / 4 = 300 lb. The answer 312 is simply the first day's value, not the mean. 290 would require a sum of 1,160, which is 40 less than actual. 325 would require a sum of 1,300, exceeding actual by 100 pounds.",
+    "status": "verified",
+    "item_family_id": "ar.averages::depot-four-day-shipment-weight-mean"
+  },
+  {
+    "external_key": "AR-B65-053",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 1,
+    "stem": "A print shop produces 360 manuals per hour. How many hours does it take to produce 2,520 manuals?",
+    "choices": [
+      "6",
+      "7",
+      "9",
+      "8"
+    ],
+    "correct_index": 1,
+    "explanation": "Time = 2,520 / 360 = 7 hours. The answer 6 would require a rate of 420 manuals per hour, 60 more than given. 8 hours at 360 per hour yields 2,880 manuals, 360 more than needed. 9 hours yields 3,240 manuals, far above the required quantity.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::print-shop-manual-hours-to-target"
+  },
+  {
+    "external_key": "AR-B65-054",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 1,
+    "stem": "A soldier packs supply crates at 18 per hour. How many crates does the soldier pack in a 4-hour-30-minute shift?",
+    "choices": [
+      "72",
+      "81",
+      "90",
+      "63"
+    ],
+    "correct_index": 1,
+    "explanation": "Shift length = 4.5 hours. Crates = 18 x 4.5 = 81. The answer 72 uses 4 hours only, ignoring the additional 30 minutes. 90 uses 5 hours instead of 4.5. 63 uses 3.5 hours, dropping a full hour from the shift.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::supply-crate-packing-fractional-hours"
+  },
+  {
+    "external_key": "AR-B65-055",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 2,
+    "stem": "Welder A completes a frame in 6 hours. Welder B completes the same frame in 4 hours. How many hours does the job take when both welders work together?",
+    "choices": [
+      "2.0",
+      "5.0",
+      "3.0",
+      "2.4"
+    ],
+    "correct_index": 3,
+    "explanation": "Combined rate = 1/6 + 1/4 = 5/12 frame per hour. Time = 12/5 = 2.4 hours. The answer 2.0 results from using Welder B's rate for both workers. 3.0 hours comes from averaging the two times: (6 + 4) / 2 = 5, then dividing again, or from a common wrong formula. 5.0 adds the two individual times instead of using the combined rate.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::welder-ab-combined-frame-hours"
+  },
+  {
+    "external_key": "AR-B65-056",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 2,
+    "stem": "A fuel pump fills a reservoir at 80 gallons per minute. A drainage valve leaks at 12 gallons per minute. The reservoir holds 2,040 gallons and starts empty. With both pump and valve operating, how many minutes does it take to fill the reservoir?",
+    "choices": [
+      "25.5",
+      "35",
+      "17",
+      "30"
+    ],
+    "correct_index": 3,
+    "explanation": "Net fill rate = 80 - 12 = 68 gallons per minute. Time = 2,040 / 68 = 30 minutes. The answer 25.5 uses only the pump rate (2,040 / 80), ignoring the drain. 17 adds the drain rate to the pump rate instead of subtracting: 2,040 / 120 = 17. 35 uses a net rate of about 58 gal/min, an arithmetic slip on 80 - 12.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::reservoir-pump-fill-with-drain-net-minutes"
+  },
+  {
+    "external_key": "AR-B65-057",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 2,
+    "stem": "Five welders can complete a structural frame in 12 days. Working at the same rate, how many days would a team of 8 welders need?",
+    "choices": [
+      "6.0",
+      "10.0",
+      "8.0",
+      "7.5"
+    ],
+    "correct_index": 3,
+    "explanation": "Total work = 5 x 12 = 60 welder-days. With 8 welders: 60 / 8 = 7.5 days. The answer 6.0 divides total work by 10 instead of 8. 8.0 days comes from scaling 12 days by 5/8 and rounding up rather than computing exactly. 10.0 uses a total work of 80 welder-days instead of 60.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::welder-team-inverse-worker-days"
+  },
+  {
+    "external_key": "AR-B65-058",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 3,
+    "stem": "Soldier A can audit a weapons manifest alone in 3 hours. After Soldier A works alone for 1 hour, Soldier B joins. Soldier B could complete the entire manifest alone in 4 hours. How many total hours does the audit take from the moment Soldier A starts?",
+    "choices": [
+      "1.75",
+      "2.14",
+      "2.50",
+      "3.00"
+    ],
+    "correct_index": 1,
+    "explanation": "Soldier A completes 1/3 of the manifest in the first hour. Remaining = 2/3. Combined rate = 1/3 + 1/4 = 7/12 per hour. Time for remaining work = (2/3) / (7/12) = 8/7 hours = 1.14 hours. Total = 1 + 8/7 = 15/7 = 2.14 hours. The answer 1.75 ignores the first hour of solo work. 2.50 treats Soldier B's rate as equal to Soldier A's when computing the combined phase. 3.00 is Soldier A's solo time and ignores Soldier B entirely.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::manifest-audit-sequential-join-fractional-time"
+  },
+  {
+    "external_key": "AR-B65-059",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 3,
+    "stem": "A quality inspector reviews 90 units per 6-hour shift. A trainee reviews 60 units in the same time. Working together on a batch of 300 units, how many hours does it take to complete the review?",
+    "choices": [
+      "10",
+      "8",
+      "15",
+      "12"
+    ],
+    "correct_index": 3,
+    "explanation": "Inspector rate = 90 / 6 = 15 units per hour. Trainee rate = 60 / 6 = 10 units per hour. Combined rate = 15 + 10 = 25 units per hour. Time = 300 / 25 = 12 hours. The answer 10 uses a combined rate of 30 per hour, incorrectly computing 15 + 15. 15 hours uses a combined rate of 20 per hour, halving one of the two rates. 8 hours implies a combined rate of 37.5 per hour, above either worker's actual rate.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::quality-inspector-trainee-batch-combined-hours"
+  },
+  {
+    "external_key": "AR-B65-060",
+    "subtest": "AR",
+    "topic_id": "ar.ratio-proportion",
+    "difficulty": 1,
+    "stem": "A vehicle service crew can complete 3 maintenance checks for every 2 hours worked. How many checks can they complete in an 8-hour shift?",
+    "choices": [
+      "10",
+      "16",
+      "14",
+      "12"
+    ],
+    "correct_index": 3,
+    "explanation": "Rate = 3 checks per 2 hours = 1.5 checks per hour. Checks in 8 hours = 1.5 x 8 = 12. The answer 10 uses a rate of 1.25 per hour instead of 1.5. 16 doubles the 8-hour total, as if the rate were 2 checks per hour. 14 applies a rate of 1.75 per hour, splitting the difference between the correct rate and an inflated one.",
+    "status": "verified",
+    "item_family_id": "ar.ratio-proportion::vehicle-service-checks-per-hour-shift-total"
+  },
+  {
+    "external_key": "AR-B65-061",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 3,
+    "stem": "Logistics Team 1 can unload a convoy in 5 hours. Team 2 can unload the same convoy in 8 hours. Team 1 works alone for 2 hours, then Team 2 joins. How many additional hours are needed after Team 2 arrives to finish?",
+    "choices": [
+      "2.31",
+      "3.00",
+      "1.85",
+      "2.00"
+    ],
+    "correct_index": 2,
+    "explanation": "After 2 hours, Team 1 completes 2/5 of the work. Remaining = 3/5. Combined rate = 1/5 + 1/8 = 13/40 per hour. Additional time = (3/5) / (13/40) = (3/5) x (40/13) = 24/13 = 1.85 hours. The answer 3.00 divides the remaining 3/5 by only Team 1's rate (1/5), ignoring Team 2. 2.31 results from using incorrect fractional denominators in the combined rate. 2.00 uses an estimated combined rate of 3/10 per hour instead of 13/40.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::convoy-unload-two-team-partial-sequential"
+  },
+  {
+    "external_key": "AR-B65-062",
+    "subtest": "AR",
+    "topic_id": "ar.averages",
+    "difficulty": 2,
+    "stem": "A quality control team inspects 108, 95, 140, 112, and 135 units on five consecutive days. On the sixth day they must inspect enough units to bring the 6-day average to exactly 120. How many units must they inspect on day 6?",
+    "choices": [
+      "115",
+      "140",
+      "120",
+      "130"
+    ],
+    "correct_index": 3,
+    "explanation": "Sum of days 1-5 = 108 + 95 + 140 + 112 + 135 = 590 units. Required 6-day total = 120 x 6 = 720 units. Day 6 needed = 720 - 590 = 130 units. The answer 115 subtracts the 5-day average (118) from the target instead of computing the missing total. 140 matches the highest single-day count and overestimates the shortfall. 120 applies the target average directly as the sixth-day value without adjusting for the below-target cumulative sum.",
+    "status": "verified",
+    "item_family_id": "ar.averages::qc-team-sixth-day-target-from-mean"
+  },
+  {
+    "external_key": "AR-B65-063",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 3,
+    "stem": "A pump fills a 7,200-liter tank at 200 liters per minute. A drain valve accidentally opens and removes 50 liters per minute. The tank starts at 1,800 liters. How many minutes until the tank is full?",
+    "choices": [
+      "27",
+      "36",
+      "48",
+      "30"
+    ],
+    "correct_index": 1,
+    "explanation": "Net fill rate = 200 - 50 = 150 liters per minute. Volume still needed = 7,200 - 1,800 = 5,400 liters. Time = 5,400 / 150 = 36 minutes. The answer 27 uses only the pump rate (5,400 / 200), ignoring the drain entirely. 48 uses a net rate of 112.5, overestimating the drain's impact. 30 uses a net rate of 180 liters per minute, underestimating the drain.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::tank-pump-fill-drain-partial-start-minutes"
+  },
+  {
+    "external_key": "AR-B65-064",
+    "subtest": "AR",
+    "topic_id": "ar.percent",
+    "difficulty": 2,
+    "stem": "A sporting goods store marks up a $240 bicycle by 35%, then offers a weekend promotion of 15% off the marked-up price. What is the final sale price?",
+    "choices": [
+      "$324.00",
+      "$275.40",
+      "$276.00",
+      "$244.80"
+    ],
+    "correct_index": 1,
+    "explanation": "Marked-up price = $240 x 1.35 = $324.00. Sale price = $324.00 x 0.85 = $275.40. The answer $324.00 gives the marked-up price before the weekend discount is applied. $276.00 subtracts 15% from the original $240 first, then adds 35%, reversing the order of operations. $244.80 subtracts the net 20% from the original price (240 x 0.80 = 192) -- actually $244.80 = 240 x 1.02, which would be only a 2% net increase, coming from a different arithmetic path.",
+    "status": "verified",
+    "item_family_id": "ar.percent::bicycle-markup-then-weekend-discount-final"
+  },
+  {
+    "external_key": "AR-B65-065",
+    "subtest": "AR",
+    "topic_id": "ar.work-rate",
+    "difficulty": 1,
+    "stem": "A supply clerk files 15 requisition forms per hour. A second clerk files 20 forms per hour. Working together, how many forms do they file in 4 hours?",
+    "choices": [
+      "60",
+      "140",
+      "80",
+      "120"
+    ],
+    "correct_index": 1,
+    "explanation": "Combined rate = 15 + 20 = 35 forms per hour. Total = 35 x 4 = 140. The answer 60 gives only the first clerk's output (15 x 4). 80 gives only the second clerk's output (20 x 4). 120 uses a combined rate of 30 per hour, as if each clerk filed only 15 forms per hour.",
+    "status": "verified",
+    "item_family_id": "ar.work-rate::supply-clerk-two-person-combined-four-hours"
+  }
+]

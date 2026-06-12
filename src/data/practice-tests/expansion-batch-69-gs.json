@@ -1,0 +1,1107 @@
+[
+  {
+    "external_key": "GS-B69-001",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "In prokaryotic cells, the lac operon allows bacteria to regulate the production of enzymes needed to digest lactose. What molecule directly activates transcription of the lac operon when lactose is present?",
+    "choices": [
+      "Lactose itself",
+      "The lac repressor protein",
+      "Allolactose, a lactose metabolite",
+      "RNA polymerase"
+    ],
+    "correct_index": 2,
+    "explanation": "Allolactose, produced when lactose enters the cell, acts as the inducer by binding to and inactivating the lac repressor protein, allowing transcription to proceed. Lactose itself does not directly activate transcription; the repressor protein blocks rather than activates it.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::lac-operon-allolactose-induction"
+  },
+  {
+    "external_key": "GS-B69-002",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which stage of the cell cycle is primarily responsible for DNA replication?",
+    "choices": [
+      "S phase",
+      "G1 phase",
+      "G2 phase",
+      "M phase"
+    ],
+    "correct_index": 0,
+    "explanation": "The S phase (synthesis phase) is when DNA replication occurs. G1 and G2 are gap phases for cell growth, while M phase is when mitosis and cytokinesis occur.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::s-phase-dna-replication"
+  },
+  {
+    "external_key": "GS-B69-003",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "CRISPR-Cas9 is a gene-editing technology adapted from bacterial immune systems. What is the primary function of the guide RNA in this system?",
+    "choices": [
+      "To cut DNA at the target location",
+      "To bind to and direct Cas9 to the correct DNA sequence",
+      "To repair the DNA after cutting",
+      "To prevent bacterial replication"
+    ],
+    "correct_index": 1,
+    "explanation": "The guide RNA directs the Cas9 protein to the correct genomic location through base pairing. The Cas9 protein itself performs the cutting, while other cellular machinery handles DNA repair.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::crispr-guide-rna-targeting"
+  },
+  {
+    "external_key": "GS-B69-004",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "The G1/S checkpoint in the cell cycle prevents cells with damaged DNA from entering S phase. Which protein family is primarily responsible for detecting DNA damage and halting cell cycle progression?",
+    "choices": [
+      "Kinase proteins",
+      "Spindle checkpoint proteins",
+      "Cyclins and cyclin-dependent kinases",
+      "p53 and related tumor suppressors"
+    ],
+    "correct_index": 3,
+    "explanation": "p53, known as the 'guardian of the genome,' detects DNA damage and can halt the cell cycle or trigger apoptosis. While cyclins and CDKs regulate cell cycle timing, they are not the primary damage sensors.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::p53-dna-damage-checkpoint"
+  },
+  {
+    "external_key": "GS-B69-005",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "In negative feedback regulation of hormones, a high level of thyroid hormone inhibits the release of TSH from the anterior pituitary. What is the advantage of this regulatory mechanism?",
+    "choices": [
+      "It prevents the body from ever producing too much hormone",
+      "It maintains hormone levels within a narrow, optimal range",
+      "It speeds up hormone production when needed",
+      "It eliminates the need for thyroid hormone"
+    ],
+    "correct_index": 1,
+    "explanation": "Negative feedback maintains homeostasis by keeping hormone levels relatively constant. When thyroid hormone is high, it suppresses further TSH release, preventing overproduction. This self-regulating system keeps levels stable without constant external control.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::endocrine-negative-feedback-homeostasis"
+  },
+  {
+    "external_key": "GS-B69-006",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "Genetic drift occurs when allele frequencies change randomly in small populations, while gene flow refers to the movement of alleles between populations. Which scenario best demonstrates genetic drift?",
+    "choices": [
+      "A small group of founders establishing a new colony with unequal allele representation",
+      "Butterflies migrating from one forest to another",
+      "Two neighboring populations exchanging individuals",
+      "Mutations creating new alleles"
+    ],
+    "correct_index": 0,
+    "explanation": "Genetic drift is random change in small populations; a founder group by chance may not carry all alleles from the original population equally. Migration of butterflies exemplifies gene flow, not drift. Mutations introduce variation but are a separate evolutionary force.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::genetic-drift-founder-effect"
+  },
+  {
+    "external_key": "GS-B69-007",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "In a mutualistic symbiotic relationship, both organisms benefit. In a parasitic relationship, one organism benefits while the other is harmed. Which relationship is commensal?",
+    "choices": [
+      "Both organisms are harmed",
+      "Both organisms benefit equally",
+      "One organism benefits and the other is unaffected",
+      "Organisms compete for the same resource"
+    ],
+    "correct_index": 2,
+    "explanation": "Commensalism occurs when one organism gains benefit and the other is neither helped nor harmed. Mutualism benefits both, parasitism harms one, and competition involves organisms harming each other.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::commensal-symbiosis-neutral"
+  },
+  {
+    "external_key": "GS-B69-008",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "The modern classification system divides life into three domains. Which domain includes all organisms with membrane-bound nuclei?",
+    "choices": [
+      "Archaea",
+      "Bacteria",
+      "Eukarya",
+      "Protista"
+    ],
+    "correct_index": 2,
+    "explanation": "Eukarya includes all organisms with membrane-bound nuclei and organelles, encompassing protists, fungi, plants, and animals. Archaea and Bacteria are both prokaryotic domains without nuclei.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::domain-eukarya-nucleus"
+  },
+  {
+    "external_key": "GS-B69-009",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "Plant transpiration is the loss of water vapor through stomata. How does transpiration contribute to water transport in plants?",
+    "choices": [
+      "It creates a water potential gradient that pulls water from roots upward",
+      "It directly pushes water up through the xylem",
+      "It provides hydrolysis to break down glucose",
+      "It cools the plant but has no effect on water movement"
+    ],
+    "correct_index": 0,
+    "explanation": "Transpiration creates a water potential gradient by removing water from leaf cells, which pulls water up through the xylem in a process called the transpiration pull. This is driven by osmotic forces rather than direct pressure.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::transpiration-pull-water-movement"
+  },
+  {
+    "external_key": "GS-B69-010",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "The lymphatic system helps defend the body against pathogens and maintains fluid balance. Which cells are primary components of the lymphatic immune response?",
+    "choices": [
+      "Red blood cells",
+      "Platelets",
+      "Lymphocytes and macrophages",
+      "Hemoglobin molecules"
+    ],
+    "correct_index": 2,
+    "explanation": "Lymphocytes (T cells and B cells) and macrophages are key immune cells found in lymph. Red blood cells transport oxygen and have no immune function; platelets aid in clotting.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::lymphatic-lymphocytes-immune-defense"
+  },
+  {
+    "external_key": "GS-B69-011",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "The nitrogen cycle converts atmospheric nitrogen into forms usable by organisms. Which organisms are responsible for fixing atmospheric nitrogen into ammonia?",
+    "choices": [
+      "Plants and fungi",
+      "Animals and decomposers",
+      "Bacteria and archaea",
+      "Algae and protists"
+    ],
+    "correct_index": 2,
+    "explanation": "Nitrogen-fixing bacteria and some archaea possess the nitrogenase enzyme needed to convert atmospheric N2 into ammonia. Plants cannot fix nitrogen directly but obtain it from the soil; many legumes form symbiotic relationships with nitrogen-fixing bacteria in root nodules.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::nitrogen-fixation-bacteria-nitrogenase"
+  },
+  {
+    "external_key": "GS-B69-012",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "Ecological succession describes how communities change over time after a disturbance. Primary succession begins on newly exposed rock or lava. What is the first major plant group to colonize these barren areas?",
+    "choices": [
+      "Large mature forests",
+      "Shrubs and small trees",
+      "Grasses and wildflowers",
+      "Mosses and lichens"
+    ],
+    "correct_index": 3,
+    "explanation": "Mosses and lichens are pioneer species that can colonize bare rock because they require minimal soil and can obtain nutrients from rock weathering. These organisms break down rock and build soil that later plants depend on.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::primary-succession-pioneer-mosses-lichens"
+  },
+  {
+    "external_key": "GS-B69-013",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "Membrane proteins function in transport, signaling, and structural support. What determines whether a membrane protein is integral or peripheral?",
+    "choices": [
+      "Its size and molecular weight",
+      "Its origin from DNA or RNA",
+      "Its enzymatic activity",
+      "Its interaction with the lipid bilayer"
+    ],
+    "correct_index": 3,
+    "explanation": "Integral proteins span the entire lipid bilayer and have hydrophobic regions embedded in the membrane, while peripheral proteins associate with the membrane surface through weaker interactions with other proteins. Their position is determined by their chemical interaction with the hydrophobic core.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::integral-peripheral-membrane-proteins"
+  },
+  {
+    "external_key": "GS-B69-014",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "Which organelle is responsible for producing ATP through aerobic respiration?",
+    "choices": [
+      "Chloroplast",
+      "Golgi apparatus",
+      "Mitochondrion",
+      "Nucleolus"
+    ],
+    "correct_index": 2,
+    "explanation": "The mitochondrion is the powerhouse of the cell where aerobic respiration occurs in the Krebs cycle and electron transport chain. Chloroplasts perform photosynthesis, while the Golgi and nucleolus have different functions.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::mitochondrion-aerobic-respiration-atp"
+  },
+  {
+    "external_key": "GS-B69-015",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 3,
+    "stem": "In photosynthesis, the light-dependent reactions occur in the thylakoids and produce ATP and NADPH. These molecules are then used in the Calvin cycle to fix CO2 into glucose. What would happen if only the Calvin cycle could run but not the light-dependent reactions?",
+    "choices": [
+      "Glucose would be produced more efficiently",
+      "The plant would respire instead of photosynthesize",
+      "No glucose could be produced because ATP and NADPH would be depleted",
+      "Chlorophyll would absorb more light"
+    ],
+    "correct_index": 2,
+    "explanation": "The Calvin cycle requires ATP and NADPH from the light-dependent reactions. Without these energy carriers being replenished, the cycle would halt and glucose production would stop. The cycle cannot generate its own energy source.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::calvin-cycle-atp-nadph-dependence"
+  },
+  {
+    "external_key": "GS-B69-016",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 2,
+    "stem": "What is the primary function of the ribosome in protein synthesis?",
+    "choices": [
+      "To translate mRNA codons into amino acid sequences",
+      "To transcribe DNA into mRNA",
+      "To break down proteins",
+      "To store genetic information"
+    ],
+    "correct_index": 0,
+    "explanation": "Ribosomes read mRNA codons and assemble amino acids into proteins during translation. Transcription occurs in the nucleus; protein breakdown is done by proteasomes and lysosomes; DNA stores genetic information.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::ribosome-translation-mrna-codons"
+  },
+  {
+    "external_key": "GS-B69-017",
+    "subtest": "GS",
+    "topic_id": "gs.life-science",
+    "difficulty": 1,
+    "stem": "In meiosis, homologous chromosomes separate during meiosis I, resulting in haploid cells. What is the key advantage of sexual reproduction compared to asexual reproduction?",
+    "choices": [
+      "It produces offspring faster",
+      "It requires less energy",
+      "It produces more offspring per generation",
+      "It creates genetic variation in offspring"
+    ],
+    "correct_index": 3,
+    "explanation": "Sexual reproduction combines genetic material from two parents, creating variation. This variation is advantageous for adaptation and evolution. Asexual reproduction is faster and produces clones, but lacks the genetic diversity that sexual reproduction provides.",
+    "status": "verified",
+    "item_family_id": "gs.life-science::sexual-reproduction-genetic-variation"
+  },
+  {
+    "external_key": "GS-B69-018",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "Radioactive decay can produce three main types of radiation: alpha particles, beta particles, and gamma rays. Which type is most penetrating and difficult to shield?",
+    "choices": [
+      "Gamma rays",
+      "Beta particles",
+      "Alpha particles",
+      "Neutron radiation"
+    ],
+    "correct_index": 0,
+    "explanation": "Gamma rays are high-energy electromagnetic radiation that penetrate deeply through matter. Alpha particles are large and easily stopped by paper or skin; beta particles require plastic or aluminum to stop.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::gamma-rays-penetrating-radiation"
+  },
+  {
+    "external_key": "GS-B69-019",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "In nuclear fission, a nucleus splits into smaller nuclei releasing energy. In nuclear fusion, two nuclei combine to form a heavier nucleus also releasing energy. Which process powers the sun?",
+    "choices": [
+      "Fission only",
+      "Fusion only",
+      "Both equally",
+      "Neither, it uses chemical reactions"
+    ],
+    "correct_index": 1,
+    "explanation": "The sun powers itself through fusion, combining hydrogen into helium in the core. Fission is the splitting of heavy nuclei and occurs in nuclear reactors on Earth, not in stellar fusion processes.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::fusion-stellar-core-hydrogen-helium"
+  },
+  {
+    "external_key": "GS-B69-020",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Distillation is a separation technique that uses heat and cooling to separate liquids based on boiling points. Which scenario best demonstrates when distillation would be effective?",
+    "choices": [
+      "Separating salt from saltwater",
+      "Separating oil from vinegar in salad dressing",
+      "Separating ethanol from water",
+      "Separating sand from gravel"
+    ],
+    "correct_index": 2,
+    "explanation": "Distillation works by vaporizing components and condensing them separately based on different boiling points. Ethanol boils at 78C while water boils at 100C, making separation possible. Salt dissolves in water and requires evaporation; oil and vinegar separate by density; sand and gravel need mechanical separation.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::distillation-boiling-point-separation"
+  },
+  {
+    "external_key": "GS-B69-021",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Chromatography separates mixtures by differences in how components interact with a stationary and mobile phase. In paper chromatography, what does the Rf value indicate?",
+    "choices": [
+      "How reactive the substance is",
+      "The distance a substance travels relative to the solvent front",
+      "The molecular weight of the substance",
+      "The color intensity of the spot"
+    ],
+    "correct_index": 1,
+    "explanation": "The Rf (retention factor) value is calculated as the distance traveled by the substance divided by the distance traveled by the solvent front. Different substances have different Rf values, allowing identification and separation.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::chromatography-rf-value-separation"
+  },
+  {
+    "external_key": "GS-B69-022",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "A buffer solution resists changes in pH when small amounts of acid or base are added. What components make an effective buffer?",
+    "choices": [
+      "A weak acid and its conjugate base salt",
+      "A strong acid and a weak base",
+      "A weak acid and a strong base",
+      "Two strong acids"
+    ],
+    "correct_index": 0,
+    "explanation": "An effective buffer contains a weak acid and its conjugate base (often as a salt). When H+ is added, the conjugate base neutralizes it; when OH- is added, the weak acid neutralizes it. Strong acid-base pairs cannot effectively buffer.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::buffer-weak-acid-conjugate-base"
+  },
+  {
+    "external_key": "GS-B69-023",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Henry's Law describes the relationship between gas pressure and dissolved gas concentration in a liquid. Which real-world scenario best demonstrates Henry's Law?",
+    "choices": [
+      "CO2 bubbles forming when a soda bottle is opened",
+      "Water boiling and turning to steam",
+      "Ice melting into water",
+      "Salt dissolving in water"
+    ],
+    "correct_index": 0,
+    "explanation": "When a soda bottle is opened, CO2 pressure decreases, so dissolved CO2 comes out of solution as bubbles. This is Henry's Law in action. The bubbles form because the gas pressure above the liquid has suddenly decreased.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::henrys-law-gas-dissolution-pressure"
+  },
+  {
+    "external_key": "GS-B69-024",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "Le Chatelier's Principle states that a system in equilibrium will shift to counteract a change imposed on it. If pressure is increased on a system containing N2, H2, and NH3 (Haber process), which direction does the equilibrium shift?",
+    "choices": [
+      "Toward products because fewer moles of gas are produced",
+      "Toward products because ammonia is less dense",
+      "Toward reactants to increase pressure",
+      "Toward reactants to absorb the pressure increase"
+    ],
+    "correct_index": 0,
+    "explanation": "Increasing pressure favors the side with fewer moles of gas. The forward reaction (N2 + 3H2 → 2NH3) reduces 4 moles to 2 moles, so equilibrium shifts right. The system counteracts the pressure increase by producing fewer gas molecules.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::le-chatelier-pressure-shift-moles"
+  },
+  {
+    "external_key": "GS-B69-025",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "In electrochemistry, oxidation is the loss of electrons and reduction is the gain of electrons. When a battery powers an external circuit, which electrode is the anode?",
+    "choices": [
+      "The electrode where reduction occurs",
+      "The electrode where oxidation occurs",
+      "The positive terminal of the battery",
+      "The electrode made of copper"
+    ],
+    "correct_index": 1,
+    "explanation": "The anode is where oxidation (loss of electrons) occurs in a discharging battery, making it the negative terminal. The cathode is where reduction occurs (positive terminal). These terms define electrodes by their function, not material.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::anode-oxidation-cathode-reduction"
+  },
+  {
+    "external_key": "GS-B69-026",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "Organic chemistry often involves reactions that form and break C-C and C-H bonds. In an addition reaction, what type of bond must be present in the starting reactant?",
+    "choices": [
+      "A double or triple bond",
+      "A single bond only",
+      "A hydrogen bond",
+      "An ionic bond"
+    ],
+    "correct_index": 0,
+    "explanation": "Addition reactions occur when atoms or groups add across unsaturated bonds (double or triple bonds). For example, H2 adds across the C=C double bond in alkenes. Single bonds are already saturated and do not readily undergo addition.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::addition-reaction-unsaturated-bonds"
+  },
+  {
+    "external_key": "GS-B69-027",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "Solubility describes how much solute can dissolve in a solvent. Which statement correctly describes the relationship between temperature and solubility for most solid solutes?",
+    "choices": [
+      "Solubility decreases as temperature increases",
+      "Solubility increases as temperature increases",
+      "Solubility is unaffected by temperature",
+      "Solubility depends only on pressure"
+    ],
+    "correct_index": 1,
+    "explanation": "For most solid solutes, higher temperatures increase molecular motion and increase solubility. This is why sugar dissolves faster in hot water than cold water. Gas solubility shows the opposite trend.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::solubility-temperature-increase"
+  },
+  {
+    "external_key": "GS-B69-028",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "The pH scale measures the concentration of hydrogen ions in a solution. A solution with a pH of 4 compared to a solution with a pH of 7 is how many times more acidic?",
+    "choices": [
+      "1000 times more acidic",
+      "3 times more acidic",
+      "10 times more acidic",
+      "7 times more acidic"
+    ],
+    "correct_index": 0,
+    "explanation": "The pH scale is logarithmic, meaning each unit represents a tenfold difference in H+ concentration. A pH of 4 is 3 units more acidic than pH 7, so it is 10^3 or 1000 times more acidic.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::ph-scale-logarithmic-acidity"
+  },
+  {
+    "external_key": "GS-B69-029",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Atomic theory states that atoms of the same element are identical. However, isotopes of an element have the same number of protons but different numbers of neutrons. Which property of an isotope is NOT changed by the difference in neutron count?",
+    "choices": [
+      "Mass number",
+      "Atomic mass",
+      "Half-life",
+      "Atomic number"
+    ],
+    "correct_index": 3,
+    "explanation": "Atomic number is determined by the number of protons and defines the element. Isotopes have identical atomic numbers but different mass numbers because they have different neutrons. The number of neutrons affects mass and stability (half-life).",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::isotope-atomic-number-neutrons"
+  },
+  {
+    "external_key": "GS-B69-030",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 3,
+    "stem": "The Pauli Exclusion Principle states that no two electrons in an atom can have the same set of four quantum numbers. How many electrons can occupy a single orbital?",
+    "choices": [
+      "1 electron",
+      "Unlimited electrons",
+      "4 electrons",
+      "2 electrons"
+    ],
+    "correct_index": 3,
+    "explanation": "Each orbital can hold a maximum of 2 electrons, which must have opposite spins (spin up and spin down). No two electrons can have identical quantum numbers, so the spin quantum number must differ.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::pauli-exclusion-orbital-electrons"
+  },
+  {
+    "external_key": "GS-B69-031",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 1,
+    "stem": "In chemistry, electronegativity measures an element's ability to attract electrons in a chemical bond. Which element is most electronegative?",
+    "choices": [
+      "Chlorine",
+      "Nitrogen",
+      "Oxygen",
+      "Fluorine"
+    ],
+    "correct_index": 3,
+    "explanation": "Fluorine is the most electronegative element, meaning it attracts electrons most strongly in chemical bonds. Electronegativity generally increases from left to right and bottom to top in the periodic table.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::fluorine-electronegativity"
+  },
+  {
+    "external_key": "GS-B69-032",
+    "subtest": "GS",
+    "topic_id": "gs.physical-science",
+    "difficulty": 2,
+    "stem": "Enthalpy and entropy are key thermodynamic quantities. A reaction with positive enthalpy change (endothermic) and positive entropy change is spontaneous at which condition?",
+    "choices": [
+      "Only at low temperatures",
+      "Never spontaneous",
+      "At all temperatures",
+      "Only at high temperatures"
+    ],
+    "correct_index": 3,
+    "explanation": "According to G = H - TS, a reaction is spontaneous when G is negative. With positive H and positive S, only at high temperatures does the -TS term overcome the positive H term, making G negative.",
+    "status": "verified",
+    "item_family_id": "gs.physical-science::entropy-enthalpy-spontaneity-temperature"
+  },
+  {
+    "external_key": "GS-B69-033",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "Dendrochronology is a dating technique that uses tree rings to determine the age of wood and wooden objects. What causes the variation in ring width from year to year?",
+    "choices": [
+      "Changes in the tree's species",
+      "Variation in growing conditions like rainfall and temperature",
+      "The tree's increasing root depth",
+      "Changes in atmospheric composition"
+    ],
+    "correct_index": 1,
+    "explanation": "Tree ring width reflects annual growth, which depends on environmental conditions. Wide rings form during favorable years with adequate moisture and warmth; narrow rings form during harsh years. This creates a pattern that can be matched across samples to date archaeological materials.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::dendrochronology-ring-width-climate"
+  },
+  {
+    "external_key": "GS-B69-034",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "El Nino-Southern Oscillation (ENSO) involves warming of tropical Pacific waters. During El Nino events, the typical atmospheric circulation pattern weakens. What is a major consequence for global weather?",
+    "choices": [
+      "No effect on monsoons or precipitation",
+      "Cooler than normal conditions worldwide",
+      "Stronger trade winds in the Pacific",
+      "Increased rainfall in Peru and Ecuador"
+    ],
+    "correct_index": 3,
+    "explanation": "During El Nino, warm water shifts eastward across the Pacific, disrupting normal circulation and bringing above-normal rainfall to South America, particularly Peru and Ecuador, which normally experience arid conditions.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::enso-el-nino-pacific-rainfall"
+  },
+  {
+    "external_key": "GS-B69-035",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Thermohaline circulation, also called the Great Ocean Conveyor Belt, drives deep ocean currents. Which property of water is primarily responsible for initiating this circulation?",
+    "choices": [
+      "Temperature alone",
+      "Combined effects of temperature and salinity on water density",
+      "Salinity alone",
+      "Wind stress on the ocean surface"
+    ],
+    "correct_index": 1,
+    "explanation": "Cold, salty water at the poles becomes denser and sinks, driving the thermohaline circulation. Both low temperature and high salinity increase density, creating the density gradient that powers these deep currents.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::thermohaline-density-circulation-conveyor"
+  },
+  {
+    "external_key": "GS-B69-036",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "The ozone hole forms when ozone concentrations decrease in the stratosphere. Which chemical species, banned under the Montreal Protocol, was primarily responsible for ozone depletion?",
+    "choices": [
+      "Chlorofluorocarbons (CFCs)",
+      "Carbon dioxide",
+      "Nitrogen oxides",
+      "Methane"
+    ],
+    "correct_index": 0,
+    "explanation": "CFCs release chlorine atoms in the stratosphere that catalytically destroy ozone. The Montreal Protocol phased out CFCs, leading to ozone recovery. Other listed gases contribute to climate change or acid rain but not ozone depletion.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::cfc-ozone-depletion-stratosphere"
+  },
+  {
+    "external_key": "GS-B69-037",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "The habitable zone around a star is the region where planetary temperatures allow liquid water to exist on a planet's surface. What is this region also called?",
+    "choices": [
+      "The radiation zone",
+      "The Goldilocks zone",
+      "The photosphere",
+      "The chromosphere"
+    ],
+    "correct_index": 1,
+    "explanation": "The habitable zone is called the Goldilocks zone because conditions must be 'just right' for liquid water, not too hot and not too cold. This term reflects the fairy tale where Goldilocks seeks the perfect temperature.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::goldilocks-zone-habitable-liquid-water"
+  },
+  {
+    "external_key": "GS-B69-038",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Gravitational lensing occurs when massive objects like galaxies bend light from more distant objects. This phenomenon provides evidence for what?",
+    "choices": [
+      "The young age of the universe",
+      "The presence of black holes only",
+      "The existence of dark matter",
+      "The absence of gravity in space"
+    ],
+    "correct_index": 2,
+    "explanation": "Gravitational lensing occurs around massive objects even when visible matter cannot account for the amount of bending observed, providing strong evidence for dark matter's gravitational effects.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::gravitational-lensing-dark-matter"
+  },
+  {
+    "external_key": "GS-B69-039",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "The cosmic microwave background (CMB) is electromagnetic radiation from the early universe, detectable in all directions. What is the primary significance of the CMB for cosmology?",
+    "choices": [
+      "It proves the universe is eternally static",
+      "It has no effect on modern cosmological theories",
+      "It is radiation from distant stars only",
+      "It is evidence for the Big Bang and provides data on the universe's early conditions"
+    ],
+    "correct_index": 3,
+    "explanation": "The CMB is leftover radiation from about 380,000 years after the Big Bang, supporting Big Bang theory. Its temperature and properties provide constraints on cosmological models and the universe's composition.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::cosmic-microwave-background-big-bang"
+  },
+  {
+    "external_key": "GS-B69-040",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Ice cores extracted from glaciers and ice sheets contain trapped air bubbles and isotopic information that reveal past climate conditions. What can be determined from the trapped air bubbles?",
+    "choices": [
+      "Past atmospheric composition including CO2 concentrations",
+      "The age of the ice by counting annual layers",
+      "The exact location of the ice when it formed",
+      "The future climate for the next 100 years"
+    ],
+    "correct_index": 0,
+    "explanation": "Air bubbles trapped in ice preserve samples of the atmosphere from when the ice formed, allowing scientists to measure historical CO2, methane, and oxygen levels. Annual layer counting (varves) provides age estimates; future climate prediction requires models, not ice cores.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::ice-core-atmospheric-composition-co2"
+  },
+  {
+    "external_key": "GS-B69-041",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "Earthquakes release energy in the form of seismic waves that travel through the Earth. Which type of seismic wave is the fastest?",
+    "choices": [
+      "S waves",
+      "P waves",
+      "Surface waves",
+      "Love waves"
+    ],
+    "correct_index": 1,
+    "explanation": "P waves (primary waves) are the fastest seismic waves and travel through solids and liquids. S waves travel through solids only and are slower. Surface waves are the slowest and cause the most damage to structures.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::p-waves-fastest-seismic"
+  },
+  {
+    "external_key": "GS-B69-042",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "The composition of Earth's layers changes from the solid crust to the liquid outer core to the solid inner core. What accounts for the inner core being solid despite extremely high temperatures similar to the outer core?",
+    "choices": [
+      "Lower temperature in the inner core",
+      "Continuous cooling from the surface",
+      "Different composition with higher melting point",
+      "Extreme pressure preventing melting"
+    ],
+    "correct_index": 3,
+    "explanation": "Both the outer and inner cores are predominantly iron-nickel at similar temperatures, but the inner core is solid because of extreme pressure. Pressure raises the melting point of iron sufficiently to keep the inner core solid.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::inner-core-solid-pressure-melting"
+  },
+  {
+    "external_key": "GS-B69-043",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "Mineral identification often relies on streak, which is the color of a mineral's powder when scratched on a ceramic tile. Why is streak sometimes different from a mineral's appearance?",
+    "choices": [
+      "Powdering changes the crystal structure and light reflection properties",
+      "Streak is always the same as appearance",
+      "The ceramic tile changes the mineral's color",
+      "Streak depends on atmospheric pressure"
+    ],
+    "correct_index": 0,
+    "explanation": "Streak reveals the true color of a mineral's fine powder, which may differ from its bulk appearance due to particle size, crystal structure, and light scattering. For example, hematite appears silvery-gray but has a red streak.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::mineral-streak-color-powder"
+  },
+  {
+    "external_key": "GS-B69-044",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 3,
+    "stem": "The Mohorovicic discontinuity (Moho) marks the boundary between the crust and upper mantle. What evidence led scientists to identify the Moho?",
+    "choices": [
+      "Direct drilling into Earth's interior",
+      "A visible layer visible in exposed rock",
+      "A sudden change in seismic wave velocities",
+      "Temperature measurements from boreholes"
+    ],
+    "correct_index": 2,
+    "explanation": "The Moho is identified by the sudden increase in seismic wave velocity that occurs at the crust-mantle boundary, detected through seismograph analysis. We cannot drill to the Moho, and temperature measurements alone cannot identify this compositional boundary.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::mohorovicic-discontinuity-seismic-velocity"
+  },
+  {
+    "external_key": "GS-B69-045",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 2,
+    "stem": "Stratospheric ozone absorbs ultraviolet radiation, but CFCs can survive in the stratosphere and break down ozone through catalytic cycles. How is recovery of the ozone layer progressing?",
+    "choices": [
+      "Ozone is still depleting rapidly",
+      "The hole has closed completely",
+      "Ozone is slowly recovering as CFC levels decrease",
+      "Recovery depends on solar activity only"
+    ],
+    "correct_index": 2,
+    "explanation": "The ozone layer is slowly recovering because the Montreal Protocol successfully phased out CFCs. However, recovery is gradual because CFCs persist in the atmosphere for decades. Full recovery is projected for the mid-21st century.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::ozone-recovery-montreal-protocol"
+  },
+  {
+    "external_key": "GS-B69-046",
+    "subtest": "GS",
+    "topic_id": "gs.earth-space-science",
+    "difficulty": 1,
+    "stem": "Ocean salinity is determined by the balance between evaporation, precipitation, and freshwater input. Which process increases ocean salinity most directly?",
+    "choices": [
+      "Precipitation from rain",
+      "Evaporation of seawater",
+      "Melting of polar ice",
+      "River discharge into the ocean"
+    ],
+    "correct_index": 1,
+    "explanation": "Evaporation removes water but leaves dissolved salts behind, increasing salinity. Precipitation and river discharge add fresh water, diluting salinity. Ice melt releases fresh water and decreases salinity.",
+    "status": "verified",
+    "item_family_id": "gs.earth-space-science::ocean-salinity-evaporation-concentration"
+  },
+  {
+    "external_key": "GS-B69-047",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "The Doppler effect describes the change in frequency (or wavelength) of a wave as the source moves relative to the observer. When an ambulance siren approaches, what happens to the frequency you hear?",
+    "choices": [
+      "Frequency decreases",
+      "Frequency increases",
+      "Frequency remains constant",
+      "Frequency becomes inaudible"
+    ],
+    "correct_index": 1,
+    "explanation": "As the siren approaches, successive wave crests are compressed, decreasing the wavelength and increasing the frequency, raising the pitch. When the siren recedes, frequency decreases and pitch drops.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::doppler-effect-approaching-frequency"
+  },
+  {
+    "external_key": "GS-B69-048",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Total internal reflection occurs when light traveling in a denser medium (higher refractive index) encounters the boundary with a less dense medium at an angle greater than the critical angle. What is a practical application of this principle?",
+    "choices": [
+      "Mirrors and regular reflection",
+      "Lens focusing in magnifying glasses",
+      "Fiber optic cables for data transmission",
+      "Refraction in eyeglasses"
+    ],
+    "correct_index": 2,
+    "explanation": "Fiber optic cables rely on total internal reflection to trap light within the glass fiber, allowing long-distance data transmission with minimal loss. The other options involve different optical phenomena.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::total-internal-reflection-fiber-optics"
+  },
+  {
+    "external_key": "GS-B69-049",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "In semiconductors, the band gap is the energy difference between the valence band and the conduction band. What does a smaller band gap in a semiconductor indicate?",
+    "choices": [
+      "Easier excitation of electrons into the conduction band",
+      "Lower electrical conductivity",
+      "Requirement for higher temperatures to conduct",
+      "Inability to function as a diode"
+    ],
+    "correct_index": 0,
+    "explanation": "A smaller band gap requires less energy to excite electrons from the valence band to the conduction band, allowing conduction at lower temperatures and with less applied voltage. This makes the material more conductive.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::semiconductor-band-gap-conductivity"
+  },
+  {
+    "external_key": "GS-B69-050",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "Superconductivity is a phenomenon where certain materials exhibit zero electrical resistance below a critical temperature. What is a key feature of superconductors?",
+    "choices": [
+      "They always generate their own magnetic field",
+      "They expel magnetic fields through the Meissner effect",
+      "They conduct electricity only at extremely high temperatures",
+      "They have high resistance that decreases with temperature"
+    ],
+    "correct_index": 1,
+    "explanation": "The Meissner effect causes superconductors to expel magnetic fields, making them perfect diamagnets below their critical temperature. This is more than just zero resistance; it involves active field expulsion.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::superconductivity-meissner-effect"
+  },
+  {
+    "external_key": "GS-B69-051",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Electromagnetic induction occurs when a changing magnetic field induces an electric field and current in a conductor. What is Faraday's Law?",
+    "choices": [
+      "Electric and magnetic fields always point in the same direction",
+      "Magnetic fields are produced only by moving charges",
+      "The magnitude of induced voltage equals the rate of change of magnetic flux",
+      "Induction requires a steady magnetic field"
+    ],
+    "correct_index": 2,
+    "explanation": "Faraday's Law states that the induced electromotive force (EMF) equals the negative rate of change of magnetic flux through a circuit. A changing flux, not a steady one, induces the EMF.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::faraday-law-magnetic-flux-induction"
+  },
+  {
+    "external_key": "GS-B69-052",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Bernoulli's Principle relates pressure, velocity, and height in fluid flow. What does the principle predict about fluid pressure in a narrow section of a pipe compared to a wide section?",
+    "choices": [
+      "Pressure is higher in the narrow section",
+      "Pressure depends only on fluid density",
+      "Pressure is equal in both sections",
+      "Pressure is lower in the narrow section"
+    ],
+    "correct_index": 3,
+    "explanation": "When fluid flows faster (in the narrow section), pressure decreases. Bernoulli's equation shows that increased velocity corresponds to decreased pressure, maintaining constant total energy along the streamline.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::bernoulli-principle-pressure-velocity"
+  },
+  {
+    "external_key": "GS-B69-053",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "Wave interference occurs when two waves overlap and combine. What is constructive interference?",
+    "choices": [
+      "Waves cancel each other completely",
+      "Waves slow down and stop",
+      "Waves pass through each other unchanged",
+      "Waves combine to produce an amplitude larger than either alone"
+    ],
+    "correct_index": 3,
+    "explanation": "Constructive interference occurs when wave crests align with crests and troughs with troughs, resulting in a wave of greater amplitude. Destructive interference occurs when crests align with troughs, causing cancellation.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::constructive-interference-amplitude"
+  },
+  {
+    "external_key": "GS-B69-054",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "Newton's First Law of Motion states that an object at rest remains at rest and an object in motion remains in motion unless acted upon by a net force. What is this property called?",
+    "choices": [
+      "Acceleration",
+      "Inertia",
+      "Momentum",
+      "Friction"
+    ],
+    "correct_index": 1,
+    "explanation": "Inertia is the resistance to change in motion. Objects with greater mass have greater inertia and require more force to change their velocity. This is Newton's First Law applied.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::inertia-newtons-first-law"
+  },
+  {
+    "external_key": "GS-B69-055",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Work is defined as force applied over a distance in the direction of the force. If you push a block horizontally across a surface against friction, what is the relationship between work and kinetic energy?",
+    "choices": [
+      "Work equals the change in potential energy",
+      "Work equals only the kinetic energy gained",
+      "Work and kinetic energy are unrelated",
+      "Work equals the change in kinetic energy plus energy lost to friction"
+    ],
+    "correct_index": 3,
+    "explanation": "By the work-energy theorem, the total work done on an object equals its change in kinetic energy. When friction opposes motion, some work goes into overcoming friction rather than increasing kinetic energy.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::work-energy-theorem-friction"
+  },
+  {
+    "external_key": "GS-B69-056",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Momentum is the product of mass and velocity. In an isolated system with no external forces, what does the Law of Conservation of Momentum state?",
+    "choices": [
+      "Total momentum always increases",
+      "Total momentum always decreases",
+      "Momentum depends on gravitational field strength",
+      "Total momentum remains constant"
+    ],
+    "correct_index": 3,
+    "explanation": "In an isolated system, total momentum is conserved. During collisions and interactions between objects, individual momenta may change, but the sum remains constant when no external forces apply.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::conservation-momentum-isolated-system"
+  },
+  {
+    "external_key": "GS-B69-057",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "Simple harmonic motion (SHM) occurs when a restoring force is proportional to displacement. In SHM of a mass on a spring, what is the relationship between period and mass?",
+    "choices": [
+      "Period is independent of mass",
+      "Period decreases as mass increases",
+      "Period increases as mass increases",
+      "Period depends only on amplitude"
+    ],
+    "correct_index": 2,
+    "explanation": "The period of a mass-spring system is T = 2π√(m/k), so period increases with increasing mass. Heavier objects oscillate more slowly. Period is independent of amplitude for ideal springs.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::shm-period-mass-spring"
+  },
+  {
+    "external_key": "GS-B69-058",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "Gravitational force between two objects depends on their masses and the distance between them. According to Newton's Law of Universal Gravitation, how does gravitational force change if the distance between objects doubles?",
+    "choices": [
+      "Force is reduced to one-fourth",
+      "Force doubles",
+      "Force quadruples",
+      "Force remains constant"
+    ],
+    "correct_index": 0,
+    "explanation": "Gravitational force is inversely proportional to the square of the distance (F = Gm1m2/r^2). Doubling the distance divides the force by four.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::gravitational-force-inverse-square"
+  },
+  {
+    "external_key": "GS-B69-059",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Torque is the rotational equivalent of force and produces angular acceleration. What factor, besides force magnitude, is critical for determining the torque applied to an object?",
+    "choices": [
+      "The velocity of the force",
+      "The color of the object",
+      "The distance from the pivot point to where the force is applied (lever arm)",
+      "The mass of the entire system"
+    ],
+    "correct_index": 2,
+    "explanation": "Torque equals force multiplied by the perpendicular distance (lever arm) from the pivot point. A force applied farther from the pivot produces greater torque, which is why door handles are far from the hinge.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::torque-lever-arm-distance"
+  },
+  {
+    "external_key": "GS-B69-060",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "The moment of inertia is the rotational equivalent of mass in Newton's Second Law. How does moment of inertia change when mass is distributed farther from the axis of rotation?",
+    "choices": [
+      "It increases with the square of the distance",
+      "It decreases proportionally",
+      "It remains constant",
+      "It becomes zero"
+    ],
+    "correct_index": 0,
+    "explanation": "Moment of inertia depends on I = sum of m*r^2, so it increases with the square of distance from the axis. This is why ice skaters spin faster when pulling their arms in; they reduce their moment of inertia.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::moment-inertia-distance-squared"
+  },
+  {
+    "external_key": "GS-B69-061",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Pressure in fluids at rest is determined by the weight of the fluid above. In a static fluid, how does pressure change with depth?",
+    "choices": [
+      "Pressure increases linearly with depth",
+      "Pressure decreases with depth",
+      "Pressure is constant at all depths",
+      "Pressure depends on fluid temperature only"
+    ],
+    "correct_index": 0,
+    "explanation": "Pressure at depth h in a fluid at rest is P = P0 + ρgh, where ρ is density and g is gravitational acceleration. Pressure increases linearly with depth as more fluid weight presses down.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::fluid-pressure-depth-hydrostatic"
+  },
+  {
+    "external_key": "GS-B69-062",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "When a sound wave travels from one medium to another, its speed changes but its frequency remains constant. What must change when a wave enters a medium where it travels more slowly?",
+    "choices": [
+      "Frequency changes",
+      "Amplitude increases",
+      "Wavelength changes",
+      "The wave stops completely"
+    ],
+    "correct_index": 2,
+    "explanation": "Since v = fλ (velocity equals frequency times wavelength) and frequency is constant, when velocity decreases, wavelength must also decrease. The wave slows but maintains frequency.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::wave-speed-frequency-wavelength-medium"
+  },
+  {
+    "external_key": "GS-B69-063",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 2,
+    "stem": "Energy can be transformed between kinetic and potential forms. At the highest point of a pendulum's swing, which type of energy is predominant?",
+    "choices": [
+      "Kinetic energy only",
+      "Neither kinetic nor potential energy",
+      "Equal amounts of both",
+      "Potential energy only"
+    ],
+    "correct_index": 3,
+    "explanation": "At the highest point, the pendulum momentarily stops (zero velocity, zero kinetic energy) and all energy is gravitational potential energy relative to the lowest point.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::pendulum-highest-point-potential-energy"
+  },
+  {
+    "external_key": "GS-B69-064",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 3,
+    "stem": "Escape velocity is the minimum velocity needed for an object to escape the gravitational pull of a celestial body. On which planet would escape velocity be highest for objects of the same mass?",
+    "choices": [
+      "A planet with smallest mass",
+      "A planet with largest mass and smallest radius",
+      "A planet with lowest density",
+      "A planet with largest radius"
+    ],
+    "correct_index": 1,
+    "explanation": "Escape velocity is v = √(2GM/r), depending on mass and radius. Larger mass increases escape velocity; smaller radius increases it further. Jupiter has high escape velocity due to large mass despite large radius.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::escape-velocity-mass-radius"
+  },
+  {
+    "external_key": "GS-B69-065",
+    "subtest": "GS",
+    "topic_id": "gs.physics-mechanics",
+    "difficulty": 1,
+    "stem": "Density is mass per unit volume. If an object floats on water, what can be said about its density relative to water?",
+    "choices": [
+      "It is more dense than water",
+      "It is less dense than water",
+      "It is equal to the density of water",
+      "Density has no effect on floating"
+    ],
+    "correct_index": 1,
+    "explanation": "An object floats when its average density is less than the fluid it is in. Water has density of 1 g/cm3; floating objects have lower density. Objects denser than water sink.",
+    "status": "verified",
+    "item_family_id": "gs.physics-mechanics::buoyancy-density-floating"
+  }
+]

@@ -1,0 +1,1107 @@
+[
+  {
+    "external_key": "PC-B68-001",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nFingerprints were used informally as personal marks for centuries, but systematic use in criminal identification did not begin until the 1880s. Francis Galton's 1892 study demonstrated that no two individuals share the same fingerprint patterns and that those patterns remain unchanged over a lifetime. Police departments around the world adopted fingerprint classification shortly after, replacing the older Bertillon system of body measurements. The shift marked a permanent change in how investigators linked suspects to crime scenes.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Francis Galton proved that fingerprints never change as a person ages.",
+      "The Bertillon system was unreliable and was quickly replaced for unrelated reasons.",
+      "Police departments resisted using fingerprints until governments required them to do so.",
+      "Scientific study of fingerprints in the 1880s led to their adoption as the standard tool for criminal identification."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage traces how Galton's research established the scientific foundation for fingerprinting and explains that police worldwide then adopted it, replacing an older system. Galton's finding that fingerprints do not change is a supporting detail, not the central point. The passage says the Bertillon system was replaced because of fingerprinting, not for unrelated reasons. The passage describes adoption as a direct consequence of the research, not as something governments mandated.",
+    "status": "verified",
+    "item_family_id": "pc.passage::fingerprint-criminal-identification"
+  },
+  {
+    "external_key": "PC-B68-002",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nRoman concrete, known as opus caementicium, was mixed with seawater and volcanic ash from the Pozzuoli region near Naples. Modern analysis shows that seawater caused a rare mineral called tobermorite to grow within the concrete over time, actually strengthening it. While modern Portland cement weakens when exposed to saltwater, Roman harbor structures built more than two thousand years ago remain largely intact today. Engineers are now studying the ancient formula in hopes of developing more durable building materials.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Roman concrete was stronger than modern concrete because Romans used better labor practices.",
+      "Roman concrete's unique chemistry made it more durable than modern cement, inspiring current research.",
+      "Volcanic ash from Pozzuoli was widely traded across the Roman Empire as a commodity.",
+      "Portland cement fails in marine environments and should no longer be used in harbor construction."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage explains the chemical reason Roman concrete outlasts modern cement and notes that researchers are studying it for practical applications today. Labor practices are never mentioned. The passage does not call for abandoning Portland cement; it only notes limitations. Volcanic ash trade is not discussed; the ash is mentioned only as an ingredient.",
+    "status": "verified",
+    "item_family_id": "pc.passage::roman-concrete-seawater-chemistry"
+  },
+  {
+    "external_key": "PC-B68-003",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nCockpit resource management, or CRM, emerged as a formal discipline after crash investigations in the 1970s revealed that most aviation accidents were caused not by mechanical failure but by poor crew communication and decision-making. CRM training teaches flight crews to speak up when they spot a problem, challenge questionable decisions respectfully, and divide tasks systematically. Airlines that adopted CRM programs reported measurable drops in crew-related errors. Today CRM principles have spread beyond aviation to surgery, nuclear power, and military operations.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "CRM training was developed to address crew communication failures that cause most aviation accidents.",
+      "Mechanical failures were the leading cause of aviation accidents before CRM was introduced.",
+      "CRM programs are most effective in surgery and are only secondarily useful in aviation.",
+      "Airlines began requiring CRM after government regulators mandated the training nationwide."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage explains that CRM arose because investigations found crew error, not mechanical failure, was the dominant cause of accidents, and describes how the training addresses that problem. Mechanical failure as the leading cause directly contradicts the passage. Calling CRM most effective in surgery inverts the passage's focus, which centers on aviation as the origin. Government mandates are never mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::crm-cockpit-resource-management"
+  },
+  {
+    "external_key": "PC-B68-004",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nFlorence Nightingale is remembered as a pioneer of nursing, but her contributions to statistics were equally significant. During the Crimean War she collected mortality data and created a type of polar area chart to show that far more soldiers were dying from preventable infections than from battle wounds. Her visual presentation persuaded the British government to reform hospital sanitation. Nightingale remains one of the earliest examples of using data visualization to drive public health policy.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Florence Nightingale's statistical work and data visualization were key to improving military hospital conditions.",
+      "Nightingale invented the modern hospital chart format still used in medicine today.",
+      "The British government had already planned sanitation reforms before Nightingale presented her findings.",
+      "Battle wounds were the leading cause of death among British soldiers in the Crimean War."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage argues that Nightingale's data collection and charts were the mechanism through which she influenced policy. Battle wounds as the leading cause contradicts the passage, which states infections killed far more soldiers. Saying she invented the modern hospital chart format goes beyond the passage, which describes one specific chart type without claiming it is still used. Saying the government had already planned reforms contradicts the passage, which credits Nightingale's presentation with persuading them to act.",
+    "status": "verified",
+    "item_family_id": "pc.passage::nightingale-statistics-sanitation"
+  },
+  {
+    "external_key": "PC-B68-005",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Inca road network, called the Qhapaq Nan, stretched more than 40,000 kilometers through the Andes and along the Pacific coast. Built without wheeled vehicles or iron tools, it included suspension bridges over gorges, stairways cut into cliff faces, and waystations stocked with food and supplies. The network allowed the Inca state to move armies, messengers, and goods efficiently across terrain that would defeat most modern hikers. Its engineering sophistication still impresses civil engineers today.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "The Inca used iron tools and wheeled carts to build roads more quickly than earlier civilizations.",
+      "The Inca road system was an extraordinary feat of engineering that served vital state functions.",
+      "Suspension bridges were the most important feature of the Inca road network.",
+      "The Qhapaq Nan was primarily used for religious pilgrimage rather than military movement."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes the road's scale, construction methods, and practical uses, culminating in praise for its engineering sophistication. Saying the Inca used iron tools and wheeled carts directly contradicts the passage. Calling suspension bridges the most important feature elevates one detail to a central claim the passage does not support. Saying the network was primarily for religious pilgrimage contradicts the passage, which lists armies and goods movement as key uses.",
+    "status": "verified",
+    "item_family_id": "pc.passage::inca-road-qhapaq-nan"
+  },
+  {
+    "external_key": "PC-B68-006",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nBus rapid transit, or BRT, uses dedicated lanes, level boarding, and pre-paid ticketing to provide the speed and reliability of light rail at a fraction of the construction cost. Properly implemented BRT systems in Bogota and Curitiba have transformed urban mobility for millions of riders. In cities where dedicated lanes are politically or physically impossible, however, BRT devolves into ordinary bus service competing with traffic. The distinction between true BRT and a repainted bus route matters enormously for ridership and outcomes.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Bogota and Curitiba are the only cities where BRT has been successfully implemented.",
+      "Light rail is always superior to bus rapid transit when a city has sufficient funding.",
+      "BRT can match light rail performance, but only when its key infrastructure features are fully implemented.",
+      "Pre-paid ticketing is the single most important feature that distinguishes BRT from regular bus service."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage argues that BRT's effectiveness depends on full implementation of its defining features, and that without dedicated lanes it becomes ordinary bus service. Calling light rail always superior is not argued in the passage. Limiting BRT success to Bogota and Curitiba is too narrow; the passage uses those cities as examples, not as the only successes. Elevating pre-paid ticketing as the single most important feature singles out one element the passage does not rank above the others.",
+    "status": "verified",
+    "item_family_id": "pc.passage::brt-bus-rapid-transit-implementation"
+  },
+  {
+    "external_key": "PC-B68-007",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nSmall modular reactors, or SMRs, are nuclear fission plants designed to produce between 50 and 300 megawatts, compared with the 1,000-plus megawatts of a conventional plant. Their smaller size allows factory fabrication and faster on-site assembly. Supporters argue SMRs can be placed closer to population centers and paired with intermittent renewables to provide reliable baseline power. Critics counter that no SMR has yet operated commercially at scale, and that per-kilowatt costs may exceed those of larger plants once engineering economics are applied. The technology's promise remains real but unproven.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "SMRs have already replaced conventional nuclear plants in several countries due to lower costs.",
+      "The main benefit of SMRs is that they can be located near cities without any safety concerns.",
+      "Critics have effectively shown that SMRs will never be economically competitive with large nuclear plants.",
+      "SMRs offer potential advantages over conventional nuclear plants but have not yet been proven at commercial scale."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage presents both the promised advantages of SMRs and the criticism that they remain unproven commercially, concluding that promise is real but unverified. Saying SMRs have already replaced conventional plants contradicts the passage, which says no SMR has operated commercially. Saying critics have definitively shown SMRs can never compete overstates the critics' position; the passage only says costs may be higher. Saying SMRs can be placed near cities without any safety concerns distorts the passage, which never makes that claim.",
+    "status": "verified",
+    "item_family_id": "pc.passage::smr-nuclear-promise-unproven"
+  },
+  {
+    "external_key": "PC-B68-008",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nMiranda warnings arose from the 1966 Supreme Court case Miranda v. Arizona, in which the Court held that suspects must be informed of their rights before custodial interrogation. The ruling was controversial because it changed police procedure nationwide and was blamed by some officials for reducing confession rates. Later research found little measurable effect on conviction rates. The warnings have since become so embedded in American legal culture that most people recognize them from television, whether or not they understand their full legal significance.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Miranda warnings significantly reduced conviction rates across the United States after 1966.",
+      "Television dramas are the primary reason Americans understand their legal rights during arrest.",
+      "The Miranda ruling changed police interrogation procedures and became a cultural fixture, though its impact on convictions was smaller than critics feared.",
+      "The Supreme Court has revisited and significantly modified Miranda rights in every decade since 1966."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage covers the origin of Miranda warnings, the controversy they caused, and the finding that their practical effect on convictions was limited, before noting their cultural familiarity. Saying Miranda warnings significantly reduced conviction rates contradicts the passage, which says research found little effect. Saying television is the primary reason Americans understand their rights is a minor point; the passage notes that TV exposure does not guarantee understanding. Saying the Supreme Court significantly modified Miranda rights in every decade is not supported; the passage describes no such pattern of revisions.",
+    "status": "verified",
+    "item_family_id": "pc.passage::miranda-rights-cultural-legal"
+  },
+  {
+    "external_key": "PC-B68-009",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nParks in dense urban neighborhoods serve multiple functions beyond recreation. They absorb stormwater, reducing flood risk and sewer overflow. Tree canopy lowers ambient temperatures by several degrees, cutting cooling energy costs for nearby buildings. Green spaces have also been linked in studies to lower stress, increased physical activity, and stronger social cohesion among residents. Urban planners increasingly classify parks not as amenities but as critical infrastructure on par with roads and water systems.\n\nHow is the information in this passage organized?",
+    "choices": [
+      "The passage presents a single benefit of parks and explains it in increasing detail.",
+      "The passage lists multiple benefits of urban parks in support of a concluding claim.",
+      "The passage contrasts urban parks with rural green spaces to show which are more valuable.",
+      "The passage traces the history of park planning policy in chronological order."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage enumerates environmental, energy, health, and social benefits one by one, and the final sentence draws the conclusion that planners now treat parks as critical infrastructure. This is a multiple-supporting-details structure leading to a claim. Only one type of benefit is not the pattern; the passage lists four categories. Rural versus urban contrast does not appear. No historical timeline is presented.",
+    "status": "verified",
+    "item_family_id": "pc.passage::urban-parks-infrastructure-benefits"
+  },
+  {
+    "external_key": "PC-B68-010",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nWillem Einthoven invented the electrocardiograph in 1903, creating the first practical tool to record the heart's electrical activity. His machine weighed 600 pounds and required five people to operate. Over the following decades, engineers miniaturized the device until it became a standard piece of hospital equipment. Today wearable ECG monitors fit on a wristband and transmit data wirelessly to physicians. The invention that once filled a room now rests on a wrist.\n\nThe author's primary purpose in writing this passage is to:",
+    "choices": [
+      "Warn that wearable medical devices are less accurate than hospital-grade equipment",
+      "Explain the electrical principles that allow an ECG monitor to detect heart activity",
+      "Argue that Einthoven's Nobel Prize was not fully deserved given the limitations of his original machine",
+      "Trace the history of the electrocardiograph to illustrate how medical technology can shrink dramatically over time"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage moves from a 600-pound machine to a wristband device, using that arc to illustrate the remarkable miniaturization of medical technology. No warning about accuracy is given; the passage is admiring. Nothing in the passage questions Einthoven's Nobel Prize. Electrical principles are not explained; the passage is historical and descriptive.",
+    "status": "verified",
+    "item_family_id": "pc.passage::ecg-miniaturization-history"
+  },
+  {
+    "external_key": "PC-B68-011",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nZoning codes in most American cities mandate the separation of residential, commercial, and industrial land uses, a practice established in the early twentieth century to protect neighborhoods from factory pollution. That rationale has weakened as clean industry has replaced heavy manufacturing, yet the codes remain. The result is cities where housing and jobs are so far apart that car ownership is not optional but mandatory. Mixed-use zoning, which allows homes, shops, and offices to coexist at the block level, is legal in only a fraction of U.S. cities.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Separation-based zoning originated for a reason that no longer applies and now forces car dependency.",
+      "Industrial pollution continues to justify separating residential neighborhoods from commercial zones.",
+      "Zoning codes should be eliminated entirely because they serve no protective purpose in modern cities.",
+      "Mixed-use zoning has been adopted widely and is reshaping American cities."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage argues that the original rationale for separating land uses has faded but the codes persist, creating car dependency as a side effect. Calling for elimination of all zoning codes overstates the argument; the passage critiques separation zoning specifically, not all codes. Saying industrial pollution continues to justify separation contradicts the passage, which says clean industry has replaced heavy manufacturing. Saying mixed-use zoning has been widely adopted contradicts the passage, which says it is legal in only a fraction of cities.",
+    "status": "verified",
+    "item_family_id": "pc.passage::zoning-separation-car-dependency"
+  },
+  {
+    "external_key": "PC-B68-012",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Miranda warning requires police to inform suspects of four things before custodial interrogation: the right to remain silent, the warning that anything said can be used in court, the right to an attorney, and the right to a court-appointed attorney if the suspect cannot afford one. The warning must be given before questioning begins and applies only when a suspect is both in custody and being interrogated.\n\nAccording to the passage, under which conditions must a Miranda warning be given?",
+    "choices": [
+      "Whenever a police officer speaks with a member of the public",
+      "Only when a suspect is formally charged with a felony offense",
+      "When a suspect is both in custody and being interrogated",
+      "Immediately upon arrest, before any conversation takes place"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states explicitly that the warning applies only when a suspect is both in custody and being interrogated. The warning does not apply to all police conversations with the public. Formal charging is not mentioned as a trigger. The passage does not say the warning must precede all conversation at arrest regardless of whether interrogation follows.",
+    "status": "verified",
+    "item_family_id": "pc.passage::miranda-custody-interrogation-conditions"
+  },
+  {
+    "external_key": "PC-B68-013",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nPumped-storage hydropower works by using surplus electricity to pump water from a lower reservoir to a higher one. When demand rises and electricity is needed, the water is released back through turbines to generate power. The technology can store energy for hours or days and respond to demand changes within minutes. Pumped storage currently accounts for about 95 percent of all utility-scale energy storage capacity worldwide.\n\nAccording to the passage, what share of global utility-scale energy storage does pumped-storage hydropower represent?",
+    "choices": [
+      "About 50 percent",
+      "About 75 percent",
+      "About 95 percent",
+      "About 85 percent"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states directly that pumped storage accounts for about 95 percent of all utility-scale energy storage capacity worldwide. The other percentages are not mentioned in the passage and are lower than the figure given.",
+    "status": "verified",
+    "item_family_id": "pc.passage::pumped-storage-hydro-percentage"
+  },
+  {
+    "external_key": "PC-B68-014",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe Persian qanat is an ancient underground irrigation system that taps groundwater from hillside aquifers and channels it by gravity to farms and villages in arid lowlands. Workers dug vertical access shafts at intervals along the route to remove spoil and allow ventilation during maintenance. The longest qanats stretch more than 70 kilometers. Many qanats built over 2,500 years ago are still in active use in Iran today.\n\nWhat is the purpose of the vertical shafts described in the passage?",
+    "choices": [
+      "To serve as emergency escape routes for workers during collapses",
+      "To allow water to flow downhill through air pressure differences",
+      "To measure water depth and regulate flow to individual farms",
+      "To remove excavated material and provide ventilation during maintenance"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states that vertical shafts were used to remove spoil and allow ventilation during maintenance. Flow regulation and depth measurement are not mentioned as functions of the shafts. Emergency escape is not described in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::persian-qanat-vertical-shafts"
+  },
+  {
+    "external_key": "PC-B68-015",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nControlled flight into terrain, known as CFIT, occurs when an airworthy aircraft under crew control flies into the ground, water, or an obstacle without the crew realizing the danger. CFIT was the leading cause of fatal airline accidents for decades and prompted the introduction of ground proximity warning systems in commercial aircraft. The FAA required all U.S. turbine-powered airliners to carry enhanced ground proximity warning systems, or EGPWS, by March 2001. CFIT fatalities dropped sharply after widespread EGPWS adoption.\n\nAccording to the passage, by what date were U.S. airlines required to carry EGPWS?",
+    "choices": [
+      "December 2003",
+      "January 1999",
+      "March 2001",
+      "March 2005"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states that the FAA required all U.S. turbine-powered airliners to carry EGPWS by March 2001. The other dates do not appear in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::cfit-egpws-faa-deadline"
+  },
+  {
+    "external_key": "PC-B68-016",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nJoseph Lister introduced antiseptic surgery in 1867 after reading Louis Pasteur's germ theory research. Lister used carbolic acid to sterilize surgical instruments, clean wounds, and spray the operating theater. Before antiseptic technique, roughly half of surgical patients in major hospitals died from post-operative infection. Within a decade of Lister's publication, surgical mortality rates at hospitals that adopted his methods fell dramatically.\n\nAccording to the passage, approximately what fraction of surgical patients died from post-operative infection before antiseptic technique?",
+    "choices": [
+      "One in ten",
+      "Nearly all patients",
+      "One in four",
+      "Roughly one in two"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage states that roughly half of surgical patients died from post-operative infection before antiseptic technique, which equals approximately one in two. One in ten and one in four are lower than the stated figure. The passage does not say nearly all patients died.",
+    "status": "verified",
+    "item_family_id": "pc.passage::lister-antiseptic-surgery-mortality"
+  },
+  {
+    "external_key": "PC-B68-017",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nOffshore wind farms generate electricity far from shore where winds are stronger and steadier than on land. Transmitting that power to the grid requires high-voltage direct current, or HVDC, cables because alternating current loses too much energy over long submarine distances. HVDC convertor stations on both ends of the cable transform the current for generation on one side and for distribution on the other. The cable infrastructure often costs as much as the turbines themselves.\n\nAccording to the passage, why is HVDC cable used instead of alternating current for long submarine transmission?",
+    "choices": [
+      "Alternating current loses too much energy over long submarine distances.",
+      "Offshore turbines can only generate direct current due to the way their generators are designed.",
+      "HVDC cables are lighter and easier to lay on the ocean floor than other cable types.",
+      "HVDC cables are cheaper to manufacture than alternating current cables of the same length."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage directly states that alternating current loses too much energy over long submarine distances, which is why HVDC is used. Cost comparisons between cable types are not made. The passage does not say turbines can only produce direct current. Weight and ease of installation are not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::offshore-wind-hvdc-transmission"
+  },
+  {
+    "external_key": "PC-B68-018",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nWilhelm Rontgen discovered X-rays in November 1895 while experimenting with cathode ray tubes in a darkened laboratory. He noticed that a fluorescent screen across the room glowed even though it was not in the path of the cathode rays, which he knew could not penetrate air. He named the unknown radiation X-rays, using 'X' to denote something unknown. Within weeks he produced the first skeletal radiograph of his wife's hand. Within a year, physicians were using X-rays to locate bullets and set fractures.\n\nAccording to the passage, what observation first alerted Rontgen to the existence of X-rays?",
+    "choices": [
+      "A fluorescent screen across the room glowed even though it was outside the path of the cathode rays.",
+      "A photographic plate across the room was unexpectedly exposed despite being wrapped in paper.",
+      "His cathode ray tube produced visible light that passed through the laboratory walls.",
+      "A metal plate in the room became magnetized after prolonged exposure to the cathode ray tube."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states that Rontgen noticed a fluorescent screen across the room glowing even though it was not in the path of the cathode rays. A photographic plate is not mentioned in the discovery account. Visible light passing through walls is not described. Magnetization of metal plates is not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::xray-rontgen-discovery-observation"
+  },
+  {
+    "external_key": "PC-B68-019",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe flying buttress was developed in France during the late twelfth century to solve a structural problem unique to Gothic cathedrals. Builders wanted taller walls pierced with large windows, but removing stone from the walls eliminated the mass needed to resist the outward thrust of the vault above. Flying buttresses transferred that thrust from the upper wall to outer piers connected by arched stone arms, allowing walls to be thinner and windows larger. Notre-Dame de Paris, begun in the 1160s, is among the earliest large structures to use them systematically.\n\nAccording to the passage, what structural problem did flying buttresses solve?",
+    "choices": [
+      "They transferred the outward thrust of the vault from the upper wall to outer support piers.",
+      "They distributed the weight of bell towers evenly across the nave floor.",
+      "They reinforced stained glass windows against wind pressure and thermal expansion.",
+      "They prevented cathedral foundations from sinking under the weight of tall stone walls."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage explains that flying buttresses transferred the outward thrust of the vault from the upper wall to outer piers. Foundation sinking is not mentioned. Window reinforcement against wind or thermal stress is not discussed. Bell tower weight distribution is not addressed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::flying-buttress-gothic-thrust"
+  },
+  {
+    "external_key": "PC-B68-020",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nAnchoring is a cognitive bias in which the first piece of information a person receives on a topic disproportionately influences subsequent judgments. In one classic study, subjects who were asked whether Gandhi died before or after age 9 later guessed a much younger age at death than subjects who were asked whether he died before or after age 140. Neither group had been told the correct answer, yet the initial number shaped their estimates. Negotiators use anchoring deliberately by making the first offer before the other party can establish a reference point.\n\nAccording to the passage, how did the initial questions affect subjects' age estimates in the Gandhi study?",
+    "choices": [
+      "Subjects given the low anchor guessed an older age because they wanted to correct the error.",
+      "Subjects given the low anchor guessed a younger age; subjects given the high anchor guessed an older age.",
+      "Both groups guessed approximately the same age because they knew Gandhi was a historical figure.",
+      "The initial questions had no effect because subjects understood the anchors were unrealistic."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states that subjects given the low anchor guessed a much younger age than those given the high anchor, confirming that the anchor shaped estimates in the direction of the initial number. The suggestion that subjects with a low anchor guessed older to correct the error describes behavior the passage does not support. Saying both groups guessed approximately the same age contradicts the passage, which shows the groups differed substantially. Saying the initial questions had no effect contradicts the passage, which says the initial number shaped estimates despite being obviously unrealistic.",
+    "status": "verified",
+    "item_family_id": "pc.passage::anchoring-gandhi-study"
+  },
+  {
+    "external_key": "PC-B68-021",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nRunway incursions occur when an aircraft, vehicle, or person enters a runway without authorization while another aircraft is using it. They are classified into four categories: A through D, with A being the most serious. Category A incursions involve a collision or near-collision requiring extreme avoidance action. The FAA tracks incursions annually and has worked with airports to install surface radar and better ground lighting. Despite these measures, incursions at busy airports have not reached zero.\n\nAccording to the passage, what defines a Category A runway incursion?",
+    "choices": [
+      "Any unauthorized entry onto a runway by a ground vehicle",
+      "An incursion that causes a delay of more than 15 minutes",
+      "An incursion requiring extreme avoidance action or resulting in a collision",
+      "An incursion that goes unreported to airport control"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage states that Category A incursions involve a collision or near-collision requiring extreme avoidance action. Ground vehicle entry alone does not define Category A. Reporting status and delay duration are not mentioned in the category definition.",
+    "status": "verified",
+    "item_family_id": "pc.passage::runway-incursion-category-a"
+  },
+  {
+    "external_key": "PC-B68-022",
+    "subtest": "PC",
+    "topic_id": "pc.detail-recall",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nWillis Carrier patented the first modern air conditioning system in 1902 to solve a humidity problem at a Brooklyn printing plant, not primarily to cool people. Humidity caused paper to expand unevenly, ruining print registration. Carrier's system cooled air by passing it over chilled coils, which condensed moisture before blowing the drier air into the plant. The incidental cooling effect was later recognized as a comfort and productivity tool. By mid-century, air conditioning had reshaped where Americans chose to live and work.\n\nAccording to the passage, what was the original purpose of Carrier's air conditioning invention?",
+    "choices": [
+      "To lower indoor temperatures in factories during summer heat waves",
+      "To control humidity that was causing paper to expand and ruin printing quality",
+      "To prevent machinery from overheating in enclosed manufacturing spaces",
+      "To reduce the spread of airborne disease in densely occupied work environments"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage states explicitly that Carrier's system was designed to solve a humidity problem at a printing plant where paper was expanding unevenly. Cooling people was described as incidental. Machinery overheating and disease reduction are not mentioned as original purposes.",
+    "status": "verified",
+    "item_family_id": "pc.passage::air-conditioning-carrier-humidity"
+  },
+  {
+    "external_key": "PC-B68-023",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe lab submitted DNA evidence for analysis on the day of the arrest. The case went to trial fourteen months later. By that time, the same evidence had been tested at three separate facilities, all of which reported consistent results. The defense attorney introduced no expert witness to challenge the findings.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "The consistent DNA results across three labs likely strengthened the prosecution's case.",
+      "The defendant was acquitted because the DNA evidence was collected improperly.",
+      "The defense attorney agreed that DNA evidence is never wrong.",
+      "The prosecution was required by law to test evidence at multiple facilities."
+    ],
+    "correct_index": 0,
+    "explanation": "Three independent labs returning consistent results and the defense offering no expert rebuttal together suggest the DNA evidence was credible and likely favored the prosecution. The passage does not say the defendant was acquitted. The defense's silence does not mean the attorney believed DNA is infallible. No legal requirement for multiple tests is mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::dna-evidence-three-labs"
+  },
+  {
+    "external_key": "PC-B68-024",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe pilot's manual required verification of fuel quantity by visual inspection before every flight. The mechanic signed off on the preflight checklist. Forty minutes after takeoff the aircraft declared an emergency and landed in a field due to fuel exhaustion. An investigation found the right fuel cap had not been fully secured after the previous day's refueling.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "The visual inspection was completed correctly and the fuel was consumed faster than normal.",
+      "The pilot should have performed a more thorough engine run-up before departure.",
+      "The signed checklist did not guarantee that every required step was actually performed.",
+      "Fuel exhaustion emergencies are common when mechanics are overworked."
+    ],
+    "correct_index": 2,
+    "explanation": "Despite a signed checklist, fuel was lost through an unsecured cap that a proper visual inspection should have caught, suggesting the inspection was not fully performed. The passage implies inadequate inspection, not faster-than-normal fuel burn. Engine run-up is not mentioned. Mechanic workload is not discussed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::preflight-checklist-fuel-exhaustion"
+  },
+  {
+    "external_key": "PC-B68-025",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe sunk cost fallacy leads people to continue an activity because of resources already invested, even when continuing is no longer rational. A company that has spent two million dollars on software development may press on with a failing project rather than cut losses, because stopping feels like admitting the two million was wasted. In reality, the spent money cannot be recovered whether the project continues or not; only future costs and benefits should matter to a rational decision-maker.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "Companies that ignore sunk costs are more likely to abandon projects prematurely.",
+      "A decision-maker who keeps funding a failing project solely because of past spending is acting irrationally.",
+      "Sunk costs are only relevant in business decisions, not in personal choices.",
+      "The passage implies that large initial investments make projects more likely to succeed."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage explicitly states that only future costs and benefits should matter to a rational decision-maker, which means continuing solely because of past spending is irrational. The passage describes irrational persistence, not premature abandonment. The passage uses a business example but does not limit the fallacy to business. Nothing in the passage suggests large investments increase success likelihood.",
+    "status": "verified",
+    "item_family_id": "pc.passage::sunk-cost-failing-project"
+  },
+  {
+    "external_key": "PC-B68-026",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nForensic investigators found footwear impressions in the mud at the scene. The suspect owned boots of the same brand and size as the impressions. When officers obtained a warrant to examine the boots, one sole showed a distinctive gouge mark that matched a unique defect visible in every impression at the scene. The defense argued that the brand and size alone proved nothing.\n\nWhat can most reasonably be inferred about the strength of the forensic evidence?",
+    "choices": [
+      "Brand and size alone would have been sufficient for a conviction without the gouge mark.",
+      "Footwear evidence is generally considered more reliable than DNA evidence in court.",
+      "The defense's argument was based on the gouge mark being inconsistent with the impressions.",
+      "The gouge mark significantly strengthened the link between the suspect's boot and the crime scene."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage shows that the defense conceded brand and size alone were weak, so the gouge mark, which is unique to that specific boot, would logically add substantial individuating value. Saying brand and size alone would have been sufficient contradicts the defense's argument and the passage's logic. The passage makes no comparison between footwear evidence and DNA. The defense challenged brand and size, not the gouge mark, so saying the defense disputed the gouge mark misreads the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::footwear-impression-gouge-match"
+  },
+  {
+    "external_key": "PC-B68-027",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe nudge theory of behavioral economics holds that small changes in the way choices are presented can significantly alter behavior without restricting options. Placing fruit at eye level in a cafeteria and moving desserts to a less visible location increases fruit selection without removing any item from the menu. Studies show calorie consumption in cafeterias drops after these rearrangements even when customers are unaware of them.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "The physical arrangement of choices can influence decisions even when people do not realize it.",
+      "People consciously choose healthier food when they are reminded of its nutritional value.",
+      "Cafeterias that use nudging techniques must disclose them to customers by law.",
+      "Customers who are aware of nudging techniques are immune to their effects."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage states that calorie consumption drops even when customers are unaware of the rearrangements, directly supporting the inference that arrangement influences choices below conscious awareness. Saying people consciously choose healthier food when reminded of nutrition contradicts the passage, which shows effects occur without any reminders. Disclosure requirements are not mentioned. Awareness as a countermeasure to nudging is not addressed in the passage.",
+    "status": "verified",
+    "item_family_id": "pc.passage::nudge-cafeteria-fruit-placement"
+  },
+  {
+    "external_key": "PC-B68-028",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nDuring the investigation of the Station nightclub fire in 2003, surveyors found that most of the 100 victims died within a few feet of a secondary exit that had been obscured by crowd movement toward the main entrance. Exit signs were present but not visible through the smoke. Investigators concluded that crowd behavior in emergencies tends to pull people toward familiar entrances regardless of proximity to marked exits.\n\nWhat can most reasonably be inferred about emergency exit design from this passage?",
+    "choices": [
+      "Installing more exit signs in nightclubs would have prevented all the deaths in this fire.",
+      "Investigators concluded that the secondary exit was improperly constructed and violated fire code.",
+      "The main entrance was locked, which is why victims moved toward it instead of the secondary exit.",
+      "Effective emergency exit design must account for the tendency of crowds to follow familiar paths rather than marked signs."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage shows that marked exits failed because crowd behavior overrode rational wayfinding, implying that design must address human behavior under stress, not just sign placement. More signs would not solve the behavioral problem the passage describes. Code violations are not mentioned as a conclusion. The passage says crowds moved toward the familiar entrance due to instinct, not because the main entrance was locked.",
+    "status": "verified",
+    "item_family_id": "pc.passage::nightclub-fire-exit-crowd-behavior"
+  },
+  {
+    "external_key": "PC-B68-029",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nNuclear fusion produces energy by combining light atomic nuclei, releasing far more energy per unit of fuel than fission and generating no long-lived radioactive waste. Seawater contains deuterium, a fusion fuel, in essentially limitless quantities. Despite decades of research and billions of dollars invested, no fusion reactor has yet produced more energy than it consumed. The joke among physicists is that commercial fusion is always thirty years away.\n\nWhat can most reasonably be inferred about commercial nuclear fusion from this passage?",
+    "choices": [
+      "Fusion research has been abandoned because the technology is fundamentally impossible.",
+      "The main obstacle to fusion is finding a sufficient supply of deuterium fuel.",
+      "Governments no longer fund fusion research because cheaper alternatives exist.",
+      "Fusion has the potential to provide abundant clean energy but faces persistent engineering challenges."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage presents fusion as scientifically promising with abundant fuel while noting that no reactor has yet reached net energy production, suggesting ongoing serious challenges. Research has not been abandoned; the physicist joke implies continued but frustrating effort. Deuterium supply is described as essentially limitless, not as an obstacle. Funding is not described as withdrawn.",
+    "status": "verified",
+    "item_family_id": "pc.passage::fusion-thirty-years-away"
+  },
+  {
+    "external_key": "PC-B68-030",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe zoning code required a minimum of 20 parking spaces per 1,000 square feet of retail space. A developer proposed a grocery store on a site that could accommodate only 12 spaces per 1,000 square feet. The planning board denied the application. The developer then redesigned the project to reduce retail space by 40 percent, and the revised application was approved.\n\nWhat can most reasonably be inferred about the approved project?",
+    "choices": [
+      "The approved store will have more retail floor space than the original proposal.",
+      "The developer obtained a special waiver from the parking requirement.",
+      "The planning board changed the zoning code after denying the first application.",
+      "The smaller store has fewer parking spaces than the original proposal but meets the required ratio."
+    ],
+    "correct_index": 3,
+    "explanation": "Reducing retail space by 40 percent would bring the number of required spaces down proportionally, allowing the same number of available spots to meet the minimum ratio. The approved store has less retail space, not more. A waiver is not mentioned; the developer redesigned rather than sought a variance. The passage does not say the zoning code was changed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::zoning-parking-ratio-redesign"
+  },
+  {
+    "external_key": "PC-B68-031",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nAnesthesia made pain-free surgery possible, but the discovery of effective agents came through risky self-experimentation. Dentist Horace Wells tested nitrous oxide on himself in 1844 before using it on patients. Crawford Long used ether for surgery as early as 1842 but did not publish his results. When William Morton publicly demonstrated ether anesthesia at Massachusetts General Hospital in 1846, he claimed priority. The question of who truly discovered surgical anesthesia became a bitter, career-ending dispute.\n\nWhat can most reasonably be inferred about the priority dispute described in the passage?",
+    "choices": [
+      "Because Long did not publish his results, Morton was able to claim credit for a discovery Long may have made first.",
+      "Morton's public demonstration gave him a legal patent that the courts ultimately upheld.",
+      "Wells successfully disputed Morton's claim because his use of nitrous oxide predated the ether demonstration.",
+      "The dispute was resolved quickly because hospital records confirmed who performed the first painless surgery."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage notes that Long used ether before Morton but did not publish, while Morton publicly demonstrated and claimed priority, implying publication was the mechanism through which Morton captured credit despite Long's earlier work. A legal patent outcome is not mentioned. Wells used a different agent, and the dispute is described as bitter and career-ending, not quickly resolved. Hospital records are not mentioned as settling the question.",
+    "status": "verified",
+    "item_family_id": "pc.passage::anesthesia-priority-dispute"
+  },
+  {
+    "external_key": "PC-B68-032",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nA city council debated whether to require new residential developments to include a minimum percentage of affordable units. Developers argued the requirement would reduce total housing production by making some projects financially unviable. Advocates countered that without the requirement, affordable units would never be built because the market would not support them. Neither side presented data from comparable cities that had adopted or rejected such policies.\n\nWhat can most reasonably be inferred about the quality of the debate described?",
+    "choices": [
+      "The debate was conducted without empirical evidence, relying instead on competing predictions.",
+      "Both sides made evidence-based arguments supported by housing market data.",
+      "The developers' argument was stronger because financial viability is a factual matter.",
+      "The advocates won the debate because their concern for affordability was morally superior."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage explicitly states that neither side presented data from comparable cities, meaning both arguments rested on assertion rather than evidence. Saying both sides made evidence-based arguments directly contradicts that statement. Neither the passage nor simple logic establishes that financial viability makes one argument stronger than the other. The passage makes no moral judgment about either side.",
+    "status": "verified",
+    "item_family_id": "pc.passage::affordable-housing-debate-no-evidence"
+  },
+  {
+    "external_key": "PC-B68-033",
+    "subtest": "PC",
+    "topic_id": "pc.inference",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nChoice architecture describes how the way options are presented shapes decisions without changing the options themselves. When an employee benefits enrollment form defaults to opting workers into a retirement savings plan, participation rates are dramatically higher than when workers must actively opt in. The content of the plan is identical; only the default changes.\n\nWhat can most reasonably be inferred from this passage?",
+    "choices": [
+      "The default setting on a form can have a larger effect on retirement savings participation than the plan's features.",
+      "Most people choose their benefits thoughtfully regardless of how the form is structured.",
+      "Workers who are opted in by default ultimately save more money than workers who opt in voluntarily.",
+      "Government regulations require employers to use opt-in defaults for retirement savings plans."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage shows that participation rates are dramatically higher with an opt-out default even though the plan content is identical, implying the default setting is the driving factor. Whether opt-in savers ultimately save more is not addressed. The passage implies most workers follow the default rather than making active choices. Government regulations are not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::choice-architecture-retirement-default"
+  },
+  {
+    "external_key": "PC-B68-034",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nEvery year, thousands of suspects are interrogated before anyone has confirmed they are in custody in the legal sense. Officers ask questions, receive answers, and use those answers in court, all without ever reading the Miranda warning. The gap between the legal rule and everyday practice is not a technicality; it is a structural failure that erodes the rights the Supreme Court intended to protect.\n\nThe author's attitude toward current Miranda practice is best described as:",
+    "choices": [
+      "Neutral and descriptive, simply documenting how police conduct interrogations",
+      "Uncertain, presenting both sides of the debate without taking a position",
+      "Approving, suggesting that informal questioning produces better outcomes than formal procedures",
+      "Critical, arguing that current practice systematically undermines the purpose of the Miranda ruling"
+    ],
+    "correct_index": 3,
+    "explanation": "Words like 'structural failure' and 'erodes the rights' signal strong disapproval of current interrogation practice. The passage is not neutral; it uses evaluative language. Nowhere does the author express approval of informal questioning. The passage presents a one-sided critique, not a balanced debate.",
+    "status": "verified",
+    "item_family_id": "pc.passage::miranda-practice-structural-failure"
+  },
+  {
+    "external_key": "PC-B68-035",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nWillem Einthoven won the Nobel Prize in 1924 for his work on the electrocardiograph. In his Nobel lecture he noted that the machine had already saved thousands of lives and that he expected future refinements would save thousands more. He spoke with the quiet confidence of someone who had watched an idea become indispensable.\n\nThe author's tone in describing Einthoven can best be described as:",
+    "choices": [
+      "Detached, reporting the facts without any evaluative judgment",
+      "Skeptical, questioning whether Einthoven's claims about lives saved could be verified",
+      "Sarcastic, implying that Einthoven overstated the importance of his invention",
+      "Admiring, presenting Einthoven as a scientist whose work had genuine and lasting impact"
+    ],
+    "correct_index": 3,
+    "explanation": "The phrase 'quiet confidence of someone who had watched an idea become indispensable' conveys respect and admiration for Einthoven's achievement. There is no skepticism about the life-saving claim. The word 'quiet confidence' is not sarcastic; it is appreciative. The passage is not detached; it characterizes Einthoven's manner with clear approval.",
+    "status": "verified",
+    "item_family_id": "pc.passage::einthoven-nobel-admiring"
+  },
+  {
+    "external_key": "PC-B68-036",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe report recommended increasing parking minimums near the new transit station, citing concern that shoppers would overflow into residential streets. This is precisely the kind of thinking that has kept American cities dependent on cars for a century. More parking enables more driving. Building parking next to a transit stop does not serve transit riders; it serves the assumption that they will drive anyway.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Argue that increasing parking near transit stations undermines the goals of public transportation",
+      "Summarize a city planning report and explain its findings to a general audience",
+      "Propose a specific alternative to the parking minimum the report recommended",
+      "Provide a neutral overview of the trade-offs between parking supply and transit ridership"
+    ],
+    "correct_index": 0,
+    "explanation": "The author uses pointed language ('precisely the kind of thinking') to argue against the report's recommendation, contending that more parking near transit contradicts transit's purpose. The passage is critical commentary, not a neutral summary. No alternative policy is proposed; the author only critiques the current recommendation. The tone is clearly argumentative, not neutral.",
+    "status": "verified",
+    "item_family_id": "pc.passage::parking-minimums-transit-critical"
+  },
+  {
+    "external_key": "PC-B68-037",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nFusion research has absorbed government funding for seven decades and produced no commercially viable power. Proponents call the next milestone always a few years away. The joke -- commercial fusion is thirty years off, and always will be -- stopped being funny some time around 1990. Meanwhile, solar panels have gone from curiosities to the cheapest electricity source in history without requiring the invention of an entirely new branch of physics.\n\nThe author's tone toward fusion research is best described as:",
+    "choices": [
+      "Enthusiastic, arguing that fusion deserves more funding than solar energy currently receives",
+      "Cautiously optimistic, acknowledging delays while predicting eventual success",
+      "Skeptical and mildly contemptuous, suggesting fusion has consumed resources without delivering results",
+      "Objective, presenting equal arguments for and against continued fusion investment"
+    ],
+    "correct_index": 2,
+    "explanation": "Phrases like 'stopped being funny' and the contrast with solar's concrete success convey skepticism and mild contempt for fusion's repeated delays. There is no enthusiasm for more fusion funding. The author implies skepticism, not optimism. The passage offers only criticism of fusion, not a balanced argument.",
+    "status": "verified",
+    "item_family_id": "pc.passage::fusion-skeptical-solar-comparison"
+  },
+  {
+    "external_key": "PC-B68-038",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe construction of Notre-Dame de Paris stretched over two centuries, absorbing the labor of generations who would never see it finished. Craftsmen carved details at heights where no one below could ever discern them. They did this anyway. Whatever we think we know about motivation and reward, the cathedral stands as evidence that human beings are capable of work that transcends the individual life and the individual eye.\n\nThe author's purpose is primarily to:",
+    "choices": [
+      "Express admiration for the dedication of medieval cathedral builders and reflect on what it reveals about human nature",
+      "Argue that modern workers lack the commitment shown by medieval craftsmen",
+      "Explain the engineering methods used to build Gothic cathedrals",
+      "Provide a historical account of how long Notre-Dame took to build"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage uses the cathedral's construction as a springboard for a reflection on human capacity for transcendent work, expressed in clearly admiring language. Engineering methods are not discussed. The passage does not compare medieval and modern workers. A strict historical account would not include the philosophical conclusion the author draws.",
+    "status": "verified",
+    "item_family_id": "pc.passage::notre-dame-builders-admiring"
+  },
+  {
+    "external_key": "PC-B68-039",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe DNA database expanded. The cold-case unit grew. Conviction rates from old cases climbed. News coverage celebrated each arrest as a triumph of science. What coverage rarely mentioned was the rate at which partial DNA matches implicated innocent relatives of the actual contributor, or the rate at which contaminated samples from earlier decades produced false leads that consumed investigative resources for years. The database is powerful. It is also imperfect. Both things should be in the headline.\n\nThe author's primary purpose is to:",
+    "choices": [
+      "Argue that DNA databases should be dismantled because they produce too many false results",
+      "Caution that media coverage of DNA databases overemphasizes successes and underreports limitations",
+      "Celebrate the expansion of cold-case DNA work while acknowledging minor administrative costs",
+      "Explain the technical process by which partial DNA matches are used to identify suspects"
+    ],
+    "correct_index": 1,
+    "explanation": "The author explicitly criticizes news coverage for highlighting convictions while ignoring false leads and innocent relatives implicated by partial matches, arguing for more balanced reporting. The author does not call for dismantling databases, only for honest reporting. The tone is cautionary, not celebratory. Technical process explanation is absent; the passage is evaluative commentary.",
+    "status": "verified",
+    "item_family_id": "pc.passage::dna-database-media-incomplete"
+  },
+  {
+    "external_key": "PC-B68-040",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe first documented ether anesthesia was administered before an audience of skeptical physicians. The patient, who had a neck tumor, fell asleep within minutes. When he woke, he reported feeling nothing. The surgeon turned to the crowd and said simply, 'Gentlemen, this is no humbug.' It was one of the few moments in medicine when a demonstration spoke for itself.\n\nThe author's tone toward this historical moment is best described as:",
+    "choices": [
+      "Clinical, presenting the event as a routine case study with no emotional significance",
+      "Ironic, implying that the surgeons in the audience were not truly convinced",
+      "Reverential, treating the demonstration as a pivotal moment worthy of quiet celebration",
+      "Skeptical, suggesting the surgeon's claim was exaggerated for dramatic effect"
+    ],
+    "correct_index": 2,
+    "explanation": "The phrase 'one of the few moments in medicine when a demonstration spoke for itself' conveys respect and a sense of historical weight, marking the event as exceptional and meaningful. No irony undercuts the account. The passage is reflective and appreciative, not clinical. The author presents the surgeon's statement as authentic, not exaggerated.",
+    "status": "verified",
+    "item_family_id": "pc.passage::ether-demonstration-reverential"
+  },
+  {
+    "external_key": "PC-B68-041",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nA runway incursion report lands in an inbox. It is stamped, sorted, and filed. A follow-up investigation is opened and then suspended pending resources. The resources never arrive. A year later a nearly identical incursion occurs at the same airport. The report is stamped, sorted, and filed.\n\nThe author's implied attitude toward the safety reporting process described is:",
+    "choices": [
+      "Supportive, suggesting the filing system successfully captures safety data for future analysis",
+      "Satirical and critical, implying the process creates the appearance of action without producing safety improvements",
+      "Neutral, objectively describing standard airport safety procedures without judgment",
+      "Optimistic, predicting that the second report will trigger more effective follow-up"
+    ],
+    "correct_index": 1,
+    "explanation": "The repetition of 'stamped, sorted, and filed' and the cycle repeating without correction conveys biting criticism of a bureaucratic process that generates paperwork while the underlying hazard remains. There is no support for the system; the repetition mocks it. The tone is clearly judgmental, not neutral. The identical repetition of the cycle signals pessimism, not optimism.",
+    "status": "verified",
+    "item_family_id": "pc.passage::runway-incursion-report-satirical"
+  },
+  {
+    "external_key": "PC-B68-042",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nNightingale's polar area charts were not beautiful objects. They were deliberately functional: sectors sized by area to show proportion, colors chosen for contrast, a layout designed to make one comparison impossible to avoid. She sent them to Members of Parliament who had no statistical training. They understood. That is not a minor achievement in the history of data communication. That is the whole achievement.\n\nThe author's attitude toward Nightingale's charts is best described as:",
+    "choices": [
+      "Dismissive, noting that the charts lacked artistic quality and therefore had limited influence",
+      "Neutral, describing the visual design of the charts without evaluating their significance",
+      "Admiring, arguing that the charts' functional clarity was itself a major intellectual accomplishment",
+      "Ambivalent, acknowledging the charts' usefulness while questioning whether they changed policy"
+    ],
+    "correct_index": 2,
+    "explanation": "The author explicitly calls making complex data comprehensible to untrained legislators 'the whole achievement,' expressing clear admiration for the charts' communicative effectiveness. The author says the lack of beauty was deliberate and effective, not a limitation. The passage is evaluative and celebratory, not neutral. There is no ambivalence; the author credits the charts with genuine impact.",
+    "status": "verified",
+    "item_family_id": "pc.passage::nightingale-charts-admiring-communication"
+  },
+  {
+    "external_key": "PC-B68-043",
+    "subtest": "PC",
+    "topic_id": "pc.author-tone-purpose",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe new hospital was built with one trauma bay, which serves a catchment area of 400,000 people. The administrator noted that the trauma bay meets state minimum standards. State minimum standards, it should be noted, were last updated in 1987. The bay was at capacity on the day it opened.\n\nThe author's implied purpose is to:",
+    "choices": [
+      "Praise the hospital for meeting applicable state regulations efficiently",
+      "Provide neutral context for a hospital expansion announcement",
+      "Suggest that state minimum standards are outdated and inadequate for the population being served",
+      "Argue that trauma care should be funded by federal rather than state authorities"
+    ],
+    "correct_index": 2,
+    "explanation": "The detail that standards were last updated in 1987 and that the single bay was at capacity on opening day together imply the standards are outdated and insufficient. The passage does not praise the hospital; the details are presented to raise concern. There is no expansion announcement being contextualized. Federal funding is not discussed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::trauma-bay-outdated-standards"
+  },
+  {
+    "external_key": "PC-B68-044",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nBefore using carbolic acid in surgery, Lister first sterilized his instruments in a carbolic solution. He then soaked the dressings that would touch the wound. During the operation he sprayed a carbolic mist over the surgical field. After the procedure he applied a carbolic-soaked dressing to the closed wound and left it in place for several days.\n\nAccording to the passage, what did Lister do immediately before spraying carbolic mist during the operation?",
+    "choices": [
+      "He applied carbolic-soaked dressings to the closed wound.",
+      "He soaked the wound dressings in carbolic solution.",
+      "He removed the instruments from the sterilizing solution.",
+      "He recorded the patient's vital signs for the hospital record."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage lists actions in sequence: sterilize instruments, then soak dressings, then spray during operation. The step immediately before spraying was soaking the dressings. Applying dressings occurred after the operation. Removing instruments from solution was the first step, two steps before the spray. Vital signs are not mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::lister-carbolic-sequence"
+  },
+  {
+    "external_key": "PC-B68-045",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nPumped-storage hydropower functions as a giant rechargeable battery for the grid. When surplus power is available, usually at night or on windy days, utilities pump water uphill into a reservoir. When demand peaks, water rushes back down through turbines. The stored water is not consumed; it cycles between reservoirs as needed.\n\nHow is the information in this passage organized?",
+    "choices": [
+      "The passage presents a problem and then proposes a solution.",
+      "The passage compares pumped-storage hydropower to two competing energy technologies.",
+      "The passage presents a historical account of pumped-storage development over time.",
+      "The passage explains how a process works by describing its steps in order."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage walks through the operation of pumped-storage hydro step by step: surplus power available, water pumped up, demand peaks, water released through turbines. This is a process explanation in sequential order. No competing technology is compared. No problem-solution structure is present. No historical timeline is given.",
+    "status": "verified",
+    "item_family_id": "pc.passage::pumped-storage-process-order"
+  },
+  {
+    "external_key": "PC-B68-046",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nConventional nuclear fission splits heavy uranium atoms, releasing energy and radioactive byproducts that remain hazardous for thousands of years. Nuclear fusion, by contrast, combines light hydrogen isotopes, releases far more energy per unit of fuel, and produces no long-lived radioactive waste. Both reactions power the sun, but fusion has not yet been harnessed commercially on Earth, while fission has generated electricity since the 1950s.\n\nHow is this passage primarily organized?",
+    "choices": [
+      "Cause and effect: the passage explains what caused scientists to pursue fusion instead of fission.",
+      "Chronological order: the passage traces the history of nuclear energy from earliest to most recent.",
+      "Problem and solution: the passage identifies a problem with fission and presents fusion as the answer.",
+      "Compare and contrast: the passage describes similarities and differences between fission and fusion."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage directly compares fission and fusion across fuel, energy output, waste, and commercial status, using phrases like 'by contrast' and 'Both reactions.' Cause and effect is not the organizing principle. The passage does not frame fission as a problem requiring a solution. Chronological history is not the structure, though a date is mentioned.",
+    "status": "verified",
+    "item_family_id": "pc.passage::fission-fusion-compare-contrast"
+  },
+  {
+    "external_key": "PC-B68-047",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nRontgen discovered X-rays in November 1895. Within weeks he produced the first skeletal radiograph. By 1896 physicians were using X-rays in hospitals. Radiography improved further when intensifying screens were introduced in the early twentieth century, reducing exposure time. Computed tomography, which uses rotating X-ray beams, entered clinical practice in 1971.\n\nWhat is the organizational structure of this passage?",
+    "choices": [
+      "The passage describes a problem with early X-ray machines and the solution that solved it.",
+      "The passage lists advantages of X-ray technology compared to other imaging methods.",
+      "The passage explains the physics of how X-rays pass through tissue.",
+      "The passage traces the development of X-ray technology in chronological order."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage moves through time from 1895 to the early twentieth century to 1971, tracing how X-ray technology developed step by step. It does not compare X-rays to other imaging methods. Physics of X-ray transmission is not explained. Reducing exposure time is mentioned as an improvement, but the overall structure is not problem-solution.",
+    "status": "verified",
+    "item_family_id": "pc.passage::xray-technology-chronological"
+  },
+  {
+    "external_key": "PC-B68-048",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe qanat supplied water reliably for millennia. When diesel pumps became available in the twentieth century, farmers drilled deep wells and stopped maintaining qanats. Groundwater tables fell as wells extracted more than rain could replenish. With the aquifer depleted, the wells stopped producing, the qanats no longer had a water source to tap, and villages that had relied on both faced water shortages they had never experienced.\n\nWhich organizational pattern best describes this passage?",
+    "choices": [
+      "Compare and contrast between traditional and modern irrigation systems",
+      "A sequence of cause-and-effect relationships leading to a water crisis",
+      "A problem followed by a solution that partially resolved the shortage",
+      "A chronological history of qanat construction techniques"
+    ],
+    "correct_index": 1,
+    "explanation": "Each event in the passage causes the next: pump availability leads to well drilling, well drilling lowers the water table, depleted aquifer kills both wells and qanats, and the result is water shortage. This is a causal chain. The passage does not compare systems side by side as equals. No solution is offered. Construction techniques are not described.",
+    "status": "verified",
+    "item_family_id": "pc.passage::qanat-wells-causal-chain"
+  },
+  {
+    "external_key": "PC-B68-049",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nBRT systems in Bogota added dedicated lanes along existing arterials. Light rail in Denver required acquiring right-of-way, relocating utilities, and years of construction. BRT in Bogota was operational in three years at a fraction of the cost. Critics of BRT point out that dedicated lanes in Bogota were politically feasible because the mayor held unusual powers, and that similar authority does not exist in most U.S. cities. Light rail advocates note that fixed rail infrastructure typically spurs more transit-oriented development than painted bus lanes.\n\nWhich best describes the structure of this passage?",
+    "choices": [
+      "The passage gives a step-by-step explanation of how to build a BRT system.",
+      "The passage argues that BRT is superior to light rail in every urban context.",
+      "The passage traces the history of public transit from horse-drawn streetcars to modern BRT.",
+      "The passage presents a comparison of two transit approaches and then introduces arguments that complicate each side."
+    ],
+    "correct_index": 3,
+    "explanation": "The passage begins by comparing BRT and light rail on cost and timeline, then complicates the BRT case by noting the political preconditions, and gives light rail advocates a counterpoint, creating a balanced, nuanced structure. It is not a step-by-step guide. The passage does not conclude BRT is universally superior. No historical timeline is presented.",
+    "status": "verified",
+    "item_family_id": "pc.passage::brt-lightrail-comparison-nuanced"
+  },
+  {
+    "external_key": "PC-B68-050",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe Nightingale school opened at St. Thomas' Hospital in 1860 with ten student nurses. By 1880, graduates had established nurse training programs in the United States, Canada, and Australia. By 1900, trained nursing had become a recognized profession with defined competencies and licensing examinations. Nightingale herself was no longer active in administration by that point, but the institution she had created continued to shape nursing education worldwide.\n\nThe primary organizational strategy of this passage is:",
+    "choices": [
+      "Chronological order: the passage traces how the school's influence spread over time.",
+      "Compare and contrast: trained nurses are compared to untrained nurses of the same era.",
+      "Cause and effect: Nightingale's retirement caused the school to lose its global influence.",
+      "Problem and solution: a nursing shortage prompted Nightingale to found a school."
+    ],
+    "correct_index": 0,
+    "explanation": "The passage moves from 1860 to 1880 to 1900 and beyond, showing how the school's influence grew decade by decade, which is chronological organization. No explicit problem is presented before describing the school's founding. No comparison between trained and untrained nurses appears. The passage says Nightingale's institution continued to shape nursing after her departure, not that it lost influence.",
+    "status": "verified",
+    "item_family_id": "pc.passage::nightingale-school-chronological-influence"
+  },
+  {
+    "external_key": "PC-B68-051",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nTo request a DNA database search in a cold case, an investigator first submits a formal request to the lab supervisor. The supervisor then verifies the case number and confirms a biological sample is available. If confirmed, the lab enters the sample profile into the database query system. The system returns a list of potential matches ranked by probability. The investigator then contacts each potential match's jurisdiction for follow-up.\n\nAccording to the passage, what happens immediately after the lab enters the profile into the query system?",
+    "choices": [
+      "The supervisor verifies the case number.",
+      "The system returns a ranked list of potential matches.",
+      "The investigator contacts jurisdictions for follow-up.",
+      "The formal request form is filed with the court."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage lists steps in sequence: submit request, verify, enter profile, then the system returns matches, and finally the investigator contacts jurisdictions. Immediately after profile entry, the system returns matches. Supervisor verification precedes profile entry. Court filing is not mentioned. Contacting jurisdictions is the last step.",
+    "status": "verified",
+    "item_family_id": "pc.passage::cold-case-dna-search-sequence"
+  },
+  {
+    "external_key": "PC-B68-052",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nFlying buttresses allowed thinner walls, which allowed larger windows. Larger windows admitted more light into cathedral interiors, transforming them from dark, fortress-like spaces into luminous halls. The light itself became a theological statement: medieval builders and theologians believed that light was a manifestation of the divine. What began as an engineering solution to the problem of outward thrust became an architectural expression of spiritual aspiration.\n\nThe passage is primarily organized around:",
+    "choices": [
+      "A sequence of historical events from the invention of the buttress to its abandonment",
+      "A contrast between Roman and Gothic building techniques",
+      "A chain of consequences showing how an engineering solution produced spiritual and aesthetic effects",
+      "A problem followed by multiple proposed solutions that were each tried and discarded"
+    ],
+    "correct_index": 2,
+    "explanation": "Each element of the passage follows causally from the previous one: buttresses allow thin walls, thin walls allow large windows, large windows allow light, light carries theological meaning. This is a chain of consequences. No historical sequence spanning multiple eras is presented. Roman architecture is not mentioned. No multiple solutions are proposed and discarded.",
+    "status": "verified",
+    "item_family_id": "pc.passage::flying-buttress-light-theology-chain"
+  },
+  {
+    "external_key": "PC-B68-053",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nForensic analysts must handle evidence with scrupulous care. A single contaminated sample can compromise an entire case, so technicians follow strict protocols at every step.\n\nAs used in the passage, the word \"scrupulous\" most nearly means:",
+    "choices": [
+      "Creative",
+      "Rapid",
+      "Secretive",
+      "Extremely careful and thorough"
+    ],
+    "correct_index": 3,
+    "explanation": "The passage explains that careless handling compromises cases and that technicians follow strict protocols, establishing a context where careful and thorough attention is essential. Rapid handling would increase contamination risk. Secretive does not match the procedural context. Creative does not fit a protocol-following environment.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-scrupulous-forensic"
+  },
+  {
+    "external_key": "PC-B68-054",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nThe cathedral's construction progressed incrementally, with each generation of builders adding to what the previous one had left. No single architect conceived the whole; the final form emerged over two centuries of accumulated decisions.\n\nAs used in the passage, the word \"incrementally\" most nearly means:",
+    "choices": [
+      "In small stages, with each step adding to the last",
+      "Rapidly and without interruption",
+      "Through a single comprehensive plan",
+      "In reverse order, from the top down"
+    ],
+    "correct_index": 0,
+    "explanation": "The context describes generations of builders each adding to the previous work over two centuries, which matches a step-by-step, gradual process. The passage specifically notes no single architect conceived the whole, which rules out a single comprehensive plan. Top-down construction is not described. The two-century timeline contradicts rapid, uninterrupted progress.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-incrementally-cathedral"
+  },
+  {
+    "external_key": "PC-B68-055",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nKahneman and Tversky found that human decision-making frequently departs from the rational model economists had long assumed. Rather than weighing all options objectively, people rely on cognitive shortcuts that introduce systematic bias. These shortcuts are not random errors; they are predictable distortions that apply across cultures and income levels.\n\nAs used in the passage, the word \"systematic\" most nearly means:",
+    "choices": [
+      "Occasional and unpredictable",
+      "Following a consistent and repeatable pattern",
+      "Organized into a formal written system",
+      "Corrected over time through experience"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage contrasts systematic bias with random errors and emphasizes that the distortions are predictable across groups, indicating the biases follow a consistent, repeatable pattern. Occasional and unpredictable is the opposite of what the passage describes. The passage does not reference a formal written system. The passage does not suggest the biases are corrected through experience.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-systematic-bias"
+  },
+  {
+    "external_key": "PC-B68-056",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe HVDC cable system proved resilient during the storm, continuing to transmit power while overhead lines across the region failed. Engineers had anticipated that underground and undersea cables would be less vulnerable to weather than aerial lines.\n\nAs used in the passage, the word \"resilient\" most nearly means:",
+    "choices": [
+      "Expensive to install and maintain",
+      "Able to withstand or recover quickly from difficult conditions",
+      "Dependent on favorable weather for normal operation",
+      "Impossible to repair once damaged"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage shows the cable continuing to operate during a storm that knocked out overhead lines, demonstrating ability to withstand difficult conditions. Cost is not addressed in this context. The cable's independence from weather conditions is the point, making dependence on favorable weather the opposite of what is described. The passage does not suggest the cable is irreparable.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-resilient-hvdc-cable"
+  },
+  {
+    "external_key": "PC-B68-057",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe Miranda ruling was controversial in law enforcement circles not because officers disagreed with its principles but because implementing it in the field required abrupt changes to interrogation habits that had been ingrained over decades.\n\nAs used in the passage, the word \"ingrained\" most nearly means:",
+    "choices": [
+      "Deeply established through long habit",
+      "Legally required by department policy",
+      "Ineffective in producing reliable confessions",
+      "Recently adopted and still unfamiliar"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage describes habits built up over decades that were difficult to change quickly, which fits the meaning of deeply established through long practice. Recently adopted is the opposite of habits formed over decades. Legal requirements are not mentioned in this sentence. Effectiveness of interrogation techniques is not the subject.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-ingrained-interrogation"
+  },
+  {
+    "external_key": "PC-B68-058",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nNightingale's charts were a form of advocacy disguised as data. She knew that bare mortality tables would not move Parliament, but a visual display that made the disproportion between wound deaths and preventable infection deaths immediately legible might. The charts were precise, but they were not neutral.\n\nAs used in the passage, the word \"legible\" most nearly means:",
+    "choices": [
+      "Easy to read in small print",
+      "Statistically valid and peer-reviewed",
+      "Immediately clear and understandable",
+      "Legally admissible as evidence"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage uses legible to describe the effect of the visual display on non-expert viewers in Parliament, meaning the information was immediately clear and understandable to people without statistical training. Small print readability is a typographic meaning unrelated to the context. Statistical validation and legal admissibility are not discussed.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-legible-nightingale-charts"
+  },
+  {
+    "external_key": "PC-B68-059",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe sunk cost fallacy is especially pernicious in large organizations because the people who made the original investment are often the same people evaluating whether to continue it. Their judgment is compromised by the need to avoid admitting a mistake.\n\nAs used in the passage, the word \"pernicious\" most nearly means:",
+    "choices": [
+      "Harmful in a subtle or gradual way",
+      "Common in small businesses but rare in large ones",
+      "Easily identified and corrected",
+      "Beneficial when applied to long-term strategic planning"
+    ],
+    "correct_index": 0,
+    "explanation": "The passage describes a bias that corrupts judgment through the desire to avoid admitting failure, which is a subtle, insidious form of harm. The passage says the fallacy is especially problematic in large organizations, not easily corrected there. The passage says it is especially present in large organizations, not rare there. The fallacy is presented as a problem, not a benefit.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-pernicious-sunk-cost"
+  },
+  {
+    "external_key": "PC-B68-060",
+    "subtest": "PC",
+    "topic_id": "pc.text-structure",
+    "difficulty": 1,
+    "stem": "Read the following passage and answer the question.\n\nFirst, investigators photograph a crime scene before touching anything. Next, they collect physical evidence in numbered bags. Then they transport evidence to the lab under chain-of-custody documentation. Finally, analysts process and log each item before running tests.\n\nAccording to the passage, what do investigators do immediately after collecting physical evidence?",
+    "choices": [
+      "They photograph the scene.",
+      "They run laboratory tests on the samples.",
+      "They transport evidence to the lab under chain-of-custody documentation.",
+      "They log each item before processing begins."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage lists steps in order: photograph, collect, transport, then analysts log and test. The step immediately after collecting evidence is transporting it to the lab under chain-of-custody documentation. Photographing happens first, before collection. Running tests and logging items are the final steps performed by analysts after transport.",
+    "status": "verified",
+    "item_family_id": "pc.passage::crime-scene-evidence-collection-steps"
+  },
+  {
+    "external_key": "PC-B68-061",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nCRM training asks crew members to be assertive when they observe a potential error, even when speaking to a more senior colleague. In aviation culture, deference to rank had historically silenced first officers who saw the captain making a dangerous mistake.\n\nAs used in the passage, the word \"deference\" most nearly means:",
+    "choices": [
+      "Open disagreement expressed through formal channels",
+      "Scheduled communication between crew members before flight",
+      "Submission to another's authority or judgment",
+      "Formal training on decision-making hierarchies"
+    ],
+    "correct_index": 2,
+    "explanation": "The passage describes a culture in which junior crew members stayed silent rather than challenge a senior colleague's error, which is behavior rooted in submission to authority. Open disagreement is the opposite of the behavior described. Pre-flight communication and formal training programs are not what the passage is describing in that sentence.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-deference-crm-rank"
+  },
+  {
+    "external_key": "PC-B68-062",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe prosecutors introduced the fingerprint evidence as corroborating testimony already established through witness statements and phone records. Defense counsel did not object to its admissibility; the dispute centered on its weight.\n\nAs used in the passage, the word \"corroborating\" most nearly means:",
+    "choices": [
+      "Contradicting the original testimony",
+      "Supporting and confirming what other evidence already shows",
+      "Replacing weaker evidence with stronger evidence",
+      "Introducing new facts not previously part of the record"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage describes fingerprint evidence as supplementing witness statements and phone records, confirming what those earlier pieces had already established. Corroborating means supporting, not contradicting. The passage describes the evidence as additional confirmation, not as a replacement. Introducing new facts would be direct evidence, not corroboration.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-corroborating-fingerprint"
+  },
+  {
+    "external_key": "PC-B68-063",
+    "subtest": "PC",
+    "topic_id": "pc.vocabulary-in-context",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nThe choice architecture literature suggests that behavioral interventions can be efficacious without coercion because they work with natural human tendencies rather than against them. When defaults are set in ways that align with people's long-term interests, better outcomes emerge without mandates.\n\nAs used in the passage, the word \"efficacious\" most nearly means:",
+    "choices": [
+      "Morally questionable",
+      "Effective in producing the intended result",
+      "Approved by a government regulatory body",
+      "Affordable to implement at large scale"
+    ],
+    "correct_index": 1,
+    "explanation": "The passage argues that behavioral interventions can produce better outcomes by working with human tendencies, using efficacious to describe interventions that achieve their intended effect. Moral questioning is the opposite of the endorsement implied by the passage. Cost and regulatory approval are not discussed in this sentence.",
+    "status": "verified",
+    "item_family_id": "pc.passage::vocab-efficacious-nudge"
+  },
+  {
+    "external_key": "PC-B68-064",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 2,
+    "stem": "Read the following passage and answer the question.\n\nThe DNA database maintained by the FBI, known as CODIS, contains profiles from convicted offenders, arrestees, and forensic samples collected at crime scenes. When a new crime scene sample is entered, CODIS searches for matches automatically. Cold cases that went unsolved for decades have been reopened after a matching profile was identified years or even decades later. The database has led to both convictions and exonerations, demonstrating that its value lies in finding the truth rather than simply building prosecution cases.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "CODIS was created primarily to build prosecution cases against repeat offenders.",
+      "DNA databases are primarily useful for crimes committed after the database was established.",
+      "CODIS is a DNA database that has helped solve old crimes and establish truth in criminal cases.",
+      "The FBI requires DNA samples from all citizens to make the database as complete as possible."
+    ],
+    "correct_index": 2,
+    "explanation": "The passage describes what CODIS is, how it works, and its record of solving cold cases and producing both convictions and exonerations, making truth-finding the central theme. Saying CODIS was created primarily to build prosecution cases is contradicted by the mention of exonerations, showing it serves broader purposes. Saying databases are primarily useful for crimes committed after the database was created is contradicted by the mention of decades-old cold cases. Saying the FBI requires samples from all citizens is not supported; the passage specifies offenders and arrestees, not the general public.",
+    "status": "verified",
+    "item_family_id": "pc.passage::codis-dna-database-truth"
+  },
+  {
+    "external_key": "PC-B68-065",
+    "subtest": "PC",
+    "topic_id": "pc.main-idea",
+    "difficulty": 3,
+    "stem": "Read the following passage and answer the question.\n\nLoss aversion describes the psychological tendency to feel the pain of a loss more intensely than the pleasure of an equivalent gain. Research by Daniel Kahneman and Amos Tversky found that people weigh losses roughly twice as heavily as gains of the same size. This asymmetry shapes financial decisions, negotiations, and even everyday choices like whether to return a purchase. Understanding loss aversion allows policymakers and businesses to design environments, called choice architectures, that steer people toward better decisions without removing their freedom to choose.\n\nWhat is the main idea of this passage?",
+    "choices": [
+      "Loss aversion causes people to avoid all financial risk regardless of potential reward.",
+      "Loss aversion is a documented bias that influences behavior and can be applied in policy design.",
+      "Kahneman and Tversky proved that humans are irrational in every economic decision they make.",
+      "Choice architecture eliminates the effects of loss aversion by removing low-quality options."
+    ],
+    "correct_index": 1,
+    "explanation": "The passage defines loss aversion, cites research supporting it, shows its influence on behavior, and explains its practical use in designing choice environments. Saying loss aversion causes people to avoid all financial risk overstates the claim; the passage does not say people avoid all risk. Saying Kahneman and Tversky proved humans are irrational in every economic decision exaggerates and misrepresents their findings as described. Saying choice architecture eliminates loss aversion by removing options misreads the passage, which says it steers people without removing options.",
+    "status": "verified",
+    "item_family_id": "pc.passage::loss-aversion-behavioral-economics"
+  }
+]

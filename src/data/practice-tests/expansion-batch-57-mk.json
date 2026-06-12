@@ -1,0 +1,648 @@
+[
+  {
+    "external_key": "MK-B57-001",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "How many elements are in the union of set A = {1, 3, 5, 7, 9} and set B = {3, 6, 9, 12}?",
+    "choices": [
+      "7",
+      "9",
+      "8",
+      "6"
+    ],
+    "correct_index": 0,
+    "explanation": "The union A U B contains all distinct elements: {1, 3, 5, 6, 7, 9, 12}. That is 7 elements; 3 and 9 appear in both sets but are counted only once. Choosing 9 counts every element in both sets including duplicates (5+4=9); choosing 8 counts one shared element as unique; choosing 6 omits one of the distinct values.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::set-union-cardinality-A5-B4-overlap2"
+  },
+  {
+    "external_key": "MK-B57-002",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "Set P = {2, 4, 6, 8, 10} and set Q = {1, 2, 3, 4, 5}. How many elements are in the intersection of P and Q?",
+    "choices": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ],
+    "correct_index": 2,
+    "explanation": "The intersection P AND Q contains only elements in BOTH sets: 2 and 4. That gives 2 elements. Choosing 3 incorrectly includes 6, which is in P but not Q; choosing 4 confuses the value 4 (an element of the intersection) with the count of shared elements; choosing 1 finds only one shared element instead of two.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::set-intersection-P-evens-Q-1to5"
+  },
+  {
+    "external_key": "MK-B57-003",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "How many different 3-person committees can be chosen from a group of 7 people (order does not matter)?",
+    "choices": [
+      "21",
+      "35",
+      "210",
+      "42"
+    ],
+    "correct_index": 1,
+    "explanation": "Use combinations: C(7,3) = 7! / (3! * 4!) = (7 * 6 * 5) / (3 * 2 * 1) = 210 / 6 = 35. Choosing 21 is C(7,2), selecting only 2 people; choosing 210 is the numerator 7 * 6 * 5 before dividing by 3!; choosing 42 would equal 7 * 6, dividing by only 1 instead of 6.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::combination-C73-choose-3-from-7"
+  },
+  {
+    "external_key": "MK-B57-004",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "In how many ways can 4 different medals be awarded to 4 different runners, one medal each (every arrangement is distinct)?",
+    "choices": [
+      "16",
+      "24",
+      "12",
+      "256"
+    ],
+    "correct_index": 1,
+    "explanation": "This is a permutation of 4 items taken 4 at a time: P(4,4) = 4! = 4 * 3 * 2 * 1 = 24. Choosing 16 is 4^2, incorrectly squaring instead of using factorial; choosing 12 is 4!/2, halving without justification; choosing 256 is 4^4, treating each of the 4 positions as an independent choice among all 4 runners (allowing repeats).",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::permutation-4-medals-4-runners-4factorial"
+  },
+  {
+    "external_key": "MK-B57-006",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "A 2x2 matrix has entries: top row [4, 6], bottom row [1, 5]. What is its determinant?",
+    "choices": [
+      "26",
+      "14",
+      "34",
+      "20"
+    ],
+    "correct_index": 1,
+    "explanation": "det = ad - bc = (4)(5) - (6)(1) = 20 - 6 = 14. Choosing 26 adds instead of subtracts: 20 + 6 = 26; choosing 34 computes the sum of all four entries: 4+6+1+5 = 16, or sums products row-wise 4*6 + 1*5 = 29, neither equals 34 -- more precisely: 4*5+6*1=20+6=26 with wrong sign is 26, so 34 could come from (4+6)*(5-1)=10*4=40 or another grouping error; choosing 20 ignores the -bc term and returns only ad.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::matrix-2x2-det-4-6-1-5"
+  },
+  {
+    "external_key": "MK-B57-007",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "How many 3-digit arrangements can be formed from the digits 1, 4, 7, 9 if no digit is repeated and order matters?",
+    "choices": [
+      "12",
+      "24",
+      "64",
+      "6"
+    ],
+    "correct_index": 1,
+    "explanation": "This is P(4,3) = 4!/(4-3)! = 4 * 3 * 2 = 24 arrangements. Choosing 12 considers only 2 positions instead of 3: 4 * 3 = 12; choosing 64 allows repetition, treating each of 3 positions as a choice from 4 digits: 4^3 = 64; choosing 6 is 3!, the count for arranging exactly 3 specific items in 3 spots without selecting from a larger pool.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::permutation-P43-3digit-from-4-no-repeat"
+  },
+  {
+    "external_key": "MK-B57-008",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "Emma is 4 years older than twice her brother's age. In 1 year, Emma will be exactly 3 times her brother's current age. How old is Emma now?",
+    "choices": [
+      "16",
+      "14",
+      "12",
+      "18"
+    ],
+    "correct_index": 1,
+    "explanation": "Let b = brother's current age. Emma = 2b + 4. In 1 year Emma's age: 2b + 4 + 1 = 3b. Solve: 2b + 5 = 3b, so b = 5. Emma = 2(5) + 4 = 14. Choosing 16 assumes b = 6: 2(6)+4=16 and 16+1=17 vs 3*6=18, not equal; choosing 12 uses b = 4: 2(4)+4=12 and 12+1=13 vs 3*4=12, not equal; choosing 18 assumes b = 7: 2(7)+4=18 and 18+1=19 vs 3*7=21, not equal.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::age-word-emma-twice-brother-plus4-future1yr"
+  },
+  {
+    "external_key": "MK-B57-013",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 2,
+    "stem": "A solution is 25% acid. How many liters of pure acid must be added to 40 liters of this solution to produce a 40% acid mixture?",
+    "choices": [
+      "8",
+      "10",
+      "6",
+      "12"
+    ],
+    "correct_index": 1,
+    "explanation": "Initial acid = 0.25 * 40 = 10 L. Let x = liters of pure acid added. Equation: (10 + x)/(40 + x) = 0.40. Solve: 10 + x = 0.40(40 + x) = 16 + 0.40x, so 0.60x = 6, x = 10. Check: (10+10)/(40+10) = 20/50 = 40%. Choosing 8 gives (10+8)/(40+8)=18/48=37.5%, not 40%; choosing 6 gives 16/46=34.8%; choosing 12 gives 22/52=42.3%.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::mixture-acid-25pct-40L-target-40pct"
+  },
+  {
+    "external_key": "MK-B57-014",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 3,
+    "stem": "Workers A, B, and C can finish a job alone in 6, 8, and 12 hours respectively. How many hours will it take all three working together?",
+    "choices": [
+      "3",
+      "4",
+      "3 1/3",
+      "2 2/3"
+    ],
+    "correct_index": 3,
+    "explanation": "Combined rate = 1/6 + 1/8 + 1/12. LCD = 24: rates are 4/24 + 3/24 + 2/24 = 9/24 = 3/8 of the job per hour. Time = 1/(3/8) = 8/3 = 2 2/3 hours. Choosing 3 hours requires rate 1/3; the actual rate 3/8 > 1/3, so the job finishes faster than 3 hours; choosing 3 1/3 corresponds to rate 3/10, which under-counts the combined rate; choosing 4 corresponds to rate 1/4, far slower than the actual 3/8.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::work-rate-three-workers-6hr-8hr-12hr"
+  },
+  {
+    "external_key": "MK-B57-015",
+    "subtest": "MK",
+    "topic_id": "mk.fractions-decimals",
+    "difficulty": 1,
+    "stem": "A jar contains 5 quarters, 8 dimes, and 8 nickels. What is the total value in dollars?",
+    "choices": [
+      "$2.35",
+      "$2.55",
+      "$2.60",
+      "$2.45"
+    ],
+    "correct_index": 3,
+    "explanation": "Value = 5(0.25) + 8(0.10) + 8(0.05) = 1.25 + 0.80 + 0.40 = $2.45. Choosing $2.35 uses 7 dimes (0.70) instead of 8 dimes (0.80): 1.25+0.70+0.40=2.35; choosing $2.55 uses 10 nickels (0.50): 1.25+0.80+0.50=2.55; choosing $2.60 replaces one dime with a quarter, counting 6 quarters: 1.50+0.70+0.40=2.60.",
+    "status": "verified",
+    "item_family_id": "mk.fractions-decimals::coin-total-5Q-8D-8N-value"
+  },
+  {
+    "external_key": "MK-B57-017",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Divide: (2x^2 + 3x - 9) / (x + 3)",
+    "choices": [
+      "2x + 3",
+      "2x - 9",
+      "x - 3",
+      "2x - 3"
+    ],
+    "correct_index": 3,
+    "explanation": "Long division: divide 2x^2 by x to get 2x. Multiply 2x(x+3)=2x^2+6x. Subtract: (2x^2+3x-9)-(2x^2+6x) = -3x-9. Divide -3x by x to get -3. Multiply -3(x+3)=-3x-9. Subtract: 0. Quotient is 2x-3. Choosing 2x+3 uses +3 as the second term, reversing the sign in the second division step; choosing 2x-9 copies the constant from the original polynomial instead of computing -3; choosing x-3 drops the leading coefficient of 2.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::poly-long-div-2x2-3x-9-by-xp3"
+  },
+  {
+    "external_key": "MK-B57-018",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Use synthetic division: divide x^3 - 6x^2 + 11x - 6 by (x - 1). What is the quotient?",
+    "choices": [
+      "x^2 - 5x + 6",
+      "x^2 + 5x - 6",
+      "x^2 - 6x + 5",
+      "x^2 - 5x - 6"
+    ],
+    "correct_index": 0,
+    "explanation": "Synthetic division with root 1 and coefficients [1, -6, 11, -6]: bring down 1; 1*1=1, -6+1=-5; 1*(-5)=-5, 11+(-5)=6; 1*6=6, -6+6=0 (remainder 0). Quotient coefficients: 1, -5, 6, giving x^2-5x+6. Choosing x^2+5x-6 uses +5 and -6, wrong signs on both middle and constant terms; choosing x^2-6x+5 uses the original leading subterm -6 unchanged; choosing x^2-5x-6 computes the last coefficient as -6 instead of the correct +6.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::poly-synthetic-div-x3-6x2-11x-6-by-xm1"
+  },
+  {
+    "external_key": "MK-B57-019",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Given f(x) = 2x + 5 and g(x) = x - 3, find f(g(2)).",
+    "choices": [
+      "7",
+      "1",
+      "-1",
+      "3"
+    ],
+    "correct_index": 3,
+    "explanation": "First compute the inner function: g(2) = 2-3 = -1. Then apply f: f(-1) = 2(-1)+5 = -2+5 = 3. Choosing 7 applies f first: f(2)=2(2)+5=9, then g(9)=9-3=6, evaluating g(f(2)) rather than f(g(2)); choosing 1 miscomputes f(-1)=2(-1)+3=1, using +3 instead of +5; choosing -1 stops at g(2)=-1 without applying f.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::composite-f-of-g-2-linear-2xp5-xm3"
+  },
+  {
+    "external_key": "MK-B57-020",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "If f(x) = x^2 + 1 and g(x) = 3x - 2, find g(f(x)) in simplified form.",
+    "choices": [
+      "9x^2 - 12x + 5",
+      "3x^2 + 3",
+      "3x^2 + 1",
+      "3x^2 - 1"
+    ],
+    "correct_index": 2,
+    "explanation": "g(f(x)) substitutes f(x) into g: g(x^2+1) = 3(x^2+1) - 2 = 3x^2+3-2 = 3x^2+1. Choosing 9x^2-12x+5 evaluates f(g(x)) = (3x-2)^2+1 = 9x^2-12x+5, reversing the composition order; choosing 3x^2+3 forgets to subtract the 2 from g(x), stopping at 3(x^2+1)=3x^2+3; choosing 3x^2-1 computes 3(x^2+1)-4=3x^2-1, subtracting 4 instead of 2.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::composite-g-of-f-x2p1-and-3xm2"
+  },
+  {
+    "external_key": "MK-B57-021",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Find the inverse function of f(x) = 5x - 10.",
+    "choices": [
+      "f^-1(x) = (x + 10)/5",
+      "f^-1(x) = (x - 10)/5",
+      "f^-1(x) = 5x + 10",
+      "f^-1(x) = x/5 - 10"
+    ],
+    "correct_index": 0,
+    "explanation": "Swap x and y in y=5x-10, then solve for y: x=5y-10, so 5y=x+10, y=(x+10)/5. Choosing (x-10)/5 subtracts 10 instead of adding it, giving 5y=x-10; choosing 5x+10 reflects across the x-axis rather than finding the true inverse; choosing x/5-10 divides first then subtracts, reversing the correct order of operations.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::inverse-fn-5x-minus-10-swap-solve"
+  },
+  {
+    "external_key": "MK-B57-022",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Evaluate: log_3(81) + log_3(1/9)",
+    "choices": [
+      "4",
+      "6",
+      "2",
+      "0"
+    ],
+    "correct_index": 2,
+    "explanation": "log_3(81) = log_3(3^4) = 4. log_3(1/9) = log_3(3^(-2)) = -2. Sum = 4 + (-2) = 2. Choosing 4 takes only the first term and ignores log_3(1/9) entirely; choosing 6 adds both exponents as positives: 4+2=6, treating 1/9 as 3^2 instead of 3^(-2); choosing 0 subtracts incorrectly as 4-4=0, treating 1/9 as 3^(-4).",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::log-base3-81-plus-log-base3-1over9"
+  },
+  {
+    "external_key": "MK-B57-023",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 3,
+    "stem": "Which expression equals log_5(200) using the change-of-base formula with common logarithms?",
+    "choices": [
+      "log(5)/log(200)",
+      "log(200) - log(5)",
+      "log(40)",
+      "log(200)/log(5)"
+    ],
+    "correct_index": 3,
+    "explanation": "The change-of-base formula: log_b(a) = log(a)/log(b). So log_5(200) = log(200)/log(5). Choosing log(5)/log(200) inverts the fraction, which gives log_200(5) instead; choosing log(200)-log(5) applies the quotient rule for a single base, giving log(200/5)=log(40); choosing log(40) equals log(200/5) and is numerically a different value, not the change-of-base expression.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::log-change-of-base-log5-200"
+  },
+  {
+    "external_key": "MK-B57-024",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "The graph of f(x) = x^2 is shifted 3 units right and 2 units up. What is the equation of the resulting graph?",
+    "choices": [
+      "y = (x + 3)^2 + 2",
+      "y = (x - 3)^2 - 2",
+      "y = (x + 3)^2 - 2",
+      "y = (x - 3)^2 + 2"
+    ],
+    "correct_index": 3,
+    "explanation": "Shifting right by 3 replaces x with (x-3), and shifting up by 2 adds 2 outside the squared term: y = (x-3)^2+2. Choosing (x+3)^2+2 shifts left 3 units instead of right; choosing (x-3)^2-2 correctly shifts right but then shifts down instead of up; choosing (x+3)^2-2 shifts left and down, reversing both directions.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::function-transform-right3-up2-parabola"
+  },
+  {
+    "external_key": "MK-B57-025",
+    "subtest": "MK",
+    "topic_id": "mk.exponents-polynomials",
+    "difficulty": 2,
+    "stem": "Expand using logarithm properties: log_b(x^3 * y^2)",
+    "choices": [
+      "3 log_b(x) + 2 log_b(y)",
+      "6 log_b(x * y)",
+      "3 log_b(x) - 2 log_b(y)",
+      "log_b(x^3) * log_b(y^2)"
+    ],
+    "correct_index": 0,
+    "explanation": "Product rule: log_b(x^3 * y^2) = log_b(x^3) + log_b(y^2). Power rule: = 3 log_b(x) + 2 log_b(y). Choosing 6 log_b(x*y) multiplies the exponents and collapses both variables, which is not a valid log property; choosing 3 log_b(x)-2 log_b(y) applies the quotient rule (subtraction) instead of the product rule (addition); choosing log_b(x^3)*log_b(y^2) multiplies the two logarithms, which has no standard simplification.",
+    "status": "verified",
+    "item_family_id": "mk.exponents-polynomials::log-product-power-expand-x3y2"
+  },
+  {
+    "external_key": "MK-B57-027",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "Find the equation of the line passing through (2, 5) and (6, 13).",
+    "choices": [
+      "y = 2x + 1",
+      "y = 2x - 1",
+      "y = 3x - 1",
+      "y = 2x + 3"
+    ],
+    "correct_index": 0,
+    "explanation": "Slope m = (13-5)/(6-2) = 8/4 = 2. Using point (2,5): 5 = 2(2)+b => b=1. Equation: y=2x+1. Check with (6,13): 2(6)+1=13. Choosing y=2x-1 uses b=-1; at x=2 gives 3, not 5; choosing y=3x-1 uses the wrong slope 3; at x=2 gives 5 by coincidence but fails at x=6: 3(6)-1=17, not 13; choosing y=2x+3 uses b=3; at x=2 gives 7, not 5.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::line-eq-through-2-5-and-6-13"
+  },
+  {
+    "external_key": "MK-B57-029",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "A store sells adult tickets for $9 and child tickets for $5. If 120 tickets were sold for a total of $840, how many adult tickets were sold?",
+    "choices": [
+      "50",
+      "70",
+      "80",
+      "60"
+    ],
+    "correct_index": 3,
+    "explanation": "Let a = adult tickets. Child tickets = 120-a. Equation: 9a + 5(120-a) = 840 => 9a+600-5a=840 => 4a=240 => a=60. Check: 60 adult at $9=$540; 60 child at $5=$300; total $840. Choosing 50 gives 9(50)+5(70)=450+350=$800, not $840; choosing 70 gives 9(70)+5(50)=630+250=$880; choosing 80 gives 9(80)+5(40)=720+200=$920.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::system-tickets-adult9-child5-120-total-840"
+  },
+  {
+    "external_key": "MK-B57-030",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "Jake has some dimes and quarters totaling $3.55. He has 3 more quarters than dimes. How many dimes does he have?",
+    "choices": [
+      "9",
+      "6",
+      "8",
+      "7"
+    ],
+    "correct_index": 2,
+    "explanation": "Let d = dimes and q = d+3 quarters. Value: 0.10d + 0.25(d+3) = 3.55 => 0.10d+0.25d+0.75=3.55 => 0.35d=2.80 => d=8. Check: 8 dimes ($0.80) + 11 quarters ($2.75) = $3.55. Choosing 9 gives 0.35(9)=3.15+0.75=3.90, not 3.55; choosing 6 gives 0.35(6)+0.75=2.10+0.75=2.85; choosing 7 gives 0.35(7)+0.75=2.45+0.75=3.20.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::coin-dimes-quarters-3more-quarters-total-355"
+  },
+  {
+    "external_key": "MK-B57-031",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 3,
+    "stem": "Nuts cost: peanuts $2/lb, cashews $5/lb, almonds $8/lb. A 10-pound mixture uses equal pounds of cashews and peanuts, and costs $44 total. How many pounds of cashews are used?",
+    "choices": [
+      "5",
+      "2",
+      "4",
+      "3"
+    ],
+    "correct_index": 2,
+    "explanation": "Let c = lb cashews = lb peanuts, a = lb almonds. Then c+c+a=10 => a=10-2c. Cost: 2c+5c+8(10-2c)=44 => 7c+80-16c=44 => -9c=-36 => c=4. So 4 lb cashews, 4 lb peanuts, 2 lb almonds; cost=8+20+16=$44. Choosing 5 gives a=0, cost=2(5)+5(5)+8(0)=10+25=35, not 44; choosing 2 gives a=6, cost=4+10+48=$62; choosing 3 gives a=4, cost=6+15+32=$53.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::mixture-three-nuts-equal-peanuts-cashews-10lb-44"
+  },
+  {
+    "external_key": "MK-B57-032",
+    "subtest": "MK",
+    "topic_id": "mk.algebra-linear",
+    "difficulty": 2,
+    "stem": "A train leaves Station A at 60 mph. Two hours later, a second train leaves Station A on the same track at 90 mph. How many hours after the second train departs will it catch the first train?",
+    "choices": [
+      "3 hours",
+      "5 hours",
+      "4 hours",
+      "6 hours"
+    ],
+    "correct_index": 2,
+    "explanation": "When the second train departs, the first has a 2-hour head start: 60*2=120 miles ahead. Let t = hours for the second train to close the gap. 90t = 60t+120 => 30t=120 => t=4 hours. At t=4: second train travels 90*4=360 miles; first train travels 60*(4+2)=360 miles. Choosing 3 gives second=270 vs first=300, not yet caught; choosing 5 gives second=450 vs first=420, already passed; choosing 6 gives second=540 vs first=480.",
+    "status": "verified",
+    "item_family_id": "mk.algebra-linear::train-catchup-60mph-2hr-ahead-90mph"
+  },
+  {
+    "external_key": "MK-B57-033",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "A circle has the equation (x - 4)^2 + (y + 3)^2 = 25. What are its center and radius?",
+    "choices": [
+      "Center (-4, 3), radius 5",
+      "Center (4, -3), radius 25",
+      "Center (4, 3), radius 5",
+      "Center (4, -3), radius 5"
+    ],
+    "correct_index": 3,
+    "explanation": "Standard form (x-h)^2+(y-k)^2=r^2 has center (h,k) and radius r. Here h=4, k=-3 (since y+3 = y-(-3)), and r=sqrt(25)=5. Choosing (-4,3) negates both h and k, reversing the sign convention; choosing radius 25 reads r^2=25 as r=25 rather than taking the square root; choosing center (4,3) uses +3 for k but (y+3)^2 means k=-3.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::circle-eq-center-4-neg3-r5"
+  },
+  {
+    "external_key": "MK-B57-034",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "Write the equation of a circle centered at (-2, 5) with radius 7.",
+    "choices": [
+      "(x - 2)^2 + (y + 5)^2 = 49",
+      "(x + 2)^2 + (y - 5)^2 = 7",
+      "(x + 2)^2 + (y - 5)^2 = 49",
+      "(x - 2)^2 + (y - 5)^2 = 49"
+    ],
+    "correct_index": 2,
+    "explanation": "Center (h,k)=(-2,5), r=7. Equation: (x-(-2))^2+(y-5)^2=7^2, which is (x+2)^2+(y-5)^2=49. Choosing (x-2)^2+(y+5)^2=49 flips both signs, placing the center at (2,-5); choosing (x+2)^2+(y-5)^2=7 has the correct form but uses r=7 on the right instead of r^2=49; choosing (x-2)^2+(y-5)^2=49 uses the wrong sign for h only, implying center (2,5).",
+    "status": "verified",
+    "item_family_id": "mk.geometry::circle-eq-center-neg2-5-r7"
+  },
+  {
+    "external_key": "MK-B57-035",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "In a 30-60-90 right triangle, the side opposite the 30-degree angle is 8. What is the hypotenuse?",
+    "choices": [
+      "8*sqrt(3)",
+      "8*sqrt(2)",
+      "12",
+      "16"
+    ],
+    "correct_index": 3,
+    "explanation": "In a 30-60-90 triangle the side opposite 30 degrees equals half the hypotenuse. So hypotenuse = 2*8 = 16. Choosing 8*sqrt(3) is the longer leg opposite 60 degrees in this triangle, not the hypotenuse; choosing 8*sqrt(2) is the hypotenuse of a 45-45-90 triangle with leg 8; choosing 12 uses a 3/2 ratio instead of the correct 2:1 hypotenuse-to-short-side ratio.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::30-60-90-opp30-eq8-find-hyp"
+  },
+  {
+    "external_key": "MK-B57-036",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A right triangle has a 45-degree acute angle and hypotenuse of length 10. What is the length of each leg?",
+    "choices": [
+      "5",
+      "5*sqrt(3)",
+      "10*sqrt(2)",
+      "5*sqrt(2)"
+    ],
+    "correct_index": 3,
+    "explanation": "A 45-45-90 triangle has equal legs and hypotenuse = leg*sqrt(2). So leg = 10/sqrt(2) = 10*sqrt(2)/2 = 5*sqrt(2). Both legs equal 5*sqrt(2) (approximately 7.07). Choosing 5 halves the hypotenuse without using sqrt(2); a triangle with legs 5 and 5 has hypotenuse sqrt(50)=5*sqrt(2), not 10; choosing 5*sqrt(3) is the longer leg of a 30-60-90 triangle with short leg 5; choosing 10*sqrt(2) multiplies instead of divides the hypotenuse by sqrt(2).",
+    "status": "verified",
+    "item_family_id": "mk.geometry::45-45-90-hyp10-each-leg"
+  },
+  {
+    "external_key": "MK-B57-037",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A right triangle has legs 5 and 12. What is the sine of the acute angle opposite the leg of length 5?",
+    "choices": [
+      "12/13",
+      "5/12",
+      "5/13",
+      "13/5"
+    ],
+    "correct_index": 2,
+    "explanation": "Hypotenuse = sqrt(5^2+12^2) = sqrt(25+144) = sqrt(169) = 13. Sine = opposite/hypotenuse = 5/13. Choosing 12/13 is the sine of the angle opposite the leg of length 12, not 5; choosing 5/12 is the tangent of the angle, using adjacent instead of hypotenuse in the denominator; choosing 13/5 is the cosecant (reciprocal of sine), not the sine itself.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::trig-sin-5-12-13-opp5"
+  },
+  {
+    "external_key": "MK-B57-038",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 1,
+    "stem": "What is the exact value of tan(60 degrees)?",
+    "choices": [
+      "1",
+      "sqrt(2)",
+      "1/sqrt(3)",
+      "sqrt(3)"
+    ],
+    "correct_index": 3,
+    "explanation": "In a 30-60-90 triangle with short leg 1, long leg sqrt(3), hypotenuse 2: tan(60) = opposite/adjacent = sqrt(3)/1 = sqrt(3). Choosing 1 is tan(45 degrees), not 60; choosing sqrt(2) appears in 45-45-90 relationships but is not a trig ratio for 60 degrees; choosing 1/sqrt(3) is tan(30 degrees), the reciprocal of the correct answer.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::trig-exact-tan-60-degrees"
+  },
+  {
+    "external_key": "MK-B57-039",
+    "subtest": "MK",
+    "topic_id": "mk.geometry",
+    "difficulty": 3,
+    "stem": "A right triangle has legs 6 and 8, giving hypotenuse 10. A similar triangle has hypotenuse 6. What is the scale factor from the larger to the smaller triangle?",
+    "choices": [
+      "3/5",
+      "5/3",
+      "6/5",
+      "1/2"
+    ],
+    "correct_index": 0,
+    "explanation": "Scale factor = new hypotenuse / original hypotenuse = 6/10 = 3/5. The smaller triangle has legs 6*(3/5)=18/5 and 8*(3/5)=24/5, and hypotenuse 10*(3/5)=6. Choosing 5/3 is the scale from smaller to larger (the inverse ratio); choosing 6/5 uses the smaller hypotenuse over one of the original legs instead of the original hypotenuse; choosing 1/2 assumes hypotenuse halved from 10 to 5, not to 6.",
+    "status": "verified",
+    "item_family_id": "mk.geometry::similar-triangle-scale-factor-6-8-10-to-hyp6"
+  },
+  {
+    "external_key": "MK-B57-044",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "A cadet must average at least 85 on four tests. The first three scores are 80, 88, and 82. What is the minimum score needed on the fourth test?",
+    "choices": [
+      "85",
+      "95",
+      "90",
+      "88"
+    ],
+    "correct_index": 2,
+    "explanation": "Required average >= 85 means (80+88+82+s)/4 >= 85. Sum of known scores = 250. So 250+s >= 340 => s >= 90. Choosing 85 gives total (250+85)/4=335/4=83.75, which falls short of 85; choosing 95 satisfies the condition (345/4=86.25) but exceeds the minimum by 5 points; choosing 88 gives (250+88)/4=338/4=84.5, still below 85.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::average-min-score-4tests-80-88-82-target85"
+  },
+  {
+    "external_key": "MK-B57-045",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 2,
+    "stem": "Which values of x satisfy: -2 < 4 - x < 6?",
+    "choices": [
+      "2 < x < 6",
+      "-2 < x < 2",
+      "-2 < x < 6",
+      "-6 < x < 2"
+    ],
+    "correct_index": 2,
+    "explanation": "Subtract 4 from all parts: -6 < -x < 2. Multiply by -1 and flip inequalities: -2 < x < 6. Choosing 2 < x < 6 shifts the bounds positively without negating, treating -x as x; choosing -2 < x < 2 correctly flips the right bound but stops before flipping the left (-6 flipped should give x < 6); choosing -6 < x < 2 forgets to flip all inequalities when multiplying by -1.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::compound-neg2-lt-4-minus-x-lt6-flip"
+  },
+  {
+    "external_key": "MK-B57-046",
+    "subtest": "MK",
+    "topic_id": "mk.inequalities",
+    "difficulty": 3,
+    "stem": "A shipping box holds at most 50 kg. It already contains three items weighing 8 kg, 12 kg, and 15 kg. What inequality gives the additional weight w (in kg) that can be added?",
+    "choices": [
+      "w <= 20",
+      "w <= 35",
+      "w <= 15",
+      "w <= 50"
+    ],
+    "correct_index": 2,
+    "explanation": "Current load = 8+12+15 = 35 kg. Constraint: 35+w <= 50 => w <= 15. Choosing w <= 20 uses a current load of 30 kg (omitting the 15 kg item): 50-30=20; choosing w <= 35 gives the current load itself as the remaining capacity, confusing load with available space; choosing w <= 50 ignores the items already in the box.",
+    "status": "verified",
+    "item_family_id": "mk.inequalities::box-capacity-50kg-items-8-12-15-remaining"
+  },
+  {
+    "external_key": "MK-B57-057",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 2,
+    "stem": "Which expression gives the nth term of the arithmetic sequence 7, 11, 15, 19, ...?",
+    "choices": [
+      "4n + 3",
+      "4n + 7",
+      "3n + 4",
+      "7n - 3"
+    ],
+    "correct_index": 0,
+    "explanation": "First term a=7, common difference d=4. nth term = a+(n-1)d = 7+4(n-1) = 7+4n-4 = 4n+3. Check: n=1 gives 4(1)+3=7; n=2 gives 11. Choosing 4n+7 computes 7+4n rather than 7+4(n-1), off by 4; choosing 3n+4 uses the wrong difference d=3; n=1 gives 7, but n=2 gives 10 not 11; choosing 7n-3 uses a=7 as the coefficient of n instead of d=4.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::arith-seq-nth-term-7-11-15-d4"
+  },
+  {
+    "external_key": "MK-B57-058",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "Find the sum of the first 10 terms of the arithmetic sequence 3, 7, 11, 15, ...",
+    "choices": [
+      "210",
+      "195",
+      "220",
+      "180"
+    ],
+    "correct_index": 0,
+    "explanation": "First term a=3, common difference d=4, n=10. S_n = (n/2)*(2a+(n-1)d) = (10/2)*(6+9*4) = 5*(6+36) = 5*42 = 210. Alternatively: 10th term = 3+9*4=39; S=n*(first+last)/2=10*(3+39)/2=10*21=210. Choosing 195 uses n=9: (9/2)*(6+8*4)=4.5*38=171, or shifts by some constant to reach 195; choosing 220 uses last term 41 (one step too far): 10*(3+41)/2=220; choosing 180 uses 2a only and omits (n-1)d: 5*(6+30)=5*36=180, using 9*3=27 or some truncated term.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::arith-series-sum-10-terms-3-7-11"
+  },
+  {
+    "external_key": "MK-B57-059",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 3,
+    "stem": "A geometric sequence has first term 2 and common ratio 3. What is the sum of the first 5 terms?",
+    "choices": [
+      "242",
+      "244",
+      "240",
+      "486"
+    ],
+    "correct_index": 0,
+    "explanation": "Terms: 2, 6, 18, 54, 162. Sum = 2+6+18+54+162 = 242. Using the formula: S_5 = a*(r^5-1)/(r-1) = 2*(243-1)/(3-1) = 2*242/2 = 242. Choosing 244 adds 2 extra: 242+2=244; choosing 240 subtracts the first term: 242-2=240, or uses S = 2*(3^5-1)/(3-1)-2; choosing 486 is 2*3^5=2*243=486, computing only the (n+1)th term rather than the sum.",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::geo-series-sum-5-terms-a2-r3"
+  },
+  {
+    "external_key": "MK-B57-060",
+    "subtest": "MK",
+    "topic_id": "mk.number-properties",
+    "difficulty": 1,
+    "stem": "Two fair coins are flipped. What is the probability that both show heads?",
+    "choices": [
+      "1/4",
+      "1/2",
+      "1/3",
+      "3/4"
+    ],
+    "correct_index": 0,
+    "explanation": "Each coin independently shows heads with probability 1/2. Both heads: (1/2)*(1/2)=1/4. Sample space: {HH, HT, TH, TT} has 4 equally likely outcomes; only 1 is HH. Choosing 1/2 treats both coins as a single trial or adds probabilities (1/2+1/2=1 is wrong, but 1/2 could come from counting 2 heads-containing outcomes out of 4 incorrectly); choosing 1/3 might arise from listing {HH, HT, TT} as 3 outcomes (ignoring TH); choosing 3/4 is the probability that at least one head appears (complementary to both tails).",
+    "status": "verified",
+    "item_family_id": "mk.number-properties::prob-two-coins-both-heads"
+  }
+]

@@ -1,0 +1,954 @@
+[
+  {
+    "external_key": "AS-B44-001",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What is the purpose of the fuel pressure regulator in a port fuel injection system?",
+    "choices": [
+      "It controls the on/off timing of the fuel injectors",
+      "It filters water out of the gasoline before it reaches the engine",
+      "It measures air flow into the intake manifold",
+      "It maintains a consistent fuel pressure at the injector rail regardless of engine load"
+    ],
+    "correct_index": 3,
+    "explanation": "The fuel pressure regulator holds rail pressure at a set differential above intake manifold pressure so injector flow stays predictable across load conditions. Injector timing is controlled by the ECM. The fuel filter handles debris and water, not pressure. A mass airflow (MAF) sensor measures intake air flow.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::fuel-pressure-regulator"
+  },
+  {
+    "external_key": "AS-B44-002",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "In a gasoline engine, what is the function of the intake manifold?",
+    "choices": [
+      "It distributes the air-fuel mixture (or air alone, in direct injection) evenly to all cylinders",
+      "It stores excess exhaust gases for recirculation",
+      "It pressurizes engine oil to the main bearings",
+      "It regulates alternator voltage output"
+    ],
+    "correct_index": 0,
+    "explanation": "The intake manifold acts as a plenum and distribution network, routing air or the air-fuel mixture from the throttle body to each cylinder's intake port. Exhaust recirculation uses the EGR valve, not the intake manifold. Oil pressure distribution is the job of oil galleries and the oil pump. Voltage regulation is handled by the alternator's internal regulator.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::intake-manifold"
+  },
+  {
+    "external_key": "AS-B44-003",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "Which engine configuration places all cylinders in a single row, one behind the other, along the length of the vehicle?",
+    "choices": [
+      "V-type",
+      "Flat (boxer)",
+      "Rotary",
+      "Inline"
+    ],
+    "correct_index": 3,
+    "explanation": "An inline engine arranges all cylinders in a single straight bank, making it compact and easy to service. A V-type splits cylinders into two banks at an angle. A flat (boxer) engine lays opposing cylinders horizontally. A rotary engine uses triangular rotors, not pistons in cylinders.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::engine-layout"
+  },
+  {
+    "external_key": "AS-B44-004",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 1,
+    "stem": "What does the O2 (oxygen) sensor measure, and why does the engine computer use that measurement?",
+    "choices": [
+      "It measures engine coolant temperature to adjust idle speed",
+      "It measures battery voltage to trigger the alternator",
+      "It measures exhaust oxygen content to help the ECM trim the fuel mixture toward the ideal 14.7:1 air-fuel ratio",
+      "It measures intake manifold pressure to set ignition timing"
+    ],
+    "correct_index": 2,
+    "explanation": "The O2 sensor detects leftover oxygen in the exhaust stream; rich combustion leaves little oxygen, lean combustion leaves a lot. The ECM uses this feedback to keep the air-fuel ratio near 14.7:1 for efficiency and emissions. Coolant temperature is read by a separate sensor. Battery voltage is monitored by the charging system. Manifold pressure is read by the MAP sensor.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::o2-sensor"
+  },
+  {
+    "external_key": "AS-B44-005",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What is the correct way to pass a sharp tool such as a chisel or screwdriver to another person?",
+    "choices": [
+      "Toss it lightly so the other person can catch it",
+      "Hold the blade and extend the handle toward the other person",
+      "Place it on the bench and let the other person pick it up",
+      "Both holding the blade and extending the handle, or setting it down, are acceptable depending on urgency"
+    ],
+    "correct_index": 1,
+    "explanation": "The safest way to hand off a sharp or pointed tool is to grip the blade or body and offer the handle to the recipient so they can take it with a secure grip. Tossing any tool is never acceptable because of the risk of injury if it is missed. Setting it on the bench is also acceptable in non-urgent situations, but gripping the blade and extending the handle is the preferred active hand-off method.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::tool-handoff"
+  },
+  {
+    "external_key": "AS-B44-006",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A vehicle hesitates badly when accelerating from a stop, but cruise-control operation at highway speeds is smooth. The most likely cause is:",
+    "choices": [
+      "A leaking valve cover gasket",
+      "Worn brake rotors",
+      "A faulty or dirty throttle position sensor (TPS) giving an incorrect signal during tip-in",
+      "A clogged radiator"
+    ],
+    "correct_index": 2,
+    "explanation": "Hesitation specifically during tip-in (initial throttle opening) but not at steady cruise is a classic sign of a bad or dirty throttle position sensor that fails to signal a rapid throttle change to the ECM, causing a momentary lean stumble. A valve cover leak causes an oil burning smell, not hesitation. Rotors affect braking, not acceleration. A clogged radiator causes overheating, not a throttle-related stumble.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::tps-diagnosis"
+  },
+  {
+    "external_key": "AS-B44-007",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A car with a manual transmission makes a chattering noise only when the clutch pedal is being released from a stop. The noise stops once the clutch is fully engaged. The most likely cause is:",
+    "choices": [
+      "A worn or glazed clutch disc",
+      "A slipping alternator belt",
+      "Low engine coolant",
+      "A failing water pump bearing"
+    ],
+    "correct_index": 0,
+    "explanation": "Clutch chatter during engagement is typically caused by a worn, glazed, or oil-contaminated clutch disc that slips and catches unevenly. Once fully engaged the disc spins as a unit and the noise stops. An alternator belt squeal is constant when the belt slips, not load-dependent. Coolant level and water pump bearings have no connection to clutch noise.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::clutch-chatter"
+  },
+  {
+    "external_key": "AS-B44-008",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "What is the purpose of the EGR (Exhaust Gas Recirculation) valve?",
+    "choices": [
+      "It boosts turbo pressure during hard acceleration",
+      "It vents crankcase pressure into the intake manifold",
+      "It controls exhaust back-pressure for the catalytic converter",
+      "It recirculates a metered amount of exhaust gas back into the intake to lower peak combustion temperature and reduce NOx emissions"
+    ],
+    "correct_index": 3,
+    "explanation": "The EGR valve admits inert exhaust gases into the intake charge, which dilutes the mixture and lowers peak combustion temperatures, reducing nitrogen oxide (NOx) formation. Crankcase ventilation is the job of the PCV valve. Turbo boost control uses a wastegate or electronic actuator. Back-pressure is managed by the exhaust system geometry, not the EGR valve.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::egr-valve"
+  },
+  {
+    "external_key": "AS-B44-009",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "A technician notices the coolant reservoir is empty and the heater blows cold air even when the engine is fully warm. These two symptoms together most likely indicate:",
+    "choices": [
+      "A stuck-closed EGR valve",
+      "A bad MAP sensor",
+      "Air trapped in the cooling system or a large coolant loss preventing the heater core from filling",
+      "A blown alternator fuse"
+    ],
+    "correct_index": 2,
+    "explanation": "The heater core is the last point coolant reaches when levels are low or when an air pocket occupies the top of the system; both conditions block hot coolant flow to the core, leaving the cabin cold. An empty reservoir confirms coolant loss. EGR and MAP sensors affect fuel trim and emissions, not heater function. The alternator fuse has no cooling or heating impact.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::cooling-air-pocket"
+  },
+  {
+    "external_key": "AS-B44-010",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 2,
+    "stem": "Which component in the exhaust system reduces exhaust noise without catalytic function?",
+    "choices": [
+      "Resonator or muffler",
+      "Oxygen sensor bung",
+      "EGR cooler",
+      "Lambda probe"
+    ],
+    "correct_index": 0,
+    "explanation": "The muffler (and its companion resonator on many vehicles) uses chambers and perforated tubes to cancel and absorb exhaust pressure pulses, reducing noise. The catalytic converter handles emissions chemistry. The O2 sensor bung is just a threaded boss in the pipe. The EGR cooler is an emissions component that cools exhaust gases before recirculation.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::muffler"
+  },
+  {
+    "external_key": "AS-B44-011",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "An engine idles roughly and the scan tool shows a large, steady negative fuel trim on both banks (-18%). The most likely cause is:",
+    "choices": [
+      "A vacuum leak letting in unmetered air",
+      "Clogged fuel injectors on all cylinders",
+      "A failing crankshaft position sensor",
+      "An excessively rich condition, possibly from a leaking fuel pressure regulator or stuck-open injectors"
+    ],
+    "correct_index": 3,
+    "explanation": "Large negative long-term fuel trim means the ECM is pulling fuel because the engine is running rich. A leaking fuel pressure regulator can allow fuel into the intake manifold vacuum line, and stuck-open injectors deliver excess fuel. Vacuum leaks cause lean conditions and positive trim. Clogged injectors cause misfires, not a global rich condition. A crank sensor failure causes no-start or stall, not a stable rich trim.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::fuel-trim-rich"
+  },
+  {
+    "external_key": "AS-B44-012",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "A rear-wheel-drive truck vibrates severely at highway speed but the vibration disappears above 70 mph and below 45 mph. A road-force balance on all four tires shows them within spec. The next most likely cause is:",
+    "choices": [
+      "A worn serpentine belt",
+      "Overinflated rear tires",
+      "A bad alternator diode",
+      "Out-of-phase or worn driveshaft U-joints causing a harmonic vibration at a specific speed range"
+    ],
+    "correct_index": 3,
+    "explanation": "Speed-range-specific vibration on a RWD vehicle that disappears at the extremes is a textbook symptom of driveshaft U-joint wear or phasing error; at a resonant RPM the U-joints create a cyclical torque variation that shakes the chassis. With tires already verified, the driveshaft is the logical next suspect. A serpentine belt causes noise and charging issues. Alternator diodes cause electrical noise, not mechanical vibration. Tire pressure affects handling and wear but not a speed-banded harmonic shake.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::u-joint-vibration"
+  },
+  {
+    "external_key": "AS-B44-013",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "After a cooling system repair, the engine overheats despite a new thermostat and fresh coolant. The upper radiator hose collapses when the engine reaches operating temperature. The most likely cause is:",
+    "choices": [
+      "Too much antifreeze concentration",
+      "A failed water pump impeller not producing enough flow, or a degraded upper hose collapsing under suction",
+      "A stuck-closed EGR valve",
+      "An overcharged air conditioning system"
+    ],
+    "correct_index": 1,
+    "explanation": "A collapsing upper hose under load indicates either that the hose itself is degraded internally and collapses under suction, or the water pump impeller has spun loose on its shaft (common on plastic-impeller pumps), creating flow starvation that causes suction collapse and overheating. Antifreeze concentration affects freeze and boil points but not hose collapse. EGR issues affect emissions. AC overcharge causes compressor issues, not cooling system collapse.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::water-pump-impeller"
+  },
+  {
+    "external_key": "AS-B44-014",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "A front-wheel-drive car clicks loudly only when turning at low speed, but drives quietly in a straight line. The most likely cause is:",
+    "choices": [
+      "A worn CV (constant velocity) joint on the outer end of the axle shaft",
+      "A loose lug nut",
+      "A leaking power steering hose",
+      "A warped brake rotor"
+    ],
+    "correct_index": 0,
+    "explanation": "A worn outer CV joint loses its grease and develops play; at full steering lock the joint angle is greatest and the worn balls click loudly with each rotation. Straight-line driving uses a shallow angle that hides the wear. Loose lug nuts produce a clunk or wobble, not a rhythmic click correlated to steering angle. Power steering leaks cause whining. Warped rotors produce a pulsing when the brakes are applied, not a turn-related click.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::cv-joint"
+  },
+  {
+    "external_key": "AS-B44-015",
+    "subtest": "AS",
+    "topic_id": "as.vehicle-systems",
+    "difficulty": 3,
+    "stem": "An engine oil analysis report shows high iron and copper content alongside low viscosity. The most probable interpretation is:",
+    "choices": [
+      "Normal wear for a new engine during break-in",
+      "Coolant entering the oil system",
+      "A bad oxygen sensor skewing fuel trim",
+      "Excessive bearing and bushing wear with oil thinned by fuel dilution"
+    ],
+    "correct_index": 3,
+    "explanation": "Iron indicates wear of ferrous engine parts (camshaft, cylinder walls, lifters); copper signals bearing shell wear since many bearings use a copper-lead or bronze overlay. Low viscosity alongside those metals points to fuel dilution thinning the oil, which accelerates the wear. Coolant contamination raises sodium and potassium levels and makes oil appear milky. A bad O2 sensor affects fuel trim, not oil analysis metals.",
+    "status": "verified",
+    "item_family_id": "as.vehicle-systems::oil-analysis"
+  },
+  {
+    "external_key": "AS-B44-016",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which type of screwdriver has a cross-shaped tip with tapered flanks designed to cam out at high torque?",
+    "choices": [
+      "Phillips",
+      "Robertson (square drive)",
+      "Torx",
+      "Slotted (flathead)"
+    ],
+    "correct_index": 0,
+    "explanation": "Phillips screwdrivers have angled flanks that intentionally cam out when torque exceeds the design limit, which was meant to prevent overtightening in assembly lines. Robertson (square) and Torx have straight walls that resist cam-out. A slotted driver has a single blade that slips sideways out of the groove, not in a cam-out sense.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::driver-cam-out"
+  },
+  {
+    "external_key": "AS-B44-017",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "What is the purpose of a drift punch in shop work?",
+    "choices": [
+      "To cut external threads on a rod",
+      "To mark hole centers before drilling",
+      "To drive out press-fit pins, keys, or bearings without damaging surrounding material",
+      "To deburr the inside of a hole"
+    ],
+    "correct_index": 2,
+    "explanation": "A drift punch has a long, smooth tapered body that allows the tip to enter a hole and transfer hammer blows to drive out press-fit pins, roll pins, or keys. A center punch marks drilling locations. A tap or die cuts threads. A deburring tool or countersink removes sharp edges inside holes.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::drift-punch"
+  },
+  {
+    "external_key": "AS-B44-018",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "Which hand tool is used to cut curves and irregular shapes in sheet metal?",
+    "choices": [
+      "Cold chisel",
+      "Bastard file",
+      "Pipe cutter",
+      "Aviation snips (tin snips)"
+    ],
+    "correct_index": 3,
+    "explanation": "Aviation snips are shear-action hand tools rated for sheet metal; they come in three color-coded styles for straight, left-curve, and right-curve cuts. A cold chisel splits or shears along a straight line when struck with a hammer. A file shapes and smooths, it does not cut free-form curves. A pipe cutter scores and snaps round tubing.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::aviation-snips"
+  },
+  {
+    "external_key": "AS-B44-019",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 1,
+    "stem": "What distinguishes a combination wrench from a standard open-end wrench?",
+    "choices": [
+      "A combination wrench can only be used on metric fasteners",
+      "A combination wrench has adjustable jaws",
+      "A combination wrench has a box-end on one side and an open-end of the same size on the other",
+      "A combination wrench is made of aluminum to reduce weight"
+    ],
+    "correct_index": 2,
+    "explanation": "A combination wrench provides both a box-end and an open-end in the same size on opposite ends of the handle, giving flexibility for different access situations. Open-end wrenches have two open jaws. Neither has adjustable jaws (that is an adjustable wrench). Material and unit system have nothing to do with the combination wrench definition.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::combination-wrench"
+  },
+  {
+    "external_key": "AS-B44-020",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Why is it dangerous to wear loose clothing, neckties, or dangling jewelry when operating a drill press or lathe?",
+    "choices": [
+      "Loose items increase electrical resistance between the operator and the machine",
+      "They block the operator's line of sight to the workpiece",
+      "They can catch on the rotating spindle or chuck and pull the operator into the machine",
+      "They reduce the cutting speed of the machine bit"
+    ],
+    "correct_index": 2,
+    "explanation": "Rotating machine components such as drill press spindles and lathe chucks can snag loose fabric, cords, or jewelry in an instant and wrap them around the shaft, pulling the operator in and causing severe crush and avulsion injuries. Loose clothing does not affect electrical resistance or cutting speed and has minimal effect on line of sight. OSHA and machine-guarding standards require close-fitting clothing and the removal of jewelry when operating rotating equipment.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::rotating-machine-clothing"
+  },
+  {
+    "external_key": "AS-B44-021",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A technician needs to remove a snap ring seated inside a bore (an internal snap ring). The correct tool is:",
+    "choices": [
+      "Internal snap ring pliers, which squeeze the ring inward to collapse it for removal",
+      "Diagonal cutters pressed flat against the ring",
+      "External snap ring pliers, which spread outward",
+      "Needle-nose pliers inserted into the ring holes"
+    ],
+    "correct_index": 0,
+    "explanation": "Internal snap rings expand outward against a groove inside a bore; to remove them you must squeeze them inward (reducing their diameter) to clear the groove, which requires internal snap ring pliers. External pliers spread the ring outward, which would jam an internal ring tighter. Diagonal cutters are for wire. Needle-nose pliers lack the geometry to apply equal inward force to both holes.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::snap-ring-pliers"
+  },
+  {
+    "external_key": "AS-B44-022",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "When installing a blade in a hacksaw frame, the teeth should point:",
+    "choices": [
+      "Toward the handle, so cutting happens on the pull stroke",
+      "Perpendicular to the frame so the saw cuts on both strokes equally",
+      "Away from the handle so cutting occurs on the push (forward) stroke",
+      "In any direction since hacksaw teeth are symmetrical"
+    ],
+    "correct_index": 2,
+    "explanation": "Hacksaw teeth are set to cut on the forward (push) stroke; installing the blade with teeth pointing away from the handle ensures each tooth engages and removes material on the push. Installing it backward causes the teeth to skate on the pull stroke, wasting effort and dulling teeth faster. The teeth are not symmetrical and have a set rake angle.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::hacksaw-technique"
+  },
+  {
+    "external_key": "AS-B44-023",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A beam-style torque wrench and a click-style torque wrench each have different advantages. The beam style's main advantage over the click style is that it:",
+    "choices": [
+      "Requires no zeroing and does not lose calibration from storage under load",
+      "Produces a louder click when the target torque is reached",
+      "Is shorter and fits in tighter spaces",
+      "Automatically prevents over-torquing by releasing the drive head"
+    ],
+    "correct_index": 0,
+    "explanation": "A beam torque wrench reads torque by deflecting a pointer against a scale; there is no spring mechanism, so calibration is not affected by storage tension. Click wrenches rely on a spring that can drift over time, especially if stored loaded. Click wrenches are preferred in blind situations because of the audible click; beam wrenches require a line of sight. Neither type has an automatic release; that is a function of some electronic or slip-clutch designs.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::beam-torque-wrench"
+  },
+  {
+    "external_key": "AS-B44-024",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "Which measuring approach would be BEST for checking the flatness of a machined engine head surface?",
+    "choices": [
+      "A vernier caliper laid flat across the surface",
+      "An outside micrometer bridging the head",
+      "A tape measure stretched diagonally",
+      "Feeler gauges slid under a precision straightedge placed on the head"
+    ],
+    "correct_index": 3,
+    "explanation": "Checking head flatness requires placing a known-straight reference edge across the surface and then sliding feeler gauges into any gap between the straightedge and the head; the gauge thickness that fits snugly is the warpage measurement. A vernier caliper measures length or diameter, not surface flatness. An outside micrometer measures thickness of individual parts. A tape measure lacks the precision or the straight reference needed.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::straightedge-feeler"
+  },
+  {
+    "external_key": "AS-B44-025",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 2,
+    "stem": "A mechanic has a 3/8-inch drive ratchet but only a 1/2-inch drive socket for the fastener. The correct adapter to use is:",
+    "choices": [
+      "A universal joint",
+      "A 3/8-inch to 1/2-inch drive step-up adapter",
+      "A wobble extension",
+      "A swivel socket"
+    ],
+    "correct_index": 1,
+    "explanation": "A drive adapter (step-up adapter) connects a smaller-drive ratchet to a larger-drive socket by bridging the two square-drive sizes. A universal joint allows angle offsets but does not change drive size. Wobble extensions provide slight articulation in the same drive size. A swivel socket rotates on the drive but also does not convert drive sizes.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::drive-adapter"
+  },
+  {
+    "external_key": "AS-B44-026",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A bolt is seized and cannot be removed by a wrench. After applying penetrating oil and using an impact wrench, the bolt snaps off inside the threaded hole. The BEST next step is:",
+    "choices": [
+      "Drill out the bolt with a standard twist bit at the bolt's full diameter, then re-tap to the same size",
+      "Fill the hole with weld and re-drill later",
+      "Use a left-hand drill bit first to attempt removal; if that fails, use a properly sized screw extractor",
+      "Tap the surrounding threads with a hammer to compress the broken stub out"
+    ],
+    "correct_index": 2,
+    "explanation": "The correct progression for a snapped bolt is first a left-hand (reverse) drill bit, which sometimes unscrews the stub as it cuts; if the stub does not back out, a screw extractor (EZ-out) is the next step. Drilling to full diameter destroys the original threads. Welding adds heat that can distort the casting. Hammering the threads will strip and damage them without removing the stub.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::broken-bolt-removal"
+  },
+  {
+    "external_key": "AS-B44-027",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A technician uses an adjustable (Crescent) wrench to loosen a tight nut and the wrench slips, rounding the nut corners. Why is the adjustable wrench more prone to this than a box-end?",
+    "choices": [
+      "Adjustable wrenches are made of softer steel",
+      "Adjustable wrenches always have 12-point jaws",
+      "Adjustable wrenches are not rated for hardened fasteners",
+      "The movable jaw of an adjustable wrench can flex and open slightly under load, bearing on the nut corners instead of the full flat"
+    ],
+    "correct_index": 3,
+    "explanation": "Under torque the movable jaw of an adjustable wrench deflects outward slightly, which allows the jaw to ride up onto the corners of the nut rather than bearing fully on the flat faces. A box-end is a rigid closed ring that cannot deflect and distributes load across all six or twelve contact points. The steel grade difference is negligible; the mechanism is jaw deflection. Adjustable wrenches do not have multi-point jaws.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::adjustable-wrench-limitation"
+  },
+  {
+    "external_key": "AS-B44-028",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "When using a die to cut external threads on a steel rod, the die chatters and produces uneven threads. The MOST likely cause is:",
+    "choices": [
+      "No cutting fluid was used and the die was not reversed to break chips during cutting",
+      "The die is left-hand threaded",
+      "The rod is too small in diameter for the die",
+      "The tap wrench was used instead of the die stock"
+    ],
+    "correct_index": 0,
+    "explanation": "External thread cutting with a die requires cutting oil to lubricate and cool, and the same advance-and-back technique used with a tap: advance about a half-turn, then reverse a quarter-turn to break the chip. Skipping oil causes chatter and heat. A rod too small in diameter produces loose, sloppy threads rather than chatter. Using the wrong handle affects comfort but not thread quality. A left-hand die would still cut if correctly advanced; chatter is not caused by hand direction.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::die-technique"
+  },
+  {
+    "external_key": "AS-B44-029",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A dial indicator mounted on a magnetic base is zeroed against a crankshaft flange. Rotating the crank shows a total indicator runout (TIR) reading of 0.006 inches. What does this TIR value tell the technician?",
+    "choices": [
+      "The crankshaft main bearing clearance is 0.006 inches",
+      "The crankshaft has 0.003 inches of eccentricity because TIR is total and the actual deviation from true center is half that value",
+      "The crank is 0.006 inches undersize in diameter",
+      "The rod journal is 0.006 inches out of round"
+    ],
+    "correct_index": 1,
+    "explanation": "A dial indicator measures total deflection from the highest to lowest reading in one full revolution; that total equals twice the eccentricity (runout). A TIR of 0.006 inches means the shaft centerline is 0.003 inches off true center. Bearing clearance is measured differently with Plastigage or a bore gauge. Diameter undersize requires a micrometer, not a TIR reading. Rod journal roundness requires a measurement around the journal circumference, not flange runout.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::dial-indicator-tir"
+  },
+  {
+    "external_key": "AS-B44-030",
+    "subtest": "AS",
+    "topic_id": "as.hand-tools",
+    "difficulty": 3,
+    "stem": "A technician is tapping a blind hole (one that does not go all the way through). What special precaution must be taken?",
+    "choices": [
+      "Use twice the torque on the tap wrench due to the extra resistance at the bottom",
+      "Only a taper tap is needed; it can reach the bottom of any hole",
+      "Blind holes do not need tapping; press-in thread inserts are always used instead",
+      "Use a bottoming tap as the final step to cut threads as deep as possible without hitting the bottom of the hole"
+    ],
+    "correct_index": 3,
+    "explanation": "A taper tap has several tapered leading threads and cannot cut a full thread at the very bottom of a blind hole. A plug tap threads closer to the bottom, and a bottoming tap (with nearly no taper) cuts threads right to the bottom. Using only a taper tap in a blind hole leaves the deepest threads incomplete. Extra torque on any tap increases breakage risk rather than depth. Press-in inserts are a repair method, not the standard approach for a new blind hole.",
+    "status": "verified",
+    "item_family_id": "as.hand-tools::blind-hole-tap"
+  },
+  {
+    "external_key": "AS-B44-031",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "Why should brake fluid be replaced periodically even if the brakes feel normal?",
+    "choices": [
+      "Brake fluid evaporates, so the system needs regular topping off",
+      "Brake fluid is hygroscopic and absorbs moisture over time, lowering its boiling point and risking vapor lock under hard braking",
+      "Old brake fluid dissolves the rubber brake hoses",
+      "Brake fluid must be matched to tire brand for proper ABS operation"
+    ],
+    "correct_index": 1,
+    "explanation": "Brake fluid absorbs water vapor through hose walls and reservoir vents over time; that moisture lowers the boiling point so that hard or repeated braking can vaporize fluid in the lines, creating compressible bubbles and sudden pedal fade (vapor lock). The system is sealed so fluid does not evaporate. Modern brake hoses are rubber-compound rated to resist fluid contact. ABS operation is unrelated to fluid-tire matching.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::brake-fluid-service"
+  },
+  {
+    "external_key": "AS-B44-032",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "What is the correct procedure when an engine is found to be low on coolant after it has just been driven?",
+    "choices": [
+      "Add cold water immediately to bring the level up",
+      "Let the engine cool completely before opening the radiator cap and adding coolant",
+      "Open the cap carefully at full operating temperature to check the level",
+      "Drain and refill the entire system before driving again regardless of temperature"
+    ],
+    "correct_index": 1,
+    "explanation": "A hot cooling system is pressurized; opening the cap before the engine cools releases scalding steam and coolant that can cause severe burns. The correct practice is to wait until the engine is cool, then open the cap and top off with the correct coolant mixture. Draining the entire system is unnecessary unless contaminated. Adding cold water to a hot engine risks thermal shock that can crack the block or head.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::coolant-top-off"
+  },
+  {
+    "external_key": "AS-B44-033",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "Which welding process uses a non-consumable tungsten electrode, a separate filler rod, and produces no spatter?",
+    "choices": [
+      "MIG (GMAW)",
+      "Stick (SMAW)",
+      "Plasma cutting",
+      "TIG (GTAW)"
+    ],
+    "correct_index": 3,
+    "explanation": "TIG welding uses a non-consumable tungsten electrode to create the arc and a separate hand-fed filler rod; the controlled heat input and clean argon shielding produce precise, spatter-free welds. MIG uses a consumable wire electrode fed continuously through the gun. Stick uses a consumable flux-coated electrode and does produce spatter. Plasma cutting separates metal; it is not a welding process.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::tig-process"
+  },
+  {
+    "external_key": "AS-B44-034",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 1,
+    "stem": "Which wear indicator built into most modern brake pads signals the driver that replacement is needed?",
+    "choices": [
+      "A temperature strip on the caliper that turns black",
+      "A metal squealer tab that contacts the rotor and creates a squealing noise when the pad reaches minimum thickness",
+      "An electronic sensor that illuminates the check engine light",
+      "A paint mark on the pad that disappears when worn"
+    ],
+    "correct_index": 1,
+    "explanation": "Brake pads include a small spring-steel tab calibrated to contact the rotor face when the pad friction material wears to its service limit, creating a high-pitched squeal to alert the driver. Some premium vehicles add an electronic wear sensor that lights a dedicated dash warning, but the mechanical squealer is standard on most pads. The check engine light monitors emissions components, not brake wear. Temperature strips and paint marks are not production brake components.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::brake-wear-indicator"
+  },
+  {
+    "external_key": "AS-B44-035",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What is the minimum number of people recommended when moving a very heavy engine block with an engine hoist in the shop?",
+    "choices": [
+      "One experienced mechanic working alone is always sufficient",
+      "At least two people: one to operate the hoist and one to guide and steady the load",
+      "Three people are required by OSHA for any lift over 50 pounds",
+      "The number does not matter as long as the hoist is rated above the load weight"
+    ],
+    "correct_index": 1,
+    "explanation": "An engine hoist lifts the load but cannot prevent it from swinging, rotating, or catching on the vehicle or floor obstructions; a second person guides and steadies the load to prevent pinch injuries and collisions. One person cannot safely control an engine hoist and the load simultaneously. OSHA does not mandate a specific person count for all hoist operations, but two people is the industry-standard safe practice. Even a rated hoist can tip or allow the load to swing if misguided.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::engine-hoist-teamwork"
+  },
+  {
+    "external_key": "AS-B44-036",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A pressure test of the cooling system holds 15 psi for 10 minutes with no drop. The pressure cap is tested and releases at 14 psi. What can the technician conclude?",
+    "choices": [
+      "The system has a significant internal leak into the engine",
+      "The radiator cap is faulty and must be replaced immediately",
+      "The cooling system is leak-free and the cap releases within its rated range",
+      "The thermostat is stuck closed"
+    ],
+    "correct_index": 2,
+    "explanation": "A pressure test that holds without dropping confirms no external or internal leaks exist in the system. A cap rated at 14-16 psi that releases at 14 psi is performing correctly at the low end of its range, which is acceptable. If the system leaked, the test pressure would drop. A stuck thermostat would show up as an overheating symptom during operation, not in a cold static pressure test.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::cooling-pressure-test"
+  },
+  {
+    "external_key": "AS-B44-037",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "When performing an MIG weld, the technician notices excessive spatter, porosity, and a convex bead that does not wet into the base metal. The MOST likely cause is:",
+    "choices": [
+      "Shielding gas flow rate is too high, causing turbulence",
+      "Travel speed is too slow",
+      "Insufficient shielding gas coverage or contaminated base metal causing atmospheric contamination of the weld",
+      "The wire feed speed is too slow, causing a long arc"
+    ],
+    "correct_index": 2,
+    "explanation": "Spatter and porosity together with poor wetting are classic signs of atmospheric contamination: either the shielding gas is not reaching the puddle (low flow, blocked nozzle, draft) or the base metal is oily, rusty, or painted. Excess gas flow causes turbulence and can pull in air, but porosity is still from contamination. Slow travel builds up a large, high bead but does not by itself cause porosity. Wire feed speed affects arc stability, but the symptom cluster points to contamination.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::mig-contamination"
+  },
+  {
+    "external_key": "AS-B44-038",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "A technician measures rotor thickness at 0.870 inches. The rotor's minimum (discard) thickness specification is 0.860 inches. The correct action is:",
+    "choices": [
+      "The rotor passes and can be resurfaced only if the machined thickness will remain above 0.860 inches",
+      "Replace the rotor immediately since it is within 0.050 inches of minimum",
+      "The rotor is fine and no action is needed; minimum specs only apply to drums",
+      "Measure only the inner edge, which is the primary wear surface"
+    ],
+    "correct_index": 0,
+    "explanation": "At 0.870 inches the rotor is currently above the discard minimum, so it has not yet reached the limit. However, if resurfacing is planned, the machined-away thickness must be accounted for; if turning would drop thickness below 0.860 inches the rotor must be replaced instead. The rotor does not need immediate replacement simply because it is 0.010 inches above discard. Minimum specifications apply to both rotors and drums. Measuring only the inner edge ignores most of the rotor's wear surface.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::rotor-thickness"
+  },
+  {
+    "external_key": "AS-B44-039",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "An oxy-acetylene torch flame has a feathery white cone extending past the inner cone. This flame type is called:",
+    "choices": [
+      "Neutral flame",
+      "Oxidizing flame",
+      "Backfire flame",
+      "Carburizing (reducing) flame"
+    ],
+    "correct_index": 3,
+    "explanation": "A carburizing (reducing) flame has excess acetylene, visible as a feathery luminous cone between the inner cone and the outer envelope. A neutral flame has equal oxygen and acetylene with a sharp inner cone and no feather. An oxidizing flame has excess oxygen, producing a small, pointed, hissing inner cone. A backfire is a momentary pop when the flame retreats into the tip, not a flame type designation.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::torch-flame-types"
+  },
+  {
+    "external_key": "AS-B44-040",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 2,
+    "stem": "Power steering fluid that is foamy and gray instead of clear or red most likely indicates:",
+    "choices": [
+      "The fluid has exceeded its change interval and is slightly discolored",
+      "Air ingestion due to a low fluid level or a failing pump seal, combined with water contamination turning the fluid gray",
+      "Normal appearance after replacing the power steering pump",
+      "A clogged cabin air filter reducing fluid flow"
+    ],
+    "correct_index": 1,
+    "explanation": "Gray, foamy power steering fluid results from two problems occurring together: water contamination turning the fluid gray and air ingestion (from low level, suction-side leak, or bad pump shaft seal) creating foam. Neither condition is normal at any mileage. The cabin air filter is not connected to the hydraulic power steering system.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::power-steering-fluid"
+  },
+  {
+    "external_key": "AS-B44-041",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A technician finds that oil level on the dipstick is normal but oil consumption is high and the tailpipe emits blue-gray smoke only on cold startup, clearing after a minute. The MOST likely cause is:",
+    "choices": [
+      "Worn piston rings allowing oil to pass the compression stroke",
+      "Valve stem seals leaking oil past the valves while the engine sits overnight, then burning off at startup",
+      "A head gasket failure routing coolant into the combustion chamber",
+      "A clogged PCV valve causing excessive crankcase pressure"
+    ],
+    "correct_index": 1,
+    "explanation": "Blue-gray smoke specifically at cold startup that clears quickly is the signature of worn or hardened valve stem seals; overnight oil seeps past the seals and pools on the intake ports, burning off as a puff when the engine first fires. Worn rings cause blue smoke under load or acceleration rather than startup-only puffs. A bad head gasket routes coolant into the chamber, producing white steam that does not clear quickly. A clogged PCV can cause oil burning but typically shows persistent smoke under idle or load, not startup-only.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::valve-stem-seals"
+  },
+  {
+    "external_key": "AS-B44-042",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "After replacing a serpentine belt, the technician hears a chirping noise that changes with engine RPM. No belt misalignment is visible to the eye. The NEXT diagnostic step is:",
+    "choices": [
+      "Replace the alternator immediately",
+      "Tighten all accessory bolts to maximum torque",
+      "Apply belt dressing spray to permanently eliminate the chirp",
+      "Check each pulley for bearing roughness by spinning it by hand, and verify all pulleys are in the same plane using a straightedge"
+    ],
+    "correct_index": 3,
+    "explanation": "RPM-correlated chirp after a belt change almost always points to a pulley misaligned out of plane or a failing accessory bearing; spinning each pulley by hand locates bearing roughness, and a straightedge across the pulleys reveals any one that is offset. Belt dressing is a temporary mask and can damage EPDM belts. Replacing the alternator before diagnosis wastes parts. Over-torquing accessory mounts introduces new misalignment and can damage bearings.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::belt-chirp-diagnosis"
+  },
+  {
+    "external_key": "AS-B44-043",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A technician performs a cylinder leakage test and finds 45% leakage on cylinder 2. Compressed air introduced into cylinder 2 can be heard escaping from the air intake. What does this indicate?",
+    "choices": [
+      "The exhaust valves on cylinder 2 are leaking",
+      "A head gasket breach between cylinder 2 and the coolant jacket",
+      "The intake valve(s) on cylinder 2 are not seating properly",
+      "Worn piston rings allowing blow-by into the crankcase"
+    ],
+    "correct_index": 2,
+    "explanation": "A cylinder leakage test pressurizes the cylinder through the spark plug hole. Air escaping from the intake indicates the intake valve is not sealing. Air from the exhaust tailpipe points to a leaking exhaust valve. Air heard in the coolant overflow tank signals a head gasket leak. Air at the oil filler cap or PCV hose confirms worn piston rings and blow-by past the rings.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::leakdown-test"
+  },
+  {
+    "external_key": "AS-B44-044",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A stick (SMAW) weld on mild steel shows undercutting along both edges of the bead. The MOST likely causes are:",
+    "choices": [
+      "Travel speed too fast and amperage too high, which melts the base metal along the toes but fails to fill it back in",
+      "Amperage too low and travel speed too slow",
+      "Wrong electrode polarity combined with excessive shielding gas",
+      "Rod angle held perpendicular to the joint"
+    ],
+    "correct_index": 0,
+    "explanation": "Undercutting (a groove melted into the base metal at the bead edges that is not filled by weld metal) results from excessive heat combined with too-fast travel; the arc melts a notch into the parent metal but the puddle moves before it can fill the depression. Too low amperage and too slow travel cause a cold, piled bead, not undercutting. Stick welding uses no shielding gas (flux-coated rod provides its own). Rod angle affects bead profile but undercutting is primarily a heat and speed issue.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::weld-undercut"
+  },
+  {
+    "external_key": "AS-B44-045",
+    "subtest": "AS",
+    "topic_id": "as.maintenance-repair",
+    "difficulty": 3,
+    "stem": "A hydraulic lift shows no visible external leak but the vehicle slowly descends while on the lift over several hours. The MOST likely internal cause is:",
+    "choices": [
+      "The lift control valve or cylinder seals are bypassing fluid internally, allowing the load to sink",
+      "The hydraulic oil is too cold",
+      "The vehicle is too light for the lift's rated capacity",
+      "The lift's pump motor is running backward"
+    ],
+    "correct_index": 0,
+    "explanation": "A slow, leak-free descent on a hydraulic lift indicates internal bypass: the control valve's check ball or poppet is not seating fully, or the cylinder seals are allowing fluid to pass around the piston back to the reservoir under load. Cold oil would make the lift sluggish on the way up, not cause it to sink. Vehicle weight below the lift's rated capacity does not cause sinking. A backward pump would prevent raising the vehicle, not cause a gradual descent.",
+    "status": "verified",
+    "item_family_id": "as.maintenance-repair::hydraulic-lift-bypass"
+  },
+  {
+    "external_key": "AS-B44-046",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What fire classification applies to a fire involving ordinary combustibles such as wood, paper, and cloth?",
+    "choices": [
+      "Class A",
+      "Class C",
+      "Class K",
+      "Class B"
+    ],
+    "correct_index": 0,
+    "explanation": "Class A fires involve ordinary solid combustibles: wood, paper, fabric, and plastics. Class B covers flammable and combustible liquids and gases. Class C is for energized electrical equipment. Class K is for commercial cooking oils and fats. Knowing the class ensures you choose the correct extinguisher agent.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::fire-class-a"
+  },
+  {
+    "external_key": "AS-B44-047",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Why should oily or solvent-soaked rags be placed in an approved, self-closing metal container rather than left in a pile?",
+    "choices": [
+      "Metal containers prevent rags from being reused accidentally",
+      "Oily rags can undergo spontaneous combustion as drying oils oxidize and generate heat",
+      "Local codes require metal containers for appearance compliance",
+      "Solvent rags must be kept dry and metal containers prevent moisture"
+    ],
+    "correct_index": 1,
+    "explanation": "Rags soaked with drying oils (particularly linseed oil and some paint products) generate heat as the oil oxidizes; if piled loosely, heat builds faster than it dissipates and the rags can ignite without an external spark. A self-closing metal container limits oxygen and dissipates heat safely. Appearance codes and moisture prevention are not the safety rationale.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::spontaneous-combustion"
+  },
+  {
+    "external_key": "AS-B44-048",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "When using a bench vise to clamp a finished or machined part, what should be placed between the part and the vise jaws?",
+    "choices": [
+      "A damp cloth to prevent heat buildup",
+      "Soft jaw covers or copper/aluminum pads to protect the part's surface from marks",
+      "Grease to allow the part to shift under clamping pressure",
+      "Nothing; bare steel jaws provide the best grip"
+    ],
+    "correct_index": 1,
+    "explanation": "Hard serrated vise jaws bite into soft metals and finished surfaces; soft jaw inserts made of copper, aluminum, or plastic protect the part from denting and marking while still holding it firmly. Grease would allow the part to shift under tool force. A damp cloth provides no protection and can cause rust. Bare steel jaws on finished surfaces cause damage that may require rework.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::vise-jaw-pads"
+  },
+  {
+    "external_key": "AS-B44-049",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "What PPE is required when handling battery acid or strong cleaning chemicals in the shop?",
+    "choices": [
+      "Only leather work gloves and steel-toed boots",
+      "Welding gloves and a face shield rated for molten metal",
+      "Chemical-resistant (nitrile or neoprene) gloves and safety glasses or a splash-rated face shield",
+      "Thin latex exam gloves only"
+    ],
+    "correct_index": 2,
+    "explanation": "Sulfuric acid and caustic cleaners can burn through thin latex gloves instantly; nitrile or neoprene gloves resist chemical permeation. Safety glasses or a face shield protects eyes and face from splashes. Leather gloves absorb acids and solvents into the leather, concentrating the chemical against the skin. Welding PPE is designed for heat and UV, not chemical splash.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::chemical-ppe"
+  },
+  {
+    "external_key": "AS-B44-050",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 1,
+    "stem": "Which action should be taken BEFORE starting work on any vehicle electrical system to prevent accidental airbag deployment or sparks near the battery?",
+    "choices": [
+      "Disconnect the negative battery cable and wait the manufacturer-specified time for airbag system capacitors to discharge",
+      "Remove the fuse block entirely",
+      "Turn the ignition to accessory mode to discharge the system",
+      "Ground the positive cable to the frame to equalize voltage"
+    ],
+    "correct_index": 0,
+    "explanation": "Disconnecting the negative battery cable removes the power source; waiting the specified interval (typically 1-3 minutes) allows supplemental restraint system capacitors to discharge, preventing accidental airbag firing. Turning the key to accessory mode leaves power available and is not a safe isolation step. Removing the entire fuse block is excessive and could introduce other problems. Connecting the positive cable to the frame creates a direct short.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::airbag-precaution"
+  },
+  {
+    "external_key": "AS-B44-051",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "A shop receives a pallet of new aerosol paint cans. They should be stored:",
+    "choices": [
+      "Near the welding area for quick access during bodywork",
+      "In a cool, dry location away from heat sources, with temperatures below 120 degrees F, in a flammable storage cabinet if quantities are large",
+      "In direct sunlight outside to prevent moisture condensation inside the cans",
+      "On top of the hydraulic lift for shop convenience"
+    ],
+    "correct_index": 1,
+    "explanation": "Aerosol cans are pressurized with flammable propellants; elevated temperatures increase internal pressure and can cause violent rupture or explosion. OSHA and fire codes require flammable aerosols to be stored below 120 degrees F, away from ignition sources, and in larger quantities, in an approved flammable storage cabinet. Storing near welding or in direct sunlight violates these requirements. Hydraulic lifts are working equipment, not storage areas.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::aerosol-storage"
+  },
+  {
+    "external_key": "AS-B44-052",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "During plasma cutting operations in a poorly ventilated area, what respiratory protection is required?",
+    "choices": [
+      "A nuisance dust mask (N95) is sufficient for occasional plasma work",
+      "No respiratory protection is needed since plasma is just a hot air stream",
+      "A half-face respirator with OV/P100 cartridges appropriate for the base metal's fume hazard, or supplied air for heavy cutting",
+      "A standard surgical mask that protects against plasma fumes"
+    ],
+    "correct_index": 2,
+    "explanation": "Plasma cutting vaporizes base metal, coatings, and any contaminants; depending on the material, the fumes can include metal oxides, chromium compounds (stainless), or zinc oxide (galvanized). A dust mask filters particles but not metal fume. Surgical masks offer no filtration. A half-face respirator with OV/P100 combination cartridges (or supplied air for heavy cutting) addresses both gas-phase and particulate fume hazards.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::plasma-cutting-ppe"
+  },
+  {
+    "external_key": "AS-B44-053",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "What is the correct response when a co-worker contacts strong caustic (alkaline) chemical on their arm?",
+    "choices": [
+      "Flush the affected area with large amounts of cool running water for at least 15-20 minutes, then seek medical attention",
+      "Neutralize the alkali by immediately applying vinegar or another acid to the area",
+      "Apply a thick layer of hand lotion to soothe the skin",
+      "Pat the area dry and wait to see if symptoms develop"
+    ],
+    "correct_index": 0,
+    "explanation": "The immediate and most effective treatment for any caustic chemical on skin is copious water flushing for at least 15-20 minutes to dilute and remove the chemical before it penetrates deeper tissue. Applying an acid to neutralize an alkali can cause a secondary chemical reaction and release heat; neutralization is not recommended for skin exposure. Lotion provides no protection. Drying the area concentrates the chemical.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::chemical-burn-treatment"
+  },
+  {
+    "external_key": "AS-B44-054",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 2,
+    "stem": "When an energized electrical fire breaks out in a shop panel, which extinguisher agent should NEVER be used?",
+    "choices": [
+      "CO2 (carbon dioxide)",
+      "Dry chemical (ABC powder)",
+      "Water",
+      "Halotron (clean agent)"
+    ],
+    "correct_index": 2,
+    "explanation": "Water conducts electricity; applying it to an energized electrical fire creates electrocution risk for the firefighter and can spread the fire by arcing. CO2, dry chemical, and clean agents like Halotron are all non-conductive and are rated for Class C (electrical) fires. After power is de-energized, the fire reclassifies as Class A, and water would then be appropriate if the equipment is no longer live.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::electrical-fire-water"
+  },
+  {
+    "external_key": "AS-B44-055",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A shop worker discovers that a co-worker completed an energy-isolation procedure but used only a verbal lock, not a physical lock, on the machine's breaker. Maintenance is about to begin. The correct action is:",
+    "choices": [
+      "Proceed with maintenance since the verbal lock was clearly communicated",
+      "Ask the supervisor to verify the lock status before starting",
+      "Apply your own personal padlock to the energy-isolation point before beginning; never rely solely on verbal locks or another person's lock",
+      "Trust that the co-worker's lock will be applied before anyone starts work"
+    ],
+    "correct_index": 2,
+    "explanation": "OSHA LOTO standards require each worker at risk to apply their own personal lock to the energy-isolation device so that no single individual can re-energize the equipment until every person has removed their own lock. Verbal locks are never compliant; there is no physical barrier to prevent energization. Waiting for supervisor review delays a required safety step. Trusting another person's commitment is not a substitute for a physical lock.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::loto-personal-lock"
+  },
+  {
+    "external_key": "AS-B44-056",
+    "subtest": "AS",
+    "topic_id": "as.shop-safety",
+    "difficulty": 3,
+    "stem": "A technician is about to cut a section of fuel line on a vehicle that was just driven. After disconnecting the battery, what additional precaution is MOST important before making the cut?",
+    "choices": [
+      "Run the engine for two more minutes to burn off remaining fuel pressure",
+      "Wrap the fuel line in dry paper towels to absorb any drips",
+      "Work quickly to minimize exposure time to any vapors",
+      "Relieve fuel system pressure first by depressing the Schrader valve on the fuel rail or pulling the fuel pump fuse and cranking until stall, then place a Class B fire extinguisher within reach"
+    ],
+    "correct_index": 3,
+    "explanation": "A port-injected fuel system holds 30-60 psi; cutting a pressurized line sprays atomized gasoline over a large area, creating an explosive fuel-air mixture. Releasing pressure first (via the Schrader valve or pulling the fuel pump fuse and cranking until stall) reduces fuel to a slow drip. A nearby Class B extinguisher is a backup if ignition occurs. Running the engine worsens pressure. Paper towels absorb small drips but do not prevent a pressure-spray event. Working quickly does not reduce the hazard.",
+    "status": "verified",
+    "item_family_id": "as.shop-safety::fuel-line-pressure-relief"
+  }
+]

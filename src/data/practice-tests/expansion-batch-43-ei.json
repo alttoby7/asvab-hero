@@ -1,0 +1,920 @@
+[
+  {
+    "external_key": "EI-B43-001",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "In a simple series circuit, which statement about voltage is true?",
+    "choices": [
+      "Voltage is the same across every component",
+      "Voltage is zero across all components",
+      "Each component receives the full source voltage",
+      "Voltage divides among the components in proportion to their resistance"
+    ],
+    "correct_index": 3,
+    "explanation": "In a series circuit the same current flows through each component, and each component drops a portion of the supply voltage equal to I times its resistance. Components with larger resistance drop more voltage. The full source voltage appears only across a single component if it is the only resistor, and every component receiving the full source voltage describes a parallel circuit.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-voltage-distribution"
+  },
+  {
+    "external_key": "EI-B43-002",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Adding more branches in parallel to a circuit will have what effect on total circuit resistance?",
+    "choices": [
+      "Total resistance decreases",
+      "Total resistance stays the same",
+      "Total resistance increases",
+      "Total resistance doubles"
+    ],
+    "correct_index": 0,
+    "explanation": "Each new parallel branch provides an additional current path, lowering the total resistance below what it was before. Total resistance always decreases when a branch is added because the reciprocal sum 1/R_total = 1/R1 + 1/R2 + ... grows larger, making R_total smaller. Resistance doubling describes adding a resistor of the same value in series, not a parallel branch.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-adding-branch-lowers-R"
+  },
+  {
+    "external_key": "EI-B43-003",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Which statement best describes current behavior in a parallel circuit?",
+    "choices": [
+      "Current is the same in every branch",
+      "The branch with the highest resistance carries the most current",
+      "Current only flows in the branch with the lowest voltage",
+      "Current from the source splits among the branches"
+    ],
+    "correct_index": 3,
+    "explanation": "In a parallel circuit the source current divides among the branches; each branch carries current inversely proportional to its resistance (I = V/R with the same V across all branches). The branch with the highest resistance actually carries the least current, not the most. Every branch sees the same voltage, so the idea of a branch having a lower voltage is incorrect.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-current-splits"
+  },
+  {
+    "external_key": "EI-B43-004",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "A series-parallel circuit is one that contains:",
+    "choices": [
+      "Both series sections and parallel branches in the same network",
+      "Only a single loop with no branches",
+      "Only branches with no elements sharing the same current path",
+      "Alternating current only"
+    ],
+    "correct_index": 0,
+    "explanation": "A series-parallel (combination) circuit has at least one portion where components share the same current path (series) and at least one portion where components share the same two nodes (parallel). A single loop with no branches is purely series. A fully branched network with no common current segment is purely parallel. AC versus DC is unrelated to whether a circuit is series, parallel, or a combination.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-parallel-combo-define"
+  },
+  {
+    "external_key": "EI-B43-005",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 1,
+    "stem": "Kirchhoff's Current Law (KCL) states that at any node in a circuit:",
+    "choices": [
+      "The sum of currents entering equals the sum of currents leaving",
+      "Voltage rises equal voltage drops around every loop",
+      "Resistance is proportional to temperature",
+      "Power dissipated equals voltage squared divided by current"
+    ],
+    "correct_index": 0,
+    "explanation": "KCL is a statement of charge conservation: all current that flows into a junction must flow out of it. Voltage rises equaling voltage drops around a loop describes Kirchhoff's Voltage Law (KVL), which is a separate law. Resistance and temperature describe material properties, and the power expression given is dimensionally incorrect.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::kcl-node-statement"
+  },
+  {
+    "external_key": "EI-B43-006",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Four resistors of 5 Ω each are connected in series across a 20 V source. What current flows through the circuit?",
+    "choices": [
+      "1 A",
+      "4 A",
+      "0.25 A",
+      "5 A"
+    ],
+    "correct_index": 0,
+    "explanation": "Series resistances add: R_total = 5 + 5 + 5 + 5 = 20 Ω. Current = V/R = 20/20 = 1 A. Choosing 4 A would come from dividing 20 V by only one 5 Ω resistor. 0.25 A would require a 80 Ω total resistance. 5 A reverses the ratio (R/V instead of V/R).",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-four-resistors-current"
+  },
+  {
+    "external_key": "EI-B43-007",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Three 90 Ω resistors are connected in parallel. What is the total resistance?",
+    "choices": [
+      "270 Ω",
+      "90 Ω",
+      "45 Ω",
+      "30 Ω"
+    ],
+    "correct_index": 3,
+    "explanation": "For N equal resistors in parallel, R_total = R/N = 90/3 = 30 Ω. Adding all three (270 Ω) treats them as series. Keeping one value (90 Ω) ignores the other branches. 45 Ω would be correct only for two equal resistors in parallel (90/2).",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-three-equal-resistors"
+  },
+  {
+    "external_key": "EI-B43-009",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "Two branches are connected in parallel across a 24 V source. Branch A has 8 Ω and Branch B has 12 Ω. What is the total current from the source?",
+    "choices": [
+      "1 A",
+      "3 A",
+      "5 A",
+      "2 A"
+    ],
+    "correct_index": 2,
+    "explanation": "Branch A current = 24/8 = 3 A; Branch B current = 24/12 = 2 A. By KCL the source supplies 3 + 2 = 5 A. 3 A or 2 A would be only one branch. 1 A is the difference of the two branch currents, which has no meaning here.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::parallel-two-branch-source-current"
+  },
+  {
+    "external_key": "EI-B43-010",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 2,
+    "stem": "Applying KVL to a series loop with a 15 V source and two resistors gives drops of 9 V and 6 V. Which statement is correct?",
+    "choices": [
+      "KVL is satisfied because 9 + 6 = 15 V equals the source",
+      "The loop violates KVL because the drops do not equal each other",
+      "KVL requires the drops to be equal, so the circuit has an error",
+      "The drops should add to twice the source voltage"
+    ],
+    "correct_index": 0,
+    "explanation": "KVL states that the sum of voltage drops around a closed loop equals the total EMF (source). Here 9 + 6 = 15 V, which exactly matches the 15 V source, so KVL is satisfied. KVL does not require equal drops -- drops are proportional to resistance. The drops must sum to the source voltage, not to twice it.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::kvl-applied-to-loop"
+  },
+  {
+    "external_key": "EI-B43-011",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A 30 V source feeds a 10 Ω resistor in series with a parallel combination of a 20 Ω and a 60 Ω resistor. What is the voltage across the parallel combination?",
+    "choices": [
+      "18 V",
+      "12 V",
+      "10 V",
+      "30 V"
+    ],
+    "correct_index": 0,
+    "explanation": "Parallel combination: R_p = (20 * 60)/(20 + 60) = 1200/80 = 15 Ω. Total resistance = 10 + 15 = 25 Ω. Current = 30/25 = 1.2 A. Voltage across parallel section = 1.2 * 15 = 18 V. The 12 V choice is the series drop across the 10 Ω resistor (1.2 * 10). 30 V is the full source voltage. 10 V would require the parallel combination to equal only 8.3 Ω, which is not the case here.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-parallel-v-across-parallel"
+  },
+  {
+    "external_key": "EI-B43-012",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A 48 V source powers a circuit where R1 = 6 Ω is in series with two parallel resistors R2 = 8 Ω and R3 = 24 Ω. What is the total current from the source?",
+    "choices": [
+      "6 A",
+      "8 A",
+      "4 A",
+      "3 A"
+    ],
+    "correct_index": 2,
+    "explanation": "Parallel combination of 8 Ω and 24 Ω: R_p = (8 * 24)/(8 + 24) = 192/32 = 6 Ω. Total resistance = R1 + R_p = 6 + 6 = 12 Ω. Current = 48/12 = 4 A. 6 A would result from applying V only to the 8 Ω branch (48/8), ignoring the series resistor. 8 A divides the source by R1 alone. 3 A would require a total resistance of 16 Ω, which does not match these values.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-parallel-total-current-48v"
+  },
+  {
+    "external_key": "EI-B43-013",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A node in a parallel network has three branches with currents of 3 A, 5 A, and 2 A flowing into it. By KCL, the current leaving the node equals:",
+    "choices": [
+      "10 A",
+      "5 A",
+      "3 A",
+      "6 A"
+    ],
+    "correct_index": 0,
+    "explanation": "KCL requires that all current entering a node equals all current leaving it. The total current flowing in is 3 + 5 + 2 = 10 A, so 10 A must leave the node (returning to the source). 5 A would be only the largest single branch. 3 A is only the smallest. 6 A has no basis in the given values.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::kcl-three-branch-sum"
+  },
+  {
+    "external_key": "EI-B43-014",
+    "subtest": "EI",
+    "topic_id": "ei.circuit-types",
+    "difficulty": 3,
+    "stem": "A 100 V source, a 15 Ω resistor, and an unknown resistor R are in series. The voltage across R is 40 V. What is the value of R?",
+    "choices": [
+      "10 Ω",
+      "6 Ω",
+      "25 Ω",
+      "40 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "The drop across the 15 Ω resistor = 100 - 40 = 60 V. Current = 60/15 = 4 A. R = V_R/I = 40/4 = 10 Ω. 40 Ω confuses the voltage value with the resistance value. 6 Ω would give only 24 V at 4 A. 25 Ω would give 100 V at 4 A, which exceeds the source.",
+    "status": "verified",
+    "item_family_id": "ei.circuit-types::series-unknown-R-from-v-drop"
+  },
+  {
+    "external_key": "EI-B43-015",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A 15 ohm resistor and a 10 ohm resistor are connected in parallel across a 30 V source. What is the total power delivered by the source?",
+    "choices": [
+      "90 W",
+      "50 W",
+      "150 W",
+      "300 W"
+    ],
+    "correct_index": 2,
+    "explanation": "Parallel combination: R_p = (15 * 10)/(15 + 10) = 150/25 = 6 ohm. Total power = V^2/R_p = 30^2/6 = 900/6 = 150 W. Alternatively, I_total = 30/6 = 5 A and P = V * I = 30 * 5 = 150 W. 90 W is the power in the 10 ohm branch alone (30^2/10 = 90 W). 50 W has no direct basis. 300 W doubles the correct answer, a common factor-of-two error when the circuit structure is misread.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::parallel-total-power-source"
+  },
+  {
+    "external_key": "EI-B43-016",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "What does the color-code on a resistor indicate?",
+    "choices": [
+      "The maximum temperature the resistor can withstand",
+      "The material used to make the resistor",
+      "The resistance value and tolerance",
+      "The voltage rating of the resistor"
+    ],
+    "correct_index": 2,
+    "explanation": "Resistor color bands encode the resistance value in ohms and a tolerance percentage (for example, gold = 5%). Temperature ratings, material composition, and voltage ratings are not encoded in the standard color code; they appear in a component data sheet instead.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::resistor-color-code-meaning"
+  },
+  {
+    "external_key": "EI-B43-017",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "A capacitor blocks DC at steady state because:",
+    "choices": [
+      "It stores magnetic energy and repels DC",
+      "It converts DC to AC internally",
+      "It has zero resistance at all frequencies",
+      "It allows current only while charging; once fully charged no steady DC flows"
+    ],
+    "correct_index": 3,
+    "explanation": "When a DC source is applied, a capacitor charges until the voltage across its plates equals the source voltage; at that point current stops. No steady-state DC flows through the dielectric gap between the plates. Capacitors do not produce magnetic fields, convert DC to AC, or have zero resistance -- their impedance is 1/(2*pi*f*C), which approaches infinity as frequency approaches zero.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::capacitor-blocks-dc"
+  },
+  {
+    "external_key": "EI-B43-018",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "The unit of inductance is the:",
+    "choices": [
+      "Farad",
+      "Ohm",
+      "Watt",
+      "Henry"
+    ],
+    "correct_index": 3,
+    "explanation": "Inductance is measured in henries (H). The farad measures capacitance, the ohm measures resistance, and the watt measures power. One henry is defined as the inductance that produces a one-volt EMF when current changes at one ampere per second.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::henry-unit-inductance"
+  },
+  {
+    "external_key": "EI-B43-019",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "An NPN transistor is turned ON (conducting) when:",
+    "choices": [
+      "Its collector is connected directly to the emitter",
+      "Its base-emitter junction is reverse biased",
+      "A sufficient forward-bias voltage is applied between base and emitter",
+      "Its collector voltage is lower than its emitter voltage"
+    ],
+    "correct_index": 2,
+    "explanation": "In an NPN transistor, a small forward-bias current into the base-emitter junction opens the collector-emitter path, allowing much larger current to flow. Reverse biasing the base-emitter junction cuts off the transistor. Connecting collector to emitter is a short, not a turn-on signal. Collector voltage in normal active-mode operation is higher than emitter voltage for NPN.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::npn-transistor-turn-on"
+  },
+  {
+    "external_key": "EI-B43-020",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 1,
+    "stem": "Which component is specifically designed to allow current to flow in one direction and block it in the other?",
+    "choices": [
+      "Rheostat",
+      "Relay",
+      "Diode",
+      "Inductor"
+    ],
+    "correct_index": 2,
+    "explanation": "A diode is a two-terminal semiconductor device that conducts in the forward direction and blocks in the reverse direction, functioning as a one-way valve for current. A rheostat is a variable resistor. A relay is an electromechanical switch. An inductor opposes changes in current but passes DC in both directions.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::diode-one-way-current"
+  },
+  {
+    "external_key": "EI-B43-021",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "A step-up transformer has 50 turns on its primary and 400 turns on its secondary. If 25 V AC is applied to the primary, what is the secondary voltage?",
+    "choices": [
+      "3.125 V",
+      "100 V",
+      "200 V",
+      "400 V"
+    ],
+    "correct_index": 2,
+    "explanation": "Turns ratio N_s/N_p = 400/50 = 8. Secondary voltage V_s = V_p × (N_s/N_p) = 25 × 8 = 200 V. 3.125 V inverts the ratio. 100 V uses a 4:1 ratio instead of 8:1. 400 V confuses the number of secondary turns with the output voltage.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transformer-50-400-turns-step-up"
+  },
+  {
+    "external_key": "EI-B43-023",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A transformer with a primary current of 0.5 A at 240 V has a secondary voltage of 12 V. Assuming ideal operation, what is the secondary current?",
+    "choices": [
+      "10 A",
+      "0.025 A",
+      "2 A",
+      "0.5 A"
+    ],
+    "correct_index": 0,
+    "explanation": "By conservation of power in an ideal transformer, V_p × I_p = V_s × I_s. Solving: I_s = (240 × 0.5)/12 = 120/12 = 10 A. 0.025 A inverts the ratio. 2 A uses a 10:1 voltage ratio incorrectly. 0.5 A ignores the voltage step-down entirely.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transformer-240-12-current-ratio"
+  },
+  {
+    "external_key": "EI-B43-024",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "An inductor opposes changes in current because:",
+    "choices": [
+      "It converts extra current to heat",
+      "It increases resistance when current rises",
+      "It stores charge between its plates like a capacitor",
+      "Its stored magnetic field generates a back-EMF that counters the change"
+    ],
+    "correct_index": 3,
+    "explanation": "When current through an inductor tries to change, the collapsing or growing magnetic field induces a voltage (Lenz's law) that opposes the change. This back-EMF is the mechanism of inductive reactance. Inductors do not convert current to heat as their primary function (that is a resistor), do not increase DC resistance with current, and do not have plates (that is a capacitor).",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::inductor-back-emf-lenz"
+  },
+  {
+    "external_key": "EI-B43-025",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 2,
+    "stem": "Which of the following would most likely be used to smooth the pulsating DC output of a rectifier into steadier DC?",
+    "choices": [
+      "A transformer",
+      "A fuse",
+      "An NPN transistor",
+      "A filter capacitor"
+    ],
+    "correct_index": 3,
+    "explanation": "A large filter capacitor charges during voltage peaks and discharges during valleys, reducing the ripple and producing steadier DC. A transformer only steps AC voltage up or down. A fuse protects against overcurrent and plays no role in smoothing. A transistor can regulate voltage but is not the primary smoothing element in a basic rectifier filter.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::filter-capacitor-smoothing"
+  },
+  {
+    "external_key": "EI-B43-026",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A step-down transformer delivers 6 V AC to a resistive load drawing 3 A. The primary is connected to 120 V AC. Ignoring losses, what is the primary current?",
+    "choices": [
+      "0.15 A",
+      "60 A",
+      "3 A",
+      "0.05 A"
+    ],
+    "correct_index": 0,
+    "explanation": "Ideal transformer power conservation: I_p = (V_s × I_s)/V_p = (6 × 3)/120 = 18/120 = 0.15 A. 60 A inverts the fraction. 3 A ignores the voltage transformation. 0.05 A would correspond to a 360 V primary, not 120 V.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transformer-120-6-primary-current"
+  },
+  {
+    "external_key": "EI-B43-027",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "Three 12 µF capacitors are connected in parallel. The total capacitance is:",
+    "choices": [
+      "36 µF",
+      "4 µF",
+      "12 µF",
+      "6 µF"
+    ],
+    "correct_index": 0,
+    "explanation": "Capacitors in parallel add directly: C_total = 12 + 12 + 12 = 36 µF. 4 µF would be the series combination of three equal capacitors (12/3). 12 µF ignores two of the three capacitors. 6 µF would be the series result for only two equal capacitors.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::capacitors-three-parallel-add"
+  },
+  {
+    "external_key": "EI-B43-028",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "In a DC circuit at steady state, an ideal capacitor behaves like:",
+    "choices": [
+      "An open circuit that blocks all current",
+      "A short circuit that passes all current",
+      "A low-value resistor",
+      "A source of additional voltage"
+    ],
+    "correct_index": 0,
+    "explanation": "Once a capacitor is fully charged to the source voltage, no further steady current flows through it -- it appears as an open circuit to steady-state DC. This is the opposite of a steady-state inductor, which acts like a short. A capacitor does not generate voltage; it stores charge from the source. It is not a resistor because it dissipates no power.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::capacitor-dc-steady-state-open"
+  },
+  {
+    "external_key": "EI-B43-029",
+    "subtest": "EI",
+    "topic_id": "ei.components-devices",
+    "difficulty": 3,
+    "stem": "A transformer has 200 primary turns and must step 480 V AC down to 120 V AC. How many turns are needed on the secondary?",
+    "choices": [
+      "50 turns",
+      "800 turns",
+      "480 turns",
+      "400 turns"
+    ],
+    "correct_index": 0,
+    "explanation": "From V_s/V_p = N_s/N_p: N_s = N_p × (V_s/V_p) = 200 × (120/480) = 200 × 0.25 = 50 turns. 800 turns would produce a step-up (480 × 4 = 1920 V). 480 turns give a 1:2.4 ratio, not the needed 4:1 step-down. 400 turns give a 2:1 ratio, halving the voltage to 240 V, not 120 V.",
+    "status": "verified",
+    "item_family_id": "ei.components-devices::transformer-480-120-secondary-turns"
+  },
+  {
+    "external_key": "EI-B43-030",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A 12 ohm resistor is connected to a 48 V source and operates for 30 minutes. How much energy does it consume in kWh?",
+    "choices": [
+      "0.192 kWh",
+      "0.096 kWh",
+      "1.92 kWh",
+      "0.024 kWh"
+    ],
+    "correct_index": 1,
+    "explanation": "Power: P = V^2/R = 48^2/12 = 2304/12 = 192 W = 0.192 kW. Time = 30 min = 0.5 h. Energy = 0.192 kW * 0.5 h = 0.096 kWh. 0.192 kWh uses 1 full hour instead of 0.5 hours. 1.92 kWh misplaces the decimal when converting watts to kilowatts. 0.024 kWh divides by 4 hours instead of multiplying by 0.5 hours.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::energy-kwh-30min-run"
+  },
+  {
+    "external_key": "EI-B43-031",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Silver is the best electrical conductor among common metals, but copper is used far more widely in wiring. The main reason copper is preferred is:",
+    "choices": [
+      "Copper has lower resistivity than silver",
+      "Copper is far less expensive and nearly as conductive as silver",
+      "Copper is lighter than silver for the same wire length",
+      "Silver oxidizes and becomes non-conductive over time"
+    ],
+    "correct_index": 1,
+    "explanation": "Silver has slightly lower resistivity than copper, but copper is chosen for almost all wiring because it is dramatically cheaper while still having excellent conductivity. Silver is actually heavier than copper for the same wire dimensions. Silver oxide is still somewhat conductive, so oxidation is not the primary reason. Cost and practical conductivity together make copper the standard choice.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::copper-vs-silver-cost"
+  },
+  {
+    "external_key": "EI-B43-032",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Which of the following statements about semiconductors is correct?",
+    "choices": [
+      "They have zero resistance like superconductors",
+      "They are poor conductors at all temperatures",
+      "They only conduct at temperatures above 1000 degrees C",
+      "Their conductivity falls between that of conductors and insulators and can be modified by doping"
+    ],
+    "correct_index": 3,
+    "explanation": "Semiconductors such as silicon and germanium sit between conductors and insulators in conductivity. Adding impurity atoms (doping) creates either excess electrons (N-type) or holes (P-type), allowing precise control of conductivity. Superconductors have zero resistance, not semiconductors. Semiconductors generally conduct better at higher temperatures, not only above extreme temperatures.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::semiconductor-conductivity-range"
+  },
+  {
+    "external_key": "EI-B43-033",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "In AWG wire sizing, a 12 AWG wire compared with a 16 AWG wire of the same material is:",
+    "choices": [
+      "Thinner and has higher resistance per foot",
+      "Thinner and has lower resistance per foot",
+      "Thicker and has lower resistance per foot",
+      "The same diameter but coated with different insulation"
+    ],
+    "correct_index": 2,
+    "explanation": "AWG uses an inverse scale: lower gauge numbers indicate thicker wire. Thicker wire has a larger cross-sectional area, which gives it lower resistance per foot and a higher current-carrying capacity. 12 AWG is thicker than 16 AWG, so it has lower resistance per foot, not higher. Insulation type does not change the gauge number.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::awg-12-vs-16-comparison"
+  },
+  {
+    "external_key": "EI-B43-034",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "N-type silicon is created by adding which type of impurity?",
+    "choices": [
+      "A trivalent element such as boron that adds holes",
+      "A pentavalent element such as phosphorus that donates extra electrons",
+      "An insulating oxide layer to block current",
+      "A metallic dopant such as copper to increase free-electron density"
+    ],
+    "correct_index": 1,
+    "explanation": "N-type silicon is made by adding pentavalent (five-valence-electron) donor atoms like phosphorus or arsenic; the extra electron beyond the four needed for covalent bonds becomes a free carrier. Boron is a trivalent acceptor that creates P-type silicon with holes, not electrons. An oxide layer is used in MOSFETs as a gate insulator, not as a dopant. Copper is not used as a semiconductor dopant.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::n-type-dopant-phosphorus"
+  },
+  {
+    "external_key": "EI-B43-035",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 1,
+    "stem": "Which of these materials is commonly used as an insulator on high-voltage overhead power lines?",
+    "choices": [
+      "Aluminum",
+      "Porcelain or glass",
+      "Copper",
+      "Carbon"
+    ],
+    "correct_index": 1,
+    "explanation": "High-voltage overhead line insulators are made of porcelain or glass because these ceramics have very high resistivity, mechanical strength, and the ability to withstand weathering. Aluminum and copper are the conductors that carry current. Carbon (graphite) is a moderate conductor and would not insulate.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::porcelain-glass-hv-insulator"
+  },
+  {
+    "external_key": "EI-B43-036",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "A copper conductor has a resistance of 3 Ω. If a second copper conductor of the same material has half the length and twice the cross-sectional area, its resistance is:",
+    "choices": [
+      "0.75 Ω",
+      "6 Ω",
+      "1.5 Ω",
+      "3 Ω"
+    ],
+    "correct_index": 0,
+    "explanation": "R = rho*L/A. Halving L multiplies R by 0.5; doubling A multiplies R by 0.5 again. Net factor: 0.5 × 0.5 = 0.25. New R = 3 × 0.25 = 0.75 Ω. 6 Ω would result from doubling both dimensions. 1.5 Ω reflects only the length change. 3 Ω assumes no change at all.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::resistance-half-L-double-A"
+  },
+  {
+    "external_key": "EI-B43-037",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "For semiconductors, as temperature increases, electrical resistance generally:",
+    "choices": [
+      "Increases due to increased atomic vibration",
+      "Decreases because more electron-hole pairs are thermally generated",
+      "Stays constant because doping fixes the carrier count",
+      "Drops to zero like a superconductor"
+    ],
+    "correct_index": 1,
+    "explanation": "Unlike metals, intrinsic and lightly doped semiconductors generate more free electron-hole pairs as temperature rises (thermally excited carriers), which increases conductivity and decreases resistance. Metals increase resistance with temperature due to lattice vibration scattering. Doping sets a baseline carrier count but does not prevent thermal generation at higher temperatures. Semiconductors do not become superconductors.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::semiconductor-negative-temp-coeff"
+  },
+  {
+    "external_key": "EI-B43-038",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "A wire has a resistance of 2 Ω. A second wire of the same material and length has three times the cross-sectional area. Its resistance is approximately:",
+    "choices": [
+      "6 Ω",
+      "0.67 Ω",
+      "2 Ω",
+      "1 Ω"
+    ],
+    "correct_index": 1,
+    "explanation": "Resistance is inversely proportional to area: R2 = R1/3 = 2/3 ≈ 0.67 Ω. Tripling the area triples the available current paths, cutting resistance to one-third. 6 Ω would result from tripling resistance (as if area were one-third). 2 Ω ignores the area change. 1 Ω corresponds to halving resistance, which would need a doubled area.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::resistance-triple-area"
+  },
+  {
+    "external_key": "EI-B43-039",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "Aluminum is used for long-distance high-voltage power lines instead of copper primarily because:",
+    "choices": [
+      "Aluminum has lower resistivity than copper",
+      "Aluminum is non-magnetic whereas copper is magnetic",
+      "Aluminum does not corrode, while copper corrodes quickly in air",
+      "Aluminum is significantly lighter and less expensive, even though it is a slightly worse conductor"
+    ],
+    "correct_index": 3,
+    "explanation": "Aluminum's resistivity is higher than copper's, so aluminum cables must be thicker for the same current capacity. However, aluminum is roughly one-third the weight and much cheaper, making it the practical choice for long overhead runs where weight and material cost are critical. Both metals can corrode; copper actually forms a protective oxide layer. Neither metal is magnetic.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::aluminum-vs-copper-power-lines"
+  },
+  {
+    "external_key": "EI-B43-040",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 2,
+    "stem": "P-type semiconductor material is formed by adding a dopant that:",
+    "choices": [
+      "Has five valence electrons, donating free electrons",
+      "Has three valence electrons, creating electron vacancies called holes",
+      "Has eight valence electrons, filling all bonds and blocking current",
+      "Is a metal such as iron, adding magnetic properties"
+    ],
+    "correct_index": 1,
+    "explanation": "P-type doping uses trivalent (three-valence-electron) acceptor atoms such as boron or gallium. Each dopant atom can accept one electron from a neighboring silicon atom, leaving a positively charged vacancy called a hole that acts as a positive charge carrier. Pentavalent dopants create N-type material with excess electrons. Eight-valence-electron atoms do not exist in standard chemistry. Metals are not used as semiconductor dopants.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::p-type-dopant-boron-holes"
+  },
+  {
+    "external_key": "EI-B43-041",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A copper wire has a resistance of 0.5 Ω per 100 ft. A circuit requires a round-trip run of 300 ft total. What is the total wire resistance in the circuit?",
+    "choices": [
+      "0.5 Ω",
+      "3 Ω",
+      "1.5 Ω",
+      "0.15 Ω"
+    ],
+    "correct_index": 2,
+    "explanation": "Total wire length = 300 ft. Resistance = 0.5 Ω per 100 ft × 3 (hundreds of feet) = 1.5 Ω. 3 Ω would come from forgetting to convert to hundreds (treating 300 as if each foot had 0.5 Ω, giving 150 Ω -- or using 1 Ω/100 ft). 0.5 Ω is only one 100-ft segment. 0.15 Ω reverses the arithmetic (dividing instead of multiplying).",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::wire-resistance-total-run"
+  },
+  {
+    "external_key": "EI-B43-042",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A conductor carries 10 A with a line resistance of 0.3 Ω. How much power is wasted in the conductor?",
+    "choices": [
+      "3 W",
+      "0.3 W",
+      "30 W",
+      "100 W"
+    ],
+    "correct_index": 2,
+    "explanation": "Line losses: P = I^2 * R = 10^2 * 0.3 = 100 * 0.3 = 30 W. 3 W comes from using I instead of I^2 (P = I * R, wrong formula). 0.3 W ignores the current entirely. 100 W uses I^2 alone without multiplying by R (P = I^2 = 100, omitting the 0.3).",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::line-loss-i-squared-r"
+  },
+  {
+    "external_key": "EI-B43-043",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "Two wires are made of the same material. Wire X is 4 m long and has a cross-section of 2 mm^2. Wire Y is 8 m long and has a cross-section of 1 mm^2. The resistance of Wire Y compared with Wire X is:",
+    "choices": [
+      "The same resistance",
+      "Four times greater",
+      "Twice as great",
+      "Eight times greater"
+    ],
+    "correct_index": 1,
+    "explanation": "Using R = rho*L/A: R_X is proportional to 4/2 = 2k. R_Y is proportional to 8/1 = 8k. Ratio R_Y/R_X = 8/2 = 4, so Wire Y has four times the resistance of Wire X. Eight times would require doubling the length AND quartering the area. Twice as great would result from doubling length alone at the same cross-section. The resistances are not equal because both L and A differ.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::resistance-compare-L-A-ratio"
+  },
+  {
+    "external_key": "EI-B43-044",
+    "subtest": "EI",
+    "topic_id": "ei.conductors-insulators",
+    "difficulty": 3,
+    "stem": "A technician measures a metal conductor's resistance at 20 degrees C and again at 80 degrees C. Which result is expected?",
+    "choices": [
+      "Resistance at 80 degrees C is lower because the material expands",
+      "Resistance at 80 degrees C is higher due to increased lattice-vibration scattering of electrons",
+      "Resistance is unchanged because resistance depends only on length and area",
+      "Resistance drops to zero at any temperature above room temperature"
+    ],
+    "correct_index": 1,
+    "explanation": "Metals have a positive temperature coefficient of resistance: as temperature rises, atoms vibrate more vigorously, increasing collisions with conduction electrons and raising resistance. Thermal expansion slightly increases length and cross-section, but the dominant effect is scattering. Resistance depends on resistivity (rho), which changes with temperature for metals. Superconductors lose resistance near absolute zero, not at elevated temperatures.",
+    "status": "verified",
+    "item_family_id": "ei.conductors-insulators::metal-positive-temp-coefficient"
+  },
+  {
+    "external_key": "EI-B43-045",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "Which of the following correctly states Ohm's law as a formula for current?",
+    "choices": [
+      "I = V * R",
+      "I = R / V",
+      "I = V / R",
+      "I = V + R"
+    ],
+    "correct_index": 2,
+    "explanation": "Ohm's law in current form is I = V/R: current equals voltage divided by resistance. Multiplying V by R gives units of volt-ohms = V^2/A, not amperes. Dividing R by V gives ohms/volt = 1/A (siemens per volt), not current. Adding voltage and resistance is dimensionally invalid since they have different units.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::ohms-law-current-form"
+  },
+  {
+    "external_key": "EI-B43-046",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "A device operating at 120 V AC is rated for 60 Hz. If it is plugged into a 50 Hz supply at 120 V, the voltage is correct but the frequency is wrong. What type of AC frequency does the US standard grid supply?",
+    "choices": [
+      "25 Hz",
+      "50 Hz",
+      "400 Hz",
+      "60 Hz"
+    ],
+    "correct_index": 3,
+    "explanation": "The US standard for residential and commercial AC power is 60 Hz (60 cycles per second). Most of Europe and many other regions use 50 Hz. 400 Hz is used in aviation and military applications. 25 Hz was used in some early North American systems but is obsolete.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::us-60hz-ac-standard"
+  },
+  {
+    "external_key": "EI-B43-047",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "Energy consumed in kilowatt-hours (kWh) is calculated as:",
+    "choices": [
+      "Power in kilowatts divided by time in hours",
+      "Voltage times current times resistance",
+      "Power in kilowatts multiplied by time in hours",
+      "Current squared times time in hours"
+    ],
+    "correct_index": 2,
+    "explanation": "Energy (kWh) = power (kW) × time (h). For example, a 2 kW heater running for 3 hours uses 6 kWh. Dividing power by time gives power per unit time, which is not meaningful in this context. Voltage times current times resistance gives V * I * R = V * V = V^2, which is not energy. Current squared times hours has units of A^2*h, not kWh.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::kwh-energy-formula"
+  },
+  {
+    "external_key": "EI-B43-048",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "The RMS voltage of a standard US outlet is approximately 120 V. The peak voltage of that sine wave is approximately:",
+    "choices": [
+      "85 V",
+      "240 V",
+      "120 V",
+      "170 V"
+    ],
+    "correct_index": 3,
+    "explanation": "For a sine wave, V_peak = V_RMS * sqrt(2) = 120 * 1.414 ≈ 170 V. 85 V comes from dividing by sqrt(2) instead of multiplying. 120 V treats peak and RMS as equal. 240 V is the US 240 V service voltage, not the peak of the 120 V RMS waveform.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::peak-from-120-rms"
+  },
+  {
+    "external_key": "EI-B43-049",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 1,
+    "stem": "If the resistance in a circuit is doubled and the voltage is held constant, the current will:",
+    "choices": [
+      "Double",
+      "Stay the same",
+      "Quadruple",
+      "Be cut in half"
+    ],
+    "correct_index": 3,
+    "explanation": "By Ohm's law, I = V/R. With V constant, doubling R causes I to drop to V/(2R) = half the original current. Doubling current would require halving resistance. Quadrupling applies to power (P = V^2/R) when voltage doubles, not to current when resistance doubles with constant voltage. Current would only stay the same if resistance also doubled -- which it does, so that is exactly why it halves, not stays the same.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::double-r-halve-I"
+  },
+  {
+    "external_key": "EI-B43-050",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 15 Ω resistor carries 3 A. What power does it dissipate?",
+    "choices": [
+      "135 W",
+      "5 W",
+      "45 W",
+      "225 W"
+    ],
+    "correct_index": 0,
+    "explanation": "P = I^2 * R = 3^2 * 15 = 9 * 15 = 135 W. 225 W would come from P = I^2 * R with I = 3 and R = 25, not 15. 45 W uses P = I * R (forgetting to square the current): 3 * 15 = 45 W. 5 W comes from P = R/I = 15/3, which is dimensionally incorrect.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::p-i2r-15-ohm-3-amp"
+  },
+  {
+    "external_key": "EI-B43-051",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 240 V appliance consumes 2400 W. What current does it draw?",
+    "choices": [
+      "0.1 A",
+      "20 A",
+      "10 A",
+      "100 A"
+    ],
+    "correct_index": 2,
+    "explanation": "I = P/V = 2400/240 = 10 A. 20 A would result from using 120 V (a 120 V circuit) instead of 240 V. 0.1 A inverts the fraction (V/P instead of P/V). 100 A is a factor-of-10 arithmetic error.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::current-from-240v-2400w"
+  },
+  {
+    "external_key": "EI-B43-052",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A sinusoidal AC source has a peak voltage of 340 V. What is its RMS voltage?",
+    "choices": [
+      "480 V",
+      "170 V",
+      "340 V",
+      "240 V"
+    ],
+    "correct_index": 3,
+    "explanation": "V_RMS = V_peak * 0.707 = 340 * 0.707 ≈ 240 V. This is why 240 V RMS outlets have a peak voltage near 340 V. 170 V would be the RMS of a 120 V-RMS outlet (170 V peak corresponds to 120 V RMS). 480 V multiplies instead of multiplying by 0.707. 340 V treats peak and RMS as equal.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::peak-340v-to-rms"
+  },
+  {
+    "external_key": "EI-B43-053",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A lamp has a resistance of 48 Ω when at operating temperature. If powered by a 120 V source, how much power does it consume?",
+    "choices": [
+      "300 W",
+      "2.5 A",
+      "5760 W",
+      "57.6 W"
+    ],
+    "correct_index": 0,
+    "explanation": "P = V^2/R = 120^2/48 = 14400/48 = 300 W. Alternatively, I = 120/48 = 2.5 A, then P = 120 * 2.5 = 300 W. 5760 W comes from multiplying V * R instead of dividing (120 * 48). 57.6 W misplaces a decimal. 2.5 A is the current, not the power, and has the wrong unit.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::power-v2-over-R-lamp"
+  },
+  {
+    "external_key": "EI-B43-054",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 2,
+    "stem": "A 500 W motor runs continuously for 4 hours. How many kilowatt-hours of energy does it use?",
+    "choices": [
+      "0.5 kWh",
+      "2 kWh",
+      "125 kWh",
+      "2000 kWh"
+    ],
+    "correct_index": 1,
+    "explanation": "Power = 500 W = 0.5 kW. Energy = 0.5 kW * 4 h = 2 kWh. 0.5 kWh would be for only one hour of operation. 125 kWh results from forgetting to convert watts to kilowatts (500 * 4/16 instead of 0.5 * 4). 2000 kWh confuses the units and multiplies 500 * 4 without dividing by 1000.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::motor-kwh-4hr"
+  },
+  {
+    "external_key": "EI-B43-055",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "A 12 V DC source powers a series circuit with R1 = 2 Ω and R2 = 4 Ω. What is the power dissipated by R2?",
+    "choices": [
+      "8 W",
+      "16 W",
+      "4 W",
+      "2 W"
+    ],
+    "correct_index": 1,
+    "explanation": "Total R = 2 + 4 = 6 Ω. Current I = 12/6 = 2 A. P_R2 = I^2 * R2 = 4 * 4 = 16 W. Alternatively, V_R2 = 2 * 4 = 8 V, and P = V^2/R2 = 64/4 = 16 W. 8 W uses P = I * R2 without squaring the current (2 * 4). 4 W uses only the resistor value without applying Ohm's law. 2 W is the current value, not the power.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::series-power-dissipated-R2"
+  },
+  {
+    "external_key": "EI-B43-056",
+    "subtest": "EI",
+    "topic_id": "ei.ohms-law-power",
+    "difficulty": 3,
+    "stem": "An electric water heater draws 18 A from a 240 V supply and runs for 2 hours per day. What is the daily energy consumption in kWh?",
+    "choices": [
+      "4.32 kWh",
+      "8.64 kWh",
+      "0.864 kWh",
+      "43.2 kWh"
+    ],
+    "correct_index": 1,
+    "explanation": "Power = V * I = 240 * 18 = 4320 W = 4.32 kW. Energy per day = 4.32 kW * 2 h = 8.64 kWh. 4.32 kWh would be for only one hour. 0.864 kWh is off by a factor of 10 (forgetting that 4320 W = 4.32 kW, not 0.432 kW). 43.2 kWh multiplies by 10 hours instead of 2, a factor-of-5 error.",
+    "status": "verified",
+    "item_family_id": "ei.ohms-law-power::water-heater-daily-kwh"
+  }
+]
