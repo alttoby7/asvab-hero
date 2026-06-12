@@ -32,6 +32,7 @@ import TestimonialPrompt from "@/components/app/TestimonialPrompt";
 import MasteryMap from "@/components/app/MasteryMap";
 import QuickActions from "@/components/app/QuickActions";
 import LogOfficialScoresCard from "@/components/app/LogOfficialScoresCard";
+import SetTestDateCard from "@/components/app/SetTestDateCard";
 import { getScoreTimeline, type ScoreTimeline } from "@/lib/score-timeline/queries";
 
 interface ProfileData {
@@ -437,6 +438,15 @@ export default function AppHomePage() {
         targetTestDate={profile.target_test_date}
         testType={profile.test_type}
         onLogged={() => setRefreshKey((k) => k + 1)}
+      />
+
+      {/* Test-date capture, prompts until a specific date is set (the
+          countdown plan + test-date email sequence both key off it). */}
+      <SetTestDateCard
+        userId={session.user.id}
+        targetTestDate={profile.target_test_date}
+        hasBucket={!!profile.target_test_date_bucket}
+        onSaved={() => setRefreshKey((k) => k + 1)}
       />
 
       {/* Your Plan, the routine contract (replaces the old Mission card so the
