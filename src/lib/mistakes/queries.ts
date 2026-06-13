@@ -15,6 +15,12 @@ export function isClosedLoopEnabled(): boolean {
   return process.env.NEXT_PUBLIC_CLOSED_LOOP_ENABLED === "true";
 }
 
+/** Build-time flag for the pre-reveal confidence read + confidently-wrong
+ *  resurfacing (Lever D). Off until flipped in the Cloudflare Pages env. */
+export function isConfidenceEnabled(): boolean {
+  return process.env.NEXT_PUBLIC_CONFIDENCE_ENABLED === "true";
+}
+
 /** AFQT subtests (the enlistment-eligibility score). Surfaced first. */
 const AFQT_SUBTESTS = new Set(["AR", "MK", "WK", "PC"]);
 
@@ -24,6 +30,8 @@ export interface DueReviewRow {
   topic_id: string | null;
   repetitions: number;
   due_at: string;
+  /** A miss the user was SURE about, surfaced first (Lever D). */
+  confidently_wrong?: boolean;
 }
 
 /** Count of unresolved reviews that are due now. Cheap (head + exact count). */
@@ -58,7 +66,7 @@ export async function getDueMistakes(
     const sb = getSupabaseBrowserClient() as any;
     const { data, error } = await sb
       .from("question_reviews")
-      .select("question_id, subtest, topic_id, repetitions, due_at")
+      .select("question_id, subtest, topic_id, repetitions, due_at, confidently_wrong")
       .eq("user_id", userId)
       .eq("resolved", false)
       .lte("due_at", new Date().toISOString())
@@ -66,10 +74,15 @@ export async function getDueMistakes(
     if (error || !data) return [];
     const rows = [...(data as DueReviewRow[])];
 
+    // Confidently-wrong items always surface first (Lever D): they're the
+    // highest-value reviews, the misses the student wouldn't think to revisit.
+    const cw = (r: DueReviewRow) => (r.confidently_wrong ? 0 : 1);
+
     const priority = opts?.prioritySubtests;
     if (priority && priority.length > 0) {
       const rank = new Map(priority.map((s, i) => [s, i]));
       return rows.sort((a, b) => {
+        if (cw(a) !== cw(b)) return cw(a) - cw(b);
         const ar = rank.has(a.subtest) ? (rank.get(a.subtest) as number) : Infinity;
         const br = rank.has(b.subtest) ? (rank.get(b.subtest) as number) : Infinity;
         if (ar !== br) return ar - br;
@@ -78,6 +91,7 @@ export async function getDueMistakes(
     }
 
     return rows.sort((a, b) => {
+      if (cw(a) !== cw(b)) return cw(a) - cw(b);
       const aAfqt = AFQT_SUBTESTS.has(a.subtest) ? 0 : 1;
       const bAfqt = AFQT_SUBTESTS.has(b.subtest) ? 0 : 1;
       if (aAfqt !== bAfqt) return aAfqt - bAfqt;
@@ -99,4 +113,38 @@ export async function gradeMistakeReview(
     p_question_id: questionId,
     p_correct: correct,
   });
+}
+
+/**
+ * Fold the session debrief's signal onto the banked review rows so it informs
+ * resurfacing (Lever D): a sure-miss becomes confidently_wrong, and the error
+ * tag is stamped on the row. Best-effort, owned rows under RLS (no RPC). A
+ * review row only exists for an actual miss, so a no-op on hits is correct.
+ */
+export async function tagReviewsFromDebrief(
+  items: Array<{
+    questionId: string;
+    errorTag?: "concept" | "setup" | "careless" | "time" | null;
+    confidence?: "sure" | "unsure" | null;
+  }>,
+): Promise<void> {
+  const tagged = items.filter((i) => i.errorTag || i.confidence === "sure");
+  if (tagged.length === 0) return;
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const sb = getSupabaseBrowserClient() as any;
+    await Promise.all(
+      tagged.map((i) => {
+        const patch: Record<string, unknown> = {};
+        if (i.errorTag) patch.last_error_tag = i.errorTag;
+        if (i.confidence === "sure") patch.confidently_wrong = true;
+        return sb
+          .from("question_reviews")
+          .update(patch)
+          .eq("question_id", i.questionId);
+      }),
+    );
+  } catch {
+    /* signal, not gating */
+  }
 }

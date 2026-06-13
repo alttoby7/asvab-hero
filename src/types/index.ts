@@ -107,6 +107,8 @@ export type TestPhase = "intro" | "testing" | "review" | "results";
 export interface UserAnswer {
   questionId: string;
   selectedIndex: number | null;
+  /** Pre-reveal confidence read (Lever D calibration). Optional. */
+  confidence?: "sure" | "unsure" | null;
 }
 
 export interface SubtestResult {
@@ -189,6 +191,10 @@ export interface Attempt {
     correct: number;
     topic_id: string;
     is_correct: boolean;
+    /** Pre-reveal confidence (Lever D). Read by ingest to flag confidently-wrong. */
+    confidence?: "sure" | "unsure" | null;
+    /** Max scaffold rung revealed on this item (Lever B). */
+    hints_used?: number;
   }>;
   /** Prep-mode snapshot at write time (AFCT cohort measurement). */
   test_type?: string | null;

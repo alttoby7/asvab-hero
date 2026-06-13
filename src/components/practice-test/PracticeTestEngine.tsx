@@ -25,6 +25,8 @@ import {
   generateClientAttemptId,
 } from "@/lib/practice/profile-sync";
 import { markAnonDiagnosticUsed } from "@/lib/practice/gate";
+import { isConfidenceEnabled } from "@/lib/mistakes/queries";
+import { isScaffoldsEnabled } from "./QuestionScaffolds";
 import {
   scoreBySubtest,
   scoreByTopic,
@@ -52,12 +54,37 @@ import Timer from "./Timer";
 import ReviewMode from "./ReviewMode";
 import TestResults from "./TestResults";
 
+/** Summary handed to the Daily Session loop when an embedded station finishes. */
+export interface StationCompletionSummary {
+  /** Stable client attempt id for this station's attempt. */
+  attemptId: string;
+  correct: number;
+  total: number;
+  /** Items the user got wrong, for the debrief's error tagging. */
+  missed: Array<{ questionId: string; subtest?: string; topicId?: string }>;
+}
+
 interface PracticeTestEngineProps {
   variant?: string;
   subtest?: AsvabSubtest;
   /** Optional override; otherwise pulled from loaded variant. */
   testName?: string;
   testDescription?: string;
+  /** Daily Session embed: skip the standalone results page for a compact
+   *  "station complete -> continue" panel, and (optionally) auto-start. */
+  embedded?: boolean;
+  /** Embedded only: start the test immediately on load (skip the intro card). */
+  autoStart?: boolean;
+  /** Override the variant clock (seconds), e.g. a tightened timed station. */
+  timeOverrideSeconds?: number;
+  /** Fired once after the attempt is saved (embedded stations). */
+  onStationComplete?: (summary: StationCompletionSummary) => void;
+  /** Fired when the user taps Continue on the embedded completion panel. */
+  onContinue?: () => void;
+  /** Pro entitlement, gates the deeper in-question scaffold rungs (Lever B). */
+  isPro?: boolean;
+  /** Lever C: show a live on-pace/behind indicator (timed section rehearsal). */
+  enforcePacing?: boolean;
 }
 
 const STORAGE_KEY = "asvab-hero-practice-test";
@@ -80,6 +107,13 @@ export default function PracticeTestEngine({
   subtest,
   testName,
   testDescription,
+  embedded = false,
+  autoStart = false,
+  timeOverrideSeconds,
+  onStationComplete,
+  onContinue,
+  isPro = false,
+  enforcePacing = false,
 }: PracticeTestEngineProps) {
   const [phase, setPhase] = useState<TestPhase>("intro");
   const [loadState, setLoadState] = useState<LoadState>("idle");
@@ -98,8 +132,11 @@ export default function PracticeTestEngine({
   const [didSaveAttempt, setDidSaveAttempt] = useState(false);
   const startTimeRef = useRef<number>(0);
   const clientAttemptIdRef = useRef<string>("");
+  // Lever B: max scaffold rung revealed per question (questionId -> count).
+  const hintsUsedRef = useRef<Map<string, number>>(new Map());
 
-  const timeLimitSeconds = variant?.rules.time_seconds ?? 36 * 60;
+  const timeLimitSeconds =
+    timeOverrideSeconds ?? variant?.rules.time_seconds ?? 36 * 60;
   const timeLimitMinutes = Math.round(timeLimitSeconds / 60);
 
   // Display copy: prefer prop, then variant.name, then sensible default.
@@ -125,7 +162,7 @@ export default function PracticeTestEngine({
         if (cancelled) return;
         setVariant(v);
         setPool(p);
-        setTimeRemaining(v.rules.time_seconds);
+        setTimeRemaining(timeOverrideSeconds ?? v.rules.time_seconds);
         setLoadState("ready");
       } catch {
         if (!cancelled) setLoadState("error");
@@ -192,9 +229,10 @@ export default function PracticeTestEngine({
     if (phase !== "testing" && phase !== "review") return;
     if (!variant) return;
 
+    const clockSeconds = timeOverrideSeconds ?? variant.rules.time_seconds;
     const interval = setInterval(() => {
       const elapsed = Math.floor((Date.now() - startTimeRef.current) / 1000);
-      const remaining = variant.rules.time_seconds - elapsed;
+      const remaining = clockSeconds - elapsed;
       if (remaining <= 0) {
         setTimeRemaining(0);
         setPhase("results");
@@ -240,7 +278,8 @@ export default function PracticeTestEngine({
       setCurrentIndex(0);
       startTimeRef.current = Date.now();
       clientAttemptIdRef.current = generateClientAttemptId();
-      setTimeRemaining(variant.rules.time_seconds);
+      hintsUsedRef.current = new Map();
+      setTimeRemaining(timeOverrideSeconds ?? variant.rules.time_seconds);
       setDidSaveAttempt(false);
       setPhase("testing");
       localStorage.removeItem(STORAGE_KEY);
@@ -325,6 +364,18 @@ export default function PracticeTestEngine({
     [variant, pool, startFresh]
   );
 
+  // Embedded auto-start: in the Daily Session loop, skip the intro card and
+  // begin the station's practice as soon as the variant + pool are ready.
+  const autoStartedRef = useRef(false);
+  useEffect(() => {
+    if (!embedded || !autoStart) return;
+    if (autoStartedRef.current) return;
+    if (loadState !== "ready" || !variant || pool.length === 0) return;
+    if (phase !== "intro") return;
+    autoStartedRef.current = true;
+    startTest(false);
+  }, [embedded, autoStart, loadState, variant, pool, phase, startTest]);
+
   const handleSelect = (optionIndex: number) => {
     setAnswers((prev) =>
       prev.map((a) =>
@@ -333,6 +384,23 @@ export default function PracticeTestEngine({
           : a
       )
     );
+  };
+
+  const handleSetConfidence = (c: "sure" | "unsure") => {
+    setAnswers((prev) =>
+      prev.map((a) =>
+        a.questionId === shuffledQuestions[currentIndex].id
+          ? { ...a, confidence: c }
+          : a
+      )
+    );
+  };
+
+  const handleScaffoldReveal = (rungCount: number) => {
+    const id = shuffledQuestions[currentIndex]?.id;
+    if (!id) return;
+    const prev = hintsUsedRef.current.get(id) ?? 0;
+    hintsUsedRef.current.set(id, Math.max(prev, rungCount));
   };
 
   const goNext = () => {
@@ -394,6 +462,9 @@ export default function PracticeTestEngine({
       const answerMap = new Map(
         answers.map((a) => [a.questionId, a.selectedIndex])
       );
+      const confidenceMap = new Map(
+        answers.map((a) => [a.questionId, a.confidence ?? null])
+      );
       const questionResults = shuffledQuestions.map((q) => {
         const sel = answerMap.get(q.id) ?? null;
         return {
@@ -402,6 +473,8 @@ export default function PracticeTestEngine({
           correct: q.correctIndex,
           topic_id: q.topicId ?? `${q.subtest.toLowerCase()}.unknown`,
           is_correct: sel === q.correctIndex,
+          confidence: confidenceMap.get(q.id) ?? null,
+          hints_used: hintsUsedRef.current.get(q.id) ?? 0,
         };
       });
 
@@ -468,6 +541,24 @@ export default function PracticeTestEngine({
         });
       }
 
+      // Daily Session embed: hand the loop this station's outcome (incl. the
+      // missed items, for the debrief's error tagging).
+      if (onStationComplete) {
+        const missed = shuffledQuestions
+          .filter((q) => (answerMap.get(q.id) ?? null) !== q.correctIndex)
+          .map((q) => ({
+            questionId: q.id,
+            subtest: q.subtest,
+            topicId: q.topicId ?? undefined,
+          }));
+        onStationComplete({
+          attemptId: clientAttemptIdRef.current || payload.client_attempt_id,
+          correct,
+          total: shuffledQuestions.length,
+          missed,
+        });
+      }
+
       // Mark diagnostic used after submit so the gate fires on next attempt.
       if (variantCode === "diagnostic") {
         if (userId) {
@@ -486,7 +577,7 @@ export default function PracticeTestEngine({
         }
       }
     })();
-  }, [phase, didSaveAttempt, variant, shuffledQuestions, answers, subtest, userId]);
+  }, [phase, didSaveAttempt, variant, shuffledQuestions, answers, subtest, userId, onStationComplete]);
 
   const handleSubmit = () => {
     setPhase("results");
@@ -597,6 +688,39 @@ export default function PracticeTestEngine({
 
   // ─── RESULTS ───
   if (phase === "results") {
+    // Embedded (Daily Session): a compact "station complete" panel instead of
+    // the full standalone results page. The loop owns what comes next.
+    if (embedded) {
+      const correctCount = totalCorrect(shuffledQuestions, answers);
+      const pct =
+        shuffledQuestions.length > 0
+          ? Math.round((correctCount / shuffledQuestions.length) * 100)
+          : 0;
+      return (
+        <div
+          className="rounded-2xl border border-navy-border bg-navy-light p-6 text-center"
+          style={{ animation: "fadeIn 0.3s ease-out" }}
+        >
+          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent-dim">
+            <svg className="h-6 w-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+          </div>
+          <p className="font-display text-lg font-bold text-text-primary">
+            Station complete
+          </p>
+          <p className="mt-1 text-sm text-text-secondary">
+            {correctCount} of {shuffledQuestions.length} correct ({pct}%)
+          </p>
+          <button
+            onClick={() => onContinue?.()}
+            className="mt-5 w-full rounded-xl bg-accent px-6 py-3 font-display text-base font-bold text-white transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)]"
+          >
+            Continue
+          </button>
+        </div>
+      );
+    }
     return (
       <TestResults
         questions={shuffledQuestions}
@@ -639,10 +763,31 @@ export default function PracticeTestEngine({
   );
   if (!currentQuestion) return null;
 
+  // Lever C: live pacing read. "On pace" when you've reached at least as many
+  // questions as the elapsed-time budget expects; otherwise "behind".
+  const elapsedSeconds = Math.max(0, timeLimitSeconds - timeRemaining);
+  const targetPerQuestion =
+    shuffledQuestions.length > 0 ? timeLimitSeconds / shuffledQuestions.length : 0;
+  const expectedIndex = targetPerQuestion > 0 ? elapsedSeconds / targetPerQuestion : 0;
+  const onPace = currentIndex + 1 >= expectedIndex;
+
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between gap-4">
-        <Timer timeRemaining={timeRemaining} />
+        <div className="flex items-center gap-2">
+          <Timer timeRemaining={timeRemaining} />
+          {enforcePacing && (
+            <span
+              className={`rounded-md px-2 py-1 text-xs font-bold ${
+                onPace
+                  ? "bg-accent-dim text-accent"
+                  : "bg-red-400/15 text-red-300"
+              }`}
+            >
+              {onPace ? "On pace" : "Behind, speed up"}
+            </span>
+          )}
+        </div>
         <button
           onClick={() => setPhase("review")}
           className="rounded-lg border border-navy-border px-3 py-1.5 text-xs font-medium text-text-secondary transition-colors hover:bg-navy-lighter hover:text-text-primary"
@@ -669,6 +814,12 @@ export default function PracticeTestEngine({
           onNext={goNext}
           isFirst={currentIndex === 0}
           isLast={currentIndex === shuffledQuestions.length - 1}
+          confidenceEnabled={isConfidenceEnabled()}
+          confidence={currentAnswer?.confidence ?? null}
+          onSetConfidence={handleSetConfidence}
+          scaffoldsEnabled={isScaffoldsEnabled()}
+          isPro={isPro}
+          onScaffoldReveal={handleScaffoldReveal}
         />
       </div>
     </div>

@@ -98,3 +98,27 @@ export function canStartVariant(opts: {
   // users, paid gates scale/intensity. Pro is already short-circuited above.
   return { allowed: false, reason: "pro_only_variant" };
 }
+
+// ─── Daily Study Session gating ──────────────────────────────────────────────
+//
+// Free users get a genuine TASTE of the mission loop, then the full prescribed
+// loop is the core Pro value (locked decision: "free taste, Pro full loop").
+// Free taste = the warm-up (due mistakes), the prescribed micro-lesson, and the
+// first focused drill; the timed block + the debrief/next-day scheduling (the
+// retention engine) are Pro. The baseline diagnostic is always free, everyone
+// needs a standing before the loop can prescribe anything.
+const FREE_SESSION_STATIONS = new Set<string>([
+  "warmup",
+  "lesson",
+  "drill",
+  "diagnostic",
+]);
+
+export function canAccessSessionStation(
+  stationKind: string,
+  isPro: boolean,
+): GateDecision {
+  if (isPro) return { allowed: true };
+  if (FREE_SESSION_STATIONS.has(stationKind)) return { allowed: true };
+  return { allowed: false, reason: "pro_only_variant" };
+}

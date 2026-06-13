@@ -50,6 +50,9 @@ function PracticeTestInner() {
     rawSubtest && ALL_SUBTESTS.includes(rawSubtest as AsvabSubtest)
       ? (rawSubtest as AsvabSubtest)
       : undefined;
+  // Lever C: the weekly-plan timed-section step links with &timed=1. Consume it
+  // (it was previously dropped) to turn on the live pacing indicator.
+  const enforcePacing = searchParams.get("timed") === "1";
 
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
@@ -131,7 +134,14 @@ function PracticeTestInner() {
     );
   }
 
-  return <PracticeTestEngineWithEvent variant={variant} subtest={subtest} />;
+  return (
+    <PracticeTestEngineWithEvent
+      variant={variant}
+      subtest={subtest}
+      isPro={entitlement.isPro}
+      enforcePacing={enforcePacing}
+    />
+  );
 }
 
 function TestBlockedScreenWithEvent({
@@ -186,9 +196,13 @@ function TestBlockedScreenWithEvent({
 function PracticeTestEngineWithEvent({
   variant,
   subtest,
+  isPro,
+  enforcePacing,
 }: {
   variant: string;
   subtest?: AsvabSubtest;
+  isPro?: boolean;
+  enforcePacing?: boolean;
 }) {
   useEffect(() => {
     const eventName =
@@ -204,7 +218,14 @@ function PracticeTestEngineWithEvent({
       trackEvent("gt_block_start", { variant, prep_test_type: "afct" });
     }
   }, [variant, subtest]);
-  return <PracticeTestEngine variant={variant} subtest={subtest} />;
+  return (
+    <PracticeTestEngine
+      variant={variant}
+      subtest={subtest}
+      isPro={isPro}
+      enforcePacing={enforcePacing}
+    />
+  );
 }
 
 export default function PracticeTestClient() {
