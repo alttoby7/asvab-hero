@@ -193,6 +193,8 @@ export interface Attempt {
     is_correct: boolean;
     /** Pre-reveal confidence (Lever D). Read by ingest to flag confidently-wrong. */
     confidence?: "sure" | "unsure" | null;
+    /** Max scaffold rung revealed on this item (Lever B). */
+    hints_used?: number;
   }>;
   /** Prep-mode snapshot at write time (AFCT cohort measurement). */
   test_type?: string | null;

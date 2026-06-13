@@ -403,6 +403,7 @@ function StationView({
         <PracticeTestEngine
           embedded
           autoStart
+          isPro={isPro}
           variant="subtest_drill"
           subtest={station.subtest ?? weakestSubtest}
           testName={station.title}
@@ -419,6 +420,7 @@ function StationView({
         <PracticeTestEngine
           embedded
           autoStart
+          isPro={isPro}
           variant={adaptiveLive ? station.variant ?? "afqt_adaptive" : "subtest_drill"}
           subtest={adaptiveLive ? undefined : weakestSubtest}
           timeOverrideSeconds={10 * 60}
@@ -433,6 +435,7 @@ function StationView({
         <PracticeTestEngine
           embedded
           autoStart
+          isPro={isPro}
           variant="diagnostic"
           testName={station.title}
           onStationComplete={onStationResult}

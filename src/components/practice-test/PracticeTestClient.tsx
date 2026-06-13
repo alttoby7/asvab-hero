@@ -128,7 +128,13 @@ function PracticeTestInner() {
     );
   }
 
-  return <PracticeTestEngineWithEvent variant={variant} subtest={subtest} />;
+  return (
+    <PracticeTestEngineWithEvent
+      variant={variant}
+      subtest={subtest}
+      isPro={entitlement.isPro}
+    />
+  );
 }
 
 function TestBlockedScreenWithEvent({
@@ -183,9 +189,11 @@ function TestBlockedScreenWithEvent({
 function PracticeTestEngineWithEvent({
   variant,
   subtest,
+  isPro,
 }: {
   variant: string;
   subtest?: AsvabSubtest;
+  isPro?: boolean;
 }) {
   useEffect(() => {
     const eventName =
@@ -201,7 +209,7 @@ function PracticeTestEngineWithEvent({
       trackEvent("gt_block_start", { variant, prep_test_type: "afct" });
     }
   }, [variant, subtest]);
-  return <PracticeTestEngine variant={variant} subtest={subtest} />;
+  return <PracticeTestEngine variant={variant} subtest={subtest} isPro={isPro} />;
 }
 
 export default function PracticeTestClient() {

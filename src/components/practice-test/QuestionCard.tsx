@@ -1,5 +1,6 @@
 import type { PracticeQuestion } from "@/types";
 import { SUBTEST_NAMES } from "@/types";
+import QuestionScaffolds from "./QuestionScaffolds";
 
 interface QuestionCardProps {
   question: PracticeQuestion;
@@ -15,6 +16,10 @@ interface QuestionCardProps {
   confidenceEnabled?: boolean;
   confidence?: "sure" | "unsure" | null;
   onSetConfidence?: (c: "sure" | "unsure") => void;
+  /** Lever B: in-question scaffolds (hint -> steps -> worked example). */
+  scaffoldsEnabled?: boolean;
+  isPro?: boolean;
+  onScaffoldReveal?: (rungCount: number) => void;
 }
 
 const OPTION_LETTERS = ["A", "B", "C", "D"] as const;
@@ -32,6 +37,9 @@ export default function QuestionCard({
   confidenceEnabled = false,
   confidence = null,
   onSetConfidence,
+  scaffoldsEnabled = false,
+  isPro = false,
+  onScaffoldReveal,
 }: QuestionCardProps) {
   return (
     <div
@@ -92,6 +100,15 @@ export default function QuestionCard({
           );
         })}
       </fieldset>
+
+      {/* In-question scaffolds (Lever B): guided help before grading. */}
+      {scaffoldsEnabled && (
+        <QuestionScaffolds
+          topicId={question.topicId}
+          isPro={isPro}
+          onReveal={onScaffoldReveal}
+        />
+      )}
 
       {/* Confidence read (Lever D): only after an answer is picked. Calibration
           training, rating then getting feedback shrinks confident-wrong errors. */}

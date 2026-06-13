@@ -24,6 +24,7 @@ import {
 } from "@/lib/practice/profile-sync";
 import { markAnonDiagnosticUsed } from "@/lib/practice/gate";
 import { isConfidenceEnabled } from "@/lib/mistakes/queries";
+import { isScaffoldsEnabled } from "./QuestionScaffolds";
 import {
   scoreBySubtest,
   scoreByTopic,
@@ -78,6 +79,8 @@ interface PracticeTestEngineProps {
   onStationComplete?: (summary: StationCompletionSummary) => void;
   /** Fired when the user taps Continue on the embedded completion panel. */
   onContinue?: () => void;
+  /** Pro entitlement, gates the deeper in-question scaffold rungs (Lever B). */
+  isPro?: boolean;
 }
 
 const STORAGE_KEY = "asvab-hero-practice-test";
@@ -105,6 +108,7 @@ export default function PracticeTestEngine({
   timeOverrideSeconds,
   onStationComplete,
   onContinue,
+  isPro = false,
 }: PracticeTestEngineProps) {
   const [phase, setPhase] = useState<TestPhase>("intro");
   const [loadState, setLoadState] = useState<LoadState>("idle");
@@ -123,6 +127,8 @@ export default function PracticeTestEngine({
   const [didSaveAttempt, setDidSaveAttempt] = useState(false);
   const startTimeRef = useRef<number>(0);
   const clientAttemptIdRef = useRef<string>("");
+  // Lever B: max scaffold rung revealed per question (questionId -> count).
+  const hintsUsedRef = useRef<Map<string, number>>(new Map());
 
   const timeLimitSeconds =
     timeOverrideSeconds ?? variant?.rules.time_seconds ?? 36 * 60;
@@ -267,6 +273,7 @@ export default function PracticeTestEngine({
       setCurrentIndex(0);
       startTimeRef.current = Date.now();
       clientAttemptIdRef.current = generateClientAttemptId();
+      hintsUsedRef.current = new Map();
       setTimeRemaining(timeOverrideSeconds ?? variant.rules.time_seconds);
       setDidSaveAttempt(false);
       setPhase("testing");
@@ -374,6 +381,13 @@ export default function PracticeTestEngine({
     );
   };
 
+  const handleScaffoldReveal = (rungCount: number) => {
+    const id = shuffledQuestions[currentIndex]?.id;
+    if (!id) return;
+    const prev = hintsUsedRef.current.get(id) ?? 0;
+    hintsUsedRef.current.set(id, Math.max(prev, rungCount));
+  };
+
   const goNext = () => {
     if (currentIndex < shuffledQuestions.length - 1) {
       setCurrentIndex((i) => i + 1);
@@ -445,6 +459,7 @@ export default function PracticeTestEngine({
           topic_id: q.topicId ?? `${q.subtest.toLowerCase()}.unknown`,
           is_correct: sel === q.correctIndex,
           confidence: confidenceMap.get(q.id) ?? null,
+          hints_used: hintsUsedRef.current.get(q.id) ?? 0,
         };
       });
 
@@ -766,6 +781,9 @@ export default function PracticeTestEngine({
           confidenceEnabled={isConfidenceEnabled()}
           confidence={currentAnswer?.confidence ?? null}
           onSetConfidence={handleSetConfidence}
+          scaffoldsEnabled={isScaffoldsEnabled()}
+          isPro={isPro}
+          onScaffoldReveal={handleScaffoldReveal}
         />
       </div>
     </div>
