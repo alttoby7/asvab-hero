@@ -9,6 +9,8 @@ import { trackEvent } from "@/lib/analytics";
 import { loadDeckSummaries } from "@/lib/flashcards/queries";
 import { FREE_DECK_SLUG, type DeckSummary } from "@/lib/flashcards/types";
 import { getDueMistakeCount, isClosedLoopEnabled } from "@/lib/mistakes/queries";
+import { isDailySessionEnabled } from "@/lib/session/queries";
+import BandLadder from "@/components/session/BandLadder";
 import { getHomeTrajectory } from "@/lib/trajectory/queries";
 import type { HomeTrajectory } from "@/lib/trajectory/types";
 import {
@@ -308,6 +310,7 @@ export default function AppHomePage() {
 
   const { isPro } = entitlement;
   const closedLoopEnabled = isClosedLoopEnabled();
+  const dailySessionEnabled = isDailySessionEnabled();
   const greeting = profile.display_name || profile.email.split("@")[0];
   const countdown = getTestDateCountdown(
     profile.target_test_date,
@@ -389,6 +392,19 @@ export default function AppHomePage() {
   const officialDate = scoreTimeline?.latestOfficialDate ?? null;
   const hasOfficialAfqt = (scoreTimeline?.officialCount ?? 0) > 0;
 
+  // Band-ladder inputs (AFQT only; GT users see the GT card instead). Band-only,
+  // no raw point score, mirrors the trajectory contract.
+  const primaryMetric = trajectory?.primary_metric ?? null;
+  const ladderCurrentBand =
+    primaryMetric && primaryMetric.code === "AFQT"
+      ? primaryMetric.current_band_key
+      : standing?.afqt_band_key ?? null;
+  const ladderProjectedBand =
+    primaryMetric && primaryMetric.code === "AFQT"
+      ? primaryMetric.projected_band_key
+      : trajectory?.projected_test_day?.afqt_band_key ?? null;
+  const primaryJob = (trajectory?.target_jobs ?? []).find((j) => j.is_primary) ?? null;
+
   // Testimonial prompt, only after a genuine win (a 7-day streak, or a 2nd
   // diagnostic that improved). The component itself shows once (localStorage).
   const earliestDiagnostic = diagnostics[diagnostics.length - 1] ?? null;
@@ -428,8 +444,49 @@ export default function AppHomePage() {
         />
       )}
 
-      {/* Today's Prescription (single highest-leverage action) */}
-      <PrescriptionCard prescription={prescription} />
+      {/* Hero: one path. When the daily-session loop is live it replaces the
+          single-action prescription card with a "start today's session" CTA. */}
+      {dailySessionEnabled ? (
+        <Link
+          href="/app/session"
+          className="block rounded-2xl border border-accent/40 bg-accent-dim/40 p-5 no-underline transition-all hover:border-accent/70 hover:shadow-[0_0_24px_var(--color-accent-glow)] sm:p-6"
+        >
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wide text-accent">
+                Today&apos;s session
+              </p>
+              <h2 className="mt-1 font-display text-xl font-bold text-text-primary">
+                {prescription.headline.startsWith("Review")
+                  ? "Start with your due mistakes"
+                  : "Start today's session"}
+              </h2>
+              <p className="mt-1 text-sm text-text-secondary">
+                One guided path: warm up, learn, drill, then a timed block. We&apos;ll line up tomorrow.
+              </p>
+            </div>
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent text-white">
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </span>
+          </div>
+        </Link>
+      ) : (
+        /* Today's Prescription (single highest-leverage action) */
+        <PrescriptionCard prescription={prescription} />
+      )}
+
+      {/* AFQT band ladder, the motivational climb (band-only). */}
+      {dailySessionEnabled && !isGtMode && (
+        <BandLadder
+          currentBandKey={ladderCurrentBand}
+          projectedBandKey={ladderProjectedBand}
+          confidence={standing?.overall_confidence ?? "low"}
+          primaryJobTitle={primaryJob?.title ?? null}
+          primaryJobQualifies={primaryJob?.overall_status === "qualifies"}
+        />
+      )}
 
       {/* Official-score capture, prompts until a real official AFQT is logged. */}
       <LogOfficialScoresCard

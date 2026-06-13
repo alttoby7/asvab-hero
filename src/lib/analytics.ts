@@ -372,3 +372,17 @@ if (typeof window !== "undefined") {
     // swallow
   }
 }
+
+// =====================================================================
+// Daily Study Session ("Mission Loop") events. Appended at EOF to keep
+// three-way merges with concurrent branches conflict-free. Fired via the
+// GA4 trackEvent() wrapper (string names, like gt_block_complete).
+// =====================================================================
+export const SessionEvents = {
+  SessionStart: "session_start",
+  StationView: "session_station_view",
+  StationComplete: "session_station_complete",
+  DebriefTagged: "session_debrief_tagged",
+  SessionComplete: "session_complete",
+  PaywallHit: "session_paywall_hit",
+} as const;
