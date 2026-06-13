@@ -81,6 +81,8 @@ interface PracticeTestEngineProps {
   onContinue?: () => void;
   /** Pro entitlement, gates the deeper in-question scaffold rungs (Lever B). */
   isPro?: boolean;
+  /** Lever C: show a live on-pace/behind indicator (timed section rehearsal). */
+  enforcePacing?: boolean;
 }
 
 const STORAGE_KEY = "asvab-hero-practice-test";
@@ -109,6 +111,7 @@ export default function PracticeTestEngine({
   onStationComplete,
   onContinue,
   isPro = false,
+  enforcePacing = false,
 }: PracticeTestEngineProps) {
   const [phase, setPhase] = useState<TestPhase>("intro");
   const [loadState, setLoadState] = useState<LoadState>("idle");
@@ -748,10 +751,31 @@ export default function PracticeTestEngine({
   );
   if (!currentQuestion) return null;
 
+  // Lever C: live pacing read. "On pace" when you've reached at least as many
+  // questions as the elapsed-time budget expects; otherwise "behind".
+  const elapsedSeconds = Math.max(0, timeLimitSeconds - timeRemaining);
+  const targetPerQuestion =
+    shuffledQuestions.length > 0 ? timeLimitSeconds / shuffledQuestions.length : 0;
+  const expectedIndex = targetPerQuestion > 0 ? elapsedSeconds / targetPerQuestion : 0;
+  const onPace = currentIndex + 1 >= expectedIndex;
+
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between gap-4">
-        <Timer timeRemaining={timeRemaining} />
+        <div className="flex items-center gap-2">
+          <Timer timeRemaining={timeRemaining} />
+          {enforcePacing && (
+            <span
+              className={`rounded-md px-2 py-1 text-xs font-bold ${
+                onPace
+                  ? "bg-accent-dim text-accent"
+                  : "bg-red-400/15 text-red-300"
+              }`}
+            >
+              {onPace ? "On pace" : "Behind, speed up"}
+            </span>
+          )}
+        </div>
         <button
           onClick={() => setPhase("review")}
           className="rounded-lg border border-navy-border px-3 py-1.5 text-xs font-medium text-text-secondary transition-colors hover:bg-navy-lighter hover:text-text-primary"

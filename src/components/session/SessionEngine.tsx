@@ -424,6 +424,7 @@ function StationView({
           variant={adaptiveLive ? station.variant ?? "afqt_adaptive" : "subtest_drill"}
           subtest={adaptiveLive ? undefined : weakestSubtest}
           timeOverrideSeconds={10 * 60}
+          enforcePacing
           testName={station.title}
           onStationComplete={onStationResult}
           onContinue={onAdvance}
