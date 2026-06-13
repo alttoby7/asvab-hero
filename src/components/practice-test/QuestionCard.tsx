@@ -11,6 +11,10 @@ interface QuestionCardProps {
   onNext: () => void;
   isFirst: boolean;
   isLast: boolean;
+  /** Lever D: show the pre-reveal "how sure?" read once an answer is picked. */
+  confidenceEnabled?: boolean;
+  confidence?: "sure" | "unsure" | null;
+  onSetConfidence?: (c: "sure" | "unsure") => void;
 }
 
 const OPTION_LETTERS = ["A", "B", "C", "D"] as const;
@@ -25,6 +29,9 @@ export default function QuestionCard({
   onNext,
   isFirst,
   isLast,
+  confidenceEnabled = false,
+  confidence = null,
+  onSetConfidence,
 }: QuestionCardProps) {
   return (
     <div
@@ -85,6 +92,32 @@ export default function QuestionCard({
           );
         })}
       </fieldset>
+
+      {/* Confidence read (Lever D): only after an answer is picked. Calibration
+          training, rating then getting feedback shrinks confident-wrong errors. */}
+      {confidenceEnabled && selectedIndex !== null && (
+        <div className="flex items-center gap-3 rounded-xl border border-navy-border bg-navy px-4 py-3">
+          <span className="text-sm text-text-secondary">How sure are you?</span>
+          <div className="ml-auto flex gap-2">
+            {(["sure", "unsure"] as const).map((c) => (
+              <button
+                key={c}
+                onClick={() => onSetConfidence?.(c)}
+                aria-pressed={confidence === c}
+                className={`rounded-lg border px-3 py-1.5 text-xs font-semibold transition-colors ${
+                  confidence === c
+                    ? c === "sure"
+                      ? "border-accent bg-accent-dim text-accent"
+                      : "border-navy-lighter bg-navy-lighter text-text-primary"
+                    : "border-navy-border text-text-secondary hover:bg-navy-lighter"
+                }`}
+              >
+                {c === "sure" ? "I'm sure" : "Not sure"}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Navigation */}
       <div className="flex items-center justify-between border-t border-navy-border pt-5">

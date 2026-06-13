@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
-import { getDueMistakeCount } from "@/lib/mistakes/queries";
+import { getDueMistakeCount, tagReviewsFromDebrief } from "@/lib/mistakes/queries";
 import { getHomeTrajectory } from "@/lib/trajectory/queries";
 import type { HomeTrajectory, SubtestEstimates } from "@/lib/trajectory/types";
 import { weakTopicStudyGuides } from "@/lib/practice/recommender";
@@ -242,6 +242,15 @@ export default function SessionEngine({
       if (sessionId) {
         await Promise.all([
           logErrorTags({ userId, sessionId, tags: tags.filter((t) => t.errorTag || t.confidence) }),
+          // Fold the debrief signal onto the banked reviews so it drives what
+          // resurfaces (sure-misses first, error tag stamped). Best-effort.
+          tagReviewsFromDebrief(
+            tags.map((t) => ({
+              questionId: t.questionId,
+              errorTag: t.errorTag ?? null,
+              confidence: t.confidence ?? null,
+            })),
+          ),
           completeSession({
             sessionId,
             userId,

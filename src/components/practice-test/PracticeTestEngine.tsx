@@ -23,6 +23,7 @@ import {
   generateClientAttemptId,
 } from "@/lib/practice/profile-sync";
 import { markAnonDiagnosticUsed } from "@/lib/practice/gate";
+import { isConfidenceEnabled } from "@/lib/mistakes/queries";
 import {
   scoreBySubtest,
   scoreByTopic,
@@ -363,6 +364,16 @@ export default function PracticeTestEngine({
     );
   };
 
+  const handleSetConfidence = (c: "sure" | "unsure") => {
+    setAnswers((prev) =>
+      prev.map((a) =>
+        a.questionId === shuffledQuestions[currentIndex].id
+          ? { ...a, confidence: c }
+          : a
+      )
+    );
+  };
+
   const goNext = () => {
     if (currentIndex < shuffledQuestions.length - 1) {
       setCurrentIndex((i) => i + 1);
@@ -422,6 +433,9 @@ export default function PracticeTestEngine({
       const answerMap = new Map(
         answers.map((a) => [a.questionId, a.selectedIndex])
       );
+      const confidenceMap = new Map(
+        answers.map((a) => [a.questionId, a.confidence ?? null])
+      );
       const questionResults = shuffledQuestions.map((q) => {
         const sel = answerMap.get(q.id) ?? null;
         return {
@@ -430,6 +444,7 @@ export default function PracticeTestEngine({
           correct: q.correctIndex,
           topic_id: q.topicId ?? `${q.subtest.toLowerCase()}.unknown`,
           is_correct: sel === q.correctIndex,
+          confidence: confidenceMap.get(q.id) ?? null,
         };
       });
 
@@ -748,6 +763,9 @@ export default function PracticeTestEngine({
           onNext={goNext}
           isFirst={currentIndex === 0}
           isLast={currentIndex === shuffledQuestions.length - 1}
+          confidenceEnabled={isConfidenceEnabled()}
+          confidence={currentAnswer?.confidence ?? null}
+          onSetConfidence={handleSetConfidence}
         />
       </div>
     </div>
