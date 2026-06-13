@@ -480,8 +480,8 @@ export default function AppHomePage() {
       {/* AFQT band ladder, the motivational climb (band-only). */}
       {dailySessionEnabled && !isGtMode && (
         <BandLadder
-          currentBandKey={ladderCurrentBand}
-          projectedBandKey={ladderProjectedBand}
+          currentBandKey={(standing?.attempt_count ?? 0) > 0 ? ladderCurrentBand : null}
+          projectedBandKey={(standing?.attempt_count ?? 0) > 0 ? ladderProjectedBand : null}
           confidence={standing?.overall_confidence ?? "low"}
           primaryJobTitle={primaryJob?.title ?? null}
           primaryJobQualifies={primaryJob?.overall_status === "qualifies"}
