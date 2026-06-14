@@ -4,8 +4,9 @@ target_keyword: asvab scores explained
 site_url: https://asvabhero.com
 country: us
 first_optimized: 2026-05-22
-cycles: 1
-last_verdict: first-run
+last_reviewed: 2026-06-14
+cycles: 2
+last_verdict: hold
 ---
 
 # /asvab-scores-explained — Optimization Log
@@ -79,3 +80,37 @@ Low-KD cluster (`asvab scores explained`, `understanding asvab scores`, `how are
 - HEAD: `43758f2483f8c6bf2b9f60b25dbbfcf5f1c00efe`
 - File blob: `ada6d715aeaa9e521ef0ab020e4a6c70396bdca9`
 - Notes: edits uncommitted at cycle close (user controls commits).
+
+---
+
+## Cycle 2 — 2026-06-14 (REVIEW)
+
+**Verdict: HOLD. No changes applied.** Cycle 1's hypothesis was correct and the page is still maturing.
+
+### Measured outcome of Cycle 1 (drift attribution)
+
+| Metric | Baseline (2026-05-22, 90d) | Now (2026-06-14, 90d) | Change |
+|---|---|---|---|
+| Avg position | 61 | 35.8 | **+25 positions** (page 6 → page 4) |
+| Impressions | 632 | 2,213 | **3.5×** |
+| Clicks | 0 | 4 | nominal (still page 4) |
+
+The Cycle 1 title/H1 relevance fix + FAQ schema 5→10 moved the page ~25 spots and tripled impressions. Attribution is clean: the only edits to this URL between baseline and now were Cycle 1's (no competing independent changes to the file). Rankings typically keep maturing 8–12 weeks, so further drift up is expected without action.
+
+### Why HOLD (no Cycle 2 edits)
+
+1. **Not a content gap** — Cycle 1 already established depth exceeds 4/5 competitors (~2,400w + 4 interactive components). More copy = bloat, not ranking. (Owner is HCU-sensitive; padding a working page is exactly the wrong risk.)
+2. **Not a linking gap** — incoming internal-link audit: **41 in-content links + Footer + Nav + the homepage `HomePopularLinks` hub** already point here. One of the best-linked pages on the site.
+3. **Remaining barrier = domain authority + time.** SERP for the head/adjacent terms is authority-gated: "asvab score range" (5,300/mo) top-10 = officialasvab.com (DR 62), asvabprogram.com (DR 64, 8.4k traffic), airforce.com (DR 79), petersons (DR 75), Reddit (DR 95), nationalguard (DR 75) + an AI Overview. On-page edits won't out-muscle that.
+
+### Flag for separate investigation (not this cycle)
+
+The page pulls heavy **AFQT-term** impressions (afqt, afqt categories, afqt percentile, afqt meaning, afqt vs asvab) at pos 46–80 while a dedicated `/afqt-score` page exists → possible mild cannibalization. Worth a focused cannibalization check later; do NOT edit either page reactively without it.
+
+### Next review
+
+Re-pull GSC ~2026-07-26 (≈6 weeks). Expect continued drift toward page 2–3 on the low-KD cluster from Cycle 1 alone. If it stalls at page 3–4, the lever is authority (backlinks / a homepage-body link), not more on-page. Redirect active optimization effort to weak-SERP targets in the meantime.
+
+### Git state at end of cycle
+
+- Review only; the page content file was NOT modified this cycle. Log + index.json updated.
