@@ -17,6 +17,15 @@
       "last_reviewed": "2026-06-14",
       "cycles": 1,
       "last_verdict": "first-run"
+    },
+    {
+      "url": "/asvab-score-converter",
+      "target_keyword": "asvab score converter",
+      "log_file": "urls/asvab-score-converter.md",
+      "first_optimized": "2026-06-14",
+      "last_reviewed": "2026-06-14",
+      "cycles": 1,
+      "last_verdict": "skip-low-roi"
     }
   ]
 }
