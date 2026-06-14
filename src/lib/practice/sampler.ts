@@ -517,6 +517,53 @@ async function loadDueExternalKeys(userId: string): Promise<Set<string>> {
   }
 }
 
+/** Hard cap on the exact-item cooldown set, so it can never starve the pool. */
+export const RECENT_KEYS_CAP = 120;
+
+/**
+ * external_keys served in the user's most recent completed attempts, for the
+ * adaptive exact-item cooldown (don't re-show the same item across consecutive
+ * tests). Reads the per-question `question_results` jsonb on `attempts`, newest
+ * first, and caps the union at `RECENT_KEYS_CAP`. Best-effort; never throws.
+ *
+ * Conservative by design: a too-large set is a hard pre-filter in the selector
+ * and would silently shorten the test, so we bound it by attempt count AND size.
+ */
+export async function loadRecentServedKeys(
+  userId: string,
+  attemptLimit = 3,
+): Promise<Set<string>> {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const sb = getSupabaseBrowserClient() as any;
+    const { data, error } = await sb
+      .from("attempts")
+      .select("question_results")
+      .eq("user_id", userId)
+      .not("completed_at", "is", null)
+      .order("completed_at", { ascending: false })
+      .limit(attemptLimit);
+    if (error || !data) return new Set();
+    const keys = new Set<string>();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    for (const row of data as any[]) {
+      const results = Array.isArray(row?.question_results)
+        ? row.question_results
+        : [];
+      for (const r of results) {
+        const k = r?.question_id;
+        if (typeof k === "string" && k) {
+          keys.add(k);
+          if (keys.size >= RECENT_KEYS_CAP) return keys;
+        }
+      }
+    }
+    return keys;
+  } catch {
+    return new Set();
+  }
+}
+
 /**
  * Adaptive entrypoint. Gathers the injected inputs from Supabase, runs the pure
  * `selectAdaptiveItems`, and returns the chosen questions in adaptive order.

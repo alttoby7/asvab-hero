@@ -4,7 +4,23 @@
  * Never throws.
  */
 
+import { getAttributionParams } from "./attribution";
+
 type GtagParams = Record<string, string | number | boolean | undefined>;
+
+/**
+ * Lever E: conversion events that get the (low-cardinality) attribution bag
+ * merged in automatically, so every fire site stays attributable without each
+ * caller remembering to add it. Explicit per-call params win over attribution.
+ */
+const ATTRIBUTION_EVENTS: ReadonlySet<string> = new Set([
+  "signup_complete",
+  "checkout_start",
+  "checkout_success",
+  "paywall_viewed",
+  "session_complete",
+  "official_score_capture",
+]);
 
 declare global {
   interface Window {
@@ -17,12 +33,21 @@ declare global {
 }
 
 export function trackEvent(name: string, params?: GtagParams): void {
+  // Lever E: merge attribution for conversion events. Explicit params override.
+  let merged = params;
+  if (ATTRIBUTION_EVENTS.has(name)) {
+    try {
+      merged = { ...getAttributionParams(), ...params };
+    } catch {
+      merged = params;
+    }
+  }
   // 1) GA4, unchanged existing behaviour. Fires for EVERY event name.
   if (typeof window !== "undefined") {
     const gtag = window.gtag;
     if (typeof gtag === "function") {
       try {
-        gtag("event", name, params);
+        gtag("event", name, merged);
       } catch {
         // swallow, analytics must never break the app
       }
@@ -33,7 +58,7 @@ export function trackEvent(name: string, params?: GtagParams): void {
   //    is never affected by anything here.
   try {
     if (ALLOWED_EVENT_NAMES.has(name)) {
-      enqueue(name as AnalyticsEventName, sanitizeProps(params));
+      enqueue(name as AnalyticsEventName, sanitizeProps(merged));
     }
   } catch {
     // swallow, first-party emission must never break the app or GA4
@@ -85,6 +110,7 @@ export const FunnelEvents = {
   CheckoutSuccess: "checkout_success",
   ProActive: "pro_active",
   AffiliateClick: "affiliate_click",
+  OfficialScoreCapture: "official_score_capture",
 } as const;
 
 // =====================================================================

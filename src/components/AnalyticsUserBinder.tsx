@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { setAnalyticsUser, trackEvent, FunnelEvents } from "@/lib/analytics";
+import { captureAttribution } from "@/lib/attribution";
 
 function deriveTag(pathname: string): string {
   if (pathname === "/") return "home";
@@ -41,6 +42,9 @@ export function AnalyticsUserBinder(): null {
 
   useEffect(() => {
     if (!pathname) return;
+    // Lever E: record first-touch (once) + refresh current_origin on any
+    // ?origin= handoff. Idempotent + best-effort; never throws.
+    captureAttribution();
     trackEvent(FunnelEvents.PageViewTagged, {
       page_tag: deriveTag(pathname),
       page_path: pathname,

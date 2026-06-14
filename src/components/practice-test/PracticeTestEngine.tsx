@@ -18,6 +18,8 @@ import {
   shouldUseAdaptive,
   samplePersonalized,
   shouldUsePersonalized,
+  loadRecentServedKeys,
+  RECENT_KEYS_CAP,
 } from "@/lib/practice/sampler";
 import {
   saveAttempt,
@@ -53,6 +55,37 @@ import ProgressBar from "./ProgressBar";
 import Timer from "./Timer";
 import ReviewMode from "./ReviewMode";
 import TestResults from "./TestResults";
+
+/**
+ * Adaptive exact-item cooldown ring (sessionStorage). The DB-backed
+ * `loadRecentServedKeys` misses abandoned/restarted sessions that never wrote an
+ * attempt, so we also remember what adaptive served this session. Bounded by
+ * RECENT_KEYS_CAP so it can never starve the selector pool.
+ */
+const ADAPTIVE_SERVED_KEY = "asvabhero.adaptive_served";
+
+function readAdaptiveRing(): string[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = sessionStorage.getItem(ADAPTIVE_SERVED_KEY);
+    const arr = raw ? (JSON.parse(raw) as unknown) : [];
+    return Array.isArray(arr) ? (arr.filter((k) => typeof k === "string") as string[]) : [];
+  } catch {
+    return [];
+  }
+}
+
+function pushAdaptiveRing(keys: string[]): void {
+  if (typeof window === "undefined" || keys.length === 0) return;
+  try {
+    const merged = [...readAdaptiveRing(), ...keys];
+    // Keep only the most recent RECENT_KEYS_CAP keys.
+    const trimmed = merged.slice(-RECENT_KEYS_CAP);
+    sessionStorage.setItem(ADAPTIVE_SERVED_KEY, JSON.stringify(trimmed));
+  } catch {
+    /* best-effort */
+  }
+}
 
 /** Summary handed to the Daily Session loop when an embedded station finishes. */
 export interface StationCompletionSummary {
@@ -294,11 +327,38 @@ export default function PracticeTestEngine({
       const blueprintOverride = prepMode?.ratingComposite
         ? ratingBlueprint(prepMode.ratingComposite.weights)
         : undefined;
+      const targetLen = variant.rules.length;
       (async () => {
-        const sampled = await sampleAdaptive(variant, {
+        // Exact-item cooldown: union the in-session ring (catches abandoned
+        // restarts) with the user's recent completed attempts (cross-session).
+        const ring = new Set(readAdaptiveRing());
+        const dbRecent = userId
+          ? await loadRecentServedKeys(userId)
+          : new Set<string>();
+        const recentExternalKeys = new Set<string>([...ring, ...dbRecent]);
+
+        let sampled = await sampleAdaptive(variant, {
           userId,
           blueprintOverride,
+          recentExternalKeys,
         });
+
+        // Short-test guard: recentExternalKeys is a HARD pre-filter and
+        // sampleAdaptive only falls back on ZERO items, not a short test. If the
+        // cooldown starved the pool, relax to the in-session ring only; if still
+        // short, drop to the fixed-mix path so the user always gets a full test.
+        if (sampled.length < targetLen) {
+          sampled = await sampleAdaptive(variant, {
+            userId,
+            blueprintOverride,
+            recentExternalKeys: ring,
+          });
+        }
+        if (sampled.length < targetLen) {
+          sampled = sampleForVariant(variant, pool, { subtest });
+        }
+
+        pushAdaptiveRing(sampled.map((q) => q.id));
         beginWith(sampled);
       })();
       return;

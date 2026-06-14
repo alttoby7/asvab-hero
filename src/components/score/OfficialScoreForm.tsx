@@ -13,6 +13,19 @@
 import { useState } from "react";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { ALL_SUBTESTS } from "@/types";
+import { trackEvent, FunnelEvents } from "@/lib/analytics";
+
+/** Coarse, low-cardinality bucket for "days since signup". */
+function daysSinceSignupBucket(createdAt: string | null | undefined): string {
+  if (!createdAt) return "unknown";
+  const ms = Date.now() - new Date(createdAt).getTime();
+  if (!Number.isFinite(ms) || ms < 0) return "unknown";
+  const days = ms / (24 * 60 * 60 * 1000);
+  if (days <= 1) return "0-1";
+  if (days <= 7) return "2-7";
+  if (days <= 30) return "8-30";
+  return "31+";
+}
 
 export type ExamKind =
   | "initial_asvab"
@@ -117,6 +130,23 @@ export default function OfficialScoreForm({
     if (rpcError) {
       setError(rpcError.message || "Could not save your scores. Please try again.");
       return;
+    }
+
+    // Lever E: a real official score is the strongest "product works" signal.
+    // Low-cardinality only (no raw AFQT); attribution is merged centrally.
+    try {
+      const { data: userData } = await sb.auth.getUser();
+      trackEvent(FunnelEvents.OfficialScoreCapture, {
+        context,
+        exam_kind: examKind,
+        has_afqt: afqtNum != null,
+        standard_score_count: Object.keys(std).length,
+        days_since_signup_bucket: daysSinceSignupBucket(
+          userData?.user?.created_at,
+        ),
+      });
+    } catch {
+      /* analytics must never block the save flow */
     }
 
     // Lowest entered subtest, for weakest-subtest prefill upstream.
