@@ -8,6 +8,15 @@
       "last_reviewed": "2026-05-22",
       "cycles": 1,
       "last_verdict": "first-run"
+    },
+    {
+      "url": "/gt-score",
+      "target_keyword": "gt score",
+      "log_file": "urls/gt-score.md",
+      "first_optimized": "2026-06-14",
+      "last_reviewed": "2026-06-14",
+      "cycles": 1,
+      "last_verdict": "first-run"
     }
   ]
 }

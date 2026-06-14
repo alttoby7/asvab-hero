@@ -36,7 +36,7 @@ export default function GTScorePage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-05-20",
-          dateModified: "2026-05-20",
+          dateModified: "2026-06-14",
         }}
       />
 
@@ -59,6 +59,14 @@ export default function GTScorePage() {
               acceptedAnswer: {
                 "@type": "Answer",
                 text: "A GT of 100 is roughly average. A 110 is the threshold that opens officer, warrant, special operations, and most technical roles, so it is the number most people aim for. Anything above 110 is strong. What counts as good depends on the specific job you want.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Where do I find my GT score?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Your GT is usually not printed on the ASVAB score sheet you take home, because it is a composite the services build from your subtest scores. The fastest source is your recruiter, who can read your full line-score breakdown. Soldiers already serving find their GT on their record brief or through their unit S-1 or education center. If you only have your WK, PC, and AR standard scores, you can calculate the GT yourself with GT = VE + AR.",
               },
             },
             {
@@ -143,9 +151,19 @@ export default function GTScorePage() {
         </h1>
 
         <p className="mt-4 text-text-secondary">
+          Your <strong>GT score</strong> (short for General Technical) is a
+          military line score equal to VE + AR: your Verbal Expression, drawn
+          from Word Knowledge and Paragraph Comprehension, plus Arithmetic
+          Reasoning. It runs on a standard-score scale centered near 100 and
+          decides which Army and Marine Corps jobs and programs you qualify for.
+          A 110 is the number that unlocks officer, warrant, and most technical
+          and special-operations tracks.
+        </p>
+
+        <p className="text-text-secondary">
           You passed the ASVAB and you&apos;re cleared to enlist. One number you
           barely noticed will quietly control which jobs and programs you can
-          ever reach: your <strong>GT score</strong>.
+          ever reach: your GT score.
         </p>
 
         <p className="text-text-secondary">
@@ -479,6 +497,47 @@ export default function GTScorePage() {
             jobs and programs that score unlocks.
           </p>
         </aside>
+
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          How to Find Your GT Score
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          Most people never spot a number labeled &ldquo;GT&rdquo; on their
+          paperwork. Your ASVAB score sheet shows your AFQT percentile and a
+          standard score for each subtest, but the GT is a composite the
+          services build from those subtest scores, so it is often not printed
+          on the copy you take home. Here is where to actually get it.
+        </p>
+
+        <p className="text-text-secondary">
+          <strong>If you are enlisting or just tested at MEPS:</strong> ask your
+          recruiter. The enlistment system they use lists your full line-score
+          breakdown, GT included, and they can read it straight off your record.
+          For applicants this is the fastest and most reliable source.
+        </p>
+
+        <p className="text-text-secondary">
+          <strong>If you are already serving in the Army:</strong> your GT sits
+          on your record brief (the ERB, now folded into your Soldier record in
+          IPPS-A). Your unit S-1 or the post education center can pull it for
+          you, and any AFCT retest you take reports an updated GT.
+        </p>
+
+        <p className="text-text-secondary">
+          <strong>If you only have your subtest scores on paper:</strong> you
+          can work out the GT yourself. Take your Word Knowledge, Paragraph
+          Comprehension, and Arithmetic Reasoning standard scores and run them
+          through the{" "}
+          <Link
+            href="/gt-score-calculator"
+            className="text-accent hover:text-accent-hover"
+          >
+            GT score calculator
+          </Link>
+          , or follow the step-by-step math above. Just do not add WK, PC, and
+          AR together raw: the verbal half has to be converted to VE first.
+        </p>
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           GT Score vs AFQT Score: The Difference That Trips Everyone Up
@@ -1561,6 +1620,26 @@ export default function GTScorePage() {
               it is the number most people aim for. Anything above 110 is
               strong. What counts as &ldquo;good&rdquo; depends on the specific
               job you want.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-text-primary">
+              Where do I find my GT score?
+            </h3>
+            <p className="mt-1 text-sm text-text-secondary">
+              It is usually not printed on the ASVAB score sheet you take home,
+              because the GT is a composite built from your subtest scores. Ask
+              your recruiter, who can read your full line-score breakdown, GT
+              included. Soldiers already serving find it on their record brief or
+              through their unit S-1 or education center. If you only have your
+              WK, PC, and AR standard scores, run them through our{" "}
+              <Link
+                href="/gt-score-calculator"
+                className="text-accent hover:text-accent-hover"
+              >
+                GT score calculator
+              </Link>
+              .
             </p>
           </div>
           <div>
