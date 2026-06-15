@@ -56,7 +56,7 @@ export default function ASVABMechanicalComprehensionTipsPage() {
               name: "Does Mechanical Comprehension count toward my AFQT score?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "No. The AFQT uses four subtests only: Word Knowledge, Paragraph Comprehension, Arithmetic Reasoning, and Mathematics Knowledge. MC affects composite line scores that determine job eligibility but has zero impact on your AFQT percentile. If your AFQT is below your branch minimum (Army/Navy/Marines: 31, Air Force: 31, Coast Guard: 32), fix that first before spending time on MC.",
+                text: "No. The AFQT uses four subtests only: Word Knowledge, Paragraph Comprehension, Arithmetic Reasoning, and Mathematics Knowledge. MC affects composite line scores that determine job eligibility but has zero impact on your AFQT percentile. If your AFQT is below your branch minimum (Army 31, Marines 32, Navy 35, Air Force/Space Force 36, Coast Guard 32), fix that first before spending time on MC.",
               },
             },
             {
@@ -255,9 +255,9 @@ export default function ASVABMechanicalComprehensionTipsPage() {
 
         <p className="text-text-secondary">
           If your AFQT is below the branch minimum, fix that first. Every branch
-          has an AFQT floor: Army, Navy, and Marines at 31; Air Force and Space
-          Force at 31; Coast Guard at 32. MC prep doesn&apos;t move that number
-          at all.
+          has an AFQT floor: Army at 31; Marines and Coast Guard at 32; Navy at
+          35; Air Force and Space Force at 36. MC prep doesn&apos;t move that
+          number at all.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
@@ -859,8 +859,9 @@ export default function ASVABMechanicalComprehensionTipsPage() {
               Comprehension, Arithmetic Reasoning, and Mathematics Knowledge. MC
               affects composite line scores that determine job eligibility but
               has zero impact on your AFQT percentile. If your AFQT is below
-              your branch minimum (Army/Navy/Marines: 31, Air Force: 31, Coast
-              Guard: 32), fix that first before spending time on MC.
+              your branch minimum (Army 31, Marines 32, Navy 35, Air
+              Force/Space Force 36, Coast Guard 32), fix that first before
+              spending time on MC.
             </p>
           </div>
           <div>
