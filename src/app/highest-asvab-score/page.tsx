@@ -33,7 +33,7 @@ export default function HighestASVABScorePage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-03-19",
-          dateModified: "2026-03-19",
+          dateModified: "2026-06-14",
         }}
       />
 
@@ -401,111 +401,12 @@ export default function HighestASVABScorePage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Branches combine subtest standard scores into composites (sometimes
-          called line scores) that gate specific jobs. These composites can
-          exceed 130 because they add two or three subtest scores together.
-        </p>
-
-        <p className="text-text-secondary">
-          Each branch builds composites differently:
-        </p>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Branch
-                </th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Key Composites
-                </th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">
-                  How They Work
-                </th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Army
-                </td>
-                <td className="py-2 pr-4">GT, EL, MM, CL, ST (10 total)</td>
-                <td className="py-2">
-                  Each sums 2&ndash;3 subtest scores. GT = VE + AR.
-                </td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Air Force
-                </td>
-                <td className="py-2 pr-4">M, A, G, E (4 composites)</td>
-                <td className="py-2">
-                  Called MAGE scores. G = VE + AR (similar to Army GT).
-                </td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Marines
-                </td>
-                <td className="py-2 pr-4">GT, EL, MM, CL</td>
-                <td className="py-2">
-                  Similar structure to Army composites.
-                </td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Navy
-                </td>
-                <td className="py-2 pr-4">Individual subtest scores</td>
-                <td className="py-2">
-                  No composites. Job quals based on specific subtest minimums.
-                </td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Coast Guard
-                </td>
-                <td className="py-2 pr-4">Individual subtest scores</td>
-                <td className="py-2">Same approach as Navy.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p className="text-text-secondary">
-          Here is a concrete example. Army General Technical (GT) equals VE plus
-          AR. If your VE is 65 and your AR is 68, your GT score is 133. The
-          highest-demand Army jobs, like Cryptologic Linguist (35P), require a
-          minimum GT of 110. Top scorers push GT above 140, with the{" "}
-          <Link
-            href="/gt-score"
-            className="text-accent hover:text-accent-hover"
-          >
-            highest possible GT score
-          </Link>{" "}
-          documented at 144.
-        </p>
-
-        <p className="text-text-secondary">
-          A second example: Air Force Electronics (E) combines General Science,
-          Arithmetic Reasoning, Mathematics Knowledge, and Electronics
-          Information. A strong Electronics composite opens career fields like
-          Cyber Systems Operations and Avionics Systems. Even with a 99 AFQT, a
-          low EI or GS score could keep these fields out of reach.
-        </p>
-
-        <p className="text-text-secondary">
-          The key distinction: your AFQT determines whether you can enlist, but
-          your composite scores determine which jobs you can select. A 99 AFQT
-          with mediocre subtest scores outside the AFQT four could still lock
-          you out of certain technical roles.
-        </p>
-
-        <p className="text-text-secondary">
-          You can see exactly how your subtest scores map to composites and
-          qualifying jobs by entering them into the{" "}
-          <Link href="/calculator">ASVAB Score Calculator</Link>.
+          The AFQT has a ceiling of 99, but composite scores (also called line
+          scores) do not. Branches add two or three subtest scores together, so
+          composites can climb past 130, which is why a perfect AFQT never means
+          you have maxed out the whole test. For the full branch-by-branch
+          composite tables and how each one is built, see the{" "}
+          <Link href="/asvab-score-chart">ASVAB score chart</Link>.
         </p>
 
         {/* ── What a 99 AFQT Actually Unlocks ── */}
@@ -588,113 +489,17 @@ export default function HighestASVABScorePage() {
           removes the biggest initial filter.
         </p>
 
-        {/* ── What Is the Average ASVAB Score? ── */}
+        {/* ── Where 99 Sits vs the Average ── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          What Is the Average ASVAB Score?
+          Where 99 Sits vs the Average
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          An AFQT of 50 is the statistical average. It means you scored as well
-          as or better than half the 1997 reference population. It places you in
-          Category IIIA (50&ndash;64), which is where incentive eligibility
-          begins for most branches.
-        </p>
-
-        <p className="text-text-secondary">
-          A 50 qualifies you for enlistment in every branch:
-        </p>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Branch
-                </th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Min (HS Diploma)
-                </th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Min (GED)
-                </th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">
-                  Practical Min
-                </th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Army
-                </td>
-                <td className="py-2 pr-4 font-mono">31</td>
-                <td className="py-2 pr-4 font-mono">50</td>
-                <td className="py-2 font-mono">31</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Marines
-                </td>
-                <td className="py-2 pr-4 font-mono">31</td>
-                <td className="py-2 pr-4 font-mono">50</td>
-                <td className="py-2 font-mono">31</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Navy
-                </td>
-                <td className="py-2 pr-4 font-mono">35</td>
-                <td className="py-2 pr-4 font-mono">50</td>
-                <td className="py-2 font-mono">35</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Air Force
-                </td>
-                <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 pr-4 font-mono">50</td>
-                <td className="py-2 font-mono">~50</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Coast Guard
-                </td>
-                <td className="py-2 pr-4 font-mono">32</td>
-                <td className="py-2 pr-4 font-mono">50</td>
-                <td className="py-2 font-mono">40</td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Space Force
-                </td>
-                <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 pr-4 font-mono">50</td>
-                <td className="py-2 font-mono">~50</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p className="text-text-secondary">
-          The Air Force and Space Force technically accept a 36 with a diploma,
-          but over 90 percent of approved enlistees score 50 or above. In
-          practice, 50 is the floor for those branches.
-        </p>
-
-        <p className="text-text-secondary">
-          Below 31, you are ineligible for any branch regardless of education.
-          Between 31 and 49 (Category IIIB), you can enlist in the Army or
-          Marines with a diploma, but your job options are limited and bonus
-          eligibility is restricted. Above 65 (Category II), you qualify for
-          nearly every standard enlisted role and become a preferred recruit.
-        </p>
-
-        <p className="text-text-secondary">
-          For a deeper breakdown of what each score range means, see{" "}
-          <Link href="/what-is-a-good-asvab-score">
-            What Is a Good ASVAB Score?
-          </Link>
-          .
+          The statistical average AFQT is 50, so a 99 sits 49 percentile points
+          above the midpoint and clears every branch minimum many times over.
+          For what the average actually means and the typical scores by branch,
+          see the{" "}
+          <Link href="/asvab-score-average">average ASVAB score</Link>.
         </p>
 
         {/* ── Is There a Difference Between 95 and 99? ── */}
@@ -747,14 +552,16 @@ export default function HighestASVABScorePage() {
           than chasing a few more AFQT points.
         </p>
 
-        {/* ── How to Score as High as Possible ── */}
+        {/* ── How to Push Toward the 99 Ceiling ── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          How to Score as High as Possible
+          How to Push Toward the 99 Ceiling
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          The AFQT formula has a built-in shortcut: VE (Verbal Expression) is
-          the only component that gets doubled.
+          Maxing the AFQT is a leverage problem, not a grind. The formula has a
+          built-in shortcut: VE (Verbal Expression) is the only component that
+          gets doubled, so the fastest route to the 99 ceiling runs through your
+          verbal scores.
         </p>
 
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">

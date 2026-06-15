@@ -4,6 +4,8 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
+import AFQTFormulaExplorer from "@/components/scores-explained/AFQTFormulaExplorer";
+import ScoreImpactSimulator from "@/components/scores-explained/ScoreImpactSimulator";
 
 export const metadata: Metadata = {
   title: "AFQT Score: What It Is and How to Improve It",
@@ -36,7 +38,7 @@ export default function AFQTScorePage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-03-23",
-          dateModified: "2026-03-23",
+          dateModified: "2026-06-14",
         }}
       />
       <JsonLd
@@ -259,6 +261,8 @@ export default function AFQTScorePage() {
           to estimate where you land.
         </p>
 
+        <AFQTFormulaExplorer />
+
         {/* Section: AFQT Categories */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           AFQT Categories: What Your Percentile Actually Means
@@ -408,172 +412,45 @@ export default function AFQTScorePage() {
         </aside>
 
         <p className="text-text-secondary">
-          For a visual breakdown of how these ranges map across branches, check
-          our{" "}
-          <Link
-            href="/asvab-score-ranges"
-            className="text-accent hover:text-accent-hover"
-          >
-            ASVAB score ranges
-          </Link>{" "}
-          page and our{" "}
+          For the full visual category chart (every percentile band laid out
+          side by side), see our{" "}
           <Link
             href="/asvab-score-chart"
             className="text-accent hover:text-accent-hover"
           >
             ASVAB score chart
           </Link>
-          .
+          , and to see which real jobs each tier unlocks, check our{" "}
+          <Link
+            href="/asvab-score-ranges"
+            className="text-accent hover:text-accent-hover"
+          >
+            ASVAB score ranges
+          </Link>{" "}
+          page.
         </p>
 
-        {/* Section: Branch Minimums */}
+        {/* Section: Branch Minimums (demoted, canonical = /asvab-score-requirements) */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           Minimum AFQT Scores by Branch in 2026
         </h2>
         <p className="mt-4 text-text-secondary">
-          Every branch sets its own floor, and GED holders face a steeper bar
-          than diploma holders across the board.
-        </p>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Branch
-                </th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Diploma Minimum
-                </th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">
-                  GED Minimum
-                </th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Army
-                </td>
-                <td className="py-2 pr-4 font-mono">31</td>
-                <td className="py-2 font-mono">50</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Navy
-                </td>
-                <td className="py-2 pr-4 font-mono">35</td>
-                <td className="py-2">50 + 15 college credits</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Marine Corps
-                </td>
-                <td className="py-2 pr-4 font-mono">32</td>
-                <td className="py-2 font-mono">50</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Air Force
-                </td>
-                <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">65</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Coast Guard
-                </td>
-                <td className="py-2 pr-4 font-mono">32</td>
-                <td className="py-2">50 + 15 college credits</td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Space Force
-                </td>
-                <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">65</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p className="text-text-secondary">
-          A GED doesn&apos;t just raise your required AFQT. It also puts you in
-          a smaller acceptance pool. Each branch limits how many GED holders it
-          takes per year.
+          Every branch sets its own AFQT floor, and GED holders face a higher
+          bar than diploma holders. The diploma minimums currently run from the
+          Army&apos;s 31 up to 36 for the Air Force and Space Force, with the
+          Navy, Marines, and Coast Guard in between.
         </p>
         <p className="text-text-secondary">
-          The Marine Corps caps GED accessions at roughly 5% of annual recruits.
-          The Air Force historically accepts around 0.5% GED holders in a given
-          year. That means even if you score a 65 with a GED, the Air Force may
-          not have a slot for you.
-        </p>
-        <p className="text-text-secondary">
-          The Navy and Coast Guard add another requirement for GED holders: 15
-          semester hours of college credit on top of the higher AFQT minimum.
-          Without those credits, a GED holder with a 50 still can&apos;t enlist
-          in either branch.
-        </p>
-
-        <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-amber-400">Warning</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            These are peacetime minimums. Branches can raise them based on
-            recruiting needs. Your recruiter&apos;s actual threshold may be
-            higher than what&apos;s listed here.
-          </p>
-        </aside>
-
-        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
-          The Practical Impact of These Minimums
-        </h3>
-        <p className="mt-4 text-text-secondary">
-          The spread between branches creates real strategic decisions. A diploma
-          holder scoring 33 qualifies for the Army (31), Marines (32), and Coast
-          Guard (32) but gets rejected by the Navy (35), Air Force (36), and
-          Space Force (36). Three more points on the AFQT opens those branches.
-        </p>
-        <p className="text-text-secondary">
-          The Army&apos;s floor of 31 is the lowest across all branches, making
-          it the most accessible path for recruits near the bottom of the
-          qualifying range. The Air Force and Space Force share the highest
-          diploma minimum at 36, reflecting their selectivity and technical
-          job mix.
-        </p>
-
-        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
-          Exceptions and Special Programs
-        </h3>
-        <p className="mt-4 text-text-secondary">
-          The Navy&apos;s DEP Enrichment Program allows provisional enlistment
-          for diploma holders who score between AFQT 28 and 30. These recruits
-          enter the Delayed Entry Program and receive study resources to prepare
-          for a retest. They must reach a 35 before shipping to boot camp. This
-          is a limited program that depends on Navy recruiting goals and
-          available slots.
-        </p>
-        <p className="text-text-secondary">
-          The Space Force requires AFQT 36 for diploma holders and 65 for GED
-          holders, has no waiver program for Category IV scores, and has the
-          smallest annual accession numbers of any branch. Competition for Space
-          Force slots is steep even with qualifying scores.
-        </p>
-        <p className="text-text-secondary">
-          For branch-specific breakdowns, see{" "}
+          For the full branch-by-branch table (diploma and GED minimums, the
+          Navy and Coast Guard college-credit rule, and GED accession caps), see
+          our{" "}
           <Link
-            href="/what-is-a-good-asvab-score"
+            href="/asvab-score-requirements"
             className="text-accent hover:text-accent-hover"
           >
-            what is a good ASVAB score
+            ASVAB score requirements by branch
           </Link>{" "}
-          and our full guide to{" "}
-          <Link
-            href="/asvab-scoring-and-results"
-            className="text-accent hover:text-accent-hover"
-          >
-            ASVAB scoring and results
-          </Link>
-          .
+          guide.
         </p>
 
         {/* Section: Two-Gate System */}
@@ -629,28 +506,28 @@ export default function AFQTScorePage() {
           Comprehension that don&apos;t affect your AFQT at all.
         </p>
         <p className="text-text-secondary">
-          Each branch calculates composites differently. The Army uses 10 line
-          scores (GT, CL, CO, EL, FA, GM, MM, OF, SC, ST). The Air Force uses 4
-          MAGE composites (Mechanical, Administrative, General, Electronics).
-          The Navy and Marines have their own formulas. All of them pull from
-          the full 9-subtest battery.
-        </p>
-        <p className="text-text-secondary">
-          See how your subtests map to composites on our{" "}
+          Each branch calculates composites differently and pulls from the full
+          9-subtest battery, so the line-score formulas and tables live with the
+          full visual{" "}
           <Link
-            href="/asvab-scores-explained"
+            href="/asvab-score-chart"
             className="text-accent hover:text-accent-hover"
           >
-            ASVAB scores explained
-          </Link>{" "}
-          page, or enter your scores on the{" "}
+            ASVAB score chart
+          </Link>
+          . The key AFQT point is just this: composites are a separate gate from
+          your AFQT, and the five non-AFQT subtests only matter once you clear
+          enlistment.
+        </p>
+        <p className="text-text-secondary">
+          Want both numbers at once? Enter your scores on the{" "}
           <Link
             href="/calculator"
             className="text-accent hover:text-accent-hover"
           >
             calculator
           </Link>{" "}
-          to check both AFQT and composite results.
+          to check your AFQT and composite results together.
         </p>
 
         {/* Section: How to Improve AFQT */}
@@ -806,6 +683,8 @@ export default function AFQTScorePage() {
           </Link>{" "}
           guide for the full process.
         </p>
+
+        <ScoreImpactSimulator />
 
         {/* Section: When You Get Your AFQT Score */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">

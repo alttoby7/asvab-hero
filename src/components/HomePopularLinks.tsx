@@ -15,6 +15,7 @@ const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
       { href: "/asvab-scores-explained", label: "ASVAB scores explained" },
       { href: "/asvab-score-requirements", label: "Score requirements by branch" },
       { href: "/what-is-a-good-asvab-score", label: "What is a good ASVAB score" },
+      { href: "/asvab-score-average", label: "Average ASVAB score" },
       { href: "/afqt-score", label: "AFQT score, explained" },
       { href: "/gt-score", label: "GT score, explained" },
     ],

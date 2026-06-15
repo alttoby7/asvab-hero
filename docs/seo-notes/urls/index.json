@@ -1,0 +1,110 @@
+{
+  "generated": "2026-06-14",
+  "note": "Per-URL on-page optimization log index. The 'score-explainer-cannibalization' cohort was de-duplicated 2026-06-14 (each page given one owned angle; shared subtopics demoted to summary + in-content canonical link). /asvab-scores-explained is the indexed hub winner; the other 6 were 'Crawled - currently not indexed' and submitted for re-indexing after this fix. See cannibalization-audit-2026-06.md.",
+  "pages": [
+    {
+      "url": "/asvab-scores-explained",
+      "slug": "asvab-scores-explained",
+      "target_keyword": "asvab scores explained",
+      "first_optimized": "2026-05-22",
+      "last_reviewed": "2026-06-14",
+      "cycles": 3,
+      "last_verdict": "applied",
+      "cohort": "score-explainer-cannibalization",
+      "owns": "Hub: how to read your score sheet (the 3 number types) + overview routing to spokes"
+    },
+    {
+      "url": "/asvab-score-chart",
+      "slug": "asvab-score-chart",
+      "target_keyword": "asvab score chart",
+      "first_optimized": "2026-06-14",
+      "last_reviewed": "2026-06-14",
+      "cycles": 1,
+      "last_verdict": "applied",
+      "cohort": "score-explainer-cannibalization",
+      "owns": "The definitive visual chart: AFQT category, branch-minimum, and composite tables consolidated (+ AFQTCategoryLadder + BranchCompositeHeatmap widgets)"
+    },
+    {
+      "url": "/asvab-score-ranges",
+      "slug": "asvab-score-ranges",
+      "target_keyword": "asvab score range",
+      "first_optimized": "2026-06-14",
+      "last_reviewed": "2026-06-14",
+      "cycles": 1,
+      "last_verdict": "applied",
+      "cohort": "score-explainer-cannibalization",
+      "owns": "Score tiers + real jobs at every score level (the unlocks angle)"
+    },
+    {
+      "url": "/asvab-score-average",
+      "slug": "asvab-score-average",
+      "target_keyword": "average asvab score",
+      "first_optimized": "2026-06-14",
+      "last_reviewed": "2026-06-14",
+      "cycles": 1,
+      "last_verdict": "applied",
+      "cohort": "score-explainer-cannibalization",
+      "owns": "'average = 50': what average means, averages by branch and subtest, is-average-enough. Inbound links added 2026-06-14 (HomePopularLinks + hub + chart + highest) after starting at 0."
+    },
+    {
+      "url": "/highest-asvab-score",
+      "slug": "highest-asvab-score",
+      "target_keyword": "highest asvab score",
+      "first_optimized": "2026-06-14",
+      "last_reviewed": "2026-06-14",
+      "cycles": 1,
+      "last_verdict": "applied",
+      "cohort": "score-explainer-cannibalization",
+      "owns": "The 99 / the ceiling: what a 99 is and unlocks, maxing the test, 95 vs 99"
+    },
+    {
+      "url": "/what-is-a-good-asvab-score",
+      "slug": "what-is-a-good-asvab-score",
+      "target_keyword": "what is a good asvab score",
+      "first_optimized": "2026-06-14",
+      "last_reviewed": "2026-06-14",
+      "cycles": 1,
+      "last_verdict": "applied",
+      "cohort": "score-explainer-cannibalization",
+      "owns": "The 'good' judgment call: good for your goal, by branch/job, the 50+ incentive threshold"
+    },
+    {
+      "url": "/afqt-score",
+      "slug": "afqt-score",
+      "target_keyword": "afqt score",
+      "first_optimized": "2026-06-14",
+      "last_reviewed": "2026-06-14",
+      "cycles": 1,
+      "last_verdict": "applied",
+      "cohort": "score-explainer-cannibalization",
+      "owns": "AFQT deep: formula, VE 2x leverage, categories/percentile, 1997 baseline, raise-AFQT (+ AFQTFormulaExplorer + ScoreImpactSimulator widgets)"
+    },
+    {
+      "url": "/asvab-score-converter",
+      "slug": "asvab-score-converter",
+      "target_keyword": "asvab score converter",
+      "first_optimized": "2026-06-14",
+      "last_reviewed": "2026-06-14",
+      "cycles": 1,
+      "last_verdict": "skip-low-roi"
+    },
+    {
+      "url": "/gt-score",
+      "slug": "gt-score",
+      "target_keyword": "gt score",
+      "first_optimized": "2026-06-14",
+      "last_reviewed": "2026-06-14",
+      "cycles": 1,
+      "last_verdict": "first-run"
+    },
+    {
+      "url": "/navy-ratings-list",
+      "slug": "navy-ratings-list",
+      "target_keyword": "navy asvab score chart",
+      "first_optimized": "2026-06-14",
+      "last_reviewed": "2026-06-14",
+      "cycles": 1,
+      "last_verdict": "applied"
+    }
+  ]
+}
