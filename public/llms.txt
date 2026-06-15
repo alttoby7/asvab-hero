@@ -39,6 +39,7 @@
 
 ## For educators (counselors, librarians, JROTC)
 - [ASVAB counselor quick-start](https://asvabhero.com/counselor-resources): a plain, source-cited ASVAB reference (what the test is, how scores work, official prep resources, where to send students). Cites official sources only; no signup.
+- [ASVAB at a Glance (printable PDF)](https://asvabhero.com/asvab-at-a-glance.pdf): a plain, source-cited one-sheet reference for students and parents (the nine subtests, AFQT, how scores work). No branding or signup.
 
 ## About
 - [Pricing](https://asvabhero.com/pricing)

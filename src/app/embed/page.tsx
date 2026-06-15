@@ -58,6 +58,8 @@ export default function EmbedDirectoryPage() {
               src="https://asvabhero.com/embed/afqt-calculator"
               title="AFQT Calculator by ASVAB Hero"
               height={720}
+              creditHref="https://asvabhero.com/afqt-calculator"
+              creditLabel="AFQT calculator"
             />
           </div>
         </section>
@@ -87,6 +89,8 @@ export default function EmbedDirectoryPage() {
               src="https://asvabhero.com/embed/score-requirements"
               title="ASVAB Score Requirements by ASVAB Hero"
               height={420}
+              creditHref="https://asvabhero.com/asvab-score-requirements"
+              creditLabel="ASVAB score requirements table"
             />
           </div>
         </section>

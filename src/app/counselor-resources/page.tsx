@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import RelatedLinks from "@/components/RelatedLinks";
+import CiteThisResource from "@/components/CiteThisResource";
 import { TOPIC_COUNT } from "@/lib/bank-stats";
 
 export const metadata: Metadata = {
@@ -212,6 +213,35 @@ export default function CounselorResourcesPage() {
             .
           </p>
         </section>
+
+        {/* Printable handout */}
+        <section className="rounded-2xl border border-navy-border bg-navy-light p-6 sm:p-8">
+          <h2 className="font-display text-lg font-bold text-text-primary">
+            Printable handout for students and parents
+          </h2>
+          <p className="mt-2 text-text-secondary leading-relaxed">
+            A plain, source-cited &quot;ASVAB at a Glance&quot; reference you can
+            print or hand out: what the test is, the nine subtests, how the
+            scores work, and where to go next. No branding, no signup, official
+            sources listed.
+          </p>
+          <p className="mt-3">
+            <a
+              href="/asvab-at-a-glance.pdf"
+              className="font-semibold text-accent underline hover:text-accent-hover"
+            >
+              Download the ASVAB at a Glance PDF
+            </a>
+          </p>
+        </section>
+
+        {/* Link / cite affordance */}
+        <CiteThisResource
+          url="https://asvabhero.com/counselor-resources"
+          anchor="ASVAB reference for counselors and educators"
+          citationTitle="An ASVAB reference for counselors, librarians, and JROTC instructors"
+          lastVerified={LAST_VERIFIED}
+        />
 
         {/* 2. What the ASVAB is */}
         <section>
