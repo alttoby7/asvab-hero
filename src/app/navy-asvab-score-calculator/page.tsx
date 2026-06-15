@@ -201,7 +201,7 @@ export default function NavyCalculatorPage() {
         title="Navy ASVAB guides"
         links={[
           { href: "/navy-asvab-score", label: "Navy ASVAB Score Requirements", blurb: "Minimum AFQT and the scores ratings need." },
-          { href: "/navy-ratings-list", label: "Navy Ratings List", blurb: "Every Navy rating and its ASVAB requirement." },
+          { href: "/navy-ratings-list", label: "Navy ASVAB Score Chart for All Ratings", blurb: "Sortable chart of the required line score for every Navy rating." },
           { href: "/navy-afqt-calculator", label: "Navy AFQT Calculator", blurb: "Get the percentile-only AFQT breakdown." },
           { href: "/navy-ranks", label: "Navy Ranks Guide", blurb: "How your rate turns into rank and pay." },
         ]}

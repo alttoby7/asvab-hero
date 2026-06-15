@@ -26,7 +26,7 @@ const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
       { href: "/navy-ranks", label: "Navy ranks and pay" },
       { href: "/air-force-ranks", label: "Air Force ranks and pay" },
       { href: "/marine-corps-ranks", label: "Marine Corps ranks and pay" },
-      { href: "/navy-ratings-list", label: "Navy ratings and jobs" },
+      { href: "/navy-ratings-list", label: "Navy ASVAB score chart" },
     ],
   },
   {

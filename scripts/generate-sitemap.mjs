@@ -34,7 +34,7 @@ const pages = [
   { path: "/usmc-mos-list", priority: "0.8", changefreq: "monthly" },
   { path: "/army-mos-list", priority: "0.8", changefreq: "monthly" },
   { path: "/air-force-afsc-list", priority: "0.8", changefreq: "monthly" },
-  { path: "/navy-ratings-list", priority: "0.8", changefreq: "monthly" },
+  { path: "/navy-ratings-list", priority: "0.85", changefreq: "monthly" },
   { path: "/how-to-retake-the-asvab", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-arithmetic-reasoning-tips", priority: "0.8", changefreq: "monthly" },
   { path: "/how-many-questions-on-the-asvab", priority: "0.8", changefreq: "monthly" },
