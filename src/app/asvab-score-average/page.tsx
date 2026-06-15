@@ -33,7 +33,7 @@ export default function ASVABScoreAveragePage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-03-19",
-          dateModified: "2026-03-19",
+          dateModified: "2026-06-14",
         }}
       />
 
@@ -159,102 +159,32 @@ export default function ASVABScoreAveragePage() {
         </p>
 
         <p className="text-text-secondary">
-          The AFQT slots into categories that determine your enlistment
-          eligibility and incentive access:
-        </p>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Category
-                </th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  AFQT Range
-                </th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">
-                  What It Means
-                </th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-bold text-emerald-400">
-                  I
-                </td>
-                <td className="py-2 pr-4 font-mono">93&ndash;99</td>
-                <td className="py-2">Top tier, all options open</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-bold text-emerald-300">
-                  II
-                </td>
-                <td className="py-2 pr-4 font-mono">65&ndash;92</td>
-                <td className="py-2">Above average, highly competitive</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-bold text-sky-400">
-                  IIIA
-                </td>
-                <td className="py-2 pr-4 font-mono">50&ndash;64</td>
-                <td className="py-2">Average, incentive-eligible</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-bold text-amber-400">
-                  IIIB
-                </td>
-                <td className="py-2 pr-4 font-mono">31&ndash;49</td>
-                <td className="py-2">Below average, enlistment-eligible</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-bold text-orange-400">
-                  IVA
-                </td>
-                <td className="py-2 pr-4 font-mono">21&ndash;30</td>
-                <td className="py-2">Limited eligibility (waivers required)</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-bold text-orange-400">
-                  IVB
-                </td>
-                <td className="py-2 pr-4 font-mono">16&ndash;20</td>
-                <td className="py-2">Limited eligibility (waivers required)</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-bold text-orange-400">
-                  IVC
-                </td>
-                <td className="py-2 pr-4 font-mono">10&ndash;15</td>
-                <td className="py-2">Limited eligibility (waivers required)</td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-mono font-bold text-red-400">
-                  V
-                </td>
-                <td className="py-2 pr-4 font-mono">1&ndash;9</td>
-                <td className="py-2">Not eligible for enlistment</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p className="text-text-secondary">
-          Category IIIA (50 to 64) is the official &ldquo;average&rdquo; range.
-          Scoring here means you meet every branch&apos;s minimum and you cross
-          the Department of Defense incentive threshold. Below 50, you are in
-          Category IIIB, still enlistment-eligible but with fewer options and
-          less recruiter enthusiasm.
+          A 50 falls in the middle of the standard-score scale, which is why it
+          reads as &ldquo;average.&rdquo; On the official AFQT category ladder, a
+          50 sits at the bottom of Category IIIA (50 to 64), the band the
+          Department of Defense treats as average and incentive-eligible. Drop
+          below 50 and you are in Category IIIB (31 to 49), still
+          enlistment-eligible but with fewer options. For the full Category I
+          through V table with every AFQT range, see our{" "}
+          <Link href="/asvab-score-chart">ASVAB score chart</Link>.
         </p>
 
         <p className="text-text-secondary">
-          Each ASVAB subtest also uses standard scores with a mean of 50 and a
-          standard deviation of 10. A subtest score of 40 is one standard
-          deviation below average. A 60 is one above. These subtest scores feed
-          into your composite (line) scores, which determine job eligibility. For
-          a deeper look at how all the scoring layers connect, see our{" "}
-          <Link href="/asvab-scores-explained">ASVAB scores explained</Link>{" "}
-          guide.
+          The reason a 50 means &ldquo;average&rdquo; comes back to the scale
+          itself. The AFQT is built so that the reference population centers on
+          50, with scores spreading out symmetrically above and below. Half of
+          the 1997 cohort scored below 50 and half scored above, by design. That
+          is the entire definition of average here: the exact midpoint of the
+          norming distribution.
+        </p>
+
+        <p className="text-text-secondary">
+          Each ASVAB subtest uses the same logic. Subtest scores are standard
+          scores with a mean of 50 and a standard deviation of 10. A subtest
+          score of 40 is one standard deviation below average; a 60 is one above.
+          So &ldquo;average&rdquo; is not one number you hit by chance. It is the
+          built-in center of every scale on your score sheet, from the individual
+          subtests up to the AFQT.
         </p>
 
         {/* Section 3 */}
@@ -375,126 +305,20 @@ export default function ASVABScoreAveragePage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          An AFQT of 50 gets you two things: enlistment eligibility in every
-          branch and access to the DOD incentive threshold (Category IIIA). That
-          means signing bonuses, duty station preferences, and guaranteed MOS
-          slots become available to you.
+          The short version: an average AFQT of 50 gets you in the door of every
+          branch and crosses the DOD incentive threshold, so bonuses and
+          guaranteed slots are on the table, but it opens mostly entry-level
+          roles. Technical, intelligence, medical, and cyber jobs depend on your
+          composite (line) scores, and average composites fall short of most of
+          them.
         </p>
 
         <p className="text-text-secondary">
-          But your job options depend on composite scores, not AFQT alone.
-          Composite scores are built from different combinations of your nine
-          ASVAB subtests, and each military job requires minimums on specific
-          composites.
-        </p>
-
-        <p className="text-text-secondary">
-          If you scored average across the board, your composites will land
-          around 100 for most Army line scores (which sum two to four subtests
-          with means of 50 each). That qualifies you for basic roles.
-        </p>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Job
-                </th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Branch
-                </th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Composite Required
-                </th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">
-                  Average Scorer?
-                </th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Infantry (11B)
-                </td>
-                <td className="py-2 pr-4">Army</td>
-                <td className="py-2 pr-4 font-mono">CO 87</td>
-                <td className="py-2 font-mono font-bold text-emerald-400">
-                  Yes
-                </td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Motor Transport (88M)
-                </td>
-                <td className="py-2 pr-4">Army</td>
-                <td className="py-2 pr-4 font-mono">OF 85</td>
-                <td className="py-2 font-mono font-bold text-emerald-400">
-                  Yes
-                </td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Combat Medic (68W)
-                </td>
-                <td className="py-2 pr-4">Army</td>
-                <td className="py-2 pr-4 font-mono">ST 101</td>
-                <td className="py-2 font-mono font-bold text-amber-400">
-                  Borderline
-                </td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  IT Specialist (25B)
-                </td>
-                <td className="py-2 pr-4">Army</td>
-                <td className="py-2 pr-4 font-mono">CL 95</td>
-                <td className="py-2 font-mono font-bold text-amber-400">
-                  Maybe
-                </td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Crypto Linguist (35P)
-                </td>
-                <td className="py-2 pr-4">Army</td>
-                <td className="py-2 pr-4 font-mono">ST 112</td>
-                <td className="py-2 font-mono font-bold text-red-400">No</td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Cyber Ops (17C)
-                </td>
-                <td className="py-2 pr-4">Army</td>
-                <td className="py-2 pr-4 font-mono">ST 112</td>
-                <td className="py-2 font-mono font-bold text-red-400">No</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p className="text-text-secondary">
-          The pattern is clear. Average composites open infantry, logistics,
-          transportation, and general maintenance roles. They close most
-          technical, intelligence, medical, and cyber positions, the jobs with
-          the strongest civilian career translations.
-        </p>
-
-        <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-amber-400">Warning</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            An average ASVAB score gets you into the military. It does not get
-            you into most of the jobs you probably want. If you are aiming for a
-            technical or competitive MOS, you need above-average composites in
-            the right subtests.
-          </p>
-        </aside>
-
-        <p className="text-text-secondary">
-          To see exactly which jobs your current scores qualify for, use our{" "}
-          <Link href="/calculator">ASVAB Score Calculator</Link>. It computes
-          all branch-specific composites and matches them against every MOS,
-          AFSC, and rating.
+          For the full breakdown of which real jobs open at every score level,
+          from average up to a 99, see our{" "}
+          <Link href="/asvab-score-ranges">ASVAB score ranges</Link> guide. To
+          check the exact jobs your own scores qualify for, run them through the{" "}
+          <Link href="/calculator">ASVAB Score Calculator</Link>.
         </p>
 
         {/* Section 5 */}
@@ -662,90 +486,11 @@ export default function ASVABScoreAveragePage() {
 
         <p className="mt-4 text-text-secondary">
           The fastest path from average to above average runs through Verbal
-          Expression. Because VE counts double in the AFQT formula, every point
-          you gain on Word Knowledge or Paragraph Comprehension produces twice
-          the AFQT impact of a point gained on Arithmetic Reasoning or
-          Mathematics Knowledge.
-        </p>
-
-        <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          5-point VE gain = 10-point AFQT gain
-          <br />
-          That is the single highest-leverage study move available.
-        </div>
-
-        <p className="text-text-secondary">Here is a focused approach:</p>
-
-        <div className="my-4 space-y-2">
-          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
-            <span className="font-mono text-sm font-bold text-accent">
-              Step 1
-            </span>
-            <span className="text-sm text-text-secondary">
-              Take a <Link href="/practice-test">practice test</Link> to
-              identify your weakest subtests. Do not guess where you are weak.
-              Measure it.
-            </span>
-          </div>
-          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
-            <span className="font-mono text-sm font-bold text-accent">
-              Step 2
-            </span>
-            <span className="text-sm text-text-secondary">
-              Focus 60% of study time on Word Knowledge and Paragraph
-              Comprehension if your verbal scores are below 55. These subtests
-              have the largest AFQT payoff.
-            </span>
-          </div>
-          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
-            <span className="font-mono text-sm font-bold text-accent">
-              Step 3
-            </span>
-            <span className="text-sm text-text-secondary">
-              Spend 40% on Arithmetic Reasoning and Mathematics Knowledge. These
-              contribute directly to AFQT and also feed into most technical
-              composites.
-            </span>
-          </div>
-          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
-            <span className="font-mono text-sm font-bold text-accent">
-              Step 4
-            </span>
-            <span className="text-sm text-text-secondary">
-              Ignore subtests that do not affect your target composites. General
-              Science, Electronics Information, and Mechanical Comprehension
-              matter for specific jobs but do not touch your AFQT.
-            </span>
-          </div>
-        </div>
-
-        <p className="text-text-secondary">
-          Going from AFQT 50 to 65 is realistic with 4 to 6 weeks of focused
-          study. That timeline assumes 1 to 2 hours per day targeting your
-          weakest AFQT subtests. Build a structured plan with the{" "}
+          Expression, because it counts double in the AFQT formula. A 5-point VE
+          gain produces a 10-point AFQT gain, enough to move from a 50 to a 65
+          for most people with 4 to 6 weeks of focused study. For the full
+          step-by-step plan, see our{" "}
           <Link href="/asvab-study-guide">ASVAB study guide</Link>.
-        </p>
-
-        <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-emerald-400">Tip</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            If you scored between 45 and 55 and want to retake, focus your study
-            on WK and PC first. A 5-point improvement in Verbal Expression alone
-            can push your AFQT up by 10 points, enough to jump from Category
-            IIIA to Category II.
-          </p>
-        </aside>
-
-        <p className="text-text-secondary">
-          Retake rules: 1 month after your first attempt, 1 month after your
-          second, then 6 months between subsequent attempts. The military uses
-          your most recent score, not your highest. Only retake after focused
-          preparation. For more detail on the scoring system and retake process,
-          see our{" "}
-          <Link href="/asvab-scoring-and-results">
-            ASVAB scoring and results
-          </Link>{" "}
-          guide.
         </p>
 
         {/* FAQ */}

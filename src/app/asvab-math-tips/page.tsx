@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import MathCheatSheetCapture from "@/components/MathCheatSheetCapture";
 
 export const metadata: Metadata = {
   title: "10 ASVAB Math Tips That Actually Raise Your Score",
@@ -443,6 +444,10 @@ export default function ASVABMathTipsPage() {
           Week one: geometry formulas. Week two: add algebra. Week three: add fraction-decimal conversions and start full recall drills. Spreading it out makes the recall stick.
         </p>
 
+        <div className="my-10">
+          <MathCheatSheetCapture source="math-tips-mid" />
+        </div>
+
         {/* Tip 6 */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           6. Build Mental Math Speed (No Calculator Allowed)
@@ -742,6 +747,10 @@ export default function ASVABMathTipsPage() {
               AR and MK each produce individual standard scores (mean around 50, standard deviation around 10). Both feed directly into your AFQT: AFQT = 2VE + AR + MK. Higher math scores also feed into branch-specific composite scores, like the Army&apos;s GT or the Navy&apos;s BEE, that determine which jobs you qualify for beyond basic enlistment.
             </p>
           </div>
+        </div>
+
+        <div className="mt-12">
+          <MathCheatSheetCapture source="math-tips-end" />
         </div>
 
         {/* CTA */}

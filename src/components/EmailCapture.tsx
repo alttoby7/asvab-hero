@@ -11,6 +11,22 @@ interface EmailCaptureProps {
   variant?: "inline" | "card";
   /** When true, also fires email_capture_visible_with_score on first viewport entry. */
   withScoreSignal?: boolean;
+  /**
+   * Analytics/placement label, distinct from `tag`. `tag` keeps routing the
+   * Listmonk list/template; `source` is what we send to GA4 so two mounts of
+   * the same magnet (e.g. mid-article vs end) are distinguishable. Defaults to `tag`.
+   */
+  source?: string;
+  /**
+   * When set, the success state renders an instant Download button pointing
+   * here (the lead magnet is public anyway, so deliver it immediately instead
+   * of relying on email, which is broken for already-subscribed users).
+   */
+  successDownloadHref?: string;
+  /** Optional override for the success-state heading. */
+  successTitle?: string;
+  /** Optional override for the success-state body copy. */
+  successBody?: string;
 }
 
 const ENDPOINT =
@@ -25,12 +41,21 @@ export default function EmailCapture({
   tag = "asvab-study-plan",
   variant = "card",
   withScoreSignal = false,
+  source,
+  successDownloadHref,
+  successTitle,
+  successBody,
 }: EmailCaptureProps) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
   const containerRef = useRef<HTMLElement | null>(null);
   const firedShownRef = useRef(false);
+  // Honeypot: bots fill every field; humans never see this one. Filled = drop silently.
+  const honeypotRef = useRef<HTMLInputElement | null>(null);
+
+  // Analytics label, separate from the routing tag (see prop docs).
+  const analyticsSource = source ?? tag;
 
   // Fire `email_capture_shown` only when the form actually enters the viewport
   // (50% threshold, once per mount). Avoids ghost impressions from off-screen
@@ -42,9 +67,11 @@ export default function EmailCapture({
       // Fallback for ancient browsers / SSR-only render: fire on mount.
       if (!firedShownRef.current) {
         firedShownRef.current = true;
-        trackEvent(FunnelEvents.EmailCaptureShown, { source: tag });
+        trackEvent(FunnelEvents.EmailCaptureShown, { source: analyticsSource });
         if (withScoreSignal) {
-          trackEvent(FunnelEvents.EmailCaptureVisibleWithScore, { source: tag });
+          trackEvent(FunnelEvents.EmailCaptureVisibleWithScore, {
+            source: analyticsSource,
+          });
         }
       }
       return;
@@ -54,10 +81,12 @@ export default function EmailCapture({
         for (const entry of entries) {
           if (entry.isIntersecting && !firedShownRef.current) {
             firedShownRef.current = true;
-            trackEvent(FunnelEvents.EmailCaptureShown, { source: tag });
+            trackEvent(FunnelEvents.EmailCaptureShown, {
+              source: analyticsSource,
+            });
             if (withScoreSignal) {
               trackEvent(FunnelEvents.EmailCaptureVisibleWithScore, {
-                source: tag,
+                source: analyticsSource,
               });
             }
             observer.disconnect();
@@ -69,10 +98,15 @@ export default function EmailCapture({
     );
     observer.observe(node);
     return () => observer.disconnect();
-  }, [tag, withScoreSignal]);
+  }, [analyticsSource, withScoreSignal]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    // Honeypot tripped: pretend success, send nothing. Don't tip off the bot.
+    if (honeypotRef.current?.value) {
+      setStatus("success");
+      return;
+    }
     if (!email || !email.includes("@")) {
       setError("Enter a valid email address.");
       setStatus("error");
@@ -80,20 +114,35 @@ export default function EmailCapture({
     }
     setStatus("submitting");
     setError(null);
-    trackEvent(FunnelEvents.EmailCaptureSubmit, { source: tag });
+    trackEvent(FunnelEvents.EmailCaptureSubmit, { source: analyticsSource });
 
     try {
       const res = await fetch(ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, tag, source: tag }),
+        body: JSON.stringify({ email, tag, source: analyticsSource }),
       });
       if (!res.ok) throw new Error("Signup failed");
       setStatus("success");
-      trackEvent("signup_submit", { source: tag, success: true });
-      // Conversion event (GA4 Key Event). The lead is the money step for the
-      // calculator/article funnel, fire a clean, dedicated event for it.
-      trackEvent("generate_lead", { source: tag, method: "email_capture" });
+      trackEvent("signup_submit", { source: analyticsSource, success: true });
+      // Only count net-new subscribers as leads. The endpoint returns
+      // already_subscribed:true on a 409 (no email sent), which is not a fresh
+      // lead and would otherwise inflate the conversion metric.
+      let alreadySubscribed = false;
+      try {
+        const data = (await res.clone().json()) as { already_subscribed?: boolean };
+        alreadySubscribed = data?.already_subscribed === true;
+      } catch {
+        /* non-JSON body: treat as net-new */
+      }
+      if (!alreadySubscribed) {
+        // Conversion event (GA4 Key Event). The lead is the money step for the
+        // calculator/article funnel, fire a clean, dedicated event for it.
+        trackEvent("generate_lead", {
+          source: analyticsSource,
+          method: "email_capture",
+        });
+      }
       // Persist capture source so a later /signup signup_complete event can
       // attribute back to the originating mount (e.g. `calculator-result`).
       // 14-day TTL; cleared on signup_complete read. Cross-tab leak is
@@ -101,7 +150,7 @@ export default function EmailCapture({
       try {
         localStorage.setItem(
           "asvabhero.last_capture_source",
-          JSON.stringify({ source: tag, capturedAt: Date.now() })
+          JSON.stringify({ source: analyticsSource, capturedAt: Date.now() })
         );
       } catch {
         /* ignore quota / private mode */
@@ -121,7 +170,7 @@ export default function EmailCapture({
         /* ignore */
       }
       setStatus("error");
-      trackEvent("signup_submit", { source: tag, success: false });
+      trackEvent("signup_submit", { source: analyticsSource, success: false });
       setError("Couldn't reach the server. We saved your email and will try again.");
     }
   };
@@ -160,6 +209,26 @@ export default function EmailCapture({
   }
 
   if (status === "success") {
+    if (successDownloadHref) {
+      return (
+        <div className="rounded-lg border border-success/40 bg-success-dim p-4 text-success">
+          <p className="text-sm font-semibold">
+            {successTitle ?? "You're in. Your download is ready."}
+          </p>
+          <p className="mt-1 text-sm">
+            {successBody ??
+              "Tap below to grab your PDF. We also sent a copy to your inbox."}
+          </p>
+          <a
+            href={successDownloadHref}
+            download
+            className="mt-3 inline-block rounded-md bg-accent px-4 py-2 text-sm font-semibold text-white no-underline transition-colors hover:bg-accent-hover"
+          >
+            Download the PDF
+          </a>
+        </div>
+      );
+    }
     return (
       <div className="rounded-lg border border-success/40 bg-success-dim p-4 text-sm text-success">
         ✓ You&apos;re in. Check {email} for your study plan in the next few
@@ -175,11 +244,23 @@ export default function EmailCapture({
 
   return (
     <section ref={containerRef} className={container}>
-      <h3 className="font-display text-lg font-bold text-text-primary">
-        {headline}
-      </h3>
-      <p className="mt-1 text-sm text-text-secondary">{subhead}</p>
+      {headline && (
+        <h3 className="font-display text-lg font-bold text-text-primary">
+          {headline}
+        </h3>
+      )}
+      {subhead && <p className="mt-1 text-sm text-text-secondary">{subhead}</p>}
       <form onSubmit={handleSubmit} className="mt-3 flex flex-wrap gap-2">
+        {/* Honeypot: hidden from humans (and screen readers), catnip for bots. */}
+        <input
+          ref={honeypotRef}
+          type="text"
+          name="company"
+          tabIndex={-1}
+          autoComplete="off"
+          aria-hidden="true"
+          className="absolute left-[-9999px] h-0 w-0 opacity-0"
+        />
         <input
           type="email"
           required

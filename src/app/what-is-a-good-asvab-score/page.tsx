@@ -37,7 +37,7 @@ export default function WhatIsAGoodASVABScorePage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-03-18",
-          dateModified: "2026-03-18",
+          dateModified: "2026-06-14",
         }}
       />
 
@@ -166,157 +166,39 @@ export default function WhatIsAGoodASVABScorePage() {
         <h2>How ASVAB Scoring Actually Works: AFQT vs. Composite Scores</h2>
 
         <p>
-          Your ASVAB score is not a grade. It is a percentile rank against a 1997 reference group.
-          A 60 does not mean you got 60% of questions right. It means you scored higher than 60% of
-          that baseline population.
+          Two separate numbers decide whether a score is good for you. Your AFQT is a percentile rank
+          (a 60 means you scored higher than 60% of the reference group, not that you got 60% right)
+          and it controls whether you can enlist at all. Your composite scores, also called line
+          scores, are built from different subtest combinations by each branch and decide which jobs
+          you qualify for.
         </p>
 
         <p>
-          The AFQT (Armed Forces Qualification Test) score comes from four of the nine ASVAB
-          subtests using this formula: <strong>2VE + AR + MK</strong>. VE is your Verbal Expression
-          score, derived from Word Knowledge and Paragraph Comprehension. AR is Arithmetic
-          Reasoning. MK is Mathematics Knowledge.
-        </p>
-
-        <p>
-          Notice that VE counts twice. That is not a typo. Verbal Expression has double the AFQT
-          impact of either math subtest. If you are trying to raise your AFQT, improving Word
-          Knowledge and Paragraph Comprehension gives you twice the return of improving a single math
-          section.
-        </p>
-
-        <h3>AFQT Categories</h3>
-
-        <div className="overflow-x-auto">
-          <table>
-            <thead className="bg-navy-lighter/50">
-              <tr>
-                <th>Category</th>
-                <th>AFQT Score Range</th>
-                <th>Enlistment Eligibility</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ["I", "93–99", "Eligible, top tier"],
-                ["II", "65–92", "Eligible, highly competitive"],
-                ["IIIA", "50–64", "Eligible, incentive threshold"],
-                ["IIIB", "31–49", "Eligible, limited incentives"],
-                ["IVA", "21–30", "Limited eligibility (waivers)"],
-                ["IVB", "16–20", "Limited eligibility (waivers)"],
-                ["IVC", "10–15", "Limited eligibility (waivers)"],
-                ["V", "1–9", "Not eligible for enlistment"],
-              ].map(([cat, range, elig]) => (
-                <tr key={cat}>
-                  <td className="font-mono font-semibold">{cat}</td>
-                  <td>{range}</td>
-                  <td>{elig}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        <p>
-          Composite scores are built from different subtest combinations and vary by branch. They are
-          completely separate from your AFQT. The Army uses 10 composite scores (GT, ST, CL, CO, EL,
-          FA, GM, MM, OF, SC). The Air Force uses four (Mechanical, Administrative, General,
-          Electronics). The Marines and Navy each have their own systems.
-        </p>
-
-        <p>
-          Your AFQT gets you through the door. Your composite scores determine which rooms you can
-          enter.
-        </p>
-
-        <p>
-          For a full breakdown of how each score works, see our{" "}
-          <Link href="/asvab-scores-explained">ASVAB scores explained</Link> guide and{" "}
-          <Link href="/asvab-score-chart">score chart</Link>.
+          That two-system split is the reason &ldquo;good&rdquo; never reduces to one number, which
+          is what the rest of this page works through. For the full mechanics of how every score is
+          built and read, see our{" "}
+          <Link href="/asvab-scores-explained">ASVAB scores explained</Link> hub, and for the AFQT
+          formula, percentile, and Category I&ndash;V table in detail, see{" "}
+          <Link href="/afqt-score">AFQT score explained</Link>.
         </p>
 
         {/* Section 3 */}
         <h2>What Score Gets You In: Minimum AFQT by Branch</h2>
 
         <p>
-          The Air Force minimum is technically 31. But over 90% of approved Air Force enlistees
-          score 50 or above. The published minimum and the practical minimum are two different
-          numbers.
-        </p>
-
-        <h3>Minimums for High School Diploma Holders</h3>
-
-        <div className="overflow-x-auto">
-          <table>
-            <thead className="bg-navy-lighter/50">
-              <tr>
-                <th>Branch</th>
-                <th>Minimum AFQT</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Army</td>
-                <td>31</td>
-              </tr>
-              <tr>
-                <td>Air Force</td>
-                <td>31 (practical: 50+)</td>
-              </tr>
-              <tr>
-                <td>Marines</td>
-                <td>31</td>
-              </tr>
-              <tr>
-                <td>Navy</td>
-                <td>Not published as a single number</td>
-              </tr>
-              <tr>
-                <td>Coast Guard</td>
-                <td>Not published as a single number</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p>
-          The Navy and Coast Guard do not list a single AFQT cutoff on their public websites. Both
-          evaluate applicants using a combination of AFQT and job-specific composite scores. The Army
-          is the most accessible at the published minimum, but your job options at a 31 are severely
-          limited.
-        </p>
-
-        <h3>The GED and Credential Gap</h3>
-
-        <p>
-          If you do not have a high school diploma, the bar goes up significantly. The Air Force
-          requires a 50 with a GED, compared to 31 with a diploma. Marines also require a 50 with a
-          GED. The Air Force will consider applicants with no diploma or GED if they score 65 or
-          above and have at least 15 college credits.
+          The floor for &ldquo;good&rdquo; is whatever lets you enlist, and that varies by branch and
+          by whether you hold a high school diploma or a GED. The Army, Air Force, and Marines publish
+          a diploma minimum of 31, but a GED typically pushes that to 50, and the Air Force in
+          practice expects 50 or above from most enlistees. The Navy and Coast Guard do not publish a
+          single cutoff, weighing AFQT alongside job-specific composites instead.
         </p>
 
         <p>
-          That credential gap costs you 19 points in the Air Force. If you are close to finishing
-          your diploma, complete it before you test. The math is straightforward: a diploma plus a 35
-          gets you in. A GED plus a 45 does not.
+          So if your only goal is to get in the door, the bar can be as low as 31. For the complete,
+          current branch-by-branch minimums (diploma vs. GED, the no-credential path, and the Army
+          Future Soldier Prep Course for applicants who fall short), see our{" "}
+          <Link href="/asvab-score-requirements">ASVAB score requirements by branch</Link> guide.
         </p>
-
-        <h3>Below the Minimum</h3>
-
-        <p>
-          Scoring below 31 does not necessarily end the conversation. The Army&apos;s Future Soldier
-          Prep Course offers a structured path for applicants who fall short. Score between 21 and 30
-          on the AFQT, and you enter a 90-day academic program designed to prepare you for a retest.
-          Score 31 to 49, and a shorter 30-day version helps you improve your composite scores for
-          better MOS (job) options.
-        </p>
-
-        <p>
-          Category V scores (1&ndash;9) are not eligible for enlistment under current law. No
-          branch, no waiver.
-        </p>
-
-        <p>Meeting the minimum gets you in. A good score gets you the job you actually want.</p>
 
         {/* Section 4 */}
         <h2>What Score Gets You the Job You Want</h2>
@@ -378,8 +260,8 @@ export default function WhatIsAGoodASVABScorePage() {
         </p>
 
         <p>
-          For composite thresholds by job, check the{" "}
-          <Link href="/asvab-score-chart">ASVAB score chart</Link>.
+          For the full list of which jobs open up at each score level, see our{" "}
+          <Link href="/asvab-score-ranges">ASVAB score ranges</Link> breakdown.
         </p>
 
         {/* Section 5 */}
@@ -415,16 +297,18 @@ export default function WhatIsAGoodASVABScorePage() {
 
         <p>
           A 50 is solidly good. You have crossed the incentive threshold, outperformed half the
-          reference population, and qualify for the majority of military jobs.
+          reference population, and qualify for the majority of military jobs. A 50 also sits right at
+          the national midpoint, so for what an average score means and how 50 compares to it, see our{" "}
+          <Link href="/asvab-score-average">average ASVAB score</Link> guide.
         </p>
 
         {/* Section 6 */}
-        <h2>Scores You Need for Elite and Technical Career Paths</h2>
+        <h2>Is Your Score Good Enough for Elite and Technical Paths?</h2>
 
         <p>
-          If you scored 70 or above, you outperformed 70% of the baseline population. But the real
-          question is whether your composite scores meet the requirements for the specific path you
-          are targeting.
+          If you scored 70 or above, you outperformed 70% of the baseline population, which sounds
+          plainly good. For elite pipelines, though, &ldquo;good enough&rdquo; is judged on specific
+          composite scores, not your headline AFQT, so a high overall number can still fall short.
         </p>
 
         <h3>Elite Military Pipelines</h3>
@@ -491,7 +375,9 @@ export default function WhatIsAGoodASVABScorePage() {
 
         <p>
           Use the <Link href="/calculator">ASVAB Score Calculator</Link> to check your composites
-          against these thresholds.
+          against these thresholds, and see the full{" "}
+          <Link href="/asvab-score-ranges">ASVAB score ranges</Link> breakdown for the standard jobs
+          that open up below the elite tier.
         </p>
 
         {/* Section 7 */}
@@ -502,20 +388,12 @@ export default function WhatIsAGoodASVABScorePage() {
           previous score disappears.
         </p>
 
-        <h3>Retake Rules</h3>
-
         <p>
-          The waiting periods are fixed: 1 month after your first attempt, 1 month after your
-          second, then 6 months between every subsequent attempt. Your most recent score is the only
-          one that counts. There is no option to fall back to a previous result.
-        </p>
-
-        <p>
-          For first-time test-takers, the PiCAT offers an alternative. It is a take-home version of
-          the ASVAB you complete on your own computer in a lower-pressure environment. Only
-          first-time test-takers are eligible. You must verify your score at MEPS afterward with a
-          shortened verification test, but it removes the cold-test-center anxiety for the initial
-          attempt.
+          One rule shapes every retake decision: the military counts your most recent score, not your
+          highest, so a worse retake replaces a good score you already earned. The fixed waiting
+          periods (and the PiCAT take-home option for first-time testers) are covered in full in our{" "}
+          <Link href="/asvab-retake-policy">ASVAB retake policy</Link> guide. The judgment of whether
+          to retake at all is what matters here.
         </p>
 
         <h3>When to Retake (Go Criteria)</h3>

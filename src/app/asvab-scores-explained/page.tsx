@@ -6,10 +6,6 @@ import JsonLd from "@/components/JsonLd";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
-import AFQTFormulaExplorer from "@/components/scores-explained/AFQTFormulaExplorer";
-import AFQTCategoryLadder from "@/components/scores-explained/AFQTCategoryLadder";
-import BranchCompositeHeatmap from "@/components/scores-explained/BranchCompositeHeatmap";
-import ScoreImpactSimulator from "@/components/scores-explained/ScoreImpactSimulator";
 import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
@@ -85,7 +81,7 @@ export default function ASVABScoresExplainedPage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-03-17",
-          dateModified: "2026-05-22",
+          dateModified: "2026-06-14",
         }}
       />
 
@@ -233,48 +229,18 @@ export default function ASVABScoresExplainedPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Your score sheet has a lot of numbers on it. Only one of them decides whether you can enlist at all.
+          Your score sheet has a lot of numbers on it. Only one of them decides whether you can enlist at all: the <strong>AFQT</strong> (Armed Forces Qualification Test), a percentile from 1 to 99 built from just 4 of your 9 subtests using the formula <span className="font-mono text-accent">2(VE) + AR + MK</span>. A 50 is the <Link href="/asvab-score-average" className="text-accent hover:text-accent-hover">average ASVAB score</Link>, and every branch sets its enlistment gate against this single number.
         </p>
         <p className="text-text-secondary">
-          The <strong>AFQT</strong> (Armed Forces Qualification Test) score is a percentile ranking from 1 to 99. A score of 60 means you performed better than 60% of the reference population. Every branch uses this single number as the first gate: meet the minimum or you don&apos;t get in.
-        </p>
-        <p className="text-text-secondary">
-          Your AFQT isn&apos;t pulled from all 9 subtests. It uses exactly 4: Arithmetic Reasoning (AR), Mathematics Knowledge (MK), Word Knowledge (WK), and Paragraph Comprehension (PC).
-        </p>
-        <p className="text-text-secondary">The formula:</p>
-        <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          AFQT = 2(VE) + AR + MK
-        </div>
-        <p className="text-text-secondary">
-          VE stands for <strong>Verbal Expression</strong>, a combined score derived from your WK and PC raw scores. The scoring system adds your WK raw score and PC raw score together, then converts the total through a standard table into a VE standard score ranging from 20 to 62.
-        </p>
-        <p className="text-text-secondary">
-          Here&apos;s the part most people miss: VE is <strong>doubled</strong> in the formula. A 5-point improvement in your VE score adds 10 raw points to your AFQT calculation. No other subtest has that kind of leverage.
-        </p>
-        <p className="text-text-secondary">
-          Walk through a real example. Say your scores look like this: VE = 55, AR = 52, MK = 48.
-        </p>
-        <div className="my-3 rounded-lg bg-navy p-3 font-mono text-sm text-text-primary">
-          <p>2(55) + 52 + 48 = <strong>210</strong></p>
-          <p className="mt-1 text-text-tertiary">
-            Bump VE to 60: 2(60) + 52 + 48 = <strong>220</strong> (+10 from verbal alone)
-          </p>
-        </div>
-        <p className="text-text-secondary">
-          The same 5-point gain in AR would only add 5 raw points. This 2x multiplier makes verbal prep the single most efficient use of your study time if you need a higher AFQT. Drop your four subtests into the{" "}
+          The detail that trips people up: VE (Verbal Expression, from your Word Knowledge and Paragraph Comprehension) is <strong>doubled</strong> in the formula, so verbal prep gives you twice the leverage of any other subtest. For the full walkthrough (the VE 2x math, the 1997 percentile baseline, and how to raise your AFQT) see our deep dive on the{" "}
+          <Link href="/afqt-score" className="text-accent hover:text-accent-hover">
+            AFQT score
+          </Link>, or drop your four subtests into the{" "}
           <Link href="/afqt-calculator" className="text-accent hover:text-accent-hover">
             AFQT calculator
           </Link>{" "}
-          to see your exact percentile and DoD category.
+          to see your exact percentile.
         </p>
-        <p className="text-text-secondary">
-          The raw total gets converted to a percentile based on the <strong>1997 norming study</strong> (the Profile of American Youth), a nationally representative sample of 18-to-23-year-olds. The reference group is nearly 30 years old and hasn&apos;t been updated. Your percentile compares you to that 1997 cohort, not to current test-takers.
-        </p>
-        <p className="text-text-secondary">
-          Only 4 of your 9 subtests feed the AFQT. The other 5 (General Science, Electronics Information, Auto &amp; Shop Information, Mechanical Comprehension, and Assembling Objects) matter for job qualification, not enlistment eligibility.
-        </p>
-
-        <AFQTFormulaExplorer />
 
         {/* ─── AFQT CATEGORIES ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -282,40 +248,14 @@ export default function ASVABScoresExplainedPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Your AFQT percentile doesn&apos;t just tell you whether you can enlist. It slots you into a category that determines your priority for jobs, bonuses, and enlistment slots.
-        </p>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Category</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Percentile</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">What It Means</th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-mono font-bold text-emerald-400">I</td><td className="py-2 pr-4">93-99</td><td className="py-2">Top tier. First pick of everything.</td></tr>
-              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-mono font-bold text-emerald-300">II</td><td className="py-2 pr-4">65-92</td><td className="py-2">Highly qualified. Full access to jobs and bonuses.</td></tr>
-              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-mono font-bold text-sky-400">IIIA</td><td className="py-2 pr-4">50-64</td><td className="py-2">Above average. Strong position for most roles.</td></tr>
-              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-mono font-bold text-amber-400">IIIB</td><td className="py-2 pr-4">31-49</td><td className="py-2">Meets minimum for most branches. Limited bonus eligibility.</td></tr>
-              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-mono font-bold text-orange-400">IV</td><td className="py-2 pr-4">10-30</td><td className="py-2">Restricted. Congress caps at 4% of annual enlistments.</td></tr>
-              <tr><td className="py-2 pr-4 font-mono font-bold text-red-400">V</td><td className="py-2 pr-4">1-9</td><td className="py-2">Permanent disqualifier. No exceptions.</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p className="text-text-secondary">
-          Categories I through IIIA put you in a strong negotiating position with access to the widest range of Military Occupational Specialties, signing bonuses, and training programs. Recruiters want you.
+          Your AFQT percentile doesn&apos;t just decide whether you can enlist. It slots you into a category (I through V) that sets your priority for jobs, bonuses, and enlistment slots. Categories I to IIIA (50 and up) give you the strongest negotiating position, IIIB (31 to 49) gets you through the door with narrower options, and Category V (1 to 9) is a permanent disqualifier.
         </p>
         <p className="text-text-secondary">
-          Category IIIB still gets you through the door, but your options narrow. Category IV is restricted by federal law (10 U.S.C. 520) to no more than 4% of each branch&apos;s annual enlistments. Category V is a permanent disqualifier with no waiver process.
+          The full tier table (every category, its exact percentile band, and what each one unlocks) lives on our{" "}
+          <Link href="/asvab-score-chart" className="text-accent hover:text-accent-hover">
+            ASVAB score chart
+          </Link>, which lays the categories, branch minimums, and composite tables out side by side.
         </p>
-        <p className="text-text-secondary">
-          <strong>GED holders face higher thresholds.</strong> Most branches require a minimum AFQT of 50 instead of 31–36. The Air Force and Space Force require 65. Earning 15+ college credits can reclassify you at the diploma tier.
-        </p>
-
-        <AFQTCategoryLadder />
 
         {/* ─── 9 SUBTESTS ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -375,83 +315,31 @@ export default function ASVABScoresExplainedPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Your AFQT gets you through the front door. Your composite scores decide which rooms you&apos;re allowed to enter.
+          The third type of number on your sheet is your composite (or line) scores. Think of it as a two-gate system: gate one is the AFQT minimum for enlistment, and gate two is a set of composites, each built from a different combination of subtests, that decide which specific jobs you qualify for. Each branch names them differently, the Army uses 10 line scores including the{" "}
+          <Link href="/gt-score" className="text-accent hover:text-accent-hover">
+            GT score
+          </Link>, the Air Force and Space Force use MAGE, and the Navy and Coast Guard use a unique formula per rating.
         </p>
         <p className="text-text-secondary">
-          Think of it as a two-gate system. Gate one is the AFQT minimum for enlistment. Gate two is a series of composite scores, each calculated from different subtest combinations, that determine which specific jobs you qualify for.
+          A high AFQT doesn&apos;t guarantee high composites. Score an 80th-percentile AFQT but a low Electronics Information and General Science, and you&apos;re locked out of technical jobs. For every composite formula and the full branch-by-branch line-score tables, see the{" "}
+          <Link href="/asvab-score-chart" className="text-accent hover:text-accent-hover">
+            ASVAB score chart
+          </Link>.
         </p>
-
-        <div className="my-4 space-y-4">
-          <div className="rounded-lg bg-navy p-4">
-            <h3 className="font-display text-base font-bold text-text-primary">Army: 10 Line Scores</h3>
-            <p className="mt-1 text-sm text-text-secondary">
-              CL, EL, CO, FA, GM, MM, OF, SC, ST, and the{" "}
-              <Link href="/gt-score" className="text-accent hover:text-accent-hover">
-                GT score
-              </Link>
-              . Each combines 2-4 subtests. GT (AR + VE) is most common for
-              intelligence and technical jobs.
-            </p>
-          </div>
-          <div className="rounded-lg bg-navy p-4">
-            <h3 className="font-display text-base font-bold text-text-primary">Marines: 4 Composites</h3>
-            <p className="mt-1 text-sm text-text-secondary">
-              GT, MM, EL, CL. Same concept as Army, fewer categories. Each maps to a family of MOSs.
-            </p>
-          </div>
-          <div className="rounded-lg bg-navy p-4">
-            <h3 className="font-display text-base font-bold text-text-primary">Air Force &amp; Space Force: MAGE</h3>
-            <p className="mt-1 text-sm text-text-secondary">
-              Mechanical (M), Administrative (A), General (G), Electronics (E). Space Force adopted the Air Force system when it split off in 2019.
-            </p>
-          </div>
-          <div className="rounded-lg bg-navy p-4">
-            <h3 className="font-display text-base font-bold text-text-primary">Navy &amp; Coast Guard: Job-Specific</h3>
-            <p className="mt-1 text-sm text-text-secondary">
-              Each of 80+ ratings has its own unique formula. Hospital Corpsman needs different subtests than Nuclear Electronics Technician. Hardest system to navigate without a lookup tool.
-            </p>
-          </div>
-        </div>
-
-        <p className="text-text-secondary">
-          A high AFQT doesn&apos;t guarantee high composites. If you scored an 80th percentile AFQT but your Electronics Information and General Science scores are low, you&apos;re locked out of electronics and technical jobs across every branch.
-        </p>
-
-        <BranchCompositeHeatmap />
 
         {/* ─── BRANCH MINIMUMS ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           Minimum ASVAB Scores by Branch (2026 Requirements)
         </h2>
 
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Branch</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Diploma Min</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">GED Min</th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-semibold text-text-primary">Army</td><td className="py-2 pr-4 font-mono">31</td><td className="py-2 font-mono">50</td></tr>
-              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-semibold text-text-primary">Navy</td><td className="py-2 pr-4 font-mono">35</td><td className="py-2 font-mono">50</td></tr>
-              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-semibold text-text-primary">Marines</td><td className="py-2 pr-4 font-mono">32</td><td className="py-2 font-mono">50</td></tr>
-              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-semibold text-text-primary">Air Force</td><td className="py-2 pr-4 font-mono">36</td><td className="py-2 font-mono">65</td></tr>
-              <tr className="border-b border-navy-border/50"><td className="py-2 pr-4 font-semibold text-text-primary">Coast Guard</td><td className="py-2 pr-4 font-mono">32</td><td className="py-2 font-mono">50</td></tr>
-              <tr><td className="py-2 pr-4 font-semibold text-text-primary">Space Force</td><td className="py-2 pr-4 font-mono">36</td><td className="py-2 font-mono">65</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p className="text-text-secondary">
-          These are <strong>minimums, not competitive scores</strong>. Scoring a 31 for the Army means you can technically enlist, but you&apos;ll have limited job choices and less leverage with your recruiter. The average enlistee scores between 55 and 65.
+        <p className="mt-4 text-text-secondary">
+          Each branch sets its own minimum AFQT to enlist, and these are floors, not competitive scores. Diploma minimums run roughly 31 (Army) to 36 (Air Force and Space Force), GED holders face higher bars (typically 50, and 65 for the Air Force and Space Force), and earning 15+ college credits can reclassify a GED holder at the diploma tier. The average enlistee actually scores between 55 and 65.
         </p>
         <p className="text-text-secondary">
-          GED holders face higher bars because the military uses education credentials as a predictor of training completion. Earning <strong>15+ college credits</strong> can reclassify you at the diploma tier.
-        </p>
-        <p className="text-text-secondary">
-          Plug your scores into our{" "}
+          For the full branch-by-branch table (diploma and GED minimums for all six branches, plus the composite scores specific jobs require) see our{" "}
+          <Link href="/asvab-score-requirements" className="text-accent hover:text-accent-hover">
+            ASVAB score requirements by branch
+          </Link>. Or plug your scores into the{" "}
           <Link href="/calculator" className="text-accent hover:text-accent-hover">
             free calculator
           </Link>{" "}
@@ -464,38 +352,15 @@ export default function ASVABScoresExplainedPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          You got your scores and they&apos;re not where you need them. You can retake the ASVAB, but there are wait periods and a rule that catches people off guard.
-        </p>
-
-        <div className="my-4 space-y-2">
-          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
-            <span className="font-mono text-sm font-bold text-accent">1st</span>
-            <span className="text-sm text-text-secondary">1 month after initial test</span>
-          </div>
-          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
-            <span className="font-mono text-sm font-bold text-accent">2nd</span>
-            <span className="text-sm text-text-secondary">1 month after 1st retake</span>
-          </div>
-          <div className="flex items-center gap-3 rounded-lg bg-navy px-4 py-3">
-            <span className="font-mono text-sm font-bold text-accent">3rd+</span>
-            <span className="text-sm text-text-secondary">6 months between each subsequent attempt</span>
-          </div>
-        </div>
-
-        <p className="text-text-secondary">
-          <strong>Your most recent score completely replaces all previous scores.</strong> If you scored a 72 and retake for a 58, your official score is now 58. You can&apos;t keep the higher number.
+          If your scores aren&apos;t where you need them, you can retake the ASVAB, but two rules catch people off guard. First, there are wait periods (1 month before your first retake, 1 month before the second, then 6 months between every attempt after that). Second, your most recent score completely replaces all previous scores, so a 72 followed by a 58 leaves you with an official 58.
         </p>
         <p className="text-text-secondary">
-          ASVAB scores stay valid for 2 years. Retake when you&apos;ve studied for 4-6 weeks and practice tests show consistent improvement. Don&apos;t retake just because your recruiter suggested it without a clear reason.
-        </p>
-        <p className="text-text-secondary">
-          Build a study plan with our{" "}
+          For the complete wait-time schedule, the score-replacement rules, and the strategy on when a retake is worth it, see our{" "}
+          <Link href="/asvab-retake-policy" className="text-accent hover:text-accent-hover">
+            ASVAB retake policy
+          </Link>. When you do retake, build a study plan with our{" "}
           <Link href="/practice-test" className="text-accent hover:text-accent-hover">
             practice tests
-          </Link>{" "}
-          or unlock full score tracking with{" "}
-          <Link href="/pricing" className="text-accent hover:text-accent-hover">
-            ASVAB Hero Pro
           </Link>.
         </p>
 
@@ -505,41 +370,21 @@ export default function ASVABScoresExplainedPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Study smart. Not every subtest moves your scores equally.
+          Not every subtest moves your scores equally. Start with verbal, because VE is doubled in the AFQT formula every point in Word Knowledge or Paragraph Comprehension counts twice, then prioritize your weakest AFQT subtests. For composites, work backwards from your target job and drill the subtests that feed its line score. A focused 4 to 6 week effort typically yields a 5 to 15 percentile point gain.
         </p>
         <p className="text-text-secondary">
-          <strong>Start with verbal.</strong> Because VE is doubled in the AFQT formula, every point you gain in Word Knowledge or Paragraph Comprehension counts twice. This is the single highest-leverage move you can make.
-        </p>
-        <p className="text-text-secondary">
-          <strong>Then prioritize your weak AFQT subtests.</strong> Bringing a weak AR from 40 to 50 is more achievable and more impactful than pushing a strong MK from 58 to 62.
-        </p>
-        <p className="text-text-secondary">
-          <strong>For composite improvement, work backwards from your target job.</strong> Find which subtests feed your desired MOS composite. If you want an Army electronics job, GS and EI are your study priorities, even if your AFQT is already solid.
-        </p>
-
-        <div className="my-4 rounded-lg bg-navy p-4">
-          <h3 className="font-display text-base font-bold text-text-primary">4-6 Week Study Plan</h3>
-          <ul className="mt-2 space-y-1 text-sm text-text-secondary">
-            <li><strong>Weeks 1-2:</strong> Take a diagnostic test. Identify your 2-3 weakest subtests.</li>
-            <li><strong>Weeks 3-4:</strong> Drill weak areas daily. Flashcards for WK, word problems for AR.</li>
-            <li><strong>Weeks 5-6:</strong> Timed practice tests under realistic conditions. Review every wrong answer.</li>
-          </ul>
-          <p className="mt-2 text-xs text-text-tertiary">
-            A focused 4-6 week study period typically yields a 5 to 15 percentile point improvement.
-          </p>
-        </div>
-
-        <ScoreImpactSimulator />
-
-        <p className="text-text-secondary">
-          Take a{" "}
+          For the full week-by-week plan and subtest drills, see our{" "}
+          <Link href="/asvab-study-guide" className="text-accent hover:text-accent-hover">
+            ASVAB study guide
+          </Link>; if your goal is a higher enlistment score specifically, the{" "}
+          <Link href="/afqt-score" className="text-accent hover:text-accent-hover">
+            AFQT score
+          </Link>{" "}
+          guide covers the highest-leverage moves. Find your baseline with a{" "}
           <Link href="/practice-test" className="text-accent hover:text-accent-hover">
             practice test
           </Link>{" "}
-          to find your baseline, then track progress with{" "}
-          <Link href="/pricing" className="text-accent hover:text-accent-hover">
-            ASVAB Hero Pro
-          </Link>.
+          first.
         </p>
 
         {/* ─── FAQ ─── */}

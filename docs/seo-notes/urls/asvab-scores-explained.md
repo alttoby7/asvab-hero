@@ -5,8 +5,8 @@ site_url: https://asvabhero.com
 country: us
 first_optimized: 2026-05-22
 last_reviewed: 2026-06-14
-cycles: 2
-last_verdict: hold
+cycles: 3
+last_verdict: applied
 ---
 
 # /asvab-scores-explained — Optimization Log
@@ -114,3 +114,86 @@ Re-pull GSC ~2026-07-26 (≈6 weeks). Expect continued drift toward page 2–3 o
 ### Git state at end of cycle
 
 - Review only; the page content file was NOT modified this cycle. Log + index.json updated.
+
+---
+
+## Cycle 3 — 2026-06-14 (Cannibalization de-dup)
+
+**Status:** applied
+
+### Diagnosis (from the cluster audit)
+
+Cycle 2 flagged mild AFQT-term cannibalization for separate investigation. The full
+audit (`docs/seo-notes/cannibalization-audit-2026-06.md`) confirmed a bigger pattern: the
+seven "score-explainer" pages are near-duplicate template-clones, all repeating the same 6
+subtopics (AFQT categories table, branch minimums, composite/line formulas, retake rules,
+"what each level unlocks," average score). GSC URL Inspection (2026-06-14) shows this page
+is the **only one of the seven Google indexes** (pos ~36, 2,217 impr); the other six are
+"Crawled - currently not indexed" despite 16–18 inbound links each, i.e. rejected as
+duplicates, not link-starved. Fix = de-duplication (penalty-positive): each page owns ONE
+angle deep; shared subtopics demoted to a 2–3 sentence summary + a contextual link to that
+subtopic's canonical page.
+
+### Approach: hub-ify this page
+
+This page is the indexed winner and its assigned role in the ownership matrix is the **HUB**:
+it OWNS "how to READ your score sheet" (the 3 number types) + a high-level overview that
+routes readers out to each spoke. So the edit is surgical, not a gut: keep everything that
+makes it work (title, H1, the "How to Read Your ASVAB Score Sheet" deep section, the
+9-subtests overview, the FAQ + its JSON-LD), and trim the deep duplicate bodies down to
+crisp overview summaries that each end in ONE descriptive in-content link to the canonical
+page. These are ordinary contextual links (NOT rel=canonical); we want every page to keep
+ranking independently. The page stays comprehensive but stops duplicating the spokes.
+
+### Sections demoted (heading kept, deep body → 2–3 sentence summary + canonical link)
+
+| H2 section | Deep content removed | Demoted link → |
+|---|---|---|
+| Your AFQT Score | full formula walkthrough, VE 2x worked example, 1997 baseline, AFQTFormulaExplorer widget | `/afqt-score` |
+| AFQT Categories | 6-row I–V tier table + AFQTCategoryLadder widget | `/asvab-score-chart` |
+| Composite Scores and Line Scores | 4 branch-system cards + BranchCompositeHeatmap widget (kept a short "what composites are" explanation, one of the 3 number types) | `/asvab-score-chart` |
+| Minimum ASVAB Scores by Branch | 6-row diploma/GED minimums table | `/asvab-score-requirements` |
+| Retaking the ASVAB | wait-time step cards + replacement-rule detail | `/asvab-retake-policy` |
+| How to Improve Your ASVAB Scores | multi-paragraph strategy + 4–6 week plan box + ScoreImpactSimulator widget | `/asvab-study-guide` (+ `/afqt-score`) |
+
+KEPT DEEP / untouched (the hub's owned content): intro, VerifiedBlock, hero image, the "How
+to Read Your ASVAB Score Sheet" 3-bucket section + Key Point aside, the 9 ASVAB subtests
+section, the FAQ (visible list + Pattern B `faqItems` array feeding FAQPage JSON-LD, 10 Qs,
+unchanged), CTAs, RelatedLinks. Title, meta, and H1 unchanged. The contested Coast Guard
+figure and the Army 35F "ST 101" correction were in demoted tables/FAQ respectively; the
+35F FAQ is untouched, and the Coast Guard row was removed with the minimums table (now lives
+on `/asvab-score-requirements`), so no contested fact was altered here.
+
+### Inbound link added
+
+Added an in-content link to **`/asvab-score-average`** (anchor "average ASVAB score") in the
+AFQT overview paragraph. Per the audit that page had **0** inbound in-content links and needs
+them; placed it naturally where the "a 50 is average" fact is stated.
+
+### Component imports removed (sections gutted, widgets moved to their topical homes per audit)
+
+`AFQTFormulaExplorer`, `AFQTCategoryLadder`, `BranchCompositeHeatmap`, `ScoreImpactSimulator`
+— all four removed from imports and JSX. (The audit routes these widgets to `/afqt-score`
+and `/asvab-score-chart`; relocation is a separate task on those pages.)
+
+### Em-dash check
+
+`grep "—"` on the file = 0 hits (build guard `scripts/check-no-emdash.mjs` would fail
+otherwise). En-dashes retained only in numeric ranges (e.g. 1–99 in the kept score-sheet
+table). New prose uses "to"/commas/parentheses.
+
+### Other
+
+- Article JSON-LD `dateModified` → 2026-06-14.
+- Only `src/app/asvab-scores-explained/page.tsx` + this log touched. No title/H1/FAQ/schema
+  shape changes; no sitemap churn. Build run centrally (not here).
+
+### Expectations
+
+This page already ranks (pos ~36) and is the winner, so the goal of THIS edit is not to lift
+this page but to **stop it duplicating the six spokes** so they can finally index. Success
+signal lives on the spokes: after deploy + Request Indexing, the 6 currently-unindexed pages
+should flip to "Submitted and indexed" and begin earning impressions over 1–4 weeks. Risk to
+this page is low: it keeps its owned, unique HUB content and gains cleaner outbound topical
+links (good for the cluster's internal link graph). Watch that this page holds its position
+through the next GSC pull (~2026-07-26).

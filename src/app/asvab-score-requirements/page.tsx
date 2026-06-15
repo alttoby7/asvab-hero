@@ -1254,7 +1254,7 @@ export default function ASVABScoreRequirementsPage() {
             <li>
               Targeting a specific job or career advancement? See{" "}
               <Link
-                href="/gt-score-requirements"
+                href="/gt-score"
                 className="text-accent underline hover:text-accent-hover"
               >
                 GT score requirements

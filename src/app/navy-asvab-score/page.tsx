@@ -896,8 +896,8 @@ export default function NavyASVABScorePage() {
         </p>
 
         <p className="text-text-secondary">
-          For the complete list of all 89 Navy ratings, see our{" "}
-          <Link href="/navy-ratings-list">Navy ratings list</Link>.
+          For the required line score on every rating, see our{" "}
+          <Link href="/navy-ratings-list">Navy ASVAB score chart</Link>.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">

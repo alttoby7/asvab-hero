@@ -646,7 +646,7 @@ export default function ASVABPrepCoursePage() {
           the seven subtests that do not count toward GT. For the full formula and
           thresholds, see our{" "}
           <Link
-            href="/gt-score-requirements"
+            href="/gt-score"
             className="text-accent hover:text-accent-hover"
           >
             GT score requirements

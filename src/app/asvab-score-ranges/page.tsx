@@ -28,7 +28,7 @@ const articleJsonLd = {
     name: "ASVAB Hero",
   },
   datePublished: "2026-03-22",
-  dateModified: "2026-03-22",
+  dateModified: "2026-06-14",
 };
 
 const faqJsonLd = {
@@ -120,112 +120,26 @@ export default function ASVABScoreRangesPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Congress literally caps how many low-scoring recruits each branch can accept. Your AFQT category is not just a label on a score report. It is a legal classification written into federal law (10 USC 520).
+          Every AFQT score falls into one of six tiers, and the tier you land in is what actually controls your options. Category V (1-9) is a permanent disqualifier. Category IV (10-30) is legally capped at 4% of each branch&apos;s annual accessions, so acceptance is rare. Category IIIB (31-49) gets you in the door with limited leverage. Category IIIA (50+) is the threshold where bonuses, jobs, and recruiter attention open up. Category II (65+) puts nearly every job within reach, and Category I (93+) is the top 7% who get first pick on everything.
         </p>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Category</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Percentile Range</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Share of Test-Takers</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">What It Unlocks</th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-bold text-emerald-400">I</td>
-                <td className="py-2 pr-4">93&ndash;99</td>
-                <td className="py-2 pr-4">Top 7%</td>
-                <td className="py-2">First pick on virtually every job. Maximum enlistment bonuses. Officer-track signal. Intel, cyber, and special ops units actively recruit from this pool.</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-bold text-emerald-300">II</td>
-                <td className="py-2 pr-4">65&ndash;92</td>
-                <td className="py-2 pr-4">Next 28%</td>
-                <td className="py-2">Highly qualified across all branches. Full bonus eligibility. Nearly every MOS, rating, and AFSC open.</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-bold text-sky-400">IIIA</td>
-                <td className="py-2 pr-4">50&ndash;64</td>
-                <td className="py-2 pr-4">Next 15%</td>
-                <td className="py-2">Above average. Bonus eligible. Most jobs available. This is the threshold where branches start treating you as a competitive candidate.</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-bold text-amber-400">IIIB</td>
-                <td className="py-2 pr-4">31&ndash;49</td>
-                <td className="py-2 pr-4">Next 19%</td>
-                <td className="py-2">Meets most branch minimums but limited bonuses. Fewer job options. Recruiters have less flexibility to negotiate on your behalf.</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-bold text-orange-400">IV</td>
-                <td className="py-2 pr-4">10&ndash;30</td>
-                <td className="py-2 pr-4">Next 21%</td>
-                <td className="py-2">Legally capped at 4% of annual accessions per branch. Acceptance is rare. Severely limited job options even when accepted.</td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-mono font-bold text-red-400">V</td>
-                <td className="py-2 pr-4">1&ndash;9</td>
-                <td className="py-2 pr-4">Bottom 9%</td>
-                <td className="py-2">Permanently ineligible. No waiver process exists.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
 
         <div className="my-4 space-y-2">
           <div className="rounded-lg bg-navy px-4 py-3">
-            <p className="font-mono text-sm font-bold text-accent">Category V (1-9)</p>
-            <p className="mt-1 text-sm text-text-secondary">Permanent disqualification, no exceptions</p>
-          </div>
-          <div className="rounded-lg bg-navy px-4 py-3">
-            <p className="font-mono text-sm font-bold text-accent">Category IV (10-30)</p>
-            <p className="mt-1 text-sm text-text-secondary">4% statutory cap, rarely accepted even within that limit</p>
-          </div>
-          <div className="rounded-lg bg-navy px-4 py-3">
-            <p className="font-mono text-sm font-bold text-accent">Category IIIB (31-49)</p>
-            <p className="mt-1 text-sm text-text-secondary">In the door, but limited leverage and job selection</p>
+            <p className="font-mono text-sm font-bold text-accent">Category I (93+) and II (65+)</p>
+            <p className="mt-1 text-sm text-text-secondary">Highly qualified across all branches, full bonus eligibility, nearly every job open</p>
           </div>
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-accent">Category IIIA (50+)</p>
             <p className="mt-1 text-sm text-text-secondary">The real threshold where bonuses, jobs, and recruiter attention all open up</p>
           </div>
           <div className="rounded-lg bg-navy px-4 py-3">
-            <p className="font-mono text-sm font-bold text-accent">Category II (65+)</p>
-            <p className="mt-1 text-sm text-text-secondary">Nearly everything available across every branch</p>
-          </div>
-          <div className="rounded-lg bg-navy px-4 py-3">
-            <p className="font-mono text-sm font-bold text-accent">Category I (93+)</p>
-            <p className="mt-1 text-sm text-text-secondary">Top 7%, maximum incentives, officer-track signal</p>
+            <p className="font-mono text-sm font-bold text-accent">Category IIIB (31-49) and below</p>
+            <p className="mt-1 text-sm text-text-secondary">In the door at best, with limited leverage and shrinking job selection</p>
           </div>
         </div>
 
         <p className="text-text-secondary">
-          The 50-point threshold is the real dividing line. Category IIIA and above unlocks enlistment incentives across all branches. The Army offers enlistment bonuses specifically for scores exceeding 50. The Air Force approves over 90% of recruits scoring 50+. Below 50, you are working uphill.
-        </p>
-
-        <p className="text-text-secondary">
-          In December 2025, the DoD Inspector General found that the Army and Navy had been miscounting Category IV recruits (report DODIG-2026-031). Both services used improved prep-course retest scores instead of initial results when tallying their Category IV numbers. The result: both branches exceeded the statutory 4% cap without obtaining the required Secretary of Defense waiver or notifying Congress. If the military takes these ASVAB score ranges seriously enough to trigger an IG investigation, so should you.
-        </p>
-
-        <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-amber-400">Warning</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            Category V (1-9) is a permanent disqualifier with no waiver process. Category IV (10-30) acceptance is rare even within the 4% cap, and both Army and Navy are under scrutiny for exceeding it.
-          </p>
-        </aside>
-
-        <p className="text-text-secondary">
-          The AFQT itself comes from just four of the nine subtests. The formula is straightforward:
-        </p>
-
-        <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          AFQT = 2(VE) + AR + MK
-        </div>
-
-        <p className="text-text-secondary">
-          VE (Verbal Expression) combines your Word Knowledge and Paragraph Comprehension scores. Because VE is doubled, verbal skills carry 50% of the weight in determining your AFQT. More on why that matters for score improvement in a later section. For a full breakdown of how the formula works, see our <Link href="/asvab-scores-explained">ASVAB scores explained</Link> guide.
+          The 50-point threshold is the real dividing line. Category IIIA and above unlocks enlistment incentives across all branches. The Army offers enlistment bonuses specifically for scores exceeding 50, and the Air Force approves over 90% of recruits scoring 50+. Below 50, you are working uphill. For the full AFQT category chart with exact percentile bands, share of test-takers, and the federal cap rules (10 USC 520), see the <Link href="/asvab-score-chart">ASVAB score chart</Link>.
         </p>
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -233,78 +147,7 @@ export default function ASVABScoreRangesPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          A high school graduate needs a 36 to join the Air Force. A GED holder needs a 65. That is not a small gap. It is the difference between Category IIIB and Category II performance, nearly 30 percentile points apart.
-        </p>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Branch</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Diploma Minimum</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">GED Minimum</th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Army</td>
-                <td className="py-2 pr-4 font-mono">31</td>
-                <td className="py-2 font-mono">50</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Navy</td>
-                <td className="py-2 pr-4 font-mono">35</td>
-                <td className="py-2 font-mono">50</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Marine Corps</td>
-                <td className="py-2 pr-4 font-mono">32</td>
-                <td className="py-2 font-mono">50</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Air Force</td>
-                <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">65</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">Coast Guard</td>
-                <td className="py-2 pr-4 font-mono">32</td>
-                <td className="py-2 font-mono">50</td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-semibold text-text-primary">Space Force</td>
-                <td className="py-2 pr-4 font-mono">36</td>
-                <td className="py-2 font-mono">65</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p className="text-text-secondary">
-          These are floors, not targets. The average enlistee scores somewhere between 55 and 65. Scoring the bare minimum means limited job choices and zero negotiating leverage with your recruiter. A 31 gets you into the Army. It does not get you the Army job you want.
-        </p>
-
-        <p className="text-text-secondary">
-          Understanding ASVAB score ranges at the branch level matters because each service applies these floors differently. The Army fills the most slots and accepts the broadest range. The Air Force and Space Force are the most selective, rejecting GED holders below 65 outright.
-        </p>
-
-        <p className="text-text-secondary">
-          There is an escape hatch for GED holders. Complete 15 or more college credit hours at the 100-level or higher, and you are reclassified as a diploma holder for enlistment purposes. That drops the Air Force minimum from 65 to 36 and the Space Force minimum from 65 to 36.
-        </p>
-
-        <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-emerald-400">Tip</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            If you are a GED holder targeting Air Force or Space Force, completing 15 credit hours at a community college may be faster and more reliable than studying to score a 65+ on the ASVAB. Two semesters of gen-ed courses gets you there.
-          </p>
-        </aside>
-
-        <p className="text-text-secondary">
-          Space Force uses the same minimums as the Air Force (36 diploma, 65 GED), but most Space Force roles practically need a 70+ AFQT. Space Systems Operations requires a GC composite of 60. Intelligence roles require GC 72. Cyber Transport Systems needs an Electronics composite of 55. The minimum is a technicality for a branch where nearly every job is technical.
-        </p>
-
-        <p className="text-text-secondary">
-          Minimums get you in the door. Composite scores decide your job.
+          Each branch sets its own AFQT floor, and diploma holders get a lower one than GED holders. The Army needs a 31 for diploma graduates, the Air Force and Space Force need a 36, and GED holders face a 50 in most branches and a 65 for Air Force or Space Force. These are floors, not targets, since the average enlistee scores between 55 and 65. For the complete diploma-versus-GED minimums by branch and the 15-credit-hour reclassification rule, see our full <Link href="/asvab-score-requirements">ASVAB score requirements</Link> guide.
         </p>
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -312,71 +155,7 @@ export default function ASVABScoreRangesPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          You scored a 72 AFQT. You walk into the recruiter&apos;s office expecting to pick any job you want. Then you find out your GT is only 98 and you need 110 for cyber, intel, and Special Forces. Welcome to the composite score wall.
-        </p>
-
-        <p className="text-text-secondary">
-          The military uses a two-gate system. Gate 1 is your AFQT: can you enlist? Gate 2 is your composite scores: what can you do once you&apos;re in? A high AFQT with low composites means you qualify to serve but qualify for very few of the jobs you actually want.
-        </p>
-
-        <p className="text-text-secondary">
-          Each branch builds composite scores from different subtest combinations. These ASVAB score ranges operate on entirely separate scales from the AFQT percentile.
-        </p>
-
-        <p className="text-text-secondary">
-          <strong>Army: 10 Line Scores.</strong> The Army has the most complex composite system. GT (VE+AR) gates intel, cyber, Special Forces, and OCS. ST (GS+VE+MK+MC) gates medical and technical roles. EL (GS+AR+MK+EI) gates electronics. Most high-demand MOSs require hitting thresholds on two or three composites simultaneously.
-        </p>
-
-        <p className="text-text-secondary">
-          <strong>Marine Corps: 3 Composites.</strong> Marines simplify to GT (VE+AR), MM (GS+AS+MK+MC), and EL (GS+AR+MK+EI). Fewer composites, but higher minimums for specialized roles. GT 110 is the cutoff for air traffic control and several aviation MOSs.
-        </p>
-
-        <p className="text-text-secondary">
-          <strong>Air Force and Space Force: MAGE System.</strong> Four composites converted to percentiles (0-99) instead of raw totals: Mechanical (GS+MC+2AS), Administrative (NO+CS+VE), General (AR+VE), and Electronics (GS+AR+MK+EI). Note that AS is doubled in the Mechanical composite, unlike Army or Navy formulas.
-        </p>
-
-        <p className="text-text-secondary">
-          <strong>Navy and Coast Guard: Rating-Specific Formulas.</strong> Each Navy rating (job) has its own qualifying formula. Most ratings offer multiple pathways, which gives you flexibility if your strengths are lopsided. Hospital Corpsman can be reached through VE+AR+MK+GS &gt;= 209 or MK+GS+2VE &gt;= 209. If you are strong in one area, there is often a second formula that plays to your strengths. The Coast Guard uses similar formulas but with fewer ratings and generally higher competition for slots.
-        </p>
-
-        <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Key Point</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            GT score (VE+AR) appears across Army, Navy, and Marines. If you are undecided on branch, maximizing your VE and AR covers the most ground. Those two subtests feed into more composites than any other pair.
-          </p>
-        </aside>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">GT Range</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">What Opens Up</th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">Below 90</td>
-                <td className="py-2">Limited to basic combat arms and support roles</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">90&ndash;99</td>
-                <td className="py-2">Standard jobs across most branches</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">100&ndash;109</td>
-                <td className="py-2">Mid-tier technical and administrative roles</td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">110+</td>
-                <td className="py-2">Elite and restricted roles: Special Forces, cyber, intel, OCS, WOCS, recruiting, contracting, public affairs, signal</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p className="text-text-secondary">
-          For full composite formulas and job lookup tables by branch, check the <Link href="/asvab-score-chart">ASVAB score chart</Link>.
+          The military uses a two-gate system. Your AFQT decides whether you can enlist, but your composite (line) scores decide which jobs you actually qualify for. Each branch builds composites from different subtest combinations on scales separate from the AFQT percentile: the Army uses up to 10 line scores, the Marines use 3, the Air Force and Space Force use the four-part MAGE system, and the Navy and Coast Guard use rating-specific formulas. For every composite formula and the per-branch job lookup tables, check the <Link href="/asvab-score-chart">ASVAB score chart</Link>.
         </p>
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -384,8 +163,27 @@ export default function ASVABScoreRangesPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Stop wondering &ldquo;is my score good enough.&rdquo; Here are real jobs with real score requirements across four branches.
+          Stop wondering &ldquo;is my score good enough.&rdquo; This is the heart of what your ASVAB score range actually buys you. Below is what each AFQT tier puts on the table, then real jobs with real score requirements across four branches.
         </p>
+
+        <div className="my-4 space-y-3">
+          <div className="rounded-lg border-l-4 border-amber-400 bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-amber-400">31&ndash;49 (Category IIIB): the floor</p>
+            <p className="mt-1 text-sm text-text-secondary">Enough to enlist in the Army, Navy, Marines, or Coast Guard, but the job list is short. Realistic options cluster in combat arms and entry support roles: Army 11B Infantryman (CO 87), 92G Culinary Specialist, 88M Motor Transport Operator, or Marine 0311 Rifleman (GT 90). No enlistment bonus, and your recruiter has little room to negotiate.</p>
+          </div>
+          <div className="rounded-lg border-l-4 border-sky-400 bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-sky-400">50&ndash;64 (Category IIIA): jobs and bonuses open up</p>
+            <p className="mt-1 text-sm text-text-secondary">The list multiplies. Most administrative, logistics, and entry-technical roles come online, along with bonus eligibility. Think Army 68W Combat Medic (ST 101 + GT 107), 25B IT Specialist, or Navy Master-at-Arms. This is where the average enlistee lands and where a recruiter starts treating you as a real candidate.</p>
+          </div>
+          <div className="rounded-lg border-l-4 border-emerald-300 bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-emerald-300">65&ndash;92 (Category II): nearly everything</p>
+            <p className="mt-1 text-sm text-text-secondary">With qualifying composites, almost every MOS, rating, and AFSC opens, including most technical and medical fields. Army 35F Intelligence Analyst (ST 101), Navy ET Electronics Technician (AR+MK+EI+GS &gt;= 222), and Air Force linguist tracks become realistic. Full bonus eligibility and strong negotiating leverage.</p>
+          </div>
+          <div className="rounded-lg border-l-4 border-emerald-400 bg-navy px-4 py-3">
+            <p className="font-mono text-sm font-bold text-emerald-400">93&ndash;99 (Category I): first pick on everything</p>
+            <p className="mt-1 text-sm text-text-secondary">The most selective and highest-payoff roles actively recruit from this pool: Army 17C Cyber Operations (GT 110 + ST 112 + ICTL 60), Navy Nuclear Field (VE+AR+MK+MC &gt;= 252), and special operations pipelines. Maximum incentives and an officer-track signal, though these still require the right composites, not just a high AFQT.</p>
+          </div>
+        </div>
 
         <div className="my-4 overflow-x-auto">
           <table className="w-full text-sm">
@@ -480,6 +278,39 @@ export default function ASVABScoreRangesPage() {
           <strong>Air Force highlights:</strong> 1B4X1 Cyber Warfare Operations requires G 64. 1A8X1 Cryptologic Language Analyst requires G 72, the highest General composite requirement in the Air Force, plus a separate DLAB score. 4A2X1 Biomedical Equipment Tech requires E 70 and M 60, a dual composite gate that demands strength in both electronics and mechanical aptitude.
         </p>
 
+        <p className="text-text-secondary">
+          Because the GT composite (VE+AR) gates more high-value roles than any other line score, it is the clearest single predictor of what your range unlocks. Here is roughly what each GT band opens:
+        </p>
+
+        <div className="my-4 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="border-b border-navy-border">
+                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">GT Range</th>
+                <th className="pb-2 text-left font-semibold text-text-secondary">What Opens Up</th>
+              </tr>
+            </thead>
+            <tbody className="text-text-secondary">
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">Below 90</td>
+                <td className="py-2">Limited to basic combat arms and support roles</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">90&ndash;99</td>
+                <td className="py-2">Standard jobs across most branches</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">100&ndash;109</td>
+                <td className="py-2">Mid-tier technical and administrative roles</td>
+              </tr>
+              <tr>
+                <td className="py-2 pr-4 font-mono font-semibold text-text-primary">110+</td>
+                <td className="py-2">Elite and restricted roles: Special Forces, cyber, intel, OCS, WOCS, recruiting, contracting, public affairs, signal</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
           <p className="text-sm font-semibold text-emerald-400">Tip</p>
           <p className="mt-1 text-sm text-text-secondary">
@@ -496,78 +327,7 @@ export default function ASVABScoreRangesPage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Moving from Category IIIB (31-49) to Category IIIA (50+) is the single most valuable jump you can make. It unlocks bonuses, expands your job list by dozens of options, and changes how recruiters treat you. Everything below 50 is uphill. Everything above it opens doors.
-        </p>
-
-        <div className="my-4 space-y-2">
-          <div className="rounded-lg bg-navy px-4 py-3">
-            <p className="font-mono text-sm font-bold text-accent">31-49 to 50+</p>
-            <p className="mt-1 text-sm text-text-secondary">Unlocks enlistment bonuses, expands MOS options, gains recruiter flexibility</p>
-          </div>
-          <div className="rounded-lg bg-navy px-4 py-3">
-            <p className="font-mono text-sm font-bold text-accent">50-64 to 65+</p>
-            <p className="mt-1 text-sm text-text-secondary">Opens nearly every job, maximizes bonus eligibility, strong negotiating position</p>
-          </div>
-          <div className="rounded-lg bg-navy px-4 py-3">
-            <p className="font-mono text-sm font-bold text-accent">Below 90 GT to 110+ GT</p>
-            <p className="mt-1 text-sm text-text-secondary">Unlocks Special Forces, cyber, intel, OCS, WOCS, and 10+ high-promotion career fields</p>
-          </div>
-        </div>
-
-        <p className="text-text-secondary">
-          VE is your highest-leverage study target. Because VE is doubled in the AFQT formula, improving your Word Knowledge or Paragraph Comprehension by 5 standard score points adds 10 to your raw AFQT. Improving AR or MK by 5 points adds only 5. Dollar for dollar, hour for hour, vocabulary study is the best investment you can make. Allocate at least half your study time there.
-        </p>
-
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="border-b border-navy-border">
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Weeks</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Focus</th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">Daily Activity</th>
-                <th className="pb-2 text-left font-semibold text-text-secondary">Expected Impact</th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">1&ndash;2</td>
-                <td className="py-2 pr-4">Diagnostic + weakness ID</td>
-                <td className="py-2 pr-4">Take a full practice test, identify your 2-3 weakest AFQT subtests</td>
-                <td className="py-2">Baseline established</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">3&ndash;4</td>
-                <td className="py-2 pr-4">Targeted drills</td>
-                <td className="py-2 pr-4">15-20 new vocabulary words/day for WK, word problem setups for AR, formula drills for MK</td>
-                <td className="py-2">Subtest scores begin climbing</td>
-              </tr>
-              <tr>
-                <td className="py-2 pr-4 font-semibold text-text-primary">5&ndash;6</td>
-                <td className="py-2 pr-4">Timed practice tests</td>
-                <td className="py-2 pr-4">Full-length timed tests every 3-4 days, review every missed question</td>
-                <td className="py-2">5-15 percentile point improvement</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p className="text-text-secondary">
-          For composite score improvement, work backwards from your target job. If you need Army EL (GS+AR+MK+EI), prioritize GS and EI study since AR and MK already count toward your AFQT and you are likely studying them already. Subtests that overlap between AFQT and your target composite give you double returns. This strategy applies across all ASVAB score ranges, whether you are climbing from Category IIIB to IIIA or pushing from II into I.
-        </p>
-
-        <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
-          <p className="text-sm font-semibold text-amber-400">Warning</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            If your AFQT score jumps 20+ points within 6 months, expect a confirmation test (C-test). You can take it immediately with no waiting period. It is not an accusation. It is a standard verification step. Be ready to perform consistently.
-          </p>
-        </aside>
-
-        <p className="text-text-secondary">
-          Retake timing follows the 1-1-6 rule: 1 month after the initial test, 1 month for a second retest, then 6 months between every attempt after that. Do not retake until your practice tests show consistent improvement at the level you are targeting. A wasted retake starts another clock.
-        </p>
-
-        <p className="text-text-secondary">
-          Take a <Link href="/practice-test">practice test</Link> for your baseline score, then build your plan with our <Link href="/asvab-study-guide">ASVAB study guide</Link>.
+          Moving from Category IIIB (31-49) to Category IIIA (50+) is the single most valuable jump you can make, and the highest-leverage path is the verbal side: because VE is doubled in the AFQT formula, gains in Word Knowledge and Paragraph Comprehension count twice. Take a <Link href="/practice-test">practice test</Link> for your baseline, then follow the full diagnostic-to-retake plan (including the 1-1-6 retake rule and how to study for a specific composite) in our <Link href="/asvab-study-guide">ASVAB study guide</Link>.
         </p>
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">

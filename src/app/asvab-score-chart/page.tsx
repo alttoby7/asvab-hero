@@ -4,6 +4,8 @@ import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
 import VerifiedBlock from "@/components/VerifiedBlock";
+import AFQTCategoryLadder from "@/components/scores-explained/AFQTCategoryLadder";
+import BranchCompositeHeatmap from "@/components/scores-explained/BranchCompositeHeatmap";
 
 export const metadata: Metadata = {
   title: "ASVAB Score Chart: AFQT Categories I–V + Branch Minimums (2026)",
@@ -35,7 +37,7 @@ export default function ASVABScoreChartPage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-03-18",
-          dateModified: "2026-04-19",
+          dateModified: "2026-06-14",
         }}
       />
 
@@ -264,12 +266,7 @@ export default function ASVABScoreChartPage() {
           Your percentile compares you to a fixed group of about 6,000 young adults surveyed in 1997 (the PAY97 study). A score of 50 means you outperformed 50% of that reference group, not 50% of the people who took the test the same day you did.
         </p>
 
-        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="text-xs text-text-secondary px-4 pt-3 pb-1 uppercase tracking-wider">AFQT Category Lookup</p>
-          <div className="p-4">
-            <p className="text-text-secondary text-sm">Interactive AFQT category lookup, coming soon. Use the <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB calculator</Link> in the meantime.</p>
-          </div>
-        </div>
+        <AFQTCategoryLadder />
 
         {/* ─── BRANCH MINIMUMS ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -354,58 +351,18 @@ export default function ASVABScoreChartPage() {
           to check specific job eligibility for your branch.
         </p>
 
-        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="text-xs text-text-secondary px-4 pt-3 pb-1 uppercase tracking-wider">Branch Eligibility Checker</p>
-          <div className="p-4">
-            <p className="text-text-secondary text-sm">Interactive branch eligibility checker, coming soon. Enter your credential type and score to see which branches you qualify for.</p>
-          </div>
-        </div>
-
-        {/* ─── SCORE INTERPRETATION ─── */}
+        {/* ─── SCORE INTERPRETATION (demoted → ranges) ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           What Your ASVAB Score Actually Unlocks: 50 vs 70 vs 90
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          A 50 and a 90 both qualify you to enlist. They do not open the same career.
-        </p>
-
-        <h3 className="mt-6 font-display text-xl font-semibold text-text-primary">
-          AFQT 31–49 (Category IIIB): You&apos;re In, Barely
-        </h3>
-        <p className="mt-3 text-text-secondary">
-          You qualify for most branches with a high school diploma, but your job pool is small. Typical roles at this level include infantry, food service, basic logistics, and motor transport. Enlistment bonuses are rare. Your composite scores at this range usually fall short of thresholds for technical MOSs like electronics, cyber, or medical specialties.
+          A 50 and a 90 both qualify you to enlist, but they do not open the same career. A 50 (Category IIIA) gets you most jobs plus enlistment incentives, while a 70 or 90 (Category II and I) opens nearly everything, including intel, cyber, and special programs. The jump from 50 to 70 unlocks more doors than the jump from 70 to 90.
         </p>
         <p className="text-text-secondary">
-          The reason your options are limited is not just the AFQT number. Composite scores at this level tend to cluster in the low-to-mid range across all formulas, which locks you out of jobs with specific composite minimums. For example, Army intel jobs require a GT of 100+, and most IIIB scorers produce a GT in the 80–95 range.
-        </p>
-
-        <h3 className="mt-6 font-display text-xl font-semibold text-text-primary">
-          AFQT 50–74 (Category IIIA / Low Category II): The Sweet Spot
-        </h3>
-        <p className="mt-3 text-text-secondary">
-          This range opens 70–80% of jobs across branches. You qualify for enlistment incentives, including bonuses and school choice guarantees. Technical jobs start appearing: vehicle mechanics, IT support, medical roles, and communications.
-        </p>
-        <p className="text-text-secondary">
-          Average ASVAB score is 50 by definition, since it is a percentile system. Half of all test-takers score below this line. Crossing it puts you in the above-average category and makes you eligible for incentives that Category IIIB scorers cannot access. The jump from the low 40s into this range is where study time pays off the most.
-        </p>
-
-        <h3 className="mt-6 font-display text-xl font-semibold text-text-primary">
-          AFQT 75–99 (Category II / Category I): Pick Your Career
-        </h3>
-        <p className="mt-3 text-text-secondary">
-          Virtually every job across every branch is available. Intel, cyber, nuclear, linguistics, and special program eligibility all open up. Bonus eligibility hits maximum levels. Officer candidacy programs, including Officer Candidate School and service academy nominations, become more accessible with scores in this range.
-        </p>
-        <p className="text-text-secondary">
-          Score 93+ and you enter Category I, the top 7%. Navy nuclear recruiters, crypto linguist programs, and special operations support billets actively seek scores in this range. At this level, your AFQT is no longer the limiting factor. Your composite scores and physical qualifications determine your ceiling.
-        </p>
-        <p className="text-text-secondary">
-          Category I and high Category II scorers also have the strongest position for officer commissioning pathways. Programs like Army OCS, Marine PLC, and Air Force OTS weigh ASVAB performance as part of the application package.
-        </p>
-        <p className="text-text-secondary">
-          The key insight: the jump from 50 to 70 opens more doors than the jump from 70 to 90. If you are studying to improve, the 40–65 zone is where your effort has the highest return. For a deeper breakdown, see{" "}
-          <Link href="/asvab-scores-explained" className="text-accent hover:text-accent-hover">
-            ASVAB Scores Explained
+          For the full tier-by-tier breakdown of which real jobs each score range opens, see{" "}
+          <Link href="/asvab-score-ranges" className="text-accent hover:text-accent-hover">
+            ASVAB score ranges and the jobs they unlock
           </Link>.
         </p>
 
@@ -527,152 +484,50 @@ export default function ASVABScoreChartPage() {
           to see all your composites at once instead of doing the math by hand.
         </p>
 
-        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="text-xs text-text-secondary px-4 pt-3 pb-1 uppercase tracking-wider">Composite Score Explorer</p>
-          <div className="p-4">
-            <p className="text-text-secondary text-sm">Interactive composite score explorer, coming soon. Enter your subtest scores to calculate composites for each branch.</p>
-          </div>
-        </div>
+        <BranchCompositeHeatmap />
 
-        {/* ─── SPECIAL OPS ─── */}
+        {/* ─── SPECIAL OPS (demoted → ranges) ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           Special Operations and High-Demand Job Score Benchmarks
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Minimum branch scores get you in the door. These scores get you the jobs everyone wants.
+          Minimum branch scores get you in the door, but elite jobs set their own composite bars. Army Special Forces and Rangers need a GT of 105+, Marine Recon needs GT 100+, and Navy Nuclear is the most score-intensive enlisted program in any branch. Competitive candidates usually clear these minimums by 10 to 20 points, and special operations layer physical and psychological screening on top of the ASVAB.
+        </p>
+        <p className="text-text-secondary">
+          For the job-by-job benchmark list across every branch, see{" "}
+          <Link href="/asvab-score-ranges" className="text-accent hover:text-accent-hover">
+            the score requirements for high-demand and special operations jobs
+          </Link>.
         </p>
 
-        <div className="my-4 overflow-x-auto">
-          <table className="w-full text-sm">
-            <thead className="bg-navy-lighter/50">
-              <tr className="border-b border-navy-border">
-                <th className="px-3 py-3 text-left font-semibold text-text-secondary">Job / Program</th>
-                <th className="px-3 py-3 text-left font-semibold text-text-secondary">Branch</th>
-                <th className="px-3 py-3 text-left font-semibold text-text-secondary">Score Requirement</th>
-                <th className="px-3 py-3 text-left font-semibold text-text-secondary">Composite</th>
-              </tr>
-            </thead>
-            <tbody className="text-text-secondary">
-              {[
-                ["Special Forces (18X)", "Army", "GT 105+", "VE + AR"],
-                ["Rangers", "Army", "GT 105+", "VE + AR"],
-                ["Intel Analyst (35F)", "Army", "ST 101+", "GS + VE + MK + MC"],
-                ["Navy SEAL (SO)", "Navy", "AFQT 50+, GS+AR+MC 165+", "Combined"],
-                ["Nuclear Field", "Navy", "AFQT 50+, AR+MK+EI+GS 252+", "Combined"],
-                ["Pararescue (PJ)", "Air Force", "AFQT 44+", "General"],
-                ["Cyber (1B4)", "Air Force", "G 64+", "AR + VE"],
-                ["Recon", "Marines", "GT 100+", "VE + AR"],
-                ["Military Police (31B)", "Army", "ST 91+", "GS + VE + MK + MC"],
-                ["Linguist (1N3)", "Air Force", "G 72+", "AR + VE"],
-              ].map(([job, branch, score, composite], i, arr) => (
-                <tr key={job} className={i < arr.length - 1 ? "border-b border-navy-border/50" : ""}>
-                  <td className="px-3 py-3 font-semibold">{job}</td>
-                  <td className="px-3 py-3">{branch}</td>
-                  <td className="px-3 py-3 font-mono text-xs">{score}</td>
-                  <td className="px-3 py-3 font-mono text-xs">{composite}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        <p className="text-text-secondary">
-          These are the published minimums. Competitive candidates often score 10–20 points higher. Special operations selection layers physical and psychological screening on top of the ASVAB requirement, so meeting the score threshold is the starting line, not the finish.
-        </p>
-        <p className="text-text-secondary">
-          To put GT 105+ in context: GT equals VE plus AR, where each subtest has a mean of 50. Scoring 105 means your combined VE and AR must average 52.5 each. That sounds modest, but the combined threshold eliminates candidates who are strong in one area and weak in the other. You need above-average performance on both verbal and math reasoning.
-        </p>
-        <p className="text-text-secondary">
-          Navy Nuclear is the most score-intensive enlisted program in any branch. That 252 combined threshold across four subtests (AR + MK + EI + GS) means you need to average 63 per subtest, which is more than one standard deviation above the mean on all four. Roughly 16% of test-takers score 60+ on a single subtest, so hitting that level on all four is a narrow slice.
-        </p>
-        <p className="text-text-secondary">
-          Cyber and intel jobs cluster around GT or G scores of 100+. If those fields interest you, AR and VE are the subtests to focus your study time on.
-        </p>
-
-        {/* ─── RETAKE RULES ─── */}
+        {/* ─── RETAKE RULES (demoted → retake-policy) ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           ASVAB Retake Rules and How Much You Can Realistically Improve
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          You can retake the ASVAB. But your latest score is the one that counts, not your highest.
-        </p>
-
-        <h3 className="mt-6 font-display text-xl font-semibold text-text-primary">Retake Timing</h3>
-        <ul className="mt-3 list-disc pl-6 text-text-secondary space-y-1">
-          <li>First retest: 1 month after initial test</li>
-          <li>Second retest: 1 month after first retest</li>
-          <li>All subsequent retests: 6-month wait</li>
-          <li>Scores are valid for 2 years from your test date</li>
-        </ul>
-        <p className="mt-4 text-text-secondary">
-          This is critical: the military uses your most recent score, period. If you score a 55, study, retest, and get a 48, you are now a 48. That lower score replaces the higher one. Do not retest unless you are confident you will improve.
+          You can retake the ASVAB, but your latest score is the one that counts, not your highest. The standard schedule is a 1-month wait for your first retest, another month for your second, then 6 months for any retest after that. A 5 to 10 point AFQT gain is typical with 4 to 6 weeks of focused study.
         </p>
         <p className="text-text-secondary">
-          School-administered ASVAB scores (taken through the ASVAB Career Exploration Program) count for military enlistment if properly verified and within the 2-year validity window. About 1 million students take the ASVAB annually through their high schools.
-        </p>
-
-        <h3 className="mt-6 font-display text-xl font-semibold text-text-primary">Realistic Score Gains</h3>
-        <p className="mt-3 text-text-secondary">
-          A 5–10 point AFQT gain is typical with 4–6 weeks of focused study. Gains of 10–15 points are achievable if you took the first test cold with no preparation. Jumps above 15 points are uncommon and usually indicate the initial test was a throwaway. Beyond a 10-point gain, each additional point requires significantly more study time due to diminishing returns.
-        </p>
-
-        <h3 className="mt-6 font-display text-xl font-semibold text-text-primary">Where Retaking Pays Off Most</h3>
-        <p className="mt-3 text-text-secondary">
-          <strong>AFQT 25–30:</strong> The Army&apos;s Future Soldier Prep Course is built for you. It is a structured path to get above 31 with academic training before formal enlistment.
-        </p>
-        <p className="text-text-secondary">
-          <strong>AFQT 40–49:</strong> This is the highest-ROI study zone. Five to ten points moves you from Category IIIB to IIIA, which unlocks enlistment bonuses, most job classifications, and incentives that are unavailable below 50.
-        </p>
-        <p className="text-text-secondary">
-          <strong>AFQT 55–65:</strong> Focus on specific subtests that feed your target job&apos;s composite formula rather than broad AFQT improvement. At this level, composite scores matter more than AFQT for career options.
-        </p>
-        <p className="text-text-secondary">
-          <strong>AFQT 80+:</strong> Retaking is rarely worth the risk. Your composites matter more than your AFQT at this level. Study specific subtests only if a composite score is holding you back from a particular job.
-        </p>
-        <p className="text-text-secondary">
-          Build a study plan with the{" "}
-          <Link href="/asvab-study-guide" className="text-accent hover:text-accent-hover">
-            ASVAB study guide
-          </Link>{" "}
-          and test yourself with{" "}
-          <Link href="/practice-test" className="text-accent hover:text-accent-hover">
-            practice tests
+          For the full retake timing rules, score-replacement policy, and where retaking pays off most, see the{" "}
+          <Link href="/asvab-retake-policy" className="text-accent hover:text-accent-hover">
+            ASVAB retake policy guide
           </Link>.
         </p>
 
-        <div className="my-8 rounded-2xl ring-1 ring-navy-border overflow-hidden">
-          <p className="text-xs text-text-secondary px-4 pt-3 pb-1 uppercase tracking-wider">Retake Decision Tool</p>
-          <div className="p-4">
-            <p className="text-text-secondary text-sm">Interactive retake decision tool, coming soon. Enter your current score and target to see if retaking is worth it.</p>
-          </div>
-        </div>
-
-        {/* ─── HOW PERCENTILE WORKS ─── */}
+        {/* ─── HOW PERCENTILE WORKS (demoted → afqt-score) ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           How ASVAB Percentile Scores Work (and Why the 1997 Baseline Matters)
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          Your ASVAB percentile does not compare you to the people who took the test the same day. It compares you to a group of 18–23 year olds surveyed in 1997.
+          Your AFQT is a percentile, not a percent-correct grade. It compares you to about 6,000 young adults surveyed in 1997 (the PAY97 study), the permanent reference group implemented in 2004. A score of 50 means you outperformed half of that group, and a 70 in 2026 means the same thing it did in 2010.
         </p>
         <p className="text-text-secondary">
-          The Department of Defense administered the ASVAB to roughly 6,000 nationally representative young adults in 1997 as part of the Profile of American Youth study (PAY97). That group became the permanent reference population, and the norming was implemented in 2004. Every ASVAB score since then is measured against them.
-        </p>
-        <p className="text-text-secondary">
-          A score of 50 means you performed better than 50% of the 1997 reference group. A score of 70 means you outperformed 70% of them. These are not grades out of 100.
-        </p>
-        <p className="text-text-secondary">
-          Each subtest uses standard scores with a mean of 50 and a standard deviation of 10. A subtest score of 60 puts you one standard deviation above average. About 68% of test-takers score between 40 and 60 on each subtest, so anything above 60 puts you in the top 16%.
-        </p>
-        <p className="text-text-secondary">
-          The AFQT is derived from four of the ten subtests: AR + MK + 2&times;VE (where VE = WK + PC). Only these four subtests determine your AFQT. The other six subtests (GS, AS, MC, EI, NO/CS, AO) do not affect your AFQT at all but feed into your composite scores. Verbal Expression is double-weighted in the AFQT formula, which is why vocabulary and reading comprehension have an outsized impact on your overall score.
-        </p>
-        <p className="text-text-secondary">
-          The practical benefit of a fixed reference group is consistency. A 70 in 2026 means the same thing as a 70 in 2010 or 2018. Recruiters, job classification specialists, and bonus programs all rely on this stability. For the full scoring breakdown, see{" "}
-          <Link href="/asvab-scores-explained" className="text-accent hover:text-accent-hover">
-            ASVAB Scores Explained
+          For the full AFQT formula (AR + MK + 2x VE), why Verbal Expression is double-weighted, and how the 1997 baseline shapes your percentile, see the{" "}
+          <Link href="/afqt-score" className="text-accent hover:text-accent-hover">
+            AFQT score guide
           </Link>.
         </p>
 
@@ -748,40 +603,24 @@ export default function ASVABScoreChartPage() {
           to see exactly which jobs your scores qualify you for across all six branches.
         </p>
 
-        {/* ─── TIPS ─── */}
+        {/* ─── TIPS (shortened → study-guide) ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           Tips to Raise Your ASVAB Score Before Test Day
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          The biggest score gains come from the subtests you have been ignoring, not the ones you are already strong in.
+          The biggest score gains come from the subtests you have been ignoring, not the ones you are already strong in. Study Arithmetic Reasoning and Math Knowledge first (they feed your AFQT and most composites), build vocabulary for double-weighted Verbal Expression, and spread your prep over 4 to 6 weeks of timed practice rather than a weekend cram.
         </p>
         <p className="text-text-secondary">
-          <strong>1. Study AR and MK first.</strong> Arithmetic Reasoning and Math Knowledge feed into your AFQT and most composite scores across every branch. They are the highest-leverage subtests you can improve.
+          For the full study plan and per-subtest drills, use the{" "}
+          <Link href="/asvab-study-guide" className="text-accent hover:text-accent-hover">
+            ASVAB study guide
+          </Link>{" "}
+          and test yourself with{" "}
+          <Link href="/practice-test" className="text-accent hover:text-accent-hover">
+            practice tests
+          </Link>.
         </p>
-        <p className="text-text-secondary">
-          <strong>2. Build vocabulary for WK and PC.</strong> Verbal Expression (VE) is double-weighted in the AFQT formula. Daily word lists and reading practice produce fast, measurable gains.
-        </p>
-        <p className="text-text-secondary">
-          <strong>3. Target your weakest composite.</strong> Figure out which subtest within your target job&apos;s composite has the most room for improvement, then drill that area specifically.
-        </p>
-        <p className="text-text-secondary">
-          <strong>4. Take timed practice tests.</strong> Knowing the content is not enough. The ASVAB is timed, and pacing mistakes leave points on the table. Practice under real time pressure.
-        </p>
-        <p className="text-text-secondary">
-          <strong>5. Spread your study over 4–6 weeks.</strong> Consistent daily sessions of 30–60 minutes beat a weekend cram session every time. Your brain needs repetition to lock in concepts.
-        </p>
-        <p className="text-text-secondary">
-          <strong>6. Use the CAT-ASVAB format to your advantage.</strong> The computerized adaptive test adjusts difficulty based on your answers. Getting early questions right pushes the algorithm to serve harder questions worth more, so focus on accuracy at the start rather than speed.
-        </p>
-
-        <h3 className="mt-6 font-display text-xl font-semibold text-text-primary">Study Timeline</h3>
-        <ul className="mt-3 list-disc pl-6 text-text-secondary space-y-2">
-          <li><strong>4–6 weeks out:</strong> Start focused daily study (30–60 minutes) on your 2–3 weakest areas. Use the <Link href="/asvab-study-guide" className="text-accent hover:text-accent-hover">study guide</Link> for structure.</li>
-          <li><strong>2 weeks out:</strong> Take a diagnostic <Link href="/practice-test" className="text-accent hover:text-accent-hover">practice test</Link> to identify remaining gaps.</li>
-          <li><strong>1 week out:</strong> Take a full timed practice test and adjust your pacing strategy.</li>
-          <li><strong>Day of:</strong> Arrive rested. Do not cram the night before. The ASVAB tests foundational knowledge, not short-term memory. If you are taking the CAT-ASVAB at MEPS, expect roughly 2–3 hours of testing time across all subtests.</li>
-        </ul>
 
         {/* ─── FAQ ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">

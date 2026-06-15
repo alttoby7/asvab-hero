@@ -15,6 +15,7 @@ const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
       { href: "/asvab-scores-explained", label: "ASVAB scores explained" },
       { href: "/asvab-score-requirements", label: "Score requirements by branch" },
       { href: "/what-is-a-good-asvab-score", label: "What is a good ASVAB score" },
+      { href: "/asvab-score-average", label: "Average ASVAB score" },
       { href: "/afqt-score", label: "AFQT score, explained" },
       { href: "/gt-score", label: "GT score, explained" },
     ],
@@ -26,7 +27,7 @@ const COLUMNS: { title: string; links: { href: string; label: string }[] }[] = [
       { href: "/navy-ranks", label: "Navy ranks and pay" },
       { href: "/air-force-ranks", label: "Air Force ranks and pay" },
       { href: "/marine-corps-ranks", label: "Marine Corps ranks and pay" },
-      { href: "/navy-ratings-list", label: "Navy ratings and jobs" },
+      { href: "/navy-ratings-list", label: "Navy ASVAB score chart" },
     ],
   },
   {

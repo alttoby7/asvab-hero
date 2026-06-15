@@ -22,6 +22,16 @@ type EmbedSnippetProps = {
   height?: number;
   /** Max width of the embedded frame. Defaults to 560. */
   maxWidth?: number;
+  /**
+   * Canonical tool page the attribution link points at, e.g.
+   * https://asvabhero.com/afqt-calculator. An iframe by itself passes NO link
+   * equity (Google and Ahrefs ignore iframe src for backlinks), so the snippet
+   * embeds a real, do-follow <a> attribution link. THIS anchor is what earns DR
+   * from the widget program. Branded anchor only (no keyword-stuffed text).
+   */
+  creditHref: string;
+  /** Short tool descriptor used in the attribution line, e.g. "AFQT calculator". */
+  creditLabel: string;
 };
 
 export default function EmbedSnippet({
@@ -29,15 +39,23 @@ export default function EmbedSnippet({
   title,
   height = 720,
   maxWidth = 560,
+  creditHref,
+  creditLabel,
 }: EmbedSnippetProps) {
   const [copied, setCopied] = useState(false);
 
+  // NOTE: props are interpolated into raw HTML without escaping, so every
+  // caller MUST pass literal-safe values (no unescaped `"`, `<`, or `>`). These
+  // are hardcoded brand/route strings today; if that ever changes, escape here.
   const snippet = useMemo(
     () =>
       `<iframe src="${src}" width="100%" height="${height}" ` +
       `style="border:1px solid #e5e7eb;border-radius:12px;max-width:${maxWidth}px" ` +
-      `title="${title}" loading="lazy"></iframe>`,
-    [src, title, height, maxWidth]
+      `title="${title}" loading="lazy"></iframe>\n` +
+      `<p style="font-size:13px;font-family:sans-serif;margin:8px 0 0">` +
+      `Free ${creditLabel} powered by ` +
+      `<a href="${creditHref}">ASVAB Hero</a></p>`,
+    [src, title, height, maxWidth, creditHref, creditLabel]
   );
 
   const handleCopy = useCallback(async () => {
@@ -76,8 +94,8 @@ export default function EmbedSnippet({
       </pre>
       <p className="mt-2 text-xs text-text-tertiary">
         Paste this into your page&apos;s HTML. The tool is free, needs no
-        account, and resizes to fit your layout. Adjust the height if your page
-        needs it.
+        account, and resizes to fit your layout. Please keep the one-line credit
+        link below the tool. Adjust the height if your page needs it.
       </p>
     </div>
   );
