@@ -44,6 +44,9 @@ export default function EmbedSnippet({
 }: EmbedSnippetProps) {
   const [copied, setCopied] = useState(false);
 
+  // NOTE: props are interpolated into raw HTML without escaping, so every
+  // caller MUST pass literal-safe values (no unescaped `"`, `<`, or `>`). These
+  // are hardcoded brand/route strings today; if that ever changes, escape here.
   const snippet = useMemo(
     () =>
       `<iframe src="${src}" width="100%" height="${height}" ` +

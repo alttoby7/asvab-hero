@@ -13,9 +13,13 @@ _Started 2026-06-15. Pairs with the outreach docs (`docs/outreach-deliverability
 - So DR is not being "dragged down" (DR never goes negative). **DR is 0 because
   there are ~zero real do-follow links from real sites.** The whole job is to
   earn the first dozen.
-- Good news: **0 -> 10 is the easiest DR move** (log scale). 5-10 genuine
-  do-follow links from real DR 20-50 sites will visibly move the needle. We need
-  a dozen real links, not hundreds.
+- Good news (with a caveat): on DR's log scale, **0 -> 10 needs far fewer links
+  than 10 -> 20**, so the first move is the cheapest we will ever get. But
+  **quality drives the first tick, not count** — links from sites that
+  themselves have real URL Rating / traffic matter; a dozen DR-5 school pages
+  move DR less than a couple of DR-40+ ones. And DR only recomputes on Ahrefs'
+  crawl cycle, so "moves the needle" is **weeks to a couple of months**, not
+  immediate. Plan for a steady trickle of relevant links, not a one-time push.
 
 ## The asset hierarchy (corrected 2026-06-15)
 
@@ -78,9 +82,11 @@ score-requirements -> `/asvab-score-requirements`). `tsc` clean.
   calculator without linking; ask for the link. (Pull from Ahrefs.)
 
 ### 4. Hygiene (low priority, one-time)
-- **Disavow the obvious PBN/spam domains.** Google mostly ignores them and DR
-  won't change, but it's cheap insurance + keeps the profile clean for audits.
-  Export junk refdomains -> `disavow.txt` -> upload to GSC. Do once.
+- **Disavow: probably skip.** Google's own guidance is NOT to disavow spam/PBN
+  links you didn't build — they're ignored algorithmically, DR won't change, and
+  a careless disavow can drop links you actually want. Realistic upside here is
+  near-zero. Only build a `disavow.txt` if a manual action or clear
+  negative-SEO pattern ever appears; otherwise leave it.
 
 ## Next concrete actions
 1. Pull link-opportunity data from Ahrefs: unlinked brand mentions + competitor
