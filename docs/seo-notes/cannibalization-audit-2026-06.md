@@ -66,6 +66,40 @@ DEMOTE subtopics with a 2–3 sentence summary + canonical link). Then:
 
 ## Status
 
-Audit complete (this doc) = Phase 1 of `~/.claude/plans/plan-1-and-2-quizzical-summit.md`.
-Phase 2 (the 7-page differentiation) NOT yet executed — it's a careful multi-page refactor,
-deliberately not rushed. This doc is the execution blueprint.
+Audit (this doc) = Phase 1. **Phase 2 EXECUTED + DEPLOYED 2026-06-14.**
+
+### What shipped (2026-06-14)
+
+- **7-page differentiation** (commit `3580c65`): each page given its owned angle; shared
+  subtopics demoted to a 2-3 sentence summary + in-content canonical link (no rel=canonical
+  between pages; each ranks independently). Per-page logs in `docs/seo-notes/urls/`.
+- **Interactive widgets relocated** off the hub to their topical homes (the hub was the
+  winner; keeping its 4 widgets orphaned would have stripped its interactivity): AFQTFormula
+  Explorer + ScoreImpactSimulator to `/afqt-score`; AFQTCategoryLadder + BranchComposite
+  Heatmap to `/asvab-score-chart` (filled the chart's old "coming soon" placeholders).
+- **/asvab-score-average inbound links** added (was 0): HomePopularLinks + hub + chart +
+  highest now link it.
+- **GT cluster 301** (commit `ca9a2b5`): `/gt-score-requirements` (6 impr/90d, no unique
+  rankings, strict subset of `/gt-score`) 301'd into `/gt-score`; page removed, inbound links
+  repointed, sitemap + llms.txt updated.
+- Build clean; changed `src/` files em-dash-free; both commits live on Cloudflare Pages
+  (verified: homepage shows the average link, average page links ranges).
+
+### GSC actions (2026-06-15 UTC)
+
+- Baseline (URL inspection, all 6 non-winner pages): **"Crawled - currently not indexed",
+  self-canonical, page fetch SUCCESSFUL, indexing allowed** — exactly the duplicate-content
+  diagnosis. Last crawls 5/08-5/29 (the pre-fix duplicate versions).
+- **Sitemap resubmitted** (fresh lastmod on all entries → recrawl trigger).
+- **Request Indexing submitted for all 6** (chart, average, ranges, highest, good, afqt) via
+  the GSC UI. chart + ranges visually confirmed ("added to a priority crawl queue"); the rest
+  clicked + live-test run (the confirmation toast is transient and was not always captured).
+
+### Next review
+
+Re-pull URL inspection ~2026-06-28 (≈2 weeks). **Success = the 6 flip to "Submitted and
+indexed" / "URL is on Google" and begin drawing impressions on their owned terms** (chart
+4,200/mo, ranges 5,300/mo, average 3,000/mo, good 3,100/mo, highest 2,200/mo, afqt 1,500/mo).
+`/gt-score-requirements` should show "Page with redirect". If a page stays unindexed after
+the recrawl, the remaining lever is authority (a homepage-body link / backlinks), not more
+on-page de-dup.
