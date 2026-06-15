@@ -469,8 +469,12 @@ export default function ASVABArithmeticReasoningTipsPage() {
           <EmailCapture
             headline="Get the 1-page AR formula card, every formula you need on test day"
             subhead="Order of operations, fraction-decimal-percent table, distance/rate/time, work-rate, mixture, percent change, ratios, plus the word-problem patterns ASVAB writers love."
-            cta="Email me the formula card"
+            cta="Get the formula card"
             tag="ar-tips"
+            source="ar-tips-mid"
+            successDownloadHref="/ar-formula-card.pdf"
+            successTitle="Your formula card is ready."
+            successBody="Tap below to download the PDF. We also added you to the free study list, unsubscribe any time."
           />
         </section>
 
@@ -885,8 +889,12 @@ export default function ASVABArithmeticReasoningTipsPage() {
             variant="inline"
             headline="Get the 1-page AR formula card, every formula you need on test day"
             subhead="Order of operations, fraction-decimal-percent table, distance/rate/time, work-rate, mixture, percent change, ratios, plus the word-problem patterns ASVAB writers love."
-            cta="Email me the formula card"
+            cta="Get the formula card"
             tag="ar-tips"
+            source="ar-tips-end"
+            successDownloadHref="/ar-formula-card.pdf"
+            successTitle="Your formula card is ready."
+            successBody="Tap below to download the PDF. We also added you to the free study list, unsubscribe any time."
           />
         </section>
 
