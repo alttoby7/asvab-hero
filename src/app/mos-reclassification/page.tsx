@@ -308,7 +308,7 @@ export default function MOSReclassificationPage() {
             </Link>
             , and check the GT threshold against our{" "}
             <Link
-              href="/gt-score-requirements"
+              href="/gt-score"
               className="text-accent hover:text-accent-hover"
             >
               GT score requirements

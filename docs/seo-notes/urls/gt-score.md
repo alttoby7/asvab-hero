@@ -4,8 +4,8 @@ target_keyword: gt score
 site_url: https://asvabhero.com
 country: us
 first_optimized: 2026-06-14
-cycles: 1
-last_verdict: first-run
+cycles: 2
+last_verdict: applied-301-consolidation
 ---
 
 # /gt-score — Optimization Log
@@ -66,3 +66,19 @@ No design-system, structure, slug, or title changes. No keyword stuffing / fille
 
 - Edits committed same session (see commit after this log); user repo deploys from main.
 - Notes: only `src/app/gt-score/page.tsx` + this log changed; sitemap churn restored.
+
+## Cycle 2 — 2026-06-14 (Cannibalization 301: /gt-score-requirements merged in)
+
+**Action: 301'd `/gt-score-requirements` → `/gt-score` and removed the thin duplicate page.**
+
+GSC (90d) confirmed redundancy: `/gt-score-requirements` drew only **6 impressions** and ranked for **nothing unique** — every query it surfaced for (`110 gt score percentile`, `what is gt score`, `gt score calculator`, `asvab score gt`) is already covered by `/gt-score` at equal or better position (e.g. `110 gt score percentile`: gt-score #10.8 vs requirements #12.3). Structurally `/gt-score` is a strict superset (9 tables vs 2; GT 110+/107+/100+ job-cutoff tiers, special programs, by-branch, fuller 11-Q FAQ) so the merge loses no unique content. The two pages were mildly cannibalizing each other.
+
+Changes:
+- `public/_redirects`: added `/gt-score-requirements  /gt-score  301`.
+- Deleted `src/app/gt-score-requirements/page.tsx`; removed it from `scripts/generate-sitemap.mjs` and `public/llms.txt`.
+- Repointed all inbound internal links (asvab-prep-course, army-asvab-score, warrant-officer-requirements breadcrumb, mos-reclassification, asvab-score-requirements) to `/gt-score`.
+- Cleaned `/gt-score`'s own 4 self-references (it linked to the page being removed): 3 body pointers de-linked and reworded to reference this guide's own job-by-cutoff tables; the "GT Score Requirements" RelatedLinks card swapped for `/army-asvab-score`.
+
+Build clean; `out/gt-score-requirements.html` gone, redirect present in `out/_redirects`, sitemap regenerated without the URL. 0 em-dashes.
+
+**Expectation:** the handful of `/gt-score-requirements` impressions consolidate into `/gt-score`; no ranking loss expected (superset). GSC will show the old URL dropping to "Page with redirect."

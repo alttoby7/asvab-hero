@@ -9,3 +9,6 @@
 /asvab-gt-score                    /gt-score                      301
 /calculate-gt-score                /gt-score                      301
 /gt-score-max                      /gt-score                      301
+
+# Cannibalization consolidation (2026-06-14) — thin duplicate merged into the canonical GT page
+/gt-score-requirements             /gt-score                      301

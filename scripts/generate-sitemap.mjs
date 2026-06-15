@@ -49,7 +49,6 @@ const pages = [
   { path: "/gt-score-calculator", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-line-score-calculator", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-composite-score-calculator", priority: "0.8", changefreq: "monthly" },
-  { path: "/gt-score-requirements", priority: "0.8", changefreq: "monthly" },
   { path: "/mos-asvab-score-requirements", priority: "0.8", changefreq: "monthly" },
   { path: "/warrant-officer-requirements", priority: "0.8", changefreq: "monthly" },
   { path: "/mos-reclassification", priority: "0.8", changefreq: "monthly" },

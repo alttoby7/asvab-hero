@@ -107,7 +107,7 @@ export default function WarrantOfficerRequirementsPage() {
       <Breadcrumb
         items={[
           { name: "ASVAB Hero", href: "/" },
-          { name: "GT Score Requirements", href: "/gt-score-requirements" },
+          { name: "GT Score", href: "/gt-score" },
           { name: "Warrant Officer Requirements", href: "/warrant-officer-requirements" },
         ]}
       />
@@ -311,7 +311,7 @@ export default function WarrantOfficerRequirementsPage() {
           message (the MARADMIN, NAVADMIN, or ALCG) before you build a packet.
           For the full breakdown of how line scores work, see our{" "}
           <Link
-            href="/gt-score-requirements"
+            href="/gt-score"
             className="text-accent hover:text-accent-hover"
           >
             GT score requirements

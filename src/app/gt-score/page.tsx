@@ -770,14 +770,8 @@ export default function GTScorePage() {
 
         <p className="text-text-secondary">
           For the exact GT cutoffs tied to specific jobs, do not guess from the
-          ranges above. Our{" "}
-          <Link
-            href="/gt-score-requirements"
-            className="text-accent hover:text-accent-hover"
-          >
-            GT score requirements page
-          </Link>{" "}
-          lists the thresholds by program and MOS, and the{" "}
+          ranges above. The job-by-cutoff tables below list the thresholds by
+          program and MOS, and the{" "}
           <Link
             href="/calculator"
             className="text-accent hover:text-accent-hover"
@@ -839,14 +833,8 @@ export default function GTScorePage() {
         <p className="text-text-secondary">
           For warrant officer specifically, there is no waiver below 110. The
           only path up is to raise the score. The full breakdown of GT
-          thresholds by job lives on our{" "}
-          <Link
-            href="/gt-score-requirements"
-            className="text-accent hover:text-accent-hover"
-          >
-            GT score requirements page
-          </Link>
-, and the officer track is covered in our{" "}
+          thresholds by job is in the tables above, and the officer track is
+          covered in our{" "}
           <Link
             href="/warrant-officer-requirements"
             className="text-accent hover:text-accent-hover"
@@ -1813,15 +1801,6 @@ export default function GTScorePage() {
             </li>
             <li>
               <Link
-                href="/gt-score-requirements"
-                className="text-accent underline hover:text-accent-hover"
-              >
-                GT score requirements
-              </Link>{" "}, every GT threshold by job, program, and branch in one
-              reference.
-            </li>
-            <li>
-              <Link
                 href="/warrant-officer-requirements"
                 className="text-accent underline hover:text-accent-hover"
               >
@@ -1836,7 +1815,7 @@ export default function GTScorePage() {
           <RelatedLinks
             title="GT score and ASVAB resources"
             links={[
-              { href: "/gt-score-requirements", label: "GT Score Requirements", blurb: "The GT cutoffs for jobs and the 110 wall." },
+              { href: "/army-asvab-score", label: "Army ASVAB Scores", blurb: "Army AFQT and GT minimums by MOS and enlistment." },
               { href: "/asvab-scores-explained", label: "ASVAB Scores Explained", blurb: "How GT fits among AFQT and other line scores." },
               { href: "/afqt-score", label: "AFQT Score Explained", blurb: "The percentile that decides enlistment eligibility." },
               { href: "/mos-reclassification", label: "MOS Reclassification", blurb: "Use a higher GT score to reclassify your job." },

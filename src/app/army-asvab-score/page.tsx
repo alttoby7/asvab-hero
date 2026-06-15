@@ -925,7 +925,7 @@ export default function ArmyASVABScorePage() {
               </Link>
               ,{" "}
               <Link
-                href="/gt-score-requirements"
+                href="/gt-score"
                 className="text-accent underline hover:text-accent-hover"
               >
                 GT score requirements
