@@ -147,7 +147,9 @@ export default function AfqtCalculator({ embedded = false }: { embedded?: boolea
           Only 4 of the 9 ASVAB subtests feed the AFQT. Enter standard scores
           (20 to 99). Results update instantly.
         </p>
-        <div className="grid gap-2 sm:grid-cols-2">
+        {/* Embed is narrow (below sm:), so force 2x2 there to halve height;
+            standalone pages keep 1-col on mobile, 2-col on desktop. */}
+        <div className={embedded ? "grid grid-cols-2 gap-2" : "grid gap-2 sm:grid-cols-2"}>
           {AFQT_SUBTESTS.map((subtest) => (
             <ScoreInput
               key={subtest}

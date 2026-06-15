@@ -57,7 +57,7 @@ export default function EmbedDirectoryPage() {
             <EmbedSnippet
               src="https://asvabhero.com/embed/afqt-calculator"
               title="AFQT Calculator by ASVAB Hero"
-              height={720}
+              height={560}
               creditHref="https://asvabhero.com/afqt-calculator"
               creditLabel="AFQT calculator"
             />
