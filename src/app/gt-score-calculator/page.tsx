@@ -80,10 +80,36 @@ export default function GTScoreCalculatorPage() {
     })),
   };
 
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How to calculate your ASVAB GT score",
+    description:
+      "Calculate your ASVAB GT (General Technical) composite from three subtest standard scores using the formula GT = VE + AR.",
+    step: [
+      {
+        "@type": "HowToStep",
+        name: "Calculate your VE (Verbal Expression) score",
+        text: "Add your Word Knowledge (WK) and Paragraph Comprehension (PC) standard scores together, then multiply the sum by 2: VE = (WK + PC) x 2.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Add Arithmetic Reasoning to get your GT",
+        text: "Add your Arithmetic Reasoning (AR) standard score to your VE score: GT = VE + AR. This is your raw GT composite.",
+      },
+      {
+        "@type": "HowToStep",
+        name: "Apply the DoD conversion for the scaled GT",
+        text: "The Department of Defense applies a final conversion table to the raw composite to produce the scaled GT score your recruiter sees, which typically falls in the 80 to 140 range.",
+      },
+    ],
+  };
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
       <JsonLd data={articleJsonLd} />
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={howToJsonLd} />
 
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">

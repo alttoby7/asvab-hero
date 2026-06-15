@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import AnswerBox from "@/components/AnswerBox";
 import EmailCapture from "@/components/EmailCapture";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
@@ -122,6 +123,14 @@ export default function MarinesASVABScorePage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           ASVAB Marines Score Explained: GT Formula and Line Scores (2026)
         </h1>
+
+        <AnswerBox>
+          The Marine Corps requires a minimum <strong>AFQT of 31</strong> with a
+          high school diploma and <strong>50</strong> with a GED. AFQT only gets
+          you in the door &mdash; your five USMC line scores decide your MOS, and
+          the most common one is <strong>GT = VE + AR</strong> (not the WK + PC +
+          AR + MC myth).
+        </AnswerBox>
 
         <p className="mt-4 text-text-secondary">
           This guide explains how the <strong>ASVAB marines score</strong>

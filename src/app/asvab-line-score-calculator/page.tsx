@@ -107,11 +107,37 @@ const faqJsonLd = {
   ],
 };
 
+const howToJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to calculate your ASVAB line scores",
+  description:
+    "Calculate your ASVAB line scores by adding the standard scores of the subtests in your branch's composite formulas.",
+  step: [
+    {
+      "@type": "HowToStep",
+      name: "Find your subtest standard scores",
+      text: "Use the standard scores (mean 50, SD ~10, range 20 to 145) for the nine ASVAB subtests: GS, AR, WK, PC, MK, EI, AS, MC, and AO. Line scores add standard scores, not raw correct counts or percentiles.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Use the printed VE value",
+      text: "Verbal Expression (VE) is not simply WK + PC; the actual conversion uses a lookup table. VE arrives pre-calculated on your score report, so use the printed VE value in formulas that call for it.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Apply your branch's composite formula",
+      text: "Add the standard scores in the formula for each composite you need. For example, Army GT = VE + AR. Each branch and composite (Army line scores, Marine line scores, Air Force MAGE, Navy ratings) uses its own combination of subtests.",
+    },
+  ],
+};
+
 export default function ASVABLineScoreCalculatorPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-10 sm:px-6">
       <JsonLd data={articleJsonLd} />
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={howToJsonLd} />
       <article className="prose-asvab">
 
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">

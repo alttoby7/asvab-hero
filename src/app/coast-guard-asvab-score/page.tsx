@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import AnswerBox from "@/components/AnswerBox";
 import EmailCapture from "@/components/EmailCapture";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
@@ -106,6 +107,14 @@ export default function CoastGuardASVABScorePage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           Coast Guard ASVAB Score: What You Need to Qualify in 2026
         </h1>
+
+        <AnswerBox>
+          The Coast Guard requires a minimum <strong>AFQT of 32</strong> with a
+          high school diploma (lowered from 40 in November 2023) and{" "}
+          <strong>50</strong> with a GED. As the most selective branch, clearing
+          the floor isn&apos;t enough &mdash; your subtest scores must also meet
+          the threshold for one of the ~24 ratings you want.
+        </AnswerBox>
 
         <p className="mt-4 text-text-secondary">
           The Coast Guard enlisted 5,204 members in FY2025, the highest number

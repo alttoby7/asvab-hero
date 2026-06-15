@@ -4,6 +4,7 @@ import Link from "next/link";
 import AfqtCalculator from "@/components/AfqtCalculator";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import AnswerBox from "@/components/AnswerBox";
 import VerifiedBlock from "@/components/VerifiedBlock";
 import ArticleByline from "@/components/ArticleByline";
 import RelatedCalculators from "@/components/RelatedCalculators";
@@ -89,11 +90,50 @@ export default function AfqtCalculatorPage() {
           ],
         }}
       />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          name: "How to calculate your AFQT score",
+          description:
+            "Calculate your AFQT percentile from four ASVAB subtest standard scores using the formula 2(VE) + AR + MK.",
+          step: [
+            {
+              "@type": "HowToStep",
+              name: "Gather your four AFQT subtest scores",
+              text: "Find your standard scores for Arithmetic Reasoning (AR), Word Knowledge (WK), Paragraph Comprehension (PC), and Mathematics Knowledge (MK). These four of the nine ASVAB subtests are the only ones that feed the AFQT.",
+            },
+            {
+              "@type": "HowToStep",
+              name: "Calculate your Verbal Expression (VE) score",
+              text: "Add your Word Knowledge and Paragraph Comprehension scores together: VE = WK + PC.",
+            },
+            {
+              "@type": "HowToStep",
+              name: "Apply the AFQT raw-score formula",
+              text: "Plug your numbers into AFQT = 2(VE) + AR + MK. Verbal counts twice, so Word Knowledge and Paragraph Comprehension have the biggest impact per point.",
+            },
+            {
+              "@type": "HowToStep",
+              name: "Convert the raw total to a percentile",
+              text: "Convert the raw total to a percentile (1 to 99) using the 1997 Profile of American Youth (PAY97) norming table to get your final AFQT score.",
+            },
+          ],
+        }}
+      />
 
       <div className="mb-6">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           AFQT Calculator
         </h1>
+        <AnswerBox>
+          Your <strong>AFQT</strong> is a percentile (1&ndash;99), not a raw
+          score, built from 4 of the 9 ASVAB subtests using the formula{" "}
+          <strong>2(VE) + AR + MK</strong>, where VE = Word Knowledge +
+          Paragraph Comprehension. The raw total is converted to a percentile
+          via the PAY97 norming table &mdash; so an AFQT of 50 means you scored
+          better than 50% of the reference group.
+        </AnswerBox>
         <ArticleByline lastVerified="May 2026" />
         <p className="mt-3 text-lg text-text-secondary">
           Get your AFQT percentile from 4 subtest scores in seconds. See your

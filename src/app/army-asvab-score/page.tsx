@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import AnswerBox from "@/components/AnswerBox";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
 
@@ -117,6 +118,13 @@ export default function ArmyASVABScorePage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           Army ASVAB Scores: The Complete Guide to Qualifying, Line Scores, and Career Advancement
         </h1>
+
+        <AnswerBox>
+          The Army requires a minimum <strong>AFQT score of 31</strong> with a
+          high school diploma (50 with a GED) &mdash; the lowest minimum of any
+          U.S. military branch. But AFQT only gets you in the door: your 10 Army
+          line scores, not AFQT, decide which MOS you actually qualify for.
+        </AnswerBox>
 
         <p className="mt-4 text-text-secondary">
           The Army has the lowest AFQT minimum of any branch. That gets people in the door. But your <strong>army asvab scores</strong> are what actually determine your job, your bonus eligibility, and whether you ever get promoted past the career ceiling most soldiers don&apos;t see coming.
