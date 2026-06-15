@@ -1034,6 +1034,63 @@ Deno.serve(async (req) => {
           });
           break;
         }
+        // One-time "pass" purchase (no subscription). Grant time-boxed Pro:
+        // billing_status='active' + pro_tier + pro_until = now + pass_days.
+        // Event-level idempotency (claimEvent → status='processed') protects
+        // against replays double-extending pro_until.
+        const sessionMeta = (obj.metadata as Record<string, string> | undefined) ?? {};
+        const passType = sessionMeta.pass_type;
+        const isPassPurchase = obj.mode === "payment" || !!passType;
+        if (isPassPurchase) {
+          if (obj.payment_status !== "paid") {
+            console.log("checkout.session.completed pass not paid; skipping grant", {
+              userId,
+              payment_status: obj.payment_status,
+            });
+            break;
+          }
+          const passUserId =
+            userId ?? (customerId ? await findUserIdForCustomer(customerId) : null);
+          if (!passUserId) {
+            console.error("pass purchase: could not resolve userId", { customerId });
+            await captureMessage("pass purchase: unresolved userId", {
+              level: "error",
+              tags: { provider: "stripe" },
+              fingerprint: ["pass-unresolved-user"],
+            });
+            break;
+          }
+          const tierForPass =
+            passType === "retaker" ? "retaker" : passType === "pass90" ? "pass90" : "pass90";
+          const rawDays = Number(sessionMeta.pass_days);
+          const passDays =
+            Number.isFinite(rawDays) && rawDays > 0
+              ? rawDays
+              : tierForPass === "retaker"
+                ? 120
+                : 90;
+          const proUntil = new Date(Date.now() + passDays * 86400000).toISOString();
+          await supabaseAdmin
+            .from("profiles")
+            .update({
+              billing_status: "active",
+              pro_tier: tierForPass,
+              pro_until: proUntil,
+              ...(customerId ? { stripe_customer_id: customerId } : {}),
+              pro_updated_at: new Date().toISOString(),
+            })
+            .eq("user_id", passUserId);
+
+          await sendWelcomeEmail({
+            userId: passUserId,
+            customerEmail,
+            customerName,
+            isTrial: false,
+            eventType: event.type,
+          });
+          break;
+        }
+
         if (userId && customerId) {
           await supabaseAdmin
             .from("profiles")
