@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import AnswerBox from "@/components/AnswerBox";
 
 export const metadata: Metadata = {
   title: "What Jobs Do I Qualify For With My ASVAB Score?",
@@ -105,6 +106,15 @@ export default function WhatJobsQualifyASVABScorePage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           What Jobs Do I Qualify For With My ASVAB Score?
         </h1>
+
+        <AnswerBox>
+          Your ASVAB results work as two scores running two gates: your{" "}
+          <strong>AFQT</strong> decides whether you can enlist, and your{" "}
+          <strong>composite (line) scores</strong> decide which specific jobs you
+          can pick. A high AFQT alone doesn&apos;t qualify you for a job &mdash;
+          each MOS, AFSC, or rating requires specific composites built from
+          different subtests.
+        </AnswerBox>
 
         <p className="mt-4 text-text-secondary">
           You got your scores back, and now you want the real answer: which

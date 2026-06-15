@@ -10,7 +10,7 @@ import BranchCompositeHeatmap from "@/components/scores-explained/BranchComposit
 export const metadata: Metadata = {
   title: "ASVAB Score Chart: AFQT Categories I–V + Branch Minimums (2026)",
   description:
-    "AFQT Category I = 93–99. II = 65–92. IIIA = 50–64. IIIB = 31–49. IV = 10–30. Branch minimums: Army 31, Marines 32, Navy 35, Air Force/Space Force 31, Coast Guard 32. GED floors are higher.",
+    "AFQT Category I = 93–99. II = 65–92. IIIA = 50–64. IIIB = 31–49. IV = 10–30. Branch minimums: Army 31, Marines 32, Navy 35, Air Force/Space Force 36, Coast Guard 32. GED floors are higher.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-score-chart",
   },
@@ -338,7 +338,7 @@ export default function ASVABScoreChartPage() {
           The Navy made a significant policy change in January 2024, becoming the first branch to allow Tier III enlistment (no diploma or GED) with a minimum AFQT of 50. This expanded the Navy&apos;s recruiting pool but did not lower its standards. You still need to meet the same composite score thresholds for every rating.
         </p>
         <p className="text-text-secondary">
-          If you have a GED, the higher minimum is real. The gap is steepest at the Air Force: 31 with a diploma versus 65 with a GED, a 34-point difference. Once you are in, though, your score works the same as a diploma holder&apos;s for job qualification. The credential gap only affects the entry threshold.
+          If you have a GED, the higher minimum is real. The gap is steepest at the Air Force: 36 with a diploma versus 65 with a GED, a 29-point difference. Once you are in, though, your score works the same as a diploma holder&apos;s for job qualification. The credential gap only affects the entry threshold.
         </p>
         <p className="text-text-secondary">
           The Coast Guard is the smallest branch with the fewest annual enlistment slots. Its minimum of 32 is the floor, but the limited number of openings means practical competition pushes the effective threshold higher.
@@ -590,7 +590,7 @@ export default function ASVABScoreChartPage() {
           Read the chart from bottom to top to see how each score threshold opens new doors.
         </p>
         <p className="text-text-secondary">
-          At 31, the Army, Navy, Air Force, and Space Force doors open. At 32, the Marines and Coast Guard join. At 50, enlistment bonuses and most job classifications unlock. At 65, you qualify for virtually everything. At 93, you enter Category I and elite programs like Navy Nuclear and crypto linguist actively recruit you.
+          At 31, the Army door opens. At 32, the Marines and Coast Guard join. At 35, the Navy. At 36, the Air Force and Space Force. At 50, enlistment bonuses and most job classifications unlock. At 65, you qualify for virtually everything. At 93, you enter Category I and elite programs like Navy Nuclear and crypto linguist actively recruit you.
         </p>
         <p className="text-text-secondary">
           Space Force shows &ldquo;Competitive&rdquo; at 36–49 because it technically accepts a 36 with a diploma, but 85% of recruits score 50 or higher. Treat 50 as the practical minimum for Space Force.

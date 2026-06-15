@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import AnswerBox from "@/components/AnswerBox";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
 
@@ -108,6 +109,14 @@ export default function AirForceASVABScorePage() {
           Air Force ASVAB Score: What You Need to Qualify and Which Jobs You Can
           Get
         </h1>
+
+        <AnswerBox>
+          The Air Force requires a minimum <strong>AFQT of 36</strong> with a
+          high school diploma and <strong>65</strong> with a GED &mdash; the
+          strictest GED floor of any branch. AFQT is only the first gate: your
+          four MAGE composites (Mechanical, Administrative, General, Electronics)
+          decide which AFSCs you can actually book.
+        </AnswerBox>
 
         <p className="mt-4 text-text-secondary">
           You hit the AFQT minimum, but your recruiter says you don&apos;t

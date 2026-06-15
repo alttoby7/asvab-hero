@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import AnswerBox from "@/components/AnswerBox";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
 
@@ -118,6 +119,15 @@ export default function ASVABScoreRequirementsPage() {
           ASVAB Score Requirements: Every Branch Minimum, Composite Score, and
           Career Threshold for 2026
         </h1>
+
+        <AnswerBox>
+          Minimum AFQT scores to enlist (high school diploma): Army{" "}
+          <strong>31</strong>, Navy <strong>35</strong>, Marine Corps{" "}
+          <strong>32</strong>, Air Force <strong>36</strong>, Space Force{" "}
+          <strong>36</strong>, Coast Guard <strong>32</strong> &mdash; GED
+          holders generally need 50 or higher. These minimums only get you in the
+          door; composite scores determine which jobs you can hold.
+        </AnswerBox>
 
         <p className="mt-4 text-text-secondary">
           Every military branch publishes a minimum ASVAB score. The problem is

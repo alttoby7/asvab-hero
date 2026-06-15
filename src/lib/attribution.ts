@@ -44,6 +44,19 @@ function classifyReferrer(referrer: string, host: string): string {
   }
   if (ref.hostname === host) return "internal";
   const h = ref.hostname.replace(/^www\./, "");
+  // AI answer engines / assistants — checked BEFORE search engines so that
+  // gemini.google.com is not miscounted as "google". Referrer-bearing AI
+  // sessions only (the large referrer-less bucket still lands in "direct").
+  if (
+    /(^|\.)(chatgpt|openai|perplexity|claude|anthropic|copilot|deepseek|grok)\./.test(
+      h,
+    ) ||
+    h === "gemini.google.com" ||
+    h === "you.com" ||
+    h === "x.ai"
+  ) {
+    return "ai";
+  }
   if (/(^|\.)(google|bing|duckduckgo|yahoo|ecosia)\./.test(h)) return "google";
   if (
     /(^|\.)(facebook|instagram|t\.co|twitter|x\.com|tiktok|reddit|youtube|linkedin|pinterest)\./.test(

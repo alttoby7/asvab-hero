@@ -4,6 +4,7 @@ import Link from "next/link";
 import AfqtCalculator from "@/components/AfqtCalculator";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import AnswerBox from "@/components/AnswerBox";
 import VerifiedBlock from "@/components/VerifiedBlock";
 import ArticleByline from "@/components/ArticleByline";
 import RelatedCalculators from "@/components/RelatedCalculators";
@@ -59,7 +60,7 @@ export default function AfqtCalculatorPage() {
               name: "What AFQT score do I need to join the military?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Diploma minimums for 2026: Army 31, Marine Corps 32, Navy 35, Air Force 31, Space Force 31, Coast Guard 32. GED holders face higher floors in every branch.",
+                text: "Diploma minimums for 2026: Army 31, Marine Corps 32, Navy 35, Air Force 36, Space Force 36, Coast Guard 32. GED holders face higher floors in every branch.",
               },
             },
             {
@@ -89,11 +90,50 @@ export default function AfqtCalculatorPage() {
           ],
         }}
       />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          name: "How to calculate your AFQT score",
+          description:
+            "Calculate your AFQT percentile from four ASVAB subtest standard scores using the formula 2(VE) + AR + MK.",
+          step: [
+            {
+              "@type": "HowToStep",
+              name: "Gather your four AFQT subtest scores",
+              text: "Find your standard scores for Arithmetic Reasoning (AR), Word Knowledge (WK), Paragraph Comprehension (PC), and Mathematics Knowledge (MK). These four of the nine ASVAB subtests are the only ones that feed the AFQT.",
+            },
+            {
+              "@type": "HowToStep",
+              name: "Calculate your Verbal Expression (VE) score",
+              text: "Add your Word Knowledge and Paragraph Comprehension scores together: VE = WK + PC.",
+            },
+            {
+              "@type": "HowToStep",
+              name: "Apply the AFQT raw-score formula",
+              text: "Plug your numbers into AFQT = 2(VE) + AR + MK. Verbal counts twice, so Word Knowledge and Paragraph Comprehension have the biggest impact per point.",
+            },
+            {
+              "@type": "HowToStep",
+              name: "Convert the raw total to a percentile",
+              text: "Convert the raw total to a percentile (1 to 99) using the 1997 Profile of American Youth (PAY97) norming table to get your final AFQT score.",
+            },
+          ],
+        }}
+      />
 
       <div className="mb-6">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           AFQT Calculator
         </h1>
+        <AnswerBox>
+          Your <strong>AFQT</strong> is a percentile (1&ndash;99), not a raw
+          score, built from 4 of the 9 ASVAB subtests using the formula{" "}
+          <strong>2(VE) + AR + MK</strong>, where VE = Word Knowledge +
+          Paragraph Comprehension. The raw total is converted to a percentile
+          via the PAY97 norming table &mdash; so an AFQT of 50 means you scored
+          better than 50% of the reference group.
+        </AnswerBox>
         <ArticleByline lastVerified="May 2026" />
         <p className="mt-3 text-lg text-text-secondary">
           Get your AFQT percentile from 4 subtest scores in seconds. See your
@@ -121,7 +161,7 @@ export default function AfqtCalculatorPage() {
           <strong>2(VE) + AR + MK</strong> where VE = WK + PC, then the raw
           total is converted to a percentile using the 1997 Profile of American
           Youth (PAY97) norming table. Minimum to enlist with a diploma: Army
-          31, Marines 32, Navy 35, Air Force 31, Space Force 31, Coast Guard 32.
+          31, Marines 32, Navy 35, Air Force 36, Space Force 36, Coast Guard 32.
         </p>
       </VerifiedBlock>
 
@@ -304,8 +344,8 @@ export default function AfqtCalculatorPage() {
                 ["Marine Corps", "32", "50"],
                 ["Coast Guard", "32", "50 (+15 college credits)"],
                 ["Navy", "35", "50 (+15 college credits)"],
-                ["Air Force", "36", "50 (+15 college credits)"],
-                ["Space Force", "36", "50 (+15 college credits)"],
+                ["Air Force", "36", "65"],
+                ["Space Force", "36", "65"],
               ].map(([branch, diploma, ged]) => (
                 <tr key={branch} className="border-b border-navy-border/50">
                   <td className="py-2 pr-4 font-semibold text-text-primary">
@@ -356,7 +396,7 @@ export default function AfqtCalculatorPage() {
             },
             {
               q: "What AFQT score do I need for each branch?",
-              a: "Diploma minimums for 2026: Army 31, Marine Corps 32, Navy 35, Air Force 31, Space Force 31, Coast Guard 32. GED minimums are higher and often require additional college credits (Navy and Coast Guard both require 15 semester hours).",
+              a: "Diploma minimums for 2026: Army 31, Marine Corps 32, Navy 35, Air Force 36, Space Force 36, Coast Guard 32. GED minimums are higher and often require additional college credits (Navy and Coast Guard both require 15 semester hours).",
             },
             {
               q: "Which 4 subtests count toward the AFQT?",

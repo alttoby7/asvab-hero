@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import PricingPlans from "@/components/PricingPlans";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Pricing",
@@ -32,6 +33,48 @@ const FAQ = [
 export default function PricingPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          name: "ASVAB Hero Pro",
+          applicationCategory: "EducationalApplication",
+          operatingSystem: "Web",
+          description:
+            "ASVAB Hero Pro unlocks unlimited adaptive practice, full-length timed ASVAB simulations, targeted subtest drills, and deeper analytics on top of the free score-moving core (diagnostic, daily adaptive practice, Mistake-Bank, calculators).",
+          url: "https://asvabhero.com/pricing",
+          publisher: { "@id": "https://asvabhero.com/#organization" },
+          offers: [
+            {
+              "@type": "Offer",
+              name: "Pro Monthly",
+              price: "9.99",
+              priceCurrency: "USD",
+              url: "https://asvabhero.com/pricing",
+              availability: "https://schema.org/InStock",
+            },
+            {
+              "@type": "Offer",
+              name: "Pro Annual",
+              price: "49.99",
+              priceCurrency: "USD",
+              url: "https://asvabhero.com/pricing",
+              availability: "https://schema.org/InStock",
+            },
+          ],
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: FAQ.map(({ q, a }) => ({
+            "@type": "Question",
+            name: q,
+            acceptedAnswer: { "@type": "Answer", text: a },
+          })),
+        }}
+      />
       <div className="text-center mb-12">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           Simple, transparent pricing
