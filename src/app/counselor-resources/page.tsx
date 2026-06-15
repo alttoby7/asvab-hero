@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import RelatedLinks from "@/components/RelatedLinks";
+import CiteThisResource from "@/components/CiteThisResource";
 import { TOPIC_COUNT } from "@/lib/bank-stats";
 
 export const metadata: Metadata = {
@@ -212,6 +213,14 @@ export default function CounselorResourcesPage() {
             .
           </p>
         </section>
+
+        {/* Link / cite affordance */}
+        <CiteThisResource
+          url="https://asvabhero.com/counselor-resources"
+          anchor="ASVAB reference for counselors and educators"
+          citationTitle="An ASVAB reference for counselors, librarians, and JROTC instructors"
+          lastVerified={LAST_VERIFIED}
+        />
 
         {/* 2. What the ASVAB is */}
         <section>
