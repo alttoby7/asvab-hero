@@ -11,45 +11,40 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     color: #0f172a;
     font-size: 10.5pt;
-    line-height: 1.4;
+    line-height: 1.35;
   }
   h1 { font-size: 28pt; line-height: 1.1; margin: 0 0 8pt; color: #0a1628; }
-  h2 { font-size: 14pt; margin: 12pt 0 4pt; color: #0a1628; border-bottom: 2px solid #f97316; padding-bottom: 2pt; }
+  h2 { font-size: 13.5pt; margin: 9pt 0 3pt; color: #0a1628; border-bottom: 2px solid #f97316; padding-bottom: 2pt; }
   h3 { font-size: 11pt; margin: 8pt 0 3pt; color: #f97316; text-transform: uppercase; letter-spacing: 0.5pt; }
-  p { margin: 0 0 6pt; }
+  p { margin: 0 0 4pt; }
   strong { color: #0a1628; }
   ul, ol { margin: 0 0 6pt 0; padding-left: 16pt; }
   li { margin-bottom: 2pt; }
-  .page { page-break-after: always; min-height: 9in; }
-  .page:last-child { page-break-after: auto; }
-  .cover {
-    background: #0a1628;
-    color: #f1f5f9;
-    padding: 0.6in 0.7in;
-    margin: -0.6in -0.7in;
-    height: 11in;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  /* Content flows continuously across pages (no forced full-page sections,
+     which left half-empty pages). Break-control below keeps blocks intact. */
+  .page { }
+  h2 { page-break-after: avoid; }
+  .formula-box, .ex, table, .pattern, .callout, .triangle,
+  .grid-2, .grid-3, ol, .footer-meta { page-break-inside: avoid; }
+  /* Masthead band: mirrors the AFQT Math Cheat-Sheet's navy title band so the
+     two lead magnets read as one set. Replaces the old wasted full-page cover. */
+  .masthead {
+    background: #0f172a;
+    border-radius: 6pt;
+    padding: 9pt 14pt;
+    margin: 0 0 9pt;
   }
-  .cover h1 { color: #f1f5f9; font-size: 38pt; }
-  .cover .accent { color: #f97316; }
-  .cover .lead { font-size: 13pt; color: #cbd5e1; max-width: 5in; line-height: 1.4; }
-  .cover .footer { color: #94a3b8; font-size: 10pt; }
-  .cover .badge {
-    display: inline-block;
-    background: #f97316;
-    color: white;
-    padding: 4pt 12pt;
-    border-radius: 4pt;
-    font-size: 10pt;
+  .masthead .eyebrow {
+    color: #fdba74;
+    font-size: 8pt;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.5pt;
+    letter-spacing: 1pt;
+    margin: 0 0 3pt;
   }
-  .cover ul.toc { list-style: none; padding: 0; margin: 18pt 0 0; color: #cbd5e1; font-size: 11pt; }
-  .cover ul.toc li { padding: 4pt 0; border-bottom: 1px solid #1e293b; }
-  .cover ul.toc strong { color: #f97316; margin-right: 8pt; }
+  .masthead h1 { color: #ffffff; font-size: 18pt; line-height: 1.05; margin: 0; }
+  .masthead h1 .accent { color: #f97316; }
+  .masthead .sub { color: #fdba74; font-size: 10pt; margin: 3pt 0 0; max-width: 6in; }
   .callout {
     background: #fff7ed;
     border-left: 4px solid #f97316;
@@ -59,15 +54,15 @@
     font-size: 10pt;
   }
   .callout strong { color: #c2410c; }
-  table { width: 100%; border-collapse: collapse; margin: 6pt 0 8pt; font-size: 9.5pt; }
-  th, td { padding: 4pt 6pt; text-align: left; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+  table { width: 100%; border-collapse: collapse; margin: 4pt 0 6pt; font-size: 9.5pt; }
+  th, td { padding: 3pt 6pt; text-align: left; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
   th { background: #f1f5f9; color: #0a1628; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.4pt; }
   .formula-box {
     background: #0a1628;
     color: #f1f5f9;
-    padding: 8pt 12pt;
+    padding: 6pt 12pt;
     border-radius: 4pt;
-    margin: 6pt 0;
+    margin: 4pt 0;
     font-family: "SF Mono", Menlo, Consolas, monospace;
     font-size: 11pt;
     text-align: center;
@@ -118,35 +113,20 @@
   }
   .pattern .cue { font-weight: 600; color: #0a1628; display: block; }
   .pattern .move { color: #475569; font-size: 9.5pt; }
-  .ex { background: #f1f5f9; padding: 5pt 8pt; border-radius: 3pt; font-size: 9.5pt; margin: 4pt 0; }
+  .ex { background: #f1f5f9; padding: 4pt 8pt; border-radius: 3pt; font-size: 9.5pt; margin: 3pt 0; }
   .ex strong { color: #c2410c; }
 </style>
 </head>
 <body>
 
-<!-- COVER -->
-<div class="cover page">
-  <div>
-    <span class="badge">ASVAB Hero</span>
-    <h1 style="margin-top: 24pt;">AR Formula<br><span class="accent">Card</span></h1>
-    <p class="lead">Every formula, conversion, and word-problem pattern you need on test day. One page to glance at, one page to drill.</p>
-    <ul class="toc">
-      <li><strong>01</strong>Order of operations + worked example</li>
-      <li><strong>02</strong>Fraction / decimal / percent table</li>
-      <li><strong>03</strong>Distance / Rate / Time triangle</li>
-      <li><strong>04</strong>Work-rate, mixture, percent change, ratios</li>
-      <li><strong>05</strong>Word-problem patterns ASVAB writers love</li>
-      <li><strong>06</strong>Test-day shortcuts</li>
-    </ul>
-  </div>
-  <div class="footer">
-    asvabhero.com &middot; Built May 2026<br>
-    Free for personal use. Not affiliated with the U.S. Department of Defense.
-  </div>
-</div>
-
-<!-- PAGE 2 — FORMULAS -->
+<!-- PAGE 1 — FORMULAS -->
 <div class="page">
+  <div class="masthead">
+    <div class="eyebrow">ASVAB Hero</div>
+    <h1>AR Formula <span class="accent">Card</span></h1>
+    <p class="sub">Every formula, conversion, and word-problem pattern for ASVAB Arithmetic Reasoning, in one place to keep next to you while you drill.</p>
+  </div>
+
   <h2>Order of operations (PEMDAS)</h2>
   <p>Parentheses, Exponents, Multiplication and Division (left to right), Addition and Subtraction (left to right). MD and AS share a tier — work left to right inside each.</p>
   <div class="formula-box">P &rarr; E &rarr; <span class="accent">M / D</span> &rarr; <span class="accent">A / S</span></div>
@@ -210,7 +190,7 @@
   <div class="ex"><strong>Ex:</strong> 3 MREs cost $12. 7 MREs cost? &nbsp;3/12 = 7/x &rarr; 3x = 84 &rarr; <strong>x = $28</strong>.</div>
 </div>
 
-<!-- PAGE 3 — PATTERNS + TEST DAY -->
+<!-- PAGE 2 — PATTERNS + TEST DAY -->
 <div class="page">
   <h2>Word-problem patterns ASVAB writers love</h2>
   <p>Recognize the cue, run the move. Don&rsquo;t solve the problem in your head &mdash; solve the pattern.</p>
@@ -290,7 +270,7 @@
   </ol>
 
   <p class="footer-meta">
-    asvabhero.com &middot; Built May 2026 &middot; Free for personal use. Not affiliated with the U.S. Department of Defense.<br>
+    asvabhero.com &middot; Free for personal use. Not affiliated with the U.S. Department of Defense.<br>
     More tools: <a href="https://asvabhero.com/calculator">asvabhero.com/calculator</a> &middot; <a href="https://asvabhero.com/afqt-calculator">AFQT calculator</a> &middot; <a href="https://asvabhero.com/gt-score-calculator">GT calculator</a>
   </p>
 </div>
