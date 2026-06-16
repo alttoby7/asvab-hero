@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import AnswerBox from "@/components/AnswerBox";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
 import DvidsHeroImage from "@/components/DvidsHeroImage";
@@ -117,6 +118,17 @@ export default function WhatIsAGoodASVABScorePage() {
       <article className="prose-asvab">
         <h1>What Is a Good ASVAB Score? It Depends on What You Want to Do</h1>
         <ArticleByline lastVerified="May 2026" />
+
+        <AnswerBox>
+          A <strong>50 AFQT is exactly average</strong> (the 50th percentile) and
+          qualifies you for every branch and most jobs. What counts as
+          &ldquo;good&rdquo; depends on your goal: <strong>50+</strong> opens most
+          career fields and enlistment bonuses, <strong>60+</strong> (Category
+          IIIA) clears the majority of technical jobs, and <strong>70+</strong>
+          is competitive for intel, cyber, nuclear, and special programs. Branch
+          minimums to enlist range from 31 (Army and Navy) to 36 (Air Force and
+          Space Force).
+        </AnswerBox>
 
         <DvidsHeroImage
           src="/images/what-is-a-good-asvab-score/hero.jpg"

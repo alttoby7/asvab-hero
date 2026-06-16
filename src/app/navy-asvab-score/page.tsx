@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
+import AnswerBox from "@/components/AnswerBox";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
 
@@ -148,6 +149,16 @@ export default function NavyASVABScorePage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           Navy ASVAB Score: How Scoring Works and Requirements by Rating
         </h1>
+
+        <AnswerBox>
+          The Navy requires a minimum <strong>AFQT score of 31</strong> with a
+          high school diploma (50 with a GED, or 31 with a GED plus 15 college
+          credits). But the Navy runs a two-gate system: AFQT only decides
+          whether you can enlist &mdash; your individual subtest combinations
+          (not the named line scores other branches use) decide which rating you
+          qualify for. A 31&ndash;49 gets you in but opens only about 12 of 80+
+          ratings, so aim for 50+ for real choice.
+        </AnswerBox>
 
         <p className="mt-4 text-text-secondary">
           The <strong>navy ASVAB score</strong> system confuses people because it

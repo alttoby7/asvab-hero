@@ -28,7 +28,7 @@ const faqItems = [
   },
   {
     q: "Can you fail the ASVAB?",
-    a: "There's no pass/fail. But scoring below your target branch's minimum AFQT (31 Army, 32 Marines, 35 Navy, 36 Air Force/Space Force, 32 Coast Guard) means you can't enlist with that branch. Scoring below 10 (Category V) disqualifies you from all branches.",
+    a: "There's no pass/fail. But scoring below your target branch's minimum AFQT (31 Army, 32 Marines, 31 Navy, 36 Air Force/Space Force, 32 Coast Guard) means you can't enlist with that branch. Scoring below 10 (Category V) disqualifies you from all branches.",
   },
   {
     q: "What ASVAB score do I need for a specific job?",

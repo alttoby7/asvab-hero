@@ -73,7 +73,7 @@ const faqJsonLd = {
       name: "What ASVAB math score do I need?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "It depends on your branch and target job. Minimum AFQT for Army is 31 (with a diploma), Air Force is 36, Navy is 35, Marines is 32. Scoring 50 or higher opens most jobs across all branches and makes you eligible for enlistment bonuses. Use the ASVAB Score Calculator to check specific job requirements against your scores.",
+        text: "It depends on your branch and target job. Minimum AFQT for Army is 31 (with a diploma), Air Force is 36, Navy is 31, Marines is 32. Scoring 50 or higher opens most jobs across all branches and makes you eligible for enlistment bonuses. Use the ASVAB Score Calculator to check specific job requirements against your scores.",
       },
     },
     {
@@ -736,7 +736,7 @@ export default function ASVABMathTipsPage() {
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">What ASVAB math score do I need?</h3>
             <p className="mt-1 text-sm text-text-secondary">
-              It depends on your branch and target job. Minimum AFQT for Army is 31 (with a diploma), Air Force is 36, Navy is 35, Marines is 32. Scoring 50+ opens most jobs across all branches and makes you eligible for enlistment bonuses. Use the{" "}
+              It depends on your branch and target job. Minimum AFQT for Army is 31 (with a diploma), Air Force is 36, Navy is 31, Marines is 32. Scoring 50+ opens most jobs across all branches and makes you eligible for enlistment bonuses. Use the{" "}
               <Link href="/calculator" className="text-accent hover:text-accent-hover">calculator</Link>{" "}
               to check specific job requirements against your scores.
             </p>

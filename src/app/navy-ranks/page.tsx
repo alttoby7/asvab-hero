@@ -71,7 +71,7 @@ export default function NavyRanksPage() {
             {
               "@type": "Question",
               name: "What ASVAB score do you need for the Navy?",
-              acceptedAnswer: { "@type": "Answer", text: "You need a minimum AFQT score of 35 to enlist in the Navy. However, specific ratings require composite line scores from ASVAB subtests that go far beyond AFQT. Nuclear ratings require a 252 on the NF composite. Some ratings like Culinary Specialist need only an 87 on VE+AR." },
+              acceptedAnswer: { "@type": "Answer", text: "You need a minimum AFQT score of 31 to enlist in the Navy. However, specific ratings require composite line scores from ASVAB subtests that go far beyond AFQT. Nuclear ratings require a 252 on the NF composite. Some ratings like Culinary Specialist need only an 87 on VE+AR." },
             },
             {
               "@type": "Question",
@@ -761,7 +761,7 @@ export default function NavyRanksPage() {
           ASVAB Scores and Navy Ratings
         </h2>
         <p className="mt-2 text-text-secondary">
-          The Navy&apos;s minimum AFQT score is 35, but AFQT alone doesn&apos;t determine your rating. The Navy uses composite line scores calculated from specific ASVAB subtests. Different ratings require different composites, and the score thresholds vary widely.
+          The Navy&apos;s minimum AFQT score is 31, but AFQT alone doesn&apos;t determine your rating. The Navy uses composite line scores calculated from specific ASVAB subtests. Different ratings require different composites, and the score thresholds vary widely.
         </p>
         <div className="overflow-x-auto my-4">
           <table className="w-full text-sm border-collapse">
@@ -874,7 +874,7 @@ export default function NavyRanksPage() {
               What ASVAB score do you need for the Navy?
             </h3>
             <p className="mt-1 text-sm text-text-secondary">
-              You need a minimum AFQT score of 35 to enlist in the Navy. However, specific ratings require composite line scores from ASVAB subtests that go far beyond AFQT. Nuclear ratings require a 252 on the NF composite. Some ratings like Culinary Specialist need only an 87 on VE+AR. Use our{" "}
+              You need a minimum AFQT score of 31 to enlist in the Navy. However, specific ratings require composite line scores from ASVAB subtests that go far beyond AFQT. Nuclear ratings require a 252 on the NF composite. Some ratings like Culinary Specialist need only an 87 on VE+AR. Use our{" "}
               <Link href="/calculator" className="text-accent hover:text-accent-hover underline">
                 calculator
               </Link>{" "}

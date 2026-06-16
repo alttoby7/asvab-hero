@@ -246,7 +246,7 @@ export default function MOSASVABScoreRequirementsPage() {
           <p className="text-sm font-semibold text-text-primary">Key Point</p>
           <p className="mt-1 text-sm text-text-secondary">
             The AFQT minimum is a separate gate from the job score. The diploma
-            minimums are Army 31, Marines 32, Navy 35, Air Force 36, Coast Guard
+            minimums are Army 31, Marines 32, Navy 31, Air Force 36, Coast Guard
             32, and Space Force 36. GED holders face higher bars (usually 50, or
             65 for Air Force and Space Force). See our full{" "}
             <Link
