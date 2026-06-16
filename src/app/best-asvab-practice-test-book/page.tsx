@@ -796,8 +796,9 @@ export default function BestASVABPracticeTestBookPage() {
           >
             ASVAB Hero Pro
           </Link>{" "}
-          gives you randomized question pools across all 9 subtests at $9.99 a
-          month. One option among several, mentioned here once.
+          gives you randomized question pools across all 9 subtests for a
+          one-time $59 90-Day Pass (or $14.99 a month). One option among several,
+          mentioned here once.
         </p>
 
         <p className="text-text-secondary">

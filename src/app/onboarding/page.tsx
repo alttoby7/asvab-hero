@@ -6,13 +6,25 @@ import { useSession } from "@/hooks/useSession";
 import { OnboardingForm } from "@/components/onboarding/OnboardingForm";
 import { trackEvent, PaywallEvents } from "@/lib/analytics";
 
+// One-time "pass" tiers are not subscriptions; default value per plan when the
+// success_url omits it (stripe-checkout normally passes the real value).
+const PLAN_DEFAULT_VALUE: Record<string, number> = {
+  pass90: 59,
+  retaker: 119,
+  monthly: 14.99,
+  annual: 49.99,
+};
+
 function OnboardingPageInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { session, loading: sessionLoading } = useSession();
   const isWelcome = searchParams?.get("welcome") === "1";
   const plan = searchParams?.get("plan") ?? "monthly";
-  const value = Number.parseFloat(searchParams?.get("value") ?? "9.99");
+  const isPassPlan = plan === "pass90" || plan === "retaker";
+  const value = Number.parseFloat(
+    searchParams?.get("value") ?? String(PLAN_DEFAULT_VALUE[plan] ?? 14.99)
+  );
 
   useEffect(() => {
     if (!sessionLoading && !session) router.replace("/login?next=/onboarding");
@@ -34,18 +46,25 @@ function OnboardingPageInner() {
         /* ignore */
       }
       if (!already) {
-        const safeValue = Number.isFinite(value) ? value : 9.99;
+        const safeValue = Number.isFinite(value)
+          ? value
+          : PLAN_DEFAULT_VALUE[plan] ?? 14.99;
+        // One-time passes get a non-"sub_" transaction id and no
+        // subscription_started event (keeps GA4 / the revenue dashboard's
+        // pass-vs-subscription split honest).
         trackEvent("purchase", {
-          transaction_id: `sub_${Date.now()}`,
+          transaction_id: `${isPassPlan ? "pass" : "sub"}_${Date.now()}`,
           value: safeValue,
           currency: "USD",
           plan,
         });
-        trackEvent("subscription_started", {
-          plan,
-          value: safeValue,
-          currency: "USD",
-        });
+        if (!isPassPlan) {
+          trackEvent("subscription_started", {
+            plan,
+            value: safeValue,
+            currency: "USD",
+          });
+        }
         try {
           sessionStorage.setItem(FIRED_KEY, "1");
         } catch {

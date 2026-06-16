@@ -355,7 +355,7 @@ export default function HomePage() {
               </svg>
             </Link>
             <p className="font-mono text-xs uppercase tracking-wider text-text-tertiary">
-              7-day money-back guarantee on Pro · cancel anytime
+              Money-back guarantee on Pro · the 90-Day Pass has nothing to cancel
             </p>
           </div>
         </div>

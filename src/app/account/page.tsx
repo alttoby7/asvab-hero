@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
-import { useEntitlement } from "@/hooks/useEntitlement";
+import { useEntitlement, isPassTier, proTierLabel } from "@/hooks/useEntitlement";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
 import { TrialBanner } from "@/components/account/TrialBanner";
 import FlashcardsDashboardWidget from "@/components/flashcards/DashboardWidget";
@@ -320,10 +320,10 @@ export default function AccountDashboardPage() {
         {isPro ? (
           <div className="flex items-center justify-between gap-4 flex-wrap">
             <div>
-              <span className="rounded-full bg-success-dim px-3 py-0.5 text-xs font-semibold text-success uppercase tracking-wide">Pro {data.proTier ?? ""}</span>
-              {data.proUntil && <p className="mt-1.5 text-sm text-text-secondary">Renews {fmtProUntil(data.proUntil)}</p>}
+              <span className="rounded-full bg-success-dim px-3 py-0.5 text-xs font-semibold text-success uppercase tracking-wide">Pro{proTierLabel(data.proTier) ? ` · ${proTierLabel(data.proTier)}` : ""}</span>
+              {data.proUntil && data.proTier !== "lifetime" && <p className="mt-1.5 text-sm text-text-secondary">{isPassTier(data.proTier) ? "Expires" : "Renews"} {fmtProUntil(data.proUntil)}</p>}
             </div>
-            <Link href="/account/billing" className="rounded-lg border border-navy-border px-4 py-2 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline">Manage subscription</Link>
+            <Link href="/account/billing" className="rounded-lg border border-navy-border px-4 py-2 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary no-underline">Manage billing</Link>
           </div>
         ) : (
           <div className="flex items-center justify-between gap-4 flex-wrap">

@@ -4,10 +4,17 @@ import { useEffect, useState } from "react";
 import { useSession } from "./useSession";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 
+export type ProTier =
+  | "monthly"
+  | "annual"
+  | "lifetime"
+  | "pass90"
+  | "retaker";
+
 export type Entitlement = {
   isPro: boolean;
   billingStatus: "free" | "active" | "past_due" | "canceled" | "lifetime";
-  proTier: "monthly" | "annual" | "lifetime" | null;
+  proTier: ProTier | null;
   proUntil: string | null;
   freeDiagnosticUsedAt: string | null;
   stripeCustomerId: string | null;
@@ -15,6 +22,32 @@ export type Entitlement = {
   isTrial: boolean;
   trialDaysRemaining: number | null;
 };
+
+// One-time "pass" tiers grant time-boxed Pro and have NO Stripe subscription:
+// pro_until is an expiry, not a renewal date, and there is nothing to manage in
+// the Stripe billing portal. The UI must treat these differently from monthly.
+export const PASS_TIERS: ReadonlySet<string> = new Set(["pass90", "retaker"]);
+
+export function isPassTier(tier: string | null): boolean {
+  return tier != null && PASS_TIERS.has(tier);
+}
+
+export function proTierLabel(tier: string | null): string {
+  switch (tier) {
+    case "pass90":
+      return "90-Day Pass";
+    case "retaker":
+      return "Retaker Pass";
+    case "monthly":
+      return "Monthly";
+    case "annual":
+      return "Annual";
+    case "lifetime":
+      return "Lifetime";
+    default:
+      return "";
+  }
+}
 
 const FREE: Entitlement = {
   isPro: false,
