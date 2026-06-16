@@ -42,7 +42,6 @@ const pages = [
   { path: "/asvab-score-ranges", priority: "0.8", changefreq: "monthly" },
   { path: "/afqt-score", priority: "0.8", changefreq: "monthly" },
   { path: "/what-does-asvab-stand-for", priority: "0.8", changefreq: "monthly" },
-  { path: "/asvab-word-knowledge-tips", priority: "0.8", changefreq: "monthly" },
   { path: "/navy-asvab-score", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-general-science-tips", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-retake-policy", priority: "0.8", changefreq: "monthly" },
@@ -56,6 +55,7 @@ const pages = [
   { path: "/gt-score", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-prep-course", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-vocabulary", priority: "0.8", changefreq: "monthly" },
+  { path: "/flashcards", priority: "0.8", changefreq: "monthly" },
   { path: "/pricing", priority: "0.7", changefreq: "monthly" },
   { path: "/about", priority: "0.5", changefreq: "monthly" },
   { path: "/contact", priority: "0.4", changefreq: "monthly" },
@@ -107,6 +107,15 @@ const pages = [
   { path: "/air-force-pararescue-asvab-score", priority: "0.7", changefreq: "monthly" },
   { path: "/air-force-pilot-asvab-requirements", priority: "0.7", changefreq: "monthly" },
 ];
+
+// This is an intentional allowlist, not auto-discovery — it gives us explicit
+// control over what Google indexes. Deliberately EXCLUDED (do not "fix"):
+//   - /app/*, auth, dashboard, checkout, billing — private/app-shell routes
+//   - /embed/* widget subpages — marked robots:{index:false} (sitemapping a
+//     noindex page sends conflicting signals)
+//   - /upgrade — client-only conversion funnel, not an organic-search target
+//   - dynamic routes ([param]) and route groups ((group))
+// When you add a new *public, indexable content* page, add it here.
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

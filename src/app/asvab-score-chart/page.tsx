@@ -10,7 +10,7 @@ import BranchCompositeHeatmap from "@/components/scores-explained/BranchComposit
 export const metadata: Metadata = {
   title: "ASVAB Score Chart: AFQT Categories I–V + Branch Minimums (2026)",
   description:
-    "AFQT Category I = 93–99. II = 65–92. IIIA = 50–64. IIIB = 31–49. IV = 10–30. Branch minimums: Army 31, Marines 32, Navy 35, Air Force/Space Force 36, Coast Guard 32. GED floors are higher.",
+    "AFQT Category I = 93–99. II = 65–92. IIIA = 50–64. IIIB = 31–49. IV = 10–30. Branch minimums: Army 31, Marines 32, Navy 31, Air Force/Space Force 36, Coast Guard 32. GED floors are higher.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-score-chart",
   },
@@ -131,7 +131,7 @@ export default function ASVABScoreChartPage() {
             65–92. IIIA = 50–64. IIIB = 31–49. IV = 10–30. V = 1–9
             (disqualified).{" "}
             <strong>2026 branch minimum AFQT (diploma):</strong> Army 31,
-            Marines 32, Navy 35, Air Force/Space Force 36, Coast Guard 32.
+            Marines 32, Navy 31, Air Force/Space Force 36, Coast Guard 32.
             GED applicants face higher floors (typically 50) plus per-branch
             quota caps. Line scores (Army 10 composites, Air Force MAGE,
             Navy rating combos, Marines GT/EL/MM/CL/ST) determine which
@@ -590,7 +590,7 @@ export default function ASVABScoreChartPage() {
           Read the chart from bottom to top to see how each score threshold opens new doors.
         </p>
         <p className="text-text-secondary">
-          At 31, the Army door opens. At 32, the Marines and Coast Guard join. At 35, the Navy. At 36, the Air Force and Space Force. At 50, enlistment bonuses and most job classifications unlock. At 65, you qualify for virtually everything. At 93, you enter Category I and elite programs like Navy Nuclear and crypto linguist actively recruit you.
+          At 31, the Army and Navy doors open. At 32, the Marines and Coast Guard join. At 36, the Air Force and Space Force. At 50, enlistment bonuses and most job classifications unlock. At 65, you qualify for virtually everything. At 93, you enter Category I and elite programs like Navy Nuclear and crypto linguist actively recruit you.
         </p>
         <p className="text-text-secondary">
           Space Force shows &ldquo;Competitive&rdquo; at 36–49 because it technically accepts a 36 with a diploma, but 85% of recruits score 50 or higher. Treat 50 as the practical minimum for Space Force.

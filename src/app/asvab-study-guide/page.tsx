@@ -602,7 +602,7 @@ export default function ASVABStudyGuidePage() {
                 {[
                   { branch: "Army", min: 31 },
                   { branch: "Marines", min: 32 },
-                  { branch: "Navy", min: 35 },
+                  { branch: "Navy", min: 31 },
                   { branch: "Air Force", min: 36 },
                   { branch: "Space Force", min: 36 },
                   { branch: "Coast Guard", min: 32 },

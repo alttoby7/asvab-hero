@@ -315,7 +315,7 @@ export default function AirForceAfqtCalculatorPage() {
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-accent">Target a lower-floor branch</p>
             <p className="mt-1 text-sm text-text-secondary">
-              Army (31), Marines (32), and Navy (35) all accept diploma
+              Army (31), Marines (32), and Navy (31) all accept diploma
               holders below the Air Force cutoff. Many airmen cross-train
               into aviation and cyber roles from other branches.
             </p>

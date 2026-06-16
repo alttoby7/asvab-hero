@@ -733,7 +733,7 @@ export default function BestASVABPracticeTestBookPage() {
 
         <p className="text-text-secondary">
           <strong>Best for:</strong> Recruits clearing enlistment minimums (Army
-          31, Navy 35, Marines 32, Air Force 36, Coast Guard 32, Space Force 36)
+          31, Navy 31, Marines 32, Air Force 36, Coast Guard 32, Space Force 36)
           who don&apos;t care about job placement. <strong>Skip if:</strong>{" "}
           You&apos;re targeting a specific MOS, rating, or AFSC, even
           tentatively.

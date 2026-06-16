@@ -60,7 +60,7 @@ export default function AfqtCalculatorPage() {
               name: "What AFQT score do I need to join the military?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Diploma minimums for 2026: Army 31, Marine Corps 32, Navy 35, Air Force 36, Space Force 36, Coast Guard 32. GED holders face higher floors in every branch.",
+                text: "Diploma minimums for 2026: Army 31, Marine Corps 32, Navy 31, Air Force 36, Space Force 36, Coast Guard 32. GED holders face higher floors in every branch.",
               },
             },
             {
@@ -161,7 +161,7 @@ export default function AfqtCalculatorPage() {
           <strong>2(VE) + AR + MK</strong> where VE = WK + PC, then the raw
           total is converted to a percentile using the 1997 Profile of American
           Youth (PAY97) norming table. Minimum to enlist with a diploma: Army
-          31, Marines 32, Navy 35, Air Force 36, Space Force 36, Coast Guard 32.
+          31, Marines 32, Navy 31, Air Force 36, Space Force 36, Coast Guard 32.
         </p>
       </VerifiedBlock>
 
@@ -343,7 +343,7 @@ export default function AfqtCalculatorPage() {
                 ["Army", "31", "50"],
                 ["Marine Corps", "32", "50"],
                 ["Coast Guard", "32", "50 (+15 college credits)"],
-                ["Navy", "35", "50 (+15 college credits)"],
+                ["Navy", "31", "50 (+15 college credits)"],
                 ["Air Force", "36", "65"],
                 ["Space Force", "36", "65"],
               ].map(([branch, diploma, ged]) => (
@@ -396,7 +396,7 @@ export default function AfqtCalculatorPage() {
             },
             {
               q: "What AFQT score do I need for each branch?",
-              a: "Diploma minimums for 2026: Army 31, Marine Corps 32, Navy 35, Air Force 36, Space Force 36, Coast Guard 32. GED minimums are higher and often require additional college credits (Navy and Coast Guard both require 15 semester hours).",
+              a: "Diploma minimums for 2026: Army 31, Marine Corps 32, Navy 31, Air Force 36, Space Force 36, Coast Guard 32. GED minimums are higher and often require additional college credits (Navy and Coast Guard both require 15 semester hours).",
             },
             {
               q: "Which 4 subtests count toward the AFQT?",

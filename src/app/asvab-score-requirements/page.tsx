@@ -122,7 +122,7 @@ export default function ASVABScoreRequirementsPage() {
 
         <AnswerBox>
           Minimum AFQT scores to enlist (high school diploma): Army{" "}
-          <strong>31</strong>, Navy <strong>35</strong>, Marine Corps{" "}
+          <strong>31</strong>, Navy <strong>31</strong>, Marine Corps{" "}
           <strong>32</strong>, Air Force <strong>36</strong>, Space Force{" "}
           <strong>36</strong>, Coast Guard <strong>32</strong> &mdash; GED
           holders generally need 50 or higher. These minimums only get you in the
@@ -240,8 +240,9 @@ export default function ASVABScoreRequirementsPage() {
         </p>
 
         <p className="text-text-secondary">
-          The Navy sits at 35, slightly above the Army and the most common
-          source of confusion in score tables. The Marine Corps requires 32 with
+          The Navy&apos;s diploma minimum is 31, the same as the Army, though
+          some score tables list 35 &mdash; the most common source of confusion
+          in branch comparisons. The Marine Corps requires 32 with
           a diploma but rarely accepts GED holders, capping them at 5% of annual
           enlistments. The Air Force and Space Force both require 36, the
           highest diploma-tier minimum among standard enlistment branches. The

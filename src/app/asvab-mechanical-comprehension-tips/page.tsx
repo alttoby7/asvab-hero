@@ -56,7 +56,7 @@ export default function ASVABMechanicalComprehensionTipsPage() {
               name: "Does Mechanical Comprehension count toward my AFQT score?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "No. The AFQT uses four subtests only: Word Knowledge, Paragraph Comprehension, Arithmetic Reasoning, and Mathematics Knowledge. MC affects composite line scores that determine job eligibility but has zero impact on your AFQT percentile. If your AFQT is below your branch minimum (Army 31, Marines 32, Navy 35, Air Force/Space Force 36, Coast Guard 32), fix that first before spending time on MC.",
+                text: "No. The AFQT uses four subtests only: Word Knowledge, Paragraph Comprehension, Arithmetic Reasoning, and Mathematics Knowledge. MC affects composite line scores that determine job eligibility but has zero impact on your AFQT percentile. If your AFQT is below your branch minimum (Army 31, Marines 32, Navy 31, Air Force/Space Force 36, Coast Guard 32), fix that first before spending time on MC.",
               },
             },
             {
@@ -859,7 +859,7 @@ export default function ASVABMechanicalComprehensionTipsPage() {
               Comprehension, Arithmetic Reasoning, and Mathematics Knowledge. MC
               affects composite line scores that determine job eligibility but
               has zero impact on your AFQT percentile. If your AFQT is below
-              your branch minimum (Army 31, Marines 32, Navy 35, Air
+              your branch minimum (Army 31, Marines 32, Navy 31, Air
               Force/Space Force 36, Coast Guard 32), fix that first before
               spending time on MC.
             </p>
