@@ -109,6 +109,30 @@ export function captureAttribution(): void {
 }
 
 /**
+ * Durable first-touch fields for signup user-metadata → profiles columns.
+ * Keys match migration 0051 / handle_new_user() (first_utm_*, first_referrer_class,
+ * first_landing_path) so the on-auth trigger can persist them atomically. Safe on
+ * the server (returns {}). Never throws.
+ */
+export function getFirstTouchSignupFields(): Record<string, string> {
+  if (typeof window === "undefined") return {};
+  try {
+    const raw = localStorage.getItem(FIRST_TOUCH_KEY);
+    if (!raw) return {};
+    const ft = JSON.parse(raw) as Partial<FirstTouch>;
+    const out: Record<string, string> = {};
+    if (ft.utm_source) out.first_utm_source = ft.utm_source;
+    if (ft.utm_medium) out.first_utm_medium = ft.utm_medium;
+    if (ft.utm_campaign) out.first_utm_campaign = ft.utm_campaign;
+    if (ft.referrer_class) out.first_referrer_class = ft.referrer_class;
+    if (ft.landing_path) out.first_landing_path = ft.landing_path;
+    return out;
+  } catch {
+    return {};
+  }
+}
+
+/**
  * Flat, low-cardinality params to merge into a conversion event's payload.
  * Safe on the server (returns {}). Never throws.
  */

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
+import { getFirstTouchSignupFields } from "@/lib/attribution";
 
 export default function SignupPage() {
   const [email, setEmail] = useState("");
@@ -83,12 +84,17 @@ export default function SignupPage() {
       /* ignore, fall back to /app/home */
     }
 
+    // Durable first-touch (utm / referrer class / landing path) for per-user
+    // source attribution. Persisted by the handle_new_user() trigger (migration
+    // 0051) alongside signup_source. Best-effort; empty when no first_touch.
+    const firstTouch = getFirstTouchSignupFields();
+
     const { error: authError } = await supabase.auth.signUp({
       email,
       password,
       options: {
         emailRedirectTo: `${window.location.origin}${nextPath}`,
-        data: { signup_source: resolvedSource },
+        data: { signup_source: resolvedSource, ...firstTouch },
       },
     });
 
