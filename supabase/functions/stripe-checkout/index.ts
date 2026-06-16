@@ -114,7 +114,7 @@ Deno.serve(async (req) => {
 
     // Build checkout params. Passes are one-time payments; monthly/annual are
     // subscriptions (and monthly gets a first-time 7-day trial).
-    const checkoutValue = TIER_VALUE[tier] ?? "9.99";
+    const checkoutValue = TIER_VALUE[tier] ?? "14.99";
     const checkoutParams: Record<string, unknown> = {
       mode: isPass ? "payment" : "subscription",
       customer: customerId,

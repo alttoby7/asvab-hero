@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useSession } from "@/hooks/useSession";
-import { useEntitlement } from "@/hooks/useEntitlement";
+import { useEntitlement, isPassTier, proTierLabel } from "@/hooks/useEntitlement";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -102,6 +102,8 @@ function BillingInner() {
   if (!session) return null;
 
   const { isPro, billingStatus, proTier, proUntil } = entitlement;
+  const isPass = isPassTier(proTier);
+  const tierLabel = proTierLabel(proTier);
 
   return (
     <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6">
@@ -131,7 +133,7 @@ function BillingInner() {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <span className="rounded-full bg-success-dim px-3 py-0.5 text-sm font-semibold text-success uppercase tracking-wide">
-                Pro {proTier ?? ""}
+                Pro{tierLabel ? ` · ${tierLabel}` : ""}
               </span>
               {billingStatus === "past_due" && (
                 <span className="rounded-full bg-danger-dim px-3 py-0.5 text-xs font-semibold text-danger">
@@ -143,12 +145,14 @@ function BillingInner() {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <p className="text-xs text-text-tertiary uppercase tracking-wide mb-0.5">Tier</p>
-                <p className="text-sm text-text-primary font-medium capitalize">
-                  {proTier ?? ", "}
+                <p className="text-sm text-text-primary font-medium">
+                  {tierLabel || "—"}
                 </p>
               </div>
               <div>
-                <p className="text-xs text-text-tertiary uppercase tracking-wide mb-0.5">Renews</p>
+                <p className="text-xs text-text-tertiary uppercase tracking-wide mb-0.5">
+                  {proTier === "lifetime" ? "Access" : isPass ? "Expires" : "Renews"}
+                </p>
                 <p className="text-sm text-text-primary font-medium">
                   {proTier === "lifetime" ? "Never (lifetime)" : formatDate(proUntil)}
                 </p>
@@ -161,7 +165,7 @@ function BillingInner() {
               </div>
             )}
 
-            {proTier !== "lifetime" && (
+            {proTier !== "lifetime" && !isPass && (
               <button
                 onClick={handleManageSubscription}
                 disabled={portalLoading}
@@ -169,6 +173,17 @@ function BillingInner() {
               >
                 {portalLoading ? "Opening portal…" : "Manage in Stripe"}
               </button>
+            )}
+
+            {isPass && (
+              <p className="text-sm text-text-secondary">
+                This is a one-time pass — there&apos;s no subscription to manage and
+                nothing auto-renews. Your access ends on the expiry date above.{" "}
+                <Link href="/upgrade" className="text-accent hover:underline">
+                  Extend or buy another pass
+                </Link>{" "}
+                any time.
+              </p>
             )}
           </div>
         ) : (

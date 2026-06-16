@@ -87,7 +87,7 @@ Six template bodies for the conversion-boost + automated-welcome ship.
 ```html
 <p>Hi there,</p>
 
-<p>Quick heads-up: your 7-day ASVAB Hero Pro trial ends in 3 days. After that, your card gets charged $9.99 for the next month.</p>
+<p>Quick heads-up: your 7-day ASVAB Hero Pro trial ends in 3 days. After that, your card gets charged $14.99 for the next month.</p>
 
 <p>Things you have unlocked during the trial:</p>
 <ul>
@@ -159,7 +159,7 @@ Six template bodies for the conversion-boost + automated-welcome ship.
   <li>Re-take the diagnostic on day 6 to see your score move</li>
 </ol>
 
-<p>If Pro is helping, do nothing. Your card runs on day 8 at $9.99 and you keep going. If it is not the right fit, cancel any time at <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a>.</p>
+<p>If Pro is helping, do nothing. Your card runs on day 8 at $14.99 and you keep going. If it is not the right fit, cancel any time at <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a>.</p>
 
 <p>Reply with your branch and target test date. I read every reply.</p>
 

@@ -90,7 +90,7 @@ export default function TestimonialWall() {
               <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium text-text-tertiary">
                 <span>Free to start · no card</span>
                 <span className="text-navy-border">·</span>
-                <span>7-day money-back guarantee on Pro</span>
+                <span>Money-back guarantee on Pro</span>
                 <span className="text-navy-border">·</span>
                 <a
                   href="/the-science"

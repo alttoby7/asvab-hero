@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "ASVAB Hero pricing, free calculator for everyone, Pro subscription for unlimited practice tests and study tools.",
+    "ASVAB Hero pricing, free calculator for everyone, Pro access for unlimited practice tests and study tools, with a one-time 90-Day Pass or month-to-month.",
   alternates: {
     canonical: "https://asvabhero.com/pricing",
   },
@@ -21,8 +21,8 @@ const FAQ = [
     a: "Solo operator, no overhead. Other sites charge $30-70/mo because they have staff and investors to pay. I want this affordable for recruits and parents who are already stressed about costs.",
   },
   {
-    q: "Can I cancel anytime?",
-    a: "Yes -- cancel anytime from your account billing page. You keep Pro access through the end of your paid period, then it lapses to Free. No pressure.",
+    q: "Do I have to deal with a subscription?",
+    a: "Only if you want to. The 90-Day Pass is a one-time payment -- it just expires after 90 days, nothing to cancel and no auto-renew. If you pick the $14.99/month option instead, you can cancel anytime from your billing page and keep access through the end of the paid period.",
   },
   {
     q: "Do I need Pro if I already know my weak areas?",
