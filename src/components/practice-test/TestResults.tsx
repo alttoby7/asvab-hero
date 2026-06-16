@@ -19,7 +19,11 @@ import {
 } from "@/lib/test-scorer";
 import { ALL_SUBTESTS } from "@/types";
 import { getAFQTCategoryDescription } from "@/lib/score-calculator";
-import { recommendNextStep, weakTopicStudyGuides } from "@/lib/practice/recommender";
+import {
+  recommendNextStep,
+  weakTopicStudyGuides,
+  type WeakTopicGuide,
+} from "@/lib/practice/recommender";
 import { trackEvent } from "@/lib/analytics";
 import type { PrepMode } from "@/lib/prep-mode";
 import TopicBreakdown from "./TopicBreakdown";
@@ -115,6 +119,50 @@ function ScoreCircle({
         <span className="text-xs text-text-tertiary">{sublabel}</span>
       )}
     </div>
+  );
+}
+
+/**
+ * Free concept-guide links for the topics the user just missed. Shared by the
+ * authed results breakdown (full ranked list) and the anonymous results bridge
+ * (one teaser only, so the ranked weak-topic reveal stays a signup-gated
+ * promise). Same `results_study_guide_click` beacon fires from both.
+ */
+function ResultsStudyGuideLinks({
+  guides,
+  heading,
+  body,
+}: {
+  guides: WeakTopicGuide[];
+  heading: string;
+  body: string;
+}) {
+  if (guides.length === 0) return null;
+  return (
+    <section className="rounded-2xl border border-navy-border bg-navy-light p-6">
+      <h3 className="mb-1 font-display text-lg font-bold text-text-primary">
+        {heading}
+      </h3>
+      <p className="mb-4 text-sm text-text-secondary">{body}</p>
+      <ul className="space-y-2">
+        {guides.map((g) => (
+          <li key={g.topicId}>
+            <Link
+              href={g.href}
+              onClick={() =>
+                trackEvent("results_study_guide_click", {
+                  topic_id: g.topicId,
+                  href: g.href,
+                })
+              }
+              className="text-sm text-text-primary underline-offset-2 transition-colors hover:text-accent hover:underline"
+            >
+              {g.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
 
@@ -239,11 +287,21 @@ export default function TestResults({
          localStorage and migrated into the new account on first authed app load
          (AppLayout → syncLocalHistoryToRemote), so nothing is lost. */}
       {!userId && (
-        <DiagnosticResultsBridge
-          afqt={isAfqtMode ? afqtEstimate.score : primary?.score ?? afqtEstimate.score}
-          questionCount={questions.length}
-          isAfqtMode={isAfqtMode}
-        />
+        <>
+          <DiagnosticResultsBridge
+            afqt={isAfqtMode ? afqtEstimate.score : primary?.score ?? afqtEstimate.score}
+            questionCount={questions.length}
+            isAfqtMode={isAfqtMode}
+          />
+          {/* One free guide to seed the read->drill loop for anon visitors. The
+             full ranked weak-topic list stays a signup-gated promise, so we show
+             a single teaser and point the rest behind the free account. */}
+          <ResultsStudyGuideLinks
+            guides={studyGuides.slice(0, 1)}
+            heading="Start with one free study guide"
+            body="Get a head start with one concept walkthrough now. Create a free account to unlock your full ranked weak-topic breakdown and study plan."
+          />
+        </>
       )}
 
       {/* Topic breakdown + subtest scores + next step, gated to authed users. */}
@@ -268,34 +326,11 @@ export default function TestResults({
           <NextStepCard recommendation={recommendation} />
 
           {/* Free study guides for the weakest topics, always available. */}
-          {studyGuides.length > 0 && (
-            <section className="rounded-2xl border border-navy-border bg-navy-light p-6">
-              <h3 className="mb-1 font-display text-lg font-bold text-text-primary">
-                Study guides for your weakest topics
-              </h3>
-              <p className="mb-4 text-sm text-text-secondary">
-                Free concept walkthroughs for the topics you missed most.
-              </p>
-              <ul className="space-y-2">
-                {studyGuides.map((g) => (
-                  <li key={g.topicId}>
-                    <Link
-                      href={g.href}
-                      onClick={() =>
-                        trackEvent("results_study_guide_click", {
-                          topic_id: g.topicId,
-                          href: g.href,
-                        })
-                      }
-                      className="text-sm text-text-primary underline-offset-2 transition-colors hover:text-accent hover:underline"
-                    >
-                      {g.title}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          )}
+          <ResultsStudyGuideLinks
+            guides={studyGuides}
+            heading="Study guides for your weakest topics"
+            body="Free concept walkthroughs for the topics you missed most."
+          />
         </>
       )}
 
