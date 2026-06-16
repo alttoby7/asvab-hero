@@ -64,6 +64,7 @@ export default function CalculatorWeakSubtestGuides({ scores, afqt }: Props) {
                     href={g.href}
                     onClick={() =>
                       trackEvent("calculator_study_guide_click", {
+                        topic_id: g.topicId,
                         subtest: b.subtest,
                         href: g.href,
                         afqt,

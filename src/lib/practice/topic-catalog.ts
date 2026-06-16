@@ -53,9 +53,13 @@ export function topicsForSubtest(subtest: AsvabSubtest): Topic[] {
 export function studyGuidesForSubtest(
   subtest: AsvabSubtest,
   limit = 3
-): { href: string; label: string }[] {
+): { href: string; label: string; topicId: string }[] {
   return topicsForSubtest(subtest)
     .filter((t) => t.study_guide_href)
     .slice(0, limit)
-    .map((t) => ({ href: t.study_guide_href as string, label: t.title }));
+    .map((t) => ({
+      href: t.study_guide_href as string,
+      label: t.title,
+      topicId: t.id,
+    }));
 }
