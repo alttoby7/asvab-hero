@@ -38,28 +38,50 @@ Deno.serve(async (req) => {
     }
 
     const tier = body.tier;
+    // One-time "pass" tiers grant time-boxed Pro (mode: payment); the others
+    // are recurring subscriptions. pass_days drives pro_until in the webhook.
+    const PASS_DAYS: Record<string, number> = { pass90: 90, retaker: 120 };
+    const TIER_VALUE: Record<string, string> = {
+      monthly: "14.99",
+      annual: "49.99",
+      pass90: "59.00",
+      retaker: "119.00",
+    };
+    const isPass = tier === "pass90" || tier === "retaker";
     const priceId =
       tier === "monthly"
         ? Deno.env.get("ASVABHERO_STRIPE_PRICE_MONTHLY")
         : tier === "annual"
           ? Deno.env.get("ASVABHERO_STRIPE_PRICE_ANNUAL")
-          : null;
+          : tier === "pass90"
+            ? Deno.env.get("ASVABHERO_STRIPE_PRICE_PASS90")
+            : tier === "retaker"
+              ? Deno.env.get("ASVABHERO_STRIPE_PRICE_RETAKER")
+              : null;
     if (!priceId) return json(400, { error: "invalid_tier" });
 
     const { data: profile } = await supabaseAdmin
       .from("profiles")
-      .select("email,stripe_customer_id,stripe_subscription_id,billing_status,signup_source")
+      .select("email,stripe_customer_id,stripe_subscription_id,billing_status,pro_until,signup_source")
       .eq("user_id", userId)
       .single();
     if (!profile) return json(404, { error: "profile_not_found" });
-    // Trial rules:
-    //   - Active/lifetime users are blocked from checkout entirely (already Pro).
+    // Trial / re-purchase rules:
+    //   - Users who are STILL Pro are blocked from checkout (already Pro).
+    //     "Still Pro" = lifetime, or active with pro_until in the future. A
+    //     lapsed pass leaves billing_status='active' but pro_until in the past
+    //     (nothing flips it back at expiry), so we must check the date or a
+    //     returning pass buyer would be wrongly blocked from buying again.
     //   - First-time monthly subscribers get a 7-day card-required trial via
     //     `subscription_data[trial_period_days]=7` below.
     //   - Returning users (any prior `stripe_subscription_id`, including canceled)
     //     get charged immediately at checkout — one trial per user, period.
-    //   - Annual tier never gets a trial; direct charge.
-    if (profile.billing_status === "active" || profile.billing_status === "lifetime") {
+    //   - Annual + pass tiers never get a trial; direct charge.
+    const stillPro =
+      profile.billing_status === "lifetime" ||
+      (profile.billing_status === "active" &&
+        (!profile.pro_until || new Date(profile.pro_until as string) > new Date()));
+    if (stillPro) {
       return json(409, { error: "already_pro" });
     }
 
@@ -90,35 +112,61 @@ Deno.serve(async (req) => {
       ? `${SITE_URL}/upgrade?status=cancelled&pcid=${pcid}`
       : `${SITE_URL}/upgrade?status=cancelled`;
 
-    // Build checkout params; conditionally add trial only for first-time MONTHLY subs.
+    // Build checkout params. Passes are one-time payments; monthly/annual are
+    // subscriptions (and monthly gets a first-time 7-day trial).
+    const checkoutValue = TIER_VALUE[tier] ?? "9.99";
     const checkoutParams: Record<string, unknown> = {
-      mode: "subscription",
+      mode: isPass ? "payment" : "subscription",
       customer: customerId,
       "line_items[0][price]": priceId,
       "line_items[0][quantity]": 1,
       // Carry plan + list value so the client can fire an accurate GA4 purchase
       // event on the success return (no Measurement Protocol secret needed).
-      success_url: `${SITE_URL}/onboarding?welcome=1&plan=${tier}&value=${tier === "annual" ? "49.99" : "9.99"}`,
+      success_url: `${SITE_URL}/onboarding?welcome=1&plan=${tier}&value=${checkoutValue}`,
       cancel_url: cancelUrl,
       allow_promotion_codes: "true",
-      "subscription_data[metadata][user_id]": userId,
       "metadata[user_id]": userId,
     };
 
-    // Durable attribution: propagate signup_source onto BOTH the checkout
-    // session metadata (one-shot) and the subscription metadata (durable
-    // across renewals). stripe-webhook reads subscription.metadata, so this
-    // is the channel that survives long-tail conversions.
+    if (isPass) {
+      // One-time pass: the webhook reads these off checkout.session.completed
+      // (no subscription exists) to set billing_status='active', the pro_tier,
+      // and pro_until = now + pass_days.
+      checkoutParams["metadata[pass_type]"] = tier;
+      checkoutParams["metadata[pass_days]"] = String(PASS_DAYS[tier]);
+      // Durable copy on the PaymentIntent in case the session object is ever
+      // re-fetched without metadata.
+      checkoutParams["payment_intent_data[metadata][user_id]"] = userId;
+      checkoutParams["payment_intent_data[metadata][pass_type]"] = tier;
+      checkoutParams["payment_intent_data[metadata][pass_days]"] = String(PASS_DAYS[tier]);
+    } else {
+      // Subscription metadata (durable across renewals; the webhook reads
+      // subscription.metadata for long-tail conversions).
+      checkoutParams["subscription_data[metadata][user_id]"] = userId;
+    }
+
+    // Durable attribution: propagate signup_source onto the session metadata
+    // (one-shot) and, for subs, the subscription metadata (durable across
+    // renewals). stripe-webhook reads subscription.metadata for subs and
+    // session.metadata for passes.
     if (profile.signup_source) {
       checkoutParams["metadata[signup_source]"] = profile.signup_source;
-      checkoutParams["subscription_data[metadata][signup_source]"] = profile.signup_source;
+      if (isPass) {
+        checkoutParams["payment_intent_data[metadata][signup_source]"] = profile.signup_source;
+      } else {
+        checkoutParams["subscription_data[metadata][signup_source]"] = profile.signup_source;
+      }
     }
 
     // Paywall pcid into metadata (mirrors the signup_source propagation), so
     // the journey is recoverable from Stripe even if URL/sessionStorage is lost.
     if (pcid) {
       checkoutParams["metadata[paywall_context_id]"] = pcid;
-      checkoutParams["subscription_data[metadata][paywall_context_id]"] = pcid;
+      if (isPass) {
+        checkoutParams["payment_intent_data[metadata][paywall_context_id]"] = pcid;
+      } else {
+        checkoutParams["subscription_data[metadata][paywall_context_id]"] = pcid;
+      }
     }
 
     const isFirstTimeSubscriber = !profile.stripe_subscription_id;

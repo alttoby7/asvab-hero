@@ -3,7 +3,7 @@
 import { Suspense, useEffect, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import PricingPlans from "@/components/PricingPlans";
+import PricingPlans, { type Tier } from "@/components/PricingPlans";
 import BrandHero from "@/components/BrandHero";
 import ProUpsellCard from "@/components/ProUpsellCard";
 import WhySurvey from "@/components/feedback/WhySurvey";
@@ -35,6 +35,11 @@ function UpgradeContent() {
   const from = searchParams.get("from") as FromParam;
   const status = searchParams.get("status");
   const isCancelled = status === "cancelled";
+  // Honor ?tier= (set by the signup return path) so users land on the plan
+  // they picked before being asked to create an account.
+  const tierParam = searchParams.get("tier");
+  const defaultTier: Tier =
+    tierParam === "monthly" || tierParam === "retaker" ? tierParam : "pass90";
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
 
@@ -178,7 +183,7 @@ function UpgradeContent() {
 
       {/* Plan grid */}
       <div ref={pricingRef}>
-        <PricingPlans defaultBilling="annual" source={from ?? "upgrade_page"} />
+        <PricingPlans defaultTier={defaultTier} source={from ?? "upgrade_page"} />
       </div>
 
       {/* Tight 2-question FAQ */}

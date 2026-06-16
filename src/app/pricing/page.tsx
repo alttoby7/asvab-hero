@@ -47,16 +47,24 @@ export default function PricingPage() {
           offers: [
             {
               "@type": "Offer",
-              name: "Pro Monthly",
-              price: "9.99",
+              name: "90-Day Test Pass",
+              price: "59.00",
               priceCurrency: "USD",
               url: "https://asvabhero.com/pricing",
               availability: "https://schema.org/InStock",
             },
             {
               "@type": "Offer",
-              name: "Pro Annual",
-              price: "49.99",
+              name: "Pro Monthly",
+              price: "14.99",
+              priceCurrency: "USD",
+              url: "https://asvabhero.com/pricing",
+              availability: "https://schema.org/InStock",
+            },
+            {
+              "@type": "Offer",
+              name: "Retaker Pass",
+              price: "119.00",
               priceCurrency: "USD",
               url: "https://asvabhero.com/pricing",
               availability: "https://schema.org/InStock",
@@ -80,11 +88,12 @@ export default function PricingPage() {
           Simple, transparent pricing
         </h1>
         <p className="mt-3 text-text-secondary">
-          The score-moving core is free, no card. Pro removes every limit.
+          The score-moving core is free, no card. Pro removes every limit, and
+          the 90-Day Pass is one payment with nothing to cancel.
         </p>
       </div>
 
-      <PricingPlans defaultBilling="annual" source="pricing_page" />
+      <PricingPlans defaultTier="pass90" source="pricing_page" />
 
       <div className="mt-20">
         <h2 className="font-display text-2xl font-bold text-text-primary text-center mb-8">

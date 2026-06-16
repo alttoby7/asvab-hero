@@ -13,9 +13,65 @@ import {
 } from "@/lib/analytics";
 import Link from "next/link";
 
-const MONTHLY_PRICE_ID = "price_1TRIUPDjRScowBLlHUFX2nzc";
-const ANNUAL_PRICE_ID = "price_1TRIUPDjRScowBLlwZK8YuyC";
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+
+// Pricing model (2026-06): pass-led, not subscription-led.
+//   - 90-Day Test Pass ($59, one-time) is the loud default — matches the
+//     2-4 week study window and removes the churn/cancel event.
+//   - Monthly ($14.99) stays as the flexibility option.
+//   - Retaker Pass ($119, one-time, 120 days) carries a pass guarantee for the
+//     failed-AFQT / 30-day-clock segment; premium WTP is captured HERE, not on
+//     the volume pass.
+// `tier` is the value posted to the stripe-checkout edge function, which maps
+// it to a Stripe price id + mode (subscription vs payment). Real prices live in
+// Stripe; the strings below are display copy only.
+export type Tier = "pass90" | "monthly" | "retaker";
+
+type TierConfig = {
+  key: Tier;
+  label: string;
+  price: string;
+  unit: string;
+  tagline: string;
+  badge?: string;
+  cta: string;
+  note: string | null;
+};
+
+const TIERS: Record<Tier, TierConfig> = {
+  pass90: {
+    key: "pass90",
+    label: "90-Day Pass",
+    price: "$59",
+    unit: "one-time",
+    tagline:
+      "Full Pro access for 90 days — enough to study and take the test, with nothing to cancel.",
+    badge: "Best for test day",
+    cta: "Get my 90-Day Pass",
+    note: "One-time payment. No subscription, no auto-renew.",
+  },
+  monthly: {
+    key: "monthly",
+    label: "Monthly",
+    price: "$14.99",
+    unit: "/ month",
+    tagline:
+      "Month-to-month flexibility if you're not sure of your test date yet.",
+    cta: "Start 7-day free trial",
+    note: "Card required. $14.99/mo after the 7-day trial unless cancelled. Cancel anytime in Account Settings.",
+  },
+  retaker: {
+    key: "retaker",
+    label: "Retaker Pass",
+    price: "$119",
+    unit: "one-time",
+    tagline:
+      "Failed the AFQT or on a retest clock? 120 days of full Pro, backed by a money-back pass guarantee.",
+    badge: "Pass guarantee",
+    cta: "Get the Retaker Pass",
+    note: "One-time payment, 120 days of access. Money-back guarantee if you don't improve — see guarantee terms.",
+  },
+};
 
 const FREE_FEATURES = [
   "Full diagnostic + your saved score report",
@@ -34,34 +90,34 @@ const PRO_FEATURES = [
 ];
 
 interface PricingPlansProps {
-  defaultBilling?: "monthly" | "annual";
+  defaultTier?: Tier;
   source?: string;
 }
 
 export default function PricingPlans({
-  defaultBilling = "annual",
+  defaultTier = "pass90",
   source,
 }: PricingPlansProps) {
   const router = useRouter();
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
-  const [billing, setBilling] = useState<"monthly" | "annual">(defaultBilling);
+  const [tier, setTier] = useState<Tier>(defaultTier);
   const [checkoutLoading, setCheckoutLoading] = useState(false);
   const [checkoutError, setCheckoutError] = useState<string | null>(null);
 
   const isLoading = sessionLoading || entitlementLoading;
+  const active = TIERS[tier];
 
-  function toggleBilling(to: "monthly" | "annual") {
-    setBilling(to);
+  function selectTier(to: Tier) {
+    setTier(to);
     trackEvent(PaywallEvents.PlanToggled, { to });
   }
 
   async function handleUpgradeClick() {
     if (isLoading) return;
 
-    // Not logged in, send to signup
+    // Not logged in, send to signup and come back to the chosen tier.
     if (!session) {
-      const tier = billing;
       const returnPath = source
         ? `/upgrade?tier=${tier}&from=${source}`
         : `/upgrade?tier=${tier}`;
@@ -69,46 +125,36 @@ export default function PricingPlans({
       return;
     }
 
-    // Already Pro, no-op (button is disabled)
+    // Already Pro, no-op (button is disabled).
     if (entitlement.isPro) return;
 
     setCheckoutLoading(true);
     setCheckoutError(null);
 
     trackEvent(FunnelEvents.CheckoutStart, {
-      tier: billing,
+      tier,
       from: source ?? "unknown",
     });
-    // Additive first-party event.
     trackEvent(PaywallEvents.CheckoutClick, {
-      tier: billing,
+      tier,
       from: source ?? "unknown",
     });
 
     try {
       const returnPath = "/account/billing";
-      const tier = billing;
-      // Carry pcid into Stripe so the journey is recoverable across the
-      // round-trip even if URL/sessionStorage is lost (additive body field;
-      // stripe-checkout mirrors it into subscription metadata + cancel_url).
       const paywallContextId = getPaywallContextId();
-      const res = await fetch(
-        `${SUPABASE_URL}/functions/v1/stripe-checkout`,
-        {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${session.access_token}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            tier,
-            returnPath,
-            ...(paywallContextId
-              ? { paywall_context_id: paywallContextId }
-              : {}),
-          }),
-        }
-      );
+      const res = await fetch(`${SUPABASE_URL}/functions/v1/stripe-checkout`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${session.access_token}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          tier,
+          returnPath,
+          ...(paywallContextId ? { paywall_context_id: paywallContextId } : {}),
+        }),
+      });
 
       if (!res.ok) {
         const text = await res.text();
@@ -117,16 +163,16 @@ export default function PricingPlans({
 
       const { url } = await res.json();
       if (!url) throw new Error("No checkout URL returned");
-      trackEvent(PaywallEvents.CheckoutSessionCreated, { tier: billing });
-      trackEvent(PaywallEvents.CheckoutRedirected, { tier: billing });
-      // The redirect leaves the page, beacon the queue synchronously first.
-      // flush() swallows all errors; never blocks the redirect.
+      trackEvent(PaywallEvents.CheckoutSessionCreated, { tier });
+      trackEvent(PaywallEvents.CheckoutRedirected, { tier });
       flush(true);
       window.location.href = url;
     } catch (err: unknown) {
-      trackEvent(PaywallEvents.CheckoutReturnedError, { tier: billing });
+      trackEvent(PaywallEvents.CheckoutReturnedError, { tier });
       setCheckoutError(
-        err instanceof Error ? err.message : "Something went wrong. Please try again."
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please try again.",
       );
       setCheckoutLoading(false);
     }
@@ -146,33 +192,25 @@ export default function PricingPlans({
     );
   }
 
+  const tierOrder: Tier[] = ["pass90", "monthly", "retaker"];
+
   return (
     <div className="w-full">
-      {/* Billing toggle */}
-      <div className="flex items-center justify-center gap-3 mb-8">
-        <button
-          onClick={() => toggleBilling("monthly")}
-          className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
-            billing === "monthly"
-              ? "bg-navy-lighter text-text-primary"
-              : "text-text-secondary hover:text-text-primary"
-          }`}
-        >
-          Monthly
-        </button>
-        <button
-          onClick={() => toggleBilling("annual")}
-          className={`flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition-colors ${
-            billing === "annual"
-              ? "bg-navy-lighter text-text-primary"
-              : "text-text-secondary hover:text-text-primary"
-          }`}
-        >
-          Yearly
-          <span className="rounded-full bg-accent/20 px-2 py-0.5 text-xs font-bold text-accent">
-            Most popular
-          </span>
-        </button>
+      {/* Tier selector */}
+      <div className="mx-auto mb-8 flex max-w-md items-center justify-center gap-2 rounded-xl border border-navy-border bg-navy-light p-1">
+        {tierOrder.map((t) => (
+          <button
+            key={t}
+            onClick={() => selectTier(t)}
+            className={`flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+              tier === t
+                ? "bg-accent text-white"
+                : "text-text-secondary hover:text-text-primary"
+            }`}
+          >
+            {TIERS[t].label}
+          </button>
+        ))}
       </div>
 
       {/* Plan grid */}
@@ -204,43 +242,26 @@ export default function PricingPlans({
           </Link>
         </div>
 
-        {/* Pro plan */}
+        {/* Pro plan (selected tier) */}
         <div className="relative rounded-2xl border-2 border-accent bg-navy-light p-8">
           <div className="absolute -top-3 left-6 rounded-full bg-accent px-3 py-0.5 text-xs font-bold text-white">
             PRO
           </div>
-          <h2 className="font-display text-xl font-bold text-text-primary">Pro</h2>
+          {active.badge && (
+            <div className="absolute -top-3 right-6 rounded-full bg-navy-lighter px-3 py-0.5 text-xs font-bold text-accent">
+              {active.badge}
+            </div>
+          )}
+          <h2 className="font-display text-xl font-bold text-text-primary">
+            Pro · {active.label}
+          </h2>
           <div className="mt-2">
-            {billing === "monthly" ? (
-              <>
-                <span className="font-mono text-4xl font-bold text-accent">$9.99</span>
-                <span className="text-text-tertiary"> / month</span>
-              </>
-            ) : (
-              <>
-                <span className="font-mono text-4xl font-bold text-accent">$49.99</span>
-                <span className="text-text-tertiary"> / year</span>
-              </>
-            )}
+            <span className="font-mono text-4xl font-bold text-accent">
+              {active.price}
+            </span>
+            <span className="text-text-tertiary"> {active.unit}</span>
           </div>
-          {billing === "annual" && (
-            <p className="mt-1 text-xs font-medium text-accent">Save 58% vs monthly</p>
-          )}
-          {billing === "monthly" && (
-            <p className="mt-1 text-xs text-text-tertiary">
-              or{" "}
-              <button
-                onClick={() => setBilling("annual")}
-                className="underline text-accent hover:no-underline"
-              >
-                $49.99/year, save 58%
-              </button>
-            </p>
-          )}
-          <p className="mt-4 text-sm text-text-secondary">
-            Go faster: unlimited practice and full-length, timed sims for the
-            final push to your target score.
-          </p>
+          <p className="mt-4 text-sm text-text-secondary">{active.tagline}</p>
           <ul className="mt-6 space-y-3">
             {PRO_FEATURES.map((f) => (
               <li key={f} className="flex items-start gap-2 text-sm">
@@ -286,18 +307,14 @@ export default function PricingPlans({
                   </svg>
                   Loading checkout...
                 </span>
-              ) : billing === "monthly" ? (
-                "Start 7-day free trial, then $9.99/mo"
               ) : (
-                "Upgrade to Pro"
+                active.cta
               )}
             </button>
           )}
 
-          {!entitlement.isPro && billing === "monthly" && (
-            <p className="mt-2 text-xs text-text-tertiary">
-              Card required. Charged $9.99/mo after trial unless cancelled. Cancel anytime in Account Settings.
-            </p>
+          {!entitlement.isPro && active.note && (
+            <p className="mt-2 text-xs text-text-tertiary">{active.note}</p>
           )}
 
           {checkoutError && (
@@ -306,9 +323,10 @@ export default function PricingPlans({
         </div>
       </div>
 
-      {/* Refund footnote */}
+      {/* Guarantee footnote */}
       <p className="mt-6 text-center text-xs text-text-tertiary">
-        7-day money-back guarantee, no questions asked.
+        Every plan is backed by a money-back guarantee. The calculators and your
+        daily adaptive block stay free, forever.
       </p>
     </div>
   );
