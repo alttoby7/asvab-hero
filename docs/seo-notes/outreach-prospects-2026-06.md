@@ -19,15 +19,17 @@ Status legend: `todo` (find contact) · `queued` (contact found, not sent) · `s
 
 ## Tier 1 — real school/library/JROTC resource pages (DR 67–85) ⭐ do first
 
-| Org / page | DR | Their page (where ASVAB Hero would go) | Currently links | Pitch | Status |
-|---|---|---|---|---|---|
-| New London HS Library (WI) — LibGuide "Prepare" | 85 | `newlondon-wi.libguides.com/c.php?g=228521&p=5231892` | asvabtutor.com | `/counselor-resources` + calculator (LibGuides = #1 channel; find the librarian on the guide) | todo |
-| Parsippany Hills HS (NJ) — ASVAB page | 75 | `parsippanyhhs.ss9.sharpschool.com/...pageId=9972808` | asvabtutor practice tests | embed calculator | todo |
-| Provine HS JROTC (MS) | 75 | `ms01910533.schoolwires.net/ProvineJROTC` | asvabtutor "Study Guide" | embed + `/study` guide | todo |
-| Ballard Memorial HS (KY) — College & Career Readiness | 74 | `ballard.kyschools.us/CollegeandCareerReadiness.aspx` | "ASVAB Tutor" | `/counselor-resources` + calculator | todo |
-| Santaluces HS / Palm Beach (FL) — ASVAB | 71 | `snhs.palmbeachschools.org/news/archived_news/a_s_v_a_b` | asvabtutor study guides | `/counselor-resources` + calculator | todo |
-| Langston Hughes HS / Fulton (GA) — Counseling › Military | 70 | `langstonhughes.fultonschools.org/academics/counseling/military` | asvabtutor practice tests | `/counselor-resources` + embed | todo |
-| Unity Reed HS / PWCS (VA) — ASVAB Testing **(.edu)** | 67 | `unityreedhs.pwcs.edu/news/2023/02/asvab` | asvabtutor study guides | `/study` guide + calculator | todo |
+Contacts verified via Chrome 2026-06-17 (public school counseling/career pages). Their resource page = the "currently links asvabtutor" page from the Ahrefs pull.
+
+| Org | DR | Contact (verified email) | Pitch | Status |
+|---|---|---|---|---|
+| New London HS Library (WI) — LibGuide "Prepare" | 85 | Cassidy Flanders `cflander@newlondon.k12.wi.us`; Morgyn Zielke `mzielke@newlondon.k12.wi.us` (counselors; LibGuide is library-owned, so librarian is the truest owner) | `/counselor-resources` + calculator | queued |
+| Parsippany Hills HS (NJ) | 75 | **Tricia Morsillo**, Coordinator of Counselors `tmorsillo@pthsd.net` | embed calculator | queued |
+| Provine HS JROTC (MS) | 75 | ⚠️ SAI not published — call school (2400 Robinson St, Jackson) / JPS JROTC office | embed + `/study` guide | todo (needs call) |
+| Ballard Memorial HS (KY) | 74 | **Kara Curran**, Guidance Counselor `kara.curran@ballard.kyschools.us` | `/counselor-resources` + calculator | queued |
+| Santaluces HS / Palm Beach (FL) | 71 | ⚠️ counseling staff not cleanly published (guidance page 404) — call `561-642-6200`; pattern `firstname.lastname@palmbeachschools.org` | `/counselor-resources` + calculator | todo (needs call) |
+| Langston Hughes HS / Fulton (GA) | 70 | Counseling dept `lawrenceaa@fultonschools.org` · 470-254-3620 | `/counselor-resources` + embed | queued |
+| Unity Reed HS / PWCS (VA) **(.edu)** | 67 | **Marcus Lawrence**, College & Career Counselor `lawrenmx@pwcs.edu` (+ Arnold Garcia Canaza, AdviseVA `Agarciacanaza@pwcs.edu`) | `/study` guide + calculator | queued |
 
 ## Tier 2 — counseling/career pages (DR 54–63)
 
