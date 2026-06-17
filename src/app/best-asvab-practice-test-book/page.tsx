@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import { AMAZON_TAG as TAG } from "@/lib/amazon";
 
 export const metadata: Metadata = {
   title: "Best ASVAB Practice Test Book 2026 (Tested + Ranked)",
@@ -350,7 +351,7 @@ export default function BestASVABPracticeTestBookPage() {
 
         <p className="text-text-secondary">
           <a
-            href="https://www.amazon.com/dp/B0FLM8Q4QK?tag=asvabhero-20"
+            href={`https://www.amazon.com/dp/B0FLM8Q4QK?tag=${TAG}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:text-accent-hover"
@@ -404,7 +405,7 @@ export default function BestASVABPracticeTestBookPage() {
 
         <p className="text-text-secondary">
           <a
-            href="https://www.amazon.com/dp/B0GTY742F1?tag=asvabhero-20"
+            href={`https://www.amazon.com/dp/B0GTY742F1?tag=${TAG}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:text-accent-hover"
@@ -461,7 +462,7 @@ export default function BestASVABPracticeTestBookPage() {
 
         <p className="text-text-secondary">
           <a
-            href="https://www.amazon.com/dp/1394401876?tag=asvabhero-20"
+            href={`https://www.amazon.com/dp/1394401876?tag=${TAG}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:text-accent-hover"
@@ -515,7 +516,7 @@ export default function BestASVABPracticeTestBookPage() {
 
         <p className="text-text-secondary">
           <a
-            href="https://www.amazon.com/dp/1637750358?tag=asvabhero-20"
+            href={`https://www.amazon.com/dp/1637750358?tag=${TAG}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:text-accent-hover"
@@ -571,7 +572,7 @@ export default function BestASVABPracticeTestBookPage() {
 
         <p className="text-text-secondary">
           <a
-            href="https://www.amazon.com/dp/B0DG9XYHTG?tag=asvabhero-20"
+            href={`https://www.amazon.com/dp/B0DG9XYHTG?tag=${TAG}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:text-accent-hover"
@@ -622,7 +623,7 @@ export default function BestASVABPracticeTestBookPage() {
 
         <p className="text-text-secondary">
           <a
-            href="https://www.amazon.com/dp/B0FLM8Q4QJ?tag=asvabhero-20"
+            href={`https://www.amazon.com/dp/B0FLM8Q4QJ?tag=${TAG}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:text-accent-hover"
@@ -678,7 +679,7 @@ export default function BestASVABPracticeTestBookPage() {
 
         <p className="text-text-secondary">
           <a
-            href="https://www.amazon.com/dp/1506283640?tag=asvabhero-20"
+            href={`https://www.amazon.com/dp/1506283640?tag=${TAG}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:text-accent-hover"
@@ -741,7 +742,7 @@ export default function BestASVABPracticeTestBookPage() {
 
         <p className="text-text-secondary">
           <a
-            href="https://www.amazon.com/dp/1394216360?tag=asvabhero-20"
+            href={`https://www.amazon.com/dp/1394216360?tag=${TAG}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-accent hover:text-accent-hover"
