@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import { AMAZON_TAG as TAG } from "@/lib/amazon";
 
 export const metadata: Metadata = {
   title: "Best ASVAB Study Books 2026 (Tested + Ranked)",
@@ -10,8 +11,6 @@ export const metadata: Metadata = {
     canonical: "https://asvabhero.com/best-asvab-study-book",
   },
 };
-
-const TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "asvabhero-20";
 
 const books = [
   {

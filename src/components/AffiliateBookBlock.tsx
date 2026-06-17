@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AMAZON_TAG as TAG } from "@/lib/amazon";
 
 /**
  * Compact Amazon-affiliate book block. Monetizes high-intent calculator + article
@@ -8,8 +9,6 @@ import Link from "next/link";
  * `data-affiliate` / `data-asin` / `data-source` attributes below, no client JS
  * needed here, so this stays a static server component.
  */
-
-const TAG = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "asvabhero-20";
 
 interface Book {
   /** Stable id matching /best-asvab-study-book so per-book analytics aggregate across placements. */
