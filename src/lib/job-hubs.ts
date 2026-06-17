@@ -1,6 +1,7 @@
 import type { Branch, MilitaryJob } from "@/types";
 import type { RelatedLink } from "@/components/RelatedLinks";
 import navyJobsRaw from "@/data/navy-jobs.json";
+import marinesJobsRaw from "@/data/marines-jobs.json";
 
 /**
  * Single source of truth for the "jobs by ASVAB score" hub pages (one per
@@ -80,6 +81,44 @@ export const navyHub: JobHub = {
       href: "/navy-ranks",
       label: "Navy Ranks Guide",
       blurb: "How ratings map to rate, rank, and pay.",
+    },
+  ],
+};
+
+export const marinesHub: JobHub = {
+  branch: "marines",
+  route: "/usmc-mos-list",
+  jobs: withBranch(marinesJobsRaw, "marines"),
+  scoreSystem: "marine-line",
+  calculatorHref: "/marines-asvab-calculator",
+  branchAfqtHref: "/marines-afqt-calculator",
+  scoreExplainerHref: "/marines-asvab-score",
+  titleHead: "Marine Corps ASVAB Score Chart",
+  related: [
+    {
+      href: "/marines-asvab-score",
+      label: "Marine Corps ASVAB Score Requirements",
+      blurb: "Minimum AFQT and the GT/EL/MM/CL/ST line scores to enlist.",
+    },
+    {
+      href: "/marines-asvab-calculator",
+      label: "Marine Corps ASVAB Calculator",
+      blurb: "Enter your subtest scores to see the MOS you qualify for.",
+    },
+    {
+      href: "/what-jobs-qualify-asvab-score",
+      label: "What Jobs Qualify for Your ASVAB Score",
+      blurb: "Match your AFQT and line scores to jobs across every branch.",
+    },
+    {
+      href: "/marines-afqt-calculator",
+      label: "Marine Corps AFQT Calculator",
+      blurb: "Estimate the AFQT percentile the Marines use to qualify you.",
+    },
+    {
+      href: "/asvab-score-chart",
+      label: "ASVAB Score Chart",
+      blurb: "How each ASVAB subtest feeds into the line-score composites.",
     },
   ],
 };

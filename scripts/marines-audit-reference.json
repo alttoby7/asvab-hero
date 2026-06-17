@@ -1,0 +1,42 @@
+{
+  "_note": "Authoritative reference for USMC MOS ASVAB line scores. Primary composite+min per MOS = the barrier shown on the chart. Canonical standard = operationmilitarykids.org + military.com (Rod Powers) recruiter-facing consensus (same standard used for the Army audit), cross-checked against the Military Yearbook Project (MCO 1200.17 verbatim) and Marine Corps COOL. USMC AFQT floor is uniform 32 (Tier I HS diploma) / 50 (GED) — it is NOT the per-MOS gate (the line score is), so minAFQT=32 across the board is correct and unchanged. Five composites: GT=VE+AR+MC, EL=GS+AR+MK+EI, MM=AR+MC+AS+EI, CL=VE+AR+MK, ST=GS+VE+MK+MC.",
+  "corrections": {
+    "0311": {"composite": "GT", "min": 90, "was": "GT 80", "reason": "Entry infantry gate is GT 90 (OMK + military.com); dataset undervalued at 80."},
+    "0331": {"composite": "GT", "min": 90, "was": "GT 80", "reason": "Entry infantry gate is GT 90 (OMK + military.com); dataset undervalued at 80."},
+    "0341": {"composite": "GT", "min": 90, "was": "GT 80", "reason": "Entry infantry gate is GT 90 (OMK + military.com); dataset undervalued at 80."},
+    "2621": {"composite": "GT", "min": 100, "was": "GT 110", "reason": "MCO 1200.17 verbatim (Military Yearbook Project) + liveabout = GT 100, not 110."},
+    "3043": {"composite": "CL", "min": 105, "was": "GT 100", "reason": "Supply Admin & Operations is a Clerical-composite MOS (CL 105) per MCO 1200.17 verbatim + OMK; dataset miscoded composite AND number. First CL MOS in the dataset."},
+    "6046": {"composite": "CL", "min": 100, "was": "EL 100", "reason": "Aircraft Maintenance Administration is admin/data, gated by Clerical (CL 100), not Electronics; MCO 1200.17 verbatim + OMK confirm CL."},
+    "7041": {"composite": "CL", "min": 100, "was": "GT 100", "reason": "Aviation Operations Specialist (ops clerk) is Clerical (CL 100); confirmed by OMK + military.com + asvabhero. Classic GT-overcoding error."},
+    "7314": {"composite": "GT", "min": 105, "was": "GT 110", "reason": "UAV/UAS Operator min is GT 105 (MCO 1200.17 verbatim + OMK); military.com's 110 is an outlier."}
+  },
+  "confirmed_and_pairs": {
+    "_note": "Genuine simultaneous (AND) dual-composite requirements — verified correct, left unchanged (rendered AND, joined '·').",
+    "0481": "GT 95 AND MM 100 (Landing Support)",
+    "1142": "MM 105 AND EL 100 (Engineer Equipment Electrical Systems Tech) — MCO 1200.17 verbatim",
+    "2171": "MM 105 AND EL 115 (Electro-Optical Ordnance Repairer) — MCO 1200.17 verbatim",
+    "2651": "GT 110 AND EL 110 (ISR Systems Engineer)",
+    "6276": "MM 105 AND GT 110 (Fixed-Wing Crew Chief KC-130) — see source_conflicts",
+    "6694": "GT 110 AND EL 115 (Aviation Logistics Information Mgmt & Support)"
+  },
+  "source_conflicts_kept_at_consensus": {
+    "_note": "Where OMK/military.com (recruiter-facing consensus) disagrees with MCO-verbatim Military Yearbook Project, the chart matches the recruiter-facing consensus (Army-audit precedent) — kept unchanged, documented here.",
+    "5939": "Kept EL 115 (OMK); MYP/MCO shows EL 110.",
+    "5948": "Kept EL 115 (OMK); MYP/MCO shows EL 105 (largest gap).",
+    "5974": "Kept EL 115 (OMK); MYP/MCO shows EL 110. (Official title is 'Administrator' not 'Technician'.)",
+    "5979": "Kept EL 115 (OMK); MYP/MCO shows EL 110.",
+    "6276": "Kept MM 105 AND GT 110 (OMK + military.com); MYP/MCO shows MM 105 only.",
+    "0844": "Kept GT 105 (OMK + 0842/0847 fire-control band); asvabhero outlier shows GT 100.",
+    "7257": "Kept GT 110 (effective gate via required 7251 trainee prereq); OMK lists the MOS's own direct line as GT 105."
+  },
+  "lifecycle_flags": {
+    "_note": "Real codes (NOT fabricated) that are in transition but still appear on authoritative tables — score values verified correct, kept in dataset; revisit before the hub ships if presenting as current enlistment options.",
+    "1812": "Armor/Tank (M1A1) Crewman — USMC divested all tanks ~2020-21; legacy code, GT 90 correct.",
+    "1833": "AAV Crewmember — being sunset in favor of 1834 (ACV); GT 90 correct.",
+    "0317": "Scout Sniper — undergoing 0322 restructure; GT 100 still cited.",
+    "6112/6152/6172": "Carry legacy CH-46 titling in sources (CH-46 retired 2015); MM 105 unchanged.",
+    "6122": "Helicopter Power Plants Mechanic — mosroadmap notes possible T/O removal; MM 105 if still active."
+  },
+  " st_absence_is_correct": "Every ST-suspect role (5711 CBRN, 6842 METOC, 3451 Finance, 1361 Engineer Assistant, 3381 Food Service) was authoritatively verified as gated on GT/CL, not ST. The USMC does not gate any MOS in this dataset on ST — its absence is a verified finding, not an omission.",
+  "afqt_floor": {"diploma": 32, "ged": 50, "note": "Uniform USMC floor; per-MOS gate is the line score above, so minAFQT=32 for every MOS is correct."}
+}
