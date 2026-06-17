@@ -26,6 +26,15 @@
       "last_reviewed": "2026-06-14",
       "cycles": 1,
       "last_verdict": "skip-low-roi"
+    },
+    {
+      "url": "/usmc-mos-list",
+      "target_keyword": "marine mos list",
+      "log_file": "urls/usmc-mos-list.md",
+      "first_optimized": "2026-06-16",
+      "last_reviewed": "2026-06-16",
+      "cycles": 1,
+      "last_verdict": "data-audit-only (hub build gated to 2026-06-28)"
     }
   ]
 }

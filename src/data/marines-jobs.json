@@ -65,7 +65,7 @@
     "requirements": [
       {
         "composite": "GT",
-        "minScore": 80
+        "minScore": 90
       }
     ]
   },
@@ -121,7 +121,7 @@
     "requirements": [
       {
         "composite": "GT",
-        "minScore": 80
+        "minScore": 90
       }
     ]
   },
@@ -135,7 +135,7 @@
     "requirements": [
       {
         "composite": "GT",
-        "minScore": 80
+        "minScore": 90
       }
     ]
   },
@@ -763,7 +763,7 @@
     "requirements": [
       {
         "composite": "GT",
-        "minScore": 110
+        "minScore": 100
       }
     ]
   },
@@ -948,8 +948,8 @@
     "minAFQT": 32,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 100
+        "composite": "CL",
+        "minScore": 105
       }
     ]
   },
@@ -1242,7 +1242,7 @@
     "minAFQT": 32,
     "requirements": [
       {
-        "composite": "EL",
+        "composite": "CL",
         "minScore": 100
       }
     ]
@@ -1740,7 +1740,7 @@
     "minAFQT": 32,
     "requirements": [
       {
-        "composite": "GT",
+        "composite": "CL",
         "minScore": 100
       }
     ]
@@ -1825,7 +1825,7 @@
     "requirements": [
       {
         "composite": "GT",
-        "minScore": 110
+        "minScore": 105
       }
     ]
   }
