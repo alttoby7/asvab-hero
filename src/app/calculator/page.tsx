@@ -18,9 +18,9 @@ import coastGuardJobs from "@/data/coast-guard-jobs.json";
 import spaceForceJobs from "@/data/space-force-jobs.json";
 
 export const metadata: Metadata = {
-  title: "Free ASVAB Score Calculator, See Every Job You Qualify For",
+  title: "All-Branch ASVAB Calculator: Every Score & Qualifying Job (2026)",
   description:
-    "Enter your 9 ASVAB subtest scores and instantly see your AFQT percentile, composite line scores, and every military job you qualify for across all 6 branches.",
+    "The all-in-one ASVAB calculator: enter your 9 subtest scores once and see your AFQT percentile, every branch's composite line scores, and all the military jobs you qualify for across all 6 branches — plus the full directory of branch and score calculators.",
   alternates: {
     canonical: "https://asvabhero.com/calculator",
   },
@@ -49,7 +49,7 @@ export default function CalculatorPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "ASVAB Score Calculator",
+          name: "All-Branch ASVAB Calculator",
           url: "https://asvabhero.com/calculator",
           applicationCategory: "EducationalApplication",
           operatingSystem: "Web",
@@ -65,17 +65,17 @@ export default function CalculatorPage() {
       <Breadcrumb
         items={[
           { name: "Home", href: "/" },
-          { name: "ASVAB Score Calculator", href: "/calculator" },
+          { name: "All-Branch Calculator", href: "/calculator" },
         ]}
       />
       <div className="mb-8">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          ASVAB Score Calculator
+          All-Branch ASVAB Calculator
         </h1>
         <p className="mt-2 text-text-secondary">
-          Enter your 9 subtest standard scores to see your AFQT percentile,
-          branch-specific composite scores, and every military job you qualify
-          for.
+          The all-in-one calculator: enter your 9 subtest standard scores once to
+          see your AFQT percentile, every branch&apos;s composite line scores, and
+          all the military jobs you qualify for across all 6 branches.
         </p>
         <p className="mt-3 text-sm text-text-tertiary">
           Want a single number? Use the{" "}
