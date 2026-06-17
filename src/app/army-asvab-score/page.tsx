@@ -212,6 +212,29 @@ export default function ArmyASVABScorePage() {
           For a deeper look at how your <Link href="/afqt-score">AFQT score</Link> is calculated and why it matters, check our dedicated breakdown.
         </p>
 
+        {/* ── Lowest qualifying score (job angle, exact-match intent) ── */}
+        <h3 className="mt-8 font-display text-xl font-bold text-text-primary">
+          What is the lowest ASVAB score for an Army job?
+        </h3>
+
+        <p className="mt-2 text-text-secondary">
+          AFQT 31 is the lowest score the Army will accept to enlist. The lowest <em>line</em> score
+          for an actual job is lower than most people expect: support trades like Motor Transport
+          Operator (88M), Petroleum Supply Specialist (92F), and Culinary Specialist (92G) qualify at
+          an OF composite of 85, and Shower/Laundry Specialist (92S) at GM 84. Combat jobs &mdash;
+          Infantry (11B), Armor (19K), Cavalry Scout (19D) &mdash; all sit higher at CO 87, not the
+          floor. The hardest enlisted jobs (intelligence and cyber: 35N, 35T, 17C) need ST 112.
+        </p>
+
+        <p className="text-text-secondary">
+          So the honest answer to &ldquo;what&apos;s the lowest ASVAB score for the Army&rdquo; is two
+          numbers: AFQT 31 to get in, and a job-specific line score that starts in the mid-80s. See
+          the required line score for every job on the{" "}
+          <Link href="/army-mos-list">Army MOS list and ASVAB score chart</Link>, or run your subtest
+          scores through the <Link href="/army-asvab-calculator">Army ASVAB score calculator</Link> to
+          see exactly which MOS you already clear.
+        </p>
+
         <EmailCapture
           tag="army-asvab-score"
           headline="Get Your Free Army MOS Match Report"

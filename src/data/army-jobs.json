@@ -23,7 +23,7 @@
     "requirements": [
       {
         "composite": "CO",
-        "minScore": 77
+        "minScore": 87
       }
     ]
   },
@@ -37,7 +37,7 @@
     "requirements": [
       {
         "composite": "CO",
-        "minScore": 77
+        "minScore": 87
       }
     ]
   },
@@ -51,7 +51,7 @@
     "requirements": [
       {
         "composite": "CO",
-        "minScore": 82
+        "minScore": 87
       }
     ]
   },
@@ -65,7 +65,7 @@
     "requirements": [
       {
         "composite": "CO",
-        "minScore": 82
+        "minScore": 87
       }
     ]
   },
@@ -76,7 +76,7 @@
     "description": "Diver \u2013 U.S. Army MOS 12D.",
     "category": "Engineering",
     "minAFQT": 31,
-    "requirements": [
+    "anyOf": [
       {
         "composite": "GM",
         "minScore": 98
@@ -157,7 +157,7 @@
     "requirements": [
       {
         "composite": "GM",
-        "minScore": 85
+        "minScore": 90
       }
     ]
   },
@@ -168,14 +168,14 @@
     "description": "Prime Power Production Specialist \u2013 U.S. Army MOS 12P.",
     "category": "Engineering",
     "minAFQT": 31,
-    "requirements": [
-      {
-        "composite": "EL",
-        "minScore": 107
-      },
+    "anyOf": [
       {
         "composite": "GT",
         "minScore": 110
+      },
+      {
+        "composite": "EL",
+        "minScore": 107
       },
       {
         "composite": "ST",
@@ -248,12 +248,8 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 100
-      },
-      {
         "composite": "ST",
-        "minScore": 100
+        "minScore": 95
       }
     ]
   },
@@ -266,8 +262,8 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 87
+        "composite": "FA",
+        "minScore": 93
       }
     ]
   },
@@ -280,8 +276,8 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 87
+        "composite": "FA",
+        "minScore": 96
       }
     ]
   },
@@ -294,8 +290,8 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 87
+        "composite": "OF",
+        "minScore": 95
       }
     ]
   },
@@ -308,8 +304,8 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 87
+        "composite": "SC",
+        "minScore": 98
       }
     ]
   },
@@ -337,7 +333,7 @@
     "requirements": [
       {
         "composite": "MM",
-        "minScore": 92
+        "minScore": 100
       }
     ]
   },
@@ -350,12 +346,8 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 90
-      },
-      {
         "composite": "MM",
-        "minScore": 91
+        "minScore": 99
       }
     ]
   },
@@ -368,12 +360,8 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 90
-      },
-      {
         "composite": "MM",
-        "minScore": 91
+        "minScore": 99
       }
     ]
   },
@@ -387,7 +375,7 @@
     "requirements": [
       {
         "composite": "OF",
-        "minScore": 87
+        "minScore": 95
       }
     ]
   },
@@ -401,18 +389,9 @@
     "requirements": [
       {
         "composite": "OF",
-        "minScore": 87
+        "minScore": 95
       }
     ]
-  },
-  {
-    "id": "army-14x",
-    "code": "14X",
-    "title": "Space and Missile Defense Crewmember",
-    "description": "Space and Missile Defense Crewmember \u2013 U.S. Army MOS 14X.",
-    "category": "Air Defense Artillery",
-    "minAFQT": 31,
-    "requirements": []
   },
   {
     "id": "army-15b",
@@ -464,10 +443,6 @@
     "category": "Aviation",
     "minAFQT": 31,
     "requirements": [
-      {
-        "composite": "EL",
-        "minScore": 93
-      },
       {
         "composite": "MM",
         "minScore": 104
@@ -524,10 +499,6 @@
     "category": "Aviation",
     "minAFQT": 31,
     "requirements": [
-      {
-        "composite": "EL",
-        "minScore": 93
-      },
       {
         "composite": "MM",
         "minScore": 104
@@ -663,10 +634,6 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "EL",
-        "minScore": 98
-      },
-      {
         "composite": "MM",
         "minScore": 104
       }
@@ -680,10 +647,6 @@
     "category": "Cyber",
     "minAFQT": 31,
     "requirements": [
-      {
-        "composite": "GT",
-        "minScore": 110
-      },
       {
         "composite": "ST",
         "minScore": 112
@@ -719,14 +682,14 @@
     "description": "Special Forces Weapons Sergeant \u2013 U.S. Army MOS 18B.",
     "category": "Special Forces",
     "minAFQT": 31,
-    "requirements": [
-      {
-        "composite": "CO",
-        "minScore": 98
-      },
+    "anyOf": [
       {
         "composite": "GT",
-        "minScore": 107
+        "minScore": 110
+      },
+      {
+        "composite": "CO",
+        "minScore": 100
       }
     ]
   },
@@ -737,14 +700,14 @@
     "description": "Special Forces Engineer Sergeant \u2013 U.S. Army MOS 18C.",
     "category": "Special Forces",
     "minAFQT": 31,
-    "requirements": [
-      {
-        "composite": "CO",
-        "minScore": 98
-      },
+    "anyOf": [
       {
         "composite": "GT",
-        "minScore": 107
+        "minScore": 110
+      },
+      {
+        "composite": "CO",
+        "minScore": 100
       }
     ]
   },
@@ -755,14 +718,14 @@
     "description": "Special Forces Medical Sergeant \u2013 U.S. Army MOS 18D.",
     "category": "Special Forces",
     "minAFQT": 31,
-    "requirements": [
-      {
-        "composite": "CO",
-        "minScore": 98
-      },
+    "anyOf": [
       {
         "composite": "GT",
-        "minScore": 107
+        "minScore": 110
+      },
+      {
+        "composite": "CO",
+        "minScore": 100
       }
     ]
   },
@@ -773,14 +736,14 @@
     "description": "Special Forces Communications Sergeant \u2013 U.S. Army MOS 18E.",
     "category": "Special Forces",
     "minAFQT": 31,
-    "requirements": [
-      {
-        "composite": "CO",
-        "minScore": 98
-      },
+    "anyOf": [
       {
         "composite": "GT",
         "minScore": 110
+      },
+      {
+        "composite": "CO",
+        "minScore": 100
       }
     ]
   },
@@ -791,14 +754,14 @@
     "description": "Special Forces Recrui \u2013 U.S. Army MOS 18X.",
     "category": "Special Forces",
     "minAFQT": 31,
-    "requirements": [
-      {
-        "composite": "CO",
-        "minScore": 98
-      },
+    "anyOf": [
       {
         "composite": "GT",
         "minScore": 110
+      },
+      {
+        "composite": "CO",
+        "minScore": 100
       }
     ]
   },
@@ -812,7 +775,7 @@
     "requirements": [
       {
         "composite": "CO",
-        "minScore": 77
+        "minScore": 87
       }
     ]
   },
@@ -826,7 +789,7 @@
     "requirements": [
       {
         "composite": "CO",
-        "minScore": 77
+        "minScore": 87
       }
     ]
   },
@@ -840,7 +803,7 @@
     "requirements": [
       {
         "composite": "CO",
-        "minScore": 77
+        "minScore": 87
       }
     ]
   },
@@ -866,10 +829,6 @@
     "category": "Signal & Communications",
     "minAFQT": 31,
     "requirements": [
-      {
-        "composite": "GT",
-        "minScore": 105
-      },
       {
         "composite": "ST",
         "minScore": 105
@@ -922,7 +881,7 @@
     "requirements": [
       {
         "composite": "EL",
-        "minScore": 117
+        "minScore": 107
       }
     ]
   },
@@ -936,11 +895,7 @@
     "requirements": [
       {
         "composite": "EL",
-        "minScore": 93
-      },
-      {
-        "composite": "SC",
-        "minScore": 92
+        "minScore": 95
       }
     ]
   },
@@ -981,10 +936,6 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 110
-      },
-      {
         "composite": "ST",
         "minScore": 107
       }
@@ -1000,7 +951,7 @@
     "requirements": [
       {
         "composite": "ST",
-        "minScore": 94
+        "minScore": 95
       }
     ]
   },
@@ -1098,7 +1049,7 @@
     "requirements": [
       {
         "composite": "ST",
-        "minScore": 101
+        "minScore": 91
       }
     ]
   },
@@ -1168,7 +1119,7 @@
     "requirements": [
       {
         "composite": "GT",
-        "minScore": 105
+        "minScore": 107
       }
     ]
   },
@@ -1306,7 +1257,7 @@
     "requirements": [
       {
         "composite": "GT",
-        "minScore": 105
+        "minScore": 107
       }
     ]
   },
@@ -1340,10 +1291,6 @@
     "category": "Public Affairs",
     "minAFQT": 31,
     "requirements": [
-      {
-        "composite": "EL",
-        "minScore": 93
-      },
       {
         "composite": "ST",
         "minScore": 91
@@ -1551,7 +1498,7 @@
     "requirements": [
       {
         "composite": "ST",
-        "minScore": 101
+        "minScore": 106
       }
     ]
   },
@@ -1593,7 +1540,7 @@
     "requirements": [
       {
         "composite": "ST",
-        "minScore": 98
+        "minScore": 101
       }
     ]
   },
@@ -1838,10 +1785,6 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 85
-      },
-      {
         "composite": "ST",
         "minScore": 91
       }
@@ -1870,10 +1813,6 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 90
-      },
-      {
         "composite": "MM",
         "minScore": 99
       }
@@ -1887,10 +1826,6 @@
     "category": "Mechanical Maintenance",
     "minAFQT": 31,
     "requirements": [
-      {
-        "composite": "GT",
-        "minScore": 85
-      },
       {
         "composite": "MM",
         "minScore": 92
@@ -1907,11 +1842,7 @@
     "requirements": [
       {
         "composite": "GM",
-        "minScore": 93
-      },
-      {
-        "composite": "GT",
-        "minScore": 85
+        "minScore": 88
       }
     ]
   },
@@ -1925,11 +1856,7 @@
     "requirements": [
       {
         "composite": "GM",
-        "minScore": 93
-      },
-      {
-        "composite": "GT",
-        "minScore": 85
+        "minScore": 88
       }
     ]
   },
@@ -1943,11 +1870,7 @@
     "requirements": [
       {
         "composite": "GM",
-        "minScore": 98
-      },
-      {
-        "composite": "GT",
-        "minScore": 95
+        "minScore": 88
       }
     ]
   },
@@ -1961,11 +1884,7 @@
     "requirements": [
       {
         "composite": "GM",
-        "minScore": 93
-      },
-      {
-        "composite": "GT",
-        "minScore": 85
+        "minScore": 88
       }
     ]
   },
@@ -1978,12 +1897,8 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 85
-      },
-      {
         "composite": "MM",
-        "minScore": 90
+        "minScore": 92
       }
     ]
   },
@@ -1996,12 +1911,8 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 85
-      },
-      {
         "composite": "MM",
-        "minScore": 87
+        "minScore": 92
       }
     ]
   },
@@ -2013,10 +1924,6 @@
     "category": "Mechanical Maintenance",
     "minAFQT": 31,
     "requirements": [
-      {
-        "composite": "GT",
-        "minScore": 90
-      },
       {
         "composite": "MM",
         "minScore": 99
@@ -2032,10 +1939,6 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 90
-      },
-      {
         "composite": "MM",
         "minScore": 99
       }
@@ -2050,12 +1953,8 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "GT",
-        "minScore": 85
-      },
-      {
         "composite": "MM",
-        "minScore": 87
+        "minScore": 92
       }
     ]
   },
@@ -2129,7 +2028,7 @@
     "requirements": [
       {
         "composite": "GM",
-        "minScore": 84
+        "minScore": 88
       }
     ]
   },
@@ -2142,12 +2041,8 @@
     "minAFQT": 31,
     "requirements": [
       {
-        "composite": "CO",
-        "minScore": 77
-      },
-      {
         "composite": "GM",
-        "minScore": 78
+        "minScore": 88
       }
     ]
   },
@@ -2204,10 +2099,6 @@
       {
         "composite": "EL",
         "minScore": 102
-      },
-      {
-        "composite": "ST",
-        "minScore": 90
       }
     ]
   },
@@ -2222,10 +2113,6 @@
       {
         "composite": "EL",
         "minScore": 102
-      },
-      {
-        "composite": "ST",
-        "minScore": 90
       }
     ]
   },
@@ -2240,10 +2127,6 @@
       {
         "composite": "EL",
         "minScore": 102
-      },
-      {
-        "composite": "ST",
-        "minScore": 90
       }
     ]
   },
@@ -2258,10 +2141,6 @@
       {
         "composite": "EL",
         "minScore": 102
-      },
-      {
-        "composite": "ST",
-        "minScore": 90
       }
     ]
   },
@@ -2276,10 +2155,6 @@
       {
         "composite": "EL",
         "minScore": 107
-      },
-      {
-        "composite": "ST",
-        "minScore": 90
       }
     ]
   },
@@ -2294,10 +2169,6 @@
       {
         "composite": "EL",
         "minScore": 107
-      },
-      {
-        "composite": "ST",
-        "minScore": 90
       }
     ]
   },
@@ -2312,10 +2183,6 @@
       {
         "composite": "EL",
         "minScore": 93
-      },
-      {
-        "composite": "ST",
-        "minScore": 85
       }
     ]
   },
@@ -2344,10 +2211,6 @@
       {
         "composite": "EL",
         "minScore": 107
-      },
-      {
-        "composite": "ST",
-        "minScore": 90
       }
     ]
   },
@@ -2362,10 +2225,6 @@
       {
         "composite": "EL",
         "minScore": 98
-      },
-      {
-        "composite": "ST",
-        "minScore": 85
       }
     ]
   },
@@ -2380,10 +2239,6 @@
       {
         "composite": "EL",
         "minScore": 107
-      },
-      {
-        "composite": "ST",
-        "minScore": 90
       }
     ]
   }

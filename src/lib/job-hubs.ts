@@ -1,6 +1,7 @@
 import type { Branch, MilitaryJob } from "@/types";
 import type { RelatedLink } from "@/components/RelatedLinks";
 import navyJobsRaw from "@/data/navy-jobs.json";
+import armyJobsRaw from "@/data/army-jobs.json";
 
 /**
  * Single source of truth for the "jobs by ASVAB score" hub pages (one per
@@ -80,6 +81,44 @@ export const navyHub: JobHub = {
       href: "/navy-ranks",
       label: "Navy Ranks Guide",
       blurb: "How ratings map to rate, rank, and pay.",
+    },
+  ],
+};
+
+export const armyHub: JobHub = {
+  branch: "army",
+  route: "/army-mos-list",
+  jobs: withBranch(armyJobsRaw, "army"),
+  scoreSystem: "army-line",
+  calculatorHref: "/army-asvab-calculator",
+  branchAfqtHref: "/army-afqt-calculator",
+  scoreExplainerHref: "/gt-score",
+  titleHead: "Army ASVAB Score Chart",
+  related: [
+    {
+      href: "/army-asvab-score",
+      label: "Army ASVAB Score Requirements",
+      blurb: "Minimum AFQT and the line scores you need to enlist in the Army.",
+    },
+    {
+      href: "/army-asvab-calculator",
+      label: "Army ASVAB Score Calculator",
+      blurb: "Enter your subtest scores to see the MOSs you qualify for.",
+    },
+    {
+      href: "/what-jobs-qualify-asvab-score",
+      label: "What Jobs Qualify for Your ASVAB Score",
+      blurb: "Match your AFQT and line scores to jobs across every branch.",
+    },
+    {
+      href: "/gt-score",
+      label: "GT Score Explained",
+      blurb: "The Army's most important line score and how to raise it.",
+    },
+    {
+      href: "/army-ranks",
+      label: "Army Ranks Guide",
+      blurb: "How enlisted MOSs map to rank, grade, and pay.",
     },
   ],
 };
