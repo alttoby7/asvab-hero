@@ -6,12 +6,40 @@ site_url: https://asvabhero.com
 country: us
 first_optimized: 2026-06-16
 last_reviewed: 2026-06-16
-cycles: 1
-last_verdict: data-audit-only (hub build gated to 2026-06-28 GSC recheck)
+cycles: 2
+last_verdict: applied (data audit + hub shipped; gate overridden by owner)
 recheck_date: 2026-06-28
 ---
 
 # /usmc-mos-list — Optimization Log
+
+## Cycle 2 — 2026-06-16 (Hub SHIPPED — owner overrode the 2026-06-28 gate)
+
+Owner directed shipping the Marines hub immediately rather than waiting for the
+2026-06-28 GSC recheck. Built the data-driven hub the same way as Army/Navy:
+- **`marinesHub`** added to `src/lib/job-hubs.ts` (`marine-line` scoreSystem,
+  `/marines-asvab-calculator` funnel, related links). `JobScoreTable.tsx` +
+  `hubScoreStats()` reused unchanged.
+- **`/usmc-mos-list` rebuilt IN PLACE** from the 1,360-line hand-coded page into
+  the ~430-line data-driven pattern. The old page hand-coded **fabricated MOS
+  codes** (0681, 1751, 2611, 2821, 5812, 0111, 6072, 6153, 6174, 6214 — none in
+  the dataset), wrong values (0311/0331/0341 GT 80, 0352 GT 80, 2171 as OR, 3043
+  CL 90, 0844 GT 100), and a **wrong CL formula** (`WK+PC+MK`, dropping AR). All
+  gone — every figure now derives from the audited `marines-jobs.json`.
+- Line-score formulas set to ASVAB Hero's own canonical values (site-wide
+  consistency): GT=VE+AR, CL=VE+AR+MK, EL=GS+AR+MK+EI, MM=AR+EI+MC+AS,
+  ST=GS+VE+MK+MC. Answer-first AEO block, methodology/last-updated note, FAQ +
+  FAQPage/Article schema, breadcrumb, related links.
+
+**Verification:** `npx tsc --noEmit` clean; `npm run build` green. Static HTML:
+129 MOS rows prerendered (130 `<tr>` incl. header); corrected values present
+(CL 105, GT 90, GT 105, MM 85 lowest, EL 115 highest, 2651 "GT 110+ · EL 110+");
+fabricated codes + `GT 80` absent.
+
+⏭ Still recheck GSC **2026-06-28** for Army + Navy movement (informs CG/SF/AF
+ordering), but Marines is now live regardless.
+
+---
 
 ## Cycle 1 — 2026-06-16 (Jobs-by-score hub program: Marines DATA AUDIT — hub build gated)
 
