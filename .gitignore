@@ -23,6 +23,17 @@ next-env.d.ts
 .claude/settings.local.json
 .mcp.json
 
+# Mobile app
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+google-services.json
+google-services-key.json
+GoogleService-Info.plist
+
 # Project-specific ignores (web app)
 apps/web/docs/book-content/
 apps/web/supabase/seed-chunks/
