@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import RelatedLinks from "@/components/RelatedLinks";
 import CiteThisResource from "@/components/CiteThisResource";
+import AfqtCalculator from "@/components/AfqtCalculator";
+import EmbedSnippet from "@/components/EmbedSnippet";
 import { TOPIC_COUNT } from "@/lib/bank-stats";
 
 export const metadata: Metadata = {
@@ -192,7 +195,7 @@ export default function CounselorResourcesPage() {
           </div>
         </section>
 
-        {/* Embed callout */}
+        {/* Embed callout + live demo */}
         <section className="rounded-2xl border border-accent/30 bg-navy-light p-6 sm:p-8">
           <h2 className="font-display text-lg font-bold text-text-primary">
             Embed a free calculator on your site
@@ -200,12 +203,38 @@ export default function CounselorResourcesPage() {
           <p className="mt-2 text-text-secondary leading-relaxed">
             Drop our AFQT calculator straight into your counseling page or
             LibGuide with one line of HTML. Students use it without leaving your
-            site and without an account.{" "}
+            site and without an account. Here&apos;s what it looks like:
+          </p>
+
+          <div className="mt-6 rounded-xl border border-navy-border bg-navy p-4">
+            <Suspense
+              fallback={
+                <div className="rounded-lg border border-navy-border bg-navy-light p-6 text-text-secondary">
+                  Loading calculator demo...
+                </div>
+              }
+            >
+              <AfqtCalculator embedded />
+            </Suspense>
+          </div>
+
+          <div className="mt-6">
+            <EmbedSnippet
+              src="https://asvabhero.com/embed/afqt-calculator"
+              title="AFQT Calculator by ASVAB Hero"
+              height={820}
+              creditHref="https://asvabhero.com/afqt-calculator"
+              creditLabel="AFQT calculator"
+            />
+          </div>
+
+          <p className="mt-4 text-sm text-text-tertiary">
+            More widgets and options on the{" "}
             <Link
               href="/embed"
               className="font-semibold text-accent underline hover:text-accent-hover"
             >
-              Get the embed code
+              embed directory page
             </Link>
             .
           </p>
