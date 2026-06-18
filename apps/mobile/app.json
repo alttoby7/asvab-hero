@@ -7,6 +7,7 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
     "scheme": "asvabhero",
+    "owner": "asvabhero",
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.asvabhero.app",
@@ -28,8 +29,9 @@
     ],
     "extra": {
       "eas": {
-        "projectId": "FILL_IN_AFTER_EAS_INIT"
-      }
+        "projectId": "0a820c80-2a1b-4afa-b6bc-d3fda269c003"
+      },
+      "router": {}
     }
   }
 }
