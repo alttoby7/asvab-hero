@@ -92,11 +92,15 @@ const PRO_FEATURES = [
 interface PricingPlansProps {
   defaultTier?: Tier;
   source?: string;
+  hideFreePlan?: boolean;
+  placement?: string;
 }
 
 export default function PricingPlans({
   defaultTier = "pass90",
   source,
+  hideFreePlan,
+  placement,
 }: PricingPlansProps) {
   const router = useRouter();
   const { session, loading: sessionLoading } = useSession();
@@ -134,10 +138,12 @@ export default function PricingPlans({
     trackEvent(FunnelEvents.CheckoutStart, {
       tier,
       from: source ?? "unknown",
+      placement: placement ?? "pricing_grid",
     });
     trackEvent(PaywallEvents.CheckoutClick, {
       tier,
       from: source ?? "unknown",
+      placement: placement ?? "pricing_grid",
     });
 
     try {
@@ -214,33 +220,35 @@ export default function PricingPlans({
       </div>
 
       {/* Plan grid */}
-      <div className="grid gap-8 sm:grid-cols-2">
-        {/* Free plan */}
-        <div className="rounded-2xl border border-navy-border bg-navy-light p-8">
-          <h2 className="font-display text-xl font-bold text-text-primary">Free</h2>
-          <div className="mt-2">
-            <span className="font-mono text-4xl font-bold text-text-primary">$0</span>
-            <span className="text-text-tertiary"> / forever</span>
+      <div className={`grid gap-8 ${hideFreePlan ? "mx-auto max-w-md" : "sm:grid-cols-2"}`}>
+        {/* Free plan — hidden when the visitor is already past free (paywall traffic) */}
+        {!hideFreePlan && (
+          <div className="rounded-2xl border border-navy-border bg-navy-light p-8">
+            <h2 className="font-display text-xl font-bold text-text-primary">Free</h2>
+            <div className="mt-2">
+              <span className="font-mono text-4xl font-bold text-text-primary">$0</span>
+              <span className="text-text-tertiary"> / forever</span>
+            </div>
+            <p className="mt-4 text-sm text-text-secondary">
+              A free account that saves your diagnostic and turns it into a daily,
+              score-moving plan.
+            </p>
+            <ul className="mt-6 space-y-3">
+              {FREE_FEATURES.map((f) => (
+                <li key={f} className="flex items-start gap-2 text-sm">
+                  <CheckIcon />
+                  <span className="text-text-secondary">{f}</span>
+                </li>
+              ))}
+            </ul>
+            <Link
+              href="/practice-test"
+              className="mt-8 block rounded-xl border border-navy-border py-3 text-center text-sm font-semibold text-text-primary transition-colors hover:border-accent no-underline"
+            >
+              Start free diagnostic
+            </Link>
           </div>
-          <p className="mt-4 text-sm text-text-secondary">
-            A free account that saves your diagnostic and turns it into a daily,
-            score-moving plan.
-          </p>
-          <ul className="mt-6 space-y-3">
-            {FREE_FEATURES.map((f) => (
-              <li key={f} className="flex items-start gap-2 text-sm">
-                <CheckIcon />
-                <span className="text-text-secondary">{f}</span>
-              </li>
-            ))}
-          </ul>
-          <Link
-            href="/practice-test"
-            className="mt-8 block rounded-xl border border-navy-border py-3 text-center text-sm font-semibold text-text-primary transition-colors hover:border-accent no-underline"
-          >
-            Start free diagnostic
-          </Link>
-        </div>
+        )}
 
         {/* Pro plan (selected tier) */}
         <div className="relative rounded-2xl border-2 border-accent bg-navy-light p-8">

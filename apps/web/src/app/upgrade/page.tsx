@@ -9,6 +9,7 @@ import ProUpsellCard from "@/components/ProUpsellCard";
 import WhySurvey from "@/components/feedback/WhySurvey";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
+import { useStripeCheckout } from "@/hooks/useStripeCheckout";
 import {
   trackEvent,
   FunnelEvents,
@@ -16,32 +17,48 @@ import {
   adoptPaywallContextId,
 } from "@/lib/analytics";
 
-type FromParam =
-  | "variant_picker"
-  | "diagnostic_used"
-  | "mini_drill"
-  | "results"
-  | undefined;
+type FromParam = string | undefined;
 
-const HEADLINES: Record<NonNullable<FromParam>, string> = {
+const HEADLINES: Record<string, string> = {
   variant_picker: "Unlock unlimited practice",
-  diagnostic_used: "You've used your free diagnostic, keep going with Pro",
+  diagnostic_used: "You've used your free diagnostic — keep going with Pro",
   mini_drill: "Drills are part of Pro",
   results: "Ready for serious prep?",
+  free_diagnostic_used: "You've used your free diagnostic — keep going with Pro",
+  anon_diagnostic_used: "Ready for unlimited practice?",
+  pro_only_variant: "Unlock this feature with Pro",
+  free_adaptive_daily_limit: "Nice work today — go Pro for unlimited",
+  adaptive_needs_account: "Create a free account to get started",
+  free_user_no_diagnostic: "Take your free diagnostic first",
+  banner: "Unlock unlimited practice",
 };
+
+const PAYWALL_SOURCES = new Set([
+  "free_diagnostic_used",
+  "anon_diagnostic_used",
+  "pro_only_variant",
+  "free_adaptive_daily_limit",
+  "diagnostic_used",
+  "variant_picker",
+  "mini_drill",
+]);
 
 function UpgradeContent() {
   const searchParams = useSearchParams();
   const from = searchParams.get("from") as FromParam;
   const status = searchParams.get("status");
   const isCancelled = status === "cancelled";
-  // Honor ?tier= (set by the signup return path) so users land on the plan
-  // they picked before being asked to create an account.
   const tierParam = searchParams.get("tier");
   const defaultTier: Tier =
     tierParam === "monthly" || tierParam === "retaker" ? tierParam : "pass90";
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
+  const { startCheckout, loading: checkoutLoading } = useStripeCheckout({
+    source: from ?? "upgrade_page",
+    placement: "hero",
+  });
+
+  const isFromPaywall = !!from && PAYWALL_SOURCES.has(from);
 
   const pricingRef = useRef<HTMLDivElement | null>(null);
   const scroll50Ref = useRef(false);
@@ -103,7 +120,7 @@ function UpgradeContent() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6">
-      {/* Hero */}
+      {/* Hero — with above-fold CTA for paywall traffic */}
       <div className="text-center mb-12">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           {headline}
@@ -111,8 +128,8 @@ function UpgradeContent() {
         {showStats && (
           <p className="mt-3 text-text-secondary">
             Your daily adaptive block and Mistake Bank are already free. Pro removes
-            every limit, unlimited adaptive practice, full-length sims, and deeper
-            analytics, so nothing slows you down.
+            every limit — unlimited adaptive practice, full-length sims, and deeper
+            analytics — so nothing slows you down.
           </p>
         )}
         {!showStats && !isLoading && (
@@ -122,18 +139,40 @@ function UpgradeContent() {
             full-length sims, and deeper analytics.
           </p>
         )}
-      </div>
 
-      {/* Hero image, the satisfaction moment after the practice grind pays off */}
-      <div className="mb-12 mx-auto max-w-3xl">
-        <BrandHero
-          src="/images/generated/asvab-upgrade-hero.png"
-          alt="A focused candidate breaking through ASVAB practice, calculator in hand, notebook of worked-out problems, mid-morning daylight."
-          width={1536}
-          height={1024}
-          priority
-          className="overflow-hidden rounded-2xl border border-navy-border shadow-2xl shadow-black/40"
-        />
+        {/* Above-fold CTA — price, guarantee, and buy button visible without scrolling */}
+        {!isLoading && !entitlement.isPro && (
+          <div className="mt-8">
+            <p className="text-sm text-text-tertiary mb-4">
+              <span className="font-mono text-lg font-bold text-accent">$59</span>{" "}
+              one-time · 90 days of full access · Money-back guarantee
+            </p>
+            <button
+              onClick={() => startCheckout("pass90")}
+              disabled={checkoutLoading}
+              className="inline-flex items-center justify-center rounded-xl bg-accent px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-accent-hover disabled:opacity-60 disabled:cursor-not-allowed"
+            >
+              {checkoutLoading ? "Loading checkout…" : "Get my 90-Day Pass"}
+            </button>
+            <p className="mt-3 text-xs text-text-tertiary">
+              One-time payment. No subscription, no auto-renew.{" "}
+              {!isFromPaywall && (
+                <Link
+                  href="/app/plan"
+                  onClick={() =>
+                    trackEvent(PaywallEvents.PaywallCtaSecondaryClick, {
+                      which: "free_plan",
+                      from: "upgrade_hero",
+                    })
+                  }
+                  className="text-text-secondary hover:text-text-primary no-underline"
+                >
+                  Or continue with the free plan →
+                </Link>
+              )}
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Already Pro, manage link */}
@@ -151,39 +190,30 @@ function UpgradeContent() {
         </div>
       )}
 
-      {/* Personalized target-job context strip (fail-open: renders nothing
-         without a target job). Puts THEIR goal above the plan grid. */}
+      {/* Personalized target-job context strip */}
       {!isLoading && !entitlement.isPro && session?.user?.id && (
         <ProUpsellCard userId={session.user.id} from="upgrade" />
       )}
 
-      {/* Not ready for Pro? The free plan already raises scores, route there,
-         not to a PDF dead end. */}
-      {!isLoading && !entitlement.isPro && (
-        <div className="mb-10 rounded-2xl border border-navy-border bg-navy-light p-6 text-center sm:p-7">
-          <p className="font-display text-lg font-bold text-text-primary">
-            Not ready for Pro? Start the free plan first.
-          </p>
-          <p className="mx-auto mt-2 max-w-xl text-sm text-text-secondary">
-            One adaptive AFQT block a day, unlimited Mistake-Bank review, and a
-            weekly plan, all free, no card. Come back for Pro when you want
-            unlimited practice and full-length sims.
-          </p>
-          <Link
-            href="/app/plan"
-            onClick={() =>
-              trackEvent(PaywallEvents.PaywallCtaSecondaryClick, { which: "free_plan", from: "upgrade" })
-            }
-            className="mt-5 inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3 text-sm font-semibold text-white no-underline transition-colors hover:bg-accent-hover"
-          >
-            Start my free plan
-          </Link>
-        </div>
-      )}
+      {/* Hero image — deferred, lazy-loaded, below CTA */}
+      <div className="mb-12 mx-auto max-w-3xl">
+        <BrandHero
+          src="/images/generated/asvab-upgrade-hero.png"
+          alt="A focused candidate breaking through ASVAB practice, calculator in hand, notebook of worked-out problems, mid-morning daylight."
+          width={1536}
+          height={1024}
+          className="overflow-hidden rounded-2xl border border-navy-border shadow-2xl shadow-black/40"
+        />
+      </div>
 
-      {/* Plan grid */}
+      {/* Plan grid — Free plan hidden for paywall traffic */}
       <div ref={pricingRef}>
-        <PricingPlans defaultTier={defaultTier} source={from ?? "upgrade_page"} />
+        <PricingPlans
+          defaultTier={defaultTier}
+          source={from ?? "upgrade_page"}
+          hideFreePlan={isFromPaywall}
+          placement="pricing_grid"
+        />
       </div>
 
       {/* Tight 2-question FAQ */}
