@@ -19,15 +19,12 @@ type CiteThisResourceProps = {
   anchor: string;
   /** Human title used in the suggested citation line. */
   citationTitle: string;
-  /** Last-verified date shown in the citation, e.g. "June 2026". */
-  lastVerified: string;
 };
 
 export default function CiteThisResource({
   url,
   anchor,
   citationTitle,
-  lastVerified,
 }: CiteThisResourceProps) {
   const [copied, setCopied] = useState<"link" | "cite" | null>(null);
 
@@ -37,9 +34,8 @@ export default function CiteThisResource({
   );
 
   const citation = useMemo(
-    () =>
-      `ASVAB Hero. "${citationTitle}." Last verified ${lastVerified}. ${url}`,
-    [citationTitle, lastVerified, url]
+    () => `ASVAB Hero. "${citationTitle}." ${url}`,
+    [citationTitle, url]
   );
 
   const copy = useCallback(
@@ -67,9 +63,9 @@ export default function CiteThisResource({
         Link or cite this resource
       </h2>
       <p className="mt-2 text-text-secondary leading-relaxed">
-        This page is free, has no signup, and is kept source-cited and dated, so
-        you are welcome to link it from your counseling page, LibGuide, or
-        resource list. Copy a ready-made link or citation below.
+        This page is free, has no signup, and is kept source-cited, so you are
+        welcome to link it from your counseling page, LibGuide, or resource
+        list. Copy a ready-made link or citation below.
       </p>
 
       <div className="mt-5 space-y-5">

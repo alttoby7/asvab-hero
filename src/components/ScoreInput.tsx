@@ -112,7 +112,7 @@ export default function ScoreInput({
           inputMode="numeric"
           pattern="[0-9]*"
           value={inputValue}
-          placeholder=", "
+          placeholder="20-99"
           onFocus={(e) => {
             isFocused.current = true;
             e.target.select();
@@ -132,7 +132,7 @@ export default function ScoreInput({
         max={MAX}
         value={value ?? MIN}
         onChange={(e) => handleSlider(e.target.value)}
-        aria-label={`${SUBTEST_NAMES[subtest]} score slider`}
+        aria-hidden="true"
         tabIndex={-1}
         className={`score-slider${isEmpty ? " opacity-40" : ""}`}
         style={{ "--slider-pct": sliderPct } as React.CSSProperties}

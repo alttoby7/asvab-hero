@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import AfqtCalculator from "@/components/AfqtCalculator";
 
 export const metadata: Metadata = {
-  title: "AFQT Calculator (Embed) | ASVAB Hero",
+  title: "AFQT Calculator (Embed)",
   description:
     "Embeddable free AFQT calculator. Enter AR, WK, PC, and MK scores to see your AFQT percentile and branch eligibility.",
   // This is the bare iframe target. It must not compete with the real
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function AfqtCalculatorEmbedPage() {
   return (
-    <div className="mx-auto max-w-xl px-4 py-6">
+    <div className="mx-auto max-w-2xl px-4 py-6">
       <div className="mb-4">
         <h1 className="font-display text-xl font-bold text-text-primary">
           AFQT Calculator

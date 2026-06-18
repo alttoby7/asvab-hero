@@ -18,10 +18,8 @@ type EmbedSnippetProps = {
   src: string;
   /** iframe title attribute (accessibility) */
   title: string;
-  /** Pixel height sized to the tool's tallest state. Defaults to 720. */
+  /** Pixel height sized to the tool's tallest state. Defaults to 820. */
   height?: number;
-  /** Max width of the embedded frame. Defaults to 560. */
-  maxWidth?: number;
   /**
    * Canonical tool page the attribution link points at, e.g.
    * https://asvabhero.com/afqt-calculator. An iframe by itself passes NO link
@@ -37,8 +35,7 @@ type EmbedSnippetProps = {
 export default function EmbedSnippet({
   src,
   title,
-  height = 720,
-  maxWidth = 560,
+  height = 820,
   creditHref,
   creditLabel,
 }: EmbedSnippetProps) {
@@ -50,12 +47,12 @@ export default function EmbedSnippet({
   const snippet = useMemo(
     () =>
       `<iframe src="${src}" width="100%" height="${height}" ` +
-      `style="border:1px solid #e5e7eb;border-radius:12px;max-width:${maxWidth}px" ` +
-      `title="${title}" loading="lazy"></iframe>\n` +
+      `style="border:1px solid #e5e7eb;border-radius:12px;background:#0a1628" ` +
+      `title="${title}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>\n` +
       `<p style="font-size:13px;font-family:sans-serif;margin:8px 0 0">` +
       `Free ${creditLabel} powered by ` +
       `<a href="${creditHref}">ASVAB Hero</a></p>`,
-    [src, title, height, maxWidth, creditHref, creditLabel]
+    [src, title, height, creditHref, creditLabel]
   );
 
   const handleCopy = useCallback(async () => {
