@@ -137,7 +137,7 @@ export default function Nav() {
           </div>
 
           {/* Mobile hamburger */}
-          <button onClick={() => setOpen(!open)} className="flex flex-col gap-1.5 md:hidden" aria-label="Toggle menu">
+          <button onClick={() => setOpen(!open)} className="flex min-h-[44px] min-w-[44px] flex-col items-center justify-center gap-1.5 p-2 md:hidden" aria-label="Toggle menu">
             <span className={`block h-0.5 w-6 bg-text-secondary transition-transform ${open ? "translate-y-2 rotate-45" : ""}`} />
             <span className={`block h-0.5 w-6 bg-text-secondary transition-opacity ${open ? "opacity-0" : ""}`} />
             <span className={`block h-0.5 w-6 bg-text-secondary transition-transform ${open ? "-translate-y-2 -rotate-45" : ""}`} />
@@ -147,10 +147,10 @@ export default function Nav() {
         {open && (
           <div className="border-t border-navy-border pb-4 pt-2 md:hidden">
             <div className="flex flex-col gap-3">
-              <Link href="/calculator" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Calculator</Link>
-              <Link href="/practice-test" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Practice Test</Link>
-              <Link href="/asvab-scores-explained" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Scores Guide</Link>
-              <Link href="/asvab-study-guide" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Study Guide</Link>
+              <Link href="/calculator" onClick={() => setOpen(false)} className="rounded-md px-3 py-2.5 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Calculator</Link>
+              <Link href="/practice-test" onClick={() => setOpen(false)} className="rounded-md px-3 py-2.5 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Practice Test</Link>
+              <Link href="/asvab-scores-explained" onClick={() => setOpen(false)} className="rounded-md px-3 py-2.5 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Scores Guide</Link>
+              <Link href="/asvab-study-guide" onClick={() => setOpen(false)} className="rounded-md px-3 py-2.5 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Study Guide</Link>
               <div className="px-3">
                 <p className="mb-1 text-xs font-bold uppercase tracking-wider text-text-tertiary">Ranks</p>
                 <div className="flex flex-col gap-1 pl-2 border-l border-navy-border">
@@ -159,23 +159,23 @@ export default function Nav() {
                   ))}
                 </div>
               </div>
-              <Link href="/pricing" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Pricing</Link>
-              <Link href="/about" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">About</Link>
+              <Link href="/pricing" onClick={() => setOpen(false)} className="rounded-md px-3 py-2.5 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Pricing</Link>
+              <Link href="/about" onClick={() => setOpen(false)} className="rounded-md px-3 py-2.5 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">About</Link>
               {!sessionLoading && !session && (
-                <Link href="/login" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Log in</Link>
+                <Link href="/login" onClick={() => setOpen(false)} className="rounded-md px-3 py-2.5 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Log in</Link>
               )}
               {!sessionLoading && session && (
                 <>
-                  <Link href="/account" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Dashboard</Link>
-                  <Link href="/account/settings" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Settings</Link>
-                  <Link href="/account/billing" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Billing</Link>
+                  <Link href="/account" onClick={() => setOpen(false)} className="rounded-md px-3 py-2.5 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Dashboard</Link>
+                  <Link href="/account/settings" onClick={() => setOpen(false)} className="rounded-md px-3 py-2.5 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Settings</Link>
+                  <Link href="/account/billing" onClick={() => setOpen(false)} className="rounded-md px-3 py-2.5 text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary no-underline">Billing</Link>
                   {showUpgradeLink && (
-                    <Link href="/upgrade?from=nav" onClick={() => setOpen(false)} className="rounded-md px-3 py-2 text-sm font-semibold text-accent hover:bg-navy-light no-underline">Upgrade to Pro</Link>
+                    <Link href="/upgrade?from=nav" onClick={() => setOpen(false)} className="rounded-md px-3 py-2.5 text-sm font-semibold text-accent hover:bg-navy-light no-underline">Upgrade to Pro</Link>
                   )}
-                  <button onClick={() => { setOpen(false); handleSignOut(); }} className="rounded-md px-3 py-2 text-left text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary">Sign out</button>
+                  <button onClick={() => { setOpen(false); handleSignOut(); }} className="rounded-md px-3 py-2.5 text-left text-sm font-medium text-text-secondary hover:bg-navy-light hover:text-text-primary">Sign out</button>
                 </>
               )}
-              <Link href="/calculator" onClick={() => setOpen(false)} className="mt-1 rounded-lg bg-accent px-4 py-2 text-center text-sm font-semibold text-white no-underline">Try Calculator</Link>
+              <Link href="/calculator" onClick={() => setOpen(false)} className="mt-1 rounded-lg bg-accent px-4 py-3 text-center text-sm font-semibold text-white no-underline">Try Calculator</Link>
             </div>
           </div>
         )}

@@ -3,6 +3,7 @@ import { withSentryConfig } from "@sentry/nextjs";
 
 const nextConfig: NextConfig = {
   output: "export",
+  transpilePackages: ["@asvab-hero/domain", "@asvab-hero/content"],
 };
 
 // Sentry build-time integration: uploads sourcemaps so client errors are

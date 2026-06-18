@@ -1,0 +1,425 @@
+[
+  {
+    "id": "gs.life-science",
+    "subtest": "GS",
+    "slug": "life-science",
+    "title": "Life Science & Biology",
+    "sort_order": 1,
+    "study_guide_href": "/study/gs/life-science",
+    "recommended_drill": "subtest_drill_gs"
+  },
+  {
+    "id": "gs.physical-science",
+    "subtest": "GS",
+    "slug": "physical-science",
+    "title": "Physical Science & Chemistry",
+    "sort_order": 2,
+    "study_guide_href": "/study/gs/physical-science",
+    "recommended_drill": "subtest_drill_gs"
+  },
+  {
+    "id": "gs.earth-space-science",
+    "subtest": "GS",
+    "slug": "earth-space-science",
+    "title": "Earth & Space Science",
+    "sort_order": 3,
+    "study_guide_href": "/study/gs/earth-space-science",
+    "recommended_drill": "subtest_drill_gs"
+  },
+  {
+    "id": "gs.physics-mechanics",
+    "subtest": "GS",
+    "slug": "physics-mechanics",
+    "title": "Physics & Mechanics",
+    "sort_order": 4,
+    "study_guide_href": "/study/gs/physics-mechanics",
+    "recommended_drill": "subtest_drill_gs"
+  },
+  {
+    "id": "ar.arithmetic-fundamentals",
+    "subtest": "AR",
+    "slug": "arithmetic-fundamentals",
+    "title": "Arithmetic Fundamentals",
+    "sort_order": 1,
+    "study_guide_href": "/study/ar/arithmetic-fundamentals",
+    "recommended_drill": "subtest_drill_ar"
+  },
+  {
+    "id": "ar.ratio-proportion",
+    "subtest": "AR",
+    "slug": "ratio-proportion",
+    "title": "Ratios & Proportions",
+    "sort_order": 2,
+    "study_guide_href": "/study/ar/ratio-proportion",
+    "recommended_drill": "subtest_drill_ar"
+  },
+  {
+    "id": "ar.percent",
+    "subtest": "AR",
+    "slug": "percent",
+    "title": "Percent & Markup",
+    "sort_order": 3,
+    "study_guide_href": "/study/ar/percent",
+    "recommended_drill": "subtest_drill_ar"
+  },
+  {
+    "id": "ar.rate-distance-time",
+    "subtest": "AR",
+    "slug": "rate-distance-time",
+    "title": "Rate, Distance & Time",
+    "sort_order": 4,
+    "study_guide_href": "/study/ar/rate-distance-time",
+    "recommended_drill": "subtest_drill_ar"
+  },
+  {
+    "id": "ar.word-problems",
+    "subtest": "AR",
+    "slug": "word-problems",
+    "title": "Multi-Step Word Problems",
+    "sort_order": 5,
+    "study_guide_href": "/study/ar/word-problems",
+    "recommended_drill": "subtest_drill_ar"
+  },
+  {
+    "id": "ar.averages",
+    "subtest": "AR",
+    "slug": "averages",
+    "title": "Averages & Mean",
+    "sort_order": 6,
+    "study_guide_href": "/study/ar/averages",
+    "recommended_drill": "subtest_drill_ar"
+  },
+  {
+    "id": "ar.work-rate",
+    "subtest": "AR",
+    "slug": "work-rate",
+    "title": "Work & Rate Problems",
+    "sort_order": 7,
+    "study_guide_href": "/study/ar/work-rate",
+    "recommended_drill": "subtest_drill_ar"
+  },
+  {
+    "id": "wk.synonyms",
+    "subtest": "WK",
+    "slug": "synonyms",
+    "title": "Synonyms & Definitions",
+    "sort_order": 1,
+    "study_guide_href": "/study/wk/synonyms",
+    "recommended_drill": "subtest_drill_wk"
+  },
+  {
+    "id": "wk.context-clues",
+    "subtest": "WK",
+    "slug": "context-clues",
+    "title": "Context Clues",
+    "sort_order": 2,
+    "study_guide_href": "/study/wk/context-clues",
+    "recommended_drill": "subtest_drill_wk"
+  },
+  {
+    "id": "wk.prefixes-suffixes",
+    "subtest": "WK",
+    "slug": "prefixes-suffixes",
+    "title": "Prefixes & Suffixes",
+    "sort_order": 3,
+    "study_guide_href": "/study/wk/prefixes-suffixes",
+    "recommended_drill": "subtest_drill_wk"
+  },
+  {
+    "id": "wk.root-words",
+    "subtest": "WK",
+    "slug": "root-words",
+    "title": "Root Words",
+    "sort_order": 4,
+    "study_guide_href": "/study/wk/root-words",
+    "recommended_drill": "subtest_drill_wk"
+  },
+  {
+    "id": "wk.antonyms",
+    "subtest": "WK",
+    "slug": "antonyms",
+    "title": "Antonyms & Opposites",
+    "sort_order": 5,
+    "study_guide_href": "/study/wk/antonyms",
+    "recommended_drill": "subtest_drill_wk"
+  },
+  {
+    "id": "wk.multiple-meaning-words",
+    "subtest": "WK",
+    "slug": "multiple-meaning-words",
+    "title": "Multiple-Meaning Words",
+    "sort_order": 6,
+    "study_guide_href": "/study/wk/multiple-meaning-words",
+    "recommended_drill": "subtest_drill_wk"
+  },
+  {
+    "id": "pc.main-idea",
+    "subtest": "PC",
+    "slug": "main-idea",
+    "title": "Main Idea & Purpose",
+    "sort_order": 1,
+    "study_guide_href": "/study/pc/main-idea",
+    "recommended_drill": "subtest_drill_pc"
+  },
+  {
+    "id": "pc.detail-recall",
+    "subtest": "PC",
+    "slug": "detail-recall",
+    "title": "Detail & Recall",
+    "sort_order": 2,
+    "study_guide_href": "/study/pc/detail-recall",
+    "recommended_drill": "subtest_drill_pc"
+  },
+  {
+    "id": "pc.inference",
+    "subtest": "PC",
+    "slug": "inference",
+    "title": "Inference & Conclusion",
+    "sort_order": 3,
+    "study_guide_href": "/study/pc/inference",
+    "recommended_drill": "subtest_drill_pc"
+  },
+  {
+    "id": "pc.author-tone-purpose",
+    "subtest": "PC",
+    "slug": "author-tone-purpose",
+    "title": "Author Tone & Purpose",
+    "sort_order": 4,
+    "study_guide_href": "/study/pc/author-tone-purpose",
+    "recommended_drill": "subtest_drill_pc"
+  },
+  {
+    "id": "pc.vocabulary-in-context",
+    "subtest": "PC",
+    "slug": "vocabulary-in-context",
+    "title": "Vocabulary in Context",
+    "sort_order": 5,
+    "study_guide_href": "/study/pc/vocabulary-in-context",
+    "recommended_drill": "subtest_drill_pc"
+  },
+  {
+    "id": "pc.text-structure",
+    "subtest": "PC",
+    "slug": "text-structure",
+    "title": "Sequence & Text Structure",
+    "sort_order": 6,
+    "study_guide_href": "/study/pc/text-structure",
+    "recommended_drill": "subtest_drill_pc"
+  },
+  {
+    "id": "mk.geometry",
+    "subtest": "MK",
+    "slug": "geometry",
+    "title": "Geometry: Area, Perimeter & Volume",
+    "sort_order": 1,
+    "study_guide_href": "/study/mk/geometry",
+    "recommended_drill": "subtest_drill_mk"
+  },
+  {
+    "id": "mk.algebra-linear",
+    "subtest": "MK",
+    "slug": "algebra-linear",
+    "title": "Linear Equations & Algebra",
+    "sort_order": 2,
+    "study_guide_href": "/study/mk/algebra-linear",
+    "recommended_drill": "subtest_drill_mk"
+  },
+  {
+    "id": "mk.fractions-decimals",
+    "subtest": "MK",
+    "slug": "fractions-decimals",
+    "title": "Fractions, Decimals & Percent",
+    "sort_order": 3,
+    "study_guide_href": "/study/mk/fractions-decimals",
+    "recommended_drill": "subtest_drill_mk"
+  },
+  {
+    "id": "mk.exponents-polynomials",
+    "subtest": "MK",
+    "slug": "exponents-polynomials",
+    "title": "Exponents & Polynomials",
+    "sort_order": 4,
+    "study_guide_href": "/study/mk/exponents-polynomials",
+    "recommended_drill": "subtest_drill_mk"
+  },
+  {
+    "id": "mk.number-properties",
+    "subtest": "MK",
+    "slug": "number-properties",
+    "title": "Number Properties & Absolute Value",
+    "sort_order": 5,
+    "study_guide_href": "/study/mk/number-properties",
+    "recommended_drill": "subtest_drill_mk"
+  },
+  {
+    "id": "mk.order-of-operations",
+    "subtest": "MK",
+    "slug": "order-of-operations",
+    "title": "Order of Operations",
+    "sort_order": 6,
+    "study_guide_href": "/study/mk/order-of-operations",
+    "recommended_drill": "subtest_drill_mk"
+  },
+  {
+    "id": "mk.inequalities",
+    "subtest": "MK",
+    "slug": "inequalities",
+    "title": "Inequalities",
+    "sort_order": 7,
+    "study_guide_href": "/study/mk/inequalities",
+    "recommended_drill": "subtest_drill_mk"
+  },
+  {
+    "id": "ei.ohms-law-power",
+    "subtest": "EI",
+    "slug": "ohms-law-power",
+    "title": "Ohm's Law & Power",
+    "sort_order": 1,
+    "study_guide_href": "/study/ei/ohms-law-power",
+    "recommended_drill": "subtest_drill_ei"
+  },
+  {
+    "id": "ei.circuit-types",
+    "subtest": "EI",
+    "slug": "circuit-types",
+    "title": "Series & Parallel Circuits",
+    "sort_order": 2,
+    "study_guide_href": "/study/ei/circuit-types",
+    "recommended_drill": "subtest_drill_ei"
+  },
+  {
+    "id": "ei.components-devices",
+    "subtest": "EI",
+    "slug": "components-devices",
+    "title": "Electrical Components & Devices",
+    "sort_order": 3,
+    "study_guide_href": "/study/ei/components-devices",
+    "recommended_drill": "subtest_drill_ei"
+  },
+  {
+    "id": "ei.conductors-insulators",
+    "subtest": "EI",
+    "slug": "conductors-insulators",
+    "title": "Conductors, Insulators & Materials",
+    "sort_order": 4,
+    "study_guide_href": "/study/ei/conductors-insulators",
+    "recommended_drill": "subtest_drill_ei"
+  },
+  {
+    "id": "as.hand-tools",
+    "subtest": "AS",
+    "slug": "hand-tools",
+    "title": "Hand Tools & Measurement",
+    "sort_order": 1,
+    "study_guide_href": "/study/as/hand-tools",
+    "recommended_drill": "subtest_drill_as"
+  },
+  {
+    "id": "as.vehicle-systems",
+    "subtest": "AS",
+    "slug": "vehicle-systems",
+    "title": "Vehicle Systems & Engine",
+    "sort_order": 2,
+    "study_guide_href": "/study/as/vehicle-systems",
+    "recommended_drill": "subtest_drill_as"
+  },
+  {
+    "id": "as.shop-safety",
+    "subtest": "AS",
+    "slug": "shop-safety",
+    "title": "Shop Safety & Procedures",
+    "sort_order": 3,
+    "study_guide_href": "/study/as/shop-safety",
+    "recommended_drill": "subtest_drill_as"
+  },
+  {
+    "id": "as.maintenance-repair",
+    "subtest": "AS",
+    "slug": "maintenance-repair",
+    "title": "Maintenance & Repair Practices",
+    "sort_order": 4,
+    "study_guide_href": "/study/as/maintenance-repair",
+    "recommended_drill": "subtest_drill_as"
+  },
+  {
+    "id": "mc.levers-pulleys",
+    "subtest": "MC",
+    "slug": "levers-pulleys",
+    "title": "Levers & Pulleys",
+    "sort_order": 1,
+    "study_guide_href": "/study/mc/levers-pulleys",
+    "recommended_drill": "subtest_drill_mc"
+  },
+  {
+    "id": "mc.gears-wheels",
+    "subtest": "MC",
+    "slug": "gears-wheels",
+    "title": "Gears, Wheels & Axles",
+    "sort_order": 2,
+    "study_guide_href": "/study/mc/gears-wheels",
+    "recommended_drill": "subtest_drill_mc"
+  },
+  {
+    "id": "mc.forces-friction",
+    "subtest": "MC",
+    "slug": "forces-friction",
+    "title": "Forces, Friction & Pressure",
+    "sort_order": 3,
+    "study_guide_href": "/study/mc/forces-friction",
+    "recommended_drill": "subtest_drill_mc"
+  },
+  {
+    "id": "mc.inclined-plane-hydraulics",
+    "subtest": "MC",
+    "slug": "inclined-plane-hydraulics",
+    "title": "Inclined Planes & Hydraulics",
+    "sort_order": 4,
+    "study_guide_href": "/study/mc/inclined-plane-hydraulics",
+    "recommended_drill": "subtest_drill_mc"
+  },
+  {
+    "id": "mc.motion-projectile",
+    "subtest": "MC",
+    "slug": "motion-projectile",
+    "title": "Motion & Projectile Physics",
+    "sort_order": 5,
+    "study_guide_href": "/study/mc/motion-projectile",
+    "recommended_drill": "subtest_drill_mc"
+  },
+  {
+    "id": "ao.3d-visualization",
+    "subtest": "AO",
+    "slug": "3d-visualization",
+    "title": "3-D Object Visualization",
+    "sort_order": 1,
+    "study_guide_href": "/study/ao/3d-visualization",
+    "recommended_drill": "subtest_drill_ao"
+  },
+  {
+    "id": "ao.paper-folding-nets",
+    "subtest": "AO",
+    "slug": "paper-folding-nets",
+    "title": "Paper Folding & Nets",
+    "sort_order": 2,
+    "study_guide_href": "/study/ao/paper-folding-nets",
+    "recommended_drill": "subtest_drill_ao"
+  },
+  {
+    "id": "ao.spatial-counting",
+    "subtest": "AO",
+    "slug": "spatial-counting",
+    "title": "Spatial Counting & Orientation",
+    "sort_order": 3,
+    "study_guide_href": "/study/ao/spatial-counting",
+    "recommended_drill": "subtest_drill_ao"
+  },
+  {
+    "id": "ao.pattern-assembly",
+    "subtest": "AO",
+    "slug": "pattern-assembly",
+    "title": "Pattern Assembly & Rotation",
+    "sort_order": 4,
+    "study_guide_href": "/study/ao/pattern-assembly",
+    "recommended_drill": "subtest_drill_ao"
+  }
+]

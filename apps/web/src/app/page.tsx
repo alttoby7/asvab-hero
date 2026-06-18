@@ -7,6 +7,9 @@ import HomePopularLinks from "@/components/HomePopularLinks";
 import JsonLd from "@/components/JsonLd";
 import { QUESTIONS_PLUS, TOPIC_COUNT, SUBTEST_COUNT } from "@/lib/bank-stats";
 import { homepageFeatured } from "@/lib/calculator-links";
+import { RECRUITS_PER_MONTH, SCORE_CHECKS_PER_MONTH } from "@/data/social-proof";
+import HomePlanCTA from "@/components/HomePlanCTA";
+import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 // Entity anchor for search + AI engines: who we are (Organization) and what the
 // product is (WebApplication / SoftwareApplication with its free + paid offers).
@@ -114,7 +117,11 @@ export default function HomePage() {
                 </svg>
               </Link>
             </div>
-            <p className="mt-6 text-sm text-text-secondary">
+            <p className="mt-4 text-sm text-text-secondary">
+              <HomePlanCTA variant="hero" />
+            </p>
+            <div id="hero-cta-sentinel" />
+            <p className="mt-4 py-2 text-sm text-text-secondary">
               No scores yet?{" "}
               <Link
                 href="/practice-test"
@@ -139,6 +146,23 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Proof strip — quiet trust signal between hero and the conversion story */}
+      <div className="border-t border-navy-border/50 py-5">
+        <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-center gap-x-6 gap-y-2 px-4 sm:gap-x-10">
+          <span className="font-mono text-xs tracking-wide text-text-tertiary">
+            <span className="font-semibold text-text-secondary">{RECRUITS_PER_MONTH.toLocaleString()}+</span> recruits this month
+          </span>
+          <span className="hidden text-text-tertiary/40 sm:inline">&middot;</span>
+          <span className="font-mono text-xs tracking-wide text-text-tertiary">
+            <span className="font-semibold text-text-secondary">{SCORE_CHECKS_PER_MONTH.toLocaleString()}+</span> score checks
+          </span>
+          <span className="hidden text-text-tertiary/40 sm:inline">&middot;</span>
+          <span className="font-mono text-xs tracking-wide text-text-tertiary">
+            <span className="font-semibold text-text-secondary">{QUESTIONS_PLUS}</span> practice questions
+          </span>
+        </div>
+      </div>
 
       {/* ────────────────────────────────────────────────────────────────────
          CLOSE THE GAP + FREE PLAN, the single primary conversion. Merges the
@@ -482,6 +506,8 @@ export default function HomePage() {
 
       {/* Footer-adjacent SEO link hub. */}
       <HomePopularLinks />
+
+      <StickyMobileCTA />
     </div>
   );
 }
