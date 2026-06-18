@@ -1,5 +1,8 @@
 import { View, Text, StyleSheet } from "react-native";
 import { BRANCH_MINIMUMS } from "@asvab-hero/domain/scoring";
+import { colors } from "@asvab-hero/ui-tokens/colors";
+import { fontSize, fontWeight } from "@asvab-hero/ui-tokens/typography";
+import { spacing, radius } from "@asvab-hero/ui-tokens/spacing";
 
 export default function HomeScreen() {
   return (
@@ -19,15 +22,33 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 24, backgroundColor: "#0a1628" },
-  title: { fontSize: 28, fontWeight: "800", color: "#ffffff", marginTop: 48 },
-  subtitle: { fontSize: 16, color: "#94a3b8", marginTop: 8 },
-  card: {
-    backgroundColor: "#1e293b",
-    borderRadius: 12,
-    padding: 16,
-    marginTop: 24,
+  container: { flex: 1, padding: spacing[6], backgroundColor: colors.navy },
+  title: {
+    fontSize: fontSize["3xl"],
+    fontWeight: fontWeight.extrabold,
+    color: colors.textPrimary,
+    marginTop: spacing[12],
   },
-  cardTitle: { fontSize: 18, fontWeight: "700", color: "#ffffff", marginBottom: 8 },
-  cardText: { fontSize: 14, color: "#94a3b8", marginBottom: 4 },
+  subtitle: {
+    fontSize: fontSize.base,
+    color: colors.textSecondary,
+    marginTop: spacing[2],
+  },
+  card: {
+    backgroundColor: colors.navyCard,
+    borderRadius: radius.lg,
+    padding: spacing[4],
+    marginTop: spacing[6],
+  },
+  cardTitle: {
+    fontSize: fontSize.lg,
+    fontWeight: fontWeight.bold,
+    color: colors.textPrimary,
+    marginBottom: spacing[2],
+  },
+  cardText: {
+    fontSize: fontSize.sm,
+    color: colors.textSecondary,
+    marginBottom: spacing[1],
+  },
 });

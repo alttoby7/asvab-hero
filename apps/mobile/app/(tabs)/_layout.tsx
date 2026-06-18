@@ -1,35 +1,24 @@
 import { Tabs } from "expo-router";
-import { Text } from "react-native";
-
-const NAVY = "#0a1628";
-const ACCENT = "#3b82f6";
-const MUTED = "#6b7280";
-
-function TabIcon({ label, focused }: { label: string; focused: boolean }) {
-  return (
-    <Text style={{ color: focused ? ACCENT : MUTED, fontSize: 20 }}>
-      {label}
-    </Text>
-  );
-}
+import { Ionicons } from "@expo/vector-icons";
+import { colors } from "@asvab-hero/ui-tokens/colors";
 
 export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarStyle: { backgroundColor: NAVY, borderTopColor: "#1e293b" },
-        tabBarActiveTintColor: ACCENT,
-        tabBarInactiveTintColor: MUTED,
-        headerStyle: { backgroundColor: NAVY },
-        headerTintColor: "#ffffff",
+        tabBarStyle: { backgroundColor: colors.navy, borderTopColor: colors.navyBorder },
+        tabBarActiveTintColor: colors.accent,
+        tabBarInactiveTintColor: colors.textMuted,
+        headerStyle: { backgroundColor: colors.navy },
+        headerTintColor: colors.textPrimary,
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
           title: "Home",
-          tabBarIcon: ({ focused }) => (
-            <TabIcon label="H" focused={focused} />
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="home" size={size} color={color} />
           ),
         }}
       />
@@ -37,8 +26,8 @@ export default function TabLayout() {
         name="session"
         options={{
           title: "Study",
-          tabBarIcon: ({ focused }) => (
-            <TabIcon label="S" focused={focused} />
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="book" size={size} color={color} />
           ),
         }}
       />
@@ -46,8 +35,8 @@ export default function TabLayout() {
         name="practice"
         options={{
           title: "Practice",
-          tabBarIcon: ({ focused }) => (
-            <TabIcon label="P" focused={focused} />
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="clipboard" size={size} color={color} />
           ),
         }}
       />
@@ -55,8 +44,8 @@ export default function TabLayout() {
         name="calculator"
         options={{
           title: "Calc",
-          tabBarIcon: ({ focused }) => (
-            <TabIcon label="C" focused={focused} />
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="calculator" size={size} color={color} />
           ),
         }}
       />
@@ -64,8 +53,8 @@ export default function TabLayout() {
         name="profile"
         options={{
           title: "Profile",
-          tabBarIcon: ({ focused }) => (
-            <TabIcon label="U" focused={focused} />
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="person" size={size} color={color} />
           ),
         }}
       />

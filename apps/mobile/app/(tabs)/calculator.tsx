@@ -6,6 +6,9 @@ import {
   getAFQTCategoryDescription,
 } from "@asvab-hero/domain/scoring";
 import type { SubtestScores } from "@asvab-hero/domain/types";
+import { colors } from "@asvab-hero/ui-tokens/colors";
+import { fontSize, fontWeight } from "@asvab-hero/ui-tokens/typography";
+import { spacing, radius } from "@asvab-hero/ui-tokens/spacing";
 
 const AFQT_SUBTESTS = ["AR", "MK", "WK", "PC"] as const;
 const DEFAULT_SCORES: SubtestScores = {
@@ -38,7 +41,7 @@ export default function CalculatorScreen() {
               value={String(scores[st])}
               onChangeText={(t) => updateScore(st, t)}
               maxLength={2}
-              placeholderTextColor="#6b7280"
+              placeholderTextColor={colors.textMuted}
             />
           </View>
         ))}
@@ -63,37 +66,66 @@ export default function CalculatorScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 24, backgroundColor: "#0a1628" },
-  title: { fontSize: 28, fontWeight: "800", color: "#ffffff", marginTop: 48 },
-  subtitle: { fontSize: 16, color: "#94a3b8", marginTop: 8, marginBottom: 24 },
-  inputs: { gap: 12 },
-  inputRow: { flexDirection: "row", alignItems: "center", gap: 12 },
-  inputLabel: { fontSize: 16, fontWeight: "600", color: "#ffffff", width: 32 },
+  container: { flex: 1, padding: spacing[6], backgroundColor: colors.navy },
+  title: {
+    fontSize: fontSize["3xl"],
+    fontWeight: fontWeight.extrabold,
+    color: colors.textPrimary,
+    marginTop: spacing[12],
+  },
+  subtitle: {
+    fontSize: fontSize.base,
+    color: colors.textSecondary,
+    marginTop: spacing[2],
+    marginBottom: spacing[6],
+  },
+  inputs: { gap: spacing[3] },
+  inputRow: { flexDirection: "row", alignItems: "center", gap: spacing[3] },
+  inputLabel: {
+    fontSize: fontSize.base,
+    fontWeight: fontWeight.semibold,
+    color: colors.textPrimary,
+    width: 32,
+  },
   input: {
     flex: 1,
-    backgroundColor: "#1e293b",
-    borderRadius: 8,
-    padding: 12,
-    color: "#ffffff",
-    fontSize: 18,
-    fontWeight: "600",
+    backgroundColor: colors.navyCard,
+    borderRadius: radius.md,
+    padding: spacing[3],
+    color: colors.textPrimary,
+    fontSize: fontSize.lg,
+    fontWeight: fontWeight.semibold,
   },
   result: {
-    backgroundColor: "#1e293b",
-    borderRadius: 12,
-    padding: 20,
-    marginTop: 24,
+    backgroundColor: colors.navyCard,
+    borderRadius: radius.lg,
+    padding: spacing[5],
+    marginTop: spacing[6],
     alignItems: "center",
   },
-  resultLabel: { fontSize: 14, color: "#94a3b8" },
-  resultValue: { fontSize: 48, fontWeight: "800", color: "#3b82f6", marginTop: 4 },
-  resultCategory: { fontSize: 14, color: "#94a3b8", marginTop: 8, textAlign: "center" },
+  resultLabel: { fontSize: fontSize.sm, color: colors.textSecondary },
+  resultValue: {
+    fontSize: fontSize["5xl"],
+    fontWeight: fontWeight.extrabold,
+    color: colors.accent,
+    marginTop: spacing[1],
+  },
+  resultCategory: {
+    fontSize: fontSize.sm,
+    color: colors.textSecondary,
+    marginTop: spacing[2],
+    textAlign: "center",
+  },
   resetButton: {
-    backgroundColor: "#1e293b",
-    borderRadius: 8,
-    padding: 14,
-    marginTop: 16,
+    backgroundColor: colors.navyCard,
+    borderRadius: radius.md,
+    padding: spacing[4],
+    marginTop: spacing[4],
     alignItems: "center",
   },
-  resetButtonText: { color: "#94a3b8", fontSize: 14, fontWeight: "600" },
+  resetButtonText: {
+    color: colors.textSecondary,
+    fontSize: fontSize.sm,
+    fontWeight: fontWeight.semibold,
+  },
 });

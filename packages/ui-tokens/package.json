@@ -1,0 +1,15 @@
+{
+  "name": "@asvab-hero/ui-tokens",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./colors": "./src/colors.ts",
+    "./typography": "./src/typography.ts",
+    "./spacing": "./src/spacing.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
