@@ -46,8 +46,6 @@ const FREE_TOOLS: { href: string; label: string; blurb: string }[] = [
   },
 ];
 
-const LAST_VERIFIED = "May 2026";
-
 // Official sources only. Mirrored into the appendix at the bottom of the page.
 const SOURCES: { label: string; url: string }[] = [
   { label: "Official ASVAB fact sheet", url: "https://www.officialasvab.com/applicants/fact-sheet/" },
@@ -155,8 +153,7 @@ export default function CounselorResourcesPage() {
         A plain, source-cited overview of the ASVAB for the adults who advise
         students about it. Below are free, interactive tools you can link or
         embed for your students, plus the official sources to verify every
-        detail. No signup, no email, no sales pitch. Last verified{" "}
-        {LAST_VERIFIED}.
+        detail. No signup, no email, no sales pitch.
       </p>
       <p className="mt-3 text-sm text-text-tertiary leading-relaxed">
         ASVAB Hero is an independent test-prep site and is not affiliated with
@@ -240,7 +237,6 @@ export default function CounselorResourcesPage() {
           url="https://asvabhero.com/counselor-resources"
           anchor="ASVAB reference for counselors and educators"
           citationTitle="An ASVAB reference for counselors, librarians, and JROTC instructors"
-          lastVerified={LAST_VERIFIED}
         />
 
         {/* 2. What the ASVAB is */}
@@ -558,9 +554,6 @@ export default function CounselorResourcesPage() {
           <h2 className="font-display text-xl font-bold text-text-primary">
             Sources
           </h2>
-          <p className="mt-2 text-sm text-text-tertiary">
-            All links verified {LAST_VERIFIED}.
-          </p>
           <ul className="mt-4 space-y-1.5 text-sm">
             {SOURCES.map((s) => (
               <li key={s.url}>

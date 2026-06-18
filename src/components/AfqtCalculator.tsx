@@ -173,11 +173,11 @@ export default function AfqtCalculator({ embedded = false }: { embedded?: boolea
 
       {/* AFQT percentile + category */}
       {afqtReady && (
-      <section className="rounded-xl border border-navy-border bg-navy-light p-6">
+      <section className="rounded-xl border border-navy-border bg-navy-light p-6" aria-live="polite">
         <h2 className="mb-4 font-display text-lg font-bold text-text-primary">
           Your AFQT Percentile
         </h2>
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
+        <div className="flex flex-col gap-6 min-[520px]:flex-row min-[520px]:items-center">
           <div className="flex h-28 w-28 flex-shrink-0 items-center justify-center rounded-full border-4 border-accent bg-accent-dim">
             <span className="font-mono text-4xl font-bold text-accent">
               {afqt}
