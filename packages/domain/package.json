@@ -11,7 +11,8 @@
     "./prep-mode": "./src/prep-mode.ts",
     "./adaptive": "./src/adaptive/index.ts",
     "./session": "./src/session/index.ts",
-    "./trajectory": "./src/trajectory/index.ts"
+    "./trajectory": "./src/trajectory/index.ts",
+    "./sampler": "./src/sampler.ts"
   },
   "devDependencies": {
     "typescript": "^5.7.0"

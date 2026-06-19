@@ -9,6 +9,7 @@
     "./types": "./src/types.ts"
   },
   "dependencies": {
+    "@asvab-hero/domain": "workspace:*",
     "@supabase/supabase-js": "^2.49.0"
   },
   "devDependencies": {

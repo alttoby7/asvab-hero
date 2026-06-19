@@ -1,10 +1,10 @@
-import { Slot, useRouter, useSegments } from "expo-router";
+import { Stack, useRouter, useSegments } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 import { AuthProvider, useAuth } from "../lib/auth";
 import { colors } from "@asvab-hero/ui-tokens/colors";
 
-function AuthGate() {
+function AuthGate({ children }: { children: React.ReactNode }) {
   const { session, loading } = useAuth();
   const segments = useSegments();
   const router = useRouter();
@@ -19,14 +19,28 @@ function AuthGate() {
     }
   }, [session, loading, segments]);
 
-  return <Slot />;
+  return <>{children}</>;
 }
 
 export default function RootLayout() {
   return (
     <AuthProvider>
       <StatusBar style="light" />
-      <AuthGate />
+      <AuthGate>
+        <Stack
+          screenOptions={{
+            headerShown: false,
+            contentStyle: { backgroundColor: colors.navy },
+          }}
+        >
+          <Stack.Screen name="(auth)" />
+          <Stack.Screen name="(tabs)" />
+          <Stack.Screen
+            name="practice-test"
+            options={{ presentation: "fullScreenModal" }}
+          />
+        </Stack>
+      </AuthGate>
     </AuthProvider>
   );
 }
