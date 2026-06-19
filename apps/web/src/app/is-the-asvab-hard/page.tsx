@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Is the ASVAB Hard? An Honest 2026 Answer | ASVAB Hero",
+  title: "Is the ASVAB Hard? An Honest 2026 Answer",
   description:
     "Is the ASVAB hard? It's coachable, not an IQ test. See how hard each section and branch really is, what a 50, 70, or 90 takes, and how long to study.",
   alternates: {
