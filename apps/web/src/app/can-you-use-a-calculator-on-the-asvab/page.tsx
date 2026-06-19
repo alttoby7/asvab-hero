@@ -115,7 +115,7 @@ export default function CanYouUseACalculatorOnTheASVABPage() {
           />
           <figcaption className="mt-2 text-xs italic text-text-tertiary">
             On the ASVAB, scratch paper and a pencil are the only math aids you
-            get. Illustration.
+            get.
           </figcaption>
         </figure>
 
