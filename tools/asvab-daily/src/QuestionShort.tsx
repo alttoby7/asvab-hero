@@ -27,12 +27,16 @@ const EXPLAIN_START = 345; // 11.5s  explanation panel (answer sits 3s first)
 const CTA_START = 600; // 20.0s  end card
 // total = 690 frames (23s); explanation holds 11.5s–20.0s = 8.5s
 
-const NAVY = "#0a0f1e";
-const NAVY2 = "#111a30";
-const EMERALD = "#10b981";
-const EMERALD_DK = "#065f46";
-const INK = "#e8eef6";
-const MUTE = "#8aa0bd";
+// Brand palette — matches asvabhero.com (orange #f97316 on navy #0a1628).
+const NAVY = "#0a1628";
+const NAVY2 = "#16243f";
+const ORANGE = "#f97316";
+const ORANGE_DK = "#7c2d12";
+const ORANGE_LT = "#fdba74"; // light accent (star, checkmark, CTA highlights)
+const ORANGE_PILL = "#fed7aa"; // subtest pill text
+const ON_ORANGE = "#2a1206"; // dark text/icon on a solid-orange fill
+const INK = "#f1f5f9";
+const MUTE = "#94a3b8";
 const FONT =
   "'Inter','Helvetica Neue',Helvetica,Arial,system-ui,sans-serif";
 
@@ -102,7 +106,7 @@ export const QuestionShort: React.FC<QuestionProps> = ({
           fontSize: 34,
         }}
       >
-        <span style={{ color: EMERALD }}>★</span>
+        <span style={{ color: ORANGE }}>★</span>
         <span>ASVAB HERO</span>
       </div>
 
@@ -119,13 +123,13 @@ export const QuestionShort: React.FC<QuestionProps> = ({
       >
         <div
           style={{
-            background: EMERALD_DK,
-            color: "#d1fae5",
+            background: ORANGE_DK,
+            color: ORANGE_PILL,
             padding: "12px 28px",
             borderRadius: 999,
             fontWeight: 700,
             fontSize: 30,
-            border: `2px solid ${EMERALD}`,
+            border: `2px solid ${ORANGE}`,
             textTransform: "uppercase",
             letterSpacing: 2,
           }}
@@ -195,19 +199,19 @@ export const QuestionShort: React.FC<QuestionProps> = ({
                   alignItems: "center",
                   gap: 26,
                   background: correctStyle
-                    ? EMERALD
+                    ? ORANGE
                     : "rgba(255,255,255,0.06)",
                   border: correctStyle
-                    ? `3px solid #6ee7b7`
+                    ? `3px solid ${ORANGE_LT}`
                     : "2px solid rgba(255,255,255,0.12)",
                   borderRadius: 22,
                   padding: "30px 34px",
                   fontSize: 50,
                   fontWeight: 700,
-                  color: correctStyle ? "#04261b" : INK,
+                  color: correctStyle ? ON_ORANGE : INK,
                   opacity: dimWrong ? 0.32 : 1,
                   boxShadow: correctStyle
-                    ? "0 0 60px rgba(16,185,129,0.55)"
+                    ? "0 0 60px rgba(249,115,22,0.55)"
                     : "none",
                 }}
               >
@@ -217,9 +221,9 @@ export const QuestionShort: React.FC<QuestionProps> = ({
                     height: 64,
                     borderRadius: 16,
                     background: correctStyle
-                      ? "#04261b"
+                      ? ON_ORANGE
                       : "rgba(255,255,255,0.1)",
-                    color: correctStyle ? "#6ee7b7" : MUTE,
+                    color: correctStyle ? ORANGE_LT : MUTE,
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -253,7 +257,7 @@ export const QuestionShort: React.FC<QuestionProps> = ({
               width: 200,
               height: 200,
               borderRadius: 999,
-              border: `8px solid ${EMERALD}`,
+              border: `8px solid ${ORANGE}`,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -278,8 +282,8 @@ export const QuestionShort: React.FC<QuestionProps> = ({
             bottom: 160,
             left: 70,
             right: 70,
-            background: "rgba(16,185,129,0.12)",
-            border: `2px solid ${EMERALD}`,
+            background: "rgba(249,115,22,0.12)",
+            border: `2px solid ${ORANGE}`,
             borderRadius: 24,
             padding: "36px 40px",
             opacity: fade(frame, EXPLAIN_START),
@@ -287,7 +291,7 @@ export const QuestionShort: React.FC<QuestionProps> = ({
         >
           <div
             style={{
-              color: EMERALD,
+              color: ORANGE,
               fontWeight: 800,
               fontSize: 32,
               letterSpacing: 2,
@@ -306,7 +310,7 @@ export const QuestionShort: React.FC<QuestionProps> = ({
       {frame >= CTA_START && (
         <AbsoluteFill
           style={{
-            background: `linear-gradient(180deg, ${NAVY} 0%, ${EMERALD_DK} 100%)`,
+            background: `linear-gradient(180deg, ${NAVY} 0%, ${ORANGE_DK} 100%)`,
             justifyContent: "center",
             alignItems: "center",
             textAlign: "center",
@@ -314,7 +318,7 @@ export const QuestionShort: React.FC<QuestionProps> = ({
             opacity: fade(frame, CTA_START, 10),
           }}
         >
-          <div style={{ fontSize: 40, color: "#6ee7b7", fontWeight: 800, letterSpacing: 3 }}>
+          <div style={{ fontSize: 40, color: ORANGE_LT, fontWeight: 800, letterSpacing: 3 }}>
             ★ ASVAB HERO
           </div>
           <div
@@ -335,7 +339,7 @@ export const QuestionShort: React.FC<QuestionProps> = ({
               marginTop: 70,
               fontSize: 48,
               fontWeight: 800,
-              color: "#6ee7b7",
+              color: ORANGE_LT,
             }}
           >
             Link in bio 👆
@@ -351,7 +355,7 @@ export const QuestionShort: React.FC<QuestionProps> = ({
           left: 0,
           height: 10,
           width: `${(frame / durationInFrames) * 100}%`,
-          background: EMERALD,
+          background: ORANGE,
         }}
       />
     </AbsoluteFill>
