@@ -9,6 +9,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://asvabhero.com/is-the-asvab-hard",
   },
+  openGraph: {
+    title: "Is the ASVAB Hard? An Honest 2026 Answer",
+    description:
+      "It's coachable, not an IQ test. See how hard each section and branch really is, what a 50, 70, or 90 takes, and how long to study.",
+    url: "https://asvabhero.com/is-the-asvab-hard",
+    type: "article",
+    images: [
+      {
+        url: "https://asvabhero.com/images/generated/asvab-is-the-asvab-hard-hero.png",
+        width: 1536,
+        height: 1024,
+        alt: "A calculator with a red no symbol over it, signaling no calculator is allowed on the ASVAB",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Is the ASVAB Hard? An Honest 2026 Answer",
+    description:
+      "It's coachable, not an IQ test. See how hard the ASVAB really is by section, branch, and score tier.",
+    images: [
+      "https://asvabhero.com/images/generated/asvab-is-the-asvab-hard-hero.png",
+    ],
+  },
 };
 
 export default function IsTheASVABHardPage() {
