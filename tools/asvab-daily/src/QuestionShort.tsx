@@ -20,11 +20,12 @@ export type QuestionProps = {
 };
 
 // ---- Timeline (frames @ 30fps) ----
-const HOOK_END = 75; // 0.0 - 2.5s  hook
-const COUNTDOWN_START = 165; // 5.5s  countdown begins
-const REVEAL = 255; // 8.5s  answer reveals
-const EXPLAIN_START = 405; // 13.5s explanation panel
-const CTA_START = 540; // 18.0s end card
+const HOOK_END = 75; // 2.5s   hook
+const COUNTDOWN_START = 165; // 5.5s   countdown begins
+const REVEAL = 255; // 8.5s   answer reveals
+const EXPLAIN_START = 345; // 11.5s  explanation panel (answer sits 3s first)
+const CTA_START = 600; // 20.0s  end card
+// total = 690 frames (23s); explanation holds 11.5s–20.0s = 8.5s
 
 const NAVY = "#0a0f1e";
 const NAVY2 = "#111a30";
