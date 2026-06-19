@@ -26,6 +26,7 @@ const pages = [
   { path: "/asvab-math-tips", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-word-knowledge-tips", priority: "0.8", changefreq: "monthly" },
   { path: "/what-is-the-asvab", priority: "0.8", changefreq: "monthly" },
+  { path: "/is-the-asvab-hard", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-scoring-and-results", priority: "0.8", changefreq: "monthly" },
   { path: "/highest-asvab-score", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-score-average", priority: "0.8", changefreq: "monthly" },
