@@ -58,6 +58,7 @@ const pages = [
   { path: "/asvab-prep-course", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-vocabulary", priority: "0.8", changefreq: "monthly" },
   { path: "/flashcards", priority: "0.8", changefreq: "monthly" },
+  { path: "/asvab-tutor", priority: "0.8", changefreq: "monthly" },
   { path: "/pricing", priority: "0.7", changefreq: "monthly" },
   { path: "/about", priority: "0.5", changefreq: "monthly" },
   { path: "/contact", priority: "0.4", changefreq: "monthly" },
