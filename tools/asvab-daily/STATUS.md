@@ -13,7 +13,7 @@ This is the execution of the "short-form engine" in
 `apps/web/docs/social-channel-strategy-2026-06.md`.
 
 ## ✅ Done & verified
-- Remotion project renders end-to-end. 1080×1920 H.264, 20.5s. Branded emerald
+- Remotion project renders end-to-end. 1080×1920 H.264, 23s. Branded emerald
   template: hook → question → countdown → reveal → explanation → CTA end card.
 - **Audio default = license-free sound bed** (`public/bed.mp3`: countdown ticks +
   reveal chime, synthesized by `scripts/make-bed.sh`, zero licensing). Voiceover
@@ -24,15 +24,17 @@ This is the execution of the "short-form engine" in
   auto-interleaves subtests, and records every key in `posted-keys.json` so no
   question ever repeats across batches. Verified with a 3-clip run.
 - `scripts/build.mjs` = single clip; `scripts/lib.mjs` = shared helpers.
-- Committed on branch **`mobile/phase2-study-loop`** (NOT main — see below).
+- **On `main`** and pushed (`origin/main` @ `0600be4`, 2026-06-19). Lives in
+  `tools/` so it's isolated from the site build.
 
 ## ⚠️ Open / known issues
-1. **Wrong branch.** Repo was on `mobile/phase2-study-loop` when committed.
-   It's in `tools/` (not part of the site build) so it belongs on `main`.
-   → cherry-pick the tool commit onto `main`.
-2. **Silent.** No `ASVAB_ELEVENLABS_API_KEY` in central `.env` yet → renders
-   without audio. Add the key (+ optional `ASVAB_ELEVENLABS_VOICE_ID`) for voice.
-3. **No posting yet.** Render only; nothing publishes to TikTok/Reels/Shorts.
+1. **No voiceover key.** No `ASVAB_ELEVENLABS_API_KEY` in central `.env` yet →
+   `--voice` renders silent. Default render uses the license-free sound bed, so
+   this only matters if you opt into narration. Add the key (+ optional
+   `ASVAB_ELEVENLABS_VOICE_ID`) to enable voice.
+2. **No posting yet.** Render only; nothing publishes to TikTok/Reels/Shorts.
+   Monthly workflow = `npm run batch 30` → bulk-upload/schedule by hand (free
+   native schedulers). API auto-post is the optional later step.
 
 ## ▶️ Pick up — run it on any machine
 ```bash
