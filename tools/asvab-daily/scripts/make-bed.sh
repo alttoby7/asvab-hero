@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# Regenerate the license-free sound bed (public/bed.mp3): a silent 20.5s base
+# Regenerate the license-free sound bed (public/bed.mp3): a silent 23s base
 # with three countdown ticks (5.5/6.5/7.5s) and a two-tone reveal chime (8.5s),
 # timed to the QuestionShort visual timeline. 100% synthesized — no licensing.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 mkdir -p public
 ffmpeg -y -loglevel error \
-  -f lavfi -i "anullsrc=r=44100:cl=mono:d=20.5" \
+  -f lavfi -i "anullsrc=r=44100:cl=mono:d=23" \
   -f lavfi -i "sine=frequency=1100:duration=0.07" \
   -f lavfi -i "sine=frequency=1100:duration=0.07" \
   -f lavfi -i "sine=frequency=1100:duration=0.07" \

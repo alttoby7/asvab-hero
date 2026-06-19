@@ -4,7 +4,7 @@ import { QuestionShort, type QuestionProps } from "./QuestionShort";
 
 const FPS = 30;
 // Fixed visual timeline length (frames) when there is no voiceover.
-const SILENT_FRAMES = 615; // 20.5s
+const SILENT_FRAMES = 690; // 23s (see QuestionShort timeline; explanation holds 8.5s)
 
 const defaultProps: QuestionProps = {
   subtest: "Arithmetic Reasoning",
