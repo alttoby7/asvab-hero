@@ -6,7 +6,7 @@ import RelatedLinks from "@/components/RelatedLinks";
 import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
-  title: "Can You Use a Calculator on the ASVAB? | ASVAB Hero",
+  title: "Can You Use a Calculator on the ASVAB?",
   description:
     "Can you use a calculator on the ASVAB? No, not on any version. Learn what's provided, the rare accommodation exception, and 7 ways to do the math without one.",
   alternates: {
@@ -104,6 +104,20 @@ export default function CanYouUseACalculatorOnTheASVABPage() {
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           Can You Use a Calculator on the ASVAB?
         </h1>
+
+        <figure className="my-6">
+          <img
+            src="/images/generated/asvab-can-you-use-a-calculator-on-the-asvab-hero.jpg"
+            alt="A focused young ASVAB test-taker at a computer testing station working a math problem by hand with a pencil on scratch paper, with no calculator on the desk"
+            className="w-full rounded-2xl"
+            width={1536}
+            height={1024}
+          />
+          <figcaption className="mt-2 text-xs italic text-text-tertiary">
+            On the ASVAB, scratch paper and a pencil are the only math aids you
+            get. Illustration.
+          </figcaption>
+        </figure>
 
         <VerifiedBlock
           verifiedDate="June 2026"
