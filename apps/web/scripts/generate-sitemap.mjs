@@ -39,6 +39,7 @@ const pages = [
   { path: "/how-to-retake-the-asvab", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-arithmetic-reasoning-tips", priority: "0.8", changefreq: "monthly" },
   { path: "/how-many-questions-on-the-asvab", priority: "0.8", changefreq: "monthly" },
+  { path: "/can-you-use-a-calculator-on-the-asvab", priority: "0.8", changefreq: "monthly" },
   { path: "/marine-corps-ranks", priority: "0.9", changefreq: "monthly" },
   { path: "/asvab-score-ranges", priority: "0.8", changefreq: "monthly" },
   { path: "/afqt-score", priority: "0.8", changefreq: "monthly" },

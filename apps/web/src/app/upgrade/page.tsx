@@ -198,7 +198,7 @@ function UpgradeContent() {
       {/* Hero image — deferred, lazy-loaded, below CTA */}
       <div className="mb-12 mx-auto max-w-3xl">
         <BrandHero
-          src="/images/generated/asvab-upgrade-hero.png"
+          src="/images/generated/asvab-upgrade-hero.webp"
           alt="A focused candidate breaking through ASVAB practice, calculator in hand, notebook of worked-out problems, mid-morning daylight."
           width={1536}
           height={1024}
