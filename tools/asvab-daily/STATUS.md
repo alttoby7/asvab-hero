@@ -48,6 +48,14 @@ node scripts/build.mjs ar-3      # pin a specific question by external_key
 Needs: Node 22, central `0-AI/.env` synced (Google Drive) or `CENTRAL_ENV` set.
 Remotion auto-downloads its headless browser on first render.
 
+## 📺 Channels (live homes for the clips)
+- **TikTok:** @asvabhero (`trish@asvabhero.com`) — hand-post to add a trending
+  sound, or schedule (~10-day native cap).
+- **YouTube:** @ASVABHero — channel `UCjbeA68SyQ3RZWXlilU8QyA`. Bulk-upload +
+  schedule a month free in YouTube Studio.
+- **Instagram Reels:** not created yet (optional 3rd mirror).
+- Set each profile's bio link to `asvabhero.com` (captions say "link in bio").
+
 ## ⏭️ Next steps (in order)
 1. Land the tool commit on `main`.
 2. **Monthly workflow (no API needed):** `npm run batch 30` → bulk-upload the
