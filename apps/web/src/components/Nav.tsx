@@ -40,7 +40,10 @@ export default function Nav() {
   if (
     pathname?.startsWith("/app") ||
     pathname?.startsWith("/account") ||
-    pathname?.startsWith("/embed/")
+    pathname?.startsWith("/embed/") ||
+    // Printed-book QR landings convert better with no marketing chrome.
+    pathname === "/book" ||
+    pathname === "/review"
   )
     return null;
 

@@ -12,3 +12,7 @@
 
 # Cannibalization consolidation (2026-06-14) — thin duplicate merged into the canonical GT page
 /gt-score-requirements             /gt-score                      301
+
+# Printed-book QR URLs are bare (no trailing slash). Normalize accidental /book/ and /review/.
+/book/                             /book                          301
+/review/                           /review                        301
