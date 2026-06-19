@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://asvabhero.com/images/generated/asvab-is-the-asvab-hard-hero.png",
+        url: "https://asvabhero.com/images/generated/asvab-is-the-asvab-hard-hero-alt2.png",
         width: 1536,
         height: 1024,
         alt: "A calculator with a red no symbol over it, signaling no calculator is allowed on the ASVAB",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description:
       "It's coachable, not an IQ test. See how hard the ASVAB really is by section, branch, and score tier.",
     images: [
-      "https://asvabhero.com/images/generated/asvab-is-the-asvab-hard-hero.png",
+      "https://asvabhero.com/images/generated/asvab-is-the-asvab-hard-hero-alt2.png",
     ],
   },
 };
