@@ -13,11 +13,17 @@ This is the execution of the "short-form engine" in
 `apps/web/docs/social-channel-strategy-2026-06.md`.
 
 ## ✅ Done & verified
-- Remotion project scaffolded + renders end-to-end. Sample: MK-12, 1080×1920
-  H.264, 20.5s (`out/video.mp4`). Branded emerald template:
-  hook → question → countdown → reveal → explanation → CTA end card.
-- `scripts/build.mjs` pulls a screen-friendly question via Supabase REST and
-  writes `out/props.json`; reads secrets from central `0-AI/.env`.
+- Remotion project renders end-to-end. 1080×1920 H.264, 20.5s. Branded emerald
+  template: hook → question → countdown → reveal → explanation → CTA end card.
+- **Audio default = license-free sound bed** (`public/bed.mp3`: countdown ticks +
+  reveal chime, synthesized by `scripts/make-bed.sh`, zero licensing). Voiceover
+  is now OPTIONAL (`--voice`, needs ElevenLabs key). Decision: skip VO — on a
+  personal TikTok you can add a trending sound in-app; on-screen text carries it.
+- **⭐ Batch mode** (`npm run batch 30`) renders a whole month at once →
+  `out/batch/clip-NN_<key>.mp4` + `captions.csv` (caption+hashtags per clip),
+  auto-interleaves subtests, and records every key in `posted-keys.json` so no
+  question ever repeats across batches. Verified with a 3-clip run.
+- `scripts/build.mjs` = single clip; `scripts/lib.mjs` = shared helpers.
 - Committed on branch **`mobile/phase2-study-loop`** (NOT main — see below).
 
 ## ⚠️ Open / known issues
@@ -41,16 +47,20 @@ Needs: Node 22, central `0-AI/.env` synced (Google Drive) or `CENTRAL_ENV` set.
 Remotion auto-downloads its headless browser on first render.
 
 ## ⏭️ Next steps (in order)
-1. Add `ASVAB_ELEVENLABS_API_KEY` to central `.env` → re-render voiced. *(owner)*
-2. Land the tool commit on `main`.
-3. **Posting integration** — Ayrshare / Blotato / Upload-Post API → TikTok
-   @asvabhero + Reels + Shorts (templated caption + #asvab #miltok #fyp +
-   bio link). Account email: `trish@asvabhero.com`.
-4. **Deploy to droplet + n8n daily cron** (n8n.basecampdigital.pro) — the real
-   "runs anywhere, no laptop" layer. Chain: build.mjs → render → post → log
-   (track posted external_keys to avoid repeats).
-5. Add the sibling **"Score → Jobs"** series (pick score+branch → list jobs
-   from the job-by-score data) for variety; rotate with the question series.
+1. Land the tool commit on `main`.
+2. **Monthly workflow (no API needed):** `npm run batch 30` → bulk-upload the
+   clips + paste captions from `captions.csv`:
+   - **YouTube Shorts:** schedule a month free in YouTube Studio.
+   - **Instagram Reels:** schedule free in Meta Business Suite.
+   - **TikTok (@asvabhero, `trish@asvabhero.com`):** native scheduler caps ~10
+     days; either schedule in ~3 sittings, use a free tool (Metricool), or
+     hand-post to add a trending sound (the only thing scheduling gives up).
+3. (Optional) ElevenLabs voiceover: add `ASVAB_ELEVENLABS_API_KEY` to central
+   `.env`, run with `--voice`. Best for Word Knowledge/vocab + YouTube only.
+4. (Optional, later) full API auto-post + n8n cron on the droplet — only if you
+   want zero manual posting and accept baked audio (no trending sound).
+5. Sibling **"Score → Jobs"** series (pick score+branch → list jobs from the
+   job-by-score data) for variety; rotate with the question series.
 
 ## Guardrails
 Questions are original (never label "real ASVAB"); rotate hooks/subtests (avoid
