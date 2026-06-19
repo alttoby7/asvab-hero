@@ -38,6 +38,20 @@ const FONT =
 
 const letters = ["A", "B", "C", "D"];
 
+// Keep math expressions on one line. A number/operator sequence like "18 = 18"
+// or "150 / 6 = 25" must never wrap mid-equation (an orphaned "18" reads as a
+// typo). We only ever convert spaces that ALREADY sit next to a math operator
+// into non-breaking spaces — we never insert spaces — so prose (and hyphenated
+// words like "self-paced") is left untouched, but every clip in every batch
+// gets clean, unbreakable equations automatically.
+const MATH_LEFT = "0-9A-Za-z)\\]%"; // can END a math token
+const MATH_RIGHT = "0-9A-Za-z(\\[."; // can START a math token
+const MATH_OP = "\\-+×÷*/=<>≤≥≈^"; // operators that glue operands together
+const beforeOp = new RegExp(`([${MATH_LEFT}])[ \\t]+(?=[${MATH_OP}])`, "g");
+const afterOp = new RegExp(`([${MATH_OP}])[ \\t]+(?=[${MATH_RIGHT}])`, "g");
+const keepMath = (text: string) =>
+  text.replace(beforeOp, "$1 ").replace(afterOp, "$1 ");
+
 const fade = (frame: number, start: number, dur = 12) =>
   interpolate(frame, [start, start + dur], [0, 1], {
     extrapolateLeft: "clamp",
@@ -165,7 +179,7 @@ export const QuestionShort: React.FC<QuestionProps> = ({
             marginBottom: 44,
           }}
         >
-          {stem}
+          {keepMath(stem)}
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 26 }}>
@@ -215,7 +229,7 @@ export const QuestionShort: React.FC<QuestionProps> = ({
                 >
                   {letters[i]}
                 </div>
-                <div>{c}</div>
+                <div>{keepMath(c)}</div>
                 {correctStyle && (
                   <div style={{ marginLeft: "auto", fontSize: 56 }}>✓</div>
                 )}
@@ -283,7 +297,7 @@ export const QuestionShort: React.FC<QuestionProps> = ({
             WHY
           </div>
           <div style={{ fontSize: 46, fontWeight: 600, lineHeight: 1.25 }}>
-            {explanation}
+            {keepMath(explanation)}
           </div>
         </div>
       )}
