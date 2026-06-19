@@ -3,6 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
+import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
   title: "Can You Use a Calculator on the ASVAB? | ASVAB Hero",
@@ -104,13 +105,28 @@ export default function CanYouUseACalculatorOnTheASVABPage() {
           Can You Use a Calculator on the ASVAB?
         </h1>
 
-        <p className="mt-4 text-text-secondary">
-          No, you cannot <strong>use a calculator on the ASVAB</strong>. The ban
-          holds in every form, computer or paper, and there is no on-screen
-          calculator button on the computer version either.
-        </p>
+        <VerifiedBlock
+          verifiedDate="June 2026"
+          sources={[
+            {
+              label: "officialasvab.com (OPA executive note on calculator use)",
+              url: "https://www.officialasvab.com/wp-content/uploads/2026/02/20260128_DTAC_ExecutiveNote_TO52-4.4.7-TheUseOfCalculatorsOnTheASVAB.pdf",
+            },
+          ]}
+        >
+          <p className="text-lg font-semibold text-text-primary">
+            No, you cannot <strong>use a calculator on the ASVAB</strong>.
+          </p>
+          <p className="mt-2 text-text-secondary">
+            The ban holds on every version, the computer (CAT-ASVAB) and the
+            paper test, and there is no on-screen calculator button either. A
+            pencil and scratch paper are the only aids you get. The U.S.
+            military&apos;s Office of People Analytics reaffirmed the
+            no-calculator policy in 2026.
+          </p>
+        </VerifiedBlock>
 
-        <p className="text-text-secondary">
+        <p className="mt-6 text-text-secondary">
           The phrase &ldquo;ASVAB calculator&rdquo; trips people up. Some readers
           want to know if they can bring a device to the test (you can&apos;t).
           Others are hunting for a tool that estimates their AFQT score from
@@ -129,14 +145,6 @@ export default function CanYouUseACalculatorOnTheASVABPage() {
           the one rare exception, and how to do the math fast without a
           calculator.
         </p>
-
-        <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
-          <p className="text-sm font-semibold text-text-primary">Bottom line</p>
-          <p className="mt-1 text-sm text-text-secondary">
-            No calculators on any version of the ASVAB. Scratch paper and a
-            pencil are provided, and you should use them aggressively.
-          </p>
-        </aside>
 
         {/* ─── THE SHORT ANSWER ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -195,32 +203,48 @@ export default function CanYouUseACalculatorOnTheASVABPage() {
           policy, and the OPA spells them out.
         </p>
 
-        <p className="text-text-secondary">
-          <strong>It measures aptitude, not button-pushing.</strong> The ASVAB
-          tests whether you can carry out a calculation and follow the correct
-          process, things like order of operations and knowing which operation a
-          word problem calls for. A question that asks you to divide and then
-          take a square root is checking whether you understand the steps. A
-          calculator could spit out the answer while telling examiners nothing
-          about whether you understood it.
-        </p>
+        <div className="my-6 space-y-3">
+          <div className="rounded-lg bg-navy p-4">
+            <p className="font-display text-base font-bold text-text-primary">
+              1. It measures aptitude, not button-pushing
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">
+              The ASVAB tests whether you can carry out a calculation and follow
+              the correct process, things like order of operations and knowing
+              which operation a word problem calls for. A question that asks you
+              to divide and then take a square root is checking whether you
+              understand the steps. A calculator could spit out the answer while
+              telling examiners nothing about whether you understood it.
+            </p>
+          </div>
 
-        <p className="text-text-secondary">
-          <strong>Military jobs require hand math.</strong> Plenty of roles need
-          quick mental arithmetic when a decision can&apos;t wait and no device
-          is handy. The test items have been written on that assumption since
-          the ASVAB was first introduced in 1968. They were never designed to
-          need a calculator in the first place.
-        </p>
+          <div className="rounded-lg bg-navy p-4">
+            <p className="font-display text-base font-bold text-text-primary">
+              2. Military jobs require hand math
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">
+              Plenty of roles need quick mental arithmetic when a decision
+              can&apos;t wait and no device is handy. The test items have been
+              written on that assumption since the ASVAB was first introduced in
+              1968. They were never designed to need a calculator in the first
+              place.
+            </p>
+          </div>
 
-        <p className="text-text-secondary">
-          <strong>Score integrity.</strong> The ASVAB was standardized in 1997,
-          and its scores are normed against that reference population. Bolting
-          calculators onto questions that weren&apos;t built for them would
-          threaten the reliability of those scores. Research also shows
-          calculators can actually slow some test-takers down and disadvantage
-          weaker ones rather than help them.
-        </p>
+          <div className="rounded-lg bg-navy p-4">
+            <p className="font-display text-base font-bold text-text-primary">
+              3. Score integrity
+            </p>
+            <p className="mt-1 text-sm text-text-secondary">
+              The ASVAB was standardized in 1997, and its scores are normed
+              against that reference population. Bolting calculators onto
+              questions that weren&apos;t built for them would threaten the
+              reliability of those scores. Research also shows calculators can
+              actually slow some test-takers down and disadvantage weaker ones
+              rather than help them.
+            </p>
+          </div>
+        </div>
 
         <p className="text-text-secondary">
           Then there&apos;s the part that surprises most people. If calculators
@@ -366,7 +390,7 @@ export default function CanYouUseACalculatorOnTheASVABPage() {
 
         <p className="text-text-secondary">
           Here&apos;s the pace you&apos;re up against, with no calculator to lean
-          on:
+          on. The per-question time is the number that matters:
         </p>
 
         <div className="my-4 overflow-x-auto">
@@ -374,58 +398,46 @@ export default function CanYouUseACalculatorOnTheASVABPage() {
             <thead>
               <tr className="border-b border-navy-border">
                 <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Format
+                  Math subtest
                 </th>
                 <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Subtest
-                </th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Questions
-                </th>
-                <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">
-                  Time
+                  CAT-ASVAB
                 </th>
                 <th className="pb-2 text-left font-semibold text-text-secondary">
-                  Per question
+                  Paper
                 </th>
               </tr>
             </thead>
             <tbody className="text-text-secondary">
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
-                  CAT-ASVAB
+                  Arithmetic Reasoning (AR)
                 </td>
-                <td className="py-2 pr-4">Arithmetic Reasoning</td>
-                <td className="py-2 pr-4 font-mono">16</td>
-                <td className="py-2 pr-4 font-mono">39 min</td>
-                <td className="py-2 font-mono">~2 min 26 sec</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  CAT-ASVAB
+                <td className="py-2 pr-4 font-mono">
+                  16 Q / 39 min
+                  <br />
+                  <span className="text-accent">~2 min 26 sec each</span>
                 </td>
-                <td className="py-2 pr-4">Mathematics Knowledge</td>
-                <td className="py-2 pr-4 font-mono">16</td>
-                <td className="py-2 pr-4 font-mono">20 min</td>
-                <td className="py-2 font-mono">~75 sec</td>
-              </tr>
-              <tr className="border-b border-navy-border/50">
-                <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Paper
+                <td className="py-2 font-mono">
+                  30 Q / 36 min
+                  <br />
+                  <span className="text-accent">~72 sec each</span>
                 </td>
-                <td className="py-2 pr-4">Arithmetic Reasoning</td>
-                <td className="py-2 pr-4 font-mono">30</td>
-                <td className="py-2 pr-4 font-mono">36 min</td>
-                <td className="py-2 font-mono">~72 sec</td>
               </tr>
               <tr>
                 <td className="py-2 pr-4 font-semibold text-text-primary">
-                  Paper
+                  Mathematics Knowledge (MK)
                 </td>
-                <td className="py-2 pr-4">Mathematics Knowledge</td>
-                <td className="py-2 pr-4 font-mono">25</td>
-                <td className="py-2 pr-4 font-mono">24 min</td>
-                <td className="py-2 font-mono">~58 sec</td>
+                <td className="py-2 pr-4 font-mono">
+                  16 Q / 20 min
+                  <br />
+                  <span className="text-accent">~75 sec each</span>
+                </td>
+                <td className="py-2 font-mono">
+                  25 Q / 24 min
+                  <br />
+                  <span className="text-accent">~58 sec each</span>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -513,53 +525,121 @@ export default function CanYouUseACalculatorOnTheASVABPage() {
           you ever crunch a number. Seven tactics do most of the work.
         </p>
 
-        <p className="text-text-secondary">
-          <strong>1. Backsolve from the answers.</strong> Instead of setting up
-          algebra, plug the middle answer choice into the problem. Too big? Try
-          a smaller choice. Too small? Go larger. You&apos;ll often land the
-          answer in one or two tries without writing an equation.
-        </p>
+        <div className="my-6 space-y-3">
+          <div className="flex gap-3 rounded-lg bg-navy p-4">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent font-display text-sm font-bold text-white">
+              1
+            </span>
+            <div>
+              <p className="font-display text-base font-bold text-text-primary">
+                Backsolve from the answers
+              </p>
+              <p className="mt-1 text-sm text-text-secondary">
+                Instead of setting up algebra, plug the middle answer choice into
+                the problem. Too big? Try a smaller choice. Too small? Go larger.
+                You&apos;ll often land the answer in one or two tries without
+                writing an equation.
+              </p>
+            </div>
+          </div>
 
-        <p className="text-text-secondary">
-          <strong>2. Reality-check elimination.</strong> ASVAB word problems
-          describe real situations. If a question asks how many gallons fill a
-          kid&apos;s wading pool and one choice says 17,000, cross it off on
-          sight. That much water fills a real swimming pool. Zero calculation,
-          one or two answers gone.
-        </p>
+          <div className="flex gap-3 rounded-lg bg-navy p-4">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent font-display text-sm font-bold text-white">
+              2
+            </span>
+            <div>
+              <p className="font-display text-base font-bold text-text-primary">
+                Reality-check elimination
+              </p>
+              <p className="mt-1 text-sm text-text-secondary">
+                ASVAB word problems describe real situations. If a question asks
+                how many gallons fill a kid&apos;s wading pool and one choice says
+                17,000, cross it off on sight. That much water fills a real
+                swimming pool. Zero calculation, one or two answers gone.
+              </p>
+            </div>
+          </div>
 
-        <p className="text-text-secondary">
-          <strong>3. Last-digit elimination.</strong> Multiply only the final
-          digits first. For 47 × 3, the answer has to end in 1, because 7 × 3 =
-          21. Kill any choice that doesn&apos;t end in 1 before you do the full
-          multiplication.
-        </p>
+          <div className="flex gap-3 rounded-lg bg-navy p-4">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent font-display text-sm font-bold text-white">
+              3
+            </span>
+            <div>
+              <p className="font-display text-base font-bold text-text-primary">
+                Last-digit elimination
+              </p>
+              <p className="mt-1 text-sm text-text-secondary">
+                Multiply only the final digits first. For 47 × 3, the answer has
+                to end in 1, because 7 × 3 = 21. Kill any choice that
+                doesn&apos;t end in 1 before you do the full multiplication.
+              </p>
+            </div>
+          </div>
 
-        <p className="text-text-secondary">
-          <strong>4. The 10% method for percents.</strong> Move the decimal one
-          place left to get 10% instantly, then build from there. For 15% of
-          240: 10% is 24, half of that is 12, so 24 + 12 = 36. Done in your
-          head.
-        </p>
+          <div className="flex gap-3 rounded-lg bg-navy p-4">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent font-display text-sm font-bold text-white">
+              4
+            </span>
+            <div>
+              <p className="font-display text-base font-bold text-text-primary">
+                The 10% method for percents
+              </p>
+              <p className="mt-1 text-sm text-text-secondary">
+                Move the decimal one place left to get 10% instantly, then build
+                from there. For 15% of 240: 10% is 24, half of that is 12, so 24
+                + 12 = 36. Done in your head.
+              </p>
+            </div>
+          </div>
 
-        <p className="text-text-secondary">
-          <strong>5. The multiply-by-5 and by-9 shortcuts.</strong> To multiply
-          by 5, go times 10 then halve it: 46 × 5 = 460 ÷ 2 = 230. To multiply
-          by 9, go times 10 then subtract the original: 37 × 9 = 370 - 37 = 333.
-        </p>
+          <div className="flex gap-3 rounded-lg bg-navy p-4">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent font-display text-sm font-bold text-white">
+              5
+            </span>
+            <div>
+              <p className="font-display text-base font-bold text-text-primary">
+                The multiply-by-5 and by-9 shortcuts
+              </p>
+              <p className="mt-1 text-sm text-text-secondary">
+                To multiply by 5, go times 10 then halve it: 46 × 5 = 460 ÷ 2 =
+                230. To multiply by 9, go times 10 then subtract the original: 37
+                × 9 = 370 - 37 = 333.
+              </p>
+            </div>
+          </div>
 
-        <p className="text-text-secondary">
-          <strong>6. Decompose and adjust.</strong> Round to a friendly number,
-          multiply, then correct. For 48 × 5, do 50 × 5 = 250, then subtract 2 ×
-          5 = 10 to get 240. Easier than long multiplication every time.
-        </p>
+          <div className="flex gap-3 rounded-lg bg-navy p-4">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent font-display text-sm font-bold text-white">
+              6
+            </span>
+            <div>
+              <p className="font-display text-base font-bold text-text-primary">
+                Decompose and adjust
+              </p>
+              <p className="mt-1 text-sm text-text-secondary">
+                Round to a friendly number, multiply, then correct. For 48 × 5,
+                do 50 × 5 = 250, then subtract 2 × 5 = 10 to get 240. Easier than
+                long multiplication every time.
+              </p>
+            </div>
+          </div>
 
-        <p className="text-text-secondary">
-          <strong>7. Memorize the Pythagorean triplets.</strong> Lock in 3-4-5,
-          5-12-13, and 8-15-17, plus their multiples. When you see a right
-          triangle with sides 9 and 12, recognize it as 3 × (3-4-5) and the
-          hypotenuse is 15 instantly. No theorem needed.
-        </p>
+          <div className="flex gap-3 rounded-lg bg-navy p-4">
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent font-display text-sm font-bold text-white">
+              7
+            </span>
+            <div>
+              <p className="font-display text-base font-bold text-text-primary">
+                Memorize the Pythagorean triplets
+              </p>
+              <p className="mt-1 text-sm text-text-secondary">
+                Lock in 3-4-5, 5-12-13, and 8-15-17, plus their multiples. When
+                you see a right triangle with sides 9 and 12, recognize it as 3 ×
+                (3-4-5) and the hypotenuse is 15 instantly. No theorem needed.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <p className="text-text-secondary">
           Drill these on{" "}
@@ -648,23 +728,31 @@ export default function CanYouUseACalculatorOnTheASVABPage() {
           track before you ever walk into MEPS.
         </p>
 
-        <p className="text-text-secondary">
-          Run your numbers through our free{" "}
+        <div className="my-6 rounded-2xl border border-accent/40 bg-navy p-5">
+          <p className="font-display text-base font-bold text-text-primary">
+            Estimate your ASVAB score in seconds
+          </p>
+          <p className="mt-1 text-sm text-text-secondary">
+            Enter your subtest scores and instantly see your AFQT percentile and
+            which branches and jobs you qualify for.
+          </p>
           <Link
             href="/calculator"
-            className="text-accent hover:text-accent-hover"
+            className="mt-3 inline-block rounded-xl bg-accent px-5 py-2.5 font-display text-sm font-bold text-white transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)] no-underline"
           >
-            ASVAB score calculator
+            Open the Free Score Calculator
           </Link>
-          . Don&apos;t have scores yet? Take a{" "}
-          <Link
-            href="/practice-test"
-            className="text-accent hover:text-accent-hover"
-          >
-            free practice test
-          </Link>{" "}
-          first to generate them, then plug the results in.
-        </p>
+          <p className="mt-3 text-xs text-text-tertiary">
+            No scores yet? Take a{" "}
+            <Link
+              href="/practice-test"
+              className="text-accent hover:text-accent-hover"
+            >
+              free practice test
+            </Link>{" "}
+            first to generate them.
+          </p>
+        </div>
 
         {/* ─── FAQ ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
