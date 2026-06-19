@@ -11,7 +11,9 @@ export default function Footer() {
   if (
     pathname?.startsWith("/app") ||
     pathname?.startsWith("/account") ||
-    pathname?.startsWith("/embed/")
+    pathname?.startsWith("/embed/") ||
+    // /review is a pure redirect helper; /book keeps the slim footer for trust/legal.
+    pathname === "/review"
   )
     return null;
 

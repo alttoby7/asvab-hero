@@ -34,7 +34,9 @@ export default function UpgradeBanner() {
   if (
     pathname?.startsWith("/app") ||
     pathname?.startsWith("/account") ||
-    pathname?.startsWith("/embed/")
+    pathname?.startsWith("/embed/") ||
+    pathname === "/book" ||
+    pathname === "/review"
   )
     return null;
   if (sessionLoading || entitlementLoading) return null;
