@@ -15,7 +15,8 @@ export type QuestionProps = {
   choices: string[];
   correctIndex: number;
   explanation: string;
-  hasAudio: boolean;
+  /** filename in public/ to play (e.g. "bed.mp3" or "voiceover.mp3"); null = silent */
+  audioSrc: string | null;
 };
 
 // ---- Timeline (frames @ 30fps) ----
@@ -49,7 +50,7 @@ export const QuestionShort: React.FC<QuestionProps> = ({
   choices,
   correctIndex,
   explanation,
-  hasAudio,
+  audioSrc,
 }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
@@ -68,7 +69,7 @@ export const QuestionShort: React.FC<QuestionProps> = ({
         color: INK,
       }}
     >
-      {hasAudio ? <Audio src={staticFile("voiceover.mp3")} /> : null}
+      {audioSrc ? <Audio src={staticFile(audioSrc)} /> : null}
 
       {/* brand bar */}
       <div

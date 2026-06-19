@@ -9,15 +9,32 @@ built to run unattended on a daily cron (n8n) and cross-post to
 
 ```bash
 npm install
-npm run make            # build (pick question + VO) then render -> out/video.mp4
-# or, step by step:
-npm run build           # pick a question, synth VO, write out/props.json
-npm run still           # render one preview frame -> out/preview.png
-npm run render          # render the MP4 -> out/video.mp4
+
+# --- a whole month at once (the main workflow) ---
+npm run batch 30        # render 30 clips -> out/batch/ + captions.csv
+
+# --- a single clip ---
+npm run make            # build + render -> out/video.mp4
+npm run build && npm run still   # just preview one frame -> out/preview.png
+node scripts/build.mjs ar-3      # pin a specific question by external_key
+node scripts/build.mjs --voice   # ElevenLabs narration instead of sound bed
+npm run bed             # (re)generate the license-free sound bed
 npm run studio          # open Remotion Studio to tweak the template
 ```
 
-Pin a specific question: `node scripts/build.mjs ar-3`
+### Audio
+Default = `public/bed.mp3`, a synthesized **license-free** bed (countdown ticks +
+reveal chime). No voiceover needed — on a personal TikTok you add a trending
+sound in-app. `--voice` swaps in an ElevenLabs narration (needs the key).
+
+### Monthly publishing (no API required)
+`npm run batch 30` makes the files + `out/batch/captions.csv`. Then:
+- **YouTube Shorts** — bulk upload + schedule a month in YouTube Studio (free).
+- **Instagram Reels** — schedule in Meta Business Suite (free).
+- **TikTok** — native scheduler ~10 days max; schedule in sittings, use a free
+  tool (Metricool), or hand-post to add a trending sound.
+
+`posted-keys.json` records every question used so batches never repeat.
 
 ## Secrets (central 0-AI/.env)
 
