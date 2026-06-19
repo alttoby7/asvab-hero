@@ -10,6 +10,7 @@
     "render": "remotion render QuestionShort out/video.mp4 --props=out/props.json",
     "make": "node scripts/build.mjs && remotion render QuestionShort out/video.mp4 --props=out/props.json",
     "batch": "node scripts/batch.mjs",
+    "regen-captions": "node scripts/regen-captions.mjs",
     "bed": "bash scripts/make-bed.sh",
     "studio": "remotion studio"
   },

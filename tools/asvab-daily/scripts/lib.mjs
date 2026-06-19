@@ -81,12 +81,14 @@ export function buildScript(q, subtestName, seed = Math.random()) {
   return { hook, narration };
 }
 
-// Social caption + hashtags for bulk scheduling.
+// Social caption + hashtags for bulk scheduling. NEVER reveal the answer here —
+// the comment-bait ("drop your answer") only works if the caption doesn't spoil
+// it (the video reveals it after the countdown). The answer lives in its own
+// CSV column for the poster's reference.
 export function buildCaption(q, subtestName) {
-  const letter = LETTERS[q.correct_index];
   return (
     `Can you pass this ASVAB ${subtestName} question? 🎯 ` +
-    `Drop your answer 👇 (it's ${letter}). ` +
+    `Drop your answer A, B, C, or D 👇 — then watch for the reveal. ` +
     `Practice 4,500+ questions free — link in bio. ` +
     `#asvab #asvabprep #asvabtest #military #miltok #futuresoldier #fyp`
   );
