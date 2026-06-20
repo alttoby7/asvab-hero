@@ -1,6 +1,23 @@
 # ASVAB Daily — STATUS / PICK UP HERE
 
-_Last updated: 2026-06-18_
+_Last updated: 2026-06-19_
+
+## 🔖 PICK UP HERE (next session)
+Month 1 is **generated and delivered**; profile is set except the photo. The only
+blocker is that Claude **can't push local files into a browser file input** in
+this env (`file_upload` rejects host paths), so the owner does the file-PICK and
+Claude drives the rest. Next steps:
+1. **Profile photo** — owner: TikTok Edit profile → pencil → pick
+   `asvabhero-avatar.png` from `~/google-drive/0-AI/ASVAB-Daily-batch-2026-06/`.
+2. **First post** — owner: tiktok.com/tiktokstudio/upload → "Select video" → pick
+   `clip-01_AS-B28-020.mp4` from that folder → Claude fills caption (captions.csv)
+   + cover + schedule. Then decide: web-schedule all 30 (no trending sound) vs
+   hand-post on phone (adds trending sound).
+3. **YouTube Shorts** (@ASVABHero, `UCjbeA68SyQ3RZWXlilU8QyA`) — bulk-upload the 30
+   in YouTube Studio, schedule 1/day.
+4. Month 2 anytime: `npm run batch 30` (skips the 30 already used).
+- TikTok bio already SET+verified: "Free ASVAB practice. 4,500+ questions. Know
+  your score. asvabhero.com". Name/username already correct.
 
 ## What this is
 Fully-automated **faceless** ASVAB short-form video generator. Pulls a question
@@ -13,8 +30,15 @@ This is the execution of the "short-form engine" in
 `apps/web/docs/social-channel-strategy-2026-06.md`.
 
 ## ✅ Done & verified
-- Remotion project renders end-to-end. 1080×1920 H.264, 23s. Branded emerald
-  template: hook → question → countdown → reveal → explanation → CTA end card.
+- Remotion project renders end-to-end. 1080×1920 H.264, 23s. Branded **orange**
+  template (matches asvabhero.com: orange #f97316 on navy #0a1628 — owner chose
+  this over the original emerald): hook → question → countdown → reveal (correct
+  answer highlighted, equations kept on one line) → explanation → CTA end card.
+- **Month 1 generated:** 30 orange clips in `out/batch/` + copied to Drive
+  `~/google-drive/0-AI/ASVAB-Daily-batch-2026-06/` (clips + captions.csv +
+  asvabhero-avatar.png + UPLOAD-GUIDE.txt).
+- `npm run regen-captions` (rebuild captions w/o re-render) and
+  `npm run rerender-batch` (re-render SAME questions after a restyle) added.
 - **Audio default = license-free sound bed** (`public/bed.mp3`: countdown ticks +
   reveal chime, synthesized by `scripts/make-bed.sh`, zero licensing). Voiceover
   is now OPTIONAL (`--voice`, needs ElevenLabs key). Decision: skip VO — on a
