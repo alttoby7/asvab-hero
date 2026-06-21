@@ -77,7 +77,7 @@ export function buildScript(q, subtestName, seed = Math.random()) {
   const narration =
     `${hook} ${q.stem} Is it A, B, C, or D? Answer in three... two... one. ` +
     `The answer is ${correct}. ${q.explanation} ` +
-    `Want to pass the real thing? Practice four thousand five hundred questions free at ASVAB Hero. Link in bio.`;
+    `Want to pass the real thing? Free score calculator and practice at ASVAB Hero. Link in bio.`;
   return { hook, narration };
 }
 
@@ -89,7 +89,7 @@ export function buildCaption(q, subtestName) {
   return (
     `Can you pass this ASVAB ${subtestName} question? 🎯 ` +
     `Drop your answer A, B, C, or D 👇 — then watch for the reveal. ` +
-    `Practice 4,500+ questions free — link in bio. ` +
+    `Free score calculator + practice — link in bio. ` +
     `#asvab #asvabprep #asvabtest #military #miltok #futuresoldier #fyp`
   );
 }

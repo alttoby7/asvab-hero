@@ -21,11 +21,11 @@ export type QuestionProps = {
 
 // ---- Timeline (frames @ 30fps) ----
 const HOOK_END = 75; // 2.5s   hook
-const COUNTDOWN_START = 165; // 5.5s   countdown begins
-const REVEAL = 255; // 8.5s   answer reveals
-const EXPLAIN_START = 345; // 11.5s  explanation panel (answer sits 3s first)
-const CTA_START = 600; // 20.0s  end card
-// total = 690 frames (23s); explanation holds 11.5s–20.0s = 8.5s
+const COUNTDOWN_START = 300; // 10.0s  countdown begins (7.5s to read question)
+const REVEAL = 390; // 13.0s  answer reveals
+const EXPLAIN_START = 450; // 15.0s  explanation panel (answer sits 2s first)
+const CTA_START = 900; // 30.0s  end card
+// total = 990 frames (33s); explanation holds 15.0s–30.0s = 15s
 
 // Brand palette — matches asvabhero.com (orange #f97316 on navy #0a1628).
 const NAVY = "#0a1628";
