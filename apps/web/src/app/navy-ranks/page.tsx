@@ -168,7 +168,7 @@ export default function NavyRanksPage() {
               <tr>
                 <td className="border border-navy-border px-3 py-2 text-text-secondary font-medium">Enlisted</td>
                 <td className="border border-navy-border px-3 py-2 text-text-secondary">E-1 to E-9</td>
-                <td className="border border-navy-border px-3 py-2 text-text-secondary">Enlist with high school diploma + AFQT minimum 35</td>
+                <td className="border border-navy-border px-3 py-2 text-text-secondary">Enlist with high school diploma + AFQT 31 floor (35 to ship)</td>
               </tr>
               <tr>
                 <td className="border border-navy-border px-3 py-2 text-text-secondary font-medium">Warrant Officer</td>

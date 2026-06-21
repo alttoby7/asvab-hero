@@ -74,8 +74,8 @@ export default function NavyCalculatorPage() {
           is baked into your rank title. Qualifying for a rating depends on
           raw subtest combinations (AR+VE+MK+MC for Nuclear Field, AR+WK+PC+MC
           for Air Traffic Control, etc.). The minimum <strong>AFQT</strong>{" "}
-          for active-duty enlistment is 35 (diploma) or 50 plus 15 college
-          credits (GED). See the{" "}
+          for active-duty enlistment has an official floor of 31, but diploma
+          holders ship at 35; GED holders need 50 plus 15 college credits. See the{" "}
           <Link
             href="/navy-afqt-calculator"
             className="text-accent hover:text-accent-hover"
@@ -141,7 +141,7 @@ export default function NavyCalculatorPage() {
           {[
             {
               q: "What's the minimum AFQT score to join the Navy?",
-              a: "35 with a high school diploma, 50 with a GED (Tier I vs Tier II). Tier III applicants (FSPC-A candidates) have their own pathway. Navy Reserve follows the same AFQT minimums as active duty.",
+              a: "The official floor is 31, but diploma holders must reach 35 to ship; GED holders need 50 plus 15 college credits (Tier I vs Tier II). Tier III applicants (FSPC-A candidates) have their own pathway. Navy Reserve follows the same AFQT minimums as active duty.",
             },
             {
               q: "What Navy rating has the highest ASVAB requirement?",

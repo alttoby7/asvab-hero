@@ -8,7 +8,7 @@ import VerifiedBlock from "@/components/VerifiedBlock";
 import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
-  title: "Navy AFQT Calculator 2026: Check If You Meet the 35 Minimum",
+  title: "Navy AFQT Calculator 2026: Check the 31 Floor (35 to Ship)",
   description:
     "Free Navy and Coast Guard AFQT calculator. Enter AR, WK, PC, MK to see if you meet the Navy 31 minimum (50 + 15 college credits with GED). Coast Guard requires 32.",
   alternates: {
@@ -42,7 +42,7 @@ export default function NavyAfqtCalculatorPage() {
               name: "What AFQT score do I need for the Navy?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "35 with a high school diploma. GED holders need 50 AFQT plus 15 semester hours of college credit. The Navy also runs a DEP Enrichment Program for diploma holders scoring 28 to 30.",
+                text: "The Navy's official floor is 31, but diploma holders must reach 35 to ship to boot camp — so 35 is the number that matters in practice. GED holders need 50 AFQT plus 15 semester hours of college credit. The Navy also runs a DEP Enrichment Program for diploma holders scoring 28 to 30.",
               },
             },
             {
@@ -101,9 +101,10 @@ export default function NavyAfqtCalculatorPage() {
         ]}
       >
         <p>
-          The <strong>Navy AFQT minimum is 31</strong> for diploma holders.
-          GED holders need <strong>50 plus 15 semester hours of college
-          credit</strong>. The Coast Guard uses the same GED structure but
+          The <strong>Navy&apos;s official AFQT floor is 31</strong> for diploma
+          holders, but in practice diploma holders ship to boot camp at
+          <strong> 35+</strong>. GED holders need <strong>50 plus 15 semester
+          hours of college credit</strong>. The Coast Guard uses the same GED structure but
           with a diploma floor of 32. Diploma holders scoring 28
           to 30 can enter the DEP Enrichment Program and retest to 35
           before shipping. The calculator below runs your 4 AFQT subtests
@@ -235,7 +236,7 @@ export default function NavyAfqtCalculatorPage() {
           {[
             {
               q: "What AFQT score do I need for the Navy?",
-              a: "35 with a diploma, 50 plus 15 semester hours of college credit with a GED. The Navy has a middle floor: higher than Army (31), Marines (32), and Coast Guard (32), but lower than Air Force and Space Force (36).",
+              a: "The official floor is 31, but diploma holders must reach 35 to ship; GED holders need 50 plus 15 semester hours of college credit. The Navy's practical bar of 35 sits above Army (31), Marines (32), and Coast Guard (32), and below Air Force and Space Force (36).",
             },
             {
               q: "What about the Coast Guard AFQT minimum?",

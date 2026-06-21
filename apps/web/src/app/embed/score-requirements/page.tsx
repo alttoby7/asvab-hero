@@ -35,12 +35,17 @@ export default function ScoreRequirementsEmbedPage() {
             </tr>
           </thead>
           <tbody>
-            {BRANCH_MINIMUMS.map(({ branch, min, gedNote }) => (
+            {BRANCH_MINIMUMS.map(({ branch, min, practicalMin, gedNote }) => (
               <tr key={branch} className="border-b border-navy-border/50">
                 <td className="px-4 py-2 font-semibold text-text-primary">
                   {branch}
                 </td>
-                <td className="px-4 py-2 font-mono text-accent">{min}</td>
+                <td className="px-4 py-2 font-mono text-accent">
+                  {min}
+                  {practicalMin ? (
+                    <span className="text-text-tertiary"> · {practicalMin} typical</span>
+                  ) : null}
+                </td>
                 <td className="px-4 py-2 text-text-secondary">{gedNote}</td>
               </tr>
             ))}

@@ -30,10 +30,13 @@ const DEFAULT_SCORES: SubtestScores = {
   AO: 50,
 };
 
+// Official regulatory AFQT floors. Keep in sync with the source of truth in
+// lib/branch-minimums.ts (Navy's official floor is 31; it ships diploma holders
+// at 35+ in practice — that nuance lives on the dedicated Navy pages).
 const BRANCH_FLOORS = [
   { branch: "Army", afqt: 31 },
   { branch: "Marine Corps", afqt: 32 },
-  { branch: "Navy", afqt: 35 },
+  { branch: "Navy", afqt: 31 },
   { branch: "Air Force", afqt: 36 },
   { branch: "Space Force", afqt: 36 },
   { branch: "Coast Guard", afqt: 32 },

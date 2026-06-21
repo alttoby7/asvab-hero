@@ -195,7 +195,7 @@ export default function ASVABScoreRequirementsPage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Navy
                 </td>
-                <td className="py-2 pr-4 font-mono">35</td>
+                <td className="py-2 pr-4 font-mono">31<span className="text-text-tertiary"> (35 to ship)</span></td>
                 <td className="py-2 font-mono">50</td>
               </tr>
               <tr className="border-b border-navy-border/50">
@@ -474,7 +474,7 @@ export default function ASVABScoreRequirementsPage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Navy
                 </td>
-                <td className="py-2 pr-4 font-mono">35</td>
+                <td className="py-2 pr-4 font-mono">31<span className="text-text-tertiary"> (35 to ship)</span></td>
                 <td className="py-2 font-mono">50</td>
               </tr>
               <tr className="border-b border-navy-border/50">

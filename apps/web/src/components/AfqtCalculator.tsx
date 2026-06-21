@@ -220,7 +220,7 @@ export default function AfqtCalculator({ embedded = false }: { embedded?: boolea
           holders face higher bars.
         </p>
         <div className="divide-y divide-navy-border">
-          {BRANCH_MINIMUMS.map(({ branch, min, gedNote }) => {
+          {BRANCH_MINIMUMS.map(({ branch, min, practicalMin, gedNote, note }) => {
             const eligible = afqt >= min;
             const gap = min - afqt;
             return (
@@ -235,9 +235,13 @@ export default function AfqtCalculator({ embedded = false }: { embedded?: boolea
                     </span>
                     <span className="font-mono text-xs text-text-tertiary">
                       min {min}
+                      {practicalMin ? ` · ${practicalMin} typical` : ""}
                     </span>
                   </div>
                   <div className="text-xs text-text-tertiary">{gedNote}</div>
+                  {note ? (
+                    <div className="mt-0.5 text-xs text-text-tertiary/80">{note}</div>
+                  ) : null}
                 </div>
                 <div className="flex items-center gap-2">
                   {eligible ? (
