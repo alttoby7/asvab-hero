@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
@@ -13,6 +13,12 @@ export default function SignupPage() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(false);
+
+  // Top-of-funnel measurement: fire once when the form is seen, so we can
+  // measure signup_started -> signup_complete drop-off (previously blind).
+  useEffect(() => {
+    trackEvent(FunnelEvents.SignupStarted, {});
+  }, []);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -89,7 +95,7 @@ export default function SignupPage() {
     // 0051) alongside signup_source. Best-effort; empty when no first_touch.
     const firstTouch = getFirstTouchSignupFields();
 
-    const { error: authError } = await supabase.auth.signUp({
+    const { data, error: authError } = await supabase.auth.signUp({
       email,
       password,
       options: {
@@ -101,22 +107,33 @@ export default function SignupPage() {
     if (authError) {
       setError(authError.message);
       setLoading(false);
-    } else {
-      trackEvent(FunnelEvents.SignupComplete, { source: resolvedSource });
-      // Fire-and-forget: subscribe to Listmonk so account signups land in the
-      // drip. Listmonk returns 409 on duplicate (handled server-side), so this
-      // is safe to retry. Never block auth flow on Listmonk failure.
-      void fetch("/api/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          email,
-          tag: "supabase-signup",
-          source: "supabase-signup",
-        }),
-      }).catch(() => {});
-      setDone(true);
+      return;
     }
+
+    trackEvent(FunnelEvents.SignupComplete, { source: resolvedSource });
+    // Fire-and-forget: subscribe to Listmonk so account signups land in the
+    // drip. Listmonk returns 409 on duplicate (handled server-side), so this
+    // is safe to retry. Never block auth flow on Listmonk failure.
+    void fetch("/api/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email,
+        tag: "supabase-signup",
+        source: "supabase-signup",
+      }),
+    }).catch(() => {});
+
+    // No email-verification wall: when email confirmation is disabled
+    // (mailer_autoconfirm), signUp returns a live session, so send the user
+    // straight into the product instead of a "check your email" dead-end.
+    // The screen below is kept only as a fallback if confirmation is ever
+    // re-enabled (no session returned).
+    if (data.session) {
+      window.location.href = nextPath;
+      return;
+    }
+    setDone(true);
   }
 
   if (done) {

@@ -93,6 +93,7 @@ export const FunnelEvents = {
   EmailCaptureShown: "email_capture_shown",
   EmailCaptureSubmit: "email_capture_submit",
   EmailCaptureVisibleWithScore: "email_capture_visible_with_score",
+  SignupStarted: "signup_started",
   SignupComplete: "signup_complete",
   LoginComplete: "login_complete",
   DiagnosticStart: "diagnostic_start",
