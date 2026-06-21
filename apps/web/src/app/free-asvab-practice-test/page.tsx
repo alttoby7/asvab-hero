@@ -337,7 +337,7 @@ export default function FreeAsvabPracticeTestPage() {
             </li>
             <li>
               <Link
-                href="/asvab-score-calculator"
+                href="/calculator"
                 className="text-accent underline hover:text-accent-hover"
               >
                 ASVAB score calculator

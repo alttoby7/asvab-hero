@@ -205,12 +205,15 @@ export function OnboardingForm() {
   }, [isGtMode]);
 
   const hasTestDate = !!specificDate || !!bucket;
+  // Minimum needed to build a useful plan: branch + test date + weakest subtest.
+  // Study schedule, official scores, and goal jobs are now optional here
+  // (progressive profiling — collected later in-app), so a new user isn't walled
+  // behind a 9-field form right after signup. The skip path already persists with
+  // these left null, so an optional submit lands in the same valid state.
   const canSubmit =
     !!branch &&
     hasTestDate &&
     !!weakest &&
-    !!studyDays &&
-    !!studyTime &&
     (!isGtMode || targetGtScore != null) &&
     !submitting &&
     !skipping;
@@ -750,9 +753,9 @@ export function OnboardingForm() {
           type="button"
           onClick={handleSkip}
           disabled={submitting || skipping}
-          className="text-sm text-text-secondary hover:text-text-primary transition-colors"
+          className="text-sm font-medium text-text-secondary underline underline-offset-4 decoration-text-tertiary hover:text-accent transition-colors"
         >
-          {skipping ? "Skipping…" : "Skip for now"}
+          {skipping ? "Skipping…" : "Skip & explore — you can finish this later"}
         </button>
       </div>
     </form>
