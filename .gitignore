@@ -41,3 +41,6 @@ apps/web/supabase/.temp/
 apps/web/docs/dedup-forbidden.json
 apps/web/docs/dedup-forbidden-by-subtest/
 apps/web/docs/question-bank-dups.json
+
+# Generated at Pages build time by `pnpm pages:build` (staged for Cloudflare). See CF build_command.
+/functions

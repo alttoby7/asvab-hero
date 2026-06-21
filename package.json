@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
-    "lint": "turbo lint"
+    "lint": "turbo lint",
+    "pages:build": "turbo build && rm -rf functions && mkdir -p functions && cp -R apps/web/functions/. functions/"
   },
   "devDependencies": {
     "turbo": "^2.9.0"

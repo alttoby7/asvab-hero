@@ -47,6 +47,14 @@ Deno.serve(async (req) => {
       pass90: "59.00",
       retaker: "119.00",
     };
+    // Human-readable charge/subscription description so the Stripe dashboard
+    // shows a real label instead of falling back to the bare pi_… id.
+    const TIER_LABEL: Record<string, string> = {
+      monthly: "ASVAB Hero Pro — Monthly",
+      annual: "ASVAB Hero Pro — Annual",
+      pass90: "ASVAB Hero Pro — 90-Day Pass",
+      retaker: "ASVAB Hero Pro — Retaker Pass (120 Days)",
+    };
     const isPass = tier === "pass90" || tier === "retaker";
     const priceId =
       tier === "monthly"
@@ -128,6 +136,7 @@ Deno.serve(async (req) => {
       "metadata[user_id]": userId,
     };
 
+    const tierLabel = TIER_LABEL[tier] ?? "ASVAB Hero Pro";
     if (isPass) {
       // One-time pass: the webhook reads these off checkout.session.completed
       // (no subscription exists) to set billing_status='active', the pro_tier,
@@ -139,10 +148,14 @@ Deno.serve(async (req) => {
       checkoutParams["payment_intent_data[metadata][user_id]"] = userId;
       checkoutParams["payment_intent_data[metadata][pass_type]"] = tier;
       checkoutParams["payment_intent_data[metadata][pass_days]"] = String(PASS_DAYS[tier]);
+      // Human-readable label on the charge (dashboard "Description" column).
+      checkoutParams["payment_intent_data[description]"] = tierLabel;
     } else {
       // Subscription metadata (durable across renewals; the webhook reads
       // subscription.metadata for long-tail conversions).
       checkoutParams["subscription_data[metadata][user_id]"] = userId;
+      // Human-readable label on the subscription + its invoices/charges.
+      checkoutParams["subscription_data[description]"] = tierLabel;
     }
 
     // Durable attribution: propagate signup_source onto the session metadata
