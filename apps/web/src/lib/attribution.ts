@@ -15,6 +15,7 @@
  */
 
 const FIRST_TOUCH_KEY = "asvabhero.first_touch";
+const LAST_TOUCH_KEY = "asvabhero.last_touch";
 const CURRENT_ORIGIN_KEY = "asvabhero.current_origin";
 const ORIGIN_TTL_MS = 14 * 24 * 60 * 60 * 1000;
 
@@ -93,6 +94,22 @@ export function captureAttribution(): void {
       localStorage.setItem(FIRST_TOUCH_KEY, JSON.stringify(ft));
     }
 
+    // --- last_touch (overwrite whenever a real EXTERNAL referrer starts a
+    //     visit). Skips 'internal' (in-app navigation) and 'direct' (no
+    //     referrer) so we keep the most recent KNOWN external source — the
+    //     last-touch channel. Flows into GA4 conversion events via
+    //     getAttributionParams() as last_referrer_class. ---
+    const lastClass = classifyReferrer(
+      document.referrer || "",
+      window.location.hostname,
+    );
+    if (lastClass !== "internal" && lastClass !== "direct") {
+      localStorage.setItem(
+        LAST_TOUCH_KEY,
+        JSON.stringify({ referrer_class: lastClass, captured_at: Date.now() }),
+      );
+    }
+
     // --- current_origin (overwrite when an origin handoff is present) ---
     const origin = sp.get("origin");
     if (origin) {
@@ -148,6 +165,11 @@ export function getAttributionParams(): Record<string, string> {
       if (ft.utm_campaign) out.first_utm_campaign = ft.utm_campaign;
       if (ft.referrer_class) out.referrer_class = ft.referrer_class;
       if (ft.landing_path) out.landing_path = ft.landing_path;
+    }
+    const rawLt = localStorage.getItem(LAST_TOUCH_KEY);
+    if (rawLt) {
+      const lt = JSON.parse(rawLt) as { referrer_class?: string };
+      if (lt.referrer_class) out.last_referrer_class = lt.referrer_class;
     }
     const rawCo = localStorage.getItem(CURRENT_ORIGIN_KEY);
     if (rawCo) {

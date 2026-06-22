@@ -10,6 +10,7 @@ export default function SignupPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirm, setConfirm] = useState("");
+  const [howHeard, setHowHeard] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [done, setDone] = useState(false);
@@ -100,7 +101,11 @@ export default function SignupPage() {
       password,
       options: {
         emailRedirectTo: `${window.location.origin}${nextPath}`,
-        data: { signup_source: resolvedSource, ...firstTouch },
+        data: {
+          signup_source: resolvedSource,
+          ...firstTouch,
+          ...(howHeard ? { attribution_self_reported: howHeard } : {}),
+        },
       },
     });
 
@@ -224,6 +229,29 @@ export default function SignupPage() {
                 className="w-full rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary placeholder-text-tertiary outline-none transition-colors focus:border-accent"
                 placeholder="••••••••"
               />
+            </div>
+
+            <div className="flex flex-col gap-1.5">
+              <label htmlFor="how-heard" className="text-sm font-medium text-text-secondary">
+                How did you hear about us? <span className="text-text-tertiary">(optional)</span>
+              </label>
+              <select
+                id="how-heard"
+                value={howHeard}
+                onChange={(e) => setHowHeard(e.target.value)}
+                className="w-full rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary outline-none transition-colors focus:border-accent"
+              >
+                <option value="">Select one…</option>
+                <option value="chatgpt_ai">ChatGPT / AI assistant</option>
+                <option value="google_search">Google / search engine</option>
+                <option value="friend_family">Friend or family</option>
+                <option value="youtube">YouTube</option>
+                <option value="reddit">Reddit</option>
+                <option value="social">TikTok / Instagram / social</option>
+                <option value="book_amazon">ASVAB book / Amazon</option>
+                <option value="recruiter">Military recruiter</option>
+                <option value="other">Other</option>
+              </select>
             </div>
 
             {error && (
