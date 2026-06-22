@@ -16,6 +16,7 @@ import {
   PaywallEvents,
   adoptPaywallContextId,
 } from "@/lib/analytics";
+import { GUARANTEE_LINE, GUARANTEE_TAG } from "@/lib/guarantee";
 
 type FromParam = string | undefined;
 
@@ -72,15 +73,15 @@ function UpgradeContent() {
   const HERO = {
     pass90: {
       price: "$59",
-      line: "one-time · 90 days of full access · Money-back guarantee",
+      line: `one-time · 90 days · ${GUARANTEE_TAG}`,
       cta: "Get my 90-Day Pass",
     },
     retaker: {
       price: "$119",
-      line: "one-time · 120 days · money-back pass guarantee",
+      line: `one-time · 120 days · ${GUARANTEE_TAG}`,
       cta: "Get the Retaker Pass",
     },
-  } as const;
+  };
   const { startCheckout, loading: checkoutLoading } = useStripeCheckout({
     source: from ?? "upgrade_page",
     placement: "hero",
@@ -281,8 +282,8 @@ function UpgradeContent() {
               What if it&apos;s not for me?
             </summary>
             <p className="mt-2 text-sm text-text-secondary leading-relaxed">
-              7-day money-back guarantee, no questions asked. Cancel anytime
-              after that and your access continues until the billing period ends.
+              {GUARANTEE_LINE} Cancel anytime; your access continues until the
+              billing period ends.
             </p>
           </details>
         </div>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
 import { useStripeCheckout } from "@/hooks/useStripeCheckout";
+import { GUARANTEE_TAG } from "@/lib/guarantee";
 import {
   trackEvent,
   PaywallEvents,
@@ -190,7 +191,7 @@ export default function TestBlockedScreen({
         {isHighIntent && (
           <p className="mb-6 text-xs text-text-tertiary">
             <span className="font-mono text-sm font-bold text-text-primary">$59</span>{" "}
-            one-time · 90 days · Money-back guarantee
+            one-time · 90 days · {GUARANTEE_TAG}
           </p>
         )}
 

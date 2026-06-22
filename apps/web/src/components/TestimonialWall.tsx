@@ -7,6 +7,7 @@
  */
 
 import { TESTIMONIALS } from "@/data/testimonials";
+import { GUARANTEE_TAG } from "@/lib/guarantee";
 import {
   RECRUITS_PER_MONTH,
   SCORE_CHECKS_PER_MONTH,
@@ -90,7 +91,7 @@ export default function TestimonialWall() {
               <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium text-text-tertiary">
                 <span>Free to start · no card</span>
                 <span className="text-navy-border">·</span>
-                <span>Money-back guarantee on Pro</span>
+                <span>{GUARANTEE_TAG} on Pro</span>
                 <span className="text-navy-border">·</span>
                 <a
                   href="/the-science"

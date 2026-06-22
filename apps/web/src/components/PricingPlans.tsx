@@ -12,6 +12,7 @@ import {
   flush,
 } from "@/lib/analytics";
 import Link from "next/link";
+import { GUARANTEE_LINE, GUARANTEE_TAG } from "@/lib/guarantee";
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 
@@ -19,9 +20,10 @@ const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 //   - 90-Day Test Pass ($59, one-time) is the loud default — matches the
 //     2-4 week study window and removes the churn/cancel event.
 //   - Monthly ($14.99) stays as the flexibility option.
-//   - Retaker Pass ($119, one-time, 120 days) carries a pass guarantee for the
-//     failed-AFQT / 30-day-clock segment; premium WTP is captured HERE, not on
-//     the volume pass.
+//   - Retaker Pass ($119, one-time, 120 days) targets the failed-AFQT /
+//     30-day-clock segment; premium WTP is captured HERE, not on the volume
+//     pass. Guarantee is the universal one (see @/lib/guarantee), not a special
+//     improve-or-refund term.
 // `tier` is the value posted to the stripe-checkout edge function, which maps
 // it to a Stripe price id + mode (subscription vs payment). Real prices live in
 // Stripe; the strings below are display copy only.
@@ -48,7 +50,7 @@ const TIERS: Record<Tier, TierConfig> = {
       "Full Pro access for 90 days — enough to study and take the test, with nothing to cancel.",
     badge: "Best for test day",
     cta: "Get my 90-Day Pass",
-    note: "One-time payment. No subscription, no auto-renew.",
+    note: `One-time payment, no subscription. ${GUARANTEE_LINE}`,
   },
   monthly: {
     key: "monthly",
@@ -66,10 +68,10 @@ const TIERS: Record<Tier, TierConfig> = {
     price: "$119",
     unit: "one-time",
     tagline:
-      "Failed the AFQT or on a retest clock? 120 days of full Pro, backed by a money-back pass guarantee.",
-    badge: "Pass guarantee",
+      "Failed the AFQT or on a retest clock? 120 days of full Pro, built for the retest window.",
+    badge: "For retakers",
     cta: "Get the Retaker Pass",
-    note: "One-time payment, 120 days of access. Money-back guarantee if you don't improve — see guarantee terms.",
+    note: `One-time payment · 120 days of access · ${GUARANTEE_LINE}`,
   },
 };
 
@@ -230,8 +232,7 @@ export default function PricingPlans({
 
       {recommendedTier === "retaker" && (
         <p className="-mt-4 mb-6 text-center text-xs font-semibold text-accent">
-          ★ Recommended for retakers — 120 days of full Pro + money-back pass
-          guarantee
+          ★ Recommended for retakers — 120 days of full Pro + {GUARANTEE_TAG}
         </p>
       )}
 
@@ -349,8 +350,8 @@ export default function PricingPlans({
 
       {/* Guarantee footnote */}
       <p className="mt-6 text-center text-xs text-text-tertiary">
-        Every plan is backed by a money-back guarantee. The calculators and your
-        daily adaptive block stay free, forever.
+        Every plan is backed by a {GUARANTEE_TAG} — no questions asked. The
+        calculators and your daily adaptive block stay free, forever.
       </p>
     </div>
   );

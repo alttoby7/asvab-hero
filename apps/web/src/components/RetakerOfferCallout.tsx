@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GUARANTEE_TAG } from "@/lib/guarantee";
 
 /**
  * Persona-matched offer block for retaker-intent landing pages (/afct,
@@ -23,8 +24,7 @@ export default function RetakerOfferCallout({ from }: { from: string }) {
       <p className="mx-auto mt-3 max-w-xl text-text-secondary">
         The Retaker Pass is 120 days of full Pro&mdash;full-length timed sims,
         unlimited adaptive drills, and score-trajectory tracking built for the
-        retest clock&mdash;backed by a money-back pass guarantee: improve your
-        score or get your money back.
+        retest clock&mdash;backed by a {GUARANTEE_TAG}, no questions asked.
       </p>
       <Link
         href={`/upgrade?tier=retaker&from=${from}`}
