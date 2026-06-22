@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
 import { getFirstTouchSignupFields } from "@/lib/attribution";
+import GoogleSignInButton from "@/components/GoogleSignInButton";
 
 export default function SignupPage() {
   const [email, setEmail] = useState("");
@@ -268,6 +269,10 @@ export default function SignupPage() {
               {loading ? "Creating account…" : "Create account"}
             </button>
           </form>
+
+          <div className="mt-5">
+            <GoogleSignInButton label="Sign up with Google" />
+          </div>
         </div>
 
         <p className="mt-6 text-center text-sm text-text-secondary">

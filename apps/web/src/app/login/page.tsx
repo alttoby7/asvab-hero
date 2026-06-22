@@ -6,6 +6,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { trackEvent, FunnelEvents } from "@/lib/analytics";
+import GoogleSignInButton from "@/components/GoogleSignInButton";
 
 function LoginPageInner() {
   const router = useRouter();
@@ -104,6 +105,10 @@ function LoginPageInner() {
               {loading ? "Logging in…" : "Log in"}
             </button>
           </form>
+
+          <div className="mt-5">
+            <GoogleSignInButton label="Continue with Google" />
+          </div>
         </div>
 
         <p className="mt-6 text-center text-sm text-text-secondary">
