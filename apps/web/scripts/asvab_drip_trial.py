@@ -241,7 +241,7 @@ DAY2_HTML = """\
 
 <p>Yesterday you started your 7-day ASVAB Hero Pro trial. The single highest-leverage thing for Pro to actually work for you is to take a diagnostic. 30 questions, about 18 minutes, and the platform builds your weak-topic drill list from your results.</p>
 
-<p><a href="https://asvabhero.com/practice-test?variant=diagnostic" style="background:#f97316;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;display:inline-block;font-weight:600;">Take your diagnostic</a></p>
+<p><a href="https://asvabhero.com/practice-test?variant=diagnostic&utm_source=lifecycle&utm_medium=email&utm_campaign=trial-day2" style="background:#f97316;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;display:inline-block;font-weight:600;">Take your diagnostic</a></p>
 
 <p>Once you have a diagnostic in, the rest of the platform shapes itself around your weakest subtests automatically.</p>
 
@@ -260,7 +260,7 @@ MILESTONE_HTML = """\
   <li>Re-take a full diagnostic on day 6 to see your AFQT move</li>
 </ul>
 
-<p><a href="https://asvabhero.com/practice-test" style="background:#f97316;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;display:inline-block;font-weight:600;">Continue practicing</a></p>
+<p><a href="https://asvabhero.com/practice-test?utm_source=lifecycle&utm_medium=email&utm_campaign=trial-milestone" style="background:#f97316;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;display:inline-block;font-weight:600;">Continue practicing</a></p>
 
 <p>Trish<br>ASVAB Hero</p>
 """
