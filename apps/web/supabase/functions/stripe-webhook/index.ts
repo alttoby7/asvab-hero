@@ -1455,8 +1455,51 @@ Deno.serve(async (req) => {
 
   // Fire-and-forget mirror to the dashboard for InfraHealth widget.
   void mirrorToDashboard(event, mirrorSucceeded).catch(() => {});
+  // Fire-and-forget durable mirror of billing events to the dashboard's
+  // append-only ledger (seconds-fresh; the dashboard also polls Stripe events
+  // every 15 min as a backstop, so this is purely a latency optimization).
+  void mirrorBillingEvent(event).catch(() => {});
   return new Response("ok", { status: 200 });
 });
+
+// Billing events that carry durable revenue / churn / failure signal — kept in
+// sync with BILLING_EVENT_TYPES in the dashboard's lib/asvab/billing-events.ts.
+const DASHBOARD_BILLING_EVENT_TYPES = new Set<string>([
+  "checkout.session.completed",
+  "customer.subscription.created",
+  "customer.subscription.updated",
+  "customer.subscription.deleted",
+  "invoice.paid",
+  "invoice.payment_failed",
+  "invoice.payment_action_required",
+  "charge.refunded",
+]);
+
+async function mirrorBillingEvent(event: {
+  type: string;
+  id?: string;
+}): Promise<void> {
+  const secret = Deno.env.get("STRIPE_MIRROR_SECRET");
+  if (!secret) return;
+  if (!DASHBOARD_BILLING_EVENT_TYPES.has(event.type)) return;
+  try {
+    await fetch("https://winning.basecampdigital.pro/api/webhooks/asvab-billing", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        authorization: `Bearer ${secret}`,
+      },
+      // Send the FULL event — the dashboard maps it into the ledger row.
+      body: JSON.stringify({
+        event_id: event.id ?? "unknown",
+        event_type: event.type,
+        payload: event,
+      }),
+    });
+  } catch (err) {
+    console.error("asvab-billing dashboard fire-and-forget failed", err);
+  }
+}
 
 async function mirrorToDashboard(
   event: { type: string; data: { object: Record<string, unknown> }; id?: string; livemode?: boolean; created?: number },
