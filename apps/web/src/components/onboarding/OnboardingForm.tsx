@@ -225,7 +225,12 @@ export function OnboardingForm() {
 
   function handleDateChange(e: React.ChangeEvent<HTMLInputElement>) {
     setSpecificDate(e.target.value);
-    if (e.target.value) setBucket(null);
+    if (e.target.value) {
+      setBucket(null);
+      // Exact date (not a bucket) is what enrolls a user in the test-date
+      // countdown drip — instrument the capture rate.
+      trackEvent("onboarding_exact_date_set", {});
+    }
   }
 
   function toggleDatePicker() {
@@ -584,9 +589,9 @@ export function OnboardingForm() {
             <button
               type="button"
               onClick={toggleDatePicker}
-              className="mt-3 text-sm text-accent hover:text-accent-hover transition-colors"
+              className="mt-3 inline-flex items-center gap-1.5 rounded-lg border border-accent/40 px-3 py-2 text-sm font-semibold text-accent transition-colors hover:border-accent hover:bg-accent/5"
             >
-              Set specific date instead
+              📅 Know your exact date? Add it for test-day countdown reminders
             </button>
           </>
         ) : (
