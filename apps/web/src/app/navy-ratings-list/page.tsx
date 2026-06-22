@@ -253,9 +253,11 @@ export default function NavyRatingsListPage() {
         </p>
 
         <p className="text-text-secondary">
-          For 2026 the AFQT minimums are 35 for Tier I (diploma or 15+ college credits), 50 for Tier
-          II (GED), and 26-30 for the Future Sailor Preparatory Course academic track. Hit the
-          minimum and you are in. The line score determines what you do once you are in.
+          For 2026 the Tier I (diploma) AFQT floor is 31 on paper, but in practice the Navy ships
+          diploma holders at 35+, so treat 35 as your working target. Tier II (GED) applicants need
+          50 plus 15 college credits, and the Future Sailor Preparatory Course academic track opens
+          at 26-30. Hit the minimum and you are in. The line score determines what you do once you
+          are in.
         </p>
 
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
