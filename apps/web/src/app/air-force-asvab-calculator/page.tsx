@@ -14,9 +14,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
-  title: "Air Force ASVAB Calculator: MAGE Scores + Every AFSC You Qualify For",
+  title: "Air Force ASVAB Job Calculator: AFSC & MAGE Scores",
   description:
-    "Enter your 9 ASVAB subtest scores. Instantly see your AFQT and all 4 Air Force MAGE composites (Mechanical, Administrative, General, Electronics), plus every AFSC you qualify for.",
+    "Air Force ASVAB job calculator: enter your subtest scores to see every AFSC (Air Force job) you qualify for, plus all 4 MAGE composites and your AFQT.",
   alternates: {
     canonical: "https://asvabhero.com/air-force-asvab-calculator",
   },
@@ -26,6 +26,33 @@ const allAirForceJobs: MilitaryJob[] = airForceJobs.map(
   (j) => ({ ...j, branch: "air_force" }) as MilitaryJob
 );
 
+const airForceFaqs = [
+  {
+    q: "What Air Force jobs can I get with my ASVAB score?",
+    a: "Your Air Force job (called an AFSC) is gated by your MAGE composite scores, not your AFQT. Enter your subtest scores in the calculator above and it lists every AFSC you currently qualify for, which ones a retake would unlock, and the MAGE minimum each one needs. AFQT only decides whether you can enlist at all.",
+  },
+  {
+    q: "What's the minimum ASVAB score to join the Air Force?",
+    a: "The baseline AFQT floor is 36 with a high school diploma (per DAFMAN 36-2032), and Air Force career/FAQ pages quote 65 for GED/non-graduate paths. But most Air Force AFSCs require significantly higher MAGE scores, so hitting just the AFQT minimum typically leaves you with few job options.",
+  },
+  {
+    q: "What's the difference between AFQT and MAGE scores?",
+    a: "AFQT gates whether you can enlist; MAGE gates which AFSC you can select. AFQT is a percentile (1–99) derived from 2VE+AR+MK. MAGE composites (M, A, G, E) are also percentile-based but focus on job-relevant subtest combinations.",
+  },
+  {
+    q: "Can you pick your AFSC before enlisting?",
+    a: "The Air Force uses a 'dream sheet' process. You list your preferred AFSCs at MEPS, and assignments are made based on your MAGE scores, current needs, and available slots. Guaranteed AFSC contracts exist but are harder to secure than in the Army.",
+  },
+  {
+    q: "What's the highest AFSC ASVAB requirement?",
+    a: "Airborne Cryptologic Language Analyst (1A8X2) at G 72 and several cyber/intel AFSCs at G 64+ are among the highest. Nuclear/missile AFSCs (2M0X1, 2W2X1) require additional PRP screening beyond MAGE minimums.",
+  },
+  {
+    q: "Does the Air Force still use warrant officers?",
+    a: "No. The Air Force abolished warrant officers in 1959 and has not reinstated the rank. Enlisted and officer are the only two tracks.",
+  },
+];
+
 export default function AirForceCalculatorPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
@@ -34,13 +61,24 @@ export default function AirForceCalculatorPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "WebApplication",
-          name: "Air Force ASVAB Calculator",
+          name: "Air Force ASVAB Job Calculator",
           url: "https://asvabhero.com/air-force-asvab-calculator",
           applicationCategory: "EducationalApplication",
           operatingSystem: "Web",
           offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
           description:
             "Calculate your AFQT, Air Force MAGE composite scores, and see every AFSC you qualify for.",
+        }}
+      />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: airForceFaqs.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: { "@type": "Answer", text: item.a },
+          })),
         }}
       />
 
@@ -54,11 +92,12 @@ export default function AirForceCalculatorPage() {
 
       <div className="mb-6">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          Air Force ASVAB Calculator
+          Air Force ASVAB Job Calculator
         </h1>
         <p className="mt-3 text-lg text-text-secondary">
-          See every Air Force AFSC you qualify for, plus your MAGE composite
-          scores, the four gates that decide your career field.
+          See every Air Force job (AFSC) you qualify for, plus the MAGE
+          composite scores, the four gates that decide which career field you
+          can pick. AFSC is the Air Force&apos;s code for a job.
         </p>
       </div>
 
@@ -187,7 +226,7 @@ export default function AirForceCalculatorPage() {
           where you stand, not a guarantee of qualification: exact MAGE
           percentiles can&apos;t be reliably derived from a rounded score
           report, so always verify your actual qualifications with a recruiter.
-          Use it to see which fields are within reach and which would need a{" "}
+          Use it to see which jobs are within reach and which would need a{" "}
           <Link
             href="/asvab-retake-calculator"
             className="text-accent underline hover:text-accent-hover"
@@ -203,28 +242,7 @@ export default function AirForceCalculatorPage() {
           Air Force ASVAB FAQ
         </h2>
         <div className="mt-4 divide-y divide-navy-border">
-          {[
-            {
-              q: "What's the minimum ASVAB score to join the Air Force?",
-              a: "The baseline AFQT floor is 36 with a high school diploma (per DAFMAN 36-2032), and Air Force career/FAQ pages quote 65 for GED/non-graduate paths. But most Air Force AFSCs require significantly higher MAGE scores, so hitting just the AFQT minimum typically leaves you with few job options.",
-            },
-            {
-              q: "What's the difference between AFQT and MAGE scores?",
-              a: "AFQT gates whether you can enlist; MAGE gates which AFSC you can select. AFQT is a percentile (1–99) derived from 2VE+AR+MK. MAGE composites (M, A, G, E) are also percentile-based but focus on job-relevant subtest combinations.",
-            },
-            {
-              q: "Can you pick your AFSC before enlisting?",
-              a: "The Air Force uses a 'dream sheet' process. You list your preferred AFSCs at MEPS, and assignments are made based on your MAGE scores, current needs, and available slots. Guaranteed AFSC contracts exist but are harder to secure than in the Army.",
-            },
-            {
-              q: "What's the highest AFSC ASVAB requirement?",
-              a: "Airborne Cryptologic Language Analyst (1A8X2) at G 72 and several cyber/intel AFSCs at G 64+ are among the highest. Nuclear/missile AFSCs (2M0X1, 2W2X1) require additional PRP screening beyond MAGE minimums.",
-            },
-            {
-              q: "Does the Air Force still use warrant officers?",
-              a: "No. The Air Force abolished warrant officers in 1959 and has not reinstated the rank. Enlisted and officer are the only two tracks.",
-            },
-          ].map((item) => (
+          {airForceFaqs.map((item) => (
             <div key={item.q} className="py-4">
               <h3 className="font-display text-base font-bold text-text-primary">
                 {item.q}

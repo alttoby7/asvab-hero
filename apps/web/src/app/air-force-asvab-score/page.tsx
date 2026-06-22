@@ -1571,7 +1571,7 @@ export default function AirForceASVABScorePage() {
                 href="/air-force-asvab-calculator"
                 className="text-accent underline hover:text-accent-hover"
               >
-                Air Force ASVAB calculator
+                Air Force ASVAB job calculator
               </Link>{" "}
               and see how scores map to{" "}
               <Link
