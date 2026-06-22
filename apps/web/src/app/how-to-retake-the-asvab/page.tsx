@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
+import RetakerOfferCallout from "@/components/RetakerOfferCallout";
 import JsonLd from "@/components/JsonLd";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
@@ -151,6 +152,8 @@ export default function HowToRetakeTheASVABPage() {
             </svg>
           </Link>
         </div>
+
+        <RetakerOfferCallout from="how-to-retake" />
 
         <section className="my-8 not-prose">
           <EmailCapture

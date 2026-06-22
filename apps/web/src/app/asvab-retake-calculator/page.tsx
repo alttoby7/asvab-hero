@@ -4,6 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 import RetakeDateCalculator from "@/components/RetakeDateCalculator";
 import EmailCapture from "@/components/EmailCapture";
+import RetakerOfferCallout from "@/components/RetakerOfferCallout";
 import RelatedCalculators from "@/components/RelatedCalculators";
 
 export const metadata: Metadata = {
@@ -135,6 +136,8 @@ export default function AsvabRetakeCalculatorPage() {
           previous and target AFQT.
         </p>
       </section>
+
+      <RetakerOfferCallout from="retake-calculator" />
 
       <section className="mt-10">
         <EmailCapture

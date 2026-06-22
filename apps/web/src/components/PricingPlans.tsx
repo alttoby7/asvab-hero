@@ -91,6 +91,9 @@ const PRO_FEATURES = [
 
 interface PricingPlansProps {
   defaultTier?: Tier;
+  /** When set, that tier is visibly flagged "Recommended" (e.g. retaker for
+   *  retaker-intent traffic). Visible by design — never a silent steer. */
+  recommendedTier?: Tier;
   source?: string;
   hideFreePlan?: boolean;
   placement?: string;
@@ -98,6 +101,7 @@ interface PricingPlansProps {
 
 export default function PricingPlans({
   defaultTier = "pass90",
+  recommendedTier,
   source,
   hideFreePlan,
   placement,
@@ -215,9 +219,21 @@ export default function PricingPlans({
             }`}
           >
             {TIERS[t].label}
+            {t === recommendedTier && (
+              <span className="ml-1" aria-hidden="true">
+                ★
+              </span>
+            )}
           </button>
         ))}
       </div>
+
+      {recommendedTier === "retaker" && (
+        <p className="-mt-4 mb-6 text-center text-xs font-semibold text-accent">
+          ★ Recommended for retakers — 120 days of full Pro + money-back pass
+          guarantee
+        </p>
+      )}
 
       {/* Plan grid */}
       <div className={`grid gap-8 ${hideFreePlan ? "mx-auto max-w-md" : "sm:grid-cols-2"}`}>

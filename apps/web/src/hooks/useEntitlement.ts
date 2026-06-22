@@ -21,6 +21,12 @@ export type Entitlement = {
   trialEndsAt: string | null;
   isTrial: boolean;
   trialDaysRemaining: number | null;
+  /** Retaker signal: 'taken_logged' = logged a prior official ASVAB score. */
+  officialTestStatus:
+    | "not_taken"
+    | "taken_not_logged"
+    | "taken_logged"
+    | null;
 };
 
 // One-time "pass" tiers grant time-boxed Pro and have NO Stripe subscription:
@@ -59,6 +65,7 @@ const FREE: Entitlement = {
   trialEndsAt: null,
   isTrial: false,
   trialDaysRemaining: null,
+  officialTestStatus: null,
 };
 
 export function useEntitlement(): { entitlement: Entitlement; loading: boolean; refresh: () => void } {
@@ -76,10 +83,20 @@ export function useEntitlement(): { entitlement: Entitlement; loading: boolean; 
     }
     let cancelled = false;
     const supabase = getSupabaseBrowserClient();
-    supabase
-      .from("profiles")
+    // official_test_status isn't in the committed generated types yet; read it
+    // through a loosely-typed surface (same approach as lib/trajectory/queries.ts)
+    // so we don't couple this hook to a schema regen.
+    (
+      supabase.from("profiles") as unknown as {
+        select: (s: string) => {
+          eq: (c: string, v: string) => {
+            single: () => Promise<{ data: Record<string, unknown> | null }>;
+          };
+        };
+      }
+    )
       .select(
-        "billing_status,pro_tier,pro_until,free_diagnostic_used_at,stripe_customer_id,trial_ends_at"
+        "billing_status,pro_tier,pro_until,free_diagnostic_used_at,stripe_customer_id,trial_ends_at,official_test_status"
       )
       .eq("user_id", session.user.id)
       .single()
@@ -110,6 +127,9 @@ export function useEntitlement(): { entitlement: Entitlement; loading: boolean; 
             trialEndsAt,
             isTrial,
             trialDaysRemaining,
+            officialTestStatus:
+              (data.official_test_status as Entitlement["officialTestStatus"]) ??
+              null,
           });
         }
         setLoading(false);

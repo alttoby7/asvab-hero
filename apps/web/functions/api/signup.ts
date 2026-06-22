@@ -14,6 +14,9 @@ interface Env {
   LISTMONK_TEMPLATE_PC_TIPS?: string;
   LISTMONK_TEMPLATE_CALC_PLAN?: string;
   LISTMONK_TEMPLATE_BOOK?: string;
+  // Retaker funnel (asvab-retake-calculator, how-to-retake-the-asvab). Falls
+  // back to the welcome template until LISTMONK_TEMPLATE_RETAKER is set.
+  LISTMONK_TEMPLATE_RETAKER?: string;
   RATE_LIMIT_KV?: KVNamespace;
   ASVABHERO_SENTRY_DSN_EDGE?: string;
   ASVABHERO_ENV?: string;
@@ -34,6 +37,9 @@ const TAG_TEMPLATE_ENV_MAP: Record<string, keyof Env> = {
   // Printed-book QR funnel (asvabhero.com/book). Falls back to the welcome
   // template until LISTMONK_TEMPLATE_BOOK is set in Cloudflare Pages env.
   book: "LISTMONK_TEMPLATE_BOOK",
+  // Retaker-intent pages — highest-WTP segment gets a retaker-specific welcome.
+  "retake-calculator": "LISTMONK_TEMPLATE_RETAKER",
+  "how-to-retake": "LISTMONK_TEMPLATE_RETAKER",
 };
 
 function resolveWelcomeTemplateId(env: Env, tag: string | undefined): number | null {

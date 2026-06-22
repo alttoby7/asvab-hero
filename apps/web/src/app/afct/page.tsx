@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import RetakerOfferCallout from "@/components/RetakerOfferCallout";
 
 export const metadata: Metadata = {
   title:
@@ -1320,6 +1321,8 @@ export default function AFCTPage() {
             </p>
           </div>
         </div>
+
+        <RetakerOfferCallout from="afct" />
 
         {/* ───────── CTA Box ───────── */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">

@@ -49,10 +49,38 @@ function UpgradeContent() {
   const status = searchParams.get("status");
   const isCancelled = status === "cancelled";
   const tierParam = searchParams.get("tier");
-  const defaultTier: Tier =
-    tierParam === "monthly" || tierParam === "retaker" ? tierParam : "pass90";
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
+
+  // Retaker steering — EXPLICIT context only (Codex guardrail): an explicit
+  // ?tier=retaker (from the retaker landing pages) OR a logged prior official
+  // ASVAB score. Never inferred from practice attempts. Everyone else: pass90.
+  const isRetaker =
+    tierParam === "retaker" ||
+    entitlement.officialTestStatus === "taken_logged";
+  const defaultTier: Tier =
+    tierParam === "monthly" || tierParam === "retaker"
+      ? tierParam
+      : isRetaker
+        ? "retaker"
+        : "pass90";
+  // Drive the above-fold hero off the resolved tier so a retaker who clicked
+  // "Get the Retaker Pass" doesn't land on a $59 pass90 hero. Monthly keeps the
+  // pass90 hero (no direct-buy of a trial above the fold).
+  const heroTier: "pass90" | "retaker" =
+    defaultTier === "retaker" ? "retaker" : "pass90";
+  const HERO = {
+    pass90: {
+      price: "$59",
+      line: "one-time · 90 days of full access · Money-back guarantee",
+      cta: "Get my 90-Day Pass",
+    },
+    retaker: {
+      price: "$119",
+      line: "one-time · 120 days · money-back pass guarantee",
+      cta: "Get the Retaker Pass",
+    },
+  } as const;
   const { startCheckout, loading: checkoutLoading } = useStripeCheckout({
     source: from ?? "upgrade_page",
     placement: "hero",
@@ -144,15 +172,17 @@ function UpgradeContent() {
         {!isLoading && !entitlement.isPro && (
           <div className="mt-8">
             <p className="text-sm text-text-tertiary mb-4">
-              <span className="font-mono text-lg font-bold text-accent">$59</span>{" "}
-              one-time · 90 days of full access · Money-back guarantee
+              <span className="font-mono text-lg font-bold text-accent">
+                {HERO[heroTier].price}
+              </span>{" "}
+              {HERO[heroTier].line}
             </p>
             <button
-              onClick={() => startCheckout("pass90")}
+              onClick={() => startCheckout(heroTier)}
               disabled={checkoutLoading}
               className="inline-flex items-center justify-center rounded-xl bg-accent px-8 py-3.5 text-base font-semibold text-white transition-colors hover:bg-accent-hover disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {checkoutLoading ? "Loading checkout…" : "Get my 90-Day Pass"}
+              {checkoutLoading ? "Loading checkout…" : HERO[heroTier].cta}
             </button>
             <p className="mt-3 text-xs text-text-tertiary">
               One-time payment. No subscription, no auto-renew.{" "}
@@ -209,7 +239,9 @@ function UpgradeContent() {
       {/* Plan grid — Free plan hidden for paywall traffic */}
       <div ref={pricingRef}>
         <PricingPlans
+          key={defaultTier}
           defaultTier={defaultTier}
+          recommendedTier={isRetaker ? "retaker" : undefined}
           source={from ?? "upgrade_page"}
           hideFreePlan={isFromPaywall}
           placement="pricing_grid"
