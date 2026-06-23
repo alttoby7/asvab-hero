@@ -11,7 +11,7 @@
  * on first authed app load (see AppLayout → syncLocalHistoryToRemote), so the
  * "Save my score + build my free plan" promise is real, not a retake.
  *
- * No card, no Pro ask here, the $9.99 ask lives downstream (daily-limit / sims),
+ * No card, no Pro ask here, the $24.99 ask lives downstream (daily-limit / sims),
  * mirroring CalculatorResultBridge.
  */
 

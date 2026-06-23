@@ -3,7 +3,7 @@
 /**
  * Conversion #1, the calculator-result FREE-PLAN bridge (the peak-intent moment).
  *
- * Replaces the old "30-day PDF" email capture + straight-to-$9.99 Pro upsell.
+ * Replaces the old "30-day PDF" email capture + straight-to-$24.99 Pro upsell.
  * The score the visitor just computed becomes the hook to create a FREE account:
  * save the score, track the climb, and start the free daily plan (adaptive AFQT
  * block + Mistake Bank). The $9.99 ask is intentionally NOT here, it moves

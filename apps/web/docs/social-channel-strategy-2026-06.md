@@ -49,7 +49,7 @@ Build/sharpen **one ungated, mobile-first "What does your ASVAB score get you?" 
 - It's the **gotcha** (type 4 line scores → instant AFQT + job eligibility in 5 seconds).
 - It's the **SEO asset** (matches the existing search moat: "ASVAB score for [job/branch]", "AFQT calculator").
 - It's the **creator CTA** ("calculate yours — link in bio").
-- It's the **email/Pro on-ramp** (free value first; monetize the $59 pass / $14.99 mo *after* the hook, never at first click).
+- It's the **email/Pro on-ramp** (free value first; monetize the $59 pass / $24.99 mo *after* the hook, never at first click).
 - It's the **paid-search landing page** (Apple Search Ads / Google).
 
 ASVAB Hero already owns the calculator as its core product — the work is a clean, fast, shareable, ungated, share-button-equipped version optimized as the universal funnel floor.
