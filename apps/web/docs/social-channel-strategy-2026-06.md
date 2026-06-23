@@ -135,8 +135,66 @@ Reassurance angle ("pass the ASVAB even if you're 'not a test person'", 230K) ov
 
 ---
 
-## 9. Sources
+## 9. Research addendum — verified claims (2026-06-22)
+
+Deep research harness: 106 agents, 24 sources fetched, 105 claims extracted, 25 adversarially verified (3-vote per claim), 12 confirmed / 13 killed, synthesized into 6 findings. Key verified data that strengthens the strategy above:
+
+### Platform reach for 16-20yo ASVAB audience
+
+| Platform | Teen adoption | Daily use | "Almost constantly" | Key skew |
+|---|---|---|---|---|
+| **YouTube** | ~90% | 75% | 20% | Boys index higher (94% vs 89% girls) |
+| **TikTok** | ~60% | 61% | 21% | Highest habitual engagement; 3.70% engagement rate vs IG's 0.48% |
+| **Instagram** | ~60% | 55% | 12% | **Skews older teens: 75% of 15-17yo** (the core ASVAB cohort) vs 44% of 13-14yo |
+
+Source: Pew Research Center, Dec 2025, n=1,458 U.S. teens, probability-based sampling. Confidence: **high** (6-0 votes across merged claims).
+
+**Strategic implication:** YouTube has the highest ceiling; TikTok has the best engagement; Instagram over-indexes on the exact 15-17 age band taking the ASVAB. Confirms the "one engine, three mirrors" approach — shoot for TikTok engagement, mirror to IG for the age-skewed audience, mirror to Shorts for reach.
+
+### Competitive landscape — confirmed gaps
+
+1. **Army ASVAB Challenge app** — free, government-backed, live on iOS (4.9 stars/21K ratings) and Android (4.80/3.6K ratings, ~140K downloads). **Covers only 4 of 9 CAT-ASVAB subtests** (AR, MK, PC, WK). User reviews confirm: "the real asvab has 9-10 subjects I believe and I'm only seeing 4." → **ASVAB Hero's "complete prep" positioning is factually grounded.** The line-score/MOS-qualification angle ("what jobs can you actually get?") is a natural short-form hook the Army app cannot address. (High confidence, 6-0 vote.)
+
+2. **Zero ASVAB-prep TikTok creators at scale.** Military TikTok is dominated by veteran lifestyle/fitness/comedy (top accounts 1.3M-2.5M+). No dedicated ASVAB-prep or enlistment-education creator exists at any significant size. Confirms the content vacuum noted in §7. (Medium confidence, 5-1 vote — Feedspot list methodology is opaque but the directional finding held across all searches.)
+
+3. **UGC-style > polished production.** UGC-style creative delivers 28% lower CPA than studio ads on TikTok; Spark Ads produce 44% higher conversion than studio in-feed ads. The Army's own influencer program moved toward creator freedom over polished content. Confirms the creator-machine approach in §5. (High confidence, 3-0 vote.)
+
+### B2B / institutional channel
+
+- **ASVAB CEP** (Career Exploration Program) operates through school counselors at asvabprogram.com — free, counselor-administered. Importantly, CEP is *career exploration* (interest assessments, career matching), NOT test prep. ASVAB Hero should position as a *complement* to CEP ("prep for the test that feeds the career exploration"), not a replacement.
+- **JROTC train-the-trainer** — Army JROTC hosted 48 instructors at Elizabethtown KY (Aug 2025) for ASVAB advocacy. Real event (.mil verified) but "formal distribution channel" overstates what's still aspirational. Medium confidence, 2-1 vote.
+- Confirms the Tier 2 B2B ranking: real but not a fast traffic engine.
+
+### Lampropoulos playbook — what held up, what didn't
+
+- **"Gotcha feature" framework confirmed** (3-0 vote, medium confidence). The principle — spend 90% of effort on the single moment that explains the app in 5 seconds — is the critical design constraint. ASVAB Hero's gotcha candidate: instant AFQT + MOS-qualification overlay.
+- **Specific tactical numbers refuted:** The $2 CPM creator benchmark, $100/day ad formula, IG-as-primary-conversion-engine claim, and the Rizz "$35 from 1.8M views" anecdote all failed verification (0-3 or 1-2 votes). Do NOT use these as planning benchmarks.
+- **Army influencer metrics refuted:** The "$22K spend → 40M impressions → 72K followers" stat failed (0-3). Don't cite it.
+
+### Open questions for further research
+
+1. What is ASVAB Hero's exact "gotcha" visual — instant AFQT with MOS overlay? Swipe-to-see-jobs animation? Before/after score transformation? Needs product-level A/B testing.
+2. Military advertising regulations (10 USC 503, DoD Instruction 1304.25, FTC edu-tech guidelines) — none of the confirmed claims addressed specific ad-policy constraints. Needs legal review before scaling creator content.
+3. Micro-creator ecosystem (sub-50K) doing ASVAB study tips, score reveals, or recruiter content — potential partners and competitive signals not surfaced at the "large creator" research level.
+4. Conversion path differences: Lampropoulos's playbook was built for consumer apps where the gotcha IS the product. ASVAB Hero's value accrues over weeks of study — fundamentally different conversion challenge.
+
+---
+
+## 10. Sources
+
+**Original (2026-06-18):**
 - Transcript & video: `youtube.com/watch?v=LYomocq6Dpo` (DataForSEO subtitles).
 - Baseline: GA4 property `404444165` (90-day channel/source report).
 - Competitor recon: DataForSEO YouTube SERP (live, US) + web. Adversarial review: `/codex` gpt-5.4.
 - Per-channel research briefs (full citations in conversation): Gen-Z platform usage, Meta/TikTok/Google teen ad limits, FTC disclosure guidance, DoD JER 5500.07-R, ASVAB CEP, Reddit/Discord communities, Apple Search Ads / CPI benchmarks.
+
+**Deep research addendum (2026-06-22) — 24 sources, 106 agents:**
+- Pew Research Center (Dec 2025): [Teens, Social Media and AI Chatbots 2025](https://www.pewresearch.org/internet/2025/12/09/teens-social-media-and-ai-chatbots-2025/) — primary, n=1,458
+- Pew Research Center: [Teens and Social Media Fact Sheet](https://www.pewresearch.org/internet/fact-sheet/teens-and-social-media-fact-sheet/) — primary
+- Pew Research Center (Apr 2026): [Teens' Experiences on TikTok, Instagram, and Snapchat](https://www.pewresearch.org/internet/2026/04/15/teens-experiences-on-tiktok-instagram-and-snapchat/) — primary
+- U.S. Army Recruiting Command: [ASVAB Challenge App](https://recruiting.army.mil/News/Article/2213560/us-army-asvab-challenge-app/) — primary
+- Official ASVAB: [ASVAB Career Exploration Program](https://www.officialasvab.com/counselors-educators/asvab-career-exploration-program/) — primary
+- U.S. Army JROTC: [Train-the-Trainer Initiative](https://usarmyjrotc.army.mil/army-jrotc-expands-asvab-advocacy-through-train-the-trainer-initiative/) — primary
+- Feedspot: [Military TikTok Influencers](https://creators.feedspot.com/military_tiktok_influencers/) — secondary (aggregator)
+- CyberNews: [TikTok/Instagram Army Influencers Recruitment](https://cybernews.com/tech/tiktok-instagram-usarmy-influencers-recruitment/) — secondary
+- Whatfinger/Startup: [Lampropoulos interview recap](https://startup.whatfinger.com/2026/06/15/how-a-tj-maxx-cashier-built-a-200k-app-with-ai/) — secondary
