@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import AfqtScoreMeaning from "@/components/AfqtScoreMeaning";
 
 export const metadata: Metadata = {
-  title: "ASVAB Score Ranges: What Each Score Level Unlocks",
+  title: "ASVAB Score Ranges: What 31, 50, 70, and 99 Mean (2026)",
   description:
-    "Understand what each ASVAB score range unlocks: AFQT categories, branch minimums, composite scores, and real job examples across all 6 branches.",
+    "Enter any AFQT score to see what it means: your category, which branches you qualify for, the jobs it unlocks, and what to aim for next. All 6 branches.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-score-ranges",
   },
@@ -93,10 +94,18 @@ export default function ASVABScoreRangesPage() {
       <JsonLd data={faqJsonLd} />
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          ASVAB Score Ranges: What Every Score Level Actually Unlocks
+          ASVAB Score Ranges: Is Your Score Good Enough?
         </h1>
 
-        <p className="mt-4 text-text-secondary">
+        <p className="mt-4 text-lg text-text-primary">
+          Your AFQT score (1&ndash;99) is a percentile that sorts you into one of six categories. <strong>31&ndash;49</strong> meets the enlistment floor for most branches; <strong>50+</strong> is the practical target that unlocks bonuses and most jobs; <strong>65+</strong> opens nearly everything; and <strong>93+</strong> is the top tier. Enter your score below to see exactly what it means.
+        </p>
+
+        <div className="mt-6">
+          <AfqtScoreMeaning />
+        </div>
+
+        <p className="mt-8 text-text-secondary">
           Two people both passed the ASVAB. One scored a 35, the other a 72. Same test, completely different futures. The 35 qualifies for roughly 20 Army jobs. The 72 qualifies for 150+. Your <strong>ASVAB score range</strong> changes everything about your military career before it even starts.
         </p>
 
