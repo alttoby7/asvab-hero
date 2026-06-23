@@ -592,7 +592,7 @@ export default function BestASVABStudyBookPage() {
           >
             ASVAB Hero Pro
           </Link>{" "}
-          is a one-time $59 90-Day Pass (or $14.99/month) and covers all nine subtests with unlimited practice,
+          is a one-time $59 90-Day Pass (or $24.99/month) and covers all nine subtests with unlimited practice,
           a different use case from a physical book, but worth knowing before
           you pay $40/month for a competitor course.
         </p>

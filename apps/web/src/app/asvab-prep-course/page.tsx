@@ -632,7 +632,7 @@ export default function ASVABPrepCoursePage() {
 
         <p className="text-text-secondary">
           ASVAB Hero Pro lives in this category at the affordable end, a one-time
-          $59 90-Day Pass (or $14.99/mo), alongside higher-end coaching options like Duran Learning.
+          $59 90-Day Pass (or $24.99/mo), alongside higher-end coaching options like Duran Learning.
           It runs a diagnostic, then drills your weak subtests. It is one
           affordable option here, not the only one and not automatically the best
           for you. Pick the platform whose diagnostic and question style fit how

@@ -11,7 +11,7 @@ import { trackEvent, PaywallEvents } from "@/lib/analytics";
 const PLAN_DEFAULT_VALUE: Record<string, number> = {
   pass90: 59,
   retaker: 119,
-  monthly: 14.99,
+  monthly: 24.99,
   annual: 49.99,
 };
 
@@ -23,7 +23,7 @@ function OnboardingPageInner() {
   const plan = searchParams?.get("plan") ?? "monthly";
   const isPassPlan = plan === "pass90" || plan === "retaker";
   const value = Number.parseFloat(
-    searchParams?.get("value") ?? String(PLAN_DEFAULT_VALUE[plan] ?? 14.99)
+    searchParams?.get("value") ?? String(PLAN_DEFAULT_VALUE[plan] ?? 24.99)
   );
 
   useEffect(() => {
@@ -48,7 +48,7 @@ function OnboardingPageInner() {
       if (!already) {
         const safeValue = Number.isFinite(value)
           ? value
-          : PLAN_DEFAULT_VALUE[plan] ?? 14.99;
+          : PLAN_DEFAULT_VALUE[plan] ?? 24.99;
         // One-time passes get a non-"sub_" transaction id and no
         // subscription_started event (keeps GA4 / the revenue dashboard's
         // pass-vs-subscription split honest).

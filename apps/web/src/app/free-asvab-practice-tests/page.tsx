@@ -637,7 +637,7 @@ export default function FreeAsvabPracticeTestsPage() {
           </Link>
           ) or unlimited online practice. ASVAB Hero&apos;s{" "}
           <Link href="/upgrade?from=free-tests" className="text-accent hover:text-accent-hover">
-            Pro plan (90-Day Pass $59, or $14.99/mo)
+            Pro plan (90-Day Pass $59, or $24.99/mo)
           </Link>{" "}
           gives you unlimited subtest drilling, full-length practice tests, and
           progress tracking, with nothing to cancel once you&apos;ve sat at MEPS.

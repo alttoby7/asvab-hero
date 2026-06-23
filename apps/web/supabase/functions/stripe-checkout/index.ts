@@ -42,7 +42,7 @@ Deno.serve(async (req) => {
     // are recurring subscriptions. pass_days drives pro_until in the webhook.
     const PASS_DAYS: Record<string, number> = { pass90: 90, retaker: 120 };
     const TIER_VALUE: Record<string, string> = {
-      monthly: "14.99",
+      monthly: "24.99",
       annual: "49.99",
       pass90: "59.00",
       retaker: "119.00",
@@ -122,7 +122,7 @@ Deno.serve(async (req) => {
 
     // Build checkout params. Passes are one-time payments; monthly/annual are
     // subscriptions (and monthly gets a first-time 7-day trial).
-    const checkoutValue = TIER_VALUE[tier] ?? "14.99";
+    const checkoutValue = TIER_VALUE[tier] ?? "24.99";
     const checkoutParams: Record<string, unknown> = {
       mode: isPass ? "payment" : "subscription",
       customer: customerId,
