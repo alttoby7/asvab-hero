@@ -1,9 +1,11 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
+import AfqtCalculator from "@/components/AfqtCalculator";
 import AFQTFormulaExplorer from "@/components/scores-explained/AFQTFormulaExplorer";
 import ScoreImpactSimulator from "@/components/scores-explained/ScoreImpactSimulator";
 
@@ -123,6 +125,19 @@ export default function AFQTScorePage() {
           branch checks before anything else. Below the cutoff, nothing else on
           your score sheet matters.
         </p>
+
+        <div className="my-8">
+          <Suspense
+            fallback={
+              <div className="rounded-xl border border-white/10 bg-white/5 p-6 text-sm text-text-secondary">
+                Loading the AFQT calculator…
+              </div>
+            }
+          >
+            <AfqtCalculator />
+          </Suspense>
+        </div>
+
         <p className="text-text-secondary">
           This guide breaks down the AFQT formula, branch minimums for 2026,
           categories, how composites differ, and how to raise your score fast.

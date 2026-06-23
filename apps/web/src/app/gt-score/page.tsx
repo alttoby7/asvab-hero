@@ -1,9 +1,11 @@
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import EmailCapture from "@/components/EmailCapture";
 import JsonLd from "@/components/JsonLd";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
+import GTScoreCalculator from "@/components/GTScoreCalculator";
 
 export const metadata: Metadata = {
   title: "ASVAB GT Score Explained + GT Score Calculator (2026)",
@@ -171,6 +173,18 @@ export default function GTScorePage() {
           AFQT, and it is not your overall ASVAB result. It is a separate
           composite that the services use to match you to careers.
         </p>
+
+        <div className="my-8">
+          <Suspense
+            fallback={
+              <div className="rounded-xl border border-white/10 bg-white/5 p-6 text-sm text-text-secondary">
+                Loading the GT score calculator…
+              </div>
+            }
+          >
+            <GTScoreCalculator />
+          </Suspense>
+        </div>
 
         <p className="text-text-secondary">
           Here is what we cover below: what a GT score actually is, the VE + AR
