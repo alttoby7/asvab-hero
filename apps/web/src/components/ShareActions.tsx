@@ -41,11 +41,17 @@ export default function ShareActions({
 }: ShareActionsProps) {
   const [url, setUrl] = useState("");
   const [copied, setCopied] = useState(false);
+  const [canNativeShare, setCanNativeShare] = useState(false);
 
   useEffect(() => {
     setUrl(buildShareUrl(scores));
     setCopied(false);
+    setCanNativeShare(typeof navigator !== "undefined" && !!navigator.share);
   }, [scores]);
+
+  const shareText = url
+    ? buildShareText(scores, afqt, qualifyingCount, url)
+    : "";
 
   const handleCopy = useCallback(async () => {
     if (!url) return;
@@ -55,7 +61,6 @@ export default function ShareActions({
       setCopied(true);
       setTimeout(() => setCopied(false), 1800);
     } catch {
-      // clipboard denied, fall back to selection
       const input = document.createElement("input");
       input.value = url;
       document.body.appendChild(input);
@@ -67,25 +72,45 @@ export default function ShareActions({
     }
   }, [url]);
 
+  const handleNativeShare = useCallback(async () => {
+    if (!url) return;
+    trackEvent("share_result", { method: "native_share" });
+    try {
+      await navigator.share({
+        title: `My ASVAB Results — AFQT ${afqt}`,
+        text: `AFQT ${afqt}, qualifying for ${qualifyingCount} jobs.`,
+        url,
+      });
+    } catch {
+      // user cancelled
+    }
+  }, [url, afqt, qualifyingCount]);
+
   const handlePrint = useCallback(() => {
     trackEvent("share_result", { method: "print" });
     window.print();
   }, []);
 
-  const handleSmsClick = useCallback(() => {
-    trackEvent("share_result", { method: "text" });
-  }, []);
-
-  const handleEmailClick = useCallback(() => {
-    trackEvent("share_result", { method: "email" });
-  }, []);
+  const trackClick = useCallback(
+    (method: string) => () => trackEvent("share_result", { method }),
+    []
+  );
 
   const smsHref = url
-    ? `sms:?&body=${encodeURIComponent(buildShareText(scores, afqt, qualifyingCount, url))}`
+    ? `sms:?&body=${encodeURIComponent(shareText)}`
     : "";
   const emailHref = url
-    ? `mailto:?subject=${encodeURIComponent("My ASVAB results")}&body=${encodeURIComponent(buildShareText(scores, afqt, qualifyingCount, url))}`
+    ? `mailto:?subject=${encodeURIComponent("My ASVAB results")}&body=${encodeURIComponent(shareText)}`
     : "";
+  const whatsappHref = url
+    ? `https://wa.me/?text=${encodeURIComponent(shareText)}`
+    : "";
+  const xHref = url
+    ? `https://x.com/intent/tweet?text=${encodeURIComponent(`AFQT ${afqt}, qualifying for ${qualifyingCount} jobs`)}&url=${encodeURIComponent(url)}`
+    : "";
+
+  const btnClass =
+    "rounded-md border border-navy-border bg-navy px-3 py-2 text-sm font-medium text-text-primary transition-colors hover:bg-navy-lighter";
 
   return (
     <section className="rounded-xl border border-navy-border bg-navy-light p-6 print:hidden">
@@ -97,32 +122,49 @@ export default function ShareActions({
         The link restores your exact scores.
       </p>
       <div className="flex flex-wrap gap-2">
-        <button
-          onClick={handleCopy}
-          className="rounded-md border border-navy-border bg-navy px-3 py-2 text-sm font-medium text-text-primary transition-colors hover:bg-navy-lighter"
-        >
+        {canNativeShare && (
+          <button onClick={handleNativeShare} className={btnClass}>
+            Share
+          </button>
+        )}
+        <button onClick={handleCopy} className={btnClass}>
           {copied ? "Copied ✓" : "Copy link"}
         </button>
-        <button
-          onClick={handlePrint}
-          className="rounded-md border border-navy-border bg-navy px-3 py-2 text-sm font-medium text-text-primary transition-colors hover:bg-navy-lighter"
+        <a
+          href={whatsappHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={trackClick("whatsapp")}
+          className={btnClass}
         >
-          Print / Save as PDF
-        </button>
+          WhatsApp
+        </a>
+        <a
+          href={xHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={trackClick("x")}
+          className={btnClass}
+        >
+          X / Twitter
+        </a>
         <a
           href={smsHref}
-          onClick={handleSmsClick}
-          className="rounded-md border border-navy-border bg-navy px-3 py-2 text-sm font-medium text-text-primary transition-colors hover:bg-navy-lighter"
+          onClick={trackClick("text")}
+          className={btnClass}
         >
-          Text to recruiter
+          Text
         </a>
         <a
           href={emailHref}
-          onClick={handleEmailClick}
-          className="rounded-md border border-navy-border bg-navy px-3 py-2 text-sm font-medium text-text-primary transition-colors hover:bg-navy-lighter"
+          onClick={trackClick("email")}
+          className={btnClass}
         >
           Email
         </a>
+        <button onClick={handlePrint} className={btnClass}>
+          Print / PDF
+        </button>
       </div>
       {url && (
         <div className="mt-3 overflow-x-auto rounded-md border border-navy-border bg-navy px-3 py-2 text-xs font-mono text-text-tertiary">
