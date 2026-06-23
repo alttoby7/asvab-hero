@@ -64,7 +64,7 @@ export default function BestASVABOnlinePrepPage() {
               name: "What is the cheapest ASVAB online prep option?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "UnionTestPrep is completely free and covers all ASVAB subtests with a large question bank, no account required. Among paid options, ASVAB Hero Pro is the best value, a one-time 90-Day Pass for $59 (or $14.99/month) with score tracking and unlimited practice.",
+                text: "UnionTestPrep is completely free and covers all ASVAB subtests with a large question bank, no account required. Among paid options, ASVAB Hero Pro is the best value, a one-time 90-Day Pass for $59 (or $24.99/month) with score tracking and unlimited practice.",
               },
             },
             {
@@ -190,11 +190,11 @@ export default function BestASVABOnlinePrepPage() {
           </h2>
         </div>
         <p className="mb-4 text-sm text-text-secondary">
-          90-Day Pass $59 one-time &middot; or $14.99/mo
+          90-Day Pass $59 one-time &middot; or $24.99/mo
         </p>
 
         <p className="mb-4 text-text-secondary leading-relaxed">
-          ASVAB Hero Pro is the platform we built, and it ranks first on value for most self-study users. The one-time 90-Day Test Pass is $59 and covers your whole study window with nothing to cancel; if you&apos;d rather go month-to-month it&apos;s $14.99. Either way you get real score tracking and unlimited practice, and the calculator stays free forever.
+          ASVAB Hero Pro is the platform we built, and it ranks first on value for most self-study users. The one-time 90-Day Test Pass is $59 and covers your whole study window with nothing to cancel; if you&apos;d rather go month-to-month it&apos;s $24.99. Either way you get real score tracking and unlimited practice, and the calculator stays free forever.
         </p>
 
         <h3 className="mb-2 font-display text-lg font-bold text-text-primary">
@@ -230,7 +230,7 @@ export default function BestASVABOnlinePrepPage() {
           Who it&apos;s for
         </h3>
         <p className="mb-4 text-text-secondary leading-relaxed">
-          Anyone doing self-directed prep who wants unlimited practice and wants to know exactly which topics to focus on. The 90-Day Pass covers a full study window for $59 with nothing to cancel; if your test is close, a single month at $14.99 can be enough to drill hard and go.
+          Anyone doing self-directed prep who wants unlimited practice and wants to know exactly which topics to focus on. The 90-Day Pass covers a full study window for $59 with nothing to cancel; if your test is close, a single month at $24.99 can be enough to drill hard and go.
         </p>
 
         <h3 className="mb-2 font-display text-lg font-bold text-text-primary">
@@ -305,7 +305,7 @@ export default function BestASVABOnlinePrepPage() {
         </h3>
         <div className="mb-4 space-y-2">
           {[
-            "At ~$39.99/month, well above ASVAB Hero Pro's $14.99/month — and no one-time pass option",
+            "At ~$39.99/month, well above ASVAB Hero Pro's $24.99/month — and no one-time pass option",
             "Monthly auto-renew, easy to forget and get charged for a month you don't use",
             "Per-topic score tracking is less granular than what Pro offers",
             "No AFQT estimator based on your actual practice performance",
@@ -593,7 +593,7 @@ export default function BestASVABOnlinePrepPage() {
           Who it&apos;s for
         </h3>
         <p className="text-text-secondary leading-relaxed">
-          Budget-only students. Also useful as a supplemental question source alongside a paid platform that handles your progress tracking. If you can stretch to a $59 pass (or $14.99/month), the tracking features in Pro are worth it.
+          Budget-only students. Also useful as a supplemental question source alongside a paid platform that handles your progress tracking. If you can stretch to a $59 pass (or $24.99/month), the tracking features in Pro are worth it.
         </p>
       </section>
 
@@ -621,7 +621,7 @@ export default function BestASVABOnlinePrepPage() {
               {[
                 {
                   name: "ASVAB Hero Pro",
-                  price: "$59 pass / $14.99 mo",
+                  price: "$59 pass / $24.99 mo",
                   questions: QUESTIONS_PLUS,
                   tracking: "Yes, per topic",
                   trial: "Free 30-q diagnostic",
@@ -712,7 +712,7 @@ export default function BestASVABOnlinePrepPage() {
           {[
             {
               persona: "You want the cheapest path to unlimited practice",
-              rec: "ASVAB Hero Pro, a $59 90-Day Pass or $14.99/mo. Start with the free diagnostic to see where you stand.",
+              rec: "ASVAB Hero Pro, a $59 90-Day Pass or $24.99/mo. Start with the free diagnostic to see where you stand.",
               cta: { label: "Start free diagnostic →", href: "/practice-test" },
             },
             {
@@ -776,7 +776,7 @@ export default function BestASVABOnlinePrepPage() {
             },
             {
               q: "What is the cheapest ASVAB online prep option?",
-              a: "UnionTestPrep is completely free. Among paid options with score tracking, ASVAB Hero Pro is the best value, a one-time 90-Day Pass for $59 covers a full study window with nothing to cancel, or you can go month-to-month at $14.99.",
+              a: "UnionTestPrep is completely free. Among paid options with score tracking, ASVAB Hero Pro is the best value, a one-time 90-Day Pass for $59 covers a full study window with nothing to cancel, or you can go month-to-month at $24.99.",
             },
             {
               q: "Are there free ASVAB prep alternatives?",

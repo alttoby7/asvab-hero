@@ -328,7 +328,7 @@ const renderWelcomeTrial = (firstName: string): string => `\
   <li>Re-take the diagnostic on day 6 to see your score move</li>
 </ol>
 
-<p>If Pro is helping, do nothing. Your card runs on day 8 at $14.99 and you keep going. If it is not the right fit, cancel any time at <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a>.</p>
+<p>If Pro is helping, do nothing. Your card runs on day 8 at $24.99 and you keep going. If it is not the right fit, cancel any time at <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a>.</p>
 
 <p>Reply with your branch and target test date. I read every reply.</p>
 

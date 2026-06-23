@@ -19,7 +19,7 @@ const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 // Pricing model (2026-06): pass-led, not subscription-led.
 //   - 90-Day Test Pass ($59, one-time) is the loud default — matches the
 //     2-4 week study window and removes the churn/cancel event.
-//   - Monthly ($14.99) stays as the flexibility option.
+//   - Monthly ($24.99) stays as the flexibility option.
 //   - Retaker Pass ($119, one-time, 120 days) targets the failed-AFQT /
 //     30-day-clock segment; premium WTP is captured HERE, not on the volume
 //     pass. Guarantee is the universal one (see @/lib/guarantee), not a special
@@ -55,12 +55,12 @@ const TIERS: Record<Tier, TierConfig> = {
   monthly: {
     key: "monthly",
     label: "Monthly",
-    price: "$14.99",
+    price: "$24.99",
     unit: "/ month",
     tagline:
       "Month-to-month flexibility if you're not sure of your test date yet.",
     cta: "Start 7-day free trial",
-    note: "Card required. $14.99/mo after the 7-day trial unless cancelled. Cancel anytime in Account Settings.",
+    note: "Card required. $24.99/mo after the 7-day trial unless cancelled. Cancel anytime in Account Settings.",
   },
   retaker: {
     key: "retaker",
