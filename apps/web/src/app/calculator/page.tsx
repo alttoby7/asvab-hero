@@ -18,7 +18,7 @@ import coastGuardJobs from "@/data/coast-guard-jobs.json";
 import spaceForceJobs from "@/data/space-force-jobs.json";
 
 export const metadata: Metadata = {
-  title: "All-Branch ASVAB Calculator: Every Score & Qualifying Job (2026)",
+  title: "All-Branch ASVAB Job Calculator: Line Scores, Composites & Jobs (2026)",
   description:
     "The all-in-one ASVAB calculator: enter your 9 subtest scores once and see your AFQT percentile, every branch's composite line scores, and all the military jobs you qualify for across all 6 branches — plus the full directory of branch and score calculators.",
   alternates: {
@@ -70,7 +70,7 @@ export default function CalculatorPage() {
       />
       <div className="mb-8">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          All-Branch ASVAB Calculator
+          All-Branch ASVAB Job Calculator
         </h1>
         <p className="mt-2 text-text-secondary">
           The all-in-one calculator: enter your 9 subtest standard scores once to

@@ -8,7 +8,7 @@ import AFQTCategoryLadder from "@/components/scores-explained/AFQTCategoryLadder
 import BranchCompositeHeatmap from "@/components/scores-explained/BranchCompositeHeatmap";
 
 export const metadata: Metadata = {
-  title: "ASVAB Score Chart: AFQT Categories I–V + Branch Minimums (2026)",
+  title: "ASVAB Score Chart: AFQT Categories, Line Scores & Branch Minimums (2026)",
   description:
     "AFQT Category I = 93–99. II = 65–92. IIIA = 50–64. IIIB = 31–49. IV = 10–30. Branch minimums: Army 31, Marines 32, Navy 31, Air Force/Space Force 36, Coast Guard 32. GED floors are higher.",
   alternates: {

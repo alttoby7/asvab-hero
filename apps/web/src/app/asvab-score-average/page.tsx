@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "ASVAB Score Average: What 50 Really Means",
+  title: "Average ASVAB Score: Why 50 Is the Middle, Not 50% (2026)",
   description:
     "An average ASVAB score is AFQT 50. Learn what average means, which jobs it qualifies you for, score averages by branch, and how to score above average.",
   alternates: {

@@ -3,7 +3,7 @@ import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Highest ASVAB Score: What 99 Really Means",
+  title: "Highest ASVAB Score: What 99 Means and What It Does Not (2026)",
   description:
     "The highest ASVAB score is 99 AFQT. Learn what that percentile means, how subtest and composite scores differ, what a 99 unlocks, and how to get there.",
   alternates: {
