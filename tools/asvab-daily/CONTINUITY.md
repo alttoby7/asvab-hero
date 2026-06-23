@@ -78,10 +78,17 @@ All 30 clips reordered for strategic posting: broad-appeal subtests first, niche
 cp ~/dev/asvab-hero/tools/asvab-daily/out/batch/clip-*.mp4 ~/google-drive/0-AI/ASVAB-Daily-batch-2026-06/
 ```
 
+### Social Distribution Infrastructure (2026-06-22)
+- **Link-in-bio page** LIVE at `asvabhero.com/links` — 4 UTM-tagged link cards (calculator, practice, study guide, score requirements) + TikTok/YouTube/web social icons. `apps/web/src/app/links/page.tsx`, noindex.
+- **TikTok bio** updated to point to `asvabhero.com/links` (72/80 chars)
+- **Social share buttons** added to calculator (`ShareActions.tsx`): native Web Share API (mobile), Copy link, WhatsApp, X/Twitter, Text, Email, Print/PDF. All GA4-instrumented (`share_result` event).
+- **Content + compliance brief** written at `apps/web/docs/content-compliance-brief-2026-06.md` — reusable creator/VA SOP: brand positioning, 5 approved hook formats, production specs, FTC/DoD compliance rules, creator eligibility screening, outreach template, pre-post checklist.
+- **Scheduled TikTok API check**: cloud routine fires 2026-07-07 9AM MT to check approval status + guide through upload.
+
 ## Next Steps (in order)
-1. **Wait for TikTok app review approval** (~early July 2026)
+1. **Wait for TikTok app review approval** (~early July 2026, scheduled check 2026-07-07)
 2. **Once approved**: add TikTok API creds (`TIKTOK_CLIENT_KEY`, `TIKTOK_CLIENT_SECRET`, `TIKTOK_ACCESS_TOKEN`) to root `.env`, run `upload-tiktok.cjs` for remaining 29 clips
-3. **Execute the 90-day social plan** — see `apps/web/docs/social-channel-strategy-2026-06.md` §8
+3. **Execute Phase 1 of the 90-day social plan** — post 4-5×/week (TikTok → Reels → Shorts), test the 5 hook formats, start creator outreach. See `apps/web/docs/social-channel-strategy-2026-06.md` §8 + `apps/web/docs/content-compliance-brief-2026-06.md`
 
 ## Key Files
 - `src/QuestionShort.tsx` — video template + timeline constants (lines 22-28)
@@ -96,10 +103,15 @@ cp ~/dev/asvab-hero/tools/asvab-daily/out/batch/clip-*.mp4 ~/google-drive/0-AI/A
 - `upload-youtube.py` — YouTube Data API v3 bulk uploader (Python, OAuth)
 - `tiktok-api-demo.mp4` — demo video of the upload script
 - `~/dev/asvab-hero/apps/web/docs/social-channel-strategy-2026-06.md` — full social channel strategy (deep-researched)
+- `~/dev/asvab-hero/apps/web/docs/content-compliance-brief-2026-06.md` — content + compliance brief (creator/VA SOP)
+- `~/dev/asvab-hero/apps/web/src/app/links/page.tsx` — link-in-bio page at `/links`
+- `~/dev/asvab-hero/apps/web/src/components/ShareActions.tsx` — social share buttons (WhatsApp, X, native share, etc.)
 
 ## Commits
 - `cf21237` (pushed to origin/main) — timing 23s->33s + caption "free" fix + all 30 clips re-rendered + captions regenerated
 - `62fe48f` (pushed to origin/main) — timing rebalance, audio bed fix, TikTok API setup + upload script, terms/privacy pages
+- `1ab8adc` (pushed to origin/main) — YouTube upload script + social channel strategy research
+- `ad7441e` (pushed to origin/main) — link-in-bio page + social share buttons on calculator
 
 ## History
 - **Original build**: 23s videos, found too fast by user
@@ -114,3 +126,8 @@ cp ~/dev/asvab-hero/tools/asvab-daily/out/batch/clip-*.mp4 ~/google-drive/0-AI/A
 - **TikTok bio updated** (2026-06-22): "ASVAB prep. 4,500+ questions. Free score calculator. asvabhero.com" (removed blanket "Free" overstatement)
 - **All 30 YouTube Shorts uploaded** (2026-06-22): clips 1-15 manual, 16-30 via `upload-youtube.py`
 - **Social channel strategy researched** (2026-06-22): 106-agent deep research → `apps/web/docs/social-channel-strategy-2026-06.md` updated with verified Pew data, competitive gaps, and 90-day plan
+- **Link-in-bio page shipped** (2026-06-22): `asvabhero.com/links` — 4 UTM-tagged cards, social icons, noindex. Commit `ad7441e`.
+- **Social share buttons added** (2026-06-22): WhatsApp, X/Twitter, native Web Share API, all GA4-instrumented. Commit `ad7441e`.
+- **TikTok bio updated to /links** (2026-06-22): bio now points to `asvabhero.com/links` instead of bare domain
+- **Content + compliance brief written** (2026-06-22): creator/VA SOP with hooks, specs, FTC/DoD rules, creator screening, outreach template
+- **TikTok API check scheduled** (2026-06-22): cloud routine fires 2026-07-07 9AM MT
