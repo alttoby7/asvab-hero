@@ -80,14 +80,14 @@ export default function CalculatorPage() {
         <p className="mt-3 text-sm text-text-tertiary">
           Want a single number? Use the{" "}
           <Link
-            href="/gt-score-calculator"
+            href="/gt-score"
             className="text-accent underline hover:text-accent-hover"
           >
             Army GT score calculator
           </Link>{" "}
           or the{" "}
           <Link
-            href="/afqt-calculator"
+            href="/afqt-score"
             className="text-accent underline hover:text-accent-hover"
           >
             AFQT calculator

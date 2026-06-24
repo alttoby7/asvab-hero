@@ -826,7 +826,7 @@ export default function ASVABArithmeticReasoningTipsPage() {
           For the full scoring picture, see{" "}
           <Link href="/asvab-scoring-and-results" className="text-accent hover:text-accent-hover">ASVAB Scoring and Results</Link>,{" "}
           <Link href="/asvab-scores-explained" className="text-accent hover:text-accent-hover">ASVAB Scores Explained</Link>,{" "}
-          <Link href="/what-is-a-good-asvab-score" className="text-accent hover:text-accent-hover">What Is a Good ASVAB Score</Link>, and the{" "}
+          <Link href="/asvab-score-ranges" className="text-accent hover:text-accent-hover">What Is a Good ASVAB Score</Link>, and the{" "}
           <Link href="/asvab-score-chart" className="text-accent hover:text-accent-hover">ASVAB Score Chart</Link>.
         </p>
         <p className="text-text-secondary">

@@ -916,7 +916,7 @@ export default function MarineCorpsRanksPage() {
 
         <p className="text-text-secondary">
           Learn{" "}
-          <Link href="/what-is-a-good-asvab-score" className="text-accent hover:text-accent-hover">what counts as a good ASVAB score</Link>{" "}
+          <Link href="/asvab-score-ranges" className="text-accent hover:text-accent-hover">what counts as a good ASVAB score</Link>{" "}
           for your target MOS.
         </p>
 

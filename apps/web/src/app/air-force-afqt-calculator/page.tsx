@@ -376,7 +376,7 @@ export default function AirForceAfqtCalculatorPage() {
           <li>
             Compare across branches with the{" "}
             <Link
-              href="/afqt-calculator"
+              href="/afqt-score"
               className="text-accent underline hover:text-accent-hover"
             >
               all-branch AFQT calculator

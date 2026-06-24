@@ -437,7 +437,7 @@ export default function HowToRetakeTheASVABPage() {
           </Link>{" "}
           to see line score requirements by branch, and read our breakdown of{" "}
           <Link
-            href="/what-is-a-good-asvab-score"
+            href="/asvab-score-ranges"
             className="text-accent hover:text-accent-hover"
           >
             what counts as a good ASVAB score

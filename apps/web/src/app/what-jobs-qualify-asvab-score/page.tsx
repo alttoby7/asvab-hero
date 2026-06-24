@@ -426,7 +426,7 @@ export default function WhatJobsQualifyASVABScorePage() {
           </Link>{" "}
           and the{" "}
           <Link
-            href="/asvab-line-score-calculator"
+            href="/calculator"
             className="text-accent hover:text-accent-hover"
           >
             ASVAB line score calculator

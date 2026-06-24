@@ -473,7 +473,7 @@ export default function ASVABScoreAveragePage() {
 
         <p className="text-text-secondary">
           For a complete breakdown of what different score levels mean, see our{" "}
-          <Link href="/what-is-a-good-asvab-score">
+          <Link href="/asvab-score-ranges">
             what is a good ASVAB score
           </Link>{" "}
           guide.

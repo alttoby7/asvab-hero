@@ -267,14 +267,14 @@ export default function AfctPracticeTestPage() {
           <p className="mt-3 text-sm">
             Use the{" "}
             <Link
-              href="/gt-score-calculator"
+              href="/gt-score"
               className="text-accent underline hover:text-accent-hover"
             >
               GT Score Calculator
             </Link>{" "}
             to project your composite from subtest scores, or the{" "}
             <Link
-              href="/asvab-line-score-calculator"
+              href="/calculator"
               className="text-accent underline hover:text-accent-hover"
             >
               Line Score Calculator
@@ -326,13 +326,13 @@ export default function AfctPracticeTestPage() {
           BSEP GT Improvement
         </Link>
         <Link
-          href="/gt-score-calculator"
+          href="/gt-score"
           className="rounded-lg border border-navy-border px-3 py-1.5 text-text-secondary transition hover:border-accent hover:text-accent"
         >
           GT Score Calculator
         </Link>
         <Link
-          href="/asvab-line-score-calculator"
+          href="/calculator"
           className="rounded-lg border border-navy-border px-3 py-1.5 text-text-secondary transition hover:border-accent hover:text-accent"
         >
           Line Score Calculator

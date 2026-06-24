@@ -1037,7 +1037,7 @@ export default function ASVABScoringAndResultsPage() {
               Define your goal first, then evaluate your score against it. For a
               full breakdown by branch and job type, see{" "}
               <Link
-                href="/what-is-a-good-asvab-score"
+                href="/asvab-score-ranges"
                 className="text-accent hover:text-accent-hover"
               >
                 what is a good ASVAB score

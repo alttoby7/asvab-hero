@@ -317,7 +317,7 @@ export default function MarinesASVABScorePage() {
           For context on how 31 compares across all branches, see the full{" "}
           <Link href="/asvab-score-ranges">ASVAB score ranges</Link> breakdown
           and our guide on{" "}
-          <Link href="/what-is-a-good-asvab-score">
+          <Link href="/asvab-score-ranges">
             what is a good ASVAB score
           </Link>
           .
@@ -539,11 +539,11 @@ export default function MarinesASVABScorePage() {
 
         <p className="text-text-secondary">
           For the full formula breakdown with a worked example, see our{" "}
-          <Link href="/asvab-line-score-calculator">
+          <Link href="/calculator">
             ASVAB line score calculator
           </Link>
           . Calculate your GT specifically at the{" "}
-          <Link href="/gt-score-calculator">GT score calculator</Link>.
+          <Link href="/gt-score">GT score calculator</Link>.
         </p>
 
         {/* ── Section: Worked Example (folded in from asvab-score-for-marines) ── */}
@@ -1849,7 +1849,7 @@ export default function MarinesASVABScorePage() {
               composites, not GT. If you are studying gears and levers to raise
               your GT, you are wasting time. Focus on AR and WK/PC instead. See
               the{" "}
-              <Link href="/gt-score-calculator">GT score calculator</Link> for
+              <Link href="/gt-score">GT score calculator</Link> for
               details.
             </p>
           </div>

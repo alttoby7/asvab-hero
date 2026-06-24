@@ -685,7 +685,7 @@ export default function AirForceAFSCListPage() {
 
         <p className="text-text-secondary">
           For score benchmarks across all these roles, see{" "}
-          <Link href="/what-is-a-good-asvab-score" className="text-accent hover:text-accent-hover">
+          <Link href="/asvab-score-ranges" className="text-accent hover:text-accent-hover">
             what is a good ASVAB score
           </Link>. If you want to practice before your test, try our{" "}
           <Link href="/practice-test" className="text-accent hover:text-accent-hover">
@@ -1080,7 +1080,7 @@ export default function AirForceAFSCListPage() {
                 ASVAB Score Calculator
               </Link>{" "}
               to see which jobs match your scores, and check{" "}
-              <Link href="/what-is-a-good-asvab-score" className="text-accent hover:text-accent-hover">
+              <Link href="/asvab-score-ranges" className="text-accent hover:text-accent-hover">
                 what is a good ASVAB score
               </Link>{" "}
               for benchmarks.

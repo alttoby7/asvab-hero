@@ -288,7 +288,7 @@ export default function NavyRatingsListPage() {
             AFQT score breakdown
           </Link>
           . To preview which composites you hit, plug subtest scores into the{" "}
-          <Link href="/asvab-line-score-calculator" className="text-accent hover:text-accent-hover">
+          <Link href="/calculator" className="text-accent hover:text-accent-hover">
             free line score calculator
           </Link>
           .

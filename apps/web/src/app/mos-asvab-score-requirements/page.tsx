@@ -1198,7 +1198,7 @@ export default function MOSASVABScoreRequirementsPage() {
           </Link>
           , or run your own numbers with the{" "}
           <Link
-            href="/asvab-line-score-calculator"
+            href="/calculator"
             className="text-accent hover:text-accent-hover"
           >
             ASVAB line score calculator
@@ -1271,7 +1271,7 @@ export default function MOSASVABScoreRequirementsPage() {
           </Link>
           , and check your composites against any job with the{" "}
           <Link
-            href="/asvab-line-score-calculator"
+            href="/calculator"
             className="text-accent hover:text-accent-hover"
           >
             line score calculator

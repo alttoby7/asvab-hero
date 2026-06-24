@@ -155,7 +155,7 @@ export default function ASVABScoreChartPage() {
         </p>
         <p className="text-text-secondary">
           Two numbers matter most: your AFQT score (determines if you can enlist) and your composite scores (determine which jobs you qualify for). You can have a high AFQT and still miss the composite minimum for a specific job, so both scores shape your career options. Use the{" "}
-          <Link href="/afqt-calculator" className="text-accent hover:text-accent-hover">
+          <Link href="/afqt-score" className="text-accent hover:text-accent-hover">
             AFQT calculator
           </Link>{" "}
           to pin down your percentile, or browse the{" "}

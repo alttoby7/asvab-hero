@@ -367,7 +367,7 @@ export default function BSEPPage() {
           range. Fort Knox instructor Lola Best puts it simply: &ldquo;Math
           skill-building drives the curriculum&apos;s effectiveness.&rdquo; Plug
           your current scores into the{" "}
-          <Link href="/gt-score-calculator">GT score calculator</Link> to see
+          <Link href="/gt-score">GT score calculator</Link> to see
           which subtest gains would push you past your target.
         </p>
 

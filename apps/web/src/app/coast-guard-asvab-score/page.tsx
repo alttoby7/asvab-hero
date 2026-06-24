@@ -299,8 +299,8 @@ export default function CoastGuardASVABScorePage() {
         <p className="text-text-secondary">
           This matters because you need to know which specific subtests feed each
           rating requirement, not just a composite name. Our{" "}
-          <Link href="/asvab-line-score-calculator">line score calculator</Link>{" "}
-          and <Link href="/gt-score-calculator">GT score calculator</Link> can
+          <Link href="/calculator">line score calculator</Link>{" "}
+          and <Link href="/gt-score">GT score calculator</Link> can
           help you map your scores to CG requirements.
         </p>
 
@@ -706,7 +706,7 @@ export default function CoastGuardASVABScorePage() {
           <p className="text-sm font-semibold text-emerald-400">Tip</p>
           <p className="mt-1 text-sm text-text-secondary">
             Calculate your GT score instantly with our{" "}
-            <Link href="/gt-score-calculator">GT score calculator</Link>. For a
+            <Link href="/gt-score">GT score calculator</Link>. For a
             complete breakdown of what GT means and how to raise it, see the{" "}
             <Link href="/gt-score">GT score guide</Link>.
           </p>
@@ -1059,14 +1059,14 @@ export default function CoastGuardASVABScorePage() {
             <li>
               Work out rating composites on the{" "}
               <Link
-                href="/asvab-line-score-calculator"
+                href="/calculator"
                 className="text-accent underline hover:text-accent-hover"
               >
                 ASVAB line score calculator
               </Link>{" "}
               and check eligibility with the{" "}
               <Link
-                href="/afqt-calculator"
+                href="/afqt-score"
                 className="text-accent underline hover:text-accent-hover"
               >
                 AFQT calculator

@@ -418,7 +418,7 @@ export default function ASVABScoreRequirementsPage() {
             push focused on verbal skills (WK and PC) can push you past 50 and
             into Category IIIA. That one jump opens more doors than any other
             single score improvement. See{" "}
-            <Link href="/what-is-a-good-asvab-score">
+            <Link href="/asvab-score-ranges">
               what counts as a good score
             </Link>{" "}
             for more context.
@@ -708,7 +708,7 @@ export default function ASVABScoreRequirementsPage() {
 
         <p className="text-text-secondary">
           Use the{" "}
-          <Link href="/asvab-line-score-calculator">line score calculator</Link>{" "}
+          <Link href="/calculator">line score calculator</Link>{" "}
           to check your composites against job requirements, or plug your
           subtest scores into the{" "}
           <Link href="/calculator">ASVAB score calculator</Link> to see every
@@ -815,7 +815,7 @@ export default function ASVABScoreRequirementsPage() {
           For active-duty soldiers, GT is also the score that blocks or enables
           MOS reclassification. Want to move from an admin MOS to intelligence?
           You need GT 107. Want Special Forces? GT 110 plus CO 100. The{" "}
-          <Link href="/gt-score-calculator">GT score calculator</Link> shows
+          <Link href="/gt-score">GT score calculator</Link> shows
           exactly where you stand, and the{" "}
           <Link href="/gt-score">full GT score guide</Link> covers every
           threshold and formula.
@@ -1269,7 +1269,7 @@ export default function ASVABScoreRequirementsPage() {
               </Link>
 , and{" "}
               <Link
-                href="/what-jobs-qualify-asvab-score"
+                href="/calculator"
                 className="text-accent underline hover:text-accent-hover"
               >
                 what jobs your score qualifies you for

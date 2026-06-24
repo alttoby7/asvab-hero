@@ -271,7 +271,7 @@ export default function IsTheASVABHardPage() {
           </Link>
           , or check{" "}
           <Link
-            href="/what-is-a-good-asvab-score"
+            href="/asvab-score-ranges"
             className="text-accent hover:text-accent-hover"
           >
             what counts as a good ASVAB score

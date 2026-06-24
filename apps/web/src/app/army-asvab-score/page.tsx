@@ -321,7 +321,7 @@ export default function ArmyASVABScorePage() {
         </p>
 
         <p className="text-text-secondary">
-          Use our <Link href="/asvab-line-score-calculator">line score calculator</Link> to plug in your subtest scores and see all 10 composites instantly.
+          Use our <Link href="/calculator">line score calculator</Link> to plug in your subtest scores and see all 10 composites instantly.
         </p>
 
         {/* ── Section: Army MOS Requirements ── */}
@@ -535,7 +535,7 @@ export default function ArmyASVABScorePage() {
         </p>
 
         <p className="text-text-secondary">
-          Check where you stand with our <Link href="/gt-score-calculator">GT score calculator</Link>.
+          Check where you stand with our <Link href="/gt-score">GT score calculator</Link>.
         </p>
 
         {/* ── Section: AFQT Score Tiers ── */}
@@ -564,7 +564,7 @@ export default function ArmyASVABScorePage() {
         </aside>
 
         <p className="text-text-secondary">
-          For benchmarks on what qualifies as a competitive score, see our guide on <Link href="/what-is-a-good-asvab-score">what counts as a good ASVAB score</Link>. For a full breakdown of each score tier, see <Link href="/asvab-score-ranges">ASVAB score ranges</Link>.
+          For benchmarks on what qualifies as a competitive score, see our guide on <Link href="/asvab-score-ranges">what counts as a good ASVAB score</Link>. For a full breakdown of each score tier, see <Link href="/asvab-score-ranges">ASVAB score ranges</Link>.
         </p>
 
         {/* ── Section: How to Calculate Your Army Line Scores ── */}

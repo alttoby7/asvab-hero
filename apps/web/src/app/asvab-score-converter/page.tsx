@@ -412,7 +412,7 @@ export default function AsvabScoreConverterPage() {
           <li>
             For the AFQT-only view, the{" "}
             <Link
-              href="/afqt-calculator"
+              href="/afqt-score"
               className="text-accent underline hover:text-accent-hover"
             >
               AFQT calculator

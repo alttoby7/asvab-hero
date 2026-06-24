@@ -301,7 +301,7 @@ export default function MOSReclassificationPage() {
             </Link>{" "}
             guide, run the math in the{" "}
             <Link
-              href="/asvab-line-score-calculator"
+              href="/calculator"
               className="text-accent hover:text-accent-hover"
             >
               line score calculator

@@ -620,7 +620,7 @@ export default function AirForceASVABScorePage() {
             equivalent. See our{" "}
             <Link href="/gt-score">GT score guide</Link> for the full
             breakdown, or use the{" "}
-            <Link href="/gt-score-calculator">GT score calculator</Link> to
+            <Link href="/gt-score">GT score calculator</Link> to
             check your number.
           </p>
         </aside>
@@ -629,7 +629,7 @@ export default function AirForceASVABScorePage() {
           The G composite is the most commonly required across Air Force jobs. A
           G score of 57 or above opens roughly 70% of all General-dependent
           AFSCs. Use our{" "}
-          <Link href="/asvab-line-score-calculator">line score calculator</Link>{" "}
+          <Link href="/calculator">line score calculator</Link>{" "}
           to see your MAGE composites from your subtest scores.
         </p>
 
@@ -1492,7 +1492,7 @@ export default function AirForceASVABScorePage() {
               Army reports GT as a raw sum (typically 85&ndash;145). The Air
               Force converts G to a percentile (0&ndash;99). An AF G55 and Army
               GT 110 represent similar aptitude levels. Use our{" "}
-              <Link href="/gt-score-calculator">GT score calculator</Link> to
+              <Link href="/gt-score">GT score calculator</Link> to
               check yours.
             </p>
           </div>

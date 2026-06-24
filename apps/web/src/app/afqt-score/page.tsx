@@ -141,14 +141,8 @@ export default function AFQTScorePage() {
         <p className="text-text-secondary">
           This guide breaks down the AFQT formula, branch minimums for 2026,
           categories, how composites differ, and how to raise your score fast.
-          If you just want your percentile right now, use our{" "}
-          <Link
-            href="/afqt-calculator"
-            className="text-accent hover:text-accent-hover"
-          >
-            AFQT calculator
-          </Link>{" "}
-          (4 subtests, instant percentile). For full job qualification, run all
+          If you just want your percentile right now, use the AFQT calculator
+          above (4 subtests, instant percentile). For full job qualification, run all
           9 subtests through the{" "}
           <Link
             href="/calculator"
@@ -852,7 +846,7 @@ export default function AFQTScorePage() {
               selection and incentive programs. The higher you go, the more
               doors open. See our full breakdown at{" "}
               <Link
-                href="/what-is-a-good-asvab-score"
+                href="/asvab-score-ranges"
                 className="text-accent hover:text-accent-hover"
               >
                 what is a good ASVAB score

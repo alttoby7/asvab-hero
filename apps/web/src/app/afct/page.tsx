@@ -561,12 +561,12 @@ export default function AFCTPage() {
           Intelligence Analyst requires GT 107 plus ST 101), so you can&apos;t
           tunnel-vision GT and ignore where your other line scores land. Model
           the impact in advance through the{" "}
-          <Link href="/gt-score-calculator">GT score calculator</Link>, the{" "}
-          <Link href="/asvab-line-score-calculator">
+          <Link href="/gt-score">GT score calculator</Link>, the{" "}
+          <Link href="/calculator">
             line score calculator
           </Link>
           , or the{" "}
-          <Link href="/asvab-composite-score-calculator">
+          <Link href="/calculator">
             composite score calculator
           </Link>
           .
@@ -749,7 +749,7 @@ export default function AFCTPage() {
         <p className="text-text-secondary">
           To stress-test your own ladder before scheduling, run projected gains
           through the{" "}
-          <Link href="/gt-score-calculator">GT score calculator</Link> and
+          <Link href="/gt-score">GT score calculator</Link> and
           benchmark against <Link href="/gt-score">GT score</Link>{" "}
           thresholds.
         </p>
@@ -1086,7 +1086,7 @@ export default function AFCTPage() {
           qualify for every program you want, the AFCT only adds risk. If
           you&apos;re within 12 months of ETS without a re-up plan, a new score
           won&apos;t pay off. Benchmark via{" "}
-          <Link href="/what-is-a-good-asvab-score">
+          <Link href="/asvab-score-ranges">
             what is a good ASVAB score
           </Link>{" "}
           and project gains through the <Link href="/calculator">calculator</Link>.
@@ -1272,7 +1272,7 @@ export default function AFCTPage() {
               same threshold applies to 17C Cyber Operations (with ST 112), 18X
               Special Forces (with ST 100), Drill Sergeant, and Recruiter. The
               110 is non-waivable for 180A. Project potential gains through the{" "}
-              <Link href="/gt-score-calculator">GT score calculator</Link> and
+              <Link href="/gt-score">GT score calculator</Link> and
               benchmark against{" "}
               <Link href="/gt-score">GT score</Link> thresholds.
             </p>

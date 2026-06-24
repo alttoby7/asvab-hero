@@ -509,7 +509,7 @@ export default function WhatIsTheASVABPage() {
             options shrink dramatically. If you scored here, retaking is almost
             always worth it. Check{" "}
             <Link
-              href="/what-is-a-good-asvab-score"
+              href="/asvab-score-ranges"
               className="text-accent hover:text-accent-hover"
             >
               What Is a Good ASVAB Score

@@ -1067,7 +1067,7 @@ export default function ASVABVocabularyPage() {
               A good target is whatever clears your goal jobs, since requirements
               run on composites like AFQT and GT, not WK alone. A strong WK
               lifts both. See{" "}
-              <Link href="/what-is-a-good-asvab-score">
+              <Link href="/asvab-score-ranges">
                 what is a good ASVAB score
               </Link>
 , then plug your scores into the{" "}

@@ -236,7 +236,7 @@ export default function ASVABScoresExplainedPage() {
           <Link href="/afqt-score" className="text-accent hover:text-accent-hover">
             AFQT score
           </Link>, or drop your four subtests into the{" "}
-          <Link href="/afqt-calculator" className="text-accent hover:text-accent-hover">
+          <Link href="/afqt-score" className="text-accent hover:text-accent-hover">
             AFQT calculator
           </Link>{" "}
           to see your exact percentile.

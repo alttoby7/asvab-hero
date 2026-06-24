@@ -137,7 +137,7 @@ export default function WarrantOfficerRequirementsPage() {
           exact GT and rank gates for each. Before you read further, plug your
           scores into the{" "}
           <Link
-            href="/gt-score-calculator"
+            href="/gt-score"
             className="text-accent hover:text-accent-hover"
           >
             GT score calculator
@@ -714,7 +714,7 @@ export default function WarrantOfficerRequirementsPage() {
               benchmark across officer-producing programs. Check your line score
               against that mark with the{" "}
               <Link
-                href="/gt-score-calculator"
+                href="/gt-score"
                 className="text-accent hover:text-accent-hover"
               >
                 GT score calculator

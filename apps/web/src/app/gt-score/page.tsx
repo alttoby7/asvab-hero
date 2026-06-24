@@ -174,7 +174,7 @@ export default function GTScorePage() {
           composite that the services use to match you to careers.
         </p>
 
-        <div className="my-8">
+        <div className="my-8" id="gt-calculator">
           <Suspense
             fallback={
               <div className="rounded-xl border border-white/10 bg-white/5 p-6 text-sm text-text-secondary">
@@ -194,7 +194,7 @@ export default function GTScorePage() {
           each branch handles it, and how to raise it. If you already have your
           subtest scores, run them through our{" "}
           <Link
-            href="/gt-score-calculator"
+            href="#gt-calculator"
             className="text-accent hover:text-accent-hover"
           >
             GT score calculator
@@ -387,7 +387,7 @@ export default function GTScorePage() {
           most online guides get wrong. There are two ways to get your number.
           The fast way is to drop your scores into the{" "}
           <Link
-            href="/gt-score-calculator"
+            href="#gt-calculator"
             className="text-accent hover:text-accent-hover"
           >
             GT score calculator
@@ -448,7 +448,7 @@ export default function GTScorePage() {
             conversion table. The services apply it automatically. This is the
             single step that makes the{" "}
             <Link
-              href="/gt-score-calculator"
+              href="#gt-calculator"
               className="text-accent hover:text-accent-hover"
             >
               GT score calculator
@@ -502,7 +502,7 @@ export default function GTScorePage() {
             Instead of estimating your VE and risking a wrong number, plug your
             WK, PC, and AR scores into the{" "}
             <Link
-              href="/gt-score-calculator"
+              href="#gt-calculator"
               className="text-accent hover:text-accent-hover"
             >
               GT score calculator
@@ -544,7 +544,7 @@ export default function GTScorePage() {
           Comprehension, and Arithmetic Reasoning standard scores and run them
           through the{" "}
           <Link
-            href="/gt-score-calculator"
+            href="#gt-calculator"
             className="text-accent hover:text-accent-hover"
           >
             GT score calculator
@@ -1508,7 +1508,7 @@ export default function GTScorePage() {
           </Link>{" "}
           weekly to track progress, and check your projected number with the{" "}
           <Link
-            href="/gt-score-calculator"
+            href="#gt-calculator"
             className="text-accent hover:text-accent-hover"
           >
             GT score calculator
@@ -1636,7 +1636,7 @@ export default function GTScorePage() {
               through their unit S-1 or education center. If you only have your
               WK, PC, and AR standard scores, run them through our{" "}
               <Link
-                href="/gt-score-calculator"
+                href="#gt-calculator"
                 className="text-accent hover:text-accent-hover"
               >
                 GT score calculator
@@ -1654,7 +1654,7 @@ export default function GTScorePage() {
               Arithmetic Reasoning. So three subtests feed it: WK, PC, and AR.
               Run your numbers through our{" "}
               <Link
-                href="/gt-score-calculator"
+                href="#gt-calculator"
                 className="text-accent hover:text-accent-hover"
               >
                 GT score calculator
@@ -1806,7 +1806,7 @@ export default function GTScorePage() {
           <ul className="mt-4 space-y-3 text-text-secondary">
             <li>
               <Link
-                href="/gt-score-calculator"
+                href="#gt-calculator"
                 className="text-accent underline hover:text-accent-hover"
               >
                 GT score calculator
