@@ -45,16 +45,28 @@ const subscriptionEventIsStale = async (
   userId: string,
   incomingSubId: string,
   eventCreatedSec: number | null | undefined,
+  incomingBillingStatus: string,
 ): Promise<boolean> => {
-  if (!eventCreatedSec || !Number.isFinite(eventCreatedSec)) return false;
   const { data, error } = await supabaseAdmin
     .from("profiles")
     .select("stripe_subscription_id, pro_updated_at")
     .eq("user_id", userId)
     .maybeSingle();
   if (error || !data) return false;
-  if (!data.stripe_subscription_id) return false;
-  if (data.stripe_subscription_id === incomingSubId) return false;
+  if (!data.stripe_subscription_id) return false; // first write — always apply
+  if (data.stripe_subscription_id === incomingSubId) return false; // same sub — always apply
+
+  // The event is for a DIFFERENT subscription than the one currently on the
+  // profile. A non-active (downgrade) event from a different sub must never
+  // overwrite the profile: this is how an abandoned/incomplete first checkout
+  // that later expires (incomplete_expired/canceled) was clobbering a paying
+  // user's active subscription. Only a genuinely active/trialing different sub
+  // may legitimately take over (plan switch / re-subscribe).
+  if (incomingBillingStatus !== "active") return true;
+
+  // Active takeover from a different sub: fall back to event timing to drop
+  // replayed/out-of-order events that would otherwise resurrect a stale state.
+  if (!eventCreatedSec || !Number.isFinite(eventCreatedSec)) return false;
   if (!data.pro_updated_at) return false;
   const profileUpdatedMs = new Date(data.pro_updated_at).getTime();
   const eventCreatedMs = eventCreatedSec * 1000;
@@ -77,15 +89,6 @@ const updateProfileFromSubscription = async (
   },
   eventCreatedSec?: number | null,
 ) => {
-  if (await subscriptionEventIsStale(userId, sub.id, eventCreatedSec)) {
-    console.log("sub event is stale (different sub_id, profile is newer); skipping", {
-      userId,
-      eventSubId: sub.id,
-      eventCreatedSec,
-    });
-    return;
-  }
-
   const priceId = sub.items?.data?.[0]?.price?.id ?? null;
   const tier = tierFromPrice(priceId);
   let billingStatus: string;
@@ -93,6 +96,16 @@ const updateProfileFromSubscription = async (
   else if (sub.status === "past_due" || sub.status === "unpaid") billingStatus = "past_due";
   else if (sub.status === "canceled" || sub.status === "incomplete_expired") billingStatus = "canceled";
   else billingStatus = "free";
+
+  if (await subscriptionEventIsStale(userId, sub.id, eventCreatedSec, billingStatus)) {
+    console.log("sub event is stale (different sub_id; non-active or profile newer); skipping", {
+      userId,
+      eventSubId: sub.id,
+      eventCreatedSec,
+      incomingBillingStatus: billingStatus,
+    });
+    return;
+  }
 
   // Period end now lives on the item in newer API versions. Fall back to the
   // top-level field (older API versions) then trial_end (trialing subs always
@@ -1024,7 +1037,7 @@ Deno.serve(async (req) => {
         // profile. If stale, skip ALL profile writes for this event.
         const eventIsStaleForCheckout =
           userId && subscriptionId
-            ? await subscriptionEventIsStale(userId, subscriptionId, event.created)
+            ? await subscriptionEventIsStale(userId, subscriptionId, event.created, "active")
             : false;
         if (eventIsStaleForCheckout) {
           console.log("checkout.session.completed is stale; skipping all profile writes", {
@@ -1111,8 +1124,66 @@ Deno.serve(async (req) => {
           );
           const meta = ((sub as unknown as { metadata?: Record<string, string> }).metadata) ?? {};
           resolvedUserId = meta.user_id ?? userId ?? (customerId ? await findUserIdForCustomer(customerId) : null);
+
+          // Last-resort resolution: match the Stripe checkout email to a profile.
+          // Without this, a checkout whose metadata.user_id is missing AND whose
+          // stripe_customer_id isn't yet on any profile silently strands a PAYING
+          // user as `free` (the profile never goes active). Backfill the customer
+          // id so future events resolve by customer.
+          if (!resolvedUserId && customerEmail) {
+            // Escape LIKE metacharacters: %, _ and \ are legal in an email
+            // local-part, so an unescaped ilike could wildcard-match (and then
+            // stickily mis-bind) the WRONG profile. We want exact, case-
+            // insensitive equality only.
+            const escapedEmail = customerEmail.replace(/[\\%_]/g, (c) => `\\${c}`);
+            const { data: byEmail } = await supabaseAdmin
+              .from("profiles")
+              .select("user_id, email, stripe_customer_id")
+              .ilike("email", escapedEmail)
+              .maybeSingle();
+            // Belt-and-suspenders: confirm true equality, never a pattern hit.
+            if (
+              byEmail?.user_id &&
+              typeof byEmail.email === "string" &&
+              byEmail.email.toLowerCase() === customerEmail.toLowerCase()
+            ) {
+              resolvedUserId = byEmail.user_id;
+              // Only backfill when the profile has no customer id yet — never
+              // repoint an existing (different) Stripe customer mapping.
+              if (customerId && !byEmail.stripe_customer_id) {
+                await supabaseAdmin
+                  .from("profiles")
+                  .update({ stripe_customer_id: customerId })
+                  .eq("user_id", resolvedUserId);
+              }
+              await captureMessage("checkout: resolved paying user by email fallback", {
+                level: "warning",
+                tags: { provider: "stripe", event_type: event.type },
+                fingerprint: ["checkout-email-fallback"],
+                extra: { customerId: customerId ?? null, subscriptionId },
+              });
+            }
+          }
+
           subscriptionStatus = (sub as unknown as { status?: string }).status ?? null;
-          if (resolvedUserId) await updateProfileFromSubscription(resolvedUserId, sub, event.created);
+          if (resolvedUserId) {
+            await updateProfileFromSubscription(resolvedUserId, sub, event.created);
+          } else {
+            // A completed, paid checkout we could not attach to any account. This
+            // is the failure that stranded Paul: the welcome email still fires but
+            // the profile never goes active. Alert loudly instead of silent break.
+            console.error("checkout.session.completed: unresolved paying user", {
+              customerId,
+              subscriptionId,
+              customerEmail,
+            });
+            await captureMessage("checkout: unresolved paying user (subscription)", {
+              level: "error",
+              tags: { provider: "stripe", event_type: event.type },
+              fingerprint: ["checkout-unresolved-user"],
+              extra: { customerId: customerId ?? null, subscriptionId, hasEmail: !!customerEmail },
+            });
+          }
 
           // Stamp trial_ends_at when this checkout starts a trial (powers TrialBanner countdown).
           if (resolvedUserId && subscriptionStatus === "trialing") {
