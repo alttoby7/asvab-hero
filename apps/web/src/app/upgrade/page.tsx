@@ -55,31 +55,44 @@ function UpgradeContent() {
 
   // Retaker steering — EXPLICIT context only (Codex guardrail): an explicit
   // ?tier=retaker (from the retaker landing pages) OR a logged prior official
-  // ASVAB score. Never inferred from practice attempts. Everyone else: pass90.
+  // ASVAB score. Never inferred from practice attempts. Everyone else: annual.
   const isRetaker =
     tierParam === "retaker" ||
     entitlement.officialTestStatus === "taken_logged";
+  // Honor any explicit ?tier= (so direct pass/monthly links still work), else
+  // retaker for the retaker segment, else annual (the default recommendation).
+  const explicitTier = (["annual", "monthly", "pass90", "retaker"] as const).find(
+    (t) => t === tierParam,
+  );
   const defaultTier: Tier =
-    tierParam === "monthly" || tierParam === "retaker"
-      ? tierParam
-      : isRetaker
-        ? "retaker"
-        : "pass90";
-  // Drive the above-fold hero off the resolved tier so a retaker who clicked
-  // "Get the Retaker Pass" doesn't land on a $59 pass90 hero. Monthly keeps the
-  // pass90 hero (no direct-buy of a trial above the fold).
-  const heroTier: "pass90" | "retaker" =
-    defaultTier === "retaker" ? "retaker" : "pass90";
+    explicitTier ?? (isRetaker ? "retaker" : "annual");
+  // Drive the above-fold hero off the resolved tier. Annual + monthly both lead
+  // with the annual hero (the recommended best-value plan, direct to checkout);
+  // explicit pass/retaker links keep their own hero.
+  const heroTier: "annual" | "pass90" | "retaker" =
+    defaultTier === "retaker"
+      ? "retaker"
+      : defaultTier === "pass90"
+        ? "pass90"
+        : "annual";
   const HERO = {
+    annual: {
+      price: "$49.99",
+      line: `per year · best value · ${GUARANTEE_TAG}`,
+      cta: "Get Pro — $49.99/year",
+      sub: "Billed yearly. Cancel anytime — no auto-renew surprises.",
+    },
     pass90: {
       price: "$59",
       line: `one-time · 90 days · ${GUARANTEE_TAG}`,
       cta: "Get my 90-Day Pass",
+      sub: "One-time payment. No subscription, no auto-renew.",
     },
     retaker: {
       price: "$119",
       line: `one-time · 120 days · ${GUARANTEE_TAG}`,
       cta: "Get the Retaker Pass",
+      sub: "One-time payment. No subscription, no auto-renew.",
     },
   };
   const { startCheckout, loading: checkoutLoading } = useStripeCheckout({
@@ -186,7 +199,7 @@ function UpgradeContent() {
               {checkoutLoading ? "Loading checkout…" : HERO[heroTier].cta}
             </button>
             <p className="mt-3 text-xs text-text-tertiary">
-              One-time payment. No subscription, no auto-renew.{" "}
+              {HERO[heroTier].sub}{" "}
               {!isFromPaywall && (
                 <Link
                   href="/app/plan"
@@ -242,7 +255,7 @@ function UpgradeContent() {
         <PricingPlans
           key={defaultTier}
           defaultTier={defaultTier}
-          recommendedTier={isRetaker ? "retaker" : undefined}
+          recommendedTier={isRetaker ? "retaker" : "annual"}
           source={from ?? "upgrade_page"}
           hideFreePlan={isFromPaywall}
           placement="pricing_grid"

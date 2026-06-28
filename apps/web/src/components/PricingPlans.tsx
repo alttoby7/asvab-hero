@@ -16,18 +16,20 @@ import { GUARANTEE_LINE, GUARANTEE_TAG } from "@/lib/guarantee";
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 
-// Pricing model (2026-06): pass-led, not subscription-led.
-//   - 90-Day Test Pass ($59, one-time) is the loud default — matches the
-//     2-4 week study window and removes the churn/cancel event.
-//   - Monthly ($24.99) stays as the flexibility option.
+// Pricing model (2026-06-27): annual-led. Stripe data showed the $49.99/yr
+// Annual was the clean converter pre-pivot, while the $59 one-time pass got
+// abandoned ~70% at the upfront-payment step. So:
+//   - Annual ($49.99/yr) is the default + "Best value" recommendation.
+//   - Monthly ($24.99/mo, 7-day trial) is the low-friction start option.
+//   - 90-Day Pass ($59, one-time) is demoted to a short-term option, no longer
+//     the loud default.
 //   - Retaker Pass ($119, one-time, 120 days) targets the failed-AFQT /
-//     30-day-clock segment; premium WTP is captured HERE, not on the volume
-//     pass. Guarantee is the universal one (see @/lib/guarantee), not a special
-//     improve-or-refund term.
+//     30-day-clock segment; premium WTP is captured HERE. Guarantee is the
+//     universal one (see @/lib/guarantee), not a special improve-or-refund term.
 // `tier` is the value posted to the stripe-checkout edge function, which maps
 // it to a Stripe price id + mode (subscription vs payment). Real prices live in
 // Stripe; the strings below are display copy only.
-export type Tier = "pass90" | "monthly" | "retaker";
+export type Tier = "annual" | "monthly" | "pass90" | "retaker";
 
 type TierConfig = {
   key: Tier;
@@ -41,6 +43,17 @@ type TierConfig = {
 };
 
 const TIERS: Record<Tier, TierConfig> = {
+  annual: {
+    key: "annual",
+    label: "Annual",
+    price: "$49.99",
+    unit: "/ year",
+    tagline:
+      "A full year of Pro at the lowest price — the best value if you have more than a couple months before test day.",
+    badge: "Best value",
+    cta: "Get Pro — $49.99/year",
+    note: `Billed yearly. Cancel anytime in Account Settings. ${GUARANTEE_LINE}`,
+  },
   pass90: {
     key: "pass90",
     label: "90-Day Pass",
@@ -48,7 +61,7 @@ const TIERS: Record<Tier, TierConfig> = {
     unit: "one-time",
     tagline:
       "Full Pro access for 90 days — enough to study and take the test, with nothing to cancel.",
-    badge: "Best for test day",
+    badge: "Short-term option",
     cta: "Get my 90-Day Pass",
     note: `One-time payment, no subscription. ${GUARANTEE_LINE}`,
   },
@@ -102,7 +115,7 @@ interface PricingPlansProps {
 }
 
 export default function PricingPlans({
-  defaultTier = "pass90",
+  defaultTier = "annual",
   recommendedTier,
   source,
   hideFreePlan,
@@ -204,7 +217,7 @@ export default function PricingPlans({
     );
   }
 
-  const tierOrder: Tier[] = ["pass90", "monthly", "retaker"];
+  const tierOrder: Tier[] = ["annual", "monthly", "pass90", "retaker"];
 
   return (
     <div className="w-full">
@@ -233,6 +246,12 @@ export default function PricingPlans({
       {recommendedTier === "retaker" && (
         <p className="-mt-4 mb-6 text-center text-xs font-semibold text-accent">
           ★ Recommended for retakers — 120 days of full Pro + {GUARANTEE_TAG}
+        </p>
+      )}
+
+      {recommendedTier === "annual" && (
+        <p className="-mt-4 mb-6 text-center text-xs font-semibold text-accent">
+          ★ Best value — a full year of Pro for $49.99 + {GUARANTEE_TAG}
         </p>
       )}
 

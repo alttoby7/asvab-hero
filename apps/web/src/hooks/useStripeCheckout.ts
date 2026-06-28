@@ -14,7 +14,7 @@ import {
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 
-export type CheckoutTier = "pass90" | "monthly" | "retaker";
+export type CheckoutTier = "annual" | "pass90" | "monthly" | "retaker";
 
 interface UseStripeCheckoutOpts {
   source?: string;
@@ -29,7 +29,7 @@ export function useStripeCheckout(opts: UseStripeCheckoutOpts = {}) {
   const [error, setError] = useState<string | null>(null);
 
   const startCheckout = useCallback(
-    async (tier: CheckoutTier = "pass90") => {
+    async (tier: CheckoutTier = "annual") => {
       if (loading) return;
 
       if (!session) {

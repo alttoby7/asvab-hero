@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "ASVAB Hero pricing, free calculator for everyone, Pro access for unlimited practice tests and study tools, with a one-time 90-Day Pass or month-to-month.",
+    "ASVAB Hero pricing: a free score-moving core for everyone, plus Pro for unlimited practice tests and study tools — best value at $49.99/year, or a one-time 90-Day Pass or month-to-month.",
   alternates: {
     canonical: "https://asvabhero.com/pricing",
   },
@@ -45,6 +45,14 @@ export default function PricingPage() {
           url: "https://asvabhero.com/pricing",
           publisher: { "@id": "https://asvabhero.com/#organization" },
           offers: [
+            {
+              "@type": "Offer",
+              name: "Pro Annual",
+              price: "49.99",
+              priceCurrency: "USD",
+              url: "https://asvabhero.com/pricing",
+              availability: "https://schema.org/InStock",
+            },
             {
               "@type": "Offer",
               name: "90-Day Test Pass",
@@ -88,12 +96,13 @@ export default function PricingPage() {
           Simple, transparent pricing
         </h1>
         <p className="mt-3 text-text-secondary">
-          The score-moving core is free, no card. Pro removes every limit, and
-          the 90-Day Pass is one payment with nothing to cancel.
+          The score-moving core is free, no card. Pro removes every limit —
+          best value is a full year for $49.99, or grab a one-time 90-Day Pass
+          if test day is close.
         </p>
       </div>
 
-      <PricingPlans defaultTier="pass90" source="pricing_page" />
+      <PricingPlans defaultTier="annual" source="pricing_page" />
 
       <div className="mt-20">
         <h2 className="font-display text-2xl font-bold text-text-primary text-center mb-8">
