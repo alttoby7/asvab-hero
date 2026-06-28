@@ -1,0 +1,363 @@
+import {
+  AbsoluteFill,
+  Audio,
+  interpolate,
+  spring,
+  staticFile,
+  useCurrentFrame,
+  useVideoConfig,
+} from "remotion";
+
+export type QuestionProps = {
+  subtest: string;
+  hook: string;
+  stem: string;
+  choices: string[];
+  correctIndex: number;
+  explanation: string;
+  /** filename in public/ to play (e.g. "bed.mp3" or "voiceover.mp3"); null = silent */
+  audioSrc: string | null;
+};
+
+// ---- Timeline (frames @ 30fps) ----
+const HOOK_END = 45; // 1.5s   hook
+const COUNTDOWN_START = 345; // 11.5s  countdown begins (10.0s to read question)
+const REVEAL = 420; // 14.0s  answer reveals
+const EXPLAIN_START = 495; // 16.5s  explanation panel (answer sits 2.5s first)
+const CTA_START = 930; // 31.0s  end card
+// total = 990 frames (33s); explanation holds 16.5s–31.0s = 14.5s
+
+// Brand palette — matches asvabhero.com (orange #f97316 on navy #0a1628).
+const NAVY = "#0a1628";
+const NAVY2 = "#16243f";
+const ORANGE = "#f97316";
+const ORANGE_DK = "#7c2d12";
+const ORANGE_LT = "#fdba74"; // light accent (star, checkmark, CTA highlights)
+const ORANGE_PILL = "#fed7aa"; // subtest pill text
+const ON_ORANGE = "#2a1206"; // dark text/icon on a solid-orange fill
+const INK = "#f1f5f9";
+const MUTE = "#94a3b8";
+const FONT =
+  "'Inter','Helvetica Neue',Helvetica,Arial,system-ui,sans-serif";
+
+const letters = ["A", "B", "C", "D"];
+
+// Keep math expressions on one line. A number/operator sequence like "18 = 18"
+// or "150 / 6 = 25" must never wrap mid-equation (an orphaned "18" reads as a
+// typo). We only ever convert spaces that ALREADY sit next to a math operator
+// into non-breaking spaces — we never insert spaces — so prose (and hyphenated
+// words like "self-paced") is left untouched, but every clip in every batch
+// gets clean, unbreakable equations automatically.
+const MATH_LEFT = "0-9A-Za-z)\\]%"; // can END a math token
+const MATH_RIGHT = "0-9A-Za-z(\\[."; // can START a math token
+const MATH_OP = "\\-+×÷*/=<>≤≥≈^"; // operators that glue operands together
+const beforeOp = new RegExp(`([${MATH_LEFT}])[ \\t]+(?=[${MATH_OP}])`, "g");
+const afterOp = new RegExp(`([${MATH_OP}])[ \\t]+(?=[${MATH_RIGHT}])`, "g");
+const keepMath = (text: string) =>
+  text.replace(beforeOp, "$1 ").replace(afterOp, "$1 ");
+
+const fade = (frame: number, start: number, dur = 12) =>
+  interpolate(frame, [start, start + dur], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+export const QuestionShort: React.FC<QuestionProps> = ({
+  subtest,
+  hook,
+  stem,
+  choices,
+  correctIndex,
+  explanation,
+  audioSrc,
+}) => {
+  const frame = useCurrentFrame();
+  const { fps, durationInFrames } = useVideoConfig();
+
+  const revealed = frame >= REVEAL;
+  const showCountdown = frame >= COUNTDOWN_START && frame < REVEAL;
+  const countNum = Math.max(1, 3 - Math.floor((frame - COUNTDOWN_START) / 30));
+
+  const hookPop = spring({ frame, fps, config: { damping: 14 } });
+
+  return (
+    <AbsoluteFill
+      style={{
+        background: `radial-gradient(120% 80% at 50% 0%, ${NAVY2} 0%, ${NAVY} 60%)`,
+        fontFamily: FONT,
+        color: INK,
+      }}
+    >
+      {audioSrc ? <Audio src={staticFile(audioSrc)} /> : null}
+
+      {/* brand bar */}
+      <div
+        style={{
+          position: "absolute",
+          top: 70,
+          left: 0,
+          right: 0,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: 14,
+          letterSpacing: 4,
+          fontWeight: 800,
+          fontSize: 34,
+        }}
+      >
+        <span style={{ color: ORANGE }}>★</span>
+        <span>ASVAB HERO</span>
+      </div>
+
+      {/* subtest pill */}
+      <div
+        style={{
+          position: "absolute",
+          top: 150,
+          left: 0,
+          right: 0,
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          style={{
+            background: ORANGE_DK,
+            color: ORANGE_PILL,
+            padding: "12px 28px",
+            borderRadius: 999,
+            fontWeight: 700,
+            fontSize: 30,
+            border: `2px solid ${ORANGE}`,
+            textTransform: "uppercase",
+            letterSpacing: 2,
+          }}
+        >
+          {subtest}
+        </div>
+      </div>
+
+      {/* HOOK */}
+      {frame < REVEAL && (
+        <div
+          style={{
+            position: "absolute",
+            top: 250,
+            left: 70,
+            right: 70,
+            textAlign: "center",
+            opacity: frame < HOOK_END ? hookPop : fade(frame, HOOK_END, 8),
+            transform:
+              frame < HOOK_END ? `scale(${0.9 + hookPop * 0.1})` : "none",
+            fontWeight: 900,
+            fontSize: frame < HOOK_END ? 78 : 50,
+            lineHeight: 1.05,
+            color: frame < HOOK_END ? "#fff" : MUTE,
+            transition: "none",
+          }}
+        >
+          {frame < HOOK_END ? hook : "Can you get it right?"}
+        </div>
+      )}
+
+      {/* QUESTION + CHOICES */}
+      <div
+        style={{
+          position: "absolute",
+          top: 430,
+          left: 70,
+          right: 70,
+          opacity: fade(frame, HOOK_END),
+        }}
+      >
+        <div
+          style={{
+            background: "rgba(255,255,255,0.05)",
+            border: "1px solid rgba(255,255,255,0.12)",
+            borderRadius: 28,
+            padding: "44px 44px",
+            fontSize: 56,
+            fontWeight: 700,
+            lineHeight: 1.25,
+            marginBottom: 44,
+          }}
+        >
+          {keepMath(stem)}
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: 26 }}>
+          {choices.map((c, i) => {
+            const isCorrect = i === correctIndex;
+            const correctStyle = revealed && isCorrect;
+            const dimWrong = revealed && !isCorrect;
+            return (
+              <div
+                key={i}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 26,
+                  background: correctStyle
+                    ? ORANGE
+                    : "rgba(255,255,255,0.06)",
+                  border: correctStyle
+                    ? `3px solid ${ORANGE_LT}`
+                    : "2px solid rgba(255,255,255,0.12)",
+                  borderRadius: 22,
+                  padding: "30px 34px",
+                  fontSize: 50,
+                  fontWeight: 700,
+                  color: correctStyle ? ON_ORANGE : INK,
+                  opacity: dimWrong ? 0.32 : 1,
+                  boxShadow: correctStyle
+                    ? "0 0 60px rgba(249,115,22,0.55)"
+                    : "none",
+                }}
+              >
+                <div
+                  style={{
+                    width: 64,
+                    height: 64,
+                    borderRadius: 16,
+                    background: correctStyle
+                      ? ON_ORANGE
+                      : "rgba(255,255,255,0.1)",
+                    color: correctStyle ? ORANGE_LT : MUTE,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontWeight: 900,
+                    flexShrink: 0,
+                  }}
+                >
+                  {letters[i]}
+                </div>
+                <div>{keepMath(c)}</div>
+                {correctStyle && (
+                  <div style={{ marginLeft: "auto", fontSize: 56 }}>✓</div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* COUNTDOWN */}
+      {showCountdown && (
+        <AbsoluteFill
+          style={{
+            justifyContent: "flex-end",
+            alignItems: "center",
+            paddingBottom: 220,
+          }}
+        >
+          <div
+            style={{
+              width: 200,
+              height: 200,
+              borderRadius: 999,
+              border: `8px solid ${ORANGE}`,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: 120,
+              fontWeight: 900,
+              color: "#fff",
+              background: "rgba(10,15,30,0.7)",
+              transform: `scale(${1 + ((frame - COUNTDOWN_START) % 30) / 90})`,
+              opacity: 1 - (((frame - COUNTDOWN_START) % 30) / 30) * 0.4,
+            }}
+          >
+            {countNum}
+          </div>
+        </AbsoluteFill>
+      )}
+
+      {/* EXPLANATION */}
+      {frame >= EXPLAIN_START && frame < CTA_START && (
+        <div
+          style={{
+            position: "absolute",
+            bottom: 160,
+            left: 70,
+            right: 70,
+            background: "rgba(249,115,22,0.12)",
+            border: `2px solid ${ORANGE}`,
+            borderRadius: 24,
+            padding: "36px 40px",
+            opacity: fade(frame, EXPLAIN_START),
+          }}
+        >
+          <div
+            style={{
+              color: ORANGE,
+              fontWeight: 800,
+              fontSize: 32,
+              letterSpacing: 2,
+              marginBottom: 12,
+            }}
+          >
+            WHY
+          </div>
+          <div style={{ fontSize: 46, fontWeight: 600, lineHeight: 1.25 }}>
+            {keepMath(explanation)}
+          </div>
+        </div>
+      )}
+
+      {/* CTA END CARD */}
+      {frame >= CTA_START && (
+        <AbsoluteFill
+          style={{
+            background: `linear-gradient(180deg, ${NAVY} 0%, ${ORANGE_DK} 100%)`,
+            justifyContent: "center",
+            alignItems: "center",
+            textAlign: "center",
+            padding: 90,
+            opacity: fade(frame, CTA_START, 10),
+          }}
+        >
+          <div style={{ fontSize: 40, color: ORANGE_LT, fontWeight: 800, letterSpacing: 3 }}>
+            ★ ASVAB HERO
+          </div>
+          <div
+            style={{
+              fontSize: 92,
+              fontWeight: 900,
+              lineHeight: 1.05,
+              margin: "30px 0",
+            }}
+          >
+            Practice 4,500+ questions FREE
+          </div>
+          <div style={{ fontSize: 54, color: INK, fontWeight: 600 }}>
+            Know your score before test day.
+          </div>
+          <div
+            style={{
+              marginTop: 70,
+              fontSize: 48,
+              fontWeight: 800,
+              color: ORANGE_LT,
+            }}
+          >
+            Link in bio 👆
+          </div>
+        </AbsoluteFill>
+      )}
+
+      {/* progress bar */}
+      <div
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          height: 10,
+          width: `${(frame / durationInFrames) * 100}%`,
+          background: ORANGE,
+        }}
+      />
+    </AbsoluteFill>
+  );
+};

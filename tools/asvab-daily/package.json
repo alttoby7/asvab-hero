@@ -1,0 +1,29 @@
+{
+  "name": "asvab-daily",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fully-automated faceless ASVAB short-form video generator (Remotion + ElevenLabs + Supabase question bank).",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "still": "remotion still QuestionShort out/preview.png --props=out/props.json",
+    "render": "remotion render QuestionShort out/video.mp4 --props=out/props.json",
+    "make": "node scripts/build.mjs && remotion render QuestionShort out/video.mp4 --props=out/props.json",
+    "batch": "node scripts/batch.mjs",
+    "regen-captions": "node scripts/regen-captions.mjs",
+    "rerender-batch": "node scripts/rerender-batch.mjs",
+    "bed": "bash scripts/make-bed.sh",
+    "studio": "remotion studio"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "@remotion/media-utils": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "typescript": "^5.5.4"
+  }
+}

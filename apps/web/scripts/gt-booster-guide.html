@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GT Score Booster — ASVAB Hero</title>
+<style>
+  @page { size: letter; margin: 0.6in 0.7in; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #0f172a;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+  h1 { font-size: 28pt; line-height: 1.1; margin: 0 0 8pt; color: #0a1628; }
+  h2 { font-size: 16pt; margin: 18pt 0 6pt; color: #0a1628; border-bottom: 2px solid #f97316; padding-bottom: 3pt; }
+  h3 { font-size: 12pt; margin: 12pt 0 4pt; color: #f97316; text-transform: uppercase; letter-spacing: 0.5pt; }
+  p { margin: 0 0 8pt; }
+  strong { color: #0a1628; }
+  ul, ol { margin: 0 0 10pt 0; padding-left: 18pt; }
+  li { margin-bottom: 4pt; }
+  .page { page-break-after: always; min-height: 9in; }
+  .page:last-child { page-break-after: auto; }
+  .cover {
+    background: #0a1628;
+    color: #f1f5f9;
+    padding: 0.6in 0.7in;
+    margin: -0.6in -0.7in;
+    height: 11in;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cover h1 { color: #f1f5f9; font-size: 36pt; }
+  .cover .accent { color: #f97316; }
+  .cover .lead { font-size: 14pt; color: #cbd5e1; max-width: 5in; line-height: 1.4; }
+  .cover .footer { color: #94a3b8; font-size: 10pt; }
+  .cover .badge {
+    display: inline-block;
+    background: #f97316;
+    color: white;
+    padding: 4pt 12pt;
+    border-radius: 4pt;
+    font-size: 10pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+  }
+  .callout {
+    background: #fff7ed;
+    border-left: 4px solid #f97316;
+    padding: 10pt 12pt;
+    margin: 10pt 0;
+    border-radius: 2pt;
+  }
+  .callout strong { color: #c2410c; }
+  table { width: 100%; border-collapse: collapse; margin: 8pt 0 12pt; font-size: 10pt; }
+  th, td { padding: 6pt 8pt; text-align: left; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+  th { background: #f1f5f9; color: #0a1628; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+  .week-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4pt; margin: 6pt 0 14pt; }
+  .day {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 6pt 5pt;
+    font-size: 8.5pt;
+    line-height: 1.3;
+    border-radius: 3pt;
+    min-height: 70pt;
+  }
+  .day .num { font-weight: bold; color: #f97316; font-size: 10pt; display: block; margin-bottom: 3pt; }
+  .day.rest { background: #ecfeff; border-color: #67e8f9; }
+  .day.rest .num { color: #0891b2; }
+  .day.test { background: #fef2f2; border-color: #fca5a5; }
+  .day.test .num { color: #dc2626; }
+  .footer-meta { font-size: 8.5pt; color: #64748b; margin-top: 14pt; padding-top: 8pt; border-top: 1px solid #e2e8f0; }
+  .footer-meta a { color: #f97316; text-decoration: none; }
+  .pill {
+    display: inline-block;
+    background: #fff7ed;
+    color: #c2410c;
+    padding: 2pt 8pt;
+    border-radius: 99pt;
+    font-size: 9pt;
+    font-weight: 600;
+    margin: 0 4pt 4pt 0;
+  }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14pt; }
+  .formula {
+    background: #0a1628;
+    color: #f97316;
+    padding: 10pt 14pt;
+    border-radius: 4pt;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 13pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 8pt 0 12pt;
+  }
+  .lever {
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #f97316;
+    padding: 8pt 12pt 4pt;
+    margin: 0 0 10pt;
+    border-radius: 3pt;
+    background: #fafafa;
+  }
+  .lever h3 { margin-top: 0; }
+  .cheat {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 4pt;
+    padding: 12pt 16pt;
+    margin: 8pt 0;
+  }
+  .cheat ul { margin: 0; padding-left: 18pt; }
+  .cheat li { margin-bottom: 6pt; font-size: 10.5pt; }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover page">
+  <div>
+    <span class="badge">ASVAB Hero</span>
+    <h1 style="margin-top: 24pt;">GT Score<br><span class="accent">Booster</span></h1>
+    <p class="lead">Raise your General Technical 10+ points. Unlock the MOS you actually want.</p>
+  </div>
+  <div class="footer">
+    asvabhero.com &middot; Updated May 2026<br>
+    Free for personal use. Not affiliated with the U.S. Department of Defense.
+  </div>
+</div>
+
+<!-- PAGE 2 — WHAT GT IS -->
+<div class="page">
+  <h2>What GT actually is</h2>
+  <p>The Army GT (General Technical) line score is the most leverage you have for picking your job. It comes from three subtests, in two steps:</p>
+
+  <div class="formula">VE = (WK + PC) &times; 2 &nbsp;&rarr;&nbsp; GT = VE + AR</div>
+
+  <p>VE is your <strong>Verbal Expression</strong> score. The official scaled VE that lands on your record sits in the 20&ndash;62 range. Word Knowledge and Paragraph Comprehension both feed it, which is why <strong>every verbal point counts as much as an arithmetic point</strong> in the final composite. Most candidates ignore that and grind only AR. They leave free GT on the table.</p>
+
+  <h3>What each cutoff actually unlocks</h3>
+  <table>
+    <tr><th>GT</th><th>Sample MOS / programs</th><th>Why this tier matters</th></tr>
+    <tr>
+      <td><strong>100</strong></td>
+      <td>11B Infantry, 19D Cavalry Scout, 92Y Unit Supply, 91B Wheeled Vehicle Mechanic</td>
+      <td>Floor for most general enlisted MOS. Below 100, your job list shrinks fast.</td>
+    </tr>
+    <tr>
+      <td><strong>107</strong></td>
+      <td>68W Combat Medic, 35F Intelligence Analyst, 25B IT Specialist</td>
+      <td>Most technical, intel, and medical MOS sit here.</td>
+    </tr>
+    <tr>
+      <td><strong>110</strong></td>
+      <td>38B Civil Affairs, 37F PsyOps, 17C Cyber Operations Specialist, OCS, Warrant Officer, Green to Gold</td>
+      <td>The number. Every officer pathway and most high-leverage MOS gate at 110.</td>
+    </tr>
+    <tr>
+      <td><strong>117+</strong></td>
+      <td>18X Special Forces Candidate (GT 110 + CO 100 + SC 100 simultaneously; competitive packets run 115+)</td>
+      <td>Above the floor, into the &ldquo;competitive packet&rdquo; territory for SOF and selective programs.</td>
+    </tr>
+  </table>
+
+  <div class="callout">
+    <strong>The verbal lever.</strong> A 5-point bump in WK + PC combined adds <strong>10 points</strong> to raw GT (because VE doubles it). The same 5-point bump in AR only adds 5. If you&rsquo;re close to a cutoff, vocabulary and short-passage reading is the cheapest path up.
+  </div>
+
+  <p class="footer-meta">asvabhero.com &middot; Free for personal use &middot; Built May 2026</p>
+</div>
+
+<!-- PAGE 3 — THE 4 LEVERS -->
+<div class="page">
+  <h2>The 4 levers that move GT</h2>
+  <p>Stop studying the whole ASVAB to raise GT. Three subtests feed it. One more (timing) costs you points if you ignore it. Drill these four:</p>
+
+  <div class="lever">
+    <h3>Lever 1 &middot; Word Knowledge (WK)</h3>
+    <ul>
+      <li>Learn 15 prefixes and 25 Latin/Greek roots before any new word lists. Coverage beats memorization.</li>
+      <li>Drill under an 11-second timer per question. The CAT-ASVAB gives you about that long. If you can&rsquo;t answer in 11 seconds at home, you won&rsquo;t on test day.</li>
+      <li>For unknown words, use the &ldquo;positive/negative/neutral&rdquo; gut read first, then eliminate two answer choices, then guess.</li>
+      <li>Build a daily 10-card flashcard pile. Drop a card after you get it right twice in a row.</li>
+      <li>Read once at night, drill in the morning. Sleep is when vocabulary actually consolidates.</li>
+    </ul>
+  </div>
+
+  <div class="lever">
+    <h3>Lever 2 &middot; Paragraph Comprehension (PC)</h3>
+    <ul>
+      <li>Read the question stem <em>first</em>, then the passage. You&rsquo;re hunting for an answer, not absorbing the topic.</li>
+      <li>Underline the verb in the question (&ldquo;implies,&rdquo; &ldquo;states,&rdquo; &ldquo;best title&rdquo;). The verb tells you whether the answer is literal or inferred.</li>
+      <li>Watch for &ldquo;extreme&rdquo; words in answer choices: <em>always, never, all, none</em>. Right answers are usually moderate.</li>
+      <li>If two answers feel right, the more specific one is usually wrong. PC rewards the broader, defensible read.</li>
+      <li>Train on 4&ndash;6 short passages a day, not one long passage. Test passages are short.</li>
+    </ul>
+  </div>
+
+  <div class="lever">
+    <h3>Lever 3 &middot; Arithmetic Reasoning (AR)</h3>
+    <ul>
+      <li>Translate first, calculate second. Write the equation in the margin before you touch numbers.</li>
+      <li>Memorize the 5 setups that cover ~70% of AR: rate-time-distance, percent change, ratio/proportion, work rate, and weighted average.</li>
+      <li>Estimate before you solve. If your final answer is in a different order of magnitude than your estimate, you misread the problem.</li>
+      <li>Skip and flag any problem that takes more than 90 seconds. Come back. AR rewards completion, not perfection.</li>
+      <li>Drill word problems, not raw math. Khan Academy SAT word-problem sets overlap ~70% with AR.</li>
+    </ul>
+  </div>
+
+  <div class="lever">
+    <h3>Lever 4 &middot; Test-day timing &amp; elimination</h3>
+    <ul>
+      <li>On the CAT-ASVAB you cannot skip and return. Commit to an answer in the time budget or your score caps.</li>
+      <li>Eliminate two wrong answers before guessing. A 50/50 guess is worth 4&times; a blind guess.</li>
+      <li>The early questions weigh more on adaptive scoring. Slow down on the first 1/3, speed up on the last 1/3.</li>
+      <li>Eat a real breakfast. Caffeine but not extra caffeine. Bring a sweater &mdash; MEPS testing rooms run cold.</li>
+    </ul>
+  </div>
+
+  <p class="footer-meta">asvabhero.com &middot; Free for personal use &middot; Built May 2026</p>
+</div>
+
+<!-- PAGE 4 — 14-DAY GT PUSH -->
+<div class="page">
+  <h2>The 14-day GT push</h2>
+  <p>Two weeks. 30&ndash;45 minutes a day. Heavy on verbal (the doubled lever), with AR mixed in three times a week and one full mini-AFQT mid-cycle to recalibrate.</p>
+
+  <h3>Week 1 &middot; Build the verbal floor</h3>
+  <div class="week-grid">
+    <div class="day"><span class="num">Day 1</span>20 WK words + 1 PC passage<br><span class="pill">prefixes</span></div>
+    <div class="day"><span class="num">Day 2</span>20 WK words + 10 AR problems<br><span class="pill">setups</span></div>
+    <div class="day"><span class="num">Day 3</span>2 PC passages timed<br><span class="pill">stem first</span></div>
+    <div class="day"><span class="num">Day 4</span>20 WK words + 10 AR<br><span class="pill">roots</span></div>
+    <div class="day"><span class="num">Day 5</span>3 PC passages + flashcard review<br><span class="pill">inference</span></div>
+    <div class="day rest"><span class="num">Day 6</span>Rest day. Light reading, no drill.</div>
+    <div class="day test"><span class="num">Day 7</span>Full mini-AFQT (timed, all 4 subtests)</div>
+  </div>
+
+  <h3>Week 2 &middot; Push the cutoff</h3>
+  <div class="week-grid">
+    <div class="day"><span class="num">Day 8</span>Review Day 7 misses + 15 WK words<br><span class="pill">errors</span></div>
+    <div class="day"><span class="num">Day 9</span>15 AR word problems<br><span class="pill">timed</span></div>
+    <div class="day"><span class="num">Day 10</span>2 PC passages + 15 WK<br><span class="pill">extreme words</span></div>
+    <div class="day"><span class="num">Day 11</span>15 AR + flashcards<br><span class="pill">estimate</span></div>
+    <div class="day"><span class="num">Day 12</span>3 PC passages + 15 WK<br><span class="pill">tone</span></div>
+    <div class="day rest"><span class="num">Day 13</span>Rest. Sleep 8+ hours. No screens after 9pm.</div>
+    <div class="day test"><span class="num">Day 14</span>Full GT-focused mini-test (WK, PC, AR only)</div>
+  </div>
+
+  <div class="callout">
+    <strong>Day 14 is your &ldquo;retake or wait&rdquo; checkpoint.</strong> Score the GT-only mini honestly. If your projected GT is at or past your target, schedule the retake. If you&rsquo;re still 5+ points short, run another 14-day block before burning a retake attempt &mdash; your <em>most recent</em> score replaces all previous ones.
+  </div>
+
+  <p class="footer-meta">asvabhero.com &middot; Free for personal use &middot; Built May 2026</p>
+</div>
+
+<!-- PAGE 5 — RETAKE MATH -->
+<div class="page">
+  <h2>The retake math: when is a second test worth it?</h2>
+  <p>Retake rules apply to everyone. The pattern is the same across all branches:</p>
+
+  <table>
+    <tr><th>Attempt</th><th>Wait before retake</th></tr>
+    <tr><td>1st retake (after first ASVAB)</td><td>1 calendar month</td></tr>
+    <tr><td>2nd retake</td><td>1 more calendar month</td></tr>
+    <tr><td>3rd retake and beyond</td><td>6 calendar months</td></tr>
+  </table>
+
+  <p>The score that counts is your <strong>most recent</strong> one. That cuts both ways: a retake can replace a low score, but it can also replace a high one if you walked in unprepared.</p>
+
+  <h3>The Confirmation Test trap</h3>
+  <p>If your retake score jumps <strong>20 or more points</strong> within 6 months of the first test, the DoD requires a Confirmation Test (C-Test). Same test, same conditions, no warning. If your C-Test comes back lower, the C-Test score sticks. Crammers lose both scores this way.</p>
+
+  <div class="callout">
+    <strong>The 5-point rule.</strong> If your GT is within 5 points of your goal, retake after a focused 14-day block. If you&rsquo;re 15+ points off, take 60 days first &mdash; you&rsquo;ll need both verbal and AR work, and a thin retake will just tag you for a Confirmation Test.
+  </div>
+
+  <h3>How much GT can you realistically gain in 30 days?</h3>
+  <ul>
+    <li><strong>5&ndash;10 GT points:</strong> highly realistic with daily 30-minute focused prep on WK/PC/AR. Most candidates hit this.</li>
+    <li><strong>10&ndash;15 GT points:</strong> realistic with 45&ndash;60 minutes a day, weak baseline (lots of room), and steady verbal work.</li>
+    <li><strong>15&ndash;20 GT points:</strong> stretch goal. Possible if your baseline was held back by test anxiety or unfamiliarity, not skill.</li>
+    <li><strong>20+ GT points:</strong> uncommon outside of the active-duty BSEP program (60+ classroom hours over 10 days). If you hit it pre-enlistment, expect a C-Test.</li>
+  </ul>
+
+  <h3>Active duty soldiers: take BSEP</h3>
+  <p>If you&rsquo;re already in the Army, National Guard, or Reserve with a GT of 109 or below, BSEP (Basic Skills Education Program) is free, on-duty, and averages a <strong>19-point gain</strong> in 10 days. Talk to your installation Education Center. The pre-enlistment plan in this guide is the civilian equivalent &mdash; lower-intensity, but the same focus on verbal and AR.</p>
+
+  <p class="footer-meta">asvabhero.com &middot; Free for personal use &middot; Built May 2026</p>
+</div>
+
+<!-- PAGE 6 — CHEAT SHEET -->
+<div class="page">
+  <h2>One-page cheat sheet</h2>
+  <p>Screenshot this. Open it the night before and the morning of the test.</p>
+
+  <div class="cheat">
+    <ul>
+      <li><strong>Formula:</strong> VE = (WK + PC) &times; 2. GT = VE + AR. Verbal counts twice. Drill it.</li>
+      <li><strong>Cutoffs to know:</strong> 100 (most MOS), 107 (technical / medical / intel), 110 (every officer pathway, 18X SF), 117+ (competitive SOF packets).</li>
+      <li><strong>Highest-leverage subtests:</strong> WK and PC. A combined +5 = +10 raw GT.</li>
+      <li><strong>WK pace:</strong> ~11 seconds per question on the CAT. Drill under timer from day 1.</li>
+      <li><strong>PC technique:</strong> read the question stem first, then the passage. Underline the verb.</li>
+      <li><strong>AR technique:</strong> translate to an equation in the margin before computing. Estimate first.</li>
+      <li><strong>5 AR setups:</strong> rate-time-distance, percent change, ratio/proportion, work rate, weighted average.</li>
+      <li><strong>Elimination:</strong> kill 2 answers before guessing. 50/50 is worth 4&times; a cold guess.</li>
+      <li><strong>Retake rule:</strong> 1 month, 1 month, then 6 months. Most-recent score is the one that counts.</li>
+      <li><strong>Confirmation Test trap:</strong> +20 in 6 months triggers a C-Test. Crammers lose both scores.</li>
+      <li><strong>Within 5 of goal?</strong> Retake. <strong>15+ off?</strong> 60 more days first.</li>
+      <li><strong>Day-of:</strong> real breakfast, normal caffeine, sweater, arrive 30 min early, don&rsquo;t talk scores with other applicants.</li>
+    </ul>
+  </div>
+
+  <h2>Your next 3 moves</h2>
+  <ol>
+    <li><strong>Run your current scores</strong> through the GT calculator at <a href="https://asvabhero.com/gt-score-calculator?utm_source=listmonk&utm_medium=email&utm_campaign=gt-booster-guide">asvabhero.com/gt-score-calculator</a>. Know the exact gap to your target.</li>
+    <li><strong>Block 30 minutes</strong> at the same time tomorrow, and the day after. The schedule beats willpower.</li>
+    <li><strong>Watch your inbox.</strong> We send specific drill packs over the next 2 weeks &mdash; vocab, AR setups, and full timed mini-tests.</li>
+  </ol>
+
+  <h3>Quick links</h3>
+  <ul>
+    <li>GT calculator: <a href="https://asvabhero.com/gt-score-calculator?utm_source=listmonk&utm_medium=email&utm_campaign=gt-booster-guide">asvabhero.com/gt-score-calculator</a></li>
+    <li>Full ASVAB calculator (every line score): <a href="https://asvabhero.com/calculator?utm_source=listmonk&utm_medium=email&utm_campaign=gt-booster-guide">asvabhero.com/calculator</a></li>
+    <li>Retake date calculator: <a href="https://asvabhero.com/asvab-retake-calculator?utm_source=listmonk&utm_medium=email&utm_campaign=gt-booster-guide">asvabhero.com/asvab-retake-calculator</a></li>
+    <li>Army MOS list: <a href="https://asvabhero.com/army-mos-list?utm_source=listmonk&utm_medium=email&utm_campaign=gt-booster-guide">asvabhero.com/army-mos-list</a></li>
+  </ul>
+
+  <p class="footer-meta">
+    &copy; 2026 ASVAB Hero. Free to share with anyone studying for the ASVAB. Not affiliated with the U.S. Department of Defense or any branch of the armed forces. Branch policies and MOS line-score requirements change &mdash; verify with your recruiter before testing. Built May 2026 &middot; <a href="https://asvabhero.com?utm_source=listmonk&utm_medium=email&utm_campaign=gt-booster-guide">asvabhero.com</a><br><br>
+    Questions? Reply to any of our emails. We read every one.
+  </p>
+</div>
+
+</body>
+</html>

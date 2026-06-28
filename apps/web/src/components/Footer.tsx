@@ -1,0 +1,209 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+export default function Footer() {
+  const pathname = usePathname();
+  // Hide marketing chrome inside the member shells (/app and the account area)
+  // and inside embeddable widget frames (/embed/<tool>; the /embed directory
+  // page keeps chrome, so the guard is on the trailing slash).
+  if (
+    pathname?.startsWith("/app") ||
+    pathname?.startsWith("/account") ||
+    pathname?.startsWith("/embed/") ||
+    // /review is a pure redirect helper; /book keeps the slim footer for trust/legal.
+    pathname === "/review"
+  )
+    return null;
+
+  return (
+    <footer className="border-t border-navy-border bg-navy-light">
+      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div>
+            <div className="mb-4">
+              <span className="font-display text-lg font-bold text-accent">
+                ASVAB
+              </span>{" "}
+              <span className="font-display text-lg font-bold text-text-primary">
+                Hero
+              </span>
+            </div>
+            <p className="text-sm text-text-tertiary leading-relaxed">
+              Free ASVAB score calculator and military job finder. See every job
+              you qualify for across all 6 branches of the U.S. military.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-text-secondary">
+              Tools
+            </h3>
+            <ul className="space-y-2 list-none p-0">
+              <li>
+                <Link
+                  href="/calculator"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  ASVAB Calculator
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/practice-test"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Practice Test
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/asvab-scores-explained"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Scores Explained
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/asvab-score-requirements"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Score Requirements
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/asvab-study-guide"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Study Guide
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/pricing"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Pro Features
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/air-force-ranks"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Air Force Ranks
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/air-force-jobs"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Air Force Jobs
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/air-force-mage-score"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Air Force MAGE Score
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/army-ranks"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Army Ranks
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/navy-ranks"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Navy Ranks
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Study Guides
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-text-secondary">
+              Company
+            </h3>
+            <ul className="space-y-2 list-none p-0">
+              <li>
+                <Link
+                  href="/how-it-works"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  How it works
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/programs"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  For JROTC &amp; Schools
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/counselor-resources"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  ASVAB for Counselors
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/embed"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Embed our tools
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-10 border-t border-navy-border pt-6">
+          <p className="text-center text-xs text-text-tertiary">
+            &copy; {new Date().getFullYear()} ASVAB Hero. Not affiliated with
+            the U.S. Department of Defense.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}

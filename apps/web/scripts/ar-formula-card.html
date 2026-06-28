@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>AR Formula Card — ASVAB Hero</title>
+<style>
+  @page { size: letter; margin: 0.6in 0.7in; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #0f172a;
+    font-size: 10.5pt;
+    line-height: 1.35;
+  }
+  h1 { font-size: 28pt; line-height: 1.1; margin: 0 0 8pt; color: #0a1628; }
+  h2 { font-size: 13.5pt; margin: 9pt 0 3pt; color: #0a1628; border-bottom: 2px solid #f97316; padding-bottom: 2pt; }
+  h3 { font-size: 11pt; margin: 8pt 0 3pt; color: #f97316; text-transform: uppercase; letter-spacing: 0.5pt; }
+  p { margin: 0 0 4pt; }
+  strong { color: #0a1628; }
+  ul, ol { margin: 0 0 6pt 0; padding-left: 16pt; }
+  li { margin-bottom: 2pt; }
+  /* Content flows continuously across pages (no forced full-page sections,
+     which left half-empty pages). Break-control below keeps blocks intact. */
+  .page { }
+  h2 { page-break-after: avoid; }
+  .formula-box, .ex, table, .pattern, .callout, .triangle,
+  .grid-2, .grid-3, ol, .footer-meta { page-break-inside: avoid; }
+  /* Masthead band: mirrors the AFQT Math Cheat-Sheet's navy title band so the
+     two lead magnets read as one set. Replaces the old wasted full-page cover. */
+  .masthead {
+    background: #0f172a;
+    border-radius: 6pt;
+    padding: 9pt 14pt;
+    margin: 0 0 9pt;
+  }
+  .masthead .eyebrow {
+    color: #fdba74;
+    font-size: 8pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    margin: 0 0 3pt;
+  }
+  .masthead h1 { color: #ffffff; font-size: 18pt; line-height: 1.05; margin: 0; }
+  .masthead h1 .accent { color: #f97316; }
+  .masthead .sub { color: #fdba74; font-size: 10pt; margin: 3pt 0 0; max-width: 6in; }
+  .callout {
+    background: #fff7ed;
+    border-left: 4px solid #f97316;
+    padding: 8pt 10pt;
+    margin: 8pt 0;
+    border-radius: 2pt;
+    font-size: 10pt;
+  }
+  .callout strong { color: #c2410c; }
+  table { width: 100%; border-collapse: collapse; margin: 4pt 0 6pt; font-size: 9.5pt; }
+  th, td { padding: 3pt 6pt; text-align: left; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+  th { background: #f1f5f9; color: #0a1628; font-size: 9pt; text-transform: uppercase; letter-spacing: 0.4pt; }
+  .formula-box {
+    background: #0a1628;
+    color: #f1f5f9;
+    padding: 6pt 12pt;
+    border-radius: 4pt;
+    margin: 4pt 0;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 11pt;
+    text-align: center;
+    font-weight: 600;
+  }
+  .formula-box .accent { color: #f97316; }
+  .triangle {
+    display: inline-block;
+    width: 110pt;
+    text-align: center;
+    margin: 0 8pt 0 0;
+    vertical-align: middle;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+  }
+  .triangle .top {
+    background: #f97316;
+    color: white;
+    padding: 6pt;
+    border-radius: 4pt 4pt 0 0;
+    font-weight: bold;
+    font-size: 13pt;
+  }
+  .triangle .bottom {
+    display: flex;
+    justify-content: space-between;
+    background: #fff7ed;
+    color: #c2410c;
+    padding: 6pt;
+    border-radius: 0 0 4pt 4pt;
+    font-weight: bold;
+    font-size: 13pt;
+    border-top: 1px dashed #fdba74;
+  }
+  .triangle .bottom span { flex: 1; }
+  .triangle .bottom span + span { border-left: 1px dashed #fdba74; }
+  .footer-meta { font-size: 8.5pt; color: #64748b; margin-top: 10pt; padding-top: 6pt; border-top: 1px solid #e2e8f0; }
+  .footer-meta a { color: #f97316; text-decoration: none; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12pt; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10pt; }
+  .pattern {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 3px solid #f97316;
+    padding: 6pt 8pt;
+    border-radius: 3pt;
+    margin-bottom: 5pt;
+    font-size: 10pt;
+  }
+  .pattern .cue { font-weight: 600; color: #0a1628; display: block; }
+  .pattern .move { color: #475569; font-size: 9.5pt; }
+  .ex { background: #f1f5f9; padding: 4pt 8pt; border-radius: 3pt; font-size: 9.5pt; margin: 3pt 0; }
+  .ex strong { color: #c2410c; }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 — FORMULAS -->
+<div class="page">
+  <div class="masthead">
+    <div class="eyebrow">ASVAB Hero</div>
+    <h1>AR Formula <span class="accent">Card</span></h1>
+    <p class="sub">Every formula, conversion, and word-problem pattern for ASVAB Arithmetic Reasoning, in one place to keep next to you while you drill.</p>
+  </div>
+
+  <h2>Order of operations (PEMDAS)</h2>
+  <p>Parentheses, Exponents, Multiplication and Division (left to right), Addition and Subtraction (left to right). MD and AS share a tier — work left to right inside each.</p>
+  <div class="formula-box">P &rarr; E &rarr; <span class="accent">M / D</span> &rarr; <span class="accent">A / S</span></div>
+  <div class="ex"><strong>Worked:</strong> 6 + 4 &times; (3 + 2)<sup>2</sup> &divide; 5 &nbsp;=&nbsp; 6 + 4 &times; 5<sup>2</sup> &divide; 5 &nbsp;=&nbsp; 6 + 4 &times; 25 &divide; 5 &nbsp;=&nbsp; 6 + 100 &divide; 5 &nbsp;=&nbsp; 6 + 20 &nbsp;=&nbsp; <strong>26</strong></div>
+
+  <h2>Fraction &rarr; decimal &rarr; percent</h2>
+  <p>Memorize this table. Half of AR is faster if you know that 3/8 is .375 without thinking.</p>
+  <div class="grid-2">
+    <table>
+      <tr><th>Fraction</th><th>Decimal</th><th>Percent</th></tr>
+      <tr><td>1/2</td><td>0.5</td><td>50%</td></tr>
+      <tr><td>1/3</td><td>0.333</td><td>33.3%</td></tr>
+      <tr><td>2/3</td><td>0.667</td><td>66.7%</td></tr>
+      <tr><td>1/4</td><td>0.25</td><td>25%</td></tr>
+      <tr><td>3/4</td><td>0.75</td><td>75%</td></tr>
+      <tr><td>1/5</td><td>0.2</td><td>20%</td></tr>
+      <tr><td>2/5</td><td>0.4</td><td>40%</td></tr>
+    </table>
+    <table>
+      <tr><th>Fraction</th><th>Decimal</th><th>Percent</th></tr>
+      <tr><td>3/5</td><td>0.6</td><td>60%</td></tr>
+      <tr><td>4/5</td><td>0.8</td><td>80%</td></tr>
+      <tr><td>1/6</td><td>0.167</td><td>16.7%</td></tr>
+      <tr><td>1/8</td><td>0.125</td><td>12.5%</td></tr>
+      <tr><td>3/8</td><td>0.375</td><td>37.5%</td></tr>
+      <tr><td>5/8</td><td>0.625</td><td>62.5%</td></tr>
+      <tr><td>1/10</td><td>0.1</td><td>10%</td></tr>
+    </table>
+  </div>
+
+  <h2>Distance / Rate / Time</h2>
+  <div style="display: flex; align-items: center; gap: 10pt; margin: 6pt 0;">
+    <div class="triangle">
+      <div class="top">D</div>
+      <div class="bottom"><span>R</span><span>T</span></div>
+    </div>
+    <div style="flex: 1;">
+      <div class="formula-box" style="margin: 0 0 4pt; text-align: left;">D = R &times; T &nbsp; | &nbsp; R = D / T &nbsp; | &nbsp; T = D / R</div>
+      <p style="font-size: 9.5pt; margin: 0;">Cover the variable you need. The other two stay in the visible position. Always check that minutes and hours match before you multiply.</p>
+    </div>
+  </div>
+  <div class="ex"><strong>Ex 1:</strong> A convoy travels 240 miles in 4 hours. Rate? &nbsp;R = D / T = 240 / 4 = <strong>60 mph</strong>.</div>
+  <div class="ex"><strong>Ex 2:</strong> A jet flies at 450 mph for 2.5 hours. Distance? &nbsp;D = 450 &times; 2.5 = <strong>1,125 miles</strong>.</div>
+
+  <h2>Work-rate (combined work)</h2>
+  <div class="formula-box">1/a + 1/b = 1/t</div>
+  <p style="font-size: 10pt;">Add individual rates as fractions, then flip the sum to get total time. <em>a</em> and <em>b</em> = solo times.</p>
+  <div class="ex"><strong>Ex:</strong> Painter A finishes in 4 hr, Painter B in 6 hr. Together? &nbsp;1/4 + 1/6 = 3/12 + 2/12 = 5/12 per hour. Time = 12/5 = <strong>2.4 hr</strong>.</div>
+
+  <h2>Mixture / average</h2>
+  <div class="formula-box" style="font-size: 10pt;">Average = Sum / Count &nbsp; | &nbsp; Weighted avg = (q&#x2081;v&#x2081; + q&#x2082;v&#x2082;) / (q&#x2081; + q&#x2082;)</div>
+  <p style="font-size: 10pt;"><strong>Mixture trick:</strong> if you mix 3 gal at 20% with 2 gal at 50%, total acid = 0.20(3) + 0.50(2) = 0.6 + 1.0 = 1.6 gal in 5 gal &rarr; <strong>32%</strong>.</p>
+
+  <h2>Percent change &amp; the &ldquo;1.X&rdquo; trick</h2>
+  <div class="formula-box">% change = (New &minus; Old) / Old &times; 100</div>
+  <p style="font-size: 10pt;"><strong>Increase by X%:</strong> multiply by 1.X. Up 15%? &times; 1.15. <strong>Decrease by X%:</strong> multiply by (1 &minus; 0.X). Down 20%? &times; 0.80.</p>
+  <div class="ex"><strong>Ex:</strong> A $80 jacket goes up 25%. New price = 80 &times; 1.25 = <strong>$100</strong>. Then 30% off = 100 &times; 0.70 = <strong>$70</strong>.</div>
+
+  <h2>Ratio / proportion (cross-multiply)</h2>
+  <div class="formula-box">a / b = c / d &nbsp; &rarr; &nbsp; a &times; d = b &times; c</div>
+  <div class="ex"><strong>Ex:</strong> 3 MREs cost $12. 7 MREs cost? &nbsp;3/12 = 7/x &rarr; 3x = 84 &rarr; <strong>x = $28</strong>.</div>
+</div>
+
+<!-- PAGE 2 — PATTERNS + TEST DAY -->
+<div class="page">
+  <h2>Word-problem patterns ASVAB writers love</h2>
+  <p>Recognize the cue, run the move. Don&rsquo;t solve the problem in your head &mdash; solve the pattern.</p>
+
+  <div class="pattern">
+    <span class="cue">&ldquo;How much faster / slower&rdquo;</span>
+    <span class="move">Think <strong>rates</strong>, not times. Convert both to mph (or units/hour) and subtract.</span>
+  </div>
+  <div class="pattern">
+    <span class="cue">&ldquo;Working together&rdquo; / &ldquo;at the same time&rdquo;</span>
+    <span class="move">Combined work-rate: 1/a + 1/b = 1/t. Add the fractions, flip the sum.</span>
+  </div>
+  <div class="pattern">
+    <span class="cue">&ldquo;X% more&rdquo; or &ldquo;increased by X%&rdquo;</span>
+    <span class="move">Multiply the original by 1.X. Don&rsquo;t add then multiply again &mdash; it doubles up.</span>
+  </div>
+  <div class="pattern">
+    <span class="cue">&ldquo;What was the original price?&rdquo;</span>
+    <span class="move">Reverse percent. If sale price is 80% of original, divide sale price by 0.80.</span>
+  </div>
+  <div class="pattern">
+    <span class="cue">&ldquo;For every X, there are Y&rdquo;</span>
+    <span class="move">Set up a proportion. Cross-multiply. Don&rsquo;t reason it out in your head.</span>
+  </div>
+  <div class="pattern">
+    <span class="cue">&ldquo;On average&rdquo; / &ldquo;mean&rdquo;</span>
+    <span class="move">Sum / Count. For &ldquo;what score do I need next time,&rdquo; reverse it: Sum = Average &times; Count.</span>
+  </div>
+  <div class="pattern">
+    <span class="cue">&ldquo;Posts in a fence&rdquo; / &ldquo;floors in a building&rdquo;</span>
+    <span class="move">Off-by-one trap. A 100-ft fence with posts every 10 ft has <strong>11 posts</strong>, not 10.</span>
+  </div>
+  <div class="pattern">
+    <span class="cue">&ldquo;5 less than X&rdquo; or &ldquo;X fewer than Y&rdquo;</span>
+    <span class="move">Reverses order: 5 less than 12 = <strong>12 &minus; 5 = 7</strong>, not 5 &minus; 12. Write it out before translating.</span>
+  </div>
+
+  <h2>Unit conversions worth memorizing</h2>
+  <div class="grid-3">
+    <table style="margin: 0;">
+      <tr><th>Length</th><th></th></tr>
+      <tr><td>1 ft</td><td>12 in</td></tr>
+      <tr><td>1 yd</td><td>3 ft</td></tr>
+      <tr><td>1 mi</td><td>5,280 ft</td></tr>
+    </table>
+    <table style="margin: 0;">
+      <tr><th>Volume</th><th></th></tr>
+      <tr><td>1 gal</td><td>4 qt</td></tr>
+      <tr><td>1 qt</td><td>2 pt</td></tr>
+      <tr><td>1 pt</td><td>2 cups</td></tr>
+    </table>
+    <table style="margin: 0;">
+      <tr><th>Time / weight</th><th></th></tr>
+      <tr><td>1 hr</td><td>60 min</td></tr>
+      <tr><td>1 min</td><td>60 sec</td></tr>
+      <tr><td>1 lb</td><td>16 oz</td></tr>
+    </table>
+  </div>
+
+  <div class="callout">
+    <strong>Test-day shortcuts.</strong>
+    <ul style="margin: 4pt 0 0;">
+      <li><strong>Estimate first.</strong> Round to clean numbers. If your estimate is 150 and one choice is 1,500, you can eliminate it without finishing the math.</li>
+      <li><strong>Eliminate before solving.</strong> Cross off impossible answers (negative when problem requires positive, fraction when answer must be whole).</li>
+      <li><strong>Plug in answer choices.</strong> When algebra setup is slow, drop choice B or C into the problem. If it works, you&rsquo;re done. If too high, try A. Too low, try D.</li>
+      <li><strong>Re-read the question before selecting.</strong> &ldquo;What was the tax?&rdquo; vs &ldquo;What was the total?&rdquo; The wrong answer is usually sitting in the choices.</li>
+      <li><strong>Never leave a CAT question blank.</strong> Unanswered questions at the end of the CAT trigger a scoring penalty. A guess beats a blank.</li>
+    </ul>
+  </div>
+
+  <h2>The 4-step word-problem method</h2>
+  <ol style="margin: 4pt 0 6pt 16pt; font-size: 10pt;">
+    <li><strong>Read the whole problem.</strong> The final sentence tells you what to find.</li>
+    <li><strong>Underline what&rsquo;s asked.</strong> &ldquo;How many more&rdquo; &ne; &ldquo;how many total.&rdquo;</li>
+    <li><strong>Map buzzwords to operations.</strong> &ldquo;Per&rdquo; = divide. &ldquo;Of&rdquo; = multiply. &ldquo;Is&rdquo; = equals.</li>
+    <li><strong>Build the equation, then solve.</strong> Don&rsquo;t calculate until the setup is on paper.</li>
+  </ol>
+
+  <p class="footer-meta">
+    asvabhero.com &middot; Free for personal use. Not affiliated with the U.S. Department of Defense.<br>
+    More tools: <a href="https://asvabhero.com/calculator?utm_source=listmonk&utm_medium=email&utm_campaign=ar-formula-card">asvabhero.com/calculator</a> &middot; <a href="https://asvabhero.com/afqt-calculator?utm_source=listmonk&utm_medium=email&utm_campaign=ar-formula-card">AFQT calculator</a> &middot; <a href="https://asvabhero.com/gt-score-calculator?utm_source=listmonk&utm_medium=email&utm_campaign=ar-formula-card">GT calculator</a>
+  </p>
+</div>
+
+</body>
+</html>
