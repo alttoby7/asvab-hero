@@ -135,7 +135,7 @@ export default function ArmyASVABScorePage() {
         </p>
 
         <p className="text-text-secondary">
-          If you already have your scores, plug them into our <Link href="/calculator">free ASVAB score calculator</Link> to see which Army jobs you qualify for right now.
+          If you already have your scores, plug them into our <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see which Army jobs you qualify for right now.
         </p>
 
         {/* ── Section: Minimum ASVAB Score for Army Enlistment ── */}
@@ -626,7 +626,7 @@ export default function ArmyASVABScorePage() {
         </aside>
 
         <p className="text-text-secondary">
-          Don&apos;t do this math by hand. Use our <Link href="/calculator">ASVAB score calculator</Link> to see all 10 Army line scores and your qualifying MOS instantly.
+          Don&apos;t do this math by hand. Use our <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see all 10 Army line scores and your qualifying MOS instantly.
         </p>
 
         {/* ── Section: Already Serving? ── */}
@@ -811,7 +811,7 @@ export default function ArmyASVABScorePage() {
         </p>
 
         <p className="text-text-secondary">
-          Use our <Link href="/calculator">free ASVAB calculator</Link> to check your current line scores against Army MOS requirements.
+          Use our <Link href="/calculator">All-Branch ASVAB Calculator</Link> to check your current line scores against Army MOS requirements.
         </p>
 
         {/* ── FAQ Section ── */}

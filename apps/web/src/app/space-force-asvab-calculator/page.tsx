@@ -87,7 +87,7 @@ export default function SpaceForceCalculatorPage() {
       <Breadcrumb
         items={[
           { name: "ASVAB Hero", href: "/" },
-          { name: "ASVAB Calculator", href: "/calculator" },
+          { name: "All-Branch Calculator", href: "/calculator" },
           { name: "Space Force ASVAB Calculator", href: "/space-force-asvab-calculator" },
         ]}
       />

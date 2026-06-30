@@ -161,7 +161,7 @@ export default function WhatIsAGoodASVABScorePage() {
           This guide breaks down exactly what score you need for each goal: enlistment, the job you
           want, bonus eligibility, and elite career paths. If you already have your scores, plug them
           into our{" "}
-          <Link href="/calculator">ASVAB Score Calculator</Link> to see exactly which jobs you
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see exactly which jobs you
           qualify for across all six branches.
         </p>
 
@@ -266,7 +266,7 @@ export default function WhatIsAGoodASVABScorePage() {
         <p>
           This is exactly why a single number cannot answer what is a good ASVAB score. It depends
           on what you are aiming for. Enter your nine subtest scores into our{" "}
-          <Link href="/calculator">ASVAB Score Calculator</Link>. It computes your AFQT, all
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link>. It computes your AFQT, all
           branch-specific composites, and shows you every job you qualify for across all six
           branches.
         </p>
@@ -386,7 +386,7 @@ export default function WhatIsAGoodASVABScorePage() {
         </p>
 
         <p>
-          Use the <Link href="/calculator">ASVAB Score Calculator</Link> to check your composites
+          Use the <Link href="/calculator">All-Branch ASVAB Calculator</Link> to check your composites
           against these thresholds, and see the full{" "}
           <Link href="/asvab-score-ranges">ASVAB score ranges</Link> breakdown for the standard jobs
           that open up below the elite tier.
@@ -496,7 +496,7 @@ export default function WhatIsAGoodASVABScorePage() {
         <p>
           Your score is a starting point for your military career, not a permanent label. Enter your
           scores into our free{" "}
-          <Link href="/calculator">ASVAB Score Calculator</Link> to see exactly where you stand:
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see exactly where you stand:
           which jobs you qualify for, which branches want you, and what a few more points could
           unlock.
         </p>

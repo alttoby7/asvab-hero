@@ -125,7 +125,7 @@ export default function ASVABArithmeticReasoningTipsPage() {
           <p className="text-sm font-semibold text-text-primary">Key Point</p>
           <p className="mt-1 text-sm text-text-secondary">
             Your AR score affects both your ability to enlist (AFQT) and the jobs you qualify for (GT and 5 other composites). Use the{" "}
-            <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB Score Calculator</Link>{" "}
+            <Link href="/calculator" className="text-accent hover:text-accent-hover">All-Branch ASVAB Calculator</Link>{" "}
             to see exactly how your AR score changes your options.
           </p>
         </aside>
@@ -819,7 +819,7 @@ export default function ASVABArithmeticReasoningTipsPage() {
         </p>
         <p className="text-text-secondary">
           Use the{" "}
-          <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB Score Calculator</Link>{" "}
+          <Link href="/calculator" className="text-accent hover:text-accent-hover">All-Branch ASVAB Calculator</Link>{" "}
           to plug in your current or estimated scores and see exactly which jobs open up as your AR improves.
         </p>
         <p className="text-text-secondary">
@@ -872,7 +872,7 @@ export default function ASVABArithmeticReasoningTipsPage() {
             <h3 className="font-display text-base font-bold text-text-primary">What is a good AR score?</h3>
             <p className="mt-1 text-sm text-text-secondary">
               The average AR standard score is around 50. For most enlistment purposes, average is sufficient. If you are targeting GT-dependent jobs like intelligence or cyber, aim for 55 or above on AR to push your GT past 110. Use the{" "}
-              <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB Score Calculator</Link>{" "}
+              <Link href="/calculator" className="text-accent hover:text-accent-hover">All-Branch ASVAB Calculator</Link>{" "}
               to see how your AR score maps to specific job qualifications.
             </p>
           </div>

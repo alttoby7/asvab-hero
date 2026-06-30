@@ -214,7 +214,7 @@ export default function ASVABVocabularyPage() {
 
         <p className="text-text-secondary">
           Run the math on your own numbers. Plug your scores into the{" "}
-          <Link href="/calculator">ASVAB calculator</Link> to see which jobs
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see which jobs
           they open across all six branches. Read the breakdowns on{" "}
           <Link href="/afqt-score">AFQT score</Link> and{" "}
           <Link href="/gt-score">GT score</Link>, or get the full picture in{" "}

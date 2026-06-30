@@ -697,7 +697,7 @@ export default function ArmyRanksPage() {
           Before you sit down with a recruiter, take an{" "}
           <Link href="/practice-test" className="text-accent hover:text-accent-hover">ASVAB practice test</Link>.
           {" "}Knowing your likely line scores tells you which conversation you are walking into. Use the{" "}
-          <Link href="/calculator" className="text-accent hover:text-accent-hover">free ASVAB score calculator</Link>{" "}
+          <Link href="/calculator" className="text-accent hover:text-accent-hover">All-Branch ASVAB Calculator</Link>{" "}
           to see which Army jobs your current scores would unlock.
         </p>
 

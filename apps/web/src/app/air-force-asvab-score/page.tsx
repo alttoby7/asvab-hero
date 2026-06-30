@@ -140,7 +140,7 @@ export default function AirForceASVABScorePage() {
           thresholds, bonuses tied to high scores, and what active-duty airmen
           need to know about retesting. If you already have your scores, plug
           them into our{" "}
-          <Link href="/calculator">free ASVAB score calculator</Link> to see
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see
           which Air Force jobs you qualify for right now.
         </p>
 
@@ -980,7 +980,7 @@ export default function AirForceASVABScorePage() {
           Note that some jobs require meeting two composites simultaneously.
           Weather (1W0X1) needs G66 AND E50. EOD (3E8X1) needs M60 AND G64.
           Both thresholds must be met. Plug your scores into the{" "}
-          <Link href="/calculator">ASVAB score calculator</Link> to check all
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to check all
           your composites at once.
         </p>
 

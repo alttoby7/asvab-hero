@@ -116,7 +116,7 @@ export default function ASVABScoreRangesPage() {
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
           <p className="text-sm font-semibold text-emerald-400">Tip</p>
           <p className="mt-1 text-sm text-text-secondary">
-            Already have your scores? Plug them into our <Link href="/calculator">free ASVAB calculator</Link> to see which jobs you qualify for across all 6 branches.
+            Already have your scores? Plug them into our <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see which jobs you qualify for across all 6 branches.
           </p>
         </aside>
 
@@ -323,7 +323,7 @@ export default function ASVABScoreRangesPage() {
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
           <p className="text-sm font-semibold text-emerald-400">Tip</p>
           <p className="mt-1 text-sm text-text-secondary">
-            Dual composite requirements are the real gatekeepers. A high GT will not save you if your EL or ST is low. Before you study, look up your target job&apos;s specific composite formula and work backwards from there. Our <Link href="/calculator">ASVAB calculator</Link> shows you exactly which composites you hit and miss.
+            Dual composite requirements are the real gatekeepers. A high GT will not save you if your EL or ST is low. Before you study, look up your target job&apos;s specific composite formula and work backwards from there. Our <Link href="/calculator">All-Branch ASVAB Calculator</Link> shows you exactly which composites you hit and miss.
           </p>
         </aside>
 
@@ -423,7 +423,7 @@ export default function ASVABScoreRangesPage() {
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
           <p className="text-sm font-semibold text-emerald-400">Tip</p>
           <p className="mt-1 text-sm text-text-secondary">
-            Still unsure where you stand? Use our <Link href="/calculator">free ASVAB calculator</Link> to check your scores against every branch and job.
+            Still unsure where you stand? Use our <Link href="/calculator">All-Branch ASVAB Calculator</Link> to check your scores against every branch and job.
           </p>
         </aside>
 
