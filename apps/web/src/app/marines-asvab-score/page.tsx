@@ -151,7 +151,7 @@ export default function MarinesASVABScorePage() {
 
         <p className="text-text-secondary">
           Plug your subtest scores into the{" "}
-          <Link href="/calculator">ASVAB calculator</Link> right now to see
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> right now to see
           where you stand across every Marine Corps MOS.
         </p>
 
@@ -707,7 +707,7 @@ export default function MarinesASVABScorePage() {
           <p className="text-sm font-semibold text-emerald-400">Tip</p>
           <p className="mt-1 text-sm text-text-secondary">
             Skip the math. Plug your subtest scores into the{" "}
-            <Link href="/calculator">ASVAB calculator</Link> and instantly see
+            <Link href="/calculator">All-Branch ASVAB Calculator</Link> and instantly see
             your line scores, AFQT, and every{" "}
             <Link href="/usmc-mos-list">Marine Corps MOS</Link> you qualify for.
           </p>

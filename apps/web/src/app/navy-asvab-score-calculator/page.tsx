@@ -47,7 +47,7 @@ export default function NavyCalculatorPage() {
       <Breadcrumb
         items={[
           { name: "ASVAB Hero", href: "/" },
-          { name: "ASVAB Calculator", href: "/calculator" },
+          { name: "All-Branch Calculator", href: "/calculator" },
           { name: "Navy ASVAB Score Calculator", href: "/navy-asvab-score-calculator" },
         ]}
       />

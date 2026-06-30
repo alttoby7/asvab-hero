@@ -87,7 +87,7 @@ export default function CoastGuardCalculatorPage() {
       <Breadcrumb
         items={[
           { name: "ASVAB Hero", href: "/" },
-          { name: "ASVAB Calculator", href: "/calculator" },
+          { name: "All-Branch Calculator", href: "/calculator" },
           { name: "Coast Guard ASVAB Calculator", href: "/coast-guard-asvab-calculator" },
         ]}
       />

@@ -768,7 +768,7 @@ export default function ASVABGeneralScienceTipsPage() {
 
         <p className="text-text-secondary">
           Ready to see which jobs your scores unlock? Plug your subtest scores into our{" "}
-          <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB score calculator</Link>{" "}
+          <Link href="/calculator" className="text-accent hover:text-accent-hover">All-Branch ASVAB Calculator</Link>{" "}
           and find out which MOSs, AFSCs, and ratings you qualify for right now.
         </p>
 
@@ -802,7 +802,7 @@ export default function ASVABGeneralScienceTipsPage() {
             <h3 className="font-display text-base font-bold text-text-primary">What is a good General Science score on the ASVAB?</h3>
             <p className="mt-1 text-sm text-text-secondary">
               GS is reported as a standard score with a mean of 50. Scores above 60 are competitive for most technical composites. For high-demand jobs like Army 68W Combat Medic (ST 101+) or Air Force avionics careers (E 70+), aim for a GS score of 65 or higher. Use our{" "}
-              <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB score calculator</Link>{" "}
+              <Link href="/calculator" className="text-accent hover:text-accent-hover">All-Branch ASVAB Calculator</Link>{" "}
               to see how your GS score affects your composite totals.
             </p>
           </div>

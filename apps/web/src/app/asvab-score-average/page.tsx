@@ -124,7 +124,7 @@ export default function ASVABScoreAveragePage() {
           branches and jobs it qualifies you for, why average limits your options
           more than you expect, and how to move above it. If you already have
           your scores, enter them into our{" "}
-          <Link href="/calculator">ASVAB Score Calculator</Link> to see exactly
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see exactly
           what you qualify for.
         </p>
 
@@ -318,7 +318,7 @@ export default function ASVABScoreAveragePage() {
           from average up to a 99, see our{" "}
           <Link href="/asvab-score-ranges">ASVAB score ranges</Link> guide. To
           check the exact jobs your own scores qualify for, run them through the{" "}
-          <Link href="/calculator">ASVAB Score Calculator</Link>.
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link>.
         </p>
 
         {/* Section 5 */}

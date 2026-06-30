@@ -613,7 +613,7 @@ export default function HighestASVABScorePage() {
           <li>
             <strong>Use the calculator to track progress.</strong> Enter your
             practice scores into the{" "}
-            <Link href="/calculator">ASVAB Score Calculator</Link> after each
+            <Link href="/calculator">All-Branch ASVAB Calculator</Link> after each
             test to see your projected AFQT and qualifying jobs update in real
             time.
           </li>

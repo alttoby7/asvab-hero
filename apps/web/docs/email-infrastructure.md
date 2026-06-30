@@ -119,6 +119,26 @@ Settings → General → From email: `ASVAB Hero <info@asvabhero.com>` (Listmonk
 
 Reply-to behavior (2026-06): `info@asvabhero.com` is now a **Google Workspace** mailbox, so replies land directly in Workspace (no CF forward to `trish@dach.family`). Personal/cold outreach is sent from a Workspace mailbox (`info@`/`trish@`), which DKIM-signs via `google._domainkey` — see [`outreach-deliverability.md`](./outreach-deliverability.md).
 
+#### Agent access to the asvabhero Workspace mailbox (`gw` CLI)
+
+To read/draft/reply **as asvabhero** (e.g. trish@asvabhero.com), prefer the `gw` CLI
+over the `google-asvab` MCP connector — it's far cheaper on tokens (terse output, no
+schema load). As of 2026-06-28 the `google-asvab` connector is correctly bound to the
+real asvabhero mailbox; before then it authed as the *consulting* mailbox, which is how
+a "draft as asvabhero" once landed in the wrong inbox. Both now resolve to asvabhero,
+but `gw` is the cheaper default.
+
+```bash
+gw --account asvabhero gmail search "newer_than:7d"        # read
+gw --account asvabhero gmail draft  --to x@y.com --subject "…" --body "…"   # SAVE a draft
+gw --account asvabhero gmail reply  --thread-id <id> --id <msgid> --body "…"
+```
+
+The token binding is tracked in the credential registry
+(`~/.config/cred-registry/tokens.yaml`; redacted mirror at
+`0-AI/docs/credentials/TOKENS.md`). Run `gw auth doctor` to confirm
+`--account asvabhero` actually resolves to an asvabhero mailbox before sending.
+
 ## Lists
 
 | ID | UUID | Name | Opt-in | Type |

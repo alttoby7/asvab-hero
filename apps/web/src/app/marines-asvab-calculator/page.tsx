@@ -87,7 +87,7 @@ export default function MarinesCalculatorPage() {
       <Breadcrumb
         items={[
           { name: "ASVAB Hero", href: "/" },
-          { name: "ASVAB Calculator", href: "/calculator" },
+          { name: "All-Branch Calculator", href: "/calculator" },
           { name: "Marines ASVAB Calculator", href: "/marines-asvab-calculator" },
         ]}
       />

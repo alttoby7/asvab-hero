@@ -571,7 +571,7 @@ export default function CoastGuardASVABScorePage() {
         </p>
         <p className="text-text-secondary">
           Use our{" "}
-          <Link href="/calculator">ASVAB score calculator</Link> to check which
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to check which
           ratings your scores qualify you for.
         </p>
 

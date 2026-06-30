@@ -139,7 +139,7 @@ export default function BSEPPage() {
           Buchanan. If you need context on what{" "}
           <Link href="/gt-score">GT actually measures</Link>, start there
           first. Already have your scores? Plug them into the{" "}
-          <Link href="/calculator">ASVAB score calculator</Link> to see where
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see where
           you stand before starting the process.
         </p>
 
@@ -1074,7 +1074,7 @@ export default function BSEPPage() {
           accountability, no waiver, and you&apos;re burning one of three
           lifetime AFCT retests without structured preparation. The 3-retest cap
           makes unprepared testing expensive. Use the{" "}
-          <Link href="/calculator">ASVAB score calculator</Link> to check
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to check
           whether your projected gains are realistic before you test.
         </p>
 

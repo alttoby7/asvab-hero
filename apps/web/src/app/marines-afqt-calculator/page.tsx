@@ -78,7 +78,7 @@ export default function MarinesAfqtCalculatorPage() {
       <Breadcrumb
         items={[
           { name: "ASVAB Hero", href: "/" },
-          { name: "ASVAB Calculator", href: "/calculator" },
+          { name: "All-Branch Calculator", href: "/calculator" },
           { name: "Marines AFQT Calculator", href: "/marines-afqt-calculator" },
         ]}
       />

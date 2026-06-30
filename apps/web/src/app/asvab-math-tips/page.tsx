@@ -127,7 +127,7 @@ export default function ASVABMathTipsPage() {
 
         <p className="text-text-secondary">
           Plug your current scores into our{" "}
-          <Link href="/calculator" className="text-accent hover:text-accent-hover">free ASVAB score calculator</Link>{" "}
+          <Link href="/calculator" className="text-accent hover:text-accent-hover">All-Branch ASVAB Calculator</Link>{" "}
           before you start studying. Knowing your baseline makes everything else in this guide more useful.
         </p>
 
@@ -695,7 +695,7 @@ export default function ASVABMathTipsPage() {
           Start with a{" "}
           <Link href="/practice-test" className="text-accent hover:text-accent-hover">practice test</Link>{" "}
           to set your baseline. Then check your scores against job requirements with the{" "}
-          <Link href="/calculator" className="text-accent hover:text-accent-hover">ASVAB score calculator</Link>. Knowing exactly how many points you need, and for which subtests, makes your study time dramatically more efficient.
+          <Link href="/calculator" className="text-accent hover:text-accent-hover">All-Branch ASVAB Calculator</Link>. Knowing exactly how many points you need, and for which subtests, makes your study time dramatically more efficient.
         </p>
 
         <p className="text-text-secondary">

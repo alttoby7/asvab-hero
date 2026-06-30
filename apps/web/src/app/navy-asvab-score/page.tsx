@@ -173,7 +173,7 @@ export default function NavyASVABScorePage() {
           enlistment, the minimum scores required for popular ratings, nuclear
           field, special warfare programs, FY2026 bonuses, and active-duty
           retesting. If you already have scores, plug them into our{" "}
-          <Link href="/calculator">free ASVAB calculator</Link> to see which
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see which
           Navy ratings you qualify for right now.
         </p>
 

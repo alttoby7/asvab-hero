@@ -197,7 +197,7 @@ export default function GTScoreCalculatorPage() {
           your Enlistment Score Report at MEPS, or your recruiter can pull it
           directly. You can calculate it yourself from your subtest scores using
           the formula below, or use our{" "}
-          <Link href="/calculator">ASVAB score calculator</Link> to see it
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see it
           alongside every other line score you might need.
         </p>
 

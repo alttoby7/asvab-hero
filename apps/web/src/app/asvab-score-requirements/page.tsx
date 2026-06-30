@@ -143,7 +143,7 @@ export default function ASVABScoreRequirementsPage() {
           options. Whether you are taking the ASVAB for the first time or
           retaking as active-duty to reclass into a better MOS, plug your scores
           into the{" "}
-          <Link href="/calculator">free ASVAB score calculator</Link> to see
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see
           where you stand.
         </p>
 
@@ -711,7 +711,7 @@ export default function ASVABScoreRequirementsPage() {
           <Link href="/calculator">line score calculator</Link>{" "}
           to check your composites against job requirements, or plug your
           subtest scores into the{" "}
-          <Link href="/calculator">ASVAB score calculator</Link> to see every
+          <Link href="/calculator">All-Branch ASVAB Calculator</Link> to see every
           job you qualify for across all six branches.
         </p>
 
