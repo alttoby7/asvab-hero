@@ -40,12 +40,11 @@ Deno.serve(async (req) => {
     const tier = body.tier;
     // One-time "pass" tiers grant time-boxed Pro (mode: payment); the others
     // are recurring subscriptions. pass_days drives pro_until in the webhook.
-    const PASS_DAYS: Record<string, number> = { pass90: 90, retaker: 120 };
+    const PASS_DAYS: Record<string, number> = { pass90: 90 };
     const TIER_VALUE: Record<string, string> = {
-      monthly: "24.99",
+      monthly: "14.99",
       annual: "49.99",
-      pass90: "59.00",
-      retaker: "119.00",
+      pass90: "39.00",
     };
     // Human-readable charge/subscription description so the Stripe dashboard
     // shows a real label instead of falling back to the bare pi_… id.
@@ -53,9 +52,8 @@ Deno.serve(async (req) => {
       monthly: "ASVAB Hero Pro — Monthly",
       annual: "ASVAB Hero Pro — Annual",
       pass90: "ASVAB Hero Pro — 90-Day Pass",
-      retaker: "ASVAB Hero Pro — Retaker Pass (120 Days)",
     };
-    const isPass = tier === "pass90" || tier === "retaker";
+    const isPass = tier === "pass90";
     const priceId =
       tier === "monthly"
         ? Deno.env.get("ASVABHERO_STRIPE_PRICE_MONTHLY")
@@ -63,9 +61,7 @@ Deno.serve(async (req) => {
           ? Deno.env.get("ASVABHERO_STRIPE_PRICE_ANNUAL")
           : tier === "pass90"
             ? Deno.env.get("ASVABHERO_STRIPE_PRICE_PASS90")
-            : tier === "retaker"
-              ? Deno.env.get("ASVABHERO_STRIPE_PRICE_RETAKER")
-              : null;
+            : null;
     if (!priceId) return json(400, { error: "invalid_tier" });
 
     const { data: profile } = await supabaseAdmin
@@ -122,7 +118,7 @@ Deno.serve(async (req) => {
 
     // Build checkout params. Passes are one-time payments; monthly/annual are
     // subscriptions (and monthly gets a first-time 7-day trial).
-    const checkoutValue = TIER_VALUE[tier] ?? "24.99";
+    const checkoutValue = TIER_VALUE[tier] ?? "14.99";
     const checkoutParams: Record<string, unknown> = {
       mode: isPass ? "payment" : "subscription",
       customer: customerId,
