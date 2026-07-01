@@ -53,28 +53,18 @@ function UpgradeContent() {
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
 
-  // Retaker steering — EXPLICIT context only (Codex guardrail): an explicit
-  // ?tier=retaker (from the retaker landing pages) OR a logged prior official
-  // ASVAB score. Never inferred from practice attempts. Everyone else: annual.
-  const isRetaker =
-    tierParam === "retaker" ||
-    entitlement.officialTestStatus === "taken_logged";
   // Honor any explicit ?tier= (so direct pass/monthly links still work), else
-  // retaker for the retaker segment, else annual (the default recommendation).
-  const explicitTier = (["annual", "monthly", "pass90", "retaker"] as const).find(
+  // annual (the default recommendation). Retaker tier retired 2026-06-30; the
+  // retaker landing pages now route to the 90-Day Pass.
+  const explicitTier = (["annual", "monthly", "pass90"] as const).find(
     (t) => t === tierParam,
   );
-  const defaultTier: Tier =
-    explicitTier ?? (isRetaker ? "retaker" : "annual");
+  const defaultTier: Tier = explicitTier ?? "annual";
   // Drive the above-fold hero off the resolved tier. Annual + monthly both lead
   // with the annual hero (the recommended best-value plan, direct to checkout);
-  // explicit pass/retaker links keep their own hero.
-  const heroTier: "annual" | "pass90" | "retaker" =
-    defaultTier === "retaker"
-      ? "retaker"
-      : defaultTier === "pass90"
-        ? "pass90"
-        : "annual";
+  // an explicit pass link keeps its own hero.
+  const heroTier: "annual" | "pass90" =
+    defaultTier === "pass90" ? "pass90" : "annual";
   const HERO = {
     annual: {
       price: "$49.99",
@@ -83,15 +73,9 @@ function UpgradeContent() {
       sub: "Billed yearly. Cancel anytime — no auto-renew surprises.",
     },
     pass90: {
-      price: "$59",
+      price: "$39",
       line: `one-time · 90 days · ${GUARANTEE_TAG}`,
       cta: "Get my 90-Day Pass",
-      sub: "One-time payment. No subscription, no auto-renew.",
-    },
-    retaker: {
-      price: "$119",
-      line: `one-time · 120 days · ${GUARANTEE_TAG}`,
-      cta: "Get the Retaker Pass",
       sub: "One-time payment. No subscription, no auto-renew.",
     },
   };
@@ -255,7 +239,7 @@ function UpgradeContent() {
         <PricingPlans
           key={defaultTier}
           defaultTier={defaultTier}
-          recommendedTier={isRetaker ? "retaker" : "annual"}
+          recommendedTier="annual"
           source={from ?? "upgrade_page"}
           hideFreePlan={isFromPaywall}
           placement="pricing_grid"

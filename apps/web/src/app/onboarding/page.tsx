@@ -9,9 +9,9 @@ import { trackEvent, PaywallEvents } from "@/lib/analytics";
 // One-time "pass" tiers are not subscriptions; default value per plan when the
 // success_url omits it (stripe-checkout normally passes the real value).
 const PLAN_DEFAULT_VALUE: Record<string, number> = {
-  pass90: 59,
+  pass90: 39,
   retaker: 119,
-  monthly: 24.99,
+  monthly: 14.99,
   annual: 49.99,
 };
 
@@ -23,7 +23,7 @@ function OnboardingPageInner() {
   const plan = searchParams?.get("plan") ?? "monthly";
   const isPassPlan = plan === "pass90" || plan === "retaker";
   const value = Number.parseFloat(
-    searchParams?.get("value") ?? String(PLAN_DEFAULT_VALUE[plan] ?? 24.99)
+    searchParams?.get("value") ?? String(PLAN_DEFAULT_VALUE[plan] ?? 14.99)
   );
 
   useEffect(() => {
@@ -48,7 +48,7 @@ function OnboardingPageInner() {
       if (!already) {
         const safeValue = Number.isFinite(value)
           ? value
-          : PLAN_DEFAULT_VALUE[plan] ?? 24.99;
+          : PLAN_DEFAULT_VALUE[plan] ?? 14.99;
         // One-time passes get a non-"sub_" transaction id and no
         // subscription_started event (keeps GA4 / the revenue dashboard's
         // pass-vs-subscription split honest).

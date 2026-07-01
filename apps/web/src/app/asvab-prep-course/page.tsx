@@ -63,7 +63,7 @@ export default function ASVABPrepCoursePage() {
               name: "How much does an ASVAB prep course cost?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "It ranges widely. Free resources and military programs cost $0. Study books run $25-35 one-time. Online courses span $39 to $200, either one-time (Kaplan at $99, BoostPrep at $19.99) or monthly (Mometrix at $39.99, Duran at $60). Adaptive platforms run roughly $15-40 a month, or a one-time pass (ASVAB Hero's 90-Day Pass is $59). Private tutoring runs $50-100 an hour.",
+                text: "It ranges widely. Free resources and military programs cost $0. Study books run $25-35 one-time. Online courses span $39 to $200, either one-time (Kaplan at $99, BoostPrep at $19.99) or monthly (Mometrix at $39.99, Duran at $60). Adaptive platforms run roughly $15-40 a month, or a one-time pass (ASVAB Hero's 90-Day Pass is $39). Private tutoring runs $50-100 an hour.",
               },
             },
             {
@@ -632,7 +632,7 @@ export default function ASVABPrepCoursePage() {
 
         <p className="text-text-secondary">
           ASVAB Hero Pro lives in this category at the affordable end, a one-time
-          $59 90-Day Pass (or $24.99/mo), alongside higher-end coaching options like Duran Learning.
+          $39 90-Day Pass (or $14.99/mo), alongside higher-end coaching options like Duran Learning.
           It runs a diagnostic, then drills your weak subtests. It is one
           affordable option here, not the only one and not automatically the best
           for you. Pick the platform whose diagnostic and question style fit how
@@ -1015,7 +1015,7 @@ export default function ASVABPrepCoursePage() {
               either one-time (Kaplan at $99, BoostPrep at $19.99) or monthly
               (Mometrix at $39.99, Duran at $60). Adaptive platforms run roughly
               $15-40 a month, or a one-time pass (ASVAB Hero&apos;s 90-Day Pass is
-              $59). Private tutoring runs $50-100 an hour.
+              $39). Private tutoring runs $50-100 an hour.
             </p>
           </div>
           <div>

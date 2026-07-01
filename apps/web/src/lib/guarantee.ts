@@ -16,5 +16,5 @@ export const GUARANTEE_DAYS = 14;
 /** Full sentence — use where a complete statement reads naturally. */
 export const GUARANTEE_LINE = "14-day money-back guarantee — no questions asked.";
 
-/** Inline tag — use inside price/feature lines (e.g. "$59 · 90 days · …"). */
+/** Inline tag — use inside price/feature lines (e.g. "$39 · 90 days · …"). */
 export const GUARANTEE_TAG = "14-day money-back guarantee";

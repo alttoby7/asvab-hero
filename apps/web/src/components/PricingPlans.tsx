@@ -17,19 +17,17 @@ import { GUARANTEE_LINE, GUARANTEE_TAG } from "@/lib/guarantee";
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 
 // Pricing model (2026-06-27): annual-led. Stripe data showed the $49.99/yr
-// Annual was the clean converter pre-pivot, while the $59 one-time pass got
+// Annual was the clean converter pre-pivot, while the $39 one-time pass got
 // abandoned ~70% at the upfront-payment step. So:
 //   - Annual ($49.99/yr) is the default + "Best value" recommendation.
-//   - Monthly ($24.99/mo, 7-day trial) is the low-friction start option.
-//   - 90-Day Pass ($59, one-time) is demoted to a short-term option, no longer
+//   - Monthly ($14.99/mo, 7-day trial) is the low-friction start option.
+//   - 90-Day Pass ($39, one-time) is demoted to a short-term option, no longer
 //     the loud default.
-//   - Retaker Pass ($119, one-time, 120 days) targets the failed-AFQT /
-//     30-day-clock segment; premium WTP is captured HERE. Guarantee is the
-//     universal one (see @/lib/guarantee), not a special improve-or-refund term.
+// Retired 2026-06-30: the Retaker Pass ($119) never sold and was removed.
 // `tier` is the value posted to the stripe-checkout edge function, which maps
 // it to a Stripe price id + mode (subscription vs payment). Real prices live in
 // Stripe; the strings below are display copy only.
-export type Tier = "annual" | "monthly" | "pass90" | "retaker";
+export type Tier = "annual" | "monthly" | "pass90";
 
 type TierConfig = {
   key: Tier;
@@ -57,7 +55,7 @@ const TIERS: Record<Tier, TierConfig> = {
   pass90: {
     key: "pass90",
     label: "90-Day Pass",
-    price: "$59",
+    price: "$39",
     unit: "one-time",
     tagline:
       "Full Pro access for 90 days — enough to study and take the test, with nothing to cancel.",
@@ -68,23 +66,12 @@ const TIERS: Record<Tier, TierConfig> = {
   monthly: {
     key: "monthly",
     label: "Monthly",
-    price: "$24.99",
+    price: "$14.99",
     unit: "/ month",
     tagline:
       "Month-to-month flexibility if you're not sure of your test date yet.",
     cta: "Start 7-day free trial",
-    note: "Card required. $24.99/mo after the 7-day trial unless cancelled. Cancel anytime in Account Settings.",
-  },
-  retaker: {
-    key: "retaker",
-    label: "Retaker Pass",
-    price: "$119",
-    unit: "one-time",
-    tagline:
-      "Failed the AFQT or on a retest clock? 120 days of full Pro, built for the retest window.",
-    badge: "For retakers",
-    cta: "Get the Retaker Pass",
-    note: `One-time payment · 120 days of access · ${GUARANTEE_LINE}`,
+    note: "Card required. $14.99/mo after the 7-day trial unless cancelled. Cancel anytime in Account Settings.",
   },
 };
 
@@ -217,7 +204,7 @@ export default function PricingPlans({
     );
   }
 
-  const tierOrder: Tier[] = ["annual", "monthly", "pass90", "retaker"];
+  const tierOrder: Tier[] = ["annual", "monthly", "pass90"];
 
   return (
     <div className="w-full">
@@ -242,12 +229,6 @@ export default function PricingPlans({
           </button>
         ))}
       </div>
-
-      {recommendedTier === "retaker" && (
-        <p className="-mt-4 mb-6 text-center text-xs font-semibold text-accent">
-          ★ Recommended for retakers — 120 days of full Pro + {GUARANTEE_TAG}
-        </p>
-      )}
 
       {recommendedTier === "annual" && (
         <p className="-mt-4 mb-6 text-center text-xs font-semibold text-accent">

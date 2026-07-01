@@ -63,7 +63,7 @@ export default function UpgradeBanner() {
         <p className="min-w-0 flex-1 truncate text-sm text-text-secondary">
           <span className="font-semibold text-text-primary">You&apos;re on Free.</span>{" "}
           <span className="hidden sm:inline">Unlock unlimited drills + score tracking, </span>
-          <span className="font-mono text-xs text-text-primary">90-Day Pass $59</span>
+          <span className="font-mono text-xs text-text-primary">90-Day Pass $39</span>
         </p>
         <Link
           href="/upgrade?from=banner"

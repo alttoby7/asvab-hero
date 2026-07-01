@@ -190,7 +190,7 @@ export default function TestBlockedScreen({
         {/* Pricing anchor — only for high-intent paywall reasons */}
         {isHighIntent && (
           <p className="mb-6 text-xs text-text-tertiary">
-            <span className="font-mono text-sm font-bold text-text-primary">$59</span>{" "}
+            <span className="font-mono text-sm font-bold text-text-primary">$39</span>{" "}
             one-time · 90 days · {GUARANTEE_TAG}
           </p>
         )}
@@ -216,7 +216,7 @@ export default function TestBlockedScreen({
               disabled={checkoutLoading}
               className="block w-full rounded-xl bg-accent px-6 py-3.5 font-display text-base font-bold text-white transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)] disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {checkoutLoading ? "Loading checkout…" : "Get my 90-Day Pass · $59"}
+              {checkoutLoading ? "Loading checkout…" : "Get my 90-Day Pass · $39"}
             </button>
           ) : (
             <Link

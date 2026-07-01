@@ -22,7 +22,7 @@ const FAQ = [
   },
   {
     q: "Do I have to deal with a subscription?",
-    a: "Only if you want to. The 90-Day Pass is a one-time payment -- it just expires after 90 days, nothing to cancel and no auto-renew. If you pick the $24.99/month option instead, you can cancel anytime from your billing page and keep access through the end of the paid period.",
+    a: "Only if you want to. The 90-Day Pass is a one-time payment -- it just expires after 90 days, nothing to cancel and no auto-renew. If you pick the $14.99/month option instead, you can cancel anytime from your billing page and keep access through the end of the paid period.",
   },
   {
     q: "Do I need Pro if I already know my weak areas?",
@@ -56,7 +56,7 @@ export default function PricingPage() {
             {
               "@type": "Offer",
               name: "90-Day Test Pass",
-              price: "59.00",
+              price: "39.00",
               priceCurrency: "USD",
               url: "https://asvabhero.com/pricing",
               availability: "https://schema.org/InStock",
@@ -64,15 +64,7 @@ export default function PricingPage() {
             {
               "@type": "Offer",
               name: "Pro Monthly",
-              price: "24.99",
-              priceCurrency: "USD",
-              url: "https://asvabhero.com/pricing",
-              availability: "https://schema.org/InStock",
-            },
-            {
-              "@type": "Offer",
-              name: "Retaker Pass",
-              price: "119.00",
+              price: "14.99",
               priceCurrency: "USD",
               url: "https://asvabhero.com/pricing",
               availability: "https://schema.org/InStock",

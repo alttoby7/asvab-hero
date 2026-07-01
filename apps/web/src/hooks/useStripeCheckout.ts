@@ -14,7 +14,7 @@ import {
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 
-export type CheckoutTier = "annual" | "pass90" | "monthly" | "retaker";
+export type CheckoutTier = "annual" | "pass90" | "monthly";
 
 interface UseStripeCheckoutOpts {
   source?: string;

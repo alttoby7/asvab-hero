@@ -158,7 +158,7 @@ function BlockedScreen({
   const headline = isAuth ? "Sign in to start reviewing" : "This deck is part of Pro";
   const subtext = isAuth
     ? "Create a free account to track your flashcard progress. The Word Knowledge synonyms deck is free for all signed-in users."
-    : "Pro unlocks all six flashcard decks plus unlimited subtest drills and AFQT sprints. One-time 90-Day Pass $59, or $24.99/mo.";
+    : "Pro unlocks all six flashcard decks plus unlimited subtest drills and AFQT sprints. One-time 90-Day Pass $39, or $14.99/mo.";
   const primaryHref = isAuth
     ? `/signup?next=${encodeURIComponent(flashcardDeckHref(deckSlug, true))}`
     : `/upgrade?from=flashcards-${deckSlug}`;

@@ -161,7 +161,7 @@ export default function ProUpsellCard({ userId, from }: ProUpsellCardProps) {
             full-length timed sims, and deeper analytics for the final push.
           </>
         )}{" "}
-        One-time 90-Day Pass $59, or $24.99/mo.
+        One-time 90-Day Pass $39, or $14.99/mo.
       </p>
       {pitch && (
         <p className="mt-2 text-xs text-text-tertiary">
