@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
 
-const DISMISSED_KEY = "asvabhero.upgradeBannerDismissed";
+const DISMISSED_KEY = "asvabhero.upgradeBannerDismissedAt";
 
 export default function UpgradeBanner() {
   const pathname = usePathname();
@@ -16,7 +16,14 @@ export default function UpgradeBanner() {
 
   useEffect(() => {
     try {
-      setDismissed(localStorage.getItem(DISMISSED_KEY) === "1");
+      const ts = localStorage.getItem(DISMISSED_KEY);
+      if (!ts) {
+        setDismissed(false);
+        return;
+      }
+      const dismissedAt = parseInt(ts, 10);
+      const hoursSince = (Date.now() - dismissedAt) / (1000 * 60 * 60);
+      setDismissed(hoursSince < 24);
     } catch {
       setDismissed(false);
     }
@@ -24,7 +31,7 @@ export default function UpgradeBanner() {
 
   function handleDismiss() {
     try {
-      localStorage.setItem(DISMISSED_KEY, "1");
+      localStorage.setItem(DISMISSED_KEY, String(Date.now()));
     } catch {
       // ignore
     }
@@ -32,7 +39,6 @@ export default function UpgradeBanner() {
   }
 
   if (
-    pathname?.startsWith("/app") ||
     pathname?.startsWith("/account") ||
     pathname?.startsWith("/embed/") ||
     pathname === "/book" ||
@@ -62,14 +68,14 @@ export default function UpgradeBanner() {
         </span>
         <p className="min-w-0 flex-1 truncate text-sm text-text-secondary">
           <span className="font-semibold text-text-primary">You&apos;re on Free.</span>{" "}
-          <span className="hidden sm:inline">Unlock unlimited drills + score tracking, </span>
-          <span className="font-mono text-xs text-text-primary">90-Day Pass $39</span>
+          <span className="hidden sm:inline">Unlock unlimited drills + score tracking — </span>
+          <span className="font-mono text-xs text-text-primary">try Pro free for 7 days</span>
         </p>
         <Link
-          href="/upgrade?from=banner"
+          href="/upgrade?from=banner&tier=monthly"
           className="inline-flex shrink-0 items-center gap-1 rounded-md bg-accent px-3 py-1.5 text-xs font-semibold text-white no-underline transition-colors hover:bg-accent-hover"
         >
-          Upgrade
+          Start free trial
           <svg className="h-3 w-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>

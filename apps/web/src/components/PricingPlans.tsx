@@ -210,24 +210,31 @@ export default function PricingPlans({
     <div className="w-full">
       {/* Tier selector */}
       <div className="mx-auto mb-8 flex max-w-md items-center justify-center gap-2 rounded-xl border border-navy-border bg-navy-light p-1">
-        {tierOrder.map((t) => (
-          <button
-            key={t}
-            onClick={() => selectTier(t)}
-            className={`flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-              tier === t
-                ? "bg-accent text-white"
-                : "text-text-secondary hover:text-text-primary"
-            }`}
-          >
-            {TIERS[t].label}
-            {t === recommendedTier && (
-              <span className="ml-1" aria-hidden="true">
-                ★
+        {tierOrder.map((t) => {
+          const cfg = TIERS[t];
+          const priceTag = t === "annual" ? "$49.99/yr" : t === "monthly" ? "$14.99/mo" : "$39";
+          return (
+            <button
+              key={t}
+              onClick={() => selectTier(t)}
+              className={`flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                tier === t
+                  ? "bg-accent text-white"
+                  : "text-text-secondary hover:text-text-primary"
+              }`}
+            >
+              {cfg.label}{" "}
+              <span className={`text-xs ${tier === t ? "text-white/80" : "text-text-tertiary"}`}>
+                {priceTag}
               </span>
-            )}
-          </button>
-        ))}
+              {t === recommendedTier && (
+                <span className="ml-1" aria-hidden="true">
+                  ★
+                </span>
+              )}
+            </button>
+          );
+        })}
       </div>
 
       {recommendedTier === "annual" && (

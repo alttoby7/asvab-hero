@@ -39,15 +39,15 @@ const HEADLINES: Record<string, string> = {
 
 const SUBTEXTS: Record<string, string> = {
   free_diagnostic_used:
-    "Pro removes every limit — unlimited adaptive practice, full-length sims, and deeper analytics so nothing slows you down.",
+    "Try Pro free for 7 days — unlimited adaptive practice, full-length sims, and deeper analytics so nothing slows you down.",
   anon_diagnostic_used:
-    "Sign up and go Pro for unlimited tests, progress tracking, and full-length sims.",
+    "Create a free account and try Pro free for 7 days — unlimited practice, full-length sims, and score tracking.",
   pro_only_variant:
     "Subtest drills, AFQT sprints, weakness loops, and full sims are included with Pro.",
   free_user_no_diagnostic:
     "Start with the free diagnostic to get your baseline score, then upgrade to Pro to drill your weak areas.",
   free_adaptive_daily_limit:
-    "Go Pro for unlimited adaptive practice, full-length sims, and deeper analytics.",
+    "Try Pro free for 7 days — unlimited adaptive practice, full-length sims, and deeper analytics.",
   adaptive_needs_account:
     "Adaptive practice builds on your personal mastery model, so it needs an account. Sign up free — one adaptive AFQT block a day, no card required.",
 };
@@ -80,6 +80,7 @@ export default function TestBlockedScreen({
   const { entitlement } = useEntitlement();
   const isAuthed = !!session;
   const isHighIntent = HIGH_INTENT_REASONS.has(reason);
+  const hadPriorSub = entitlement.billingStatus === "canceled" || entitlement.billingStatus === "past_due";
 
   const { startCheckout, loading: checkoutLoading, error: checkoutError } =
     useStripeCheckout({
@@ -180,6 +181,13 @@ export default function TestBlockedScreen({
         </h2>
         <p className="mb-4 text-sm text-text-secondary">{personalizedSubtext}</p>
 
+        {/* Social proof */}
+        {isHighIntent && (
+          <p className="mb-3 text-xs text-text-tertiary">
+            1,500+ practice questions · 39 study guides · used by recruits across all 6 branches
+          </p>
+        )}
+
         {/* Test-date urgency */}
         {daysToTest !== null && isHighIntent && (
           <p className="mb-4 text-sm font-semibold text-accent">
@@ -190,8 +198,17 @@ export default function TestBlockedScreen({
         {/* Pricing anchor — only for high-intent paywall reasons */}
         {isHighIntent && (
           <p className="mb-6 text-xs text-text-tertiary">
-            <span className="font-mono text-sm font-bold text-text-primary">$39</span>{" "}
-            one-time · 90 days · {GUARANTEE_TAG}
+            {hadPriorSub ? (
+              <>
+                <span className="font-mono text-sm font-bold text-text-primary">$14.99</span>{" "}
+                / month · cancel anytime · {GUARANTEE_TAG}
+              </>
+            ) : (
+              <>
+                <span className="font-mono text-sm font-bold text-text-primary">Free for 7 days</span>{" "}
+                · then $14.99/mo · cancel anytime · {GUARANTEE_TAG}
+              </>
+            )}
           </p>
         )}
 
@@ -210,13 +227,13 @@ export default function TestBlockedScreen({
               Create a free account
             </Link>
           ) : isHighIntent && isAuthed ? (
-            /* Direct-to-Stripe for logged-in high-intent users */
+            /* Direct-to-Stripe for logged-in high-intent users — trial is highest-converting entry */
             <button
-              onClick={() => startCheckout("pass90")}
+              onClick={() => startCheckout("monthly")}
               disabled={checkoutLoading}
               className="block w-full rounded-xl bg-accent px-6 py-3.5 font-display text-base font-bold text-white transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)] disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {checkoutLoading ? "Loading checkout…" : "Get my 90-Day Pass · $39"}
+              {checkoutLoading ? "Loading checkout…" : hadPriorSub ? "Go Pro — $14.99/mo" : "Start your 7-day free trial"}
             </button>
           ) : (
             <Link
@@ -230,7 +247,7 @@ export default function TestBlockedScreen({
               className="block w-full rounded-xl bg-accent px-6 py-3.5 font-display text-base font-bold text-white no-underline transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)]"
             >
               {reason === "free_adaptive_daily_limit"
-                ? "Go Pro for unlimited"
+                ? "Try Pro free for 7 days"
                 : "Upgrade to Pro"}
             </Link>
           )}
