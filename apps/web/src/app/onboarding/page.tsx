@@ -4,7 +4,7 @@ import { Suspense, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useSession } from "@/hooks/useSession";
 import { OnboardingForm } from "@/components/onboarding/OnboardingForm";
-import { trackEvent, PaywallEvents } from "@/lib/analytics";
+import { trackEvent, trackMeta, PaywallEvents } from "@/lib/analytics";
 
 // One-time "pass" tiers are not subscriptions; default value per plan when the
 // success_url omits it (stripe-checkout normally passes the real value).
@@ -56,14 +56,23 @@ function OnboardingPageInner() {
         // subscription_started event (keeps GA4 / the revenue dashboard's
         // pass-vs-subscription split honest).
         const transactionId = `${isPassPlan ? "pass" : "sub"}_${Date.now()}`;
+        const metaEventId = sid ?? transactionId;
         trackEvent("purchase", {
           transaction_id: transactionId,
           value: safeValue,
           currency: "USD",
           plan,
           // Meta eventID for browser<->CAPI dedup; falls back to the txn id.
-          event_id: sid ?? transactionId,
+          event_id: metaEventId,
         });
+        // Meta Pixel, routed by plan to match the server CAPI event names so
+        // they deduplicate: monthly = trial start (no charge yet), everything
+        // else = an immediate Purchase. Server mirror lives in stripe-webhook.
+        if (plan === "monthly") {
+          trackMeta("StartTrial", { event_id: metaEventId });
+        } else {
+          trackMeta("Purchase", { value: safeValue, currency: "USD", event_id: metaEventId });
+        }
         if (!isPassPlan) {
           trackEvent("subscription_started", {
             plan,

@@ -34,32 +34,51 @@ declare global {
   }
 }
 
-// GA4 event name -> Meta Pixel standard event. Only mapped names mirror to Meta.
+// GA4 event name -> Meta Pixel standard event, for events that mirror
+// automatically. Purchase/StartTrial are fired explicitly via trackMeta()
+// (they need per-plan routing), so they are NOT auto-mirrored here.
 const META_STANDARD_EVENTS: Readonly<Record<string, string>> = {
-  purchase: "Purchase",
-  checkout_start: "InitiateCheckout",
   paywall_viewed: "ViewContent",
-  signup_complete: "CompleteRegistration",
 };
 
-// Mirror a mapped conversion event to the Meta Pixel. No-op if fbq is absent or
-// the event isn't mapped. Never throws. Passes event_id through as Meta's
-// eventID so browser + (future) Conversions API purchases deduplicate.
-function fireMeta(name: string, params?: GtagParams): void {
+/**
+ * Fire a Meta Pixel standard event directly. No-op if fbq is absent. Never
+ * throws. `event_id` is passed as Meta's eventID so the browser event and the
+ * server Conversions API event deduplicate.
+ */
+export function trackMeta(
+  metaEventName: "Purchase" | "StartTrial" | "Subscribe" | "ViewContent" | "InitiateCheckout",
+  params?: { value?: number; currency?: string; event_id?: string },
+): void {
   if (typeof window === "undefined") return;
   const fbq = window.fbq;
   if (typeof fbq !== "function") return;
+  try {
+    const data: Record<string, unknown> = {};
+    if (typeof params?.value === "number") {
+      data.value = params.value;
+      data.currency = params.currency ?? "USD";
+    }
+    const eventID = params?.event_id;
+    if (typeof eventID === "string" && eventID) {
+      fbq("track", metaEventName, data, { eventID });
+    } else {
+      fbq("track", metaEventName, data);
+    }
+  } catch {
+    // swallow, Meta must never break the app
+  }
+}
+
+// Auto-mirror the mapped (non-routed) events to the Meta Pixel.
+function fireMeta(name: string, params?: GtagParams): void {
   const metaName = META_STANDARD_EVENTS[name];
   if (!metaName) return;
-  const data: Record<string, unknown> = { currency: "USD" };
-  if (params?.value !== undefined) data.value = params.value;
-  if (params?.currency !== undefined) data.currency = params.currency;
-  const eventID = params?.event_id;
-  if (typeof eventID === "string" && eventID) {
-    fbq("track", metaName, data, { eventID });
-  } else {
-    fbq("track", metaName, data);
-  }
+  trackMeta(metaName as "ViewContent", {
+    value: typeof params?.value === "number" ? params.value : undefined,
+    currency: typeof params?.currency === "string" ? params.currency : undefined,
+    event_id: typeof params?.event_id === "string" ? params.event_id : undefined,
+  });
 }
 
 export function trackEvent(name: string, params?: GtagParams): void {

@@ -24,6 +24,66 @@ const WEBHOOK_SECRET_TEST = Deno.env.get("ASVABHERO_STRIPE_WEBHOOK_SECRET_TEST")
 const PRICE_MONTHLY = Deno.env.get("ASVABHERO_STRIPE_PRICE_MONTHLY") ?? "";
 const PRICE_ANNUAL = Deno.env.get("ASVABHERO_STRIPE_PRICE_ANNUAL") ?? "";
 
+// Meta Conversions API (server-side). Mirrors the browser Pixel; deduped by
+// event_id (= Stripe checkout session id for browser-matched events, or the
+// invoice id for the server-only Subscribe). Never throws / never fails the
+// webhook.
+const META_PIXEL_ID = Deno.env.get("ASVABHERO_META_PIXEL_ID") ?? "";
+const META_CAPI_TOKEN = Deno.env.get("ASVABHERO_META_CAPI_TOKEN") ?? "";
+
+const sha256Hex = async (s: string): Promise<string> => {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+  return Array.from(new Uint8Array(buf))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("");
+};
+
+const sendMetaCapi = async (opts: {
+  eventName: "Purchase" | "StartTrial" | "Subscribe";
+  eventId: string;
+  email?: string | null;
+  value?: number;
+  currency?: string;
+  eventSourceUrl?: string;
+}): Promise<void> => {
+  if (!META_PIXEL_ID || !META_CAPI_TOKEN) return;
+  try {
+    const userData: Record<string, unknown> = {};
+    if (opts.email) userData.em = [await sha256Hex(opts.email.trim().toLowerCase())];
+    const customData: Record<string, unknown> = {};
+    if (typeof opts.value === "number" && Number.isFinite(opts.value)) {
+      customData.value = opts.value;
+      customData.currency = (opts.currency ?? "USD").toUpperCase();
+    }
+    const body = {
+      data: [
+        {
+          event_name: opts.eventName,
+          event_time: Math.floor(Date.now() / 1000),
+          action_source: "website",
+          event_source_url: opts.eventSourceUrl ?? "https://asvabhero.com/onboarding",
+          event_id: opts.eventId,
+          user_data: userData,
+          ...(Object.keys(customData).length ? { custom_data: customData } : {}),
+        },
+      ],
+    };
+    const resp = await fetch(
+      `https://graph.facebook.com/v21.0/${META_PIXEL_ID}/events?access_token=${META_CAPI_TOKEN}`,
+      { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) },
+    );
+    if (!resp.ok) {
+      console.error("meta capi non-200", {
+        status: resp.status,
+        body: (await resp.text()).slice(0, 300),
+        event: opts.eventName,
+      });
+    }
+  } catch (e) {
+    console.error("meta capi error", { error: String(e), event: opts.eventName });
+  }
+};
+
 const supabaseAdmin = createClient(SUPABASE_URL, SERVICE_KEY, {
   auth: { autoRefreshToken: false, persistSession: false },
 });
@@ -1101,6 +1161,16 @@ Deno.serve(async (req) => {
             isTrial: false,
             eventType: event.type,
           });
+
+          // Meta CAPI Purchase (server copy of the browser Pixel Purchase).
+          // event_id = session id → dedups with the browser event.
+          await sendMetaCapi({
+            eventName: "Purchase",
+            eventId: obj.id as string,
+            email: customerEmail,
+            value: ((obj.amount_total as number | null) ?? 0) / 100,
+            currency: (obj.currency as string | undefined) ?? "USD",
+          });
           break;
         }
 
@@ -1193,6 +1263,24 @@ Deno.serve(async (req) => {
                 .from("profiles")
                 .update({ trial_ends_at: new Date(trialEnd * 1000).toISOString() })
                 .eq("user_id", resolvedUserId);
+            }
+          }
+
+          // Meta CAPI: a trialing sub (monthly) is a StartTrial; an immediately
+          // charged sub (annual, no trial) is a Purchase. event_id = session id
+          // → dedups with the matching browser event.
+          if (resolvedUserId) {
+            const sessionId = obj.id as string;
+            if (subscriptionStatus === "trialing") {
+              await sendMetaCapi({ eventName: "StartTrial", eventId: sessionId, email: customerEmail });
+            } else {
+              await sendMetaCapi({
+                eventName: "Purchase",
+                eventId: sessionId,
+                email: customerEmail,
+                value: ((obj.amount_total as number | null) ?? 0) / 100,
+                currency: (obj.currency as string | undefined) ?? "USD",
+              });
             }
           }
         }
@@ -1421,6 +1509,16 @@ Deno.serve(async (req) => {
                 customerEmail: invoiceCustomerEmail ?? trialProfile.email ?? undefined,
                 invoiceId,
                 eventType: event.type,
+              });
+              // Meta CAPI Subscribe: the trial converted to a paying sub. This
+              // fires ~7 days post-signup off-site, so it has no browser
+              // counterpart; event_id = invoice id keeps it idempotent.
+              await sendMetaCapi({
+                eventName: "Subscribe",
+                eventId: invoiceId ?? `sub_${userId}_${event.created}`,
+                email: invoiceCustomerEmail ?? trialProfile.email ?? undefined,
+                value: ((obj.amount_paid as number | null) ?? 0) / 100,
+                currency: (obj.currency as string | undefined) ?? "USD",
               });
             }
           }
