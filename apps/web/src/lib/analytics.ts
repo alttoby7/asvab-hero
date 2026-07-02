@@ -29,6 +29,36 @@ declare global {
       target: string | GtagParams,
       params?: GtagParams,
     ) => void;
+    fbq?: (...args: unknown[]) => void;
+    _fbq?: unknown;
+  }
+}
+
+// GA4 event name -> Meta Pixel standard event. Only mapped names mirror to Meta.
+const META_STANDARD_EVENTS: Readonly<Record<string, string>> = {
+  purchase: "Purchase",
+  checkout_start: "InitiateCheckout",
+  paywall_viewed: "ViewContent",
+  signup_complete: "CompleteRegistration",
+};
+
+// Mirror a mapped conversion event to the Meta Pixel. No-op if fbq is absent or
+// the event isn't mapped. Never throws. Passes event_id through as Meta's
+// eventID so browser + (future) Conversions API purchases deduplicate.
+function fireMeta(name: string, params?: GtagParams): void {
+  if (typeof window === "undefined") return;
+  const fbq = window.fbq;
+  if (typeof fbq !== "function") return;
+  const metaName = META_STANDARD_EVENTS[name];
+  if (!metaName) return;
+  const data: Record<string, unknown> = { currency: "USD" };
+  if (params?.value !== undefined) data.value = params.value;
+  if (params?.currency !== undefined) data.currency = params.currency;
+  const eventID = params?.event_id;
+  if (typeof eventID === "string" && eventID) {
+    fbq("track", metaName, data, { eventID });
+  } else {
+    fbq("track", metaName, data);
   }
 }
 
@@ -53,7 +83,14 @@ export function trackEvent(name: string, params?: GtagParams): void {
       }
     }
   }
-  // 2) Dual-write to our own first-party pipeline IFF it's a known paywall
+  // 2) Mirror mapped conversion events to the Meta Pixel. Additive + swallowed;
+  //    GA4 above is never affected.
+  try {
+    fireMeta(name, merged);
+  } catch {
+    // swallow, Meta mirror must never break the app or GA4
+  }
+  // 3) Dual-write to our own first-party pipeline IFF it's a known paywall
   //    event. Fully isolated + swallowed (see enqueue). Additive: GA4 above
   //    is never affected by anything here.
   try {

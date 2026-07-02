@@ -25,6 +25,9 @@ function OnboardingPageInner() {
   const value = Number.parseFloat(
     searchParams?.get("value") ?? String(PLAN_DEFAULT_VALUE[plan] ?? 14.99)
   );
+  // Stripe checkout session id — used as the Meta Pixel eventID so browser +
+  // Conversions API purchases deduplicate.
+  const sid = searchParams?.get("sid") ?? undefined;
 
   useEffect(() => {
     if (!sessionLoading && !session) router.replace("/login?next=/onboarding");
@@ -52,11 +55,14 @@ function OnboardingPageInner() {
         // One-time passes get a non-"sub_" transaction id and no
         // subscription_started event (keeps GA4 / the revenue dashboard's
         // pass-vs-subscription split honest).
+        const transactionId = `${isPassPlan ? "pass" : "sub"}_${Date.now()}`;
         trackEvent("purchase", {
-          transaction_id: `${isPassPlan ? "pass" : "sub"}_${Date.now()}`,
+          transaction_id: transactionId,
           value: safeValue,
           currency: "USD",
           plan,
+          // Meta eventID for browser<->CAPI dedup; falls back to the txn id.
+          event_id: sid ?? transactionId,
         });
         if (!isPassPlan) {
           trackEvent("subscription_started", {

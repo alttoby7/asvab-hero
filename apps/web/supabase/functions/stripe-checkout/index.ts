@@ -126,7 +126,10 @@ Deno.serve(async (req) => {
       "line_items[0][quantity]": 1,
       // Carry plan + list value so the client can fire an accurate GA4 purchase
       // event on the success return (no Measurement Protocol secret needed).
-      success_url: `${SITE_URL}/onboarding?welcome=1&plan=${tier}&value=${checkoutValue}`,
+      // {CHECKOUT_SESSION_ID} is expanded by Stripe; it becomes the Meta Pixel
+      // eventID so the browser Purchase and (future) Conversions API Purchase
+      // deduplicate to a single conversion.
+      success_url: `${SITE_URL}/onboarding?welcome=1&plan=${tier}&value=${checkoutValue}&sid={CHECKOUT_SESSION_ID}`,
       cancel_url: cancelUrl,
       allow_promotion_codes: "true",
       "metadata[user_id]": userId,
