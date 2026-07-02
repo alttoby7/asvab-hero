@@ -33,7 +33,7 @@ export default function RetakerOfferCallout({ from }: { from: string }) {
         href={`/upgrade?tier=pass90&from=${from}`}
         className="mt-5 inline-block rounded-xl bg-accent px-6 py-3 font-display text-base font-bold text-white no-underline transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)]"
       >
-        Get the 90-Day Pass &mdash; $39
+        Get the 90-Day Pass &mdash; $59
       </Link>
       <p className="mt-2 text-xs text-text-tertiary">
         One-time payment &middot; 90 days &middot; no subscription

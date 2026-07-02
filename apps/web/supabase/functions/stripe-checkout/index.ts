@@ -44,7 +44,7 @@ Deno.serve(async (req) => {
     const TIER_VALUE: Record<string, string> = {
       monthly: "14.99",
       annual: "49.99",
-      pass90: "39.00",
+      pass90: "59.00",
     };
     // Human-readable charge/subscription description so the Stripe dashboard
     // shows a real label instead of falling back to the bare pi_… id.

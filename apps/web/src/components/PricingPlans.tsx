@@ -17,11 +17,11 @@ import { GUARANTEE_LINE, GUARANTEE_TAG } from "@/lib/guarantee";
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 
 // Pricing model (2026-06-27): annual-led. Stripe data showed the $49.99/yr
-// Annual was the clean converter pre-pivot, while the $39 one-time pass got
+// Annual was the clean converter pre-pivot, while the $59 one-time pass got
 // abandoned ~70% at the upfront-payment step. So:
 //   - Annual ($49.99/yr) is the default + "Best value" recommendation.
 //   - Monthly ($14.99/mo, 7-day trial) is the low-friction start option.
-//   - 90-Day Pass ($39, one-time) is demoted to a short-term option, no longer
+//   - 90-Day Pass ($59, one-time) is demoted to a short-term option, no longer
 //     the loud default.
 // Retired 2026-06-30: the Retaker Pass ($119) never sold and was removed.
 // `tier` is the value posted to the stripe-checkout edge function, which maps
@@ -55,7 +55,7 @@ const TIERS: Record<Tier, TierConfig> = {
   pass90: {
     key: "pass90",
     label: "90-Day Pass",
-    price: "$39",
+    price: "$59",
     unit: "one-time",
     tagline:
       "Full Pro access for 90 days — enough to study and take the test, with nothing to cancel.",
@@ -212,7 +212,7 @@ export default function PricingPlans({
       <div className="mx-auto mb-8 flex max-w-md items-center justify-center gap-2 rounded-xl border border-navy-border bg-navy-light p-1">
         {tierOrder.map((t) => {
           const cfg = TIERS[t];
-          const priceTag = t === "annual" ? "$49.99/yr" : t === "monthly" ? "$14.99/mo" : "$39";
+          const priceTag = t === "annual" ? "$49.99/yr" : t === "monthly" ? "$14.99/mo" : "$59";
           return (
             <button
               key={t}

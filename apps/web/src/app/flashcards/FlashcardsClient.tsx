@@ -129,7 +129,7 @@ export default function FlashcardsClient() {
             Unlock all 6 decks with Pro
           </p>
           <p className="mt-1 text-sm text-text-secondary">
-            One-time 90-Day Pass $39, or $14.99/month. Cancel anytime.
+            One-time 90-Day Pass $59, or $14.99/month. Cancel anytime.
           </p>
           <Link
             href="/upgrade?from=flashcards"

@@ -56,7 +56,7 @@ export default function PricingPage() {
             {
               "@type": "Offer",
               name: "90-Day Test Pass",
-              price: "39.00",
+              price: "59.00",
               priceCurrency: "USD",
               url: "https://asvabhero.com/pricing",
               availability: "https://schema.org/InStock",

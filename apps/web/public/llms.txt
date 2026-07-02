@@ -1,6 +1,6 @@
 # ASVAB Hero
 
-> ASVAB Hero (asvabhero.com) is a free, adaptive ASVAB test-prep app. It gives a free diagnostic with an estimated AFQT score, free score calculators (AFQT, GT, line/composite, branch-specific), 500+ military job matches, and a daily adaptive practice loop built on the methods cognitive science shows actually raise scores. Free account includes the saved score report, weakest-topic map, spaced Mistake Bank, and a daily adaptive block; Pro ($14.99/mo, or a one-time $39 90-Day Pass) adds unlimited practice, full-length timed simulations, and deeper analytics.
+> ASVAB Hero (asvabhero.com) is a free, adaptive ASVAB test-prep app. It gives a free diagnostic with an estimated AFQT score, free score calculators (AFQT, GT, line/composite, branch-specific), 500+ military job matches, and a daily adaptive practice loop built on the methods cognitive science shows actually raise scores. Free account includes the saved score report, weakest-topic map, spaced Mistake Bank, and a daily adaptive block; Pro ($14.99/mo, or a one-time $59 90-Day Pass) adds unlimited practice, full-length timed simulations, and deeper analytics.
 
 ## Tools (free, no signup)
 - [AFQT Calculator](https://asvabhero.com/afqt-calculator): compute your AFQT percentile from subtest standard scores (uses the official PAY97 norming table).

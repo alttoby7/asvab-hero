@@ -44,6 +44,10 @@ const faqs = [
     q: "What GT score do I need for Army Special Forces?",
     a: "Army 18X (Special Forces Recruit) requires a minimum GT score of 110. That&apos;s one of three simultaneous line score requirements: GT 110, CO (Combat) 100, and SC (Surveillance and Communications) 100. All three must be met at the same time. GT 110 also meets the requirement for OCS, Warrant Officer, and most other officer pathways.",
   },
+  {
+    q: "What formulas do I need to memorize for the ASVAB?",
+    a: "No formula sheet is provided on any ASVAB section. For Arithmetic Reasoning (which feeds your GT), memorize these five: Distance = Rate × Time, Percent = (Part / Whole) × 100, cross-multiplication for proportions, area formulas for rectangles/triangles/circles, and Average = Sum / Count. These cover roughly 80% of AR questions. For Mathematics Knowledge, add the Pythagorean theorem, slope formula, quadratic formula, and exponent rules. Use the 3-Step Method (WANT / HAVE / CONNECT) on every word problem to identify which formula applies before calculating.",
+  },
 ];
 
 export default function GTScoreCalculatorPage() {
@@ -684,7 +688,10 @@ export default function GTScoreCalculatorPage() {
         <p className="mt-4 text-text-secondary">
           Your GT score is driven entirely by WK, PC, and AR. A targeted study
           plan that focuses on those three subtests will move your gt score
-          calculator result faster than general ASVAB prep.
+          calculator result faster than general ASVAB prep. The Army&apos;s
+          Academic Skills Development Program documented an average 17-point
+          AFQT improvement in just 3 weeks of structured study, and since AR
+          feeds both your AFQT and your GT, those gains hit both scores at once.
         </p>
 
         <div className="my-4 space-y-2">
@@ -718,6 +725,48 @@ export default function GTScoreCalculatorPage() {
           you&apos;re close to a threshold, verbal prep is the higher-leverage
           move.
         </p>
+
+        <p className="text-text-secondary">
+          For AR specifically, use the 3-Step Method on every word problem:
+        </p>
+
+        <div className="my-4 rounded-lg bg-navy p-4">
+          <h4 className="font-display text-base font-bold text-text-primary">The 3-Step Method (WANT / HAVE / CONNECT)</h4>
+          <ul className="mt-2 space-y-2 text-sm text-text-secondary">
+            <li>
+              <strong className="text-text-primary">WANT:</strong> What is the question asking for? Identify the unknown and its unit.
+            </li>
+            <li>
+              <strong className="text-text-primary">HAVE:</strong> What numbers and relationships are given? Write them down with units.
+            </li>
+            <li>
+              <strong className="text-text-primary">CONNECT:</strong> Which operation or formula links HAVE to WANT? Set up the equation, then solve.
+            </li>
+          </ul>
+        </div>
+
+        <p className="text-text-secondary">
+          This method eliminates the most common AR mistake: jumping into
+          calculations before understanding what the problem is actually asking.
+          After 50+ problems, the process becomes automatic.
+        </p>
+
+        <h4 className="mt-6 font-display text-base font-bold text-text-primary">
+          Key AR formulas to memorize
+        </h4>
+        <p className="mt-2 text-text-secondary">
+          No formula sheet is provided on the ASVAB. These five cover roughly
+          80% of AR questions:
+        </p>
+        <div className="my-4 rounded-lg bg-navy p-4 font-mono text-sm text-text-secondary">
+          <ul className="space-y-1">
+            <li>Distance = Rate &times; Time</li>
+            <li>Percent = (Part / Whole) &times; 100</li>
+            <li>Cross-multiply for proportions: a/b = c/d &rarr; ad = bc</li>
+            <li>Area of rectangle = L &times; W; triangle = &frac12; &times; B &times; H; circle = &pi;r&sup2;</li>
+            <li>Average = Sum / Count</li>
+          </ul>
+        </div>
 
         <p className="text-text-secondary">
           Start with a{" "}

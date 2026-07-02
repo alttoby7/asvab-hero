@@ -506,7 +506,7 @@ export default function AsvabTutorPage() {
                   tracking
                 </td>
                 <td className="py-2 font-mono">
-                  Free to start; Pro $14.99/mo or $39 for a 90-day pass
+                  Free to start; Pro $14.99/mo or $59 for a 90-day pass
                 </td>
               </tr>
               <tr>

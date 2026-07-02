@@ -9,7 +9,7 @@ import { trackEvent, PaywallEvents } from "@/lib/analytics";
 // One-time "pass" tiers are not subscriptions; default value per plan when the
 // success_url omits it (stripe-checkout normally passes the real value).
 const PLAN_DEFAULT_VALUE: Record<string, number> = {
-  pass90: 39,
+  pass90: 59,
   retaker: 119,
   monthly: 14.99,
   annual: 49.99,

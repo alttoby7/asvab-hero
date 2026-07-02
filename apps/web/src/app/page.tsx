@@ -11,6 +11,45 @@ import { RECRUITS_PER_MONTH, SCORE_CHECKS_PER_MONTH } from "@/data/social-proof"
 import HomePlanCTA from "@/components/HomePlanCTA";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 
+const HOME_FAQ_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What math is on the ASVAB?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Two subtests: Arithmetic Reasoning (AR) — 16 word problems in 39 minutes (about 2.5 minutes each), covering ratios, percentages, distance-rate-time, and unit conversions. Mathematics Knowledge (MK) — 16 direct math problems in 20 minutes (75 seconds each), split roughly 55% algebra and 45% geometry. No calculator is allowed on either section, and no formula sheet is provided. Both feed directly into your AFQT: AFQT = 2VE + AR + MK.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How is the AFQT score calculated?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "AFQT = 2VE + AR + MK. VE (Verbal Expression) is derived from Word Knowledge and Paragraph Comprehension. AR is Arithmetic Reasoning. MK is Mathematics Knowledge. The raw score is converted to a percentile (1-99) using the 1997 PAY97 norming table. Math (AR + MK) controls half the formula, so improving either math subtest directly raises your enlistment eligibility score.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can you use a calculator on the ASVAB?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. Calculators are not allowed on any ASVAB section. You receive scratch paper for working out problems by hand. This applies to both the CAT-ASVAB at MEPS and the paper-and-pencil version. All arithmetic, including fractions, percentages, and geometry calculations, must be done mentally or on scratch paper.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long should I study for the ASVAB?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Three to six weeks of structured daily practice (30-60 minutes) typically yields a 10 to 20 point AFQT improvement. The Army's Academic Skills Development Program documented an average 17-point AFQT increase in just 3 weeks of structured study, with one case going from 38 to 72 AFQT. Focus on your weakest subtests first for the fastest gains.",
+      },
+    },
+  ],
+};
+
 // Entity anchor for search + AI engines: who we are (Organization) and what the
 // product is (WebApplication / SoftwareApplication with its free + paid offers).
 const HOME_SCHEMA = {
@@ -46,7 +85,7 @@ const HOME_SCHEMA = {
         {
           "@type": "Offer",
           name: "90-Day Test Pass",
-          price: "39.00",
+          price: "59.00",
           priceCurrency: "USD",
           url: "https://asvabhero.com/pricing",
         },
@@ -77,6 +116,7 @@ export default function HomePage() {
   return (
     <div>
       <JsonLd data={HOME_SCHEMA} />
+      <JsonLd data={HOME_FAQ_SCHEMA} />
 
       {/* ────────────────────────────────────────────────────────────────────
          HERO, calculator-led. The homepage ranks for "asvab calculator" intent,
@@ -356,7 +396,7 @@ export default function HomePage() {
                 ))}
               </ul>
               <p className="mt-5 text-sm text-text-tertiary">
-                <span className="font-semibold text-text-secondary">90-Day Pass $39</span>{" "}
+                <span className="font-semibold text-text-secondary">90-Day Pass $59</span>{" "}
                 one-time, or $14.99 / month.{" "}
                 <Link
                   href="/pricing"
@@ -501,6 +541,147 @@ export default function HomePage() {
               See the ASVAB score requirements for every branch &rarr;
             </Link>
           </p>
+        </div>
+      </section>
+
+      {/* ────────────────────────────────────────────────────────────────────
+         ASVAB QUICK REFERENCE, structured Q&A blocks for AEO/GEO citation.
+         Placed after the conversion story so AI-extractable answers live on the
+         highest-authority page without competing with primary CTAs.
+      ──────────────────────────────────────────────────────────────────── */}
+      <section className="border-t border-navy-border">
+        <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+          <div className="text-center">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] text-text-tertiary">
+              <span className="text-accent">&#9679;</span> Quick reference
+            </p>
+            <h2 className="mt-4 font-display text-3xl font-extrabold tracking-tight text-text-primary sm:text-4xl">
+              ASVAB scoring and math, explained.
+            </h2>
+          </div>
+
+          <div className="mt-10 space-y-8">
+            <div className="rounded-2xl border border-navy-border bg-navy-light p-6 sm:p-8">
+              <h3 className="font-display text-lg font-bold text-text-primary">
+                What math is on the ASVAB?
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                Two subtests test math. <strong>Arithmetic Reasoning (AR)</strong> gives
+                you 16 word problems in 39 minutes, about 2.5 minutes each, covering
+                ratios, percentages, distance-rate-time, and unit conversions.{" "}
+                <strong>Mathematics Knowledge (MK)</strong> gives you 16 direct math
+                problems in 20 minutes, 75 seconds each, split roughly 55% algebra and
+                45% geometry. No calculator is allowed. No formula sheet is provided.
+              </p>
+              <div className="mt-4 overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-navy-border">
+                      <th className="pb-2 pr-4 text-left font-semibold text-text-secondary" />
+                      <th className="pb-2 pr-4 text-left font-semibold text-text-secondary">AR</th>
+                      <th className="pb-2 text-left font-semibold text-text-secondary">MK</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-text-secondary">
+                    <tr className="border-b border-navy-border/50">
+                      <td className="py-2 pr-4 font-semibold text-text-primary">Questions</td>
+                      <td className="py-2 pr-4 font-mono">16</td>
+                      <td className="py-2 font-mono">16</td>
+                    </tr>
+                    <tr className="border-b border-navy-border/50">
+                      <td className="py-2 pr-4 font-semibold text-text-primary">Time</td>
+                      <td className="py-2 pr-4 font-mono">39 min (~2.5 min/q)</td>
+                      <td className="py-2 font-mono">20 min (~75 sec/q)</td>
+                    </tr>
+                    <tr className="border-b border-navy-border/50">
+                      <td className="py-2 pr-4 font-semibold text-text-primary">Format</td>
+                      <td className="py-2 pr-4">Word problems</td>
+                      <td className="py-2">Direct math</td>
+                    </tr>
+                    <tr>
+                      <td className="py-2 pr-4 font-semibold text-text-primary">Top topics</td>
+                      <td className="py-2 pr-4">Ratios, D=RT, percentages</td>
+                      <td className="py-2">Algebra (~55%), Geometry (~45%)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-3 text-sm text-text-secondary">
+                For targeted prep strategies, see our{" "}
+                <Link href="/asvab-math-tips" className="font-semibold text-accent no-underline hover:text-accent-hover">
+                  ASVAB math tips
+                </Link>{" "}
+                and{" "}
+                <Link href="/asvab-arithmetic-reasoning-tips" className="font-semibold text-accent no-underline hover:text-accent-hover">
+                  arithmetic reasoning tips
+                </Link>{" "}
+                guides.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-navy-border bg-navy-light p-6 sm:p-8">
+              <h3 className="font-display text-lg font-bold text-text-primary">
+                How is the AFQT score calculated?
+              </h3>
+              <div className="mt-3 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
+                AFQT = 2VE + AR + MK
+              </div>
+              <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                VE (Verbal Expression) is derived from Word Knowledge and Paragraph
+                Comprehension. AR is Arithmetic Reasoning. MK is Mathematics Knowledge.
+                The raw score is converted to a percentile (1-99) using the 1997 PAY97
+                norming table. Math (AR + MK) controls half the formula. Every point
+                you gain on either math subtest adds one point to your AFQT.
+              </p>
+              <p className="mt-3 text-sm text-text-secondary">
+                The GT composite uses a different formula: <strong>GT = VE + AR</strong>.
+                It determines job eligibility, not enlistment eligibility.{" "}
+                <Link href="/gt-score-calculator" className="font-semibold text-accent no-underline hover:text-accent-hover">
+                  Calculate your GT score &rarr;
+                </Link>
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-navy-border bg-navy-light p-6 sm:p-8">
+              <h3 className="font-display text-lg font-bold text-text-primary">
+                How long should I study for the ASVAB?
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                Three to six weeks of structured daily practice (30-60 minutes)
+                typically yields a 10 to 20 point AFQT improvement. The Army&apos;s
+                Academic Skills Development Program documented an{" "}
+                <strong>average 17-point AFQT increase in 3 weeks</strong> of
+                structured study, with one case going from a 38 to a 72 AFQT, a
+                34-point gain. Consistency beats intensity: 30 focused minutes daily
+                outperforms a weekend cram session.
+              </p>
+              <p className="mt-3 text-sm text-text-secondary">
+                Start with a{" "}
+                <Link href="/practice-test" className="font-semibold text-accent no-underline hover:text-accent-hover">
+                  free diagnostic test
+                </Link>{" "}
+                to find your weak spots, then follow the{" "}
+                <Link href="/asvab-study-guide" className="font-semibold text-accent no-underline hover:text-accent-hover">
+                  study guide
+                </Link>{" "}
+                to target them.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-navy-border bg-navy-light p-6 sm:p-8">
+              <h3 className="font-display text-lg font-bold text-text-primary">
+                Can you use a calculator on the ASVAB?
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-text-secondary">
+                No. Calculators are not allowed on any ASVAB section, including
+                Arithmetic Reasoning and Mathematics Knowledge. You receive scratch
+                paper for working out problems by hand. This applies to both the
+                CAT-ASVAB at MEPS and the paper-and-pencil version. Every formula,
+                fraction-decimal conversion, and arithmetic operation must be done
+                from memory.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -81,7 +81,7 @@ function UpgradeContent() {
       sub: "Billed yearly. Cancel anytime — no auto-renew surprises.",
     },
     pass90: {
-      price: "$39",
+      price: "$59",
       line: `one-time · 90 days · ${GUARANTEE_TAG}`,
       cta: "Get my 90-Day Pass",
       sub: "One-time payment. No subscription, no auto-renew.",
