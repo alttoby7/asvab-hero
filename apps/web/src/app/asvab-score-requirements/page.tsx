@@ -996,7 +996,31 @@ export default function ASVABScoreRequirementsPage() {
           <strong>For AFQT improvement:</strong> Start with verbal (WK and PC).
           Then target whichever is weaker between AR and MK. A focused 4&ndash;6
           week study period typically yields a 5 to 15 percentile point
-          improvement.
+          improvement. The Army&apos;s own ASDP data shows an average 17-point
+          AFQT improvement in just 3 weeks of structured prep.
+        </p>
+
+        <p className="text-text-secondary">
+          <strong>For Arithmetic Reasoning (AR):</strong> AR feeds both your
+          AFQT and your GT score. Memorize five formulas that cover roughly 80%
+          of AR questions: Distance = Rate &times; Time, Percent = (Part /
+          Whole) &times; 100, cross-multiplication for proportions, area
+          formulas for rectangles/triangles/circles, and Average = Sum / Count.
+          Use the 3-Step Method on every word problem: identify what you{" "}
+          <strong>WANT</strong>, list what you <strong>HAVE</strong>, then{" "}
+          <strong>CONNECT</strong> them with the right formula. See our{" "}
+          <Link href="/asvab-arithmetic-reasoning-tips">AR tips guide</Link>{" "}
+          for worked examples.
+        </p>
+
+        <p className="text-text-secondary">
+          <strong>For Mathematics Knowledge (MK):</strong> MK tests pure math
+          without word problems. Focus on algebra (solve for X, factor
+          quadratics), geometry (Pythagorean theorem, area/volume formulas), and
+          exponent rules. Unlike AR, speed matters more here because the
+          questions are shorter but more numerous. See our{" "}
+          <Link href="/asvab-math-tips">ASVAB math tips</Link> for the
+          specific formulas and techniques that appear most often.
         </p>
 
         <p className="text-text-secondary">

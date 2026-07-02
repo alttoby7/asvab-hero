@@ -301,8 +301,24 @@ export default function ASVABStudyGuidePage() {
                 Word problems testing real-world math. You&apos;ll see rate/distance
                 problems, percentage calculations, ratio questions, and basic
                 algebra. The key skill isn&apos;t math itself, it&apos;s translating
-                English sentences into equations. Practice by converting word
-                problems into math before solving.
+                English sentences into equations.
+              </p>
+              <p className="mb-2 text-sm text-text-secondary leading-relaxed">
+                Use the <strong className="text-text-primary">3-Step Method</strong> on every word problem:{" "}
+                <strong>WANT</strong> (what the question asks for),{" "}
+                <strong>HAVE</strong> (the numbers and facts given),{" "}
+                <strong>CONNECT</strong> (pick the formula that bridges them).
+                Five formulas cover ~80% of AR: Distance = Rate &times; Time,
+                Percent = (Part / Whole) &times; 100, cross-multiplication,
+                area formulas, and Average = Sum / Count.
+                See our{" "}
+                <Link
+                  href="/asvab-arithmetic-reasoning-tips"
+                  className="text-accent hover:text-accent-hover no-underline"
+                >
+                  AR tips guide
+                </Link>{" "}
+                for worked examples of each.
               </p>
               <p className="text-xs text-text-tertiary">
                 15 questions &middot; 39 minutes &middot; Feeds AFQT + most branch composites
@@ -359,6 +375,18 @@ export default function ASVABStudyGuidePage() {
                 operations. If you know PEMDAS, can solve for X, and remember
                 area/volume formulas, you&apos;re most of the way there. Drill
                 practice problems until solving equations feels automatic.
+              </p>
+              <p className="mb-2 text-sm text-text-secondary leading-relaxed">
+                For MK specifically, add the Pythagorean theorem
+                (a&sup2; + b&sup2; = c&sup2;), slope formula, quadratic
+                formula, and exponent rules to your formula sheet. See our{" "}
+                <Link
+                  href="/asvab-math-tips"
+                  className="text-accent hover:text-accent-hover no-underline"
+                >
+                  ASVAB math tips
+                </Link>{" "}
+                for the complete list of formulas that appear most often.
               </p>
               <p className="text-xs text-text-tertiary">
                 15 questions &middot; 23 minutes &middot; Feeds AFQT + technical composites
