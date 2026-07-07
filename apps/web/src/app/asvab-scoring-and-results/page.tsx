@@ -5,9 +5,9 @@ import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
-  title: "How ASVAB Scoring Works: AFQT Formula, VE Double-Count, Results Timeline",
+  title: "How to Calculate Your ASVAB Score: AFQT Formula & Step-by-Step Guide (2026)",
   description:
-    "AFQT = 2×(WK+PC) + AR + MK → percentile. Word Knowledge counts twice. CAT scores: same day. Paper: 30 days. Every number on your report explained, plus 2026 branch minimums.",
+    "How to calculate your ASVAB score: AFQT = 2×(WK+PC) + AR + MK → 1–99 percentile. Step-by-step worked example, all 9 subtest scores explained, and 2026 branch minimums.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-scoring-and-results",
   },
@@ -17,7 +17,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ASVAB Scoring and Results: What Every Number on Your Score Report Means",
+    "How to Calculate Your ASVAB Score: What Every Number on Your Score Report Means",
   description:
     "Understand ASVAB scoring and results: AFQT formula with VE double-count, line scores by branch, 2026 minimums, and what to do after testing.",
   url: "https://asvabhero.com/asvab-scoring-and-results",
@@ -31,7 +31,7 @@ const articleJsonLd = {
     name: "ASVAB Hero",
   },
   datePublished: "2026-03-19",
-  dateModified: "2026-04-19",
+  dateModified: "2026-07-07",
 };
 
 const faqJsonLd = {
@@ -120,7 +120,7 @@ export default function ASVABScoringAndResultsPage() {
       <JsonLd data={faqJsonLd} />
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          How ASVAB Scoring Works: AFQT Formula, VE Double-Count, Results Timeline
+          How to Calculate Your ASVAB Score: AFQT Formula, VE Double-Count, Results
         </h1>
 
         <VerifiedBlock
@@ -1153,6 +1153,13 @@ export default function ASVABScoringAndResultsPage() {
           >
             Try the Free Calculator
           </Link>
+          <p className="mt-3 text-xs text-text-tertiary">
+            Want just the AFQT percentile?{" "}
+            <Link href="/afqt-calculator" className="text-accent hover:text-accent-hover">
+              Use the AFQT calculator
+            </Link>
+            .
+          </p>
         </div>
       </article>
     </div>
