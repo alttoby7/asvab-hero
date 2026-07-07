@@ -10,7 +10,7 @@ import BranchCompositeHeatmap from "@/components/scores-explained/BranchComposit
 export const metadata: Metadata = {
   title: "ASVAB Score Chart: AFQT Categories, Line Scores & Branch Minimums (2026)",
   description:
-    "AFQT Category I = 93–99. II = 65–92. IIIA = 50–64. IIIB = 31–49. IV = 10–30. Branch minimums: Army 31, Marines 32, Navy 31, Air Force/Space Force 36, Coast Guard 32. GED floors are higher.",
+    "AFQT Category I = 93–99. II = 65–92. IIIA = 50–64. IIIB = 31–49. IV = 10–30. Branch minimums: Army 31, Marines 32, Navy 35, Air Force/Space Force 36, Coast Guard 32. GED floors are higher.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-score-chart",
   },
@@ -131,7 +131,7 @@ export default function ASVABScoreChartPage() {
             65–92. IIIA = 50–64. IIIB = 31–49. IV = 10–30. V = 1–9
             (disqualified).{" "}
             <strong>2026 branch minimum AFQT (diploma):</strong> Army 31,
-            Marines 32, Navy 31, Air Force/Space Force 36, Coast Guard 32.
+            Marines 32, Navy 35, Air Force/Space Force 36, Coast Guard 32.
             GED applicants face higher floors (typically 50) plus per-branch
             quota caps. Line scores (Army 10 composites, Air Force MAGE,
             Navy rating combos, Marines GT/EL/MM/CL/ST) determine which

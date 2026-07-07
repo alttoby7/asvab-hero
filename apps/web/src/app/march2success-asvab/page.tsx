@@ -91,7 +91,7 @@ export default function March2SuccessAsvabPage() {
               name: "What AFQT score do I need to enlist?",
               acceptedAnswer: {
                 "@type": "Answer",
-                text: "Minimums for high school diploma holders are roughly: Army 31, Marines 32, Navy 31, Air Force and Space Force 36, and Coast Guard 32. GED holders usually need 50-plus.",
+                text: "Minimums for high school diploma holders are roughly: Army 31, Marines 32, Navy 35, Air Force and Space Force 36, and Coast Guard 32. GED holders usually need 50-plus.",
               },
             },
             {

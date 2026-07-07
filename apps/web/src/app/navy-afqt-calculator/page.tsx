@@ -10,7 +10,7 @@ import RelatedCalculators from "@/components/RelatedCalculators";
 export const metadata: Metadata = {
   title: "Navy AFQT Calculator 2026: Check the 31 Floor (35 to Ship)",
   description:
-    "Free Navy and Coast Guard AFQT calculator. Enter AR, WK, PC, MK to see if you meet the Navy 31 minimum (50 + 15 college credits with GED). Coast Guard requires 32.",
+    "Free Navy and Coast Guard AFQT calculator. Enter AR, WK, PC, MK to see if you meet the Navy 35 minimum (50 + 15 college credits with GED). Coast Guard requires 32.",
   alternates: {
     canonical: "https://asvabhero.com/navy-afqt-calculator",
   },
@@ -127,7 +127,7 @@ export default function NavyAfqtCalculatorPage() {
       <section className="mt-8">
         <EmailCapture
           headline="Get the 30-day Navy ASVAB study plan"
-          subhead="Free 6-page PDF tuned for the Navy 31 (or 50 + 15 credits GED) floor and Coast Guard 32, plus a 5-email crash course on AFQT and line scores."
+          subhead="Free 6-page PDF tuned for the Navy 35 (or 50 + 15 credits GED) floor and Coast Guard 32, plus a 5-email crash course on AFQT and line scores."
           cta="Email me the plan"
           tag="afqt-calculator-navy"
         />

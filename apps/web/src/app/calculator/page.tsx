@@ -163,6 +163,27 @@ export default function CalculatorPage() {
         </div>
       </section>
 
+      {/* Educator distribution note: the calculator is free to embed or link
+          with no account, turning counselor/JROTC/library traffic into
+          brand-named citations. */}
+      <aside className="mt-10 rounded-xl border border-accent/30 bg-navy-light px-5 py-4 text-sm leading-relaxed text-text-secondary">
+        Run a school counseling page, library guide, or JROTC site? You can{" "}
+        <Link
+          href="/embed"
+          className="font-semibold text-accent underline hover:text-accent-hover"
+        >
+          embed a free ASVAB calculator
+        </Link>{" "}
+        on your own page, or point students to our{" "}
+        <Link
+          href="/counselor-resources"
+          className="font-semibold text-accent underline hover:text-accent-hover"
+        >
+          source-cited counselor reference
+        </Link>
+        . No account, no cost.
+      </aside>
+
       <CalculatorExplore />
     </div>
   );

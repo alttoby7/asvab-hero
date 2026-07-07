@@ -16,29 +16,53 @@ export default function RelatedCalculators({
   currentHref: string;
 }) {
   const links = relatedLinksFor(currentHref);
-  if (links.length === 0) return null;
 
   return (
-    <section className="mt-12 rounded-2xl border border-navy-border bg-navy-light/40 p-6 sm:p-8">
-      <h2 className="font-display text-base font-bold text-text-primary">
-        Related calculators
-      </h2>
-      <div className="mt-4 grid gap-x-8 gap-y-4 sm:grid-cols-2">
-        {links.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className="group block no-underline"
-          >
-            <span className="text-sm font-semibold text-accent transition-colors group-hover:text-accent-hover">
-              {link.label} &rarr;
-            </span>
-            <span className="mt-0.5 block text-sm leading-relaxed text-text-secondary">
-              {link.blurb}
-            </span>
-          </Link>
-        ))}
-      </div>
-    </section>
+    <>
+      {links.length > 0 && (
+        <section className="mt-12 rounded-2xl border border-navy-border bg-navy-light/40 p-6 sm:p-8">
+          <h2 className="font-display text-base font-bold text-text-primary">
+            Related calculators
+          </h2>
+          <div className="mt-4 grid gap-x-8 gap-y-4 sm:grid-cols-2">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="group block no-underline"
+              >
+                <span className="text-sm font-semibold text-accent transition-colors group-hover:text-accent-hover">
+                  {link.label} &rarr;
+                </span>
+                <span className="mt-0.5 block text-sm leading-relaxed text-text-secondary">
+                  {link.blurb}
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Educator distribution note: every calculator is free to embed or link,
+          with no account. Turns counselor/JROTC/library traffic into brand-named
+          citations. See /embed and /counselor-resources. */}
+      <aside className="mt-6 rounded-xl border border-navy-border bg-navy-light/30 px-5 py-4 text-sm leading-relaxed text-text-secondary">
+        Counselor, librarian, or JROTC instructor?{" "}
+        <Link
+          href="/embed"
+          className="font-semibold text-accent underline hover:text-accent-hover"
+        >
+          Embed this calculator free
+        </Link>{" "}
+        on your page, or use the{" "}
+        <Link
+          href="/counselor-resources"
+          className="font-semibold text-accent underline hover:text-accent-hover"
+        >
+          counselor reference
+        </Link>
+        . No account required.
+      </aside>
+    </>
   );
 }
