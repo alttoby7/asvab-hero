@@ -14,9 +14,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
-  title: "Air Force ASVAB Job Calculator: AFSC & MAGE Scores",
+  title: "Free Air Force ASVAB Job Calculator (2026): AFSC & MAGE Scores",
   description:
-    "Air Force ASVAB job calculator: enter your subtest scores to see every AFSC (Air Force job) you qualify for, plus all 4 MAGE composites and your AFQT.",
+    "Free Air Force ASVAB job calculator: enter your subtest scores to see every AFSC you qualify for, all 4 MAGE composites, and your AFQT percentile. Updated 2026.",
   alternates: {
     canonical: "https://asvabhero.com/air-force-asvab-calculator",
   },
