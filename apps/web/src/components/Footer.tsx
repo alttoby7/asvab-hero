@@ -163,6 +163,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/classroom"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Free classroom kit
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/counselor-resources"
                   className="text-sm text-text-tertiary hover:text-text-primary no-underline"
                 >
