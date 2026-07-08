@@ -102,9 +102,9 @@ const HOME_SCHEMA = {
 };
 
 export const metadata: Metadata = {
-  title: "ASVAB Calculator 2026: AFQT, GT & Line Scores (All Branches)",
+  title: "Free ASVAB Score Calculator 2026: AFQT, GT & Line Scores (All Branches)",
   description:
-    "Free ASVAB calculator for Army, Navy, Air Force, Marines, Coast Guard & Space Force. Get your AFQT percentile, GT score, and line scores instantly, see every job you qualify for.",
+    "Free ASVAB score calculator for Army, Navy, Air Force, Marines, Coast Guard & Space Force. Get your AFQT percentile, GT score, and line scores instantly — see every job you qualify for.",
   alternates: {
     canonical: "https://asvabhero.com",
   },
@@ -118,7 +118,7 @@ export default function HomePage() {
       <JsonLd data={HOME_SCHEMA} />
       <JsonLd data={HOME_FAQ_SCHEMA} />
 
-      {/* ────────────────────────────────────────────────────────────────────
+      {/* ───────────────────────────────────────────────────────────────────
          HERO, calculator-led. The homepage ranks for "asvab calculator" intent,
          so the primary action is the calculator (the tool the visitor came for);
          the diagnostic is the secondary path for "no scores yet". H1 + metadata
@@ -204,7 +204,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ────────────────────────────────────────────────────────────────────
+      {/* ───────────────────────────────────────────────────────────────────
          CLOSE THE GAP + FREE PLAN, the single primary conversion. Merges the
          pain band with the animated Gap-to-Goal Rail so the promise and its proof
          sit together, ending on ONE ask: start the free plan.
@@ -286,7 +286,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ────────────────────────────────────────────────────────────────────
+      {/* ───────────────────────────────────────────────────────────────────
          PROOF STACK, one credibility section: the evidence (learning science),
          the bank numbers, and social proof. Earns the signup ask above.
       ──────────────────────────────────────────────────────────────────── */}
@@ -339,7 +339,7 @@ export default function HomePage() {
 
       <TestimonialWall />
 
-      {/* ────────────────────────────────────────────────────────────────────
+      {/* ───────────────────────────────────────────────────────────────────
          FREE VS PRO, compact explainer. The action stays the free plan; Pro is a
          quiet "when you're ready" with a small compare-plans link, not a pitch.
       ──────────────────────────────────────────────────────────────────── */}
@@ -425,7 +425,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ────────────────────────────────────────────────────────────────────
+      {/* ───────────────────────────────────────────────────────────────────
          BROWSE, the product pillars + the calculator-cluster SEO links, placed
          AFTER the conversion story so internal links help ranking without
          competing with the primary CTA.
@@ -544,7 +544,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ────────────────────────────────────────────────────────────────────
+      {/* ───────────────────────────────────────────────────────────────────
          ASVAB QUICK REFERENCE, structured Q&A blocks for AEO/GEO citation.
          Placed after the conversion story so AI-extractable answers live on the
          highest-authority page without competing with primary CTAs.
