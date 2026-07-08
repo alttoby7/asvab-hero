@@ -5,7 +5,7 @@
 //   customer.subscription.deleted, customer.subscription.trial_will_end
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
-import { verifyStripeSignature, stripeRequest } from "../_shared/stripe.ts";
+import { verifyStripeSignature, stripeRequest, invoiceSubscriptionId } from "../_shared/stripe.ts";
 import { SUBTEST_CODES, SUBTEST_NAMES, isSubtestCode, type SubtestCode } from "../_shared/subtests.ts";
 import { initSentry, captureException, captureMessage } from "../_shared/sentry.ts";
 
@@ -179,6 +179,10 @@ const updateProfileFromSubscription = async (
 
   const update: Record<string, unknown> = {
     billing_status: billingStatus,
+    // Raw Stripe status for segmentation ONLY (trialing/active/past_due/…).
+    // billing_status above maps trialing->active for Pro gating; never gate on
+    // stripe_sub_status. See migration 0053.
+    stripe_sub_status: sub.status ?? null,
     pro_tier: tier,
     pro_until: proUntil,
     stripe_subscription_id: sub.id,
@@ -1465,7 +1469,9 @@ Deno.serve(async (req) => {
         break;
       }
       case "invoice.paid": {
-        const subscriptionId = obj.subscription as string | undefined;
+        // Basil (2025-03-31) moved the sub ref off the invoice top-level; resolve
+        // across API versions or the whole handler silently no-ops. See helper.
+        const subscriptionId = invoiceSubscriptionId(obj);
         const billingReason = obj.billing_reason as string | undefined;
         const invoiceId = (obj.id as string | undefined) ?? null;
         const invoiceCustomerEmail =
@@ -1527,7 +1533,8 @@ Deno.serve(async (req) => {
       }
       case "invoice.payment_failed": {
         const invoiceId = (obj.id as string | undefined) ?? null;
-        const subscriptionId = (obj.subscription as string | undefined) ?? null;
+        // Basil-safe: sub ref may live under parent.subscription_details.
+        const subscriptionId = invoiceSubscriptionId(obj) ?? null;
         const customerId = (obj.customer as string | undefined) ?? null;
         const customerEmail =
           (obj.customer_email as string | undefined) ??
