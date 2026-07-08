@@ -346,7 +346,7 @@ ${statsLine}
 
 <p>If you want one simple next step, go here and start your next practice set: <a href="https://asvabhero.com/practice">asvabhero.com/practice</a></p>
 
-<p>I am glad you are here. You are not just trying ASVAB Hero anymore. You are in it now.</p>
+<p>Glad you're here. You've got full access now, so keep the momentum going and go get the score you need.</p>
 
 <p>Trish<br>ASVAB Hero</p>
 `;
@@ -362,8 +362,8 @@ const renderPaymentFailed = (
   nextAttemptISO: string | null,
 ): string => {
   const opening = attemptCount && attemptCount >= 2
-    ? `<p>Your ASVAB Hero renewal still hasn't gone through — latest attempt was charge ${attemptCount}.</p>`
-    : `<p>Your ASVAB Hero renewal just didn't go through — most likely an expired card or a temporary hold from your bank.</p>`;
+    ? `<p>Your ASVAB Hero renewal still hasn't gone through. The latest attempt was charge ${attemptCount}.</p>`
+    : `<p>Your ASVAB Hero renewal just didn't go through. It's most likely an expired card or a temporary hold from your bank.</p>`;
 
   const nextLine = nextAttemptISO
     ? `<p>Stripe will retry on ${new Date(nextAttemptISO).toLocaleDateString("en-US", { month: "long", day: "numeric" })}, but the easier path is to update your card now.</p>`
@@ -378,7 +378,7 @@ ${nextLine}
 
 <p>Fix it in one click here: <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a> opens the Stripe customer portal where you can update or replace the card on file.</p>
 
-<p>If the card on file is the right one and you still got this, it might be a hold from your bank — call the number on the back of the card and ask them to clear ASVAB Hero. Then update the card in the link above and we'll retry.</p>
+<p>If the card on file is the right one and you still got this, it might be a hold from your bank. Call the number on the back of the card and ask them to clear ASVAB Hero, then update the card in the link above and we'll retry.</p>
 
 <p>Reply if you need help. I read every reply.</p>
 

@@ -65,21 +65,21 @@ function emailFor(
   switch (key) {
     case "t_minus_30":
       return {
-        subject: "30 days to your ASVAB — here's the plan",
+        subject: "30 days to your ASVAB: here's the plan",
         html: wrap(
           `<p>${hi}</p><p><strong>Your ASVAB is about a month out.</strong> The highest-leverage month is steady reps on your weakest subtests, not cramming everything.</p><p>Your plan already sequences what to do each day. Five focused sessions a week from here moves the needle the most.</p>${cta("/app/plan", "Open your plan")}`,
         ),
       };
     case "t_minus_14":
       return {
-        subject: "2 weeks out — tighten your score",
+        subject: "2 weeks out: tighten your score",
         html: wrap(
-          `<p>${hi}</p><p><strong>Two weeks to go.</strong> Take a fresh diagnostic — it updates your AFQT band and shows whether your weak areas are actually moving.</p><p>Then spend your reps where the gap to your goal is biggest.</p>${cta("/app/practice", "Take a diagnostic")}`,
+          `<p>${hi}</p><p><strong>Two weeks to go.</strong> Take a fresh diagnostic. It updates your AFQT band and shows whether your weak areas are actually moving.</p><p>Then spend your reps where the gap to your goal is biggest.</p>${cta("/app/practice", "Take a diagnostic")}`,
         ),
       };
     case "t_minus_7":
       return {
-        subject: "1 week to test day — final stretch",
+        subject: "1 week to test day: the final stretch",
         html: wrap(
           `<p>${hi}</p><p><strong>One week out.</strong> This is review week, not new-material week: clear your mistake bank, do light daily reps, and protect your sleep.</p><p>Retrieving missed questions one more time is what makes them stick on test day.</p>${cta("/app/mistakes", "Review your mistakes")}`,
         ),
@@ -88,14 +88,14 @@ function emailFor(
       return {
         subject: "Tomorrow's the day",
         html: wrap(
-          `<p>${hi}</p><p><strong>Your ASVAB is tomorrow.</strong> Bring a valid photo ID, arrive early, and eat something real beforehand.</p><p>No heavy studying tonight — a clear, rested head scores better than a tired crammed one. You've put in the work.</p>${cta("/app/plan", "Last-night checklist")}`,
+          `<p>${hi}</p><p><strong>Your ASVAB is tomorrow.</strong> Bring a valid photo ID, arrive early, and eat something real beforehand.</p><p>No heavy studying tonight. A clear, rested head scores better than a tired, crammed one. You've put in the work.</p>${cta("/app/plan", "Last-night checklist")}`,
         ),
       };
     case "t_plus_1":
       return {
         subject: "How'd the ASVAB go? Log your scores",
         html: wrap(
-          `<p>${hi}</p><p><strong>If you tested, log your official scores.</strong> It anchors your progress to a real result — and if you're planning a retake, we'll time it and target the subtests that move your line scores most.</p>${cta("/app/home", "Log your scores")}`,
+          `<p>${hi}</p><p><strong>If you tested, log your official scores.</strong> It anchors your progress to a real result, and if you're planning a retake, we'll time it and target the subtests that move your line scores most.</p>${cta("/app/home", "Log your scores")}`,
         ),
       };
     case "t_plus_7":
