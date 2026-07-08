@@ -51,7 +51,7 @@ function reminderHtml(name: string | null): string {
   <div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:520px;margin:0 auto;color:#0a1628">
     <p>${hi}</p>
     <p><strong>A quick review is ready when you are.</strong></p>
-    <p>A few of the questions you've missed are due to come back — and re-answering
+    <p>A few of the questions you've missed are due to come back, and re-answering
     them from memory is the single highest-evidence thing you can do for test day.
     This is a 10-minute rep, not a backlog to clear.</p>
     <p><strong>Try this:</strong> right after you sit down tonight, do one short review block. That's it.</p>

@@ -5,7 +5,7 @@
 //   customer.subscription.deleted, customer.subscription.trial_will_end
 
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
-import { verifyStripeSignature, stripeRequest } from "../_shared/stripe.ts";
+import { verifyStripeSignature, stripeRequest, invoiceSubscriptionId } from "../_shared/stripe.ts";
 import { SUBTEST_CODES, SUBTEST_NAMES, isSubtestCode, type SubtestCode } from "../_shared/subtests.ts";
 import { initSentry, captureException, captureMessage } from "../_shared/sentry.ts";
 
@@ -179,6 +179,10 @@ const updateProfileFromSubscription = async (
 
   const update: Record<string, unknown> = {
     billing_status: billingStatus,
+    // Raw Stripe status for segmentation ONLY (trialing/active/past_due/…).
+    // billing_status above maps trialing->active for Pro gating; never gate on
+    // stripe_sub_status. See migration 0053.
+    stripe_sub_status: sub.status ?? null,
     pro_tier: tier,
     pro_until: proUntil,
     stripe_subscription_id: sub.id,
@@ -342,7 +346,7 @@ ${statsLine}
 
 <p>If you want one simple next step, go here and start your next practice set: <a href="https://asvabhero.com/practice">asvabhero.com/practice</a></p>
 
-<p>I am glad you are here. You are not just trying ASVAB Hero anymore. You are in it now.</p>
+<p>Glad you're here. You've got full access now, so keep the momentum going and go get the score you need.</p>
 
 <p>Trish<br>ASVAB Hero</p>
 `;
@@ -358,8 +362,8 @@ const renderPaymentFailed = (
   nextAttemptISO: string | null,
 ): string => {
   const opening = attemptCount && attemptCount >= 2
-    ? `<p>Your ASVAB Hero renewal still hasn't gone through — latest attempt was charge ${attemptCount}.</p>`
-    : `<p>Your ASVAB Hero renewal just didn't go through — most likely an expired card or a temporary hold from your bank.</p>`;
+    ? `<p>Your ASVAB Hero renewal still hasn't gone through. The latest attempt was charge ${attemptCount}.</p>`
+    : `<p>Your ASVAB Hero renewal just didn't go through. It's most likely an expired card or a temporary hold from your bank.</p>`;
 
   const nextLine = nextAttemptISO
     ? `<p>Stripe will retry on ${new Date(nextAttemptISO).toLocaleDateString("en-US", { month: "long", day: "numeric" })}, but the easier path is to update your card now.</p>`
@@ -374,7 +378,7 @@ ${nextLine}
 
 <p>Fix it in one click here: <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a> opens the Stripe customer portal where you can update or replace the card on file.</p>
 
-<p>If the card on file is the right one and you still got this, it might be a hold from your bank — call the number on the back of the card and ask them to clear ASVAB Hero. Then update the card in the link above and we'll retry.</p>
+<p>If the card on file is the right one and you still got this, it might be a hold from your bank. Call the number on the back of the card and ask them to clear ASVAB Hero, then update the card in the link above and we'll retry.</p>
 
 <p>Reply if you need help. I read every reply.</p>
 
@@ -1465,7 +1469,9 @@ Deno.serve(async (req) => {
         break;
       }
       case "invoice.paid": {
-        const subscriptionId = obj.subscription as string | undefined;
+        // Basil (2025-03-31) moved the sub ref off the invoice top-level; resolve
+        // across API versions or the whole handler silently no-ops. See helper.
+        const subscriptionId = invoiceSubscriptionId(obj);
         const billingReason = obj.billing_reason as string | undefined;
         const invoiceId = (obj.id as string | undefined) ?? null;
         const invoiceCustomerEmail =
@@ -1527,7 +1533,8 @@ Deno.serve(async (req) => {
       }
       case "invoice.payment_failed": {
         const invoiceId = (obj.id as string | undefined) ?? null;
-        const subscriptionId = (obj.subscription as string | undefined) ?? null;
+        // Basil-safe: sub ref may live under parent.subscription_details.
+        const subscriptionId = invoiceSubscriptionId(obj) ?? null;
         const customerId = (obj.customer as string | undefined) ?? null;
         const customerEmail =
           (obj.customer_email as string | undefined) ??

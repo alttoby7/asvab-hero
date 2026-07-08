@@ -53,6 +53,35 @@ export const stripeRequest = async <T = unknown>(
   return json as T;
 };
 
+// Resolve the subscription id from a Stripe **Invoice** event object across API
+// versions. Stripe's 2025-03-31.basil release removed the top-level
+// `invoice.subscription` field and relocated the reference under
+// `invoice.parent.subscription_details.subscription` (and per line item under
+// `lines.data[].parent.subscription_item_details.subscription`). Reading only
+// the deprecated top-level field silently returns undefined on Basil-rendered
+// events, which skips the entire invoice.paid handler (trial-converted email,
+// dunning-recovery marking, CAPI). Check every known shape.
+export const invoiceSubscriptionId = (inv: Record<string, unknown>): string | undefined => {
+  const asId = (v: unknown): string | undefined => {
+    if (typeof v === "string" && v) return v;
+    if (v && typeof v === "object" && typeof (v as { id?: unknown }).id === "string") {
+      return (v as { id: string }).id;
+    }
+    return undefined;
+  };
+  const parent = inv.parent as
+    | { subscription_details?: { subscription?: unknown } }
+    | undefined;
+  const lines = (inv.lines as
+    | { data?: Array<{ parent?: { subscription_item_details?: { subscription?: unknown } } }> }
+    | undefined)?.data;
+  return (
+    asId(inv.subscription) ??
+    asId(parent?.subscription_details?.subscription) ??
+    asId(lines?.[0]?.parent?.subscription_item_details?.subscription)
+  );
+};
+
 // Stripe webhook signature verification (Deno-native, no SDK)
 // Implements the same algorithm as `stripe.webhooks.constructEvent`.
 export const verifyStripeSignature = async (
