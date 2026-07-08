@@ -17,6 +17,7 @@ const pages = [
   { path: "/the-science", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-scores-explained", priority: "0.8", changefreq: "monthly" },
   { path: "/asvab-study-guide", priority: "0.8", changefreq: "monthly" },
+  { path: "/hardest-asvab-topics", priority: "0.8", changefreq: "monthly" },
   { path: "/air-force-ranks", priority: "0.9", changefreq: "monthly" },
   { path: "/army-ranks", priority: "0.9", changefreq: "monthly" },
   { path: "/navy-ranks", priority: "0.9", changefreq: "monthly" },

@@ -83,6 +83,14 @@ export default function Footer() {
               </li>
               <li>
                 <Link
+                  href="/hardest-asvab-topics"
+                  className="text-sm text-text-tertiary hover:text-text-primary no-underline"
+                >
+                  Hardest ASVAB Topics
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/pricing"
                   className="text-sm text-text-tertiary hover:text-text-primary no-underline"
                 >
