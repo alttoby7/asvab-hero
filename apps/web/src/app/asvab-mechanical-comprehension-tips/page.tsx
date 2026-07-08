@@ -943,6 +943,18 @@ export default function ASVABMechanicalComprehensionTipsPage() {
           links={mcGuides}
         />
 
+        <p className="mt-8 text-sm leading-relaxed text-text-secondary">
+          Mechanical Comprehension is one of the hardest ASVAB subtests. Our{" "}
+          <Link
+            href="/hardest-asvab-topics"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            data on 12,000+ practice answers
+          </Link>{" "}
+          shows gears, pulleys, and projectile-motion questions are among the
+          most-missed on the test, so focused reps here move your score fast.
+        </p>
+
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">
           <h3 className="font-display text-xl font-bold text-text-primary">
             See What Your Scores Unlock

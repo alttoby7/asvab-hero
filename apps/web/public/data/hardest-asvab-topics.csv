@@ -1,0 +1,23 @@
+level,name,subtest,pct_correct,answers
+overall,"All questions",,59.1,12368
+subtest,"Assembling Objects",AO,43.8,794
+subtest,"Mechanical Comprehension",MC,45.6,814
+subtest,"Electronics Information",EI,47.4,887
+subtest,"Mathematics Knowledge",MK,55.0,2022
+subtest,"General Science",GS,57.6,1423
+subtest,"Arithmetic Reasoning",AR,58.2,2253
+subtest,"Auto & Shop Information",AS,63.9,742
+subtest,"Word Knowledge",WK,70.1,2077
+subtest,"Paragraph Comprehension",PC,73.5,1356
+topic,"3-D Object Visualization",AO,35.4,263
+topic,"Gears, Wheels & Axles",MC,41.5,142
+topic,"Forces, Friction & Pressure",MC,42.0,150
+topic,"Geometry: Area, Perimeter & Volume",MK,45.4,425
+topic,"Ohm's Law & Power",EI,45.7,267
+topic,"Series & Parallel Circuits",EI,46.9,177
+topic,"Levers & Pulleys",MC,47.0,132
+topic,"Electrical Components & Devices",EI,47.5,217
+topic,"Inclined Planes & Hydraulics",MC,47.5,183
+topic,"Motion & Projectile Physics",MC,48.3,207
+topic,"Spatial Counting & Orientation",AO,48.5,295
+topic,"Conductors, Insulators & Materials",EI,49.6,226

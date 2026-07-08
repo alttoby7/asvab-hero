@@ -1019,6 +1019,18 @@ export default function ASVABElectronicsInformationTipsPage() {
           links={eiGuides}
         />
 
+        <p className="mt-8 text-sm leading-relaxed text-text-secondary">
+          Electronics is one of the hardest ASVAB subtests. In our{" "}
+          <Link
+            href="/hardest-asvab-topics"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            analysis of 12,000+ practice answers
+          </Link>
+          , EI topics like Ohm&apos;s Law and circuits are among the most-missed
+          on the entire test, which is exactly why a little prep here pays off.
+        </p>
+
         {/* CTA Box */}
         <div className="mt-12 rounded-2xl border border-navy-border bg-navy-light p-6 text-center">
           <h3 className="font-display text-xl font-bold text-text-primary">

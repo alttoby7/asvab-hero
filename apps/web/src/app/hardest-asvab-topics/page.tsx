@@ -54,6 +54,14 @@ const HARD_TOPICS: {
 
 const FAQ: { q: string; a: string }[] = [
   {
+    q: "Is the ASVAB hard?",
+    a: "It depends on the section. Across 12,368 practice answers, test-takers averaged 59 percent correct. Reading and vocabulary are the easiest (70 to 74 percent correct), while the spatial and technical sections (Assembling Objects, Mechanical Comprehension, and Electronics Information) are the hardest at 44 to 47 percent. The four AFQT sections that decide enlistment eligibility sit in the easier half, so the parts that matter most for joining are not the hardest ones.",
+  },
+  {
+    q: "What is the hardest section of the ASVAB?",
+    a: "Assembling Objects, at 43.8 percent correct in our data, is the hardest section, followed by Mechanical Comprehension (45.6 percent) and Electronics Information (47.4 percent). If you mean the single hardest topic, it is 3-D object visualization at 35.4 percent correct.",
+  },
+  {
     q: "What is the hardest ASVAB subtest?",
     a: "In our data, Assembling Objects is the hardest, with test-takers answering only 43.8 percent of practice questions correctly, followed by Mechanical Comprehension (45.6 percent) and Electronics Information (47.4 percent). The technical and spatial subtests are consistently harder than the reading and vocabulary ones.",
   },
@@ -107,6 +115,13 @@ export default function HardestAsvabTopicsPage() {
     variableMeasured: ["percent correct by subtest", "percent correct by topic"],
     url: "https://asvabhero.com/hardest-asvab-topics",
     isAccessibleForFree: true,
+    distribution: [
+      {
+        "@type": "DataDownload",
+        encodingFormat: "text/csv",
+        contentUrl: "https://asvabhero.com/data/hardest-asvab-topics.csv",
+      },
+    ],
   };
   const articleLd = {
     "@context": "https://schema.org",
@@ -179,6 +194,28 @@ export default function HardestAsvabTopicsPage() {
           </li>
         </ul>
       </div>
+
+      {/* Screenshot-friendly key numbers */}
+      <section className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+        {[
+          ["12,368", "practice answers analyzed"],
+          ["59%", "answered correctly overall"],
+          ["43.8%", "correct on the hardest subtest (AO)"],
+          ["73.5%", "correct on the easiest (PC)"],
+        ].map(([big, small]) => (
+          <div
+            key={small}
+            className="rounded-xl border border-navy-border bg-navy-light/40 p-4 text-center"
+          >
+            <div className="font-display text-2xl font-bold text-accent">
+              {big}
+            </div>
+            <div className="mt-1 text-xs leading-tight text-text-tertiary">
+              {small}
+            </div>
+          </div>
+        ))}
+      </section>
 
       {/* Subtest difficulty chart */}
       <section className="mt-12">
@@ -335,6 +372,34 @@ export default function HardestAsvabTopicsPage() {
         </p>
       </section>
 
+      {/* Trap answers at the question level */}
+      <section className="mt-12 space-y-4 text-text-secondary leading-relaxed">
+        <h2 className="font-display text-xl font-bold text-text-primary">
+          The traps: where wrong answers cluster
+        </h2>
+        <p>
+          Averages hide the most interesting part. On the hardest questions,
+          people do not miss at random. They get pulled toward one specific wrong
+          answer, which is the signature of a well-built trap and exactly what
+          practice trains you to spot.
+        </p>
+        <p>
+          On the single most-trapped 3-D object visualization question we track,
+          26 people attempted it: only 10 got it right, and 10 others all chose
+          the same wrong option. A test-taker was as likely to fall for one
+          specific trap as to answer correctly. On a projectile-motion question,
+          20 people scored just 25 percent correct, no better than guessing on a
+          four-choice question, with the plurality landing on the same wrong
+          answer.
+        </p>
+        <p className="text-sm text-text-tertiary">
+          Per-question samples are still small (roughly 20 to 30 answers each),
+          so treat these as illustrative rather than precise. As the question
+          bank accumulates more answers, we will publish the full list of the
+          most-missed individual questions and the traps behind them.
+        </p>
+      </section>
+
       {/* CTA */}
       <section className="mt-12 rounded-2xl border border-accent/30 bg-navy-light p-6 sm:p-8">
         <h2 className="font-display text-lg font-bold text-text-primary">
@@ -390,6 +455,17 @@ export default function HardestAsvabTopicsPage() {
             individual questions accumulate more answers, we will publish the
             hardest specific questions, not just topics. This page updates as the
             sample grows.
+          </li>
+          <li>
+            <strong className="text-text-primary">Download:</strong> the
+            aggregated subtest and topic data is available as a{" "}
+            <a
+              href="/data/hardest-asvab-topics.csv"
+              className="text-accent underline hover:text-accent-hover"
+            >
+              CSV file
+            </a>
+            .
           </li>
         </ul>
       </section>
