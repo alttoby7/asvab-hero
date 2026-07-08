@@ -4,24 +4,24 @@ import JsonLd from "@/components/JsonLd";
 import ClassroomKit from "@/components/ClassroomKit";
 
 export const metadata: Metadata = {
-  title: "Free ASVAB Practice for Your Classroom: Link + Printable Handout",
+  title: "ASVAB Practice for Your Classroom: Link + Printable Handout",
   description:
-    "Counselors, teachers, and JROTC instructors: give your whole class a free ASVAB practice test with one link and a printable handout. No accounts, no student data, no cost.",
+    "Counselors, teachers, and JROTC instructors: give your whole class the ASVAB practice test with one link and a printable handout. No account needed to start, and no student data collected.",
   alternates: { canonical: "https://asvabhero.com/classroom" },
 };
 
 const FAQ = [
   {
-    q: "Is it really free for a whole class?",
-    a: "Yes. The practice test, calculators, and study guides are free with no signup wall, so you can share them with an entire class at no cost. There is no per-student charge and no account is required to use the core tools.",
+    q: "Does it cost anything for my class to start?",
+    a: "Students can start the practice test and use the calculators without an account or a card. Full Pro (adaptive practice and progress tracking) is a paid upgrade, and whole programs can buy a Program License, so a class can get started right away and add Pro later if they want it.",
   },
   {
     q: "Do my students have to create accounts or give any personal data?",
-    a: "No. Students open the link and start practicing. No email, no sign up, and no roster or student records are collected. An optional free account only exists if a student chooses to save their own progress.",
+    a: "No. Students open the link and start practicing. No email, no sign up, and no roster or student records are collected. An optional account only exists if a student chooses to save their own progress.",
   },
   {
     q: "How is this different from the paid Program License?",
-    a: "This free classroom kit is a share-a-link-and-print handout for casual class use. The paid Program License adds full Pro for every cadet (adaptive practice that targets weak areas), a plan paced to your test date, and a weekly cohort report so you can see who is on track. Start free here and upgrade if you want score tracking and Pro.",
+    a: "This classroom kit is a share-a-link-and-print handout for casual class use. The paid Program License adds full Pro for every cadet (adaptive practice that targets weak areas), a plan paced to your test date, and a weekly cohort report so you can see who is on track. Start with the kit and upgrade if you want score tracking and Pro.",
   },
   {
     q: "Can I put ASVAB Hero on our school or library website?",
@@ -35,8 +35,8 @@ const STEPS: [string, string][] = [
     "Post asvabhero.com/practice-test in your LMS or class page, or print the handout and pass it out.",
   ],
   [
-    "2. Students practice free",
-    "They open it on any device and start. No sign up, no email, no cost.",
+    "2. Students start practicing",
+    "They open it on any device and begin. No account and no email needed to start.",
   ],
   [
     "3. They see what to study",
@@ -48,7 +48,7 @@ const MORE: [string, string, string][] = [
   [
     "/counselor-resources",
     "ASVAB counselor reference",
-    "A source-cited overview of the ASVAB for advisors, plus free tools to link.",
+    "A source-cited overview of the ASVAB for advisors, plus tools you can link.",
   ],
   [
     "/embed",
@@ -57,13 +57,13 @@ const MORE: [string, string, string][] = [
   ],
   [
     "/practice-test",
-    "Free practice test",
+    "Practice test",
     "The test your students will use. Diagnostic plus per-subtest drills, no account.",
   ],
   [
     "/asvab-study-guide",
-    "Free study guides",
-    "Guides for every ASVAB subtest, free to share with students.",
+    "Study guides",
+    "Guides for every ASVAB subtest to share with students.",
   ],
 ];
 
@@ -83,16 +83,16 @@ export default function ClassroomPage() {
       />
 
       <p className="font-mono text-xs uppercase tracking-[0.2em] text-text-tertiary">
-        Free for educators
+        For educators
       </p>
       <h1 className="mt-4 font-display text-3xl font-bold text-text-primary sm:text-4xl">
-        Give your class a free ASVAB practice test
+        Give your class the ASVAB practice test
       </h1>
       <p className="mt-4 text-text-secondary leading-relaxed">
         Counselors, teachers, and JROTC instructors: share one link and hand out
-        a printable sheet, and your whole class can practice the ASVAB for free.
-        No accounts, no student data, no cost. ASVAB Hero is not affiliated with
-        the U.S. Department of Defense.
+        a printable sheet, and your whole class can start practicing the ASVAB.
+        No account needed to begin, and no student data collected. ASVAB Hero is
+        not affiliated with the U.S. Department of Defense.
       </p>
 
       <section className="mt-12">
@@ -135,9 +135,9 @@ export default function ClassroomPage() {
           Want score tracking for your program?
         </h2>
         <p className="mt-2 text-text-secondary leading-relaxed">
-          The free kit is great for casual class use. If you run a JROTC program
-          with a test date and want full Pro for every cadet, adaptive practice,
-          and a weekly report showing who is on track, look at the{" "}
+          The kit is great for casual class use. If you run a JROTC program with
+          a test date and want full Pro for every cadet, adaptive practice, and a
+          weekly report showing who is on track, look at the{" "}
           <Link
             href="/programs"
             className="font-semibold text-accent underline hover:text-accent-hover"
@@ -150,7 +150,7 @@ export default function ClassroomPage() {
 
       <section className="mt-12">
         <h2 className="font-display text-xl font-bold text-text-primary">
-          More free ways to use ASVAB Hero
+          More ways to use ASVAB Hero
         </h2>
         <div className="mt-4 grid gap-x-8 gap-y-4 sm:grid-cols-2">
           {MORE.map(([href, label, blurb]) => (

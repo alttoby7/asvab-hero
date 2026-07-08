@@ -181,7 +181,7 @@ export default function CalculatorPage() {
         >
           source-cited counselor reference
         </Link>
-        . No account, no cost.
+        . No account required.
       </aside>
 
       <CalculatorExplore />

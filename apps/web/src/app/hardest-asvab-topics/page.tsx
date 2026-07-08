@@ -257,7 +257,7 @@ export default function HardestAsvabTopicsPage() {
         <p className="mt-2 text-text-secondary leading-relaxed">
           Zooming in below the subtest level, these are the specific topics with
           the lowest correct rates (topics with at least 60 answers). Each links
-          to a free study guide. Mechanical, electronics, and spatial topics
+          to a study guide. Mechanical, electronics, and spatial topics
           dominate the list.
         </p>
         <div className="mt-5 overflow-x-auto">
@@ -407,12 +407,12 @@ export default function HardestAsvabTopicsPage() {
         </h2>
         <p className="mt-2 text-text-secondary leading-relaxed">
           Averages are a starting point, but your weak topics are your own. Take
-          a{" "}
+          an{" "}
           <Link
             href="/practice-test"
             className="font-semibold text-accent underline hover:text-accent-hover"
           >
-            free ASVAB practice test
+            ASVAB practice test
           </Link>{" "}
           to see exactly where you stand by topic, then use the{" "}
           <Link

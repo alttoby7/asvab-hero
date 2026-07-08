@@ -15,7 +15,7 @@ import { trackEvent } from "@/lib/analytics";
  */
 
 const STUDENT_URL = "https://asvabhero.com/practice-test";
-const LINK_SNIPPET = `<a href="${STUDENT_URL}">Free ASVAB practice test by ASVAB Hero</a>`;
+const LINK_SNIPPET = `<a href="${STUDENT_URL}">ASVAB practice test by ASVAB Hero</a>`;
 
 function escapeHtml(s: string): string {
   return s
@@ -73,15 +73,15 @@ export default function ClassroomKit() {
       `<h1>${escapeHtml(title)}</h1>` +
       (meta
         ? `<p class="sub">${meta}</p>`
-        : `<p class="sub">Free ASVAB practice, no account needed</p>`) +
-      `<div class="card"><p class="label">Go to this free practice test</p>` +
+        : `<p class="sub">ASVAB practice, no account needed</p>`) +
+      `<div class="card"><p class="label">Go to this practice test</p>` +
       `<p class="url">asvabhero.com/practice-test</p></div>` +
       `<ol>` +
       `<li>Open the link on any phone, tablet, or computer.</li>` +
-      `<li>Take the free practice test. No sign up, no email, no cost.</li>` +
+      `<li>Take the practice test. No account or email needed to start.</li>` +
       `<li>Read every answer explanation to see what to study next.</li>` +
       `</ol>` +
-      `<p class="foot">Provided free by ASVAB Hero. Not affiliated with the U.S. Department of Defense.</p>` +
+      `<p class="foot">From ASVAB Hero. Not affiliated with the U.S. Department of Defense.</p>` +
       `</div><script>window.onload=function(){window.print();}</script></body></html>`;
 
     const w = window.open("", "_blank", "width=820,height=900");
@@ -164,8 +164,8 @@ export default function ClassroomKit() {
       </div>
       <p className="mt-3 text-xs leading-relaxed text-text-tertiary">
         The handout prints your class name and the practice-test link with simple
-        steps. The website link is a ready-to-paste HTML snippet. Everything is
-        free and needs no account.
+        steps. The website link is a ready-to-paste HTML snippet. The practice
+        test needs no account to start.
       </p>
     </div>
   );

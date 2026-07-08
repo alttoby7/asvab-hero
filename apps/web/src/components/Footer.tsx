@@ -174,7 +174,7 @@ export default function Footer() {
                   href="/classroom"
                   className="text-sm text-text-tertiary hover:text-text-primary no-underline"
                 >
-                  Free classroom kit
+                  Classroom kit
                 </Link>
               </li>
               <li>
