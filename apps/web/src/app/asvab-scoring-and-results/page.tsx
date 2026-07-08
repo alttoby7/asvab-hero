@@ -120,7 +120,7 @@ export default function ASVABScoringAndResultsPage() {
       <JsonLd data={faqJsonLd} />
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
-          How to Calculate Your ASVAB Score: AFQT Formula, VE Double-Count, Results
+          How to Calculate Your ASVAB Score: AFQT Formula, VE Double-Count & Results Timeline
         </h1>
 
         <VerifiedBlock
