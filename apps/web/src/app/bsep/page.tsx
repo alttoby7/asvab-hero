@@ -4,9 +4,9 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
-    "BSEP: Army's Free GT Score Improvement Program (2026 Guide)",
+    "What Is BSEP? Army's Free GT Score Improvement Program (2026)",
   description:
-    "Learn how BSEP raises your GT score by 19-23 points on average. Eligibility tiers, enrollment steps, curriculum breakdown, and real outcome data from 6 installations.",
+    "BSEP (Basic Skills Education Program) is the Army's free on-duty GT score improvement course. Average gain: 19–23 points. Eligibility tiers, enrollment steps, and real data from 6 installations.",
   alternates: {
     canonical: "https://asvabhero.com/bsep",
   },
@@ -16,7 +16,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "BSEP: The Army&apos;s Free GT Score Improvement Program (Complete Guide)",
+    "What Is BSEP? The Army's Free GT Score Improvement Program (2026 Guide)",
   description:
     "Learn how BSEP raises your GT score by 19-23 points on average. Eligibility tiers, enrollment steps, curriculum breakdown, and real outcome data from 6 installations.",
   url: "https://asvabhero.com/bsep",
@@ -30,7 +30,7 @@ const articleJsonLd = {
     name: "ASVAB Hero",
   },
   datePublished: "2026-05-12",
-  dateModified: "2026-05-12",
+  dateModified: "2026-07-08",
 };
 
 const faqJsonLd = {
@@ -344,6 +344,7 @@ export default function BSEPPage() {
                   </Link>{" "}
                   (AR)
                 </td>
+
                 <td className="py-2 pr-4">Word problems, math reasoning</td>
                 <td className="py-2 pr-4">Direct GT component</td>
                 <td className="py-2">Full curriculum module</td>
@@ -367,7 +368,7 @@ export default function BSEPPage() {
           range. Fort Knox instructor Lola Best puts it simply: &ldquo;Math
           skill-building drives the curriculum&apos;s effectiveness.&rdquo; Plug
           your current scores into the{" "}
-          <Link href="/gt-score">GT score calculator</Link> to see
+          <Link href="/gt-score-calculator">GT score calculator</Link> to see
           which subtest gains would push you past your target.
         </p>
 
@@ -1286,7 +1287,7 @@ export default function BSEPPage() {
               weakest area, use Peterson&apos;s OASC for targeted remediation,
               and re-enroll. Each completion grants another immediate AFCT
               authorization. Use the{" "}
-              <Link href="/calculator">calculator</Link> to project whether
+              <Link href="/gt-score-calculator">GT score calculator</Link> to project whether
               another round would close the gap.
             </p>
           </div>
