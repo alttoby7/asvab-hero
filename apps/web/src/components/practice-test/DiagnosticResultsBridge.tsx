@@ -15,9 +15,13 @@
  * mirroring CalculatorResultBridge.
  */
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { trackEvent } from "@/lib/analytics";
+import {
+  trackEvent,
+  SaveGateEvents,
+  ensurePaywallContextId,
+} from "@/lib/analytics";
 import { RECRUITS_PER_MONTH } from "@/data/social-proof";
 
 interface DiagnosticResultsBridgeProps {
@@ -62,15 +66,39 @@ export default function DiagnosticResultsBridge({
   isAfqtMode,
 }: DiagnosticResultsBridgeProps) {
   const firedRef = useRef(false);
-  const planHref = `/signup?next=${encodeURIComponent("/app/plan")}`;
+  const planHref = `/signup?next=${encodeURIComponent(
+    "/app/plan",
+  )}&gate=diagnostic`;
+
+  // Save-gate: this bridge only renders for anonymous users, so mounting it is
+  // the gate being viewed. Fire save_gate_viewed once (entry_surface='diagnostic').
+  const viewedRef = useRef(false);
+  useEffect(() => {
+    if (viewedRef.current) return;
+    viewedRef.current = true;
+    trackEvent(SaveGateEvents.SaveGateViewed, {
+      entry_surface: "diagnostic",
+      question_count: questionCount,
+      mode: isAfqtMode ? "afqt" : "afct",
+      paywall_context_id: ensurePaywallContextId(),
+    });
+  }, [questionCount, isAfqtMode]);
 
   function onPrimary() {
     if (firedRef.current) return;
     firedRef.current = true;
+    // Keep the existing bridge beacon, and add the save-gate funnel event so the
+    // diagnostic surface reports through the same funnel as the calculator.
     trackEvent("diagnostic_bridge_cta_click", {
       afqt,
       question_count: questionCount,
       mode: isAfqtMode ? "afqt" : "afct",
+    });
+    trackEvent(SaveGateEvents.SaveGateSignupClick, {
+      entry_surface: "diagnostic",
+      question_count: questionCount,
+      mode: isAfqtMode ? "afqt" : "afct",
+      paywall_context_id: ensurePaywallContextId(),
     });
   }
 

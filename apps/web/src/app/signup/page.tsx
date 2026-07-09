@@ -3,7 +3,12 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
-import { trackEvent, FunnelEvents } from "@/lib/analytics";
+import {
+  trackEvent,
+  FunnelEvents,
+  SaveGateEvents,
+  ensurePaywallContextId,
+} from "@/lib/analytics";
 import { getFirstTouchSignupFields } from "@/lib/attribution";
 import GoogleSignInButton from "@/components/GoogleSignInButton";
 
@@ -71,12 +76,18 @@ export default function SignupPage() {
     // relative app path to avoid an open redirect.
     let nextPath = "/app/home";
     let calcContext: { afqt?: string; branch?: string } = {};
+    // Save-gate attribution: which gate surface sent this signup, if any.
+    let gateSurface: string | null = null;
     try {
       const sp = new URLSearchParams(window.location.search);
       // Honor both ?next= (new) and ?return= (existing CTAs on results/pricing).
       const raw = sp.get("next") ?? sp.get("return");
       if (raw && raw.startsWith("/") && !raw.startsWith("//")) {
         nextPath = raw;
+      }
+      const gate = sp.get("gate");
+      if (gate === "calculator" || gate === "diagnostic") {
+        gateSurface = gate;
       }
       // Stash calculator context so onboarding can pre-fill the branch.
       const afqt = sp.get("afqt");
@@ -117,6 +128,15 @@ export default function SignupPage() {
     }
 
     trackEvent(FunnelEvents.SignupComplete, { source: resolvedSource });
+    // Save-gate funnel close: attribute the account to the gate surface that
+    // sent it (entry_surface='calculator'|'diagnostic'). No PII in props. Joins
+    // the same paywall_context_id journey as the earlier gate events.
+    if (gateSurface) {
+      trackEvent(SaveGateEvents.AccountCreatedFromGate, {
+        entry_surface: gateSurface,
+        paywall_context_id: ensurePaywallContextId(),
+      });
+    }
     // Fire-and-forget: subscribe to Listmonk so account signups land in the
     // drip. Listmonk returns 409 on duplicate (handled server-side), so this
     // is safe to retry. Never block auth flow on Listmonk failure.

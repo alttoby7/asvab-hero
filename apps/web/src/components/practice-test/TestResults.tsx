@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import type {
   PracticeQuestion,
   UserAnswer,
@@ -24,7 +24,11 @@ import {
   weakTopicStudyGuides,
   type WeakTopicGuide,
 } from "@/lib/practice/recommender";
-import { trackEvent } from "@/lib/analytics";
+import {
+  trackEvent,
+  SaveGateEvents,
+  ensurePaywallContextId,
+} from "@/lib/analytics";
 import type { PrepMode } from "@/lib/prep-mode";
 import TopicBreakdown from "./TopicBreakdown";
 import NextStepCard from "./NextStepCard";
@@ -230,6 +234,25 @@ export default function TestResults({
       ),
     [topicResults, savedProfile]
   );
+
+  // Save-gate instrumentation: the free headline score is on screen. Fire
+  // result_revealed once (entry_surface='diagnostic'), tagged with whether the
+  // full report was gated (anon) so the funnel matches the calculator surface.
+  const revealedScore = isAfqtMode
+    ? afqtEstimate.score
+    : primary?.score ?? afqtEstimate.score;
+  const revealedRef = useRef(false);
+  useEffect(() => {
+    if (revealedRef.current) return;
+    revealedRef.current = true;
+    trackEvent(SaveGateEvents.ResultRevealed, {
+      entry_surface: "diagnostic",
+      question_count: questions.length,
+      gated: !userId,
+      mode: isAfqtMode ? "afqt" : "afct",
+      paywall_context_id: ensurePaywallContextId(),
+    });
+  }, [questions.length, userId, isAfqtMode, revealedScore]);
 
   return (
     <div className="space-y-8" style={{ animation: "fadeIn 0.5s ease-out" }}>

@@ -15,7 +15,7 @@ import { buildJobMatchSnapshot } from "@/lib/job-matcher";
 import type { JobMatchSnapshot } from "@/lib/job-matcher";
 import { trackEvent } from "@/lib/analytics";
 import ScoreInput from "./ScoreInput";
-import JobResults from "./JobResults";
+import CalculatorJobsGate from "./CalculatorJobsGate";
 import NonQualifyingResults from "./NonQualifyingResults";
 import ScoreGapEngine from "./ScoreGapEngine";
 import ShareActions from "./ShareActions";
@@ -314,12 +314,15 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
 
       {compositesReady && snapshot && (
         <>
-          {/* Qualifying Jobs */}
+          {/* Qualifying Jobs. Free-account save-gate (flag-gated): anonymous
+             visitors see the count + top-3 teaser and a free-account CTA; a
+             signed-in free account sees the full searchable list. With the flag
+             off this renders the full JobResults unchanged. */}
           <section className="rounded-xl border border-navy-border bg-navy-light p-6">
-            <JobResults
-              jobsByBranch={snapshot.qualifyingByBranch}
-              totalJobs={snapshot.totalQualifying}
+            <CalculatorJobsGate
+              snapshot={snapshot}
               afqt={afqt}
+              branch={branchFilter}
             />
           </section>
 

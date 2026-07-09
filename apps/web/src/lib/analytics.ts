@@ -193,7 +193,10 @@ export type EntrySurface =
   | "free_practice_test"
   | "afct"
   | "upgrade_page"
-  | "pricing";
+  | "pricing"
+  // Save-gate surfaces (free-account gate, not the paid paywall).
+  | "calculator"
+  | "diagnostic";
 
 /** One event in the batch envelope POSTed to /api/events. */
 export interface AnalyticsEvent {
@@ -230,14 +233,36 @@ export const PaywallEvents = {
   SurveyDismissed: "survey_dismissed",
 } as const;
 
+/**
+ * Save-gate funnel events (the FREE-account "gate the saved result" lever).
+ * Mirror the paywall event pipeline exactly — same first-party envelope,
+ * same entry_surface + paywall_context_id tagging — so the gate funnel drops
+ * straight into the dashboard FunnelCard. NOT the paid paywall.
+ *
+ *   result_revealed          → the free headline result was shown (entry_surface
+ *                              = 'calculator' | 'diagnostic')
+ *   save_gate_viewed         → the gate/teaser (locked full list + save + plan)
+ *                              was seen
+ *   save_gate_signup_click   → the visitor clicked the free-account CTA
+ *   account_created_from_gate → an account was created off the back of the gate
+ */
+export const SaveGateEvents = {
+  ResultRevealed: "result_revealed",
+  SaveGateViewed: "save_gate_viewed",
+  SaveGateSignupClick: "save_gate_signup_click",
+  AccountCreatedFromGate: "account_created_from_gate",
+} as const;
+
 export type AnalyticsEventName =
-  (typeof PaywallEvents)[keyof typeof PaywallEvents];
+  | (typeof PaywallEvents)[keyof typeof PaywallEvents]
+  | (typeof SaveGateEvents)[keyof typeof SaveGateEvents];
 
 /** Server-side allow-list mirrored in functions/api/events.ts. Events not in
  *  this set are NOT dual-written. */
-export const ALLOWED_EVENT_NAMES: ReadonlySet<string> = new Set(
-  Object.values(PaywallEvents),
-);
+export const ALLOWED_EVENT_NAMES: ReadonlySet<string> = new Set<string>([
+  ...Object.values(PaywallEvents),
+  ...Object.values(SaveGateEvents),
+]);
 
 // ---------- session_id (§4.1) ----------
 const SID_KEY = "asvabhero.analytics.sid.v1";
