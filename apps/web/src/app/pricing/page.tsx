@@ -88,9 +88,7 @@ export default function PricingPage() {
           Simple, transparent pricing
         </h1>
         <p className="mt-3 text-text-secondary">
-          The score-moving core is free, no card. Pro removes every limit —
-          best value is a full year for $49.99, or grab a one-time 90-Day Pass
-          if test day is close.
+          ASVAB Hero Pro costs $49.99 per year (best value), $14.99 per month, or $59 for a one-time 90-Day Pass. The score-moving core -- daily adaptive practice, Mistake Bank, and calculators -- is always free with no card required.
         </p>
       </div>
 

@@ -94,6 +94,9 @@ export default function FreeAsvabPracticeTestPage() {
           <span>·</span>
           <span>No account needed</span>
         </div>
+        <p className="mt-4 text-text-secondary">
+          This free ASVAB practice test covers all 9 subtests in 30 questions and gives you an estimated AFQT (Armed Forces Qualification Test) percentile the moment you finish. No account required. Click &ldquo;Start Free Diagnostic&rdquo; below to begin -- results appear instantly and include per-question explanations.
+        </p>
         <a
           href="#test"
           className="mt-6 inline-block rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white hover:bg-accent-hover focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
