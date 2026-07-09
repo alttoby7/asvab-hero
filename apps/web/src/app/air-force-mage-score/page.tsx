@@ -5,9 +5,9 @@ import JsonLd from "@/components/JsonLd";
 import VerifiedBlock from "@/components/VerifiedBlock";
 
 export const metadata: Metadata = {
-  title: "Air Force MAGE Score: What M, A, G, and E Mean (2026)",
+  title: "Air Force MAGE Score Calculator: Formulas & AFSC Requirements (2026)",
   description:
-    "Air Force MAGE explained: Mechanical, Administrative, General, and Electronic aptitude areas, the official composite formulas, and how MAGE differs from your AFQT for job classification.",
+    "Calculate your Air Force MAGE score free — see the official M, A, G, and E composite formulas, AFSC job requirements, and how MAGE differs from your AFQT.",
   alternates: {
     canonical: "https://asvabhero.com/air-force-mage-score",
   },
@@ -29,7 +29,7 @@ export default function AirForceMageScorePage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-05-24",
-          dateModified: "2026-05-24",
+          dateModified: "2026-07-09",
         }}
       />
       <JsonLd
@@ -121,6 +121,19 @@ export default function AirForceMageScorePage() {
             recruiter.
           </p>
         </VerifiedBlock>
+
+        {/* Early calculator callout for score-entry intent */}
+        <div className="my-6 rounded-xl border border-accent/30 bg-navy-light p-4 text-center not-prose">
+          <p className="text-sm font-semibold text-text-primary">
+            Have your subtest scores? Estimate all four MAGE composites instantly.
+          </p>
+          <Link
+            href="/air-force-asvab-calculator"
+            className="mt-3 inline-block rounded-xl bg-accent px-5 py-2 text-sm font-bold text-white no-underline transition-all duration-200 hover:bg-accent-hover"
+          >
+            Open the Free Air Force MAGE Calculator →
+          </Link>
+        </div>
 
         {/* ────────── SECTION: Two-gate system ────────── */}
 
