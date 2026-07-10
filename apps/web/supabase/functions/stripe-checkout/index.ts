@@ -150,6 +150,15 @@ Deno.serve(async (req) => {
       // Human-readable label on the charge (dashboard "Description" column).
       checkoutParams["payment_intent_data[description]"] = tierLabel;
     } else {
+      // Recurring tiers (monthly / annual): card + card-backed wallets
+      // (Apple Pay / Google Pay / Link) ONLY. Pinning payment_method_types
+      // disables Stripe's automatic payment methods, which is what removes
+      // Cash App Pay. Cash App wallet balances are routinely empty at renewal
+      // and were the sole cause of every "expired at day 7" trial — all day-7
+      // charge failures traced to cashapp_payment_declined (insufficient
+      // funds). One-time passes keep Cash App: they charge immediately, so an
+      // empty wallet just fails at checkout with nothing left to renew.
+      checkoutParams["payment_method_types[0]"] = "card";
       // Subscription metadata (durable across renewals; the webhook reads
       // subscription.metadata for long-tail conversions).
       checkoutParams["subscription_data[metadata][user_id]"] = userId;
