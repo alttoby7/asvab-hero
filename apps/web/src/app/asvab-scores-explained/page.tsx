@@ -113,6 +113,13 @@ export default function ASVABScoresExplainedPage() {
           ASVAB Scores Explained: What Every Number on Your Score Sheet Means
         </h1>
 
+        <p className="mt-4 text-text-secondary">
+          A good ASVAB score is 50 or above on the AFQT (Armed Forces Qualification Test) percentile -- that is the national average. Scoring 60 or higher puts you in Category IIIA, which opens most enlistment bonuses and job choices. Scoring 70 or above gives you the strongest leverage for preferred assignments. Your ASVAB score sheet shows two types of numbers: the AFQT percentile (1 to 99) that determines whether you can enlist, and line scores built from all 9 subtests that determine which specific jobs you qualify for.
+        </p>
+        <p className="text-text-secondary">
+          This page covers how every number on your score sheet is calculated, what each one controls, branch minimums for 2026, retake rules, and which subtests to prioritize in your study plan.
+        </p>
+
         <VerifiedBlock
           verifiedDate="April 2026"
           sources={[
@@ -149,23 +156,6 @@ export default function ASVABScoresExplainedPage() {
             tag="scores-explained"
           />
         </section>
-
-        <p className="mt-4 text-text-secondary">
-          You took the ASVAB. You got your scores back. Now you&apos;re staring at a page full of numbers, abbreviations, and categories that nobody bothered to explain. Your recruiter says your score is &ldquo;good&rdquo; or tells you to retake it, but you still don&apos;t know what any of it means.
-        </p>
-        <p className="text-text-secondary">
-          The official resources aren&apos;t much help either. The DoD website gives you definitions written for policy analysts, not for someone trying to figure out if they can get the job they want.
-        </p>
-        <p className="text-text-secondary">
-          Here&apos;s what we&apos;ll cover: how your <strong>ASVAB scores</strong> break down into the AFQT percentile that determines basic eligibility, the 9 individual subtests, the composite and line scores each branch uses to assign jobs, minimum score requirements by branch, retake rules, and a study strategy that targets the areas with the biggest payoff.
-        </p>
-        <p className="text-text-secondary">
-          If you already have your scores, plug them into our{" "}
-          <Link href="/calculator" className="text-accent hover:text-accent-hover">
-            free ASVAB score calculator
-          </Link>{" "}
-          to see which jobs you qualify for across all 6 branches.
-        </p>
 
         {/* ─── HOW TO READ YOUR SCORE SHEET ─── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
