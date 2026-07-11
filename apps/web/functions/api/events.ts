@@ -52,6 +52,12 @@ const ALLOWED_EVENT_NAMES = new Set<string>([
   "survey_shown",
   "survey_answered",
   "survey_dismissed",
+  // Save-gate funnel (free-account "gate the saved result" lever). Mirrors
+  // SaveGateEvents in src/lib/analytics.ts.
+  "result_revealed",
+  "save_gate_viewed",
+  "save_gate_signup_click",
+  "account_created_from_gate",
 ]);
 
 const AUTH_STATES = new Set(["anon", "free", "trial", "pro"]);

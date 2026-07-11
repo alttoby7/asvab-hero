@@ -162,6 +162,14 @@ export function OnboardingForm() {
   );
   const [officialSaved, setOfficialSaved] = useState(false);
 
+  // Study-reminder opt-in (lifecycle fuel). Default ON for a fresh account so the
+  // built-in study sequences can fire; the user can uncheck it here or change it
+  // any time in account settings. Writes profiles.marketing_opt_in. For a user
+  // who already set a preference (e.g. previously opted out and revisited
+  // /onboarding), we hydrate from their saved value below so submitting again
+  // never silently re-enables email against their choice.
+  const [remindersOptIn, setRemindersOptIn] = useState(true);
+
   const [submitting, setSubmitting] = useState(false);
   const [skipping, setSkipping] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -181,6 +189,29 @@ export function OnboardingForm() {
       /* ignore */
     }
   }, []);
+
+  // Hydrate the reminder opt-in from the saved profile so a returning user who
+  // already opted out isn't flipped back to opted-in just by resubmitting this
+  // form. Fresh accounts (no prior value) keep the ON default. Best-effort.
+  useEffect(() => {
+    if (!session) return;
+    let cancelled = false;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const sb = getSupabaseBrowserClient() as any;
+    sb.from("profiles")
+      .select("marketing_opt_in")
+      .eq("user_id", session.user.id)
+      .single()
+      .then(({ data }: { data: { marketing_opt_in?: boolean } | null }) => {
+        if (cancelled || !data) return;
+        if (typeof data.marketing_opt_in === "boolean") {
+          setRemindersOptIn(data.marketing_opt_in);
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [session]);
 
   // GT Target Mode is Army/Marines AFCT (primary metric GT = AR+WK+PC).
   const isGtMode =
@@ -256,6 +287,9 @@ export function OnboardingForm() {
       study_anchor: studyAnchor.trim() || null,
       target_gt_score: isGtMode ? targetGtScore : null,
       education_status: testType === "initial_asvab" ? educationStatus : null,
+      // Lifecycle fuel: study-reminder opt-in captured at onboarding so the
+      // built-in sequences (test-date countdown, milestone, trial) can fire.
+      marketing_opt_in: remindersOptIn,
       onboarding_completed_at: new Date().toISOString(),
     };
     // Official-score status: rpc_log_official_test already set 'taken_logged'
@@ -570,9 +604,14 @@ export function OnboardingForm() {
 
       {/* Q6, Test date */}
       <div>
-        <label className="block font-display text-lg font-semibold text-text-primary mb-3">
-          6. When are you planning to take the test?
+        <label className="block font-display text-lg font-semibold text-text-primary mb-1">
+          6. When are you planning to take the test?{" "}
+          <span className="text-accent text-sm font-normal">(required)</span>
         </label>
+        <p className="mb-3 text-sm text-text-secondary">
+          This sets your countdown and paces your plan. Pick a range, or add your
+          exact date for test-day reminders.
+        </p>
         {!showDatePicker ? (
           <>
             <div className="flex flex-wrap gap-2">
@@ -733,6 +772,23 @@ export function OnboardingForm() {
             className="w-full max-w-sm rounded-lg border border-navy-border bg-navy px-4 py-2.5 text-sm text-text-primary focus:border-accent focus:outline-none"
           />
         </div>
+      </div>
+
+      {/* Study-reminder opt-in (lifecycle fuel). */}
+      <div>
+        <label className="flex items-start gap-3 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={remindersOptIn}
+            onChange={(e) => setRemindersOptIn(e.target.checked)}
+            className="mt-0.5 h-5 w-5 flex-shrink-0 rounded border-navy-border bg-navy text-accent focus:ring-accent"
+          />
+          <span className="text-sm text-text-secondary">
+            Email me study reminders and test-day countdown nudges. Showing up on
+            your study days is the biggest predictor of real score gains. You can
+            turn this off any time in account settings.
+          </span>
+        </label>
       </div>
 
       {error && (
