@@ -208,19 +208,38 @@ export default function DailyChallengeEngine({
             .eq("id", existing.id);
           challengeIdRef.current = existing.id;
         } else {
+          // Idempotent: two concurrent opens (second tab / fast re-nav) both read
+          // existing=null above, then race the insert. A plain insert 23505s on
+          // unique(user_id, challenge_date), the error is swallowed, and
+          // challengeIdRef goes null — so the challenge's completion + streak
+          // never persist to the row. Upsert makes the loser a no-op and we
+          // recover the winning row's id.
           const { data: inserted } = await sb
             .from("daily_challenges")
-            .insert({
-              user_id: userId,
-              challenge_date: today,
-              status: "ready",
-              source,
-              question_ids: questionIds,
-              topic_mix: topicMix,
-            })
+            .upsert(
+              {
+                user_id: userId,
+                challenge_date: today,
+                status: "ready",
+                source,
+                question_ids: questionIds,
+                topic_mix: topicMix,
+              },
+              { onConflict: "user_id,challenge_date", ignoreDuplicates: true },
+            )
             .select("id")
-            .single();
-          challengeIdRef.current = inserted?.id ?? null;
+            .maybeSingle();
+          let challengeId = inserted?.id as string | undefined;
+          if (!challengeId) {
+            const { data: row } = await sb
+              .from("daily_challenges")
+              .select("id")
+              .eq("user_id", userId)
+              .eq("challenge_date", today)
+              .maybeSingle();
+            challengeId = row?.id as string | undefined;
+          }
+          challengeIdRef.current = challengeId ?? null;
         }
       }
 

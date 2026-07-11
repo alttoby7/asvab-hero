@@ -188,7 +188,7 @@ export default function MiniDrill({ topicId }: MiniDrillProps) {
         best_mini_drill_pct: Math.max(pct, existing?.best_mini_drill_pct ?? 0),
         last_mini_drill_pct: pct,
         updated_at: now,
-      });
+      }, { onConflict: "user_id,topic_id" });
     } else {
       writeLocalAttempt(topicId, correctCount, questions.length);
     }

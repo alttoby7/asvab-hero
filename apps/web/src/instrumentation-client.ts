@@ -36,6 +36,12 @@ if (dsn) {
       /Invalid call to runtime\.sendMessage/,
       "The message port closed before a response was received",
       /Extension context invalidated/,
+      /metamask/i,
+      // supabase-js auth uses navigator.locks with { steal: true } for its own
+      // multi-tab token coordination; the stolen tab throws these. Library
+      // behavior, not an app bug.
+      "Lock broken by another request",
+      /NavigatorLockAcquireTimeout/,
     ],
   });
 }
