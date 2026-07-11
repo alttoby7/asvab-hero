@@ -28,6 +28,31 @@ import type { Attempt, AttemptPayload, TopicStats } from "@/types";
 export const HISTORY_KEY = "asvabhero.practiceHistory.v1";
 export const PROFILE_KEY = "asvabhero.practiceProfile.v1";
 
+/**
+ * Normalize an unknown thrown value into a real `Error` plus structured extras.
+ *
+ * Supabase throws its `PostgrestError` as a plain object ({code, details, hint,
+ * message}), not an `Error`. Passing that straight to `Sentry.captureException`
+ * yields the opaque "Object captured as exception with keys: ..." issue that
+ * hides the real DB failure. This lifts `message` onto a real Error (so Sentry
+ * groups by the DB error code + our call-site tag) and surfaces code/details/hint
+ * as `extra`.
+ */
+function toSentryError(err: unknown): { error: Error; extra: Record<string, unknown> } {
+  if (err instanceof Error) return { error: err, extra: {} };
+  if (err && typeof err === "object") {
+    const o = err as Record<string, unknown>;
+    const message = typeof o.message === "string" ? o.message : JSON.stringify(o);
+    const error = new Error(message);
+    if (typeof o.code === "string") error.name = `PostgrestError(${o.code})`;
+    return {
+      error,
+      extra: { db_code: o.code, db_details: o.details, db_hint: o.hint },
+    };
+  }
+  return { error: new Error(String(err)), extra: {} };
+}
+
 // ─── Posterior recompute (mirrors SQL function) ─────────────────────────────
 
 export function computeTopicStats(
@@ -213,12 +238,33 @@ export async function saveAttempt(
         primary_metric_estimate: attempt.primary_metric_estimate ?? null,
         synced_from_local: false,
       };
+      // Idempotent write: a repeat of the same client_attempt_id (double-submit,
+      // React double-mount, or a live save racing syncLocalHistoryToRemote) is a
+      // no-op, not a failure. Without this the duplicate throws Postgres 23505 and
+      // the attempt — already safely stored — gets alarmed to Sentry and needlessly
+      // shunted to localStorage. onConflict targets attempts_user_id_client_attempt_id_key.
       const { data: row, error: insErr } = await sb
         .from("attempts")
-        .insert(insert)
+        .upsert(insert, {
+          onConflict: "user_id,client_attempt_id",
+          ignoreDuplicates: true,
+        })
         .select("id")
-        .single();
+        .maybeSingle();
       if (insErr) throw insErr;
+
+      // ignoreDuplicates returns no row when the attempt was already stored;
+      // that is success. Recover the existing id so the caller still gets it.
+      let attemptId = row?.id as string | undefined;
+      if (!attemptId) {
+        const { data: existing } = await sb
+          .from("attempts")
+          .select("id")
+          .eq("user_id", userId)
+          .eq("client_attempt_id", attempt.client_attempt_id)
+          .maybeSingle();
+        attemptId = existing?.id as string | undefined;
+      }
 
       // Durable "study day completed" event (migration 0028), the dose metric
       // for paired-diagnostic AFQT-delta analysis. One row per user per local
@@ -257,7 +303,7 @@ export async function saveAttempt(
       return {
         ok: true,
         storedRemote: true,
-        attemptId: (row?.id as string) ?? undefined,
+        attemptId,
         profile,
       };
     } catch (err) {
@@ -266,9 +312,10 @@ export async function saveAttempt(
       // days, surface it (Sentry + console) before falling through to local
       // persistence so we don't lose the attempt but DO get alerted.
       console.error("[saveAttempt] remote insert failed for authed user; falling back to localStorage:", err);
-      Sentry.captureException(err, {
+      const { error: sentryErr, extra: dbExtra } = toSentryError(err);
+      Sentry.captureException(sentryErr, {
         tags: { area: "saveAttempt", outcome: "remote_insert_failed" },
-        extra: { variant_code: attempt.variant_code, source: attempt.source },
+        extra: { ...dbExtra, variant_code: attempt.variant_code, source: attempt.source },
       });
       // Fall through to local persistence so we don't lose the attempt.
     }
@@ -363,7 +410,17 @@ export async function syncLocalHistoryToRemote(
       }));
 
     if (toInsert.length > 0) {
-      const { error: insErr } = await sb.from("attempts").insert(toInsert);
+      // Upsert (not insert): the SELECT-dedupe above is a snapshot, so a
+      // concurrent live save or a double-mount can slip a duplicate past it.
+      // A plain insert then fails the WHOLE batch on 23505, blocking every
+      // valid row from syncing. ignoreDuplicates makes any already-present
+      // client_attempt_id a silent no-op.
+      const { error: insErr } = await sb
+        .from("attempts")
+        .upsert(toInsert, {
+          onConflict: "user_id,client_attempt_id",
+          ignoreDuplicates: true,
+        });
       if (insErr) throw insErr;
 
       // Stamp the free-diagnostic gate if a diagnostic was among the synced
@@ -396,8 +453,10 @@ export async function syncLocalHistoryToRemote(
     // Never block the app on a sync failure; keep local history so a later
     // mount can retry. Surface it so we know if migration is silently failing.
     console.error("[syncLocalHistoryToRemote] failed:", err);
-    Sentry.captureException(err, {
+    const { error: sentryErr, extra: dbExtra } = toSentryError(err);
+    Sentry.captureException(sentryErr, {
       tags: { area: "syncLocalHistoryToRemote" },
+      extra: dbExtra,
     });
     return { synced: 0 };
   }

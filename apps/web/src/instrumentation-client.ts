@@ -32,6 +32,10 @@ if (dsn) {
       "ResizeObserver loop limit exceeded",
       "ResizeObserver loop completed with undelivered notifications",
       "Non-Error promise rejection captured",
+      // Injected browser-extension content scripts, not our code.
+      /Invalid call to runtime\.sendMessage/,
+      "The message port closed before a response was received",
+      /Extension context invalidated/,
     ],
   });
 }

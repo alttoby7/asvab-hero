@@ -91,11 +91,16 @@ function ScoreMeaningInner() {
   const [afqt, setAfqt] = useState<number>(initial);
 
   // Keep the URL shareable (?afqt=57) without triggering navigation or a new
-  // indexable URL — replaceState only, on the client.
+  // indexable URL — replaceState only, on the client. Debounced: dragging the
+  // slider fires this faster than the browser's replaceState rate limit
+  // (>100/10s throws SecurityError), so coalesce rapid changes into one write.
   useEffect(() => {
-    const url = new URL(window.location.href);
-    url.searchParams.set("afqt", String(afqt));
-    window.history.replaceState(null, "", url.toString());
+    const id = window.setTimeout(() => {
+      const url = new URL(window.location.href);
+      url.searchParams.set("afqt", String(afqt));
+      window.history.replaceState(null, "", url.toString());
+    }, 250);
+    return () => window.clearTimeout(id);
   }, [afqt]);
 
   const category = useMemo(() => getAFQTCategory(afqt), [afqt]);
