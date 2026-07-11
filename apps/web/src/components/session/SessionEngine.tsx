@@ -245,6 +245,7 @@ export default function SessionEngine({
           // Fold the debrief signal onto the banked reviews so it drives what
           // resurfaces (sure-misses first, error tag stamped). Best-effort.
           tagReviewsFromDebrief(
+            userId,
             tags.map((t) => ({
               questionId: t.questionId,
               errorTag: t.errorTag ?? null,

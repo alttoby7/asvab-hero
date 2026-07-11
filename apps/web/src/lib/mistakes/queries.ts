@@ -122,6 +122,7 @@ export async function gradeMistakeReview(
  * review row only exists for an actual miss, so a no-op on hits is correct.
  */
 export async function tagReviewsFromDebrief(
+  userId: string,
   items: Array<{
     questionId: string;
     errorTag?: "concept" | "setup" | "careless" | "time" | null;
@@ -141,6 +142,7 @@ export async function tagReviewsFromDebrief(
         return sb
           .from("question_reviews")
           .update(patch)
+          .eq("user_id", userId)
           .eq("question_id", i.questionId);
       }),
     );

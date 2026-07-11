@@ -70,8 +70,20 @@ export async function createSession(opts: {
       })
       .select("id")
       .single();
-    if (error || !data) return null;
-    return data.id as string;
+    if (!error && data) return data.id as string;
+    // A concurrent create (double-mount / rapid nav) already inserted today's
+    // session — unique (user_id, session_date). Return the existing session id
+    // instead of null so the loop still persists this day's progress.
+    if (error?.code === "23505") {
+      const { data: existing } = await sb
+        .from("study_sessions")
+        .select("id")
+        .eq("user_id", opts.userId)
+        .eq("session_date", opts.plan.sessionDate)
+        .maybeSingle();
+      return (existing?.id as string | undefined) ?? null;
+    }
+    return null;
   } catch {
     return null;
   }
