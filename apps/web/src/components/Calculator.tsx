@@ -60,8 +60,15 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
     [allJobs, branchFilter]
   );
 
-  // Load scores from URL params (e.g. from practice test results)
+  // Load scores from URL params (e.g. from practice test results). This is a
+  // one-time seed from the handoff URL, so guard it with a ref: `searchParams`
+  // can hand back a fresh reference on re-render, and re-running this effect
+  // would `setScores` a brand-new object every render — an infinite update
+  // loop ("Maximum update depth exceeded"). Seed once, and even then only
+  // commit a new object when a value actually differs.
+  const seededFromUrlRef = useRef(false);
   useEffect(() => {
+    if (seededFromUrlRef.current) return;
     const hasScoreParams = ALL_SUBTESTS.some((st) => searchParams.get(st));
     if (!hasScoreParams) return;
 
@@ -76,9 +83,15 @@ export default function Calculator({ allJobs, branchFilter }: CalculatorProps) {
         }
       }
     }
-    if (Object.keys(fromParams).length > 0) {
-      setScores((prev) => ({ ...prev, ...fromParams }));
-    }
+    if (Object.keys(fromParams).length === 0) return;
+
+    seededFromUrlRef.current = true;
+    setScores((prev) => {
+      const changed = (Object.keys(fromParams) as AsvabSubtest[]).some(
+        (st) => prev[st] !== fromParams[st]
+      );
+      return changed ? { ...prev, ...fromParams } : prev;
+    });
   }, [searchParams]);
 
   const handleScoreChange = (subtest: AsvabSubtest, value: number | null) => {
