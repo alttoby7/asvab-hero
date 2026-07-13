@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import MathCheatSheetCapture from "@/components/MathCheatSheetCapture";
-import ARCRecruitCapture from "@/components/ARCRecruitCapture";
+import BuyBookBlock from "@/components/BuyBookBlock";
 
 export const metadata: Metadata = {
   title: "10 ASVAB Math Tips That Actually Raise Your Score",
@@ -770,11 +770,11 @@ export default function ASVABMathTipsPage() {
           </Link>
         </div>
 
-        {/* ARC recruit: free advance copy of the new workbook, for the most
-            engaged readers who reach the end of the article. Distinct offer from
-            the cheat-sheet above; capture-only (advance PDF emailed to opt-ins). */}
+        {/* Buy CTA: the workbook is live on Amazon. Distinct offer from the
+            cheat-sheet above; sells the paper companion to the most engaged
+            readers who reach the end of the article. */}
         <div className="mt-12">
-          <ARCRecruitCapture source="book-arc-math-tips" />
+          <BuyBookBlock />
         </div>
       </article>
     </div>

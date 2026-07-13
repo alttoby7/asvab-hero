@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import EmailCapture from "@/components/EmailCapture";
-import ARCRecruitCapture from "@/components/ARCRecruitCapture";
+import BuyBookBlock from "@/components/BuyBookBlock";
 
 export const metadata: Metadata = {
   title: "9 ASVAB Arithmetic Reasoning Tips to Raise Your Score",
@@ -913,10 +913,10 @@ export default function ASVABArithmeticReasoningTipsPage() {
           </Link>
         </div>
 
-        {/* ARC recruit: free advance copy of the new workbook, for the most
-            engaged readers who reach the end of the article. Capture-only. */}
+        {/* Buy CTA: the workbook is live on Amazon. Sells the paper companion
+            to the most engaged readers who reach the end of the article. */}
         <div className="mt-12">
-          <ARCRecruitCapture source="book-arc-ar-tips" />
+          <BuyBookBlock />
         </div>
       </article>
     </div>
