@@ -2,7 +2,7 @@
   "expo": {
     "name": "ASVAB Hero",
     "slug": "asvab-hero",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -15,6 +15,7 @@
     },
     "android": {
       "package": "com.asvabhero.app",
+      "permissions": ["android.permission.INTERNET"],
       "adaptiveIcon": {
         "backgroundColor": "#0a1628",
         "foregroundImage": "./assets/android-icon-foreground.png",

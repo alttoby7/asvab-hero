@@ -7,6 +7,11 @@ import {
 } from "react";
 import type { Session, User } from "@supabase/supabase-js";
 import { getSupabaseClient } from "./supabase";
+import {
+  configurePurchases,
+  identifyPurchaser,
+  resetPurchaser,
+} from "./purchases";
 
 interface AuthState {
   session: Session | null;
@@ -27,18 +32,27 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Configure RevenueCat once, before we know the user — safe no-op if the
+    // SDK key is unset (dev / Expo Go).
+    configurePurchases();
+
     const supabase = getSupabaseClient();
 
     supabase.auth.getSession().then(({ data: { session: s } }) => {
       setSession(s);
       setLoading(false);
+      if (s?.user) void identifyPurchaser(s.user.id);
     });
 
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, s) => {
+    } = supabase.auth.onAuthStateChange((event, s) => {
       setSession(s);
       setLoading(false);
+      // Keep RevenueCat's app_user_id in lockstep with the Supabase session so
+      // the webhook can resolve the right profile row.
+      if (event === "SIGNED_OUT") void resetPurchaser();
+      else if (s?.user) void identifyPurchaser(s.user.id);
     });
 
     return () => subscription.unsubscribe();

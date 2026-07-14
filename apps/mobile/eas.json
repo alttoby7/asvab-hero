@@ -12,9 +12,25 @@
       }
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://abypyprvgvofzrtifgzi.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_OQ_XWiRHQF2gEDwgA7hk3g_hexhewMS"
+      }
     },
-    "production": {}
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://abypyprvgvofzrtifgzi.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_OQ_XWiRHQF2gEDwgA7hk3g_hexhewMS"
+      }
+    }
   },
   "submit": {
     "production": {

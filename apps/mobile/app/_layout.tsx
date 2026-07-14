@@ -39,6 +39,10 @@ export default function RootLayout() {
             name="practice-test"
             options={{ presentation: "fullScreenModal" }}
           />
+          <Stack.Screen
+            name="paywall"
+            options={{ presentation: "fullScreenModal" }}
+          />
         </Stack>
       </AuthGate>
     </AuthProvider>
