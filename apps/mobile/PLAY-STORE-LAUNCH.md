@@ -46,17 +46,19 @@ Goal: get a signed AAB onto a Play **closed-testing** track to start Google's ma
   and set the **Authorization header value** to a strong secret → that value =
   the `ASVABHERO_REVENUECAT_WEBHOOK_SECRET` edge secret (step 6).
 
-### 3. Google Cloud — reconcile OAuth client for native Google Sign-In  ⚠️
-There is a **client-ID mismatch** to resolve before Google Sign-In works in a real build:
-- `apps/mobile/.env` currently has `EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID=792053300211-k6b5vnm5ftg93pc3mnre8vcsskbq7tg9...`
-- Prior notes / Supabase Google provider used `337130544889-qbotomllvt3tae1mcn6a5661o2n67f94...`
-- Decide which **Web OAuth client** is authoritative (project "ASVAB Hero" =
-  `peppy-ridge-501116-v2`, number `337130544889`). Then:
-  - Put that client id in `.env` AND as the build env var (step 7).
-  - In Supabase → Auth → Providers → Google, ensure that **same** client id is in
-    "Authorized Client IDs" (the id_token `aud` must match or `signInWithIdToken` rejects it).
-  - Add `asvabhero://` (and the EAS/Expo redirect) to the OAuth client's authorized redirects.
-- Email/password sign-in works regardless; only the Google button depends on this.
+### 3. Google Cloud — OAuth client  ✅ MISMATCH RESOLVED (2026-07-14)
+Verified via the Supabase Management API: the Google provider trusts **only**
+`337130544889-qbotomllvt3tae1mcn6a5661o2n67f94...` (project "ASVAB Hero" =
+`peppy-ridge-501116-v2`). The app's `.env` had the WRONG client (`792053300211-...`),
+which would have made `signInWithIdToken` reject the token. Fixed: `.env` +
+`eas.json` (preview+production) now use `337130544889-...qbotomllvt3`.
+- Email/password sign-in works regardless.
+- ⚠️ **Still to verify on-device:** the app uses expo-auth-session's IdToken flow with
+  a **Web** OAuth client + `asvabhero://` redirect. Web clients only accept https
+  redirects, so the standalone Google button MAY fail. If it does, switch to
+  `@react-native-google-signin/google-signin` (native) — it uses this same Web client
+  id for the idToken and needs an **Android** OAuth client (add the EAS keystore SHA-1
+  from `eas credentials -p android`). Decide after testing the APK; not launch-blocking.
 
 ### 4. First EAS build → keystore
 - A preview APK build is already running on this branch (validates native compile).
@@ -72,14 +74,15 @@ There is a **client-ID mismatch** to resolve before Google Sign-In works in a re
   matching your RC products from step 2. (Products can't exist until the app + payments profile
   are set up — this is the chicken-and-egg; RC product mapping happens here.)
 
-### 6. Set Supabase edge secrets + deploy the webhook
-```
-# from apps/web/supabase (uses ASVABHERO_SUPABASE_ACCESS_TOKEN from central .env)
-supabase secrets set ASVABHERO_REVENUECAT_WEBHOOK_SECRET='<the RC Authorization value>'
-supabase functions deploy revenuecat-webhook
-# apply the migration to prod:
-supabase db push        # or apply 0053_revenuecat_source.sql via the SQL editor / MCP
-```
+### 6. Set Supabase edge secrets + deploy the webhook  ✅ DONE (2026-07-14)
+- `ASVABHERO_REVENUECAT_WEBHOOK_SECRET` set on project `abypyprvgvofzrtifgzi`.
+- `revenuecat-webhook` deployed (`--no-verify-jwt`); smoke-tested: 401 on bad auth,
+  200-skip on non-UUID / unknown events.
+- Migration 0053 (`pro_source` + `rc_product_id`) applied to prod.
+- Webhook secret value (paste into RC's Authorization header, step 2):
+  `58d22aad349c843edda1770634828482c2d43c08bc1adebfd88b27d8a0099f34`
+- ⚠️ Note: the plain `supabase` MCP points to a DIFFERENT project — always target
+  `abypyprvgvofzrtifgzi` explicitly (CLI `--project-ref` or Management API).
 
 ### 7. Build env vars (RC key + Google client)
 Add the two remaining PUBLIC values so production builds embed them. Either add to

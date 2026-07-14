@@ -14,7 +14,10 @@ import Purchases, {
   type PurchasesOffering,
 } from "react-native-purchases";
 
-export const PRO_ENTITLEMENT = "pro";
+// Must match the RevenueCat entitlement identifier exactly (configured in the
+// RC dashboard: Product catalog → Entitlements). The existing project uses
+// "ASVAB Hero Pro".
+export const PRO_ENTITLEMENT = "ASVAB Hero Pro";
 
 const ANDROID_KEY = process.env.EXPO_PUBLIC_REVENUECAT_ANDROID_KEY;
 const IOS_KEY = process.env.EXPO_PUBLIC_REVENUECAT_IOS_KEY;
