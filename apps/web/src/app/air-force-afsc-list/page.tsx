@@ -1,6 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import AffiliateBookBlock from "@/components/AffiliateBookBlock";
+import Breadcrumb from "@/components/Breadcrumb";
+import RelatedLinks from "@/components/RelatedLinks";
+import JobScoreTable from "@/components/JobScoreTable";
+import { airForceHub, hubScoreStats } from "@/lib/job-hubs";
+
+// Single source of truth for the sortable chart below: every row comes from
+// air-force-jobs.json (the same data the Air Force calculator scores against),
+// never hardcoded. The curated per-career-group tables further down predate
+// this dataset wiring and are kept as a hand-picked "high-profile AFSCs" tour;
+// the chart is the complete, always-in-sync list.
+const jobs = airForceHub.jobs;
+const stats = hubScoreStats(jobs);
+const N = stats.count; // 155 AFSCs
 
 export const metadata: Metadata = {
   title: "Air Force AFSC List 2026: Every Job With ASVAB Scores",
@@ -94,6 +108,14 @@ export default function AirForceAFSCListPage() {
         }}
       />
 
+      <Breadcrumb
+        items={[
+          { name: "ASVAB Hero", href: "/" },
+          { name: "Air Force ASVAB Score", href: "/air-force-asvab-score" },
+          { name: "Air Force AFSC List", href: "/air-force-afsc-list" },
+        ]}
+      />
+
       <article className="prose-asvab">
         <h1 className="font-display text-3xl font-bold text-text-primary sm:text-4xl">
           Every Air Force AFSC Listed, With the ASVAB Scores You Actually Need (2026)
@@ -180,7 +202,7 @@ export default function AirForceAFSCListPage() {
         </div>
 
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          M (Mechanical) = GS + MC + AS
+          M (Mechanical) = MC + 2&times;AS + GS
         </div>
 
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
@@ -188,7 +210,7 @@ export default function AirForceAFSCListPage() {
         </div>
 
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          A (Administrative) = VE, where VE = WK + PC
+          A (Administrative) = VE + MK, where VE = WK + PC
         </div>
 
         {/* MAGE Composites Breakdown Table */}
@@ -211,7 +233,7 @@ export default function AirForceAFSCListPage() {
               </tr>
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">M (Mechanical)</td>
-                <td className="py-2 pr-4">General Science + Mechanical Comprehension + Auto &amp; Shop Info</td>
+                <td className="py-2 pr-4">Mechanical Comprehension + 2&times;Auto &amp; Shop Info + General Science</td>
                 <td className="py-2 pr-4 font-mono">20-99</td>
                 <td className="py-2">Aircraft Maintenance, Vehicle Mx, Munitions</td>
               </tr>
@@ -223,7 +245,7 @@ export default function AirForceAFSCListPage() {
               </tr>
               <tr>
                 <td className="py-2 pr-4 font-semibold text-text-primary">A (Administrative)</td>
-                <td className="py-2 pr-4">Word Knowledge + Paragraph Comprehension</td>
+                <td className="py-2 pr-4">Word Knowledge + Paragraph Comprehension + Math Knowledge</td>
                 <td className="py-2 pr-4 font-mono">20-99</td>
                 <td className="py-2">Personnel, Finance, Contracting</td>
               </tr>
@@ -245,6 +267,39 @@ export default function AirForceAFSCListPage() {
             ASVAB scoring and results
           </Link>.
         </p>
+
+        {/* ── The complete, sortable score chart: the unique-data asset ── */}
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          The Complete Air Force AFSC List: All {N} AFSCs and Their MAGE Requirements
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          The curated tables below walk through the highest-profile AFSCs by career group. This is the
+          complete list: every AFSC we have verified MAGE data for, sourced from the same dataset the{" "}
+          <Link href={airForceHub.calculatorHref} className="text-accent hover:text-accent-hover">
+            Air Force ASVAB calculator
+          </Link>{" "}
+          scores against. Sort by required score to see where the barriers cluster, or by career field
+          to compare AFSCs in the same specialty.
+        </p>
+
+        <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
+          <p className="text-sm font-semibold text-amber-400">MAGE scores can&apos;t be fully verified from a calculator</p>
+          <p className="mt-1 text-sm text-text-secondary">
+            MAGE composites are published as 1-99 percentiles. A subtest-sum calculator produces a raw
+            composite total, and there is no reliable public formula to convert that into the exact
+            percentile the Air Force uses. Treat the chart below as the published requirement to
+            compare against, not a guaranteed qualify or disqualify, and confirm your standing with a
+            recruiter.
+          </p>
+        </aside>
+
+        <JobScoreTable
+          jobs={jobs}
+          caption={`Air Force AFSC list: required MAGE composite percentile, career field, and minimum AFQT for all ${N} AFSCs.`}
+          calculatorHref={airForceHub.calculatorHref}
+          calculatorLabel="Air Force ASVAB calculator"
+        />
 
         {/* ── Section 2: Operations AFSCs ── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
@@ -1142,6 +1197,14 @@ export default function AirForceAFSCListPage() {
           >
             Try the Free Calculator
           </Link>
+        </div>
+
+        <div className="mt-8 not-prose">
+          <AffiliateBookBlock source="air-force-afsc-list-end" />
+        </div>
+
+        <div className="not-prose">
+          <RelatedLinks title="Air Force ASVAB resources" links={airForceHub.related} />
         </div>
       </article>
     </div>

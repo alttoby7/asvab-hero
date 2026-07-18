@@ -242,7 +242,12 @@ export default function CoastGuardASVABScorePage() {
 
         <p className="text-text-secondary">
           For a deep dive on how the AFQT is calculated and why it matters, see
-          our <Link href="/afqt-score">AFQT score guide</Link>.
+          our <Link href="/afqt-score">AFQT score guide</Link>. For the full
+          sortable chart of every rating and its score requirement, see our{" "}
+          <Link href="/coast-guard-ratings-list">
+            Coast Guard ratings list
+          </Link>
+          .
         </p>
 
         <section className="my-8 not-prose">
@@ -310,9 +315,13 @@ export default function CoastGuardASVABScorePage() {
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          The Coast Guard has roughly 24 enlisted ratings, fewer than any other
+          The Coast Guard has roughly 22 enlisted ratings, fewer than any other
           branch. That makes this list manageable, and it means we can show you
-          every single one.
+          every single one. For a sortable version of this same chart, see our{" "}
+          <Link href="/coast-guard-ratings-list">
+            Coast Guard ratings list
+          </Link>
+          .
         </p>
         <p className="text-text-secondary">
           The &ldquo;Minimum Score&rdquo; column is the sum of the subtests
@@ -1106,6 +1115,7 @@ export default function CoastGuardASVABScorePage() {
           <RelatedLinks
             title="Understand your ASVAB scores"
             links={[
+              { href: "/coast-guard-ratings-list", label: "Coast Guard Ratings List", blurb: "Every rating and its required subtest-sum score, sortable." },
               { href: "/asvab-score-requirements", label: "ASVAB Score Requirements by Branch", blurb: "Compare the Coast Guard minimum to other branches." },
               { href: "/what-is-a-good-asvab-score", label: "What Is a Good ASVAB Score?", blurb: "Judge your score against the rating you want." },
               { href: "/asvab-scores-explained", label: "ASVAB Scores Explained", blurb: "How the AFQT and line scores fit together." },

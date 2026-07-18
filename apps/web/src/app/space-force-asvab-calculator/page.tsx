@@ -222,6 +222,14 @@ export default function SpaceForceCalculatorPage() {
           >
             retake
           </Link>
+          . For the full sortable chart of every Guardian AFSC and its MAGE
+          requirement, see our{" "}
+          <Link
+            href="/space-force-afsc-list"
+            className="text-accent underline hover:text-accent-hover"
+          >
+            Space Force AFSC list
+          </Link>
           .
         </p>
       </section>
@@ -292,6 +300,7 @@ export default function SpaceForceCalculatorPage() {
       <RelatedLinks
         title="ASVAB calculators &amp; guides"
         links={[
+          { href: "/space-force-afsc-list", label: "Space Force AFSC List", blurb: "Every Guardian AFSC and its MAGE requirement, sortable." },
           { href: "/air-force-asvab-calculator", label: "Air Force ASVAB Calculator", blurb: "Same MAGE system, every AFSC and its score." },
           { href: "/air-force-afqt-calculator", label: "Air Force AFQT Calculator", blurb: "Get the percentile-only AFQT breakdown." },
           { href: "/asvab-retake-calculator", label: "ASVAB Retake Calculator", blurb: "When you're eligible to retest." },

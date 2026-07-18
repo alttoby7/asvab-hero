@@ -6,9 +6,11 @@ import Link from "next/link";
 import PricingPlans, { type Tier } from "@/components/PricingPlans";
 import BrandHero from "@/components/BrandHero";
 import ProUpsellCard from "@/components/ProUpsellCard";
+import TestimonialWall from "@/components/TestimonialWall";
 import WhySurvey from "@/components/feedback/WhySurvey";
 import { useSession } from "@/hooks/useSession";
 import { useEntitlement } from "@/hooks/useEntitlement";
+import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { useStripeCheckout } from "@/hooks/useStripeCheckout";
 import {
   trackEvent,
@@ -53,7 +55,54 @@ function UpgradeContent() {
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
 
-  // Honor any explicit ?tier= (so direct pass/monthly links still work), else
+  // Test-date-aware surfacing: recruits whose ASVAB is within ~90 days want a
+  // fixed-term pass, not a subscription. Read the SPECIFIC target_test_date off
+  // the profile the same way the rest of the app does (getSupabaseBrowserClient
+  // → profiles.target_test_date, keyed on user_id). Anonymous / no-date users
+  // fall through to the existing default. Presentation only — no price change.
+  const [passIntent, setPassIntent] = useState(false);
+  useEffect(() => {
+    const userId = session?.user?.id;
+    if (!userId) {
+      setPassIntent(false);
+      return;
+    }
+    let cancelled = false;
+    async function loadTestDate() {
+      try {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const sb = getSupabaseBrowserClient() as any;
+        const { data } = await sb
+          .from("profiles")
+          .select("target_test_date")
+          .eq("user_id", userId)
+          .single();
+        if (cancelled) return;
+        const raw: string | null = data?.target_test_date ?? null;
+        if (!raw) {
+          setPassIntent(false);
+          return;
+        }
+        const testMs = new Date(`${raw}T00:00:00`).getTime();
+        if (Number.isNaN(testMs)) {
+          setPassIntent(false);
+          return;
+        }
+        const days = (testMs - Date.now()) / 86_400_000;
+        // Within ~90 days out (and not already past) → surface the 90-Day Pass.
+        setPassIntent(days >= 0 && days <= 90);
+      } catch {
+        if (!cancelled) setPassIntent(false);
+      }
+    }
+    loadTestDate();
+    return () => {
+      cancelled = true;
+    };
+  }, [session?.user?.id]);
+
+  // Honor any explicit ?tier= (so direct pass/monthly links still work), else,
+  // for an authed user with a near test date, surface the 90-Day Pass; else
   // monthly for paywall traffic (trial is lowest-friction entry), annual for
   // direct visits (best value). Retaker tier retired 2026-06-30; retaker
   // landing pages now route to the 90-Day Pass.
@@ -61,7 +110,9 @@ function UpgradeContent() {
     (t) => t === tierParam,
   );
   const isFromPaywall = !!from && PAYWALL_SOURCES.has(from);
-  const defaultTier: Tier = explicitTier ?? (isFromPaywall ? "monthly" : "annual");
+  const defaultTier: Tier =
+    explicitTier ??
+    (passIntent ? "pass90" : isFromPaywall ? "monthly" : "annual");
   // Drive the above-fold hero off the resolved tier. Annual + monthly both lead
   // with the annual hero (the recommended best-value plan, direct to checkout);
   // an explicit pass link keeps its own hero.
@@ -263,11 +314,17 @@ function UpgradeContent() {
         <PricingPlans
           key={defaultTier}
           defaultTier={defaultTier}
-          recommendedTier="annual"
+          recommendedTier={defaultTier === "pass90" ? "pass90" : "annual"}
           source={from ?? "upgrade_page"}
           hideFreePlan={isFromPaywall}
           placement="pricing_grid"
         />
+      </div>
+
+      {/* Social proof wall — real quotes when curated, honest usage stats until
+          then (never fabricated). Auto-switches when testimonials.ts fills. */}
+      <div className="mt-16">
+        <TestimonialWall />
       </div>
 
       {/* Tight 2-question FAQ */}

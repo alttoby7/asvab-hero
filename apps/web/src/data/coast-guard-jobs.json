@@ -20,7 +20,8 @@
     "description": "Operates, maintains, and repairs diesel engines, gas turbines, pumps, and other mechanical systems aboard Coast Guard cutters and boats.",
     "category": "Engineering",
     "minAFQT": 32,
-    "requirements": [
+    "requirements": [],
+    "anyOf": [
       {
         "composite": "AR+MC+AS",
         "minScore": 150

@@ -16,6 +16,8 @@ const JOB_RANK_LINKS: { label: string; href: string }[] = [
   { label: "Navy jobs (ratings list)", href: "/navy-ratings-list" },
   { label: "Army jobs (MOS list)", href: "/army-mos-list" },
   { label: "Marine Corps jobs (MOS list)", href: "/usmc-mos-list" },
+  { label: "Coast Guard jobs (ratings list)", href: "/coast-guard-ratings-list" },
+  { label: "Space Force jobs (AFSC list)", href: "/space-force-afsc-list" },
   { label: "Army ranks", href: "/army-ranks" },
   { label: "Navy ranks", href: "/navy-ranks" },
   { label: "Air Force ranks", href: "/air-force-ranks" },

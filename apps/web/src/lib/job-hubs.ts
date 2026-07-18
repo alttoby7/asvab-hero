@@ -3,6 +3,9 @@ import type { RelatedLink } from "@/components/RelatedLinks";
 import navyJobsRaw from "@/data/navy-jobs.json";
 import armyJobsRaw from "@/data/army-jobs.json";
 import marinesJobsRaw from "@/data/marines-jobs.json";
+import coastGuardJobsRaw from "@/data/coast-guard-jobs.json";
+import spaceForceJobsRaw from "@/data/space-force-jobs.json";
+import airForceJobsRaw from "@/data/air-force-jobs.json";
 
 /**
  * Single source of truth for the "jobs by ASVAB score" hub pages (one per
@@ -158,6 +161,120 @@ export const marinesHub: JobHub = {
       href: "/asvab-score-chart",
       label: "ASVAB Score Chart",
       blurb: "How each ASVAB subtest feeds into the line-score composites.",
+    },
+  ],
+};
+
+export const coastGuardHub: JobHub = {
+  branch: "coast_guard",
+  route: "/coast-guard-ratings-list",
+  jobs: withBranch(coastGuardJobsRaw, "coast_guard"),
+  scoreSystem: "cg-composite",
+  calculatorHref: "/coast-guard-asvab-calculator",
+  branchAfqtHref: "/afqt-calculator",
+  scoreExplainerHref: "/coast-guard-asvab-score",
+  titleHead: "Coast Guard ASVAB Score Chart",
+  related: [
+    {
+      href: "/coast-guard-asvab-score",
+      label: "Coast Guard ASVAB Score Requirements",
+      blurb: "Minimum AFQT and the subtest-sum formula for every Coast Guard rating.",
+    },
+    {
+      href: "/coast-guard-asvab-calculator",
+      label: "Coast Guard ASVAB Calculator",
+      blurb: "Enter your subtest scores to see the ratings you qualify for.",
+    },
+    {
+      href: "/what-jobs-qualify-asvab-score",
+      label: "What Jobs Qualify for Your ASVAB Score",
+      blurb: "Match your AFQT and subtest scores to jobs across every branch.",
+    },
+    {
+      href: "/afqt-calculator",
+      label: "AFQT Calculator",
+      blurb: "Check the AFQT percentile the Coast Guard uses to qualify you.",
+    },
+    {
+      href: "/asvab-score-chart",
+      label: "ASVAB Score Chart",
+      blurb: "How each ASVAB subtest feeds into every branch's score formulas.",
+    },
+  ],
+};
+
+export const spaceForceHub: JobHub = {
+  branch: "space_force",
+  route: "/space-force-afsc-list",
+  jobs: withBranch(spaceForceJobsRaw, "space_force"),
+  scoreSystem: "mage",
+  calculatorHref: "/space-force-asvab-calculator",
+  branchAfqtHref: "/afqt-calculator",
+  scoreExplainerHref: "/air-force-mage-score",
+  titleHead: "Space Force ASVAB Score Chart",
+  related: [
+    {
+      href: "/space-force-asvab-calculator",
+      label: "Space Force ASVAB Calculator",
+      blurb: "Enter your subtest scores to see your MAGE composites and every Guardian AFSC.",
+    },
+    {
+      href: "/air-force-mage-score",
+      label: "MAGE Composite Scores Explained",
+      blurb: "How Mechanical, Administrative, General, and Electronics scores are built.",
+    },
+    {
+      href: "/what-jobs-qualify-asvab-score",
+      label: "What Jobs Qualify for Your ASVAB Score",
+      blurb: "Match your AFQT and composite scores to jobs across every branch.",
+    },
+    {
+      href: "/afqt-calculator",
+      label: "AFQT Calculator",
+      blurb: "Check the AFQT percentile the Space Force uses to qualify you.",
+    },
+    {
+      href: "/air-force-asvab-calculator",
+      label: "Air Force ASVAB Calculator",
+      blurb: "The same MAGE system, every AFSC and its score requirement.",
+    },
+  ],
+};
+
+export const airForceHub: JobHub = {
+  branch: "air_force",
+  route: "/air-force-afsc-list",
+  jobs: withBranch(airForceJobsRaw, "air_force"),
+  scoreSystem: "mage",
+  calculatorHref: "/air-force-asvab-calculator",
+  branchAfqtHref: "/air-force-afqt-calculator",
+  scoreExplainerHref: "/air-force-mage-score",
+  titleHead: "Air Force ASVAB Score Chart",
+  related: [
+    {
+      href: "/air-force-asvab-score",
+      label: "Air Force ASVAB Score Requirements",
+      blurb: "Minimum AFQT and how the four MAGE composites gate every AFSC.",
+    },
+    {
+      href: "/air-force-asvab-calculator",
+      label: "Air Force ASVAB Calculator",
+      blurb: "Enter your subtest scores to see your MAGE composites and every AFSC.",
+    },
+    {
+      href: "/what-jobs-qualify-asvab-score",
+      label: "What Jobs Qualify for Your ASVAB Score",
+      blurb: "Match your AFQT and composite scores to jobs across every branch.",
+    },
+    {
+      href: "/air-force-afqt-calculator",
+      label: "Air Force AFQT Calculator",
+      blurb: "Estimate the AFQT percentile the Air Force uses to qualify you.",
+    },
+    {
+      href: "/space-force-asvab-calculator",
+      label: "Space Force ASVAB Calculator",
+      blurb: "The same MAGE system, every Guardian AFSC and its score.",
     },
   ],
 };

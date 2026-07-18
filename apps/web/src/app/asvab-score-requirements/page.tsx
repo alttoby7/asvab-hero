@@ -7,9 +7,10 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedLinks from "@/components/RelatedLinks";
 
 export const metadata: Metadata = {
-  title: "ASVAB Score Requirements by Branch (2026)",
+  title:
+    "Minimum ASVAB Scores by Branch (2026): Army, Navy, Air Force, Marines, Coast Guard",
   description:
-    "Every 2026 ASVAB score requirement by branch, from AFQT minimums and GED tiers to composite scores for specific jobs. Find what score you need.",
+    "See the exact 2026 minimum AFQT score to enlist in every branch — plus GED vs. diploma tiers, composite scores for specific jobs, and what happens if you score below the cutoff. Updated for 2026.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-score-requirements",
   },
@@ -23,9 +24,9 @@ export default function ASVABScoreRequirementsPage() {
           "@context": "https://schema.org",
           "@type": "Article",
           headline:
-            "ASVAB Score Requirements: Every Branch Minimum, Composite Score, and Career Threshold for 2026",
+            "Minimum ASVAB Scores by Branch (2026): Army, Navy, Air Force, Marines, Coast Guard",
           description:
-            "Every 2026 ASVAB score requirement by branch, from AFQT minimums and GED tiers to composite scores for specific jobs. Find what score you need.",
+            "See the exact 2026 minimum AFQT score to enlist in every branch — plus GED vs. diploma tiers, composite scores for specific jobs, and what happens if you score below the cutoff. Updated for 2026.",
           url: "https://asvabhero.com/asvab-score-requirements",
           author: {
             "@type": "Organization",
@@ -37,7 +38,7 @@ export default function ASVABScoreRequirementsPage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-05-13",
-          dateModified: "2026-05-13",
+          dateModified: "2026-07-17",
         }}
       />
 
@@ -102,6 +103,14 @@ export default function ASVABScoreRequirementsPage() {
                 text: "You can retake the ASVAB. The first retake is available after 1 month, the second after another month, and every attempt after that requires a 6-month wait. Your most recent score replaces all previous scores. Most candidates improve 5-15 points with focused study.",
               },
             },
+            {
+              "@type": "Question",
+              name: "How long are ASVAB scores valid?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Your ASVAB score is valid for 2 years from your test date for enlistment purposes. If you have not shipped to basic training within that window, you will need to retake the test before a recruiter can process your enlistment. That 2-year validity window is separate from the retake waiting periods (1 month, then another month, then 6 months) that apply if you want to retest for a higher score while your current score is still valid.",
+              },
+            },
           ],
         }}
       />
@@ -119,6 +128,8 @@ export default function ASVABScoreRequirementsPage() {
           ASVAB Score Requirements: Every Branch Minimum, Composite Score, and
           Career Threshold for 2026
         </h1>
+
+        <p className="mt-2 text-sm text-text-tertiary">Verified for July 2026</p>
 
         <AnswerBox>
           Minimum AFQT scores to enlist (high school diploma): Army{" "}
@@ -259,6 +270,24 @@ export default function ASVABScoreRequirementsPage() {
           website within 30 days of your test date.
         </p>
 
+        <h3 className="mt-6 font-display text-lg font-bold text-text-primary">
+          Which Branch Requires the Highest (and Lowest) ASVAB Score?
+        </h3>
+
+        <p className="mt-4 text-text-secondary">
+          <strong>Highest:</strong> Air Force and Space Force tie for the
+          highest bar, both requiring AFQT 36 with a diploma and 65 with a
+          GED &mdash; no other branch sets its diploma-tier floor above 32.{" "}
+          <strong>Lowest:</strong> Army and Navy tie for the lowest diploma
+          minimum at AFQT 31, though Navy applicants effectively need 35 to
+          ship to basic training. Marine Corps and Coast Guard sit in the
+          middle at 32. In short: Air Force/Space Force are the hardest branches
+          to qualify for on paper, Army/Navy the most accessible &mdash; but a
+          low AFQT minimum does not mean an easy path to a good job, since
+          composite scores still gate specific MOSs, ratings, and AFSCs
+          regardless of branch.
+        </p>
+
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Key Point</p>
           <p className="mt-1 text-sm text-text-secondary">
@@ -290,6 +319,40 @@ export default function ASVABScoreRequirementsPage() {
             tag="asvab-score-requirements"
           />
         </section>
+
+        {/* ---------------------------------------------------------------- */}
+        {/* Section 1b: How Long Are ASVAB Scores Valid */}
+        {/* ---------------------------------------------------------------- */}
+
+        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+          How Long Are ASVAB Scores Valid?
+        </h2>
+
+        <p className="mt-4 text-text-secondary">
+          Your ASVAB score is valid for <strong>2 years</strong> from your test
+          date for enlistment purposes. If you have not shipped to basic
+          training within that window, you will need to retake the test before
+          a recruiter can process your enlistment paperwork.
+        </p>
+
+        <p className="text-text-secondary">
+          That 2-year validity window is separate from the retake waiting
+          periods described above. If you are still within your 2-year window
+          and simply want a higher score before shipping, the same retake
+          rules apply: your first retest is available after 1 month, the
+          second after another month, and any attempt after that requires a
+          6-month wait. Your most recent score always replaces the previous
+          one, even if it is lower.
+        </p>
+
+        <p className="text-text-secondary">
+          Already on active duty and looking to raise your score for
+          reclassification or a warrant officer packet instead of enlisting
+          for the first time? The 2-year validity clock does not apply to your
+          official personnel file once you are in service &mdash; see the{" "}
+          <Link href="#already-enlisted">AFCT retake section</Link> below for
+          how those scores work.
+        </p>
 
         {/* ---------------------------------------------------------------- */}
         {/* Section 2: AFQT Categories */}
@@ -834,7 +897,10 @@ export default function ASVABScoreRequirementsPage() {
         {/* Section 6: Already Enlisted */}
         {/* ---------------------------------------------------------------- */}
 
-        <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
+        <h2
+          id="already-enlisted"
+          className="mt-12 font-display text-2xl font-bold text-text-primary"
+        >
           Already Enlisted? How to Improve Your Scores
         </h2>
 
@@ -1203,6 +1269,22 @@ export default function ASVABScoreRequirementsPage() {
               that requires a 6-month wait. Your most recent score replaces all
               previous scores. Most candidates improve 5&ndash;15 points with
               focused study.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-display text-base font-bold text-text-primary">
+              How long are ASVAB scores valid?
+            </h3>
+            <p className="mt-1 text-sm text-text-secondary">
+              Your ASVAB score is valid for 2 years from your test date for
+              enlistment purposes. If you have not shipped to basic training
+              within that window, you will need to retake the test before a
+              recruiter can process your enlistment. That 2-year validity
+              window is separate from the retake waiting periods (1 month,
+              then another month, then 6 months) that apply if you want to
+              retest for a higher score while your current score is still
+              valid.
             </p>
           </div>
         </div>
