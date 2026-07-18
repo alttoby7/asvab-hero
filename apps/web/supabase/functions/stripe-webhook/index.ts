@@ -1640,6 +1640,21 @@ Deno.serve(async (req) => {
         // reminder so the user knows the auto-charge is coming.
         // Idempotent via profiles.trial_ending_email_sent_at — protects against
         // Stripe replays AND re-runs after stale-processing reclaim.
+        //
+        // A/B flag: the pre-charge reminder was disabled in 76ff847 to maximize
+        // *voluntary* conversion (no heads-up before day-7). Re-enabled behind
+        // TRIAL_ENDING_REMINDER_ENABLED so it ships to a controlled cohort: it
+        // trades a small dip in voluntary conversion for fewer insufficient_funds
+        // declines (low-balance users can top up before the charge). Values:
+        //   "false"/unset → off (control); "true" → send to everyone;
+        //   "ab" → 50/50 by a stable hash of user_id (measurable split).
+        // Default off means re-adding the event to enabled-events.json alone does
+        // NOT start sending — the flag is the real switch.
+        const reminderMode = Deno.env.get("TRIAL_ENDING_REMINDER_ENABLED") ?? "false";
+        if (reminderMode !== "true" && reminderMode !== "ab") {
+          console.log("trial_will_end: reminder flag off, skipping (control)");
+          break;
+        }
         const customerId = (obj.customer as string) ?? null;
         const listmonkUrl = Deno.env.get("LISTMONK_URL");
         const listmonkUser = Deno.env.get("LISTMONK_API_USER");
@@ -1674,6 +1689,25 @@ Deno.serve(async (req) => {
         if (alreadySent) {
           console.log("trial_will_end: already sent, skipping", { userId: recipientUserId });
           break;
+        }
+        // A/B mode: deterministic 50/50 by a stable hash of user_id so the split
+        // is fixed across Stripe replays and queryable against day-7 outcomes.
+        // Control arm is stamped 'ab_control' (not sent) so the cohort is
+        // measurable in the DB; the reminder arm proceeds to send below.
+        if (reminderMode === "ab") {
+          let h = 2166136261; // FNV-1a
+          for (let i = 0; i < recipientUserId.length; i++) {
+            h ^= recipientUserId.charCodeAt(i);
+            h = Math.imul(h, 16777619);
+          }
+          if ((h >>> 0) % 2 !== 0) {
+            console.log("trial_will_end: ab control arm, not sending", { userId: recipientUserId });
+            await supabaseAdmin
+              .from("profiles")
+              .update({ trial_ending_email_status: "ab_control" })
+              .eq("user_id", recipientUserId);
+            break;
+          }
         }
         let txStatus: string;
         let txOk = false;

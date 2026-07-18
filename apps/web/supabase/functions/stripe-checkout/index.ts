@@ -22,6 +22,36 @@ const addCors = (res: Response): Response => {
   return res;
 };
 
+// Deterministic trial-variant assignment for the "$1 for 7 days" experiment
+// (codex-validated design, 2026-07-18). Read at call time so a rollout-percent
+// change takes effect on the next deploy without code changes. Returns
+// "free_7d" | "paid_1_7d". A paid assignment ALWAYS requires the one-time $1
+// price id; without it we fall back to free_7d so a misconfiguration can never
+// break checkout or ship a "paid" arm that can't actually charge the $1.
+//   STRIPE_MONTHLY_TRIAL_EXPERIMENT = off | free_only | paid_only | hash_rollout
+//   STRIPE_MONTHLY_TRIAL_PAID_PCT   = 0..100 (used only when hash_rollout)
+// Assignment is a stable hash of userId, so a given user always sees the same
+// variant (a real cohort, not a per-request coin flip).
+function assignTrialVariant(userId: string): "free_7d" | "paid_1_7d" {
+  const mode = Deno.env.get("STRIPE_MONTHLY_TRIAL_EXPERIMENT") ?? "off";
+  const hasDollarPrice = !!Deno.env.get("ASVABHERO_STRIPE_PRICE_TRIAL_DOLLAR");
+  if (mode === "off" || mode === "free_only" || !hasDollarPrice) return "free_7d";
+  if (mode === "paid_only") return "paid_1_7d";
+  if (mode === "hash_rollout") {
+    const pct = Math.max(
+      0,
+      Math.min(100, parseInt(Deno.env.get("STRIPE_MONTHLY_TRIAL_PAID_PCT") ?? "0", 10) || 0),
+    );
+    let h = 2166136261; // FNV-1a
+    for (let i = 0; i < userId.length; i++) {
+      h ^= userId.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    return (h >>> 0) % 100 < pct ? "paid_1_7d" : "free_7d";
+  }
+  return "free_7d";
+}
+
 Deno.serve(async (req) => {
   const cors = handleCors(req);
   if (cors) return cors;
@@ -119,6 +149,13 @@ Deno.serve(async (req) => {
     // Build checkout params. Passes are one-time payments; monthly/annual are
     // subscriptions (and monthly gets a first-time 7-day trial).
     const checkoutValue = TIER_VALUE[tier] ?? "14.99";
+    // Trial experiment: only a first-time monthly subscriber gets a trial, and
+    // only that flow is eligible for the "$1 for 7 days" variant. Computed here
+    // (before success_url) so the variant can ride the redirect for client
+    // analytics; the authoritative conversion signal is still the webhook.
+    const isFirstTimeSubscriber = !profile.stripe_subscription_id;
+    const trialVariant =
+      tier === "monthly" && isFirstTimeSubscriber ? assignTrialVariant(userId) : null;
     const checkoutParams: Record<string, unknown> = {
       mode: isPass ? "payment" : "subscription",
       customer: customerId,
@@ -129,7 +166,7 @@ Deno.serve(async (req) => {
       // {CHECKOUT_SESSION_ID} is expanded by Stripe; it becomes the Meta Pixel
       // eventID so the browser Purchase and (future) Conversions API Purchase
       // deduplicate to a single conversion.
-      success_url: `${SITE_URL}/onboarding?welcome=1&plan=${tier}&value=${checkoutValue}&sid={CHECKOUT_SESSION_ID}`,
+      success_url: `${SITE_URL}/onboarding?welcome=1&plan=${tier}&value=${checkoutValue}&variant=${trialVariant ?? "none"}&sid={CHECKOUT_SESSION_ID}`,
       cancel_url: cancelUrl,
       allow_promotion_codes: "true",
       "metadata[user_id]": userId,
@@ -190,11 +227,29 @@ Deno.serve(async (req) => {
       }
     }
 
-    const isFirstTimeSubscriber = !profile.stripe_subscription_id;
     if (tier === "monthly" && isFirstTimeSubscriber) {
       checkoutParams["subscription_data[trial_period_days]"] = "7";
       // Required so card is captured up front even with a trial.
       checkoutParams["payment_method_collection"] = "always";
+
+      // "$1 for 7 days" variant: add the one-time $1 Price as a second line item
+      // on the SAME subscription-mode session. Stripe invoices a one-time line
+      // item immediately at trial start ($1 now) while the recurring price still
+      // begins billing at day 7 — one card entry, no double-charge. The webhook's
+      // conversion signals (trial-converted email, Meta Subscribe) are gated on
+      // billing_reason='subscription_cycle', so this $1 'subscription_create'
+      // invoice is NOT counted as a paid conversion. assignTrialVariant only
+      // returns paid_1_7d when ASVABHERO_STRIPE_PRICE_TRIAL_DOLLAR is set.
+      if (trialVariant === "paid_1_7d") {
+        checkoutParams["line_items[1][price]"] = Deno.env.get(
+          "ASVABHERO_STRIPE_PRICE_TRIAL_DOLLAR",
+        );
+        checkoutParams["line_items[1][quantity]"] = 1;
+      }
+      // Stamp the variant so the webhook + analytics can attribute outcomes to
+      // the correct arm (session metadata one-shot; subscription metadata durable).
+      checkoutParams["metadata[trial_variant]"] = trialVariant ?? "free_7d";
+      checkoutParams["subscription_data[metadata][trial_variant]"] = trialVariant ?? "free_7d";
     }
 
     const session = await stripeRequest<{ id: string; url: string }>(

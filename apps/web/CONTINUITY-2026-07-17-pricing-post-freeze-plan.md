@@ -41,8 +41,8 @@ and the data says leading with it costs almost no recurring LTV. The blocker is 
 ladder. Fix it primarily by **raising monthly** (which the data shows is low-value volume),
 not by cutting the Pass.
 
-### Phase 1 — highest confidence, do first (post-freeze)
-**Monthly $14.99 → $24.99.** This restores the coherent 6/23 ladder (3×$24.99 = $74.97 > $59
+### Phase 1 — highest confidence, do first (post-freeze) — ✅ DECIDED $24.99 (owner, 2026-07-18)
+**Monthly $14.99 → $24.99.** Owner approved 2026-07-18: hold $24.99 (not $19.99 — at $19.99, 3×=$59.97 ties the $59 Pass with no daylight, and 1-2mo windows still undercut it; monthly is proven low-LTV so no volume worth protecting; still far under Mometrix $39.99). Apply on/after freeze lift 2026-07-29. This restores the coherent 6/23 ladder (3×$24.99 = $74.97 > $59
 Pass, so the Pass is the obvious deal). NOTE: this was shipped 6/23 then reverted to $14.99 on
 6/30 — but the revert happened *before* the 6/23 doc's own planned 7/14 conversion review, so
 $24.99 was **never actually evaluated on data**. The LTV data above now justifies re-approaching
@@ -69,7 +69,7 @@ relief sunsets ~Nov 2027) surface a "subscribe on the web for less" link steerin
 web checkout. Given Android ≈6% of traffic, don't over-invest yet.
 
 ## Open decisions for owner (before executing Phase 2)
-1. Phase 1 monthly $24.99 — OK to re-apply and hold? (recommended: yes)
+1. Phase 1 monthly $24.99 — ✅ DECIDED yes (owner 2026-07-18); apply post-freeze.
 2. Annual $49.99 → $79? (removes inversion, but touches the workhorse tier)
 3. Pass $59 → $69? (more ad headroom, but revises the committed $59)
 4. Confirm 90-day term stays (data says yes; ~85% coverage).
