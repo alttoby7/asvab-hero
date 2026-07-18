@@ -186,7 +186,7 @@ export default function AirForceMageScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   M (Mechanical)
                 </td>
-                <td className="py-2 pr-4 font-mono">AR + 2&times;VE + MC + AS</td>
+                <td className="py-2 pr-4 font-mono">MC + 2&times;AS + GS</td>
                 <td className="py-2">
                   Mechanical and physical-systems aptitude
                 </td>
@@ -222,7 +222,7 @@ export default function AirForceMageScorePage() {
 
         {/* FORMULA */}
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          M = AR + 2(VE) + MC + AS
+          M = MC + 2(AS) + GS
           <br />
           A = VE + MK
           <br />
