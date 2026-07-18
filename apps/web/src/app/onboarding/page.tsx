@@ -21,6 +21,9 @@ function OnboardingPageInner() {
   const { session, loading: sessionLoading } = useSession();
   const isWelcome = searchParams?.get("welcome") === "1";
   const plan = searchParams?.get("plan") ?? "monthly";
+  // Trial experiment arm (stripe-checkout stamps ?variant=). "paid_1_7d" charges
+  // $1 immediately, so its purchase event must report $1, not the list price.
+  const variant = searchParams?.get("variant") ?? "none";
   const isPassPlan = plan === "pass90" || plan === "retaker";
   const value = Number.parseFloat(
     searchParams?.get("value") ?? String(PLAN_DEFAULT_VALUE[plan] ?? 14.99)
@@ -49,9 +52,11 @@ function OnboardingPageInner() {
         /* ignore */
       }
       if (!already) {
-        const safeValue = Number.isFinite(value)
-          ? value
-          : PLAN_DEFAULT_VALUE[plan] ?? 14.99;
+        // paid_1_7d trial arm: the immediate charge is $1, so report that as the
+        // purchase value (keeps the experiment's revenue-per-arm honest); all
+        // other flows keep the success_url / plan-default value.
+        const listValue = Number.isFinite(value) ? value : PLAN_DEFAULT_VALUE[plan] ?? 14.99;
+        const safeValue = variant === "paid_1_7d" ? 1 : listValue;
         // One-time passes get a non-"sub_" transaction id and no
         // subscription_started event (keeps GA4 / the revenue dashboard's
         // pass-vs-subscription split honest).
@@ -62,6 +67,7 @@ function OnboardingPageInner() {
           value: safeValue,
           currency: "USD",
           plan,
+          trial_variant: variant,
           // Meta eventID for browser<->CAPI dedup; falls back to the txn id.
           event_id: metaEventId,
         });
@@ -78,6 +84,7 @@ function OnboardingPageInner() {
             plan,
             value: safeValue,
             currency: "USD",
+            trial_variant: variant,
           });
         }
         try {
@@ -89,7 +96,7 @@ function OnboardingPageInner() {
     } catch {
       /* swallow */
     }
-  }, [isWelcome, plan, value]);
+  }, [isWelcome, plan, value, variant]);
 
   if (sessionLoading) {
     return (
