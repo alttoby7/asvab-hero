@@ -16,11 +16,11 @@ import { GUARANTEE_LINE, GUARANTEE_TAG } from "@/lib/guarantee";
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 
-// Pricing model (2026-06-27): annual-led. Stripe data showed the $49.99/yr
+// Pricing model (2026-06-27): annual-led. Stripe data showed the $79/yr
 // Annual was the clean converter pre-pivot, while the $59 one-time pass got
 // abandoned ~70% at the upfront-payment step. So:
-//   - Annual ($49.99/yr) is the default + "Best value" recommendation.
-//   - Monthly ($14.99/mo, 7-day trial) is the low-friction start option.
+//   - Annual ($79/yr) is the default + "Best value" recommendation.
+//   - Monthly ($24.99/mo, 7-day trial) is the low-friction start option.
 //   - 90-Day Pass ($59, one-time) is demoted to a short-term option, no longer
 //     the loud default.
 // Retired 2026-06-30: the Retaker Pass ($119) never sold and was removed.
@@ -44,12 +44,12 @@ const TIERS: Record<Tier, TierConfig> = {
   annual: {
     key: "annual",
     label: "Annual",
-    price: "$49.99",
+    price: "$79",
     unit: "/ year",
     tagline:
       "A full year of Pro at the lowest price — the best value if you have more than a couple months before test day.",
     badge: "Best value",
-    cta: "Get Pro — $49.99/year",
+    cta: "Get Pro — $79/year",
     note: `Billed yearly. Cancel anytime in Account Settings. ${GUARANTEE_LINE}`,
   },
   pass90: {
@@ -66,12 +66,12 @@ const TIERS: Record<Tier, TierConfig> = {
   monthly: {
     key: "monthly",
     label: "Monthly",
-    price: "$14.99",
+    price: "$24.99",
     unit: "/ month",
     tagline:
       "Month-to-month flexibility if you're not sure of your test date yet.",
     cta: "Start 7-day free trial",
-    note: "Card required. $14.99/mo after the 7-day trial unless cancelled. Cancel anytime in Account Settings.",
+    note: "Card required. $24.99/mo after the 7-day trial unless cancelled. Cancel anytime in Account Settings.",
   },
 };
 
@@ -212,7 +212,7 @@ export default function PricingPlans({
       <div className="mx-auto mb-8 flex max-w-md items-center justify-center gap-2 rounded-xl border border-navy-border bg-navy-light p-1">
         {tierOrder.map((t) => {
           const cfg = TIERS[t];
-          const priceTag = t === "annual" ? "$49.99/yr" : t === "monthly" ? "$14.99/mo" : "$59";
+          const priceTag = t === "annual" ? "$79/yr" : t === "monthly" ? "$24.99/mo" : "$59";
           return (
             <button
               key={t}
@@ -239,7 +239,7 @@ export default function PricingPlans({
 
       {recommendedTier === "annual" && (
         <p className="-mt-4 mb-6 text-center text-xs font-semibold text-accent">
-          ★ Best value — a full year of Pro for $49.99 + {GUARANTEE_TAG}
+          ★ Best value — a full year of Pro for $79 + {GUARANTEE_TAG}
         </p>
       )}
 

@@ -42,8 +42,8 @@ Deno.serve(async (req) => {
     // are recurring subscriptions. pass_days drives pro_until in the webhook.
     const PASS_DAYS: Record<string, number> = { pass90: 90 };
     const TIER_VALUE: Record<string, string> = {
-      monthly: "14.99",
-      annual: "49.99",
+      monthly: "24.99",
+      annual: "79.00",
       pass90: "59.00",
     };
     // Human-readable charge/subscription description so the Stripe dashboard

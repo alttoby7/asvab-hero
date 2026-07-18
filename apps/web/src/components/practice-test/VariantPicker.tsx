@@ -455,7 +455,7 @@ export default function VariantPicker() {
       <p className="mt-2 text-center text-xs text-text-tertiary">
         Free: 1 diagnostic + 1 adaptive {adaptiveFreeLabel} block/day + unlimited
         mistake review.&nbsp; Pro: unlimited adaptive, drills &amp; sims &middot;
-        90-Day Pass $59 or $14.99/mo &middot;{" "}
+        90-Day Pass $59 or $24.99/mo &middot;{" "}
         <Link
           href="/upgrade?from=variant_picker_footer"
           className="text-accent no-underline hover:underline"

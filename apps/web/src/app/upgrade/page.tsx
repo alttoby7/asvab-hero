@@ -70,14 +70,14 @@ function UpgradeContent() {
   const HERO = {
     monthly: {
       price: "Free",
-      line: `for 7 days · then $14.99/mo · cancel anytime · ${GUARANTEE_TAG}`,
+      line: `for 7 days · then $24.99/mo · cancel anytime · ${GUARANTEE_TAG}`,
       cta: "Start your 7-day free trial",
-      sub: "Card required. $14.99/mo after trial. Cancel anytime.",
+      sub: "Card required. $24.99/mo after trial. Cancel anytime.",
     },
     annual: {
-      price: "$49.99",
+      price: "$79",
       line: `per year · best value · ${GUARANTEE_TAG}`,
-      cta: "Get Pro — $49.99/year",
+      cta: "Get Pro — $79/year",
       sub: "Billed yearly. Cancel anytime — no auto-renew surprises.",
     },
     pass90: {
