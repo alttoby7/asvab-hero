@@ -33,13 +33,17 @@ and traffic is our bottleneck.
    - `STRIPE_MONTHLY_TRIAL_PAID_PCT=50`  (only used by `hash_rollout`)
    - Mirror `ASVABHERO_STRIPE_PRICE_TRIAL_DOLLAR` into the central `.env`.
 3. **Deploy:** `supabase functions deploy stripe-checkout --project-ref abypyprvgvofzrtifgzi`
-4. **⚠️ VERIFY IN STRIPE TEST MODE FIRST (do not skip — this is the crux codex flagged):**
-   In test mode, create a test $1 price, set `STRIPE_MONTHLY_TRIAL_EXPERIMENT=paid_only`,
-   run a real test checkout with a test card, and confirm on the resulting
-   subscription/invoices: **(a)** a $1 invoice is charged *immediately* at trial
-   start, **(b)** the subscription is `trialing`, **(c)** the first `$X` recurring
-   invoice fires at day 7 (`billing_reason=subscription_cycle`), **(d)** no double
-   charge. Only after this holds do you enable in live mode.
+4. **✅ VERIFIED IN STRIPE TEST MODE 2026-07-18** (the crux codex flagged). Replicated
+   the exact checkout params (subscription mode + `trial_period_days=7` +
+   `payment_method_collection=always` + $1 one-time `line_items[1]`) and completed a
+   real test checkout with card `4242…`. Result on the resulting objects:
+   **(a)** `$1.00` invoice **PAID immediately**, `billing_reason=subscription_create`;
+   **(b)** subscription **`trialing`**; **(c)** trial 7 days (→ day-7 `$24.99`
+   `subscription_cycle`); **(d)** no double charge (only $1 paid). Stripe's hosted
+   checkout even labeled it "$1.00 / Then $24.99 per month" with the recurring line
+   "7 days free". The behavior is confirmed. **Still do a final live-mode smoke test**
+   after creating the LIVE $1 price + enabling `paid_only` for one real checkout, since
+   live prices/config differ, before rolling out `hash_rollout`.
 
 ### Rollback
 `STRIPE_MONTHLY_TRIAL_EXPERIMENT=off` (or `free_only`) + redeploy. Instantly
