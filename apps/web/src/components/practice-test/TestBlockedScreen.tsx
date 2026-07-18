@@ -200,13 +200,13 @@ export default function TestBlockedScreen({
           <p className="mb-6 text-xs text-text-tertiary">
             {hadPriorSub ? (
               <>
-                <span className="font-mono text-sm font-bold text-text-primary">$14.99</span>{" "}
+                <span className="font-mono text-sm font-bold text-text-primary">$24.99</span>{" "}
                 / month · cancel anytime · {GUARANTEE_TAG}
               </>
             ) : (
               <>
                 <span className="font-mono text-sm font-bold text-text-primary">Free for 7 days</span>{" "}
-                · then $14.99/mo · cancel anytime · {GUARANTEE_TAG}
+                · then $24.99/mo · cancel anytime · {GUARANTEE_TAG}
               </>
             )}
           </p>
@@ -233,7 +233,7 @@ export default function TestBlockedScreen({
               disabled={checkoutLoading}
               className="block w-full rounded-xl bg-accent px-6 py-3.5 font-display text-base font-bold text-white transition-all duration-200 hover:bg-accent-hover hover:shadow-[0_0_24px_var(--color-accent-glow)] disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {checkoutLoading ? "Loading checkout…" : hadPriorSub ? "Go Pro — $14.99/mo" : "Start your 7-day free trial"}
+              {checkoutLoading ? "Loading checkout…" : hadPriorSub ? "Go Pro — $24.99/mo" : "Start your 7-day free trial"}
             </button>
           ) : (
             <Link

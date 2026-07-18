@@ -92,7 +92,7 @@ const HOME_SCHEMA = {
         {
           "@type": "Offer",
           name: "Pro (monthly)",
-          price: "14.99",
+          price: "24.99",
           priceCurrency: "USD",
           url: "https://asvabhero.com/pricing",
         },
@@ -397,7 +397,7 @@ export default function HomePage() {
               </ul>
               <p className="mt-5 text-sm text-text-tertiary">
                 <span className="font-semibold text-text-secondary">90-Day Pass $59</span>{" "}
-                one-time, or $14.99 / month.{" "}
+                one-time, or $24.99 / month.{" "}
                 <Link
                   href="/pricing"
                   className="font-semibold text-accent no-underline transition-colors hover:text-accent-hover"

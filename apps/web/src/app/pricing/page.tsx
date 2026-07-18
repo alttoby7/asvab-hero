@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "ASVAB Hero pricing: a free score-moving core for everyone, plus Pro for unlimited practice tests and study tools — best value at $49.99/year, or a one-time 90-Day Pass or month-to-month.",
+    "ASVAB Hero pricing: a free score-moving core for everyone, plus Pro for unlimited practice tests and study tools — best value at $79/year, or a one-time 90-Day Pass or month-to-month.",
   alternates: {
     canonical: "https://asvabhero.com/pricing",
   },
@@ -22,7 +22,7 @@ const FAQ = [
   },
   {
     q: "Do I have to deal with a subscription?",
-    a: "Only if you want to. The 90-Day Pass is a one-time payment -- it just expires after 90 days, nothing to cancel and no auto-renew. If you pick the $14.99/month option instead, you can cancel anytime from your billing page and keep access through the end of the paid period.",
+    a: "Only if you want to. The 90-Day Pass is a one-time payment -- it just expires after 90 days, nothing to cancel and no auto-renew. If you pick the $24.99/month option instead, you can cancel anytime from your billing page and keep access through the end of the paid period.",
   },
   {
     q: "Do I need Pro if I already know my weak areas?",
@@ -48,7 +48,7 @@ export default function PricingPage() {
             {
               "@type": "Offer",
               name: "Pro Annual",
-              price: "49.99",
+              price: "79.00",
               priceCurrency: "USD",
               url: "https://asvabhero.com/pricing",
               availability: "https://schema.org/InStock",
@@ -64,7 +64,7 @@ export default function PricingPage() {
             {
               "@type": "Offer",
               name: "Pro Monthly",
-              price: "14.99",
+              price: "24.99",
               priceCurrency: "USD",
               url: "https://asvabhero.com/pricing",
               availability: "https://schema.org/InStock",
@@ -88,7 +88,7 @@ export default function PricingPage() {
           Simple, transparent pricing
         </h1>
         <p className="mt-3 text-text-secondary">
-          ASVAB Hero Pro costs $49.99 per year (best value), $14.99 per month, or $59 for a one-time 90-Day Pass. The score-moving core -- daily adaptive practice, Mistake Bank, and calculators -- is always free with no card required.
+          ASVAB Hero Pro costs $79 per year (best value), $24.99 per month, or $59 for a one-time 90-Day Pass. The score-moving core -- daily adaptive practice, Mistake Bank, and calculators -- is always free with no card required.
         </p>
       </div>
 
