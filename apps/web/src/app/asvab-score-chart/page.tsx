@@ -458,7 +458,7 @@ export default function ASVABScoreChartPage() {
             </thead>
             <tbody className="text-text-secondary">
               {[
-                ["Mechanical (M)", "AR + AS + MC + VE", "Maintenance, Munitions"],
+                ["Mechanical (M)", "MC + 2×AS + GS", "Maintenance, Munitions"],
                 ["Administrative (A)", "MK + VE", "Finance, Services, Intel"],
                 ["General (G)", "AR + VE", "Linguist, Security Forces, Cyber"],
                 ["Electronic (E)", "AR + EI + GS + MK", "Avionics, Electronic Systems"],

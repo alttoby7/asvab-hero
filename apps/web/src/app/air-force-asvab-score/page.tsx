@@ -232,7 +232,7 @@ export default function AirForceASVABScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   M (Mechanical)
                 </td>
-                <td className="py-2 pr-4 font-mono">AR + 2&times;VE + MC + AS</td>
+                <td className="py-2 pr-4 font-mono">MC + 2&times;AS + GS</td>
                 <td className="py-2">Maintenance, propulsion, munitions</td>
               </tr>
               <tr className="border-b border-navy-border/50">
@@ -522,7 +522,7 @@ export default function AirForceASVABScorePage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   M (Mechanical)
                 </td>
-                <td className="py-2 pr-4 font-mono">AR + 2&times;VE + MC + AS</td>
+                <td className="py-2 pr-4 font-mono">MC + 2&times;AS + GS</td>
                 <td className="py-2 pr-4">
                   Physical principles, machines, auto/shop
                 </td>
@@ -572,7 +572,7 @@ export default function AirForceASVABScorePage() {
 
         {/* FORMULA */}
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          M = AR + 2(VE) + MC + AS
+          M = MC + 2(AS) + GS
           <br />
           A = VE + MK
           <br />

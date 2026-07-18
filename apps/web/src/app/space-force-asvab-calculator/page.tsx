@@ -151,7 +151,7 @@ export default function SpaceForceCalculatorPage() {
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2">
           {[
-            ["M, Mechanical", "AR + 2×VE + MC + AS"],
+            ["M, Mechanical", "MC + 2×AS + GS"],
             ["A, Administrative", "VE + MK"],
             ["G, General", "VE + AR"],
             ["E, Electronics", "AR + MK + EI + GS"],
