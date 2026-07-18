@@ -348,33 +348,61 @@ ${statsLine}
 `;
 };
 
-// Renewal charge failed. accessActive is false in this codebase because
-// has_active_pro() in 0002_billing.sql only treats billing_status='active' (or
-// 'lifetime') as Pro — once Stripe flips the sub to past_due, our handler sets
+// Renewal charge failed — escalating multi-touch dunning copy.
+// accessActive is false in this codebase because has_active_pro() in
+// 0002_billing.sql only treats billing_status='active' (or 'lifetime') as Pro —
+// once Stripe flips the sub to past_due, our handler sets
 // billing_status='past_due' and Pro access is gated immediately. Do not lie.
+//
+// attemptCount comes straight from Stripe's invoice.attempt_count (1 on the
+// first failure, incrementing per Smart Retry). Attempt 1 is a soft nudge;
+// attempts 2+ escalate urgency and lean harder on the card-update CTA. Every
+// tier links the same Stripe customer portal (/account/billing).
 const renderPaymentFailed = (
   firstName: string,
   attemptCount: number | null,
   nextAttemptISO: string | null,
 ): string => {
-  const opening = attemptCount && attemptCount >= 2
-    ? `<p>Your ASVAB Hero renewal still hasn't gone through — latest attempt was charge ${attemptCount}.</p>`
-    : `<p>Your ASVAB Hero renewal just didn't go through — most likely an expired card or a temporary hold from your bank.</p>`;
+  const isEscalation = !!attemptCount && attemptCount >= 2;
 
-  const nextLine = nextAttemptISO
-    ? `<p>Stripe will retry on ${new Date(nextAttemptISO).toLocaleDateString("en-US", { month: "long", day: "numeric" })}, but the easier path is to update your card now.</p>`
-    : "";
+  const nextRetryDate = nextAttemptISO
+    ? new Date(nextAttemptISO).toLocaleDateString("en-US", { month: "long", day: "numeric" })
+    : null;
+
+  if (!isEscalation) {
+    // Attempt 1 — soft. Assume the friendliest cause; make the fix effortless.
+    const nextLine = nextRetryDate
+      ? `<p>Stripe will automatically retry on ${nextRetryDate}, but the faster path is to update your card now so you don't lose any access.</p>`
+      : "";
+    return `\
+<p>Hi ${firstName},</p>
+
+<p>Your ASVAB Hero payment just didn't go through. Most likely an expired card or a temporary hold from your bank.</p>
+${nextLine}
+<p>Until it clears, your Pro features are paused. Your practice history is safe and your account is intact, you just won't see Pro until billing recovers.</p>
+
+<p>Update your card in one click here: <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a>. That opens the Stripe customer portal where you can update or replace the card on file.</p>
+
+<p>Reply if you need help. I read every reply.</p>
+
+<p>Trish<br>ASVAB Hero</p>
+`;
+  }
+
+  // Attempts 2+ — escalate. State plainly that access is paused and each retry
+  // is another chance to lose it; make updating the card the single obvious act.
+  const nextLine = nextRetryDate
+    ? `<p>Stripe will try one more time on ${nextRetryDate}. If that retry fails on the same card, the renewal stops and Pro stays off, so please update your card before then.</p>`
+    : `<p>Stripe will keep retrying for a few more days, but on the same card the result won't change. Please update it so the next retry can go through.</p>`;
 
   return `\
 <p>Hi ${firstName},</p>
 
-${opening}
+<p>Your ASVAB Hero renewal still hasn't gone through. This was attempt ${attemptCount}, and your Pro access is paused right now.</p>
 ${nextLine}
-<p>Until the card goes through, your Pro features are paused. Practice history is safe, your account is intact, you just won't see Pro until billing recovers.</p>
+<p>The fix takes about a minute: <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a> opens the Stripe customer portal where you can update or replace the card on file. The moment a charge clears, your unlimited practice, score history, and study guides switch right back on.</p>
 
-<p>Fix it in one click here: <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a> opens the Stripe customer portal where you can update or replace the card on file.</p>
-
-<p>If the card on file is the right one and you still got this, it might be a hold from your bank — call the number on the back of the card and ask them to clear ASVAB Hero. Then update the card in the link above and we'll retry.</p>
+<p>If the card on file is the right one and you still got this, it's usually a hold from your bank. Call the number on the back of the card and ask them to clear ASVAB Hero, then update the card in the link above.</p>
 
 <p>Reply if you need help. I read every reply.</p>
 
@@ -404,6 +432,30 @@ const renderWelcomeTrial = (firstName: string): string => `\
 <p>If Pro is helping, do nothing. Your card runs on day 8 at $14.99 and you keep going. If it is not the right fit, cancel any time at <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a>.</p>
 
 <p>Reply with your branch and target test date. I read every reply.</p>
+
+<p>Trish<br>ASVAB Hero</p>
+`;
+
+// Cancellation win-back. Sent once when a subscription is deleted (canceled).
+// Warm, short, low-pressure: name what they'll miss, leave the door open, link
+// the upgrade page. No discount promise — just an easy path back.
+const renderWinback = (firstName: string): string => `\
+<p>Hi ${firstName},</p>
+
+<p>Your ASVAB Hero Pro subscription is canceled, and that's completely fine. I just wanted to say thanks for giving it a run.</p>
+
+<p>If test day is still ahead of you, here's what Pro was doing in the background:</p>
+<ul>
+  <li>Unlimited adaptive practice that kept targeting your weakest subtests</li>
+  <li>Full score history so you could see the line moving</li>
+  <li>39 study guides covering every ASVAB topic</li>
+</ul>
+
+<p>Whenever you want it back, you can pick up right where you left off. Your practice history and account are still here. Restart anytime at <a href="https://asvabhero.com/upgrade">asvabhero.com/upgrade</a>.</p>
+
+<p>And if something about Pro didn't land for you, just reply and tell me. I read every reply, and that feedback is how it gets better.</p>
+
+<p>Rooting for you either way.</p>
 
 <p>Trish<br>ASVAB Hero</p>
 `;
@@ -769,9 +821,18 @@ const sendPaymentFailedEmail = async (args: {
     suppressedStatus = "suppressed_billing_reason";
   }
 
-  // Atomic claim via ledger PK on invoice_id. Insert with the gate decision
-  // baked into status. If a row already exists for this invoice, do nothing.
-  const insertRow = {
+  // Attempt-level idempotency key. Stripe's invoice.attempt_count is present and
+  // >= 1 on every automatic-collection payment_failed; the `?? 1` is purely
+  // defensive and, by collapsing a (theoretical) null attempt onto key 1, favors
+  // NOT double-sending over sending twice.
+  const attemptKey = attemptCount ?? 1;
+
+  // (1) Per-INVOICE recovery ledger — unchanged table + semantics from 0011.
+  // One row per invoice (PK invoice_id); invoice.paid stamps recovered_at on it.
+  // We record it with the suppression decision baked into status but do NOT gate
+  // the email on this claim — the send gate is the per-attempt claim below.
+  // onConflict ignoreDuplicates: attempt 1 inserts, later attempts no-op.
+  const ledgerRow = {
     invoice_id: invoiceId,
     user_id: userId,
     subscription_id: subscriptionId,
@@ -781,20 +842,17 @@ const sendPaymentFailedEmail = async (args: {
     billing_reason: billingReason,
     status: suppressedStatus ?? "sending",
   };
-  const { data: claimed, error: claimErr } = await supabaseAdmin
+  const { error: ledgerErr } = await supabaseAdmin
     .from("payment_failed_emails")
-    .upsert(insertRow, { onConflict: "invoice_id", ignoreDuplicates: true })
-    .select("invoice_id")
-    .maybeSingle();
+    .upsert(ledgerRow, { onConflict: "invoice_id", ignoreDuplicates: true });
+  if (ledgerErr) {
+    console.error("payment-failed: ledger upsert failed", { userId, invoiceId, error: ledgerErr.message });
+    return;
+  }
 
-  if (claimErr) {
-    console.error("payment-failed: claim failed", { userId, invoiceId, error: claimErr.message });
-    return;
-  }
-  if (!claimed) {
-    console.log("payment-failed: invoice already handled, skipping", { userId, invoiceId });
-    return;
-  }
+  // Suppression is a property of the invoice (collection_method / billing_reason
+  // do not change across attempts), so it is decided once and applies to every
+  // attempt. Suppressed invoices never send a dunning email.
   if (suppressedStatus) {
     console.log("payment-failed: suppressed", {
       userId,
@@ -803,6 +861,63 @@ const sendPaymentFailedEmail = async (args: {
       collectionMethod,
       billingReason,
     });
+    return;
+  }
+
+  // (1b) Late-delivery / already-recovered guard. Stripe can deliver
+  // invoice.payment_failed AFTER the invoice has already been paid/recovered
+  // (invoice.paid stamps recovered_at on this same per-invoice ledger row).
+  // Sending a "your payment failed" email to a customer who is actually paid up
+  // is a trust bug. If recovered_at is already set, skip the SEND, and skip it
+  // BEFORE the per-attempt dunning_sends claim below, so we never write a claim
+  // row that could block a legitimately-earlier attempt. On a normal first
+  // failure the ledger row we just upserted has recovered_at = NULL, so this
+  // never fires and attempt 1 still sends exactly one email. A read error here
+  // fails OPEN (proceeds to send) rather than risk suppressing a real dunning.
+  const { data: recoveryRow, error: recoveryErr } = await supabaseAdmin
+    .from("payment_failed_emails")
+    .select("recovered_at")
+    .eq("invoice_id", invoiceId)
+    .maybeSingle();
+  if (recoveryErr) {
+    console.error("payment-failed: recovery check failed, proceeding", {
+      userId,
+      invoiceId,
+      error: recoveryErr.message,
+    });
+  } else if (recoveryRow?.recovered_at) {
+    console.log("payment-failed: invoice already recovered, skipping send", {
+      userId,
+      invoiceId,
+      recovered_at: recoveryRow.recovered_at,
+    });
+    return;
+  }
+
+  // (2) Per-ATTEMPT send claim. PK (invoice_id, attempt_count) + ignoreDuplicates
+  // is the atomic gate: exactly one email per (invoice, attempt) no matter how
+  // many duplicate webhook deliveries of the same retry arrive.
+  const { data: attemptClaim, error: attemptErr } = await supabaseAdmin
+    .from("dunning_sends")
+    .upsert(
+      {
+        invoice_id: invoiceId,
+        attempt_count: attemptKey,
+        user_id: userId,
+        subscription_id: subscriptionId,
+        kind: "dunning",
+        status: "sending",
+      },
+      { onConflict: "invoice_id,attempt_count", ignoreDuplicates: true },
+    )
+    .select("invoice_id")
+    .maybeSingle();
+  if (attemptErr) {
+    console.error("payment-failed: attempt claim failed", { userId, invoiceId, attemptKey, error: attemptErr.message });
+    return;
+  }
+  if (!attemptClaim) {
+    console.log("payment-failed: attempt already handled, skipping", { userId, invoiceId, attemptKey });
     return;
   }
 
@@ -821,16 +936,21 @@ const sendPaymentFailedEmail = async (args: {
 
   const recipientEmail = customerEmail || profile?.email || undefined;
   if (!recipientEmail) {
-    console.log("payment-failed: no recipient email; marking error_no_recipient", { userId, invoiceId });
+    console.log("payment-failed: no recipient email; marking error_no_recipient", { userId, invoiceId, attemptKey });
     await supabaseAdmin
-      .from("payment_failed_emails")
+      .from("dunning_sends")
       .update({ status: "error_no_recipient", updated_at: new Date().toISOString() })
-      .eq("invoice_id", invoiceId);
+      .eq("invoice_id", invoiceId)
+      .eq("attempt_count", attemptKey);
     return;
   }
 
   const greetingName = profile?.display_name ?? "there";
-  const subject = "Your ASVAB Hero payment didn't go through";
+  // Subject escalates with the attempt: attempt 1 nudges, attempts 2+ warn that
+  // Pro access is paused. Copy body escalation lives in renderPaymentFailed.
+  const subject = attemptKey >= 2
+    ? "Action needed: your ASVAB Hero Pro access is paused"
+    : "Your ASVAB Hero payment didn't go through, update your card";
   const html = renderPaymentFailed(greetingName, attemptCount, nextAttemptISO);
 
   let resendId: string | null = null;
@@ -909,20 +1029,201 @@ const sendPaymentFailedEmail = async (args: {
     });
   }
 
-  const updatePayload: Record<string, unknown> = {
-    status,
-    updated_at: new Date().toISOString(),
-  };
+  const nowIso = new Date().toISOString();
+
+  // Per-attempt result → dunning_sends (the send ledger / idempotency grain).
+  const attemptUpdate: Record<string, unknown> = { status, updated_at: nowIso };
   if (updateSentAt) {
-    updatePayload.sent_at = new Date().toISOString();
-    updatePayload.resend_id = resendId;
+    attemptUpdate.sent_at = nowIso;
+    attemptUpdate.resend_id = resendId;
+  }
+  const { error: attemptUpdateErr } = await supabaseAdmin
+    .from("dunning_sends")
+    .update(attemptUpdate)
+    .eq("invoice_id", invoiceId)
+    .eq("attempt_count", attemptKey);
+  if (attemptUpdateErr) {
+    console.error("payment-failed: attempt status update failed", { userId, invoiceId, attemptKey, error: attemptUpdateErr.message, status });
+  }
+
+  // Mirror the FIRST successful send onto the per-invoice recovery ledger so its
+  // unrecovered partial index + support "dunning vs recovered" query keep working
+  // (both read payment_failed_emails.sent_at). Guarded on sent_at IS NULL so only
+  // the earliest send stamps it; later attempts no-op.
+  if (updateSentAt) {
+    const { error: ledgerStampErr } = await supabaseAdmin
+      .from("payment_failed_emails")
+      .update({ status: "sent", sent_at: nowIso, resend_id: resendId, updated_at: nowIso })
+      .eq("invoice_id", invoiceId)
+      .is("sent_at", null);
+    if (ledgerStampErr) {
+      console.error("payment-failed: ledger sent stamp failed", { userId, invoiceId, error: ledgerStampErr.message });
+    }
+  }
+};
+
+// Send the one-time cancellation win-back email via Resend.
+// Fires from customer.subscription.deleted after the profile has been flipped to
+// 'canceled'. Idempotent via profiles.winback_email_sent_at using the same
+// atomic-claim pattern as the trial-converted email (survives concurrent
+// subscription.deleted webhook retries). Never throws; never fails the webhook.
+//
+// Gating: the caller only invokes this after it actually flipped billing_status
+// to 'canceled' for the profile's CURRENT subscription. This helper additionally
+// skips lifetime customers (pro_tier='lifetime' never really loses access).
+//
+// KNOWN LIMITATION: this does not specially exclude "trial abandon" cancels
+// (someone who started a trial and canceled before the first charge). The
+// win-back copy ("here's what you'll miss, come back anytime") still reads fine
+// for them and the send is one-shot idempotent, so this is acceptable; reliably
+// distinguishing trial-abandon would require inspecting the deleted Stripe
+// subscription's billing history. Flagged for review.
+const sendWinbackEmail = async (args: {
+  userId: string;
+  eventType: string;
+}): Promise<void> => {
+  const { userId, eventType } = args;
+
+  const resendKey = Deno.env.get("ASVAB_RESEND_API_KEY");
+  if (!resendKey) {
+    console.log("winback: ASVAB_RESEND_API_KEY not set, skipping");
+    return;
+  }
+
+  // Atomic claim: flip status to 'sending' iff no prior successful send AND no
+  // concurrent delivery in flight. Returns the row only when this invocation
+  // owns the send.
+  const { data: claimed, error: claimErr } = await supabaseAdmin
+    .from("profiles")
+    .update({ winback_email_status: "sending" })
+    .eq("user_id", userId)
+    .is("winback_email_sent_at", null)
+    .or("winback_email_status.is.null,winback_email_status.neq.sending")
+    .select("display_name, email, pro_tier")
+    .maybeSingle();
+
+  if (claimErr) {
+    console.error("winback: claim failed", { userId, error: claimErr.message });
+    return;
+  }
+  if (!claimed) {
+    console.log("winback: not claimed (already sent or in flight), skipping", { userId });
+    return;
+  }
+
+  // Never win-back a lifetime customer — they don't lose access on cancel.
+  if (claimed.pro_tier === "lifetime") {
+    console.log("winback: lifetime customer, skipping", { userId });
+    await supabaseAdmin
+      .from("profiles")
+      .update({ winback_email_status: "skipped_lifetime" })
+      .eq("user_id", userId);
+    return;
+  }
+
+  const recipientEmail = claimed.email ?? undefined;
+  if (!recipientEmail) {
+    console.log("winback: no recipient email, releasing", { userId });
+    await supabaseAdmin
+      .from("profiles")
+      .update({ winback_email_status: "error_no_recipient" })
+      .eq("user_id", userId);
+    return;
+  }
+
+  const greetingName = claimed.display_name ?? "there";
+  const subject = "Your ASVAB Hero Pro is canceled, the door's still open";
+  const html = renderWinback(greetingName);
+
+  let resendId: string | null = null;
+  let status: string;
+  let updateTimestamp = false;
+
+  try {
+    const resp = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${resendKey}`,
+      },
+      body: JSON.stringify({
+        from: "Trish at ASVAB Hero <info@asvabhero.com>",
+        to: [recipientEmail],
+        reply_to: "trish@dach.family",
+        subject,
+        html,
+      }),
+    });
+
+    if (resp.ok) {
+      const body = (await resp.json().catch(() => ({}))) as { id?: string };
+      resendId = body.id ?? null;
+      status = "sent";
+      updateTimestamp = true;
+      console.log(
+        "winback: sent",
+        JSON.stringify({
+          event_type: eventType,
+          user_id: userId,
+          email: recipientEmail,
+          template: "winback",
+          resend_status: resp.status,
+          resend_id: resendId,
+        }),
+      );
+    } else {
+      const errBody = await resp.text().catch(() => "");
+      status = `error_${resp.status}`;
+      console.error(
+        "winback: resend non-2xx",
+        JSON.stringify({
+          event_type: eventType,
+          user_id: userId,
+          email: recipientEmail,
+          template: "winback",
+          resend_status: resp.status,
+          resend_body: errBody.slice(0, 500),
+        }),
+      );
+      await captureMessage(`resend winback non-2xx (${resp.status})`, {
+        level: "warning",
+        fingerprint: ["vendor-non-2xx", "resend", "winback"],
+        tags: { provider: "resend", template: "winback", resend_status: resp.status, event_type: eventType, user_id: userId },
+        extra: { detail: errBody.slice(0, 500) },
+      });
+    }
+  } catch (err) {
+    status = "error_throw";
+    console.error(
+      "winback: resend threw",
+      JSON.stringify({
+        event_type: eventType,
+        user_id: userId,
+        email: recipientEmail,
+        template: "winback",
+        error: String(err),
+      }),
+    );
+    await captureException(err, {
+      tags: { provider: "resend", template: "winback", event_type: eventType, user_id: userId },
+      fingerprint: ["vendor-throw", "resend", "winback"],
+    });
+  }
+
+  // On success: stamp timestamp + resend_id + status. On failure: only set status,
+  // leaving timestamp NULL keeps the row shape consistent with the other one-shot
+  // email trackers.
+  const updatePayload: Record<string, unknown> = { winback_email_status: status };
+  if (updateTimestamp) {
+    updatePayload.winback_email_sent_at = new Date().toISOString();
+    updatePayload.winback_email_resend_id = resendId;
   }
   const { error: updateErr } = await supabaseAdmin
-    .from("payment_failed_emails")
+    .from("profiles")
     .update(updatePayload)
-    .eq("invoice_id", invoiceId);
+    .eq("user_id", userId);
   if (updateErr) {
-    console.error("payment-failed: status update failed", { userId, invoiceId, error: updateErr.message, status });
+    console.error("winback: status update failed", { userId, error: updateErr.message, status });
   }
 };
 
@@ -1454,6 +1755,12 @@ Deno.serve(async (req) => {
                 pro_updated_at: new Date().toISOString(),
               })
               .eq("user_id", userId);
+
+            // One-time win-back email. Only reached after a real cancellation of
+            // the profile's CURRENT sub (replayed deletes for a superseded sub
+            // fall to the else branch and never get here). Idempotent + skips
+            // lifetime customers inside the helper. Never fails the webhook.
+            await sendWinbackEmail({ userId, eventType: event.type });
           } else {
             console.log("sub.deleted for non-current sub_id; skipping cancel", {
               userId,
@@ -1547,12 +1854,20 @@ Deno.serve(async (req) => {
         // Fetch fresh sub if we have a subscription id — updateProfileFromSubscription
         // is guarded against stale events via subscriptionEventIsStale.
         let userId: string | null = null;
+        // Belt-and-suspenders against a late/duplicate payment_failed delivery:
+        // if the freshly-fetched sub is no longer past_due/unpaid, the renewal
+        // already recovered (or the sub ended) and a dunning email would be
+        // wrong. On a genuine first failure Stripe has flipped the sub to
+        // past_due before firing this event, so this stays false and the send
+        // proceeds. Left null when there's no subscription id to fetch.
+        let subStatus: string | null = null;
         if (subscriptionId) {
           const sub = await stripeRequest<Parameters<typeof updateProfileFromSubscription>[1]>(
             "GET",
             `/subscriptions/${subscriptionId}`,
             {},
           );
+          subStatus = (sub as { status?: string }).status ?? null;
           const meta = ((sub as unknown as { metadata?: Record<string, string> }).metadata) ?? {};
           const subCustomerId = (sub as { customer?: string }).customer ?? customerId;
           userId = meta.user_id ?? (subCustomerId ? await findUserIdForCustomer(subCustomerId) : null);
@@ -1563,6 +1878,15 @@ Deno.serve(async (req) => {
 
         if (!userId) {
           console.log("payment_failed: could not resolve userId, skipping email", { invoiceId, customerId });
+          break;
+        }
+
+        if (subStatus !== null && subStatus !== "past_due" && subStatus !== "unpaid") {
+          console.log("payment_failed: fresh sub no longer past_due/unpaid (recovered/ended); skipping dunning email", {
+            invoiceId,
+            subscriptionId,
+            subStatus,
+          });
           break;
         }
 
