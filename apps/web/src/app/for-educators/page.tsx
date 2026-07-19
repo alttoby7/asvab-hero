@@ -25,10 +25,10 @@ const KIT: { href: string; label: string; blurb: string }[] = [
       "Drop the free AFQT calculator onto your counseling page or LibGuide with one line of HTML. Students use it without leaving your site and without an account.",
   },
   {
-    href: "/classroom",
-    label: "Printable student handout",
+    href: "/for-educators/handout",
+    label: "Printable one-page handout",
     blurb:
-      "Generate a one-page handout with your class name and the practice-test link, or download the plain ASVAB at a Glance reference sheet.",
+      "A print-ready sheet for a bulletin board or LibGuide that points students at the free practice test. Print it as is, or build a version with your class name.",
   },
   {
     href: "/counselor-resources",
@@ -163,8 +163,22 @@ export default function ForEducatorsPage() {
           />
         </div>
 
+        <p className="mt-6 text-sm text-text-secondary leading-relaxed">
+          Prefer a compact reference? The score-requirements table shows the
+          minimum AFQT to enlist in each branch. Same one-line paste:
+        </p>
+        <div className="mt-3">
+          <EmbedSnippet
+            src="https://asvabhero.com/embed/score-requirements"
+            title="ASVAB Score Requirements by ASVAB Hero"
+            height={420}
+            creditHref="https://asvabhero.com/asvab-score-requirements"
+            creditLabel="ASVAB score requirements table"
+          />
+        </div>
+
         <p className="mt-4 text-sm text-text-tertiary">
-          A score-requirements table widget and more options live on the{" "}
+          Previews and more options live on the{" "}
           <Link
             href="/embed"
             className="font-semibold text-accent underline hover:text-accent-hover"
@@ -184,25 +198,41 @@ export default function ForEducatorsPage() {
           Print a one-page handout for students
         </h2>
         <p className="mt-2 text-text-secondary leading-relaxed">
-          Two options. Build a class handout with your class name and the
-          practice-test link from the{" "}
+          The{" "}
+          <Link
+            href="/for-educators/handout"
+            className="font-semibold text-accent underline hover:text-accent-hover"
+          >
+            printable handout
+          </Link>{" "}
+          is a ready-to-post sheet with the practice-test link and simple steps.
+          Open it, print it or save it as a PDF, and pin it to a board or add it
+          to a LibGuide. No signup and no student data.
+        </p>
+        <p className="mt-4">
+          <Link
+            href="/for-educators/handout"
+            className="inline-block rounded-md bg-accent px-4 py-2 text-sm font-semibold text-white no-underline transition-colors hover:bg-accent-hover"
+          >
+            Open the printable handout &rarr;
+          </Link>
+        </p>
+        <p className="mt-4 text-sm text-text-tertiary leading-relaxed">
+          Want your class name on it? Build a version from the{" "}
           <Link
             href="/classroom"
             className="font-semibold text-accent underline hover:text-accent-hover"
           >
             classroom kit
           </Link>
-          , or download the plain, source-cited reference sheet below. Both are
-          clean when printed or saved to PDF, with no signup and no branding
-          across the page.
-        </p>
-        <p className="mt-4">
+          , or download the plain{" "}
           <a
             href="/asvab-at-a-glance.pdf"
             className="font-semibold text-accent underline hover:text-accent-hover"
           >
-            Download the ASVAB at a Glance PDF
+            ASVAB at a Glance PDF
           </a>
+          .
         </p>
       </section>
 
@@ -244,14 +274,15 @@ export default function ForEducatorsPage() {
           If a tool is useful to your students, link it from your resource page
           or embed it with the snippet above. That is it. If you keep the small
           credit line under the embedded tool, it helps other educators find the
-          kit too. Questions or a request for a specific widget?{" "}
+          kit too. Want us to list your school or library as a partner, or need
+          a handout or widget tailored to your program?{" "}
           <Link
             href="/contact"
             className="font-semibold text-accent underline hover:text-accent-hover"
           >
-            Get in touch
-          </Link>
-          .
+            Email us
+          </Link>{" "}
+          and we will set it up.
         </p>
       </section>
 

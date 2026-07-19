@@ -91,6 +91,34 @@
   }
 }
 
+/* Print isolation for the educator handout (/for-educators/handout). Scoped
+   via :has(.handout-print) so it only affects that page: everything in <body>
+   except <main> is dropped (site nav, upgrade banner, footer, trackers), the
+   page turns white, and the handout "paper" fills the sheet with clean margins.
+   Screen-only chrome inside the page uses Tailwind's print:hidden variant. */
+@media print {
+  body:has(.handout-print) {
+    background: #fff !important;
+  }
+  body:has(.handout-print) > :not(main) {
+    display: none !important;
+  }
+  body:has(.handout-print) main {
+    display: block !important;
+  }
+  .handout-print {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  @page {
+    margin: 0.5in;
+  }
+}
+
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }

@@ -12,6 +12,7 @@ const pages = [
   { path: "/practice-test", priority: "0.9", changefreq: "weekly" },
   { path: "/counselor-resources", priority: "0.9", changefreq: "monthly" },
   { path: "/for-educators", priority: "0.8", changefreq: "monthly" },
+  { path: "/for-educators/handout", priority: "0.6", changefreq: "monthly" },
   { path: "/classroom", priority: "0.7", changefreq: "monthly" },
   { path: "/embed", priority: "0.6", changefreq: "monthly" },
   { path: "/how-it-works", priority: "0.9", changefreq: "monthly" },
