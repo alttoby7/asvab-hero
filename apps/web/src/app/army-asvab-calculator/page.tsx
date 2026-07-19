@@ -37,7 +37,7 @@ const armyFaqs = [
   },
   {
     q: "How is the Army GT score calculated?",
-    a: "GT = VE + AR, where VE (Verbal Expression) = 2×WK + PC. That means Word Knowledge counts twice. If your AR and WK are both 55 and your PC is 55, your GT is (2×55 + 55) + 55 = 220. Improving WK by one standard score point raises GT by 2 points.",
+    a: "GT = VE + AR, where VE (Verbal Expression) = WK + PC. If your Word Knowledge, Paragraph Comprehension, and Arithmetic Reasoning are each 55, your GT is (55 + 55) + 55 = 165. Improving Word Knowledge or Paragraph Comprehension by one standard score point raises your GT by one point.",
   },
   {
     q: "Can I pick my MOS before enlisting?",
@@ -166,7 +166,7 @@ export default function ArmyCalculatorPage() {
           ))}
         </div>
         <p className="mt-4 text-xs text-text-tertiary">
-          VE = Verbal Expression (2×WK + PC), CS = Coding Speed (legacy, uses
+          VE = Verbal Expression (WK + PC), CS = Coding Speed (legacy, uses
           dummy average). MOS using CO/FA/MM/OF still publish requirements in
           these composites.
         </p>

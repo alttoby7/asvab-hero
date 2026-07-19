@@ -165,7 +165,7 @@ export default function NavyCalculatorPage() {
           ))}
         </div>
         <p className="mt-4 text-xs text-text-tertiary">
-          VE = 2×WK + PC. Requirements change over time; the calculator uses
+          VE = WK + PC. Requirements change over time; the calculator uses
           the current published minimums. Nuclear Field candidates must also
           pass the NAPT (Navy Advanced Programs Test).
         </p>
