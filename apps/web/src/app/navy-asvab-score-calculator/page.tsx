@@ -26,6 +26,29 @@ const allNavyJobs: MilitaryJob[] = navyJobs.map(
   (j) => ({ ...j, branch: "navy" }) as MilitaryJob
 );
 
+const navyFaqs = [
+  {
+    q: "What's the minimum AFQT score to join the Navy?",
+    a: "The official floor is 31, but diploma holders must reach 35 to ship; GED holders need 50 plus 15 college credits (Tier I vs Tier II). Tier III applicants (FSPC-A candidates) have their own pathway. Navy Reserve follows the same AFQT minimums as active duty.",
+  },
+  {
+    q: "What Navy rating has the highest ASVAB requirement?",
+    a: "Nuclear Field (NFa): AR + VE + MK + MC ≥ 255 is among the highest, plus you must pass the NAPT and qualify medically. ET/AT technical paths and Cryptologic Technician Networks also require very high combined scores.",
+  },
+  {
+    q: "Does the Navy still use the AR+VE+MK+MC line scores?",
+    a: "Yes, most ratings publish requirements as sums of specific subtests rather than named composites like the Army. This means your subtest strengths map directly to eligible ratings.",
+  },
+  {
+    q: "What ASVAB score do SEALs need?",
+    a: "GS + MC + EI ≥ 170 is the standard minimum. Candidates must also pass the PST, meet medical standards, and complete BUD/S. The ASVAB is the first gate, not the hard part.",
+  },
+  {
+    q: "Can I retake the Navy ASVAB if I miss a rating's cutoff?",
+    a: "Yes. Standard 1/1/6 retest policy applies (1 month, 1 month, then 6 months between attempts). Navy does have DEP Enrichment Program (DEP-EP) for applicants scoring AFQT 26–30, but most DEP retakes are limited.",
+  },
+];
+
 export default function NavyCalculatorPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
@@ -43,6 +66,17 @@ export default function NavyCalculatorPage() {
             "Calculate your AFQT, Navy composite scores, and see every Navy rating you qualify for.",
         }}
       />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: navyFaqs.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: { "@type": "Answer", text: item.a },
+          })),
+        }}
+      />
 
       <Breadcrumb
         items={[
@@ -57,8 +91,12 @@ export default function NavyCalculatorPage() {
           Navy ASVAB Score Calculator
         </h1>
         <p className="mt-3 text-lg text-text-secondary">
-          See every Navy rating you qualify for, plus the composite scores
-          behind Nuclear Field, SEAL, SWCC, and every technical rating.
+          A Navy ASVAB score calculator turns your nine subtest standard scores
+          into your AFQT percentile and the line-score combinations each Navy
+          rating requires, then lists every rating you currently qualify for. The
+          Navy sets each rating&apos;s minimum as a sum of specific subtests, for
+          example AR + VE + MK + MC for the Nuclear Field, so your subtest
+          strengths map straight to the jobs you can pick.
         </p>
       </div>
 
@@ -127,7 +165,7 @@ export default function NavyCalculatorPage() {
           ))}
         </div>
         <p className="mt-4 text-xs text-text-tertiary">
-          VE = 2×WK + PC. Requirements change over time; the calculator uses
+          VE = WK + PC. Requirements change over time; the calculator uses
           the current published minimums. Nuclear Field candidates must also
           pass the NAPT (Navy Advanced Programs Test).
         </p>
@@ -138,28 +176,7 @@ export default function NavyCalculatorPage() {
           Navy ASVAB FAQ
         </h2>
         <div className="mt-4 divide-y divide-navy-border">
-          {[
-            {
-              q: "What's the minimum AFQT score to join the Navy?",
-              a: "The official floor is 31, but diploma holders must reach 35 to ship; GED holders need 50 plus 15 college credits (Tier I vs Tier II). Tier III applicants (FSPC-A candidates) have their own pathway. Navy Reserve follows the same AFQT minimums as active duty.",
-            },
-            {
-              q: "What Navy rating has the highest ASVAB requirement?",
-              a: "Nuclear Field (NFa): AR + VE + MK + MC ≥ 255 is among the highest, plus you must pass the NAPT and qualify medically. ET/AT technical paths and Cryptologic Technician Networks also require very high combined scores.",
-            },
-            {
-              q: "Does the Navy still use the AR+VE+MK+MC line scores?",
-              a: "Yes, most ratings publish requirements as sums of specific subtests rather than named composites like the Army. This means your subtest strengths map directly to eligible ratings.",
-            },
-            {
-              q: "What ASVAB score do SEALs need?",
-              a: "GS + MC + EI ≥ 170 is the standard minimum. Candidates must also pass the PST, meet medical standards, and complete BUD/S. The ASVAB is the first gate, not the hard part.",
-            },
-            {
-              q: "Can I retake the Navy ASVAB if I miss a rating's cutoff?",
-              a: "Yes. Standard 1/1/6 retest policy applies (1 month, 1 month, then 6 months between attempts). Navy does have DEP Enrichment Program (DEP-EP) for applicants scoring AFQT 26–30, but most DEP retakes are limited.",
-            },
-          ].map((item) => (
+          {navyFaqs.map((item) => (
             <div key={item.q} className="py-4">
               <h3 className="font-display text-base font-bold text-text-primary">
                 {item.q}
