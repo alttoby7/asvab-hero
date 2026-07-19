@@ -8,7 +8,7 @@ import RelatedLinks from "@/components/RelatedLinks";
 import GTScoreCalculator from "@/components/GTScoreCalculator";
 
 export const metadata: Metadata = {
-  title: "ASVAB GT Score Explained + GT Score Calculator (2026)",
+  title: "GT Score: Formula, Calculator & Army Cutoffs (2026)",
   description:
     "Your GT score decides which military jobs you can hold. Learn the VE + AR formula, how to calculate it, Army GT cutoffs, the 110 threshold, the highest possible GT (144), and how to raise it.",
   alternates: {
@@ -38,7 +38,7 @@ export default function GTScorePage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-05-20",
-          dateModified: "2026-06-14",
+          dateModified: "2026-07-11",
         }}
       />
 
@@ -133,6 +133,22 @@ export default function GTScorePage() {
               acceptedAnswer: {
                 "@type": "Answer",
                 text: "Active-duty soldiers who complete the Army's roughly two-week BSEP course gain about 19 points on average, with some classes averaging 23. The Army's Operation Connect the Dots got 82% of soldiers to GT 110 in just two weeks. Future recruits can move their GT in a few weeks of focused prep on Word Knowledge, Paragraph Comprehension, and Arithmetic Reasoning.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is the GT score an IQ score?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No. The GT score is not an IQ test and does not measure general intelligence. It measures two specific aptitudes: verbal expression (how well you read and use language, drawn from Word Knowledge and Paragraph Comprehension) and arithmetic reasoning (how well you solve math word problems). A strong vocabulary and solid math reasoning drive it — not broader cognitive ability.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does the military still use GT scores?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. The Army, Army National Guard, Army Reserve, and Marine Corps all actively gate jobs and programs on the GT score. The Army's 110 threshold for officer programs, warrant officer selection, and many special operations tracks is currently in force. GT scores are also used to qualify soldiers for re-enlistment bonuses and MOS reclassification.",
               },
             },
           ],
