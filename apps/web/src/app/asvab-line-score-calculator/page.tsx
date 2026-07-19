@@ -121,8 +121,8 @@ const howToJsonLd = {
     },
     {
       "@type": "HowToStep",
-      name: "Use the printed VE value",
-      text: "Verbal Expression (VE) is not simply WK + PC; the actual conversion uses a lookup table. VE arrives pre-calculated on your score report, so use the printed VE value in formulas that call for it.",
+      name: "Calculate your VE (Verbal Expression) value",
+      text: "Verbal Expression (VE) is the sum of your Word Knowledge (WK) and Paragraph Comprehension (PC) standard scores: VE = WK + PC. Use that VE value in any composite formula that calls for it.",
     },
     {
       "@type": "HowToStep",
@@ -199,8 +199,8 @@ export default function ASVABLineScoreCalculatorPage() {
           The <Link href="/afqt-score">AFQT score</Link> is one percentile from
           1 to 99, derived from four subtests: AR, MK, WK, PC. The formula is{" "}
           <code className="font-mono text-sm text-accent">2(VE) + AR + MK</code>
-          . VE is doubled, which is why verbal study has so much leverage on
-          AFQT.
+          , where VE = WK + PC. VE is doubled inside the AFQT formula, which is
+          why verbal study has so much leverage on AFQT.
         </p>
 
         <p className="text-text-secondary">
@@ -324,13 +324,18 @@ export default function ASVABLineScoreCalculatorPage() {
         </p>
 
         <p className="text-text-secondary">
-          VE is the verbal expression score. It is not simply WK + PC. The
-          actual conversion uses a lookup table, but VE arrives pre-calculated
-          on your score report. Use the printed VE value.
+          VE is the Verbal Expression score, and it is simply the sum of your
+          two verbal subtests: VE = WK + PC. Add your Word Knowledge and
+          Paragraph Comprehension standard scores, then use that VE value in any
+          composite formula that calls for it.
         </p>
 
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          AFQT = 2(VE) + AR + MK
+          AFQT = 2 &times; VE + AR + MK
+          <br />
+          <span className="text-sm font-normal text-text-tertiary">
+            where VE = WK + PC, so 2 &times; VE = 2 &times; (WK + PC)
+          </span>
         </div>
 
         <p className="text-text-secondary">
@@ -341,10 +346,10 @@ export default function ASVABLineScoreCalculatorPage() {
         <aside className="my-6 rounded-lg border-l-4 border-emerald-400 bg-navy p-4">
           <p className="text-sm font-semibold text-emerald-400">Tip</p>
           <p className="mt-1 text-sm text-text-secondary">
-            VE is the most common mistake on home-built calculators. Use the VE
-            value printed on your score report rather than reconstructing it
-            from WK and PC. The calculator above accepts the printed VE
-            directly.
+            VE is the most common mistake on home-built calculators. Some
+            double it or treat it as a separate lookup value. It is neither: VE
+            = WK + PC. The calculator above computes VE from your Word Knowledge
+            and Paragraph Comprehension entries automatically.
           </p>
         </aside>
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import {
   View,
   Text,
@@ -7,7 +7,7 @@ import {
   ActivityIndicator,
   StyleSheet,
 } from "react-native";
-import { useRouter } from "expo-router";
+import { useFocusEffect, useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "@asvab-hero/ui-tokens/colors";
 import { fontSize, fontWeight } from "@asvab-hero/ui-tokens/typography";
@@ -17,6 +17,7 @@ import type { AsvabSubtest, TestVariant } from "@asvab-hero/domain/types";
 import { loadActiveVariants, checkHasActivePro, loadProfile } from "@asvab-hero/api";
 import { getSupabaseClient } from "../lib/supabase";
 import { useAuth } from "../lib/auth";
+import { fetchHasPro } from "../lib/purchases";
 import { canStartVariant, type GateReason } from "../lib/pro-gate";
 import ProGateModal from "./ProGateModal";
 
@@ -30,21 +31,32 @@ export default function VariantPicker() {
   const [expandedDrill, setExpandedDrill] = useState(false);
   const [gateReason, setGateReason] = useState<GateReason | null>(null);
 
-  useEffect(() => {
-    async function load() {
-      const client = getSupabaseClient();
-      const [v, pro, profile] = await Promise.all([
-        loadActiveVariants(client),
-        user ? checkHasActivePro(client, user.id) : false,
-        user ? loadProfile(client, user.id) : null,
-      ]);
-      setVariants(v);
-      setIsPro(pro);
-      setDiagnosticUsed(!!profile?.free_diagnostic_used_at);
-      setLoading(false);
-    }
-    load();
-  }, [user]);
+  // Refetch on focus so returning from the paywall reflects a fresh purchase.
+  // Pro is true if EITHER the server entitlement (has_active_pro, cross-platform
+  // + webhook-backed) OR the local RevenueCat entitlement is active — the RC
+  // check unlocks instantly after purchase, before the webhook writes Supabase.
+  useFocusEffect(
+    useCallback(() => {
+      let active = true;
+      (async () => {
+        const client = getSupabaseClient();
+        const [v, serverPro, rcPro, profile] = await Promise.all([
+          loadActiveVariants(client),
+          user ? checkHasActivePro(client, user.id) : false,
+          fetchHasPro(),
+          user ? loadProfile(client, user.id) : null,
+        ]);
+        if (!active) return;
+        setVariants(v);
+        setIsPro(serverPro || rcPro);
+        setDiagnosticUsed(!!profile?.free_diagnostic_used_at);
+        setLoading(false);
+      })();
+      return () => {
+        active = false;
+      };
+    }, [user])
+  );
 
   function navigate(variantCode: string, subtest?: AsvabSubtest) {
     const gate = canStartVariant(variantCode, isPro, diagnosticUsed);

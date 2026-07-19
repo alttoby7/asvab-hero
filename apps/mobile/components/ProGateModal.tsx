@@ -1,4 +1,5 @@
-import { View, Text, Pressable, Modal, StyleSheet, Linking } from "react-native";
+import { View, Text, Pressable, Modal, StyleSheet } from "react-native";
+import { useRouter } from "expo-router";
 import { Ionicons } from "@expo/vector-icons";
 import { colors } from "@asvab-hero/ui-tokens/colors";
 import { fontSize, fontWeight } from "@asvab-hero/ui-tokens/typography";
@@ -13,7 +14,13 @@ interface Props {
 }
 
 export default function ProGateModal({ visible, reason, onClose }: Props) {
+  const router = useRouter();
   const { title, body } = gateMessage(reason);
+
+  function openPaywall() {
+    onClose();
+    router.push({ pathname: "/paywall", params: { reason } });
+  }
 
   return (
     <Modal
@@ -35,12 +42,7 @@ export default function ProGateModal({ visible, reason, onClose }: Props) {
           <Text style={styles.title}>{title}</Text>
           <Text style={styles.body}>{body}</Text>
 
-          <Pressable
-            style={styles.upgradeButton}
-            onPress={() => {
-              Linking.openURL("https://asvabhero.com/upgrade");
-            }}
-          >
+          <Pressable style={styles.upgradeButton} onPress={openPaywall}>
             <Text style={styles.upgradeText}>Upgrade to Pro</Text>
           </Pressable>
 

@@ -12,9 +12,28 @@
       }
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://abypyprvgvofzrtifgzi.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_OQ_XWiRHQF2gEDwgA7hk3g_hexhewMS",
+        "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID": "337130544889-qbotomllvt3tae1mcn6a5661o2n67f94.apps.googleusercontent.com",
+        "EXPO_PUBLIC_REVENUECAT_ANDROID_KEY": "test_iMwyXSqtSNhJFifLIUJBtLZzOhc"
+      }
     },
-    "production": {}
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "https://abypyprvgvofzrtifgzi.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "sb_publishable_OQ_XWiRHQF2gEDwgA7hk3g_hexhewMS",
+        "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID": "337130544889-qbotomllvt3tae1mcn6a5661o2n67f94.apps.googleusercontent.com"
+      }
+    }
   },
   "submit": {
     "production": {

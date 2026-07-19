@@ -3,6 +3,11 @@ project_id = "abypyprvgvofzrtifgzi"
 [functions.stripe-webhook]
 verify_jwt = false
 
+# RevenueCat (mobile IAP) posts with its own Authorization shared-secret header,
+# not a Supabase JWT — the function validates it itself.
+[functions.revenuecat-webhook]
+verify_jwt = false
+
 # Cron-invoked via pg_net with an x-cron-secret header (no Supabase JWT).
 [functions.mistake-reminders]
 verify_jwt = false
