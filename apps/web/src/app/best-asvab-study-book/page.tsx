@@ -309,6 +309,55 @@ export default function BestASVABStudyBookPage() {
         </p>
       </div>
 
+      {/* Featured: our own book (not part of the ranked third-party list) */}
+      <div className="not-prose mb-12 overflow-hidden rounded-2xl border border-accent/40 bg-navy-light p-6 sm:p-8">
+        <span className="inline-flex items-center gap-1 rounded-full bg-accent px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-white">
+          Featured · Best for AFQT Math
+        </span>
+        <h2 className="mt-3 font-display text-2xl font-bold text-text-primary">
+          ASVAB Math, Explained: Our Own Workbook for the Math Half of the AFQT
+        </h2>
+        <p className="mt-1 text-sm font-semibold text-accent">
+          Full disclosure: we published this one.
+        </p>
+        <p className="mt-3 text-text-secondary">
+          Every book ranked below is a third-party title we reviewed. This one
+          is ours. The ASVAB Hero team self-published{" "}
+          <em>ASVAB Math, Explained</em> in 2026, so we are telling you up front
+          that we wrote it. We feature it because AFQT math, Arithmetic
+          Reasoning and Mathematics Knowledge, is the single most common
+          sticking point for recruits, and this workbook does that one job in
+          full.
+        </p>
+        <ul className="my-4 list-disc space-y-2 pl-6 text-text-secondary">
+          <li>750+ worked practice problems, all focused on the AFQT math</li>
+          <li>
+            5 full-length practice tests to build timing and stamina on the math
+          </li>
+          <li>
+            Every answer worked step by step, so the method is clear, not just
+            the letter
+          </li>
+        </ul>
+        <p className="text-sm text-text-secondary">
+          Honest scope: this is the math half of the AFQT only, Arithmetic
+          Reasoning and Mathematics Knowledge. It is not a full 9-subtest guide.
+          If you also need Word Knowledge, Paragraph Comprehension, or the
+          technical subtests, pair it with a full-coverage guide like the Kaplan
+          Total Prep pick below.
+        </p>
+        <p className="mt-5">
+          <a
+            href={`https://www.amazon.com/dp/B0H8NCSHYT?tag=${TAG}`}
+            target="_blank"
+            rel="sponsored noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3 font-display text-sm font-bold text-white no-underline transition-colors hover:bg-accent-hover"
+          >
+            Check ASVAB Math, Explained on Amazon
+          </a>
+        </p>
+      </div>
+
       {/* TL;DR Top 3 */}
       <section className="mb-12">
         <h2 className="mb-4 font-display text-2xl font-bold text-text-primary">

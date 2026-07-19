@@ -198,6 +198,16 @@ export default function BestASVABPracticeTestBookPage() {
             <tbody className="text-text-secondary">
               <tr className="border-b border-navy-border/50">
                 <td className="py-2 pr-4 font-semibold text-text-primary">
+                  ASVAB Math, Explained (ASVAB Hero, our pick)
+                </td>
+                <td className="py-2 pr-4 font-mono">2026</td>
+                <td className="py-2 pr-4 font-mono">5</td>
+                <td className="py-2 pr-4 font-mono">750+ problems</td>
+                <td className="py-2 pr-4">AFQT math only (AR + MK)</td>
+                <td className="py-2">Varies</td>
+              </tr>
+              <tr className="border-b border-navy-border/50">
+                <td className="py-2 pr-4 font-semibold text-text-primary">
                   Kaplan ASVAB Total Prep
                 </td>
                 <td className="py-2 pr-4 font-mono">2026-2027</td>
@@ -299,6 +309,61 @@ export default function BestASVABPracticeTestBookPage() {
             targeting), not just the highest number on the cover.
           </p>
         </aside>
+
+        <div className="not-prose my-8 overflow-hidden rounded-2xl border border-accent/40 bg-navy-light p-6 sm:p-8">
+          <span className="inline-flex items-center gap-1 rounded-full bg-accent px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-white">
+            Featured · Best for Math Practice
+          </span>
+          <h2 className="mt-3 font-display text-2xl font-bold text-text-primary">
+            ASVAB Math, Explained: The Only Book Here Built Purely for AFQT Math
+            Practice
+          </h2>
+          <p className="mt-1 text-sm font-semibold text-accent">
+            Full disclosure: we published this one.
+          </p>
+          <p className="mt-3 text-text-secondary">
+            Every other pick on this page is a third-party book we reviewed.
+            This one is ours. The ASVAB Hero team self-published{" "}
+            <em>ASVAB Math, Explained</em> in 2026, so we are telling you up
+            front that we wrote it. We feature it because AFQT math, Arithmetic
+            Reasoning and Mathematics Knowledge, is the single most common
+            sticking point for recruits, and this workbook does one job and does
+            it in full.
+          </p>
+          <ul className="my-4 list-disc space-y-2 pl-6 text-text-secondary">
+            <li>
+              5 full-length practice tests plus 750+ worked practice problems
+            </li>
+            <li>
+              The math half of the AFQT only, Arithmetic Reasoning and
+              Mathematics Knowledge
+            </li>
+            <li>
+              Every answer worked step by step, so you learn the method, not
+              just the letter
+            </li>
+          </ul>
+          <p className="text-sm text-text-secondary">
+            Honest scope: this is not a volume winner, and it is not a full
+            9-subtest book. The mainstream guides below carry more total tests
+            (up to 9) and cover all nine subtests. What makes this pick a
+            category of one is focus: it is the only book on this list built
+            purely for AFQT math practice, with every problem solved in full. If
+            you also need Word Knowledge, Paragraph Comprehension, or the five
+            technical subtests, pair it with a full-coverage guide like Kaplan
+            Total Prep below.
+          </p>
+          <p className="mt-5">
+            <a
+              href="https://www.amazon.com/dp/B0H8NCSHYT?tag=asvabhero-20"
+              target="_blank"
+              rel="sponsored noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-xl bg-accent px-6 py-3 font-display text-sm font-bold text-white no-underline transition-colors hover:bg-accent-hover"
+            >
+              Check ASVAB Math, Explained on Amazon
+            </a>
+          </p>
+        </div>
 
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
           1. Kaplan ASVAB Total Prep 2026-2027: The Highest Mainstream Practice
