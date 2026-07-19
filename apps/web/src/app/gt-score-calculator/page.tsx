@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "What subtest scores do I need to calculate my GT score?",
-    a: "For Army, Coast Guard, and Air Force (G score): Word Knowledge (WK), Paragraph Comprehension (PC), and Arithmetic Reasoning (AR). For the Marine Corps, also add Mechanical Comprehension (MC). All are standard ASVAB subtests listed as standard scores on your score report. You cannot calculate GT from your AFQT percentile alone.",
+    a: "The same three for every branch that uses a GT composite (Army, Marine Corps, Coast Guard) and the Air Force G score: Word Knowledge (WK), Paragraph Comprehension (PC), and Arithmetic Reasoning (AR). Marine GT is VE + AR, identical to Army GT, Mechanical Comprehension (MC) does not feed GT. All are standard ASVAB subtests listed as standard scores on your score report. You cannot calculate GT from your AFQT percentile alone.",
   },
   {
     q: "What is a good GT score for Army jobs?",
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "Is the GT score formula the same for all branches?",
-    a: "No. Army, Coast Guard, and Air Force all use VE + AR, though the Air Force calls it the G score. Marine Corps adds Mechanical Comprehension: VE + AR + MC. The Navy doesn&apos;t use a GT composite at all. Calculate your GT using the formula for your specific branch.",
+    a: "Almost. Army, Marine Corps, and Coast Guard all use VE + AR, and the Air Force runs the same VE + AR under the name G score. Marine GT is identical to Army GT, a common myth adds Mechanical Comprehension (MC), but MC feeds the Marine MM composite, not GT. The Navy doesn&apos;t use a GT composite at all. Calculate your GT using the formula for your specific branch.",
   },
   {
     q: "What GT score do I need for Army Special Forces?",
@@ -355,11 +355,10 @@ export default function GTScoreCalculatorPage() {
                 <td className="py-2 pr-4 font-semibold text-text-primary">
                   Marine Corps
                 </td>
-                <td className="py-2 pr-4 font-mono">VE + AR + MC</td>
+                <td className="py-2 pr-4 font-mono">VE + AR</td>
                 <td className="py-2 pr-4 font-mono">GT</td>
                 <td className="py-2">
-                  Adds Mechanical Comprehension; same thresholds, higher raw
-                  number
+                  Identical to Army GT; MC feeds the MM composite, not GT
                 </td>
               </tr>
               <tr className="border-b border-navy-border/50">
@@ -405,13 +404,13 @@ export default function GTScoreCalculatorPage() {
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Note</p>
           <p className="mt-1 text-sm text-text-secondary">
-            Marine Corps candidates need to include their MC (Mechanical
-            Comprehension) subtest score in the formula. Because MC is added to
-            the total, a Marine GT raw composite will be numerically higher than
-            an Army candidate&apos;s at identical WK, PC, and AR performance.
-            The qualifying thresholds are calibrated to account for this. If
-            you&apos;re cross-referencing Army GT requirements while planning
-            for the Marines, you need the USMC-specific line score minimums.
+            Half the calculators online tell you Marine GT = WK + PC + AR + MC.
+            That is wrong. USMC GT = VE + AR, identical to Army GT. Mechanical
+            Comprehension (MC) feeds the Marine MM (Mechanical Maintenance)
+            composite, not GT. Any calculator that folds MC into your Marine GT
+            produces an inflated number and can misstate whether you clear
+            GT-gated MOS like Recon or Cyber. Use VE + AR, and confirm the
+            USMC-specific line score minimums for the job you&apos;re targeting.
           </p>
         </aside>
 
@@ -566,7 +565,7 @@ export default function GTScoreCalculatorPage() {
           <div className="rounded-lg bg-navy px-4 py-3">
             <p className="font-mono text-sm font-bold text-accent">Marine GT</p>
             <p className="mt-1 text-sm text-text-secondary">
-              Needs WK, PC, AR, and MC from your score report
+              Needs WK, PC, and AR (same formula as Army)
             </p>
           </div>
           <div className="rounded-lg bg-navy px-4 py-3">
