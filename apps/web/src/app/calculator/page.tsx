@@ -42,6 +42,25 @@ const allJobs: MilitaryJob[] = [
   ...addBranch(spaceForceJobs, "space_force"),
 ];
 
+const calculatorFaqs = [
+  {
+    q: "How is an ASVAB score calculated?",
+    a: "Your nine subtest standard scores each sit on a mean-50 scale and feed two different numbers. Your AFQT percentile comes from four of them: twice your Verbal Expression (Word Knowledge plus Paragraph Comprehension), plus Arithmetic Reasoning, plus Mathematics Knowledge, converted to a 1 to 99 percentile. Each branch then builds its own composite line scores from different subtest combinations to decide which jobs you qualify for.",
+  },
+  {
+    q: "What ASVAB score do I need to qualify for a job?",
+    a: "Two gates. Your AFQT has to clear your branch's enlistment minimum, roughly 31 to 36 for high school graduates. Then each job sets its own composite or line-score minimum, so the job you want may need a specific Army line score, Air Force MAGE composite, or Navy rating total on top of your AFQT.",
+  },
+  {
+    q: "Does one calculator work for every branch?",
+    a: "Yes. Enter your nine subtest scores once and this calculator scores all six branches at the same time: Army line scores, Air Force and Space Force MAGE composites, Marine line scores, and Navy and Coast Guard rating combinations. You can also open a single-branch calculator for a focused list.",
+  },
+  {
+    q: "Are these calculator results official?",
+    a: "No. They are practice estimates based on published branch formulas and the official PAY97 percentile table. Your official scores come from a proctored test at a MEPS or test center, and final job qualification depends on current branch policy, so confirm anything important with a recruiter.",
+  },
+];
+
 export default function CalculatorPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
@@ -62,6 +81,17 @@ export default function CalculatorPage() {
             "Enter your 9 ASVAB subtest scores and instantly see your AFQT percentile, composite scores, and qualifying military jobs across all 6 branches.",
         }}
       />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: calculatorFaqs.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: { "@type": "Answer", text: item.a },
+          })),
+        }}
+      />
       <Breadcrumb
         items={[
           { name: "Home", href: "/" },
@@ -73,9 +103,11 @@ export default function CalculatorPage() {
           All-Branch ASVAB Job Calculator
         </h1>
         <p className="mt-2 text-text-secondary">
-          The all-in-one calculator: enter your 9 subtest standard scores once to
-          see your AFQT percentile, every branch&apos;s composite line scores, and
-          all the military jobs you qualify for across all 6 branches.
+          An ASVAB score calculator turns your nine subtest standard scores into
+          your AFQT percentile and each branch&apos;s composite line scores, then
+          shows the military jobs those scores qualify you for. Enter your scores
+          once here to see all six branches at a time: Army, Navy, Air Force,
+          Marines, Coast Guard, and Space Force.
         </p>
         <p className="mt-3 text-sm text-text-tertiary">
           Want a single number? Use the{" "}
@@ -122,6 +154,22 @@ export default function CalculatorPage() {
          + AI crawlers regardless of calculator state (the interactive results
          above only appear once all 9 subtests are entered). */}
       <JobCatalog jobs={allJobs} />
+
+      <section className="mt-14 border-t border-navy-border pt-10">
+        <h2 className="font-display text-2xl font-bold text-text-primary">
+          ASVAB calculator FAQ
+        </h2>
+        <div className="mt-4 divide-y divide-navy-border">
+          {calculatorFaqs.map((item) => (
+            <div key={item.q} className="py-4">
+              <h3 className="font-display text-base font-bold text-text-primary">
+                {item.q}
+              </h3>
+              <p className="mt-2 text-sm text-text-secondary">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* ──────────────────────────────────────────────────────────────────────
          CALCULATOR DIRECTORY, this hub is the only page that links every

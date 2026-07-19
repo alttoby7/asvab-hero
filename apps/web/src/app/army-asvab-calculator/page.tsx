@@ -26,6 +26,29 @@ const allArmyJobs: MilitaryJob[] = armyJobs.map(
   (j) => ({ ...j, branch: "army" }) as MilitaryJob
 );
 
+const armyFaqs = [
+  {
+    q: "What's the minimum AFQT score to join the Army?",
+    a: "31 with a high school diploma, 50 with a GED. The Army also runs the Future Soldier Preparatory Course (FSPC) for applicants scoring 21–30 who can retest after a short academic program.",
+  },
+  {
+    q: "What's the most important Army line score?",
+    a: "GT (General Technical). It's the gatekeeper for the largest set of MOS, including most technical and leadership tracks. GT 110+ unlocks Cyber (17C), OCS eligibility, and Green to Gold. If you're optimizing one score, optimize GT.",
+  },
+  {
+    q: "How is the Army GT score calculated?",
+    a: "GT = VE + AR, where VE (Verbal Expression) = 2×WK + PC. That means Word Knowledge counts twice. If your AR and WK are both 55 and your PC is 55, your GT is (2×55 + 55) + 55 = 220. Improving WK by one standard score point raises GT by 2 points.",
+  },
+  {
+    q: "Can I pick my MOS before enlisting?",
+    a: "Yes, through a guaranteed MOS contract. If the Army offers you a contract for a specific MOS, that's what you'll train for. Open contracts (where the Army assigns you based on needs) are also available but give up control. Always ask for guaranteed MOS if possible.",
+  },
+  {
+    q: "Do I qualify for a signing bonus?",
+    a: "It depends on the MOS, your AFQT category, and current Army needs. FY26 Army enlistment bonuses range up to $50K for critical MOS with 6-year contracts. The calculator above shows which MOS you qualify for; ask your recruiter which are currently bonus-eligible.",
+  },
+];
+
 export default function ArmyCalculatorPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6">
@@ -43,6 +66,17 @@ export default function ArmyCalculatorPage() {
             "Calculate your AFQT, all 10 Army line scores, and see every Army MOS you qualify for.",
         }}
       />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: armyFaqs.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: { "@type": "Answer", text: item.a },
+          })),
+        }}
+      />
 
       <Breadcrumb
         items={[
@@ -57,8 +91,12 @@ export default function ArmyCalculatorPage() {
           Army ASVAB Calculator
         </h1>
         <p className="mt-3 text-lg text-text-secondary">
-          See every Army MOS you qualify for, plus the line scores recruiters
-          actually use to assign you a job.
+          An Army ASVAB calculator turns your nine subtest standard scores into
+          your AFQT percentile and all 10 Army line scores (GT, CL, CO, EL, FA,
+          GM, MM, OF, SC, ST), then lists every Army MOS those line scores qualify
+          you for. Your AFQT decides whether you can enlist, with an Army minimum
+          of 31 on a high school diploma, while your line scores decide which MOS
+          you can choose.
         </p>
       </div>
 
@@ -183,28 +221,7 @@ export default function ArmyCalculatorPage() {
           Army ASVAB FAQ
         </h2>
         <div className="mt-4 divide-y divide-navy-border">
-          {[
-            {
-              q: "What's the minimum AFQT score to join the Army?",
-              a: "31 with a high school diploma, 50 with a GED. The Army also runs the Future Soldier Preparatory Course (FSPC) for applicants scoring 21–30 who can retest after a short academic program.",
-            },
-            {
-              q: "What's the most important Army line score?",
-              a: "GT (General Technical). It's the gatekeeper for the largest set of MOS, including most technical and leadership tracks. GT 110+ unlocks Cyber (17C), OCS eligibility, and Green to Gold. If you're optimizing one score, optimize GT.",
-            },
-            {
-              q: "How is the Army GT score calculated?",
-              a: "GT = VE + AR, where VE (Verbal Expression) = 2×WK + PC. That means Word Knowledge counts twice. If your AR and WK are both 55 and your PC is 55, your GT is (2×55 + 55) + 55 = 220. Improving WK by one standard score point raises GT by 2 points.",
-            },
-            {
-              q: "Can I pick my MOS before enlisting?",
-              a: "Yes, through a guaranteed MOS contract. If the Army offers you a contract for a specific MOS, that's what you'll train for. Open contracts (where the Army assigns you based on needs) are also available but give up control. Always ask for guaranteed MOS if possible.",
-            },
-            {
-              q: "Do I qualify for a signing bonus?",
-              a: "It depends on the MOS, your AFQT category, and current Army needs. FY26 Army enlistment bonuses range up to $50K for critical MOS with 6-year contracts. The calculator above shows which MOS you qualify for; ask your recruiter which are currently bonus-eligible.",
-            },
-          ].map((item) => (
+          {armyFaqs.map((item) => (
             <div key={item.q} className="py-4">
               <h3 className="font-display text-base font-bold text-text-primary">
                 {item.q}
