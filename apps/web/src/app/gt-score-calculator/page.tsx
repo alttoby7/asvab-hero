@@ -94,17 +94,17 @@ export default function GTScoreCalculatorPage() {
       {
         "@type": "HowToStep",
         name: "Calculate your VE (Verbal Expression) score",
-        text: "Add your Word Knowledge (WK) and Paragraph Comprehension (PC) standard scores together, then multiply the sum by 2: VE = (WK + PC) x 2.",
+        text: "Add your Word Knowledge (WK) and Paragraph Comprehension (PC) standard scores together: VE = WK + PC. VE is not doubled for GT; the doubling belongs to the AFQT formula, not to VE.",
       },
       {
         "@type": "HowToStep",
         name: "Add Arithmetic Reasoning to get your GT",
-        text: "Add your Arithmetic Reasoning (AR) standard score to your VE score: GT = VE + AR. This is your raw GT composite.",
+        text: "Add your Arithmetic Reasoning (AR) standard score to your VE score: GT = VE + AR. That sum is your GT composite.",
       },
       {
         "@type": "HowToStep",
-        name: "Apply the DoD conversion for the scaled GT",
-        text: "The Department of Defense applies a final conversion table to the raw composite to produce the scaled GT score your recruiter sees, which typically falls in the 80 to 140 range.",
+        name: "Check your GT against the thresholds you need",
+        text: "Compare your GT composite to the minimums for the jobs and programs you want, for example GT 110 for Army officer programs and 18X Special Forces. Your official record may differ by a point or two, so confirm at MEPS if you are close to a cutoff.",
       },
     ],
   };
@@ -233,18 +233,18 @@ export default function GTScoreCalculatorPage() {
         </p>
 
         <p className="text-text-secondary">
-          Add your WK and PC standard scores together, then multiply the sum by
-          2.
+          Add your WK and PC standard scores together. There is no multiplier,
+          VE is the plain sum of the two verbal subtests.
         </p>
 
         <div className="my-4 rounded-xl bg-navy p-4 text-center font-mono text-lg font-bold text-accent">
-          VE = (WK + PC) &times; 2
+          VE = WK + PC
         </div>
 
         <p className="text-text-secondary">
           Working example: WK = 40, PC = 38
           <br />
-          VE = (40 + 38) &times; 2 = <strong>156</strong>
+          VE = 40 + 38 = <strong>78</strong>
         </p>
 
         <p className="text-text-secondary">
@@ -256,19 +256,19 @@ export default function GTScoreCalculatorPage() {
         </div>
 
         <p className="text-text-secondary">
-          Working example: VE = 156, AR = 42
+          Working example: VE = 78, AR = 42
           <br />
-          GT = 156 + 42 = <strong>198</strong>
+          GT = 78 + 42 = <strong>120</strong>
         </p>
 
         <p className="text-text-secondary">
-          That 198 is your raw GT composite. The Department of Defense applies a
-          final conversion table to produce the scaled GT score your recruiter
-          sees, which typically falls in the 80-140 range. Our gt score
-          calculator uses the raw composite. If your result sits clearly above
-          or below the threshold, the raw number is a reliable guide. If
-          you&apos;re within 5-10 points of a critical line, confirm the scaled
-          number at MEPS. If you prefer to follow the math by hand, our{" "}
+          That 120 is your GT composite, the same number our calculator shows
+          and the number recruiters compare against MOS and program cutoffs. GT
+          110, for example, clears every Army officer pathway, so a 120 is
+          comfortably above that line. Your official record can differ by a
+          point or two once scores are finalized at MEPS, so if you land within
+          a few points of a cutoff, confirm the exact number with your
+          recruiter. If you prefer to follow the math by hand, our{" "}
           <Link
             href="/gt-score"
             className="text-accent hover:text-accent-hover"
@@ -281,25 +281,23 @@ export default function GTScoreCalculatorPage() {
         <aside className="my-6 rounded-lg border-l-4 border-amber-400 bg-navy p-4">
           <p className="text-sm font-semibold text-amber-400">Warning</p>
           <p className="mt-1 text-sm text-text-secondary">
-            Multiple published articles claim the VE formula is VE = 2(WK + PC)
-            and show VE scores like 240 or 256. That formula produces the same
-            raw GT result because the math is equivalent, but it
-            misrepresents VE as a standalone score in the 200+ range. Your VE
-            as shown on official records is a scaled score in the 20-62 range.
-            Our calculator handles the conversion correctly. When you see a
-            competitor&apos;s &ldquo;sample calculation&rdquo; showing
-            impossible VE numbers, that&apos;s a sign the article
-            wasn&apos;t reviewed by anyone who&apos;s looked at an actual ASVAB
-            score report.
+            A common mistake doubles VE, writing VE = 2 &times; (WK + PC) and
+            reporting GT scores near 200. That doubling is real, but it belongs
+            to the AFQT formula (AFQT = 2 &times; VE + AR + MK), not to VE itself
+            and not to GT. For your GT, VE = WK + PC with no multiplier, and
+            GT = VE + AR. If a calculator shows you a GT around 200, it has
+            borrowed the AFQT doubling by mistake. Our calculator uses the
+            correct GT formula.
           </p>
         </aside>
 
         <p className="text-text-secondary">
-          The VE multiplier is where most candidates find their leverage.
-          Because VE is doubled in the GT formula, every 5-point increase in
-          your combined WK+PC adds 10 points to your raw GT. A focused 4-week
-          block studying vocabulary and paragraph reasoning can move your GT
-          more efficiently than the same time spent on arithmetic. See{" "}
+          Verbal is where most candidates find their leverage. GT = WK + PC +
+          AR, so two of the three inputs are verbal. A point gained in WK or PC
+          lifts your GT just as much as a point in AR, but because there are two
+          verbal subtests, a focused 4-week block on vocabulary and paragraph
+          reasoning usually gives you more total room to move the number than
+          the same time spent on arithmetic alone. See{" "}
           <Link href="/asvab-word-knowledge-tips">
             ASVAB Word Knowledge Tips
           </Link>{" "}
@@ -584,10 +582,10 @@ export default function GTScoreCalculatorPage() {
           <p className="mt-1 text-sm text-text-secondary">
             If you only have your Student Score Report, use the calculator at
             the top of this page. Plug in your WK, PC, and AR standard scores
-            and it will give you your raw GT composite. If you&apos;ve already
-            been to MEPS and your recruiter quoted you a GT number, that&apos;s
-            the official scaled version. They will look different numerically
-            but they track together directly.
+            and it will give you your GT composite (VE + AR). If you&apos;ve
+            already been to MEPS and your recruiter quoted you a GT number, it
+            should match closely, a point or two of difference just reflects how
+            your official scores were finalized.
           </p>
         </aside>
 
@@ -719,11 +717,12 @@ export default function GTScoreCalculatorPage() {
         </div>
 
         <p className="text-text-secondary">
-          The VE leverage point is worth repeating: because VE = (WK + PC)
-          &times; 2, a 5-point combined improvement in WK and PC adds 10 points
-          to your raw GT. The same 5-point gain in AR only adds 5 points. If
-          you&apos;re close to a threshold, verbal prep is the higher-leverage
-          move.
+          The verbal leverage point is worth repeating: GT = WK + PC + AR, so
+          verbal fills two of the three slots. Every point of combined WK+PC
+          improvement adds a point to your GT, the same as a point of AR, but
+          with two verbal subtests to work on you usually have more room there
+          than in AR alone. If you&apos;re close to a threshold, verbal prep is
+          often the higher-leverage move.
         </p>
 
         <p className="text-text-secondary">
@@ -788,42 +787,41 @@ export default function GTScoreCalculatorPage() {
 
         {/* ── GT Score Accuracy ── */}
         <h2 className="mt-12 font-display text-2xl font-bold text-text-primary">
-          GT Score Accuracy: Why Your Calculated Number May Look Different from
+          GT Score Accuracy: Why Your Calculated Number May Differ Slightly from
           Official Records
         </h2>
 
         <p className="mt-4 text-text-secondary">
-          If the gt score calculator gives you 198 but your recruiter shows you
-          a GT of 112, both numbers are correct. They&apos;re measuring the
-          same thing in different units.
+          If our calculator gives you a GT of 120 and your recruiter reads 118
+          off your record, both are essentially the same number. The calculator
+          sums your standard scores exactly as the branch composite does; small
+          differences come from how and when your official scores are finalized,
+          not from a different formula.
         </p>
 
         <p className="text-text-secondary">
-          The raw composite you calculate (VE + AR) feeds into the Department of
-          Defense&apos;s official conversion table, which outputs the scaled GT
-          score that appears in your service record and that MOS eligibility
-          tables reference. The scaled score typically falls in the 80-140
-          range. The raw composite can run considerably higher.
+          GT is a direct composite of standard scores: GT = VE + AR, where VE =
+          WK + PC. There is no hidden doubling and no separate scale that turns a
+          120 into a 200. If a tool shows you a GT near 200, it has mistakenly
+          applied the AFQT doubling (AFQT = 2 &times; VE + AR + MK) to your GT.
         </p>
 
         <aside className="my-6 rounded-lg border-l-4 border-accent bg-navy p-4">
           <p className="text-sm font-semibold text-text-primary">Note</p>
           <p className="mt-1 text-sm text-text-secondary">
-            A raw GT composite in the 175-210 range typically maps to a scaled
-            GT of approximately 107-115, which covers the most consequential
-            thresholds. If your raw composite puts you clearly above or below a
-            threshold on the raw scale, you can use the calculator result as a
-            reliable directional indicator. If you&apos;re within 5-10 raw
-            points of a critical threshold like the 110 equivalent, verify the
-            exact scaled score with your recruiter before making enlistment
-            decisions based on it.
+            GT composites for competitive candidates typically land in the
+            80-140 range. If your number sits clearly above or below a
+            threshold, treat the calculator result as reliable. If you&apos;re
+            within a few points of a critical cutoff like GT 110, confirm the
+            exact figure with your recruiter before making enlistment decisions
+            based on it.
           </p>
         </aside>
 
         <p className="text-text-secondary">
-          The formula is correct. The output units differ from what official
-          records display. Use the calculator for planning and comparison,
-          confirm the official scaled number at MEPS.
+          The formula is the same one your branch uses. Use the calculator for
+          planning and comparison, and confirm the official number at MEPS if
+          you&apos;re near a cutoff.
         </p>
 
         {/* ── FAQ ── */}
