@@ -38,7 +38,7 @@ export default function GTScorePage() {
             name: "ASVAB Hero",
           },
           datePublished: "2026-05-20",
-          dateModified: "2026-06-14",
+          dateModified: "2026-07-21",
         }}
       />
 
@@ -133,6 +133,22 @@ export default function GTScorePage() {
               acceptedAnswer: {
                 "@type": "Answer",
                 text: "Active-duty soldiers who complete the Army's roughly two-week BSEP course gain about 19 points on average, with some classes averaging 23. The Army's Operation Connect the Dots got 82% of soldiers to GT 110 in just two weeks. Future recruits can move their GT in a few weeks of focused prep on Word Knowledge, Paragraph Comprehension, and Arithmetic Reasoning.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Is the GT score an IQ score?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "No. GT is a military standard score built from three ASVAB subtests (Word Knowledge, Paragraph Comprehension, and Arithmetic Reasoning), not a psychometric IQ test. The two are sometimes compared informally because both use a mean near 100, but GT measures verbal and math reasoning tied to job qualification, not general intelligence.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Does the military still use GT scores?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Yes. The Army and Marine Corps actively use GT today to gate officer programs, warrant officer applications, special operations, and dozens of technical MOS assignments. It has not been phased out. The Air Force and Space Force are the exception. They use MAGE composites instead of a GT line score.",
               },
             },
           ],
@@ -1768,6 +1784,32 @@ export default function GTScorePage() {
                 free practice test
               </Link>
               .
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-text-primary">
+              Is the GT score an IQ score?
+            </h3>
+            <p className="mt-1 text-sm text-text-secondary">
+              No. GT is a military standard score built from three ASVAB
+              subtests (Word Knowledge, Paragraph Comprehension, and
+              Arithmetic Reasoning), not a psychometric IQ test. The two get
+              compared informally because both use a mean near 100, but GT
+              measures verbal and math reasoning tied to job qualification,
+              not general intelligence.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-text-primary">
+              Does the military still use GT scores?
+            </h3>
+            <p className="mt-1 text-sm text-text-secondary">
+              Yes. The Army and Marine Corps actively use GT today to gate
+              officer programs, warrant officer applications, special
+              operations, and dozens of technical MOS assignments. It has not
+              been phased out. The Air Force and Space Force are the
+              exception &mdash; they use MAGE composites instead of a GT line
+              score.
             </p>
           </div>
         </div>

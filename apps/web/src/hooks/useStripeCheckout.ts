@@ -33,6 +33,16 @@ export function useStripeCheckout(opts: UseStripeCheckoutOpts = {}) {
       if (loading) return;
 
       if (!session) {
+        // DRAFT (L2 funnel-leak diagnosis, unshipped): this is the silent hop
+        // — anon visitors clicking Buy get bounced to /signup with NO event
+        // fired, so GA4/first-party funnels never see the intent. Track it
+        // before redirecting so the paywall→checkout drop can be attributed
+        // to "needed to sign up" instead of looking like a dead click.
+        trackEvent(PaywallEvents.CheckoutSignupRequired, {
+          tier,
+          from: opts.source ?? "unknown",
+          ...(opts.placement ? { placement: opts.placement } : {}),
+        });
         const returnPath = opts.source
           ? `/upgrade?tier=${tier}&from=${opts.source}`
           : `/upgrade?tier=${tier}`;

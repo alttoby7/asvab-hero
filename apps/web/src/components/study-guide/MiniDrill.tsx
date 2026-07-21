@@ -5,7 +5,7 @@ import Link from "next/link";
 import { getSupabaseBrowserClient } from "@/lib/supabase/client";
 import { saveAttempt } from "@/lib/practice/profile-sync";
 import { useEntitlement } from "@/hooks/useEntitlement";
-import { trackEvent, FunnelEvents } from "@/lib/analytics";
+import { trackEvent, FunnelEvents, PaywallEvents } from "@/lib/analytics";
 import type { AttemptPayload, AsvabSubtest } from "@/types";
 
 interface DbQuestion {
@@ -231,6 +231,16 @@ export default function MiniDrill({ topicId }: MiniDrillProps) {
         </p>
         <Link
           href="/upgrade?from=mini_drill"
+          // DRAFT (L2 funnel-leak diagnosis, unshipped): this CTA fired
+          // paywall_shown on render but had NO click tracking at all — on the
+          // highest-traffic paywall surface (study guides), that's a total
+          // instrumentation blackout, not just an under-count.
+          onClick={() =>
+            trackEvent(PaywallEvents.PaywallCtaUpgradeClick, {
+              reason: "pro_only_mini_drill",
+              variant: "subtest_drill",
+            })
+          }
           className="inline-block rounded-xl bg-accent px-5 py-2.5 text-sm font-bold text-white no-underline transition-all hover:bg-accent-hover hover:shadow-[0_0_20px_var(--color-accent-glow)]"
         >
           Upgrade to Pro

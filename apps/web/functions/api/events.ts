@@ -44,6 +44,7 @@ const ALLOWED_EVENT_NAMES = new Set<string>([
   "faq_opened",
   "email_capture_exit_click",
   "checkout_click",
+  "checkout_signup_required",
   "checkout_session_created",
   "checkout_redirected",
   "checkout_returned_cancelled",

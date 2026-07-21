@@ -88,11 +88,22 @@ const supabaseAdmin = createClient(SUPABASE_URL, SERVICE_KEY, {
   auth: { autoRefreshToken: false, persistSession: false },
 });
 
+// Legacy/grandfathered Stripe price IDs that predate the current env-configured
+// prices. Without these, a grandfathered sub's next subscription.updated /
+// invoice.paid event sets pro_tier=null (reporting drift only — billing_status
+// and Pro access are unaffected). Verified against prod `profiles` 2026-07-21.
+const LEGACY_PRICE_TIER: Record<string, "monthly" | "annual"> = {
+  price_1TRQ38DjRScowBLl4mhAazTf: "annual", // old $49.99 annual (6 subs)
+  price_1TioxoDjRScowBLl3T8WSV0y: "monthly", // $14.99 monthly
+  price_1TRQ38DjRScowBLlOSFQWlIN: "monthly", // $9.99 legacy monthly
+  price_1TlcAmDjRScowBLlOKW7FpJF: "monthly", // interim $24.99 monthly
+};
+
 const tierFromPrice = (priceId: string | undefined | null): "monthly" | "annual" | null => {
   if (!priceId) return null;
   if (priceId === PRICE_MONTHLY) return "monthly";
   if (priceId === PRICE_ANNUAL) return "annual";
-  return null;
+  return LEGACY_PRICE_TIER[priceId] ?? null;
 };
 
 // Refuse to clobber newer state on a profile with a stale event. Returns true
@@ -429,7 +440,7 @@ const renderWelcomeTrial = (firstName: string): string => `\
   <li>Re-take the diagnostic on day 6 to see your score move</li>
 </ol>
 
-<p>If Pro is helping, do nothing. Your card runs on day 8 at $14.99 and you keep going. If it is not the right fit, cancel any time at <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a>.</p>
+<p>If Pro is helping, do nothing. Your card runs on day 8 at $24.99 and you keep going. If it is not the right fit, cancel any time at <a href="https://asvabhero.com/account/billing">asvabhero.com/account/billing</a>.</p>
 
 <p>Reply with your branch and target test date. I read every reply.</p>
 
@@ -536,7 +547,7 @@ const sendWelcomeEmail = async (args: {
       body: JSON.stringify({
         from: "Trish at ASVAB Hero <info@asvabhero.com>",
         to: [customerEmail],
-        reply_to: "trish@dach.family",
+        reply_to: "info@asvabhero.com",
         subject,
         html,
       }),
@@ -692,7 +703,7 @@ const sendTrialConvertedEmail = async (args: {
       body: JSON.stringify({
         from: "Trish at ASVAB Hero <info@asvabhero.com>",
         to: [recipientEmail],
-        reply_to: "trish@dach.family",
+        reply_to: "info@asvabhero.com",
         subject,
         html,
       }),
@@ -967,7 +978,7 @@ const sendPaymentFailedEmail = async (args: {
       body: JSON.stringify({
         from: "Trish at ASVAB Hero <info@asvabhero.com>",
         to: [recipientEmail],
-        reply_to: "trish@dach.family",
+        reply_to: "info@asvabhero.com",
         subject,
         html,
       }),
@@ -1149,7 +1160,7 @@ const sendWinbackEmail = async (args: {
       body: JSON.stringify({
         from: "Trish at ASVAB Hero <info@asvabhero.com>",
         to: [recipientEmail],
-        reply_to: "trish@dach.family",
+        reply_to: "info@asvabhero.com",
         subject,
         html,
       }),

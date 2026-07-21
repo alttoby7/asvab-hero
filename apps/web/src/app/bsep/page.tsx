@@ -30,13 +30,29 @@ const articleJsonLd = {
     name: "ASVAB Hero",
   },
   datePublished: "2026-05-12",
-  dateModified: "2026-07-08",
+  dateModified: "2026-07-21",
 };
 
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is BSEP in the Army?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "BSEP stands for Basic Skills Education Program. It is the Army's free, on-duty course that raises the academic subtest scores (Word Knowledge, Paragraph Comprehension, Arithmetic Reasoning) behind your GT score, so soldiers can qualify for jobs, schools, and promotions they were previously blocked from. It runs through the Army Continuing Education System (ACES) at your installation's Education Center.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does BSEP add up your GT score?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, indirectly. BSEP does not add points directly. It is academic instruction that improves your performance on the AFCT retest (the ASVAB retake soldiers take on active duty), and the AFCT retest is what recalculates your GT. Average gains across installations run 19 to 23 points, and over 90% of participants raise their GT.",
+      },
+    },
     {
       "@type": "Question",
       name: "Is BSEP the same as FAST?",
@@ -1215,6 +1231,33 @@ export default function BSEPPage() {
         </h2>
 
         <div className="mt-4 space-y-6">
+          <div>
+            <h3 className="font-display text-base font-bold text-text-primary">
+              What is BSEP in the Army?
+            </h3>
+            <p className="mt-1 text-sm text-text-secondary">
+              BSEP stands for Basic Skills Education Program. It is the
+              Army&apos;s free, on-duty course that raises the academic
+              subtest scores (Word Knowledge, Paragraph Comprehension,
+              Arithmetic Reasoning) behind your GT score, so soldiers can
+              qualify for jobs, schools, and promotions they were previously
+              blocked from. It runs through the Army Continuing Education
+              System (ACES) at your installation&apos;s Education Center.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-display text-base font-bold text-text-primary">
+              Does BSEP add up your GT score?
+            </h3>
+            <p className="mt-1 text-sm text-text-secondary">
+              Yes, indirectly. BSEP does not add points directly. It is
+              academic instruction that improves your performance on the AFCT
+              retest (the ASVAB retake soldiers take on active duty), and the
+              AFCT retest is what recalculates your GT. Average gains across
+              installations run 19 to 23 points, and over 90% of participants
+              raise their GT.
+            </p>
+          </div>
           <div>
             <h3 className="font-display text-base font-bold text-text-primary">
               Is BSEP the same as FAST?

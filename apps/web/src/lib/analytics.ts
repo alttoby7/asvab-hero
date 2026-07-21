@@ -222,6 +222,11 @@ export const PaywallEvents = {
   EmailCaptureExitClick: "email_capture_exit_click",
 
   CheckoutClick: "checkout_click",
+  // DRAFT (L2 funnel-leak diagnosis, unshipped): fires the instant an anon
+  // visitor clicks a Buy/CTA and gets bounced to /signup before any Stripe
+  // call — today that hop is completely untracked, so checkout_start only
+  // ever fires for the minority of clicks that already had a session.
+  CheckoutSignupRequired: "checkout_signup_required",
   CheckoutSessionCreated: "checkout_session_created",
   CheckoutRedirected: "checkout_redirected",
   CheckoutReturnedCancelled: "checkout_returned_cancelled",

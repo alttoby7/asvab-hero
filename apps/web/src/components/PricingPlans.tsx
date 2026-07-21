@@ -128,6 +128,14 @@ export default function PricingPlans({
 
     // Not logged in, send to signup and come back to the chosen tier.
     if (!session) {
+      // DRAFT (L2 funnel-leak diagnosis, unshipped): same untracked hop as
+      // useStripeCheckout — track it so this CTA's anon clicks aren't
+      // invisible in the funnel.
+      trackEvent(PaywallEvents.CheckoutSignupRequired, {
+        tier,
+        from: source ?? "unknown",
+        placement: placement ?? "pricing_grid",
+      });
       const returnPath = source
         ? `/upgrade?tier=${tier}&from=${source}`
         : `/upgrade?tier=${tier}`;
