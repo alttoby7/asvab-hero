@@ -31,9 +31,9 @@ const allJobs: MilitaryJob[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "Free ASVAB Line Score Calculator: All 6 Branches (2026)",
+  title: "ASVAB Line Score Calculator (2026): Army, Navy, Air Force & All 6 Branches",
   description:
-    "Calculate your ASVAB line scores free for Army, Marines, Air Force, Navy, Space Force and Coast Guard. Enter your subtests and instantly see every military job you qualify for.",
+    "Calculate ASVAB line scores for all 6 branches — Army GT, Marine CL, Air Force MAGE, Navy NUC, and more. Enter your 9 subtest standard scores and instantly see every job you qualify for.",
   alternates: {
     canonical: "https://asvabhero.com/asvab-line-score-calculator",
   },
@@ -145,6 +145,20 @@ export default function ASVABLineScoreCalculatorPage() {
         </h1>
 
         <p className="mt-4 text-text-secondary">
+          An <strong>ASVAB line score calculator</strong> takes your 9 subtest
+          standard scores and applies each branch&apos;s composite formula — Army
+          GT, Marine CL, Air Force MAGE, Navy NUC — to instantly show which jobs
+          you qualify for across all 6 branches. Use the{" "}
+          <Link
+            href="/calculator"
+            className="text-accent hover:text-accent-hover"
+          >
+            all-branch ASVAB calculator
+          </Link>{" "}
+          below, or read on for the complete branch-by-branch breakdown.
+        </p>
+
+        <p className="text-text-secondary">
           You walked out of the test with a stack of numbers. A 64 here, a 102
           there, a 51 percentile somewhere else. Now you want to know which
           military jobs those numbers actually unlock.
@@ -1138,3 +1152,4 @@ export default function ASVABLineScoreCalculatorPage() {
     </div>
   );
 }
+
