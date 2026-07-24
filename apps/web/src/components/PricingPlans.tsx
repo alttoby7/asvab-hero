@@ -12,68 +12,22 @@ import {
   flush,
 } from "@/lib/analytics";
 import Link from "next/link";
-import { GUARANTEE_LINE, GUARANTEE_TAG } from "@/lib/guarantee";
+import { GUARANTEE_TAG } from "@/lib/guarantee";
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 
-// Pricing model (2026-06-27): annual-led. Stripe data showed the $79/yr
-// Annual was the clean converter pre-pivot, while the $59 one-time pass got
-// abandoned ~70% at the upfront-payment step. So:
-//   - Annual ($79/yr) is the default + "Best value" recommendation.
-//   - Monthly ($24.99/mo, 7-day trial) is the low-friction start option.
-//   - 90-Day Pass ($59, one-time) is demoted to a short-term option, no longer
-//     the loud default.
-// Retired 2026-06-30: the Retaker Pass ($119) never sold and was removed.
+// Pricing model (2026-07-24): two visible Pro offers, no toggle.
+//   - 90-Day Pass ($59, one-time) is the HERO/default — the loud, elevated card
+//     and the only primary CTA on the page.
+//   - Monthly ($24.99/mo, 7-day trial) is the low-friction start option, shown
+//     as a standard, secondary-styled card beside it.
+// The old Annual ($79/yr) tier was removed from the UI menu on 2026-07-24. The
+// Stripe $79 price stays live off-menu (still a valid `pro_tier` for existing
+// subscribers and a valid checkout string), but the UI never sends "annual".
 // `tier` is the value posted to the stripe-checkout edge function, which maps
 // it to a Stripe price id + mode (subscription vs payment). Real prices live in
 // Stripe; the strings below are display copy only.
-export type Tier = "annual" | "monthly" | "pass90";
-
-type TierConfig = {
-  key: Tier;
-  label: string;
-  price: string;
-  unit: string;
-  tagline: string;
-  badge?: string;
-  cta: string;
-  note: string | null;
-};
-
-const TIERS: Record<Tier, TierConfig> = {
-  annual: {
-    key: "annual",
-    label: "Annual",
-    price: "$79",
-    unit: "/ year",
-    tagline:
-      "A full year of Pro at the lowest price — the best value if you have more than a couple months before test day.",
-    badge: "Best value",
-    cta: "Get Pro — $79/year",
-    note: `Billed yearly. Cancel anytime in Account Settings. ${GUARANTEE_LINE}`,
-  },
-  pass90: {
-    key: "pass90",
-    label: "90-Day Pass",
-    price: "$59",
-    unit: "one-time",
-    tagline:
-      "Full Pro access for 90 days — enough to study and take the test, with nothing to cancel.",
-    badge: "Short-term option",
-    cta: "Get my 90-Day Pass",
-    note: `One-time payment, no subscription. ${GUARANTEE_LINE}`,
-  },
-  monthly: {
-    key: "monthly",
-    label: "Monthly",
-    price: "$24.99",
-    unit: "/ month",
-    tagline:
-      "Month-to-month flexibility if you're not sure of your test date yet.",
-    cta: "Start 7-day free trial",
-    note: "Card required. $24.99/mo after the 7-day trial unless cancelled. Cancel anytime in Account Settings.",
-  },
-};
+export type Tier = "monthly" | "pass90";
 
 const FREE_FEATURES = [
   "Full diagnostic + your saved score report",
@@ -92,9 +46,10 @@ const PRO_FEATURES = [
 ];
 
 interface PricingPlansProps {
+  /** Retained for API compatibility with callers; the layout no longer varies
+   *  by tier (the 90-Day Pass is always the hero). */
   defaultTier?: Tier;
-  /** When set, that tier is visibly flagged "Recommended" (e.g. retaker for
-   *  retaker-intent traffic). Visible by design — never a silent steer. */
+  /** Retained for API compatibility; no longer changes the layout. */
   recommendedTier?: Tier;
   source?: string;
   hideFreePlan?: boolean;
@@ -102,8 +57,6 @@ interface PricingPlansProps {
 }
 
 export default function PricingPlans({
-  defaultTier = "annual",
-  recommendedTier,
   source,
   hideFreePlan,
   placement,
@@ -111,51 +64,43 @@ export default function PricingPlans({
   const router = useRouter();
   const { session, loading: sessionLoading } = useSession();
   const { entitlement, loading: entitlementLoading } = useEntitlement();
-  const [tier, setTier] = useState<Tier>(defaultTier);
-  const [checkoutLoading, setCheckoutLoading] = useState(false);
+  // Which tier's checkout is currently in flight (null = none). Drives the
+  // per-button spinner so only the clicked card shows "Loading checkout…".
+  const [pendingTier, setPendingTier] = useState<Tier | null>(null);
   const [checkoutError, setCheckoutError] = useState<string | null>(null);
 
   const isLoading = sessionLoading || entitlementLoading;
-  const active = TIERS[tier];
 
-  function selectTier(to: Tier) {
-    setTier(to);
-    trackEvent(PaywallEvents.PlanToggled, { to });
-  }
-
-  async function handleUpgradeClick() {
+  async function handleUpgradeClick(selectedTier: Tier) {
     if (isLoading) return;
 
     // Not logged in, send to signup and come back to the chosen tier.
     if (!session) {
-      // DRAFT (L2 funnel-leak diagnosis, unshipped): same untracked hop as
-      // useStripeCheckout — track it so this CTA's anon clicks aren't
-      // invisible in the funnel.
       trackEvent(PaywallEvents.CheckoutSignupRequired, {
-        tier,
+        tier: selectedTier,
         from: source ?? "unknown",
         placement: placement ?? "pricing_grid",
       });
       const returnPath = source
-        ? `/upgrade?tier=${tier}&from=${source}`
-        : `/upgrade?tier=${tier}`;
+        ? `/upgrade?tier=${selectedTier}&from=${source}`
+        : `/upgrade?tier=${selectedTier}`;
       router.push(`/signup?return=${encodeURIComponent(returnPath)}`);
       return;
     }
 
-    // Already Pro, no-op (button is disabled).
+    // Already Pro, no-op (buttons are disabled).
     if (entitlement.isPro) return;
 
-    setCheckoutLoading(true);
+    setPendingTier(selectedTier);
     setCheckoutError(null);
 
     trackEvent(FunnelEvents.CheckoutStart, {
-      tier,
+      tier: selectedTier,
       from: source ?? "unknown",
       placement: placement ?? "pricing_grid",
     });
     trackEvent(PaywallEvents.CheckoutClick, {
-      tier,
+      tier: selectedTier,
       from: source ?? "unknown",
       placement: placement ?? "pricing_grid",
     });
@@ -170,7 +115,7 @@ export default function PricingPlans({
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          tier,
+          tier: selectedTier,
           returnPath,
           ...(paywallContextId ? { paywall_context_id: paywallContextId } : {}),
         }),
@@ -183,18 +128,18 @@ export default function PricingPlans({
 
       const { url } = await res.json();
       if (!url) throw new Error("No checkout URL returned");
-      trackEvent(PaywallEvents.CheckoutSessionCreated, { tier });
-      trackEvent(PaywallEvents.CheckoutRedirected, { tier });
+      trackEvent(PaywallEvents.CheckoutSessionCreated, { tier: selectedTier });
+      trackEvent(PaywallEvents.CheckoutRedirected, { tier: selectedTier });
       flush(true);
       window.location.href = url;
     } catch (err: unknown) {
-      trackEvent(PaywallEvents.CheckoutReturnedError, { tier });
+      trackEvent(PaywallEvents.CheckoutReturnedError, { tier: selectedTier });
       setCheckoutError(
         err instanceof Error
           ? err.message
           : "Something went wrong. Please try again.",
       );
-      setCheckoutLoading(false);
+      setPendingTier(null);
     }
   }
 
@@ -212,96 +157,60 @@ export default function PricingPlans({
     );
   }
 
-  const tierOrder: Tier[] = ["annual", "monthly", "pass90"];
+  function Spinner() {
+    return (
+      <span className="flex items-center justify-center gap-2">
+        <svg className="h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none">
+          <circle
+            className="opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            strokeWidth="4"
+          />
+          <path
+            className="opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+          />
+        </svg>
+        Loading checkout...
+      </span>
+    );
+  }
+
+  const isPro = entitlement.isPro;
 
   return (
     <div className="w-full">
-      {/* Tier selector */}
-      <div className="mx-auto mb-8 flex max-w-md items-center justify-center gap-2 rounded-xl border border-navy-border bg-navy-light p-1">
-        {tierOrder.map((t) => {
-          const cfg = TIERS[t];
-          const priceTag = t === "annual" ? "$79/yr" : t === "monthly" ? "$24.99/mo" : "$59";
-          return (
-            <button
-              key={t}
-              onClick={() => selectTier(t)}
-              className={`flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                tier === t
-                  ? "bg-accent text-white"
-                  : "text-text-secondary hover:text-text-primary"
-              }`}
-            >
-              {cfg.label}{" "}
-              <span className={`text-xs ${tier === t ? "text-white/80" : "text-text-tertiary"}`}>
-                {priceTag}
-              </span>
-              {t === recommendedTier && (
-                <span className="ml-1" aria-hidden="true">
-                  ★
-                </span>
-              )}
-            </button>
-          );
-        })}
-      </div>
-
-      {recommendedTier === "annual" && (
-        <p className="-mt-4 mb-6 text-center text-xs font-semibold text-accent">
-          ★ Best value — a full year of Pro for $79 + {GUARANTEE_TAG}
-        </p>
-      )}
-
-      {/* Plan grid */}
-      <div className={`grid gap-8 ${hideFreePlan ? "mx-auto max-w-md" : "sm:grid-cols-2"}`}>
-        {/* Free plan — hidden when the visitor is already past free (paywall traffic) */}
-        {!hideFreePlan && (
-          <div className="rounded-2xl border border-navy-border bg-navy-light p-8">
-            <h2 className="font-display text-xl font-bold text-text-primary">Free</h2>
-            <div className="mt-2">
-              <span className="font-mono text-4xl font-bold text-text-primary">$0</span>
-              <span className="text-text-tertiary"> / forever</span>
-            </div>
-            <p className="mt-4 text-sm text-text-secondary">
-              A free account that saves your diagnostic and turns it into a daily,
-              score-moving plan.
-            </p>
-            <ul className="mt-6 space-y-3">
-              {FREE_FEATURES.map((f) => (
-                <li key={f} className="flex items-start gap-2 text-sm">
-                  <CheckIcon />
-                  <span className="text-text-secondary">{f}</span>
-                </li>
-              ))}
-            </ul>
-            <Link
-              href="/practice-test"
-              className="mt-8 block rounded-xl border border-navy-border py-3 text-center text-sm font-semibold text-text-primary transition-colors hover:border-accent no-underline"
-            >
-              Start free diagnostic
-            </Link>
-          </div>
-        )}
-
-        {/* Pro plan (selected tier) */}
-        <div className="relative rounded-2xl border-2 border-accent bg-navy-light p-8">
+      {/* Two Pro offers. DOM order = Pass first (mobile shows Pass → Monthly),
+          desktop re-orders to Monthly (left) · Pass (right, elevated). The Pass
+          column is given a touch more width so it reads as the hero. */}
+      <div className="grid gap-8 sm:grid-cols-[1fr_1.12fr] sm:items-start">
+        {/* ── 90-Day Pass (HERO) ───────────────────────────────────────── */}
+        <div className="relative order-1 rounded-2xl border-2 border-accent bg-navy-light p-8 shadow-xl shadow-black/30 sm:order-2">
           <div className="absolute -top-3 left-6 rounded-full bg-accent px-3 py-0.5 text-xs font-bold text-white">
             PRO
           </div>
-          {active.badge && (
-            <div className="absolute -top-3 right-6 rounded-full bg-navy-lighter px-3 py-0.5 text-xs font-bold text-accent">
-              {active.badge}
-            </div>
-          )}
+          <div className="absolute -top-3 right-6 rounded-full bg-navy-lighter px-3 py-0.5 text-xs font-bold text-accent">
+            Best Value
+          </div>
           <h2 className="font-display text-xl font-bold text-text-primary">
-            Pro · {active.label}
+            Pro · 90-Day Pass
           </h2>
           <div className="mt-2">
-            <span className="font-mono text-4xl font-bold text-accent">
-              {active.price}
-            </span>
-            <span className="text-text-tertiary"> {active.unit}</span>
+            <span className="font-mono text-4xl font-bold text-accent">$59</span>
+            <span className="text-text-tertiary"> one-time</span>
           </div>
-          <p className="mt-4 text-sm text-text-secondary">{active.tagline}</p>
+          <p className="mt-1 text-sm text-text-tertiary">about $0.66/day</p>
+          <p className="mt-3 text-sm font-medium text-text-secondary">
+            3 months of Monthly costs $74.97. The Pass saves you $15.97.
+          </p>
+          <p className="mt-3 text-sm text-text-secondary">
+            Everything unlocked for the 90 days before your test. One payment,
+            nothing to cancel.
+          </p>
           <ul className="mt-6 space-y-3">
             {PRO_FEATURES.map((f) => (
               <li key={f} className="flex items-start gap-2 text-sm">
@@ -311,61 +220,126 @@ export default function PricingPlans({
             ))}
           </ul>
 
-          {entitlement.isPro ? (
+          {isPro ? (
             <button
               disabled
-              className="mt-8 block w-full rounded-xl bg-accent/20 py-3 text-center text-sm font-semibold text-accent/60 cursor-not-allowed"
+              className="mt-8 block w-full cursor-not-allowed rounded-xl bg-accent/20 py-3 text-center text-sm font-semibold text-accent/60"
             >
               You&apos;re already Pro
             </button>
           ) : (
-            <button
-              onClick={handleUpgradeClick}
-              disabled={checkoutLoading || isLoading}
-              className="mt-8 block w-full rounded-xl bg-accent py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-accent-hover disabled:opacity-60 disabled:cursor-not-allowed"
-            >
-              {checkoutLoading ? (
-                <span className="flex items-center justify-center gap-2">
-                  <svg
-                    className="h-4 w-4 animate-spin"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <circle
-                      className="opacity-25"
-                      cx="12"
-                      cy="12"
-                      r="10"
-                      stroke="currentColor"
-                      strokeWidth="4"
-                    />
-                    <path
-                      className="opacity-75"
-                      fill="currentColor"
-                      d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
-                    />
-                  </svg>
-                  Loading checkout...
-                </span>
-              ) : (
-                active.cta
-              )}
-            </button>
-          )}
-
-          {!entitlement.isPro && active.note && (
-            <p className="mt-2 text-xs text-text-tertiary">{active.note}</p>
+            <>
+              <button
+                onClick={() => handleUpgradeClick("pass90")}
+                disabled={pendingTier !== null || isLoading}
+                className="mt-8 block w-full rounded-xl bg-accent py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-accent-hover disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {pendingTier === "pass90" ? (
+                  <Spinner />
+                ) : (
+                  "Get the 90-Day Pass for $59"
+                )}
+              </button>
+              <p className="mt-2 text-center text-xs text-text-tertiary">
+                Pay with card or Cash App.
+              </p>
+              <button
+                onClick={() => handleUpgradeClick("monthly")}
+                disabled={pendingTier !== null || isLoading}
+                className="mt-2 block w-full text-center text-sm font-medium text-accent underline transition-colors hover:text-accent-hover disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                Not sure yet? Start with the 7-day free trial →
+              </button>
+            </>
           )}
 
           {checkoutError && (
             <p className="mt-2 text-xs text-red-400">{checkoutError}</p>
           )}
         </div>
+
+        {/* ── Monthly (standard) ────────────────────────────────────────── */}
+        <div className="relative order-2 rounded-2xl border border-navy-border bg-navy-light p-8 sm:order-1">
+          <div className="absolute -top-3 left-6 rounded-full bg-navy-lighter px-3 py-0.5 text-xs font-bold text-accent">
+            7-Day Free Trial
+          </div>
+          <h2 className="font-display text-xl font-bold text-text-primary">
+            Pro · Monthly
+          </h2>
+          <div className="mt-2">
+            <span className="font-mono text-4xl font-bold text-text-primary">
+              $24.99
+            </span>
+            <span className="text-text-tertiary"> / month</span>
+          </div>
+          <p className="mt-4 text-sm text-text-secondary">
+            Try everything free for a week, then $24.99/mo. Cancel anytime.
+          </p>
+          <ul className="mt-6 space-y-3">
+            {PRO_FEATURES.map((f) => (
+              <li key={f} className="flex items-start gap-2 text-sm">
+                <CheckIcon />
+                <span className="text-text-secondary">{f}</span>
+              </li>
+            ))}
+          </ul>
+
+          {isPro ? (
+            <button
+              disabled
+              className="mt-8 block w-full cursor-not-allowed rounded-xl bg-accent/10 py-3 text-center text-sm font-semibold text-accent/60"
+            >
+              You&apos;re already Pro
+            </button>
+          ) : (
+            <>
+              <button
+                onClick={() => handleUpgradeClick("monthly")}
+                disabled={pendingTier !== null || isLoading}
+                className="mt-8 block w-full rounded-xl border border-accent py-3 text-center text-sm font-semibold text-accent transition-colors hover:bg-accent/10 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {pendingTier === "monthly" ? <Spinner /> : "Start 7-Day Free Trial"}
+              </button>
+              <p className="mt-2 text-xs text-text-tertiary">
+                Card required. You won&apos;t be charged until day 8.
+              </p>
+            </>
+          )}
+        </div>
       </div>
+
+      {/* ── Free (slim full-width row) — omitted for paywall traffic ─────── */}
+      {!hideFreePlan && (
+        <div className="mt-8 rounded-2xl border border-navy-border bg-navy-light p-6 sm:flex sm:items-center sm:justify-between sm:gap-8">
+          <div className="sm:flex-1">
+            <div className="flex flex-wrap items-center gap-3">
+              <h2 className="font-display text-lg font-bold text-text-primary">
+                Free
+              </h2>
+              <span className="rounded-full bg-navy-lighter px-3 py-0.5 text-xs font-bold text-accent">
+                No Card Required
+              </span>
+              <span className="font-mono text-sm font-bold text-text-primary">
+                $0
+              </span>
+            </div>
+            <p className="mt-2 text-sm text-text-secondary">
+              Score calculators, daily adaptive practice, and your saved
+              diagnostic. Free forever.
+            </p>
+          </div>
+          <Link
+            href="/practice-test"
+            className="mt-4 block rounded-xl border border-navy-border px-6 py-3 text-center text-sm font-semibold text-text-primary no-underline transition-colors hover:border-accent sm:mt-0 sm:w-auto sm:flex-shrink-0"
+          >
+            Create Free Account
+          </Link>
+        </div>
+      )}
 
       {/* Guarantee footnote */}
       <p className="mt-6 text-center text-xs text-text-tertiary">
-        Every plan is backed by a {GUARANTEE_TAG} — no questions asked. The
+        Every plan is backed by a {GUARANTEE_TAG}, no questions asked. The
         calculators and your daily adaptive block stay free, forever.
       </p>
     </div>

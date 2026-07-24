@@ -103,33 +103,27 @@ function UpgradeContent() {
 
   // Honor any explicit ?tier= (so direct pass/monthly links still work), else,
   // for an authed user with a near test date, surface the 90-Day Pass; else
-  // monthly for paywall traffic (trial is lowest-friction entry), annual for
-  // direct visits (best value). Retaker tier retired 2026-06-30; retaker
-  // landing pages now route to the 90-Day Pass.
-  const explicitTier = (["annual", "monthly", "pass90"] as const).find(
+  // monthly for paywall traffic (trial is lowest-friction entry), the 90-Day
+  // Pass for direct visits (the new hero/best-value default). Annual was
+  // removed from the UI menu 2026-07-24; a stale ?tier=annual simply falls
+  // through to the resolved default.
+  const explicitTier = (["monthly", "pass90"] as const).find(
     (t) => t === tierParam,
   );
   const isFromPaywall = !!from && PAYWALL_SOURCES.has(from);
   const defaultTier: Tier =
     explicitTier ??
-    (passIntent ? "pass90" : isFromPaywall ? "monthly" : "annual");
-  // Drive the above-fold hero off the resolved tier. Annual + monthly both lead
-  // with the annual hero (the recommended best-value plan, direct to checkout);
-  // an explicit pass link keeps its own hero.
-  const heroTier: "annual" | "monthly" | "pass90" =
-    defaultTier === "pass90" ? "pass90" : defaultTier === "annual" ? "annual" : "monthly";
+    (passIntent ? "pass90" : isFromPaywall ? "monthly" : "pass90");
+  // Drive the above-fold hero off the resolved tier: monthly for paywall
+  // traffic, the 90-Day Pass everywhere else.
+  const heroTier: "monthly" | "pass90" =
+    defaultTier === "monthly" ? "monthly" : "pass90";
   const HERO = {
     monthly: {
       price: "Free",
       line: `for 7 days · then $24.99/mo · cancel anytime · ${GUARANTEE_TAG}`,
       cta: "Start your 7-day free trial",
       sub: "Card required. $24.99/mo after trial. Cancel anytime.",
-    },
-    annual: {
-      price: "$79",
-      line: `per year · best value · ${GUARANTEE_TAG}`,
-      cta: "Get Pro — $79/year",
-      sub: "Billed yearly. Cancel anytime — no auto-renew surprises.",
     },
     pass90: {
       price: "$59",
@@ -314,7 +308,6 @@ function UpgradeContent() {
         <PricingPlans
           key={defaultTier}
           defaultTier={defaultTier}
-          recommendedTier={defaultTier === "pass90" ? "pass90" : "annual"}
           source={from ?? "upgrade_page"}
           hideFreePlan={isFromPaywall}
           placement="pricing_grid"

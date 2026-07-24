@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "ASVAB Hero pricing: a free score-moving core for everyone, plus Pro for unlimited practice tests and study tools — best value at $79/year, or a one-time 90-Day Pass or month-to-month.",
+    "ASVAB Hero pricing: a free score-moving core for everyone, plus Pro for unlimited practice tests and study tools — best value is the one-time $59 90-Day Pass, or go month-to-month at $24.99.",
   alternates: {
     canonical: "https://asvabhero.com/pricing",
   },
@@ -47,14 +47,6 @@ export default function PricingPage() {
           offers: [
             {
               "@type": "Offer",
-              name: "Pro Annual",
-              price: "79.00",
-              priceCurrency: "USD",
-              url: "https://asvabhero.com/pricing",
-              availability: "https://schema.org/InStock",
-            },
-            {
-              "@type": "Offer",
               name: "90-Day Test Pass",
               price: "59.00",
               priceCurrency: "USD",
@@ -88,11 +80,11 @@ export default function PricingPage() {
           Simple, transparent pricing
         </h1>
         <p className="mt-3 text-text-secondary">
-          ASVAB Hero Pro costs $79 per year (best value), $24.99 per month, or $59 for a one-time 90-Day Pass. The score-moving core -- daily adaptive practice, Mistake Bank, and calculators -- is always free with no card required.
+          ASVAB Hero Pro is a one-time $59 90-Day Pass (best value) or $24.99 per month with a 7-day free trial. The score-moving core -- daily adaptive practice, Mistake Bank, and calculators -- is always free with no card required.
         </p>
       </div>
 
-      <PricingPlans defaultTier="annual" source="pricing_page" />
+      <PricingPlans defaultTier="pass90" source="pricing_page" />
 
       <div className="mt-20">
         <h2 className="font-display text-2xl font-bold text-text-primary text-center mb-8">
